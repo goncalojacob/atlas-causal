@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "italian-somaliland-1908",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 688"
+    }
+  ],
+  "actor": "italian-somaliland",
+  "presenceType": "state",
+  "dependencyOf": "italy-sardinia",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1908,
+    "end": 1924,
+    "date": "1908-04-30",
+    "endDate": "1924-06-30"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "688"
+  },
+  "capital": {
+    "lon": 45.366678,
+    "lat": 2.046934,
+    "precision": "city",
+    "label": "Mogadishu"
+  },
+  "confidence": "consensus"
+}

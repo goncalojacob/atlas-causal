@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "fixture-polity-three",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Fixture Polity Three",
+    "FP3"
+  ],
+  "summary": "Synthetic record used by the test suite. This polity never existed and ruled nothing.",
+  "when": {
+    "start": 1100,
+    "end": null
+  },
+  "where": {
+    "lon": -25,
+    "lat": 35,
+    "precision": "city",
+    "label": "Fixture seat C"
+  }
+}

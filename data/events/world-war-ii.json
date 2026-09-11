@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "world-war-ii",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q362",
+  "sitelinks": {
+    "count": 241,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "World War II",
+    "pt": "Segunda Guerra Mundial"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Segunda Guerra Mundial\", revision 72709515"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q362"
+    }
+  ],
+  "title": "World War II",
+  "summary": "The war of 1939–1945 was fought between the Axis and the Allies across Europe, north Africa, the Atlantic, the Soviet Union and the Pacific, and killed somewhere between fifty and eighty million people, most of them civilians. It ended the European empires' claim to run the world, left two powers standing where six had been, and produced the United Nations, the Nuremberg trials and the atomic bomb. Portugal stayed neutral throughout and traded with both sides, selling wolfram to Germany and Britain alike; the neutrality was real and it was also lucrative, and it ended in practice in 1943 when Britain invoked the alliance of 1373 and was given the Azores.",
+  "when": {
+    "start": 1939,
+    "end": 1945,
+    "date": "1939-09-01",
+    "endDate": "1945-09-02"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "germany-prussia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "italy-sardinia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "japan",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    },
+    {
+      "actor": "russia-soviet-union",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    },
+    {
+      "actor": "france",
+      "role": "belligerent"
+    },
+    {
+      "actor": "china",
+      "role": "belligerent"
+    },
+    {
+      "actor": "poland",
+      "role": "belligerent"
+    }
+  ]
+}

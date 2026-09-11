@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "new-guinea-german-new-guinea-kaiser-wilhelmsland-1914",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 665"
+    }
+  ],
+  "actor": "new-guinea-german-new-guinea-kaiser-wilhelmsland",
+  "presenceType": "state",
+  "dependencyOf": "australia",
+  "dependencyKind": "occupied",
+  "when": {
+    "start": 1914,
+    "end": 1920,
+    "date": "1914-11-11",
+    "endDate": "1920-06-27"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "665"
+  },
+  "capital": {
+    "lon": 152.143431,
+    "lat": -4.20549,
+    "precision": "city",
+    "label": "Rabaul (Simpsonhafen)"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "jawaharlal-nehru",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q1047",
+  "wikipedia": {
+    "en": "Jawaharlal Nehru",
+    "pt": "Jawaharlal Nehru"
+  },
+  "sitelinks": {
+    "count": 154,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Jawaharlal Nehru"
+  ],
+  "summary": "Jawaharlal Nehru (1889–1964) was the first prime minister of independent India, in office from 1947 until his death. After years in which Lisbon refused to negotiate over the enclaves on India's coast — Salazar held that Goa was not a colony but Portugal — and after economic blockade and the shooting of unarmed satyagrahis in 1955, his government took Goa, Daman and Diu by force in December 1961. The action was popular in India and defended there as decolonisation; abroad it cost Nehru some of his standing as an advocate of non-violence. He is in the atlas as the actor who ended Portuguese rule in India.",
+  "when": {
+    "start": 1889,
+    "end": 1964
+  },
+  "where": {
+    "lon": 81.85,
+    "lat": 25.44,
+    "precision": "city",
+    "label": "Allahabad"
+  }
+}

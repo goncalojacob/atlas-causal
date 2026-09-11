@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "imf-agreement-1983",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    }
+  ],
+  "title": "Second stabilisation agreement with the IMF",
+  "summary": "A second payments crisis brought a second Fund programme under the central-bloc government of Soares and Mota Pinto's successors, with devaluation and severe restriction; the recession that followed was the deepest since the war. The month given here should be checked.",
+  "when": {
+    "start": 1983,
+    "end": 1983,
+    "date": "1983-09",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "imf",
+      "role": "creditor"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "debtor"
+    },
+    {
+      "actor": "mario-soares",
+      "role": "leader"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "q2115000",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21 as unidentifiable, like q11077889 before it. No label, no description, no cached lead in either language: the record is titled with its own Wikidata id. All the import recovered was a year, 1968, and a region, Africa. That is not enough to write anything about, and guessing what the item probably is would be exactly the thing this project does not do."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q2115000",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2115000"
+    }
+  ],
+  "title": "Q2115000",
+  "summary": "Wikidata item Q2115000, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1968,
+    "end": 1968
+  },
+  "place": null,
+  "region": "africa",
+  "actors": []
+}

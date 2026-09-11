@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "third-portuguese-republic",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "wikidata-assigned-by-assistant"
+    ]
+  },
+  "wikidata": "Q1259200",
+  "wikipedia": {
+    "en": "Third Portuguese Republic",
+    "pt": "Terceira República Portuguesa"
+  },
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Third Portuguese Republic",
+    "Terceira República Portuguesa"
+  ],
+  "summary": "The Third Portuguese Republic is the regime opened by the revolution of 25 April 1974 and given its form by the constitution of 2 April 1976: a parliamentary republic with a directly elected president, and, until the revision of 1982, a Council of the Revolution of officers beside them. Its first years were the decolonisation of the African territories, the return of some half a million people from them, two IMF programmes and a series of short governments; from 1986 it is a member of the European Community, from 1999 of the euro, and in 2011 the subject of an adjustment programme. It is the polity that every event in this atlas after 1974 belongs to.",
+  "when": {
+    "start": 1974,
+    "end": null
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

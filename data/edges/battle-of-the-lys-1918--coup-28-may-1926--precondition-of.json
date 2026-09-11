@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-lys-1918--coup-28-may-1926--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "from": "battle-of-the-lys-1918",
+  "to": "coup-28-may-1926",
+  "type": "precondition-of",
+  "confidence": "disputed",
+  "explanation": "The war, and the Lys as its emblem, is argued to have politicised the officer corps, discredited the parliamentary Republic among the military, and produced the veterans and grievances that made 1926 possible.",
+  "dispute": {
+    "text": "Other accounts treat the war as one factor among many and locate the causes of 1926 in the Republic's structural instability, its economic failure after 1918 and the political violence of the early 1920s, with the war's specific contribution hard to isolate.",
+    "sources": [
+      {
+        "source": "wheeler-1978-republican-portugal",
+        "locator": null
+      },
+      {
+        "source": "ramos-2009-historia-de-portugal",
+        "locator": null
+      }
+    ]
+  }
+}

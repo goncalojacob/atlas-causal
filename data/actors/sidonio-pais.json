@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sidonio-pais",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q356691",
+  "wikipedia": {
+    "en": "Sidónio Pais",
+    "pt": "Sidónio Pais"
+  },
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Sidónio Pais",
+    "Sidónio Bernardino Cardoso da Silva Pais"
+  ],
+  "summary": "Sidónio Pais (1872–1918), an army officer and professor of mathematics who had been a minister and then Portugal's envoy in Berlin, overthrew the Democratic government in December 1917 and governed as head of a junta and then as a directly elected president, with the parties displaced and parliament reduced. His \"New Republic\" restored relations with the Church, courted Catholic and monarchist support, and drew on a personal popularity that the republic's parties had never had; it also arrested opponents and did not survive its author. He was shot dead at Rossio station in December 1918. Some historians read the episode as a first Portuguese experiment with charismatic authoritarian rule and a precedent later regimes drew on; others treat it as a personal government with no doctrine behind it. He is in the atlas as the republic's one attempt to be governed by one man before 1926.",
+  "when": {
+    "start": 1872,
+    "end": 1918
+  },
+  "where": {
+    "lon": -8.84,
+    "lat": 41.87,
+    "precision": "city",
+    "label": "Caminha"
+  }
+}

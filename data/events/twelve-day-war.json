@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "twelve-day-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q134900605",
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Twelve-Day War",
+    "pt": "Guerra dos Doze Dias"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Twelve-Day War\", revision 1370751931"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra dos Doze Dias\", revision 72100689"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q134900605"
+    }
+  ],
+  "title": "Twelve-Day War",
+  "summary": "Israel attacked Iran without warning on 13 June 2025, striking nuclear and military installations and killing commanders, nuclear scientists and civilians; Iran answered with more than five hundred ballistic missiles and a thousand drones against Israeli cities and installations. The United States joined on 22 June, bombing three nuclear sites, and Iran fired on an American base in Qatar. A ceasefire was agreed on the 24th under American pressure. It is the first open war between the two states, after four decades in which they had fought each other through others.",
+  "when": {
+    "start": 2025,
+    "end": 2025,
+    "date": "2025-06",
+    "endDate": "2025-06-24"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "israel",
+      "role": "belligerent"
+    },
+    {
+      "actor": "iran-persia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    }
+  ]
+}

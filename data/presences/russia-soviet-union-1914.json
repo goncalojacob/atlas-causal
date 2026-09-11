@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "russia-soviet-union-1914",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 185"
+    }
+  ],
+  "actor": "russia-soviet-union",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1914,
+    "end": 1917,
+    "date": "1914-04-17",
+    "endDate": "1917-12-05"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "185"
+  },
+  "capital": {
+    "lon": 30.31602,
+    "lat": 59.93902,
+    "precision": "city",
+    "label": "Saint Petersburg (Petrograd)"
+  },
+  "confidence": "consensus"
+}

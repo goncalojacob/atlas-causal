@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "1972-portuguese-presidential-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted",
+      "m22-reinstated"
+    ],
+    "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
+  },
+  "wikidata": "Q16153777",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1972 Portuguese presidential election",
+    "pt": "Eleições presidenciais portuguesas de 1972"
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1972 Portuguese presidential election\", revision 1305366739"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições presidenciais portuguesas de 1972\", revision 71446980"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "1972 Portuguese presidential election",
+  "summary": "The National Assembly returned Américo Tomás unopposed on 25 July 1972 for a third seven-year term that would have run to 1979. It was the last presidential election of the Estado Novo and the only one Salazar had no part in, he having been dead two years. The office had kept one power that mattered — the appointment and dismissal of the head of government — and Tomás had used it in 1968 to put Marcelo Caetano in Salazar's place; his return in 1972 fixed for another seven years the man who would use it again if Caetano moved on the war. It is in the atlas as the last renewal of the regime's own arrangements, twenty-one months before the arrangements ended.",
+  "when": {
+    "start": 1972,
+    "end": 1972,
+    "date": "1972-07-25"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "americo-tomas",
+      "role": "head-of-state",
+      "note": "returned for a third term"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "government",
+      "note": "the regime filling its own presidency"
+    }
+  ]
+}

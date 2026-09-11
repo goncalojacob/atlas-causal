@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "constitution-1976--eleicoes-legislativas-regionais-na-madeira-em-1976--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "constitution-1976",
+  "to": "eleicoes-legislativas-regionais-na-madeira-em-1976",
+  "type": "enabled",
+  "confidence": "consensus",
+  "explanation": "The same clause of the constitution of 2 April 1976 that made the Azores an autonomous region made Madeira one, and on the same terms: a statute, an assembly its own voters elect, a government answering to that assembly. The ballot of 27 June is the first exercise of it. The atlas keeps the two archipelagos as separate events rather than one because the politics that followed them diverged almost at once, and because a reader following the constitution forward should arrive at two regions and not at an abstraction called autonomy.",
+  "dispute": null
+}

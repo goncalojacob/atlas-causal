@@ -1,0 +1,106 @@
+# On push to main, one job: validate, rebuild data/index/, commit it if it
+# changed, then upload and deploy the same checkout to GitHub Pages. The
+# index and the prerendered pages are owned by main, post-merge; a pull
+# request the contribution form opens carries neither, and validate.yml asks
+# for the index only of a pull request that touched `data/index/` itself
+# (health review of 6 September, R2 and R12). The commit uses
+# the default token on purpose: pushes made with it start no workflows, and
+# the deploy happens right here, so no loop and no stale site.
+#
+# Requires: Settings → Pages → Source "GitHub Actions", and branch
+# protection that lets github-actions[bot] push to main.
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # The whole history, not one commit: build-index writes a version of
+      # every record from `git log`, and on a shallow clone every one of the
+      # 1 006 histories collapsed to a single version — which this job then
+      # committed over the full ones (health review of 6 September, R1).
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Validate records
+        run: node tools/validate.mjs
+      - name: Tests
+        run: node --test
+      # The palette before the index: the manifest names the palette file, so
+      # building them the other way round would write a manifest for a file
+      # that is about to change.
+      - name: Build the territory palette
+        run: node tools/build-palette.mjs
+      - name: Build the index
+        run: node tools/build-index.mjs
+      - name: Assert both are what the builders produce
+        run: node tools/validate.mjs --index --quiet
+      # The prerendered pages are generated from the records exactly as the
+      # index is (H8), so they are committed by the same step and for the
+      # same reason: main owns what the build produces.
+      - name: Commit the index, the palette and the pages if they changed
+        run: |
+          if [ -n "$(git status --porcelain -- data/index data/geo/palette.json sources.html narratives.html entry)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/index data/geo/palette.json sources.html narratives.html entry
+            git commit -m "chore: regenerate data/index and the prerendered pages"
+            git push
+          else
+            echo "index and pages unchanged"
+          fi
+      # The artifact is an allowlist and not the checkout (health review A,
+      # finding 35; B, finding 29). What was published was everything: docs/,
+      # tools/, tests/, every *.test.mjs, .github/, the 200 KB of import seeds
+      # — fine at 14 MB and not fine at a hundred thousand records, and it put
+      # a maintainer's tools on a public URL where nobody had thought about
+      # what they say. Named here rather than excluded: a list of what may be
+      # published cannot be widened by adding a directory to the repository,
+      # and an exclusion list can.
+      #
+      # `tests/fixtures/data/` is in it on purpose: `?fixtures=1` is how the
+      # interface is shown against a graph that asserts nothing historical,
+      # and it is a page of the site (review of the health plan, finding 24).
+      # `CONTRIBUTING.md` is in it because an entry page with no `body` links
+      # to it. Everything else under tools/ and tests/ stays out, the cached
+      # Wikipedia leads with it — publishing those would be republishing
+      # Wikipedia (docs/review-2026-09-04-plan.md, finding 18).
+      - name: Assemble the site from the allowlist
+        run: |
+          set -eu
+          rm -rf _site
+          mkdir -p _site/data _site/tests/fixtures
+          cp ./*.html CONTRIBUTING.md _site/
+          if [ -d entry ]; then cp -r entry _site/entry; fi
+          cp -r src _site/src
+          cp -r schema _site/schema
+          cp -r data/. _site/data/
+          rm -rf _site/data/imports
+          cp -r tests/fixtures/data _site/tests/fixtures/data
+          echo "artifact: $(find _site -type f | wc -l) files, $(du -sh _site | cut -f1)"
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

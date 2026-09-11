@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "fixture-actor-one-fixture-actor-two-1210",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": "2026-01-01",
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "person": "fixture-actor-one",
+  "office": "leadership-of-fixture-actor-two",
+  "when": {
+    "start": 1210,
+    "end": 1240
+  },
+  "startedBy": null,
+  "note": "Synthetic: the same pair under a second type, which is legal."
+}

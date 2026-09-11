@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "constitution-1976",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "title": "Constitution of 1976",
+  "summary": "The constitution approved on 2 April 1976 and in force from 25 April was written by the assembly elected a year earlier, within the limits the parties had accepted in their pacts with the Armed Forces Movement. It established a parliamentary republic with a directly elected president, kept a Council of the Revolution of officers as guardian of the constitution, and committed the state to a transition to socialism and to the irreversibility of the 1975 nationalisations. The revision of 1982 abolished the Council and moved the guardianship to a constitutional court; that of 1989 opened the nationalised sector to sale. It is in the atlas as the settlement of the revolutionary period — a founding document written, unusually, in the knowledge that parts of it would have to be revised.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "date": "1976-04-02",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "government",
+      "note": "constituted"
+    },
+    {
+      "actor": "council-of-the-revolution",
+      "role": "government",
+      "note": "created"
+    },
+    {
+      "actor": "mario-soares",
+      "role": "author",
+      "note": "legislator"
+    }
+  ]
+}

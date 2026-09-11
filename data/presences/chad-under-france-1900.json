@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "chad-under-france-1900",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 320"
+    }
+  ],
+  "actor": "chad-under-france",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "occupied",
+  "when": {
+    "start": 1900,
+    "end": 1912,
+    "date": "1900-09-05",
+    "endDate": "1912-03-29"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "320"
+  },
+  "capital": {
+    "lon": 15.21667,
+    "lat": 11.71667,
+    "precision": "city",
+    "label": "N'Djamena"
+  },
+  "confidence": "consensus"
+}

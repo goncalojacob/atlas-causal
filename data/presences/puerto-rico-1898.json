@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "puerto-rico-1898",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 6"
+    }
+  ],
+  "actor": "puerto-rico",
+  "presenceType": "state",
+  "dependencyOf": "united-states-of-america",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1898,
+    "end": null,
+    "date": "1898-12-10"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "6"
+  },
+  "capital": {
+    "lon": -66.1057,
+    "lat": 18.4655,
+    "precision": "city",
+    "label": "San Juan"
+  },
+  "confidence": "consensus"
+}

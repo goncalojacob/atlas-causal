@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "guinea-bissau-declares-independence-1973",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "title": "PAIGC declares the independence of Guinea-Bissau",
+  "summary": "On 24 September 1973 the PAIGC unilaterally proclaimed the Republic of Guinea-Bissau in the liberated zone of Boé; dozens of states recognised it within weeks. The territories layer ends the colony on 9 September 1974, the eve of Portuguese recognition, whereas this record is the unilateral declaration of 24 September 1973: for about a year two states claimed the same ground, and the map shows one of them.",
+  "when": {
+    "start": 1973,
+    "end": 1973,
+    "date": "1973-09-24",
+    "calendar": "gregorian"
+  },
+  "place": "boe",
+  "region": null,
+  "actors": [
+    {
+      "actor": "paigc",
+      "role": "government",
+      "note": "declared it"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "target"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kamerun-1901",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 294"
+    }
+  ],
+  "actor": "kamerun",
+  "presenceType": "state",
+  "dependencyOf": "germany-prussia",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1901,
+    "end": 1912,
+    "date": "1901-01-01",
+    "endDate": "1912-03-29"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "294"
+  },
+  "capital": {
+    "lon": 9.231004,
+    "lat": 4.155,
+    "precision": "city",
+    "label": "Buea"
+  },
+  "confidence": "consensus"
+}

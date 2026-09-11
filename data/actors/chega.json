@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "chega",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The birth or founding year, and the end where there is one, were written from memory."
+  },
+  "wikidata": "Q63645885",
+  "wikipedia": {
+    "en": "Chega",
+    "pt": "Chega"
+  },
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-09-03"
+  },
+  "sources": [
+    {
+      "source": "cne-legislative-2019",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Chega"
+  ],
+  "summary": "Founded in 2019 by André Ventura, it went from one deputy in that year to twelve in 2022, fifty in 2024 and the second parliamentary group in 2025.",
+  "when": {
+    "start": 2019,
+    "end": null
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

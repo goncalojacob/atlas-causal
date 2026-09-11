@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "montenegro-government-2024",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+  },
+  "sources": [
+    {
+      "source": "dre-government-appointments-2015-2024",
+      "locator": null
+    }
+  ],
+  "title": "The Montenegro government takes office",
+  "summary": "The XXIV Constitutional Government, an AD minority under Luís Montenegro, took office on 2 April 2024 with no agreement with any other party and in a chamber where no two groups but the AD and the PS made a majority between them.",
+  "when": {
+    "start": 2024,
+    "end": 2024,
+    "date": "2024-04-02",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "luis-montenegro",
+      "role": "head-of-government"
+    },
+    {
+      "actor": "marcelo-rebelo-de-sousa",
+      "role": "head-of-state",
+      "note": "president"
+    },
+    {
+      "actor": "psd",
+      "role": "government"
+    },
+    {
+      "actor": "cds-pp",
+      "role": "government"
+    }
+  ]
+}

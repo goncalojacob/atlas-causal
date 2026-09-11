@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "macau-handover-1999",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "wikidata-assigned-by-assistant"
+    ]
+  },
+  "wikidata": "Q847839",
+  "wikipedia": {
+    "en": "Handover of Macau",
+    "pt": "Transferência da soberania de Macau"
+  },
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Handover of Macau",
+  "summary": "Portugal transferred the administration of Macau to the People's Republic of China at midnight on 20 December 1999, under the joint declaration signed in 1987, which provided for a special administrative region with its own system for fifty years. Sovereignty had been an open question for a quarter of a century: after 1974 Portugal offered to withdraw, China preferred to wait, and from 1979 Macau was described as Chinese territory under Portuguese administration. The transfer was negotiated, unhurried and without incident, which is what makes it unlike every other ending in this part of the atlas. It is the last territory to leave Portuguese administration, and the point at which the empire is finished as an administrative fact.",
+  "when": {
+    "start": 1999,
+    "end": 1999,
+    "date": "1999-12-20",
+    "calendar": "gregorian"
+  },
+  "place": "macau",
+  "region": null,
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "opposition",
+      "note": "withdrew"
+    }
+  ]
+}

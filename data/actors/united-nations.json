@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "united-nations",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q1065",
+  "wikipedia": {
+    "en": "United Nations",
+    "pt": "Organização das Nações Unidas"
+  },
+  "sitelinks": {
+    "count": 297,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "United Nations",
+    "UN",
+    "Organização das Nações Unidas",
+    "ONU"
+  ],
+  "summary": "The United Nations kept Portugal out until 1955, when a bloc-to-bloc package unblocked sixteen admissions at once; from the end of the 1950s the organisation became the principal forum of pressure over the African territories. Portugal answered by renaming them overseas provinces and denying that the obligation to report on non-self-governing territories applied, an argument the General Assembly rejected in 1960; sanctions and resolutions followed through the war years without Portugal's NATO allies enforcing much of them. The organisation later administered East Timor between the 1999 ballot and independence in 2002. It is in the atlas as the arena in which the legitimacy of Portuguese rule in Africa was contested.",
+  "when": {
+    "start": 1945,
+    "end": null
+  },
+  "where": {
+    "lon": -73.97,
+    "lat": 40.75,
+    "precision": "city",
+    "label": "New York"
+  }
+}

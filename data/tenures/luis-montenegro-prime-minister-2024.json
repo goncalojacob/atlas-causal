@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "luis-montenegro-prime-minister-2024",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "person": "luis-montenegro",
+  "office": "prime-minister-of-portugal",
+  "when": {
+    "start": 2024,
+    "end": null
+  },
+  "startedBy": null,
+  "note": "Prime minister since April 2024; he stayed in office through the election of May 2025 and is recorded here as still holding it."
+}

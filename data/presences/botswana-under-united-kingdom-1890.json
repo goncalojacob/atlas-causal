@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "botswana-under-united-kingdom-1890",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 422"
+    }
+  ],
+  "actor": "botswana-under-united-kingdom",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1890,
+    "end": 1895,
+    "date": "1890-07-01",
+    "endDate": "1895-11-15"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "422"
+  },
+  "capital": {
+    "lon": 25.911949,
+    "lat": -24.64639,
+    "precision": "city",
+    "label": "Gaborone"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "spinola-resigns-1974",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "title": "Spínola resigns the presidency",
+  "summary": "António de Spínola called on the \"silent majority\" to demonstrate in Lisbon on 28 September 1974 in support of his own authority against the Armed Forces Movement; barricades put up by left-wing parties and by military units loyal to the movement stopped the demonstration from happening. Two days later he resigned the presidency and was replaced by Costa Gomes. The confrontation settled the argument the two sides had had since April over the pace of decolonisation and over who governed, and it settled it against the president. Spínola's next attempt, in March 1975, ended in exile. It is in the atlas as the point where the revolution's direction stops being decided by the figure the coup had put at its head.",
+  "when": {
+    "start": 1974,
+    "end": 1974,
+    "date": "1974-09-30",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "antonio-de-spinola",
+      "role": "resigned"
+    },
+    {
+      "actor": "armed-forces-movement",
+      "role": "belligerent",
+      "note": "opponent"
+    },
+    {
+      "actor": "vasco-goncalves",
+      "role": "head-of-government"
+    }
+  ]
+}

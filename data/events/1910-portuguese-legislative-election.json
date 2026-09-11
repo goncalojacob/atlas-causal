@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1910-portuguese-legislative-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: the last general election of the monarchy, 28 August 1910, whose results were never confirmed because the revolution of 5 October overtook them. Nothing followed from it, and that is precisely its historical point — an atlas of consequences has nothing to draw from a ballot the country stopped counting. The revolution it was overtaken by is already here as republic-proclaimed-1910."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q7232748",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1910 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1910"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7232748"
+    }
+  ],
+  "title": "1910 Portuguese legislative election",
+  "summary": "Wikidata item Q7232748, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1910,
+    "end": 1910,
+    "date": "1910-08-28"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

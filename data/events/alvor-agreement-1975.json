@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alvor-agreement-1975",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "title": "The Alvor Agreement",
+  "summary": "Portugal and the three Angolan liberation movements — the MPLA, the FNLA and UNITA — signed the Alvor agreement in the Algarve on 15 January 1975, with Mário Soares negotiating for Lisbon. It set up a transitional government of all four parties, a joint army, and independence for Angola on 11 November 1975. The transitional government never worked: fighting between the movements in Luanda from March, and the foreign backing each of them drew, had emptied the agreement long before the date it fixed. Portugal held to that date all the same, which is why the agreement matters even though it failed. It is in the atlas as the point where decolonisation in Angola turns into a war between Angolans.",
+  "when": {
+    "start": 1975,
+    "end": 1975,
+    "date": "1975-01-15",
+    "calendar": "gregorian"
+  },
+  "place": "alvor",
+  "region": null,
+  "actors": [
+    {
+      "actor": "mpla",
+      "role": "signatory"
+    },
+    {
+      "actor": "fnla",
+      "role": "signatory"
+    },
+    {
+      "actor": "unita",
+      "role": "signatory"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "signatory"
+    },
+    {
+      "actor": "mario-soares",
+      "role": "negotiator"
+    }
+  ]
+}

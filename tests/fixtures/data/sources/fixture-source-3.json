@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "fixture-source-3",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "type": "web",
+  "creators": [
+    "Fixture Author Three"
+  ],
+  "title": "Fixture source 3",
+  "year": 2003,
+  "publisher": null,
+  "isbn": null,
+  "doi": null,
+  "url": "https://example.invalid/fixture-source-3",
+  "accessed": "2026-01-01",
+  "repository": null,
+  "reference": null
+}

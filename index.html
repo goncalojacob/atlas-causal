@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atlas causal</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <!-- The masthead has three zones and they are not interchangeable: who this
+       is, what you are looking through, and where else you can go. The
+       controls in the middle are the ones that change what is drawn; the
+       links on the right leave the map. -->
+  <header class="bar masthead">
+    <div class="masthead-name">
+      <h1>Atlas causal</h1>
+      <p class="tagline">Pick an event, follow its consequences, see which other branches fed the same endpoint.</p>
+    </div>
+    <div class="masthead-tools" id="masthead-tools">
+      <div class="search" id="search" role="search">
+        <input type="search" id="search-input" class="search-input" placeholder="Search events, actors, places, sources  /"
+               autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false"
+               aria-controls="search-results" aria-autocomplete="list" aria-label="Search events, actors, places and sources">
+        <ul id="search-results" class="search-results" role="listbox" aria-label="Search results" data-slot="results" hidden></ul>
+        <span class="visually-hidden" role="status" aria-live="polite" data-slot="count"></span>
+      </div>
+      <div class="views" role="group" aria-label="View">
+        <button type="button" data-view="map" aria-pressed="true">Map</button>
+        <button type="button" data-view="graph" aria-pressed="false">Graph</button>
+      </div>
+      <!-- Only on a phone, where the grouping picker and the three layer
+           switches will not fit beside the search: one button in front of
+           both. The stylesheet shows it and hides them; nothing moves in the
+           DOM, so every module still finds the control it wired. -->
+      <button type="button" id="options-button" class="options-button" aria-expanded="false"
+              aria-controls="masthead-tools">Options</button>
+      <div class="grouping" id="grouping" role="group" aria-label="Grouping and lens"></div>
+      <!-- Filled by src/main.js: one switch per layer a reader may turn off,
+           and the coastlines are not one of them (plan decision 14). The
+           category switches to come are read out of data/categories.json,
+           which is data and therefore untrusted, so the whole control is
+           built rather than written here. -->
+      <div class="layers" id="layers" role="group" aria-label="Layers"></div>
+    </div>
+    <nav class="masthead-links" aria-label="Elsewhere">
+      <span id="fixtures-badge" class="fixtures-badge" hidden title="tests/fixtures/data: invented records for testing the interface">synthetic fixtures — not history</span>
+      <a class="bar-link" href="narratives.html">narratives</a>
+      <a class="bar-link" href="sources.html">sources</a>
+      <a class="bar-link" href="about.html">about</a>
+      <!-- Brings the introduction back. Small, last, and never in the way:
+           dismissing the card must not be a door closing (src/intro.js). -->
+      <button type="button" id="intro-button" class="intro-button" aria-controls="intro"
+              aria-expanded="false" title="What this is, and how to read it">?</button>
+    </nav>
+  </header>
+  <!-- Over the view and not inside the panel: since H1c there is no panel
+       when nothing is open, and nothing is open on a first visit. -->
+  <div id="intro" class="intro-overlay" hidden></div>
+  <main class="layout">
+    <section id="map" class="map-area" aria-label="Map"></section>
+    <section id="graph" class="graph-area" aria-label="Graph" hidden></section>
+    <!-- The two edges the reader can drag. Separators, not decoration: they
+         take focus, they answer the arrow keys, and Home puts them back. -->
+    <div id="split-panel" class="split split-panel" role="separator" tabindex="0"
+         aria-orientation="vertical" aria-label="Resize the panel — arrow keys, Home to restore"></div>
+    <!-- On a desktop this wrapper is `display: contents` and the panel is the
+         grid item it always was; on a phone it becomes the sheet that comes
+         up from the bottom edge, and the grip above the panel is what pushes
+         it back down. The grip is outside #panel because the panel's markup
+         is rewritten card by card and would take the handle with it. -->
+    <div id="sheet" class="sheet peek">
+      <button type="button" id="sheet-grip" class="sheet-grip" aria-controls="panel" aria-expanded="false">
+        <span class="sheet-grip-bar" aria-hidden="true"></span>
+        <span class="sheet-grip-label">Details</span>
+      </button>
+      <aside id="panel" class="panel" aria-live="polite"></aside>
+    </div>
+    <div id="split-timeline" class="split split-timeline" role="separator" tabindex="0"
+         aria-orientation="horizontal" aria-label="Resize the timeline — arrow keys, Home to restore"></div>
+    <section id="timeline" class="timeline-area" aria-label="Timeline"></section>
+  </main>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "fixture-polity-four-1120",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-2",
+      "locator": null
+    }
+  ],
+  "actor": "fixture-polity-four",
+  "presenceType": "state",
+  "dependencyOf": "fixture-polity-three",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1120,
+    "end": 1199,
+    "date": "1120-01-01",
+    "endDate": "1199-12-31"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1100-1199.json"
+    ],
+    "key": "f2"
+  },
+  "capital": {
+    "lon": -18,
+    "lat": 26,
+    "precision": "city",
+    "label": "Fixture seat D"
+  },
+  "confidence": "consensus"
+}

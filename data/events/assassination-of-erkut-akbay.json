@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "assassination-of-erkut-akbay",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the killing of Erkut Akbay, a Turkish administrative attaché, shot in his car outside his Lisbon home on 7 June 1982; his wife Nadide died of her wounds in January 1983. It belongs to the Armenian campaign against Turkish diplomatic targets in Europe, of which the atlas holds nothing, and the only relation between the two Lisbon attacks is that they were part of the same campaign — which is not one of the five edge types. Revisit if the campaign itself is ever written."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q4808506",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "Assassination of Erkut Akbay",
+    "pt": "Assassinato de Erkut Akbay"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4808506"
+    }
+  ],
+  "title": "assassination of Erkut Akbay",
+  "summary": "Wikidata item Q4808506, imported by tools/import/wikidata.mjs. The item's own description reads \"assassination of a Turkish diplomat\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1982,
+    "end": 1982,
+    "date": "1982-06-07"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": []
+}

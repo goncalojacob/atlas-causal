@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "cyprus-under-united-kingdom",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 352"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Cyprus under United Kingdom"
+  ],
+  "summary": "Entity 352 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1914 to 1960. The source calls it \"Cyprus\"; the names on this record are the ones data/imports/cshapes-actors.json gives it. Its last capital in the dataset is Nicosia. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods before the first cut. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1914,
+    "end": 1960
+  },
+  "where": {
+    "lon": 33.366661,
+    "lat": 35.16667,
+    "precision": "city",
+    "label": "Nicosia"
+  }
+}

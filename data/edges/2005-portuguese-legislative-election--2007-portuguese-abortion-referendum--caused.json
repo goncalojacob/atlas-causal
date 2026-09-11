@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "2005-portuguese-legislative-election--2007-portuguese-abortion-referendum--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "2005-portuguese-legislative-election",
+  "to": "2007-portuguese-abortion-referendum",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "Holding the referendum again was a Socialist commitment in the 2005 campaign, made in as many words, and the absolute majority is what made it a decision rather than a negotiation: the Assembly approved the question, the president called it and the ballot was held on 11 February 2007. The atlas argues the direct line because there is no other: the question had been settled in the negative in 1998, no party had put it back since, and the government elected in 2005 put it back because it had said it would.",
+  "dispute": null
+}

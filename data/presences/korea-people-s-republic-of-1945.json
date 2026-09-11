@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "korea-people-s-republic-of-1945",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 561"
+    }
+  ],
+  "actor": "korea-people-s-republic-of",
+  "presenceType": "state",
+  "dependencyOf": "russia-soviet-union",
+  "dependencyKind": "occupied",
+  "when": {
+    "start": 1945,
+    "end": 1948,
+    "date": "1945-08-15",
+    "endDate": "1948-09-08"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "561"
+  },
+  "capital": {
+    "lon": 125.7547,
+    "lat": 39.01944,
+    "precision": "city",
+    "label": "Pyongyang"
+  },
+  "confidence": "consensus"
+}

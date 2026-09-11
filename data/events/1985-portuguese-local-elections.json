@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1985-portuguese-local-elections",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the local elections of 15 December 1985, nine weeks after the legislative election and a month before the presidential one. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the fourth local election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q7232778",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1985 Portuguese local elections",
+    "pt": "Eleições autárquicas portuguesas de 1985"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7232778"
+    }
+  ],
+  "title": "1985 Portuguese local elections",
+  "summary": "Wikidata item Q7232778, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1985,
+    "end": 1985,
+    "date": "1985-12-15"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

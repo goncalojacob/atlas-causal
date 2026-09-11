@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "united-states-of-america-1959",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 2"
+    }
+  ],
+  "actor": "united-states-of-america",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1959,
+    "end": 1959,
+    "date": "1959-01-03",
+    "endDate": "1959-08-20"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "2"
+  },
+  "capital": {
+    "lon": -77.036667,
+    "lat": 38.895,
+    "precision": "city",
+    "label": "Washington"
+  },
+  "confidence": "consensus"
+}

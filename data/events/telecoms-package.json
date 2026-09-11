@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "telecoms-package",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the package of European directives on electronic communications negotiated from 2007. It is an act of the Union rather than of Portugal, and the atlas has no lane for one; keeping it would mean inventing Portugal's particular part in it. The venue is not a causal fact: a treaty signed in Lisbon belongs to the history of what it settles."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q1536157",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "Telecoms Package"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1536157"
+    }
+  ],
+  "title": "Telecoms Package",
+  "summary": "Wikidata item Q1536157, imported by tools/import/wikidata.mjs. The item's own description reads \"directive\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2007,
+    "end": 2009
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

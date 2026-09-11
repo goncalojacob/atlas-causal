@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "second-boer-war--treaty-of-windsor--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Boer War\", revision 1372994797"
+    }
+  ],
+  "from": "second-boer-war",
+  "to": "treaty-of-windsor",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The secret declaration signed at Windsor on 14 October 1899 is dated three days after the war began, and its two undertakings are the war's: Portugal would close Lourenço Marques and the railway to arms and men bound for the Transvaal, and Britain would guarantee Portugal's colonies. Britain needed the port shut because it was the only one the Boer republics could reach without crossing British ground; Portugal needed the guarantee because Britain and Germany had secretly agreed the year before how to divide the Portuguese colonies if Lisbon defaulted on its debts. Ramos and Meneses both read the declaration as bought by the war rather than as an act of sentiment about the alliance of 1386, which is the claim here.",
+  "dispute": null
+}

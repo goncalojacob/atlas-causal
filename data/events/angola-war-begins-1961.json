@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "angola-war-begins-1961",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    }
+  ],
+  "title": "Beginning of the war in Angola",
+  "summary": "An attack on the prisons and police stations of Luanda on 4 February 1961, meant to free political prisoners, was beaten off with heavy losses among the attackers and followed by reprisals in the African quarters of the city. On 15 March a far larger rising in the coffee districts of the north, organised by the UPA, killed several hundred settlers and a much greater number of African workers, and was answered by a Portuguese campaign that retook the region over the following months. The MPLA claims 4 February as the start of its armed struggle and the claim has been contested since; what is not contested is that the two risings together opened thirteen years of war. Salazar's answer was to reinforce Angola at speed rather than negotiate, a choice that committed the Estado Novo to fighting on three fronts. It is in the atlas as the first front of the colonial war and the beginning of what eventually consumed the regime.",
+  "when": {
+    "start": 1961,
+    "end": 1961,
+    "date": "1961-02-04",
+    "calendar": "gregorian"
+  },
+  "place": "luanda",
+  "region": null,
+  "actors": [
+    {
+      "actor": "mpla",
+      "role": "perpetrator",
+      "note": "claimed responsibility"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "belligerent"
+    },
+    {
+      "actor": "salazar",
+      "role": "leader"
+    }
+  ]
+}

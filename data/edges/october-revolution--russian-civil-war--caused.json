@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "october-revolution--russian-civil-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"October Revolution\", revision 1370630358"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian Civil War\", revision 1372728974"
+    }
+  ],
+  "from": "october-revolution",
+  "to": "russian-civil-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The seizure of power in Petrograd was cheap and the country it claimed was not. Officers of the old army, the socialist parties expelled from the soviets, the Cossack hosts, the nationalities of the borderlands and eventually fourteen intervening foreign powers all refused the new government, and the dissolution of the Constituent Assembly in January 1918 removed the one authority in whose name they might have been reconciled. Historians differ over whether to date the civil war from October, from the spring of 1918 or from the Czechoslovak Legion's revolt in May; none of them separates it from October.",
+  "dispute": null
+}

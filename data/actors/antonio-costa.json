@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "antonio-costa",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The birth or founding year, and the end where there is one, were written from memory."
+  },
+  "wikidata": "Q610788",
+  "wikipedia": {
+    "en": "António Costa",
+    "pt": "António Costa"
+  },
+  "sitelinks": {
+    "count": 71,
+    "on": "2026-09-03"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "cne-legislative-2015",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "António Costa",
+    "António Luís Santos da Costa"
+  ],
+  "summary": "Mayor of Lisbon from 2007, secretary-general of the PS from 2014 and prime minister from November 2015 to March 2024, first at the head of a minority government supported from outside and, from 2022, of a majority. He resigned in November 2023 over an inquiry in which he was named and never charged.",
+  "when": {
+    "start": 1961,
+    "end": null
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "partido-democratico",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Democratic Party",
+    "Partido Democrático",
+    "Partido Republicano Português"
+  ],
+  "summary": "The Democratic Party was the largest party of the First Republic, the wing of the old Portuguese Republican Party that kept its name and machine after the 1912 split, and it was led by Afonso Costa. It was in government for most of the republic's sixteen years, controlled its electoral apparatus, and drove the war policy and the anticlerical legislation. That dominance made it the target of every reaction — the Pimenta de Castro government, the Sidónio Pais coup, and finally 28 May 1926, after which it was dissolved with the rest. It is in the atlas as the party through which most republican decisions were taken, and against which most of the period's revolts were made.",
+  "when": {
+    "start": 1912,
+    "end": 1926
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

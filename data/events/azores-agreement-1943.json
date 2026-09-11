@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "azores-agreement-1943",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    }
+  ],
+  "title": "Anglo-Portuguese agreement on Azores bases",
+  "summary": "Britain invoked the alliance of 1373 to ask for facilities in the Azores, and the agreement signed on 17 August 1943 gave British forces the use of the islands from October, with the airfield at Lajes on Terceira the most important of them. Portugal remained formally neutral, and Salazar presented the concession as an obligation of the oldest alliance rather than a choice between belligerents. American forces obtained their own access the following year after separate negotiation. The facilities mattered to the Battle of the Atlantic, and the regime spent the credit they earned for a decade afterwards. It is in the atlas because it is where Portuguese neutrality is converted into a standing claim on the Western alliance, one the regime drew on again at the founding of NATO in 1949.",
+  "when": {
+    "start": 1943,
+    "end": 1943,
+    "date": "1943-08-17",
+    "calendar": "gregorian"
+  },
+  "place": "lajes",
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "salazar",
+      "role": "signatory"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "signatory"
+    }
+  ]
+}

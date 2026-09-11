@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1969-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    }
+  ],
+  "from": "1969-portuguese-legislative-election",
+  "to": "carnation-revolution-1974",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The opening of 1969 was real enough to be tested and narrow enough to fail the test. The opposition was allowed to campaign and then beaten by a system that made its votes worthless; the censorship returned within months; the liberal deputies elected inside the National Union found they could not legislate and were gone by 1973. What that closed was the civilian road out of the regime. The officers who acted in April 1974 did not need a theory that the Estado Novo could not reform itself with voters in the room — they had watched it try and stop.",
+  "dispute": null
+}

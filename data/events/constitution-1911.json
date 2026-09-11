@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "constitution-1911",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Constitution of 1911",
+  "summary": "The Constituent Assembly elected in May 1911 approved the republic's first constitution on 21 August: a two-chamber congress, a president elected by that congress rather than by the country and unable to dissolve it, and the separation of church and state already legislated in April. It was the framework of the First Republic until the coup of 28 May 1926, a period that produced more than forty governments. Its critics, then and since, argue that a president who could not break a deadlock left revolt as the only way out of one; others answer that the parties, not the text, were what failed. It is in the atlas as the constitutional form of the regime whose instability is the subject of most of the events around it.",
+  "when": {
+    "start": 1911,
+    "end": 1911,
+    "date": "1911-08-21",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "first-portuguese-republic",
+      "role": "government",
+      "note": "constituted"
+    },
+    {
+      "actor": "afonso-costa",
+      "role": "author"
+    }
+  ]
+}

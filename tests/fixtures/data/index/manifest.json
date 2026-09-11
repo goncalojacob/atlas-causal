@@ -1,0 +1,355 @@
+{
+  "attributeShards": [
+    {
+      "file": "index/attributes-1100-1199-dcbe76fbc00b.json",
+      "from": 1100,
+      "key": "1100-1199",
+      "to": 1199
+    },
+    {
+      "file": "index/attributes-1200-1299-902199d40a6f.json",
+      "from": 1200,
+      "key": "1200-1299",
+      "to": 1299
+    },
+    {
+      "file": "index/attributes-null-8186c18011bf.json",
+      "from": null,
+      "key": "null",
+      "to": null
+    },
+    {
+      "file": "index/attributes-place-a1e73d12e4b2.json",
+      "from": null,
+      "key": "place",
+      "to": null
+    }
+  ],
+  "counts": {
+    "actors": 4,
+    "edges": 10,
+    "events": 12,
+    "narratives": 1,
+    "offices": 2,
+    "places": 11,
+    "presences": 3,
+    "regions": 3,
+    "relations": 4,
+    "sources": 4,
+    "tenures": 4
+  },
+  "explanationShards": [
+    {
+      "file": "index/explanations-1200-1299-253b43eadb1b.json",
+      "from": 1200,
+      "to": 1299
+    }
+  ],
+  "files": {
+    "citers": "index/citers-f8c97836a9ed",
+    "core": "index/core-39fe3e65b247.json",
+    "presences": "index/presences-7dc62eab392c.json",
+    "review": "index/review-529a25f3de7f.json",
+    "search": "index/search-6418b284f92f.json",
+    "sources": "index/sources-b593ceee8617.json"
+  },
+  "historyShards": [
+    {
+      "file": "index/history-event-1200-1299-1dfbe17030da.json",
+      "from": 1200,
+      "key": "1200-1299",
+      "kind": "event",
+      "to": 1299
+    },
+    {
+      "file": "index/history-edge-1200-1299-896bb07f671e.json",
+      "from": 1200,
+      "key": "1200-1299",
+      "kind": "edge",
+      "to": 1299
+    },
+    {
+      "file": "index/history-source-source-31725964722b.json",
+      "from": null,
+      "key": "source",
+      "kind": "source",
+      "to": null
+    },
+    {
+      "file": "index/history-actor-1100-1199-61d08b675f79.json",
+      "from": 1100,
+      "key": "1100-1199",
+      "kind": "actor",
+      "to": 1199
+    },
+    {
+      "file": "index/history-place-place-0ff956b56c2a.json",
+      "from": null,
+      "key": "place",
+      "kind": "place",
+      "to": null
+    },
+    {
+      "file": "index/history-relation-1100-1199-cc9f5fa0ca54.json",
+      "from": 1100,
+      "key": "1100-1199",
+      "kind": "relation",
+      "to": 1199
+    },
+    {
+      "file": "index/history-relation-1200-1299-28e78e7b1c41.json",
+      "from": 1200,
+      "key": "1200-1299",
+      "kind": "relation",
+      "to": 1299
+    },
+    {
+      "file": "index/history-office-1100-1199-bbd6337ec9a7.json",
+      "from": 1100,
+      "key": "1100-1199",
+      "kind": "office",
+      "to": 1199
+    },
+    {
+      "file": "index/history-office-null-5b506141bab2.json",
+      "from": null,
+      "key": "null",
+      "kind": "office",
+      "to": null
+    },
+    {
+      "file": "index/history-tenure-1200-1299-2ab8b24f5144.json",
+      "from": 1200,
+      "key": "1200-1299",
+      "kind": "tenure",
+      "to": 1299
+    },
+    {
+      "file": "index/history-narrative-1200-1299-fa7d2bac0c93.json",
+      "from": 1200,
+      "key": "1200-1299",
+      "kind": "narrative",
+      "to": 1299
+    }
+  ],
+  "land": [],
+  "licenses": {
+    "data/actors/": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        }
+      ],
+      "licenses": [
+        "CC-BY-SA-4.0",
+        "CC-BY-NC-SA-4.0"
+      ]
+    },
+    "data/edges/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/events/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/geo/land-present.json": {
+      "attribution": [
+        {
+          "license": "PD",
+          "name": "Natural Earth",
+          "source": "https://www.naturalearthdata.com/about/terms-of-use/"
+        }
+      ],
+      "licenses": [
+        "PD"
+      ]
+    },
+    "data/geo/palette.json": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        }
+      ],
+      "licenses": [
+        "CC-BY-NC-SA-4.0"
+      ]
+    },
+    "data/geo/presences/": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        }
+      ],
+      "licenses": [
+        "CC-BY-NC-SA-4.0"
+      ]
+    },
+    "data/geo/regions.json": {
+      "attribution": [
+        {
+          "license": "PD",
+          "name": "Natural Earth",
+          "source": "https://www.naturalearthdata.com/about/terms-of-use/"
+        }
+      ],
+      "licenses": [
+        "PD"
+      ]
+    },
+    "data/index/": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        }
+      ],
+      "licenses": [
+        "CC-BY-SA-4.0",
+        "CC-BY-NC-SA-4.0"
+      ]
+    },
+    "data/narratives/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/offices/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/places/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/presences/": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        }
+      ],
+      "licenses": [
+        "CC-BY-SA-4.0",
+        "CC-BY-NC-SA-4.0"
+      ]
+    },
+    "data/relations/": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        }
+      ],
+      "licenses": [
+        "CC-BY-SA-4.0",
+        "CC-BY-NC-SA-4.0"
+      ]
+    },
+    "data/sources/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/tenures/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    }
+  },
+  "officesByEvent": {
+    "fixture-event-a": [
+      "fixture-tenure-one"
+    ],
+    "fixture-event-b": [
+      "fixture-actor-one-fixture-actor-two-1210",
+      "fixture-tenure-two"
+    ]
+  },
+  "palette": "geo/palette.json",
+  "presenceShards": [
+    {
+      "file": "geo/presences/1100-1199.json",
+      "from": 1100,
+      "to": 1199
+    },
+    {
+      "file": "geo/presences/1200-1299.json",
+      "from": 1200,
+      "to": 1299
+    }
+  ],
+  "regionBoxes": {
+    "fixture-lane-1": [
+      -40,
+      20,
+      -10,
+      50
+    ],
+    "fixture-lane-2": [
+      -40,
+      -20,
+      -10,
+      10
+    ],
+    "fixture-lane-3": [
+      10,
+      -20,
+      40,
+      50
+    ]
+  },
+  "regions": [
+    {
+      "id": "fixture-lane-1",
+      "label": "Fixture lane 1",
+      "order": 1
+    },
+    {
+      "id": "fixture-lane-2",
+      "label": "Fixture lane 2",
+      "order": 2
+    },
+    {
+      "id": "fixture-lane-3",
+      "label": "Fixture lane 3",
+      "order": 3
+    }
+  ],
+  "roles": [
+    "founded",
+    "leader",
+    "signatory"
+  ],
+  "schema": 6,
+  "tenuresByOffice": {
+    "fixture-office-one": [
+      "fixture-tenure-one",
+      "fixture-tenure-two",
+      "fixture-tenure-three"
+    ],
+    "leadership-of-fixture-actor-two": [
+      "fixture-actor-one-fixture-actor-two-1210"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "new-south-wales",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 901"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "New South Wales"
+  ],
+  "summary": "Entity 901 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to 1900. Its last capital in the dataset is Sydney. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1886,
+    "end": 1900
+  },
+  "where": {
+    "lon": 151.18518,
+    "lat": -33.92001,
+    "precision": "city",
+    "label": "Sydney"
+  }
+}

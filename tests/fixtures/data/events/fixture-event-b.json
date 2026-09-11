@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "fixture-event-b",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [
+    "fixture-event-b-old"
+  ],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "title": "Fixture event B",
+  "summary": "Synthetic record used by the test suite. It is not history and describes nothing that happened.",
+  "when": {
+    "start": 1220,
+    "end": 1220
+  },
+  "place": "fixture-place-b",
+  "region": null,
+  "actors": [
+    {
+      "actor": "fixture-actor-two",
+      "role": "founded"
+    },
+    {
+      "actor": "fixture-actor-one",
+      "role": "signatory"
+    }
+  ]
+}

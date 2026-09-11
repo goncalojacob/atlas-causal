@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "luis-filipe",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Luís Filipe",
+    "Luís Filipe, Prince Royal of Portugal",
+    "Luís Filipe de Bragança"
+  ],
+  "summary": "Luís Filipe (1887–1908) was the elder son of Carlos I and heir to the Portuguese throne. He was shot in the same carriage as his father crossing the Terreiro do Paço on 1 February 1908 and died within minutes of him. He is in the atlas for the succession that killing redirected: the crown passed to his younger brother, who came to it at eighteen and without preparation.",
+  "when": {
+    "start": 1887,
+    "end": 1908
+  },
+  "where": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "coup-28-may-1926",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    }
+  ],
+  "title": "Coup of 28 May",
+  "summary": "The rising began in Braga on 28 May 1926 under General Gomes da Costa, met almost no resistance as it moved south, and brought down the government of António Maria da Silva within two days. Its authors agreed on ending the parliamentary republic and on very little else: Gomes da Costa was pushed aside by his own side within six weeks and Óscar Carmona emerged as president. The dictatorship that followed had no constitution and no answer to the deficit, which is the opening through which Salazar entered the government in 1928. In the atlas it is the end of the First Republic and the first link in the chain that produces the Estado Novo.",
+  "when": {
+    "start": 1926,
+    "end": 1926,
+    "date": "1926-05-28",
+    "calendar": "gregorian"
+  },
+  "place": "braga",
+  "region": null,
+  "actors": [
+    {
+      "actor": "gomes-da-costa",
+      "role": "leader"
+    },
+    {
+      "actor": "first-portuguese-republic",
+      "role": "deposed"
+    },
+    {
+      "actor": "partido-democratico",
+      "role": "deposed"
+    },
+    {
+      "actor": "military-dictatorship",
+      "role": "founder"
+    }
+  ]
+}

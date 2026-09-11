@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "unita",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry."
+  },
+  "wikidata": "Q28699",
+  "wikipedia": {
+    "en": "UNITA",
+    "pt": "União Nacional para a Independência Total de Angola"
+  },
+  "sitelinks": {
+    "count": 53,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "UNITA",
+    "União Nacional para a Independência Total de Angola",
+    "National Union for the Total Independence of Angola"
+  ],
+  "summary": "The third Angolan movement, founded in 1966 with a base in the centre and south of the territory; a signatory of the Alvor Agreement and, after 1975, the main armed opposition to the MPLA government.",
+  "when": {
+    "start": 1966,
+    "end": null
+  },
+  "where": {
+    "lon": 13.23,
+    "lat": -8.84,
+    "precision": "city",
+    "label": "Luanda"
+  }
+}

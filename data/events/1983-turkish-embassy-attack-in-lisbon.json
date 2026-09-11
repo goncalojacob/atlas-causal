@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "1983-turkish-embassy-attack-in-lisbon",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the attack on the Turkish embassy in Lisbon on 27 July 1983, in which seven people died, five of them the attackers. It belongs to the Armenian campaign against Turkish diplomatic targets in Europe, of which the atlas holds nothing, and the only relation between the two Lisbon attacks is that they were part of the same campaign — which is not one of the five edge types. Revisit if the campaign itself is ever written."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q349875",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1983 Turkish embassy attack in Lisbon",
+    "pt": "Ataque à Embaixada da Turquia em Lisboa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q349875"
+    }
+  ],
+  "title": "1983 Turkish embassy attack in Lisbon",
+  "summary": "Wikidata item Q349875, imported by tools/import/wikidata.mjs. The item's own description reads \"1983 attack\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1983,
+    "end": 1983,
+    "date": "1983-07-27"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": []
+}

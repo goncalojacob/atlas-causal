@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "european-union",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date",
+      "claim"
+    ],
+    "note": "The Maastricht dates were written from memory. Recording the Union as a polity rather than an institution is the drafter's decision: it is argued in the summary, and it is also what lets the succession from the Community validate, since rule 19 requires both ends of a succession to be the same kind of actor."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "European Union",
+    "EU",
+    "União Europeia",
+    "UE"
+  ],
+  "summary": "The Union created by the Maastricht Treaty, signed in February 1992 and in force from 1 November 1993, which took over the European Economic Community that Portugal had joined in 1986 and added to it a monetary union, a common foreign policy and a citizenship. Portugal's membership runs continuously across the change of name; what changed was what membership demanded, and the convergence criteria agreed at Maastricht governed Portuguese budgets for the rest of the decade. From 2011 the Union was also, through the Commission and the Central Bank, one of the parties that wrote the terms of the adjustment programme, and whether that is best described as solidarity or as supervision is still argued about. It is recorded here as a polity rather than as an institution — the kind this atlas gives to secretariats — because it has a territory, an external border and a citizenship, and because the Community it succeeded is recorded the same way.",
+  "when": {
+    "start": 1993,
+    "end": null
+  },
+  "where": {
+    "lon": 4.35,
+    "lat": 50.85,
+    "precision": "city",
+    "label": "Brussels"
+  }
+}

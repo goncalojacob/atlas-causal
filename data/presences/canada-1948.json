@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "canada-1948",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 9"
+    }
+  ],
+  "actor": "canada",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1948,
+    "end": null,
+    "date": "1948-07-22"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "9"
+  },
+  "capital": {
+    "lon": -75.690002,
+    "lat": 45.42083,
+    "precision": "city",
+    "label": "Ottawa"
+  },
+  "confidence": "consensus"
+}

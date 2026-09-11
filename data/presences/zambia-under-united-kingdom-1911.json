@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "zambia-under-united-kingdom-1911",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 395"
+    }
+  ],
+  "actor": "zambia-under-united-kingdom",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1911,
+    "end": 1953,
+    "date": "1911-08-18",
+    "endDate": "1953-07-31"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "395"
+  },
+  "capital": {
+    "lon": 28.283331,
+    "lat": -15.41667,
+    "precision": "city",
+    "label": "Lusaka"
+  },
+  "confidence": "consensus"
+}

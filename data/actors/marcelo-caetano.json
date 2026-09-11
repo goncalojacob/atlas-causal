@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "marcelo-caetano",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q310870",
+  "wikipedia": {
+    "en": "Marcello Caetano",
+    "pt": "Marcello Caetano"
+  },
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Marcelo Caetano",
+    "Marcello Caetano"
+  ],
+  "summary": "Marcelo Caetano (1906–1980) was a professor of administrative law who had spent his career inside the regime — youth organisation, colonial ministry, presidency of the council's executive committee — before succeeding Salazar as President of the Council in September 1968. His \"evolution in continuity\" relaxed censorship and the political police a little, widened the electorate, and let a reformist wing into the National Assembly; it did not end the colonial war, legalise opposition parties, or survive the pressure of the two. By 1972 the reformists had gone and the regime was governing as before. He surrendered at the Carmo barracks on 25 April 1974 and died in exile in Brazil. He is in the atlas as the actor whose failure to reform the regime is what made its fall a coup rather than a transition.",
+  "when": {
+    "start": 1906,
+    "end": 1980
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

@@ -1,0 +1,9029 @@
+{
+  "from": 1900,
+  "kind": "event",
+  "records": {
+    "1900-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1901-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1904-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1905-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1908-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1910-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1911-portuguese-constituent-national-assembly-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "title",
+            "when"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1911-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1913-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1915-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1918-portuguese-general-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1918-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1919-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1919-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1921-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "status",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "actors",
+            "category",
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "actors",
+            "category",
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "1922-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1923-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1925-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "status",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "actors",
+            "category",
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "actors",
+            "category",
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "1925-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1926-horta-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1928-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1934-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1935-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1938-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1942-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1942-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1945-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1949-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1949-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1951-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1952-guinean-territorial-assembly-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1953-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1957-guinean-territorial-assembly-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "status",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1957-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1958-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1961-guinean-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1961-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1963-guinean-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1964-rosais-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1965-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1965-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1967-portugal-floods": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "1969-portugal-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1969-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "actors",
+            "category",
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "actors",
+            "category",
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "1972-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "status",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1973-angolan-legislative-assembly-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1973-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "actors",
+            "category",
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "actors",
+            "category",
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "1974-guinean-general-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1975-portuguese-constituent-assembly-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1975-sao-tomean-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1976-azorean-regional-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1976-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1976-portuguese-local-elections": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1976-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1977-mozambican-general-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1979-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "actors",
+            "category",
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "actors",
+            "category",
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "1979-portuguese-local-elections": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1980-azores-islands-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1980-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1980-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1982-portuguese-local-elections": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1983-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1983-turkish-embassy-attack-in-lisbon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "1985-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1985-portuguese-local-elections": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1986-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1987-european-parliament-election-in-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1987-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1989-european-parliament-election-in-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1989-portuguese-local-elections": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1991-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1991-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1993-portuguese-local-elections": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1994-european-parliament-election-in-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1994-genocide-against-tutsi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "1995-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1996-azorean-regional-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1996-madeiran-regional-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1996-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1997-portuguese-local-elections": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1998-azores-islands-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1998-portuguese-abortion-referendum": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1999-european-parliament-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1999-european-parliament-election-in-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1999-macanese-chief-executive-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "place",
+            "region",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1999-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "25-november-1975": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "algerian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "alvor-agreement-1975": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "angola-independence-1975": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "angola-war-begins-1961": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "anti-comintern-pact": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "april-1906-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "armenian-genocide": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "assalto-ao-banco-de-angola-na-damaia-em-21-de-outubro-de-1975": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "assalto-ao-banco-nacional-ultramarino-da-malveira-em-6-de-outubro-de-1980": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "assalto-ao-banco-pinto-e-sottomayor-de-lisboa-em-soure": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "assalto-ao-banco-pinto-e-sottomayor-em-albufeira-em-17-de-agosto-de-1976": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "assassination-attempt-on-fernando-da-costa-rolo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "assassination-attempt-on-john-paul-ii-1982": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "assassination-of-archduke-franz-ferdinand": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "assassination-of-erkut-akbay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "assassination-of-john-f-kennedy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "assassination-of-jose-ferreira-da-rocha-by-the-prp-br": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "assassinato-de-jose-oscar-de-vasconcelos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "assassinato-de-rogerio-canha-e-sa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "assault-on-banco-totta-e-acores-on-avenida-da-republica-in-lisbon-on-may-21-1976": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "assault-on-sintra-s-finance-department-by-the-prp-br-on-25-02-1980": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "assault-on-tabaqueira-by-the-prp-br-on-january-31-1980": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "assault-on-the-grupo-8-cash-van-in-lisbon-carried-out-by-the-fp-25-which-yielded-108-thousand-contos-on-february-7-1984": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "assault-on-the-santa-maria-steamship": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "august-1906-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "august-1915-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "azores-agreement-1943": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "bangladesh-liberation-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "batepa-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "status",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "battle-of-the-lys-1918": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "beer-hall-putsch": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "bomb-attack-by-the-revolutionary-brigades-on-the-quartel-mestre-general-building-in-lisbon-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "bomb-attack-by-the-revolutionary-brigades-on-the-recruitment-and-mobilization-district-n-1-drm-1": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "bomb-attack-on-the-army-mechanographic-services-in-lisbon-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "botelho-moniz-coup-attempt-1961": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "cabral-assassinated-1973": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "caetano-succeeds-salazar-1968": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "carnation-revolution-1974": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "cavaco-absolute-majority-1987": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "charter-of-the-united-nations": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "chiado-fire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "chinese-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "constituent-assembly-election-1975": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "constitution-1911": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "constitution-1933": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "constitution-1976": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "constitutional-revision-1959": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "constitutional-revision-1982": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "convention-on-the-elimination-of-all-forms-of-discrimination-against-women": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "convention-on-the-rights-of-the-child": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "coup-28-may-1926": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "coup-attempt-11-march-1975": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "cplp-founding-1996": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "cuban-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "cultural-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "delgado-assassinated-1965": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "delgado-candidacy-1958": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "desastre-ambiental-de-almograve": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "eanes-elected-1976": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "east-timor-invasion-1975": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "eastern-front": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "eec-accession-1986": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "eec-application-1977": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "efta-accession-1960": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "eleicoes-legislativas-regionais-na-madeira-em-1976": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "eleicoes-legislativas-regionais-na-madeira-em-1980": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "eleicoes-legislativas-regionais-na-madeira-em-1984": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "eleicoes-legislativas-regionais-na-madeira-em-1988": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "eleicoes-legislativas-regionais-na-madeira-em-1992": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "eleicoes-legislativas-regionais-nos-acores-em-1980": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "eleicoes-legislativas-regionais-nos-acores-em-1984": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "eleicoes-legislativas-regionais-nos-acores-em-1988": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "eleicoes-legislativas-regionais-nos-acores-em-1992": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "equality-statute-between-brazil-and-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "euro-adoption-1999": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "european-convention-on-human-rights": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "expo-98": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "exposicao-mundo-portugues-1940": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "falklands-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "february-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "first-indochina-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "geneva-act-of-the-lisbon-agreement-on-appellations-of-origin-and-geographical-indications": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "germany-declares-war-1916": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "goa-annexed-1961": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "great-depression": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "region",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "guinea-bissau-declares-independence-1973": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "guinea-war-begins-1963": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "guinean-constitutional-referendum-1958": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "title",
+            "when"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "gulf-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "hat-nipah-and-same-massacres": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "holodomor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "hungarian-revolution-of-1956": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "iberian-pact": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "title",
+            "when"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "ilinden-preobrazhenie-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "imf-agreement-1978": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "imf-agreement-1983": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "indo-pakistani-war-of-1965": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "international-covenant-on-civil-and-political-rights": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "iranian-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "katyn-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "korean-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "lateran-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "law-of-separation-1911": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "lebanese-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "legiao-portuguesa-founded-1936": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "legislative-election-1976": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "lisbon-protocol": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "lisbon-recognition-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "lisbon-regicide": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "title"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "maastricht-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "macau-handover-1999": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "may-1915-portuguese-presidential-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "mexican-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "molotov-ribbentrop-pact": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "monarchy-of-the-north-1919": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "mozambique-war-begins-1964": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "mueda-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "status",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "munich-agreement": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "murder-of-delfim-de-almeida-fernandes-by-the-prp-br": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "murder-of-diamantino-monteiro-pereira": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "when"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "murder-of-jorge-augusto-de-carvalho-porto-judiciary-police-officer": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "murder-of-jose-manuel-placido": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "nationalisations-1975": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "nato-founding-1949": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "noite-sangrenta-1921": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "october-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "paris-peace-conference": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "pimenta-de-castro-government-1915": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "portugal-backs-franco-1936": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "portugal-e-o-futuro-1974": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "portuguese-constitutional-referendum-1933": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "portuguese-language-orthographic-agreement-of-1945": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "portuguese-language-orthographic-agreement-of-1990": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "portuguese-regionalisation-referendum-1998": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "potsdam-conference": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "q11077889": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "q1454657": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "q2115000": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "q55499125": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "q55499135": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "q5941661": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "q5942951": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "ramsar-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "republic-proclaimed-1910": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "revolt-14-may-1915": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "robbery-of-banco-borges-irmao-in-monte-dos-burgos-porto-november-4-1977": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "robbery-of-banco-fonsecas-burnay-in-povoa-de-santo-adriao-on-october-13-1981": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "robbery-of-banco-totta-and-azores-in-mira-de-aire-on-october-15-1975": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "robbery-of-banco-totta-e-acores-in-seia-on-february-1-1977": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "robbery-of-the-totta-acores-bank-in-malveira-on-6-october-1980": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "russian-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "russian-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "russian-revolution-of-1905": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "salazar-finance-minister-1928": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "salazar-president-of-council-1932": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "santa-maria-hijacking-1961": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "schengen-agreement": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "schengen-in-force-1995": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "second-chechen-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "second-sino-japanese-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "sidonio-pais-assassinated-1918": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "sidonio-pais-coup-1917": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "soares-elected-president-1986": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "spanish-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "spinola-resigns-1974": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "srebrenica-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "the-holocaust": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-accession-1985": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "region",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "treaty-of-brest-litovsk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-friendship-and-cooperation-between-spain-and-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "treaty-of-lausanne": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-portsmouth": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-rome": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-sevres": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-trianon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-versailles": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-on-the-non-proliferation-of-nuclear-weapons": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "turkish-war-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "un-admission-1955": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "united-nations-convention-on-the-law-of-the-sea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "velvet-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "vietnam-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "wall-street-crash-of-1929": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "warsaw-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "wiriyamu-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "wiriyamu-massacre-1972": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "world-war-i": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "region",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "world-war-ii": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "xinhai-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "yom-kippur-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "young-turk-revolution-of-1908": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1999
+}

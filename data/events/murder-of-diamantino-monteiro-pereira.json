@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "murder-of-diamantino-monteiro-pereira",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the killing of the administrator of the Sacavém pottery works, which the item's own description dates to 6 December 1982 and which the import entered as 2022. M22 corrected the year. It belongs with the armed far left of the 1980s, and it is retracted for the same reason as the rest of that series: the atlas holds neither the FP-25 nor the trials, so there is nothing for it to attach to in either direction."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted",
+      "date"
+    ]
+  },
+  "wikidata": "Q115460814",
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q115460814"
+    }
+  ],
+  "title": "murder of Diamantino Monteiro Pereira",
+  "summary": "Wikidata item Q115460814, imported by tools/import/wikidata.mjs. The item's own description reads \"murder of the administrator of the Sacavém Loiça Factory on December 6, 1982\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1982,
+    "end": 1982,
+    "date": "1982-12-06"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "death",
+  "actors": []
+}

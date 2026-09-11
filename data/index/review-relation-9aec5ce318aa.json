@@ -1,0 +1,3338 @@
+{
+  "kind": "relation",
+  "records": [
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "algeria-under-france",
+      "id": "algeria-under-france--algeria--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "algeria",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2019"
+      ],
+      "created": "2026-09-03",
+      "from": "andre-ventura",
+      "id": "andre-ventura--chega--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "chega",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "angola-under-portugal",
+      "id": "angola-under-portugal--angola--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "angola",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "cne-legislative-2015"
+      ],
+      "created": "2026-09-03",
+      "from": "antonio-costa",
+      "id": "antonio-costa--partido-socialista--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "partido-socialista",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "bahamas-under-united-kingdom",
+      "id": "bahamas-under-united-kingdom--bahamas--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "bahamas",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "barbados-under-united-kingdom",
+      "id": "barbados-under-united-kingdom--barbados--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "barbados",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "belize-under-united-kingdom",
+      "id": "belize-under-united-kingdom--belize--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "belize",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "benin-under-france",
+      "id": "benin-under-france--benin--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "benin",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "bhutan-under-united-kingdom",
+      "id": "bhutan-under-united-kingdom--bhutan--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "bhutan",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "botswana-under-united-kingdom",
+      "id": "botswana-under-united-kingdom--botswana--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "botswana",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-03",
+      "from": "british-india",
+      "id": "british-india--republic-of-india--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "republic-of-india",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "brunei-under-united-kingdom",
+      "id": "brunei-under-united-kingdom--brunei--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "brunei",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "burkina-faso-upper-volta-under-france",
+      "id": "burkina-faso-upper-volta-under-france--burkina-faso-upper-volta--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "burkina-faso-upper-volta",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "cambodia-kampuchea-under-france",
+      "id": "cambodia-kampuchea-under-france--cambodia-kampuchea--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cambodia-kampuchea",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "cameroon-under-france",
+      "id": "cameroon-under-france--cameroon--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cameroon",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "cape-verde-under-portugal",
+      "id": "cape-verde-under-portugal--cape-verde--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cape-verde",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "central-african-republic-under-france",
+      "id": "central-african-republic-under-france--central-african-republic--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "central-african-republic",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "chad-under-france",
+      "id": "chad-under-france--chad--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "chad",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "comoros-under-france",
+      "id": "comoros-under-france--comoros--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "comoros",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "congo-democratic-republic-of-zaire-under-belgium",
+      "id": "congo-democratic-republic-of-zaire-under-belgium--congo-democratic-republic-of-zaire--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "congo-democratic-republic-of-zaire",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "congo-under-france",
+      "id": "congo-under-france--congo--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "congo",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "cote-d-ivoire-under-france",
+      "id": "cote-d-ivoire-under-france--cote-d-ivoire--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cote-d-ivoire",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-03",
+      "from": "council-of-the-revolution",
+      "id": "council-of-the-revolution--third-portuguese-republic--part-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "third-portuguese-republic",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "cuba-under-spain",
+      "id": "cuba-under-spain--cuba--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cuba",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "cyprus-under-united-kingdom",
+      "id": "cyprus-under-united-kingdom--cyprus--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cyprus",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "djibouti-under-france",
+      "id": "djibouti-under-france--djibouti--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "djibouti",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-03",
+      "from": "dutch-east-indies",
+      "id": "dutch-east-indies--indonesia--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "indonesia",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "east-timor-under-portugal",
+      "id": "east-timor-under-portugal--east-timor--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "east-timor",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-pt"
+      ],
+      "created": "2026-09-08",
+      "from": "ecologist-party-the-greens",
+      "id": "ecologist-party-the-greens--pcp--allied-with",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "relation-drafted"
+        ],
+        "note": "Written in M41b from the cached Wikipedia leads it cites, to join an actor the second Portuguese round imported to a record the atlas already held. The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "pcp",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "egypt-under-united-kingdom",
+      "id": "egypt-under-united-kingdom--egypt--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "egypt",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "equatorial-guinea-under-spain",
+      "id": "equatorial-guinea-under-spain--equatorial-guinea--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "equatorial-guinea",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "eritrea-under-italy-sardinia",
+      "id": "eritrea-under-italy-sardinia--eritrea--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "eritrea",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-03",
+      "from": "estado-novo",
+      "id": "estado-novo--nato--allied-with",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "nato",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-03",
+      "from": "estado-novo",
+      "id": "estado-novo--portugal--regime-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portugal",
+      "type": "regime-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-05",
+      "from": "european-central-bank",
+      "id": "european-central-bank--european-union--part-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "european-union",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-05",
+      "from": "european-commission",
+      "id": "european-commission--european-union--part-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "european-union",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-05",
+      "from": "european-economic-community",
+      "id": "european-economic-community--european-union--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "european-union",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-05",
+      "from": "eurozone",
+      "id": "eurozone--european-union--part-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "european-union",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-pt"
+      ],
+      "created": "2026-09-08",
+      "from": "evolutionist-party",
+      "id": "evolutionist-party--republican-liberal-party--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "relation-drafted"
+        ],
+        "note": "Written in M41b from the cached Wikipedia leads it cites, to join an actor the second Portuguese round imported to a record the atlas already held. The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "republican-liberal-party",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "fiji-under-united-kingdom",
+      "id": "fiji-under-united-kingdom--fiji--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "fiji",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-03",
+      "from": "first-portuguese-republic",
+      "id": "first-portuguese-republic--portugal--regime-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portugal",
+      "type": "regime-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "gabon-under-france",
+      "id": "gabon-under-france--gabon--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "gabon",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "gambia-under-united-kingdom",
+      "id": "gambia-under-united-kingdom--gambia--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "gambia",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "ghana-under-united-kingdom",
+      "id": "ghana-under-united-kingdom--ghana--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "ghana",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "guinea-bissau-under-portugal",
+      "id": "guinea-bissau-under-portugal--guinea-bissau--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "guinea-bissau",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "guinea-under-france",
+      "id": "guinea-under-france--guinea--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "guinea",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "guyana-under-united-kingdom",
+      "id": "guyana-under-united-kingdom--guyana--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "guyana",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "iceland-under-denmark",
+      "id": "iceland-under-denmark--iceland--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "iceland",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "iraq-under-united-kingdom",
+      "id": "iraq-under-united-kingdom--iraq--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "iraq",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "jamaica-under-united-kingdom",
+      "id": "jamaica-under-united-kingdom--jamaica--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "jamaica",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "jordan-under-united-kingdom",
+      "id": "jordan-under-united-kingdom--jordan--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "jordan",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "kenya-under-united-kingdom",
+      "id": "kenya-under-united-kingdom--kenya--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "kenya",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "laos-under-france",
+      "id": "laos-under-france--laos--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "laos",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "lebanon-under-france",
+      "id": "lebanon-under-france--lebanon--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "lebanon",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-03",
+      "from": "legiao-portuguesa",
+      "id": "legiao-portuguesa--estado-novo--part-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "estado-novo",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "lesotho-under-united-kingdom",
+      "id": "lesotho-under-united-kingdom--lesotho--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "lesotho",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "libya-under-italy-sardinia",
+      "id": "libya-under-italy-sardinia--libya--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "libya",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cne-legislative-2024"
+      ],
+      "created": "2026-09-03",
+      "from": "luis-montenegro",
+      "id": "luis-montenegro--psd--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "psd",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "malawi-under-united-kingdom",
+      "id": "malawi-under-united-kingdom--malawi--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "malawi",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "malaysia-under-united-kingdom",
+      "id": "malaysia-under-united-kingdom--malaysia--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "malaysia",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "maldives-under-united-kingdom",
+      "id": "maldives-under-united-kingdom--maldives--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "maldives",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "mali-under-france",
+      "id": "mali-under-france--mali--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "mali",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "malta-under-united-kingdom",
+      "id": "malta-under-united-kingdom--malta--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "malta",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions",
+        "cne-presidential-2016"
+      ],
+      "created": "2026-09-03",
+      "from": "marcelo-rebelo-de-sousa",
+      "id": "marcelo-rebelo-de-sousa--psd--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "psd",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "mauritania-under-france",
+      "id": "mauritania-under-france--mauritania--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "mauritania",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "mauritius-under-united-kingdom",
+      "id": "mauritius-under-united-kingdom--mauritius--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "mauritius",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-03",
+      "from": "military-dictatorship",
+      "id": "military-dictatorship--portugal--regime-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portugal",
+      "type": "regime-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "mozambique-under-portugal",
+      "id": "mozambique-under-portugal--mozambique--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "mozambique",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "myanmar-burma-under-united-kingdom",
+      "id": "myanmar-burma-under-united-kingdom--myanmar-burma--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "myanmar-burma",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "namibia-under-south-africa",
+      "id": "namibia-under-south-africa--namibia--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "namibia",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "new-zealand-under-united-kingdom",
+      "id": "new-zealand-under-united-kingdom--new-zealand--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "new-zealand",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "niger-under-france",
+      "id": "niger-under-france--niger--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "niger",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "nigeria-under-united-kingdom",
+      "id": "nigeria-under-united-kingdom--nigeria--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "nigeria",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-05",
+      "from": "oeec",
+      "id": "oeec--oecd--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source. Whether this is a succession or a renaming is the editorial decision argued in the OECD's summary.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "oecd",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "papua-new-guinea-under-australia",
+      "id": "papua-new-guinea-under-australia--papua-new-guinea--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "papua-new-guinea",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-03",
+      "from": "pedro-passos-coelho",
+      "id": "pedro-passos-coelho--psd--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "psd",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-pt",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-08",
+      "from": "people-s-democratic-union",
+      "id": "people-s-democratic-union--bloco-de-esquerda--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "relation-drafted"
+        ],
+        "note": "Written in M41b from the cached Wikipedia leads it cites, to join an actor the second Portuguese round imported to a record the atlas already held. The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "bloco-de-esquerda",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "philippines-under-united-states-of-america",
+      "id": "philippines-under-united-states-of-america--philippines--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "philippines",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--council-of-europe--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "council-of-europe",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--cplp--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "cplp",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--efta--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "efta",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-teixeira-2019-political-institutions"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--european-union--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "european-union",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "reis-2013-portuguese-slump",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--eurozone--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "eurozone",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "reis-2013-portuguese-slump"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--imf--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source. The 1961 accession is the least certain date in this batch, and the Bretton Woods institutions were joined together, which is worth checking as one fact.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "imf",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "meneses-2004-portugal-1914-1926"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--league-of-nations--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "league-of-nations",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--oecd--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "oecd",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "ramos-2009-historia-de-portugal",
+        "rosas-1994-estado-novo"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--oeec--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "oeec",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-05",
+      "from": "portugal",
+      "id": "portugal--schengen-area--member-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-06",
+      "status": "active",
+      "to": "schengen-area",
+      "type": "member-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-03",
+      "from": "pvde-pide-dgs",
+      "id": "pvde-pide-dgs--estado-novo--part-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "estado-novo",
+      "type": "part-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "qatar-under-united-kingdom",
+      "id": "qatar-under-united-kingdom--qatar--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "qatar",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt"
+      ],
+      "created": "2026-09-08",
+      "from": "reconstitution-party",
+      "id": "reconstitution-party--nationalist-republican-party--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "relation-drafted"
+        ],
+        "note": "Written in M41b from the cached Wikipedia leads it cites, to join an actor the second Portuguese round imported to a record the atlas already held. The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "nationalist-republican-party",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt"
+      ],
+      "created": "2026-09-08",
+      "from": "republican-liberal-party",
+      "id": "republican-liberal-party--nationalist-republican-party--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "relation-drafted"
+        ],
+        "note": "Written in M41b from the cached Wikipedia leads it cites, to join an actor the second Portuguese round imported to a record the atlas already held. The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "nationalist-republican-party",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-pt"
+      ],
+      "created": "2026-09-08",
+      "from": "revolutionary-socialist-party",
+      "id": "revolutionary-socialist-party--bloco-de-esquerda--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date",
+          "relation-drafted"
+        ],
+        "note": "Written in M41b from the cached Wikipedia leads it cites, to join an actor the second Portuguese round imported to a record the atlas already held. The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "bloco-de-esquerda",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "senegal-under-france",
+      "id": "senegal-under-france--senegal--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "senegal",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "sierra-leone-under-united-kingdom",
+      "id": "sierra-leone-under-united-kingdom--sierra-leone--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "sierra-leone",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "singapore-under-united-kingdom",
+      "id": "singapore-under-united-kingdom--singapore--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "singapore",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "solomon-islands-under-united-kingdom",
+      "id": "solomon-islands-under-united-kingdom--solomon-islands--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "solomon-islands",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "sri-lanka-ceylon-under-united-kingdom",
+      "id": "sri-lanka-ceylon-under-united-kingdom--sri-lanka-ceylon--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "sri-lanka-ceylon",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "sudan-under-united-kingdom",
+      "id": "sudan-under-united-kingdom--sudan--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "sudan",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "surinam-under-netherlands",
+      "id": "surinam-under-netherlands--surinam--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "surinam",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "swaziland-eswatini-under-united-kingdom",
+      "id": "swaziland-eswatini-under-united-kingdom--swaziland-eswatini--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "swaziland-eswatini",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "syria-under-france",
+      "id": "syria-under-france--syria--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "syria",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "taiwan-under-japan",
+      "id": "taiwan-under-japan--taiwan--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "taiwan",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "tanzania-tanganyika-under-united-kingdom",
+      "id": "tanzania-tanganyika-under-united-kingdom--tanzania-tanganyika--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "tanzania-tanganyika",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-03",
+      "from": "third-portuguese-republic",
+      "id": "third-portuguese-republic--european-economic-community--allied-with",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "european-economic-community",
+      "type": "allied-with"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-03",
+      "from": "third-portuguese-republic",
+      "id": "third-portuguese-republic--portugal--regime-of",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portugal",
+      "type": "regime-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "togo-under-france",
+      "id": "togo-under-france--togo--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "togo",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "trinidad-and-tobago-under-united-kingdom",
+      "id": "trinidad-and-tobago-under-united-kingdom--trinidad-and-tobago--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "trinidad-and-tobago",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "tunisia-under-france",
+      "id": "tunisia-under-france--tunisia--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "tunisia",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "uganda-under-united-kingdom",
+      "id": "uganda-under-united-kingdom--uganda--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "uganda",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "united-arab-emirates-under-united-kingdom",
+      "id": "united-arab-emirates-under-united-kingdom--united-arab-emirates--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "united-arab-emirates",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "zambia-under-united-kingdom",
+      "id": "zambia-under-united-kingdom--zambia--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "zambia",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "zanzibar-under-united-kingdom",
+      "id": "zanzibar-under-united-kingdom--zanzibar--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "zanzibar",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "zimbabwe-rhodesia-under-united-kingdom",
+      "id": "zimbabwe-rhodesia-under-united-kingdom--zimbabwe-rhodesia--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "zimbabwe-rhodesia",
+      "type": "succeeded"
+    }
+  ],
+  "schema": 1,
+  "warnings": [
+    {
+      "id": "bhutan-under-united-kingdom--bhutan--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"bhutan-under-united-kingdom\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "brunei-under-united-kingdom--brunei--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"brunei-under-united-kingdom\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "cameroon-under-france--cameroon--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"cameroon-under-france\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "east-timor-under-portugal--east-timor--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"east-timor\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "senegal-under-france--senegal--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"senegal\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "singapore-under-united-kingdom--singapore--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"singapore-under-united-kingdom\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "singapore-under-united-kingdom--singapore--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"singapore\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "sudan-under-united-kingdom--sudan--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"sudan-under-united-kingdom\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "syria-under-france--syria--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"syria-under-france\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "taiwan-under-japan--taiwan--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"taiwan\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "tunisia-under-france--tunisia--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"tunisia-under-france\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "zambia-under-united-kingdom--zambia--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"zambia\"'s dates",
+      "rule": "relation-outside-actor-when"
+    }
+  ]
+}

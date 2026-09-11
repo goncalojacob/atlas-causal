@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/presence.json",
+  "title": "Presence",
+  "description": "Who held a territory, and when. A presence attaches an outline to an actor over an interval; the outline itself lives under data/geo/presences/ and is never merged into the record, because imported geometry carries its own licence. Presences are drawn on the map under the events and are reached by clicking one; they are never on the timeline.",
+  "type": "object",
+  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "sources", "actor", "presenceType", "dependencyOf", "dependencyKind", "when", "geometry", "capital", "confidence"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "$ref": "../common/provenance.json#/properties/schema" },
+    "id": { "$ref": "../common/provenance.json#/properties/id" },
+    "kind": { "const": "presence" },
+    "status": { "$ref": "../common/provenance.json#/properties/status" },
+    "supersededBy": { "$ref": "../common/provenance.json#/properties/supersededBy" },
+    "aliases": { "$ref": "../common/provenance.json#/properties/aliases" },
+    "authors": { "$ref": "../common/provenance.json#/properties/authors" },
+    "license": { "$ref": "../common/provenance.json#/properties/license" },
+    "created": { "$ref": "../common/provenance.json#/properties/created" },
+    "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "review": { "$ref": "../common/provenance.json#/properties/review" },
+    "origin": { "$ref": "../common/provenance.json#/properties/origin" },
+    "retraction": { "$ref": "../common/provenance.json#/properties/retraction" },
+    "sources": { "$ref": "../common/provenance.json#/properties/sources" },
+    "actor": {
+      "description": "The actor that held the territory. Must resolve to an active actor (rule 17).",
+      "$ref": "../common/provenance.json#/properties/id"
+    },
+    "presenceType": {
+      "description": "What kind of thing was there. A crisp outline is only honest for a state; a culture or a sphere of influence is drawn diffusely.",
+      "type": "string",
+      "enum": ["state", "polity", "sphere-of-influence", "archaeological-culture"]
+    },
+    "dependencyOf": {
+      "description": "The sovereign, when this territory was not its own. null for an independent presence.",
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "../common/provenance.json#/properties/id" }
+      ]
+    },
+    "dependencyKind": {
+      "description": "How the territory was held, as the source classifies it. A dependency always says which of these it was (rule 17); the reverse does not hold, because a territory can be held this way by something that is not a state on this map — Danzig was a League of Nations mandate and West New Guinea a United Nations protectorate.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "string",
+          "enum": ["colony", "protectorate", "mandate", "occupied"]
+        }
+      ]
+    },
+    "when": {
+      "description": "The interval the outline is valid for. end: null means it reaches the present.",
+      "$ref": "../common/interval.json"
+    },
+    "geometry": {
+      "description": "Where the outline is. Geometry is sharded by period, and a presence whose interval spans several shards is written into each of them, so this names every file that carries it and the one key it is filed under.",
+      "type": "object",
+      "required": ["files", "key"],
+      "additionalProperties": false,
+      "properties": {
+        "files": {
+          "description": "Paths relative to data/, sorted. Non-empty, and every file exists and holds the key: rule 17.",
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+        },
+        "key": { "type": "string", "minLength": 1, "maxLength": 120 }
+      }
+    },
+    "capital": {
+      "description": "The seat of government, where the source names one.",
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "../common/place.json" }
+      ]
+    },
+    "confidence": {
+      "description": "Imported state borders in a well-covered period are consensus. The field exists so a hand-made presence can say disputed and be drawn as such.",
+      "$ref": "../common/confidence.json"
+    }
+  }
+}

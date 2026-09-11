@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ghana-under-united-kingdom-1898",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 280"
+    }
+  ],
+  "actor": "ghana-under-united-kingdom",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1898,
+    "end": 1956,
+    "date": "1898-06-14",
+    "endDate": "1956-03-05"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "280"
+  },
+  "capital": {
+    "lon": -0.216667,
+    "lat": 5.55,
+    "precision": "city",
+    "label": "Accra"
+  },
+  "confidence": "consensus"
+}

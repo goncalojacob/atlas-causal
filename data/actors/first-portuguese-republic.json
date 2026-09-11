@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "first-portuguese-republic",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q167360",
+  "wikipedia": {
+    "en": "First Portuguese Republic",
+    "pt": "Primeira República Portuguesa"
+  },
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "First Portuguese Republic",
+    "Primeira República Portuguesa"
+  ],
+  "summary": "The First Portuguese Republic was proclaimed on 5 October 1910 and ended by the coup of 28 May 1926. In sixteen years it had more than forty governments and eight presidents, and lived through the separation of church and state, a divisive entry into the First World War, monarchist risings, the presidential interlude of Sidónio Pais and repeated military interventions. It also brought universal male suffrage in principle, a free press for most of the period, and the first serious attempt at mass schooling. Its failure is argued about in terms of the constitution, of the parties, and of a country that was largely rural, poor and unpersuaded of the republic. It is in the atlas as the polity from which both the dictatorship and the memory that justified it descend.",
+  "when": {
+    "start": 1910,
+    "end": 1926
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

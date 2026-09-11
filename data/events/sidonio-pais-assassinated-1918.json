@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sidonio-pais-assassinated-1918",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "wikidata-assigned-by-assistant"
+    ]
+  },
+  "wikidata": "Q23020255",
+  "wikipedia": {
+    "en": "Assassination of Sidónio Pais",
+    "pt": "Assassinato de Sidónio Pais"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Assassination of Sidónio Pais",
+  "summary": "Sidónio Pais was shot at the Rossio station in Lisbon on the evening of 14 December 1918 by José Júlio da Costa, and died the same night. His \"New Republic\" had lasted a year and depended almost entirely on him: within weeks of his death the monarchist rising in the north and a counter-rising in Lisbon had begun, and the party system he had displaced returned without recovering its authority. The killing was condemned by every side and the funeral was enormous, which is part of why later authoritarian movements claimed him. It is in the atlas as the end of the republic's one experiment with a presidential regime, and as the opening of its most unstable years.",
+  "when": {
+    "start": 1918,
+    "end": 1918,
+    "date": "1918-12-14",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "sidonio-pais",
+      "role": "victim"
+    }
+  ]
+}

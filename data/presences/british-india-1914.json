@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "british-india-1914",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 568"
+    }
+  ],
+  "actor": "british-india",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1914,
+    "end": 1931,
+    "date": "1914-07-03",
+    "endDate": "1931-02-12"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "568"
+  },
+  "capital": {
+    "lon": 88.324676,
+    "lat": 22.49497,
+    "precision": "city",
+    "label": "Calcutta"
+  },
+  "confidence": "consensus"
+}

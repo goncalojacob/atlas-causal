@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "eleicoes-legislativas-regionais-na-madeira-em-1980",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the Madeiran regional election of 5 October 1980, the first won by Alberto João Jardim, who held the regional government until 2015. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the second Madeiran regional election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q10271598",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "pt": "Eleições legislativas regionais na Madeira em 1980"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10271598"
+    }
+  ],
+  "title": "eleições legislativas regionais na Madeira em 1980",
+  "summary": "Wikidata item Q10271598, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1980,
+    "end": 1980,
+    "date": "1980-10-05"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

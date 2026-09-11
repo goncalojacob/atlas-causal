@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "batepa-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted",
+      "m22-reinstated"
+    ],
+    "note": "Retracted in M21 because the atlas then held no other São Toméan record at all. M22 wired the election of July 1975, which gave the massacre somewhere to reach, and reinstated it under the one-edge rule of 4 September 2026. The death toll is disputed and the record says so rather than choosing."
+  },
+  "wikidata": "Q1851212",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "Batepá massacre",
+    "pt": "Massacre de Batepá"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Batepá massacre\", revision 1366289250"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Massacre de Batepá\", revision 67300864"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "Batepá massacre",
+  "summary": "On 3 February 1953 the colonial administration and Portuguese landowners on São Tomé killed forros — the creole population descended from the freed — in numbers still disputed: São Toméan sources give about 1,032, Portuguese ones about 200. The killing followed unrest over a plan to put forros to contract labour on the plantations, which the governor blamed on a communist conspiracy that was never shown to exist; he ordered the military to round up suspects and told settlers to defend themselves, and torture and drowning did the rest. It is in the atlas as the founding grievance of São Toméan nationalism, remembered every 3 February as the day of the martyrs, and as the event the movement that took the islands in 1975 dated itself from.",
+  "when": {
+    "start": 1953,
+    "end": 1953,
+    "date": "1953-02-03"
+  },
+  "place": null,
+  "region": "africa",
+  "actors": [
+    {
+      "actor": "estado-novo",
+      "role": "government",
+      "note": "colonial administration responsible"
+    }
+  ]
+}

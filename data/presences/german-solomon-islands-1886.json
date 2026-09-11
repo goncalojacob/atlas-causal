@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "german-solomon-islands-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 710"
+    }
+  ],
+  "actor": "german-solomon-islands",
+  "presenceType": "state",
+  "dependencyOf": "germany-prussia",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1886,
+    "end": 1899,
+    "date": "1886-01-01",
+    "endDate": "1899-11-13"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "710"
+  },
+  "capital": {
+    "lon": 155.6239,
+    "lat": -6.22972,
+    "precision": "city",
+    "label": "Kieta"
+  },
+  "confidence": "consensus"
+}

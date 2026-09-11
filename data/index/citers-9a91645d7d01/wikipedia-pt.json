@@ -1,0 +1,828 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "democratic-leftwing-republican-party",
+      "kind": "actor",
+      "locator": "\"Partido Republicano da Esquerda Democrática\", revision 64722661"
+    },
+    {
+      "dissent": false,
+      "id": "ecologist-party-the-greens",
+      "kind": "actor",
+      "locator": "\"Partido Ecologista \"Os Verdes\"\", revision 72696956"
+    },
+    {
+      "dissent": false,
+      "id": "evolutionist-party",
+      "kind": "actor",
+      "locator": "\"Partido Republicano Evolucionista\", revision 71995021"
+    },
+    {
+      "dissent": false,
+      "id": "liberal-initiative",
+      "kind": "actor",
+      "locator": "\"Iniciativa Liberal\", revision 72880529"
+    },
+    {
+      "dissent": false,
+      "id": "liberal-regenerator-party",
+      "kind": "actor",
+      "locator": "\"Partido Regenerador Liberal\", revision 69829967"
+    },
+    {
+      "dissent": false,
+      "id": "national-republican-party",
+      "kind": "actor",
+      "locator": "\"Partido Nacional Republicano (Portugal)\", revision 71995027"
+    },
+    {
+      "dissent": false,
+      "id": "nationalist-republican-party",
+      "kind": "actor",
+      "locator": "\"Partido Republicano Nacionalista\", revision 71995030"
+    },
+    {
+      "dissent": false,
+      "id": "people-animals-nature",
+      "kind": "actor",
+      "locator": "\"Pessoas–Animais–Natureza\", revision 72472222"
+    },
+    {
+      "dissent": false,
+      "id": "people-s-democratic-union",
+      "kind": "actor",
+      "locator": "\"União Democrática Popular\", revision 69821974"
+    },
+    {
+      "dissent": false,
+      "id": "people-s-monarchist-party",
+      "kind": "actor",
+      "locator": "\"Partido Popular Monárquico\", revision 72528291"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-democratic-movement",
+      "kind": "actor",
+      "locator": "\"Movimento Democrático Português\", revision 71995148"
+    },
+    {
+      "dissent": false,
+      "id": "reconstitution-party",
+      "kind": "actor",
+      "locator": "\"Partido Republicano da Reconstituição Nacional\", revision 65247385"
+    },
+    {
+      "dissent": false,
+      "id": "redes-energeticas-nacionais",
+      "kind": "actor",
+      "locator": "\"Redes Energéticas Nacionais\", revision 71084168"
+    },
+    {
+      "dissent": false,
+      "id": "republican-liberal-party",
+      "kind": "actor",
+      "locator": "\"Partido Liberal Republicano\", revision 72060049"
+    },
+    {
+      "dissent": false,
+      "id": "revolutionary-socialist-party",
+      "kind": "actor",
+      "locator": "\"Partido Socialista Revolucionário (Portugal)\", revision 72197991"
+    },
+    {
+      "dissent": false,
+      "id": "1908-portuguese-legislative-election--republic-proclaimed-1910--precondition-of",
+      "kind": "edge",
+      "locator": "\"Eleições legislativas portuguesas de 1908\", revision 66807862"
+    },
+    {
+      "dissent": false,
+      "id": "2023-madeiran-regional-election--2024-madeiran-regional-election--precondition-of",
+      "kind": "edge",
+      "locator": "\"Eleições legislativas regionais na Madeira em 2024\", revision 71818912"
+    },
+    {
+      "dissent": false,
+      "id": "lisbon-regicide--1908-portuguese-legislative-election--caused",
+      "kind": "edge",
+      "locator": "\"Eleições legislativas portuguesas de 1908\", revision 66807862"
+    },
+    {
+      "dissent": false,
+      "id": "1908-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 1908\", revision 66807862"
+    },
+    {
+      "dissent": false,
+      "id": "1911-portuguese-constituent-national-assembly-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 1911\", revision 71425359"
+    },
+    {
+      "dissent": false,
+      "id": "1911-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"Eleições presidenciais portuguesas de 1911\", revision 71618872"
+    },
+    {
+      "dissent": false,
+      "id": "1915-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 1915\", revision 71337049"
+    },
+    {
+      "dissent": false,
+      "id": "1921-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 1921\", revision 72524740"
+    },
+    {
+      "dissent": false,
+      "id": "1925-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 1925\", revision 72461616"
+    },
+    {
+      "dissent": false,
+      "id": "1928-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"Eleições presidenciais portuguesas de 1928\", revision 71716338"
+    },
+    {
+      "dissent": false,
+      "id": "1945-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 1945\", revision 68128975"
+    },
+    {
+      "dissent": false,
+      "id": "1949-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"Eleições presidenciais portuguesas de 1949\", revision 71716344"
+    },
+    {
+      "dissent": false,
+      "id": "1965-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"Eleições presidenciais portuguesas de 1965\", revision 71430558"
+    },
+    {
+      "dissent": false,
+      "id": "1969-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 1969\", revision 71768468"
+    },
+    {
+      "dissent": false,
+      "id": "1972-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"Eleições presidenciais portuguesas de 1972\", revision 71446980"
+    },
+    {
+      "dissent": false,
+      "id": "1973-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 1973\", revision 68128942"
+    },
+    {
+      "dissent": false,
+      "id": "1976-azorean-regional-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas regionais nos Açores em 1976\", revision 70826498"
+    },
+    {
+      "dissent": false,
+      "id": "1976-portuguese-local-elections",
+      "kind": "event",
+      "locator": "\"Eleições autárquicas portuguesas de 1976\", revision 72409266"
+    },
+    {
+      "dissent": false,
+      "id": "1979-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 1979\", revision 72177876"
+    },
+    {
+      "dissent": false,
+      "id": "1979-portuguese-local-elections",
+      "kind": "event",
+      "locator": "\"Eleições autárquicas portuguesas de 1979\", revision 72833622"
+    },
+    {
+      "dissent": false,
+      "id": "1980-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 1980\", revision 71194426"
+    },
+    {
+      "dissent": false,
+      "id": "1980-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"Eleições presidenciais portuguesas de 1980\", revision 71840117"
+    },
+    {
+      "dissent": false,
+      "id": "1983-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 1983\", revision 72170884"
+    },
+    {
+      "dissent": false,
+      "id": "1985-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 1985\", revision 72812035"
+    },
+    {
+      "dissent": false,
+      "id": "1987-european-parliament-election-in-portugal",
+      "kind": "event",
+      "locator": "\"Eleições europeias de 1987 (Portugal)\", revision 71024054"
+    },
+    {
+      "dissent": false,
+      "id": "1991-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 1991\", revision 72164419"
+    },
+    {
+      "dissent": false,
+      "id": "1995-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 1995\", revision 72180486"
+    },
+    {
+      "dissent": false,
+      "id": "1998-portuguese-abortion-referendum",
+      "kind": "event",
+      "locator": "\"Referendo à despenalização do aborto em Portugal (1998)\", revision 70878983"
+    },
+    {
+      "dissent": false,
+      "id": "2001-portuguese-local-elections",
+      "kind": "event",
+      "locator": "\"Eleições autárquicas portuguesas de 2001\", revision 72533533"
+    },
+    {
+      "dissent": false,
+      "id": "2002-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 2002\", revision 72017791"
+    },
+    {
+      "dissent": false,
+      "id": "2005-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 2005\", revision 71998339"
+    },
+    {
+      "dissent": false,
+      "id": "2006-lebanon-war",
+      "kind": "event",
+      "locator": "\"Guerra do Líbano de 2006\", revision 72061620"
+    },
+    {
+      "dissent": false,
+      "id": "2007-portuguese-abortion-referendum",
+      "kind": "event",
+      "locator": "\"Referendo à despenalização do aborto em Portugal (2007)\", revision 71782356"
+    },
+    {
+      "dissent": false,
+      "id": "2009-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 2009\", revision 71998337"
+    },
+    {
+      "dissent": false,
+      "id": "2011-portuguese-legislative-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas portuguesas de 2011\", revision 71998335"
+    },
+    {
+      "dissent": false,
+      "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "kind": "event",
+      "locator": "\"Eleições primárias do Partido Socialista em 2014\", revision 71709746"
+    },
+    {
+      "dissent": false,
+      "id": "2022-portuguese-social-democratic-party-leadership-election",
+      "kind": "event",
+      "locator": "\"Eleições diretas do Partido Social Democrata (Portugal) de 2021\", revision 71085688"
+    },
+    {
+      "dissent": false,
+      "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
+      "kind": "event",
+      "locator": "\"Eleições diretas do Partido Social Democrata (Portugal) de 2022\", revision 71084854"
+    },
+    {
+      "dissent": false,
+      "id": "2023-madeiran-regional-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas regionais na Madeira em 2023\", revision 70826794"
+    },
+    {
+      "dissent": false,
+      "id": "2024-madeiran-regional-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas regionais na Madeira em 2024\", revision 71818912"
+    },
+    {
+      "dissent": false,
+      "id": "2025-2026-iranian-protests",
+      "kind": "event",
+      "locator": "\"Protestos no Irã (2025–2026)\", revision 72784810"
+    },
+    {
+      "dissent": false,
+      "id": "2025-madeiran-regional-election",
+      "kind": "event",
+      "locator": "\"Eleições legislativas regionais na Madeira em 2025\", revision 71818596"
+    },
+    {
+      "dissent": false,
+      "id": "algerian-war",
+      "kind": "event",
+      "locator": "\"Guerra de Independência Argelina\", revision 72128749"
+    },
+    {
+      "dissent": false,
+      "id": "armenian-genocide",
+      "kind": "event",
+      "locator": "\"Genocídio armênio\", revision 72654348"
+    },
+    {
+      "dissent": false,
+      "id": "assassination-of-archduke-franz-ferdinand",
+      "kind": "event",
+      "locator": "\"Atentado de Sarajevo\", revision 72527573"
+    },
+    {
+      "dissent": false,
+      "id": "bangladesh-liberation-war",
+      "kind": "event",
+      "locator": "\"Guerra de Independência de Bangladesh\", revision 70046456"
+    },
+    {
+      "dissent": false,
+      "id": "batepa-massacre",
+      "kind": "event",
+      "locator": "\"Massacre de Batepá\", revision 67300864"
+    },
+    {
+      "dissent": false,
+      "id": "beer-hall-putsch",
+      "kind": "event",
+      "locator": "\"Putsch da Cervejaria\", revision 72599133"
+    },
+    {
+      "dissent": false,
+      "id": "boxer-rebellion",
+      "kind": "event",
+      "locator": "\"Rebelião dos Boxers\", revision 72333660"
+    },
+    {
+      "dissent": false,
+      "id": "bucha-massacre",
+      "kind": "event",
+      "locator": "\"Massacre de Bucha\", revision 71884669"
+    },
+    {
+      "dissent": false,
+      "id": "charter-of-the-united-nations",
+      "kind": "event",
+      "locator": "\"Carta das Nações Unidas\", revision 72336615"
+    },
+    {
+      "dissent": false,
+      "id": "chinese-civil-war",
+      "kind": "event",
+      "locator": "\"Guerra Civil Chinesa\", revision 72737609"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic",
+      "kind": "event",
+      "locator": "\"Pandemia de COVID-19\", revision 72622783"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-europe",
+      "kind": "event",
+      "locator": "\"Pandemia de COVID-19 na Europa\", revision 72874243"
+    },
+    {
+      "dissent": false,
+      "id": "crisis-portugal",
+      "kind": "event",
+      "locator": "\"Crise financeira em Portugal de 2010–2014\", revision 72794000"
+    },
+    {
+      "dissent": false,
+      "id": "cuban-revolution",
+      "kind": "event",
+      "locator": "\"Revolução Cubana\", revision 72821388"
+    },
+    {
+      "dissent": false,
+      "id": "eastern-front",
+      "kind": "event",
+      "locator": "\"Frente Oriental (Segunda Guerra Mundial)\", revision 71477173"
+    },
+    {
+      "dissent": false,
+      "id": "eleicoes-legislativas-regionais-na-madeira-em-1976",
+      "kind": "event",
+      "locator": "\"Eleições legislativas regionais na Madeira em 1976\", revision 70848422"
+    },
+    {
+      "dissent": false,
+      "id": "euromaidan",
+      "kind": "event",
+      "locator": "\"Euromaidan\", revision 72442345"
+    },
+    {
+      "dissent": false,
+      "id": "european-convention-on-human-rights",
+      "kind": "event",
+      "locator": "\"Convenção Europeia dos Direitos Humanos\", revision 71694314"
+    },
+    {
+      "dissent": false,
+      "id": "february-revolution",
+      "kind": "event",
+      "locator": "\"Revolução de Fevereiro\", revision 71841706"
+    },
+    {
+      "dissent": false,
+      "id": "first-indochina-war",
+      "kind": "event",
+      "locator": "\"Primeira Guerra da Indochina\", revision 72128882"
+    },
+    {
+      "dissent": false,
+      "id": "full-scale-russo-ukrainian-war",
+      "kind": "event",
+      "locator": "\"Invasão da Ucrânia pela Rússia (2022–presente)\", revision 72854976"
+    },
+    {
+      "dissent": false,
+      "id": "gaza-genocide",
+      "kind": "event",
+      "locator": "\"Genocídio na Faixa de Gaza\", revision 72570368"
+    },
+    {
+      "dissent": false,
+      "id": "gaza-war",
+      "kind": "event",
+      "locator": "\"Guerra de Gaza\", revision 72478904"
+    },
+    {
+      "dissent": false,
+      "id": "great-depression",
+      "kind": "event",
+      "locator": "\"Grande Depressão\", revision 72860906"
+    },
+    {
+      "dissent": false,
+      "id": "gulf-war",
+      "kind": "event",
+      "locator": "\"Guerra do Golfo\", revision 72734273"
+    },
+    {
+      "dissent": false,
+      "id": "iberian-pact",
+      "kind": "event",
+      "locator": "\"Tratado de Amizade e Não Agressão Luso-Espanhol\", revision 68716502"
+    },
+    {
+      "dissent": false,
+      "id": "indo-pakistani-war-of-1965",
+      "kind": "event",
+      "locator": "\"Guerra Indo-Paquistanesa de 1965\", revision 71856542"
+    },
+    {
+      "dissent": false,
+      "id": "international-covenant-on-civil-and-political-rights",
+      "kind": "event",
+      "locator": "\"Pacto Internacional dos Direitos Civis e Políticos\", revision 70560184"
+    },
+    {
+      "dissent": false,
+      "id": "iranian-revolution",
+      "kind": "event",
+      "locator": "\"Revolução Iraniana\", revision 72685936"
+    },
+    {
+      "dissent": false,
+      "id": "iraq-war",
+      "kind": "event",
+      "locator": "\"Guerra do Iraque\", revision 72919918"
+    },
+    {
+      "dissent": false,
+      "id": "katyn-massacre",
+      "kind": "event",
+      "locator": "\"Massacre de Katyn\", revision 70436501"
+    },
+    {
+      "dissent": false,
+      "id": "korean-war",
+      "kind": "event",
+      "locator": "\"Guerra da Coreia\", revision 72794630"
+    },
+    {
+      "dissent": false,
+      "id": "lebanese-civil-war",
+      "kind": "event",
+      "locator": "\"Guerra Civil Libanesa\", revision 72825388"
+    },
+    {
+      "dissent": false,
+      "id": "lisbon-regicide",
+      "kind": "event",
+      "locator": "\"Regicídio de 1908\", revision 70413642"
+    },
+    {
+      "dissent": false,
+      "id": "maastricht-treaty",
+      "kind": "event",
+      "locator": "\"Tratado de Maastricht\", revision 71853123"
+    },
+    {
+      "dissent": false,
+      "id": "molotov-ribbentrop-pact",
+      "kind": "event",
+      "locator": "\"Pacto Molotov-Ribbentrop\", revision 72134920"
+    },
+    {
+      "dissent": false,
+      "id": "mueda-massacre",
+      "kind": "event",
+      "locator": "\"Massacre de Mueda\", revision 65265066"
+    },
+    {
+      "dissent": false,
+      "id": "munich-agreement",
+      "kind": "event",
+      "locator": "\"Acordo de Munique\", revision 69311046"
+    },
+    {
+      "dissent": false,
+      "id": "october-revolution",
+      "kind": "event",
+      "locator": "\"Revolução de Outubro\", revision 71345414"
+    },
+    {
+      "dissent": false,
+      "id": "orange-revolution",
+      "kind": "event",
+      "locator": "\"Revolução Laranja\", revision 71828848"
+    },
+    {
+      "dissent": false,
+      "id": "paris-peace-conference",
+      "kind": "event",
+      "locator": "\"Conferência de Paz de Paris (1919–1920)\", revision 72784719"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-regionalisation-referendum-1998",
+      "kind": "event",
+      "locator": "\"Referendo sobre a regionalização em Portugal (1998)\", revision 72826511"
+    },
+    {
+      "dissent": false,
+      "id": "potsdam-conference",
+      "kind": "event",
+      "locator": "\"Conferência de Potsdam\", revision 72101398"
+    },
+    {
+      "dissent": false,
+      "id": "russian-civil-war",
+      "kind": "event",
+      "locator": "\"Guerra Civil Russa\", revision 72906861"
+    },
+    {
+      "dissent": false,
+      "id": "russian-revolution-of-1905",
+      "kind": "event",
+      "locator": "\"Revolução Russa de 1905\", revision 71589948"
+    },
+    {
+      "dissent": false,
+      "id": "russo-georgian-war",
+      "kind": "event",
+      "locator": "\"Guerra Russo-Georgiana\", revision 71458395"
+    },
+    {
+      "dissent": false,
+      "id": "russo-ukrainian-war",
+      "kind": "event",
+      "locator": "\"Guerra Russo-Ucraniana\", revision 72707172"
+    },
+    {
+      "dissent": false,
+      "id": "schengen-agreement",
+      "kind": "event",
+      "locator": "\"Acordo de Schengen\", revision 68154239"
+    },
+    {
+      "dissent": false,
+      "id": "second-boer-war",
+      "kind": "event",
+      "locator": "\"Segunda Guerra dos Bôeres\", revision 68232995"
+    },
+    {
+      "dissent": false,
+      "id": "second-sino-japanese-war",
+      "kind": "event",
+      "locator": "\"Segunda Guerra Sino-Japonesa\", revision 72853076"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-civil-war",
+      "kind": "event",
+      "locator": "\"Guerra Civil Espanhola\", revision 72792080"
+    },
+    {
+      "dissent": false,
+      "id": "the-holocaust",
+      "kind": "event",
+      "locator": "\"Holocausto\", revision 72716958"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-brest-litovsk",
+      "kind": "event",
+      "locator": "\"Tratado de Brest-Litovski\", revision 69632275"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
+      "kind": "event",
+      "locator": "\"Tratado de Amizade e Cooperação entre Portugal e Espanha (1977)\", revision 66016588"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-lausanne",
+      "kind": "event",
+      "locator": "\"Tratado de Lausanne\", revision 69632334"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-portsmouth",
+      "kind": "event",
+      "locator": "\"Tratado de Portsmouth\", revision 67280689"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-rome",
+      "kind": "event",
+      "locator": "\"Tratado de Roma (1957)\", revision 72036494"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-sevres",
+      "kind": "event",
+      "locator": "\"Tratado de Sèvres\", revision 66919817"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-trianon",
+      "kind": "event",
+      "locator": "\"Tratado de Trianon\", revision 71341221"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-versailles",
+      "kind": "event",
+      "locator": "\"Tratado de Versalhes (1919)\", revision 72254145"
+    },
+    {
+      "dissent": false,
+      "id": "turkish-war-of-independence",
+      "kind": "event",
+      "locator": "\"Guerra de Independência da Turquia\", revision 72807000"
+    },
+    {
+      "dissent": false,
+      "id": "twelve-day-war",
+      "kind": "event",
+      "locator": "\"Guerra dos Doze Dias\", revision 72100689"
+    },
+    {
+      "dissent": false,
+      "id": "vietnam-war",
+      "kind": "event",
+      "locator": "\"Guerra do Vietnã\", revision 72906135"
+    },
+    {
+      "dissent": false,
+      "id": "wagner-group-rebellion",
+      "kind": "event",
+      "locator": "\"Rebelião do Grupo Wagner\", revision 71778928"
+    },
+    {
+      "dissent": false,
+      "id": "wall-street-crash-of-1929",
+      "kind": "event",
+      "locator": "\"Quinta-Feira Negra\", revision 72352350"
+    },
+    {
+      "dissent": false,
+      "id": "warsaw-uprising",
+      "kind": "event",
+      "locator": "\"Revolta de Varsóvia\", revision 72740455"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i",
+      "kind": "event",
+      "locator": "\"Primeira Guerra Mundial\", revision 72915802"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii",
+      "kind": "event",
+      "locator": "\"Segunda Guerra Mundial\", revision 72709515"
+    },
+    {
+      "dissent": false,
+      "id": "yom-kippur-war",
+      "kind": "event",
+      "locator": "\"Guerra do Yom Kippur\", revision 70958475"
+    },
+    {
+      "dissent": false,
+      "id": "young-turk-revolution-of-1908",
+      "kind": "event",
+      "locator": "\"Revolução dos Jovens Turcos\", revision 62934565"
+    },
+    {
+      "dissent": false,
+      "id": "ecologist-party-the-greens--pcp--allied-with",
+      "kind": "relation",
+      "locator": "\"Partido Ecologista \"Os Verdes\"\", revision 72696956"
+    },
+    {
+      "dissent": false,
+      "id": "evolutionist-party--republican-liberal-party--succeeded",
+      "kind": "relation",
+      "locator": "\"Partido Liberal Republicano\", revision 72060049"
+    },
+    {
+      "dissent": false,
+      "id": "evolutionist-party--republican-liberal-party--succeeded",
+      "kind": "relation",
+      "locator": "\"Partido Republicano Evolucionista\", revision 71995021"
+    },
+    {
+      "dissent": false,
+      "id": "people-s-democratic-union--bloco-de-esquerda--succeeded",
+      "kind": "relation",
+      "locator": "\"União Democrática Popular\", revision 69821974"
+    },
+    {
+      "dissent": false,
+      "id": "reconstitution-party--nationalist-republican-party--succeeded",
+      "kind": "relation",
+      "locator": "\"Partido Republicano da Reconstituição Nacional\", revision 65247385"
+    },
+    {
+      "dissent": false,
+      "id": "republican-liberal-party--nationalist-republican-party--succeeded",
+      "kind": "relation",
+      "locator": "\"Partido Republicano da Reconstituição Nacional\", revision 65247385"
+    },
+    {
+      "dissent": false,
+      "id": "revolutionary-socialist-party--bloco-de-esquerda--succeeded",
+      "kind": "relation",
+      "locator": "\"Partido Socialista Revolucionário (Portugal)\", revision 72197991"
+    },
+    {
+      "dissent": false,
+      "id": "revolutionary-socialist-party--bloco-de-esquerda--succeeded",
+      "kind": "relation",
+      "locator": "\"União Democrática Popular\", revision 69821974"
+    },
+    {
+      "dissent": false,
+      "id": "joao-franco-liberal-regenerator-party-1901",
+      "kind": "tenure",
+      "locator": "\"Partido Regenerador Liberal\", revision 69829967"
+    },
+    {
+      "dissent": false,
+      "id": "sidonio-pais-national-republican-party-1918",
+      "kind": "tenure",
+      "locator": "\"Partido Nacional Republicano (Portugal)\", revision 71995027"
+    }
+  ],
+  "id": "wikipedia-pt",
+  "schema": 1
+}

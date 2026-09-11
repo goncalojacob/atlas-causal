@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "legislative-election-2022--costa-resigns-2023--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "cne-legislative-2022",
+      "locator": null
+    },
+    {
+      "source": "pgr-2023-operation-influencer",
+      "locator": null
+    }
+  ],
+  "from": "legislative-election-2022",
+  "to": "costa-resigns-2023",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "An absolute majority meant that the prime minister could not be forced out by any vote in the chamber, so his going could only be his own act; it also meant that when he went, the majority was left without the person it had been assembled around. Both halves of that follow from the result of January 2022 rather than from the inquiry.",
+  "dispute": null
+}

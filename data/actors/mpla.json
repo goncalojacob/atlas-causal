@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mpla",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry."
+  },
+  "wikidata": "Q28551",
+  "wikipedia": {
+    "en": "MPLA",
+    "pt": "Movimento Popular de Libertação de Angola"
+  },
+  "sitelinks": {
+    "count": 54,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "MPLA",
+    "Movimento Popular de Libertação de Angola",
+    "People's Movement for the Liberation of Angola"
+  ],
+  "summary": "One of the three Angolan movements, based in Luanda and among the assimilated and urban population, and the one that held the capital at independence in 1975.",
+  "when": {
+    "start": 1956,
+    "end": null
+  },
+  "where": {
+    "lon": 13.23,
+    "lat": -8.84,
+    "precision": "city",
+    "label": "Luanda"
+  }
+}

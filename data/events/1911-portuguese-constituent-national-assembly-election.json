@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "1911-portuguese-constituent-national-assembly-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q7232627",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1911 Portuguese National Constituent Assembly election",
+    "pt": "Eleições legislativas portuguesas de 1911"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1911 Portuguese National Constituent Assembly election\", revision 1366576929"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1911\", revision 71425359"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q7232627"
+    }
+  ],
+  "title": "1911 Constituent Assembly election",
+  "summary": "Portugal elected a Constituent Assembly on 28 May 1911, seven months after the revolution and in the first ballot of the Republic. The Portuguese Republican Party, which was at that moment the whole of republicanism, took 229 of the 234 seats: the monarchist parties stood aside and much of the Catholic electorate abstained, so the Assembly that met in June represented the victors of October and very little else. It sat as a constituent body, wrote the constitution promulgated on 21 August, and under that constitution elected the Republic’s first president three days later. The unanimity did not survive the year — the party that had won everything split three ways in 1911 and 1912, and the First Republic’s instability begins in that split. It is in the atlas as the election that made the constitution.",
+  "when": {
+    "start": 1911,
+    "end": 1911,
+    "date": "1911-05-28",
+    "calendar": "gregorian"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "partido-republicano-portugues",
+      "role": "party",
+      "note": "won 229 of 234 seats"
+    },
+    {
+      "actor": "first-portuguese-republic",
+      "role": "government",
+      "note": "the regime being constituted"
+    }
+  ]
+}

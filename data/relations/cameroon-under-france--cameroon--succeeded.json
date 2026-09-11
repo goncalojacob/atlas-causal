@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "cameroon-under-france--cameroon--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 471"
+    }
+  ],
+  "from": "cameroon-under-france",
+  "to": "cameroon",
+  "type": "succeeded",
+  "when": {
+    "start": 1960,
+    "end": 1960,
+    "date": "1960-01-01"
+  },
+  "note": "CShapes holds 471 as a mandate of France to 1959-12-31; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+}

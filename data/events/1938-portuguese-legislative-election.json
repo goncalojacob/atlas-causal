@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1938-portuguese-legislative-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: 30 October 1938, the National Union alone on the ballot again, all 100 seats, 649,028 votes of 773,033 registered. A single-list election under a one-party state, with no consequence that can be argued from the bibliography here."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q7232755",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1938 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1938"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7232755"
+    }
+  ],
+  "title": "1938 Portuguese legislative election",
+  "summary": "Wikidata item Q7232755, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1938,
+    "end": 1938,
+    "date": "1938-10-30"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

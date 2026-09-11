@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1964-rosais-earthquake",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: the seismic crisis of February 1964 destroyed most of the housing in the west of São Jorge in the Azores and about 5,000 people were evacuated to Terceira, Pico and Faial. A disaster with no consequence the atlas holds — the brief names these as expected retractions."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q10261580",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1964 Rosais earthquake",
+    "pt": "Crise sísmica dos Rosais"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10261580"
+    }
+  ],
+  "title": "1964 Rosais earthquake",
+  "summary": "Wikidata item Q10261580, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1964,
+    "end": 1964,
+    "date": "1964-02-15"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "disaster",
+  "actors": []
+}

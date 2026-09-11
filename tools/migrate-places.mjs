@@ -1,0 +1,208 @@
+#!/usr/bin/env node
+// One-time migration, kept so a contributor can see how it was done: every
+// event's `where` becomes a `place` record it points at.
+//
+// Events are grouped by their exact coordinates, precision and label — the
+// thirty-seven records that carry Lisbon's point are one place — and each
+// group becomes one record under data/places/, named by the label. The
+// place's id is the slug of the label's first comma-separated segment
+// ("Lajes, Terceira" → `lajes`), because the rest of a label is usually
+// there to locate the place for a reader, not to name it; the whole label
+// is kept as the place's name, and the mapping is printed so a person can
+// rename what came out wrong. Two labels whose ids collide are numbered and
+// said loudly.
+//
+// Idempotent: an event that already carries `place` is left alone and a place
+// file that already exists is never overwritten, so a run cut off half-way
+// finishes cleanly on the next one.
+//
+//   node tools/migrate-places.mjs [--data <dir>] [--today YYYY-MM-DD] [--dry-run]
+
+import { readdir, readFile, writeFile, mkdir } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import { KIND_DIRS } from './lib/read.mjs';
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const DEFAULT_DATA = path.join(ROOT, 'data');
+
+// The same normalisation the contribution form uses for an id it suggests
+// (src/contribute/bundle.js), kept here rather than imported so this tool
+// stays readable on its own.
+export function slugify(text) {
+  return String(text ?? '')
+    .normalize('NFKD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 120)
+    .replace(/-+$/, '');
+}
+
+// "Lajes, Terceira" → "lajes"; "Flanders, near Laventie" → "flanders".
+export function placeIdFor(label) {
+  return slugify(String(label ?? '').split(',')[0]);
+}
+
+const keyOf = (where) => JSON.stringify([where.lon, where.lat, where.precision, where.label]);
+
+// The plan, worked out in memory: which places to write and which events to
+// rewrite. Pure, so a test can check the grouping without touching a disk.
+// `existing` is the ids already taken, so a second run does not collide with
+// its own first.
+export function planPlaces(events, { existing = new Set() } = {}) {
+  const groups = new Map();
+  const skipped = [];
+  for (const event of [...events].sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))) {
+    if (Object.hasOwn(event, 'place')) {
+      skipped.push(event.id);
+      continue;
+    }
+    const where = event.where ?? null;
+    if (!where) {
+      // A process with no honest point: it becomes place: null and keeps the
+      // region it already had to carry.
+      groups.set(`placeless:${event.id}`, { where: null, events: [event] });
+      continue;
+    }
+    const key = keyOf(where);
+    if (!groups.has(key)) groups.set(key, { where, events: [] });
+    groups.get(key).events.push(event);
+  }
+
+  const taken = new Set(existing);
+  const places = [];
+  const collisions = [];
+  for (const group of groups.values()) {
+    if (!group.where) continue;
+    const base = placeIdFor(group.where.label) || 'place';
+    let id = base;
+    for (let n = 2; taken.has(id); n += 1) {
+      id = `${base}-${n}`;
+      if (n === 2) collisions.push({ base, label: group.where.label });
+    }
+    taken.add(id);
+    places.push({ id, where: group.where, events: group.events.map((e) => e.id), authors: authorsOf(group.events) });
+  }
+  places.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+
+  const assignment = new Map();
+  for (const place of places) for (const id of place.events) assignment.set(id, place.id);
+  for (const group of groups.values()) {
+    if (!group.where) assignment.set(group.events[0].id, null);
+  }
+  return { places, assignment, collisions, skipped };
+}
+
+// The authors of the records a place came from, deduplicated, in the order
+// they were met: a place drafted out of assistant-drafted events carries the
+// same draft marker as those events (CLAUDE.md, the dated exception).
+function authorsOf(events) {
+  const seen = new Map();
+  for (const event of events) {
+    for (const author of event.authors ?? []) {
+      const key = `${author.name}\u001f${author.github ?? ''}`;
+      if (!seen.has(key)) seen.set(key, { name: author.name, github: author.github ?? null });
+    }
+  }
+  return [...seen.values()];
+}
+
+export function placeRecord({ id, where, authors }, { today }) {
+  return {
+    schema: 1,
+    id,
+    kind: 'place',
+    status: 'active',
+    supersededBy: null,
+    aliases: [],
+    authors: authors.length ? authors : [{ name: 'TODO', github: null }],
+    license: 'CC-BY-SA-4.0',
+    created: today,
+    revised: null,
+    // A place is a geographic fact and cites nothing (rule 6).
+    sources: [],
+    names: [where.label],
+    where: { ...where },
+    region: null,
+    summary: null,
+  };
+}
+
+// `where` becomes `place` in the same position, so the diff of a migrated
+// event is two lines and the file still reads in the order every other one
+// does.
+export function migrateEvent(event, placeId) {
+  const out = {};
+  for (const [key, value] of Object.entries(event)) {
+    if (key === 'where') out.place = placeId;
+    else out[key] = value;
+  }
+  if (!Object.hasOwn(out, 'place')) out.place = placeId;
+  return out;
+}
+
+async function readEvents(dataDir) {
+  const dir = path.join(dataDir, KIND_DIRS.event);
+  if (!existsSync(dir)) return [];
+  const events = [];
+  for (const name of (await readdir(dir)).sort()) {
+    if (!name.endsWith('.json')) continue;
+    events.push({ file: path.join(dir, name), record: JSON.parse(await readFile(path.join(dir, name), 'utf8')) });
+  }
+  return events;
+}
+
+async function main(argv) {
+  let dataDir = DEFAULT_DATA;
+  let today = new Date().toISOString().slice(0, 10);
+  let dryRun = false;
+  for (let i = 0; i < argv.length; i += 1) {
+    if (argv[i] === '--data') dataDir = path.resolve(argv[++i]);
+    else if (argv[i] === '--today') today = argv[++i];
+    else if (argv[i] === '--dry-run') dryRun = true;
+    else {
+      console.error(`unknown argument ${argv[i]}`);
+      return 2;
+    }
+  }
+
+  const events = await readEvents(dataDir);
+  const placesDir = path.join(dataDir, KIND_DIRS.place);
+  const existing = existsSync(placesDir)
+    ? new Set((await readdir(placesDir)).filter((n) => n.endsWith('.json')).map((n) => n.slice(0, -'.json'.length)))
+    : new Set();
+  const { places, assignment, collisions, skipped } = planPlaces(events.map((e) => e.record), { existing });
+
+  for (const { base, label } of collisions) {
+    console.error(`warning: "${label}" wanted the id "${base}", which is taken; it was numbered instead. Rename it by hand.`);
+  }
+
+  if (!dryRun && places.length) await mkdir(placesDir, { recursive: true });
+  for (const place of places) {
+    const file = path.join(placesDir, `${place.id}.json`);
+    if (existsSync(file)) {
+      console.log(`kept    ${place.id} (already written)`);
+      continue;
+    }
+    if (!dryRun) await writeFile(file, `${JSON.stringify(placeRecord(place, { today }), null, 2)}\n`, 'utf8');
+    console.log(`place   ${place.id.padEnd(28)} ${place.where.label} — ${place.events.length} event${place.events.length === 1 ? '' : 's'}`);
+  }
+
+  let rewritten = 0;
+  for (const { file, record } of events) {
+    if (!assignment.has(record.id)) continue;
+    if (!dryRun) await writeFile(file, `${JSON.stringify(migrateEvent(record, assignment.get(record.id)), null, 2)}\n`, 'utf8');
+    rewritten += 1;
+  }
+
+  console.log(`${places.length} place(s), ${rewritten} event(s) rewritten, ${skipped.length} already migrated${dryRun ? ' (dry run: nothing written)' : ''}`);
+  if (rewritten || places.length) console.log('now run node tools/validate.mjs and node tools/build-index.mjs');
+  return 0;
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  process.exitCode = await main(process.argv.slice(2));
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "eduardo-mondlane",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "place"
+    ],
+    "note": "The point on this record stands for a region or a seat it is not certain of. Check it, and drop it rather than keep a guess."
+  },
+  "wikidata": "Q443434",
+  "wikipedia": {
+    "en": "Eduardo Mondlane",
+    "pt": "Eduardo Mondlane"
+  },
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Eduardo Mondlane",
+    "Eduardo Chivambo Mondlane"
+  ],
+  "summary": "Sociologist and first president of FRELIMO, which he led from its foundation in 1962 until he was killed by a parcel bomb in Dar es Salaam in February 1969. Responsibility for the killing is still argued over.",
+  "when": {
+    "start": 1920,
+    "end": 1969
+  },
+  "where": {
+    "lon": 33.55,
+    "lat": -24.7,
+    "precision": "region",
+    "label": "Gaza province, Mozambique"
+  }
+}

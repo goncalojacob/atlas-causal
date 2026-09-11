@@ -1,0 +1,264 @@
+{
+  "from": 1200,
+  "kind": "event",
+  "records": {
+    "fixture-event-a": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "body"
+          ],
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "sitelinks"
+          ],
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "names"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-a2": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-b": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-c": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-d": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-e": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-f": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "category",
+            "scope"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-g": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-h": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-m": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-o": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-t": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "place",
+            "where"
+          ],
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "actors",
+            "parent"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1299
+}

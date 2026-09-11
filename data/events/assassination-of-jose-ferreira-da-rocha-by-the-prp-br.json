@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "assassination-of-jose-ferreira-da-rocha-by-the-prp-br",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the killing of a PSP officer, José Ferreira da Rocha, by the Brigadas Revolucionárias during an attempted robbery on 17 March 1976. The atlas holds no record of the armed far left — not the PRP-BR, not the FP-25, not the trials — so there is nothing for an action of theirs to attach to in either direction, and any edge would be invented. Revisit once the organisations themselves are here."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q115473111",
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q115473111"
+    }
+  ],
+  "title": "Assassination of José Ferreira da Rocha, by the PRP-BR",
+  "summary": "Wikidata item Q115473111, imported by tools/import/wikidata.mjs. The item's own description reads \"murder of a Public Security Police (PSP) agent by the Revolutionary Brigades, in an attempt to rob the Pinto de Magalhães Bank, in Porto, on March 17, 1976\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "date": "1976-03-17"
+  },
+  "place": "porto",
+  "region": null,
+  "actors": []
+}

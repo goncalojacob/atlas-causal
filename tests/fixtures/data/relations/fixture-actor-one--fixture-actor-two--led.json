@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "fixture-actor-one--fixture-actor-two--led",
+  "kind": "relation",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": "2026-01-01",
+  "retraction": {
+    "on": "2026-01-01",
+    "reason": "Retracted in M30a-2 and re-filed as the tenure \"fixture-actor-one-fixture-actor-two-1210\": who led a body is an office somebody held and not a link between two actors, because a relation's id is from--to--type and one person may lead one body more than once. The type \"led\" is deprecated and no active relation may take it; nothing this record claimed was changed in the move."
+  },
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "from": "fixture-actor-one",
+  "to": "fixture-actor-two",
+  "type": "led",
+  "when": {
+    "start": 1210,
+    "end": 1240
+  },
+  "note": "Synthetic: the same pair under a second type, which is legal."
+}

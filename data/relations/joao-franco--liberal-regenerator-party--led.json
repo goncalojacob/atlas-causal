@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "joao-franco--liberal-regenerator-party--led",
+  "kind": "relation",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "origin": {
+    "tool": "assistant"
+  },
+  "retraction": {
+    "on": "2026-09-08",
+    "reason": "Retracted in M30a-2 and re-filed as the tenure \"joao-franco-liberal-regenerator-party-1901\": who led a body is an office somebody held and not a link between two actors, because a relation's id is from--to--type and one person may lead one body more than once. The type \"led\" is deprecated and no active relation may take it; nothing this record claimed was changed in the move."
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Liberal Regenerator Party\", revision 1371473198"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Regenerador Liberal\", revision 69829967"
+    }
+  ],
+  "from": "joao-franco",
+  "to": "liberal-regenerator-party",
+  "type": "led",
+  "when": {
+    "start": 1901,
+    "end": 1910
+  },
+  "note": "Founded by him on 16 May 1901 after his break with Hintze Ribeiro. The end is the party record's own and was not read in a source."
+}

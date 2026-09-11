@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "1999-european-parliament-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the European Parliament election of June 1999 across the fifteen member states, as an event of the Union rather than of Portugal. The import brought both this and the Portuguese ballot of the same month as separate records; the Portuguese one is retracted as a routine repetition, and this one because the atlas has no lane for a Union-wide event and would have to invent Portugal's part in it to keep it."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q1851815",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1999 European Parliament election",
+    "pt": "Eleições parlamentares europeias de 1999"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1851815"
+    }
+  ],
+  "title": "1999 European Parliament election",
+  "summary": "Wikidata item Q1851815, imported by tools/import/wikidata.mjs. The item's own description reads \"election to the European Parliament\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1999,
+    "end": 1999
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "german-togoland-1887",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 287"
+    }
+  ],
+  "actor": "german-togoland",
+  "presenceType": "state",
+  "dependencyOf": "germany-prussia",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1887,
+    "end": 1888,
+    "date": "1887-01-01",
+    "endDate": "1888-11-30"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "287"
+  },
+  "capital": {
+    "lon": 1.5814,
+    "lat": 6.2273,
+    "precision": "city",
+    "label": "Sebe"
+  },
+  "confidence": "consensus"
+}

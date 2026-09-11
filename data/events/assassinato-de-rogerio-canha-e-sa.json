@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "assassinato-de-rogerio-canha-e-sa",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the killing of Rogério Canha e Sá on 29 May 1984. The atlas holds no record of the armed far left — not the PRP-BR, not the FP-25, not the trials — so there is nothing for an action of theirs to attach to in either direction, and any edge would be invented. Revisit once the organisations themselves are here."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q138783119",
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q138783119"
+    }
+  ],
+  "title": "Assassinato de Rogério Canha e Sá",
+  "summary": "Wikidata item Q138783119, imported by tools/import/wikidata.mjs. The item's own description reads \"assassinato do administrador da Gelmar, pelas FP 25 de Abril, em 29 de maio de 1984\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1984,
+    "end": 1984,
+    "date": "1984-05-29"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

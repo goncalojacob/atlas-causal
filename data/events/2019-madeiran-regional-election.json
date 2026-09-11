@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "2019-madeiran-regional-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the Madeiran regional election of 22 September 2019. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the twelfth Madeiran regional election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q30634252",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2019 Madeiran regional election",
+    "pt": "Eleições legislativas regionais na Madeira em 2019"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q30634252"
+    }
+  ],
+  "title": "2019 Madeiran regional election",
+  "summary": "Wikidata item Q30634252, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese regional election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2019,
+    "end": 2019,
+    "date": "2019-09-22"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "q5941661",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the import brought this item with no label in English or Portuguese, no description, no Wikipedia article in any language and nothing but a date, 27 August 1977. Nothing can be said about it, which means nothing can be argued from it either. If the item acquires a label the record can be revived from its Wikidata id."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q5941661",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5941661"
+    }
+  ],
+  "title": "Q5941661",
+  "summary": "Wikidata item Q5941661, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1977,
+    "end": 1977,
+    "date": "1977-08-27"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

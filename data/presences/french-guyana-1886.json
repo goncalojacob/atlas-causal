@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "french-guyana-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 47"
+    }
+  ],
+  "actor": "french-guyana",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1886,
+    "end": 1930,
+    "date": "1886-01-01",
+    "endDate": "1930-07-05"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "47"
+  },
+  "capital": {
+    "lon": -52.330021,
+    "lat": 4.93299,
+    "precision": "city",
+    "label": "Cayenne"
+  },
+  "confidence": "consensus"
+}

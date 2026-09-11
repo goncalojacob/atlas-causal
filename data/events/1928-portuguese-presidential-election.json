@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "1928-portuguese-presidential-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q18167373",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1928 Portuguese presidential election",
+    "pt": "Eleições presidenciais portuguesas de 1928"
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1928 Portuguese presidential election\", revision 1348300118"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições presidenciais portuguesas de 1928\", revision 71716338"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q18167373"
+    }
+  ],
+  "title": "1928 Portuguese presidential election",
+  "summary": "Óscar Carmona, who had been running the Military Dictatorship as head of state since November 1926, stood for the presidency on 25 March 1928 and ran unopposed. The vote was the dictatorship’s first attempt to give itself a constitutional face: an electorate went to the polls, no other name was on the ballot, and the general who had taken power by force came away from it holding a mandate. A month later the government formed under him called António de Oliveira Salazar to the finance ministry on the terms Salazar had walked out over in 1926 — a veto on the spending of every department. Carmona stayed in the office until he died in 1951, by which time it had been emptied of everything except the power, never used, to dismiss the man he had appointed. It is in the atlas as the point at which the dictatorship stopped being provisional.",
+  "when": {
+    "start": 1928,
+    "end": 1928,
+    "date": "1928-03-25",
+    "calendar": "gregorian"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "oscar-carmona",
+      "role": "head-of-state",
+      "note": "sole candidate, elected president"
+    },
+    {
+      "actor": "military-dictatorship",
+      "role": "government",
+      "note": "the regime seeking a constitutional form"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "treaty-of-versailles",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q8736",
+  "sitelinks": {
+    "count": 122,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Treaty of Versailles",
+    "pt": "Tratado de Versalhes (1919)"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Versailles\", revision 1371877530"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Tratado de Versalhes (1919)\", revision 72254145"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q8736"
+    }
+  ],
+  "title": "Treaty of Versailles",
+  "summary": "Signed on 28 June 1919, five years to the day after Sarajevo, the treaty ended the state of war between Germany and most of the Allies. Germany lost Alsace-Lorraine, the Polish corridor, its colonies and its fleet, was limited to an army of a hundred thousand, was held responsible with its allies for the loss and damage of the war under article 231, and was left owing reparations whose amount a commission would fix later. It was accepted under protest and denounced in Germany as a dictated peace for the whole of the Weimar Republic's life. What weight it carries in the origins of the next war is one of the longest-running arguments in modern history, and the atlas keeps it open.",
+  "when": {
+    "start": 1919,
+    "end": 1919,
+    "date": "1919-06-28"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "germany-prussia",
+      "role": "signatory"
+    },
+    {
+      "actor": "france",
+      "role": "signatory"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "signatory"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "signatory"
+    },
+    {
+      "actor": "italy-sardinia",
+      "role": "signatory"
+    },
+    {
+      "actor": "portugal",
+      "role": "signatory"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1919-portuguese-legislative-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: the election of 11 May 1919, the first after the sidonista interregnum, in which the three parties that had boycotted 1918 returned and the Democrats took 86 of 163 seats. The collapse of the República Nova that brought them back is already here. Nothing argued leads out: the next thing the atlas holds is the Noite Sangrenta of October 1921, and that is not this election’s doing."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q7232750",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1919 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1919"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7232750"
+    }
+  ],
+  "title": "1919 Portuguese legislative election",
+  "summary": "Wikidata item Q7232750, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1919,
+    "end": 1919,
+    "date": "1919-05-11"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

@@ -1,0 +1,68 @@
+# Build brief — M39: a Pacific-centred projection
+
+Owner's request, 5 September 2026: the world map centred on Asia. Runs
+after H4a (the map's hot paths), on `m0`. Read `CLAUDE.md` (no map
+library; `src/map/projection.js` is the only file a projection change
+touches — this brief widens that to the build tools that cut geometry),
+`STATUS.md`, `ARCHITECTURE.md`, `docs/run-protocol.md`, `docs/map-brief.md`,
+`docs/m5-brief.md`, `docs/m24-brief.md` (`?bbox=`), `src/map/projection.js`,
+`src/util/viewport.js`, `tools/build-regions.mjs`, `tools/import/cshapes.mjs`
+and `simplify.mjs`, then this file.
+
+## The change
+
+1. **The central meridian is a parameter** of `src/map/projection.js`
+   (`CENTRAL_MERIDIAN`), longitudes shifted and wrapped into
+   [−180, 180) around it before projection and unshifted on the way back;
+   the default is the meridian chosen in step 2; every projection test
+   is parameterised over 0 and the new default.
+2. **Choose the seam by measurement.** A pure `splitAtMeridian(geojson,
+   lon)` in `tools/import/geometry.mjs` (or beside `simplify.mjs`) cuts
+   polygons and lines at a meridian with correct winding and no gaps;
+   `tools/build-regions.mjs --seam-report` prints, for central meridians
+   from 140°E to 170°E in 5° steps, the land area and the number of
+   polygons the seam cuts (Greenland, Iceland, the Atlantic islands,
+   Antarctica excluded). Pick the one that cuts least, record the table
+   and the choice in `STATUS.md` and `ARCHITECTURE.md`.
+3. **Geometry regenerated once** at that seam: `data/geo/land-present.json`
+   (`build-regions.mjs`), the presence shards (`cshapes.mjs` re-run from
+   the recorded source), `data/geo/regions.json` (the lane polygons; lane
+   derivation is in lon/lat and must give the same region for every
+   event — assert it), the palette rebuilt, the index rebuilt.
+4. **The state and the views.** `?bbox=west,south,east,north` stays in
+   real longitudes and may cross the seam (west > east means it wraps);
+   `inView` and the map's `viewBbox` handle a wrapping box; pan limits
+   and the initial view show the whole world with Asia in the middle;
+   labels, clusters, chain lines and the export follow the projection
+   through the one function; `?bbox=-10,36,-6,43` still fits Portugal.
+5. **Borders without the coast seam** (owner's screenshot, 5 September):
+   CShapes' coastline and Natural Earth's do not coincide, so zoomed in
+   every territory shows a double line along the shore. The import keeps
+   the TopoJSON arcs and marks each as *shared* (between two features) or
+   *outer*; the presence outlines are still closed polygons for the fill
+   and hit-testing, but the layer strokes **only the shared arcs** — the
+   inland borders — and the coast is Natural Earth's alone. The shard
+   format gains the arc list; `about.html` says so.
+6. Docs: `ARCHITECTURE.md` (the projection's parameters and the seam),
+   `about.html` (why the map is centred where it is), `CLAUDE.md`'s line
+   on `projection.js`.
+
+Done when: the seam table is in `STATUS.md`; the map opens on the world
+with Asia centred and no visible tear at the seam at every zoom (a
+screenshot under `docs/screens/m39-*.png` through `tools/screens.mjs`);
+`?bbox=-10,36,-6,43` fits Portugal and a box crossing the seam fits the
+Pacific (browser tests); every event's derived region unchanged (test);
+`node tools/validate.mjs --index` byte-identical after the rebuild;
+`node --test` green; the literal line `M39 done`.
+
+## Amendments after review (the map block, 8 September 2026)
+
+Written 8 September 2026 by an independent Fable reviewer of the map block, against `origin/briefs-map` and `origin/m0` at 81e5bf1, with the owner questions answered as recommended (the ceiling is the base map's, 8 MB, with 24 MB for all of `data/geo/`; M39 split in two; one name on the face and no "local" name; the glyph drawn at the mark's diameter); the owner may overrule. **These override the body where they differ** (run protocol §3). The full review is `docs/review-2026-09-08-map-block.md`.
+
+A0. **M39 is two gated runs.** M39a: the projection parameter, `clipToBox(geometry, [w, s, e, n])` in `tools/import/geometry.mjs` (Sutherland-Hodgman per ring against the four edges, holes kept, degenerate rings dropped, a line cut into the segments inside the box, tested), `splitAtMeridian` as two clips over the two half-worlds, the seam report, every geometry file recut, wrapping `?bbox=`, and the contract that **`k = 1` is the whole world in 960 units** and the unit every zoom threshold in the data is written in; done line `M39a done`. M39b, gated on it: the inland-only borders and the shard's arc list; done lines `M39b done` then `M39 done`.
+
+A1. **The CShapes source is read gzipped.** `tools/import/cshapes.mjs` accepts a `--source` ending in `.gz`, decompresses it with `gunzipSync` and hashes the decompressed bytes, so `SOURCE_FILE_SHA256` and the hash `data/geo/LICENSE` records stay what they are; the file is `vendor/cshapes/cshapes_2_gw.topojson.gz`, committed by the assistant before the run with its sizes and sha256 in `vendor/README.md`.
+
+A2. **The grid's origin is -180 in data longitudes**, independent of the seam, so a seam change moves no cell; the grid itself is M36's.
+
+A3. `manifest.schema` is one more than the gate commit's where it moves; deviations are numbered on from the last in `STATUS.md` at the gate; `ARCHITECTURE.md` is cited by heading, not by line.

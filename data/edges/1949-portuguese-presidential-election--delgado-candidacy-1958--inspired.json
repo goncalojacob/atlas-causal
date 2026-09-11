@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1949-portuguese-presidential-election--delgado-candidacy-1958--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "1949-portuguese-presidential-election",
+  "to": "delgado-candidacy-1958",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "Norton de Matos’s campaign showed the opposition that a presidential election was the one moment at which the regime had to let it speak in public, and showed the regime that the moment could be closed by persecution stopping short of an outright ban. Delgado ran the same manoeuvre nine years later and pushed it past what the regime had allowed for — which is why it ended not in another withdrawal but in the abolition of the direct election itself.",
+  "dispute": null
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "americo-tomas",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted"
+    ]
+  },
+  "where": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Américo Tomás",
+    "Américo Thomaz",
+    "Américo Deus Rodrigues Tomás"
+  ],
+  "summary": "Américo Tomás (1894–1987) was the naval officer the Estado Novo ran against Humberto Delgado in 1958 and installed as president after a count nobody believed. He was re-elected in 1965 and 1972 by the National Assembly, the electorate having been removed from the process by the constitutional revision of 1959, and he held the office until the coup of 25 April 1974 deposed him and sent him into exile in Brazil. He used the presidency’s one substantial power twice: to replace the incapacitated Salazar with Marcelo Caetano in 1968, and thereafter to hold Caetano to the colonial war whenever he showed signs of negotiating his way out of it. He is in the atlas as the man in the office the regime had made safe.",
+  "when": {
+    "start": 1894,
+    "end": 1987
+  }
+}

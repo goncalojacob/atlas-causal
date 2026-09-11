@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "portugal-backs-franco-1936",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Portugal supports the Nationalists in the Spanish Civil War",
+  "summary": "From the outbreak of the Spanish war in July 1936, Salazar's government supported the Nationalist side: it allowed men and supplies to cross Portuguese territory, gave the rebels a diplomatic and broadcasting platform, returned Spanish republican refugees who crossed the border, and let some eight thousand volunteers — the Viriatos — go and fight. Portugal joined the Non-Intervention Committee at the end of the year and continued to help in practice. Historians differ over how much the help weighed in the outcome; they agree that it was substantial and that Lisbon read a republican victory in Spain as a threat to the Estado Novo's own survival. The relationship was formalised in the Iberian Pact of 1939, which kept both regimes out of the world war and each out of the other's way. It is in the atlas as the point where the regime's foreign policy is set for the next twenty years.",
+  "when": {
+    "start": 1936,
+    "end": 1939,
+    "date": "1936-07",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "salazar",
+      "role": "leader"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "supporter"
+    }
+  ]
+}

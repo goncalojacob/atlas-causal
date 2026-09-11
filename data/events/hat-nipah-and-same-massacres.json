@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hat-nipah-and-same-massacres",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted",
+      "facts-thin"
+    ],
+    "note": "Wired in M22 on the strength of the date and the place alone. The import brought no Wikipedia lead for this item and the bibliography holds no work on the occupation of East Timor: a reviewer should establish who carried out the killings and on whose orders, or retract the record, before signing it."
+  },
+  "wikidata": "Q131364064",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "Hat Nipah and Same massacres",
+  "summary": "Massacres were carried out at Hat Nipah and at Same, in the interior of East Timor, between 27 and 29 January 1976, five weeks after Indonesian forces landed at Dili. The atlas holds the dates, the two places and the fact of the killings, which is what the import brought and what the Wikidata item asserts; it does not hold an account of who ordered them, how many died or which units were involved, and nothing here should be read as one. It is in the atlas because the war opened by the invasion of December 1975 is otherwise represented only by its beginning and by the independence of 2002, and because the first months of the occupation are when the greater part of the dying happened.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "date": "1976-01-27",
+    "endDate": "1976-01-29"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "indonesia",
+      "role": "occupier"
+    }
+  ]
+}

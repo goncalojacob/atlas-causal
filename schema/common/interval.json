@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common/interval.json",
+  "title": "Interval",
+  "description": "A span of time. Integer years in historians' numbering: negative for BCE, no year 0 (enforced by the rules, not here). A bound is either an exact year or a {min, max} range. end: null means ongoing. date and calendar are display-only; only the integer years drive logic.",
+  "type": "object",
+  "required": ["start", "end"],
+  "additionalProperties": false,
+  "properties": {
+    "start": {
+      "oneOf": [
+        { "type": "integer" },
+        {
+          "type": "object",
+          "required": ["min", "max"],
+          "additionalProperties": false,
+          "properties": {
+            "min": { "type": "integer" },
+            "max": { "type": "integer" }
+          }
+        }
+      ]
+    },
+    "end": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/properties/start" }
+      ]
+    },
+    "date": {
+      "description": "The date exactly as the source gives it, ISO-ordered: YYYY-MM-DD or YYYY-MM, with a leading minus for BCE.",
+      "type": "string",
+      "pattern": "^-?[0-9]{1,6}-[0-9]{2}(-[0-9]{2})?$"
+    },
+    "endDate": {
+      "description": "The exact date the interval ends, when the source gives one, in the same shape and calendar as `date`. An interval with two known dates — a territory valid from one day to another — has nowhere else to put the second.",
+      "type": "string",
+      "pattern": "^-?[0-9]{1,6}-[0-9]{2}(-[0-9]{2})?$"
+    },
+    "calendar": {
+      "description": "Calendar of `date` and `endDate`. Defaults by year when absent: Gregorian from 1582, Julian before.",
+      "type": "string",
+      "enum": ["julian", "gregorian"]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "leadership-of-fixture-actor-two",
+  "kind": "office",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [],
+  "of": "fixture-actor-two",
+  "title": "Leader",
+  "category": "party-leadership",
+  "when": null,
+  "summary": null
+}

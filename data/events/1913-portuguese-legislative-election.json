@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1913-portuguese-legislative-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: a partial election, 16 November 1913, for 37 of the 153 seats, and the first held under the 1911 constitution; the Democrats took 33 of the 37. It confirmed a dominance the atlas already shows by other means, and no consequence of this particular by-election round can be argued from the bibliography here."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q28679597",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1913 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1913"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q28679597"
+    }
+  ],
+  "title": "1913 Portuguese legislative election",
+  "summary": "Wikidata item Q28679597, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1913,
+    "end": 1913,
+    "date": "1913-11-16"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mueda-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted",
+      "m22-reinstated"
+    ],
+    "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
+  },
+  "wikidata": "Q10327164",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "pt": "Massacre de Mueda"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Massacre de Mueda\", revision 65265066"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "Mueda massacre",
+  "summary": "On 16 June 1960 Portuguese troops fired on a crowd gathered at the administrative post at Mueda, on the Makonde plateau in northern Mozambique, where Makonde leaders had come to put the case for their cooperative movement and against forced cultivation. The number killed is disputed and the accounts of what was said before the shooting differ. It is in the atlas as the last episode of the attempt to petition the colonial administration rather than fight it, and as the event FRELIMO placed at the head of its own history of the war it opened four years later.",
+  "when": {
+    "start": 1960,
+    "end": 1960,
+    "date": "1960-06-16"
+  },
+  "place": null,
+  "region": "africa",
+  "actors": [
+    {
+      "actor": "estado-novo",
+      "role": "commander",
+      "note": "colonial power whose troops fired"
+    }
+  ]
+}

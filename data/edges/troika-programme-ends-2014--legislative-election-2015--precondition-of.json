@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "troika-programme-ends-2014--legislative-election-2015--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "imf-2016-portugal-ex-post-evaluation",
+      "locator": null
+    },
+    {
+      "source": "cne-legislative-2015",
+      "locator": null
+    }
+  ],
+  "from": "troika-programme-ends-2014",
+  "to": "legislative-election-2015",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The coalition went to the polls seventeen months after the exit and made it the case for its own continuation, so the campaign was fought on whether the adjustment had worked. The result — the most votes and no majority — is the answer the electorate gave to that case, and it is why the arithmetic of the chamber, rather than the size of the largest list, decided what came next.",
+  "dispute": null
+}

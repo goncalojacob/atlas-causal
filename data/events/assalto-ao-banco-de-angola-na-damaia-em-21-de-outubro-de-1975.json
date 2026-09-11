@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "assalto-ao-banco-de-angola-na-damaia-em-21-de-outubro-de-1975",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: a robbery of the Banco de Angola branch at Damaia on 21 October 1975 by six members of the Brigadas Revolucionárias, which took 4,237,000 escudos. The atlas holds no record of the armed far left — not the PRP-BR, not the FP-25, not the trials — so there is nothing for an action of theirs to attach to in either direction, and any edge would be invented. Revisit once the organisations themselves are here."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q110585299",
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q110585299"
+    }
+  ],
+  "title": "Assalto ao Banco de Angola, na Damaia, em 21 de Outubro de 1975",
+  "summary": "Wikidata item Q110585299, imported by tools/import/wikidata.mjs. The item's own description reads \"assalto feito por 6 elementos das Brigadas Revolucionárias, tendo rendido 4.237.000$00\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1975,
+    "end": 1975,
+    "date": "1975-10-21"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

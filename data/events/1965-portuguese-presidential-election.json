@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "1965-portuguese-presidential-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q16153770",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1965 Portuguese presidential election",
+    "pt": "Eleições presidenciais portuguesas de 1965"
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1965 Portuguese presidential election\", revision 1334103559"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições presidenciais portuguesas de 1965\", revision 71430558"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q16153770"
+    }
+  ],
+  "title": "1965 Portuguese presidential election",
+  "summary": "Américo Tomás was returned to the presidency on 25 July 1965 for a second seven-year term, by the National Assembly. That is the significance of the date: it was the first Portuguese presidential election in which no electorate took part, the revision of 1959 having removed the choice from the country after Humberto Delgado’s campaign of 1958 came close to breaking the count. Delgado had been murdered by the political police at the Spanish border five months earlier. The office so made safe kept one power that mattered — the appointment of the head of government — and Tomás used it in September 1968 to put Marcelo Caetano in Salazar’s place. It is in the atlas as the first working of the machine the regime built so that 1958 could not happen a second time.",
+  "when": {
+    "start": 1965,
+    "end": 1965,
+    "date": "1965-07-25",
+    "calendar": "gregorian"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "americo-tomas",
+      "role": "head-of-state",
+      "note": "re-elected for a second term"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "government",
+      "note": "the regime filling its own presidency"
+    },
+    {
+      "actor": "uniao-nacional",
+      "role": "government",
+      "note": "held every seat of the electing assembly"
+    }
+  ]
+}

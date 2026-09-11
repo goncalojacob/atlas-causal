@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "portugal-backs-franco-1936--legiao-portuguesa-founded-1936--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "from": "portugal-backs-franco-1936",
+  "to": "legiao-portuguesa-founded-1936",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The Legion was created in the months when the government was committing itself against the Spanish Republic, and was justified in exactly those terms: an armed civilian body against the communist danger that the war next door was said to demonstrate."
+}

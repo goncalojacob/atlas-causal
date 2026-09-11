@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "1999-macanese-chief-executive-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q55719546",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1999 Macanese Chief Executive election"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1999 Macanese Chief Executive election\", revision 1291601838"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "1999 Macanese Chief Executive election",
+  "summary": "A selection committee of two hundred chose Edmund Ho as the first Chief Executive of the Macau Special Administrative Region on 15 May 1999, seven months before the transfer of administration to China. It was a contested ballot, the only one in the office's history so far, and it filled the post the Sino-Portuguese joint declaration of 1987 had created for the day Portuguese administration ended. It is in the atlas as the last constitutional act of the Portuguese period in Macau, and as the point at which the successor administration existed before the predecessor had gone.",
+  "when": {
+    "start": 1999,
+    "end": 1999,
+    "date": "1999-05-15"
+  },
+  "place": "macau",
+  "region": null,
+  "category": "election",
+  "actors": [
+    {
+      "actor": "china",
+      "role": "government",
+      "note": "the successor sovereign"
+    }
+  ]
+}

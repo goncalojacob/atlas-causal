@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "the-navigator-company",
+  "kind": "actor",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-08",
+    "reason": "Retracted in M41b: the pulp and paper company, under this name since 2001. Its cached leads are one sentence each and say only what it makes. There is no event here it took part in and nothing in the record from which one could be argued."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-retracted"
+    ]
+  },
+  "wikidata": "Q686182",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-08"
+  },
+  "wikipedia": {
+    "en": "The Navigator Company",
+    "pt": "The Navigator Company"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q686182"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "The Navigator Company",
+    "Portucel"
+  ],
+  "summary": "Wikidata item Q686182, imported by tools/import/wikidata.mjs. The item's own description reads \"company\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2001,
+    "end": null
+  },
+  "where": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "law-of-separation-1911",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "wikidata-assigned-by-assistant"
+    ]
+  },
+  "wikidata": "Q10316960",
+  "wikipedia": {
+    "pt": "Lei da Separação do Estado das Igrejas"
+  },
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Law of Separation of Church and State",
+  "summary": "The decree of 20 April 1911, drafted by Afonso Costa, separated church and state: it ended the Catholic religion's official standing, transferred church property to the state, subjected worship to registration and public control, expelled or restricted the religious orders, and secularised registers, cemeteries, marriage and education. It was the most consequential act of the republic's first year and the most divisive, provoking the resistance of much of the clergy and of the rural north, papal condemnation, and a conflict that was only settled by the concordat of 1940. Historians differ on whether the law's anticlerical severity was the republic's founding mistake or an unavoidable consequence of what the monarchy had been. It is in the atlas as the origin of a division that outlasted the regime that created it.",
+  "when": {
+    "start": 1911,
+    "end": 1911,
+    "date": "1911-04-20",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "afonso-costa",
+      "role": "author"
+    },
+    {
+      "actor": "first-portuguese-republic",
+      "role": "author",
+      "note": "legislator"
+    }
+  ]
+}

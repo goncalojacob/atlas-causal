@@ -1,0 +1,119 @@
+{
+  "from": null,
+  "kind": "office",
+  "records": {
+    "leadership-of-chega": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "leadership-of-frelimo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "leadership-of-liberal-regenerator-party": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "leadership-of-national-republican-party": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "leadership-of-paigc": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "leadership-of-partido-socialista": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "leadership-of-pcp": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "leadership-of-psd": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "monarch-of-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "president-of-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "prime-minister-of-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": null
+}

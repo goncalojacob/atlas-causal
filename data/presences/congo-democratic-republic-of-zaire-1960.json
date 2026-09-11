@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "congo-democratic-republic-of-zaire-1960",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 336"
+    }
+  ],
+  "actor": "congo-democratic-republic-of-zaire",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1960,
+    "end": null,
+    "date": "1960-06-30"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "336"
+  },
+  "capital": {
+    "lon": 15.315,
+    "lat": -4.32972,
+    "precision": "city",
+    "label": "Kinshasa (Léopoldville)"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "indonesia-1949",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 637"
+    }
+  ],
+  "actor": "indonesia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1949,
+    "end": 1969,
+    "date": "1949-12-29",
+    "endDate": "1969-09-16"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "637"
+  },
+  "capital": {
+    "lon": 106.829399,
+    "lat": -6.17444,
+    "precision": "city",
+    "label": "Jakarta"
+  },
+  "confidence": "consensus"
+}

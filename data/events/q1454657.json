@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "q1454657",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21 as unidentifiable, the third of these after q11077889 and q2115000. No label, no description, no cached lead: the record is titled with its own Wikidata id, and all the import recovered was a year, 1974, and a region, Africa."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q1454657",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1454657"
+    }
+  ],
+  "title": "Q1454657",
+  "summary": "Wikidata item Q1454657, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1974,
+    "end": 1974
+  },
+  "place": null,
+  "region": "africa",
+  "actors": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "yemen-arab-republic-of-yemen-1934",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 519"
+    }
+  ],
+  "actor": "yemen-arab-republic-of-yemen",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1934,
+    "end": 1990,
+    "date": "1934-06-14",
+    "endDate": "1990-05-21"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "519"
+  },
+  "capital": {
+    "lon": 44.183331,
+    "lat": 15.28333,
+    "precision": "city",
+    "label": "Sana'a"
+  },
+  "confidence": "consensus"
+}

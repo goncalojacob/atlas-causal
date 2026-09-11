@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "eec-accession-1986",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "title": "Portugal joins the EEC",
+  "summary": "Portugal became a member of the European Economic Community on 1 January 1986, alongside Spain, after nine years of negotiation; the treaty had been signed at the Jerónimos monastery in Lisbon on 12 June 1985. Membership had been an aim of every government since 1977 and was defended as much for what it settled politically as for what it offered economically: a democracy inside the Community was harder to overturn. Structural funds, the opening of the economy and a decade of convergence followed, and so did the terms on which Portugal later entered monetary union. It is in the atlas as the point where the country's external orientation shifts from the Atlantic and the former empire to Europe.",
+  "when": {
+    "start": 1986,
+    "end": 1986,
+    "date": "1986-01-01",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "european-economic-community",
+      "role": "member",
+      "note": "admitting body"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "elected",
+      "note": "acceded"
+    },
+    {
+      "actor": "mario-soares",
+      "role": "negotiator"
+    },
+    {
+      "actor": "cavaco-silva",
+      "role": "leader"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "id": "constitution-1976--constitutional-revision-1982--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "constitution-1976",
+  "to": "constitutional-revision-1982",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Council of the Revolution abolished in 1982 was written into the 1976 text, as were the socialist commitments the revision softened. The revision is an argument with the constitution's own compromises, and it needed the amendment procedure the constitution itself provided."
+}

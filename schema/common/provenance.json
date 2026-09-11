@@ -1,0 +1,234 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common/provenance.json",
+  "title": "Common envelope",
+  "description": "The provenance every record carries. Kind schemas in v1/ reference these property definitions one by one, because the validator's keyword subset has no allOf.",
+  "type": "object",
+  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "sources"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": 1 },
+    "id": {
+      "description": "Slug; immutable once merged; equals the file name.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 120
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["event", "edge", "source", "actor", "presence", "place", "relation", "office", "tenure", "narrative"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "merged", "retracted"]
+    },
+    "supersededBy": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/properties/id" }
+      ]
+    },
+    "aliases": {
+      "description": "Former ids only. Unique across all ids and all other aliases.",
+      "type": "array",
+      "items": { "$ref": "#/properties/id" }
+    },
+    "authors": {
+      "description": "Contributors to this record, set from the issue opener by the Action. Never free text alone.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "github"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "minLength": 1, "maxLength": 120 },
+          "github": {
+            "oneOf": [
+              { "type": "null" },
+              { "type": "string", "pattern": "^[A-Za-z0-9-]{1,39}$" }
+            ]
+          }
+        }
+      }
+    },
+    "license": {
+      "description": "Validated per directory (rule 12). CC-BY-NC-SA-4.0 exists for imported geometry, which data/LICENSE does not cover; it is allowed under data/presences/ and, for the actors an import creates, under data/actors/.",
+      "type": "string",
+      "enum": ["CC-BY-SA-4.0", "CC-BY-NC-SA-4.0", "PD", "CC0-1.0", "ODbL-1.0"]
+    },
+    "created": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "revised": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/properties/created" }
+      ]
+    },
+    "origin": {
+      "description": "Which writer created this record. Written once, by whatever created it, and never by an enrichment pass that fills in a field on somebody else's record: `origin` answers \"who wrote this record\", not \"who has touched it\" (rule 29). Absent means a person wrote it by hand. This is what the licence exception, the review queue and the imports key on, instead of matching an author's name against a literal string (health review A, findings 22 and 24; review B, finding 31).",
+      "type": "object",
+      "required": ["tool"],
+      "additionalProperties": false,
+      "properties": {
+        "tool": {
+          "description": "The writer. `cshapes` and `wikidata` are the two imports, `assistant` is the drafting exception in CLAUDE.md, `form` is the contribution pipeline. Closed, for the reason the edge types are: a writer nobody has decided about is a line added here.",
+          "type": "string",
+          "enum": ["cshapes", "wikidata", "assistant", "form"]
+        },
+        "run": {
+          "description": "Which run of that tool, where the tool has a name for one: a branch, a date, an input digest. Optional, and never load-bearing.",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      }
+    },
+    "retraction": {
+      "description": "Why this record was retracted, and when. Present exactly on a retracted record (rule 27). It is the record's own history and nothing deletes it — signing a tombstone clears what the reviewer was asked to look at and leaves this alone, which is what `review.note` could not promise (health review B, finding 16).",
+      "type": "object",
+      "required": ["on", "reason"],
+      "additionalProperties": false,
+      "properties": {
+        "on": { "$ref": "#/properties/created" },
+        "reason": {
+          "description": "Written by a person, like an explanation: the argument for withdrawing the record, not a label.",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        }
+      }
+    },
+    "review": {
+      "description": "What a reviewer should look at before signing this record, and why, and whether anybody has. Optional, and written by whoever drafted it. `status` and `signedBy` are the record's standing; `flags` and `citations` are the reviewer's to clear. Never a claim about the world — only about how much the record has been checked.",
+      "type": "object",
+      "required": [],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "description": "`draft` is a record no person has read; `reviewed` is one somebody has read and signed, and requires `signedBy` (rule 28). Absent means neither has been claimed. This is what \"unreviewed\" means, in place of an author's name matching a literal string (health review A, finding 8).",
+          "type": "string",
+          "enum": ["draft", "reviewed"]
+        },
+        "signedBy": {
+          "description": "Who signed this record and on what day. An array because a record can be read by more than one person; the reviewer is also added to `authors`, which is attribution — this is the act.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "github", "on"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string", "minLength": 1, "maxLength": 120 },
+              "github": {
+                "oneOf": [
+                  { "type": "null" },
+                  { "type": "string", "pattern": "^[A-Za-z0-9-]{1,39}$" }
+                ]
+              },
+              "on": { "$ref": "#/properties/created" }
+            }
+          }
+        },
+        "claimedBy": {
+          "description": "Who is reading this record now, and the day they said so. Optional, and never a lock: nothing refuses a save because somebody else holds it, and the record files are a repository two people can edit with no server between them. It expires a week after `on` — a claim nobody released is the end of an evening, not a promise — and Sign takes it off.",
+          "type": "object",
+          "required": ["name", "github", "on"],
+          "additionalProperties": false,
+          "properties": {
+            "name": { "type": "string", "minLength": 1, "maxLength": 120 },
+            "github": {
+              "oneOf": [
+                { "type": "null" },
+                { "type": "string", "pattern": "^[A-Za-z0-9-]{1,39}$" }
+              ]
+            },
+            "on": { "$ref": "#/properties/created" }
+          }
+        },
+        "flags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "maxLength": 40, "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+        },
+        "note": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "string", "minLength": 1, "maxLength": 500 }
+          ]
+        },
+        "citations": {
+          "description": "Which of this record's citations a person has opened and checked against the source itself, keyed by the cited source's id (rule 3 checks the key is a source the record cites). A citation with no entry here has not been checked; the validator counts those and Sign warns about them without blocking. Never a claim about the world — only about how far this record has been read.",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["verified"],
+            "additionalProperties": false,
+            "properties": {
+              "verified": {
+                "description": "Who checked this citation and on what day; null is a citation somebody looked at and did not confirm, which is not the same as one nobody has opened.",
+                "oneOf": [
+                  { "type": "null" },
+                  {
+                    "type": "object",
+                    "required": ["by", "on"],
+                    "additionalProperties": false,
+                    "properties": {
+                      "by": { "type": "string", "minLength": 1, "maxLength": 120 },
+                      "on": { "$ref": "#/properties/created" }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "wikidata": {
+      "description": "The Wikidata item this record is about: Q followed by digits. Optional and additive — written by the import, or derived by the contribution form from a pasted Wikidata URL — and unique among records of the same kind (rule 21). It is an identifier and never a source: what the atlas asserts is in the record.",
+      "type": "string",
+      "pattern": "^Q[1-9][0-9]*$",
+      "maxLength": 20
+    },
+    "wikipedia": {
+      "description": "Language code to article title: { \"en\": \"Carnation Revolution\" }. Allowed only beside a wikidata id (rule 21), because a title with no item behind it is a guess about which article is meant. Written by the import.",
+      "type": "object",
+      "additionalProperties": { "type": "string", "minLength": 1, "maxLength": 300 }
+    },
+    "body": {
+      "description": "The full entry: an extensive text about this event, actor or place, written by a person in the safe Markdown subset src/markdown.js renders (paragraphs, ## and ### headings, emphasis, lists, block quotes, links to records by id and to http(s) URLs, and citation marks [^source-id] that must resolve to this record's own sources — rule 23). No raw HTML and no images. Optional: the summary is what the cards show and this is the long form, so a record without one carries no key at all.",
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1, "maxLength": 200000 }
+      ]
+    },
+    "sitelinks": {
+      "description": "How many language editions have an article for the item, and the day that number was read. A count of somebody else's database changes without this record changing, so it is stored as a snapshot with its date rather than as a fact (health review A, finding 23b). A stored fact for an editorial decision nobody has taken: it feeds neither prominence nor weight, and the map's measure stays the derived weight (ARCHITECTURE.md).",
+      "type": "object",
+      "required": ["count", "on"],
+      "additionalProperties": false,
+      "properties": {
+        "count": { "type": "integer", "minimum": 0 },
+        "on": { "$ref": "#/properties/created" }
+      }
+    },
+    "sources": {
+      "description": "Citations. A citation points at a source record by id, with an optional locator (page, chapter, folio).",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source"],
+        "additionalProperties": false,
+        "properties": {
+          "source": { "$ref": "#/properties/id" },
+          "locator": {
+            "oneOf": [
+              { "type": "null" },
+              { "type": "string", "minLength": 1, "maxLength": 200 }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

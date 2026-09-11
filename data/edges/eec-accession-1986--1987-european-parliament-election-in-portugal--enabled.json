@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "eec-accession-1986--1987-european-parliament-election-in-portugal--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "from": "eec-accession-1986",
+  "to": "1987-european-parliament-election-in-portugal",
+  "type": "enabled",
+  "confidence": "consensus",
+  "explanation": "There is no Portuguese seat in the European Parliament before 1 January 1986, and for the first eighteen months the twenty-four seats accession created were filled by delegates the Assembly of the Republic appointed from among its own members. The ballot of 19 July 1987 is the first time those seats were elected, and it exists because of the accession and for no other reason. What the atlas gets from the edge is the interval: a year and a half in which the country was represented in a parliament its voters had not chosen.",
+  "dispute": null
+}

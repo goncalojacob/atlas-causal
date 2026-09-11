@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bolivia-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 60"
+    }
+  ],
+  "actor": "bolivia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1886,
+    "end": 1903,
+    "date": "1886-01-01",
+    "endDate": "1903-11-16"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "60"
+  },
+  "capital": {
+    "lon": -68.150002,
+    "lat": -16.5,
+    "precision": "city",
+    "label": "La Paz"
+  },
+  "confidence": "consensus"
+}

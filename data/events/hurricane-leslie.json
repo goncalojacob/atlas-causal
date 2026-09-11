@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "hurricane-leslie",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the storm of 13 and 14 October 2018, the remains of Hurricane Leslie, which crossed the centre of the country with the strongest winds since 1842. The atlas holds nothing it can be argued to have changed — no record of the response, the inquiry or the rules that followed — and the disasters it does hold, the fires of 2017, are wired to each other and to the reform they produced. A disaster with no recorded consequence has no honest edge."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q57243792",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "Hurricane Leslie (2018)",
+    "pt": "Furacão Leslie (2018)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q57243792"
+    }
+  ],
+  "title": "Hurricane Leslie",
+  "summary": "Wikidata item Q57243792, imported by tools/import/wikidata.mjs. The item's own description reads \"Category 1 Atlantic hurricane in 2018\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2018,
+    "end": 2018,
+    "date": "2018-09-23",
+    "endDate": "2018-10-16"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "disaster",
+  "actors": []
+}

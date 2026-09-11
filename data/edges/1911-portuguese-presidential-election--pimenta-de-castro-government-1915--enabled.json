@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1911-portuguese-presidential-election--pimenta-de-castro-government-1915--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "from": "1911-portuguese-presidential-election",
+  "to": "pimenta-de-castro-government-1915",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "What the Congress filled in August 1911 was an office with few powers but one large one: the president appointed and dismissed ministers. In January 1915 Arriaga used it against the Chamber, dismissing the Democratic government and calling General Pimenta de Castro, who governed with parliament suspended. The argument is about the office as much as the man — the 1911 settlement had left a constitutional route by which a president could set the parliamentary majority aside, and this is the first time it was walked.",
+  "dispute": null
+}

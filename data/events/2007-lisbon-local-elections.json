@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "2007-lisbon-local-elections",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the Lisbon municipal election of 15 July 2007, held on its own after the chamber was dissolved. The import brought several single-municipality ballots as records of their own, alongside the national local election of the same day. The atlas has no level between the country and the place, and a municipal result with no consequence recorded here has nothing to attach to in either direction. Revisit if a mayoralty is ever written as an actor."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q61000371",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2007 Lisbon local by-election",
+    "pt": "Eleições autárquicas intercalares de 2007 em Lisboa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q61000371"
+    }
+  ],
+  "title": "2007 Lisbon local elections",
+  "summary": "Wikidata item Q61000371, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2007,
+    "end": 2007,
+    "date": "2007-07-15"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

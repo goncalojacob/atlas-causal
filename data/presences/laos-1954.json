@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "laos-1954",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 602"
+    }
+  ],
+  "actor": "laos",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1954,
+    "end": null,
+    "date": "1954-05-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "602"
+  },
+  "capital": {
+    "lon": 102.599999,
+    "lat": 17.96667,
+    "precision": "city",
+    "label": "Vientiane"
+  },
+  "confidence": "consensus"
+}

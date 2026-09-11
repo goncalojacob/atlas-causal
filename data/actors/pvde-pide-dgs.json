@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pvde-pide-dgs",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "wikidata-assigned-by-assistant"
+    ]
+  },
+  "wikidata": "Q958917",
+  "wikipedia": {
+    "en": "PIDE",
+    "pt": "Polícia Internacional e de Defesa do Estado"
+  },
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "PIDE",
+    "Polícia Internacional e de Defesa do Estado",
+    "PVDE",
+    "Polícia de Vigilância e Defesa do Estado",
+    "DGS",
+    "Direcção-Geral de Segurança"
+  ],
+  "summary": "The political police of the Estado Novo ran under three names in succession — PVDE from 1933, PIDE from 1945, DGS from 1969 — and is one actor here because it was one institution throughout. It ran surveillance, informers and censorship of correspondence, held prisoners at Caxias, Peniche and, until 1954, the camp at Tarrafal in Cape Verde, and used torture in interrogation; in the colonies it operated alongside the war. It murdered Humberto Delgado in 1965, and its involvement in the death of Amílcar Cabral in 1973 has been argued about ever since. It was dissolved after 25 April 1974, and its archive is a principal source for the period. It is in the atlas as the instrument through which the regime dealt with what it could not govern by consent.",
+  "when": {
+    "start": 1933,
+    "end": 1974
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

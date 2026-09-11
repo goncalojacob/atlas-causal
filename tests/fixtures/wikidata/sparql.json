@@ -1,0 +1,23 @@
+{
+  "head": { "vars": ["item", "itemLabel", "labelPt", "itemDescription", "date", "typeLabel", "sitelinks"] },
+  "results": {
+    "bindings": [
+      {
+        "item": { "type": "uri", "value": "http://www.wikidata.org/entity/Q9000001" },
+        "itemLabel": { "xml:lang": "en", "type": "literal", "value": "Northfield Rising" },
+        "labelPt": { "xml:lang": "pt", "type": "literal", "value": "Levantamento de Northfield" },
+        "itemDescription": { "xml:lang": "en", "type": "literal", "value": "an invented uprising, used only to test an import" },
+        "date": { "datatype": "http://www.w3.org/2001/XMLSchema#dateTime", "type": "literal", "value": "1974-04-25T00:00:00Z" },
+        "typeLabel": { "xml:lang": "en", "type": "literal", "value": "invented uprising" },
+        "sitelinks": { "datatype": "http://www.w3.org/2001/XMLSchema#integer", "type": "literal", "value": "12" }
+      },
+      {
+        "item": { "type": "uri", "value": "http://www.wikidata.org/entity/Q9000007" },
+        "itemLabel": { "xml:lang": "en", "type": "literal", "value": "Undated Assembly | Second Session" }
+      },
+      {
+        "item": { "type": "uri", "value": "http://www.wikidata.org/entity/statement/not-an-item" }
+      }
+    ]
+  }
+}

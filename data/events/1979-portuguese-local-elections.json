@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "1979-portuguese-local-elections",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q7232776",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1979 Portuguese local elections",
+    "pt": "Eleições autárquicas portuguesas de 1979"
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1979 Portuguese local elections\", revision 1355707462"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições autárquicas portuguesas de 1979\", revision 72833622"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "1979 Portuguese local elections",
+  "summary": "Local elections were held on 16 December 1979, a fortnight after the legislative election, and were the second under the constitution of 1976. It is in the atlas as the ballot at which the elected local power created three years earlier stopped being a novelty and became a cycle of its own — held on its own calendar, contested by coalitions that did not always match the national ones, and, from here on, the arena in which the Communist Party held ground it never held in the Assembly.",
+  "when": {
+    "start": 1979,
+    "end": 1979,
+    "date": "1979-12-16"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "government",
+      "note": "the state holding the election"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "eurozone",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date",
+      "claim"
+    ],
+    "note": "The 1999 start and the count of eleven founding members were written from memory. How much of the Portuguese slump the currency caused is the open argument the summary points at, and the record takes no side in it."
+  },
+  "sources": [
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Eurozone",
+    "Euro area",
+    "Economic and Monetary Union",
+    "Zona Euro",
+    "Área do Euro"
+  ],
+  "summary": "The group of European Union states that use the euro, formed on 1 January 1999 when eleven of them — Portugal among the first — fixed their currencies irrevocably and handed monetary policy to the European Central Bank. For Portugal the effect was immediate, and it is where every account of what followed begins: interest rates fell to something near German levels in a country that had been paying far more, private borrowing rose for a decade, and the current account deficit rose with it. What this atlas cannot settle is how much of the slump after 2000 the currency caused and how much was domestic policy, because that is precisely what the literature argues about. It has no organs of its own — the Eurogroup meets for it and the Central Bank acts for it — and it is recorded as an institution because the atlas has no kind for a monetary union.",
+  "when": {
+    "start": 1999,
+    "end": null
+  },
+  "where": {
+    "lon": 8.68,
+    "lat": 50.11,
+    "precision": "city",
+    "label": "Frankfurt am Main"
+  }
+}

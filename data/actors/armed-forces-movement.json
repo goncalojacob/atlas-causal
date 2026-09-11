@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "armed-forces-movement",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is a convention rather than a date in a document. Decide which it should be and say so in the summary."
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Armed Forces Movement",
+    "Movimento das Forças Armadas",
+    "MFA",
+    "Movimento dos Capitães"
+  ],
+  "summary": "The clandestine organisation of middle-ranking officers, formed out of a professional grievance in 1973 and turned against the war and the regime, which carried out the coup of 25 April 1974 and then governed with it.",
+  "when": {
+    "start": 1973,
+    "end": 1975
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "myanmar-burma-1948",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 584"
+    }
+  ],
+  "actor": "myanmar-burma",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1948,
+    "end": 2005,
+    "date": "1948-01-04",
+    "endDate": "2005-11-05"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "584"
+  },
+  "capital": {
+    "lon": 96.166656,
+    "lat": 16.78333,
+    "precision": "city",
+    "label": "Rangoon"
+  },
+  "confidence": "consensus"
+}

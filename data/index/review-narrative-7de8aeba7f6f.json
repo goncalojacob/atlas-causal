@@ -1,0 +1,34 @@
+{
+  "kind": "narrative",
+  "records": [
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "macqueen-1997-decolonization",
+        "maxwell-1995-making-of-portuguese-democracy",
+        "costa-pinto-2003-contemporary-portugal",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-03",
+      "degree": 12,
+      "id": "how-the-colonial-war-ended-the-regime",
+      "kind": "narrative",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "How the colonial war ended the regime"
+    }
+  ],
+  "schema": 1,
+  "warnings": []
+}

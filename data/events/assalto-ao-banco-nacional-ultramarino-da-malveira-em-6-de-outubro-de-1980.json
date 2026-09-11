@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "assalto-ao-banco-nacional-ultramarino-da-malveira-em-6-de-outubro-de-1980",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: a robbery of the Banco Nacional Ultramarino at Malveira on 6 October 1980. The atlas holds no record of the armed far left — not the PRP-BR, not the FP-25, not the trials — so there is nothing for an action of theirs to attach to in either direction, and any edge would be invented. Revisit once the organisations themselves are here."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q139913681",
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q139913681"
+    }
+  ],
+  "title": "Assalto ao Banco Nacional Ultramarino, da Malveira, em 6 de outubro de 1980",
+  "summary": "Wikidata item Q139913681, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1980,
+    "end": 1980,
+    "date": "1980-10-06"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

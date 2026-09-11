@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "yugoslavia",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 345"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Yugoslavia"
+  ],
+  "summary": "Entity 345 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 5 periods of territorial validity, from 1918 to 2006. Its last capital in the dataset is Belgrade. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1918,
+    "end": 2006
+  },
+  "where": {
+    "lon": 20.46806,
+    "lat": 44.81861,
+    "precision": "city",
+    "label": "Belgrade"
+  }
+}

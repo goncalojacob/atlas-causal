@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "salazar-finance-minister-1928",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    },
+    {
+      "source": "rosas-2012-salazar-e-o-poder",
+      "locator": null
+    }
+  ],
+  "title": "Salazar becomes Minister of Finance",
+  "summary": "António de Oliveira Salazar, a professor of finance at Coimbra, accepted the finance portfolio in the military dictatorship's government on 27 April 1928, having refused it briefly in 1926, and on the condition that no ministry could spend without his agreement. The condition was the point: it made him, rather than the government, responsible for the deficit that the dictatorship had no other answer to. Balanced budgets and a stabilised currency followed within two years, and were presented as proof that the new order worked where the republic had not. From that position he took the presidency of the council in 1932 and wrote the constitution of 1933. It is in the atlas as the beginning of forty years of one man's power, entered through a technical appointment.",
+  "when": {
+    "start": 1928,
+    "end": 1928,
+    "date": "1928-04-27",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "salazar",
+      "role": "appointed"
+    },
+    {
+      "actor": "military-dictatorship",
+      "role": "government"
+    }
+  ]
+}

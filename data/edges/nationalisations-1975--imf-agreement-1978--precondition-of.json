@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "nationalisations-1975--imf-agreement-1978--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "nationalisations-1975",
+  "to": "imf-agreement-1978",
+  "type": "precondition-of",
+  "confidence": "disputed",
+  "explanation": "One account traces the payments crisis to the revolutionary period itself: the nationalised sector's losses, the wage rises, the collapse of investment and the loss of colonial trade left a deficit that no Portuguese government could finance, and the Fund's terms followed from that.",
+  "dispute": {
+    "text": "Economists writing later put the weight elsewhere — the two oil shocks, the return of half a million people from Africa, and the exchange-rate policy of the years after 1976 — and treat the nationalisations as an aggravating factor rather than the cause of a crisis that hit oil-importing economies generally.",
+    "sources": [
+      {
+        "source": "reis-2013-portuguese-slump",
+        "locator": null
+      }
+    ]
+  }
+}

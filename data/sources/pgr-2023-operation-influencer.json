@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "pgr-2023-operation-influencer",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "type": "primary",
+  "creators": [
+    "Procuradoria-Geral da República"
+  ],
+  "title": "Communiqué on the searches of 7 November 2023",
+  "year": 2023,
+  "publisher": null,
+  "isbn": null,
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": "Procuradoria-Geral da República",
+  "reference": "communiqué of 7 November 2023"
+}

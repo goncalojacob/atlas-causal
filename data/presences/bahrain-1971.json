@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bahrain-1971",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 525"
+    }
+  ],
+  "actor": "bahrain",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1971,
+    "end": null,
+    "date": "1971-08-15"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "525"
+  },
+  "capital": {
+    "lon": 50.583061,
+    "lat": 26.23611,
+    "precision": "city",
+    "label": "Manama"
+  },
+  "confidence": "consensus"
+}

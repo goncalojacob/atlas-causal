@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "2025-amadora-local-elections",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the Amadora municipal election of 12 October 2025. The import brought several single-municipality ballots as records of their own, alongside the national local election of the same day. The atlas has no level between the country and the place, and a municipal result with no consequence recorded here has nothing to attach to in either direction. Revisit if a mayoralty is ever written as an actor."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q135509723",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2025 Amadora local election",
+    "pt": "Eleições autárquicas de 2025 na Amadora"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q135509723"
+    }
+  ],
+  "title": "2025 Amadora local elections",
+  "summary": "Wikidata item Q135509723, imported by tools/import/wikidata.mjs. The item's own description reads \"election in Amadora, Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2025,
+    "end": 2025,
+    "date": "2025-10-12"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

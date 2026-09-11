@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "angola-under-portugal-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 386"
+    }
+  ],
+  "actor": "angola-under-portugal",
+  "presenceType": "state",
+  "dependencyOf": "portugal",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1886,
+    "end": 1890,
+    "date": "1886-01-01",
+    "endDate": "1890-08-19"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "386"
+  },
+  "capital": {
+    "lon": 13.23444,
+    "lat": -8.83833,
+    "precision": "city",
+    "label": "Luanda"
+  },
+  "confidence": "consensus"
+}

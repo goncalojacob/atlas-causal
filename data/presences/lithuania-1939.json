@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "lithuania-1939",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 194"
+    }
+  ],
+  "actor": "lithuania",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1939,
+    "end": 1940,
+    "date": "1939-10-01",
+    "endDate": "1940-06-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1933-1945.json"
+    ],
+    "key": "194"
+  },
+  "capital": {
+    "lon": 23.88003,
+    "lat": 54.9504,
+    "precision": "city",
+    "label": "Kaunas"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "2007-portuguese-abortion-referendum",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q250247",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2007 Portuguese abortion referendum",
+    "pt": "Referendo à despenalização do aborto em Portugal (2007)"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2007 Portuguese abortion referendum\", revision 1372123133"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Referendo à despenalização do aborto em Portugal (2007)\", revision 71782356"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "2007 Portuguese abortion referendum",
+  "summary": "Portugal was asked again on 11 February 2007 whether abortion at the woman's request up to ten weeks should cease to be a crime, and this time the yes won, with about fifty-nine per cent. Turnout was under a half, so the result was again not binding; the Assembly legislated on it anyway, and the law of April 2007 ended the criminal provision. It is in the atlas as the answer to the question of 1998 — the same question, nine years and one generation apart, decided the other way and by a margin nobody disputed.",
+  "when": {
+    "start": 2007,
+    "end": 2007,
+    "date": "2007-02-11"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "government",
+      "note": "the state putting the question"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "leader",
+      "note": "called the referendum and legislated on the result"
+    }
+  ]
+}

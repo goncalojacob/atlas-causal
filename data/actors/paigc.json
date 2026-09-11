@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "paigc",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry."
+  },
+  "wikidata": "Q776352",
+  "wikipedia": {
+    "en": "African Party for the Independence of Guinea and Cape Verde",
+    "pt": "Partido Africano para a Independência da Guiné e Cabo Verde"
+  },
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "PAIGC",
+    "Partido Africano para a Independência da Guiné e Cabo Verde",
+    "African Party for the Independence of Guinea and Cape Verde"
+  ],
+  "summary": "The movement founded by Amílcar Cabral and others, which fought the most militarily effective of the liberation wars and declared the independence of Guinea-Bissau unilaterally in September 1973.",
+  "when": {
+    "start": 1956,
+    "end": null
+  },
+  "where": {
+    "lon": -15.6,
+    "lat": 11.86,
+    "precision": "city",
+    "label": "Bissau"
+  }
+}

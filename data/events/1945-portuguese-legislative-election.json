@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "1945-portuguese-legislative-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q7232758",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1945 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1945"
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1945 Portuguese legislative election\", revision 1302540015"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1945\", revision 68128975"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q7232758"
+    }
+  ],
+  "title": "1945 Portuguese legislative election",
+  "summary": "Salazar dissolved the National Assembly a year early, on 6 July 1945, and called an election for 18 November under rules that for the first time in the Estado Novo allowed opposition candidates to stand. The war had just been won by the other side of the argument, and a regime assembled in the 1930s needed to look like something that could survive the victory; the opening was calculated for an audience abroad at least as much as at home. The opposition took it anyway: the Movement of Democratic Unity, formed that October, was the first legal anti-regime organisation since 1926 and put republicans, socialists and the illegal Communist Party into one front. Then, with the rolls, the censorship and the counting all left exactly where they had been, every opposition candidate withdrew days before the poll alleging fraud, and the National Union took all 120 seats unopposed. The MUD was harassed from the start and outlawed within three years. It is in the atlas as the first run of a manoeuvre the regime used for the next thirteen years: concede the contest, keep the conditions.",
+  "when": {
+    "start": 1945,
+    "end": 1945,
+    "date": "1945-11-18",
+    "calendar": "gregorian"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "salazar",
+      "role": "leader",
+      "note": "dissolved the Assembly and set the terms"
+    },
+    {
+      "actor": "uniao-nacional",
+      "role": "party",
+      "note": "sole party, took all 120 seats"
+    },
+    {
+      "actor": "mud",
+      "role": "opposition",
+      "note": "opposition front, withdrew before the poll"
+    }
+  ]
+}

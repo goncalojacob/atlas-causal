@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "eritrea-under-italy-sardinia-1889",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 381"
+    }
+  ],
+  "actor": "eritrea-under-italy-sardinia",
+  "presenceType": "state",
+  "dependencyOf": "italy-sardinia",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1889,
+    "end": 1900,
+    "date": "1889-05-02",
+    "endDate": "1900-01-23"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "381"
+  },
+  "capital": {
+    "lon": 38.933331,
+    "lat": 15.33333,
+    "precision": "city",
+    "label": "Asmara"
+  },
+  "confidence": "consensus"
+}

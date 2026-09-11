@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1980-portuguese-presidential-election--constitutional-revision-1982--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "1980-portuguese-presidential-election",
+  "to": "constitutional-revision-1982",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The revision of 1982 did two things at once: it abolished the Council of the Revolution, which everyone civilian wanted gone, and it trimmed the powers of a president the Assembly's majority had just failed to unseat. Eanes had been the Armed Forces Movement's man and had been re-elected in December 1980 against the alliance's own candidate, with four more years to run and the power to dismiss governments. Reading the revision only as the end of military tutelage misses the second half of it; this edge is the second half, and it is `reacted-to` rather than `caused` because the constitutional programme predates the election it was sharpened by.",
+  "dispute": null
+}

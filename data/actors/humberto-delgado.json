@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "humberto-delgado",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q551999",
+  "wikipedia": {
+    "en": "Humberto Delgado",
+    "pt": "Humberto Delgado"
+  },
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Humberto Delgado",
+    "Humberto da Silva Delgado",
+    "the Fearless General",
+    "General Sem Medo"
+  ],
+  "summary": "Humberto Delgado (1906–1965) was an air force general who had served the regime — he helped negotiate the Azores agreements and represented Portugal at NATO — before standing against it in the presidential election of June 1958. His campaign drew the largest crowds the opposition had assembled, and his promise to dismiss Salazar made him the focus of everything the regime had suppressed; the official result gave him about a quarter of the vote and was widely disbelieved. Dismissed and exiled, he was involved in the Beja barracks attempt of 1962 and in other conspiracies, and in February 1965 he was lured to the Spanish border and murdered by the political police, his body found near Villanueva del Fresno. He is in the atlas as the man whose candidacy cost the regime the last of its electoral forms.",
+  "when": {
+    "start": 1906,
+    "end": 1965
+  },
+  "where": {
+    "lon": -8.54,
+    "lat": 39.48,
+    "precision": "city",
+    "label": "Torres Novas"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "euro-adoption-1999",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "title": "Portugal adopts the euro",
+  "summary": "Portugal was among the eleven states that entered the third stage of economic and monetary union on 1 January 1999, fixing the escudo irrevocably against the euro; notes and coins replaced escudos in 2002. Qualifying had required several years of deficit and inflation reduction, and admission was read at the time as confirmation that the country had converged with the European core. The fall in interest rates that came with it produced a decade of private borrowing and a current account deficit, and every later account of the Portuguese slump argues about how much of that was the euro and how much was domestic policy. It is in the atlas because the arguments about 2011 begin here.",
+  "when": {
+    "start": 1999,
+    "end": 1999,
+    "date": "1999-01-01",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "government",
+      "note": "adopter"
+    }
+  ]
+}

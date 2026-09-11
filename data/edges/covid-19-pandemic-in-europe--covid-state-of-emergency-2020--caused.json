@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic-in-europe--covid-state-of-emergency-2020--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "dre-2020-state-of-emergency",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic in Europe\", revision 1372462868"
+    }
+  ],
+  "from": "covid-19-pandemic-in-europe",
+  "to": "covid-state-of-emergency-2020",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Portugal confirmed its first cases on 2 March 2020, closed the schools on the 16th and had a state of emergency declared on the 18th — the first under the constitution of 1976 — with the epidemic in Spain a fortnight ahead of its own and Italy's hospitals already overwhelmed. The decision was taken on what was happening in Europe rather than on what had yet happened here: the Portuguese curve at the moment of the declaration was small, and the argument made for the measures was explicitly that Italy and Spain showed what the following fortnight would look like.",
+  "dispute": null
+}

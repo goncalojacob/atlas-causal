@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mlstp",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted"
+    ]
+  },
+  "where": null,
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "MLSTP",
+    "Movimento de Libertação de São Tomé e Príncipe",
+    "Movement for the Liberation of São Tomé and Príncipe"
+  ],
+  "summary": "The MLSTP was the nationalist movement of São Tomé and Príncipe, formed in exile and taking that name in 1972, out of a committee for the liberation of the islands that dated from the early 1960s. It fought no war — the islands are small, and there was nowhere to fight one — and its claim rested on being the only organisation Portugal could deal with once the coup of 25 April 1974 had made a handover the metropolitan policy. It took the state at independence on 12 July 1975 as the sole legal party, under Manuel Pinto da Costa, and held that monopoly until multiparty politics returned at the turn of the 1990s.",
+  "when": {
+    "start": 1972,
+    "end": null
+  }
+}

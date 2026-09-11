@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "berlin",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "wikidata-assigned-by-assistant"
+    ]
+  },
+  "wikidata": "Q64",
+  "wikipedia": {
+    "en": "Berlin",
+    "pt": "Berlim"
+  },
+  "sitelinks": {
+    "count": 271,
+    "on": "2026-09-03"
+  },
+  "sources": [],
+  "names": [
+    "Berlin"
+  ],
+  "where": {
+    "lon": 13.4,
+    "lat": 52.52,
+    "precision": "city",
+    "label": "Berlin"
+  },
+  "region": null,
+  "summary": null
+}

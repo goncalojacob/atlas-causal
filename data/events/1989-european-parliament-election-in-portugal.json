@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1989-european-parliament-election-in-portugal",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the European Parliament election of 18 June 1989, the second in Portugal, for the same twenty-four seats as in 1987. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the second European election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q2405083",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1989 European Parliament election in Portugal",
+    "pt": "Eleições europeias de 1989 (Portugal)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2405083"
+    }
+  ],
+  "title": "1989 European Parliament election in Portugal",
+  "summary": "Wikidata item Q2405083, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1989,
+    "end": 1989,
+    "date": "1989-06-18"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "id": "mozambique-war-begins-1964--wiriyamu-massacre-1972--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "from": "mozambique-war-begins-1964",
+  "to": "wiriyamu-massacre-1972",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Eight years of counter-insurgency in the Tete district — the strategic hamlets, the free-fire reasoning, the pressure to show results against a movement that had reached the Zambezi — are the conditions in which the killings happened. The war does not explain the order; it explains the situation the order was given in."
+}

@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "id": "carnation-revolution-1974--spinola-resigns-1974--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "from": "carnation-revolution-1974",
+  "to": "spinola-resigns-1974",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Spínola was president because the revolution made him one, on terms he did not control: a programme he had not written and a Council of State full of officers who had. The conflict that ended in his resignation was about who the revolution belonged to, and it could not have arisen anywhere else."
+}

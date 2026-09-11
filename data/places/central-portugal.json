@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "central-portugal",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "place"
+    ],
+    "note": "A point invented to stand for an area, not a settlement. Either name the place the events happened at or say in the summary what the point stands for."
+  },
+  "sources": [],
+  "names": [
+    "Central Portugal",
+    "Portugal central"
+  ],
+  "where": {
+    "lon": -8.3,
+    "lat": 40.2,
+    "precision": "region",
+    "label": "central Portugal"
+  },
+  "region": null,
+  "summary": "A point standing for the belt of the Centre and North that burned on 15 and 16 October 2017, which no single town names."
+}

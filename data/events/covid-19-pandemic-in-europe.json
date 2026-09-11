@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic-in-europe",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted",
+      "facts-thin"
+    ],
+    "note": "As with the pandemic record itself: the bibliography holds nothing on COVID-19, so this record and its edges stand on the cached Wikipedia leads and the Wikidata item. A reviewer should add a source before signing."
+  },
+  "wikidata": "Q86458103",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "COVID-19 pandemic in Europe",
+    "pt": "Pandemia de COVID-19 na Europa"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic in Europe\", revision 1372462868"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Pandemia de COVID-19 na Europa\", revision 72874243"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "COVID-19 pandemic in Europe",
+  "summary": "The pandemic reached Europe with a case confirmed at Bordeaux on 24 January 2020 and spread across the continent through February and March; by 17 March every European country had confirmed a case. The northern Italian cluster of late February is what turned imported cases into transmission everywhere, and Spain's epidemic through early March is what put the disease across the only land border Portugal has. It is in the atlas as the link between an outbreak in Wuhan and a state of emergency in Lisbon: what closed Portugal in March 2020 was not a distant epidemic but one already in the country next door.",
+  "when": {
+    "start": 2020,
+    "end": null,
+    "date": "2020-01-24"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "disaster",
+  "actors": []
+}

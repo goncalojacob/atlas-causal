@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "delgado-candidacy-1958",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    }
+  ],
+  "title": "Humberto Delgado's presidential candidacy",
+  "summary": "General Humberto Delgado stood against the regime's candidate Américo Tomás in the presidential election of 8 June 1958, and answered a journalist's question about what he would do with Salazar with the phrase that made his campaign: obviously, I will dismiss him. The campaign drew crowds of a size the Estado Novo had not seen against it, and the official result of about a quarter of the vote was widely disbelieved. The regime's answer was to end direct election of the president altogether, by constitutional revision the following year. Delgado was dismissed from the air force, went into exile, and was murdered by the political police at the Spanish border in 1965. It is in the atlas as the moment the opposition's strength became measurable, and as the reason the one opening the regime had left was closed.",
+  "when": {
+    "start": 1958,
+    "end": 1958,
+    "date": "1958-06-08",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "humberto-delgado",
+      "role": "candidate"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "target"
+    },
+    {
+      "actor": "salazar",
+      "role": "target"
+    }
+  ]
+}

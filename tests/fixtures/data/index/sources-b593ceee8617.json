@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": "fixture-author",
+          "name": "Fixture Author"
+        }
+      ],
+      "citationCount": 27,
+      "created": "2026-01-01",
+      "creators": [
+        "Fixture Author One"
+      ],
+      "doi": null,
+      "id": "fixture-source-1",
+      "isbn": "9780000000002",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": "Fixture Press",
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture source 1",
+      "type": "book",
+      "url": null,
+      "year": 2001
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": "fixture-author",
+          "name": "Fixture Author"
+        }
+      ],
+      "citationCount": 8,
+      "container": {
+        "issue": "3",
+        "kind": "journal",
+        "pages": "45-67",
+        "title": "Fixture Journal of Nowhere",
+        "volume": "12"
+      },
+      "created": "2026-01-01",
+      "creators": [
+        "Fixture Author Two"
+      ],
+      "doi": "10.0000/fixture-2",
+      "id": "fixture-source-2",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture source 2",
+      "type": "article",
+      "url": null,
+      "year": 2002
+    },
+    {
+      "accessed": "2026-01-01",
+      "aliases": [],
+      "authors": [
+        {
+          "github": "fixture-author",
+          "name": "Fixture Author"
+        }
+      ],
+      "citationCount": 3,
+      "created": "2026-01-01",
+      "creators": [
+        "Fixture Author Three"
+      ],
+      "doi": null,
+      "id": "fixture-source-3",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": null,
+      "repository": null,
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture source 3",
+      "type": "web",
+      "url": "https://example.invalid/fixture-source-3",
+      "year": 2003
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": "fixture-author",
+          "name": "Fixture Author"
+        }
+      ],
+      "citationCount": 0,
+      "created": "2026-01-01",
+      "creators": [
+        "Fixture Author Four"
+      ],
+      "doi": null,
+      "id": "fixture-source-4",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "publisher": null,
+      "reference": "FX 1/2/3",
+      "repository": "Fixture archive",
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Fixture source 4",
+      "type": "primary",
+      "url": null,
+      "year": null
+    }
+  ]
+}

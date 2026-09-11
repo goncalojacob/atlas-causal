@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "conakry",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q3733",
+  "wikipedia": {
+    "en": "Conakry",
+    "pt": "Conacri"
+  },
+  "sitelinks": {
+    "count": 149,
+    "on": "2026-09-03"
+  },
+  "sources": [],
+  "names": [
+    "Conakry"
+  ],
+  "where": {
+    "lon": -13.68,
+    "lat": 9.51,
+    "precision": "city",
+    "label": "Conakry"
+  },
+  "region": null,
+  "summary": null
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "salazar-president-of-council-1932",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    }
+  ],
+  "title": "Salazar becomes President of the Council",
+  "summary": "Salazar was appointed President of the Council of Ministers on 5 July 1932 by President Óscar Carmona, and held the office until September 1968. The appointment made the civilian who had balanced the budget the head of a government the military had run since 1926, and the constitution he had drafted was put to plebiscite eight months later. In the atlas it is the point at which the Military Dictatorship becomes the Estado Novo in fact, before it does so in law.",
+  "when": {
+    "start": 1932,
+    "end": 1932,
+    "date": "1932-07-05",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "salazar",
+      "role": "appointed"
+    },
+    {
+      "actor": "military-dictatorship",
+      "role": "government"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "id": "revolt-14-may-1915--sidonio-pais-coup-1917--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "from": "revolt-14-may-1915",
+  "to": "sidonio-pais-coup-1917",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The victory of May 1915 restored Democratic dominance by force and taught both sides that the way out of a parliamentary defeat was a rising. Sidónio's coup two and a half years later was made against exactly the dominance that May restored, and by men who had learned the same lesson."
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mario-soares--partido-socialista--led",
+  "kind": "relation",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "retraction": {
+    "on": "2026-09-06",
+    "reason": "Retracted in M30a-2 and re-filed as the tenure \"mario-soares-partido-socialista-1973\": who led a body is an office somebody held and not a link between two actors, because a relation's id is from--to--type and one person may lead one body more than once. The type \"led\" is deprecated and no active relation may take it; nothing this record claimed was changed in the move."
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "mario-soares",
+  "to": "partido-socialista",
+  "type": "led",
+  "when": {
+    "start": 1973,
+    "end": 1986
+  },
+  "note": "Founding secretary-general; he left the leadership on being elected President. Both ends want checking."
+}

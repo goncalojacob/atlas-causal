@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "25-november-1975--constitution-1976--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "25-november-1975",
+  "to": "constitution-1976",
+  "type": "enabled",
+  "confidence": "consensus",
+  "explanation": "The end of the revolutionary period allowed the Constituent Assembly to complete a text that combined a democratic order with the military's residual guardianship through the Council of the Revolution.",
+  "dispute": null
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "serpa-pimentel",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted",
+      "date"
+    ],
+    "note": "The years were written from the assistant’s memory in M31-3 and have not been read in a source. The works cited are where a reviewer should check them, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "António de Serpa Pimentel",
+    "Serpa Pimentel"
+  ],
+  "summary": "António de Serpa Pimentel (1825–1900) was a Regenerator politician and President of the Council of Ministers of Portugal in 1890, at the head of the government formed after the British Ultimatum of January of that year. He is in the atlas as the holder of that turn at the headship of the government.",
+  "when": {
+    "start": 1825,
+    "end": 1900
+  },
+  "where": null
+}

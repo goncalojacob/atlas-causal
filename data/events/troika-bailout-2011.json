@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "troika-bailout-2011",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "title": "Request for financial assistance",
+  "summary": "Portugal requested external financial assistance on 6 April 2011, after the parliament had rejected the fourth austerity package and the government of José Sócrates had resigned, and with borrowing costs at a level the treasury could not sustain. The memorandum with the European Commission, the European Central Bank and the International Monetary Fund was signed on 17 May and provided about seventy-eight billion euros over three years against a programme of consolidation, tax rises and structural change. The adjustment ran to mid-2014 and coincided with a deep recession, high unemployment and a wave of emigration; how much of that was the programme and how much the crisis it answered is the argument the record's sources are about. It is in the atlas as the most recent event in this slice and the endpoint of the chain that runs from monetary union.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-04-06",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "imf",
+      "role": "creditor"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "debtor"
+    },
+    {
+      "actor": "cavaco-silva",
+      "role": "head-of-state",
+      "note": "president"
+    }
+  ]
+}

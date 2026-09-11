@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "sismo-de-portugal-de-2009",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the earthquake of 17 December 2009 off Cape São Vicente, felt across the south of the country and without serious damage. As with the Azorean earthquakes of 1980 and 1998, the atlas holds nothing it can be argued to have changed."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q6143030",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "pt": "Sismo de Portugal de 2009"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6143030"
+    }
+  ],
+  "title": "Sismo de Portugal de 2009",
+  "summary": "Wikidata item Q6143030, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2009,
+    "end": 2009,
+    "date": "2009-12-17"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

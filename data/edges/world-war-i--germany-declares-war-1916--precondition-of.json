@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "world-war-i--germany-declares-war-1916--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War I\", revision 1372979664"
+    }
+  ],
+  "from": "world-war-i",
+  "to": "germany-declares-war-1916",
+  "type": "precondition-of",
+  "confidence": "consensus",
+  "explanation": "Portugal did not choose the war and then find an occasion; the occasion was made by the war it was already on the edge of. Fighting with German colonial forces in southern Angola and northern Mozambique had been going on since 1914, and the requisition of the interned German ships in February 1916 was carried out at Britain's request under the alliance, in a shipping crisis the submarine campaign had created. The declaration of 9 March 1916 is the point at which a European war already two years old took Portugal into it formally. That the belligerence was sought by the Democrats for their own reasons is a further argument, made on the Portuguese record itself.",
+  "dispute": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "delgado-assassinated-1965",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Humberto Delgado murdered by the PIDE",
+  "summary": "Delgado and his Brazilian secretary Arajaryr Moreira de Campos were lured across the Spanish border and killed by a PIDE team in February 1965; the bodies were found near Villanueva del Fresno two months later. The killing was denied for years and only established in detail after 1974.",
+  "when": {
+    "start": 1965,
+    "end": 1965,
+    "date": "1965-02-13",
+    "calendar": "gregorian"
+  },
+  "place": "near-villanueva-del-fresno",
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "humberto-delgado",
+      "role": "victim"
+    },
+    {
+      "actor": "pvde-pide-dgs",
+      "role": "perpetrator"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "government"
+    }
+  ]
+}

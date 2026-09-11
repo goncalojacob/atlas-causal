@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "young-turk-revolution-of-1908",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q4298662",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Young Turk Revolution",
+    "pt": "Revolução dos Jovens Turcos"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Young Turk Revolution\", revision 1372902192"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Revolução dos Jovens Turcos\", revision 62934565"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q4298662"
+    }
+  ],
+  "title": "Young Turk Revolution of 1908",
+  "summary": "In July 1908 officers of the Ottoman Third Army in Macedonia, organised in the Committee of Union and Progress, forced Abdul Hamid II to restore the constitution of 1876, recall parliament and call an election. The Second Constitutional Era that followed lasted four years and did not survive its own contradictions: a counter-revolution in 1909 deposed the sultan, the Balkan Wars stripped away the European provinces, and in 1913 the Committee took the state outright by coup. It is in the atlas because the government that ran the empire into the First World War and carried out the Armenian genocide is the one this revolution created.",
+  "when": {
+    "start": 1908,
+    "end": 1908,
+    "date": "1908-07-24"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "turkey-ottoman-empire",
+      "role": "government"
+    }
+  ]
+}

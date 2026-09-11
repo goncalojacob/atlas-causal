@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mario-soares",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q156781",
+  "wikipedia": {
+    "en": "Mário Soares",
+    "pt": "Mário Soares"
+  },
+  "sitelinks": {
+    "count": 56,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Mário Soares",
+    "Mário Alberto Nobre Lopes Soares"
+  ],
+  "summary": "Mário Soares (1924–2017), a lawyer who had defended political prisoners and been imprisoned and deported to São Tomé under the Estado Novo, founded the Socialist Party in exile in 1973 and returned to Portugal three days after the 1974 coup. As foreign minister he signed the agreements that decolonised the African territories; as prime minister from 1976 he governed a minority government, applied to the European Community in 1977 and accepted the first IMF programme. He was the principal opponent of the revolutionary course in 1975 and, from 1986 to 1996, the first civilian president in sixty years. His reputation rests on holding a parliamentary line at a moment when it was not obviously going to hold; his critics then and since argue about the cost of the decolonisation agreements he negotiated. He is in the atlas as one of the two poles of the politics of 1975 and the figure who carries the new republic into Europe.",
+  "when": {
+    "start": 1924,
+    "end": 2017
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "angola-under-portugal-1905",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 389"
+    }
+  ],
+  "actor": "angola-under-portugal",
+  "presenceType": "state",
+  "dependencyOf": "portugal",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1905,
+    "end": 1975,
+    "date": "1905-05-30",
+    "endDate": "1975-11-10"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "389"
+  },
+  "capital": {
+    "lon": 13.23444,
+    "lat": -8.83833,
+    "precision": "city",
+    "label": "Luanda"
+  },
+  "confidence": "consensus"
+}

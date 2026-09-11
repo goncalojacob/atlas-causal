@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1935-portuguese-presidential-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: 17 February 1935, Óscar Carmona unopposed and re-elected, the first presidential election of the Estado Novo. The office and the man are both already in the atlas by way of the election of 1928, which is the one that did something. This one confirmed an arrangement rather than making it."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q18166737",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1935 Portuguese presidential election",
+    "pt": "Eleições presidenciais portuguesas de 1935"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18166737"
+    }
+  ],
+  "title": "1935 Portuguese presidential election",
+  "summary": "Wikidata item Q18166737, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1935,
+    "end": 1935,
+    "date": "1935-02-17"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

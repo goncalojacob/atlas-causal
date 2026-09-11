@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1945-portuguese-legislative-election--delgado-candidacy-1958--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "from": "1945-portuguese-legislative-election",
+  "to": "delgado-candidacy-1958",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "This edge is about organisation rather than about the idea. The MUD lasted three years and achieved nothing it set out to achieve, but for a few months it put republicans, socialists and communists into one working front, and the people who learned each other there are the people who supplied candidates, committees and lawyers to every opposition campaign that followed. A national candidacy mounted in weeks, as Delgado’s was in 1958, presupposes a network already in existence. That network was assembled in the autumn of 1945.",
+  "dispute": null
+}

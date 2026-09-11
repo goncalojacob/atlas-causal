@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "1987-portuguese-legislative-election",
+  "kind": "event",
+  "status": "merged",
+  "supersededBy": "cavaco-absolute-majority-1987",
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-merged"
+    ],
+    "note": "Merged in M22 into cavaco-absolute-majority-1987, which is the same event: the early election of 19 July 1987, at which the Social Democrats won the first absolute majority of the democratic period. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
+  },
+  "wikidata": "Q1343967",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1987 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1987"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1343967"
+    }
+  ],
+  "title": "1987 Portuguese legislative election",
+  "summary": "Wikidata item Q1343967, imported by tools/import/wikidata.mjs. The item's own description reads \"election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1987,
+    "end": 1987,
+    "date": "1987-07-19"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

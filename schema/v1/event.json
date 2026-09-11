@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/event.json",
+  "title": "Event",
+  "description": "One point in space and time, or a long process with an interval and usually no place. An event points at a place record rather than repeating its coordinates; region is derived at index time from that place, and on the record it is an optional override. Since M30a-3 it is optional everywhere: an event with neither a place nor a region is drawn in no lane and the validator warns `no-lane` rather than refusing it.",
+  "type": "object",
+  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "sources", "title", "summary", "when", "place", "actors"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "$ref": "../common/provenance.json#/properties/schema" },
+    "id": { "$ref": "../common/provenance.json#/properties/id" },
+    "kind": { "const": "event" },
+    "status": { "$ref": "../common/provenance.json#/properties/status" },
+    "supersededBy": { "$ref": "../common/provenance.json#/properties/supersededBy" },
+    "aliases": { "$ref": "../common/provenance.json#/properties/aliases" },
+    "authors": { "$ref": "../common/provenance.json#/properties/authors" },
+    "license": { "$ref": "../common/provenance.json#/properties/license" },
+    "created": { "$ref": "../common/provenance.json#/properties/created" },
+    "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "review": { "$ref": "../common/provenance.json#/properties/review" },
+    "origin": { "$ref": "../common/provenance.json#/properties/origin" },
+    "retraction": { "$ref": "../common/provenance.json#/properties/retraction" },
+    "wikidata": { "$ref": "../common/provenance.json#/properties/wikidata" },
+    "wikipedia": { "$ref": "../common/provenance.json#/properties/wikipedia" },
+    "sitelinks": { "$ref": "../common/provenance.json#/properties/sitelinks" },
+    "body": { "$ref": "../common/provenance.json#/properties/body" },
+    "sources": { "$ref": "../common/provenance.json#/properties/sources" },
+    "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "names": {
+      "description": "What else this event is called: the common name where the title is the formal one, the name in another language, the name a source uses. Optional, unlike an actor's or a place's, because the title is already the display name and this list exists for search — an event nobody calls anything else carries no key at all. Held to a shape by rule 18, as the other two are: no empty list, no name twice, and never the title itself. Search does not fold it yet; that is the search shard's, and plan decision 5.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+    },
+    "summary": {
+      "description": "Written by a person.",
+      "type": "string",
+      "minLength": 1
+    },
+    "when": { "$ref": "../common/interval.json" },
+    "place": {
+      "description": "The place record this event happened at, or null for a process with no honest point, which is then timeline-only and carries a region where anybody can say which lane it belongs in.",
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "../common/provenance.json#/properties/id" }
+      ]
+    },
+    "region": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "../common/provenance.json#/properties/id" }
+      ]
+    },
+    "regionNote": {
+      "description": "Why the lane on this record is an override rather than the derivation. Written only beside a `region`, and only by whatever set it: the import writes it because a placeless event or a place whose own point reaches no polygon has to be given a lane, and a lane given by a tool is not the same fact as one derived from a coordinate (health review A, finding 23a). A person writing an override says why here too, in a sentence.",
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1, "maxLength": 300 }
+      ]
+    },
+    "parent": {
+      "description": "The larger event this one is part of: a battle inside a war, a decree inside a revolution. One parent, so the events form a tree; that it resolves to an active event and that the tree has no cycle is rule 24, and a child dated outside its parent is a warning. It is a display fact and never an argument: `parent` does not enter the adjacency, so consequences, ancestors, convergence and the horizon stay edge-only (plan decision 4).",
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "../common/provenance.json#/properties/id" }
+      ]
+    },
+    "scope": {
+      "description": "How wide an event is, for the two cases a mark cannot show: a regional or a worldwide event is drawn as a band across the timeline and a wash over the map rather than as a point, so a world war or a pandemic reads as the ground the smaller events stand on (plan decision 4). Absent means an ordinary event. The vocabulary is EVENT_SCOPES in src/vocab.js.",
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "enum": ["regional", "worldwide"] }
+      ]
+    },
+    "category": {
+      "description": "What kind of thing this event is, from the closed list in data/categories.json — war, treaty, election and the rest. In data and not in code, so that adding one is an edit to that file (plan decision 13); a category outside the list is the warning `category-unknown`, not an error, while most of the corpus carries none; an absent category is not warned about at all. The contribution form and the review editor offer the list as a select; the map draws one glyph per category from M32b-2, which is the run that gives events a category.",
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "../common/provenance.json#/properties/id" }
+      ]
+    },
+    "actors": {
+      "description": "The actors of this event and what each did in it — not everyone alive. A role comes from the closed list in data/roles.json, and one outside it is rule 25, an error, on an active event; M32b-1 applied the mapping (docs/roles-mapping.md) and closed the list. `note` is the free text beside the role — \"president under whom it was held\" — which is what the phrase a drafting run wrote becomes once the role itself is a vocabulary. That every actor resolves is rule 14.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["actor", "role"],
+        "additionalProperties": false,
+        "properties": {
+          "actor": { "$ref": "../common/provenance.json#/properties/id" },
+          "role": { "type": "string", "minLength": 1, "maxLength": 60 },
+          "note": { "type": "string", "minLength": 1, "maxLength": 200 }
+        }
+      }
+    }
+  }
+}

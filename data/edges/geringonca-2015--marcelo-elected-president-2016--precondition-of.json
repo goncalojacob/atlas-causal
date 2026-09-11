@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "geringonca-2015--marcelo-elected-president-2016--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "cne-presidential-2016",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "from": "geringonca-2015",
+  "to": "marcelo-elected-president-2016",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The presidential campaign ran through the new government's first weeks, and the winner made cohabitation with it the substance of his candidacy rather than an afterthought, which is what allowed a candidate of the defeated side to win in the first round. A different government in November would have produced a different January.",
+  "dispute": null
+}

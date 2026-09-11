@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nato-founding-1949",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Portugal signs the North Atlantic Treaty",
+  "summary": "Portugal was one of the twelve states that signed the North Atlantic Treaty in Washington on 4 April 1949, and the only signatory that was not a democracy. Salazar had hesitated — the alliance meant commitments and foreign inspection of Portuguese forces — and accepted on the argument that the Azores made Portugal necessary to the Atlantic, which the 1943 agreement and the war had already demonstrated. Membership modernised the officer corps, sent officers abroad to train, and gave the regime a standing among the Western powers that survived the early years of the colonial war. Historians disagree over how much protection it actually bought at the United Nations after 1961. It is in the atlas because the army that made the 1974 coup was in part an army NATO had trained.",
+  "when": {
+    "start": 1949,
+    "end": 1949,
+    "date": "1949-04-04",
+    "calendar": "gregorian"
+  },
+  "place": "washington",
+  "region": null,
+  "actors": [
+    {
+      "actor": "nato",
+      "role": "founder"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "founder",
+      "note": "founding member"
+    },
+    {
+      "actor": "salazar",
+      "role": "leader"
+    }
+  ]
+}

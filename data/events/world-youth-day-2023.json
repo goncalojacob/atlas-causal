@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "world-youth-day-2023",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+  },
+  "sources": [
+    {
+      "source": "holy-see-2023-world-youth-day",
+      "locator": null
+    }
+  ],
+  "title": "World Youth Day in Lisbon",
+  "summary": "World Youth Day was held in Lisbon from 1 to 6 August 2023, postponed from 2022 because of the pandemic, with the closing mass on ground cleared for it by the river. Its cost, and the share of it borne by the state and by the municipalities, was argued over before and after.",
+  "when": {
+    "start": 2023,
+    "end": 2023,
+    "date": "2023-08-01",
+    "calendar": "gregorian",
+    "endDate": "2023-08-06"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "antonio-costa",
+      "role": "head-of-government"
+    },
+    {
+      "actor": "marcelo-rebelo-de-sousa",
+      "role": "head-of-state"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1918-portuguese-general-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: the plebiscitary election of 28 April 1918 that ratified Sidónio Pais’s regime, boycotted by the Democrats, the Evolutionists and the Republican Union, who between them had won over 90% of the seats in 1915. Genuinely notable, and it sits between two events the atlas already holds — the coup of December 1917 and the assassination of December 1918. But every edge out of it would be this assistant’s construction rather than an argument found in the bibliography."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q7232714",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1918 Portuguese general election",
+    "pt": "Eleições legislativas portuguesas de 1918"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7232714"
+    }
+  ],
+  "title": "1918 Portuguese general election",
+  "summary": "Wikidata item Q7232714, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1918,
+    "end": 1918,
+    "date": "1918-04-28"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

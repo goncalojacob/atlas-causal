@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "meneses-2009-salazar",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "type": "book",
+  "creators": [
+    "Filipe Ribeiro de Meneses"
+  ],
+  "title": "Salazar: A Political Biography",
+  "year": 2009,
+  "publisher": "Enigma Books",
+  "isbn": null,
+  "doi": null,
+  "url": "https://search.worldcat.org/search?q=Salazar%3A%20A%20Political%20Biography%20Filipe%20Ribeiro%20de%20Meneses",
+  "accessed": null,
+  "repository": null,
+  "reference": null
+}

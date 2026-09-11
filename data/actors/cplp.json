@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "cplp",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date",
+      "claim"
+    ],
+    "note": "The July 1996 founding, the founding membership and the account of who drove the proposal were written from memory, not read in the cited works."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Community of Portuguese Language Countries",
+    "CPLP",
+    "Comunidade dos Países de Língua Portuguesa"
+  ],
+  "summary": "The community founded at Lisbon in July 1996 by Portugal, Brazil and the five African states that had been Portuguese colonies until 1975, and joined by East Timor once it was independent. It is the institutional form of a relationship this atlas otherwise records only as conquest and withdrawal: a body that could not have existed before decolonisation, and that was proposed without success through the 1980s until Brazilian weight behind it made it possible. What it does is modest — language policy and the orthographic agreement, election observation, occasional mediation — and Portuguese governments have consistently claimed more for it than its budget will carry. It is in the atlas because it is the point at which the empire's successor states became Portugal's counterparts rather than its possessions.",
+  "when": {
+    "start": 1996,
+    "end": null
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

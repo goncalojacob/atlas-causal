@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "guinean-constitutional-referendum-1958--guinea-war-begins-1963--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "from": "guinean-constitutional-referendum-1958",
+  "to": "guinea-war-begins-1963",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "A guerrilla war against a colonial power needs ground the power cannot enter. Guinea’s No in 1958 produced, along Portuguese Guinea’s southern border, an independent state whose government was willing to house the PAIGC: Conakry became its headquarters, its training camp, its arms route and the address from which it argued its case abroad. The party had existed since 1956 and had already tried the towns — the dockers’ strike at Pidjiguiti was shot down in 1959 — and what it did not have until Conakry was a rear it could not be driven out of. The war that opened in 1963 was fought from there.",
+  "dispute": null
+}

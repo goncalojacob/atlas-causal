@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mozambique-war-begins-1964",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "title": "Beginning of the war in Mozambique",
+  "summary": "FRELIMO opened the armed struggle in Mozambique with an attack on the administrative post at Chai, in Cabo Delgado, on 25 September 1964. The war spread through the northern districts and, after Eduardo Mondlane's assassination in 1969 and Samora Machel's rise, into Tete around the Cahora Bassa dam. It was the third and last front of the colonial war, and by 1974 it tied down the largest of the three Portuguese forces without either side being able to finish it. It is in the atlas as the front that made the war continental in scale, and one of the three chains that end at 25 April 1974.",
+  "when": {
+    "start": 1964,
+    "end": 1964,
+    "date": "1964-09-25",
+    "calendar": "gregorian"
+  },
+  "place": "chai",
+  "region": null,
+  "actors": [
+    {
+      "actor": "frelimo",
+      "role": "belligerent"
+    },
+    {
+      "actor": "eduardo-mondlane",
+      "role": "leader"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "belligerent"
+    }
+  ]
+}

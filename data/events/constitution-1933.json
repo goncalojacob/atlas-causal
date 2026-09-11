@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "constitution-1933",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    }
+  ],
+  "title": "Constitution of 1933",
+  "summary": "The constitution drafted under Salazar's direction was approved by plebiscite on 19 March 1933 and gave the Estado Novo its legal shape: a corporative state, a National Assembly in the hands of a single party, a head of government answerable to the President of the Republic rather than to parliament, and a corporative chamber for organised interests. Abstentions were counted as votes in favour. Censorship, the political police and the ban on other parties were built alongside the text rather than written into it. Historians differ over how far the result was fascist and how far it was conservative and Catholic authoritarianism, and over how much the corporative machinery ever governed anything. It is in the atlas as the founding document of the regime that fell on 25 April 1974.",
+  "when": {
+    "start": 1933,
+    "end": 1933,
+    "date": "1933-03-19",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "salazar",
+      "role": "author"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "founder"
+    },
+    {
+      "actor": "military-dictatorship",
+      "role": "government",
+      "note": "superseded"
+    }
+  ]
+}

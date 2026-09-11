@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "legislative-election-1976",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "First legislative election under the constitution",
+  "summary": "The first election to the Assembly of the Republic under the new constitution was held on 25 April 1976, two years to the day after the coup and a year after the constituent election. The Socialists came first with about thirty-five per cent, short of a majority, and Mário Soares formed a minority government; the Popular Democrats, the CDS and the Communists took the rest, in roughly the proportions of the year before. It confirmed the pattern of the constituent election and made clear that no single party would govern the new republic alone. It is in the atlas as the ordinary politics that the revolutionary period ends in.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "date": "1976-04-25",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "mario-soares",
+      "role": "elected"
+    },
+    {
+      "actor": "alvaro-cunhal",
+      "role": "candidate"
+    }
+  ]
+}

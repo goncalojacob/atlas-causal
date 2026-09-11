@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "2009-european-parliament-election-in-portugal",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the European Parliament election of 7 June 2009 in Portugal. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the sixth European election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q788057",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2009 European Parliament election in Portugal",
+    "pt": "Eleições europeias de 2009 (Portugal)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q788057"
+    }
+  ],
+  "title": "2009 European Parliament election in Portugal",
+  "summary": "Wikidata item Q788057, imported by tools/import/wikidata.mjs. The item's own description reads \"election of the delegation from Portugal to the European Parliament in 2009\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2009,
+    "end": 2009,
+    "date": "2009-06-07"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

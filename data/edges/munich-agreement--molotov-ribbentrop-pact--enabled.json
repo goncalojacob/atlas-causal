@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "munich-agreement--molotov-ribbentrop-pact--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Munich Agreement\", revision 1372429724"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
+    }
+  ],
+  "from": "munich-agreement",
+  "to": "molotov-ribbentrop-pact",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Soviet Union had a treaty with Czechoslovakia and was not invited to Munich, and the lesson Moscow drew — that Britain and France would neither fight for eastern Europe nor treat the Soviet Union as a partner in defending it — is the standard explanation for why the collective-security policy of Litvinov was abandoned for Molotov's search for an accommodation with Berlin in 1939. The claim is that Munich made the pact thinkable, not that it made it necessary: the Anglo-French mission to Moscow in the summer of 1939 was also badly handled, and the secret protocol's territorial gains were an inducement Britain could not match.",
+  "dispute": null
+}

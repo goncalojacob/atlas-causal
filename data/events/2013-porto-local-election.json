@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "2013-porto-local-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the Porto municipal election of 29 September 2013, won by Rui Moreira as an independent. The import brought several single-municipality ballots as records of their own, alongside the national local election of the same day. The atlas has no level between the country and the place, and a municipal result with no consequence recorded here has nothing to attach to in either direction. Revisit if a mayoralty is ever written as an actor."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q25443212",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2013 Porto local election",
+    "pt": "Eleições autárquicas de 2013 no Porto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q25443212"
+    }
+  ],
+  "title": "2013 Porto local election",
+  "summary": "Wikidata item Q25443212, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese municipal election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2013,
+    "end": 2013,
+    "date": "2013-09-29"
+  },
+  "place": "porto",
+  "region": null,
+  "category": "election",
+  "actors": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "southern-nigeria",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 4783"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Southern Nigeria"
+  ],
+  "summary": "Entity 4783 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1899 to 1913. Its last capital in the dataset is Old Calabar (Calabar). This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1899,
+    "end": 1913
+  },
+  "where": {
+    "lon": 8.316667,
+    "lat": 4.95,
+    "precision": "city",
+    "label": "Old Calabar (Calabar)"
+  }
+}

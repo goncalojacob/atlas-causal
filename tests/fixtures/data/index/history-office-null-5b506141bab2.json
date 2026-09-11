@@ -1,0 +1,17 @@
+{
+  "from": null,
+  "kind": "office",
+  "records": {
+    "leadership-of-fixture-actor-two": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": null
+}

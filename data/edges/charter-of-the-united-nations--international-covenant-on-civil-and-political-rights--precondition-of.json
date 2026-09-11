@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "charter-of-the-united-nations--international-covenant-on-civil-and-political-rights--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Charter of the United Nations\", revision 1365430628"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"International Covenant on Civil and Political Rights\", revision 1371450720"
+    }
+  ],
+  "from": "charter-of-the-united-nations",
+  "to": "international-covenant-on-civil-and-political-rights",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Charter committed members to promote human rights and did not say what they were or what would happen if a state ignored them; the Universal Declaration of 1948 said what they were and bound nobody; the covenants of 1966 are the third step, in which the same organisation turned the list into treaty obligations with reporting machinery attached. Twenty years passed between the second step and the third because the two blocs disagreed about whether civil and economic rights belonged in one instrument, which is why there are two covenants and not one. The claim is about that sequence and the body that carried it, not that 1945 made 1966 certain.",
+  "dispute": null
+}

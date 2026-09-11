@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "italian-somaliland-1950",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 690"
+    }
+  ],
+  "actor": "italian-somaliland",
+  "presenceType": "state",
+  "dependencyOf": "italy-sardinia",
+  "dependencyKind": "mandate",
+  "when": {
+    "start": 1950,
+    "end": 1960,
+    "date": "1950-04-01",
+    "endDate": "1960-06-30"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "690"
+  },
+  "capital": {
+    "lon": 45.366678,
+    "lat": 2.046934,
+    "precision": "city",
+    "label": "Mogadishu"
+  },
+  "confidence": "consensus"
+}

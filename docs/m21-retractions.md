@@ -1,0 +1,380 @@
+# M21 retractions — imported events before 1975 that could not be wired
+
+Every event listed here was imported by M20 and is now `retracted` (or
+`merged`, where the atlas already held the same event under another id). The
+reason is on the record too, in `review.note`, so the review dashboard shows
+it without this file.
+
+The bar M21 works to is the brief's: an event stays only if at least two
+edges can be **argued from the bibliography**, one of them outgoing. An
+event that would need an invented edge to survive is retracted instead.
+Retraction here is not a judgement that the event is unimportant — several
+of these are important — but that *this atlas, with the records and the
+books it currently holds*, cannot say what followed from it without making
+something up.
+
+Where a retraction is worth revisiting later, the entry says what the atlas
+would need first.
+
+---
+
+## 1890s — 7 of 7 retracted
+
+Six of the seven are elections of the *rotativismo*, the arranged
+alternation of Regenerators and Progressives under the constitutional
+monarchy. The cached leads give a date, a winning party and a seat count and
+nothing else, and the atlas holds no event at all between 1890 and 1910 for
+any of them to have changed. Wiring them would have meant inventing a link
+across fifteen years to the Republic of 1910.
+
+- `1890-portuguese-legislative-election` — 30 March 1890, Regenerators, 115
+  seats.
+- `1892-portuguese-legislative-election` — 23 October 1892; the lead does not
+  give a winner.
+- `1894-portuguese-legislative-election` — 15 April 1894, Regenerators, 101
+  seats.
+- `1895-portuguese-legislative-election` — 17 November 1895; Progressives and
+  Republicans boycotted and the Regenerators took every seat.
+- `1897-portuguese-legislative-election` — 2 May 1897; the Republicans
+  boycotted, the Progressives won 88 seats.
+- `1899-portuguese-legislative-election` — 26 November 1899, Progressives, 91
+  seats.
+
+And one that is not an election:
+
+- `treaty-of-windsor` — the secret Anglo-Portuguese declaration of 14 October
+  1899. **Worth reviving.** Britain reaffirmed its guarantee of the
+  Portuguese colonies, neutralising the Anglo-German convention of 1898, and
+  Portugal closed Lourenço Marques to arms bound for the Transvaal. One
+  consequence can be argued from this bibliography — the alliance under
+  which Portugal seized German shipping in 1916 and was declared war on —
+  but only one, and a second edge would have rested on the same argument
+  twice. The atlas needs the British Ultimatum of 1890 and the seizure of
+  German ships of February 1916 before this record can carry its own weight.
+
+## 1900s — 6 of 8 retracted
+
+The same six-in-a-row problem: six more elections of the rotativismo, none
+of which can be shown to have changed anything the atlas holds. The two that
+stay are the ones the decade turns on.
+
+- `1900-portuguese-legislative-election` — 25 November 1900, Regenerators,
+  104 seats.
+- `1901-portuguese-legislative-election` — 6 October 1901, Regenerators, 100
+  seats; the third election in three years.
+- `1904-portuguese-legislative-election` — 26 June 1904, Regenerators, 100
+  seats.
+- `1905-portuguese-legislative-election` — 12 December 1905, Progressives,
+  109 seats.
+- `april-1906-portuguese-legislative-election` — 29 April 1906, Regenerators,
+  104 seats; the one republican elected refused his seat, alleging fraud.
+- `august-1906-portuguese-legislative-election` — 19 August 1906, the second
+  that year; no majority for the first time in decades. This is the most
+  interesting of the six — it is where the rotation stops producing
+  governments — but the argument that matters runs through João Franco's
+  ministry and his dissolution of 1907, and the atlas holds neither.
+
+Wired instead: `lisbon-regicide` and `1908-portuguese-legislative-election`.
+
+## 1910s — 8 of 11 retracted
+
+The First Republic held elections constantly and the import caught most of
+them. Three are load-bearing and stay; the rest are the Republic's ordinary
+churn, and in several cases the event that gave them their meaning is
+already in the atlas under its own name.
+
+- `1910-portuguese-legislative-election` — 28 August 1910, the monarchy's
+  last, whose results were never confirmed because the revolution of 5
+  October overtook them. Nothing followed from it, and that is exactly its
+  point: an atlas of consequences has nothing to draw from a ballot the
+  country stopped counting.
+- `1913-portuguese-legislative-election` — 16 November 1913, a partial round
+  for 37 of 153 seats.
+- `may-1915-portuguese-presidential-election` — 29 May 1915, to finish
+  Arriaga's term after his resignation. Good incoming argument (the rising of
+  14 May), nothing argued leading out.
+- `august-1915-portuguese-presidential-election` — 6 August 1915; the leads
+  give the constitutional mechanism and nothing else.
+- `1918-portuguese-general-election` — 28 April 1918, the plebiscitary
+  election that ratified Sidónio Pais's regime, boycotted by the parties that
+  had held over 90% of the seats. **The most substantial retraction of the
+  decade.** It sits between the coup of December 1917 and the assassination
+  of December 1918, both of which the atlas holds, and there is a case that
+  the boycott left the República Nova resting on one man and so unable to
+  survive his death. That case is this assistant's construction, not one
+  found in the bibliography, and the brief is explicit that an event is not
+  kept by writing an edge for it.
+- `1918-portuguese-presidential-election` — 16 December 1918, two days after
+  Sidónio was shot.
+- `1919-portuguese-legislative-election` — 11 May 1919, the return of the
+  boycotting parties.
+- `1919-portuguese-presidential-election` — **and the cached leads disagree
+  about its date**: English Wikipedia says 6 December 1919, Portuguese
+  Wikipedia says 6 August 1919. The disagreement is recorded on the record
+  because it is the kind of thing `review.html` exists for, but a
+  disagreement is not an argument and nothing follows from the election
+  either way.
+
+Wired instead: `1911-portuguese-constituent-national-assembly-election`,
+`1911-portuguese-presidential-election` and
+`1915-portuguese-legislative-election` — the chain from the revolution
+through the constitution to the presidency that broke the parliamentary
+Republic in 1915, and the majority that took the country into the war.
+
+## 1920s — 7 of 8 retracted
+
+The First Republic's last elections, one earthquake, and one item nobody can
+identify. Only the presidential election of 1928 stays.
+
+- `1921-portuguese-legislative-election` — 10 July 1921. One argument runs out
+  of it, to the Noite Sangrenta that murdered the government it produced, and
+  none runs in.
+- `1922-portuguese-legislative-election` — 29 January 1922. The reason it was
+  held is already in the atlas as the Noite Sangrenta.
+- `1923-portuguese-presidential-election` — 6 August 1923; Teixeira Gomes
+  elected in absentia.
+- `1925-portuguese-legislative-election` — 8 November 1925. **The most
+  regrettable retraction of the decade**: the last multi-party election in
+  Portugal until 1975. One edge runs out of it — the parliament it returned
+  is the one 28 May 1926 swept away — and none runs in. Its significance is a
+  fact about the fifty years that followed, not a consequence of it.
+- `1925-portuguese-presidential-election` — 11 December 1925; Bernardino
+  Machado returned for what turned out to be five months.
+- `1926-horta-earthquake` — 31 August 1926, Faial: nine dead, 4,138 buildings
+  destroyed or damaged. A real event, and nothing in the atlas follows from
+  it. The brief names disasters without consequence as an expected
+  retraction.
+- `q11077889` — **retracted as unidentifiable.** The import got no label, no
+  description and no cached lead; the record is titled with its own Wikidata
+  id. It holds a date and a place, 28 May 1922 at Macau, which point strongly
+  at the shooting of Chinese demonstrators and the strike that followed.
+  Pointing is not knowing. The atlas does not write a record on an inference
+  about what an item probably is, so this one is a tombstone with its
+  coordinates on it, waiting for somebody with the article in front of them.
+
+Wired instead: `1928-portuguese-presidential-election`, which sits exactly
+between the coup of 1926 and Salazar's arrival at the finance ministry and
+had been missing from the chain.
+
+## 1930s — 3 retracted, 1 merged, 1 wired
+
+- `1934-portuguese-legislative-election` — 16 December 1934, the first
+  election under the 1933 constitution and the first since 1925: the National
+  Union alone on a single national list, all 100 seats, three of them women.
+  It is the template for forty years of Estado Novo elections, which is a
+  fact about the regime rather than a consequence of this ballot.
+- `1935-portuguese-presidential-election` — 17 February 1935, Carmona
+  unopposed. The election of 1928 is the one that did something.
+- `1938-portuguese-legislative-election` — 30 October 1938, single list
+  again.
+
+**Merged, not retracted:**
+
+- `portuguese-constitutional-referendum-1933` → **`constitution-1933`**. They
+  are the same event: the atlas already dates the Constitution of 1933 to the
+  plebiscite of 19 March and its summary describes that vote, abstentions
+  counted as approval included. The record therefore names its survivor in
+  `supersededBy` rather than becoming an anonymous tombstone. It keeps the
+  Wikidata id and the two Wikipedia links the import brought with it;
+  `constitution-1933` carries no identity of its own, and whether an item
+  about the *referendum* is the right identity for a record about the
+  *constitution* is a question for a reviewer, not something this run should
+  decide by copying an id across.
+
+Wired instead: `iberian-pact`, with the intervention in Spain running into it
+and the Azores agreement of 1943 running out.
+
+## 1940s — 4 of 6 retracted
+
+- `1942-portuguese-legislative-election` — 1 November 1942, the last election
+  on a single national list.
+- `1942-portuguese-presidential-election` — 8 February 1942, Carmona
+  unopposed, third term.
+- `1949-portuguese-legislative-election` — 13 November 1949, nine months after
+  the presidential campaign that is wired; the opposition withdrew late
+  again. It repeats the manoeuvre without adding to it.
+- `portuguese-language-orthographic-agreement-of-1945` — signed in Lisbon on
+  6 October 1945 between the Academia das Ciências and the Academia
+  Brasileira de Letras, and setting the spelling of Portuguese for every
+  Portuguese territory. The interesting part is that Brazil never ratified it
+  and repealed its own approving decree in 1955 — but the agreement that
+  eventually settled that, in 1990, is not in the atlas, and nothing here
+  follows from this one.
+
+Wired instead: `1945-portuguese-legislative-election` and
+`1949-portuguese-presidential-election`. Both now run into
+`delgado-candidacy-1958`, which had three edges out of it and none into it —
+the atlas could say what Delgado's campaign caused but not where it came
+from.
+
+## 1950s — 7 retracted, 1 merged, 1 wired
+
+Three of the retractions are not Portuguese at all. The import's class
+queries caught **French** Guinea — Conakry, not Bissau — and there are six of
+these across the 1950s, 60s and 70s.
+
+- `1951-portuguese-presidential-election` — 22 July 1951, five years early
+  because Carmona had died in April.
+- `1952-guinean-territorial-assembly-election` — 30 March 1952, French
+  Guinea. The cached lead is one sentence giving a date.
+- `1953-portuguese-legislative-election` — 8 November 1953; the opposition
+  stood and took 10.1% in Lisbon, 11.8% in Porto, 8.7% in Angola.
+- `batepa-massacre` — **the most regrettable retraction of the whole run.**
+  On 3 February 1953 the colonial administration and Portuguese landowners on
+  São Tomé killed forros in numbers still disputed: São Toméan sources say
+  about 1,032, Portuguese ones about 200. The governor had blamed unrest over
+  forced labour on a communist conspiracy that was never shown to exist. It
+  is retracted for one reason and it is not a judgement on the event: the
+  atlas holds no other São Toméan record before 1975, so there is nothing
+  here for Batepá to argue with. **The atlas needs São Tomé.** This is the
+  clearest gap the run found.
+- `1957-guinean-territorial-assembly-election` — 31 March 1957, Sékou Touré's
+  PDG-RDA taking 56 of 60 seats. It is genuinely why Guinea voted No the
+  following year, and if French West African decolonisation is ever
+  represented properly this is where that chain starts.
+- `1957-portuguese-legislative-election` — all 120 seats again, **and the
+  leads disagree about the date**: English Wikipedia says 3 November,
+  Portuguese Wikipedia 4 November.
+- `geneva-act-of-the-lisbon-agreement-…` — the Lisbon Agreement on
+  appellations of origin, 31 October 1958. Note that the record's title and
+  its cached lead are not about the same instrument. Either way it is in
+  Lisbon by venue only.
+
+**Merged, not retracted:**
+
+- `1958-portuguese-presidential-election` → **`delgado-candidacy-1958`**. The
+  atlas already holds the election of 8 June 1958 — Delgado against Américo
+  Tomás, the disbelieved count, the revision that followed.
+
+Wired instead: `guinean-constitutional-referendum-1958`, which is kept
+although it is French, because independent Conakry is where the PAIGC lived
+for the next fifteen years. A word on consistency: `treaty-of-windsor` was
+retracted above for having only one argument behind two possible edges, and
+this record is kept although both its edges start from the same fact, the
+sanctuary. The difference is that the bibliography here contains a book
+written about precisely this question (MacQueen), and the two edges assert
+different mechanisms — a rear base that lets a war be launched, and an exile
+that leaves a leadership open to being killed. A reviewer who disagrees
+should retract it; the reasoning is here so that the disagreement can be
+had.
+
+## 1960s — 9 retracted, 1 merged, 2 wired
+
+- `mueda-massacre` — **the second-worst loss of the run, after Batepá.** On 16
+  June 1960 Portuguese troops fired on a crowd at Mueda on the Makonde
+  plateau, at the end of the long attempt to petition the administration
+  rather than fight it; it is the standard opening episode of the Mozambican
+  armed struggle. Exactly one edge can be argued from it, to the war of 1964,
+  and one is not two. The atlas holds no Mozambican record before 1964 and
+  nothing of FRELIMO's founding, so there is nothing else for it to reach.
+  Together with Batepá this is the run's structural finding: **the atlas's
+  African spine begins with the three wars, and events before them have
+  nothing to attach to.**
+- `1961-guinean-presidential-election`, `1963-guinean-legislative-election` —
+  French Guinea again.
+- `1961-portuguese-legislative-election` — 12 November 1961, the first
+  election after the war began; the opposition withdrew saying the minimum
+  conditions did not exist. The context is the whole of its interest, and
+  context is not a consequence.
+- `1964-rosais-earthquake` — February 1964; most of the housing in western
+  São Jorge destroyed, about 5,000 people evacuated.
+- `1965-portuguese-legislative-election` — 7 November 1965; the presidential
+  election of the same year is the one that did something.
+- `1967-portugal-floods` — **retracted with regret.** Between 500 and 700
+  dead around Lisbon on the night of 25–26 November 1967, some 20,000 houses
+  destroyed, the worst disaster in the region since 1755, and the regime
+  censored the scale of it. The relief effort became a school for opposition
+  organising and that is the consequence worth drawing — but the atlas holds
+  no record of that organising, and the floods cannot be wired to 1974
+  without inventing every step between.
+- `q2115000` — **unidentifiable**, like `q11077889`. No label, no
+  description, no lead in either language. All the import recovered was a
+  year, 1968, and a region, Africa.
+- `1969-portugal-earthquake` — 28 February 1969, the largest since 1755,
+  thirteen dead. The leads also disagree about its size: 7.8 in English, 8 in
+  Portuguese.
+
+**Merged, not retracted:**
+
+- `assault-on-the-santa-maria-steamship` → **`santa-maria-hijacking-1961`**.
+  The same seizure of the same liner by Galvão and Mortágua on 22 January
+  1961.
+
+Wired instead: `1965-portuguese-presidential-election` and
+`1969-portuguese-legislative-election` — the first presidential election with
+no electorate in it, which is the 1959 revision working as designed, and the
+last election the regime asked to be judged by.
+
+## 1970s to 1974 — 8 retracted, 1 merged, 1 wired
+
+- `equality-statute-between-brazil-and-portugal` — the Convention on Equality
+  of Rights and Duties, Brasília, 7 September 1971. A real and durable
+  instrument; the atlas holds almost nothing of the Brazilian relationship
+  after 1822 for it to touch.
+- `1972-portuguese-presidential-election` — 25 July 1972, Tomás returned
+  unopposed by the Assembly for a term that would have run to 1979. The
+  mechanism is already wired on 1965 and repeating one argument against a
+  second target is padding. The one thing this election adds — that Tomás's
+  survival tied Caetano to the war — is a single edge.
+- `1973-angolan-legislative-assembly-election` — 19 to 27 March 1973, the
+  first and only Legislative Assembly election in Portuguese Angola. Worth a
+  reviewer's attention: a settler assembly a year before the regime fell, and
+  a one-sentence lead.
+- **The three Revolutionary Brigades bomb attacks** of 9 and 10 March 1973 —
+  `…quartel-mestre-general…`, `…recruitment-and-mobilization-district-n-1…`,
+  `…army-mechanographic-services…`. No cached lead in either language for any
+  of them; all the import recovered beyond the titles was a Wikidata
+  description reading "attack perpetrated on March 9, 1973". Three records
+  written out of three one-line descriptions would be invention rather than
+  record.
+- `1974-guinean-general-election` — 27 December 1974, French Guinea; the
+  sixth and last of the Conakry records.
+- `q1454657` — **unidentifiable**, the third after `q11077889` and
+  `q2115000`. A year, 1974, and a region, Africa.
+
+**Merged, not retracted:**
+
+- `wiriyamu-massacre` → **`wiriyamu-massacre-1972`**. The same killing of the
+  same village in Tete province in December 1972, Operation Marosca.
+
+Wired instead: `1973-portuguese-legislative-election`, the last election of
+the Estado Novo, which the opposition refused after testing the opening in
+1969.
+
+---
+
+## What the run found
+
+76 imported events start before 1975. **13 are wired, 59 retracted and 4
+merged** — a retraction rate of 83%, well above the 20% the brief sets as the
+floor below which edges are being invented. The rate is high because of what
+the import caught: 49 of the 76 are elections, most of them either
+*rotativismo* ballots the crown arranged or single-list ballots the Estado
+Novo held, and an election that changed nothing is the clearest case the
+brief describes.
+
+Three findings worth the owner's attention, in order of size:
+
+1. **The atlas's African spine begins with the three wars.** Batepá (1953)
+   and Mueda (1960) are both major events, both have exactly one arguable
+   edge, and both were retracted for it. The atlas holds no São Toméan record
+   before 1975 and no Mozambican one before 1964 — not FRELIMO's founding,
+   not the cotton regime, not Pidjiguiti. Adding a handful of pre-war African
+   records would let several of these retractions be reversed.
+
+2. **Six of the retractions are not Portuguese at all.** The import's class
+   queries caught French Guinea — Conakry, not Bissau — in 1952, 1957, 1958,
+   1961, 1963 and 1974. Only the constitutional referendum of 1958 was kept,
+   and only because independent Conakry is where the PAIGC lived.
+
+3. **Three records cannot be identified at all**: `q11077889`, `q2115000`
+   and `q1454657` carry no label, no description and no lead in either
+   language, and are titled with their own Wikidata ids. One of them points
+   hard at a real event — 28 May 1922 at Macau — and the atlas still declines
+   to write it, because pointing is not knowing.
+
+Four date and magnitude disagreements between the two Wikipedias were found
+and recorded on the records rather than resolved: the 1919 presidential
+election (6 December in English, 6 August in Portuguese), the 1957
+legislative election (3 versus 4 November), and the 1969 earthquake
+(magnitude 7.8 versus 8).

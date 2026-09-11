@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "algerian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q200790",
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Algerian War",
+    "pt": "Guerra de Independência Argelina"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Algerian War\", revision 1373081356"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra de Independência Argelina\", revision 72128749"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q200790"
+    }
+  ],
+  "title": "Algerian War",
+  "summary": "The National Liberation Front opened its insurrection on 1 November 1954 against a territory France governed not as a colony but as three departments of the metropolis, with a million European settlers in it. Eight years of guerrilla war, urban bombing, systematic torture and mass resettlement followed; the war destroyed the Fourth Republic in 1958, brought de Gaulle back, and then survived his conversion to negotiation through an army revolt and the terrorism of the OAS. Algeria became independent in July 1962. It is the war the Portuguese army studied before 1961 and the one African nationalists cited, and it is therefore in this atlas twice over.",
+  "when": {
+    "start": 1954,
+    "end": 1962,
+    "date": "1954-11-01",
+    "endDate": "1962-09-09"
+  },
+  "place": null,
+  "region": "africa",
+  "actors": [
+    {
+      "actor": "france",
+      "role": "belligerent"
+    },
+    {
+      "actor": "algeria-under-france",
+      "role": "belligerent"
+    }
+  ]
+}

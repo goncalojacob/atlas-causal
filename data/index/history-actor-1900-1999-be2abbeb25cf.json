@@ -1,0 +1,5661 @@
+{
+  "from": 1900,
+  "kind": "actor",
+  "records": {
+    "aden": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "albania": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "algeria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "altice-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "alvaro-cunhal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "amilcar-cabral": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "andre-ventura": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "angola": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "antonio-costa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "antonio-de-spinola": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "antonio-guterres": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "armed-forces-movement": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "armenia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "australia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "austria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "azerbaijan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "azores-liberation-front": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "bahamas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "bahrain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "banco-comercial-portugues": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "bangladesh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "barbados": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "belarus-byelorussia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "belize": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "benin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "bhutan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "bloco-de-esquerda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "bosnia-herzegovina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "botswana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "brisa-auto-estradas-de-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "british-cameroons": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "british-togoland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "brunei": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "burkina-faso-upper-volta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "burkina-faso-upper-volta-under-france": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "burundi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "cambodia-kampuchea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "cameroon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "cameroon-under-france": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "cape-verde": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "cavaco-silva": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "cds-pp": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "central-african-republic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "central-african-republic-under-france": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "chad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "chad-under-france": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "comoros": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "comoros-under-france": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "congo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "congo-democratic-republic-of-zaire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "costa-gomes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "cote-d-ivoire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "council-of-europe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "council-of-the-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "cplp": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "croatia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "cyprus": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "cyprus-under-united-kingdom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "czech-republic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "czechoslovakia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "danzig": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "democratic-leftwing-republican-party": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "democratic-party": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "djibouti": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "durao-barroso": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "east-aden-protectorate": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "ecologist-party-the-greens": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "eduardo-mondlane": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "efta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "egypt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "energias-de-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "equatorial-guinea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "eritrea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "estado-novo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "estonia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "european-central-bank": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "european-commission": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "european-economic-community": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "european-union": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "eurozone": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "evolutionist-party": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "federation-of-rhodesia-and-nyasaland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "federation-of-south-arabia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "fertagus": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "fiji": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "finland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "first-portuguese-republic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "fnla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "freitas-do-amaral": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "frelimo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "french-polynesia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "fretilin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "gabon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "galp-energia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "gambia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "gaza": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "georgia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "german-democratic-republic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "german-federal-republic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "ghana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "guinea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "guinea-bissau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "guyana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "hamas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "humberto-delgado": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "hungary": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "iceland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "imf": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "indonesia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "inini": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "iraq": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "iraq-under-united-kingdom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "ireland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "israel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "jamaica": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "jammu-and-kashmir": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "jordan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "jordan-under-united-kingdom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "jorge-sampaio": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "jose-socrates": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "kashmir-north-azad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "kazakhstan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "kenya": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "korea-people-s-republic-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "korea-republic-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "kuwait": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "kyrgyz-republic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "laos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "latvia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "league-of-nations": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "lebanon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "lebanon-under-france": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "legiao-portuguesa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "lesotho": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "liberal-regenerator-party": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "libya": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "libya-under-italy-sardinia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "lithuania": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "luis-montenegro": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "macedonia-fyrom-north-macedonia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "malawi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "malaysia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "malaysia-under-united-kingdom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "maldives": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "mali": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "mali-under-france": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "malta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "marcelo-caetano": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "marcelo-rebelo-de-sousa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "maria-de-lourdes-pintasilgo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "mario-soares": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "mauritania": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "mauritania-under-france": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "mauritius": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "meo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "military-dictatorship": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "mlstp": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "moldova": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "mongolia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "mota-pinto": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "mozambique": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "mpla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "mud": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "myanmar-burma": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "myanmar-burma-under-united-kingdom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "namibia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "national-republican-party": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "national-syndicalists": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "national-union": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "nationalist-republican-party": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "nato": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "new-macau-association": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "new-zealand": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "niger": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "niger-under-france": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "nigeria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "nigeria-under-united-kingdom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "nobre-da-costa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "northeastern-rhodesia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "northwestern-rhodesia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "norway": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "oecd": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "oeec": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "otelo-saraiva-de-carvalho": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "paigc": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "pakistan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "palestine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "palma-carlos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "panama": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "papua-new-guinea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "papua-new-guinea-under-australia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "partido-democratico": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "partido-nacionalista-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "partido-socialista": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "pcp": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "pedro-passos-coelho": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "people-s-democratic-union": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "people-s-monarchist-party": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "philippines": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "pinheiro-de-azevedo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "pinto-balsemao": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "poland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "portuguese-democratic-movement": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "portuguese-expeditionary-corps": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "portuguese-investment-bank": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "portuguese-workers-communist-party-re-organized-movement-of-the-party-of-the-proletariat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "psd": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "pvde-pide-dgs": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "qatar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "qatar-under-united-kingdom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "ramalho-eanes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "reconstitution-party": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "redes-energeticas-nacionais": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "republic-of-india": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "republican-liberal-party": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "revolutionary-socialist-party": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "ricardo-salgado": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "rwanda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "rwanda-urundi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "sa-carneiro": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "santana-lopes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "sao-tome-and-principe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "saudi-arabia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "schengen-area": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "sekou-toure": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "semapa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "senegal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "sierra-leone": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "singapore": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "singapore-under-united-kingdom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "slovakia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "slovenia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "solomon-islands": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "somalia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "south-africa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "southern-sakhalin-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "southern-zone-of-spanish-morocco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "spanish-morocco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "spanish-sahara": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "sri-lanka-ceylon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "sudan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "surinam": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "swaziland-eswatini": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "syria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "syria-under-france": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "taiwan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "tajikistan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "tanzania-tanganyika": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "third-portuguese-republic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "wikidata"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "tibet": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "togo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "togo-under-france": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "trinidad-and-tobago": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "tunisia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "turkmenistan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "uganda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "ukraine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "uniao-nacional": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "unita": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "united-arab-emirates": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "united-nations": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "university-of-porto": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "uzbekistan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "vasco-goncalves": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "vietnam-democratic-republic-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "vietnam-republic-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "west-bank": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "west-irian-dutch-new-guinea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "yemen-arab-republic-of-yemen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "yemen-people-s-republic-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "yugoslavia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "zambia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "zambia-under-united-kingdom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "zanzibar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "zimbabwe-rhodesia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1999
+}

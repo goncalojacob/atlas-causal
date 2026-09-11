@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "1908-portuguese-legislative-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q7232747",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1908 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1908"
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1908 Portuguese legislative election\", revision 1277160529"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1908\", revision 66807862"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q7232747"
+    }
+  ],
+  "title": "1908 Portuguese legislative election",
+  "summary": "Portugal elected the 157 deputies of the Chamber on 5 April 1908, nine weeks after the regicide and the fall of João Franco’s government, in the first ballot of what contemporaries called the acalmação — the attempt to put the constitutional forms back after a year of rule by decree. By then both parties of the rotation had split, and the result was the most divided Chamber in decades: the Regenerators returned largest with 62 seats of 157 and nothing like a majority, and the republicans returned a small group of their own. No stable government could be formed from it, and the monarchy spent its last two and a half years in ministries that lasted months each. It is in the atlas for that deadlock rather than for the result.",
+  "when": {
+    "start": 1908,
+    "end": 1908,
+    "date": "1908-04-05"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "regenerator-party",
+      "role": "party",
+      "note": "largest party, 62 seats"
+    },
+    {
+      "actor": "manuel-ii",
+      "role": "head-of-state",
+      "note": "king in whose name it was called"
+    },
+    {
+      "actor": "joao-franco",
+      "role": "head-of-government",
+      "note": "outgoing head of government"
+    }
+  ]
+}

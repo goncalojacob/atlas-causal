@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "philippines-under-united-states-of-america-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 630"
+    }
+  ],
+  "actor": "philippines-under-united-states-of-america",
+  "presenceType": "state",
+  "dependencyOf": "spain",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1886,
+    "end": 1898,
+    "date": "1886-01-01",
+    "endDate": "1898-12-10"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "630"
+  },
+  "capital": {
+    "lon": 120.982201,
+    "lat": 14.60417,
+    "precision": "city",
+    "label": "Manila"
+  },
+  "confidence": "consensus"
+}

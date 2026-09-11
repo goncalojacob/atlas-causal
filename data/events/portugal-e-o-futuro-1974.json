@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "portugal-e-o-futuro-1974",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    }
+  ],
+  "title": "Publication of Portugal e o Futuro",
+  "summary": "General António de Spínola's Portugal e o Futuro was published on 22 February 1974 and argued that the colonial war could not be won by military means and that the answer was a federal political solution. Coming from the man who had commanded in Guinea and was then deputy chief of the general staff, and passing the censorship, the book made public what officers had been saying privately. Caetano later wrote that reading it convinced him a coup was coming; Spínola and the chief of staff Costa Gomes were dismissed in March after refusing to appear at a ceremony of loyalty to the government. The Armed Forces Movement, which had formed for reasons of its own, acquired in Spínola a figure the public knew. It is in the atlas as the point where the officers' argument becomes a public one, two months before the coup.",
+  "when": {
+    "start": 1974,
+    "end": 1974,
+    "date": "1974-02-22",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "antonio-de-spinola",
+      "role": "author"
+    },
+    {
+      "actor": "marcelo-caetano",
+      "role": "target"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "target"
+    }
+  ]
+}

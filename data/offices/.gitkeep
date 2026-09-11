@@ -1,0 +1,3 @@
+The offices, one file per post. Empty until M31 writes the tenures that go
+with them; the directory itself is committed because src/kinds.js names it
+and tools/lib/read.mjs reads it.

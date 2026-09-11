@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "eleicoes-legislativas-regionais-na-madeira-em-1984",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the Madeiran regional election of 14 October 1984, won again by the Social Democrats under Alberto João Jardim. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the third Madeiran regional election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q10271599",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "pt": "Eleições legislativas regionais na Madeira em 1984"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10271599"
+    }
+  ],
+  "title": "eleições legislativas regionais na Madeira em 1984",
+  "summary": "Wikidata item Q10271599, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1984,
+    "end": 1984,
+    "date": "1984-10-14"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

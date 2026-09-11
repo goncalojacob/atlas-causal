@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "fixture-polity-four--fixture-polity-three--regime-of",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "from": "fixture-polity-four",
+  "to": "fixture-polity-three",
+  "type": "regime-of",
+  "when": {
+    "start": 1120,
+    "end": 1260
+  },
+  "note": "Synthetic: a regime of a synthetic state."
+}

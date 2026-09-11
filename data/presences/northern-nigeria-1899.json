@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "northern-nigeria-1899",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 683"
+    }
+  ],
+  "actor": "northern-nigeria",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1899,
+    "end": 1902,
+    "date": "1899-01-01",
+    "endDate": "1902-12-31"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "683"
+  },
+  "capital": {
+    "lon": 6.73994,
+    "lat": 7.80039,
+    "precision": "city",
+    "label": "Lokoja"
+  },
+  "confidence": "consensus"
+}

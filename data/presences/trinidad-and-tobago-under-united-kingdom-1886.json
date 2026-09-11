@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "trinidad-and-tobago-under-united-kingdom-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 22"
+    }
+  ],
+  "actor": "trinidad-and-tobago-under-united-kingdom",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1886,
+    "end": 1962,
+    "date": "1886-01-01",
+    "endDate": "1962-08-30"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "22"
+  },
+  "capital": {
+    "lon": -61.51667,
+    "lat": 10.65,
+    "precision": "city",
+    "label": "Port-of-Spain"
+  },
+  "confidence": "consensus"
+}

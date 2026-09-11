@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Narratives — Atlas causal</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="page-body">
+  <header class="bar">
+    <h1><a href="index.html">Atlas causal</a></h1>
+    <p class="tagline">Signed walks through the graph, arranged by the years they are about.</p>
+    <span id="fixtures-badge" class="fixtures-badge" hidden title="tests/fixtures/data: invented records for testing the interface">synthetic fixtures — not history</span>
+    <a class="bar-link" href="sources.html">sources</a>
+    <a class="bar-link" href="about.html">about</a>
+  </header>
+
+  <main class="page">
+    <section class="prose">
+      <h2>Narratives</h2>
+
+      <p>A narrative is one person's account of records that are already in the atlas: an ordered
+      walk from one event or link to the next, with a paragraph at each step saying why that step
+      follows. It is signed, and it changes nothing it walks — the events, the links, the dates and
+      the confidences are the records' own, and an account that disagrees with another account
+      does not alter a single one of them.</p>
+
+      <p>They are arranged here by the centuries they cross, so that two accounts of the same
+      years sit side by side and can be read against each other. That is what narratives are for:
+      where two disagree about what mattered, both stand, and the reader compares. An account that
+      runs across a century boundary is listed under both.</p>
+
+      <p>A title opens the account inside the atlas at its first step. From there the map, the
+      graph and the timeline follow the walk, and leaving it puts the atlas back where it was.</p>
+
+      <!-- The list between the two marks is written by tools/build-index.mjs, from the same
+      narrativesHtml() the script runs, and committed like data/index/. Do not edit it by hand:
+      `node tools/validate.mjs --index` compares it with a fresh build. -->
+      <div id="narratives" data-prerendered="1"><!--prerendered-->
+<p class="bib-summary">1 narrative,
+    arranged by the centuries they cross.
+    Each title opens the account at its first step.</p>
+    <section class="narrative-period">
+    <h2>The 20th century <span class="count">1</span></h2>
+    <ol class="narrative-cards"><li class="narrative-card">
+    <h3><a href="index.html?narrative=how-the-colonial-war-ended-the-regime&amp;step=0">How the colonial war ended the regime</a></h3>
+    <p class="narrative-meta">
+      <span class="narrator">Claude (assistant draft, unreviewed)</span>
+      · <span class="when">1961–1975</span>
+      · <span class="count">12 steps</span>
+    </p>
+    <p class="narrative-summary">A walk from the first shots in Angola in 1961 to the end of the revolutionary period in November 1975, following one claim: that the Estado Novo was brought down by the war it refused to end, and that the war then went on setting the terms of what replaced it. It is one account among the possible ones — the weight it puts on the army against the weight others put on the economy, on the succession to Salazar or on the opposition inside Portugal is exactly what a second narrative would argue with.</p>
+  </li></ol>
+  </section>
+<!--/prerendered--></div>
+
+      <p class="footnote">This list is generated from the records every time the page is opened,
+      and a narrative's period is the years of the records it actually walks rather than anything
+      typed beside it. The records are
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noreferrer">CC BY-SA 4.0</a>.</p>
+    </section>
+  </main>
+  <script type="module" src="src/narratives/main.js"></script>
+</body>
+</html>

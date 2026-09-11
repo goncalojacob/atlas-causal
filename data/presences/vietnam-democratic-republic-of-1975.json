@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "vietnam-democratic-republic-of-1975",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 608"
+    }
+  ],
+  "actor": "vietnam-democratic-republic-of",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1975,
+    "end": null,
+    "date": "1975-05-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "608"
+  },
+  "capital": {
+    "lon": 105.849999,
+    "lat": 21.03333,
+    "precision": "city",
+    "label": "Hanoi"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "lisbon-recognition-convention",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the Council of Europe and UNESCO convention of 11 April 1997 on the recognition of higher-education qualifications in the European region. Lisbon was the venue and Portugal was the host, and neither is a causal part of the thing. The atlas is about Portugal, and a treaty that happens to be signed here belongs to the history of what it settles; there is nothing in the atlas for it to attach to in either direction."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q1546127",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "Lisbon Recognition Convention",
+    "pt": "Convenção de Reconhecimento de Lisboa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1546127"
+    }
+  ],
+  "title": "Lisbon Recognition Convention",
+  "summary": "Wikidata item Q1546127, imported by tools/import/wikidata.mjs. The item's own description reads \"1997 Council of Europe treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1997,
+    "end": 1997,
+    "date": "1997-04-11"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": []
+}

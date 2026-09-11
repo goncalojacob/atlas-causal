@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "efta-accession-1960",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date",
+      "claim"
+    ],
+    "note": "The 4 January signature, the 3 May entry into force and the special annex for Portugal were written from memory, not read in the cited works. So was the reading of why the regime preferred the association to the Common Market."
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    }
+  ],
+  "title": "Portugal joins the European Free Trade Association",
+  "summary": "Portugal signed the Stockholm Convention on 4 January 1960 as one of the founding members of the European Free Trade Association, which came into force on 3 May. It was the first binding commitment the Estado Novo made to open an economy it had spent thirty years protecting, and it made it on easier terms than anyone else: a special annex let Portugal keep tariffs on industries it was still building and reduce them on a longer schedule than the other members. The association was also the alternative to the Common Market, which Portugal was in no position to enter — the economy was too far behind, and the Community would shortly make explicit that its members had to be democracies — whereas the association asked nothing at all about how a member was governed. Industrial output and exports grew through the decade that followed, and how much of that growth to credit to the association is one of the standing arguments about the last years of the regime. It is in the atlas as the first opening of the Portuguese economy to Europe, made by the government least likely to have wanted one.",
+  "when": {
+    "start": 1960,
+    "end": 1960,
+    "date": "1960-01-04",
+    "calendar": "gregorian"
+  },
+  "place": "stockholm",
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "efta",
+      "role": "founder"
+    },
+    {
+      "actor": "portugal",
+      "role": "founder",
+      "note": "founding member"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "government"
+    }
+  ]
+}

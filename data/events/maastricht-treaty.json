@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "maastricht-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q11146",
+  "sitelinks": {
+    "count": 77,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Maastricht Treaty",
+    "pt": "Tratado de Maastricht"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Maastricht Treaty\", revision 1360900516"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Tratado de Maastricht\", revision 71853123"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q11146"
+    }
+  ],
+  "title": "Maastricht Treaty",
+  "summary": "Signed at Maastricht on 7 February 1992 by the twelve members of the European Communities and in force from November 1993, the treaty created the European Union: a citizenship, a timetable and convergence criteria for a single currency, common foreign, security, justice and home affairs policies handled between governments rather than by the Commission, and more power for the Parliament and for majority voting in the Council. Portugal signed it six years after joining and spent the rest of the decade meeting the deficit and inflation numbers it set, which is the whole of Portuguese economic policy in the 1990s.",
+  "when": {
+    "start": 1992,
+    "end": 1992,
+    "date": "1992-02-07"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "portugal",
+      "role": "signatory"
+    }
+  ]
+}

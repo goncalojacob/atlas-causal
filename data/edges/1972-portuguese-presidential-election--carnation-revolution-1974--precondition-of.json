@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1972-portuguese-presidential-election--carnation-revolution-1974--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "from": "1972-portuguese-presidential-election",
+  "to": "carnation-revolution-1974",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Caetano had come in with a reputation for reform and spent five years discovering what he could not do, and the president was a substantial part of what he could not do: Tomás held the power to dismiss him and was understood on all sides to be the guarantor of the war being fought to the end. The election of July 1972 removed the one date on which that could have changed by ordinary means, putting his term beyond the reach of the regime's own calendar until 1979. The edge argues a closed door rather than an open one — the captains' movement of 1973 and 1974 grew out of a war nobody in office could end — and that is why it is `precondition-of`.",
+  "dispute": null
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "salazar-prime-minister-1932",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    },
+    {
+      "source": "rosas-2012-salazar-e-o-poder",
+      "locator": null
+    }
+  ],
+  "person": "salazar",
+  "office": "prime-minister-of-portugal",
+  "when": {
+    "start": 1932,
+    "end": 1968
+  },
+  "startedBy": null,
+  "note": "President of the Council from 1932, a year before the constitution that named the regime, until he was incapacitated in 1968."
+}

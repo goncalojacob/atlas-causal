@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "munich-agreement",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q154255",
+  "sitelinks": {
+    "count": 75,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Munich Agreement",
+    "pt": "Acordo de Munique"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Munich Agreement\", revision 1372429724"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Acordo de Munique\", revision 69311046"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q154255"
+    }
+  ],
+  "title": "Munich agreement",
+  "summary": "On 30 September 1938 Germany, Britain, France and Italy agreed at Munich that Czechoslovakia would cede the Sudetenland, where some three million German speakers lived, and Czechoslovakia — which was not at the table, and which had a French alliance and a Soviet undertaking — was told to accept. Chamberlain came home saying it was peace for our time; the rest of the Czech lands were occupied in March 1939. The word Munich has meant the purchase of peace by the sacrifice of a third party ever since, and the atlas holds it as the moment appeasement was tested to destruction.",
+  "when": {
+    "start": 1938,
+    "end": 1938,
+    "date": "1938-09-30"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "germany-prussia",
+      "role": "signatory"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "signatory"
+    },
+    {
+      "actor": "france",
+      "role": "signatory"
+    },
+    {
+      "actor": "italy-sardinia",
+      "role": "signatory"
+    },
+    {
+      "actor": "czechoslovakia",
+      "role": "target"
+    }
+  ]
+}

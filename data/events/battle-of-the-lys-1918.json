@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-lys-1918",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q1088364",
+  "wikipedia": {
+    "en": "Battle of the Lys (1918)",
+    "pt": "Batalha de La Lys (1918)"
+  },
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "title": "Battle of the Lys",
+  "summary": "The German offensive of 9 April 1918 fell on the Lys sector held by the 2nd Division of the Portuguese Expeditionary Corps, which was below strength, long overdue for relief and due to be withdrawn within days. The division was broken in a morning; Portuguese losses that day are usually given as some seven thousand men killed, wounded or taken prisoner, most of them prisoners. Accounts differ over how much of the collapse belongs to the state of the division and how much to the weight of the attack, but not over the political effect. The defeat became the central grievance of the officers who had been sent to Flanders against the war party in Lisbon. It is in the atlas as the point where the First Republic's war policy turns into the army's quarrel with the republic itself.",
+  "when": {
+    "start": 1918,
+    "end": 1918,
+    "date": "1918-04-09",
+    "calendar": "gregorian"
+  },
+  "place": "flanders",
+  "region": null,
+  "actors": [
+    {
+      "actor": "portuguese-expeditionary-corps",
+      "role": "opposition",
+      "note": "defeated"
+    },
+    {
+      "actor": "gomes-da-costa",
+      "role": "commander"
+    },
+    {
+      "actor": "first-portuguese-republic",
+      "role": "belligerent"
+    }
+  ]
+}

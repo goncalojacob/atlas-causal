@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "ar-2024-fiftieth-anniversary",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "type": "primary",
+  "creators": [
+    "Assembleia da República"
+  ],
+  "title": "Solemn session for the fiftieth anniversary of 25 April",
+  "year": 2024,
+  "publisher": null,
+  "isbn": null,
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": "Assembleia da República",
+  "reference": "Diário da Assembleia da República, solemn session of 25 April 2024"
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "united-kingdom-1921",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 74"
+    }
+  ],
+  "actor": "united-kingdom",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1921,
+    "end": null,
+    "date": "1921-12-06"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "74"
+  },
+  "capital": {
+    "lon": -0.116667,
+    "lat": 51.5,
+    "precision": "city",
+    "label": "London"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ghana-1957",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 282"
+    }
+  ],
+  "actor": "ghana",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1957,
+    "end": null,
+    "date": "1957-03-06"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "282"
+  },
+  "capital": {
+    "lon": -0.216667,
+    "lat": 5.55,
+    "precision": "city",
+    "label": "Accra"
+  },
+  "confidence": "consensus"
+}

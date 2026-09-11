@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "paris-peace-conference--treaty-of-trianon--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Paris Peace Conference (1919–1920)\", revision 1371739974"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Trianon\", revision 1372701139"
+    }
+  ],
+  "from": "paris-peace-conference",
+  "to": "treaty-of-trianon",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Hungarian frontiers were drawn in Paris and they were not drawn on the principle the conference had announced. Self-determination governed where it suited the Allies' new clients, and strategic and economic claims — a railway, a defensible line, a river — governed where it did not, which is how compact Hungarian-speaking districts ended up inside Romania and Czechoslovakia. Hungary, like Germany, was excluded from the negotiation and handed the text, so the settlement arrived with no domestic consent behind it. The grievance the treaty is remembered for is a product of that method.",
+  "dispute": null
+}

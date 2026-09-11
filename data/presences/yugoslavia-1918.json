@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "yugoslavia-1918",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 135"
+    }
+  ],
+  "actor": "yugoslavia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1918,
+    "end": 1919,
+    "date": "1918-12-01",
+    "endDate": "1919-09-09"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "135"
+  },
+  "capital": {
+    "lon": 20.46806,
+    "lat": 44.81861,
+    "precision": "city",
+    "label": "Belgrade"
+  },
+  "confidence": "consensus"
+}

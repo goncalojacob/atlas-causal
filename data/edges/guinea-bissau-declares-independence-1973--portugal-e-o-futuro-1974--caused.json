@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "guinea-bissau-declares-independence-1973--portugal-e-o-futuro-1974--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "from": "guinea-bissau-declares-independence-1973",
+  "to": "portugal-e-o-futuro-1974",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Spínola had governed and commanded in Guinea from 1968 to 1973 and had concluded that the war could not be won; the PAIGC declaration and its international recognition confirmed the argument his book made public five months later.",
+  "dispute": null
+}

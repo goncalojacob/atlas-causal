@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cabral-assassinated-1973",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Assassination of Amílcar Cabral",
+  "summary": "Amílcar Cabral was shot dead outside his house in Conakry on the night of 20 January 1973 by members of the PAIGC, the movement he had founded and led. The killing came with an attempt to seize the movement's leadership; the plotters were caught within days by Guinean and PAIGC forces and executed after trial. Whether the Portuguese political police organised the plot, encouraged it, or merely knew of it has been argued since the day it happened, and the surviving Portuguese record does not settle it. The PAIGC held together under Aristides Pereira, declared independence in September 1973 and was recognised by most of the world within a year, so the assassination did not have the effect intended. It is in the atlas both as the end of the most effective of the liberation leaders and as a link whose causes historians dispute.",
+  "when": {
+    "start": 1973,
+    "end": 1973,
+    "date": "1973-01-20",
+    "calendar": "gregorian"
+  },
+  "place": "conakry",
+  "region": null,
+  "actors": [
+    {
+      "actor": "amilcar-cabral",
+      "role": "victim"
+    },
+    {
+      "actor": "paigc",
+      "role": "movement"
+    },
+    {
+      "actor": "pvde-pide-dgs",
+      "role": "perpetrator",
+      "note": "alleged accomplice"
+    }
+  ]
+}

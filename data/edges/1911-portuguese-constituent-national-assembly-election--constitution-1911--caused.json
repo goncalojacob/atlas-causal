@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1911-portuguese-constituent-national-assembly-election--constitution-1911--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "1911-portuguese-constituent-national-assembly-election",
+  "to": "constitution-1911",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The Assembly elected on 28 May met in June as a constituent body and did the one thing it had been elected to do: it wrote the constitution and promulgated it on 21 August. The near-unanimity of the election is visible in the text — a parliamentary republic with a weak presidency, written by a party that had no opposition in the room and did not expect to acquire one.",
+  "dispute": null
+}

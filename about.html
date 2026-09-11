@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Atlas causal</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="page-body">
+  <header class="bar">
+    <h1><a href="index.html">Atlas causal</a></h1>
+    <p class="tagline">What this is, how to read it, and under what licence.</p>
+    <a class="bar-link" href="narratives.html">narratives</a>
+    <a class="bar-link" href="sources.html">sources</a>
+  </header>
+
+  <main class="page">
+    <section class="prose">
+      <h2>What this is</h2>
+
+      <p>A map and a timeline over the same thing: a graph. Events are nodes. The links between
+      them are edges, each one carrying a type, a confidence level and a written argument for why
+      the link is there. You pick an event, follow its consequences forward, and — this is the
+      part the format exists for — see which <em>other</em> branches fed the endpoint you arrived
+      at, so that the path you happened to walk does not look like the explanation.</p>
+
+      <p>Time is a <strong>window</strong>, not a moment. The shaded band on the timeline is the
+      window; drag either end to widen or narrow it, drag the middle to slide it, or double-click
+      a year to snap it to that decade. The arrow keys move whichever end has the focus. The map
+      shows the events whose own interval overlaps the window — an event that ran for ten years
+      is in every window it touches — and the territories of the window's last year. The
+      <kbd>/</kbd> key jumps to the search box, which finds events by title and actors by any of
+      their names, and places by any of theirs.</p>
+
+      <p>An event happens at a <strong>place</strong>, and a place is a record of its own rather
+      than a pair of coordinates typed onto each event: thirty-seven of the records in the
+      current test dataset happened in Lisbon, and Lisbon is written once. Clicking a place name
+      — on an event, or at the head of a stack of marks on the map — opens what happened there,
+      in order, with the events outside the window faded rather than hidden, and the actors who
+      turn up there most.</p>
+
+      <p>Actors also stand in <strong>relations</strong> to one another, which is the one thing
+      an edge cannot say: an edge runs between events. A relation is dated and typed — a regime
+      <em>of</em> a state, a body <em>part of</em> another, a person or a state that is a
+      <em>member of</em> one, a state <em>succeeded</em> by another, two actors <em>allied</em> —
+      and it carries its sources like any other argument. Relations have no page of their own:
+      they are listed on the card of the actor at either end, so Portugal's card names its four
+      regimes and the Estado Novo's card says which state it was a regime of and what belonged
+      to it.</p>
+
+      <p>Who held a post is not a relation but an <strong>office</strong> and the
+      <strong>tenures</strong> at it, because one person may hold one post more than once. An
+      office has a card of its own and is found in the search box: it names the actor the post
+      belongs to, what kind of post it is, and every turn at it in order, each row opening the
+      person who held it. On the card of an actor that owns posts, each office is also a
+      <strong>strip</strong> of its holders over that actor's own years, so a century of prime
+      ministers reads as a row of bars; clicking one opens the person. An office asserts that
+      the post existed and nothing else, so it cites nothing and the card says so; the tenures
+      carry the sources.</p>
+
+      <p>A <strong>narrative</strong> is the other way of reading the same graph: one person's
+      account of it, walked step by step. Each step points at an event or at a link and carries the
+      narrator's own paragraph on why that step follows; the map, the graph and the timeline follow
+      the step, and the whole walk is marked so you can see where it is going. A narrative changes
+      nothing it walks — it is prose beside the graph, signed and cited like everything else — and
+      where two accounts of the same period disagree, both stand and you compare them. The reader
+      is <a href="narratives.html">the list of narratives</a>, in the header beside the
+      bibliography, where they are arranged by the centuries they cross so that two accounts of
+      the same years sit side by side; every event also says which narratives pass through it.</p>
+
+      <p>The first slice is Portuguese expansion, 1415 to 1580, chosen because its consequences
+      cross continents, which is what the format is for. If the model survives that period it
+      generalises; if it does not, better to find out on a small map.</p>
+
+      <p>The hard part was never the map. No dataset states that one thing caused another across
+      four centuries and two oceans: that has to be written, by a person, with sources. So this is
+      editorial work with a map attached rather than a data visualisation, and every claim in it
+      is signed and cited. Nothing here is generated by a language model — not the summaries, not
+      the arguments, not the disputes. A model will produce a fluent causal story about any pair
+      of events, including unrelated ones, and in a history site that is not a small flaw but
+      total failure.</p>
+
+      <p>Every claim rests on a cited source, and a source is a record like any other: written
+      once, cited by reference, and readable from either end. Clicking the title in any citation
+      opens that work and everything in the atlas that rests on it — with the page each record
+      names, and with a work cited in <em>dissent</em> from a link kept apart from the works cited
+      for it. The whole list is the <a href="sources.html">bibliography</a>, generated from the
+      records rather than maintained by hand.</p>
+
+      <h2>How to read it</h2>
+
+      <h3>How to read a card</h3>
+      <p>Clicking a mark on the map, a bar on the timeline or a node in the graph opens a
+      <em>card</em> in the panel on the right. Every card is built the same way, whether it is
+      about an event, an actor or a place.</p>
+      <p>At the top is the <strong>head</strong>: the title, one line saying when and where it
+      happened and which lane it is drawn in, and — on an event — the actors as small chips.
+      Hovering a chip, or reaching it with the keyboard, shows what that actor did in this event;
+      clicking it opens the actor. Under the head are the quiet ways out: the full entry, somebody
+      else’s account on Wikipedia, and the way to disagree with the record.</p>
+      <p>Then the <strong>summary</strong> — the atlas’s own paragraph, and nothing else.</p>
+      <p>Everything else is behind a <strong>header you can open</strong>, with a count beside it:
+      <em>Consequences</em>, <em>Causes</em>, <em>Other branches</em>, <em>Sources</em>,
+      <em>Part of</em>, and on an actor <em>Relations</em> and <em>Territory</em>. Nothing has
+      been taken away — the count tells you what is behind each header before you open it, and
+      one click gets you there. Only one is open at a time, and the atlas remembers which one you
+      last chose. A header on a section that holds a disputed link says so in the count
+      (“Consequences (3, 1 disputed)”), so a closed section never hides an argument.</p>
+      <p>Which one opens by itself follows what you just did: walking a chain opens
+      <em>Consequences</em>, arriving from a source’s card opens <em>Sources</em>, and otherwise
+      it is whichever you had open last.</p>
+      <p>While you are following a chain, the path you have walked is a <strong>breadcrumb</strong>
+      above the card. Each earlier step is a link back to itself, and going back to the middle of a
+      path drops the steps after it: the path is the argument you are following, and the steps
+      beyond the one you are re-reading were not taken.</p>
+      <p>Some of what the atlas calls events are <strong>conditions</strong> rather than moments —
+      “Angolan economy dependent on oil, 1975–”, a process with no single day and often no end —
+      because a question like <em>why is Angola poor?</em> has to land somewhere, and it does not
+      land on a battle. They are written like every other record, with the same sources and the
+      same links. And where a path was put together by the atlas rather than clicked out by you,
+      the card <strong>says so</strong> in a line above the record: every step of it is still a
+      link somebody wrote, with its confidence and its dispute marks unchanged.</p>
+      <p>Opening a record — an event, an actor, a place, a source, a narrative — adds an entry to
+      your browser’s history, so <strong>Back</strong> returns to what you were reading. Moving the
+      view does not: panning, zooming, dragging the time band or changing the lanes replaces the
+      entry rather than adding one, or Back would walk you frame by frame through a drag. The card
+      names its own Back link, so you can see where it goes before you press it.</p>
+
+      <h3>The five edge types</h3>
+      <p>An edge is one of <code>caused</code>, <code>enabled</code>, <code>reacted-to</code>,
+      <code>precondition-of</code> or <code>inspired</code>. There is no generic type and there
+      never will be: collapsing these into plain causation is how a map of history turns into
+      cheap determinism. The type is doing real work, and choosing the right one of the five is
+      part of what a reviewer checks.</p>
+
+      <h3>The three confidence levels</h3>
+      <p>Confidence is defined by evidence, so that it can be checked rather than felt.</p>
+      <dl class="levels">
+        <dt><span class="badge consensus">consensus</span></dt>
+        <dd>The link is accepted. It requires at least two cited sources by different authors —
+        a necessary condition, not a sufficient one: a reviewer still judges whether they really
+        agree.</dd>
+        <dt><span class="badge probable">probable</span></dt>
+        <dd>Supported by the sources cited, with no known dissent. Most edges live here, and that
+        is honest: it says the argument rests on the sources given and nobody has been found
+        arguing the other way.</dd>
+        <dt><span class="badge disputed">disputed</span></dt>
+        <dd>Qualified historians disagree about the link itself — whether it exists, what type it
+        is, or how much it carries.</dd>
+      </dl>
+
+      <h3>What did this lead to by a given year?</h3>
+      <p>The consequences list on an event is one step out: what this directly led to. Under it,
+      <strong>what did this lead to by</strong> a year is the other question — the whole downstream,
+      however far away, cut at a year you choose. The list is ordered by how many steps away each
+      event is and then by when it happened, and it says the type and confidence of the first step
+      and marks a path that runs through a disputed link, so a long chain of weak links is never
+      mistaken for a short chain of strong ones.</p>
+      <p>The year starts at the end of the window and can be set to anything. Choosing one of the
+      answers <strong>walks the shortest path to it</strong>: it becomes the path in red, and you
+      can then ask what else fed the event you arrived at — which is the convergence query again,
+      from the other direction. While a year of your own is set, everything reachable is lit on the
+      map, the graph and the timeline, fading with distance.</p>
+
+      <h3>A disputed edge</h3>
+      <p>A disputed edge stays in the atlas. Removing it would be picking a side, and being able
+      to see the disagreement is more interesting than a clean answer. It is drawn as a dashed
+      line on the map, marked in the panel, and it is never walked through silently: following a
+      chain across one tells you that you have, and shows you who disagrees and what they cite.
+      The dissenting citations are kept apart from the supporting ones, so a book that argues
+      against a link is never displayed as evidence for it.</p>
+
+      <p>Records are never deleted. A record that turns out to be wrong or duplicated becomes a
+      tombstone that still resolves the old link, pointing at whatever supersedes it: a URL
+      someone shared keeps working.</p>
+
+      <h3>An event inside another event</h3>
+      <p>An event can be <strong>part of</strong> a larger one — a battle inside a war, a decree
+      inside a revolution. The card of the smaller says what it is part of, the card of the
+      larger lists its parts in order, and either link opens the other. This is a statement about
+      what a thing was <em>inside</em>, never about what caused what: causation is an edge, with
+      an argument and sources behind it, and being part of something is neither.</p>
+      <p>An event with parts is drawn with <strong>a second, thinner outline around its
+      mark</strong> — a ring — on the map, the timeline and the graph alike, at every zoom and
+      under every grouping: a ring says there is more inside, so open it to see the parts.
+      <strong>Focus on this</strong> on a parent's card then keeps that event and everything
+      inside it.</p>
+      <p>Two things go further where there is room for them. The timeline draws a parent whose
+      parts share a lane as a <strong>thin rule along the top of that lane</strong>, spanning
+      them. The graph draws it as a level of detail: <strong>zoomed out, an event's parts are
+      drawn inside it</strong> as one mark carrying the count of what is folded in, and the links
+      that ran to a part run to the parent instead; zooming in takes them apart again. Nothing
+      you are holding is ever folded away — the open event, the path you have walked, a lens, a
+      narrative's steps — and no mark moves when the rest fold, so the picture does not rearrange
+      itself under you.</p>
+
+      <h3>A large event is the ground, not a dot</h3>
+      <p>Some events are the wrong shape for a mark: a world war, a pandemic, a long regional
+      crisis. Where a contributor has written how wide an event's reach was, or where its parts
+      fall in more than one lane, the atlas draws it as <strong>ground rather than as a
+      point</strong> — a pale band the height of the drawing under the timeline's bars, named on
+      the axis, and on the map a wash over the lane it belongs to. An event that spans the whole
+      map gets no wash at all, because a tint over everything would film over every coastline and
+      territory; it is named in the map's corner instead. The bar and the mark stay where they
+      were, so a large event can still be opened and still reached with the keyboard, and its
+      card says which of the three it is and why.</p>
+      <p>Reach is a claim about the event and not a way of making it look important: nothing
+      about it changes how big the mark is. That is still the number of links and actors the
+      record actually holds.</p>
+      <p>Beside it, in the map's bottom-left corner, is the count of the events in this window
+      that have <strong>no place at all</strong> and are therefore on the timeline only — the
+      picture saying what it is not drawing, which is not the same as the picture being wrong.</p>
+
+      <h3>The lens: one record's events, and nothing else</h3>
+      <p>The card of an <strong>actor</strong>, a <strong>place</strong> or a <strong>source</strong>
+      offers <strong>show only these</strong>. It puts a lens on the whole atlas: the map, the graph
+      and the timeline then hold the events that record is involved in and nothing else, with the
+      links between two of them still drawn. This is not the same as selecting: selecting emphasises
+      and leaves everything else in view, and the lens <em>removes</em>. The header says which lens
+      is on and is the way out of it, and the address bar carries it — <code>?focus=actor:salazar</code>
+      — so a lens can be sent in a link. The window of time, the path you have walked and the
+      question about a year all keep working inside it. Search is not narrowed: a record the lens
+      does not keep is still found, listed, and marked as outside.</p>
+
+      <h3>Why the map is centred where it is</h3>
+      <p>The map opens on the whole world with <strong>150° east in the middle</strong>, so Asia and
+      the Pacific are at the centre and the Atlantic is split between the two edges. That is a
+      choice, and it is the one this atlas is for: it is a map of human history and not a map of
+      Europe, and a projection has to put something at its edge. What it puts there is
+      <strong>30° west</strong>, the meridian half a world from the centre, which the map is cut
+      along — a shape lying across it would be drawn as a smear from one side of the picture to the
+      other, so every outline is cut there when it is imported.</p>
+      <p>Which meridian was measured rather than chosen. Of the candidates from 140° to 170° east,
+      30° west is the only line that runs through no landmass at all but Greenland's and
+      Antarctica's, which no choice avoids: it passes down the middle of the Atlantic, between
+      Flores and the rest of the Azores, four and a half degrees east of the corner of Brazil and
+      twelve west of Africa. The table it was picked from is in <code>STATUS.md</code>, and the
+      projection is one constant in one file — the map has no tile server, no map library and no
+      API key behind it, only our own coastlines drawn from a public-domain file in a projection
+      written here.</p>
+
+      <h3>The map and the timeline, looking at the same place</h3>
+      <p>Pan or zoom the map and the <strong>timeline follows it</strong>: the lanes then hold only
+      the events whose place is on screen, and a small line above them says how many of how many are
+      in view. The event you have open and the path you have walked are never taken away by it —
+      a chain that runs off the edge of the map is still a chain — and <strong>show the world</strong>
+      puts every event back without moving the map. The visible area is in the address bar
+      (<code>?bbox=-10,36,-6,43</code>), so a view of one coast can be sent in a link and opens on
+      that coast. It is always in real longitudes, and it may run east past the 180th meridian and
+      out the other side — <code>?bbox=170,-20,-170,0</code> is Fiji, and with the map centred on
+      Asia that is an ordinary view near the middle of the picture rather than a trick. The graph
+      view has no viewport of its own and is never narrowed this way; it says so while the map is
+      holding one.</p>
+      <p>The <strong>wheel over the timeline</strong> narrows or widens the window of time around the
+      year under the pointer, and dragging its empty ground slides the window; the lanes themselves
+      never move, because they stay on the whole span of the data. A <strong>click on nothing</strong>
+      — the sea, the empty ground of a lane — puts down whatever you were holding: the open event and
+      the walked path are cleared. Dragging never does that, and a click on a territory still opens
+      its actor. The <strong>edges between the map, the timeline and the panel can be dragged</strong>
+      to resize them; a double-click on an edge puts it back. Those sizes are yours and stay in your
+      browser: they are not in the link, because a link is what you were looking at and not how you
+      had arranged your window.</p>
+
+      <h3>What the lanes are</h3>
+      <p>The timeline's lanes and the graph's bands are one thing — a <strong>grouping</strong> of
+      events — and it is a choice, next to Map | Graph in the header. The default is
+      <strong>no grouping</strong>: the timeline packs the bars into as many unlabelled rows as it
+      takes for none of them to overlap, and the graph drops its bands. The other three are one lane
+      per <strong>actor</strong>, per <strong>place</strong> and per <strong>region</strong>. For
+      actors and places the lanes are the six with the most events in the window, plus
+      <strong>Other</strong>, and the picker lets you choose your own and put them in your own order;
+      the choice is in the link (<code>?group=actor&amp;lanes=salazar,paigc</code>).</p>
+      <p>An event is drawn in <strong>exactly one lane</strong>, never repeated across them: an event
+      with four actors is one event, and drawing it four times would turn a count of events into a
+      count of participations without saying so. Which lane is decided mechanically — the heaviest of
+      its actors among the lanes on screen, that is, the one with the most events in the window — and
+      the event's card always says which lane it is in, by what rule, and what else it involves. A
+      rule you cannot see is a rule you cannot check.</p>
+
+      <h3>The graph view</h3>
+      <p>The <strong>Graph</strong> button in the header replaces the map with a third drawing of
+      the same records: every event a node, every link a line, so the whole web can be seen at
+      once instead of one chain at a time. It is the same atlas — the same panel, the same
+      search, the same window of time, the same link in the address bar — drawn another way.</p>
+      <p><strong>Left to right is the year</strong>, on the same scale the timeline keeps, so the
+      arrow of time is visible and nothing is ever placed by simulated physics. Down the page,
+      one faint band per lane — whatever the grouping says, and no bands at all without one —
+      and inside a band the events of a year are spread apart and
+      ordered so that the lines between them come out short and cross each other as little as
+      possible. The window of time is the shaded band across the picture: what falls outside it
+      fades rather than leaving, so the web is always all there. Drag to move, scroll to zoom,
+      double-click to go back; zoomed in, every node on screen is named.</p>
+      <p><strong>Zoomed out, what is too close together to tell apart is drawn as one mark</strong>
+      with a <code>+3</code> beside it saying how many more are underneath, and the links between
+      two such marks become one line, drawn heavier for how many it carries, in the commonest of
+      their types and dashed if any single one of them is disputed. Nothing is dropped: the counts
+      add the picture back up to every event. Zooming in splits the marks; clicking one lists what
+      is under it in the panel and goes to the zoom where it comes apart. Events of different
+      bands never merge, and neither does anything you are working with — the open event, the path
+      you have walked, the branches drawn at it, a lens, a horizon, a narrative's steps and the
+      events of an open actor always keep a mark of their own.</p>
+      <p>Clicking a node opens it in the panel. Clicking a node that the open one leads to
+      <strong>walks the chain</strong> — the same step as the panel's follow button — and the
+      path you have walked is drawn in red in the graph, on the map and on the timeline alike.
+      When an event is open, the other branches that fed it, the ones you did not walk, are
+      drawn filled in: that is the convergence query, as a picture.</p>
+
+      <h3>The key to the lines</h3>
+      <p>The five types are told apart by the pattern and weight of the line, not by colour: the
+      atlas has one accent and it belongs to the path being followed. A disputed link is dashed
+      whatever its type, as it is everywhere else in the atlas, and its type then reads in the
+      weight of the line alone.</p>
+      <dl class="edge-key">
+        <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-caused" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-caused" points="60,6 50,3 50,9"/></svg></dt>
+        <dd><code>caused</code></dd>
+        <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-enabled" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-enabled" points="60,6 50,3 50,9"/></svg></dt>
+        <dd><code>enabled</code></dd>
+        <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-reacted-to" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-reacted-to" points="60,6 50,3 50,9"/></svg></dt>
+        <dd><code>reacted-to</code></dd>
+        <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-precondition-of" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-precondition-of" points="60,6 50,3 50,9"/></svg></dt>
+        <dd><code>precondition-of</code></dd>
+        <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-inspired" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-inspired" points="60,6 50,3 50,9"/></svg></dt>
+        <dd><code>inspired</code></dd>
+        <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-caused disputed" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-caused" points="60,6 50,3 50,9"/></svg></dt>
+        <dd>any type, <span class="badge disputed">disputed</span></dd>
+      </dl>
+
+      <h3>Territories, and where they stop</h3>
+      <p>The <strong>territories</strong> layer draws who held which ground in one year: the
+      last year of the window, which the band on the timeline says out loud. It covers
+      <strong>1886 to 2019 and nothing else</strong>: before 1886 the layer is simply empty, and
+      that is not a gap to be filled in with guesswork; past 2019 it holds the last year the
+      source covers and says so. The switch in the header turns it off. The
+      <strong>coastlines have no switch</strong>: they are the ground everything else is read
+      against, and a map without them is a scatter of dots.</p>
+      <p>The outlines come from
+      <a href="https://icr.ethz.ch/data/cshapes/" rel="noreferrer">CShapes 2.0</a> — Guy Schvitz,
+      Luc Girardin, Seraina Rüegger, Nils B. Weidmann, Lars-Erik Cederman and Kristian Skrede
+      Gleditsch, <em>Mapping the International System, 1886-2019</em>, <cite>Journal of Conflict
+      Resolution</cite> 66(1), 2022,
+      <a href="https://doi.org/10.1177/00220027211013563" rel="noreferrer">doi:10.1177/00220027211013563</a>
+      — used under
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noreferrer">CC BY-NC-SA 4.0</a>,
+      which is <strong>not</strong> the licence of the rest of the data. Coordinates have been
+      simplified for size; every date, status, sovereign and capital is the dataset's own.</p>
+      <p>What the styles mean: a <strong>state holding its own ground</strong> is a solid wash
+      with a thin border in the same colour darkened; a <strong>dependency</strong> — colony,
+      protectorate, mandate or occupied territory — is the <em>lighter tint of whoever held
+      it</em>, bordered dotted, so an empire and its possessions read as one family and hovering
+      names both; a <strong>dashed border</strong> means the presence itself is disputed, the
+      same as a dashed link.</p>
+      <p><strong>A border is drawn inland only.</strong> CShapes draws its own coastline and it is
+      not the one this map draws, so a territory outlined all the way round put a second shore
+      beside the first, a few tenths of a degree out and plainly visible zoomed in. The imported
+      file keeps every boundary <em>once</em>, as a line two territories share, and each period's
+      file now carries that list beside the outlines: what is stroked is the boundaries a
+      territory has with somebody, and the shore is the Natural Earth coastline underneath and
+      nothing else. So an island state — Japan, Iceland, Cuba — is a wash with no edge of its own,
+      and Switzerland is drawn all the way round because it is inland all the way round. One
+      consequence is honest and worth saying: where the only thing on the other side of a border
+      is a state Gleditsch and Ward do not list, the source does not say who is there and the line
+      is not drawn — Switzerland's boundary with Liechtenstein is the case.</p>
+
+      <h3>What the colours mean, and what they do not</h3>
+      <p>There are <strong>eight</strong> of them, and <strong>there is no legend</strong>. A hue
+      here says one thing only: <em>this is not the same territory as the one beside it</em>. It
+      does not say which polity, what kind of state, whose empire, or how large — two hundred
+      polities share eight colours, so a legend would be a lie four times over. Who was where is
+      answered by hovering a territory and by clicking it, which opens the actor's card and fills
+      in everything it held.</p>
+      <p>Which actor gets which hue is not somebody's taste and is not stored on the records. It
+      is computed from the borders themselves: <code>tools/build-palette.mjs</code> works out who
+      touches whom in every period the outlines cover and colours that graph so that no two
+      neighbours are ever alike, writing the result to <code>data/geo/palette.json</code>. The hue
+      belongs to the <strong>actor</strong>, so a territory keeps its colour as the years pass —
+      Angola is the same colour in 1975 as in 2019, and before 1975 it is Portugal's colour
+      lightened, because that is what it was. Where eight is not enough — an empire that borders a
+      quarter of the world cannot be told from every one of its neighbours — the file records who
+      it had to share with rather than hiding it.</p>
+      <p>The colours sit <em>under</em> the two that matter more. The actor you have selected is
+      filled in <strong>cobalt</strong> over every hue, and the path you have
+      walked is drawn in madder over that. Territory colour is the ground; those two are the
+      argument.</p>
+      <p>A border on this map is still a modern idea imposed on the past. It is drawn here only
+      for a period that had such borders and a source that dates every change of them; earlier
+      periods will need diffuse zones rather than outlines, which is what the
+      <code>presenceType</code> field is for. The timeline's lanes are continents, derived from
+      the coordinates of the place each event happened at rather than stored on the record, so
+      that redrawing the lanes never means rewriting the records.</p>
+
+      <h3>The full entry</h3>
+      <p>What a card shows is a summary: a sentence or two, enough to know what the record is
+      while you are following links through the graph. Under it, on every event, actor and place,
+      is <em>Read the full entry</em> — a page of its own, at
+      <code>entry.html?id=…</code>, with the record's dates and place, the actors in it, the
+      relations it stands in, the narratives that walk through it, everything it rests on, and an
+      extensive text about it.</p>
+      <p>That text is written by a person, from sources they cite, and it is not a redirect to
+      somebody else's encyclopedia. Most records have no entry yet and their pages say so and
+      ask for one: the atlas is a graph first, and the long form arrives record by record as
+      people write it.</p>
+      <p>An entry is written in a deliberately small Markdown — paragraphs, two levels of
+      heading, emphasis, lists, quotations, links to other records and to the web, and citation
+      marks like <code>[^some-source p. 12]</code> that must name a work the record already
+      cites. There is no raw HTML in it and there are no images: everything under
+      <code>data/</code> is somebody's contribution, and a page that let one of them write markup
+      would be a page that let one of them write anything. The marks are numbered on the page in
+      the order the entry names each work, and every one of them leads down to that work in the
+      entry's own list of sources.</p>
+
+      <h3>Disagreeing with a record, and taking a picture away</h3>
+      <p>Every card ends with <strong>Discuss this record</strong>: it opens a correction issue
+      against the repository, named for the record and carrying the address you were looking at, so
+      whoever answers opens the same picture. A record here is an argument somebody made, and the way
+      to disagree with one is in the open.</p>
+      <p>The map and the graph offer <strong>Export this view</strong>: the drawing on screen as an
+      SVG file, with the stylesheet and the colours as your browser computed them written into it,
+      so it opens anywhere. It is a picture and not the data — the data is the repository, in full,
+      under the licences below.</p>
+
+      <h3>On a phone</h3>
+      <p>On a narrow screen the atlas stacks: the map or the graph takes the screen, the timeline
+      is a strip under it, and the panel becomes a <strong>sheet</strong> that comes up from the
+      bottom edge when you tap a mark and can be pushed back down to its handle when it is in the
+      way — drag the handle, or tap it. The search takes a line of its own, and the grouping and
+      the layer switches are behind <strong>Options</strong>. The map and the graph both pan under
+      one finger.</p>
+      <p>Nothing about the address changes: a link opened on a phone and the same link opened on a
+      desktop show the same records. How wide the panes are, which section of a card is open, and
+      whether the sheet is up are yours and not part of the link.</p>
+
+      <h3>The link to Wikipedia, and what it is not</h3>
+      <p>An event, an actor or a place may carry the identifier of the Wikidata item for the
+      same thing, and the titles of the Wikipedia articles about it. Where there is a title, the
+      card offers <em>Read more on Wikipedia</em> — in your language when there is an article in
+      it, otherwise in English, and it always says which — and the article's title also becomes
+      one of the names the search box finds the record by.</p>
+      <p>That link is a way out of the atlas, not part of it. Everything the atlas asserts is in
+      the record: the summary, the argument on each link, the confidence, the sources. Nothing
+      here is written from an encyclopedia and nothing here is checked against one, and no
+      article's text is in any record — only its title, which is a name. The identifier exists so that
+      a record can be found again by a machine and so that a reader who wants somebody else's
+      account can go and get it; it is never counted as evidence. An encyclopedia reports
+      scholarship rather than being it, so a link that cites nothing but Wikipedia cannot be
+      marked <span class="badge consensus">consensus</span> at all — the validator refuses
+      it — and how many language editions have an article changes nothing about how any of it is
+      drawn.</p>
+
+      <h2>Licences</h2>
+
+      <p>Several, because one licence cannot honestly cover code, prose, two imported datasets
+      and two typefaces.</p>
+
+      <ul>
+        <li><strong>The code</strong> — everything under <code>src/</code>, <code>tools/</code>
+        and <code>tests/</code> — is <a href="https://opensource.org/license/mit" rel="license noreferrer">MIT</a>.
+        CC BY-SA on JavaScript is a nuisance nobody wants.</li>
+        <li><strong>The records</strong> — every event, edge, source, place, relation, narrative and actor that a
+        person wrote, which is to say all the writing —
+        are <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noreferrer">CC BY-SA 4.0</a>.
+        Use them, including commercially, with attribution, and share what you build on them under
+        the same terms.</li>
+        <li><strong>The coastlines and lane polygons</strong> under <code>data/geo/</code> derive
+        from <a href="https://www.naturalearthdata.com/" rel="noreferrer">Natural Earth</a>, which
+        is public domain; its makers ask to be credited and are, here and in
+        <code>data/geo/LICENSE</code>.</li>
+        <li><strong>The territories</strong> — <code>data/geo/presences/</code>,
+        <code>data/presences/</code> and the actor records the CShapes import created — are
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noreferrer">CC BY-NC-SA 4.0</a>,
+        because <a href="https://icr.ethz.ch/data/cshapes/" rel="noreferrer">CShapes 2.0</a> is.
+        That licence forbids commercial use and the rest of the data does not, so the two are
+        kept apart and each record says which one it carries. Attribution and the full citation
+        are in <code>data/geo/LICENSE</code>.</li>
+        <li><strong>The identifiers</strong> — the Wikidata item, the article titles and the
+        count of language editions that a record may carry — are read off
+        <a href="https://www.wikidata.org/" rel="noreferrer">Wikidata</a>, whose data is
+        released under <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license noreferrer">CC0 1.0</a>.
+        They stay CC BY-SA 4.0 as part of the record they sit on, which CC0 allows. No
+        Wikipedia prose reaches this site or any record: the one place the repository keeps any
+        is <code>tools/import/cache/</code>, where the import stores an article's opening
+        paragraphs with the revision they came from and a link to the history that credits
+        whoever wrote them — <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noreferrer">CC BY-SA 4.0</a>,
+        the same licence, and removed before the site is published. The head of
+        <code>data/LICENSE</code> says all of this again.</li>
+        <li><strong>The two typefaces</strong> — <a href="https://github.com/octaviopardo/EBGaramond12" rel="noreferrer">EB Garamond</a>
+        for what the atlas says and <a href="https://public-sans.digital.gov/" rel="noreferrer">Public Sans</a>
+        for what the interface says — are under the
+        <a href="https://openfontlicense.org/" rel="license noreferrer">SIL Open Font License 1.1</a>,
+        which is neither the MIT of the code nor the CC BY-SA of the records. The files are in
+        <code>src/fonts/</code> with their licences beside them and are served from this site
+        rather than from a font CDN, so opening a page tells nobody but the host that you did.</li>
+      </ul>
+
+      <h3>Why this cannot be changed later</h3>
+      <p>Relicensing needs the permission of everyone who holds copyright in the thing being
+      relicensed. The moment a stranger's paragraph is merged, that set includes them, and it
+      grows with every contribution. There is no realistic point after which all of those people
+      can be found and asked. So the licence is not a default that can be revisited when it
+      becomes inconvenient: it is a decision taken once, before contributions opened, and it is
+      final. The same reasoning is why imported geometry under an incompatible licence lives in
+      its own directory with its own attribution and is never merged into a record somebody
+      wrote — which is exactly what happened with CShapes, whose non-commercial clause CC BY-SA
+      cannot absorb in either direction.</p>
+
+      <h2>Contributions</h2>
+
+      <p>Not yet open. The schema is still being tested against the first period, and migrating a
+      hundred contributors' records is far harder than migrating your own — so the pipeline is
+      built and tested before it is announced, not after.</p>
+
+      <p>When it opens, it will work like this. A form builds a <em>bundle</em>: an event, the
+      edges that connect it and any source not already in the bibliography, validated in your
+      browser against the records already here, so that references resolve and the arrow of time
+      holds before you send anything. The form copies the bundle to your clipboard and opens one
+      issue. A maintainer reads that issue; only when they accept it does it become a pull
+      request, and a person still reviews the argument, the sources and the confidence before it
+      is merged. No sources, no merge. The repository is the database, GitHub is the plumbing,
+      and the judgement stays human — that is not a limitation to engineer away, it is the
+      design.</p>
+
+      <p class="footnote">The reasoning behind all of this is in <code>CONTEXT.md</code> in the
+      repository; the structure is in <code>ARCHITECTURE.md</code>; what is built so far is in
+      <code>STATUS.md</code>.</p>
+    </section>
+  </main>
+</body>
+</html>

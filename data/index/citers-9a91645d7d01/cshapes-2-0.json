@@ -1,0 +1,6714 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "aden",
+      "kind": "actor",
+      "locator": "gwcode 681"
+    },
+    {
+      "dissent": false,
+      "id": "afghanistan",
+      "kind": "actor",
+      "locator": "gwcode 700"
+    },
+    {
+      "dissent": false,
+      "id": "alaska",
+      "kind": "actor",
+      "locator": "gwcode 3"
+    },
+    {
+      "dissent": false,
+      "id": "albania",
+      "kind": "actor",
+      "locator": "gwcode 339"
+    },
+    {
+      "dissent": false,
+      "id": "algeria",
+      "kind": "actor",
+      "locator": "gwcode 615"
+    },
+    {
+      "dissent": false,
+      "id": "algeria-under-france",
+      "kind": "actor",
+      "locator": "gwcode 615"
+    },
+    {
+      "dissent": false,
+      "id": "angola",
+      "kind": "actor",
+      "locator": "gwcode 540"
+    },
+    {
+      "dissent": false,
+      "id": "angola-under-portugal",
+      "kind": "actor",
+      "locator": "gwcode 540"
+    },
+    {
+      "dissent": false,
+      "id": "argentina",
+      "kind": "actor",
+      "locator": "gwcode 160"
+    },
+    {
+      "dissent": false,
+      "id": "armenia",
+      "kind": "actor",
+      "locator": "gwcode 371"
+    },
+    {
+      "dissent": false,
+      "id": "australia",
+      "kind": "actor",
+      "locator": "gwcode 900"
+    },
+    {
+      "dissent": false,
+      "id": "austria",
+      "kind": "actor",
+      "locator": "gwcode 305"
+    },
+    {
+      "dissent": false,
+      "id": "austria-hungary",
+      "kind": "actor",
+      "locator": "gwcode 300"
+    },
+    {
+      "dissent": false,
+      "id": "azerbaijan",
+      "kind": "actor",
+      "locator": "gwcode 373"
+    },
+    {
+      "dissent": false,
+      "id": "bahamas",
+      "kind": "actor",
+      "locator": "gwcode 31"
+    },
+    {
+      "dissent": false,
+      "id": "bahamas-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 31"
+    },
+    {
+      "dissent": false,
+      "id": "bahrain",
+      "kind": "actor",
+      "locator": "gwcode 692"
+    },
+    {
+      "dissent": false,
+      "id": "bangladesh",
+      "kind": "actor",
+      "locator": "gwcode 771"
+    },
+    {
+      "dissent": false,
+      "id": "barbados",
+      "kind": "actor",
+      "locator": "gwcode 53"
+    },
+    {
+      "dissent": false,
+      "id": "barbados-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 53"
+    },
+    {
+      "dissent": false,
+      "id": "belarus-byelorussia",
+      "kind": "actor",
+      "locator": "gwcode 370"
+    },
+    {
+      "dissent": false,
+      "id": "belgium",
+      "kind": "actor",
+      "locator": "gwcode 211"
+    },
+    {
+      "dissent": false,
+      "id": "belize",
+      "kind": "actor",
+      "locator": "gwcode 80"
+    },
+    {
+      "dissent": false,
+      "id": "belize-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 80"
+    },
+    {
+      "dissent": false,
+      "id": "benin",
+      "kind": "actor",
+      "locator": "gwcode 434"
+    },
+    {
+      "dissent": false,
+      "id": "benin-under-france",
+      "kind": "actor",
+      "locator": "gwcode 434"
+    },
+    {
+      "dissent": false,
+      "id": "bhutan",
+      "kind": "actor",
+      "locator": "gwcode 760"
+    },
+    {
+      "dissent": false,
+      "id": "bhutan-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 760"
+    },
+    {
+      "dissent": false,
+      "id": "bokhara",
+      "kind": "actor",
+      "locator": "gwcode 7020"
+    },
+    {
+      "dissent": false,
+      "id": "bolivia",
+      "kind": "actor",
+      "locator": "gwcode 145"
+    },
+    {
+      "dissent": false,
+      "id": "bosnia",
+      "kind": "actor",
+      "locator": "gwcode 3461"
+    },
+    {
+      "dissent": false,
+      "id": "bosnia-herzegovina",
+      "kind": "actor",
+      "locator": "gwcode 346"
+    },
+    {
+      "dissent": false,
+      "id": "botswana",
+      "kind": "actor",
+      "locator": "gwcode 571"
+    },
+    {
+      "dissent": false,
+      "id": "botswana-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 571"
+    },
+    {
+      "dissent": false,
+      "id": "brazil",
+      "kind": "actor",
+      "locator": "gwcode 140"
+    },
+    {
+      "dissent": false,
+      "id": "british-bechuanaland",
+      "kind": "actor",
+      "locator": "gwcode 5612"
+    },
+    {
+      "dissent": false,
+      "id": "british-cameroons",
+      "kind": "actor",
+      "locator": "gwcode 472"
+    },
+    {
+      "dissent": false,
+      "id": "british-india",
+      "kind": "actor",
+      "locator": "gwcode 750"
+    },
+    {
+      "dissent": false,
+      "id": "british-somaliland-somaliland-republic",
+      "kind": "actor",
+      "locator": "gwcode 521"
+    },
+    {
+      "dissent": false,
+      "id": "british-togoland",
+      "kind": "actor",
+      "locator": "gwcode 462"
+    },
+    {
+      "dissent": false,
+      "id": "brunei",
+      "kind": "actor",
+      "locator": "gwcode 835"
+    },
+    {
+      "dissent": false,
+      "id": "brunei-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 835"
+    },
+    {
+      "dissent": false,
+      "id": "bulgaria",
+      "kind": "actor",
+      "locator": "gwcode 355"
+    },
+    {
+      "dissent": false,
+      "id": "burkina-faso-upper-volta",
+      "kind": "actor",
+      "locator": "gwcode 439"
+    },
+    {
+      "dissent": false,
+      "id": "burkina-faso-upper-volta-under-france",
+      "kind": "actor",
+      "locator": "gwcode 439"
+    },
+    {
+      "dissent": false,
+      "id": "burundi",
+      "kind": "actor",
+      "locator": "gwcode 516"
+    },
+    {
+      "dissent": false,
+      "id": "cambodia-kampuchea",
+      "kind": "actor",
+      "locator": "gwcode 811"
+    },
+    {
+      "dissent": false,
+      "id": "cambodia-kampuchea-under-france",
+      "kind": "actor",
+      "locator": "gwcode 811"
+    },
+    {
+      "dissent": false,
+      "id": "cameroon",
+      "kind": "actor",
+      "locator": "gwcode 471"
+    },
+    {
+      "dissent": false,
+      "id": "cameroon-under-france",
+      "kind": "actor",
+      "locator": "gwcode 471"
+    },
+    {
+      "dissent": false,
+      "id": "canada",
+      "kind": "actor",
+      "locator": "gwcode 20"
+    },
+    {
+      "dissent": false,
+      "id": "cape-colony",
+      "kind": "actor",
+      "locator": "gwcode 561"
+    },
+    {
+      "dissent": false,
+      "id": "cape-verde",
+      "kind": "actor",
+      "locator": "gwcode 402"
+    },
+    {
+      "dissent": false,
+      "id": "cape-verde-under-portugal",
+      "kind": "actor",
+      "locator": "gwcode 402"
+    },
+    {
+      "dissent": false,
+      "id": "central-african-republic",
+      "kind": "actor",
+      "locator": "gwcode 482"
+    },
+    {
+      "dissent": false,
+      "id": "central-african-republic-under-france",
+      "kind": "actor",
+      "locator": "gwcode 482"
+    },
+    {
+      "dissent": false,
+      "id": "chad",
+      "kind": "actor",
+      "locator": "gwcode 483"
+    },
+    {
+      "dissent": false,
+      "id": "chad-under-france",
+      "kind": "actor",
+      "locator": "gwcode 483"
+    },
+    {
+      "dissent": false,
+      "id": "chile",
+      "kind": "actor",
+      "locator": "gwcode 155"
+    },
+    {
+      "dissent": false,
+      "id": "china",
+      "kind": "actor",
+      "locator": "gwcode 710"
+    },
+    {
+      "dissent": false,
+      "id": "colombia",
+      "kind": "actor",
+      "locator": "gwcode 100"
+    },
+    {
+      "dissent": false,
+      "id": "comoros",
+      "kind": "actor",
+      "locator": "gwcode 581"
+    },
+    {
+      "dissent": false,
+      "id": "comoros-under-france",
+      "kind": "actor",
+      "locator": "gwcode 581"
+    },
+    {
+      "dissent": false,
+      "id": "congo",
+      "kind": "actor",
+      "locator": "gwcode 484"
+    },
+    {
+      "dissent": false,
+      "id": "congo-democratic-republic-of-zaire",
+      "kind": "actor",
+      "locator": "gwcode 490"
+    },
+    {
+      "dissent": false,
+      "id": "congo-democratic-republic-of-zaire-under-belgium",
+      "kind": "actor",
+      "locator": "gwcode 490"
+    },
+    {
+      "dissent": false,
+      "id": "congo-under-france",
+      "kind": "actor",
+      "locator": "gwcode 484"
+    },
+    {
+      "dissent": false,
+      "id": "costa-rica",
+      "kind": "actor",
+      "locator": "gwcode 94"
+    },
+    {
+      "dissent": false,
+      "id": "cote-d-ivoire",
+      "kind": "actor",
+      "locator": "gwcode 437"
+    },
+    {
+      "dissent": false,
+      "id": "cote-d-ivoire-under-france",
+      "kind": "actor",
+      "locator": "gwcode 437"
+    },
+    {
+      "dissent": false,
+      "id": "croatia",
+      "kind": "actor",
+      "locator": "gwcode 344"
+    },
+    {
+      "dissent": false,
+      "id": "cuba",
+      "kind": "actor",
+      "locator": "gwcode 40"
+    },
+    {
+      "dissent": false,
+      "id": "cuba-under-spain",
+      "kind": "actor",
+      "locator": "gwcode 40"
+    },
+    {
+      "dissent": false,
+      "id": "cyprus",
+      "kind": "actor",
+      "locator": "gwcode 352"
+    },
+    {
+      "dissent": false,
+      "id": "cyprus-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 352"
+    },
+    {
+      "dissent": false,
+      "id": "czech-republic",
+      "kind": "actor",
+      "locator": "gwcode 316"
+    },
+    {
+      "dissent": false,
+      "id": "czechoslovakia",
+      "kind": "actor",
+      "locator": "gwcode 315"
+    },
+    {
+      "dissent": false,
+      "id": "danzig",
+      "kind": "actor",
+      "locator": "gwcode 291"
+    },
+    {
+      "dissent": false,
+      "id": "denmark",
+      "kind": "actor",
+      "locator": "gwcode 390"
+    },
+    {
+      "dissent": false,
+      "id": "djibouti",
+      "kind": "actor",
+      "locator": "gwcode 522"
+    },
+    {
+      "dissent": false,
+      "id": "djibouti-under-france",
+      "kind": "actor",
+      "locator": "gwcode 522"
+    },
+    {
+      "dissent": false,
+      "id": "dominican-republic",
+      "kind": "actor",
+      "locator": "gwcode 42"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-east-indies",
+      "kind": "actor",
+      "locator": "gwcode 850"
+    },
+    {
+      "dissent": false,
+      "id": "east-aden-protectorate",
+      "kind": "actor",
+      "locator": "gwcode 6812"
+    },
+    {
+      "dissent": false,
+      "id": "east-timor",
+      "kind": "actor",
+      "locator": "gwcode 860"
+    },
+    {
+      "dissent": false,
+      "id": "east-timor-under-portugal",
+      "kind": "actor",
+      "locator": "gwcode 860"
+    },
+    {
+      "dissent": false,
+      "id": "ecuador",
+      "kind": "actor",
+      "locator": "gwcode 130"
+    },
+    {
+      "dissent": false,
+      "id": "egypt",
+      "kind": "actor",
+      "locator": "gwcode 651"
+    },
+    {
+      "dissent": false,
+      "id": "egypt-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 651"
+    },
+    {
+      "dissent": false,
+      "id": "el-salvador",
+      "kind": "actor",
+      "locator": "gwcode 92"
+    },
+    {
+      "dissent": false,
+      "id": "equatorial-guinea",
+      "kind": "actor",
+      "locator": "gwcode 411"
+    },
+    {
+      "dissent": false,
+      "id": "equatorial-guinea-under-spain",
+      "kind": "actor",
+      "locator": "gwcode 411"
+    },
+    {
+      "dissent": false,
+      "id": "eritrea",
+      "kind": "actor",
+      "locator": "gwcode 531"
+    },
+    {
+      "dissent": false,
+      "id": "eritrea-under-italy-sardinia",
+      "kind": "actor",
+      "locator": "gwcode 531"
+    },
+    {
+      "dissent": false,
+      "id": "estonia",
+      "kind": "actor",
+      "locator": "gwcode 366"
+    },
+    {
+      "dissent": false,
+      "id": "ethiopia",
+      "kind": "actor",
+      "locator": "gwcode 530"
+    },
+    {
+      "dissent": false,
+      "id": "federated-malay-states",
+      "kind": "actor",
+      "locator": "gwcode 821"
+    },
+    {
+      "dissent": false,
+      "id": "federation-of-rhodesia-and-nyasaland",
+      "kind": "actor",
+      "locator": "gwcode 550"
+    },
+    {
+      "dissent": false,
+      "id": "federation-of-south-arabia",
+      "kind": "actor",
+      "locator": "gwcode 6801"
+    },
+    {
+      "dissent": false,
+      "id": "fiji",
+      "kind": "actor",
+      "locator": "gwcode 950"
+    },
+    {
+      "dissent": false,
+      "id": "fiji-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 950"
+    },
+    {
+      "dissent": false,
+      "id": "finland",
+      "kind": "actor",
+      "locator": "gwcode 375"
+    },
+    {
+      "dissent": false,
+      "id": "france",
+      "kind": "actor",
+      "locator": "gwcode 220"
+    },
+    {
+      "dissent": false,
+      "id": "french-guyana",
+      "kind": "actor",
+      "locator": "gwcode 120"
+    },
+    {
+      "dissent": false,
+      "id": "french-polynesia",
+      "kind": "actor",
+      "locator": "gwcode 960"
+    },
+    {
+      "dissent": false,
+      "id": "french-west-africa",
+      "kind": "actor",
+      "locator": "gwcode 430"
+    },
+    {
+      "dissent": false,
+      "id": "gabon",
+      "kind": "actor",
+      "locator": "gwcode 481"
+    },
+    {
+      "dissent": false,
+      "id": "gabon-under-france",
+      "kind": "actor",
+      "locator": "gwcode 481"
+    },
+    {
+      "dissent": false,
+      "id": "gambia",
+      "kind": "actor",
+      "locator": "gwcode 420"
+    },
+    {
+      "dissent": false,
+      "id": "gambia-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 420"
+    },
+    {
+      "dissent": false,
+      "id": "gaza",
+      "kind": "actor",
+      "locator": "gwcode 6511"
+    },
+    {
+      "dissent": false,
+      "id": "georgia",
+      "kind": "actor",
+      "locator": "gwcode 372"
+    },
+    {
+      "dissent": false,
+      "id": "german-democratic-republic",
+      "kind": "actor",
+      "locator": "gwcode 265"
+    },
+    {
+      "dissent": false,
+      "id": "german-federal-republic",
+      "kind": "actor",
+      "locator": "gwcode 260"
+    },
+    {
+      "dissent": false,
+      "id": "german-solomon-islands",
+      "kind": "actor",
+      "locator": "gwcode 9401"
+    },
+    {
+      "dissent": false,
+      "id": "german-togoland",
+      "kind": "actor",
+      "locator": "gwcode 460"
+    },
+    {
+      "dissent": false,
+      "id": "germany-prussia",
+      "kind": "actor",
+      "locator": "gwcode 255"
+    },
+    {
+      "dissent": false,
+      "id": "ghana",
+      "kind": "actor",
+      "locator": "gwcode 452"
+    },
+    {
+      "dissent": false,
+      "id": "ghana-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 452"
+    },
+    {
+      "dissent": false,
+      "id": "greece",
+      "kind": "actor",
+      "locator": "gwcode 350"
+    },
+    {
+      "dissent": false,
+      "id": "guadeloupe",
+      "kind": "actor",
+      "locator": "gwcode 65"
+    },
+    {
+      "dissent": false,
+      "id": "guatemala",
+      "kind": "actor",
+      "locator": "gwcode 90"
+    },
+    {
+      "dissent": false,
+      "id": "guinea",
+      "kind": "actor",
+      "locator": "gwcode 438"
+    },
+    {
+      "dissent": false,
+      "id": "guinea-bissau",
+      "kind": "actor",
+      "locator": "gwcode 404"
+    },
+    {
+      "dissent": false,
+      "id": "guinea-bissau-under-portugal",
+      "kind": "actor",
+      "locator": "gwcode 404"
+    },
+    {
+      "dissent": false,
+      "id": "guinea-under-france",
+      "kind": "actor",
+      "locator": "gwcode 438"
+    },
+    {
+      "dissent": false,
+      "id": "guyana",
+      "kind": "actor",
+      "locator": "gwcode 110"
+    },
+    {
+      "dissent": false,
+      "id": "guyana-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 110"
+    },
+    {
+      "dissent": false,
+      "id": "haiti",
+      "kind": "actor",
+      "locator": "gwcode 41"
+    },
+    {
+      "dissent": false,
+      "id": "hawaii",
+      "kind": "actor",
+      "locator": "gwcode 4"
+    },
+    {
+      "dissent": false,
+      "id": "herzegovina",
+      "kind": "actor",
+      "locator": "gwcode 3462"
+    },
+    {
+      "dissent": false,
+      "id": "honduras",
+      "kind": "actor",
+      "locator": "gwcode 91"
+    },
+    {
+      "dissent": false,
+      "id": "hungary",
+      "kind": "actor",
+      "locator": "gwcode 310"
+    },
+    {
+      "dissent": false,
+      "id": "iceland",
+      "kind": "actor",
+      "locator": "gwcode 395"
+    },
+    {
+      "dissent": false,
+      "id": "iceland-under-denmark",
+      "kind": "actor",
+      "locator": "gwcode 395"
+    },
+    {
+      "dissent": false,
+      "id": "inini",
+      "kind": "actor",
+      "locator": "gwcode 1201"
+    },
+    {
+      "dissent": false,
+      "id": "iran-persia",
+      "kind": "actor",
+      "locator": "gwcode 630"
+    },
+    {
+      "dissent": false,
+      "id": "iraq",
+      "kind": "actor",
+      "locator": "gwcode 645"
+    },
+    {
+      "dissent": false,
+      "id": "iraq-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 645"
+    },
+    {
+      "dissent": false,
+      "id": "ireland",
+      "kind": "actor",
+      "locator": "gwcode 205"
+    },
+    {
+      "dissent": false,
+      "id": "israel",
+      "kind": "actor",
+      "locator": "gwcode 666"
+    },
+    {
+      "dissent": false,
+      "id": "italian-somaliland",
+      "kind": "actor",
+      "locator": "gwcode 5200"
+    },
+    {
+      "dissent": false,
+      "id": "italy-sardinia",
+      "kind": "actor",
+      "locator": "gwcode 325"
+    },
+    {
+      "dissent": false,
+      "id": "jamaica",
+      "kind": "actor",
+      "locator": "gwcode 51"
+    },
+    {
+      "dissent": false,
+      "id": "jamaica-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 51"
+    },
+    {
+      "dissent": false,
+      "id": "jammu-and-kashmir",
+      "kind": "actor",
+      "locator": "gwcode 7506"
+    },
+    {
+      "dissent": false,
+      "id": "japan",
+      "kind": "actor",
+      "locator": "gwcode 740"
+    },
+    {
+      "dissent": false,
+      "id": "jordan",
+      "kind": "actor",
+      "locator": "gwcode 663"
+    },
+    {
+      "dissent": false,
+      "id": "jordan-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 663"
+    },
+    {
+      "dissent": false,
+      "id": "kamerun",
+      "kind": "actor",
+      "locator": "gwcode 470"
+    },
+    {
+      "dissent": false,
+      "id": "kashmir-north-azad",
+      "kind": "actor",
+      "locator": "gwcode 7708"
+    },
+    {
+      "dissent": false,
+      "id": "kazakhstan",
+      "kind": "actor",
+      "locator": "gwcode 705"
+    },
+    {
+      "dissent": false,
+      "id": "kenya",
+      "kind": "actor",
+      "locator": "gwcode 501"
+    },
+    {
+      "dissent": false,
+      "id": "kenya-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 501"
+    },
+    {
+      "dissent": false,
+      "id": "khiva",
+      "kind": "actor",
+      "locator": "gwcode 7030"
+    },
+    {
+      "dissent": false,
+      "id": "korea",
+      "kind": "actor",
+      "locator": "gwcode 730"
+    },
+    {
+      "dissent": false,
+      "id": "korea-people-s-republic-of",
+      "kind": "actor",
+      "locator": "gwcode 731"
+    },
+    {
+      "dissent": false,
+      "id": "korea-republic-of",
+      "kind": "actor",
+      "locator": "gwcode 732"
+    },
+    {
+      "dissent": false,
+      "id": "kosovo",
+      "kind": "actor",
+      "locator": "gwcode 347"
+    },
+    {
+      "dissent": false,
+      "id": "kuwait",
+      "kind": "actor",
+      "locator": "gwcode 690"
+    },
+    {
+      "dissent": false,
+      "id": "kyrgyz-republic",
+      "kind": "actor",
+      "locator": "gwcode 703"
+    },
+    {
+      "dissent": false,
+      "id": "lagos",
+      "kind": "actor",
+      "locator": "gwcode 4781"
+    },
+    {
+      "dissent": false,
+      "id": "laos",
+      "kind": "actor",
+      "locator": "gwcode 812"
+    },
+    {
+      "dissent": false,
+      "id": "laos-under-france",
+      "kind": "actor",
+      "locator": "gwcode 812"
+    },
+    {
+      "dissent": false,
+      "id": "latvia",
+      "kind": "actor",
+      "locator": "gwcode 367"
+    },
+    {
+      "dissent": false,
+      "id": "lebanon",
+      "kind": "actor",
+      "locator": "gwcode 660"
+    },
+    {
+      "dissent": false,
+      "id": "lebanon-under-france",
+      "kind": "actor",
+      "locator": "gwcode 660"
+    },
+    {
+      "dissent": false,
+      "id": "lesotho",
+      "kind": "actor",
+      "locator": "gwcode 570"
+    },
+    {
+      "dissent": false,
+      "id": "lesotho-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 570"
+    },
+    {
+      "dissent": false,
+      "id": "liberia",
+      "kind": "actor",
+      "locator": "gwcode 450"
+    },
+    {
+      "dissent": false,
+      "id": "libya",
+      "kind": "actor",
+      "locator": "gwcode 620"
+    },
+    {
+      "dissent": false,
+      "id": "libya-under-italy-sardinia",
+      "kind": "actor",
+      "locator": "gwcode 620"
+    },
+    {
+      "dissent": false,
+      "id": "lithuania",
+      "kind": "actor",
+      "locator": "gwcode 368"
+    },
+    {
+      "dissent": false,
+      "id": "luxembourg",
+      "kind": "actor",
+      "locator": "gwcode 212"
+    },
+    {
+      "dissent": false,
+      "id": "macedonia-fyrom-north-macedonia",
+      "kind": "actor",
+      "locator": "gwcode 343"
+    },
+    {
+      "dissent": false,
+      "id": "madagascar-malagasy",
+      "kind": "actor",
+      "locator": "gwcode 580"
+    },
+    {
+      "dissent": false,
+      "id": "malawi",
+      "kind": "actor",
+      "locator": "gwcode 553"
+    },
+    {
+      "dissent": false,
+      "id": "malawi-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 553"
+    },
+    {
+      "dissent": false,
+      "id": "malaysia",
+      "kind": "actor",
+      "locator": "gwcode 820"
+    },
+    {
+      "dissent": false,
+      "id": "malaysia-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 820"
+    },
+    {
+      "dissent": false,
+      "id": "maldives",
+      "kind": "actor",
+      "locator": "gwcode 781"
+    },
+    {
+      "dissent": false,
+      "id": "maldives-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 781"
+    },
+    {
+      "dissent": false,
+      "id": "mali",
+      "kind": "actor",
+      "locator": "gwcode 432"
+    },
+    {
+      "dissent": false,
+      "id": "mali-under-france",
+      "kind": "actor",
+      "locator": "gwcode 432"
+    },
+    {
+      "dissent": false,
+      "id": "malta",
+      "kind": "actor",
+      "locator": "gwcode 338"
+    },
+    {
+      "dissent": false,
+      "id": "malta-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 338"
+    },
+    {
+      "dissent": false,
+      "id": "martinique",
+      "kind": "actor",
+      "locator": "gwcode 66"
+    },
+    {
+      "dissent": false,
+      "id": "mauritania",
+      "kind": "actor",
+      "locator": "gwcode 435"
+    },
+    {
+      "dissent": false,
+      "id": "mauritania-under-france",
+      "kind": "actor",
+      "locator": "gwcode 435"
+    },
+    {
+      "dissent": false,
+      "id": "mauritius",
+      "kind": "actor",
+      "locator": "gwcode 590"
+    },
+    {
+      "dissent": false,
+      "id": "mauritius-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 590"
+    },
+    {
+      "dissent": false,
+      "id": "mexico",
+      "kind": "actor",
+      "locator": "gwcode 70"
+    },
+    {
+      "dissent": false,
+      "id": "moldova",
+      "kind": "actor",
+      "locator": "gwcode 359"
+    },
+    {
+      "dissent": false,
+      "id": "mongolia",
+      "kind": "actor",
+      "locator": "gwcode 712"
+    },
+    {
+      "dissent": false,
+      "id": "montenegro",
+      "kind": "actor",
+      "locator": "gwcode 341"
+    },
+    {
+      "dissent": false,
+      "id": "morocco",
+      "kind": "actor",
+      "locator": "gwcode 600"
+    },
+    {
+      "dissent": false,
+      "id": "mozambique",
+      "kind": "actor",
+      "locator": "gwcode 541"
+    },
+    {
+      "dissent": false,
+      "id": "mozambique-under-portugal",
+      "kind": "actor",
+      "locator": "gwcode 541"
+    },
+    {
+      "dissent": false,
+      "id": "myanmar-burma",
+      "kind": "actor",
+      "locator": "gwcode 775"
+    },
+    {
+      "dissent": false,
+      "id": "myanmar-burma-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 775"
+    },
+    {
+      "dissent": false,
+      "id": "namibia",
+      "kind": "actor",
+      "locator": "gwcode 565"
+    },
+    {
+      "dissent": false,
+      "id": "namibia-under-south-africa",
+      "kind": "actor",
+      "locator": "gwcode 565"
+    },
+    {
+      "dissent": false,
+      "id": "natal",
+      "kind": "actor",
+      "locator": "gwcode 562"
+    },
+    {
+      "dissent": false,
+      "id": "nepal",
+      "kind": "actor",
+      "locator": "gwcode 790"
+    },
+    {
+      "dissent": false,
+      "id": "netherlands",
+      "kind": "actor",
+      "locator": "gwcode 210"
+    },
+    {
+      "dissent": false,
+      "id": "new-caledonia-and-dependencies",
+      "kind": "actor",
+      "locator": "gwcode 930"
+    },
+    {
+      "dissent": false,
+      "id": "new-guinea-german-new-guinea-kaiser-wilhelmsland",
+      "kind": "actor",
+      "locator": "gwcode 912"
+    },
+    {
+      "dissent": false,
+      "id": "new-south-wales",
+      "kind": "actor",
+      "locator": "gwcode 901"
+    },
+    {
+      "dissent": false,
+      "id": "new-zealand",
+      "kind": "actor",
+      "locator": "gwcode 920"
+    },
+    {
+      "dissent": false,
+      "id": "new-zealand-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 920"
+    },
+    {
+      "dissent": false,
+      "id": "newfoundland",
+      "kind": "actor",
+      "locator": "gwcode 21"
+    },
+    {
+      "dissent": false,
+      "id": "nicaragua",
+      "kind": "actor",
+      "locator": "gwcode 93"
+    },
+    {
+      "dissent": false,
+      "id": "niger",
+      "kind": "actor",
+      "locator": "gwcode 436"
+    },
+    {
+      "dissent": false,
+      "id": "niger-under-france",
+      "kind": "actor",
+      "locator": "gwcode 436"
+    },
+    {
+      "dissent": false,
+      "id": "nigeria",
+      "kind": "actor",
+      "locator": "gwcode 475"
+    },
+    {
+      "dissent": false,
+      "id": "nigeria-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 475"
+    },
+    {
+      "dissent": false,
+      "id": "northeastern-rhodesia",
+      "kind": "actor",
+      "locator": "gwcode 5518"
+    },
+    {
+      "dissent": false,
+      "id": "northern-nigeria",
+      "kind": "actor",
+      "locator": "gwcode 4784"
+    },
+    {
+      "dissent": false,
+      "id": "northwestern-rhodesia",
+      "kind": "actor",
+      "locator": "gwcode 5519"
+    },
+    {
+      "dissent": false,
+      "id": "norway",
+      "kind": "actor",
+      "locator": "gwcode 385"
+    },
+    {
+      "dissent": false,
+      "id": "oil-rivers-protectorate",
+      "kind": "actor",
+      "locator": "gwcode 4782"
+    },
+    {
+      "dissent": false,
+      "id": "oman",
+      "kind": "actor",
+      "locator": "gwcode 698"
+    },
+    {
+      "dissent": false,
+      "id": "orange-free-state",
+      "kind": "actor",
+      "locator": "gwcode 564"
+    },
+    {
+      "dissent": false,
+      "id": "pahang",
+      "kind": "actor",
+      "locator": "gwcode 8203"
+    },
+    {
+      "dissent": false,
+      "id": "pakistan",
+      "kind": "actor",
+      "locator": "gwcode 770"
+    },
+    {
+      "dissent": false,
+      "id": "palestine",
+      "kind": "actor",
+      "locator": "gwcode 665"
+    },
+    {
+      "dissent": false,
+      "id": "panama",
+      "kind": "actor",
+      "locator": "gwcode 95"
+    },
+    {
+      "dissent": false,
+      "id": "papua",
+      "kind": "actor",
+      "locator": "gwcode 911"
+    },
+    {
+      "dissent": false,
+      "id": "papua-new-guinea",
+      "kind": "actor",
+      "locator": "gwcode 910"
+    },
+    {
+      "dissent": false,
+      "id": "papua-new-guinea-under-australia",
+      "kind": "actor",
+      "locator": "gwcode 910"
+    },
+    {
+      "dissent": false,
+      "id": "paraguay",
+      "kind": "actor",
+      "locator": "gwcode 150"
+    },
+    {
+      "dissent": false,
+      "id": "perak",
+      "kind": "actor",
+      "locator": "gwcode 8201"
+    },
+    {
+      "dissent": false,
+      "id": "peru",
+      "kind": "actor",
+      "locator": "gwcode 135"
+    },
+    {
+      "dissent": false,
+      "id": "philippines",
+      "kind": "actor",
+      "locator": "gwcode 840"
+    },
+    {
+      "dissent": false,
+      "id": "philippines-under-united-states-of-america",
+      "kind": "actor",
+      "locator": "gwcode 840"
+    },
+    {
+      "dissent": false,
+      "id": "poland",
+      "kind": "actor",
+      "locator": "gwcode 290"
+    },
+    {
+      "dissent": false,
+      "id": "portugal",
+      "kind": "actor",
+      "locator": "gwcode 235"
+    },
+    {
+      "dissent": false,
+      "id": "puerto-rico",
+      "kind": "actor",
+      "locator": "gwcode 6"
+    },
+    {
+      "dissent": false,
+      "id": "qatar",
+      "kind": "actor",
+      "locator": "gwcode 694"
+    },
+    {
+      "dissent": false,
+      "id": "qatar-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 694"
+    },
+    {
+      "dissent": false,
+      "id": "queensland",
+      "kind": "actor",
+      "locator": "gwcode 905"
+    },
+    {
+      "dissent": false,
+      "id": "reunion",
+      "kind": "actor",
+      "locator": "gwcode 585"
+    },
+    {
+      "dissent": false,
+      "id": "rumania",
+      "kind": "actor",
+      "locator": "gwcode 360"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union",
+      "kind": "actor",
+      "locator": "gwcode 365"
+    },
+    {
+      "dissent": false,
+      "id": "rwanda",
+      "kind": "actor",
+      "locator": "gwcode 517"
+    },
+    {
+      "dissent": false,
+      "id": "rwanda-urundi",
+      "kind": "actor",
+      "locator": "gwcode 515"
+    },
+    {
+      "dissent": false,
+      "id": "sabah-north-borneo",
+      "kind": "actor",
+      "locator": "gwcode 823"
+    },
+    {
+      "dissent": false,
+      "id": "sarawak",
+      "kind": "actor",
+      "locator": "gwcode 824"
+    },
+    {
+      "dissent": false,
+      "id": "saudi-arabia",
+      "kind": "actor",
+      "locator": "gwcode 670"
+    },
+    {
+      "dissent": false,
+      "id": "selangore",
+      "kind": "actor",
+      "locator": "gwcode 8202"
+    },
+    {
+      "dissent": false,
+      "id": "senegal",
+      "kind": "actor",
+      "locator": "gwcode 433"
+    },
+    {
+      "dissent": false,
+      "id": "senegal-under-france",
+      "kind": "actor",
+      "locator": "gwcode 433"
+    },
+    {
+      "dissent": false,
+      "id": "serbia",
+      "kind": "actor",
+      "locator": "gwcode 340"
+    },
+    {
+      "dissent": false,
+      "id": "sierra-leone",
+      "kind": "actor",
+      "locator": "gwcode 451"
+    },
+    {
+      "dissent": false,
+      "id": "sierra-leone-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 451"
+    },
+    {
+      "dissent": false,
+      "id": "singapore",
+      "kind": "actor",
+      "locator": "gwcode 830"
+    },
+    {
+      "dissent": false,
+      "id": "singapore-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 830"
+    },
+    {
+      "dissent": false,
+      "id": "slovakia",
+      "kind": "actor",
+      "locator": "gwcode 317"
+    },
+    {
+      "dissent": false,
+      "id": "slovenia",
+      "kind": "actor",
+      "locator": "gwcode 349"
+    },
+    {
+      "dissent": false,
+      "id": "solomon-islands",
+      "kind": "actor",
+      "locator": "gwcode 940"
+    },
+    {
+      "dissent": false,
+      "id": "solomon-islands-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 940"
+    },
+    {
+      "dissent": false,
+      "id": "somalia",
+      "kind": "actor",
+      "locator": "gwcode 520"
+    },
+    {
+      "dissent": false,
+      "id": "south-africa",
+      "kind": "actor",
+      "locator": "gwcode 560"
+    },
+    {
+      "dissent": false,
+      "id": "south-australia",
+      "kind": "actor",
+      "locator": "gwcode 903"
+    },
+    {
+      "dissent": false,
+      "id": "south-sudan",
+      "kind": "actor",
+      "locator": "gwcode 626"
+    },
+    {
+      "dissent": false,
+      "id": "southern-nigeria",
+      "kind": "actor",
+      "locator": "gwcode 4783"
+    },
+    {
+      "dissent": false,
+      "id": "southern-sakhalin-island",
+      "kind": "actor",
+      "locator": "gwcode 7351"
+    },
+    {
+      "dissent": false,
+      "id": "southern-zone-of-spanish-morocco",
+      "kind": "actor",
+      "locator": "gwcode 6021"
+    },
+    {
+      "dissent": false,
+      "id": "spain",
+      "kind": "actor",
+      "locator": "gwcode 230"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-morocco",
+      "kind": "actor",
+      "locator": "gwcode 602"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-sahara",
+      "kind": "actor",
+      "locator": "gwcode 609"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-west-africa",
+      "kind": "actor",
+      "locator": "gwcode 610"
+    },
+    {
+      "dissent": false,
+      "id": "sri-lanka-ceylon",
+      "kind": "actor",
+      "locator": "gwcode 780"
+    },
+    {
+      "dissent": false,
+      "id": "sri-lanka-ceylon-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 780"
+    },
+    {
+      "dissent": false,
+      "id": "straits-settlements",
+      "kind": "actor",
+      "locator": "gwcode 827"
+    },
+    {
+      "dissent": false,
+      "id": "sudan",
+      "kind": "actor",
+      "locator": "gwcode 625"
+    },
+    {
+      "dissent": false,
+      "id": "sudan-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 625"
+    },
+    {
+      "dissent": false,
+      "id": "surinam",
+      "kind": "actor",
+      "locator": "gwcode 115"
+    },
+    {
+      "dissent": false,
+      "id": "surinam-under-netherlands",
+      "kind": "actor",
+      "locator": "gwcode 115"
+    },
+    {
+      "dissent": false,
+      "id": "swaziland-eswatini",
+      "kind": "actor",
+      "locator": "gwcode 572"
+    },
+    {
+      "dissent": false,
+      "id": "swaziland-eswatini-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 572"
+    },
+    {
+      "dissent": false,
+      "id": "sweden",
+      "kind": "actor",
+      "locator": "gwcode 380"
+    },
+    {
+      "dissent": false,
+      "id": "switzerland",
+      "kind": "actor",
+      "locator": "gwcode 225"
+    },
+    {
+      "dissent": false,
+      "id": "syria",
+      "kind": "actor",
+      "locator": "gwcode 652"
+    },
+    {
+      "dissent": false,
+      "id": "syria-under-france",
+      "kind": "actor",
+      "locator": "gwcode 652"
+    },
+    {
+      "dissent": false,
+      "id": "taiwan",
+      "kind": "actor",
+      "locator": "gwcode 713"
+    },
+    {
+      "dissent": false,
+      "id": "taiwan-under-japan",
+      "kind": "actor",
+      "locator": "gwcode 713"
+    },
+    {
+      "dissent": false,
+      "id": "tajikistan",
+      "kind": "actor",
+      "locator": "gwcode 702"
+    },
+    {
+      "dissent": false,
+      "id": "tanzania-tanganyika",
+      "kind": "actor",
+      "locator": "gwcode 510"
+    },
+    {
+      "dissent": false,
+      "id": "tanzania-tanganyika-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 510"
+    },
+    {
+      "dissent": false,
+      "id": "tasmania",
+      "kind": "actor",
+      "locator": "gwcode 906"
+    },
+    {
+      "dissent": false,
+      "id": "thailand",
+      "kind": "actor",
+      "locator": "gwcode 800"
+    },
+    {
+      "dissent": false,
+      "id": "tibet",
+      "kind": "actor",
+      "locator": "gwcode 711"
+    },
+    {
+      "dissent": false,
+      "id": "togo",
+      "kind": "actor",
+      "locator": "gwcode 461"
+    },
+    {
+      "dissent": false,
+      "id": "togo-under-france",
+      "kind": "actor",
+      "locator": "gwcode 461"
+    },
+    {
+      "dissent": false,
+      "id": "transvaal",
+      "kind": "actor",
+      "locator": "gwcode 563"
+    },
+    {
+      "dissent": false,
+      "id": "trinidad-and-tobago",
+      "kind": "actor",
+      "locator": "gwcode 52"
+    },
+    {
+      "dissent": false,
+      "id": "trinidad-and-tobago-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 52"
+    },
+    {
+      "dissent": false,
+      "id": "tunisia",
+      "kind": "actor",
+      "locator": "gwcode 616"
+    },
+    {
+      "dissent": false,
+      "id": "tunisia-under-france",
+      "kind": "actor",
+      "locator": "gwcode 616"
+    },
+    {
+      "dissent": false,
+      "id": "turkey-ottoman-empire",
+      "kind": "actor",
+      "locator": "gwcode 640"
+    },
+    {
+      "dissent": false,
+      "id": "turkmenistan",
+      "kind": "actor",
+      "locator": "gwcode 701"
+    },
+    {
+      "dissent": false,
+      "id": "uganda",
+      "kind": "actor",
+      "locator": "gwcode 500"
+    },
+    {
+      "dissent": false,
+      "id": "uganda-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 500"
+    },
+    {
+      "dissent": false,
+      "id": "ukraine",
+      "kind": "actor",
+      "locator": "gwcode 369"
+    },
+    {
+      "dissent": false,
+      "id": "unfederated-malay-states",
+      "kind": "actor",
+      "locator": "gwcode 822"
+    },
+    {
+      "dissent": false,
+      "id": "united-arab-emirates",
+      "kind": "actor",
+      "locator": "gwcode 696"
+    },
+    {
+      "dissent": false,
+      "id": "united-arab-emirates-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 696"
+    },
+    {
+      "dissent": false,
+      "id": "united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 200"
+    },
+    {
+      "dissent": false,
+      "id": "united-states-of-america",
+      "kind": "actor",
+      "locator": "gwcode 2"
+    },
+    {
+      "dissent": false,
+      "id": "uruguay",
+      "kind": "actor",
+      "locator": "gwcode 165"
+    },
+    {
+      "dissent": false,
+      "id": "uzbekistan",
+      "kind": "actor",
+      "locator": "gwcode 704"
+    },
+    {
+      "dissent": false,
+      "id": "venezuela",
+      "kind": "actor",
+      "locator": "gwcode 101"
+    },
+    {
+      "dissent": false,
+      "id": "victoria",
+      "kind": "actor",
+      "locator": "gwcode 904"
+    },
+    {
+      "dissent": false,
+      "id": "vietnam-annam-cochin-china-tonkin",
+      "kind": "actor",
+      "locator": "gwcode 815"
+    },
+    {
+      "dissent": false,
+      "id": "vietnam-democratic-republic-of",
+      "kind": "actor",
+      "locator": "gwcode 816"
+    },
+    {
+      "dissent": false,
+      "id": "vietnam-republic-of",
+      "kind": "actor",
+      "locator": "gwcode 817"
+    },
+    {
+      "dissent": false,
+      "id": "west-bank",
+      "kind": "actor",
+      "locator": "gwcode 6631"
+    },
+    {
+      "dissent": false,
+      "id": "west-irian-dutch-new-guinea",
+      "kind": "actor",
+      "locator": "gwcode 851"
+    },
+    {
+      "dissent": false,
+      "id": "western-australia",
+      "kind": "actor",
+      "locator": "gwcode 902"
+    },
+    {
+      "dissent": false,
+      "id": "yemen-arab-republic-of-yemen",
+      "kind": "actor",
+      "locator": "gwcode 678"
+    },
+    {
+      "dissent": false,
+      "id": "yemen-people-s-republic-of",
+      "kind": "actor",
+      "locator": "gwcode 680"
+    },
+    {
+      "dissent": false,
+      "id": "yugoslavia",
+      "kind": "actor",
+      "locator": "gwcode 345"
+    },
+    {
+      "dissent": false,
+      "id": "zambia",
+      "kind": "actor",
+      "locator": "gwcode 551"
+    },
+    {
+      "dissent": false,
+      "id": "zambia-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 551"
+    },
+    {
+      "dissent": false,
+      "id": "zanzibar",
+      "kind": "actor",
+      "locator": "gwcode 511"
+    },
+    {
+      "dissent": false,
+      "id": "zanzibar-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 511"
+    },
+    {
+      "dissent": false,
+      "id": "zimbabwe-rhodesia",
+      "kind": "actor",
+      "locator": "gwcode 552"
+    },
+    {
+      "dissent": false,
+      "id": "zimbabwe-rhodesia-under-united-kingdom",
+      "kind": "actor",
+      "locator": "gwcode 552"
+    },
+    {
+      "dissent": false,
+      "id": "aden-1937",
+      "kind": "presence",
+      "locator": "fid 523"
+    },
+    {
+      "dissent": false,
+      "id": "afghanistan-1886",
+      "kind": "presence",
+      "locator": "fid 533"
+    },
+    {
+      "dissent": false,
+      "id": "afghanistan-1888",
+      "kind": "presence",
+      "locator": "fid 535"
+    },
+    {
+      "dissent": false,
+      "id": "afghanistan-1893",
+      "kind": "presence",
+      "locator": "fid 536"
+    },
+    {
+      "dissent": false,
+      "id": "afghanistan-1919",
+      "kind": "presence",
+      "locator": "fid 534"
+    },
+    {
+      "dissent": false,
+      "id": "alaska-1886",
+      "kind": "presence",
+      "locator": "fid 4"
+    },
+    {
+      "dissent": false,
+      "id": "albania-1913",
+      "kind": "presence",
+      "locator": "fid 123"
+    },
+    {
+      "dissent": false,
+      "id": "albania-1914",
+      "kind": "presence",
+      "locator": "fid 121"
+    },
+    {
+      "dissent": false,
+      "id": "albania-1920",
+      "kind": "presence",
+      "locator": "fid 122"
+    },
+    {
+      "dissent": false,
+      "id": "algeria-1962",
+      "kind": "presence",
+      "locator": "fid 456"
+    },
+    {
+      "dissent": false,
+      "id": "algeria-under-france-1886",
+      "kind": "presence",
+      "locator": "fid 452"
+    },
+    {
+      "dissent": false,
+      "id": "algeria-under-france-1901",
+      "kind": "presence",
+      "locator": "fid 453"
+    },
+    {
+      "dissent": false,
+      "id": "algeria-under-france-1902",
+      "kind": "presence",
+      "locator": "fid 454"
+    },
+    {
+      "dissent": false,
+      "id": "algeria-under-france-1919",
+      "kind": "presence",
+      "locator": "fid 455"
+    },
+    {
+      "dissent": false,
+      "id": "angola-1975",
+      "kind": "presence",
+      "locator": "fid 390"
+    },
+    {
+      "dissent": false,
+      "id": "angola-under-portugal-1886",
+      "kind": "presence",
+      "locator": "fid 386"
+    },
+    {
+      "dissent": false,
+      "id": "angola-under-portugal-1890",
+      "kind": "presence",
+      "locator": "fid 387"
+    },
+    {
+      "dissent": false,
+      "id": "angola-under-portugal-1891",
+      "kind": "presence",
+      "locator": "fid 388"
+    },
+    {
+      "dissent": false,
+      "id": "angola-under-portugal-1905",
+      "kind": "presence",
+      "locator": "fid 389"
+    },
+    {
+      "dissent": false,
+      "id": "argentina-1886",
+      "kind": "presence",
+      "locator": "fid 69"
+    },
+    {
+      "dissent": false,
+      "id": "argentina-1899",
+      "kind": "presence",
+      "locator": "fid 70"
+    },
+    {
+      "dissent": false,
+      "id": "argentina-1902",
+      "kind": "presence",
+      "locator": "fid 71"
+    },
+    {
+      "dissent": false,
+      "id": "armenia-1991",
+      "kind": "presence",
+      "locator": "fid 201"
+    },
+    {
+      "dissent": false,
+      "id": "australia-1901",
+      "kind": "presence",
+      "locator": "fid 647"
+    },
+    {
+      "dissent": false,
+      "id": "australia-1927",
+      "kind": "presence",
+      "locator": "fid 646"
+    },
+    {
+      "dissent": false,
+      "id": "austria-1918",
+      "kind": "presence",
+      "locator": "fid 102"
+    },
+    {
+      "dissent": false,
+      "id": "austria-1919",
+      "kind": "presence",
+      "locator": "fid 103"
+    },
+    {
+      "dissent": false,
+      "id": "austria-hungary-1886",
+      "kind": "presence",
+      "locator": "fid 100"
+    },
+    {
+      "dissent": false,
+      "id": "austria-hungary-1908",
+      "kind": "presence",
+      "locator": "fid 101"
+    },
+    {
+      "dissent": false,
+      "id": "azerbaijan-1991",
+      "kind": "presence",
+      "locator": "fid 203"
+    },
+    {
+      "dissent": false,
+      "id": "bahamas-1973",
+      "kind": "presence",
+      "locator": "fid 12"
+    },
+    {
+      "dissent": false,
+      "id": "bahamas-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 11"
+    },
+    {
+      "dissent": false,
+      "id": "bahrain-1971",
+      "kind": "presence",
+      "locator": "fid 525"
+    },
+    {
+      "dissent": false,
+      "id": "bangladesh-1971",
+      "kind": "presence",
+      "locator": "fid 581"
+    },
+    {
+      "dissent": false,
+      "id": "barbados-1966",
+      "kind": "presence",
+      "locator": "fid 25"
+    },
+    {
+      "dissent": false,
+      "id": "barbados-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 24"
+    },
+    {
+      "dissent": false,
+      "id": "belarus-byelorussia-1991",
+      "kind": "presence",
+      "locator": "fid 200"
+    },
+    {
+      "dissent": false,
+      "id": "belgium-1886",
+      "kind": "presence",
+      "locator": "fid 77"
+    },
+    {
+      "dissent": false,
+      "id": "belize-1981",
+      "kind": "presence",
+      "locator": "fid 31"
+    },
+    {
+      "dissent": false,
+      "id": "belize-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 29"
+    },
+    {
+      "dissent": false,
+      "id": "belize-under-united-kingdom-1970",
+      "kind": "presence",
+      "locator": "fid 30"
+    },
+    {
+      "dissent": false,
+      "id": "benin-1960",
+      "kind": "presence",
+      "locator": "fid 243"
+    },
+    {
+      "dissent": false,
+      "id": "benin-under-france-1895",
+      "kind": "presence",
+      "locator": "fid 240"
+    },
+    {
+      "dissent": false,
+      "id": "benin-under-france-1897",
+      "kind": "presence",
+      "locator": "fid 241"
+    },
+    {
+      "dissent": false,
+      "id": "benin-under-france-1898",
+      "kind": "presence",
+      "locator": "fid 242"
+    },
+    {
+      "dissent": false,
+      "id": "bhutan-1949",
+      "kind": "presence",
+      "locator": "fid 573"
+    },
+    {
+      "dissent": false,
+      "id": "bhutan-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 574"
+    },
+    {
+      "dissent": false,
+      "id": "bhutan-under-united-kingdom-1947",
+      "kind": "presence",
+      "locator": "fid 575"
+    },
+    {
+      "dissent": false,
+      "id": "bokhara-1886",
+      "kind": "presence",
+      "locator": "fid 702"
+    },
+    {
+      "dissent": false,
+      "id": "bolivia-1886",
+      "kind": "presence",
+      "locator": "fid 60"
+    },
+    {
+      "dissent": false,
+      "id": "bolivia-1903",
+      "kind": "presence",
+      "locator": "fid 61"
+    },
+    {
+      "dissent": false,
+      "id": "bolivia-1909",
+      "kind": "presence",
+      "locator": "fid 62"
+    },
+    {
+      "dissent": false,
+      "id": "bolivia-1938",
+      "kind": "presence",
+      "locator": "fid 63"
+    },
+    {
+      "dissent": false,
+      "id": "bosnia-1886",
+      "kind": "presence",
+      "locator": "fid 677"
+    },
+    {
+      "dissent": false,
+      "id": "bosnia-herzegovina-1992",
+      "kind": "presence",
+      "locator": "fid 140"
+    },
+    {
+      "dissent": false,
+      "id": "botswana-1966",
+      "kind": "presence",
+      "locator": "fid 420"
+    },
+    {
+      "dissent": false,
+      "id": "botswana-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 421"
+    },
+    {
+      "dissent": false,
+      "id": "botswana-under-united-kingdom-1890",
+      "kind": "presence",
+      "locator": "fid 422"
+    },
+    {
+      "dissent": false,
+      "id": "botswana-under-united-kingdom-1895",
+      "kind": "presence",
+      "locator": "fid 423"
+    },
+    {
+      "dissent": false,
+      "id": "brazil-1886",
+      "kind": "presence",
+      "locator": "fid 57"
+    },
+    {
+      "dissent": false,
+      "id": "brazil-1903",
+      "kind": "presence",
+      "locator": "fid 58"
+    },
+    {
+      "dissent": false,
+      "id": "brazil-1909",
+      "kind": "presence",
+      "locator": "fid 59"
+    },
+    {
+      "dissent": false,
+      "id": "brazil-1960",
+      "kind": "presence",
+      "locator": "fid 56"
+    },
+    {
+      "dissent": false,
+      "id": "british-bechuanaland-1886",
+      "kind": "presence",
+      "locator": "fid 695"
+    },
+    {
+      "dissent": false,
+      "id": "british-bechuanaland-1890",
+      "kind": "presence",
+      "locator": "fid 696"
+    },
+    {
+      "dissent": false,
+      "id": "british-cameroons-1919",
+      "kind": "presence",
+      "locator": "fid 304"
+    },
+    {
+      "dissent": false,
+      "id": "british-cameroons-1922",
+      "kind": "presence",
+      "locator": "fid 303"
+    },
+    {
+      "dissent": false,
+      "id": "british-india-1886",
+      "kind": "presence",
+      "locator": "fid 565"
+    },
+    {
+      "dissent": false,
+      "id": "british-india-1893",
+      "kind": "presence",
+      "locator": "fid 566"
+    },
+    {
+      "dissent": false,
+      "id": "british-india-1899",
+      "kind": "presence",
+      "locator": "fid 567"
+    },
+    {
+      "dissent": false,
+      "id": "british-india-1914",
+      "kind": "presence",
+      "locator": "fid 568"
+    },
+    {
+      "dissent": false,
+      "id": "british-india-1931",
+      "kind": "presence",
+      "locator": "fid 569"
+    },
+    {
+      "dissent": false,
+      "id": "british-india-1937",
+      "kind": "presence",
+      "locator": "fid 570"
+    },
+    {
+      "dissent": false,
+      "id": "british-somaliland-somaliland-republic-1886",
+      "kind": "presence",
+      "locator": "fid 369"
+    },
+    {
+      "dissent": false,
+      "id": "british-somaliland-somaliland-republic-1897",
+      "kind": "presence",
+      "locator": "fid 370"
+    },
+    {
+      "dissent": false,
+      "id": "british-togoland-1922",
+      "kind": "presence",
+      "locator": "fid 293"
+    },
+    {
+      "dissent": false,
+      "id": "brunei-1984",
+      "kind": "presence",
+      "locator": "fid 627"
+    },
+    {
+      "dissent": false,
+      "id": "brunei-under-united-kingdom-1888",
+      "kind": "presence",
+      "locator": "fid 628"
+    },
+    {
+      "dissent": false,
+      "id": "bulgaria-1886",
+      "kind": "presence",
+      "locator": "fid 148"
+    },
+    {
+      "dissent": false,
+      "id": "bulgaria-1913",
+      "kind": "presence",
+      "locator": "fid 149"
+    },
+    {
+      "dissent": false,
+      "id": "bulgaria-1918",
+      "kind": "presence",
+      "locator": "fid 150"
+    },
+    {
+      "dissent": false,
+      "id": "bulgaria-1919",
+      "kind": "presence",
+      "locator": "fid 151"
+    },
+    {
+      "dissent": false,
+      "id": "bulgaria-1940",
+      "kind": "presence",
+      "locator": "fid 152"
+    },
+    {
+      "dissent": false,
+      "id": "burkina-faso-upper-volta-1960",
+      "kind": "presence",
+      "locator": "fid 271"
+    },
+    {
+      "dissent": false,
+      "id": "burkina-faso-upper-volta-under-france-1919",
+      "kind": "presence",
+      "locator": "fid 269"
+    },
+    {
+      "dissent": false,
+      "id": "burkina-faso-upper-volta-under-france-1947",
+      "kind": "presence",
+      "locator": "fid 270"
+    },
+    {
+      "dissent": false,
+      "id": "burundi-1962",
+      "kind": "presence",
+      "locator": "fid 366"
+    },
+    {
+      "dissent": false,
+      "id": "cambodia-kampuchea-1953",
+      "kind": "presence",
+      "locator": "fid 599"
+    },
+    {
+      "dissent": false,
+      "id": "cambodia-kampuchea-under-france-1886",
+      "kind": "presence",
+      "locator": "fid 595"
+    },
+    {
+      "dissent": false,
+      "id": "cambodia-kampuchea-under-france-1893",
+      "kind": "presence",
+      "locator": "fid 596"
+    },
+    {
+      "dissent": false,
+      "id": "cambodia-kampuchea-under-france-1904",
+      "kind": "presence",
+      "locator": "fid 597"
+    },
+    {
+      "dissent": false,
+      "id": "cambodia-kampuchea-under-france-1907",
+      "kind": "presence",
+      "locator": "fid 598"
+    },
+    {
+      "dissent": false,
+      "id": "cameroon-1960",
+      "kind": "presence",
+      "locator": "fid 299"
+    },
+    {
+      "dissent": false,
+      "id": "cameroon-1961",
+      "kind": "presence",
+      "locator": "fid 300"
+    },
+    {
+      "dissent": false,
+      "id": "cameroon-under-france-1919",
+      "kind": "presence",
+      "locator": "fid 302"
+    },
+    {
+      "dissent": false,
+      "id": "cameroon-under-france-1922",
+      "kind": "presence",
+      "locator": "fid 301"
+    },
+    {
+      "dissent": false,
+      "id": "canada-1886",
+      "kind": "presence",
+      "locator": "fid 8"
+    },
+    {
+      "dissent": false,
+      "id": "canada-1948",
+      "kind": "presence",
+      "locator": "fid 9"
+    },
+    {
+      "dissent": false,
+      "id": "cape-colony-1886",
+      "kind": "presence",
+      "locator": "fid 406"
+    },
+    {
+      "dissent": false,
+      "id": "cape-colony-1895",
+      "kind": "presence",
+      "locator": "fid 407"
+    },
+    {
+      "dissent": false,
+      "id": "cape-verde-1975",
+      "kind": "presence",
+      "locator": "fid 216"
+    },
+    {
+      "dissent": false,
+      "id": "cape-verde-under-portugal-1886",
+      "kind": "presence",
+      "locator": "fid 215"
+    },
+    {
+      "dissent": false,
+      "id": "central-african-republic-1960",
+      "kind": "presence",
+      "locator": "fid 317"
+    },
+    {
+      "dissent": false,
+      "id": "central-african-republic-under-france-1906",
+      "kind": "presence",
+      "locator": "fid 314"
+    },
+    {
+      "dissent": false,
+      "id": "central-african-republic-under-france-1912",
+      "kind": "presence",
+      "locator": "fid 315"
+    },
+    {
+      "dissent": false,
+      "id": "central-african-republic-under-france-1919",
+      "kind": "presence",
+      "locator": "fid 316"
+    },
+    {
+      "dissent": false,
+      "id": "chad-1960",
+      "kind": "presence",
+      "locator": "fid 319"
+    },
+    {
+      "dissent": false,
+      "id": "chad-under-france-1900",
+      "kind": "presence",
+      "locator": "fid 320"
+    },
+    {
+      "dissent": false,
+      "id": "chad-under-france-1912",
+      "kind": "presence",
+      "locator": "fid 321"
+    },
+    {
+      "dissent": false,
+      "id": "chad-under-france-1919",
+      "kind": "presence",
+      "locator": "fid 322"
+    },
+    {
+      "dissent": false,
+      "id": "chad-under-france-1920",
+      "kind": "presence",
+      "locator": "fid 318"
+    },
+    {
+      "dissent": false,
+      "id": "chile-1886",
+      "kind": "presence",
+      "locator": "fid 66"
+    },
+    {
+      "dissent": false,
+      "id": "chile-1899",
+      "kind": "presence",
+      "locator": "fid 67"
+    },
+    {
+      "dissent": false,
+      "id": "chile-1902",
+      "kind": "presence",
+      "locator": "fid 68"
+    },
+    {
+      "dissent": false,
+      "id": "china-1886",
+      "kind": "presence",
+      "locator": "fid 543"
+    },
+    {
+      "dissent": false,
+      "id": "china-1895",
+      "kind": "presence",
+      "locator": "fid 544"
+    },
+    {
+      "dissent": false,
+      "id": "china-1899",
+      "kind": "presence",
+      "locator": "fid 545"
+    },
+    {
+      "dissent": false,
+      "id": "china-1913",
+      "kind": "presence",
+      "locator": "fid 546"
+    },
+    {
+      "dissent": false,
+      "id": "china-1914",
+      "kind": "presence",
+      "locator": "fid 547"
+    },
+    {
+      "dissent": false,
+      "id": "china-1921",
+      "kind": "presence",
+      "locator": "fid 548"
+    },
+    {
+      "dissent": false,
+      "id": "china-1945",
+      "kind": "presence",
+      "locator": "fid 549"
+    },
+    {
+      "dissent": false,
+      "id": "china-1947",
+      "kind": "presence",
+      "locator": "fid 550"
+    },
+    {
+      "dissent": false,
+      "id": "china-1949",
+      "kind": "presence",
+      "locator": "fid 551"
+    },
+    {
+      "dissent": false,
+      "id": "china-1950",
+      "kind": "presence",
+      "locator": "fid 552"
+    },
+    {
+      "dissent": false,
+      "id": "colombia-1886",
+      "kind": "presence",
+      "locator": "fid 38"
+    },
+    {
+      "dissent": false,
+      "id": "colombia-1903",
+      "kind": "presence",
+      "locator": "fid 39"
+    },
+    {
+      "dissent": false,
+      "id": "colombia-1922",
+      "kind": "presence",
+      "locator": "fid 40"
+    },
+    {
+      "dissent": false,
+      "id": "comoros-1975",
+      "kind": "presence",
+      "locator": "fid 433"
+    },
+    {
+      "dissent": false,
+      "id": "comoros-under-france-1946",
+      "kind": "presence",
+      "locator": "fid 432"
+    },
+    {
+      "dissent": false,
+      "id": "congo-1960",
+      "kind": "presence",
+      "locator": "fid 329"
+    },
+    {
+      "dissent": false,
+      "id": "congo-democratic-republic-of-zaire-1960",
+      "kind": "presence",
+      "locator": "fid 336"
+    },
+    {
+      "dissent": false,
+      "id": "congo-democratic-republic-of-zaire-under-belgium-1886",
+      "kind": "presence",
+      "locator": "fid 330"
+    },
+    {
+      "dissent": false,
+      "id": "congo-democratic-republic-of-zaire-under-belgium-1891",
+      "kind": "presence",
+      "locator": "fid 331"
+    },
+    {
+      "dissent": false,
+      "id": "congo-democratic-republic-of-zaire-under-belgium-1891-b",
+      "kind": "presence",
+      "locator": "fid 332"
+    },
+    {
+      "dissent": false,
+      "id": "congo-democratic-republic-of-zaire-under-belgium-1894",
+      "kind": "presence",
+      "locator": "fid 333"
+    },
+    {
+      "dissent": false,
+      "id": "congo-democratic-republic-of-zaire-under-belgium-1908",
+      "kind": "presence",
+      "locator": "fid 334"
+    },
+    {
+      "dissent": false,
+      "id": "congo-democratic-republic-of-zaire-under-belgium-1910",
+      "kind": "presence",
+      "locator": "fid 335"
+    },
+    {
+      "dissent": false,
+      "id": "congo-under-france-1886",
+      "kind": "presence",
+      "locator": "fid 323"
+    },
+    {
+      "dissent": false,
+      "id": "congo-under-france-1898",
+      "kind": "presence",
+      "locator": "fid 324"
+    },
+    {
+      "dissent": false,
+      "id": "congo-under-france-1900",
+      "kind": "presence",
+      "locator": "fid 325"
+    },
+    {
+      "dissent": false,
+      "id": "congo-under-france-1906",
+      "kind": "presence",
+      "locator": "fid 326"
+    },
+    {
+      "dissent": false,
+      "id": "congo-under-france-1912",
+      "kind": "presence",
+      "locator": "fid 327"
+    },
+    {
+      "dissent": false,
+      "id": "congo-under-france-1919",
+      "kind": "presence",
+      "locator": "fid 328"
+    },
+    {
+      "dissent": false,
+      "id": "costa-rica-1886",
+      "kind": "presence",
+      "locator": "fid 36"
+    },
+    {
+      "dissent": false,
+      "id": "cote-d-ivoire-1960",
+      "kind": "presence",
+      "locator": "fid 264"
+    },
+    {
+      "dissent": false,
+      "id": "cote-d-ivoire-1983",
+      "kind": "presence",
+      "locator": "fid 265"
+    },
+    {
+      "dissent": false,
+      "id": "cote-d-ivoire-under-france-1889",
+      "kind": "presence",
+      "locator": "fid 266"
+    },
+    {
+      "dissent": false,
+      "id": "cote-d-ivoire-under-france-1893",
+      "kind": "presence",
+      "locator": "fid 263"
+    },
+    {
+      "dissent": false,
+      "id": "cote-d-ivoire-under-france-1900",
+      "kind": "presence",
+      "locator": "fid 260"
+    },
+    {
+      "dissent": false,
+      "id": "cote-d-ivoire-under-france-1902",
+      "kind": "presence",
+      "locator": "fid 261"
+    },
+    {
+      "dissent": false,
+      "id": "cote-d-ivoire-under-france-1932",
+      "kind": "presence",
+      "locator": "fid 262"
+    },
+    {
+      "dissent": false,
+      "id": "cote-d-ivoire-under-france-1933",
+      "kind": "presence",
+      "locator": "fid 258"
+    },
+    {
+      "dissent": false,
+      "id": "cote-d-ivoire-under-france-1947",
+      "kind": "presence",
+      "locator": "fid 259"
+    },
+    {
+      "dissent": false,
+      "id": "croatia-1992",
+      "kind": "presence",
+      "locator": "fid 134"
+    },
+    {
+      "dissent": false,
+      "id": "cuba-1898",
+      "kind": "presence",
+      "locator": "fid 15"
+    },
+    {
+      "dissent": false,
+      "id": "cuba-1902",
+      "kind": "presence",
+      "locator": "fid 14"
+    },
+    {
+      "dissent": false,
+      "id": "cuba-under-spain-1886",
+      "kind": "presence",
+      "locator": "fid 13"
+    },
+    {
+      "dissent": false,
+      "id": "cyprus-1960",
+      "kind": "presence",
+      "locator": "fid 147"
+    },
+    {
+      "dissent": false,
+      "id": "cyprus-under-united-kingdom-1914",
+      "kind": "presence",
+      "locator": "fid 146"
+    },
+    {
+      "dissent": false,
+      "id": "czech-republic-1993",
+      "kind": "presence",
+      "locator": "fid 115"
+    },
+    {
+      "dissent": false,
+      "id": "czechoslovakia-1918",
+      "kind": "presence",
+      "locator": "fid 110"
+    },
+    {
+      "dissent": false,
+      "id": "czechoslovakia-1938",
+      "kind": "presence",
+      "locator": "fid 111"
+    },
+    {
+      "dissent": false,
+      "id": "czechoslovakia-1938-b",
+      "kind": "presence",
+      "locator": "fid 112"
+    },
+    {
+      "dissent": false,
+      "id": "czechoslovakia-1945",
+      "kind": "presence",
+      "locator": "fid 113"
+    },
+    {
+      "dissent": false,
+      "id": "czechoslovakia-1947",
+      "kind": "presence",
+      "locator": "fid 114"
+    },
+    {
+      "dissent": false,
+      "id": "danzig-1919",
+      "kind": "presence",
+      "locator": "fid 99"
+    },
+    {
+      "dissent": false,
+      "id": "denmark-1886",
+      "kind": "presence",
+      "locator": "fid 209"
+    },
+    {
+      "dissent": false,
+      "id": "denmark-1920",
+      "kind": "presence",
+      "locator": "fid 210"
+    },
+    {
+      "dissent": false,
+      "id": "djibouti-1977",
+      "kind": "presence",
+      "locator": "fid 373"
+    },
+    {
+      "dissent": false,
+      "id": "djibouti-under-france-1886",
+      "kind": "presence",
+      "locator": "fid 371"
+    },
+    {
+      "dissent": false,
+      "id": "djibouti-under-france-1900",
+      "kind": "presence",
+      "locator": "fid 372"
+    },
+    {
+      "dissent": false,
+      "id": "dominican-republic-1886",
+      "kind": "presence",
+      "locator": "fid 19"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-east-indies-1886",
+      "kind": "presence",
+      "locator": "fid 634"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-east-indies-1889",
+      "kind": "presence",
+      "locator": "fid 635"
+    },
+    {
+      "dissent": false,
+      "id": "east-aden-protectorate-1937",
+      "kind": "presence",
+      "locator": "fid 701"
+    },
+    {
+      "dissent": false,
+      "id": "east-timor-2002",
+      "kind": "presence",
+      "locator": "fid 645"
+    },
+    {
+      "dissent": false,
+      "id": "east-timor-under-portugal-1886",
+      "kind": "presence",
+      "locator": "fid 644"
+    },
+    {
+      "dissent": false,
+      "id": "ecuador-1886",
+      "kind": "presence",
+      "locator": "fid 50"
+    },
+    {
+      "dissent": false,
+      "id": "ecuador-1942",
+      "kind": "presence",
+      "locator": "fid 51"
+    },
+    {
+      "dissent": false,
+      "id": "egypt-1922",
+      "kind": "presence",
+      "locator": "fid 491"
+    },
+    {
+      "dissent": false,
+      "id": "egypt-1925",
+      "kind": "presence",
+      "locator": "fid 492"
+    },
+    {
+      "dissent": false,
+      "id": "egypt-1967",
+      "kind": "presence",
+      "locator": "fid 493"
+    },
+    {
+      "dissent": false,
+      "id": "egypt-1979",
+      "kind": "presence",
+      "locator": "fid 494"
+    },
+    {
+      "dissent": false,
+      "id": "egypt-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 489"
+    },
+    {
+      "dissent": false,
+      "id": "egypt-under-united-kingdom-1899",
+      "kind": "presence",
+      "locator": "fid 490"
+    },
+    {
+      "dissent": false,
+      "id": "egypt-under-united-kingdom-1914",
+      "kind": "presence",
+      "locator": "fid 495"
+    },
+    {
+      "dissent": false,
+      "id": "el-salvador-1886",
+      "kind": "presence",
+      "locator": "fid 34"
+    },
+    {
+      "dissent": false,
+      "id": "equatorial-guinea-1968",
+      "kind": "presence",
+      "locator": "fid 223"
+    },
+    {
+      "dissent": false,
+      "id": "equatorial-guinea-under-spain-1886",
+      "kind": "presence",
+      "locator": "fid 221"
+    },
+    {
+      "dissent": false,
+      "id": "equatorial-guinea-under-spain-1900",
+      "kind": "presence",
+      "locator": "fid 222"
+    },
+    {
+      "dissent": false,
+      "id": "eritrea-1941",
+      "kind": "presence",
+      "locator": "fid 385"
+    },
+    {
+      "dissent": false,
+      "id": "eritrea-1993",
+      "kind": "presence",
+      "locator": "fid 384"
+    },
+    {
+      "dissent": false,
+      "id": "eritrea-under-italy-sardinia-1886",
+      "kind": "presence",
+      "locator": "fid 383"
+    },
+    {
+      "dissent": false,
+      "id": "eritrea-under-italy-sardinia-1889",
+      "kind": "presence",
+      "locator": "fid 381"
+    },
+    {
+      "dissent": false,
+      "id": "eritrea-under-italy-sardinia-1900",
+      "kind": "presence",
+      "locator": "fid 382"
+    },
+    {
+      "dissent": false,
+      "id": "estonia-1918",
+      "kind": "presence",
+      "locator": "fid 189"
+    },
+    {
+      "dissent": false,
+      "id": "estonia-1991",
+      "kind": "presence",
+      "locator": "fid 190"
+    },
+    {
+      "dissent": false,
+      "id": "ethiopia-1886",
+      "kind": "presence",
+      "locator": "fid 374"
+    },
+    {
+      "dissent": false,
+      "id": "ethiopia-1889",
+      "kind": "presence",
+      "locator": "fid 375"
+    },
+    {
+      "dissent": false,
+      "id": "ethiopia-1897",
+      "kind": "presence",
+      "locator": "fid 376"
+    },
+    {
+      "dissent": false,
+      "id": "ethiopia-1902",
+      "kind": "presence",
+      "locator": "fid 377"
+    },
+    {
+      "dissent": false,
+      "id": "ethiopia-1907",
+      "kind": "presence",
+      "locator": "fid 378"
+    },
+    {
+      "dissent": false,
+      "id": "ethiopia-1952",
+      "kind": "presence",
+      "locator": "fid 379"
+    },
+    {
+      "dissent": false,
+      "id": "ethiopia-1993",
+      "kind": "presence",
+      "locator": "fid 380"
+    },
+    {
+      "dissent": false,
+      "id": "federated-malay-states-1896",
+      "kind": "presence",
+      "locator": "fid 614"
+    },
+    {
+      "dissent": false,
+      "id": "federated-malay-states-1909",
+      "kind": "presence",
+      "locator": "fid 615"
+    },
+    {
+      "dissent": false,
+      "id": "federation-of-rhodesia-and-nyasaland-1953",
+      "kind": "presence",
+      "locator": "fid 394"
+    },
+    {
+      "dissent": false,
+      "id": "federation-of-south-arabia-1962",
+      "kind": "presence",
+      "locator": "fid 700"
+    },
+    {
+      "dissent": false,
+      "id": "fiji-1970",
+      "kind": "presence",
+      "locator": "fid 674"
+    },
+    {
+      "dissent": false,
+      "id": "fiji-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 673"
+    },
+    {
+      "dissent": false,
+      "id": "finland-1917",
+      "kind": "presence",
+      "locator": "fid 204"
+    },
+    {
+      "dissent": false,
+      "id": "finland-1940",
+      "kind": "presence",
+      "locator": "fid 205"
+    },
+    {
+      "dissent": false,
+      "id": "france-1886",
+      "kind": "presence",
+      "locator": "fid 79"
+    },
+    {
+      "dissent": false,
+      "id": "france-1919",
+      "kind": "presence",
+      "locator": "fid 80"
+    },
+    {
+      "dissent": false,
+      "id": "french-guyana-1886",
+      "kind": "presence",
+      "locator": "fid 47"
+    },
+    {
+      "dissent": false,
+      "id": "french-guyana-1930",
+      "kind": "presence",
+      "locator": "fid 48"
+    },
+    {
+      "dissent": false,
+      "id": "french-guyana-1946",
+      "kind": "presence",
+      "locator": "fid 49"
+    },
+    {
+      "dissent": false,
+      "id": "french-polynesia-1903",
+      "kind": "presence",
+      "locator": "fid 675"
+    },
+    {
+      "dissent": false,
+      "id": "french-west-africa-1895",
+      "kind": "presence",
+      "locator": "fid 226"
+    },
+    {
+      "dissent": false,
+      "id": "french-west-africa-1898",
+      "kind": "presence",
+      "locator": "fid 227"
+    },
+    {
+      "dissent": false,
+      "id": "french-west-africa-1902",
+      "kind": "presence",
+      "locator": "fid 228"
+    },
+    {
+      "dissent": false,
+      "id": "gabon-1960",
+      "kind": "presence",
+      "locator": "fid 312"
+    },
+    {
+      "dissent": false,
+      "id": "gabon-under-france-1886",
+      "kind": "presence",
+      "locator": "fid 313"
+    },
+    {
+      "dissent": false,
+      "id": "gabon-under-france-1903",
+      "kind": "presence",
+      "locator": "fid 308"
+    },
+    {
+      "dissent": false,
+      "id": "gabon-under-france-1906",
+      "kind": "presence",
+      "locator": "fid 309"
+    },
+    {
+      "dissent": false,
+      "id": "gabon-under-france-1912",
+      "kind": "presence",
+      "locator": "fid 310"
+    },
+    {
+      "dissent": false,
+      "id": "gabon-under-france-1919",
+      "kind": "presence",
+      "locator": "fid 311"
+    },
+    {
+      "dissent": false,
+      "id": "gambia-1965",
+      "kind": "presence",
+      "locator": "fid 225"
+    },
+    {
+      "dissent": false,
+      "id": "gambia-under-united-kingdom-1889",
+      "kind": "presence",
+      "locator": "fid 224"
+    },
+    {
+      "dissent": false,
+      "id": "gaza-1948",
+      "kind": "presence",
+      "locator": "fid 698"
+    },
+    {
+      "dissent": false,
+      "id": "georgia-1991",
+      "kind": "presence",
+      "locator": "fid 202"
+    },
+    {
+      "dissent": false,
+      "id": "german-democratic-republic-1945",
+      "kind": "presence",
+      "locator": "fid 92"
+    },
+    {
+      "dissent": false,
+      "id": "german-democratic-republic-1949",
+      "kind": "presence",
+      "locator": "fid 91"
+    },
+    {
+      "dissent": false,
+      "id": "german-federal-republic-1945",
+      "kind": "presence",
+      "locator": "fid 90"
+    },
+    {
+      "dissent": false,
+      "id": "german-federal-republic-1949",
+      "kind": "presence",
+      "locator": "fid 89"
+    },
+    {
+      "dissent": false,
+      "id": "german-federal-republic-1990",
+      "kind": "presence",
+      "locator": "fid 88"
+    },
+    {
+      "dissent": false,
+      "id": "german-solomon-islands-1886",
+      "kind": "presence",
+      "locator": "fid 710"
+    },
+    {
+      "dissent": false,
+      "id": "german-togoland-1886",
+      "kind": "presence",
+      "locator": "fid 283"
+    },
+    {
+      "dissent": false,
+      "id": "german-togoland-1887",
+      "kind": "presence",
+      "locator": "fid 287"
+    },
+    {
+      "dissent": false,
+      "id": "german-togoland-1888",
+      "kind": "presence",
+      "locator": "fid 288"
+    },
+    {
+      "dissent": false,
+      "id": "german-togoland-1897",
+      "kind": "presence",
+      "locator": "fid 284"
+    },
+    {
+      "dissent": false,
+      "id": "german-togoland-1897-b",
+      "kind": "presence",
+      "locator": "fid 285"
+    },
+    {
+      "dissent": false,
+      "id": "german-togoland-1897-c",
+      "kind": "presence",
+      "locator": "fid 286"
+    },
+    {
+      "dissent": false,
+      "id": "german-togoland-1914",
+      "kind": "presence",
+      "locator": "fid 289"
+    },
+    {
+      "dissent": false,
+      "id": "german-togoland-1919",
+      "kind": "presence",
+      "locator": "fid 290"
+    },
+    {
+      "dissent": false,
+      "id": "germany-prussia-1886",
+      "kind": "presence",
+      "locator": "fid 84"
+    },
+    {
+      "dissent": false,
+      "id": "germany-prussia-1919",
+      "kind": "presence",
+      "locator": "fid 85"
+    },
+    {
+      "dissent": false,
+      "id": "germany-prussia-1920",
+      "kind": "presence",
+      "locator": "fid 86"
+    },
+    {
+      "dissent": false,
+      "id": "germany-prussia-1938",
+      "kind": "presence",
+      "locator": "fid 87"
+    },
+    {
+      "dissent": false,
+      "id": "ghana-1957",
+      "kind": "presence",
+      "locator": "fid 282"
+    },
+    {
+      "dissent": false,
+      "id": "ghana-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 278"
+    },
+    {
+      "dissent": false,
+      "id": "ghana-under-united-kingdom-1888",
+      "kind": "presence",
+      "locator": "fid 279"
+    },
+    {
+      "dissent": false,
+      "id": "ghana-under-united-kingdom-1898",
+      "kind": "presence",
+      "locator": "fid 280"
+    },
+    {
+      "dissent": false,
+      "id": "ghana-under-united-kingdom-1956",
+      "kind": "presence",
+      "locator": "fid 281"
+    },
+    {
+      "dissent": false,
+      "id": "greece-1886",
+      "kind": "presence",
+      "locator": "fid 143"
+    },
+    {
+      "dissent": false,
+      "id": "greece-1913",
+      "kind": "presence",
+      "locator": "fid 144"
+    },
+    {
+      "dissent": false,
+      "id": "greece-1919",
+      "kind": "presence",
+      "locator": "fid 145"
+    },
+    {
+      "dissent": false,
+      "id": "guadeloupe-1886",
+      "kind": "presence",
+      "locator": "fid 26"
+    },
+    {
+      "dissent": false,
+      "id": "guatemala-1886",
+      "kind": "presence",
+      "locator": "fid 32"
+    },
+    {
+      "dissent": false,
+      "id": "guinea-1958",
+      "kind": "presence",
+      "locator": "fid 268"
+    },
+    {
+      "dissent": false,
+      "id": "guinea-bissau-1974",
+      "kind": "presence",
+      "locator": "fid 220"
+    },
+    {
+      "dissent": false,
+      "id": "guinea-bissau-under-portugal-1886",
+      "kind": "presence",
+      "locator": "fid 218"
+    },
+    {
+      "dissent": false,
+      "id": "guinea-bissau-under-portugal-1886-b",
+      "kind": "presence",
+      "locator": "fid 219"
+    },
+    {
+      "dissent": false,
+      "id": "guinea-bissau-under-portugal-1942",
+      "kind": "presence",
+      "locator": "fid 217"
+    },
+    {
+      "dissent": false,
+      "id": "guinea-under-france-1894",
+      "kind": "presence",
+      "locator": "fid 267"
+    },
+    {
+      "dissent": false,
+      "id": "guyana-1966",
+      "kind": "presence",
+      "locator": "fid 43"
+    },
+    {
+      "dissent": false,
+      "id": "guyana-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 42"
+    },
+    {
+      "dissent": false,
+      "id": "haiti-1886",
+      "kind": "presence",
+      "locator": "fid 16"
+    },
+    {
+      "dissent": false,
+      "id": "haiti-1915",
+      "kind": "presence",
+      "locator": "fid 18"
+    },
+    {
+      "dissent": false,
+      "id": "haiti-1934",
+      "kind": "presence",
+      "locator": "fid 17"
+    },
+    {
+      "dissent": false,
+      "id": "hawaii-1898",
+      "kind": "presence",
+      "locator": "fid 5"
+    },
+    {
+      "dissent": false,
+      "id": "herzegovina-1886",
+      "kind": "presence",
+      "locator": "fid 678"
+    },
+    {
+      "dissent": false,
+      "id": "honduras-1886",
+      "kind": "presence",
+      "locator": "fid 33"
+    },
+    {
+      "dissent": false,
+      "id": "hungary-1918",
+      "kind": "presence",
+      "locator": "fid 104"
+    },
+    {
+      "dissent": false,
+      "id": "hungary-1918-b",
+      "kind": "presence",
+      "locator": "fid 105"
+    },
+    {
+      "dissent": false,
+      "id": "hungary-1919",
+      "kind": "presence",
+      "locator": "fid 106"
+    },
+    {
+      "dissent": false,
+      "id": "hungary-1920",
+      "kind": "presence",
+      "locator": "fid 107"
+    },
+    {
+      "dissent": false,
+      "id": "hungary-1938",
+      "kind": "presence",
+      "locator": "fid 108"
+    },
+    {
+      "dissent": false,
+      "id": "hungary-1947",
+      "kind": "presence",
+      "locator": "fid 109"
+    },
+    {
+      "dissent": false,
+      "id": "iceland-1942",
+      "kind": "presence",
+      "locator": "fid 214"
+    },
+    {
+      "dissent": false,
+      "id": "iceland-1944",
+      "kind": "presence",
+      "locator": "fid 213"
+    },
+    {
+      "dissent": false,
+      "id": "iceland-under-denmark-1886",
+      "kind": "presence",
+      "locator": "fid 211"
+    },
+    {
+      "dissent": false,
+      "id": "iceland-under-denmark-1918",
+      "kind": "presence",
+      "locator": "fid 212"
+    },
+    {
+      "dissent": false,
+      "id": "indonesia-1945",
+      "kind": "presence",
+      "locator": "fid 636"
+    },
+    {
+      "dissent": false,
+      "id": "indonesia-1949",
+      "kind": "presence",
+      "locator": "fid 637"
+    },
+    {
+      "dissent": false,
+      "id": "indonesia-1969",
+      "kind": "presence",
+      "locator": "fid 638"
+    },
+    {
+      "dissent": false,
+      "id": "indonesia-1976",
+      "kind": "presence",
+      "locator": "fid 639"
+    },
+    {
+      "dissent": false,
+      "id": "indonesia-2002",
+      "kind": "presence",
+      "locator": "fid 640"
+    },
+    {
+      "dissent": false,
+      "id": "inini-1930",
+      "kind": "presence",
+      "locator": "fid 676"
+    },
+    {
+      "dissent": false,
+      "id": "iran-persia-1886",
+      "kind": "presence",
+      "locator": "fid 474"
+    },
+    {
+      "dissent": false,
+      "id": "iraq-1932",
+      "kind": "presence",
+      "locator": "fid 484"
+    },
+    {
+      "dissent": false,
+      "id": "iraq-under-united-kingdom-1920",
+      "kind": "presence",
+      "locator": "fid 488"
+    },
+    {
+      "dissent": false,
+      "id": "iraq-under-united-kingdom-1920-b",
+      "kind": "presence",
+      "locator": "fid 485"
+    },
+    {
+      "dissent": false,
+      "id": "iraq-under-united-kingdom-1922",
+      "kind": "presence",
+      "locator": "fid 486"
+    },
+    {
+      "dissent": false,
+      "id": "iraq-under-united-kingdom-1932",
+      "kind": "presence",
+      "locator": "fid 487"
+    },
+    {
+      "dissent": false,
+      "id": "ireland-1921",
+      "kind": "presence",
+      "locator": "fid 75"
+    },
+    {
+      "dissent": false,
+      "id": "israel-1948",
+      "kind": "presence",
+      "locator": "fid 512"
+    },
+    {
+      "dissent": false,
+      "id": "israel-1967",
+      "kind": "presence",
+      "locator": "fid 513"
+    },
+    {
+      "dissent": false,
+      "id": "israel-1979",
+      "kind": "presence",
+      "locator": "fid 514"
+    },
+    {
+      "dissent": false,
+      "id": "italian-somaliland-1889",
+      "kind": "presence",
+      "locator": "fid 686"
+    },
+    {
+      "dissent": false,
+      "id": "italian-somaliland-1897",
+      "kind": "presence",
+      "locator": "fid 687"
+    },
+    {
+      "dissent": false,
+      "id": "italian-somaliland-1908",
+      "kind": "presence",
+      "locator": "fid 688"
+    },
+    {
+      "dissent": false,
+      "id": "italian-somaliland-1924",
+      "kind": "presence",
+      "locator": "fid 689"
+    },
+    {
+      "dissent": false,
+      "id": "italian-somaliland-1941",
+      "kind": "presence",
+      "locator": "fid 691"
+    },
+    {
+      "dissent": false,
+      "id": "italian-somaliland-1950",
+      "kind": "presence",
+      "locator": "fid 690"
+    },
+    {
+      "dissent": false,
+      "id": "italy-sardinia-1886",
+      "kind": "presence",
+      "locator": "fid 117"
+    },
+    {
+      "dissent": false,
+      "id": "italy-sardinia-1919",
+      "kind": "presence",
+      "locator": "fid 118"
+    },
+    {
+      "dissent": false,
+      "id": "jamaica-1962",
+      "kind": "presence",
+      "locator": "fid 21"
+    },
+    {
+      "dissent": false,
+      "id": "jamaica-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 20"
+    },
+    {
+      "dissent": false,
+      "id": "jammu-and-kashmir-1947",
+      "kind": "presence",
+      "locator": "fid 705"
+    },
+    {
+      "dissent": false,
+      "id": "japan-1886",
+      "kind": "presence",
+      "locator": "fid 564"
+    },
+    {
+      "dissent": false,
+      "id": "jordan-1946",
+      "kind": "presence",
+      "locator": "fid 504"
+    },
+    {
+      "dissent": false,
+      "id": "jordan-under-united-kingdom-1920",
+      "kind": "presence",
+      "locator": "fid 508"
+    },
+    {
+      "dissent": false,
+      "id": "jordan-under-united-kingdom-1920-b",
+      "kind": "presence",
+      "locator": "fid 505"
+    },
+    {
+      "dissent": false,
+      "id": "jordan-under-united-kingdom-1923",
+      "kind": "presence",
+      "locator": "fid 506"
+    },
+    {
+      "dissent": false,
+      "id": "jordan-under-united-kingdom-1925",
+      "kind": "presence",
+      "locator": "fid 507"
+    },
+    {
+      "dissent": false,
+      "id": "kamerun-1886",
+      "kind": "presence",
+      "locator": "fid 296"
+    },
+    {
+      "dissent": false,
+      "id": "kamerun-1894",
+      "kind": "presence",
+      "locator": "fid 297"
+    },
+    {
+      "dissent": false,
+      "id": "kamerun-1901",
+      "kind": "presence",
+      "locator": "fid 294"
+    },
+    {
+      "dissent": false,
+      "id": "kamerun-1912",
+      "kind": "presence",
+      "locator": "fid 295"
+    },
+    {
+      "dissent": false,
+      "id": "kamerun-1916",
+      "kind": "presence",
+      "locator": "fid 298"
+    },
+    {
+      "dissent": false,
+      "id": "kashmir-north-azad-1947",
+      "kind": "presence",
+      "locator": "fid 706"
+    },
+    {
+      "dissent": false,
+      "id": "kazakhstan-1991",
+      "kind": "presence",
+      "locator": "fid 541"
+    },
+    {
+      "dissent": false,
+      "id": "kazakhstan-1997",
+      "kind": "presence",
+      "locator": "fid 542"
+    },
+    {
+      "dissent": false,
+      "id": "kenya-1963",
+      "kind": "presence",
+      "locator": "fid 346"
+    },
+    {
+      "dissent": false,
+      "id": "kenya-under-united-kingdom-1888",
+      "kind": "presence",
+      "locator": "fid 347"
+    },
+    {
+      "dissent": false,
+      "id": "kenya-under-united-kingdom-1891",
+      "kind": "presence",
+      "locator": "fid 348"
+    },
+    {
+      "dissent": false,
+      "id": "kenya-under-united-kingdom-1894",
+      "kind": "presence",
+      "locator": "fid 349"
+    },
+    {
+      "dissent": false,
+      "id": "kenya-under-united-kingdom-1902",
+      "kind": "presence",
+      "locator": "fid 350"
+    },
+    {
+      "dissent": false,
+      "id": "kenya-under-united-kingdom-1907",
+      "kind": "presence",
+      "locator": "fid 351"
+    },
+    {
+      "dissent": false,
+      "id": "kenya-under-united-kingdom-1907-b",
+      "kind": "presence",
+      "locator": "fid 352"
+    },
+    {
+      "dissent": false,
+      "id": "kenya-under-united-kingdom-1914",
+      "kind": "presence",
+      "locator": "fid 353"
+    },
+    {
+      "dissent": false,
+      "id": "kenya-under-united-kingdom-1920",
+      "kind": "presence",
+      "locator": "fid 343"
+    },
+    {
+      "dissent": false,
+      "id": "kenya-under-united-kingdom-1924",
+      "kind": "presence",
+      "locator": "fid 344"
+    },
+    {
+      "dissent": false,
+      "id": "kenya-under-united-kingdom-1926",
+      "kind": "presence",
+      "locator": "fid 345"
+    },
+    {
+      "dissent": false,
+      "id": "khiva-1886",
+      "kind": "presence",
+      "locator": "fid 703"
+    },
+    {
+      "dissent": false,
+      "id": "korea-1886",
+      "kind": "presence",
+      "locator": "fid 559"
+    },
+    {
+      "dissent": false,
+      "id": "korea-1910",
+      "kind": "presence",
+      "locator": "fid 558"
+    },
+    {
+      "dissent": false,
+      "id": "korea-people-s-republic-of-1945",
+      "kind": "presence",
+      "locator": "fid 561"
+    },
+    {
+      "dissent": false,
+      "id": "korea-people-s-republic-of-1948",
+      "kind": "presence",
+      "locator": "fid 560"
+    },
+    {
+      "dissent": false,
+      "id": "korea-republic-of-1945",
+      "kind": "presence",
+      "locator": "fid 563"
+    },
+    {
+      "dissent": false,
+      "id": "korea-republic-of-1948",
+      "kind": "presence",
+      "locator": "fid 562"
+    },
+    {
+      "dissent": false,
+      "id": "kosovo-2008",
+      "kind": "presence",
+      "locator": "fid 141"
+    },
+    {
+      "dissent": false,
+      "id": "kuwait-1961",
+      "kind": "presence",
+      "locator": "fid 524"
+    },
+    {
+      "dissent": false,
+      "id": "kyrgyz-republic-1991",
+      "kind": "presence",
+      "locator": "fid 539"
+    },
+    {
+      "dissent": false,
+      "id": "lagos-1886",
+      "kind": "presence",
+      "locator": "fid 679"
+    },
+    {
+      "dissent": false,
+      "id": "laos-1954",
+      "kind": "presence",
+      "locator": "fid 602"
+    },
+    {
+      "dissent": false,
+      "id": "laos-under-france-1893",
+      "kind": "presence",
+      "locator": "fid 600"
+    },
+    {
+      "dissent": false,
+      "id": "laos-under-france-1896",
+      "kind": "presence",
+      "locator": "fid 601"
+    },
+    {
+      "dissent": false,
+      "id": "latvia-1918",
+      "kind": "presence",
+      "locator": "fid 191"
+    },
+    {
+      "dissent": false,
+      "id": "latvia-1991",
+      "kind": "presence",
+      "locator": "fid 192"
+    },
+    {
+      "dissent": false,
+      "id": "lebanon-1944",
+      "kind": "presence",
+      "locator": "fid 501"
+    },
+    {
+      "dissent": false,
+      "id": "lebanon-under-france-1920",
+      "kind": "presence",
+      "locator": "fid 503"
+    },
+    {
+      "dissent": false,
+      "id": "lebanon-under-france-1920-b",
+      "kind": "presence",
+      "locator": "fid 502"
+    },
+    {
+      "dissent": false,
+      "id": "lesotho-1966",
+      "kind": "presence",
+      "locator": "fid 419"
+    },
+    {
+      "dissent": false,
+      "id": "lesotho-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 418"
+    },
+    {
+      "dissent": false,
+      "id": "liberia-1886",
+      "kind": "presence",
+      "locator": "fid 272"
+    },
+    {
+      "dissent": false,
+      "id": "liberia-1892",
+      "kind": "presence",
+      "locator": "fid 273"
+    },
+    {
+      "dissent": false,
+      "id": "libya-1951",
+      "kind": "presence",
+      "locator": "fid 463"
+    },
+    {
+      "dissent": false,
+      "id": "libya-under-italy-sardinia-1912",
+      "kind": "presence",
+      "locator": "fid 459"
+    },
+    {
+      "dissent": false,
+      "id": "libya-under-italy-sardinia-1919",
+      "kind": "presence",
+      "locator": "fid 460"
+    },
+    {
+      "dissent": false,
+      "id": "libya-under-italy-sardinia-1925",
+      "kind": "presence",
+      "locator": "fid 461"
+    },
+    {
+      "dissent": false,
+      "id": "libya-under-italy-sardinia-1934",
+      "kind": "presence",
+      "locator": "fid 462"
+    },
+    {
+      "dissent": false,
+      "id": "libya-under-italy-sardinia-1943",
+      "kind": "presence",
+      "locator": "fid 465"
+    },
+    {
+      "dissent": false,
+      "id": "libya-under-italy-sardinia-1949",
+      "kind": "presence",
+      "locator": "fid 464"
+    },
+    {
+      "dissent": false,
+      "id": "lithuania-1918",
+      "kind": "presence",
+      "locator": "fid 195"
+    },
+    {
+      "dissent": false,
+      "id": "lithuania-1920",
+      "kind": "presence",
+      "locator": "fid 196"
+    },
+    {
+      "dissent": false,
+      "id": "lithuania-1922",
+      "kind": "presence",
+      "locator": "fid 193"
+    },
+    {
+      "dissent": false,
+      "id": "lithuania-1939",
+      "kind": "presence",
+      "locator": "fid 194"
+    },
+    {
+      "dissent": false,
+      "id": "lithuania-1991",
+      "kind": "presence",
+      "locator": "fid 197"
+    },
+    {
+      "dissent": false,
+      "id": "luxembourg-1886",
+      "kind": "presence",
+      "locator": "fid 78"
+    },
+    {
+      "dissent": false,
+      "id": "macedonia-fyrom-north-macedonia-1991",
+      "kind": "presence",
+      "locator": "fid 133"
+    },
+    {
+      "dissent": false,
+      "id": "madagascar-malagasy-1886",
+      "kind": "presence",
+      "locator": "fid 430"
+    },
+    {
+      "dissent": false,
+      "id": "madagascar-malagasy-1896",
+      "kind": "presence",
+      "locator": "fid 427"
+    },
+    {
+      "dissent": false,
+      "id": "madagascar-malagasy-1912",
+      "kind": "presence",
+      "locator": "fid 428"
+    },
+    {
+      "dissent": false,
+      "id": "madagascar-malagasy-1946",
+      "kind": "presence",
+      "locator": "fid 429"
+    },
+    {
+      "dissent": false,
+      "id": "madagascar-malagasy-1960",
+      "kind": "presence",
+      "locator": "fid 431"
+    },
+    {
+      "dissent": false,
+      "id": "malawi-1964",
+      "kind": "presence",
+      "locator": "fid 402"
+    },
+    {
+      "dissent": false,
+      "id": "malawi-under-united-kingdom-1891",
+      "kind": "presence",
+      "locator": "fid 403"
+    },
+    {
+      "dissent": false,
+      "id": "malawi-under-united-kingdom-1964",
+      "kind": "presence",
+      "locator": "fid 404"
+    },
+    {
+      "dissent": false,
+      "id": "malaysia-1957",
+      "kind": "presence",
+      "locator": "fid 611"
+    },
+    {
+      "dissent": false,
+      "id": "malaysia-1963",
+      "kind": "presence",
+      "locator": "fid 612"
+    },
+    {
+      "dissent": false,
+      "id": "malaysia-1965",
+      "kind": "presence",
+      "locator": "fid 613"
+    },
+    {
+      "dissent": false,
+      "id": "malaysia-under-united-kingdom-1946",
+      "kind": "presence",
+      "locator": "fid 610"
+    },
+    {
+      "dissent": false,
+      "id": "maldives-1965",
+      "kind": "presence",
+      "locator": "fid 587"
+    },
+    {
+      "dissent": false,
+      "id": "maldives-under-united-kingdom-1887",
+      "kind": "presence",
+      "locator": "fid 588"
+    },
+    {
+      "dissent": false,
+      "id": "mali-1960",
+      "kind": "presence",
+      "locator": "fid 237"
+    },
+    {
+      "dissent": false,
+      "id": "mali-under-france-1905",
+      "kind": "presence",
+      "locator": "fid 229"
+    },
+    {
+      "dissent": false,
+      "id": "mali-under-france-1913",
+      "kind": "presence",
+      "locator": "fid 230"
+    },
+    {
+      "dissent": false,
+      "id": "mali-under-france-1919",
+      "kind": "presence",
+      "locator": "fid 231"
+    },
+    {
+      "dissent": false,
+      "id": "mali-under-france-1932",
+      "kind": "presence",
+      "locator": "fid 232"
+    },
+    {
+      "dissent": false,
+      "id": "mali-under-france-1944",
+      "kind": "presence",
+      "locator": "fid 233"
+    },
+    {
+      "dissent": false,
+      "id": "mali-under-france-1947",
+      "kind": "presence",
+      "locator": "fid 234"
+    },
+    {
+      "dissent": false,
+      "id": "mali-under-france-1959",
+      "kind": "presence",
+      "locator": "fid 235"
+    },
+    {
+      "dissent": false,
+      "id": "mali-under-france-1960",
+      "kind": "presence",
+      "locator": "fid 236"
+    },
+    {
+      "dissent": false,
+      "id": "malta-1964",
+      "kind": "presence",
+      "locator": "fid 120"
+    },
+    {
+      "dissent": false,
+      "id": "malta-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 119"
+    },
+    {
+      "dissent": false,
+      "id": "martinique-1886",
+      "kind": "presence",
+      "locator": "fid 27"
+    },
+    {
+      "dissent": false,
+      "id": "mauritania-1960",
+      "kind": "presence",
+      "locator": "fid 246"
+    },
+    {
+      "dissent": false,
+      "id": "mauritania-1975",
+      "kind": "presence",
+      "locator": "fid 247"
+    },
+    {
+      "dissent": false,
+      "id": "mauritania-1979",
+      "kind": "presence",
+      "locator": "fid 248"
+    },
+    {
+      "dissent": false,
+      "id": "mauritania-under-france-1904",
+      "kind": "presence",
+      "locator": "fid 249"
+    },
+    {
+      "dissent": false,
+      "id": "mauritania-under-france-1904-b",
+      "kind": "presence",
+      "locator": "fid 250"
+    },
+    {
+      "dissent": false,
+      "id": "mauritania-under-france-1912",
+      "kind": "presence",
+      "locator": "fid 251"
+    },
+    {
+      "dissent": false,
+      "id": "mauritania-under-france-1913",
+      "kind": "presence",
+      "locator": "fid 252"
+    },
+    {
+      "dissent": false,
+      "id": "mauritania-under-france-1920",
+      "kind": "presence",
+      "locator": "fid 244"
+    },
+    {
+      "dissent": false,
+      "id": "mauritania-under-france-1944",
+      "kind": "presence",
+      "locator": "fid 245"
+    },
+    {
+      "dissent": false,
+      "id": "mauritius-1968",
+      "kind": "presence",
+      "locator": "fid 436"
+    },
+    {
+      "dissent": false,
+      "id": "mauritius-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 435"
+    },
+    {
+      "dissent": false,
+      "id": "mexico-1886",
+      "kind": "presence",
+      "locator": "fid 28"
+    },
+    {
+      "dissent": false,
+      "id": "moldova-1991",
+      "kind": "presence",
+      "locator": "fid 153"
+    },
+    {
+      "dissent": false,
+      "id": "mongolia-1921",
+      "kind": "presence",
+      "locator": "fid 555"
+    },
+    {
+      "dissent": false,
+      "id": "montenegro-1886",
+      "kind": "presence",
+      "locator": "fid 129"
+    },
+    {
+      "dissent": false,
+      "id": "montenegro-1913",
+      "kind": "presence",
+      "locator": "fid 130"
+    },
+    {
+      "dissent": false,
+      "id": "montenegro-1915",
+      "kind": "presence",
+      "locator": "fid 132"
+    },
+    {
+      "dissent": false,
+      "id": "montenegro-2006",
+      "kind": "presence",
+      "locator": "fid 131"
+    },
+    {
+      "dissent": false,
+      "id": "morocco-1886",
+      "kind": "presence",
+      "locator": "fid 437"
+    },
+    {
+      "dissent": false,
+      "id": "morocco-1902",
+      "kind": "presence",
+      "locator": "fid 438"
+    },
+    {
+      "dissent": false,
+      "id": "morocco-1904",
+      "kind": "presence",
+      "locator": "fid 444"
+    },
+    {
+      "dissent": false,
+      "id": "morocco-1904-b",
+      "kind": "presence",
+      "locator": "fid 445"
+    },
+    {
+      "dissent": false,
+      "id": "morocco-1912",
+      "kind": "presence",
+      "locator": "fid 446"
+    },
+    {
+      "dissent": false,
+      "id": "morocco-1956",
+      "kind": "presence",
+      "locator": "fid 439"
+    },
+    {
+      "dissent": false,
+      "id": "morocco-1956-b",
+      "kind": "presence",
+      "locator": "fid 440"
+    },
+    {
+      "dissent": false,
+      "id": "morocco-1958",
+      "kind": "presence",
+      "locator": "fid 441"
+    },
+    {
+      "dissent": false,
+      "id": "morocco-1975",
+      "kind": "presence",
+      "locator": "fid 442"
+    },
+    {
+      "dissent": false,
+      "id": "morocco-1979",
+      "kind": "presence",
+      "locator": "fid 443"
+    },
+    {
+      "dissent": false,
+      "id": "mozambique-1975",
+      "kind": "presence",
+      "locator": "fid 393"
+    },
+    {
+      "dissent": false,
+      "id": "mozambique-under-portugal-1886",
+      "kind": "presence",
+      "locator": "fid 391"
+    },
+    {
+      "dissent": false,
+      "id": "mozambique-under-portugal-1891",
+      "kind": "presence",
+      "locator": "fid 392"
+    },
+    {
+      "dissent": false,
+      "id": "myanmar-burma-1948",
+      "kind": "presence",
+      "locator": "fid 584"
+    },
+    {
+      "dissent": false,
+      "id": "myanmar-burma-2005",
+      "kind": "presence",
+      "locator": "fid 583"
+    },
+    {
+      "dissent": false,
+      "id": "myanmar-burma-under-united-kingdom-1937",
+      "kind": "presence",
+      "locator": "fid 582"
+    },
+    {
+      "dissent": false,
+      "id": "namibia-1990",
+      "kind": "presence",
+      "locator": "fid 415"
+    },
+    {
+      "dissent": false,
+      "id": "namibia-under-south-africa-1886",
+      "kind": "presence",
+      "locator": "fid 412"
+    },
+    {
+      "dissent": false,
+      "id": "namibia-under-south-africa-1886-b",
+      "kind": "presence",
+      "locator": "fid 413"
+    },
+    {
+      "dissent": false,
+      "id": "namibia-under-south-africa-1915",
+      "kind": "presence",
+      "locator": "fid 417"
+    },
+    {
+      "dissent": false,
+      "id": "namibia-under-south-africa-1920",
+      "kind": "presence",
+      "locator": "fid 416"
+    },
+    {
+      "dissent": false,
+      "id": "namibia-under-south-africa-1966",
+      "kind": "presence",
+      "locator": "fid 414"
+    },
+    {
+      "dissent": false,
+      "id": "natal-1886",
+      "kind": "presence",
+      "locator": "fid 408"
+    },
+    {
+      "dissent": false,
+      "id": "natal-1895",
+      "kind": "presence",
+      "locator": "fid 409"
+    },
+    {
+      "dissent": false,
+      "id": "nepal-1886",
+      "kind": "presence",
+      "locator": "fid 589"
+    },
+    {
+      "dissent": false,
+      "id": "netherlands-1886",
+      "kind": "presence",
+      "locator": "fid 76"
+    },
+    {
+      "dissent": false,
+      "id": "new-caledonia-and-dependencies-1886",
+      "kind": "presence",
+      "locator": "fid 668"
+    },
+    {
+      "dissent": false,
+      "id": "new-guinea-german-new-guinea-kaiser-wilhelmsland-1886",
+      "kind": "presence",
+      "locator": "fid 660"
+    },
+    {
+      "dissent": false,
+      "id": "new-guinea-german-new-guinea-kaiser-wilhelmsland-1891",
+      "kind": "presence",
+      "locator": "fid 661"
+    },
+    {
+      "dissent": false,
+      "id": "new-guinea-german-new-guinea-kaiser-wilhelmsland-1900",
+      "kind": "presence",
+      "locator": "fid 662"
+    },
+    {
+      "dissent": false,
+      "id": "new-guinea-german-new-guinea-kaiser-wilhelmsland-1910",
+      "kind": "presence",
+      "locator": "fid 663"
+    },
+    {
+      "dissent": false,
+      "id": "new-guinea-german-new-guinea-kaiser-wilhelmsland-1914",
+      "kind": "presence",
+      "locator": "fid 665"
+    },
+    {
+      "dissent": false,
+      "id": "new-guinea-german-new-guinea-kaiser-wilhelmsland-1920",
+      "kind": "presence",
+      "locator": "fid 664"
+    },
+    {
+      "dissent": false,
+      "id": "new-south-wales-1886",
+      "kind": "presence",
+      "locator": "fid 648"
+    },
+    {
+      "dissent": false,
+      "id": "new-zealand-1907",
+      "kind": "presence",
+      "locator": "fid 667"
+    },
+    {
+      "dissent": false,
+      "id": "new-zealand-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 666"
+    },
+    {
+      "dissent": false,
+      "id": "newfoundland-1886",
+      "kind": "presence",
+      "locator": "fid 10"
+    },
+    {
+      "dissent": false,
+      "id": "nicaragua-1886",
+      "kind": "presence",
+      "locator": "fid 35"
+    },
+    {
+      "dissent": false,
+      "id": "niger-1960",
+      "kind": "presence",
+      "locator": "fid 257"
+    },
+    {
+      "dissent": false,
+      "id": "niger-under-france-1905",
+      "kind": "presence",
+      "locator": "fid 256"
+    },
+    {
+      "dissent": false,
+      "id": "niger-under-france-1926",
+      "kind": "presence",
+      "locator": "fid 253"
+    },
+    {
+      "dissent": false,
+      "id": "niger-under-france-1932",
+      "kind": "presence",
+      "locator": "fid 254"
+    },
+    {
+      "dissent": false,
+      "id": "niger-under-france-1947",
+      "kind": "presence",
+      "locator": "fid 255"
+    },
+    {
+      "dissent": false,
+      "id": "nigeria-1960",
+      "kind": "presence",
+      "locator": "fid 306"
+    },
+    {
+      "dissent": false,
+      "id": "nigeria-1961",
+      "kind": "presence",
+      "locator": "fid 307"
+    },
+    {
+      "dissent": false,
+      "id": "nigeria-under-united-kingdom-1914",
+      "kind": "presence",
+      "locator": "fid 305"
+    },
+    {
+      "dissent": false,
+      "id": "northeastern-rhodesia-1900",
+      "kind": "presence",
+      "locator": "fid 692"
+    },
+    {
+      "dissent": false,
+      "id": "northern-nigeria-1899",
+      "kind": "presence",
+      "locator": "fid 683"
+    },
+    {
+      "dissent": false,
+      "id": "northern-nigeria-1903",
+      "kind": "presence",
+      "locator": "fid 684"
+    },
+    {
+      "dissent": false,
+      "id": "northern-nigeria-1904",
+      "kind": "presence",
+      "locator": "fid 685"
+    },
+    {
+      "dissent": false,
+      "id": "northwestern-rhodesia-1900",
+      "kind": "presence",
+      "locator": "fid 693"
+    },
+    {
+      "dissent": false,
+      "id": "northwestern-rhodesia-1905",
+      "kind": "presence",
+      "locator": "fid 694"
+    },
+    {
+      "dissent": false,
+      "id": "norway-1905",
+      "kind": "presence",
+      "locator": "fid 208"
+    },
+    {
+      "dissent": false,
+      "id": "oil-rivers-protectorate-1886",
+      "kind": "presence",
+      "locator": "fid 680"
+    },
+    {
+      "dissent": false,
+      "id": "oman-1886",
+      "kind": "presence",
+      "locator": "fid 531"
+    },
+    {
+      "dissent": false,
+      "id": "oman-1990",
+      "kind": "presence",
+      "locator": "fid 532"
+    },
+    {
+      "dissent": false,
+      "id": "orange-free-state-1886",
+      "kind": "presence",
+      "locator": "fid 411"
+    },
+    {
+      "dissent": false,
+      "id": "pahang-1888",
+      "kind": "presence",
+      "locator": "fid 709"
+    },
+    {
+      "dissent": false,
+      "id": "pakistan-1947",
+      "kind": "presence",
+      "locator": "fid 578"
+    },
+    {
+      "dissent": false,
+      "id": "pakistan-1949",
+      "kind": "presence",
+      "locator": "fid 579"
+    },
+    {
+      "dissent": false,
+      "id": "pakistan-1959",
+      "kind": "presence",
+      "locator": "fid 580"
+    },
+    {
+      "dissent": false,
+      "id": "pakistan-1967",
+      "kind": "presence",
+      "locator": "fid 576"
+    },
+    {
+      "dissent": false,
+      "id": "pakistan-1971",
+      "kind": "presence",
+      "locator": "fid 577"
+    },
+    {
+      "dissent": false,
+      "id": "palestine-1920",
+      "kind": "presence",
+      "locator": "fid 510"
+    },
+    {
+      "dissent": false,
+      "id": "palestine-1920-b",
+      "kind": "presence",
+      "locator": "fid 511"
+    },
+    {
+      "dissent": false,
+      "id": "palestine-1923",
+      "kind": "presence",
+      "locator": "fid 509"
+    },
+    {
+      "dissent": false,
+      "id": "panama-1903",
+      "kind": "presence",
+      "locator": "fid 37"
+    },
+    {
+      "dissent": false,
+      "id": "papua-1886",
+      "kind": "presence",
+      "locator": "fid 659"
+    },
+    {
+      "dissent": false,
+      "id": "papua-1888",
+      "kind": "presence",
+      "locator": "fid 656"
+    },
+    {
+      "dissent": false,
+      "id": "papua-1905",
+      "kind": "presence",
+      "locator": "fid 657"
+    },
+    {
+      "dissent": false,
+      "id": "papua-1920",
+      "kind": "presence",
+      "locator": "fid 658"
+    },
+    {
+      "dissent": false,
+      "id": "papua-new-guinea-1975",
+      "kind": "presence",
+      "locator": "fid 654"
+    },
+    {
+      "dissent": false,
+      "id": "papua-new-guinea-under-australia-1949",
+      "kind": "presence",
+      "locator": "fid 655"
+    },
+    {
+      "dissent": false,
+      "id": "paraguay-1886",
+      "kind": "presence",
+      "locator": "fid 64"
+    },
+    {
+      "dissent": false,
+      "id": "paraguay-1938",
+      "kind": "presence",
+      "locator": "fid 65"
+    },
+    {
+      "dissent": false,
+      "id": "perak-1886",
+      "kind": "presence",
+      "locator": "fid 707"
+    },
+    {
+      "dissent": false,
+      "id": "peru-1886",
+      "kind": "presence",
+      "locator": "fid 52"
+    },
+    {
+      "dissent": false,
+      "id": "peru-1909",
+      "kind": "presence",
+      "locator": "fid 53"
+    },
+    {
+      "dissent": false,
+      "id": "peru-1922",
+      "kind": "presence",
+      "locator": "fid 54"
+    },
+    {
+      "dissent": false,
+      "id": "peru-1942",
+      "kind": "presence",
+      "locator": "fid 55"
+    },
+    {
+      "dissent": false,
+      "id": "philippines-1946",
+      "kind": "presence",
+      "locator": "fid 631"
+    },
+    {
+      "dissent": false,
+      "id": "philippines-1948",
+      "kind": "presence",
+      "locator": "fid 633"
+    },
+    {
+      "dissent": false,
+      "id": "philippines-1976",
+      "kind": "presence",
+      "locator": "fid 632"
+    },
+    {
+      "dissent": false,
+      "id": "philippines-under-united-states-of-america-1886",
+      "kind": "presence",
+      "locator": "fid 630"
+    },
+    {
+      "dissent": false,
+      "id": "philippines-under-united-states-of-america-1898",
+      "kind": "presence",
+      "locator": "fid 629"
+    },
+    {
+      "dissent": false,
+      "id": "poland-1918",
+      "kind": "presence",
+      "locator": "fid 93"
+    },
+    {
+      "dissent": false,
+      "id": "poland-1919",
+      "kind": "presence",
+      "locator": "fid 94"
+    },
+    {
+      "dissent": false,
+      "id": "poland-1919-b",
+      "kind": "presence",
+      "locator": "fid 95"
+    },
+    {
+      "dissent": false,
+      "id": "poland-1920",
+      "kind": "presence",
+      "locator": "fid 96"
+    },
+    {
+      "dissent": false,
+      "id": "poland-1921",
+      "kind": "presence",
+      "locator": "fid 97"
+    },
+    {
+      "dissent": false,
+      "id": "poland-1945",
+      "kind": "presence",
+      "locator": "fid 98"
+    },
+    {
+      "dissent": false,
+      "id": "portugal-1886",
+      "kind": "presence",
+      "locator": "fid 83"
+    },
+    {
+      "dissent": false,
+      "id": "puerto-rico-1886",
+      "kind": "presence",
+      "locator": "fid 7"
+    },
+    {
+      "dissent": false,
+      "id": "puerto-rico-1898",
+      "kind": "presence",
+      "locator": "fid 6"
+    },
+    {
+      "dissent": false,
+      "id": "qatar-1971",
+      "kind": "presence",
+      "locator": "fid 526"
+    },
+    {
+      "dissent": false,
+      "id": "qatar-under-united-kingdom-1916",
+      "kind": "presence",
+      "locator": "fid 527"
+    },
+    {
+      "dissent": false,
+      "id": "queensland-1886",
+      "kind": "presence",
+      "locator": "fid 652"
+    },
+    {
+      "dissent": false,
+      "id": "republic-of-india-1947",
+      "kind": "presence",
+      "locator": "fid 571"
+    },
+    {
+      "dissent": false,
+      "id": "republic-of-india-1949",
+      "kind": "presence",
+      "locator": "fid 572"
+    },
+    {
+      "dissent": false,
+      "id": "reunion-1886",
+      "kind": "presence",
+      "locator": "fid 434"
+    },
+    {
+      "dissent": false,
+      "id": "rumania-1886",
+      "kind": "presence",
+      "locator": "fid 154"
+    },
+    {
+      "dissent": false,
+      "id": "rumania-1913",
+      "kind": "presence",
+      "locator": "fid 155"
+    },
+    {
+      "dissent": false,
+      "id": "rumania-1916",
+      "kind": "presence",
+      "locator": "fid 163"
+    },
+    {
+      "dissent": false,
+      "id": "rumania-1918",
+      "kind": "presence",
+      "locator": "fid 164"
+    },
+    {
+      "dissent": false,
+      "id": "rumania-1918-b",
+      "kind": "presence",
+      "locator": "fid 156"
+    },
+    {
+      "dissent": false,
+      "id": "rumania-1919",
+      "kind": "presence",
+      "locator": "fid 157"
+    },
+    {
+      "dissent": false,
+      "id": "rumania-1919-b",
+      "kind": "presence",
+      "locator": "fid 158"
+    },
+    {
+      "dissent": false,
+      "id": "rumania-1920",
+      "kind": "presence",
+      "locator": "fid 159"
+    },
+    {
+      "dissent": false,
+      "id": "rumania-1920-b",
+      "kind": "presence",
+      "locator": "fid 160"
+    },
+    {
+      "dissent": false,
+      "id": "rumania-1940",
+      "kind": "presence",
+      "locator": "fid 161"
+    },
+    {
+      "dissent": false,
+      "id": "rumania-1940-b",
+      "kind": "presence",
+      "locator": "fid 162"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1886",
+      "kind": "presence",
+      "locator": "fid 183"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1905",
+      "kind": "presence",
+      "locator": "fid 184"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1914",
+      "kind": "presence",
+      "locator": "fid 185"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1917",
+      "kind": "presence",
+      "locator": "fid 186"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1918",
+      "kind": "presence",
+      "locator": "fid 187"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1918-b",
+      "kind": "presence",
+      "locator": "fid 188"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1918-c",
+      "kind": "presence",
+      "locator": "fid 165"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1918-d",
+      "kind": "presence",
+      "locator": "fid 166"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1920",
+      "kind": "presence",
+      "locator": "fid 167"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1920-b",
+      "kind": "presence",
+      "locator": "fid 168"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1920-c",
+      "kind": "presence",
+      "locator": "fid 169"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1921",
+      "kind": "presence",
+      "locator": "fid 170"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1940",
+      "kind": "presence",
+      "locator": "fid 171"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1940-b",
+      "kind": "presence",
+      "locator": "fid 172"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1940-c",
+      "kind": "presence",
+      "locator": "fid 173"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1945",
+      "kind": "presence",
+      "locator": "fid 174"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1945-b",
+      "kind": "presence",
+      "locator": "fid 175"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1991",
+      "kind": "presence",
+      "locator": "fid 176"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1991-b",
+      "kind": "presence",
+      "locator": "fid 177"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1991-c",
+      "kind": "presence",
+      "locator": "fid 178"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1991-d",
+      "kind": "presence",
+      "locator": "fid 179"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1991-e",
+      "kind": "presence",
+      "locator": "fid 180"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-1991-f",
+      "kind": "presence",
+      "locator": "fid 181"
+    },
+    {
+      "dissent": false,
+      "id": "russia-soviet-union-2014",
+      "kind": "presence",
+      "locator": "fid 182"
+    },
+    {
+      "dissent": false,
+      "id": "rwanda-1962",
+      "kind": "presence",
+      "locator": "fid 367"
+    },
+    {
+      "dissent": false,
+      "id": "rwanda-urundi-1920",
+      "kind": "presence",
+      "locator": "fid 364"
+    },
+    {
+      "dissent": false,
+      "id": "rwanda-urundi-1922",
+      "kind": "presence",
+      "locator": "fid 365"
+    },
+    {
+      "dissent": false,
+      "id": "sabah-north-borneo-1888",
+      "kind": "presence",
+      "locator": "fid 619"
+    },
+    {
+      "dissent": false,
+      "id": "sabah-north-borneo-1889",
+      "kind": "presence",
+      "locator": "fid 620"
+    },
+    {
+      "dissent": false,
+      "id": "sabah-north-borneo-1946",
+      "kind": "presence",
+      "locator": "fid 618"
+    },
+    {
+      "dissent": false,
+      "id": "sarawak-1888",
+      "kind": "presence",
+      "locator": "fid 622"
+    },
+    {
+      "dissent": false,
+      "id": "sarawak-1889",
+      "kind": "presence",
+      "locator": "fid 623"
+    },
+    {
+      "dissent": false,
+      "id": "sarawak-1946",
+      "kind": "presence",
+      "locator": "fid 621"
+    },
+    {
+      "dissent": false,
+      "id": "saudi-arabia-1932",
+      "kind": "presence",
+      "locator": "fid 515"
+    },
+    {
+      "dissent": false,
+      "id": "saudi-arabia-1935",
+      "kind": "presence",
+      "locator": "fid 516"
+    },
+    {
+      "dissent": false,
+      "id": "saudi-arabia-2000",
+      "kind": "presence",
+      "locator": "fid 517"
+    },
+    {
+      "dissent": false,
+      "id": "selangore-1886",
+      "kind": "presence",
+      "locator": "fid 708"
+    },
+    {
+      "dissent": false,
+      "id": "senegal-1960",
+      "kind": "presence",
+      "locator": "fid 239"
+    },
+    {
+      "dissent": false,
+      "id": "senegal-under-france-1886",
+      "kind": "presence",
+      "locator": "fid 238"
+    },
+    {
+      "dissent": false,
+      "id": "serbia-1886",
+      "kind": "presence",
+      "locator": "fid 124"
+    },
+    {
+      "dissent": false,
+      "id": "serbia-1913",
+      "kind": "presence",
+      "locator": "fid 125"
+    },
+    {
+      "dissent": false,
+      "id": "serbia-1915",
+      "kind": "presence",
+      "locator": "fid 128"
+    },
+    {
+      "dissent": false,
+      "id": "serbia-2006",
+      "kind": "presence",
+      "locator": "fid 126"
+    },
+    {
+      "dissent": false,
+      "id": "serbia-2008",
+      "kind": "presence",
+      "locator": "fid 127"
+    },
+    {
+      "dissent": false,
+      "id": "sierra-leone-1961",
+      "kind": "presence",
+      "locator": "fid 277"
+    },
+    {
+      "dissent": false,
+      "id": "sierra-leone-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 274"
+    },
+    {
+      "dissent": false,
+      "id": "sierra-leone-under-united-kingdom-1889",
+      "kind": "presence",
+      "locator": "fid 275"
+    },
+    {
+      "dissent": false,
+      "id": "sierra-leone-under-united-kingdom-1895",
+      "kind": "presence",
+      "locator": "fid 276"
+    },
+    {
+      "dissent": false,
+      "id": "singapore-1965",
+      "kind": "presence",
+      "locator": "fid 626"
+    },
+    {
+      "dissent": false,
+      "id": "singapore-under-united-kingdom-1946",
+      "kind": "presence",
+      "locator": "fid 625"
+    },
+    {
+      "dissent": false,
+      "id": "slovakia-1993",
+      "kind": "presence",
+      "locator": "fid 116"
+    },
+    {
+      "dissent": false,
+      "id": "slovenia-1992",
+      "kind": "presence",
+      "locator": "fid 142"
+    },
+    {
+      "dissent": false,
+      "id": "solomon-islands-1978",
+      "kind": "presence",
+      "locator": "fid 669"
+    },
+    {
+      "dissent": false,
+      "id": "solomon-islands-under-united-kingdom-1893",
+      "kind": "presence",
+      "locator": "fid 671"
+    },
+    {
+      "dissent": false,
+      "id": "solomon-islands-under-united-kingdom-1899",
+      "kind": "presence",
+      "locator": "fid 672"
+    },
+    {
+      "dissent": false,
+      "id": "solomon-islands-under-united-kingdom-1952",
+      "kind": "presence",
+      "locator": "fid 670"
+    },
+    {
+      "dissent": false,
+      "id": "somalia-1960",
+      "kind": "presence",
+      "locator": "fid 368"
+    },
+    {
+      "dissent": false,
+      "id": "south-africa-1910",
+      "kind": "presence",
+      "locator": "fid 405"
+    },
+    {
+      "dissent": false,
+      "id": "south-australia-1886",
+      "kind": "presence",
+      "locator": "fid 650"
+    },
+    {
+      "dissent": false,
+      "id": "south-sudan-2011",
+      "kind": "presence",
+      "locator": "fid 473"
+    },
+    {
+      "dissent": false,
+      "id": "southern-nigeria-1899",
+      "kind": "presence",
+      "locator": "fid 681"
+    },
+    {
+      "dissent": false,
+      "id": "southern-nigeria-1906",
+      "kind": "presence",
+      "locator": "fid 682"
+    },
+    {
+      "dissent": false,
+      "id": "southern-sakhalin-island-1905",
+      "kind": "presence",
+      "locator": "fid 704"
+    },
+    {
+      "dissent": false,
+      "id": "southern-zone-of-spanish-morocco-1956",
+      "kind": "presence",
+      "locator": "fid 697"
+    },
+    {
+      "dissent": false,
+      "id": "spain-1886",
+      "kind": "presence",
+      "locator": "fid 82"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-morocco-1912",
+      "kind": "presence",
+      "locator": "fid 447"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-sahara-1958",
+      "kind": "presence",
+      "locator": "fid 448"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-west-africa-1886",
+      "kind": "presence",
+      "locator": "fid 449"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-west-africa-1900",
+      "kind": "presence",
+      "locator": "fid 450"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-west-africa-1912",
+      "kind": "presence",
+      "locator": "fid 451"
+    },
+    {
+      "dissent": false,
+      "id": "sri-lanka-ceylon-1948",
+      "kind": "presence",
+      "locator": "fid 586"
+    },
+    {
+      "dissent": false,
+      "id": "sri-lanka-ceylon-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 585"
+    },
+    {
+      "dissent": false,
+      "id": "straits-settlements-1886",
+      "kind": "presence",
+      "locator": "fid 624"
+    },
+    {
+      "dissent": false,
+      "id": "sudan-1956",
+      "kind": "presence",
+      "locator": "fid 471"
+    },
+    {
+      "dissent": false,
+      "id": "sudan-2011",
+      "kind": "presence",
+      "locator": "fid 472"
+    },
+    {
+      "dissent": false,
+      "id": "sudan-under-united-kingdom-1899",
+      "kind": "presence",
+      "locator": "fid 466"
+    },
+    {
+      "dissent": false,
+      "id": "sudan-under-united-kingdom-1902",
+      "kind": "presence",
+      "locator": "fid 467"
+    },
+    {
+      "dissent": false,
+      "id": "sudan-under-united-kingdom-1910",
+      "kind": "presence",
+      "locator": "fid 468"
+    },
+    {
+      "dissent": false,
+      "id": "sudan-under-united-kingdom-1914",
+      "kind": "presence",
+      "locator": "fid 469"
+    },
+    {
+      "dissent": false,
+      "id": "sudan-under-united-kingdom-1934",
+      "kind": "presence",
+      "locator": "fid 470"
+    },
+    {
+      "dissent": false,
+      "id": "surinam-1975",
+      "kind": "presence",
+      "locator": "fid 46"
+    },
+    {
+      "dissent": false,
+      "id": "surinam-under-netherlands-1886",
+      "kind": "presence",
+      "locator": "fid 44"
+    },
+    {
+      "dissent": false,
+      "id": "surinam-under-netherlands-1954",
+      "kind": "presence",
+      "locator": "fid 45"
+    },
+    {
+      "dissent": false,
+      "id": "swaziland-eswatini-1968",
+      "kind": "presence",
+      "locator": "fid 426"
+    },
+    {
+      "dissent": false,
+      "id": "swaziland-eswatini-under-united-kingdom-1895",
+      "kind": "presence",
+      "locator": "fid 425"
+    },
+    {
+      "dissent": false,
+      "id": "swaziland-eswatini-under-united-kingdom-1902",
+      "kind": "presence",
+      "locator": "fid 424"
+    },
+    {
+      "dissent": false,
+      "id": "sweden-1886",
+      "kind": "presence",
+      "locator": "fid 206"
+    },
+    {
+      "dissent": false,
+      "id": "sweden-1905",
+      "kind": "presence",
+      "locator": "fid 207"
+    },
+    {
+      "dissent": false,
+      "id": "switzerland-1886",
+      "kind": "presence",
+      "locator": "fid 81"
+    },
+    {
+      "dissent": false,
+      "id": "syria-1946",
+      "kind": "presence",
+      "locator": "fid 496"
+    },
+    {
+      "dissent": false,
+      "id": "syria-1967",
+      "kind": "presence",
+      "locator": "fid 497"
+    },
+    {
+      "dissent": false,
+      "id": "syria-under-france-1920",
+      "kind": "presence",
+      "locator": "fid 500"
+    },
+    {
+      "dissent": false,
+      "id": "syria-under-france-1920-b",
+      "kind": "presence",
+      "locator": "fid 498"
+    },
+    {
+      "dissent": false,
+      "id": "syria-under-france-1922",
+      "kind": "presence",
+      "locator": "fid 499"
+    },
+    {
+      "dissent": false,
+      "id": "taiwan-1949",
+      "kind": "presence",
+      "locator": "fid 557"
+    },
+    {
+      "dissent": false,
+      "id": "taiwan-under-japan-1895",
+      "kind": "presence",
+      "locator": "fid 556"
+    },
+    {
+      "dissent": false,
+      "id": "tajikistan-1991",
+      "kind": "presence",
+      "locator": "fid 538"
+    },
+    {
+      "dissent": false,
+      "id": "tanzania-tanganyika-1961",
+      "kind": "presence",
+      "locator": "fid 355"
+    },
+    {
+      "dissent": false,
+      "id": "tanzania-tanganyika-1964",
+      "kind": "presence",
+      "locator": "fid 356"
+    },
+    {
+      "dissent": false,
+      "id": "tanzania-tanganyika-under-united-kingdom-1891",
+      "kind": "presence",
+      "locator": "fid 354"
+    },
+    {
+      "dissent": false,
+      "id": "tanzania-tanganyika-under-united-kingdom-1916",
+      "kind": "presence",
+      "locator": "fid 358"
+    },
+    {
+      "dissent": false,
+      "id": "tanzania-tanganyika-under-united-kingdom-1919",
+      "kind": "presence",
+      "locator": "fid 359"
+    },
+    {
+      "dissent": false,
+      "id": "tanzania-tanganyika-under-united-kingdom-1920",
+      "kind": "presence",
+      "locator": "fid 360"
+    },
+    {
+      "dissent": false,
+      "id": "tanzania-tanganyika-under-united-kingdom-1922",
+      "kind": "presence",
+      "locator": "fid 357"
+    },
+    {
+      "dissent": false,
+      "id": "tasmania-1886",
+      "kind": "presence",
+      "locator": "fid 653"
+    },
+    {
+      "dissent": false,
+      "id": "thailand-1886",
+      "kind": "presence",
+      "locator": "fid 590"
+    },
+    {
+      "dissent": false,
+      "id": "thailand-1893",
+      "kind": "presence",
+      "locator": "fid 591"
+    },
+    {
+      "dissent": false,
+      "id": "thailand-1904",
+      "kind": "presence",
+      "locator": "fid 592"
+    },
+    {
+      "dissent": false,
+      "id": "thailand-1907",
+      "kind": "presence",
+      "locator": "fid 593"
+    },
+    {
+      "dissent": false,
+      "id": "thailand-1909",
+      "kind": "presence",
+      "locator": "fid 594"
+    },
+    {
+      "dissent": false,
+      "id": "tibet-1913",
+      "kind": "presence",
+      "locator": "fid 553"
+    },
+    {
+      "dissent": false,
+      "id": "tibet-1914",
+      "kind": "presence",
+      "locator": "fid 554"
+    },
+    {
+      "dissent": false,
+      "id": "togo-1960",
+      "kind": "presence",
+      "locator": "fid 291"
+    },
+    {
+      "dissent": false,
+      "id": "togo-under-france-1922",
+      "kind": "presence",
+      "locator": "fid 292"
+    },
+    {
+      "dissent": false,
+      "id": "transvaal-1886",
+      "kind": "presence",
+      "locator": "fid 410"
+    },
+    {
+      "dissent": false,
+      "id": "trinidad-and-tobago-1962",
+      "kind": "presence",
+      "locator": "fid 23"
+    },
+    {
+      "dissent": false,
+      "id": "trinidad-and-tobago-under-united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 22"
+    },
+    {
+      "dissent": false,
+      "id": "tunisia-1956",
+      "kind": "presence",
+      "locator": "fid 457"
+    },
+    {
+      "dissent": false,
+      "id": "tunisia-under-france-1886",
+      "kind": "presence",
+      "locator": "fid 458"
+    },
+    {
+      "dissent": false,
+      "id": "turkey-ottoman-empire-1886",
+      "kind": "presence",
+      "locator": "fid 476"
+    },
+    {
+      "dissent": false,
+      "id": "turkey-ottoman-empire-1912",
+      "kind": "presence",
+      "locator": "fid 477"
+    },
+    {
+      "dissent": false,
+      "id": "turkey-ottoman-empire-1913",
+      "kind": "presence",
+      "locator": "fid 478"
+    },
+    {
+      "dissent": false,
+      "id": "turkey-ottoman-empire-1913-b",
+      "kind": "presence",
+      "locator": "fid 479"
+    },
+    {
+      "dissent": false,
+      "id": "turkey-ottoman-empire-1914",
+      "kind": "presence",
+      "locator": "fid 480"
+    },
+    {
+      "dissent": false,
+      "id": "turkey-ottoman-empire-1918",
+      "kind": "presence",
+      "locator": "fid 481"
+    },
+    {
+      "dissent": false,
+      "id": "turkey-ottoman-empire-1918-b",
+      "kind": "presence",
+      "locator": "fid 482"
+    },
+    {
+      "dissent": false,
+      "id": "turkey-ottoman-empire-1920",
+      "kind": "presence",
+      "locator": "fid 483"
+    },
+    {
+      "dissent": false,
+      "id": "turkey-ottoman-empire-1923",
+      "kind": "presence",
+      "locator": "fid 475"
+    },
+    {
+      "dissent": false,
+      "id": "turkmenistan-1991",
+      "kind": "presence",
+      "locator": "fid 537"
+    },
+    {
+      "dissent": false,
+      "id": "uganda-1962",
+      "kind": "presence",
+      "locator": "fid 337"
+    },
+    {
+      "dissent": false,
+      "id": "uganda-under-united-kingdom-1894",
+      "kind": "presence",
+      "locator": "fid 338"
+    },
+    {
+      "dissent": false,
+      "id": "uganda-under-united-kingdom-1902",
+      "kind": "presence",
+      "locator": "fid 339"
+    },
+    {
+      "dissent": false,
+      "id": "uganda-under-united-kingdom-1910",
+      "kind": "presence",
+      "locator": "fid 340"
+    },
+    {
+      "dissent": false,
+      "id": "uganda-under-united-kingdom-1914",
+      "kind": "presence",
+      "locator": "fid 341"
+    },
+    {
+      "dissent": false,
+      "id": "uganda-under-united-kingdom-1926",
+      "kind": "presence",
+      "locator": "fid 342"
+    },
+    {
+      "dissent": false,
+      "id": "ukraine-1991",
+      "kind": "presence",
+      "locator": "fid 198"
+    },
+    {
+      "dissent": false,
+      "id": "ukraine-2014",
+      "kind": "presence",
+      "locator": "fid 199"
+    },
+    {
+      "dissent": false,
+      "id": "unfederated-malay-states-1886",
+      "kind": "presence",
+      "locator": "fid 616"
+    },
+    {
+      "dissent": false,
+      "id": "unfederated-malay-states-1909",
+      "kind": "presence",
+      "locator": "fid 617"
+    },
+    {
+      "dissent": false,
+      "id": "united-arab-emirates-1971",
+      "kind": "presence",
+      "locator": "fid 528"
+    },
+    {
+      "dissent": false,
+      "id": "united-arab-emirates-under-united-kingdom-1892",
+      "kind": "presence",
+      "locator": "fid 529"
+    },
+    {
+      "dissent": false,
+      "id": "united-arab-emirates-under-united-kingdom-1913",
+      "kind": "presence",
+      "locator": "fid 530"
+    },
+    {
+      "dissent": false,
+      "id": "united-kingdom-1886",
+      "kind": "presence",
+      "locator": "fid 73"
+    },
+    {
+      "dissent": false,
+      "id": "united-kingdom-1921",
+      "kind": "presence",
+      "locator": "fid 74"
+    },
+    {
+      "dissent": false,
+      "id": "united-states-of-america-1886",
+      "kind": "presence",
+      "locator": "fid 1"
+    },
+    {
+      "dissent": false,
+      "id": "united-states-of-america-1959",
+      "kind": "presence",
+      "locator": "fid 2"
+    },
+    {
+      "dissent": false,
+      "id": "united-states-of-america-1959-b",
+      "kind": "presence",
+      "locator": "fid 3"
+    },
+    {
+      "dissent": false,
+      "id": "uruguay-1886",
+      "kind": "presence",
+      "locator": "fid 72"
+    },
+    {
+      "dissent": false,
+      "id": "uzbekistan-1991",
+      "kind": "presence",
+      "locator": "fid 540"
+    },
+    {
+      "dissent": false,
+      "id": "venezuela-1886",
+      "kind": "presence",
+      "locator": "fid 41"
+    },
+    {
+      "dissent": false,
+      "id": "victoria-1886",
+      "kind": "presence",
+      "locator": "fid 651"
+    },
+    {
+      "dissent": false,
+      "id": "vietnam-annam-cochin-china-tonkin-1886",
+      "kind": "presence",
+      "locator": "fid 605"
+    },
+    {
+      "dissent": false,
+      "id": "vietnam-annam-cochin-china-tonkin-1887",
+      "kind": "presence",
+      "locator": "fid 606"
+    },
+    {
+      "dissent": false,
+      "id": "vietnam-annam-cochin-china-tonkin-1893",
+      "kind": "presence",
+      "locator": "fid 603"
+    },
+    {
+      "dissent": false,
+      "id": "vietnam-annam-cochin-china-tonkin-1893-b",
+      "kind": "presence",
+      "locator": "fid 604"
+    },
+    {
+      "dissent": false,
+      "id": "vietnam-democratic-republic-of-1954",
+      "kind": "presence",
+      "locator": "fid 607"
+    },
+    {
+      "dissent": false,
+      "id": "vietnam-democratic-republic-of-1975",
+      "kind": "presence",
+      "locator": "fid 608"
+    },
+    {
+      "dissent": false,
+      "id": "vietnam-republic-of-1954",
+      "kind": "presence",
+      "locator": "fid 609"
+    },
+    {
+      "dissent": false,
+      "id": "west-bank-1948",
+      "kind": "presence",
+      "locator": "fid 699"
+    },
+    {
+      "dissent": false,
+      "id": "west-irian-dutch-new-guinea-1949",
+      "kind": "presence",
+      "locator": "fid 641"
+    },
+    {
+      "dissent": false,
+      "id": "west-irian-dutch-new-guinea-1962",
+      "kind": "presence",
+      "locator": "fid 643"
+    },
+    {
+      "dissent": false,
+      "id": "west-irian-dutch-new-guinea-1963",
+      "kind": "presence",
+      "locator": "fid 642"
+    },
+    {
+      "dissent": false,
+      "id": "western-australia-1886",
+      "kind": "presence",
+      "locator": "fid 649"
+    },
+    {
+      "dissent": false,
+      "id": "yemen-arab-republic-of-yemen-1918",
+      "kind": "presence",
+      "locator": "fid 518"
+    },
+    {
+      "dissent": false,
+      "id": "yemen-arab-republic-of-yemen-1934",
+      "kind": "presence",
+      "locator": "fid 519"
+    },
+    {
+      "dissent": false,
+      "id": "yemen-arab-republic-of-yemen-1990",
+      "kind": "presence",
+      "locator": "fid 520"
+    },
+    {
+      "dissent": false,
+      "id": "yemen-arab-republic-of-yemen-2000",
+      "kind": "presence",
+      "locator": "fid 521"
+    },
+    {
+      "dissent": false,
+      "id": "yemen-people-s-republic-of-1967",
+      "kind": "presence",
+      "locator": "fid 522"
+    },
+    {
+      "dissent": false,
+      "id": "yugoslavia-1918",
+      "kind": "presence",
+      "locator": "fid 135"
+    },
+    {
+      "dissent": false,
+      "id": "yugoslavia-1919",
+      "kind": "presence",
+      "locator": "fid 136"
+    },
+    {
+      "dissent": false,
+      "id": "yugoslavia-1920",
+      "kind": "presence",
+      "locator": "fid 137"
+    },
+    {
+      "dissent": false,
+      "id": "yugoslavia-1991",
+      "kind": "presence",
+      "locator": "fid 138"
+    },
+    {
+      "dissent": false,
+      "id": "yugoslavia-1992",
+      "kind": "presence",
+      "locator": "fid 139"
+    },
+    {
+      "dissent": false,
+      "id": "zambia-1964",
+      "kind": "presence",
+      "locator": "fid 396"
+    },
+    {
+      "dissent": false,
+      "id": "zambia-under-united-kingdom-1911",
+      "kind": "presence",
+      "locator": "fid 395"
+    },
+    {
+      "dissent": false,
+      "id": "zanzibar-1963",
+      "kind": "presence",
+      "locator": "fid 361"
+    },
+    {
+      "dissent": false,
+      "id": "zanzibar-under-united-kingdom-1890",
+      "kind": "presence",
+      "locator": "fid 362"
+    },
+    {
+      "dissent": false,
+      "id": "zanzibar-under-united-kingdom-1895",
+      "kind": "presence",
+      "locator": "fid 363"
+    },
+    {
+      "dissent": false,
+      "id": "zimbabwe-rhodesia-1965",
+      "kind": "presence",
+      "locator": "fid 401"
+    },
+    {
+      "dissent": false,
+      "id": "zimbabwe-rhodesia-under-united-kingdom-1889",
+      "kind": "presence",
+      "locator": "fid 397"
+    },
+    {
+      "dissent": false,
+      "id": "zimbabwe-rhodesia-under-united-kingdom-1891",
+      "kind": "presence",
+      "locator": "fid 398"
+    },
+    {
+      "dissent": false,
+      "id": "zimbabwe-rhodesia-under-united-kingdom-1900",
+      "kind": "presence",
+      "locator": "fid 399"
+    },
+    {
+      "dissent": false,
+      "id": "zimbabwe-rhodesia-under-united-kingdom-1964",
+      "kind": "presence",
+      "locator": "fid 400"
+    },
+    {
+      "dissent": false,
+      "id": "algeria-under-france--algeria--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 615"
+    },
+    {
+      "dissent": false,
+      "id": "angola-under-portugal--angola--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 540"
+    },
+    {
+      "dissent": false,
+      "id": "bahamas-under-united-kingdom--bahamas--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 31"
+    },
+    {
+      "dissent": false,
+      "id": "barbados-under-united-kingdom--barbados--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 53"
+    },
+    {
+      "dissent": false,
+      "id": "belize-under-united-kingdom--belize--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 80"
+    },
+    {
+      "dissent": false,
+      "id": "benin-under-france--benin--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 434"
+    },
+    {
+      "dissent": false,
+      "id": "bhutan-under-united-kingdom--bhutan--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 760"
+    },
+    {
+      "dissent": false,
+      "id": "botswana-under-united-kingdom--botswana--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 571"
+    },
+    {
+      "dissent": false,
+      "id": "british-india--republic-of-india--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 750"
+    },
+    {
+      "dissent": false,
+      "id": "brunei-under-united-kingdom--brunei--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 835"
+    },
+    {
+      "dissent": false,
+      "id": "burkina-faso-upper-volta-under-france--burkina-faso-upper-volta--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 439"
+    },
+    {
+      "dissent": false,
+      "id": "cambodia-kampuchea-under-france--cambodia-kampuchea--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 811"
+    },
+    {
+      "dissent": false,
+      "id": "cameroon-under-france--cameroon--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 471"
+    },
+    {
+      "dissent": false,
+      "id": "cape-verde-under-portugal--cape-verde--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 402"
+    },
+    {
+      "dissent": false,
+      "id": "central-african-republic-under-france--central-african-republic--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 482"
+    },
+    {
+      "dissent": false,
+      "id": "chad-under-france--chad--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 483"
+    },
+    {
+      "dissent": false,
+      "id": "comoros-under-france--comoros--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 581"
+    },
+    {
+      "dissent": false,
+      "id": "congo-democratic-republic-of-zaire-under-belgium--congo-democratic-republic-of-zaire--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 490"
+    },
+    {
+      "dissent": false,
+      "id": "congo-under-france--congo--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 484"
+    },
+    {
+      "dissent": false,
+      "id": "cote-d-ivoire-under-france--cote-d-ivoire--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 437"
+    },
+    {
+      "dissent": false,
+      "id": "cuba-under-spain--cuba--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 40"
+    },
+    {
+      "dissent": false,
+      "id": "cyprus-under-united-kingdom--cyprus--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 352"
+    },
+    {
+      "dissent": false,
+      "id": "djibouti-under-france--djibouti--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 522"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-east-indies--indonesia--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 850"
+    },
+    {
+      "dissent": false,
+      "id": "east-timor-under-portugal--east-timor--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 860"
+    },
+    {
+      "dissent": false,
+      "id": "egypt-under-united-kingdom--egypt--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 651"
+    },
+    {
+      "dissent": false,
+      "id": "equatorial-guinea-under-spain--equatorial-guinea--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 411"
+    },
+    {
+      "dissent": false,
+      "id": "eritrea-under-italy-sardinia--eritrea--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 531"
+    },
+    {
+      "dissent": false,
+      "id": "fiji-under-united-kingdom--fiji--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 950"
+    },
+    {
+      "dissent": false,
+      "id": "gabon-under-france--gabon--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 481"
+    },
+    {
+      "dissent": false,
+      "id": "gambia-under-united-kingdom--gambia--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 420"
+    },
+    {
+      "dissent": false,
+      "id": "ghana-under-united-kingdom--ghana--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 452"
+    },
+    {
+      "dissent": false,
+      "id": "guinea-bissau-under-portugal--guinea-bissau--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 404"
+    },
+    {
+      "dissent": false,
+      "id": "guinea-under-france--guinea--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 438"
+    },
+    {
+      "dissent": false,
+      "id": "guyana-under-united-kingdom--guyana--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 110"
+    },
+    {
+      "dissent": false,
+      "id": "iceland-under-denmark--iceland--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 395"
+    },
+    {
+      "dissent": false,
+      "id": "iraq-under-united-kingdom--iraq--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 645"
+    },
+    {
+      "dissent": false,
+      "id": "jamaica-under-united-kingdom--jamaica--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 51"
+    },
+    {
+      "dissent": false,
+      "id": "jordan-under-united-kingdom--jordan--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 663"
+    },
+    {
+      "dissent": false,
+      "id": "kenya-under-united-kingdom--kenya--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 501"
+    },
+    {
+      "dissent": false,
+      "id": "laos-under-france--laos--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 812"
+    },
+    {
+      "dissent": false,
+      "id": "lebanon-under-france--lebanon--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 660"
+    },
+    {
+      "dissent": false,
+      "id": "lesotho-under-united-kingdom--lesotho--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 570"
+    },
+    {
+      "dissent": false,
+      "id": "libya-under-italy-sardinia--libya--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 620"
+    },
+    {
+      "dissent": false,
+      "id": "malawi-under-united-kingdom--malawi--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 553"
+    },
+    {
+      "dissent": false,
+      "id": "malaysia-under-united-kingdom--malaysia--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 820"
+    },
+    {
+      "dissent": false,
+      "id": "maldives-under-united-kingdom--maldives--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 781"
+    },
+    {
+      "dissent": false,
+      "id": "mali-under-france--mali--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 432"
+    },
+    {
+      "dissent": false,
+      "id": "malta-under-united-kingdom--malta--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 338"
+    },
+    {
+      "dissent": false,
+      "id": "mauritania-under-france--mauritania--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 435"
+    },
+    {
+      "dissent": false,
+      "id": "mauritius-under-united-kingdom--mauritius--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 590"
+    },
+    {
+      "dissent": false,
+      "id": "mozambique-under-portugal--mozambique--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 541"
+    },
+    {
+      "dissent": false,
+      "id": "myanmar-burma-under-united-kingdom--myanmar-burma--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 775"
+    },
+    {
+      "dissent": false,
+      "id": "namibia-under-south-africa--namibia--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 565"
+    },
+    {
+      "dissent": false,
+      "id": "new-zealand-under-united-kingdom--new-zealand--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 920"
+    },
+    {
+      "dissent": false,
+      "id": "niger-under-france--niger--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 436"
+    },
+    {
+      "dissent": false,
+      "id": "nigeria-under-united-kingdom--nigeria--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 475"
+    },
+    {
+      "dissent": false,
+      "id": "papua-new-guinea-under-australia--papua-new-guinea--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 910"
+    },
+    {
+      "dissent": false,
+      "id": "philippines-under-united-states-of-america--philippines--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 840"
+    },
+    {
+      "dissent": false,
+      "id": "qatar-under-united-kingdom--qatar--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 694"
+    },
+    {
+      "dissent": false,
+      "id": "senegal-under-france--senegal--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 433"
+    },
+    {
+      "dissent": false,
+      "id": "sierra-leone-under-united-kingdom--sierra-leone--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 451"
+    },
+    {
+      "dissent": false,
+      "id": "singapore-under-united-kingdom--singapore--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 830"
+    },
+    {
+      "dissent": false,
+      "id": "solomon-islands-under-united-kingdom--solomon-islands--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 940"
+    },
+    {
+      "dissent": false,
+      "id": "sri-lanka-ceylon-under-united-kingdom--sri-lanka-ceylon--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 780"
+    },
+    {
+      "dissent": false,
+      "id": "sudan-under-united-kingdom--sudan--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 625"
+    },
+    {
+      "dissent": false,
+      "id": "surinam-under-netherlands--surinam--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 115"
+    },
+    {
+      "dissent": false,
+      "id": "swaziland-eswatini-under-united-kingdom--swaziland-eswatini--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 572"
+    },
+    {
+      "dissent": false,
+      "id": "syria-under-france--syria--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 652"
+    },
+    {
+      "dissent": false,
+      "id": "taiwan-under-japan--taiwan--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 713"
+    },
+    {
+      "dissent": false,
+      "id": "tanzania-tanganyika-under-united-kingdom--tanzania-tanganyika--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 510"
+    },
+    {
+      "dissent": false,
+      "id": "togo-under-france--togo--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 461"
+    },
+    {
+      "dissent": false,
+      "id": "trinidad-and-tobago-under-united-kingdom--trinidad-and-tobago--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 52"
+    },
+    {
+      "dissent": false,
+      "id": "tunisia-under-france--tunisia--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 616"
+    },
+    {
+      "dissent": false,
+      "id": "uganda-under-united-kingdom--uganda--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 500"
+    },
+    {
+      "dissent": false,
+      "id": "united-arab-emirates-under-united-kingdom--united-arab-emirates--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 696"
+    },
+    {
+      "dissent": false,
+      "id": "zambia-under-united-kingdom--zambia--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 551"
+    },
+    {
+      "dissent": false,
+      "id": "zanzibar-under-united-kingdom--zanzibar--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 511"
+    },
+    {
+      "dissent": false,
+      "id": "zimbabwe-rhodesia-under-united-kingdom--zimbabwe-rhodesia--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 552"
+    }
+  ],
+  "id": "cshapes-2-0",
+  "schema": 1
+}

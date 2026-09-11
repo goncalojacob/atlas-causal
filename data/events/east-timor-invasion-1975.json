@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "east-timor-invasion-1975",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "title": "Indonesia invades East Timor",
+  "summary": "Indonesian forces invaded East Timor on 7 December 1975, nine days after FRETILIN had declared independence and with the Portuguese administration withdrawn to Ataúro. The territories layer draws East Timor as a Portuguese colony until 16 July 1976, the date CShapes gives for its annexation by Indonesia, so the map and this record answer different questions — who held the ground, and who is recorded as administering it.",
+  "when": {
+    "start": 1975,
+    "end": 1975,
+    "date": "1975-12-07",
+    "calendar": "gregorian"
+  },
+  "place": "dili",
+  "region": null,
+  "actors": [
+    {
+      "actor": "indonesia",
+      "role": "invader"
+    },
+    {
+      "actor": "fretilin",
+      "role": "target"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "opposition",
+      "note": "withdrew"
+    }
+  ]
+}

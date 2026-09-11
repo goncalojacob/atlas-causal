@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1942-portuguese-presidential-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: 8 February 1942, Óscar Carmona unopposed and re-elected for a third term. The presidency is in the atlas by way of the election of 1928, which did something; this one repeated it."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q18166741",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1942 Portuguese presidential election",
+    "pt": "Eleições presidenciais portuguesas de 1942"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18166741"
+    }
+  ],
+  "title": "1942 Portuguese presidential election",
+  "summary": "Wikidata item Q18166741, imported by tools/import/wikidata.mjs. The item's own description reads \"1942 Portuguese election for president\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1942,
+    "end": 1942,
+    "date": "1942-02-08"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

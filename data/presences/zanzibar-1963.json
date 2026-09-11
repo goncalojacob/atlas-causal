@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "zanzibar-1963",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 361"
+    }
+  ],
+  "actor": "zanzibar",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1963,
+    "end": 1964,
+    "date": "1963-12-19",
+    "endDate": "1964-04-25"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "361"
+  },
+  "capital": {
+    "lon": 39.195592,
+    "lat": -6.16698,
+    "precision": "city",
+    "label": "Zanzibar City"
+  },
+  "confidence": "consensus"
+}

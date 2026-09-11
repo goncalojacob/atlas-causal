@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "constitution-1911--1911-portuguese-presidential-election--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "constitution-1911",
+  "to": "1911-portuguese-presidential-election",
+  "type": "enabled",
+  "confidence": "consensus",
+  "explanation": "The constitution created the presidency and laid down how it was to be filled: by the Congress of the Republic meeting in Lisbon, not by the electorate. The election of 24 August 1911 was held three days after promulgation and under those articles; there was no such office to fill before them.",
+  "dispute": null
+}

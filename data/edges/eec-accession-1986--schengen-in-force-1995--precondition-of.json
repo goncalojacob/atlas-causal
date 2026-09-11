@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "eec-accession-1986--schengen-in-force-1995--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "from": "eec-accession-1986",
+  "to": "schengen-in-force-1995",
+  "type": "precondition-of",
+  "confidence": "consensus",
+  "explanation": "Schengen was an agreement among member states of the European Communities, made outside the Community treaties but not outside the Community: only members were party to it, and Portugal had been one for five years when it signed in 1991. The precondition is institutional rather than causal — accession did not make Portugal want an open border with Spain, and Lisbon and Madrid had their own reasons for wanting one — but without accession there would have been nothing for Portugal to sign. That much is not in dispute, which is why it is marked consensus. The question this link does not answer is why the two Iberian states joined the first wave instead of waiting to see how it worked."
+}

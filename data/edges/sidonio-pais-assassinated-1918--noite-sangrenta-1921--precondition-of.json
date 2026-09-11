@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "sidonio-pais-assassinated-1918--noite-sangrenta-1921--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "from": "sidonio-pais-assassinated-1918",
+  "to": "noite-sangrenta-1921",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The assassination reopened the cycle of coups and counter-coups; the violence of October 1921 belongs to the sequence of instability that began with the collapse of the República Nova.",
+  "dispute": null
+}

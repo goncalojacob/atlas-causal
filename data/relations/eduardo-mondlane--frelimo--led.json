@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "eduardo-mondlane--frelimo--led",
+  "kind": "relation",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "retraction": {
+    "on": "2026-09-06",
+    "reason": "Retracted in M30a-2 and re-filed as the tenure \"eduardo-mondlane-frelimo-1962\": who led a body is an office somebody held and not a link between two actors, because a relation's id is from--to--type and one person may lead one body more than once. The type \"led\" is deprecated and no active relation may take it; nothing this record claimed was changed in the move."
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "from": "eduardo-mondlane",
+  "to": "frelimo",
+  "type": "led",
+  "when": {
+    "start": 1962,
+    "end": 1969
+  },
+  "note": "First president, until he was killed in 1969."
+}

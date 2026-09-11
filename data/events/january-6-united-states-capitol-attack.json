@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "january-6-united-states-capitol-attack",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: the attack on the United States Capitol on 6 January 2021. The atlas holds no record of American domestic politics at all — no presidential election, no administration — so there is nothing here the attack can be argued to have changed and nothing that produced it. The United States appears in this dataset only as a belligerent, a signatory and a negotiator in other people's events."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m40-retracted"
+    ]
+  },
+  "wikidata": "Q104705419",
+  "sitelinks": {
+    "count": 69,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "January 6 United States Capitol attack",
+    "pt": "Ataque ao Capitólio dos Estados Unidos em 2021"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q104705419"
+    }
+  ],
+  "title": "January 6 United States Capitol attack",
+  "summary": "Wikidata item Q104705419, imported by tools/import/wikidata.mjs. The item's own description reads \"2021 attempt to prevent the U.S. presidential electoral vote count\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2021,
+    "end": 2021,
+    "date": "2021-01-06"
+  },
+  "place": null,
+  "region": "americas",
+  "actors": []
+}

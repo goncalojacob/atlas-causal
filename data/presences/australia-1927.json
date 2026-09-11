@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "australia-1927",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 646"
+    }
+  ],
+  "actor": "australia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1927,
+    "end": null,
+    "date": "1927-05-09"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "646"
+  },
+  "capital": {
+    "lon": 149.216705,
+    "lat": -35.28333,
+    "precision": "city",
+    "label": "Canberra"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "1985-portuguese-legislative-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q371408",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1985 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1985"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1985 Portuguese legislative election\", revision 1372481943"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1985\", revision 72812035"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "1985 Portuguese legislative election",
+  "summary": "An early election was held on 6 October 1985 after the Bloco Central broke: Aníbal Cavaco Silva, newly elected leader of the Social Democrats and a critic of the arrangement, pulled his party out and Mário Soares resigned. The Social Democrats came first without a majority and Cavaco Silva formed a minority government; the Democratic Renewal Party, founded around Ramalho Eanes, entered the Assembly as the fourth force and took enough of the vote to make any majority impossible. It is in the atlas as the government whose fall by censure motion in 1987 produced the first absolute majority of the democratic period.",
+  "when": {
+    "start": 1985,
+    "end": 1985,
+    "date": "1985-10-06"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "psd",
+      "role": "head-of-government",
+      "note": "came first and formed a minority government"
+    },
+    {
+      "actor": "cavaco-silva",
+      "role": "head-of-government",
+      "note": "prime minister from November 1985"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "opposition",
+      "note": "lost office"
+    }
+  ]
+}

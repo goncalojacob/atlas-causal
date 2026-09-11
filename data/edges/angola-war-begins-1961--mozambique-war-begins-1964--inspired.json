@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "angola-war-begins-1961--mozambique-war-begins-1964--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "from": "angola-war-begins-1961",
+  "to": "mozambique-war-begins-1964",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "FRELIMO, founded in 1962, moved to armed struggle in 1964 in the context set by Angola and Guinea; the Angolan precedent showed that the Portuguese state would not negotiate and that armed struggle could draw international support.",
+  "dispute": null
+}

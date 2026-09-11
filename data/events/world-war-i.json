@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "id": "world-war-i",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q361",
+  "sitelinks": {
+    "count": 227,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "World War I",
+    "pt": "Primeira Guerra Mundial"
+  },
+  "sources": [
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War I\", revision 1372979664"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Primeira Guerra Mundial\", revision 72915802"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q361"
+    }
+  ],
+  "title": "World War I",
+  "summary": "The war of 1914–1918 set the Allies against the Central Powers, mobilised some seventy million men and killed between fifteen and twenty-two million people, soldiers and civilians together. It destroyed four empires — the German, the Austro-Hungarian, the Russian and the Ottoman — and left the map of Europe and the Middle East to be redrawn at Paris. Portugal entered it in March 1916, when Germany declared war after the requisition of German ships in the Tagus, and sent an expeditionary corps to Flanders; the war it obtained divided the First Republic more deeply than anything else the republic did, and the atlas holds it as the hinge of that regime's short life.",
+  "when": {
+    "start": 1914,
+    "end": 1918,
+    "date": "1914-07-28",
+    "endDate": "1918-11-11"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "germany-prussia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "austria-hungary",
+      "role": "belligerent"
+    },
+    {
+      "actor": "turkey-ottoman-empire",
+      "role": "belligerent"
+    },
+    {
+      "actor": "bulgaria",
+      "role": "belligerent"
+    },
+    {
+      "actor": "france",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    },
+    {
+      "actor": "russia-soviet-union",
+      "role": "belligerent"
+    },
+    {
+      "actor": "italy-sardinia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "serbia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    },
+    {
+      "actor": "japan",
+      "role": "belligerent"
+    },
+    {
+      "actor": "portugal",
+      "role": "belligerent"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "european-economic-community",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "claim",
+      "date",
+      "wikidata-assigned-by-assistant"
+    ],
+    "note": "Closing this actor rather than renaming it is an editorial choice nobody has made deliberately; the closing year follows from it."
+  },
+  "wikidata": "Q52847",
+  "wikipedia": {
+    "en": "European Economic Community",
+    "pt": "Comunidade Económica Europeia"
+  },
+  "sitelinks": {
+    "count": 86,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "European Economic Community",
+    "EEC",
+    "Comunidade Económica Europeia",
+    "CEE",
+    "Common Market"
+  ],
+  "summary": "The community founded by the Treaty of Rome in 1957, which Portugal applied to join in 1977 and entered in 1986. It became the European Union under the Maastricht Treaty in 1993.",
+  "when": {
+    "start": 1957,
+    "end": 1993
+  },
+  "where": {
+    "lon": 4.35,
+    "lat": 50.85,
+    "precision": "city",
+    "label": "Brussels"
+  }
+}

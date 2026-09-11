@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1983-portuguese-legislative-election--treaty-of-accession-1985--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "1983-portuguese-legislative-election",
+  "to": "treaty-of-accession-1985",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Portugal had been negotiating with the Communities since 1977 and the negotiation had stalled repeatedly, on agriculture, on the Community's own budget quarrel and on the instability of the governments doing the negotiating. The Bloco Central this election produced held for two years with both large parties committed to accession, and it is the government that closed the chapters and signed on 12 June 1985. The atlas argues the political condition rather than the diplomacy: the terms were the Community's, the ability to accept them was this election's.",
+  "dispute": null
+}

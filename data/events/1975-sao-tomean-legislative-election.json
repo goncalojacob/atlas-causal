@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "1975-sao-tomean-legislative-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q7665728",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1975 São Toméan parliamentary election"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1975 São Toméan parliamentary election\", revision 1367760170"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "1975 São Toméan legislative election",
+  "summary": "The fifty-two members of a People's Assembly for São Tomé and Príncipe were elected on 7 and 8 July 1975, four days before the islands became independent of Portugal. The Movement for the Liberation of São Tomé and Príncipe was the only legal party and had nominated almost all of the candidates; about twenty-one thousand people were registered to vote. The ballot was the last step of a handover agreed with Lisbon after the coup of 25 April 1974, and the assembly it returned received independence on 12 July. It is in the atlas as the smallest of the decolonisations that followed the revolution, and because it shows the pattern the others repeated in miniature: one movement recognised as the party Portugal would hand over to, and no second list on the paper.",
+  "when": {
+    "start": 1975,
+    "end": 1975
+  },
+  "place": null,
+  "region": "africa",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "mlstp",
+      "role": "party",
+      "note": "sole legal party and sole list"
+    },
+    {
+      "actor": "sao-tome-and-principe",
+      "role": "government",
+      "note": "the state being founded"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "government",
+      "note": "departing colonial power"
+    }
+  ]
+}

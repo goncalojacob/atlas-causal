@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "sudanese-civil-war",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: the war between the army and the Rapid Support Forces since April 2023. The atlas holds nothing in Sudan — not the Darfur war out of which the RSF came, not the revolution of 2019, not the secession of South Sudan — and there is no Portuguese link. It would need the Sudanese revolution, or Darfur, as a record before an honest edge could be written from either end."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m40-retracted"
+    ]
+  },
+  "wikidata": "Q117716414",
+  "sitelinks": {
+    "count": 66,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Sudanese civil war (2023–present)",
+    "pt": "Guerra Civil no Sudão (2023–presente)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q117716414"
+    }
+  ],
+  "title": "Sudanese civil war",
+  "summary": "Wikidata item Q117716414, imported by tools/import/wikidata.mjs. The item's own description reads \"ongoing military conflict in Sudan since 2023\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2023,
+    "end": 2023
+  },
+  "place": null,
+  "region": "africa",
+  "actors": []
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "fixture-office-one",
+  "kind": "office",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [],
+  "of": "fixture-polity-three",
+  "title": "Fixture Crown",
+  "category": "head-of-state",
+  "when": {
+    "start": 1150,
+    "end": null
+  },
+  "summary": "Synthetic: the head of state of a synthetic polity, so that rule 26 has an office to check against."
+}

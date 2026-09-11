@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "west-irian-dutch-new-guinea-1963",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 642"
+    }
+  ],
+  "actor": "west-irian-dutch-new-guinea",
+  "presenceType": "state",
+  "dependencyOf": "indonesia",
+  "dependencyKind": "occupied",
+  "when": {
+    "start": 1963,
+    "end": 1969,
+    "date": "1963-05-01",
+    "endDate": "1969-09-16"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "642"
+  },
+  "capital": {
+    "lon": 140.69998,
+    "lat": -2.53299,
+    "precision": "city",
+    "label": "Hollandia"
+  },
+  "confidence": "consensus"
+}

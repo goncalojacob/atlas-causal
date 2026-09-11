@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "eastern-front--potsdam-conference--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eastern Front (World War II)\", revision 1373107377"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Potsdam Conference\", revision 1371936780"
+    }
+  ],
+  "from": "eastern-front",
+  "to": "potsdam-conference",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "What the three governments could settle at Potsdam in July 1945 was bounded by where their armies already were, and in the east that was the Red Army's doing: Poland's frontiers were moved west onto ground the Soviet Union held, the German population east of the Oder-Neisse was expelled with Allied consent, and the occupation zones were drawn around lines the fighting had fixed. The conference ratified a distribution of force rather than creating one. That is a claim about the limits of the negotiation, not about the intentions of the negotiators.",
+  "dispute": null
+}

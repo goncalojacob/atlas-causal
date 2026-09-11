@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "new-guinea-german-new-guinea-kaiser-wilhelmsland-1910",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 663"
+    }
+  ],
+  "actor": "new-guinea-german-new-guinea-kaiser-wilhelmsland",
+  "presenceType": "state",
+  "dependencyOf": "germany-prussia",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1910,
+    "end": 1914,
+    "date": "1910-01-01",
+    "endDate": "1914-11-10"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "663"
+  },
+  "capital": {
+    "lon": 152.143431,
+    "lat": -4.20549,
+    "precision": "city",
+    "label": "Rabaul (Simpsonhafen)"
+  },
+  "confidence": "consensus"
+}

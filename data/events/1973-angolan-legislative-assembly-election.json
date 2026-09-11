@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "1973-angolan-legislative-assembly-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: elections to a Legislative Assembly held in Portuguese Angola between 19 and 27 March 1973, the first and the only ones. That is genuinely interesting — the late-colonial attempt at a settler assembly, a year before the regime fell — and the cached lead is one sentence long. Nothing in the atlas follows from it, and the war it was meant to answer is already here."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q18160604",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1973 Angolan Legislative Assembly election"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18160604"
+    }
+  ],
+  "title": "1973 Angolan Legislative Assembly election",
+  "summary": "Wikidata item Q18160604, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1973,
+    "end": 1973
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

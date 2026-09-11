@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "2015-portuguese-legislative-election",
+  "kind": "event",
+  "status": "merged",
+  "supersededBy": "legislative-election-2015",
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-merged"
+    ],
+    "note": "Merged in M22 into legislative-election-2015, which is the same event: the election of 4 October 2015, at which the PSD–CDS coalition won the most votes and lost its majority, and the parties to its left held the chamber. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
+  },
+  "wikidata": "Q17016934",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2015 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 2015"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17016934"
+    }
+  ],
+  "title": "2015 Portuguese legislative election",
+  "summary": "Wikidata item Q17016934, imported by tools/import/wikidata.mjs. The item's own description reads \"election in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2015,
+    "end": 2015,
+    "date": "2015-10-04"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

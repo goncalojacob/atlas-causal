@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "republic-of-india",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q668",
+  "wikipedia": {
+    "en": "India",
+    "pt": "Índia"
+  },
+  "sitelinks": {
+    "count": 313,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Republic of India",
+    "India",
+    "Índia"
+  ],
+  "summary": "The Republic of India, independent from 1947, claimed the Portuguese territories on its coast — Goa, Daman, Diu, and the enclaves of Dadra and Nagar Haveli — from the beginning, and Portugal refused to negotiate on the ground that they were not colonies but part of Portugal. Diplomatic relations were broken in 1955, the enclaves were taken by volunteers the same year, and after years of blockade Indian forces occupied Goa, Daman and Diu in December 1961. Portugal recognised the loss only in 1974. It is in the atlas as the actor that ended Portuguese rule in Asia's mainland, and whose action hardened Lisbon's determination to hold Africa.",
+  "when": {
+    "start": 1947,
+    "end": null
+  },
+  "where": {
+    "lon": 77.21,
+    "lat": 28.61,
+    "precision": "city",
+    "label": "New Delhi"
+  }
+}

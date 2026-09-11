@@ -1,0 +1,948 @@
+// The third view of the same graph: every event a node, every edge a line,
+// the whole web at once instead of one chain at a time. It shares the
+// panel, the search, the window, the URL, the selection and the walked
+// chain with the map — it is the same atlas, drawn another way — and takes
+// the map's place in the layout behind the Map | Graph toggle.
+//
+// Nothing here decides where a node goes; layout.js does, purely. This file
+// draws what it is given, says what is inside the window and what is not,
+// and turns a click into a move through the graph.
+//
+// The one thing it does that the map does not: clicking a node that the
+// selected event actually leads to walks the chain rather than starting a
+// new one. In a picture of the whole web, following an arrow with the eye
+// and then clicking its head is the obvious gesture, and it is the same
+// step the panel's "follow" button takes.
+//
+// Since M25 it draws a level of detail rather than every node: what is too
+// close together to be told apart at this zoom is one mark with a count, and
+// the links between two such marks are one line with a count of their own.
+// layout.js decides all of that, purely; this file draws it, and decides the
+// one thing a pure function cannot — which events are the ones the reader is
+// working with, and therefore may never be swallowed by a stack.
+
+import { svg, svgTitle } from '../util/dom.js';
+import { formatInterval, formatYear } from '../util/dates.js';
+import { overlaps, resolveWindow } from '../util/window.js';
+import { renderKey, shardsArrived } from '../render-key.js';
+import { labelOf, LOADING_LABEL } from '../attributes.js';
+import { convergence } from '../graph.js';
+import { EDGE_TYPE_IDS } from '../vocab.js';
+import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
+import { horizonBand } from '../horizon.js';
+import { workingSet, heldSet } from '../emphasis.js';
+import { isParent, ringClasses } from '../parts.js';
+import { zoomBucket } from '../cluster.js';
+import { onScreen } from '../map/layers/events.js';
+import { arrangementOf, holdingKey } from './arrangement.js';
+import { layoutGraph, stackLayout, MIN_ZOOM, MAX_ZOOM } from './layout.js';
+import { collapseLayout } from './collapse.js';
+import { createLayoutRunner } from './layout-runner.js';
+import { exportButton } from '../share.js';
+
+// Sizes in SVG units at k = 1; divided by k when drawn, so a node keeps its
+// size on screen at any zoom, as the map's marks do.
+const MIN_RADIUS = 4;
+const MAX_RADIUS = 6.5;
+// How far from a node's centre a click still means that node.
+const HIT_RADIUS = 8;
+const SELECTED_RADIUS = 7.5;
+// A stack is a little larger than the node it is drawn on, and CSS gives it a
+// heavier ring: the reader has to be able to tell one mark from many at a
+// glance, as they can on the map.
+const STACK_BONUS = 1.2;
+const HEAD_LENGTH = 7;
+const HEAD_WIDTH = 4.5;
+const LABEL_SIZE = 11;
+const LABEL_CHARS = 28;
+// What fits in the left gutter a band label is written in.
+const BAND_LABEL_CHARS = 12;
+// Below this zoom only the heaviest nodes on screen are named; at or above
+// it every node on screen is, which at sixty events is all of them.
+const LABEL_ALL_ZOOM = 2;
+const LABEL_LIMIT = 14;
+const BADGE_SIZE = 10;
+// How far outside the rectangle on screen a mark is still worth putting in
+// the DOM: a node whose centre is just past the edge still has half of
+// itself, its ring and its count inside it. The map's `DRAW_MARGIN` is the
+// same sum for the same reason (map/layers/events.js).
+const DRAW_MARGIN = HIT_RADIUS + BADGE_SIZE;
+// The ring outside the node of an event that has parts: how far outside it,
+// and how thin. A ring says "there is more inside" and nothing else, so it is
+// thinner than the node's own outline.
+const RING_GAP = 2.5;
+const RING_WIDTH = 1;
+// How much heavier a merged line is drawn. Logarithmic, so a line carrying
+// twenty links is thicker than one carrying two without being a ribbon:
+// weight here says "several", not "exactly n" — the count is in the title.
+const MERGED_BASE = 1.6;
+const MERGED_STEP = 1.1;
+const mergedWidth = (count) => MERGED_BASE + Math.log2(count) * MERGED_STEP;
+// One notch of the wheel, for the click that opens a stack no zoom quite
+// parts: never less than this much further in.
+const CLUSTER_ZOOM_STEP = 1.2;
+// As far as the first drawing will zoom to a narrow window on its own, and
+// the share of the data a window has to be under before it zooms at all.
+const FIT_ZOOM = 2;
+const FIT_SHARE = 0.6;
+// How many arrangements and how many stackings are kept. Small on purpose:
+// what these are for is the reader who narrows the band and widens it again,
+// or zooms in and back out, and finds the picture already there. Holding
+// every arrangement of a session would be holding the corpus several times
+// over (health review A, finding 2: cached per key, with a size cap).
+const LAYOUT_CACHE = 6;
+const STACK_CACHE = 12;
+
+// Least recently used, by insertion order, which a Map already keeps: a hit
+// is deleted and set again so it goes back to the young end.
+function createCache(limit) {
+  const entries = new Map();
+  return {
+    get(key) {
+      if (!entries.has(key)) return null;
+      const value = entries.get(key);
+      entries.delete(key);
+      entries.set(key, value);
+      return value;
+    },
+    set(key, value) {
+      entries.delete(key);
+      entries.set(key, value);
+      if (entries.size > limit) entries.delete(entries.keys().next().value);
+      return value;
+    },
+  };
+}
+
+function textNode(text, attrs) {
+  const el = svg('text', attrs);
+  el.textContent = text;
+  return el;
+}
+
+function shorten(text, chars = LABEL_CHARS) {
+  return text.length > chars ? `${text.slice(0, chars - 1).trimEnd()}…` : text;
+}
+
+// Weight decides size only within a small range: the graph is about the
+// links, and a node four times the size of its neighbour would be an
+// argument the data does not make.
+function radiusFor(weight, weights) {
+  if (weights.max === weights.min) return MIN_RADIUS;
+  // Clamped, because a collapsed parent carries the weight of its whole
+  // subtree and the range was measured over the events (collapse.js): the
+  // heaviest mark is the heaviest size and not a larger one.
+  const t = Math.min(1, Math.max(0, (weight - weights.min) / (weights.max - weights.min)));
+  return MIN_RADIUS + t * (MAX_RADIUS - MIN_RADIUS);
+}
+
+function classes(...list) {
+  return list.filter(Boolean).join(' ');
+}
+
+// The key to the five line patterns, in the corner of the view that uses
+// them. Drawn with the very same classes the edges are drawn with, so the
+// key cannot come to disagree with the picture; about.html carries the same
+// six lines for the same reason. Outside the SVG, so panning and zooming
+// leave it where it is.
+export function edgeKey() {
+  const box = document.createElement('div');
+  box.className = 'graph-key';
+  const line = (type, extra = '') => `<svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true">
+      <line class="edge type-${type} ${extra}" x1="1" y1="6" x2="50" y2="6"/>
+      <polygon class="edge-head type-${type}" points="60,6 50,3 50,9"/></svg>`;
+  box.innerHTML = `<h2>Links</h2><dl class="edge-key">
+    ${EDGE_TYPE_IDS
+      .map((type) => `<dt>${line(type)}</dt><dd>${type}</dd>`).join('')}
+    <dt>${line('caused', 'disputed')}</dt><dd>any type, disputed</dd>
+  </dl>`;
+  return box;
+}
+
+export function createGraphView(container, { atlas, state, onCluster = null }) {
+  // The arrangement depends on which events are shown, what the bands are and
+  // where the band of time is, and all three change under the reader: it is
+  // rebuilt when they do and kept when they do not, so panning, zooming,
+  // selecting and walking a chain never move a node.
+  let laid = null;
+  // What is actually drawn at the current zoom: the arrangement above, with
+  // everything too close together to tell apart merged into one mark.
+  let stacked = null;
+  let weights = { min: 0, max: 0 };
+  let arrangedFor = null;
+  // Both of the expensive answers are kept by their key rather than only for
+  // as long as the key holds still: a reader who widens the band and narrows
+  // it again, or zooms out and back in, gets the picture they had.
+  const arrangements = createCache(LAYOUT_CACHE);
+  const stackings = createCache(STACK_CACHE);
+
+  // The working set — what the reader is holding — is asked of emphasis.js
+  // once per state and not once per caller. It runs the convergence query,
+  // and the arrangement, the stacking and the drawing all need it. The cache
+  // this view kept for itself moved into `emphasis.js` in H4c, where the map
+  // and the timeline share it: three views asking the same question of the
+  // same state now walk the graph once between them, not once each.
+  const workingOf = (s) => workingSet(atlas, s);
+  // And what of it may never be swallowed by a stack, nor left without a
+  // place to stand when the band moves away from it. The graph, unlike the
+  // map, never stacks the reachable set: the horizon is the answer this
+  // picture exists to draw, and a band inside a stack is a band the reader
+  // cannot read off.
+  let aloneFor = null;
+  let aloneIs = null;
+  const alonesOf = (s) => {
+    if (s !== aloneFor) {
+      aloneFor = s;
+      aloneIs = heldSet(workingOf(s), { lens: true, reachable: true });
+    }
+    return aloneIs;
+  };
+
+  const viewport = svg('g', { class: 'viewport' });
+  const bandsGroup = svg('g', { class: 'layer layer-bands' });
+  const windowGroup = svg('g', { class: 'layer layer-window' });
+  const edgesGroup = svg('g', { class: 'layer layer-edges' });
+  const nodesGroup = svg('g', { class: 'layer layer-nodes' });
+  const labelsGroup = svg('g', { class: 'layer layer-labels' });
+  viewport.append(bandsGroup, windowGroup, edgesGroup, nodesGroup, labelsGroup);
+  const root = svg('svg', {
+    class: 'graph',
+    role: 'img',
+    'aria-label': 'The graph of events and the links between them',
+  }, [viewport]);
+
+  // The one line the reader sees while a first arrangement too large to make
+  // here is being made elsewhere. Never shown at the sizes this atlas holds:
+  // below the runner's threshold the nodes are there before the frame is.
+  const waiting = document.createElement('p');
+  waiting.className = 'graph-note';
+  waiting.hidden = true;
+  waiting.textContent = 'Arranging the graph…';
+
+  // Which arrangement the coordinates in `laid` belong to, which is not
+  // always the one the reader has asked for: while a large one is being made
+  // the last picture stays on screen, and a stacking of it must not be filed
+  // under the key of a layout it was not made from.
+  let laidFor = null;
+  let fitted = false;
+  const runner = createLayoutRunner({ records: { events: atlas.events, edges: atlas.edges } });
+
+  // Pan e zoom, como o mapa os tem. Não estão no estado: o URL carrega o que
+  // o leitor está a ver, não até onde deslocou a vista.
+  //
+  // Declarados aqui, acima do primeiro `arrange()`, e não junto aos gestos que
+  // os usam: o primeiro `adopt()` chama `fitToWindow()`, que atribui
+  // `transform` e chama `applyTransform`. Numa janela estreita — um passo de
+  // narrativa, ou um `?from=&to=&view=graph` partilhado — `fitToWindow` não
+  // sai mais cedo e morria com `Cannot access 'transform' before
+  // initialization`, deixando o painel do grafo escondido.
+  let transform = { x: 0, y: 0, k: 1 };
+  // Whether the zoom in force was chosen to part a stack, in which case the
+  // stacking is done at exactly it rather than at the bucket below it: the
+  // bucket below `coreZoom` is a zoom that does not part them, and the click
+  // would have moved the picture and parted nothing. The map has kept the
+  // same flag for the same reason since H4a (map.js, `exactZoom`; cluster.js,
+  // `zoomBucket`). Cleared by every other way the zoom can move.
+  let exactZoom = false;
+  const applyTransform = () => {
+    viewport.setAttribute('transform', `translate(${transform.x} ${transform.y}) scale(${transform.k})`);
+  };
+
+  // The frame the reader keeps their bearings by: the bands and the year
+  // axis. Redrawn only when the arrangement is.
+  function drawFrame() {
+    bandsGroup.replaceChildren();
+    for (const band of laid.bands) {
+      if (band.hidden) continue;
+      bandsGroup.appendChild(svg('rect', {
+        x: 0, y: band.y0, width: laid.width, height: band.y1 - band.y0,
+        class: classes('band', band.even ? 'even' : 'odd'),
+      }));
+      // A band is a lane now, and an actor's name is longer than a region's:
+      // the label is cut to the gutter and the whole of it is in the title.
+      const label = textNode(shorten(band.label, BAND_LABEL_CHARS), { x: 8, y: band.y0 + 15, class: 'band-label' });
+      label.appendChild(svgTitle(band.label));
+      bandsGroup.appendChild(label);
+    }
+    for (const tick of laid.scale.ticks(10)) {
+      const x = laid.scale.x(tick.value);
+      bandsGroup.appendChild(svg('line', { x1: x, y1: laid.bands[0]?.y0 ?? 0, x2: x, y2: laid.height, class: 'tick' }));
+      bandsGroup.appendChild(textNode(tick.label, { x, y: 16, class: 'tick-label', 'text-anchor': 'middle' }));
+    }
+  }
+
+  // What `layoutGraph` is given: the arrangement's events, and the edges with
+  // both ends in it. An edge with one end removed by the lens, or with one
+  // end outside the band the arrangement covers, has nothing to join.
+  function inputFor(events, lanes) {
+    const ids = new Set(events.map((e) => e.id));
+    return {
+      events,
+      edges: [...atlas.edges.values()].filter((e) => e.status === 'active' && ids.has(e.from) && ids.has(e.to)),
+      lanes,
+      extent: atlas.extent,
+    };
+  }
+
+  function entryFor(layout) {
+    return {
+      layout,
+      weights: {
+        min: Math.min(...layout.nodes.map((n) => n.weight), 0),
+        max: Math.max(...layout.nodes.map((n) => n.weight), 0),
+      },
+    };
+  }
+
+  // The arrangement in hand becomes the one on screen.
+  function adopt(entry, key) {
+    laid = entry.layout;
+    laidFor = key;
+    weights = entry.weights;
+    waiting.hidden = true;
+    root.setAttribute('viewBox', `0 0 ${laid.width} ${laid.height}`);
+    drawFrame();
+    // The first picture there has ever been is the one the window is fitted
+    // to, whether it was made here or arrived from the runner's thread.
+    if (!fitted) {
+      fitted = true;
+      fitToWindow();
+    }
+  }
+
+  function arrange(s) {
+    const { events, lanes, key } = arrangementOf(atlas, s, alonesOf(s));
+    if (key === arrangedFor) return false;
+    arrangedFor = key;
+    const cached = arrangements.get(key);
+    if (cached) {
+      adopt(cached, key);
+      return true;
+    }
+    // Small enough to arrange here, which is every corpus this atlas has
+    // held so far and the only path `node --test` can reach (layout-runner).
+    if (!runner.offloads(events.length)) {
+      adopt(arrangements.set(key, entryFor(layoutGraph(inputFor(events, lanes)))), key);
+      return true;
+    }
+    // Otherwise the picture the reader already has stays on screen until the
+    // new one lands, and on the very first arrangement — when there is none —
+    // the frame says what it is doing rather than showing an empty field.
+    if (!laid) waiting.hidden = false;
+    runner.run(inputFor(events, lanes), (layout) => {
+      const entry = arrangements.set(key, entryFor(layout));
+      // The reader may have moved the band again while this was away. The
+      // arrangement is kept either way; it is simply not what is on screen.
+      if (arrangedFor !== key) return;
+      adopt(entry, key);
+      render(state.get(), { force: true });
+    });
+    return laid !== null;
+  }
+  arrange(state.get());
+
+  // --- what the reader can actually see -------------------------------------
+  //
+  // The `<svg>` carries a viewBox and no preserveAspectRatio of its own, and
+  // CSS gives it the whole pane, so it is letterboxed: in a pane wider than
+  // the arrangement's ratio the visible SVG units run a few hundred either
+  // side of it, and a third of what is on the screen lies outside the nominal
+  // box. That did not matter while this rectangle only chose which marks were
+  // worth naming; it matters now that it decides which are drawn at all, so
+  // it goes through the element's own matrix, exactly as the map's does
+  // (map.js, `visibleBox`; health review A, finding 4).
+  //
+  // The nominal box is the answer when there is nothing to measure — a test
+  // with no layout behind it, or a pane collapsed to nothing — which is what
+  // this returned before.
+  const nominalBox = () => ({ x0: 0, y0: 0, x1: laid?.width ?? 0, y1: laid?.height ?? 0 });
+  // Measured once and kept. This rectangle is in the SVG's own units and
+  // moves only when the element does — a pan or a zoom moves the picture
+  // *inside* it — and asking the browser for the matrix is asking it to lay
+  // the whole drawing out first. At 20,000 events one such question was a
+  // third of a wheel notch, and a notch would otherwise ask two: one in the
+  // handler, to find the point under the pointer, and one here. What makes it
+  // stale is the pane changing size, which the observer at the end of this
+  // file is watching for.
+  let measured = null;
+  const visibleBox = () => {
+    if (measured) return measured;
+    if (typeof DOMPoint !== 'function' || typeof root.getScreenCTM !== 'function') return nominalBox();
+    const ctm = root.getScreenCTM();
+    const rect = root.getBoundingClientRect?.();
+    if (!ctm || ctm.a === 0 || ctm.d === 0 || !rect || !rect.width || !rect.height) return nominalBox();
+    const inverse = ctm.inverse();
+    const a = new DOMPoint(rect.left, rect.top).matrixTransform(inverse);
+    const b = new DOMPoint(rect.right, rect.bottom).matrixTransform(inverse);
+    measured = {
+      x0: Math.min(a.x, b.x), y0: Math.min(a.y, b.y), x1: Math.max(a.x, b.x), y1: Math.max(a.y, b.y),
+    };
+    return measured;
+  };
+  // That rectangle in the graph's own coordinates, under the pan and zoom.
+  //
+  // Measured once per drawing and handed down, never asked for again from
+  // inside `draw`: `getScreenCTM` on an element whose children have just been
+  // replaced forces the browser to lay the whole picture out again, and at
+  // 20,000 events that one call was a third of a wheel notch (STATUS.md,
+  // "what the graph's notch actually costs").
+  const view = () => {
+    const box = visibleBox();
+    return {
+      x0: (box.x0 - transform.x) / transform.k,
+      y0: (box.y0 - transform.y) / transform.k,
+      x1: (box.x1 - transform.x) / transform.k,
+      y1: (box.y1 - transform.y) / transform.k,
+    };
+  };
+  // Client coordinates into the coordinates of the viewBox, through the
+  // SVG's own matrix: the element is letterboxed inside its box, so scaling
+  // by the bounding rectangle would be a few units out — enough to miss a
+  // node in a picture where a year is eight units wide.
+  const toSvg = (e) => {
+    const p = new DOMPoint(e.clientX, e.clientY).matrixTransform(root.getScreenCTM().inverse());
+    return [p.x, p.y];
+  };
+  // And from there into the graph's own coordinates, under the pan and zoom.
+  const toGraph = (e) => {
+    const [x, y] = toSvg(e);
+    return [(x - transform.x) / transform.k, (y - transform.y) / transform.k];
+  };
+  // Put a point in the middle of the view at a given zoom, clamped to the
+  // limits. What opening a stack does, and the same move the map makes.
+  const zoomTo = (point, wanted) => {
+    const k = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, wanted));
+    transform = { k, x: laid.width / 2 - point.x * k, y: laid.height / 2 - point.y * k };
+    applyTransform();
+    render(state.get());
+  };
+
+  let drag = null;
+  // The drag is over by the time the click arrives, so whether it moved has
+  // to outlive it — the same guard the map needs (STATUS.md, deviation 34).
+  let dragged = false;
+  const capture = (method, pointerId) => {
+    try {
+      root[method](pointerId);
+    } catch {
+      // No such pointer any more; nothing to capture or release.
+    }
+  };
+  root.addEventListener('pointerdown', (e) => {
+    drag = { start: toSvg(e), origin: { ...transform }, moved: false, pointerId: e.pointerId };
+    dragged = false;
+  });
+  root.addEventListener('pointermove', (e) => {
+    if (!drag) return;
+    const [x, y] = toSvg(e);
+    const dx = x - drag.start[0];
+    const dy = y - drag.start[1];
+    if (Math.abs(dx) + Math.abs(dy) > 2 && !drag.moved) {
+      drag.moved = true;
+      // Captured only once the press becomes a drag: capturing at the press
+      // retargets the click to the root and no node could be selected.
+      capture('setPointerCapture', drag.pointerId);
+    }
+    transform = { ...transform, x: drag.origin.x + dx, y: drag.origin.y + dy };
+    applyTransform();
+  });
+  root.addEventListener('pointerup', () => {
+    if (drag?.moved) capture('releasePointerCapture', drag.pointerId);
+    dragged = drag?.moved ?? false;
+    drag = null;
+  });
+  root.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const [x, y] = toSvg(e);
+    const factor = Math.exp(-e.deltaY * 0.0015);
+    const k = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, transform.k * factor));
+    const ratio = k / transform.k;
+    transform = { k, x: x - (x - transform.x) * ratio, y: y - (y - transform.y) * ratio };
+    exactZoom = false;
+    applyTransform();
+    render(state.get());
+  }, { passive: false });
+  root.addEventListener('dblclick', () => {
+    transform = { x: 0, y: 0, k: 1 };
+    exactZoom = false;
+    applyTransform();
+    render(state.get());
+  });
+
+  // Which mark a click means is decided by distance, not by which circle
+  // happens to be on top. Two adjacent years are about eight units apart
+  // here, and a mark or its stroke covering a neighbour's centre would have
+  // made that neighbour unreachable at rest — the nearest centre inside the
+  // reach is always the one the reader aimed at.
+  root.addEventListener('click', (e) => {
+    // A drag that ends over a node must not select it; the flag is cleared
+    // here, once this click has been judged, so the next clean one selects.
+    if (dragged) {
+      dragged = false;
+      return;
+    }
+    const [x, y] = toGraph(e);
+    const reach = HIT_RADIUS / transform.k;
+    let best = null;
+    let distance = Infinity;
+    for (const stack of stacked.nodes) {
+      const d = Math.hypot(stack.x - x, stack.y - y);
+      if (d < distance || (d === distance && best && stack.key < best.key)) {
+        best = stack;
+        distance = d;
+      }
+    }
+    if (!best || distance > reach) return;
+    if (best.count === 1) {
+      select(best.representative.id);
+      return;
+    }
+    openStack(best);
+  });
+
+  // A stack of nodes drawn as one, clicked. The members go to the panel
+  // whatever happens — the list is the only way to reach one of them by name,
+  // and the only way at all when zooming cannot part them — and a stack that
+  // zooming *can* part is opened by going straight to the zoom where it does,
+  // rather than peeling one neighbour off per click. Exactly the map's move.
+  function openStack(stack) {
+    if (onCluster) {
+      onCluster({
+        key: stack.key,
+        on: 'graph',
+        count: stack.count,
+        coincident: stack.coincident,
+        representative: { id: stack.representative.id, event: stack.representative.event },
+        members: stack.members.map((m) => ({ id: m.id, event: m.event })),
+        lane: laid.bands.find((b) => b.id === stack.lane) ?? null,
+        years: stack.years,
+      });
+    }
+    if (!stack.splittable) return;
+    // And that zoom is not rounded to a bucket when the stack named one:
+    // `coreZoom` is the zoom at which this stack comes apart, and the bucket
+    // below it is a zoom that does not (review of the health plan, finding
+    // 12).
+    exactZoom = stack.coreZoom !== null && stack.coreZoom !== undefined;
+    zoomTo(stack.centre, Math.max(stack.coreZoom ?? 0, transform.k * CLUSTER_ZOOM_STEP));
+  }
+
+  // Clicking on a consequence of the selected event walks the chain; clicking
+  // anywhere else starts afresh. The rule was written here first and lives in
+  // chain.js now, so the map and the timeline answer the same click the same
+  // way (health review B, finding 10).
+  const select = (id) => walkOrSelect(state, atlas, id);
+
+  // The map's viewport narrows the timeline, and this view has no viewport of
+  // its own to be narrowed by: the graph is arranged by year and by band, and
+  // nothing in it is anywhere. Rather than filter it by a box that means
+  // nothing here, or leave the reader wondering why the lanes below are
+  // shorter than the picture above, it says so.
+  const note = document.createElement('p');
+  note.className = 'graph-note';
+  note.hidden = true;
+  note.textContent = 'The map is looking at part of the world. The graph has no viewport of its own, so it draws every event; the lanes below are narrowed to what the map can see.';
+
+  container.append(root);
+  container.append(waiting);
+  container.append(note);
+  container.append(exportButton(root, 'graph'));
+  container.append(edgeKey());
+
+  // --- when the graph is drawn again ---------------------------------------
+  //
+  // The whole state, plus the transform and the rectangle on screen — the
+  // zoom decides what is stacked and what is named, and neither is state
+  // (render-key.js). The arrangement has a key of its own above: this one
+  // says whether the picture has to be drawn, that one whether the nodes
+  // have to be laid out again.
+  let drawnFor = null;
+
+  function render(s, { force = false } = {}) {
+    // The arrangement first and always: it is what `laid` is, and it is laid
+    // out again whenever its own key moves, whatever this one says. Only the
+    // drawing is skipped, and only of a picture already on screen.
+    const arranged = arrange(s);
+    // And there is no picture at all until the first arrangement lands, which
+    // it does on this turn at every size this atlas has held (layout-runner).
+    if (!laid) return;
+    const box = view();
+    const key = renderKey(s, transform.x, transform.y, transform.k, shardsArrived(atlas),
+      Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
+    if (!force && !arranged && key === drawnFor) return;
+    drawnFor = key;
+    draw(s, box);
+  }
+
+  // `box` is the rectangle on screen, measured by `render` before the drawing
+  // is touched. A default for the one caller that has no measurement of its
+  // own to hand: the fixture-free tests that call `draw` through `render`
+  // always pass one.
+  function draw(s, box = view()) {
+    note.hidden = !s.bbox;
+    const timeWindow = resolveWindow(s, atlas.extent);
+    // One period either side of the band is as far out as the graph draws,
+    // and since H4b as far out as it lays anything out: beyond it a node is
+    // not faded, it is not there, and the timeline is where the reader sees
+    // that the dataset carries on (window.js, arrangement.js).
+    // What the reader is working with, from the one place that decides it
+    // (emphasis.js): the same sets the map and the timeline draw, so a fourth
+    // picture is a fourth reader of that function and not a fourth copy.
+    // Once per state, because the arrangement had to ask for it too.
+    const working = workingOf(s);
+    const chainEdges = walkedEdges(atlas, s.chain);
+    const pathIds = new Set([...working.path, ...working.selected]);
+    const chainEdgeIds = new Set(chainEdges.map((e) => e.id));
+    const consequences = s.selected ? (atlas.adjacency.out.get(s.selected) ?? []) : [];
+    const consequenceIds = new Set(consequences.map((e) => e.id));
+
+    // The other branches that fed the selected event; their *edges* are what
+    // this view draws, and emphasis.js has already answered which events they
+    // are, so the picture and the panel's list cannot disagree.
+    const converging = working.converging;
+    const convergingEdges = new Set();
+    if (s.selected && atlas.events.has(s.selected)) {
+      for (const branch of convergence(atlas.adjacency, s.selected, [...pathIds])) {
+        convergingEdges.add(branch.edge.id);
+      }
+    }
+
+    // The same lens the arrangement was built from; what it kept is drawn
+    // one event to a node — the focus set in full, and the direct causes and
+    // consequences around it faintly (lens.js).
+    const lens = working.lens;
+    const lensNear = working.lensNear;
+    const actorIds = working.actor;
+    // The whole of an open narrative's walk: where it is going, not only
+    // where the reader has got to.
+    const narrativeIds = working.narrative;
+    // What the selected event had led to by the horizon year, faded by how
+    // far out it is. Empty unless the reader chose a year (horizon.js).
+    const reachable = working.reachable;
+
+    const inWindow = new Map(laid.nodes.map((n) => [n.id, overlaps(n.event.when, timeWindow)]));
+    const k = transform.k;
+
+    // Everything the reader is currently working with keeps a node of its
+    // own. The map has drawn its marks alone for the same reason since M7:
+    // a chain that vanished into a stack would be worse than no stack at
+    // all, and the answer to "what else fed this" cannot be inside a mark
+    // that does not say so.
+    const alone = alonesOf(s);
+
+    // What is laid out is what is drawn: since H4b the arrangement covers the
+    // window, one period either side of it, and whatever the reader is
+    // holding beyond that (arrangement.js) — which is exactly the rule this
+    // line used to apply afterwards to a layout of the whole corpus. Moving
+    // the band therefore moves the nodes now, and the cache above is what
+    // gives the reader their picture back when they move it home again.
+    //
+    // The stacking is kept by the same three things it depends on: which
+    // arrangement, how far in, and what may not be swallowed. A wheel notch
+    // that returns to a zoom already seen redraws rather than re-clusters.
+    //
+    // Two levels of detail, in this order: the semantic one first — an event's
+    // parts drawn inside it while the reader is zoomed out (collapse.js) — and
+    // M25's geometric one on the node set that comes out of it. Both are
+    // filed under the same key, because both depend on exactly these three
+    // things and on nothing else.
+    //
+    // And the zoom it is filed under is the bucket below the one the picture
+    // is drawn at, as the map's grouping has been since H4a: what decides a
+    // stacking is the threshold D / k, so what matters is the ratio between
+    // two zooms and not the difference (cluster.js, `zoomBucket`). Sixteen
+    // buckets to the octave, so no bucket is more than about 4.4 % of
+    // threshold wide; a wheel notch is ×1.16 and never lands in the bucket it
+    // left, but the way back does, and so do a trackpad's small deltas and
+    // every animation between two zooms. `exactZoom` is this view saying the
+    // zoom in force was chosen to part a stack, and a bucket below it would
+    // not part it.
+    const groupAt = exactZoom ? k : zoomBucket(k);
+    const stackKey = `${laidFor}|${groupAt}|${holdingKey(s)}`;
+    stacked = stackings.get(stackKey)
+      ?? stackings.set(stackKey, stackLayout(collapseLayout(laid, { k: groupAt, alone }), { k: groupAt, alone }));
+    // A stack is in the window if any event under it is, and in the horizon
+    // at the band of its nearest member: the same rule the map's stacks
+    // follow. Both are only ever asked of a stack of one in practice, since
+    // the horizon's own events are held out above, but the picture should
+    // not depend on that staying true.
+    const stackInWindow = (stack) => stack.members.some((m) => inWindow.get(m.id));
+    // What is worth putting in the DOM. The map has drawn only the marks
+    // inside its viewport since H4a; the graph drew every stack of the whole
+    // arrangement at every notch, and at 20,000 events that is 24,310
+    // elements to build, insert and lay out for a picture of which two
+    // thirds are off the screen (STATUS.md, "what the graph's notch actually
+    // costs"). The rectangle is already in this view's render key, so a pan
+    // redraws and the cull can never leave a stale picture behind.
+    //
+    // The selected event keeps its mark wherever it is, exactly as it does on
+    // the map: it is what the panel is showing, and the picture must not
+    // disagree with the panel about whether the thing exists. The rest of the
+    // working set is drawn when it is on screen — being drawn alone rather
+    // than inside a stack (M25's never-hide rule, `alone` above) is a
+    // question about stacking and is untouched by this.
+    const drawable = (stack) => Boolean(stack) && (stack.representative.id === s.selected
+      || onScreen(stack.x, stack.y, box, DRAW_MARGIN / k));
+    const radiusOf = new Map(stacked.nodes.map((stack) => [
+      stack.key,
+      stack.representative.id === s.selected
+        ? SELECTED_RADIUS
+        : radiusFor(stack.representative.weight, weights) + (stack.count > 1 ? STACK_BONUS : 0),
+    ]));
+
+    // The window is a shaded band across the whole graph, and what falls
+    // outside it fades rather than leaving: the web is always all there.
+    windowGroup.replaceChildren();
+    if (timeWindow) {
+      const x0 = laid.scale.x(timeWindow.from);
+      const x1 = laid.scale.x(timeWindow.to);
+      windowGroup.appendChild(svg('rect', {
+        x: Math.min(x0, x1), y: laid.bands[0]?.y0 ?? 0,
+        width: Math.max(1, Math.abs(x1 - x0)), height: laid.height - (laid.bands[0]?.y0 ?? 0),
+        class: 'window-band',
+      }));
+    }
+
+    // One line per pair of marks. A line carrying several links is drawn in
+    // the commonest of their types, heavier for how many it carries, and
+    // dashed as disputed if any single one of them is — a bundle the reader
+    // must not read as settled (cluster.js).
+    const stackByKey = new Map(stacked.nodes.map((stack) => [stack.key, stack]));
+    edgesGroup.replaceChildren();
+    for (const line of stacked.edges) {
+      // A line is drawn when either of its ends is: an arrow into the view
+      // from a cause off the left of it is half the point of the picture, and
+      // one whose both ends are outside it is a line across a rectangle it
+      // never enters (index2 review, finding 11's amendment).
+      if (!drawable(stackByKey.get(line.from)) && !drawable(stackByKey.get(line.to))) continue;
+      const any = (ids) => line.members.some((m) => ids.has(m.id));
+      const faded = !stackInWindow(stackByKey.get(line.from)) || !stackInWindow(stackByKey.get(line.to));
+      const marks = classes(
+        `type-${line.type}`,
+        line.disputed ? 'disputed' : '',
+        faded ? 'faded' : '',
+        any(chainEdgeIds) ? 'chain' : '',
+        any(consequenceIds) ? 'consequence' : '',
+        any(convergingEdges) ? 'converging' : '',
+        line.count > 1 ? 'merged' : '',
+      );
+      const cls = classes('edge', marks);
+      // The line stops short of the mark it points at, so the arrowhead is
+      // not buried under it.
+      const dx = line.x2 - line.x1;
+      const dy = line.y2 - line.y1;
+      const length = Math.hypot(dx, dy) || 1;
+      const back = (radiusOf.get(line.to) + 1.5) / k;
+      const tipX = line.x2 - (dx / length) * back;
+      const tipY = line.y2 - (dy / length) * back;
+      // The weight of a merged line is a custom property rather than a
+      // stroke-width, so the stylesheet keeps deciding how a line is drawn
+      // and this only says how many it carries.
+      const weight = line.count > 1 ? { style: `--merged-width: ${mergedWidth(line.count).toFixed(2)}` } : {};
+      const title = line.count > 1
+        ? svgTitle(`${line.count} links, mostly ${line.type}${line.disputed ? ', one of them disputed' : ''}`)
+        : null;
+      edgesGroup.appendChild(svg(
+        'line',
+        { x1: line.x1, y1: line.y1, x2: tipX, y2: tipY, class: cls, ...weight },
+        title ? [title] : [],
+      ));
+      // The arrowhead is drawn rather than a marker, so it carries the same
+      // classes as its line and fades, dashes and reddens with it.
+      const ux = dx / length;
+      const uy = dy / length;
+      const baseX = tipX - ux * (HEAD_LENGTH / k);
+      const baseY = tipY - uy * (HEAD_LENGTH / k);
+      const wx = (-uy * HEAD_WIDTH) / 2 / k;
+      const wy = (ux * HEAD_WIDTH) / 2 / k;
+      edgesGroup.appendChild(svg('polygon', {
+        points: `${tipX},${tipY} ${baseX + wx},${baseY + wy} ${baseX - wx},${baseY - wy}`,
+        class: classes('edge-head', marks),
+      }));
+    }
+
+    nodesGroup.replaceChildren();
+    let selectedMark = null;
+    for (const stack of stacked.nodes) {
+      if (!drawable(stack)) continue;
+      const node = stack.representative;
+      const radius = radiusOf.get(stack.key);
+      if (stack.count > 1) {
+        const faded = !stackInWindow(stack);
+        const nearest = Math.min(...stack.members.map((m) => reachable.get(m.id) ?? Infinity));
+        const hidden = stack.count - 1;
+        const span = stack.years.min === stack.years.max
+          ? formatYear(stack.years.min)
+          : `${formatYear(stack.years.min)}–${formatYear(stack.years.max)}`;
+        nodesGroup.appendChild(svg('circle', {
+          cx: stack.x, cy: stack.y, r: radius / k,
+          class: classes('node', 'stack', stack.coincident ? 'coincident' : 'splittable', faded ? 'faded' : '',
+            stack.members.every((m) => lensNear.has(m.id)) ? 'lens-near' : '',
+            Number.isFinite(nearest) ? `in-horizon ${horizonBand(nearest)}` : ''),
+          'data-stack': stack.key,
+        }, [svgTitle(`${labelOf(atlas, node.event) ?? LOADING_LABEL} — and ${hidden} more event${hidden === 1 ? '' : 's'} here, ${span}`)]));
+        nodesGroup.appendChild(textNode(`+${hidden}`, {
+          x: stack.x + (radius + 2) / k,
+          y: stack.y - (radius + 1) / k,
+          class: classes('cluster-count', faded ? 'faded' : ''),
+          'font-size': BADGE_SIZE / k,
+        }));
+        continue;
+      }
+      const faded = !inWindow.get(node.id);
+      const isSelected = node.id === s.selected;
+      // An event with its parts drawn inside it. It is still one record and
+      // still opens its own card — the card is where the parts are listed —
+      // so it keeps its `data-id`; what it gains is a count of what is folded
+      // into it and a ring saying there is something to zoom into.
+      const collapsed = node.collapsed ?? null;
+      const cls = classes(
+        'node',
+        collapsed ? 'collapsed' : '',
+        faded ? 'faded' : '',
+        lensNear.has(node.id) ? 'lens-near' : '',
+        reachable.has(node.id) ? `in-horizon ${horizonBand(reachable.get(node.id))}` : '',
+        narrativeIds && narrativeIds.has(node.id) ? 'of-narrative' : '',
+        actorIds && actorIds.has(node.id) ? 'of-actor' : '',
+        converging.has(node.id) ? 'converging' : '',
+        pathIds.has(node.id) ? 'on-path' : '',
+        isSelected ? 'selected' : '',
+      );
+      const parts = collapsed
+        ? ` — ${collapsed.count} part${collapsed.count === 1 ? '' : 's'} drawn inside it, weight ${collapsed.weight}; zoom in to part them`
+        : '';
+      // The node is drawn out of the core; what it is called arrives with its
+      // century, and until then it is a node with no name (attributes.js).
+      const name = labelOf(atlas, node.event);
+      const title = name === null ? LOADING_LABEL
+        : `${name} — ${formatInterval(node.event.when)}${parts}${faded ? ' — outside the window' : ''}`;
+      const mark = svg('circle', {
+        cx: node.x, cy: node.y, r: radius / k, class: cls, 'data-id': node.id,
+      }, [svgTitle(title)]);
+      nodesGroup.appendChild(mark);
+      // An event with parts carries the ring at every zoom, whether or not
+      // the parts are folded into it: the collapse is a behaviour and the ring
+      // is the look, and a reader zoomed past the threshold was being told
+      // nothing at all (m30c-brief, §1). The badge sits on top of it while the
+      // parts are inside. Not a control — no `data-id` — so a click still
+      // lands on the node and opens the one record.
+      if (isParent(atlas, node.event)) {
+        nodesGroup.appendChild(svg('circle', {
+          cx: node.x, cy: node.y, r: (radius + RING_GAP) / k, class: ringClasses(cls, 'node'),
+          'stroke-width': RING_WIDTH / k,
+        }));
+      }
+      if (collapsed) {
+        nodesGroup.appendChild(textNode(`+${collapsed.count}`, {
+          x: node.x + (radius + 2) / k,
+          y: node.y - (radius + 1) / k,
+          class: classes('cluster-count', faded ? 'faded' : ''),
+          'font-size': BADGE_SIZE / k,
+          'data-collapsed': node.id,
+        }));
+      }
+      if (isSelected) selectedMark = mark;
+    }
+    if (selectedMark) nodesGroup.appendChild(selectedMark);
+
+    drawLabels(s, k, box);
+  }
+
+  // Zoomed out, only the heaviest marks on screen are named and a label
+  // that would land on one already placed is skipped, as on the map. A
+  // stack is named after its representative — the heaviest event under it,
+  // which is the one worth showing (cluster.js) — and weighs what its
+  // members weigh together, so a thicket of small events can outrank a
+  // single large one and say what it is. Zoomed in, every mark on screen is
+  // named: a name that disappeared because a neighbour got there first
+  // would be the wrong kind of tidy. A label that collides is moved to the
+  // other side of its mark first, and only drawn over another if neither
+  // side is free.
+  function drawLabels(s, k, box) {
+    labelsGroup.replaceChildren();
+    const all = k >= LABEL_ALL_ZOOM;
+    const onScreen = stacked.nodes.filter((n) => n.x >= box.x0 && n.x <= box.x1 && n.y >= box.y0 && n.y <= box.y1);
+    const candidates = [...onScreen].sort(
+      (a, b) => b.weight - a.weight || (a.key < b.key ? -1 : a.key > b.key ? 1 : 0),
+    );
+    const placed = [];
+    // Rough, and deliberately so: an em is about half the font size, and the
+    // box only has to be good enough to keep two labels off each other.
+    const boxFor = (node, text, right) => {
+      const width = (text.length * LABEL_SIZE * 0.55) / k;
+      const x = node.x + (right ? 1 : -1) * (MAX_RADIUS + 3) / k;
+      return {
+        x0: right ? x : x - width,
+        x1: right ? x + width : x,
+        y0: node.y - (LABEL_SIZE * 0.7) / k,
+        y1: node.y + (LABEL_SIZE * 0.7) / k,
+        x,
+        right,
+      };
+    };
+    const free = (rect) => !placed.some((p) => rect.x0 < p.x1 && p.x0 < rect.x1 && rect.y0 < p.y1 && p.y0 < rect.y1);
+    for (const node of candidates) {
+      if (!all && placed.length >= LABEL_LIMIT) break;
+      // No name yet is no label, and the next node still gets its own.
+      const named = labelOf(atlas, node.representative.event);
+      if (named === null) continue;
+      const text = shorten(named);
+      let rect = boxFor(node, text, true);
+      if (!free(rect)) {
+        const other = boxFor(node, text, false);
+        if (free(other)) rect = other;
+        else if (!all) continue;
+      }
+      placed.push(rect);
+      labelsGroup.appendChild(textNode(text, {
+        x: rect.x, y: node.y + (LABEL_SIZE * 0.35) / k,
+        class: classes('node-label', node.representative.id === s.selected ? 'selected' : ''),
+        'text-anchor': rect.right ? 'start' : 'end',
+        'font-size': LABEL_SIZE / k,
+      }));
+    }
+  }
+
+  // The reader arriving on a narrow window should not have to hunt for it,
+  // so the first drawing zooms to it. Capped: a window of two years filling
+  // the width would push the outer bands off the screen, and the bands are
+  // what the view is read against (STATUS.md, deviation 54).
+  //
+  // A declaration rather than a const, because `adopt` calls it on the first
+  // arrangement, and that may be an arrangement that arrives from elsewhere
+  // long after this line has been read.
+  function fitToWindow() {
+    const timeWindow = resolveWindow(state.get(), atlas.extent);
+    if (!timeWindow || !laid) return;
+    const x0 = laid.scale.x(timeWindow.from);
+    const x1 = laid.scale.x(timeWindow.to);
+    const span = Math.max(1, Math.abs(x1 - x0));
+    const whole = Math.abs(laid.scale.x(atlas.extent.max) - laid.scale.x(atlas.extent.min));
+    // A window that is most of the data is not worth zooming to: the right
+    // first view of the whole graph is the whole graph.
+    if (span > whole * FIT_SHARE) return;
+    const k = Math.min(FIT_ZOOM, laid.width / span);
+    transform = { k, x: laid.width / 2 - ((x0 + x1) / 2) * k, y: laid.height / 2 - (laid.height / 2) * k };
+    exactZoom = false;
+    applyTransform();
+  }
+
+  // A pane that has changed size shows a different rectangle of the picture,
+  // and that rectangle decides what is drawn: the measurement above is thrown
+  // away and the graph is drawn again. The same observer the map keeps, with
+  // the same guard against the size that has not actually changed.
+  if (typeof ResizeObserver !== 'undefined') {
+    let last = '';
+    new ResizeObserver(() => {
+      const now = `${container.clientWidth}x${container.clientHeight}`;
+      if (now === last) return;
+      last = now;
+      measured = null;
+      render(state.get());
+    }).observe(container);
+  }
+
+  state.subscribe(render);
+  render(state.get());
+  return { render, layout: laid, drawn: () => stacked };
+}

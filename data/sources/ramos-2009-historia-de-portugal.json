@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ramos-2009-historia-de-portugal",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "type": "book",
+  "creators": [
+    "Rui Ramos",
+    "Bernardo Vasconcelos e Sousa",
+    "Nuno Gonçalo Monteiro"
+  ],
+  "title": "História de Portugal",
+  "year": 2009,
+  "publisher": "A Esfera dos Livros",
+  "isbn": null,
+  "doi": null,
+  "url": "https://search.worldcat.org/search?q=Hist%C3%B3ria%20de%20Portugal%20Rui%20Ramos",
+  "accessed": null,
+  "repository": null,
+  "reference": null
+}
