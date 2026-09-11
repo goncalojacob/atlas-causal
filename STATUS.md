@@ -13,6 +13,29 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-11, after **M39a** (`docs/m39-brief.md`, amendment A0 — the first half
+of the Pacific-centred projection; M39b, the inland-only borders and the
+shard's arc list, is its own gated run): **the map is centred on 150°E, the
+world is cut at 30°W, and `k = 1` is the whole world in 960 units.**
+
+The meridian was measured, not chosen: `node tools/build-regions.mjs
+--seam-report` counts what each candidate from 140°E to 170°E would cut and
+150°E cuts nothing. The table, the tie-break and what it costs the records are
+in **`## M39a: where the world is cut`**, below, with the recut file by file
+and deviations 560 to 571. `tools/import/geometry.mjs` is the new module the
+cut is made with — `clipToBox`, Sutherland–Hodgman per ring, and
+`splitAtMeridian` as that function over the two halves of the world — and it
+is what M36 will cut a base map cell with. Every geometry file under
+`data/geo/` was regenerated from `vendor/`, read gzipped, with the sha256 of
+the decompressed bytes checked; no record under `data/` was touched and
+`node tools/validate.mjs --index` is byte-identical.
+
+**One thing waits on the owner** (deviation 569): 1,040 actors, presences and
+the CShapes source record carry no `review` status, so they are in no queue
+and on no dashboard. One run of `tools/import/cshapes.mjs` without
+`--geometry-only` puts them there, and it is a large, dull diff this run did
+not take inside a projection change.
+
 2026-09-10, after the **corrective run of the second index cycle**
 (`docs/index2/corrective-brief.md`, from the closing review's section 6): the
 two waits that could stop the suite without naming a test are bounded, the
@@ -4491,3 +4514,4 @@ Index cycle 2 corrective run started 2026-09-10T08:39:14Z by scheduled
 Index cycle 2 corrective run started 2026-09-10T23:22:40Z by scheduled
 Index cycle 2 corrective run done
 M39a started 2026-09-11T00:00:43Z by scheduled
+M39a done
