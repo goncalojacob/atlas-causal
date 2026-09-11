@@ -222,6 +222,23 @@
       question about a year all keep working inside it. Search is not narrowed: a record the lens
       does not keep is still found, listed, and marked as outside.</p>
 
+      <h3>Why the map is centred where it is</h3>
+      <p>The map opens on the whole world with <strong>150° east in the middle</strong>, so Asia and
+      the Pacific are at the centre and the Atlantic is split between the two edges. That is a
+      choice, and it is the one this atlas is for: it is a map of human history and not a map of
+      Europe, and a projection has to put something at its edge. What it puts there is
+      <strong>30° west</strong>, the meridian half a world from the centre, which the map is cut
+      along — a shape lying across it would be drawn as a smear from one side of the picture to the
+      other, so every outline is cut there when it is imported.</p>
+      <p>Which meridian was measured rather than chosen. Of the candidates from 140° to 170° east,
+      30° west is the only line that runs through no landmass at all but Greenland's and
+      Antarctica's, which no choice avoids: it passes down the middle of the Atlantic, between
+      Flores and the rest of the Azores, four and a half degrees east of the corner of Brazil and
+      twelve west of Africa. The table it was picked from is in <code>STATUS.md</code>, and the
+      projection is one constant in one file — the map has no tile server, no map library and no
+      API key behind it, only our own coastlines drawn from a public-domain file in a projection
+      written here.</p>
+
       <h3>The map and the timeline, looking at the same place</h3>
       <p>Pan or zoom the map and the <strong>timeline follows it</strong>: the lanes then hold only
       the events whose place is on screen, and a small line above them says how many of how many are
@@ -229,8 +246,11 @@
       a chain that runs off the edge of the map is still a chain — and <strong>show the world</strong>
       puts every event back without moving the map. The visible area is in the address bar
       (<code>?bbox=-10,36,-6,43</code>), so a view of one coast can be sent in a link and opens on
-      that coast. The graph view has no viewport of its own and is never narrowed this way; it says
-      so while the map is holding one.</p>
+      that coast. It is always in real longitudes, and it may run east past the 180th meridian and
+      out the other side — <code>?bbox=170,-20,-170,0</code> is Fiji, and with the map centred on
+      Asia that is an ordinary view near the middle of the picture rather than a trick. The graph
+      view has no viewport of its own and is never narrowed this way; it says so while the map is
+      holding one.</p>
       <p>The <strong>wheel over the timeline</strong> narrows or widens the window of time around the
       year under the pointer, and dragging its empty ground slides the window; the lanes themselves
       never move, because they stay on the whole span of the data. A <strong>click on nothing</strong>

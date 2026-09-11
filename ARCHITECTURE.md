@@ -184,6 +184,18 @@ Antarctica, Greenland, Iceland and the Atlantic islands:
 | 165°E | 15°W | 1 | 8,900.1 | 5.02° | Gambia, Guinea, Guinea-Bissau, Mauritania, Morocco, Senegal, W. Sahara |
 | 170°E | 10°W | 1 | 8,900.1 | 0.02° | Guinea, Liberia, Mali, Mauritania, Morocco, W. Sahara |
 
+***`k = 1` is the whole world in 960 units*, and that is the unit every zoom
+threshold in the data is written in.** It is a contract and not an
+observation. The map used to fit its projection to the extent of the events
+(`map.js`, `fitBounds`), so `k` meant a different scale on every corpus and a
+threshold written in it meant nothing until the data was known — which is what
+the base map cannot be built on (review of the map block, finding 4). The map
+now opens on the world. Everything that names a zoom — `minZoom` in the base
+map's manifest, a feature's `z` or `zl`, `DEEPEST_ZOOM` in `cluster.js` — is a
+number of these `k`, and a number taken from another scale (Natural Earth's
+web-Mercator `min_zoom`, say) is converted by one recorded table before it is
+written down.
+
 Three cut nothing, so the tie is broken by *clearance* — how far the seam runs
 from the nearest land it misses — and 150°E wins it at 4.73°, against 2.38°
 and 0.67°. It is also the only one of the three that leaves **Iceland** whole:
@@ -2295,7 +2307,7 @@ least 40 pixels; a link inside a sentence keeps the line it is set in.
 | `citation.js` | One source → the citation as a line, its identifiers as link targets, the order a bibliography sorts in, the grouping of its citers. Escapes nothing: the caller does. | Where it will be drawn. |
 | `wikipedia.js` | Which article a record's identity offers and the URL it becomes: the reader's language, then English, then the first there is, with the language checked before it becomes a hostname; and the titles as further search names. Pure, escapes nothing. | That the atlas has its own text, and where the link will be drawn. |
 | `review/citations.js` | The per-citation verification flags: the rows the dashboard draws, what is still unchecked, the count across a dataset, and a tick set or taken back without mutating anything. Pure. | The DOM, and whether anybody is going to sign. |
-| `map/projection.js` | lon/lat → SVG coordinates and back, and the pan/zoom transform ⇄ the box of world it shows. | Everything else. |
+| `map/projection.js` | lon/lat → SVG coordinates and back, and the pan/zoom transform ⇄ the box of world it shows. Owns the central meridian every longitude is wrapped around, the seam that makes, and the contract that `k = 1` is the whole world in 960 units. | Everything else. |
 | `cluster.js` | Groups points that overlap at the current zoom, picks each group's representative by `weight`, says which groups no zoom could part and where a group comes apart, keeps the ids it is told to hold out (`alone`) in groups of one, and merges the links between two groups into one counted link (`mergeEdges`). Pure, and used in two dimensions by the map and the graph and in one by the timeline. | The DOM, the projection, what a point means, why an id is held out. |
 | `util/window.js` | Resolves a null bound against the data's extent, says what overlaps the window, owns the margin the views draw beyond it, the "map at Y" rule and the wheel's narrowing of the band around a year. Pure. | The DOM, and which view is asking. |
 | `render-key.js` | Whether a view has to be drawn again: the whole state flattened in a fixed order, plus whatever the view holds outside it. Pure — the three views compare it, `panel.js` keeps its own narrower one. | What a view draws, and why any field is in the state. |

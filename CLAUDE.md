@@ -157,7 +157,7 @@ src/citation.js            pure: a source as a citation, its identifiers as link
 src/wikipedia.js           pure: which article a record's identity offers, and the URL it becomes
 src/cluster.js             pure: which marks overlap at this zoom, over a grid; the timeline uses it in one dimension. zoomBucket() is how often the map is willing to ask
 src/search.js              pure: titles, every name of an actor or a place, and a source's title and creators, folded and ranked;  search-box.js  the input and the keys
-src/map/projection.js      lon/lat ⇄ SVG (equirectangular); the only file a projection change touches
+src/map/projection.js      lon/lat ⇄ SVG (equirectangular); the only file a projection change touches. CENTRAL_MERIDIAN is 150E and SEAM the 30W the geometry is cut at; `k = 1` is the whole world in 960 units, and that is the unit every zoom threshold in the data is written in
 src/map/map.js             SVG scaffold, pan/zoom, click into a cluster
 src/map/layers/land.js     coastlines, always drawn and no longer a switch;  layers/presences.js  territories;  layers/events.js  marks, clusters and chain lines;  layers/regions.js  the wash a large event is drawn as, over the polygons of its lane
 src/graph-view/layout.js   pure: where every node goes — x is the year, y is bands and a barycentre pass
