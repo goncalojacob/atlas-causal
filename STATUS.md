@@ -4702,3 +4702,4 @@ M39a done
 M39b started 2026-09-11T00:55:51Z by scheduled
 M39b done
 M39 done
+glyphs started 2026-09-11T01:52:11Z by scheduled
