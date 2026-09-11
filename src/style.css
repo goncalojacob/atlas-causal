@@ -565,31 +565,53 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
 .map { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
 .map:active { cursor: grabbing; }
 .map .land { fill: var(--land); stroke: var(--cobalt); stroke-width: 0.6; vector-effect: non-scaling-stroke; }
-/* Territories. A state is filled with its hue and outlined in the same hue
-   darkened; a dependency is filled with the LIGHTER TINT OF ITS OWNER and
-   outlined dotted, so "its own" and "somebody's" separate inside one family
-   rather than by a second colour. Disputed is dashed, which is what a
-   disputed edge already looks like here.
+/* Territories. A state is filled with its hue and its INLAND borders are
+   stroked in the same hue darkened; a dependency is filled with the LIGHTER
+   TINT OF ITS OWNER and bordered dotted, so "its own" and "somebody's"
+   separate inside one family rather than by a second colour. Disputed is
+   dashed, which is what a disputed edge already looks like here.
+
+   Two elements and not one, since M39b: `.presence` is the closed outline,
+   filled and clicked, and `.presence-border` over it is the part of that
+   outline that runs between two territories. CShapes' shore is not Natural
+   Earth's, so stroking the whole outline drew a second coastline beside the
+   one `.land` draws; the shore is `.land`'s alone now and a territory is
+   drawn with no edge where it meets the sea.
 
    Which actor gets which hue is data/geo/palette.json and it says only that
    two neighbours differ: there is no legend by hue, and about.html says so.
    An actor the palette does not know keeps the cobalt wash the map had
    before the hues existed, so a stale palette loses colour and never a
    border. */
-.map .presence { stroke-width: 0.7; vector-effect: non-scaling-stroke; fill-opacity: 0.62; cursor: pointer; }
-.map .presence.unhued { stroke: var(--cobalt); fill: var(--cobalt-faint); }
-.map .presence.dependency { stroke-width: 0.9; stroke-dasharray: 1 2; fill-opacity: 0.7; }
-.map .presence.disputed { stroke-dasharray: 4 3; }
+.map .presence { fill-opacity: 0.62; stroke: none; cursor: pointer; }
+.map .presence.unhued { fill: var(--cobalt-faint); }
+.map .presence.dependency { fill-opacity: 0.7; }
 .map .presence:hover { fill-opacity: 0.88; }
 
-.map .presence.hue-0 { fill: var(--terr-1); stroke: var(--terr-1-line); }
-.map .presence.hue-1 { fill: var(--terr-2); stroke: var(--terr-2-line); }
-.map .presence.hue-2 { fill: var(--terr-3); stroke: var(--terr-3-line); }
-.map .presence.hue-3 { fill: var(--terr-4); stroke: var(--terr-4-line); }
-.map .presence.hue-4 { fill: var(--terr-5); stroke: var(--terr-5-line); }
-.map .presence.hue-5 { fill: var(--terr-6); stroke: var(--terr-6-line); }
-.map .presence.hue-6 { fill: var(--terr-7); stroke: var(--terr-7-line); }
-.map .presence.hue-7 { fill: var(--terr-8); stroke: var(--terr-8-line); }
+.map .presence.hue-0 { fill: var(--terr-1); }
+.map .presence.hue-1 { fill: var(--terr-2); }
+.map .presence.hue-2 { fill: var(--terr-3); }
+.map .presence.hue-3 { fill: var(--terr-4); }
+.map .presence.hue-4 { fill: var(--terr-5); }
+.map .presence.hue-5 { fill: var(--terr-6); }
+.map .presence.hue-6 { fill: var(--terr-7); }
+.map .presence.hue-7 { fill: var(--terr-8); }
+
+/* The borders themselves: open lines over the washes, and out of the way of
+   the pointer — a territory is picked up by its fill, which is the whole of
+   it, and never by the hairline along one side of it. */
+.map .presence-border { fill: none; stroke-width: 0.7; vector-effect: non-scaling-stroke; pointer-events: none; }
+.map .presence-border.unhued { stroke: var(--cobalt); }
+.map .presence-border.dependency { stroke-width: 0.9; stroke-dasharray: 1 2; }
+.map .presence-border.disputed { stroke-dasharray: 4 3; }
+.map .presence-border.hue-0 { stroke: var(--terr-1-line); }
+.map .presence-border.hue-1 { stroke: var(--terr-2-line); }
+.map .presence-border.hue-2 { stroke: var(--terr-3-line); }
+.map .presence-border.hue-3 { stroke: var(--terr-4-line); }
+.map .presence-border.hue-4 { stroke: var(--terr-5-line); }
+.map .presence-border.hue-5 { stroke: var(--terr-6-line); }
+.map .presence-border.hue-6 { stroke: var(--terr-7-line); }
+.map .presence-border.hue-7 { stroke: var(--terr-8-line); }
 .map .presence.dependency.hue-0 { fill: var(--terr-1-tint); }
 .map .presence.dependency.hue-1 { fill: var(--terr-2-tint); }
 .map .presence.dependency.hue-2 { fill: var(--terr-3-tint); }
@@ -604,10 +626,13 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
    territory that happened to sort after it. Both selectors carry the weight
    of the .dependency rules above, or a selected colony would keep its tint. */
 .map .presence.of-actor, .map .presence.dependency.of-actor {
-  fill: var(--cobalt-soft); fill-opacity: 0.62; stroke: var(--cobalt); stroke-width: 1.2; stroke-dasharray: none;
+  fill: var(--cobalt-soft); fill-opacity: 0.62;
 }
-.map .presence.dependency.of-actor { stroke-dasharray: 1 2; }
-.map .presence.of-actor.disputed { stroke-dasharray: 4 3; }
+.map .presence-border.of-actor, .map .presence-border.dependency.of-actor {
+  stroke: var(--cobalt); stroke-width: 1.2; stroke-dasharray: none;
+}
+.map .presence-border.dependency.of-actor { stroke-dasharray: 1 2; }
+.map .presence-border.of-actor.disputed { stroke-dasharray: 4 3; }
 
 /* A mark is white with a cobalt ring wherever it lands, which is what keeps
    it above eight coloured washes without competing with the two colours that

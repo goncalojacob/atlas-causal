@@ -617,6 +617,7 @@ export function createAtlas({
   const geometry = new Map();
   const geometryLoading = new Map();
   // Synchronous: what is already in hand, so a render never waits.
+  // → { outlines, borders }, keyed by the feature id a presence names, or null.
   const loadedGeometry = (file) => geometry.get(file) ?? null;
   function loadGeometry(file) {
     if (geometry.has(file)) return Promise.resolve(geometry.get(file));
@@ -625,9 +626,20 @@ export function createAtlas({
       // and holding the rejection would leave the territories blank until the
       // page was reloaded.
       const pending = fetchJson(`${dataRoot}${file}`).then((collection) => {
-        const byKey = new Map((collection.features ?? []).map((f) => [String(f.id), f.geometry]));
-        geometry.set(file, byKey);
-        return byKey;
+        const features = collection.features ?? [];
+        // A shard is two things: one closed outline per territory, which is
+        // what is filled and what is clicked, and the shard's own list of
+        // inland borders, which is what is stroked (M39b). A border between
+        // two territories is one arc in the file and both sides point at it,
+        // so resolving the indices here hands the two of them the same array
+        // rather than a copy each.
+        const arcs = collection.arcs ?? [];
+        const shard = {
+          outlines: new Map(features.map((f) => [String(f.id), f.geometry])),
+          borders: new Map(features.map((f) => [String(f.id), (f.properties?.borders ?? []).map((i) => arcs[i]).filter(Boolean)])),
+        };
+        geometry.set(file, shard);
+        return shard;
       }).catch((error) => {
         if (geometryLoading.get(file) === pending) geometryLoading.delete(file);
         throw error;

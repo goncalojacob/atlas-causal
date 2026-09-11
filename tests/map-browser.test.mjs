@@ -434,7 +434,7 @@ test('a click on a splittable cluster splits it, and the animation redraws once'
 // review B, finding 24). Asked of the real dataset, which is the one with
 // borders in it.
 const TERRITORY_DETAIL = `
-  const paths = [...document.querySelectorAll('#map .layer-presences path')];
+  const paths = [...document.querySelectorAll('#map .layer-presences path.presence')];
   return {
     drawn: paths.length,
     points: paths.reduce((n, el) => n + (el.getAttribute('d').match(/[ML]/g) ?? []).length, 0),
@@ -451,14 +451,63 @@ test('a border is drawn to the detail the zoom is worth, and no finer', { skip }
     // In past the second rung of the ladder, where the shard is drawn as it
     // was written.
     await page.eval(wheelAt(0.5, 0.5, -1600));
-    await waitFor(page, `return document.querySelectorAll('#map .layer-presences path').length > 0
-      && [...document.querySelectorAll('#map .layer-presences path')]
+    await waitFor(page, `return document.querySelectorAll('#map .layer-presences path.presence').length > 0
+      && [...document.querySelectorAll('#map .layer-presences path.presence')]
         .reduce((n, el) => n + el.getAttribute('d').length, 0) !== ${world.points};`, 'the borders to be redrawn');
     const close = await page.eval(TERRITORY_DETAIL);
     assert.ok(close.points > world.points,
       `zoomed in there is more of the border (${close.points} points against ${world.points})`);
     assert.ok(world.points < close.points * 0.9,
       `and the world is drawn with a good deal less of it (${world.points} of ${close.points})`);
+  });
+});
+
+// M39b. The owner's screenshot of 5 September: zoomed in, every territory had
+// two shorelines a few tenths of a degree apart, because CShapes' coast and
+// Natural Earth's do not coincide and the map drew both. A territory is filled
+// on its whole outline and stroked only along its inland borders now, so the
+// shore on the picture is the one `land.js` draws and no other.
+const TERRITORY_EDGES = `
+  const layer = document.querySelector('#map .layer-presences');
+  const nodes = [...layer.querySelectorAll('path')];
+  const fills = nodes.filter((el) => el.classList.contains('presence'));
+  const borders = nodes.filter((el) => el.classList.contains('presence-border'));
+  const count = (el) => (el.getAttribute('d').match(/[ML]/g) ?? []).length;
+  const style = (el) => getComputedStyle(el);
+  return {
+    fills: fills.length,
+    borders: borders.length,
+    fillStrokes: [...new Set(fills.map((el) => style(el).stroke))],
+    borderFills: [...new Set(borders.map((el) => style(el).fill))],
+    borderPointerEvents: [...new Set(borders.map((el) => style(el).pointerEvents))],
+    borderStroked: borders.every((el) => style(el).stroke !== 'none'),
+    closed: borders.filter((el) => el.getAttribute('d').includes('Z')).length,
+    fillPoints: fills.reduce((n, el) => n + count(el), 0),
+    borderPoints: borders.reduce((n, el) => n + count(el), 0),
+    // Every border after every fill, so a neighbour's wash never tints the
+    // line the two of them share.
+    lastFill: nodes.findLastIndex((el) => el.classList.contains('presence')),
+    firstBorder: nodes.findIndex((el) => el.classList.contains('presence-border')),
+  };`;
+
+test('a territory is stroked along its inland borders and nowhere else', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url(''), 'return Boolean(document.querySelector("#map .layer-presences path"));');
+    await page.eval(FREEZE_TIMELINE);
+    const seen = await page.eval(TERRITORY_EDGES);
+
+    assert.ok(seen.fills > 10, `the world's territories are filled (${seen.fills})`);
+    assert.ok(seen.borders > 10, `and bordered (${seen.borders})`);
+    assert.deepEqual(seen.fillStrokes, ['none'], 'no fill carries a stroke of its own');
+    assert.deepEqual(seen.borderFills, ['none'], 'and no border is filled');
+    assert.equal(seen.borderStroked, true, 'every border is drawn in its territory\'s own line colour');
+    assert.deepEqual(seen.borderPointerEvents, ['none'], 'a territory is picked up by its ground, not by its edge');
+    assert.equal(seen.closed, 0, 'a border has two ends: no subpath is closed');
+    assert.ok(seen.borders < seen.fills,
+      `some territory has no inland border at all — an island (${seen.borders} of ${seen.fills})`);
+    assert.ok(seen.borderPoints < seen.fillPoints / 2,
+      `and the shore is the greater part of an outline, undrawn (${seen.borderPoints} of ${seen.fillPoints})`);
+    assert.ok(seen.lastFill < seen.firstBorder, 'every border is over every wash');
   });
 });
 

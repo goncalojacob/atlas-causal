@@ -103,6 +103,15 @@ export function arcExtent(arc) {
   return arc.length ? Math.max(maxX - minX, maxY - minY) : 0;
 }
 
+// One open line taken down where it stands, at the rule an arc gets: the
+// tolerance, or a sixth of the line's own extent, whichever is less. The map
+// takes a territory's inland borders down by zoom exactly as it takes the
+// outline down, so the stroke keeps lying along the edge of the fill.
+export function simplifyLine(line, { tolerance }) {
+  if (!(tolerance > 0)) return line;
+  return douglasPeucker(line, Math.min(tolerance, arcExtent(line) / MIN_DETAIL));
+}
+
 export function simplifyArc(arc, { tolerance, decimals }) {
   const scaled = Math.min(tolerance, arcExtent(arc) / MIN_DETAIL);
   return quantize(douglasPeucker(arc, scaled), decimals);

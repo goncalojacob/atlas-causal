@@ -3,13 +3,20 @@
 
 import { svg } from '../../util/dom.js';
 
-function ringPath(ring, project) {
-  return ring
+// An open run of points as path data. A ring is this and a Z; a border arc is
+// this and nothing, because a border has two ends and closing it would draw a
+// line back across the country it bounds.
+export function linePath(points, project) {
+  return points
     .map(([lon, lat], i) => {
       const [x, y] = project([lon, lat]);
       return `${i === 0 ? 'M' : 'L'}${x.toFixed(2)} ${y.toFixed(2)}`;
     })
-    .join('') + 'Z';
+    .join('');
+}
+
+function ringPath(ring, project) {
+  return `${linePath(ring, project)}Z`;
 }
 
 // GeoJSON Polygon or MultiPolygon → path data. Holes are rings too; the

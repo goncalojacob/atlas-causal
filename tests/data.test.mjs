@@ -275,11 +275,11 @@ test('a shard of outlines that failed to load is fetched again too', async () =>
   assert.equal(asked.length, 2, 'the rejected shard was not kept as the one that is loading');
 
   fail = false;
-  const outlines = await atlas.loadGeometry('geo/shard.json');
-  assert.equal(outlines.get('k').type, 'Point');
+  const shard = await atlas.loadGeometry('geo/shard.json');
+  assert.equal(shard.outlines.get('k').type, 'Point');
   await atlas.loadGeometry('geo/shard.json');
   assert.equal(asked.length, 3, 'and the shard that arrived is held');
-  assert.equal(atlas.loadedGeometry('geo/shard.json').size, 1);
+  assert.equal(atlas.loadedGeometry('geo/shard.json').outlines.size, 1);
 });
 
 // --- the three joins M30b draws from -------------------------------------

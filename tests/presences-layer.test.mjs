@@ -84,11 +84,44 @@ test('data.js loads a shard by year and caches it', async () => {
   assert.equal(a.shardForYear(900), null, 'a year the shards do not cover draws nothing');
 
   assert.equal(a.loadedGeometry('geo/presences/1100-1199.json'), null, 'nothing is fetched until a year needs it');
-  const outlines = await a.loadGeometry('geo/presences/1100-1199.json');
-  assert.deepEqual([...outlines.keys()].sort(), ['f1', 'f2']);
-  assert.equal(outlines.get('f1').type, 'Polygon');
-  assert.equal(a.loadedGeometry('geo/presences/1100-1199.json'), outlines, 'and once fetched it is in hand');
-  assert.equal(await a.loadGeometry('geo/presences/1100-1199.json'), outlines);
+  const shard = await a.loadGeometry('geo/presences/1100-1199.json');
+  assert.deepEqual([...shard.outlines.keys()].sort(), ['f1', 'f2']);
+  assert.equal(shard.outlines.get('f1').type, 'Polygon');
+  assert.equal(a.loadedGeometry('geo/presences/1100-1199.json'), shard, 'and once fetched it is in hand');
+  assert.equal(await a.loadGeometry('geo/presences/1100-1199.json'), shard);
+});
+
+// M39b: the shard's arc list, resolved as it is read. Two neighbours name the
+// same index, so the border between them is one line in the file and one array
+// in memory — not a copy each, and not a second shore for the map to draw.
+test('a shard hands back its outlines and the inland borders between them', async () => {
+  const a = await atlas();
+  const shard = await a.loadGeometry('geo/presences/1100-1199.json');
+  assert.deepEqual(shard.borders.get('f1'), [[[-20, 25], [-20, 30]]]);
+  assert.equal(shard.borders.get('f1')[0], shard.borders.get('f2')[0], 'the same line, held once');
+  // And it is an edge both outlines run along, which is what lets the stroke
+  // sit on the fill rather than beside it.
+  for (const key of ['f1', 'f2']) {
+    const ring = shard.outlines.get(key).coordinates[0].map(([x, y]) => `${x} ${y}`);
+    for (const [x, y] of shard.borders.get(key)[0]) assert.ok(ring.includes(`${x} ${y}`), `${key} runs through ${x},${y}`);
+  }
+});
+
+test('a shard with no arc list at all draws fills and no borders', async () => {
+  const a = await loadAtlas({
+    dataRoot: 'tests/fixtures/data/',
+    fetchJson: async (url) => {
+      const json = await fetchJson(url);
+      if (!url.includes('geo/presences/')) return json;
+      // What every shard looked like before M39b, and what a hand-written one
+      // may still look like: features, and nothing saying which edges are
+      // borders. Nothing is stroked rather than everything being stroked.
+      return { ...json, arcs: undefined, features: json.features.map((f) => ({ ...f, properties: { presence: f.properties.presence } })) };
+    },
+  });
+  const shard = await a.loadGeometry('geo/presences/1100-1199.json');
+  assert.equal(shard.outlines.size, 2);
+  assert.deepEqual(shard.borders.get('f1'), []);
 });
 
 test('a year shows one presence per actor: the one that started last', async () => {
@@ -131,7 +164,7 @@ test('a shard that will not load is said once, and unsaid when one arrives', asy
     loadedGeometry: (file) => loaded.get(file) ?? null,
     loadGeometry: async (file) => {
       if (fail) throw new Error('offline');
-      loaded.set(file, new Map());
+      loaded.set(file, { outlines: new Map(), borders: new Map() });
       return loaded.get(file);
     },
     presencesAt: () => [],
@@ -295,7 +328,7 @@ test('the first shard waits for the land, and the second does not', async () => 
     loadedGeometry: (file) => loaded.get(file) ?? null,
     loadGeometry: async (file) => {
       asked.push(file);
-      loaded.set(file, new Map());
+      loaded.set(file, { outlines: new Map(), borders: new Map() });
       return loaded.get(file);
     },
     presencesAt: () => [],

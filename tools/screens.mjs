@@ -59,6 +59,14 @@ export const SHOTS = Object.freeze([
     what: 'the graph and the key to the five line patterns' },
   { name: 'm19-about', page: 'about.html', query: '', width: 1100, height: 1000,
     what: 'a reading page on the same tokens' },
+  // M39. The first is the seam: the whole world centred on 150 east, with
+  // nothing torn at 30 west. The second is what the borders cost before
+  // M39b — Iberia close enough that CShapes' shore and Natural Earth's were
+  // two lines a few tenths of a degree apart, and are now one.
+  { name: 'm39-map-world', query: '?from=1911&to=1911', width: 1440, height: 900,
+    what: 'the world Pacific-centred, uncut at the seam' },
+  { name: 'm39-map-iberia', query: '?from=1911&to=1911&bbox=-12,35,1,45', width: 1440, height: 900,
+    what: 'one coastline and one border: the shore is Natural Earth\'s alone' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

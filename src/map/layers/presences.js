@@ -7,6 +7,14 @@
 // stack four Angolas on each other. The far end is the year the reader has
 // dragged to, and the timeline's band says which year that is.
 //
+// Two elements per territory, since M39b: the outline, filled and clicked,
+// and over it the territory's inland borders, stroked. CShapes' coastline and
+// Natural Earth's do not coincide, so outlining a territory whole drew a
+// second shore a few tenths of a degree from the one `land.js` draws — the
+// doubled line in the owner's screenshot of 5 September. The shard says which
+// of its arcs are borders between two territories and which are shore; only
+// the borders are stroked, and the coast is Natural Earth's alone.
+//
 // Colour, and what it does and does not say. Since M19 a state is filled
 // with one of eight muted hues and outlined in the same hue darkened; a
 // dependency is filled with the lighter tint OF ITS OWNER and outlined
@@ -26,8 +34,8 @@
 // walked chain stays madder above that, so territory colour sits under both.
 
 import { svg, svgTitle } from '../../util/dom.js';
-import { geometryPath } from './land.js';
-import { simplifyGeometry } from '../../util/simplify.js';
+import { geometryPath, linePath } from './land.js';
+import { simplifyGeometry, simplifyLine } from '../../util/simplify.js';
 import { formatInterval } from '../../util/dates.js';
 
 // How much border detail is worth drawing, by how far the reader has zoomed,
@@ -74,9 +82,13 @@ export function presenceTitle(presence, { nameOf }) {
 // border it does not have.
 export const hueActorOf = (presence) => presence.dependencyOf ?? presence.actor;
 
-export function presenceClasses(presence, { actorId, dependencyIds, hueOf = () => null }) {
+// `base` is `presence` for the fill and `presence-border` for the stroke over
+// it: the two are one territory drawn as two elements (M39b), and everything
+// that separates one territory from another — whose hue, its own ground or
+// somebody's, disputed, the selected actor's — is said of both.
+export function presenceClasses(presence, { actorId, dependencyIds, hueOf = () => null, base = 'presence' }) {
   const hue = hueOf(hueActorOf(presence));
-  return ['presence',
+  return [base,
     presence.dependencyOf ? 'dependency' : 'sovereign',
     // No hue at all is a territory the palette has never been rebuilt for:
     // it keeps the old cobalt wash rather than disappearing.
@@ -122,6 +134,15 @@ export function createPresencesLayer(group, projection, {
     paths.set(id, d);
     return d;
   }
+  // The same, for the inland borders: open runs and no Z, taken down at the
+  // rung the outline is taken down at so the stroke stays on the fill's edge.
+  function borderPathFor(file, key, lines, tolerance) {
+    const id = `${projectionKey}|${file}|${key}|${tolerance}|borders`;
+    if (paths.has(id)) return paths.get(id);
+    const d = lines.map((line) => linePath(simplifyLine(line, { tolerance }), projection.project)).join('');
+    paths.set(id, d);
+    return d;
+  }
   // Which render asked for a shard: an older fetch arriving late must not
   // draw over a newer year.
   let token = 0;
@@ -162,7 +183,7 @@ export function createPresencesLayer(group, projection, {
         signature = null;
         return { drawn: 0, pending: false, failed };
       }
-      const outlines = atlas.loadedGeometry(shard.file);
+      const geometry = atlas.loadedGeometry(shard.file);
       // Two files, asked for together and in the same place: the outlines of
       // this shard, and — since I1 — the metadata that says who held which of
       // them, which left the spine for a file of its own and is fetched the
@@ -171,13 +192,13 @@ export function createPresencesLayer(group, projection, {
       // either one failing is the same "the territories could not be loaded"
       // the layer already says.
       const havePresences = atlas.presencesLoaded ? atlas.presencesLoaded() : true;
-      if (!outlines || !havePresences) {
+      if (!geometry || !havePresences) {
         // Nothing is cleared while a shard loads: the year before it is
         // usually the same map, and a blank flash would be worse than a
         // frame of staleness.
         const mine = (token += 1);
         const fetchIt = () => Promise.all([
-          outlines ? null : atlas.loadGeometry(shard.file),
+          geometry ? null : atlas.loadGeometry(shard.file),
           havePresences ? null : atlas.loadPresences(),
         ]).then(() => {
           report(false);
@@ -209,8 +230,9 @@ export function createPresencesLayer(group, projection, {
       // The selected actor's ground last, so its cobalt is over every hue
       // rather than under whichever territory happens to sort after it.
       const order = [...visible].sort((a, b) => Number(isOfActor(a)) - Number(isOfActor(b)));
+      const drawn = [];
       for (const presence of order) {
-        const outline = outlines.get(presence.geometry.key);
+        const outline = geometry.outlines.get(presence.geometry.key);
         if (!outline) continue;
         const d = pathFor(shard.file, presence.geometry.key, outline, tolerance);
         if (!d) continue;
@@ -221,6 +243,24 @@ export function createPresencesLayer(group, projection, {
           'data-actor': presence.actor,
           'data-presence': presence.id,
         }, [svgTitle(presenceTitle(presence, { nameOf }))]));
+        drawn.push(presence);
+      }
+      // Then every border, over every fill. Two passes and not one, because a
+      // neighbour's wash drawn after a border would tint the line the two of
+      // them share; and in the same order, so the selected actor's cobalt is
+      // the last border as well as the last fill. The stroke is the territory
+      // without its shore: the coast belongs to `land.js` and Natural Earth,
+      // and drawing CShapes' shore over it was the doubled line the owner saw.
+      for (const presence of drawn) {
+        const lines = geometry.borders.get(presence.geometry.key) ?? [];
+        if (lines.length === 0) continue;
+        const d = borderPathFor(shard.file, presence.geometry.key, lines, tolerance);
+        if (!d) continue;
+        group.appendChild(svg('path', {
+          d,
+          class: presenceClasses(presence, { actorId, dependencyIds, hueOf, base: 'presence-border' }),
+          'data-presence': presence.id,
+        }));
       }
       return { drawn: visible.length, pending: false, failed };
     },
