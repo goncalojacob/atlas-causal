@@ -71,8 +71,12 @@ CShapes 2.0 (presences/*.json)
   because the coastline it draws is Natural Earth's and CShapes' shore beside
   it was a second shore. Those lines are the source's own vertices, taken from
   the same simplified arcs the outlines are built from, and nothing is added
-  to them. The five shards went to 961,628, 1,194,272, 845,342, 918,623 and
-  957,462 bytes. Nothing else is altered; every date, status, owner and
+  to them. A boundary the simplified outline no longer runs along is dropped
+  with the polygon simplification dropped, so that no line is stroked where
+  there is no territory under it. The five shards went to 961,624, 1,194,268,
+  845,338, 918,615 and 957,458 bytes; `data/geo/` as a whole went from
+  4,858,556 to 5,234,665, which is a fifth of the 24 MB the map block records
+  for it. Nothing else is altered; every date, status, owner and
   capital is the dataset's own.
 
 palette.json

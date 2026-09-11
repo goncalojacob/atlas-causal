@@ -13,6 +13,30 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-11, after **M39b** (`docs/m39-brief.md`, amendment A0 — the second
+half of the projection work, which completes **M39**): **a territory's border
+is drawn inland only, and each presence shard carries the list of those
+borders.**
+
+CShapes draws its own coastline and it is not the one this map draws, so every
+territory outlined all the way round put a second shore a few tenths of a
+degree from the first — the owner's screenshot of 5 September. The import now
+asks the topology which of its arcs are boundaries *between* two territories
+and which are not, each shard holds those arcs once beside its outlines, and
+`src/map/layers/presences.js` draws a territory as two elements: the closed
+outline, filled and clicked, and over it a stroke along its inland borders
+alone. The account is **`## M39b: the borders drawn inland only`**, below, with
+deviations 572 to 580. No record under `data/` was touched, the outlines
+themselves are byte for byte what M39a wrote, and `node tools/validate.mjs
+--index` is byte-identical. `docs/screens/m39-map-world.png` and
+`m39-map-iberia.png` are the two the brief's "Done when" asks for.
+
+**The check on `m0` is red and this run did not make it red** (deviation 580).
+The same one failure and one cancelled test stand on `5eefa91`, M39a's own
+done-line commit, with none of this run's code in them; the suite is green
+here six times over, browser tests and all. Naming the test is deviation 559's
+wall and it has not moved.
+
 2026-09-11, after **M39a** (`docs/m39-brief.md`, amendment A0 — the first half
 of the Pacific-centred projection; M39b, the inland-only borders and the
 shard's arc list, is its own gated run): **the map is centred on 150°E, the
@@ -3925,6 +3949,79 @@ The numbering continues from 401, which is M31-3's last.
      their shared point. Nothing is drawn by a segment of no length, and the
      alternative was a clipper that emits a duplicate wherever a vertex sits
      exactly on an edge of the box.
+
+572. **The arc list belongs to the shard, not to the feature.** The brief says
+     "the shard format gains the arc list" and does not say where. A border
+     written into each of the two features that have it would be the same line
+     twice in the file, and the borders would have cost 750 KB instead of
+     375 KB. It is `arcs` at the top of the collection — a foreign member of a
+     GeoJSON FeatureCollection, which the format allows and every reader that
+     does not know it ignores — and `properties.borders` is a list of indices
+     into it. A pre-M39b shard, or a hand-written one, therefore reads as a
+     map with fills and no borders rather than as an error, and there is a
+     test for exactly that.
+573. **An arc is a border by the source's dates, not by the presences'
+     years.** Two features of one entity that follow each other share every
+     arc that did not move between them, and `end` and the next `start` fall
+     in the same year often enough — CShapes cuts on a day — that a year-level
+     overlap would have called a great many coastlines borders. The rule reads
+     `start` and `end` as the dataset writes them. The cost is the other way
+     round and it is small: two territories drawn in the same year whose date
+     intervals do not actually meet have no border drawn between them.
+574. **A border the outline no longer runs along is not written.** A polygon
+     too small to draw is dropped by `pruneGeometry`, and a feature can then
+     walk an arc that is nowhere on the shape the shard writes — Guyana's
+     sliver in the Corentyne is the case, and **six** of 11,573 references in
+     all. They are filtered out against the outline as it will be written, so
+     the invariant "every point of every border is a vertex of the outline
+     that names it" holds over the whole of `data/geo/`, and no line is
+     stroked where there is no territory under it.
+575. **A boundary only one territory walks is not drawn, even where it is a
+     land border.** Switzerland's eighth arc is its boundary with
+     Liechtenstein, which is not in the Gleditsch–Ward list, so nothing in the
+     source says who is on the other side of it. Drawing it would be inventing
+     that; the map leaves it unstroked and `about.html` says so in a sentence.
+     The same silence covers a boundary with any state the source does not
+     carry.
+576. **A territory is two elements now, and `presenceClasses` takes a
+     `base`.** The alternative — one path with both a fill and a stroke, and
+     the stroke given a dash pattern that hides the shore — cannot work: a
+     shore is not a fixed fraction of an outline. Two elements cost a second
+     path per territory and one more pass over the visible set; what they buy
+     is that every existing rule (the hue, the dependency's dotted line, the
+     disputed dash, the selected actor's cobalt) is said once and applies to
+     both, and that every border is drawn over every wash rather than under
+     whichever neighbour sorted after it.
+577. **`loadGeometry` answers `{ outlines, borders }` and no longer a `Map`.**
+     Three call sites and two tests; the alternative was a second cache keyed
+     the same way, which would have been the same fetch answered twice or a
+     second thing to keep in step with the first.
+578. **The two screenshots the M39 brief asks for are this run's.** M39a wrote
+     its done line without one, and `M39 done` is this run's to write, so
+     `tools/screens.mjs` gained `m39-map-world` and `m39-map-iberia` and both
+     were taken. The second is the evidence for the owner: the doubled shore
+     of 5 September, at the same zoom, drawn once.
+579. **The browser tests ran here.** The run's own brief says this sandbox has
+     no browser and that `node --test` skips every `*-browser.test.mjs`; it
+     does not. Chromium is at `PLAYWRIGHT_BROWSERS_PATH` and
+     `tools/screens.mjs`'s `findChrome` finds it, so the suite is **1,267
+     tests, 0 skipped**, and the border assertions in
+     `tests/map-browser.test.mjs` were checked here as well as on the Action.
+580. **The check is red and this run did not make it red, and the test still
+     cannot be named from here.** The failure profile — 1 failing, 1 cancelled
+     — is identical on `5eefa91`, which is M39a's `M39a done` commit and
+     carries none of this run's code, and on every push of this run. It is
+     **not** the keystroke flake the brief names: that one is `ok 910` in run
+     586's log. It is not reproducible here — the suite is green six times
+     over, including under six spinners on four cores, run exactly as the
+     Action runs it. And it cannot be read: deviation 559's wall is unchanged,
+     `get_job_logs` returns the last 5,000 lines and the failure is in the
+     first ~435 completions, and the blob host the raw log redirects to
+     answers this sandbox's proxy with 403. What is left to say is that it
+     arrived with M39a — run 571, before it, had one failure and nothing
+     cancelled — so M39a's own browser tests are where a next run should look,
+     and that **the owner can read the name in the web UI in one click**.
+
 ## I8: what was derived, and what the Action must still run
 
 **The successions.** `node tools/import/cshapes.mjs --relations` reads
@@ -4349,6 +4446,93 @@ being in the 15th digit of a `nearest` distance. `node tools/validate.mjs
 --index` is byte-identical, and `palette.json` did not move at all: the
 colouring is keyed on which presences border which, and none of that changed.
 
+## M39b: the borders drawn inland only
+
+The owner's screenshot of 5 September 2026: zoomed in on Iberia, every
+territory had two shorelines a few tenths of a degree apart. One is Natural
+Earth's, which `src/map/layers/land.js` draws; the other was CShapes', which
+the territory layer drew by outlining each presence all the way round. They do
+not coincide and there is no reason they should — they are two datasets — so
+the fix is not to reconcile them but to stop drawing one of them.
+
+**A territory is filled on its whole outline and stroked only where its
+boundary is a boundary with somebody.** The outline is still a closed polygon,
+because that is what is filled, what is hit-tested and what a click on a
+territory selects an actor by; what is stroked is a second element over it,
+built out of the shard's own arc list.
+
+**Which boundaries those are is the topology's answer and not a judgement.**
+CShapes is TopoJSON, so a boundary two countries share is *one arc* in the
+file and both of them point at it — which is why the import reads TopoJSON in
+the first place, and why simplifying the arcs before decoding keeps two
+neighbours meeting along their border. An arc is an inland border when two
+features that walk it are **different entities** (`gwcode`) whose **dates
+overlap**; every other arc is a shore, the edge of the dataset, or a boundary
+with a state the Gleditsch–Ward list does not carry. The dates are the
+source's own (`start`, `end`) and not the years a presence carries, because
+two features of one entity that follow each other share every arc that did not
+move between them and a year is too coarse a bound to tell "next" from
+"beside".
+
+**Measured, on the real file.** Of the topology's 6,329 arcs, **881** are
+inland borders. The rule reads the way a map reads: Iceland 0 of 1, Japan 0 of
+30, Cuba 0 of 7, Ceylon 0 of 2, Australia 0 of 175, the United Kingdom 0 of
+29; Portugal 1 of 10 — the line to Spain; Switzerland 7 of 8, Nepal 2 of 2,
+Bolivia 16 of 16, Chad 13 of 13.
+
+### What the shard format gained
+
+```
+{"arcs":[[[lon,lat],…],…],
+ "features":[{"type":"Feature","id":"<fid>",
+              "properties":{"borders":[0,5,7],"presence":"<presence id>"},
+              "geometry":{…}}],
+ "type":"FeatureCollection"}
+```
+
+`arcs` is the shard's own list — every inland border of the territories in
+that period, each held **once**, whichever of its two sides names it — and
+`borders` is that feature's own arcs by their place in the list. A territory
+with no inland border at all carries **no `borders` key**, rather than an
+empty one. `src/data.js` resolves the indices as it reads the file, so two
+neighbours hold the same array and not a copy each.
+
+| | shards | arcs | feature rows | with a border | without | references |
+|---|---|---|---|---|---|---|
+| | 5 | 3,111 | 1,359 | 1,178 | 181 | 11,567 |
+
+**The bytes.** The five shards went from **4,502,166 to 4,877,303**, which is
+375,137 more, 8.3 %; `data/geo/` as a whole from 4,858,556 to **5,234,665**,
+the licence's two new paragraphs included. That is a fifth of the 24 MB the
+map block records for `data/geo/` as a whole (map-block-plan A3). **The
+outlines did not move**: every feature's geometry is byte for byte what M39a
+wrote, and the diff is one line per shard because the files are one line each.
+
+**Three things were checked rather than assumed**, over the shards as written
+and not over the source: every index a feature names is an arc its shard
+holds (11,567 of 11,567); **every point of every one of those arcs is a vertex
+of the outline that names it** (0 off it), which is what makes the stroke lie
+on the fill's own edge rather than beside it; and no arc in any shard crosses
+the seam. All three are `tests/import-cshapes.test.mjs`, against `data/`.
+
+### What the map draws now
+
+`presenceClasses` takes a `base`, so the fill and the stroke carry the same
+words — the hue, its own ground or somebody's, disputed, the selected actor's
+— and `style.css` says of `.presence` what is filled and of `.presence-border`
+what is stroked. The stroke is `pointer-events: none`: a territory is picked
+up by its ground, which is the whole of it, and never by a hairline along one
+side. The layer draws in **two passes**, every fill and then every border, so
+a neighbour's wash can never tint the line the two of them share, and the
+selected actor is last in both, which leaves the emphasis hierarchy exactly
+where M19 put it. The borders are taken down by zoom on the ladder the
+outlines are taken down on (`simplifyLine`, the same tolerance and the same
+`MIN_DETAIL` floor).
+
+`docs/screens/m39-map-world.png` is the whole world, Pacific-centred and uncut
+at the seam; `m39-map-iberia.png` is `?bbox=-12,35,1,45` in 1911, where the
+Portugal–Spain border is one line and the Atlantic shore is one line.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -4516,3 +4700,5 @@ Index cycle 2 corrective run done
 M39a started 2026-09-11T00:00:43Z by scheduled
 M39a done
 M39b started 2026-09-11T00:55:51Z by scheduled
+M39b done
+M39 done
