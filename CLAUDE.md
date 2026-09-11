@@ -222,6 +222,8 @@ tools/import/cshapes.mjs   CShapes 2.0 → actors, presences, geometry shards, a
 tools/import/wikidata.mjs  identifiers and records from Wikidata; injectable fetch layer, tested on fixtures, additive on disk
 tools/import/identity.mjs  the additive rule both imports obey: fill a gap, never change a value, never sign
 tools/import/geometry.mjs  clipToBox (Sutherland-Hodgman, holes kept, lines cut into their runs) and splitAtMeridian over it: where the geometry is cut at the projection's seam
+tools/import/source.mjs    reading a vendored source: gunzipped where the name says so, and the sha256 is of the decompressed bytes, which is the file as it was downloaded
+vendor/                    INPUTS: the sources the geometry imports run on, gzipped, never data, never served, never in deploy.yml's allowlist
 tools/import/cache/        GENERATED: Wikipedia leads with their revision; never published, never data, not under data/
 tools/lib/read.mjs         all filesystem access for the tools, everything under data/imports/ included
 tests/                     node --test, zero deps; tests/fixtures/data/ is the synthetic graph

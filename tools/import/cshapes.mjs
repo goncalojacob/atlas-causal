@@ -28,14 +28,17 @@
 //   xz -dc cshapes/inst/extdata/cshapes_2_gw.topojson.xz > cshapes_2_gw.topojson
 // SOURCE_FILE_SHA256 below is what that produces; --check verifies it and
 // the tool warns, loudly, when the file it was given is a different one.
+// The copy in this repository is vendor/cshapes/cshapes_2_gw.topojson.gz —
+// a run has no network — and a --source ending in .gz is decompressed before
+// it is hashed, so that sha256 is of the file as it was downloaded.
 
-import { createHash } from 'node:crypto';
 import { mkdir, readdir, readFile, unlink, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { decodeCollection } from './topojson.mjs';
 import { simplifyArc, pruneGeometry } from './simplify.mjs';
+import { readSourceJson, sha256 } from './source.mjs';
 import { identityOnDisk, mergeIdentity } from './identity.mjs';
 import { isReviewed, writtenBy, REVIEW_STATUS } from '../../src/origin.js';
 
@@ -555,9 +558,7 @@ ${rows.join('\n')}
 
 // --- reading and writing --------------------------------------------------
 
-export function sha256(buffer) {
-  return createHash('sha256').update(buffer).digest('hex');
-}
+export { sha256 };
 
 // Arcs are simplified before any polygon is decoded, so a border two
 // countries share stays one line and they still meet along it.
@@ -683,15 +684,17 @@ export async function runRelations(dataDir = DEFAULT_DATA, { today = new Date().
 }
 
 export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = new Date().toISOString().slice(0, 10), check = false } = {}) {
-  const buffer = await readFile(sourceFile);
-  const digest = sha256(buffer);
+  // A `--source` ending in `.gz` is decompressed and the sha256 is of the
+  // decompressed bytes, so SOURCE_FILE_SHA256 and the hash data/geo/LICENSE
+  // records are the file as it was downloaded either way (review of the map
+  // block, finding 2; the brief's A1). The file in the repository is
+  // vendor/cshapes/cshapes_2_gw.topojson.gz.
+  const { json: topology, digest, problem } = await readSourceJson(sourceFile, SOURCE_FILE_SHA256);
   const notes = [];
-  if (digest !== SOURCE_FILE_SHA256) {
-    const message = `the file at ${sourceFile} has sha256 ${digest}, not the ${SOURCE_FILE_SHA256} this import was written against`;
-    if (check) return { failed: [message], notes, written: [], removed: [] };
-    notes.push(`warning: ${message}`);
+  if (problem) {
+    if (check) return { failed: [problem], notes, written: [], removed: [] };
+    notes.push(`warning: ${problem}`);
   }
-  const topology = JSON.parse(buffer.toString('utf8'));
   const features = simplifyTopology(topology);
 
   // Idempotence: a record the import already owns keeps the date it was
@@ -834,9 +837,10 @@ async function main(argv) {
     return 0;
   }
   if (!source) {
-    console.error('usage: node tools/import/cshapes.mjs --source <cshapes_2_gw.topojson> [--data <dir>] [--check] [--report | --report-to <file>]');
+    console.error('usage: node tools/import/cshapes.mjs --source <cshapes_2_gw.topojson[.gz]> [--data <dir>] [--check] [--report | --report-to <file>]');
     console.error('       node tools/import/cshapes.mjs --relations [--data <dir>]');
-    console.error(`the file is inst/extdata/cshapes_2_gw.topojson.xz in the CRAN package, decompressed; sha256 ${SOURCE_FILE_SHA256}`);
+    console.error('the file in this repository is vendor/cshapes/cshapes_2_gw.topojson.gz');
+    console.error(`it is inst/extdata/cshapes_2_gw.topojson.xz in the CRAN package, decompressed; sha256 ${SOURCE_FILE_SHA256}`);
     return 2;
   }
   const result = await runImport(source, dataDir, { check });

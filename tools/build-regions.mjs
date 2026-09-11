@@ -2,7 +2,7 @@
 // Natural Earth 1:110m → data/geo/land-present.json and data/geo/regions.json.
 // Run once and commit; rerun only to change lanes or bump Natural Earth.
 //
-//   node tools/build-regions.mjs [--source <dir>] [--data <dir>]
+//   node tools/build-regions.mjs [--source <dir>] [--data <dir>] [--check]
 //
 // Downloads the public-domain GeoJSON published in the upstream repository
 // at a pinned tag (no shapefile conversion needed), or reads the two files
@@ -10,16 +10,27 @@
 // CONTINENT attribute — a MultiPolygon of the members, nothing dissolved,
 // which is enough for point-in-polygon. Coordinates are kept as published.
 //
+// A run has no network, so --source is how it is really run, and the two
+// files live in the repository gzipped: vendor/natural-earth/110m/. A source
+// directory that holds `<name>.gz` is read through gunzipSync and the sha256
+// of the *decompressed* bytes is checked against SOURCE_SHA256 below, which
+// is what vendor/SHA256SUMS records — the file as it was downloaded (review
+// of the map block, finding 2). --check refuses to write on a mismatch;
+// without it the tool warns, loudly, and carries on. --source therefore
+// defaults to that directory and --network is how the download is asked for.
+//
 // Known consequences of the CONTINENT attribute, to be overridden per record
 // with `region` when they matter: Russia is Europe in its entirety; Turkey,
 // Cyprus and the Caucasus are Asia; Greenland is North America (americas).
 // Antarctica and "Seven seas (open ocean)" have no lane.
 
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { canonical } from './build-index.mjs';
 import { readRegions } from './lib/read.mjs';
+import { readSourceJson } from './import/source.mjs';
 
 // Compact, not indented: coordinate arrays are three times the size when
 // pretty-printed and nobody reads them in a diff. Keys still sorted.
@@ -37,6 +48,15 @@ export const FILES = Object.freeze({
   land: 'ne_110m_land.geojson',
 });
 
+// sha256 of each file as published at that tag, decompressed; the same
+// numbers as vendor/SHA256SUMS, which is where they were taken from.
+export const SOURCE_SHA256 = Object.freeze({
+  'ne_110m_admin_0_countries.geojson': '6866c877d39cba9c357620878839b336d569f8c662d3cfab4cb1dbe2d39c977f',
+  'ne_110m_land.geojson': '9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9',
+});
+
+export const VENDOR_110M = 'vendor/natural-earth/110m';
+
 // Natural Earth CONTINENT → lane id in data/regions.json.
 export const CONTINENT_TO_LANE = Object.freeze({
   Europe: 'europe',
@@ -47,11 +67,20 @@ export const CONTINENT_TO_LANE = Object.freeze({
   Oceania: 'oceania',
 });
 
+// One source file, from a directory or from the network, with whatever there
+// is to say about it. The gzipped name is preferred where both are there, so
+// the repository's own copy is what a run reads.
+// → { json, problem }
 async function load(name, sourceDir) {
-  if (sourceDir) return JSON.parse(await readFile(path.join(sourceDir, name), 'utf8'));
+  if (sourceDir) {
+    const plain = path.join(sourceDir, name);
+    const file = existsSync(plain) ? plain : `${plain}.gz`;
+    const { json, problem } = await readSourceJson(file, SOURCE_SHA256[name] ?? null);
+    return { json, problem };
+  }
   const response = await fetch(BASE + name);
   if (!response.ok) throw new Error(`download failed: ${BASE}${name} → ${response.status}`);
-  return response.json();
+  return { json: await response.json(), problem: null };
 }
 
 function polygonsOf(geometry) {
@@ -96,10 +125,13 @@ export function buildLanes(countries, lanes) {
 
 async function main(argv) {
   let dataDir = DEFAULT_DATA;
-  let sourceDir = null;
+  let sourceDir = path.join(ROOT, ...VENDOR_110M.split('/'));
+  let check = false;
   for (let i = 0; i < argv.length; i += 1) {
     if (argv[i] === '--data') dataDir = path.resolve(argv[++i]);
     else if (argv[i] === '--source') sourceDir = path.resolve(argv[++i]);
+    else if (argv[i] === '--network') sourceDir = null;
+    else if (argv[i] === '--check') check = true;
     else {
       console.error(`unknown argument ${argv[i]}`);
       return 2;
@@ -110,8 +142,16 @@ async function main(argv) {
     console.error(`no lanes in ${path.join(dataDir, 'regions.json')}`);
     return 1;
   }
-  const countries = await load(FILES.countries, sourceDir);
-  const land = await load(FILES.land, sourceDir);
+  const loaded = [await load(FILES.countries, sourceDir), await load(FILES.land, sourceDir)];
+  for (const { problem } of loaded) {
+    if (!problem) continue;
+    if (check) {
+      console.error(`error: ${problem}`);
+      return 1;
+    }
+    console.error(`warning: ${problem}`);
+  }
+  const [{ json: countries }, { json: land }] = loaded;
   const { collection, skipped } = buildLanes(countries, lanes);
   const geoDir = path.join(dataDir, 'geo');
   await mkdir(geoDir, { recursive: true });
