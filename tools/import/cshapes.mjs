@@ -38,7 +38,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { arcsOfGeometry, arcUsers, decodeArcs, decodeCollection } from './topojson.mjs';
 import { simplifyArc, pruneGeometry } from './simplify.mjs';
-import { splitAtMeridian } from './geometry.mjs';
+import { ringsOf, splitAtMeridian } from './geometry.mjs';
 import { readSourceJson, sha256 } from './source.mjs';
 import { SEAM } from '../../src/map/projection.js';
 import { identityOnDisk, mergeIdentity } from './identity.mjs';
@@ -336,12 +336,23 @@ export function borderArcs(topology, { objectName = OBJECT_NAME, seam = SEAM } =
 
 // The border pieces one feature walks: each once, in the topology's own order,
 // so the list a shard writes is the same on every machine.
-export function bordersOf(geometry, pieces) {
+//
+// Less the pieces its outline no longer has. Simplification drops a polygon
+// too small to draw and the boundary of that polygon goes with it, so a
+// feature can walk an arc that is nowhere on the shape the shard writes —
+// Guyana's sliver in the Corentyne is six of the 11,573 references in the real
+// dataset. The map strokes the edges of the fill it draws, and a line with no
+// territory under it would be a border around nothing.
+export function bordersOf(geometry, pieces, outline) {
+  if (!outline) return [];
   const out = new Map();
   for (const index of arcsOfGeometry(geometry)) {
     for (const piece of pieces.get(index) ?? []) out.set(piece.id, piece);
   }
-  return [...out.values()].sort((a, b) => a.id - b.id);
+  const kept = [...out.values()].sort((a, b) => a.id - b.id);
+  const vertices = new Set();
+  for (const ring of ringsOf(outline)) for (const [x, y] of ring) vertices.add(`${x} ${y}`);
+  return kept.filter((piece) => piece.line.every(([x, y]) => vertices.has(`${x} ${y}`)));
 }
 
 // The whole plan, from decoded features to the exact set of files to write.
@@ -669,11 +680,10 @@ export function simplifyTopology(topology, { tolerance = TOLERANCE, decimals = D
   const pieces = borderArcs(simplified, { seam });
   const geometries = simplified.objects[OBJECT_NAME]?.geometries ?? [];
   return decodeCollection(simplified, OBJECT_NAME)
-    .map((f, i) => ({
-      properties: f.properties,
-      geometry: pruneGeometry(splitAtMeridian(pruneGeometry(f.geometry, { minArea }), seam), { minArea }),
-      borders: bordersOf(geometries[i], pieces),
-    }));
+    .map((f, i) => {
+      const geometry = pruneGeometry(splitAtMeridian(pruneGeometry(f.geometry, { minArea }), seam), { minArea });
+      return { properties: f.properties, geometry, borders: bordersOf(geometries[i], pieces, geometry) };
+    });
 }
 
 // The import's own records, by what created them rather than by a name in

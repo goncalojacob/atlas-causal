@@ -10,8 +10,11 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { decodeCollection, ringFrom, arcIndex, decodeArcs, arcUsers, arcsOfGeometry } from '../tools/import/topojson.mjs';
 import { douglasPeucker, quantize, simplifyArc, pruneGeometry, ringArea, keepRing, round } from '../tools/import/simplify.mjs';
-import { planImport, planRelations, runRelations, slug, yearOf, shardsTouched, shardFile, dayAfter, runImport, reportMarkdown, sourceRecord, simplifyTopology, borderArcs, isBorderArc, overlapInTime, IMPORT_AUTHOR, ORIGIN_TOOL, SHARDS, DATA_END, MAP_FILE } from '../tools/import/cshapes.mjs';
+import { planImport, planRelations, runRelations, slug, yearOf, shardsTouched, shardFile, dayAfter, runImport, reportMarkdown, sourceRecord, simplifyTopology, borderArcs, bordersOf, isBorderArc, overlapInTime, IMPORT_AUTHOR, ORIGIN_TOOL, SHARDS, DATA_END, MAP_FILE } from '../tools/import/cshapes.mjs';
+import { crossesMeridian } from '../tools/import/geometry.mjs';
+import { SEAM } from '../src/map/projection.js';
 import { isDraft } from '../src/origin.js';
+import { ROOT } from './helpers.mjs';
 
 const SHARD_CUT = [{ from: 1886, to: 1913 }, { from: 1914, to: 1945 }, { from: 1946, to: 2019 }];
 
@@ -564,6 +567,22 @@ test('an island walks no border arc and its feature carries no list', () => {
   assert.deepEqual(island.properties, { presence: 'islandia-1886' }, 'no empty list, and no lie about one');
 });
 
+// Simplification drops a polygon too small to draw, and the pieces of its
+// boundary have to go with it: Guyana's sliver in the Corentyne walks a border
+// with Venezuela that is nowhere on the Guyana the shard writes, and a stroke
+// there would be a border around nothing.
+test('a border the outline no longer has is not written', () => {
+  const pieces = new Map([
+    [0, [{ id: 0, line: [[0, 0], [0, 1]] }]],
+    [1, [{ id: 1, line: [[5, 5], [5, 6]] }]],
+  ]);
+  const geometry = { type: 'MultiPolygon', arcs: [[[0]], [[1]]] };
+  const outline = { type: 'Polygon', coordinates: [[[0, 0], [0, 1], [1, 1], [0, 0]]] };
+  assert.deepEqual(bordersOf(geometry, pieces, outline).map((p) => p.id), [0],
+    'the piece the ring that survived runs along, and not the one whose polygon went');
+  assert.deepEqual(bordersOf(geometry, pieces, null), [], 'a feature simplification erased has no border left');
+});
+
 test('a shard holds each border once and its two sides point at it', () => {
   const features = simplifyTopology(syntheticTopology(), { minArea: 0.005 });
   const { shardFiles } = planImport(features, { created: '2026-09-02', shards: SHARD_CUT });
@@ -586,6 +605,44 @@ test('the arc list is deterministic: the same topology twice is the same bytes',
   const once = planImport(simplifyTopology(syntheticTopology(), { minArea: 0.005 }), { created: '2026-09-02', shards: SHARD_CUT });
   const twice = planImport(simplifyTopology(syntheticTopology(), { minArea: 0.005 }), { created: '2026-09-02', shards: SHARD_CUT });
   assert.equal(JSON.stringify([...once.shardFiles]), JSON.stringify([...twice.shardFiles]));
+});
+
+// The shards as they stand in the repository. The source file is not read
+// here — only what the import last wrote out of it — because the invariant
+// that matters to the map is about the files it fetches: the stroke has to
+// lie on the fill's own edge, or the border is a line around nothing.
+test('every border a shard names is an edge the outline naming it has', async () => {
+  const dir = path.join(ROOT, 'data', 'geo', 'presences');
+  const files = (await readdir(dir)).filter((name) => name.endsWith('.json')).sort();
+  assert.ok(files.length >= 5, `the five shards are there (${files.length})`);
+  let references = 0;
+  for (const file of files) {
+    const shard = JSON.parse(await readFile(path.join(dir, file), 'utf8'));
+    assert.ok(Array.isArray(shard.arcs), `${file} carries an arc list`);
+    const named = new Set();
+    for (const feature of shard.features) {
+      const borders = feature.properties.borders;
+      if (borders === undefined) continue;
+      assert.ok(Array.isArray(borders) && borders.length > 0, `${file} ${feature.id}: a list or nothing, never an empty one`);
+      const rings = feature.geometry.type === 'Polygon' ? feature.geometry.coordinates : feature.geometry.coordinates.flat();
+      const vertices = new Set(rings.flat().map(([x, y]) => `${x} ${y}`));
+      for (const index of borders) {
+        named.add(index);
+        references += 1;
+        const arc = shard.arcs[index];
+        assert.ok(Array.isArray(arc), `${file} ${feature.id} names arc ${index}, which the file does not hold`);
+        assert.ok(arc.length >= 2, `${file} arc ${index} is a line`);
+        const off = arc.filter(([x, y]) => !vertices.has(`${x} ${y}`));
+        assert.deepEqual(off, [], `${file} ${feature.id}: arc ${index} leaves its outline`);
+      }
+    }
+    assert.equal(named.size, shard.arcs.length, `${file}: every arc it holds is somebody's border`);
+    // The seam is cut once, at import: nothing under data/geo/ crosses it.
+    for (const arc of shard.arcs) {
+      assert.equal(crossesMeridian({ type: 'LineString', coordinates: arc }, SEAM), false, `${file}: an arc across the seam`);
+    }
+  }
+  assert.ok(references > 10000, `the world's inland borders are there (${references} references)`);
 });
 
 // --- the successions the split table states -------------------------------

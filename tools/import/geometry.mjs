@@ -116,7 +116,9 @@ export function geometryBbox(geometry) {
   ];
 }
 
-function ringsOf(geometry) {
+// Every ring or line a geometry is made of, whatever its type: what a caller
+// asking "where are its points?" means, and what the two bbox helpers walk.
+export function ringsOf(geometry) {
   switch (geometry?.type) {
     case 'Polygon': return geometry.coordinates;
     case 'MultiPolygon': return geometry.coordinates.flat();
