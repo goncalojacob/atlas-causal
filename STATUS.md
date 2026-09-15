@@ -6221,7 +6221,7 @@ the cap that decides how much coastline the reader gets. The peaks' row gains
 `data/geo/` 11,247.9 KB of 24,576. No cap was reached, no tolerance stepped and
 no feature was dropped that was not dropped before.
 
-### Deviations 649 to 657
+### Deviations 649 to 658
 
 649. **The zoom at which this map starts writing names is the map's, not the
      events layer's.** `LABEL_ZOOM = 4` moves to `labels.js` and the round
@@ -6272,6 +6272,17 @@ no feature was dropped that was not dropped before.
      say about `historicalNames`. `CLAUDE.md`'s layout tree does name
      `labels.js`, in the commit that added it, which is what `site.test.mjs`
      checks.
+
+658. **`tools/screens.mjs` rewrites every picture and only one of them is this
+     run's.** The pass overwrote `m37-base-lisbon.png` — the very picture the
+     owner is to judge this run against — with the labelled version of itself,
+     and jittered five others that this run does not change at all. Every
+     screenshot but `m38-labels-lisbon.png` was put back to what M37b
+     committed. `m39-map-iberia.png` is the one honest loss: it is a zoomed
+     picture and would now carry city names, but it belongs to M39 and a run
+     that rewrites another milestone's evidence is a run that cannot be
+     checked. A `--only <name>` for the tool is one argument and nobody's
+     milestone.
 
 ### What M38a did not do
 
