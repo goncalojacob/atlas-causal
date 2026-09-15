@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "kind": "import-places",
+  "source": "natural-earth-10m",
+  "entries": {
+    "1159122667": {
+      "place": "panaji"
+    },
+    "1159128157": {
+      "place": "braga"
+    },
+    "1159146429": {
+      "place": "porto"
+    },
+    "1159149085": {
+      "place": "macau"
+    },
+    "1159150179": {
+      "place": "saint-denis"
+    },
+    "1159150577": {
+      "place": "dili"
+    },
+    "1159150997": {
+      "place": "conakry"
+    },
+    "1159151273": {
+      "place": "lisbon"
+    },
+    "1159151469": {
+      "place": "luanda"
+    },
+    "1159151507": {
+      "place": "stockholm"
+    },
+    "1159151529": {
+      "place": "berlin"
+    },
+    "1159151573": {
+      "place": "washington"
+    },
+    "1159151575": {
+      "place": "new-york"
+    }
+  }
+}

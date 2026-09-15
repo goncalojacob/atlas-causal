@@ -31,12 +31,13 @@
 // M36b — are all one shape and are built by tools/import/layers.mjs, which is
 // what M36c's cities will be built by too.
 
-import { mkdir, readdir, stat, unlink, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, stat, unlink, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import { canonical } from '../build-index.mjs';
+import { readRecords } from '../lib/read.mjs';
 import { readSource } from './source.mjs';
 import { clipToBox, splitAtMeridian } from './geometry.mjs';
 import { keepRing, simplifyArc, simplifyLine } from './simplify.mjs';
@@ -48,6 +49,9 @@ import {
 import {
   cellValues, readLayer, sourcePoints, takeLayer, valuePoints, worldValue,
 } from './layers.mjs';
+import {
+  CITIES_SOURCE, PLACES_DOC, PLACES_FILE, handEntries, matchPlaces, placesDocument, placesFile,
+} from './places.mjs';
 import { SEAM } from '../../src/map/projection.js';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -646,6 +650,50 @@ function printSurvey(loaded) {
   }
 }
 
+// --- which city is which place -------------------------------------------
+
+// `--places`: the matching half of M36c, which writes
+// data/imports/naturalearth-places.json and docs/naturalearth-places.md and
+// no geometry at all. It is a mode of its own and not part of an import run
+// for one reason: **the file is authored, not generated**. The matcher can
+// prove two kinds of entry and no more, and everything else is for a person
+// to decide; an import that rewrote the file every time it ran would delete
+// that person's work the next night.
+//
+// So a run of this keeps every entry the matcher did not itself produce, and
+// an ordinary import run only *reads* the committed file.
+export async function writePlaces(dataDir, cities, { root = ROOT, existing = null } = {}) {
+  const { entries: records } = await readRecords(dataDir);
+  const places = records.filter((entry) => entry.kind === 'place').map((entry) => entry.record);
+  const { entries, matched, unresolved } = matchPlaces(cities?.features ?? [], places);
+  const hand = handEntries(existing, entries);
+  const file = placesFile({ ...entries, ...hand }, { source: SOURCE_ID });
+  const document = placesDocument({ matched, unresolved, hand, cities: (cities?.features ?? []).length });
+  const filePath = path.join(dataDir, ...PLACES_FILE.split('/'));
+  await mkdir(path.dirname(filePath), { recursive: true });
+  // Two spaces and a trailing newline: a person reads and edits this one, so
+  // it is written the way data/imports/cshapes-actors.json is and not the way
+  // the geometry is.
+  await writeFile(filePath, `${JSON.stringify(file, null, 2)}\n`, 'utf8');
+  await writeFile(path.join(root, ...PLACES_DOC.split('/')), document, 'utf8');
+  return { file, document, matched, unresolved, hand };
+}
+
+// The committed mapping, as the import reads it: ne_id → place id. An empty
+// map where the file is not there, which is what a dataset with no places of
+// its own has, and never a stop: a city over the population floor is kept
+// either way and only the atlas's own small places depend on this.
+export async function readPlaces(dataDir) {
+  const file = path.join(dataDir, ...PLACES_FILE.split('/'));
+  if (!existsSync(file)) return new Map();
+  const map = JSON.parse(await readFile(file, 'utf8'));
+  const out = new Map();
+  for (const [id, entry] of Object.entries(map?.entries ?? {})) {
+    if (typeof entry?.place === 'string') out.set(String(id), entry.place);
+  }
+  return out;
+}
+
 // --- the command line ----------------------------------------------------
 
 export async function main(argv) {
@@ -660,6 +708,11 @@ export async function main(argv) {
   // the fixture base map is this run without its far level. It is also what a
   // rerun that only wants the cells back asks for.
   let baseOnly = false;
+  // The matching half, which writes data/imports/naturalearth-places.json and
+  // docs/naturalearth-places.md and no geometry: a mode of its own because
+  // that file is authored and an import run must never overwrite what a
+  // person decided in it.
+  let places = false;
   for (let i = 0; i < argv.length; i += 1) {
     if (argv[i] === '--data') dataDir = path.resolve(argv[++i]);
     else if (argv[i] === '--source') sourceDir = path.resolve(argv[++i]);
@@ -668,6 +721,7 @@ export async function main(argv) {
     else if (argv[i] === '--budget') budget = true;
     else if (argv[i] === '--survey') survey = true;
     else if (argv[i] === '--base-only') baseOnly = true;
+    else if (argv[i] === '--places') places = true;
     else {
       console.error(`unknown argument ${argv[i]}`);
       return 2;
@@ -680,7 +734,7 @@ export async function main(argv) {
   // M36b and M36c read it off the same page.
   const names = survey
     ? (await readdir(sourceDir)).sort().filter((n) => n.endsWith('.geojson') || n.endsWith('.geojson.gz')).map((n) => n.replace(/\.gz$/, ''))
-    : sourceNames();
+    : places ? [CITIES_SOURCE] : sourceNames();
   const loaded = [];
   for (const name of names) loaded.push(await loadSource(sourceDir, name));
 
@@ -702,6 +756,17 @@ export async function main(argv) {
 
   if (survey) {
     printSurvey(loaded);
+    return 0;
+  }
+
+  if (places) {
+    const existing = existsSync(path.join(dataDir, ...PLACES_FILE.split('/')))
+      ? JSON.parse(await readFile(path.join(dataDir, ...PLACES_FILE.split('/')), 'utf8'))
+      : null;
+    const done = await writePlaces(dataDir, loaded[0].json, { existing });
+    const how = (kind) => done.matched.filter((m) => m.how === kind).length;
+    console.log(`${done.matched.length + done.unresolved.length} place record(s): ${how('wikidata')} matched on wikidata, ${how('name')} on the name, ${done.unresolved.length} left for a person, ${Object.keys(done.hand).length} entry(ies) already written by hand.`);
+    console.log(`${PLACES_FILE} and ${PLACES_DOC} written. A match is never guessed: what is left is in the document.`);
     return 0;
   }
 
