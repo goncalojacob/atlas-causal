@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-06",
+  "revised": "2026-09-15",
   "origin": {
     "tool": "assistant"
   },
@@ -45,6 +45,7 @@
   },
   "place": "flanders",
   "region": null,
+  "parent": "world-war-i",
   "actors": [
     {
       "actor": "portuguese-expeditionary-corps",

@@ -2411,10 +2411,11 @@
       "origin": {
         "tool": "assistant"
       },
+      "parent": "world-war-i",
       "review": {
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-15",
       "status": "active",
       "title": "Battle of the Lys"
     },
@@ -3482,6 +3483,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "world-war-ii",
       "review": {
         "flags": [
           "imported-facts",
@@ -3489,7 +3491,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-15",
       "status": "active",
       "title": "Eastern Front"
     },
@@ -4194,10 +4196,11 @@
       "origin": {
         "tool": "assistant"
       },
+      "parent": "world-war-i",
       "review": {
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-15",
       "status": "active",
       "title": "Germany declares war on Portugal"
     },
@@ -6781,6 +6784,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "world-war-i",
       "review": {
         "flags": [
           "imported-facts",
@@ -6788,7 +6792,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-15",
       "status": "active",
       "title": "Treaty of Brest-Litovsk"
     },
@@ -6970,6 +6974,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "russo-japanese-war",
       "review": {
         "flags": [
           "imported-facts",
@@ -6977,7 +6982,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-15",
       "status": "active",
       "title": "Treaty of Portsmouth"
     },

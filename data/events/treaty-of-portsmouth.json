@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-05",
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
@@ -60,6 +60,7 @@
   },
   "place": null,
   "region": "americas",
+  "parent": "russo-japanese-war",
   "actors": [
     {
       "actor": "russia-soviet-union",
