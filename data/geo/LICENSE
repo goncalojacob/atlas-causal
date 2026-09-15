@@ -23,7 +23,7 @@ Natural Earth 1:110m (regions.json)
   else: land-present.json went from 125,938 to 126,436 bytes and
   regions.json from 221,050 to 221,298.
 
-Natural Earth 10 m (land-present.json since M36a, base/coast/*.json)
+Natural Earth 10 m (land-present.json since M36a, base/*)
   Public domain, on the same terms as the 110 m files above, from the same
   upstream repository at the same pinned tag:
   https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2/geojson
@@ -37,6 +37,14 @@ Natural Earth 10 m (land-present.json since M36a, base/coast/*.json)
     1ac90796408bc6ad6911d69448485d3c4dbf2190370080368a09976e1c9f7416
   ne_10m_minor_islands.geojson    1,320,514 bytes
     8c933ca7a4760256bdc46408355706e39764b0fa01c160c28888b90b4faec29f
+  ne_10m_rivers_lake_centerlines.geojson   7,307,743 bytes
+    bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a
+  ne_10m_lakes.geojson                     5,043,554 bytes
+    2d036f53dedec578001c5c30c2959ee7d4eebc1306900fa4367c49929ec8f2d9
+  ne_10m_geography_regions_polys.geojson   5,583,870 bytes
+    b7b26e50ea917d3696aec87f932def2bf5f890f5770e441d59c162c6f4c92a77
+  ne_10m_geography_regions_elevation_points.geojson   862,686 bytes
+    f98a16867867146ec4146d6d4b18c823eeedb2825947de666116cf9a4e3f43cb
 
   Regeneration is reproducible with
     tools/import/naturalearth.mjs --source vendor/natural-earth/10m --check
@@ -69,7 +77,43 @@ Natural Earth 10 m (land-present.json since M36a, base/coast/*.json)
   Both levels are cut at 30 degrees west, the meridian the map is cut at, as
   everything under data/geo/ has been since M39a. Nothing else is altered:
   no coordinate is moved, no feature is invented, and no name is read off
-  these two files, which carry none.
+  those two files, which carry none.
+
+  base/rivers, base/lakes, base/physical and base/mountains were added by
+  M36b, from the four files above, each at the same two levels: one file for
+  the whole world (base/<layer>-world.json) and one per non-empty cell of the
+  same twenty-four-cell grid. Simplification is the same Douglas-Peucker at
+  three decimals, at the tolerance each level's cap forced:
+
+    layer      level  tolerance  features        points kept / of
+    rivers     far      0.4 deg    978/1455     5,650 / 256,386
+    rivers     near    0.015 deg  1455/1455    60,661 / 256,386
+    lakes      far     0.15 deg    434/1355     4,694 / 162,852
+    lakes      near    0.03 deg   1355/1355    24,670 / 162,852
+    physical   far     0.25 deg    543/544     10,147 /  70,307
+    physical   near   0.075 deg    544/544     36,091 /  70,307
+    mountains  both       none     711/711        711 /     711
+
+  The far level of the rivers and the lakes also has a size floor, because
+  what decides the bytes at that level is the feature count and not the
+  tolerance: a river shorter than 1.9 degrees and a lake smaller than 0.05
+  square degrees are not in the world file. Both are in the cells, at their
+  own detail, and nothing is dropped from a cell for being small. The floor
+  is 1.9 and not 2 because the Tejo is 1.912 degrees long.
+
+  The physical regions keep only the seventeen FEATURECLA values that are
+  landforms - Range/mtn, Desert, Plateau, Plain, Pen/cape, Peninsula, Basin,
+  Depression, Valley, Lowland, Delta, Isthmus, Foothills, Tundra, Wetlands,
+  Gorge, Geoarea - of the 1,047 in the file; the 503 dropped are islands,
+  island groups, coasts, continents, lakes and one Dragons-be-here, which
+  would have drawn the coastline a third time. base/mountains is all 711
+  elevation points, each with the elevation the file gives it, depressions
+  included; no height is invented and none is read off anything else.
+
+  Names are Natural Earth's own, carried through unchanged: NAME (or `name`),
+  and NAME_EN (or `name_en`) only where it differs. A feature the file left
+  unnamed is written without a name, never with an empty one. Every one of
+  these files is cut at 30 degrees west like the rest.
 
 CShapes 2.0 (presences/*.json)
   Licence: CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/

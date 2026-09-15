@@ -59,7 +59,9 @@ test('data/geo/base/ is named in the licence, the manifest and the table alike',
   const manifest = JSON.parse(await readFile(path.join(ROOT, 'data', 'index', 'manifest.json'), 'utf8'));
   assert.deepEqual(manifest.licenses['data/geo/base/'], rows['data/geo/base/']);
   const text = await readFile(path.join(ROOT, 'data', 'geo', 'LICENSE'), 'utf8');
-  assert.ok(text.includes('base/coast/*.json'), 'data/geo/LICENSE names the files');
+  for (const layer of ['base/coast', 'base/rivers', 'base/lakes', 'base/physical', 'base/mountains']) {
+    assert.ok(text.includes(layer), `data/geo/LICENSE names ${layer}`);
+  }
   assert.ok(text.includes('Public domain'), 'and says what they are under');
   assert.ok(text.includes('1ac90796408bc6ad6911d69448485d3c4dbf2190370080368a09976e1c9f7416'), 'the sha256 of the decompressed source');
   assert.ok(text.includes('vendor/natural-earth/10m/'), 'and where it is');
@@ -69,6 +71,13 @@ test('data/geo/base/ is named in the licence, the manifest and the table alike',
   assert.ok(/simplified with Douglas-Peucker at 0\.4\s+degrees/.test(text), 'the far tolerance');
   assert.ok(text.includes('10,787'), 'the points kept at the far level');
   assert.ok(text.includes('446,175'), 'against the points the source has');
+  // And the same three for each of M36b's four, in the table the run wrote:
+  // the tolerance its cap forced, the features kept and the points kept.
+  for (const layer of ['rivers', 'lakes', 'physical', 'mountains']) {
+    assert.match(text, new RegExp(`^\\s+${layer}\\s+(far|both)\\s`, 'm'), `${layer} has a row in "what the import changed"`);
+  }
+  assert.ok(text.includes('60,661'), 'the rivers\' near points');
+  assert.ok(text.includes('1.9 and not 2 because the Tejo'), 'and why the rivers\' floor is 1.9 and not 2');
 });
 
 test('the attribution names the dataset data/geo/LICENSE names', async () => {
