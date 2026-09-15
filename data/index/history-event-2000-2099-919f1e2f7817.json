@@ -3745,6 +3745,15 @@
         }
       ]
     },
+    "south-sudanese-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "sudanese-civil-war": {
       "from": "git",
       "versions": [
@@ -4052,6 +4061,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "war-in-darfur": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },

@@ -212,6 +212,12 @@
     },
     {
       "dissent": false,
+      "id": "1976-argentine-coup-d-etat",
+      "kind": "event",
+      "locator": "Q1048750"
+    },
+    {
+      "dissent": false,
       "id": "1976-azorean-regional-election",
       "kind": "event",
       "locator": null
@@ -410,6 +416,12 @@
     },
     {
       "dissent": false,
+      "id": "arusha-accords",
+      "kind": "event",
+      "locator": "Q1429076"
+    },
+    {
+      "dissent": false,
       "id": "assassination-of-archduke-franz-ferdinand",
       "kind": "event",
       "locator": "Q192050"
@@ -446,6 +458,12 @@
     },
     {
       "dissent": false,
+      "id": "boer-wars",
+      "kind": "event",
+      "locator": "Q1676845"
+    },
+    {
+      "dissent": false,
       "id": "boxer-rebellion",
       "kind": "event",
       "locator": "Q150229"
@@ -470,6 +488,12 @@
     },
     {
       "dissent": false,
+      "id": "constitutionalization-attempts-in-iran",
+      "kind": "event",
+      "locator": "Q1368440"
+    },
+    {
+      "dissent": false,
       "id": "covid-19-pandemic",
       "kind": "event",
       "locator": null
@@ -491,6 +515,12 @@
       "id": "cuban-revolution",
       "kind": "event",
       "locator": "Q11264"
+    },
+    {
+      "dissent": false,
+      "id": "dayton-agreement",
+      "kind": "event",
+      "locator": "Q190315"
     },
     {
       "dissent": false,
@@ -542,6 +572,12 @@
     },
     {
       "dissent": false,
+      "id": "first-italo-ethiopian-war",
+      "kind": "event",
+      "locator": "Q989115"
+    },
+    {
+      "dissent": false,
       "id": "full-scale-russo-ukrainian-war",
       "kind": "event",
       "locator": "Q110999040"
@@ -563,6 +599,12 @@
       "id": "great-depression",
       "kind": "event",
       "locator": "Q8698"
+    },
+    {
+      "dissent": false,
+      "id": "greco-turkish-war-of-1897",
+      "kind": "event",
+      "locator": "Q657055"
     },
     {
       "dissent": false,
@@ -650,6 +692,12 @@
     },
     {
       "dissent": false,
+      "id": "majimaji-war",
+      "kind": "event",
+      "locator": "Q705553"
+    },
+    {
+      "dissent": false,
       "id": "may-1915-portuguese-presidential-election",
       "kind": "event",
       "locator": "Q97516248"
@@ -692,6 +740,12 @@
     },
     {
       "dissent": false,
+      "id": "philippine-revolution",
+      "kind": "event",
+      "locator": "Q422082"
+    },
+    {
+      "dissent": false,
       "id": "portuguese-regionalisation-referendum-1998",
       "kind": "event",
       "locator": null
@@ -728,6 +782,12 @@
     },
     {
       "dissent": false,
+      "id": "rwandan-civil-war",
+      "kind": "event",
+      "locator": "Q426722"
+    },
+    {
+      "dissent": false,
       "id": "schengen-agreement",
       "kind": "event",
       "locator": "Q2822795"
@@ -749,6 +809,12 @@
       "id": "second-sino-japanese-war",
       "kind": "event",
       "locator": "Q170314"
+    },
+    {
+      "dissent": false,
+      "id": "south-sudanese-civil-war",
+      "kind": "event",
+      "locator": "Q15353665"
     },
     {
       "dissent": false,
@@ -788,6 +854,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-paris-1898",
+      "kind": "event",
+      "locator": "Q847137"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-portsmouth",
       "kind": "event",
       "locator": "Q548067"
@@ -824,6 +896,12 @@
     },
     {
       "dissent": false,
+      "id": "tripartite-pact",
+      "kind": "event",
+      "locator": "Q153122"
+    },
+    {
+      "dissent": false,
       "id": "turkish-war-of-independence",
       "kind": "event",
       "locator": "Q234738"
@@ -851,6 +929,12 @@
       "id": "wall-street-crash-of-1929",
       "kind": "event",
       "locator": "Q201684"
+    },
+    {
+      "dissent": false,
+      "id": "war-in-darfur",
+      "kind": "event",
+      "locator": "Q190758"
     },
     {
       "dissent": false,

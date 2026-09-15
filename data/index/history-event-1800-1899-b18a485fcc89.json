@@ -213,6 +213,15 @@
         }
       ]
     },
+    "boer-wars": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "boxer-rebellion": {
       "from": "git",
       "versions": [
@@ -240,6 +249,33 @@
         }
       ]
     },
+    "first-italo-ethiopian-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "greco-turkish-war-of-1897": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "philippine-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "second-boer-war": {
       "from": "git",
       "versions": [
@@ -264,6 +300,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-paris-1898": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },

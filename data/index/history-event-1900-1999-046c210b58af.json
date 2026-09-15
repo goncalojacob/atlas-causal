@@ -1826,6 +1826,15 @@
         }
       ]
     },
+    "1976-argentine-coup-d-etat": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "1976-azorean-regional-election": {
       "from": "git",
       "versions": [
@@ -3337,6 +3346,15 @@
         }
       ]
     },
+    "arusha-accords": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "assalto-ao-banco-de-angola-na-damaia-em-21-de-outubro-de-1975": {
       "from": "git",
       "versions": [
@@ -3869,7 +3887,7 @@
       ]
     },
     "balkan-wars": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4621,6 +4639,15 @@
         }
       ]
     },
+    "constitutionalization-attempts-in-iran": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "convention-on-the-elimination-of-all-forms-of-discrimination-against-women": {
       "from": "git",
       "versions": [
@@ -4824,6 +4851,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "dayton-agreement": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -5429,7 +5465,7 @@
       ]
     },
     "european-charter-for-regional-or-minority-languages": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5608,7 +5644,7 @@
       ]
     },
     "first-balkan-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6271,7 +6307,7 @@
       ]
     },
     "kosovo-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6645,6 +6681,15 @@
             "actors"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "majimaji-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -7925,6 +7970,15 @@
         }
       ]
     },
+    "rwandan-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "salazar-finance-minister-1928": {
       "from": "git",
       "versions": [
@@ -8086,7 +8140,7 @@
       ]
     },
     "second-balkan-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8685,6 +8739,15 @@
         }
       ]
     },
+    "tripartite-pact": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "turkish-war-of-independence": {
       "from": "git",
       "versions": [
@@ -8885,7 +8948,7 @@
       ]
     },
     "winter-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -9078,7 +9141,7 @@
       ]
     },
     "yugoslav-wars": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
