@@ -13,6 +13,30 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-15, after **M36a** (`docs/m36-brief.md`, with its amendments after
+review): **the coastline under the marks is Natural Earth 10 m now, and beside
+it, fetched a cell at a time and never at first paint, is the near coastline
+the base map is built on.**
+
+`data/geo/land-present.json` is 188,446 bytes of its 200 KB cap — 10 m
+simplified at 0.4° with an area floor of 0.007 square degrees — and
+`data/geo/base/coast/` is 2,392.5 KB over the twenty-four cells of a fixed
+60° × 45° grid, at 0.015°, written as **lines** so that no cut ring is ever
+stroked as a ring. The tool is `tools/import/naturalearth.mjs`, offline and
+idempotent, with its two pure halves `features.mjs` (the property table, read
+off the committed files with `--survey`, and the one monotone table from
+Natural Earth's tile zoom to our `k`) and `grid.mjs`. `manifest.schema` is
+**8** and carries a `base` block. The account is
+**`## M36a: the base map's tool, its grid, its budget and the coastline`**,
+below, with deviations 596 to 612. **M36b (rivers, lakes, physical regions,
+mountains) and M36c (cities) have their own runs.**
+
+**One thing waits on the owner**, in deviation 605: the 200 KB coastline cap
+buys the small islands 110 m drops — Malta, Bahrain, Madeira, Santa Maria and
+Graciosa, Santiago, Barbados, Bermuda — but not Corvo and not the Maldives'
+outer atolls, which are under the 85 km² floor the cap forces. Raising the cap
+is one constant and one number in `CAPS`.
+
 2026-09-15, after the **glyph run** (`docs/glyphs-brief.md`, with its
 amendments after review): **an event that has a category is drawn with a
 symbol over its mark and at the left of its bar, and the layer control's
@@ -4742,6 +4766,319 @@ Redrawing one is one `<symbol>` and no test.
 in the table above: a shot of the repository's data would show one symbol on one
 mark.
 
+## M36a: the base map's tool, its grid, its budget and the coastline
+
+The atlas drew a world of 110 m coastlines and nothing else. It still draws
+nothing new — **M36a writes data and no pixel** — but the coastline under the
+marks is Natural Earth **10 m** now, and beside it, unfetched until M37 asks
+for it, is `data/geo/base/coast/`: the same shore again at near detail, cut on
+a fixed twenty-four-cell grid and written as lines.
+
+**Nothing was downloaded.** The seven 10 m files have been committed under
+`vendor/natural-earth/10m/`, gzipped, since 8 September; the run's first act
+was to decompress each and check its sha256 against `vendor/SHA256SUMS`, and
+all ten entries there (the 110 m pair and CShapes included) matched. A `fetch`
+in this tool would be a bug, not a fallback, and there is none.
+
+### What the tool writes, and how a cell is addressed
+
+`tools/import/naturalearth.mjs --source vendor/natural-earth/10m` writes two
+levels. The **far** level is one file for the whole world — for `coast` that
+file is `data/geo/land-present.json`, which keeps its name, its shape, its
+manifest key and `src/map/layers/land.js` untouched, because `loadAtlas`
+already fetches it at first paint and a second copy under `base/` would be the
+same coastline twice. The **near** level is `data/geo/base/coast/<cell>.json`,
+one file per cell that holds something.
+
+A cell is addressed by `src/map/grid.js`: a fixed 60° × 45° grid, six columns
+by four rows, keys `x0y0` … `x5y3`, origin −180° **in data longitudes and not
+at the seam** — the seam is a property of the picture, and a grid keyed off it
+would rename every file the day the owner moves the centre. `cellsFor(box)` is
+what M37 will ask, and it wraps a box whose west is east of its east, which is
+what M39a's `?bbox=` produces when a reader pans past the antimeridian. Keys
+carry no sign, so no file name begins with a hyphen and no key needs escaping
+in a URL. **It is not a tile scheme**: one grid at one resolution, and the box
+on screen decides which cell is fetched, never the zoom.
+
+`tools/import/grid.mjs` re-exports `src/map/grid.js` in three lines, as
+`simplify.mjs` re-exports the simplifier: one implementation, because two would
+drift and the second would be the one nobody tested.
+
+### The `--survey` table: every property name read off the file
+
+No property name reached `tools/import/features.mjs` that the run had not seen
+in the file in front of it. This is `--survey` over the seven committed files,
+with the keys the table actually reads:
+
+| file | features | geometry | points | name | English name | scale rank | min zoom | other |
+|---|---|---|---|---|---|---|---|---|
+| `ne_10m_land` | 11 | (Multi)Polygon | 446,175 | — | — | `scalerank` | `min_zoom` | `featurecla` (3 keys in the whole file) |
+| `ne_10m_minor_islands` | 2,795 | Polygon | 35,512 | — | — | `scalerank` | `min_zoom` | `featurecla` |
+| `ne_10m_rivers_lake_centerlines` | 1,455 | MultiLineString | 256,386 | `name` (1,367) | `name_en` | `scalerank` | `min_zoom` | `min_label`; **no `ne_id`, no `wikidataid`** |
+| `ne_10m_lakes` | 1,355 | (Multi)Polygon | 162,852 | `name` (745) | `name_en` | `scalerank` | `min_zoom` | `wikidataid` (614), `ne_id`, `min_label` |
+| `ne_10m_geography_regions_polys` | 1,047 | (Multi)Polygon | 192,270 | `NAME` | — | `SCALERANK` | **none** | `FEATURECLA`, `WIKIDATAID` (956), `NE_ID`, `MIN_LABEL` |
+| `ne_10m_geography_regions_elevation_points` | 711 | Point | 711 | `name` (644) | `name_en` | `scalerank` | `min_zoom` | `elevation` on **all 711**, `wikidataid` (539), `ne_id` |
+| `ne_10m_populated_places` | 7,342 | Point | 7,342 | `NAME` | `NAME_EN` | `SCALERANK` | `MIN_ZOOM` | `POP_MAX`, `WIKIDATAID` (7,192), `NE_ID`, `LABELRANK`; 137 keys per city, of which ten are read |
+
+Three things the survey settled that a guess would have got wrong. The 10 m
+files **do not agree on case**: the physical regions and the populated places
+shout their keys and the other five whisper them. `ne_10m_land` is eleven
+features and not eleven thousand — one MultiPolygon per scale rank, up to 2,773
+polygons in one of them — and **one of those eleven carries 2,773 polygons with
+every property null**, which is why a fallback rule is not optional; a twelfth
+thing in the file is the `Null island` marker Natural Earth ships at 0,0, which
+is dropped by name. And the rivers are the one file of the seven with neither
+`ne_id` nor `wikidataid`, so M36b has nothing stable to key a river by.
+
+There is **no "local name" column** anywhere: `NAME` is the conventional name,
+`NAME_EN` the English one, and the rest are 26 fixed languages — which is what
+amendment A5 of the plan settled for M38.
+
+### The `z` table: Natural Earth's zoom in ours
+
+Natural Earth's `min_zoom` is a web-Mercator tile zoom; ours is `k`, the
+multiplier over a 960-unit world where `k = 1` is the whole world. They are not
+the same unit, and a literal conversion would leave most of the base map
+invisible at the deepest zoom the map allows. So one frozen, monotone table in
+`features.mjs`, gentler than the formula on purpose, with **everything visible
+by `k = 16`** — well inside the `k = 40` the map reaches:
+
+| NE `min_zoom`/`scalerank` | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 and up |
+|---|---|---|---|---|---|---|---|---|---|---|
+| `z`, in `k` | 1 | 1 | 1 | 2 | 3 | 4 | 6 | 8 | 12 | 16 |
+
+Half steps (6.5, 6.7, 7.1 all occur) round to the nearest whole rung. Where a
+feature has neither a `min_zoom` nor a scale rank, a fallback rule answers in
+Natural Earth's own unit and goes through the same table, so there is one
+conversion and not four: **area** for a polygon, **length** for a line,
+**population** for a city. `minZoom` in the manifest is in `k` too, and so will
+M38's `zl` be.
+
+### The budget, and what the coastline cost
+
+`--budget` prints this before anything is written. The tolerance of each level
+is not a preference: it is **whatever the cap forces**, found by walking a
+ladder from the level's own start until the bytes fit. "Near = full detail"
+was never possible — a full-detail near coast is about 7.1 MB against a cap of
+2,600 KB.
+
+| layer | level | tolerance | bytes | cap | points kept | points dropped |
+|---|---|---|---|---|---|---|
+| coast | far (`land-present.json`) | 0.4° | 184.0 KB | 200 KB | 10,787 | 435,383 |
+| coast | near (24 cells) | 0.015° | 2,392.5 KB | 2,600 KB | 144,396 | 337,722 |
+
+Each ring is still held to a sixth of its own extent (`MIN_DETAIL`), which is
+what keeps a small island a shape and not a line however coarse the tolerance.
+
+**What the far level cost, exactly.** The bytes are not decided by the
+tolerance but by the polygon *count*: a ring can never be fewer than four
+points, and the 10 m land is 6,837 polygons. So the far level also has an area
+floor, **0.007 square degrees — about 85 km²** — and 1,471 polygons survive it.
+Above it, and on this map for the first time: **Malta, Bahrain, Madeira, Santa
+Maria and Graciosa in the Azores, Santiago in Cape Verde, Barbados, Bermuda**.
+Below it, and not on it: **Corvo**, the smallest of the Azores at about 17 km²,
+and the **Maldives' outer atolls**. The brief promised the Maldives; the
+honest report is that the capital atoll is there and the rest are not, and that
+is what a whole world in 200 KB buys. Lowering the floor is one constant and a
+larger cap, and it is the owner's to ask for.
+
+**The minor islands are near-level only.** `ne_10m_minor_islands` is 2,795
+polygons at Natural Earth's own zoom 6.5 — nothing a reader can see at the
+world — so they are in the cells and not in the 200 KB far coastline.
+
+### What it weighs
+
+| | before M36a | after |
+|---|---|---|
+| `presences/` (CShapes, five shards) | 4,877,303 | 4,877,303 |
+| `regions.json` (lane polygons) | 221,298 | 221,298 |
+| `land-present.json` | 126,436 | **188,446** |
+| `palette.json` | 4,071 | 4,071 |
+| `base/coast/` (24 cells) | — | **2,449,884** |
+| **`data/geo/` in total** | **5,234,665 (5.0 MB)** | **7,749,686 (7.4 MB)** |
+
+The base map is **2,392.5 KB of its 8 MB ceiling** and `data/geo/` is **7.4 MB
+of its 24 MB**, both printed by `--budget` and both refused before a byte is
+written if crossing them. Nothing was sacrificed: no layer hit its cap.
+
+The cells, in KB, laid out as the world is (north at the top, −180° at the
+left). Twenty-four of twenty-four hold coastline; the emptiest is the South
+Pacific and the fullest the northern archipelagos:
+
+| | x0 | x1 | x2 | x3 | x4 | x5 |
+|---|---|---|---|---|---|---|
+| **y3** (45–90°N) | 171.0 | 272.5 | 183.4 | 257.8 | 48.2 | 59.8 |
+| **y2** (0–45°N) | 15.3 | 208.9 | 37.3 | 162.3 | 166.3 | 199.7 |
+| **y1** (45°S–0) | 21.5 | 27.6 | 33.0 | 34.4 | 47.0 | 207.4 |
+| **y0** (90–45°S) | 19.9 | 123.4 | 31.7 | 12.9 | 17.2 | 34.0 |
+
+**First paint barely moved and no cell is in it.** `index.html` fetches
+`manifest.json` 33,895 + the core 69,859 + the sources 33,681 +
+`land-present.json` 188,446 + `palette.json` 4,071 = **329,952 B (322.2 KB)**,
+against 256,497 before. Decision 9's "first view under 1 MB" holds with two
+thirds to spare, and `tests/spine-pages.test.mjs` now holds every page to
+asking for **no `geo/base/` file at all before it draws**.
+
+### Why the near coast is lines
+
+A polygon clipped to a cell is filled *and* stroked, and `.land` has a cobalt
+stroke: every cell border would draw a straight cobalt line across a continent.
+So `coast` at the near level is `geometry: "line"` — the ring segments inside
+the cell, stroked over the far polygon's fill, and **no cut edge is ever part
+of a stroked ring**. Every cell is cut out of one simplified geometry with
+M39a's own `clipToBox`, so the cells' line lengths come to exactly the world's
+and no two of them disagree about where the shore is; a test holds the two
+lengths together to 1e-6.
+
+### The manifest
+
+`manifest.schema` is **8**, one more than the gate commit's 7. The new block:
+
+```json
+"base": {
+  "source": "natural-earth-10m",
+  "version": "v5.1.2",
+  "grid": { "lon": 60, "lat": 45, "columns": 6, "rows": 4 },
+  "layers": [
+    { "id": "coast", "geometry": "line", "world": null, "minZoom": 1,
+      "cells": [ { "key": "x0y0", "file": "geo/base/coast/x0y0.json", "bytes": 20410 }, … ] }
+  ]
+}
+```
+
+Built by `readBaseLayers` in `tools/lib/read.mjs`, which scans what is on disk
+the way `readPresenceShards` does: **it never invents a file name and never
+names a file that is not there**, because a manifest entry M37 cannot fetch is
+a request that 404s and a layer that silently does not draw. A dataset with no
+`data/geo/base/` gets **no `base` key at all** — absent, not empty, exactly as
+an absent `presences` says there are none.
+
+### What waits on M36b, M36c and M37
+
+M36b adds rivers, lakes, the physical regions and the mountains; M36c the
+cities and `data/imports/naturalearth-places.json`; M36c also writes
+ARCHITECTURE.md revision 23, which the brief assigns to it. `LAYERS` in
+`features.mjs` holds one row today and the property table holds all six, read
+off the survey above, so M36b is a row and a builder and not a second survey.
+
+M37 has two things to know that M36a settled for it. The far coastline's fill
+is 0.4° coarse and the near lines are 0.015°, so at deep zoom the fill's edge
+and the stroke will not coincide: amendment A2 of the M37 brief already says
+the far *stroke* goes off once every cell in view is in hand, and the fill
+staying coarse underneath is the price of a 200 KB first paint. And `linePath`
+is already in `src/map/layers/land.js` — M39b wrote it for the inland borders —
+so the `"line"` geometry has its drawing function waiting.
+
+### Deviations 596 to 612
+
+The brief's own eight first, with what actually happened.
+
+596. **Natural Earth is committed, not fetched by an Action** (brief 513).
+     Decision 9 and review finding 23 put the download in a GitHub Action on an
+     `import/**` branch. The files were committed under
+     `vendor/natural-earth/10m/` on 8 September and the tool reads them with
+     `--source`, as `cshapes.mjs` does. No workflow was added, and `vendor/` is
+     still outside `deploy.yml`'s allowlist, so the artifact did not grow by a
+     byte of source data.
+597. **The sources are read gzipped, through `node:zlib`** (brief 514, review
+     A0). `tools/import/source.mjs` gunzips and hashes the **decompressed**
+     bytes, so every sha256 in `vendor/SHA256SUMS`, in `data/geo/LICENSE` and
+     in the tool's own constants is of the file as it was downloaded. All ten
+     matched on this run.
+598. **The far level is one file for the whole world, not a zoom pyramid**
+     (brief 515). Two levels and one grid is what "sharded by zoom level and
+     region" is worth here; a pyramid is a tile scheme with a different name.
+599. **The grid is fixed at 60° × 45° and not derived from the lanes**
+     (brief 516). `manifest.regionBoxes.europe` really is −180…180, so cells
+     keyed by lane would over-fetch most of the world.
+600. **Cities, peaks and physical-region labels will be point arrays and not
+     GeoJSON** (brief 517). Recorded, not exercised: M36a writes no point
+     layer. `PROPERTIES` in `features.mjs` already carries their tables.
+601. **`coast` has no `world` file of its own** (brief 518). Its far level is
+     `manifest.land`, which `loadAtlas` fetches at first paint; the manifest
+     entry says `world: null` and means it.
+602. **A cell with no geometry is not written** (brief 519). On the real
+     coastline all twenty-four cells hold something, so nothing was skipped
+     here; on the fixtures twenty-two of the twenty-four are not on disk, and a
+     test holds it.
+603. **The property table was read off the committed files, not assumed**
+     (brief 520). `--survey` first, the table above written from its output,
+     and a comment on each row of `features.mjs` naming the file its keys came
+     from. It caught three things a guess would have got wrong — the case
+     split, the 2,773-polygon feature with every property null, and the rivers
+     having no `ne_id`.
+
+And this run's own, from 604.
+
+604. **`manifest.schema` is 8 and not the brief's 7.** The brief was written
+     when the generation was 6; the glyph run took it to 7 at the gate, and
+     amendment A8 says "one more than the gate commit's". `ARCHITECTURE.md`'s
+     two mentions of it said **5** and are corrected to 8 in the same commit.
+605. **The far coastline has an area floor, and it is what the 200 KB actually
+     costs.** The brief speaks only of a tolerance. But the polygon *count* is
+     the floor under the bytes — a ring is never fewer than four points, and
+     the 10 m land is 6,837 polygons — so no tolerance alone fits 200 KB. The
+     floor is 0.007 square degrees, about 85 km², chosen as the smallest that
+     leaves the ladder room; 1,471 polygons survive it. **Corvo and the
+     Maldives' outer atolls are under it**, against the brief's promise of
+     "the Maldives"; Malta, Bahrain, Madeira, Santa Maria, Graciosa, Santiago,
+     Barbados and Bermuda are over it and are on the map for the first time.
+     A larger cap is the owner's to ask for and is one constant.
+606. **The minor islands are at the near level only.** The brief has them at
+     `coast` "if the budget holds after everything else". 2,795 polygons at
+     Natural Earth's own zoom 6.5 is nothing a reader sees at the world, and
+     the far coastline has 200 KB for the whole planet, so they are in the
+     cells and not in `land-present.json`.
+607. **The far level's tolerance ladder starts at 0.05° and the near level's
+     at 0.005°.** A3 fixes the near start; the far level would otherwise walk
+     eleven rungs it can never fit at, because the whole world in 200 KB is a
+     tenth of what even 0.05° comes to.
+608. **A cell file is one feature per `z`, not one per source polygon.** The
+     near coast has no identity to carry — it is the shore, clipped, and M37
+     draws it as one stroke — and a Feature per polygon would be fifty bytes
+     of scaffolding apiece. Features are sorted by `z`, so two builds write one
+     file. `land-present.json` is likewise grouped back into the source
+     features it came from, which is the shape it has always had.
+609. **The tool has a `--base-only` flag** the brief does not name. The fixture
+     base map is written with it: the fixtures have no `land-present.json` of
+     their own — `src/main.js` passes the real one under `?fixtures=1` — so
+     writing one would change what the fixture manifest's `land` key says and
+     what the browser tests draw. It is also what a rerun that wants only the
+     cells back asks for.
+610. **The layer table lives in `tools/import/features.mjs`, not in a module of
+     its own.** `tools/lib/read.mjs` needs it to build the manifest block and
+     `naturalearth.mjs` reads `build-index.mjs`, which reads `read.mjs`;
+     `features.mjs` imports nothing but the two pure geometry halves, so
+     nothing that reads it can end up in a cycle.
+611. **`tools/build-regions.mjs` stopped writing `data/geo/land-present.json`.**
+     It wrote it from 110 m until now, so one run of it would have silently
+     reverted the base map's far level to the coarse file. It still reads
+     `ne_110m_land` for `--seam-report`, where the question is which meridian
+     cuts least land and the coarse file answers it as well. `buildLand` and
+     its test went with the write.
+612. **`ARCHITECTURE.md` gained three things in M36a although the brief gives
+     revision 23 to M36c**: the corrected generation (604), the `geo/` tree's
+     `base/` line and the manifest line, and the **no-map-tiles paragraph** the
+     file has never had — a tree that does not name a new 2.4 MB directory
+     reads as a tree saying it does not exist. The rest of revision 23 — the
+     two levels in prose, runtime simplification by zoom, the extension points
+     — stays M36c's.
+
+### What M36a did not do, and one thing to know
+
+Nothing under `src/` is drawn from any of this: `src/map/grid.js` is the only
+new file there and nothing in the browser imports it until M37. `map.js`,
+`layers/*.js`, `main.js`, `state.js`, `index.html` and `style.css` are
+untouched, no hex value and no size was added, and the presences, the palette
+and `regions.json` were not opened.
+
+**The sandbox ran the browser tests.** The run protocol expects
+`*-browser.test.mjs` to skip here; Chromium is present in this container and
+`tests/browser.mjs` found it, so all 1,329 tests ran and none skipped. One run
+of the full suite failed once on `a regional event is a wash over its lane`
+(`tests/map-browser.test.mjs`) and passed on the next and on its own — a timing
+flake under parallel load, of the kind the protocol already names one of.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -4915,3 +5252,4 @@ glyphs started 2026-09-11T01:52:11Z by scheduled
 glyphs started 2026-09-14T23:55:45Z by scheduled
 glyphs done
 M36a started 2026-09-15T00:53:00Z by scheduled
+M36a done
