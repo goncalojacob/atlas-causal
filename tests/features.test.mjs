@@ -138,7 +138,9 @@ test('the cities are the one layer that is filtered rather than simplified', () 
   // And it carries amendment A6's fields, which the peaks do not: a field
   // added to one point layer must not appear on the other.
   assert.deepEqual([...cities.carry], ['pop', 'zl', 'wikidata', 'place']);
-  assert.equal(layer('mountains').carry, undefined);
+  // The peaks carry M38's label zoom and nothing else of the cities': a field
+  // added to one point layer must not appear on the other.
+  assert.deepEqual([...layer('mountains').carry], ['zl']);
 });
 
 test('a city\'s label zoom comes from LABELRANK and is never earlier than its dot', () => {
@@ -146,6 +148,14 @@ test('a city\'s label zoom comes from LABELRANK and is never earlier than its do
   // (the survey of 15 September), so M38's `zl` goes through the same frozen
   // table `z` does, from the rank Natural Earth ranks its labels by.
   assert.equal(PROPERTIES.cities.label, 'LABELRANK');
+  // And the three that do rank their labels are read off `min_label`, in the
+  // case each file writes its keys in.
+  assert.equal(PROPERTIES.rivers.label, 'min_label');
+  assert.equal(PROPERTIES.lakes.label, 'min_label');
+  assert.equal(PROPERTIES.physical.label, 'MIN_LABEL');
+  // Nothing ranks the peaks or the coastline, so neither table names a column.
+  assert.equal(PROPERTIES.mountains.label, undefined);
+  assert.equal(PROPERTIES.coast.label, undefined);
   const point = { type: 'Point', coordinates: [-9.1, 38.7] };
   const city = readFeature('cities', {
     properties: { NAME: 'Lisbon', MIN_ZOOM: 3, LABELRANK: 6, POP_MAX: 2812000, NE_ID: 1, WIKIDATAID: 'Q597' },
@@ -159,12 +169,27 @@ test('a city\'s label zoom comes from LABELRANK and is never earlier than its do
     geometry: point,
   });
   assert.equal(early.zl, early.z);
-  // And where the file gives no rank, nothing is invented.
+  // And where the file gives no rank it is `z + 1`, one rung of the reader's
+  // own descent after the dot (M38, amendment A2). Not a rank invented for a
+  // feature Natural Earth did not rank: a rule that says "after the mark",
+  // which is the only thing this atlas knows about it.
   const none = readFeature('cities', {
     properties: { NAME: 'Nowhere', MIN_ZOOM: 5, POP_MAX: 200000, NE_ID: 3 },
     geometry: point,
   });
-  assert.equal(none.zl, undefined);
+  assert.equal(none.zl, none.z + 1);
+  // Every layer, and not the cities alone: a peak ranks nothing and a lake
+  // ranks its labels, and both come out with a number.
+  const lake = readFeature('lakes', {
+    properties: { name: 'Fixture Lake', scalerank: 2, min_zoom: 1, min_label: 5 },
+    geometry: { type: 'Polygon', coordinates: [[[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]]] },
+  });
+  assert.equal(lake.zl, 4, 'the lake\'s own min_label, through the one table');
+  const peak = readFeature('mountains', {
+    properties: { name: 'Fixture Peak', scalerank: 6, elevation: 1934 },
+    geometry: point,
+  });
+  assert.equal(peak.zl, peak.z + 1);
 });
 
 test('what a cell holds is decided per layer, and no cut edge is ever stroked', () => {

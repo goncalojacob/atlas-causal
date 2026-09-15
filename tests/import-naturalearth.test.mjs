@@ -138,7 +138,7 @@ test('the four layers M36b added carry what M37 and M38 need of them', async (t)
   const peaks = await read(BASE_DIR, 'mountains', 'x2y2.json');
   assert.ok(Array.isArray(peaks));
   assert.deepEqual(peaks, [{
-    elevation: 1934, id: '1159100007', lat: 27.5, lon: -28.5, name: 'Fixture Peak', z: 6,
+    elevation: 1934, id: '1159100007', lat: 27.5, lon: -28.5, name: 'Fixture Peak', z: 6, zl: 7,
   }]);
 
   // And the far level of each is one file for the whole world, in the same
@@ -178,15 +178,54 @@ test('the population filter keeps the cities over 100 000, and the one the atlas
   assert.deepEqual(world.map((c) => c.name), ['Fixture City', 'Fixture Port', 'Fixture Villa', 'Fixture Town']);
 });
 
-test('a peak is written as M36b wrote it, whatever the cities carry', async (t) => {
+test('a peak carries its label zoom and nothing else the cities carry', async (t) => {
   // `carry` is per layer: `wikidata` is on a city by amendment A6 and on no
-  // peak by deviation 615, and the fixture file gives the peak one.
+  // peak by deviation 615, and the fixture file gives the peak one. M38 adds
+  // `zl` to the row, because a peak's name is drawn at its own label zoom like
+  // every other, and nothing else moved with it.
   const dir = await temporary(t);
   await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir]));
   const peaks = JSON.parse(await readFile(path.join(dir, BASE_DIR, 'mountains-world.json'), 'utf8'));
   assert.deepEqual(peaks, [{
-    elevation: 1934, id: '1159100007', lat: 27.5, lon: -28.5, name: 'Fixture Peak', z: 6,
+    elevation: 1934, id: '1159100007', lat: 27.5, lon: -28.5, name: 'Fixture Peak', z: 6, zl: 7,
   }]);
+});
+
+// M38, test 3. `zl` is the zoom a name appears at and every feature has one:
+// Natural Earth's own label rank through the one frozen table where the file
+// records one, and `z + 1` — one rung after the dot — where it does not. The
+// dot is never later than its name and a nameless feature never carries a
+// label zoom at all, because there is no label for it to be the zoom of.
+test('every feature carries a label zoom, from the rank or from z + 1', async (t) => {
+  const dir = await temporary(t);
+  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir]));
+  const read = async (...names) => JSON.parse(await readFile(path.join(dir, ...names), 'utf8'));
+
+  // The three files that rank their labels: `min_label` on the rivers and the
+  // lakes, `MIN_LABEL` on the physical regions.
+  const named = (collection) => collection.features.filter((f) => f.properties.name !== undefined);
+  for (const layer of ['rivers', 'lakes', 'physical']) {
+    for (const feature of named(await read(BASE_DIR, `${layer}-world.json`))) {
+      const { z, zl, name } = feature.properties;
+      assert.equal(typeof zl, 'number', `${layer}: ${name} has a label zoom`);
+      assert.ok(zl >= z, `${layer}: ${name} is a dot before it is a name (z ${z}, zl ${zl})`);
+    }
+  }
+  // The peaks rank nothing, so every one of them is `z + 1`.
+  for (const peak of (await read(BASE_DIR, 'mountains-world.json')).filter((p) => p.name)) {
+    assert.equal(peak.zl, peak.z + 1, `${peak.name} is named one rung after its dot`);
+  }
+  // And a feature the file never named carries none: the coastline, which has
+  // no name column at all, and the nameless rivers and lakes beside it.
+  const coast = await read(BASE_DIR, 'coast', 'x2y2.json');
+  assert.equal(coast.features.every((f) => f.properties.zl === undefined), true);
+  for (const layer of ['rivers', 'lakes']) {
+    const collection = await read(BASE_DIR, `${layer}-world.json`);
+    for (const feature of collection.features) {
+      if (feature.properties.name !== undefined) continue;
+      assert.equal(feature.properties.zl, undefined, `a nameless ${layer} feature carries no label zoom`);
+    }
+  }
 });
 
 test('a lake reaching two cells is the same lake in both, and is never clipped', async () => {

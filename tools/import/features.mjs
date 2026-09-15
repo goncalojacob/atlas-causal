@@ -166,6 +166,7 @@ export const PROPERTIES = Object.freeze({
     nameEn: 'name_en',
     scaleRank: 'scalerank',
     minZoom: 'min_zoom',
+    label: 'min_label',
     population: null,
     elevation: null,
     wikidata: null,
@@ -181,6 +182,7 @@ export const PROPERTIES = Object.freeze({
     nameEn: 'name_en',
     scaleRank: 'scalerank',
     minZoom: 'min_zoom',
+    label: 'min_label',
     population: null,
     elevation: null,
     wikidata: 'wikidataid',
@@ -203,6 +205,7 @@ export const PROPERTIES = Object.freeze({
     nameEn: null,
     scaleRank: 'SCALERANK',
     minZoom: null,
+    label: 'MIN_LABEL',
     population: null,
     elevation: null,
     wikidata: 'WIKIDATAID',
@@ -232,12 +235,12 @@ export const PROPERTIES = Object.freeze({
   // the metropolitan figure is what "over 100 000" is about, and all 7,342
   // carry one.
   //
-  // `label` is LABELRANK and **not** MIN_LABEL: the other four files have a
-  // `min_label` and this one has none — the survey of 15 September is what
-  // says so — so M38's `zl` goes through the same table `z` does, from the
-  // rank Natural Earth ranks its labels by (deviation 624). 7,341 of the
-  // 7,342 carry it; the one that does not is written without a `zl` rather
-  // than with a number nothing gave us.
+  // `label` is LABELRANK and **not** MIN_LABEL: the rivers, the lakes and the
+  // physical regions have a `min_label` and this file has none — the survey of
+  // 15 September is what says so — so M38's `zl` goes through the same table
+  // `z` does, from the rank Natural Earth ranks its labels by (deviation 624).
+  // 7,341 of the 7,342 carry it; the one that does not falls to `z + 1` with
+  // the peaks and the coast, which have no rank of any kind.
   cities: Object.freeze({
     class: 'FEATURECLA',
     drop: null,
@@ -358,6 +361,10 @@ export const LAYERS = Object.freeze([
     minZoom: 1,
     dir: 'mountains',
     clip: false,
+    // A peak's name is drawn at its own label zoom like every other, so it
+    // carries one and nothing else beyond what M36b wrote: `wikidata` is still
+    // read and not written here (deviation 615).
+    carry: Object.freeze(['zl']),
     world: 'geo/base/mountains-world.json',
     sources: Object.freeze([Object.freeze({ file: 'ne_10m_geography_regions_elevation_points.geojson', far: true })]),
   }),
@@ -457,12 +464,19 @@ export function readFeature(layerId, feature) {
   const population = value(properties, table.population);
   if (Number.isFinite(population)) out.pop = population;
   // M38's label zoom, in `k` like `z` and through the same frozen table
-  // (amendment A4). Never earlier than the dot itself: a name on the map
-  // before the mark it names would be a label pointing at nothing, and
-  // Natural Earth's two ranks do not promise to agree. Absent where the file
-  // gives no rank, rather than invented.
+  // (amendment A4, and M38's A2). Never earlier than the dot itself: a name
+  // on the map before the mark it names would be a label pointing at nothing,
+  // and Natural Earth's two ranks do not promise to agree.
+  //
+  // **Every feature has one**, because M38's placer has to decide about every
+  // feature and "no zl" would be a feature whose name appears at no zoom at
+  // all. Where the file ranks its labels the rank decides; where it does not —
+  // the peaks, the coast, and the one populated place of 7,342 with no
+  // LABELRANK — it is `z + 1`, one rung of the reader's own descent after the
+  // dot. That is a rule and not an invented rank: it says "after the mark",
+  // which is the only thing this atlas actually knows.
   const label = value(properties, table.label);
-  if (Number.isFinite(label)) out.zl = Math.max(zOf(label), out.z);
+  out.zl = Number.isFinite(label) ? Math.max(zOf(label), out.z) : out.z + 1;
   return out;
 }
 

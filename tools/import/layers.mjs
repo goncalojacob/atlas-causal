@@ -166,10 +166,18 @@ export function pointOf(read, { decimals, carry = [] }) {
   if (read.elevation !== undefined) out.elevation = read.elevation;
   // And whatever else the layer's own row says it carries — `carry` on the
   // LAYERS row, so that adding a field to one point layer cannot add it to
-  // another. The cities carry amendment A6's four; the peaks carry none, and
-  // their files are byte for byte what M36b wrote, `wikidata` read and not
-  // written there by deviation 615.
-  for (const field of carry) if (read[field] !== undefined) out[field] = read[field];
+  // another. The cities carry amendment A6's four; the peaks carry M38's `zl`
+  // and nothing more, `wikidata` still read and not written there by deviation
+  // 615.
+  //
+  // `zl` travels beside the name for the same reason it does in `featureOf`: a
+  // peak the file did not name — 67 of the 711 — cannot be labelled at any
+  // zoom, and a label zoom for a label that will never exist is bytes.
+  for (const field of carry) {
+    if (read[field] === undefined) continue;
+    if (field === 'zl' && out.name === undefined) continue;
+    out[field] = read[field];
+  }
   return out;
 }
 
@@ -181,11 +189,20 @@ export function pointOf(read, { decimals, carry = [] }) {
 // browser follows it, M36c matches its cities against the source file and not
 // against ours, and 614 lakes' worth of `"wikidata":"Q…"` is bytes out of a
 // cap that decides how much coastline the reader gets.
+// `zl` is M38's label zoom and travels beside the name, because it is only
+// ever a question about the name: a feature the file gave none — every one of
+// the 2,773 coast polygons, 610 of the 1,355 lakes, 88 of the 1,455 rivers —
+// can never be labelled at any zoom, and an integer saying when to draw a
+// label that does not exist is bytes out of the cap that decides how much
+// coastline the reader gets. `readFeature` writes one for every feature all
+// the same: what a nameless feature's label zoom *would* be is still the
+// import's answer and not a hole in it.
 export function featureOf(read, geometry) {
   const properties = { z: read.z };
   if (read.id !== undefined) properties.id = read.id;
   if (read.name !== undefined) properties.name = read.name;
   if (read.nameEn !== undefined) properties.nameEn = read.nameEn;
+  if (read.name !== undefined && read.zl !== undefined) properties.zl = read.zl;
   return { type: 'Feature', properties, geometry };
 }
 
