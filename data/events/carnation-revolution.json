@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "carnation-revolution",
   "kind": "event",
-  "status": "active",
-  "supersededBy": null,
+  "status": "merged",
+  "supersededBy": "carnation-revolution-1974",
   "aliases": [],
   "authors": [
     {
@@ -13,15 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m44b-merged"
+    ],
+    "note": "Merged in M44b into carnation-revolution-1974, the same event. The atlas has held 25 April since M2 under a Portuguese title and with no Wikidata item, so neither the item test nor the label test of M44a’s tick rule reached it — the blind spot deviation 670 caught for the proclamation of the Republic, a batch too late here. This record keeps Q193245 and the two Wikipedia links, and names its survivor rather than becoming an anonymous tombstone. The full account is in docs/m44-retractions.md."
   },
   "wikidata": "Q193245",
   "sitelinks": {
