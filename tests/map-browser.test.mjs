@@ -1124,6 +1124,24 @@ const BASE_ON = 'land,events,rivers,lakes,physical,mountains,cities';
 // And the same without the events, for a picture about the cities alone.
 const CITIES_ON = 'land,rivers,lakes,physical,mountains,cities';
 
+// Waits until the base map's files have stopped arriving: two readings of the
+// page's own resource timeline the same, a beat apart, which is what
+// `settledShards` does for the attribute shards. A test that asks "did the
+// picture change for the reason I gave it?" has to start from a picture that
+// was not still changing on its own — a cell that lands between two readings
+// is thirty rivers more and no rebuild at all, and on a slow runner that is
+// exactly what happens (this branch, run 641).
+async function settledBase(page) {
+  const count = 'return performance.getEntriesByType("resource").filter((e) => e.name.includes("/geo/base/")).length;';
+  let last = -1;
+  for (let tries = 0; tries < 40; tries += 1) {
+    const now = await page.eval(count);
+    if (now > 0 && now === last) return;
+    last = now;
+    await new Promise((resolve) => { setTimeout(resolve, 100); });
+  }
+}
+
 test('zoomed into Portugal the cells of the viewport are fetched and no others', { skip }, async () => {
   await wide(async (page, url) => {
     // Deliberately not FREEZE_TIMELINE: that resizes the map's pane, and what
@@ -1180,6 +1198,10 @@ test('a pan does not rebuild the base map', { skip }, async () => {
       'return Boolean(document.querySelector("#map .layer-base-rivers path"));');
     await page.eval(FREEZE_TIMELINE);
     await waitFor(page, 'return document.querySelectorAll("#map .layer-base-rivers path").length > 0;', 'the rivers');
+    // Every cell in hand first: a river that arrives during the pan is a river
+    // that arrived, not a rebuild, and counting before the last one lands would
+    // read the one as the other.
+    await settledBase(page);
     await page.eval(`
       window.__first = document.querySelector('#map .layer-base-rivers path');
       window.__count = document.querySelector('#map .layer-base-rivers').children.length;
