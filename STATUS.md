@@ -13,6 +13,82 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-15, after **M44a** (`docs/m44-brief.md` and its amendments after
+review; **on branch `m44`, cut from `origin/m0`, and nothing of it merged into
+`m0` except the milestone lines**): **140 candidates ticked by a rule, 82
+records imported, 58 refused and every refusal counted by reason.** The atlas
+holds **292 active events**, up from 210, and three of the categories that were
+empty are not: `war` 0 → 20, `revolution` 0 → 10, `treaty` 3 → 15. The 1890s go
+from three events to eight, the 1940s from twelve to twenty-four, the 1990s from
+thirteen to twenty-nine. **No historical claim in any of it was written by this
+run**: every summary is the Wikidata item's own description, said to be
+unchecked, and M44b is where a person argues the edges.
+
+**The tick rule is at the top of `docs/wikidata-candidates.md`, written before
+a box was ticked**, and it is reproducible from that file plus `data/` alone.
+The pool is the 1,481 `world-*` rows of the committed list, less 91 already
+held — 86 by the item id on a record, four by a label matching a record's title
+or one of its names, and one named by hand — leaving 1,390. Four sets, in
+order, no row twice: **set 1, named, 36** (all of Appendix A); **set 2, thin
+decades, 34**; **set 3, `revolution`, 8**; **set 4, the remainder to the cap,
+62**. Of the 140, **111 ids were added to `items`** and 29 were already there
+from deviation 447, so `items` is 703 and holds no duplicate (A3).
+
+**82 created, 58 refused, and the refusals are two classes and not one.**
+**46 are the lane** — a placeless event with no point, no place record and no
+lane named for it in the seeds file. **12 are the class table**: ten items whose
+classes are not in it, and two whose classes disagree with each other —
+`Q295875`, ANZUS, and `Q194284`, the General Agreement on Tariffs and Trade,
+each of which Wikidata calls both a treaty and an organisation.
+The table was not widened to force a yield. 164 Wikipedia leads are cached.
+
+**What the owner still has to settle: 22 of deviation 447's twenty-nine.**
+M44-0 gave six of them a lane by hand and a seventh reached one from its own
+point, so seven landed — the two Balkan wars and the Balkan Wars, the Winter
+War, the Kosovo war, the Yugoslav wars and the European Charter. The other
+**22 were walked and refused again, by name**, which is the honest state of
+them: the Cold War, the 1918 pandemic, HIV/AIDS, the Six-Day War, Sykes–Picot,
+Kyoto, the Arab Spring, the War on Terrorism, the first Chechen and first
+Nagorno-Karabakh wars, the Russo-Japanese, Spanish–American, Philippine–
+American, Polish–Soviet, Soviet-Afghan and Iran–Iraq wars, the Entente
+Cordiale, the Antarctic Treaty, CITES, the 2009 swine flu pandemic and the
+2007–2008 financial crisis. Each is **one line of data** in
+`data/imports/wikidata-seeds.json` → `lanes` whenever the owner says which lane
+it belongs in; deviation 545 lists why each failed M44-0's rule. Until then a
+third of set 1 cannot land, and M44b writes no edge for any of them.
+
+**Two decisions were taken on the brief's own recommendation and not by the
+owner**, and each is one commit to undo. **Owner question 2**: `--candidates`
+was **not** run again. The committed list of 6 September was enough for all
+four sets, and a candidates round is about three hours of runner time — the
+resource whose exhaustion stopped this repository for a day (deviation 442).
+The twelve named neighbours it would have reached are still unresolved: the
+September 11 attacks, the fall of the Berlin Wall, German reunification, the
+dissolution of the USSR, the Bosnian War, the Cuban missile crisis, the Prague
+Spring, the East German uprising of 1953, the refugee crisis of 2015, Soviet
+collectivisation, the Pact of Steel and any US presidential election. They are
+worth a round of their own with the right classes. **Owner question 3**: the
+lane *mechanism* is not M44's — it landed in M44-0 — and what is left of the
+question is the 22 above, which is data and not code.
+
+**Four things had to be fixed before a single record could land, and none of
+them was about a record.** The import Action checked out shallow, so
+`build-index.mjs` wrote a history index nothing else here agrees with and the
+suite went red on the fixtures (deviation 671); its log could not be read from
+the sandbox that pushes the branch, so the first two failures were invisible
+(672); the contribute form dropped `regionNote`, the sentence saying a lane was
+written and not measured, which the import test had been naming as a gap since
+the field was added (673); and one test pinned the corpus's first year at 1899,
+which set 2 exists to change (674). `node tools/validate.mjs` without `--index`:
+**0 errors**, 2,203 records. `node --test --test-timeout=120000` against a
+locally rebuilt, unstaged index: **1,420 tests, 0 skipped, 0 failed**.
+
+M44a's own account is **`## M44a: the ticks, the import, and what it refused`**,
+below, with deviations 669 to 675. M44b wires these 82 records or retracts
+them; M44c drafts the Portuguese half. What follows immediately here is M38b's
+account, unchanged.
+
+
 2026-09-15, after **M38b** (`docs/m38-brief.md`, with its amendments after
 review): **M38 is done — the map has names, and the ground has them too.**
 A river, a lake, a range and a peak are written at priority 2, each at its own
@@ -6504,6 +6580,175 @@ not touched, and no repository setting was changed.
 **The sandbox ran the browser tests.** 1,420 tests, **none skipped** — 19 of
 them the new `tests/base-labels.test.mjs`, three more in `tests/labels.test.mjs`
 and two more in `tests/map-browser.test.mjs`.
+
+## M44a: the ticks, the import, and what it refused
+
+On branch `m44`, cut from `origin/m0` at `3ecc5c1`. The import branch was
+`import/run-m44-2026-09-15`, fast-forward-merged back into `m44`; nothing of
+this is on `m0` but the `M44 started` and `M44a done` lines, each a single-file
+commit of its own (A10).
+
+### The rule, and what each set kept
+
+Written at the top of `docs/wikidata-candidates.md` before a box was ticked,
+and reproducible from that file plus `data/`: sitelinks and the item id are
+both in the row, ties break by the item id read as a number, and a world row's
+decade is its own date's — every world row is printed under the one `## 2020s`
+heading, which is why a decade rule that reads the heading keeps nothing at
+all.
+
+| set | what it keeps | ticked | created | refused |
+|---|---|--:|--:|--:|
+| 1 | Named: the world row Appendix A names | 36 | 14 | 22 |
+| 2 | Thin decades: 8 each in the 1890s and 1900s, 6 each in the 1930s, 1940s, 1950s | 34 | 19 | 15 |
+| 3 | The zero category `revolution` | 8 | 8 | 0 |
+| 4 | The remainder to the cap, by sitelinks | 62 | 41 | 21 |
+| | | **140** | **82** | **58** |
+
+`items` went from 592 to 703: **111 ids added, 29 already there** from
+deviation 447, no duplicate. The cursor went 563 → 703, `pending` empty.
+
+### What it refused, by reason
+
+- **46 for want of a lane.** A placeless event with no point of its own, no
+  point on the location or country it names, no place record, and no lane
+  named for it in the seeds file. Twenty-two of these are deviation 447's
+  twenty-nine, walked again after M44-0's rewind and refused again by name.
+- **10 because their class is not in the table**: the Cuban War of
+  Independence, the Panic of 1907, nuclear warfare, the Declaration of the
+  Establishment of the State of Israel, the North Atlantic Treaty, the 1973
+  oil crisis, the Irish War of Independence, the surrender of Japan, the
+  Armistice of Compiègne and the Cambodian genocide.
+- **2 because their classes disagree**: ANZUS and the General Agreement on
+  Tariffs and Trade are each a treaty and an organisation, so the table types
+  one as an event and the other as an actor and the tool refuses rather than
+  choosing.
+
+The table was not widened. Adding a class is an editorial judgement about what
+that class *is* and belongs in a commit of its own with the judgement written
+down (§3e).
+
+### What landed, against the corpus it landed in
+
+| decade | before → after | | category | before → after |
+|---|---|---|---|---|
+| 1890s | 3 → **8** | | `war` | 0 → **20** |
+| 1900s | 5 → **7** | | `revolution` | 0 → **10** |
+| 1910s | 27 → 36 | | `treaty` | 3 → **15** |
+| 1920s | 15 → 19 | | `disaster` | 2 → 3 |
+| 1930s | 11 → **16** | | `election` | 48 → 48 |
+| 1940s | 12 → **24** | | `death` | 1 → 1 |
+| 1950s | 13 → **18** | | none | 156 → 195 |
+| 1960s | 14 → 19 | | | |
+| 1970s | 33 → 36 | | **active events** | 210 → **292** |
+| 1980s | 12 → 15 | | | |
+| 1990s | 13 → **29** | | | |
+| 2000s | 12 → 18 | | | |
+| 2010s | 16 → 20 | | | |
+| 2020s | 24 → 27 | | | |
+
+Eighty-one of the 82 are placeless and stand on a lane alone, each carrying the
+`regionNote` that says whether the lane was measured or written; six carry a
+lane M44-0 named for them by hand. Oceania is still **0**, as the brief said it
+would be. 164 Wikipedia leads are cached under
+`tools/import/cache/wikipedia`, which is what M44b reads.
+
+### Deviations
+
+669. **Set 1 is all thirty-six of Appendix A and not the seven of amendment
+     A1.** A1 says twenty-nine of the thirty-six sit in
+     `wikidata-state.json` → `runs.import.done`, so that ticking them would
+     import nothing, and that M44a must not rewind them. That was true at
+     `de697a9`. It is not true now: **M44-0 rewound the cursor for all
+     twenty-nine on 8 September**, from 592 done to 563, in a commit of its own
+     — the rewind deviation 447 said a run that fixed the lane would have to
+     make — and `origin/m0` carries it. A0 says every claim in the amendments
+     was checked at `de697a9` and to recheck the files they name if `m0` has
+     moved; it has, and this is that recheck. Amendment A16 says the same in
+     advance: after M44-0, "set 1 is the thirty-six of Appendix A and A1's
+     restriction to seven no longer applies". **Nothing was rewound by this
+     run.** It also changes nothing mechanical: all twenty-nine were already in
+     `items` and not in `done`, so `--import` would have walked them whatever
+     this run put in a tick box — ticking the rows only makes the document say
+     what the importer was going to do. Seven of the twenty-nine landed and 22
+     were refused again, which is the count the owner needs. **To reverse**:
+     untick those twenty-nine rows; the importer's behaviour does not change.
+670. **One row was struck from the pool by hand, and it is named.** `Q638903`,
+     the 5 October 1910 revolution, is `data/events/republic-proclaimed-1910.json`
+     — active, the same date, and carrying no item id, so neither the item test
+     nor the label test reaches it and set 3 would have ticked it. The import
+     would then have written a second record for the proclamation of the
+     Republic. The exclusion is written into the rule at the top of the
+     candidate file with its reason, so it is reproducible; set 3 took the next
+     row by sitelinks instead, the 2006 Thai coup. **Mine**, and the owner may
+     prefer the other reading, which is that the two are different events. **To
+     reverse**: drop the name from the rule and re-run it.
+671. **The import Action was checking out a shallow repository, and no import
+     had run since that started to matter.** `actions/checkout@v4` defaults to
+     depth 1. `tools/lib/history.mjs` builds a record's history from `git log`
+     and refuses a shallow repository outright — a shallow repository is not
+     half a history, it is a different one — so `build-index.mjs` wrote
+     `history-*` shards with different content and, being content addressed,
+     different names. The job's own `validate --index` passed on them, because
+     it was checking an index the job had just rebuilt; what failed was the
+     suite, against the fixture index committed here, which was built with the
+     history. Four tests, rule 16, batch 1 thrown away and the cursor not
+     moved. Reproduced with no import at all: a `--depth 1` clone of the branch
+     fails the same four and a full clone passes them. `validate.yml` and
+     `deploy.yml` — the other job that builds and commits `data/index/` — have
+     carried `fetch-depth: 0` all along; this one never did, and the history
+     index landed on 10 September, after the last import branch ran.
+     `tests/workflows.test.mjs` pins it now. **To reverse**: remove the two
+     lines, and no import will ever commit a batch again.
+672. **The Action says which tests failed, at the end where they can be read.**
+     Only the tail of a job's log — about five thousand lines — can be fetched
+     from this sandbox, and TAP prints six lines for every passing test, so in a
+     suite of 1,420 the failures sit thousands of lines above the end. The
+     visible window of both failed runs was tests 593 to 1420, all passing, and
+     the run could not say what had stopped it. The output is still kept whole;
+     the failing tests are repeated after it. This is the same reason
+     `docs/import-report.md` exists. **To reverse**: one `if` back to a `||`.
+673. **`regionNote` joins `KEPT_KEYS` in `src/contribute/bundle.js` — a change
+     to `src/` inside an import round.** Batch 1 wrote
+     `data/events/balkan-wars.json` with the lane M44-0 named for it, and
+     `bundle.test.mjs` went red: the form drops `regionNote`, so the first save
+     through it would have deleted the sentence saying that lane was written by
+     a tool and not measured from a point — the distinction M44-0 exists to
+     make. This was not a discovery: `tests/import-wikidata.test.mjs` has
+     carried it as a named exemption since the field was added, with the fix
+     written down — a gap in `KEPT_KEYS`, where `historicalNames` already sits,
+     "and not something the import can fix by writing less" — and said it bit
+     nothing in `data/` only because no import had written a record there yet.
+     M44a is that import. The exemption is gone and the import may now drop
+     nothing at all. No form draws the field and none should: why a lane was
+     overridden is not a thing to ask a contributor for. **To reverse**: remove
+     the key and put the exemption back, and the next reviewer's save deletes
+     the note on 81 records.
+674. **A test no longer pins the year the corpus starts at.** "The atlas's own
+     strip: Portugal's three posts, and every turn counted" asserted
+     `own.extent` was `{ min: 1899, max: 2026 }`. Set 2 of the tick rule exists
+     to fill the 1890s, so batch 1 moved the near end to 1894 and the strip said
+     so. Neither end was ever a fact about the strip — the comment above it
+     already said as much about the far end, which was 2025 until the merge of
+     `world`. What the test is for is the rule: the strip is held to what the
+     atlas holds, so it starts at the corpus and not at Portugal's own first
+     year of 1886. That is what it asserts now, against whatever the corpus has
+     grown to, the way the turn counts just above it are the number of records
+     rather than a number written out. Nothing is skipped and no assertion is
+     dropped. **To reverse**: write the two years back, and the next import
+     round reds it again.
+675. **A9 named the second refusal class and named it wrong, and the count is
+     reported as it happened.** The amendment expected six Appendix A rows to be
+     refused for a class the table does not hold — `proxy war`, `zoonosis`,
+     `ethnic conflict`, `charter`, `multilateral treaty`, `disease outbreak`.
+     Not one of the six was refused for its class: the Yugoslav wars and the
+     European Charter were created, and the Cold War, the 1918 pandemic, CITES
+     and the 2009 swine flu pandemic were refused for want of a lane, which is
+     the first class and not the second. The second class is real and is
+     something else — ten items whose classes are not in the table and two whose
+     classes disagree — and it is counted separately above, as A9 asks. The
+     table was not widened, which is the instruction that mattered. **Nothing
+     to reverse**: this is a count, not a change.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
