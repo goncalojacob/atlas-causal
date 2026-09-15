@@ -3868,6 +3868,15 @@
         }
       ]
     },
+    "balkan-wars": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "bangladesh-liberation-war": {
       "from": "git",
       "versions": [
@@ -5419,6 +5428,15 @@
         }
       ]
     },
+    "european-charter-for-regional-or-minority-languages": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "european-convention-on-human-rights": {
       "from": "git",
       "versions": [
@@ -5586,6 +5604,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "first-balkan-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -6240,6 +6267,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "kosovo-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -8049,6 +8085,15 @@
         }
       ]
     },
+    "second-balkan-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "second-chechen-war": {
       "from": "git",
       "versions": [
@@ -8839,6 +8884,15 @@
         }
       ]
     },
+    "winter-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "wiriyamu-massacre": {
       "from": "git",
       "versions": [
@@ -9020,6 +9074,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "yugoslav-wars": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     }

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "winter-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q134949",
+  "sitelinks": {
+    "count": 88,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Winter War",
+    "pt": "Guerra de Inverno"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q134949"
+    }
+  ],
+  "title": "Winter War",
+  "summary": "Wikidata item Q134949, imported by tools/import/wikidata.mjs. The item's own description reads \"1939–1940 war between the Soviet Union and Finland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1939,
+    "end": 1940,
+    "date": "1939-11-30",
+    "endDate": "1940-03-13"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

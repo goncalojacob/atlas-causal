@@ -422,6 +422,12 @@
     },
     {
       "dissent": false,
+      "id": "balkan-wars",
+      "kind": "event",
+      "locator": "Q165725"
+    },
+    {
+      "dissent": false,
       "id": "bangladesh-liberation-war",
       "kind": "event",
       "locator": "Q371394"
@@ -506,6 +512,12 @@
     },
     {
       "dissent": false,
+      "id": "european-charter-for-regional-or-minority-languages",
+      "kind": "event",
+      "locator": "Q106308"
+    },
+    {
+      "dissent": false,
       "id": "european-convention-on-human-rights",
       "kind": "event",
       "locator": "Q183191"
@@ -515,6 +527,12 @@
       "id": "february-revolution",
       "kind": "event",
       "locator": "Q101534"
+    },
+    {
+      "dissent": false,
+      "id": "first-balkan-war",
+      "kind": "event",
+      "locator": "Q177918"
     },
     {
       "dissent": false,
@@ -605,6 +623,12 @@
       "id": "korean-war",
       "kind": "event",
       "locator": "Q8663"
+    },
+    {
+      "dissent": false,
+      "id": "kosovo-war",
+      "kind": "event",
+      "locator": "Q190029"
     },
     {
       "dissent": false,
@@ -707,6 +731,12 @@
       "id": "schengen-agreement",
       "kind": "event",
       "locator": "Q2822795"
+    },
+    {
+      "dissent": false,
+      "id": "second-balkan-war",
+      "kind": "event",
+      "locator": "Q184183"
     },
     {
       "dissent": false,
@@ -830,6 +860,12 @@
     },
     {
       "dissent": false,
+      "id": "winter-war",
+      "kind": "event",
+      "locator": "Q134949"
+    },
+    {
+      "dissent": false,
       "id": "world-war-i",
       "kind": "event",
       "locator": "Q361"
@@ -857,6 +893,12 @@
       "id": "young-turk-revolution-of-1908",
       "kind": "event",
       "locator": "Q4298662"
+    },
+    {
+      "dissent": false,
+      "id": "yugoslav-wars",
+      "kind": "event",
+      "locator": "Q242352"
     }
   ],
   "id": "wikidata",

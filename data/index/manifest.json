@@ -7,7 +7,7 @@
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-134e54f54767.json",
+      "file": "index/attributes-1900-1999-e36243a0fa81.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -755,8 +755,12 @@
       "id": "election"
     },
     {
-      "count": 3,
+      "count": 4,
       "id": "treaty"
+    },
+    {
+      "count": 4,
+      "id": "war"
     }
   ],
   "categoriesAllowed": [
@@ -824,7 +828,7 @@
   "counts": {
     "actors": 488,
     "edges": 219,
-    "events": 421,
+    "events": 428,
     "narratives": 1,
     "offices": 11,
     "places": 26,
@@ -852,12 +856,12 @@
     }
   ],
   "files": {
-    "citers": "index/citers-9a91645d7d01",
-    "core": "index/core-227db84ea480.json",
+    "citers": "index/citers-f4d9cb0ade44",
+    "core": "index/core-e2124470672c.json",
     "presences": "index/presences-b0f8cac28d89.json",
-    "review": "index/review-b95e2e02d9d8.json",
-    "search": "index/search-f068a1a222c2.json",
-    "sources": "index/sources-bbd00bd3fd2f.json"
+    "review": "index/review-19e85a99be99.json",
+    "search": "index/search-d62f739b2000.json",
+    "sources": "index/sources-aba2f69a39bd.json"
   },
   "historyShards": [
     {
@@ -868,7 +872,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-bc98117d2e93.json",
+      "file": "index/history-event-1900-1999-eb60214124cb.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
