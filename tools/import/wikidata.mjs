@@ -464,11 +464,39 @@ export function foldName(name) {
     .trim();
 }
 
+// The name a record takes, and whether it is an English one.
+//
+// The chain was `labels.en ?? labels.pt ?? qid`, and it walked straight past an
+// English name the item was already carrying. Q60433, the refugee convention,
+// came out under a Portuguese id with
+// `wikipedia.en: "Convention Relating to the Status of Refugees"` written onto
+// the same record by the same run: the item has no English label, the English
+// article title was there, and nothing looked at it. M44c renamed the record by
+// hand; this is the class of mistake fixed rather than the instance. A sitelink
+// title is the English name an item has when its label has none, so it is tried
+// before the Portuguese label — and the Portuguese title before the bare item
+// id, for the same reason in the other language.
+//
+// Where there is no English name of either kind, the Portuguese one is taken
+// **as it stands** and the record says so in `review.flags`. The nine Madeira
+// and Azores regional elections M44c renamed have no English article and no
+// English label at all, so there was never an English name to take: inventing
+// "the 1976 Madeira regional legislative election" would be translating, which
+// is a judgement, and a run does not make those quietly. The flag is how it
+// asks for a person instead.
+export const NOT_ENGLISH_FLAG = 'title-not-english';
+
+export function titleFor(read) {
+  const english = read?.labels?.en ?? read?.titles?.en ?? null;
+  if (english) return { title: english, english: true };
+  return { title: read?.labels?.pt ?? read?.titles?.pt ?? read?.qid, english: false };
+}
+
 // An id nothing else has yet. A collision is not an error — two items may
 // honestly be called the same thing — but silently reusing an id would merge
 // two records into one, so the second carries the item id and is obvious.
 export function idFor(read, taken) {
-  const base = slug(read.labels.en ?? read.labels.pt ?? read.qid);
+  const base = slug(titleFor(read).title);
   if (base && !taken.has(base)) return base;
   const withQid = `${base ? `${base}-` : ''}${read.qid.toLowerCase()}`;
   return withQid;
@@ -544,7 +572,7 @@ export function importedSummary(read) {
     + 'that is still to be written, and review.html is where somebody writes it.';
 }
 
-function envelope(id, kind, created, fields) {
+function envelope(id, kind, created, fields, { flags = [] } = {}) {
   return {
     schema: 1,
     id,
@@ -565,13 +593,13 @@ function envelope(id, kind, created, fields) {
     // could not, without `status`: `isDraft` reads that and nothing else, so
     // an imported record with only a flag was never in the queue at all
     // (health review of 6 September, R10).
-    review: { status: REVIEW_STATUS.draft, flags: [IMPORTED_FLAG] },
+    review: { status: REVIEW_STATUS.draft, flags: [IMPORTED_FLAG, ...flags] },
     ...fields,
   };
 }
 
 export function placeRecord(read, { id, created, region = null, regionNote = null }) {
-  const label = read.labels.en ?? read.labels.pt ?? read.qid;
+  const { title: label, english } = titleFor(read);
   return envelope(id, 'place', created, {
     ...identityOf(read, created),
     // A place is not cited, and this is the atlas's decision rather than an
@@ -589,10 +617,14 @@ export function placeRecord(read, { id, created, region = null, regionNote = nul
     region,
     regionNote: region ? regionNote : null,
     summary: importedSummary(read),
-  });
+  }, { flags: english ? [] : [NOT_ENGLISH_FLAG] });
 }
 
 export function actorRecord(read, { id, created, actorType, when }) {
+  // An actor carries no title, but its id comes off the same chain and the
+  // first of its `names` is what the card shows, so a record whose only name
+  // is Portuguese wants a person here for the same reason an event does.
+  const { english } = titleFor(read);
   return envelope(id, 'actor', created, {
     ...identityOf(read, created),
     sources: [{ source: SOURCE_ID, locator: read.qid }],
@@ -601,14 +633,15 @@ export function actorRecord(read, { id, created, actorType, when }) {
     summary: importedSummary(read),
     when,
     where: null,
-  });
+  }, { flags: english ? [] : [NOT_ENGLISH_FLAG] });
 }
 
 export function eventRecord(read, { id, created, when, place, region = null, regionNote = null, category = null }) {
+  const { title, english } = titleFor(read);
   return envelope(id, 'event', created, {
     ...identityOf(read, created),
     sources: [{ source: SOURCE_ID, locator: read.qid }],
-    title: read.labels.en ?? read.labels.pt ?? read.qid,
+    title,
     summary: importedSummary(read),
     when,
     place,
@@ -621,7 +654,7 @@ export function eventRecord(read, { id, created, when, place, region = null, reg
     // P710 names participants, and who took part is not the same question as
     // what they did in it: `role` is the argument and a person writes it.
     actors: [],
-  });
+  }, { flags: english ? [] : [NOT_ENGLISH_FLAG] });
 }
 
 export function leadRecord({ qid, lang, title, revid, fetched, text }) {

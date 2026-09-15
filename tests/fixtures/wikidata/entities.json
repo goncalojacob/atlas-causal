@@ -106,6 +106,32 @@
       },
       "sitelinks": {}
     },
+    "Q9000010": {
+      "type": "item",
+      "id": "Q9000010",
+      "labels": { "pt": { "language": "pt", "value": "Convenção inventada de Northfield" } },
+      "descriptions": { "pt": { "language": "pt", "value": "uma convenção inventada, usada apenas para testar uma importação" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
+        "P585": [{ "mainsnak": { "snaktype": "value", "property": "P585", "datavalue": { "type": "time", "value": { "time": "+1951-07-28T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
+        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "longitude": 6, "latitude": 6, "precision": 0.0001, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }]
+      },
+      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Invented Convention of Northfield" }, "ptwiki": { "site": "ptwiki", "title": "Convenção inventada de Northfield" } }
+    },
+    "Q9000011": {
+      "type": "item",
+      "id": "Q9000011",
+      "labels": { "pt": { "language": "pt", "value": "Eleição regional inventada de 1976" } },
+      "descriptions": { "pt": { "language": "pt", "value": "uma eleição inventada sem artigo em inglês, usada apenas para testar uma importação" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
+        "P585": [{ "mainsnak": { "snaktype": "value", "property": "P585", "datavalue": { "type": "time", "value": { "time": "+1976-06-27T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
+        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "longitude": 7, "latitude": 7, "precision": 0.0001, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }]
+      },
+      "sitelinks": { "ptwiki": { "site": "ptwiki", "title": "Eleição regional inventada de 1976" } }
+    },
     "Q9000008": { "id": "Q9000008", "missing": "" }
   },
   "success": 1

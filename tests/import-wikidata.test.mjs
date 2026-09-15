@@ -14,7 +14,7 @@ import {
   createFetcher, HttpError, BudgetError, isRetryable, backoffMs,
   entitiesUrl, searchUrl, summaryUrl, sparqlUrl, articleUrl, historyUrl,
   readEntity, parseTime, claimPoint, countLanguageEditions, articleTitles,
-  classify, intervalFor, slug, foldName, idFor, namesFor, identityOf,
+  classify, intervalFor, slug, foldName, idFor, titleFor, NOT_ENGLISH_FLAG, namesFor, identityOf,
   mergeIdentity, ENRICHABLE, matchesFor, nameMatches, datesMatch, laneFor, laneNote,
   seededLane, SEEDED_LANE,
   placeRecord, actorRecord, eventRecord, leadRecord, importedSummary,
@@ -233,6 +233,55 @@ test('names and ids are derived without inventing either', async () => {
   });
   // An item with no article carries no `wikipedia` at all rather than {}.
   assert.deepEqual(identityOf(await read('Q9000004'), '2026-09-05'), { wikidata: 'Q9000004', sitelinks: { count: 0, on: '2026-09-05' } });
+});
+
+// The English name an item has may be its label or may be its article title,
+// and until M46 only the label was looked at: Q60433, the refugee convention,
+// was filed under a Portuguese id while the same run wrote
+// `wikipedia.en: "Convention Relating to the Status of Refugees"` onto the
+// record it had just made. Q9000010 is that shape and Q9000011 is the other —
+// no English name of either kind, which is the nine Madeira and Azores
+// elections and is not something an import may translate its way out of.
+test('an English article title is a name, and is taken before the Portuguese label', async () => {
+  const both = await read('Q9000001');
+  assert.deepEqual(titleFor(both), { title: 'Northfield Rising', english: true });
+
+  const sitelinkOnly = await read('Q9000010');
+  assert.equal(sitelinkOnly.labels.en, null, 'the item has no English label at all');
+  assert.deepEqual(titleFor(sitelinkOnly), { title: 'Invented Convention of Northfield', english: true });
+  assert.equal(idFor(sitelinkOnly, new Set()), 'invented-convention-of-northfield',
+    'the id comes off the same chain, which is where the Portuguese ids came from');
+
+  const neither = await read('Q9000011');
+  assert.deepEqual(titleFor(neither), { title: 'Eleição regional inventada de 1976', english: false });
+  assert.equal(idFor(neither, new Set()), 'eleicao-regional-inventada-de-1976');
+
+  // Nothing to be called at all is not English either, and the item id is
+  // still what a record with no name falls back to.
+  assert.deepEqual(titleFor({ qid: 'Q9000404', labels: {}, titles: {} }), { title: 'Q9000404', english: false });
+  // A Portuguese article and no Portuguese label is the same case one language
+  // over: a title the item carries beats the bare identifier.
+  assert.deepEqual(titleFor({ qid: 'Q9000404', labels: {}, titles: { pt: 'Um artigo' } }), { title: 'Um artigo', english: false });
+});
+
+test('a record with no English name of any kind is imported flagged, never translated', async () => {
+  const { dir, cacheDir } = await scratch({ items: ['Q9000010', 'Q9000011'] });
+  const { fetcher } = await fixtureFetcher();
+  const { report, failed } = await runImportMode(dir, { fetcher, today: '2026-09-15', cacheDir, deriveRegion });
+  assert.deepEqual(failed, []);
+  assert.deepEqual(report.refused, [], 'both are dated and both reach the lane from their own point');
+
+  const convention = await readJson(path.join(dir, 'events', 'invented-convention-of-northfield.json'));
+  assert.equal(convention.title, 'Invented Convention of Northfield');
+  assert.equal(convention.wikipedia.en, 'Invented Convention of Northfield',
+    'the title and the sitelink are the same string, which is the bug: it was there and unread');
+  assert.deepEqual(convention.review.flags, [IMPORTED_FLAG], 'an English name is an English name, label or title');
+
+  const election = await readJson(path.join(dir, 'events', 'eleicao-regional-inventada-de-1976.json'));
+  assert.equal(election.title, 'Eleição regional inventada de 1976',
+    'the Portuguese name is copied as it stands; translating it would be this run naming something');
+  assert.deepEqual(election.review.flags, [IMPORTED_FLAG, NOT_ENGLISH_FLAG]);
+  assert.ok(isDraft(election), 'and it is a draft, so the queue shows it with the flag on it');
 });
 
 // --- the additive rule ------------------------------------------------------
