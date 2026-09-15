@@ -13,6 +13,34 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-15, after **M36c** (`docs/m36-brief.md`, with its amendments after
+review): **the base map is complete.** The sixth and last layer is the
+`cities`, and with it **M36 is done**: six layers at two levels in the same
+twenty-four cells, fetched a cell at a time and never at first paint. The
+atlas still draws none of it — M37 is what draws.
+
+**3,086 cities**, on `POP_MAX`: the 3,085 over a hundred thousand, plus every
+populated place a `data/places/` record names whatever its size, which today
+is Panaji at 65,586. Which city is which place is
+`data/imports/naturalearth-places.json`, matched on `wikidata` (10 of 26
+records) and then on an exact fold of the name within a degree of the record's
+own point (3 more); **the other 13 are listed in
+`docs/naturalearth-places.md`** with what lies near each, for a person, and
+none of them is an error.
+
+`data/geo/base/` is **6,030.5 KB of its 8 MB ceiling** and `data/geo/` is
+**11,209.9 KB of its 24 MB** — `du -sh data/geo` says 12M. No layer hit its
+cap in any of the three sub-runs and nothing was sacrificed. The full budget
+table, the four floors, the matching and deviations 622 to 630 are in
+**`## M36c: the cities, and which of them this atlas has a record for`**,
+below; `ARCHITECTURE.md` is revision 23 and has the base map in prose for the
+first time.
+
+**Three things wait on the owner from this run**, beside the three below: the
+thirteen unresolved place records; two records whose `wikidata` is not their
+city's (`braga` and `washington`); and the cities' far level at 189.9 KB of
+its 200 KB cap, which is the tightest any layer sits.
+
 2026-09-15, after **M36b** (`docs/m36-brief.md`, with its amendments after
 review): **the base map has five of its six layers.** Beside the 10 m
 coastline M36a landed are the rivers, the lakes, the physical regions and the
@@ -5364,6 +5392,318 @@ M36c's and is not written here.
 
 **The sandbox ran the browser tests again.** Chromium is present in this
 container, so all 1,333 tests ran and **none skipped**.
+
+## M36c: the cities, and which of them this atlas has a record for
+
+M36a put a 10 m coastline under the marks and M36b four more layers beside
+it. M36c adds the sixth and last, **`cities`**, and with it **M36 is done**:
+`data/geo/base/` holds six layers at two levels in twenty-four cells, and the
+atlas still draws nothing new — the one file under `src/` this whole milestone
+has written is `src/map/grid.js`, and nothing in the browser imports it until
+M37.
+
+**Nothing was downloaded.** `--check` decompressed all seven committed 10 m
+files and matched every sha256 against `vendor/SHA256SUMS` before a byte was
+written. A `fetch` in this tool would be a bug, not a fallback, and there is
+still none.
+
+### The filter: which cities, and on which property
+
+The cities are **the one layer that is filtered rather than simplified**,
+because a point has nothing along it to take off. Brief §3's rule, both
+halves of it, on **`POP_MAX`** — the metropolitan figure, which all 7,342
+features carry, and not `POP_MIN`:
+
+| | |
+|---|---|
+| populated places in the file | 7,342 |
+| `POP_MAX` **over** 100,000 | 3,085 |
+| plus every populated place a `data/places/` record names | **1** more — Panaji, 65,586 |
+| **kept** | **3,086** |
+| left out | 4,256 |
+
+Strictly over and not at: four places sit at exactly 100,000 and "over
+100 000" is what the brief says. A city with **no** population figure would be
+kept only where a place record names it, and this file has none — `POP_MAX` is
+on all 7,342.
+
+Each city carries amendment A6's fields and nothing else: `id` (`NE_ID`),
+`name` (`NAME`), `nameEn` (`NAME_EN`, only where it differs — 950 of them),
+`lon`, `lat`, `pop`, `z`, `zl`, `wikidata` and, where the mapping names one,
+`place`. No elevation, and no `Feature` around any of it.
+
+**`zl`, M38's label zoom, comes from `LABELRANK`** and not from a `min_label`,
+because the populated places are the one file of the seven that has none —
+which is the survey's answer and not a guess (deviation 624). It goes through
+the same frozen table `z` does, so both are in `k`, and it is **never earlier
+than the dot itself**: a name on the map before the mark it names would point
+at nothing. One city of the 7,342 has no `LABELRANK` — Guntur, in Andhra
+Pradesh, 530,577 people — and is written with no `zl` rather than with a
+number nothing gave us.
+
+### The matching: 13 of 26, and what is left for a person
+
+`data/imports/naturalearth-places.json` decides the "plus every place the
+atlas names" half, and `tools/import/naturalearth.mjs --places` writes it.
+**A match is never guessed.** Two signals are accepted and no third:
+
+| how | records |
+|---|---|
+| `wikidata` — the record's Q-id against `WIKIDATAID` | **10** |
+| an exact fold of the name, one candidate surviving, within 1° of the record's own point | **3** |
+| **matched** | **13** |
+| left for a person in `docs/naturalearth-places.md` | **13** |
+
+The ten by `wikidata` are berlin, conakry, dili, lisbon, luanda, macau,
+new-york, panaji, porto and saint-denis; the three by name are braga,
+stockholm and washington. **Two of those three carry a `wikidata` the city
+does not**: the record `braga` says `Q3344946` where Natural Earth's Braga
+says `Q83247`, and `washington` says `Q1018557` where the city says `Q61`.
+Both matched on the name *and* on the point — 0.005° and 0.029° apart — and
+the document says so beside each, because one of the two ids in each pair is
+about something else and that is a correction to a record, not to this file.
+
+**The distance guard is what the corpus asked for** (deviation 626). Two of
+the thirteen unmatched are saved from a wrong match today only by a qualifier
+somebody happened to write into a name: `belem` is Belém in **Lisbon** and
+Natural Earth's only Belém is the one in Pará, four thousand kilometres away;
+`lajes` is in Terceira and Natural Earth's Lajes is Lages in Santa Catarina.
+Had either record been named plainly, an exact fold with one surviving
+candidate would have matched it. So a name match must also be within a degree
+of the point the record already gives, and nothing is ever matched *by* being
+near.
+
+What is left is thirteen records, and **none of it is an error**: a place with
+no Natural Earth city gets no city feature and M38 labels it from the record
+itself (brief §3). They are alvor, belem, boe, central-portugal, chai,
+flanders, lajes, near-villanueva-del-fresno, parque-das-nacoes,
+pedrogao-grande, recife, tete-district and tite. The document does not stop at
+"no candidate": for each it lists the cities within 2° of the record's own
+point, nearest first, as lines to paste into the file — Recife at 0.031°,
+Coimbra 0.117° from `central-portugal`, Angra do Heroísmo 0.168° from `lajes`
+— and **marks the trap**, which is that the nearest city to a record naming
+part of a city is the city it is part of: Lisbon is 0.059° from `belem` and
+0.073° from `parque-das-nacoes`, and Lisbon is already `lisbon`. One place is
+one city, the validator refuses the second entry, and such a record wants no
+entry at all.
+
+An entry a person writes there **survives**: `--places` keeps every entry the
+matcher did not itself produce and lists it at the end of the document
+(deviation 625). That is why it is a mode of its own and not part of an import
+run — a file that is authored cannot be regenerated nightly.
+
+### The budget: the whole of M36, layer by layer
+
+`--budget` prints this before anything is written, and every tolerance is
+whatever the cap forced. The cities have no tolerance — there is nothing along
+a point to take off — so their far level has a **floor** instead, the way the
+rivers' and the lakes' do, and it is in people.
+
+| layer | level | tolerance | bytes | cap | points kept | points dropped |
+|---|---|---|---|---|---|---|
+| coast | far (`land-present.json`) | 0.4° | 184.0 KB | 200 KB | 10,787 | 435,383 |
+| coast | near (24 cells) | 0.015° | 2,392.5 KB | 2,600 KB | 144,396 | 337,722 |
+| rivers | far | 0.4° | 196.5 KB | 200 KB | 5,650 | 250,736 |
+| rivers | near (19 cells) | 0.015° | 1,143.7 KB | 1,200 KB | 60,661 | 195,975 |
+| lakes | far | 0.15° | 134.8 KB | 150 KB | 4,694 | 158,158 |
+| lakes | near (20 cells) | 0.03° | 569.8 KB | 700 KB | 24,670 | 139,793 |
+| physical | far | 0.25° | 237.2 KB | 250 KB | 10,147 | 60,160 |
+| physical | near (23 cells) | 0.075° | 689.8 KB | 750 KB | 36,091 | 50,952 |
+| mountains | far | — | 68.1 KB | 100 KB | 711 | 0 |
+| mountains | near (24 cells) | — | 68.2 KB | 350 KB | 711 | 0 |
+| cities | far | — | 189.9 KB | 200 KB | 1,726 | 1,360 |
+| cities | near (20 cells) | — | 340.1 KB | 800 KB | 3,086 | 0 |
+
+**No layer hit its cap and nothing was sacrificed.** Decision 9's order of
+sacrifice — peaks, then rivers, then lakes, then the smaller cities, then the
+physical regions — was not reached at any point in the three sub-runs.
+
+The floors, all four of them, and what each one is:
+
+| layer | far-level floor | at the far level | at the near level |
+|---|---|---|---|
+| coast | 0.007 square degrees (~85 km²) | 1,471 polygons | 6,837, all of them |
+| rivers | 1.9 degrees of length | 978 | 1,455, all of them |
+| lakes | 0.05 square degrees | 434 | 1,355, all of them |
+| physical | none | 543 of 544 | 544 |
+| mountains | none | 711 | 711 |
+| cities | **250,000 people** | 1,726 | 3,086, all of them |
+
+**The cities' floor is 250,000 because that is the smallest step that fits**,
+which is the same reasoning the rivers' 1.9 is (and it is measured, not
+assumed): all 3,086 come to 340.0 KB against a 200 KB cap, 150,000 to 273.1,
+200,000 to 223.3, and 250,000 to 189.9, which fits with 10 KB to spare. Each
+step down is cities a reader would have seen at the world, so the smallest one
+wins. **A city a place record names is never under the floor**, whatever its
+population, which is what keeps Panaji at 65,586 in the world file — the rule
+the brief gives would mean very little if the world level then dropped the
+atlas's own places for being small. Nothing is floored in a cell.
+
+### What it weighs, and against what
+
+| layer | far level | cells | total |
+|---|---|---|---|
+| coast | (`land-present.json`, 188,446) | 2,449,884 in 24 | 2,449,884 |
+| rivers | 201,218 | 1,171,172 in 19 | 1,372,390 |
+| lakes | 138,012 | 583,508 in 20 | 721,520 |
+| physical | 242,858 | 706,306 in 23 | 949,164 |
+| mountains | 69,749 | 69,795 in 24 | 139,544 |
+| cities | 194,490 | 348,242 in 20 | 542,732 |
+| **`data/geo/base/`**, 135 files | | | **6,175,234** |
+
+**The base map is 6,175,234 bytes — 6,030.5 KB of its 8,192 KB ceiling**,
+leaving 2,161.5 KB unspent. **`data/geo/` is 11,478,981 bytes — 11,209.9 KB
+of its 24,576 KB**, and `du -sh data/geo` says **12M** (11M with
+`--apparent-size`; the byte count is 10.95 MiB and the difference is the block
+rounding). Both are printed by `--budget` before a byte is written and both
+are refused if crossing. `data/geo/` was 5.0 MB before M36a.
+
+The cities' cells in KB, laid out as the world is. Four cells hold no city at
+all — the Southern Ocean, and the southern Atlantic, Indian and Pacific:
+
+| | x0 | x1 | x2 | x3 | x4 | x5 |
+|---|---|---|---|---|---|---|
+| **y3** (45–90°N) | 1.2 | 1.9 | 4.7 | 40.4 | 5.8 | 3.7 |
+| **y2** (0–45°N) | 2.2 | 53.0 | 13.3 | 60.7 | 77.7 | 23.6 |
+| **y1** (45°S–0) | 0.1 | 10.0 | 17.1 | 14.9 | 5.7 | 3.7 |
+| **y0** (90–45°S) | — | 0.2 | — | — | — | 0.1 |
+
+**First paint, and no cell is in it.** `tests/spine-pages.test.mjs` still
+holds every page to asking for no `geo/base/` file at all before it draws.
+What grew is `manifest.json`, which names all 130 cells with their bytes so
+that M37 need never send a HEAD: 45,638 → **48,351**. So `index.html` fetches
+48,351 + the core 69,859 + the sources 33,681 + `land-present.json` 188,446 +
+`palette.json` 4,071 = **344,408 B (336.3 KB)**, against 341,695 after M36b
+and 256,497 before M36a. Decision 9's "first view under 1 MB" holds with two
+thirds to spare, and deviation 618's warning stands: the manifest is fetched
+`no-store` on every page load of every page, including the ones that never
+draw a map.
+
+### The manifest
+
+`manifest.schema` stays **8**: the `base` block gained a layer, not a shape,
+which is deviation 616's rule applied a second time. The block now reads:
+
+```json
+"base": {
+  "source": "natural-earth-10m",
+  "version": "v5.1.2",
+  "grid": { "lon": 60, "lat": 45, "columns": 6, "rows": 4 },
+  "layers": [
+    { "id": "coast", "geometry": "line", "world": null, "minZoom": 1, "cells": [ … 24 ] },
+    { "id": "rivers", "geometry": "line", "world": "geo/base/rivers-world.json", "minZoom": 1, "cells": [ … 19 ] },
+    { "id": "lakes", "geometry": "polygon", "world": "geo/base/lakes-world.json", "minZoom": 1, "cells": [ … 20 ] },
+    { "id": "physical", "geometry": "polygon", "world": "geo/base/physical-world.json", "minZoom": 1, "cells": [ … 23 ] },
+    { "id": "mountains", "geometry": "point", "world": "geo/base/mountains-world.json", "minZoom": 1, "cells": [ … 24 ] },
+    { "id": "cities", "geometry": "point", "world": "geo/base/cities-world.json", "minZoom": 1, "cells": [ … 20 ] }
+  ]
+}
+```
+
+Every cell in the manifest is a file on disk and every file on disk is in the
+manifest; a dataset with no `data/geo/base/` still gets no `base` key at all.
+
+### Deviations 622 to 630
+
+622. **The cities' far level has a floor of its own, and it is in people.**
+     The brief speaks of a tolerance and amendment A3 of stepping it, and a
+     point has neither. It is the same argument deviations 605 and 613 make
+     for the coastline, the rivers and the lakes — the bytes at the far level
+     are decided by the feature count — and the same arithmetic: 3,086 cities
+     are 340.0 KB against a 200 KB cap. The floor is **250,000**, the
+     smallest step that fits, measured and recorded above; 1,360 cities are
+     under it and every one of them is in its cell at the same detail. **A
+     city a place record names is never under it.**
+623. **`wikidata` is written on a city and on nothing else in the base map.**
+     Deviation 615 read it and wrote it nowhere, for four layers whose cap
+     decides how much coastline a reader gets. Amendment A6 names it on a
+     city, so the cities carry it: 3,067 of the 3,086 have one, it is what a
+     later run would re-match against, and the layer's own cap pays for it.
+     The peaks are byte for byte what M36b wrote, and the field list is on
+     the **layer's row** so that adding a field to one point layer cannot add
+     it to another.
+624. **`zl` comes from `LABELRANK`.** Amendment A4 says `z` and `zl` are one
+     unit and one table, and names `min_zoom`/`scalerank` as the source; the
+     populated places are the one file of the seven with **no `min_label`**,
+     which the survey says and a guess would have got wrong. So the label
+     zoom is Natural Earth's own label rank through the same table, clamped
+     never to precede the feature's own `z`, and absent on the one city that
+     has no rank.
+625. **`--places` is a mode of its own, and the mapping is authored rather
+     than generated.** The brief has M36c "write" the file. But the matcher
+     can prove two kinds of entry and no more, and the rest is for a person;
+     an import that rewrote the file on every run would delete that person's
+     work the next night. So `--places` writes it and the document, an
+     ordinary import run only reads it, and every entry the matcher did not
+     itself produce is kept and listed.
+626. **A name match must also be within a degree of the record's own point.**
+     The brief's guard is "exactly one candidate survives". On this corpus
+     that is not enough: `belem` and `lajes` are each one fold away from a
+     city on another continent, and only a qualifier somebody wrote into a
+     name stands between them today. The guard only ever **refuses** —
+     nothing is matched by being near — and everything it refuses is in the
+     document with the distance printed.
+627. **`docs/naturalearth-places.md` lists what is near a refused record, not
+     only what was ambiguous.** The brief asks for the unmatched and the
+     ambiguous. "No candidate" over a file of 7,342 cities leaves a person a
+     search; the three nearest cities within 2°, each as a line to paste, is
+     the same refusal made useful. They are marked where the city already
+     belongs to another record, which is the `belem`/Lisbon trap.
+628. **The missing-source warning does not fire for `import-places`.** The
+     warning on a file under `data/imports/` says the import writes its
+     source record and so this is expected only before it has run. The base
+     map's import writes **no record of any kind**, by its own brief, and
+     Natural Earth is credited in `data/geo/LICENSE` and `src/licensing.js`.
+     A warning that can never be cleared is worse than none, so the check
+     names the three kinds that do cite a source record.
+629. **`ARCHITECTURE.md` names the mapping in its tree, not in `### Reserved
+     ○`.** The brief says "in ARCHITECTURE.md's reserved list". The reserved
+     section is for things with no folder, no schema and no code; this file
+     has all three. So it is a ● line in the directory tree beside the other
+     three `data/imports/` files, plus three rows under Extension points — a
+     seventh base-map layer, a fourth kind of file under `data/imports/`, and
+     the mapping itself.
+630. **`manifest.schema` stays 8**, for the reason deviation 616 gives: the
+     `base` block gained a layer and not a shape. `src/data.js`'s
+     `assertGeneration` and every fixture manifest are untouched.
+
+### What M36c did not do, and what waits on the owner
+
+Not one file under `src/` changed in this run either — `map.js`,
+`layers/*.js`, `main.js`, `state.js`, `index.html` and `style.css` are as
+M36a left them, no hex value and no size was added, and the presences, the
+palette and `regions.json` were not opened. The only files written under
+`data/` are the cities, `data/imports/naturalearth-places.json` and the
+regenerated index; `data/geo/land-present.json` and the five layers M36a and
+M36b wrote are byte for byte what they were, and a second run of the import
+rewrites all 136 files byte for byte.
+
+**What waits on the owner from this run**, beside the two from M36a and M36b
+above:
+
+- **Thirteen place records have no Natural Earth city**, and
+  `docs/naturalearth-places.md` is written for whoever resolves them. Nothing
+  is urgent: an unresolved record costs a link between a dot and a record and
+  never a wrong label. The document lists what is near each — the nearest to
+  `recife` is Natural Earth's Recife at 0.031°, to `tete-district` Tete at
+  0.222°, to `tite` Catió at 0.175°, to `boe` Gabú at 0.531° — and **the run
+  says only how far apart they are**. Whether the record and the city are the
+  same place is a judgement about Portuguese expansion and not one this tool
+  may make: several of the thirteen are parishes, districts and battlefields
+  that a world gazetteer does not hold at all, and for those the right answer
+  is no entry.
+- **Two place records carry a `wikidata` that is not their city's**: `braga`
+  says `Q3344946` where the city says `Q83247`, and `washington` says
+  `Q1018557` where the city says `Q61`. Both are matched, on the name and on
+  a point that agrees; what is wrong is one id in each pair, and which one is
+  a question about the record.
+- **The cities' far level is 189.9 KB of its 200 KB cap**, which is the
+  tightest any layer sits. Ten kilobytes is about eighty more cities: if the
+  atlas comes to name many more small places, the floor or the cap moves, and
+  both are one constant. The tool stops loudly rather than trimming.
+
+**The sandbox ran the browser tests again.** Chromium is present in this
+container, so all 1,355 tests ran and **none skipped**.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
