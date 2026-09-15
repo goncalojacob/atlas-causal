@@ -4,8 +4,32 @@ What the Atlas causal is meant to become, structurally. `CLAUDE.md` has the
 rules, `CONTEXT.md` the reasoning, `STATUS.md` where we are right now. This
 file is the target: the shape every milestone builds toward.
 
-Revision 24, 15 September 2026. Sections marked ● exist in v1; things marked ○
+Revision 25, 15 September 2026. Sections marked ● exist in v1; things marked ○
 are reserved by a line in this file only — no folder, no schema, no code.
+
+**What revision 25 changed, and why.** The map has names. No new data, no new
+record and no new field: M38 reads what M30a and M36 already wrote.
+
+*One label placer, and there is never a second* ●. `src/map/labels.js` —
+pure, no DOM, no layer, no state. `placeLabels(candidates, { k, view,
+limits })` orders by priority (0 events, 1 cities, 2 rivers, lakes, regions
+and peaks), then weight, then id, and **skips** a label whose box hits one
+already placed rather than nudging it away from the thing it names. The
+limits are per priority, so a hundred cities can never crowd out an event.
+`src/map/map.js` asks every layer for candidates, calls it once and draws the
+result into one `<g class="layer layer-labels">` over everything else: two
+layers each placing their own would have been the two placers finding 27 of
+the plan's review warned about. No label is a control — no `data-id`, no
+`tabindex`, no pointer.
+
+*`historicalNames` has a reader* ●. `src/map/names.js` is what a thing on the
+map is called and in what year, and it is the first thing to read the field
+the place record has carried since M30a; see **Place** below for the rule and
+for why nothing on the real map is dated yet. It also carries the atlas's own
+places — the thirteen of twenty-six Natural Earth has no city for, which are
+parishes, districts and battlefields — labelled from the record's own point
+and name, and weighted above any population: this is a map of what happened
+in these places.
 
 **What revision 24 changed, and why.** What revision 23 put on disk is now on
 screen. No new data, no new record, no new field: M37 is the drawing and the
@@ -1334,8 +1358,18 @@ what search uses. **`historicalNames` is the dated sibling of that list** and
 never a replacement for it (plan decision 6): `names` stays a list of strings
 because search, rule 18, the topology and the translation overlay all depend
 on that shape, and what a place was called when goes here, `to: null` meaning
-still current. Nothing reads it yet — the base map's label layer will, so that
-a city is labelled by the year on the slider. `region` is an override, as on an event, and this is where
+still current. **The base map's labels read it** (M38b): the face of a city
+carries the name its place record gives for the far end of the band — `from`
+counts, `to` does not, so two intervals that touch never both match — and its
+`<title>` carries every one with the years of each. Nothing is derived and
+nothing is inferred: a window whose far end falls in no interval gets the
+modern name, and no city is given a former name because the year suggests one.
+The place card draws the same list as prose (`src/panel/place.js`). **No place
+record carries one today** — 0 of 26 — so nothing on the real map is dated
+yet; and `historicalNames` is not one of the spine's columns, so a record that
+gains one reaches the label layer only once it reaches the topology, which is
+a column and an index rebuild and not a line of the map's.
+`region` is an override, as on an event, and this is where
 it belongs when a whole place is outside every lane polygon — the Azores at
 110m. **A place cites nothing**: where a town is is a geographic fact rather
 than a historiographical argument, so rule 6 exempts it as it does `source`
@@ -2494,6 +2528,8 @@ least 40 pixels; a link inside a sentence keeps the line it is set in.
 | `search.js` + `search-box.js` | Folds and ranks event titles and every one of an actor's names — prefix, then word start, then substring — and draws the result as a combobox. | Anything about the map or the timeline; choosing is a state change. |
 | `map/layers/*` | One layer per thing drawn, in a fixed order: coastlines, then territories, then marks, so an event sits on top of the state it happened in. Renders only records in the visible window. A stack of marks is drawn as one, with a count, and opened by a click. | Each other. |
 | `map/layers/base.js` | The base map: one module for the six layers `manifest.base` names — the near coastline, the rivers, the lakes, the physical regions, the peaks and the cities — because they differ in a class name and a geometry type and nothing else. Draws the far file above the layer's `minZoom` and the viewport's cells from `NEAR_ZOOM`, dropping a far feature whose ground a cell in hand covers; each feature at its own `z` and no closer. A signature of what is on, the zoom's bucket and the files in hand keeps a pan from rebuilding the world; path strings are cached by projection, file and tolerance. A file that will not load is dropped without a word. Nothing it draws takes a pointer or is in the tab order. | Which layers exist, what they are called, what colour they are, or when they appear — all of that is the manifest's and the stylesheet's. |
+| `map/labels.js` | The one label placer, and there is never a second: pure, no DOM, no layer, no state. `placeLabels(candidates, { k, view, limits })` drops what is out of view, orders by priority (0 events, 1 cities, 2 physical features), then weight, then id, and skips a label whose box hits one already placed — never nudged, because a name pushed far enough points at its neighbour. Limits are per priority; a `once` key says a name is written once however many segments a river arrives in. Holds the type size, the halo and the box arithmetic and no other number. | Where a candidate came from, what it is called, or what class it will be drawn with. |
+| `map/names.js` | What a thing on the map is called and in what year: the face takes the dated name a place record gives for the far end of the band and the modern name otherwise, the `<title>` takes every name with the years of each. Also the atlas's own places, the ones Natural Earth has no city for, labelled from the record itself and weighted above any population. Pure, and invents nothing: a former name is only ever one a person wrote. | The DOM, the zoom, and which record a city is — the import writes that onto the feature. |
 | `layer-control.js` | The layer control, which is the map's only legend: `territories` and `events` as rows, then a collapsed `base map` group with one checkbox and one swatch per switchable base layer, then the collapsed `events by category` group with one row and one glyph per category in use. Built rather than written into `index.html` because every label and id comes from `data/` and is escaped. Reads and writes the whole `LAYERS` order, so the default writes no link at all. | What a layer draws, and what a category filter removes — that is `emphasis.js`'s one removal. |
 | `map/layers/presences.js` | The territories of the window's far end, drawn as two elements each: the outline, filled and clicked, and over it a stroke along the shard's own inland borders and nowhere else, so the coast on the picture is Natural Earth's alone (M39b). A thin line for a state, a lighter one over a stronger wash for a dependency, dashed when disputed. Hover names it and its sovereign; click selects the actor. No colour per polity — two hundred of them share one palette. | Which shard the year is in, or how one is fetched. |
 | `graph-view/layout.js` | Events, edges, the lanes and the data's extent → the coordinates of every node and every edge, plus the bands. x is the year on the whole extent; y is a barycentre pass inside the band of the lane, or over the whole field when there are no lanes. Deterministic — ties by id then weight, neighbour lists sorted — and self-checking: it counts crossings and keeps the best arrangement it saw, the plain order included. `stackLayout` is the second half: those coordinates and a zoom in, the marks and lines actually drawn out, merged within a band and never across one. | The DOM, the state, what is selected, what is in the window, why an id may not be stacked. |
