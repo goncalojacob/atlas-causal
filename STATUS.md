@@ -33,7 +33,7 @@ M47 did not fix because it was told not to touch what the views draw.
 `node tools/validate.mjs --index`: **2,266 records, 0 errors**, 1,068
 warnings. `node --test --test-timeout=120000`: **1,445 tests, 0 skipped, 0
 failed**. The account is `## M47: the ten relations the corpus already held,
-and the field with no writer` below, with deviations 712 to 716.
+and the field with no writer` below, with deviations 712 to 717.
 
 Before it, M43b (on `m0`): **the timeline's scale is bucketed by
 century past a density threshold, and the atlas opens on the century that holds
@@ -7809,7 +7809,7 @@ warnings** — the five new ones and nothing else moved; no relation produced a
 `child-outside-parent` warning, which is the same test the rule applies.
 `node --test --test-timeout=120000`: **1,445 tests, 0 skipped, 0 failed** —
 the browser tests ran here, and four of them had to be taught what a corpus
-with parents in it looks like. Deviations 712 to 716.
+with parents in it looks like. Deviations 712 to 717.
 
 712. **`parent` is a display fact, so a relation was written where the corpus
      already implied it and nowhere else, and the rule was frozen before the
@@ -7857,6 +7857,16 @@ with parents in it looks like. Deviations 712 to 716.
      — a state change touches a bar and its labels and does not rebuild the
      drawing — is unchanged, and `Math.abs(after - before) < 10` still holds
      at one.
+717. **The branch was red for sixteen minutes and three commits, because the
+     data was pushed before the tests it broke.** Run 685 on `51986c6d`
+     failed: the three data commits went up one family at a time, as the brief
+     asks, and the four browser assertions of deviations 714 and 716 were only
+     put right in the commit after them. Locally the full suite was run once,
+     after the data was written, which is where the failures were seen. **The
+     order to have used is the one deviation 711 arrived at for the index**:
+     when a commit changes what the pictures draw, the commit that teaches the
+     tests belongs with it or before it, not after. Run 689 on the head is
+     green.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
