@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--treaty-of-san-francisco--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of San Francisco\", revision 1374408216"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "treaty-of-san-francisco",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "This is the peace that ended the war’s Pacific half, six years late and on terms the intervening years had changed. Signed by forty-nine states on 8 September 1951, it ended the occupation, took no reparations worth the name, left the territorial questions of the Kuriles and of Taiwan unsettled, and was signed the same day as the security treaty that made Japan an American base. Neither China was a party. The claim is the plain one that the treaty is the settlement of the war; what it argues is that the settlement was made under conditions the war had not produced and the Cold War had.",
+  "dispute": null
+}

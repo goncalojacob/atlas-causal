@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Convention Relating to the Status of Refugees\", revision 1371612673"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The convention of 28 July 1951 was written for the displaced of that war and said so: as adopted it applied only to people who had become refugees as a result of events occurring before 1 January 1951, and the geographical reservation let a state limit it to Europe. The definition, the prohibition on refoulement and the machinery of status all come out of the eight or nine million people the war had left where they did not belong. The claim is about the origin of the instrument; the protocol of 1967 that removed the dateline is not in this atlas and is what turned it into a general one.",
+  "dispute": null
+}

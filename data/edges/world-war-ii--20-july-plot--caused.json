@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--20-july-plot--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"20 July plot\", revision 1374938720"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "20-july-plot",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The plot of July 1944 was made by officers who had concluded that the war was lost and that a government able to negotiate had to exist before the Allies arrived. The German resistance had been trying to kill Hitler since 1938 and had failed or been overtaken every time; what changed in 1944 was Stalingrad behind them, Normandy in front, and the closing of the window in which anything could still be traded. The claim is about the moment and the urgency the war supplied, not about the motives of the conspirators, which were various and partly older than the war.",
+  "dispute": null
+}

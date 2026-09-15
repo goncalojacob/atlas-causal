@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--winter-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Winter War\", revision 1373170950"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "winter-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Finland fought alone because the war had already begun elsewhere. The sympathy of Britain and France was large and their expeditionary plan came to nothing, partly because it depended on crossing Norway and Sweden and partly because both were fighting Germany and would not add the Soviet Union to the list; the League expelled Moscow and could do nothing else. This edge and the one from the Molotov-Ribbentrop pact say different things: the pact is why the Soviet Union could move, the war is why nobody came.",
+  "dispute": null
+}
