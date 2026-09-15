@@ -29,3 +29,20 @@ Reinstated by `universities-of-lisbon-and-porto-1911`, which names it in
 > of the decree, and an actor cannot be joined to an event nobody has written.
 
 The atlas now has the record of the decree.
+
+### `national-syndicalists`
+
+Reinstated by `national-syndicalists-banned-1934`, which names it in `actors`
+with the role `target`. Its M41b retraction read, verbatim:
+
+> Retracted in M41b: the National Syndicalist Movement, founded in February
+> 1932 by Francisco Rolão Preto, the nearest thing to a fascist movement
+> Portugal produced and suppressed by the Estado Novo in 1934. The atlas holds
+> the regime it was absorbed and banned by, and holds nothing about the
+> suppression itself: not the ban, not the exile of Rolão Preto, not the revolt
+> of 1935, and no record of the man. It would need one of those, and it is the
+> retraction here most worth undoing.
+
+The atlas now has the first of the three. The exile of Rolão Preto, the revolt
+of 1935 and a record of the man are still missing, and M41b was right that this
+was the retraction most worth undoing.

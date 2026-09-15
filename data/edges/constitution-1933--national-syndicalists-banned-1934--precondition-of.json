@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "constitution-1933--national-syndicalists-banned-1934--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "from": "constitution-1933",
+  "to": "national-syndicalists-banned-1934",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Once the regime had its own constitution, its own single party and its own corporative machinery, a rival movement offering the same things in a more excited form was a competitor rather than an ally, and the blue shirts had spent 1933 saying so out loud. The claim is about what the constitution made the National Syndicalists into, not that the constitution required their suppression in that particular year: the immediate occasion was the movement’s own agitation, and the sequence of 1934 and the revolt of 1935 are not records here. Marked probable, and the argument to check is whether the ban is better read as an act of the corporative settlement of 1933 or as an ordinary act of a police state against a movement it could not control.",
+  "dispute": null
+}
