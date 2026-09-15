@@ -31,7 +31,7 @@ none of them is an error.
 `data/geo/base/` is **6,030.5 KB of its 8 MB ceiling** and `data/geo/` is
 **11,209.9 KB of its 24 MB** — `du -sh data/geo` says 12M. No layer hit its
 cap in any of the three sub-runs and nothing was sacrificed. The full budget
-table, the four floors, the matching and deviations 622 to 630 are in
+table, the four floors, the matching and deviations 622 to 631 are in
 **`## M36c: the cities, and which of them this atlas has a record for`**,
 below; `ARCHITECTURE.md` is revision 23 and has the base map in prose for the
 first time.
@@ -5666,6 +5666,20 @@ manifest; a dataset with no `data/geo/base/` still gets no `base` key at all.
 630. **`manifest.schema` stays 8**, for the reason deviation 616 gives: the
      `base` block gained a layer and not a shape. `src/data.js`'s
      `assertGeneration` and every fixture manifest are untouched.
+631. **M36c's section is a comment on pull request #1 and not an edit to its
+     description.** The run protocol asks for the milestone's section on the
+     pull request, and every run before this one put it in the body. That
+     body is now **185 KB**, and the only way to change it through the tools
+     a scheduled run has is to send it back whole — which means reproducing
+     185 KB of somebody else's tables and links from a file this run would
+     have to read in full first, with every chance of corrupting the record
+     it already holds. A comment says the same thing and destroys nothing:
+     <https://github.com/goncalojacob/atlas-causal/pull/1#issuecomment-5674305581>.
+     **This is the owner's to decide**, and it is not only M36c's problem:
+     the body will keep growing by a section a milestone. Moving the account
+     out of the description — one comment per milestone, or a file in `docs/`
+     that the description links to — would make it something a run can add to
+     again.
 
 ### What M36c did not do, and what waits on the owner
 
