@@ -47,7 +47,17 @@ const MAX_ZOOM = DEEPEST_ZOOM;
 // que se está a ver, e abaixo dela pedir uma célula seria pedir ficheiros para
 // um mundo inteiro que ainda cabe numa imagem. Não é um esquema de mosaicos:
 // que célula se pede é a caixa no ecrã que decide, nunca o zoom (grid.js).
-const NEAR_ZOOM = 4;
+// How much longitude may be on screen before the base map asks for cells: two
+// cells wide, the grid's own unit (a cell is 60 degrees, `GRID.lon`). Said as
+// a span and not as a zoom because `k` is a scale and the pane is whatever
+// shape the reader's window is — at k = 4 a nominal pane shows about 90
+// degrees and a wide, short one shows 218, which asked for ten of the
+// twenty-four cells and 4.4 MB (deviation 633). Two cells because the far file
+// is the whole world simplified: it stops being good enough for what is on
+// screen at about the width of the cells that would replace it. At 110 degrees
+// — Iberia on a laptop — the cells are asked for as they were before; at 218
+// they are not.
+const NEAR_SPAN = 120;
 // A cluster whose members are simply too close to place cannot say where it
 // would come apart; it gets a plain step in instead.
 const CLUSTER_ZOOM_STEP = 3;
@@ -231,7 +241,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
         minZoom: layer.minZoom,
         world: layer.world,
         cells: layer.cells ?? [],
-        nearZoom: NEAR_ZOOM,
+        nearSpan: NEAR_SPAN,
         load: (file) => atlas.loadBase(file),
         loaded: (file) => atlas.loadedBase(file),
         onReady: () => baseArrived(),

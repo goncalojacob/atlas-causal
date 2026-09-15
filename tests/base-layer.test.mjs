@@ -68,6 +68,13 @@ const polygonFeature = (id, z, ring) => ({
 // x2y2 is [-60, 0, 60 wide, 45 tall] — the cell Portugal is in — and the boxes
 // below are inside it, so `cellsFor` names that cell and no other.
 const CELL_BOX = [-50, 5, -40, 15];
+// A view wider than the near span (`NEAR_SPAN`, two cells), for the tests that
+// mean "the far file and no cells". The gate is the span and no longer the
+// zoom (deviation 633), and a box and a `k` are coupled in the running map by
+// the size of the pane: ten degrees of longitude on screen *is* a deep zoom.
+// A test that pairs a one-cell box with k = 1 is describing a pane that cannot
+// exist, so these say what they mean with the box instead.
+const WIDE_BOX = [-180, -60, 120, 60];
 const RIVERS = {
   'geo/base/rivers-world.json': {
     type: 'FeatureCollection',
@@ -88,7 +95,7 @@ const riversLayer = (group, io, extra = {}) => createBaseLayer(group, projection
   minZoom: 4,
   world: 'geo/base/rivers-world.json',
   cells: [{ key: 'x2y2', file: 'geo/base/rivers/x2y2.json', bytes: 1 }],
-  nearZoom: 8,
+  nearSpan: 120,
   load: io.load,
   loaded: io.loaded,
   ...extra,
@@ -112,14 +119,14 @@ test('above it the far file is asked for once and drawn when it lands', async ()
   const io = loader(RIVERS);
   const layer = riversLayer(group, io);
 
-  layer.render({ k: 4, view: CELL_BOX });
-  layer.render({ k: 4, view: CELL_BOX });
+  layer.render({ k: 4, view: WIDE_BOX });
+  layer.render({ k: 4, view: WIDE_BOX });
   await settle();
   assert.deepEqual(io.asked, ['geo/base/rivers-world.json'], 'asked once, not once per render');
   // Nothing was cleared while it was on its way, and nothing was drawn either.
   assert.equal(group.childNodes.length, 0);
 
-  const result = layer.render({ k: 4, view: CELL_BOX });
+  const result = layer.render({ k: 4, view: WIDE_BOX });
   // The far file holds two rivers and one of them is a `z` of 12: at k = 4 the
   // data itself says it is not worth drawing yet.
   assert.equal(group.childNodes.length, 1, 'the river the zoom is worth');
@@ -133,11 +140,11 @@ test('a feature whose z is above k is drawn when k reaches it, and not before', 
   const group = fakeElement('g');
   const io = loader(RIVERS);
   const layer = riversLayer(group, io);
-  layer.render({ k: 4, view: CELL_BOX });
+  layer.render({ k: 4, view: WIDE_BOX });
   await settle();
-  layer.render({ k: 4, view: CELL_BOX });
+  layer.render({ k: 4, view: WIDE_BOX });
   assert.equal(group.childNodes.length, 1);
-  layer.render({ k: 12, view: CELL_BOX });
+  layer.render({ k: 12, view: WIDE_BOX });
   assert.equal(group.childNodes.length, 2, 'the z = 12 river is in at k = 12');
 });
 
@@ -145,9 +152,9 @@ test('an equal signature rebuilds nothing: the same nodes come back', async () =
   const group = fakeElement('g');
   const io = loader(RIVERS);
   const layer = riversLayer(group, io);
-  layer.render({ k: 4, view: CELL_BOX });
+  layer.render({ k: 4, view: WIDE_BOX });
   await settle();
-  layer.render({ k: 4, view: CELL_BOX });
+  layer.render({ k: 4, view: WIDE_BOX });
   const first = group.childNodes[0];
   assert.ok(first);
   // A pan inside the same cell at the same bucket: the box moves and nothing
@@ -161,17 +168,17 @@ test('a rejected fetch is not remembered and the next render asks again', async 
   const group = fakeElement('g');
   const io = loader(RIVERS, { fail: new Set(['geo/base/rivers-world.json']) });
   const layer = riversLayer(group, io);
-  layer.render({ k: 4, view: CELL_BOX });
+  layer.render({ k: 4, view: WIDE_BOX });
   await settle();
   assert.equal(io.asked.length, 1);
-  layer.render({ k: 4, view: CELL_BOX });
+  layer.render({ k: 4, view: WIDE_BOX });
   await settle();
   assert.equal(io.asked.length, 2, 'asked again');
   // And nothing was said about it: a missing river is absent, not wrong.
   assert.equal(group.childNodes.length, 0);
 });
 
-test('from nearZoom the cells of the view are asked for, and the far file is dropped where they cover', async () => {
+test('inside the near span the cells of the view are asked for, and the far file is dropped where they cover', async () => {
   const group = fakeElement('g');
   const io = loader(RIVERS);
   const layer = riversLayer(group, io);
@@ -198,7 +205,7 @@ test('a point layer draws circles and a polygon layer draws paths', async () => 
   const io = loader(points);
   const cities = createBaseLayer(group, projection, {
     id: 'cities', geometry: 'point', minZoom: 1, world: 'geo/base/cities-world.json', cells: [],
-    nearZoom: 8, load: io.load, loaded: io.loaded,
+    nearSpan: 120, load: io.load, loaded: io.loaded,
   });
   cities.render({ k: 1, view: CELL_BOX });
   await settle();
@@ -225,7 +232,7 @@ test('a point layer draws circles and a polygon layer draws paths', async () => 
   const lakeIo = loader(lakes);
   const layer = createBaseLayer(lakeGroup, projection, {
     id: 'lakes', geometry: 'polygon', minZoom: 1, world: 'geo/base/lakes-world.json', cells: [],
-    nearZoom: 8, load: lakeIo.load, loaded: lakeIo.loaded,
+    nearSpan: 120, load: lakeIo.load, loaded: lakeIo.loaded,
   });
   layer.render({ k: 1, view: CELL_BOX });
   await settle();
@@ -254,7 +261,7 @@ test('a feature that arrives in more than one cell is drawn once, by its id', as
       { key: 'x2y2', file: 'geo/base/lakes/x2y2.json', bytes: 1 },
       { key: 'x3y2', file: 'geo/base/lakes/x3y2.json', bytes: 1 },
     ],
-    nearZoom: 8,
+    nearSpan: 120,
     load: io.load,
     loaded: io.loaded,
   });
@@ -272,7 +279,7 @@ test('a layer with no cells and no world file draws nothing and throws nothing',
   const io = loader({});
   const layer = createBaseLayer(group, projection, {
     id: 'rivers', geometry: 'line', minZoom: 1, world: null, cells: [],
-    nearZoom: 8, load: io.load, loaded: io.loaded,
+    nearSpan: 120, load: io.load, loaded: io.loaded,
   });
   const result = layer.render({ k: 8, view: CELL_BOX });
   await settle();

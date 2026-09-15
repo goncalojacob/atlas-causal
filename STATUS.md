@@ -6490,6 +6490,23 @@ files in hand and not the dots drawn (deviation 664).
      record to make a map read better. **The owner's**: either those records
      want a shorter `names[0]` or the map wants a different field, and both are
      a person's decision rather than a label layer's.
+684. **`NEAR_ZOOM` is gone and the near threshold is a span: `NEAR_SPAN`, two
+     cells wide.** Deviation 633 recorded that `k = 4` in a wide, short pane
+     puts 218 degrees on screen and asked for ten of the twenty-four cells and
+     4.4 MB, and left the choice to the owner; the owner chose the span. `k` is
+     a scale and the pane is whatever shape the window is, so the zoom was only
+     ever a proxy for how much ground is in view — `spanOf(view)` is the
+     quantity itself, wrap included, and it is in `grid.js` beside `cellsFor`
+     because it is grid arithmetic and testable without a browser. Two cells
+     (120 degrees) because the far file is the whole world simplified and stops
+     being good enough at about the width of the cells that would replace it:
+     Iberia at 110 degrees asks for its cells exactly as before, the 218-degree
+     pane no longer does. **Numbered 684 and not 669** because `m44` has
+     already used 669 to 683 and the two branches have to merge.
+     `tests/base-layer.test.mjs` gained a `WIDE_BOX`: four of its tests paired a
+     one-cell box with `k = 1`, which is a pane that cannot exist now that the
+     box is what decides, and they say what they mean with the box instead.
+     Whole suite 1,421 tests, all passing, run serially.
 
 ### What M38b did not do
 

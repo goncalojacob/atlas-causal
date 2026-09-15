@@ -110,6 +110,19 @@ export function cellsFor(box) {
   return keys.sort();
 }
 
+// How much longitude a box puts on screen, wrap included. The near threshold
+// is a span and not a zoom (deviation 633): `k` is a scale and the pane is
+// whatever shape the reader's window is, so at k = 4 a nominal pane shows
+// about 90 degrees and a wide, short one — a laptop with the timeline open —
+// shows 218, which asked for ten of the twenty-four cells and 4.4 MB. The
+// span is the quantity that actually decides how much ground is in view, and
+// the zoom was only ever a proxy for it.
+export function spanOf(box) {
+  const [west, , east] = box;
+  const span = east - west;
+  return span >= 0 ? span : span + 360;
+}
+
 // Every cell of the grid, in key order: what `cellsFor(WORLD)` comes to, and
 // what an import walks when it asks each cell what it holds.
 export function allCells() {

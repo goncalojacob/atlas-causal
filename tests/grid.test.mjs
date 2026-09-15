@@ -8,8 +8,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import {
-  GRID, WORLD, allCells, cellBounds, cellKey, cellOf, cellsFor, parseCellKey,
-} from '../src/map/grid.js';
+  GRID, WORLD, allCells, cellBounds, cellKey, cellOf, cellsFor, parseCellKey, spanOf } from '../src/map/grid.js';
 import { worldProjection, viewBboxIn } from '../src/map/projection.js';
 
 // Deterministic, so a failure is reproducible: the same thousand points every
@@ -172,4 +171,16 @@ test('a view across the seam is the two columns either side of it, not the rest 
     assert.ok(keys.includes('x5y2') && keys.includes('x0y2'), 'both sides of ±180');
     assert.ok(!keys.includes('x2y2'), 'and nothing on the far side of the world');
   }
+});
+
+test('the span of a box is the longitude on screen, wrap included', () => {
+  // The near threshold is a span and not a zoom (deviation 633), so this is
+  // the quantity the base map decides on and it has to be right at the seam.
+  assert.equal(spanOf([-180, -90, 180, 90]), 360);
+  assert.equal(spanOf([-10, 35, 5, 45]), 15);
+  assert.equal(spanOf([0, 0, 90, 10]), 90);
+  // A box whose west is east of its east has wrapped the antimeridian: from
+  // 170°E to 170°W is twenty degrees of ocean, not three hundred and forty.
+  assert.equal(spanOf([170, -10, -170, 10]), 20);
+  assert.equal(spanOf([150, -10, -150, 10]), 60);
 });

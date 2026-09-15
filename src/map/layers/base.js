@@ -35,7 +35,7 @@ import { simplifyGeometry, simplifyLine } from '../../util/simplify.js';
 // pergunta sobre o mapa e não uma por camada, e duas escadas divergiriam.
 // Importada de onde já estava exportada, não mudada de casa (emenda A0).
 import { detailFor } from './presences.js';
-import { cellsFor } from '../grid.js';
+import { cellsFor, spanOf } from '../grid.js';
 // O corte de um nome comprido é o mesmo para todas as etiquetas do mapa, e
 // vive com o colocador (labels.js).
 import { shorten } from '../labels.js';
@@ -238,7 +238,7 @@ export function bboxOf(feature) {
 }
 
 export function createBaseLayer(group, projection, {
-  id, geometry, minZoom = 1, world = null, cells = [], nearZoom = Infinity,
+  id, geometry, minZoom = 1, world = null, cells = [], nearSpan = 0,
   load, loaded, onReady = null, defer = (fn) => fn(),
 }) {
   const fileOf = new Map(cells.map((cell) => [cell.key, cell.file]));
@@ -422,10 +422,11 @@ export function createBaseLayer(group, projection, {
       const far = world ? loaded(world) : null;
       if (world && !far) ask(world);
 
-      // As células da caixa no ecrã, a partir de `nearZoom` e não antes. Uma
-      // célula que o manifesto não nomeia não tem nada desta camada lá dentro:
-      // não há o que pedir nem o que esperar, e conta como estando em mão.
-      const wanted = k >= nearZoom && view ? cellsFor(view) : [];
+      // The cells of the box on screen, once the box is small enough and not
+      // before. A cell the manifest does not name holds nothing of this layer:
+      // there is nothing to ask for and nothing to wait for, and it counts as
+      // being in hand.
+      const wanted = view && spanOf(view) <= nearSpan ? cellsFor(view) : [];
       const held = [];
       const covered = new Set();
       for (const key of wanted) {
