@@ -584,18 +584,28 @@ export function createMap(container, { atlas, state, onCluster = null }) {
 
   // --- o mapa de base, desenhado --------------------------------------------
   //
-  // Todas as camadas ligadas: o controlo que as desliga é de M37b, e até lá
-  // `?layers=` não conhece nenhum destes nomes — que é precisamente o que já
-  // quer dizer para um nome que não conhece.
+  // Uma camada está ligada quando a lista `?layers=` a nomeia — são cinco dos
+  // oito nomes de `LAYERS` (state.js) e são as cinco fichas do controlo. A
+  // costa é a excepção e está sempre ligada: não é membro de `LAYERS`, não tem
+  // ficha e é o chão em que tudo o resto é lido (decisão 14 do plano, desvio
+  // 523). Uma camada desligada não desenha nada e não pede nada — a regra é de
+  // `layers/base.js` e é a mesma que os territórios já seguem.
+  //
+  // O que estiver ligado é lido do estado a cada desenho, e não guardado aqui:
+  // um ficheiro que aterra redesenha o mapa de base sozinho (desvio 637) e tem
+  // de o fazer com as camadas que o leitor tem ligadas nesse momento.
   //
   // A caixa em graus e não a caixa projectada: é ela que diz que células pedir,
   // e é a mesma que o mapa publica no URL (projection.js).
   function drawBase() {
     if (baseLayers.length === 0) return;
     const degrees = viewBboxIn(projection, transform, visibleBox());
+    const on = state.get().layers;
     let nearCoast = false;
     for (const { id, layer } of baseLayers) {
-      const result = layer.render({ k: transform.k, view: degrees, on: true });
+      const result = layer.render({
+        k: transform.k, view: degrees, on: id === 'coast' || on.includes(id),
+      });
       if (id === 'coast') nearCoast = result.complete;
     }
     // A costa de longe fica com o seu enchimento — é ele que faz a terra ser

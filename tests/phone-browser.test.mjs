@@ -246,7 +246,10 @@ test('the category toggles are one collapsed target in the drawer, and open into
     await page.eval('document.getElementById("options-button").click(); return true;');
 
     const shut = await page.eval(`
-      const details = document.querySelector('.bar .layers details');
+      // The categories' group by its own anchor, not by position: since M37b
+      // the base map's group is the first <details> in the control, and this
+      // test is about the second (layer-control.js).
+      const details = document.querySelector('.bar .layers #events-by-category').closest('details');
       const summary = details.querySelector('summary');
       return {
         there: Boolean(details),
@@ -265,7 +268,7 @@ test('the category toggles are one collapsed target in the drawer, and open into
     assert.equal(shut.group, shut.height, 'the whole group is that one row while it is shut');
 
     const open_ = await page.eval(`
-      const details = document.querySelector('.bar .layers details');
+      const details = document.querySelector('.bar .layers #events-by-category').closest('details');
       details.open = true;
       const rows = [...details.querySelectorAll('label')];
       return {
@@ -280,5 +283,87 @@ test('the category toggles are one collapsed target in the drawer, and open into
     assert.deepEqual(open_.hrefs, ['#glyph-disaster', '#glyph-treaty', '#glyph-war']);
     assert.ok(open_.shortest >= 40, `every row is a hit target, shortest ${open_.shortest}`);
     assert.equal(open_.onScreen, true, 'and the panel is inside the screen, not floating off it');
+  });
+});
+
+// M37b, and the whole reason the base layers are behind a `<details>` of their
+// own: the control is nineteen controls now, and a drawer nineteen rows long is
+// a drawer nobody scrolls to the bottom of. Two rows and two summaries — four
+// targets — and the rows are there when the reader asks for them.
+test('the layer control is four targets in the drawer, and base map opens into five', { skip }, async () => {
+  await phone(async (page, url) => {
+    await open(page, url('?fixtures=1'), 'return Boolean(document.querySelector(".map .mark"));');
+    await page.eval('document.getElementById("options-button").click(); return true;');
+
+    const shut = await page.eval(`
+      const control = document.querySelector('.bar .layers');
+      const touch = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--touch'));
+      // What the drawer actually offers a thumb while everything is shut: the
+      // plain rows and the summaries, in the order they are in.
+      const targets = [...control.children].map((el) => el.tagName === 'DETAILS'
+        ? { label: el.querySelector('summary').textContent.trim(), el: el.querySelector('summary') }
+        : { label: el.querySelector('input').dataset.layer, el });
+      return {
+        touch,
+        labels: targets.map((t) => t.label),
+        shortest: Math.min(...targets.map((t) => Math.round(t.el.getBoundingClientRect().height))),
+        // Nothing of either group is in the drawer's flow while it is shut.
+        open: [...control.querySelectorAll('details')].map((d) => d.open),
+        height: Math.round(control.getBoundingClientRect().height),
+        onScreen: targets.every((t) => t.el.getBoundingClientRect().right <= innerWidth + 1),
+      };`);
+    assert.deepEqual(shut.labels, ['territories', 'events', 'base map', 'events by category'],
+      'four targets: two rows and two collapsed groups');
+    assert.deepEqual(shut.open, [false, false], 'both groups collapsed');
+    assert.ok(shut.touch >= 40, `--touch is a thumb, got ${shut.touch}`);
+    assert.ok(shut.shortest >= shut.touch, `every one of the four is --touch tall, shortest ${shut.shortest}`);
+    assert.equal(shut.onScreen, true, 'and none of them runs off the side');
+
+    const opened = await page.eval(`
+      const group = document.querySelector('.bar .layers #base-map');
+      group.closest('details').open = true;
+      const rows = [...group.querySelectorAll('label')];
+      return {
+        ids: rows.map((l) => l.querySelector('input').dataset.layer),
+        labels: rows.map((l) => l.textContent.trim()),
+        swatches: group.querySelectorAll('.swatch').length,
+        // The swatch has to be visible to be a legend: a zero box says nothing.
+        painted: rows.map((l) => {
+          const s = l.querySelector('.swatch');
+          const box = s.getBoundingClientRect();
+          const style = getComputedStyle(s);
+          return box.width > 0 && box.height >= 0
+            && (style.backgroundColor !== 'rgba(0, 0, 0, 0)' || style.borderBottomWidth !== '0px'
+              || style.borderTopWidth !== '0px');
+        }),
+        shortest: Math.min(...rows.map((l) => Math.round(l.getBoundingClientRect().height))),
+        onScreen: rows.every((l) => l.getBoundingClientRect().right <= innerWidth + 1),
+        // The panel flows in the drawer rather than floating over the sheet.
+        position: getComputedStyle(group).position,
+      };`);
+    // Five, and not six: the coastlines have no row (plan decision 14).
+    assert.deepEqual(opened.ids, ['rivers', 'lakes', 'physical', 'mountains', 'cities']);
+    assert.deepEqual(opened.labels, ['rivers', 'lakes', 'physical', 'mountains', 'cities'],
+      'each labelled by its layer id, from the manifest');
+    assert.equal(opened.swatches, 5, 'each carrying its swatch: the control is the legend');
+    assert.deepEqual(opened.painted, [true, true, true, true, true], 'and every swatch is drawn');
+    assert.ok(opened.shortest >= 40, `every row is a hit target, shortest ${opened.shortest}`);
+    assert.equal(opened.onScreen, true, 'and the rows are inside the screen');
+    assert.equal(opened.position, 'static', 'the group flows in the drawer, not over the sheet');
+
+    // And the drawer still scrolls: the masthead grew by two groups, and what
+    // must not happen is a page that scrolls sideways or a drawer that cannot
+    // reach its own bottom.
+    const drawer = await page.eval(`
+      const tools = document.getElementById('masthead-tools');
+      return {
+        wider: document.documentElement.scrollWidth <= 390,
+        reachable: Math.round(tools.getBoundingClientRect().bottom) > 0,
+        scrolls: document.documentElement.scrollHeight >= innerHeight
+          || getComputedStyle(document.body).overflowY !== 'visible',
+      };`);
+    assert.equal(drawer.wider, true, 'nothing sticks out sideways with both groups open');
+    assert.equal(drawer.reachable, true, 'the drawer is on the screen');
+    assert.ok(drawer.scrolls, 'and the page can be scrolled to the bottom of it');
   });
 });

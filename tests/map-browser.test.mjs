@@ -581,13 +581,16 @@ test('a regional event is a wash over its lane, and its parts are still their ow
 
 // The coastline switch is gone and the coastlines are not (plan decision 14,
 // M30b A11/A12). The control is generated, so what is asserted here is the
-// generated thing: two switches, neither of them `land`, and a link that
-// names no `land` still drawing it.
+// generated thing: seven switches, none of them `land` and none of them
+// `coast`, and a link that names no `land` still drawing it.
 test('the coastlines have no switch and are always drawn', { skip }, async () => {
   await wide(async (page, url) => {
     await open(page, url('?fixtures=1'), READY);
-    // The two plain rows, which are the whole of the control outside the
-    // collapsed <details> the categories are in (layer-control.js).
+    // Every box of the control that is not a category: the two plain rows and
+    // the five inside the base-map group (layer-control.js). Neither of the two
+    // names of a coastline is among them — `land` lost its switch in M30b, and
+    // `coast` never had one, because the near shore is a level of detail of the
+    // same line and not a layer a reader turns off (deviation 523).
     const control = await page.eval(`
       const boxes = [...document.querySelectorAll('.bar .layers input[data-layer]:not([data-category])')];
       return {
@@ -595,8 +598,11 @@ test('the coastlines have no switch and are always drawn', { skip }, async () =>
         labels: boxes.map((b) => b.closest('label').textContent.trim()),
         land: document.querySelector('#map .layer-land').getBoundingClientRect().width > 0,
       };`);
-    assert.deepEqual(control.ids, ['territories', 'events'], 'no coastline switch');
-    assert.deepEqual(control.labels, ['territories', 'events']);
+    assert.deepEqual(control.ids,
+      ['territories', 'events', 'rivers', 'lakes', 'physical', 'mountains', 'cities'],
+      'no coastline switch, under either of its two names');
+    assert.deepEqual(control.labels,
+      ['territories', 'events', 'rivers', 'lakes', 'physical', 'mountains', 'cities']);
     assert.ok(control.land, 'the coastlines are drawn');
 
     // A link that turned them off before this milestone still parses, still
@@ -610,7 +616,8 @@ test('the coastlines have no switch and are always drawn', { skip }, async () =>
     };`);
     assert.notEqual(after.land, 'none', 'the coastlines survive an old link that dropped them');
     assert.equal(after.territories, 'none', 'and the rest of the link is obeyed');
-    assert.deepEqual(after.checked, [false, true]);
+    // "these and nothing else": the events and no base layer (deviation 522).
+    assert.deepEqual(after.checked, [false, true, false, false, false, false, false]);
     // The bare `events` means every category, so every category box is on: a
     // link shared before the toggles existed says the same thing it did.
     assert.deepEqual(after.categories, [true, true, true]);
@@ -1109,6 +1116,11 @@ const BASE_CEILING = 6000;
 // `bboxTransform` answers it with the whole world, which is not a zoom.
 const PORTUGAL_AT_8 = '?bbox=-28,25.34,17,50.66';
 
+// Every layer but the territories, as a `?layers=` list: the base map on and
+// nothing of the borders. `coast` is not in it because it is not a member of
+// `LAYERS` at all and is always drawn (deviation 523).
+const BASE_ON = 'land,events,rivers,lakes,physical,mountains,cities';
+
 test('zoomed into Portugal the cells of the viewport are fetched and no others', { skip }, async () => {
   await wide(async (page, url) => {
     // Deliberately not FREEZE_TIMELINE: that resizes the map's pane, and what
@@ -1190,10 +1202,12 @@ test('a click on a river selects nothing and puts down what was held', { skip },
     // A river is drawn over whatever ground it runs through, and it must never
     // take that ground's pointer: with the territories on, what the cursor
     // finds over a river is the territory, and clicking there still picks the
-    // actor up. So the ground is taken away here — `?layers=land,events` — and
-    // then a click on a river is a click on the sea, which is what puts down
-    // what the reader was holding (map.js).
-    await open(page, url(`${PORTUGAL_AT_8}&layers=land,events&selected=carnation-revolution-1974`),
+    // actor up. So the ground is taken away here — everything but the
+    // territories — and then a click on a river is a click on the sea, which is
+    // what puts down what the reader was holding (map.js). The base layers are
+    // named one by one because a `?layers=` list is "these and nothing else",
+    // and since M37b that sentence includes them (deviation 522).
+    await open(page, url(`${PORTUGAL_AT_8}&layers=${BASE_ON}&selected=carnation-revolution-1974`),
       'return Boolean(document.querySelector("#map .layer-base > g"));');
     await waitFor(page, 'return document.querySelectorAll("#map .layer-base-rivers path").length > 0;', 'the rivers');
     assert.equal(await page.eval('return new URLSearchParams(location.search).get("selected");'),
@@ -1245,5 +1259,114 @@ test('a click on a river selects nothing and puts down what was held', { skip },
       return true;`);
     await waitFor(page, 'return !new URLSearchParams(location.search).get("selected");',
       'the selection to be put down, exactly as a click on the sea puts it down');
+  });
+});
+
+// --- the layer control, which is the legend ---------------------------------
+//
+// M37b. Two visible rows and two collapsed groups, and the five base layers
+// inside the first of them. What a switch has to do is what the whole base map
+// was built around: a layer that is off draws nothing **and asks for nothing**.
+
+// Every group of the base map, with what it has drawn and whether its box is
+// ticked. `coast` has no box at all — it is not a member of `LAYERS` and is
+// always drawn (deviation 523).
+const BASE_SWITCHES = `
+  const control = document.querySelector('.bar .layers');
+  const out = { rows: [], visible: [], summaries: [] };
+  for (const el of control.children) {
+    if (el.tagName === 'LABEL') out.visible.push(el.querySelector('input').dataset.layer);
+    if (el.tagName === 'DETAILS') out.summaries.push(el.querySelector('summary').textContent.trim());
+  }
+  for (const g of document.querySelectorAll('#map .layer-base > g')) {
+    const id = g.getAttribute('class').replace('layer layer-base-', '');
+    const box = control.querySelector('input[data-layer="' + id + '"]');
+    out.rows.push({ id, drawn: g.children.length, box: box ? box.checked : null });
+  }
+  return out;`;
+
+const BASE_REQUEST_COUNT = `
+  return performance.getEntriesByType('resource')
+    .filter((e) => e.name.includes('geo/base/')).length;`;
+
+test('turning rivers off empties its group and asks for nothing, and back on draws from cache', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url(PORTUGAL_AT_8), 'return Boolean(document.querySelector("#map .layer-base-rivers path"));');
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-base-rivers path").length > 0;', 'the rivers');
+    // Every cell of every layer asked for, so that "no new request" below is
+    // about the switch and not about a fetch that had not gone out yet.
+    await waitFor(page, `return (() => {
+      const names = performance.getEntriesByType('resource').map((e) => e.name);
+      return ['rivers', 'lakes', 'physical', 'mountains', 'cities']
+        .every((id) => names.some((n) => n.includes('geo/base/' + id + '/')));
+    })();`, 'a cell of every layer');
+    const before = await page.eval(BASE_REQUEST_COUNT);
+    const drawn = await page.eval('return document.querySelector("#map .layer-base-rivers").children.length;');
+    assert.ok(drawn > 0, `the rivers are drawn to begin with (${drawn})`);
+
+    // Off: the box in the control, clicked as a reader clicks it.
+    await page.eval('document.querySelector(\'.bar .layers input[data-layer="rivers"]\').click(); return true;');
+    await waitFor(page, 'return document.querySelector("#map .layer-base-rivers").children.length === 0;',
+      'the rivers to go');
+    assert.equal(await page.eval(BASE_REQUEST_COUNT), before, 'an off layer asks for nothing');
+    // And what the reader did is in the link, as everything else is.
+    const layers = await page.eval('return new URLSearchParams(location.search).get("layers");');
+    assert.ok(layers && !layers.split(',').includes('rivers'), `the link says so: ${layers}`);
+    assert.ok(layers.split(',').includes('lakes'), 'and the other four are still on');
+
+    // Nothing else moved: the four other base layers are where they were.
+    const others = await page.eval(BASE_COUNTS);
+    assert.ok(others.byLayer.lakes > 0 && others.byLayer.coast > 0,
+      `the rest of the base map is untouched: ${JSON.stringify(others.byLayer)}`);
+
+    // On again, and out of what is already in hand: not one more request.
+    await page.eval('document.querySelector(\'.bar .layers input[data-layer="rivers"]\').click(); return true;');
+    await waitFor(page, 'return document.querySelector("#map .layer-base-rivers").children.length > 0;',
+      'the rivers to come back');
+    assert.equal(await page.eval(BASE_REQUEST_COUNT), before, 'and they are drawn from cache');
+    assert.equal(await page.eval('return document.querySelector("#map .layer-base-rivers").children.length;'), drawn,
+      'the same picture as before it was switched off');
+    // Everything on again is the default, and the default writes no link.
+    assert.equal(await page.eval('return new URLSearchParams(location.search).get("layers");'), null,
+      'back to the default, and the link says nothing');
+  });
+});
+
+test('?layers=territories,events opens with the base map off and its boxes unticked', { skip }, async () => {
+  await wide(async (page, url) => {
+    // A link written before the base map existed. It says "these and nothing
+    // else" and is read that way (deviation 522).
+    await open(page, url(`${PORTUGAL_AT_8}&layers=territories,events`),
+      'return Boolean(document.querySelector("#map .layer-base > g"));');
+    // The near coastline is the one thing that still arrives, because it is not
+    // a switch at all — so waiting for it is waiting for the base map to have
+    // had its chance to fetch.
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-base-coast path").length > 0;',
+      'the near coastline, which no link turns off');
+
+    const seen = await page.eval(BASE_SWITCHES);
+    assert.deepEqual(seen.visible, ['territories', 'events'], 'two visible rows');
+    assert.deepEqual(seen.summaries, ['base map', 'events by category'], 'and two collapsed groups');
+    const byId = Object.fromEntries(seen.rows.map((r) => [r.id, r]));
+    assert.equal(byId.coast.box, null, 'the coastlines have no box: they are the ground (decision 14)');
+    assert.ok(byId.coast.drawn > 0, 'and they are drawn whatever the link says');
+    // The brief's "the boxes unchecked": five of them, one per member of
+    // `LAYERS` the base map has, and every one of them empty and unticked.
+    const switched = ['rivers', 'lakes', 'physical', 'mountains', 'cities'];
+    assert.deepEqual(switched.map((id) => byId[id].box), [false, false, false, false, false]);
+    assert.deepEqual(switched.map((id) => byId[id].drawn), [0, 0, 0, 0, 0]);
+
+    // And an off layer costs nothing at all: not a far file, not a cell.
+    const asked = await page.eval(BASE_REQUESTS);
+    assert.deepEqual(asked.world, [], `no far file was fetched: ${asked.world.join(' · ')}`);
+    assert.deepEqual(asked.cells.filter((n) => !n.startsWith('coast/')), [],
+      `no cell of a switched-off layer: ${asked.cells.join(' · ')}`);
+
+    // The two rows that are on are on.
+    const on = await page.eval(`return {
+      territories: document.querySelector('.bar .layers input[data-layer="territories"]').checked,
+      events: document.querySelector('.bar .layers input[data-layer="events"]').checked,
+    };`);
+    assert.deepEqual(on, { territories: true, events: true });
   });
 });

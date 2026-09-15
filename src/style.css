@@ -240,22 +240,42 @@ input, select, textarea { accent-color: var(--cobalt); }
 .bar .tagline { margin: 0; color: var(--ink-soft); flex: 1; font-size: var(--text-sm); }
 .bar .layers { display: flex; gap: var(--space-3); color: var(--ink-soft); font-size: var(--text-sm); }
 .bar .layers label { display: inline-flex; align-items: center; gap: 0.3em; }
-/* The category toggles, which are the legend: there is no other. Collapsed,
-   so the phone drawer keeps one target instead of thirteen, and every row
-   carries its own symbol at the row's text size — the reader learns the
-   shapes here and nowhere else (glyphs-brief, §4). */
+/* The two collapsed groups — the base map and the categories — which together
+   with the two rows above them are the whole legend: there is no other.
+   Collapsed, so the phone drawer keeps four targets instead of nineteen, and
+   every row carries its own symbol or its own swatch at the row's text size —
+   the reader learns the shapes and the colours here and nowhere else
+   (glyphs-brief §4; M37 brief §3). */
 .bar .layers details { position: relative; }
 .bar .layers summary { cursor: pointer; list-style: none; }
 .bar .layers summary::-webkit-details-marker { display: none; }
 .bar .layers summary::after { content: ' \25BE'; }
 .bar .layers details[open] summary::after { content: ' \25B4'; }
-.bar .layers .categories {
+.bar .layers .categories, .bar .layers .base-layers {
   display: flex; flex-direction: column; gap: var(--space-1);
   padding: var(--space-2); margin-top: var(--space-1);
   background: var(--paper); border: 1px solid var(--line);
   position: absolute; z-index: 5; min-width: 14ch;
 }
 .bar .layers .glyph { width: 1em; height: 1em; flex: 0 0 auto; color: var(--cobalt); }
+/* A swatch is what a base layer looks like on the map, at the row's own text
+   size: a line for the rivers, a filled ring for the lakes, a dashed line for
+   the physical regions, and a dot the size the layer draws for the peaks and
+   the cities. Every colour is the one the map itself uses, from the same
+   token — the swatch and the layer cannot come apart, because there is one
+   value and it is up there at `:root`. The coastlines have no row and so no
+   swatch: they are always drawn (plan decision 14). */
+.bar .layers .swatch { width: 1em; height: 1em; flex: 0 0 auto; align-self: center; }
+.bar .layers .swatch-rivers { height: 0.5em; border-bottom: 2px solid var(--cobalt-soft); }
+.bar .layers .swatch-lakes { background: var(--cobalt-faint); border: 1px solid var(--cobalt-soft); }
+.bar .layers .swatch-physical { height: 0.5em; border-bottom: 1px dashed var(--line); }
+.bar .layers .swatch-mountains {
+  width: 0.5em; height: 0.5em; margin: 0 0.25em; border-radius: 50%; background: var(--ink-soft);
+}
+.bar .layers .swatch-cities {
+  width: 0.7em; height: 0.7em; margin: 0 0.15em; border-radius: 50%;
+  background: var(--ink-soft); box-shadow: 0 0 0 1.5px var(--paper);
+}
 
 /* The atlas's own masthead: name, then the controls that change what is
    drawn, then the ways out. On a narrow screen the three zones stack in that
@@ -560,12 +580,14 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
   .masthead-tools .grouping, .masthead-tools .layers { display: none; }
   .masthead-tools.options-open .grouping { display: flex; flex: 1 0 100%; }
   .masthead-tools.options-open .layers:not([hidden]) { display: flex; flex: 1 0 100%; flex-wrap: wrap; }
-  /* Inside the drawer the category panel flows rather than floating: an
-     absolutely positioned panel over a sheet is a panel half off the screen.
-     The collapsed <details> is the one 40 px target the drawer keeps, and
-     opening it puts thirteen rows in the drawer's own flow. */
+  /* Inside the drawer the two panels flow rather than floating: an absolutely
+     positioned panel over a sheet is a panel half off the screen. Each
+     collapsed <details> is one 40 px target the drawer keeps, and opening it
+     puts its rows in the drawer's own flow. */
   .bar .layers details { flex: 1 0 100%; }
-  .bar .layers .categories { position: static; border: 0; padding: 0; background: none; }
+  .bar .layers .categories, .bar .layers .base-layers {
+    position: static; border: 0; padding: 0; background: none;
+  }
   .grouping-panel { width: min(30ch, calc(100vw - 2 * var(--space-4))); }
 
   /* Forty pixels, everywhere a thumb has to land on a control of its own.
