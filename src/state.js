@@ -91,12 +91,23 @@ import {
 } from './vocab.js';
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
-// `land` is still one of the three, and it is no longer a switch: the
-// coastlines are always drawn (plan decision 14) and the checkbox is gone.
-// The name stays a member so that every `?layers=` link ever shared still
-// parses into the same three, and so that the default is the literal it
-// always was.
-export const LAYERS = Object.freeze(['land', 'territories', 'events']);
+// `land` is still one of them, and it is no longer a switch: the coastlines
+// are always drawn (plan decision 14) and the checkbox is gone. The name stays
+// a member so that every `?layers=` link ever shared still parses, and so that
+// the default is the literal it always was.
+//
+// The five after it are the base map's, the ones the layer control switches
+// (M37b). `coast` is deliberately **not** among them: the near coastline is the
+// coastline, and a switch that turned off half of it at one zoom would be a
+// switch for a level of detail and not for a layer (deviation 523).
+//
+// A link that named a subset before the base map existed —
+// `?layers=territories,events` — now also turns the base map off. It says
+// "these and nothing else" and is read that way; the alternative, treating a
+// name an old link could not have carried as on, makes turning a base layer off
+// impossible to express in the URL at all (deviation 522).
+export const LAYERS = Object.freeze(['land', 'territories', 'events',
+  'rivers', 'lakes', 'physical', 'mountains', 'cities']);
 // A category of events, off the closed list in `data/categories.json`:
 // `events:war`. Which categories exist is deliberately not known here — this
 // file holds none of the data — so a token is checked for shape only and a

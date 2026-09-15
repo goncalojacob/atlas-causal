@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  parseState, formatState, defaultState, createState, parseBbox, formatBbox, pushes,
+  parseState, formatState, defaultState, createState, parseBbox, formatBbox, pushes, LAYERS,
 } from '../src/state.js';
 import {
   resolveWindow, overlaps, windowAt, containsYear, decadeOf, zoomWindow,
@@ -99,8 +99,35 @@ test('?layers= carries a category of events, and the old three still parse', () 
 test('a category of events is written back into the link', () => {
   const s = { ...defaultState(), layers: ['land', 'territories', 'events:war'] };
   assert.equal(formatState(s), '?layers=land,territories,events:war');
-  // And the default three still write nothing at all.
+  // And the default, whatever its length, still writes nothing at all: the
+  // link carries `?layers=` only where the reader has turned something off.
   assert.equal(formatState(defaultState()), '');
+});
+
+// M37b: the five base layers join the three, and `coast` deliberately does not
+// (deviation 523). Everything is on by default; a link is written only where
+// the reader has switched something off.
+test('?layers= carries the base map, and an old link turns it off', () => {
+  assert.deepEqual(defaultState().layers,
+    ['land', 'territories', 'events', 'rivers', 'lakes', 'physical', 'mountains', 'cities']);
+  assert.equal(LAYERS.includes('coast'), false, 'the near coastline is the coastline, not a switch');
+
+  // A link written before rivers existed says "these and nothing else", and
+  // that is what it now means for the base map too (deviation 522).
+  assert.deepEqual(parseState('?layers=territories,events').layers, ['territories', 'events']);
+
+  // One base layer on its own round-trips, in the order the reader's list has.
+  assert.deepEqual(parseState('?layers=rivers').layers, ['rivers']);
+  assert.equal(formatState({ ...defaultState(), layers: ['rivers'] }), '?layers=rivers');
+  assert.equal(parseState(formatState({ ...defaultState(), layers: ['rivers'] })).layers.join(','), 'rivers');
+
+  // A name nobody recognises is still dropped, and a category still parses
+  // beside the base layers.
+  assert.deepEqual(parseState('?layers=rivers,glaciers,lakes').layers, ['rivers', 'lakes']);
+  assert.deepEqual(
+    parseState('?layers=land,rivers,mountains,events:war').layers,
+    ['land', 'rivers', 'mountains', 'events:war'],
+  );
 });
 
 test('a relation id is not a step of the walked chain', () => {
@@ -133,7 +160,8 @@ test('the store merges patches and notifies', () => {
   assert.deepEqual(store.get(), {
     from: null, to: 1220, view: 'map', focus: null, focusAll: false, group: 'none', lanes: [],
     selected: 'fixture-event-a', source: null,
-    place: null, actor: null, office: null, chain: [], horizon: null, layers: ['land', 'territories', 'events'],
+    place: null, actor: null, office: null, chain: [], horizon: null,
+    layers: ['land', 'territories', 'events', 'rivers', 'lakes', 'physical', 'mountains', 'cities'],
     narrative: null, step: 0, walk: null, bbox: null,
   });
 });

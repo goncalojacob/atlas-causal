@@ -129,7 +129,8 @@ test('switching a layer changes the map\'s key', () => {
   const off = { ...s, layers: s.layers.filter((l) => l !== 'territories') };
   assert.notEqual(renderKey(off, ...parts), renderKey(s, ...parts));
   // And a name the state does not know is dropped before it ever reaches a
-  // key, which is what `?layers=rivers` means until M37b widens `LAYERS`.
+  // key: `?layers=` carries the eight and a category token, and nothing else
+  // ever arrives here to be keyed (state.js).
   assert.equal(renderKey({ ...s, layers: [...s.layers] }, ...parts), renderKey(s, ...parts));
 });
 
