@@ -5669,10 +5669,14 @@ manifest; a dataset with no `data/geo/base/` still gets no `base` key at all.
 
 ### What M36c did not do, and what waits on the owner
 
-Not one file under `src/` changed in this run either — `map.js`,
-`layers/*.js`, `main.js`, `state.js`, `index.html` and `style.css` are as
-M36a left them, no hex value and no size was added, and the presences, the
-palette and `regions.json` were not opened. The only files written under
+Nothing was drawn. `map.js`, `layers/*.js`, `main.js`, `state.js`,
+`index.html` and `style.css` are as M36a left them, no hex value and no size
+was added, and the presences, the palette and `regions.json` were not opened.
+Two files under `src/` did change, and neither draws anything: `references.js`
+gained the row that lets a renamed place carry into the new mapping — without
+it `tests/registry.test.mjs` fails, which is the one way a rename could miss
+it — and `validate/schemas.js` names the new schema tool-side, so the browser
+still fetches sixteen and not seventeen. The only files written under
 `data/` are the cities, `data/imports/naturalearth-places.json` and the
 regenerated index; `data/geo/land-present.json` and the five layers M36a and
 M36b wrote are byte for byte what they were, and a second run of the import
@@ -5882,3 +5886,5 @@ M36a done
 M36b started 2026-09-15T02:24:25Z by scheduled
 M36b done
 M36c started 2026-09-15T02:49:27Z by scheduled
+M36c done
+M36 done
