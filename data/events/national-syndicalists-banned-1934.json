@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "national-syndicalists-banned-1934",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The year is 1934 and the run is sure of it; the day and the instrument are not written here because this run could not point at them in a source it has read. Check the Diário do Governo and set when.date before signing."
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "The ban on the National Syndicalists",
+  "summary": "The Movimento Nacional-Sindicalista, founded in February 1932 by Francisco Rolão Preto and the nearest thing to a mass fascist movement Portugal produced, was dissolved by the government in 1934 and its leader sent out of the country; part of its membership was taken into the União Nacional and into the militia and youth organisations the regime built for itself. The blue shirts had wanted what the Estado Novo would not have — a single party with a street movement behind it, a leader rather than a president of the council, and a corporatism made from below. It is in the atlas because the suppression is where the difference between the Portuguese regime and the Italian one stops being a matter of interpretation: the Estado Novo destroyed its own fascists.",
+  "when": {
+    "start": 1934,
+    "end": 1934,
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "estado-novo",
+      "role": "government"
+    },
+    {
+      "actor": "salazar",
+      "role": "head-of-government"
+    },
+    {
+      "actor": "national-syndicalists",
+      "role": "target"
+    },
+    {
+      "actor": "uniao-nacional",
+      "role": "institution",
+      "note": "took in part of the membership"
+    }
+  ]
+}

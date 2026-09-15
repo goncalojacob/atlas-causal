@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "korean-war--treaty-of-san-francisco--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Korean War\", revision 1371767674"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of San Francisco\", revision 1374408216"
+    }
+  ],
+  "from": "korean-war",
+  "to": "treaty-of-san-francisco",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Korea is why the peace with Japan was made in 1951 rather than later, and why it was made on those terms. The war turned the occupied country into the base the war was fought from and the workshop that supplied it, and an ally worth having was worth more to Washington than reparations or restrictions; Dulles negotiated the treaty and the security treaty together while the fighting went on. The claim is about the timing and the generosity, not about the fact of a peace, which had to come sooner or later.",
+  "dispute": null
+}

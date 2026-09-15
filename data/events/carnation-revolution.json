@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "carnation-revolution",
+  "kind": "event",
+  "status": "merged",
+  "supersededBy": "carnation-revolution-1974",
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-merged"
+    ],
+    "note": "Merged in M44b into carnation-revolution-1974, the same event. The atlas has held 25 April since M2 under a Portuguese title and with no Wikidata item, so neither the item test nor the label test of M44a’s tick rule reached it — the blind spot deviation 670 caught for the proclamation of the Republic, a batch too late here. This record keeps Q193245 and the two Wikipedia links, and names its survivor rather than becoming an anonymous tombstone. The full account is in docs/m44-retractions.md."
+  },
+  "wikidata": "Q193245",
+  "sitelinks": {
+    "count": 62,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Carnation Revolution",
+    "pt": "Revolução de 25 de Abril de 1974"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q193245"
+    }
+  ],
+  "title": "Carnation Revolution",
+  "summary": "Wikidata item Q193245, imported by tools/import/wikidata.mjs. The item's own description reads \"1974 revolution in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1974,
+    "end": 1974,
+    "date": "1974-04-25"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

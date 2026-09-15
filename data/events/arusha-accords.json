@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "arusha-accords",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A, with the Rwandan civil war it ended. The accords’ only neighbour here would have been that war, which is retracted in the same commit for want of any Portuguese reach; two records connected to each other and to nothing else is precisely the second atlas the brief was written to stop building."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q1429076",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Arusha Accords (Rwanda)",
+    "pt": "Acordos de Aruxa (Ruanda)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1429076"
+    }
+  ],
+  "title": "Arusha Accords",
+  "summary": "Wikidata item Q1429076, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1993,
+    "end": 1993,
+    "date": "1993-08-04"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

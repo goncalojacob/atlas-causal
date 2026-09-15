@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "world-war-i--sayfo--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sayfo\", revision 1370631734"
+    }
+  ],
+  "from": "world-war-i",
+  "to": "sayfo",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Sayfo was carried out under the cover of the war and by the state that was fighting it. Assyrian and Syriac Christians were killed and deported from south-eastern Anatolia and from Persian Azerbaijan by Ottoman forces and allied Kurdish tribes in the same years, by the same apparatus and on the same reasoning of internal enemy as the Armenian genocide this atlas already holds. What the war supplied was the front line that ran through where these communities lived, the requisitioning, and the suspension of any authority that might have refused. It did not supply the intention, which was the Committee of Union and Progress’s own; that is why this is enabled and not caused.",
+  "dispute": null
+}

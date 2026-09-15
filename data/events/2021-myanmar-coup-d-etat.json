@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "2021-myanmar-coup-d-etat",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A: the neighbour is missing. Burma enters this atlas nowhere. No edge to a Portuguese event and none to a world event here can be argued."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q105180889",
+  "sitelinks": {
+    "count": 59,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "2021 Myanmar coup d'état",
+    "pt": "Golpe de Estado em Mianmar em 2021"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q105180889"
+    }
+  ],
+  "title": "2021 Myanmar coup d'état",
+  "summary": "Wikidata item Q105180889, imported by tools/import/wikidata.mjs. The item's own description reads \"2021 military overthrow of the Myanmar's officially elected government\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2021,
+    "end": 2021,
+    "date": "2021-02-01",
+    "endDate": "2021-02-01"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

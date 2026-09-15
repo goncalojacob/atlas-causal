@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "convention-on-preventing-and-combating-violence-against-women-and-domestic-violence",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A. Portugal was among the first states to ratify the Istanbul convention, in February 2013, and that is exactly the kind of edge this round wanted; the atlas holds no record of the ratification, and no Portuguese event of the law on domestic violence before or after it, so there is no Portuguese end to attach. Named in docs/m44-connections.md as work the atlas needs."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q1697391",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Istanbul Convention",
+    "pt": "Convenção do Conselho da Europa para a Prevenção e o Combate à Violência Contra as Mulheres e a Violência Doméstica"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1697391"
+    }
+  ],
+  "title": "Convention on preventing and combating violence against women and domestic violence",
+  "summary": "Wikidata item Q1697391, imported by tools/import/wikidata.mjs. The item's own description reads \"Council of Europe convention against gender violence signed in Istanbul, Turkey\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-05-11"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

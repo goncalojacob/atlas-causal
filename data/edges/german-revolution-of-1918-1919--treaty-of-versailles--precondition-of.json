@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "german-revolution-of-1918-1919--treaty-of-versailles--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"German revolution of 1918–1919\", revision 1373097617"
+    }
+  ],
+  "from": "german-revolution-of-1918-1919",
+  "to": "treaty-of-versailles",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Allies would not sign with the Empire, and the revolution is what put something else in its place. The republic proclaimed on 9 November 1918 provided the government that asked for the armistice two days later, the delegation that went to Versailles, and the National Assembly that voted to accept the treaty in June 1919. The claim is about who could be treated with, not about the terms: those were settled in Paris among the victors, and the German republic was not at the table where they were made.",
+  "dispute": null
+}

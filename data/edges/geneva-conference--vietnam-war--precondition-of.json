@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "geneva-conference--vietnam-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1954 Geneva Conference\", revision 1369041532"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Vietnam War\", revision 1373025356"
+    }
+  ],
+  "from": "geneva-conference",
+  "to": "vietnam-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The line at the seventeenth parallel that the accords drew as a military demarcation became a border because the elections they provided for in 1956 were never held, and the war of the following twenty years was fought across it. The United States did not sign the final declaration and undertook only not to disturb it by force. The claim is that Geneva made the partition the later war was about; it is not a claim that Geneva caused the war, which needed the refusal of the elections and an American commitment neither of which the conference decided.",
+  "dispute": null
+}

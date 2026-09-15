@@ -31,6 +31,19 @@ jobs:
     timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The whole history, as validate.yml and deploy.yml already take it.
+          # tools/lib/history.mjs reads a record's versions out of `git log`
+          # and refuses a shallow repository outright — "a shallow repository
+          # is not half a history, it is a different one" — so on the default
+          # depth-1 checkout build-index.mjs writes `history-*` shards with
+          # different content, and different content-addressed names. That
+          # passes this job's own `validate --index`, because the job rebuilt
+          # the index it is checking, and then fails the suite against the
+          # fixture index committed here, which was built with the history:
+          # rule 16, four tests, and batch 1 thrown away with the cursor never
+          # moving. It is what stopped M44a's first run.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
@@ -96,7 +109,17 @@ jobs:
             # keeps them, and pushing this branch again resumes from there.
             # The slowest single test takes 4s, so 120s is not a deadline any
             # honest test comes near.
-            node --test --test-timeout=120000 || fail "the tests do not pass after batch $batch"
+            # Said twice, because only the tail of a job's log can be fetched
+            # from the sandbox that pushes this branch, and TAP prints six
+            # lines for every one of 1,400 passing tests — so a failure is
+            # thousands of lines above the end and out of reach. M44a spent two
+            # runs unable to read which test had stopped it. The output is kept
+            # whole, and the failing tests are repeated at the end.
+            if ! node --test --test-timeout=120000 2>&1 | tee /tmp/tests.log; then
+              echo "--- the tests that failed after batch $batch ---"
+              { grep -a -A 18 '^not ok ' /tmp/tests.log || true; } | head -300
+              fail "the tests do not pass after batch $batch"
+            fi
             if [ -z "$(git status --porcelain)" ]; then
               echo "batch $batch changed nothing; the walk is finished"
               break

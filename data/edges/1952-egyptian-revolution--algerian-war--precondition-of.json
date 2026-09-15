@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "1952-egyptian-revolution--algerian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Egyptian revolution of 1952\", revision 1374209538"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Algerian War\", revision 1373081356"
+    }
+  ],
+  "from": "1952-egyptian-revolution",
+  "to": "algerian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Cairo after 1952 is where the Algerian revolution was prepared and from where it was supplied. The external delegation of the FLN sat there, the Voice of the Arabs broadcast to the Maghreb, and the first arms came through Egypt and Libya; Nasser’s Egypt was both the sponsor and the standing demonstration that an Arab army could remove a king and see off an Anglo-French expedition. The claim is about the base and the example. The war of 1954 had Algerian causes, in the settler regime and the failure of assimilation, and this edge does not touch them.",
+  "dispute": null
+}

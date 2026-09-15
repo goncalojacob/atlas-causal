@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "universities-of-lisbon-and-porto-1911",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "title": "The decree founding the universities of Lisbon and Porto",
+  "summary": "The provisional government created two new universities by decree on 22 March 1911, ending four centuries in which Coimbra had been the only one in the country. Lisbon and Porto were made out of schools that already existed in each city — the medical, polytechnic and higher letters courses — and given faculties and a rectorate of their own. It was one of the first acts of the Republic’s education programme, of a piece with the separation of church and state a month later and with the schooling laws of the same year, and it is here because the two institutions it created are still the two largest in Portugal and because it is a consequence of October 1910 that can be dated to a day.",
+  "when": {
+    "start": 1911,
+    "end": 1911,
+    "date": "1911-03-22",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "first-portuguese-republic",
+      "role": "government"
+    },
+    {
+      "actor": "university-of-porto",
+      "role": "institution",
+      "note": "the body the decree constituted"
+    }
+  ]
+}

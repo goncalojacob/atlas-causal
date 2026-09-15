@@ -5,6 +5,14 @@ Every event listed here was imported by M20 and is now `retracted` (or
 reason is on the record too, in `review.note`, so the review dashboard shows
 it without this file.
 
+**Twelve of the ids below were rewritten on 15 September 2026** (M44c): the
+Wikidata import had filed them under the item's Portuguese label and
+`CLAUDE.md` says the atlas is in English. M22 wrote them under the ids it
+had — `assalto-ao-banco-…`, `assassinato-de-…`, `eleicoes-legislativas-…`,
+`desastre-ambiental-de-almograve`, `sismo-de-portugal-de-2009` — and each of
+those still resolves, as the former id of the record it names. The English
+id is used here so that a reader who follows one lands on the record.
+
 The bar M22 works to is **not** the one in its own brief. The brief asks for
 two argued edges per event, one of them outgoing; on 4 September 2026 the
 owner replaced that with a single rule for M21 and M22 alike: **one honest
@@ -40,21 +48,21 @@ turn to armed action after 25 November 1975, and an event for the trials — at
 which point most of these eleven become evidence for edges rather than
 orphans.
 
-- `assalto-ao-banco-de-angola-na-damaia-em-21-de-outubro-de-1975` — Damaia,
+- `robbery-of-banco-de-angola-in-damaia-on-21-october-1975` — Damaia,
   21 October 1975, six of the Brigadas Revolucionárias, 4,237,000$00.
 - `robbery-of-banco-totta-and-azores-in-mira-de-aire-on-october-15-1975` —
   Mira de Aire, 15 October 1975, 1,300 contos.
 - `assault-on-banco-totta-e-acores-on-avenida-da-republica-in-lisbon-on-may-21-1976`
   — Lisbon, 21 May 1976, five of the PRP-BR, 1,536,000$00.
-- `assalto-ao-banco-pinto-e-sottomayor-em-albufeira-em-17-de-agosto-de-1976` —
+- `robbery-of-banco-pinto-e-sottomayor-in-albufeira-on-17-august-1976` —
   Albufeira, 17 August 1976, 2,970,000$00.
 - `assassination-of-jose-ferreira-da-rocha-by-the-prp-br` — a PSP officer
   killed during an attempted robbery, 17 March 1976.
-- `assassinato-de-jose-oscar-de-vasconcelos` — 18 April 1976; the item carries
+- `assassination-of-jose-oscar-de-vasconcelos` — 18 April 1976; the item carries
   a name and a date and no description at all.
 - `robbery-of-banco-totta-e-acores-in-seia-on-february-1-1977` — Seia,
   1 February 1977, three of the PRP-BR, 294,000$00.
-- `assalto-ao-banco-pinto-e-sottomayor-de-lisboa-em-soure` — Soure,
+- `robbery-of-banco-pinto-e-sottomayor-of-lisbon-in-soure` — Soure,
   8 February 1977.
 - `robbery-of-banco-borges-irmao-in-monte-dos-burgos-porto-november-4-1977` —
   Porto, 4 November 1977, five of the PRP-BR, 400,000$00.
@@ -79,7 +87,7 @@ id, so a label appearing upstream is enough to revive the record.
 ### Wired
 
 `1975-sao-tomean-legislative-election`, `1976-azorean-regional-election`,
-`eleicoes-legislativas-regionais-na-madeira-em-1976`,
+`1976-madeira-regional-legislative-election`,
 `1976-portuguese-local-elections`, `1977-mozambican-general-election`,
 `hat-nipah-and-same-massacres`,
 `treaty-of-friendship-and-cooperation-between-spain-and-portugal`,
@@ -114,8 +122,12 @@ the moment a particular consequence is written for it.
 Retracted under that principle: `1982-portuguese-local-elections`,
 `1985-portuguese-local-elections`, `1989-portuguese-local-elections`,
 `1989-european-parliament-election-in-portugal`,
-`eleicoes-legislativas-regionais-nos-acores-em-1980`, `-1984`, `-1988`,
-`eleicoes-legislativas-regionais-na-madeira-em-1980`, `-1984`, `-1988`.
+`1980-azores-regional-legislative-election`,
+`1984-azores-regional-legislative-election`,
+`1988-azores-regional-legislative-election`,
+`1980-madeira-regional-legislative-election`,
+`1984-madeira-regional-legislative-election`,
+`1988-madeira-regional-legislative-election`.
 The Madeiran one of 1980 is the first win of Alberto João Jardim, who held
 the regional government until 2015; that is a reason to write him an actor
 record and an event of his own, not a reason to keep a ballot the atlas can
@@ -142,7 +154,7 @@ them has anything to attach to.
 - `chiado-fire` — 25 August 1988, from the Grandella store. Its consequence
   is the reconstruction Álvaro Siza directed over the following two decades,
   which is not in the atlas. Write that and the fire comes back.
-- `desastre-ambiental-de-almograve` — the oil spill of 14 July 1989 from an
+- `almograve-environmental-disaster` — the oil spill of 14 July 1989 from an
   accident at the port of Sines. The atlas holds nothing about Sines, the
   refinery complex or environmental regulation.
 - `assassination-attempt-on-john-paul-ii-1982` — Fátima, 12 May 1982, a year
@@ -290,7 +302,7 @@ treaty. This is the retraction in M22 most likely to be argued with.
 nothing to do with either, and wiring them would be a pun on the name),
 `murder-of-joana-cipriano` (what it changed was the standing of the Judiciary
 Police and the argument about confessions, neither of which is here) and
-`sismo-de-portugal-de-2009` (a third earthquake with no recorded consequence).
+`2009-portugal-earthquake` (a third earthquake with no recorded consequence).
 
 ### Wired
 

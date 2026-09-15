@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "kellogg-briand-pact--charter-of-the-united-nations--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kellogg–Briand Pact\", revision 1373604906"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Charter of the United Nations\", revision 1365430628"
+    }
+  ],
+  "from": "kellogg-briand-pact",
+  "to": "charter-of-the-united-nations",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The pact of 1928 is where the renunciation of war as an instrument of policy was first written into a general treaty, and it is the text the Charter of 1945 rewrote with an enforcement machinery behind it. Between the two stands the use the pact was put to at Nuremberg, where the charge of crimes against peace rested on the argument that aggressive war had already been unlawful since 1928. The claim is about the lineage of the prohibition and is narrow: the pact had no sanction, failed at every test between 1931 and 1939, and is a precondition of the Charter rather than a cause of it.",
+  "dispute": null
+}

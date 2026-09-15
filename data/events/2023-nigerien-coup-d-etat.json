@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "2023-nigerien-coup-d-etat",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A: the neighbour is missing. The Sahel coups of 2020 to 2023 are a sequence and this atlas holds one of them. Wired to nothing, it would stand alone; wired to the Nigerien or Malian coups it would need records that do not exist."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q117100709",
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "2023 Nigerien coup d'état",
+    "pt": "Golpe de Estado no Níger em 2023"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q117100709"
+    }
+  ],
+  "title": "2023 Nigerien coup d'état",
+  "summary": "Wikidata item Q117100709, imported by tools/import/wikidata.mjs. The item's own description reads \"military coup against President Mohamed Bazoum\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2023,
+    "end": 2023,
+    "date": "2023-07-26"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

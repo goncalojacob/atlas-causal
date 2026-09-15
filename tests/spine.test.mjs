@@ -341,9 +341,20 @@ for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', D
       .flatMap((kind) => topology[`${kind}s`].map((r) => r.id));
     assert.deepEqual(spine.ids.slice(0, front.length), front, 'the records first, in registry order');
     assert.equal(new Set(spine.ids).size, spine.ids.length, 'each id once');
-    // No edge id: they are `from--to--type` and the loader makes them, which is
-    // what keeps 39,996 of them out of the table at 10^4.
-    for (const edge of topology.edges) assert.ok(!spine.ids.includes(edge.id), edge.id);
+    // The table carries no entry *per* edge: an edge's id is `from--to--type`
+    // and the loader makes it, which is what keeps 39,996 of them out of the
+    // table at 10^4. The exception is an edge the merges have to name — one
+    // with a former id or a successor — because `merges.aliases` is a pair of
+    // ids and `resolve()` reads the second of them. M44c renamed two events
+    // and the cascade carried two edges with them, which is the first time
+    // the corpus has held such an edge; the property is what is asserted, so
+    // the third rename does not come back here.
+    const named = new Set(topology.edges
+      .filter((e) => (e.aliases ?? []).length > 0 || e.supersededBy)
+      .map((e) => e.id));
+    for (const edge of topology.edges) {
+      assert.equal(spine.ids.includes(edge.id), named.has(edge.id), edge.id);
+    }
     assert.deepEqual(buildSpine(topology).ids, spine.ids);
     assert.deepEqual(buildSpine(topology).vocab, spine.vocab);
   });

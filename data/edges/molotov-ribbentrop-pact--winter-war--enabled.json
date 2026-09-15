@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "molotov-ribbentrop-pact--winter-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Winter War\", revision 1373170950"
+    }
+  ],
+  "from": "molotov-ribbentrop-pact",
+  "to": "winter-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The secret protocol of 23 August 1939 put Finland in the Soviet sphere, and that is what made the demands of October and the invasion of 30 November possible without a European war following. Germany, which had been the counterweight in the Baltic, was bound not to object and did not; Britain and France were at war with Germany and could reach Finland only through neutral Scandinavia. The claim is about the diplomatic freedom the pact bought, not about the Soviet motive, which was the security of Leningrad and was older than the pact.",
+  "dispute": null
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "western-african-ebola-virus-epidemic",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A. The nearest Portuguese ground is Guinea-Bissau, a neighbour of the outbreak’s three countries and a member of the community of Portuguese-speaking states, and the atlas holds no record of Guinea-Bissau after 1973 and no record of the epidemic reaching it. An edge from the founding of the CPLP in 1996 to an epidemic in 2013 would argue nothing at all, which is the shape of edge this round exists to refuse."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q15989108",
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Western African Ebola epidemic",
+    "pt": "Epidemia de Ebola na África Ocidental"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15989108"
+    }
+  ],
+  "title": "Western African Ebola virus epidemic",
+  "summary": "Wikidata item Q15989108, imported by tools/import/wikidata.mjs. The item's own description reads \"2014-15 Ebola virus disease epidemic in West Africa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2013,
+    "end": 2016,
+    "date": "2013-12",
+    "endDate": "2016-06"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

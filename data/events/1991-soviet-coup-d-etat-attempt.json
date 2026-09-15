@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1991-soviet-coup-d-etat-attempt",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A. The coup of August 1991 argues to the dissolution of the Soviet Union in December, which is one of the twelve named neighbours the committed candidate list does not hold, and to the Russian records of the 1990s, which reach no Portuguese event. Nothing else in this atlas is within reach of it."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q221382",
+  "sitelinks": {
+    "count": 59,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "1991 Soviet coup attempt",
+    "pt": "Tentativa de golpe de Estado na União Soviética em 1991"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q221382"
+    }
+  ],
+  "title": "1991 Soviet coup d'état attempt",
+  "summary": "Wikidata item Q221382, imported by tools/import/wikidata.mjs. The item's own description reads \"attempted coup d'état in the USSR against Mikhail Gorbachev's government in August 1991\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1991,
+    "end": 1991,
+    "date": "1991-08-19",
+    "endDate": "1991-08-21"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

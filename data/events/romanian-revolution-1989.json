@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "romanian-revolution-1989",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A, and it is the clearest case in the round for owner question 2. December 1989 in Romania is one of the revolutions of 1989 and cannot be argued from anything else, and this atlas holds not one of the others: no fall of the Berlin wall, no round table in Poland, no Czechoslovak November, no German reunification, no dissolution of the Soviet Union. All of those are on the brief’s list of twelve named neighbours that the committed candidate list does not carry because their Wikidata classes are not among the queries’. Until a candidates round with the right classes fetches them, 1989 cannot be wired here at all."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q204213",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Romanian revolution",
+    "pt": "Revolução Romena de 1989"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q204213"
+    }
+  ],
+  "title": "Romanian Revolution (1989)",
+  "summary": "Wikidata item Q204213, imported by tools/import/wikidata.mjs. The item's own description reads \"1989 popular uprising in Romania against the regime of Nicolae Ceaușescu\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1989,
+    "end": 1989,
+    "date": "1989-12-25",
+    "endDate": "1989-12-27"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "world-war-i--arab-revolt--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Arab Revolt\", revision 1370428832"
+    }
+  ],
+  "from": "world-war-i",
+  "to": "arab-revolt",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The revolt is an operation of the war’s Middle Eastern theatre and could not have been anything else. The Hashemites of the Hejaz rose against the Ottoman state because a Britain at war with that state would pay, arm and ship for them, and the correspondence with McMahon that preceded the rising is a wartime bargain struck for a wartime purpose. Without the war there is no subsidy, no landing at Rabegh and no reason to move in 1916 rather than at some other time. The atlas does not yet hold the Sykes-Picot agreement being negotiated in the same months against the same promises, so the argument about what was promised to whom cannot be made here.",
+  "dispute": null
+}

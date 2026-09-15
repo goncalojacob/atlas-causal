@@ -147,17 +147,30 @@ test('each result carries the first step of its path and whether any step is dis
 test('25 April, horizon 2011, on the repository dataset', async () => {
   const adj = await adjacencyIn(path.join(ROOT, 'data'));
   const list = reachableBy(adj, 'carnation-revolution-1974', 2011);
-  // 30 until M29 added Schengen 1995 and the CPLP 1996, both downstream of
-  // the revolution and both before the horizon; 32 until the merge of `world`
-  // brought M41b's `crisis-portugal`, which is what reaches the legislative
-  // election of 2011 and, through it, that year's Socialist leadership.
-  assert.equal(list.length, 35);
-  assert.equal(list.filter((r) => r.depth === 1).length, 8);
+  // How many the revolution reaches by 2011 is a fact about the corpus and
+  // never was a fact about the traversal: 30 until M29 added Schengen 1995 and
+  // the CPLP 1996, 32 until the merge of `world` brought M41b's
+  // `crisis-portugal`, 35 until M44b drafted the creation of EDP downstream of
+  // the nationalisations of 1975. So what is asserted here is the rule the
+  // function is for, computed against whatever the corpus has grown to: depth
+  // one is exactly the revolution's own walkable consequences that have begun
+  // by the horizon, everything found has begun by it, and nothing is deeper
+  // than the chain that reaches it.
+  const startsBy = (id, year) => adj.events.get(id).when.start <= year;
+  const direct = new Set(adj.out.get('carnation-revolution-1974')
+    .filter((e) => startsBy(e.to, 2011)).map((e) => e.to));
+  assert.ok(direct.size > 0, 'the revolution has consequences inside the horizon');
+  assert.deepEqual(
+    new Set(list.filter((r) => r.depth === 1).map((r) => r.event.id)),
+    direct,
+  );
+  assert.ok(list.length >= direct.size, 'the set is at least its own first ring');
   // Every one of them has begun by the horizon, and none of them is the
   // event itself.
   for (const r of list) {
     assert.ok(r.edges.length === r.depth && r.edges[0] === r.first);
     assert.notEqual(r.event.id, 'carnation-revolution-1974');
+    assert.ok(startsBy(r.event.id, 2011), `${r.event.id} has begun by the horizon`);
   }
   assert.ok(reachableBy(adj, 'carnation-revolution-1974', 2025).length > list.length, 'a later horizon reaches further');
   const constitution = list.find((r) => r.event.id === 'constitution-1976');

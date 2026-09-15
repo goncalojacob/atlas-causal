@@ -13,6 +13,91 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-15, after **M44b** (`docs/m44-brief.md` §4 and its amendments after
+review; **on branch `m44`, cut from `origin/m0`, and nothing of it merged into
+`m0` except the milestone lines**): of M44a's 82 imported records, **30 were
+kept and wired, 50 retracted with the reason in the record, and 2 merged into
+records the atlas already held**; fifty-one edges were written by hand, three
+Portuguese events were drafted and three retracted actors reinstated with them.
+**All 30 kept records are Portuguese-reaching within two hops. Two of the 45
+stranded world events stopped being stranded.** The account is
+`## M44b: what was wired, what was withdrawn, and the two numbers` below, with
+`docs/m44-connections.md` and `docs/m44-retractions.md`.
+
+Before it, M44a: **140 candidates ticked by a rule, 82
+records imported, 58 refused and every refusal counted by reason.** The atlas
+holds **292 active events**, up from 210, and three of the categories that were
+empty are not: `war` 0 → 20, `revolution` 0 → 10, `treaty` 3 → 15. The 1890s go
+from three events to eight, the 1940s from twelve to twenty-four, the 1990s from
+thirteen to twenty-nine. **No historical claim in any of it was written by this
+run**: every summary is the Wikidata item's own description, said to be
+unchecked, and M44b is where a person argues the edges.
+
+**The tick rule is at the top of `docs/wikidata-candidates.md`, written before
+a box was ticked**, and it is reproducible from that file plus `data/` alone.
+The pool is the 1,481 `world-*` rows of the committed list, less 91 already
+held — 86 by the item id on a record, four by a label matching a record's title
+or one of its names, and one named by hand — leaving 1,390. Four sets, in
+order, no row twice: **set 1, named, 36** (all of Appendix A); **set 2, thin
+decades, 34**; **set 3, `revolution`, 8**; **set 4, the remainder to the cap,
+62**. Of the 140, **111 ids were added to `items`** and 29 were already there
+from deviation 447, so `items` is 703 and holds no duplicate (A3).
+
+**82 created, 58 refused, and the refusals are two classes and not one.**
+**46 are the lane** — a placeless event with no point, no place record and no
+lane named for it in the seeds file. **12 are the class table**: ten items whose
+classes are not in it, and two whose classes disagree with each other —
+`Q295875`, ANZUS, and `Q194284`, the General Agreement on Tariffs and Trade,
+each of which Wikidata calls both a treaty and an organisation.
+The table was not widened to force a yield. 164 Wikipedia leads are cached.
+
+**What the owner still has to settle: 22 of deviation 447's twenty-nine.**
+M44-0 gave six of them a lane by hand and a seventh reached one from its own
+point, so seven landed — the two Balkan wars and the Balkan Wars, the Winter
+War, the Kosovo war, the Yugoslav wars and the European Charter. The other
+**22 were walked and refused again, by name**, which is the honest state of
+them: the Cold War, the 1918 pandemic, HIV/AIDS, the Six-Day War, Sykes–Picot,
+Kyoto, the Arab Spring, the War on Terrorism, the first Chechen and first
+Nagorno-Karabakh wars, the Russo-Japanese, Spanish–American, Philippine–
+American, Polish–Soviet, Soviet-Afghan and Iran–Iraq wars, the Entente
+Cordiale, the Antarctic Treaty, CITES, the 2009 swine flu pandemic and the
+2007–2008 financial crisis. Each is **one line of data** in
+`data/imports/wikidata-seeds.json` → `lanes` whenever the owner says which lane
+it belongs in; deviation 545 lists why each failed M44-0's rule. Until then a
+third of set 1 cannot land, and M44b writes no edge for any of them.
+
+**Two decisions were taken on the brief's own recommendation and not by the
+owner**, and each is one commit to undo. **Owner question 2**: `--candidates`
+was **not** run again. The committed list of 6 September was enough for all
+four sets, and a candidates round is about three hours of runner time — the
+resource whose exhaustion stopped this repository for a day (deviation 442).
+The twelve named neighbours it would have reached are still unresolved: the
+September 11 attacks, the fall of the Berlin Wall, German reunification, the
+dissolution of the USSR, the Bosnian War, the Cuban missile crisis, the Prague
+Spring, the East German uprising of 1953, the refugee crisis of 2015, Soviet
+collectivisation, the Pact of Steel and any US presidential election. They are
+worth a round of their own with the right classes. **Owner question 3**: the
+lane *mechanism* is not M44's — it landed in M44-0 — and what is left of the
+question is the 22 above, which is data and not code.
+
+**Four things had to be fixed before a single record could land, and none of
+them was about a record.** The import Action checked out shallow, so
+`build-index.mjs` wrote a history index nothing else here agrees with and the
+suite went red on the fixtures (deviation 671); its log could not be read from
+the sandbox that pushes the branch, so the first two failures were invisible
+(672); the contribute form dropped `regionNote`, the sentence saying a lane was
+written and not measured, which the import test had been naming as a gap since
+the field was added (673); and one test pinned the corpus's first year at 1899,
+which set 2 exists to change (674). `node tools/validate.mjs` without `--index`:
+**0 errors**, 2,203 records. `node --test --test-timeout=120000` against a
+locally rebuilt, unstaged index: **1,420 tests, 0 skipped, 0 failed**.
+
+M44a's own account is **`## M44a: the ticks, the import, and what it refused`**,
+below, with deviations 669 to 675. M44b wires these 82 records or retracts
+them; M44c drafts the Portuguese half. What follows immediately here is M38b's
+account, unchanged.
+
+
 2026-09-15, after **M38b** (`docs/m38-brief.md`, with its amendments after
 review): **M38 is done — the map has names, and the ground has them too.**
 A river, a lake, a range and a peak are written at priority 2, each at its own
@@ -1103,7 +1188,7 @@ not reach: `1998-portuguese-abortion-referendum`,
 `delgado-assassinated-1965`, `delgado-candidacy-1958`, `eanes-elected-1976`,
 `east-timor-independence-2002`, `east-timor-invasion-1975`,
 `eec-accession-1986`, `eec-application-1977`, `efta-accession-1960`,
-`eleicoes-legislativas-regionais-na-madeira-em-1976`, `euro-adoption-1999`,
+`1976-madeira-regional-legislative-election`, `euro-adoption-1999`,
 `expo-98`, `exposicao-mundo-portugues-1940`,
 `fiftieth-anniversary-25-april-2024`, `geringonca-2015`, `goa-annexed-1961`,
 `government-falls-2025`, `guinea-bissau-declares-independence-1973`,
@@ -6490,7 +6575,7 @@ files in hand and not the dots drawn (deviation 664).
      record to make a map read better. **The owner's**: either those records
      want a shorter `names[0]` or the map wants a different field, and both are
      a person's decision rather than a label layer's.
-684. **`NEAR_ZOOM` is gone and the near threshold is a span: `NEAR_SPAN`, two
+693. **`NEAR_ZOOM` is gone and the near threshold is a span: `NEAR_SPAN`, two
      cells wide.** Deviation 633 recorded that `k = 4` in a wide, short pane
      puts 218 degrees on screen and asked for ten of the twenty-four cells and
      4.4 MB, and left the choice to the owner; the owner chose the span. `k` is
@@ -6501,8 +6586,9 @@ files in hand and not the dots drawn (deviation 664).
      (120 degrees) because the far file is the whole world simplified and stops
      being good enough at about the width of the cells that would replace it:
      Iberia at 110 degrees asks for its cells exactly as before, the 218-degree
-     pane no longer does. **Numbered 684 and not 669** because `m44` has
-     already used 669 to 683 and the two branches have to merge.
+     pane no longer does. **Numbered 693 and not 669** because `m44` had
+     already used 669 to 683 when this was written; it went on to use 684 to
+     692 as well, and the merge renumbered this one from 684 (deviation 694).
      `tests/base-layer.test.mjs` gained a `WIDE_BOX`: four of its tests paired a
      one-cell box with `k = 1`, which is a pane that cannot exist now that the
      box is what decides, and they say what they mean with the box instead.
@@ -6521,6 +6607,698 @@ not touched, and no repository setting was changed.
 **The sandbox ran the browser tests.** 1,420 tests, **none skipped** — 19 of
 them the new `tests/base-labels.test.mjs`, three more in `tests/labels.test.mjs`
 and two more in `tests/map-browser.test.mjs`.
+
+## M44a: the ticks, the import, and what it refused
+
+On branch `m44`, cut from `origin/m0` at `3ecc5c1`. The import branch was
+`import/run-m44-2026-09-15`, fast-forward-merged back into `m44`; nothing of
+this is on `m0` but the `M44 started` and `M44a done` lines, each a single-file
+commit of its own (A10).
+
+### The rule, and what each set kept
+
+Written at the top of `docs/wikidata-candidates.md` before a box was ticked,
+and reproducible from that file plus `data/`: sitelinks and the item id are
+both in the row, ties break by the item id read as a number, and a world row's
+decade is its own date's — every world row is printed under the one `## 2020s`
+heading, which is why a decade rule that reads the heading keeps nothing at
+all.
+
+| set | what it keeps | ticked | created | refused |
+|---|---|--:|--:|--:|
+| 1 | Named: the world row Appendix A names | 36 | 14 | 22 |
+| 2 | Thin decades: 8 each in the 1890s and 1900s, 6 each in the 1930s, 1940s, 1950s | 34 | 19 | 15 |
+| 3 | The zero category `revolution` | 8 | 8 | 0 |
+| 4 | The remainder to the cap, by sitelinks | 62 | 41 | 21 |
+| | | **140** | **82** | **58** |
+
+`items` went from 592 to 703: **111 ids added, 29 already there** from
+deviation 447, no duplicate. The cursor went 563 → 703, `pending` empty.
+
+### What it refused, by reason
+
+- **46 for want of a lane.** A placeless event with no point of its own, no
+  point on the location or country it names, no place record, and no lane
+  named for it in the seeds file. Twenty-two of these are deviation 447's
+  twenty-nine, walked again after M44-0's rewind and refused again by name.
+- **10 because their class is not in the table**: the Cuban War of
+  Independence, the Panic of 1907, nuclear warfare, the Declaration of the
+  Establishment of the State of Israel, the North Atlantic Treaty, the 1973
+  oil crisis, the Irish War of Independence, the surrender of Japan, the
+  Armistice of Compiègne and the Cambodian genocide.
+- **2 because their classes disagree**: ANZUS and the General Agreement on
+  Tariffs and Trade are each a treaty and an organisation, so the table types
+  one as an event and the other as an actor and the tool refuses rather than
+  choosing.
+
+The table was not widened. Adding a class is an editorial judgement about what
+that class *is* and belongs in a commit of its own with the judgement written
+down (§3e).
+
+### What landed, against the corpus it landed in
+
+| decade | before → after | | category | before → after |
+|---|---|---|---|---|
+| 1890s | 3 → **8** | | `war` | 0 → **20** |
+| 1900s | 5 → **7** | | `revolution` | 0 → **10** |
+| 1910s | 27 → 36 | | `treaty` | 3 → **15** |
+| 1920s | 15 → 19 | | `disaster` | 2 → 3 |
+| 1930s | 11 → **16** | | `election` | 48 → 48 |
+| 1940s | 12 → **24** | | `death` | 1 → 1 |
+| 1950s | 13 → **18** | | none | 156 → 195 |
+| 1960s | 14 → 19 | | | |
+| 1970s | 33 → 36 | | **active events** | 210 → **292** |
+| 1980s | 12 → 15 | | | |
+| 1990s | 13 → **29** | | | |
+| 2000s | 12 → 18 | | | |
+| 2010s | 16 → 20 | | | |
+| 2020s | 24 → 27 | | | |
+
+Eighty-one of the 82 are placeless and stand on a lane alone, each carrying the
+`regionNote` that says whether the lane was measured or written; six carry a
+lane M44-0 named for them by hand. Oceania is still **0**, as the brief said it
+would be. 164 Wikipedia leads are cached under
+`tools/import/cache/wikipedia`, which is what M44b reads.
+
+### Deviations
+
+669. **Set 1 is all thirty-six of Appendix A and not the seven of amendment
+     A1.** A1 says twenty-nine of the thirty-six sit in
+     `wikidata-state.json` → `runs.import.done`, so that ticking them would
+     import nothing, and that M44a must not rewind them. That was true at
+     `de697a9`. It is not true now: **M44-0 rewound the cursor for all
+     twenty-nine on 8 September**, from 592 done to 563, in a commit of its own
+     — the rewind deviation 447 said a run that fixed the lane would have to
+     make — and `origin/m0` carries it. A0 says every claim in the amendments
+     was checked at `de697a9` and to recheck the files they name if `m0` has
+     moved; it has, and this is that recheck. Amendment A16 says the same in
+     advance: after M44-0, "set 1 is the thirty-six of Appendix A and A1's
+     restriction to seven no longer applies". **Nothing was rewound by this
+     run.** It also changes nothing mechanical: all twenty-nine were already in
+     `items` and not in `done`, so `--import` would have walked them whatever
+     this run put in a tick box — ticking the rows only makes the document say
+     what the importer was going to do. Seven of the twenty-nine landed and 22
+     were refused again, which is the count the owner needs. **To reverse**:
+     untick those twenty-nine rows; the importer's behaviour does not change.
+670. **One row was struck from the pool by hand, and it is named.** `Q638903`,
+     the 5 October 1910 revolution, is `data/events/republic-proclaimed-1910.json`
+     — active, the same date, and carrying no item id, so neither the item test
+     nor the label test reaches it and set 3 would have ticked it. The import
+     would then have written a second record for the proclamation of the
+     Republic. The exclusion is written into the rule at the top of the
+     candidate file with its reason, so it is reproducible; set 3 took the next
+     row by sitelinks instead, the 2006 Thai coup. **Mine**, and the owner may
+     prefer the other reading, which is that the two are different events. **To
+     reverse**: drop the name from the rule and re-run it.
+671. **The import Action was checking out a shallow repository, and no import
+     had run since that started to matter.** `actions/checkout@v4` defaults to
+     depth 1. `tools/lib/history.mjs` builds a record's history from `git log`
+     and refuses a shallow repository outright — a shallow repository is not
+     half a history, it is a different one — so `build-index.mjs` wrote
+     `history-*` shards with different content and, being content addressed,
+     different names. The job's own `validate --index` passed on them, because
+     it was checking an index the job had just rebuilt; what failed was the
+     suite, against the fixture index committed here, which was built with the
+     history. Four tests, rule 16, batch 1 thrown away and the cursor not
+     moved. Reproduced with no import at all: a `--depth 1` clone of the branch
+     fails the same four and a full clone passes them. `validate.yml` and
+     `deploy.yml` — the other job that builds and commits `data/index/` — have
+     carried `fetch-depth: 0` all along; this one never did, and the history
+     index landed on 10 September, after the last import branch ran.
+     `tests/workflows.test.mjs` pins it now. **To reverse**: remove the two
+     lines, and no import will ever commit a batch again.
+672. **The Action says which tests failed, at the end where they can be read.**
+     Only the tail of a job's log — about five thousand lines — can be fetched
+     from this sandbox, and TAP prints six lines for every passing test, so in a
+     suite of 1,420 the failures sit thousands of lines above the end. The
+     visible window of both failed runs was tests 593 to 1420, all passing, and
+     the run could not say what had stopped it. The output is still kept whole;
+     the failing tests are repeated after it. This is the same reason
+     `docs/import-report.md` exists. **To reverse**: one `if` back to a `||`.
+673. **`regionNote` joins `KEPT_KEYS` in `src/contribute/bundle.js` — a change
+     to `src/` inside an import round.** Batch 1 wrote
+     `data/events/balkan-wars.json` with the lane M44-0 named for it, and
+     `bundle.test.mjs` went red: the form drops `regionNote`, so the first save
+     through it would have deleted the sentence saying that lane was written by
+     a tool and not measured from a point — the distinction M44-0 exists to
+     make. This was not a discovery: `tests/import-wikidata.test.mjs` has
+     carried it as a named exemption since the field was added, with the fix
+     written down — a gap in `KEPT_KEYS`, where `historicalNames` already sits,
+     "and not something the import can fix by writing less" — and said it bit
+     nothing in `data/` only because no import had written a record there yet.
+     M44a is that import. The exemption is gone and the import may now drop
+     nothing at all. No form draws the field and none should: why a lane was
+     overridden is not a thing to ask a contributor for. **To reverse**: remove
+     the key and put the exemption back, and the next reviewer's save deletes
+     the note on 81 records.
+674. **A test no longer pins the year the corpus starts at.** "The atlas's own
+     strip: Portugal's three posts, and every turn counted" asserted
+     `own.extent` was `{ min: 1899, max: 2026 }`. Set 2 of the tick rule exists
+     to fill the 1890s, so batch 1 moved the near end to 1894 and the strip said
+     so. Neither end was ever a fact about the strip — the comment above it
+     already said as much about the far end, which was 2025 until the merge of
+     `world`. What the test is for is the rule: the strip is held to what the
+     atlas holds, so it starts at the corpus and not at Portugal's own first
+     year of 1886. That is what it asserts now, against whatever the corpus has
+     grown to, the way the turn counts just above it are the number of records
+     rather than a number written out. Nothing is skipped and no assertion is
+     dropped. **To reverse**: write the two years back, and the next import
+     round reds it again.
+675. **A9 named the second refusal class and named it wrong, and the count is
+     reported as it happened.** The amendment expected six Appendix A rows to be
+     refused for a class the table does not hold — `proxy war`, `zoonosis`,
+     `ethnic conflict`, `charter`, `multilateral treaty`, `disease outbreak`.
+     Not one of the six was refused for its class: the Yugoslav wars and the
+     European Charter were created, and the Cold War, the 1918 pandemic, CITES
+     and the 2009 swine flu pandemic were refused for want of a lane, which is
+     the first class and not the second. The second class is real and is
+     something else — ten items whose classes are not in the table and two whose
+     classes disagree — and it is counted separately above, as A9 asks. The
+     table was not widened, which is the instruction that mattered. **Nothing
+     to reverse**: this is a count, not a change.
+
+## M44b: what was wired, what was withdrawn, and the two numbers
+
+On branch `m44`, continuing from M44a at `9e212b8`. Nothing of this is on `m0`
+but the `M44b started`, `M44b done` and `M44 done` lines, each a single-file
+commit of its own (A10). The two documents the round was asked for are
+`docs/m44-connections.md` and `docs/m44-retractions.md`.
+
+### The eighty-two
+
+| | records |
+|---|--:|
+| kept, wired and Portuguese-reaching | **30** |
+| retracted, with the reason in the record | **50** |
+| merged into a record the atlas already held | **2** |
+| | **82** |
+
+Fifty-one edges were written by hand. Three events were drafted — the decree of
+22 March 1911, the ban on the National Syndicalists of 1934, the creation of
+EDP in 1976 — and three retracted actors were reinstated with them.
+
+**By decade of the record**, kept against retracted:
+
+| decade | imported | kept | retracted | merged |
+|---|--:|--:|--:|--:|
+| 1890s | 5 | 0 | 4 | 1 |
+| 1900s | 2 | 1 | 1 | |
+| 1910s | 9 | 8 | 1 | |
+| 1920s | 4 | 3 | 1 | |
+| 1930s | 5 | 1 | 4 | |
+| 1940s | 12 | 7 | 5 | |
+| 1950s | 5 | 5 | 0 | |
+| 1960s | 5 | 0 | 5 | |
+| 1970s | 3 | 2 | 0 | 1 |
+| 1980s | 3 | 0 | 3 | |
+| 1990s | 16 | 1 | 15 | |
+| 2000s | 6 | 1 | 5 | |
+| 2010s | 4 | 0 | 4 | |
+| 2020s | 3 | 1 | 2 | |
+| **total** | **82** | **30** | **50** | **2** |
+
+The shape of that column is the round's finding in one place. The decades this
+atlas has a European and Portuguese spine for — the 1910s, the 1940s, the 1950s
+— kept twenty of twenty-six. The 1990s kept one of sixteen. What the atlas
+holds of the 1990s is Portuguese domestic politics and the European treaties,
+and a world round that imports the Yugoslav wars, the Great Lakes, the
+post-Soviet crises and the colour revolutions into it has nothing to attach
+them to.
+
+**The retraction rate is 61 %**, against M40b's 31 % and M41b's 57 %. That is
+the Portuguese-reaching bar of §4a doing what owner question 1 said it would
+do, and the cost it named in advance.
+
+### The two numbers
+
+**Thirty of thirty.** Every M44 record still active is joined to a Portuguese
+event by a path of active edges of length one or two: twelve at one hop,
+eighteen at two. None fails the bar, because the ones that would have been
+retracted instead.
+
+**Two of the forty-five.** Two of the stranded world events stop being
+stranded: the European Convention on Human Rights, which reaches Portugal
+through the Czechoslovak coup of 1948 and Portugal's signature of the North
+Atlantic treaty, and the treaty of Sèvres, through the Arab revolt and the war
+of 1914. Both went from no path at all to two hops. Eight more were brought
+nearer without reaching the bar; eleven of the forty-five were already inside
+it before the round began, having a Portuguese path but no Portuguese
+neighbour; twenty-four did not move.
+
+**One more number, and it is the plainest.** Before this round **92 of the 292
+active events carried no active edge at all** — the 82 the import had just
+written, plus the ten the brief counted in section 1. After it there are
+**ten**, and they are those same ten: nine presidential elections of the
+Republic and the Iberian blackout of 2025, every one of them Portuguese and
+every one of them already here before M44a. **Not one record M44b kept was left
+without an edge, and not one of the fifty it retracted is counted here**,
+because a tombstone carries no degree.
+
+**Why two and not twenty, and it is the thing the owner should read.** Not one
+of the eighty-two imported records could be given a direct edge to a Portuguese
+event. The twelve that sit one hop out sit there through records the atlas
+already held — the war of 1914, the Paris conference, the constitution of 1933,
+the North Atlantic treaty, the Fund agreement of 1978, 25 November 1975, the
+euro — and this round added nothing to the set of world events adjacent to a
+Portuguese one. A stranded record only comes inside the bar if something beside
+it is beside a Portuguese event, so importing more world does not move the
+number. Writing the Portuguese records the world touches does. Eleven of them
+are named, with what each would unlock, in §5b of `docs/m44-connections.md`;
+the first three are Portugal's Biafra policy and the São Tomé airlift, the
+treaty of Lisbon of 2007, and the Portuguese presidency of 1992 with the
+Cutileiro plan.
+
+### What it refused to write
+
+Three refusals are set out in §5a of `docs/m44-connections.md`: the Charter of
+the United Nations as a universal precondition for every instrument the United
+Nations convened a conference for, which cost three records; the claim that Goa
+emboldened the Indian forward policy of 1962, which is contested and which no
+source here carries, and which cost three more; and a precondition from the
+Greek civil war to the Korean war, whose real object is the Truman doctrine and
+NSC-68 and which would have said something false. Nothing was written in order
+to keep a record.
+
+### Deviations
+
+676. **The round wrote no `consensus` edge at all — all fifty-one are
+     `probable`.** Amendment A4 allows `consensus` only on an edge citing at
+     least one source that is neither `wikidata` nor `wikipedia-en` nor
+     `wikipedia-pt`. Nine of the fifty-one do cite a held book, and for none of
+     the fifty-one could this run say it had read the passage that carries the
+     claim; the books are cited with a null locator, as the corpus has done
+     since M2, which is attribution and not verification. M40b wrote sixty-one
+     `consensus` edges on the same footing. Marking every edge `probable` is
+     what A4 asks for when the scholarship cannot be pointed at, and it is also
+     a signal: a reviewer who wants `consensus` in this atlas will have to read
+     the books, not the validator. **To reverse**: raise the confidence on the
+     nine book-citing edges, which is one field each.
+677. **Two of the eighty-two were records the atlas already held, and M44a's
+     tick rule could not see either.** `carnation-revolution` (Q193245) is
+     `carnation-revolution-1974`, which carries no Wikidata item and is titled
+     "25 April", so neither the item test nor the label test reached it;
+     `boer-wars` (Q1676845) is the series of two wars but the record written
+     from it starts on 11 October 1899 and ends in 1899, which is the second
+     war the atlas already held. Both are `merged`, keeping their item so that
+     rule 21 still sees one record of a kind, and naming their survivor. This
+     is deviation 670's blind spot twice more; 670 caught it for the
+     proclamation of the Republic by hand. **A future import round should test
+     the date as well as the label.** **To reverse**: set both back to active,
+     and the atlas holds two records of 25 April.
+678. **Every edge written in this round has as one endpoint a record M44a
+     imported or one of the three this round drafted, and that is the run's own
+     discipline and not the brief's.** It is why the second number means
+     something: a stranded event that came inside the bar came inside because a
+     new record was wired beside it, not because the run went round the old
+     corpus writing edges it could have written in any milestone. The cost is
+     that three edges the round could see and believes in were not written —
+     `world-war-i --caused--> february-revolution`,
+     `world-war-ii --enabled--> the-holocaust` and
+     `molotov-ribbentrop-pact --enabled--> katyn-massacre`, which would put
+     three stranded records at one, two and two hops. They are §5c of
+     `docs/m44-connections.md`. **Whose**: the owner's, and it is one commit of
+     three edges to take.
+679. **Eight of amendment A5's eleven actors stay retracted.** Three were
+     reinstated — `university-of-porto`, `national-syndicalists`,
+     `energias-de-portugal` — each named by an event drafted in the same
+     commit, as rule 11 requires. The other eight need an event that is a law,
+     a merger or a sale, and §4c's hard constraint is that a record is written
+     only if a source already in `data/sources/` carries it. This run could not
+     point at the banking legislation of 1983 or 1984, at the tranches of the
+     Portugal Telecom privatisation, at the Brisa concession or at the
+     Portucel sale in any of the thirty-four sources here, and a record of "the
+     banking law of the mid-1980s" that cannot say which law it is would be a
+     gap dressed as a record. The eight and the work each needs are in §5b of
+     `docs/m44-connections.md`. **To reverse**: nothing to reverse; the work is
+     to add the sources.
+680. **Amendment A13's split was not applied, and the reinstatements of A5 were
+     done here rather than in an M44c.** A13 says M44b wires the imported
+     records and M44c drafts the Portuguese events and lands the actor
+     reinstatements. The run protocol's prompt for this milestone scopes the
+     amendments to A0 through A12 and assigns the A5 and A11 reinstatements to
+     M44b by name, so that is what was done, and the three events drafted are
+     the three that a held source and a certain year could carry. The nine
+     rows of §4c that are not here — the Concordat of 1940, the Security
+     Council vote of 1961, the 1-2-3 incident in Macau, the family law reform
+     of 1977, the continental shelf claim of 2009, and the six company rows
+     above — are untouched and are still M44c's if the owner wants one.
+     **Whose**: the owner's, and the question is whether `M44c done` is still
+     owed before `M44 done` stands. This run wrote `M44 done` because the
+     prompt told it to and because A13 is outside the range the prompt named.
+681. **"Stranded" is reported against two definitions, because the brief uses
+     one and its own bar uses another.** Section 1 of the brief counts the 45
+     as world events that "touch no Portuguese event at all", which is a
+     one-hop measure; section 4a sets the keep bar at a path of at most two.
+     Under the one-hop reading, **none** of the 45 stopped being stranded,
+     because no edge in this round gave any of them a Portuguese neighbour.
+     Under the two-hop reading — which is A12's, since a bridge gives a pair
+     "Portuguese reach" — **two** did, and eleven were already inside it before
+     the round began. Both numbers are printed by the script in §4 of
+     `docs/m44-connections.md` and both are in this file above. The headline
+     number is two. **Nothing to reverse**: this is a count, not a change.
+682. **`balkan-wars` was retracted as redundant, which is a class of one.** The
+     same import wrote records of the First and the Second Balkan war and this
+     round wired both — the first into the second, and each of them into
+     Sarajevo, which is where the historiography puts the claim the series
+     record would have carried. Three records of two wars is less of the atlas
+     rather than more. The reason is in the tombstone and it says plainly that
+     it is redundancy and not unconnectability. **To reverse**: set it active
+     and give it the Sarajevo edge; the two parts keep theirs.
+
+683. **One browser test fails intermittently on a loaded runner, it is not this
+     round's, and this run established that rather than calling it a flake.**
+     `tests/map-browser.test.mjs`, "zoomed to Portugal, Lisbon is named once and
+     its title carries its names", failed once in three full-suite runs here
+     and passed three times in three when run alone. Its last assertion is that
+     at k = 8 over Portugal every label on screen is a `city-label`; what it
+     sees when it fails is a `feature-label` as well. The cause is that the test
+     waits only for the first city label and then reads the whole label layer,
+     while the base map's cells are still arriving — the placer gives the boxes
+     to the cities first and the physical features take what is left, so a cell
+     of rivers or ranges landing afterwards is a different competition and a
+     different answer. `settledBase`, added to this same file by `00009dce` for
+     exactly this on the pan test, is the waiting this one does not do.
+     **Adding that wait makes it fail every time**, which means the assertion is
+     not true of the settled picture at all and the test has been passing on a
+     half-drawn one. **Reproduced with none of M44b's data**: a worktree at
+     `9e212b8b`, M44a's head, with the same one-line wait added, fails the same
+     test the same way. So it is older than this round and what it is really
+     about — whether a physical feature should be named at that zoom — is an
+     editorial question about the map that belongs to whoever owns M38b, not to
+     a wiring round. The probe was reverted and nothing in `tests/` was left
+     changed by it. **Nothing to reverse**: this is a finding. The work is one
+     line of waiting plus a decision about what the assertion should say.
+
+### What the owner must decide before `m44` is merged
+
+1. Whether an **M44c** is still owed for the nine rows of §4c this run did not
+   touch (deviation 680).
+2. Whether to take the **three edges of §5c** that this run left for the old
+   corpus (deviation 678).
+3. Whether the **eleven Portuguese records of §5b** are the next milestone,
+   which is what §4 of `docs/m44-connections.md` argues and what the second
+   number says.
+4. Whether **rule 22 should be widened** to the shape A4 describes, so that the
+   validator refuses a `consensus` edge resting on Wikidata alone rather than
+   passing it. A4 says that is somebody else's milestone; it is noted here.
+5. Whether `convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados`
+   should be renamed into English, and whether the same run should take
+   `eleicoes-legislativas-regionais-na-madeira-em-1976` with it (§5d).
+6. What "zoomed to Portugal, Lisbon is named once" should assert, now that
+   deviation 683 has shown it has been reading a half-drawn map. That is a
+   question about the map and not about this round.
+
+## M44c: the three corrections, and the edge the arrow of time refused
+
+On branch `m44`, continuing from M44b at `3963f06`. Nothing of this is on `m0`
+but the `M44c started` and `M44c done` lines, each a single-file commit of its
+own (A10). The merge run that lands `m44` on `m0` is not this one.
+
+Three corrections were asked for and a fourth thing was found on the way in.
+Two of the three are done whole. The third is done in two parts of three; the
+part that is missing is missing because the atlas's own rule 4 refuses it, and
+that is the one thing on this branch that needs the owner rather than another
+run.
+
+### 1. `croatian-war-of-independence`
+
+The record said `start: 1995, end: 1995, date: "1995-11-12", endDate:
+"1995-08-07"` — a war that began in November and ended in August of the same
+year. It now says:
+
+```json
+"when": { "start": 1991, "end": 1995 }
+```
+
+**What was supplied**: the two years, 1991 and 1995, and nothing else. They are
+not this run's claim about the world; they are what the record's own imported
+summary already carried, quoting the Wikidata item's description — "war of
+independence fought from 1991 to 1995".
+
+**What was deliberately not supplied**: a day. `date` and `endDate` were
+removed rather than replaced. 12 November 1995 is the Erdut agreement and
+7 August 1995 the close of Operation Storm, so neither is the war's beginning
+or its end, and this run had no source it could open for the real ones. A war's
+first day is exactly the kind of claim `CLAUDE.md` says the assistant does not
+write, and a wrong precision is worse than an honest year. The correction is
+said twice on the record, in `retraction.reason` and in `review.note`, with the
+flags `dates-corrected-m44c` and `wants-exact-dates`.
+
+The record **stays retracted**. Fixing it is not a step towards reinstating it:
+it is so that whoever does reinstate it finds it consistent.
+
+### 2. The importer's Portuguese labels — nineteen records
+
+`tools/import/wikidata.mjs` takes `labels.en ?? labels.pt ?? qid` for a title
+and derives the id from it, so every item with no English label was filed in
+Portuguese. `CLAUDE.md` says the atlas is in English. Nineteen records were in
+that state.
+
+**Renamed** (former id → id now; every former id is in `aliases` and resolves):
+
+| was | is now | status |
+|---|---|---|
+| `convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados` | `convention-relating-to-the-status-of-refugees` | active |
+| `eleicoes-legislativas-regionais-na-madeira-em-1976` | `1976-madeira-regional-legislative-election` | active |
+| `eleicoes-legislativas-regionais-na-madeira-em-1980` | `1980-madeira-regional-legislative-election` | retracted |
+| `eleicoes-legislativas-regionais-na-madeira-em-1984` | `1984-madeira-regional-legislative-election` | retracted |
+| `eleicoes-legislativas-regionais-na-madeira-em-1988` | `1988-madeira-regional-legislative-election` | retracted |
+| `eleicoes-legislativas-regionais-na-madeira-em-1992` | `1992-madeira-regional-legislative-election` | retracted |
+| `eleicoes-legislativas-regionais-nos-acores-em-1980` | `1980-azores-regional-legislative-election` | retracted |
+| `eleicoes-legislativas-regionais-nos-acores-em-1984` | `1984-azores-regional-legislative-election` | retracted |
+| `eleicoes-legislativas-regionais-nos-acores-em-1988` | `1988-azores-regional-legislative-election` | retracted |
+| `eleicoes-legislativas-regionais-nos-acores-em-1992` | `1992-azores-regional-legislative-election` | retracted |
+| `assalto-ao-banco-de-angola-na-damaia-em-21-de-outubro-de-1975` | `robbery-of-banco-de-angola-in-damaia-on-21-october-1975` | retracted |
+| `assalto-ao-banco-nacional-ultramarino-da-malveira-em-6-de-outubro-de-1980` | `robbery-of-banco-nacional-ultramarino-in-malveira-on-6-october-1980` | retracted |
+| `assalto-ao-banco-pinto-e-sottomayor-de-lisboa-em-soure` | `robbery-of-banco-pinto-e-sottomayor-of-lisbon-in-soure` | retracted |
+| `assalto-ao-banco-pinto-e-sottomayor-em-albufeira-em-17-de-agosto-de-1976` | `robbery-of-banco-pinto-e-sottomayor-in-albufeira-on-17-august-1976` | retracted |
+| `assassinato-de-jose-oscar-de-vasconcelos` | `assassination-of-jose-oscar-de-vasconcelos` | retracted |
+| `assassinato-de-rogerio-canha-e-sa` | `assassination-of-rogerio-canha-e-sa` | retracted |
+| `desastre-ambiental-de-almograve` | `almograve-environmental-disaster` | retracted |
+| `sismo-de-portugal-de-2009` | `2009-portugal-earthquake` | retracted |
+| `tragedia-de-borba` | `borba-tragedy` | retracted |
+
+Two edges were carried by the cascade, each keeping its own former id as an
+alias: `constitution-1976--1976-madeira-regional-legislative-election--enabled`
+and `world-war-ii--convention-relating-to-the-status-of-refugees--caused`.
+Every record keeps the Portuguese label the import gave it, now in `names`, so
+a reader who types it still finds the record. `node tools/validate.mjs`
+reported **0 errors** after every one of the nineteen, which is what proves
+nothing was left pointing at an old id.
+
+**Deliberately not renamed**, because the name is the world's and not the
+importer's:
+
+- `holodomor`, `porajmos`, `euromaidan` — three records whose title matches
+  their Portuguese sitelink and is not Portuguese: two are the Ukrainian and
+  Romani words and the third is a Ukrainian coinage. `porajmos` even has an
+  English sitelink ("Romani Holocaust") and keeps its own name anyway.
+- `batepa-massacre`, `espirito-santo-bank-of-campolide-robbery`,
+  `2025-setubal-local-elections`, `2017-pedrogao-grande-wildfire`,
+  `1975-sao-tomean-legislative-election`, the eight `coup-d-etat` records, and
+  the four `robbery-of-…` / `assault-on-…` records M20 already filed in
+  English. Each carries diacritics only inside a proper noun, which is what an
+  English title does with São Tomé and Setúbal.
+- `telo-2007-historia-contemporanea`, a source record whose title is a
+  Portuguese book's actual title, written by a person and not by an import.
+- Every CShapes actor and place. None was in this state, and the rename tool
+  still refuses them for the reason amendment A2 gives.
+
+### 3. The three edges of §5c
+
+Two are written. Both are **`probable`**, and this is the point to be strict
+about: rule 9 wants at least two sources by different authors for `consensus`,
+and amendment A4 records that rule 22 tests only `wikipedia-en` and
+`wikipedia-pt`, so an edge resting on Wikipedia alone passes the validator
+while resting on nothing a historian would accept. This run has no network
+beyond GitHub and will not write a source record for a book it has not opened —
+that would be a fabrication, and the worst kind here, because it would look
+exactly like scholarship. So each edge cites what its endpoints already carry,
+carries the flag `wants-a-real-citation`, and says in `review.note` that a
+person must supply two citations by different authors before it can be raised.
+Neither was raised by citing two Wikipedia language editions: that is the
+loophole A4 exists to close.
+
+| edge | type | confidence | what it still needs |
+|---|---|---|---|
+| `world-war-i --caused--> february-revolution` | `caused` | `probable` | two citations by different authors; the `caused`/`precondition-of` choice checked by someone who knows the literature on 1917 |
+| `molotov-ribbentrop-pact --enabled--> katyn-massacre` | `enabled` | `probable` | two citations by different authors |
+
+**The third could not be written**, and this is deviation 692 below and the one
+thing on this branch that is the owner's rather than a run's.
+`world-war-ii --enabled--> the-holocaust` is refused by rule 4:
+
+```
+error [rule 4] edges/world-war-ii--the-holocaust--enabled.json:
+  arrow of time: "world-war-ii" cannot start after "the-holocaust"
+```
+
+`the-holocaust` is dated 1933 to 1945 and the war starts in 1939, so the atlas
+already says the Holocaust began six years before its proposed cause. This is
+not a quirk of the edge: `the-holocaust` has **no incoming edge at all**, and
+under its present dates it can have none from anything after 1933.
+
+### 4. The recount
+
+M44b's counting script, run again from `data/` on this branch's head. The hop
+counts are recomputed and never asserted from memory; the baseline column is
+the same script run on a worktree at `3963f06`, M44b's head.
+
+| | M44b | M44c |
+|---|--:|--:|
+| **stranded world events that stopped being stranded** | **2** | **4** |
+| of the 45, gained a direct Portuguese neighbour | 0 | 1 |
+| of the 45, brought nearer but still beyond two hops | 8 | 9 |
+| active events / active edges | 243 / 270 | 243 / 272 |
+
+The two that are new are `february-revolution`, **3 hops → 1**, and
+`russian-revolution-of-1905`, **4 hops → 2**, which rides in behind it.
+
+**§5c's prediction was exact.** It said that `world-war-i --caused-->
+february-revolution` alone would move the February revolution from three hops
+to one, and it did: `world-war-i` is a record the script's frozen rule counts
+as Portuguese, so one edge from it makes the revolution a direct neighbour.
+That is also the whole of the "gained a direct Portuguese neighbour" row going
+from 0 to 1 — the first such record in the round.
+
+The Katyn edge moved `katyn-massacre` from **unreachable to 3 hops**: nearer,
+and still outside the bar, because everything between it and a Portuguese
+record is the eastern front. `treaty-of-portsmouth` went 4 → 3 as a
+side-effect. `the-holocaust` stays at 3, where the missing edge would have put
+it at 2.
+
+### Deviations
+
+684. **The index had been stale since M44a, and two rounds did not see it.**
+     `node tools/validate.mjs --index` reported **108 errors** on this branch's
+     head before this run touched anything: M44a's import batches and M44b's
+     fifty-four records went in without `node tools/build-index.mjs`. Nine
+     tests read the repository through the index rather than through `data/`
+     and all nine were failing — `build-index`, `prerender`, five in
+     `spine-loader`, and `validate-cli`. The run protocol names the validator
+     **without** `--index`, which is why it went unseen. Rebuilt in a commit of
+     its own; `sources.html` came with it. Whether the protocol should name
+     `--index` is a question for whoever owns it.
+685. **Two refusals in `tools/migrate/ids.mjs` were narrowed to what their own
+     reasons argue.** The tool refused both records this run was told to
+     rename. (a) The tombstone refusal says "the answer is to rename the record
+     that stands in its place" — but a retracted record with `supersededBy:
+     null` has no such record, its former id keeps resolving through `aliases`
+     like anybody's, and `CLAUDE.md`'s English rule does not stop at a
+     withdrawn record. It now asks for a successor rather than for a status,
+     and `merged` keeps its own refusal. (b) Amendment A2 is about an id an
+     import **re-derives**: a CShapes actor's id is a value in the mapping file
+     and its presences are `<actor>-<year>`. The Wikidata import re-derives
+     nothing of the sort — `itemIndex` keys the records it has by `kind:Qnnn`
+     and enriches whichever record claims the item, deriving an id from a label
+     only for an item no record claims — so a record that keeps its `wikidata`
+     across a rename is re-found under its new id. The refusal now asks for
+     that identifier. Two tests rewritten and two added; 22 pass in
+     `tests/migrate-ids.test.mjs`. **This is a change to a tool the brief did
+     not name**, and it is recorded here because without it the task it did
+     name could not be done at all.
+686. **Seventeen of the nineteen renames are tombstones**, which is more than
+     §5d asked for: it named two records, both active. They were taken for the
+     same reason the Croatian war's dates were, and the brief's own words —
+     "find **every** record in this state" — decided it. A withdrawn record is
+     still a record of this atlas, still appears in `review.html`, and whoever
+     un-retracts it should not find it misfiled.
+687. **`docs/import-report.md` was deliberately not rewritten.** Its line
+     `created event convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados
+     from Q60433` is a log of what the import did, under the id it did it
+     with; rewriting it would make the log say something that did not happen,
+     and the file is regenerated by the next import anyway. The two
+     hand-written documents that point *into* the corpus —
+     `docs/m22-retractions.md` and `docs/m44-connections.md` — were rewritten,
+     each with a note saying what was renamed and when, so that neither account
+     is falsified and a reader who follows an id lands on a record.
+688. **A test asserted an absolute that only held because nothing had ever been
+     renamed.** `tests/spine.test.mjs`, "the id table is in the defined order",
+     asserted that **no** edge id is ever in the spine's id table. But
+     `merges.aliases` is a pair `[alias, owner]` and interns both, so an edge
+     with a former id costs one entry — and the cascade gave two edges a former
+     id for the first time in the corpus's life. The test now asserts the
+     property (an edge is in the table exactly when the merges name it) instead
+     of the number, which is what `ffd737c` and `522e79e` did today to three
+     other tests.
+689. **The nineteen records keep their Portuguese label in `names`.** Nothing
+     asked for this. It is here because a rename that makes a record
+     unfindable by the only name it has ever had is a regression dressed as a
+     correction, and `names` is the field rule 18 already holds to that shape.
+690. **Nothing was written for `the-holocaust`'s dates.** The obvious way to
+     make the third edge validate is to give the record a `{ min, max }` start,
+     which the interval schema supports and which would be a defensible thing
+     to say about a subject where 1933, 1938, 1941 and 1942 are all argued for.
+     It was not done. Changing a record's dates so that an edge fits is
+     motivated reasoning, and *when the Holocaust begins* is a historical claim
+     of exactly the kind `CLAUDE.md` forbids this assistant from writing. It is
+     the owner's, with a source they have read.
+691. **Deviation 683's browser test still fails under load and passes alone.**
+     `tests/map-browser.test.mjs`, "zoomed to Portugal, Lisbon is named once",
+     failed once in a full `node --test` of 1,422 tests and passed all 35 of
+     its own file's tests when run alone. Nothing in this round touches the map
+     or its data. It is 683, unchanged, and still an editorial question about
+     M38b.
+692. **One of the three edges the owner decided is not written**, and no
+     workaround was taken. See §3 above. The choices are the owner's: re-date
+     `the-holocaust` from a source a person has read; or split it into the
+     persecution from 1933 and the extermination from 1941, which is what its
+     own summary already half does and which would let the war enable the
+     second without touching the first; or leave it and accept that the record
+     stays at three hops with no incoming edge. This run took none of them.
+
+### What is still the owner's, after this run
+
+M44b left six questions. This run answers two of them and adds one.
+
+- **Answered, §5d question 5**: the Portuguese ids are renamed, and seventeen
+  more with them.
+- **Answered, question 2**: two of the three §5c edges are written, as
+  `probable`. The third is question 7 below.
+- **Still open**: questions 1 (the nine rows of §4c), 3 (the eleven Portuguese
+  records of §5b), 4 (widening rule 22 — this run met exactly the gap A4
+  describes and could only work round it with a `review.note`), and 6 (what the
+  Lisbon label test should assert).
+- **New, question 7**: what to do about `the-holocaust`'s dates, so that the
+  edge the owner decided can be written. Deviation 692 names the three ways.
+
+## merge-m44: the third import round on `m0`
+
+2026-09-15, on the branch `m0`, the way `merge-world` landed `world`: **`m44`
+is merged into `m0` as a single merge commit**, 37 commits of the branch
+against 10 of `m0`. The round's 82 imported records, its 53 new edges, its 19
+renames, its two documents and its own account are on `m0`; `m0`'s near span,
+the M45 brief and `docs/history/pr-sections.md` are unchanged by it.
+
+**Both accounts survive in this file whole.** `STATUS.md` was the only text
+conflict either side could have had, and it did not textually conflict:
+`m44` wrote its three accounts above `m0`'s M38b lead and said so in its own
+words ("What follows immediately here is M38b's account, unchanged"), and the
+merged file is exactly the two line counts less the base — 7,460 = 6,721 +
+7,436 − 6,697. The one line of `m0` that did not survive verbatim is one
+`m44` deliberately rewrote: a historical paragraph that named
+`eleicoes-legislativas-regionais-na-madeira-em-1976`, which the rename cascade
+of §5d moved to `1976-madeira-regional-legislative-election`.
+
+**`data/index/` was not merged, it was rebuilt.** It is generated and
+content-addressed, so a three-way merge of it produces a tree that describes
+neither side. The merge's own index is thrown away by the commit that follows
+it — `node tools/build-index.mjs` over the merged corpus — and
+`node tools/validate.mjs --index` is what says the result is the corpus.
+
+### Deviations
+
+694. **`m0`'s deviation 684 is renumbered 693, and `m44`'s 684 to 692 stand.**
+     Both branches numbered on from 683 without knowing the other had, so two
+     deviations were called 684: `m0`'s, the near threshold becoming a span,
+     and `m44`'s, the index that had been stale since M44a. `m44`'s nine are
+     cross-referenced by its own commits, by `docs/m44-connections.md` and by
+     the M44c section of `docs/history/pr-sections.md`, which names "deviation
+     684" for the stale index; `m0`'s is referenced by nothing but the commit
+     message that wrote it (`2b4c3c39`) and by its own sentence explaining why
+     it was not numbered 669. So the one with no readers moved. Its text now
+     says it was renumbered and by whom; the commit message that names it 684
+     is history and is left as it was written.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "good-friday-agreement",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class B. Its neighbours in this atlas are the Easter Rising and the Irish civil war, and the civil war is itself two hops out, which puts the agreement at three. The records that would shorten the chain are the ones the Easter Rising edge already names as missing — the War of Independence, the Anglo-Irish treaty — and the Troubles, which the atlas does not hold at all. Ireland reaches Portugal here only through the war of 1914, and 1998 is too far along that line."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q208958",
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Good Friday Agreement",
+    "pt": "Acordo de Belfast"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q208958"
+    }
+  ],
+  "title": "Good Friday Agreement",
+  "summary": "Wikidata item Q208958, imported by tools/import/wikidata.mjs. The item's own description reads \"1998 peace pacts between the British, Irish, and Northern Irish governments to end the Troubles\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1998,
+    "end": 1998,
+    "date": "1998-04-10"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

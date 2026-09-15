@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "somali-civil-war",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A: the neighbour is missing. Nothing in this atlas touches Somalia — not the collapse of 1991, not the intervention of 1992, not the piracy of the 2000s — and no edge to a Portuguese event can be argued without inventing one."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q243620",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Somali Civil War",
+    "pt": "Guerra Civil da Somália"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q243620"
+    }
+  ],
+  "title": "Somali Civil War",
+  "summary": "Wikidata item Q243620, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war taking place in Somalia since 1991\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1991,
+    "end": null,
+    "date": "1991-01-26"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

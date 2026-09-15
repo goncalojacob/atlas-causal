@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "majimaji-war",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A: the neighbour is missing. German East Africa bordered Portuguese Mozambique and the rising of 1905 was put down partly along that border, but the atlas holds no record of Portuguese Mozambique before 1960 — not the Barue rising of 1902, not the chartered companies, not the campaigns of pacification — so there is nothing here for it to touch. Retracted for want of a Portuguese Africa before the wars, which is a real gap and is named in docs/m44-connections.md."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q705553",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Maji Maji Rebellion",
+    "pt": "Rebelião Maji Maji"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q705553"
+    }
+  ],
+  "title": "Majimaji War",
+  "summary": "Wikidata item Q705553, imported by tools/import/wikidata.mjs. The item's own description reads \"Colonial war in the south and east of German East Africa, 1905-1907.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1905,
+    "end": 1907,
+    "date": "1905-07",
+    "endDate": "1907-08"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

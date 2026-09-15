@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "philippine-revolution",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A: the neighbour is missing. The revolution belongs with the Spanish-American war and the treaty of Paris of 1898, and the war is not a record here. Its one possible bearing on Portugal — 1898 as the year in which a weak colonial empire was dismembered, while Britain and Germany secretly agreed how Portugal’s might be — runs through the Anglo-German convention of August 1898, which the atlas does not hold either. The treaty of Windsor of 1899 is here and is the Portuguese answer to that convention, but with the convention missing there is no honest edge between them."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q422082",
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Philippine Revolution",
+    "pt": "Revolução Filipina"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q422082"
+    }
+  ],
+  "title": "Philippine Revolution",
+  "summary": "Wikidata item Q422082, imported by tools/import/wikidata.mjs. The item's own description reads \"1896–1898 conflict against Spanish colonial authorities\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1898
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "march-on-rome--beer-hall-putsch--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"March on Rome\", revision 1374461265"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Beer Hall Putsch\", revision 1370735026"
+    }
+  ],
+  "from": "march-on-rome",
+  "to": "beer-hall-putsch",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "Munich in November 1923 was an attempt to do what Rome had done thirteen months earlier, and its organisers said so. The plan was to seize Bavaria and march on Berlin as Mussolini had marched on Rome; the failure taught the lesson the party then acted on for ten years, which was that power had to be arrived at rather than seized. The claim is about the model and the intention, not about the outcome, which was the opposite of the Italian one.",
+  "dispute": null
+}

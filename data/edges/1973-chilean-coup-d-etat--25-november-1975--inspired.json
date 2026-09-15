@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "1973-chilean-coup-d-etat--25-november-1975--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1973 Chilean coup d'état\", revision 1372926646"
+    }
+  ],
+  "from": "1973-chilean-coup-d-etat",
+  "to": "25-november-1975",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "Chile is the case every side in Portugal argued from in 1975, and that is what this edge claims. For the far left and for much of the fifth provisional government, Allende’s fall was the proof that a revolution which left the armed forces and the economy intact would be destroyed, and the argument for moving faster. For the Socialists, for the moderate officers of the Group of Nine and for the Americans, it was the outcome to be avoided at almost any cost, and Kissinger’s remark that Soares was a Kerensky is the same reading from the other end. The confrontation of 25 November was made in Portugal by Portuguese quarrels; what Chile supplied was the frame in which everybody understood what they were doing. Inspired is used here for an example that was read as a warning, and the edge claims nothing more than that.",
+  "dispute": null
+}

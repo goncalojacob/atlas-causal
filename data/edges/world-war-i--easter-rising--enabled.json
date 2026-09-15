@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "world-war-i--easter-rising--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Easter Rising\", revision 1374874334"
+    }
+  ],
+  "from": "world-war-i",
+  "to": "easter-rising",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Rising was timed against the war and not against anything else. The argument inside the Irish Republican Brotherhood for rising in 1916 rather than at some later moment was that England was committed elsewhere and that Germany, being at war with her, could be asked for arms; the Aud sailed with rifles and was scuttled off the Kerry coast three days before Easter Monday. Home Rule had been passed and suspended for the duration, which is the other half of it: the war both removed the constitutional road and supplied the opportunity. This is not a claim that the war caused Irish republicanism, which is much older than the war.",
+  "dispute": null
+}

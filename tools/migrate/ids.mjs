@@ -94,13 +94,21 @@ export function renamePlan(records, kind, oldId, newId, { today = null, maps = [
   const claimant = records.find((r) => (r.aliases ?? []).includes(newId));
   if (claimant) return refuse(`"${newId}" is already an alias of "${claimant.id}"`);
 
-  // A tombstone is a record that was withdrawn and still resolves. Renaming
-  // one moves the address an old link was written against and says nothing
-  // about the record that stands in its place, so the answer is to rename
-  // that one.
-  if (target.status !== 'active') {
-    const instead = typeof target.supersededBy === 'string' ? ` — rename "${target.supersededBy}", which superseded it` : '';
-    return refuse(`"${oldId}" is ${target.status}, not an active record${instead}`);
+  // A record that was withdrawn *and replaced* is not renamed: the rename
+  // would move the address an old link was written against and would say
+  // nothing about the record that stands in its place, so the answer is to
+  // rename that one. M44c narrowed this to what that sentence argues. A
+  // retracted record with `supersededBy: null` has nothing standing in its
+  // place to rename instead, its former id keeps resolving through `aliases`
+  // like anybody's, and it is still a record of this atlas — CLAUDE.md's
+  // "everything is in English" does not stop at a tombstone, and a withdrawn
+  // record whoever un-retracts it will find misfiled is the Croatian war's
+  // dates again in another form.
+  if (target.supersededBy !== null && target.supersededBy !== undefined) {
+    return refuse(`"${oldId}" is ${target.status} — rename "${target.supersededBy}", which superseded it`);
+  }
+  if (target.status === 'merged') {
+    return refuse(`"${oldId}" is merged, not an active record`);
   }
 
   // Amendment A2 / plan review finding 14. A CShapes actor's id is a value in
@@ -108,7 +116,16 @@ export function renamePlan(records, kind, oldId, newId, { today = null, maps = [
   // both re-derived from the map on the next `--import`: renaming the record
   // here would leave the import writing the new id beside the stale one it
   // still owns.
-  if (importWritten(target)) {
+  //
+  // That argument is about an id an import **re-derives**, and M44c found it
+  // being applied to every imported record. The Wikidata import does not
+  // re-derive: `itemIndex` in tools/import/wikidata.mjs keys the records it
+  // has by `kind:Qnnn` and the run enriches the record that claims the item,
+  // deriving an id from a label only for an item no record claims. So a
+  // Wikidata record that keeps its `wikidata` across a rename is re-found
+  // under its new id and is never written twice, and the refusal asks for
+  // that identifier rather than for the origin alone.
+  if (importWritten(target) && !(originTool(target) === 'wikidata' && typeof target.wikidata === 'string')) {
     return refuse(`"${oldId}" was created by the ${originTool(target)} import and is corrected in data/imports/, not here: `
       + 'edit the mapping file and re-run the import (CLAUDE.md, "Correcting a territory")');
   }

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "great-depression--bretton-woods-system--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Depression\", revision 1371653684"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bretton Woods system\", revision 1374837351"
+    }
+  ],
+  "from": "great-depression",
+  "to": "bretton-woods-system",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Bretton Woods was designed against the 1930s and against nothing else. The fixed but adjustable parities, the fund that would lend a country in deficit rather than leave it to devalue, and the prohibition on the competitive devaluation and the bilateral clearing that had broken world trade after 1931 are all answers to what the delegates had lived through. The claim is that the depression set the problem the conference was convened to solve; it is not a claim about which of the two plans on the table, the American or the British, the answer was taken from.",
+  "dispute": null
+}

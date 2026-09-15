@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "sri-lankan-civil-war",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A: the neighbour is missing. Twenty-six years of war in Sri Lanka touch nothing this atlas holds. The Portuguese presence on the island ended in the seventeenth century and is outside the corpus’s period entirely; there is no South Asian record here except Goa and the Indo-Pakistani wars, and no honest edge to either."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q213394",
+  "sitelinks": {
+    "count": 53,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Sri Lankan civil war",
+    "pt": "Guerra civil do Sri Lanka"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q213394"
+    }
+  ],
+  "title": "Sri Lankan civil war",
+  "summary": "Wikidata item Q213394, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict in Sri Lanka (1983–2009) between the government and the separatist organization Liberation Tigers of Tamil Eelam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1983,
+    "end": 2009,
+    "date": "1983-07-23",
+    "endDate": "2009-05-18"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

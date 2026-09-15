@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "population-transfer-in-the-soviet-union",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class B, and with a second reason beside it. What the item describes is twenty-two years of policy under several headings, not an event, and a record dated 1930 that runs to 1952 cannot take an edge that means anything at either end. Its nearest neighbours here are the Molotov-Ribbentrop pact and the Katyn massacre, at two hops and at none. Withdrawn as a topic rather than an event, and for reach."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q85125",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Population transfer in the Soviet Union",
+    "pt": "Transferências populacionais na União Soviética"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q85125"
+    }
+  ],
+  "title": "population transfer in the Soviet Union",
+  "summary": "Wikidata item Q85125, imported by tools/import/wikidata.mjs. The item's own description reads \"transfer and deportation of people in the Soviet Union\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1930,
+    "end": 1930
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

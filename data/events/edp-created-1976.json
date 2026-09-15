@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "edp-created-1976",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The year is 1976 and the run is sure of it; the day and the decree-law number are not written here because this run could not point at them in a source it has read. Check the Diário da República and set when.date before signing."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "title": "The creation of EDP",
+  "summary": "Electricidade de Portugal was constituted in 1976 as a single public undertaking out of the fourteen electricity companies the state had taken over the year before. The nationalisations of 1975 had left the sector in the hands of the state but in the shape private capital had given it, generation and distribution divided among regional concerns; the merger made one company of production, transport and supply, and that company ran Portuguese electricity as a monopoly for the next twenty years. It is in the atlas because it is the point at which the nationalisations stop being an expropriation and become an industrial structure, and because that structure is what the privatisations and the European electricity market later had to undo.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "government"
+    },
+    {
+      "actor": "energias-de-portugal",
+      "role": "institution",
+      "note": "the body the merger constituted"
+    }
+  ]
+}

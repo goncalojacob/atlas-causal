@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "1948-arab-israeli-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q49092",
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "1948 Arab–Israeli War",
+    "pt": "Guerra Árabe-Israelense de 1948"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q49092"
+    }
+  ],
+  "title": "1948 Arab–Israeli War",
+  "summary": "Wikidata item Q49092, imported by tools/import/wikidata.mjs. The item's own description reads \"second and final stage of the 1947–1949 Palestine war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1948,
+    "end": 1949,
+    "date": "1948-05-15",
+    "endDate": "1949-03-10"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

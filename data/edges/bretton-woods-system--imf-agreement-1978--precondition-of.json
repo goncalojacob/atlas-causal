@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "bretton-woods-system--imf-agreement-1978--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bretton Woods system\", revision 1374837351"
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "bretton-woods-system",
+  "to": "imf-agreement-1978",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Fund Portugal went to in 1978 is the Bretton Woods institution, and the terms it went on are the Bretton Woods terms: a standby credit against a programme of demand restraint and exchange-rate correction, negotiated with a body created at a conference Portugal was not at in 1944. This is the edge by which the whole post-war monetary order reaches this atlas. It claims only that the institution and its instrument are the ones the conference made; the Portuguese crisis of 1977 and 1978 had Portuguese causes, which are in the records around it.",
+  "dispute": null
+}

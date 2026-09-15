@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "croatian-war-of-independence",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A, with the Yugoslav cluster, and a second thing should be said about this record while it is being withdrawn: its dates were wrong as imported. It carried a start of 12 November 1995 and an end of 7 August 1995 — the Erdut agreement and the close of Operation Storm — for a war the record’s own cached lead dates from 1991 to 1995. M44c corrected the span to 1991–1995, the two years the record already carried in its own summary, and removed `date` and `endDate` rather than replace them: neither imported date is the war's beginning or its end, and this run had no source it could read for the real ones. A day the atlas has not verified is worse than an honest year. Whoever un-retracts it supplies the precise dates from a source they have opened, if the record wants them at all."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted",
+      "dates-corrected-m44c",
+      "wants-exact-dates"
+    ],
+    "note": "M44c fixed the impossible span (November 1995 to August 1995) to the 1991–1995 the summary already carried, and deliberately supplied no exact start or end date: a war's first day is a historical claim, and CLAUDE.md forbids this atlas writing one it has not read."
+  },
+  "wikidata": "Q68969",
+  "sitelinks": {
+    "count": 59,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Croatian War of Independence",
+    "pt": "Guerra de Independência da Croácia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q68969"
+    }
+  ],
+  "title": "Croatian War of Independence",
+  "summary": "Wikidata item Q68969, imported by tools/import/wikidata.mjs. The item's own description reads \"war of independence fought from 1991 to 1995\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1991,
+    "end": 1995
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

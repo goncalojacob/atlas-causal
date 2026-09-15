@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "geneva-conference--algerian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1954 Geneva Conference\", revision 1369041532"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Algerian War\", revision 1373081356"
+    }
+  ],
+  "from": "geneva-conference",
+  "to": "algerian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Three months separate the accords of 20 July 1954 from the risings of 1 November, and the connection between them is not a coincidence but it is not a simple cause either. Two things carried over. The first is the army: the officers who had lost Indochina went to Algeria with a doctrine of revolutionary war worked out against the Viet Minh and a determination that this would not be lost as well, which is the doctrine Portuguese officers later studied for Angola. The second is the demonstration, for the Algerians, that a colonial power could be beaten in the field. The claim is about the transfer of the doctrine and the example, and it is marked probable because the rising had been planned before Geneva.",
+  "dispute": null
+}

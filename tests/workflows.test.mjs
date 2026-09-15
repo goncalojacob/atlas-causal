@@ -157,6 +157,16 @@ test('the import Action runs only on import branches and never on m0', async () 
     at = next;
   }
   assert.match(text, /git checkout -- data\//);
+  // Every job that builds data/index/ takes the whole history, because
+  // tools/lib/history.mjs reads a record's versions out of `git log` and
+  // refuses a shallow repository rather than claiming half a history. Shallow,
+  // this job wrote `history-*` shards nothing else here agrees with and failed
+  // four tests on the fixture index — M44a's first run, which committed
+  // nothing and left the cursor where it was.
+  assert.match(text, /fetch-depth: 0/);
+  // And the failing tests are said again at the end of the step, because only
+  // the tail of a job's log can be read from outside it.
+  assert.match(text, /grep -a -A 18 '\^not ok ' \/tmp\/tests\.log/);
   const minutes = Number(text.match(/timeout-minutes: (\d+)/)?.[1]);
   assert.ok(minutes >= 90 && minutes <= 360, `the job has a timeout GitHub accepts (${minutes})`);
   // The branch it pushes to is the one it was triggered by, and never m0.

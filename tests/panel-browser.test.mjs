@@ -12,7 +12,7 @@ import path from 'node:path';
 import { withBrowser, open, waitFor, seenIntro, skip } from './browser.mjs';
 import { atlasOf, ROOT } from './helpers.mjs';
 import { defaultState } from '../src/state.js';
-import { horizonSet } from '../src/horizon.js';
+import { horizonSet, horizonYear } from '../src/horizon.js';
 import { MARGIN_YEARS } from '../src/util/window.js';
 
 // A real drag of one end of the time band: press on the handle, move across
@@ -254,9 +254,18 @@ test('a drag of the band leaves the open explanation open and moves the horizon'
         horizon: document.querySelector('.panel .horizon .count').textContent,
         summary: document.querySelector('.panel .summary p').textContent.slice(0, 20),
       };`);
-    // 50 since the world merge of 8 September 2026 joined M40's and M41's
-    // events to 25 April's descendants (46 before it).
-    assert.equal(before.horizon, '50');
+    // What the count is, is the corpus's business and never was this test's:
+    // 46 before the world merge of 8 September 2026 joined M40's and M41's
+    // events to 25 April's descendants, 50 after it, and one more once M44b
+    // drafted the creation of EDP downstream of the nationalisations of 1975.
+    // The rule is that the card prints the set the horizon lights at the
+    // default year, which is what is computed here against whatever the
+    // corpus holds now.
+    const atlas = await atlasOf(path.join(ROOT, 'data'));
+    const resting = { ...defaultState(), selected: 'carnation-revolution-1974' };
+    const lit = horizonSet(atlas, { ...resting, horizon: horizonYear(atlas, resting) }).size;
+    assert.ok(lit > 0, 'the revolution leads somewhere inside the band');
+    assert.equal(before.horizon, String(lit));
 
     await page.eval(dragWindowTo('to', 450));
     await waitFor(page, 'return /to=/.test(location.search);', 'the window in the URL');
