@@ -13,9 +13,18 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-15, after **M44a** (`docs/m44-brief.md` and its amendments after
+2026-09-15, after **M44b** (`docs/m44-brief.md` §4 and its amendments after
 review; **on branch `m44`, cut from `origin/m0`, and nothing of it merged into
-`m0` except the milestone lines**): **140 candidates ticked by a rule, 82
+`m0` except the milestone lines**): of M44a's 82 imported records, **30 were
+kept and wired, 50 retracted with the reason in the record, and 2 merged into
+records the atlas already held**; fifty-one edges were written by hand, three
+Portuguese events were drafted and three retracted actors reinstated with them.
+**All 30 kept records are Portuguese-reaching within two hops. Two of the 45
+stranded world events stopped being stranded.** The account is
+`## M44b: what was wired, what was withdrawn, and the two numbers` below, with
+`docs/m44-connections.md` and `docs/m44-retractions.md`.
+
+Before it, M44a: **140 candidates ticked by a rule, 82
 records imported, 58 refused and every refusal counted by reason.** The atlas
 holds **292 active events**, up from 210, and three of the categories that were
 empty are not: `war` 0 → 20, `revolution` 0 → 10, `treaty` 3 → 15. The 1890s go
@@ -6749,6 +6758,201 @@ would be. 164 Wikipedia leads are cached under
      classes disagree — and it is counted separately above, as A9 asks. The
      table was not widened, which is the instruction that mattered. **Nothing
      to reverse**: this is a count, not a change.
+
+## M44b: what was wired, what was withdrawn, and the two numbers
+
+On branch `m44`, continuing from M44a at `9e212b8`. Nothing of this is on `m0`
+but the `M44b started`, `M44b done` and `M44 done` lines, each a single-file
+commit of its own (A10). The two documents the round was asked for are
+`docs/m44-connections.md` and `docs/m44-retractions.md`.
+
+### The eighty-two
+
+| | records |
+|---|--:|
+| kept, wired and Portuguese-reaching | **30** |
+| retracted, with the reason in the record | **50** |
+| merged into a record the atlas already held | **2** |
+| | **82** |
+
+Fifty-one edges were written by hand. Three events were drafted — the decree of
+22 March 1911, the ban on the National Syndicalists of 1934, the creation of
+EDP in 1976 — and three retracted actors were reinstated with them.
+
+**By decade of the record**, kept against retracted:
+
+| decade | imported | kept | retracted | merged |
+|---|--:|--:|--:|--:|
+| 1890s | 5 | 0 | 4 | 1 |
+| 1900s | 2 | 1 | 1 | |
+| 1910s | 9 | 8 | 1 | |
+| 1920s | 4 | 3 | 1 | |
+| 1930s | 5 | 1 | 4 | |
+| 1940s | 12 | 7 | 5 | |
+| 1950s | 5 | 5 | 0 | |
+| 1960s | 5 | 0 | 5 | |
+| 1970s | 3 | 2 | 0 | 1 |
+| 1980s | 3 | 0 | 3 | |
+| 1990s | 16 | 1 | 15 | |
+| 2000s | 6 | 1 | 5 | |
+| 2010s | 4 | 0 | 4 | |
+| 2020s | 3 | 1 | 2 | |
+| **total** | **82** | **30** | **50** | **2** |
+
+The shape of that column is the round's finding in one place. The decades this
+atlas has a European and Portuguese spine for — the 1910s, the 1940s, the 1950s
+— kept twenty of twenty-six. The 1990s kept one of sixteen. What the atlas
+holds of the 1990s is Portuguese domestic politics and the European treaties,
+and a world round that imports the Yugoslav wars, the Great Lakes, the
+post-Soviet crises and the colour revolutions into it has nothing to attach
+them to.
+
+**The retraction rate is 61 %**, against M40b's 31 % and M41b's 57 %. That is
+the Portuguese-reaching bar of §4a doing what owner question 1 said it would
+do, and the cost it named in advance.
+
+### The two numbers
+
+**Thirty of thirty.** Every M44 record still active is joined to a Portuguese
+event by a path of active edges of length one or two: twelve at one hop,
+eighteen at two. None fails the bar, because the ones that would have been
+retracted instead.
+
+**Two of the forty-five.** Two of the stranded world events stop being
+stranded: the European Convention on Human Rights, which reaches Portugal
+through the Czechoslovak coup of 1948 and Portugal's signature of the North
+Atlantic treaty, and the treaty of Sèvres, through the Arab revolt and the war
+of 1914. Both went from no path at all to two hops. Eight more were brought
+nearer without reaching the bar; eleven of the forty-five were already inside
+it before the round began, having a Portuguese path but no Portuguese
+neighbour; twenty-four did not move.
+
+**Why two and not twenty, and it is the thing the owner should read.** Not one
+of the eighty-two imported records could be given a direct edge to a Portuguese
+event. The twelve that sit one hop out sit there through records the atlas
+already held — the war of 1914, the Paris conference, the constitution of 1933,
+the North Atlantic treaty, the Fund agreement of 1978, 25 November 1975, the
+euro — and this round added nothing to the set of world events adjacent to a
+Portuguese one. A stranded record only comes inside the bar if something beside
+it is beside a Portuguese event, so importing more world does not move the
+number. Writing the Portuguese records the world touches does. Eleven of them
+are named, with what each would unlock, in §5b of `docs/m44-connections.md`;
+the first three are Portugal's Biafra policy and the São Tomé airlift, the
+treaty of Lisbon of 2007, and the Portuguese presidency of 1992 with the
+Cutileiro plan.
+
+### What it refused to write
+
+Three refusals are set out in §5a of `docs/m44-connections.md`: the Charter of
+the United Nations as a universal precondition for every instrument the United
+Nations convened a conference for, which cost three records; the claim that Goa
+emboldened the Indian forward policy of 1962, which is contested and which no
+source here carries, and which cost three more; and a precondition from the
+Greek civil war to the Korean war, whose real object is the Truman doctrine and
+NSC-68 and which would have said something false. Nothing was written in order
+to keep a record.
+
+### Deviations
+
+676. **The round wrote no `consensus` edge at all — all fifty-one are
+     `probable`.** Amendment A4 allows `consensus` only on an edge citing at
+     least one source that is neither `wikidata` nor `wikipedia-en` nor
+     `wikipedia-pt`. Nine of the fifty-one do cite a held book, and for none of
+     the fifty-one could this run say it had read the passage that carries the
+     claim; the books are cited with a null locator, as the corpus has done
+     since M2, which is attribution and not verification. M40b wrote sixty-one
+     `consensus` edges on the same footing. Marking every edge `probable` is
+     what A4 asks for when the scholarship cannot be pointed at, and it is also
+     a signal: a reviewer who wants `consensus` in this atlas will have to read
+     the books, not the validator. **To reverse**: raise the confidence on the
+     nine book-citing edges, which is one field each.
+677. **Two of the eighty-two were records the atlas already held, and M44a's
+     tick rule could not see either.** `carnation-revolution` (Q193245) is
+     `carnation-revolution-1974`, which carries no Wikidata item and is titled
+     "25 April", so neither the item test nor the label test reached it;
+     `boer-wars` (Q1676845) is the series of two wars but the record written
+     from it starts on 11 October 1899 and ends in 1899, which is the second
+     war the atlas already held. Both are `merged`, keeping their item so that
+     rule 21 still sees one record of a kind, and naming their survivor. This
+     is deviation 670's blind spot twice more; 670 caught it for the
+     proclamation of the Republic by hand. **A future import round should test
+     the date as well as the label.** **To reverse**: set both back to active,
+     and the atlas holds two records of 25 April.
+678. **Every edge written in this round has as one endpoint a record M44a
+     imported or one of the three this round drafted, and that is the run's own
+     discipline and not the brief's.** It is why the second number means
+     something: a stranded event that came inside the bar came inside because a
+     new record was wired beside it, not because the run went round the old
+     corpus writing edges it could have written in any milestone. The cost is
+     that three edges the round could see and believes in were not written —
+     `world-war-i --caused--> february-revolution`,
+     `world-war-ii --enabled--> the-holocaust` and
+     `molotov-ribbentrop-pact --enabled--> katyn-massacre`, which would put
+     three stranded records at one, two and two hops. They are §5c of
+     `docs/m44-connections.md`. **Whose**: the owner's, and it is one commit of
+     three edges to take.
+679. **Eight of amendment A5's eleven actors stay retracted.** Three were
+     reinstated — `university-of-porto`, `national-syndicalists`,
+     `energias-de-portugal` — each named by an event drafted in the same
+     commit, as rule 11 requires. The other eight need an event that is a law,
+     a merger or a sale, and §4c's hard constraint is that a record is written
+     only if a source already in `data/sources/` carries it. This run could not
+     point at the banking legislation of 1983 or 1984, at the tranches of the
+     Portugal Telecom privatisation, at the Brisa concession or at the
+     Portucel sale in any of the thirty-four sources here, and a record of "the
+     banking law of the mid-1980s" that cannot say which law it is would be a
+     gap dressed as a record. The eight and the work each needs are in §5b of
+     `docs/m44-connections.md`. **To reverse**: nothing to reverse; the work is
+     to add the sources.
+680. **Amendment A13's split was not applied, and the reinstatements of A5 were
+     done here rather than in an M44c.** A13 says M44b wires the imported
+     records and M44c drafts the Portuguese events and lands the actor
+     reinstatements. The run protocol's prompt for this milestone scopes the
+     amendments to A0 through A12 and assigns the A5 and A11 reinstatements to
+     M44b by name, so that is what was done, and the three events drafted are
+     the three that a held source and a certain year could carry. The nine
+     rows of §4c that are not here — the Concordat of 1940, the Security
+     Council vote of 1961, the 1-2-3 incident in Macau, the family law reform
+     of 1977, the continental shelf claim of 2009, and the six company rows
+     above — are untouched and are still M44c's if the owner wants one.
+     **Whose**: the owner's, and the question is whether `M44c done` is still
+     owed before `M44 done` stands. This run wrote `M44 done` because the
+     prompt told it to and because A13 is outside the range the prompt named.
+681. **"Stranded" is reported against two definitions, because the brief uses
+     one and its own bar uses another.** Section 1 of the brief counts the 45
+     as world events that "touch no Portuguese event at all", which is a
+     one-hop measure; section 4a sets the keep bar at a path of at most two.
+     Under the one-hop reading, **none** of the 45 stopped being stranded,
+     because no edge in this round gave any of them a Portuguese neighbour.
+     Under the two-hop reading — which is A12's, since a bridge gives a pair
+     "Portuguese reach" — **two** did, and eleven were already inside it before
+     the round began. Both numbers are printed by the script in §4 of
+     `docs/m44-connections.md` and both are in this file above. The headline
+     number is two. **Nothing to reverse**: this is a count, not a change.
+682. **`balkan-wars` was retracted as redundant, which is a class of one.** The
+     same import wrote records of the First and the Second Balkan war and this
+     round wired both — the first into the second, and each of them into
+     Sarajevo, which is where the historiography puts the claim the series
+     record would have carried. Three records of two wars is less of the atlas
+     rather than more. The reason is in the tombstone and it says plainly that
+     it is redundancy and not unconnectability. **To reverse**: set it active
+     and give it the Sarajevo edge; the two parts keep theirs.
+
+### What the owner must decide before `m44` is merged
+
+1. Whether an **M44c** is still owed for the nine rows of §4c this run did not
+   touch (deviation 680).
+2. Whether to take the **three edges of §5c** that this run left for the old
+   corpus (deviation 678).
+3. Whether the **eleven Portuguese records of §5b** are the next milestone,
+   which is what §4 of `docs/m44-connections.md` argues and what the second
+   number says.
+4. Whether **rule 22 should be widened** to the shape A4 describes, so that the
+   validator refuses a `consensus` edge resting on Wikidata alone rather than
+   passing it. A4 says that is somebody else's milestone; it is noted here.
+5. Whether `convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados`
+   should be renamed into English, and whether the same run should take
+   `eleicoes-legislativas-regionais-na-madeira-em-1976` with it (§5d).
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
