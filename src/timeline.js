@@ -23,10 +23,12 @@
 // stacked.
 
 import { svg, reuse } from './util/dom.js';
-import { createLinearScale } from './timeline-scale.js';
+import { createTimelineScale } from './timeline-scale.js';
 import { clusterPoints } from './cluster.js';
 import { fromAstronomical, formatYear } from './util/dates.js';
-import { resolveWindow, overlaps, decadeOf, zoomWindow, withMargin } from './util/window.js';
+import {
+  resolveWindow, overlaps, decadeOf, zoomWindow, withMargin, centuryCounts,
+} from './util/window.js';
 import { renderKey, shardsArrived } from './render-key.js';
 import { labelOf, LOADING_LABEL } from './attributes.js';
 import { horizonBand } from './horizon.js';
@@ -122,7 +124,7 @@ const STUB_WIDTH = 2;
 const STUB_HEIGHT = 3;
 const STUB_TALLEST = 9;
 
-export function createTimeline(container, { atlas, state, createScale = createLinearScale, onCluster = null }) {
+export function createTimeline(container, { atlas, state, createScale = createTimelineScale, onCluster = null }) {
   const root = svg('svg', { class: 'timeline', role: 'group', 'aria-label': 'Timeline and the window of time' });
 
   // The one part of the timeline that is not drawn in SVG: the line saying
@@ -157,6 +159,13 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   const domain = atlas.extent
     ? [atlas.extent.min - (atlas.extent.max - atlas.extent.min) * PADDING - 1, atlas.extent.max + (atlas.extent.max - atlas.extent.min) * PADDING + 1]
     : [0, 1];
+  // How the corpus is spread over the centuries, counted once at build and
+  // not per render: it is a fact about the data, and the data does not change
+  // under a reader. It is what decides whether the scale is the linear one it
+  // has always been or the bucketed one (timeline-scale.js), and the atlas
+  // opens on the same count in main.js, so the two never disagree about which
+  // century is the busy one.
+  const counts = centuryCounts(atlas.activeEvents);
 
   let width = 0;
   // The height the pane gives the drawing, minus whatever the note above it
@@ -192,7 +201,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   // know what overlaps; the height only once the lanes are known.
   const measure = () => {
     width = Math.max(container.clientWidth || 960, 320);
-    scale = createScale({ domain, range: [LABEL_WIDTH, width - 12] });
+    scale = createScale({ domain, range: [LABEL_WIDTH, width - 12], counts, extent: atlas.extent });
     // The note is inside the pane and above the drawing, so it is the pane's
     // height less the note's, and it is measured after `note.hidden` is set.
     paneHeight = Math.max(0, (container.clientHeight || 0) - (note.hidden ? 0 : note.offsetHeight || 0));

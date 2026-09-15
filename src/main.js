@@ -16,7 +16,8 @@ import { createPhone } from './phone.js';
 import { createIntro } from './intro.js';
 import { createReadingMode, openingState } from './narrative-mode.js';
 import { parseFocus, lensSet } from './lens.js';
-import { resolveWindow } from './util/window.js';
+import { resolveWindow, centuryCounts, opensOn } from './util/window.js';
+import { fromAstronomical } from './util/dates.js';
 import { bindNarrativeKeys } from './panel/narrative.js';
 import { esc } from './util/esc.js';
 import { createLayerControl } from './layer-control.js';
@@ -42,9 +43,25 @@ try {
   // what the core just saved.
   const shard = loadSearchShard({ dataRoot, manifest: atlas.manifest });
 
-  // Nothing is filled in here: a window bound left null means "as far as the
-  // data goes", and each view resolves it against the atlas it was given. An
-  // empty URL is therefore the whole span, and stays an empty URL.
+  // A window bound left null still means "as far as the data goes", and each
+  // view still resolves it against the atlas it was given. What changed in
+  // M43b is what an *empty* URL opens on.
+  //
+  // It used to be the whole span, and over 1890–2025 that was one picture. Over
+  // 1415–2025 it is six centuries at once: every bar a few pixels wide, the
+  // modern corpus a smear, and nothing in particular to read. So when the
+  // corpus is long and lopsided (util/window.js, `crowded`) the atlas opens on
+  // the century that holds most of it, which is the picture a reader can
+  // actually start from — and the two ends are written into the state, so the
+  // address bar says which century that is rather than describing a screen
+  // nobody can reconstruct. Under the threshold nothing is filled in and an
+  // empty URL stays an empty URL, which is `data/` today.
+  //
+  // A named window always wins: `?from=1415&to=1580` is the founding period
+  // and means exactly what it has always meant. So does a single bound — one
+  // null end is still the data's own — and so does a narrative, whose window
+  // is derived from its step and never taken from here.
+  //
   // A link that names a narrative opens with the walk already derived, so no
   // view is ever built on a state the reading mode has not seen. Everything
   // downstream is given the wrapper, not the store: it is where the step
@@ -59,7 +76,13 @@ try {
   // pictures all describe the same argument; the panel is told, so that a
   // reader handed a shorter walk than the one they were sent is not handed it
   // silently (chain.js).
-  const opened = parseState(window.location.search);
+  const asked = parseState(window.location.search);
+  const opens = asked.from === null && asked.to === null && asked.narrative === null
+    ? opensOn(centuryCounts(atlas.activeEvents), atlas.extent)
+    : null;
+  const opened = opens
+    ? { ...asked, from: fromAstronomical(opens.from), to: fromAstronomical(opens.to) }
+    : asked;
   const walk = chainEdges(atlas, opened.chain).map((edge) => edge.id);
   const cut = retractedSteps(atlas, opened.chain) > 0;
   const sameWalk = (s) => s.selected === opened.selected

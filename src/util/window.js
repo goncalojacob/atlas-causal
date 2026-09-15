@@ -95,6 +95,95 @@ export function decadeOf(astronomicalYear) {
   return { from: start, to: start + 9 };
 }
 
+// ─── Centuries: how the corpus is spread, and where the atlas opens ─────────
+//
+// M43b. Until now the extent was the whole of what the timeline needed to
+// know about time: the lanes were drawn on it linearly and the atlas opened
+// on the whole of it. Over 1890–2025 that is right — a hundred and thirty-five
+// years is one picture — and over 1415–2025 it is not: an even scale over six
+// centuries gives the years nobody wrote about the same width as the years
+// everybody did, and an opening window as wide as the data is a window that
+// shows the reader every event at once and none of them legibly.
+//
+// So two questions are asked of the corpus here, and both are answered by the
+// same count: how many events each century holds. The timeline's scale asks
+// it to know whether to bucket (timeline-scale.js); the bootstrap asks it to
+// know which century to open on (main.js). Both are facts about the data and
+// neither is state, which is why they are computed at the edge of a view and
+// never written into the URL.
+
+export const CENTURY = 100;
+
+// The century an astronomical year falls in — 1975 → 1900, -44 → -100. Floor
+// again, and for the same reason `decadeOf` floors.
+export function centuryOf(astronomicalYear) {
+  return Math.floor(astronomicalYear / CENTURY) * CENTURY;
+}
+
+// How many events begin in each century, keyed by the century's first year.
+// By the year an event *began*, not by every year it covers: an event belongs
+// to the century it started in, and a war counted twice would say the corpus
+// is denser than it is. Astronomical throughout, like the extent it is read
+// beside.
+export function centuryCounts(events) {
+  const counts = new Map();
+  for (const event of events ?? []) {
+    const at = centuryOf(extent(event.when).min);
+    counts.set(at, (counts.get(at) ?? 0) + 1);
+  }
+  return counts;
+}
+
+// The corpus is long and lopsided — which is the one condition under which the
+// timeline changes what it has always done. Two tests, and both have to hold.
+//
+// Long: more than `SPREAD` centuries from the first event to the last. A
+// corpus inside two centuries is one picture and a linear scale is the honest
+// drawing of it, which is what `data/` is today and what every screenshot
+// under docs/screens/ was taken of.
+//
+// Lopsided: some century holds more than `CROWDING` times its even share. An
+// evenly spread corpus over five centuries needs no compression either — the
+// years really are all alike — and bucketing it would move the drawing for
+// nothing.
+const SPREAD = 2;
+const CROWDING = 3;
+
+export function crowded(counts, dataExtent) {
+  if (!counts || counts.size === 0 || !dataExtent) return false;
+  const span = dataExtent.max - dataExtent.min;
+  if (span <= SPREAD * CENTURY) return false;
+  let total = 0;
+  let most = 0;
+  for (const n of counts.values()) {
+    total += n;
+    if (n > most) most = n;
+  }
+  return most > CROWDING * (total / (span / CENTURY));
+}
+
+// The window a reader with no `?from=` and no `?to=` arrives on: the century
+// that holds most of the corpus, clipped to the data's own ends. Null while
+// the corpus is not crowded — then the whole extent is still the opening, as
+// it has been since the window existed.
+//
+// The ends are astronomical, like the extent; the caller writes them into the
+// state in historians' numbering, which is what the URL carries.
+export function opensOn(counts, dataExtent) {
+  if (!crowded(counts, dataExtent)) return null;
+  let best = null;
+  // The earliest century where two hold the same number, so the answer does
+  // not depend on the order a Map happened to be filled in.
+  for (const [century, n] of counts) {
+    if (best === null || n > best.n || (n === best.n && century < best.century)) best = { century, n };
+  }
+  if (best === null) return null;
+  return {
+    from: Math.max(dataExtent.min, best.century),
+    to: Math.min(dataExtent.max, best.century + CENTURY - 1),
+  };
+}
+
 // The wheel over the timeline. Narrowing and widening the band around the
 // year under the cursor, in astronomical years, with the cursor's year
 // keeping its place inside the band — so the reader zooms onto what the
