@@ -1,0 +1,17 @@
+{
+  "from": 1600,
+  "kind": "event",
+  "records": {
+    "fixture-event-deep-1650": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1699
+}

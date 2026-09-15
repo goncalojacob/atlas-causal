@@ -27,22 +27,31 @@ const atlas = await atlasOf(FIXTURE_DATA);
 const polity = atlas.actors.get('fixture-polity-three');
 const office = atlas.offices.get('fixture-office-one');
 
+// What the four tests below scale against. Written out rather than taken from
+// the fixture corpus, which reached 1300 until M43b stretched it to 2025 and
+// will move again with the next record: what a bar's x says about a turn is a
+// fact about the strip and not about how long the corpus happens to be, and a
+// test that read the corpus here would have to be rewritten every time one is
+// added. The corpus's own extent is what the first test is about, and it is
+// asserted there as the rule rather than as two years.
+const HELD = { min: 1200, max: 1300 };
+const held = { ...atlas, extent: HELD };
+
 test('the scale is the actor\'s own interval, held inside what the atlas holds', () => {
-  // The polity runs from 1100 with no end and the fixture atlas holds
-  // 1200–1300, so the strip starts where the records do and ends where they
-  // end: an actor's own years never stretch the picture past the corpus.
-  assert.deepEqual(atlas.extent, { min: 1200, max: 1300 });
-  assert.deepEqual(stripScale(polity, atlas.extent), { min: 1200, max: 1300 });
+  // The polity runs from 1100 with no end, so the strip starts where the
+  // records do and ends where they end: an actor's own years never stretch
+  // the picture past the corpus, whatever the corpus has grown to.
+  assert.deepEqual(stripScale(polity, atlas.extent), { min: atlas.extent.min, max: atlas.extent.max });
   assert.deepEqual(stripScale({ when: { start: 1220, end: 1250 } }, atlas.extent), { min: 1220, max: 1250 });
   // An actor with no interval of its own gets the extent whole.
-  assert.deepEqual(stripScale({ when: null }, atlas.extent), { min: 1200, max: 1300 });
+  assert.deepEqual(stripScale({ when: null }, atlas.extent), { min: atlas.extent.min, max: atlas.extent.max });
   // And with nothing to scale against there is no strip.
   assert.equal(stripScale(polity, null), null);
 });
 
 test('a bar spans the years of its turn, in the strip\'s own units', () => {
-  const { scale, bars } = tenureBars(atlas, polity, office);
-  assert.deepEqual(scale, { min: 1200, max: 1300 });
+  const { scale, bars } = tenureBars(held, polity, office);
+  assert.deepEqual(scale, HELD);
   const at = (year) => ((year - 1200) / 100) * STRIP_UNITS;
   assert.deepEqual(bars.map((b) => b.id),
     ['fixture-tenure-one', 'fixture-tenure-two', 'fixture-tenure-three']);
@@ -52,7 +61,7 @@ test('a bar spans the years of its turn, in the strip\'s own units', () => {
 });
 
 test('bars that would overlap are merged, and the widest turn is what is drawn', () => {
-  const { clusters } = tenureClusters(atlas, polity, office);
+  const { clusters } = tenureClusters(held, polity, office);
   // 1200–1210 and 1208–1220 are 133 units apart in the middle, so they stay
   // apart at this width; three separate turns, three bars.
   assert.deepEqual(clusters.map((c) => c.count), [1, 1, 1]);
@@ -83,7 +92,7 @@ test('a merged bar opens a list of its turns, and each row opens the holder', ()
 });
 
 test('the section draws one strip per office, and a bar opens the holder', () => {
-  const section = officeStripsSection(context(atlas), polity);
+  const section = officeStripsSection(context(held), polity);
   assert.equal(section.key, 'offices');
   assert.equal(section.count, 1);
   assert.match(section.body, /viewBox="0 0 1000 24"/);

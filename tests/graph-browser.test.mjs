@@ -194,10 +194,18 @@ const TITLED = (id) => `
   const title = el && el.querySelector('title');
   return Boolean(title) && title.textContent !== ${JSON.stringify(LOADING_LABEL)};`;
 
+// `from=1200&to=2025` in the three tests below, and it is not decoration.
+// Since M43b the atlas opens on the century that holds most of the corpus
+// (util/window.js, `opensOn`), and a window that is a small share of the data
+// is a window the graph zooms to on arrival — to `FIT_ZOOM`, which is
+// `COLLAPSE_ZOOM` (graph-view.js, `fitToWindow`). So the fixtures' default
+// view is now *above* the threshold these tests are about, and naming the
+// whole extent is how a reader asks for the zoomed-out picture the collapse
+// belongs to. Nothing else about them changes.
 test('a parent holds its parts at the default zoom and gives them up when the reader zooms in', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await watchErrors(page);
-    await open(page, url('?fixtures=1&view=graph'), drawnGraph);
+    await open(page, url('?fixtures=1&view=graph&from=1200&to=2025'), drawnGraph);
     await waitFor(page, TITLED('fixture-event-f'), "the parent's century to land");
 
     const collapsed = await page.eval(`
@@ -269,7 +277,7 @@ const RING = `
 test('a parent keeps its ring at every zoom, collapsed or parted', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await watchErrors(page);
-    await open(page, url('?fixtures=1&view=graph'), drawnGraph);
+    await open(page, url('?fixtures=1&view=graph&from=1200&to=2025'), drawnGraph);
     await waitFor(page, TITLED('fixture-event-f'), "the parent's century to land");
 
     const held = await page.eval(RING);
@@ -405,7 +413,7 @@ test('a mark outside the rectangle on screen is not drawn, and the selection is 
 test('a pane that changes size shows more of the picture, and the drawing follows it', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await watchErrors(page);
-    await open(page, url('?fixtures=1&view=graph'), drawnGraph);
+    await open(page, url('?fixtures=1&view=graph&from=1200&to=2025'), drawnGraph);
     await waitFor(page, TITLED('fixture-event-g'), 'the fixtures to be named');
     // A few notches in, so that the rectangle on screen is narrower than the
     // arrangement and there is something outside it to draw.

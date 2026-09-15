@@ -435,7 +435,7 @@ export function createPanel(container, {
   // event is drawn and why. The same call the timeline and the graph make.
   function lanes(s) {
     if (s.group === 'none') return [];
-    return lanesFor(s.group, atlas, resolveWindow(s, atlas.extent), lensSet(atlas, s), s.lanes);
+    return lanesFor(s.group, atlas, resolveWindow(s, atlas.extent, atlas.opens), lensSet(atlas, s), s.lanes);
   }
 
   // Everything a card is given. No card reaches for the container, the state
@@ -516,7 +516,7 @@ export function createPanel(container, {
   let drawnFor = null;
 
   function keyOf(s) {
-    const window = resolveWindow(s, atlas.extent);
+    const window = resolveWindow(s, atlas.extent, atlas.opens);
     return {
       card: OPENINGS.map((field) => s[field] ?? '').join('|'),
       chain: s.chain.join(','),

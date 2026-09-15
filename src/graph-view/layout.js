@@ -4,7 +4,11 @@
 // does not tangle the edges more than doing nothing would.
 //
 // x is the year, on the whole extent of the data, exactly the scale the
-// timeline keeps. No force simulation: physics would put 1910 beside 2011
+// timeline keeps — which since M43b means the bucketed one over a corpus long
+// enough to need it (timeline-scale.js). The two pictures share the scale and
+// not merely the extent, and they have to: a reader who has just read the
+// thirteenth century as a third of the timeline must not find it a hundredth
+// of the graph. No force simulation: physics would put 1910 beside 2011
 // and lie about time, which is the one thing this atlas may not do.
 //
 // y is free, and is spent on two things. First, one horizontal band per
@@ -26,7 +30,7 @@
 // doing nothing.
 
 import { extent } from '../util/dates.js';
-import { createLinearScale } from '../timeline-scale.js';
+import { createTimelineScale } from '../timeline-scale.js';
 import { laneOf } from '../lanes.js';
 import { clusterPoints, mergeEdges } from '../cluster.js';
 
@@ -139,8 +143,12 @@ function resolveColumn(ids, positions, weights) {
 // events: the events to draw, with a `when`. edges: active edges between
 // them. lanes: what lanes.js gave for the current grouping, in order, each
 // with its members — empty for no grouping at all. dataExtent: the atlas's
-// own { min, max } in astronomical years.
-export function layoutGraph({ events, edges, lanes = [], extent: dataExtent, width = WIDTH }) {
+// own { min, max } in astronomical years. counts: how many events each century
+// holds (util/window.js), which is what decides whether the scale buckets;
+// null is a caller with no corpus to ask, and then the scale is linear.
+export function layoutGraph({
+  events, edges, lanes = [], extent: dataExtent, counts = null, width = WIDTH,
+}) {
   // No grouping is one unnamed field the whole height of the picture, and
   // `hidden` is how the drawing knows not to paint a band or a label for it.
   const bandHeight = lanes.length > BANDLESS_BANDS
@@ -161,7 +169,16 @@ export function layoutGraph({ events, edges, lanes = [], extent: dataExtent, wid
       even: i % 2 === 0,
     }));
   const height = bands[bands.length - 1].y1;
-  const scale = createLinearScale({ domain: domainOf(dataExtent), range: [GUTTER_LEFT, width - GUTTER_RIGHT] });
+  // Kept beside the scale as well as inside it: a function does not survive a
+  // structured clone, and the Worker's reply has to carry enough to build the
+  // same one again (layout-message.js).
+  const scaleInput = {
+    domain: domainOf(dataExtent),
+    range: [GUTTER_LEFT, width - GUTTER_RIGHT],
+    counts,
+    extent: dataExtent,
+  };
+  const scale = createTimelineScale(scaleInput);
 
   // An event with no lane would have nowhere to go. lanes.js gives every
   // shown event one, so this is a guard, not a case: it lands in the last
@@ -361,7 +378,7 @@ export function layoutGraph({ events, edges, lanes = [], extent: dataExtent, wid
     y2: xy.get(edge.to).y,
   }));
 
-  return { width, height, bands, nodes: placed, edges: laid, scale, crossings: bestCrossings, naiveCrossings };
+  return { width, height, bands, nodes: placed, edges: laid, scale, scaleInput, crossings: bestCrossings, naiveCrossings };
 }
 
 // The level of detail. `layoutGraph` above places every event once and knows

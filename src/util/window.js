@@ -7,12 +7,24 @@
 // loaded atlas knows, so resolving happens here — at the edge of a view —
 // and never in the state.
 
-import { extent, toAstronomical } from './dates.js';
+import { extent, toAstronomical, fromAstronomical } from './dates.js';
 
 // state + the data's own extent → { from, to } in astronomical years, or
 // null when there is no data to bound it with.
-export function resolveWindow(state, dataExtent) {
+//
+// `opens` is the atlas's own opening window (`opensOn` below, computed in
+// data.js beside the extent), and it answers **only the URL that names
+// neither end**. Over 1890–2025 there is none and the whole extent is the
+// answer, as it always was; over 1415–2025 there is one, because the whole
+// extent is six centuries at once and no reader starts there.
+//
+// Only when both ends are null, and deliberately: `?from=1500` alone still
+// runs to the end of the data. One named bound is a reader saying where to
+// start and leaving the other to the corpus, and answering it with a century
+// somewhere else would be answering a question nobody asked.
+export function resolveWindow(state, dataExtent, opens = null) {
   if (!dataExtent) return null;
+  if (opens && state.from === null && state.to === null) return { from: opens.from, to: opens.to };
   const from = state.from === null ? dataExtent.min : toAstronomical(state.from);
   const to = state.to === null ? dataExtent.max : toAstronomical(state.to);
   return from <= to ? { from, to } : { from: to, to: from };
@@ -75,7 +87,15 @@ export function horizonIsOpen(state) {
 // Historians' numbering, like the two ends themselves and like `windowAt`:
 // the order of the years is the same in both numberings, and only arithmetic
 // needs the astronomical one.
-export function containsYear(state, year) {
+//
+// `opens` for the same reason `resolveWindow` takes it, and it has to be the
+// same answer: this is asked to know whether choosing a record needs the band
+// moved (search-box.js), and a question about the drawn window answered from
+// the written one would leave the reader's own choice faded outside it.
+export function containsYear(state, year, opens = null) {
+  if (opens && state.from === null && state.to === null) {
+    return year >= fromAstronomical(opens.from) && year <= fromAstronomical(opens.to);
+  }
   return (state.from === null || year >= state.from) && (state.to === null || year <= state.to);
 }
 
@@ -106,11 +126,12 @@ export function decadeOf(astronomicalYear) {
 // shows the reader every event at once and none of them legibly.
 //
 // So two questions are asked of the corpus here, and both are answered by the
-// same count: how many events each century holds. The timeline's scale asks
-// it to know whether to bucket (timeline-scale.js); the bootstrap asks it to
-// know which century to open on (main.js). Both are facts about the data and
-// neither is state, which is why they are computed at the edge of a view and
-// never written into the URL.
+// same count: how many events each century holds. The timeline's scale asks it
+// to know whether to bucket (timeline-scale.js); the atlas asks it once at
+// load to know which century to open on (data.js, `opens`). Both are facts
+// about the data and neither is state, which is why neither is ever written
+// into the URL — an empty URL stays an empty URL, and what it opens on is the
+// corpus's answer rather than a pair of years frozen into a link.
 
 export const CENTURY = 100;
 

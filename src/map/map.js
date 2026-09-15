@@ -548,7 +548,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     regionsGroup.style.display = drawingEvents ? '' : 'none';
     // Events by overlap with the window, territories by its far end: a
     // border is a state of affairs at a moment, an event is an interval.
-    const timeWindow = resolveWindow(s, atlas.extent);
+    const timeWindow = resolveWindow(s, atlas.extent, atlas.opens);
     // And one period either side of it, which is as far out as the map draws
     // at all. Inside the margin and outside the band a mark is faded; past
     // the margin there is no mark, and the timeline is where the reader sees
@@ -671,7 +671,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     //
     // Não entra na chave do render porque já lá está: a janela é um dos seus
     // campos, e uma banda que se mexe redesenha o mapa de qualquer maneira.
-    const year = resolveWindow(s, atlas.extent)?.to ?? null;
+    const year = resolveWindow(s, atlas.extent, atlas.opens)?.to ?? null;
     // Como uma cidade chega ao registo de lugar que é. A correspondência é
     // dados e não código: a `id` vem escrita na própria feature, posta lá pelo
     // importador a partir do `wikidata` ou de uma linha que uma pessoa

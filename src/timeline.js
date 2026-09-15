@@ -243,7 +243,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       && !e.target.closest('[data-id], [data-cluster]')
       && yearAt(e.clientX).x >= LABEL_WIDTH;
     if (!handle && !onGround) return;
-    const window = resolveWindow(state.get(), atlas.extent);
+    const window = resolveWindow(state.get(), atlas.extent, atlas.opens);
     drag = {
       kind: handle ? handle.getAttribute('data-window') : 'band',
       origin: window,
@@ -265,7 +265,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     if (x < LABEL_WIDTH) return;
     e.preventDefault();
     const whole = Math.max(atlas.extent.max - atlas.extent.min, 1);
-    setWindow(zoomWindow(resolveWindow(state.get(), atlas.extent), year, e.deltaY, { whole }));
+    setWindow(zoomWindow(resolveWindow(state.get(), atlas.extent, atlas.opens), year, e.deltaY, { whole }));
   }, { passive: false });
   root.addEventListener('pointermove', (e) => {
     if (!drag) return;
@@ -299,7 +299,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     const delta = e.key === 'ArrowLeft' ? -step : e.key === 'ArrowRight' ? step : 0;
     if (!delta) return;
     e.preventDefault();
-    const window = resolveWindow(state.get(), atlas.extent);
+    const window = resolveWindow(state.get(), atlas.extent, atlas.opens);
     const kind = el.getAttribute('data-window');
     if (kind === 'from') setWindow({ from: window.from + delta, to: window.to });
     else if (kind === 'to') setWindow({ from: window.from, to: window.to + delta });
@@ -612,7 +612,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // render does not ask for is dropped by `done()` at the end.
     const into = Object.fromEntries(Object.entries(layers).map(([name, g]) => [name, reuse(g)]));
     drawn = new Map();
-    const window = resolveWindow(s, atlas.extent);
+    const window = resolveWindow(s, atlas.extent, atlas.opens);
     // What is drawn as a bar at all: the band and one period either side of
     // it. Past that an event is a stub — it is still there, it is simply not
     // what the reader is looking at, and packing, stacking and labelling a

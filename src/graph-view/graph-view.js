@@ -23,7 +23,7 @@
 
 import { svg, svgTitle } from '../util/dom.js';
 import { formatInterval, formatYear } from '../util/dates.js';
-import { overlaps, resolveWindow } from '../util/window.js';
+import { overlaps, resolveWindow, centuryCounts } from '../util/window.js';
 import { renderKey, shardsArrived } from '../render-key.js';
 import { labelOf, LOADING_LABEL } from '../attributes.js';
 import { convergence } from '../graph.js';
@@ -160,6 +160,10 @@ export function edgeKey() {
 }
 
 export function createGraphView(container, { atlas, state, onCluster = null }) {
+  // How the corpus is spread over the centuries, counted once at build as the
+  // timeline counts it: it is what decides whether the scale buckets, and the
+  // two pictures must not answer that differently (timeline-scale.js).
+  const counts = centuryCounts(atlas.activeEvents);
   // The arrangement depends on which events are shown, what the bands are and
   // where the band of time is, and all three change under the reader: it is
   // rebuilt when they do and kept when they do not, so panning, zooming,
@@ -281,6 +285,9 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       edges: [...atlas.edges.values()].filter((e) => e.status === 'active' && ids.has(e.from) && ids.has(e.to)),
       lanes,
       extent: atlas.extent,
+      // The same count the timeline's scale is built from (util/window.js), so
+      // the two pictures share a scale and not only an extent.
+      counts,
     };
   }
 
@@ -580,7 +587,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // always pass one.
   function draw(s, box = view()) {
     note.hidden = !s.bbox;
-    const timeWindow = resolveWindow(s, atlas.extent);
+    const timeWindow = resolveWindow(s, atlas.extent, atlas.opens);
     // One period either side of the band is as far out as the graph draws,
     // and since H4b as far out as it lays anything out: beyond it a node is
     // not faded, it is not there, and the timeline is where the reader sees
@@ -912,7 +919,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // arrangement, and that may be an arrangement that arrives from elsewhere
   // long after this line has been read.
   function fitToWindow() {
-    const timeWindow = resolveWindow(state.get(), atlas.extent);
+    const timeWindow = resolveWindow(state.get(), atlas.extent, atlas.opens);
     if (!timeWindow || !laid) return;
     const x0 = laid.scale.x(timeWindow.from);
     const x1 = laid.scale.x(timeWindow.to);

@@ -5,7 +5,13 @@ import path from 'node:path';
 import {
   createAtlas, loadAtlas, loadNarratives, loadSources, INDEX_GENERATION,
 } from '../src/data.js';
-import { FIXTURE_DATA, atlasOf } from './helpers.mjs';
+import { FIXTURE_DATA, atlasOf, fixtures } from './helpers.mjs';
+
+// The fixture corpus, counted rather than written down: it reached 1300 until
+// M43b stretched it to 2025 and it will move again with the next record. What
+// these tests are about is that the loader reads what is on disk.
+const corpus = await fixtures();
+const EVENTS = corpus.records.filter((r) => r.kind === 'event');
 
 // A fetchJson over the fixture directory, so loadAtlas runs without a
 // browser and the on-demand record fetch can be observed. The query string
@@ -39,11 +45,16 @@ test('loadAtlas reads the manifest, the core, and record text on demand', async 
   assert.match(calls[1], /^tests\/fixtures\/data\/index\/core-[0-9a-f]{12}\.json$/);
   assert.equal(calls.filter((url) => url.includes('/index/attributes-')).length, 0,
     'and not one attribute shard: the loader draws the picture, the page asks for the names');
-  assert.equal(atlas.events.size, 12);
-  assert.equal(atlas.activeEvents.length, 11);
-  assert.equal(atlas.sources.size, 4);
+  assert.equal(atlas.events.size, EVENTS.length);
+  assert.equal(atlas.activeEvents.length, EVENTS.filter((e) => e.status === 'active').length);
+  assert.equal(atlas.sources.size, corpus.records.filter((r) => r.kind === 'source').length);
   assert.equal(atlas.land, null, 'fixture manifest lists no land');
-  assert.deepEqual(atlas.extent, { min: 1200, max: 1300 });
+  // The extent is the first and last year the active events reach, whatever
+  // the corpus has grown to.
+  const years = EVENTS.filter((e) => e.status === 'active')
+    .map((e) => e.when.start?.min ?? e.when.start);
+  assert.equal(atlas.extent.min, Math.min(...years));
+  assert.ok(atlas.extent.max >= Math.max(...years));
   assert.deepEqual(atlas.regions.map((r) => r.id), ['fixture-lane-1', 'fixture-lane-2', 'fixture-lane-3']);
 
   const before = calls.length;

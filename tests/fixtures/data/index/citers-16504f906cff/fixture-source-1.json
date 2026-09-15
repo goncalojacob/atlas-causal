@@ -38,6 +38,54 @@
     },
     {
       "dissent": false,
+      "id": "fixture-event-deep-1415--fixture-event-deep-1498--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1498--fixture-event-deep-1580--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1580--fixture-event-deep-1650--reacted-to",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1650--fixture-event-deep-1755--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1755--fixture-event-deep-1822--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1822--fixture-event-deep-1900--inspired",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1900--fixture-event-deep-1969--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1969--fixture-event-deep-2025--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
       "id": "fixture-event-f--fixture-event-t--reacted-to",
       "kind": "edge",
       "locator": null
@@ -81,6 +129,60 @@
     {
       "dissent": false,
       "id": "fixture-event-d",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1415",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1498",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1580",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1650",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1755",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1822",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1900",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-1969",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-deep-2025",
       "kind": "event",
       "locator": null
     },

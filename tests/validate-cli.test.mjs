@@ -4,7 +4,16 @@ import { spawnSync } from 'node:child_process';
 import { mkdtemp, cp, rename, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { FIXTURE_DATA, ROOT } from './helpers.mjs';
+import { FIXTURE_DATA, ROOT, fixtures } from './helpers.mjs';
+
+// How many records and regions the fixture corpus holds, counted rather than
+// written out: both numbers moved when M43b stretched the fixtures to 2025 and
+// will move again with the next record. What these tests are about is that the
+// tools count what is on disk and report it, not what the count happens to be.
+const corpus = await fixtures();
+const RECORDS = corpus.records.length;
+const REGIONS = corpus.regions.length;
+const countOf = (kind) => corpus.records.filter((r) => r.kind === kind).length;
 
 function cli(tool, ...args) {
   const r = spawnSync(process.execPath, [path.join(ROOT, 'tools', tool), ...args], { encoding: 'utf8', cwd: ROOT });
@@ -15,12 +24,20 @@ test('validate.mjs passes on the fixtures and prints the warnings', () => {
   const r = cli('validate.mjs', '--data', FIXTURE_DATA, '--index');
   assert.equal(r.status, 0, r.err);
   assert.match(r.out, /warning \[degree-zero\] events\/fixture-event-h\.json/);
-  // 51 of them are `unread`: no fixture record carries a review block, which
-  // is what the warning R10 asked for says about a corpus nobody has read.
-  assert.match(r.out, /55 records, 3 regions: 0 error\(s\), 55 warning\(s\)/);
+  // The summary counts what is on disk, and the warnings are the unread
+  // records plus the three intended ones (tests/rules.test.mjs). Read out of
+  // the output rather than written down: every one of these numbers moved when
+  // M43b stretched the fixtures to 2025, and what the test is about is that the
+  // tool counts the corpus it was pointed at.
+  const summary = r.out.match(/(\d+) records, (\d+) regions: 0 error\(s\), (\d+) warning\(s\)/);
+  assert.ok(summary, r.out);
+  assert.equal(Number(summary[1]), RECORDS, 'it counted the records on disk');
+  assert.equal(Number(summary[2]), REGIONS, 'and the regions');
   // And the terminal is not asked to scroll through all of them: a rule past
   // the cap prints its first twenty and then says how many more there are.
-  assert.match(r.out, /warning \[unread\]: and 32 more like the 20 above/);
+  const more = r.out.match(/warning \[unread\]: and (\d+) more like the 20 above/);
+  assert.ok(more, r.out);
+  assert.equal(Number(summary[3]), Number(more[1]) + 20 + 3, 'the unread records and the three intended warnings');
   assert.equal((r.out.match(/warning \[unread\] /g) ?? []).length, 20);
 });
 
@@ -55,7 +72,12 @@ test('build-index.mjs writes an index that validate.mjs --index accepts', async 
     assert.equal(cli('validate.mjs', '--data', dir, '--index').status, 1);
     const b = cli('build-index.mjs', '--data', dir);
     assert.equal(b.status, 0, b.err);
-    assert.match(b.out, /12 events, 10 edges, 4 actors, 4 relations, 2 offices, 4 tenures, 1 narratives, 11 places, 3 presences, 4 sources/);
+    assert.match(b.out, new RegExp([
+      `${countOf('event')} events`, `${countOf('edge')} edges`, `${countOf('actor')} actors`,
+      `${countOf('relation')} relations`, `${countOf('office')} offices`, `${countOf('tenure')} tenures`,
+      `${countOf('narrative')} narratives`, `${countOf('place')} places`,
+      `${countOf('presence')} presences`, `${countOf('source')} sources`,
+    ].join(', ')));
     assert.equal(cli('validate.mjs', '--data', dir, '--index').status, 0);
   } finally {
     await rm(dir, { recursive: true, force: true });

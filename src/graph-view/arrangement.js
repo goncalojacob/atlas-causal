@@ -85,7 +85,7 @@ export function arrangementOf(atlas, state, held = null, shown = undefined) {
   const lens = lensSet(atlas, state);
   const drawable = shown === undefined ? lens : shown;
   const all = drawable ? atlas.activeEvents.filter((e) => drawable.has(e.id)) : atlas.activeEvents;
-  const window = resolveWindow(state, atlas.extent);
+  const window = resolveWindow(state, atlas.extent, atlas.opens);
   // The window and one period either side, which is what the view draws
   // (window.js) and, since H4b, all it lays out. Laying out the whole corpus
   // to draw a decade of it was the cost the window was meant to save.

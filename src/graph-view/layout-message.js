@@ -11,17 +11,22 @@
 //
 // Coming back is the same idea: coordinates by id, and the records they
 // belong to are re-attached on this side, where they never left. The scale is
-// a pair of arrays there and a function again here — a function does not
-// survive a structured clone, and rebuilding it is two numbers of arithmetic.
+// its own inputs there and a function again here — a function does not
+// survive a structured clone, and rebuilding it is the arithmetic it was built
+// from. Since M43b those inputs include the century counts, because the scale
+// may be the bucketed one and a bucketed scale rebuilt as a linear one would
+// put every node a hundred pixels from where the Worker put it.
 //
 // Both directions are pure and neither touches a Worker, which is what lets
 // `node --test` hold them to a round trip that changes nothing.
 
-import { createLinearScale } from '../timeline-scale.js';
+import { createTimelineScale } from '../timeline-scale.js';
 import { laneOf } from '../lanes.js';
 
 // The arrangement's input, as a structured-cloneable object.
-export function packInput({ events, edges, lanes = [], extent: dataExtent, width = null }) {
+export function packInput({
+  events, edges, lanes = [], extent: dataExtent, counts = null, width = null,
+}) {
   const at = new Map();
   events.forEach((event, i) => at.set(event.id, i));
   const laneAt = new Map(lanes.map((lane, i) => [lane.id, i]));
@@ -59,6 +64,9 @@ export function packInput({ events, edges, lanes = [], extent: dataExtent, width
     edges: { id: edgeId, from, to },
     lanes: lanes.map((l) => ({ id: l.id, label: l.label })),
     extent: dataExtent ? { min: dataExtent.min, max: dataExtent.max } : null,
+    // A Map of century → count, as pairs: small (one entry per century the
+    // corpus touches) and a plain array, like everything else that crosses.
+    counts: counts ? [...counts] : null,
     width,
   };
 }
@@ -81,7 +89,10 @@ export function unpackInput(message) {
     from: events[message.edges.from[i]].id,
     to: events[message.edges.to[i]].id,
   }));
-  const input = { events, edges, lanes, extent: message.extent };
+  const input = {
+    events, edges, lanes, extent: message.extent,
+    counts: message.counts ? new Map(message.counts) : null,
+  };
   if (message.width !== null && message.width !== undefined) input.width = message.width;
   return input;
 }
@@ -115,7 +126,12 @@ export function packLayout(layout) {
     edges,
     crossings: layout.crossings,
     naiveCrossings: layout.naiveCrossings,
-    scale: { domain: [...layout.scale.domain], range: [...layout.scale.range] },
+    scale: {
+      domain: [...layout.scaleInput.domain],
+      range: [...layout.scaleInput.range],
+      counts: layout.scaleInput.counts ? [...layout.scaleInput.counts] : null,
+      extent: layout.scaleInput.extent ? { ...layout.scaleInput.extent } : null,
+    },
   };
 }
 
@@ -159,7 +175,10 @@ export function unpackLayout(message, { events, edges }) {
     bands: message.bands,
     nodes,
     edges: laid,
-    scale: createLinearScale(message.scale),
+    scale: createTimelineScale({
+      ...message.scale,
+      counts: message.scale.counts ? new Map(message.scale.counts) : null,
+    }),
     crossings: message.crossings,
     naiveCrossings: message.naiveCrossings,
   };

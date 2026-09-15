@@ -27,7 +27,7 @@ export function horizonBand(depth) {
 // The year the question is asked about, astronomical: the reader's own if
 // they chose one, otherwise the window's far end. Null when there is no data.
 export function horizonYear(atlas, state) {
-  return resolveHorizon(state, resolveWindow(state, atlas.extent));
+  return resolveHorizon(state, resolveWindow(state, atlas.extent, atlas.opens));
 }
 
 // The answer, in full, for the panel: [{ event, depth, edges, first, last,

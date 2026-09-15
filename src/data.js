@@ -21,6 +21,7 @@
 import { buildAdjacency } from './graph.js';
 import { narrativeEventIds } from './narrative.js';
 import { extent as intervalExtent } from './util/dates.js';
+import { centuryCounts, opensOn } from './util/window.js';
 import { attributePeriod, attributeShardKey, periodOfEdge } from './explanations.js';
 // The index's column tables, read backwards here and forwards by the build.
 import {
@@ -263,6 +264,16 @@ export function createAtlas({
       extent.max = Math.max(extent.max, max);
     }
   }
+  // The window a reader with no `?from=` and no `?to=` arrives on (M43b).
+  // Null over a corpus inside two centuries, which is what `data/` is today
+  // and what the whole extent has always been the right opening for; the
+  // century holding most of the corpus over one that runs from 1415, where
+  // the whole extent is six centuries at once and legible at none of them.
+  //
+  // Here rather than in a view because it is a fact about the data, like the
+  // extent it is computed beside, and because the three views and the panel
+  // all resolve the same window and must not each decide it for themselves.
+  const opens = opensOn(centuryCounts(activeEvents), extent);
 
   // The cache holds answers, and a rejection is not one. Keeping it would
   // make one dropped request on a train the answer for the rest of the
@@ -841,6 +852,9 @@ export function createAtlas({
     adjacency: buildAdjacency(topology.events, topology.edges),
     activeEvents,
     extent,
+    // The opening window, or null. Read by `resolveWindow` and by nothing
+    // else: it answers the URL that names neither end and never any other.
+    opens,
     land,
     resolve,
     record,

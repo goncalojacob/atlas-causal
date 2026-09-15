@@ -122,13 +122,23 @@ test('a path is read in one request per period, and only once', async () => {
   assert.equal(atlas.explanationOf(ids[0]), null, 'nothing is in hand before it is asked for');
 
   const found = await atlas.loadExplanations(ids);
-  assert.equal(asked.length, 1, 'every fixture link is in the one century, so one file');
+  // At most one request per period the links fall in, and never the same file
+  // twice — which with the coverage asserted below is the whole of "one
+  // request per period, and only once". Written as the rule and not as a
+  // number: the fixtures ran inside the thirteenth century until M43b
+  // stretched them to 2025, and the next record to be added will move it again.
+  const periods = new Set(ids.map((id) => periodOfEdge(atlas.edges.get(id), atlas.events))
+    .map((period) => (period ? `${period.from}-${period.to}` : 'null')));
+  assert.ok(asked.length <= periods.size,
+    `never more than one file per period (${asked.length} for ${periods.size})`);
+  assert.equal(new Set(asked).size, asked.length, 'and never the same file twice');
   for (const id of ids) assert.equal(typeof found.get(id), 'string');
   assert.equal(atlas.explanationOf(ids[0]), found.get(ids[0]), 'and it is in hand afterwards');
 
   // Asked again: nothing is fetched, because the answer is already held.
+  const once = asked.length;
   await atlas.loadExplanations(ids);
-  assert.equal(asked.length, 1);
+  assert.equal(asked.length, once);
 });
 
 test('a shard that will not load leaves its links without a text, not the answer without a map', async () => {

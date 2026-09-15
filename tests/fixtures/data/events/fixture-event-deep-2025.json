@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "fixture-event-deep-2025",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "title": "Fixture event, 2025",
+  "summary": "Synthetic record used by the test suite. It is not history and describes nothing that happened. It is here to stretch the fixture corpus over five centuries, so the timeline can be seen at a scale no real record reaches yet.",
+  "when": {
+    "start": 2025,
+    "end": 2025
+  },
+  "place": null,
+  "region": "fixture-lane-1",
+  "actors": []
+}

@@ -1,0 +1,17 @@
+{
+  "from": 1500,
+  "kind": "edge",
+  "records": {
+    "fixture-event-deep-1580--fixture-event-deep-1650--reacted-to": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1599
+}

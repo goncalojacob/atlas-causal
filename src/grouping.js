@@ -73,7 +73,7 @@ export function createGrouping(container, { atlas, state }) {
   // The lanes the reader has chosen, in their order, followed by everything
   // else the window offers. Choosing is a checkbox; the order is the arrows.
   function rows(s) {
-    const available = availableLanes(s.group, atlas, resolveWindow(s, atlas.extent), lensSet(atlas, s));
+    const available = availableLanes(s.group, atlas, resolveWindow(s, atlas.extent, atlas.opens), lensSet(atlas, s));
     const byId = new Map(available.map((a) => [a.id, a]));
     const chosen = s.lanes.filter((id) => byId.has(id));
     const rest = available.filter((a) => !chosen.includes(a.id));
