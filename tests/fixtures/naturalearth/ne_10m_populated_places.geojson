@@ -1,0 +1,110 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "NAME": "Fixture City",
+    "NAME_EN": "Fixture City",
+    "POP_MAX": 1200000,
+    "SCALERANK": 2,
+    "LABELRANK": 2,
+    "MIN_ZOOM": 2,
+    "FEATURECLA": "Admin-0 capital",
+    "WIKIDATAID": "Q1000000903",
+    "NE_ID": 1159100009
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -30,
+     40
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "NAME": "Fixture Port",
+    "NAME_EN": "Fixture Port",
+    "POP_MAX": 420000,
+    "SCALERANK": 4,
+    "LABELRANK": 4,
+    "MIN_ZOOM": 4,
+    "FEATURECLA": "Admin-1 capital",
+    "WIKIDATAID": "Q1000000904",
+    "NE_ID": 1159100011
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -22,
+     12
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "NAME": "Fixture Villa",
+    "NAME_EN": "Fixture Villa",
+    "POP_MAX": 260000,
+    "SCALERANK": 5,
+    "LABELRANK": 5,
+    "MIN_ZOOM": 5,
+    "FEATURECLA": "Populated place",
+    "WIKIDATAID": null,
+    "NE_ID": 1159100013
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16,
+     33
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "NAME": "Fixture Borough",
+    "NAME_EN": "Fixture Borough",
+    "POP_MAX": 130000,
+    "SCALERANK": 6,
+    "LABELRANK": 6,
+    "MIN_ZOOM": 6,
+    "FEATURECLA": "Populated place",
+    "WIKIDATAID": null,
+    "NE_ID": 1159100015
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12,
+     8
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "NAME": "Fixture Town",
+    "NAME_EN": "Fixture Town",
+    "POP_MAX": 9400,
+    "SCALERANK": 8,
+    "LABELRANK": 8,
+    "MIN_ZOOM": 7,
+    "FEATURECLA": "Populated place",
+    "WIKIDATAID": "Q1000000003",
+    "NE_ID": 1159100017
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -30.1,
+     40.1
+    ]
+   }
+  }
+ ]
+}

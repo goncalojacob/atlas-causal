@@ -1,0 +1,83 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "FEATURECLA": "Desert",
+    "NAME": "Fixture Desert",
+    "SCALERANK": 3,
+    "MIN_LABEL": 3,
+    "MAX_LABEL": 9,
+    "WIKIDATAID": "Q1000000901",
+    "NE_ID": 1159100003
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -33,
+       22
+      ],
+      [
+       -27,
+       22
+      ],
+      [
+       -27,
+       27
+      ],
+      [
+       -33,
+       27
+      ],
+      [
+       -33,
+       22
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "FEATURECLA": "Island",
+    "NAME": "Fixture Isle",
+    "SCALERANK": 6,
+    "MIN_LABEL": 6,
+    "MAX_LABEL": 11,
+    "WIKIDATAID": null,
+    "NE_ID": 1159100005
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -25,
+       36.8
+      ],
+      [
+       -24.6,
+       36.8
+      ],
+      [
+       -24.6,
+       37.099999999999994
+      ],
+      [
+       -25,
+       37.099999999999994
+      ],
+      [
+       -25,
+       36.8
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

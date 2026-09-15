@@ -1,0 +1,136 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "featurecla": "Land",
+    "scalerank": 0,
+    "min_zoom": 0
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -34,
+        5
+       ],
+       [
+        -14,
+        5
+       ],
+       [
+        -14,
+        30
+       ],
+       [
+        -34,
+        30
+       ],
+       [
+        -34,
+        5
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -30,
+        42
+       ],
+       [
+        -22,
+        42
+       ],
+       [
+        -22,
+        48
+       ],
+       [
+        -30,
+        48
+       ],
+       [
+        -30,
+        42
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "featurecla": null,
+    "scalerank": null,
+    "min_zoom": null
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -31,
+       39
+      ],
+      [
+       -30.6,
+       39
+      ],
+      [
+       -30.6,
+       39.4
+      ],
+      [
+       -31,
+       39.4
+      ],
+      [
+       -31,
+       39
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "featurecla": "Null island",
+    "scalerank": 100,
+    "min_zoom": 100
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -0.05,
+       -0.05
+      ],
+      [
+       0.05,
+       -0.05
+      ],
+      [
+       0.05,
+       0.05
+      ],
+      [
+       -0.05,
+       0.05
+      ],
+      [
+       -0.05,
+       -0.05
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

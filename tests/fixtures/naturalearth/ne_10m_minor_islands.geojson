@@ -1,0 +1,75 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "featurecla": "Minor island",
+    "scalerank": 7,
+    "min_zoom": 6.5
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -25.2,
+       36.9
+      ],
+      [
+       -25,
+       36.9
+      ],
+      [
+       -25,
+       37.05
+      ],
+      [
+       -25.2,
+       37.05
+      ],
+      [
+       -25.2,
+       36.9
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "featurecla": "Minor island",
+    "scalerank": 8,
+    "min_zoom": 7
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -17.1,
+       32.6
+      ],
+      [
+       -16.950000000000003,
+       32.6
+      ],
+      [
+       -16.950000000000003,
+       32.7
+      ],
+      [
+       -17.1,
+       32.7
+      ],
+      [
+       -17.1,
+       32.6
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

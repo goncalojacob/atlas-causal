@@ -228,6 +228,7 @@ tools/import/identity.mjs  the additive rule both imports obey: fill a gap, neve
 tools/import/geometry.mjs  clipToBox (Sutherland-Hodgman, holes kept, lines cut into their runs) and splitAtMeridian over it: where the geometry is cut at the projection's seam
 tools/import/source.mjs    reading a vendored source: gunzipped where the name says so, and the sha256 is of the decompressed bytes, which is the file as it was downloaded
 tools/import/grid.mjs      three lines: the name the import knows src/map/grid.js by, as simplify.mjs is for the simplifier
+tools/import/naturalearth.mjs  Natural Earth 10m -> the base map's data: data/geo/land-present.json at the far level and data/geo/base/<layer>/<cell>.json at the near, the tolerance of each stepped up until its cap holds. --survey prints the property keys a committed file actually has, --budget the tolerance, bytes, points kept and points dropped per layer, --check the sha256 of the decompressed sources. Offline: a fetch in it is a bug, not a fallback
 tools/import/features.mjs  pure: Natural Earth's properties -> this atlas's fields, one frozen table per layer, every property name read off the committed file with --survey and never guessed; and the one monotone table from NE's tile zoom to our `k`, everything on the map by k = 16
 vendor/                    INPUTS: the sources the geometry imports run on, gzipped, never data, never served, never in deploy.yml's allowlist
 tools/import/cache/        GENERATED: Wikipedia leads with their revision; never published, never data, not under data/

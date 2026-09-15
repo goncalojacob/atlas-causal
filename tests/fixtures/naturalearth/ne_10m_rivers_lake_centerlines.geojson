@@ -1,0 +1,83 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "featurecla": "River",
+    "scalerank": 3,
+    "min_zoom": 2,
+    "min_label": 3,
+    "name": "Fixture River",
+    "name_en": "Fixture River"
+   },
+   "geometry": {
+    "type": "MultiLineString",
+    "coordinates": [
+     [
+      [
+       -30,
+       10
+      ],
+      [
+       -26,
+       14
+      ],
+      [
+       -22,
+       15
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "featurecla": "River",
+    "scalerank": 7,
+    "min_zoom": 6,
+    "min_label": 7,
+    "name": "Fixture Creek",
+    "name_en": "Fixture Creek"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -20,
+      20
+     ],
+     [
+      -18,
+      22
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "featurecla": "Lake Centerline",
+    "scalerank": 9,
+    "min_zoom": 7,
+    "min_label": 8,
+    "name": "Fixture Centreline",
+    "name_en": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -15,
+      30
+     ],
+     [
+      -14,
+      31
+     ]
+    ]
+   }
+  }
+ ]
+}
