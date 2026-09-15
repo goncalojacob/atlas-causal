@@ -275,6 +275,14 @@ const CORE_BY_KIND = {
     col('place', 'id'),
     col('weight', 'raw', { absent: OMIT }),
     col('actors', 'lines', { lines: ACTOR_LINE_JOIN, absent: LIST }),
+    // In the core since the glyph run, and not in the shard with the title it
+    // reads like. A category toggle that hides marks has to hide them on the
+    // frame the reader clicks it, and an attribute column arrives with its
+    // century: the reader would see nothing happen and then, a moment later,
+    // marks disappear — the toggle lying about what it did (glyphs-brief, §1;
+    // deviation 581). One small integer per categorised event, absent on the
+    // 246 of 421 that have none.
+    col('category', 'vocab', { vocab: 'category', absent: OMIT }),
     col('parent', 'id', { absent: OMIT }),
     col('subtreeWeight', 'raw', { absent: OMIT }),
   ],
@@ -306,7 +314,9 @@ const ATTRIBUTES_BY_KIND = {
     col('wikidata', 'raw', { absent: OMIT }),
     col('citesCount', 'raw', { absent: OMIT }),
     col('actors', 'lines', { lines: ACTOR_LINE_TEXT, absent: LIST }),
-    col('category', 'vocab', { vocab: 'category', absent: OMIT }),
+    // `category` was here until the glyph run and is in the core now: it is
+    // read by a toggle and by a symbol over a mark, which are both drawn on
+    // the first frame, and no longer only by a card.
     col('wikipedia', 'raw', { absent: OMIT }),
     col('scope', 'vocab', { vocab: 'scope', absent: OMIT }),
   ],

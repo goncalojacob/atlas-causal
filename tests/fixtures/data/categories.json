@@ -1,0 +1,5 @@
+[
+  { "id": "war", "label": "War", "description": "Synthetic vocabulary entry used by the test suite. It mirrors data/categories.json and names nothing that happened." },
+  { "id": "treaty", "label": "Treaty", "description": "Synthetic vocabulary entry used by the test suite. It mirrors data/categories.json and names nothing that happened." },
+  { "id": "disaster", "label": "Disaster", "description": "Synthetic vocabulary entry used by the test suite. It mirrors data/categories.json and names nothing that happened." }
+]

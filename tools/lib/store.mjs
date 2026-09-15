@@ -29,7 +29,7 @@ import { buildUniverse } from '../../src/validate/rules.js';
 import { createValidator } from '../../src/validate/schema.js';
 import { createRegionDeriver } from '../../src/util/geo.js';
 import { buildIndex, writeIndex } from '../build-index.mjs';
-import { readRecords, readRegions, readRegionPolygons, readSchemaFiles, KIND_DIRS } from './read.mjs';
+import { readCategories, readRecords, readRegions, readRegionPolygons, readRoles, readSchemaFiles, KIND_DIRS } from './read.mjs';
 
 // How long a burst of saves is allowed to coalesce into one index build. A
 // reviewer signing a run of records fires them a second or two apart, and
@@ -89,11 +89,23 @@ export function createStore({ dataDir, schemaDir }) {
     }
     const regions = await readRegions(dataDir);
     const polygons = await readRegionPolygons(dataDir);
+    // The two closed vocabularies that live in data. They are not a detail of
+    // validation: the index's files intern a vocabulary in the order its
+    // entries are met unless a base list is given, so a topology built without
+    // them writes a `role` or a `category` column in the order the records
+    // happened to be read — and the index this store writes after a save would
+    // then not be the index `build-index.mjs` writes from the same files. The
+    // fixtures had neither file until the glyph run, which is why nothing
+    // caught it before (deviation 587).
+    const roles = await readRoles(dataDir);
+    const categories = await readCategories(dataDir);
     const schemas = await readSchemaFiles(schemaDir);
     const records = new Map(entries.map((e) => [e.record.id, e.record]));
     const next = {
       records,
       regions,
+      roles,
+      categories,
       deriveRegion: polygons ? createRegionDeriver(polygons) : undefined,
       schemas,
       validator: createValidator(schemas),
@@ -115,7 +127,9 @@ export function createStore({ dataDir, schemaDir }) {
   // validate the next save against an atlas that does not exist. Rebuilding
   // is linear in the records and the saving is not doing it from disk.
   function retopologise(state) {
-    state.topology = buildTopology([...state.records.values()], state.regions, { deriveRegion: state.deriveRegion });
+    state.topology = buildTopology([...state.records.values()], state.regions, {
+      deriveRegion: state.deriveRegion, roles: state.roles, categories: state.categories,
+    });
     state.universe = buildUniverse(state.topology);
   }
 
@@ -229,7 +243,9 @@ export function createStore({ dataDir, schemaDir }) {
     // stale — so this is asked before anything is written.
     const merged = new Map(state.records);
     for (const r of bundle.records) merged.set(r.id, r);
-    const next = buildTopology([...merged.values()], state.regions, { deriveRegion: state.deriveRegion });
+    const next = buildTopology([...merged.values()], state.regions, {
+      deriveRegion: state.deriveRegion, roles: state.roles, categories: state.categories,
+    });
     const unresolved = next.events.filter((e) => e.status === 'active' && e.place && !e.region);
     if (unresolved.length) {
       throw new StoreError(422, `no timeline lane for ${unresolved.map((e) => e.id).join(', ')}: set the lane on the place or on the event`, { errors: [], warnings });

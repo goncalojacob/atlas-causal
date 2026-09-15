@@ -107,6 +107,25 @@ export function byId(a, b) {
 // The set of roles in use, normalised, sorted by code unit. Emitted in the
 // manifest so a closed vocabulary can be decided later from what people
 // actually wrote (m4-brief).
+// And the categories in use, with a count each, sorted by code unit — beside
+// `rolesInUse` because it carries exactly the same meaning against
+// `categoriesAllowed`: the evidence, not the vocabulary. The layer control is
+// built from this and not from the twelve, because four of the twelve match a
+// record today and eight toggles that hide nothing are eight lies about what
+// the atlas holds (glyphs-brief, §4; deviation 584).
+//
+// An event the atlas has withdrawn is not counted: a toggle that showed `1`
+// and hid nothing would be the same lie, one record smaller.
+export function categoriesInUse(events) {
+  const counts = new Map();
+  for (const e of events ?? []) {
+    if (e?.status !== 'active') continue;
+    if (typeof e.category !== 'string' || e.category === '') continue;
+    counts.set(e.category, (counts.get(e.category) ?? 0) + 1);
+  }
+  return [...counts.keys()].sort().map((id) => ({ id, count: counts.get(id) }));
+}
+
 export function rolesInUse(events) {
   const roles = new Set();
   for (const e of events ?? []) {

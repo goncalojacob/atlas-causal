@@ -6,8 +6,8 @@
 // record somebody signed, and — the one this run turns on — it never reads a
 // title a person wrote, however cleanly the table would match it (amendment
 // A5). Everything here works on a scratch copy of the fixture dataset, which
-// carries neither an imports directory nor a `data/categories.json`, so the
-// tool's fallbacks are exercised rather than assumed.
+// carries no imports directory and is stripped of its `data/categories.json`,
+// so the tool's fallbacks are exercised rather than assumed.
 //
 // Every record here is synthetic. Nothing under tests/ is a historical claim.
 
@@ -59,6 +59,12 @@ async function scratch(mutate = async () => {}, classes = SEED_CLASSES) {
   const dir = await mkdtemp(path.join(tmpdir(), 'categories-migrate-'));
   const data = path.join(dir, 'data');
   await cp(FIXTURE_DATA, data, { recursive: true });
+  // The fixtures gained a `categories.json` of three ids in the glyph run, so
+  // that three fixture events could be drawn with three different symbols. The
+  // scratch copy drops it again: what these cases exercise is the tool's
+  // fallback where there is no vocabulary at all, and a case that wants one
+  // writes the one it wants (below).
+  await rm(path.join(data, 'categories.json'), { force: true });
   await mkdir(path.join(data, 'imports'), { recursive: true });
   await writeJson(data, 'imports/wikidata-seeds.json', seedsFile(classes));
   await mutate({
@@ -186,10 +192,15 @@ test('the category is written where the schema puts it, before the actors', () =
 
 test('the tool run over a scratch copy of the fixtures leaves a corpus that still validates', async () => {
   const { dir, data } = await scratch(async ({ event }) => {
-    await event('fixture-event-a', (r) => { r.origin = { tool: IMPORT_TOOL }; r.title = 'The fixture war'; });
+    // A and C carry a category of their own since the glyph run — three
+    // fixture events do, so that three different symbols can be drawn on the
+    // map (glyphs-brief, A2). Both are taken off here: what these two cases
+    // are about is a record the tool may write to and a record it may not, and
+    // "already had one" is a third case, tested below on `fixture-event-f`.
+    await event('fixture-event-a', (r) => { r.origin = { tool: IMPORT_TOOL }; r.title = 'The fixture war'; delete r.category; });
     await event('fixture-event-b', (r) => { r.origin = { tool: IMPORT_TOOL }; r.title = 'The fixture legislative elections'; });
     // Hand-written: the table reaches it and the tool must not write it.
-    await event('fixture-event-c', (r) => { r.title = 'The fixture battle'; });
+    await event('fixture-event-c', (r) => { r.title = 'The fixture battle'; delete r.category; });
     // Imported, signed, and reached: A9 outranks the match.
     await event('fixture-event-d', (r) => {
       r.origin = { tool: IMPORT_TOOL };
@@ -223,17 +234,20 @@ test('the tool run over a scratch copy of the fixtures leaves a corpus that stil
     const topology = buildTopology(records, await readRegions(data), { deriveRegion: createRegionDeriver([]) });
     const { errors, warnings } = checkRules(records, topology);
     assert.deepEqual(errors, []);
-    // The fixtures carry no data/categories.json, and an absent vocabulary is
-    // not an empty one: a category the tool just wrote is not `category-unknown`
-    // (M30a amendment A8).
+    // The scratch copy carries no data/categories.json, and an absent
+    // vocabulary is not an empty one: a category the tool just wrote is not
+    // `category-unknown` (M30a amendment A8).
     assert.deepEqual(warnings.filter((w) => w.rule === 'category-unknown'), []);
 
     // Idempotent: a second run finds both categories in place and writes
-    // nothing, `revised` included.
-    // `fixture-event-f` carries a category of its own and is one of the three.
+    // nothing, `revised` included. Five already have one by then: the two this
+    // run wrote, and `fixture-event-e`, `-f` and `-g`, which carry one of their
+    // own so that the map and the timeline have symbols to draw.
     assert.equal((await read(data, 'events/fixture-event-f.json')).category, 'war');
+    assert.equal((await read(data, 'events/fixture-event-e.json')).category, 'war');
+    assert.equal((await read(data, 'events/fixture-event-g.json')).category, 'disaster');
     const again = await run(process.execPath, [TOOL, '--data', data, '--today', '2026-09-07']);
-    assert.match(again.stdout, /0 given a category \(none\), 3 already had one/);
+    assert.match(again.stdout, /0 given a category \(none\), 5 already had one/);
     assert.deepEqual(await read(data, 'events/fixture-event-a.json'), a);
   } finally {
     await rm(dir, { recursive: true, force: true });
@@ -244,7 +258,7 @@ test('a category the vocabulary does not have is refused rather than written', a
   const { dir, data } = await scratch(
     async ({ data: root, event }) => {
       await writeJson(root, 'categories.json', [{ id: 'war', label: 'War', description: 'Only one.' }]);
-      await event('fixture-event-a', (r) => { r.origin = { tool: IMPORT_TOOL }; r.title = 'The fixture election'; });
+      await event('fixture-event-a', (r) => { r.origin = { tool: IMPORT_TOOL }; r.title = 'The fixture election'; delete r.category; });
     },
     { Q900003: { kind: 'event', category: 'election', label: 'election' } },
   );
@@ -263,7 +277,7 @@ test('a category the vocabulary does not have is refused rather than written', a
 
 test('--dry-run says what it would do and writes nothing', async () => {
   const { dir, data } = await scratch(async ({ event }) => {
-    await event('fixture-event-a', (r) => { r.origin = { tool: IMPORT_TOOL }; r.title = 'The fixture war'; });
+    await event('fixture-event-a', (r) => { r.origin = { tool: IMPORT_TOOL }; r.title = 'The fixture war'; delete r.category; });
   });
   try {
     const before = await read(data, 'events/fixture-event-a.json');

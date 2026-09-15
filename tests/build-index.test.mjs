@@ -127,9 +127,10 @@ test('key order and file order in the source records do not change the bytes', a
 test('manifest names the hashed files, counts, lanes and land', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
-  // 6 since I5: the generation goes up by one in every run that changes the
-  // index's shape (index2-plan, D6).
-  assert.equal(manifest.schema, 6);
+  // 7 since the glyph run, which moved `category` into the core: the
+  // generation goes up by one in every run that changes the index's shape
+  // (index2-plan, D6).
+  assert.equal(manifest.schema, 7);
   // `counts.presences` stays where it is: a count is not a file, and it is
   // what the manifest says about a dataset whether or not the file exists.
   assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 4, offices: 2, tenures: 4, narratives: 1, regions: 3 });
@@ -176,9 +177,17 @@ test('manifest names the hashed files, counts, lanes and land', async () => {
 // what "absent means no check" is made of (amendment A8). The fixtures have
 // neither file on purpose, so this pair of assertions is the whole contract.
 test('the manifest carries the roles and the categories a dataset allows, and nothing where it has none', async () => {
+  // The fixtures have no `roles.json` and say so by carrying no
+  // `rolesAllowed` — "no check", which is not the same as a closed set with
+  // nothing in it. Since the glyph run they *do* have a `categories.json`,
+  // three ids of the real twelve, because three fixture events have to be
+  // drawn with three different symbols and one with none (glyphs-brief, A2).
   const fixture = JSON.parse((await buildIndex(FIXTURE_DATA)).files['manifest.json']);
   assert.equal(Object.hasOwn(fixture, 'rolesAllowed'), false);
-  assert.equal(Object.hasOwn(fixture, 'categoriesAllowed'), false);
+  assert.deepEqual(
+    fixture.categoriesAllowed.map((c) => c.id),
+    JSON.parse(await readFile(path.join(FIXTURE_DATA, 'categories.json'), 'utf8')).map((c) => c.id),
+  );
 
   const real = JSON.parse((await buildIndex(path.join(ROOT, 'data'))).files['manifest.json']);
   assert.deepEqual(real.rolesAllowed, JSON.parse(await readFile(path.join(ROOT, 'data', 'roles.json'), 'utf8')));
@@ -192,6 +201,47 @@ test('the manifest carries the roles and the categories a dataset allows, and no
   assert.notDeepEqual(real.roles, real.rolesAllowed.map((r) => r.id));
   const vocabulary = new Set(real.rolesAllowed.map((r) => r.id));
   assert.deepEqual(real.roles.filter((role) => !vocabulary.has(role)), []);
+
+  // `categories` is to `categoriesAllowed` what `roles` is to `rolesAllowed`:
+  // the evidence against the vocabulary. The layer control is built from this
+  // one, so a toggle exists only where there is something for it to hide
+  // (glyphs-brief, §4).
+  const allowed = new Set(real.categoriesAllowed.map((c) => c.id));
+  assert.ok(real.categories.length > 0);
+  assert.ok(real.categories.length < allowed.size, 'not every category is in use, and the manifest says so');
+  assert.deepEqual(real.categories.map((c) => c.id), [...real.categories.map((c) => c.id)].sort());
+  for (const { id, count } of real.categories) {
+    assert.ok(allowed.has(id), `${id} is not a category data/categories.json has`);
+    assert.ok(Number.isInteger(count) && count > 0, `${id}: ${count}`);
+  }
+  assert.deepEqual(
+    fixture.categories.map((c) => c.id),
+    ['disaster', 'treaty', 'war'],
+  );
+});
+
+// Nothing is drawn that has no data (glyphs-brief, §4): where no event carries
+// a category the key is absent, and `main.js` draws no `<details>` at all
+// rather than an empty one.
+test('the manifest carries no categories for a dataset in which no event has one', async () => {
+  const dir = await tempCopyOfFixtures();
+  try {
+    const events = path.join(dir, 'events');
+    for (const name of await readdir(events)) {
+      const file = path.join(events, name);
+      const record = JSON.parse(await readFile(file, 'utf8'));
+      if (!Object.hasOwn(record, 'category')) continue;
+      delete record.category;
+      await writeFile(file, serialize(record));
+    }
+    const manifest = JSON.parse((await buildIndex(dir)).files['manifest.json']);
+    assert.equal(Object.hasOwn(manifest, 'categories'), false);
+    // The vocabulary is still there: "no category is in use" is not "no
+    // category may be written".
+    assert.equal(manifest.categoriesAllowed.length, 3);
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
 });
 
 // The dashboard's queue is this file: the browser has no way to read a
@@ -301,7 +351,7 @@ test('weight is in the built index and does not change between builds', async ()
 test('the manifest names the core and the attribute shards, and both are written', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
-  assert.equal(manifest.schema, 6);
+  assert.equal(manifest.schema, 7);
   assert.match(manifest.files.core, /^index\/core-[0-9a-f]{12}\.json$/);
   assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.core)));
   // The centuries in year order, then the two that answer no year: the places,

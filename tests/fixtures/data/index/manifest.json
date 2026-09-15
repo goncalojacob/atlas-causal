@@ -1,28 +1,59 @@
 {
   "attributeShards": [
     {
-      "file": "index/attributes-1100-1199-dcbe76fbc00b.json",
+      "file": "index/attributes-1100-1199-79b242fa5543.json",
       "from": 1100,
       "key": "1100-1199",
       "to": 1199
     },
     {
-      "file": "index/attributes-1200-1299-902199d40a6f.json",
+      "file": "index/attributes-1200-1299-316d86f06fa0.json",
       "from": 1200,
       "key": "1200-1299",
       "to": 1299
     },
     {
-      "file": "index/attributes-null-8186c18011bf.json",
+      "file": "index/attributes-null-2fc444fe9879.json",
       "from": null,
       "key": "null",
       "to": null
     },
     {
-      "file": "index/attributes-place-a1e73d12e4b2.json",
+      "file": "index/attributes-place-117b9b970a31.json",
       "from": null,
       "key": "place",
       "to": null
+    }
+  ],
+  "categories": [
+    {
+      "count": 2,
+      "id": "disaster"
+    },
+    {
+      "count": 1,
+      "id": "treaty"
+    },
+    {
+      "count": 2,
+      "id": "war"
+    }
+  ],
+  "categoriesAllowed": [
+    {
+      "description": "Synthetic vocabulary entry used by the test suite. It mirrors data/categories.json and names nothing that happened.",
+      "id": "war",
+      "label": "War"
+    },
+    {
+      "description": "Synthetic vocabulary entry used by the test suite. It mirrors data/categories.json and names nothing that happened.",
+      "id": "treaty",
+      "label": "Treaty"
+    },
+    {
+      "description": "Synthetic vocabulary entry used by the test suite. It mirrors data/categories.json and names nothing that happened.",
+      "id": "disaster",
+      "label": "Disaster"
     }
   ],
   "counts": {
@@ -47,15 +78,15 @@
   ],
   "files": {
     "citers": "index/citers-f8c97836a9ed",
-    "core": "index/core-39fe3e65b247.json",
-    "presences": "index/presences-7dc62eab392c.json",
+    "core": "index/core-d5e2ae0fc089.json",
+    "presences": "index/presences-0f006d2e3bf4.json",
     "review": "index/review-529a25f3de7f.json",
     "search": "index/search-6418b284f92f.json",
     "sources": "index/sources-b593ceee8617.json"
   },
   "historyShards": [
     {
-      "file": "index/history-event-1200-1299-1dfbe17030da.json",
+      "file": "index/history-event-1200-1299-44fb21db1c20.json",
       "from": 1200,
       "key": "1200-1299",
       "kind": "event",
@@ -341,7 +372,7 @@
     "leader",
     "signatory"
   ],
-  "schema": 6,
+  "schema": 7,
   "tenuresByOffice": {
     "fixture-office-one": [
       "fixture-tenure-one",

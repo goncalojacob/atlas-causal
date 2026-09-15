@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import {
-  createAtlas, loadAtlas, loadNarratives, loadSources,
+  createAtlas, loadAtlas, loadNarratives, loadSources, INDEX_GENERATION,
 } from '../src/data.js';
 import { FIXTURE_DATA, atlasOf } from './helpers.mjs';
 
@@ -161,7 +161,7 @@ test('a manifest from a generation this build does not read is refused', async (
   const manifest = { schema: 99, regions: [], land: [], files: { core: 'index/core-000000000000.json', sources: 'index/sources-000000000000.json' } };
   const fetchOld = async (url) => (url.endsWith('manifest.json') ? manifest : { events: [], edges: [], sources: [] });
   for (const [what, load] of [['loadAtlas', loadAtlas], ['loadSources', loadSources], ['loadNarratives', loadNarratives]]) {
-    await assert.rejects(load({ dataRoot: 'nowhere/', fetchJson: fetchOld }), /generation 99.*reads 6/, what);
+    await assert.rejects(load({ dataRoot: 'nowhere/', fetchJson: fetchOld }), new RegExp(`generation 99.*reads ${INDEX_GENERATION}`), what);
   }
   // The number it found, whatever it found, including nothing at all.
   await assert.rejects(loadAtlas({ dataRoot: 'nowhere/', fetchJson: async () => ({}) }), /generation unstated/);

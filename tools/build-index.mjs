@@ -15,7 +15,8 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
-  buildAttributeShards, buildCore, buildPresenceIndex, buildSpine, buildTopology, byId, citerFiles, rolesInUse,
+  buildAttributeShards, buildCore, buildPresenceIndex, buildSpine, buildTopology, byId, categoriesInUse,
+  citerFiles, rolesInUse,
 } from '../src/validate/core.js';
 import { checkRules } from '../src/validate/rules.js';
 import { createRegionDeriver, regionBounds } from '../src/util/geo.js';
@@ -290,6 +291,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   const regionBoxes = boxes === null ? null
     : Object.fromEntries(boxOrder.map((id) => [id, boxes.get(id).map(round)]));
 
+  const categories = categoriesInUse(topology.events);
   const searchName = `search-${hashOf(searchText)}.json`;
   const sourcesName = `sources-${hashOf(sourcesText)}.json`;
   const reviewName = `review-${hashOf(reviewText)}.json`;
@@ -336,6 +338,12 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     // the evidence: the 163 strings in use, against the 31 the vocabulary
     // closes to, and M32b is what makes the two agree.
     roles: rolesInUse(topology.events),
+    // And the categories actually written on a record, with a count each. The
+    // layer control's "events by category" group is built from this, so a
+    // toggle exists only where there is something for it to hide; absent
+    // where no event has a category at all, and then the group is not drawn
+    // (glyphs-brief, §4 — nothing is drawn that has no data).
+    ...(categories.length === 0 ? {} : { categories }),
     // The two closed vocabularies that live in data, carried here so that the
     // browser's half of the validator holds a record to them without a second
     // fetch (plan decision 7; amendment A8). Absent where the dataset has no

@@ -274,10 +274,15 @@ test('the three fields reach the topology and the spine, and only where a record
   assert.equal(child.parent, 'fixture-event-f');
   for (const key of ['scope', 'category']) assert.equal(Object.hasOwn(child, key), false, key);
   const spine = expandSpine(buildSpine(topology));
-  const plain = spine.events.find((e) => e.id === 'fixture-event-a');
+  // `fixture-event-b`, which carries none of the four. A was the plain record
+  // here until the glyph run gave three fixture events a category each, so
+  // that three different symbols could be drawn on the map (glyphs-brief, A2).
+  const plain = spine.events.find((e) => e.id === 'fixture-event-b');
   for (const key of ['parent', 'scope', 'category', 'subtreeWeight']) {
     assert.equal(Object.hasOwn(plain, key), false, `${key} is absent where there is none`);
   }
+  // And A carries its own, through the spine as it did before.
+  assert.equal(spine.events.find((e) => e.id === 'fixture-event-a').category, 'treaty');
 });
 
 test('subtreeWeight sums the parts, leaves weight alone, and is absent on a leaf', async () => {

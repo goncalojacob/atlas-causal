@@ -557,15 +557,55 @@ test('the core and the attribute shards are the spine between them, per kind', (
   }
 });
 
-// A4: the two vocabularies a card reads — an actor line's role and an event's
-// category — are in the shards, and the ones a lane and a mark read are in the
-// core. Said on the tables rather than on the files, because it is the tables
-// that decide.
+// A4: the vocabulary a card reads — an actor line's role — is in the shards,
+// and the ones a lane and a mark read are in the core. Said on the tables
+// rather than on the files, because it is the tables that decide.
+//
+// `category` was a card's until the glyph run and is a mark's now: a symbol is
+// drawn over the mark on the first frame, and a toggle that hides those marks
+// has to hide them on the frame it is clicked, which an attribute column
+// arriving with its century cannot do (glyphs-brief, §1; deviation 581).
 test('the core carries no prose vocabulary and the shards no lane', () => {
   const of = (table, kind) => table[kind].columns.filter((c) => c.type === 'vocab').map((c) => c.vocab);
-  assert.deepEqual(of(CORE_COLUMNS, 'event'), ['status', 'region']);
-  assert.deepEqual(of(ATTRIBUTE_COLUMNS, 'event'), ['status', 'category', 'scope']);
+  assert.deepEqual(of(CORE_COLUMNS, 'event'), ['status', 'region', 'category']);
+  assert.deepEqual(of(ATTRIBUTE_COLUMNS, 'event'), ['status', 'scope']);
   assert.deepEqual(of(CORE_COLUMNS, 'edge'), ['edgeType', 'confidence', 'status']);
+  // An office's `category` is a different vocabulary and stays where it is:
+  // nothing draws an office, and its category is read on a card.
+  assert.deepEqual(of(ATTRIBUTE_COLUMNS, 'office'), ['status', 'officeCategory']);
+  assert.deepEqual(of(CORE_COLUMNS, 'office'), ['status']);
+});
+
+// The point of the move, on the fixtures: a mark and its symbol are drawn from
+// the core alone, so the category has to be there before any century has
+// landed. Read out of the decoded core and not out of a merged atlas, which is
+// what every other assertion about a category would have gone on passing for.
+test('a core record answers with its category before any shard has landed', async () => {
+  const topology = await topologyOf(FIXTURE_DATA);
+  const core = decodeSpineFile(buildCore(topology), SPINE_KINDS, CORE_COLUMNS);
+  const byId = new Map(core.events.map((e) => [e.id, e]));
+  assert.equal(byId.get('fixture-event-a').category, 'treaty');
+  assert.equal(byId.get('fixture-event-c').category, 'disaster');
+  assert.equal(byId.get('fixture-event-e').category, 'war');
+  // And an event with none reads as none — not as the empty string and not as
+  // the id, which is what a fallback would have made of it.
+  assert.equal(byId.get('fixture-event-d').category, undefined);
+  // The title is the other half of the same claim: it is *not* in the core,
+  // which is why a mark is drawn unlabelled and labelled when its shard lands.
+  assert.equal(byId.get('fixture-event-a').title, undefined);
+});
+
+// And the column itself, by name, on both tables — the assertion that fails if
+// a later run moves it back without meaning to.
+test('category is a core column of an event and not an attribute one', () => {
+  const names = (table, kind) => table[kind].columns.map((c) => c.name);
+  assert.ok(names(CORE_COLUMNS, 'event').includes('category'));
+  assert.ok(!names(ATTRIBUTE_COLUMNS, 'event').includes('category'));
+  // It is in exactly one of the two tables, so it is not one of the four that
+  // are split inside — the union test above is what holds the partition, and
+  // this is what says the move did not quietly widen `SPLIT_COLUMNS`.
+  assert.ok(!SPLIT_COLUMNS.has('category'));
+  assert.deepEqual([...SPLIT_COLUMNS].sort(), ['actors', 'when', 'where', 'window']);
 });
 
 for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', DATA]]) {
