@@ -391,6 +391,15 @@ owner's to take:
   (`eleicoes-legislativas-regionais-na-madeira-em-1976`). It wants a small run
   of its own.
 
+- `tests/map-browser.test.mjs`, "zoomed to Portugal, Lisbon is named once and
+  its title carries its names", reads the label layer while the base map's
+  cells are still arriving, and its last assertion — that at k = 8 over
+  Portugal every label is a `city-label` — is not true of the settled picture.
+  Making it wait for the base, the way `00009dce` made the pan test wait, makes
+  it fail every time instead of one run in three. Reproduced with none of
+  M44b's data on a worktree at `9e212b8b`. Deviation 683, and it is a question
+  about the map rather than about this round.
+
 ## 6. The validator's warnings, named
 
 `node tools/validate.mjs` without `--index` reports **0 errors and 1,056

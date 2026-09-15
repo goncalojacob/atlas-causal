@@ -6947,6 +6947,30 @@ to keep a record.
      it is redundancy and not unconnectability. **To reverse**: set it active
      and give it the Sarajevo edge; the two parts keep theirs.
 
+683. **One browser test fails intermittently on a loaded runner, it is not this
+     round's, and this run established that rather than calling it a flake.**
+     `tests/map-browser.test.mjs`, "zoomed to Portugal, Lisbon is named once and
+     its title carries its names", failed once in three full-suite runs here
+     and passed three times in three when run alone. Its last assertion is that
+     at k = 8 over Portugal every label on screen is a `city-label`; what it
+     sees when it fails is a `feature-label` as well. The cause is that the test
+     waits only for the first city label and then reads the whole label layer,
+     while the base map's cells are still arriving — the placer gives the boxes
+     to the cities first and the physical features take what is left, so a cell
+     of rivers or ranges landing afterwards is a different competition and a
+     different answer. `settledBase`, added to this same file by `00009dce` for
+     exactly this on the pan test, is the waiting this one does not do.
+     **Adding that wait makes it fail every time**, which means the assertion is
+     not true of the settled picture at all and the test has been passing on a
+     half-drawn one. **Reproduced with none of M44b's data**: a worktree at
+     `9e212b8b`, M44a's head, with the same one-line wait added, fails the same
+     test the same way. So it is older than this round and what it is really
+     about — whether a physical feature should be named at that zoom — is an
+     editorial question about the map that belongs to whoever owns M38b, not to
+     a wiring round. The probe was reverted and nothing in `tests/` was left
+     changed by it. **Nothing to reverse**: this is a finding. The work is one
+     line of waiting plus a decision about what the assertion should say.
+
 ### What the owner must decide before `m44` is merged
 
 1. Whether an **M44c** is still owed for the nine rows of §4c this run did not
@@ -6962,6 +6986,9 @@ to keep a record.
 5. Whether `convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados`
    should be renamed into English, and whether the same run should take
    `eleicoes-legislativas-regionais-na-madeira-em-1976` with it (§5d).
+6. What "zoomed to Portugal, Lisbon is named once" should assert, now that
+   deviation 683 has shown it has been reading a half-drawn map. That is a
+   question about the map and not about this round.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
