@@ -22,3 +22,9 @@ refused Q47359: no place record for its location, no lane reachable from its poi
 refused Q29269: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
 14 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 7 created, 0 enriched, 3 named, 0 left alone, 11 refused, 0 ambiguous
+import: 4 item(s) this batch, 0 left after it, 1 call(s) spent
+refused Q896666: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+refused Q185729: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+refused Q101452: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+refused Q33761: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+0 created, 0 enriched, 0 named, 0 left alone, 4 refused, 0 ambiguous

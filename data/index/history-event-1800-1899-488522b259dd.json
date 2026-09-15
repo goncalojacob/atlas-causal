@@ -275,7 +275,7 @@
       ]
     },
     "first-sino-japanese-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -301,7 +301,7 @@
       ]
     },
     "philippine-american-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
