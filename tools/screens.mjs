@@ -105,6 +105,22 @@ export const SHOTS = Object.freeze([
   { name: 'm38-labels-lisbon', query: '?from=1911&to=1911&bbox=-12,36.5,-4,45&layers=land,events,rivers,lakes,physical,mountains,cities',
     width: 1440, height: 900,
     what: 'the cities named beside the events, over the near level at Lisbon' },
+  // M38b. The same box as the two above, so the three go side by side and what
+  // is added each time is the only thing that differs: the ground has its names
+  // now — the Tagus, the Douro, the Cantabrian range — and the places this
+  // atlas names and Natural Earth has no city for are on the map under their
+  // own names. The events are off in the Iberia shot: at Lisbon thirty-seven of
+  // them stand on the city's own point, and with them on the picture is about
+  // the marks rather than about the ground.
+  { name: 'm38-names-lisbon', query: '?from=1911&to=1911&bbox=-12,36.5,-4,45&layers=land,events,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'the rivers and the ranges named under the cities, over the near level at Lisbon' },
+  { name: 'm38-names-iberia', query: '?from=1911&to=1911&bbox=-28,25.34,17,50.66&layers=land,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'Iberia at k = 8 with the events off: the cities, the atlas\'s own places, and the ground named' },
+  { name: 'm38-labels-world', query: '?from=1911&to=1911&layers=land,events,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'the whole world, where this map writes no name at all' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
