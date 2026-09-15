@@ -9,6 +9,7 @@
 
 import path from 'node:path';
 import { existsSync } from 'node:fs';
+import { readdir, readFile } from 'node:fs/promises';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { validate, buildTopology } from '../src/validate/core.js';
 import { createValidator } from '../src/validate/schema.js';
@@ -174,6 +175,97 @@ export function seedsAreEmpty(seeds) {
   return !(seeds?.items ?? []).length && !(seeds?.queries ?? []).length;
 }
 
+// --- a field with a reader and no writer ---------------------------------
+//
+// `parent` gained a reader in M30b, a rule of its own in M30a and a ring on
+// the three views in M30c, and until M47 **no record under `data/` carried
+// one**: `childrenOf` was empty, `isParent` was false for all 250 active
+// events, no ring had ever been drawn on the running atlas, and every test
+// passed because two records under `tests/fixtures/data/` set the field.
+// `historicalNames` gained a reader in M38b and 0 of 26 places set it, which
+// M38b said plainly and nothing has said since. A field nothing writes is a
+// feature nobody can see, and the only thing that noticed either was a person
+// reading the code months later.
+//
+// So: which fields does `src/` read that nothing under `data/` writes.
+//
+// The list of fields is **the schemas' own** — every property the ten record
+// schemas declare — rather than a list somebody has to remember to extend;
+// the day a schema gains a field, this check knows about it. Top-level
+// properties only: a field inside `when` or `review` is part of a shape whose
+// own key is written or is not.
+//
+// A field counts as **written** when any record in the data directory sets it
+// to something that is not null and not empty, of whatever kind and whatever
+// status — what makes a reader dead is that nothing anywhere writes the
+// field, not that one kind of record does not. It counts as **read** when its
+// name appears in a module under `src/` where a field's name appears: after a
+// dot, inside a quote, or opening a destructured binding. The bare word alone
+// is not enough — `container` is also what half the view code calls a `<div>`
+// — and `.field` alone is not either, because it misses
+// `function faceName({ historicalNames = null })`, which is exactly the
+// reader this check exists for. The match still costs a false reader here and
+// there (`document.body`); the price of one is that the warning names a
+// module that turns out not to be the interesting one, while still naming a
+// field nothing writes.
+//
+// A **warning** and never an error, for the reason `no-lane` is one: a field
+// waiting for its first record is a gap in the data, not a defect in it.
+const FIELD_USE = (field) => new RegExp(`[.['"\`{,]\\s*${field.replace(/[^A-Za-z0-9_]/g, '\\$&')}(?![A-Za-z0-9_$])`);
+
+// Every `.js` under `src/`, keyed by its path from the repository root, so a
+// warning can name the module a reader is in.
+export async function readModules(dir) {
+  const out = new Map();
+  if (!existsSync(dir)) return out;
+  for (const entry of (await readdir(dir, { withFileTypes: true })).sort((a, b) => (a.name < b.name ? -1 : 1))) {
+    const at = path.join(dir, entry.name);
+    if (entry.isDirectory()) for (const [k, v] of await readModules(at)) out.set(k, v);
+    else if (entry.name.endsWith('.js')) out.set(path.relative(ROOT, at).split(path.sep).join('/'), await readFile(at, 'utf8'));
+  }
+  return out;
+}
+
+export function unwrittenFields(schemas, entries, modules) {
+  const written = new Set();
+  const populated = new Set();
+  for (const { kind, record } of entries) {
+    populated.add(kind);
+    for (const [key, value] of Object.entries(record ?? {})) {
+      if (value === null || value === undefined) continue;
+      if (Array.isArray(value) ? value.length === 0 : (typeof value === 'object' && Object.keys(value).length === 0)) continue;
+      written.add(key);
+    }
+  }
+  const declared = new Map();
+  for (const kind of Object.keys(KIND_DIRS)) {
+    // A kind with no records in this directory is no evidence either way:
+    // every field it declares would be unwritten, and that is a fact about
+    // the directory rather than about the field.
+    if (!populated.has(kind)) continue;
+    for (const field of Object.keys(schemas[`v1/${kind}.json`]?.properties ?? {})) {
+      if (!declared.has(field)) declared.set(field, []);
+      declared.get(field).push(kind);
+    }
+  }
+  const out = [];
+  for (const [field, kinds] of [...declared].sort((a, b) => (a[0] < b[0] ? -1 : 1))) {
+    if (written.has(field)) continue;
+    const use = FIELD_USE(field);
+    const readers = [...modules].filter(([, text]) => use.test(text)).map(([file]) => file);
+    if (readers.length) out.push({ field, kinds, readers });
+  }
+  return out;
+}
+
+// One line of it. The first reader is named because it is the one to look at;
+// the count says how much else is waiting on the field.
+export function unwrittenFieldMessage({ field, kinds, readers }) {
+  const others = readers.length - 1;
+  const rest = others === 0 ? '' : others === 1 ? ' and 1 other module' : ` and ${others} other modules`;
+  return `"${field}" is declared by ${kinds.join(', ')} and read in ${readers[0]}${rest}, and no record sets it`;
+}
+
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 // Where the Wikipedia leads live, relative to the repository root rather than
 // to --data: they are not data, and a run against a scratch directory must
@@ -240,6 +332,20 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false, sit
     }
   } else if (topology.events.some((e) => e.place && !e.region)) {
     warnings.push({ rule: 'no-polygons', id: null, file: 'geo/regions.json', path: '', message: 'geo/regions.json is missing; regions cannot be derived from a place (run tools/build-regions.mjs)' });
+  }
+
+  // The fields `src/` reads and nothing here writes. The modules are the
+  // repository's own whatever directory is being validated: what the check is
+  // about is the pairing of a reader with a writer, and the readers live in
+  // one place.
+  for (const field of unwrittenFields(schemas, entries, await readModules(path.join(ROOT, 'src')))) {
+    warnings.push({
+      rule: 'unwritten-field',
+      id: null,
+      file: `schema/v1/${field.kinds[0]}.json`,
+      path: `/properties/${field.field}`,
+      message: unwrittenFieldMessage(field),
+    });
   }
 
   // Rule 17's half that needs the disk: the files a presence names exist,
