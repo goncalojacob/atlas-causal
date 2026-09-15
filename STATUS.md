@@ -4123,6 +4123,15 @@ The numbering continues from 401, which is M31-3's last.
      layers' backs, and the symbols' `<defs>` is exactly such an element where
      a page has a timeline and no map. On `index.html` the map owns it and the
      timeline's root is unchanged.
+595. **The wait for headless Chromium's debugging port is a 30-second deadline
+     and no longer a hundred tries**, and the browser's own output is now read
+     and quoted in the failure. `error: 'headless Chromium opened a debugging
+     port'` had failed three checks in a row, always on the first browser test
+     of a file, and nothing in the log said why: the child's `stdout` and
+     `stderr` were piped and never read. The old loop also slept only when the
+     fetch threw, so a Chromium that answered before it had opened its first
+     page spent its hundred tries in milliseconds. The suite's 119 browser
+     tests pass locally against the change; `data/index/` is untouched.
 
 ## I8: what was derived, and what the Action must still run
 

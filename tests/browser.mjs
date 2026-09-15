@@ -153,19 +153,42 @@ export async function withBrowser(fn, { device = null, touch = false } = {}) {
     'about:blank',
   ], { stdio: ['ignore', 'pipe', 'pipe'] });
 
+  // Chromium's own words, kept for the assertion below. They were piped and
+  // never read before, which both risked a full pipe blocking the child and
+  // left every launch failure saying nothing but that it had failed; a
+  // missing shared library or a profile it cannot write is in here.
+  let said = '';
+  for (const stream of [child.stdout, child.stderr]) {
+    stream.setEncoding('utf8');
+    stream.on('data', (chunk) => { said = (said + chunk).slice(-2000); });
+  }
+  let exited = null;
+  child.once('exit', (code, signal) => { exited = signal ? `signal ${signal}` : `code ${code}`; });
+
   // The endpoint is up when it answers; the browser takes a moment to bind.
+  // A deadline and not a count of tries: the old loop slept only when the
+  // fetch threw, so a Chromium that answered before it had made its first
+  // page spent its hundred tries in a few milliseconds and failed a browser
+  // that was seconds from ready. Thirty seconds because a cold shared runner
+  // unpacking a browser for the first test in a file is slow and this failing
+  // spuriously has cost three checks (deviations 551, 553); it is still well
+  // under the job's `--test-timeout`, and a browser that is genuinely absent
+  // still fails, just later and with a reason.
   let targets = null;
-  for (let tries = 0; tries < 100 && !targets; tries += 1) {
+  const deadline = Date.now() + 30_000;
+  while (!targets && Date.now() < deadline && exited === null) {
     try {
       const response = await fetch(`http://127.0.0.1:${debugPort}/json/list`);
       const list = await response.json();
       targets = list.filter((t) => t.type === 'page' && t.webSocketDebuggerUrl);
       if (targets.length === 0) targets = null;
     } catch {
-      await new Promise((resolve) => { setTimeout(resolve, 100); });
+      targets = null;
     }
+    if (!targets) await new Promise((resolve) => { setTimeout(resolve, 100); });
   }
-  assert.ok(targets, 'headless Chromium opened a debugging port');
+  assert.ok(targets, `headless Chromium opened a debugging port${
+    exited ? ` — it exited with ${exited}` : ''}${said ? `, saying: ${said.trim()}` : ''}`);
 
   const page = await connect(targets[0].webSocketDebuggerUrl);
   await page.send('Page.enable');
