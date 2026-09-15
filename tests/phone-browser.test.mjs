@@ -398,7 +398,14 @@ test('the whole extent is legible on a phone, and the band is a thumb wide', { s
     // Some of the axis is labelled, and no two labels touch. Fewer of them
     // than at 1440 px, which is the drawing giving up detail rather than
     // overprinting: `ticks(count)` is asked for a count from the width.
-    assert.ok(seen.ticks.length >= 2, `the axis is labelled (${seen.ticks.map((t) => t.label).join(' ')})`);
+    assert.ok(seen.ticks.length >= 3,
+      `the axis is labelled along its length (${seen.ticks.map((t) => t.label).join(' ')})`);
+    // Spread across the drawing and not heaped at the left: a run of narrow
+    // columns handing its label along and leaving one at each end is what the
+    // thinning must not do (timeline-scale.js, `ticks`).
+    const rightmost = seen.ticks[seen.ticks.length - 1].x;
+    assert.ok(rightmost > seen.width * 0.6,
+      `the last label is out along the axis (${Math.round(rightmost)} of ${seen.width})`);
     for (let i = 1; i < seen.ticks.length; i += 1) {
       assert.ok(seen.ticks[i].x - seen.ticks[i - 1].x > 24,
         `"${seen.ticks[i - 1].label}" and "${seen.ticks[i].label}" are ${

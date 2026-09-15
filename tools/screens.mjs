@@ -121,6 +121,31 @@ export const SHOTS = Object.freeze([
   { name: 'm38-labels-world', query: '?from=1911&to=1911&layers=land,events,rivers,lakes,physical,mountains,cities',
     width: 1440, height: 900,
     what: 'the whole world, where this map writes no name at all' },
+  // M43b. On the fixtures, and it has to be: `data/` runs from 1894 to 2026
+  // and is one picture on a linear scale — it is M42 that brings the records
+  // from before 1890, and until then the synthetic corpus is the only one that
+  // reaches 1415. The fixtures run from the thirteenth century to the
+  // twenty-first and the page says in its own corner that they are synthetic.
+  //
+  // No `?from=` and no `?to=` in either link, because what these are of is
+  // what the atlas opens on: the century holding most of the corpus, with the
+  // rest of five centuries beside it, each century a column of its own width
+  // and the part past the band's margin drawn as the density strip.
+  //
+  // Both go through `docs/screens/frame.html`, which says in its own head why:
+  // headless Chromium will not give a window narrower than 500 CSS pixels, so
+  // a shot asked for at 390 comes out as the left 390 pixels of a 500-pixel
+  // page; and the introduction covers a view opened with no window in the URL,
+  // which is the one thing these two may not name. The frame answers both — a
+  // viewport of exactly the width asked for, and a reader who has been here
+  // before — and passes every other parameter through, so what is inside it is
+  // the atlas at the link a reader would have.
+  { name: 'm43-timeline-wide', page: 'docs/screens/frame.html', query: '?w=1440&h=900&fixtures=1',
+    width: 1440, height: 900,
+    what: 'five centuries on one axis at 1440 px: a column per century, the band on the busiest' },
+  { name: 'm43-timeline-phone', page: 'docs/screens/frame.html', query: '?w=390&h=844&fixtures=1',
+    width: 500, height: 844,
+    what: 'the same five centuries in a 390 x 844 viewport, labelled only where a label fits' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

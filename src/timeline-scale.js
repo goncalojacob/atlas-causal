@@ -179,7 +179,11 @@ export function createCenturyScale({ domain, range, counts = null }) {
     // even share and is a rule about a linear axis rather than about this one.
     //
     // Where a boundary and a round year inside a bucket fall on the same few
-    // pixels the boundary wins: it is the one the buckets are cut on.
+    // pixels the boundary wins: it is the one the buckets are cut on. Where
+    // two *boundaries* are that close the earlier one stands and the later is
+    // dropped — a century may take a round year's place but never another
+    // century's, or a run of narrow columns would hand the label along from
+    // one to the next and leave only the last of them labelled.
     ticks(count = 8) {
       const minPx = Math.abs(r1 - r0) / Math.max(1, count);
       const wanted = new Map();
@@ -196,19 +200,25 @@ export function createCenturyScale({ domain, range, counts = null }) {
       const out = [];
       const tick = (value) => ({ value, label: formatYear(fromAstronomical(value)) });
       let last = -Infinity;
+      let lastIsCentury = false;
       for (const [value, isCentury] of [...wanted].sort((one, other) => one[0] - other[0])) {
         const x = xOf(value);
         if (x - last >= LABEL_GAP) {
           out.push(tick(value));
           last = x;
+          lastIsCentury = isCentury;
           continue;
         }
         // Too close to what is already there. A century boundary takes the
         // place of the round year it is crowding — which is further left, so
-        // whatever came before is further still and nothing else moves.
-        if (!isCentury || out.length === 0) continue;
+        // whatever came before is further still and nothing else moves. It
+        // never takes another century's place, and a dropped one leaves `last`
+        // where it was, so the next century along is measured from the label
+        // that is really there.
+        if (!isCentury || lastIsCentury || out.length === 0) continue;
         out[out.length - 1] = tick(value);
         last = x;
+        lastIsCentury = true;
       }
       return out;
     },

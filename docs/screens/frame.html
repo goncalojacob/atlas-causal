@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A viewport of a given size — Atlas causal</title>
+  <link rel="stylesheet" href="../../src/style.css">
+  <style>
+    /* Only this page's own arrangement; every colour is a token of
+       src/style.css and nothing here is a new value. */
+    body { margin: 0; background: var(--ground); display: flex; justify-content: center; }
+    iframe { border: 0; display: block; background: var(--paper); }
+  </style>
+</head>
+<body>
+  <iframe id="viewport" title="The atlas at a given viewport"></iframe>
+  <script type="module">
+    // Why this page exists: tools/screens.mjs drives headless Chromium from
+    // its own command line and nothing else, and headless Chromium will not
+    // give a window narrower than 500 CSS pixels. Asking it for 390 does not
+    // make a phone — it lays the page out at 500 and crops the picture to 390,
+    // so the right tenth of the interface is simply missing from the file.
+    //
+    // An iframe has a viewport of its own, and the media queries inside it are
+    // the frame's. So the shot is taken at a window the browser will give, and
+    // what is photographed inside it is a viewport of exactly the width asked
+    // for — 390 × 844 for the phone, which is what `tests/phone-browser.test.mjs`
+    // drives too, so the picture and the test are of the same thing.
+    //
+    // `w` and `h` are this page's; every other parameter is passed on to the
+    // atlas, so the link inside the frame is the link a reader would have.
+    const params = new URLSearchParams(location.search);
+    const size = (key, fallback) => {
+      const value = Number(params.get(key));
+      params.delete(key);
+      return Number.isFinite(value) && value > 0 ? value : fallback;
+    };
+    const width = size('w', 390);
+    const height = size('h', 844);
+    // A reader who has been here before: the introduction covers the view on a
+    // first visit with nothing open (src/intro.js), and a browser started for
+    // one screenshot has never been anywhere. Written on this page, which is
+    // the frame's own origin, so the frame reads it back.
+    try { localStorage.setItem('atlas-causal.intro', 'seen'); } catch { /* storage off */ }
+    const frame = document.getElementById('viewport');
+    frame.width = width;
+    frame.height = height;
+    const query = params.toString().replace(/%2C/g, ',').replace(/%3A/g, ':');
+    frame.src = `/${query ? `?${query}` : ''}`;
+  </script>
+</body>
+</html>

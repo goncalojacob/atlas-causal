@@ -131,6 +131,28 @@ test('createTimelineScale buckets only past the threshold', () => {
   assert.ok(Math.abs((bare.x(1990) - bare.x(1980)) - (bare.x(1520) - bare.x(1510))) < 1e-9);
 });
 
+test('a narrow axis keeps labels along its length, not one at each end', () => {
+  // The phone. Eight centuries in 258 px is eight columns of about thirty, so
+  // most of the boundaries cannot be labelled — and the ones that can must be
+  // spread along the axis. A run of narrow columns each taking the label from
+  // the one before it would leave the first century and the last and nothing
+  // in between, which reads as a two-century corpus.
+  const s = createCenturyScale({
+    domain: [1166, 2059],
+    range: [120, 378],
+    counts: new Map([[1200, 11], [1400, 2], [1500, 1], [1600, 1], [1700, 1], [1800, 1], [1900, 2], [2000, 1]]),
+  });
+  const ticks = s.ticks(4);
+  assert.ok(ticks.length >= 4, `several labels survive (${ticks.map((t) => t.label).join(' ')})`);
+  const xs = ticks.map((t) => s.x(t.value));
+  for (let i = 1; i < xs.length; i += 1) {
+    assert.ok(xs[i] - xs[i - 1] >= 30, `"${ticks[i - 1].label}" and "${ticks[i].label}" have room`);
+  }
+  assert.ok(xs[xs.length - 1] > 300, `and they reach along the axis (${Math.round(xs[xs.length - 1])} of 378)`);
+  // Every one of them is a century, because at this width nothing finer fits.
+  assert.ok(ticks.every((t) => t.value % 100 === 0), ticks.map((t) => t.label).join(' '));
+});
+
 test('a bucketed scale with a degenerate domain does not divide by zero', () => {
   const s = createCenturyScale({ domain: [1415, 1415], range: RANGE, counts: DEEP });
   assert.equal(s.x(1415), RANGE[0]);
