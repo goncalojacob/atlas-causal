@@ -6,6 +6,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { renderKey, stateKey, shardsArrived } from '../src/render-key.js';
+import { baseSignature } from '../src/map/layers/base.js';
 import { MARGIN_YEARS, withMargin, resolveWindow, overlaps } from '../src/util/window.js';
 import { createState } from '../src/state.js';
 
@@ -101,4 +102,50 @@ test('the margin widens what a view draws and never narrows it', () => {
   assert.ok(overlaps(at(2010), window) && overlaps(at(2010), margin), 'inside the band');
   assert.ok(!overlaps(at(1980), window) && overlaps(at(1980), margin), 'inside the margin');
   assert.ok(!overlaps(at(1930), margin), 'past the margin');
+});
+
+// --- the base map ----------------------------------------------------------
+//
+// M37a. A base file landing is the same shape of thing as a territory shard
+// landing: the picture changes and no field of the state says so, so the map
+// carries a count of them in its key beside `shardsIn` (map.js). And what
+// keeps a pan from rebuilding four thousand paths is not this key at all —
+// the map's key carries the box on screen and a pan moves it — but the
+// layer's own signature, which is why that is a function of its own.
+
+test('a base file landing changes the map\'s key', () => {
+  const s = store().get();
+  let baseIn = 0;
+  const key = () => renderKey(s, 0, 0, 1, '', 0, baseIn, false, 0);
+  const before = key();
+  assert.equal(key(), before, 'nothing happened, nothing to draw again');
+  baseIn += 1;
+  assert.notEqual(key(), before, 'a river arrived and the map has to draw again');
+});
+
+test('switching a layer changes the map\'s key', () => {
+  const s = store().get();
+  const parts = [0, 0, 1, '', 0, 0, false, 0];
+  const off = { ...s, layers: s.layers.filter((l) => l !== 'territories') };
+  assert.notEqual(renderKey(off, ...parts), renderKey(s, ...parts));
+  // And a name the state does not know is dropped before it ever reaches a
+  // key, which is what `?layers=rivers` means until M37b widens `LAYERS`.
+  assert.equal(renderKey({ ...s, layers: [...s.layers] }, ...parts), renderKey(s, ...parts));
+});
+
+test('a pan within one cell at one bucket leaves the base layer alone', () => {
+  // The four things a base layer drew: whether it is on, whether the zoom
+  // reaches it, the bucket the zoom falls in, and the files in hand. A pan
+  // changes none of them while it stays inside the cells already held.
+  const drawn = { on: true, drawable: true, bucket: '0.05:4', files: ['geo/base/rivers/x2y2.json'] };
+  assert.equal(baseSignature(drawn), baseSignature({ ...drawn }), 'the same picture keys the same');
+  // A file landing, a cell leaving the view, a rung of the ladder crossed, the
+  // layer switched off: each of them is a different picture.
+  assert.notEqual(baseSignature(drawn),
+    baseSignature({ ...drawn, files: ['geo/base/rivers/x2y2.json', 'geo/base/rivers/x3y2.json'] }));
+  assert.notEqual(baseSignature(drawn), baseSignature({ ...drawn, files: [] }));
+  assert.notEqual(baseSignature(drawn), baseSignature({ ...drawn, bucket: '0.2:4' }));
+  assert.notEqual(baseSignature(drawn), baseSignature({ ...drawn, bucket: '0.05:5' }));
+  assert.notEqual(baseSignature(drawn), baseSignature({ ...drawn, on: false }));
+  assert.notEqual(baseSignature(drawn), baseSignature({ ...drawn, drawable: false }));
 });

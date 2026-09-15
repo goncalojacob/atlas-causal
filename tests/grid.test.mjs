@@ -10,6 +10,7 @@ import assert from 'node:assert/strict';
 import {
   GRID, WORLD, allCells, cellBounds, cellKey, cellOf, cellsFor, parseCellKey,
 } from '../src/map/grid.js';
+import { worldProjection, viewBboxIn } from '../src/map/projection.js';
 
 // Deterministic, so a failure is reproducible: the same thousand points every
 // run, spread over the globe by a multiplier with no common factor with 360.
@@ -105,4 +106,70 @@ test('a key that is not on the grid has no bounds', () => {
   assert.equal(cellKey(2, 2), 'x2y2');
   // Column and row are as good as a key, for a caller that has them.
   assert.deepEqual(cellBounds(2, 2), cellBounds('x2y2'));
+});
+
+// --- over the boxes the map really produces --------------------------------
+//
+// The cases above are hand-written boxes. These are the boxes `viewBboxIn`
+// gives for the transforms the map is actually in — which is the question M37
+// asks of this file on every pan, and the one place a change to either module
+// could quietly start fetching the world. The pane is measured two ways: the
+// nominal 960 × 540, and the letterboxed rectangle of a pane wider than that
+// ratio, whose visible SVG x runs −220 … 1180 (viewport.test.mjs's own
+// numbers, health review A, finding 4).
+
+const PROJECTION = worldProjection({ width: 960, height: 540 });
+const NOMINAL = { x0: 0, y0: 0, x1: 960, y1: 540 };
+const LETTERBOXED = { x0: -220, y0: 0, x1: 1180, y1: 540 };
+
+// The transform that puts a point in the middle of the pane at a given zoom,
+// which is what `zoomTo` in map.js computes.
+function centredOn([lon, lat], k) {
+  const [px, py] = PROJECTION.project([lon, lat]);
+  return { x: 960 / 2 - px * k, y: 540 / 2 - py * k, k };
+}
+
+const cellsAt = (point, k, pane = NOMINAL) => cellsFor(viewBboxIn(PROJECTION, centredOn(point, k), pane));
+
+const LISBON = [-9.14, 38.72];
+
+test('at k = 1 the box is the whole world and every cell is in it', () => {
+  for (const pane of [NOMINAL, LETTERBOXED]) {
+    const box = viewBboxIn(PROJECTION, { x: 0, y: 0, k: 1 }, pane);
+    assert.deepEqual(box.slice(0, 1).concat(box.slice(2, 3)), [-180, 180], 'every longitude there is');
+    assert.deepEqual(cellsFor(box), allCells());
+  }
+});
+
+test('at k = 4 and k = 8 over Portugal the box is a handful of cells and never the world', () => {
+  // Lisbon is in x2y2: −60 … 0 by 0 … 45 (grid.js).
+  assert.equal(cellOf(...LISBON), 'x2y2');
+  const four = cellsAt(LISBON, 4);
+  const eight = cellsAt(LISBON, 8);
+  assert.deepEqual(four, ['x2y2', 'x2y3', 'x3y2', 'x3y3']);
+  assert.deepEqual(eight, ['x2y2', 'x2y3', 'x3y2', 'x3y3']);
+  assert.ok(four.includes('x2y2') && eight.includes('x2y2'), 'the cell Lisbon is in, at both');
+  // A wide pane shows more of the world at the same zoom, so it may name more
+  // cells — but a handful, not the grid.
+  const wide = cellsAt(LISBON, 4, LETTERBOXED);
+  assert.deepEqual(wide, ['x1y2', 'x1y3', 'x2y2', 'x2y3', 'x3y2', 'x3y3']);
+  assert.ok(cellsAt(LISBON, 8, LETTERBOXED).length <= 4, 'and deeper in, fewer');
+  for (const keys of [four, eight, wide]) {
+    assert.ok(keys.length < 24, 'never the whole grid');
+    assert.deepEqual([...new Set(keys)], keys, 'no cell twice');
+  }
+});
+
+test('a view across the seam is the two columns either side of it, not the rest of the world', () => {
+  // The picture is centred on 150°E, so ±180 is an ordinary meridian of it and
+  // a reader can pan across it: the box comes back with its west end east of
+  // its east end, and the cells are the ones at both ends of the grid.
+  for (const k of [4, 8]) {
+    const box = viewBboxIn(PROJECTION, centredOn([180, 0], k), NOMINAL);
+    assert.ok(box[0] > box[2], `k = ${k}: ${box[0]} … ${box[2]} should wrap`);
+    const keys = cellsFor(box);
+    assert.deepEqual(keys, ['x0y1', 'x0y2', 'x5y1', 'x5y2']);
+    assert.ok(keys.includes('x5y2') && keys.includes('x0y2'), 'both sides of ±180');
+    assert.ok(!keys.includes('x2y2'), 'and nothing on the far side of the world');
+  }
 });

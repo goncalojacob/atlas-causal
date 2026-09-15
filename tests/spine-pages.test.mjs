@@ -87,16 +87,34 @@ for (const [query, ready, graph, times] of PAGES) {
         requests.filter((name) => name.includes('geo/regions.json')).length, 0,
         `${query} fetched the lane polygons: ${requests.join(' · ')}`,
       );
-      // M36: the base map is 2.4 MB of cells and not one byte of it is
-      // fetched before the first picture. The only coastline at first paint
-      // is `land-present.json`, which is what `manifest.land` names and what
-      // loadAtlas has always fetched; a cell is asked for when the viewport
-      // enters it and never before (M36 review, A10 — this test holds request
-      // names and not byte counts, and the measured bytes are in STATUS.md).
-      assert.equal(
-        requests.filter((name) => name.includes('geo/base/')).length, 0,
-        `${query} fetched a base map cell at first paint: ${requests.join(' · ')}`,
-      );
+      // M36 wrote the base map and M37a draws it. Not one byte of it is
+      // fetched **before the first picture**: the far file of a layer the
+      // world view reaches goes out behind the same `defer` the territories
+      // use — a frame, then a task — and a cell is asked for when the
+      // viewport enters it and never before. The only coastline at first
+      // paint is still `land-present.json`, which is what `manifest.land`
+      // names and what loadAtlas has always fetched (M36 review, A10; M37
+      // §5 — this test holds request names and start times, not byte counts,
+      // and the measured bytes are in STATUS.md).
+      //
+      // The browser records when each request began, so this is the
+      // assertion the brief asks for and not a proxy for it.
+      const base = await page.eval(`
+        const paint = performance.getEntriesByType('paint')
+          .find((e) => e.name === 'first-contentful-paint');
+        const entries = performance.getEntriesByType('resource')
+          .filter((e) => e.name.includes('geo/base/'));
+        return {
+          painted: paint ? paint.startTime : null,
+          early: paint ? entries.filter((e) => e.startTime < paint.startTime).map((e) => e.name) : [],
+          cells: entries.map((e) => e.name).filter((n) => /geo\\/base\\/[a-z]+\\//.test(n)),
+        };`);
+      assert.ok(base.painted !== null, `${query} never reported a first contentful paint`);
+      assert.deepEqual(base.early, [], `${query} fetched part of the base map before its first picture`);
+      // And no cell at all, on any page: at the world view the box is every
+      // cell there is, and the near level is not asked for until NEAR_ZOOM
+      // (map.js). A page with no map asks for none of it either way.
+      assert.deepEqual(base.cells, [], `${query} fetched a base map cell at the world view`);
     });
   });
 }

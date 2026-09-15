@@ -8,6 +8,7 @@
 import { svg } from '../util/dom.js';
 import { worldProjection, WORLD_WIDTH, viewBboxIn, bboxTransform } from './projection.js';
 import { createLandLayer } from './layers/land.js';
+import { createBaseLayer } from './layers/base.js';
 import { createRegionsLayer } from './layers/regions.js';
 import { createPresencesLayer } from './layers/presences.js';
 import { chainEdges, walkOrSelect } from '../chain.js';
@@ -33,6 +34,14 @@ const MIN_ZOOM = 1;
 // Shared with cluster.js, which needs it to know whether a cluster can ever
 // be pulled apart at all.
 const MAX_ZOOM = DEEPEST_ZOOM;
+// O zoom a partir do qual o mapa de base passa a pedir células. Abaixo dele
+// desenha-se só o ficheiro de longe de cada camada, e a costa é a de
+// `land.js`. Quatro porque a esta altura uma célula — 60° por 45° — é da
+// largura do painel: acima dela o nível de longe é grosseiro de mais para o
+// que se está a ver, e abaixo dela pedir uma célula seria pedir ficheiros para
+// um mundo inteiro que ainda cabe numa imagem. Não é um esquema de mosaicos:
+// que célula se pede é a caixa no ecrã que decide, nunca o zoom (grid.js).
+const NEAR_ZOOM = 4;
 // A cluster whose members are simply too close to place cannot say where it
 // would come apart; it gets a plain step in instead.
 const CLUSTER_ZOOM_STEP = 3;
@@ -52,6 +61,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   const projection = worldProjection({ width: WIDTH, height: HEIGHT });
   const viewport = svg('g', { class: 'viewport' });
   const landGroup = svg('g', { class: 'layer layer-land' });
+  // E entre a costa e os territórios, o mapa de base: por baixo dos
+  // territórios porque uma fronteira é uma afirmação e um rio é o chão em que
+  // ela é desenhada, e por cima da costa porque um rio dentro de terra é
+  // precisamente o que se quer ver (layers/base.js).
+  const baseGroup = svg('g', { class: 'layer layer-base' });
   // Territories go between the coastlines and the marks: an event still sits
   // on top of the state it happened in.
   const presencesGroup = svg('g', { class: 'layer layer-presences' });
@@ -60,7 +74,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // stop being clickable (layers/regions.js).
   const regionsGroup = svg('g', { class: 'layer layer-regions' });
   const eventsGroup = svg('g', { class: 'layer layer-events' });
-  viewport.append(landGroup, presencesGroup, regionsGroup, eventsGroup);
+  viewport.append(landGroup, baseGroup, presencesGroup, regionsGroup, eventsGroup);
   const root = svg('svg', { viewBox: `0 0 ${WIDTH} ${HEIGHT}`, class: 'map', role: 'img', 'aria-label': 'Map' }, [viewport]);
   // The twelve symbols, once in the document: the timeline draws the same ones
   // by id, and two copies would be twelve repeated ids (glyphs.js).
@@ -83,6 +97,16 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // This is the one place it is said. It is not state and never reaches the
   // URL: whether one request failed on this machine is not part of what the
   // link describes.
+  // The first shard of borders is 880 KB that nobody has asked for, and it
+  // was fetched inside the map's first render, ahead of the coastlines being
+  // painted (health review B, finding 24). A frame, then a task: the callback
+  // of requestAnimationFrame still runs before the paint it is for, so the
+  // timeout is what puts the request after it. O mapa de base pede os seus
+  // ficheiros de longe atrás do mesmo adiamento, pela mesma razão.
+  const defer = (fn) => {
+    if (typeof requestAnimationFrame !== 'function' || typeof setTimeout !== 'function') return fn();
+    return requestAnimationFrame(() => setTimeout(fn, 0));
+  };
   const territoriesNote = document.createElement('p');
   territoriesNote.className = 'map-note';
   territoriesNote.hidden = true;
@@ -91,15 +115,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     atlas,
     onSelect: (id) => state.set({ actor: id, selected: null, chain: [] }),
     onFailed: (failed) => { territoriesNote.hidden = !failed; },
-    // The first shard of borders is 880 KB that nobody has asked for, and it
-    // was fetched inside the map's first render, ahead of the coastlines
-    // being painted (health review B, finding 24). A frame, then a task: the
-    // callback of requestAnimationFrame still runs before the paint it is
-    // for, so the timeout is what puts the request after it.
-    defer: (fn) => {
-      if (typeof requestAnimationFrame !== 'function' || typeof setTimeout !== 'function') return fn();
-      return requestAnimationFrame(() => setTimeout(fn, 0));
-    },
+    defer,
   });
   // A cluster of marks that zooming can pull apart is zoomed into; one whose
   // members share a point — Lisbon's thirty-seven — is spread open instead,
@@ -143,6 +159,38 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     },
   });
   land.render(atlas.land);
+
+  // --- o mapa de base -------------------------------------------------------
+  //
+  // Um `<g>` por camada de `manifest.base.layers`, na ordem do manifesto,
+  // construídos uma vez. Um manifesto sem `base` é um mapa sem mapa de base:
+  // nenhum grupo, nenhuma camada, nenhum pedido.
+  //
+  // Quantas vezes um ficheiro do mapa de base chegou. Não é decoração: uma
+  // camada pede um redesenho quando um ficheiro aterra, e uma chave que não o
+  // visse saltava exactamente esse redesenho e deixava os rios por desenhar
+  // para sempre — que é o que a conta dos shards dos territórios já diz
+  // (render-key.js).
+  let baseIn = 0;
+  const baseLayers = (atlas.baseLayers ?? []).map((layer) => {
+    const group = svg('g', { class: `layer layer-base-${layer.id}` });
+    baseGroup.appendChild(group);
+    return {
+      id: layer.id,
+      layer: createBaseLayer(group, projection, {
+        id: layer.id,
+        geometry: layer.geometry,
+        minZoom: layer.minZoom,
+        world: layer.world,
+        cells: layer.cells ?? [],
+        nearZoom: NEAR_ZOOM,
+        load: (file) => atlas.loadBase(file),
+        loaded: (file) => atlas.loadedBase(file),
+        onReady: () => baseArrived(),
+        defer,
+      }),
+    };
+  });
 
   // Pan and zoom live here, not in the state: the URL carries what the user
   // is looking at in history, not how far they scrolled.
@@ -415,7 +463,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
 
   function render(s, { force = false } = {}) {
     const box = view();
-    const key = renderKey(s, transform.x, transform.y, transform.k, spread ?? '', shardsIn, exactZoom,
+    const key = renderKey(s, transform.x, transform.y, transform.k, spread ?? '', shardsIn, baseIn, exactZoom,
       shardsArrived(atlas),
       Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
     if (!force && key === drawnFor) return;
@@ -429,6 +477,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // is a scatter of dots. `land` is still in `LAYERS` so that an old link
     // parses; nothing turns it off.
     landGroup.style.display = '';
+    drawBase();
     presencesGroup.style.display = s.layers.includes('territories') ? '' : 'none';
     // On while any events token stands: turning one category off replaces the
     // bare `events` with one `events:<id>` per category still on (A11), and
@@ -531,6 +580,43 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // A spread survives a re-render — the band moving, a selection — for as
     // long as its cluster is still there to be spread.
     if (spread && !result.spread) spread = null;
+  }
+
+  // --- o mapa de base, desenhado --------------------------------------------
+  //
+  // Todas as camadas ligadas: o controlo que as desliga é de M37b, e até lá
+  // `?layers=` não conhece nenhum destes nomes — que é precisamente o que já
+  // quer dizer para um nome que não conhece.
+  //
+  // A caixa em graus e não a caixa projectada: é ela que diz que células pedir,
+  // e é a mesma que o mapa publica no URL (projection.js).
+  function drawBase() {
+    if (baseLayers.length === 0) return;
+    const degrees = viewBboxIn(projection, transform, visibleBox());
+    let nearCoast = false;
+    for (const { id, layer } of baseLayers) {
+      const result = layer.render({ k: transform.k, view: degrees, on: true });
+      if (id === 'coast') nearCoast = result.complete;
+    }
+    // A costa de longe fica com o seu enchimento — é ele que faz a terra ser
+    // terra — e perde o traço quando a costa de perto cobre a caixa toda; de
+    // lá para cá a costa desenhada é a de perto, e ela sozinha (emenda A2).
+    // Volta assim que uma célula da caixa deixe de estar em mão.
+    landGroup.classList.toggle('near-coast', nearCoast);
+  }
+
+  // Um ficheiro do mapa de base que aterra muda o mapa de base e mais nada, por
+  // isso redesenha o mapa de base e mais nada: passar por `render` faria as
+  // marcas, a cadeia e as linhas de consequência serem construídas outra vez
+  // por causa de um rio — que é o que a animação de um clique num grupo de
+  // marcas já não faz, e pela mesma razão (H4a). Juntos num fotograma, porque
+  // seis camadas e quatro células são vinte e quatro chegadas e uma imagem.
+  let basePending = false;
+  function baseArrived() {
+    baseIn += 1;
+    if (basePending) return;
+    basePending = true;
+    defer(() => { basePending = false; drawBase(); });
   }
 
   // The two lines of the corner. Rewritten only when they change, because the

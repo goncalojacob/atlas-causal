@@ -590,6 +590,26 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
 .map { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
 .map:active { cursor: grabbing; }
 .map .land { fill: var(--land); stroke: var(--cobalt); stroke-width: 0.6; vector-effect: non-scaling-stroke; }
+/* O mapa de base: a costa ao perto, os rios, os lagos, as regiões físicas, os
+   picos e as cidades (map/layers/base.js). A coisa mais silenciosa da página —
+   tudo em fichas que já existem, nenhum valor hexadecimal novo e nenhuma ficha
+   nova, e nada disto apanha o rato: um rio não é um controlo, e "um clique no
+   mar pousa o que o leitor tinha na mão" tem de continuar a valer por cima de
+   um rio, de um lago e de um ponto de cidade.
+
+   A costa de longe fica com o enchimento e perde o traço quando a de perto
+   cobre a caixa toda: as duas não coincidem — 0.4° contra 0.015° — e desenhar
+   ambas era desenhar duas margens (M36a; emenda A2 do briefing de M37). */
+.map .layer-base { pointer-events: none; }
+.map .layer-land.near-coast .land { stroke: none; }
+.map .layer-base-coast path { fill: none; stroke: var(--cobalt); stroke-width: 0.6; vector-effect: non-scaling-stroke; }
+.map .layer-base-rivers path { fill: none; stroke: var(--cobalt-soft); stroke-width: 0.5; vector-effect: non-scaling-stroke; }
+.map .layer-base-lakes path { fill: var(--cobalt-faint); stroke: var(--cobalt-soft); stroke-width: 0.5; vector-effect: non-scaling-stroke; }
+.map .layer-base-physical path { fill: none; stroke: var(--line); stroke-width: 0.5; stroke-dasharray: 3 3; vector-effect: non-scaling-stroke; }
+.map .layer-base-mountains circle { fill: var(--ink-soft); stroke: none; }
+/* Aureolada a papel, como as marcas são: um ponto de cidade cai muitas vezes
+   sobre um território cheio, e sem a auréola desaparecia lá dentro. */
+.map .layer-base-cities circle { fill: var(--ink-soft); stroke: var(--paper); stroke-width: 0.8; vector-effect: non-scaling-stroke; }
 /* Territories. A state is filled with its hue and its INLAND borders are
    stroked in the same hue darkened; a dependency is filled with the LIGHTER
    TINT OF ITS OWNER and bordered dotted, so "its own" and "somebody's"

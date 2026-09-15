@@ -657,6 +657,39 @@ export function createAtlas({
     return geometryLoading.get(file);
   }
 
+  // --- the base map ---------------------------------------------------------
+  //
+  // As atrasas de `loadGeometry`, ficheiro a ficheiro: um pedido de cada vez
+  // por ficheiro, uma rejeição apagada em vez de guardada — o próximo desenho
+  // que passe por aquela célula volta a pedir — e um leitor síncrono, para que
+  // um render nunca espere por nada.
+  //
+  // O ficheiro é devolvido tal como está escrito: uma FeatureCollection para
+  // uma camada de linhas ou de polígonos, um array de pontos para uma camada
+  // de pontos (M36a, desvio 600). Quem desenha é que sabe qual é qual, e
+  // sabe-o pelo `geometry` que o manifesto declara.
+  const baseFiles = new Map();
+  const baseLoading = new Map();
+  const loadedBase = (file) => baseFiles.get(file) ?? null;
+  function loadBase(file) {
+    if (baseFiles.has(file)) return Promise.resolve(baseFiles.get(file));
+    if (!baseLoading.has(file)) {
+      const pending = fetchJson(`${dataRoot}${file}`).then((data) => {
+        baseFiles.set(file, data);
+        return data;
+      }).catch((error) => {
+        if (baseLoading.get(file) === pending) baseLoading.delete(file);
+        throw error;
+      });
+      baseLoading.set(file, pending);
+    }
+    return baseLoading.get(file);
+  }
+  // Um manifesto sem `base` é um atlas sem mapa de base: nenhuma camada,
+  // nenhum pedido de espécie nenhuma. Ausente e não vazio, exactamente como
+  // um `presences` ausente diz que não há territórios (M36a).
+  const baseLayers = manifest?.base?.layers ?? [];
+
   // Who held territory in a given year. One presence per actor: two of an
   // actor's presences can share the year a border moved in, because a year
   // is the finest bound the model has, and the later one is the one to draw.
@@ -773,6 +806,11 @@ export function createAtlas({
     shardForYear,
     loadedGeometry,
     loadGeometry,
+    // O mapa de base, como o manifesto o declara, e os dois leitores que a
+    // camada usa. Um array vazio é um atlas que não desenha nenhum.
+    baseLayers,
+    loadedBase,
+    loadBase,
     presencesAt,
     events,
     edges,
