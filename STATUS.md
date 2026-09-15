@@ -13,6 +13,55 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-15, after **M38b** (`docs/m38-brief.md`, with its amendments after
+review): **M38 is done — the map has names, and the ground has them too.**
+A river, a lake, a range and a peak are written at priority 2, each at its own
+geometry's label point and each in the same eleven pixels as everything else,
+spaced by `--tracking-label` and in no new colour: at Lisbon the picture names
+the Tejo, the Tajo, the Ebro, the Garonne, the Cord. Cantábrica, the Massif
+Central and the Pyrenees, and at Iberia the Alps, the Danube, the Carpathians,
+the Atlas Mountains and the Western Desert. A river that Natural Earth cut into
+seven segments says its name **once** (deviation 660).
+
+**A city can carry the name it had in the year on the band** — and none of them
+does. `src/map/names.js` reads `historicalNames` off the place record a city is
+and writes, on the face, the name whose interval contains the far end of the
+window; the `<title>` carries the modern name, `NAME_EN` where it differs, and
+every dated name with its years. **No place record in this atlas has one — 0 of
+26 — so nothing on the real map is dated today**, and the path is proven on
+fixtures instead, which is what amendment A1 asks for. Two things are needed
+before a real city is ever dated by a year: somebody has to write the dated
+names into a record, *and* `historicalNames` has to reach the browser, which it
+does not — it is in neither of the place's spine columns (deviation 665, the
+owner's). **Nothing here invents a name**: a city the atlas has no dated name
+for keeps the one Natural Earth gives it, whatever the year suggests.
+
+**The thirteen places Natural Earth has no city for are on the map**, from the
+record's own point and the record's own name — `belem` is a parish, `tete-district`
+a district, `near-villanueva-del-fresno` a field — and so are the thirteen it
+does have. A place **this atlas names** now outranks a city it merely knows
+about, whichever kind it is: without that, Lisbon's 2.8 million lost its label
+to Cairo's 20 at k = 8, on a map of Portuguese expansion (deviation 659, the
+owner's). Several of those records are named with a phrase rather than a
+toponym — "Recife, at the end of the voyage" — and the map says what the record
+says (deviation 668, the owner's).
+
+**How many land.** At the whole world, none, as before. At Iberia at k = 8 with
+the events off: **24 city labels and 8 feature labels**, of which 7 are this
+atlas's own places — Lisbon, Porto, Alvor, Central Portugal, Flanders, Lajes,
+near Villanueva del Fresno — out of 1,566 city dots, 671 rivers, 492 lakes, 541
+regions and 86 peaks drawn. At Lisbon at k = 23.8 with the events on:
+**3 event labels, 24 city labels and 8 feature labels**. Both limits bind at
+both zooms, and a label that does not fit is skipped and never nudged.
+
+`node tools/validate.mjs --index` is **byte-identical**: this run wrote nothing
+under `data/` at all. Three screenshots are under `docs/screens/m38-names-*.png`
+and `m38-labels-world.png`, taken with `--only`, so no other milestone's
+evidence was rewritten. `ARCHITECTURE.md` is revision 25 and `historicalNames`
+has a reader in it at last. The full account and deviations 659 to 668 are in
+**`## M38b: the dated names, the atlas's own places, and the ground named`**,
+below.
+
 2026-09-15, after **M38a** (`docs/m38-brief.md`, with its amendments after
 review): **the cities have their names, and there is one placer.**
 `src/map/labels.js` is it, and there is never a second: it is pure, both layers
@@ -6298,6 +6347,164 @@ this run wrote is `m38-labels-lisbon.png`; the brief's `m38-labels-iberia` and
 **The sandbox ran the browser tests.** 1,396 tests, **none skipped** — the five
 new browser tests of the labels among them.
 
+
+## M38b: the dated names, the atlas's own places, and the ground named
+
+M38a built the one placer and gave the cities the names Natural Earth has. This
+run gives the map the other two kinds of name: **the name a place had in the
+year on the band**, and **the name of the ground it all happened on**. With it
+M38 is done, and so is the map block.
+
+### What a name is, now
+
+`src/map/names.js` is pure — no DOM, no layer, no state — and answers one
+question: what is this thing called, and in what year?
+
+- **On the face**, the dated name from the place record's `historicalNames`
+  whose interval contains the far end of the window; failing that, the name
+  Natural Earth gives. `from` counts and `to` does not, so "Lourenço Marques
+  until 1976, Maputo from 1976" are two intervals that touch in a year and
+  overlap in none — which is how a person writes a rename.
+- **In the `<title>`**, all of them: the modern name, `NAME_EN` where it
+  differs, then every dated name with its years ("Lourenço Marques,
+  1895–1976"), joined by a middle dot. There is no "local name" and no
+  `NAME_<lang>` is read, per amendment A0.
+- **Nothing is invented.** A window whose far end falls in no interval gets the
+  modern name; a record with no `historicalNames` gets the modern name and
+  nothing else. A city's former name is a historical claim and `CLAUDE.md` says
+  where those may come from: a person, not this.
+
+**And no real place is dated.** 0 of the 26 records under `data/places/` carry
+`historicalNames`, so every name on the real map today is Natural Earth's own
+and moving the band changes none of them. The dated path is proven in
+`tests/base-labels.test.mjs` on fixtures, which is what amendment A1 asks for.
+
+### The ground
+
+The rivers, the lakes, the physical regions and the peaks join the table in
+`map.js` at priority 2 — under events at 0 and cities at 1, limit 8 — and each
+is named at its own geometry's label point (deviation 662). What lands at the
+two zooms of the screenshots:
+
+| view | k | event | city | feature | of what was drawn |
+|---|---|---|---|---|---|
+| the whole world | 1 | 0 | 0 | 0 | 26 city dots, 51 rivers, 46 lakes, 98 regions |
+| Iberia, events off | 8 | — | 24 | 8 | 1,566 cities, 671 rivers, 492 lakes, 541 regions, 86 peaks |
+| Iberia, events on | 8 | 4 | 24 | 8 | the same picture |
+| Lisbon | 23.8 | 3 | 24 | 8 | 2,061 cities, 1,035 rivers, 466 lakes, 541 regions, 711 peaks |
+
+At Lisbon the eight are the Pyrenees, the Massif Central, the Cordillera
+Cantábrica, the Ebro, the Tajo, the Tejo, the Garonne and the Ariège; at Iberia
+the Alps, the Donau, the Danube, the Bratul Chillia, the Carpathians, the
+Pyrenees, the Western Desert and the Atlas Mountains. A peak is named where the
+low-ranked regions and rivers are out of view — Mount Everest is on the map at
+the Himalaya — because the weight of a physical feature is its label zoom
+turned round (deviation 663).
+
+**Nothing about a label's size is in the stylesheet**, and `.feature-label` did
+not change that: it sets the same soft ink a city is in and
+`letter-spacing: var(--tracking-label)`, which is an em and so follows the type
+size down as the zoom goes up. The size and the halo are still attributes
+divided by `k`, which is the bug M38a fixed and this run did not reintroduce.
+
+### The atlas's own places
+
+Thirteen of the twenty-six place records have no Natural Earth city, and
+`docs/naturalearth-places.md` says why: a parish of Lisbon, a district of
+Mozambique, a field near Villanueva del Fresno. Those are labelled from the
+record — its point, its name — beside the cities. A record whose city the map
+holds is left to the city, so nothing is named twice; and "holds" means the
+files in hand and not the dots drawn (deviation 664).
+
+### Deviations 659 to 668
+
+659. **A place this atlas names outranks a city it merely knows about, and the
+     rule is one rule.** The brief says a place record with no Natural Earth
+     city is labelled "at priority 1 beside the cities"; beside alone meant
+     never seen, because the twenty-four are spent on Cairo, Istanbul and Paris
+     long before Alvor. An atlas place weighs a thousand million, above any
+     population Natural Earth records, and among themselves the one more events
+     happened at leads. It applies to a place the source *does* have a city
+     for, not only to the thirteen it does not — without that half, Lisbon lost
+     its own label to Cairo at k = 8 on a map of Portuguese expansion, which
+     M38a's browser test caught at once. **The owner's**, if this ought instead
+     to be a map of where most people live.
+660. **A name of the ground is written once, however many pieces it arrives
+     in.** Natural Earth cuts the Tagus into segments with ids of their own and
+     writes a lake whole into every cell its box touches, so "Tejo" was on the
+     screen twice and "Danube" three times. A candidate may carry a `once` key
+     and the placer skips a second that shares it. The key is spent only by a
+     label actually placed, so a segment that loses its box has not eaten the
+     name. A point carries none: two dots named the same are two things.
+661. **A spaced label is measured wider.** `--tracking-label` is the only thing
+     that tells a physical feature from a city, and a spaced name covers more
+     ground: the box estimate takes an `em` per candidate — 0.55 as it always
+     was, 0.63 for a feature. The 0.08 is the token's value written a second
+     time, and it is an estimate *of* the stylesheet rather than a second
+     stylesheet: the box is made without a DOM, which is what `labels.js` is
+     for.
+662. **Where a name of the ground goes is the geometry's own label point**: the
+     vertex at the middle of the longest line for a river, the centroid of the
+     largest ring for a lake or a region, the point itself for a peak. Not the
+     centre of the bounding box, which for a river running diagonally is
+     somewhere the river does not pass. A centroid can fall outside a
+     crescent-shaped region and that is accepted: what the rule guarantees is
+     that the name never moves.
+663. **A peak's height breaks a tie inside a rung and never jumps one.** Rivers,
+     lakes, regions and peaks share priority 2 and need one comparable weight.
+     It is `-zl` — written early means big — plus the elevation as a fraction of
+     a rung, so Everest is worth 0.885 of one and no peak outranks the range it
+     stands in.
+664. **`placeIds()` answers "does the source have this city?" and not "can you
+     see it?"** — the place ids of every feature in the files the layer holds,
+     drawn or not. With the drawn ones alone, Braga, whose `z` is 12, was named
+     from the record at k = 8 and by the city at k = 12: the same word changing
+     owner in the middle of a wheel turn.
+665. **`historicalNames` is not in the spine, so a record that gains one still
+     does not reach the map.** The reader is built and proven, as A1 asks. But
+     the field is in neither of the place's column tables, the browser's
+     topology therefore never carries it, and adding a column writes its name
+     into the file's `columns` and moves the index — which this run's
+     "byte-identical" forbids. So "nothing on the real map is dated until
+     somebody writes one" is true and incomplete: writing one into a record is
+     necessary and not yet sufficient. **The owner's**: one column on the
+     place's attribute row and an index rebuild, and the first dated city is
+     live.
+666. **This run's pictures are `m38-names-lisbon`, `m38-names-iberia` and
+     `m38-labels-world`.** Test 5 asks for `m38-labels-iberia` and
+     `m38-labels-world`; the Iberia picture is here under the name this run was
+     given, and it is the same picture. All three were taken with `--only`, so
+     no other milestone's evidence was rewritten and deviation 658's restore
+     pass was not needed.
+667. **A test of M37's was made to wait rather than left to flake.** "a pan does
+     not rebuild the base map" counted the rivers, panned, and counted again,
+     and on the Actions runner a cell landed in between: 671 became 753 and an
+     arrival was read as a rebuild (run 641, on this run's own claim commit). It
+     now waits for the base map's files to settle first, as `settledShards`
+     already does for the attribute shards. The assertion is untouched and no
+     test was skipped.
+668. **The atlas's own places are written with the name the record gives**,
+     which for several of them is a phrase and not a toponym: "Recife, at the
+     end of the voyage", "near Villanueva del Fresno, Spain", "Flanders, near
+     Laventie". That is what `names[0]` says, and this run does not edit a
+     record to make a map read better. **The owner's**: either those records
+     want a shorter `names[0]` or the map wants a different field, and both are
+     a person's decision rather than a label layer's.
+
+### What M38b did not do
+
+No record was written and nothing under `data/` changed, so
+`node tools/validate.mjs --index` is byte-identical. No dated name was invented
+for any real place, and none exists. No second placer: `grep` still finds
+`drawLabels` only in `src/graph-view/`, which is the graph. No new hex value, no
+new token and no new type size; nothing about a label's size went into
+`src/style.css`. The projection, the emphasis hierarchy and the territories were
+not touched, and no repository setting was changed.
+
+**The sandbox ran the browser tests.** 1,420 tests, **none skipped** — 19 of
+them the new `tests/base-labels.test.mjs`, three more in `tests/labels.test.mjs`
+and two more in `tests/map-browser.test.mjs`.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -6485,3 +6692,5 @@ M37 done
 M38a started 2026-09-15T04:38:26Z by scheduled
 M38a done
 M38b started 2026-09-15T05:22:19Z by scheduled
+M38b done
+M38 done
