@@ -467,21 +467,16 @@ test('every record --import writes survives an unedited save through the form', 
       const record = JSON.parse(text);
       if (!Object.hasOwn(FIELDS, record.kind)) continue;
       const back = applyValues(record.kind, record, valuesFromRecord(record.kind, record));
-      // One exemption, named rather than hidden: `regionNote` — why the
-      // import chose the lane it chose — has no field on the event or the
-      // place form, so a save drops it. That is a gap in
-      // `KEPT_KEYS` in `src/contribute/bundle.js`, where `historicalNames`
-      // already sits, and not something the import can fix by writing less:
-      // the note is the record saying who decided its lane. It bites nothing
-      // in `data/` yet, because no import has written a record there since
-      // the field was added. Nothing else may be dropped, and this asserts
-      // that nothing else is.
+      // No exemption any more. `regionNote` — why the import chose the lane it
+      // chose — still has no field on the event or the place form, and it is
+      // not something the import can fix by writing less, because the note is
+      // the record saying who decided its lane; it is carried across untouched
+      // by `KEPT_KEYS` in `src/contribute/bundle.js`, where `historicalNames`
+      // already sat. The gap was named here while it bit nothing in `data/`,
+      // and M44a is the import that put a record carrying one there.
       const dropped = Object.keys(record).filter((key) => !Object.hasOwn(back, key));
-      assert.deepEqual(dropped, dropped.length ? ['regionNote'] : [], `${sub}/${name}: the form dropped more than the lane note`);
-      const kept = { ...record };
-      delete kept.regionNote;
-      const expected = dropped.length ? `${JSON.stringify(kept, null, 2)}\n` : text;
-      assert.equal(`${JSON.stringify(back, null, 2)}\n`, expected, `${sub}/${name}`);
+      assert.deepEqual(dropped, [], `${sub}/${name}: the form dropped a field the import wrote`);
+      assert.equal(`${JSON.stringify(back, null, 2)}\n`, text, `${sub}/${name}`);
       seen += 1;
     }
   }

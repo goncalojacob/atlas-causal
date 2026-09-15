@@ -870,9 +870,20 @@ const IDENTITY_KEYS = Object.freeze(['wikipedia', 'sitelinks']);
 // `imported-names` flag — would delete what the flag is about. Drawing an
 // input for it is a decision about the form and is not this run's; carrying
 // it across untouched is the rule this table already states.
+// `regionNote` is here since M44a, for the same reason and on both kinds that
+// have one: it is why the lane on the record is an override rather than the
+// derivation — the record saying who decided its lane — and no form draws it,
+// because it is not a thing to ask a contributor for. The import writes it
+// whenever it gives a placeless event or an unplaceable place a lane, and
+// `tests/import-wikidata.test.mjs` has named the gap since the field was
+// added, saying it bit nothing in `data/` only because no import had written a
+// record there yet. M44a is that import: batch 1 wrote
+// `data/events/balkan-wars.json` with the lane M44-0 named for it, and the
+// first save through the form would have deleted the sentence that says the
+// lane was written and not measured.
 const KEPT_KEYS = Object.freeze({
-  event: Object.freeze(['names']),
-  place: Object.freeze(['historicalNames']),
+  event: Object.freeze(['names', 'regionNote']),
+  place: Object.freeze(['historicalNames', 'regionNote']),
 });
 
 // Rebuild `built` in the key order of `original`, recursively, so that a save
