@@ -160,6 +160,7 @@ src/wikipedia.js           pure: which article a record's identity offers, and t
 src/cluster.js             pure: which marks overlap at this zoom, over a grid; the timeline uses it in one dimension. zoomBucket() is how often the map is willing to ask
 src/search.js              pure: titles, every name of an actor or a place, and a source's title and creators, folded and ranked;  search-box.js  the input and the keys
 src/map/projection.js      lon/lat ⇄ SVG (equirectangular); the only file a projection change touches. CENTRAL_MERIDIAN is 150E and SEAM the 30W the geometry is cut at; `k = 1` is the whole world in 960 units, and that is the unit every zoom threshold in the data is written in
+src/map/grid.js            pure: the fixed 60x45 degree grid the base map is cut on — 6 columns by 4 rows, keys `x0y0`..`x5y3`, origin -180 in data longitudes and not the seam. cellsFor(box) is which cells the viewport overlaps, wrapping a box that crosses the antimeridian. Not a tile scheme: one grid at one resolution, and the zoom never decides which cell is fetched
 src/map/map.js             SVG scaffold, pan/zoom, click into a cluster
 src/map/glyphs.js          pure but for the elements it builds: one `<symbol>` per category of `data/categories.json`, in one `<defs>` the document holds once, and the `<use class="glyph">` the map draws over a mark and the timeline at the left of a bar. Stroke only, `currentColor`, no colour of its own; never a replacement for `circle.mark`, and nothing at all for an event with no category
 src/map/layers/land.js     coastlines, always drawn and no longer a switch;  layers/presences.js  territories, drawn as a filled outline and a stroke along its inland borders alone (M39b);  layers/events.js  marks, clusters and chain lines;  layers/regions.js  the wash a large event is drawn as, over the polygons of its lane
@@ -226,6 +227,7 @@ tools/import/wikidata.mjs  identifiers and records from Wikidata; injectable fet
 tools/import/identity.mjs  the additive rule both imports obey: fill a gap, never change a value, never sign
 tools/import/geometry.mjs  clipToBox (Sutherland-Hodgman, holes kept, lines cut into their runs) and splitAtMeridian over it: where the geometry is cut at the projection's seam
 tools/import/source.mjs    reading a vendored source: gunzipped where the name says so, and the sha256 is of the decompressed bytes, which is the file as it was downloaded
+tools/import/grid.mjs      three lines: the name the import knows src/map/grid.js by, as simplify.mjs is for the simplifier
 vendor/                    INPUTS: the sources the geometry imports run on, gzipped, never data, never served, never in deploy.yml's allowlist
 tools/import/cache/        GENERATED: Wikipedia leads with their revision; never published, never data, not under data/
 tools/lib/read.mjs         all filesystem access for the tools, everything under data/imports/ included
