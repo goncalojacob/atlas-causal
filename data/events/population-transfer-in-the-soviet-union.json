@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "population-transfer-in-the-soviet-union",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q85125",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Population transfer in the Soviet Union",
+    "pt": "Transferências populacionais na União Soviética"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q85125"
+    }
+  ],
+  "title": "population transfer in the Soviet Union",
+  "summary": "Wikidata item Q85125, imported by tools/import/wikidata.mjs. The item's own description reads \"transfer and deportation of people in the Soviet Union\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1930,
+    "end": 1930
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

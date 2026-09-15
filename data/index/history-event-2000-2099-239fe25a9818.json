@@ -1617,6 +1617,15 @@
         }
       ]
     },
+    "2021-myanmar-coup-d-etat": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "2021-porto-local-elections": {
       "from": "git",
       "versions": [
@@ -1886,6 +1895,15 @@
             "category"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "2023-nigerien-coup-d-etat": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -3746,7 +3764,7 @@
       ]
     },
     "south-sudanese-civil-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4065,7 +4083,7 @@
       ]
     },
     "war-in-darfur": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

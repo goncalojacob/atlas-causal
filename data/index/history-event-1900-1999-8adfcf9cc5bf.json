@@ -997,6 +997,15 @@
         }
       ]
     },
+    "1948-palestine-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "1949-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -1104,6 +1113,15 @@
             "category"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "1952-egyptian-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -1666,6 +1684,15 @@
         }
       ]
     },
+    "1973-chilean-coup-d-etat": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "1973-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -1827,7 +1854,7 @@
       ]
     },
     "1976-argentine-coup-d-etat": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2646,6 +2673,15 @@
         }
       ]
     },
+    "1993-russian-constitutional-crisis": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "1994-european-parliament-election-in-portugal": {
       "from": "git",
       "versions": [
@@ -3347,7 +3383,7 @@
       ]
     },
     "arusha-accords": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4314,6 +4350,15 @@
         }
       ]
     },
+    "chaco-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "charter-of-the-united-nations": {
       "from": "git",
       "versions": [
@@ -4640,6 +4685,15 @@
       ]
     },
     "constitutionalization-attempts-in-iran": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados": {
       "from": "revised",
       "versions": [
         {
@@ -4855,7 +4909,7 @@
       ]
     },
     "dayton-agreement": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5704,6 +5758,24 @@
         }
       ]
     },
+    "geneva-conference": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "genocide-convention": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "germany-declares-war-1916": {
       "from": "git",
       "versions": [
@@ -6252,6 +6324,15 @@
         }
       ]
     },
+    "kashmir-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "katyn-massacre": {
       "from": "git",
       "versions": [
@@ -6685,6 +6766,15 @@
       ]
     },
     "majimaji-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "march-on-rome": {
       "from": "revised",
       "versions": [
         {
@@ -6822,6 +6912,15 @@
             "actors"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "montreux-convention": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -7277,6 +7376,24 @@
             "actors"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "population-transfer-in-the-soviet-union": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "porajmos": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -7971,7 +8088,7 @@
       ]
     },
     "rwandan-civil-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8579,6 +8696,15 @@
         }
       ]
     },
+    "treaty-of-paris": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "treaty-of-portsmouth": {
       "from": "git",
       "versions": [
@@ -8630,6 +8756,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-san-francisco": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -8740,7 +8875,7 @@
       ]
     },
     "tripartite-pact": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

@@ -164,6 +164,12 @@
     },
     {
       "dissent": false,
+      "id": "1948-palestine-war",
+      "kind": "event",
+      "locator": "Q49097"
+    },
+    {
+      "dissent": false,
       "id": "1949-portuguese-presidential-election",
       "kind": "event",
       "locator": "Q3277291"
@@ -173,6 +179,12 @@
       "id": "1951-portuguese-presidential-election",
       "kind": "event",
       "locator": "Q18166749"
+    },
+    {
+      "dissent": false,
+      "id": "1952-egyptian-revolution",
+      "kind": "event",
+      "locator": "Q1780431"
     },
     {
       "dissent": false,
@@ -197,6 +209,12 @@
       "id": "1972-portuguese-presidential-election",
       "kind": "event",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1973-chilean-coup-d-etat",
+      "kind": "event",
+      "locator": "Q856670"
     },
     {
       "dissent": false,
@@ -284,6 +302,12 @@
     },
     {
       "dissent": false,
+      "id": "1993-russian-constitutional-crisis",
+      "kind": "event",
+      "locator": "Q862099"
+    },
+    {
+      "dissent": false,
       "id": "1995-portuguese-legislative-election",
       "kind": "event",
       "locator": null
@@ -368,6 +392,12 @@
     },
     {
       "dissent": false,
+      "id": "2021-myanmar-coup-d-etat",
+      "kind": "event",
+      "locator": "Q105180889"
+    },
+    {
+      "dissent": false,
       "id": "2022-portuguese-social-democratic-party-leadership-election",
       "kind": "event",
       "locator": null
@@ -383,6 +413,12 @@
       "id": "2023-madeiran-regional-election",
       "kind": "event",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2023-nigerien-coup-d-etat",
+      "kind": "event",
+      "locator": "Q117100709"
     },
     {
       "dissent": false,
@@ -476,6 +512,12 @@
     },
     {
       "dissent": false,
+      "id": "chaco-war",
+      "kind": "event",
+      "locator": "Q223126"
+    },
+    {
+      "dissent": false,
       "id": "charter-of-the-united-nations",
       "kind": "event",
       "locator": "Q171328"
@@ -491,6 +533,12 @@
       "id": "constitutionalization-attempts-in-iran",
       "kind": "event",
       "locator": "Q1368440"
+    },
+    {
+      "dissent": false,
+      "id": "convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados",
+      "kind": "event",
+      "locator": "Q60433"
     },
     {
       "dissent": false,
@@ -596,6 +644,18 @@
     },
     {
       "dissent": false,
+      "id": "geneva-conference",
+      "kind": "event",
+      "locator": "Q482407"
+    },
+    {
+      "dissent": false,
+      "id": "genocide-convention",
+      "kind": "event",
+      "locator": "Q865344"
+    },
+    {
+      "dissent": false,
       "id": "great-depression",
       "kind": "event",
       "locator": "Q8698"
@@ -656,6 +716,12 @@
     },
     {
       "dissent": false,
+      "id": "kashmir-conflict",
+      "kind": "event",
+      "locator": "Q1413732"
+    },
+    {
+      "dissent": false,
       "id": "katyn-massacre",
       "kind": "event",
       "locator": "Q134301"
@@ -698,6 +764,12 @@
     },
     {
       "dissent": false,
+      "id": "march-on-rome",
+      "kind": "event",
+      "locator": "Q468823"
+    },
+    {
+      "dissent": false,
       "id": "may-1915-portuguese-presidential-election",
       "kind": "event",
       "locator": "Q97516248"
@@ -707,6 +779,12 @@
       "id": "molotov-ribbentrop-pact",
       "kind": "event",
       "locator": "Q130796"
+    },
+    {
+      "dissent": false,
+      "id": "montreux-convention",
+      "kind": "event",
+      "locator": "Q869500"
     },
     {
       "dissent": false,
@@ -743,6 +821,18 @@
       "id": "philippine-revolution",
       "kind": "event",
       "locator": "Q422082"
+    },
+    {
+      "dissent": false,
+      "id": "population-transfer-in-the-soviet-union",
+      "kind": "event",
+      "locator": "Q85125"
+    },
+    {
+      "dissent": false,
+      "id": "porajmos",
+      "kind": "event",
+      "locator": "Q117571"
     },
     {
       "dissent": false,
@@ -854,6 +944,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-paris",
+      "kind": "event",
+      "locator": "Q724496"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-paris-1898",
       "kind": "event",
       "locator": "Q847137"
@@ -869,6 +965,12 @@
       "id": "treaty-of-rome",
       "kind": "event",
       "locator": "Q167457"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-san-francisco",
+      "kind": "event",
+      "locator": "Q392541"
     },
     {
       "dissent": false,
