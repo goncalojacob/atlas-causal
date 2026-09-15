@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "1948-czechoslovak-coup-d-etat--european-convention-on-human-rights--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1948 Czechoslovak coup d'état\", revision 1371034127"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"European Convention on Human Rights\", revision 1366403378"
+    }
+  ],
+  "from": "1948-czechoslovak-coup-d-etat",
+  "to": "european-convention-on-human-rights",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The convention of 1950 was drafted as an alarm bell and its drafters said so. The question the Council of Europe’s lawyers put to themselves after February 1948 was how a democracy could be given warning that it was being taken over from inside by constitutional means, which is what had just happened in Czechoslovakia; the catalogue of rights is short, classical and political for that reason, and the collective enforcement machinery is the answer to a state that would not police itself. The claim is about the drafting purpose and the shape it produced. It is not a claim that the convention was made only for that, and the Convention was also the European answer to the Universal Declaration of the year before.",
+  "dispute": null
+}

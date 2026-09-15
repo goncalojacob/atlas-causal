@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "1948-arab-israeli-war--yom-kippur-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1948 Arab–Israeli War\", revision 1374830770"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Yom Kippur War\", revision 1373227342"
+    }
+  ],
+  "from": "1948-arab-israeli-war",
+  "to": "yom-kippur-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "This edge states its own gap. The wars of 1948, 1956, 1967 and 1973 are rounds of one conflict, and the atlas holds only the first and the last: the territory Egypt and Syria attacked to recover in October 1973 was taken in 1967, not in 1948, so the chain runs through two records that are not here. What survives the gap is the conflict itself, which 1948 began and which no settlement had ended, and the armistice lines of 1949 that every later round was fought over. Until 1956 and 1967 are records here this edge should be read as a placeholder for three, and it is marked probable for that reason as much as any other.",
+  "dispute": null
+}
