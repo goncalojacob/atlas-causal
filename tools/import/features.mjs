@@ -128,6 +128,14 @@ export const neZoomByPopulation = (population) => ladder(POPULATION_TO_NE_ZOOM, 
 //
 // `fallback` is the rule for a feature with neither a scale rank nor a
 // min_zoom, which is not a hypothetical: see `coast`.
+//
+// `nameRequired` says what to do with a feature the file gave no name: drop
+// it and say so, or write it without one. It is true for the cities alone. A
+// nameless city is a dot the map can never explain and Natural Earth has
+// none; a nameless lake is 610 of the 1,355 in the file and a nameless river
+// 88 of the 1,455, and the brief keeps **every** lake and every centreline
+// (§3). Either way nothing is ever written with `undefined` in it, which is
+// the rule test 3 is about.
 
 export const PROPERTIES = Object.freeze({
   // ne_10m_land.geojson — three keys in the whole file: featurecla,
@@ -162,6 +170,7 @@ export const PROPERTIES = Object.freeze({
     elevation: null,
     wikidata: null,
     id: null,
+    nameRequired: false,
     fallback: 'length',
   }),
   // ne_10m_lakes.geojson — lower case, and it does carry wikidataid and ne_id.
@@ -176,6 +185,7 @@ export const PROPERTIES = Object.freeze({
     elevation: null,
     wikidata: 'wikidataid',
     id: 'ne_id',
+    nameRequired: false,
     fallback: 'area',
   }),
   // ne_10m_geography_regions_polys.geojson — upper case. The allow-list is
@@ -197,6 +207,7 @@ export const PROPERTIES = Object.freeze({
     elevation: null,
     wikidata: 'WIKIDATAID',
     id: 'NE_ID',
+    nameRequired: false,
     fallback: 'area',
   }),
   // ne_10m_geography_regions_elevation_points.geojson — lower case, and all
@@ -213,6 +224,7 @@ export const PROPERTIES = Object.freeze({
     elevation: 'elevation',
     wikidata: 'wikidataid',
     id: 'ne_id',
+    nameRequired: false,
     fallback: null,
   }),
   // ne_10m_populated_places.geojson — 137 keys per city, upper case, of which
@@ -229,6 +241,7 @@ export const PROPERTIES = Object.freeze({
     elevation: null,
     wikidata: 'WIKIDATAID',
     id: 'NE_ID',
+    nameRequired: true,
     fallback: 'population',
   }),
 });
@@ -254,17 +267,73 @@ export const BASE_GEO_DIR = 'geo/base';
 // near level is `line` and not `polygon`: a polygon clipped to a cell is
 // filled *and* stroked, and .land's cobalt stroke would then draw a straight
 // line across a continent at every cell border (M36 review, F1 and A2).
+// `clip` is amendment A2's answer for the layer: true where a cell holds the
+// piece of the feature inside it, false where it holds the whole feature and
+// M37 deduplicates by `id`. A lake and a mountain range are filled *and*
+// stroked, and a clipped ring's cut edge would be a dashed hairline along a
+// cell border — a shore that does not exist. A river and the coast are
+// strokes already, and a stroke cut at a cell edge is the same stroke.
+//
+// `sources` is which committed file the layer reads and whether the **far**
+// level draws from it: the minor islands are near-level only, being 2,795
+// polygons at Natural Earth's own zoom 6.5 — nothing a reader can see at the
+// world — and the far coastline has 200 KB for the whole planet.
 export const LAYERS = Object.freeze([
   Object.freeze({
     id: 'coast',
     geometry: 'line',
     minZoom: 1,
     dir: 'coast',
+    clip: true,
     world: null,
     landFile: 'geo/land-present.json',
-    sources: Object.freeze(['ne_10m_land.geojson', 'ne_10m_minor_islands.geojson']),
+    sources: Object.freeze([
+      Object.freeze({ file: 'ne_10m_land.geojson', far: true }),
+      Object.freeze({ file: 'ne_10m_minor_islands.geojson', far: false }),
+    ]),
+  }),
+  Object.freeze({
+    id: 'rivers',
+    geometry: 'line',
+    minZoom: 1,
+    dir: 'rivers',
+    clip: true,
+    world: 'geo/base/rivers-world.json',
+    sources: Object.freeze([Object.freeze({ file: 'ne_10m_rivers_lake_centerlines.geojson', far: true })]),
+  }),
+  Object.freeze({
+    id: 'lakes',
+    geometry: 'polygon',
+    minZoom: 1,
+    dir: 'lakes',
+    clip: false,
+    world: 'geo/base/lakes-world.json',
+    sources: Object.freeze([Object.freeze({ file: 'ne_10m_lakes.geojson', far: true })]),
+  }),
+  Object.freeze({
+    id: 'physical',
+    geometry: 'polygon',
+    minZoom: 1,
+    dir: 'physical',
+    clip: false,
+    world: 'geo/base/physical-world.json',
+    sources: Object.freeze([Object.freeze({ file: 'ne_10m_geography_regions_polys.geojson', far: true })]),
+  }),
+  Object.freeze({
+    id: 'mountains',
+    geometry: 'point',
+    minZoom: 1,
+    dir: 'mountains',
+    clip: false,
+    world: 'geo/base/mountains-world.json',
+    sources: Object.freeze([Object.freeze({ file: 'ne_10m_geography_regions_elevation_points.geojson', far: true })]),
   }),
 ]);
+
+// Which files a layer reads, and which of them the far level draws from.
+export function layerSources(id) {
+  return layer(id)?.sources ?? [];
+}
 
 export const LAYER_IDS = Object.freeze(LAYERS.map((layer) => layer.id));
 
@@ -318,9 +387,10 @@ export function readFeature(layerId, feature) {
   if (!feature?.geometry) return { dropped: 'no geometry' };
   if (!kept(table, properties)) return null;
   const name = value(properties, table.name);
-  if (table.name && (typeof name !== 'string' || name === '')) return { dropped: 'no name' };
+  const named = typeof name === 'string' && name !== '';
+  if (table.name && table.nameRequired && !named) return { dropped: 'no name' };
   const out = { z: zFor(table, properties, feature.geometry), geometry: feature.geometry };
-  if (name !== null) out.name = name;
+  if (named) out.name = name;
   const nameEn = value(properties, table.nameEn);
   // Only where it differs: `NAME_EN` equals `NAME` for most of the world and
   // a second copy of the same string is bytes for nothing (A6).

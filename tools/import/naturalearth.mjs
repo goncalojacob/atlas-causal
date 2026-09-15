@@ -18,15 +18,18 @@
 // **decompressed** bytes — the file as it was downloaded, which is what
 // vendor/SHA256SUMS records and what --check verifies (M36 review, A0).
 //
-// M36a writes one layer, `coast`. Its far level is data/geo/land-present.json
-// — the same name, the same shape and the same manifest key the 110 m
-// coastline had, because src/map/layers/land.js is not touched by this run
-// and loadAtlas already fetches it at first paint. Its near level is
-// data/geo/base/coast/<cell>.json, and it is **lines**: a polygon clipped to
-// a cell is filled and stroked, and .land's cobalt stroke would then draw a
-// straight line across a continent at every cell border (M36 review, F1/A2).
-// M36b adds rivers, lakes, the physical regions and the peaks; M36c the
-// cities.
+// `coast` is the layer with a shape of its own and it is built here. Its far
+// level is data/geo/land-present.json — the same name, the same shape and the
+// same manifest key the 110 m coastline had, because src/map/layers/land.js
+// is not touched by this run and loadAtlas already fetches it at first paint.
+// Its near level is data/geo/base/coast/<cell>.json, and it is **lines**: a
+// polygon clipped to a cell is filled and stroked, and .land's cobalt stroke
+// would then draw a straight line across a continent at every cell border
+// (M36 review, F1/A2).
+//
+// The other four — `rivers`, `lakes`, `physical` and `mountains`, added by
+// M36b — are all one shape and are built by tools/import/layers.mjs, which is
+// what M36c's cities will be built by too.
 
 import { mkdir, readdir, stat, unlink, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
@@ -39,8 +42,12 @@ import { clipToBox, splitAtMeridian } from './geometry.mjs';
 import { keepRing, simplifyArc, simplifyLine } from './simplify.mjs';
 import { GRID, allCells, cellBounds } from './grid.mjs';
 import {
-  BASE_SOURCE, BASE_VERSION, LAYERS, PROPERTIES, kept, surveyProperties, surveyShape, zFor,
+  BASE_SOURCE, BASE_VERSION, LAYERS, PROPERTIES, kept, layerSources, surveyProperties,
+  surveyShape, zFor,
 } from './features.mjs';
+import {
+  cellValues, readLayer, sourcePoints, takeLayer, valuePoints, worldValue,
+} from './layers.mjs';
 import { SEAM } from '../../src/map/projection.js';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -111,6 +118,45 @@ export const FAR_START = 0.05;
 // about what is in the repository and what the deploy artifact carries.
 export const CAPS = Object.freeze({
   coast: Object.freeze({ far: 200 * 1024, near: 2600 * 1024 }),
+  rivers: Object.freeze({ far: 200 * 1024, near: 1200 * 1024 }),
+  lakes: Object.freeze({ far: 150 * 1024, near: 700 * 1024 }),
+  physical: Object.freeze({ far: 250 * 1024, near: 750 * 1024 }),
+  mountains: Object.freeze({ far: 100 * 1024, near: 350 * 1024 }),
+});
+
+// What the far level of each layer drops for being too small to see at the
+// world, in the unit the layer is measured in: square degrees for a polygon
+// layer, degrees of length for a line one. Zero is no floor.
+//
+// It is the same argument `FAR_MIN_AREA` is for the coastline (deviation
+// 605), and it is what actually decides whether a layer fits its far cap: a
+// Feature is about ninety bytes of scaffolding before a coordinate and a ring
+// can never be fewer than four points, so the feature *count* is the floor
+// under the bytes and no tolerance alone gets beneath it. Each is the smallest
+// round number that leaves the tolerance ladder room, and what each one drops
+// is in STATUS.md and in data/geo/LICENSE rather than left for a reader to
+// discover by not finding a lake.
+//
+// Nothing is floored at the near level: a cell is where the small things are,
+// and a reader who has fetched one has asked for them.
+// Measured, at the tolerance each one then fits at:
+//
+//   rivers   1.9 degrees of length   978 of 1,455 at 0.4 degrees, 196.5 KB
+//   lakes    0.05 square degrees     434 of 1,355 at 0.15,        134.8 KB
+//   physical none                    543 of 544   at 0.25,        237.2 KB
+//   mountains none                   711 of 711, and no tolerance
+//
+// The rivers' floor is 1.9 and not the rounder 2 for one reason, and it is
+// this atlas's: the **Tejo** is 1.912 degrees long and 2 would drop it from
+// the world view. An atlas of Portuguese expansion whose far map has no river
+// at Lisbon is wrong in a way no byte count excuses. It costs 3.5 KB of the
+// 200 and 0.4 degrees is the coastline's own far tolerance, so it costs
+// nothing else.
+export const FAR_FLOORS = Object.freeze({
+  rivers: 1.9,
+  lakes: 0.05,
+  physical: 0,
+  mountains: 0,
 });
 
 // The two ceilings the tool refuses to cross (M36 review, A9). The base map
@@ -164,17 +210,10 @@ export function coastPolygons(sources) {
   return out;
 }
 
-// Which files a layer reads, and which of them the far level draws from.
-// The minor islands are near-level only: they are 2,795 polygons at Natural
-// Earth's own zoom 6.5, which is nothing a reader can see at the world, and
-// the far coastline has 200 KB for the whole planet.
-export function layerSources(id) {
-  if (id !== 'coast') return [];
-  return [
-    { file: 'ne_10m_land.geojson', far: true },
-    { file: 'ne_10m_minor_islands.geojson', far: false },
-  ];
-}
+// Which files a layer reads, and which of them the far level draws from: the
+// layer table's own, re-exported here because this is where a reader of the
+// import looks for it.
+export { layerSources };
 
 // --- the far level: data/geo/land-present.json ---------------------------
 //
@@ -302,6 +341,103 @@ export function fitToCap(build, { cap, start, ladder = TOLERANCES }) {
   return { ...last, over: true };
 }
 
+// --- one layer that is not the coast -------------------------------------
+
+// The four layers M36b added and the cities M36c will add are all one shape:
+// a file of Features (or of small objects, for a point layer) at the far
+// level, and the same features again per cell at the near level, each
+// carrying the `z` it is drawn from and, where the file gives one, the `id`
+// M37 draws it once by. The coastline is the exception and keeps its own two
+// functions above: its far level is `land-present.json`, which has a shape of
+// its own to keep, and its near level is one feature per `z` because the
+// shore has no identity to carry.
+//
+// → { files, rows, problems }, all three of them the plan's own lists.
+export function planLayer(layer, sources, {
+  seam = SEAM, caps = CAPS, ladder = TOLERANCES, decimals = DECIMALS,
+  nearStart = NEAR_START, farStart = FAR_START, floors = FAR_FLOORS,
+} = {}) {
+  const files = [];
+  const rows = [];
+  const problems = [];
+  const { features, dropped } = readLayer(layer.id, sources);
+  const cap = caps[layer.id] ?? { far: Infinity, near: Infinity };
+  const source = sourcePoints(features);
+  const floor = floors[layer.id] ?? 0;
+  const points = layer.geometry === 'point';
+  const lost = dropped.length ? `, ${dropped.length} dropped for no name` : '';
+
+  // The far level: one file for the whole world, which is what a reader sees
+  // before a cell arrives.
+  const buildFar = (tolerance) => {
+    const built = takeLayer(layer, features, {
+      tolerance, decimals, minArea: MIN_AREA, seam, floor, splitArea: MIN_AREA,
+    });
+    const text = serializeGeo(worldValue(layer, built.taken));
+    return { bytes: bytesOf(text), text, points: built.points, features: built.taken.length, belowFloor: built.belowFloor };
+  };
+  // A point has no tolerance: there is nothing along it to take off, and a
+  // printed "0.05°" would be a number the file does not depend on.
+  const far = points
+    ? { tolerance: null, ...buildFar(0) }
+    : fitToCap(buildFar, { cap: cap.far, start: farStart, ladder });
+  if (far.bytes > cap.far) {
+    problems.push(`${layer.id}: the far level is ${far.bytes} bytes at the coarsest tolerance on the ladder, over its ${cap.far}-byte cap`);
+  }
+  files.push({ file: layer.world.slice('geo/'.length), text: far.text, bytes: far.bytes });
+  rows.push({
+    layer: layer.id,
+    level: 'far',
+    file: layer.world,
+    tolerance: far.tolerance,
+    cap: cap.far,
+    bytes: far.bytes,
+    kept: far.points,
+    dropped: Math.max(source - far.points, 0),
+    note: `${far.features} of ${features.length} features, ${far.belowFloor} under ${floor}${lost}`,
+  });
+
+  // The near level: one file per non-empty cell, all of them under one cap,
+  // because a tolerance is a property of the layer and not of a cell.
+  const buildNear = (tolerance) => {
+    const built = takeLayer(layer, features, {
+      tolerance, decimals, minArea: MIN_AREA, seam, floor: 0, splitArea: MIN_AREA,
+    });
+    const cells = [];
+    let bytes = 0;
+    let kept = 0;
+    for (const { key, value } of cellValues(layer, built.taken)) {
+      const text = serializeGeo(value);
+      const size = bytesOf(text);
+      bytes += size;
+      kept += valuePoints(layer, value);
+      cells.push({ key, file: `${BASE_DIR}/${layer.dir}/${key}.json`, text, bytes: size });
+    }
+    return { bytes, cells, points: kept, worldPoints: built.points, features: built.taken.length };
+  };
+  const near = points
+    ? { tolerance: null, ...buildNear(0) }
+    : fitToCap(buildNear, { cap: cap.near, start: nearStart, ladder });
+  if (near.bytes > cap.near) {
+    problems.push(`${layer.id}: the near level is ${near.bytes} bytes at the coarsest tolerance on the ladder, over its ${cap.near}-byte cap`);
+  }
+  for (const cell of near.cells) files.push({ file: cell.file, text: cell.text, bytes: cell.bytes });
+  rows.push({
+    layer: layer.id,
+    level: 'near',
+    file: `${BASE_DIR}/${layer.dir}/`,
+    tolerance: near.tolerance,
+    cap: cap.near,
+    bytes: near.bytes,
+    kept: near.points,
+    dropped: Math.max(source - near.worldPoints, 0),
+    note: `${near.cells.length} of ${GRID.columns * GRID.rows} cells${layer.clip ? '' : ', whole features by bbox'}`,
+    cells: near.cells.map(({ key, file, bytes }) => ({ key, file, bytes })),
+  });
+
+  return { files, rows, problems };
+}
+
 // --- the plan ------------------------------------------------------------
 
 // The whole import, computed and not written: a pure function of the parsed
@@ -313,13 +449,20 @@ export function fitToCap(build, { cap, start, ladder = TOLERANCES }) {
 export function planImport(sources, {
   seam = SEAM, caps = CAPS, ladder = TOLERANCES, decimals = DECIMALS,
   nearStart = NEAR_START, farStart = FAR_START, minArea = FAR_MIN_AREA,
+  floors = FAR_FLOORS,
 } = {}) {
   const files = [];
   const layers = [];
   const problems = [];
 
   for (const layer of LAYERS) {
-    if (layer.id !== 'coast') continue;
+    if (layer.id !== 'coast') {
+      const built = planLayer(layer, sources, { seam, caps, ladder, decimals, nearStart, farStart, floors });
+      files.push(...built.files);
+      layers.push(...built.rows);
+      problems.push(...built.problems);
+      continue;
+    }
     const polygons = coastPolygons(sources);
     const cap = caps[layer.id] ?? { far: Infinity, near: Infinity };
 
@@ -438,6 +581,14 @@ async function writePlan(geoDir, plan) {
       if (!planned.has(relative)) await unlink(path.join(dir, name));
     }
   }
+  // And a far level whose layer is no longer written, for the same reason.
+  const base = path.join(geoDir, BASE_DIR);
+  if (existsSync(base)) {
+    for (const name of (await readdir(base)).sort()) {
+      if (!name.endsWith('-world.json')) continue;
+      if (!planned.has(`${BASE_DIR}/${name}`)) await unlink(path.join(base, name));
+    }
+  }
   return written;
 }
 
@@ -454,14 +605,17 @@ async function directoryBytes(dir) {
 // --- the printers --------------------------------------------------------
 
 const kb = (n) => `${(n / 1024).toFixed(1)} KB`;
+// A point layer has no tolerance: there is nothing along a point to take off,
+// and a number here would be one the file does not depend on.
+const degrees = (t) => (t === null || t === undefined ? '—' : `${t}°`);
 
 function printBudget(plan, { geoBytes, baseBytes }) {
-  console.log('layer     level  tolerance        bytes          cap  points kept  points dropped  what');
+  console.log('layer      level  tolerance        bytes          cap  points kept  points dropped  what');
   for (const row of plan.layers) {
     console.log([
-      row.layer.padEnd(9),
+      row.layer.padEnd(10),
       row.level.padEnd(6),
-      `${row.tolerance}°`.padStart(9),
+      degrees(row.tolerance).padStart(9),
       kb(row.bytes).padStart(13),
       kb(row.cap).padStart(13),
       String(row.kept).padStart(13),
@@ -584,7 +738,7 @@ export async function main(argv) {
   const files = await writePlan(geoDir, plan);
   if (!budget) {
     for (const row of plan.layers) {
-      console.log(`${row.layer} ${row.level}: ${kb(row.bytes)} of ${kb(row.cap)} at ${row.tolerance}°, ${row.kept} points kept, ${row.dropped} dropped — ${row.note}`);
+      console.log(`${row.layer} ${row.level}: ${kb(row.bytes)} of ${kb(row.cap)} at ${degrees(row.tolerance)}, ${row.kept} points kept, ${row.dropped} dropped — ${row.note}`);
     }
   }
   console.log(`${files.length} file(s) written under ${geoDir}. Remember to run node tools/build-index.mjs (the manifest lists every cell).`);

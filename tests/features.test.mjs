@@ -71,14 +71,25 @@ test('a feature the layer does not want is not one of its features', () => {
   assert.equal(kept(PROPERTIES.physical, {}), false, 'no class at all is not on the allow-list');
 });
 
-test('a feature missing the name its table names is dropped and reported', () => {
+test('a feature is never written with undefined in it, whatever its file left out', () => {
   const geometry = square(0, 0, 1);
   const named = readFeature('lakes', { properties: { name: 'Lake Chad', scalerank: 3 }, geometry });
   assert.equal(named.name, 'Lake Chad');
   assert.equal(named.dropped, undefined);
+  // A nameless lake is written without a name and not with `undefined` in it.
+  // 610 of the 1,355 lakes in the file have no name, and 88 of the 1,455
+  // rivers; the brief keeps every lake and every centreline, and a lake that
+  // exists is worth drawing whether or not anybody has named it.
   const nameless = readFeature('lakes', { properties: { scalerank: 3 }, geometry });
-  assert.equal(nameless.dropped, 'no name', 'said out loud, not written with undefined in it');
-  assert.equal(nameless.name, undefined);
+  assert.equal(nameless.dropped, undefined, 'kept');
+  assert.equal(Object.hasOwn(nameless, 'name'), false, 'and with no name key at all');
+  // A city is the one layer whose name is required: a dot the map can never
+  // explain is worse than no dot, and Natural Earth has no nameless city.
+  const town = readFeature('cities', { properties: { NAME: 'Lisboa', SCALERANK: 3 }, geometry: { type: 'Point', coordinates: [-9.1, 38.7] } });
+  assert.equal(town.name, 'Lisboa');
+  const anonymous = readFeature('cities', { properties: { SCALERANK: 3 }, geometry: { type: 'Point', coordinates: [0, 0] } });
+  assert.equal(anonymous.dropped, 'no name', 'said out loud, not written with undefined in it');
+  assert.equal(anonymous.name, undefined);
   assert.equal(readFeature('lakes', { properties: { name: 'x' } }).dropped, 'no geometry');
   // coast names no name property at all, so a feature with no name is fine.
   assert.equal(readFeature('coast', { properties: { featurecla: 'Land', min_zoom: 0 }, geometry }).dropped, undefined);
@@ -101,12 +112,40 @@ test('nameEn is written only where it differs from the name', () => {
   assert.equal(differs.nameEn, 'Lake Geneva');
 });
 
-test('the layer table names one layer in M36a, and coast is lines with no world file', () => {
-  assert.deepEqual(LAYERS.map((l) => l.id), ['coast']);
+test('the layer table names five layers after M36b, and coast is lines with no world file', () => {
+  assert.deepEqual(LAYERS.map((l) => l.id), ['coast', 'rivers', 'lakes', 'physical', 'mountains']);
   const coast = layer('coast');
   assert.equal(coast.geometry, 'line', 'a cut ring is never stroked as a ring');
   assert.equal(coast.world, null, 'its far level is manifest.land');
-  assert.equal(layer('rivers'), null);
+  // The cities are M36c's, and the table says so by not naming them.
+  assert.equal(layer('cities'), null);
+});
+
+test('what a cell holds is decided per layer, and no cut edge is ever stroked', () => {
+  // Amendment A2. A stroke cut at a cell edge is the same stroke, so the two
+  // line layers are clipped; a fill is not, so the two polygon layers arrive
+  // whole and carry the id M37 draws each of them once by.
+  assert.equal(layer('coast').clip, true);
+  assert.equal(layer('rivers').clip, true);
+  assert.equal(layer('lakes').clip, false);
+  assert.equal(layer('physical').clip, false);
+  assert.equal(PROPERTIES.lakes.id, 'ne_id');
+  assert.equal(PROPERTIES.physical.id, 'NE_ID');
+  // The rivers are the one file of the seven with no stable id at all, so a
+  // river is keyed by nothing — which is why it is the layer that is clipped.
+  assert.equal(PROPERTIES.rivers.id, null);
+  assert.equal(layer('mountains').geometry, 'point', 'a point is in one cell and there is nothing to cut');
+});
+
+test('every layer but the coast has a far level of its own, under data/geo/base/', () => {
+  // `coast` is the exception: its far level is `manifest.land`, which
+  // loadAtlas already fetches at first paint (deviation 518).
+  for (const entry of LAYERS) {
+    if (entry.id === 'coast') continue;
+    assert.equal(entry.world, `geo/base/${entry.dir}-world.json`, entry.id);
+    assert.equal(entry.minZoom, 1, `${entry.id}'s layer threshold is in k, like every z`);
+    assert.equal(entry.sources.length, 1, `${entry.id} reads one committed file`);
+  }
 });
 
 test('the survey counts the keys a file actually has, and says nothing about the ones it has not', () => {

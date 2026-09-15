@@ -74,16 +74,97 @@ test('the plan is a pure function of the input', async () => {
   assert.deepEqual(input, await sources(), 'and the input was not written on');
 });
 
-test('the coast is written at both levels, and a cell with nothing in it is not', async (t) => {
+test('every layer is written at both levels, and a cell with nothing in it is not', async (t) => {
   const dir = await temporary(t);
   const { code } = await quiet(() => main(['--source', FIXTURES, '--out', dir]));
   assert.equal(code, 0);
   const written = await filesUnder(dir);
-  assert.deepEqual(written, [LAND_FILE, 'base/coast/x2y2.json', 'base/coast/x2y3.json'].sort());
-  // Twenty-two of the twenty-four cells hold no fixture coastline at all and
-  // are not on disk: nothing is drawn that has no data, and an empty ocean
-  // cell is not worth a file and a request.
+  assert.deepEqual(written, [
+    LAND_FILE,
+    'base/coast/x2y2.json', 'base/coast/x2y3.json',
+    'base/rivers-world.json', 'base/rivers/x2y2.json',
+    'base/lakes-world.json', 'base/lakes/x2y2.json',
+    'base/physical-world.json', 'base/physical/x2y2.json',
+    'base/mountains-world.json', 'base/mountains/x2y2.json',
+  ].sort());
+  // The fixtures are all in one cell but the coast, and the twenty-two the
+  // grid has left over are not on disk: nothing is drawn that has no data,
+  // and an empty ocean cell is not worth a file and a request.
   assert.equal(existsSync(path.join(dir, BASE_DIR, 'coast', 'x0y0.json')), false);
+  assert.equal(existsSync(path.join(dir, BASE_DIR, 'rivers', 'x0y0.json')), false);
+  assert.equal(existsSync(path.join(dir, BASE_DIR, 'lakes', 'x5y1.json')), false);
+});
+
+test('the four layers M36b added carry what M37 and M38 need of them', async (t) => {
+  const dir = await temporary(t);
+  await quiet(() => main(['--source', FIXTURES, '--out', dir]));
+  const read = async (...names) => JSON.parse(await readFile(path.join(dir, ...names), 'utf8'));
+
+  // Rivers are lines, clipped to the cell, and carry the name M38 labels
+  // them by. The fixture file has three and none is dropped for being
+  // nameless — that rule is the cities' alone.
+  const rivers = await read(BASE_DIR, 'rivers', 'x2y2.json');
+  assert.equal(rivers.features.length, 3);
+  for (const feature of rivers.features) {
+    assert.ok(['LineString', 'MultiLineString'].includes(feature.geometry.type));
+    assert.equal(typeof feature.properties.z, 'number');
+  }
+  assert.ok(rivers.features.some((f) => f.properties.name === 'Fixture River'));
+  // No `ne_id` in that file, so no river carries an id it does not have.
+  assert.equal(rivers.features.every((f) => f.properties.id === undefined), true);
+
+  // Lakes are whole polygons, never clipped, each with the id M37 draws it
+  // once by however many cells brought it.
+  const lakes = await read(BASE_DIR, 'lakes', 'x2y2.json');
+  assert.equal(lakes.features.length, 1);
+  assert.equal(lakes.features[0].geometry.type, 'Polygon');
+  assert.equal(lakes.features[0].properties.id, '1159100001');
+  assert.equal(lakes.features[0].properties.name, 'Fixture Lake');
+
+  // The physical regions keep amendment A5's allow-list: the Desert is one of
+  // ours and the Island is the coastline a third time.
+  const physical = await read(BASE_DIR, 'physical', 'x2y2.json');
+  assert.deepEqual(physical.features.map((f) => f.properties.name), ['Fixture Desert']);
+  assert.equal(physical.features[0].properties.id, '1159100003');
+
+  // Peaks are an array of small objects and not a FeatureCollection: a
+  // Feature around a point is about a third scaffolding (deviation 517).
+  const peaks = await read(BASE_DIR, 'mountains', 'x2y2.json');
+  assert.ok(Array.isArray(peaks));
+  assert.deepEqual(peaks, [{
+    elevation: 1934, id: '1159100007', lat: 27.5, lon: -28.5, name: 'Fixture Peak', z: 6,
+  }]);
+
+  // And the far level of each is one file for the whole world, in the same
+  // shape as its cells.
+  assert.equal((await read(BASE_DIR, 'rivers-world.json')).type, 'FeatureCollection');
+  assert.equal((await read(BASE_DIR, 'lakes-world.json')).features.length, 1);
+  assert.deepEqual(await read(BASE_DIR, 'mountains-world.json'), peaks);
+});
+
+test('a lake reaching two cells is the same lake in both, and is never clipped', async () => {
+  // Amendment A2: a fill cut at a cell edge is a shore that does not exist,
+  // so the polygon layers arrive whole in every cell their bbox overlaps and
+  // M37 draws each once by its id.
+  const input = await sources();
+  const wide = {
+    type: 'Feature',
+    properties: {
+      featurecla: 'Lake', scalerank: 2, min_zoom: 1, name: 'Fixture Sea', ne_id: 1159100099,
+    },
+    // -65 to -55 crosses the x1/x2 boundary at -60.
+    geometry: { type: 'Polygon', coordinates: [[[-65, 10], [-55, 10], [-55, 20], [-65, 20], [-65, 10]]] },
+  };
+  const lakes = 'ne_10m_lakes.geojson';
+  const plan = planImport({ ...input, [lakes]: { type: 'FeatureCollection', features: [...input[lakes].features, wide] } });
+  const cells = plan.files.filter((entry) => entry.file.startsWith('base/lakes/'));
+  const inCell = (key) => JSON.parse(cells.find((entry) => entry.file.endsWith(`${key}.json`)).text)
+    .features.find((feature) => feature.properties.id === '1159100099');
+  const west = inCell('x1y2');
+  const east = inCell('x2y2');
+  assert.ok(west && east, 'both cells its bbox overlaps have it');
+  assert.deepEqual(west, east, 'the same feature, whole, not two halves');
+  assert.deepEqual(west.geometry.coordinates[0][0], [-65, 10], 'nothing was cut at -60');
 });
 
 test('the far level keeps its name and its shape, and the near level is lines', async (t) => {
