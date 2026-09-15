@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "war-in-darfur",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A: the neighbour is missing. Sudan enters this atlas nowhere. The record would have to be wired to the South Sudanese civil war, imported in the same batch and retracted in the same commit, and the pair would touch nothing else."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q190758",

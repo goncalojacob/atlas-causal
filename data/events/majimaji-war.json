@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "majimaji-war",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A: the neighbour is missing. German East Africa bordered Portuguese Mozambique and the rising of 1905 was put down partly along that border, but the atlas holds no record of Portuguese Mozambique before 1960 — not the Barue rising of 1902, not the chartered companies, not the campaigns of pacification — so there is nothing here for it to touch. Retracted for want of a Portuguese Africa before the wars, which is a real gap and is named in docs/m44-connections.md."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q705553",

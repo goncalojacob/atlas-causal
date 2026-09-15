@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "lapland-war",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class B, with the Continuation war it followed. Its only neighbours are that war and the Moscow armistice, the first retracted in this commit and the second not a record here, so it stands at four hops from anything Portuguese on the best route available."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q154940",

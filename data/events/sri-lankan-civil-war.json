@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "sri-lankan-civil-war",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A: the neighbour is missing. Twenty-six years of war in Sri Lanka touch nothing this atlas holds. The Portuguese presence on the island ended in the seventeenth century and is outside the corpus’s period entirely; there is no South Asian record here except Goa and the Indo-Pakistani wars, and no honest edge to either."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q213394",

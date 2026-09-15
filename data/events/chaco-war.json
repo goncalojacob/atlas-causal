@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "chaco-war",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A: the neighbour is missing. Bolivia and Paraguay fought over the Gran Chaco between 1932 and 1935 and this atlas holds nothing of South America before the Chilean coup of 1973. No edge to a Portuguese event can be argued and none to a world event here can either. A good record with nowhere to stand."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q223126",

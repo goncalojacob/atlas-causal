@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "nigerian-civil-war",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A, and this is the retraction most worth undoing. Portugal was Biafra’s lifeline: the relief and arms airlift flew out of Portuguese São Tomé, and Lisbon gave the secessionists the diplomatic room it did because Lagos was backing the movements fighting Portugal in Angola, Guinea and Mozambique. That is a real edge with a real argument behind it, and it cannot be written because its Portuguese end is not a record: the atlas holds no event of Portugal’s Biafra policy and no event of the São Tomé airlift. Writing an edge from the Nigerian war to the war in Angola would put the claim on the wrong pair. Named in docs/m44-connections.md as work the atlas needs."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q829875",

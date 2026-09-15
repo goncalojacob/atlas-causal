@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "gaza-war-2008-2009",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A. Its neighbours are the Gaza records of 2023, which the atlas holds and which reach no Portuguese event, and the second intifada and the disengagement of 2005, which it does not hold. Retracted rather than wired into a cluster that is stranded itself."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q170682",

@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "outer-space-treaty",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class C. The treaty of 1967 has one available neighbour in this atlas, the Charter, on the ground that the treaty was negotiated in a United Nations committee. Portugal is a party and no Portuguese event here touches it. The edge that could be written would be indistinguishable from the edge to every other United Nations instrument, and a round whose whole point is honest connection should not write it."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q256608",

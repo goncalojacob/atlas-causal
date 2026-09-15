@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1948-palestine-war",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class B. The atlas now holds the 1948 Arab-Israeli war, which this record’s own cached lead calls the second and final stage of the same war, and that record carries the edges: to the Egyptian revolution of 1952 and forward to 1973. This one can only argue to that one, which leaves it at three hops. Two records of one war, one of them a stage of the other, is not more of the atlas."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q49097",

@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "sino-indian-war",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A, with the Kashmir conflict and the Kargil war. The border war of 1962 has its Portuguese edge ten months behind it in the annexation of Goa, and the argument that links them is one about Indian military policy that this atlas holds no source for. It is not being written on a guess. What the atlas needs is a work on Indian foreign policy of the 1950s and 1960s in data/sources."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q208694",

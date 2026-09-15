@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1982-lebanon-war",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A. The war of 1982 argues from the Lebanese civil war, which this atlas holds and which itself reaches no Portuguese event, and to the massacres and the occupation, which it does not hold. Nothing in the chain arrives anywhere Portuguese, and the 1948 war that the Israeli records here do connect through is thirty-four years and two wars away."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q49103",

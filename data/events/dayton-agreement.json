@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "dayton-agreement",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A, with the Yugoslav cluster. Dayton ended the Bosnian war, which this atlas does not hold either — it is one of the brief’s twelve named neighbours that the committed candidate list cannot reach. A peace agreement whose war is missing and whose region reaches no Portuguese record has no edge to carry."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q190315",

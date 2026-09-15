@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1991-soviet-coup-d-etat-attempt",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A. The coup of August 1991 argues to the dissolution of the Soviet Union in December, which is one of the twelve named neighbours the committed candidate list does not hold, and to the Russian records of the 1990s, which reach no Portuguese event. Nothing else in this atlas is within reach of it."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q221382",

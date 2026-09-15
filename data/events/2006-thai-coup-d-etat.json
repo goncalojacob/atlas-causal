@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "2006-thai-coup-d-etat",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A: the neighbour is missing. Thailand enters this atlas nowhere and the coup of 2006 has no argued relation to anything in it. It was ticked because set 3 of M44a’s rule needed a revolution and deviation 670 had struck the row above it; the tick rule was right to take it and this round has nothing to do with it."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q860423",

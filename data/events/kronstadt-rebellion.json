@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "kronstadt-rebellion",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class B. March 1921 argues to the October revolution and the Russian civil war, which are two and three hops from anything Portuguese, and forward to the New Economic Policy, which is not a record here. Every route is one link too long. The record that would fix it is the NEP, or any Portuguese event of the reception of Bolshevism — the atlas holds the PCP as an actor and no event of its founding."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q208300",

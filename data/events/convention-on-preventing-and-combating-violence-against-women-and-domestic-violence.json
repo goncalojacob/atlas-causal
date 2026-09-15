@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "convention-on-preventing-and-combating-violence-against-women-and-domestic-violence",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A. Portugal was among the first states to ratify the Istanbul convention, in February 2013, and that is exactly the kind of edge this round wanted; the atlas holds no record of the ratification, and no Portuguese event of the law on domestic violence before or after it, so there is no Portuguese end to attach. Named in docs/m44-connections.md as work the atlas needs."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q1697391",

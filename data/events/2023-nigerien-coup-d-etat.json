@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "2023-nigerien-coup-d-etat",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A: the neighbour is missing. The Sahel coups of 2020 to 2023 are a sequence and this atlas holds one of them. Wired to nothing, it would stand alone; wired to the Nigerien or Malian coups it would need records that do not exist."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q117100709",

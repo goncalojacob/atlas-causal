@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "balkan-wars",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b as redundant, which is its own small class. The same import created records of the First and the Second Balkan war, and this round wired both — the first into the second and each of them into Sarajevo, which is where the historiography puts the claim this series record would have carried. Every edge available to it is carried by one of its two parts, and three records of two wars is less of the atlas rather than more. Nothing was lost but a duplicate: the item Q165725 stays on the tombstone, and a future run that wants the series as such should merge it rather than write a third."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q165725",

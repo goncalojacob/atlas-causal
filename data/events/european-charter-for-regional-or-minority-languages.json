@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "european-charter-for-regional-or-minority-languages",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A. The atlas holds no Portuguese event this Charter touched: no record of Mirandese, of the law that recognised it, or of any Portuguese act under the Council of Europe except membership. Its only other neighbours here would be the European treaties, which it has no relation to — it is a Council of Europe instrument and not a Community one, and an edge from Maastricht to it would be a category mistake."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q106308",

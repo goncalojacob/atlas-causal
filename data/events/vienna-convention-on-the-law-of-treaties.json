@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "vienna-convention-on-the-law-of-treaties",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class C, with the diplomatic relations convention. The convention on the law of treaties is a codification of practice and the atlas holds no event it decided; the Charter edge is available, is true of a dozen records, and argues nothing. Marked here rather than written, so that the refusal is on the record."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q239768",

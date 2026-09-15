@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "croatian-war-of-independence",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A, with the Yugoslav cluster, and a second thing should be said about this record while it is being withdrawn: its dates are wrong as imported. It carries a start of 12 November 1995 and an end of 7 August 1995 — the Erdut agreement and the close of Operation Storm — for a war the record’s own cached lead dates from 1991 to 1995. Whoever un-retracts it must fix the dates first."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q68969",

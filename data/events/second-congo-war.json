@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "second-congo-war",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A. Angola fought in this war, on Kabila’s side and against the UNITA supply lines through Mobutu’s Zaire, which is a genuine edge from the Great Lakes to the Portuguese-speaking world. It cannot be written: the atlas holds Angolan independence in 1975 and no record of the Angolan civil war that the intervention of 1998 was a continuation of. Named in docs/m44-connections.md as work the atlas needs."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q75756",

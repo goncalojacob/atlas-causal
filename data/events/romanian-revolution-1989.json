@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "romanian-revolution-1989",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A, and it is the clearest case in the round for owner question 2. December 1989 in Romania is one of the revolutions of 1989 and cannot be argued from anything else, and this atlas holds not one of the others: no fall of the Berlin wall, no round table in Poland, no Czechoslovak November, no German reunification, no dissolution of the Soviet Union. All of those are on the brief’s list of twelve named neighbours that the committed candidate list does not carry because their Wikidata classes are not among the queries’. Until a candidates round with the right classes fetches them, 1989 cannot be wired here at all."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q204213",

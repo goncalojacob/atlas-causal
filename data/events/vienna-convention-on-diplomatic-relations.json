@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "vienna-convention-on-diplomatic-relations",
   "kind": "event",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,14 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-15",
   "origin": {
     "tool": "wikidata"
   },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class C: the only edge available argues nothing. The convention of 1961 codified diplomatic immunities that were customary law long before the United Nations existed, and the single edge this atlas could carry for it — that the International Law Commission drafted it and the General Assembly convened the conference — is true of every instrument of its kind and argues nothing about this one. No Portuguese event here was changed by it. Writing the Charter edge anyway would be the pattern the brief forbids: an edge that clears the queue and says nothing."
+  },
   "review": {
-    "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m44b-retracted"
     ]
   },
   "wikidata": "Q659717",
