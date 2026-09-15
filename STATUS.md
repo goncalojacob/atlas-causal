@@ -13,6 +13,33 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-15, after **M37a** (`docs/m37-brief.md`, with its amendments after
+review): **the base map is drawn.** Six layers of Natural Earth under the
+territories and over the coastlines — the near coastline, the rivers, the
+lakes, the physical regions, the peaks and the cities — appearing at the zooms
+the manifest names, fetched a cell at a time, and never before the first
+picture. One module, `src/map/layers/base.js`, because the six differ in a
+class name and a geometry type and nothing else.
+
+At the whole world the base map is **221 features and no cell at all**: five
+far files, 826.5 KB, after the first paint and behind the same `defer` the
+territories use. Zoomed into Iberia it is **3,753 features out of six cells**,
+and a pan inside those cells rebuilds nothing — the bench says the signature is
+worth between 210 and 1,090 times the cost of the render it skips.
+
+**There is no way to turn a layer off yet**: the control, `LAYERS` and
+`?layers=` are M37b's, and this run left `state.js`, `main.js`,
+`layer-control.js` and `about.html` alone.
+
+**Three things wait on the owner from this run**, beside those below: whether
+826.5 KB after the first picture is a fair price for 221 features at the world
+view (deviation 632); whether `NEAR_ZOOM = 4` is right in a very wide, short
+pane, where it asks for ten of the twenty-four cells (deviation 633); and
+whether 1,741 `<title>` elements no tooltip will ever open are worth carrying
+until M38 writes the labels (deviation 640). The full account, the measured
+table at three zooms, the bench and deviations 632 to 640 are in
+**`## M37a: the base map drawn`**, below.
+
 2026-09-15, after **M36c** (`docs/m36-brief.md`, with its amendments after
 review): **the base map is complete.** The sixth and last layer is the
 `cities`, and with it **M36 is done**: six layers at two levels in the same
@@ -5722,6 +5749,189 @@ above:
 
 **The sandbox ran the browser tests again.** Chromium is present in this
 container, so all 1,355 tests ran and **none skipped**.
+
+## M37a: the base map drawn
+
+M36 wrote six layers of Natural Earth into `data/geo/base/` and nothing read
+them. **They are drawn now.** One `<g class="layer layer-base-<id>">` per layer
+of `manifest.base.layers`, in the manifest's order, between the coastlines and
+the territories — a border is a claim and a river is the ground it is drawn on,
+and a river inside the land is the point. Nothing the base map draws takes a
+pointer, is focusable or is in the tab order, and a click on a river behaves
+exactly as a click on the sea: it puts down what the reader was holding.
+
+**There is still no way to turn one off.** The layer control, `LAYERS` and
+`?layers=` are M37b's; until then every layer is on, which is precisely what
+`?layers=` already means for a name it does not know. `src/state.js`,
+`src/main.js`, `src/layer-control.js`, `index.html` and `about.html` are
+untouched by this run.
+
+### One module, six layers
+
+`src/map/layers/base.js` — `createBaseLayer(group, projection, { id, geometry,
+minZoom, world, cells, nearZoom, load, loaded, onReady, defer })` returning
+`{ render({ k, view, on }) }`. The six differ in a class name and a geometry
+type, and six modules would be five copies of `land.js` (deviation 521). A
+`"polygon"` is `geometryPath` and a `"line"` is `linePath`, both from
+`land.js`, and a `"point"` is a `<circle>` with a `<title>` (amendment A0);
+`detailFor` is imported from `presences.js` where it already lived (A0, and
+deviation 526 is therefore an import and not a move). `src/data.js` gained
+`loadBase`/`loadedBase` beside `loadGeometry`, with the same discipline: one
+request in flight per file, a rejection deleted rather than remembered, and a
+synchronous reader so a render never waits. A manifest with no `base` is an
+atlas with no base map: `atlas.baseLayers` is empty and nothing is ever asked
+for.
+
+**Far, then near.** Above a layer's `minZoom` its far file is asked for once;
+from `NEAR_ZOOM = 4` the cells `cellsFor(view)` names are asked for too, the
+far file's features are dropped where a cell in hand covers their ground, and
+the cell's are drawn. The far picture is never cleared while a cell is in
+flight. A cell that will not load is dropped without a word (deviation 525):
+the request is not held on to, so the next pass asks again.
+
+**The far coastline keeps its fill and gives up its stroke** once every cell
+`cellsFor(view)` names for `coast` is in hand, and takes it back when one is
+not (amendment A2). It is one class, `.layer-land.near-coast`, and one rule in
+the stylesheet. The two shores are 0.4° and 0.015° apart and drawing both was
+the doubled line the owner saw in September.
+
+### What it costs, measured
+
+On this run's machine, Chromium at 1400 × 620 — a map pane of 1400 × 323, which
+letterboxes to about 2340 SVG units wide, so the box on screen is a good deal
+wider than the nominal 960 (health review A, finding 4).
+
+| | k = 1, the world | k ≈ 4, Europe and the Sahara | k ≈ 8, Iberia |
+|---|---|---|---|
+| longitude on screen | 360° | 218° | 110° |
+| far files | 5 | 5 | 5 |
+| cells | **0** | 10 of 24 | 6 of 24 |
+| fetched, cumulative | **826.5 KB** | 4,472.4 KB | 3,285.0 KB |
+| elements under `.layer-base` | **221** | 2,067 | 3,753 |
+| far coastline's stroke | on | off | off |
+
+Per layer, the elements drawn: at the world `rivers` 51, `lakes` 46,
+`physical` 98, `mountains` 0, `cities` 26 and no near coastline at all; at
+k ≈ 8 `coast` 30, `rivers` 753, `lakes` 690, `physical` 539, `mountains` 86,
+`cities` 1,655. The browser test's ceiling is **6,000**, which is generous
+against the 3,753 measured and an order of magnitude under the some 50,000
+features the whole base map holds. Nothing under `.layer-base` grows with the
+corpus or with how long the reader has been panning: what is drawn is the far
+file plus the cells of one viewport, and a cell that leaves the box leaves the
+DOM.
+
+**First paint is exactly what M36 left it** — 344,408 B of manifest, core,
+sources, `land-present.json` and palette — and `tests/spine-pages.test.mjs`
+now proves it the way the brief asks: it reads the start time of every
+`geo/base/` request against the page's own first contentful paint and holds
+the list of requests before it to empty, on all six pages, and holds the cells
+fetched to none.
+
+### The bench
+
+`tests/bench/run.mjs base`, six layers over **x1y3** — the busiest cell of the
+grid at 582.0 KB — cold, and then panned inside the cells already in hand:
+
+| | cold | panned | ratio |
+|---|---|---|---|
+| k = 1 | 6.0–7.9 ms, 221 elements | 0.01 ms | **~450–590x** |
+| k = 4 | 61.6–80.0 ms, 1,897 elements | 0.07 ms | **~870–1,090x** |
+| k = 8 | 30.8–38.6 ms, 4,635 elements | 0.12 ms | **~210–330x** |
+
+Three runs on the same machine; the ratio is what the signature is worth and
+the only number here worth writing down. k = 4 costs more than k = 8 because
+the detail ladder's middle rung simplifies at 0.05° and its top rung does not
+simplify at all: at k = 8 the shard is drawn as it was written.
+
+### Deviations 632 to 640
+
+632. **Every layer's `minZoom` is 1, so the world view asks for five far files
+     and not two.** §5 of the brief expects `rivers` and `lakes` at 1 and the
+     other four above it; M36 wrote 1 for all six (deviation 620), because the
+     honest layer-level answer is "this layer may be drawn from the world
+     view" and which of its features are drawn is each feature's own `z`. So
+     at `k = 1` the base map costs **826.5 KB** — rivers 196.5, lakes 134.8,
+     physical 237.2, mountains 68.1, cities 189.9, every one under the brief's
+     350 KB cap and `coast` with no far file of its own (deviation 601) —
+     fetched after the first paint, behind the same `defer` the territories
+     use. First paint is unchanged and the world view draws 221 features for
+     it. **Whether 826 KB after the first picture is worth 221 features is the
+     owner's to judge**; if it is not, the fix is a `minZoom` per layer in the
+     import and not a line of code here.
+633. **`NEAR_ZOOM` is 4**, one named constant in `map.js` beside `MAX_ZOOM`, as
+     the brief asks. Four because a cell is 60° wide and at k = 4 the nominal
+     pane shows about 90° — a cell and a half. **In a very wide, short pane it
+     is looser than that**: the measurement above shows k ≈ 4 asking for ten
+     of the twenty-four cells and 4.4 MB, because letterboxing puts 218° on
+     screen at that zoom. The zoom is the threshold the brief names; the span
+     is what actually decides how much ground is on screen, and the two come
+     apart in a pane of that shape. Raising the constant, or making the
+     threshold a span rather than a zoom, is one line either way and the
+     owner's to ask for.
+634. **The signature carries the files in hand and not the cells.** The
+     brief's `${on}|${minZoom<=k}|${bucket(k)}|${cells in hand}` cannot see the
+     far file arriving, so a layer whose far file landed on an otherwise equal
+     signature would never draw it. The far file and the cells' files, sorted,
+     therefore — which is the same statement generalised, since what decides
+     the picture is what is in hand and not which box asked for it.
+635. **The zoom enters the bucket as two counts**: the rung of the detail
+     ladder, and how many of the data's own `z` thresholds `k` has passed. Not
+     a float, as the brief requires, and not a number invented here either —
+     the second count changes exactly when the set of features drawn changes.
+     A point layer takes only the second: it has no geometry to simplify. And
+     a dot's radius, which is `R / k` and moves continuously while the
+     signature does not, is written over the circles already in the group on
+     every render — the same nodes come back, which is what "an equal
+     signature rebuilds nothing" asks for.
+636. **A far feature is dropped when the cells its bounding box touches are in
+     hand.** By `id` where there is one, which is A1's rule and covers lakes,
+     the physical regions, the peaks and the cities; by the box for the
+     rivers, which carry neither `ne_id` nor `wikidataid` (M36a's survey) and
+     so have nothing stable to key them by. The box is coarser than the
+     feature, so a little more is dropped than strictly overlaps — and all of
+     it is off screen, because the cells in hand are the cells of the box on
+     screen.
+637. **A base file landing redraws the base map and not the map.** Going
+     through `render()` rebuilt the marks, the chain and the consequence lines
+     because a river had arrived: forty redraws of the events layer on one
+     click into a cluster, against the eight `map-browser.test.mjs` has
+     allowed since H4a. So `onReady` redraws the base groups alone, and the
+     arrivals of one frame are coalesced into one redraw — six layers and four
+     cells are twenty-four arrivals and one picture. The count is still in the
+     map's render key, so a redraw the state asks for can see it.
+638. **`spine-pages.test.mjs` asserts start times and not absence.** The far
+     files are fetched at the world view now, so "no `geo/base/` request at
+     all" is no longer the assertion the brief is asking for; "no `geo/base/`
+     request begins before the first contentful paint" is, and that is what it
+     now holds, on all six pages, beside "no cell, at any zoom the world view
+     reaches".
+639. **The brief's test 3 is split between the two things that decide a
+     redraw.** The map's key changes when a base file lands and when a layer is
+     switched; what a pan must not change is the *layer's* signature, because
+     the map's key carries the box on screen and a pan moves it — the marks
+     are culled to that box. `baseSignature` is exported so the second half can
+     be tested without a DOM, beside the first in `render-key.test.mjs`.
+640. **A city and a peak carry a `<title>` no reader will ever see.** The
+     brief asks for one and `pointer-events: none` means no tooltip will ever
+     open on it. Written anyway, because the brief says so and because it is
+     the name M38's placer will put on the face — at which point the label,
+     not the circle, is what a reader reads. At k ≈ 8 over Iberia that is
+     1,741 unused elements; removing them is one line, and the owner's call.
+
+### What M37a did not do
+
+No data was written and no import re-run: `node tools/validate.mjs --index` is
+byte-identical from the first commit of this run to the last, and `data/geo/`
+is untouched. No new hex value, no new token, no new type size — every colour
+in the six rules added to `src/style.css` is a variable that was already there.
+No label (M38's), no glyph, no screenshot under `docs/screens/` (test 7 is
+M37b's), and `src/map/projection.js` was not opened. `ARCHITECTURE.md` is as
+M36c left it: its `layers` paragraph and module table are M37b's to write, with
+the control and `?layers=`.
+
+**The sandbox ran the browser tests again.** Chromium is present in this
+container, so all 1,379 tests ran and **none skipped** — the five new browser
+tests of the base map among them.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
