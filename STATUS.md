@@ -6827,6 +6827,15 @@ nearer without reaching the bar; eleven of the forty-five were already inside
 it before the round began, having a Portuguese path but no Portuguese
 neighbour; twenty-four did not move.
 
+**One more number, and it is the plainest.** Before this round **92 of the 292
+active events carried no active edge at all** — the 82 the import had just
+written, plus the ten the brief counted in section 1. After it there are
+**ten**, and they are those same ten: nine presidential elections of the
+Republic and the Iberian blackout of 2025, every one of them Portuguese and
+every one of them already here before M44a. **Not one record M44b kept was left
+without an edge, and not one of the fifty it retracted is counted here**,
+because a tombstone carries no degree.
+
 **Why two and not twenty, and it is the thing the owner should read.** Not one
 of the eighty-two imported records could be given a direct edge to a Portuguese
 event. The twelve that sit one hop out sit there through records the atlas

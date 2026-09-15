@@ -243,6 +243,15 @@ before M44b: 292 active events, 65 world events that predate M44a
       turkish-war-of-independence: Infinity -> 3
 ```
 
+**One more number, and it is the plainest.** Before this round **92 of the 292
+active events carried no active edge at all** — the 82 the import had just
+written, plus the ten the brief counted in section 1. After it there are
+**ten**, and they are those same ten: nine presidential elections of the
+Republic and the Iberian blackout of 2025, every one of them Portuguese and
+every one of them already here before M44a. **Not one record M44b kept was left
+without an edge, and not one of the fifty it retracted is counted here**,
+because a tombstone carries no degree.
+
 **The first number: 30 of 30.** Every M44 record still active is
 Portuguese-reaching. Twelve of them are one hop from a Portuguese event and
 eighteen are two. That number is 30 of 30 and not 30 of 82 because fifty
@@ -381,3 +390,19 @@ owner's to take:
   the corpus already holds at least one other record in the same position
   (`eleicoes-legislativas-regionais-na-madeira-em-1976`). It wants a small run
   of its own.
+
+## 6. The validator's warnings, named
+
+`node tools/validate.mjs` without `--index` reports **0 errors and 1,056
+warnings** on the branch at the end of the round. By class:
+
+| class | count | what it is |
+|---|--:|---|
+| `unread` | 1,041 | a record nobody has read. 916 of them are `review.status: draft`, which is every record this round wrote and nearly everything else here; it is the standing state of the atlas and not this round's doing. |
+| `relation-outside-actor-when` | 12 | twelve successions in `data/relations/` whose dates fall outside the actor's. All predate M44 and none is touched here. |
+| `degree-zero` | 1 | `iberian-blackout-2025`, an event with no edge. Nine more active events have no edge and are not warned about; all ten are named in §4 above and all ten predate M44a. |
+| `no-citers` | 1 | `sources/uefa-2016-final.json`, cited by nothing. Predates M44. |
+| `place-unused` | 1 | `places/saint-denis.json`, referenced by no event. Predates M44. |
+
+Nothing in the list is new with this round except the `unread` entries for the
+fifty-four records it wrote, which are what `review.status: draft` means.
