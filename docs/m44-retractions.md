@@ -46,3 +46,35 @@ with the role `target`. Its M41b retraction read, verbatim:
 The atlas now has the first of the three. The exile of Rolão Preto, the revolt
 of 1935 and a record of the man are still missing, and M41b was right that this
 was the retraction most worth undoing.
+
+### `energias-de-portugal`
+
+Reinstated by `edp-created-1976`, which names it in `actors` with the role
+`institution`. Its M41b retraction read, verbatim:
+
+> Retracted in M41b: EDP, the electricity utility founded in 1976 out of the
+> merger of fourteen nationalised companies. The link to the atlas is real and
+> it has no record to hang on: the nationalisations this atlas holds are those
+> of March 1975, a year earlier, and EDP was not an actor in them but a body
+> made afterwards out of what they took. It would need an event for the
+> creation of EDP in 1976, or for the nationalisation of electricity that
+> followed the banks over that summer.
+
+The atlas now has the first of the two. The nationalisation of electricity
+itself is still missing, and it is the better record of the pair.
+
+### The eight that stay retracted
+
+Amendment A5 names eleven retracted actors. Three are above. The other eight
+stay retracted, and the reason is the same for all of them and is the one §4c
+of the brief set as its hard constraint: **a record is written only if a source
+already in `data/sources/` carries it.** In each of these cases the event that
+would name the actor is a law, a merger or a sale whose date and instrument
+this run could not point at in any of the thirty-four sources this atlas holds,
+and a record of "the banking law of the mid-1980s" that cannot say which law it
+is would be a gap dressed as a record. They are listed with the work each one
+needs in §5 of `docs/m44-connections.md`.
+
+`banco-comercial-portugues`, `portuguese-investment-bank`, `altice-portugal`,
+`nos`, `brisa-auto-estradas-de-portugal`, `semapa`, `altri`,
+`the-navigator-company`.
