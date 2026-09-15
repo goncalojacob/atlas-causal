@@ -93,6 +93,8 @@ Natural Earth 10 m (land-present.json since M36a, base/*)
     physical   far     0.25 deg    543/544     10,147 /  70,307
     physical   near   0.075 deg    544/544     36,091 /  70,307
     mountains  both       none     711/711        711 /     711
+    cities     far        none    1726/3086      1,726 /   7,342
+    cities     near       none    3086/3086      3,086 /   7,342
 
   The far level of the rivers and the lakes also has a size floor, because
   what decides the bytes at that level is the feature count and not the
@@ -109,6 +111,23 @@ Natural Earth 10 m (land-present.json since M36a, base/*)
   would have drawn the coastline a third time. base/mountains is all 711
   elevation points, each with the elevation the file gives it, depressions
   included; no height is invented and none is read off anything else.
+
+  base/cities was added by M36c, from ne_10m_populated_places.geojson, at the
+  same two levels. It is the one layer that is filtered rather than
+  simplified, a point having nothing along it to take off: what is kept is
+  every populated place whose POP_MAX is over 100,000 - 3,085 of the file's
+  7,342 - plus every populated place a place record of this atlas names,
+  whatever its population, which is one more (Panaji, 65,586). The other
+  4,256 are in no file. Each city carries Natural Earth's own NE_ID, NAME,
+  NAME_EN where it differs, POP_MAX, WIKIDATAID and the coordinates rounded
+  to three decimals, and nothing is invented: `z` is MIN_ZOOM and `zl`
+  LABELRANK, each through the same table the other layers' `z` goes through.
+
+  The far level of the cities has a floor of its own, in people rather than
+  in degrees and for the same reason the rivers' and the lakes' have one:
+  a city under 250,000 is not in the world file, which leaves 1,726 of the
+  3,086 there. Every one of the rest is in its cell, and a city that a place
+  record names is never under the floor whatever its population.
 
   Names are Natural Earth's own, carried through unchanged: NAME (or `name`),
   and NAME_EN (or `name_en`) only where it differs. A feature the file left
