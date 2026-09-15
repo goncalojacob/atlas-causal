@@ -590,6 +590,12 @@
     },
     {
       "dissent": false,
+      "id": "entente-cordiale",
+      "kind": "event",
+      "locator": "Q464399"
+    },
+    {
+      "dissent": false,
       "id": "euromaidan",
       "kind": "event",
       "locator": "Q15224558"
@@ -623,6 +629,12 @@
       "id": "first-indochina-war",
       "kind": "event",
       "locator": "Q748780"
+    },
+    {
+      "dissent": false,
+      "id": "first-sino-japanese-war",
+      "kind": "event",
+      "locator": "Q178687"
     },
     {
       "dissent": false,
@@ -707,6 +719,12 @@
       "id": "international-covenant-on-civil-and-political-rights",
       "kind": "event",
       "locator": "Q392119"
+    },
+    {
+      "dissent": false,
+      "id": "iran-iraq-war",
+      "kind": "event",
+      "locator": "Q82664"
     },
     {
       "dissent": false,
@@ -818,6 +836,18 @@
     },
     {
       "dissent": false,
+      "id": "philippine-american-war",
+      "kind": "event",
+      "locator": "Q214456"
+    },
+    {
+      "dissent": false,
+      "id": "polish-soviet-war",
+      "kind": "event",
+      "locator": "Q186284"
+    },
+    {
+      "dissent": false,
       "id": "portuguese-regionalisation-referendum-1998",
       "kind": "event",
       "locator": null
@@ -845,6 +875,12 @@
       "id": "russo-georgian-war",
       "kind": "event",
       "locator": "Q620735"
+    },
+    {
+      "dissent": false,
+      "id": "russo-japanese-war",
+      "kind": "event",
+      "locator": "Q159950"
     },
     {
       "dissent": false,
@@ -881,6 +917,12 @@
       "id": "second-sino-japanese-war",
       "kind": "event",
       "locator": "Q170314"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-afghan-war",
+      "kind": "event",
+      "locator": "Q83085"
     },
     {
       "dissent": false,

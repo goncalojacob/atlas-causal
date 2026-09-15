@@ -5699,6 +5699,15 @@
         }
       ]
     },
+    "entente-cordiale": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "equality-statute-between-brazil-and-portugal": {
       "from": "git",
       "versions": [
@@ -5966,6 +5975,13 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "names",
+            "review"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -6593,6 +6609,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "iran-iraq-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -7822,6 +7847,15 @@
         }
       ]
     },
+    "polish-soviet-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "population-transfer-in-the-soviet-union": {
       "from": "git",
       "versions": [
@@ -8716,6 +8750,15 @@
         }
       ]
     },
+    "russo-japanese-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "rwandan-civil-war": {
       "from": "git",
       "versions": [
@@ -8907,6 +8950,13 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "names",
+            "review"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -9136,6 +9186,15 @@
             "review",
             "status"
           ],
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "soviet-afghan-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-15"
         }
       ]
@@ -9870,6 +9929,13 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "names",
+            "review"
+          ],
           "on": "2026-09-15"
         }
       ]

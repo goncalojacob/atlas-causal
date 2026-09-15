@@ -3606,6 +3606,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "id": "entente-cordiale",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Entente Cordiale"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -3858,12 +3885,17 @@
       "degree": 2,
       "id": "first-balkan-war",
       "kind": "event",
+      "names": [
+        "Primeira Guerra Balcânica",
+        "Primeira Guerra dos Bálcãs"
+      ],
       "origin": {
         "tool": "wikidata"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "imported-names"
         ],
         "status": "draft"
       },
@@ -3904,6 +3936,33 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "First Indochina War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "id": "first-sino-japanese-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Sino-Japanese War"
     },
     {
       "authors": [
@@ -4597,6 +4656,33 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "International Covenant on Civil and Political Rights"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "id": "iran-iraq-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Iran–Iraq War"
     },
     {
       "authors": [
@@ -5746,6 +5832,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "id": "philippine-american-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Philippine–American War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5770,6 +5883,33 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "Pimenta de Castro's authoritarian government"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "id": "polish-soviet-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Polish–Soviet War"
     },
     {
       "authors": [
@@ -6048,6 +6188,33 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "id": "russo-japanese-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Russo-Japanese War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -6263,12 +6430,17 @@
       "degree": 2,
       "id": "second-balkan-war",
       "kind": "event",
+      "names": [
+        "Segunda Guerra Balcânica",
+        "Segunda Guerra dos Bálcãs"
+      ],
       "origin": {
         "tool": "wikidata"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "imported-names"
         ],
         "status": "draft"
       },
@@ -6427,6 +6599,33 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "Mário Soares elected president"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "id": "soviet-afghan-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Soviet-Afghan War"
     },
     {
       "authors": [
@@ -7339,12 +7538,23 @@
       "degree": 2,
       "id": "winter-war",
       "kind": "event",
+      "names": [
+        "Soviet–Finnish War 1939–1940",
+        "Soviet–Finland War 1939–1940",
+        "Russo–Finnish War 1939–1940",
+        "Finno-Russian War 1939–1940",
+        "Guerra de Inverno",
+        "Guerra Russo-Finlandesa",
+        "Guerra do Inverno",
+        "Guerra Soviético-Finlandesa"
+      ],
       "origin": {
         "tool": "wikidata"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "imported-names"
         ],
         "status": "draft"
       },
@@ -7552,7 +7762,49 @@
   "schema": 1,
   "warnings": [
     {
+      "id": "entente-cordiale",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "first-sino-japanese-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "iberian-blackout-2025",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "iran-iraq-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "philippine-american-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "polish-soviet-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "russo-japanese-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "soviet-afghan-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

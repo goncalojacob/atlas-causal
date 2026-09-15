@@ -20,7 +20,8 @@
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "imported-names"
     ]
   },
   "wikidata": "Q184183",
@@ -39,6 +40,10 @@
     }
   ],
   "title": "Second Balkan War",
+  "names": [
+    "Segunda Guerra Balcânica",
+    "Segunda Guerra dos Bálcãs"
+  ],
   "summary": "Wikidata item Q184183, imported by tools/import/wikidata.mjs. The item's own description reads \"continuation of the First Balkan War in which Bulgaria fought Serbia, Greece, Romania and the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1913,
