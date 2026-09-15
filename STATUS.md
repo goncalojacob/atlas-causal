@@ -13,6 +13,28 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-15, after **M37b** (`docs/m37-brief.md`, with its amendments after
+review): **M37 is done — the reader has the switches.** The layer control is
+four things and is the map's only legend: `territories`, `events`, a collapsed
+**base map** group with one checkbox and one swatch per switchable layer, and
+the glyph run's **events by category** beside it. Four targets in the phone
+drawer, not nineteen. Five checkboxes and not six: the coastlines have no row
+under either of their names, because the near shore is the same line in more
+detail and not a layer to turn off.
+
+`LAYERS` is the eight — `land`, `territories`, `events` and the base map's five
+— and everything is on by default, so a link is written only where the reader
+turned something off. **An old `?layers=` link naming a subset now turns the
+base map off too**: it says "these and nothing else" and is read that way
+(deviation 522), and an off layer costs no request at all.
+
+No data was written and `node tools/validate.mjs --index` is byte-identical;
+`manifest.categories` was already the glyph run's and was found built.
+`NEAR_ZOOM` is exactly as M37a left it (deviation 633 is still the owner's).
+Two screenshots are under `docs/screens/m37-*.png`. The full account and
+deviations 641 to 648 are in **`## M37b: the control, the swatches and
+`?layers=``**, below; `ARCHITECTURE.md` is revision 24.
+
 2026-09-15, after **M37a** (`docs/m37-brief.md`, with its amendments after
 review): **the base map is drawn.** Six layers of Natural Earth under the
 territories and over the coastlines — the near coastline, the rivers, the
@@ -5933,6 +5955,121 @@ the control and `?layers=`.
 container, so all 1,379 tests ran and **none skipped** — the five new browser
 tests of the base map among them.
 
+## M37b: the control, the swatches and `?layers=`
+
+M37a drew the base map and left no way to turn any of it off. **There is one
+now, and it is the map's only legend.** The layer control in
+`src/layer-control.js` is four things, in the order the page is drawn in:
+`territories` as a row, `events` as a row, a collapsed `<details>` called
+**base map** with one checkbox and one swatch per switchable layer of
+`manifest.base.layers`, and the glyph run's collapsed **events by category**
+beside it, found built and left exactly as it was. Two visible rows and two
+collapsed groups, so the phone drawer is **four targets and not nineteen** —
+every one of them `--touch` tall, and opening "base map" puts five rows in the
+drawer's own flow rather than floating a panel half off the screen.
+
+**Five checkboxes and not six.** The coastlines have no row under either of the
+two names the code gives them: `land` lost its switch in M30b and `coast` never
+had one, because the near shore is the same line in more detail and a switch for
+it would be a switch for a level of detail (deviation 523). They are the ground
+everything else is read against and they are always drawn.
+
+Every label and every id goes through `esc()`. `manifest.base` and
+`data/categories.json` are data from `data/`, and data from `data/` is
+untrusted input — which is the whole reason the control is generated rather
+than written into `index.html`.
+
+### The swatches
+
+A row's swatch is what that layer looks like on the map, at the row's own text
+size, and it is a CSS class and never a value written in the module: the rivers
+a 2 px line in `--cobalt-soft`, the lakes a box filled `--cobalt-faint` and
+bordered `--cobalt-soft`, the physical regions a dashed `--line`, the peaks and
+the cities dots in `--ink-soft` at the two diameters the map draws them at, the
+cities' with a `--paper` halo as the marks have. **No new hex value, no new
+token and no new type size**: every colour here is the one the map itself uses,
+from the same `:root` variable, so the swatch and the layer cannot come apart.
+
+### `?layers=`, and what an old link now does
+
+`LAYERS` is the eight: `land`, `territories`, `events`, `rivers`, `lakes`,
+`physical`, `mountains`, `cities`. `coast` is not a member (523); `land` is a
+member with no checkbox, as M30b A11 left it. `defaultState()` is `[...LAYERS]`,
+so everything is on and `formatState` writes `?layers=` only where the reader
+has turned something off. `parseState` needed no new shape, and `src/share.js`
+was not touched.
+
+**An old link that named a subset now also turns the base map off.**
+`?layers=territories,events`, written before rivers existed, says "these and
+nothing else" and is read that way (deviation 522). The alternative — a name an
+old link could not have carried counting as on — makes turning a base layer off
+inexpressible in the URL at all. Nothing is published and no such link is in
+circulation. What it costs is nothing: an off layer draws nothing **and asks for
+nothing**, so that link opens with no far file and no cell of any switched-off
+layer fetched at all, and the near coastline drawn anyway.
+
+`map.js` reads what is on from the state on every draw rather than holding it,
+because a base file landing redraws the base map by itself (deviation 637) and
+has to do it with the layers the reader has switched on at that moment.
+
+### What was already there, and what was not touched
+
+`manifest.categories` is the glyph run's and was found built — four categories
+in use on the repository's data, three on the fixtures — so nothing was written
+to the manifest, to `tools/build-index.mjs` or to `data/`.
+`node tools/validate.mjs --index` is byte-identical from the first commit of
+this run to the last. `NEAR_ZOOM` is exactly as M37a left it, at 4: whether that
+threshold should become a span rather than a zoom is deviation 633 and the
+owner's, and nothing in the control mentions it. `CONTRIBUTING.md` is untouched,
+and so is `src/map/projection.js`.
+
+### Deviations 641 to 648
+
+641. **The control is `src/layer-control.js` and not `src/main.js`.** The
+     brief's §3 names `main.js`, where the control was when the brief was
+     written; the glyph run moved it out when thirteen category rows pushed
+     `main.js` past the three hundred lines `CLAUDE.md` allows. The base-map
+     group was added where the control now lives, and `main.js` is bootstrap.
+642. **The control writes the whole `LAYERS` order, `land` included.** It used
+     to write the boxes that were ticked, which never included `land` because
+     `land` has no box. That was harmless while a missing name meant nothing —
+     and since deviation 522 a missing name means that layer off, so turning the
+     territories off and on again would have written
+     `?layers=territories,events` and silently taken the whole base map with it.
+     It is now built from `LAYERS` in `LAYERS`'s order, which is also what lets
+     `formatState` recognise the default and write no link at all.
+643. **The brief's test 5 says "the two boxes unchecked"; there are five.** One
+     per member of `LAYERS` the base map has. The test holds all five unchecked
+     and all five groups empty, holds `territories` and `events` checked, and
+     holds the coastlines drawn under that same link — which is 523 said as an
+     assertion rather than as a sentence.
+644. **Three tests that were not this run's were widened rather than left
+     alone.** `map-browser.test.mjs`'s "the coastlines have no switch" enumerates
+     the control's boxes, and there are seven of them now; its river-click test
+     opens on `?layers=` and had to name the base layers, because "these and
+     nothing else" now includes them; and `phone-browser.test.mjs` reached for
+     the categories' `<details>` as the first one in the control, which since
+     this run is the base map's. It now reaches for it by its own anchor,
+     `#events-by-category`, which is what that anchor is for.
+645. **The base-map group carries `id="base-map"`**, the idiom the glyph run
+     already used for `#events-by-category`: a link to the anchor makes the
+     browser open the `<details>` that contains it, which is how a screenshot
+     tool photographs an open group without clicking anything.
+646. **Both screenshots switch the territories off**, through the very link the
+     control writes. The brief asks for `?bbox=` to do the zooming and it does;
+     but eight hues of wash over the base map is the emphasis hierarchy working
+     exactly as it should, and a shot of the base map under it is a shot of the
+     territories. The page as it opens is already `m19-map-1911` and
+     `m39-map-world`.
+647. **`ARCHITECTURE.md` is revision 24 and covers all of M37, not only the
+     control.** M37a left the whole file to this run (its "What M37a did not
+     do"), so the revision note carries the drawing as well as the switches, and
+     `base.js`, `grid.js`, `glyphs.js` and `layer-control.js` join the tree with
+     `base.js` and `layer-control.js` in the module table.
+648. **The sandbox has a browser again.** Chromium is present in this container,
+     so all 1,383 tests ran and **none skipped** — the two new browser tests of
+     the control among them, and the seven of the base map beside them.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -6115,3 +6252,5 @@ M36 done
 M37a started 2026-09-15T03:33:41Z by scheduled
 M37a done
 M37b started 2026-09-15T04:13:52Z by scheduled
+M37b done
+M37 done
