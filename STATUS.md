@@ -13,6 +13,39 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-15, after the **glyph run** (`docs/glyphs-brief.md`, with its
+amendments after review): **an event that has a category is drawn with a
+symbol over its mark and at the left of its bar, and the layer control's
+category toggles are the legend.**
+
+`category` moved out of the attribute shards and into the core, because a
+toggle that hides marks has to hide them on the frame the reader clicks it and
+an attribute column arrives with its century; the measured cost is **306
+bytes** (69,553 → 69,859) and `manifest.schema` is 7. The filter itself is one
+removal in `workingSet` (`src/emphasis.js`), applied where the lens is, so the
+map, the timeline, the graph and the corner count narrow together. The marks
+are untouched: a symbol is a separate `<use class="glyph">` with no identity
+and no pointer, and an event with no category keeps the plain circle. The
+account is **`## glyphs: a symbol per category, and the toggles that are the
+legend`**, below, with deviations 581 to 594.
+
+**Two things wait on the owner.** The twelve shapes are drawn and are theirs to
+judge: `docs/screens/glyphs-legend.html` is a contact sheet that imports the
+module rather than copying it, and `glyphs-legend.png` is that page — say which
+to redraw, and redrawing one is one `<symbol>` and no test. And the corpus: 175
+events carry a category, 54 of them are active and **three** of those have a
+place, so on today's data a symbol is on screen only when one of those three is
+open. The feature is right and the categories have not been filled in;
+`docs/m32b-brief.md`'s owner question is where that is decided.
+
+The other thing this run changed is not the glyphs at all:
+`tools/lib/store.mjs` built its topology without `roles.json` and
+`categories.json`, so the index it wrote after a save from `review.html`
+interned those two vocabularies in the order the records were read rather than
+the order `build-index.mjs` writes. That is wrong on the repository's own data
+and has been for as long as the store has existed; the fixtures had neither
+file until this run, which is why nothing caught it (deviation 587).
+
 2026-09-11, after **M39b** (`docs/m39-brief.md`, amendment A0 — the second
 half of the projection work, which completes **M39**): **a territory's border
 is drawn inland only, and each presence shard carries the list of those
@@ -4022,6 +4055,75 @@ The numbering continues from 401, which is M31-3's last.
      cancelled — so M39a's own browser tests are where a next run should look,
      and that **the owner can read the name in the web UI in one click**.
 
+581. **`category` moves from the attribute shards into the core**
+     (glyphs-brief, deviation 532). A toggle that narrows the map must narrow
+     it on the frame it is clicked, and an attribute column arrives with its
+     century. One small integer per categorised event, `SPLIT_COLUMNS`
+     unchanged, `manifest.schema` bumped. Measured at 306 bytes.
+582. **The glyph sits centred on the mark, not offset from it** (533). A2 says
+     "beside the mark" meaning "a separate element from the mark"; the badge
+     already occupies the upper right of a cluster, and a second thing out
+     there would collide with it.
+583. **The glyph's colour is chosen against the mark's fill** (534). The
+     default mark is paper-filled with a cobalt stroke and an emphasised one
+     takes a solid fill, so `--cobalt` normally and `--paper` on `.on-path`,
+     `.selected` and `.of-actor`. Existing tokens only. On the timeline the
+     three grounds are different — a bar is cobalt-faint, madder-faint on the
+     path and solid madder selected — so its three rules are cobalt, madder
+     and paper, still with no new token.
+584. **The toggles list the categories in use, not the twelve allowed** (535).
+     Four of the twelve match an active record today; a toggle that hides
+     nothing is a lie about what the atlas holds. The manifest gains
+     `categories` beside `roles`.
+585. **The timeline's symbols are a named grouping's.** The threshold is the
+     symbol's own size and a packed row leaves the bar 8 px, so under the
+     default grouping no bar carries one — measured, 0 of 208 at the default
+     window and at the whole extent, against 10 of 36 under the region lanes.
+     Shrinking the symbol would undo review finding F14; making the bar taller
+     is a change to the timeline's look and is the owner's to ask for.
+586. **Turning every category off is the events layer off.** A11's token set
+     has no way to say "no category, and the events that have none": the bare
+     `events` means every category, and unchecking the last one leaves no
+     events token at all. The control then shows the events row unchecked,
+     which is the truth, rather than writing a link the atlas cannot read back.
+587. **`tools/lib/store.mjs` was building its topology without the two
+     vocabularies**, so the index it wrote after a save interned `role` and
+     `category` in whatever order the records were read — not the order
+     `build-index.mjs` writes. A pre-existing defect on any dataset that has
+     `roles.json` or `categories.json`, which the repository's own does; the
+     fixtures had neither until this run, which is why nothing caught it.
+     Fixed here because this run is what made it fail.
+588. **`src/layer-control.js` is a new module.** Thirteen rows of markup and
+     the token-set writer took `main.js` past the ~300 lines `CLAUDE.md` sets
+     as the limit, so the control left it whole rather than being trimmed.
+589. **`src/categories.js` is a new module too**, and a leaf one: what a
+     `?layers=` list says about categories, and what the manifest says about
+     which exist. `state.js` stays free of the data and `emphasis.js` holds the
+     removal; this is the answer both of them and the control need.
+590. **The contact sheet is a page, not a screenshot of the control.** The
+     control lists the categories *in use*, four of twelve today, and owner
+     question 11 is about all twelve. `docs/screens/glyphs-legend.html` imports
+     `src/map/glyphs.js` and holds no copy of the symbols, so it cannot fall
+     behind the module, and the owner can open it as well as look at the PNG.
+591. **`glyphs-map` is taken on the fixtures and at a device scale of 2.**
+     On the repository's data it would show one symbol on one mark (see the
+     table above); and a symbol is about fifteen screen pixels, which is not
+     something to judge line work from in a PNG. `tools/screens.mjs` gained a
+     per-shot `scale`.
+592. **The categories in use are counted over active events only.** 175 events
+     carry a category and 121 of them are retracted or merged; a toggle
+     reading `151` that hid 48 marks would be the same lie deviation 584 is
+     about, one order of magnitude worse.
+593. **The `war` symbol was redrawn inside the run**, before the owner saw it:
+     two equal blades crossing at the centre read as an ✕, and "no glyph that
+     reads as a control" is one of the things the brief says the run must not
+     do. The replacement is two unequal blades with a guard.
+594. **`tests/timeline-browser.test.mjs`'s "strays" assertion allows a
+     `<defs>`.** It says nothing was appended to the timeline's root behind the
+     layers' backs, and the symbols' `<defs>` is exactly such an element where
+     a page has a timeline and no map. On `index.html` the map owns it and the
+     timeline's root is unchanged.
+
 ## I8: what was derived, and what the Action must still run
 
 **The successions.** `node tools/import/cshapes.mjs --relations` reads
@@ -4533,6 +4635,104 @@ outlines are taken down on (`simplifyLine`, the same tolerance and the same
 at the seam; `m39-map-iberia.png` is `?bbox=-12,35,1,45` in 1911, where the
 Portugal–Spain border is one line and the Atlantic shore is one line.
 
+## glyphs: a symbol per category, and the toggles that are the legend
+
+`data/categories.json` has held twelve categories since M30a and M32b gave 175
+of the 421 events one; nothing on the page showed it. It shows now: a small
+line symbol over each categorised mark on the map, the same symbol at the left
+of each bar the timeline has room for, and one toggle per category in use
+inside a collapsed `<details>` in the layer control — each toggle carrying its
+own symbol, because the control is the legend and there is no other.
+
+**The mark is unchanged.** It is still a `<circle>`, still carries `data-mark`,
+still takes every click and every key. The symbol is a separate
+`<use class="glyph">` beside it with no `data-id`, no `data-mark`, no
+`tabindex` and `pointer-events: none` on the element itself — not only in the
+stylesheet, or a page served without CSS would have a symbol catching the click
+that belongs to the mark. Every browser test naming `circle.mark`, `circle.hit`
+or `circle[data-mark]` passes unchanged, and a browser test now clicks the
+exact centre of a glyph and asserts that `elementFromPoint` finds the circle.
+
+**`category` moved into the core** (deviation 581). It was an attribute column,
+which means it arrived with its century: a reader turning `war` off would have
+seen nothing happen and then, a moment later, marks disappear — the toggle
+lying about what it did. The measured cost is **306 bytes**: the core went from
+69,553 to 69,859, for the 54 active events that carry a category. Well under
+the kilobyte the brief expected. `SPLIT_COLUMNS` is untouched, the union of the
+two column tables is unchanged per kind, `manifest.schema` is 7 (one more than
+the gate commit's), and both indexes were rebuilt in the same commit.
+
+**The filter is one removal, in `workingSet`** (`src/emphasis.js`), applied
+exactly where the lens is applied, so the map, the timeline, the graph and the
+corner count narrow together (review of the map block, F6). The working set
+gained `shown` — the lens narrowed by the categories still on — and the three
+views filter their event lists by that instead of by `lens`; `lens` itself
+stays the reader's own question, which is what the graph draws one event to a
+node. `src/categories.js` reads a `?layers=` list and `src/layer-control.js`
+writes M30b A11's token set back into it. `tests/state.test.mjs` passed
+untouched, as the brief predicted.
+
+**What the data actually shows.** This is the number worth recording, and it is
+smaller than the brief's:
+
+| | count |
+|---|---|
+| events carrying a category | 175 of 421 |
+| of those, **active** (drawable at all) | **54** — 107 are retracted, 14 merged |
+| active and carrying a place (so, a mark) | **3** — Macau 1999, Lisbon 1908, Lisbon 1985 |
+| categories in use, on active events | 4: election 48, treaty 3, disaster 2, death 1 |
+
+So the layer control draws four rows, not twelve; and on the repository's own
+data **no symbol is on screen until one of those three events is held** — two
+of the three share Lisbon's point with thirty-odd others and are inside a
+cluster, which gets no symbol by design. Opening any of them draws its mark
+alone and its symbol with it, which is what `?selected=treaty-of-accession-1985`
+shows. The feature is right; the corpus has not been categorised yet, and
+`docs/m32b-brief.md`'s owner question is where that is decided.
+
+**The timeline's bar geometry, measured** (deviation 585). A bar shorter or
+thinner than the symbol carries none, and the threshold is the symbol's own
+size, ten pixels:
+
+| view | bars | bar height | at or above the threshold |
+|---|---|---|---|
+| default window, no grouping | 208 | 8 px | **0 (0%)** |
+| default window, region lanes | 36 | 18 px | 10 (28%) |
+| whole extent, no grouping | 208 | 8 px | **0 (0%)** |
+| whole extent, region lanes | 36 | 18 px | 10 (28%) |
+
+Under the default grouping a packed row is 22 px and `barHeight` is 8, so **no
+bar can ever carry a symbol there**. The symbols on the timeline are a named
+grouping's. Shrinking them to fit would repeat the mistake review finding F14
+corrected — twelve line drawings are not tellable apart below ten pixels — and
+making the bar taller is a change to the timeline's own look, which is the
+owner's to ask for. It is flagged here rather than decided.
+
+**The twelve symbols** are `src/map/glyphs.js`: one `<symbol>` per category in a
+`<defs>` the document holds once, 10 × 10, stroke only, `currentColor`,
+`vector-effect: non-scaling-stroke`, round caps and joins. No colour is named in
+that file at all — a test asserts it, not merely "no hex" — because
+`currentColor` resolving against the `<use>` is what lets one drawing be cobalt
+on the paper-filled mark it usually sits on and paper on the three that take a
+solid fill. Five states, existing tokens, no new hex value and no new token.
+The symbol carries its mark's emphasis classes with the view's word for a record
+swapped out, through `overlayClasses` in `src/parts.js` — the one-line
+substitution `ringClasses` already had, now called by both, with a test that
+the two agree on the same input.
+
+`war` was redrawn once inside the run: two equal blades crossing in the middle
+of the box read as an ✕, which the brief forbids outright. It is now two
+unequal blades with a guard across the shorter one. The other eleven are as the
+brief drew them, and **the owner's judgement is the point**:
+`docs/screens/glyphs-legend.html` is a contact sheet that imports the module
+rather than copying it, showing each symbol at ten pixels, at the control's row
+size, large, and on both grounds; `docs/screens/glyphs-legend.png` is that page.
+Redrawing one is one `<symbol>` and no test.
+
+`docs/screens/glyphs-map.png` is on the fixtures and has to be, for the reason
+in the table above: a shot of the repository's data would show one symbol on one
+mark.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -4704,3 +4904,4 @@ M39b done
 M39 done
 glyphs started 2026-09-11T01:52:11Z by scheduled
 glyphs started 2026-09-14T23:55:45Z by scheduled
+glyphs done
