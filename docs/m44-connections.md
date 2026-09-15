@@ -284,6 +284,127 @@ agreement of 1978, 25 November 1975, the euro. The world round cannot reach
 Portugal by importing more world; it reaches Portugal by writing the Portuguese
 records that the world touches. Section 5 names eleven of them.
 
+### The script
+
+Owner question 8's answer was that the connection claim does not become a
+committed validator warning in M44, so no tool was added under `tools/`.
+The script is written out here instead, whole, so that anybody can save it at
+the repository root and run the numbers above again:
+
+```js
+// M44b's counting script. Not committed (owner question 8: no new committed
+// tool). Run from the repository root with:  node .m44b-count.mjs
+//
+// It reads data/ only, applies the frozen rule of docs/m44-connections.md §1,
+// and prints every number that file and STATUS.md quote.
+import fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
+
+const load = (d) => fs.readdirSync(`data/${d}`).filter((f) => f.endsWith('.json'))
+  .map((f) => JSON.parse(fs.readFileSync(`data/${d}/${f}`, 'utf8')));
+
+const PT_PLACES = new Set(['alvor', 'belem', 'boe', 'braga', 'central-portugal', 'chai', 'dili',
+  'lajes', 'lisbon', 'luanda', 'macau', 'panaji', 'parque-das-nacoes', 'pedrogao-grande', 'porto',
+  'tete-district', 'tite']);
+const PT_ACTORS = new Set(['portugal', 'first-portuguese-republic', 'military-dictatorship',
+  'estado-novo', 'third-portuguese-republic', 'carlos-i', 'luis-filipe', 'manuel-ii', 'joao-franco',
+  'manuel-de-arriaga', 'afonso-costa', 'pimenta-de-castro', 'sidonio-pais', 'paiva-couceiro',
+  'gomes-da-costa', 'oscar-carmona', 'salazar', 'humberto-delgado', 'norton-de-matos',
+  'henrique-galvao', 'marcelo-caetano', 'americo-tomas', 'antonio-de-spinola',
+  'otelo-saraiva-de-carvalho', 'vasco-goncalves', 'ramalho-eanes', 'mario-soares', 'alvaro-cunhal',
+  'cavaco-silva', 'pedro-passos-coelho', 'antonio-costa', 'marcelo-rebelo-de-sousa',
+  'luis-montenegro', 'andre-ventura', 'ricardo-salgado', 'regenerator-party',
+  'partido-republicano-portugues', 'carbonaria', 'partido-democratico', 'republican-liberal-party',
+  'democratic-leftwing-republican-party', 'portuguese-expeditionary-corps', 'uniao-nacional',
+  'legiao-portuguesa', 'pvde-pide-dgs', 'mud', 'people-s-monarchist-party', 'pcp',
+  'armed-forces-movement', 'council-of-the-revolution', 'partido-socialista', 'psd', 'cds-pp',
+  'bloco-de-esquerda', 'ecologist-party-the-greens', 'chega', 'liberal-initiative',
+  'people-animals-nature', 'portuguese-democratic-movement', 'banco-de-portugal',
+  'banco-espirito-santo', 'novo-banco', 'redes-energeticas-nacionais']);
+
+const isPT = (e) => (e.place && PT_PLACES.has(e.place))
+  || (e.actors || []).some((a) => PT_ACTORS.has(a.actor))
+  || /\bPortugal|\bPortuguese/i.test(e.title || '');
+
+function graph(events, edges) {
+  const act = events.filter((e) => e.status === 'active');
+  const ids = new Set(act.map((e) => e.id));
+  const adj = new Map(act.map((e) => [e.id, new Set()]));
+  for (const g of edges) {
+    if (g.status !== 'active' || !ids.has(g.from) || !ids.has(g.to)) continue;
+    adj.get(g.from).add(g.to);
+    adj.get(g.to).add(g.from);
+  }
+  return { act, adj };
+}
+
+function hops(id, adj, pt, max = 8) {
+  if (pt.has(id)) return 0;
+  let frontier = [id];
+  const seen = new Set([id]);
+  for (let d = 1; d <= max; d += 1) {
+    const next = [];
+    for (const n of frontier) for (const m of adj.get(n) || []) {
+      if (seen.has(m)) continue;
+      seen.add(m);
+      if (pt.has(m)) return d;
+      next.push(m);
+    }
+    if (!next.length) return Infinity;
+    frontier = next;
+  }
+  return Infinity;
+}
+
+// --- the corpus as it is now ------------------------------------------------
+const events = load('events');
+const edges = load('edges');
+const { act, adj } = graph(events, edges);
+const pt = new Set(act.filter(isPT).map((e) => e.id));
+
+const m44 = act.filter((e) => e.origin && e.origin.tool === 'wikidata' && e.created === '2026-09-15');
+console.log(`active events ${act.length}, active edges ${edges.filter((e) => e.status === 'active').length}`);
+console.log(`Portuguese ${pt.size}, world ${act.length - pt.size}`);
+console.log(`M44 records still active: ${m44.length}`);
+const reach = m44.map((e) => [e.id, hops(e.id, adj, pt)]);
+console.log(`  of them Portuguese-reaching within two hops: ${reach.filter(([, h]) => h <= 2).length}`);
+const fail = reach.filter(([, h]) => h > 2);
+console.log(`  failing the bar: ${fail.length}${fail.length ? ' -- ' + fail.map(([i, h]) => `${i}=${h}`).join(', ') : ''}`);
+const byHop = {};
+for (const [, h] of reach) byHop[h] = (byHop[h] || 0) + 1;
+console.log(`  by hops: ${JSON.stringify(byHop)}`);
+
+// --- the same corpus before M44b wrote anything -----------------------------
+// HEAD of the branch as M44a left it. The 45 stranded world events are computed
+// there, then looked up again here, so the two are the same 45.
+const base = execFileSync('git', ['rev-parse', '9e212b8b'], { encoding: 'utf8' }).trim();
+const at = (p) => JSON.parse(execFileSync('git', ['show', `${base}:${p}`], { encoding: 'utf8', maxBuffer: 1 << 28 }));
+const list = (d) => execFileSync('git', ['ls-tree', '--name-only', `${base}:data/${d}`], { encoding: 'utf8' })
+  .trim().split('\n').filter((f) => f.endsWith('.json')).map((f) => at(`data/${d}/${f}`));
+const e0 = list('events');
+const g0 = list('edges');
+const { act: act0, adj: adj0 } = graph(e0, g0);
+const pt0 = new Set(act0.filter(isPT).map((e) => e.id));
+const m44ids = new Set(act0.filter((e) => e.origin && e.origin.tool === 'wikidata' && e.created === '2026-09-15').map((e) => e.id));
+const world0 = act0.filter((e) => !m44ids.has(e.id) && !isPT(e));
+const stranded = world0.filter((e) => hops(e.id, adj0, pt0) > 1);
+console.log(`\nbefore M44b: ${act0.length} active events, ${world0.length} world events that predate M44a`);
+console.log(`  of them stranded (no Portuguese neighbour, the brief's 45): ${stranded.length}`);
+const already2 = stranded.filter((e) => hops(e.id, adj0, pt0) <= 2);
+console.log(`  of the stranded, already within two hops before M44b: ${already2.length}`);
+const beyond2 = stranded.filter((e) => hops(e.id, adj0, pt0) > 2);
+console.log(`  of the stranded, beyond two hops before M44b: ${beyond2.length}`);
+
+const nowIn2 = beyond2.filter((e) => hops(e.id, adj, pt) <= 2);
+console.log(`\n>>> STRANDED WORLD EVENTS THAT STOPPED BEING STRANDED: ${nowIn2.length}`);
+for (const e of nowIn2) console.log(`      ${e.id}: ${hops(e.id, adj0, pt0)} -> ${hops(e.id, adj, pt)}`);
+const gainedPTNeighbour = stranded.filter((e) => hops(e.id, adj, pt) === 1);
+console.log(`>>> of the 45, gained a direct Portuguese neighbour: ${gainedPTNeighbour.length}`);
+const improved = beyond2.filter((e) => hops(e.id, adj, pt) < hops(e.id, adj0, pt0) && hops(e.id, adj, pt) > 2);
+console.log(`>>> of the 45, brought nearer but still beyond two: ${improved.length}`);
+for (const e of improved) console.log(`      ${e.id}: ${hops(e.id, adj0, pt0)} -> ${hops(e.id, adj, pt)}`);
+```
+
 ## 5. What the round refused to write, and what the atlas needs
 
 ### 5a. The edges it refused
