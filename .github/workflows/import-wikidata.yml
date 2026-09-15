@@ -31,6 +31,19 @@ jobs:
     timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The whole history, as validate.yml and deploy.yml already take it.
+          # tools/lib/history.mjs reads a record's versions out of `git log`
+          # and refuses a shallow repository outright — "a shallow repository
+          # is not half a history, it is a different one" — so on the default
+          # depth-1 checkout build-index.mjs writes `history-*` shards with
+          # different content, and different content-addressed names. That
+          # passes this job's own `validate --index`, because the job rebuilt
+          # the index it is checking, and then fails the suite against the
+          # fixture index committed here, which was built with the history:
+          # rule 16, four tests, and batch 1 thrown away with the cursor never
+          # moving. It is what stopped M44a's first run.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
