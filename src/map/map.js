@@ -17,6 +17,8 @@ import { resolveWindow, withMargin, overlaps } from '../util/window.js';
 import { workingSet, heldSet } from '../emphasis.js';
 import { largeEventsIn } from '../large.js';
 import { isParent } from '../parts.js';
+import { installGlyphs } from './glyphs.js';
+import { categoryLabels, eventsOn } from '../categories.js';
 import { esc } from '../util/esc.js';
 import { normalizeBbox } from '../state.js';
 import { renderKey, shardsArrived } from '../render-key.js';
@@ -60,6 +62,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   const eventsGroup = svg('g', { class: 'layer layer-events' });
   viewport.append(landGroup, presencesGroup, regionsGroup, eventsGroup);
   const root = svg('svg', { viewBox: `0 0 ${WIDTH} ${HEIGHT}`, class: 'map', role: 'img', 'aria-label': 'Map' }, [viewport]);
+  // The twelve symbols, once in the document: the timeline draws the same ones
+  // by id, and two copies would be twelve repeated ids (glyphs.js).
+  installGlyphs(root);
+  // And what each category is called, from the manifest's own vocabulary.
+  const labels = categoryLabels(atlas.manifest);
 
   const land = createLandLayer(landGroup, projection);
   // The lane polygons are not at first paint since I1 (data.js, D2), so the
@@ -107,6 +114,10 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // A ring outside the mark of an event that has parts, the same look the
     // timeline and the graph give one (parts.js).
     isParent: (event) => isParent(atlas, event),
+    // What the symbol over a mark says, for a reader who cannot see it. The
+    // label is the vocabulary's own, off the manifest, and the category is in
+    // the core, so both are in hand on the first frame (categories.js).
+    categoryLabel: (id) => labels.get(id) ?? null,
     // One rule for the three pictures: a click on a consequence of what is
     // open follows that link, anything else starts afresh (chain.js). The map
     // draws the consequence line and then refused to follow it.
@@ -419,11 +430,14 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // parses; nothing turns it off.
     landGroup.style.display = '';
     presencesGroup.style.display = s.layers.includes('territories') ? '' : 'none';
-    eventsGroup.style.display = s.layers.includes('events') ? '' : 'none';
+    // On while any events token stands: turning one category off replaces the
+    // bare `events` with one `events:<id>` per category still on (A11), and
+    // the layer is still on (categories.js).
+    eventsGroup.style.display = eventsOn(s.layers) ? '' : 'none';
     // The wash and the corner are the events layer said another way, so they
     // go off with it: a tinted continent with no mark on it would be an event
     // the reader has just switched off, still drawn.
-    const drawingEvents = s.layers.includes('events');
+    const drawingEvents = eventsOn(s.layers);
     regionsGroup.style.display = drawingEvents ? '' : 'none';
     // Events by overlap with the window, territories by its far end: a
     // border is a state of affairs at a moment, an event is an interval.
@@ -439,8 +453,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // removes rather than dims, and it removes from the marks, the lines of
     // the chain, the actor's emphasis and the horizon's reachable set alike.
     const working = workingSet(atlas, s);
-    const lens = working.lens;
-    const kept = (id) => !lens || lens.has(id);
+    // What is drawn at all: the lens, narrowed by the category toggles still
+    // on. Both removals are made in emphasis.js, so the timeline, the graph
+    // and the corner count narrow with the marks (F6).
+    const shown = working.shown;
+    const kept = (id) => !shown || shown.has(id);
 
     // The two lists of *edges*, which are lines and not marks: the ids of
     // their ends are in the working set, the edge objects are needed here.
@@ -466,7 +483,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
         k: transform.k,
       });
     }
-    const drawn = lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents;
+    const drawn = shown ? atlas.activeEvents.filter((e) => shown.has(e.id)) : atlas.activeEvents;
     // The large events of the window: a regional one washes the polygons of
     // its lane, a worldwide one is named in the corner instead (large.js).
     // Off the same list the marks are drawn from, so the lens applies to all

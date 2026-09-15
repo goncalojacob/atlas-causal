@@ -19,6 +19,7 @@ import { parseFocus, lensSet } from './lens.js';
 import { resolveWindow } from './util/window.js';
 import { bindNarrativeKeys } from './panel/narrative.js';
 import { esc } from './util/esc.js';
+import { createLayerControl } from './layer-control.js';
 
 const params = new URLSearchParams(window.location.search);
 const fixtures = params.get('fixtures') === '1';
@@ -152,22 +153,10 @@ try {
   const mapArea = document.getElementById('map');
   const graphArea = document.getElementById('graph');
   const layersGroup = document.querySelector('.bar .layers');
-  // The layer switches, built here rather than written into index.html. Two
-  // of the three `LAYERS` are switches: the coastlines are always drawn now
-  // (plan decision 14) and `land` has no row, though it is still a member so
-  // that an old `?layers=` link parses into the same three. The twelve
-  // category switches under "events" arrive with the glyphs (M32b brief, A2),
-  // out of `atlas.manifest.categoriesAllowed`, inside a collapsed `<details>`
-  // so the phone drawer keeps one hit target instead of fifteen — which is
-  // why the control is generated at all: a category's label is written in
-  // `data/categories.json`, and everything from `data/` is untrusted input.
-  const LAYER_ROWS = [
-    { id: 'territories', label: 'territories' },
-    { id: 'events', label: 'events' },
-  ];
-  layersGroup.innerHTML = LAYER_ROWS
-    .map(({ id, label }) => `<label><input type="checkbox" data-layer="${esc(id)}" checked> ${esc(label)}</label>`)
-    .join('');
+  // The layer switches and the category toggles, which are the legend; built
+  // rather than written into index.html because a category's label comes from
+  // `data/` and everything from `data/` is untrusted input (layer-control.js).
+  createLayerControl(layersGroup, { atlas, state });
   const showView = (view) => {
     const graphOn = view === 'graph';
     if (graphOn && !graph) {
@@ -194,17 +183,6 @@ try {
     panelHandle: document.getElementById('split-panel'),
     timelineHandle: document.getElementById('split-timeline'),
     onResize: remeasure,
-  });
-
-  for (const box of document.querySelectorAll('input[data-layer]')) {
-    box.checked = state.get().layers.includes(box.dataset.layer);
-    box.addEventListener('change', () => {
-      const layers = [...document.querySelectorAll('input[data-layer]')].filter((b) => b.checked).map((b) => b.dataset.layer);
-      state.set({ layers });
-    });
-  }
-  state.subscribe((s) => {
-    for (const box of document.querySelectorAll('input[data-layer]')) box.checked = s.layers.includes(box.dataset.layer);
   });
 
   state.subscribe(fetchLensCiters);

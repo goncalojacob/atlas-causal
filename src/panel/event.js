@@ -284,6 +284,18 @@ export function drawnHtml(ctx, event, state) {
 // Exported for the tests: there is no DOM in node --test, and the card is
 // the string, as the actor's and the source's are. `remembered` is the
 // section this reader last had open, read from localStorage by panel.js.
+// The category, on the meta line beside the lane. It is what the symbol over
+// the mark on the map says (glyphs.js), and a reader who cannot see the symbol
+// — or who is reading the card and not the map — is told the same thing here;
+// without it `category` would be a field only the map could see.
+//
+// Nothing where the event has none, and nothing where the vocabulary does not
+// name it: a category id printed raw is a slug shown where a word goes.
+function categoryHtml(ctx, event) {
+  const label = ctx.categoryLabel(event.category ?? null);
+  return label ? `· <span class="category">${esc(label)}</span>` : '';
+}
+
 export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
   const { atlas } = ctx;
   const chainEdges = walkedEdges(atlas, state.chain);
@@ -389,6 +401,7 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
         <span class="when">${whenLine(ctx, event)}</span>
         ${whereHtml(ctx, event)}
         · <span class="lane">${event.region ? esc(ctx.laneLabel(event.region)) : 'no lane'}</span>
+        ${categoryHtml(ctx, event)}
         <button type="button" class="link small" data-action="year" data-year="${esc(ctx.startYear(event))}">map at ${esc(formatYear(ctx.startYear(event)))}</button>
         ${ctx.lensControl('event', event.id)}
       </p>

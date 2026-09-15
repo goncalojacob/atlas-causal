@@ -243,8 +243,12 @@ test('a state change updates the bars in place and does not rebuild them', { ski
       const svg = document.querySelector('#timeline svg.timeline');
       return {
         children: [...svg.children].map((el) => el.getAttribute('class')),
-        strays: [...svg.children].filter((el) => el.tagName !== 'g').length,
+        strays: [...svg.children].filter((el) => el.tagName !== 'g' && el.tagName !== 'defs').length,
       };`);
+    // A <defs> is not a stray: whichever view is built first puts the twelve
+    // symbols in the document, and on this page that is the map (glyphs.js).
+    // What this asserts is that nothing was appended to the root behind the
+    // layers' backs.
     assert.equal(shape.strays, 0, shape.children.join(' · '));
     assert.ok(shape.children.includes('layer layer-bars'));
   }, { device: { width: 1280, height: 900, deviceScaleFactor: 1 } });
@@ -382,4 +386,72 @@ test('a parent\'s bar is ringed under no grouping and under the region lanes', {
     assert.ok(leaf.bar, 'the leaf has a bar');
     assert.equal(leaf.ring, null, 'and nothing around it');
   }, { device: { width: 1280, height: 700, deviceScaleFactor: 1 } });
+});
+
+// --- the symbol at the left of a bar ---------------------------------------
+//
+// The same twelve symbols the map draws, by id out of the one `<defs>` the
+// document holds, and the same threshold argument: a bar shorter or thinner
+// than the glyph carries none, because a symbol drawn at three pixels is a
+// smudge and a smudge says something false about how much the atlas knows
+// (glyphs-brief, §3). The fixtures' `fixture-event-f` runs 1260–1300 and is
+// the wide bar; the categorised instants are the narrow ones.
+// Under a named grouping, where a lane is 34 px and a bar 18. Under the
+// default grouping a packed row is 22 px and a bar 8, which is below the
+// threshold on every bar there is — measured on the repository's own data as
+// well as on the fixtures, and recorded as deviation 585.
+test('a bar wide enough carries its category, and one below the threshold does not', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?fixtures=1&group=region'), READY);
+    await waitFor(page, 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;', 'the bars');
+    const seen = await page.eval(`
+      const at = (id) => {
+        const bar = document.querySelector('#timeline rect.bar[data-id="' + id + '"]')
+          ?? document.querySelector('#timeline .layer-held rect[data-id="' + id + '"]');
+        if (!bar) return null;
+        const x = Number(bar.getAttribute('x'));
+        const y = Number(bar.getAttribute('y'));
+        const w = Number(bar.getAttribute('width'));
+        const h = Number(bar.getAttribute('height'));
+        const glyph = [...document.querySelectorAll('#timeline use.glyph')].find((g) => {
+          const gy = Number(g.getAttribute('y')) + Number(g.getAttribute('height')) / 2;
+          const gx = Number(g.getAttribute('x'));
+          return Math.abs(gy - (y + h / 2)) < 0.01 && gx >= x - 1 && gx < x + w;
+        }) ?? null;
+        return { width: w, height: h, glyph: glyph && { href: glyph.getAttribute('href'), classes: glyph.getAttribute('class'), events: getComputedStyle(glyph).pointerEvents } };
+      };
+      return {
+        wide: at('fixture-event-g'),
+        narrow: at('fixture-event-c'),
+        glyphs: document.querySelectorAll('#timeline use.glyph').length,
+        symbols: document.querySelectorAll('#glyph-defs symbol').length,
+        onStacks: [...document.querySelectorAll('#timeline rect.bar.stack')].length,
+      };`);
+    assert.equal(seen.symbols, 12, 'the same twelve, from the one <defs> in the document');
+    assert.ok(seen.wide, 'the wide bar is drawn');
+    assert.ok(seen.wide.width >= 10, `wide enough to carry one (${seen.wide.width})`);
+    assert.ok(seen.wide.height >= 10, `and tall enough (${seen.wide.height})`);
+    assert.ok(seen.wide.glyph, 'and it carries it');
+    assert.equal(seen.wide.glyph.href, '#glyph-disaster');
+    assert.match(seen.wide.glyph.classes, /\bglyph\b/);
+    assert.doesNotMatch(seen.wide.glyph.classes, /\bbar\b/, 'a symbol is not a record');
+    assert.equal(seen.wide.glyph.events, 'none', 'the bar under it takes the click');
+    // And the narrow one does not: it is an instant, a few pixels wide, and a
+    // symbol drawn across it would be wider than the event it belongs to.
+    assert.ok(seen.narrow, 'the narrow bar is drawn all the same');
+    assert.ok(seen.narrow.width < 10, `below the threshold (${seen.narrow.width})`);
+    assert.equal(seen.narrow.glyph, null, 'and carries no symbol');
+    assert.equal(seen.glyphs, 1, 'one bar on the fixtures is wide enough, and it is the one');
+
+    // Under the default grouping a bar is eight pixels tall and none of them
+    // reaches the threshold, on the fixtures or on the repository's data.
+    await open(page, url('?fixtures=1'), READY);
+    await waitFor(page, 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;', 'the packed rows');
+    const packed = await page.eval(`return {
+      heights: [...new Set([...document.querySelectorAll('#timeline rect.bar[data-id]')].map((b) => Number(b.getAttribute('height'))))],
+      glyphs: document.querySelectorAll('#timeline use.glyph').length,
+    };`);
+    assert.deepEqual(packed.heights, [8], 'a packed row leaves the bar eight pixels');
+    assert.equal(packed.glyphs, 0, 'and eight is below the symbol, so none is drawn');
+  }, { device: { width: 1280, height: 900, deviceScaleFactor: 1 } });
 });

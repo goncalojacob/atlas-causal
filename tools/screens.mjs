@@ -67,6 +67,21 @@ export const SHOTS = Object.freeze([
     what: 'the world Pacific-centred, uncut at the seam' },
   { name: 'm39-map-iberia', query: '?from=1911&to=1911&bbox=-12,35,1,45', width: 1440, height: 900,
     what: 'one coastline and one border: the shore is Natural Earth\'s alone' },
+  // The glyph run. The contact sheet is a page of its own under docs/screens/
+  // and not the layer control: the control lists the categories *in use*, which
+  // is four of the twelve today, and owner question 11 is about all twelve. The
+  // page holds no copy of the symbols — it imports `src/map/glyphs.js` — so it
+  // cannot fall behind the module, and the owner can open it as well as look
+  // at the PNG.
+  { name: 'glyphs-legend', page: 'docs/screens/glyphs-legend.html', query: '', width: 1200, height: 1100,
+    what: 'the twelve symbols at three sizes, on paper and on an emphasised mark' },
+  // On the fixtures, and it has to be: of the 54 active events that carry a
+  // category today, three have a place and two of those are the same point in
+  // Lisbon, so a shot of the repository's own data would show one symbol on
+  // one mark. The fixtures carry three categories on three points apart, and
+  // the page says in its own corner that they are synthetic.
+  { name: 'glyphs-map', query: '?fixtures=1&group=region&from=1195&to=1305', width: 1280, height: 820, scale: 2,
+    what: 'the symbols over the marks and at the left of a bar, on the fixtures' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
@@ -87,10 +102,15 @@ function run(bin, args) {
   });
 }
 
-export function chromeArgs(chrome, { url, file, width, height }) {
+// `scale` is the device pixel ratio the shot is taken at, 1 unless a shot says
+// otherwise. The glyph shots ask for 2: a symbol is ten SVG units on a mark,
+// which is about fifteen screen pixels, and fifteen pixels in a PNG somebody
+// is reading at arm's length is not something they can judge line work from.
+export function chromeArgs(chrome, { url, file, width, height, scale = 1 }) {
   return [chrome, [
     '--headless', '--disable-gpu', '--no-sandbox', '--hide-scrollbars',
     `--window-size=${width},${height}`,
+    `--force-device-scale-factor=${scale}`,
     // Long enough for the spine, a geometry shard and two typefaces; the
     // browser advances its own clock, so this is not a sleep.
     '--virtual-time-budget=20000',
@@ -123,7 +143,7 @@ async function main(argv) {
       if (only && shot.name !== only) continue;
       const file = path.join(SCREENS, `${shot.name}.png`);
       const url = `http://${HOST}:${port}/${shot.page ?? ''}${shot.query}`;
-      const [bin, args] = chromeArgs(chrome, { url, file, width: shot.width, height: shot.height });
+      const [bin, args] = chromeArgs(chrome, { url, file, width: shot.width, height: shot.height, scale: shot.scale ?? 1 });
       const result = await run(bin, args);
       if (result.status !== 0) {
         console.error(`${shot.name}: chrome exited ${result.status}\n${result.stderr}`);

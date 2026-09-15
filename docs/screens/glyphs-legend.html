@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The twelve symbols — Atlas causal</title>
+  <link rel="stylesheet" href="../../src/style.css">
+  <style>
+    /* Only the sheet's own arrangement. Every colour and every size below is a
+       token of src/style.css; nothing here is a new value. */
+    body { padding: var(--space-5); background: var(--ground); color: var(--ink); }
+    h1 { font-family: var(--font); font-size: var(--text-2xl); color: var(--cobalt); font-weight: normal; margin: 0 0 var(--space-2); }
+    p { max-width: var(--measure); color: var(--ink-soft); font-size: var(--text-sm); line-height: var(--leading); }
+    .sheet { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: var(--space-4); margin-top: var(--space-5); }
+    .card { background: var(--paper); border: 1px solid var(--line); padding: var(--space-3); }
+    .card h2 { font-family: var(--font-ui); font-size: var(--text-base); font-weight: 600; margin: 0 0 var(--space-2); color: var(--ink); }
+    .card p { font-size: var(--text-xs); margin: var(--space-2) 0 0; }
+    .sizes { display: flex; align-items: flex-end; gap: var(--space-3); }
+    /* The three sizes worth judging: on the map a symbol is the mark's own
+       diameter, which is ten units; the middle one is the layer control's row;
+       the largest is only so the line work can be seen at all. */
+    .at-10 { width: 10px; height: 10px; }
+    .at-16 { width: 16px; height: 16px; }
+    .at-48 { width: 48px; height: 48px; }
+    .on-mark { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--paper); border: 1.5px solid var(--cobalt); }
+    .on-emphasis { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--madder); color: var(--paper); }
+    .glyph { color: var(--cobalt); }
+    .on-emphasis .glyph { color: var(--paper); }
+  </style>
+</head>
+<body>
+  <h1>The twelve symbols</h1>
+  <p>One per category of <code>data/categories.json</code>, drawn by
+  <code>src/map/glyphs.js</code> — this page holds no copy of them, it asks the
+  module. Each row is the same drawing at ten pixels (the size it is on a mark),
+  at the layer control's row size, and large enough to see the line work; then
+  on a plain mark and on an emphasised one, which are the two grounds it has to
+  read on.</p>
+  <p>This is the contact sheet owner question 11 reserves: which twelve shapes,
+  and which to redraw. Redrawing one is one <code>&lt;symbol&gt;</code> and no
+  test. <code>tools/screens.mjs</code> photographs this page as
+  <code>docs/screens/glyphs-legend.png</code>.</p>
+  <div class="sheet" id="sheet"></div>
+  <svg width="0" height="0" aria-hidden="true" id="defs-host"></svg>
+  <script type="module">
+    import { GLYPH_CATEGORIES, glyphId, installGlyphs } from '../../src/map/glyphs.js';
+
+    installGlyphs(document.getElementById('defs-host'));
+    const labels = new Map(
+      (await fetch('../../data/categories.json').then((r) => r.json()))
+        .map((c) => [c.id, { label: c.label, description: c.description }]),
+    );
+
+    const use = (id, cls) => {
+      const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.setAttribute('viewBox', '0 0 10 10');
+      svg.setAttribute('class', `glyph ${cls}`);
+      const el = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+      el.setAttribute('href', `#${glyphId(id)}`);
+      svg.appendChild(el);
+      return svg;
+    };
+
+    const sheet = document.getElementById('sheet');
+    for (const id of GLYPH_CATEGORIES) {
+      const said = labels.get(id) ?? { label: id, description: 'no entry in data/categories.json' };
+      const card = document.createElement('div');
+      card.className = 'card';
+      const head = document.createElement('h2');
+      head.textContent = `${said.label} · ${id}`;
+      const sizes = document.createElement('div');
+      sizes.className = 'sizes';
+      sizes.append(use(id, 'at-10'), use(id, 'at-16'), use(id, 'at-48'));
+      const mark = document.createElement('span');
+      mark.className = 'on-mark';
+      mark.appendChild(use(id, 'at-10'));
+      const emphasised = document.createElement('span');
+      emphasised.className = 'on-emphasis';
+      emphasised.appendChild(use(id, 'at-10'));
+      sizes.append(mark, emphasised);
+      const note = document.createElement('p');
+      note.textContent = said.description;
+      card.append(head, sizes, note);
+      sheet.appendChild(card);
+    }
+  </script>
+</body>
+</html>

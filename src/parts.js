@@ -34,5 +34,15 @@ export function isParent(atlas, event) {
 // ring does not take it: it is an outline and not a record, and every selector
 // that counts records has to go on counting records.
 export function ringClasses(classes, base) {
-  return ['ring', ...classes.split(' ').filter((c) => c && c !== base)].join(' ');
+  return overlayClasses('ring', classes, base);
+}
+
+// And the same substitution for anything else drawn over a record and not
+// instead of it. The glyph run wanted a second copy of the line above
+// (glyphs-brief, §2); two copies of a convention are how the ring and the
+// symbol come to disagree about what a record is wearing, so there is one —
+// `name` is what the thing is called on every view, `base` is the word it does
+// not take, and the rest is whatever the record's own mark or bar is wearing.
+export function overlayClasses(name, classes, base) {
+  return [name, ...classes.split(' ').filter((c) => c && c !== base)].join(' ');
 }

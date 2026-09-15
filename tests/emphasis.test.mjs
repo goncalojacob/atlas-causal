@@ -217,3 +217,87 @@ test('an actor with no events at all leaves the atlas whole', async () => {
   assert.equal(w.lens, null, 'no lens, so every view draws everything');
   assert.deepEqual(sorted(w.actor), [], 'and there is nothing to emphasise');
 });
+
+// --- the category filter, written once, where the lens is -------------------
+//
+// The map alone would have been three-quarters of a filter: the timeline would
+// have gone on drawing the bars and the corner would have gone on counting the
+// events the reader had just taken away (review of the map block, F6). It is
+// one removal here, and `working.shown` is what the three views draw from.
+//
+// The fixtures carry `treaty` on A, `disaster` on C and G, `war` on E and F,
+// and nothing on the other seven.
+const CATEGORY_OF = {
+  'fixture-event-a': 'treaty',
+  'fixture-event-c': 'disaster',
+  'fixture-event-e': 'war',
+  'fixture-event-f': 'war',
+  'fixture-event-g': 'disaster',
+};
+
+test('with every category on, nothing is narrowed at all', async () => {
+  const atlas = await fixtureAtlas();
+  // The bare `events` token is the default and means every category *and* the
+  // events that have none.
+  const w = workingSet(atlas, defaultState());
+  assert.equal(w.shown, null, 'no lens and no category filter is nothing to filter by');
+});
+
+test('a category token removes the events of every other category, and no uncategorised one', async () => {
+  const atlas = await fixtureAtlas();
+  const state = { ...defaultState(), layers: ['land', 'territories', 'events:war'] };
+  const w = workingSet(atlas, state);
+  assert.ok(w.shown instanceof Set);
+  for (const event of atlas.activeEvents) {
+    const category = CATEGORY_OF[event.id] ?? null;
+    const drawn = w.shown.has(event.id);
+    if (category === null) assert.equal(drawn, true, `${event.id} has no category and is removed by no token`);
+    else assert.equal(drawn, category === 'war', `${event.id} is ${category}`);
+  }
+  // Two tokens are two categories, and the uncategorised are still there.
+  const two = workingSet(atlas, { ...defaultState(), layers: ['events:war', 'events:treaty'] });
+  assert.ok(two.shown.has('fixture-event-a'));
+  assert.ok(two.shown.has('fixture-event-e'));
+  assert.ok(!two.shown.has('fixture-event-c'));
+  assert.ok(two.shown.has('fixture-event-d'), 'no category, no token, still drawn');
+});
+
+test('the category filter applies to every part of the working set, as the lens does', async () => {
+  const atlas = await fixtureAtlas();
+  // A is a treaty and B has no category: walking A → B with only `war` on
+  // takes the treaty out of the path, exactly as a lens would.
+  const w = workingSet(atlas, {
+    ...defaultState(), selected: B, chain: [A_TO_B], horizon: 3000, layers: ['events:war'],
+  });
+  assert.ok(!w.path.has(A), 'a treaty is not on the path while treaties are off');
+  for (const set of [w.selected, w.path, w.consequences, w.converging]) {
+    for (const id of set) assert.ok(w.shown.has(id), `${id} is drawn but its category is off`);
+  }
+  for (const id of w.reachable.keys()) assert.ok(w.shown.has(id), id);
+  const withActor = workingSet(atlas, {
+    ...defaultState(), actor: 'fixture-actor-one', layers: ['events:war'],
+  });
+  for (const id of withActor.actor) assert.ok(withActor.shown.has(id), id);
+});
+
+test('the lens and the categories compose, and the lens itself is not narrowed by them', async () => {
+  const atlas = await fixtureAtlas();
+  const state = { ...defaultState(), focus: 'actor:fixture-actor-one', layers: ['events:war'] };
+  const w = workingSet(atlas, state);
+  // `lens` stays the reader's own question — what the graph draws one event to
+  // a node — and `shown` is that question narrowed by the toggles.
+  assert.ok(w.lens.has(A), 'A is in the lens: it is the actor\'s own event');
+  assert.ok(!w.shown.has(A), 'and off the picture, because treaties are off');
+  for (const id of w.shown) assert.ok(w.lens.has(id), `${id} is outside the lens`);
+});
+
+test('a token naming no category narrows to the uncategorised, and does not throw', async () => {
+  const atlas = await fixtureAtlas();
+  // `state.js` checks a token's shape and never its name — which categories
+  // exist is deliberately not in that file — so a name nobody recognises gets
+  // here and is simply a category no record has.
+  const w = workingSet(atlas, { ...defaultState(), layers: ['events:not-a-category'] });
+  assert.ok(w.shown instanceof Set);
+  for (const id of Object.keys(CATEGORY_OF)) assert.ok(!w.shown.has(id), id);
+  assert.ok(w.shown.has('fixture-event-d'), 'the events with no category are still drawn');
+});

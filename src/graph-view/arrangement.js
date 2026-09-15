@@ -56,6 +56,12 @@ export function holdingKey(state) {
 // node — panning, zooming, selecting and walking all leave the key alone.
 export function arrangementKey(state, events, lanes, lens, margin = null, holding = '') {
   const focus = lens === null ? '' : (state.focus ?? '');
+  // The layer list, whole and as it stands: since the glyph run a category
+  // toggle removes events here as the lens does, and two arrangements of two
+  // different sets of categories would otherwise key the same and the second
+  // would adopt the first's layout. The whole list, because this file has no
+  // business knowing which of its names is a category.
+  const layers = (state.layers ?? []).join(',');
   const at = new Map();
   lanes.forEach((lane, index) => {
     for (const id of lane.members) at.set(id, index);
@@ -64,16 +70,21 @@ export function arrangementKey(state, events, lanes, lens, margin = null, holdin
   // set of events is then the whole of the arrangement.
   const membership = lanes.length === 0 ? '' : events.map((e) => at.get(e.id) ?? -1).join(',');
   const band = margin ? `${margin.from}:${margin.to}` : '';
-  return `${focus}|${state.group}|${lanes.map((l) => l.id).join(',')}|${membership}|${band}|${holding}`;
+  return `${focus}|${layers}|${state.group}|${lanes.map((l) => l.id).join(',')}|${membership}|${band}|${holding}`;
 }
 
 // `held` is what the reader is holding — the graph's own `alone` set, which
 // it has already had to build to draw. It is passed in rather than asked for
 // here because `workingSet` runs the convergence query and this is called on
 // every render; the view computes it once and gives it to both.
-export function arrangementOf(atlas, state, held = null) {
+// `shown` is what the view draws at all — the lens narrowed by the category
+// toggles still on, from `workingSet` (emphasis.js). Given rather than asked
+// for, like `held` and for the same reason. `null` is a caller with nothing to
+// narrow by, and then the lens alone decides, as it did before the glyph run.
+export function arrangementOf(atlas, state, held = null, shown = undefined) {
   const lens = lensSet(atlas, state);
-  const all = lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents;
+  const drawable = shown === undefined ? lens : shown;
+  const all = drawable ? atlas.activeEvents.filter((e) => drawable.has(e.id)) : atlas.activeEvents;
   const window = resolveWindow(state, atlas.extent);
   // The window and one period either side, which is what the view draws
   // (window.js) and, since H4b, all it lays out. Laying out the whole corpus

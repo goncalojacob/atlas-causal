@@ -33,6 +33,7 @@ import { readingNarrative } from '../narrative.js';
 import { createLinks, ENTRY_KINDS } from '../entry/entry.js';
 import { discussUrl, recordUrl, editUrl } from '../share.js';
 import { toggleSection, readOpenSection, sectionBodyHtml } from './sections.js';
+import { categoryLabels } from '../categories.js';
 
 // What the reader asked their browser for, in order. Read once: the cards
 // use it to choose which Wikipedia edition to offer, and a list that changed
@@ -73,6 +74,11 @@ export function createPanel(container, {
   let shown = null;
   const links = createLinks({ fixtures });
   const laneLabel = (id) => atlas.regions.find((r) => r.id === id)?.label ?? id ?? '—';
+  // What an event's category is called, out of the manifest's own vocabulary.
+  // Since the glyph run the map draws a symbol for it, and a card that did not
+  // name it would leave the category a field only the map could see.
+  const categories = categoryLabels(atlas.manifest);
+  const categoryLabel = (id) => categories.get(id) ?? null;
   const startYear = (event) => bounds(event.when.start).min;
 
   container.addEventListener('click', (e) => {
@@ -437,6 +443,7 @@ export function createPanel(container, {
   const ctx = {
     atlas,
     laneLabel,
+    categoryLabel,
     lensControl,
     lanes,
     startYear,

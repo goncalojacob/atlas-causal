@@ -27,11 +27,18 @@ import {
 import { horizonBand } from '../../horizon.js';
 import { LOADING_LABEL } from '../../attributes.js';
 import { ringClasses } from '../../parts.js';
+import { glyphClasses, glyphUse } from '../glyphs.js';
 
 // Sizes in SVG units at k = 1; every one of them is divided by k when drawn,
 // so a mark, a badge and a label keep their size on screen at any zoom.
 const MARK_RADIUS = 5;
 const SELECTED_RADIUS = 7;
+// The symbol over a categorised mark, in the same units: the mark's own
+// diameter, which is what makes it readable at all (review of the map block,
+// F14, and the brief's amendment A1 — six units was tried and struck). It is
+// never larger than the mark it belongs to, so the selected event's wider mark
+// carries the same symbol as any other.
+const GLYPH_SIZE = MARK_RADIUS * 2;
 const HIT_RADIUS = 10;
 const BADGE_SIZE = 10;
 const LABEL_SIZE = 11;
@@ -107,14 +114,21 @@ function markClasses(event, { selected, pathIds, actorIds, narrativeIds = null, 
 // ask — a test, or a pane drawing a single record.
 export function createEventsLayer(group, projection, {
   pointOf, onSelect, onCluster = null, nameOf = (event) => event.title ?? null,
-  isParent = () => false,
+  isParent = () => false, categoryLabel = () => null,
 }) {
   // What a mark says it is. "Outside the window" is the map's own word about a
   // mark it has drawn and is said whether or not the name has arrived.
+  //
+  // And the category's label after the title, so a reader who cannot see the
+  // symbol is told what it says (glyphs-brief, §2). Not while the name is
+  // still loading: "still loading — War" is the interface's own sentence with
+  // a record's word glued to the end of it, and nobody can parse that.
   const named = (event, { faded = false } = {}) => {
     const name = nameOf(event);
     if (name === null) return LOADING_LABEL;
-    return faded ? `${name} — outside the window` : name;
+    const label = categoryLabel(event.category ?? null);
+    const said = label ? `${name} — ${label}` : name;
+    return faded ? `${said} — outside the window` : said;
   };
 
   // What the last render drew, so a click on a cluster can be answered with
@@ -240,7 +254,7 @@ export function createEventsLayer(group, projection, {
       // selector naming a mark still finds marks. A cluster never gets one: a
       // cluster is a count, not a record, and the ring would be a claim about
       // whichever of the events under it happens to be on top.
-      const appendMark = (target, { x, y, radius, classes, title, id = null, cluster = null, ring = false }) => {
+      const appendMark = (target, { x, y, radius, classes, title, id = null, cluster = null, ring = false, category = null }) => {
         const data = id === null ? { 'data-cluster': cluster } : { 'data-id': id };
         target.appendChild(svg('circle', { cx: x, cy: y, r: HIT_RADIUS / k, class: 'hit', ...data }));
         const mark = svg('circle', {
@@ -248,6 +262,16 @@ export function createEventsLayer(group, projection, {
           'data-mark': '', tabindex: '0', role: 'button', 'aria-label': title,
         }, [svgTitle(title)]);
         target.appendChild(mark);
+        // And the symbol of its category over it, centred, immediately after
+        // the mark and never instead of it (m30b-brief, A2). No `data-id`, no
+        // `data-mark`, no `tabindex` and no pointer: the circle underneath is
+        // the control and takes every click and every key. An event with no
+        // category, and a cluster, get nothing — a count is not a record, and
+        // a stack of four categories has no category.
+        const glyph = category === null ? null : glyphUse(category, {
+          x, y, size: GLYPH_SIZE / k, classes: glyphClasses(classes, 'mark'),
+        });
+        if (glyph) target.appendChild(glyph);
         // The gap is the mark's own radius plus the constant, so the selected
         // event's larger mark keeps the same air around it as any other; the
         // stroke is divided by k like the label's halo, or a ring drawn a
@@ -318,9 +342,10 @@ export function createEventsLayer(group, projection, {
         const event = cluster.representative.event;
         if (cluster.count === 1) {
           appendMark(group, {
-            x: cluster.x, y: cluster.y, radius: MARK_RADIUS, title: nameOf(event) ?? LOADING_LABEL, id: event.id,
+            x: cluster.x, y: cluster.y, radius: MARK_RADIUS, title: named(event), id: event.id,
             classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable, near }),
             ring: isParent(event),
+            category: event.category ?? null,
           });
           continue;
         }
@@ -361,6 +386,7 @@ export function createEventsLayer(group, projection, {
           title: named(event, { faded }), id: event.id,
           classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable, faded, near }),
           ring: isParent(event),
+          category: event.category ?? null,
         });
         if (isSelected) selectedMark = mark;
       }
@@ -386,10 +412,13 @@ export function createEventsLayer(group, projection, {
           const x = cluster.x + positions[i].x / k;
           const y = cluster.y + positions[i].y / k;
           ring.appendChild(svg('line', { x1: cluster.x, y1: cluster.y, x2: x, y2: y, class: 'spread-leg' }));
+          // A spread's members are records again, so each takes its own symbol
+          // where the stack they came out of had none.
           appendMark(ring, {
-            x, y, radius: MARK_RADIUS, title: nameOf(member.event) ?? LOADING_LABEL, id: member.id,
+            x, y, radius: MARK_RADIUS, title: named(member.event), id: member.id,
             classes: markClasses(member.event, { selected, pathIds, actorIds, narrativeIds, reachable }),
             ring: isParent(member.event),
+            category: member.event.category ?? null,
           });
           const right = positions[i].x >= 0;
           ring.appendChild(textNode(shorten(nameOf(member.event) ?? ''), {

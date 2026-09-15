@@ -235,3 +235,50 @@ test('stepping through a narrative leaves the sheet where the reader put it', { 
     await waitFor(page, AT_REST_UP, 'the sheet to come up again');
   });
 });
+
+// A13 and the glyph brief's §4: the category toggles go inside a collapsed
+// `<details>` so the drawer keeps one 40 px target instead of thirteen. Open,
+// every row is a target of its own and carries its symbol — the control is the
+// legend and there is no other.
+test('the category toggles are one collapsed target in the drawer, and open into rows with their glyphs', { skip }, async () => {
+  await phone(async (page, url) => {
+    await open(page, url('?fixtures=1'), 'return Boolean(document.querySelector(".map .mark"));');
+    await page.eval('document.getElementById("options-button").click(); return true;');
+
+    const shut = await page.eval(`
+      const details = document.querySelector('.bar .layers details');
+      const summary = details.querySelector('summary');
+      return {
+        there: Boolean(details),
+        open: details.open,
+        summary: summary.textContent.trim(),
+        height: Math.round(summary.getBoundingClientRect().height),
+        // What the group costs the drawer while it is shut. Not the rows'
+        // own boxes: Chrome skips painting a closed details through
+        // content-visibility, and a skipped box still measures.
+        group: Math.round(details.getBoundingClientRect().height),
+      };`);
+    assert.equal(shut.there, true);
+    assert.equal(shut.open, false, 'collapsed, or the drawer is thirteen rows long');
+    assert.equal(shut.summary, 'events by category');
+    assert.ok(shut.height >= 40, `one hit target, got ${shut.height}`);
+    assert.equal(shut.group, shut.height, 'the whole group is that one row while it is shut');
+
+    const open_ = await page.eval(`
+      const details = document.querySelector('.bar .layers details');
+      details.open = true;
+      const rows = [...details.querySelectorAll('label')];
+      return {
+        rows: rows.length,
+        shortest: Math.min(...rows.map((l) => Math.round(l.getBoundingClientRect().height))),
+        glyphs: details.querySelectorAll('svg.glyph use').length,
+        hrefs: [...details.querySelectorAll('svg.glyph use')].map((u) => u.getAttribute('href')).sort(),
+        onScreen: rows.every((l) => l.getBoundingClientRect().right <= innerWidth + 1),
+      };`);
+    assert.equal(open_.rows, 3, 'one row per category in use');
+    assert.equal(open_.glyphs, 3, 'each carrying its own symbol');
+    assert.deepEqual(open_.hrefs, ['#glyph-disaster', '#glyph-treaty', '#glyph-war']);
+    assert.ok(open_.shortest >= 40, `every row is a hit target, shortest ${open_.shortest}`);
+    assert.equal(open_.onScreen, true, 'and the panel is inside the screen, not floating off it');
+  });
+});

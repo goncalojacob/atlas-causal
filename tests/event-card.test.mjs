@@ -21,6 +21,9 @@ function context(atlas) {
   return {
     atlas,
     laneLabel: (region) => region ?? '—',
+    // The vocabulary's own word for a category, as panel.js reads it off the
+    // manifest. Capitalised here so a card printing the raw id would fail.
+    categoryLabel: (id) => (id ? `${id[0].toUpperCase()}${id.slice(1)}` : null),
     lanes: () => [],
     startYear: (event) => bounds(event.when.start).min,
     eventLink: (event) => `<button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button>`,

@@ -240,6 +240,22 @@ input, select, textarea { accent-color: var(--cobalt); }
 .bar .tagline { margin: 0; color: var(--ink-soft); flex: 1; font-size: var(--text-sm); }
 .bar .layers { display: flex; gap: var(--space-3); color: var(--ink-soft); font-size: var(--text-sm); }
 .bar .layers label { display: inline-flex; align-items: center; gap: 0.3em; }
+/* The category toggles, which are the legend: there is no other. Collapsed,
+   so the phone drawer keeps one target instead of thirteen, and every row
+   carries its own symbol at the row's text size — the reader learns the
+   shapes here and nowhere else (glyphs-brief, §4). */
+.bar .layers details { position: relative; }
+.bar .layers summary { cursor: pointer; list-style: none; }
+.bar .layers summary::-webkit-details-marker { display: none; }
+.bar .layers summary::after { content: ' \25BE'; }
+.bar .layers details[open] summary::after { content: ' \25B4'; }
+.bar .layers .categories {
+  display: flex; flex-direction: column; gap: var(--space-1);
+  padding: var(--space-2); margin-top: var(--space-1);
+  background: var(--paper); border: 1px solid var(--line);
+  position: absolute; z-index: 5; min-width: 14ch;
+}
+.bar .layers .glyph { width: 1em; height: 1em; flex: 0 0 auto; color: var(--cobalt); }
 
 /* The atlas's own masthead: name, then the controls that change what is
    drawn, then the ways out. On a narrow screen the three zones stack in that
@@ -544,6 +560,12 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
   .masthead-tools .grouping, .masthead-tools .layers { display: none; }
   .masthead-tools.options-open .grouping { display: flex; flex: 1 0 100%; }
   .masthead-tools.options-open .layers:not([hidden]) { display: flex; flex: 1 0 100%; flex-wrap: wrap; }
+  /* Inside the drawer the category panel flows rather than floating: an
+     absolutely positioned panel over a sheet is a panel half off the screen.
+     The collapsed <details> is the one 40 px target the drawer keeps, and
+     opening it puts thirteen rows in the drawer's own flow. */
+  .bar .layers details { flex: 1 0 100%; }
+  .bar .layers .categories { position: static; border: 0; padding: 0; background: none; }
   .grouping-panel { width: min(30ch, calc(100vw - 2 * var(--space-4))); }
 
   /* Forty pixels, everywhere a thumb has to land on a control of its own.
@@ -552,9 +574,12 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
      sentence if it were given a height of its own. */
   .options-button, .bar .views button, .search-input,
   .panel button:not(.link), .panel .section-toggle, .panel .chips .chip,
-  .bar .layers label, .grouping-button, .grouping-lane label {
+  .bar .layers label, .bar .layers summary, .grouping-button, .grouping-lane label {
     min-height: var(--touch);
   }
+  /* The summary is the collapsed group's one target, so it is a target: a
+     20 px line with thirteen rows behind it is a thumb's worth of guesswork. */
+  .bar .layers summary { display: flex; align-items: center; }
   .bar .views button { padding-inline: var(--space-4); }
   .panel .chips .chip { display: inline-flex; align-items: center; }
   .panel .section-toggle { padding-block: var(--space-3); }
@@ -648,6 +673,15 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
 .map .mark.of-actor { fill: var(--cobalt-soft); stroke: var(--cobalt); stroke-width: 2.5; }
 .map .mark.on-path { fill: var(--madder); stroke: var(--madder); }
 .map .mark.selected { fill: var(--madder); stroke: var(--paper); stroke-width: 2; }
+/* The symbol of an event's category, over its mark and never instead of it.
+   `currentColor` in the <symbol> resolves against this <use>, which is why
+   the twelve shapes carry no colour of their own: one drawing reads cobalt on
+   the paper-filled mark it usually sits on, and paper on the three that take
+   a solid fill. Five states, existing tokens, no new hex value.
+   It takes no pointer — the circle underneath is the control — and it takes
+   its mark's emphasis and adds none of its own (glyphs.js). */
+.map .glyph { color: var(--cobalt); pointer-events: none; }
+.map .glyph.of-actor, .map .glyph.on-path, .map .glyph.selected { color: var(--paper); }
 /* A larger invisible circle behind every mark, so a click that is merely
    close still lands on it. */
 .map .hit { fill: transparent; stroke: none; cursor: pointer; }
@@ -939,6 +973,14 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .timeline .bar.of-actor { fill: var(--cobalt-soft); stroke: var(--cobalt); stroke-width: 2; }
 .timeline .bar.on-path { fill: var(--madder-faint); stroke: var(--madder); }
 .timeline .bar.selected { fill: var(--madder); stroke: var(--madder); }
+/* And at the left end of a bar, in the same rule against the bar's own fill:
+   a bar is cobalt-faint by default and cobalt-soft when it is an instant or
+   the open actor's, both of which cobalt reads on; `on-path` is madder-faint
+   and `selected` is solid madder. A bar below GLYPH_MIN_BAR carries none at
+   all (timeline.js), which is why there is no rule for a smaller one. */
+.timeline .glyph { color: var(--cobalt); pointer-events: none; }
+.timeline .glyph.on-path { color: var(--madder); }
+.timeline .glyph.selected { color: var(--paper); }
 .timeline .bar-label { fill: var(--ink); font-size: 11px; pointer-events: none; }
 .timeline .bar-label.selected { fill: var(--madder); font-weight: 600; }
 /* A stack of bars drawn as one, and a count beside it: the same idiom as the

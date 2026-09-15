@@ -7,7 +7,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { withBrowser, open, waitFor, skip } from './browser.mjs';
+import { withBrowser, open, waitFor, seenIntro, skip } from './browser.mjs';
 
 // Wide and short, so the map area is far wider than 960 × 540's ratio and
 // the picture spills well outside the nominal box on both sides.
@@ -584,8 +584,10 @@ test('a regional event is a wash over its lane, and its parts are still their ow
 test('the coastlines have no switch and are always drawn', { skip }, async () => {
   await wide(async (page, url) => {
     await open(page, url('?fixtures=1'), READY);
+    // The two plain rows, which are the whole of the control outside the
+    // collapsed <details> the categories are in (layer-control.js).
     const control = await page.eval(`
-      const boxes = [...document.querySelectorAll('.bar .layers input[data-layer]')];
+      const boxes = [...document.querySelectorAll('.bar .layers input[data-layer]:not([data-category])')];
       return {
         ids: boxes.map((b) => b.dataset.layer),
         labels: boxes.map((b) => b.closest('label').textContent.trim()),
@@ -601,11 +603,15 @@ test('the coastlines have no switch and are always drawn', { skip }, async () =>
     const after = await page.eval(`return {
       land: getComputedStyle(document.querySelector('#map .layer-land')).display,
       territories: getComputedStyle(document.querySelector('#map .layer-presences')).display,
-      checked: [...document.querySelectorAll('.bar .layers input[data-layer]')].map((b) => b.checked),
+      checked: [...document.querySelectorAll('.bar .layers input[data-layer]:not([data-category])')].map((b) => b.checked),
+      categories: [...document.querySelectorAll('.bar .layers input[data-category]')].map((b) => b.checked),
     };`);
     assert.notEqual(after.land, 'none', 'the coastlines survive an old link that dropped them');
     assert.equal(after.territories, 'none', 'and the rest of the link is obeyed');
     assert.deepEqual(after.checked, [false, true]);
+    // The bare `events` means every category, so every category box is on: a
+    // link shared before the toggles existed says the same thing it did.
+    assert.deepEqual(after.categories, [true, true, true]);
   });
 });
 
@@ -725,5 +731,274 @@ test('no event on the fixtures has parts and a place, so no mark on the map is r
     // Where that parent *is* drawn it is ringed like any other, and the two
     // views that draw every event, placed or not, say so
     // (timeline-browser.test.mjs, graph-browser.test.mjs).
+  });
+});
+
+// --- the symbol of a category, over the mark -------------------------------
+//
+// The whole of A2's bargain: the mark stays a `<circle>`, the symbol is a
+// separate `<use>` that carries no identity, and an event with no category is
+// drawn exactly as it was. None of it can be seen without a real layout and a
+// real hit test — which is the half that matters, since the failure this
+// guards against is a glyph swallowing the click that belongs to the mark.
+//
+// The fixtures carry three categorised events, three different categories, and
+// nine with none (tests/fixtures/data/categories.json).
+const GLYPHS = `
+  const marks = [...document.querySelectorAll('#map circle.mark[data-id]')];
+  const glyphs = [...document.querySelectorAll('#map use.glyph')];
+  const of = (id) => {
+    const mark = document.querySelector('#map circle.mark[data-id="' + id + '"]');
+    if (!mark) return { mark: null, glyph: null };
+    const glyph = [...document.querySelectorAll('#map use.glyph')].find((g) => {
+      const cx = Number(g.getAttribute('x')) + Number(g.getAttribute('width')) / 2;
+      const cy = Number(g.getAttribute('y')) + Number(g.getAttribute('height')) / 2;
+      return Math.abs(cx - Number(mark.getAttribute('cx'))) < 0.01
+        && Math.abs(cy - Number(mark.getAttribute('cy'))) < 0.01;
+    }) ?? null;
+    return {
+      mark: mark ? { tag: mark.tagName, classes: mark.getAttribute('class'), label: mark.getAttribute('aria-label') } : null,
+      glyph: glyph ? {
+        href: glyph.getAttribute('href'),
+        classes: glyph.getAttribute('class'),
+        id: glyph.getAttribute('data-id'),
+        markAttr: glyph.getAttribute('data-mark'),
+        tabindex: glyph.getAttribute('tabindex'),
+        events: getComputedStyle(glyph).pointerEvents,
+        colour: getComputedStyle(glyph).color,
+      } : null,
+    };
+  };
+  return {
+    marks: marks.length,
+    glyphs: glyphs.length,
+    symbols: document.querySelectorAll('#glyph-defs symbol').length,
+    // fixture-event-a is a treaty and shares its point with a2, so at the
+    // world it is inside a cluster and has no mark of its own: the cluster
+    // case, asserted below.
+    clustered: of('fixture-event-a'),
+    disaster: of('fixture-event-c'),
+    war: of('fixture-event-e'),
+    ongoing: of('fixture-event-g'),
+    none: of('fixture-event-d'),
+  };`;
+
+test('a categorised mark keeps its circle and gains a symbol, and one with no category does not', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url('?fixtures=1'), READY);
+    await settledShards(page);
+    const seen = await page.eval(GLYPHS);
+    assert.equal(seen.symbols, 12, 'the twelve symbols are in the document once');
+    assert.ok(seen.marks >= 4, `the marks are drawn (${seen.marks})`);
+
+    for (const [category, row] of [['disaster', seen.disaster], ['war', seen.war], ['disaster', seen.ongoing]]) {
+      assert.equal(row.mark.tag, 'circle', `${category}: the mark is still a circle`);
+      assert.ok(row.glyph, `${category}: and carries its symbol`);
+      assert.equal(row.glyph.href, `#glyph-${category}`);
+      // Never a control. Every browser test that names circle.mark, circle.hit
+      // or circle[data-mark] goes on finding exactly the marks (m30b A2).
+      assert.equal(row.glyph.id, null, `${category}: a glyph names no record`);
+      assert.equal(row.glyph.markAttr, null);
+      assert.equal(row.glyph.tabindex, null);
+      assert.equal(row.glyph.events, 'none', `${category}: the mark under it takes the click`);
+      assert.match(row.glyph.classes, /\bglyph\b/);
+      assert.doesNotMatch(row.glyph.classes, /\bmark\b/, 'a symbol is not a record');
+    }
+
+    // An event with no category keeps the plain circle it has today.
+    assert.equal(seen.none.mark.tag, 'circle');
+    assert.equal(seen.none.glyph, null, 'no category, no symbol');
+    // A categorised event swallowed by a cluster carries none either: a count
+    // is not a record, and a stack of four categories has no category.
+    assert.equal(seen.clustered.mark, null, 'the treaty is inside a cluster at the world');
+    assert.equal(seen.glyphs, 3, 'three categorised marks of their own, three symbols');
+
+    // And the accessible name says what the symbol says, for a reader who
+    // cannot see it.
+    assert.match(seen.war.mark.label, / — War$/);
+    assert.doesNotMatch(seen.none.mark.label, / — /);
+  });
+});
+
+test('a click at the exact centre of a glyph selects the mark under it', { skip }, async () => {
+  // A reader who has been here before: the introduction covers the view on a
+  // first visit, and what is under test is which element the pointer finds.
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url('?fixtures=1'), READY);
+    await settledShards(page);
+    // The centre of the symbol in client coordinates, then whatever the
+    // document says is at that point: if it is the `<use>`, the glyph has
+    // taken a click that belongs to the mark.
+    const hit = await page.eval(`
+      const mark = document.querySelector('#map circle.mark[data-id="fixture-event-e"]');
+      const box = mark.getBoundingClientRect();
+      const x = Math.round(box.left + box.width / 2);
+      const y = Math.round(box.top + box.height / 2);
+      const el = document.elementFromPoint(x, y);
+      el.dispatchEvent(new MouseEvent('click', { bubbles: true, clientX: x, clientY: y }));
+      return { tag: el.tagName, classes: el.getAttribute('class'), id: el.getAttribute('data-id') };`);
+    assert.notEqual(hit.tag, 'use', 'the symbol is not what the pointer finds');
+    assert.equal(hit.id, 'fixture-event-e');
+    await waitFor(
+      page,
+      'return new URLSearchParams(location.search).get("selected") === "fixture-event-e";',
+      'the mark under the symbol to be selected',
+    );
+  }, { device: WIDE });
+});
+
+test('walking the chain reddens a glyph with its mark', { skip }, async () => {
+  await wide(async (page, url) => {
+    // `fixture-event-e` is a war with a point of its own; `fixture-event-g` is
+    // a disaster somewhere else, and stays plain.
+    await open(page, url('?fixtures=1&selected=fixture-event-e'), READY);
+    await settledShards(page);
+    const drawn = await page.eval(`
+      const mark = document.querySelector('#map circle.mark[data-id="fixture-event-e"]');
+      const glyph = document.querySelector('#map use.glyph[href="#glyph-war"]');
+      return {
+        mark: mark.getAttribute('class'),
+        glyph: glyph.getAttribute('class'),
+        colour: getComputedStyle(glyph).color,
+        plain: getComputedStyle(document.querySelector('#map use.glyph[href="#glyph-disaster"]')).color,
+      };`);
+    // The same classes but for the view's own word for a record — which is
+    // exactly what ringClasses does for a parent's ring (parts.js).
+    assert.match(drawn.mark, /\bselected\b/);
+    assert.equal(drawn.glyph, drawn.mark.split(' ').filter((c) => c !== 'mark').join(' ').replace(/^/, 'glyph '));
+    // And it is drawn in paper over the solid madder fill, where a mark that
+    // is not emphasised carries a cobalt symbol on white.
+    assert.notEqual(drawn.colour, drawn.plain, 'the symbol answers the fill of its own mark');
+  });
+});
+
+test('a cluster has a badge and no glyph, and spreading it gives each member its own', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    // Zoomed all the way out the fixture marks in the Atlantic merge; a count
+    // is not a record and a stack of three categories has no category.
+    await open(page, url('?fixtures=1'), READY);
+    await settledShards(page);
+    const out = await page.eval(`return {
+      clusters: document.querySelectorAll('#map circle.mark.cluster').length,
+      onClusters: [...document.querySelectorAll('#map circle.mark.cluster')].some((c) => {
+        const cx = Number(c.getAttribute('cx'));
+        const cy = Number(c.getAttribute('cy'));
+        return [...document.querySelectorAll('#map use.glyph')].some((g) => {
+          const gx = Number(g.getAttribute('x')) + Number(g.getAttribute('width')) / 2;
+          const gy = Number(g.getAttribute('y')) + Number(g.getAttribute('height')) / 2;
+          return Math.abs(gx - cx) < 0.01 && Math.abs(gy - cy) < 0.01;
+        });
+      }),
+    };`);
+    if (out.clusters > 0) {
+      assert.equal(out.onClusters, false, 'a count is not a record and takes no symbol');
+    }
+  }, { device: { width: 700, height: 520, deviceScaleFactor: 1 } });
+});
+
+// --- the category toggles, which are the legend -----------------------------
+//
+// §1's whole reason for moving `category` into the core: a toggle that hides
+// marks has to hide them on the frame the reader clicks it. An attribute
+// column arrives with its century, so the reader would see nothing happen and
+// then, a moment later, marks disappear — the toggle lying about what it did.
+// The assertion is therefore "no request went out in between", and it cannot
+// be made anywhere but in a real browser.
+test('turning a category off removes its marks on the same frame, and leaves the uncategorised drawn', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url('?fixtures=1'), READY);
+    await settledShards(page);
+    const before = await page.eval(`return {
+      rows: document.querySelectorAll('.bar .layers .categories label').length,
+      glyphs: document.querySelectorAll('#map use.glyph').length,
+      marks: document.querySelectorAll('#map circle.mark[data-id]').length,
+      war: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-e"]')),
+      none: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-d"]')),
+      requests: performance.getEntriesByType('resource').length,
+    };`);
+    assert.equal(before.rows, 3, 'one row per category in use, and no row for the other nine');
+    assert.equal(before.war, true);
+    assert.equal(before.none, true);
+
+    // The click and the reading are one script: whatever the page did between
+    // them, it did synchronously.
+    const after = await page.eval(`
+      const box = document.querySelector('.bar .layers input[data-category="war"]');
+      box.checked = false;
+      box.dispatchEvent(new Event('change', { bubbles: true }));
+      return {
+        war: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-e"]')),
+        disaster: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-c"]')),
+        none: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-d"]')),
+        glyphs: document.querySelectorAll('#map use.glyph').length,
+        requests: performance.getEntriesByType('resource').length,
+      };`);
+    assert.equal(after.war, false, 'the war is gone on the frame the box was clicked');
+    assert.equal(after.requests, before.requests, 'and nothing was fetched to do it');
+    assert.equal(after.disaster, true, 'the other categories stay');
+    assert.equal(after.none, true, 'and so do the events that have no category at all');
+    assert.equal(after.glyphs, before.glyphs - 1);
+    // What the reader did is in the link: the bare `events` is replaced by one
+    // token per category still on (M30b, A11). The address bar is written on
+    // the next animation frame, not in the click (state.js), which is the one
+    // thing here that is not on the same frame — and it is not the picture.
+    await waitFor(
+      page,
+      'return (new URLSearchParams(location.search).get("layers") ?? "").includes("events:");',
+      'the layers to reach the link',
+    );
+    const layers = await page.eval('return new URLSearchParams(location.search).get("layers");');
+    assert.match(layers, /events:disaster/);
+    assert.match(layers, /events:treaty/);
+    assert.doesNotMatch(layers, /events:war/);
+  });
+});
+
+test('?layers=events:war opens on the wars, the uncategorised, and nothing else categorised', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url('?fixtures=1&layers=land,territories,events:war'), READY);
+    await settledShards(page);
+    const seen = await page.eval(`return {
+      war: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-e"]')),
+      treaty: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-a"]')),
+      disaster: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-c"]')),
+      none: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-d"]')),
+      glyphs: document.querySelectorAll('#map use.glyph').length,
+      // The timeline narrows with it, from the same answer (emphasis.js).
+      bars: document.querySelectorAll('#timeline rect.bar[data-id]').length,
+      warBar: Boolean(document.querySelector('#timeline rect.bar[data-id="fixture-event-e"]')),
+      treatyBar: Boolean(document.querySelector('#timeline rect.bar[data-id="fixture-event-a"]')),
+      boxes: [...document.querySelectorAll('.bar .layers input[data-category]')]
+        .map((b) => [b.dataset.category, b.checked]),
+      events: document.querySelector('.bar .layers input[data-layer="events"]').checked,
+    };`);
+    assert.equal(seen.war, true);
+    assert.equal(seen.treaty, false, 'a category not named is off');
+    assert.equal(seen.disaster, false);
+    assert.equal(seen.none, true, 'and the events with no category are still drawn');
+    assert.equal(seen.glyphs, 1, 'one categorised mark, one symbol');
+    assert.equal(seen.warBar, true, 'the timeline draws the same answer');
+    assert.equal(seen.treatyBar, false);
+    // The control says what the link says, and the events row is still on:
+    // under A11 the bare token is gone while any `events:<id>` stands.
+    assert.deepEqual(seen.boxes.sort(), [['disaster', false], ['treaty', false], ['war', true]]);
+    assert.equal(seen.events, true);
+
+    // And the link round-trips: turning the war back on writes the bare token
+    // again, which is what "every category" is called.
+    await page.eval(`
+      for (const b of document.querySelectorAll('.bar .layers input[data-category]')) {
+        if (!b.checked) { b.checked = true; b.dispatchEvent(new Event('change', { bubbles: true })); }
+      }
+      return true;`);
+    await waitFor(
+      page,
+      'return !(new URLSearchParams(location.search).get("layers") ?? "").includes("events:");',
+      'the bare token to come back',
+    );
+    const back = await page.eval('return new URLSearchParams(location.search).get("layers");');
+    assert.doesNotMatch(back ?? '', /events:/);
+    assert.match(back ?? '', /\bevents\b/);
   });
 });

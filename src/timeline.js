@@ -35,6 +35,7 @@ import { walkOrSelect } from './chain.js';
 import { lanesFor, rowLanes, laneOf, barBox, LANE_CAP } from './lanes.js';
 import { largeEventsIn, bracketsIn } from './large.js';
 import { isParent, ringClasses } from './parts.js';
+import { GLYPH_BOX, glyphAttributes, glyphClasses, hasGlyph, installGlyphs } from './map/glyphs.js';
 import { eventsInView } from './util/viewport.js';
 import { densityPath } from './density.js';
 
@@ -98,6 +99,18 @@ const BADGE_SIZE = 10;
 const BAR_ROUND = 3;
 const RING_GAP = 2;
 const RING_WIDTH = 0.8;
+// The bar that is big enough to carry its category's symbol, on either side:
+// the symbol's own size, which is what "shorter or thinner than the glyph"
+// means (glyphs-brief, §3). Below it the bar gets none — a symbol drawn at
+// three pixels is a smudge, and a smudge says something false about how much
+// the atlas knows — and it is never shrunk to fit, because twelve line
+// drawings are not tellable apart below ten (review of the map block, F14).
+//
+// **Under the default grouping no bar reaches it**: a packed row is 22 px and
+// `barHeight` is 8, so the symbols are a named grouping's (deviation 585).
+// Making the bar taller is a change to the timeline's own look and is the
+// owner's to ask for.
+const GLYPH_MIN_BAR = GLYPH_BOX;
 // The stub an event past the margin is drawn as: a tick on the floor of its
 // lane, faded, with no title and no click. It is not a bar — it says the
 // dataset carries on past what the reader is looking at, and nothing else
@@ -162,11 +175,15 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   const layers = {};
   for (const name of [
     'lanes', 'laneLabels', 'bands', 'bandLabels', 'ticks', 'tickLabels', 'band', 'strips',
-    'brackets', 'bars', 'badges', 'held', 'heldLabels', 'handles', 'handleLabels',
+    'brackets', 'bars', 'badges', 'glyphs', 'held', 'heldGlyphs', 'heldLabels', 'handles', 'handleLabels',
   ]) {
     layers[name] = svg('g', { class: `layer layer-${name}` });
     root.appendChild(layers[name]);
   }
+  // The twelve symbols, if the map has not already put them in the document:
+  // whichever view is built first owns the `<defs>` and both draw from it by
+  // id, so a page with a timeline and no map still has its glyphs (glyphs.js).
+  installGlyphs(root);
 
   // What the last render drew, so a click on a stack can be answered with the
   // cluster itself rather than an id the caller would have to look up.
@@ -418,7 +435,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
   const barHeight = () => Math.max(8, laneHeight - 16);
   const barTop = (i) => AXIS_HEIGHT + i * laneHeight + (laneHeight - barHeight()) / 2;
 
-  function laneBars(bars, badges, lane, i, events, s, window, actorIds, narrativeIds, pathIds, reachable, lensNear) {
+  function laneBars(bars, badges, glyphs, lane, i, events, s, window, actorIds, narrativeIds, pathIds, reachable, lensNear) {
     const y = barTop(i);
     const height_ = barHeight();
     // barBox is lanes.js's, and it is the geometry the packing itself used:
@@ -486,6 +503,10 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       // and not a record, and the ring would be a claim about whichever of the
       // bars under it happens to be on top.
       if (!count && isParent(atlas, item.event)) ring(item, { classes, y, height: height_ });
+      // And the symbol of its category at the left end of the bar, vertically
+      // centred. A stack gets none, as a cluster on the map gets none: a count
+      // is not a record, and a stack of three categories has no category.
+      if (!count) glyph(glyphs, item, { classes, y, height: height_ });
       if (count) {
         badges.take('text', {
           x: item.x + item.width + 3, y: y + height_ / 2, class: `cluster-count ${item.inside ? '' : 'faded'}`.trim(),
@@ -493,6 +514,22 @@ export function createTimeline(container, { atlas, state, createScale = createLi
         }, { text: `+${count}` });
       }
       return el;
+    };
+
+    // The symbol over a bar, through its own pool: `reuse` hands the next
+    // child of a layer back, and a layer that alternated <rect> and <use>
+    // would swap one for the other on every render and keep nothing. Not a
+    // control either — the bar underneath takes the click and the keys.
+    //
+    // A bar below the threshold carries none. `x` is the left end plus half
+    // the symbol, because `glyphAttributes` takes the centre.
+    const glyph = (into, item, { classes, y: top, height: tall }) => {
+      if (!hasGlyph(item.event.category)) return;
+      if (tall < GLYPH_MIN_BAR || item.width < GLYPH_MIN_BAR) return;
+      into.take('use', glyphAttributes(item.event.category, {
+        x: item.x + GLYPH_BOX / 2 + 1, y: top + tall / 2, size: GLYPH_BOX,
+        classes: glyphClasses(classes, 'bar'),
+      }));
     };
 
     // Not a control: no id, no title, no focus. What an event's parts are is
@@ -576,8 +613,11 @@ export function createTimeline(container, { atlas, state, createScale = createLi
     // (emphasis.js). The lens removes rather than dims: an event outside it
     // is not drawn faded, it is not drawn (lens.js).
     const working = workingSet(atlas, s);
-    const lens = working.lens;
-    const inLens = lens ? atlas.activeEvents.filter((e) => lens.has(e.id)) : atlas.activeEvents;
+    // The lens and the category toggles together, from the one place both are
+    // applied (emphasis.js): a category the reader turned off on the map is
+    // not a bar here either.
+    const drawable = working.shown;
+    const inLens = drawable ? atlas.activeEvents.filter((e) => drawable.has(e.id)) : atlas.activeEvents;
     const pathIds = new Set([...working.path, ...working.selected]);
     // And then the map's viewport, which composes with the lens rather than
     // replacing it: the lens says which events exist, the box says which of
@@ -661,9 +701,9 @@ export function createTimeline(container, { atlas, state, createScale = createLi
       // appears and takes the drawing past what fits, the cap comes down by
       // one and the lanes are made again.
       const cap = fits(MIN_LANE_HEIGHT, LANE_CAP);
-      lanes = lanesFor(s.group, atlas, window, lens, s.lanes, { cap });
+      lanes = lanesFor(s.group, atlas, window, drawable, s.lanes, { cap });
       if (room > 0 && lanes.length > fits(MIN_LANE_HEIGHT, lanes.length) && cap > 1) {
-        lanes = lanesFor(s.group, atlas, window, lens, s.lanes, { cap: cap - 1 });
+        lanes = lanesFor(s.group, atlas, window, drawable, s.lanes, { cap: cap - 1 });
       }
       natural = LANE_HEIGHT;
       minimum = MIN_LANE_HEIGHT;
@@ -772,7 +812,7 @@ export function createTimeline(container, { atlas, state, createScale = createLi
 
     const deferred = [];
     lanes.forEach((lane, i) => {
-      for (const item of laneBars(into.bars, into.badges, lane, i, byLane.get(lane.id), s, window, actorIds, narrativeIds, pathIds, reachable, working.lensNear)) {
+      for (const item of laneBars(into.bars, into.badges, into.glyphs, lane, i, byLane.get(lane.id), s, window, actorIds, narrativeIds, pathIds, reachable, working.lensNear)) {
         deferred.push({ item, i });
       }
     });
@@ -804,6 +844,16 @@ export function createTimeline(container, { atlas, state, createScale = createLi
           rx: BAR_ROUND + RING_GAP, class: ringClasses(classes, 'bar'),
           'stroke-width': RING_WIDTH,
         });
+      }
+      // The symbol too, for the same reason and through its own pool: a bar
+      // the reader is holding sits above its neighbours and so does what is
+      // drawn on it.
+      if (hasGlyph(item.event.category)
+        && barHeight() >= GLYPH_MIN_BAR && item.width >= GLYPH_MIN_BAR) {
+        into.heldGlyphs.take('use', glyphAttributes(item.event.category, {
+          x: item.x + GLYPH_BOX / 2 + 1, y: y + barHeight() / 2, size: GLYPH_BOX,
+          classes: glyphClasses(classes, 'bar'),
+        }));
       }
       if (item.selected || item.onPath) {
         into.heldLabels.take('text', {

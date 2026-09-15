@@ -311,7 +311,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   }
 
   function arrange(s) {
-    const { events, lanes, key } = arrangementOf(atlas, s, alonesOf(s));
+    const { events, lanes, key } = arrangementOf(atlas, s, alonesOf(s), workingOf(s).shown);
     if (key === arrangedFor) return false;
     arrangedFor = key;
     const cached = arrangements.get(key);

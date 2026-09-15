@@ -19,6 +19,9 @@ function context(atlas) {
     partOfHtml: () => '',
     eventLink: (event) => `<button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button>`,
     laneLabel: (region) => atlas.regions.find((r) => r.id === region)?.label ?? region ?? '—',
+    // The vocabulary's own word for a category, as panel.js reads it off the
+    // manifest: the card names what the symbol on the map says (glyphs.js).
+    categoryLabel: (id) => (id ? `${id[0].toUpperCase()}${id.slice(1)}` : null),
     lensControl: () => '',
     lanes: () => [],
     startYear: (event) => event.when.start,

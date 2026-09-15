@@ -30,6 +30,7 @@ import { convergence } from './graph.js';
 import { horizonSet, SHOWN } from './horizon.js';
 import { narrativeSet } from './narrative.js';
 import { lensView } from './lens.js';
+import { categoriesOn } from './categories.js';
 
 // The eight sets, and what each one is:
 //
@@ -48,6 +49,10 @@ import { lensView } from './lens.js';
 //                 direct neighbours — or null when there is no lens
 //   lensNear      the neighbours alone, which are the ones drawn dimmed
 //   lensFocus     the focus set alone, or null when there is no lens
+//   shown         what a view draws at all: the lens narrowed by the category
+//                 toggles still on, or null when neither narrows anything.
+//                 The three views filter their event list by this and not by
+//                 `lens`, which stays the reader's own question
 //
 // `held` is the union of the first six plus the narrative's walk — everything
 // the reader is holding, which is the set a cluster may never swallow and the
@@ -80,7 +85,31 @@ export function workingSet(atlas, state) {
 function assemble(atlas, state) {
   const view = lensView(atlas, state);
   const lens = view?.shown ?? null;
-  const kept = (id) => !lens || lens.has(id);
+  // The category filter, applied exactly where the lens is and nowhere else
+  // (review of the map block, F6). A toggle that narrowed the map alone would
+  // leave the timeline drawing the bars and the corner counting the events it
+  // had just taken away; written here, the three views and the count narrow
+  // together, and every set below is already filtered by it.
+  //
+  // An event with no category is removed by no category token: the bare
+  // `events` means every category *and* the events that have none, and turning
+  // one category off says nothing about a record that has none (M30b, A11;
+  // glyphs-brief, §4).
+  const categories = categoriesOn(state.layers);
+  const inCategory = (id) => {
+    if (!categories) return true;
+    const category = atlas.events.get(id)?.category;
+    return typeof category !== 'string' || categories.has(category);
+  };
+  // What a view draws at all: the lens's own set, narrowed by the categories
+  // still on. `lens` itself stays what it was — a lens is a question the reader
+  // asked about a neighbourhood, and the graph draws what it kept one event to
+  // a node (heldSet, `lens: true`), which a category filter over the whole
+  // corpus is not.
+  const shown = lens === null
+    ? (categories ? new Set([...atlas.events.keys()].filter(inCategory)) : null)
+    : new Set([...lens].filter(inCategory));
+  const kept = (id) => !shown || shown.has(id);
   const filter = (ids) => new Set([...ids].filter(kept));
 
   const walked = chainEdges(atlas, state.chain ?? [])
@@ -125,8 +154,11 @@ function assemble(atlas, state) {
     converging,
     actor,
     narrative,
-    reachable: lens ? new Map([...reachable].filter(([id]) => lens.has(id))) : reachable,
+    reachable: shown ? new Map([...reachable].filter(([id]) => shown.has(id))) : reachable,
     lens,
+    // What each view filters its event list by: the lens and the categories
+    // together, or null when neither narrows anything.
+    shown,
     // The half of the lens that is drawn faintly: the direct causes and
     // consequences of the focus set, which are in the picture so that a
     // neighbourhood does not look like an atlas in which nothing else
