@@ -5,7 +5,7 @@
 // candidatos de qualquer origem na mesma forma e devolve os que ficam.
 //
 //   placeLabels(candidatos, { k, view, limits })
-//   candidato: { id, text, x, y, priority, weight }
+//   candidato: { id, text, x, y, priority, weight, em?, once? }
 //   → [{ id, text, x, y, priority, box }] pela ordem de desenho
 //
 // **A ordem é determinada e não negociada**: prioridade a subir, depois peso a
@@ -79,6 +79,16 @@ export function shorten(text, chars = LABEL_CHARS) {
   return `${space >= Math.floor((chars - 1) / 2) ? cut.slice(0, space).trimEnd() : cut}…`;
 }
 
+// Quanto do tamanho da letra ocupa um carácter, em média. `EM` é o número que
+// a camada dos acontecimentos usava e continua a ser o que a caixa assume;
+// `EM_TRACKED` é o mesmo mais o `--tracking-label` que separa as letras de um
+// acidente físico no `style.css` (0.08em), porque uma etiqueta espaçada ocupa
+// mesmo mais chão e uma caixa que o ignorasse deixava dois nomes montados um no
+// outro. Está aqui em número e lá em token porque a caixa é feita sem DOM: é
+// uma estimativa da folha de estilo e não uma segunda folha de estilo.
+export const EM = 0.55;
+export const EM_TRACKED = EM + 0.08;
+
 // A caixa que uma etiqueta ocupa, aproximada. É a da camada dos
 // acontecimentos, movida sem mudar um número: um em é cerca de metade do
 // tamanho da letra, e a caixa só tem de ser boa o suficiente para manter duas
@@ -86,10 +96,11 @@ export function shorten(text, chars = LABEL_CHARS) {
 // que é precisamente o que este ficheiro não faz.
 //
 // `x` é a âncora — onde o texto começa — e `y` a linha de base do que nomeia.
-export function labelBox(text, x, y, k) {
+// `em` é quanto ocupa um carácter e só não é `EM` para quem escreve espaçado.
+export function labelBox(text, x, y, k, em = EM) {
   return {
     x0: x,
-    x1: x + (text.length * LABEL_SIZE * 0.55) / k,
+    x1: x + (text.length * LABEL_SIZE * em) / k,
     y0: y - (LABEL_SIZE * 0.7) / k,
     y1: y + (LABEL_SIZE * 0.7) / k,
   };
@@ -128,15 +139,24 @@ export function placeLabels(candidates, { k = 1, view = null, limits = LIMITS } 
   // Por prioridade e não no total: é isto que faz com que cem cidades nunca
   // possam empurrar um acontecimento para fora do mapa.
   const used = new Map();
+  // Um nome dito uma vez não é dito outra. Um candidato pode trazer uma chave
+  // `once`, e o segundo que a traga é saltado: o Tejo chega em sete troços com
+  // `id` diferentes e o Danúbio em três, porque é assim que Natural Earth corta
+  // um rio, e escrever "Tejo" duas vezes no mesmo ecrã é dizer que são dois
+  // rios. Contado só quando a etiqueta é mesmo colocada — se a primeira perde a
+  // caixa, a seguinte ainda pode dizer o nome.
+  const said = new Set();
   for (const candidate of wanted) {
     const priority = candidate.priority ?? 0;
     const limit = limits?.[priority] ?? 0;
     const spent = used.get(priority) ?? 0;
     if (spent >= limit) continue;
-    const box = labelBox(candidate.text, candidate.x, candidate.y, k);
+    if (candidate.once && said.has(candidate.once)) continue;
+    const box = labelBox(candidate.text, candidate.x, candidate.y, k, candidate.em ?? EM);
     if (boxes.some((other) => hits(box, other))) continue;
     boxes.push(box);
     used.set(priority, spent + 1);
+    if (candidate.once) said.add(candidate.once);
     placed.push({ id: candidate.id, text: candidate.text, x: candidate.x, y: candidate.y, priority, box });
   }
   return placed;

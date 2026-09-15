@@ -39,6 +39,9 @@ import { cellsFor } from '../grid.js';
 // O corte de um nome comprido é o mesmo para todas as etiquetas do mapa, e
 // vive com o colocador (labels.js).
 import { shorten } from '../labels.js';
+// Como se chama uma coisa, e em que ano: o nome datado que o registo de lugar
+// traz e a linha de todos os nomes que o rato faz aparecer (names.js).
+import { faceName, titleLine } from '../names.js';
 
 // O diâmetro de um ponto, em unidades da página, antes de ser dividido pelo
 // zoom. As duas camadas de pontos são desenhadas aos tamanhos que a tabela do
@@ -95,28 +98,119 @@ const zlOf = (feature) => {
   return typeof zl === 'number' ? zl : null;
 };
 
-// **Na cara do mapa vai um nome; o resto vai no título** (desvio 528). Vinte e
-// quatro cidades com dois nomes cada é um mapa que não se lê, por isso o que
-// fica por baixo do rato é uma linha só com todos os nomes que a feature tem:
-// o nome moderno, o nome inglês onde é outro, e — quando M38b os ligar — os
-// nomes datados com os seus anos. Separados por um ponto médio, porque uma
-// entrada datada já traz uma vírgula lá dentro ("Lourenço Marques, 1895–1976")
-// e vírgulas a separar vírgulas não se lêem.
-//
-// Pura, e nada aqui é inventado: só sai o que a feature traz. Vai para o DOM
-// por `textContent` e não por concatenação, por isso não passa por `esc()` —
-// é a razão por que `svgTitle` existe (util/dom.js).
-export const TITLE_SEPARATOR = ' · ';
+// A altura de um pico, em metros, onde a fonte a dá. É o peso de um pico entre
+// os outros acidentes físicos (`labelCandidates` abaixo) e mais nada.
+const elevationOf = (feature) => {
+  const value = feature?.elevation ?? feature?.properties?.elevation;
+  return typeof value === 'number' ? value : null;
+};
 
-export function labelTitle(feature) {
-  const name = nameOf(feature);
-  if (name === null) return null;
-  const nameEn = nameEnOf(feature);
-  return [name, ...(nameEn ? [nameEn] : [])].join(TITLE_SEPARATOR);
-}
+// A `id` do registo de lugar que esta cidade é, onde o importador a escreveu.
+// Quem é quem continua a ser dados e não código: a correspondência é feita em
+// `data/imports/naturalearth-places.json` por uma pessoa ou pelo `wikidata`, e
+// nunca adivinhada aqui (emenda A3 — a `id` vem na própria feature, e o
+// navegador nunca vai buscar nada a `data/imports/`).
+const placeIdOf = (feature) => {
+  const id = feature?.place ?? feature?.properties?.place;
+  return typeof id === 'string' && id !== '' ? id : null;
+};
 
 const linesOf = (geometry) => (geometry?.type === 'LineString' ? [geometry.coordinates]
   : geometry?.type === 'MultiLineString' ? geometry.coordinates : []);
+
+// --- onde se escreve o nome de um acidente físico ---------------------------
+//
+// Um ponto é a sua própria âncora, mas um rio é uma linha e uma região física é
+// um polígono, e um nome tem de ficar **sobre a coisa que nomeia**. Por isso
+// cada geometria dá o seu próprio ponto de etiqueta: o meio do percurso mais
+// longo para uma linha, o centróide do maior anel para um polígono.
+//
+// É uma estimativa e assume-se: o centróide de uma região em forma de arco cai
+// fora dela. O que a regra garante é que o nome não anda — o mesmo ficheiro dá
+// sempre o mesmo ponto — e que não é o centro da caixa envolvente, que para um
+// rio que corre na diagonal é um sítio onde o rio não passa.
+
+const span = (a, b) => Math.hypot(b[0] - a[0], b[1] - a[1]);
+
+// O vértice a meio do percurso mais longo. Um vértice e não um ponto
+// interpolado: o nome fica onde a linha realmente passa, e um rio desenhado com
+// dois vértices é o seu segundo.
+function midpointOfLines(lines) {
+  let longest = null;
+  let longestLength = -1;
+  for (const line of lines) {
+    if (!Array.isArray(line) || line.length < 2) continue;
+    let length = 0;
+    for (let i = 1; i < line.length; i += 1) length += span(line[i - 1], line[i]);
+    if (length > longestLength) { longestLength = length; longest = line; }
+  }
+  if (longest === null) return null;
+  let walked = 0;
+  for (let i = 1; i < longest.length; i += 1) {
+    walked += span(longest[i - 1], longest[i]);
+    if (walked >= longestLength / 2) return [longest[i][0], longest[i][1]];
+  }
+  return [longest[0][0], longest[0][1]];
+}
+
+// O centróide de um anel, pela fórmula da área com sinal. Nulo quando a área é
+// zero — um anel degenerado, três pontos em linha — e então quem chama cai para
+// o centro da caixa, que é o melhor que resta.
+function ringCentroid(ring) {
+  if (!Array.isArray(ring) || ring.length < 3) return null;
+  let twiceArea = 0;
+  let x = 0;
+  let y = 0;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i, i += 1) {
+    const cross = ring[j][0] * ring[i][1] - ring[i][0] * ring[j][1];
+    twiceArea += cross;
+    x += (ring[j][0] + ring[i][0]) * cross;
+    y += (ring[j][1] + ring[i][1]) * cross;
+  }
+  if (twiceArea === 0) return null;
+  return [x / (3 * twiceArea), y / (3 * twiceArea)];
+}
+
+const ringArea = (ring) => {
+  let twiceArea = 0;
+  for (let i = 0, j = (ring?.length ?? 0) - 1; i < (ring?.length ?? 0); j = i, i += 1) {
+    twiceArea += ring[j][0] * ring[i][1] - ring[i][0] * ring[j][1];
+  }
+  return Math.abs(twiceArea) / 2;
+};
+
+// O maior polígono de um multi-polígono, pelo seu anel de fora: um lago com uma
+// ilha lá dentro é nomeado no lago e não na ilha, e um arquipélago é nomeado na
+// ilha maior.
+function largestRing(coordinates, multi) {
+  if (!multi) return coordinates?.[0] ?? null;
+  let best = null;
+  let bestArea = -1;
+  for (const polygon of coordinates ?? []) {
+    const ring = polygon?.[0];
+    if (!Array.isArray(ring)) continue;
+    const area = ringArea(ring);
+    if (area > bestArea) { bestArea = area; best = ring; }
+  }
+  return best;
+}
+
+export function labelPointOf(feature) {
+  if (typeof feature?.lon === 'number' && typeof feature?.lat === 'number') {
+    return [feature.lon, feature.lat];
+  }
+  const geometry = feature?.geometry;
+  const type = geometry?.type;
+  if (type === 'LineString' || type === 'MultiLineString') return midpointOfLines(linesOf(geometry));
+  if (type === 'Polygon' || type === 'MultiPolygon') {
+    const ring = largestRing(geometry.coordinates, type === 'MultiPolygon');
+    const centroid = ring ? ringCentroid(ring) : null;
+    if (centroid) return centroid;
+    const box = bboxOf(feature);
+    return box ? [(box[0] + box[2]) / 2, (box[1] + box[3]) / 2] : null;
+  }
+  return null;
+}
 
 // A caixa de uma feature, percorrendo as coordenadas sejam quantos níveis
 // forem. Um ponto é a sua própria caixa.
@@ -177,6 +271,8 @@ export function createBaseLayer(group, projection, {
   // está no ecrã: é a mesma passagem do `draw` que a enche, e quem decide o
   // que cabe é o colocador, uma vez, em `map.js` (labels.js).
   let labelled = [];
+  // Os registos de lugar que os ficheiros em mão nomeiam, desenhados ou não.
+  let placesHeld = new Set();
   let lastK = 1;
 
   const go = (file) => load(file).then(() => {
@@ -249,24 +345,62 @@ export function createBaseLayer(group, projection, {
     // cidade é 1 e um acidente físico é 2 (labels.js).
     //
     // A âncora é à direita do ponto, à distância do seu raio: saber quão largo
-    // é um ponto desta camada é assunto desta camada.
+    // é um ponto desta camada é assunto desta camada. Um rio, um lago e uma
+    // região física não têm ponto desenhado nenhum, por isso o nome começa no
+    // ponto de etiqueta da sua própria geometria e sem afastamento.
     //
-    // Só as camadas de pontos, por agora: um rio, um lago e uma região física
-    // são nomeados ao longo da sua própria geometria e esse ponto é de M38b.
-    labelCandidates({ priority = 1 } = {}) {
-      if (geometry !== 'point') return [];
-      const gap = ((DOT[id] ?? DEFAULT_DOT) + 2) / lastK;
+    // `placeOf` é como esta camada chega ao registo de lugar que uma cidade é —
+    // dado de fora, porque a camada não conhece o atlas — e `year` é o extremo
+    // da janela, que é o ano por que um nome datado é escolhido.
+    labelCandidates({ priority = 1, placeOf = () => null, weightOf = null, year = null } = {}) {
+      const gap = geometry === 'point' ? ((DOT[id] ?? DEFAULT_DOT) + 2) / lastK : 0;
       const candidates = [];
       for (const entry of labelled) {
         // O nome aparece depois do ponto e nunca antes: é o que `zl` quer
         // dizer, e é o que qualquer mapa faz.
         if (entry.zl > lastK) continue;
+        const place = entry.place === null ? null : placeOf(entry.place);
+        const historicalNames = place?.historicalNames ?? null;
+        const face = faceName({ name: entry.name, historicalNames, year });
+        if (face === null) continue;
         candidates.push({
-          id: entry.id, text: entry.text, title: entry.title,
-          x: entry.x + gap, y: entry.y, priority, weight: entry.weight,
+          id: entry.id,
+          text: shorten(face),
+          title: titleLine({ name: entry.name, nameEn: entry.nameEn, historicalNames }),
+          x: entry.x + gap,
+          y: entry.y,
+          priority,
+          // Uma cidade que é um lugar **deste** atlas pesa o que os lugares
+          // deste atlas pesam, e não a sua população: é a mesma regra de quem
+          // não tem cidade nenhuma no Natural Earth (names.js), e sem ela
+          // Lisboa — 2,8 milhões — perdia a sua etiqueta para o Cairo num mapa
+          // da expansão portuguesa. Um lugar é um lugar deste atlas tenha ou
+          // não a fonte uma cidade para ele.
+          weight: place && weightOf ? weightOf(place) : entry.weight,
+          // Um rio e um lago chegam partidos: Natural Earth corta o Tejo em
+          // sete troços com `id` diferentes e escreve o lago inteiro em todas
+          // as células que a sua caixa toca. Sete "Tejo" no mesmo ecrã diziam
+          // que são sete rios, por isso o nome é dito uma vez (labels.js). Dois
+          // pontos com o mesmo nome são duas coisas e não levam chave nenhuma:
+          // duas serras podem chamar-se o mesmo.
+          ...(geometry === 'point' ? {} : { once: `${id}|${face}` }),
         });
       }
       return candidates;
+    },
+
+    // As `id` dos registos de lugar que esta camada **tem em mão** — todas as
+    // que estão nos ficheiros de que este desenho saiu, e não só as das
+    // features que o `z` deixou desenhar. O mapa precisa delas para saber
+    // quais dos seus lugares não têm cidade nenhuma no Natural Earth: esses são
+    // nomeados a partir do próprio registo (map.js).
+    //
+    // Em mão e não desenhada, porque a pergunta é "o Natural Earth tem esta
+    // cidade?" e não "já se vê?". Com as desenhadas, Braga — que tem cidade e
+    // cujo ponto só aparece a k = 12 — era nomeada pelo registo a k = 8 e pela
+    // cidade a k = 12, e a mesma palavra mudava de dono a meio de uma roda.
+    placeIds() {
+      return new Set(placesHeld);
     },
 
     render({ k = 1, view = null, on = true } = {}) {
@@ -280,6 +414,7 @@ export function createBaseLayer(group, projection, {
           signature = null;
           count = 0;
           labelled = [];
+          placesHeld = new Set();
         }
         return { drawn: 0, complete: false, cells: [] };
       }
@@ -344,6 +479,7 @@ export function createBaseLayer(group, projection, {
   function draw(files, tolerance, k, covered) {
     group.replaceChildren();
     labelled = [];
+    placesHeld = new Set();
     // Uma feature que chega em mais do que uma célula — um lago e uma região
     // física são escritos inteiros em todas as células que a sua caixa toca —
     // é desenhada uma vez, pela sua `id` (emenda A1).
@@ -380,6 +516,11 @@ export function createBaseLayer(group, projection, {
     // Longe primeiro e perto por cima, que é a ordem em que a imagem fica
     // certa enquanto uma célula ainda vem a caminho.
     for (const { file, index, feature } of [...world0, ...near]) {
+      // O registo de lugar que esta feature é conta antes do `z`: a pergunta
+      // que `placeIds` responde é sobre o que o Natural Earth tem e não sobre
+      // o que já se vê.
+      const placeId = placeIdOf(feature);
+      if (placeId !== null) placesHeld.add(placeId);
       // E depois, feature a feature, o `z` que os dados lhe deram: nenhum
       // destes números está em código.
       if (zOf(feature) > k) continue;
@@ -395,22 +536,33 @@ export function createBaseLayer(group, projection, {
   // Uma feature desenhada que tem nome é uma candidata a etiqueta. Guardada na
   // mesma passagem que a desenha — não há uma segunda volta pelos dados — e
   // com o ponto já projectado, porque é o mesmo que o círculo usou.
+  //
+  // Guarda o que a feature **traz** e não o nome já escolhido: qual dos nomes
+  // vai na cara depende do ano do extremo da banda, e a banda mexe-se sem que
+  // a assinatura desta camada mude — se o nome fosse decidido aqui, arrastar a
+  // banda deixava o mapa a dizer o nome do ano anterior.
   function remember(feature) {
-    if (geometry !== 'point') return;
     const name = nameOf(feature);
     const zl = zlOf(feature);
     if (name === null || zl === null) return;
-    const { lon, lat } = feature;
-    if (!Number.isFinite(lon) || !Number.isFinite(lat)) return;
-    const [x, y] = projection.project([lon, lat]);
+    const point = labelPointOf(feature);
+    if (!point || !Number.isFinite(point[0]) || !Number.isFinite(point[1])) return;
+    const [x, y] = projection.project(point);
+    const elevation = elevationOf(feature);
     labelled.push({
-      id: idOf(feature) ?? `${lon},${lat}`,
-      text: shorten(name),
-      title: labelTitle(feature),
+      id: idOf(feature) ?? `${point[0]},${point[1]}`,
+      name,
+      nameEn: nameEnOf(feature),
+      place: placeIdOf(feature),
       zl,
       // O peso é a população: numa costa cheia, a cidade maior é a que fica
-      // com a caixa. Um pico é pesado pela sua altura e isso é de M38b.
-      weight: typeof feature.pop === 'number' ? feature.pop : 0,
+      // com a caixa. Um acidente físico não tem população nenhuma, e o que o
+      // ordena é o `zl`: escrito para aparecer cedo é escrito por ser grande.
+      // A altura de um pico desempata **dentro** do degrau e nunca salta um,
+      // porque entra como uma fracção — o Evereste vale 0,885 de um degrau.
+      weight: id === 'cities'
+        ? (typeof feature.pop === 'number' ? feature.pop : 0)
+        : -zl + (elevation === null ? 0 : Math.min(Math.max(elevation, 0), 9_999) / 10_000),
       x,
       y,
     });

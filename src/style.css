@@ -743,12 +743,17 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
    cloud twenty-four pixels across, which is what buried the geography in
    docs/screens/m37-base-lisbon.png. Nothing about a label's size is set here.
    A city is told apart from an event by the soft ink its dot is drawn in, and
-   a physical feature will be told apart by its letterspacing (M38b). */
+   a physical feature by its letterspacing — `--tracking-label`, which is an
+   em and therefore follows the type size down as the zoom goes up, so it is
+   about the size of nothing. A river is not a second colour and not a second
+   size: it is the same name, written wider. */
 .map .layer-labels { pointer-events: none; }
 .map .mark-label,
-.map .city-label { font-family: var(--font-ui); paint-order: stroke; stroke: var(--paper); stroke-linejoin: round; pointer-events: none; }
+.map .city-label,
+.map .feature-label { font-family: var(--font-ui); paint-order: stroke; stroke: var(--paper); stroke-linejoin: round; pointer-events: none; }
 .map .mark-label { fill: var(--ink); }
 .map .city-label { fill: var(--ink-soft); }
+.map .feature-label { fill: var(--ink-soft); letter-spacing: var(--tracking-label); }
 /* A coincident cluster opened: members on rings, each on a leg back to the
    point they all share. */
 .map .spread-hub { fill: var(--cobalt); stroke: none; }

@@ -24,8 +24,11 @@ import { esc } from '../util/esc.js';
 import { normalizeBbox } from '../state.js';
 import { renderKey, shardsArrived } from '../render-key.js';
 import {
-  LABEL_HALO, LABEL_SIZE, LABEL_ZOOM, LIMITS, PRIORITY, placeLabels,
+  EM, EM_TRACKED, LABEL_HALO, LABEL_SIZE, LABEL_ZOOM, LIMITS, PRIORITY, placeLabels,
 } from './labels.js';
+// Os lugares que este atlas nomeia e o Natural Earth não: uma freguesia, um
+// distrito, um campo de batalha (names.js).
+import { ATLAS_PLACE_WEIGHT, placeCandidates } from './names.js';
 import { labelOf } from '../attributes.js';
 import { exportButton } from '../share.js';
 
@@ -174,9 +177,17 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // Que camadas do mapa de base oferecem nomes à ronda das etiquetas, e com
   // que prioridade. Aqui e não em `base.js` porque a hierarquia é do mapa e
   // não de uma camada: um acontecimento ganha a caixa a uma cidade e uma
-  // cidade ganha-a a um deserto (decisão 9 do plano). M38b junta a esta tabela
-  // os rios, os lagos, as regiões físicas e os picos, a 2.
-  const LABELLED_LAYERS = Object.freeze({ cities: PRIORITY.cities });
+  // cidade ganha-a a um deserto (decisão 9 do plano). Os rios, os lagos, as
+  // regiões físicas e os picos partilham a terceira prioridade e competem uns
+  // com os outros: um pico não vale mais do que a serra em que está, e perder
+  // para uma cidade é o resultado certo para os quatro (desvio 531).
+  const LABELLED_LAYERS = Object.freeze({
+    cities: PRIORITY.cities,
+    rivers: PRIORITY.features,
+    lakes: PRIORITY.features,
+    physical: PRIORITY.features,
+    mountains: PRIORITY.features,
+  });
   // A classe de cada espécie de nome. `.mark-label` é a que era e continua a
   // ser, para que todo o selector e todo o teste que a nomeia continuem a
   // encontrá-la: o que mudou foi o grupo em que ela está pendurada, e mais
@@ -185,6 +196,16 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     [PRIORITY.events]: 'mark-label',
     [PRIORITY.cities]: 'city-label',
     [PRIORITY.features]: 'feature-label',
+  });
+  // E quanto ocupa um carácter de cada espécie. Um acidente físico é escrito
+  // espaçado — é a única coisa que o distingue de uma cidade, porque a cor é a
+  // mesma e o tamanho é um só (desvio 530) — e uma etiqueta espaçada ocupa
+  // mesmo mais chão: a caixa tem de saber disso ou dois nomes montam-se um no
+  // outro. Aqui e não na camada porque a classe também é daqui.
+  const LABEL_EM = Object.freeze({
+    [PRIORITY.events]: EM,
+    [PRIORITY.cities]: EM,
+    [PRIORITY.features]: EM_TRACKED,
   });
 
   // --- o mapa de base -------------------------------------------------------
@@ -631,22 +652,65 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       if (labelsGroup.childNodes.length > 0) labelsGroup.replaceChildren();
       return [];
     }
-    const on = state.get().layers;
+    const s = state.get();
+    const on = s.layers;
+    // O ano por que um nome datado é escolhido: o extremo da banda, que é o
+    // mesmo instante por que os territórios são desenhados. Astronómico, que é
+    // a única numeração em que a aritmética é permitida (util/window.js); a
+    // conversão dos anos do registo é de `names.js`.
+    //
+    // Não entra na chave do render porque já lá está: a janela é um dos seus
+    // campos, e uma banda que se mexe redesenha o mapa de qualquer maneira.
+    const year = resolveWindow(s, atlas.extent)?.to ?? null;
+    // Como uma cidade chega ao registo de lugar que é. A correspondência é
+    // dados e não código: a `id` vem escrita na própria feature, posta lá pelo
+    // importador a partir do `wikidata` ou de uma linha que uma pessoa
+    // escreveu, e nunca adivinhada (emenda A3).
+    const placeOf = (id) => atlas.places.get(id) ?? null;
+    // O que um lugar deste atlas pesa ao pé de uma cidade que o mapa apenas
+    // conhece: acima de qualquer população, e entre eles aquele onde mais
+    // coisas aconteceram (names.js). Vale para os treze que têm cidade e para
+    // os treze que não têm — é a mesma frase e não duas.
+    const weightOf = (place) => ATLAS_PLACE_WEIGHT + (atlas.eventsByPlace.get(place.id) ?? []).length;
     const candidates = [];
     // Os acontecimentos primeiro, que é a ordem em que o colocador os vai pôr
     // de qualquer maneira; e nenhum quando a camada está desligada, porque um
     // nome sem a sua marca por baixo seria um acontecimento que o leitor
     // acabou de desligar, ainda escrito.
     if (eventsOn(on)) candidates.push(...events.labelCandidates());
+    // As `id` dos registos de lugar que já estão nomeados por uma cidade
+    // desenhada. Só as camadas ligadas contam: uma cidade que não está no mapa
+    // não nomeia nada.
+    const named = new Set();
     for (const { id, layer } of baseLayers) {
       const priority = LABELLED_LAYERS[id];
       if (priority === undefined || !on.includes(id)) continue;
-      candidates.push(...layer.labelCandidates({ priority }));
+      candidates.push(...layer.labelCandidates({ priority, placeOf, weightOf, year }));
+      if (layer.placeIds) for (const placeId of layer.placeIds()) named.add(placeId);
+    }
+    // E os lugares deste atlas que o Natural Earth não tem — treze dos vinte e
+    // seis. Ao lado das cidades e sob o mesmo interruptor: quem desligou os
+    // nomes das cidades não pediu estes (names.js).
+    if (on.includes('cities')) {
+      candidates.push(...placeCandidates(atlas.places.values(), {
+        drawn: named,
+        project: projection.project,
+        priority: PRIORITY.cities,
+        year,
+        // O nome de um lugar chega com o seu fragmento de atributos e pode
+        // ainda não ter chegado; até lá não se escreve nada (attributes.js).
+        nameOf: (place) => (atlas.attributesLoaded(place.id) ? place.name ?? null : null),
+        weightOf,
+      }));
     }
     // Por prioridade e por id, para ir buscar o título e a classe de volta: o
     // colocador devolve o que colocou e não sabe de nenhum dos dois.
     const byKey = new Map(candidates.map((c) => [`${c.priority}|${c.id}`, c]));
-    const placed = placeLabels(candidates, { k: transform.k, view: box, limits: LIMITS });
+    // Quanto ocupa um carácter é escrito aqui e não pela camada: é a mesma
+    // decisão que a classe, e uma camada que a tomasse teria de saber com que
+    // espaçamento a folha de estilo a vai desenhar.
+    const measured = candidates.map((c) => ({ ...c, em: LABEL_EM[c.priority] ?? EM }));
+    const placed = placeLabels(measured, { k: transform.k, view: box, limits: LIMITS });
     labelsGroup.replaceChildren();
     for (const label of placed) {
       const candidate = byKey.get(`${label.priority}|${label.id}`);

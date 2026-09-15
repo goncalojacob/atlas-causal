@@ -7,7 +7,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  LABEL_CHARS, LABEL_SIZE, LIMITS, PRIORITY, labelBox, placeLabels, shorten,
+  EM, EM_TRACKED, LABEL_CHARS, LABEL_SIZE, LIMITS, PRIORITY, labelBox, placeLabels, shorten,
 } from '../src/map/labels.js';
 
 // Candidates far enough apart that nothing competes, so a test about order is
@@ -155,4 +155,58 @@ test('a long name is cut at a word, and a long word is cut at a letter', () => {
   const word = 'Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch';
   assert.equal(shorten(word), `${word.slice(0, LABEL_CHARS - 1)}…`);
   assert.equal(shorten(word).length, LABEL_CHARS);
+});
+
+// --- M38b: a desert loses to a city, a river is named once, a spaced name is
+// wider than the same name unspaced.
+
+test('a city has its box against a physical feature, and the feature is skipped where it stands', () => {
+  // The other half of the hierarchy: an event beats a city (above) and a city
+  // beats a desert. Both want the same point, and the one that loses loses its
+  // name — it is never moved aside, because a name that drifted would end up
+  // over the next thing along (decision 9 of the plan).
+  const city = { id: 'c', text: 'Évora', x: 200, y: 140, priority: PRIORITY.cities, weight: 50_000 };
+  const range = { id: 'f', text: 'Serra de Ossa', x: 203, y: 141, priority: PRIORITY.features, weight: -4 };
+  assert.deepEqual(placeLabels([range, city], { k: 1 }).map((p) => p.id), ['c']);
+  // And apart, both: the skip was the box and not the priority.
+  assert.deepEqual(placeLabels([{ ...range, x: 600 }, city], { k: 1 }).map((p) => p.id), ['c', 'f']);
+});
+
+test('a name with a `once` key is written once, and only a placed one spends it', () => {
+  // Natural Earth cuts the Tagus into segments with ids of their own; seven
+  // "Tejo" on one screen would say there are seven rivers.
+  const segment = (id, y) => ({ id, text: 'Tejo', x: 0, y, priority: PRIORITY.features, weight: -4, once: 'rivers|Tejo' });
+  const placed = placeLabels([segment('a', 0), segment('b', 100), segment('c', 200)], { k: 1 });
+  assert.deepEqual(placed.map((p) => p.id), ['a']);
+
+  // But the key is spent by a label that was actually drawn. Where the first
+  // segment loses its box to an event, the next one still says the name.
+  const event = { id: 'e', text: 'Battle of Alcántara', x: 0, y: 0, priority: PRIORITY.events, weight: 1 };
+  const after = placeLabels([segment('a', 0), segment('b', 100), event], { k: 1 });
+  assert.deepEqual(after.map((p) => p.id), ['e', 'b']);
+
+  // A candidate with no key is not deduplicated at all: two dots named the
+  // same are two things.
+  const peak = (id, y) => ({ id, text: 'Pico', x: 0, y, priority: PRIORITY.features, weight: -9 });
+  assert.deepEqual(placeLabels([peak('p1', 0), peak('p2', 100)], { k: 1 }).map((p) => p.id), ['p1', 'p2']);
+});
+
+test('a spaced label takes more room, and the unspaced box is the one it always was', () => {
+  // `--tracking-label` is what tells a physical feature from a city, and a
+  // spaced name really does cover more ground: a box that ignored it would let
+  // two names sit on top of each other.
+  const text = 'Serra da Estrela';
+  assert.equal(labelBox(text, 0, 0, 1).x1, (text.length * LABEL_SIZE * EM));
+  assert.ok(labelBox(text, 0, 0, 1, EM_TRACKED).x1 > labelBox(text, 0, 0, 1).x1);
+  assert.equal(EM, 0.55, 'the number the events layer had');
+  assert.equal(Number((EM_TRACKED - EM).toFixed(2)), 0.08, '`--tracking-label` in src/style.css');
+
+  // And the placer reads it off the candidate: the same two candidates fit
+  // unspaced and collide spaced.
+  const a = { id: 'a', text, x: 0, y: 0, priority: PRIORITY.features, weight: 0 };
+  const b = { id: 'b', text, x: text.length * LABEL_SIZE * 0.6, y: 0, priority: PRIORITY.features, weight: 0 };
+  assert.deepEqual(placeLabels([a, b], { k: 1 }).map((p) => p.id), ['a', 'b']);
+  assert.deepEqual(
+    placeLabels([{ ...a, em: EM_TRACKED }, { ...b, em: EM_TRACKED }], { k: 1 }).map((p) => p.id), ['a'],
+  );
 });

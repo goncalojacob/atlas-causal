@@ -1562,3 +1562,89 @@ test('a click at a label\'s centre reaches the mark under it, and no label is in
       `an event's label takes no pointer either (${opened})`);
   });
 });
+
+// M38b: the names of the ground, and the places this atlas names itself.
+
+test('the rivers, the lakes, the regions and the peaks are named under the cities', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url(`${PORTUGAL_AT_8}&layers=${BASE_ON}`),
+      'return Boolean(document.querySelector("#map .layer-labels text"));');
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-labels .feature-label").length > 0;',
+      'the physical features to be named');
+    const labels = await page.eval(LABELS);
+    const features = labels.filter((l) => l.cls === 'feature-label');
+    const cities = labels.filter((l) => l.cls === 'city-label');
+    // The limits are per priority, so neither kind can spend the other's: at
+    // most eight names of the ground and at most twenty-four cities.
+    assert.ok(features.length > 0 && features.length <= 8, `${features.length} feature labels`);
+    assert.ok(cities.length > 0 && cities.length <= 24, `${cities.length} city labels`);
+
+    // A physical feature is told from a city by its letterspacing and by
+    // nothing else: the same size, the same soft ink. Nothing about a label's
+    // size is in the stylesheet, so both of those are still attributes.
+    const look = await page.eval(`
+      const el = document.querySelector('#map .layer-labels .feature-label');
+      const city = document.querySelector('#map .layer-labels .city-label');
+      const cs = getComputedStyle(el);
+      return {
+        tracking: cs.letterSpacing,
+        cityTracking: getComputedStyle(city).letterSpacing,
+        fill: cs.fill,
+        cityFill: getComputedStyle(city).fill,
+        size: el.getAttribute('font-size'),
+        citySize: city.getAttribute('font-size'),
+        cssSize: cs.fontSize,
+      };`);
+    assert.notEqual(look.tracking, look.cityTracking, `the spacing is the difference (${look.tracking})`);
+    assert.equal(look.fill, look.cityFill, 'and the ink is the same soft ink');
+    assert.equal(look.size, look.citySize, 'and so is the size, which is one size for all three');
+
+    // No two names overlap, whatever kind they are — the spaced ones included,
+    // which is what the wider box estimate is for.
+    for (let i = 0; i < labels.length; i += 1) {
+      for (let j = i + 1; j < labels.length; j += 1) {
+        const a = labels[i];
+        const b = labels[j];
+        const hit = a.x < b.x + b.w && b.x < a.x + a.w && a.y < b.y + b.h && b.y < a.y + a.h;
+        assert.ok(!hit, `"${a.text}" and "${b.text}" overlap`);
+      }
+    }
+    // And a river cut into segments is one river: no name of the ground is
+    // written twice on one screen.
+    const said = features.map((l) => l.text);
+    assert.equal(new Set(said).size, said.length, `each named once: ${said.join(' · ')}`);
+
+    // Nothing of this is a control either.
+    const loose = await page.eval(`
+      return [...document.querySelectorAll('#map .layer-labels .feature-label')]
+        .filter((el) => el.hasAttribute('data-id') || el.hasAttribute('tabindex')).length;`);
+    assert.equal(loose, 0);
+  });
+});
+
+test('a place this atlas names and Natural Earth has no city for is on the map, from the record', { skip }, async () => {
+  await wide(async (page, url) => {
+    // Thirteen of the twenty-six place records have no Natural Earth city, and
+    // that is the normal case: a parish, a district, a battlefield. They are
+    // labelled from the record's own point and its own name, beside the cities
+    // (docs/naturalearth-places.md).
+    await open(page, url(`${PORTUGAL_AT_8}&layers=${CITIES_ON}`),
+      'return Boolean(document.querySelector("#map .layer-labels .city-label"));');
+    // The cities' own file first: until it lands the map holds no city at all,
+    // and a record whose city is in it would be named from the record for a
+    // frame. What is asserted below is the settled picture.
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-base-cities circle").length > 100;',
+      'the cities of the near level');
+    const said = new Set((await page.eval(LABELS)).map((l) => l.text));
+    const ours = ['Alvor, Algarve', 'Belém, Lisbon', 'Central Portugal', 'Lajes, Terceira',
+      'Pedrógão Grande', 'Parque das Nações, Lisbon', 'Flanders, near Laventie'];
+    assert.ok(ours.some((name) => said.has(name)),
+      `one of this atlas's own places is named: ${[...said].join(' · ')}`);
+
+    // And a record that *has* a city is left to the city, whether or not the
+    // dot is drawn yet: Braga's city is in the file the map holds and its `z`
+    // keeps the dot off the screen at this zoom, so the map says nothing
+    // rather than saying it twice over the zoom that brings the dot in.
+    assert.equal(said.has('Braga'), false, 'a matched record is the city\'s to name');
+  });
+});
