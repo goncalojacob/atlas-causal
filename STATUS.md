@@ -13,7 +13,44 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-15, after **M44b** (`docs/m44-brief.md` §4 and its amendments after
+2026-09-15, after **M46** (on `m0`): **seven of the twenty-two events that
+were stuck on the lane question are in, seven are not what this milestone
+built, and fifteen are still refused on purpose.** The code M46 was ordered to
+write already existed — M44-0 landed the lane table, its schema, its validator
+check, the lines in `runImportMode` that read it and the two tests on
+8 September (deviation 697) — so this run verified it instead of rebuilding it
+and spent itself on the two things that were genuinely missing: **the data**
+and **the label fallback**.
+
+The seven that landed, with the lane each took: `first-sino-japanese-war`,
+`philippine-american-war`, `russo-japanese-war`, `soviet-afghan-war` and
+`iran-iraq-war` in **asia**; `polish-soviet-war` and `entente-cordiale` in
+**europe**. The rule that chose them was written before a line was added
+(deviation 699): a lane is written where the event's own ground lies inside
+exactly one lane of `data/regions.json` and saying so is reading the item
+rather than deciding a question about it. **Fifteen stay refused** — five whose
+ground spans two of the five lanes, nine that are a subject rather than a
+place, and the Antarctic Treaty System, whose ground is in no lane this atlas
+has. Each is still one line of data whenever the owner decides otherwise.
+
+**The importer's title chain was wrong in a way nobody had named.** It was
+`labels.en ?? labels.pt ?? qid`, which walks past an English name the item is
+already carrying: Q60433, the refugee convention, was filed under a Portuguese
+id while the same run wrote `wikipedia.en: "Convention Relating to the Status
+of Refugees"` onto the record it had just made. `titleFor` now reads English
+label, English article title, Portuguese label, Portuguese article title, item
+id — for the title, for the id and for a place's label. Where there is no
+English name of either kind, which is the nine Madeira and Azores regional
+elections M44c renamed, the record imports with its Portuguese name **verbatim**
+and carries `title-not-english` in `review.flags`. Nothing is translated: that
+is a judgement and a run does not make those quietly.
+
+`node tools/validate.mjs --index`: **2,266 records, 0 errors**, up from 2,259.
+**250 active events**, up from 243. `node --test --test-timeout=120000`:
+**1,425 tests, 0 skipped, 0 failed**. The account is `## M46: the lanes
+written, the fifteen refused, and the title chain` below.
+
+Before it, M44b (`docs/m44-brief.md` §4 and its amendments after
 review; **on branch `m44`, cut from `origin/m0`, and nothing of it merged into
 `m0` except the milestone lines**): of M44a's 82 imported records, **30 were
 kept and wired, 50 retracted with the reason in the record, and 2 merged into
@@ -51,8 +88,10 @@ classes are not in it, and two whose classes disagree with each other —
 each of which Wikidata calls both a treaty and an organisation.
 The table was not widened to force a yield. 164 Wikipedia leads are cached.
 
-**What the owner still has to settle: 22 of deviation 447's twenty-nine.**
-M44-0 gave six of them a lane by hand and a seventh reached one from its own
+**What the owner still has to settle: 15 of deviation 447's twenty-nine** —
+this paragraph said 22 until M46 gave seven of them a lane and imported them;
+the fifteen it names below that are not in M46's seven are the ones still
+waiting. M44-0 gave six of them a lane by hand and a seventh reached one from its own
 point, so seven landed — the two Balkan wars and the Balkan Wars, the Winter
 War, the Kosovo war, the Yugoslav wars and the European Charter. The other
 **22 were walked and refused again, by name**, which is the honest state of
@@ -7331,6 +7370,164 @@ it — `node tools/build-index.mjs` over the merged corpus — and
      merge. It is written here rather than only in the protocol because a
      deviation is where a run says what it changed that its brief did not ask
      for.
+
+## M46: the lanes written, the fifteen refused, and the title chain
+
+M46 was ordered as a code milestone — the lane a placeless event can be given,
+and the twenty-nine import candidates it unblocks. **The code was already
+there.** M44-0 built it on 8 September under amendment A16 and deviation 697
+says exactly what of it exists and where. What was missing was the data, and
+the twenty-nine were never going to move without it.
+
+**What the run did, in four commits and one Action.** The title chain
+(`cbd39956`), the seven lanes (`4623f4fd`), the rewind of the twenty-nine
+(`f7497d15`), and the import itself on `import/run-m46-2026-09-15`,
+fast-forward-merged back at `9616fbd5`.
+
+**The import, by its own report.** Batch 1: twenty-five items, sixteen calls,
+**7 created, 0 enriched, 3 named, 11 refused**. Batch 2: four items, one call,
+**0 created, 4 refused**. Fourteen Wikipedia leads cached. Every one of the
+fifteen refusals is the same sentence — no place record for its location, no
+lane reachable from its point, and no lane named for it in the seeds file —
+which is the sentence the lane table exists to be the answer to, and the
+fifteen are the ones nobody has answered it for.
+
+| record | item | lane | when | category |
+|---|---|---|---|---|
+| `first-sino-japanese-war` | Q178687 | asia | 1894–1895 | war |
+| `philippine-american-war` | Q214456 | asia | 1899–1902 | war |
+| `russo-japanese-war` | Q159950 | asia | 1904–1905 | war |
+| `entente-cordiale` | Q464399 | europe | 1904 | treaty |
+| `polish-soviet-war` | Q186284 | europe | 1920–1921 | war |
+| `soviet-afghan-war` | Q83085 | asia | 1979–1989 | war |
+| `iran-iraq-war` | Q82664 | asia | 1980–1988 | war |
+
+Each carries the `regionNote` M44-0 wrote for exactly this case — "Lane written
+by the Wikidata import (named for this item in
+`data/imports/wikidata-seeds.json`): this event points at no place record, so
+the timeline has nothing else to go on" — so a later change to the polygons
+moves the derived lanes and not these seven. All seven are drafts flagged
+`imported-facts`, every summary is the item's own description said to be
+unchecked, and **no edge was written for any of them**: that is a person's
+argument and this run makes none.
+
+**The lane table now holds thirteen entries** and the cursor is back at 703
+done, `pending` empty — so the next fire of this routine offers nothing and
+does nothing, which is what an idempotent run looks like.
+
+**What is still owed.** Fifteen items, listed in deviation 699 by why each
+fails. Two of the questions behind them are worth a decision rather than a
+line each: whether a lane may mean where a treaty was *signed* when that is
+not where its subject lies (Kyoto, CITES, Sykes–Picot), and whether the atlas
+wants a sixth lane or an explicit "no lane" for a thing whose ground is
+Antarctica or the whole world. Neither is a data question and neither was this
+run's to take.
+
+### Deviations 697 to 703 — M46
+
+697. **The code M46 was ordered to build already existed, and was verified
+     rather than written again.** The brief describes `runImportMode` as
+     refusing a placeless event with no way to reach a lane, `seeds.queries` as
+     the only place a region could be written, and the third clause of the
+     refusal as a promise the code does not keep. None of that is true of `m0`
+     as it stands. M44-0 answered it on 8 September under amendment A16, in two
+     commits: `c1e50d69` added the `lanes` object at the root of
+     `data/imports/wikidata-seeds.json`, its entry in
+     `schema/v1/import-seeds.json` and the validator check that its keys are
+     items and its values are ids of `data/regions.json`; `5cdae37d` added
+     `seededLane`, the four lines in `runImportMode` that read it at the point
+     of refusal, `SEEDED_LANE` and the `regionNote` that says a lane was
+     written and not measured, the refusal sentence the brief quotes — which
+     names the seeds file precisely **because** the code reads it — and the
+     fixture item `Q9000009` with the two tests the brief asks for: a placeless
+     event named in the table imports with that region, and one not named in it
+     is refused with that same sentence. `tests/import-seeds.test.mjs` holds a
+     third, on the table's keys and values. All of it was run and read before
+     anything else was done. **Nothing of it is rebuilt**: a second table would
+     be a second answer to a settled question, and the brief's own instruction
+     to read where lanes come from before inventing a vocabulary is what found
+     this. What M46 added to it is the data, which is what was actually
+     missing.
+698. **The rewind had already happened once, and M44a undid it.** Amendment A16
+     ordered the cursor rewound for all twenty-nine and M44-0 did it (deviation
+     546, `done` 592 → 563). M44a then walked all twenty-nine: seven landed —
+     six on the lanes M44-0 wrote and one, the Winter War, on a point of its
+     own — and twenty-two were refused for want of a lane and went back into
+     `done`, which is where this run found them. So M46's rewind commit is the
+     second of its kind and names the same twenty-nine, seven of which already
+     hold records. Those seven were rewound with the rest rather than held
+     back: the brief names all twenty-nine, and a cursor holding a different
+     set than the one written down is one nobody can check. The cost was one
+     batch of reads and it bought something — see deviation 702.
+699. **Seven of the twenty-two got a lane and fifteen did not, under a rule
+     written before it was applied.** M44-0's rule wrote a lane only where a
+     retraction document names the item's own ground (deviation 545), which is
+     why twenty-two were left. The owner's instruction for M46 replaces it: a
+     region is a lane and not a claim about the past, the same kind of display
+     fact `parent` is. **M46's rule: a lane is written where the event's own
+     ground — where the thing happened — lies inside exactly one lane of
+     `data/regions.json`, and where saying so is reading the item rather than
+     deciding a question about it.** The seven and their ground: Q178687
+     (Korea, Manchuria, the Yellow Sea), Q159950 (Manchuria, Korea, the seas
+     between), Q214456 (the Philippines), Q83085 (Afghanistan), Q82664 (Iran
+     and Iraq) → `asia`; Q186284 (Poland, Ukraine, Belarus), Q464399 (made in
+     London between two European states) → `europe`. The fifteen, by why:
+     ground spanning two of the five lanes (5) — Q12583, Q49077, Q33761,
+     Q381375, Q29269; a subject rather than a place (9) — Q8683, Q185729,
+     Q12199, Q178275, Q101452, Q896666, Q191836, Q47359, Q211674; ground in no
+     lane this atlas has (1) — Q182814. **Q464399 answers half of the question
+     deviation 545 asked and no more.** A treaty is an event and an event's
+     ground is where it happened; the Entente Cordiale was made in Europe by
+     European states, so both readings agree and the lane is not a choice
+     between them. Where they disagree — Kyoto, signed in Kyoto and about the
+     atmosphere; CITES, signed in Washington and about the world; Sykes-Picot,
+     made in London and about Ottoman Asia — nothing is written and the
+     question stays the owner's. **This run took the call the owner gave it and
+     stopped where the owner told it to stop**: a refusal with a reason is
+     better than a lane chosen to clear a queue.
+700. **The title chain was fixed for two languages and for every kind, not
+     only for events in English.** The brief asks for the English sitelink
+     title before `labels.pt`. `titleFor` also puts the Portuguese article
+     title before the bare item id — the same idea one language over, and a
+     record titled `Q12345` is worse than one titled from an article the item
+     carries — and it is read by `idFor`, which every kind's id comes from, by
+     `eventRecord` for its title and by `placeRecord` for its label. An actor
+     carries `title-not-english` too, although it has no title: its id comes
+     off the same chain and the first of its `names` is what its card shows.
+     `namesFor` is untouched — it collects every name an item has and its order
+     is not a choice of one.
+701. **The first import run died on Wikidata's own replication lag and was
+     re-run once.** Run 27, attempt 1, failed thirty-six seconds in with
+     `error: Waiting for wdqs1016: 6.55 seconds lagged` — a `maxlag` refusal
+     that outlasted the four retries and their 2/4/8/16-second backoff. That is
+     the one case where the tool is meant to come back later, the cursor had
+     not moved, and nothing was committed. The same run was re-run and walked
+     both batches clean. No code was changed for it and no retry count was
+     raised: the manners in `createFetcher` are what a good guest does, and a
+     run that waits longer to get its way is not a better guest.
+702. **The rewind wrote three records' `names`, which nobody asked for.** The
+     seven items already held were re-read for the reasons in deviation 698,
+     and the other-names pass — the one that puts an item's labels and aliases
+     onto a record as `names` — had not been run against them since it landed.
+     It added names to `first-balkan-war`, `second-balkan-war` and
+     `winter-war`: the Portuguese forms, and for the Winter War four English
+     ones ("Soviet–Finnish War 1939–1940" and its variants). Nothing else was
+     touched on any of the seven and `0 enriched` is the report's own count.
+     This is additive, it is the pass's own rule and not a new one, and it is
+     recorded because it is a change to records this milestone was not about.
+703. **A refusal for "no lane reachable from its point" is not always a fact
+     about the item, and this run did not fix that.** `runImportMode` gathers
+     the country and administrative items a batch names and fetches
+     `.slice(0, batchSize)` of them — twenty-five. A batch of twenty-five items
+     can easily name more than twenty-five countries between them, so an item
+     whose lane was reachable from the country it names can be refused because
+     that country was past the cut, and which items those are depends on the
+     order of the batch. It is a real defect and it is **not** what M46 was
+     asked to change: widening the fetch changes what other items do and
+     belongs to whoever owns the importer's budget. It is written down here so
+     that the fifteen refusals above are read for what they are — fifteen items
+     for which no lane was reachable **in this batch order** and none was
+     written by hand.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
