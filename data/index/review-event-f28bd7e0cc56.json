@@ -2624,6 +2624,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "full-scale-russo-ukrainian-war",
       "review": {
         "flags": [
           "imported-facts",
@@ -2631,7 +2632,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-15",
       "status": "active",
       "title": "Bucha massacre"
     },
@@ -3164,6 +3165,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "covid-19-pandemic",
       "review": {
         "flags": [
           "imported-facts",
@@ -3173,7 +3175,7 @@
         "note": "As with the pandemic record itself: the bibliography holds nothing on COVID-19, so this record and its edges stand on the cached Wikipedia leads and the Wikidata item. A reviewer should add a source before signing.",
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-15",
       "status": "active",
       "title": "COVID-19 pandemic in Europe"
     },
@@ -3989,6 +3991,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "russo-ukrainian-war",
       "review": {
         "flags": [
           "imported-facts",
@@ -3996,7 +3999,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-15",
       "status": "active",
       "title": "full-scale Russo-Ukrainian war"
     },
