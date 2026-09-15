@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "october-revolution--finnish-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Finnish Civil War\", revision 1370618272"
+    }
+  ],
+  "from": "october-revolution",
+  "to": "finnish-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Bolshevik seizure of power is the nearer of the two preconditions the atlas now holds. It removed the Provisional Government with which the Finnish parliament had been quarrelling over sovereignty, it produced the recognition of Finnish independence on 31 December 1917, and it gave the Finnish Social Democrats both an example of what a seizure of power looked like and a neighbour who would arm them. The claim stops there. The Finnish split was Finnish, made by the crisis over the Power Act and the food shortage, and Petrograd neither ordered the rising nor saved it.",
+  "dispute": null
+}

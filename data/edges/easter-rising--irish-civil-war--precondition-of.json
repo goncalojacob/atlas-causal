@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "easter-rising--irish-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Easter Rising\", revision 1374874334"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Irish Civil War\", revision 1374338052"
+    }
+  ],
+  "from": "easter-rising",
+  "to": "irish-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "This edge states its own gap. Between the Rising and the civil war stand the election of 1918, the War of Independence and the Anglo-Irish Treaty of December 1921, and this atlas holds none of the three: the import refused the War of Independence for a class its table does not carry. What survives the gap is real. The Rising made the republic that was declared in 1916 the thing republicans were bound to, and the civil war of 1922 was fought over whether the Free State the Treaty offered was that republic or a betrayal of it, by men who had been on the same side in 1916. Until the Treaty is a record here, this edge is the only route between the two and it should be read as a placeholder for three.",
+  "dispute": null
+}
