@@ -13,6 +13,43 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-15, after **M36b** (`docs/m36-brief.md`, with its amendments after
+review): **the base map has five of its six layers.** Beside the 10 m
+coastline M36a landed are the rivers, the lakes, the physical regions and the
+peaks, at the same two levels and in the same twenty-four cells, fetched a
+cell at a time and never at first paint.
+
+`data/geo/base/` is **5,500.5 KB of its 8 MB ceiling** and `data/geo/` is
+**10.4 MB of its 24 MB**; no layer hit its cap and nothing was sacrificed. The
+tolerance of each level is whatever its cap forced — coast 0.4°/0.015°, rivers
+0.4°/0.015°, lakes 0.15°/0.03°, physical 0.25°/0.075°, the peaks none — and
+the full table, with the points kept and dropped, is in
+**`## M36b: the rivers, the lakes, the physical regions and the peaks`**,
+below, with deviations 613 to 621. A cell holds a river clipped, a lake or a
+region whole with the id M37 draws it once by, and a peak as a point: **a cut
+edge is never part of a stroked ring.** The account of the tool, the grid, the
+`--survey` property table and the `z` table is the M36a section below, with
+deviations 596 to 612. **M36c (the cities) has its own run**, and 2,691.5 KB
+of the base map's ceiling is left for it against a 1,000 KB cap.
+
+**Three things wait on the owner.**
+
+- Deviation 605: the 200 KB coastline cap buys the small islands 110 m drops —
+  Malta, Bahrain, Madeira, Santa Maria and Graciosa, Santiago, Barbados,
+  Bermuda — but not Corvo and not the Maldives' outer atolls, which are under
+  the 85 km² floor the cap forces. Raising the cap is one constant and one
+  number in `CAPS`.
+- Deviation 613, and it is the same shape: the far level of the rivers keeps
+  978 of 1,455 and of the lakes 434 of 1,355, because at that level the
+  feature count and not the tolerance decides the bytes. Everything dropped is
+  in its cell. The rivers' floor is 1.9 degrees and not 2 because the **Tejo**
+  is 1.912 degrees long — but the **Douro, the Mondego and the Sado are not in
+  the 10 m file at all**, and no setting of ours will put them on the map.
+- Deviation 618: `manifest.json` grew from 33,895 to 45,638 bytes because it
+  names all 110 cells with their bytes, and it is fetched `no-store` on every
+  page load of every page. First paint is 341,695 B, still a third of decision
+  9's 1 MB, and M36c adds up to 24 rows more.
+
 2026-09-15, after **M36a** (`docs/m36-brief.md`, with its amendments after
 review): **the coastline under the marks is Natural Earth 10 m now, and beside
 it, fetched a cell at a time and never at first paint, is the near coastline
@@ -31,11 +68,9 @@ Natural Earth's tile zoom to our `k`) and `grid.mjs`. `manifest.schema` is
 below, with deviations 596 to 612. **M36b (rivers, lakes, physical regions,
 mountains) and M36c (cities) have their own runs.**
 
-**One thing waits on the owner**, in deviation 605: the 200 KB coastline cap
-buys the small islands 110 m drops — Malta, Bahrain, Madeira, Santa Maria and
-Graciosa, Santiago, Barbados, Bermuda — but not Corvo and not the Maldives'
-outer atolls, which are under the 85 km² floor the cap forces. Raising the cap
-is one constant and one number in `CAPS`.
+What waits on the owner from this run is deviation 605, listed above with
+M36b's two: the 200 KB coastline cap buys the small islands 110 m drops but
+not Corvo and not the Maldives' outer atolls.
 
 2026-09-15, after the **glyph run** (`docs/glyphs-brief.md`, with its
 amendments after review): **an event that has a category is drawn with a
@@ -5079,6 +5114,257 @@ of the full suite failed once on `a regional event is a wash over its lane`
 (`tests/map-browser.test.mjs`) and passed on the next and on its own — a timing
 flake under parallel load, of the kind the protocol already names one of.
 
+## M36b: the rivers, the lakes, the physical regions and the peaks
+
+M36a put a 10 m coastline under the marks and a near coastline beside it in
+twenty-four cells. M36b puts four more layers in the same two levels and the
+same twenty-four cells, written by the same tool: **`rivers`, `lakes`,
+`physical` and `mountains`**. It still draws nothing — the one file under
+`src/` this whole milestone has written is `src/map/grid.js`, and nothing in
+the browser imports it until M37.
+
+**Nothing was downloaded.** `--check` decompressed all seven committed 10 m
+files and matched every sha256 against `vendor/SHA256SUMS` before a byte was
+written. A `fetch` in this tool would be a bug, not a fallback, and there is
+still none.
+
+### What a cell holds, and why it differs by layer
+
+Amendment A2 gives three answers and the run implements all three, in
+`tools/import/layers.mjs`:
+
+- **`rivers` are lines clipped to the cell.** A river is a stroke, and a
+  stroke cut at a cell edge is the same stroke: the two halves meet where the
+  reader cannot see them meet.
+- **`lakes` and `physical` are whole features**, assigned to every cell their
+  bbox overlaps and **never clipped**, each carrying Natural Earth's own
+  `ne_id`/`NE_ID` so M37 draws it once however many cells brought it. They are
+  filled *and* stroked, and a clipped ring's cut edge would be a dashed
+  hairline along a cell border — a shore, or a mountain range, that does not
+  exist. A lake in two cells is byte-identical in both, and a test holds it.
+- **`mountains` are points by cell**, as an array of small objects and not a
+  `FeatureCollection`: a `Feature` around a peak is about a third scaffolding
+  (deviation 517, exercised for the first time here).
+
+**A cut edge is never part of a stroked ring.** That one sentence is what the
+three answers are between them, and it is why the coast is lines.
+
+### The budget: what each layer cost and at what tolerance
+
+`--budget` prints this before anything is written, and the tolerance of each
+level is not a preference — it is **whatever the cap forces**, found by
+walking the ladder from the level's own start until the bytes fit.
+
+| layer | level | tolerance | bytes | cap | points kept | points dropped |
+|---|---|---|---|---|---|---|
+| coast | far (`land-present.json`) | 0.4° | 184.0 KB | 200 KB | 10,787 | 435,383 |
+| coast | near (24 cells) | 0.015° | 2,392.5 KB | 2,600 KB | 144,396 | 337,722 |
+| rivers | far | 0.4° | 196.5 KB | 200 KB | 5,650 | 250,736 |
+| rivers | near (19 cells) | 0.015° | 1,143.7 KB | 1,200 KB | 60,661 | 195,975 |
+| lakes | far | 0.15° | 134.8 KB | 150 KB | 4,694 | 158,158 |
+| lakes | near (20 cells) | 0.03° | 569.8 KB | 700 KB | 24,670 | 139,793 |
+| physical | far | 0.25° | 237.2 KB | 250 KB | 10,147 | 60,160 |
+| physical | near (23 cells) | 0.075° | 689.8 KB | 750 KB | 36,091 | 50,952 |
+| mountains | far | — | 68.1 KB | 100 KB | 711 | 0 |
+| mountains | near (24 cells) | — | 68.2 KB | 350 KB | 711 | 0 |
+
+A point layer has no tolerance: there is nothing along a point to take off,
+and `--budget` prints an em dash rather than a number the file does not
+depend on. **No layer hit its cap and nothing was sacrificed** — decision 9's
+order of sacrifice was not reached.
+
+**What the far levels drop, and why they drop it.** The tolerance is not what
+decides the bytes at the far level: the feature *count* is, because a Feature
+is about ninety bytes of scaffolding before a coordinate and a ring can never
+be fewer than four points. So `rivers` and `lakes` have a size floor of their
+own at that level, exactly as the coastline has had one since M36a
+(deviation 605):
+
+| layer | floor | features at the far level | at the near level |
+|---|---|---|---|
+| rivers | 1.9 degrees of length | 978 | 1,455, all of them |
+| lakes | 0.05 square degrees | 434 | 1,355, all of them |
+| physical | none | 543 of 544 | 544 |
+| mountains | none | 711 | 711 |
+
+Nothing is floored in a cell: a cell is where the small things are, and a
+reader who has fetched one has asked for them.
+
+**The rivers' floor is 1.9 and not the rounder 2 for one reason and it is this
+atlas's: the Tejo is 1.912 degrees long.** An atlas of Portuguese expansion
+whose world map has no river at Lisbon is wrong in a way no byte count
+excuses; it costs 3.5 KB of the 200 and the tolerance stays 0.4°, the
+coastline's own. What the run cannot fix by choosing a number: **the Douro,
+the Mondego and the Sado are not in `ne_10m_rivers_lake_centerlines` at all.**
+Natural Earth does not carry them at 10 m, no floor of ours dropped them, and
+no run of this tool will put them on the map. The Guadiana is in the file
+twice, as a 6.276° reach and a 0.607° one; the long reach is at both levels
+and the short one only in the cells.
+
+### The physical regions, and what "mountains" turned out to be
+
+`physical` keeps amendment A5's frozen allow-list of seventeen `FEATURECLA`
+values and drops 503 of the file's 1,047 features: **295 Island, 160 Island
+group, 37 Coast, 7 Continent, 3 Lake and one Dragons-be-here**, which between
+them would have drawn the coastline a third time. 544 survive; 543 of those
+still have geometry after the far level's 0.25°.
+
+`mountains` is `ne_10m_geography_regions_elevation_points`, all 711 of which
+carry `elevation`, so A5's striking of the "no elevations" fallback held and
+nothing invented a height. What the file actually is, though, is wider than
+its layer name: **633 mountains, 61 spot elevations, 9 depressions, 5
+plateaus, 2 passes and one cape**, from Everest at 8,848 m to an unnamed point
+at −416 m on the Dead Sea. They are all in, with their own elevation and the
+`z` Natural Earth's own zoom gives them; M37 and M38 can tell them apart by
+the elevation's sign if they want to. 67 of the 711 have no name.
+
+### What it weighs
+
+| layer | far level | cells | total | of its 8 MB share |
+|---|---|---|---|---|
+| coast | (`land-present.json`, 188,446) | 2,449,884 in 24 | 2,449,884 | |
+| rivers | 201,218 | 1,171,172 in 19 | 1,372,390 | |
+| lakes | 138,012 | 583,508 in 20 | 721,520 | |
+| physical | 242,858 | 706,306 in 23 | 949,164 | |
+| mountains | 69,749 | 69,795 in 24 | 139,544 | |
+| **`data/geo/base/`** | | | **5,632,502** | **5,500.5 KB of 8,192 KB** |
+
+`data/geo/` in total is **10,935,008 bytes (10.4 MB) of its 24 MB ceiling**,
+up from 7.4 MB after M36a. The base map is **5,500.5 KB of its 8,192 KB**,
+which leaves **2,691.5 KB for M36c's cities** against a cap of 1,000 KB — the
+cities fit with room, and 1.65 MB of the base map's ceiling will still be
+unspent when M36 is done.
+
+The cells in KB, laid out as the world is. `rivers` is empty over the Southern
+Ocean and the emptiest South Pacific; `mountains` is the one layer in all
+twenty-four:
+
+| | x0 | x1 | x2 | x3 | x4 | x5 |
+|---|---|---|---|---|---|---|
+| **rivers y3** | 42.8 | 83.1 | 3.9 | 121.1 | 105.3 | 62.6 |
+| **rivers y2** | 7.9 | 137.3 | 39.1 | 95.1 | 173.3 | 11.7 |
+| **rivers y1** | — | 62.5 | 66.8 | 79.5 | 5.7 | 39.5 |
+| **rivers y0** | — | 3.1 | — | — | — | 3.2 |
+| **lakes y3** | 24.3 | 178.7 | 3.3 | 95.0 | 56.0 | 10.2 |
+| **lakes y2** | 1.8 | 49.3 | 7.5 | 27.2 | 43.1 | 2.9 |
+| **lakes y1** | — | 5.7 | 21.9 | 18.6 | 1.5 | 16.5 |
+| **lakes y0** | — | 3.7 | — | — | 0.2 | 2.1 |
+| **physical y3** | 32.2 | 43.8 | 36.1 | 48.6 | 37.1 | 24.1 |
+| **physical y2** | 6.2 | 62.4 | 36.2 | 64.3 | 52.0 | 6.5 |
+| **physical y1** | — | 27.9 | 18.8 | 15.2 | 1.6 | 15.0 |
+| **physical y0** | 27.3 | 50.7 | 40.1 | 16.0 | 11.7 | 16.0 |
+| **mountains y3** | 3.1 | 2.0 | 1.5 | 3.6 | 2.0 | 2.2 |
+| **mountains y2** | 0.5 | 8.8 | 2.7 | 11.8 | 10.4 | 3.0 |
+| **mountains y1** | 0.9 | 2.4 | 1.3 | 3.4 | 1.3 | 3.9 |
+| **mountains y0** | 0.4 | 1.0 | 0.3 | 0.5 | 0.4 | 0.7 |
+
+**First paint moved, and not by a cell.** No cell is fetched before a picture
+and `tests/spine-pages.test.mjs` still holds every page to asking for no
+`geo/base/` file at all. What grew is `manifest.json`, which names all 110
+cells with their bytes so M37 need never send a HEAD: 33,895 → **45,638**. So
+`index.html` now fetches 45,638 + core 69,859 + sources 33,681 +
+`land-present.json` 188,446 + `palette.json` 4,071 = **341,695 B (333.7 KB)**,
+against 329,952 after M36a. Decision 9's "first view under 1 MB" still holds
+with two thirds to spare, but the manifest is fetched `no-store` on every
+page load and M36c will add up to 24 more rows to it — see deviation 618.
+
+### The manifest
+
+`manifest.schema` stays **8**: the `base` block gained layers, not a shape,
+and A8's "one more than the gate commit's" is about a shape change.
+`readBaseLayers` scans what is on disk and the block now reads:
+
+```json
+"base": {
+  "source": "natural-earth-10m",
+  "version": "v5.1.2",
+  "grid": { "lon": 60, "lat": 45, "columns": 6, "rows": 4 },
+  "layers": [
+    { "id": "coast", "geometry": "line", "world": null, "minZoom": 1, "cells": [ … 24 ] },
+    { "id": "rivers", "geometry": "line", "world": "geo/base/rivers-world.json", "minZoom": 1, "cells": [ … 19 ] },
+    { "id": "lakes", "geometry": "polygon", "world": "geo/base/lakes-world.json", "minZoom": 1, "cells": [ … 20 ] },
+    { "id": "physical", "geometry": "polygon", "world": "geo/base/physical-world.json", "minZoom": 1, "cells": [ … 23 ] },
+    { "id": "mountains", "geometry": "point", "world": "geo/base/mountains-world.json", "minZoom": 1, "cells": [ … 24 ] }
+  ]
+}
+```
+
+Every cell in the manifest is a file on disk and every file on disk is in the
+manifest; a dataset with no `data/geo/base/` still gets no `base` key at all.
+
+### Deviations 613 to 621
+
+613. **Each far level has a size floor of its own, and the rivers' is 1.9
+     because of the Tejo.** The brief speaks only of a tolerance and
+     amendment A3 only of stepping it. But the far level's bytes are decided
+     by the feature count, so `rivers` drops what is shorter than 1.9 degrees
+     and `lakes` what is smaller than 0.05 square degrees, exactly as the
+     coastline has dropped rings under 0.007 square degrees since deviation
+     605. `physical` and `mountains` need no floor. Everything dropped is at
+     the near level, in its cell, at its own detail; the numbers are in the
+     table above and in `data/geo/LICENSE`.
+614. **A feature the file left unnamed is written without a name, not
+     dropped.** `readFeature` dropped it in M36a, which brief test 3 asked
+     for. Applied to these four layers that rule would have deleted **610 of
+     the 1,355 lakes, 88 of the 1,455 rivers and 67 of the 711 peaks**,
+     against a brief that keeps *every* lake and *every* centreline (§3). So
+     the property table gained `nameRequired`, true for the cities alone —
+     a nameless dot is a dot the map can never explain, and Natural Earth
+     has none. Nothing is ever written with `undefined` in it, which is what
+     test 3 is actually about, and the test now holds both halves.
+615. **`wikidata` is read and not written.** The import reads it (614 lakes
+     and 956 physical regions carry one) but no base-map file carries it:
+     nothing in the browser follows it, M36c matches its cities against the
+     source file and not against ours, and it is bytes out of a cap that
+     decides how much coastline a reader gets. It is one line in
+     `layers.mjs` if a later run wants it.
+616. **`manifest.schema` stays 8.** Amendment A8 raises it where the index
+     gains a *shape*; this run put four more layers into a block that already
+     existed. `src/data.js`'s `assertGeneration` and every fixture manifest
+     are untouched.
+617. **The four builders are a new module, `tools/import/layers.mjs`.** The
+     coast has two builders of its own in `naturalearth.mjs` because both its
+     levels are special — the far one is `land-present.json`, which has a
+     shape to keep, and the near one is one feature per `z` because a shore
+     has no identity. The other four are one shape, and M36c's cities are the
+     same shape again. It imports only `features.mjs` and the two pure
+     geometry halves, so it cannot be in a cycle (the argument of deviation
+     610).
+618. **The manifest grew 11,743 bytes and first paint with it**, because
+     `bytes` on every cell was chosen so M37 need never send a HEAD (brief
+     §4) and there are 110 cells now. 33,895 → 45,638, and first paint
+     329,952 → 341,695. It is well inside decision 9's 1 MB, but
+     `manifest.json` is fetched `no-store` on every page load of every page,
+     including the ones that never draw a map, and M36c adds up to 24 rows
+     more. **Two ways out if the owner minds**, neither taken here: move the
+     `base` block to a hashed file of its own that only the map fetches, or
+     drop `bytes` and let M37 fetch a cell without knowing its size first.
+619. **`mountains` is wider than its name.** A5 makes the layer the 711
+     elevation points, and they are 633 mountains, 61 spot elevations, 9
+     depressions, 5 plateaus, 2 passes and a cape, down to −416 m. All are
+     written, with the elevation the file gives; the layer id stays
+     `mountains` because the brief, the manifest and M37's dispatch all name
+     it that.
+620. **`minZoom` is 1 for every layer.** It is the layer-level threshold in
+     `k` and the honest value is "the layer may be drawn from the world
+     view"; which of its features are drawn at a given zoom is each feature's
+     own `z`, which is where the brief puts that decision (§2).
+621. **One physical region is in the source and in no file.** 544 survive the
+     allow-list and 543 survive the far level's 0.25°; the one lost is a
+     region whose every ring simplification took below the sliver floor, and
+     it is back at the near level. Nothing was dropped by name.
+
+### What M36b did not do
+
+`src/` is untouched but for nothing at all: not one file under `src/` changed
+in this run. `map.js`, `layers/*.js`, `main.js`, `state.js`, `index.html` and
+`style.css` are as M36a left them, no hex value and no size was added, and the
+presences, the palette and `regions.json` were not opened. `data/imports/` is
+M36c's and is not written here.
+
+**The sandbox ran the browser tests again.** Chromium is present in this
+container, so all 1,333 tests ran and **none skipped**.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -5254,3 +5540,4 @@ glyphs done
 M36a started 2026-09-15T00:53:00Z by scheduled
 M36a done
 M36b started 2026-09-15T02:24:25Z by scheduled
+M36b done
