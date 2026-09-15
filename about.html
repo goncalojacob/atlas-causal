@@ -362,7 +362,8 @@
       is not drawn — Switzerland's boundary with Liechtenstein is the case.</p>
 
       <h3>What the colours mean, and what they do not</h3>
-      <p>There are <strong>eight</strong> of them, and <strong>there is no legend</strong>. A hue
+      <p>There are <strong>eight</strong> of them, and <strong>there is no legend by colour; the
+      layer control is the legend for everything else</strong>. A hue
       here says one thing only: <em>this is not the same territory as the one beside it</em>. It
       does not say which polity, what kind of state, whose empire, or how large — two hundred
       polities share eight colours, so a legend would be a lie four times over. Who was where is
@@ -401,6 +402,33 @@
       the wars; it does not hide the events nobody has categorised, which stay drawn until the
       whole “events” layer is switched off. What you did is in the link, so a view you narrowed is
       a view you can send.</p>
+
+      <h3>The base map, and the control that is the whole legend</h3>
+      <p>Under the borders and the marks there is a <strong>base map</strong>: the coastline drawn
+      close up, the rivers, the lakes, the physical regions — deserts, plateaux, ranges — the
+      peaks, and the cities. It is drawn from
+      <a href="https://www.naturalearthdata.com/" rel="noreferrer">Natural Earth</a> at two levels
+      of detail, coarse for the whole world and fine in the square of the grid you are looking at,
+      so that panning across the Atlantic never fetches Asia. Each feature also carries the zoom it
+      is worth showing at, which is why a river appears as you come in rather than all at once:
+      what is drawn is what the scale can carry. It is the quietest thing on the page and takes no
+      click of its own — a click on a river is a click on the sea, and puts down whatever you were
+      holding.</p>
+      <p>Everything the atlas draws is switched from one place, and <strong>that control is the
+      legend</strong>. It is four things: <em>territories</em>, <em>events</em>, a group called
+      <em>base map</em> holding one row per layer — rivers, lakes, physical, mountains, cities —
+      each with a small swatch of exactly the colour and line the map uses for it, and a group
+      called <em>events by category</em> holding one row per category with its own symbol. The two
+      groups are folded shut, so on a phone the drawer is four things to tap and not nineteen. The
+      swatches and the symbols are the whole of what the map explains about itself: there is no
+      second legend over the picture, for the reason there is none by hue.</p>
+      <p>The <strong>coastlines have no row</strong>, under either of the two names the code gives
+      them. They are the ground everything else is read against, and the close-up shore is not a
+      separate layer but the same line in more detail, so a switch for it would be a switch for a
+      level of detail and not for a thing on the map. A layer you switch off costs nothing at all:
+      it is not drawn, and its part of the map is never even fetched. What you switched is in the
+      link, as everything else is — and a link that names a shorter list means <em>these and
+      nothing else</em>, so <code>?layers=territories,events</code> opens with the base map off.</p>
       <p>A border on this map is still a modern idea imposed on the past. It is drawn here only
       for a period that had such borders and a source that dates every change of them; earlier
       periods will need diffuse zones rather than outlines, which is what the

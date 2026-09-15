@@ -4,8 +4,30 @@ What the Atlas causal is meant to become, structurally. `CLAUDE.md` has the
 rules, `CONTEXT.md` the reasoning, `STATUS.md` where we are right now. This
 file is the target: the shape every milestone builds toward.
 
-Revision 23, 15 September 2026. Sections marked ● exist in v1; things marked ○
+Revision 24, 15 September 2026. Sections marked ● exist in v1; things marked ○
 are reserved by a line in this file only — no folder, no schema, no code.
+
+**What revision 24 changed, and why.** What revision 23 put on disk is now on
+screen. No new data, no new record, no new field: M37 is the drawing and the
+switches, and everything a layer does that is not code still comes from the
+`base` block of the manifest.
+
+*The base map is drawn* ●. `src/map/layers/base.js` — one module for the six
+layers, because they differ in a class name and a geometry type and nothing
+else — in its own group between the coastlines and the territories: a border is
+a claim and a river is the ground it is drawn on. The far file above a layer's
+`minZoom`, the viewport's cells from `NEAR_ZOOM`, each feature at its own `z`,
+and a signature that keeps a pan from rebuilding four thousand paths. Nothing
+it draws takes a pointer, is focusable, or goes above the emphasis hierarchy.
+
+*The layer control is the legend, and `?layers=` carries the base map* ●.
+`src/layer-control.js` builds two rows and two collapsed groups out of
+`manifest.base.layers` and `manifest.categories` — four targets on a phone, not
+nineteen — and `LAYERS` in `src/state.js` gains the five switchable base ids
+beside the three it had. `coast` is not one of them and the coastlines have no
+row: see the `layers` paragraph under **State and the URL**. There is no legend
+by colour and there is not going to be one; the swatch beside a base layer and
+the glyph beside a category are the whole of what the map explains about itself.
 
 **What revision 23 changed, and why.** The ground under the marks. Nothing
 about the records, nothing about the state, and nothing in any link: M36
@@ -1012,7 +1034,10 @@ atlas-causal/
 │   ├── map/
 │   │   ├── projection.js         ● lon/lat → SVG and back; the only file a projection change touches
 │   │   ├── map.js                ● SVG scaffold, pan/zoom, click into a cluster
-│   │   └── layers/land.js  presences.js  events.js  regions.js   ●
+│   │   ├── grid.js               ● pure: the fixed 60x45 degree grid the base map is cut on; cellsFor(box) is which cells a viewport overlaps
+│   │   ├── glyphs.js             ● one `<symbol>` per category, and the `<use class="glyph">` the map and the timeline draw with it
+│   │   └── layers/land.js  base.js  presences.js  events.js  regions.js   ●
+│   ├── layer-control.js          ● the layer switches and the two collapsed groups — the base map with its swatches, the categories with their glyphs — which together are the map's whole legend
 │   ├── graph-view/
 │   │   ├── layout.js             ● pure: events + edges + lanes → coordinates; x is the year, y is bands and a barycentre pass
 │   │   ├── arrangement.js        ● pure: what is laid out — the band, the margin, what is held — and the key that says when again
@@ -2401,12 +2426,22 @@ the lanes are: how the atlas is drawn rather than what is selected in it, and
 in the link for the reason `view` is. `horizon` is the exception that proves the rule: it
 is written only when a reader chose a year, because its default — the
 window's far end — would lengthen every shared link and answer a question
-nobody asked. `layers` is `land`, `territories`, `events`, and a category of
-events as `events:<id>` beside them; a layer switched off costs no fetch.
+nobody asked. `layers` is `land`, `territories`, `events` and the base map's
+five — `rivers`, `lakes`, `physical`, `mountains`, `cities` — with a category of
+events as `events:<id>` beside them; a layer switched off costs no fetch, which
+is the rule the base map is built around and not a nicety.
 `land` is the one that is no longer a switch: the coastlines are the ground
 everything else is read against and are always drawn (plan decision 14), and
 the name is kept in the list only so that a link somebody shared before the
-checkbox went still parses into the same three. The token `events` means every
+checkbox went still parses. `coast` — the near coastline — is deliberately
+**not** in the list at all: it is the same shore in more detail, so a switch for
+it would be a switch for a level of detail and not for a layer. The default is
+the whole list, so `?layers=` is written only where the reader has turned
+something off, and **a link that names a subset means "these and nothing
+else"**: `?layers=territories,events`, written before the base map existed,
+opens with the base map off. The alternative — a name an old link could not have
+carried counting as on — makes turning a base layer off inexpressible in the
+URL. The token `events` means every
 category, so turning one off writes one `events:<id>` per category still on,
 and what the reader did is in the link either way. The state file
 deliberately knows none of the categories: a token is checked for shape, and
@@ -2458,6 +2493,8 @@ least 40 pixels; a link inside a sentence keeps the line it is set in.
 | `panes.js` | How wide the panes are: what a size may be, the two custom properties that are the grid's whole side of it, and the drag, the arrow keys and the double-click that set them. Remembered in `localStorage`, never in the URL. | What is drawn in any pane. |
 | `search.js` + `search-box.js` | Folds and ranks event titles and every one of an actor's names — prefix, then word start, then substring — and draws the result as a combobox. | Anything about the map or the timeline; choosing is a state change. |
 | `map/layers/*` | One layer per thing drawn, in a fixed order: coastlines, then territories, then marks, so an event sits on top of the state it happened in. Renders only records in the visible window. A stack of marks is drawn as one, with a count, and opened by a click. | Each other. |
+| `map/layers/base.js` | The base map: one module for the six layers `manifest.base` names — the near coastline, the rivers, the lakes, the physical regions, the peaks and the cities — because they differ in a class name and a geometry type and nothing else. Draws the far file above the layer's `minZoom` and the viewport's cells from `NEAR_ZOOM`, dropping a far feature whose ground a cell in hand covers; each feature at its own `z` and no closer. A signature of what is on, the zoom's bucket and the files in hand keeps a pan from rebuilding the world; path strings are cached by projection, file and tolerance. A file that will not load is dropped without a word. Nothing it draws takes a pointer or is in the tab order. | Which layers exist, what they are called, what colour they are, or when they appear — all of that is the manifest's and the stylesheet's. |
+| `layer-control.js` | The layer control, which is the map's only legend: `territories` and `events` as rows, then a collapsed `base map` group with one checkbox and one swatch per switchable base layer, then the collapsed `events by category` group with one row and one glyph per category in use. Built rather than written into `index.html` because every label and id comes from `data/` and is escaped. Reads and writes the whole `LAYERS` order, so the default writes no link at all. | What a layer draws, and what a category filter removes — that is `emphasis.js`'s one removal. |
 | `map/layers/presences.js` | The territories of the window's far end, drawn as two elements each: the outline, filled and clicked, and over it a stroke along the shard's own inland borders and nowhere else, so the coast on the picture is Natural Earth's alone (M39b). A thin line for a state, a lighter one over a stronger wash for a dependency, dashed when disputed. Hover names it and its sovereign; click selects the actor. No colour per polity — two hundred of them share one palette. | Which shard the year is in, or how one is fetched. |
 | `graph-view/layout.js` | Events, edges, the lanes and the data's extent → the coordinates of every node and every edge, plus the bands. x is the year on the whole extent; y is a barycentre pass inside the band of the lane, or over the whole field when there are no lanes. Deterministic — ties by id then weight, neighbour lists sorted — and self-checking: it counts crossings and keeps the best arrangement it saw, the plain order included. `stackLayout` is the second half: those coordinates and a zoom in, the marks and lines actually drawn out, merged within a band and never across one. | The DOM, the state, what is selected, what is in the window, why an id may not be stacked. |
 | `graph-view/graph-view.js` | Draws what the layout gives it: the bands and the year axis once, then the marks, the five edge types by pattern and weight, the window as a shade, the walked chain in madder and the convergence branches filled in. Files its stackings under `zoomBucket(k)` and draws only what is inside the rectangle on screen, the selection excepted; that rectangle is the letterboxed one the reader sees, measured through the element's matrix once and thrown away by a `ResizeObserver`. Decides the one thing the layout cannot — which events the reader is working with, and so may never be stacked. Pan and zoom; a click is resolved to the nearest mark centre within reach; clicking a consequence of the open event walks the chain, clicking a stack opens it. | Where a node goes, what merges with what, and how the panel renders anything. |
