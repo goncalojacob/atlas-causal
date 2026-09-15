@@ -50,6 +50,58 @@
         "id": "coast",
         "minZoom": 1,
         "world": null
+      },
+      {
+        "cells": [
+          {
+            "bytes": 446,
+            "file": "geo/base/rivers/x2y2.json",
+            "key": "x2y2"
+          }
+        ],
+        "geometry": "line",
+        "id": "rivers",
+        "minZoom": 1,
+        "world": "geo/base/rivers-world.json"
+      },
+      {
+        "cells": [
+          {
+            "bytes": 219,
+            "file": "geo/base/lakes/x2y2.json",
+            "key": "x2y2"
+          }
+        ],
+        "geometry": "polygon",
+        "id": "lakes",
+        "minZoom": 1,
+        "world": "geo/base/lakes-world.json"
+      },
+      {
+        "cells": [
+          {
+            "bytes": 287,
+            "file": "geo/base/physical/x2y2.json",
+            "key": "x2y2"
+          }
+        ],
+        "geometry": "polygon",
+        "id": "physical",
+        "minZoom": 1,
+        "world": "geo/base/physical-world.json"
+      },
+      {
+        "cells": [
+          {
+            "bytes": 90,
+            "file": "geo/base/mountains/x2y2.json",
+            "key": "x2y2"
+          }
+        ],
+        "geometry": "point",
+        "id": "mountains",
+        "minZoom": 1,
+        "world": "geo/base/mountains-world.json"
       }
     ],
     "source": "natural-earth-10m",

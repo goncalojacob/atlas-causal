@@ -1,6 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { mkdtemp, cp, writeFile, readdir, readFile, mkdir, rm } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import {
@@ -181,7 +182,7 @@ test('the manifest carries the base map that is on disk, cell by cell', async ()
   assert.equal(manifest.base.source, 'natural-earth-10m');
   assert.equal(manifest.base.version, 'v5.1.2');
   assert.deepEqual(manifest.base.grid, { lon: 60, lat: 45, columns: 6, rows: 4 });
-  assert.deepEqual(manifest.base.layers.map((l) => l.id), ['coast']);
+  assert.deepEqual(manifest.base.layers.map((l) => l.id), ['coast', 'rivers', 'lakes', 'physical', 'mountains']);
   const [coast] = manifest.base.layers;
   // Lines, not polygons: a cut ring stroked as a ring draws a straight cobalt
   // line across a continent at every cell border (M36 review, F1).
@@ -203,6 +204,30 @@ test('the manifest carries the base map that is on disk, cell by cell', async ()
   // Twenty-two of the twenty-four cells hold nothing and are not named: M37
   // asks for nothing that is not there.
   assert.equal(coast.cells.length < 24, true);
+
+  // The four M36b added. Each has a far level of its own under base/ — only
+  // the coastline's is `land`, already fetched at first paint — and the
+  // `geometry` M37 dispatches on says what shape the cells are in.
+  const of = (id) => manifest.base.layers.find((entry) => entry.id === id);
+  assert.deepEqual(
+    ['rivers', 'lakes', 'physical', 'mountains'].map((id) => of(id).geometry),
+    ['line', 'polygon', 'polygon', 'point'],
+  );
+  for (const id of ['rivers', 'lakes', 'physical', 'mountains']) {
+    const entry = of(id);
+    assert.equal(entry.world, `geo/base/${id}-world.json`, id);
+    assert.equal(entry.minZoom, 1, `${id}'s threshold is in k`);
+    assert.deepEqual(entry.cells.map((c) => c.key), ['x2y2'], `${id}: the fixture places' box`);
+    for (const cell of entry.cells) {
+      const text = await readFile(path.join(FIXTURE_DATA, ...cell.file.split('/')), 'utf8');
+      assert.equal(cell.bytes, Buffer.byteLength(text, 'utf8'), `${cell.key} is the bytes on disk`);
+    }
+    // Never a file that is not there: a manifest entry M37 cannot fetch is a
+    // request that 404s and a layer that silently does not draw.
+    assert.equal(existsSync(path.join(FIXTURE_DATA, ...entry.world.split('/'))), true, entry.world);
+  }
+  // The peaks are an array of small objects and not a FeatureCollection.
+  assert.ok(Array.isArray(JSON.parse(await readFile(path.join(FIXTURE_DATA, 'geo', 'base', 'mountains-world.json'), 'utf8'))));
 });
 
 test('a dataset with no base map carries no base key at all', async () => {
