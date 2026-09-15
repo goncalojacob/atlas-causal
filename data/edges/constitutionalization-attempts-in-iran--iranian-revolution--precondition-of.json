@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "constitutionalization-attempts-in-iran--iranian-revolution--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Constitutionalization attempts in Iran\", revision 1354003965"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iranian Revolution\", revision 1373278840"
+    }
+  ],
+  "from": "constitutionalization-attempts-in-iran",
+  "to": "iranian-revolution",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "This edge states its own gap and should be read carefully. Between 1911 and 1979 stand the Pahlavi seizure, the nationalisation of oil and the coup of 1953 that undid it, and the atlas holds none of them. What the constitutional revolution left behind, and what 1979 used, are two things: the fundamental law of 1906 and its supplement, which the opposition of the 1970s kept demanding the shah obey rather than demanding a new constitution, and the precedent of a clergy in politics on the side of the constitutionalists. The claim is about that inheritance and not about a continuous movement, which there was not. Marked probable, and the missing record that would carry most of the weight is 1953.",
+  "dispute": null
+}

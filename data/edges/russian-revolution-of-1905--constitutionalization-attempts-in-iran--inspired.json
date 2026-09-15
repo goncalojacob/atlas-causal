@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "russian-revolution-of-1905--constitutionalization-attempts-in-iran--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian Revolution of 1905\", revision 1371938345"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Constitutionalization attempts in Iran\", revision 1354003965"
+    }
+  ],
+  "from": "russian-revolution-of-1905",
+  "to": "constitutionalization-attempts-in-iran",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "Persia watched 1905 from next door and read it as an instruction. Russia was the power that had lent to the Qajar shahs against the customs revenue and garrisoned the Cossack Brigade that guarded them, and the sight of an autocracy conceding a duma to strikes and street protest was the news that mattered to the bazaaris, the clergy and the intellectuals who took sanctuary in Tehran in the summer of 1906 and got a constitution out of it. Persians working in the Caucasus oil fields carried the politics home. The claim is about the example; the Persian grievances, the tobacco concession and the debt and the customs administration, were Persian.",
+  "dispute": null
+}

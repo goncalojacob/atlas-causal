@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mahsa-amini-protests--2025-2026-iranian-protests--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mahsa Amini protests\", revision 1372464386"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2025–2026 Iranian protests\", revision 1373363187"
+    }
+  ],
+  "from": "mahsa-amini-protests",
+  "to": "2025-2026-iranian-protests",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The protests of 2022 and 2023 changed no leadership and left the government more firmly in place, which is what the record of them says; what they left was a repertoire, a slogan and a demonstration of how far the thing could be pushed and where it stopped. The claim is narrow and it is about inheritance rather than cause: the later protests are of the same kind and draw on the earlier, and the atlas is careful not to say more than that about an unfinished sequence.",
+  "dispute": null
+}

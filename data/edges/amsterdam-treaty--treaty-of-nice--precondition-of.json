@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "amsterdam-treaty--treaty-of-nice--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Amsterdam\", revision 1352365700"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Nice\", revision 1345303290"
+    }
+  ],
+  "from": "amsterdam-treaty",
+  "to": "treaty-of-nice",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Nice exists because Amsterdam failed. The institutional questions that enlargement to the east made unavoidable, the size of the Commission, the weighting of votes in the Council and the extent of qualified majority, were on the Amsterdam agenda and were left over, in a protocol that said they would have to be settled before enlargement. The conference of 2000 settled them badly enough that the next treaty was begun immediately. The claim is that Nice is the second attempt at Amsterdam’s unfinished business, which is what both texts say of themselves.",
+  "dispute": null
+}
