@@ -1032,7 +1032,8 @@ atlas-causal/
 │   ├── validate.mjs              ● CLI over validate/core: reads data/, checks every invariant, exit code
 │   ├── build-index.mjs           ● writes data/index/*; recursive key sort, code-unit comparator, content hash
 │   ├── build-palette.mjs         ● the adjacency of the presence shards → data/geo/palette.json; greedy colouring in actor-id order, then settling
-│   ├── build-regions.mjs         ● Natural Earth countries → lane polygons in data/geo/regions.json (run once, committed)
+│   ├── build-regions.mjs         ● Natural Earth 110m countries → lane polygons in data/geo/regions.json, and --seam-report (run once, committed); the coastline left this tool in M36a
+│   ├── import/naturalearth.mjs   ● Natural Earth 10m → the base map: land-present.json at the far level and data/geo/base/<layer>/<cell>.json at the near, each level's tolerance stepped up until its cap holds; --survey, --budget, --check. Offline, and its two pure halves are import/features.mjs (the property table and the one zoom table) and import/grid.mjs (src/map/grid.js under the name the import knows it by)
 │   ├── screens.mjs               ● docs/screens/*.png through a headless browser's own command line; no Puppeteer, no npm
 │   ├── lib/colour.mjs            ● tool-side only: sRGB ⇄ OKLab, perceptual distance, WCAG contrast; nothing in src/ computes a colour
 │   ├── bundle-to-files.mjs       ● fenced JSON in an issue body → data/<kind>/<id>.json; slug-checked before any path

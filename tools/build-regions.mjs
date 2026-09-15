@@ -1,6 +1,8 @@
 #!/usr/bin/env node
-// Natural Earth 1:110m → data/geo/land-present.json and data/geo/regions.json.
+// Natural Earth 1:110m → data/geo/regions.json, and the seam report.
 // Run once and commit; rerun only to change lanes or bump Natural Earth.
+// The coastline left this tool in M36a: it is 10 m now and
+// tools/import/naturalearth.mjs writes it.
 //
 //   node tools/build-regions.mjs [--source <dir>] [--data <dir>] [--check]
 //
@@ -191,17 +193,12 @@ function polygonsOf(geometry) {
   return [];
 }
 
-// The coastline, cut at the seam so that nothing it draws crosses the one
-// meridian that is both edges of the picture (tools/import/geometry.mjs).
-// A feature the seam misses comes back as it was, byte for byte.
-export function buildLand(land, { seam = SEAM } = {}) {
-  return {
-    type: 'FeatureCollection',
-    features: land.features
-      .map((f) => ({ type: 'Feature', properties: {}, geometry: splitAtMeridian(f.geometry, seam) }))
-      .filter((f) => f.geometry),
-  };
-}
+// The coastline is **not** written here any more. It was, from M2 to M39a, at
+// 110 m and with Natural Earth's own coordinates; since M36a it is the 10 m
+// land simplified to fit 200 KB and `tools/import/naturalearth.mjs` owns it,
+// far level and cells alike. This tool still reads ne_110m_land for
+// `--seam-report`, where the question is which meridian cuts least land and
+// the coarse file answers it as well as the fine one would.
 
 // lanes: data/regions.json. Returns the FeatureCollection and the countries
 // that fell into no lane, for the log.
@@ -294,13 +291,13 @@ async function main(argv) {
   const { collection, skipped } = buildLanes(countries, lanes);
   const geoDir = path.join(dataDir, 'geo');
   await mkdir(geoDir, { recursive: true });
-  await writeFile(path.join(geoDir, 'land-present.json'), serializeGeo(buildLand(land)), 'utf8');
   await writeFile(path.join(geoDir, 'regions.json'), serializeGeo(collection), 'utf8');
   for (const f of collection.features) {
     console.log(`${f.properties.region}: ${f.properties.countries.length} countries, ${f.geometry.coordinates.length} polygons`);
   }
   if (skipped.length) console.log(`no lane: ${skipped.join(', ')}`);
-  console.log(`land: ${land.features.length} polygons. Remember to run node tools/build-index.mjs (the manifest lists land files).`);
+  console.log(`the coastline is not written here: data/geo/land-present.json is 10 m since M36a and tools/import/naturalearth.mjs writes it.`);
+  console.log('Remember to run node tools/build-index.mjs (the manifest lists the lane boxes).');
   return 0;
 }
 

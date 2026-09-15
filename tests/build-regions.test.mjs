@@ -4,7 +4,7 @@ import { existsSync } from 'node:fs';
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import {
-  buildLanes, buildLand, CONTINENT_TO_LANE, FILES, SOURCE_SHA256, VENDOR_110M,
+  buildLanes, CONTINENT_TO_LANE, FILES, SOURCE_SHA256, VENDOR_110M,
   seamReport, chooseSeam, excludedAs, SEAM_CANDIDATES,
 } from '../tools/build-regions.mjs';
 import { readSourceJson } from '../tools/import/source.mjs';
@@ -40,12 +40,6 @@ test('lanes are unions of member countries by continent, in lane order, members 
   assert.equal(collection.features[0].geometry.coordinates.length, 3);
   assert.deepEqual(collection.features[1].properties.countries, ['Fixture country C', 'Fixture country D']);
   assert.deepEqual(skipped, ['Fixture country E (Antarctica)']);
-});
-
-test('land keeps geometry and drops properties', () => {
-  const land = buildLand({ type: 'FeatureCollection', features: [country('x', 'y', { type: 'Polygon', coordinates: square(0, 0, 1, 1) })] });
-  assert.deepEqual(land.features[0].properties, {});
-  assert.equal(land.features[0].geometry.type, 'Polygon');
 });
 
 test('every v1 lane has a continent mapping', async () => {
@@ -160,12 +154,17 @@ test('the committed sources choose 150E', async (t) => {
 // carry it. Nothing under data/geo/ may cross 30°W — one ring across it is one
 // shape drawn as a smear across the whole picture.
 test('no committed geometry crosses the seam', async () => {
+  const base = path.join(ROOT, 'data', 'geo', 'base', 'coast');
   const files = [
     path.join(ROOT, 'data', 'geo', 'land-present.json'),
     path.join(ROOT, 'data', 'geo', 'regions.json'),
     ...(await readdir(path.join(ROOT, 'data', 'geo', 'presences')))
       .filter((name) => name.endsWith('.json'))
       .map((name) => path.join(ROOT, 'data', 'geo', 'presences', name)),
+    // M36a: the base map's cells are cut on the grid, and then at the seam
+    // like everything else. A cell holding a line across 30°W would be one
+    // stroke drawn from one edge of the picture to the other.
+    ...(existsSync(base) ? (await readdir(base)).filter((name) => name.endsWith('.json')).map((name) => path.join(base, name)) : []),
   ];
   assert.ok(files.length >= 4);
   for (const file of files) {
