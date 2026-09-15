@@ -160,7 +160,7 @@ the argument is written out in full.
 | `genocide-convention` | ← `precondition-of` | `charter-of-the-united-nations` | 2 | The Charter is the machinery the convention was made in and the authority it was made under: the General Assembly resolved in December 1946 that genocide was a crime under international law, the Economic and Social Council had the text drafted, and the Assembly adopted it two years later. |
 |  | ← `caused` | `the-holocaust` |  | The convention of 9 December 1948 was written because of what had been done in Europe between 1941 and 1945, and by a man who had lost his family in it. |
 | `treaty-of-paris` | → `precondition-of` | `treaty-of-rome` | 2 | The Coal and Steel Community of 1951 is the institution the Community of 1957 was built on top of: the same six states, a High Authority that became a Commission, a Court, an Assembly, and the demonstration that supranational government of one sector could be made to work. |
-| `convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados` | ← `caused` | `world-war-ii` | 2 | The convention of 28 July 1951 was written for the displaced of that war and said so: as adopted it applied only to people who had become refugees as a result of events occurring before 1 January 1951, and the geographical reservation let a state limit it to Europe. |
+| `convention-relating-to-the-status-of-refugees` | ← `caused` | `world-war-ii` | 2 | The convention of 28 July 1951 was written for the displaced of that war and said so: as adopted it applied only to people who had become refugees as a result of events occurring before 1 January 1951, and the geographical reservation let a state limit it to Europe. |
 | `treaty-of-san-francisco` | ← `precondition-of` | `korean-war` | 2 | Korea is why the peace with Japan was made in 1951 rather than later, and why it was made on those terms. |
 |  | ← `caused` | `world-war-ii` |  | This is the peace that ended the war’s Pacific half, six years late and on terms the intervening years had changed. |
 | `1952-egyptian-revolution` | ← `caused` | `1948-arab-israeli-war` | 2 | The Free Officers were made in Palestine. |
@@ -500,17 +500,28 @@ owner's to take:
 
 ### 5d. Two records that need fixing before anybody signs them
 
+**Both were fixed by M44c on 15 September 2026**, which is the small run this
+section asks for; the two entries stand as M44b wrote them and each carries
+what was done.
+
 - `croatian-war-of-independence`, retracted, carries a start of 12 November
   1995 and an end of 7 August 1995 — the Erdut agreement and the close of
   Operation Storm — for a war its own cached lead dates 1991 to 1995. Whoever
-  un-retracts it must fix the dates first.
-- `convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados`, kept, has a
+  un-retracts it must fix the dates first. *(M44c: the span is 1991 to 1995
+  and `date` and `endDate` are gone. Neither imported date is the war's
+  beginning or its end, and the run had no source it could open for the real
+  ones, so it supplied none.)*
+- `convention-relating-to-the-status-of-refugees`, kept, has a
   Portuguese title and a Portuguese id because the import took the item's
   Portuguese label. `CLAUDE.md` says everything is in English. It was not
   renamed here, because renaming a record is not a wiring round's business and
   the corpus already holds at least one other record in the same position
-  (`eleicoes-legislativas-regionais-na-madeira-em-1976`). It wants a small run
-  of its own.
+  (`1976-madeira-regional-legislative-election`). It wants a small run
+  of its own. *(M44c: imported as
+  `convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados` and
+  `eleicoes-legislativas-regionais-na-madeira-em-1976`; renamed, with
+  seventeen others in the same state, to the English ids used above. Every
+  former id resolves. The list is in `STATUS.md` under M44c.)*
 
 - `tests/map-browser.test.mjs`, "zoomed to Portugal, Lisbon is named once and
   its title carries its names", reads the label layer while the base map's
