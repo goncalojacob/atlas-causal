@@ -113,3 +113,29 @@ migrated hours later.
   `\u001f`, and `site.test.mjs` now fails on any control byte under `src/`,
   `tools/` or `tests/`. `awk` and `sed -n` remain the fallback for a file
   outside those trees; `grep -a` reads one anyway.
+
+## Amendment, 15 September 2026 — the validator and the index
+
+**A run that writes anything under `data/` validates with
+`node tools/validate.mjs --index`, not `node tools/validate.mjs`.** Without the
+flag the validator reads `data/` directly and is content whatever state
+`data/index/` is in; with it, it reads the repository the way the site and nine
+of the tests do. Sections 3 and 4 above, and every brief's "Done when" that
+names the validator, are read with `--index` from today wherever the run wrote
+a record.
+
+**A run that writes under `data/` also runs `node tools/build-index.mjs` and
+commits the result**, because the index is generated from the records and goes
+stale on the commit that writes one. `--index` is what catches the run that
+forgot.
+
+This is not a preference. `m44` carried a stale index from M44a to M44c:
+`--index` reported **108 errors** on that branch's head and **nine tests were
+failing the whole time, unseen** — `build-index`, `prerender`, five in
+`spine-loader` and `validate-cli` — because the protocol named the validator
+without the flag and two milestones read their own green and believed it
+(deviation 684 on `m44`, deviation 696 in `STATUS.md`). It cost two milestones
+of false green. It must not cost a third.
+
+A run that writes no record is unchanged: the bare validator is what it needs,
+and `--index` is byte-identical for it.

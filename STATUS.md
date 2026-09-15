@@ -7313,6 +7313,24 @@ it — `node tools/build-index.mjs` over the merged corpus — and
      tools/validate.mjs --index`: **2,259 records, 0 errors**. The rebuild was
      still run rather than reasoned about — being right about a generated tree
      is not the same as checking it.
+696. **The run protocol named the wrong command, and it is amended.**
+     `docs/run-protocol.md` said "Validator and tests green at every commit"
+     and every brief's "Done when" named `node tools/validate.mjs`; without
+     `--index` the validator reads `data/` directly and is content whatever
+     state `data/index/` is in. That is the whole mechanism of `m44`'s
+     deviation 684: M44a's import batches and M44b's fifty-four records went in
+     without `build-index`, `--index` would have reported 108 errors from the
+     first import commit, nine tests that read the repository through the index
+     were failing the entire time, and two milestones read their own green and
+     believed it. The amendment of 15 September says that a run that writes
+     anything under `data/` validates with `--index` and runs `build-index` and
+     commits the result, and that a run that writes no record is unchanged.
+     **This is the owner's decision, taken before this run** — deviation 684
+     left "whether the protocol should name `--index`" to whoever owns the
+     protocol, and the owner answered it in the instruction that ordered this
+     merge. It is written here rather than only in the protocol because a
+     deviation is where a run says what it changed that its brief did not ask
+     for.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
