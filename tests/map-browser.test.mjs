@@ -8,6 +8,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { withBrowser, open, waitFor, seenIntro, skip } from './browser.mjs';
+import { cellsFor } from '../src/map/grid.js';
+import { parseBbox } from '../src/state.js';
 
 // Wide and short, so the map area is far wider than 960 × 540's ratio and
 // the picture spills well outside the nominal box on both sides.
@@ -1000,5 +1002,248 @@ test('?layers=events:war opens on the wars, the uncategorised, and nothing else 
     const back = await page.eval('return new URLSearchParams(location.search).get("layers");');
     assert.doesNotMatch(back ?? '', /events:/);
     assert.match(back ?? '', /\bevents\b/);
+  });
+});
+
+// --- the base map ----------------------------------------------------------
+//
+// M37a. Six layers of Natural Earth under the territories and over the
+// coastlines, appearing at the zooms the manifest names, fetched a cell at a
+// time and never before the first picture. On the repository's own data and
+// not the fixtures: the fixture base map is one cell of each layer, and what
+// these are about is a real viewport over a real grid.
+
+const BASE_ORDER = `
+  const viewport = document.querySelector('#map .viewport');
+  const classes = [...viewport.children].map((el) => el.getAttribute('class'));
+  return {
+    classes,
+    land: classes.findIndex((c) => c.split(' ').includes('layer-land')),
+    base: classes.findIndex((c) => c.split(' ').includes('layer-base')),
+    presences: classes.findIndex((c) => c.split(' ').includes('layer-presences')),
+    events: classes.findIndex((c) => c.split(' ').includes('layer-events')),
+    groups: [...document.querySelectorAll('#map .layer-base > g')]
+      .map((el) => el.getAttribute('class').replace('layer layer-base-', '')),
+    pointerEvents: getComputedStyle(document.querySelector('#map .layer-base')).pointerEvents,
+  };`;
+
+// Every file of the base map the browser has actually asked for, split into
+// the far level — one file for the whole world — and the cells.
+const BASE_REQUESTS = `
+  const names = performance.getEntriesByType('resource').map((e) => e.name)
+    .filter((n) => n.includes('geo/base/'));
+  const cell = /geo\\/base\\/([a-z]+)\\/(x\\dy\\d)\\.json/;
+  return {
+    world: names.filter((n) => /geo\\/base\\/[a-z]+-world\\.json/.test(n))
+      .map((n) => n.replace(/^.*geo\\/base\\//, '')).sort(),
+    cells: names.map((n) => cell.exec(n)).filter(Boolean).map((m) => m[1] + '/' + m[2]).sort(),
+  };`;
+
+const BASE_COUNTS = `
+  const out = { total: 0, byLayer: {} };
+  for (const g of document.querySelectorAll('#map .layer-base > g')) {
+    const id = g.getAttribute('class').replace('layer layer-base-', '');
+    out.byLayer[id] = g.children.length;
+    out.total += g.children.length;
+  }
+  return out;`;
+
+const K_NOW = `
+  const t = document.querySelector('#map .viewport').getAttribute('transform') || '';
+  const m = /scale\\(([-0-9.]+)\\)/.exec(t);
+  return m ? Number(m[1]) : 1;`;
+
+test('the base map is drawn under the territories and over the coastlines', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url(''), 'return Boolean(document.querySelector("#map .layer-base > g"));');
+    const seen = await page.eval(BASE_ORDER);
+    assert.ok(seen.land >= 0 && seen.base >= 0 && seen.presences >= 0,
+      `the three groups are there: ${seen.classes.join(' | ')}`);
+    assert.ok(seen.land < seen.base, 'over the coastlines: a river inside the land is the point');
+    assert.ok(seen.base < seen.presences, 'under the territories: a border is a claim, a river is the ground');
+    assert.ok(seen.base < seen.events, 'and under the marks');
+    // One group per layer of `manifest.base.layers`, in the manifest's order.
+    assert.deepEqual(seen.groups, ['coast', 'rivers', 'lakes', 'physical', 'mountains', 'cities']);
+    // A river is not a control.
+    assert.equal(seen.pointerEvents, 'none');
+  });
+});
+
+test('at the whole world the base map fetches its far files and not one cell', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url(''), 'return Boolean(document.querySelector("#map .layer-base > g"));');
+    await page.eval(FREEZE_TIMELINE);
+    // The far files arrive a frame and a task after the first picture; wait
+    // until something of the base map is actually drawn.
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-base circle, #map .layer-base path").length > 0;',
+      'the base map to be drawn');
+    const asked = await page.eval(BASE_REQUESTS);
+    assert.deepEqual(asked.cells, [], `a cell was fetched at the whole world: ${asked.cells.join(' · ')}`);
+    // `coast` has no far file of its own — its far level is `land-present.json`,
+    // which `land.js` has always drawn (M36a, deviation 601).
+    assert.ok(!asked.world.some((n) => n.startsWith('coast')), 'and no far coastline of its own');
+    assert.ok(asked.world.length > 0, `the far files are asked for: ${asked.world.join(' · ')}`);
+    // And the coastline is still `land.js`'s: nothing near is in hand, so the
+    // far stroke stays on.
+    const near = await page.eval('return document.querySelector("#map .layer-land").classList.contains("near-coast");');
+    assert.equal(near, false, 'the far coastline keeps its stroke until the near one covers the view');
+
+    const drawn = await page.eval(BASE_COUNTS);
+    assert.equal(drawn.byLayer.coast, 0, 'no near coastline at the world view');
+    assert.ok(drawn.total > 0 && drawn.total < 600,
+      `the world view is quiet: ${drawn.total} elements (${JSON.stringify(drawn.byLayer)})`);
+  });
+});
+
+// The ceiling. At k = 8 over Portugal the DOM under `.layer-base` is the near
+// cells of one viewport and the far features outside them that the zoom is
+// worth — a few thousand elements, and nothing that grows with the corpus or
+// with how long the reader has been panning. The number below is generous
+// against what this measures today (about 2 500) and still an order of
+// magnitude under "the whole base map", which is some 50 000 features.
+const BASE_CEILING = 6000;
+
+// The box that puts the map at k = 8 over Portugal: 45° of longitude in 960
+// units and 25.32° of latitude in 540 (projection.js). East of −30°, which is
+// the seam this picture is cut at — a box spanning it is two strips and
+// `bboxTransform` answers it with the whole world, which is not a zoom.
+const PORTUGAL_AT_8 = '?bbox=-28,25.34,17,50.66';
+
+test('zoomed into Portugal the cells of the viewport are fetched and no others', { skip }, async () => {
+  await wide(async (page, url) => {
+    // Deliberately not FREEZE_TIMELINE: that resizes the map's pane, and what
+    // is being compared here is the cells fetched for a viewport against the
+    // box that same viewport publishes. Nothing is panned, so nothing needs
+    // the pane held still.
+    await open(page, url(PORTUGAL_AT_8), 'return Boolean(document.querySelector("#map .layer-base > g"));');
+    const k = await page.eval(K_NOW);
+    assert.ok(k > 7.5 && k < 8.5, `the link opened at k = 8 (${k})`);
+
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-base-coast path").length > 0;',
+      'the near coastline');
+    // Give the rest of the cells their moment: every one of them is a request
+    // made in the same render as the first.
+    await waitFor(page, `return (() => {
+      const names = performance.getEntriesByType('resource').map((e) => e.name);
+      return ['rivers', 'lakes', 'physical', 'mountains', 'cities']
+        .every((id) => names.some((n) => n.includes('geo/base/' + id + '/')));
+    })();`, 'a cell of every layer');
+
+    const asked = await page.eval(BASE_REQUESTS);
+    const keys = [...new Set(asked.cells.map((name) => name.split('/')[1]))];
+    // x2y2 is the cell Lisbon is in; the viewport at this box reaches the two
+    // rows and two columns around it and no further (grid.test.mjs).
+    assert.ok(keys.includes('x2y2'), `the cell Portugal is in: ${keys.join(' ')}`);
+    // The box in the link is what the reader asked to see; the box the layer
+    // works from is the rectangle the pane really shows, which is wider —
+    // letterboxing (projection.js). The map publishes that one as soon as the
+    // layout settles, and a wheel of no depth moves nothing and makes sure it
+    // has, so the two halves of this assertion are about the same rectangle.
+    await page.eval(zoomIn(0));
+    await waitFor(page, `return new URLSearchParams(location.search).get('bbox') !== ${
+      JSON.stringify(PORTUGAL_AT_8.replace('?bbox=', ''))};`,
+      'the box the pane really shows to be published');
+    const published = parseBbox(new URLSearchParams(await page.eval('return location.search;')).get('bbox'));
+    const allowed = new Set(cellsFor(published));
+    for (const key of keys) assert.ok(allowed.has(key), `${key} is outside the viewport (${[...allowed].join(' ')})`);
+    assert.ok(keys.length <= 6, `a handful of cells, not the grid: ${keys.join(' ')}`);
+
+    const drawn = await page.eval(BASE_COUNTS);
+    assert.ok(drawn.byLayer.coast > 0, 'the near coastline is drawn');
+    assert.ok(drawn.total < BASE_CEILING,
+      `the DOM under .layer-base stays bounded: ${drawn.total} elements (${JSON.stringify(drawn.byLayer)})`);
+    // And the far coastline's stroke is off, because every cell of the view is
+    // in hand and the near lines are the coastline now (A2).
+    const near = await page.eval('return document.querySelector("#map .layer-land").classList.contains("near-coast");');
+    assert.equal(near, true, 'the far coastline gives up its stroke');
+  });
+});
+
+test('a pan does not rebuild the base map', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url(PORTUGAL_AT_8),
+      'return Boolean(document.querySelector("#map .layer-base-rivers path"));');
+    await page.eval(FREEZE_TIMELINE);
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-base-rivers path").length > 0;', 'the rivers');
+    await page.eval(`
+      window.__first = document.querySelector('#map .layer-base-rivers path');
+      window.__count = document.querySelector('#map .layer-base-rivers').children.length;
+      return true;`);
+    // A short pan: far enough to move the picture, not far enough to leave the
+    // cells already in hand.
+    await page.eval(panBy(-60));
+    await waitFor(page, 'return new URLSearchParams(location.search).has("bbox");', 'the box to be published');
+    const same = await page.eval(`
+      const group = document.querySelector('#map .layer-base-rivers');
+      return {
+        count: group.children.length,
+        was: window.__count,
+        sameNode: group.firstElementChild === window.__first,
+      };`);
+    assert.equal(same.count, same.was, 'the same number of rivers');
+    assert.equal(same.sameNode, true, 'and the very same first path node: nothing was rebuilt');
+  });
+});
+
+test('a click on a river selects nothing and puts down what was held', { skip }, async () => {
+  await wide(async (page, url) => {
+    // A river is drawn over whatever ground it runs through, and it must never
+    // take that ground's pointer: with the territories on, what the cursor
+    // finds over a river is the territory, and clicking there still picks the
+    // actor up. So the ground is taken away here — `?layers=land,events` — and
+    // then a click on a river is a click on the sea, which is what puts down
+    // what the reader was holding (map.js).
+    await open(page, url(`${PORTUGAL_AT_8}&layers=land,events&selected=carnation-revolution-1974`),
+      'return Boolean(document.querySelector("#map .layer-base > g"));');
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-base-rivers path").length > 0;', 'the rivers');
+    assert.equal(await page.eval('return new URLSearchParams(location.search).get("selected");'),
+      'carnation-revolution-1974', 'something is held to begin with');
+
+    // Nothing the base map draws carries an attribute any click handler reads:
+    // `e.target.closest('[data-id], [data-cluster], [data-actor]')` must not
+    // start matching a river, a lake or a city dot.
+    const inert = await page.eval(`
+      const nodes = [...document.querySelectorAll('#map .layer-base *')];
+      return {
+        count: nodes.length,
+        marked: nodes.filter((el) => el.closest('[data-id], [data-cluster], [data-actor]')).length,
+        focusable: nodes.filter((el) => el.hasAttribute('tabindex')).length,
+        pointer: [...new Set(nodes.slice(0, 200).map((el) => getComputedStyle(el).pointerEvents))],
+      };`);
+    assert.ok(inert.count > 0, 'the base map is drawn');
+    assert.equal(inert.marked, 0, 'no base feature is a control');
+    assert.equal(inert.focusable, 0, 'and none is in the tab order');
+    assert.deepEqual(inert.pointer, ['none'], 'and none takes a pointer');
+
+    // A point that really is **on** a river — the middle of its own length,
+    // not the middle of its bounding box.
+    const at = await page.eval(`
+      const pane = document.querySelector('#map svg.map').getBoundingClientRect();
+      for (const path of document.querySelectorAll('#map .layer-base-rivers path')) {
+        const length = path.getTotalLength();
+        if (!length) continue;
+        const ctm = path.getScreenCTM();
+        if (!ctm) continue;
+        const local = path.getPointAtLength(length / 2);
+        const p = new DOMPoint(local.x, local.y).matrixTransform(ctm);
+        if (p.x < pane.left + 4 || p.x > pane.right - 4 || p.y < pane.top + 4 || p.y > pane.bottom - 4) continue;
+        const under = document.elementFromPoint(p.x, p.y);
+        if (!under || under.closest('[data-id], [data-cluster], [data-actor]')) continue;
+        return { x: p.x, y: p.y, under: under.getAttribute('class') || under.tagName };
+      }
+      return null;`);
+    assert.ok(at, 'there is a river on screen with nothing of the marks over it');
+    // What the cursor finds there is never the river itself.
+    assert.ok(!String(at.under).includes('layer-base'), `the river takes no pointer (${at.under})`);
+
+    await page.eval(`
+      const opts = { bubbles: true, cancelable: true, clientX: ${at.x}, clientY: ${at.y} };
+      const target = document.elementFromPoint(${at.x}, ${at.y});
+      target.dispatchEvent(new PointerEvent('pointerdown', { ...opts, pointerId: 7 }));
+      target.dispatchEvent(new PointerEvent('pointerup', { ...opts, pointerId: 7 }));
+      target.dispatchEvent(new MouseEvent('click', opts));
+      return true;`);
+    await waitFor(page, 'return !new URLSearchParams(location.search).get("selected");',
+      'the selection to be put down, exactly as a click on the sea puts it down');
   });
 });
