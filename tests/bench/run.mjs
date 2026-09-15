@@ -252,6 +252,117 @@ async function benchPresences(atlas) {
   }), `→ ${years.length} years`);
 }
 
+// The base map, on the busiest cell of the real grid. What one render of one
+// layer costs: the grouping — the ids deduplicated across cells, the far
+// file's features dropped where a cell covers them, the `z` of each feature
+// against the zoom — and then the path building, which is the simplifier and
+// the projection over every point that survives.
+//
+// Three zooms, because the cost is not in the file but in how much of it the
+// zoom is worth: at k = 1 only the features the data marks `z: 1` are drawn
+// and at k = 8 nearly all of them are. The far files are in hand throughout,
+// so what moves between the rows is the work and not the network.
+//
+// Nothing here asserts. The number worth writing in STATUS.md is the ratio
+// between two runs of this file on the same machine.
+async function benchBase() {
+  const { readFile } = await import('node:fs/promises');
+  const { fileURLToPath } = await import('node:url');
+  const pathMod = await import('node:path');
+  const { createBaseLayer } = await import('../../src/map/layers/base.js');
+  const { worldProjection, viewBboxIn } = await import('../../src/map/projection.js');
+  const { cellBounds } = await import('../../src/map/grid.js');
+  const root = pathMod.resolve(pathMod.dirname(fileURLToPath(import.meta.url)), '..', '..');
+  const read = async (file) => JSON.parse(await readFile(pathMod.join(root, 'data', file), 'utf8'));
+  const manifest = await read('index/manifest.json');
+  if (!manifest.base) {
+    console.log('base — skipped: this dataset has no base map under data/geo/base/.');
+    return;
+  }
+
+  // Node has no DOM and this measures no painting: enough of an element for
+  // `util/dom.js` to build into, and not one line more (base-layer.test.mjs
+  // holds the layer to what it puts there).
+  const element = (tag) => {
+    const el = {
+      tagName: tag,
+      attrs: new Map(),
+      childNodes: [],
+      textContent: '',
+      setAttribute: (k, v) => el.attrs.set(k, String(v)),
+      getAttribute: (k) => (el.attrs.has(k) ? el.attrs.get(k) : null),
+      appendChild: (child) => { el.childNodes.push(child); return child; },
+      replaceChildren: (...children) => { el.childNodes = children; },
+    };
+    return el;
+  };
+  globalThis.document = { createElementNS: (_ns, tag) => element(tag), createElement: element };
+
+  // The busiest cell of the grid, by the bytes the manifest says its files
+  // weigh — the worst case a reader can pan into, not an average one.
+  const weight = new Map();
+  for (const layer of manifest.base.layers) {
+    for (const cell of layer.cells) weight.set(cell.key, (weight.get(cell.key) ?? 0) + cell.bytes);
+  }
+  const [busiest, bytes] = [...weight].sort((a, b) => b[1] - a[1])[0];
+  const projection = worldProjection({ width: 960, height: 540 });
+  // A viewport squarely inside that cell, so `cellsFor` names it and its
+  // neighbours and the layer is doing the work the reader's screen asks for.
+  const [west, south, east, north] = cellBounds(busiest);
+  const centre = [(west + east) / 2, (south + north) / 2];
+  const [px, py] = projection.project(centre);
+  const viewAt = (k) => viewBboxIn(projection, { x: 960 / 2 - px * k, y: 540 / 2 - py * k, k },
+    { x0: 0, y0: 0, x1: 960, y1: 540 });
+
+  console.log(`the base map — ${manifest.base.layers.length} layers over cell ${busiest}, ${
+    (bytes / 1024).toFixed(1)} KB of cells, grouping and path building`);
+  for (const k of [1, 4, 8]) {
+    const view = viewAt(k);
+    // Every file the layer could want, in hand before the clock starts: this
+    // measures the render and not the disk.
+    const held = new Map();
+    const layers = [];
+    for (const spec of manifest.base.layers) {
+      const files = [spec.world, ...spec.cells.map((cell) => cell.file)].filter(Boolean);
+      for (const file of files) if (!held.has(file)) held.set(file, await read(file));
+      const group = element('g');
+      layers.push({ id: spec.id, group, spec });
+    }
+    // A fresh layer per row, so no path string is carried over from the zoom
+    // before: what is measured is a reader arriving at this zoom, not one who
+    // has already been here.
+    const build = () => layers.map(({ id, group, spec }) => createBaseLayer(group, projection, {
+      id,
+      geometry: spec.geometry,
+      minZoom: spec.minZoom,
+      world: spec.world,
+      cells: spec.cells,
+      nearZoom: 4,
+      load: (file) => Promise.resolve(held.get(file)),
+      loaded: (file) => held.get(file) ?? null,
+    }));
+    let drawn = 0;
+    const result = measure(() => {
+      drawn = 0;
+      for (const layer of build()) drawn += layer.render({ k, view, on: true }).drawn;
+    });
+    row(`k=${k}, cold`, result, `→ ${drawn} elements`);
+
+    // And what a pan costs once the picture is up. The box moves and the cells
+    // it names do not, so the signature is equal and nothing is grouped or
+    // built again: the ratio between these two rows is what the signature is
+    // worth, and it is the number STATUS.md records.
+    const warm = build();
+    for (const layer of warm) layer.render({ k, view, on: true });
+    const nudged = viewAt(k).map((v, i) => (i % 2 === 0 ? v + 0.05 : v));
+    const panned = measure(() => {
+      for (const layer of warm) layer.render({ k, view: nudged, on: true });
+    });
+    row(`k=${k}, panned`, panned, `→ the same ${drawn} elements, ${
+      (result.best / Math.max(panned.best, 1e-9)).toFixed(0)}x cheaper`);
+  }
+}
+
 // The timeline at 20 000 events: what one move of the band recomputes, with
 // the DOM left out because Node has none. Three spans, because the cost is
 // not in the corpus but in what falls inside the band and its margin — a
@@ -808,6 +919,7 @@ const CASES = {
   notch: benchNotch,
   'graph-notch': benchGraphNotch,
   presences: benchPresences,
+  base: benchBase,
   timeline: benchTimeline,
   queries: benchQueries,
   search: benchSearch,
