@@ -69,7 +69,7 @@ manifest's diff is 86 byte counts and nothing else.
 `<title>`, place records with no Natural Earth city, and the physical features
 at priority 2. No place record carries a dated name today (0 of 26), so nothing
 on the real map is dated yet whatever M38b writes. The full account and
-deviations 649 to 657 are in **`## M38a: one placer, and the cities named`**,
+deviations 649 to 658 are in **`## M38a: one placer, and the cities named`**,
 below; `ARCHITECTURE.md` is untouched and is M38b's (deviation 657).
 
 2026-09-15, after **M37b** (`docs/m37-brief.md`, with its amendments after
