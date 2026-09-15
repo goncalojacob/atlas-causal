@@ -2216,6 +2216,15 @@
         }
       ]
     },
+    "molotov-ribbentrop-pact--katyn-massacre--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "molotov-ribbentrop-pact--winter-war--enabled": {
       "from": "git",
       "versions": [
@@ -3085,6 +3094,15 @@
     },
     "world-war-i--easter-rising--enabled": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "world-war-i--february-revolution--caused": {
+      "from": "revised",
       "versions": [
         {
           "first": true,

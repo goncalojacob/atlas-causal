@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "molotov-ribbentrop-pact--katyn-massacre--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "wants-a-real-citation"
+    ],
+    "note": "Drafted by the assistant in M44c under the owner's dated exception, from the sources the endpoints already carry and not from a reading of them. `probable` and not `consensus`: the only sources here are Wikipedia, and rule 22 lets that pass while a historian would not. A person raising this to consensus supplies two citations by different authors."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Katyn massacre\", revision 1368830884"
+    }
+  ],
+  "from": "molotov-ribbentrop-pact",
+  "to": "katyn-massacre",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The prisoners shot in April and May 1940 were taken in September 1939, when the Soviet Union occupied eastern Poland — the half the pact's secret protocol of 23 August had assigned it. Without that protocol there is no Soviet advance into Poland that autumn, and without the advance the NKVD is not holding twenty-two thousand Polish officers, policemen and officials to shoot. The edge is `enabled` rather than `caused` because the pact says nothing about what to do with prisoners: the order of March 1940 was Stalin's and Beria's, and the reasoning behind it — removing the officer class of a state the two signatories had agreed to abolish — belongs to Soviet policy and not to the treaty. What the treaty did was put those men in Soviet hands, which is the sense in which it is a condition of the massacre and not its cause.",
+  "dispute": null
+}

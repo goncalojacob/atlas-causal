@@ -716,6 +716,18 @@
     },
     {
       "dissent": false,
+      "id": "molotov-ribbentrop-pact--katyn-massacre--enabled",
+      "kind": "edge",
+      "locator": "\"Katyn massacre\", revision 1368830884"
+    },
+    {
+      "dissent": false,
+      "id": "molotov-ribbentrop-pact--katyn-massacre--enabled",
+      "kind": "edge",
+      "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
+    },
+    {
+      "dissent": false,
       "id": "molotov-ribbentrop-pact--winter-war--enabled",
       "kind": "edge",
       "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
@@ -1097,6 +1109,18 @@
       "id": "world-war-i--easter-rising--enabled",
       "kind": "edge",
       "locator": "\"Easter Rising\", revision 1374874334"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--february-revolution--caused",
+      "kind": "edge",
+      "locator": "\"February Revolution\", revision 1370618162"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--february-revolution--caused",
+      "kind": "edge",
+      "locator": "\"World War I\", revision 1372979664"
     },
     {
       "dissent": false,
