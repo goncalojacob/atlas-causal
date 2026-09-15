@@ -7235,10 +7235,11 @@
       "origin": {
         "tool": "assistant"
       },
+      "parent": "crisis-portugal",
       "review": {
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-15",
       "status": "active",
       "title": "Request for financial assistance"
     },
@@ -7260,6 +7261,7 @@
       "origin": {
         "tool": "assistant"
       },
+      "parent": "crisis-portugal",
       "review": {
         "flags": [
           "date"
@@ -7267,7 +7269,7 @@
         "note": "Filed in a run that could not reach a source: no date on this record has been checked against one.",
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-15",
       "status": "active",
       "title": "Exit from the adjustment programme"
     },
