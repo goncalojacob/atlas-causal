@@ -82,6 +82,23 @@ export const SHOTS = Object.freeze([
   // the page says in its own corner that they are synthetic.
   { name: 'glyphs-map', query: '?fixtures=1&group=region&from=1195&to=1305', width: 1280, height: 820, scale: 2,
     what: 'the symbols over the marks and at the left of a bar, on the fixtures' },
+  // M37. The base map at both of its levels, and `?bbox=` does the zooming
+  // because the state is the URL and there is nothing here to click. The
+  // territories are switched off in both — through the very link the control
+  // writes — because the base map is what these are of, and eight hues of wash
+  // over it is exactly the emphasis hierarchy working as it should. The first
+  // is the whole world, where no cell has been fetched and what is drawn is
+  // the far files alone; the second is Lisbon at the near level, where the
+  // shore, the rivers, the lakes, the peaks and the cities are the cells of
+  // that one viewport and the far coastline has given up its stroke. Neither
+  // group of the control is open: a `<details>` opens on a click or on an
+  // anchor, and what these two are for is the picture.
+  { name: 'm37-base-world', query: '?from=1911&to=1911&layers=land,events,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'the base map at the whole world: the far files, no cell, and no wash over them' },
+  { name: 'm37-base-lisbon', query: '?from=1911&to=1911&bbox=-12,36.5,-4,45&layers=land,events,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'the near level over Lisbon: shore, rivers, lakes, peaks and cities from the cells' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
