@@ -7299,6 +7299,20 @@ it — `node tools/build-index.mjs` over the merged corpus — and
      it was not numbered 669. So the one with no readers moved. Its text now
      says it was renumbered and by whom; the commit message that names it 684
      is history and is left as it was written.
+695. **The index rebuild over the merged corpus is byte-identical, so there is
+     no index commit.** `node tools/build-index.mjs` was run on the merge and
+     wrote every shard, the manifest and the two pages; `git status` came back
+     empty. The reason is that none of `m0`'s ten commits touches `data/` or
+     `data/index/` — they are `src/map/`, two test files, `docs/m45-brief.md`,
+     `docs/history/pr-sections.md` and `STATUS.md` — so the three-way merge had
+     only one side's index to take, took `m44`'s, and `m44`'s was already the
+     index of exactly these records: its last commit, `9257d8ab`, rebuilt the
+     history shards after the commits that changed the records. The merge
+     commit itself changes no record, and the history shards are keyed by the
+     commits that wrote records, not by every commit. `node
+     tools/validate.mjs --index`: **2,259 records, 0 errors**. The rebuild was
+     still run rather than reasoned about — being right about a generated tree
+     is not the same as checking it.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
