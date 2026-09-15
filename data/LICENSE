@@ -25,8 +25,11 @@ Per directory, with the attribution each one asks for
   data/presences/
     CC BY-NC-SA 4.0, all of it. Attribution as above.
 
-  data/geo/land-present.json, data/geo/regions.json
-    Public domain. Attribution: Natural Earth.
+  data/geo/land-present.json, data/geo/regions.json, data/geo/base/
+    Public domain. Attribution: Natural Earth. The base map under
+    data/geo/base/ is Natural Earth 10 m, as land-present.json is since
+    M36a; regions.json is still 110 m. See data/geo/LICENSE for the files,
+    their sha256 and what each import changed.
 
   data/geo/presences/, data/geo/palette.json
     CC BY-NC-SA 4.0. Attribution as above. See data/geo/LICENSE.
