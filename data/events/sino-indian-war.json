@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "sino-indian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q208694",
+  "sitelinks": {
+    "count": 56,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Sino-Indian War",
+    "pt": "Guerra sino-indiana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q208694"
+    }
+  ],
+  "title": "Sino-Indian War",
+  "summary": "Wikidata item Q208694, imported by tools/import/wikidata.mjs. The item's own description reads \"1962 war between India and China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1962,
+    "end": 1962,
+    "date": "1962-10-20",
+    "endDate": "1962-11-21"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

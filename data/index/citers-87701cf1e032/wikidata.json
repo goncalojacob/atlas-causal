@@ -284,6 +284,12 @@
     },
     {
       "dissent": false,
+      "id": "1982-lebanon-war",
+      "kind": "event",
+      "locator": "Q49103"
+    },
+    {
+      "dissent": false,
       "id": "1983-portuguese-legislative-election",
       "kind": "event",
       "locator": null
@@ -476,6 +482,18 @@
     },
     {
       "dissent": false,
+      "id": "amsterdam-treaty",
+      "kind": "event",
+      "locator": "Q193739"
+    },
+    {
+      "dissent": false,
+      "id": "arab-revolt",
+      "kind": "event",
+      "locator": "Q239060"
+    },
+    {
+      "dissent": false,
       "id": "armenian-genocide",
       "kind": "event",
       "locator": "Q80034"
@@ -581,6 +599,12 @@
       "id": "convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados",
       "kind": "event",
       "locator": "Q60433"
+    },
+    {
+      "dissent": false,
+      "id": "convention-on-preventing-and-combating-violence-against-women-and-domestic-violence",
+      "kind": "event",
+      "locator": "Q1697391"
     },
     {
       "dissent": false,
@@ -728,6 +752,12 @@
     },
     {
       "dissent": false,
+      "id": "good-friday-agreement",
+      "kind": "event",
+      "locator": "Q208958"
+    },
+    {
+      "dissent": false,
       "id": "great-depression",
       "kind": "event",
       "locator": "Q8698"
@@ -737,6 +767,12 @@
       "id": "greco-turkish-war-of-1897",
       "kind": "event",
       "locator": "Q657055"
+    },
+    {
+      "dissent": false,
+      "id": "greek-civil-war",
+      "kind": "event",
+      "locator": "Q188972"
     },
     {
       "dissent": false,
@@ -788,6 +824,18 @@
     },
     {
       "dissent": false,
+      "id": "irish-civil-war",
+      "kind": "event",
+      "locator": "Q748042"
+    },
+    {
+      "dissent": false,
+      "id": "kargil-war",
+      "kind": "event",
+      "locator": "Q404517"
+    },
+    {
+      "dissent": false,
       "id": "kashmir-conflict",
       "kind": "event",
       "locator": "Q1413732"
@@ -824,6 +872,12 @@
     },
     {
       "dissent": false,
+      "id": "lapland-war",
+      "kind": "event",
+      "locator": "Q154940"
+    },
+    {
+      "dissent": false,
       "id": "lebanese-civil-war",
       "kind": "event",
       "locator": "Q208484"
@@ -839,6 +893,12 @@
       "id": "maastricht-treaty",
       "kind": "event",
       "locator": "Q11146"
+    },
+    {
+      "dissent": false,
+      "id": "mahsa-amini-protests",
+      "kind": "event",
+      "locator": "Q114065797"
     },
     {
       "dissent": false,
@@ -881,6 +941,12 @@
       "id": "munich-agreement",
       "kind": "event",
       "locator": "Q154255"
+    },
+    {
+      "dissent": false,
+      "id": "nigerian-civil-war",
+      "kind": "event",
+      "locator": "Q829875"
     },
     {
       "dissent": false,
@@ -938,6 +1004,12 @@
     },
     {
       "dissent": false,
+      "id": "rose-revolution",
+      "kind": "event",
+      "locator": "Q219470"
+    },
+    {
+      "dissent": false,
       "id": "russian-civil-war",
       "kind": "event",
       "locator": "Q79911"
@@ -968,6 +1040,12 @@
     },
     {
       "dissent": false,
+      "id": "sayfo",
+      "kind": "event",
+      "locator": "Q852236"
+    },
+    {
+      "dissent": false,
       "id": "schengen-agreement",
       "kind": "event",
       "locator": "Q2822795"
@@ -992,6 +1070,18 @@
     },
     {
       "dissent": false,
+      "id": "sino-indian-war",
+      "kind": "event",
+      "locator": "Q208694"
+    },
+    {
+      "dissent": false,
+      "id": "somali-civil-war",
+      "kind": "event",
+      "locator": "Q243620"
+    },
+    {
+      "dissent": false,
       "id": "south-sudanese-civil-war",
       "kind": "event",
       "locator": "Q15353665"
@@ -1004,9 +1094,21 @@
     },
     {
       "dissent": false,
+      "id": "sri-lankan-civil-war",
+      "kind": "event",
+      "locator": "Q213394"
+    },
+    {
+      "dissent": false,
       "id": "the-holocaust",
       "kind": "event",
       "locator": "Q2763"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-establishing-a-constitution-for-europe",
+      "kind": "event",
+      "locator": "Q189066"
     },
     {
       "dissent": false,
@@ -1103,6 +1205,12 @@
       "id": "twelve-day-war",
       "kind": "event",
       "locator": "Q134900605"
+    },
+    {
+      "dissent": false,
+      "id": "vienna-convention-on-diplomatic-relations",
+      "kind": "event",
+      "locator": "Q659717"
     },
     {
       "dissent": false,

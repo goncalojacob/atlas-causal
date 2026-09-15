@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "1982-lebanon-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q49103",
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "1982 Lebanon War",
+    "pt": "Guerra do Líbano de 1982"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q49103"
+    }
+  ],
+  "title": "1982 Lebanon War",
+  "summary": "Wikidata item Q49103, imported by tools/import/wikidata.mjs. The item's own description reads \"Israeli invasion of Lebanon\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1982,
+    "end": 1985,
+    "date": "1982-06-06",
+    "endDate": "1985-05-17"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
