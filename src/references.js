@@ -160,6 +160,14 @@ export const IMPORT_REFERENCES = Object.freeze({
   'import-state': Object.freeze([
     Object.freeze({ at: Object.freeze(['source']), to: 'source' }),
   ]),
+  // The base map's city mapping (M36c). Its `source` is **not** here: it is
+  // the Natural Earth dataset the keys are ids of, and Natural Earth has no
+  // source record — the import writes no record of any kind and the credit is
+  // in data/geo/LICENSE. A `source` row would have the rename tool looking
+  // for a record that is not there.
+  'import-places': Object.freeze([
+    Object.freeze({ at: Object.freeze(['entries', VALUES, 'place']), to: 'place' }),
+  ]),
 });
 
 // ─── The walk ───────────────────────────────────────────────────────────────

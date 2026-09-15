@@ -98,6 +98,7 @@ data/presences/<id>.json   who held which ground and when; imported, CC BY-NC-SA
 data/imports/<source>.json which actor a source's entity becomes, and where one code is two actors
 data/imports/wikidata-seeds.json  the items, queries and class table the Wikidata import is pointed at; contributor-editable
 data/imports/wikidata-state.json  where a cut-off import stopped, one cursor per mode; written by the tool
+data/imports/naturalearth-places.json  which Natural Earth city a place record is, keyed by NE_ID; written by tools/import/naturalearth.mjs --places, which matches on wikidata and then on an exact fold of the name where one candidate survives and is near the record's own point, and lists everything it refused in docs/naturalearth-places.md for a person. An entry added there by hand is kept. Not in the deploy artifact, so the import copies `place` onto the city itself
 data/regions.json          timeline lanes: id, label, order
 data/roles.json            the 31 roles an actor line may take; a closed vocabulary in data, enforced on an active event by rule 25
 data/categories.json       the twelve kinds of event; a closed vocabulary in data, offered by the form and the review editor, and drawn as one symbol per category over the mark and at the left of the bar since the glyph run (src/map/glyphs.js). `category` is a core column, so a toggle narrows on the frame it is clicked
@@ -118,7 +119,7 @@ data/index/history-<kind>-<key>-<hash>.json  GENERATED: what changed at each ver
 data/index/               all of it committed on main by deploy.yml; byte-identical to a fresh build
 data/LICENSE  data/geo/LICENSE   CC BY-SA 4.0 for records; per source for geometry
 schema/common/             interval, place, provenance (the envelope), confidence
-schema/v1/                 event, edge, source, actor, place, relation, narrative, presence, region, bundle; import-map, import-seeds, import-state and wikipedia-lead are tool-side
+schema/v1/                 event, edge, source, actor, place, relation, narrative, presence, region, bundle; import-map, import-places, import-seeds, import-state and wikipedia-lead are tool-side
 index.html                 the atlas; no build step, plain ES modules
 contribute.html            the contribution form; not linked from the atlas while contributions are closed
 about.html                 what it is, how to read confidence and a dispute, the licences
@@ -232,6 +233,7 @@ tools/import/source.mjs    reading a vendored source: gunzipped where the name s
 tools/import/grid.mjs      three lines: the name the import knows src/map/grid.js by, as simplify.mjs is for the simplifier
 tools/import/naturalearth.mjs  Natural Earth 10m -> the base map's data: data/geo/land-present.json at the far level and data/geo/base/<layer>/<cell>.json at the near, the tolerance of each stepped up until its cap holds. --survey prints the property keys a committed file actually has, --budget the tolerance, bytes, points kept and points dropped per layer, --check the sha256 of the decompressed sources. Offline: a fetch in it is a bug, not a fallback
 tools/import/features.mjs  pure: Natural Earth's properties -> this atlas's fields, one frozen table per layer, every property name read off the committed file with --survey and never guessed; and the one monotone table from NE's tile zoom to our `k`, everything on the map by k = 16
+tools/import/places.mjs    pure: which Natural Earth city a `data/places/` record is. Two signals and no third - `wikidata`, then an exact fold of the name where exactly one city survives it and is within a degree of the point the record already gives. A match is never guessed: everything refused is listed for a person, and a place record with no city is not an error
 tools/import/layers.mjs    pure: how one Natural Earth layer becomes a world file and a file per cell. What a cell holds is decided per layer: rivers are lines clipped to it, lakes and physical regions whole features by bbox overlap carrying the id M37 draws each once by, peaks points. A cut edge is never part of a stroked ring
 vendor/                    INPUTS: the sources the geometry imports run on, gzipped, never data, never served, never in deploy.yml's allowlist
 tools/import/cache/        GENERATED: Wikipedia leads with their revision; never published, never data, not under data/

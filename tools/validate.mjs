@@ -30,7 +30,16 @@ export const IMPORT_SCHEMAS = Object.freeze({
   [DEFAULT_IMPORT_KIND]: IMPORT_MAP_SCHEMA,
   'import-seeds': 'v1/import-seeds.json',
   'import-state': 'v1/import-state.json',
+  'import-places': 'v1/import-places.json',
 });
+
+// Which of those kinds cites a **source record**. The three above do: their
+// import writes one and the warning below says so. `import-places` does not —
+// its `source` is the Natural Earth dataset its keys are ids of, and the base
+// map's import writes no record of any kind, by its brief. Warning that a
+// source record is missing when none is ever coming would be a warning that
+// can never be cleared.
+export const IMPORT_CITES_SOURCE = Object.freeze([DEFAULT_IMPORT_KIND, 'import-seeds', 'import-state']);
 
 // An import map is not a record and has no rules file: what holds it together
 // is here. The schema has already said the shape is right; these are the
@@ -124,6 +133,37 @@ export function checkImportSeeds(file, seeds, { categories = null, regions = nul
     if (names.has(query?.name)) say(`/queries/${i}/name`, `"${query.name}" names two queries; the candidate list is grouped by it`);
     names.add(query?.name);
   });
+  return problems;
+}
+
+// And for the base map's city mapping. The shape has said the keys are ids
+// and the values name a place; what a shape cannot say is that the place is
+// one this atlas holds and that no two cities are the same place.
+//
+// Both are errors and not warnings. A `place` that names no record is a label
+// M38 could never draw, and unlike an import map's `actor` nothing here
+// creates the missing record: the file is written from data/places/, so an id
+// in it that is not there is a place renamed or deleted since. Two cities
+// naming one place is the Done-when's "names no place twice" — one dot is one
+// place, and which of the two it is belongs to whoever knows the place.
+export function checkImportPlaces(file, map, { places = null } = {}) {
+  const problems = [];
+  const say = (path, message) => problems.push({ path, message, file });
+  const byPlace = new Map();
+  for (const [id, entry] of Object.entries(map?.entries ?? {})) {
+    const at = `/entries/${id}`;
+    // The schema subset has no `propertyNames`, so the key's shape is checked
+    // here, as an import map's entity code is.
+    if (!/^[0-9]+$/.test(id)) say(at, `"${id}" is not a Natural Earth id (digits)`);
+    const place = entry?.place;
+    if (typeof place !== 'string') continue;
+    if (places && !places.has(place)) say(`${at}/place`, `no place record "${place}"`);
+    if (byPlace.has(place)) {
+      say(`${at}/place`, `"${place}" is already Natural Earth ${byPlace.get(place)}; one place is one city`);
+    } else {
+      byPlace.set(place, id);
+    }
+  }
   return problems;
 }
 
@@ -251,6 +291,7 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false, sit
   for (const p of mapProblems) errors.push({ rule: 'import', id: null, file: p.file, path: '', message: p.message });
   if (maps.length) {
     const sourceIds = new Set(records.filter((r) => r?.kind === 'source').map((r) => r.id));
+    const placeIds = new Set(records.filter((r) => r?.kind === 'place').map((r) => r.id));
     for (const { file, kind, map } of maps) {
       const schema = IMPORT_SCHEMAS[kind];
       if (!schema) {
@@ -260,11 +301,13 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false, sit
       for (const e of validator.validate(schema, map)) {
         errors.push({ rule: kind, id: null, file, path: e.path, message: e.message, alternatives: e.alternatives });
       }
-      const checks = kind === 'import-seeds' ? checkImportSeeds(file, map, { categories, regions }) : kind === DEFAULT_IMPORT_KIND ? checkImportMap(file, map) : [];
+      const checks = kind === 'import-seeds' ? checkImportSeeds(file, map, { categories, regions })
+        : kind === 'import-places' ? checkImportPlaces(file, map, { places: placeIds })
+          : kind === DEFAULT_IMPORT_KIND ? checkImportMap(file, map) : [];
       for (const p of checks) {
         errors.push({ rule: kind, id: null, file, path: p.path, message: p.message });
       }
-      if (typeof map?.source === 'string' && sourceIds.size && !sourceIds.has(map.source)) {
+      if (IMPORT_CITES_SOURCE.includes(kind) && typeof map?.source === 'string' && sourceIds.size && !sourceIds.has(map.source)) {
         warnings.push({ rule: kind, id: null, file, path: '/source', message: `no source record "${map.source}"; the import writes one, so this is expected only before it has run` });
       }
       if (kind === 'import-seeds' && seedsAreEmpty(map)) {

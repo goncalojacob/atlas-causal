@@ -6,14 +6,16 @@
 // rather than the form.
 
 // Schemas of things the form never builds and the atlas never loads, checked
-// by tools/validate.mjs only. Three of them describe data/imports/ — how a
-// source's entities become actors, which items an import is pointed at, and
-// where a cut-off run stopped — and the fourth describes the Wikipedia leads
-// cached under tools/import/cache/, which are not even in data/. None is a
-// record and fetching any of them in the browser would only make the page
-// slower.
+// by tools/validate.mjs only. Four of them describe data/imports/ — how a
+// source's entities become actors, which items an import is pointed at, where
+// a cut-off run stopped, and which Natural Earth city a place record is — and
+// the fifth describes the Wikipedia leads cached under tools/import/cache/,
+// which are not even in data/. None is a record and fetching any of them in
+// the browser would only make the page slower; data/imports/ is not in the
+// deploy artifact at all, so there is nothing there to validate.
 export const TOOL_SIDE = Object.freeze([
   'v1/import-map.json',
+  'v1/import-places.json',
   'v1/import-seeds.json',
   'v1/import-state.json',
   'v1/wikipedia-lead.json',
