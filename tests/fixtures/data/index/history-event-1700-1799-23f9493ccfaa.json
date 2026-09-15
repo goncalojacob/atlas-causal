@@ -1,9 +1,9 @@
 {
-  "from": 1600,
+  "from": 1700,
   "kind": "event",
   "records": {
-    "fixture-event-deep-1650": {
-      "from": "revised",
+    "fixture-event-deep-1755": {
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -13,5 +13,5 @@
     }
   },
   "schema": 1,
-  "to": 1699
+  "to": 1799
 }

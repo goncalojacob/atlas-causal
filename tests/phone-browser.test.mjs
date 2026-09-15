@@ -367,3 +367,49 @@ test('the layer control is four targets in the drawer, and base map opens into f
     assert.ok(drawer.scrolls, 'and the page can be scrolled to the bottom of it');
   });
 });
+
+// M43b. The timeline at phone width over a corpus of five centuries: 390 px
+// less the lane gutter is not much axis to share out, and what must not happen
+// is an axis whose labels sit on top of one another or a band too narrow to
+// take hold of with a thumb.
+test('the whole extent is legible on a phone, and the band is a thumb wide', { skip }, async () => {
+  await phone(async (page, url) => {
+    await open(page, url('?fixtures=1'), 'return Boolean(document.querySelector(".map .mark"));');
+    const seen = await page.eval(`
+      const svg = document.querySelector('#timeline svg.timeline');
+      const band = svg.querySelector('[data-window="band"]');
+      const ticks = [...svg.querySelectorAll('.layer-tickLabels text')]
+        .map((t) => ({ label: t.textContent, x: Number(t.getAttribute('x')) }))
+        .sort((a, b) => a.x - b.x);
+      return {
+        width: Number(svg.getAttribute('width')),
+        min: Number(band.getAttribute('aria-valuemin')),
+        max: Number(band.getAttribute('aria-valuemax')),
+        valuetext: band.getAttribute('aria-valuetext'),
+        bandWidth: Number(band.getAttribute('width')),
+        handles: svg.querySelectorAll('.window-handle').length,
+        ticks,
+        bars: svg.querySelectorAll('rect.bar[data-id]').length,
+        wider: document.documentElement.scrollWidth <= 390,
+      };`);
+    assert.ok(seen.max - seen.min > 200, `the fixtures span centuries (${seen.min}–${seen.max})`);
+    assert.equal(seen.wider, true, 'nothing sticks out sideways');
+    assert.ok(seen.bars > 0, 'and there are bars on it');
+    // Some of the axis is labelled, and no two labels touch. Fewer of them
+    // than at 1440 px, which is the drawing giving up detail rather than
+    // overprinting: `ticks(count)` is asked for a count from the width.
+    assert.ok(seen.ticks.length >= 2, `the axis is labelled (${seen.ticks.map((t) => t.label).join(' ')})`);
+    for (let i = 1; i < seen.ticks.length; i += 1) {
+      assert.ok(seen.ticks[i].x - seen.ticks[i - 1].x > 24,
+        `"${seen.ticks[i - 1].label}" and "${seen.ticks[i].label}" are ${
+          Math.round(seen.ticks[i].x - seen.ticks[i - 1].x)} px apart`);
+    }
+    // The band is still something a thumb can find, and both its handles are
+    // drawn: the opening window is one century of several and would be a
+    // hairline on a linear scale over the same corpus.
+    assert.equal(seen.handles, 2);
+    assert.ok(seen.bandWidth >= 40, `the band is a hit target (${Math.round(seen.bandWidth)} px)`);
+    const [from, to] = seen.valuetext.split(' to ').map(Number);
+    assert.ok(to - from < (seen.max - seen.min) / 2, 'and it opens on part of the data, not all of it');
+  });
+});

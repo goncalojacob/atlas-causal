@@ -3,7 +3,7 @@
   "kind": "event",
   "records": {
     "fixture-event-deep-2025": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

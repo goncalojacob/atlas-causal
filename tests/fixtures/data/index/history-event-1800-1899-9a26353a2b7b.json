@@ -1,9 +1,9 @@
 {
   "from": 1800,
-  "kind": "edge",
+  "kind": "event",
   "records": {
-    "fixture-event-deep-1822--fixture-event-deep-1900--inspired": {
-      "from": "revised",
+    "fixture-event-deep-1822": {
+      "from": "git",
       "versions": [
         {
           "first": true,

@@ -455,3 +455,196 @@ test('a bar wide enough carries its category, and one below the threshold does n
     assert.equal(packed.glyphs, 0, 'and eight is below the symbol, so none is drawn');
   }, { device: { width: 1280, height: 900, deviceScaleFactor: 1 } });
 });
+
+// --- M43b: the whole extent, over five centuries ----------------------------
+//
+// The fixtures run from the thirteenth century to the twenty-first, and the
+// timeline's scale shares the width out century by century rather than year by
+// year (timeline-scale.js). None of what follows can be seen without a layout:
+// it is all about where things land in pixels at a real width.
+//
+// Nothing here pins a year of the corpus. The extent is the data's own and
+// moves whenever a fixture record is added, so every assertion below is about
+// the drawing covering what the data covers.
+
+// The axis, the band and the strip, in the SVG's own units, plus the two ends
+// the atlas says it holds — read off the band's ARIA, which is where the
+// timeline writes them (timeline.js, `bandShade`).
+const EXTENT = `
+  const svg = document.querySelector('#timeline svg.timeline');
+  const band = svg.querySelector('[data-window="band"]');
+  const ticks = [...svg.querySelectorAll('.layer-tickLabels text')]
+    .map((t) => ({ label: t.textContent, x: Number(t.getAttribute('x')) }))
+    .sort((a, b) => a.x - b.x);
+  const strips = [...svg.querySelectorAll('.layer-strips path')].map((p) => p.getAttribute('d'));
+  const bars = [...svg.querySelectorAll('rect.bar[data-id]')]
+    .map((el) => ({ id: el.getAttribute('data-id'), x: Number(el.getAttribute('x')), width: Number(el.getAttribute('width')) }));
+  return {
+    width: Number(svg.getAttribute('width')),
+    min: Number(band.getAttribute('aria-valuemin')),
+    max: Number(band.getAttribute('aria-valuemax')),
+    from: Number(band.getAttribute('aria-valuenow')),
+    valuetext: band.getAttribute('aria-valuetext'),
+    bandX: Number(band.getAttribute('x')),
+    bandWidth: Number(band.getAttribute('width')),
+    ticks,
+    strips,
+    bars,
+    handles: [...svg.querySelectorAll('.window-handle')].map((h) => ({
+      kind: h.getAttribute('data-window'), x: Number(h.getAttribute('x')), year: Number(h.getAttribute('aria-valuenow')),
+    })),
+  };`;
+
+test('the whole extent is on the axis at 1440 px, a labelled column per century', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?fixtures=1'), READY);
+    const seen = await page.eval(EXTENT);
+    // The corpus really does run over several centuries, or this test is
+    // about nothing.
+    assert.ok(seen.max - seen.min > 200, `the fixtures span centuries (${seen.min}–${seen.max})`);
+
+    // A tick for the first century of the data and one for the last, and one
+    // for every hundred years in between: no century of the corpus is drawn
+    // so narrow that it cannot be labelled.
+    const centuries = [];
+    for (let c = Math.ceil(seen.min / 100) * 100; c <= seen.max; c += 100) centuries.push(String(c));
+    const labels = seen.ticks.map((t) => t.label);
+    for (const century of centuries) {
+      assert.ok(labels.includes(century), `${century} is on the axis: ${labels.join(' ')}`);
+    }
+    // In order left to right, and no two labels on top of one another. Eleven
+    // pixels of type, so a gap under about 30 px is two labels touching.
+    for (let i = 1; i < seen.ticks.length; i += 1) {
+      assert.ok(seen.ticks[i].x - seen.ticks[i - 1].x > 24,
+        `"${seen.ticks[i - 1].label}" and "${seen.ticks[i].label}" are ${
+          Math.round(seen.ticks[i].x - seen.ticks[i - 1].x)} px apart`);
+    }
+  }, { device: { width: 1440, height: 900, deviceScaleFactor: 1 } });
+});
+
+test('the band opens on a century, and drags from the first year of the data to the last', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?fixtures=1'), READY);
+    const opened = await page.eval(EXTENT);
+    // Not the whole extent: the atlas opens on the century that holds most of
+    // the corpus (util/window.js, `opensOn`). Which century that is depends on
+    // the fixtures and is not pinned here; that it is *not* everything is the
+    // behaviour M43b changed.
+    const [from, to] = opened.valuetext.split(' to ').map(Number);
+    assert.ok(to - from < (opened.max - opened.min) / 2,
+      `the band opens on part of the data, not all of it (${opened.valuetext} of ${opened.min}–${opened.max})`);
+    assert.ok(opened.bandWidth > 40, `and it is wide enough to take hold of (${opened.bandWidth} px)`);
+
+    // The two handles are where their years are, and the far one is to the
+    // right of the near one.
+    const near = opened.handles.find((h) => h.kind === 'from');
+    const far = opened.handles.find((h) => h.kind === 'to');
+    assert.equal(near.year, from);
+    assert.equal(far.year, to);
+    assert.ok(far.x > near.x);
+
+    // And now the band is dragged the whole way: the near handle to the first
+    // year of the data and the far one to the last. Through the real pointer
+    // events, so this is the drag a reader makes and not a call to `setWindow`.
+    const drag = (kind, clientX) => `
+      const svg = document.querySelector('#timeline svg.timeline');
+      const handle = svg.querySelector('.window-handle.${kind}');
+      const box = handle.getBoundingClientRect();
+      const at = { bubbles: true, cancelable: true, pointerId: 7 };
+      handle.dispatchEvent(new PointerEvent('pointerdown', {
+        ...at, clientX: box.left + box.width / 2, clientY: box.top + box.height / 2 }));
+      svg.dispatchEvent(new PointerEvent('pointermove', { ...at, clientX: ${clientX}, clientY: box.top + box.height / 2 }));
+      svg.dispatchEvent(new PointerEvent('pointerup', { ...at, clientX: ${clientX}, clientY: box.top + box.height / 2 }));
+      return true;`;
+    const svgBox = await page.eval(`
+      const b = document.querySelector('#timeline svg.timeline').getBoundingClientRect();
+      return { left: b.left, right: b.right };`);
+    // Well past each end: the band is clamped to the data and never leaves it.
+    await page.eval(drag('to', Math.round(svgBox.right + 400)));
+    await page.eval(drag('from', Math.round(svgBox.left - 400)));
+    await waitFor(
+      page,
+      `return document.querySelector('#timeline [data-window="band"]').getAttribute('aria-valuenow') === '${opened.min}';`,
+      'the band to reach the first year of the data',
+    );
+    const whole = await page.eval(EXTENT);
+    const [wideFrom, wideTo] = whole.valuetext.split(' to ').map(Number);
+    assert.equal(wideFrom, whole.min, 'the near end is the first year of the data');
+    assert.equal(wideTo, whole.max, 'and the far end is the last');
+    // The band now covers the drawing, less the lane labels' gutter and the
+    // margin the scale leaves around the data at each end (timeline.js,
+    // PADDING): dragged to both ends it is nearly the whole axis.
+    const axis = whole.width - 120;
+    assert.ok(whole.bandWidth > axis * 0.8,
+      `the band covers the axis (${Math.round(whole.bandWidth)} of ${Math.round(axis)})`);
+    assert.ok(whole.bandX >= 120, `and starts at the lanes, not over their labels (${whole.bandX})`);
+  }, { device: { width: 1440, height: 900, deviceScaleFactor: 1 } });
+});
+
+test('the wheel zooms on the year under the pointer, in the compressed part as in the busy one', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    // Opened on the whole extent, so there is a compressed part to put the
+    // pointer over.
+    const seen = await (async () => {
+      await open(page, url('?fixtures=1'), READY);
+      return page.eval(EXTENT);
+    })();
+    await open(page, url(`?fixtures=1&from=${seen.min}&to=${seen.max}`), READY);
+    const wheelAt = (x) => `
+      const svg = document.querySelector('#timeline svg.timeline');
+      const box = svg.getBoundingClientRect();
+      svg.dispatchEvent(new WheelEvent('wheel', { bubbles: true, cancelable: true,
+        deltaY: -240, clientX: ${x}, clientY: box.top + box.height - 10 }));
+      return true;`;
+    const box = await page.eval(`
+      const b = document.querySelector('#timeline svg.timeline').getBoundingClientRect();
+      return { left: b.left, width: b.width };`);
+    // A quarter of the way along, which on this corpus is a century nobody
+    // wrote about — the part a linear scale would have squeezed to nothing.
+    const at = Math.round(box.left + box.width * 0.35);
+    const yearUnder = await page.eval(`
+      const svg = document.querySelector('#timeline svg.timeline');
+      const b = svg.getBoundingClientRect();
+      return { x: (${at} - b.left) / b.width };`);
+    const before = await page.eval(EXTENT);
+    const [beforeFrom, beforeTo] = before.valuetext.split(' to ').map(Number);
+    await page.eval(wheelAt(at));
+    await waitFor(
+      page,
+      `return document.querySelector('#timeline [data-window="band"]').getAttribute('aria-valuetext') !== ${JSON.stringify(before.valuetext)};`,
+      'the wheel to narrow the band',
+    );
+    const after = await page.eval(EXTENT);
+    const [afterFrom, afterTo] = after.valuetext.split(' to ').map(Number);
+    assert.ok(afterTo - afterFrom < beforeTo - beforeFrom, 'the band narrowed');
+    // And it narrowed around the pointer: the year that was under it is still
+    // inside the band, and roughly where it was along it.
+    const target = beforeFrom + (beforeTo - beforeFrom) * yearUnder.x;
+    assert.ok(afterFrom <= target && target <= afterTo,
+      `the year under the pointer is still in the band (${afterFrom}–${afterTo}, wanted ${Math.round(target)})`);
+    assert.ok(yearUnder.x > 0 && yearUnder.x < 1);
+  }, { device: { width: 1440, height: 900, deviceScaleFactor: 1 } });
+});
+
+test('past the margin the corpus is a density strip, and it covers the compressed part', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('?fixtures=1'), READY);
+    const seen = await page.eval(EXTENT);
+    // The events the band does not reach are still said to be there — that is
+    // what the strip is for (density.js) — and on this corpus there are some.
+    assert.ok(seen.strips.length > 0, 'the rest of the corpus is drawn as a strip');
+    // Its columns are spread over the drawing and not heaped at one edge: the
+    // compressed centuries each have a width of their own, which is the whole
+    // argument for the bucketed scale.
+    const columns = seen.strips.flatMap((d) => [...d.matchAll(/M([\d.]+) /g)].map((m) => Number(m[1])));
+    assert.ok(columns.length > 1, `the strip has columns (${columns.length})`);
+    const spread = Math.max(...columns) - Math.min(...columns);
+    assert.ok(spread > seen.width * 0.25,
+      `and they run across the drawing (${Math.round(spread)} px of ${seen.width})`);
+    // Every bar the timeline drew is inside the drawing, strip and all.
+    for (const bar of seen.bars) {
+      assert.ok(bar.x >= 0 && bar.x + bar.width <= seen.width + 1,
+        `${bar.id} is inside the drawing (${bar.x}…${bar.x + bar.width} of ${seen.width})`);
+    }
+  }, { device: { width: 1440, height: 900, deviceScaleFactor: 1 } });
+});

@@ -1,9 +1,9 @@
 {
-  "from": 1900,
-  "kind": "edge",
+  "from": 1400,
+  "kind": "event",
   "records": {
-    "fixture-event-deep-1900--fixture-event-deep-1969--enabled": {
-      "from": "revised",
+    "fixture-event-deep-1415": {
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -11,8 +11,8 @@
         }
       ]
     },
-    "fixture-event-deep-1969--fixture-event-deep-2025--caused": {
-      "from": "revised",
+    "fixture-event-deep-1498": {
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -22,5 +22,5 @@
     }
   },
   "schema": 1,
-  "to": 1999
+  "to": 1499
 }

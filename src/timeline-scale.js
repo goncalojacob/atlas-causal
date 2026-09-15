@@ -28,6 +28,15 @@ import { CENTURY, centuryOf, crowded } from './util/window.js';
 
 const STEPS = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000, 2000, 5000, 10000];
 
+// The narrowest two tick labels may be and still be two labels. Not a type
+// size — the axis is set at the one size `.timeline .tick-label` gives it in
+// style.css and this file adds none — but the room that size needs: a four-
+// digit year at 11 px is about 24 px of ink, and a third of that again is the
+// air that keeps two of them from reading as one number. It bounds the century
+// boundaries only; the round years inside a bucket are spaced by the count the
+// caller asks for, which is always wider.
+const LABEL_GAP = 34;
+
 export function createLinearScale({ domain, range }) {
   const [d0, d1] = domain;
   const [r0, r1] = range;
@@ -139,38 +148,69 @@ export function createCenturyScale({ domain, range, counts = null }) {
     return buckets[lo];
   };
 
+  const xOf = (year) => {
+    const b = find(year, 'from');
+    return b.x0 + (year - b.from) * b.k;
+  };
+
   return {
     domain,
     range,
     // Exposed for the tests and for anything that wants to say how the width
     // was shared out; nothing in the drawing reads it.
     buckets: buckets.map((b) => ({ from: b.from, to: b.to, count: b.count, x0: b.x0, x1: b.x1 })),
-    x(year) {
-      const b = find(year, 'from');
-      return b.x0 + (year - b.from) * b.k;
-    },
+    x: xOf,
     invert(px) {
       const b = find(px, 'x0');
       return b.k === 0 ? b.from : b.from + (px - b.x0) / b.k;
     },
-    // The century boundaries, always — they are what the buckets are cut on
-    // and what a reader reads a compressed stretch by — and inside a bucket
-    // that has the room for them, round years at the finest step whose
-    // spacing is still wider than one label.
+    // The century boundaries first — they are what the buckets are cut on and
+    // what a reader reads a compressed stretch by — and then, inside a bucket
+    // with the room for them, round years at the finest step whose spacing is
+    // still wider than one label.
+    //
+    // **A century is labelled only where its label fits.** At 390 px the axis
+    // is some 260 px and eight centuries would be eight labels twelve pixels
+    // apart, which is not eight labels, it is a smudge. A label dropped is a
+    // century the reader reads off its neighbours; two overprinted is a century
+    // the reader cannot read at all. So the boundaries are thinned to
+    // `LABEL_GAP` — the room a year needs, and not the spacing `count` asks
+    // for, which would drop a century wherever its column is narrower than an
+    // even share and is a rule about a linear axis rather than about this one.
+    //
+    // Where a boundary and a round year inside a bucket fall on the same few
+    // pixels the boundary wins: it is the one the buckets are cut on.
     ticks(count = 8) {
       const minPx = Math.abs(r1 - r0) / Math.max(1, count);
-      const values = new Set();
+      const wanted = new Map();
       for (const b of buckets) {
-        if (b.from >= d0 && b.from <= d1 && b.from % CENTURY === 0) values.add(b.from);
+        if (b.from >= d0 && b.from <= d1 && b.from % CENTURY === 0) wanted.set(b.from, true);
+      }
+      for (const b of buckets) {
         const step = STEPS.find((s) => s < CENTURY && s * b.k >= minPx);
         if (step === undefined) continue;
         for (let v = Math.ceil(b.from / step) * step; v < b.to; v += step) {
-          if (v >= d0 && v <= d1) values.add(v);
+          if (v >= d0 && v <= d1 && !wanted.has(v)) wanted.set(v, false);
         }
       }
-      return [...values]
-        .sort((one, other) => one - other)
-        .map((value) => ({ value, label: formatYear(fromAstronomical(value)) }));
+      const out = [];
+      const tick = (value) => ({ value, label: formatYear(fromAstronomical(value)) });
+      let last = -Infinity;
+      for (const [value, isCentury] of [...wanted].sort((one, other) => one[0] - other[0])) {
+        const x = xOf(value);
+        if (x - last >= LABEL_GAP) {
+          out.push(tick(value));
+          last = x;
+          continue;
+        }
+        // Too close to what is already there. A century boundary takes the
+        // place of the round year it is crowding — which is further left, so
+        // whatever came before is further still and nothing else moves.
+        if (!isCentury || out.length === 0) continue;
+        out[out.length - 1] = tick(value);
+        last = x;
+      }
+      return out;
     },
   };
 }
