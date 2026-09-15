@@ -6990,6 +6990,260 @@ to keep a record.
    deviation 683 has shown it has been reading a half-drawn map. That is a
    question about the map and not about this round.
 
+## M44c: the three corrections, and the edge the arrow of time refused
+
+On branch `m44`, continuing from M44b at `3963f06`. Nothing of this is on `m0`
+but the `M44c started` and `M44c done` lines, each a single-file commit of its
+own (A10). The merge run that lands `m44` on `m0` is not this one.
+
+Three corrections were asked for and a fourth thing was found on the way in.
+Two of the three are done whole. The third is done in two parts of three; the
+part that is missing is missing because the atlas's own rule 4 refuses it, and
+that is the one thing on this branch that needs the owner rather than another
+run.
+
+### 1. `croatian-war-of-independence`
+
+The record said `start: 1995, end: 1995, date: "1995-11-12", endDate:
+"1995-08-07"` — a war that began in November and ended in August of the same
+year. It now says:
+
+```json
+"when": { "start": 1991, "end": 1995 }
+```
+
+**What was supplied**: the two years, 1991 and 1995, and nothing else. They are
+not this run's claim about the world; they are what the record's own imported
+summary already carried, quoting the Wikidata item's description — "war of
+independence fought from 1991 to 1995".
+
+**What was deliberately not supplied**: a day. `date` and `endDate` were
+removed rather than replaced. 12 November 1995 is the Erdut agreement and
+7 August 1995 the close of Operation Storm, so neither is the war's beginning
+or its end, and this run had no source it could open for the real ones. A war's
+first day is exactly the kind of claim `CLAUDE.md` says the assistant does not
+write, and a wrong precision is worse than an honest year. The correction is
+said twice on the record, in `retraction.reason` and in `review.note`, with the
+flags `dates-corrected-m44c` and `wants-exact-dates`.
+
+The record **stays retracted**. Fixing it is not a step towards reinstating it:
+it is so that whoever does reinstate it finds it consistent.
+
+### 2. The importer's Portuguese labels — nineteen records
+
+`tools/import/wikidata.mjs` takes `labels.en ?? labels.pt ?? qid` for a title
+and derives the id from it, so every item with no English label was filed in
+Portuguese. `CLAUDE.md` says the atlas is in English. Nineteen records were in
+that state.
+
+**Renamed** (former id → id now; every former id is in `aliases` and resolves):
+
+| was | is now | status |
+|---|---|---|
+| `convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados` | `convention-relating-to-the-status-of-refugees` | active |
+| `eleicoes-legislativas-regionais-na-madeira-em-1976` | `1976-madeira-regional-legislative-election` | active |
+| `eleicoes-legislativas-regionais-na-madeira-em-1980` | `1980-madeira-regional-legislative-election` | retracted |
+| `eleicoes-legislativas-regionais-na-madeira-em-1984` | `1984-madeira-regional-legislative-election` | retracted |
+| `eleicoes-legislativas-regionais-na-madeira-em-1988` | `1988-madeira-regional-legislative-election` | retracted |
+| `eleicoes-legislativas-regionais-na-madeira-em-1992` | `1992-madeira-regional-legislative-election` | retracted |
+| `eleicoes-legislativas-regionais-nos-acores-em-1980` | `1980-azores-regional-legislative-election` | retracted |
+| `eleicoes-legislativas-regionais-nos-acores-em-1984` | `1984-azores-regional-legislative-election` | retracted |
+| `eleicoes-legislativas-regionais-nos-acores-em-1988` | `1988-azores-regional-legislative-election` | retracted |
+| `eleicoes-legislativas-regionais-nos-acores-em-1992` | `1992-azores-regional-legislative-election` | retracted |
+| `assalto-ao-banco-de-angola-na-damaia-em-21-de-outubro-de-1975` | `robbery-of-banco-de-angola-in-damaia-on-21-october-1975` | retracted |
+| `assalto-ao-banco-nacional-ultramarino-da-malveira-em-6-de-outubro-de-1980` | `robbery-of-banco-nacional-ultramarino-in-malveira-on-6-october-1980` | retracted |
+| `assalto-ao-banco-pinto-e-sottomayor-de-lisboa-em-soure` | `robbery-of-banco-pinto-e-sottomayor-of-lisbon-in-soure` | retracted |
+| `assalto-ao-banco-pinto-e-sottomayor-em-albufeira-em-17-de-agosto-de-1976` | `robbery-of-banco-pinto-e-sottomayor-in-albufeira-on-17-august-1976` | retracted |
+| `assassinato-de-jose-oscar-de-vasconcelos` | `assassination-of-jose-oscar-de-vasconcelos` | retracted |
+| `assassinato-de-rogerio-canha-e-sa` | `assassination-of-rogerio-canha-e-sa` | retracted |
+| `desastre-ambiental-de-almograve` | `almograve-environmental-disaster` | retracted |
+| `sismo-de-portugal-de-2009` | `2009-portugal-earthquake` | retracted |
+| `tragedia-de-borba` | `borba-tragedy` | retracted |
+
+Two edges were carried by the cascade, each keeping its own former id as an
+alias: `constitution-1976--1976-madeira-regional-legislative-election--enabled`
+and `world-war-ii--convention-relating-to-the-status-of-refugees--caused`.
+Every record keeps the Portuguese label the import gave it, now in `names`, so
+a reader who types it still finds the record. `node tools/validate.mjs`
+reported **0 errors** after every one of the nineteen, which is what proves
+nothing was left pointing at an old id.
+
+**Deliberately not renamed**, because the name is the world's and not the
+importer's:
+
+- `holodomor`, `porajmos`, `euromaidan` — three records whose title matches
+  their Portuguese sitelink and is not Portuguese: two are the Ukrainian and
+  Romani words and the third is a Ukrainian coinage. `porajmos` even has an
+  English sitelink ("Romani Holocaust") and keeps its own name anyway.
+- `batepa-massacre`, `espirito-santo-bank-of-campolide-robbery`,
+  `2025-setubal-local-elections`, `2017-pedrogao-grande-wildfire`,
+  `1975-sao-tomean-legislative-election`, the eight `coup-d-etat` records, and
+  the four `robbery-of-…` / `assault-on-…` records M20 already filed in
+  English. Each carries diacritics only inside a proper noun, which is what an
+  English title does with São Tomé and Setúbal.
+- `telo-2007-historia-contemporanea`, a source record whose title is a
+  Portuguese book's actual title, written by a person and not by an import.
+- Every CShapes actor and place. None was in this state, and the rename tool
+  still refuses them for the reason amendment A2 gives.
+
+### 3. The three edges of §5c
+
+Two are written. Both are **`probable`**, and this is the point to be strict
+about: rule 9 wants at least two sources by different authors for `consensus`,
+and amendment A4 records that rule 22 tests only `wikipedia-en` and
+`wikipedia-pt`, so an edge resting on Wikipedia alone passes the validator
+while resting on nothing a historian would accept. This run has no network
+beyond GitHub and will not write a source record for a book it has not opened —
+that would be a fabrication, and the worst kind here, because it would look
+exactly like scholarship. So each edge cites what its endpoints already carry,
+carries the flag `wants-a-real-citation`, and says in `review.note` that a
+person must supply two citations by different authors before it can be raised.
+Neither was raised by citing two Wikipedia language editions: that is the
+loophole A4 exists to close.
+
+| edge | type | confidence | what it still needs |
+|---|---|---|---|
+| `world-war-i --caused--> february-revolution` | `caused` | `probable` | two citations by different authors; the `caused`/`precondition-of` choice checked by someone who knows the literature on 1917 |
+| `molotov-ribbentrop-pact --enabled--> katyn-massacre` | `enabled` | `probable` | two citations by different authors |
+
+**The third could not be written**, and this is deviation 692 below and the one
+thing on this branch that is the owner's rather than a run's.
+`world-war-ii --enabled--> the-holocaust` is refused by rule 4:
+
+```
+error [rule 4] edges/world-war-ii--the-holocaust--enabled.json:
+  arrow of time: "world-war-ii" cannot start after "the-holocaust"
+```
+
+`the-holocaust` is dated 1933 to 1945 and the war starts in 1939, so the atlas
+already says the Holocaust began six years before its proposed cause. This is
+not a quirk of the edge: `the-holocaust` has **no incoming edge at all**, and
+under its present dates it can have none from anything after 1933.
+
+### 4. The recount
+
+M44b's counting script, run again from `data/` on this branch's head. The hop
+counts are recomputed and never asserted from memory; the baseline column is
+the same script run on a worktree at `3963f06`, M44b's head.
+
+| | M44b | M44c |
+|---|--:|--:|
+| **stranded world events that stopped being stranded** | **2** | **4** |
+| of the 45, gained a direct Portuguese neighbour | 0 | 1 |
+| of the 45, brought nearer but still beyond two hops | 8 | 9 |
+| active events / active edges | 243 / 270 | 243 / 272 |
+
+The two that are new are `february-revolution`, **3 hops → 1**, and
+`russian-revolution-of-1905`, **4 hops → 2**, which rides in behind it.
+
+**§5c's prediction was exact.** It said that `world-war-i --caused-->
+february-revolution` alone would move the February revolution from three hops
+to one, and it did: `world-war-i` is a record the script's frozen rule counts
+as Portuguese, so one edge from it makes the revolution a direct neighbour.
+That is also the whole of the "gained a direct Portuguese neighbour" row going
+from 0 to 1 — the first such record in the round.
+
+The Katyn edge moved `katyn-massacre` from **unreachable to 3 hops**: nearer,
+and still outside the bar, because everything between it and a Portuguese
+record is the eastern front. `treaty-of-portsmouth` went 4 → 3 as a
+side-effect. `the-holocaust` stays at 3, where the missing edge would have put
+it at 2.
+
+### Deviations
+
+684. **The index had been stale since M44a, and two rounds did not see it.**
+     `node tools/validate.mjs --index` reported **108 errors** on this branch's
+     head before this run touched anything: M44a's import batches and M44b's
+     fifty-four records went in without `node tools/build-index.mjs`. Nine
+     tests read the repository through the index rather than through `data/`
+     and all nine were failing — `build-index`, `prerender`, five in
+     `spine-loader`, and `validate-cli`. The run protocol names the validator
+     **without** `--index`, which is why it went unseen. Rebuilt in a commit of
+     its own; `sources.html` came with it. Whether the protocol should name
+     `--index` is a question for whoever owns it.
+685. **Two refusals in `tools/migrate/ids.mjs` were narrowed to what their own
+     reasons argue.** The tool refused both records this run was told to
+     rename. (a) The tombstone refusal says "the answer is to rename the record
+     that stands in its place" — but a retracted record with `supersededBy:
+     null` has no such record, its former id keeps resolving through `aliases`
+     like anybody's, and `CLAUDE.md`'s English rule does not stop at a
+     withdrawn record. It now asks for a successor rather than for a status,
+     and `merged` keeps its own refusal. (b) Amendment A2 is about an id an
+     import **re-derives**: a CShapes actor's id is a value in the mapping file
+     and its presences are `<actor>-<year>`. The Wikidata import re-derives
+     nothing of the sort — `itemIndex` keys the records it has by `kind:Qnnn`
+     and enriches whichever record claims the item, deriving an id from a label
+     only for an item no record claims — so a record that keeps its `wikidata`
+     across a rename is re-found under its new id. The refusal now asks for
+     that identifier. Two tests rewritten and two added; 22 pass in
+     `tests/migrate-ids.test.mjs`. **This is a change to a tool the brief did
+     not name**, and it is recorded here because without it the task it did
+     name could not be done at all.
+686. **Seventeen of the nineteen renames are tombstones**, which is more than
+     §5d asked for: it named two records, both active. They were taken for the
+     same reason the Croatian war's dates were, and the brief's own words —
+     "find **every** record in this state" — decided it. A withdrawn record is
+     still a record of this atlas, still appears in `review.html`, and whoever
+     un-retracts it should not find it misfiled.
+687. **`docs/import-report.md` was deliberately not rewritten.** Its line
+     `created event convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados
+     from Q60433` is a log of what the import did, under the id it did it
+     with; rewriting it would make the log say something that did not happen,
+     and the file is regenerated by the next import anyway. The two
+     hand-written documents that point *into* the corpus —
+     `docs/m22-retractions.md` and `docs/m44-connections.md` — were rewritten,
+     each with a note saying what was renamed and when, so that neither account
+     is falsified and a reader who follows an id lands on a record.
+688. **A test asserted an absolute that only held because nothing had ever been
+     renamed.** `tests/spine.test.mjs`, "the id table is in the defined order",
+     asserted that **no** edge id is ever in the spine's id table. But
+     `merges.aliases` is a pair `[alias, owner]` and interns both, so an edge
+     with a former id costs one entry — and the cascade gave two edges a former
+     id for the first time in the corpus's life. The test now asserts the
+     property (an edge is in the table exactly when the merges name it) instead
+     of the number, which is what `ffd737c` and `522e79e` did today to three
+     other tests.
+689. **The nineteen records keep their Portuguese label in `names`.** Nothing
+     asked for this. It is here because a rename that makes a record
+     unfindable by the only name it has ever had is a regression dressed as a
+     correction, and `names` is the field rule 18 already holds to that shape.
+690. **Nothing was written for `the-holocaust`'s dates.** The obvious way to
+     make the third edge validate is to give the record a `{ min, max }` start,
+     which the interval schema supports and which would be a defensible thing
+     to say about a subject where 1933, 1938, 1941 and 1942 are all argued for.
+     It was not done. Changing a record's dates so that an edge fits is
+     motivated reasoning, and *when the Holocaust begins* is a historical claim
+     of exactly the kind `CLAUDE.md` forbids this assistant from writing. It is
+     the owner's, with a source they have read.
+691. **Deviation 683's browser test still fails under load and passes alone.**
+     `tests/map-browser.test.mjs`, "zoomed to Portugal, Lisbon is named once",
+     failed once in a full `node --test` of 1,422 tests and passed all 35 of
+     its own file's tests when run alone. Nothing in this round touches the map
+     or its data. It is 683, unchanged, and still an editorial question about
+     M38b.
+692. **One of the three edges the owner decided is not written**, and no
+     workaround was taken. See §3 above. The choices are the owner's: re-date
+     `the-holocaust` from a source a person has read; or split it into the
+     persecution from 1933 and the extermination from 1941, which is what its
+     own summary already half does and which would let the war enable the
+     second without touching the first; or leave it and accept that the record
+     stays at three hops with no incoming edge. This run took none of them.
+
+### What is still the owner's, after this run
+
+M44b left six questions. This run answers two of them and adds one.
+
+- **Answered, §5d question 5**: the Portuguese ids are renamed, and seventeen
+  more with them.
+- **Answered, question 2**: two of the three §5c edges are written, as
+  `probable`. The third is question 7 below.
+- **Still open**: questions 1 (the nine rows of §4c), 3 (the eleven Portuguese
+  records of §5b), 4 (widening rule 22 — this run met exactly the gap A4
+  describes and could only work round it with a `review.note`), and 6 (what the
+  Lisbon label test should assert).
+- **New, question 7**: what to do about `the-holocaust`'s dates, so that the
+  edge the owner decided can be written. Deviation 692 names the three ways.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
