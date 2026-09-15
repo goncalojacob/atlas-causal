@@ -41,6 +41,46 @@ five sitelinks. The rule is what the owner delegated and it is what was
 followed; M41b is where a candidate that earns no honest edge is retracted,
 as M40b retracted 28 of M40a's 91.
 
+**The rule M44a's ticks follow.** M44a, 15 September 2026, under
+`docs/m44-brief.md` section 3b as amended by A1, A3, A7 and A8: the choice is
+a rule, not a hand, and it was written here before a box was ticked. The pool
+is the **world rows only** — the eleven `world-*` families, 1481 rows — and
+"already held" is recomputed against **today's** `data/`, not read from the
+`in the atlas` column, which was computed on a branch cut before the `world`
+merge. A row is already held if its item id is on a record under `data/`, or
+its English or Portuguese label matches a record's title or one of its names.
+One row more is held under a title neither test reaches, and it is named here
+rather than left for the import to duplicate: `Q638903`, the 5 October 1910
+revolution, which is `data/events/republic-proclaimed-1910.json` — active,
+same date, and carrying no item id. That leaves a pool of **1390 rows**.
+Sitelinks and the item id are both in the row, ties break by the item id read
+as a number, and a world row's decade is its own date's, because every world
+row is printed under the one `## 2020s` heading. The same inputs give the same
+140 twice.
+
+The cap is **140**, and the four sets are taken in order, no row taken twice:
+
+| set | what it keeps | rows |
+|---|---|---|
+| 1 | **Named**: the world row that Appendix A of `docs/m44-brief.md` names, found by its English label — whole string first, then as a substring; where a label names more than one item, the appendix's own id decides which | 36 |
+| 2 | **Thin decades**: after set 1, the 8 best by sitelinks dated in each of the 1890s and the 1900s, and the 6 best in each of the 1930s, 1940s and 1950s | 34 |
+| 3 | **The zero category `revolution`**: after sets 1–2, the 8 best the seeds' class table types into `revolution` — one class holds it, `Q45382`, coup d'état (A7); no class carries `economy`, so the eight slots section 3b gave it fall to set 4 | 8 |
+| 4 | **Remainder to the cap**: the best remaining by sitelinks over the whole world pool | 62 |
+| | | **140** |
+
+**Set 1 is all thirty-six of Appendix A, not the seven of amendment A1.** A1
+recorded that twenty-nine of the thirty-six sat in `runs.import.done` and so
+would import nothing; **M44-0 rewound the cursor for all twenty-nine on
+8 September** (`STATUS.md`, deviation 545), which is the recheck A0 asks for.
+Those twenty-nine are already in `items` and are not added again (A3): of the
+140 ticked, **111 ids are added to `items`** and 29 were already there, so
+`items` goes from 592 to 703. Six of Appendix A print a class the class table
+does not hold, and twenty-three of the twenty-nine still have no lane; both are
+refusals this round expects and neither is a reason to widen a table (A9).
+
+Nothing was struck or added by hand except the one named exclusion above.
+
+
 2 row(s) ticked here were carried by hand from the candidate file of the
 5 September run, under a query heading this run's file does not have: the
 query was refused on 6 September in both rounds, and dropping the row would
@@ -540,17 +580,17 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q12583`](https://www.wikidata.org/wiki/Q12583) | Spanish–American War | Guerra Hispano-Americana | 1898-01-01 | war | 88 | — |
-| [ ] | [`Q178687`](https://www.wikidata.org/wiki/Q178687) | First Sino-Japanese War | Primeira Guerra Sino-Japonesa | 1894-08-01 | war | 77 | — |
+| [x] | [`Q12583`](https://www.wikidata.org/wiki/Q12583) | Spanish–American War | Guerra Hispano-Americana | 1898-01-01 | war | 88 | — |
+| [x] | [`Q178687`](https://www.wikidata.org/wiki/Q178687) | First Sino-Japanese War | Primeira Guerra Sino-Japonesa | 1894-08-01 | war | 77 | — |
 | [ ] | [`Q170850`](https://www.wikidata.org/wiki/Q170850) | Anglo-Zanzibar War | Guerra Anglo-Zanzibari | 1896-08-27 | colonial war | 74 | yes |
 | [ ] | [`Q215112`](https://www.wikidata.org/wiki/Q215112) | Second Boer War | Segunda Guerra dos Bôeres | 1899-10-23 | war | 66 | yes |
-| [ ] | [`Q214456`](https://www.wikidata.org/wiki/Q214456) | Philippine–American War | Guerra Filipino-Americana | 1899-02-04 | war | 59 | — |
-| [ ] | [`Q422082`](https://www.wikidata.org/wiki/Q422082) | Philippine Revolution | Revolução Filipina | 1896-01-01 | war | 51 | — |
-| [ ] | [`Q989115`](https://www.wikidata.org/wiki/Q989115) | First Italo-Ethiopian War | rogerinho saco enrreugado | 1894-12-15 | war | 46 | — |
-| [ ] | [`Q657055`](https://www.wikidata.org/wiki/Q657055) | Greco-Turkish War of 1897 | Guerra Greco-Turca | 1897-01-01 | war | 40 | — |
-| [ ] | [`Q1676845`](https://www.wikidata.org/wiki/Q1676845) | Boer Wars | Guerra dos Bôeres | 1899-10-11 | war | 40 | — |
-| [ ] | [`Q1514908`](https://www.wikidata.org/wiki/Q1514908) | Cuban War of Independence | Guerra de Independência Cubana | 1895-01-01 | war of independence | 38 | — |
-| [ ] | [`Q768496`](https://www.wikidata.org/wiki/Q768496) | Banana Wars | Guerras das Bananas | 1898-01-01 | war | 35 | — |
+| [x] | [`Q214456`](https://www.wikidata.org/wiki/Q214456) | Philippine–American War | Guerra Filipino-Americana | 1899-02-04 | war | 59 | — |
+| [x] | [`Q422082`](https://www.wikidata.org/wiki/Q422082) | Philippine Revolution | Revolução Filipina | 1896-01-01 | war | 51 | — |
+| [x] | [`Q989115`](https://www.wikidata.org/wiki/Q989115) | First Italo-Ethiopian War | rogerinho saco enrreugado | 1894-12-15 | war | 46 | — |
+| [x] | [`Q657055`](https://www.wikidata.org/wiki/Q657055) | Greco-Turkish War of 1897 | Guerra Greco-Turca | 1897-01-01 | war | 40 | — |
+| [x] | [`Q1676845`](https://www.wikidata.org/wiki/Q1676845) | Boer Wars | Guerra dos Bôeres | 1899-10-11 | war | 40 | — |
+| [x] | [`Q1514908`](https://www.wikidata.org/wiki/Q1514908) | Cuban War of Independence | Guerra de Independência Cubana | 1895-01-01 | war of independence | 38 | — |
+| [x] | [`Q768496`](https://www.wikidata.org/wiki/Q768496) | Banana Wars | Guerras das Bananas | 1898-01-01 | war | 35 | — |
 | [ ] | [`Q43378`](https://www.wikidata.org/wiki/Q43378) | Thousand Days' War | Guerra dos Mil Dias | 1899-10-17 | civil war | 29 | — |
 | [ ] | [`Q857982`](https://www.wikidata.org/wiki/Q857982) | First Matabele War | Primeira Guerra de Matabele | 1893-10-01 | war | 24 | — |
 | [ ] | [`Q1359846`](https://www.wikidata.org/wiki/Q1359846) | 1893 Franco-Siamese crisis | Guerra Franco-Siamesa | 1893-07-13 | war | 21 | — |
@@ -580,8 +620,8 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q269655`](https://www.wikidata.org/wiki/Q269655) | Treaty of Shimonoseki | Tratado de Shimonoseki | 1895-04-17 | peace treaty | 59 | — |
-| [ ] | [`Q847137`](https://www.wikidata.org/wiki/Q847137) | Treaty of Paris (1898) | Tratado de Paris | 1898-12-10 | peace treaty | 44 | — |
+| [x] | [`Q269655`](https://www.wikidata.org/wiki/Q269655) | Treaty of Shimonoseki | Tratado de Shimonoseki | 1895-04-17 | peace treaty | 59 | — |
+| [x] | [`Q847137`](https://www.wikidata.org/wiki/Q847137) | Treaty of Paris (1898) | Tratado de Paris | 1898-12-10 | peace treaty | 44 | — |
 | [ ] | [`Q243799`](https://www.wikidata.org/wiki/Q243799) | Franco-Russian Alliance | Aliança Franco-Russa | 1894-01-04 | treaty | 31 | — |
 | [ ] | [`Q705537`](https://www.wikidata.org/wiki/Q705537) | Heligoland–Zanzibar Treaty | Tratado de Helgoland-Zanzibar | 1890-07-01 | treaty | 24 | — |
 | [ ] | [`Q664603`](https://www.wikidata.org/wiki/Q664603) | German–Spanish Treaty | Tratado Germano-Espanhol | 1899-02-12 | treaty | 20 | — |
@@ -670,8 +710,8 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q159950`](https://www.wikidata.org/wiki/Q159950) | Russo-Japanese War | Guerra Russo-Japonesa | 1904-02-08 | war | 93 | — |
-| [ ] | [`Q705553`](https://www.wikidata.org/wiki/Q705553) | Majimaji War | Rebelião Maji Maji | 1905-07-01 | rebellion | 29 | — |
+| [x] | [`Q159950`](https://www.wikidata.org/wiki/Q159950) | Russo-Japanese War | Guerra Russo-Japonesa | 1904-02-08 | war | 93 | — |
+| [x] | [`Q705553`](https://www.wikidata.org/wiki/Q705553) | Majimaji War | Rebelião Maji Maji | 1905-07-01 | rebellion | 29 | — |
 | [ ] | [`Q2935421`](https://www.wikidata.org/wiki/Q2935421) | French conquest of Morocco | Conquista francesa de Marrocos | 1907-01-01 | war | 18 | — |
 | [ ] | [`Q356920`](https://www.wikidata.org/wiki/Q356920) | War of the Golden Stool | — | 1900-03-01 | war | 13 | — |
 | [ ] | [`Q2032554`](https://www.wikidata.org/wiki/Q2032554) | Second Melillan campaign | Segunda Campanha de Melilla | 1909-07-09 | war | 12 | — |
@@ -686,11 +726,11 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q548067`](https://www.wikidata.org/wiki/Q548067) | Treaty of Portsmouth | Tratado de Portsmouth | 1905-09-05 | peace treaty | 53 | yes |
-| [ ] | [`Q464399`](https://www.wikidata.org/wiki/Q464399) | Entente Cordiale | Entente Cordiale | 1904-04-08 | treaty | 49 | — |
-| [ ] | [`Q672556`](https://www.wikidata.org/wiki/Q672556) | Boxer Protocol | Protocolo Boxer | 1901-09-07 | manuscript | 28 | — |
-| [ ] | [`Q541195`](https://www.wikidata.org/wiki/Q541195) | Anglo-Japanese Alliance | Aliança Anglo-Japonesa | 1902-01-30 | treaty | 28 | — |
-| [ ] | [`Q233254`](https://www.wikidata.org/wiki/Q233254) | Japan–Korea Treaty of November 1905 | Tratado de Eulsa | 1905-11-17 | unequal treaties | 28 | — |
-| [ ] | [`Q927606`](https://www.wikidata.org/wiki/Q927606) | Treaty of Vereeniging | Tratado de Vereeniging | 1902-05-31 | treaty | 21 | — |
+| [x] | [`Q464399`](https://www.wikidata.org/wiki/Q464399) | Entente Cordiale | Entente Cordiale | 1904-04-08 | treaty | 49 | — |
+| [x] | [`Q672556`](https://www.wikidata.org/wiki/Q672556) | Boxer Protocol | Protocolo Boxer | 1901-09-07 | manuscript | 28 | — |
+| [x] | [`Q541195`](https://www.wikidata.org/wiki/Q541195) | Anglo-Japanese Alliance | Aliança Anglo-Japonesa | 1902-01-30 | treaty | 28 | — |
+| [x] | [`Q233254`](https://www.wikidata.org/wiki/Q233254) | Japan–Korea Treaty of November 1905 | Tratado de Eulsa | 1905-11-17 | unequal treaties | 28 | — |
+| [x] | [`Q927606`](https://www.wikidata.org/wiki/Q927606) | Treaty of Vereeniging | Tratado de Vereeniging | 1902-05-31 | treaty | 21 | — |
 | [ ] | [`Q1122547`](https://www.wikidata.org/wiki/Q1122547) | Treaty of Petrópolis | Tratado de Petrópolis | 1903-11-11 | treaty | 20 | — |
 | [ ] | [`Q676676`](https://www.wikidata.org/wiki/Q676676) | Hay–Bunau-Varilla Treaty | Tratado Hay-Bunau-Varilla | 1903-11-18 | treaty | 19 | — |
 | [ ] | [`Q2996241`](https://www.wikidata.org/wiki/Q2996241) | British-Russian Convention | — | 1907-08-31 | convention | 19 | — |
@@ -720,7 +760,7 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q184928`](https://www.wikidata.org/wiki/Q184928) | Russian Revolution of 1905 | Revolução Russa de 1905 | 1905-01-22 | revolution | 71 | yes |
 | [ ] | [`Q4298662`](https://www.wikidata.org/wiki/Q4298662) | Young Turk Revolution of 1908 | Revolução dos Jovens Turcos | 1908-07-24 | revolution | 46 | yes |
-| [ ] | [`Q1368440`](https://www.wikidata.org/wiki/Q1368440) | Constitutionalization attempts in Iran | Revolução Constitucional Persa | 1905-01-01 | revolution | 36 | — |
+| [x] | [`Q1368440`](https://www.wikidata.org/wiki/Q1368440) | Constitutionalization attempts in Iran | Revolução Constitucional Persa | 1905-01-01 | revolution | 36 | — |
 | [ ] | [`Q7318712`](https://www.wikidata.org/wiki/Q7318712) | Revolution in the Kingdom of Poland | — | 1905-01-01 | revolution | 13 | — |
 | [ ] | [`Q4818171`](https://www.wikidata.org/wiki/Q4818171) | Persian Constitutional Revolution | — | 1905-01-01 | revolution | 8 | — |
 
@@ -755,13 +795,13 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q844449`](https://www.wikidata.org/wiki/Q844449) | Panic of 1907 | Pânico financeiro de 1907 | 1907-01-01 | economic crisis | 27 | — |
+| [x] | [`Q844449`](https://www.wikidata.org/wiki/Q844449) | Panic of 1907 | Pânico financeiro de 1907 | 1907-01-01 | economic crisis | 27 | — |
 
 ### world-genocides-1900s — 3
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q312492`](https://www.wikidata.org/wiki/Q312492) | Herero and Nama genocide | Genocídio dos hererós e namaquas | 1904-01-01 | genocide | 40 | — |
+| [x] | [`Q312492`](https://www.wikidata.org/wiki/Q312492) | Herero and Nama genocide | Genocídio dos hererós e namaquas | 1904-01-01 | genocide | 40 | — |
 | [ ] | [`Q4158590`](https://www.wikidata.org/wiki/Q4158590) | deportation of Azerbaijanis from Armenia | — | 1901-01-01 | ethnic cleansing | 14 | — |
 | [ ] | [`Q4118051`](https://www.wikidata.org/wiki/Q4118051) | First Battle of Bud Dajo | — | 1906-03-05 | genocide | 8 | — |
 
@@ -780,16 +820,16 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q361`](https://www.wikidata.org/wiki/Q361) | World War I | Primeira Guerra Mundial | 1914-07-28 | world war | 264 | yes |
 | [ ] | [`Q79911`](https://www.wikidata.org/wiki/Q79911) | Russian Civil War | Guerra Civil Russa | 1917-11-07 | civil war | 102 | yes |
-| [ ] | [`Q165725`](https://www.wikidata.org/wiki/Q165725) | Balkan Wars | Guerras dos Balcãs | 1912-10-08 | series of wars | 80 | — |
-| [ ] | [`Q177918`](https://www.wikidata.org/wiki/Q177918) | First Balkan War | Primeira Guerra Balcânica | 1912-10-08 | war | 78 | — |
-| [ ] | [`Q186284`](https://www.wikidata.org/wiki/Q186284) | Polish–Soviet War | Guerra Polaco-Soviética | 1919-02-01 | war | 71 | — |
-| [ ] | [`Q184183`](https://www.wikidata.org/wiki/Q184183) | Second Balkan War | Segunda Guerra Balcânica | 1913-06-29 | war | 70 | — |
+| [x] | [`Q165725`](https://www.wikidata.org/wiki/Q165725) | Balkan Wars | Guerras dos Balcãs | 1912-10-08 | series of wars | 80 | — |
+| [x] | [`Q177918`](https://www.wikidata.org/wiki/Q177918) | First Balkan War | Primeira Guerra Balcânica | 1912-10-08 | war | 78 | — |
+| [x] | [`Q186284`](https://www.wikidata.org/wiki/Q186284) | Polish–Soviet War | Guerra Polaco-Soviética | 1919-02-01 | war | 71 | — |
+| [x] | [`Q184183`](https://www.wikidata.org/wiki/Q184183) | Second Balkan War | Segunda Guerra Balcânica | 1913-06-29 | war | 70 | — |
 | [ ] | [`Q214426`](https://www.wikidata.org/wiki/Q214426) | Mexican Revolution | Revolução Mexicana | 1910-11-20 | civil war | 69 | yes |
 | [ ] | [`Q234738`](https://www.wikidata.org/wiki/Q234738) | Turkish War of Independence | Guerra de Independência da Turquia | 1919-05-19 | war of independence | 68 | yes |
-| [ ] | [`Q203824`](https://www.wikidata.org/wiki/Q203824) | Italo-Turkish War | Guerra Ítalo-Turca | 1911-09-29 | war | 62 | — |
-| [ ] | [`Q211855`](https://www.wikidata.org/wiki/Q211855) | Finnish Civil War | Guerra Civil Finlandesa | 1918-01-27 | civil war | 60 | — |
-| [ ] | [`Q208297`](https://www.wikidata.org/wiki/Q208297) | Irish War of Independence | Guerra da Independência da Irlanda | 1919-01-21 | war of independence | 57 | — |
-| [ ] | [`Q87138`](https://www.wikidata.org/wiki/Q87138) | Greco-Turkish War | Guerra Greco-Turca de 1919–1922 | 1919-05-15 | war | 55 | — |
+| [x] | [`Q203824`](https://www.wikidata.org/wiki/Q203824) | Italo-Turkish War | Guerra Ítalo-Turca | 1911-09-29 | war | 62 | — |
+| [x] | [`Q211855`](https://www.wikidata.org/wiki/Q211855) | Finnish Civil War | Guerra Civil Finlandesa | 1918-01-27 | civil war | 60 | — |
+| [x] | [`Q208297`](https://www.wikidata.org/wiki/Q208297) | Irish War of Independence | Guerra da Independência da Irlanda | 1919-01-21 | war of independence | 57 | — |
+| [x] | [`Q87138`](https://www.wikidata.org/wiki/Q87138) | Greco-Turkish War | Guerra Greco-Turca de 1919–1922 | 1919-05-15 | war | 55 | — |
 | [ ] | [`Q1127302`](https://www.wikidata.org/wiki/Q1127302) | Estonian War of Independence | Guerra de Independência da Estônia | 1918-11-28 | war of independence | 47 | — |
 | [ ] | [`Q842774`](https://www.wikidata.org/wiki/Q842774) | Polish–Ukrainian War | Guerra Polaco-Ucraniana | 1918-11-01 | war | 40 | — |
 | [ ] | [`Q766437`](https://www.wikidata.org/wiki/Q766437) | Rif War | Guerra do Rife | 1911-06-08 | war | 39 | — |
@@ -821,11 +861,11 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q8736`](https://www.wikidata.org/wiki/Q8736) | Treaty of Versailles | Tratado de Versalhes | 1919-06-28 | peace treaty | 134 | yes |
 | [ ] | [`Q122371`](https://www.wikidata.org/wiki/Q122371) | Treaty of Brest-Litovsk | Tratado de Brest-Litovski | 1918-03-03 | peace treaty | 70 | yes |
-| [ ] | [`Q211674`](https://www.wikidata.org/wiki/Q211674) | Sykes–Picot Agreement | Acordo Sykes-Picot | 1916-05-16 | treaty | 67 | — |
-| [ ] | [`Q157648`](https://www.wikidata.org/wiki/Q157648) | Fourteen Points | Quatorze Pontos | 1918-01-08 | peace treaty | 58 | — |
-| [ ] | [`Q192924`](https://www.wikidata.org/wiki/Q192924) | Treaty of Saint-Germain-en-Laye | Tratado de Saint-Germain-en-Laye | 1919-09-10 | peace treaty | 55 | — |
-| [ ] | [`Q253224`](https://www.wikidata.org/wiki/Q253224) | Armistice of Compiègne | Armistício de Compiègne | 1918-11-11 | armistice | 52 | — |
-| [ ] | [`Q824165`](https://www.wikidata.org/wiki/Q824165) | Treaty of London | Tratado de Londres | 1915-04-26 | treaty | 51 | — |
+| [x] | [`Q211674`](https://www.wikidata.org/wiki/Q211674) | Sykes–Picot Agreement | Acordo Sykes-Picot | 1916-05-16 | treaty | 67 | — |
+| [x] | [`Q157648`](https://www.wikidata.org/wiki/Q157648) | Fourteen Points | Quatorze Pontos | 1918-01-08 | peace treaty | 58 | — |
+| [x] | [`Q192924`](https://www.wikidata.org/wiki/Q192924) | Treaty of Saint-Germain-en-Laye | Tratado de Saint-Germain-en-Laye | 1919-09-10 | peace treaty | 55 | — |
+| [x] | [`Q253224`](https://www.wikidata.org/wiki/Q253224) | Armistice of Compiègne | Armistício de Compiègne | 1918-11-11 | armistice | 52 | — |
+| [x] | [`Q824165`](https://www.wikidata.org/wiki/Q824165) | Treaty of London | Tratado de Londres | 1915-04-26 | treaty | 51 | — |
 | [ ] | [`Q328499`](https://www.wikidata.org/wiki/Q328499) | Armistice of Mudros | Armistício de Mudros | 1918-10-30 | armistice | 50 | — |
 | [ ] | [`Q269267`](https://www.wikidata.org/wiki/Q269267) | Treaty of Neuilly-sur-Seine | Tratado de Neuilly-sur-Seine | 1919-11-27 | peace treaty | 46 | — |
 | [ ] | [`Q500067`](https://www.wikidata.org/wiki/Q500067) | Treaty of Bucharest | Tratado de Bucareste | 1913-08-10 | peace treaty | 45 | — |
@@ -868,7 +908,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q42976`](https://www.wikidata.org/wiki/Q42976) | October Revolution | Revolução de Outubro | 1917-11-07 | revolution | 117 | yes |
 | [ ] | [`Q101534`](https://www.wikidata.org/wiki/Q101534) | February Revolution | Revolução de Fevereiro | 1917-01-01 | revolution | 87 | yes |
 | [ ] | [`Q190517`](https://www.wikidata.org/wiki/Q190517) | Xinhai Revolution | Revolução Xinhai | 1911-10-10 | revolution | 68 | yes |
-| [ ] | [`Q170306`](https://www.wikidata.org/wiki/Q170306) | German Revolution of 1918–1919 | Revolução Alemã de 1918-1919 | 1918-10-24 | revolution | 60 | — |
+| [x] | [`Q170306`](https://www.wikidata.org/wiki/Q170306) | German Revolution of 1918–1919 | Revolução Alemã de 1918-1919 | 1918-10-24 | revolution | 60 | — |
 | [ ] | [`Q689527`](https://www.wikidata.org/wiki/Q689527) | Aster Revolution | Revolução dos Crisântemos | 1918-10-31 | revolution | 30 | — |
 | [ ] | [`Q1993171`](https://www.wikidata.org/wiki/Q1993171) | 1919 Egyptian revolution | Revolução Egípcia de 1919 | 1919-01-01 | revolution | 29 | — |
 | [ ] | [`Q4301694`](https://www.wikidata.org/wiki/Q4301694) | Monegasque Revolution | Revolução Monegasca | 1910-01-01 | revolution | 11 | — |
@@ -880,15 +920,15 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q178275`](https://www.wikidata.org/wiki/Q178275) | 1918–1920 flu pandemic | gripe de 1918 | 1918-01-01 | zoonosis | 102 | — |
+| [x] | [`Q178275`](https://www.wikidata.org/wiki/Q178275) | 1918–1920 flu pandemic | gripe de 1918 | 1918-01-01 | zoonosis | 102 | — |
 | [ ] | [`Q91900320`](https://www.wikidata.org/wiki/Q91900320) | Manchurian plague | — | 1910-01-01 | plague epidemic | 16 | — |
 
 ### world-coups-1910s — 39
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q193689`](https://www.wikidata.org/wiki/Q193689) | Easter Rising | Revolta da Páscoa | 1916-04-01 | rebellion | 61 | — |
-| [ ] | [`Q239060`](https://www.wikidata.org/wiki/Q239060) | Arab Revolt | Revolta Árabe | 1916-06-01 | rebellion | 56 | — |
+| [x] | [`Q193689`](https://www.wikidata.org/wiki/Q193689) | Easter Rising | Revolta da Páscoa | 1916-04-01 | rebellion | 61 | — |
+| [x] | [`Q239060`](https://www.wikidata.org/wiki/Q239060) | Arab Revolt | Revolta Árabe | 1916-06-01 | rebellion | 56 | — |
 | [ ] | [`Q255352`](https://www.wikidata.org/wiki/Q255352) | Basmachi movement | Revolta dos Basmachi | 1916-01-01 | rebellion | 46 | — |
 | [ ] | [`Q638903`](https://www.wikidata.org/wiki/Q638903) | 5 October 1910 revolution | Implantação da República Portuguesa | 1910-10-03 | coup d'état | 38 | — |
 | [ ] | [`Q339291`](https://www.wikidata.org/wiki/Q339291) | Wuchang Uprising | Levantamento de Wuchang | 1911-10-10 | rebellion | 33 | — |
@@ -940,7 +980,7 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q80034`](https://www.wikidata.org/wiki/Q80034) | Armenian Genocide | genocídio arménio | 1915-01-01 | genocide | 125 | yes |
-| [ ] | [`Q852236`](https://www.wikidata.org/wiki/Q852236) | Sayfo | Genocídio assírio | 1914-01-01 | genocide | 53 | — |
+| [x] | [`Q852236`](https://www.wikidata.org/wiki/Q852236) | Sayfo | Genocídio assírio | 1914-01-01 | genocide | 53 | — |
 | [ ] | [`Q911233`](https://www.wikidata.org/wiki/Q911233) | Greek genocide | Genocídio grego | 1913-01-01 | genocide | 36 | — |
 | [ ] | [`Q2464639`](https://www.wikidata.org/wiki/Q2464639) | decossackization | descossaquização | 1919-01-01 | ethnic cleansing | 16 | — |
 
@@ -960,7 +1000,7 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q179975`](https://www.wikidata.org/wiki/Q179975) | Chinese Civil War | Guerra Civil Chinesa | 1927-08-01 | civil war | 85 | yes |
-| [ ] | [`Q748042`](https://www.wikidata.org/wiki/Q748042) | Irish Civil War | Guerra Civil Irlandesa | 1922-06-28 | civil war | 55 | — |
+| [x] | [`Q748042`](https://www.wikidata.org/wiki/Q748042) | Irish Civil War | Guerra Civil Irlandesa | 1922-06-28 | civil war | 55 | — |
 | [ ] | [`Q957586`](https://www.wikidata.org/wiki/Q957586) | Turkish–Armenian War | Guerra Turco-Armênia | 1920-09-23 | war | 38 | — |
 | [ ] | [`Q2992403`](https://www.wikidata.org/wiki/Q2992403) | Franco-Syrian War | Guerra franco-síria | 1920-03-08 | war | 27 | — |
 | [ ] | [`Q2720692`](https://www.wikidata.org/wiki/Q2720692) | Vlora War | Guerra de Vlora | 1920-06-04 | war | 22 | — |
@@ -987,7 +1027,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q181902`](https://www.wikidata.org/wiki/Q181902) | Treaty of Trianon | Tratado de Trianon | 1920-06-04 | peace treaty | 70 | yes |
 | [ ] | [`Q182515`](https://www.wikidata.org/wiki/Q182515) | Treaty of Sèvres | Tratado de Sèvres | 1920-08-10 | peace treaty | 68 | yes |
 | [ ] | [`Q193270`](https://www.wikidata.org/wiki/Q193270) | Lateran Treaty | tratado de Latrão | 1929-02-11 | concordat | 68 | yes |
-| [ ] | [`Q205073`](https://www.wikidata.org/wiki/Q205073) | Kellogg-Briand pact | Pacto Kellogg-Briand | 1928-08-27 | treaty | 62 | — |
+| [x] | [`Q205073`](https://www.wikidata.org/wiki/Q205073) | Kellogg-Briand pact | Pacto Kellogg-Briand | 1928-08-27 | treaty | 62 | — |
 | [ ] | [`Q152925`](https://www.wikidata.org/wiki/Q152925) | Locarno Treaties | Tratados de Locarno | 1925-10-16 | treaty | 48 | — |
 | [ ] | [`Q541191`](https://www.wikidata.org/wiki/Q541191) | Anglo-Irish Treaty | Tratado Anglo-Irlandês | 1921-12-06 | peace treaty | 48 | — |
 | [ ] | [`Q155796`](https://www.wikidata.org/wiki/Q155796) | Treaty of Rapallo | Tratado de Rapallo | 1922-04-16 | treaty | 47 | — |
@@ -1038,8 +1078,8 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q36749`](https://www.wikidata.org/wiki/Q36749) | Beer Hall Putsch | Putsch da Cervejaria | 1923-11-08 | attempted coup d'état | 64 | yes |
-| [ ] | [`Q208300`](https://www.wikidata.org/wiki/Q208300) | Kronstadt rebellion | Revolta de Kronstadt | 1921-01-01 | rebellion | 58 | — |
-| [ ] | [`Q468823`](https://www.wikidata.org/wiki/Q468823) | March on Rome | Marcha sobre Roma | 1922-10-01 | coup d'état | 48 | — |
+| [x] | [`Q208300`](https://www.wikidata.org/wiki/Q208300) | Kronstadt rebellion | Revolta de Kronstadt | 1921-01-01 | rebellion | 58 | — |
+| [x] | [`Q468823`](https://www.wikidata.org/wiki/Q468823) | March on Rome | Marcha sobre Roma | 1922-10-01 | coup d'état | 48 | — |
 | [ ] | [`Q161141`](https://www.wikidata.org/wiki/Q161141) | Kapp Putsch | Kapp-Putsch | 1920-03-13 | attempted coup d'état | 38 | — |
 | [ ] | [`Q279662`](https://www.wikidata.org/wiki/Q279662) | Cristero War | Guerra Cristera | 1926-01-01 | rebellion | 34 | — |
 | [ ] | [`Q811250`](https://www.wikidata.org/wiki/Q811250) | Tambov Rebellion | Revolta de Tambov | 1920-08-19 | rebellion | 34 | — |
@@ -1117,10 +1157,10 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q362`](https://www.wikidata.org/wiki/Q362) | World War II | Segunda Guerra Mundial | 1939-09-01 | world war | 291 | yes |
 | [ ] | [`Q10859`](https://www.wikidata.org/wiki/Q10859) | Spanish Civil War | Guerra Civil Espanhola | 1936-07-18 | civil war | 128 | yes |
-| [ ] | [`Q134949`](https://www.wikidata.org/wiki/Q134949) | Winter War | Guerra de Inverno | 1939-11-30 | war | 93 | — |
+| [x] | [`Q134949`](https://www.wikidata.org/wiki/Q134949) | Winter War | Guerra de Inverno | 1939-11-30 | war | 93 | — |
 | [ ] | [`Q170314`](https://www.wikidata.org/wiki/Q170314) | Second Sino-Japanese War | Segunda Guerra Sino-Japonesa | 1937-07-07 | war | 90 | yes |
-| [ ] | [`Q94916`](https://www.wikidata.org/wiki/Q94916) | Second Italo-Ethiopian War | Segunda Guerra Ítalo-Etíope | 1935-10-03 | war | 57 | — |
-| [ ] | [`Q223126`](https://www.wikidata.org/wiki/Q223126) | Chaco War | Guerra do Chaco | 1932-09-09 | war | 50 | — |
+| [x] | [`Q94916`](https://www.wikidata.org/wiki/Q94916) | Second Italo-Ethiopian War | Segunda Guerra Ítalo-Etíope | 1935-10-03 | war | 57 | — |
+| [x] | [`Q223126`](https://www.wikidata.org/wiki/Q223126) | Chaco War | Guerra do Chaco | 1932-09-09 | war | 50 | — |
 | [ ] | [`Q306123`](https://www.wikidata.org/wiki/Q306123) | Austrian Civil War | Guerra Civil Austríaca | 1934-02-12 | civil war | 37 | — |
 | [ ] | [`Q696389`](https://www.wikidata.org/wiki/Q696389) | Soviet–Japanese border conflicts | Conflitos fronteiriços entre a União Soviética e o Japão | 1932-03-01 | war | 32 | — |
 | [ ] | [`Q177109`](https://www.wikidata.org/wiki/Q177109) | Slovak–Hungarian War | Guerra Eslováquia-Hungria | 1939-03-23 | war | 30 | — |
@@ -1139,8 +1179,8 @@ to that file and another run, never an edit here.
 | [ ] | [`Q130796`](https://www.wikidata.org/wiki/Q130796) | Molotov–Ribbentrop Pact | Pacto Molotov-Ribbentrop | 1939-08-23 | secret treaty | 105 | yes |
 | [ ] | [`Q154255`](https://www.wikidata.org/wiki/Q154255) | Munich agreement | Acordo de Munique | 1938-09-30 | treaty | 86 | yes |
 | [ ] | [`Q152195`](https://www.wikidata.org/wiki/Q152195) | Anti-Comintern Pact | Pacto Anticomintern | 1936-11-25 | treaty | 64 | yes |
-| [ ] | [`Q869500`](https://www.wikidata.org/wiki/Q869500) | Montreux Convention | Convenção de Montreux | 1936-01-01 | multilateral treaty | 38 | — |
-| [ ] | [`Q167396`](https://www.wikidata.org/wiki/Q167396) | Balkan Pact | Entente dos Balcãs | 1934-01-01 | treaty | 37 | — |
+| [x] | [`Q869500`](https://www.wikidata.org/wiki/Q869500) | Montreux Convention | Convenção de Montreux | 1936-01-01 | multilateral treaty | 38 | — |
+| [x] | [`Q167396`](https://www.wikidata.org/wiki/Q167396) | Balkan Pact | Entente dos Balcãs | 1934-01-01 | treaty | 37 | — |
 | [ ] | [`Q126604`](https://www.wikidata.org/wiki/Q126604) | First Vienna Award | Primeira Arbitragem de Viena | 1938-11-02 | treaty | 36 | — |
 | [ ] | [`Q126413`](https://www.wikidata.org/wiki/Q126413) | German–Polish declaration of non-aggression | Pacto de Não Agressão Alemão-Polonês | 1934-01-26 | peace treaty | 35 | — |
 | [ ] | [`Q26195`](https://www.wikidata.org/wiki/Q26195) | German–Soviet Treaty of Friendship, Cooperation and Demarcation | Tratado de Fronteira e Amizade Germano–Soviético | 1939-09-28 | bilateral treaty | 34 | — |
@@ -1198,8 +1238,8 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q2763`](https://www.wikidata.org/wiki/Q2763) | The Holocaust | Holocausto | 1933-01-01 | racism | 204 | yes |
 | [ ] | [`Q165058`](https://www.wikidata.org/wiki/Q165058) | Holodomor | Holodomor | 1932-01-01 | genocide | 92 | yes |
-| [ ] | [`Q117571`](https://www.wikidata.org/wiki/Q117571) | Porajmos | Porajmos | 1935-01-01 | genocide | 52 | — |
-| [ ] | [`Q85125`](https://www.wikidata.org/wiki/Q85125) | population transfer in the Soviet Union | transferências populacionais na União Soviética | 1930-01-01 | genocide | 46 | — |
+| [x] | [`Q117571`](https://www.wikidata.org/wiki/Q117571) | Porajmos | Porajmos | 1935-01-01 | genocide | 52 | — |
+| [x] | [`Q85125`](https://www.wikidata.org/wiki/Q85125) | population transfer in the Soviet Union | transferências populacionais na União Soviética | 1930-01-01 | genocide | 46 | — |
 | [ ] | [`Q276172`](https://www.wikidata.org/wiki/Q276172) | Jewish exodus from the Muslim world | êxodo judaico dos países árabes | 1930-01-01 | ethnic cleansing | 34 | — |
 | [ ] | [`Q1336295`](https://www.wikidata.org/wiki/Q1336295) | The Polish Operation of the NKVD | — | 1937-01-01 | ethnic cleansing | 16 | — |
 | [ ] | [`Q7571798`](https://www.wikidata.org/wiki/Q7571798) | Soviet repressions of Polish citizens | — | 1939-01-01 | ethnic cleansing | 12 | — |
@@ -1218,17 +1258,17 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q8683`](https://www.wikidata.org/wiki/Q8683) | Cold War | Guerra Fria | 1945-01-01 | proxy war | 210 | — |
+| [x] | [`Q8683`](https://www.wikidata.org/wiki/Q8683) | Cold War | Guerra Fria | 1945-01-01 | proxy war | 210 | — |
 | [ ] | [`Q189266`](https://www.wikidata.org/wiki/Q189266) | Eastern Front | Frente Oriental | 1941-06-22 | war | 90 | yes |
-| [ ] | [`Q201424`](https://www.wikidata.org/wiki/Q201424) | nuclear warfare | guerra nuclear | 1940-01-01 | hypothetical war | 69 | — |
+| [x] | [`Q201424`](https://www.wikidata.org/wiki/Q201424) | nuclear warfare | guerra nuclear | 1940-01-01 | hypothetical war | 69 | — |
 | [ ] | [`Q748780`](https://www.wikidata.org/wiki/Q748780) | First Indochina War | Primeira Guerra da Indochina | 1946-12-19 | war | 67 | yes |
-| [ ] | [`Q49097`](https://www.wikidata.org/wiki/Q49097) | 1948 Palestine war | Guerra da Palestina de 1948 | 1940-01-01 | war | 64 | — |
-| [ ] | [`Q1413732`](https://www.wikidata.org/wiki/Q1413732) | Kashmir conflict | Conflito na Caxemira | 1947-01-01 | war | 60 | — |
-| [ ] | [`Q188972`](https://www.wikidata.org/wiki/Q188972) | Greek Civil War | Guerra Civil da Grécia | 1946-03-30 | civil war | 54 | — |
-| [ ] | [`Q154940`](https://www.wikidata.org/wiki/Q154940) | Lapland War | Guerra da Lapónia | 1944-09-15 | war | 53 | — |
-| [ ] | [`Q122100`](https://www.wikidata.org/wiki/Q122100) | Continuation War | Guerra da Continuação | 1941-06-25 | war | 50 | — |
+| [x] | [`Q49097`](https://www.wikidata.org/wiki/Q49097) | 1948 Palestine war | Guerra da Palestina de 1948 | 1940-01-01 | war | 64 | — |
+| [x] | [`Q1413732`](https://www.wikidata.org/wiki/Q1413732) | Kashmir conflict | Conflito na Caxemira | 1947-01-01 | war | 60 | — |
+| [x] | [`Q188972`](https://www.wikidata.org/wiki/Q188972) | Greek Civil War | Guerra Civil da Grécia | 1946-03-30 | civil war | 54 | — |
+| [x] | [`Q154940`](https://www.wikidata.org/wiki/Q154940) | Lapland War | Guerra da Lapónia | 1944-09-15 | war | 53 | — |
+| [x] | [`Q122100`](https://www.wikidata.org/wiki/Q122100) | Continuation War | Guerra da Continuação | 1941-06-25 | war | 50 | — |
 | [ ] | [`Q652285`](https://www.wikidata.org/wiki/Q652285) | Indo-Pakistani War of 1947–1948 | Guerra Indo-Paquistanesa de 1947 | 1947-01-01 | war | 50 | — |
-| [ ] | [`Q49092`](https://www.wikidata.org/wiki/Q49092) | 1948 Arab–Israeli War | Guerra árabe-israelense de 1948 | 1940-01-01 | war | 50 | — |
+| [x] | [`Q49092`](https://www.wikidata.org/wiki/Q49092) | 1948 Arab–Israeli War | Guerra árabe-israelense de 1948 | 1940-01-01 | war | 50 | — |
 | [ ] | [`Q1332160`](https://www.wikidata.org/wiki/Q1332160) | Indonesian National Revolution | Revolução Nacional da Indonésia | 1945-08-17 | war | 48 | — |
 | [ ] | [`Q223604`](https://www.wikidata.org/wiki/Q223604) | Greco-Italian War | Guerra Greco-Italiana | 1940-10-28 | war | 47 | — |
 | [ ] | [`Q696848`](https://www.wikidata.org/wiki/Q696848) | Anglo-Iraqi War | Guerra Anglo-Iraquiana | 1941-01-01 | war | 40 | — |
@@ -1254,12 +1294,12 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q171328`](https://www.wikidata.org/wiki/Q171328) | Charter of the United Nations | Carta das Nações Unidas | 1945-06-26 | charter | 112 | yes |
 | [ ] | [`Q151187`](https://www.wikidata.org/wiki/Q151187) | Potsdam Conference | Conferência de Potsdam | 1945-07-17 | treaty | 77 | yes |
-| [ ] | [`Q877399`](https://www.wikidata.org/wiki/Q877399) | North Atlantic Treaty | Tratado do Atlântico Norte | 1949-01-01 | pact | 62 | — |
-| [ ] | [`Q153122`](https://www.wikidata.org/wiki/Q153122) | Tripartite Pact | Pacto Tripartite | 1940-09-27 | treaty | 61 | — |
-| [ ] | [`Q865344`](https://www.wikidata.org/wiki/Q865344) | Genocide Convention | Convenção para a Prevenção e a Repressão do Crime de Genocídio | 1948-12-09 | United Nations treaty | 60 | — |
-| [ ] | [`Q188532`](https://www.wikidata.org/wiki/Q188532) | Bretton Woods system | Acordos de Bretton Woods | 1944-07-22 | treaty | 59 | — |
-| [ ] | [`Q194284`](https://www.wikidata.org/wiki/Q194284) | General Agreement on Tariffs and Trade | Acordo Geral de Tarifas e Comércio | 1947-10-30 | treaty | 55 | — |
-| [ ] | [`Q6540361`](https://www.wikidata.org/wiki/Q6540361) | surrender of Japan | Rendição do Japão | 1945-09-02 | capitulation | 55 | — |
+| [x] | [`Q877399`](https://www.wikidata.org/wiki/Q877399) | North Atlantic Treaty | Tratado do Atlântico Norte | 1949-01-01 | pact | 62 | — |
+| [x] | [`Q153122`](https://www.wikidata.org/wiki/Q153122) | Tripartite Pact | Pacto Tripartite | 1940-09-27 | treaty | 61 | — |
+| [x] | [`Q865344`](https://www.wikidata.org/wiki/Q865344) | Genocide Convention | Convenção para a Prevenção e a Repressão do Crime de Genocídio | 1948-12-09 | United Nations treaty | 60 | — |
+| [x] | [`Q188532`](https://www.wikidata.org/wiki/Q188532) | Bretton Woods system | Acordos de Bretton Woods | 1944-07-22 | treaty | 59 | — |
+| [x] | [`Q194284`](https://www.wikidata.org/wiki/Q194284) | General Agreement on Tariffs and Trade | Acordo Geral de Tarifas e Comércio | 1947-10-30 | treaty | 55 | — |
+| [x] | [`Q6540361`](https://www.wikidata.org/wiki/Q6540361) | surrender of Japan | Rendição do Japão | 1945-09-02 | capitulation | 55 | — |
 | [ ] | [`Q163244`](https://www.wikidata.org/wiki/Q163244) | Potsdam Declaration | Declaração de Potsdam | 1945-07-26 | treaty | 45 | — |
 | [ ] | [`Q322943`](https://www.wikidata.org/wiki/Q322943) | Paris Peace Treaties | Tratado de Paris | 1947-02-10 | peace treaty | 45 | — |
 | [ ] | [`Q170360`](https://www.wikidata.org/wiki/Q170360) | Armistice of 22 June 1940 | Armistício de 22 de junho de 1940 | 1940-06-22 | armistice | 43 | — |
@@ -1306,10 +1346,10 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q1402078`](https://www.wikidata.org/wiki/Q1402078) | Warsaw Uprising | Revolta de Varsóvia | 1944-08-01 | insurgency | 65 | yes |
-| [ ] | [`Q105570`](https://www.wikidata.org/wiki/Q105570) | 20 July plot | Atentado de 20 de julho | 1944-07-20 | attempted murder | 57 | — |
-| [ ] | [`Q160161`](https://www.wikidata.org/wiki/Q160161) | Warsaw Ghetto Uprising | Levante do Gueto de Varsóvia | 1943-04-19 | insurgency | 56 | — |
+| [x] | [`Q105570`](https://www.wikidata.org/wiki/Q105570) | 20 July plot | Atentado de 20 de julho | 1944-07-20 | attempted murder | 57 | — |
+| [x] | [`Q160161`](https://www.wikidata.org/wiki/Q160161) | Warsaw Ghetto Uprising | Levante do Gueto de Varsóvia | 1943-04-19 | insurgency | 56 | — |
 | [ ] | [`Q163780`](https://www.wikidata.org/wiki/Q163780) | Slovak National Uprising | Revolta Nacional Eslovaca | 1944-08-29 | rebellion | 41 | — |
-| [ ] | [`Q1137957`](https://www.wikidata.org/wiki/Q1137957) | 1948 Czechoslovak coup d'état | Golpe de Praga | 1948-02-25 | coup d'état | 39 | — |
+| [x] | [`Q1137957`](https://www.wikidata.org/wiki/Q1137957) | 1948 Czechoslovak coup d'état | Golpe de Praga | 1948-02-25 | coup d'état | 39 | — |
 | [ ] | [`Q244939`](https://www.wikidata.org/wiki/Q244939) | 228 Incident | Incidente 228 | 1947-02-27 | rebellion | 35 | — |
 | [ ] | [`Q666778`](https://www.wikidata.org/wiki/Q666778) | Prague Uprising | Levante de Praga | 1945-05-05 | rebellion | 33 | — |
 | [ ] | [`Q161391`](https://www.wikidata.org/wiki/Q161391) | Georgian uprising on Texel | — | 1945-04-05 | insurgency | 31 | — |
@@ -1357,7 +1397,7 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q134301`](https://www.wikidata.org/wiki/Q134301) | Katyn massacre | Massacre de Katyn | 1940-01-01 | mass murder | 75 | yes |
-| [ ] | [`Q127013`](https://www.wikidata.org/wiki/Q127013) | Final Solution | solução final | 1941-01-01 | genocide | 59 | — |
+| [x] | [`Q127013`](https://www.wikidata.org/wiki/Q127013) | Final Solution | solução final | 1941-01-01 | genocide | 59 | — |
 | [ ] | [`Q1775286`](https://www.wikidata.org/wiki/Q1775286) | deportation of the Crimean Tatars | Deportação dos tártaros da Crimeia | 1944-05-18 | deportation | 49 | — |
 | [ ] | [`Q695020`](https://www.wikidata.org/wiki/Q695020) | Massacres of Poles in Volhynia and Eastern Galicia | Massacres de Poloneses na Volínia e Galícia oriental | 1942-01-01 | genocide | 43 | — |
 | [ ] | [`Q158044`](https://www.wikidata.org/wiki/Q158044) | Operation Reinhard | Operação Reinhardt | 1942-01-01 | The Holocaust | 40 | — |
@@ -1384,7 +1424,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q223732`](https://www.wikidata.org/wiki/Q223732) | Declaration of the Establishment of the State of Israel | Declaração de Independência do Estado de Israel | 1948-05-14 | declaration of independence | 63 | — |
+| [x] | [`Q223732`](https://www.wikidata.org/wiki/Q223732) | Declaration of the Establishment of the State of Israel | Declaração de Independência do Estado de Israel | 1948-05-14 | declaration of independence | 63 | — |
 | [ ] | [`Q1661772`](https://www.wikidata.org/wiki/Q1661772) | Proclamation of Indonesian Independence | — | 1945-08-17 | declaration of independence | 27 | — |
 | [ ] | [`Q13076194`](https://www.wikidata.org/wiki/Q13076194) | Burmese Declaration of Independence | — | 1948-01-04 | declaration of independence | 6 | — |
 
@@ -1422,14 +1462,14 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q182814`](https://www.wikidata.org/wiki/Q182814) | Antarctic Treaty System | Tratado da Antártida | 1959-12-01 | treaty | 81 | — |
+| [x] | [`Q182814`](https://www.wikidata.org/wiki/Q182814) | Antarctic Treaty System | Tratado da Antártida | 1959-12-01 | treaty | 81 | — |
 | [ ] | [`Q183191`](https://www.wikidata.org/wiki/Q183191) | European Convention on Human Rights | Convenção Europeia dos Direitos Humanos | 1950-11-04 | Council of Europe treaty | 75 | yes |
 | [ ] | [`Q167457`](https://www.wikidata.org/wiki/Q167457) | Treaty of Rome | Tratado de Roma | 1957-03-25 | treaty of the European Union | 72 | yes |
-| [ ] | [`Q392541`](https://www.wikidata.org/wiki/Q392541) | Treaty of San Francisco | Tratado de São Francisco | 1951-09-08 | peace treaty | 55 | — |
-| [ ] | [`Q295875`](https://www.wikidata.org/wiki/Q295875) | ANZUS | ANZUS | 1951-09-01 | treaty | 53 | — |
-| [ ] | [`Q724496`](https://www.wikidata.org/wiki/Q724496) | Treaty of Paris | Tratado de Paris | 1951-04-18 | treaty of the European Union | 49 | — |
-| [ ] | [`Q60433`](https://www.wikidata.org/wiki/Q60433) | — | Convenção das Nações Unidas relativa ao Estatuto dos Refugiados | 1951-07-28 | United Nations treaty | 49 | — |
-| [ ] | [`Q482407`](https://www.wikidata.org/wiki/Q482407) | Geneva Conference | Conferência de Genebra | 1954-01-01 | treaty | 48 | — |
+| [x] | [`Q392541`](https://www.wikidata.org/wiki/Q392541) | Treaty of San Francisco | Tratado de São Francisco | 1951-09-08 | peace treaty | 55 | — |
+| [x] | [`Q295875`](https://www.wikidata.org/wiki/Q295875) | ANZUS | ANZUS | 1951-09-01 | treaty | 53 | — |
+| [x] | [`Q724496`](https://www.wikidata.org/wiki/Q724496) | Treaty of Paris | Tratado de Paris | 1951-04-18 | treaty of the European Union | 49 | — |
+| [x] | [`Q60433`](https://www.wikidata.org/wiki/Q60433) | — | Convenção das Nações Unidas relativa ao Estatuto dos Refugiados | 1951-07-28 | United Nations treaty | 49 | — |
+| [x] | [`Q482407`](https://www.wikidata.org/wiki/Q482407) | Geneva Conference | Conferência de Genebra | 1954-01-01 | treaty | 48 | — |
 | [ ] | [`Q306535`](https://www.wikidata.org/wiki/Q306535) | Austrian State Treaty | Tratado do Estado Austríaco | 1955-05-15 | treaty | 42 | — |
 | [ ] | [`Q2862267`](https://www.wikidata.org/wiki/Q2862267) | Korean Armistice Agreement | Acordo de Armistício Coreano | 1953-07-27 | treaty | 30 | — |
 | [ ] | [`Q369989`](https://www.wikidata.org/wiki/Q369989) | Universal Copyright Convention | — | 1952-01-01 | treaty | 27 | — |
@@ -1467,7 +1507,7 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q11264`](https://www.wikidata.org/wiki/Q11264) | Cuban Revolution | Revolução Cubana | 1953-07-26 | revolution | 88 | yes |
-| [ ] | [`Q1780431`](https://www.wikidata.org/wiki/Q1780431) | 1952 Egyptian revolution | Revolução Egípcia de 1952 | 1952-07-23 | revolution | 49 | — |
+| [x] | [`Q1780431`](https://www.wikidata.org/wiki/Q1780431) | 1952 Egyptian revolution | Revolução Egípcia de 1952 | 1952-07-23 | revolution | 49 | — |
 | [ ] | [`Q4162685`](https://www.wikidata.org/wiki/Q4162685) | Rwandan Revolution | Revolução Ruandesa | 1959-11-01 | revolution | 20 | — |
 | [ ] | [`Q4414118`](https://www.wikidata.org/wiki/Q4414118) | Bolivian National Revolution (1952-1964) | Revolução Boliviana | 1952-04-11 | revolution | 11 | — |
 
@@ -1475,7 +1515,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q12199`](https://www.wikidata.org/wiki/Q12199) | HIV/AIDS | síndrome da imunodeficiência adquirida | 1959-01-01 | pandemic | 209 | — |
+| [x] | [`Q12199`](https://www.wikidata.org/wiki/Q12199) | HIV/AIDS | síndrome da imunodeficiência adquirida | 1959-01-01 | pandemic | 209 | — |
 | [ ] | [`Q1434550`](https://www.wikidata.org/wiki/Q1434550) | 1957–1958 influenza pandemic | Gripe asiática | 1957-01-01 | pandemic | 35 | — |
 
 ### world-genocides-1950s — 1
@@ -1497,11 +1537,11 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q49077`](https://www.wikidata.org/wiki/Q49077) | Six-Day War | Guerra dos Seis Dias | 1967-06-05 | war | 108 | — |
+| [x] | [`Q49077`](https://www.wikidata.org/wiki/Q49077) | Six-Day War | Guerra dos Seis Dias | 1967-06-05 | war | 108 | — |
 | [ ] | [`Q233583`](https://www.wikidata.org/wiki/Q233583) | Indo-Pakistani War of 1965 | Guerra Indo-Paquistanesa de 1965 | 1965-08-01 | war | 60 | yes |
-| [ ] | [`Q208694`](https://www.wikidata.org/wiki/Q208694) | Sino-Indian War | Guerra sino-indiana | 1962-10-20 | war | 56 | — |
-| [ ] | [`Q829875`](https://www.wikidata.org/wiki/Q829875) | Nigerian Civil War | Guerra Civil da Nigéria | 1967-07-06 | civil war | 53 | — |
-| [ ] | [`Q223085`](https://www.wikidata.org/wiki/Q223085) | Hundred Hour War | Guerra do Futebol | 1969-07-14 | war | 51 | — |
+| [x] | [`Q208694`](https://www.wikidata.org/wiki/Q208694) | Sino-Indian War | Guerra sino-indiana | 1962-10-20 | war | 56 | — |
+| [x] | [`Q829875`](https://www.wikidata.org/wiki/Q829875) | Nigerian Civil War | Guerra Civil da Nigéria | 1967-07-06 | civil war | 53 | — |
+| [x] | [`Q223085`](https://www.wikidata.org/wiki/Q223085) | Hundred Hour War | Guerra do Futebol | 1969-07-14 | war | 51 | — |
 | [ ] | [`Q322607`](https://www.wikidata.org/wiki/Q322607) | War of Attrition | Guerra de Desgaste | 1967-07-01 | war | 47 | — |
 | [ ] | [`Q244932`](https://www.wikidata.org/wiki/Q244932) | Sino-Soviet border conflict | Conflito fronteiriço sino-soviético | 1969-03-02 | undeclared war | 46 | — |
 | [ ] | [`Q817206`](https://www.wikidata.org/wiki/Q817206) | Cambodian Civil War | Guerra Civil do Camboja | 1967-03-11 | civil war | 44 | — |
@@ -1535,9 +1575,9 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q186444`](https://www.wikidata.org/wiki/Q186444) | Treaty on the Non-Proliferation of Nuclear Weapons | Tratado de Não Proliferação de Armas Nucleares | 1968-07-01 | treaty | 78 | yes |
 | [ ] | [`Q392119`](https://www.wikidata.org/wiki/Q392119) | International Covenant on Civil and Political Rights | Pacto Internacional dos Direitos Civis e Políticos | 1966-12-16 | United Nations treaty | 70 | yes |
-| [ ] | [`Q659717`](https://www.wikidata.org/wiki/Q659717) | Vienna Convention on Diplomatic Relations | Convenção de Viena sobre Relações Diplomáticas | 1961-04-18 | United Nations treaty | 53 | — |
-| [ ] | [`Q239768`](https://www.wikidata.org/wiki/Q239768) | Vienna Convention on the Law of Treaties | Convenção de Viena sobre Direito dos Tratados | 1969-05-23 | United Nations treaty | 50 | — |
-| [ ] | [`Q256608`](https://www.wikidata.org/wiki/Q256608) | Outer Space Treaty | Tratado do Espaço Exterior | 1967-01-27 | United Nations treaty | 50 | — |
+| [x] | [`Q659717`](https://www.wikidata.org/wiki/Q659717) | Vienna Convention on Diplomatic Relations | Convenção de Viena sobre Relações Diplomáticas | 1961-04-18 | United Nations treaty | 53 | — |
+| [x] | [`Q239768`](https://www.wikidata.org/wiki/Q239768) | Vienna Convention on the Law of Treaties | Convenção de Viena sobre Direito dos Tratados | 1969-05-23 | United Nations treaty | 50 | — |
+| [x] | [`Q256608`](https://www.wikidata.org/wiki/Q256608) | Outer Space Treaty | Tratado do Espaço Exterior | 1967-01-27 | United Nations treaty | 50 | — |
 | [ ] | [`Q622766`](https://www.wikidata.org/wiki/Q622766) | Merger Treaty | Tratado de Fusão | 1965-04-08 | treaty of the European Union | 43 | — |
 | [ ] | [`Q743306`](https://www.wikidata.org/wiki/Q743306) | International Convention on the Elimination of All Forms of Racial Discrimination | Convenção Internacional sobre a Eliminação de todas as Formas de Discriminação Racial | 1969-01-04 | United Nations treaty | 41 | — |
 | [ ] | [`Q278960`](https://www.wikidata.org/wiki/Q278960) | Partial Nuclear Test Ban Treaty | Tratado de Interdição Parcial de Ensaios Nucleares | 1963-08-05 | treaty | 38 | — |
@@ -1674,11 +1714,11 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q83085`](https://www.wikidata.org/wiki/Q83085) | Soviet-Afghan War | Invasão soviética do Afeganistão | 1979-12-25 | war | 101 | — |
+| [x] | [`Q83085`](https://www.wikidata.org/wiki/Q83085) | Soviet-Afghan War | Invasão soviética do Afeganistão | 1979-12-25 | war | 101 | — |
 | [ ] | [`Q49100`](https://www.wikidata.org/wiki/Q49100) | Yom Kippur War | Guerra do Yom Kipur | 1973-10-06 | war | 93 | yes |
 | [ ] | [`Q371394`](https://www.wikidata.org/wiki/Q371394) | Bangladesh Liberation War | Guerra de Independência de Bangladesh | 1971-03-26 | war | 67 | yes |
 | [ ] | [`Q208484`](https://www.wikidata.org/wiki/Q208484) | Lebanese Civil War | Guerra Civil Libanesa | 1975-04-13 | civil war | 64 | yes |
-| [ ] | [`Q1922071`](https://www.wikidata.org/wiki/Q1922071) | Indo-Pakistani War of 1971 | Guerra Indo-Paquistanesa de 1971 | 1971-12-03 | war | 51 | — |
+| [x] | [`Q1922071`](https://www.wikidata.org/wiki/Q1922071) | Indo-Pakistani War of 1971 | Guerra Indo-Paquistanesa de 1971 | 1971-12-03 | war | 51 | — |
 | [ ] | [`Q623171`](https://www.wikidata.org/wiki/Q623171) | Sino-Vietnamese War | Guerra sino-vietnamita | 1979-02-17 | war | 50 | — |
 | [ ] | [`Q12055176`](https://www.wikidata.org/wiki/Q12055176) | Angolan Civil War | Guerra Civil Angolana | 1975-11-11 | civil war | 49 | — |
 | [ ] | [`Q318250`](https://www.wikidata.org/wiki/Q318250) | Ogaden War | Guerra de Ogaden | 1977-07-12 | war | 46 | — |
@@ -1708,9 +1748,9 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q170170`](https://www.wikidata.org/wiki/Q170170) | Ramsar Convention | Convenção sobre as Zonas Húmidas de Importância Internacional | 1971-02-02 | international environmental agreement | 78 | yes |
 | [ ] | [`Q277072`](https://www.wikidata.org/wiki/Q277072) | Convention on the Elimination of All Forms of Discrimination against Women | Convenção sobre a Eliminação de Todas as Formas de Discriminação contra as Mulheres | 1979-12-18 | United Nations treaty | 69 | yes |
-| [ ] | [`Q191836`](https://www.wikidata.org/wiki/Q191836) | CITES | Convenção sobre o Comércio Internacional das Espécies da Fauna e da Flora Silvestres Ameaçadas de Extinção | 1973-03-03 | multilateral treaty | 69 | — |
-| [ ] | [`Q318161`](https://www.wikidata.org/wiki/Q318161) | Helsinki Accords | Acordos de Helsínquia | 1975-08-01 | treaty | 51 | — |
-| [ ] | [`Q309204`](https://www.wikidata.org/wiki/Q309204) | Camp David Accords | Acordos de Camp David | 1978-09-17 | peace treaty | 50 | — |
+| [x] | [`Q191836`](https://www.wikidata.org/wiki/Q191836) | CITES | Convenção sobre o Comércio Internacional das Espécies da Fauna e da Flora Silvestres Ameaçadas de Extinção | 1973-03-03 | multilateral treaty | 69 | — |
+| [x] | [`Q318161`](https://www.wikidata.org/wiki/Q318161) | Helsinki Accords | Acordos de Helsínquia | 1975-08-01 | treaty | 51 | — |
+| [x] | [`Q309204`](https://www.wikidata.org/wiki/Q309204) | Camp David Accords | Acordos de Camp David | 1978-09-17 | peace treaty | 50 | — |
 | [ ] | [`Q623994`](https://www.wikidata.org/wiki/Q623994) | Strategic Arms Limitation Talks | Conversações sobre Limites para Armas Estratégicas | 1979-06-18 | treaty | 37 | — |
 | [ ] | [`Q696802`](https://www.wikidata.org/wiki/Q696802) | Paris Peace Accords | Acordos de Paz de Paris | 1973-01-27 | peace treaty | 36 | — |
 | [ ] | [`Q375083`](https://www.wikidata.org/wiki/Q375083) | Convention on the Conservation of European Wildlife and Natural Habitats | Convenção sobre a Vida Selvagem e os Habitats Naturais na Europa | 1979-09-19 | Council of Europe treaty | 35 | — |
@@ -1751,7 +1791,7 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q126065`](https://www.wikidata.org/wiki/Q126065) | Iranian Revolution | Revolução Iraniana | 1970-01-01 | revolution | 102 | yes |
-| [ ] | [`Q193245`](https://www.wikidata.org/wiki/Q193245) | Carnation Revolution | Revolução dos Cravos | 1974-04-25 | revolution | 65 | — |
+| [x] | [`Q193245`](https://www.wikidata.org/wiki/Q193245) | Carnation Revolution | Revolução dos Cravos | 1974-04-25 | revolution | 65 | — |
 | [ ] | [`Q1341539`](https://www.wikidata.org/wiki/Q1341539) | Saur Revolution | Revolução de Saur | 1978-04-27 | revolution | 44 | — |
 | [ ] | [`Q9068538`](https://www.wikidata.org/wiki/Q9068538) | Ethiopian Revolution | Revolução etíope de 1974 | 1974-02-01 | revolution | 9 | — |
 
@@ -1767,9 +1807,9 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q856670`](https://www.wikidata.org/wiki/Q856670) | 1973 Chilean coup d'état | Golpe de Estado no Chile em 1973 | 1973-09-11 | coup d'état | 51 | — |
+| [x] | [`Q856670`](https://www.wikidata.org/wiki/Q856670) | 1973 Chilean coup d'état | Golpe de Estado no Chile em 1973 | 1973-09-11 | coup d'état | 51 | — |
 | [ ] | [`Q153081`](https://www.wikidata.org/wiki/Q153081) | Soweto uprising | Levante de Soweto | 1976-06-16 | rebellion | 39 | — |
-| [ ] | [`Q1048750`](https://www.wikidata.org/wiki/Q1048750) | 1976 Argentine coup d'état | Golpe de Estado na Argentina em 1976 | 1976-03-24 | coup d'état | 20 | — |
+| [x] | [`Q1048750`](https://www.wikidata.org/wiki/Q1048750) | 1976 Argentine coup d'état | Golpe de Estado na Argentina em 1976 | 1976-03-24 | coup d'état | 20 | — |
 | [ ] | [`Q2069434`](https://www.wikidata.org/wiki/Q2069434) | 1974 Cypriot coup d'état | Golpe de Estado no Chipre em 1974 | 1974-07-15 | coup d'état | 19 | — |
 | [ ] | [`Q14947304`](https://www.wikidata.org/wiki/Q14947304) | Corrective Movement | Revolução Corretiva na Síria de 1970 | 1970-11-13 | coup d'état | 18 | — |
 | [ ] | [`Q931943`](https://www.wikidata.org/wiki/Q931943) | 1971 Turkish military memorandum | — | 1971-03-12 | coup d'état | 17 | — |
@@ -1811,7 +1851,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q316817`](https://www.wikidata.org/wiki/Q316817) | 1973 oil crisis | Crise petrolífera de 1973 | 1973-01-01 | economic crisis | 60 | — |
+| [x] | [`Q316817`](https://www.wikidata.org/wiki/Q316817) | 1973 oil crisis | Crise petrolífera de 1973 | 1973-01-01 | economic crisis | 60 | — |
 | [ ] | [`Q1925730`](https://www.wikidata.org/wiki/Q1925730) | 1979 energy crisis | Crise petrolífera de 1979 | 1979-01-01 | oil crisis | 26 | — |
 | [ ] | [`Q4574284`](https://www.wikidata.org/wiki/Q4574284) | 1970s energy crisis | Crise do petróleo | 1970-01-01 | oil crisis | 21 | — |
 
@@ -1819,7 +1859,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q2885072`](https://www.wikidata.org/wiki/Q2885072) | Cambodian genocide | Genocídio cambojano | 1970-01-01 | mass murder | 51 | — |
+| [x] | [`Q2885072`](https://www.wikidata.org/wiki/Q2885072) | Cambodian genocide | Genocídio cambojano | 1970-01-01 | mass murder | 51 | — |
 | [ ] | [`Q2916113`](https://www.wikidata.org/wiki/Q2916113) | Bangladesh genocide | Genocídio em Bangladesh em 1971 | 1971-03-26 | genocide | 30 | — |
 | [ ] | [`Q28136238`](https://www.wikidata.org/wiki/Q28136238) | East Timor genocide | Genocídio no Timor-Leste | 1975-01-01 | genocide | 13 | — |
 | [ ] | [`Q65067658`](https://www.wikidata.org/wiki/Q65067658) | 1972 Genocide of Burundian Hutus | — | 1972-04-01 | genocide | 8 | — |
@@ -1842,11 +1882,11 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q82664`](https://www.wikidata.org/wiki/Q82664) | Iran–Iraq War | Guerra Irã-Iraque | 1980-09-22 | war | 96 | — |
+| [x] | [`Q82664`](https://www.wikidata.org/wiki/Q82664) | Iran–Iraq War | Guerra Irã-Iraque | 1980-09-22 | war | 96 | — |
 | [ ] | [`Q48249`](https://www.wikidata.org/wiki/Q48249) | Falklands War | Guerra das Malvinas | 1982-01-01 | undeclared war | 93 | yes |
-| [ ] | [`Q381375`](https://www.wikidata.org/wiki/Q381375) | First Nagorno-Karabakh War | Primeira Guerra de Nagorno-Karabakh | 1988-02-20 | war | 67 | — |
-| [ ] | [`Q213394`](https://www.wikidata.org/wiki/Q213394) | Sri Lankan civil war | Guerra civil do Sri Lanka | 1983-07-23 | civil war | 55 | — |
-| [ ] | [`Q49103`](https://www.wikidata.org/wiki/Q49103) | 1982 Lebanon War | Guerra do Líbano de 1982 | 1982-06-06 | war | 54 | — |
+| [x] | [`Q381375`](https://www.wikidata.org/wiki/Q381375) | First Nagorno-Karabakh War | Primeira Guerra de Nagorno-Karabakh | 1988-02-20 | war | 67 | — |
+| [x] | [`Q213394`](https://www.wikidata.org/wiki/Q213394) | Sri Lankan civil war | Guerra civil do Sri Lanka | 1983-07-23 | civil war | 55 | — |
+| [x] | [`Q49103`](https://www.wikidata.org/wiki/Q49103) | 1982 Lebanon War | Guerra do Líbano de 1982 | 1982-06-06 | war | 54 | — |
 | [ ] | [`Q842380`](https://www.wikidata.org/wiki/Q842380) | Second Sudanese Civil War | Segunda Guerra Civil Sudanesa | 1983-06-05 | civil war | 37 | — |
 | [ ] | [`Q2405009`](https://www.wikidata.org/wiki/Q2405009) | Afghan Civil War | Guerra Civil do Afeganistão | 1989-02-15 | civil war | 32 | — |
 | [ ] | [`Q29242`](https://www.wikidata.org/wiki/Q29242) | Georgian–Ossetian conflict | Conflito georgiano-osseta | 1989-11-10 | war | 30 | — |
@@ -1919,7 +1959,7 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q182817`](https://www.wikidata.org/wiki/Q182817) | Velvet Revolution | Revolução de Veludo | 1989-01-01 | revolution | 64 | yes |
-| [ ] | [`Q204213`](https://www.wikidata.org/wiki/Q204213) | Romanian Revolution (1989) | Revolução Romena de 1989 | 1989-12-15 | revolution | 51 | — |
+| [x] | [`Q204213`](https://www.wikidata.org/wiki/Q204213) | Romanian Revolution (1989) | Revolução Romena de 1989 | 1989-12-15 | revolution | 51 | — |
 | [ ] | [`Q1274389`](https://www.wikidata.org/wiki/Q1274389) | People Power Revolution | Revolução do Poder Popular | 1986-02-22 | United States involvement in regime change | 38 | — |
 
 ### world-pandemics-1980s — 1
@@ -1959,14 +1999,14 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q37643`](https://www.wikidata.org/wiki/Q37643) | Gulf War | Guerra do Golfo | 1990-08-02 | war | 114 | yes |
-| [ ] | [`Q29269`](https://www.wikidata.org/wiki/Q29269) | First Chechen War | Primeira Guerra da Chechênia | 1994-12-11 | war | 78 | — |
-| [ ] | [`Q190029`](https://www.wikidata.org/wiki/Q190029) | Kosovo War | Guerra do Kosovo | 1998-02-01 | war | 73 | — |
-| [ ] | [`Q68969`](https://www.wikidata.org/wiki/Q68969) | Croatian War of Independence | Guerra de Independência da Croácia | 1991-03-31 | war | 64 | — |
+| [x] | [`Q29269`](https://www.wikidata.org/wiki/Q29269) | First Chechen War | Primeira Guerra da Chechênia | 1994-12-11 | war | 78 | — |
+| [x] | [`Q190029`](https://www.wikidata.org/wiki/Q190029) | Kosovo War | Guerra do Kosovo | 1998-02-01 | war | 73 | — |
+| [x] | [`Q68969`](https://www.wikidata.org/wiki/Q68969) | Croatian War of Independence | Guerra de Independência da Croácia | 1991-03-31 | war | 64 | — |
 | [ ] | [`Q120843`](https://www.wikidata.org/wiki/Q120843) | Second Chechen War | Segunda Guerra na Chechênia | 1999-08-26 | war | 64 | yes |
-| [ ] | [`Q242352`](https://www.wikidata.org/wiki/Q242352) | Yugoslav Wars | Guerra Civil Iugoslava | 1991-03-31 | ethnic conflict | 64 | — |
-| [ ] | [`Q404517`](https://www.wikidata.org/wiki/Q404517) | Kargil War | Guerra de Kargil | 1999-01-01 | war | 54 | — |
-| [ ] | [`Q243620`](https://www.wikidata.org/wiki/Q243620) | Somali Civil War | Guerra Civil da Somália | 1991-01-26 | civil war | 54 | — |
-| [ ] | [`Q75756`](https://www.wikidata.org/wiki/Q75756) | Second Congo War | Segunda Guerra do Congo | 1998-08-02 | war | 51 | — |
+| [x] | [`Q242352`](https://www.wikidata.org/wiki/Q242352) | Yugoslav Wars | Guerra Civil Iugoslava | 1991-03-31 | ethnic conflict | 64 | — |
+| [x] | [`Q404517`](https://www.wikidata.org/wiki/Q404517) | Kargil War | Guerra de Kargil | 1999-01-01 | war | 54 | — |
+| [x] | [`Q243620`](https://www.wikidata.org/wiki/Q243620) | Somali Civil War | Guerra Civil da Somália | 1991-01-26 | civil war | 54 | — |
+| [x] | [`Q75756`](https://www.wikidata.org/wiki/Q75756) | Second Congo War | Segunda Guerra do Congo | 1998-08-02 | war | 51 | — |
 | [ ] | [`Q285280`](https://www.wikidata.org/wiki/Q285280) | Transnistria War | Guerra da Transnístria | 1990-11-02 | civil war | 48 | — |
 | [ ] | [`Q838695`](https://www.wikidata.org/wiki/Q838695) | First Congo War | Primeira Guerra do Congo | 1996-10-24 | war | 44 | — |
 | [ ] | [`Q1122110`](https://www.wikidata.org/wiki/Q1122110) | Tajikistani Civil War | Guerra Civil do Tadjiquistão | 1992-05-05 | civil war | 44 | — |
@@ -1976,7 +2016,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q795269`](https://www.wikidata.org/wiki/Q795269) | Sierra Leone Civil War | Guerra Civil de Serra Leoa | 1991-03-23 | civil war | 39 | — |
 | [ ] | [`Q1209169`](https://www.wikidata.org/wiki/Q1209169) | War in Abkhazia | Guerra na Abecásia | 1992-08-14 | war | 38 | — |
 | [ ] | [`Q142529`](https://www.wikidata.org/wiki/Q142529) | Algerian Civil War | Guerra Civil da Argélia | 1992-01-11 | civil war | 36 | — |
-| [ ] | [`Q426722`](https://www.wikidata.org/wiki/Q426722) | Rwandan Civil War | Guerra Civil de Ruanda | 1990-10-01 | civil war | 36 | — |
+| [x] | [`Q426722`](https://www.wikidata.org/wiki/Q426722) | Rwandan Civil War | Guerra Civil de Ruanda | 1990-10-01 | civil war | 36 | — |
 | [ ] | [`Q643925`](https://www.wikidata.org/wiki/Q643925) | War of Dagestan | Invasão do Daguestão de 1999 | 1999-08-02 | civil war | 32 | — |
 | [ ] | [`Q1143379`](https://www.wikidata.org/wiki/Q1143379) | 1991–1992 South Ossetia War | Guerra na Ossétia do Sul em 1991-1992 | 1991-01-05 | war | 29 | — |
 | [ ] | [`Q1960733`](https://www.wikidata.org/wiki/Q1960733) | Second Liberian Civil War | Segunda Guerra Civil da Libéria | 1999-04-21 | civil war | 29 | — |
@@ -2002,17 +2042,17 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q47359`](https://www.wikidata.org/wiki/Q47359) | Kyoto Protocol | Protocolo de Quioto | 1997-12-11 | environmental protocol | 93 | — |
+| [x] | [`Q47359`](https://www.wikidata.org/wiki/Q47359) | Kyoto Protocol | Protocolo de Quioto | 1997-12-11 | environmental protocol | 93 | — |
 | [ ] | [`Q11146`](https://www.wikidata.org/wiki/Q11146) | Maastricht Treaty | Tratado de Maastricht | 1992-02-07 | treaty of the European Union | 83 | yes |
-| [ ] | [`Q106308`](https://www.wikidata.org/wiki/Q106308) | European Charter for Regional or Minority Languages | Carta Europeia das Línguas Regionais ou Minoritárias | 1992-11-05 | charter | 72 | — |
-| [ ] | [`Q838958`](https://www.wikidata.org/wiki/Q838958) | Rome Statute of the International Criminal Court | Estatuto de Roma | 1998-07-17 | treaty | 59 | — |
-| [ ] | [`Q190315`](https://www.wikidata.org/wiki/Q190315) | Dayton Agreement | Acordo de Dayton | 1995-11-21 | peace treaty | 59 | — |
-| [ ] | [`Q152805`](https://www.wikidata.org/wiki/Q152805) | Convention on Biological Diversity | Convenção sobre Diversidade Biológica | 1992-06-08 | United Nations treaty | 57 | — |
-| [ ] | [`Q208645`](https://www.wikidata.org/wiki/Q208645) | United Nations Framework Convention on Climate Change | Convenção-Quadro das Nações Unidas sobre a Mudança do Clima | 1992-06-04 | United Nations treaty | 57 | — |
-| [ ] | [`Q547896`](https://www.wikidata.org/wiki/Q547896) | Chemical Weapons Convention | Convenção sobre Armas Químicas | 1993-01-13 | United Nations treaty | 56 | — |
-| [ ] | [`Q193739`](https://www.wikidata.org/wiki/Q193739) | Amsterdam Treaty | Tratado de Amesterdão | 1997-10-02 | treaty of the European Union | 53 | — |
-| [ ] | [`Q208958`](https://www.wikidata.org/wiki/Q208958) | Good Friday Agreement | Acordo de Belfast | 1998-04-10 | peace treaty | 52 | — |
-| [ ] | [`Q1000658`](https://www.wikidata.org/wiki/Q1000658) | Budapest Memorandum | Memorando de Budapeste | 1994-12-05 | military operation plan | 52 | — |
+| [x] | [`Q106308`](https://www.wikidata.org/wiki/Q106308) | European Charter for Regional or Minority Languages | Carta Europeia das Línguas Regionais ou Minoritárias | 1992-11-05 | charter | 72 | — |
+| [x] | [`Q838958`](https://www.wikidata.org/wiki/Q838958) | Rome Statute of the International Criminal Court | Estatuto de Roma | 1998-07-17 | treaty | 59 | — |
+| [x] | [`Q190315`](https://www.wikidata.org/wiki/Q190315) | Dayton Agreement | Acordo de Dayton | 1995-11-21 | peace treaty | 59 | — |
+| [x] | [`Q152805`](https://www.wikidata.org/wiki/Q152805) | Convention on Biological Diversity | Convenção sobre Diversidade Biológica | 1992-06-08 | United Nations treaty | 57 | — |
+| [x] | [`Q208645`](https://www.wikidata.org/wiki/Q208645) | United Nations Framework Convention on Climate Change | Convenção-Quadro das Nações Unidas sobre a Mudança do Clima | 1992-06-04 | United Nations treaty | 57 | — |
+| [x] | [`Q547896`](https://www.wikidata.org/wiki/Q547896) | Chemical Weapons Convention | Convenção sobre Armas Químicas | 1993-01-13 | United Nations treaty | 56 | — |
+| [x] | [`Q193739`](https://www.wikidata.org/wiki/Q193739) | Amsterdam Treaty | Tratado de Amesterdão | 1997-10-02 | treaty of the European Union | 53 | — |
+| [x] | [`Q208958`](https://www.wikidata.org/wiki/Q208958) | Good Friday Agreement | Acordo de Belfast | 1998-04-10 | peace treaty | 52 | — |
+| [x] | [`Q1000658`](https://www.wikidata.org/wiki/Q1000658) | Budapest Memorandum | Memorando de Budapeste | 1994-12-05 | military operation plan | 52 | — |
 | [ ] | [`Q76986`](https://www.wikidata.org/wiki/Q76986) | Belovezh Accords | Pacto de Belaveja | 1991-12-08 | treaty | 43 | — |
 | [ ] | [`Q159644`](https://www.wikidata.org/wiki/Q159644) | Treaty on the Final Settlement with Respect to Germany | Tratado Dois Mais Quatro | 1990-09-12 | multilateral treaty | 41 | — |
 | [ ] | [`Q570224`](https://www.wikidata.org/wiki/Q570224) | Ottawa Treaty | Tratado de Ottawa | 1997-12-03 | treaty | 39 | — |
@@ -2039,7 +2079,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q1568374`](https://www.wikidata.org/wiki/Q1568374) | Wye River Memorandum | Memorando de Wye River | 1998-10-23 | treaty | 19 | — |
 | [ ] | [`Q15092854`](https://www.wikidata.org/wiki/Q15092854) | 1991 Paris Peace Accords | Acordos de Paz de Paris de 1991 | 1991-10-23 | peace treaty | 19 | — |
 | [ ] | [`Q7099022`](https://www.wikidata.org/wiki/Q7099022) | Optional Protocol to the Convention on the Elimination of All Forms of Discrimination against Women | Protocolo Facultativo à Convenção sobre a Eliminação de Todas as Formas de Discriminação contra a Mulher | 1999-10-06 | treaty | 18 | — |
-| [ ] | [`Q1429076`](https://www.wikidata.org/wiki/Q1429076) | Arusha Accords | Acordos de Arusha | 1993-08-04 | peace treaty | 18 | — |
+| [x] | [`Q1429076`](https://www.wikidata.org/wiki/Q1429076) | Arusha Accords | Acordos de Arusha | 1993-08-04 | peace treaty | 18 | — |
 | [ ] | [`Q650979`](https://www.wikidata.org/wiki/Q650979) | German–Polish Border Treaty | Tratado da Fronteira Alemanha-Polónia | 1990-11-14 | bilateral treaty | 17 | — |
 
 ### world-revolutions-1990s — 3
@@ -2054,8 +2094,8 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q221382`](https://www.wikidata.org/wiki/Q221382) | 1991 Soviet coup d'état attempt | Tentativa de golpe de Estado na União Soviética em 1991 | 1991-08-19 | military coup | 62 | — |
-| [ ] | [`Q862099`](https://www.wikidata.org/wiki/Q862099) | 1993 Russian constitutional crisis | Crise constitucional russa de 1993 | 1992-01-01 | coup d'état | 41 | — |
+| [x] | [`Q221382`](https://www.wikidata.org/wiki/Q221382) | 1991 Soviet coup d'état attempt | Tentativa de golpe de Estado na União Soviética em 1991 | 1991-08-19 | military coup | 62 | — |
+| [x] | [`Q862099`](https://www.wikidata.org/wiki/Q862099) | 1993 Russian constitutional crisis | Crise constitucional russa de 1993 | 1992-01-01 | coup d'état | 41 | — |
 | [ ] | [`Q760002`](https://www.wikidata.org/wiki/Q760002) | 1991 Iraqi uprisings | Revoltas no Iraque de 1991 | 1991-01-01 | rebellion | 21 | — |
 | [ ] | [`Q2352036`](https://www.wikidata.org/wiki/Q2352036) | 1999 Pakistani coup d'état | Golpe de Estado no Paquistão em 1999 | 1999-10-12 | coup d'état | 17 | — |
 | [ ] | [`Q16156196`](https://www.wikidata.org/wiki/Q16156196) | 1995 Azerbaijani coup d'état attempt | Tentativa de golpe de Estado no Azerbaijão em 1995 | 1995-01-01 | attempted coup d'état | 15 | — |
@@ -2090,7 +2130,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q80880`](https://www.wikidata.org/wiki/Q80880) | 1997 Asian financial crisis | Crise financeira asiática de 1997 | 1997-01-01 | financial crisis | 55 | — |
+| [x] | [`Q80880`](https://www.wikidata.org/wiki/Q80880) | 1997 Asian financial crisis | Crise financeira asiática de 1997 | 1997-01-01 | financial crisis | 55 | — |
 | [ ] | [`Q1142572`](https://www.wikidata.org/wiki/Q1142572) | 1998 Russian financial crisis | Crise russa de 1998 | 1998-01-01 | financial crisis | 34 | — |
 | [ ] | [`Q400500`](https://www.wikidata.org/wiki/Q400500) | Black Wednesday | Quarta-Feira Negra | 1992-09-16 | financial crisis | 22 | — |
 | [ ] | [`Q599806`](https://www.wikidata.org/wiki/Q599806) | 1994 economic crisis in Mexico | Crise económica do México de 1994 | 1994-11-01 | economic crisis | 18 | — |
@@ -2125,9 +2165,9 @@ to that file and another run, never an edit here.
 | [ ] | [`Q182865`](https://www.wikidata.org/wiki/Q182865) | War in Afghanistan (2001–2021) | Guerra do Afeganistão | 2001-10-07 | war | 83 | yes |
 | [ ] | [`Q620735`](https://www.wikidata.org/wiki/Q620735) | Russo-Georgian War | Guerra Russo-Georgiana | 2008-08-07 | war | 83 | yes |
 | [ ] | [`Q49104`](https://www.wikidata.org/wiki/Q49104) | 2006 Lebanon War | guerra do Líbano de 2006 | 2006-01-01 | war | 74 | yes |
-| [ ] | [`Q185729`](https://www.wikidata.org/wiki/Q185729) | War on Terrorism | Guerra ao Terror | 2001-09-11 | war | 73 | — |
-| [ ] | [`Q170682`](https://www.wikidata.org/wiki/Q170682) | Gaza War (2008–2009) | Operação Chumbo Fundido | 2008-12-27 | war | 62 | — |
-| [ ] | [`Q190758`](https://www.wikidata.org/wiki/Q190758) | War in Darfur | Conflito de Darfur | 2003-02-26 | civil war | 58 | — |
+| [x] | [`Q185729`](https://www.wikidata.org/wiki/Q185729) | War on Terrorism | Guerra ao Terror | 2001-09-11 | war | 73 | — |
+| [x] | [`Q170682`](https://www.wikidata.org/wiki/Q170682) | Gaza War (2008–2009) | Operação Chumbo Fundido | 2008-12-27 | war | 62 | — |
+| [x] | [`Q190758`](https://www.wikidata.org/wiki/Q190758) | War in Darfur | Conflito de Darfur | 2003-02-26 | civil war | 58 | — |
 | [ ] | [`Q475678`](https://www.wikidata.org/wiki/Q475678) | Mexican drug war | Guerra contra o narcotráfico no México | 2006-12-11 | asymmetric warfare | 50 | — |
 | [ ] | [`Q179275`](https://www.wikidata.org/wiki/Q179275) | insurgency in Khyber Pakhtunkhwa | Guerra no Noroeste do Paquistão | 2004-01-01 | war | 39 | — |
 | [ ] | [`Q327237`](https://www.wikidata.org/wiki/Q327237) | Kivu conflict | Guerra do Quivu | 2004-06-02 | war | 27 | — |
@@ -2151,9 +2191,9 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q189066`](https://www.wikidata.org/wiki/Q189066) | Treaty establishing a Constitution for Europe | Constituição Europeia | 2004-10-29 | treaty of the European Union | 54 | — |
-| [ ] | [`Q1069706`](https://www.wikidata.org/wiki/Q1069706) | Convention on the Rights of Persons with Disabilities | Convenção Internacional sobre os Direitos das Pessoas com Deficiência | 2006-12-13 | United Nations treaty | 52 | — |
-| [ ] | [`Q208688`](https://www.wikidata.org/wiki/Q208688) | Treaty of Nice | Tratado de Nice | 2001-02-26 | treaty of the European Union | 50 | — |
+| [x] | [`Q189066`](https://www.wikidata.org/wiki/Q189066) | Treaty establishing a Constitution for Europe | Constituição Europeia | 2004-10-29 | treaty of the European Union | 54 | — |
+| [x] | [`Q1069706`](https://www.wikidata.org/wiki/Q1069706) | Convention on the Rights of Persons with Disabilities | Convenção Internacional sobre os Direitos das Pessoas com Deficiência | 2006-12-13 | United Nations treaty | 52 | — |
+| [x] | [`Q208688`](https://www.wikidata.org/wiki/Q208688) | Treaty of Nice | Tratado de Nice | 2001-02-26 | treaty of the European Union | 50 | — |
 | [ ] | [`Q192135`](https://www.wikidata.org/wiki/Q192135) | Anti-Counterfeiting Trade Agreement | Acordo Comercial Anticontrafação | 2006-01-01 | treaty | 47 | — |
 | [ ] | [`Q82908`](https://www.wikidata.org/wiki/Q82908) | Stockholm Convention on Persistent Organic Pollutants | Convenção de Estocolmo | 2001-05-22 | treaty | 41 | — |
 | [ ] | [`Q547979`](https://www.wikidata.org/wiki/Q547979) | United Nations Convention Against Corruption | Convenção das Nações Unidas contra a Corrupção | 2003-12-09 | United Nations treaty | 32 | — |
@@ -2194,7 +2234,7 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q836386`](https://www.wikidata.org/wiki/Q836386) | Orange Revolution | Revolução Laranja | 2004-11-22 | revolution | 68 | yes |
-| [ ] | [`Q219470`](https://www.wikidata.org/wiki/Q219470) | Rose Revolution | Revolução Rosa | 2003-01-01 | revolution | 52 | — |
+| [x] | [`Q219470`](https://www.wikidata.org/wiki/Q219470) | Rose Revolution | Revolução Rosa | 2003-01-01 | revolution | 52 | — |
 | [ ] | [`Q459162`](https://www.wikidata.org/wiki/Q459162) | Tulip Revolution | Revolução das Tulipas | 2005-01-01 | revolution | 39 | — |
 | [ ] | [`Q184310`](https://www.wikidata.org/wiki/Q184310) | Cedar Revolution | Revolução dos Cedros | 2005-02-14 | revolution | 27 | — |
 | [ ] | [`Q1980316`](https://www.wikidata.org/wiki/Q1980316) | EDSA Revolution of 2001 | Segunda Revolução do Poder Popular | 2001-01-17 | coup d'état | 11 | — |
@@ -2203,7 +2243,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q101452`](https://www.wikidata.org/wiki/Q101452) | 2009 swine flu pandemic | Pandemia de gripe H1N1 de 2009 | 2009-03-01 | disease outbreak | 69 | — |
+| [x] | [`Q101452`](https://www.wikidata.org/wiki/Q101452) | 2009 swine flu pandemic | Pandemia de gripe H1N1 de 2009 | 2009-03-01 | disease outbreak | 69 | — |
 | [ ] | [`Q834456`](https://www.wikidata.org/wiki/Q834456) | 2002–2004 SARS outbreak | Epidemia de SARS | 2002-11-16 | epidemic | 27 | — |
 | [ ] | [`Q153678`](https://www.wikidata.org/wiki/Q153678) | 2008 Zimbabwean cholera outbreak | Epidemia de cólera no Zimbábue | 2008-08-01 | cholera outbreak | 16 | — |
 | [ ] | [`Q2579041`](https://www.wikidata.org/wiki/Q2579041) | 2009–2010 West African meningitis outbreak | — | 2009-01-01 | epidemic | 9 | — |
@@ -2215,7 +2255,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q49106`](https://www.wikidata.org/wiki/Q49106) | Second Intifada | Segunda Intifada | 2000-09-28 | intifada | 48 | — |
 | [ ] | [`Q817137`](https://www.wikidata.org/wiki/Q817137) | 2001 insurgency in Macedonia | Conflito na Macedônia de 2001 | 2001-01-01 | insurgency | 38 | — |
 | [ ] | [`Q714820`](https://www.wikidata.org/wiki/Q714820) | Satsuma Rebellion | Rebelião Satsuma | 2005-01-29 | shizoku rebellion | 32 | — |
-| [ ] | [`Q860423`](https://www.wikidata.org/wiki/Q860423) | 2006 Thai coup d'état | Golpe de Estado na Tailândia em 2006 | 2006-09-19 | coup d'état | 30 | — |
+| [x] | [`Q860423`](https://www.wikidata.org/wiki/Q860423) | 2006 Thai coup d'état | Golpe de Estado na Tailândia em 2006 | 2006-09-19 | coup d'état | 30 | — |
 | [ ] | [`Q545068`](https://www.wikidata.org/wiki/Q545068) | 2008 Tibetan unrest | Distúrbios no Tibete em 2008 | 2008-01-01 | rebellion | 30 | — |
 | [ ] | [`Q1569328`](https://www.wikidata.org/wiki/Q1569328) | Boko Haram insurgency | Insurgência islâmica na Nigéria | 2009-07-26 | insurgency | 29 | — |
 | [ ] | [`Q255997`](https://www.wikidata.org/wiki/Q255997) | Houthi insurgency | Rebelião Houthi no Iêmen | 2004-06-01 | rebellion | 27 | — |
@@ -2254,7 +2294,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q896666`](https://www.wikidata.org/wiki/Q896666) | 2007–2008 financial crisis | Crise financeira de 2007–2008 | 2007-01-01 | financial crisis | 80 | — |
+| [x] | [`Q896666`](https://www.wikidata.org/wiki/Q896666) | 2007–2008 financial crisis | Crise financeira de 2007–2008 | 2007-01-01 | financial crisis | 80 | — |
 | [ ] | [`Q1137483`](https://www.wikidata.org/wiki/Q1137483) | 2008–2011 Icelandic financial crisis | Crise financeira na Islândia de 2008-2009 | 2008-01-01 | financial crisis | 27 | — |
 | [ ] | [`Q2479178`](https://www.wikidata.org/wiki/Q2479178) | 2008–2014 Spanish financial crisis | — | 2008-01-01 | financial crisis | 13 | — |
 | [ ] | [`Q972891`](https://www.wikidata.org/wiki/Q972891) | 2008–2013 Irish financial crisis | — | 2008-01-01 | financial crisis | 7 | — |
@@ -2284,12 +2324,12 @@ to that file and another run, never an edit here.
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q15860072`](https://www.wikidata.org/wiki/Q15860072) | Russo-Ukrainian war | Guerra Russo-Ucraniana | 2014-02-20 | war | 120 | yes |
 | [ ] | [`Q178810`](https://www.wikidata.org/wiki/Q178810) | Syrian Civil War | Guerra Civil Síria | 2011-03-15 | civil war | 116 | yes |
-| [ ] | [`Q33761`](https://www.wikidata.org/wiki/Q33761) | Arab Spring | Primavera Árabe | 2010-12-17 | civil war | 112 | — |
+| [x] | [`Q33761`](https://www.wikidata.org/wiki/Q33761) | Arab Spring | Primavera Árabe | 2010-12-17 | civil war | 112 | — |
 | [ ] | [`Q81545`](https://www.wikidata.org/wiki/Q81545) | Libyan Civil War | Guerra Civil Líbia | 2011-02-15 | civil war | 89 | yes |
-| [ ] | [`Q19686631`](https://www.wikidata.org/wiki/Q19686631) | Yemeni Civil War | Guerra Civil Iemenita | 2014-09-16 | civil war | 57 | — |
+| [x] | [`Q19686631`](https://www.wikidata.org/wiki/Q19686631) | Yemeni Civil War | Guerra Civil Iemenita | 2014-09-16 | civil war | 57 | — |
 | [ ] | [`Q2946372`](https://www.wikidata.org/wiki/Q2946372) | Mali War | Guerra Civil do Mali | 2012-01-16 | civil war | 47 | — |
 | [ ] | [`Q16911838`](https://www.wikidata.org/wiki/Q16911838) | Libyan Civil War | Guerra Civil Líbia (2014-presente) | 2014-05-16 | civil war | 39 | — |
-| [ ] | [`Q15353665`](https://www.wikidata.org/wiki/Q15353665) | South Sudanese Civil War | crise política de 2013 no Sudão do Sul | 2013-12-15 | civil war | 34 | — |
+| [x] | [`Q15353665`](https://www.wikidata.org/wiki/Q15353665) | South Sudanese Civil War | crise política de 2013 no Sudão do Sul | 2013-12-15 | civil war | 34 | — |
 | [ ] | [`Q17984356`](https://www.wikidata.org/wiki/Q17984356) | Iraqi Civil War of 2014–2017 | Guerra Civil Iraquiana | 2014-01-01 | civil war | 32 | — |
 | [ ] | [`Q17512479`](https://www.wikidata.org/wiki/Q17512479) | Arab Winter | Inverno Árabe | 2012-01-01 | war | 29 | — |
 | [ ] | [`Q3411181`](https://www.wikidata.org/wiki/Q3411181) | Central African Republic Civil War | Conflito na República Centro-Africana (2012–presente) | 2012-12-10 | civil war | 28 | — |
@@ -2314,7 +2354,7 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q21707860`](https://www.wikidata.org/wiki/Q21707860) | Paris Agreement | Acordo de Paris | 2015-12-12 | treaty | 89 | yes |
-| [ ] | [`Q1697391`](https://www.wikidata.org/wiki/Q1697391) | Convention on preventing and combating violence against women and domestic violence | Convenção do Conselho da Europa para a Prevenção e o Combate à Violência Contra as Mulheres e a Violência Doméstica | 2011-05-11 | Council of Europe treaty | 54 | — |
+| [x] | [`Q1697391`](https://www.wikidata.org/wiki/Q1697391) | Convention on preventing and combating violence against women and domestic violence | Convenção do Conselho da Europa para a Prevenção e o Combate à Violência Contra as Mulheres e a Violência Doméstica | 2011-05-11 | Council of Europe treaty | 54 | — |
 | [ ] | [`Q28130514`](https://www.wikidata.org/wiki/Q28130514) | Treaty on the Prohibition of Nuclear Weapons | Tratado sobre a Proibição das Armas Nucleares | 2017-09-20 | treaty | 47 | — |
 | [ ] | [`Q1366688`](https://www.wikidata.org/wiki/Q1366688) | Trans-Pacific Partnership | Parceria Transpacífica | 2016-02-04 | trade agreement | 39 | — |
 | [ ] | [`Q688993`](https://www.wikidata.org/wiki/Q688993) | Arms Trade Treaty | Tratado de Comércio de Armas Convencionais | 2013-04-02 | United Nations treaty | 37 | — |
@@ -2367,7 +2407,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q15989108`](https://www.wikidata.org/wiki/Q15989108) | Western African Ebola virus epidemic | Surto de Ebola na África Ocidental | 2013-12-01 | epidemic | 60 | — |
+| [x] | [`Q15989108`](https://www.wikidata.org/wiki/Q15989108) | Western African Ebola virus epidemic | Surto de Ebola na África Ocidental | 2013-12-01 | epidemic | 60 | — |
 | [ ] | [`Q21686043`](https://www.wikidata.org/wiki/Q21686043) | 2015–16 Zika virus epidemic | Epidemia de febre zica em 2015–2016 | 2015-04-01 | epidemic | 28 | — |
 | [ ] | [`Q55887234`](https://www.wikidata.org/wiki/Q55887234) | 2018–2020 Kivu Ebola epidemic | Surto de ébola em Quivu de 2018–2020 | 2018-08-01 | epidemic | 21 | — |
 | [ ] | [`Q327056`](https://www.wikidata.org/wiki/Q327056) | 2011 Germany E. coli O104:H4 outbreak | Surto de E. coli O104:H4 de 2011 | 2011-05-01 | epidemic | 20 | — |
@@ -2386,7 +2426,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q25906338`](https://www.wikidata.org/wiki/Q25906338) | 2016 Turkish coup d'état attempt | Tentativa de golpe de Estado na Turquia em 2016 | 2016-07-15 | attempted coup d'état | 77 | yes |
 | [ ] | [`Q15224558`](https://www.wikidata.org/wiki/Q15224558) | Euromaidan | Euromaidan | 2010-01-01 | coup d'état | 76 | yes |
 | [ ] | [`Q210005`](https://www.wikidata.org/wiki/Q210005) | 2011 Yemeni revolution | Revolução Iemenita | 2011-01-27 | rebellion | 39 | — |
-| [ ] | [`Q13605743`](https://www.wikidata.org/wiki/Q13605743) | 2013 Egyptian coup d'état | Golpe de Estado no Egito em 2013 | 2013-07-03 | coup d'état | 38 | — |
+| [x] | [`Q13605743`](https://www.wikidata.org/wiki/Q13605743) | 2013 Egyptian coup d'état | Golpe de Estado no Egito em 2013 | 2013-07-03 | coup d'état | 38 | — |
 | [ ] | [`Q242864`](https://www.wikidata.org/wiki/Q242864) | 2011 Bahraini uprising | Revolta no Barém de 2011 | 2011-02-14 | civil disobedience | 36 | — |
 | [ ] | [`Q15871713`](https://www.wikidata.org/wiki/Q15871713) | 2014 pro-Russian unrest in Ukraine | Protestos pró-russos na Ucrânia em 2014 | 2014-02-23 | riot | 36 | — |
 | [ ] | [`Q43172549`](https://www.wikidata.org/wiki/Q43172549) | 2017 Zimbabwean coup d'état attempt | Golpe de Estado no Zimbabwe em 2017 | 2017-11-14 | attempted coup d'état | 33 | — |
@@ -2496,9 +2536,9 @@ to that file and another run, never an edit here.
 | [ ] | [`Q104705419`](https://www.wikidata.org/wiki/Q104705419) | January 6 United States Capitol attack | Invasão do Capitólio dos Estados Unidos em 2021 | 2021-01-06 | rebellion | 75 | yes |
 | [ ] | [`Q119860532`](https://www.wikidata.org/wiki/Q119860532) | Wagner Group rebellion | rebelião do Grupo Wagner | 2023-06-01 | rebellion | 68 | yes |
 | [ ] | [`Q137612545`](https://www.wikidata.org/wiki/Q137612545) | 2025–2026 Iranian protests | protestos no Irã em 2025–2026 | 2020-01-01 | demonstration | 65 | yes |
-| [ ] | [`Q105180889`](https://www.wikidata.org/wiki/Q105180889) | 2021 Myanmar coup d'état | Golpe de Estado no Mianmar em 2021 | 2021-02-01 | coup d'état | 61 | — |
-| [ ] | [`Q114065797`](https://www.wikidata.org/wiki/Q114065797) | Mahsa Amini protests | Protestos contra a morte de Mahsa Amini | 2022-01-01 | rebellion | 53 | — |
-| [ ] | [`Q117100709`](https://www.wikidata.org/wiki/Q117100709) | 2023 Nigerien coup d'état | Golpe de Estado no Níger em 2023 | 2023-07-26 | coup d'état | 46 | — |
+| [x] | [`Q105180889`](https://www.wikidata.org/wiki/Q105180889) | 2021 Myanmar coup d'état | Golpe de Estado no Mianmar em 2021 | 2021-02-01 | coup d'état | 61 | — |
+| [x] | [`Q114065797`](https://www.wikidata.org/wiki/Q114065797) | Mahsa Amini protests | Protestos contra a morte de Mahsa Amini | 2022-01-01 | rebellion | 53 | — |
+| [x] | [`Q117100709`](https://www.wikidata.org/wiki/Q117100709) | 2023 Nigerien coup d'état | Golpe de Estado no Níger em 2023 | 2023-07-26 | coup d'état | 46 | — |
 | [ ] | [`Q116142348`](https://www.wikidata.org/wiki/Q116142348) | 2023 Brazilian Congress attack | Ataques de 8 de janeiro em Brasília | 2023-01-01 | demonstration | 39 | — |
 | [ ] | [`Q122053772`](https://www.wikidata.org/wiki/Q122053772) | 2023 Gabon coup d'état | Golpe de Estado no Gabão de 2023 | 2023-01-01 | military coup | 36 | — |
 | [ ] | [`Q109229068`](https://www.wikidata.org/wiki/Q109229068) | 2021 Sudanese coup d'état | Golpe de Estado no Sudão em 2021 | 2021-10-25 | coup d'état | 30 | — |
