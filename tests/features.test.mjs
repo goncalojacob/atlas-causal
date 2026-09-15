@@ -5,8 +5,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import {
-  LAYERS, PROPERTIES, Z_BY_NE_ZOOM, Z_VISIBLE_BY, kept, layer, lineLength,
-  polygonArea, readFeature, surveyProperties, surveyShape, zFor, zOf,
+  CITY_POPULATION, LAYERS, PROPERTIES, Z_BY_NE_ZOOM, Z_VISIBLE_BY, kept, keptCity, layer,
+  lineLength, polygonArea, readFeature, surveyProperties, surveyShape, zFor, zOf,
 } from '../tools/import/features.mjs';
 
 const square = (x, y, size) => ({
@@ -112,13 +112,59 @@ test('nameEn is written only where it differs from the name', () => {
   assert.equal(differs.nameEn, 'Lake Geneva');
 });
 
-test('the layer table names five layers after M36b, and coast is lines with no world file', () => {
-  assert.deepEqual(LAYERS.map((l) => l.id), ['coast', 'rivers', 'lakes', 'physical', 'mountains']);
+test('the layer table names the six layers of M36, and coast is lines with no world file', () => {
+  assert.deepEqual(LAYERS.map((l) => l.id), ['coast', 'rivers', 'lakes', 'physical', 'mountains', 'cities']);
   const coast = layer('coast');
   assert.equal(coast.geometry, 'line', 'a cut ring is never stroked as a ring');
   assert.equal(coast.world, null, 'its far level is manifest.land');
-  // The cities are M36c's, and the table says so by not naming them.
-  assert.equal(layer('cities'), null);
+});
+
+test('the cities are the one layer that is filtered rather than simplified', () => {
+  // Brief §3: over a hundred thousand, plus every populated place a place
+  // record names, whatever its population. There is no tolerance on a point.
+  const cities = layer('cities');
+  assert.equal(cities.geometry, 'point');
+  assert.equal(cities.filter, 'population');
+  assert.equal(CITY_POPULATION, 100000);
+  const read = (pop, id) => ({ id, pop });
+  assert.equal(keptCity(read(100001, '1')), true);
+  assert.equal(keptCity(read(100000, '1')), false, 'over a hundred thousand, not at it');
+  assert.equal(keptCity(read(9400, '1')), false);
+  // The second half of the rule, and the only thing that saves a small town.
+  assert.equal(keptCity(read(9400, '1'), new Map([['1', 'alvor']])), true);
+  // A city with no population figure is kept only where a record names it.
+  assert.equal(keptCity({ id: '2' }), false);
+  assert.equal(keptCity({ id: '2' }, new Map([['2', 'boe']])), true);
+  // And it carries amendment A6's fields, which the peaks do not: a field
+  // added to one point layer must not appear on the other.
+  assert.deepEqual([...cities.carry], ['pop', 'zl', 'wikidata', 'place']);
+  assert.equal(layer('mountains').carry, undefined);
+});
+
+test('a city\'s label zoom comes from LABELRANK and is never earlier than its dot', () => {
+  // The populated places are the one file of the seven with no `min_label`
+  // (the survey of 15 September), so M38's `zl` goes through the same frozen
+  // table `z` does, from the rank Natural Earth ranks its labels by.
+  assert.equal(PROPERTIES.cities.label, 'LABELRANK');
+  const point = { type: 'Point', coordinates: [-9.1, 38.7] };
+  const city = readFeature('cities', {
+    properties: { NAME: 'Lisbon', MIN_ZOOM: 3, LABELRANK: 6, POP_MAX: 2812000, NE_ID: 1, WIKIDATAID: 'Q597' },
+    geometry: point,
+  });
+  assert.equal(city.z, 2);
+  assert.equal(city.zl, 6, 'the label rank, through the one table');
+  // A label before the mark it names would point at nothing.
+  const early = readFeature('cities', {
+    properties: { NAME: 'Somewhere', MIN_ZOOM: 8, LABELRANK: 0, POP_MAX: 200000, NE_ID: 2 },
+    geometry: point,
+  });
+  assert.equal(early.zl, early.z);
+  // And where the file gives no rank, nothing is invented.
+  const none = readFeature('cities', {
+    properties: { NAME: 'Nowhere', MIN_ZOOM: 5, POP_MAX: 200000, NE_ID: 3 },
+    geometry: point,
+  });
+  assert.equal(none.zl, undefined);
 });
 
 test('what a cell holds is decided per layer, and no cut edge is ever stroked', () => {

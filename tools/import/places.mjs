@@ -29,12 +29,9 @@
 // person, who resolves it by adding the entry by hand — a hand-written entry
 // is kept by `--places` on the next run and never recomputed away.
 
-import { PROPERTIES } from './features.mjs';
+import { CITIES_SOURCE, PROPERTIES } from './features.mjs';
 
-// The one committed file a city is read off, named here because `--places`
-// reads it before there is a `cities` layer to ask for it and the layer table
-// names it from here afterwards: one spelling, in one place.
-export const CITIES_SOURCE = 'ne_10m_populated_places.geojson';
+export { CITIES_SOURCE };
 
 // Where the two files this writes live, relative to data/ and to the
 // repository root. `data/imports/` is not in the deploy artifact (deploy.yml),

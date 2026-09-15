@@ -229,7 +229,15 @@ export const PROPERTIES = Object.freeze({
   }),
   // ne_10m_populated_places.geojson — 137 keys per city, upper case, of which
   // these ten are read and the other 127 are not. POP_MAX and not POP_MIN:
-  // the metropolitan figure is what "over 100 000" is about.
+  // the metropolitan figure is what "over 100 000" is about, and all 7,342
+  // carry one.
+  //
+  // `label` is LABELRANK and **not** MIN_LABEL: the other four files have a
+  // `min_label` and this one has none — the survey of 15 September is what
+  // says so — so M38's `zl` goes through the same table `z` does, from the
+  // rank Natural Earth ranks its labels by (deviation 624). 7,341 of the
+  // 7,342 carry it; the one that does not is written without a `zl` rather
+  // than with a number nothing gave us.
   cities: Object.freeze({
     class: 'FEATURECLA',
     drop: null,
@@ -237,6 +245,7 @@ export const PROPERTIES = Object.freeze({
     nameEn: 'NAME_EN',
     scaleRank: 'SCALERANK',
     minZoom: 'MIN_ZOOM',
+    label: 'LABELRANK',
     population: 'POP_MAX',
     elevation: null,
     wikidata: 'WIKIDATAID',
@@ -246,6 +255,23 @@ export const PROPERTIES = Object.freeze({
   }),
 });
 
+// The population filter of brief §3: over a hundred thousand, **plus every
+// populated place a data/places/ record names, whatever its population**
+// (`data/imports/naturalearth-places.json` decides the second half). Strictly
+// over and not at: 3,085 of the 7,342 are over it and four more are exactly
+// on it, and "over 100 000" is what the brief says.
+//
+// A city with no population figure is kept only where a place record names
+// it, which on this file is no city at all — POP_MAX is on all 7,342.
+export const CITY_POPULATION = 100000;
+
+// Whether this atlas draws a city, given the mapping. `read` is one feature
+// as readFeature returned it.
+export function keptCity(read, places = new Map(), { minimum = CITY_POPULATION } = {}) {
+  if (read?.id !== undefined && places.has(read.id)) return true;
+  return Number.isFinite(read?.pop) && read.pop > minimum;
+}
+
 // --- the layers this import writes ---------------------------------------
 //
 // What the manifest's `base` block says it was built from. Here and not in
@@ -253,6 +279,13 @@ export const PROPERTIES = Object.freeze({
 // and naturalearth.mjs reads build-index.mjs, which reads read.mjs: this file
 // imports nothing but the two pure halves of the geometry, so nothing that
 // reads it can end up in a cycle.
+// The one committed file a city is read off, named once: `--places` reads it
+// before it has a layer to ask for it, and the `cities` row below reads the
+// same constant. It is here and not in places.mjs because features.mjs
+// imports nothing but the two pure geometry halves, and places.mjs reads the
+// property table off this file — the other way round would be a cycle.
+export const CITIES_SOURCE = 'ne_10m_populated_places.geojson';
+
 export const BASE_SOURCE = 'natural-earth-10m';
 export const BASE_VERSION = 'v5.1.2';
 export const BASE_GEO_DIR = 'geo/base';
@@ -327,6 +360,26 @@ export const LAYERS = Object.freeze([
     clip: false,
     world: 'geo/base/mountains-world.json',
     sources: Object.freeze([Object.freeze({ file: 'ne_10m_geography_regions_elevation_points.geojson', far: true })]),
+  }),
+  // The one layer that is filtered rather than simplified (M36c). Which
+  // cities are in it is brief §3's two rules and not a tolerance: over a
+  // hundred thousand, plus every populated place a place record names. The
+  // second half is `data/imports/naturalearth-places.json`, which also puts
+  // `place` on the city — the browser never fetches data/imports/ (M36
+  // review, F9), so the link has to travel in the data.
+  Object.freeze({
+    id: 'cities',
+    geometry: 'point',
+    minZoom: 1,
+    dir: 'cities',
+    clip: false,
+    filter: 'population',
+    // Amendment A6's fields, beyond the id, the name and the point every
+    // point layer writes. On this row and not in pointOf, so that a field
+    // added to the cities cannot appear on the peaks.
+    carry: Object.freeze(['pop', 'zl', 'wikidata', 'place']),
+    world: 'geo/base/cities-world.json',
+    sources: Object.freeze([Object.freeze({ file: CITIES_SOURCE, far: true })]),
   }),
 ]);
 
@@ -403,6 +456,13 @@ export function readFeature(layerId, feature) {
   if (Number.isFinite(elevation)) out.elevation = elevation;
   const population = value(properties, table.population);
   if (Number.isFinite(population)) out.pop = population;
+  // M38's label zoom, in `k` like `z` and through the same frozen table
+  // (amendment A4). Never earlier than the dot itself: a name on the map
+  // before the mark it names would be a label pointing at nothing, and
+  // Natural Earth's two ranks do not promise to agree. Absent where the file
+  // gives no rank, rather than invented.
+  const label = value(properties, table.label);
+  if (Number.isFinite(label)) out.zl = Math.max(zOf(label), out.z);
   return out;
 }
 

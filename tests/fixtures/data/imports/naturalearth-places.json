@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "kind": "import-places",
+  "source": "natural-earth-10m",
+  "entries": {
+    "1159100017": {
+      "place": "fixture-place-a",
+      "note": "Fixture Town is 9,400 people and is in the base map because this line names it: the population filter is \"over 100 000, plus every populated place a place record names\"."
+    }
+  }
+}

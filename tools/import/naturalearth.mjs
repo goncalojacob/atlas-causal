@@ -43,14 +43,14 @@ import { clipToBox, splitAtMeridian } from './geometry.mjs';
 import { keepRing, simplifyArc, simplifyLine } from './simplify.mjs';
 import { GRID, allCells, cellBounds } from './grid.mjs';
 import {
-  BASE_SOURCE, BASE_VERSION, LAYERS, PROPERTIES, kept, layerSources, surveyProperties,
-  surveyShape, zFor,
+  BASE_SOURCE, BASE_VERSION, CITIES_SOURCE, LAYERS, PROPERTIES, kept, layerSources,
+  surveyProperties, surveyShape, zFor,
 } from './features.mjs';
 import {
   cellValues, readLayer, sourcePoints, takeLayer, valuePoints, worldValue,
 } from './layers.mjs';
 import {
-  CITIES_SOURCE, PLACES_DOC, PLACES_FILE, handEntries, matchPlaces, placesDocument, placesFile,
+  PLACES_DOC, PLACES_FILE, handEntries, matchPlaces, placesDocument, placesFile,
 } from './places.mjs';
 import { SEAM } from '../../src/map/projection.js';
 
@@ -126,6 +126,7 @@ export const CAPS = Object.freeze({
   lakes: Object.freeze({ far: 150 * 1024, near: 700 * 1024 }),
   physical: Object.freeze({ far: 250 * 1024, near: 750 * 1024 }),
   mountains: Object.freeze({ far: 100 * 1024, near: 350 * 1024 }),
+  cities: Object.freeze({ far: 200 * 1024, near: 800 * 1024 }),
 });
 
 // What the far level of each layer drops for being too small to see at the
@@ -161,6 +162,28 @@ export const FAR_FLOORS = Object.freeze({
   lakes: 0.05,
   physical: 0,
   mountains: 0,
+  // The cities' floor is in people and not in degrees, because a point has no
+  // extent (M36c). It is the same argument as the two above and the same
+  // arithmetic: a city is about 113 bytes of JSON, all 3,086 of them come to
+  // 340 KB against a far cap of 200, and there is no tolerance on a point to
+  // step. So the far level — the world before a cell arrives — holds the
+  // cities of 250,000 and over, and every one of the rest is in its cell, at
+  // the same detail and dropped from nothing.
+  //
+  // 250,000 and not a rounder 500,000 for the reason the rivers' floor is
+  // 1.9: it is the smallest step that fits, and each step down is cities the
+  // reader would have seen at the world. Measured, at three decimals:
+  //
+  //   100,000   3,086 cities   340.0 KB   over
+  //   150,000   2,481          273.1 KB   over
+  //   200,000   2,029          223.3 KB   over
+  //   250,000   1,726          189.9 KB   fits, with 10 KB to spare
+  //   300,000   1,506          165.7 KB
+  //
+  // **A city a place record names is never under it**, whatever its
+  // population — that is in takeLayer, and it is what keeps Panaji at 65,586
+  // in the world file.
+  cities: 250000,
 });
 
 // The two ceilings the tool refuses to cross (M36 review, A9). The base map
@@ -360,16 +383,20 @@ export function fitToCap(build, { cap, start, ladder = TOLERANCES }) {
 export function planLayer(layer, sources, {
   seam = SEAM, caps = CAPS, ladder = TOLERANCES, decimals = DECIMALS,
   nearStart = NEAR_START, farStart = FAR_START, floors = FAR_FLOORS,
+  places = new Map(),
 } = {}) {
   const files = [];
   const rows = [];
   const problems = [];
-  const { features, dropped } = readLayer(layer.id, sources);
+  const { features, dropped, filtered } = readLayer(layer.id, sources, { places });
   const cap = caps[layer.id] ?? { far: Infinity, near: Infinity };
   const source = sourcePoints(features);
   const floor = floors[layer.id] ?? 0;
   const points = layer.geometry === 'point';
   const lost = dropped.length ? `, ${dropped.length} dropped for no name` : '';
+  // What the layer's own rule left out, at both levels: for the cities, every
+  // populated place under a hundred thousand that no place record names.
+  const left = filtered ? `, ${filtered} under the layer's own filter` : '';
 
   // The far level: one file for the whole world, which is what a reader sees
   // before a cell arrives.
@@ -398,7 +425,7 @@ export function planLayer(layer, sources, {
     bytes: far.bytes,
     kept: far.points,
     dropped: Math.max(source - far.points, 0),
-    note: `${far.features} of ${features.length} features, ${far.belowFloor} under ${floor}${lost}`,
+    note: `${far.features} of ${features.length} features, ${far.belowFloor} under ${floor}${lost}${left}`,
   });
 
   // The near level: one file per non-empty cell, all of them under one cap,
@@ -453,7 +480,7 @@ export function planLayer(layer, sources, {
 export function planImport(sources, {
   seam = SEAM, caps = CAPS, ladder = TOLERANCES, decimals = DECIMALS,
   nearStart = NEAR_START, farStart = FAR_START, minArea = FAR_MIN_AREA,
-  floors = FAR_FLOORS,
+  floors = FAR_FLOORS, places = new Map(),
 } = {}) {
   const files = [];
   const layers = [];
@@ -461,7 +488,7 @@ export function planImport(sources, {
 
   for (const layer of LAYERS) {
     if (layer.id !== 'coast') {
-      const built = planLayer(layer, sources, { seam, caps, ladder, decimals, nearStart, farStart, floors });
+      const built = planLayer(layer, sources, { seam, caps, ladder, decimals, nearStart, farStart, floors, places });
       files.push(...built.files);
       layers.push(...built.rows);
       problems.push(...built.problems);
@@ -771,7 +798,10 @@ export async function main(argv) {
   }
 
   const sources = Object.fromEntries(loaded.map((source) => [source.name, source.json]));
-  const whole = planImport(sources);
+  // The committed mapping, read and never written by an import run: it is
+  // what keeps a city under the hundred thousand that this atlas names, and
+  // what puts `place` on the city for M38.
+  const whole = planImport(sources, { places: await readPlaces(dataDir) });
   const plan = baseOnly
     ? { ...whole, files: whole.files.filter((entry) => entry.file.startsWith(`${BASE_DIR}/`)) }
     : whole;

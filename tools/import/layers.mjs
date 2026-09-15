@@ -31,7 +31,9 @@
 import { clipToBox, geometryBbox, splitAtMeridian } from './geometry.mjs';
 import { keepRing, round, simplifyArc, simplifyLine } from './simplify.mjs';
 import { allCells, cellBounds, cellOf } from './grid.mjs';
-import { PROPERTIES, layerSources, lineLength, polygonArea, readFeature } from './features.mjs';
+import {
+  PROPERTIES, keptCity, layer, layerSources, lineLength, polygonArea, readFeature,
+} from './features.mjs';
 
 // --- the shapes a geometry comes in --------------------------------------
 
@@ -67,9 +69,24 @@ export function measureOf(geometry) {
 // atlas's fields. A feature the layer does not want is not counted; one whose
 // table requires a name and has none is **dropped and reported**, never
 // written with `undefined` in it.
-export function readLayer(id, sources) {
+//
+// `places` is data/imports/naturalearth-places.json as a map, and it does two
+// things for the one layer that has a `filter` — the cities (M36c). It is the
+// second half of brief §3's rule, "**plus** every populated place a
+// data/places/ record names, whatever its population", so a city under the
+// hundred thousand survives when the atlas names it. And it puts `place` on
+// the city, because data/imports/ is not in the deploy artifact and the
+// browser can never read it (M36 review, F9): the link has to travel in the
+// data or it does not travel at all.
+//
+// The filter is a filter and not a floor: `filtered` is how many the layer's
+// own rule left out, at **both** levels and not only the far one, because
+// "the cities over 100 000" is what this layer *is* and not what fits.
+export function readLayer(id, sources, { places = new Map() } = {}) {
   const features = [];
   const dropped = [];
+  let filtered = 0;
+  const filter = layer(id)?.filter ?? null;
   for (const source of layerSources(id)) {
     const collection = sources[source.file];
     if (!collection) continue;
@@ -80,10 +97,18 @@ export function readLayer(id, sources) {
         dropped.push(read.dropped);
         continue;
       }
+      if (filter === 'population') {
+        if (!keptCity(read, places)) {
+          filtered += 1;
+          continue;
+        }
+        const place = read.id === undefined ? undefined : places.get(read.id);
+        if (place !== undefined) read.place = place;
+      }
       features.push(read);
     }
   }
-  return { features, dropped };
+  return { features, dropped, filtered };
 }
 
 // --- one feature, taken down ---------------------------------------------
@@ -126,7 +151,12 @@ export function takeDown(geometry, { tolerance, decimals, minArea = 0, seam, spl
 
 // One point, quantised to the same three decimals the geometry is: about
 // 110 m, which is finer than a peak's position is known to.
-export function pointOf(read, { decimals }) {
+// Every field is written only where the source gives one, so nothing carries
+// `undefined` and nothing carries a number this atlas invented. A city's are
+// amendment A6's: `id`, `name`, `nameEn` (only where it differs), `lon`,
+// `lat`, `pop`, `z`, `zl`, `wikidata`, `place`. A peak's are what M36b wrote
+// and are unchanged — no `pop` and no `wikidata` on one, by deviation 615.
+export function pointOf(read, { decimals, carry = [] }) {
   const [lon, lat] = read.geometry?.coordinates ?? [];
   if (!Number.isFinite(lon) || !Number.isFinite(lat)) return null;
   const out = { lat: round(lat, decimals), lon: round(lon, decimals), z: read.z };
@@ -134,6 +164,12 @@ export function pointOf(read, { decimals }) {
   if (read.name !== undefined) out.name = read.name;
   if (read.nameEn !== undefined) out.nameEn = read.nameEn;
   if (read.elevation !== undefined) out.elevation = read.elevation;
+  // And whatever else the layer's own row says it carries — `carry` on the
+  // LAYERS row, so that adding a field to one point layer cannot add it to
+  // another. The cities carry amendment A6's four; the peaks carry none, and
+  // their files are byte for byte what M36b wrote, `wikidata` read and not
+  // written there by deviation 615.
+  for (const field of carry) if (read[field] !== undefined) out[field] = read[field];
   return out;
 }
 
@@ -174,7 +210,22 @@ export function takeLayer(layer, features, {
   let belowFloor = 0;
   for (const read of features) {
     if (layer.geometry === 'point') {
-      const point = pointOf(read, { decimals });
+      // A point has no extent, so a far-level floor on a point layer is read
+      // off the number the layer is ranked by — a city's population — and
+      // never off its geometry. The peaks have no floor and are unaffected.
+      //
+      // A city a place record names is **never** under it, whatever its size:
+      // it is why the mapping exists, Panaji is 65,586 and the atlas has a
+      // record for it, and the far level is the only place a reader sees
+      // before a cell arrives. Twenty-six records cost almost nothing and the
+      // rule the brief gives — "plus every populated place a data/places/
+      // record names, whatever its population" — would mean very little if
+      // the world file then dropped them for being small.
+      if (floor > 0 && read.place === undefined && !(Number(read.pop) >= floor)) {
+        belowFloor += 1;
+        continue;
+      }
+      const point = pointOf(read, { decimals, carry: layer.carry ?? [] });
       if (!point) continue;
       taken.push({ read, point, key: cellOf(point.lon, point.lat) });
       points += 1;

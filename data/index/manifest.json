@@ -628,6 +628,114 @@
         "id": "mountains",
         "minZoom": 1,
         "world": "geo/base/mountains-world.json"
+      },
+      {
+        "cells": [
+          {
+            "bytes": 115,
+            "file": "geo/base/cities/x0y1.json",
+            "key": "x0y1"
+          },
+          {
+            "bytes": 2249,
+            "file": "geo/base/cities/x0y2.json",
+            "key": "x0y2"
+          },
+          {
+            "bytes": 1229,
+            "file": "geo/base/cities/x0y3.json",
+            "key": "x0y3"
+          },
+          {
+            "bytes": 237,
+            "file": "geo/base/cities/x1y0.json",
+            "key": "x1y0"
+          },
+          {
+            "bytes": 10207,
+            "file": "geo/base/cities/x1y1.json",
+            "key": "x1y1"
+          },
+          {
+            "bytes": 54317,
+            "file": "geo/base/cities/x1y2.json",
+            "key": "x1y2"
+          },
+          {
+            "bytes": 1955,
+            "file": "geo/base/cities/x1y3.json",
+            "key": "x1y3"
+          },
+          {
+            "bytes": 17522,
+            "file": "geo/base/cities/x2y1.json",
+            "key": "x2y1"
+          },
+          {
+            "bytes": 13601,
+            "file": "geo/base/cities/x2y2.json",
+            "key": "x2y2"
+          },
+          {
+            "bytes": 4859,
+            "file": "geo/base/cities/x2y3.json",
+            "key": "x2y3"
+          },
+          {
+            "bytes": 15302,
+            "file": "geo/base/cities/x3y1.json",
+            "key": "x3y1"
+          },
+          {
+            "bytes": 62203,
+            "file": "geo/base/cities/x3y2.json",
+            "key": "x3y2"
+          },
+          {
+            "bytes": 41381,
+            "file": "geo/base/cities/x3y3.json",
+            "key": "x3y3"
+          },
+          {
+            "bytes": 5827,
+            "file": "geo/base/cities/x4y1.json",
+            "key": "x4y1"
+          },
+          {
+            "bytes": 79525,
+            "file": "geo/base/cities/x4y2.json",
+            "key": "x4y2"
+          },
+          {
+            "bytes": 5922,
+            "file": "geo/base/cities/x4y3.json",
+            "key": "x4y3"
+          },
+          {
+            "bytes": 115,
+            "file": "geo/base/cities/x5y0.json",
+            "key": "x5y0"
+          },
+          {
+            "bytes": 3758,
+            "file": "geo/base/cities/x5y1.json",
+            "key": "x5y1"
+          },
+          {
+            "bytes": 24171,
+            "file": "geo/base/cities/x5y2.json",
+            "key": "x5y2"
+          },
+          {
+            "bytes": 3747,
+            "file": "geo/base/cities/x5y3.json",
+            "key": "x5y3"
+          }
+        ],
+        "geometry": "point",
+        "id": "cities",
+        "minZoom": 1,
+        "world": "geo/base/cities-world.json"
       }
     ],
     "source": "natural-earth-10m",

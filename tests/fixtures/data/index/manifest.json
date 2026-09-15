@@ -102,6 +102,19 @@
         "id": "mountains",
         "minZoom": 1,
         "world": "geo/base/mountains-world.json"
+      },
+      {
+        "cells": [
+          {
+            "bytes": 545,
+            "file": "geo/base/cities/x2y2.json",
+            "key": "x2y2"
+          }
+        ],
+        "geometry": "point",
+        "id": "cities",
+        "minZoom": 1,
+        "world": "geo/base/cities-world.json"
       }
     ],
     "source": "natural-earth-10m",
