@@ -7,13 +7,13 @@
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-a620bba56e0c.json",
+      "file": "index/attributes-1900-1999-a5b7772ef431.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-ab752720ad99.json",
+      "file": "index/attributes-2000-2099-aa76dad7e3d3.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
@@ -759,11 +759,11 @@
       "id": "revolution"
     },
     {
-      "count": 13,
+      "count": 15,
       "id": "treaty"
     },
     {
-      "count": 17,
+      "count": 20,
       "id": "war"
     }
   ],
@@ -832,7 +832,7 @@
   "counts": {
     "actors": 488,
     "edges": 219,
-    "events": 494,
+    "events": 503,
     "narratives": 1,
     "offices": 11,
     "places": 26,
@@ -860,12 +860,12 @@
     }
   ],
   "files": {
-    "citers": "index/citers-87701cf1e032",
-    "core": "index/core-c82b88559d61.json",
+    "citers": "index/citers-11f25c59c743",
+    "core": "index/core-9a24c70e4e0a.json",
     "presences": "index/presences-b0f8cac28d89.json",
-    "review": "index/review-4abe5e646b54.json",
-    "search": "index/search-73fc1165d591.json",
-    "sources": "index/sources-8fc446aa180a.json"
+    "review": "index/review-336d0d76f9d6.json",
+    "search": "index/search-1afecce7b36f.json",
+    "sources": "index/sources-f562031f0f36.json"
   },
   "historyShards": [
     {
@@ -876,14 +876,14 @@
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-4efd794f0ae3.json",
+      "file": "index/history-event-1900-1999-af9d3043d22e.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
       "to": 1999
     },
     {
-      "file": "index/history-event-2000-2099-cfd7cb5d4586.json",
+      "file": "index/history-event-2000-2099-eab72490966e.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "event",

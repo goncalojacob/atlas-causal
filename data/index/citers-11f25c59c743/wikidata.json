@@ -164,6 +164,12 @@
     },
     {
       "dissent": false,
+      "id": "1948-arab-israeli-war",
+      "kind": "event",
+      "locator": "Q49092"
+    },
+    {
+      "dissent": false,
       "id": "1948-czechoslovak-coup-d-etat",
       "kind": "event",
       "locator": "Q1137957"
@@ -566,6 +572,12 @@
     },
     {
       "dissent": false,
+      "id": "budapest-memorandum",
+      "kind": "event",
+      "locator": "Q1000658"
+    },
+    {
+      "dissent": false,
       "id": "carnation-revolution",
       "kind": "event",
       "locator": "Q193245"
@@ -593,6 +605,12 @@
       "id": "constitutionalization-attempts-in-iran",
       "kind": "event",
       "locator": "Q1368440"
+    },
+    {
+      "dissent": false,
+      "id": "continuation-war",
+      "kind": "event",
+      "locator": "Q122100"
     },
     {
       "dissent": false,
@@ -962,6 +980,12 @@
     },
     {
       "dissent": false,
+      "id": "outer-space-treaty",
+      "kind": "event",
+      "locator": "Q256608"
+    },
+    {
+      "dissent": false,
       "id": "paris-peace-conference",
       "kind": "event",
       "locator": "Q199820"
@@ -995,6 +1019,12 @@
       "id": "potsdam-conference",
       "kind": "event",
       "locator": "Q151187"
+    },
+    {
+      "dissent": false,
+      "id": "romanian-revolution-1989",
+      "kind": "event",
+      "locator": "Q204213"
     },
     {
       "dissent": false,
@@ -1061,6 +1091,12 @@
       "id": "second-boer-war",
       "kind": "event",
       "locator": "Q215112"
+    },
+    {
+      "dissent": false,
+      "id": "second-congo-war",
+      "kind": "event",
+      "locator": "Q75756"
     },
     {
       "dissent": false,
@@ -1133,6 +1169,18 @@
       "id": "treaty-of-lausanne",
       "kind": "event",
       "locator": "Q193258"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-london",
+      "kind": "event",
+      "locator": "Q824165"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-nice",
+      "kind": "event",
+      "locator": "Q208688"
     },
     {
       "dissent": false,
@@ -1211,6 +1259,12 @@
       "id": "vienna-convention-on-diplomatic-relations",
       "kind": "event",
       "locator": "Q659717"
+    },
+    {
+      "dissent": false,
+      "id": "vienna-convention-on-the-law-of-treaties",
+      "kind": "event",
+      "locator": "Q239768"
     },
     {
       "dissent": false,

@@ -126,3 +126,23 @@ unclassified class Q217901: add it to data/imports/wikidata-seeds.json → class
 unclassified class Q107706: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
 36 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 18 created, 0 enriched, 0 named, 0 left alone, 7 refused, 0 ambiguous
+import: 15 item(s) this batch, 0 left after it, 20 call(s) spent
+created event budapest-memorandum from Q1000658
+created event second-congo-war from Q75756
+created event romanian-revolution-1989 from Q204213
+created event treaty-of-london from Q824165
+created event 1948-arab-israeli-war from Q49092
+created event continuation-war from Q122100
+created event treaty-of-nice from Q208688
+created event vienna-convention-on-the-law-of-treaties from Q239768
+created event outer-space-treaty from Q256608
+refused Q2885072: none of its classes (Q750215, Q786766) is in data/imports/wikidata-seeds.json → classes
+refused Q1069706: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+refused Q223085: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+refused Q318161: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+refused Q1922071: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+refused Q309204: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+unclassified class Q750215: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q786766: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+18 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+9 created, 0 enriched, 0 named, 0 left alone, 6 refused, 0 ambiguous

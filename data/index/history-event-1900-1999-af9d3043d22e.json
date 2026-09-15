@@ -997,6 +997,15 @@
         }
       ]
     },
+    "1948-arab-israeli-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "1948-czechoslovak-coup-d-etat": {
       "from": "git",
       "versions": [
@@ -2256,7 +2265,7 @@
       ]
     },
     "1982-lebanon-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3254,7 +3263,7 @@
       ]
     },
     "amsterdam-treaty": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3401,7 +3410,7 @@
       ]
     },
     "arab-revolt": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4249,6 +4258,15 @@
         }
       ]
     },
+    "budapest-memorandum": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "cabral-assassinated-1973": {
       "from": "git",
       "versions": [
@@ -4758,6 +4776,15 @@
     },
     "constitutionalization-attempts-in-iran": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "continuation-war": {
+      "from": "revised",
       "versions": [
         {
           "first": true,
@@ -5961,7 +5988,7 @@
       ]
     },
     "good-friday-agreement": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5998,7 +6025,7 @@
       ]
     },
     "greek-civil-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6451,7 +6478,7 @@
       ]
     },
     "irish-civil-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6460,7 +6487,7 @@
       ]
     },
     "kargil-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6559,7 +6586,7 @@
       ]
     },
     "lapland-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7400,7 +7427,7 @@
       ]
     },
     "nigerian-civil-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7488,6 +7515,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "outer-space-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -8188,6 +8224,15 @@
         }
       ]
     },
+    "romanian-revolution-1989": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "rome-statute-of-the-international-criminal-court": {
       "from": "git",
       "versions": [
@@ -8391,7 +8436,7 @@
       ]
     },
     "sayfo": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8485,6 +8530,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "second-congo-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -8601,7 +8655,7 @@
       ]
     },
     "sino-indian-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8651,7 +8705,7 @@
       ]
     },
     "somali-civil-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8753,7 +8807,7 @@
       ]
     },
     "sri-lankan-civil-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8918,6 +8972,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-london": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -9227,6 +9290,15 @@
       ]
     },
     "vienna-convention-on-diplomatic-relations": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "vienna-convention-on-the-law-of-treaties": {
       "from": "revised",
       "versions": [
         {

@@ -2559,7 +2559,7 @@
       ]
     },
     "convention-on-preventing-and-combating-violence-against-women-and-domestic-violence": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3398,7 +3398,7 @@
       ]
     },
     "mahsa-amini-protests": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3705,7 +3705,7 @@
       ]
     },
     "rose-revolution": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3927,7 +3927,7 @@
       ]
     },
     "treaty-establishing-a-constitution-for-europe": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3994,6 +3994,15 @@
             "category"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "treaty-of-nice": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
