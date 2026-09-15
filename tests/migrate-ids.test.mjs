@@ -241,23 +241,41 @@ test('a new id that is already somebody\'s former id is refused: rule 2 keeps bo
   assert.match(plan.error, /already an alias of "second"/);
 });
 
-test('a tombstone is not renamed: the record that stands in its place is', () => {
+test('a replaced record is not renamed: the record that stands in its place is', () => {
   const before = corpus().map((r) => (r.id === 'second'
     ? { ...r, status: 'merged', supersededBy: 'first' } : r));
   assert.match(renamePlan(before, 'event', 'second', 'the-second', { today: TODAY }).error,
-    /is merged, not an active record — rename "first", which superseded it/);
+    /is merged — rename "first", which superseded it/);
 
+  // The same for a retracted record something replaced: what the refusal is
+  // about is the successor, not the status.
+  const replaced = corpus().map((r) => (r.id === 'second'
+    ? { ...r, status: 'retracted', supersededBy: 'first', retraction: { on: '2026-02-02', reason: 'Synthetic.' } } : r));
+  assert.match(renamePlan(replaced, 'event', 'second', 'the-second', { today: TODAY }).error,
+    /is retracted — rename "first", which superseded it/);
+});
+
+// M44c. A retracted record with no successor has nothing standing in its
+// place to rename instead, and it is still a record of this atlas: the
+// English rule and a misfiled id reach a tombstone too. Its former id keeps
+// resolving through `aliases`, which is the whole of what the refusal was
+// protecting.
+test('a retracted record nothing superseded is renamed, and keeps its former id', () => {
   const retracted = corpus().map((r) => (r.id === 'second'
     ? { ...r, status: 'retracted', retraction: { on: '2026-02-02', reason: 'Synthetic.' } } : r));
-  assert.match(renamePlan(retracted, 'event', 'second', 'the-second', { today: TODAY }).error,
-    /is retracted, not an active record/);
+  const plan = renamePlan(retracted, 'event', 'second', 'the-second', { today: TODAY });
+  assert.equal(plan.error, undefined);
+  const write = plan.writes.find((w) => w.from === 'second');
+  assert.equal(write.record.id, 'the-second');
+  assert.equal(write.record.status, 'retracted');
+  assert.ok(write.record.aliases.includes('second'));
 });
 
 // Amendment A2, plan review finding 14. A CShapes actor's presences are
 // `<actor>-<year>` and its id is a value in the mapping file: the next
 // `--import` re-derives both from the map, so a rename made here would be
 // undone beside the stale records the import still owns.
-test('a record an import created is refused, and the message says where it is corrected', () => {
+test('a record an import re-derives is refused, and the message says where it is corrected', () => {
   for (const t of ['cshapes', 'wikidata']) {
     const before = corpus().map((r) => (r.id === 'an-actor' ? { ...r, origin: { tool: t } } : r));
     const plan = renamePlan(before, 'actor', 'an-actor', 'the-actor', { today: TODAY });
@@ -269,6 +287,25 @@ test('a record an import created is refused, and the message says where it is co
     const before = corpus().map((r) => (r.id === 'an-actor' ? { ...r, origin: { tool: t } } : r));
     assert.equal(renamePlan(before, 'actor', 'an-actor', 'the-actor', { today: TODAY }).error, undefined, t);
   }
+});
+
+// M44c. The Wikidata import finds the record that already claims an item by
+// `kind:Qnnn` (`itemIndex`) and derives an id from a label only for an item
+// no record claims, so it does not re-derive the id of a record that keeps
+// its `wikidata` — the A2 argument does not reach it, and the Portuguese
+// labels the import left on English records could not be corrected anywhere.
+test('a Wikidata record that carries its item is renamed; one without it is not', () => {
+  const carrying = corpus().map((r) => (r.id === 'an-actor'
+    ? { ...r, origin: { tool: 'wikidata' }, wikidata: 'Q42' } : r));
+  const plan = renamePlan(carrying, 'actor', 'an-actor', 'the-actor', { today: TODAY });
+  assert.equal(plan.error, undefined);
+  assert.equal(plan.writes.find((w) => w.from === 'an-actor').record.id, 'the-actor');
+
+  // A CShapes record carries no item, and its id is the map's to correct.
+  const cshapes = corpus().map((r) => (r.id === 'an-actor'
+    ? { ...r, origin: { tool: 'cshapes' }, wikidata: 'Q42' } : r));
+  assert.match(renamePlan(cshapes, 'actor', 'an-actor', 'the-actor', { today: TODAY }).error,
+    /created by the cshapes import/);
 });
 
 test('a cascade that would collide with an id already taken is refused whole', () => {
