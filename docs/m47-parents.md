@@ -158,6 +158,16 @@ clause that turned it down.
 | `nationalisations-1975` | `coup-attempt-11-march-1975` | "Three days after the failed coup": after, and the proposed parent is a single day (clauses 2 and 3). |
 | the 1911 decrees — `law-of-separation-1911`, `constitution-1911`, `universities-of-lisbon-and-porto-1911` | — | Decrees inside a revolution is the schema's own example, and `republic-proclaimed-1910` is a record of one day, not of the republic. There is no record of the First Republic to hang them on (clause 1). |
 
+## The counts
+
+Of the **250 active events**: **10 have a parent**, **7 are parents**, and
+**234 are neither**. One event — `full-scale-russo-ukrainian-war` — is both,
+so sixteen records are in a family and 234 are not.
+
+The third number is the one that decides whether the display rule this
+unblocks is worth building: **94 per cent of the atlas is top-level**, and a
+rule that draws only top-level events by default would hide ten marks.
+
 ## What the shape of the corpus says
 
 Seven parents, and **only one of them is Portuguese** — `crisis-portugal`, the
@@ -172,9 +182,67 @@ events on a map of 250 and nothing at all on the part of it the atlas is
 about. That is the finding this run leaves with the owner, and the reason the
 third count matters.
 
+## What a reader sees, now that there is something to see
+
+The ring was drawn for the first time on the running atlas, and the corpus
+answers differently on the three views.
+
+- **The timeline**: five rings at the opening window, which is every parent
+  whose bar is in it. No bracket: a bracket needs the parts of one parent to
+  share a lane *and* the timeline to be grouped, and the opening view is
+  `group=none`.
+- **The graph**: two rings at the opening zoom. The other five parents are
+  inside stacks, and a stack is a count and not a record, so it carries no
+  ring — which is M30c's own rule (§1) and not a defect.
+- **The map**: none. Six of the seven parents have no `place` — a world war
+  is not a point — so the map has no mark to ring; the seventh,
+  `crisis-portugal`, is at Lisbon and inside the Lisbon cluster at the opening
+  zoom. `?selected=crisis-portugal` draws it with its ring, and that is the
+  only ring the map can draw today.
+
+**No event became large.** `src/large.js` makes an event large when its parts
+fall in more than one region lane, and every one of the seven has its parts in
+a single lane — even `russo-japanese-war`, whose one part is at Portsmouth in
+the Americas. So the second thing `parent` turns on is still off, and nothing
+gained a band or a wash.
+
+### The defect this found in the graph
+
+The two levels of detail compose — a part is folded into its parent, and the
+stacking then runs on the nodes that are left — and **a stack's badge counts
+the nodes under it, not the events inside those nodes**. So an event folded
+twice is in no badge at all: the graph's promise that "nothing has been
+dropped from the picture, only folded into it" fails for **eight of the 250
+active events** at the opening zoom. It could not fail before, because no
+event had parts. `tests/graph-browser.test.mjs` now computes that number from
+the records and the drawn ids and asserts it exactly, so it cannot drift; the
+fix belongs to the run that changes what the graph draws, and this one left
+the graph alone.
+
+## The check that stops this recurring
+
+`parent` was not the only field with a reader and no writer, and nothing in
+the repository was looking. `tools/validate.mjs` now warns about every
+property the record schemas declare that some module under `src/` reads and
+no record under `data/` sets. The fields come from the schemas, so the check
+knows about one the day a schema gains it; it is a warning and never an
+error, because an unwritten field is a gap and not a defect.
+
+It names five today, and would have named `parent` as a sixth this morning:
+
+| field | declared by | read in | what is waiting on it |
+| --- | --- | --- | --- |
+| `scope` | event | `src/large.js` and 6 others | a person's answer to "how big is this event": until one is written, an event is large only through the lanes of its parts |
+| `historicalNames` | place | `src/map/names.js` and 3 others | M38b's dated place names; 0 of 26 places carry one |
+| `body` | event, actor, place | `src/entry/entry.js` and 18 others | the long prose of a record, below the summary |
+| `isbn` | source | `src/citation.js` and 4 others | a book's number in a bibliography of 34 sources |
+| `container` | source | `src/citation.js` and 13 others | the journal or volume an article is in |
+
 ## What this run did not do
 
 No new event, actor, edge or source; nothing written about the world. No
 display change: `src/parts.js`, `src/map/`, `src/timeline.js` and the graph
 are untouched, so the separate run that decides what a reader sees can tell
-what the data did on its own.
+what the data did on its own. The two browser tests that moved are tests: the
+graph's badge arithmetic, which the first parents in `data/` made false, and
+the timeline's churn bound, which five ring rects pushed over by two.

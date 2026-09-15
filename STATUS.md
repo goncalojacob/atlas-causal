@@ -13,7 +13,29 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-15, after **M43b** (on `m0`): **the timeline's scale is bucketed by
+2026-09-15, after **M47** (on `m0`): **the parent-child relations the corpus
+already implied are written, and the ring M30c built has been drawn on the
+running atlas for the first time.** Of the 250 active events, **10 now have a
+parent, 7 are parents and 234 are neither** — five rings on the timeline, two
+on the graph, none on the map, and no event large enough for a band. The rule
+was frozen in `docs/m47-parents.md` before the first relation was set: the
+corpus has to say it in membership words and never in causal ones, which is
+why ten were written and about twenty refused with the clause that refused
+them. The largest finding is a gap rather than a relation — **the atlas holds
+no record of the Estado Novo, the First Republic, the colonial war or the
+revolutionary period**, so only one of the seven parents is Portuguese, and
+the display rule this unblocks would today hide ten marks of 250. The second
+task was a validator **warning** for a field some module under `src/` reads
+and no record under `data/` sets; it names five — `scope`, `historicalNames`,
+`body`, `isbn`, `container` — and would have named `parent` this morning.
+Writing the data also found a real defect in the graph, deviation 714, which
+M47 did not fix because it was told not to touch what the views draw.
+`node tools/validate.mjs --index`: **2,266 records, 0 errors**, 1,068
+warnings. `node --test --test-timeout=120000`: **1,445 tests, 0 skipped, 0
+failed**. The account is `## M47: the ten relations the corpus already held,
+and the field with no writer` below, with deviations 712 to 716.
+
+Before it, M43b (on `m0`): **the timeline's scale is bucketed by
 century past a density threshold, and the atlas opens on the century that holds
 most of the corpus.** Both are behind the same threshold — a corpus more than
 two centuries long with a century holding over three times its even share — and
@@ -7701,6 +7723,141 @@ and none of it was touched here.
      one extra turn of the crank: **commit the records, rebuild, commit the
      index.**
 
+## M47: the ten relations the corpus already held, and the field with no writer
+
+**The machinery had never been fed.** M30a gave `parent` a rule, M30b a
+`childrenOf` and two behaviours, M30c a ring of its own on the map, the
+timeline and the graph — and **not one of the 513 records under `data/`
+carried a `parent`**. `isParent` was false for all 250 active events, no ring
+had ever been drawn on the running atlas, and every test passed because two
+records under `tests/fixtures/data/` set the field. This run wrote the data.
+
+**The rule first, in `docs/m47-parents.md`, before a single `parent` was set.**
+A relation is written when the corpus says it in **membership** words — the
+child names the larger event and places itself inside it, or the parent names
+the child as something it contains, or the parent names the force or front the
+child is an engagement of — and never in **causal** ones: *caused*, *led to*,
+*came out of*, *counted from*, *reacted to*, *the aftermath of*, *a
+continuation of*. A reaction to an event is not a part of it, a
+characterisation of an event is not a part of it, and a record whose larger
+event the atlas does not hold gets no parent at all. Then the mechanical half:
+the child's years inside the parent's, and its actors the parent's or bodies
+the parent's summary names. Where the rule left a case arguable the case was
+refused and listed. The document's two tables are the whole of the judgement
+and both are recomputable from `data/` and the rule alone.
+
+**Ten relations, and every one of them argued from the records.** The three
+world-war ones are the acts by which a belligerent enters, leaves or fights a
+war — the German declaration of March 1916 that `world-war-i` names as
+Portugal's entry, Brest-Litovsk whose five signatories are all belligerents of
+the parent, and the Lys, fought by the expeditionary corps the parent's own
+summary says Portugal sent to Flanders. `eastern-front` says of itself that it
+is "where the Second World War in Europe was decided". `treaty-of-portsmouth`
+says it ended the Russo-Japanese War, on the day the war record ends.
+`crisis-portugal` says "**The period contains** the international programme of
+2011 to 2014 … both of which this atlas holds as records of their own", which
+is the only statement of containment in the corpus, and its two records are
+the request of 2011 and the exit of 2014. `russo-ukrainian-war` calls the
+invasion of 2022 "the war's second phase", and the edge under Bucha says what
+a Russian army was doing thirty kilometres from Kyiv "is answered entirely by
+the plan of 24 February" — the atlas's first chain of three. And the edge
+between the two pandemic records says "The European epidemic is the same
+epidemic".
+
+**Of 250 active events: 10 have a parent, 7 are parents, 234 are neither.**
+One record is both, so sixteen are in a family. The third number is the answer
+to the question the milestone was asked: **94 per cent of the atlas is
+top-level**, and a display rule that drew only top-level events by default
+would hide ten marks. About twenty candidates were refused with the clause
+that refused them, among them `portugal-backs-franco-1936` (the atlas holds it
+as `reacted-to` the Spanish Civil War), `wall-street-crash-of-1929` (the
+record itself says what it contributed to the Depression is disputed),
+`treaty-of-versailles` under `paris-peace-conference` ("came out of it" is
+production), `warsaw-uprising` under `world-war-ii` (neither record names the
+other; the case would come entirely from outside the corpus) and
+`gaza-genocide` under `gaza-war`, which the corpus refuses in as many words:
+"held apart from the war it is about".
+
+**The largest gap the run found is not a relation but a missing record.** Only
+one of the seven parents is Portuguese. The atlas holds no record of the First
+Republic, the Estado Novo, the Military Dictatorship, the colonial war or the
+revolutionary period of 1974–75, so the hundred Portuguese records that would
+hang under them hang under nothing. `mozambique-war-begins-1964` calls itself
+"the front that made the war continental in scale" and there is no war record
+to be a front of. That is what the display rule will find when it looks.
+
+**What a reader sees now.** Five rings on the timeline at the opening window,
+two on the graph (the other five parents are inside stacks, and a stack is a
+count and not a record), and none on the map — six of the seven parents have
+no `place`, a world war not being a point, and the seventh is inside the
+Lisbon cluster until it is opened. **No event became large**: every parent's
+parts fall in a single lane, so the other thing `parent` turns on is still
+off.
+
+**The second task: a warning for a field with a reader and no writer.**
+`tools/validate.mjs` now warns about every property the record schemas declare
+that some module under `src/` reads and no record under `data/` sets. The
+fields are the schemas' own, so the check knows about a field the day a schema
+gains one. It names five today — `scope`, `historicalNames`, `body`, `isbn`,
+`container` — and would have named `parent` as a sixth this morning. `scope`
+is the one to look at: `src/large.js` reads it to decide which events get a
+band, and until somebody writes one an event is large only through the lanes
+of its parts.
+
+`node tools/validate.mjs --index`: **2,266 records, 0 errors, 1,068
+warnings** — the five new ones and nothing else moved; no relation produced a
+`child-outside-parent` warning, which is the same test the rule applies.
+`node --test --test-timeout=120000`: **1,445 tests, 0 skipped, 0 failed** —
+the browser tests ran here, and four of them had to be taught what a corpus
+with parents in it looks like. Deviations 712 to 716.
+
+712. **`parent` is a display fact, so a relation was written where the corpus
+     already implied it and nowhere else, and the rule was frozen before the
+     first one.** `docs/m47-parents.md` holds it. The bar is not "is this true
+     of the past" — that would be a historical claim, and CLAUDE.md forbids
+     writing one — but "do these two records already say that one is part of
+     the other". Ten passed it and about twenty did not, and the refusals are
+     in a table of their own with the clause that refused each. A run that
+     assigned parents from what it knows of history would have written fifty
+     and none of them would be checkable.
+713. **A `caused` edge and a `parent` can hold between the same two records,
+     and they say different things.** `crisis-portugal --caused-->
+     troika-bailout-2011` argues that the crisis produced the request; the
+     parent says the request is one of the things the period is made of. The
+     edge is in the adjacency and the parent never is, which is the whole of
+     why a parent needs no `explanation` and no `sources`. The rule uses an
+     edge as evidence only where its explanation states membership — "The
+     European epidemic is the same epidemic" — and never because an edge
+     exists.
+714. **The graph loses eight events at the opening zoom, and it took the
+     first parents in `data/` to show it.** The two levels of detail compose:
+     a part is folded into its parent, and the stacking then runs on the nodes
+     that are left. A stack's badge counts the **nodes** under it and not the
+     events inside them, so an event folded twice is in no badge at all and
+     the graph's own promise — "nothing has been dropped from the picture,
+     only folded into it" — fails for eight of 250. It could not fail before,
+     because no event had parts. **Not fixed here**: M47 was told not to
+     change what the three views draw, and the run that decides the display
+     rule is where a fix belongs. `tests/graph-browser.test.mjs` now computes
+     the shortfall from the records and the drawn ids and asserts it exactly,
+     so it cannot drift and the assertion goes to zero when the graph is
+     fixed.
+715. **The browser tests run in this environment, and the run protocol's
+     "`node --test` SKIPS every `*-browser.test.mjs`" is out of date.**
+     Chromium is on the machine, `findChrome()` finds it, and all 1,445 tests
+     ran with none skipped. That is how deviation 714 was found at all: on a
+     machine with no browser these four failures would have reached GitHub's
+     check instead, on a branch that had reported itself green.
+716. **A test whose bound was a handful had to be told what a ring costs.**
+     The timeline's `a state change updates the bars in place` asserted that
+     fewer than ten elements are added on a state change; the five ring rects
+     the parents put in the bars layer shift what the reuse pool hands to
+     which bar and it is now ten of three hundred and fifty. The bound is
+     twelve, with the reason written beside it. The property the test is about
+     — a state change touches a bar and its labels and does not rebuild the
+     drawing — is unchanged, and `Math.abs(after - before) < 10` still holds
+     at one.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -7904,3 +8061,4 @@ M46 done
 M43b started 2026-09-15T14:48:13Z by scheduled
 M43b done
 M47 started 2026-09-15T16:47:35Z by scheduled
+M47 done
