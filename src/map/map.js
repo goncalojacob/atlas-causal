@@ -5,7 +5,7 @@
 // timeline's band is the one place it is set — a slider that moved only one
 // end of it would have been a second, quieter answer to the same question.
 
-import { svg } from '../util/dom.js';
+import { svg, svgTitle } from '../util/dom.js';
 import { worldProjection, WORLD_WIDTH, viewBboxIn, bboxTransform } from './projection.js';
 import { createLandLayer } from './layers/land.js';
 import { createBaseLayer } from './layers/base.js';
@@ -23,6 +23,9 @@ import { categoryLabels, eventsOn } from '../categories.js';
 import { esc } from '../util/esc.js';
 import { normalizeBbox } from '../state.js';
 import { renderKey, shardsArrived } from '../render-key.js';
+import {
+  LABEL_HALO, LABEL_SIZE, LIMITS, PRIORITY, placeLabels,
+} from './labels.js';
 import { labelOf } from '../attributes.js';
 import { exportButton } from '../share.js';
 
@@ -74,7 +77,15 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // stop being clickable (layers/regions.js).
   const regionsGroup = svg('g', { class: 'layer layer-regions' });
   const eventsGroup = svg('g', { class: 'layer layer-events' });
-  viewport.append(landGroup, baseGroup, presencesGroup, regionsGroup, eventsGroup);
+  // E os nomes por cima de tudo, num grupo só. Desenhá-los num grupo só é a
+  // única maneira de haver um colocador: duas camadas a colocar cada uma os
+  // seus eram os dois colocadores que o achado 27 avisou que iam colidir, com
+  // outro nome (labels.js). Uma etiqueta não é um controlo — nada aqui tem
+  // `data-id`, `tabindex` nem rato —, por isso uma marca por baixo de um nome
+  // continua a ser clicável e um clique no mar continua a pousar o que o
+  // leitor tinha na mão.
+  const labelsGroup = svg('g', { class: 'layer layer-labels' });
+  viewport.append(landGroup, baseGroup, presencesGroup, regionsGroup, eventsGroup, labelsGroup);
   const root = svg('svg', { viewBox: `0 0 ${WIDTH} ${HEIGHT}`, class: 'map', role: 'img', 'aria-label': 'Map' }, [viewport]);
   // The twelve symbols, once in the document: the timeline draws the same ones
   // by id, and two copies would be twelve repeated ids (glyphs.js).
@@ -159,6 +170,22 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     },
   });
   land.render(atlas.land);
+
+  // Que camadas do mapa de base oferecem nomes à ronda das etiquetas, e com
+  // que prioridade. Aqui e não em `base.js` porque a hierarquia é do mapa e
+  // não de uma camada: um acontecimento ganha a caixa a uma cidade e uma
+  // cidade ganha-a a um deserto (decisão 9 do plano). M38b junta a esta tabela
+  // os rios, os lagos, as regiões físicas e os picos, a 2.
+  const LABELLED_LAYERS = Object.freeze({ cities: PRIORITY.cities });
+  // A classe de cada espécie de nome. `.mark-label` é a que era e continua a
+  // ser, para que todo o selector e todo o teste que a nomeia continuem a
+  // encontrá-la: o que mudou foi o grupo em que ela está pendurada, e mais
+  // nada (desvio 527).
+  const LABEL_CLASS = Object.freeze({
+    [PRIORITY.events]: 'mark-label',
+    [PRIORITY.cities]: 'city-label',
+    [PRIORITY.features]: 'feature-label',
+  });
 
   // --- o mapa de base -------------------------------------------------------
   //
@@ -580,6 +607,60 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // A spread survives a re-render — the band moving, a selection — for as
     // long as its cluster is still there to be spread.
     if (spread && !result.spread) spread = null;
+    // And the names last of all, once every layer has drawn and knows what it
+    // put on screen.
+    drawLabels(box);
+  }
+
+  // --- a ronda das etiquetas ------------------------------------------------
+  //
+  // Uma só, no fim do desenho: pedem-se os candidatos às camadas — listas
+  // puras, sem DOM —, chama-se o colocador uma vez e desenha-se o que ele
+  // devolveu. É aqui e não nas camadas porque só assim há um colocador, e
+  // porque uma cidade e um acontecimento têm de competir pela mesma caixa: duas
+  // rondas nunca se veriam uma à outra.
+  //
+  // Nada disto entra na chave do render (labels.js): as etiquetas são uma
+  // função do que já está na chave — a transformação, a janela, as camadas, os
+  // ficheiros chegados.
+  function drawLabels(box) {
+    const on = state.get().layers;
+    const candidates = [];
+    // Os acontecimentos primeiro, que é a ordem em que o colocador os vai pôr
+    // de qualquer maneira; e nenhum quando a camada está desligada, porque um
+    // nome sem a sua marca por baixo seria um acontecimento que o leitor
+    // acabou de desligar, ainda escrito.
+    if (eventsOn(on)) candidates.push(...events.labelCandidates());
+    for (const { id, layer } of baseLayers) {
+      const priority = LABELLED_LAYERS[id];
+      if (priority === undefined || !on.includes(id)) continue;
+      candidates.push(...layer.labelCandidates({ priority }));
+    }
+    // Por prioridade e por id, para ir buscar o título e a classe de volta: o
+    // colocador devolve o que colocou e não sabe de nenhum dos dois.
+    const byKey = new Map(candidates.map((c) => [`${c.priority}|${c.id}`, c]));
+    const placed = placeLabels(candidates, { k: transform.k, view: box, limits: LIMITS });
+    labelsGroup.replaceChildren();
+    for (const label of placed) {
+      const candidate = byKey.get(`${label.priority}|${label.id}`);
+      const title = candidate?.title ?? null;
+      const el = svg('text', {
+        x: label.x,
+        // A linha de base um pouco abaixo do ponto, que é onde a camada dos
+        // acontecimentos sempre a pôs: um nome centrado na marca ficaria com
+        // metade das letras por cima dela.
+        y: label.y + (LABEL_SIZE * 0.35) / transform.k,
+        class: LABEL_CLASS[label.priority] ?? LABEL_CLASS[PRIORITY.features],
+        // Dividido pelo zoom: um nome tem o mesmo tamanho no ecrã a uma vez e
+        // a quatro vezes, e o halo de papel por trás dele não cresce com o
+        // zoom — que é a razão por que é assim e não em `style.css`.
+        'font-size': LABEL_SIZE / transform.k,
+        'stroke-width': LABEL_HALO / transform.k,
+      }, title ? [svgTitle(title)] : []);
+      el.textContent = label.text;
+      labelsGroup.appendChild(el);
+    }
+    return placed;
   }
 
   // --- o mapa de base, desenhado --------------------------------------------
@@ -626,7 +707,14 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     baseIn += 1;
     if (basePending) return;
     basePending = true;
-    defer(() => { basePending = false; drawBase(); });
+    defer(() => {
+      basePending = false;
+      drawBase();
+      // E os nomes outra vez: uma cidade que acabou de chegar traz o seu nome
+      // com ela, e a ronda é barata — uma lista pura e trinta e seis `<text>`
+      // — ao pé de reconstruir as marcas por causa de um rio (desvio 637).
+      drawLabels(view());
+    });
   }
 
   // The two lines of the corner. Rewritten only when they change, because the

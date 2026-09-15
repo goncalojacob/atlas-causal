@@ -28,6 +28,11 @@ import { horizonBand } from '../../horizon.js';
 import { LOADING_LABEL } from '../../attributes.js';
 import { ringClasses } from '../../parts.js';
 import { glyphClasses, glyphUse } from '../glyphs.js';
+// O tamanho de uma etiqueta, o seu halo e o corte de um nome comprido vivem em
+// labels.js, com o colocador: há um tamanho para as etiquetas todas do mapa e
+// não há um segundo, e as etiquetas do desdobramento aqui em baixo são as
+// mesmas letras que as outras.
+import { LABEL_HALO, LABEL_SIZE, PRIORITY, shorten } from '../labels.js';
 
 // Sizes in SVG units at k = 1; every one of them is divided by k when drawn,
 // so a mark, a badge and a label keep their size on screen at any zoom.
@@ -41,8 +46,6 @@ const SELECTED_RADIUS = 7;
 const GLYPH_SIZE = MARK_RADIUS * 2;
 const HIT_RADIUS = 10;
 const BADGE_SIZE = 10;
-const LABEL_SIZE = 11;
-const LABEL_HALO = 3; // the paper halo behind a label, in screen pixels
 // The ring outside a parent's mark: how far outside it, and how thin. A ring
 // says "there is more inside" and nothing else, so it is thinner than the
 // mark's own outline and never reaches the hit circle around it.
@@ -50,15 +53,15 @@ const RING_GAP = 3;
 const RING_WIDTH = 1;
 // Labels would be noise on the whole world; they start once the reader has
 // zoomed to about a country, and only the heaviest clusters on screen get
-// one.
+// one. How many is the placer's limit for priority 0 and is passed to it by
+// `map.js`; this is the zoom below which this layer offers no candidate at
+// all, which is a statement about events and belongs here.
 const LABEL_ZOOM = 4;
-const LABEL_LIMIT = 12;
-const LABEL_CHARS = 30;
 // How far outside the visible rectangle a mark still has to be drawn, in SVG
 // units at k = 1: its hit circle and the badge that sits above and to the
 // right of a cluster, so nothing half on screen is half missing. A label is
-// not in this number — a label whose own mark is off screen is not drawn at
-// all (drawLabels).
+// not in this number — a label whose own anchor is off screen is not drawn at
+// all, which the placer decides (labels.js).
 const DRAW_MARGIN = HIT_RADIUS + BADGE_SIZE;
 
 // Whether a point in projected space is on screen, with room around the
@@ -76,10 +79,6 @@ function textNode(text, attrs) {
   const el = svg('text', attrs);
   el.textContent = text;
   return el;
-}
-
-function shorten(text, chars = LABEL_CHARS) {
-  return text.length > chars ? `${text.slice(0, chars - 1).trimEnd()}…` : text;
 }
 
 function markClasses(event, { selected, pathIds, actorIds, narrativeIds = null, reachable = null, faded = false, near = null }) {
@@ -208,11 +207,45 @@ export function createEventsLayer(group, projection, {
     }
   };
 
+  // What the last render put on screen, for the label round that comes after
+  // it. The layer no longer places or draws a label of its own — there is one
+  // placer on this map and it is `map.js` that calls it (labels.js) — so what
+  // is kept here is the list the round is asked for and the zoom it was drawn
+  // at, and nothing about where a name would go.
+  let labelling = { clusters: [], k: 1 };
+
   // window: { from, to } astronomical, or null for "everything". k: current
   // zoom factor. view: the rectangle of projected space on screen, for
   // deciding which clusters are worth labelling. spread: the key of a
   // coincident cluster the reader has opened, or null.
   return {
+    // The candidates this layer offers the round, as a pure list: no drawing,
+    // no DOM, no decision about what fits. Priority 0, because an event is
+    // what this atlas is about and a city is where one happened; the weight is
+    // the cluster's, which is what the layer already sorted its labels by.
+    //
+    // The anchor is to the right of the hit circle, which is where the layer
+    // has always put a label: knowing how wide a mark is is this layer's
+    // business and not the placer's.
+    labelCandidates() {
+      if (labelling.k < LABEL_ZOOM) return [];
+      const candidates = [];
+      for (const cluster of labelling.clusters) {
+        const name = nameOf(cluster.representative.event);
+        // A name that has not arrived is not labelled: "still loading" is a
+        // sentence for a tooltip and not a word to write across a country.
+        if (name === null) continue;
+        candidates.push({
+          id: cluster.key,
+          text: shorten(name),
+          x: cluster.x + (HIT_RADIUS + 2) / labelling.k,
+          y: cluster.y,
+          priority: PRIORITY.events,
+          weight: cluster.weight ?? 0,
+        });
+      }
+      return candidates;
+    },
     render({
       events, window: timeWindow = null, margin = null, selected, pathIds, actorIds = null, narrativeIds = null, reachable = null,
       near = null,
@@ -393,7 +426,9 @@ export function createEventsLayer(group, projection, {
       if (selectedMark) group.appendChild(selectedMark);
 
       if (spreadCluster) drawSpread(spreadCluster);
-      if (k >= LABEL_ZOOM) drawLabels(shown);
+      // What the label round will be offered, once the base map has drawn too:
+      // the clusters that reached the DOM, at the zoom they reached it at.
+      labelling = { clusters: shown, k };
       restoreFocus(focused);
 
       // A coincident cluster opened: its members on rings around the common
@@ -432,39 +467,6 @@ export function createEventsLayer(group, projection, {
             'stroke-width': LABEL_HALO / k,
           }));
         });
-      }
-
-      // At high zoom, the heaviest clusters on screen say what they are.
-      // Greedy: a label that would land on one already placed is skipped
-      // rather than nudged, so labels never drift away from their mark.
-      function drawLabels(list) {
-        const candidates = list.filter((c) => onScreen(c.x, c.y, view)).sort(
-          (a, b) => b.weight - a.weight || (a.key < b.key ? -1 : a.key > b.key ? 1 : 0),
-        );
-        const placed = [];
-        for (const cluster of candidates) {
-          if (placed.length >= LABEL_LIMIT) break;
-          const name = nameOf(cluster.representative.event);
-          if (name === null) continue;
-          const text = shorten(name);
-          const x = cluster.x + (HIT_RADIUS + 2) / k;
-          const y = cluster.y;
-          // Rough, and deliberately so: an em is about half the font size,
-          // and the box only has to be good enough to keep two labels off
-          // each other.
-          const box = {
-            x0: x,
-            x1: x + (text.length * LABEL_SIZE * 0.55) / k,
-            y0: y - (LABEL_SIZE * 0.7) / k,
-            y1: y + (LABEL_SIZE * 0.7) / k,
-          };
-          if (placed.some((p) => box.x0 < p.x1 && p.x0 < box.x1 && box.y0 < p.y1 && p.y0 < box.y1)) continue;
-          placed.push(box);
-          group.appendChild(textNode(text, {
-            x, y: y + (LABEL_SIZE * 0.35) / k, class: 'mark-label', 'font-size': LABEL_SIZE / k,
-            'stroke-width': LABEL_HALO / k,
-          }));
-        }
       }
 
       // `clusters` is the whole grouping — every placed event in the window,

@@ -99,6 +99,12 @@ export const SHOTS = Object.freeze([
   { name: 'm37-base-lisbon', query: '?from=1911&to=1911&bbox=-12,36.5,-4,45&layers=land,events,rivers,lakes,physical,mountains,cities',
     width: 1440, height: 900,
     what: 'the near level over Lisbon: shore, rivers, lakes, peaks and cities from the cells' },
+  // M38a. The same picture as `m37-base-lisbon` and the same link, so the two
+  // can be put side by side: what is added is the names, and what changed
+  // about the old ones is that the halo behind them is a halo again.
+  { name: 'm38-labels-lisbon', query: '?from=1911&to=1911&bbox=-12,36.5,-4,45&layers=land,events,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'the cities named beside the events, over the near level at Lisbon' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

@@ -36,6 +36,9 @@ import { simplifyGeometry, simplifyLine } from '../../util/simplify.js';
 // Importada de onde já estava exportada, não mudada de casa (emenda A0).
 import { detailFor } from './presences.js';
 import { cellsFor } from '../grid.js';
+// O corte de um nome comprido é o mesmo para todas as etiquetas do mapa, e
+// vive com o colocador (labels.js).
+import { shorten } from '../labels.js';
 
 // O diâmetro de um ponto, em unidades da página, antes de ser dividido pelo
 // zoom. As duas camadas de pontos são desenhadas aos tamanhos que a tabela do
@@ -74,6 +77,43 @@ const nameOf = (feature) => {
   const name = feature?.name ?? feature?.properties?.name;
   return typeof name === 'string' && name !== '' ? name : null;
 };
+
+// O nome inglês, e só quando é outro: o importador escreve-o apenas onde
+// difere de `name`, por isso a comparação aqui é uma segurança e não uma
+// regra nova (emenda A6 de M36).
+const nameEnOf = (feature) => {
+  const name = feature?.nameEn ?? feature?.properties?.nameEn;
+  return typeof name === 'string' && name !== '' && name !== nameOf(feature) ? name : null;
+};
+
+// O zoom a que o nome de uma feature aparece, que não é o zoom a que o ponto
+// aparece: o importador escreve-o por feature, do `min_label` de Natural Earth
+// onde o ficheiro o tem e de `z + 1` onde não tem (M38, emenda A2). Uma
+// feature sem `zl` é uma feature sem nome, e essas não são candidatas a nada.
+const zlOf = (feature) => {
+  const zl = feature?.zl ?? feature?.properties?.zl;
+  return typeof zl === 'number' ? zl : null;
+};
+
+// **Na cara do mapa vai um nome; o resto vai no título** (desvio 528). Vinte e
+// quatro cidades com dois nomes cada é um mapa que não se lê, por isso o que
+// fica por baixo do rato é uma linha só com todos os nomes que a feature tem:
+// o nome moderno, o nome inglês onde é outro, e — quando M38b os ligar — os
+// nomes datados com os seus anos. Separados por um ponto médio, porque uma
+// entrada datada já traz uma vírgula lá dentro ("Lourenço Marques, 1895–1976")
+// e vírgulas a separar vírgulas não se lêem.
+//
+// Pura, e nada aqui é inventado: só sai o que a feature traz. Vai para o DOM
+// por `textContent` e não por concatenação, por isso não passa por `esc()` —
+// é a razão por que `svgTitle` existe (util/dom.js).
+export const TITLE_SEPARATOR = ' · ';
+
+export function labelTitle(feature) {
+  const name = nameOf(feature);
+  if (name === null) return null;
+  const nameEn = nameEnOf(feature);
+  return [name, ...(nameEn ? [nameEn] : [])].join(TITLE_SEPARATOR);
+}
 
 const linesOf = (geometry) => (geometry?.type === 'LineString' ? [geometry.coordinates]
   : geometry?.type === 'MultiLineString' ? geometry.coordinates : []);
@@ -132,6 +172,12 @@ export function createBaseLayer(group, projection, {
   const pending = [];
   let signature = null;
   let count = 0;
+  // O que esta camada desenhou e tem nome, para a ronda das etiquetas que vem
+  // depois de todas as camadas terem desenhado. Não é uma segunda lista do que
+  // está no ecrã: é a mesma passagem do `draw` que a enche, e quem decide o
+  // que cabe é o colocador, uma vez, em `map.js` (labels.js).
+  let labelled = [];
+  let lastK = 1;
 
   const go = (file) => load(file).then(() => {
     waiting.delete(file);
@@ -197,8 +243,35 @@ export function createBaseLayer(group, projection, {
     // k: o zoom em vigor. view: a caixa no ecrã em graus, [oeste, sul, este,
     // norte], como `viewBboxIn` a devolve — é por ela que se sabe que células
     // pedir, e nunca pelo zoom (grid.js). on: se a camada está ligada.
+    // Os candidatos desta camada para a ronda das etiquetas, em lista pura:
+    // sem desenhar, sem DOM e sem decidir o que cabe. `priority` é dada de
+    // fora porque é o mapa que conhece a hierarquia e não a camada — uma
+    // cidade é 1 e um acidente físico é 2 (labels.js).
+    //
+    // A âncora é à direita do ponto, à distância do seu raio: saber quão largo
+    // é um ponto desta camada é assunto desta camada.
+    //
+    // Só as camadas de pontos, por agora: um rio, um lago e uma região física
+    // são nomeados ao longo da sua própria geometria e esse ponto é de M38b.
+    labelCandidates({ priority = 1 } = {}) {
+      if (geometry !== 'point') return [];
+      const gap = ((DOT[id] ?? DEFAULT_DOT) + 2) / lastK;
+      const candidates = [];
+      for (const entry of labelled) {
+        // O nome aparece depois do ponto e nunca antes: é o que `zl` quer
+        // dizer, e é o que qualquer mapa faz.
+        if (entry.zl > lastK) continue;
+        candidates.push({
+          id: entry.id, text: entry.text, title: entry.title,
+          x: entry.x + gap, y: entry.y, priority, weight: entry.weight,
+        });
+      }
+      return candidates;
+    },
+
     render({ k = 1, view = null, on = true } = {}) {
       const drawable = Boolean(on) && k >= minZoom;
+      lastK = k;
       if (!drawable) {
         // Uma camada desligada, ou abaixo do seu zoom, não desenha nada **e
         // não pede nada**: é a regra que `map.js` já aplica aos territórios.
@@ -206,6 +279,7 @@ export function createBaseLayer(group, projection, {
           group.replaceChildren();
           signature = null;
           count = 0;
+          labelled = [];
         }
         return { drawn: 0, complete: false, cells: [] };
       }
@@ -269,6 +343,7 @@ export function createBaseLayer(group, projection, {
 
   function draw(files, tolerance, k, covered) {
     group.replaceChildren();
+    labelled = [];
     // Uma feature que chega em mais do que uma célula — um lago e uma região
     // física são escritos inteiros em todas as células que a sua caixa toca —
     // é desenhada uma vez, pela sua `id` (emenda A1).
@@ -311,9 +386,34 @@ export function createBaseLayer(group, projection, {
       const el = element(file, index, feature, tolerance, k);
       if (!el) continue;
       group.appendChild(el);
+      remember(feature);
       drawn += 1;
     }
     return drawn;
+  }
+
+  // Uma feature desenhada que tem nome é uma candidata a etiqueta. Guardada na
+  // mesma passagem que a desenha — não há uma segunda volta pelos dados — e
+  // com o ponto já projectado, porque é o mesmo que o círculo usou.
+  function remember(feature) {
+    if (geometry !== 'point') return;
+    const name = nameOf(feature);
+    const zl = zlOf(feature);
+    if (name === null || zl === null) return;
+    const { lon, lat } = feature;
+    if (!Number.isFinite(lon) || !Number.isFinite(lat)) return;
+    const [x, y] = projection.project([lon, lat]);
+    labelled.push({
+      id: idOf(feature) ?? `${lon},${lat}`,
+      text: shorten(name),
+      title: labelTitle(feature),
+      zl,
+      // O peso é a população: numa costa cheia, a cidade maior é a que fica
+      // com a caixa. Um pico é pesado pela sua altura e isso é de M38b.
+      weight: typeof feature.pop === 'number' ? feature.pop : 0,
+      x,
+      y,
+    });
   }
 
   function element(file, index, feature, tolerance, k) {

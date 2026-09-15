@@ -735,7 +735,20 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
 .map .mark.cluster { fill: var(--paper); stroke: var(--cobalt); stroke-width: 2.5; }
 .map .mark.cluster:hover { fill: var(--cobalt-faint); }
 .map .cluster-count { fill: var(--cobalt); font-family: var(--font-ui); font-weight: 600; pointer-events: none; }
-.map .mark-label { fill: var(--ink); font-family: var(--font-ui); paint-order: stroke; stroke: var(--paper); stroke-width: 3; stroke-linejoin: round; pointer-events: none; } /* the width is overridden per zoom by the events layer */
+/* Every name the map draws, in the one group that draws them (src/map/labels.js).
+   The halo's width and the type size are attributes written per label and
+   divided by the zoom, and they are deliberately not here: a CSS declaration
+   beats a presentation attribute, so `stroke-width: 3` in this rule was the
+   halo the layer thought it was scaling — 3 user units at k = 8 is a white
+   cloud twenty-four pixels across, which is what buried the geography in
+   docs/screens/m37-base-lisbon.png. Nothing about a label's size is set here.
+   A city is told apart from an event by the soft ink its dot is drawn in, and
+   a physical feature will be told apart by its letterspacing (M38b). */
+.map .layer-labels { pointer-events: none; }
+.map .mark-label,
+.map .city-label { font-family: var(--font-ui); paint-order: stroke; stroke: var(--paper); stroke-linejoin: round; pointer-events: none; }
+.map .mark-label { fill: var(--ink); }
+.map .city-label { fill: var(--ink-soft); }
 /* A coincident cluster opened: members on rings, each on a leg back to the
    point they all share. */
 .map .spread-hub { fill: var(--cobalt); stroke: none; }
