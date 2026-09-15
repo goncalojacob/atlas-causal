@@ -6,5 +6,6 @@
 
 export {
   segmentDistance, douglasPeucker, round, quantize, MIN_DETAIL, arcExtent,
-  simplifyArc, ringArea, keepRing, pruneGeometry, simplifyGeometry, countPoints,
+  simplifyArc, simplifyLine, ringArea, keepRing, pruneGeometry, simplifyGeometry,
+  countPoints,
 } from '../../src/util/simplify.js';

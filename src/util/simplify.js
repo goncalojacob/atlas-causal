@@ -107,9 +107,16 @@ export function arcExtent(arc) {
 // tolerance, or a sixth of the line's own extent, whichever is less. The map
 // takes a territory's inland borders down by zoom exactly as it takes the
 // outline down, so the stroke keeps lying along the edge of the fill.
-export function simplifyLine(line, { tolerance }) {
-  if (!(tolerance > 0)) return line;
-  return douglasPeucker(line, Math.min(tolerance, arcExtent(line) / MIN_DETAIL));
+//
+// `decimals` is for the import and not for the map (M36 review, A7): the base
+// map's rivers and its near coastline are lines, and a line written to a file
+// is quantized exactly as `simplifyArc` quantizes a ring, or the file carries
+// seventeen digits of a float nothing can see. The map passes no `decimals`
+// and gets what it has always got — the points it already has, thinned —
+// because quantizing an outline the reader is looking at would move it.
+export function simplifyLine(line, { tolerance, decimals } = {}) {
+  const taken = tolerance > 0 ? douglasPeucker(line, Math.min(tolerance, arcExtent(line) / MIN_DETAIL)) : line;
+  return decimals === undefined || decimals === null ? taken : quantize(taken, decimals);
 }
 
 export function simplifyArc(arc, { tolerance, decimals }) {
