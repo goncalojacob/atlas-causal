@@ -1069,7 +1069,7 @@ atlas-causal/
 │   │   ├── layout-message.js  layout-worker.js  layout-runner.js   ● what crosses to a thread, the thread, and when one is worth it
 │   │   └── graph-view.js         ● the SVG: nodes, the five edge types, the window as a shade, pan/zoom, nearest-centre clicks
 │   ├── timeline.js               ● the lanes lanes.js gives, or packed unlabelled rows, as many as the pane holds; the window as a band with two handles; bars stack; one layer per kind of element, kept from render to render
-│   ├── timeline-scale.js         ● linear now; the scale is injected
+│   ├── timeline-scale.js         ● the scale is injected: linear inside two centuries, bucketed by century past that, with the ticks and the label thinning following it
 │   ├── panel/panel.js            ● the shell: the container, the clicks, the load token, what every card shares
 │   ├── panel/event.js  source.js  place.js  actor.js  office.js  cluster.js   ● one card each
 │   ├── large.js                  ● pure: which events are large, and which parents get a bracket rather than a band
@@ -2444,8 +2444,11 @@ actors are sets rather than walks and have no such controls.
   base record's `revised`; the panel falls back to English for stale fields.
 - **Paleo-coastlines** — `data/geo/land-<epoch>.json`, listed in the
   manifest by year range; `layers/land.js` switches by year.
-- **Deep-time scale** — `timeline-scale.js` swapped for a bucketed scale;
-  the timeline itself unchanged.
+- **Deep-time scale** — built in M43b: `createCenturyScale` in
+  `timeline-scale.js`, chosen off the corpus by `crowded` in `util/window.js`,
+  with `opensOn` beside it for the century the atlas opens on. The timeline
+  itself is unchanged, as this said it would be; the graph's layout takes the
+  same scale, because its x is the timeline's and not merely the same extent.
 
 ## Site modules
 
@@ -2777,7 +2780,7 @@ no check at all rather than an empty closed set: a fork with no
 | Ancient / deep time | `timeline-scale.js`, `land-<epoch>` files, manifest | Interval with four bounds and `end: null`; single `toAstronomical()`; manifest lists land by epoch |
 | Territories ● | built in M5: `data/presences/`, `data/geo/presences/`, `schema/v1/presence.json`, rule 17, the spine's `presences`, `layers/presences.js`, `tools/import/` | `presenceType` still has three unused values for diffuse eras; `within: <presence-id>` additive on `where` is untouched |
 | Another geometry import | one file under `tools/import/`, one paragraph in `data/geo/LICENSE`, one row in `src/licensing.js`, one line in `ORIGIN_TOOLS` and one in `NC_ORIGINS` | the licence enum and the per-directory rule; shards named `<from>-<to>.json` and listed in the manifest |
-| A window of time ● | built in M6: `{ from, to }` in `state.js`, `util/window.js`, the band in `timeline.js` | either bound may be null and the views resolve it, so a deeper scale changes `timeline-scale.js` and nothing else |
+| A window of time ● | built in M6: `{ from, to }` in `state.js`, `util/window.js`, the band in `timeline.js`; the opening window and the century counts added in M43b (`data.js`'s `opens`, `resolveWindow`'s third argument) | either bound may be null and the views resolve it, so a deeper scale is `timeline-scale.js` plus the one line that chooses it; what an empty URL *opens on* is the atlas's answer and still never written to the URL |
 | Places ● | built in M9: `data/places/`, `schema/v1/place.json`, rule 18, the spine's `places`, `place` on an event, the card and `?place=` | a place has a `summary` nobody has to write and an `aliases` list, so a place that turns out to be two can be split without breaking a URL; `tools/migrate-places.mjs` is kept as the record of how the coordinates moved |
 | Actors ● | built in M4: `data/actors/`, `schema/v1/actor.json`, rule 14, the spine's `actors`, the card and the highlight | roles still free text; the manifest's `roles` is the evidence for closing the vocabulary |
 | Relations between actors ● | built in M11: `data/relations/`, `schema/v1/relation.json`, rule 19, the spine's `relations`, the actor card's groups, the form and the tools | the six types are closed and a missing one is reported rather than added; a relation has no card and no URL of its own, so giving it one later is a card file and a state field and nothing else |
