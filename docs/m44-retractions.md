@@ -78,3 +78,80 @@ needs in §5 of `docs/m44-connections.md`.
 `banco-comercial-portugues`, `portuguese-investment-bank`, `altice-portugal`,
 `nos`, `brisa-auto-estradas-de-portugal`, `semapa`, `altri`,
 `the-navigator-company`.
+
+## The fifty retractions, by class
+
+Every reason is in the record's own `retraction` block. This is the index.
+
+### Class A — the neighbour is missing (32)
+
+The record's honest edge runs to an event this atlas does not hold, and there
+is nothing else here to attach it to. This is the class the brief predicted and
+it is the largest.
+
+`first-italo-ethiopian-war`, `philippine-revolution`, `treaty-of-paris-1898`,
+`majimaji-war`, `chaco-war`, `nigerian-civil-war`, `sri-lankan-civil-war`,
+`romanian-revolution-1989`, `rwandan-civil-war`, `arusha-accords`,
+`second-congo-war`, `somali-civil-war`, `yugoslav-wars`,
+`croatian-war-of-independence`, `kosovo-war`, `dayton-agreement`,
+`1991-soviet-coup-d-etat-attempt`, `1993-russian-constitutional-crisis`,
+`budapest-memorandum`, `european-charter-for-regional-or-minority-languages`,
+`1982-lebanon-war`, `gaza-war-2008-2009`, `war-in-darfur`,
+`south-sudanese-civil-war`, `2006-thai-coup-d-etat`, `2021-myanmar-coup-d-etat`,
+`2023-nigerien-coup-d-etat`, `western-african-ebola-virus-epidemic`,
+`convention-on-preventing-and-combating-violence-against-women-and-domestic-violence`,
+`kashmir-conflict`, `sino-indian-war`, `kargil-war`.
+
+Four of these name a Portuguese record that would have wired them and does not
+exist: Portugal's Biafra policy and the São Tomé airlift; the Portuguese
+presidency of 1992 and the Cutileiro plan; the ratification of the Istanbul
+convention; Portuguese Mozambique before 1960. They are §5b of
+`docs/m44-connections.md`. Three more — the Romanian revolution, the Dayton
+agreement, the Egyptian coup of 2013 — are blocked on the twelve named
+neighbours of owner question 2 that the committed candidate list cannot reach.
+
+### Class B — it reaches this atlas, but not Portugal (15)
+
+Every honest edge available lands on a record that is itself three hops or more
+from a Portuguese event, so keeping it would have meant keeping a record that
+does not meet the round's bar. In each case the reason says which record would
+shorten the chain.
+
+`greco-turkish-war-of-1897`, `kronstadt-rebellion`,
+`population-transfer-in-the-soviet-union`, `montreux-convention`, `porajmos`,
+`warsaw-ghetto-uprising`, `continuation-war`, `lapland-war`,
+`1948-palestine-war`, `good-friday-agreement`,
+`rome-statute-of-the-international-criminal-court`,
+`treaty-establishing-a-constitution-for-europe`, `2013-egyptian-coup-d-etat`,
+`rose-revolution`, `balkan-wars`.
+
+`balkan-wars` is the one of the fifteen retracted for a different reason: the
+same import wrote records of both wars it names and this round wired both, so a
+third record of the series would argue nothing its parts do not.
+
+### Class C — the only edge available argues nothing (3)
+
+`vienna-convention-on-diplomatic-relations`,
+`vienna-convention-on-the-law-of-treaties`, `outer-space-treaty`.
+
+Three multilateral instruments whose sole possible neighbour in this atlas is
+the Charter of the United Nations, on the ground that the United Nations
+convened the conference that adopted them. That is true of a dozen records and
+argues about none of them. This is the class the brief's warning about "a
+precondition-of from every twentieth-century war to the Cold War" is about, and
+it is the class this round is most pleased to have.
+
+## The two merges
+
+`carnation-revolution` into `carnation-revolution-1974`, and `boer-wars` into
+`second-boer-war`. Neither is a retraction: both are records of something the
+atlas already held, and the `merged` status names the survivor rather than
+leaving an anonymous tombstone. Both keep their Wikidata item, so rule 21 still
+sees one item and one record of a kind.
+
+The Carnation Revolution merge is the more interesting of the two. M44a's tick
+rule tested candidate rows against `data/` by item and by label, and the
+atlas's record of 25 April carries no item and is titled "25 April", so neither
+test reached it. Deviation 670 caught exactly this for the proclamation of the
+Republic and struck the row by hand; it did not catch this one. A future import
+round wanting to avoid a third case should test the date as well as the label.
