@@ -64,3 +64,34 @@ unclassified class Q104840560: add it to data/imports/wikidata-seeds.json → cl
 unclassified class Q1127126: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
 34 Wikipedia lead(s) cached under tools/import/cache/wikipedia
 17 created, 0 enriched, 0 named, 0 left alone, 8 refused, 0 ambiguous
+import: 25 item(s) this batch, 40 left after it, 36 call(s) spent
+created event 1948-czechoslovak-coup-d-etat from Q1137957
+created event 2013-egyptian-coup-d-etat from Q13605743
+created event 2006-thai-coup-d-etat from Q860423
+created event carnation-revolution from Q193245
+created event croatian-war-of-independence from Q68969
+created event gaza-war-2008-2009 from Q170682
+created event kellogg-briand-pact from Q205073
+created event 1991-soviet-coup-d-etat-attempt from Q221382
+created event easter-rising from Q193689
+created event german-revolution-of-1918-1919 from Q170306
+created event finnish-civil-war from Q211855
+created event western-african-ebola-virus-epidemic from Q15989108
+created event bretton-woods-system from Q188532
+created event rome-statute-of-the-international-criminal-court from Q838958
+created event kronstadt-rebellion from Q208300
+created event 20-july-plot from Q105570
+created event warsaw-ghetto-uprising from Q160161
+refused Q316817: none of its classes (Q123193388, Q290178) is in data/imports/wikidata-seeds.json → classes
+refused Q208297: none of its classes (Q21994376) is in data/imports/wikidata-seeds.json → classes
+refused Q203824: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+refused Q127013: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+refused Q157648: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+refused Q152805: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+refused Q208645: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+refused Q19686631: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region
+unclassified class Q123193388: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q290178: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+unclassified class Q21994376: add it to data/imports/wikidata-seeds.json → classes or the 1 item(s) in it stay refused
+34 Wikipedia lead(s) cached under tools/import/cache/wikipedia
+17 created, 0 enriched, 0 named, 0 left alone, 8 refused, 0 ambiguous

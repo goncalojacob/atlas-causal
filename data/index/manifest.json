@@ -7,13 +7,13 @@
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-b117b81ce8f9.json",
+      "file": "index/attributes-1900-1999-853483f1cfca.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-f58e76490553.json",
+      "file": "index/attributes-2000-2099-de2c0f4ece8c.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
@@ -747,7 +747,7 @@
       "id": "death"
     },
     {
-      "count": 2,
+      "count": 3,
       "id": "disaster"
     },
     {
@@ -755,15 +755,15 @@
       "id": "election"
     },
     {
-      "count": 6,
+      "count": 10,
       "id": "revolution"
     },
     {
-      "count": 7,
+      "count": 10,
       "id": "treaty"
     },
     {
-      "count": 11,
+      "count": 13,
       "id": "war"
     }
   ],
@@ -832,7 +832,7 @@
   "counts": {
     "actors": 488,
     "edges": 219,
-    "events": 459,
+    "events": 476,
     "narratives": 1,
     "offices": 11,
     "places": 26,
@@ -860,12 +860,12 @@
     }
   ],
   "files": {
-    "citers": "index/citers-becc9b9cc42b",
-    "core": "index/core-ca4c58d1fb4f.json",
+    "citers": "index/citers-a58c785b9b2f",
+    "core": "index/core-75d37a2e615e.json",
     "presences": "index/presences-b0f8cac28d89.json",
-    "review": "index/review-6c2bad0a50c0.json",
-    "search": "index/search-fa81067b657b.json",
-    "sources": "index/sources-ed5f44bd3a4c.json"
+    "review": "index/review-ee62bb2268e1.json",
+    "search": "index/search-3d090fcc8ccd.json",
+    "sources": "index/sources-59d59d03fb4e.json"
   },
   "historyShards": [
     {
@@ -876,14 +876,14 @@
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-8adfcf9cc5bf.json",
+      "file": "index/history-event-1900-1999-c7b951c0b2ff.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
       "to": 1999
     },
     {
-      "file": "index/history-event-2000-2099-239fe25a9818.json",
+      "file": "index/history-event-2000-2099-208650b346ee.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "event",

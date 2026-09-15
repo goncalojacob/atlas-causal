@@ -997,8 +997,17 @@
         }
       ]
     },
-    "1948-palestine-war": {
+    "1948-czechoslovak-coup-d-etat": {
       "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "1948-palestine-war": {
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1117,7 +1126,7 @@
       ]
     },
     "1952-egyptian-revolution": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1685,7 +1694,7 @@
       ]
     },
     "1973-chilean-coup-d-etat": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2642,6 +2651,15 @@
         }
       ]
     },
+    "1991-soviet-coup-d-etat-attempt": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "1993-portuguese-local-elections": {
       "from": "git",
       "versions": [
@@ -2674,7 +2692,7 @@
       ]
     },
     "1993-russian-constitutional-crisis": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3111,6 +3129,15 @@
             "category"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "20-july-plot": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -4186,6 +4213,15 @@
         }
       ]
     },
+    "bretton-woods-system": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "cabral-assassinated-1973": {
       "from": "git",
       "versions": [
@@ -4265,6 +4301,15 @@
             "actors"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "carnation-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -4351,7 +4396,7 @@
       ]
     },
     "chaco-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4694,7 +4739,7 @@
       ]
     },
     "convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4853,6 +4898,15 @@
             "actors"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "croatian-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -5091,6 +5145,15 @@
             "actors"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "easter-rising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -5697,6 +5760,15 @@
         }
       ]
     },
+    "finnish-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "first-balkan-war": {
       "from": "git",
       "versions": [
@@ -5759,7 +5831,7 @@
       ]
     },
     "geneva-conference": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5768,6 +5840,15 @@
       ]
     },
     "genocide-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "german-revolution-of-1918-1919": {
       "from": "revised",
       "versions": [
         {
@@ -6325,7 +6406,7 @@
       ]
     },
     "kashmir-conflict": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6360,6 +6441,15 @@
         }
       ]
     },
+    "kellogg-briand-pact": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "korean-war": {
       "from": "git",
       "versions": [
@@ -6389,6 +6479,15 @@
     },
     "kosovo-war": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "kronstadt-rebellion": {
+      "from": "revised",
       "versions": [
         {
           "first": true,
@@ -6775,7 +6874,7 @@
       ]
     },
     "march-on-rome": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6916,7 +7015,7 @@
       ]
     },
     "montreux-convention": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7380,7 +7479,7 @@
       ]
     },
     "population-transfer-in-the-soviet-union": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7389,7 +7488,7 @@
       ]
     },
     "porajmos": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8005,6 +8104,15 @@
             "sitelinks"
           ],
           "on": "2026-09-04"
+        }
+      ]
+    },
+    "rome-statute-of-the-international-criminal-court": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -8697,7 +8805,7 @@
       ]
     },
     "treaty-of-paris": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8760,7 +8868,7 @@
       ]
     },
     "treaty-of-san-francisco": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -9052,6 +9160,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "warsaw-ghetto-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
