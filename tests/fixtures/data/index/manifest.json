@@ -1,30 +1,60 @@
 {
   "attributeShards": [
     {
-      "file": "index/attributes-1100-1199-79b242fa5543.json",
+      "file": "index/attributes-1100-1199-acd28a348da9.json",
       "from": 1100,
       "key": "1100-1199",
       "to": 1199
     },
     {
-      "file": "index/attributes-1200-1299-316d86f06fa0.json",
+      "file": "index/attributes-1200-1299-60040ce9177f.json",
       "from": 1200,
       "key": "1200-1299",
       "to": 1299
     },
     {
-      "file": "index/attributes-null-2fc444fe9879.json",
+      "file": "index/attributes-null-6a69f94abdaf.json",
       "from": null,
       "key": "null",
       "to": null
     },
     {
-      "file": "index/attributes-place-117b9b970a31.json",
+      "file": "index/attributes-place-44f33ba0712e.json",
       "from": null,
       "key": "place",
       "to": null
     }
   ],
+  "base": {
+    "grid": {
+      "columns": 6,
+      "lat": 45,
+      "lon": 60,
+      "rows": 4
+    },
+    "layers": [
+      {
+        "cells": [
+          {
+            "bytes": 651,
+            "file": "geo/base/coast/x2y2.json",
+            "key": "x2y2"
+          },
+          {
+            "bytes": 167,
+            "file": "geo/base/coast/x2y3.json",
+            "key": "x2y3"
+          }
+        ],
+        "geometry": "line",
+        "id": "coast",
+        "minZoom": 1,
+        "world": null
+      }
+    ],
+    "source": "natural-earth-10m",
+    "version": "v5.1.2"
+  },
   "categories": [
     {
       "count": 2,
@@ -78,8 +108,8 @@
   ],
   "files": {
     "citers": "index/citers-f8c97836a9ed",
-    "core": "index/core-d5e2ae0fc089.json",
-    "presences": "index/presences-0f006d2e3bf4.json",
+    "core": "index/core-4126a7c77ea8.json",
+    "presences": "index/presences-acbe704f1f89.json",
     "review": "index/review-529a25f3de7f.json",
     "search": "index/search-6418b284f92f.json",
     "sources": "index/sources-b593ceee8617.json"
@@ -372,7 +402,7 @@
     "leader",
     "signatory"
   ],
-  "schema": 7,
+  "schema": 8,
   "tenuresByOffice": {
     "fixture-office-one": [
       "fixture-tenure-one",

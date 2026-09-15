@@ -18,7 +18,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
-import { createAtlasFromCore, createAtlasFromSpine, loadCore, ATTRIBUTE_SHARD_CAP } from '../src/data.js';
+import { createAtlasFromCore, createAtlasFromSpine, loadCore, ATTRIBUTE_SHARD_CAP, INDEX_GENERATION } from '../src/data.js';
 import { buildAttributeShards, buildCore, buildSpine } from '../src/validate/core.js';
 import { ancestors, consequences, convergence, reachableBy, shortestPaths } from '../src/graph.js';
 import { FIXTURE_DATA, ROOT, presencesOnDisk, topologyOf } from './helpers.mjs';
@@ -292,8 +292,8 @@ test('a record asked for before its shard is still fetched with ?v=<revised>', a
   const { manifest: loaded, core } = await loadCore({ dataRoot: 'tests/fixtures/data/', fetchJson });
   // The graph file's own number is the manifest's, from I1 on: one generation
   // per artifact rather than two to forget to bump (data.js, D6).
-  assert.equal(loaded.schema, 7);
-  assert.equal(core.schema, 7);
+  assert.equal(loaded.schema, INDEX_GENERATION);
+  assert.equal(core.schema, INDEX_GENERATION);
   assert.match(calls[1], /^tests\/fixtures\/data\/index\/core-[0-9a-f]{12}\.json$/);
 
   const atlas = createAtlasFromCore({

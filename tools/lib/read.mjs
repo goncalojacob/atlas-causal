@@ -2,7 +2,7 @@
 // src/ is pure; everything that touches disk lives here so the same logic
 // runs in the browser against fetched files.
 
-import { readdir, readFile } from 'node:fs/promises';
+import { readdir, readFile, stat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
@@ -11,6 +11,14 @@ import { migrateRecord } from '../../src/validate/migrate.js';
 // tools read the same table, so a kind cannot have one directory in Node and
 // another in the atlas.
 import { KIND_DIRS, CONTRIBUTED_KINDS } from '../../src/kinds.js';
+// The base map's layer table and the grid it is cut on, from the import's own
+// pure half: one table, so a layer cannot be one thing on disk and another in
+// the manifest. features.mjs imports nothing but the geometry helpers, so
+// reading it here cannot make a cycle out of build-index.mjs.
+import {
+  BASE_GEO_DIR, BASE_SOURCE, BASE_VERSION, LAYERS as BASE_LAYERS,
+} from '../import/features.mjs';
+import { GRID, parseCellKey } from '../../src/map/grid.js';
 
 export { KIND_DIRS, CONTRIBUTED_KINDS };
 export const PRESENCE_GEO_DIR = 'geo/presences';
@@ -19,6 +27,9 @@ export const PRESENCE_GEO_DIR = 'geo/presences';
 // where it exists.
 export const PALETTE_FILE = 'geo/palette.json';
 export const IMPORTS_DIR = 'imports';
+// Where the base map's cells live under data/. `BASE_GEO_DIR` is the same
+// path with the `geo/` prefix the manifest writes its file names with.
+export const BASE_DIR = 'base';
 
 async function readJson(file) {
   const text = await readFile(file, 'utf8');
@@ -230,6 +241,53 @@ export async function readPresenceGeometry(dataDir, shards) {
 // with no presences has nothing to colour and the manifest says nothing.
 export function paletteFile(dataDir) {
   return existsSync(path.join(dataDir, ...PALETTE_FILE.split('/'))) ? PALETTE_FILE : null;
+}
+
+// The base map's layers, as the manifest's `base` block wants them: what is
+// on disk under data/geo/base/, and nothing else. This scans the way
+// readPresenceShards scans data/geo/presences/ — **the builder never invents
+// a file name and never names a file that is not there**, because a manifest
+// entry M37 cannot fetch is a request that 404s and a layer that silently
+// does not draw.
+//
+// `null` and not an empty block where there is no data/geo/base/ at all: an
+// absent `base` key is what says "no base map", exactly as an absent
+// `presences` key says there are none (ARCHITECTURE.md, the manifest prose).
+//
+// `bytes` per cell, so M37 can decide what to fetch without a HEAD request
+// and a reviewer reading manifest.json can see what the map costs without
+// walking a directory. They are the raw bytes; Pages serves these gzipped and
+// a reader downloads about a third (M36 review, F16g).
+export async function readBaseLayers(dataDir) {
+  const root = path.join(dataDir, 'geo', BASE_DIR);
+  if (!existsSync(root)) return null;
+  const layers = [];
+  for (const layer of BASE_LAYERS) {
+    const dir = path.join(root, layer.dir);
+    const cells = [];
+    if (existsSync(dir)) {
+      for (const name of (await readdir(dir)).sort()) {
+        if (!name.endsWith('.json')) continue;
+        const key = name.slice(0, -'.json'.length);
+        if (!parseCellKey(key)) continue;
+        cells.push({
+          key,
+          file: `${BASE_GEO_DIR}/${layer.dir}/${name}`,
+          bytes: (await stat(path.join(dir, name))).size,
+        });
+      }
+    }
+    const world = layer.world && existsSync(path.join(dataDir, ...layer.world.split('/'))) ? layer.world : null;
+    if (cells.length === 0 && world === null) continue;
+    layers.push({ id: layer.id, geometry: layer.geometry, world, minZoom: layer.minZoom, cells });
+  }
+  if (layers.length === 0) return null;
+  return {
+    source: BASE_SOURCE,
+    version: BASE_VERSION,
+    grid: { lon: GRID.lon, lat: GRID.lat, columns: GRID.columns, rows: GRID.rows },
+    layers,
+  };
 }
 
 // Land files are listed in the manifest by epoch. Only the present exists;

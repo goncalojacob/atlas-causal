@@ -3,7 +3,7 @@
 // idempotent: the same bytes on a second run over the same inputs.
 //
 //   node tools/import/naturalearth.mjs --source vendor/natural-earth/10m \
-//        [--data <dir>] [--out <dir>] [--budget] [--survey] [--check]
+//        [--data <dir>] [--out <dir>] [--budget] [--survey] [--check] [--base-only]
 //
 // This tool draws nothing. It turns the committed 10 m GeoJSON into the
 // sharded, simplified, quantised geometry M37 will read: one file for the
@@ -38,7 +38,9 @@ import { readSource } from './source.mjs';
 import { clipToBox, splitAtMeridian } from './geometry.mjs';
 import { keepRing, simplifyArc, simplifyLine } from './simplify.mjs';
 import { GRID, allCells, cellBounds } from './grid.mjs';
-import { LAYERS, PROPERTIES, kept, surveyProperties, surveyShape, zFor } from './features.mjs';
+import {
+  BASE_SOURCE, BASE_VERSION, LAYERS, PROPERTIES, kept, surveyProperties, surveyShape, zFor,
+} from './features.mjs';
 import { SEAM } from '../../src/map/projection.js';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -47,8 +49,10 @@ export const VENDOR_10M = 'vendor/natural-earth/10m';
 
 // --- what was imported, exactly ------------------------------------------
 
-export const SOURCE_ID = 'natural-earth-10m';
-export const NATURAL_EARTH_VERSION = 'v5.1.2';
+// The two the manifest's `base` block carries, kept in features.mjs so that
+// tools/lib/read.mjs can read them without importing this file.
+export const SOURCE_ID = BASE_SOURCE;
+export const NATURAL_EARTH_VERSION = BASE_VERSION;
 export const SOURCE_BASE = `https://raw.githubusercontent.com/nvkelso/natural-earth-vector/${NATURAL_EARTH_VERSION}/geojson/`;
 
 // sha256 of each file **decompressed**, taken from vendor/SHA256SUMS, which
@@ -70,12 +74,21 @@ export const SOURCE_SHA256 = Object.freeze({
 export const DECIMALS = 3;
 
 // A ring that simplification left as a sliver is a line and not an island.
-// The far level uses the second of these as well, as a floor on what is worth
-// a polygon at world scale at all: 0.01 square degrees is about 120 km², and
-// it is what holds the far coastline inside its 200 KB while Malta (0.026),
-// Bahrain (0.06) and Corvo, the smallest of the Azores, stay on the map.
+//
+// The far level needs a second, much larger floor, and it is what actually
+// decides whether the coastline fits its 200 KB: the polygon *count* is the
+// floor under the bytes, because a ring can never be fewer than four points
+// however coarse the tolerance, and the 10 m land is 6,837 polygons. At
+// 0.007 square degrees — about 85 km² — 1,471 of them survive, which is what
+// the ladder can then fit at 0.4°, and it is chosen to be the smallest floor
+// that leaves the ladder room: Malta (0.026), Bahrain (0.06), Madeira, Santa
+// Maria and Graciosa in the Azores, Santiago in Cape Verde, Barbados and
+// Bermuda are all above it, and what it drops is smaller than about 85 km² —
+// Corvo, at 17, and the Maldives' outer atolls among them. That is the price
+// of a whole world in 200 KB, and STATUS.md says so rather than the run
+// pretending 10 m costs nothing.
 export const MIN_AREA = 1e-6;
-export const FAR_MIN_AREA = 0.01;
+export const FAR_MIN_AREA = 0.007;
 
 // The ladder a level's tolerance is stepped up. "Near = full detail" cannot
 // fit the caps — at three decimals a full-detail near coast is about 7.1 MB
@@ -135,14 +148,16 @@ const polygonsOf = (geometry) => (geometry?.type === 'Polygon' ? [geometry.coord
 export function coastPolygons(sources) {
   const table = PROPERTIES.coast;
   const out = [];
+  let group = 0;
   for (const source of layerSources('coast')) {
     const collection = sources[source.file];
     if (!collection) continue;
     for (const feature of collection.features ?? []) {
+      group += 1;
       if (!kept(table, feature?.properties ?? {})) continue;
       for (const rings of polygonsOf(feature.geometry)) {
         const geometry = { type: 'Polygon', coordinates: rings };
-        out.push({ rings, z: zFor(table, feature.properties ?? {}, geometry), far: source.far });
+        out.push({ rings, group, z: zFor(table, feature.properties ?? {}, geometry), far: source.far });
       }
     }
   }
@@ -169,7 +184,11 @@ export function layerSources(id) {
 // is the contents — 10 m instead of 110 m, which puts back the small islands
 // 110 m drops.
 export function buildFar(polygons, { tolerance, decimals = DECIMALS, minArea = FAR_MIN_AREA, seam = SEAM }) {
-  const polygonRings = [];
+  // Grouped back into the source features they came from, because that is the
+  // shape land-present.json has always had — and because a Feature per
+  // polygon would cost fifty bytes of scaffolding apiece, which over the
+  // twelve hundred polygons that survive is a third of the whole cap.
+  const groups = new Map();
   let dropped = 0;
   for (const polygon of polygons) {
     if (!polygon.far) continue;
@@ -183,13 +202,17 @@ export function buildFar(polygons, { tolerance, decimals = DECIMALS, minArea = F
       const ring = keepRing(simplifyArc(hole, { tolerance, decimals }), minArea);
       if (ring) rings.push(ring);
     }
-    polygonRings.push(rings);
+    if (!groups.has(polygon.group)) groups.set(polygon.group, []);
+    groups.get(polygon.group).push(rings);
   }
   // Cut at the seam, so that nothing the map draws crosses the one meridian
   // that is the left edge of the picture and the right edge at once.
   const features = [];
-  for (const rings of polygonRings) {
-    const cut = splitAtMeridian({ type: 'Polygon', coordinates: rings }, seam, { minArea: MIN_AREA });
+  for (const [, kept3] of [...groups.entries()].sort((a, b) => a[0] - b[0])) {
+    const geometry = kept3.length === 1
+      ? { type: 'Polygon', coordinates: kept3[0] }
+      : { type: 'MultiPolygon', coordinates: kept3 };
+    const cut = splitAtMeridian(geometry, seam, { minArea: MIN_AREA });
     if (cut) features.push({ type: 'Feature', properties: {}, geometry: cut });
   }
   return { collection: { type: 'FeatureCollection', features }, dropped };
@@ -308,7 +331,9 @@ export function planImport(sources, {
       for (const feature of built.collection.features) {
         for (const rings of polygonsOf(feature.geometry)) for (const ring of rings) points += ring.length;
       }
-      return { bytes: bytesOf(text), text, points, polygons: built.collection.features.length, droppedPolygons: built.dropped };
+      let count = 0;
+      for (const feature of built.collection.features) count += polygonsOf(feature.geometry).length;
+      return { bytes: bytesOf(text), text, points, polygons: count, droppedPolygons: built.dropped };
     }, { cap: cap.far, start: farStart, ladder });
     const sourcePoints = polygons.filter((p) => p.far).reduce((n, p) => n + p.rings.reduce((m, r) => m + r.length, 0), 0);
     if (far.over) problems.push(`${layer.id}: the far level is ${far.bytes} bytes at the coarsest tolerance on the ladder, over its ${cap.far}-byte cap`);
@@ -476,6 +501,11 @@ export async function main(argv) {
   let check = false;
   let budget = false;
   let survey = false;
+  // The far coastline is data/geo/land-present.json, which the fixtures do
+  // not have one of — they borrow the real one under ?fixtures=1 — so writing
+  // the fixture base map is this run without its far level. It is also what a
+  // rerun that only wants the cells back asks for.
+  let baseOnly = false;
   for (let i = 0; i < argv.length; i += 1) {
     if (argv[i] === '--data') dataDir = path.resolve(argv[++i]);
     else if (argv[i] === '--source') sourceDir = path.resolve(argv[++i]);
@@ -483,6 +513,7 @@ export async function main(argv) {
     else if (argv[i] === '--check') check = true;
     else if (argv[i] === '--budget') budget = true;
     else if (argv[i] === '--survey') survey = true;
+    else if (argv[i] === '--base-only') baseOnly = true;
     else {
       console.error(`unknown argument ${argv[i]}`);
       return 2;
@@ -521,7 +552,10 @@ export async function main(argv) {
   }
 
   const sources = Object.fromEntries(loaded.map((source) => [source.name, source.json]));
-  const plan = planImport(sources);
+  const whole = planImport(sources);
+  const plan = baseOnly
+    ? { ...whole, files: whole.files.filter((entry) => entry.file.startsWith(`${BASE_DIR}/`)) }
+    : whole;
 
   // What the plan would come to on disk: the files it writes, plus everything
   // under data/geo/ it does not touch.

@@ -127,10 +127,10 @@ test('key order and file order in the source records do not change the bytes', a
 test('manifest names the hashed files, counts, lanes and land', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
-  // 7 since the glyph run, which moved `category` into the core: the
-  // generation goes up by one in every run that changes the index's shape
+  // 8 since M36a, which gave the manifest its `base` block: the generation
+  // goes up by one in every run that changes the index's shape
   // (index2-plan, D6).
-  assert.equal(manifest.schema, 7);
+  assert.equal(manifest.schema, 8);
   // `counts.presences` stays where it is: a count is not a file, and it is
   // what the manifest says about a dataset whether or not the file exists.
   assert.deepEqual(manifest.counts, { events: 12, edges: 10, sources: 4, actors: 4, presences: 3, places: 11, relations: 4, offices: 2, tenures: 4, narratives: 1, regions: 3 });
@@ -169,6 +169,54 @@ test('manifest names the hashed files, counts, lanes and land', async () => {
   assert.equal(builtBy['fixture-event-o'].regionMethod, 'override');
   assert.equal(Object.hasOwn(byId['fixture-event-a'], 'summary'), false, 'text stays out of the index');
   assert.deepEqual(built.unresolved, []);
+});
+
+// M36's base map. The manifest is what M37 reads to know which cells exist,
+// so the builder may never name a file that is not on disk, and a dataset
+// with none may not carry an empty block that reads as "a base map with
+// nothing in it".
+test('the manifest carries the base map that is on disk, cell by cell', async () => {
+  const built = await buildIndex(FIXTURE_DATA);
+  const manifest = JSON.parse(built.files['manifest.json']);
+  assert.equal(manifest.base.source, 'natural-earth-10m');
+  assert.equal(manifest.base.version, 'v5.1.2');
+  assert.deepEqual(manifest.base.grid, { lon: 60, lat: 45, columns: 6, rows: 4 });
+  assert.deepEqual(manifest.base.layers.map((l) => l.id), ['coast']);
+  const [coast] = manifest.base.layers;
+  // Lines, not polygons: a cut ring stroked as a ring draws a straight cobalt
+  // line across a continent at every cell border (M36 review, F1).
+  assert.equal(coast.geometry, 'line');
+  // No `world` of its own — its far level is `land`, already fetched at first
+  // paint — and a `minZoom` in `k`, the same unit as every feature's `z`.
+  assert.equal(coast.world, null);
+  assert.equal(coast.minZoom, 1);
+  assert.deepEqual(coast.cells.map((c) => c.key), ['x2y2', 'x2y3'], 'the fixture places\' box, sorted');
+  for (const cell of coast.cells) {
+    assert.equal(cell.file, `geo/base/coast/${cell.key}.json`);
+    const text = await readFile(path.join(FIXTURE_DATA, ...cell.file.split('/')), 'utf8');
+    assert.equal(cell.bytes, Buffer.byteLength(text, 'utf8'), `${cell.key} is the bytes on disk`);
+    const collection = JSON.parse(text);
+    for (const feature of collection.features) {
+      assert.ok(['LineString', 'MultiLineString'].includes(feature.geometry.type), cell.key);
+    }
+  }
+  // Twenty-two of the twenty-four cells hold nothing and are not named: M37
+  // asks for nothing that is not there.
+  assert.equal(coast.cells.length < 24, true);
+});
+
+test('a dataset with no base map carries no base key at all', async () => {
+  const dir = await tempCopyOfFixtures();
+  try {
+    await rm(path.join(dir, 'geo', 'base'), { recursive: true, force: true });
+    const manifest = JSON.parse((await buildIndex(dir)).files['manifest.json']);
+    // Absent, not empty: an absent key is what says "no base map", exactly as
+    // an absent `presences` says there are none and an absent
+    // `categoriesAllowed` says "no check".
+    assert.equal(Object.hasOwn(manifest, 'base'), false);
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
 });
 
 // The two vocabularies that live in data reach the browser through the
@@ -351,7 +399,7 @@ test('weight is in the built index and does not change between builds', async ()
 test('the manifest names the core and the attribute shards, and both are written', async () => {
   const built = await buildIndex(FIXTURE_DATA);
   const manifest = JSON.parse(built.files['manifest.json']);
-  assert.equal(manifest.schema, 7);
+  assert.equal(manifest.schema, 8);
   assert.match(manifest.files.core, /^index\/core-[0-9a-f]{12}\.json$/);
   assert.ok(Object.hasOwn(built.files, path.basename(manifest.files.core)));
   // The centuries in year order, then the two that answer no year: the places,

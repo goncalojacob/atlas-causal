@@ -41,7 +41,12 @@ async function defaultFetchJson(url, init) {
 // D6). What the number is for is the half-applied deploy: a manifest from one
 // generation beside a page from another would otherwise be read as though it
 // were the shape the page expects, silently and wrongly. It goes up by one in
-// every run that changes the index's shape — 7 since the glyph run, which
+// every run that changes the index's shape — 8 since M36a, which gave the
+// manifest a `base` block: which base-map layers there are, what shape each is
+// in, which cells of the 60x45 grid hold something and what each costs, so a
+// page from before it would draw no base map where there is one and a page
+// from after it would look for a block an older manifest has not got; 7 was
+// the glyph run, which
 // moved `category` out of the attribute shards and into the core and put the
 // categories in use in the manifest beside `roles`, so a page from before it
 // would look for a category in a shard the core now carries; 6 was I5, which
@@ -56,7 +61,7 @@ async function defaultFetchJson(url, init) {
 //
 // The graph file carries the same number rather than one of its own: two
 // numbers for one artifact is two things to forget to bump.
-export const INDEX_GENERATION = 7;
+export const INDEX_GENERATION = 8;
 // A single set, because a deploy may serve one generation while the last is
 // still in a cache; today it holds one number and it is the place to add the
 // second when that becomes true.

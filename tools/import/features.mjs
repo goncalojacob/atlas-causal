@@ -148,7 +148,9 @@ export const PROPERTIES = Object.freeze({
     id: null,
     fallback: 'area',
   }),
-  // ne_10m_rivers_lake_centerlines.geojson — ten keys, all lower case.
+  // ne_10m_rivers_lake_centerlines.geojson — ten keys, all lower case, and
+  // the one file of the seven with neither `ne_id` nor `wikidataid`: a river
+  // has no stable id to carry and M36b keys it by nothing.
   rivers: Object.freeze({
     class: 'featurecla',
     drop: null,
@@ -159,7 +161,7 @@ export const PROPERTIES = Object.freeze({
     population: null,
     elevation: null,
     wikidata: null,
-    id: 'ne_id',
+    id: null,
     fallback: 'length',
   }),
   // ne_10m_lakes.geojson — lower case, and it does carry wikidataid and ne_id.
@@ -232,6 +234,15 @@ export const PROPERTIES = Object.freeze({
 });
 
 // --- the layers this import writes ---------------------------------------
+//
+// What the manifest's `base` block says it was built from. Here and not in
+// naturalearth.mjs because tools/lib/read.mjs needs them to build the block
+// and naturalearth.mjs reads build-index.mjs, which reads read.mjs: this file
+// imports nothing but the two pure halves of the geometry, so nothing that
+// reads it can end up in a cycle.
+export const BASE_SOURCE = 'natural-earth-10m';
+export const BASE_VERSION = 'v5.1.2';
+export const BASE_GEO_DIR = 'geo/base';
 //
 // `id` is the manifest's and the directory's; `geometry` is the shape the
 // **near** level is in and is what M37 dispatches on; `world` is the far

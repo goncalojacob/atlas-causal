@@ -25,7 +25,7 @@ import { searchIndexFor } from '../src/search.js';
 import { attributeShardName, explanationShards, historyShardName, shardName } from '../src/explanations.js';
 import { licensingTable } from '../src/licensing.js';
 import { createAtlasFromSpine, expandSpine, presencesFromIndex, INDEX_GENERATION } from '../src/data.js';
-import { readRecords, readRegions, readRegionPolygons, readRoles, readCategories, readLandFiles, readPresenceShards, paletteFile } from './lib/read.mjs';
+import { readRecords, readRegions, readRegionPolygons, readRoles, readCategories, readLandFiles, readBaseLayers, readPresenceShards, paletteFile } from './lib/read.mjs';
 import { recordHistories, historyShards } from './lib/history.mjs';
 import { sitePages, ENTRY_DIR } from './lib/prerender.mjs';
 
@@ -104,6 +104,9 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   }
   const regions = prepared.regions ?? await readRegions(dataDir);
   const land = await readLandFiles(dataDir);
+  // The base map, or null where there is no data/geo/base/ at all — and then
+  // the manifest gets no `base` key, which is what says "no base map".
+  const base = await readBaseLayers(dataDir);
   // Only the three fields the manifest names: a shard list read with its
   // feature keys (which is how tools/validate.mjs reads it) carries a Set
   // that would land in the file as an empty object.
@@ -360,6 +363,15 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     tenuresByOffice: topology.tenuresByOffice ?? {},
     // Paleo-coastlines will list a year range here; the present covers all.
     land: land.map((l) => ({ file: l.file, epoch: l.epoch, from: null, to: null })),
+    // The base map of M36: which layers there are, what shape each is in,
+    // which cells of the 60x45 grid actually hold something, and what each
+    // costs. `coast` has `world: null` because its far level **is** `land`
+    // above, which loadAtlas already fetches at first paint; a second copy
+    // here would be the same coastline twice. Cells are sorted by key and
+    // `bytes` are the raw bytes on disk, so `validate --index` comparing the
+    // manifest byte for byte is what catches any non-determinism. Absent
+    // where the dataset has no data/geo/base/, exactly as `presences` is.
+    ...(base === null ? {} : { base }),
     // The territory shards, in year order. The site loads the one that
     // covers the year on the slider and nothing else.
     presenceShards,
