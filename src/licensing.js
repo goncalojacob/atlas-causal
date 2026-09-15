@@ -61,6 +61,11 @@ export const NON_COMMERCIAL = Object.freeze(
 const GEOMETRY = Object.freeze({
   'data/geo/land-present.json': ['PD'],
   'data/geo/regions.json': ['PD'],
+  // The base map (M36): Natural Earth 10 m, public domain like the other two,
+  // and **not** an NC directory. Nothing from CShapes is in it and nothing in
+  // it goes into a CShapes file; Natural Earth asks to be named nowhere, so
+  // the card and entry-page attribution line is unchanged by its arrival.
+  'data/geo/base/': ['PD'],
   'data/geo/presences/': ['CC-BY-NC-SA-4.0'],
   'data/geo/palette.json': ['CC-BY-NC-SA-4.0'],
   'data/index/': ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0'],

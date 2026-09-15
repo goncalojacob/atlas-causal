@@ -220,6 +220,18 @@
         "CC-BY-SA-4.0"
       ]
     },
+    "data/geo/base/": {
+      "attribution": [
+        {
+          "license": "PD",
+          "name": "Natural Earth",
+          "source": "https://www.naturalearthdata.com/about/terms-of-use/"
+        }
+      ],
+      "licenses": [
+        "PD"
+      ]
+    },
     "data/geo/land-present.json": {
       "attribution": [
         {

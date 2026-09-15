@@ -38,9 +38,37 @@ test('the table says of each record directory what rule 12 enforces', () => {
   // the only place their licence is written down at all.
   assert.deepEqual(rows['data/geo/presences/'].licenses, ['CC-BY-NC-SA-4.0']);
   assert.deepEqual(rows['data/geo/land-present.json'].licenses, ['PD']);
+  // The base map of M36 is Natural Earth, public domain, and **not** an NC
+  // directory: nothing from CShapes is in it and nothing in it goes into a
+  // CShapes file. The attribution is Natural Earth's, which asks for nothing.
+  assert.deepEqual(rows['data/geo/base/'].licenses, ['PD']);
+  assert.deepEqual(rows['data/geo/base/'].attribution, [
+    { license: 'PD', name: 'Natural Earth', source: 'https://www.naturalearthdata.com/about/terms-of-use/' },
+  ]);
+  assert.equal(NON_COMMERCIAL.includes('PD'), false);
   // The index is honestly two answers: it projects NC actors and presences
   // into the same files as CC BY-SA records.
   assert.deepEqual(rows['data/index/'].licenses, ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0']);
+});
+
+// The three statements of one fact: src/licensing.js, the manifest's
+// `licenses` block, and the table at the head of data/geo/LICENSE. A
+// directory that is in one and not the others is a reuser told two things.
+test('data/geo/base/ is named in the licence, the manifest and the table alike', async () => {
+  const rows = licensingTable();
+  const manifest = JSON.parse(await readFile(path.join(ROOT, 'data', 'index', 'manifest.json'), 'utf8'));
+  assert.deepEqual(manifest.licenses['data/geo/base/'], rows['data/geo/base/']);
+  const text = await readFile(path.join(ROOT, 'data', 'geo', 'LICENSE'), 'utf8');
+  assert.ok(text.includes('base/coast/*.json'), 'data/geo/LICENSE names the files');
+  assert.ok(text.includes('Public domain'), 'and says what they are under');
+  assert.ok(text.includes('1ac90796408bc6ad6911d69448485d3c4dbf2190370080368a09976e1c9f7416'), 'the sha256 of the decompressed source');
+  assert.ok(text.includes('vendor/natural-earth/10m/'), 'and where it is');
+  // "What the import changed" is what a reuser needs and what the M36 review
+  // asked for: the tolerance, and the points kept against the points there
+  // were (A3).
+  assert.ok(/simplified with Douglas-Peucker at 0\.4\s+degrees/.test(text), 'the far tolerance');
+  assert.ok(text.includes('10,787'), 'the points kept at the far level');
+  assert.ok(text.includes('446,175'), 'against the points the source has');
 });
 
 test('the attribution names the dataset data/geo/LICENSE names', async () => {

@@ -1,6 +1,6 @@
 Geometry under data/geo/ is licensed per source, file by file.
 
-Natural Earth (land-present.json, regions.json)
+Natural Earth 1:110m (regions.json)
   Public domain. Natural Earth is made with the participation of volunteers
   and is free of any licence restrictions in any way.
   https://www.naturalearthdata.com/about/terms-of-use/
@@ -11,12 +11,65 @@ Natural Earth (land-present.json, regions.json)
   110m/, with their sha256 in vendor/SHA256SUMS; the tool reads them there.
   Regeneration is reproducible with tools/build-regions.mjs.
 
+  land-present.json was one of these until M36a and is 10 m now — see the
+  paragraph below. The lane polygons of regions.json stay at 110 m: they are
+  a point-in-polygon question about which lane a place is on and nothing is
+  drawn from them but a wash.
+
   What the import changed: coordinates are Natural Earth's own, to the
   precision it publishes. Since M39a every outline is cut at 30 degrees
   west, the meridian the map is cut at (see below); nothing else is altered.
   The cut divides Greenland, which is the one landmass there, and nothing
   else: land-present.json went from 125,938 to 126,436 bytes and
   regions.json from 221,050 to 221,298.
+
+Natural Earth 10 m (land-present.json since M36a, base/coast/*.json)
+  Public domain, on the same terms as the 110 m files above, from the same
+  upstream repository at the same pinned tag:
+  https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2/geojson
+  The files are in this repository, gzipped, under vendor/natural-earth/10m/,
+  and the tool reads them there: a run has no network and Natural Earth is
+  never downloaded by one. The sha256 below is of each file **decompressed**
+  — the file as it was downloaded — which is what vendor/SHA256SUMS records
+  and what --check verifies.
+
+  ne_10m_land.geojson            10,157,965 bytes
+    1ac90796408bc6ad6911d69448485d3c4dbf2190370080368a09976e1c9f7416
+  ne_10m_minor_islands.geojson    1,320,514 bytes
+    8c933ca7a4760256bdc46408355706e39764b0fa01c160c28888b90b4faec29f
+
+  Regeneration is reproducible with
+    tools/import/naturalearth.mjs --source vendor/natural-earth/10m --check
+  which verifies both sha256 before it writes anything, and rewrites every
+  file it owns byte for byte on a second run.
+
+  What the import changed. land-present.json is no longer the 110 m
+  coastline: it is the 10 m land, simplified with Douglas-Peucker at 0.4
+  degrees — or a sixth of a ring's own extent, whichever is less, which is
+  what keeps a small island a shape and not a line — and quantized to three
+  decimals, so 10,787 of the source's 446,175 points remain. Rings smaller
+  than 0.007 square degrees, about 85 km², are dropped: 1,471 of the source's
+  6,837 polygons survive, which is what a whole world costs inside the 200 KB
+  the coastline is allowed at first paint. Malta, Bahrain, Madeira, Santa
+  Maria and Graciosa in the Azores, Santiago in Cape Verde, Barbados and
+  Bermuda are above that floor and are on this map for the first time; Corvo,
+  at about 17 km², and the Maldives' outer atolls are under it and are not.
+  The 0,0 marker Natural Earth ships as `Null island` is dropped.
+
+  base/coast/<cell>.json is the same coastline again at the near level, cut
+  on a fixed 60 by 45 degree grid of twenty-four cells and written as
+  **lines** — the shore, not the shape — because a polygon clipped to a cell
+  is filled and stroked and the cut edge would draw a straight line across a
+  continent. It is simplified at 0.015 degrees, 144,396 points of the
+  481,687 the land and the minor islands hold together, and a cell with
+  nothing in it is not written at all. Every cell is cut out of one
+  simplified geometry, so the cells come to exactly the world's coastline and
+  no two of them disagree about where the shore is.
+
+  Both levels are cut at 30 degrees west, the meridian the map is cut at, as
+  everything under data/geo/ has been since M39a. Nothing else is altered:
+  no coordinate is moved, no feature is invented, and no name is read off
+  these two files, which carry none.
 
 CShapes 2.0 (presences/*.json)
   Licence: CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/

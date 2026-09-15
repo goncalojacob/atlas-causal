@@ -87,6 +87,16 @@ for (const [query, ready, graph, times] of PAGES) {
         requests.filter((name) => name.includes('geo/regions.json')).length, 0,
         `${query} fetched the lane polygons: ${requests.join(' · ')}`,
       );
+      // M36: the base map is 2.4 MB of cells and not one byte of it is
+      // fetched before the first picture. The only coastline at first paint
+      // is `land-present.json`, which is what `manifest.land` names and what
+      // loadAtlas has always fetched; a cell is asked for when the viewport
+      // enters it and never before (M36 review, A10 — this test holds request
+      // names and not byte counts, and the measured bytes are in STATUS.md).
+      assert.equal(
+        requests.filter((name) => name.includes('geo/base/')).length, 0,
+        `${query} fetched a base map cell at first paint: ${requests.join(' · ')}`,
+      );
     });
   });
 }
