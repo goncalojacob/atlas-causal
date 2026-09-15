@@ -104,6 +104,78 @@
     },
     {
       "dissent": false,
+      "id": "1948-arab-israeli-war--1952-egyptian-revolution--caused",
+      "kind": "edge",
+      "locator": "\"1948 Arab–Israeli War\", revision 1374830770"
+    },
+    {
+      "dissent": false,
+      "id": "1948-arab-israeli-war--1952-egyptian-revolution--caused",
+      "kind": "edge",
+      "locator": "\"Egyptian revolution of 1952\", revision 1374209538"
+    },
+    {
+      "dissent": false,
+      "id": "1948-arab-israeli-war--yom-kippur-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"1948 Arab–Israeli War\", revision 1374830770"
+    },
+    {
+      "dissent": false,
+      "id": "1948-arab-israeli-war--yom-kippur-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Yom Kippur War\", revision 1373227342"
+    },
+    {
+      "dissent": false,
+      "id": "1948-czechoslovak-coup-d-etat--european-convention-on-human-rights--precondition-of",
+      "kind": "edge",
+      "locator": "\"1948 Czechoslovak coup d'état\", revision 1371034127"
+    },
+    {
+      "dissent": false,
+      "id": "1948-czechoslovak-coup-d-etat--european-convention-on-human-rights--precondition-of",
+      "kind": "edge",
+      "locator": "\"European Convention on Human Rights\", revision 1366403378"
+    },
+    {
+      "dissent": false,
+      "id": "1948-czechoslovak-coup-d-etat--nato-founding-1949--precondition-of",
+      "kind": "edge",
+      "locator": "\"1948 Czechoslovak coup d'état\", revision 1371034127"
+    },
+    {
+      "dissent": false,
+      "id": "1952-egyptian-revolution--algerian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Algerian War\", revision 1373081356"
+    },
+    {
+      "dissent": false,
+      "id": "1952-egyptian-revolution--algerian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Egyptian revolution of 1952\", revision 1374209538"
+    },
+    {
+      "dissent": false,
+      "id": "1973-chilean-coup-d-etat--1976-argentine-coup-d-etat--inspired",
+      "kind": "edge",
+      "locator": "\"1973 Chilean coup d'état\", revision 1372926646"
+    },
+    {
+      "dissent": false,
+      "id": "1973-chilean-coup-d-etat--1976-argentine-coup-d-etat--inspired",
+      "kind": "edge",
+      "locator": "\"1976 Argentine coup d'état\", revision 1370279728"
+    },
+    {
+      "dissent": false,
+      "id": "1973-chilean-coup-d-etat--25-november-1975--inspired",
+      "kind": "edge",
+      "locator": "\"1973 Chilean coup d'état\", revision 1372926646"
+    },
+    {
+      "dissent": false,
       "id": "2024-madeiran-regional-election--2025-madeiran-regional-election--caused",
       "kind": "edge",
       "locator": "\"2025 Madeiran regional election\", revision 1363880650"
@@ -113,6 +185,36 @@
       "id": "algerian-war--angola-war-begins-1961--precondition-of",
       "kind": "edge",
       "locator": "\"Algerian War\", revision 1373081356"
+    },
+    {
+      "dissent": false,
+      "id": "amsterdam-treaty--euro-adoption-1999--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Amsterdam\", revision 1352365700"
+    },
+    {
+      "dissent": false,
+      "id": "amsterdam-treaty--treaty-of-nice--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Amsterdam\", revision 1352365700"
+    },
+    {
+      "dissent": false,
+      "id": "amsterdam-treaty--treaty-of-nice--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Nice\", revision 1345303290"
+    },
+    {
+      "dissent": false,
+      "id": "arab-revolt--treaty-of-sevres--precondition-of",
+      "kind": "edge",
+      "locator": "\"Arab Revolt\", revision 1370428832"
+    },
+    {
+      "dissent": false,
+      "id": "arab-revolt--treaty-of-sevres--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Sèvres\", revision 1369307123"
     },
     {
       "dissent": false,
@@ -137,6 +239,24 @@
       "id": "boxer-rebellion--xinhai-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"Boxer Rebellion\", revision 1372943833"
+    },
+    {
+      "dissent": false,
+      "id": "bretton-woods-system--imf-agreement-1978--precondition-of",
+      "kind": "edge",
+      "locator": "\"Bretton Woods system\", revision 1374837351"
+    },
+    {
+      "dissent": false,
+      "id": "charter-of-the-united-nations--genocide-convention--precondition-of",
+      "kind": "edge",
+      "locator": "\"Charter of the United Nations\", revision 1365430628"
+    },
+    {
+      "dissent": false,
+      "id": "charter-of-the-united-nations--genocide-convention--precondition-of",
+      "kind": "edge",
+      "locator": "\"Genocide Convention\", revision 1371861623"
     },
     {
       "dissent": false,
@@ -167,6 +287,18 @@
       "id": "chinese-civil-war--korean-war--precondition-of",
       "kind": "edge",
       "locator": "\"Korean War\", revision 1371767674"
+    },
+    {
+      "dissent": false,
+      "id": "constitutionalization-attempts-in-iran--iranian-revolution--precondition-of",
+      "kind": "edge",
+      "locator": "\"Constitutionalization attempts in Iran\", revision 1354003965"
+    },
+    {
+      "dissent": false,
+      "id": "constitutionalization-attempts-in-iran--iranian-revolution--precondition-of",
+      "kind": "edge",
+      "locator": "\"Iranian Revolution\", revision 1373278840"
     },
     {
       "dissent": false,
@@ -203,6 +335,18 @@
       "id": "cuban-revolution--angola-independence-1975--precondition-of",
       "kind": "edge",
       "locator": "\"Cuban Revolution\", revision 1373305240"
+    },
+    {
+      "dissent": false,
+      "id": "easter-rising--irish-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Easter Rising\", revision 1374874334"
+    },
+    {
+      "dissent": false,
+      "id": "easter-rising--irish-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Irish Civil War\", revision 1374338052"
     },
     {
       "dissent": false,
@@ -248,6 +392,24 @@
     },
     {
       "dissent": false,
+      "id": "first-balkan-war--assassination-of-archduke-franz-ferdinand--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Balkan War\", revision 1373171791"
+    },
+    {
+      "dissent": false,
+      "id": "first-balkan-war--second-balkan-war--caused",
+      "kind": "edge",
+      "locator": "\"First Balkan War\", revision 1373171791"
+    },
+    {
+      "dissent": false,
+      "id": "first-balkan-war--second-balkan-war--caused",
+      "kind": "edge",
+      "locator": "\"Second Balkan War\", revision 1370735824"
+    },
+    {
+      "dissent": false,
       "id": "first-indochina-war--algerian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Algerian War\", revision 1373081356"
@@ -255,6 +417,18 @@
     {
       "dissent": false,
       "id": "first-indochina-war--algerian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Indochina War\", revision 1373236226"
+    },
+    {
+      "dissent": false,
+      "id": "first-indochina-war--geneva-conference--caused",
+      "kind": "edge",
+      "locator": "\"1954 Geneva Conference\", revision 1369041532"
+    },
+    {
+      "dissent": false,
+      "id": "first-indochina-war--geneva-conference--caused",
       "kind": "edge",
       "locator": "\"First Indochina War\", revision 1373236226"
     },
@@ -326,9 +500,57 @@
     },
     {
       "dissent": false,
+      "id": "geneva-conference--algerian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"1954 Geneva Conference\", revision 1369041532"
+    },
+    {
+      "dissent": false,
+      "id": "geneva-conference--algerian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Algerian War\", revision 1373081356"
+    },
+    {
+      "dissent": false,
+      "id": "geneva-conference--vietnam-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"1954 Geneva Conference\", revision 1369041532"
+    },
+    {
+      "dissent": false,
+      "id": "geneva-conference--vietnam-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Vietnam War\", revision 1373025356"
+    },
+    {
+      "dissent": false,
+      "id": "german-revolution-of-1918-1919--treaty-of-versailles--precondition-of",
+      "kind": "edge",
+      "locator": "\"German revolution of 1918–1919\", revision 1373097617"
+    },
+    {
+      "dissent": false,
+      "id": "great-depression--bretton-woods-system--precondition-of",
+      "kind": "edge",
+      "locator": "\"Bretton Woods system\", revision 1374837351"
+    },
+    {
+      "dissent": false,
+      "id": "great-depression--bretton-woods-system--precondition-of",
+      "kind": "edge",
+      "locator": "\"Great Depression\", revision 1371653684"
+    },
+    {
+      "dissent": false,
       "id": "great-depression--salazar-president-of-council-1932--enabled",
       "kind": "edge",
       "locator": "\"Great Depression\", revision 1371653684"
+    },
+    {
+      "dissent": false,
+      "id": "greek-civil-war--nato-founding-1949--precondition-of",
+      "kind": "edge",
+      "locator": "\"Greek Civil War\", revision 1374372236"
     },
     {
       "dissent": false,
@@ -374,6 +596,18 @@
     },
     {
       "dissent": false,
+      "id": "iranian-revolution--mahsa-amini-protests--precondition-of",
+      "kind": "edge",
+      "locator": "\"Iranian Revolution\", revision 1373278840"
+    },
+    {
+      "dissent": false,
+      "id": "iranian-revolution--mahsa-amini-protests--precondition-of",
+      "kind": "edge",
+      "locator": "\"Mahsa Amini protests\", revision 1372464386"
+    },
+    {
+      "dissent": false,
       "id": "katyn-massacre--warsaw-uprising--precondition-of",
       "kind": "edge",
       "locator": "\"Katyn massacre\", revision 1368830884"
@@ -383,6 +617,42 @@
       "id": "katyn-massacre--warsaw-uprising--precondition-of",
       "kind": "edge",
       "locator": "\"Warsaw Uprising\", revision 1372481662"
+    },
+    {
+      "dissent": false,
+      "id": "kellogg-briand-pact--charter-of-the-united-nations--precondition-of",
+      "kind": "edge",
+      "locator": "\"Charter of the United Nations\", revision 1365430628"
+    },
+    {
+      "dissent": false,
+      "id": "kellogg-briand-pact--charter-of-the-united-nations--precondition-of",
+      "kind": "edge",
+      "locator": "\"Kellogg–Briand Pact\", revision 1373604906"
+    },
+    {
+      "dissent": false,
+      "id": "korean-war--geneva-conference--caused",
+      "kind": "edge",
+      "locator": "\"1954 Geneva Conference\", revision 1369041532"
+    },
+    {
+      "dissent": false,
+      "id": "korean-war--geneva-conference--caused",
+      "kind": "edge",
+      "locator": "\"Korean War\", revision 1371767674"
+    },
+    {
+      "dissent": false,
+      "id": "korean-war--treaty-of-san-francisco--precondition-of",
+      "kind": "edge",
+      "locator": "\"Korean War\", revision 1371767674"
+    },
+    {
+      "dissent": false,
+      "id": "korean-war--treaty-of-san-francisco--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of San Francisco\", revision 1374408216"
     },
     {
       "dissent": false,
@@ -398,9 +668,63 @@
     },
     {
       "dissent": false,
+      "id": "maastricht-treaty--amsterdam-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"Maastricht Treaty\", revision 1360900516"
+    },
+    {
+      "dissent": false,
+      "id": "maastricht-treaty--amsterdam-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Amsterdam\", revision 1352365700"
+    },
+    {
+      "dissent": false,
       "id": "maastricht-treaty--euro-adoption-1999--precondition-of",
       "kind": "edge",
       "locator": "\"Maastricht Treaty\", revision 1360900516"
+    },
+    {
+      "dissent": false,
+      "id": "mahsa-amini-protests--2025-2026-iranian-protests--precondition-of",
+      "kind": "edge",
+      "locator": "\"2025–2026 Iranian protests\", revision 1373363187"
+    },
+    {
+      "dissent": false,
+      "id": "mahsa-amini-protests--2025-2026-iranian-protests--precondition-of",
+      "kind": "edge",
+      "locator": "\"Mahsa Amini protests\", revision 1372464386"
+    },
+    {
+      "dissent": false,
+      "id": "march-on-rome--beer-hall-putsch--inspired",
+      "kind": "edge",
+      "locator": "\"Beer Hall Putsch\", revision 1370735026"
+    },
+    {
+      "dissent": false,
+      "id": "march-on-rome--beer-hall-putsch--inspired",
+      "kind": "edge",
+      "locator": "\"March on Rome\", revision 1374461265"
+    },
+    {
+      "dissent": false,
+      "id": "march-on-rome--constitution-1933--inspired",
+      "kind": "edge",
+      "locator": "\"March on Rome\", revision 1374461265"
+    },
+    {
+      "dissent": false,
+      "id": "molotov-ribbentrop-pact--winter-war--enabled",
+      "kind": "edge",
+      "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
+    },
+    {
+      "dissent": false,
+      "id": "molotov-ribbentrop-pact--winter-war--enabled",
+      "kind": "edge",
+      "locator": "\"Winter War\", revision 1373170950"
     },
     {
       "dissent": false,
@@ -425,6 +749,12 @@
       "id": "munich-agreement--molotov-ribbentrop-pact--enabled",
       "kind": "edge",
       "locator": "\"Munich Agreement\", revision 1372429724"
+    },
+    {
+      "dissent": false,
+      "id": "october-revolution--finnish-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Finnish Civil War\", revision 1370618272"
     },
     {
       "dissent": false,
@@ -500,6 +830,18 @@
     },
     {
       "dissent": false,
+      "id": "russian-revolution-of-1905--constitutionalization-attempts-in-iran--inspired",
+      "kind": "edge",
+      "locator": "\"Constitutionalization attempts in Iran\", revision 1354003965"
+    },
+    {
+      "dissent": false,
+      "id": "russian-revolution-of-1905--constitutionalization-attempts-in-iran--inspired",
+      "kind": "edge",
+      "locator": "\"Russian Revolution of 1905\", revision 1371938345"
+    },
+    {
+      "dissent": false,
       "id": "russian-revolution-of-1905--february-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"February Revolution\", revision 1370618162"
@@ -554,6 +896,12 @@
     },
     {
       "dissent": false,
+      "id": "second-balkan-war--assassination-of-archduke-franz-ferdinand--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Balkan War\", revision 1370735824"
+    },
+    {
+      "dissent": false,
       "id": "second-boer-war--treaty-of-windsor--caused",
       "kind": "edge",
       "locator": "\"Second Boer War\", revision 1372994797"
@@ -569,6 +917,18 @@
       "id": "second-sino-japanese-war--chinese-civil-war--precondition-of",
       "kind": "edge",
       "locator": "\"Second Sino-Japanese War\", revision 1372437913"
+    },
+    {
+      "dissent": false,
+      "id": "second-sino-japanese-war--tripartite-pact--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Sino-Japanese War\", revision 1372437913"
+    },
+    {
+      "dissent": false,
+      "id": "second-sino-japanese-war--tripartite-pact--precondition-of",
+      "kind": "edge",
+      "locator": "\"Tripartite Pact\", revision 1372727349"
     },
     {
       "dissent": false,
@@ -590,9 +950,39 @@
     },
     {
       "dissent": false,
+      "id": "the-holocaust--genocide-convention--caused",
+      "kind": "edge",
+      "locator": "\"Genocide Convention\", revision 1371861623"
+    },
+    {
+      "dissent": false,
+      "id": "the-holocaust--genocide-convention--caused",
+      "kind": "edge",
+      "locator": "\"The Holocaust\", revision 1373403276"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-brest-litovsk--battle-of-the-lys-1918--enabled",
       "kind": "edge",
       "locator": "\"Treaty of Brest-Litovsk\", revision 1368334684"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-london--paris-peace-conference--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of London (1915)\", revision 1364595903"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-paris--treaty-of-rome--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Paris (1951)\", revision 1367680711"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-paris--treaty-of-rome--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Rome\", revision 1311520265"
     },
     {
       "dissent": false,
@@ -686,6 +1076,12 @@
     },
     {
       "dissent": false,
+      "id": "world-war-i--arab-revolt--enabled",
+      "kind": "edge",
+      "locator": "\"Arab Revolt\", revision 1370428832"
+    },
+    {
+      "dissent": false,
       "id": "world-war-i--armenian-genocide--enabled",
       "kind": "edge",
       "locator": "\"Armenian genocide\", revision 1367030542"
@@ -698,13 +1094,97 @@
     },
     {
       "dissent": false,
+      "id": "world-war-i--easter-rising--enabled",
+      "kind": "edge",
+      "locator": "\"Easter Rising\", revision 1374874334"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--finnish-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Finnish Civil War\", revision 1370618272"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--german-revolution-of-1918-1919--caused",
+      "kind": "edge",
+      "locator": "\"German revolution of 1918–1919\", revision 1373097617"
+    },
+    {
+      "dissent": false,
       "id": "world-war-i--germany-declares-war-1916--precondition-of",
       "kind": "edge",
       "locator": "\"World War I\", revision 1372979664"
     },
     {
       "dissent": false,
+      "id": "world-war-i--sayfo--enabled",
+      "kind": "edge",
+      "locator": "\"Sayfo\", revision 1370631734"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--20-july-plot--caused",
+      "kind": "edge",
+      "locator": "\"20 July plot\", revision 1374938720"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--20-july-plot--caused",
+      "kind": "edge",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "dissent": false,
       "id": "world-war-ii--azores-agreement-1943--precondition-of",
+      "kind": "edge",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados--caused",
+      "kind": "edge",
+      "locator": "\"Convention Relating to the Status of Refugees\", revision 1371612673"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados--caused",
+      "kind": "edge",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--treaty-of-san-francisco--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of San Francisco\", revision 1374408216"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--treaty-of-san-francisco--caused",
+      "kind": "edge",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--tripartite-pact--caused",
+      "kind": "edge",
+      "locator": "\"Tripartite Pact\", revision 1372727349"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--tripartite-pact--caused",
+      "kind": "edge",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--winter-war--enabled",
+      "kind": "edge",
+      "locator": "\"Winter War\", revision 1373170950"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--winter-war--enabled",
       "kind": "edge",
       "locator": "\"World War II\", revision 1372726772"
     },

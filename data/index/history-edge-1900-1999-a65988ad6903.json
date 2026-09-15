@@ -146,6 +146,42 @@
         }
       ]
     },
+    "1948-arab-israeli-war--1952-egyptian-revolution--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "1948-arab-israeli-war--yom-kippur-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "1948-czechoslovak-coup-d-etat--european-convention-on-human-rights--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "1948-czechoslovak-coup-d-etat--nato-founding-1949--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "1949-portuguese-presidential-election--delgado-candidacy-1958--inspired": {
       "from": "git",
       "versions": [
@@ -159,6 +195,15 @@
             "review"
           ],
           "on": "2026-09-04"
+        }
+      ]
+    },
+    "1952-egyptian-revolution--algerian-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -239,6 +284,24 @@
             "review"
           ],
           "on": "2026-09-04"
+        }
+      ]
+    },
+    "1973-chilean-coup-d-etat--1976-argentine-coup-d-etat--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "1973-chilean-coup-d-etat--25-november-1975--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -498,6 +561,24 @@
         }
       ]
     },
+    "amsterdam-treaty--euro-adoption-1999--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "amsterdam-treaty--treaty-of-nice--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "angola-independence-1975--cplp-founding-1996--precondition-of": {
       "from": "git",
       "versions": [
@@ -594,6 +675,15 @@
         }
       ]
     },
+    "arab-revolt--treaty-of-sevres--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "assassination-of-archduke-franz-ferdinand--world-war-i--caused": {
       "from": "git",
       "versions": [
@@ -655,6 +745,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "bretton-woods-system--imf-agreement-1978--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -850,6 +949,15 @@
         }
       ]
     },
+    "charter-of-the-united-nations--genocide-convention--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "charter-of-the-united-nations--international-covenant-on-civil-and-political-rights--precondition-of": {
       "from": "git",
       "versions": [
@@ -975,6 +1083,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "constitution-1933--national-syndicalists-banned-1934--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -1170,6 +1287,15 @@
         }
       ]
     },
+    "constitutionalization-attempts-in-iran--iranian-revolution--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "coup-28-may-1926--1928-portuguese-presidential-election--caused": {
       "from": "git",
       "versions": [
@@ -1327,6 +1453,15 @@
             "review"
           ],
           "on": "2026-09-04"
+        }
+      ]
+    },
+    "easter-rising--irish-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -1522,6 +1657,24 @@
         }
       ]
     },
+    "first-balkan-war--assassination-of-archduke-franz-ferdinand--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "first-balkan-war--second-balkan-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "first-indochina-war--algerian-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -1538,6 +1691,15 @@
         }
       ]
     },
+    "first-indochina-war--geneva-conference--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "first-indochina-war--vietnam-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -1551,6 +1713,33 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "geneva-conference--algerian-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "geneva-conference--vietnam-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "german-revolution-of-1918-1919--treaty-of-versailles--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -1586,6 +1775,15 @@
         }
       ]
     },
+    "great-depression--bretton-woods-system--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "great-depression--salazar-president-of-council-1932--enabled": {
       "from": "git",
       "versions": [
@@ -1599,6 +1797,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "greek-civil-war--nato-founding-1949--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -1826,6 +2033,15 @@
         }
       ]
     },
+    "iranian-revolution--mahsa-amini-protests--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "katyn-massacre--warsaw-uprising--precondition-of": {
       "from": "git",
       "versions": [
@@ -1839,6 +2055,33 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "kellogg-briand-pact--charter-of-the-united-nations--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "korean-war--geneva-conference--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "korean-war--treaty-of-san-francisco--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -1922,6 +2165,15 @@
         }
       ]
     },
+    "maastricht-treaty--amsterdam-treaty--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "maastricht-treaty--euro-adoption-1999--precondition-of": {
       "from": "git",
       "versions": [
@@ -1935,6 +2187,33 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "march-on-rome--beer-hall-putsch--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "march-on-rome--constitution-1933--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "molotov-ribbentrop-pact--winter-war--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -2050,6 +2329,15 @@
         }
       ]
     },
+    "nationalisations-1975--edp-created-1976--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "nationalisations-1975--imf-agreement-1978--precondition-of": {
       "from": "git",
       "versions": [
@@ -2095,6 +2383,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "october-revolution--finnish-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -2306,6 +2603,15 @@
         }
       ]
     },
+    "republic-proclaimed-1910--universities-of-lisbon-and-porto-1911--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "revolt-14-may-1915--1915-portuguese-legislative-election--caused": {
       "from": "git",
       "versions": [
@@ -2335,6 +2641,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "russian-revolution-of-1905--constitutionalization-attempts-in-iran--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -2434,6 +2749,15 @@
         }
       ]
     },
+    "second-balkan-war--assassination-of-archduke-franz-ferdinand--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "second-sino-japanese-war--chinese-civil-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -2447,6 +2771,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "second-sino-japanese-war--tripartite-pact--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -2530,6 +2863,15 @@
         }
       ]
     },
+    "the-holocaust--genocide-convention--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "treaty-of-accession-1985--eec-accession-1986--precondition-of": {
       "from": "git",
       "versions": [
@@ -2559,6 +2901,24 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-london--paris-peace-conference--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "treaty-of-paris--treaty-of-rome--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -2690,6 +3050,15 @@
         }
       ]
     },
+    "world-war-i--arab-revolt--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "world-war-i--armenian-genocide--enabled": {
       "from": "git",
       "versions": [
@@ -2703,6 +3072,33 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "world-war-i--easter-rising--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "world-war-i--finnish-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "world-war-i--german-revolution-of-1918-1919--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -2722,6 +3118,24 @@
         }
       ]
     },
+    "world-war-i--sayfo--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "world-war-ii--20-july-plot--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "world-war-ii--azores-agreement-1943--precondition-of": {
       "from": "git",
       "versions": [
@@ -2735,6 +3149,42 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "world-war-ii--convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "world-war-ii--treaty-of-san-francisco--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "world-war-ii--tripartite-pact--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "world-war-ii--winter-war--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },

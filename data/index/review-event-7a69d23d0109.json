@@ -420,6 +420,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "1948-arab-israeli-war",
       "kind": "event",
       "origin": {
@@ -447,6 +448,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "1948-czechoslovak-coup-d-etat",
       "kind": "event",
       "origin": {
@@ -461,33 +463,6 @@
       "revised": null,
       "status": "active",
       "title": "1948 Czechoslovak coup d'état"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "1948-palestine-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "1948 Palestine war"
     },
     {
       "authors": [
@@ -564,6 +539,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "1952-egyptian-revolution",
       "kind": "event",
       "origin": {
@@ -741,6 +717,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "1973-chilean-coup-d-etat",
       "kind": "event",
       "origin": {
@@ -841,6 +818,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 1,
       "id": "1976-argentine-coup-d-etat",
       "kind": "event",
       "origin": {
@@ -1119,33 +1097,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "1982-lebanon-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "1982 Lebanon War"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -1288,59 +1239,6 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "1991 Portuguese legislative election"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "1991-soviet-coup-d-etat-attempt",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "1991 Soviet coup d'état attempt"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "revolution",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "1993-russian-constitutional-crisis",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "1993 Russian constitutional crisis"
     },
     {
       "authors": [
@@ -1490,6 +1388,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 1,
       "id": "20-july-plot",
       "kind": "event",
       "origin": {
@@ -1682,33 +1581,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "revolution",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "2006-thai-coup-d-etat",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "2006 Thai coup d'état"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -1854,33 +1726,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "revolution",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "2013-egyptian-coup-d-etat",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "2013 Egyptian coup d'état"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -1910,33 +1755,6 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "2014 Portuguese Socialist Party prime ministerial primary"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "revolution",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "2021-myanmar-coup-d-etat",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "2021 Myanmar coup d'état"
     },
     {
       "authors": [
@@ -2053,33 +1871,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "revolution",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "2023-nigerien-coup-d-etat",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "2023 Nigerien coup d'état"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -2128,7 +1919,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "2025-2026-iranian-protests",
       "kind": "event",
       "origin": {
@@ -2196,7 +1987,7 @@
         "telo-2007-historia-contemporanea"
       ],
       "created": "2026-09-02",
-      "degree": 4,
+      "degree": 5,
       "id": "25-november-1975",
       "kind": "event",
       "origin": {
@@ -2227,7 +2018,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 4,
       "id": "algerian-war",
       "kind": "event",
       "origin": {
@@ -2281,6 +2072,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 3,
       "id": "amsterdam-treaty",
       "kind": "event",
       "origin": {
@@ -2357,6 +2149,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "arab-revolt",
       "kind": "event",
       "origin": {
@@ -2411,32 +2204,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "arusha-accords",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Arusha Accords"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -2449,7 +2216,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 3,
       "id": "assassination-of-archduke-franz-ferdinand",
       "kind": "event",
       "origin": {
@@ -2517,32 +2284,6 @@
       "revised": null,
       "status": "active",
       "title": "Anglo-Portuguese agreement on Azores bases"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "balkan-wars",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Balkan Wars"
     },
     {
       "authors": [
@@ -2656,7 +2397,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "beer-hall-putsch",
       "kind": "event",
       "origin": {
@@ -2701,33 +2442,6 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "Resolution of Banco Espírito Santo"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "boer-wars",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Boer Wars"
     },
     {
       "authors": [
@@ -2832,6 +2546,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "bretton-woods-system",
       "kind": "event",
       "origin": {
@@ -2885,32 +2600,6 @@
       "authors": [
         {
           "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "budapest-memorandum",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Budapest Memorandum"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -2956,33 +2645,6 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "Marcelo Caetano succeeds Salazar"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "revolution",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "carnation-revolution",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Carnation Revolution"
     },
     {
       "authors": [
@@ -3043,33 +2705,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "chaco-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Chaco War"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -3083,7 +2718,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 4,
       "id": "charter-of-the-united-nations",
       "kind": "event",
       "origin": {
@@ -3197,7 +2832,7 @@
         "meneses-2009-salazar"
       ],
       "created": "2026-09-02",
-      "degree": 4,
+      "degree": 6,
       "id": "constitution-1933",
       "kind": "event",
       "origin": {
@@ -3304,6 +2939,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "constitutionalization-attempts-in-iran",
       "kind": "event",
       "origin": {
@@ -3326,37 +2962,11 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
-      "category": "war",
       "cites": [
         "wikidata"
       ],
       "created": "2026-09-15",
-      "id": "continuation-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Continuation War"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
+      "degree": 1,
       "id": "convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados",
       "kind": "event",
       "origin": {
@@ -3371,33 +2981,6 @@
       "revised": null,
       "status": "active",
       "title": "Convenção das Nações Unidas relativa ao Estatuto dos Refugiados"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "treaty",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "convention-on-preventing-and-combating-violence-against-women-and-domestic-violence",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Convention on preventing and combating violence against women and domestic violence"
     },
     {
       "authors": [
@@ -3651,33 +3234,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "croatian-war-of-independence",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Croatian War of Independence"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -3707,32 +3263,6 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "Cuban Revolution"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "dayton-agreement",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Dayton Agreement"
     },
     {
       "authors": [
@@ -3872,6 +3402,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "easter-rising",
       "kind": "event",
       "origin": {
@@ -3920,6 +3451,35 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "Eastern Front"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "telo-2007-historia-contemporanea",
+        "maxwell-1995-making-of-portuguese-democracy"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "edp-created-1976",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The year is 1976 and the run is sure of it; the day and the decree-law number are not written here because this run could not point at them in a source it has read. Check the Diário da República and set when.date before signing.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The creation of EDP"
     },
     {
       "authors": [
@@ -4048,7 +3608,7 @@
         "telo-2007-historia-contemporanea"
       ],
       "created": "2026-09-02",
-      "degree": 5,
+      "degree": 6,
       "id": "euro-adoption-1999",
       "kind": "event",
       "origin": {
@@ -4100,33 +3660,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "treaty",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "european-charter-for-regional-or-minority-languages",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "European Charter for Regional or Minority Languages"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -4139,7 +3672,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "european-convention-on-human-rights",
       "kind": "event",
       "origin": {
@@ -4288,6 +3821,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "finnish-civil-war",
       "kind": "event",
       "origin": {
@@ -4315,6 +3849,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "first-balkan-war",
       "kind": "event",
       "origin": {
@@ -4347,7 +3882,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "first-indochina-war",
       "kind": "event",
       "origin": {
@@ -4363,33 +3898,6 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "First Indochina War"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "first-italo-ethiopian-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "First Italo-Ethiopian War"
     },
     {
       "authors": [
@@ -4500,38 +4008,12 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
-      "category": "war",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "gaza-war-2008-2009",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Gaza War (2008–2009)"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
       "category": "treaty",
       "cites": [
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 4,
       "id": "geneva-conference",
       "kind": "event",
       "origin": {
@@ -4558,6 +4040,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "genocide-convention",
       "kind": "event",
       "origin": {
@@ -4613,6 +4096,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "german-revolution-of-1918-1919",
       "kind": "event",
       "origin": {
@@ -4681,32 +4165,6 @@
       "authors": [
         {
           "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "good-friday-agreement",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Good Friday Agreement"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -4750,7 +4208,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "great-depression",
       "kind": "event",
       "origin": {
@@ -4774,37 +4232,11 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
-      "category": "war",
       "cites": [
         "wikidata"
       ],
       "created": "2026-09-15",
-      "id": "greco-turkish-war-of-1897",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Greco-Turkish War of 1897"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
+      "degree": 1,
       "id": "greek-civil-war",
       "kind": "event",
       "origin": {
@@ -5046,7 +4478,7 @@
         "reis-2013-portuguese-slump"
       ],
       "created": "2026-09-02",
-      "degree": 3,
+      "degree": 4,
       "id": "imf-agreement-1978",
       "kind": "event",
       "origin": {
@@ -5178,7 +4610,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 4,
       "id": "iranian-revolution",
       "kind": "event",
       "origin": {
@@ -5240,6 +4672,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 1,
       "id": "irish-civil-war",
       "kind": "event",
       "origin": {
@@ -5254,60 +4687,6 @@
       "revised": null,
       "status": "active",
       "title": "Irish Civil War"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "kargil-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Kargil War"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "kashmir-conflict",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Kashmir conflict"
     },
     {
       "authors": [
@@ -5355,6 +4734,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 1,
       "id": "kellogg-briand-pact",
       "kind": "event",
       "origin": {
@@ -5387,7 +4767,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 3,
       "id": "korean-war",
       "kind": "event",
       "origin": {
@@ -5403,86 +4783,6 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "Korean War"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "kosovo-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Kosovo War"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "kronstadt-rebellion",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Kronstadt rebellion"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "lapland-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Lapland War"
     },
     {
       "authors": [
@@ -5801,7 +5101,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "maastricht-treaty",
       "kind": "event",
       "origin": {
@@ -5856,6 +5156,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "mahsa-amini-protests",
       "kind": "event",
       "origin": {
@@ -5870,32 +5171,6 @@
       "revised": null,
       "status": "active",
       "title": "Mahsa Amini protests"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "majimaji-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Majimaji War"
     },
     {
       "authors": [
@@ -5967,6 +5242,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "march-on-rome",
       "kind": "event",
       "origin": {
@@ -6026,7 +5302,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "molotov-ribbentrop-pact",
       "kind": "event",
       "origin": {
@@ -6099,32 +5375,6 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "The Montenegro government takes office"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "montreux-convention",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Montreux Convention"
     },
     {
       "authors": [
@@ -6228,11 +5478,40 @@
         }
       ],
       "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "national-syndicalists-banned-1934",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The year is 1934 and the run is sure of it; the day and the instrument are not written here because this run could not point at them in a source it has read. Check the Diário do Governo and set when.date before signing.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The ban on the National Syndicalists"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "maxwell-1995-making-of-portuguese-democracy",
         "telo-2007-historia-contemporanea"
       ],
       "created": "2026-09-02",
-      "degree": 4,
+      "degree": 5,
       "id": "nationalisations-1975",
       "kind": "event",
       "origin": {
@@ -6257,7 +5536,7 @@
         "costa-pinto-2003-contemporary-portugal"
       ],
       "created": "2026-09-02",
-      "degree": 3,
+      "degree": 5,
       "id": "nato-founding-1949",
       "kind": "event",
       "origin": {
@@ -6269,32 +5548,6 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "Portugal signs the North Atlantic Treaty"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "nigerian-civil-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Nigerian Civil War"
     },
     {
       "authors": [
@@ -6369,7 +5622,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "october-revolution",
       "kind": "event",
       "origin": {
@@ -6425,32 +5678,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "outer-space-treaty",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Outer Space Treaty"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -6463,7 +5690,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "paris-peace-conference",
       "kind": "event",
       "origin": {
@@ -6513,33 +5740,6 @@
       "authors": [
         {
           "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "philippine-revolution",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Philippine Revolution"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -6564,58 +5764,6 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "Pimenta de Castro's authoritarian government"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "population-transfer-in-the-soviet-union",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "population transfer in the Soviet Union"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "porajmos",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Porajmos"
     },
     {
       "authors": [
@@ -6749,7 +5897,7 @@
         "ramos-2009-historia-de-portugal"
       ],
       "created": "2026-09-02",
-      "degree": 5,
+      "degree": 6,
       "id": "republic-proclaimed-1910",
       "kind": "event",
       "origin": {
@@ -6786,85 +5934,6 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "The revolt of 14 May restores the Democrats"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "romanian-revolution-1989",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Romanian Revolution (1989)"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "treaty",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "rome-statute-of-the-international-criminal-court",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Rome Statute of the International Criminal Court"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "rose-revolution",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Rose Revolution"
     },
     {
       "authors": [
@@ -6917,7 +5986,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "russian-revolution-of-1905",
       "kind": "event",
       "origin": {
@@ -7001,32 +6070,6 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "Russo-Ukrainian war"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "rwandan-civil-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Rwandan Civil War"
     },
     {
       "authors": [
@@ -7117,6 +6160,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 1,
       "id": "sayfo",
       "kind": "event",
       "origin": {
@@ -7210,6 +6254,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "second-balkan-war",
       "kind": "event",
       "origin": {
@@ -7266,33 +6311,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "second-congo-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Second Congo War"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -7305,7 +6323,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "second-sino-japanese-war",
       "kind": "event",
       "origin": {
@@ -7379,33 +6397,6 @@
       "authors": [
         {
           "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "sino-indian-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Sino-Indian War"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -7430,58 +6421,6 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "Mário Soares elected president"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "somali-civil-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Somali Civil War"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "south-sudanese-civil-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "South Sudanese Civil War"
     },
     {
       "authors": [
@@ -7549,32 +6488,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "sri-lankan-civil-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Sri Lankan civil war"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -7587,7 +6500,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "the-holocaust",
       "kind": "event",
       "origin": {
@@ -7603,33 +6516,6 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "The Holocaust"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "treaty",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "treaty-establishing-a-constitution-for-europe",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Treaty establishing a Constitution for Europe"
     },
     {
       "authors": [
@@ -7784,6 +6670,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 1,
       "id": "treaty-of-london",
       "kind": "event",
       "origin": {
@@ -7811,6 +6698,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 1,
       "id": "treaty-of-nice",
       "kind": "event",
       "origin": {
@@ -7838,6 +6726,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 1,
       "id": "treaty-of-paris",
       "kind": "event",
       "origin": {
@@ -7852,32 +6741,6 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Paris"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "treaty-of-paris-1898",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Treaty of Paris (1898)"
     },
     {
       "authors": [
@@ -7932,7 +6795,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "treaty-of-rome",
       "kind": "event",
       "origin": {
@@ -7960,6 +6823,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "treaty-of-san-francisco",
       "kind": "event",
       "origin": {
@@ -7992,7 +6856,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "treaty-of-sevres",
       "kind": "event",
       "origin": {
@@ -8060,7 +6924,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "treaty-of-versailles",
       "kind": "event",
       "origin": {
@@ -8127,6 +6991,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "tripartite-pact",
       "kind": "event",
       "origin": {
@@ -8294,53 +7159,26 @@
       "authors": [
         {
           "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "wikidata"
+        "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
       ],
       "created": "2026-09-15",
-      "id": "vienna-convention-on-diplomatic-relations",
+      "degree": 1,
+      "id": "universities-of-lisbon-and-porto-1911",
       "kind": "event",
       "origin": {
-        "tool": "wikidata"
+        "tool": "assistant"
       },
       "review": {
-        "flags": [
-          "imported-facts"
-        ],
         "status": "draft"
       },
       "revised": null,
       "status": "active",
-      "title": "Vienna Convention on Diplomatic Relations"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "vienna-convention-on-the-law-of-treaties",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Vienna Convention on the Law of Treaties"
+      "title": "The decree founding the universities of Lisbon and Porto"
     },
     {
       "authors": [
@@ -8359,7 +7197,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "vietnam-war",
       "kind": "event",
       "origin": {
@@ -8449,58 +7287,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "war-in-darfur",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "War in Darfur"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "warsaw-ghetto-uprising",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Warsaw Ghetto Uprising"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -8539,38 +7325,12 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
-      "category": "disaster",
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "western-african-ebola-virus-epidemic",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Western African Ebola virus epidemic"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
       "category": "war",
       "cites": [
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "winter-war",
       "kind": "event",
       "origin": {
@@ -8632,7 +7392,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 8,
       "id": "world-war-i",
       "kind": "event",
       "origin": {
@@ -8668,7 +7428,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 8,
       "id": "world-war-ii",
       "kind": "event",
       "origin": {
@@ -8731,7 +7491,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "yom-kippur-war",
       "kind": "event",
       "origin": {
@@ -8781,530 +7541,12 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "Young Turk Revolution of 1908"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata"
-      ],
-      "created": "2026-09-15",
-      "id": "yugoslav-wars",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Yugoslav Wars"
     }
   ],
   "schema": 1,
   "warnings": [
     {
-      "id": "1948-arab-israeli-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1948-czechoslovak-coup-d-etat",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1948-palestine-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1952-egyptian-revolution",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1973-chilean-coup-d-etat",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1976-argentine-coup-d-etat",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1982-lebanon-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1991-soviet-coup-d-etat-attempt",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1993-russian-constitutional-crisis",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "20-july-plot",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2006-thai-coup-d-etat",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2013-egyptian-coup-d-etat",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2021-myanmar-coup-d-etat",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2023-nigerien-coup-d-etat",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "amsterdam-treaty",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "arab-revolt",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "arusha-accords",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "balkan-wars",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "boer-wars",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "bretton-woods-system",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "budapest-memorandum",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "carnation-revolution",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "chaco-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "constitutionalization-attempts-in-iran",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "continuation-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "convention-on-preventing-and-combating-violence-against-women-and-domestic-violence",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "croatian-war-of-independence",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "dayton-agreement",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "easter-rising",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "european-charter-for-regional-or-minority-languages",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "finnish-civil-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "first-balkan-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "first-italo-ethiopian-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "gaza-war-2008-2009",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "geneva-conference",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "genocide-convention",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "german-revolution-of-1918-1919",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "good-friday-agreement",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "greco-turkish-war-of-1897",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "greek-civil-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "iberian-blackout-2025",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "irish-civil-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "kargil-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "kashmir-conflict",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "kellogg-briand-pact",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "kosovo-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "kronstadt-rebellion",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "lapland-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "mahsa-amini-protests",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "majimaji-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "march-on-rome",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "montreux-convention",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "nigerian-civil-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "outer-space-treaty",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "philippine-revolution",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "population-transfer-in-the-soviet-union",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "porajmos",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "romanian-revolution-1989",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "rome-statute-of-the-international-criminal-court",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "rose-revolution",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "rwandan-civil-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "sayfo",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "second-balkan-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "second-congo-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "sino-indian-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "somali-civil-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "south-sudanese-civil-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "sri-lankan-civil-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-establishing-a-constitution-for-europe",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-london",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-nice",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-paris",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-paris-1898",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-san-francisco",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "tripartite-pact",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "vienna-convention-on-diplomatic-relations",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "vienna-convention-on-the-law-of-treaties",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "war-in-darfur",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "warsaw-ghetto-uprising",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "western-african-ebola-virus-epidemic",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "winter-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "yugoslav-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

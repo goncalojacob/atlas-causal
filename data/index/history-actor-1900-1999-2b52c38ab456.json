@@ -1442,6 +1442,14 @@
             "sitelinks"
           ],
           "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -3457,6 +3465,14 @@
             "sitelinks"
           ],
           "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -5420,6 +5436,14 @@
             "sitelinks"
           ],
           "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },

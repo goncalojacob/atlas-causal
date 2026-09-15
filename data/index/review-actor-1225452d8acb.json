@@ -1056,6 +1056,40 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-08",
+      "degree": 1,
+      "id": "energias-de-portugal",
+      "kind": "actor",
+      "names": [
+        "Energias de Portugal",
+        "EDP Group",
+        "EDP"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m41-retracted",
+          "m44b-reinstated"
+        ],
+        "note": "Reinstated in M44b. The M41b retraction said this actor would need an event for the creation of EDP in 1976 or for the nationalisation of electricity. edp-created-1976 is the first of those and names it with the role institution. The retraction block is deleted (A11, rule 27) and its reason is copied verbatim into docs/m44-retractions.md under Reinstated, in the same commit, so the account of the withdrawal survives the undoing of it.",
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -1064,7 +1098,7 @@
         "costa-pinto-2003-contemporary-portugal"
       ],
       "created": "2026-09-02",
-      "degree": 31,
+      "degree": 32,
       "id": "estado-novo",
       "kind": "actor",
       "names": [
@@ -1338,7 +1372,7 @@
         "ramos-2009-historia-de-portugal"
       ],
       "created": "2026-09-02",
-      "degree": 14,
+      "degree": 15,
       "id": "first-portuguese-republic",
       "kind": "actor",
       "names": [
@@ -2595,6 +2629,40 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-08",
+      "degree": 1,
+      "id": "national-syndicalists",
+      "kind": "actor",
+      "names": [
+        "National Syndicalists",
+        "Movimento Nacional-Sindicalista",
+        "National Syndicalists (Portugal)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m41-retracted",
+          "m44b-reinstated"
+        ],
+        "note": "Reinstated in M44b. The M41b retraction said this actor would need a record of the ban, of the exile of Rolao Preto or of the revolt of 1935, and called it the retraction here most worth undoing. national-syndicalists-banned-1934 is the first of those and names it with the role target. The retraction block is deleted (A11, rule 27) and its reason is copied verbatim into docs/m44-retractions.md under Reinstated, in the same commit.",
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -3809,7 +3877,7 @@
         "rosas-2012-salazar-e-o-poder"
       ],
       "created": "2026-09-02",
-      "degree": 16,
+      "degree": 17,
       "id": "salazar",
       "kind": "actor",
       "names": [
@@ -4118,7 +4186,7 @@
         "costa-pinto-2003-contemporary-portugal"
       ],
       "created": "2026-09-02",
-      "degree": 34,
+      "degree": 35,
       "id": "third-portuguese-republic",
       "kind": "actor",
       "names": [
@@ -4149,7 +4217,7 @@
         "costa-pinto-2003-contemporary-portugal"
       ],
       "created": "2026-09-04",
-      "degree": 4,
+      "degree": 5,
       "id": "uniao-nacional",
       "kind": "actor",
       "names": [
@@ -4231,6 +4299,39 @@
         "status": "draft"
       },
       "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-08",
+      "degree": 1,
+      "id": "university-of-porto",
+      "kind": "actor",
+      "names": [
+        "University of Porto",
+        "Universidade do Porto"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m41-retracted",
+          "m44b-reinstated"
+        ],
+        "note": "Reinstated in M44b. The M41b retraction said this actor would need a record of the decree of 22 March 1911, and universities-of-lisbon-and-porto-1911 is that record: the actor is named in it with the role institution. The retraction block is deleted because rule 27 makes a retraction on a non-retracted record an error, and its reason is copied verbatim into docs/m44-retractions.md under the heading Reinstated, in the same commit, so that the account of the withdrawal survives the undoing of it.",
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
       "status": "active"
     },
     {

@@ -408,6 +408,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -901,6 +909,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -1641,6 +1657,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -1921,6 +1945,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -2564,6 +2596,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -2979,6 +3019,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -3710,6 +3758,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -3823,6 +3879,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -3931,6 +3995,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -4160,6 +4232,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -4168,6 +4248,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]

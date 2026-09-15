@@ -80,6 +80,12 @@
     },
     {
       "dissent": false,
+      "id": "1973-chilean-coup-d-etat--25-november-1975--inspired",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
       "id": "1973-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
       "kind": "edge",
       "locator": null
@@ -188,6 +194,12 @@
     },
     {
       "dissent": false,
+      "id": "nationalisations-1975--edp-created-1976--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
       "id": "portugal-e-o-futuro-1974--carnation-revolution-1974--enabled",
       "kind": "edge",
       "locator": null
@@ -249,6 +261,12 @@
     {
       "dissent": false,
       "id": "eanes-elected-1976",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "edp-created-1976",
       "kind": "event",
       "locator": null
     },

@@ -236,6 +236,12 @@
     },
     {
       "dissent": false,
+      "id": "1948-czechoslovak-coup-d-etat--nato-founding-1949--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
       "id": "1979-portuguese-legislative-election--constitutional-revision-1982--enabled",
       "kind": "edge",
       "locator": null
@@ -320,6 +326,12 @@
     },
     {
       "dissent": false,
+      "id": "amsterdam-treaty--euro-adoption-1999--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
       "id": "angola-independence-1975--cplp-founding-1996--precondition-of",
       "kind": "edge",
       "locator": null
@@ -327,6 +339,12 @@
     {
       "dissent": false,
       "id": "azores-agreement-1943--nato-founding-1949--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "bretton-woods-system--imf-agreement-1978--precondition-of",
       "kind": "edge",
       "locator": null
     },
@@ -476,6 +494,12 @@
     },
     {
       "dissent": false,
+      "id": "greek-civil-war--nato-founding-1949--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
       "id": "iberian-pact--treaty-of-friendship-and-cooperation-between-spain-and-portugal--reacted-to",
       "kind": "edge",
       "locator": null
@@ -507,6 +531,12 @@
     {
       "dissent": false,
       "id": "mozambique-war-begins-1964--1977-mozambican-general-election--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "nationalisations-1975--edp-created-1976--precondition-of",
       "kind": "edge",
       "locator": null
     },
@@ -723,6 +753,12 @@
     {
       "dissent": false,
       "id": "eanes-elected-1976",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "edp-created-1976",
       "kind": "event",
       "locator": null
     },

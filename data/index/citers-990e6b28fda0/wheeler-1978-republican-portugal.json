@@ -206,6 +206,12 @@
     },
     {
       "dissent": false,
+      "id": "republic-proclaimed-1910--universities-of-lisbon-and-porto-1911--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
       "id": "revolt-14-may-1915--1915-portuguese-legislative-election--caused",
       "kind": "edge",
       "locator": null
@@ -315,6 +321,12 @@
     {
       "dissent": false,
       "id": "sidonio-pais-coup-1917",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "universities-of-lisbon-and-porto-1911",
       "kind": "event",
       "locator": null
     },

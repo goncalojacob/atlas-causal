@@ -2,19 +2,25 @@
   "citations": [
     {
       "dissent": false,
-      "id": "council-of-europe",
+      "id": "americo-tomas",
       "kind": "actor",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "council-of-the-revolution",
+      "id": "craveiro-lopes",
       "kind": "actor",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "cplp",
+      "id": "domingos-oliveira",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "efta",
       "kind": "actor",
       "locator": null
     },
@@ -26,19 +32,25 @@
     },
     {
       "dissent": false,
-      "id": "european-economic-community",
+      "id": "henrique-galvao",
       "kind": "actor",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "jawaharlal-nehru",
+      "id": "humberto-delgado",
       "kind": "actor",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "jorge-sampaio",
+      "id": "ivens-ferraz",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "jose-vicente-de-freitas",
       "kind": "actor",
       "locator": null
     },
@@ -50,25 +62,49 @@
     },
     {
       "dissent": false,
+      "id": "marcelo-caetano",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "mendes-cabecadas",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "military-dictatorship",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
       "id": "mud",
       "kind": "actor",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "nato",
+      "id": "norton-de-matos",
       "kind": "actor",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "republic-of-india",
+      "id": "oeec",
       "kind": "actor",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "third-portuguese-republic",
+      "id": "oscar-carmona",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "pvde-pide-dgs",
       "kind": "actor",
       "locator": null
     },
@@ -80,73 +116,73 @@
     },
     {
       "dissent": false,
+      "id": "1928-portuguese-presidential-election--salazar-finance-minister-1928--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1945-portuguese-legislative-election--1949-portuguese-presidential-election--inspired",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
       "id": "1945-portuguese-legislative-election--delgado-candidacy-1958--precondition-of",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1979-portuguese-legislative-election--constitutional-revision-1982--enabled",
+      "id": "1949-portuguese-presidential-election--delgado-candidacy-1958--inspired",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1980-portuguese-legislative-election--constitutional-revision-1982--enabled",
+      "id": "1965-portuguese-presidential-election--caetano-succeeds-salazar-1968--enabled",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1980-portuguese-presidential-election--constitutional-revision-1982--reacted-to",
+      "id": "1969-portuguese-legislative-election--1973-portuguese-legislative-election--reacted-to",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1983-portuguese-legislative-election--imf-agreement-1983--enabled",
+      "id": "1969-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1983-portuguese-legislative-election--treaty-of-accession-1985--enabled",
+      "id": "1972-portuguese-presidential-election--carnation-revolution-1974--precondition-of",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1985-portuguese-legislative-election--cavaco-absolute-majority-1987--enabled",
+      "id": "1973-portuguese-legislative-election--carnation-revolution-1974--precondition-of",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1991-portuguese-legislative-election--expo-98--enabled",
+      "id": "angola-war-begins-1961--botelho-moniz-coup-attempt-1961--caused",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1995-portuguese-legislative-election--euro-adoption-1999--enabled",
+      "id": "angola-war-begins-1961--carnation-revolution-1974--caused",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1995-portuguese-legislative-election--portuguese-regionalisation-referendum-1998--caused",
-      "kind": "edge",
-      "locator": null
-    },
-    {
-      "dissent": false,
-      "id": "angola-independence-1975--cplp-founding-1996--precondition-of",
-      "kind": "edge",
-      "locator": null
-    },
-    {
-      "dissent": true,
-      "id": "angola-war-begins-1961--goa-annexed-1961--enabled",
+      "id": "caetano-succeeds-salazar-1968--1969-portuguese-legislative-election--caused",
       "kind": "edge",
       "locator": null
     },
@@ -158,61 +194,73 @@
     },
     {
       "dissent": false,
-      "id": "carnation-revolution-1974--macau-handover-1999--precondition-of",
+      "id": "constitution-1933--exposicao-mundo-portugues-1940--enabled",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "charter-of-the-united-nations--un-admission-1955--precondition-of",
+      "id": "constitution-1933--national-syndicalists-banned-1934--precondition-of",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "constitution-1976--eanes-elected-1976--enabled",
+      "id": "constitution-1933--portugal-backs-franco-1936--enabled",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "constitution-1976--eec-application-1977--enabled",
+      "id": "constitutional-revision-1959--1965-portuguese-presidential-election--caused",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "constitution-1976--legislative-election-1976--enabled",
+      "id": "coup-28-may-1926--1928-portuguese-presidential-election--caused",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "constitutional-revision-1982--eec-accession-1986--precondition-of",
+      "id": "coup-28-may-1926--constitution-1933--precondition-of",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "east-timor-invasion-1975--east-timor-independence-2002--precondition-of",
-      "kind": "edge",
-      "locator": null
-    },
-    {
-      "dissent": true,
-      "id": "eec-accession-1986--cavaco-absolute-majority-1987--enabled",
+      "id": "delgado-candidacy-1958--constitutional-revision-1959--caused",
       "kind": "edge",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "eec-application-1977--eec-accession-1986--caused",
+      "id": "delgado-candidacy-1958--delgado-assassinated-1965--caused",
       "kind": "edge",
       "locator": null
     },
     {
-      "dissent": true,
-      "id": "nato-founding-1949--un-admission-1955--enabled",
+      "dissent": false,
+      "id": "great-depression--salazar-president-of-council-1932--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "iberian-pact--azores-agreement-1943--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "march-on-rome--constitution-1933--inspired",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "portugal-backs-franco-1936--iberian-pact--caused",
       "kind": "edge",
       "locator": null
     },
@@ -230,8 +278,44 @@
     },
     {
       "dissent": false,
-      "id": "treaty-of-accession-1985--eec-accession-1986--precondition-of",
+      "id": "portugal-e-o-futuro-1974--carnation-revolution-1974--enabled",
       "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "salazar-president-of-council-1932--constitution-1933--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": true,
+      "id": "santa-maria-hijacking-1961--angola-war-begins-1961--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "spanish-civil-war--iberian-pact--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-rome--efta-accession-1960--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--azores-agreement-1943--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1928-portuguese-presidential-election",
+      "kind": "event",
       "locator": null
     },
     {
@@ -242,49 +326,49 @@
     },
     {
       "dissent": false,
-      "id": "1979-portuguese-legislative-election",
+      "id": "1949-portuguese-presidential-election",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1980-portuguese-legislative-election",
+      "id": "1965-portuguese-presidential-election",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1980-portuguese-presidential-election",
+      "id": "1969-portuguese-legislative-election",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1983-portuguese-legislative-election",
+      "id": "1972-portuguese-presidential-election",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1985-portuguese-legislative-election",
+      "id": "1973-portuguese-legislative-election",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1991-portuguese-legislative-election",
+      "id": "angola-war-begins-1961",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1995-portuguese-legislative-election",
+      "id": "azores-agreement-1943",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "1998-portuguese-abortion-referendum",
+      "id": "botelho-moniz-coup-attempt-1961",
       "kind": "event",
       "locator": null
     },
@@ -296,49 +380,55 @@
     },
     {
       "dissent": false,
-      "id": "cavaco-absolute-majority-1987",
+      "id": "constitution-1933",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "charter-of-the-united-nations",
+      "id": "constitutional-revision-1959",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "constitutional-revision-1982",
+      "id": "coup-28-may-1926",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "cplp-founding-1996",
+      "id": "delgado-assassinated-1965",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "east-timor-independence-2002",
+      "id": "delgado-candidacy-1958",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "eec-accession-1986",
+      "id": "efta-accession-1960",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "eec-application-1977",
+      "id": "exposicao-mundo-portugues-1940",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "goa-annexed-1961",
+      "id": "great-depression",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "iberian-pact",
       "kind": "event",
       "locator": null
     },
@@ -350,19 +440,7 @@
     },
     {
       "dissent": false,
-      "id": "legislative-election-1976",
-      "kind": "event",
-      "locator": null
-    },
-    {
-      "dissent": false,
-      "id": "macau-handover-1999",
-      "kind": "event",
-      "locator": null
-    },
-    {
-      "dissent": false,
-      "id": "nato-founding-1949",
+      "id": "national-syndicalists-banned-1934",
       "kind": "event",
       "locator": null
     },
@@ -374,13 +452,13 @@
     },
     {
       "dissent": false,
-      "id": "portuguese-regionalisation-referendum-1998",
+      "id": "portugal-e-o-futuro-1974",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "soares-elected-president-1986",
+      "id": "santa-maria-hijacking-1961",
       "kind": "event",
       "locator": null
     },
@@ -392,32 +470,14 @@
     },
     {
       "dissent": false,
-      "id": "treaty-of-accession-1985",
+      "id": "treaty-of-rome",
       "kind": "event",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "un-admission-1955",
+      "id": "world-war-ii",
       "kind": "event",
-      "locator": null
-    },
-    {
-      "dissent": false,
-      "id": "how-the-colonial-war-ended-the-regime",
-      "kind": "narrative",
-      "locator": null
-    },
-    {
-      "dissent": false,
-      "id": "council-of-the-revolution--third-portuguese-republic--part-of",
-      "kind": "relation",
-      "locator": null
-    },
-    {
-      "dissent": false,
-      "id": "estado-novo--nato--allied-with",
-      "kind": "relation",
       "locator": null
     },
     {
@@ -434,47 +494,101 @@
     },
     {
       "dissent": false,
-      "id": "portugal--council-of-europe--member-of",
+      "id": "military-dictatorship--portugal--regime-of",
       "kind": "relation",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "portugal--cplp--member-of",
+      "id": "portugal--efta--member-of",
       "kind": "relation",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "third-portuguese-republic--european-economic-community--allied-with",
+      "id": "portugal--oeec--member-of",
       "kind": "relation",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "third-portuguese-republic--portugal--regime-of",
+      "id": "pvde-pide-dgs--estado-novo--part-of",
       "kind": "relation",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "jorge-sampaio-president-1996",
+      "id": "americo-tomas-president-1958",
       "kind": "tenure",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "mario-soares-president-1986",
+      "id": "craveiro-lopes-president-1951",
       "kind": "tenure",
       "locator": null
     },
     {
       "dissent": false,
-      "id": "ramalho-eanes-president-1976",
+      "id": "domingos-oliveira-prime-minister-1930",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "gomes-da-costa-president-1926",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "gomes-da-costa-prime-minister-1926",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "ivens-ferraz-prime-minister-1929",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "jose-vicente-de-freitas-prime-minister-1928",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "marcelo-caetano-prime-minister-1968",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "mendes-cabecadas-president-1926",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "mendes-cabecadas-prime-minister-1926",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "oscar-carmona-president-1926",
+      "kind": "tenure",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "oscar-carmona-prime-minister-1926",
       "kind": "tenure",
       "locator": null
     }
   ],
-  "id": "costa-pinto-2003-contemporary-portugal",
+  "id": "rosas-1994-estado-novo",
   "schema": 1
 }

@@ -14,6 +14,12 @@
     },
     {
       "dissent": false,
+      "id": "energias-de-portugal",
+      "kind": "actor",
+      "locator": "Q1341222"
+    },
+    {
+      "dissent": false,
       "id": "evolutionist-party",
       "kind": "actor",
       "locator": "Q1720273"
@@ -35,6 +41,12 @@
       "id": "national-republican-party",
       "kind": "actor",
       "locator": "Q1513692"
+    },
+    {
+      "dissent": false,
+      "id": "national-syndicalists",
+      "kind": "actor",
+      "locator": "Q2562540"
     },
     {
       "dissent": false,
@@ -89,6 +101,12 @@
       "id": "revolutionary-socialist-party",
       "kind": "actor",
       "locator": "Q2054807"
+    },
+    {
+      "dissent": false,
+      "id": "university-of-porto",
+      "kind": "actor",
+      "locator": "Q1422903"
     },
     {
       "dissent": false,
@@ -173,12 +191,6 @@
       "id": "1948-czechoslovak-coup-d-etat",
       "kind": "event",
       "locator": "Q1137957"
-    },
-    {
-      "dissent": false,
-      "id": "1948-palestine-war",
-      "kind": "event",
-      "locator": "Q49097"
     },
     {
       "dissent": false,
@@ -290,12 +302,6 @@
     },
     {
       "dissent": false,
-      "id": "1982-lebanon-war",
-      "kind": "event",
-      "locator": "Q49103"
-    },
-    {
-      "dissent": false,
       "id": "1983-portuguese-legislative-election",
       "kind": "event",
       "locator": null
@@ -317,18 +323,6 @@
       "id": "1991-portuguese-legislative-election",
       "kind": "event",
       "locator": null
-    },
-    {
-      "dissent": false,
-      "id": "1991-soviet-coup-d-etat-attempt",
-      "kind": "event",
-      "locator": "Q221382"
-    },
-    {
-      "dissent": false,
-      "id": "1993-russian-constitutional-crisis",
-      "kind": "event",
-      "locator": "Q862099"
     },
     {
       "dissent": false,
@@ -392,12 +386,6 @@
     },
     {
       "dissent": false,
-      "id": "2006-thai-coup-d-etat",
-      "kind": "event",
-      "locator": "Q860423"
-    },
-    {
-      "dissent": false,
       "id": "2007-portuguese-abortion-referendum",
       "kind": "event",
       "locator": null
@@ -422,21 +410,9 @@
     },
     {
       "dissent": false,
-      "id": "2013-egyptian-coup-d-etat",
-      "kind": "event",
-      "locator": "Q13605743"
-    },
-    {
-      "dissent": false,
       "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
       "kind": "event",
       "locator": null
-    },
-    {
-      "dissent": false,
-      "id": "2021-myanmar-coup-d-etat",
-      "kind": "event",
-      "locator": "Q105180889"
     },
     {
       "dissent": false,
@@ -455,12 +431,6 @@
       "id": "2023-madeiran-regional-election",
       "kind": "event",
       "locator": null
-    },
-    {
-      "dissent": false,
-      "id": "2023-nigerien-coup-d-etat",
-      "kind": "event",
-      "locator": "Q117100709"
     },
     {
       "dissent": false,
@@ -506,12 +476,6 @@
     },
     {
       "dissent": false,
-      "id": "arusha-accords",
-      "kind": "event",
-      "locator": "Q1429076"
-    },
-    {
-      "dissent": false,
       "id": "assassination-of-archduke-franz-ferdinand",
       "kind": "event",
       "locator": "Q192050"
@@ -521,12 +485,6 @@
       "id": "august-1915-portuguese-presidential-election",
       "kind": "event",
       "locator": "Q97516196"
-    },
-    {
-      "dissent": false,
-      "id": "balkan-wars",
-      "kind": "event",
-      "locator": "Q165725"
     },
     {
       "dissent": false,
@@ -548,12 +506,6 @@
     },
     {
       "dissent": false,
-      "id": "boer-wars",
-      "kind": "event",
-      "locator": "Q1676845"
-    },
-    {
-      "dissent": false,
       "id": "boxer-rebellion",
       "kind": "event",
       "locator": "Q150229"
@@ -569,24 +521,6 @@
       "id": "bucha-massacre",
       "kind": "event",
       "locator": "Q111467700"
-    },
-    {
-      "dissent": false,
-      "id": "budapest-memorandum",
-      "kind": "event",
-      "locator": "Q1000658"
-    },
-    {
-      "dissent": false,
-      "id": "carnation-revolution",
-      "kind": "event",
-      "locator": "Q193245"
-    },
-    {
-      "dissent": false,
-      "id": "chaco-war",
-      "kind": "event",
-      "locator": "Q223126"
     },
     {
       "dissent": false,
@@ -608,21 +542,9 @@
     },
     {
       "dissent": false,
-      "id": "continuation-war",
-      "kind": "event",
-      "locator": "Q122100"
-    },
-    {
-      "dissent": false,
       "id": "convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados",
       "kind": "event",
       "locator": "Q60433"
-    },
-    {
-      "dissent": false,
-      "id": "convention-on-preventing-and-combating-violence-against-women-and-domestic-violence",
-      "kind": "event",
-      "locator": "Q1697391"
     },
     {
       "dissent": false,
@@ -644,21 +566,9 @@
     },
     {
       "dissent": false,
-      "id": "croatian-war-of-independence",
-      "kind": "event",
-      "locator": "Q68969"
-    },
-    {
-      "dissent": false,
       "id": "cuban-revolution",
       "kind": "event",
       "locator": "Q11264"
-    },
-    {
-      "dissent": false,
-      "id": "dayton-agreement",
-      "kind": "event",
-      "locator": "Q190315"
     },
     {
       "dissent": false,
@@ -683,12 +593,6 @@
       "id": "euromaidan",
       "kind": "event",
       "locator": "Q15224558"
-    },
-    {
-      "dissent": false,
-      "id": "european-charter-for-regional-or-minority-languages",
-      "kind": "event",
-      "locator": "Q106308"
     },
     {
       "dissent": false,
@@ -722,12 +626,6 @@
     },
     {
       "dissent": false,
-      "id": "first-italo-ethiopian-war",
-      "kind": "event",
-      "locator": "Q989115"
-    },
-    {
-      "dissent": false,
       "id": "full-scale-russo-ukrainian-war",
       "kind": "event",
       "locator": "Q110999040"
@@ -743,12 +641,6 @@
       "id": "gaza-war",
       "kind": "event",
       "locator": "Q122962941"
-    },
-    {
-      "dissent": false,
-      "id": "gaza-war-2008-2009",
-      "kind": "event",
-      "locator": "Q170682"
     },
     {
       "dissent": false,
@@ -770,21 +662,9 @@
     },
     {
       "dissent": false,
-      "id": "good-friday-agreement",
-      "kind": "event",
-      "locator": "Q208958"
-    },
-    {
-      "dissent": false,
       "id": "great-depression",
       "kind": "event",
       "locator": "Q8698"
-    },
-    {
-      "dissent": false,
-      "id": "greco-turkish-war-of-1897",
-      "kind": "event",
-      "locator": "Q657055"
     },
     {
       "dissent": false,
@@ -848,18 +728,6 @@
     },
     {
       "dissent": false,
-      "id": "kargil-war",
-      "kind": "event",
-      "locator": "Q404517"
-    },
-    {
-      "dissent": false,
-      "id": "kashmir-conflict",
-      "kind": "event",
-      "locator": "Q1413732"
-    },
-    {
-      "dissent": false,
       "id": "katyn-massacre",
       "kind": "event",
       "locator": "Q134301"
@@ -875,24 +743,6 @@
       "id": "korean-war",
       "kind": "event",
       "locator": "Q8663"
-    },
-    {
-      "dissent": false,
-      "id": "kosovo-war",
-      "kind": "event",
-      "locator": "Q190029"
-    },
-    {
-      "dissent": false,
-      "id": "kronstadt-rebellion",
-      "kind": "event",
-      "locator": "Q208300"
-    },
-    {
-      "dissent": false,
-      "id": "lapland-war",
-      "kind": "event",
-      "locator": "Q154940"
     },
     {
       "dissent": false,
@@ -920,12 +770,6 @@
     },
     {
       "dissent": false,
-      "id": "majimaji-war",
-      "kind": "event",
-      "locator": "Q705553"
-    },
-    {
-      "dissent": false,
       "id": "march-on-rome",
       "kind": "event",
       "locator": "Q468823"
@@ -944,12 +788,6 @@
     },
     {
       "dissent": false,
-      "id": "montreux-convention",
-      "kind": "event",
-      "locator": "Q869500"
-    },
-    {
-      "dissent": false,
       "id": "mueda-massacre",
       "kind": "event",
       "locator": null
@@ -959,12 +797,6 @@
       "id": "munich-agreement",
       "kind": "event",
       "locator": "Q154255"
-    },
-    {
-      "dissent": false,
-      "id": "nigerian-civil-war",
-      "kind": "event",
-      "locator": "Q829875"
     },
     {
       "dissent": false,
@@ -980,33 +812,9 @@
     },
     {
       "dissent": false,
-      "id": "outer-space-treaty",
-      "kind": "event",
-      "locator": "Q256608"
-    },
-    {
-      "dissent": false,
       "id": "paris-peace-conference",
       "kind": "event",
       "locator": "Q199820"
-    },
-    {
-      "dissent": false,
-      "id": "philippine-revolution",
-      "kind": "event",
-      "locator": "Q422082"
-    },
-    {
-      "dissent": false,
-      "id": "population-transfer-in-the-soviet-union",
-      "kind": "event",
-      "locator": "Q85125"
-    },
-    {
-      "dissent": false,
-      "id": "porajmos",
-      "kind": "event",
-      "locator": "Q117571"
     },
     {
       "dissent": false,
@@ -1019,24 +827,6 @@
       "id": "potsdam-conference",
       "kind": "event",
       "locator": "Q151187"
-    },
-    {
-      "dissent": false,
-      "id": "romanian-revolution-1989",
-      "kind": "event",
-      "locator": "Q204213"
-    },
-    {
-      "dissent": false,
-      "id": "rome-statute-of-the-international-criminal-court",
-      "kind": "event",
-      "locator": "Q838958"
-    },
-    {
-      "dissent": false,
-      "id": "rose-revolution",
-      "kind": "event",
-      "locator": "Q219470"
     },
     {
       "dissent": false,
@@ -1064,12 +854,6 @@
     },
     {
       "dissent": false,
-      "id": "rwandan-civil-war",
-      "kind": "event",
-      "locator": "Q426722"
-    },
-    {
-      "dissent": false,
       "id": "sayfo",
       "kind": "event",
       "locator": "Q852236"
@@ -1094,33 +878,9 @@
     },
     {
       "dissent": false,
-      "id": "second-congo-war",
-      "kind": "event",
-      "locator": "Q75756"
-    },
-    {
-      "dissent": false,
       "id": "second-sino-japanese-war",
       "kind": "event",
       "locator": "Q170314"
-    },
-    {
-      "dissent": false,
-      "id": "sino-indian-war",
-      "kind": "event",
-      "locator": "Q208694"
-    },
-    {
-      "dissent": false,
-      "id": "somali-civil-war",
-      "kind": "event",
-      "locator": "Q243620"
-    },
-    {
-      "dissent": false,
-      "id": "south-sudanese-civil-war",
-      "kind": "event",
-      "locator": "Q15353665"
     },
     {
       "dissent": false,
@@ -1130,21 +890,9 @@
     },
     {
       "dissent": false,
-      "id": "sri-lankan-civil-war",
-      "kind": "event",
-      "locator": "Q213394"
-    },
-    {
-      "dissent": false,
       "id": "the-holocaust",
       "kind": "event",
       "locator": "Q2763"
-    },
-    {
-      "dissent": false,
-      "id": "treaty-establishing-a-constitution-for-europe",
-      "kind": "event",
-      "locator": "Q189066"
     },
     {
       "dissent": false,
@@ -1187,12 +935,6 @@
       "id": "treaty-of-paris",
       "kind": "event",
       "locator": "Q724496"
-    },
-    {
-      "dissent": false,
-      "id": "treaty-of-paris-1898",
-      "kind": "event",
-      "locator": "Q847137"
     },
     {
       "dissent": false,
@@ -1256,18 +998,6 @@
     },
     {
       "dissent": false,
-      "id": "vienna-convention-on-diplomatic-relations",
-      "kind": "event",
-      "locator": "Q659717"
-    },
-    {
-      "dissent": false,
-      "id": "vienna-convention-on-the-law-of-treaties",
-      "kind": "event",
-      "locator": "Q239768"
-    },
-    {
-      "dissent": false,
       "id": "vietnam-war",
       "kind": "event",
       "locator": "Q8740"
@@ -1286,27 +1016,9 @@
     },
     {
       "dissent": false,
-      "id": "war-in-darfur",
-      "kind": "event",
-      "locator": "Q190758"
-    },
-    {
-      "dissent": false,
-      "id": "warsaw-ghetto-uprising",
-      "kind": "event",
-      "locator": "Q160161"
-    },
-    {
-      "dissent": false,
       "id": "warsaw-uprising",
       "kind": "event",
       "locator": "Q1402078"
-    },
-    {
-      "dissent": false,
-      "id": "western-african-ebola-virus-epidemic",
-      "kind": "event",
-      "locator": "Q15989108"
     },
     {
       "dissent": false,
@@ -1343,12 +1055,6 @@
       "id": "young-turk-revolution-of-1908",
       "kind": "event",
       "locator": "Q4298662"
-    },
-    {
-      "dissent": false,
-      "id": "yugoslav-wars",
-      "kind": "event",
-      "locator": "Q242352"
     }
   ],
   "id": "wikidata",

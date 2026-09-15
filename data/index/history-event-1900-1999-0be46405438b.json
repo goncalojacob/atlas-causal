@@ -1021,6 +1021,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -2270,6 +2278,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -2675,6 +2691,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -2714,6 +2738,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -3451,6 +3483,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -3991,6 +4031,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -4264,6 +4312,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -4355,6 +4411,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -4445,6 +4509,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -4789,6 +4861,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -4961,6 +5041,22 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "when"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -5021,6 +5117,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -5235,6 +5339,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "edp-created-1976": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
         }
       ]
     },
@@ -5641,6 +5754,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -5992,6 +6113,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -6492,6 +6621,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -6500,6 +6637,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -6573,6 +6718,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -6582,6 +6735,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -6590,6 +6751,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -6969,6 +7138,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -7118,6 +7295,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -7350,6 +7535,15 @@
         }
       ]
     },
+    "national-syndicalists-banned-1934": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "nationalisations-1975": {
       "from": "git",
       "versions": [
@@ -7431,6 +7625,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -7524,6 +7726,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -7601,6 +7811,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -7609,6 +7827,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -8230,6 +8456,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -8238,6 +8472,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -8326,6 +8568,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -8539,6 +8789,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -8660,6 +8918,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -8709,6 +8975,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -8811,6 +9085,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -9264,6 +9546,15 @@
         }
       ]
     },
+    "universities-of-lisbon-and-porto-1911": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
     "velvet-revolution": {
       "from": "git",
       "versions": [
@@ -9295,6 +9586,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
         }
       ]
     },
@@ -9303,6 +9602,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -9366,6 +9673,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]
@@ -9595,6 +9910,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-15"
         }
       ]

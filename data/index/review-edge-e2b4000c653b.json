@@ -270,6 +270,123 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "1948-arab-israeli-war",
+      "id": "1948-arab-israeli-war--1952-egyptian-revolution--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1952-egyptian-revolution",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "1948-arab-israeli-war",
+      "id": "1948-arab-israeli-war--yom-kippur-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "yom-kippur-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "1948-czechoslovak-coup-d-etat",
+      "id": "1948-czechoslovak-coup-d-etat--european-convention-on-human-rights--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "european-convention-on-human-rights",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-15",
+      "from": "1948-czechoslovak-coup-d-etat",
+      "id": "1948-czechoslovak-coup-d-etat--nato-founding-1949--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "nato-founding-1949",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "ramos-2009-historia-de-portugal"
       ],
@@ -290,6 +407,35 @@
       "status": "active",
       "to": "delgado-candidacy-1958",
       "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "1952-egyptian-revolution",
+      "id": "1952-egyptian-revolution--algerian-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "algerian-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -434,6 +580,65 @@
       "status": "active",
       "to": "carnation-revolution-1974",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "1973-chilean-coup-d-etat",
+      "id": "1973-chilean-coup-d-etat--1976-argentine-coup-d-etat--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1976-argentine-coup-d-etat",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "1973-chilean-coup-d-etat",
+      "id": "1973-chilean-coup-d-etat--25-november-1975--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "25-november-1975",
+      "type": "inspired"
     },
     {
       "authors": [
@@ -1239,6 +1444,65 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-15",
+      "from": "amsterdam-treaty",
+      "id": "amsterdam-treaty--euro-adoption-1999--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "euro-adoption-1999",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "amsterdam-treaty",
+      "id": "amsterdam-treaty--treaty-of-nice--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-nice",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "telo-2007-historia-contemporanea",
         "costa-pinto-2003-contemporary-portugal"
       ],
@@ -1401,6 +1665,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-15",
+      "from": "arab-revolt",
+      "id": "arab-revolt--treaty-of-sevres--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-sevres",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "assassination-of-archduke-franz-ferdinand",
       "id": "assassination-of-archduke-franz-ferdinand--world-war-i--caused",
@@ -1550,6 +1843,36 @@
       "revised": null,
       "status": "active",
       "to": "troika-bailout-2011",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-15",
+      "from": "bretton-woods-system",
+      "id": "bretton-woods-system--imf-agreement-1978--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "imf-agreement-1978",
       "type": "precondition-of"
     },
     {
@@ -1881,6 +2204,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-15",
+      "from": "charter-of-the-united-nations",
+      "id": "charter-of-the-united-nations--genocide-convention--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "genocide-convention",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "charter-of-the-united-nations",
       "id": "charter-of-the-united-nations--international-covenant-on-civil-and-political-rights--precondition-of",
@@ -2086,6 +2438,36 @@
       "status": "active",
       "to": "exposicao-mundo-portugues-1940",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "rosas-1994-estado-novo",
+        "costa-pinto-2003-contemporary-portugal"
+      ],
+      "created": "2026-09-15",
+      "from": "constitution-1933",
+      "id": "constitution-1933--national-syndicalists-banned-1934--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "national-syndicalists-banned-1934",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -2408,6 +2790,35 @@
       "revised": null,
       "status": "active",
       "to": "soares-elected-president-1986",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "constitutionalization-attempts-in-iran",
+      "id": "constitutionalization-attempts-in-iran--iranian-revolution--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "iranian-revolution",
       "type": "precondition-of"
     },
     {
@@ -2878,6 +3289,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-15",
+      "from": "easter-rising",
+      "id": "easter-rising--irish-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "irish-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "eastern-front",
       "id": "eastern-front--potsdam-conference--precondition-of",
@@ -3235,6 +3675,64 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-15",
+      "from": "first-balkan-war",
+      "id": "first-balkan-war--assassination-of-archduke-franz-ferdinand--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "assassination-of-archduke-franz-ferdinand",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "first-balkan-war",
+      "id": "first-balkan-war--second-balkan-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-balkan-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "first-indochina-war",
       "id": "first-indochina-war--algerian-war--precondition-of",
@@ -3252,6 +3750,35 @@
       "status": "active",
       "to": "algerian-war",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "first-indochina-war",
+      "id": "first-indochina-war--geneva-conference--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "geneva-conference",
+      "type": "caused"
     },
     {
       "authors": [
@@ -3401,6 +3928,64 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "geneva-conference",
+      "id": "geneva-conference--algerian-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "algerian-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "geneva-conference",
+      "id": "geneva-conference--vietnam-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "vietnam-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "costa-pinto-teixeira-2019-political-institutions",
         "imf-2016-portugal-ex-post-evaluation"
       ],
@@ -3469,6 +4054,35 @@
       "revised": null,
       "status": "active",
       "to": "marcelo-elected-president-2016",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "german-revolution-of-1918-1919",
+      "id": "german-revolution-of-1918-1919--treaty-of-versailles--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-versailles",
       "type": "precondition-of"
     },
     {
@@ -3557,6 +4171,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "great-depression",
+      "id": "great-depression--bretton-woods-system--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "bretton-woods-system",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "meneses-2009-salazar",
         "wikipedia-en"
@@ -3578,6 +4221,36 @@
       "status": "active",
       "to": "salazar-president-of-council-1932",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-15",
+      "from": "greek-civil-war",
+      "id": "greek-civil-war--nato-founding-1949--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "nato-founding-1949",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -3970,6 +4643,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-15",
+      "from": "iranian-revolution",
+      "id": "iranian-revolution--mahsa-amini-protests--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "mahsa-amini-protests",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "katyn-massacre",
       "id": "katyn-massacre--warsaw-uprising--precondition-of",
@@ -3986,6 +4688,93 @@
       "revised": null,
       "status": "active",
       "to": "warsaw-uprising",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "kellogg-briand-pact",
+      "id": "kellogg-briand-pact--charter-of-the-united-nations--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "charter-of-the-united-nations",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "korean-war",
+      "id": "korean-war--geneva-conference--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "geneva-conference",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "korean-war",
+      "id": "korean-war--treaty-of-san-francisco--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-san-francisco",
       "type": "precondition-of"
     },
     {
@@ -4291,6 +5080,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "maastricht-treaty",
+      "id": "maastricht-treaty--amsterdam-treaty--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "amsterdam-treaty",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "reis-2013-portuguese-slump",
         "telo-2007-historia-contemporanea",
         "wikipedia-en"
@@ -4312,6 +5130,124 @@
       "status": "active",
       "to": "euro-adoption-1999",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "mahsa-amini-protests",
+      "id": "mahsa-amini-protests--2025-2026-iranian-protests--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2025-2026-iranian-protests",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "march-on-rome",
+      "id": "march-on-rome--beer-hall-putsch--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "beer-hall-putsch",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "costa-pinto-2003-contemporary-portugal",
+        "rosas-1994-estado-novo",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "march-on-rome",
+      "id": "march-on-rome--constitution-1933--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "constitution-1933",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "molotov-ribbentrop-pact",
+      "id": "molotov-ribbentrop-pact--winter-war--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "winter-war",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -4536,6 +5472,36 @@
         }
       ],
       "cites": [
+        "maxwell-1995-making-of-portuguese-democracy",
+        "telo-2007-historia-contemporanea"
+      ],
+      "created": "2026-09-15",
+      "from": "nationalisations-1975",
+      "id": "nationalisations-1975--edp-created-1976--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "edp-created-1976",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "telo-2007-historia-contemporanea",
         "reis-2013-portuguese-slump"
       ],
@@ -4604,6 +5570,35 @@
       "revised": null,
       "status": "active",
       "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "october-revolution",
+      "id": "october-revolution--finnish-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "finnish-civil-war",
       "type": "precondition-of"
     },
     {
@@ -5028,6 +6023,36 @@
       ],
       "cites": [
         "wheeler-1978-republican-portugal",
+        "ramos-2009-historia-de-portugal"
+      ],
+      "created": "2026-09-15",
+      "from": "republic-proclaimed-1910",
+      "id": "republic-proclaimed-1910--universities-of-lisbon-and-porto-1911--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "universities-of-lisbon-and-porto-1911",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wheeler-1978-republican-portugal",
         "meneses-2004-portugal-1914-1926"
       ],
       "created": "2026-09-04",
@@ -5072,6 +6097,35 @@
       "status": "active",
       "to": "sidonio-pais-coup-1917",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "russian-revolution-of-1905",
+      "id": "russian-revolution-of-1905--constitutionalization-attempts-in-iran--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "constitutionalization-attempts-in-iran",
+      "type": "inspired"
     },
     {
       "authors": [
@@ -5301,6 +6355,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "second-balkan-war",
+      "id": "second-balkan-war--assassination-of-archduke-franz-ferdinand--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "assassination-of-archduke-franz-ferdinand",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "ramos-2009-historia-de-portugal",
         "meneses-2004-portugal-1914-1926",
         "wikipedia-en"
@@ -5349,6 +6432,35 @@
       "revised": null,
       "status": "active",
       "to": "chinese-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "second-sino-japanese-war",
+      "id": "second-sino-japanese-war--tripartite-pact--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "tripartite-pact",
       "type": "precondition-of"
     },
     {
@@ -5492,6 +6604,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "the-holocaust",
+      "id": "the-holocaust--genocide-convention--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "genocide-convention",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "telo-2007-historia-contemporanea",
         "costa-pinto-2003-contemporary-portugal"
       ],
@@ -5541,6 +6682,64 @@
       "status": "active",
       "to": "battle-of-the-lys-1918",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "treaty-of-london",
+      "id": "treaty-of-london--paris-peace-conference--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "paris-peace-conference",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "treaty-of-paris",
+      "id": "treaty-of-paris--treaty-of-rome--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-rome",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -5882,6 +7081,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-15",
+      "from": "world-war-i",
+      "id": "world-war-i--arab-revolt--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "arab-revolt",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "world-war-i",
       "id": "world-war-i--armenian-genocide--enabled",
@@ -5899,6 +7127,93 @@
       "status": "active",
       "to": "armenian-genocide",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "world-war-i",
+      "id": "world-war-i--easter-rising--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "easter-rising",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "world-war-i",
+      "id": "world-war-i--finnish-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "finnish-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "world-war-i",
+      "id": "world-war-i--german-revolution-of-1918-1919--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "german-revolution-of-1918-1919",
+      "type": "caused"
     },
     {
       "authors": [
@@ -5937,6 +7252,64 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "world-war-i",
+      "id": "world-war-i--sayfo--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "sayfo",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "world-war-ii",
+      "id": "world-war-ii--20-july-plot--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "20-july-plot",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "telo-2007-historia-contemporanea",
         "rosas-1994-estado-novo",
         "wikipedia-en"
@@ -5958,6 +7331,122 @@
       "status": "active",
       "to": "azores-agreement-1943",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "world-war-ii",
+      "id": "world-war-ii--convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "convencao-das-nacoes-unidas-relativa-ao-estatuto-dos-refugiados",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "world-war-ii",
+      "id": "world-war-ii--treaty-of-san-francisco--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-san-francisco",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "world-war-ii",
+      "id": "world-war-ii--tripartite-pact--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "tripartite-pact",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "world-war-ii",
+      "id": "world-war-ii--winter-war--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "winter-war",
+      "type": "enabled"
     },
     {
       "authors": [

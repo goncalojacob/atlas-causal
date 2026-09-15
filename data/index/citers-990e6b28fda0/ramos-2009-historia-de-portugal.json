@@ -416,6 +416,12 @@
     },
     {
       "dissent": false,
+      "id": "republic-proclaimed-1910--universities-of-lisbon-and-porto-1911--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
       "id": "second-boer-war--treaty-of-windsor--caused",
       "kind": "edge",
       "locator": null
@@ -561,6 +567,12 @@
     {
       "dissent": false,
       "id": "treaty-of-windsor",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "universities-of-lisbon-and-porto-1911",
       "kind": "event",
       "locator": null
     },
