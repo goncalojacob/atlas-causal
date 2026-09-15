@@ -13,6 +13,65 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-15, after **M38a** (`docs/m38-brief.md`, with its amendments after
+review): **the cities have their names, and there is one placer.**
+`src/map/labels.js` is it, and there is never a second: it is pure, both layers
+hand it the same candidate shape, and `map.js` calls it once at the end of the
+draw and writes the result into one `<g class="layer layer-labels">` over
+everything else. `drawLabels` is gone from `src/map/layers/events.js`.
+
+**What a label looks like now.** Eleven pixels of the interface face on screen
+at every zoom — `font-size: 11 / k`, which is `--text-xs` and is what the map
+already used — with a **two-pixel paper halo** behind the letters and nothing
+else: no box, no backdrop, no padding. An event's name is in `--ink`, a city's
+in the `--ink-soft` its dot is drawn in, and a name longer than thirty
+characters is cut **at a word**. No new hex value, no new token, no new type
+size.
+
+**What changed about the old one.** The white shapes the owner saw in
+`docs/screens/m37-base-lisbon.png` were the halo, and they were a bug and not a
+taste: `.map .mark-label` set `stroke-width: 3` in `src/style.css`, and a CSS
+declaration beats a presentation attribute, so the `LABEL_HALO / k` the layer
+wrote on every label never applied. The halo was three **user** units — at
+k = 8 a white cloud twenty-four screen pixels across, which is what buried the
+geography. The stylesheet now sets no width at all, the attribute is the only
+one, and it is 2 rather than 3 (deviation 650). The name cut mid-word was
+`shorten` counting letters; it now breaks at the last space where half the name
+still fits, so "Humberto Delgado's presidenti…" is "Humberto Delgado's…".
+**Judge this one beside `docs/screens/m37-base-lisbon.png`**:
+`docs/screens/m38-labels-lisbon.png` is the same link and the same picture.
+
+**How many land.** At the whole world, **none**: the map writes no name below
+k = 4, which is where the event labels always started, and the rule is now the
+map's and not that layer's (deviation 649). Natural Earth ranks seventeen
+cities for the world view — Tokyo, New York, Moscow — and they are seventeen
+names off another map here; the dots are drawn all the same. At the Lisbon box
+of the screenshot (k ≈ 23.8) **3 event labels and 24 city labels** are placed,
+out of 3 clusters and 47 cities in view: the cities' limit of 24 is what binds,
+and 23 are skipped. At Portugal at k = 8, **6 of 7 clusters and 24 of the 312
+cities** whose label zoom the reader has passed. A label that does not fit is
+skipped and never nudged, so no name has drifted off the thing it names.
+
+**The `zl` pass rewrote 91 of the base map's 136 files.** Every feature now
+carries a label zoom, not the cities alone: `min_label` on the rivers, the
+lakes and the physical regions, `LABELRANK` on the cities, all through M36's
+one frozen table, and `z + 1` — one rung after the dot — where the file ranks
+nothing, which is the peaks, the coastline and one populated place of 7,342.
+It travels beside the name and nameless features carry none (deviation 652).
+The base map went from **6,030.5 KB to 6,068.5 KB** of its 8,192 KB ceiling
+(+38.0 KB, 0.6 %) and `data/geo/` from 11,209.9 to 11,247.9 KB of its 24,576;
+**no level moved a rung of the tolerance ladder and no feature was dropped**.
+`node tools/validate.mjs --index` was rebuilt and is consistent — not
+byte-identical, because the data changed, which is what the run was for; the
+manifest's diff is 86 byte counts and nothing else.
+
+**M38b is the rest**: the dated names from `historicalNames`, the full
+`<title>`, place records with no Natural Earth city, and the physical features
+at priority 2. No place record carries a dated name today (0 of 26), so nothing
+on the real map is dated yet whatever M38b writes. The full account and
+deviations 649 to 657 are in **`## M38a: one placer, and the cities named`**,
+below; `ARCHITECTURE.md` is untouched and is M38b's (deviation 657).
+
 2026-09-15, after **M37b** (`docs/m37-brief.md`, with its amendments after
 review): **M37 is done — the reader has the switches.** The layer control is
 four things and is the map's only legend: `territories`, `events`, a collapsed
@@ -6070,6 +6129,164 @@ and so is `src/map/projection.js`.
      so all 1,383 tests ran and **none skipped** — the two new browser tests of
      the control among them, and the seven of the base map beside them.
 
+## M38a: one placer, and the cities named
+
+M37 drew six layers of Natural Earth and named none of them. This run gives the
+cities their names and builds the thing that will name everything else: **one
+placer, `src/map/labels.js`, pure, and there is never a second.**
+
+```
+placeLabels(candidates, { k, view, limits })
+candidate: { id, text, x, y, priority, weight }
+→ [{ id, text, x, y, priority, box }] in draw order
+```
+
+It touches no DOM, knows nothing about a layer and reads no state. The order is
+**priority ascending, then weight descending, then id** — 0 events, 1 cities,
+2 physical features — so the same picture places the same labels twice, however
+the layers answered and in whatever order the files landed. Collision is greedy
+and a label whose box hits one already placed is **skipped, not nudged**, which
+is the events layer's own rule and the reason a label never drifts away from
+what it names. The box estimate is that layer's, moved without a number
+changed: an em is about half the font size, and a fixture of ten candidates in
+`tests/labels.test.mjs` pins it so a future tidy-up has to say so out loud. A
+candidate whose anchor is outside `view` is dropped before the ordering, so it
+spends nobody's limit.
+
+**The limits are per priority and are passed in** — events 12, which is
+`LABEL_LIMIT` unchanged, cities 24, features 8 — so a hundred cities can never
+crowd out the events. The placer holds no number of its own but the box
+arithmetic, the type size and the halo.
+
+**One round, in `map.js`.** A new `<g class="layer layer-labels">` after the
+events group; at the end of `draw()` the map asks the events layer and each
+labelled base layer for `labelCandidates()` — a pure list, no drawing — calls
+the placer once over the lot, and writes the result itself. Drawing them in one
+group is the only way one placer can be true: two layers each placing their own
+would have been the two placers finding 27 warned about, with a different name.
+A base file landing runs the round again on the same frame it redraws the base
+map on (deviation 637's path), because a city that has just arrived brings its
+name with it.
+
+**A label is not a control.** `pointer-events: none` on the whole group, no
+`data-id`, no `tabindex`, no handler: the mark or the dot under a name takes
+every click, and "a click on the sea puts down what the reader was holding"
+goes on working under a label. An event's label keeps `.mark-label`, so every
+selector and browser test that names it still matches; only its parent group
+changed (deviation 527). A city's is `.city-label`.
+
+**A city's name.** The face carries the modern name from Natural Earth and the
+`<title>` carries that plus `NAME_EN` where it differs, joined by a middle dot
+(amendment A0, deviation 655). The dated names from `historicalNames` are
+M38b's, and no place record has one yet. A city appears by name at its own
+`zl` and never before its dot, which is what `zl` means; above the map's own
+floor of k = 4.
+
+### What was measured
+
+| view | k | event labels | city labels | of how many |
+|---|---|---|---|---|
+| the whole world | 1 | 0 | 0 | 17 cities are ranked for it and none is written |
+| Lisbon, the screenshot's box | 23.8 | 3 | 24 | 3 clusters, 47 cities in view |
+| Portugal, `?bbox=-28,25.34,17,50.66` | 8 | 6 | 24 | 7 clusters, 312 cities past their `zl` |
+
+The cities' limit of 24 binds at both zooms; what is skipped is skipped by the
+limit and by the box, and nothing is moved. At Lisbon the city itself is **not**
+named while the events of this atlas stand on its point — thirty-seven of them
+share it — which is the priority rule working, and the browser test proves it by
+turning the events off and finding "Lisbon" back.
+
+### The import's `zl` pass
+
+`readFeature` now writes a label zoom for **every** feature, where before it
+wrote one for a city with a `LABELRANK` and nothing otherwise:
+
+| layer | rank read | features |
+|---|---|---|
+| rivers | `min_label` | 1,455 of 1,455 carry one |
+| lakes | `min_label` | 1,355 of 1,355 |
+| physical | `MIN_LABEL` | 1,047 of 1,047 |
+| cities | `LABELRANK` | 7,341 of 7,342 |
+| mountains | — | none; `z + 1` for all 711 |
+| coast | — | none; `z + 1` |
+
+It goes through the same frozen table `z` does and is never earlier than the
+dot. What reaches disk travels beside the name (deviation 652): the 2,773 coast
+polygons, the 610 nameless lakes and the 88 nameless rivers can carry no label
+at any zoom, and an integer for a label that will never exist is bytes out of
+the cap that decides how much coastline the reader gets. The peaks' row gains
+`carry: ['zl']` and nothing else of the cities' (deviation 653).
+
+91 of the 136 files were rewritten; the base map is 6,068.5 KB of 8,192 and
+`data/geo/` 11,247.9 KB of 24,576. No cap was reached, no tolerance stepped and
+no feature was dropped that was not dropped before.
+
+### Deviations 649 to 657
+
+649. **The zoom at which this map starts writing names is the map's, not the
+     events layer's.** `LABEL_ZOOM = 4` moves to `labels.js` and the round
+     applies it before it asks anyone for a candidate. §2 of the brief says a
+     city's label comes from its own `zl`, and its "Done when" says there are no
+     city labels at k = 1; with `zl` alone there are seventeen, because Natural
+     Earth ranks Tokyo, New York and Moscow for the world view — the right
+     answer for its own map. Above the floor it is `zl` that decides, exactly
+     as the brief asks. **The owner's, if seventeen world cities at the world
+     view would in fact have been right.**
+650. **The halo is 2 and the stylesheet sets no width at all.** The bug was
+     that it did: `.map .mark-label { stroke-width: 3 }` beat the
+     `LABEL_HALO / k` attribute the layer wrote, so the halo was three user
+     units and grew with the zoom — twenty-four screen pixels at k = 8, which
+     is the white shape in `m37-base-lisbon.png`. Fixing that alone would have
+     left a 3-pixel halo; 2 is what a halo is for, which is to lift the letters
+     off the ground rather than to erase it. No token and no hex value moved.
+651. **A long name is cut at a word.** `shorten` breaks at the last space where
+     at least half the name still fits and falls back to the letter otherwise,
+     so a one-word name is cut as it was. It is the second half of what the
+     owner saw, and the first thirty characters are still the budget.
+652. **`zl` travels beside the name, though `readFeature` writes one for every
+     feature.** A feature the source never named can carry no label at any
+     zoom, so a label zoom on it is bytes; the pure function answers for all of
+     them, because "what would this feature's label zoom be" is the import's
+     answer and not a hole in it.
+653. **The peaks carry `zl` now.** Deviation 615 kept a peak to what M36b wrote
+     and their files byte-identical through two milestones; M38b labels peaks
+     at priority 2 and cannot do it without their label zoom. `wikidata` is
+     still read and not written there.
+654. **A label's zoom for a base feature is read off the feature and not the
+     manifest**, and which layers are labelled at all is a table in `map.js`
+     (`cities` today). The hierarchy is the map's and not a layer's, and a
+     layer id in the manifest would have been a third place to say it.
+655. **The `<title>` is one line, joined by a middle dot.** The brief asks for
+     one line and names no separator; a dated entry carries a comma of its own
+     ("Lourenço Marques, 1895–1976") and commas separating commas do not read.
+     It goes into the DOM through `textContent` and not through concatenation,
+     so it does not pass `esc()` — which is what `svgTitle` is for.
+656. **Two of test 4's bullets are written here and not in M38b.** The bullet
+     about an event and a city competing for a box and the bullet about the
+     halo at k = 8 are both this run's mechanics, and leaving the halo untested
+     in the run that changed it would have been the wrong half of the split.
+     M38b's share of test 4 is what needs its dated names.
+657. **`ARCHITECTURE.md` is untouched and `labels.js` is not in its tree yet.**
+     M37a left the whole file to M37b for the same reason: the file is written
+     once per milestone and M38b is the half that changes what it would have to
+     say about `historicalNames`. `CLAUDE.md`'s layout tree does name
+     `labels.js`, in the commit that added it, which is what `site.test.mjs`
+     checks.
+
+### What M38a did not do
+
+No dated name is read and `historicalNames` still has no reader; no place
+record with no Natural Earth city is on the map; no river, lake, region or peak
+is labelled, and `.feature-label` has a class name and no rule. No second
+placer was written — `grep` finds `drawLabels` only in `src/graph-view/`, which
+is the graph and not the map, and is out of this brief. The projection, the
+emphasis hierarchy and the territories were not touched, and the only screenshot
+this run wrote is `m38-labels-lisbon.png`; the brief's `m38-labels-iberia` and
+`m38-labels-world` are test 5 and are M38b's.
+
+**The sandbox ran the browser tests.** 1,396 tests, **none skipped** — the five
+new browser tests of the labels among them.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -6255,3 +6472,4 @@ M37b started 2026-09-15T04:13:52Z by scheduled
 M37b done
 M37 done
 M38a started 2026-09-15T04:38:26Z by scheduled
+M38a done
