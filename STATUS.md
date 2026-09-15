@@ -13,42 +13,46 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-15, after **M46** (on `m0`): **seven of the twenty-two events that
+2026-09-15, after **M43b** (on `m0`): **the timeline's scale is bucketed by
+century past a density threshold, and the atlas opens on the century that holds
+most of the corpus.** Both are behind the same threshold — a corpus more than
+two centuries long with a century holding over three times its even share — and
+`data/` is under it, so **nothing a reader can see changes today**: the same
+linear scale, the same opening on the whole extent, the same pictures. M43b is
+the machinery and **M42 turns it on**, by itself, with the first record from
+before 1890.
+
+The scale shares the width out century by century — each century as wide as its
+own length plus the base-two logarithm of how many events it holds — rather than
+year by year, so an empty century is a labelled column and a crowded one is
+wider without being a hundred times wider. The other scale the brief allowed,
+linear inside the band and compressed outside, was refused for a reason that is
+about the reader and not the drawing: a scale that follows the band repacks the
+rows on every frame of a drag and moves the year the wheel had just zoomed on.
+Nothing in the URL changes — the opening window is the atlas's own, beside the
+extent, and `resolveWindow` answers it for the URL that names neither end and
+for no other, so an empty URL stays empty and `?from=1415&to=1580` is still the
+founding period. When M42 lands the atlas will open on **1900–1999**, which is
+where 191 of today's 250 active events are.
+
+`tests/fixtures/data/` gained nine synthetic events from 1415 to 2025 and eight
+links, so the scale can be seen working before any real record reaches back:
+`docs/screens/m43-timeline-wide.png` at 1440 px and
+`docs/screens/m43-timeline-phone.png` in a 390 × 844 viewport. **Nothing was
+written under `data/`.** `node tools/validate.mjs`: **2,266 records, 0 errors**,
+unchanged. `node --test --test-timeout=120000`: **1,442 tests, 0 skipped, 0
+failed**. The account is `## M43b: the timeline over five centuries` below, with
+deviations 704 to 711.
+
+Before it, M46 (on `m0`): **seven of the twenty-two events that
 were stuck on the lane question are in, seven are not what this milestone
 built, and fifteen are still refused on purpose.** The code M46 was ordered to
 write already existed — M44-0 landed the lane table, its schema, its validator
 check, the lines in `runImportMode` that read it and the two tests on
-8 September (deviation 697) — so this run verified it instead of rebuilding it
+8 September (deviation 697) — so that run verified it instead of rebuilding it
 and spent itself on the two things that were genuinely missing: **the data**
-and **the label fallback**.
-
-The seven that landed, with the lane each took: `first-sino-japanese-war`,
-`philippine-american-war`, `russo-japanese-war`, `soviet-afghan-war` and
-`iran-iraq-war` in **asia**; `polish-soviet-war` and `entente-cordiale` in
-**europe**. The rule that chose them was written before a line was added
-(deviation 699): a lane is written where the event's own ground lies inside
-exactly one lane of `data/regions.json` and saying so is reading the item
-rather than deciding a question about it. **Fifteen stay refused** — five whose
-ground spans two of the five lanes, nine that are a subject rather than a
-place, and the Antarctic Treaty System, whose ground is in no lane this atlas
-has. Each is still one line of data whenever the owner decides otherwise.
-
-**The importer's title chain was wrong in a way nobody had named.** It was
-`labels.en ?? labels.pt ?? qid`, which walks past an English name the item is
-already carrying: Q60433, the refugee convention, was filed under a Portuguese
-id while the same run wrote `wikipedia.en: "Convention Relating to the Status
-of Refugees"` onto the record it had just made. `titleFor` now reads English
-label, English article title, Portuguese label, Portuguese article title, item
-id — for the title, for the id and for a place's label. Where there is no
-English name of either kind, which is the nine Madeira and Azores regional
-elections M44c renamed, the record imports with its Portuguese name **verbatim**
-and carries `title-not-english` in `review.flags`. Nothing is translated: that
-is a judgement and a run does not make those quietly.
-
-`node tools/validate.mjs --index`: **2,266 records, 0 errors**, up from 2,259.
-**250 active events**, up from 243. `node --test --test-timeout=120000`:
-**1,425 tests, 0 skipped, 0 failed**. The account is `## M46: the lanes
-written, the fifteen refused, and the title chain` below.
+and **the label fallback**. Its account is `## M46: the lanes written, the
+fifteen refused, and the title chain` below, with deviations 697 to 703.
 
 Before it, M44b (`docs/m44-brief.md` §4 and its amendments after
 review; **on branch `m44`, cut from `origin/m0`, and nothing of it merged into
@@ -7528,6 +7532,174 @@ run's to take.
      that the fifteen refusals above are read for what they are — fifteen items
      for which no lane was reachable **in this batch order** and none was
      written by hand.
+
+## M43b: the timeline over five centuries
+
+The brief allowed either of two scales and left the choice here. **It is the
+bucketed one: linear inside a century, and each century as wide as its own
+length plus the logarithm of how many events it holds.** The argument against
+the other — linear inside the band, compressed outside — is not that it draws
+worse, it is that it moves. The lanes are packed on the scale's own geometry
+(`lanes.js`), so a scale that followed the band would repack the rows on every
+frame of a drag and slide the bars out from under the cursor dragging them;
+and the wheel reads the year under the pointer through `invert` and then sets
+a window, which would change the scale that `invert` had just been read from,
+so the pointer would no longer be over the year it zoomed on. The buckets are
+a fact about the data and stand still while the reader works, which is the
+same argument `timeline.js` already makes for keeping the lanes on the whole
+extent whatever the window is.
+
+The weight of a century is `(its length in centuries) + log2(1 + its events)`.
+Two terms, added rather than multiplied, so neither can take the other to
+nothing: the first is the floor, which is why five centuries nobody wrote about
+are five labelled columns and not one hairline; the second is why the crowded
+century is wider without being a hundred times wider. An empty century is
+worth 1, a century of forty about 6.4, a century of four thousand about 13.
+
+**Past a density threshold, and not before.** The scale buckets, and the atlas
+opens on a century, only when the corpus is both long — more than two centuries
+from the first event to the last — and lopsided — some century holding more
+than three times its even share. `data/` today is 1894 to 2026 with 250 active
+events, a hundred and thirty-two years, so **it is under the threshold and
+nothing about it changes**: the same linear scale, the same opening on the
+whole extent, the same pictures under `docs/screens/` as before this run. That
+is deliberate. M43b is the machinery; **M42 is what turns it on**, and it turns
+on by itself the moment a record from before 1890 lands.
+
+**What the default window opens on.** A URL that names neither `from` nor `to`
+used to be the whole extent and now is the century holding most of the corpus —
+but only past that threshold, so today it is still the whole extent for
+`data/` and is **1200–1299 for the fixtures**, which run from the thirteenth
+century to the twenty-first. When M42 lands, the century that holds most of
+today's records is the 1900s — 191 of the 250, against 54 in the 2000s and 5
+in the 1890s — so the atlas will open on **1900–1999** rather than on
+1890–2025. That is the one change a reader will notice first, and it is the
+one the brief asked for.
+
+**Nothing in the URL changes.** The opening window is the atlas's own — a field
+beside `extent`, computed in `data.js` from the same century counts the scale
+uses — and it reaches the views through `resolveWindow`, which answers it for
+the URL that names neither end and for no other. An empty URL stays an empty
+URL. `?from=1415&to=1580` opens the founding period and means what it always
+meant; so does a single bound, because one named end is a reader saying where
+to start and leaving the other to the corpus.
+
+**The band at the full extent.** The handles, the drag, the wheel, the arrow
+keys and the double-click all work in years and go through `invert`, which on
+a piecewise-linear, strictly increasing scale is exact — so none of them needed
+changing, and `tests/timeline-browser.test.mjs` drags the band from the first
+year of the data to the last through real pointer events and reads both ends
+off the band's own ARIA. What did change is what a drag *feels* like: a pixel
+is more years in a compressed century than in a busy one, so the same drag
+moves the band further where the corpus is thin, which is the scale doing its
+job rather than a fault in the handle. The density strip (H4c) needed nothing
+either: it is drawn in pixels off `barBox`, so it follows the buckets and
+covers the compressed part on its own.
+
+**The ticks follow the scale.** Every century boundary is a candidate, plus
+round years inside a bucket wide enough for them; both are thinned so that no
+two labels are closer than the room a four-digit year needs. A century is
+labelled only where its label fits — at 1440 px that is every one of them, at
+390 px it is 1200, 1300, 1500, 1700 and 1900 — and a century may take a round
+year's label but never another century's, which is the bug the phone width
+found: a run of narrow columns handed the label along and left one at each end,
+so eight centuries read as two.
+
+**The fixtures.** Nine synthetic events from 1415 to 2025 and eight links
+between them stretch `tests/fixtures/data/` from 12 events to 21, so the
+bucketed scale can be seen working before M42 brings any real record from
+before 1890. They are fixtures, not history: each says so in its own summary,
+none carries a category or a place, and nothing was written under `data/`.
+
+`node tools/validate.mjs`: **2,266 records, 0 errors**, unchanged — this run
+wrote no record. `node --test --test-timeout=120000`: **1,442 tests, 0
+skipped, 0 failed**, up from 1,425. The screenshots are
+`docs/screens/m43-timeline-wide.png` at 1440 px and
+`docs/screens/m43-timeline-phone.png` in a 390 × 844 viewport.
+
+**What is still owed.** M43a — the territories before 1886 — has its own run
+and none of it was touched here.
+
+### Deviations 704 to 711 — M43b
+
+704. **The opening window is the atlas's, not the state's, and that was the
+     second attempt.** The first wrote the century into `from` and `to` at
+     boot, in `main.js`, which is five lines and makes every view agree for
+     free. It also turns a bare link into `?from=1200&to=1299`, and the brief
+     says in bold that nothing in the URL changes. So it was thrown away and
+     the window threaded instead: `data.js` computes `opens` beside `extent`,
+     `resolveWindow` takes it as a third argument and answers it only when both
+     bounds are null, and the fifteen call sites pass `atlas.opens`. The cost
+     is those fifteen lines and one more in `containsYear` — the search box
+     asks it whether choosing a record needs the band moved, and a question
+     about the drawn window answered from the written one would have left the
+     reader's own choice faded outside it.
+705. **The graph view took the same scale, which is more than the brief asked
+     for.** `graph-view/layout.js` says in its own head that its x is "the
+     year, on the whole extent of the data, exactly the scale the timeline
+     keeps", and with the fixtures stretched that stopped being true: the
+     thirteenth century became a hundredth of the graph's width while it was a
+     third of the timeline's, and two fixtures five years apart were one node.
+     Carrying the scale over is `counts` through `packInput`, the scale's own
+     inputs back through `packLayout` — a function does not survive a
+     structured clone and a bucketed scale rebuilt as a linear one puts every
+     node a hundred pixels out — and `createTimelineScale` in place of
+     `createLinearScale` in two files. It is recorded here rather than done
+     quietly because it is the graph and the brief is the timeline; the
+     alternative was to break a documented invariant and then edit four tests
+     to accommodate the breakage. **The owner may want it reverted**, in which
+     case the four graph tests of deviation 707 need a different subject.
+706. **`fixture-event-g` moved from 1265 to 1270.** Over eight centuries the
+     graph's thirteen-pixel stack distance is about seven years, so
+     `fixture-event-f` at 1260 and `fixture-event-g` at 1265 became one node —
+     correctly, and fatally for the two tests that are about `f` having a node
+     of its own with a ring and a badge. The fixture that exists to be told
+     apart from its neighbour is held ten years clear of it, and its summary
+     says so. No other fixture's years were touched.
+707. **Four tests in `graph-browser.test.mjs` name the whole extent now.** They
+     are about the collapse of a parent below `COLLAPSE_ZOOM`, and the graph
+     zooms to a window that is a small share of the data — to `FIT_ZOOM`, which
+     *is* `COLLAPSE_ZOOM` (`graph-view.js`, `fitToWindow`). So the fixtures'
+     default view is now above the threshold those tests are about, and
+     `?from=1200&to=2025` is how a reader asks for the zoomed-out picture the
+     collapse belongs to. Nothing else in them changed.
+708. **Eight tests that pinned a fact about the corpus now assert the rule.**
+     `manifest.counts`, the atlas's extent, the fixture record and warning
+     totals, the number of explanation files a path costs, the events-in-view
+     note, and the tenure strip's scale were all written out as numbers and all
+     of them moved. Each is counted off the records on disk or read out of the
+     tool's own output instead — the same correction two runs made this week
+     (`ffd737c`, `522e79e`). The tenure strip's four tests scale against a
+     `HELD` extent written out on purpose: what a bar's x says about a turn is
+     a fact about the strip and not about how long the corpus happens to be.
+709. **`docs/screens/frame.html`, because headless Chromium has a minimum
+     window of 500 CSS pixels.** Asked for 390 it lays the page out at 500 and
+     crops the picture to 390, so the first phone shot was the left tenth-less
+     of the interface with the masthead, the map and the axis all cut off, and
+     nothing in the tool said so. An iframe has a viewport of its own, so the
+     shot is taken at a window the browser will give and what is photographed
+     inside it is exactly 390 × 844 — the same viewport
+     `tests/phone-browser.test.mjs` drives. The page also marks the
+     introduction as seen, which these two shots need and no other shot does:
+     the introduction covers a view opened with no window in the URL, and a
+     window in the URL is the one thing these two may not name.
+710. **M43b changes nothing a reader can see today, and that is the design.**
+     Both the scale and the opening window are behind the same threshold, and
+     `data/` is under it. A run that made the timeline bucket over 1894–2026
+     would have moved every picture under `docs/screens/` and every browser
+     test's geometry to no purpose, since a hundred and thirty-two years on a
+     linear axis is a fair drawing of a hundred and thirty-two years. The
+     threshold is one rule in `util/window.js` and both halves read it, so
+     M42's first pre-1890 record turns both on together.
+711. **The fixture index is hashed from git, so it must be rebuilt after the
+     commit that adds the records, not before.** The history shards carry each
+     record's commits; an index built from a working tree where the records are
+     untracked names different files from one built after they land. This cost
+     one red check — `validate.mjs --index` on the fixtures reported thirteen
+     missing history shards on a tree that was green locally. The amendment of
+     15 September is about `data/`; `tests/fixtures/data/` has the same rule and
+     one extra turn of the crank: **commit the records, rebuild, commit the
+     index.**
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
