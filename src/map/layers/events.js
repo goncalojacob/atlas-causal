@@ -33,6 +33,10 @@ import { glyphClasses, glyphUse } from '../glyphs.js';
 // não há um segundo, e as etiquetas do desdobramento aqui em baixo são as
 // mesmas letras que as outras.
 import { LABEL_HALO, LABEL_SIZE, PRIORITY, shorten } from '../labels.js';
+// O zoom a que este mapa começa a escrever nomes está lá também: era daqui,
+// era `LABEL_ZOOM = 4`, e agora vale para as etiquetas todas e não só para
+// estas — quem o aplica é a ronda, uma vez, antes de perguntar seja a quem
+// for (map.js).
 
 // Sizes in SVG units at k = 1; every one of them is divided by k when drawn,
 // so a mark, a badge and a label keep their size on screen at any zoom.
@@ -51,12 +55,6 @@ const BADGE_SIZE = 10;
 // mark's own outline and never reaches the hit circle around it.
 const RING_GAP = 3;
 const RING_WIDTH = 1;
-// Labels would be noise on the whole world; they start once the reader has
-// zoomed to about a country, and only the heaviest clusters on screen get
-// one. How many is the placer's limit for priority 0 and is passed to it by
-// `map.js`; this is the zoom below which this layer offers no candidate at
-// all, which is a statement about events and belongs here.
-const LABEL_ZOOM = 4;
 // How far outside the visible rectangle a mark still has to be drawn, in SVG
 // units at k = 1: its hit circle and the badge that sits above and to the
 // right of a cluster, so nothing half on screen is half missing. A label is
@@ -228,7 +226,6 @@ export function createEventsLayer(group, projection, {
     // has always put a label: knowing how wide a mark is is this layer's
     // business and not the placer's.
     labelCandidates() {
-      if (labelling.k < LABEL_ZOOM) return [];
       const candidates = [];
       for (const cluster of labelling.clusters) {
         const name = nameOf(cluster.representative.event);

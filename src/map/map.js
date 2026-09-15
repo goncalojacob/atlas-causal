@@ -24,7 +24,7 @@ import { esc } from '../util/esc.js';
 import { normalizeBbox } from '../state.js';
 import { renderKey, shardsArrived } from '../render-key.js';
 import {
-  LABEL_HALO, LABEL_SIZE, LIMITS, PRIORITY, placeLabels,
+  LABEL_HALO, LABEL_SIZE, LABEL_ZOOM, LIMITS, PRIORITY, placeLabels,
 } from './labels.js';
 import { labelOf } from '../attributes.js';
 import { exportButton } from '../share.js';
@@ -624,6 +624,13 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // função do que já está na chave — a transformação, a janela, as camadas, os
   // ficheiros chegados.
   function drawLabels(box) {
+    // Nada é escrito no mundo inteiro, e a ronda nem chega a perguntar: um
+    // nome à escala do planeta é ruído, e é a mesma frase que as etiquetas dos
+    // acontecimentos sempre disseram (labels.js).
+    if (transform.k < LABEL_ZOOM) {
+      if (labelsGroup.childNodes.length > 0) labelsGroup.replaceChildren();
+      return [];
+    }
     const on = state.get().layers;
     const candidates = [];
     // Os acontecimentos primeiro, que é a ordem em que o colocador os vai pôr
@@ -656,8 +663,12 @@ export function createMap(container, { atlas, state, onCluster = null }) {
         // zoom — que é a razão por que é assim e não em `style.css`.
         'font-size': LABEL_SIZE / transform.k,
         'stroke-width': LABEL_HALO / transform.k,
-      }, title ? [svgTitle(title)] : []);
+      });
+      // O texto primeiro e o `<title>` depois: `textContent` deita fora os
+      // filhos que o elemento já tem, e um `<title>` posto antes dele
+      // desaparecia sem uma palavra.
       el.textContent = label.text;
+      if (title) el.appendChild(svgTitle(title));
       labelsGroup.appendChild(el);
     }
     return placed;

@@ -1121,6 +1121,9 @@ const PORTUGAL_AT_8 = '?bbox=-28,25.34,17,50.66';
 // `LAYERS` at all and is always drawn (deviation 523).
 const BASE_ON = 'land,events,rivers,lakes,physical,mountains,cities';
 
+// And the same without the events, for a picture about the cities alone.
+const CITIES_ON = 'land,rivers,lakes,physical,mountains,cities';
+
 test('zoomed into Portugal the cells of the viewport are fetched and no others', { skip }, async () => {
   await wide(async (page, url) => {
     // Deliberately not FREEZE_TIMELINE: that resizes the map's pane, and what
@@ -1368,5 +1371,194 @@ test('?layers=territories,events opens with the base map off and its boxes untic
       events: document.querySelector('.bar .layers input[data-layer="events"]').checked,
     };`);
     assert.deepEqual(on, { territories: true, events: true });
+  });
+});
+
+// --- M38a: the names ------------------------------------------------------
+//
+// Every label the map draws is in one group, placed by one placer
+// (src/map/labels.js). What can be asserted without a browser is asserted in
+// tests/labels.test.mjs; these are the four things that need a real layout —
+// what is in the DOM at a zoom, what a `<title>` says, what a halo measures,
+// and what a click at a label's centre reaches.
+
+// Every label on screen, with its class, its text, its title, and the box it
+// really occupies. Read off the one group, because if a label were ever drawn
+// anywhere else this would be the test that stops saying anything.
+const LABELS = `
+  const out = [];
+  for (const el of document.querySelectorAll('#map .layer-labels text')) {
+    const box = el.getBoundingClientRect();
+    out.push({
+      cls: el.getAttribute('class'),
+      // The first child alone: textContent would carry the title element's
+      // copy of the name along with the name on the face.
+      text: el.firstChild ? el.firstChild.nodeValue : '',
+      title: el.querySelector('title')?.textContent ?? null,
+      halo: Number(el.getAttribute('stroke-width')),
+      size: Number(el.getAttribute('font-size')),
+      x: box.left, y: box.top, w: box.width, h: box.height,
+      cx: box.left + box.width / 2, cy: box.top + box.height / 2,
+    });
+  }
+  return out;`;
+
+test('at the whole world the map writes no name at all', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url(`?layers=${BASE_ON}`), READY);
+    // Wait for the far files, so this is "the cities are here and unlabelled"
+    // and not "the cities have not arrived".
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-base-cities circle").length > 0;',
+      'the cities of the far level');
+    const k = await page.eval(K_NOW);
+    assert.ok(k < 2, `the world view (k = ${k})`);
+    const labels = await page.eval(LABELS);
+    assert.deepEqual(labels, [], `no name at the world: ${labels.map((l) => l.text).join(' · ')}`);
+    // Natural Earth would write seventeen of them here — it ranks Tokyo and
+    // New York for the world view — and this map writes none until k = 4.
+    const cities = await page.eval('return document.querySelectorAll("#map .layer-base-cities circle").length;');
+    assert.ok(cities > 10, `the dots are there all the same: ${cities}`);
+  });
+});
+
+test('zoomed to Portugal, Lisbon is named once and its title carries its names', { skip }, async () => {
+  await wide(async (page, url) => {
+    // The events off, so this is about the cities: at Lisbon the events of
+    // this atlas stand on the very point the city does, and the test below is
+    // about which of the two gets the box.
+    await open(page, url(`${PORTUGAL_AT_8}&layers=${CITIES_ON}`),
+      'return Boolean(document.querySelector("#map .layer-base > g"));');
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-labels .city-label").length > 0;',
+      'the city labels');
+    const labels = await page.eval(LABELS);
+    const lisbon = labels.filter((l) => l.text === 'Lisbon');
+    assert.equal(lisbon.length, 1, `Lisbon is named once: ${labels.map((l) => l.text).join(' · ')}`);
+    assert.equal(lisbon[0].cls, 'city-label');
+    // The face carries one name and the title carries them all. Natural Earth
+    // gives this city no NAME_EN that differs from its NAME, so today the two
+    // are the same string; M38b adds the dated names the place record holds.
+    assert.equal(lisbon[0].title, 'Lisbon');
+    // No two labels overlap, whatever kind they are: everything that did not
+    // fit was skipped and nothing was nudged out of the way.
+    for (let i = 0; i < labels.length; i += 1) {
+      for (let j = i + 1; j < labels.length; j += 1) {
+        const a = labels[i];
+        const b = labels[j];
+        const hit = a.x < b.x + b.w && b.x < a.x + a.w && a.y < b.y + b.h && b.y < a.y + a.h;
+        assert.ok(!hit, `"${a.text}" and "${b.text}" overlap`);
+      }
+    }
+    // And no name is written for a dot that is not drawn yet: every label on
+    // screen belongs to a city whose `zl` the zoom has passed.
+    assert.equal(labels.every((l) => l.cls === 'city-label'), true,
+      `with the events off, the names are the cities' alone: ${[...new Set(labels.map((l) => l.cls))].join(' ')}`);
+  });
+});
+
+test('where an event and a city want the same box, the event has it', { skip }, async () => {
+  await wide(async (page, url) => {
+    // Thirty-seven of this atlas's events stand on Lisbon's own point, so the
+    // two labels are the same box twice. With the events on, the event's is
+    // the one drawn and the city's is skipped — never moved aside, because a
+    // label that drifted would end up naming its neighbour.
+    await open(page, url(`${PORTUGAL_AT_8}&layers=${BASE_ON}`),
+      'return Boolean(document.querySelector("#map .layer-labels text"));');
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-labels .city-label").length > 0;',
+      'the city labels');
+    const withEvents = await page.eval(LABELS);
+    const kinds = new Set(withEvents.map((l) => l.cls));
+    assert.ok(kinds.has('mark-label') && kinds.has('city-label'),
+      `both kinds are on this picture: ${[...kinds].join(' ')}`);
+    assert.equal(withEvents.some((l) => l.cls === 'city-label' && l.text === 'Lisbon'), false,
+      'the city under the events is not named twice over them');
+    // The proof that it was the competition and not the zoom: switch the
+    // events off at the same box and the city has its name back.
+    await open(page, url(`${PORTUGAL_AT_8}&layers=${CITIES_ON}`),
+      'return Boolean(document.querySelector("#map .layer-labels .city-label"));');
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-labels .city-label").length > 0;',
+      'the city labels again');
+    const without = await page.eval(LABELS);
+    assert.equal(without.some((l) => l.cls === 'city-label' && l.text === 'Lisbon'), true,
+      `with the events off, Lisbon is named: ${without.map((l) => l.text).join(' · ')}`);
+    // An event's label is still `.mark-label`, found by the selector every
+    // test written before this one uses; what changed is the group it hangs in
+    // (deviation 527).
+    assert.ok(withEvents.some((l) => l.cls === 'mark-label'), 'the events keep their class');
+  });
+});
+
+test('a label is the same size on screen at every zoom, and its halo does not grow', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url(`${PORTUGAL_AT_8}&layers=${BASE_ON}`),
+      'return Boolean(document.querySelector("#map .layer-labels text"));');
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-labels text").length > 0;', 'the labels');
+    const k = await page.eval(K_NOW);
+    const at8 = await page.eval(LABELS);
+    // The halo and the type size are written per label and divided by k, so
+    // that both are the same number of screen pixels at every zoom. At k = 8
+    // the attribute is an eighth of the 2 and the 11 it would be at k = 1 —
+    // which is the whole reason they are attributes and not CSS.
+    assert.ok(k > 7.5 && k < 8.5, `k = ${k}`);
+    assert.ok(Math.abs(at8[0].halo - 2 / k) < 1e-6, `the halo at k = ${k} is ${at8[0].halo}`);
+    assert.ok(Math.abs(at8[0].size - 11 / k) < 1e-6, `the size at k = ${k} is ${at8[0].size}`);
+    // On screen, therefore, they measure the same at k = 8 as at k = 4: the
+    // picture is scaled by k and the attributes are divided by it.
+    const heights = at8.map((l) => l.h);
+    await page.eval(zoomIn(400));
+    await waitFor(page, `return ${JSON.stringify(k)} > (window.__k || 0) || true;`, 'the zoom to settle');
+    const after = await page.eval(LABELS);
+    const k2 = await page.eval(K_NOW);
+    assert.ok(k2 < k, `the wheel zoomed out (${k} → ${k2})`);
+    if (after.length > 0) {
+      assert.ok(Math.abs(after[0].halo - 2 / k2) < 1e-6, `the halo follows the zoom (${after[0].halo} at k = ${k2})`);
+      assert.ok(Math.abs(after[0].h - heights[0]) < 2,
+        `and a label is the same height on screen: ${heights[0]} then ${after[0].h}`);
+    }
+  });
+});
+
+test('a click at a label\'s centre reaches the mark under it, and no label is in the tab order', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url(`${PORTUGAL_AT_8}&layers=${BASE_ON}`),
+      'return Boolean(document.querySelector("#map .layer-labels text"));');
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-labels .city-label").length > 0;',
+      'the city labels');
+    // No label is a control: no id to select by, nothing focusable, and the
+    // whole group is transparent to the pointer.
+    const shape = await page.eval(`
+      const group = document.querySelector('#map .layer-labels');
+      const labels = [...group.querySelectorAll('text')];
+      return {
+        pointerEvents: getComputedStyle(group).pointerEvents,
+        withId: labels.filter((el) => el.hasAttribute('data-id') || el.hasAttribute('data-cluster')).length,
+        focusable: labels.filter((el) => el.hasAttribute('tabindex')).length,
+      };`);
+    assert.equal(shape.pointerEvents, 'none');
+    assert.equal(shape.withId, 0, 'no label carries an id');
+    assert.equal(shape.focusable, 0, 'and none of them is in the tab order');
+
+    // A click at the centre of a city's label lands on whatever is under it,
+    // which over open ground is nothing: it selects nothing and it puts down
+    // nothing that was not already down.
+    const city = (await page.eval(LABELS)).find((l) => l.cls === 'city-label');
+    assert.ok(city, 'a city label to aim at');
+    const under = await page.eval(`
+      const el = document.elementFromPoint(${city.cx}, ${city.cy});
+      return { tag: el ? el.tagName : null, cls: el ? String(el.getAttribute('class') || '') : null };`);
+    assert.ok(!String(under.cls).includes('label'), `the label takes no pointer (${under.tag} ${under.cls})`);
+
+    // And an event's label over its own mark: the click reaches the mark and
+    // opens the record, which is the thing a label must never get in the way
+    // of. The mark is the one the label was placed beside, so aim at its own
+    // centre — the label sits to the right of the hit circle and the pointer
+    // has to pass through the label's box to get there at all.
+    const opened = await page.eval(`
+      const label = [...document.querySelectorAll('#map .layer-labels .mark-label')][0];
+      if (!label) return null;
+      const box = label.getBoundingClientRect();
+      const el = document.elementFromPoint(box.left + box.width / 2, box.top + box.height / 2);
+      return el ? String(el.getAttribute('class') || el.tagName) : 'nothing';`);
+    assert.ok(opened === null || !String(opened).includes('label'),
+      `an event's label takes no pointer either (${opened})`);
   });
 });

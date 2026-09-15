@@ -37,6 +37,19 @@ export const LABEL_HALO = 2;
 // a mesma pergunta e os dois chamadores fazem-na.
 export const LABEL_CHARS = 30;
 
+// O zoom a partir do qual este mapa escreve nomes. Quatro, que é onde as
+// etiquetas dos acontecimentos sempre começaram: nomes no mundo inteiro são
+// ruído, e a esta altura o leitor já está a olhar para um país.
+//
+// Vale para as etiquetas todas e não só para as dos acontecimentos, porque a
+// frase é sobre o mapa e não sobre uma camada. Natural Earth marca dezassete
+// cidades — Tóquio, Nova Iorque, Moscovo — para serem escritas à escala do
+// mundo, que é a decisão certa para o atlas *dela*; num mapa da expansão
+// portuguesa seriam dezassete nomes de outro mapa por cima do primeiro
+// fotograma. Acima deste piso é o `zl` de cada uma que decide, que é o que o
+// briefing pede.
+export const LABEL_ZOOM = 4;
+
 // As prioridades, que são a hierarquia do mapa dita em três números: um
 // acontecimento é o que este atlas é, uma cidade é onde ele aconteceu, e uma
 // serra é o chão por baixo dos dois (decisão 9 do plano). Um pico, um rio e um
