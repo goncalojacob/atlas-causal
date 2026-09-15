@@ -2217,7 +2217,7 @@
       ]
     },
     "molotov-ribbentrop-pact--katyn-massacre--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3102,7 +3102,7 @@
       ]
     },
     "world-war-i--february-revolution--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
