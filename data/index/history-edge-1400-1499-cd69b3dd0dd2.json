@@ -1,8 +1,8 @@
 {
-  "from": 1700,
+  "from": 1400,
   "kind": "edge",
   "records": {
-    "haitian-revolution-1791-1804--the-cuban-sugar-boom--caused": {
+    "indigenous-depopulation-of-the-greater-antilles--the-atlantic-slave-trade-to-the-caribbean--caused": {
       "from": "git",
       "versions": [
         {
@@ -11,7 +11,7 @@
         }
       ]
     },
-    "the-british-industrial-revolution--slave-trade-act-1807--enabled": {
+    "indigenous-depopulation-of-the-greater-antilles--the-caribbean-sugar-revolution--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -20,16 +20,7 @@
         }
       ]
     },
-    "the-cuban-sugar-boom--cuban-revolution--precondition-of": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        }
-      ]
-    },
-    "the-cuban-sugar-boom--cuban-war-of-independence-1895-1898--caused": {
+    "the-first-columbian-voyage-1492--indigenous-depopulation-of-the-greater-antilles--caused": {
       "from": "git",
       "versions": [
         {
@@ -38,16 +29,7 @@
         }
       ]
     },
-    "the-cuban-sugar-boom--platt-amendment-1901--precondition-of": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        }
-      ]
-    },
-    "the-cuban-sugar-boom--spanish-american-war-1898--precondition-of": {
+    "the-first-columbian-voyage-1492--the-atlantic-slave-trade-to-the-caribbean--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -56,7 +38,25 @@
         }
       ]
     },
-    "transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--transfer-of-the-portuguese-court-to-brazil-1807--precondition-of": {
+    "the-first-columbian-voyage-1492--treaty-of-tordesillas-1494--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "treaty-of-tordesillas-1494--portuguese-landfall-in-brazil-1500--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "treaty-of-tordesillas-1494--the-atlantic-slave-trade-to-brazil--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -67,5 +67,5 @@
     }
   },
   "schema": 1,
-  "to": 1799
+  "to": 1499
 }

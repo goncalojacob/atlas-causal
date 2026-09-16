@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-16",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -42,5 +42,6 @@
   "actors": [],
   "names": [
     "Guerra hispano-estadounidense"
-  ]
+  ],
+  "parent": "cuban-war-of-independence-1895-1898"
 }

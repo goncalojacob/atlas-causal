@@ -188,6 +188,25 @@ Rio was nearer the mines and had a harbour the gold could leave from.
 `the-brazilian-gold-cycle` and the imprecision lives in `when`, where a
 `{min, max}` bound can hold it, rather than in a slug that cannot.
 
+**The shape has two parents, not sixteen.** §3 asked for roughly eight
+top-level events a chain with children beneath them, and the schema is exact
+about what a child is: *the larger event this one is part of — a battle inside
+a war, a decree inside a revolution*. Two records here are that, and both are
+written: `strangford-treaty-1810` is an act of the exiled court inside the
+thirteen years `transfer-of-the-portuguese-court-to-brazil-1807` covers, and
+`spanish-american-war-1898` is a war fought inside
+`cuban-war-of-independence-1895-1898`, which is how the sources put it —
+American intervention in the Cuban war, its final three months escalating into
+the other one. **Every other candidate was refused.** A chain made of export
+cycles, statutes, treaties and a company has almost no containment in it: the
+capital's move to Rio is a *consequence* of the gold cycle and the atlas
+already says so with an edge, and calling it a *part* of the cycle as well
+would be the same claim written twice in two vocabularies. The hierarchy §3
+expected is a property of wars, which M42 brings; it is not a property of these
+subjects, and inventing it to fill the shape would have been the one thing this
+milestone was told not to do. **M48's "top level only" filter now hides twelve
+nodes where it hid ten.**
+
 **No event in these chains names an actor.** Every polity record the atlas
 holds for Portugal, Spain, Britain or Brazil carries the span of the territory
 import that created it — `portugal` begins in 1886, `castile` ends in 1491 —
