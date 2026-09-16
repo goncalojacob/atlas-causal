@@ -6,561 +6,569 @@
   "entries": {
     "Afghanistan": {
       "actor": "afghanistan",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Angola": {
       "actor": "angola-before-1886",
       "names": [
         "Angola"
       ],
-      "note": "data/actors/angola.json carries this name and is a different question: it runs from 1975, and this source draws the name in 1815, last at 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at angola."
+      "note": "data/actors/angola.json carries this name and is a different question: it runs from 1975, and this source draws the name in 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at angola."
     },
     "Argentina": {
       "actor": "argentina",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Austria Hungary": {
       "actor": "austria-hungary",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Awá": {
       "actor": "awa",
       "names": [
         "Awá"
       ],
-      "note": "Two different peoples the folding would have made one. Both are drawn in the 1492 snapshot and they do not touch: this one is at 47W to 46W, 5S to 3S, and Ãwa is at 51W to 48W, 15S to 10S. Which of the two should keep the plain id is arbitrary and is the order the names sort in."
+      "note": "Two of the source's own names fold to \"awa\" and they are not one thing: this one is drawn at 47W to 46W, 5S to 3S and \"Ãwa\" at 51W to 48W, 15S to 10S, in the same snapshot. The suffix is a handle and says nothing; the name on the record is the source's own."
     },
     "Ãwa": {
       "actor": "awa-2",
       "names": [
         "Ãwa"
       ],
-      "note": "See the entry for Awá: same fold, different people, different ground in the same snapshot. The -2 is a handle and says nothing; the name on the record is the source's own."
+      "note": "Two of the source's own names fold to \"awa\" and they are not one thing: this one is drawn at 51W to 48W, 15S to 10S and \"Awá\" at 47W to 46W, 5S to 3S, in the same snapshot. The suffix is a handle and says nothing; the name on the record is the source's own."
     },
     "Bahamas": {
       "actor": "bahamas-before-1886",
       "names": [
         "Bahamas"
       ],
-      "note": "data/actors/bahamas.json carries this name and is a different question: it runs from 1973, and this source draws the name in 1783, 1800, last at 1800. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at bahamas."
+      "note": "data/actors/bahamas.json carries this name and is a different question: it runs from 1973, and this source draws the name in 1783, 1800. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at bahamas."
     },
     "Barbados": {
       "actor": "barbados-before-1886",
       "names": [
         "Barbados"
       ],
-      "note": "data/actors/barbados.json carries this name and is a different question: it runs from 1966, and this source draws the name in 1815, last at 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at barbados."
+      "note": "data/actors/barbados.json carries this name and is a different question: it runs from 1966, and this source draws the name in 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at barbados."
     },
     "Belgium": {
       "actor": "belgium",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Belize": {
       "actor": "belize-before-1886",
       "names": [
         "Belize"
       ],
-      "note": "data/actors/belize.json carries this name and is a different question: it runs from 1981, and this source draws the name in 1650, 1700, 1715, 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at belize."
+      "note": "data/actors/belize.json carries this name and is a different question: it runs from 1981, and this source draws the name in 1650, 1700, 1715, 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at belize."
     },
     "Benin": {
       "actor": "benin-before-1886",
       "names": [
         "Benin"
       ],
-      "note": "data/actors/benin.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1400, 1492, 1500, 1530, 1600, 1650, 1700, 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at benin."
+      "note": "data/actors/benin.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1400, 1492, 1500, 1530, 1600, 1650, 1700, 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at benin."
     },
     "Bhutan": {
       "actor": "bhutan-before-1886",
       "names": [
         "Bhutan"
       ],
-      "note": "data/actors/bhutan.json carries this name and is a different question: it runs from 1949, and this source draws the name in 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at bhutan."
+      "note": "data/actors/bhutan.json carries this name and is a different question: it runs from 1949, and this source draws the name in 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at bhutan."
     },
     "Bolivia": {
       "actor": "bolivia",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Bosnia": {
       "actor": "bosnia-before-1886",
       "names": [
         "Bosnia"
       ],
-      "note": "data/actors/bosnia.json carries this name and is a different question: it runs from 1886, and this source draws the name in 1400, last at 1400. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at bosnia."
+      "note": "data/actors/bosnia.json carries this name and is a different question: it runs from 1886, and this source draws the name in 1400. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at bosnia."
     },
     "Bosnia-Herzegovina": {
       "actor": "bosnia-herzegovina-before-1886",
       "names": [
         "Bosnia-Herzegovina"
       ],
-      "note": "data/actors/bosnia-herzegovina.json carries this name and is a different question: it runs from 1992, and this source draws the name in 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at bosnia-herzegovina."
+      "note": "data/actors/bosnia-herzegovina.json carries this name and is a different question: it runs from 1992, and this source draws the name in 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at bosnia-herzegovina."
     },
     "Brunei": {
       "actor": "brunei-before-1886",
       "names": [
         "Brunei"
       ],
-      "note": "data/actors/brunei.json carries this name and is a different question: it runs from 1984, and this source draws the name in 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at brunei."
+      "note": "data/actors/brunei.json carries this name and is a different question: it runs from 1984, and this source draws the name in 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at brunei."
     },
     "Bulgaria": {
       "actor": "bulgaria",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Burundi": {
       "actor": "burundi-before-1886",
       "names": [
         "Burundi"
       ],
-      "note": "data/actors/burundi.json carries this name and is a different question: it runs from 1962, and this source draws the name in 1815, 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at burundi."
+      "note": "data/actors/burundi.json carries this name and is a different question: it runs from 1962, and this source draws the name in 1815, 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at burundi."
     },
     "Canada": {
       "actor": "canada",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Cape Colony": {
       "actor": "cape-colony",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Chile": {
       "actor": "chile",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Colombia": {
       "actor": "colombia",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Congo": {
       "actor": "congo-before-1886",
       "names": [
         "Congo"
       ],
-      "note": "data/actors/congo.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at congo."
+      "note": "data/actors/congo.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at congo."
     },
     "Costa Rica": {
       "actor": "costa-rica",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Cyprus": {
       "actor": "cyprus-before-1886",
       "names": [
         "Cyprus"
       ],
-      "note": "data/actors/cyprus.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1400, 1492, 1500, last at 1500. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at cyprus."
+      "note": "data/actors/cyprus.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1400, 1492, 1500. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at cyprus."
     },
     "Denmark": {
       "actor": "denmark",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Dominican Republic": {
       "actor": "dominican-republic",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Dutch East Indies": {
       "actor": "dutch-east-indies-before-1886",
       "names": [
         "Dutch East Indies"
       ],
-      "note": "data/actors/dutch-east-indies.json carries this name and is a different question: it runs from 1886, and this source draws the name in 1650, 1700, 1715, 1783, 1800, 1815, last at 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at dutch-east-indies."
+      "note": "data/actors/dutch-east-indies.json carries this name and is a different question: it runs from 1886, and this source draws the name in 1650, 1700, 1715, 1783, 1800, 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at dutch-east-indies."
     },
     "Ecuador": {
       "actor": "ecuador",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Egypt": {
       "actor": "egypt-before-1886",
       "names": [
         "Egypt"
       ],
-      "note": "data/actors/egypt.json carries this name and is a different question: it runs from 1922, and this source draws the name in 1715, 1815, 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at egypt."
+      "note": "data/actors/egypt.json carries this name and is a different question: it runs from 1922, and this source draws the name in 1715, 1815, 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at egypt."
     },
     "El Salvador": {
       "actor": "el-salvador",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Ethiopia": {
       "actor": "ethiopia",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1400, 1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1400, 1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Fiji": {
       "actor": "fiji-before-1886",
       "names": [
         "Fiji"
       ],
-      "note": "data/actors/fiji.json carries this name and is a different question: it runs from 1970, and this source draws the name in 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at fiji."
+      "note": "data/actors/fiji.json carries this name and is a different question: it runs from 1970, and this source draws the name in 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at fiji."
     },
     "France": {
       "actor": "france",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1400, 1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1400, 1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Gabon": {
       "actor": "gabon-before-1886",
       "names": [
         "Gabon"
       ],
-      "note": "data/actors/gabon.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at gabon."
+      "note": "data/actors/gabon.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at gabon."
     },
     "Gambia": {
       "actor": "gambia-before-1886",
       "names": [
         "Gambia"
       ],
-      "note": "data/actors/gambia.json carries this name and is a different question: it runs from 1965, and this source draws the name in 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at gambia."
+      "note": "data/actors/gambia.json carries this name and is a different question: it runs from 1965, and this source draws the name in 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at gambia."
     },
     "Georgia": {
       "actor": "georgia-before-1886",
       "names": [
         "Georgia"
       ],
-      "note": "data/actors/georgia.json carries this name and is a different question: it runs from 1991, and this source draws the name in 1400, 1492, 1500, last at 1500. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at georgia."
+      "note": "data/actors/georgia.json carries this name and is a different question: it runs from 1991, and this source draws the name in 1400, 1492, 1500. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at georgia."
     },
     "Greece": {
       "actor": "greece",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Guadeloupe": {
       "actor": "guadeloupe",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1715, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1715, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Guatemala": {
       "actor": "guatemala",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Haiti": {
       "actor": "haiti",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1715, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1715, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Honduras": {
       "actor": "honduras",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Iceland": {
       "actor": "iceland-before-1886",
       "names": [
         "Iceland"
       ],
-      "note": "data/actors/iceland.json carries this name and is a different question: it runs from 1942, and this source draws the name in 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at iceland."
+      "note": "data/actors/iceland.json carries this name and is a different question: it runs from 1942, and this source draws the name in 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at iceland."
     },
     "India": {
       "actor": "india-before-1886",
       "names": [
         "India"
       ],
-      "note": "data/actors/republic-of-india.json carries this name and is a different question: it runs from 1947, and this source draws the name in 1783, last at 1783. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at republic-of-india."
+      "note": "data/actors/republic-of-india.json carries this name and is a different question: it runs from 1947, and this source draws the name in 1783. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at republic-of-india."
     },
     "Japan": {
       "actor": "japan-before-1886",
       "names": [
         "Japan"
       ],
-      "note": "data/actors/japan.json carries this name and is a different question: it runs from 1886, and this source draws the name in 1492, 1500, 1783, 1800, 1815, last at 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at japan."
+      "note": "data/actors/japan.json carries this name and is a different question: it runs from 1886, and this source draws the name in 1492, 1500, 1783, 1800, 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at japan."
     },
     "Korea": {
       "actor": "korea",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Kwakwaka'wakw": {
       "actor": "kwakwaka-wakw",
       "names": [
-        "Kwakwaka'wakw"
+        "Kwakwaka'wakw",
+        "Kwakwaka’wakw"
       ],
-      "note": "One name under two apostrophes; drawn in different years over the same ground on Vancouver Island."
+      "note": "One name under 2 spellings, drawn in different snapshots over the same ground (128W to 124W, 48N to 51N). Merged on that evidence; the folding would have merged them anyway and this makes it a decision."
     },
     "Kwakwaka’wakw": {
       "actor": "kwakwaka-wakw",
       "names": [
-        "Kwakwaka'wakw"
+        "Kwakwaka'wakw",
+        "Kwakwaka’wakw"
       ],
-      "note": "One name under two apostrophes; drawn in different years over the same ground on Vancouver Island."
+      "note": "One name under 2 spellings, drawn in different snapshots over the same ground (128W to 124W, 48N to 51N). Merged on that evidence; the folding would have merged them anyway and this makes it a decision."
     },
     "Lagos": {
       "actor": "lagos",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Laos": {
       "actor": "laos-before-1886",
       "names": [
         "Laos"
       ],
-      "note": "data/actors/laos.json carries this name and is a different question: it runs from 1954, and this source draws the name in 1492, 1500, 1530, 1600, 1800, last at 1800. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at laos."
+      "note": "data/actors/laos.json carries this name and is a different question: it runs from 1954, and this source draws the name in 1492, 1500, 1530, 1600, 1800. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at laos."
     },
     "Liberia": {
       "actor": "liberia",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Luxembourg": {
       "actor": "luxembourg",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Mali": {
       "actor": "mali-before-1886",
       "names": [
         "Mali"
       ],
-      "note": "data/actors/mali.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1400, 1492, 1500, 1650, 1700, 1715, last at 1715. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at mali."
+      "note": "data/actors/mali.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1400, 1492, 1500, 1650, 1700, 1715. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at mali."
     },
     "Malta": {
       "actor": "malta-before-1886",
       "names": [
         "Malta"
       ],
-      "note": "data/actors/malta.json carries this name and is a different question: it runs from 1964, and this source draws the name in 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at malta."
+      "note": "data/actors/malta.json carries this name and is a different question: it runs from 1964, and this source draws the name in 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at malta."
     },
     "Maori": {
       "actor": "maori",
       "names": [
-        "Maori"
+        "Maori",
+        "Māori"
       ],
-      "note": "One name, spelled with and without the macron; the two spellings are drawn in different years over the same ground (166E to 179E, 47S to 35S)."
+      "note": "One name under 2 spellings, drawn in different snapshots over the same ground (166E to 179E, 47S to 35S). Merged on that evidence; the folding would have merged them anyway and this makes it a decision."
     },
     "Māori": {
       "actor": "maori",
       "names": [
-        "Maori"
+        "Maori",
+        "Māori"
       ],
-      "note": "One name, spelled with and without the macron; the two spellings are drawn in different years over the same ground (166E to 179E, 47S to 35S)."
+      "note": "One name under 2 spellings, drawn in different snapshots over the same ground (166E to 179E, 47S to 35S). Merged on that evidence; the folding would have merged them anyway and this makes it a decision."
     },
     "Martinique": {
       "actor": "martinique-before-1886",
       "names": [
         "Martinique"
       ],
-      "note": "data/actors/martinique.json carries this name and is a different question: it runs from 1886, and this source draws the name in 1715, 1815, last at 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at martinique."
+      "note": "data/actors/martinique.json carries this name and is a different question: it runs from 1886, and this source draws the name in 1715, 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at martinique."
     },
     "Mexico": {
       "actor": "mexico",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Moldova": {
       "actor": "moldova-before-1886",
       "names": [
         "Moldova"
       ],
-      "note": "data/actors/moldova.json carries this name and is a different question: it runs from 1991, and this source draws the name in 1400, last at 1400. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at moldova."
+      "note": "data/actors/moldova.json carries this name and is a different question: it runs from 1991, and this source draws the name in 1400. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at moldova."
     },
     "Montenegro": {
       "actor": "montenegro",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1715, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1715, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Morocco": {
       "actor": "morocco",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1400, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1400, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Mozambique": {
       "actor": "mozambique-before-1886",
       "names": [
         "Mozambique"
       ],
-      "note": "data/actors/mozambique.json carries this name and is a different question: it runs from 1975, and this source draws the name in 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at mozambique."
+      "note": "data/actors/mozambique.json carries this name and is a different question: it runs from 1975, and this source draws the name in 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at mozambique."
     },
     "Natal": {
       "actor": "natal",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Nepal": {
       "actor": "nepal",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1492, 1650, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1492, 1650, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Netherlands": {
       "actor": "netherlands",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1715, 1783, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1715, 1783, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "New South Wales": {
       "actor": "new-south-wales-before-1886",
       "names": [
         "New South Wales"
       ],
-      "note": "data/actors/new-south-wales.json carries this name and is a different question: it runs from 1886, and this source draws the name in 1815, last at 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at new-south-wales."
+      "note": "data/actors/new-south-wales.json carries this name and is a different question: it runs from 1886, and this source draws the name in 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at new-south-wales."
     },
     "Nicaragua": {
       "actor": "nicaragua",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Oman": {
       "actor": "oman",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Orange Free State": {
       "actor": "orange-free-state",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Osage": {
       "actor": "osage",
       "names": [
-        "Osage"
+        "Osage",
+        "𐓏𐒰𐓓𐒰𐓓𐒷  𐒼𐓂𐓊𐒻  𐓆𐒻𐒿𐒷  𐓀𐒰^𐓓𐒰^(Osage)"
       ],
-      "note": "The same name written in the Osage script, with \"(Osage)\" appended, in the 1492 snapshot only; the Latin spelling is drawn from 1530 on over the same region."
+      "note": "One name under 2 spellings, drawn in different snapshots over the same ground (98W to 91W, 34N to 39N). Merged on that evidence; the folding would have merged them anyway and this makes it a decision."
     },
     "Papua New Guinea": {
       "actor": "papua-new-guinea-before-1886",
       "names": [
         "Papua New Guinea"
       ],
-      "note": "data/actors/papua-new-guinea.json carries this name and is a different question: it runs from 1975, and this source draws the name in 1492, 1500, 1715, 1783, 1800, 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at papua-new-guinea."
+      "note": "data/actors/papua-new-guinea.json carries this name and is a different question: it runs from 1975, and this source draws the name in 1492, 1500, 1715, 1783, 1800, 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at papua-new-guinea."
     },
     "Paraguay": {
       "actor": "paraguay",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Peru": {
       "actor": "peru",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Philippines": {
       "actor": "philippines-before-1886",
       "names": [
         "Philippines"
       ],
-      "note": "data/actors/philippines.json carries this name and is a different question: it runs from 1946, and this source draws the name in 1492, 1500, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at philippines."
+      "note": "data/actors/philippines.json carries this name and is a different question: it runs from 1946, and this source draws the name in 1492, 1500, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at philippines."
     },
     "Poland": {
       "actor": "poland-before-1886",
       "names": [
         "Poland"
       ],
-      "note": "data/actors/poland.json carries this name and is a different question: it runs from 1918, and this source draws the name in 1783, last at 1783. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at poland."
+      "note": "data/actors/poland.json carries this name and is a different question: it runs from 1918, and this source draws the name in 1783. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at poland."
     },
     "Portugal": {
       "actor": "portugal",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1400, 1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1400, 1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Qatar": {
       "actor": "qatar-before-1886",
       "names": [
         "Qatar"
       ],
-      "note": "data/actors/qatar.json carries this name and is a different question: it runs from 1971, and this source draws the name in 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at qatar."
+      "note": "data/actors/qatar.json carries this name and is a different question: it runs from 1971, and this source draws the name in 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at qatar."
     },
     "Rwanda": {
       "actor": "rwanda-before-1886",
       "names": [
         "Rwanda"
       ],
-      "note": "data/actors/rwanda.json carries this name and is a different question: it runs from 1962, and this source draws the name in 1815, 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at rwanda."
+      "note": "data/actors/rwanda.json carries this name and is a different question: it runs from 1962, and this source draws the name in 1815, 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at rwanda."
     },
     "Senegal": {
       "actor": "senegal-before-1886",
       "names": [
         "Senegal"
       ],
-      "note": "data/actors/senegal.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, last at 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at senegal."
+      "note": "data/actors/senegal.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at senegal."
     },
     "Serbia": {
       "actor": "serbia",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Sierra Leone": {
       "actor": "sierra-leone-before-1886",
       "names": [
         "Sierra Leone"
       ],
-      "note": "data/actors/sierra-leone.json carries this name and is a different question: it runs from 1961, and this source draws the name in 1815, 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at sierra-leone."
+      "note": "data/actors/sierra-leone.json carries this name and is a different question: it runs from 1961, and this source draws the name in 1815, 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at sierra-leone."
     },
     "Somalia": {
       "actor": "somalia-before-1886",
       "names": [
         "Somalia"
       ],
-      "note": "data/actors/somalia.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1815, last at 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at somalia."
+      "note": "data/actors/somalia.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at somalia."
     },
     "Spain": {
       "actor": "spain",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Surinam": {
       "actor": "surinam-before-1886",
       "names": [
         "Surinam"
       ],
-      "note": "data/actors/surinam.json carries this name and is a different question: it runs from 1975, and this source draws the name in 1650, 1700, last at 1700. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at surinam."
+      "note": "data/actors/surinam.json carries this name and is a different question: it runs from 1975, and this source draws the name in 1650, 1700. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at surinam."
     },
     "Sweden": {
       "actor": "sweden-before-1886",
       "names": [
         "Sweden"
       ],
-      "note": "data/actors/sweden.json carries this name and is a different question: it runs from 1886, and this source draws the name in 1492, 1530, 1600, 1650, 1700, 1715, 1783, 1800, last at 1800. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at sweden."
+      "note": "data/actors/sweden.json carries this name and is a different question: it runs from 1886, and this source draws the name in 1492, 1530, 1600, 1650, 1700, 1715, 1783, 1800. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at sweden."
     },
     "Switzerland": {
       "actor": "switzerland",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Taiwan": {
       "actor": "taiwan-before-1886",
       "names": [
         "Taiwan"
       ],
-      "note": "data/actors/taiwan.json carries this name and is a different question: it runs from 1949, and this source draws the name in 1492, 1500, 1878, 1880, last at 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at taiwan."
+      "note": "data/actors/taiwan.json carries this name and is a different question: it runs from 1949, and this source draws the name in 1492, 1500, 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at taiwan."
     },
     "Tibet": {
       "actor": "tibet-before-1886",
       "names": [
         "Tibet"
       ],
-      "note": "data/actors/tibet.json carries this name and is a different question: it runs from 1913, and this source draws the name in 1400, 1492, 1500, 1530, 1600, 1650, 1700, 1715, last at 1715. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at tibet."
+      "note": "data/actors/tibet.json carries this name and is a different question: it runs from 1913, and this source draws the name in 1400, 1492, 1500, 1530, 1600, 1650, 1700, 1715. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at tibet."
     },
     "Transvaal": {
       "actor": "transvaal",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "United Kingdom": {
       "actor": "united-kingdom-before-1886",
       "names": [
         "United Kingdom"
       ],
-      "note": "data/actors/united-kingdom.json carries this name and is a different question: it runs from 1886, and this source draws the name in 1715, 1783, 1800, 1815, last at 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at united-kingdom."
+      "note": "data/actors/united-kingdom.json carries this name and is a different question: it runs from 1886, and this source draws the name in 1715, 1783, 1800, 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at united-kingdom."
     },
     "United States of America": {
       "actor": "united-states-of-america",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1783, 1800, 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1783, 1800, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Uruguay": {
       "actor": "uruguay",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Venezuela": {
       "actor": "venezuela",
-      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything between, so they are one record."
+      "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Wari": {
       "actor": "wari",
       "names": [
         "Wari"
       ],
-      "note": "Two different polities the folding would have made one. Both are drawn in the 1492 snapshot and they do not touch: this one is at 81W to 72W, 17S to 6S, and Wari’ is at 65W, 12S to 10S."
+      "note": "Two of the source's own names fold to \"wari\" and they are not one thing: this one is drawn at 81W to 72W, 17S to 6S and \"Wari’\" at 65W to 65W, 12S to 10S, in the same snapshot. The suffix is a handle and says nothing; the name on the record is the source's own."
     },
     "Wari’": {
       "actor": "wari-2",
       "names": [
         "Wari’"
       ],
-      "note": "See the entry for Wari: same fold, different polity, different ground in the same snapshot. The -2 is a handle and says nothing."
+      "note": "Two of the source's own names fold to \"wari\" and they are not one thing: this one is drawn at 65W to 65W, 12S to 10S and \"Wari\" at 81W to 72W, 17S to 6S, in the same snapshot. The suffix is a handle and says nothing; the name on the record is the source's own."
     },
     "Yup'ik & Cup'ik": {
       "actor": "yup-ik-cup-ik",
       "names": [
-        "Yup'ik & Cup'ik"
+        "Yup'ik & Cup'ik",
+        "Yup’ik/Cup’ik"
       ],
-      "note": "One name under two punctuations; drawn in different years over the same ground in western Alaska."
+      "note": "One name under 2 spellings, drawn in different snapshots over the same ground (166W to 153W, 58N to 64N). Merged on that evidence; the folding would have merged them anyway and this makes it a decision."
     },
     "Yup’ik/Cup’ik": {
       "actor": "yup-ik-cup-ik",
       "names": [
-        "Yup'ik & Cup'ik"
+        "Yup'ik & Cup'ik",
+        "Yup’ik/Cup’ik"
       ],
-      "note": "One name under two punctuations; drawn in different years over the same ground in western Alaska."
+      "note": "One name under 2 spellings, drawn in different snapshots over the same ground (166W to 153W, 58N to 64N). Merged on that evidence; the folding would have merged them anyway and this makes it a decision."
     },
     "Zanzibar": {
       "actor": "zanzibar-before-1886",
       "names": [
         "Zanzibar"
       ],
-      "note": "data/actors/zanzibar.json carries this name and is a different question: it runs from 1963, and this source draws the name in 1715, 1783, 1800, 1815, last at 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody merges them by pointing this entry at zanzibar."
+      "note": "data/actors/zanzibar.json carries this name and is a different question: it runs from 1963, and this source draws the name in 1715, 1783, 1800, 1815. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at zanzibar."
     },
-    "𐓏𐒰𐓓𐒰𐓓𐒷  𐐼𐓂𐓊𐒻  𐔆𐒻𐔿𐒷  𐔀𐒰^𐓓𐒰^(Osage)": {
+    "𐓏𐒰𐓓𐒰𐓓𐒷  𐒼𐓂𐓊𐒻  𐓆𐒻𐒿𐒷  𐓀𐒰^𐓓𐒰^(Osage)": {
       "actor": "osage",
       "names": [
-        "Osage"
+        "Osage",
+        "𐓏𐒰𐓓𐒰𐓓𐒷  𐒼𐓂𐓊𐒻  𐓆𐒻𐒿𐒷  𐓀𐒰^𐓓𐒰^(Osage)"
       ],
-      "note": "The same name written in the Osage script, with \"(Osage)\" appended, in the 1492 snapshot only; the Latin spelling is drawn from 1530 on over the same region."
+      "note": "One name under 2 spellings, drawn in different snapshots over the same ground (98W to 91W, 34N to 39N). Merged on that evidence; the folding would have merged them anyway and this makes it a decision."
     }
   }
 }

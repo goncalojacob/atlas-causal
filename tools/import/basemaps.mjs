@@ -379,7 +379,10 @@ export function planImport(loaded, { created, map = {}, existingActors = new Set
     folded.get(actor).push(name);
   }
   const report = [...folded.entries()]
-    .filter(([, names]) => names.length > 1 && !map[names[0]])
+    // Not reported once the mapping file speaks to the fold at all, whichever
+    // of the spellings carries the entry: an entry is somebody's decision and
+    // there is nothing left to ask about.
+    .filter(([, names]) => names.length > 1 && !names.some((name) => map[name]))
     .map(([actor, names]) => ({ actor, names: [...names].sort() }))
     .sort((a, b) => (a.actor < b.actor ? -1 : 1));
 
