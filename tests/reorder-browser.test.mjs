@@ -137,7 +137,12 @@ test('the review dashboard moves a narrative\'s steps the same way', { skip }, a
     // The real dataset and not the fixtures: every fixture record is signed,
     // so the review queue is empty there, and the one narrative that still
     // carries the draft marker is the one in data/.
-    await open(page, url('review.html'), 'return document.querySelectorAll(".queue-item").length > 0;');
+    // Named in the address rather than hunted for in the queue. Past 2,000
+    // drafts review.html fetches one kind's digests and not all of them, and
+    // since M43a this corpus is past it; `?open=` is what says which kind the
+    // page is for, and it is also how a pull request links to a record.
+    await open(page, url('review.html?open=narrative/how-the-colonial-war-ended-the-regime'),
+      'return document.querySelectorAll(".queue-item").length > 0;');
     await page.eval(`const search = document.querySelector(".queue-search");
       search.value = "how the colonial war";
       search.dispatchEvent(new Event("input", { bubbles: true }));

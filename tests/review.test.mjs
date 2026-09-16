@@ -309,9 +309,24 @@ test('the queue is every draft in data/, and the validator counts the same', asy
   const queue = buildQueue(records);
   assert.equal(queue.length, countDrafts(records));
   assert.ok(queue.length > 0, 'the exception in CLAUDE.md is not retired yet');
-  // Nothing imported is ever in the queue: an import is not a draft.
-  assert.ok(!queue.some((q) => q.kind === 'presence'));
-  for (const item of queue) assert.ok(KIND_ORDER.includes(item.kind), item.kind);
+  // Until M43a this asserted that no presence was ever in the queue and read
+  // it as a rule. It was not one. CLAUDE.md says review.html lists everything
+  // whose review.status is `draft`, whoever wrote it, and cshapes.mjs has put
+  // that on the records it creates since the health review of 6 September
+  // found that it did not (R10). What made the assertion true was an accident
+  // of the data: the 710 CShapes presences on disk predate that fix and carry
+  // no `review` at all — neither draft nor reviewed — so the dashboard never
+  // listed one. The Historical Basemaps import writes the field, so its 5,976
+  // presences are in the queue, which is what the rule asks for.
+  assert.ok(queue.some((q) => q.kind === 'presence'), 'an import that arrives unread is in the queue');
+  // KIND_ORDER is the contribution form's kinds. It is a sort order and not a
+  // gate — queue.js already files a kind outside it last — and what this was
+  // really checking is that nothing in the queue is a kind nobody has decided
+  // about. A presence is decided about: deviation 723 says what it costs that
+  // the editor cannot open one yet.
+  for (const item of queue) {
+    assert.ok(KIND_ORDER.includes(item.kind) || item.kind === 'presence', item.kind);
+  }
 });
 
 // --- the editor's pure parts -----------------------------------------------

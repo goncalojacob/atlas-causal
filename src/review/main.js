@@ -17,7 +17,7 @@ import { attributePeriod, attributeShardKey } from '../explanations.js';
 import { loadSchemas } from '../validate/schemas.js';
 import {
   buildQueue, flagCounts, toolCounts, filterQueue, sortQueue, isDraft, inQueue, labelOf,
-  SORT_KEYS, SORT_LABELS, BY_HAND,
+  SORT_KEYS, SORT_LABELS, BY_HAND, KIND_ORDER,
 } from './queue.js';
 import { createList } from './list.js';
 import { queueRow as drawRow } from './row.js';
@@ -917,7 +917,30 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
   // where that is a few hundred digests, which is the atlas today and is what
   // the page always did; one kind where it is not, and the rest when they are
   // asked for.
-  const first = [...counts].find(([, n]) => n > 0)?.[0] ?? null;
+  //
+  // The one is the first kind KIND_ORDER names, not the first the summary
+  // happens to list. KIND_ORDER is the contribution form's own kinds, which is
+  // exactly the set this page can open a record of: the editor builds a record
+  // out of the form's fields, and a kind the form does not offer — a presence —
+  // opens onto an empty pane. Before M43a nothing was in the queue that the
+  // editor could not open, so any kind would do; 5,976 imported territories
+  // later the summary's first kind is `presence`, and the page opened filtered
+  // to it, fetched its 2.8 MB shard and showed a reviewer a blank editor. What
+  // a reviewer can work on is what the page should start on. (Clicking the
+  // presence chip still reaches them, and still shows that blank pane —
+  // deviation 723 says what that costs and whose call the fix is.)
+  //
+  // And when `?open=` names a record, its kind is the one. `asked()` resolves
+  // off the topology and needs no shard, so the record opens either way — but
+  // in one-kind mode its *row* would be filtered out of the list, and a
+  // reviewer would be looking at a record they cannot see in the queue, cannot
+  // step away from with j and k, and cannot come back to. The address says
+  // which record the page is for; the page starts on its kind.
+  const wanted = params.get('open');
+  const askedFor = asked(wanted);
+  const first = (askedFor && KIND_ORDER.includes(askedFor.kind) ? askedFor.kind : null)
+    ?? KIND_ORDER.find((kind) => (counts.get(kind) ?? 0) > 0)
+    ?? [...counts].find(([, n]) => n > 0)?.[0] ?? null;
   const eager = (summary.drafts ?? 0) <= EAGER_DRAFTS ? [...counts.keys()] : [first].filter(Boolean);
   if (eager.length === 1 && first) filters.kind = first;
 
@@ -925,11 +948,9 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
   saveButton.disabled = true;
   signButton.disabled = true;
   Promise.all(eager.map(load)).then(() => {
-    const wanted = params.get('open');
-    const opening = asked(wanted);
     // Otherwise the queue is in the order the sort chips say, and its first
     // row is the one a reviewer would open anyway.
-    const opened = opening ?? rows[0];
+    const opened = askedFor ?? rows[0];
     // Unless a reviewer got there first: rows are drawn as each kind's shard
     // arrives, so the list can be clicked before the last of them lands, and
     // opening the queue's first record over the one somebody just chose would
@@ -938,7 +959,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
     // After opening, because opening a record clears this line: an address
     // that names nothing is said out loud rather than silently ignored, and
     // what was opened instead is the queue's own first record.
-    if (wanted && !opening) noteEl.textContent = `Nothing here has the id ${wanted}; the queue's first record is open instead.`;
+    if (wanted && !askedFor) noteEl.textContent = `Nothing here has the id ${wanted}; the queue's first record is open instead.`;
     else progressEl.classList.add('good');
   });
 

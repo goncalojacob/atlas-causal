@@ -24,12 +24,38 @@ test('the import-map schema is tool-side and validates the repository map', asyn
   const { maps, problems } = await readImportMaps(DATA);
   assert.deepEqual(problems, []);
   // The directory holds other kinds now; a map is the ones that say so, or
-  // say nothing, and the seeds file is not one of them.
+  // say nothing, and the seeds file is not one of them. Two of them since
+  // M43a, one per territory import, and both are held to the same schema and
+  // the same checks.
   const found = maps.filter((m) => m.kind === DEFAULT_IMPORT_KIND);
-  assert.deepEqual(found.map((m) => m.file), ['imports/cshapes-actors.json']);
+  assert.deepEqual(found.map((m) => m.file).sort(),
+    ['imports/basemaps-actors.json', 'imports/cshapes-actors.json']);
   const v = await validator();
-  assert.deepEqual(v.validate(IMPORT_MAP_SCHEMA, found[0].map), []);
-  assert.deepEqual(checkImportMap(found[0].file, found[0].map), []);
+  for (const one of found) {
+    assert.deepEqual(v.validate(IMPORT_MAP_SCHEMA, one.map), [], one.file);
+    assert.deepEqual(checkImportMap(one.file, one.map), [], one.file);
+  }
+});
+
+// M43a. A source with no entity codes is keyed by its own names, and the
+// declaration is what says so: "1500" is a plausible name as much as a
+// plausible code, and a check that guessed would pass the wrong file.
+test('a map declares whether its keys are the source s codes or its names', async () => {
+  const { maps } = await readImportMaps(DATA);
+  const byFile = new Map(maps.map((m) => [m.file, m.map]));
+  assert.equal(byFile.get('imports/basemaps-actors.json').keys, 'name');
+  // CShapes declares nothing and is read as codes, which is what the
+  // directory held before there was anything else.
+  assert.equal(byFile.get('imports/cshapes-actors.json').keys, undefined);
+
+  const named = { schema: 1, keys: 'name', source: 'historical-basemaps', entries: { 'Ottoman Empire': { actor: 'ottoman-empire' } } };
+  assert.deepEqual(checkImportMap('f', named), []);
+  // The same file read as codes, which is the default, refuses it.
+  assert.match(checkImportMap('f', { ...named, keys: undefined })[0].message, /is not an entity code of the source/);
+  // And a name with space around it is refused either way: a key is the
+  // source's own string and nothing near it.
+  const padded = { ...named, entries: { ' Ottoman Empire': { actor: 'ottoman-empire' } } };
+  assert.match(checkImportMap('f', padded)[0].message, /with no surrounding space/);
 });
 
 test('the repository map carries the two splits the milestone asked for', async () => {

@@ -124,6 +124,18 @@ test('the queue draws 20 000 drafts and answers a keystroke', { skip }, async ()
 test('the record pane shows the history, the claim and the diff against the draft', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url('review.html'), QUEUE_READY);
+    // An event, chosen rather than whichever record the queue opens itself on.
+    // Presences carry no history — build-index leaves them out of the shards
+    // on purpose, since an outline has no prose to diff — and since M43a they
+    // are most of the queue, so the record the page opens by itself is one of
+    // them and has no history block to wait for. The block is what this test
+    // is about, so the record is named instead of assumed.
+    await page.eval(`const chip = [...document.querySelectorAll(".queue-filters .chip")].find((b) => b.textContent.startsWith("event ("));
+      if (!chip) throw new Error("no event in the queue");
+      chip.click();
+      return true;`);
+    await waitFor(page, 'return document.querySelectorAll(".queue-item").length > 0;', 'the event rows');
+    await page.eval('document.querySelectorAll(".queue-item")[0].click(); return true;');
     // The block is on the page before its versions are: the history is one
     // fetch per record opened, and since I4b the record pane is drawn out of
     // the core rather than behind the whole corpus, so it gets there sooner.
