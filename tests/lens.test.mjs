@@ -272,12 +272,36 @@ test('the answer is computed once per state, and again when the citers land', ()
   assert.deepEqual(sorted(second.set), ['d']);
 });
 
-test('reading a narrative suspends the lens', () => {
-  const t = topology();
+// M48 §1. It used to suspend it, and that is why a twelve-step argument was
+// drawn over all 250 events in the corpus.
+test('reading a narrative sets the lens to the walk', () => {
+  const t = withResolve(topology());
   // Salazar's two events are a and b, and the one live edge runs between
   // them, so the ring is empty and the lens draws exactly the two.
   assert.equal(lensSet(t, { focus: 'actor:salazar', narrative: null }).size, 2);
-  assert.equal(lensSet(t, { focus: 'actor:salazar', narrative: 'how-it-ended' }), null);
+
+  // The walk is c and the two ends of the live edge, a and b.
+  const reading = lensView(t, { narrative: 'how-it-ended' });
+  assert.deepEqual(activeFoci(t, { narrative: 'how-it-ended' }), [{ kind: 'narrative', id: 'how-it-ended' }]);
+  assert.deepEqual(sorted(reading.set), ['a', 'b', 'c']);
+  // Everything the walk touches is already in it, so nothing is left to dim
+  // here; `d` is behind a retracted edge and is out of the picture entirely.
+  assert.ok(!reading.shown.has('d'), 'and what the walk does not reach is hidden');
+  assert.ok(reading.implicit, 'the reader asked for the walk, not for a narrow answer');
+
+  // An explicit `?focus=` the reader typed wins over the walk they are in.
+  assert.deepEqual(sorted(lensSet(t, { focus: 'actor:salazar', narrative: 'how-it-ended' })), ['a', 'b']);
+  // And `none` is still how they ask for the walk against the whole atlas.
+  assert.equal(lensSet(t, { focus: FOCUS_NONE, narrative: 'how-it-ended' }), null);
+});
+
+test('a narrative that reaches nothing in this atlas is not a lens', () => {
+  const t = withResolve(topology());
+  assert.equal(lensView(t, { narrative: 'nothing-of-the-sort' }), null);
+  // A walk whose every step has been retracted draws the whole atlas rather
+  // than a blank one, exactly as an actor with no events does (R8).
+  t.narratives.get('how-it-ended').steps = [{ ref: 'not-a-record' }];
+  assert.equal(lensView(t, { narrative: 'how-it-ended' }), null);
 });
 
 test('shownEvents keeps the atlas order and the whole list without a lens', () => {

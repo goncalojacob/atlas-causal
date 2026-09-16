@@ -114,6 +114,26 @@ function stepRecordHtml(ctx, resolved) {
   return `<section class="step-record"><p class="notice">This step names <code>${esc(resolved.ref)}</code>, which is not in the atlas.</p></section>`;
 }
 
+// "Focus on this", on the card of a walk being read.
+//
+// It used to be the walk's own control, and it was the symptom the owner
+// reported on 16 September: the mode drew the twelve steps over all 250 events
+// and then asked the reader to narrow by hand. Since M48 the walk *is* the lens
+// (lens.js), so the control that stays means the next narrowing in — the step
+// rather than the whole argument, which is what a reader would take it for once
+// the walk is the frame they are already in.
+//
+// Whatever the step names, where the lens has a kind for it: the event a step
+// arrives at (an edge's step is its far end, resolveRef), or the actor a step
+// names to say who did it. A step naming a relation or a presence has no lens
+// of its own and offers no control, the way a card with nothing to focus on
+// offers none.
+function stepLensControl(ctx, resolved) {
+  if (resolved?.event) return ctx.lensControl('event', resolved.event.id);
+  if (resolved?.kind === 'actor' && resolved.record) return ctx.lensControl('actor', resolved.record.id);
+  return '';
+}
+
 export function renderNarrativeCard(ctx, { container, narrative, state, mine }) {
   const steps = narrativeSteps(ctx.atlas, narrative);
   const index = clampStep(narrative, state.step);
@@ -130,7 +150,7 @@ export function renderNarrativeCard(ctx, { container, narrative, state, mine }) 
     <header class="narrative-head">
       <h2>${esc(narrative.title)}</h2>
       <p class="meta"><span class="muted">${authorsLine(narrative)}</span> · <span class="count">step ${index + 1} of ${total}</span>
-        ${ctx.lensControl('narrative', narrative.id)}</p>
+        ${stepLensControl(ctx, resolved)}</p>
       <p class="entry-link"><a href="narratives.html">Every narrative, by the years it is about →</a></p>
       ${ctx.discussLink('narrative', narrative.id)}
     </header>

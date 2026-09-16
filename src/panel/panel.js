@@ -15,7 +15,7 @@ import { articleFor } from '../wikipedia.js';
 import { windowAt, resolveWindow } from '../util/window.js';
 import { OPENINGS, hasOpening } from '../state.js';
 import {
-  formatFocus, lensSet, lensLabels, withFocus, withoutFocus, FOCUS_NONE,
+  formatFocus, lensSet, lensLabels, isImplicitLens, withFocus, withoutFocus, FOCUS_NONE,
 } from '../lens.js';
 import { lanesFor } from '../lanes.js';
 import { shortestPaths, pathTo } from '../graph.js';
@@ -131,9 +131,17 @@ export function createPanel(container, {
       case 'focus':
         state.set({ focus: withFocus(currentFocus(s), el.dataset.kind, el.dataset.id) });
         break;
-      case 'unfocus':
-        state.set({ focus: withoutFocus(currentFocus(s), el.dataset.kind, el.dataset.id) });
+      // The × of the same control. Emptying the list normally leaves `none`,
+      // which is the reader saying no to the lens an open card would give them
+      // back. While reading it leaves the parameter absent instead: the frame
+      // they were in before they narrowed to the step is the walk, not the
+      // whole atlas, and `none` is still reachable — it is what the walk's own
+      // chip in the header drops to.
+      case 'unfocus': {
+        const left = withoutFocus(currentFocus(s), el.dataset.kind, el.dataset.id);
+        state.set({ focus: left === FOCUS_NONE && s.narrative ? null : left });
         break;
+      }
       // `none` and not null: an absent parameter is what asks for the lens an
       // open actor or place gets, so clearing it would put that lens back.
       case 'clear-focus':
@@ -346,7 +354,15 @@ export function createPanel(container, {
   // The lens list that is actually on, which is not always the parameter:
   // an open actor or place with no `?focus=` is a lens on itself (lens.js),
   // and adding to it has to add to that and not to nothing.
-  const currentFocus = (s) => lensLabels(atlas, s).map((f) => f.focus).join(',');
+  // The implied walk is deliberately not in it. Since M48 reading a narrative
+  // is a lens on that walk (lens.js), and "Focus on this" on the step's record
+  // is a reader asking to narrow to the step: adding to the list would union
+  // the two and give them the walk back with one event's neighbourhood on top,
+  // which is the opposite of what the control now says. A `?focus=` they typed
+  // themselves is in the list like any other, walk or no walk.
+  const currentFocus = (s) => lensLabels(atlas, s)
+    .filter((f) => !(f.kind === 'narrative' && s.narrative === f.id && isImplicitLens(s)))
+    .map((f) => f.focus).join(',');
 
   // The one verb, on the card of whatever the lens can be about: add this
   // record to the set. When it is already a focus the control becomes its ×,

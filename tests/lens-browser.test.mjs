@@ -208,6 +208,127 @@ test('a card adds to the lens, or replaces it, and never clears the selection', 
   });
 });
 
+// ─── M48 §1: reading a narrative is the lens ───────────────────────────────
+//
+// The fault the owner reported on 16 September: a twelve-step argument drawn
+// over all 250 events in the corpus, with the panel offering a "Focus on this"
+// so the reader could narrow it by hand. The walk is a focus now, and these are
+// the three things that says — in the graph and on the map, since the lens is
+// shared and one view drawing it is not the promise.
+const WALK = 'how-the-colonial-war-ended-the-regime';
+// The window reading mode opens on is the narrative's own (1960–1976), so
+// everything below is inside it and the band takes nothing away.
+
+test('reading a narrative draws the walk in full, its neighbours dimmed, and nothing else', { skip }, async () => {
+  const view = await expected({ narrative: WALK, step: 0 });
+  assert.ok(view, 'the walk is a lens');
+  assert.ok(view.set.size > 0 && view.near.size > 0, 'with a neighbourhood to shadow');
+  assert.ok(view.shown.size < 250, 'and it is narrower than the corpus');
+
+  await withBrowser(async (page, url) => {
+    for (const [name, { selector, url: extra }] of Object.entries(VIEWS)) {
+      await open(page, url(`?narrative=${WALK}&step=0${extra}`), ready);
+      await waitFor(page, `return document.querySelectorAll('${selector}').length > 0;`, `${name} to draw a mark`);
+
+      const drawn = await page.eval(DRAWN(selector));
+      assert.ok(drawn.length > 0, `${name} drew nothing`);
+      for (const id of drawn) {
+        assert.ok(view.shown.has(id), `${name} drew ${id}, which the walk does not reach`);
+      }
+      // The walk itself, wherever the view has somewhere to put it: a mark for
+      // a placed event on the map, a bar on the timeline. On the graph a step
+      // may be folded into a stack instead, which is the graph drawing it and
+      // not hiding it — a stack carries no id of its own (cluster.js), so what
+      // is asserted there is that the ones missing were folded and that the
+      // picture says so.
+      const missing = [...view.set]
+        .filter((id) => !(name === 'map' && view.placeless.has(id)))
+        .filter((id) => !drawn.includes(id));
+      if (name === 'graph' && missing.length > 0) {
+        const folded = await page.eval("return document.querySelectorAll('#graph svg.graph circle.node.stack').length;");
+        assert.ok(folded > 0, `the graph left out ${missing.join(', ')} and folded nothing`);
+      } else {
+        assert.deepEqual(missing, [], `${name} left out steps of the walk`);
+      }
+      // And the shadow: drawn, and dimmed. Hidden it would say the argument
+      // happened in an atlas where nothing else did; undimmed it would put
+      // twenty-three events the narrator did not choose on the same footing as
+      // the twelve they did.
+      const dimmed = await page.eval(NEAR(selector));
+      assert.ok(dimmed.length > 0, `${name} shadowed nothing`);
+      for (const id of dimmed) assert.ok(view.near.has(id), `${name} dimmed ${id}, which is not a neighbour`);
+      for (const id of view.set) assert.ok(!dimmed.includes(id), `${name} dimmed ${id}, which is a step`);
+    }
+  });
+});
+
+test('leaving the narrative gives back the picture that was there before', { skip }, async () => {
+  const selector = VIEWS.graph.selector;
+  await withBrowser(async (page, url) => {
+    // Opened on the graph with no lens and a band the walk sits inside, so the
+    // two pictures are comparable and the difference is the lens alone.
+    await open(page, url('?view=graph&from=1960&to=1976'), ready);
+    await waitFor(page, `return document.querySelectorAll('${selector}').length > 0;`, 'the graph to draw');
+    const before = new Set(await page.eval(DRAWN(selector)));
+
+    await page.eval(`history.pushState(null, '', '?narrative=${WALK}&step=0&view=graph'); dispatchEvent(new PopStateEvent('popstate')); return true;`);
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .narrative-head h2"));', 'the narrative card');
+    await waitFor(
+      page,
+      `return document.querySelectorAll('${selector}').length > 0
+        && document.querySelectorAll('${selector}').length < ${before.size};`,
+      'the walk to narrow the graph',
+    );
+
+    // "leave" is the card's own way out, and it is the one a reader takes.
+    await page.eval('document.querySelector(\'.panel [data-action="leave-narrative"]\').click(); return true;');
+    await waitFor(page, 'return !document.querySelector(".panel .narrative-head");', 'the narrative card to go');
+    await waitFor(
+      page,
+      `return document.querySelectorAll('${selector}').length === ${before.size};`,
+      'the graph to draw what it drew before',
+    );
+    const after = new Set(await page.eval(DRAWN(selector)));
+    assert.deepEqual([...after].sort(), [...before].sort(), 'a reader who leaves the narrative leaves the lens with it');
+  });
+});
+
+test('"Focus on this" while reading narrows to the step, and its × gives the walk back', { skip }, async () => {
+  const walk = await expected({ narrative: WALK, step: 0 });
+  // Step 0 names the event the walk begins at.
+  const STEP = 'angola-war-begins-1961';
+  const step = await expected({ focus: `event:${STEP}` });
+  assert.ok(step.shown.size < walk.shown.size, 'the step is the narrower frame');
+
+  const selector = VIEWS.graph.selector;
+  await withBrowser(async (page, url) => {
+    await open(page, url(`?narrative=${WALK}&step=0&view=graph`), ready);
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .narrative-head h2"));', 'the narrative card');
+    await waitFor(page, `return document.querySelectorAll('${selector}').length > 0;`, 'the graph to draw');
+    const reading = (await page.eval(DRAWN(selector))).length;
+
+    // The control is on the step's own record, not on the walk: the walk is
+    // the frame the reader is already in.
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .narrative-head .lens-control"));', 'the control');
+    await page.eval('document.querySelector(\'.panel .narrative-head [data-action="focus"]\').click(); return true;');
+    await waitFor(page, `return new URLSearchParams(location.search).get('focus') === 'event:${STEP}';`,
+      'the focus to be the step alone, and not the walk with the step added to it');
+    await waitFor(page, `return new URLSearchParams(location.search).get('narrative') === '${WALK}';`,
+      'and the reader to still be reading');
+    await waitFor(page, `return document.querySelectorAll('${selector}').length < ${reading};`,
+      'the graph to narrow to the step');
+    for (const id of await page.eval(DRAWN(selector))) {
+      assert.ok(step.shown.has(id), `${id} is outside the step's own neighbourhood`);
+    }
+
+    // And its × puts the walk back rather than turning the lens off: `none` is
+    // what the walk's chip in the header is for.
+    await page.eval('document.querySelector(\'.panel .narrative-head [data-action="unfocus"]\').click(); return true;');
+    await waitFor(page, "return new URLSearchParams(location.search).get('focus') === null;", 'no focus parameter');
+    await waitFor(page, `return document.querySelectorAll('${selector}').length === ${reading};`, 'the walk again');
+  });
+});
+
 // R8, in the browser: the two pictures the correction of 6 September is about.
 // The atlas has 412 actors and 350 of them are polities imported with their
 // borders and no event, so a blank map is the search's most common answer.

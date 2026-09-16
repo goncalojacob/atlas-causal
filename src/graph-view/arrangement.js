@@ -37,11 +37,15 @@ export function holdingKey(state) {
 // The key of an arrangement. Two states with the same key have the same
 // picture; two with different keys do not.
 //
-// The lens as it is *applied*, not as it is written: reading a narrative
-// suspends the focus (lens.js), so a key made of `state.focus` said the
-// arrangement was unchanged while the set of events had gone from one
-// actor's to all of them, and the nodes stayed where the lens had put them
-// (review finding 14).
+// The lens as it is *applied*, not as it is written: a key made of
+// `state.focus` alone said the arrangement was unchanged while the set of
+// events had gone from one actor's to all of them, and the nodes stayed where
+// the lens had put them (review finding 14). Since M48 the narrative is part of
+// it for the same reason and the other way round: reading a walk *sets* the
+// lens (lens.js), so two walks with no `?focus=` between them write the same
+// empty parameter and are two different pictures. The step is deliberately not
+// here — the lens is the whole walk, and stepping through it must not move a
+// node.
 //
 // Membership, not the lane ids: which lane an event is drawn in is the
 // heaviest of its actors *among the lanes on screen*, and that weight is
@@ -55,7 +59,7 @@ export function holdingKey(state) {
 // therefore at a different picture. Nothing else about the picture moves a
 // node — panning, zooming, selecting and walking all leave the key alone.
 export function arrangementKey(state, events, lanes, lens, margin = null, holding = '') {
-  const focus = lens === null ? '' : (state.focus ?? '');
+  const focus = lens === null ? '' : `${state.focus ?? ''}~${state.narrative ?? ''}`;
   // The layer list, whole and as it stands: since the glyph run a category
   // toggle removes events here as the lens does, and two arrangements of two
   // different sets of categories would otherwise key the same and the second

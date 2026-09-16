@@ -72,13 +72,19 @@ import { categoriesOn } from './categories.js';
 // one — `state.js` replaces.
 const held = new WeakMap();
 
+// And the shards beside them, for the same reason `lensView` keeps a stamp:
+// a narrative's steps are attributes and not core, so the lens under all of
+// this can change with no state change at all (lens.js). The number is the
+// count of arrivals and evictions, which is what every render key already
+// carries (render-key.js).
 export function workingSet(atlas, state) {
   const found = held.get(state);
+  const shards = atlas.attributeShardsArrived?.() ?? 0;
   // The atlas is compared as well as the state, because a test builds several
   // and could hand two of them one state literal.
-  if (found && found.atlas === atlas) return found.value;
+  if (found && found.atlas === atlas && found.shards === shards) return found.value;
   const value = assemble(atlas, state);
-  held.set(state, { atlas, value });
+  held.set(state, { atlas, shards, value });
   return value;
 }
 
@@ -142,8 +148,14 @@ function assemble(atlas, state) {
     ? filter(new Set((atlas.eventsByActor.get(resolved.id) ?? []).map((a) => a.event.id)))
     : null;
 
-  // A narrative suspends the lens, so there is nothing to filter out of it.
-  const narrative = narrativeSet(atlas, state);
+  // The walk. Since M48 reading a narrative *sets* the lens to that walk
+  // instead of suspending it (lens.js), so this is normally the focus set
+  // itself and the filter below is an identity — but not always: an explicit
+  // `?focus=` while reading narrows to the step, and a category toggle narrows
+  // whatever is on. Emphasising an event the picture has just taken away would
+  // be the card and the map disagreeing about what is there.
+  const walkedEvents = narrativeSet(atlas, state);
+  const narrative = walkedEvents === null ? null : filter(walkedEvents);
 
   const reachable = horizonSet(atlas, state);
 

@@ -33,12 +33,22 @@ const EVENTS = [
 
 const ATLAS = {
   activeEvents: EVENTS,
+  // The narrative lens resolves a walk's steps against the atlas's own maps
+  // (narrative.js), so this double carries them since M48.
+  events: new Map(EVENTS.map((e) => [e.id, e])),
   extent: { min: 1900, max: 1960 },
   actors: new Map([['alfa', { id: 'alfa', name: 'Alfa' }], ['beta', { id: 'beta', name: 'Beta' }]]),
   places: new Map(),
   regions: [{ id: 'europe', label: 'Europe', order: 1 }],
   edges: new Map(),
   sources: new Map(),
+  // Two walks over the same eleven events, so that "which narrative is being
+  // read" is a question the key has to answer since M48: reading one sets the
+  // lens (lens.js) and neither writes a `?focus=` for the key to read.
+  narratives: new Map([
+    ['a-walk', { id: 'a-walk', status: 'active', steps: [{ ref: 'early-0' }, { ref: 'early-1' }] }],
+    ['another-walk', { id: 'another-walk', status: 'active', steps: [{ ref: 'late-0' }] }],
+  ]),
 };
 
 const state = (patch) => ({ ...defaultState(), ...patch });
@@ -67,15 +77,36 @@ test('the same lanes in the same order can still hold different events', () => {
   assert.notEqual(a.key, b.key, 'so the arrangement has to be laid out again');
 });
 
-test('a lens suspended by a narrative is a different arrangement', () => {
+test('a narrative is a lens of its own, and two walks are two arrangements', () => {
+  const none = state({});
   const lensed = state({ focus: 'actor:alfa' });
-  const reading = state({ focus: 'actor:alfa', narrative: 'a-walk', step: 0 });
+  const reading = state({ narrative: 'a-walk', step: 0 });
+  const other = state({ narrative: 'another-walk', step: 0 });
 
-  const a = arrangementOf(ATLAS, lensed);
-  const b = arrangementOf(ATLAS, reading);
-  assert.equal(a.events.length, 6, 'the lens keeps Alfa’s six');
-  assert.equal(b.events.length, EVENTS.length, 'reading a narrative suspends it');
+  assert.equal(arrangementOf(ATLAS, none).events.length, EVENTS.length, 'no lens draws the corpus');
+  assert.equal(arrangementOf(ATLAS, lensed).events.length, 6, 'the lens keeps Alfa’s six');
+
+  // The walk and its one hop of neighbours, which is two events here because
+  // this atlas has no edges: the walk alone.
+  const a = arrangementOf(ATLAS, reading);
+  const b = arrangementOf(ATLAS, other);
+  assert.deepEqual(a.events.map((e) => e.id), ['early-0', 'early-1']);
+  assert.deepEqual(b.events.map((e) => e.id), ['late-0']);
+  // Neither writes a `?focus=`, so a key made of the parameter alone would
+  // call these one picture and leave the second reader looking at the first.
   assert.notEqual(a.key, b.key);
+  assert.notEqual(a.key, arrangementOf(ATLAS, none).key);
+
+  // An explicit lens the reader typed wins over the walk they are in.
+  const narrowed = state({ focus: 'actor:alfa', narrative: 'a-walk', step: 0 });
+  assert.equal(arrangementOf(ATLAS, narrowed).events.length, 6);
+});
+
+test('stepping through a walk never moves a node', () => {
+  const first = state({ narrative: 'a-walk', step: 0 });
+  const second = state({ narrative: 'a-walk', step: 1 });
+  assert.equal(arrangementOf(ATLAS, first).key, arrangementOf(ATLAS, second).key,
+    'the lens is the whole walk, not the step');
 });
 
 test('what the key is allowed not to notice', () => {

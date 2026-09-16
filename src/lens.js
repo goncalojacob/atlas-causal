@@ -207,8 +207,40 @@ export function ringOf(atlas, set) {
   return near;
 }
 
+// The narrative being read, when the state names one that is still active.
+// Through `resolve()` first, so a former id in a shared link is still the walk
+// it points at, and straight off the map after it, for the plain topology
+// objects the tests hand this and for any atlas built without a resolver.
+// `narrative.js` has the same lookup for the panel; it is repeated here rather
+// than imported because that one calls `atlas.resolve` unguarded and this file
+// is handed topologies that have none.
+function narrativeRead(atlas, state) {
+  if (!state?.narrative) return null;
+  const found = atlas.resolve?.(state.narrative) ?? null;
+  const record = found?.kind === 'narrative'
+    ? found.record
+    : atlas.narratives?.get(state.narrative) ?? null;
+  return record && record.status === 'active' ? record : null;
+}
+
 // Which foci are on. The reader's own list, and — when they have not set one —
 // the record whose card is open, as a lens of one.
+//
+// **Reading a narrative is the lens.** It used to suspend it: a twelve-step
+// argument about how the colonial war ended the regime was drawn over all 250
+// events in the corpus, and the panel offered a "Focus on this" so the reader
+// could do by hand what the mode should have done (owner, 16 September; M48 §1).
+// A walk is a focus, and the most deliberate one in the atlas — a person chose
+// those events and put them in order — so the mode sets it, and the three sets
+// this file already keeps say the rest: the walk in full, its one hop of causes
+// and consequences dimmed, and nothing else drawn.
+//
+// It is an *implicit* lens, like an open actor's: the reader asked for the
+// walk and not for a narrow answer, so `keptRegardless` still applies and what
+// they have just clicked cannot vanish. An explicit `?focus=` wins over it —
+// that is a question they typed — and `?focus=none` still turns the lens off
+// altogether, which is how a reader asks to see the walk against the whole
+// atlas again.
 //
 // **Opening an actor or a place is opening its neighbourhood.** `?actor=angola`
 // used to draw the whole atlas with nine marks emphasised in it, which is the
@@ -232,6 +264,17 @@ export function activeFoci(atlas, state) {
   if (state?.focus === FOCUS_NONE) return [];
   const explicit = parseFoci(state?.focus);
   if (explicit.length) return explicit;
+  // The walk first, because reading is a mode and not another open card: a
+  // `?narrative=` beside a `?place=` in a shared link is somebody reading an
+  // argument, and the argument is what they are looking at.
+  const narrative = narrativeRead(atlas, state);
+  if (narrative) {
+    const focus = { kind: 'narrative', id: narrative.id };
+    // A walk whose every step names a record this atlas does not have is not a
+    // lens, for the same reason an actor with no events is not one: it would
+    // draw a blank map and a blank timeline and say nothing about why.
+    return (eventsOfFocus(focus, atlas)?.size ?? 0) > 0 ? [focus] : [];
+  }
   for (const [key, kind] of [['place', 'place'], ['actor', 'actor']]) {
     if (!state?.[key]) continue;
     const found = atlas.resolve?.(state[key]) ?? null;
@@ -276,26 +319,37 @@ export function keptRegardless(atlas, state) {
 // or null for "no lens" — which is not the same as an empty set, since a focus
 // that matches nothing draws nothing and says so.
 //
-// Reading a narrative suspends the lens. Reading is a mode and the walk is
-// what the reader is looking at; a step that vanished because a lens was
-// left on would be the atlas hiding the thing it was asked to show.
+// Reading a narrative *sets* the lens rather than suspending it (see
+// `activeFoci`). A step that vanished because a lens was left on would be the
+// atlas hiding the thing it was asked to show, which is why the implicit walk
+// keeps `keptRegardless` and why an explicit `?focus=` — the only lens that
+// can now be on while reading — is a question the reader typed.
 //
 // Answered once per state and not once per caller. `panel.js`, `grouping.js`,
 // `arrangement.js`, `search-box.js` and `emphasis.js` all ask, several times
 // each per render, and the ring is a walk of the graph. The store hands every
 // subscriber the same state object and replaces it only in `set`, so that
 // object is the key — weakly, so the state the reader has left takes its
-// answer with it. The stamp beside it is for the one input that arrives *after*
-// the state does: a source's citer rows are fetched when the focus asks for
-// them (data.js), and an answer computed before they landed is not the answer.
+// answer with it. The stamp beside it is for the inputs that arrive *after*
+// the state does, and an answer computed before they landed is not the answer:
+//
+//   - a source's citer rows, fetched when the focus asks for them (data.js);
+//   - **the attribute shards**, since M48. A narrative's `steps` are attributes
+//     and no part of the core (index2-plan, D4), so a page opened straight on
+//     `?narrative=` has a walk that reaches nothing until the shard lands. The
+//     first answer was then "no lens", and with nothing in the state to change
+//     it, the map went on drawing all 250 events with the walk's twelve
+//     somewhere inside them — the very fault this milestone is about, arrived
+//     at from the other side. Every render key already carries this number for
+//     the same reason (render-key.js); the two caches under the views had to
+//     carry it too or the keys had nothing new to say.
 const held = new WeakMap();
 
 export function lensView(atlas, state) {
-  if (state?.narrative) return null;
   const foci = activeFoci(atlas, state);
   if (foci.length === 0) return null;
   const all = Boolean(state?.focusAll);
-  const stamp = `${all}|${foci.map((f) => (f.kind === 'source' ? `${f.id}:${atlas.citersOf?.(f.id) ? 1 : 0}` : '')).join(',')}`;
+  const stamp = `${all}|${atlas.attributeShardsArrived?.() ?? 0}|${foci.map((f) => (f.kind === 'source' ? `${f.id}:${atlas.citersOf?.(f.id) ? 1 : 0}` : '')).join(',')}`;
   const found = state ? held.get(state) : null;
   if (found && found.atlas === atlas && found.stamp === stamp) return found.value;
   const set = focusSet(foci, atlas, { all });

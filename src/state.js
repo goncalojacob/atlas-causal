@@ -61,10 +61,16 @@
 // filtered by the map at all", which is what the pin control restores.
 //
 // `narrative` and `step` are a mode rather than another dimension: while a
-// narrative is being read, the two of them are the whole of the URL, and the
-// selection, the chain and the window are derived from the step (narrative.js)
-// and deliberately not written. A link to a narrative is a link to a place in
-// an argument, not a snapshot of somebody's screen.
+// narrative is being read, the two of them are very nearly the whole of the
+// URL, and the selection, the chain and the window are derived from the step
+// (narrative.js) and deliberately not written. A link to a narrative is a link
+// to a place in an argument, not a snapshot of somebody's screen.
+//
+// `focus` is the exception, and since M48 it has to be: the walk is the lens
+// now, so a `?focus=` beside a narrative is the reader saying something the
+// step cannot — narrow to this step, or turn the lens off and show me the walk
+// against the whole atlas. It is a choice and not a snapshot, so it is
+// written; everything else derived stays out.
 //
 // Two kinds of change, and the browser's Back is the reason: a change of
 // *what is open* — the event, the source, the place, the actor, the
@@ -288,6 +294,14 @@ export function formatState(state, search = '') {
     params.set('narrative', state.narrative);
     params.set('step', String(state.step ?? 0));
     if (state.walk) params.set('walk', state.walk);
+    // And the lens, which since M48 is the one thing about reading mode that
+    // is *not* derived from the step. The walk itself is the lens now
+    // (lens.js) and writes nothing here; what this carries is the reader's
+    // own `?focus=` over it — "Focus on this" narrowing to the step, or the
+    // `none` that turns the lens off — and a parameter dropped from the link
+    // would be a narrowing that vanished on the reader's next click.
+    if (state.focus) params.set('focus', state.focus);
+    if (state.focusAll && state.focus && state.focus !== 'none') params.set('focusAll', '1');
     const reading = params.toString().replace(/%2C/g, ',').replace(/%2D/g, '-').replace(/%3A/g, ':');
     return reading ? `?${reading}` : '';
   }
