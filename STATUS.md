@@ -8369,7 +8369,13 @@ difference between a filter and a deletion, and it is what
      rebase cannot lose work that is not in the commits it moves. Recorded
      because the literal reading would have stopped the milestone over a line
      the protocol itself schedules M49 to write.
-738. **Two browser tests fail under the whole suite and pass alone.**
+738. **The branch was red once and the head is green.** Run 729 on
+     `ba0c8180`, the ground-join commit, reported **1 failure of 1,490** where
+     the same tree reported one locally and it was the label flake below; the
+     checks on the three commits after it were cancelled by the next push
+     rather than failing, which is what `cancel-in-progress` is for. Run 738,
+     on a head that carries every commit of this milestone, is **green in 3m30s**.
+     Two browser tests fail under the whole suite and pass alone.
      `map-browser.test.mjs` → "zoomed to Portugal, Lisbon is named once", which
      is deviation 730 exactly; and `spine-pages.test.mjs` → "the source card
      fetches its own citer file and draws the rows", which timed out once in
