@@ -9170,6 +9170,30 @@ records, and one case in `tests/relation-rules.test.mjs` for rule 30 itself.
      rather than being the interval. The five basemaps presences still start
      in 1783; sixty-two years of the record have no territory drawn, which is
      true of it and not a defect.
+768. **`soviet-union`'s own summary asserted the thing this milestone exists
+     to remove, and a second fire found it.** The sentence written in
+     `98dc8d84` read "Its name is the one CShapes' own label for entity 365 —
+     Russia (Soviet Union) — carried", which on the record's own face says the
+     Soviet Union is called what the owner objected to. The record's `names`
+     was `["Soviet Union"]` throughout and no test looks at a summary, so
+     nothing caught it: `tests/m52.test.mjs` asks whether an active actor is
+     *named* "Russia (Soviet Union)", which is the right question and not this
+     one. Corrected in `9c78bb67` — name and territory are now two clauses,
+     and only the summary changed.
+769. **The browser flake of deviations 730 and 757 fired in three of four full
+     runs, and this time it named itself.** Three failures across four runs of
+     the whole suite, each a different browser test, each green when its own
+     file is run alone: `the source card fetches its own citer file and draws
+     the rows` (`spine-pages`, six solo runs, 45 of 45 each), `a drag of the
+     band leaves the open explanation open and moves the horizon`
+     (`panel-browser`), and `zoomed to Portugal, Lisbon is named once and its
+     title carries its names` — **deviation 757's own test, by name**, 35 of
+     35 alone. One further run reported a single failure the run did not
+     capture. This is the first milestone since 749 to be able to name what it
+     saw, and it could only because the failures were local: on the runner the
+     line is still unreadable, and the one line of `validate.yml` that
+     deviation 757 asks for is still not written, because it is still not this
+     milestone's to write.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
@@ -9388,3 +9412,4 @@ merge-m49 started 2026-09-16T17:12:56Z by scheduled
 merge-m49 done
 M52 started 2026-09-16T17:35:14Z by scheduled
 M52 started 2026-09-16T19:58:23Z by scheduled
+M52 done
