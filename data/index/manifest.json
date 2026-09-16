@@ -1,25 +1,25 @@
 {
   "attributeShards": [
     {
-      "file": "index/attributes-1400-1499-ae847f8fef6d.json",
+      "file": "index/attributes-1400-1499-370434bb62af.json",
       "from": 1400,
       "key": "1400-1499",
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-8117f252b100.json",
+      "file": "index/attributes-1500-1599-6c678ffe974d.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-1ef46b2c1e64.json",
+      "file": "index/attributes-1600-1699-157cbfcd63a0.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-352354d26e78.json",
+      "file": "index/attributes-1700-1799-683e3388aa61.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
@@ -854,13 +854,13 @@
     }
   ],
   "counts": {
-    "actors": 2452,
+    "actors": 2500,
     "edges": 272,
     "events": 513,
     "narratives": 1,
     "offices": 11,
     "places": 26,
-    "presences": 4344,
+    "presences": 4943,
     "regions": 5,
     "relations": 128,
     "sources": 35,
@@ -884,12 +884,12 @@
     }
   ],
   "files": {
-    "citers": "index/citers-03087f8dd35f",
-    "core": "index/core-97e16bc72328.json",
-    "presences": "index/presences-bd80ca2622eb.json",
-    "review": "index/review-73f2ec9cad4d.json",
-    "search": "index/search-4910334b1947.json",
-    "sources": "index/sources-01ee9c3fc0e6.json"
+    "citers": "index/citers-33b0d7d3fbea",
+    "core": "index/core-de7d269e29b7.json",
+    "presences": "index/presences-fc79d64971d9.json",
+    "review": "index/review-26c9d29c86e5.json",
+    "search": "index/search-e7c1f5bbb4c3.json",
+    "sources": "index/sources-ffa328817d4b.json"
   },
   "historyShards": [
     {
@@ -942,28 +942,28 @@
       "to": null
     },
     {
-      "file": "index/history-actor-1400-1499-2ec1082d094c.json",
+      "file": "index/history-actor-1400-1499-b66a70e563ce.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "actor",
       "to": 1499
     },
     {
-      "file": "index/history-actor-1500-1599-9c2950ef9d6d.json",
+      "file": "index/history-actor-1500-1599-56ee9e83a9df.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "actor",
       "to": 1599
     },
     {
-      "file": "index/history-actor-1600-1699-353dcd38a5bb.json",
+      "file": "index/history-actor-1600-1699-5f7996cb9072.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "actor",
       "to": 1699
     },
     {
-      "file": "index/history-actor-1700-1799-8d747510040e.json",
+      "file": "index/history-actor-1700-1799-e4956d234290.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "actor",
@@ -1594,6 +1594,11 @@
       "file": "geo/presences/1700-1714.json",
       "from": 1700,
       "to": 1714
+    },
+    {
+      "file": "geo/presences/1715-1782.json",
+      "from": 1715,
+      "to": 1782
     },
     {
       "file": "geo/presences/1886-1913.json",

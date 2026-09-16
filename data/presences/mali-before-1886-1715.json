@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mali-before-1886-1715",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "basemaps"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "world_1715.geojson, \"Mali\""
+    }
+  ],
+  "actor": "mali-before-1886",
+  "presenceType": "polity",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1715,
+    "end": 1782,
+    "date": "1715-01-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1715-1782.json"
+    ],
+    "key": "mali-before-1886"
+  },
+  "capital": null,
+  "confidence": "probable"
+}
