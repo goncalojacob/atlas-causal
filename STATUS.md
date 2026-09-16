@@ -8189,33 +8189,87 @@ skipped**.
      after. It is not the flake the protocol already names. Recorded rather
      than chased: nothing in this milestone touches the label placer.
 
-### M49 — the seam surveyed, and the source it needs refused at the proxy
+### M49 — the seam asked, answered, and handed back to a person
 
 M49 was to decide, for each actor at the 1885/1886 seam, whether the polity
-ended or only the dataset did, and then join or split accordingly. It surveyed
-all 251 and changed no record, because **the one source the brief allows for
-the dates that decision turns on cannot be reached from the run's sandbox**.
+ended or only the dataset did, and then join or split accordingly. **The
+question has now been put to Wikidata and answered, and the answer is that
+Wikidata cannot settle it from the names these two datasets use.** No record
+was changed, for the second run in a row and for a different reason: the first
+could not ask, this one asked and was told something else.
 
-`docs/m49-actors.md` is what landed: the 123 actors active and ending in
-exactly 1885, all of them from the Historical Basemaps import, and the 128
-beginning in exactly 1886, all of them from CShapes — both spans, and the
-provenance of each boundary said plainly. Neither year is a historical fact.
-1885 is where the first import stopped extending the last snapshot it read;
-1886 is where the second dataset opens. The file carries 26 candidate pairs
-found by normalising ids and names, with a `verdict` column open on every row,
-and the 97 and 103 that matched nothing listed in full, because a record that
-did not match is not a record without a counterpart.
+**The route.** Amendment A4 supersedes A3, which said Wikidata is reachable
+from the scheduled run's sandbox. It is not — `www.wikidata.org`,
+`query.wikidata.org` and `en.wikipedia.org` all refuse at the egress proxy with
+`CONNECT tunnel failed, response 403`, body `Host not in allowlist`, re-checked
+this day (deviation 731) — so the lookup runs where Wikidata answers: a
+`--dates` mode on `tools/import/wikidata.mjs`, driven by
+`.github/workflows/import-wikidata.yml` on a push to `import/dates-…`, on a
+GitHub runner. It is a lookup and not an import: **no record created, no
+cursor kept, nothing written under `data/`**. Deviation 733 asked whether it
+might be written; the supervisor's answer of 16 September was yes.
+
+**The run.** `import/dates-2026-09-16`, run 35105425402, green.
+**83 subjects asked, 199 calls of a 400 budget, 41 matched to exactly one
+item, 40 of those carrying a P571.** The output is `docs/m49-dates.md`, which
+names, per subject, the QID, the item's label, both dates with their precision,
+whether the match is safe or doubtful, and — for every doubtful one — the items
+that survived and the reason each of the rest was thrown out.
+
+**The verdicts: 26 of 26 read "for a person", and that is the finding.**
+
+- **13 pairs matched the same item from both sides, and in every one that item
+  is the modern state**, dated from independence: `Q262` Algeria 1962, `Q916`
+  Angola 1975, `Q242` Belize 1981, `Q971` Congo 1960, `Q712` Fiji 1970, `Q1000`
+  Gabon 1960, `Q1019` Madagascar 1960, `Q233` Malta 1964, `Q1029` Mozambique
+  1975, `Q1041` Senegal 1960, `Q917` Bhutan 1907, `Q189` Iceland 1918, and
+  `Q928` Philippines with four competing inceptions. Not one begins before
+  1885, so not one can say what stood there. Reading "same name, no P576" as a
+  join would join colonial Algeria to the Algerian Republic — and by the same
+  reasoning the Russian Empire to the Russian Federation, which is the exact
+  mistake the owner asked to have undone.
+- **7 came down to two or more items**, which is the historical question itself:
+  `iran-persia` survived `Q794` and `Q63158027`, `turkey-ottoman-empire` `Q43`
+  and `Q12560`, `germany-prussia` three, `egypt-*` two.
+- **5 returned nothing** — the Australian colonies, where no item the class
+  table types as a polity came back at all.
+- **1 was never a pair**: `harer-egypt`, the false match the survey named, and
+  the lookup agrees.
+
+**Four dates came back whole, and every one contradicts the seam**: `Q12560`
+Ottoman Empire 1299→**1922-11-17**, `Q63158027` Qajar Iran **1789**→**1925**,
+`Q34266` Russian Empire **1721-10-22**→**1917-09-01**, `Q188712` Empire of
+Japan **1868-01-03**→**1947-05-03**. All four began before 1885 and ended long
+after 1886. They are where the atlas is most plainly wrong, and still not
+places this run may act: nothing on the 1886 side resolved to an item, so there
+is no evidence about which actor holds the ground after the seam.
+
+**Russia.** The lookup answered two of its three subjects and not the third.
+`russian-empire` → `Q34266`, P571 1721-10-22, P576 1917-09-01.
+`russia-soviet-union` narrowed to "Soviet Union" → `Q15180`, P571 1922-12-30
+(and 1923-07-06), P576 1991-12-26. Narrowed to "Russia" it survived `Q159` and
+`Q34266` and the tool refused to choose, which is right: "Russia" names both
+the Federation and the Empire. **So the Federation has no QID and no
+inception here**, `Q15180`'s P576 is the Union's dissolution and not the
+Federation's birth, and the Empire's 1917 and the Union's 1922 leave five
+years between them that a `succeeded` relation cannot span without asserting
+what held that ground. Russia is three QIDs away, and none of them may come
+from the assistant.
+
+**Counts.** Pairs joined: **0**. Pairs split: **0**. Pairs left for a person:
+**26**. Events whose `actors` entry moved: **0** — none needed to, because no
+actor's span changed. Of the corpus's 250 active events, 200 carry `actors`
+entries and **one** still names an actor not alive at its date:
+`chinese-civil-war` (1946) → `taiwan` (1949–open), exactly as the previous run
+found it; this milestone did not touch it and it is still there. The seam is
+unchanged at **251** actors, 123 ending 1885 and 128 beginning 1886.
 
 `node tools/validate.mjs --index`: **0 errors, 1,257 warnings** — unchanged, no
-record was touched. `node --test`: **1,471 tests, 0 failed, 0 skipped**; the
-two new ones are in `tests/m49-seam.test.mjs`. Browser tests run in this
-sandbox rather than skipping: Chromium is installed and `entry-browser` passes
-on its own.
-
-Of the corpus's 250 active events, 200 carry `actors` entries and **one** names
-an actor not alive at its date: `chinese-civil-war` (1946) → `taiwan`
-(1949–open). No entry was moved, because none needed to be: the event is not
-at the seam and this milestone changed no actor's span.
+record was touched. `node --test`: **1,492 tests, 0 failed, 0 skipped** on the
+second and third full runs; the first reported one failure it did not capture,
+and deviation 739 records it. The 21 new tests are `tests/m49-dates.test.mjs`
+(20, the mode) and one more in `tests/m49-seam.test.mjs`, which refuses a
+verdict that cites nothing.
 
 ### Deviations 731 to 733 — M49
 
@@ -8257,6 +8311,68 @@ at the seam and this milestone changed no actor's span.
      first and cheapest is to let the two Wikidata hosts through the
      environment's network policy, after which the next fire answers the table
      with no change to anything.
+
+### Deviations 734 to 739 — M49
+
+734. **The matcher was given the record's names and deliberately not its
+     dates.** `--dates` reuses `matchesFor`, the matching `--reconcile`
+     already applies, but hands it the record with `when` withheld. That is
+     not a weakening: `datesMatch` would have compared each item against 1885
+     or 1886, and those two years are the artefact this milestone exists to
+     remove. Offering them to the matcher as if they were dates would have
+     settled by assumption the question the lookup was run to ask — and it
+     would have rejected `Q34266` for the Russian Empire, whose real span is
+     1721–1917, on the ground that the record says 1783–1885.
+
+735. **`--dates` will only search for a name the record already carries, and
+     that is what stopped Russia.** An alternate may be given as
+     `id | name`, and the tool refuses one the record's own names do not
+     derive. It is the guard that keeps a run from introducing a subject from
+     nowhere and calling the answer evidence — and it bites exactly where it
+     should: "Russian Federation" is not in this repository, so nothing here
+     may look it up. The same guard is why the 13 modern-state matches could
+     not be quietly re-asked as "French Algeria".
+
+736. **83 subjects were asked, not 52.** The brief's table is the 26 pairs;
+     the list also carries the pairs section 2 of `docs/m49-actors.md` said a
+     person should start from, and Russia three times. Asking cost 199 calls
+     of 400 and **pairs nothing**: the extras are recorded in section 8 of the
+     survey with their items and dates, and the judgement about them stays
+     where section 2 left it. One of them is worth a person's eye —
+     `netherlands-indies` and `dutch-east-indies` resolved independently to the
+     same item, `Q188161`, whose P571 1800-01-01 is before the seam and whose
+     every P576 is after it. That is the only join-shaped evidence in all 83
+     subjects, and it is not one of the 26.
+
+737. **No record changed, twice in a row, and for a different reason each
+     time.** Deviation 732 recorded the first: the run could not ask. This one
+     asked, and was answered with items that cannot bear on 1885. The
+     temptation this time was larger, because 13 pairs matched cleanly and a
+     join needs no date of its own under one reading of the brief — but that
+     reading joins the Empire to the Federation, and the owner's sentence is
+     the counter-example. A seam left honest is better than a seam closed by
+     guesswork.
+
+738. **`M49 done` is not written, and that is deliberate.** The brief's "Done
+     when" names Russia explicitly — "Russia is three actors and two
+     successions" — and Russia is three QIDs short. The joins and the splits
+     are vacuous (there are none to make), but Russia is not, so writing
+     `M49 done` would assert work nobody did and would hand the merge run an
+     unfinished milestone. The claim line stands and the milestone stays open
+     for the person section 4a of the survey is addressed to. A fire that
+     reads the survey and finds every verdict answered and every one "for a
+     person" has nothing left to do and should stop at that.
+
+739. **One full run in three failed, and the failure was not captured.** The
+     first `node --test` of this milestone reported `# fail 1` of 1,492; the
+     two runs after it, on the same tree, passed 1,492 of 1,492, and neither
+     printed a `not ok` line for the run that had failed. It has the shape
+     deviation 730 already describes — a browser test that fails on runs of
+     the whole suite, never when its file is run alone, before this
+     milestone's work as well as after — and nothing in this milestone touches
+     a browser file: `--dates` runs in Node against an injected fetch. Recorded
+     rather than chased, and recorded by the count rather than by a name,
+     because the name is what the run did not get.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
