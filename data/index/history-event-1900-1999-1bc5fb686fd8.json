@@ -1414,6 +1414,15 @@
         }
       ]
     },
+    "1964-brazilian-coup-detat": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
     "1964-rosais-earthquake": {
       "from": "git",
       "versions": [
@@ -9394,7 +9403,7 @@
       ]
     },
     "the-1930-revolution-and-the-vargas-era": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "portuguese-landfall-in-brazil-1500--indigenous-depopulation-of-coastal-brazil--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Indigenous peoples in Brazil\", revision 1375180351"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    }
+  ],
+  "from": "portuguese-landfall-in-brazil-1500",
+  "to": "indigenous-depopulation-of-coastal-brazil",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The cause the source names first is disease, and disease arrived with the ships. That is what makes this a `caused` and not a weaker type: the decline from two or three million to three hundred thousand does not begin before contact and is not attributable to anything that was already on the coast. The Tupiniquim who met Cabral in April 1500 are the first named people in the sequence. Nothing about the landfall was designed to produce it, and the atlas has a type for a consequence nobody intended, which is this one.",
+  "dispute": null
+}

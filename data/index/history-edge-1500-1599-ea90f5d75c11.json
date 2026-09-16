@@ -29,6 +29,24 @@
         }
       ]
     },
+    "indigenous-depopulation-of-coastal-brazil--the-atlantic-slave-trade-to-brazil--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "portuguese-landfall-in-brazil-1500--indigenous-depopulation-of-coastal-brazil--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
     "portuguese-landfall-in-brazil-1500--the-atlantic-slave-trade-to-brazil--precondition-of": {
       "from": "git",
       "versions": [
@@ -39,7 +57,7 @@
       ]
     },
     "the-atlantic-slave-trade-to-brazil--aberdeen-act-1845--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -48,7 +66,7 @@
       ]
     },
     "the-atlantic-slave-trade-to-brazil--lei-aurea-1888--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -57,7 +75,7 @@
       ]
     },
     "the-atlantic-slave-trade-to-brazil--proclamation-of-the-brazilian-republic-1889--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

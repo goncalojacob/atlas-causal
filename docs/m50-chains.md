@@ -133,6 +133,14 @@ record that **both** chains name which carries it. Writing it anyway would be
 an arrow between two colonial chains asserted on a resemblance, which is the
 one thing this milestone was told not to build.
 
+The temptation is concrete and not abstract, which is why it is worth naming.
+Wikipedia's account of 1964 has Goulart, in the year before the coup,
+"opposing the sanctions proposed by the U.S. against Cuba", and has American
+policy allying itself with his opponents. A reader who walks the Caribbean
+chain to 1959 and the Brazil chain to 1964 will see it. The atlas can show
+them both and can refuse to draw a line between them that it cannot source
+through a record it holds.
+
 So it is not written, and this paragraph is what stands in its place. Closing
 it properly means a record both chains name — the Alliance for Progress, or the
 Organization of American States, or the sugar quota — researched, placed and

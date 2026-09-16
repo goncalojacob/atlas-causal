@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "indigenous-depopulation-of-coastal-brazil",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Indigenous peoples in Brazil\", revision 1375180351"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    }
+  ],
+  "title": "The depopulation of indigenous Brazil",
+  "summary": "On the eve of 1500 the Brazilian coast was held by Tupi-speaking peoples along almost its whole length, with Jê-speaking groups inland; the Tupiniquim of the Bahian coast were the people who met Cabral in April. What followed is measured by the cited article as a decline from a pre-Columbian population of two to three million to about three hundred thousand by 1997, and it names the cause first: European disease. Enslavement by the colonists and by the bandeirantes, and resettlement into the Jesuit aldeias after 1549, ran alongside it. The end date here is the low point the source gives rather than the end of the process; the 2022 census records 1,694,836 people identifying as indigenous, in 391 groups.",
+  "when": {
+    "start": 1500,
+    "end": 1997
+  },
+  "place": "porto-seguro",
+  "actors": [],
+  "names": [
+    "Despovoamento indígena do Brasil"
+  ]
+}

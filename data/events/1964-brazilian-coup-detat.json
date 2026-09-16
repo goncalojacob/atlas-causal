@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "1964-brazilian-coup-detat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
+    }
+  ],
+  "title": "The 1964 Brazilian coup d'état",
+  "summary": "Between 31 March and 1 April 1964 the armed forces overthrew President João Goulart, ending the Fourth Republic and beginning twenty-one years of military dictatorship. Congress declared the presidency vacant on 2 April and Goulart went into exile on the 4th; a junta held power until Congress elected General Castelo Branco, one of the leaders of the coup. Goulart’s base reforms had set the trade unions, the peasant leagues and the junior ranks against the officer corps, the urban middle class, the Church and the press, in an economy with inflation at 92 per cent. Relations with the United States had deteriorated and the American government allied itself with the opposition and supported the coup. Historians read it both as the founding of a dictatorship and as the culmination of the recurring crises of 1954, 1955 and 1961.",
+  "when": {
+    "start": 1964,
+    "end": 1964,
+    "date": "1964-03-31",
+    "endDate": "1964-04-01"
+  },
+  "place": "rio-de-janeiro",
+  "actors": [],
+  "names": [
+    "Golpe de estado no Brasil em 1964",
+    "Golpe de 64"
+  ]
+}

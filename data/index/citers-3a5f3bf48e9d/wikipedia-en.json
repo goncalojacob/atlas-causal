@@ -638,6 +638,18 @@
     },
     {
       "dissent": false,
+      "id": "indigenous-depopulation-of-coastal-brazil--the-atlantic-slave-trade-to-brazil--caused",
+      "kind": "edge",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
+      "id": "indigenous-depopulation-of-coastal-brazil--the-atlantic-slave-trade-to-brazil--caused",
+      "kind": "edge",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    },
+    {
+      "dissent": false,
       "id": "indo-pakistani-war-of-1965--bangladesh-liberation-war--precondition-of",
       "kind": "edge",
       "locator": "\"Bangladesh Liberation War\", revision 1370362676"
@@ -920,6 +932,18 @@
     },
     {
       "dissent": false,
+      "id": "portuguese-landfall-in-brazil-1500--indigenous-depopulation-of-coastal-brazil--caused",
+      "kind": "edge",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-landfall-in-brazil-1500--indigenous-depopulation-of-coastal-brazil--caused",
+      "kind": "edge",
+      "locator": "\"Indigenous peoples in Brazil\", revision 1375180351"
+    },
+    {
+      "dissent": false,
       "id": "portuguese-landfall-in-brazil-1500--the-atlantic-slave-trade-to-brazil--precondition-of",
       "kind": "edge",
       "locator": "\"Colonial Brazil\", revision 1371077435"
@@ -935,6 +959,24 @@
       "id": "potsdam-conference--nato-founding-1949--precondition-of",
       "kind": "edge",
       "locator": "\"Potsdam Conference\", revision 1371936780"
+    },
+    {
+      "dissent": false,
+      "id": "proclamation-of-the-brazilian-republic-1889--1964-brazilian-coup-detat--precondition-of",
+      "kind": "edge",
+      "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
+    },
+    {
+      "dissent": false,
+      "id": "proclamation-of-the-brazilian-republic-1889--1964-brazilian-coup-detat--precondition-of",
+      "kind": "edge",
+      "locator": "\"Proclamation of the Republic (Brazil)\", revision 1370705081"
+    },
+    {
+      "dissent": false,
+      "id": "proclamation-of-the-brazilian-republic-1889--1964-brazilian-coup-detat--precondition-of",
+      "kind": "edge",
+      "locator": "\"Revolution of 1930\", revision 1373816376"
     },
     {
       "dissent": false,
@@ -1067,6 +1109,18 @@
       "id": "strangford-treaty-1810--aberdeen-act-1845--precondition-of",
       "kind": "edge",
       "locator": "\"Strangford Treaty\", revision 1329682227"
+    },
+    {
+      "dissent": false,
+      "id": "the-1930-revolution-and-the-vargas-era--1964-brazilian-coup-detat--precondition-of",
+      "kind": "edge",
+      "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
+    },
+    {
+      "dissent": false,
+      "id": "the-1930-revolution-and-the-vargas-era--1964-brazilian-coup-detat--precondition-of",
+      "kind": "edge",
+      "locator": "\"Revolution of 1930\", revision 1373816376"
     },
     {
       "dissent": false,
@@ -1568,6 +1622,12 @@
     },
     {
       "dissent": false,
+      "id": "1964-brazilian-coup-detat",
+      "kind": "event",
+      "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
+    },
+    {
+      "dissent": false,
       "id": "1965-portuguese-presidential-election",
       "kind": "event",
       "locator": "\"1965 Portuguese presidential election\", revision 1334103559"
@@ -1973,6 +2033,18 @@
       "id": "independence-of-brazil-1822",
       "kind": "event",
       "locator": "\"Independence of Brazil\", revision 1373868391"
+    },
+    {
+      "dissent": false,
+      "id": "indigenous-depopulation-of-coastal-brazil",
+      "kind": "event",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
+      "id": "indigenous-depopulation-of-coastal-brazil",
+      "kind": "event",
+      "locator": "\"Indigenous peoples in Brazil\", revision 1375180351"
     },
     {
       "dissent": false,

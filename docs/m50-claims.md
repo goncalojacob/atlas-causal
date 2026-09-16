@@ -53,3 +53,7 @@ justification in the first place.
 | `lei-aurea-1888--proclamation-of-the-brazilian-republic-1889--caused` | probable | `wikipedia-en`, `wikipedia-en` | abolition without compensation cost the Empire the class that had held it up |
 | `the-atlantic-slave-trade-to-brazil--proclamation-of-the-brazilian-republic-1889--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | the class the Empire rested on is the class the traffic created |
 | `proclamation-of-the-brazilian-republic-1889--the-1930-revolution-and-the-vargas-era--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | the Old Republic is the thing 1930 overthrew, and 1889 is what made it |
+| `portuguese-landfall-in-brazil-1500--indigenous-depopulation-of-coastal-brazil--caused` | probable | `wikipedia-en`, `wikipedia-en` | contact, and then a decline from two or three million to three hundred thousand |
+| `indigenous-depopulation-of-coastal-brazil--the-atlantic-slave-trade-to-brazil--caused` | probable | `wikipedia-en`, `wikipedia-en` | the labour force the colony began with was dying, and it turned to the Atlantic for another |
+| `the-1930-revolution-and-the-vargas-era--1964-brazilian-coup-detat--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | the parties, the blocs and the quarrel of 1964 all come out of the Vargas settlement |
+| `proclamation-of-the-brazilian-republic-1889--1964-brazilian-coup-detat--precondition-of` | probable | `wikipedia-en`, `wikipedia-en`, `wikipedia-en` | the army as moderating power, a pattern beginning in 1889 and broken in 1964 |

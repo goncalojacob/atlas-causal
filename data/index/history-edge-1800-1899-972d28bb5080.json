@@ -3,7 +3,7 @@
   "kind": "edge",
   "records": {
     "aberdeen-act-1845--eusebio-de-queiros-law-1850--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -28,7 +28,7 @@
       ]
     },
     "eusebio-de-queiros-law-1850--lei-aurea-1888--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -37,7 +37,7 @@
       ]
     },
     "independence-of-brazil-1822--aberdeen-act-1845--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -46,6 +46,15 @@
       ]
     },
     "lei-aurea-1888--proclamation-of-the-brazilian-republic-1889--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "proclamation-of-the-brazilian-republic-1889--1964-brazilian-coup-detat--precondition-of": {
       "from": "revised",
       "versions": [
         {
@@ -55,7 +64,7 @@
       ]
     },
     "proclamation-of-the-brazilian-republic-1889--the-1930-revolution-and-the-vargas-era--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -80,7 +89,7 @@
       ]
     },
     "strangford-treaty-1810--aberdeen-act-1845--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -89,7 +98,7 @@
       ]
     },
     "transfer-of-the-portuguese-court-to-brazil-1807--independence-of-brazil-1822--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -98,7 +107,7 @@
       ]
     },
     "transfer-of-the-portuguese-court-to-brazil-1807--strangford-treaty-1810--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

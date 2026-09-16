@@ -7,7 +7,7 @@
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-80c53c010a4d.json",
+      "file": "index/attributes-1500-1599-364bdf63241f.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
@@ -25,13 +25,13 @@
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-dab3ab14df14.json",
+      "file": "index/attributes-1800-1899-27f51e5cf53b.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-0a09f729450c.json",
+      "file": "index/attributes-1900-1999-5c9d9f36da25.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -855,8 +855,8 @@
   ],
   "counts": {
     "actors": 2687,
-    "edges": 295,
-    "events": 530,
+    "edges": 299,
+    "events": 532,
     "narratives": 1,
     "offices": 11,
     "places": 41,
@@ -873,7 +873,7 @@
       "to": 1499
     },
     {
-      "file": "index/explanations-1500-1599-9f79ff52a03b.json",
+      "file": "index/explanations-1500-1599-ea164490755c.json",
       "from": 1500,
       "to": 1599
     },
@@ -888,12 +888,12 @@
       "to": 1799
     },
     {
-      "file": "index/explanations-1800-1899-0373d77406d0.json",
+      "file": "index/explanations-1800-1899-ac3c3e8c6f4a.json",
       "from": 1800,
       "to": 1899
     },
     {
-      "file": "index/explanations-1900-1999-59b759403b01.json",
+      "file": "index/explanations-1900-1999-13f1ef9ad6be.json",
       "from": 1900,
       "to": 1999
     },
@@ -904,13 +904,13 @@
     }
   ],
   "files": {
-    "citers": "index/citers-86f06a3ef3e8",
-    "core": "index/core-902ac126534e.json",
+    "citers": "index/citers-3a5f3bf48e9d",
+    "core": "index/core-38b0071cf51d.json",
     "grounds": "index/grounds-80c7f612a704.json",
     "presences": "index/presences-fce26e6b033b.json",
-    "review": "index/review-78d098636d2b.json",
-    "search": "index/search-818575d78ff6.json",
-    "sources": "index/sources-e8bb3f7aaae8.json"
+    "review": "index/review-08004a609061.json",
+    "search": "index/search-a8ba021ea623.json",
+    "sources": "index/sources-59e1075edcdb.json"
   },
   "historyShards": [
     {
@@ -921,7 +921,7 @@
       "to": 1499
     },
     {
-      "file": "index/history-event-1500-1599-167a81840b5b.json",
+      "file": "index/history-event-1500-1599-35fbe33bb270.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "event",
@@ -942,14 +942,14 @@
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-2101af637b1d.json",
+      "file": "index/history-event-1800-1899-28c432b8dd1e.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-314351367b66.json",
+      "file": "index/history-event-1900-1999-1bc5fb686fd8.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
@@ -970,35 +970,35 @@
       "to": 1499
     },
     {
-      "file": "index/history-edge-1500-1599-0fb03abf94c1.json",
+      "file": "index/history-edge-1500-1599-ea90f5d75c11.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "edge",
       "to": 1599
     },
     {
-      "file": "index/history-edge-1600-1699-3b3a6ce3fede.json",
+      "file": "index/history-edge-1600-1699-f837bfc9144c.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "edge",
       "to": 1699
     },
     {
-      "file": "index/history-edge-1700-1799-404974c645e4.json",
+      "file": "index/history-edge-1700-1799-b92aa3d848e3.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "edge",
       "to": 1799
     },
     {
-      "file": "index/history-edge-1800-1899-272e471675bf.json",
+      "file": "index/history-edge-1800-1899-972d28bb5080.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "edge",
       "to": 1899
     },
     {
-      "file": "index/history-edge-1900-1999-4fe20acea91a.json",
+      "file": "index/history-edge-1900-1999-fc3b64b11dc1.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "edge",

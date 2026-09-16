@@ -596,6 +596,38 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 2,
+      "id": "1964-brazilian-coup-detat",
+      "kind": "event",
+      "names": [
+        "Golpe de estado no Brasil em 1964",
+        "Golpe de 64"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The 1964 Brazilian coup d'état"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -4790,6 +4822,37 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 2,
+      "id": "indigenous-depopulation-of-coastal-brazil",
+      "kind": "event",
+      "names": [
+        "Despovoamento indígena do Brasil"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The depopulation of indigenous Brazil"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -6201,7 +6264,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 3,
       "id": "portuguese-landfall-in-brazil-1500",
       "kind": "event",
       "names": [
@@ -6303,7 +6366,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 3,
+      "degree": 4,
       "id": "proclamation-of-the-brazilian-republic-1889",
       "kind": "event",
       "names": [
@@ -7023,7 +7086,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 1,
+      "degree": 2,
       "id": "the-1930-revolution-and-the-vargas-era",
       "kind": "event",
       "names": [
@@ -7055,7 +7118,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 8,
+      "degree": 9,
       "id": "the-atlantic-slave-trade-to-brazil",
       "kind": "event",
       "names": [

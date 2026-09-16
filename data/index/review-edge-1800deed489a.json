@@ -4732,6 +4732,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-16",
+      "from": "indigenous-depopulation-of-coastal-brazil",
+      "id": "indigenous-depopulation-of-coastal-brazil--the-atlantic-slave-trade-to-brazil--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "the-atlantic-slave-trade-to-brazil",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "indo-pakistani-war-of-1965",
       "id": "indo-pakistani-war-of-1965--bangladesh-liberation-war--precondition-of",
@@ -6149,6 +6178,35 @@
       ],
       "created": "2026-09-16",
       "from": "portuguese-landfall-in-brazil-1500",
+      "id": "portuguese-landfall-in-brazil-1500--indigenous-depopulation-of-coastal-brazil--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "indigenous-depopulation-of-coastal-brazil",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "portuguese-landfall-in-brazil-1500",
       "id": "portuguese-landfall-in-brazil-1500--the-atlantic-slave-trade-to-brazil--precondition-of",
       "kind": "edge",
       "origin": {
@@ -6193,6 +6251,35 @@
       "revised": null,
       "status": "active",
       "to": "nato-founding-1949",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "proclamation-of-the-brazilian-republic-1889",
+      "id": "proclamation-of-the-brazilian-republic-1889--1964-brazilian-coup-detat--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1964-brazilian-coup-detat",
       "type": "precondition-of"
     },
     {
@@ -6886,6 +6973,35 @@
       "revised": null,
       "status": "active",
       "to": "aberdeen-act-1845",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "the-1930-revolution-and-the-vargas-era",
+      "id": "the-1930-revolution-and-the-vargas-era--1964-brazilian-coup-detat--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1964-brazilian-coup-detat",
       "type": "precondition-of"
     },
     {
