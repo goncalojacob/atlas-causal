@@ -146,6 +146,16 @@ export const SHOTS = Object.freeze([
   { name: 'm43-timeline-phone', page: 'docs/screens/frame.html', query: '?w=390&h=844&fixtures=1',
     width: 500, height: 844,
     what: 'the same five centuries in a 390 x 844 viewport, labelled only where a label fits' },
+  // M43a. The check the brief names and the one the owner can make by eye:
+  // Portugal at 1500, drawn, four centuries before CShapes begins. Every
+  // outline in the picture is dashed all the way round because every one of
+  // them is `probable` — a border the source drew for 1500 and this map holds
+  // until 1530 — and the dash runs along the coast as well, which is the one
+  // place this atlas draws a line on a shore. The bounding box is Iberia and
+  // the near Atlantic, so a reader can see the shore and the Castile border
+  // in the same frame.
+  { name: 'm43a-borders-1500', query: '?from=1500&to=1500&bbox=-14,34,6,45', width: 1440, height: 900,
+    what: 'Portugal at 1500: a probable outline, dashed shore and all, against Castile and Aragon' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
