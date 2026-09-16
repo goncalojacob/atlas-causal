@@ -8380,6 +8380,243 @@ milestone made — **success**. It is dispatched rather than pushed because
      rather than chased, and recorded by the count rather than by a name,
      because the name is what the run did not get.
 
+### M51 — the seam closed on territory, not on dates
+
+**M49 ended surveyed-and-not-closed.** Its brief required the joins joined and
+the splits split; it wrote the survey, asked Wikidata, was told nothing usable,
+and handed the 26 pairs back to a person. It has **no `M51`-style done line and
+should not be given one** — deviation 738 says so in its own words. This
+milestone carried the rest of it. The owner's answer to the handing back, on
+16 September, was **"Just fix the seam thing"**.
+
+**What changed the answer was the question.** M49 asked *when did this polity
+begin or end*, which needs a source the atlas does not have, and Wikidata —
+which models modern states — kept answering with independence dates after the
+seam. M51 asks *are these two records the same polity*, and **the ground
+answers that**. Measuring that two outlines cover the same land is reading two
+records, not deciding between them, which is what M48 established for actor
+grounds. And a joined record invents no date: its span is the 1885-side
+record's own start and the 1886-side record's own end, both already in the
+atlas, each already carrying its source. **No exception to `CLAUDE.md` was
+needed and none was taken.**
+
+**The measure.** `tools/overlap.mjs`, dependency-free, sweeps by lines of
+latitude: on each line the crossings of every ring give longitude intervals by
+parity, and the interval length is weighted by cos(lat). No projection and no
+library. `tools/m51-overlaps.mjs` runs it over the 26 pairs in under a second.
+Every ratio was recomputed at **eight times the resolution and none moved by
+more than 0.0001**, so no verdict rests on how finely the sweep was cut.
+
+**The cut, chosen from the distribution and not from a case.** All 26 were
+measured before a single record changed, and written to `docs/m51-overlaps.md`
+in their own commit. The numbers do not form a gradient with a debatable knee:
+
+- two observations below 0.07 — `harer-egypt` **0.0000**, `congo-before-1886`
+  **0.0687**;
+- twenty-four at or above **0.7956**;
+- **nothing in between.** The empty band is 0.727 wide; the widest gap
+  anywhere inside the upper cluster is 0.066.
+
+**The cut is 0.50**, the middle of that band, and nothing is within sight of
+it: the nearest observation on either side is 0.3 away, and a window of ±0.25
+around the cut — ten times the widest gap in the data — is empty. **Moving the
+cut anywhere from 0.10 to 0.79 changes not one verdict.** That is the only
+condition under which a constant is allowed to stand here, and it is the
+opposite of `NEAR_ZOOM`, which was fitted to one example and had to be undone
+by `NEAR_SPAN`.
+
+**Above the cut the name decides.** High overlap says *the same ground*, not
+*the same polity* — a successor stands on its predecessor's ground, which is
+what succession means. So the second test is whether the names reduce to one
+stem once what the two imports added is removed: `-before-1886`,
+`-under-<sovereign>`, `-fr`, `-uk`, and a parenthetical that is a demonym or a
+former name of the same thing. `madagascar-malagasy` reduces; "Turkey (Ottoman
+Empire)" does not, because Turkey and the Ottoman Empire are two polities.
+
+**Counts.**
+
+- **Pairs joined: 19.** One record spanning both periods, the other `merged`
+  with `supersededBy`, and everything that named it moved in the same commit
+  (rule 11): **39 presences**, **3 successions renamed** as their `from`
+  changed (`belize-under-united-kingdom--belize--succeeded` →
+  `belize-before-1886--belize--succeeded`, and the same for Bhutan and the
+  Philippines), and **2 entries in the import maps**, without which a re-import
+  would recreate the record that was just merged. **No succession relation was
+  written for a join** — nothing succeeded anything. The surviving id is the
+  one more records already pointed at; on a tie (Egypt 4–4, Fiji, Malta,
+  Senegal 2–2) the 1886-side id, because the 1885-side ids are the ones the
+  seam itself named.
+- **Pairs split, with a sourced date: 2.** `ottoman-empire` /
+  `turkey-ottoman-empire` on **`Q12560` P576 1922-11-17**, and `persia` /
+  `iran-persia` on **`Q63158027` P576 1925**, with that item's **P571 1789** as
+  what puts the 1885-side record inside it. Both relations cite the item and
+  the property; those two dates are the only dates in this milestone that were
+  not already in the atlas.
+- **Pairs left open: 3**, and each says what it asks. `germany` /
+  `germany-prussia` (0.9824): is the 1886 record Prussia continuing or the
+  German Empire? `Q183` carries seven P571 values and `germany-prussia`
+  survived `Q183`, `Q38872` and `Q27306` without choosing. `italy` /
+  `italy-sardinia` (0.9578): "Italy/Sardinia" matches no Wikidata item at all,
+  and `italy` survived four. `annam` / `vietnam-annam-cochin-china-tonkin`
+  (0.9431): the stems do not reduce in either direction — the 1886 record names
+  three territories and the 1885 record names one of them, so the overlap is
+  containment and not identity. **None of the three became a join because
+  joining was easier.**
+- **Not a pair: 2**, both records left exactly as they are. `harer-egypt` /
+  `egypt-under-united-kingdom` at 0.0000 — the outlines do not touch, which
+  confirms from the ground what `docs/m49-actors.md` §2 had called the
+  matcher's false pair. `congo-before-1886` / `congo-under-france` at 0.0687 —
+  two territories that share a name. **0.0687 is not a seam; it is a border.**
+
+19 + 2 + 3 + 2 = 26.
+
+**Events.** Five whose `actors` entry named a record whose span moved —
+`young-turk-revolution-of-1908`, `world-war-i` (1914), `armenian-genocide`
+(1915), `treaty-of-brest-litovsk` (1918), `treaty-of-sevres` (1920) — now name
+`ottoman-empire`, because an entry names who held the role **then**.
+`turkish-war-of-independence` (1922) and `treaty-of-lausanne` (1923) were left
+alone: which of the two fought them is a historical question and not a date.
+`chinese-civil-war` (1946) → `taiwan` (1949–open) is still there, still the one
+the brief calls known, and this run touched neither record.
+
+**The seam.** It was 123 actors ending in exactly 1885 against 128 beginning in
+exactly 1886, with 26 candidate pairs between them. It is now **102 and 107**,
+and **one** actor ends in exactly 1885 against a same-stem actor beginning in
+exactly 1886: `congo-before-1886` / `congo-under-france`, which is there
+because the ground says it is not a pair. The other 102 and 107 are the records
+`docs/m49-actors.md` §§5 and 6 already list as having no counterpart on the
+other side at all.
+
+**Russia is measured and open, and the reason is not the one the brief
+expected.** `russian-empire` (1783–1885) and `russia-soviet-union` (1886–open,
+`gwcode 365`) share **0.9766** of the smaller outline across the seam, so the
+1885/1886 boundary between them is the same artefact as everywhere else. The
+brief asks for the lookup to be re-run under "Russian Empire", "Soviet Union"
+and "Russian Federation", on the grounds that M49 had only asked under the
+dataset's label. **It had not**: `docs/m49-subjects.txt` already asks
+`russia-soviet-union` three ways and `russian-empire` as its own record, and
+the answers are in `docs/m49-dates.md` — `Q34266` 1721-10-22→**1917-09-01**,
+`Q15180` 1922-12-30 (and 1923-07-06)→1991-12-26. The third was never asked and
+**cannot be**: `probeFor` in `tools/import/wikidata.mjs` accepts only a name
+the record already carries or a part of one, and `russia-soviet-union` carries
+`"Russia (Soviet Union)"`, from which `derivableNames` takes `Russia` and
+`Soviet Union`. Asked for "Russian Federation" it refuses **before any fetch**.
+Writing that name onto `gwcode 365` to get past the guard **is** the judgement
+being asked for, so the guard stands. What a person supplies is three things:
+the Federation's QID; which of `Q15180`'s two inceptions; and what holds the
+ground in the five years between `Q34266`'s 1917 and `Q15180`'s 1922, which a
+`succeeded` relation cannot span without asserting who held Russia in 1919.
+Then the 24 territorial periods on disk divide by date and need no source at
+all. **The chip the owner objected to is still wrong, and it is now wrong in a
+way that says why.**
+
+**Validator and tests.** `node tools/validate.mjs --index`: **0 errors,
+1,227 warnings** (1,257 before; the fall is the `unread` and
+`presence-outside-actor-when` counts moving as records merged). `node --test`:
+**1,501 tests, 0 skipped**. Nine new tests: eight in `tests/m51.test.mjs` and
+one in `tests/seed-review-flags.test.mjs`. Every one of them was written to
+hold **both before and after** the records moved — each asserts a
+correspondence between `docs/m51-overlaps.md` and the records, never a state —
+because the commit that teaches the tests goes before the one that changes what
+they see and a test that must fail for one commit is not a test.
+
+**The check on `m49`:** recorded below with its run number.
+
+### Deviations 740 to 748 — M51
+
+740. **A join moves no text, because the two imports are under different
+     licences and a record carries one.** Historical Basemaps is GPL-3.0-only
+     and CShapes CC-BY-NC-SA-4.0; `src/licensing.js` gives a record exactly one
+     `license` and `attributionOf` reads that field alone. So the survivor
+     keeps its own `names`, its own `summary` and its own licence, takes only
+     the other record's **year** and its **citation** — a year is a fact and a
+     citation is a pointer, neither is expression — and the merged record keeps
+     everything else and stays reachable through `supersededBy`. The brief asks
+     for "both source datasets in `sources`" and that is done. What it costs is
+     that a joined record's attribution line names one import while its
+     presences carry the other's licence on their own records, which is the
+     honest reading of a model that has no place to write two.
+
+741. **Nine summaries were reworded, and one sentence in four more, so that no
+     record contradicts its own `when`.** The Historical Basemaps import wrote
+     "The interval on this record is the span those snapshots cover, X to
+     1885"; after a join or a split that sentence is false of the record while
+     remaining true of the snapshots, so it now reads "The span those snapshots
+     cover is X to 1885". Nothing was added and nothing removed. On the four
+     split records the closing sentence — "asserts nothing the dataset does
+     not" — had also stopped being true, since their intervals now come from
+     Wikidata, and it says so instead. This is prose about the atlas's own
+     bookkeeping, not about history.
+
+742. **One presence was cut in two, which "presences move, they are not
+     duplicated" does not literally cover.** CShapes gives entity 630 a single
+     period of territorial validity from 1886 to 2019 and the sourced
+     dissolution of Qajar Iran, 1925, falls inside it. Giving it whole to
+     either actor would attribute forty years of ground to the wrong one, so
+     `iran-persia-1886` now ends 1925 and belongs to `persia`, and
+     `iran-persia-1925` carries the rest. The two intervals are disjoint and
+     together are the original, no geometry is redrawn, and both point at the
+     outline CShapes already filed under key `474` — which is **byte for byte
+     identical in all five period files**, checked. Entity 640 needed none of
+     this: it has nine periods and the boundary falls between two of them.
+
+743. **`ottoman-empire` holds ground for eleven months after its own end, and
+     that is the honest choice.** `Q12560`'s P576 is 1922-11-17 and CShapes
+     draws no boundary there — the nearest is 1923-10-14 — so each of entity
+     640's nine periods goes to whoever held it when it **began**. The period
+     running 1920-04-26 to 1923-10-13 begins before the sourced date and so
+     goes to the Empire. The alternative was cutting a period at a date the
+     source does not draw, which is inventing a boundary, or giving it to
+     Turkey, which would have Turkey holding ground two years before its own
+     start. The validator reports this shape as the warning
+     `presence-outside-actor-when`, which 169 records already carried.
+
+744. **The seeding's sentence about remembered dates is not true of a cited
+     interval, and "an import wrote it" was only ever a proxy for that.**
+     `tests/seed-review-flags.test.mjs` requires every hand-written active
+     relation to carry the flag `date` and the note "the interval … was written
+     from memory. Neither has been read in a source." The 77 CShapes-derived
+     successions are already exempt, and `tools/seed-review-flags.mjs` says why
+     in its own comment: their interval is the source's own. M51's two
+     successions are hand-written and their dates are Wikidata's, named by item
+     and property on the record. They carry a new flag `interval-cited` and the
+     tool skips it, in a commit **before** the one that writes them. A second
+     test keeps the flag from being a loophole: a record carrying it must name
+     an item and a property, or it is a word anybody could write to leave the
+     review queue.
+
+745. **`names[0]` changed on the two split records**, from "Turkey (Ottoman
+     Empire)" to "Turkey" and from "Iran (Persia)" to "Iran". Neither record
+     covers the period its parenthetical names any more, so leaving the label
+     would be a visible falsehood — and a conflated label on a chip is the
+     complaint that started this whole line of work. Both former labels stay in
+     `names` for search. No display code was touched: M48 owns what the reader
+     sees.
+
+746. **The index is one commit behind its own history, and needed a follow-up
+     commit.** `tools/lib/history.mjs` reads a record's versions out of
+     `git log`, so a record written in a commit has no history until that
+     commit exists; the index built beside it is therefore stale the moment it
+     lands, by exactly the shard that record falls in. Here it was one relation
+     shard and the manifest. The third import round took the same follow-up.
+
+747. **The browser flake of deviation 730 fired again, in two full runs of
+     four.** `map-browser.test.mjs` → "zoomed to Portugal, Lisbon is named once
+     and its title carries its names", never when its own file is run alone —
+     confirmed by running it alone, 35 of 35 — and nothing in this milestone
+     touches the label placer or any browser file. Recorded, not chased, as
+     deviation 730 already decided.
+
+748. **No `--dates` run was spent on Russia, and the reason is provable in the
+     sandbox.** The brief's route is blocked by `probeFor` before any network
+     call, and `probeFor` is pure: asked for "Russian Federation" against
+     `russia-soviet-union` it returns the refusal quoted above without
+     fetching anything. A run on the runner would have reproduced
+     `docs/m49-dates.md` and that refusal. The guard is right and was left
+     standing; `docs/m51-overlaps.md` §6 writes out what a person must supply
+     instead.
+
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
