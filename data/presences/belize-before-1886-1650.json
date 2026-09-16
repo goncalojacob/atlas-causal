@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "belize-before-1886-1650",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "basemaps"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "world_1650.geojson, \"Belize\""
+    }
+  ],
+  "actor": "belize-before-1886",
+  "presenceType": "polity",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1650,
+    "end": 1699,
+    "date": "1650-01-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1650-1699.json"
+    ],
+    "key": "belize-before-1886"
+  },
+  "capital": null,
+  "confidence": "probable"
+}

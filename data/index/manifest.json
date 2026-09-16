@@ -1,19 +1,19 @@
 {
   "attributeShards": [
     {
-      "file": "index/attributes-1400-1499-e991ca6d8558.json",
+      "file": "index/attributes-1400-1499-bdb39706f27b.json",
       "from": 1400,
       "key": "1400-1499",
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-7a2cf2853d6c.json",
+      "file": "index/attributes-1500-1599-bd6f6b658413.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-311b3f0f24e6.json",
+      "file": "index/attributes-1600-1699-5f8a956e33d6.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
@@ -848,13 +848,13 @@
     }
   ],
   "counts": {
-    "actors": 2401,
+    "actors": 2447,
     "edges": 272,
     "events": 513,
     "narratives": 1,
     "offices": 11,
     "places": 26,
-    "presences": 3170,
+    "presences": 3760,
     "regions": 5,
     "relations": 128,
     "sources": 35,
@@ -878,12 +878,12 @@
     }
   ],
   "files": {
-    "citers": "index/citers-82bb78d48b06",
-    "core": "index/core-2a9ee417fec0.json",
-    "presences": "index/presences-081938b4c7eb.json",
-    "review": "index/review-f52988042522.json",
-    "search": "index/search-e6c0dafff499.json",
-    "sources": "index/sources-3135ccf9d065.json"
+    "citers": "index/citers-b16e497a9c7c",
+    "core": "index/core-c3f506faa043.json",
+    "presences": "index/presences-3db932edcd3c.json",
+    "review": "index/review-ce58ec3ac55a.json",
+    "search": "index/search-d0a4771ae260.json",
+    "sources": "index/sources-69da5e16e3b0.json"
   },
   "historyShards": [
     {
@@ -936,21 +936,21 @@
       "to": null
     },
     {
-      "file": "index/history-actor-1400-1499-6dcd32b62438.json",
+      "file": "index/history-actor-1400-1499-2ce0f879bfb2.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "actor",
       "to": 1499
     },
     {
-      "file": "index/history-actor-1500-1599-c1ee23acc2e8.json",
+      "file": "index/history-actor-1500-1599-10424c1fe982.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "actor",
       "to": 1599
     },
     {
-      "file": "index/history-actor-1600-1699-77056b983bb1.json",
+      "file": "index/history-actor-1600-1699-6c306b00badc.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "actor",
@@ -1571,6 +1571,11 @@
       "file": "geo/presences/1600-1649.json",
       "from": 1600,
       "to": 1649
+    },
+    {
+      "file": "geo/presences/1650-1699.json",
+      "from": 1650,
+      "to": 1699
     },
     {
       "file": "geo/presences/1886-1913.json",
