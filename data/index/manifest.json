@@ -1,10 +1,16 @@
 {
   "attributeShards": [
     {
-      "file": "index/attributes-1400-1499-6c482b6b8d08.json",
+      "file": "index/attributes-1400-1499-974165894193.json",
       "from": 1400,
       "key": "1400-1499",
       "to": 1499
+    },
+    {
+      "file": "index/attributes-1500-1599-27c9399a34f6.json",
+      "from": 1500,
+      "key": "1500-1599",
+      "to": 1599
     },
     {
       "file": "index/attributes-1800-1899-75484ce7c0b1.json",
@@ -836,13 +842,13 @@
     }
   ],
   "counts": {
-    "actors": 1846,
+    "actors": 1866,
     "edges": 272,
     "events": 513,
     "narratives": 1,
     "offices": 11,
     "places": 26,
-    "presences": 2126,
+    "presences": 2264,
     "regions": 5,
     "relations": 128,
     "sources": 35,
@@ -866,12 +872,12 @@
     }
   ],
   "files": {
-    "citers": "index/citers-f4120d43dc5e",
-    "core": "index/core-f174bc4653fe.json",
-    "presences": "index/presences-b1d3672a05c0.json",
-    "review": "index/review-a39d7e996767.json",
-    "search": "index/search-852c783355e3.json",
-    "sources": "index/sources-f52cf184e5c1.json"
+    "citers": "index/citers-0ce8ac5c5c9c",
+    "core": "index/core-23950c6a40c2.json",
+    "presences": "index/presences-3803ea269da8.json",
+    "review": "index/review-8e8a95163ca0.json",
+    "search": "index/search-2a7990236a03.json",
+    "sources": "index/sources-4fb9042dd0b7.json"
   },
   "historyShards": [
     {
@@ -924,11 +930,18 @@
       "to": null
     },
     {
-      "file": "index/history-actor-1400-1499-f3ad529f4908.json",
+      "file": "index/history-actor-1400-1499-7ba4653c754f.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "actor",
       "to": 1499
+    },
+    {
+      "file": "index/history-actor-1500-1599-15a041734328.json",
+      "from": 1500,
+      "key": "1500-1599",
+      "kind": "actor",
+      "to": 1599
     },
     {
       "file": "index/history-actor-1800-1899-06ca95c31407.json",
@@ -1530,6 +1543,11 @@
       "file": "geo/presences/1492-1499.json",
       "from": 1492,
       "to": 1499
+    },
+    {
+      "file": "geo/presences/1500-1529.json",
+      "from": 1500,
+      "to": 1529
     },
     {
       "file": "geo/presences/1886-1913.json",
