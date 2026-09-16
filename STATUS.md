@@ -9554,6 +9554,14 @@ pictures and one sentence between them.
      drawing** now — five per cent, or twelve, whichever is larger — which is
      the order of magnitude the test is about: a bar and its labels, not the
      picture.
+786. **The `STATUS.md` account and the pull-request section landed in one
+     commit, and STEP 6 asks for two.** The instruction is to append the
+     section to `docs/history/pr-sections.md` *in its own commit*; this run
+     wrote both in `3f0bf07f`. The reason the step exists is that the two
+     documents are read by different people at different times, and one commit
+     carrying both is harder to revert on its own. Nothing else about the step
+     was missed: the pull request's own description is untouched, as it
+     requires.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
