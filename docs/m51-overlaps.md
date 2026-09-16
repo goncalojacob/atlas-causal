@@ -204,7 +204,73 @@ to split on. Each asks a question a person must answer:
 
 19 + 2 + 3 + 2 = 26.
 
-## 6. What the joins do not settle
+## 6. Russia, which is the owner's own example, and stays open
+
+`russian-empire` (1783–1885, Historical Basemaps) and `russia-soviet-union`
+(1886–open, CShapes `gwcode 365`) are not one of the 26 — the names do not
+reduce to one stem — but they are the same seam, and "Russia (Soviet Union)"
+on a chip is what started all of this.
+
+**The ground was measured, and it says what it says for the others.** The last
+outline before the seam against the first after it: **0.9766**, far above the
+cut. So the 1885/1886 boundary between these two records is the same artefact
+as everywhere else, and what is uncertain is not *whether* the ground is
+continuous but *where inside it the three polities divide*.
+
+**The split still cannot be written, and the reason is not the one the brief
+expected.** The brief asks for the lookup to be run again under the three
+names themselves — "Russian Empire", "Soviet Union", "Russian Federation" —
+on the grounds that M49 had only asked under the dataset's label. It had not:
+`docs/m49-subjects.txt` already asks `russia-soviet-union` three ways, and
+`russian-empire` as its own record. What came back is in `docs/m49-dates.md`:
+
+- **Russian Empire** — `Q34266`, P571 1721-10-22, **P576 1917-09-01**.
+- **Soviet Union** — `Q15180`, P571 1922-12-30 *and* 1923-07-06, **P576
+  1991-12-26**.
+- **Russian Federation** — never asked, and cannot be.
+
+The third is not a question the runner refused; it is a question
+`tools/import/wikidata.mjs` will not carry to the network at all.
+`probeFor` accepts only a name the record already holds or a part of one, and
+`russia-soviet-union` holds exactly `"Russia (Soviet Union)"`, from which
+`derivableNames` takes `Russia` and `Soviet Union`. Asked for "Russian
+Federation" it answers, before any fetch:
+
+> `"Russian Federation" is not a name` `russia-soviet-union` `carries, nor a
+> part of one`
+
+That guard is right and is not worked around here. To ask the question, a
+person first writes "Russian Federation" onto the record's `names` — and
+writing that name onto `gwcode 365` **is** the judgement that the record
+covers the Federation, which is the very thing being asked. A run on the
+runner would have reproduced `docs/m49-dates.md` and this refusal, so none was
+spent on it.
+
+**What a person has to supply**, unchanged from `docs/m49-actors.md` §7 and
+now with the ground behind it:
+
+1. **The Federation's item.** Narrowed to "Russia" the lookup survived `Q159`
+   and `Q34266` and would not choose, which is correct — "Russia" names both
+   the Federation and the Empire. One QID, written onto the record as a name
+   or as `wikidata`, and the lookup can do the rest.
+2. **Which of `Q15180`'s two inceptions**, 1922-12-30 (the treaty) or
+   1923-07-06 (the constitution).
+3. **What holds the ground from 1917-09-01 to 1922-12-30.** `Q34266` ends
+   there and `Q15180` begins here; five years stand between them. A succession
+   written across that gap would be a claim about who held Russia in 1919, and
+   this milestone does not make it. Either a fourth record covers it or a
+   person decides the relation spans it.
+
+Once those three are answered the presences follow mechanically: `gwcode 365`
+carries 24 periods of territorial validity, they are on disk, and dividing
+them by date needs no source at all.
+
+Until then `russia-soviet-union` stays one record, ending nowhere, and
+`russian-empire` still ends in 1885. **Leaving the seam visible is the point.**
+The chip the owner objected to is still wrong, and it is wrong in a way that
+says so, which is better than a chip that is wrong quietly.
+
+## 7. What the joins do not settle
 
 Two things are inside the joined records and are **not** this milestone's to
 decide. They are written here so they are not lost:
