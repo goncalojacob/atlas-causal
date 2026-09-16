@@ -141,3 +141,46 @@ findings in the session.
 shape. Every date written in this milestone carries the QID and the property
 (P571 inception, P576 dissolved) it came from, in `docs/m49-actors.md` and in
 the record's `sources`. A pair Wikidata will not answer is listed, not guessed.
+
+**A4 — A3 was wrong about the sandbox, and this is the route instead.**
+Supersedes A3. The requirement A3 states — every date carries its QID and the
+property it came from, a pair Wikidata will not answer is listed rather than
+guessed — stands unchanged. What A3 got wrong is where the request is made
+from.
+
+*The fact.* Wikidata is **not** reachable from the scheduled run's sandbox.
+`www.wikidata.org`, `query.wikidata.org` and `en.wikipedia.org` are all
+refused at the egress proxy with `CONNECT tunnel failed, response 403`, body
+`Host not in allowlist`, while GitHub hosts answer normally. Deviation 731
+records it; the run of 16 September re-checked it and it is unchanged. That
+was the supervisor's error in writing A3, not a failure of the run that found
+it, and the refusal of that run to invent dates rather than work around the
+blocker was correct.
+
+*The route, authorised by the owner's supervisor on 16 September.*
+`.github/workflows/import-wikidata.yml` already runs `tools/import/wikidata.mjs`
+against the live service on a push to an `import/**` branch — **on a GitHub
+runner, where Wikidata answers**. Deviation 733 asked whether a new mode may
+be written for that, since "no new import" is one of the four things this
+brief forbids. **It may.** That prohibition governs the *import of records*;
+this is a **lookup of dates** and it writes nothing under `data/`.
+
+The mode is `--dates` on `tools/import/wikidata.mjs`. It takes a list of
+actor ids, resolves each to a Wikidata item **with the matching that file
+already has** (`--reconcile`; reuse it, do not write a second matcher), reads
+**P571 inception** and **P576 dissolved**, and writes a report naming, per
+actor: the id, the QID, the item's label, both dates with their precision, and
+**whether the match is safe or doubtful**. It follows `--candidates` in every
+other respect: nothing written under `data/`, every request through the
+existing injectable `fetchJson` layer, a `--report <file>` argument, and tests
+against a fake fetch. The tests go in the commit **before** the mode
+(deviations 711 and 717). The run is an `import/dates-<date>` branch cut from
+`m49`, fast-forwarded back into `m49`; the output lands as
+`docs/m49-dates.md`.
+
+*What does not change.* The verdicts in `docs/m49-actors.md` are filled from
+`docs/m49-dates.md` **and from nothing else**. Where the dates do not settle a
+pair, or the match is doubtful, the verdict is **left for a person** with the
+question written out. If the workflow fails or the matching is too poor to
+use, the run stops and says so; it does not fall back to memory. **No invented
+date, ever** — that rule outranks finishing this milestone.
