@@ -176,6 +176,48 @@ export const SHOTS = Object.freeze([
   // above needs no frame, because opening a narrative is opening something.
   { name: 'm48-graph', page: 'docs/screens/frame.html', query: '?w=1440&h=900&view=graph', width: 1440, height: 900,
     what: 'the graph drawing what organises other events, at the default floor of two links' },
+  // M50, §5: the worst case, measured rather than fixed. The longest edge the
+  // two chains carry is 349 years — the Atlantic slave trade to Brazil, which
+  // begins in 1540, standing as a precondition of the Republic of 1889 — and
+  // nobody had asked whether either view can draw a link of that length so
+  // that a reader can see both of its ends.
+  //
+  // Both go through the frame, which marks the introduction as seen: a browser
+  // started for one screenshot has never been anywhere (deviation 709). Both
+  // carry the same `?chain=`, which is the walked path and draws it in the
+  // madder accent, and the same `?selected=`, so the panel is open on the far
+  // end of the edge.
+  //
+  // The timeline shot names its own window. Left to itself the view opens on
+  // the century holding most of the corpus, and the question here is precisely
+  // whether the two ends fit in one frame when a reader asks for the span that
+  // holds them both.
+  { name: 'm50-long-edge-graph', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph&chain=the-atlantic-slave-trade-to-brazil--proclamation-of-the-brazilian-republic-1889--precondition-of&selected=proclamation-of-the-brazilian-republic-1889',
+    width: 1440, height: 900,
+    what: 'the graph drawing a 349-year edge: 1540 to 1889, walked' },
+  { name: 'm50-long-edge-timeline', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1480&to=1980&chain=the-atlantic-slave-trade-to-brazil--proclamation-of-the-brazilian-republic-1889--precondition-of&selected=proclamation-of-the-brazilian-republic-1889',
+    width: 1440, height: 900,
+    what: 'the same 349-year link on the timeline, over the five centuries that hold both ends' },
+  // And the same edge under a lens, which is what tells the difference between
+  // "the graph cannot draw a link of this length" and "the graph cannot draw
+  // anything in a corpus of 250 events without a lens". M48 built the lens;
+  // this is the first long edge it has been asked to hold.
+  { name: 'm50-long-edge-focus', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph&focus=event:the-atlantic-slave-trade-to-brazil&chain=the-atlantic-slave-trade-to-brazil--proclamation-of-the-brazilian-republic-1889--precondition-of&selected=proclamation-of-the-brazilian-republic-1889',
+    width: 1440, height: 900,
+    what: 'the 349-year edge with a lens on its near end: the chain alone, not the corpus' },
+  // The same lens with the window opened to hold both ends, which is the shot
+  // that turns the §5 finding from "the graph cannot draw this" into something
+  // a follow-on milestone can actually fix. Ten nodes, twelve links and no
+  // label over another; the only difference from the shot above is `?from=`
+  // and `?to=`, and nothing in the interface sets them for a reader who walks
+  // to an edge this long.
+  { name: 'm50-long-edge-window', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1480&to=1980&view=graph&focus=event:the-atlantic-slave-trade-to-brazil&chain=the-atlantic-slave-trade-to-brazil--proclamation-of-the-brazilian-republic-1889--precondition-of&selected=proclamation-of-the-brazilian-republic-1889',
+    width: 1440, height: 900,
+    what: 'the same lens with the window opened to 1480-1980: all ten nodes, and the long edge whole' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
