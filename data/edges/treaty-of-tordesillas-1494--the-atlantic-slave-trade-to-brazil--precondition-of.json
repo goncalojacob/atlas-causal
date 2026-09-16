@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "treaty-of-tordesillas-1494--the-atlantic-slave-trade-to-brazil--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Tordesillas\", revision 1374273992"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    }
+  ],
+  "from": "treaty-of-tordesillas-1494",
+  "to": "the-atlantic-slave-trade-to-brazil",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The treaty is usually read for what it gave Portugal in the west. Read for what it left in the east it is the other half of the same fact: everything on the African side of the meridian stayed Portuguese, the Guinea and Angola coasts included. One crown therefore held both ends of a traffic that had not begun yet — the ports the captives were embarked at and the coast they were landed on. Wikipedia’s account of the Brazilian trade has most of the five and a half million embarking at West Central African ports, above all Luanda; that they were Portuguese ports is what 1494 settled.",
+  "dispute": null
+}

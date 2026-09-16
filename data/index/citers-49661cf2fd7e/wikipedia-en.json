@@ -530,6 +530,18 @@
     },
     {
       "dissent": false,
+      "id": "governorate-general-of-brazil-1549--dutch-brazil-1630-1654--precondition-of",
+      "kind": "edge",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
+      "id": "governorate-general-of-brazil-1549--dutch-brazil-1630-1654--precondition-of",
+      "kind": "edge",
+      "locator": "\"Dutch Brazil\", revision 1371124077"
+    },
+    {
+      "dissent": false,
       "id": "great-depression--bretton-woods-system--precondition-of",
       "kind": "edge",
       "locator": "\"Bretton Woods system\", revision 1374837351"
@@ -563,6 +575,30 @@
       "id": "gulf-war--iraq-war--precondition-of",
       "kind": "edge",
       "locator": "\"Iraq War\", revision 1373215695"
+    },
+    {
+      "dissent": false,
+      "id": "hereditary-captaincies-of-brazil-1534--governorate-general-of-brazil-1549--caused",
+      "kind": "edge",
+      "locator": "\"Captaincies of Brazil\", revision 1360950595"
+    },
+    {
+      "dissent": false,
+      "id": "hereditary-captaincies-of-brazil-1534--governorate-general-of-brazil-1549--caused",
+      "kind": "edge",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
+      "id": "hereditary-captaincies-of-brazil-1534--the-atlantic-slave-trade-to-brazil--precondition-of",
+      "kind": "edge",
+      "locator": "\"Captaincies of Brazil\", revision 1360950595"
+    },
+    {
+      "dissent": false,
+      "id": "hereditary-captaincies-of-brazil-1534--the-atlantic-slave-trade-to-brazil--precondition-of",
+      "kind": "edge",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
     },
     {
       "dissent": false,
@@ -836,6 +872,18 @@
     },
     {
       "dissent": false,
+      "id": "portuguese-landfall-in-brazil-1500--the-atlantic-slave-trade-to-brazil--precondition-of",
+      "kind": "edge",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-landfall-in-brazil-1500--the-atlantic-slave-trade-to-brazil--precondition-of",
+      "kind": "edge",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    },
+    {
+      "dissent": false,
       "id": "potsdam-conference--nato-founding-1949--precondition-of",
       "kind": "edge",
       "locator": "\"Potsdam Conference\", revision 1371936780"
@@ -950,6 +998,54 @@
     },
     {
       "dissent": false,
+      "id": "the-atlantic-slave-trade-to-brazil--the-brazilian-gold-cycle--enabled",
+      "kind": "edge",
+      "locator": "\"Brazilian gold rush\", revision 1360546842"
+    },
+    {
+      "dissent": false,
+      "id": "the-atlantic-slave-trade-to-brazil--the-brazilian-gold-cycle--enabled",
+      "kind": "edge",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    },
+    {
+      "dissent": false,
+      "id": "the-brazilian-gold-cycle--transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--caused",
+      "kind": "edge",
+      "locator": "\"Brazilian gold rush\", revision 1360546842"
+    },
+    {
+      "dissent": false,
+      "id": "the-brazilian-gold-cycle--transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--caused",
+      "kind": "edge",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
+      "id": "the-brazilian-sugar-cycle--dutch-brazil-1630-1654--caused",
+      "kind": "edge",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
+      "id": "the-brazilian-sugar-cycle--dutch-brazil-1630-1654--caused",
+      "kind": "edge",
+      "locator": "\"Dutch Brazil\", revision 1371124077"
+    },
+    {
+      "dissent": false,
+      "id": "the-brazilian-sugar-cycle--the-atlantic-slave-trade-to-brazil--caused",
+      "kind": "edge",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
+      "id": "the-brazilian-sugar-cycle--the-atlantic-slave-trade-to-brazil--caused",
+      "kind": "edge",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    },
+    {
+      "dissent": false,
       "id": "the-holocaust--european-convention-on-human-rights--reacted-to",
       "kind": "edge",
       "locator": "\"European Convention on Human Rights\", revision 1366403378"
@@ -1025,6 +1121,30 @@
       "id": "treaty-of-sevres--turkish-war-of-independence--caused",
       "kind": "edge",
       "locator": "\"Turkish War of Independence\", revision 1372145108"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-tordesillas-1494--portuguese-landfall-in-brazil-1500--precondition-of",
+      "kind": "edge",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-tordesillas-1494--portuguese-landfall-in-brazil-1500--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Tordesillas\", revision 1374273992"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-tordesillas-1494--the-atlantic-slave-trade-to-brazil--precondition-of",
+      "kind": "edge",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-tordesillas-1494--the-atlantic-slave-trade-to-brazil--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Tordesillas\", revision 1374273992"
     },
     {
       "dissent": false,
@@ -1580,6 +1700,12 @@
     },
     {
       "dissent": false,
+      "id": "dutch-brazil-1630-1654",
+      "kind": "event",
+      "locator": "\"Dutch Brazil\", revision 1371124077"
+    },
+    {
+      "dissent": false,
       "id": "eastern-front",
       "kind": "event",
       "locator": "\"Eastern Front (World War II)\", revision 1373107377"
@@ -1628,6 +1754,12 @@
     },
     {
       "dissent": false,
+      "id": "governorate-general-of-brazil-1549",
+      "kind": "event",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
       "id": "great-depression",
       "kind": "event",
       "locator": "\"Great Depression\", revision 1371653684"
@@ -1643,6 +1775,18 @@
       "id": "gulf-war",
       "kind": "event",
       "locator": "\"Gulf War\", revision 1373369657"
+    },
+    {
+      "dissent": false,
+      "id": "hereditary-captaincies-of-brazil-1534",
+      "kind": "event",
+      "locator": "\"Captaincies of Brazil\", revision 1360950595"
+    },
+    {
+      "dissent": false,
+      "id": "hereditary-captaincies-of-brazil-1534",
+      "kind": "event",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
     },
     {
       "dissent": false,
@@ -1736,6 +1880,12 @@
     },
     {
       "dissent": false,
+      "id": "portuguese-landfall-in-brazil-1500",
+      "kind": "event",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
       "id": "portuguese-regionalisation-referendum-1998",
       "kind": "event",
       "locator": "\"1998 Portuguese regionalisation referendum\", revision 1361503309"
@@ -1796,9 +1946,45 @@
     },
     {
       "dissent": false,
+      "id": "the-atlantic-slave-trade-to-brazil",
+      "kind": "event",
+      "locator": "\"Atlantic slave trade\", revision 1375257090"
+    },
+    {
+      "dissent": false,
+      "id": "the-atlantic-slave-trade-to-brazil",
+      "kind": "event",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    },
+    {
+      "dissent": false,
+      "id": "the-brazilian-gold-cycle",
+      "kind": "event",
+      "locator": "\"Brazilian gold rush\", revision 1360546842"
+    },
+    {
+      "dissent": false,
+      "id": "the-brazilian-gold-cycle",
+      "kind": "event",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
+      "id": "the-brazilian-sugar-cycle",
+      "kind": "event",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
       "id": "the-holocaust",
       "kind": "event",
       "locator": "\"The Holocaust\", revision 1373403276"
+    },
+    {
+      "dissent": false,
+      "id": "transfer-of-the-colonial-capital-to-rio-de-janeiro-1763",
+      "kind": "event",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
     },
     {
       "dissent": false,
@@ -1841,6 +2027,12 @@
       "id": "treaty-of-sevres",
       "kind": "event",
       "locator": "\"Treaty of Sèvres\", revision 1369307123"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-tordesillas-1494",
+      "kind": "event",
+      "locator": "\"Treaty of Tordesillas\", revision 1374273992"
     },
     {
       "dissent": false,

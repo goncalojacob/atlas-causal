@@ -3370,6 +3370,39 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 2,
+      "id": "dutch-brazil-1630-1654",
+      "kind": "event",
+      "names": [
+        "Nieuw-Holland",
+        "Brasil Holandês",
+        "New Holland"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Dutch Brazil"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "telo-2007-historia-contemporanea",
         "maxwell-1995-making-of-portuguese-democracy"
       ],
@@ -4264,6 +4297,37 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 2,
+      "id": "governorate-general-of-brazil-1549",
+      "kind": "event",
+      "names": [
+        "Governo-Geral do Brasil"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Governorate General of Brazil"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -4473,6 +4537,37 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "Hat Nipah and Same massacres"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 2,
+      "id": "hereditary-captaincies-of-brazil-1534",
+      "kind": "event",
+      "names": [
+        "Capitanias hereditárias"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The hereditary captaincies of Brazil"
     },
     {
       "authors": [
@@ -5971,6 +6066,38 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 2,
+      "id": "portuguese-landfall-in-brazil-1500",
+      "kind": "event",
+      "names": [
+        "Descobrimento do Brasil",
+        "Cabral’s landfall"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Portuguese landfall in Brazil"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -6698,6 +6825,100 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 5,
+      "id": "the-atlantic-slave-trade-to-brazil",
+      "kind": "event",
+      "names": [
+        "Tráfico atlântico de escravizados para o Brasil"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Atlantic slave trade to Brazil"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 2,
+      "id": "the-brazilian-gold-cycle",
+      "kind": "event",
+      "names": [
+        "Ciclo do ouro",
+        "Brazilian gold rush"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Brazilian gold cycle"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 2,
+      "id": "the-brazilian-sugar-cycle",
+      "kind": "event",
+      "names": [
+        "Ciclo do açúcar"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Brazilian sugar cycle"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -6727,6 +6948,37 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "The Holocaust"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 1,
+      "id": "transfer-of-the-colonial-capital-to-rio-de-janeiro-1763",
+      "kind": "event",
+      "names": [
+        "Transferência da capital para o Rio de Janeiro"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The colonial capital moves to Rio de Janeiro"
     },
     {
       "authors": [
@@ -7085,6 +7337,38 @@
       "revised": "2026-09-16",
       "status": "active",
       "title": "Treaty of Sèvres"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 2,
+      "id": "treaty-of-tordesillas-1494",
+      "kind": "event",
+      "names": [
+        "Tratado de Tordesilhas",
+        "Tratado de Tordesillas"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Tordesillas"
     },
     {
       "authors": [

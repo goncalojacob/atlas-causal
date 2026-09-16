@@ -385,7 +385,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 63,
+      "degree": 64,
       "id": "lisbon",
       "kind": "place",
       "names": [
@@ -656,6 +656,7 @@
         }
       ],
       "created": "2026-09-16",
+      "degree": 1,
       "id": "porto-seguro",
       "kind": "place",
       "names": [
@@ -679,7 +680,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 1,
+      "degree": 2,
       "id": "recife",
       "kind": "place",
       "names": [
@@ -702,6 +703,7 @@
         }
       ],
       "created": "2026-09-16",
+      "degree": 1,
       "id": "rio-de-janeiro",
       "kind": "place",
       "names": [
@@ -747,6 +749,7 @@
         }
       ],
       "created": "2026-09-16",
+      "degree": 3,
       "id": "salvador",
       "kind": "place",
       "names": [
@@ -913,6 +916,7 @@
         }
       ],
       "created": "2026-09-16",
+      "degree": 1,
       "id": "tordesillas",
       "kind": "place",
       "names": [
@@ -936,6 +940,7 @@
         }
       ],
       "created": "2026-09-16",
+      "degree": 1,
       "id": "vila-rica",
       "kind": "place",
       "names": [
@@ -1020,25 +1025,7 @@
       "rule": "place-unused"
     },
     {
-      "id": "porto-seguro",
-      "kind": "place",
-      "message": "place is referenced by no event",
-      "rule": "place-unused"
-    },
-    {
-      "id": "rio-de-janeiro",
-      "kind": "place",
-      "message": "place is referenced by no event",
-      "rule": "place-unused"
-    },
-    {
       "id": "saint-denis",
-      "kind": "place",
-      "message": "place is referenced by no event",
-      "rule": "place-unused"
-    },
-    {
-      "id": "salvador",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
@@ -1057,18 +1044,6 @@
     },
     {
       "id": "santo-domingo",
-      "kind": "place",
-      "message": "place is referenced by no event",
-      "rule": "place-unused"
-    },
-    {
-      "id": "tordesillas",
-      "kind": "place",
-      "message": "place is referenced by no event",
-      "rule": "place-unused"
-    },
-    {
-      "id": "vila-rica",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"

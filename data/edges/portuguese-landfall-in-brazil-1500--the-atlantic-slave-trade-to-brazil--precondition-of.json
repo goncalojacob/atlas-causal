@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "portuguese-landfall-in-brazil-1500--the-atlantic-slave-trade-to-brazil--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    }
+  ],
+  "from": "portuguese-landfall-in-brazil-1500",
+  "to": "the-atlantic-slave-trade-to-brazil",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Nothing about 22 April 1500 predicts the trade. For thirty years afterwards Portugal sent almost nobody, and what it came for was a dye-wood cut by indigenous labour working for knives and mirrors. The edge is `precondition-of` and not `caused` for exactly that reason: the landfall is the beginning of a Portuguese presence on that coast and of nothing else, and every later step of this chain had to have that presence first.",
+  "dispute": null
+}

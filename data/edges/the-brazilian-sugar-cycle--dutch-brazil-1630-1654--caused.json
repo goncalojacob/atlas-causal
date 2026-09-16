@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-brazilian-sugar-cycle--dutch-brazil-1630-1654--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch Brazil\", revision 1371124077"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    }
+  ],
+  "from": "the-brazilian-sugar-cycle",
+  "to": "dutch-brazil-1630-1654",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Dutch Republic did not conquer the north-east of Brazil because it was there. It conquered the part of it that made sugar, held it for twenty-four years with the West India Company’s headquarters at Recife, and lost the value of it in the fighting: Wikipedia’s account has the occupation itself precipitating a decline in Brazilian sugar, with the disruption of production standing beside the rise of planting in the Caribbean. The sugar is both the motive and, in the end, what the war spent.",
+  "dispute": null
+}

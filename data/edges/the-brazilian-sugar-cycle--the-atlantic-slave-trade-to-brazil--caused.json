@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-brazilian-sugar-cycle--the-atlantic-slave-trade-to-brazil--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    }
+  ],
+  "from": "the-brazilian-sugar-cycle",
+  "to": "the-atlantic-slave-trade-to-brazil",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The colonists began with enslaved indigenous labour and moved to enslaved Africans, and the sources are direct about why: sugar was the colony’s principal export until the early eighteenth century and slave labour was what drove its growth. This is the strongest type in the chain and it is meant strongly. The demand did not merely permit the traffic; the size, the direction and the timing of the traffic are the sugar economy’s, and when the export cycle changed — to mines after 1690, to coffee after 1830 — the traffic changed with it.",
+  "dispute": null
+}

@@ -35,9 +35,16 @@ is not a device. It is what the sources say the two economies were organised
 around, and it is why the centres were chosen after the reading rather than
 before.
 
-**"A dated `when`"** is read as: the interval's bounds are years, and an event
-that happened inside one year says which day. A process that ran for a century
-carries no `date` and is not asked for one.
+**"A dated `when`"** is read as: the interval is in time rather than vague —
+both bounds are years — and where a record gives a day, the day falls inside
+the interval it belongs to. The first draft of the test also asked every
+one-year event for its day, and the record that broke it is
+`transfer-of-the-colonial-capital-to-rio-de-janeiro-1763`, whose source says
+"in 1763" and no more. Asking for a day there would have been a demand on the
+sources, answerable only by inventing one. What went in its place is stricter
+and is about this run rather than about the past: **every chain event cites a
+Wikipedia article at a named revision**, so a reviewer can open the exact text
+this run read.
 
 **"Every cross-chain edge passes through a record both chains name"** is read
 as: the edge has an endpoint that is a shared record, and its other endpoint is
@@ -58,8 +65,8 @@ Centre: `the-atlantic-slave-trade-to-brazil`.
 | `the-brazilian-sugar-cycle` | |
 | `dutch-brazil-1630-1654` | shared |
 | `the-atlantic-slave-trade-to-brazil` | centre |
-| `brazilian-gold-cycle-1695-1760` | |
-| `treaty-of-methuen-1703` | |
+| `the-brazilian-gold-cycle` | |
+| `transfer-of-the-colonial-capital-to-rio-de-janeiro-1763` | |
 | `the-british-industrial-revolution` | shared |
 | `transfer-of-the-portuguese-court-to-brazil-1807` | |
 | `slave-trade-act-1807` | shared |
@@ -108,9 +115,10 @@ shared record the link passes through, and it is always one of the two ends.
 | `treaty-of-tordesillas-1494` | `portuguese-landfall-in-brazil-1500` | `treaty-of-tordesillas-1494` | the meridian that made the coast Portuguese |
 | `treaty-of-tordesillas-1494` | `the-atlantic-slave-trade-to-brazil` | `treaty-of-tordesillas-1494` | one crown east *and* west of the line: Guinea and Brazil |
 | `treaty-of-tordesillas-1494` | `spanish-conquest-of-cuba-1511` | `treaty-of-tordesillas-1494` | the Castilian title the conquest of the Antilles rested on |
-| `the-atlantic-slave-trade-to-brazil` | `dutch-brazil-1630-1654` | `dutch-brazil-1630-1654` | the slave-fed sugar colony the Company came to take |
+| `the-brazilian-sugar-cycle` | `dutch-brazil-1630-1654` | `dutch-brazil-1630-1654` | the sugar coast the Company came for |
+| `governorate-general-of-brazil-1549` | `dutch-brazil-1630-1654` | `dutch-brazil-1630-1654` | the royal colony that made it worth taking |
 | `dutch-brazil-1630-1654` | `the-caribbean-sugar-revolution` | `dutch-brazil-1630-1654` | the planters and the sugar technique that left Pernambuco in 1654 |
-| `brazilian-gold-cycle-1695-1760` | `the-british-industrial-revolution` | `the-british-industrial-revolution` | where the Minas gold went, and whether it mattered |
+| `the-brazilian-gold-cycle` | `the-british-industrial-revolution` | `the-british-industrial-revolution` | where the Minas gold went, and whether it mattered |
 | `the-atlantic-slave-trade-to-the-caribbean` | `the-british-industrial-revolution` | `the-british-industrial-revolution` | the Williams question, from the Caribbean side |
 | `slave-trade-act-1807` | `aberdeen-act-1845` | `slave-trade-act-1807` | the Act the Royal Navy enforced against Brazil |
 | `slave-trade-act-1807` | `slavery-abolition-act-1833` | `slave-trade-act-1807` | the Act the British emancipation was built on |
@@ -146,6 +154,43 @@ milestone wrote `precondition-of`, which is the weakest of the five and is the
 one that says *this had to be true first* without saying *this brought it
 about*. It is used heavily and deliberately: of the edges here, the ones that
 claim a cause are the minority.
+
+## Where the research beat the spine
+
+The brief's §3 says its list of subjects carries no dates on purpose and that
+where the research says the spine is wrong, the research wins and the brief is
+amended to say so. Three places where it did.
+
+**The Methuen Treaty is not in this chain.** It was the obvious candidate for
+the channel by which Brazilian gold reached London, and it cannot be an edge
+here: Wikipedia dates it 1703 and dates the gold rush from 1695, so an edge
+claiming the gold brought the treaty about would run the arrow of time
+backwards in argument if not in years — the treaty was a wartime alliance and
+a wine-and-textiles bargain struck inside the War of the Spanish Succession,
+and the sources do not put Minas in its making. Rule 4 permits
+`gold → Methuen` and the sources do not, which is a useful demonstration that
+the validator is not the historian. What replaced it is
+`transfer-of-the-colonial-capital-to-rio-de-janeiro-1763`, which the same
+article explains in exactly the terms an edge needs: the capital moved because
+Rio was nearer the mines and had a harbour the gold could leave from.
+
+**The gold cycle lost the dates in its id.** It was to be
+`brazilian-gold-cycle-1695-1760`; the sources give 1695 for the strike and
+"the second half of the eighteenth century" for the decline, so the record is
+`the-brazilian-gold-cycle` and the imprecision lives in `when`, where a
+`{min, max}` bound can hold it, rather than in a slug that cannot.
+
+**No event in these chains names an actor.** Every polity record the atlas
+holds for Portugal, Spain, Britain or Brazil carries the span of the territory
+import that created it — `portugal` begins in 1886, `castile` ends in 1491 —
+because those spans are map frames and not lifetimes. Naming `portugal` on a
+record of 1500 would assert that a thing beginning in 1886 was present, and
+rewriting those actors is M52's work and not this run's. The events carry
+places instead, and M48's ground containment finds them for the actors whose
+territory they stand in, which is how selecting Portugal already reaches
+eighty events rather than eight. What this costs is stated plainly in
+`STATUS.md`: the cross-links here are routed through shared *events*, and no
+cross-link in this milestone is carried by a shared actor.
 
 ## Confidence, and amendment A2
 

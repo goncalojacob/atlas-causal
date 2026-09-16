@@ -1,25 +1,25 @@
 {
   "attributeShards": [
     {
-      "file": "index/attributes-1400-1499-002482676e6e.json",
+      "file": "index/attributes-1400-1499-4dac2e55c59a.json",
       "from": 1400,
       "key": "1400-1499",
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-ddb940495a70.json",
+      "file": "index/attributes-1500-1599-a0bb4974a630.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-3a0dc1f7edc9.json",
+      "file": "index/attributes-1600-1699-91c1a8aa6df2.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-a6ff7120c4d0.json",
+      "file": "index/attributes-1700-1799-f8355a0611e2.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
@@ -855,8 +855,8 @@
   ],
   "counts": {
     "actors": 2687,
-    "edges": 272,
-    "events": 513,
+    "edges": 282,
+    "events": 522,
     "narratives": 1,
     "offices": 11,
     "places": 41,
@@ -867,6 +867,21 @@
     "tenures": 83
   },
   "explanationShards": [
+    {
+      "file": "index/explanations-1400-1499-b996ec03b0e3.json",
+      "from": 1400,
+      "to": 1499
+    },
+    {
+      "file": "index/explanations-1500-1599-b42fd2dba9ef.json",
+      "from": 1500,
+      "to": 1599
+    },
+    {
+      "file": "index/explanations-1600-1699-7925e26a560f.json",
+      "from": 1600,
+      "to": 1699
+    },
     {
       "file": "index/explanations-1800-1899-d9be6ed20166.json",
       "from": 1800,
@@ -884,15 +899,43 @@
     }
   ],
   "files": {
-    "citers": "index/citers-576c711b1e3e",
-    "core": "index/core-9e1b795de647.json",
-    "grounds": "index/grounds-8b5b1e62afda.json",
+    "citers": "index/citers-49661cf2fd7e",
+    "core": "index/core-fe67f8d385ad.json",
+    "grounds": "index/grounds-2410d6c486bd.json",
     "presences": "index/presences-fce26e6b033b.json",
-    "review": "index/review-4a100091d79a.json",
-    "search": "index/search-211d0d393755.json",
-    "sources": "index/sources-3668ca9cf235.json"
+    "review": "index/review-8a94fae02d48.json",
+    "search": "index/search-1a060ef16388.json",
+    "sources": "index/sources-98606b791d17.json"
   },
   "historyShards": [
+    {
+      "file": "index/history-event-1400-1499-97232c5a3279.json",
+      "from": 1400,
+      "key": "1400-1499",
+      "kind": "event",
+      "to": 1499
+    },
+    {
+      "file": "index/history-event-1500-1599-1944a352e13a.json",
+      "from": 1500,
+      "key": "1500-1599",
+      "kind": "event",
+      "to": 1599
+    },
+    {
+      "file": "index/history-event-1600-1699-b431b51f7cb0.json",
+      "from": 1600,
+      "key": "1600-1699",
+      "kind": "event",
+      "to": 1699
+    },
+    {
+      "file": "index/history-event-1700-1799-19b0bac81d16.json",
+      "from": 1700,
+      "key": "1700-1799",
+      "kind": "event",
+      "to": 1799
+    },
     {
       "file": "index/history-event-1800-1899-09f231a66ad4.json",
       "from": 1800,
@@ -913,6 +956,27 @@
       "key": "2000-2099",
       "kind": "event",
       "to": 2099
+    },
+    {
+      "file": "index/history-edge-1400-1499-ec80b39d59be.json",
+      "from": 1400,
+      "key": "1400-1499",
+      "kind": "edge",
+      "to": 1499
+    },
+    {
+      "file": "index/history-edge-1500-1599-9515aa37818d.json",
+      "from": 1500,
+      "key": "1500-1599",
+      "kind": "edge",
+      "to": 1599
+    },
+    {
+      "file": "index/history-edge-1600-1699-368d1f603f44.json",
+      "from": 1600,
+      "key": "1600-1699",
+      "kind": "edge",
+      "to": 1699
     },
     {
       "file": "index/history-edge-1800-1899-996ceeccfbca.json",
@@ -992,7 +1056,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-8f211dc4f1c4.json",
+      "file": "index/history-place-place-aa57e2324516.json",
       "from": null,
       "key": "place",
       "kind": "place",

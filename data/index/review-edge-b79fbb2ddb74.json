@@ -4173,6 +4173,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-16",
+      "from": "governorate-general-of-brazil-1549",
+      "id": "governorate-general-of-brazil-1549--dutch-brazil-1630-1654--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "dutch-brazil-1630-1654",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-15",
       "from": "great-depression",
       "id": "great-depression--bretton-woods-system--precondition-of",
@@ -4438,6 +4467,64 @@
       "revised": null,
       "status": "active",
       "to": "iraq-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "hereditary-captaincies-of-brazil-1534",
+      "id": "hereditary-captaincies-of-brazil-1534--governorate-general-of-brazil-1549--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "governorate-general-of-brazil-1549",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "hereditary-captaincies-of-brazil-1534",
+      "id": "hereditary-captaincies-of-brazil-1534--the-atlantic-slave-trade-to-brazil--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "the-atlantic-slave-trade-to-brazil",
       "type": "precondition-of"
     },
     {
@@ -5942,6 +6029,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "portuguese-landfall-in-brazil-1500",
+      "id": "portuguese-landfall-in-brazil-1500--the-atlantic-slave-trade-to-brazil--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "the-atlantic-slave-trade-to-brazil",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "telo-2007-historia-contemporanea",
         "wikipedia-en"
       ],
@@ -6608,6 +6724,122 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-16",
+      "from": "the-atlantic-slave-trade-to-brazil",
+      "id": "the-atlantic-slave-trade-to-brazil--the-brazilian-gold-cycle--enabled",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "the-brazilian-gold-cycle",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "the-brazilian-gold-cycle",
+      "id": "the-brazilian-gold-cycle--transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "transfer-of-the-colonial-capital-to-rio-de-janeiro-1763",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "the-brazilian-sugar-cycle",
+      "id": "the-brazilian-sugar-cycle--dutch-brazil-1630-1654--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "dutch-brazil-1630-1654",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "the-brazilian-sugar-cycle",
+      "id": "the-brazilian-sugar-cycle--the-atlantic-slave-trade-to-brazil--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "the-atlantic-slave-trade-to-brazil",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "the-holocaust",
       "id": "the-holocaust--european-convention-on-human-rights--reacted-to",
@@ -6856,6 +7088,64 @@
       "status": "active",
       "to": "turkish-war-of-independence",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "treaty-of-tordesillas-1494",
+      "id": "treaty-of-tordesillas-1494--portuguese-landfall-in-brazil-1500--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portuguese-landfall-in-brazil-1500",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "treaty-of-tordesillas-1494",
+      "id": "treaty-of-tordesillas-1494--the-atlantic-slave-trade-to-brazil--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "the-atlantic-slave-trade-to-brazil",
+      "type": "precondition-of"
     },
     {
       "authors": [

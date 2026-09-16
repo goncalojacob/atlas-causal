@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "hereditary-captaincies-of-brazil-1534--governorate-general-of-brazil-1549--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Captaincies of Brazil\", revision 1360950595"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    }
+  ],
+  "from": "hereditary-captaincies-of-brazil-1534",
+  "to": "governorate-general-of-brazil-1549",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "This one is a cause and the sources say so plainly. Four donees never took possession, four more were driven out by the people already living there, and of fifteen grants only Pernambuco and São Vicente prospered. With most of the captaincies failed and French ships working the coast, John III turned the colonisation of Brazil back into a royal enterprise and sent Tomé de Sousa out in 1549 with written instructions and a capital to found. The governorate is what the crown did about the captaincies.",
+  "dispute": null
+}

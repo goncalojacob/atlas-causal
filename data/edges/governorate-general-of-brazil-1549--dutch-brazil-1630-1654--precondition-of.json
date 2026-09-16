@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "governorate-general-of-brazil-1549--dutch-brazil-1630-1654--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch Brazil\", revision 1371124077"
+    }
+  ],
+  "from": "governorate-general-of-brazil-1549",
+  "to": "dutch-brazil-1630-1654",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "What the West India Company took in 1630 was not an empty coast. It was a royal colony with a capital, a government, a church and a working sugar economy — the thing the captaincies had failed to produce and the crown had installed in 1549. A colony is worth conquering when somebody else has already built it, and the Company took the built part: at its height it held almost half of the settled European area of Brazil, with its headquarters at Recife.",
+  "dispute": null
+}

@@ -200,11 +200,13 @@ for (const [name, rows] of chains) {
 
 // --- §8.5: every chain event is placed and dated -------------------------
 
-// "A dated `when`" read as strictly as the records allow: the interval's
-// bounds are years (a `{min,max}` range is a year the source itself does not
-// pin, which is honest and allowed), and an event that happened on one day
-// says which day. A process spanning years carries no `date` and is not asked
-// for one.
+// "A dated `when`" read as: the interval is in time rather than vague — both
+// bounds are years, a `{min,max}` range being a year the source itself does
+// not pin — and where the record does give a day, that day falls inside the
+// interval it belongs to. The first draft of this test asked every one-year
+// event for its day as well, and a source that says only "in 1763" is what
+// showed that to be a demand on the sources rather than on the run. See
+// docs/m50-chains.md, "the reading of the brief's tests".
 const bounds = (v) => (Number.isInteger(v) ? { min: v, max: v } : (v && Number.isInteger(v.min) && Number.isInteger(v.max) ? v : null));
 
 test('every chain event has a place and a dated when', () => {
@@ -215,10 +217,34 @@ test('every chain event has a place and a dated when', () => {
     if (typeof e.place !== 'string') wrong.push(`${id}: no place`);
     const start = bounds(e.when?.start);
     if (!start) { wrong.push(`${id}: when.start is not a year`); continue; }
-    if (e.when.end !== null && !bounds(e.when.end)) wrong.push(`${id}: when.end is neither a year nor null`);
+    if (e.when.end === undefined) { wrong.push(`${id}: when has no end`); continue; }
     const end = e.when.end === null ? null : bounds(e.when.end);
-    const oneDay = end && start.min === start.max && end.min === end.max && start.min === end.min;
-    if (oneDay && typeof e.when.date !== 'string') wrong.push(`${id}: happened in one year and does not say which day`);
+    if (e.when.end !== null && !end) { wrong.push(`${id}: when.end is neither a year nor null`); continue; }
+    if (end && end.max < start.min) wrong.push(`${id}: ends before it starts`);
+    const yearOf = (d) => Number.parseInt(String(d).replace(/^(-?)(\d+)-.*$/, '$1$2'), 10);
+    if (typeof e.when.date === 'string') {
+      const y = yearOf(e.when.date);
+      if (y < start.min || y > start.max) wrong.push(`${id}: when.date is ${y}, outside when.start`);
+    }
+    if (typeof e.when.endDate === 'string' && end) {
+      const y = yearOf(e.when.endDate);
+      if (y < end.min || y > end.max) wrong.push(`${id}: when.endDate is ${y}, outside when.end`);
+    }
+  }
+  assert.deepEqual(wrong, [], wrong.join('\n'));
+});
+
+// A1 chose Wikipedia, so a reviewer must be able to open the exact text this
+// run read. Every chain event carries a citation naming the article and the
+// revision id it was read at — which is stricter than rule 6, and is the check
+// that makes the ledger in docs/m50-claims.md worth anything.
+test('every chain event cites a Wikipedia article at a revision', () => {
+  const wrong = [];
+  for (const id of chainIds) {
+    const e = eventById.get(id);
+    if (!e) continue;
+    const dated = (e.sources ?? []).some((c) => c.source === 'wikipedia-en' && /revision \d+/.test(c.locator ?? ''));
+    if (!dated) wrong.push(`${id}: no wikipedia-en citation naming a revision`);
   }
   assert.deepEqual(wrong, [], wrong.join('\n'));
 });

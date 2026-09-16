@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "transfer-of-the-colonial-capital-to-rio-de-janeiro-1763",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    }
+  ],
+  "title": "The colonial capital moves to Rio de Janeiro",
+  "summary": "In 1763 the capital of the State of Brazil was moved from Salvador to Rio de Janeiro, which lay closer to the mining region and gave the gold a harbour to leave from. The title of the king’s representative was changed from Governor General to Viceroy at the same time. It is the administrative consequence of the gold cycle, and the reason the court that fled Lisbon in 1807 had a capital waiting for it.",
+  "when": {
+    "start": 1763,
+    "end": 1763
+  },
+  "place": "rio-de-janeiro",
+  "actors": [],
+  "names": [
+    "Transferência da capital para o Rio de Janeiro"
+  ]
+}

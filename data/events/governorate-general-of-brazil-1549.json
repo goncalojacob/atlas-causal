@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "governorate-general-of-brazil-1549",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    }
+  ],
+  "title": "The Governorate General of Brazil",
+  "summary": "With most of the captaincies failed and French ships working the coast, John III turned the colonisation of Brazil back into a royal enterprise. In 1549 a fleet under Tomé de Sousa, the first Governor General, sailed with written instructions on how the colony was to be administered; his first act was to found the capital, Salvador, on the Bay of All Saints. He brought the first Jesuits with him, and the missions and the aldeias that followed are the other half of what the crown installed that year.",
+  "when": {
+    "start": 1549,
+    "end": 1572
+  },
+  "place": "salvador",
+  "actors": [],
+  "names": [
+    "Governo-Geral do Brasil"
+  ]
+}

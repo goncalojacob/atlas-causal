@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "portuguese-landfall-in-brazil-1500",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    }
+  ],
+  "title": "The Portuguese landfall in Brazil",
+  "summary": "On 22 April 1500 a fleet of thirteen ships under Pedro Álvares Cabral, bound for India by Vasco da Gama’s route around Africa, made land on the coast that is now Porto Seguro and took possession of it in the name of Manuel I. Cabral stayed ten days. For thirty years after him Portugal sent few ships: what the coast was worth to Lisbon was brazilwood, cut by indigenous labour paid in mirrors, knives and axes, and the crown’s attention was on Africa and India.",
+  "when": {
+    "start": 1500,
+    "end": 1500,
+    "date": "1500-04-22"
+  },
+  "place": "porto-seguro",
+  "actors": [],
+  "names": [
+    "Descobrimento do Brasil",
+    "Cabral’s landfall"
+  ]
+}

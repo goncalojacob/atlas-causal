@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "dutch-brazil-1630-1654",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch Brazil\", revision 1371124077"
+    }
+  ],
+  "title": "Dutch Brazil",
+  "summary": "From 1630 the Dutch Republic held the north-east of Brazil, with the West India Company’s headquarters and the capital Mauritsstad at Recife, and at its height it controlled almost half of the settled European area of the colony. The tide turned with the Portuguese victory at the Second Battle of Guararapes in 1649; the Dutch capitulated on 26 January 1654, and New Holland was formally ceded to Portugal by the Treaty of The Hague on 6 August 1661. The occupation disrupted Brazilian sugar production, and Wikipedia’s account puts the decline of that industry beside the rise of British, French and Dutch planting in the Caribbean.",
+  "when": {
+    "start": 1630,
+    "end": 1654,
+    "date": "1630-02",
+    "endDate": "1654-01-26"
+  },
+  "place": "recife",
+  "actors": [],
+  "names": [
+    "Nieuw-Holland",
+    "Brasil Holandês",
+    "New Holland"
+  ]
+}

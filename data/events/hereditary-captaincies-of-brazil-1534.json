@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hereditary-captaincies-of-brazil-1534",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Captaincies of Brazil\", revision 1360950595"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    }
+  ],
+  "title": "The hereditary captaincies of Brazil",
+  "summary": "Between 1534 and 1536 John III divided the Brazilian coast into fifteen hereditary captaincies, strips running from the Atlantic west to the line of Tordesillas, each granted to a donatário who governed it and paid for it. The first was Pernambuco, by the Carta Dourada of 24 September 1534 to Duarte Coelho. The device had worked in Madeira and the Azores and did not work here: four donees never took possession, four more were driven out, and only Pernambuco and São Vicente prospered — Pernambuco on the sugar mills installed after 1542.",
+  "when": {
+    "start": 1534,
+    "end": 1536,
+    "date": "1534-09-24"
+  },
+  "place": "lisbon",
+  "actors": [],
+  "names": [
+    "Capitanias hereditárias"
+  ]
+}

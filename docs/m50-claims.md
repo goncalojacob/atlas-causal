@@ -30,3 +30,13 @@ justification in the first place.
 
 | edge | confidence | sources | the reading |
 |---|---|---|---|
+| `treaty-of-tordesillas-1494--portuguese-landfall-in-brazil-1500--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | the line of 1494 is what a landfall in 1500 could be a claim under |
+| `treaty-of-tordesillas-1494--the-atlantic-slave-trade-to-brazil--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | one crown east and west of the line: the Guinea coast and the Brazilian coast |
+| `portuguese-landfall-in-brazil-1500--the-atlantic-slave-trade-to-brazil--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | the coast had to be Portuguese before the traffic could land on it |
+| `hereditary-captaincies-of-brazil-1534--governorate-general-of-brazil-1549--caused` | probable | `wikipedia-en`, `wikipedia-en` | the captaincies failed and the crown took the colony back in hand |
+| `hereditary-captaincies-of-brazil-1534--the-atlantic-slave-trade-to-brazil--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | the grants of 1534 are the property the plantation was built on |
+| `governorate-general-of-brazil-1549--dutch-brazil-1630-1654--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | the Dutch took a colony the crown had already made worth taking |
+| `the-brazilian-sugar-cycle--the-atlantic-slave-trade-to-brazil--caused` | probable | `wikipedia-en`, `wikipedia-en` | the mills are what the traffic was for |
+| `the-brazilian-sugar-cycle--dutch-brazil-1630-1654--caused` | probable | `wikipedia-en`, `wikipedia-en` | the Company came for the sugar coast and wrecked it in holding it |
+| `the-atlantic-slave-trade-to-brazil--the-brazilian-gold-cycle--enabled` | probable | `wikipedia-en`, `wikipedia-en` | half a million enslaved Africans in the mining region against 400,000 Portuguese |
+| `the-brazilian-gold-cycle--transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--caused` | probable | `wikipedia-en`, `wikipedia-en` | the capital followed the gold to the harbour it shipped from |
