@@ -9350,10 +9350,15 @@ of the gold cycle, which an edge already says. The hierarchy §3 expected is a
 property of wars, which M42 brings.
 
 **Checks.** `node tools/validate.mjs --index`: **10,553 records, 0 errors**,
-1,210 warnings. `node --test --test-timeout=120000`: **1,580 tests, 0 skipped**,
-0 failures, of which **18 are new**, all in `tests/m50.test.mjs` and all
-correspondences between `docs/m50-chains.md` and the records rather than
-states. `node tools/build-index.mjs` is committed at every commit touching
+1,210 warnings. `node --test --test-timeout=120000`: **1,562 tests, 1,562
+passing, 0 failures, 0 skipped**, of which **18 are new**, all in
+`tests/m50.test.mjs` and all correspondences between `docs/m50-chains.md` and
+the records rather than states. The suite was run in full **four** times: the
+first found sixteen failures and the second three, every one of them a test
+that had assumed something about a corpus beginning in 1890 except the one real
+defect of deviation 779; the last two ran clean. **No flake was seen this
+run** — deviations 730, 757 and 769's browser tests all passed every time,
+including the two that name themselves there. `node tools/build-index.mjs` is committed at every commit touching
 `data/`, and once more at the end for the reason in deviation 771. No display
 file changed, no new record type, confidence value, edge type, hex value, token
 or type size; no runtime dependency and no build step; nothing merged into
