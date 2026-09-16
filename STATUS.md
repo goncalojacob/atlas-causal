@@ -8520,7 +8520,15 @@ correspondence between `docs/m51-overlaps.md` and the records, never a state —
 because the commit that teaches the tests goes before the one that changes what
 they see and a test that must fail for one commit is not a test.
 
-**The check on `m49`:** recorded below with its run number.
+**The check on `m49`:** `validate.yml` **run 743, attempt 2, on `da7977d1`** —
+the head of this milestone, this section's own commit apart — **success**, with
+`Validate records` and `Tests` both green. Attempt 1 on the same commit failed
+**2 of 1,501** and attempt 2 passed; the two are not named here because the
+run's log cannot be read from this sandbox past its tail (deviation 729) and
+the local suite has now passed 1,501 of 1,501 twice on this tree. It is
+dispatched rather than pushed because `validate.yml` triggers on
+`pull_request` and `workflow_dispatch` only, and `m49` is not the branch of
+pull request #1.
 
 ### Deviations 740 to 748 — M51
 
@@ -8601,11 +8609,21 @@ they see and a test that must fail for one commit is not a test.
      shard and the manifest. The third import round took the same follow-up.
 
 747. **The browser flake of deviation 730 fired again, in two full runs of
-     four.** `map-browser.test.mjs` → "zoomed to Portugal, Lisbon is named once
-     and its title carries its names", never when its own file is run alone —
-     confirmed by running it alone, 35 of 35 — and nothing in this milestone
-     touches the label placer or any browser file. Recorded, not chased, as
-     deviation 730 already decided.
+     five, and once on the runner.** `map-browser.test.mjs` → "zoomed to
+     Portugal, Lisbon is named once and its title carries its names", never
+     when its own file is run alone — confirmed by running it alone, 35 of 35 —
+     and nothing in this milestone touches the label placer or any browser
+     file. The last two local full runs passed 1,501 of 1,501. On the runner,
+     attempt 1 of run 743 failed 2 of 1,501 and attempt 2 of the same commit
+     passed all 1,501; **which two is not recorded, because it could not be
+     read.** Deviation 729 is why: the job log is fetched by its tail and a
+     `not ok` line for test ~820 of 1,501 sits some eight thousand lines above
+     the end. That is now the second milestone to be unable to name a failure
+     it saw, and the workflow already knows the fix — `import-wikidata.yml`
+     repeats its failing tests at the end of the log for exactly this reason,
+     and `validate.yml` does not. **One line in `validate.yml` would end it**,
+     and it is not written here because this milestone was told not to change
+     what it was not asked to.
 
 748. **No `--dates` run was spent on Russia, and the reason is provable in the
      sandbox.** The brief's route is blocked by `probeFor` before any network
