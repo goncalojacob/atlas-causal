@@ -8271,6 +8271,12 @@ and deviation 739 records it. The 21 new tests are `tests/m49-dates.test.mjs`
 (20, the mode) and one more in `tests/m49-seam.test.mjs`, which refuses a
 verdict that cites nothing.
 
+**The check on `m49`:** `validate.yml` run 732, dispatched against
+`c84c7d37` — the commit before this one, and the head of every change this
+milestone made — **success**. It is dispatched rather than pushed because
+`validate.yml` triggers on `pull_request` and `workflow_dispatch` only, and
+`m49` is not the branch of pull request #1.
+
 ### Deviations 731 to 733 — M49
 
 731. **Wikidata is not reachable from this sandbox, and the brief says it is.**
