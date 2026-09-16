@@ -87,3 +87,48 @@ justification in the first place.
 | `the-cuban-sugar-boom--cuban-revolution--precondition-of` | probable | `wikipedia-en`, `wikipedia-en`, `wikipedia-en` | a monoculture on American quotas is three of the five problems the sources name |
 | `platt-amendment-1901--cuban-revolution--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | a right of intervention written into the constitution, and the decades that followed |
 | `the-cuban-sugar-boom--platt-amendment-1901--precondition-of` | probable | `wikipedia-en`, `wikipedia-en`, `wikipedia-en` | the interest the seven conditions were written around, in Roosevelt’s own words |
+
+## The articles, and the revision each was read at
+
+Every row above rests on one or more of these, cited on the record as
+`wikipedia-en` with the article and the revision in the locator. A reviewer
+opens `https://en.wikipedia.org/w/index.php?oldid=<revision>` and reads the
+same text this run read. There are no page numbers because amendment A1 chose
+an encyclopedia; a revision id is the equivalent it does have, and it is
+better than a page number in one respect — it cannot drift.
+
+| article | revision |
+|---|---|
+| 1964 Brazilian coup d'état | 1374834512 |
+| Aberdeen Act | 1371318387 |
+| Atlantic slave trade | 1375257090 |
+| Brazilian gold rush | 1360546842 |
+| Capitalism and Slavery | 1341902916 |
+| Captaincies of Brazil | 1360950595 |
+| Colonial Brazil | 1371077435 |
+| Cuban Revolution | 1373305240 |
+| Cuban War of Independence | 1374697767 |
+| Dutch Brazil | 1371124077 |
+| Eusébio de Queirós Law | 1368931242 |
+| Haitian Revolution | 1375172946 |
+| History of Barbados | 1368569649 |
+| Independence of Brazil | 1373868391 |
+| Indigenous peoples in Brazil | 1375180351 |
+| Industrial Revolution | 1375160528 |
+| Lei Áurea | 1368931269 |
+| Methuen Treaty | 1337784669 |
+| Platt Amendment | 1361644701 |
+| Proclamation of the Republic (Brazil) | 1370705081 |
+| Revolution of 1930 | 1373816376 |
+| Royal African Company | 1375037445 |
+| Saint-Domingue | 1375182685 |
+| Slave Trade Act 1807 | 1373209565 |
+| Slavery Abolition Act 1833 | 1366633951 |
+| Slavery in Brazil | 1365192365 |
+| Spanish–American War | 1374740923 |
+| Strangford Treaty | 1329682227 |
+| Sugar plantations in the Caribbean | 1358072696 |
+| Taíno | 1370165371 |
+| Transfer of the Portuguese court to Brazil | 1373720625 |
+| Treaty of Tordesillas | 1374273992 |
+| Voyages of Christopher Columbus | 1371524728 |
