@@ -5,7 +5,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
-import { SEED, RELATION_NOTE, plan, withReview, seed } from '../tools/seed-review-flags.mjs';
+import { SEED, RELATION_NOTE, INTERVAL_CITED, plan, withReview, seed } from '../tools/seed-review-flags.mjs';
 import { readRecords, KIND_DIRS } from '../tools/lib/read.mjs';
 import { isDraft } from '../src/review/queue.js';
 import { handWritten } from '../src/origin.js';
@@ -22,10 +22,14 @@ test('every record the table names exists, is a draft, and carries the block', a
   // And only the ones a person wrote: the 77 successions the CShapes import
   // derived in I8 have their interval from the source they cite, so the
   // seeding's sentence about memory is not true of them and they are not in
-  // the table (they carry `imported-facts` instead).
+  // the table (they carry `imported-facts` instead). A record flagged
+  // `interval-cited` is out for the same reason without being an import's:
+  // M51's two successions are hand-written and their dates are Wikidata's,
+  // named by item and property on the record itself.
   const dated = entries
     .filter((e) => (e.kind === 'relation' || e.kind === 'tenure') && e.record.status === 'active')
     .filter((e) => handWritten(e.record))
+    .filter((e) => !(e.record.review?.flags ?? []).includes(INTERVAL_CITED))
     .map((e) => e.record.id);
   const entriesPlanned = plan(dated);
   assert.ok(entriesPlanned.length > 50, 'STATUS.md names more than fifty records');
@@ -60,6 +64,22 @@ test('every record the table names exists, is a draft, and carries the block', a
     assert.ok(record.review.note.length > 0, `${id}: an empty note`);
     if (record.kind === 'relation') assert.ok(record.review.note.includes(RELATION_NOTE), id);
   }
+});
+
+// The exemption is not a way out of being reviewed. A record that claims its
+// interval was read in a source has to show where: an item and the property
+// the date came off it, on the record itself. Without this the flag would be
+// a word anybody could write to leave the queue.
+test(`a record flagged ${INTERVAL_CITED} names the item and the property its interval came from`, async () => {
+  const { entries } = await readRecords(path.join(ROOT, 'data'));
+  const bad = [];
+  for (const { record } of entries) {
+    if (!(record.review?.flags ?? []).includes(INTERVAL_CITED)) continue;
+    const shown = `${record.review?.note ?? ''} ${record.note ?? ''} ${JSON.stringify(record.sources ?? [])}`;
+    if (!/\bQ[1-9][0-9]*\b/.test(shown)) bad.push(`${record.id}: names no item`);
+    else if (!/\bP[1-9][0-9]*\b/.test(shown)) bad.push(`${record.id}: names no property`);
+  }
+  assert.deepEqual(bad, [], bad.join('; '));
 });
 
 test('a record in two groups keeps both flags and both notes', () => {
