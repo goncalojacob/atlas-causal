@@ -70,13 +70,15 @@ function topology() {
   };
 }
 
-// A topology whose `resolve` answers for actors and places, which is what the
+// A topology whose `resolve` answers for actors, places and — since M48, which
+// made a narrative being read a lens on itself — narratives, which is what the
 // implicit one-focus lens asks.
 function withResolve(t) {
   t.resolve = (id) => {
     if (t.actors.has(id)) return { id, kind: 'actor', record: t.actors.get(id) };
     if (t.places.has(id)) return { id, kind: 'place', record: t.places.get(id) };
     if (t.events.has(id)) return { id, kind: 'event', record: t.events.get(id) };
+    if (t.narratives.has(id)) return { id, kind: 'narrative', record: t.narratives.get(id) };
     return null;
   };
   return t;
@@ -272,12 +274,34 @@ test('the answer is computed once per state, and again when the citers land', ()
   assert.deepEqual(sorted(second.set), ['d']);
 });
 
-test('reading a narrative suspends the lens', () => {
-  const t = topology();
+// M48 §1: it used to suspend it. The walk is a focus — the most deliberate
+// one in the atlas — so reading one sets the lens to it, and a reader who
+// wrote `?focus=` themselves still overrules that.
+test('reading a narrative is a lens on the walk', () => {
+  const t = withResolve(topology());
+  // The walk is c and the edge a→b, so the set is a, b and c; the ring is
+  // what is one hop off them, which is nothing else here.
+  assert.deepEqual(activeFoci(t, { narrative: 'how-it-ended' }), [{ kind: 'narrative', id: 'how-it-ended' }]);
+  assert.deepEqual(sorted(lensView(t, { narrative: 'how-it-ended' }).set), ['a', 'b', 'c']);
+  assert.deepEqual(sorted(lensSet(t, { narrative: 'how-it-ended' })), ['a', 'b', 'c']);
+});
+
+test('an explicit focus while reading wins, and `none` still means no lens', () => {
+  const t = withResolve(topology());
   // Salazar's two events are a and b, and the one live edge runs between
   // them, so the ring is empty and the lens draws exactly the two.
-  assert.equal(lensSet(t, { focus: 'actor:salazar', narrative: null }).size, 2);
-  assert.equal(lensSet(t, { focus: 'actor:salazar', narrative: 'how-it-ended' }), null);
+  assert.deepEqual(sorted(lensSet(t, { focus: 'actor:salazar', narrative: 'how-it-ended' })), ['a', 'b']);
+  assert.equal(lensSet(t, { focus: FOCUS_NONE, narrative: 'how-it-ended' }), null);
+});
+
+test('a narrative that passes through no active event is not a lens', () => {
+  const t = withResolve(topology());
+  t.narratives.set('about-a-body', {
+    id: 'about-a-body', title: 'About a body', status: 'active', steps: [{ ref: 'salazar' }],
+  });
+  // An atlas hiding every event to show a card would be worse than no lens.
+  assert.deepEqual(activeFoci(t, { narrative: 'about-a-body' }), []);
+  assert.equal(lensSet(t, { narrative: 'about-a-body' }), null);
 });
 
 test('shownEvents keeps the atlas order and the whole list without a lens', () => {

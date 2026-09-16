@@ -31,6 +31,14 @@ const EVENTS = [
   event('shared', 1910, ['alfa', 'beta']),
 ];
 
+// Two walks, because since M48 reading one is itself a lens (lens.js) and two
+// readings with no `?focus=` between them write the same parameter — nothing —
+// while drawing two different sets of events.
+const NARRATIVES = new Map([
+  ['a-walk', { id: 'a-walk', title: 'A walk', status: 'active', steps: [{ ref: 'early-0' }, { ref: 'early-1' }] }],
+  ['b-walk', { id: 'b-walk', title: 'B walk', status: 'active', steps: [{ ref: 'late-0' }] }],
+]);
+
 const ATLAS = {
   activeEvents: EVENTS,
   extent: { min: 1900, max: 1960 },
@@ -39,6 +47,9 @@ const ATLAS = {
   regions: [{ id: 'europe', label: 'Europe', order: 1 }],
   edges: new Map(),
   sources: new Map(),
+  events: new Map(EVENTS.map((e) => [e.id, e])),
+  narratives: NARRATIVES,
+  resolve: (id) => (NARRATIVES.has(id) ? { id, kind: 'narrative', record: NARRATIVES.get(id) } : null),
 };
 
 const state = (patch) => ({ ...defaultState(), ...patch });
@@ -67,15 +78,32 @@ test('the same lanes in the same order can still hold different events', () => {
   assert.notEqual(a.key, b.key, 'so the arrangement has to be laid out again');
 });
 
-test('a lens suspended by a narrative is a different arrangement', () => {
+// Review finding 14 was a key made of `state.focus` while the lens applied was
+// something else. M48 gives the atlas a second way of being in that position:
+// a narrative sets the lens and writes no parameter at all, so two walks —
+// and a walk against no walk — are three arrangements that the parameter
+// cannot tell apart.
+test('reading a narrative is a lens, and two walks are two arrangements', () => {
+  const none = arrangementOf(ATLAS, state({}));
+  const a = arrangementOf(ATLAS, state({ narrative: 'a-walk', step: 0 }));
+  const b = arrangementOf(ATLAS, state({ narrative: 'b-walk', step: 0 }));
+
+  assert.equal(none.events.length, EVENTS.length, 'no lens, no narrowing');
+  assert.equal(a.events.length, 2, 'the walk and its ring, which is empty here');
+  assert.equal(b.events.length, 1);
+  assert.notEqual(a.key, none.key);
+  assert.notEqual(a.key, b.key, 'two walks write the same parameter and draw different pictures');
+});
+
+test('an explicit lens while reading is the one that is applied', () => {
   const lensed = state({ focus: 'actor:alfa' });
   const reading = state({ focus: 'actor:alfa', narrative: 'a-walk', step: 0 });
 
   const a = arrangementOf(ATLAS, lensed);
   const b = arrangementOf(ATLAS, reading);
   assert.equal(a.events.length, 6, 'the lens keeps Alfa’s six');
-  assert.equal(b.events.length, EVENTS.length, 'reading a narrative suspends it');
-  assert.notEqual(a.key, b.key);
+  assert.equal(b.events.length, 6, 'and the reader’s own focus still wins while reading');
+  assert.equal(a.key, b.key);
 });
 
 test('what the key is allowed not to notice', () => {

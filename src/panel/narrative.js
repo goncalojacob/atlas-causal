@@ -125,12 +125,12 @@ export function renderNarrativeCard(ctx, { container, narrative, state, mine }) 
   </li>`);
 
   container.innerHTML = `
-    <p class="notice narrative">Reading a narrative. The map, the graph and the timeline follow the step.
+    <p class="notice narrative">Reading a narrative: the three views hold the walk, with what it touches dimmed around it, and follow the step.
       <button type="button" class="link small" data-action="leave-narrative">leave</button></p>
     <header class="narrative-head">
       <h2>${esc(narrative.title)}</h2>
       <p class="meta"><span class="muted">${authorsLine(narrative)}</span> · <span class="count">step ${index + 1} of ${total}</span>
-        ${ctx.lensControl('narrative', narrative.id)}</p>
+        ${resolved?.event ? ctx.lensControl('event', resolved.event.id, { only: true }) : ''}</p>
       <p class="entry-link"><a href="narratives.html">Every narrative, by the years it is about →</a></p>
       ${ctx.discussLink('narrative', narrative.id)}
     </header>

@@ -73,17 +73,26 @@ import { categoriesOn } from './categories.js';
 const held = new WeakMap();
 
 export function workingSet(atlas, state) {
+  // **The lens is asked first, and its answer is part of the key.** Two
+  // things the lens depends on arrive *after* the state does — a source's
+  // citer rows, and since M48 a narrative's steps, which are an attribute and
+  // come with their century — and `lensView` already knows to answer again
+  // when they do (lens.js, `stamp`). This cache did not: the state object is
+  // the same object, so the first answer stood for ever and the walk was
+  // drawn over the whole corpus however often the views redrew. Comparing the
+  // lens itself costs a memoised call and cannot come apart from it, where a
+  // stamp of its own here would be the same knowledge written twice.
+  const view = lensView(atlas, state);
   const found = held.get(state);
   // The atlas is compared as well as the state, because a test builds several
   // and could hand two of them one state literal.
-  if (found && found.atlas === atlas) return found.value;
-  const value = assemble(atlas, state);
-  held.set(state, { atlas, value });
+  if (found && found.atlas === atlas && found.view === view) return found.value;
+  const value = assemble(atlas, state, view);
+  held.set(state, { atlas, view, value });
   return value;
 }
 
-function assemble(atlas, state) {
-  const view = lensView(atlas, state);
+function assemble(atlas, state, view) {
   const lens = view?.shown ?? null;
   // The category filter, applied exactly where the lens is and nowhere else
   // (review of the map block, F6). A toggle that narrowed the map alone would
@@ -142,7 +151,11 @@ function assemble(atlas, state) {
     ? filter(new Set((atlas.eventsByActor.get(resolved.id) ?? []).map((a) => a.event.id)))
     : null;
 
-  // A narrative suspends the lens, so there is nothing to filter out of it.
+  // Since M48 a narrative *is* the lens (lens.js), so the walk is inside the
+  // focus set by construction and the filter can only ever take a step away
+  // for a reason the reader set themselves: a category switched off, or a
+  // `?focus=` of their own that the walk runs outside of. Filtered like the
+  // actor's set beside it, so that nothing is emphasised that no view draws.
   const narrative = narrativeSet(atlas, state);
 
   const reachable = horizonSet(atlas, state);
@@ -153,7 +166,7 @@ function assemble(atlas, state) {
     consequences,
     converging,
     actor,
-    narrative,
+    narrative: narrative ? filter(narrative) : null,
     reachable: shown ? new Map([...reachable].filter(([id]) => shown.has(id))) : reachable,
     lens,
     // What each view filters its event list by: the lens and the categories

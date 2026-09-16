@@ -18,6 +18,7 @@ import path from 'node:path';
 import { withBrowser, open, waitFor, skip } from './browser.mjs';
 import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
 import { lensView } from '../src/lens.js';
+import { openingState } from '../src/narrative-mode.js';
 import { defaultState } from '../src/state.js';
 
 const dataDir = path.join(ROOT, 'data');
@@ -298,5 +299,190 @@ test('an event lens on a parent narrows every view to its parts', { skip }, asyn
       const dimmed = await page.eval(NEAR(selector));
       for (const id of dimmed) assert.ok(view.near.has(id), `${name} dimmed ${id}, which is not a neighbour`);
     }
+  });
+});
+
+// ─── the walk as a lens (M48 §1) ───────────────────────────────────────────
+//
+// Reading a narrative used to suspend the lens, so the owner's twelve-step
+// argument about how the colonial war ended the regime was drawn over all 250
+// events in the corpus. It sets the lens now, and these are the three things
+// the brief asks of that: the walk in full, its one hop dimmed, nothing else;
+// leaving puts the atlas back; and a `?focus=` the reader wrote themselves
+// still wins.
+const WALK = 'how-the-colonial-war-ended-the-regime';
+
+// The state the page is actually in while reading, which is not the one in the
+// URL: the selection, the chain and the window are derived from the step
+// (narrative-mode.js), and the first two are what an implicit lens keeps
+// regardless (lens.js). Computed the same way here so that the expectation is
+// the page's lens and not a second lens that resembles it.
+const reading = async (patch = {}) => {
+  const atlas = await atlasOf(dataDir);
+  return openingState(atlas, { ...defaultState(), narrative: WALK, step: 0, ...patch });
+};
+
+test('reading a narrative draws the walk, its neighbours dimmed, and nothing else', { skip }, async () => {
+  const state = await reading();
+  const view = await expected(state);
+  assert.ok(view, 'reading a narrative is a lens on the walk');
+  assert.ok(view.set.size > 1 && view.near.size > 0, 'a walk with a neighbourhood to dim');
+
+  await withBrowser(async (page, url) => {
+    for (const [name, { selector, url: extra }] of Object.entries(VIEWS)) {
+      await open(page, url(`?narrative=${WALK}${extra}`), ready);
+      await waitFor(page, `return document.querySelectorAll('${selector}').length > 0;`, `${name} to draw a mark`);
+      // The whole walk, which the lens holds out of every stack, so it is
+      // waited for rather than read once: a shard landing redraws the view.
+      //
+      // The graph is excepted, and not because of the lens: it opens zoomed in
+      // and draws only what is inside the rectangle on screen, which is
+      // deviation 714's opening zoom and costs it half of any walk this long.
+      // What it is held to is the same rule as the other two — nothing outside
+      // the lens, and the steps it does draw drawn in full.
+      const wanted = [...view.set].filter((id) => !(name === 'map' && view.placeless.has(id)));
+      if (name !== 'graph') {
+        await waitFor(
+          page,
+          `return ${JSON.stringify(wanted)}.every((id) => document.querySelector('${selector}[data-id="' + id + '"]'));`,
+          `${name} to draw every step of the walk`,
+        );
+      }
+
+      const drawn = await page.eval(DRAWN(selector));
+      assert.ok(drawn.some((id) => view.set.has(id)), `${name} drew no step of the walk at all`);
+      for (const id of drawn) assert.ok(view.shown.has(id), `${name} drew ${id}, which the walk does not touch`);
+
+      const dimmed = await page.eval(NEAR(selector));
+      assert.ok(dimmed.length > 0, `${name} dimmed nothing, so the walk has no shadow`);
+      for (const id of dimmed) assert.ok(view.near.has(id), `${name} dimmed ${id}, which is not a neighbour`);
+      for (const id of view.set) assert.ok(!dimmed.includes(id), `${name} dimmed ${id}, which is the walk itself`);
+    }
+  });
+});
+
+test('leaving the narrative gives the atlas back', { skip }, async () => {
+  const view = await expected(await reading());
+
+  await withBrowser(async (page, url) => {
+    for (const [name, { selector, url: extra }] of Object.entries(VIEWS)) {
+      await open(page, url(`?narrative=${WALK}${extra}`), ready);
+      // A narrative's steps are an attribute and arrive with their century
+      // (spine.js), so the first frame is the atlas whole and the lens lands
+      // with the shard. The ring is what says it has.
+      await waitFor(page, `return document.querySelectorAll('${selector}.lens-near').length > 0;`,
+        `${name} to draw the walk's shadow`);
+      const drawn = await page.eval(DRAWN(selector));
+      for (const id of drawn) assert.ok(view.shown.has(id), `${name} drew ${id} while reading`);
+
+      await page.eval('document.querySelector(\'[data-action="leave-narrative"]\').click(); return true;');
+      await waitFor(page, "return !new URLSearchParams(location.search).get('narrative');", 'the narrative to close');
+      // The lens goes with it, and that is asserted as the rule rather than as
+      // a count: what comes back is the whole atlas in the window the reader
+      // was left in, and the number of *marks* can perfectly well fall when it
+      // does — the walk stops being held out of the stacks the moment it stops
+      // being a lens, and a dozen marks become one.
+      await waitFor(
+        page,
+        `return [...document.querySelectorAll('${selector}')].map((el) => el.dataset.id)
+          .some((id) => id && !${JSON.stringify([...view.shown])}.includes(id));`,
+        `${name} to draw something the walk does not touch`,
+      );
+      assert.deepEqual(await page.eval(NEAR(selector)), [], `${name} still dims a ring, so a lens is still on`);
+    }
+  });
+});
+
+test('a focus the reader wrote wins over the walk, and none turns the lens off', { skip }, async () => {
+  const focus = SALAZAR;
+  const state = await reading({ focus });
+  const view = await expected(state);
+  const walk = await expected(await reading());
+  assert.ok(view.set.size > 0, 'the actor has events');
+  assert.ok([...walk.set].some((id) => !view.shown.has(id)),
+    'and the walk runs outside them, so the two lenses are different pictures');
+
+  await withBrowser(async (page, url) => {
+    for (const [name, { selector, url: extra }] of Object.entries(VIEWS)) {
+      await open(page, url(`?narrative=${WALK}&focus=${focus}${extra}`), ready);
+      await waitFor(page, `return document.querySelectorAll('${selector}').length > 0;`, `${name} to draw a mark`);
+      const drawn = await page.eval(DRAWN(selector));
+      for (const id of drawn) assert.ok(view.shown.has(id), `${name} drew ${id}, outside the reader's own lens`);
+
+      // And the parameter survives a step, which is the whole reason reading
+      // mode writes it at all (state.js): everything else derived from the
+      // step is deliberately not in the address bar.
+      await page.eval('document.querySelector(\'[data-action="narrative-step"][data-step="1"]\').click(); return true;');
+      await waitFor(page, "return new URLSearchParams(location.search).get('step') === '1';", 'the step to move');
+      assert.equal(await page.eval("return new URLSearchParams(location.search).get('focus');"), focus,
+        `${name} lost the reader's lens on the next step`);
+    }
+
+    // `none` is the reader turning the lens off, while reading as everywhere
+    // else: the walk is drawn over the whole atlas, which is what it did
+    // before M48 and is now something they have to ask for.
+    await open(page, url(`?narrative=${WALK}&focus=none`), ready);
+    await waitFor(
+      page,
+      `return [...document.querySelectorAll('${VIEWS.timeline.selector}')].map((el) => el.dataset.id)
+        .some((id) => id && !${JSON.stringify([...walk.shown])}.includes(id));`,
+      'the timeline to draw the whole atlas again',
+    );
+  });
+});
+
+// "Focus on this" stays on the narrative card and comes to mean narrowing to
+// the *step*, which is what a reader would expect it to mean once the walk
+// itself is the frame (M48 §1). It is the one lens control in the atlas that
+// replaces the list rather than adding to it: adding the step to a lens that
+// is already the whole walk would narrow nothing.
+test('“Focus on this” while reading narrows to the step, and lets go back to the walk', { skip }, async () => {
+  const atlas = await atlasOf(dataDir);
+  // Step 0, because a walk's steps are an attribute: a link naming a later
+  // step opens on the first one, since `clampStep` is asked before the shard
+  // that says how long the walk is has landed (narrative.js). That is older
+  // than this milestone and is not what this test is about.
+  const step = 0;
+  const state = openingState(atlas, { ...defaultState(), narrative: WALK, step });
+  const only = `event:${state.selected}`;
+  const walk = lensView(atlas, state);
+  const narrowed = lensView(atlas, { ...state, focus: only });
+  assert.ok(walk.set.size > narrowed.set.size, 'the step is narrower than the walk');
+
+  await withBrowser(async (page, url) => {
+    await open(page, url(`?narrative=${WALK}&step=${step}`),
+      'return Boolean(document.querySelector(".panel .narrative-head"));');
+    await waitFor(page, 'return document.querySelector(".panel .lens-control")?.textContent === "Focus on this";',
+      'the card to offer the step');
+
+    await page.eval('document.querySelector(\'.panel [data-action="focus-only"]\').click(); return true;');
+    await waitFor(page, `return new URLSearchParams(location.search).get('focus') === '${only}';`,
+      'the URL to carry the step alone');
+    await waitFor(
+      page,
+      `return [...document.querySelectorAll('${VIEWS.timeline.selector}')].map((el) => el.dataset.id)
+        .every((id) => !id || ${JSON.stringify([...narrowed.shown])}.includes(id));`,
+      'the timeline to hold the step and its neighbours alone',
+    );
+    // The reader is still reading: the step, the walk and the card are where
+    // they were, and only the lens moved.
+    assert.equal(await page.eval("return new URLSearchParams(location.search).get('step');"), String(step));
+    assert.equal(await page.eval("return new URLSearchParams(location.search).get('narrative');"), WALK);
+
+    // And letting go goes back to the walk, not to no lens at all: an absent
+    // parameter is what asks for the lens the mode implies.
+    await waitFor(
+      page,
+      'return document.querySelector(".panel .lens-control")?.textContent === "stop focusing on this step";',
+      'the control to say what it does now',
+    );
+    await page.eval('document.querySelector(\'.panel [data-action="unfocus-only"]\').click(); return true;');
+    await waitFor(page, "return new URLSearchParams(location.search).get('focus') === null;", 'the parameter to go');
+    await waitFor(
+      page,
+      `return ${JSON.stringify([...walk.set])}.every((id) =>
+        document.querySelector('${VIEWS.timeline.selector.replace(/\[data-id\]$/, '')}[data-id="' + id + '"]'));`,
+      'the timeline to hold the whole walk again',
+    );
   });
 });

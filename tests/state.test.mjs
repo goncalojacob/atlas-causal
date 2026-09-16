@@ -746,6 +746,32 @@ test('?walk= is reserved: parsed, carried, and never a record id it makes up', (
   );
 });
 
+// M48: reading a narrative is itself a lens (lens.js), so an explicit `?focus=`
+// while reading is the reader overruling that and `?focus=none` is the reader
+// turning it off. Neither is derived from the step, so neither may be dropped
+// the way the selection and the window are — a lens on screen that no link can
+// carry and Back cannot return to is not a lens this atlas is allowed to draw.
+test('a lens set while reading is carried in the URL, and nothing else new is', () => {
+  const reading = { ...defaultState(), narrative: 'n', step: 2 };
+  assert.equal(formatState({ ...reading, focus: 'actor:salazar' }), '?narrative=n&step=2&focus=actor:salazar');
+  assert.equal(formatState({ ...reading, focus: 'none' }), '?narrative=n&step=2&focus=none');
+  assert.equal(
+    formatState({ ...reading, focus: 'actor:salazar,actor:pide', focusAll: true }),
+    '?narrative=n&step=2&focus=actor:salazar,actor:pide&focusAll=1',
+  );
+  // "All of these" with no foci is an instruction with no addressee here too.
+  assert.equal(formatState({ ...reading, focusAll: true }), '?narrative=n&step=2');
+  // And the derived half is still derived: a selection, a chain and a window
+  // beside a lens are no more written than they were without one.
+  assert.equal(
+    formatState({
+      ...reading, focus: 'actor:salazar', selected: 'e', chain: ['a--b--caused'], from: 1960, to: 1980,
+    }),
+    '?narrative=n&step=2&focus=actor:salazar',
+  );
+  assert.equal(parseState('?narrative=n&step=2&focus=actor:salazar').focus, 'actor:salazar');
+});
+
 // I9 gives the parameter a producer (walk.js) and leaves the parameter alone.
 // The walk it produces is held beside the state, in the session, and the
 // address of one is the Why mode's decision (M35, `?why=`, whose inputs *are*

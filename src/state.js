@@ -61,10 +61,12 @@
 // filtered by the map at all", which is what the pin control restores.
 //
 // `narrative` and `step` are a mode rather than another dimension: while a
-// narrative is being read, the two of them are the whole of the URL, and the
-// selection, the chain and the window are derived from the step (narrative.js)
-// and deliberately not written. A link to a narrative is a link to a place in
-// an argument, not a snapshot of somebody's screen.
+// narrative is being read, the two of them are very nearly the whole of the
+// URL, and the selection, the chain and the window are derived from the step
+// (narrative.js) and deliberately not written. A link to a narrative is a link
+// to a place in an argument, not a snapshot of somebody's screen. `focus` is
+// the exception since M48, because reading a narrative now *is* a lens and an
+// explicit one is the reader overruling it; see `formatState`.
 //
 // Two kinds of change, and the browser's Back is the reason: a change of
 // *what is open* — the event, the source, the place, the actor, the
@@ -284,10 +286,19 @@ export function formatState(state, search = '') {
   for (const key of PASSTHROUGH) if (previous.has(key)) params.set(key, previous.get(key));
   // Reading mode: the narrative and the step are the state, and everything
   // derived from them stays out of the address bar.
+  //
+  // `focus` is the one exception, and it is one because since M48 reading a
+  // narrative is itself a lens (lens.js): an explicit `?focus=` while reading
+  // is the reader overruling that, and `?focus=none` is the reader turning it
+  // off. Neither is derived from the step — both outlive it — and a parameter
+  // the next `set` silently dropped would be a lens on screen that no link
+  // could carry and Back could not return to.
   if (state.narrative) {
     params.set('narrative', state.narrative);
     params.set('step', String(state.step ?? 0));
     if (state.walk) params.set('walk', state.walk);
+    if (state.focus) params.set('focus', state.focus);
+    if (state.focusAll && state.focus && state.focus !== 'none') params.set('focusAll', '1');
     const reading = params.toString().replace(/%2C/g, ',').replace(/%2D/g, '-').replace(/%3A/g, ':');
     return reading ? `?${reading}` : '';
   }

@@ -11,7 +11,7 @@
 // of that promise and `node --test` has no DOM to build a view in.
 
 import { overlaps, resolveWindow, withMargin } from '../util/window.js';
-import { lensSet } from '../lens.js';
+import { formatFoci, lensView } from '../lens.js';
 import { lanesFor } from '../lanes.js';
 
 // What the reader is holding, written from the state rather than counted out
@@ -37,11 +37,15 @@ export function holdingKey(state) {
 // The key of an arrangement. Two states with the same key have the same
 // picture; two with different keys do not.
 //
-// The lens as it is *applied*, not as it is written: reading a narrative
-// suspends the focus (lens.js), so a key made of `state.focus` said the
-// arrangement was unchanged while the set of events had gone from one
-// actor's to all of them, and the nodes stayed where the lens had put them
-// (review finding 14).
+// The lens as it is *applied*, not as it is written: a key made of
+// `state.focus` said the arrangement was unchanged while the set of events had
+// gone from one actor's to all of them, and the nodes stayed where the lens
+// had put them (review finding 14). `foci` is that list, formatted by the
+// caller, and it is not the same string as `state.focus` whenever the lens is
+// an implied one — an open actor, an open place, or, since M48, a narrative
+// being read. Two narratives, or two actors, write no `focus=` at all and
+// would otherwise key alike and adopt each other's layout. Null for a caller
+// with only the parameter in hand, which is what this was before.
 //
 // Membership, not the lane ids: which lane an event is drawn in is the
 // heaviest of its actors *among the lanes on screen*, and that weight is
@@ -54,8 +58,8 @@ export function holdingKey(state) {
 // so a reader who moves the band is looking at a different set of events and
 // therefore at a different picture. Nothing else about the picture moves a
 // node — panning, zooming, selecting and walking all leave the key alone.
-export function arrangementKey(state, events, lanes, lens, margin = null, holding = '') {
-  const focus = lens === null ? '' : (state.focus ?? '');
+export function arrangementKey(state, events, lanes, lens, margin = null, holding = '', foci = null) {
+  const focus = lens === null ? '' : (foci ?? state.focus ?? '');
   // The layer list, whole and as it stands: since the glyph run a category
   // toggle removes events here as the lens does, and two arrangements of two
   // different sets of categories would otherwise key the same and the second
@@ -82,7 +86,8 @@ export function arrangementKey(state, events, lanes, lens, margin = null, holdin
 // for, like `held` and for the same reason. `null` is a caller with nothing to
 // narrow by, and then the lens alone decides, as it did before the glyph run.
 export function arrangementOf(atlas, state, held = null, shown = undefined) {
-  const lens = lensSet(atlas, state);
+  const view = lensView(atlas, state);
+  const lens = view?.shown ?? null;
   const drawable = shown === undefined ? lens : shown;
   const all = drawable ? atlas.activeEvents.filter((e) => drawable.has(e.id)) : atlas.activeEvents;
   const window = resolveWindow(state, atlas.extent, atlas.opens);
@@ -106,6 +111,7 @@ export function arrangementOf(atlas, state, held = null, shown = undefined) {
   return {
     events,
     lanes,
-    key: arrangementKey(state, events, lanes, lens, margin, beyond === 0 ? '' : holdingKey(state)),
+    key: arrangementKey(state, events, lanes, lens, margin, beyond === 0 ? '' : holdingKey(state),
+      view ? formatFoci(view.foci) : null),
   };
 }

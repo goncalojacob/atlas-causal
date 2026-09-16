@@ -37,7 +37,7 @@
 // drift (health review A, finding 28).
 import { FOCUS, FOCUS_KINDS, FOCUS_NONE } from './vocab.js';
 import { subgraph } from './graph.js';
-import { narrativeEventIds } from './narrative.js';
+import { narrativeEventIds, readingNarrative } from './narrative.js';
 
 export { FOCUS_KINDS, FOCUS_NONE };
 
@@ -217,6 +217,21 @@ export function ringOf(atlas, set) {
 // focus, until the reader adds another or clears it — and clearing it is what
 // `?focus=none` is for, since an absent parameter is what asks for this lens.
 //
+// **Reading a narrative is a focus on that narrative.** It used to suspend the
+// lens altogether, which is why a twelve-step argument was drawn over all 250
+// events in the corpus and the card had to offer "Focus on this" so the reader
+// could do by hand what the mode should have done. A walk is the most
+// deliberate focus in the atlas — a person chose those events and put them in
+// order — so it is one: the walk in full, its one hop of causes and
+// consequences dimmed, and nothing else (M48 §1).
+//
+// Before the two cards below and after the explicit list: a reader reading a
+// narrative has an event open at every step, and often a place or an actor
+// behind it, and the walk is what they came for. `?focus=` they typed
+// themselves still wins, and `?focus=none` still turns the whole thing off —
+// while reading as everywhere else, since "no lens" is exactly what that word
+// has always meant.
+//
 // A place before an actor, which is the precedence the panel already shows
 // its cards in (state.js). A selected event does not take the lens away: the
 // reader walking from a place's list is still inside that place's
@@ -232,6 +247,14 @@ export function activeFoci(atlas, state) {
   if (state?.focus === FOCUS_NONE) return [];
   const explicit = parseFoci(state?.focus);
   if (explicit.length) return explicit;
+  const narrative = readingNarrative(atlas, state);
+  if (narrative) {
+    const focus = { kind: 'narrative', id: narrative.id };
+    // A walk whose steps are all actors, relations or presences passes through
+    // no event at all, and a lens of nothing would hide the atlas to show a
+    // card. The same rule the two cards below follow.
+    return (eventsOfFocus(focus, atlas)?.size ?? 0) > 0 ? [focus] : [];
+  }
   for (const [key, kind] of [['place', 'place'], ['actor', 'actor']]) {
     if (!state?.[key]) continue;
     const found = atlas.resolve?.(state[key]) ?? null;
@@ -276,9 +299,11 @@ export function keptRegardless(atlas, state) {
 // or null for "no lens" — which is not the same as an empty set, since a focus
 // that matches nothing draws nothing and says so.
 //
-// Reading a narrative suspends the lens. Reading is a mode and the walk is
-// what the reader is looking at; a step that vanished because a lens was
-// left on would be the atlas hiding the thing it was asked to show.
+// Reading a narrative *sets* the lens rather than suspending it (see
+// `activeFoci`). It suspended it until M48, so that no step could vanish
+// behind a lens the reader had left on; the walk being the lens answers that
+// better than switching off did, because every step of it is in the focus set
+// by construction and nothing can hide one.
 //
 // Answered once per state and not once per caller. `panel.js`, `grouping.js`,
 // `arrangement.js`, `search-box.js` and `emphasis.js` all ask, several times
@@ -291,11 +316,19 @@ export function keptRegardless(atlas, state) {
 const held = new WeakMap();
 
 export function lensView(atlas, state) {
-  if (state?.narrative) return null;
   const foci = activeFoci(atlas, state);
   if (foci.length === 0) return null;
   const all = Boolean(state?.focusAll);
-  const stamp = `${all}|${foci.map((f) => (f.kind === 'source' ? `${f.id}:${atlas.citersOf?.(f.id) ? 1 : 0}` : '')).join(',')}`;
+  // A narrative's `steps` are an attribute and arrive with their century
+  // (spine.js), so a walk is a second input that lands after the state does:
+  // until it has, the narrative resolves and its walk is empty, which is the
+  // atlas drawn whole for a frame rather than a lens on nothing. The count is
+  // what says the shard came.
+  const stamp = `${all}|${foci.map((f) => {
+    if (f.kind === 'source') return `${f.id}:${atlas.citersOf?.(f.id) ? 1 : 0}`;
+    if (f.kind === 'narrative') return `${f.id}:${(atlas.narratives?.get(f.id)?.steps ?? []).length}`;
+    return '';
+  }).join(',')}`;
   const found = state ? held.get(state) : null;
   if (found && found.atlas === atlas && found.stamp === stamp) return found.value;
   const set = focusSet(foci, atlas, { all });

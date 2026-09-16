@@ -134,6 +134,17 @@ export function createPanel(container, {
       case 'unfocus':
         state.set({ focus: withoutFocus(currentFocus(s), el.dataset.kind, el.dataset.id) });
         break;
+      // The narrative card's pair (see `lensControl`): narrow to the step, and
+      // widen back to the walk. `null` and not `none` for the second, because
+      // an absent parameter is exactly what asks for the lens the mode
+      // implies, and `none` would leave the reader reading a walk drawn over
+      // the whole corpus — which is the thing M48 was about.
+      case 'focus-only':
+        state.set({ focus: formatFocus(el.dataset.kind, el.dataset.id), focusAll: false });
+        break;
+      case 'unfocus-only':
+        state.set({ focus: null, focusAll: false });
+        break;
       // `none` and not null: an absent parameter is what asks for the lens an
       // open actor or place gets, so clearing it would put that lens back.
       case 'clear-focus':
@@ -353,11 +364,24 @@ export function createPanel(container, {
   // because "focus on this" twice is a control that does nothing the second
   // time. The card asks for it rather than being handed the state, so a card's
   // signature says what it draws and not how the header works.
-  function lensControl(kind, id) {
+  //
+  // `only` is the narrative card's (M48 §1). While a narrative is read the
+  // lens is already the whole walk, so *adding* the step to it would widen
+  // nothing and narrow nothing — the verb has to replace the list rather than
+  // append to it, and dropping it again goes back to the walk and not to no
+  // lens at all. It is the one control in the atlas that writes the parameter
+  // instead of editing it, which is why it says so here rather than looking
+  // like the others.
+  function lensControl(kind, id, { only = false } = {}) {
     const focus = formatFocus(kind, id);
     const s = state.get();
-    const on = currentFocus(s).split(',').includes(focus);
     const attrs = `data-kind="${esc(kind)}" data-id="${esc(id)}"`;
+    if (only) {
+      return currentFocus(s) === focus
+        ? `<button type="button" class="link small lens-control on" data-action="unfocus-only" ${attrs}>stop focusing on this step</button>`
+        : `<button type="button" class="link small lens-control" data-action="focus-only" ${attrs}>Focus on this</button>`;
+    }
+    const on = currentFocus(s).split(',').includes(focus);
     if (on) {
       return `<button type="button" class="link small lens-control on" data-action="unfocus" ${attrs}>stop focusing on this</button>`;
     }
