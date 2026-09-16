@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "sweden-before-1886-1700",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "basemaps"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "world_1700.geojson, \"Sweden\""
+    }
+  ],
+  "actor": "sweden-before-1886",
+  "presenceType": "polity",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1700,
+    "end": 1714,
+    "date": "1700-01-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1700-1714.json"
+    ],
+    "key": "sweden-before-1886"
+  },
+  "capital": null,
+  "confidence": "probable"
+}
