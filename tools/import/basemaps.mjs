@@ -508,8 +508,15 @@ async function readMap(dataDir) {
 // Which files this import owns under data/geo/presences/, and no others. The
 // directory holds two imports since M43a and a sweep that deleted everything
 // it did not produce would delete the other one's shards (deviation 721).
-export const ownsShard = (name, kept = snapshots().kept) =>
-  kept.some((snapshot) => shardFile(snapshot).endsWith(`/${name}`));
+//
+// By the years in the name and not by the current cut, so that a changed cut
+// still sweeps what it replaced. This import covers 1400 to 1885 and CShapes
+// 1886 to 2019; the spans do not touch, so no file is claimed twice.
+export function ownsShard(name, kept = snapshots().kept) {
+  const m = /^(-?\d+)-(-?\d+)\.json$/.exec(name);
+  if (!m) return false;
+  return Number(m[1]) >= kept[0].year && Number(m[2]) <= kept[kept.length - 1].until;
+}
 
 export async function runImport(sourceDir = DEFAULT_SOURCE, dataDir = DEFAULT_DATA, {
   today = new Date().toISOString().slice(0, 10), check = false, geometryOnly = false, only = null,

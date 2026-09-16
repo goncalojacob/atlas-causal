@@ -10,7 +10,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { decodeCollection, ringFrom, arcIndex, decodeArcs, arcUsers, arcsOfGeometry } from '../tools/import/topojson.mjs';
 import { douglasPeucker, quantize, simplifyArc, pruneGeometry, ringArea, keepRing, round } from '../tools/import/simplify.mjs';
-import { planImport, planRelations, runRelations, slug, yearOf, shardsTouched, shardFile, dayAfter, runImport, reportMarkdown, sourceRecord, simplifyTopology, borderArcs, bordersOf, isBorderArc, overlapInTime, IMPORT_AUTHOR, ORIGIN_TOOL, SHARDS, DATA_END, MAP_FILE } from '../tools/import/cshapes.mjs';
+import { planImport, planRelations, runRelations, slug, yearOf, shardsTouched, shardFile, ownsShard, dayAfter, runImport, reportMarkdown, sourceRecord, simplifyTopology, borderArcs, bordersOf, isBorderArc, overlapInTime, IMPORT_AUTHOR, ORIGIN_TOOL, SHARDS, DATA_END, MAP_FILE } from '../tools/import/cshapes.mjs';
 import { crossesMeridian } from '../tools/import/geometry.mjs';
 import { SEAM } from '../src/map/projection.js';
 import { isDraft } from '../src/origin.js';
@@ -416,10 +416,12 @@ test('a file the import owns but no longer produces is removed', async () => {
   await runImport(file, dir, { today: '2026-09-02' });
   await writeFile(path.join(dir, 'presences', 'gone-1900.json'),
     JSON.stringify({ id: 'gone-1900', authors: [IMPORT_AUTHOR], created: '2026-09-02', origin: { tool: ORIGIN_TOOL } }), 'utf8');
-  await writeFile(path.join(dir, 'geo', 'presences', '1700-1800.json'), '{}', 'utf8');
+  // A shard from a cut this import no longer uses — inside its own span, which
+  // is what makes it its own to sweep (M43a).
+  await writeFile(path.join(dir, 'geo', 'presences', '1900-1950.json'), '{}', 'utf8');
   const again = await runImport(file, dir, { today: '2026-09-02' });
   assert.deepEqual(again.removed.map((f) => f.split(path.sep).join('/')).sort(),
-    ['geo/presences/1700-1800.json', 'presences/gone-1900.json']);
+    ['geo/presences/1900-1950.json', 'presences/gone-1900.json']);
 });
 
 test('an identifier added between runs survives the next one', async () => {
@@ -777,4 +779,30 @@ test('the full import writes them too, so a re-import cannot leave them behind',
   const result = await runImport(file, dir, { today: '2026-09-02' });
   assert.deepEqual(result.failed, []);
   assert.deepEqual(await readdir(path.join(dir, 'relations')), ['westland--westland-republic--succeeded.json']);
+});
+
+// M43a, deviation 721. data/geo/presences/ holds two imports now and the sweep
+// at the end of a run deletes what this one no longer produces. Scoped: the
+// other import's thirteen shards are in the same directory, and a sweep that
+// read "everything I did not write" would delete all of them.
+test('the sweep is scoped to the shards this import owns', async () => {
+  for (const shard of SHARDS) assert.equal(ownsShard(`${shard.from}-${shard.to}.json`, SHARDS), true);
+  for (const name of ['1400-1491.json', '1500-1529.json', '1880-1885.json']) {
+    assert.equal(ownsShard(name, SHARDS), false, name);
+  }
+
+  const dir = await mkdtemp(path.join(tmpdir(), 'atlas-cshapes-sweep-'));
+  const data = path.join(dir, 'data');
+  const geo = path.join(data, 'geo', 'presences');
+  await mkdir(geo, { recursive: true });
+  const theirs = path.join(geo, '1500-1529.json');
+  const body = '{"arcs":[],"features":[],"type":"FeatureCollection"}';
+  await writeFile(theirs, body, 'utf8');
+  const source = path.join(dir, 'cshapes_2_gw.topojson');
+  await writeFile(source, JSON.stringify(syntheticTopology()), 'utf8');
+
+  const result = await runImport(source, data, { today: '2026-09-16' });
+  assert.deepEqual(result.failed, []);
+  assert.equal(await readFile(theirs, 'utf8'), body, 'the other import\'s shard was touched');
+  assert.deepEqual(result.removed.filter((f) => f.includes('1500-1529')), []);
 });

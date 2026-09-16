@@ -153,6 +153,23 @@ export function shardFile(shard) {
   return `geo/presences/${shard.from}-${shard.to}.json`;
 }
 
+// Which files in data/geo/presences/ are this import's to delete. Since M43a
+// the directory holds two imports — Historical Basemaps writes 1400-1491
+// through 1880-1885 there — and the sweep below used to remove every file it
+// had not just produced, which would have taken all thirteen of them
+// (deviation 721).
+//
+// By the years in the name and not by the current cut, so that a *changed*
+// cut still sweeps what it replaced: a shard is this import's when the period
+// it names falls inside the years this import covers, which for CShapes is
+// 1886 to 2019 and for the other one is 1400 to 1885. The two spans do not
+// touch, so no file is claimed twice and none is claimed by neither.
+export function ownsShard(name, shards = SHARDS) {
+  const m = /^(-?\d+)-(-?\d+)\.json$/.exec(name);
+  if (!m) return false;
+  return Number(m[1]) >= shards[0].from && Number(m[2]) <= shards[shards.length - 1].to;
+}
+
 // ISO dates are fixed-width, so string order is date order; only the day
 // after a date needs real arithmetic.
 export function dayAfter(date) {
@@ -920,7 +937,9 @@ export async function runImport(sourceFile, dataDir = DEFAULT_DATA, { today = ne
   if (existsSync(geoDir)) {
     for (const name of await readdir(geoDir)) {
       const file = path.join(geoDir, name);
-      if (name.endsWith('.json') && !wanted.has(file)) {
+      // `ownsShard` and not "everything I did not write": the other import's
+      // shards live in this directory too.
+      if (name.endsWith('.json') && ownsShard(name) && !wanted.has(file)) {
         await unlink(file);
         removed.push(path.relative(dataDir, file));
       }
