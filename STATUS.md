@@ -13,7 +13,30 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
-2026-09-15, after **M47** (on `m0`): **the parent-child relations the corpus
+2026-09-16, after **M43a** (on `m0`): **the map has borders at every year from
+1400 to 2019, and the four centuries before CShapes are drawn as what they
+are — snapshots.** Thirteen world snapshots from
+`aourednik/historical-basemaps` became **5,976 presences over 2,198 new
+actors**, each `confidence: probable`, each dashed all the way round on the
+map because a border drawn for one year and assumed until the next is a claim
+and not a record. `data/geo/` is **15,026,924 bytes of the 24 MB ceiling** and
+the whole coverage fit, so nothing was left out.
+
+Two things the owner has to read rather than skim. **The source is GPL-3.0**,
+not a Creative Commons licence at all: it was taken because it permits
+commercial use where the CC BY-NC-SA already here forbids it, and the exact
+file list it binds is in the section below — whoever relicenses this later
+needs that list and not the sentiment. And **the review dashboard was quietly
+broken by the arrival** (deviation 723): 5,976 rows it cannot open, one of
+them the first thing a reviewer saw, sixty seconds of blank pane and no error.
+The half that was this run's to fix is fixed; the half that is a design
+question is the owner's, and it is the largest thing waiting on them.
+`node tools/validate.mjs --index`: **10,441 records, 0 errors**, 1,257
+warnings. `node --test`: **1,469 tests, 0 skipped, 0 failed**. The account is
+`## M43a: the source, its licence, and what the isolation costs` below, with
+deviations 718 to 729.
+
+Before it, M47 (on `m0`): **the parent-child relations the corpus
 already implied are written, and the ring M30c built has been drawn on the
 running atlas for the first time.** Of the 250 active events, **10 now have a
 parent, 7 are parents and 234 are neither** — five rings on the timeline, two
@@ -7956,6 +7979,197 @@ year from 1400 to 2019 has a border on it — and the *resolution* is the
 source's own. That is what `confidence: probable` is for, and it is why every
 outline this import writes carries it.
 
+### What landed, and what each period costs
+
+Thirteen snapshots became **5,976 presences** over **2,686 actors**, covering
+**1400 to 1885** with no year missing; CShapes carries 1886 to 2019 as before.
+The seam is at 1886 and it is visible: every outline before it is `probable`
+and dashed all the way round, every outline after it is `consensus` and
+stroked only inland. Checked in a browser at twenty-three years from 1415 to
+2019 — none is empty, none before 1886 is unmarked, none after it is marked.
+
+| Shard | Outlines | Bytes |
+|---|---:|---:|
+| `1400-1491` | 115 | 142,508 |
+| `1492-1499` | 1,301 | 562,062 |
+| `1500-1529` | 138 | 158,652 |
+| `1530-1599` | 269 | 183,763 |
+| `1600-1649` | 637 | 293,209 |
+| `1650-1699` | 590 | 287,408 |
+| `1700-1714` | 584 | 284,247 |
+| `1715-1782` | 599 | 294,781 |
+| `1783-1799` | 548 | 298,211 |
+| `1800-1814` | 545 | 295,369 |
+| `1815-1877` | 311 | 234,030 |
+| `1878-1879` | 171 | 201,430 |
+| `1880-1885` | 168 | 199,981 |
+| **thirteen** | **5,976** | **3,435,651** |
+
+One shard per snapshot interval, which is why no outline is written twice and
+every presence names exactly one file — CShapes' five shards each hold a
+territory that spans them. **`data/geo/` is 15,026,924 bytes of the 24 MB
+ceiling, 59.7 per cent**, up from 11,517,865; the base map is 6,214,118 of its
+own 8 MB and was not touched. The coverage fit, so nothing was left out and
+the tolerance is the one CShapes uses — Douglas–Peucker at 0.1° or a sixth of
+a ring's own extent, quantized to three decimals — because the map draws the
+two over one coastline and two detail levels beside each other would read as a
+fault in the drawing. `data/index/` went from 2.7 MB to 9.9 MB, of which
+2.8 MB is the review queue's presence shard.
+
+**1492 is a quarter of the whole import** — 1,301 outlines against 115 in 1400
+— because that snapshot is where the source draws the Americas polity by
+polity. That is the world scope working as the owner asked, not an anomaly to
+trim.
+
+### How the actors resolved
+
+2,255 names in the source, and every one of them decided in
+`data/imports/basemaps-actors.json` or by the fold of its own spelling.
+
+- **45 are actors the atlas already had**, reused untouched. The test is
+  mechanical and conservative rather than a guess at continuity: CShapes'
+  record begins in 1886, which is where that dataset begins and not where the
+  polity did, and this source draws the same name in 1880. Six years apart
+  with neither dataset recording anything between. Portugal, Spain, France,
+  Ethiopia, Korea, Oman, Morocco, Nepal, the Cape Colony, Austria-Hungary.
+- **43 match an existing actor and were refused**, each getting its own
+  `<name>-before-1886` record. A modern state that shares a name with an older
+  polity is a homonym, not a continuity: `Mali` here is drawn from 1400 and
+  last in 1715, and `data/actors/mali.json` runs from 1960. Congo, Benin,
+  Senegal, Georgia, Moldova, Laos, Cyprus, Angola and Bosnia are the same
+  shape of trap, and `Boe` is a different one — it collides with a *place*,
+  Boé in Guinea-Bissau, and has nothing to do with it.
+- **2,168 are new**, with no existing record of that name at all.
+- **Six pairs of the source's own spellings fold to one id.** Four are one
+  name written twice — a macron, two apostrophes, the Osage script — drawn in
+  different snapshots over the same ground, and are merged on that evidence.
+  Two are not: `Awá` and `Ãwa`, and `Wari` and `Wari’`, are each drawn in the
+  1492 snapshot over ground that does not touch. Four records, not two.
+
+**2,198 actors were created and 45 reused**, so the atlas goes from 488 actors
+to 2,686 and from 2,266 records to 10,441. `node tools/validate.mjs --index`:
+**0 errors, 1,257 warnings**. `node --test`: **1,469 tests, 0 failed, 0
+skipped**.
+
+### Deviations
+
+720. **The source gives one field for who held authority, and this atlas asks
+     which of four kinds it was, so no territory before 1886 is anybody's
+     dependency.** `SUBJECTO` is "the name of the colonial power exercising
+     authority on the country or region; the name of the region otherwise",
+     and the atlas's `dependencyKind` is `colony | protectorate | mandate |
+     occupied`. Read as `colony` throughout it would put "colony of the
+     Ottoman Empire" on the Crimean Khanate's card, which is a claim the
+     dataset does not make and no person here has checked. So `dependencyOf`
+     and `dependencyKind` are null on all 5,976, and what the map loses is the
+     tinted-possession family — an empire and its colonies are separate washes
+     before 1886. `presenceType` is `polity` for the same reason and never
+     `state`: the source holds kingdoms, confederations and peoples under one
+     heading and labels none of them.
+
+721. **Each import's end-of-run sweep would have deleted the other's shards.**
+     `data/geo/presences/` holds two imports now, and both tools ended a run by
+     removing every `.json` in that directory they had not just produced —
+     which is right when one import owns it and destroys thirteen files when
+     two do. Both now own by the years in the file name against the span the
+     import covers, 1886–2019 and 1400–1885; by the span and not by the
+     current cut, so a changed cut still sweeps what it replaced.
+
+722. **An id is unique across the whole atlas, and the import only knew about
+     its own two directories.** The 1492 snapshot draws a polity called "Boe"
+     in Brazil; `data/places/boe.json` is Boé in Guinea-Bissau, where
+     independence was declared in 1973. Rule 2 caught it after the files were
+     written. The claim pass reads every other kind's directory now and names
+     the kind it would have collided with, which is the mapping file's
+     question and not the tool's.
+
+723. **5,976 rows arrived in the review queue that the dashboard cannot open,
+     and one of them was the first thing a reviewer saw.** Past 2,000 drafts
+     `review.html` fetches one kind's digests and filters the queue to it, and
+     the kind was "the first the summary listed" — harmless while everything
+     queued was a kind the editor could open. The editor builds a record out
+     of the contribution form's fields; the form does not offer a presence; so
+     the page opened filtered to presences, fetched their 2.8 MB shard, and
+     sat there with a blank pane. Measured in a browser: sixty seconds, no
+     editor, no console error, nothing said. Two fixes, both in the page's own
+     terms — the eager kind is now the first `KIND_ORDER` names, and `?open=`
+     makes its record's kind the one, so a record opened by address is a
+     record whose row is in the list. **What is not fixed**: clicking the
+     `presence (5,976)` chip still reaches rows that open onto that blank
+     pane. That is older than this milestone. The presences are `draft` on
+     purpose — CLAUDE.md says the queue lists everything unread whoever wrote
+     it, `cshapes.mjs` has said `draft` since the health review of 6 September
+     (R10), and writing nothing instead would have earned 5,976
+     `unread` warnings. But CLAUDE.md and `CONTRIBUTING.md` both say a
+     territory is corrected by editing the mapping file and re-running the
+     import and **never** by hand, so it is not obvious a presence belongs in
+     a queue at all. **This is the owner's call**, and two things hang on it:
+     whether the editor should learn to show an outline read-only with a link
+     to the mapping file, and whether the 710 CShapes presences — which
+     predate R10, carry no `review` at all and so have never been in the queue
+     — should be regenerated to match.
+
+724. **Eight hues cannot separate six centuries of world borders: 327 actors
+     share a hue with a neighbour.** `build-palette.mjs` has always said so
+     rather than pretending — it writes who is sharing into `spilled` — and
+     until now nothing did, because one import's world fits. The 1492 snapshot
+     alone draws 1,301 polities. The colouring minimises shared *border
+     length*, so what shares a hue is what shares least of one; Portugal and
+     Spain, France and Spain, and the United States and Mexico are held apart
+     by name in `tests/palette.test.mjs` so that "something had to share" can
+     never quietly become "these two did". Adding hues was not considered:
+     the eight are the azulejo palette and `CLAUDE.md` forbids a new hex value.
+
+725. **No `arcs` in any of the thirteen shards, so nothing before 1886 is
+     stroked.** CShapes can name the border two territories share because its
+     source is a topology and both walk one arc. GeoJSON has none: a shared
+     border is two independent rings, and two copies of one boundary
+     simplified separately — from different start points, in opposite windings
+     — do not come out as the same line. Stroking them would draw a border
+     *beside* the border, which is the doubled-line fault M39a and M39b were
+     spent removing. So these territories are filled and dashed and nothing of
+     theirs is stroked. Building a topology out of the GeoJSON would fix it and
+     is a milestone, not a deviation.
+
+726. **The reuse test refuses four it probably should not, and that is the
+     safe direction.** Japan, Sweden, the United Kingdom and Tibet all match an
+     existing actor whose CShapes record begins in 1886, but the source stops
+     drawing them before 1878 — Japan at 1815, Sweden at 1800, the United
+     Kingdom at 1815 — so nothing here can check the continuity, and they got
+     `<name>-before-1886` records like the homonyms. Pointing their entry at
+     the existing id is a one-line edit to the mapping file and a re-run, which
+     is what the file is for. The alternative rule, "reuse wherever the names
+     match", is the one that would have merged the Mali Empire with the
+     Republic of Mali.
+
+727. **The branch was red for eleven commits, and this run is the reason
+     deviations 711 and 717 exist.** The rule is that the commit teaching the
+     tests goes first. It was followed for the two that were foreseen — the
+     palette's spill and the map's dashed outline — and not for the four that
+     were not: `import-map.test.mjs` (two maps in `data/imports/` where it
+     asserted one), `bundle.test.mjs` (an actor with no `where`),
+     `review.test.mjs` and three browser tests (the queue). The cause is
+     plain and worth writing down: the thirteen period commits ran
+     `validate --index` and not `node --test`, on the reasoning that the tests
+     do not read `data/`. Nine of them do. **A run that writes under `data/`
+     runs the tests as well as the validator**, and if the full suite is too
+     slow to run thirteen times, the answer is fewer commits and not fewer
+     checks.
+
+728. **189 `presence-outside-actor-when` warnings, and they are the reuse
+     working.** A presence at 1500 pointing at an actor whose `when` begins in
+     1886 is outside it, and the warning is right to say so. The actor's
+     interval is CShapes' and is not this import's to widen: an actor it reuses
+     it never rewrites. Whoever reviews `portugal` can widen it by hand, and
+     then the warning goes.
+
+729. **A browser test failed twice in eleven full runs and never alone.**
+     `map-browser.test.mjs` → "zoomed to Portugal, Lisbon is named once and its
+     title carries its names", on runs of the whole suite and never when the
+     file is run by itself, before this milestone's data landed as well as
+     after. It is not the flake the protocol already names. Recorded rather
+     than chased: nothing in this milestone touches the label placer.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -8161,3 +8375,5 @@ M43b done
 M47 started 2026-09-15T16:47:35Z by scheduled
 M47 done
 M43a started 2026-09-16T10:09:15Z by scheduled
+M43a done
+M43 done
