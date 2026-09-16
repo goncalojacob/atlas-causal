@@ -166,6 +166,57 @@ test('rule 19: a succession runs between two actors of the same kind', async () 
   assert.equal(r.errors.length, 0, messages(r));
 });
 
+// M52, amendments A1 and A3. The owner's rule — a succession may not be
+// written across a gap — as a check rather than as an audit. Every case below
+// moves the *successor's* interval, because the fixture pair is the one shape
+// this rule deliberately leaves alone: `fixture-polity-three` begins in 1100,
+// before `fixture-polity-four` ends in 1260, and an overlap explains no ground
+// away.
+test('rule 30: a succession begins where the record before it ends', async () => {
+  const successor = (when) => (fx) => { fx.byId['fixture-polity-three'].when = when; };
+  // The passing case is the fixture set as it stands.
+  let r = await run();
+  assert.equal(rulesHit(r, 30).length, 0, messages(r));
+  // The same year the predecessor ended in, and the year after it: both are
+  // the boundary, and a year is the finest bound this model has.
+  for (const start of [1260, 1261]) {
+    r = await run(successor({ start, end: null }));
+    assert.equal(rulesHit(r, 30).length, 0, `${start}: ${messages(r)}`);
+  }
+  // Two years is already a gap: nothing here says who held the ground in
+  // 1261, and that is the whole of the rule.
+  r = await run(successor({ start: 1262, end: null }));
+  assert.equal(rulesHit(r, 30).length, 1, messages(r));
+  assert.equal(rulesHit(r, 30)[0].path, '/to');
+  assert.equal(rulesHit(r, 30)[0].id, 'fixture-polity-four--fixture-polity-three--succeeded');
+  assert.match(rulesHit(r, 30)[0].message, /2 years later/);
+  // The shape of the four M52 retracted: East Timor's twenty-six.
+  r = await run(successor({ start: 1286, end: null }));
+  assert.match(rulesHit(r, 30)[0].message, /26 years later/);
+  // An uncertain bound is read by the side that favours the record: the
+  // latest the predecessor may have ended against the earliest the successor
+  // may have begun. This rule is about gaps, not about precision.
+  r = await run(successor({ start: { min: 1261, max: 1300 }, end: null }));
+  assert.equal(rulesHit(r, 30).length, 0, messages(r));
+  // Nobody succeeds a record that has not ended.
+  r = await run((fx) => { fx.byId['fixture-polity-four'].when = { start: 1120, end: null }; });
+  assert.equal(rulesHit(r, 30).length, 1, messages(r));
+  assert.equal(rulesHit(r, 30)[0].path, '/from');
+  assert.match(rulesHit(r, 30)[0].message, /has not ended/);
+  // Only an active succession, and only a succession: a gap under another
+  // type is not this rule's business, because no other type claims that one
+  // thing took another's place.
+  r = await run((fx) => {
+    fx.byId['fixture-polity-three'].when = { start: 1262, end: null };
+    fx.byId['fixture-polity-four--fixture-polity-three--succeeded'].status = 'retracted';
+  });
+  assert.equal(rulesHit(r, 30).length, 0, messages(r));
+  r = await run((fx) => {
+    fx.records.push(relation('fixture-actor-two', 'fixture-polity-three', 'member-of', { when: { start: 1500, end: 1520 } }));
+  });
+  assert.equal(rulesHit(r, 30).length, 0, messages(r));
+});
+
 test('rule 19: regime-of and succeeded are acyclic, each on its own', async () => {
   // Two regimes of each other is a mistake in the data.
   let r = await run((fx) => {

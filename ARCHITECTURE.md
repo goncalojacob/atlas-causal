@@ -1696,6 +1696,19 @@ and the decision waits for that evidence.
   succession is an instant, and its `date` is the day the source gives.
   Falling entirely outside either actor's own dates is a warning, not an
   error.
+- **A `succeeded` relation's two dates have to meet, and that is rule 30**
+  (M52, amendments A1 and A3). The predecessor's `when.end` and the
+  successor's `when.start` are the same year, or the year boundary between
+  them, and nothing wider: a gap is not two imprecise dates, it is years in
+  which something else held that ground, and `succeeded` across it is a false
+  label rather than a rough one. An audit of all 88 active successions on
+  16 September found four — East Timor's 26 years, Zambia's 11, Taiwan's 4,
+  Singapore's 3 — and each gap has an occupant a historian would name at
+  once; M52 retracted the four rather than invent the actors, which needs
+  sources. An actor that has not ended has not been succeeded either. What
+  the rule does **not** refuse is the other direction: a successor beginning
+  before its predecessor ends leaves no ground unexplained, and the pair is
+  already reported by `relation-outside-actor-when`.
 - **A relation cites at least one source**, like an edge: who belonged to what
   is argued from evidence, and a bare type between two ids would be an
   assertion with nothing behind it.

@@ -9,7 +9,7 @@
 // winning. Errors are only reported on records under validation; topology
 // entries were validated when they were merged.
 
-import { isValidYear, astronomicalBounds, defaultCalendar } from '../util/dates.js';
+import { isValidYear, astronomicalBounds, defaultCalendar, formatBound } from '../util/dates.js';
 import { bodyCitations, bodyLinks } from '../markdown.js';
 import {
   EDGE_ID, EDGE_TYPE_IDS, RELATION_ID, RELATION_TYPE_IDS,
@@ -1115,6 +1115,47 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
       const culprit = own.find((r) => r.kind === 'relation' && r.type === type && r.status === 'active'
         && stuck.includes(r.from) && stuck.includes(r.to)) ?? null;
       error(19, culprit, '', `"${type}" closes on itself through: ${stuck.join(', ')}`);
+    }
+  }
+
+  // --- rule 30: a succession's two dates meet ------------------------------
+  // O dono, a 16 de Setembro: "I still don't agree that it can be marked as
+  // successor event if the dates are not matching." Está certo, e a razão é
+  // mais forte do que parecer impreciso: um intervalo entre o fim do
+  // antecessor e o início do sucessor não são duas datas grosseiras, são
+  // vinte e seis anos em que outra coisa segurou aquele chão — a Indonésia
+  // entre `east-timor-under-portugal` (1976) e `east-timor` (2002) — e
+  // `succeeded` passa a ser uma etiqueta falsa e não uma aproximação. Uma
+  // auditoria às 88 sucessões activas encontrou quatro assim; sem esta regra
+  // a quinta só aparece na auditoria seguinte.
+  //
+  // Encontrar-se é isto: o mesmo ano, ou a fronteira de ano entre os dois. O
+  // ano é o limite mais fino que este modelo tem, portanto quem acaba em 1922
+  // é sucedido em 1922 ou em 1923 e não mais longe; e quem ainda não acabou
+  // não foi sucedido por ninguém.
+  //
+  // O que esta regra não diz é que os dois não se possam sobrepor. Essa é a
+  // outra direcção e é outra pergunta — um sucessor que começa antes de o
+  // antecessor acabar não deixa chão nenhum por explicar, que é o que aqui
+  // se procura, e o aviso `relation-outside-actor-when` já olha para o par.
+  // Os limites incertos são lidos pelo lado que favorece o registo: o maior
+  // fim possível contra o menor início possível, porque uma data incerta não
+  // é o que esta regra veio apanhar.
+  for (const r of own) {
+    if (r.kind !== 'relation' || r.status !== 'active' || r.type !== 'succeeded') continue;
+    const from = lookup(r.from, 'actor');
+    const to = lookup(r.to, 'actor');
+    if (!from || !to) continue;
+    const predecessor = span(from.when);
+    const successor = span(to.when);
+    if (!predecessor || !successor) continue;
+    if (predecessor.to === Infinity) {
+      error(30, r, '/from', `a succession begins where another ends: "${from.id}" has not ended`);
+      continue;
+    }
+    const gap = successor.from - predecessor.to;
+    if (gap > 1) {
+      error(30, r, '/to', `a succession's dates meet: "${from.id}" ends ${formatBound(from.when.end)} and "${to.id}" begins ${formatBound(to.when.start)}, ${gap} years later, and something else held that ground in between`);
     }
   }
 
