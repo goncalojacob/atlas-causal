@@ -37,6 +37,21 @@
 // on itself (lens.js), and `none` is how a reader says no to that while
 // keeping the card open.
 //
+// `degree` and `tops` are what the **graph** draws, and only the graph (M48
+// §3). 103 of the 250 active events have one edge or none and eight carry
+// seven or more, so a picture of all of them is eight nodes a reader can read
+// and two hundred they cannot: `degree` is the least number of active links an
+// event needs to be drawn, and `tops` draws only events with no parent. Both
+// are filters and neither is a deletion — a hidden event is still reachable by
+// walking to it, by searching for it and by focusing on it — and neither
+// applies inside a lens, because a reader who has focused has already said
+// what they want to see.
+//
+// In the URL and not in a preference, for the reason `view` and `group` are:
+// a link is meant to open on the picture the person who sent it was looking
+// at. A link shared before M48 names neither and opens on the default, which
+// is a narrower graph than its sender saw and the same map and timeline.
+//
 // `group` is what the timeline's lanes and the graph's bands are — `none`,
 // `actor`, `place`, `region` — and `lanes` is the reader's own ordered list
 // of them, empty for the automatic six. Both are how the atlas is drawn
@@ -120,9 +135,19 @@ export { GROUPS, VIEWS };
 // Query parameters that are not state but must survive a state write.
 const PASSTHROUGH = Object.freeze(['fixtures']);
 
+// What the degree control offers, and where it starts. **Two**, and not zero:
+// the whole of M48 is that the interface has the right machinery and does not
+// apply it by default, and a floor of zero is the haze the owner was looking
+// at. Not three either — 3 takes the graph to 64 nodes of 250, and an event
+// with two links is an event that joins two others, which is what the picture
+// is of. 2 keeps 147 and drops the 103 that organise nothing.
+export const DEGREE_CHOICES = Object.freeze([0, 1, 2, 3]);
+export const DEGREE_DEFAULT = 2;
+
 export function defaultState() {
   return {
     from: null, to: null, view: 'map', focus: null, focusAll: false, group: 'none', lanes: [],
+    degree: DEGREE_DEFAULT, tops: false,
     selected: null, source: null, place: null,
     actor: null, office: null, chain: [], horizon: null, layers: [...LAYERS], narrative: null, step: 0,
     walk: null,
@@ -261,6 +286,14 @@ export function parseState(search, defaults = defaultState()) {
   if (params.has('focus') && FOCUS_PARAM.test(params.get('focus'))) state.focus = params.get('focus');
   state.focusAll = params.get('focusAll') === '1';
   if (params.has('group') && GROUPS.includes(params.get('group'))) state.group = params.get('group');
+  // A floor outside the list the control offers is a link written by hand, and
+  // it is honoured where it is a whole number of links: the control is a
+  // convenience and the parameter is the state. Anything else falls back to the
+  // default, field by field, as everything here does.
+  // Digits and nothing else: `Number('')` is 0, and an empty parameter is a
+  // link with a typo in it and not a reader asking for every event.
+  if (/^\d+$/.test(params.get('degree') ?? '')) state.degree = Number(params.get('degree'));
+  state.tops = params.get('tops') === '1';
   // An explicit lane list is the reader's order, so duplicates are dropped
   // rather than sorted away; whether an id names a record at all is decided
   // by lanes.js, which has the data this file deliberately does not.
@@ -311,6 +344,10 @@ export function formatState(state, search = '') {
   // addressee, and it would sit in every link the reader ever copied.
   if (state.focusAll && state.focus && state.focus !== 'none') params.set('focusAll', '1');
   if (state.group && state.group !== 'none') params.set('group', state.group);
+  // The default writes nothing, so the link a reader copies says what they
+  // changed and not what they left alone.
+  if (Number.isInteger(state.degree) && state.degree !== DEGREE_DEFAULT) params.set('degree', String(state.degree));
+  if (state.tops) params.set('tops', '1');
   // A lane list without a grouping to belong to would be an instruction with
   // no addressee, and `none` has no lanes to order.
   if (state.lanes?.length && state.group && state.group !== 'none') params.set('lanes', state.lanes.join(','));

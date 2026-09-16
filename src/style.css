@@ -238,8 +238,22 @@ input, select, textarea { accent-color: var(--cobalt); }
   font-weight: normal; line-height: var(--leading-tight); letter-spacing: 0.005em;
 }
 .bar .tagline { margin: 0; color: var(--ink-soft); flex: 1; font-size: var(--text-sm); }
-.bar .layers { display: flex; gap: var(--space-3); color: var(--ink-soft); font-size: var(--text-sm); }
-.bar .layers label { display: inline-flex; align-items: center; gap: 0.3em; }
+/* The graph's two filters sit exactly where the layer switches do and are
+   drawn exactly like them: they are the same kind of control — what is drawn
+   at all — for the other view, and one of the two is always hidden
+   (src/graph-filters.js, main.js). No colour, no size and no token of their
+   own; the row is the row. */
+.bar .layers, .bar .graph-filters { display: flex; gap: var(--space-3); color: var(--ink-soft); font-size: var(--text-sm); }
+.bar .layers label, .bar .graph-filters label { display: inline-flex; align-items: center; gap: 0.3em; }
+.bar .graph-filters select { font: inherit; color: inherit; background: var(--paper); border: 1px solid var(--line); }
+/* `display: flex` above beats the UA stylesheet's rule for [hidden], exactly as
+   it did for the timeline's note (see `.timeline-note[hidden]` below). Both
+   groups are hidden by `main.js` when the other view is on — the layer
+   switches are the map's legend and the degree floor is the graph's — and
+   without this neither of them ever went away: the layer switches have been on
+   the graph since the graph had them, which is what taking M48's screenshot
+   showed (deviation 734). */
+.bar .layers[hidden], .bar .graph-filters[hidden] { display: none; }
 /* The two collapsed groups — the base map and the categories — which together
    with the two rows above them are the whole legend: there is no other.
    Collapsed, so the phone drawer keeps four targets instead of nineteen, and

@@ -117,6 +117,13 @@ async function foldedTwice(graph) {
   return folded;
 }
 
+// **`degree=0` on every URL that counts the whole corpus.** Since M48 the graph
+// draws what organises other events — at least two active links, by default —
+// so a picture of every event is one the reader asks for and these tests ask
+// for it by name (M48 §3, src/graph-filters.js). What they are about is the
+// folding, and the folding has to be counted against what was there to fold.
+const WHOLE = 'degree=0';
+
 // How many events the graph would draw one node each for, straight from the
 // index the browser reads: the number the marks and the badges have to add
 // back up to.
@@ -131,7 +138,7 @@ async function activeEvents() {
 
 test('at the default zoom the graph draws stacks, and they add up to the events', { skip }, async () => {
   const events = await activeEvents();
-  const dom = await withServer((url) => dumpDom(chrome, url('?view=graph')));
+  const dom = await withServer((url) => dumpDom(chrome, url(`?view=graph&${WHOLE}`)));
   const graph = graphOf(dom);
   const drawn = marks(graph);
   const hidden = badges(graph);
@@ -149,8 +156,8 @@ test('at the default zoom the graph draws stacks, and they add up to the events'
 test('grouping into bands crowds the picture, and more of it merges', { skip }, async () => {
   const events = await activeEvents();
   const [plain, banded] = await withServer(async (url) => [
-    graphOf(await dumpDom(chrome, url('?view=graph'))),
-    graphOf(await dumpDom(chrome, url('?view=graph&group=region'))),
+    graphOf(await dumpDom(chrome, url(`?view=graph&${WHOLE}`))),
+    graphOf(await dumpDom(chrome, url(`?view=graph&group=region&${WHOLE}`))),
   ]);
   assert.ok(stacks(banded) > stacks(plain), `${stacks(banded)} stacks in bands, ${stacks(plain)} without`);
   for (const graph of [plain, banded]) {
@@ -175,7 +182,7 @@ test('a merged line carries its count and its type; a single one is unchanged', 
 
 test('the selected event and its chain are never inside a stack', { skip }, async () => {
   const events = await activeEvents();
-  const dom = await withServer((url) => dumpDom(chrome, url('?view=graph&selected=carnation-revolution-1974')));
+  const dom = await withServer((url) => dumpDom(chrome, url(`?view=graph&selected=carnation-revolution-1974&${WHOLE}`)));
   const graph = graphOf(dom);
   // Its own mark, drawn last so it is on top, and not a stack. It is on the
   // walked path as well as selected, so the class carries both.
@@ -183,7 +190,7 @@ test('the selected event and its chain are never inside a stack', { skip }, asyn
   assert.doesNotMatch(graph, /<circle[^>]*class="node stack[^"]*selected/);
   // Holding the selection and everything drawn at it out of the grouping
   // leaves fewer stacks than the same picture with nothing selected.
-  const plain = graphOf(await withServer((url) => dumpDom(chrome, url('?view=graph'))));
+  const plain = graphOf(await withServer((url) => dumpDom(chrome, url(`?view=graph&${WHOLE}`))));
   assert.ok(stacks(graph) < stacks(plain), `${stacks(graph)} stacks with a selection, ${stacks(plain)} without`);
   assert.equal(marks(graph) + badges(graph).reduce((a, b) => a + b, 0) + await foldedTwice(graph), events);
 });
@@ -245,7 +252,7 @@ const TITLED = (id) => `
 test('a parent holds its parts at the default zoom and gives them up when the reader zooms in', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await watchErrors(page);
-    await open(page, url('?fixtures=1&view=graph&from=1200&to=2025'), drawnGraph);
+    await open(page, url(`?fixtures=1&view=graph&from=1200&to=2025&${WHOLE}`), drawnGraph);
     await waitFor(page, TITLED('fixture-event-f'), "the parent's century to land");
 
     const collapsed = await page.eval(`
@@ -317,7 +324,7 @@ const RING = `
 test('a parent keeps its ring at every zoom, collapsed or parted', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await watchErrors(page);
-    await open(page, url('?fixtures=1&view=graph&from=1200&to=2025'), drawnGraph);
+    await open(page, url(`?fixtures=1&view=graph&from=1200&to=2025&${WHOLE}`), drawnGraph);
     await waitFor(page, TITLED('fixture-event-f'), "the parent's century to land");
 
     const held = await page.eval(RING);
@@ -412,7 +419,7 @@ test('a mark outside the rectangle on screen is not drawn, and the selection is 
     // The leftmost event of the fixtures is the selected one, and the wheel
     // is turned over the rightmost: ten notches later the selection is a long
     // way off the left of the screen.
-    await open(page, url('?fixtures=1&view=graph&selected=fixture-event-a'), drawnGraph);
+    await open(page, url(`?fixtures=1&view=graph&selected=fixture-event-a&${WHOLE}`), drawnGraph);
     await waitFor(page, TITLED('fixture-event-g'), 'the fixtures to be named');
     const rest = await page.eval(DRAWING);
     assert.ok(rest.nodes.length > 4, `the whole picture is drawn at rest (${rest.nodes.length} marks)`);
@@ -453,7 +460,7 @@ test('a mark outside the rectangle on screen is not drawn, and the selection is 
 test('a pane that changes size shows more of the picture, and the drawing follows it', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await watchErrors(page);
-    await open(page, url('?fixtures=1&view=graph&from=1200&to=2025'), drawnGraph);
+    await open(page, url(`?fixtures=1&view=graph&from=1200&to=2025&${WHOLE}`), drawnGraph);
     await waitFor(page, TITLED('fixture-event-g'), 'the fixtures to be named');
     // A few notches in, so that the rectangle on screen is narrower than the
     // arrangement and there is something outside it to draw.
@@ -480,4 +487,102 @@ test('a pane that changes size shows more of the picture, and the drawing follow
       `and more of the picture is drawn (${wide.nodes.length} of ${narrow.nodes.length})`);
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   }, { device: { width: 1280, height: 900, deviceScaleFactor: 1 } });
+});
+
+// ─── what the graph draws (M48 §3) ─────────────────────────────────────────
+//
+// The graph drew every event at every zoom, and 41 % of them have one edge or
+// none: eight hubs a reader can read a name on and two hundred nodes they
+// cannot. It draws what organises other events now, and the two things that
+// have to be true of that are that the reader can move it and that nothing is
+// *gone* — a hidden event is still on the map, still on the timeline, still
+// found by the search, still walked to, still kept by a lens.
+
+// The hub with the most links in the corpus and a leaf with one or none, read
+// off the index the browser reads rather than written out here: which event is
+// which is a fact about the corpus and the next import moves it (M48, test 6).
+async function hubAndLeaf() {
+  const corpus = await corpusOf(path.join(ROOT, 'data'));
+  const active = corpus.events.filter((e) => e.status === 'active');
+  const ids = new Set(active.map((e) => e.id));
+  const degree = new Map(active.map((e) => [e.id, 0]));
+  for (const edge of corpus.edges) {
+    if (edge.status !== 'active' || !ids.has(edge.from) || !ids.has(edge.to)) continue;
+    degree.set(edge.from, degree.get(edge.from) + 1);
+    degree.set(edge.to, degree.get(edge.to) + 1);
+  }
+  const byDegree = [...degree].sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1));
+  const hub = byDegree[0];
+  // A leaf with exactly one link, so that raising the floor to two is what
+  // hides it and the walk below has a step to take to it.
+  const leaf = byDegree.find(([, n]) => n === 1);
+  assert.ok(hub && hub[1] >= 3, 'the corpus has a hub');
+  assert.ok(leaf, 'and a leaf with one link');
+  const edge = corpus.edges.find((e) => e.status === 'active' && (e.from === leaf[0] || e.to === leaf[0]));
+  return { hub: hub[0], leaf: leaf[0], edge: edge.id, degree };
+}
+
+const DRAWN_IDS = "return [...document.querySelectorAll('svg.graph circle.node[data-id]')].map((el) => el.dataset.id);";
+
+test('the degree floor hides a leaf and keeps the hubs, and the reader moves it', { skip }, async () => {
+  const { leaf, degree } = await hubAndLeaf();
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    // The whole picture first, so that the leaf is known to be drawable at
+    // this window and this zoom before the floor is asked to hide it.
+    await open(page, url(`?view=graph&${WHOLE}`), drawnGraph);
+    await waitFor(page, NODE(leaf), 'the leaf to be drawn with no floor');
+
+    // The default, which is what a reader arrives at. Asserted as the rule and
+    // not on one named node: which events are on screen at the opening zoom is
+    // a fact about the layout, and the rectangle is what decides it
+    // (deviation 714). What the floor promises is that nothing under it is
+    // drawn at all.
+    await open(page, url('?view=graph'), drawnGraph);
+    await waitFor(page, `return !document.querySelector('svg.graph circle.node[data-id="${leaf}"]');`, 'the leaf to go');
+    const drawn = await page.eval(DRAWN_IDS);
+    assert.ok(drawn.length > 0, 'the graph still draws a picture');
+    for (const id of drawn) {
+      assert.ok((degree.get(id) ?? 0) >= 2, `${id} has ${degree.get(id) ?? 0} link(s) and was drawn at the default floor`);
+    }
+
+    // And the control moves it, writing what the reader did into the link.
+    await page.eval(`const s = document.querySelector('.graph-filters [data-filter="degree"]');
+      s.value = '0'; s.dispatchEvent(new Event('change', { bubbles: true })); return true;`);
+    await waitFor(page, "return new URLSearchParams(location.search).get('degree') === '0';", 'the URL to carry the floor');
+    await waitFor(page, NODE(leaf), 'the leaf to come back');
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  });
+});
+
+test('a filtered-out event is still searched for, still walked to, and still kept by a lens', { skip }, async () => {
+  const { leaf, edge } = await hubAndLeaf();
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+
+    // Walked to: the chain that reaches it is what the reader clicked, and the
+    // graph may not answer by drawing nothing where they arrived.
+    await open(page, url(`?view=graph&selected=${leaf}&chain=${edge}`), drawnGraph);
+    await waitFor(page, NODE(leaf), 'the leaf to be drawn because the reader walked to it');
+
+    // Kept by a lens: inside one, the filters are off altogether.
+    await open(page, url(`?view=graph&focus=event:${leaf}`), drawnGraph);
+    await waitFor(page, NODE(leaf), 'the leaf to be drawn inside a lens on itself');
+
+    // And found by the search, which never knew about the graph at all.
+    await open(page, url('?view=graph'), drawnGraph);
+    await waitFor(page, "return !document.getElementById('search-results').hidden === false || true;", 'the box');
+    await page.eval(`const box = document.getElementById('search-input');
+      box.value = ${JSON.stringify(leaf.replace(/-/g, ' '))};
+      box.dispatchEvent(new Event('input', { bubbles: true }));
+      return true;`);
+    await waitFor(
+      page,
+      `return [...document.querySelectorAll('#search-results [data-id]')].some((el) => el.dataset.id === ${JSON.stringify(leaf)});`,
+      'the search to offer the event the graph is not drawing',
+    );
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  });
 });

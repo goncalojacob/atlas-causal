@@ -20,6 +20,7 @@ import { resolveWindow } from './util/window.js';
 import { bindNarrativeKeys } from './panel/narrative.js';
 import { esc } from './util/esc.js';
 import { createLayerControl } from './layer-control.js';
+import { createGraphFilters } from './graph-filters.js';
 
 const params = new URLSearchParams(window.location.search);
 const fixtures = params.get('fixtures') === '1';
@@ -179,10 +180,14 @@ try {
   const mapArea = document.getElementById('map');
   const graphArea = document.getElementById('graph');
   const layersGroup = document.querySelector('.bar .layers');
+  const graphFiltersGroup = document.querySelector('.bar .graph-filters');
   // The layer switches and the category toggles, which are the legend; built
   // rather than written into index.html because a category's label comes from
   // `data/` and everything from `data/` is untrusted input (layer-control.js).
   createLayerControl(layersGroup, { atlas, state });
+  // And the graph's own two, which are the other half of the same idea: what
+  // is drawn at all. They swap with the layer switches below.
+  createGraphFilters(graphFiltersGroup, { state });
   const showView = (view) => {
     const graphOn = view === 'graph';
     if (graphOn && !graph) {
@@ -190,8 +195,11 @@ try {
     }
     mapArea.hidden = graphOn;
     graphArea.hidden = !graphOn;
-    // The layer switches belong to the map: the graph has no coastlines.
+    // The layer switches belong to the map: the graph has no coastlines. And
+    // the degree floor belongs to the graph, for the same reason the other way
+    // round — the map draws every event whatever the graph is organising.
     if (layersGroup) layersGroup.hidden = graphOn;
+    if (graphFiltersGroup) graphFiltersGroup.hidden = !graphOn;
     for (const button of document.querySelectorAll('[data-view]')) {
       button.setAttribute('aria-pressed', String(button.dataset.view === view));
     }

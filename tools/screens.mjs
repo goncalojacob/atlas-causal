@@ -156,6 +156,26 @@ export const SHOTS = Object.freeze([
   // in the same frame.
   { name: 'm43a-borders-1500', query: '?from=1500&to=1500&bbox=-14,34,6,45', width: 1440, height: 900,
     what: 'Portugal at 1500: a probable outline, dashed shore and all, against Castile and Aragon' },
+  // M48. The two faults the owner found, as they look once they are fixed.
+  //
+  // The narrative: reading one is a lens on the walk (lens.js), so the twelve
+  // steps of "how the colonial war ended the regime" are drawn in full, their
+  // one hop of causes and consequences is dimmed around them, and the other
+  // two hundred events of the corpus are not in the picture. It used to be
+  // drawn over all of them.
+  { name: 'm48-narrative', query: '?narrative=how-the-colonial-war-ended-the-regime', width: 1440, height: 900,
+    what: 'reading a narrative: the walk in full, its neighbours dimmed, and nothing else' },
+  // The graph at the default floor: the events with at least two active links,
+  // which is 147 of 250 here. The rest are still on the map, still on the
+  // timeline, still found by the search and still reachable by walking — the
+  // floor is a filter and not a deletion — and the control that moves it is in
+  // the masthead, in the frame.
+  // Through the frame, which marks the introduction as seen: the card covers
+  // the view on a first visit with nothing open, and a browser started for one
+  // screenshot has never been anywhere (deviation 709). The narrative shot
+  // above needs no frame, because opening a narrative is opening something.
+  { name: 'm48-graph', page: 'docs/screens/frame.html', query: '?w=1440&h=900&view=graph', width: 1440, height: 900,
+    what: 'the graph drawing what organises other events, at the default floor of two links' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

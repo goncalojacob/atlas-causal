@@ -38,6 +38,11 @@ test('changing any one field changes the key', () => {
     from: 1900, to: 1950, view: 'graph', focus: 'actor:x', focusAll: true, group: 'actor', lanes: ['a'],
     selected: 'e', source: 's', place: 'p', actor: 'a', office: 'o', chain: ['c'], horizon: 1970,
     layers: ['events'], narrative: 'n', step: 3, walk: 'w', bbox: [0, 1, 2, 3],
+    // What the graph draws (M48 §3). The map and the timeline do not read
+    // them, and they are in the key all the same, for the reason this whole
+    // test exists: a field a view does not obviously read still changes the
+    // key, because the alternative is a picture that is quietly out of date.
+    degree: 0, tops: true,
   };
   for (const [name, value] of Object.entries(changed)) {
     assert.notEqual(stateKey({ ...base, [name]: value }), stateKey(base), name);

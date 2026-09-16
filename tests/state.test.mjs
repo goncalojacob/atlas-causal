@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   parseState, formatState, defaultState, createState, parseBbox, formatBbox, pushes, LAYERS,
+  DEGREE_CHOICES, DEGREE_DEFAULT,
 } from '../src/state.js';
 import {
   resolveWindow, overlaps, windowAt, containsYear, decadeOf, zoomWindow,
@@ -29,6 +30,10 @@ test('parse and format round trip', () => {
     step: 0,
     walk: null,
     bbox: null,
+    // What the graph draws (M48 §3): the default floor and no top-level
+    // switch, neither of which is written to the URL.
+    degree: DEGREE_DEFAULT,
+    tops: false,
   };
   const search = formatState(state);
   assert.equal(search, '?from=1200&to=1250&view=graph&selected=fixture-event-t&source=fixture-source-one&place=fixture-place-one&actor=fixture-actor-one&office=fixture-office-one&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&horizon=1240&layers=events');
@@ -160,6 +165,7 @@ test('the store merges patches and notifies', () => {
   assert.deepEqual(seen, [1210, 1210]);
   assert.deepEqual(store.get(), {
     from: null, to: 1220, view: 'map', focus: null, focusAll: false, group: 'none', lanes: [],
+    degree: DEGREE_DEFAULT, tops: false,
     selected: 'fixture-event-a', source: null,
     place: null, actor: null, office: null, chain: [], horizon: null,
     layers: ['land', 'territories', 'events', 'rivers', 'lakes', 'physical', 'mountains', 'cities'],
@@ -814,4 +820,24 @@ test('a walk id that names nothing in this session leaves the selection alone', 
   assert.equal(store.get().walk, 'someone-elses-question');
   assert.equal(store.walk(), null, 'nothing was resolved from it');
   assert.equal(store.get().chain.length, 0);
+});
+
+// M48 §3: what the graph draws is state and not a preference, because a link
+// is meant to open on the picture the person who sent it was looking at.
+test('the graph’s filters travel in the URL, and the default writes nothing', () => {
+  assert.equal(formatState({ ...defaultState() }), '', 'the default is an empty link');
+  assert.equal(formatState({ ...defaultState(), degree: 0 }), '?degree=0');
+  assert.equal(formatState({ ...defaultState(), degree: 3, tops: true }), '?degree=3&tops=1');
+  assert.equal(parseState('?degree=0').degree, 0);
+  assert.equal(parseState('?degree=3').degree, 3);
+  assert.equal(parseState('?tops=1').tops, true);
+  assert.equal(parseState('?tops=yes').tops, false);
+  // Garbage falls back to the default field by field, as everything here does.
+  for (const bad of ['?degree=-1', '?degree=two', '?degree=1.5', '?degree=']) {
+    assert.equal(parseState(bad).degree, DEGREE_DEFAULT, bad);
+  }
+  // A floor the control does not offer is still honoured: the control is a
+  // convenience and the parameter is the state.
+  assert.equal(parseState('?degree=9').degree, 9);
+  assert.ok(DEGREE_CHOICES.includes(DEGREE_DEFAULT), 'the control can show the default');
 });

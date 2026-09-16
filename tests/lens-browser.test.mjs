@@ -423,7 +423,11 @@ test('a focus the reader wrote wins over the walk, and none turns the lens off',
 
       // And the parameter survives a step, which is the whole reason reading
       // mode writes it at all (state.js): everything else derived from the
-      // step is deliberately not in the address bar.
+      // step is deliberately not in the address bar. The card is drawn when
+      // the narrative's own shard lands, so the control is waited for and
+      // never assumed — it was null once in a full run and nowhere else.
+      await waitFor(page, 'return Boolean(document.querySelector(\'[data-action="narrative-step"][data-step="1"]\'));',
+        'the card to offer the next step');
       await page.eval('document.querySelector(\'[data-action="narrative-step"][data-step="1"]\').click(); return true;');
       await waitFor(page, "return new URLSearchParams(location.search).get('step') === '1';", 'the step to move');
       assert.equal(await page.eval("return new URLSearchParams(location.search).get('focus');"), focus,

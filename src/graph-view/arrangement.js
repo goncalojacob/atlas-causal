@@ -60,6 +60,9 @@ export function holdingKey(state) {
 // node — panning, zooming, selecting and walking all leave the key alone.
 export function arrangementKey(state, events, lanes, lens, margin = null, holding = '', foci = null) {
   const focus = lens === null ? '' : (foci ?? state.focus ?? '');
+  // What the graph draws, when it is the graph deciding: inside a lens the two
+  // filters are off and two states that differ only in them are one picture.
+  const filters = lens === null ? `${state.degree ?? 0}:${state.tops ? 1 : 0}` : '';
   // The layer list, whole and as it stands: since the glyph run a category
   // toggle removes events here as the lens does, and two arrangements of two
   // different sets of categories would otherwise key the same and the second
@@ -74,7 +77,39 @@ export function arrangementKey(state, events, lanes, lens, margin = null, holdin
   // set of events is then the whole of the arrangement.
   const membership = lanes.length === 0 ? '' : events.map((e) => at.get(e.id) ?? -1).join(',');
   const band = margin ? `${margin.from}:${margin.to}` : '';
-  return `${focus}|${layers}|${state.group}|${lanes.map((l) => l.id).join(',')}|${membership}|${band}|${holding}`;
+  return `${focus}|${filters}|${layers}|${state.group}|${lanes.map((l) => l.id).join(',')}|${membership}|${band}|${holding}`;
+}
+
+// How many active links an event has, both directions counted: the adjacency
+// holds only active edges between active events (graph.js), so this is the
+// degree the reader can actually see lines for.
+export function degreeOf(atlas, id) {
+  return (atlas.adjacency?.out.get(id)?.length ?? 0) + (atlas.adjacency?.in.get(id)?.length ?? 0);
+}
+
+// **What the graph draws, which is not everything** (M48 §3). 103 of the 250
+// active events have one edge or none and eight carry seven or more; a picture
+// of all of them is eight nodes a reader can read and two hundred they cannot.
+// Two filters, and they are not alternatives: at least `degree` active links,
+// and — for the hierarchy M42 brings — no parent.
+//
+// Three rules hold them honest:
+//
+//   * **neither applies inside a lens.** A reader who has focused has already
+//     said what they want to see, and a focus that then hid half its own
+//     answer would be the atlas arguing with them;
+//   * **neither may take away what the reader is holding.** The selected
+//     event, the walked chain, an open actor's events, an open narrative's
+//     walk — `held` is `emphasis.js`'s own answer, so walking to a hidden
+//     event brings it into the picture, which is what makes this a filter
+//     and not a deletion;
+//   * **neither is on any other view.** The map and the timeline draw the
+//     whole corpus as they did: an event the graph does not organise is still
+//     an event that happened somewhere on a day.
+export function organises(atlas, event, state, held = null) {
+  if (held?.has(event.id)) return true;
+  if (state.tops && event.parent) return false;
+  return degreeOf(atlas, event.id) >= (state.degree ?? 0);
 }
 
 // `held` is what the reader is holding — the graph's own `alone` set, which
@@ -89,7 +124,10 @@ export function arrangementOf(atlas, state, held = null, shown = undefined) {
   const view = lensView(atlas, state);
   const lens = view?.shown ?? null;
   const drawable = shown === undefined ? lens : shown;
-  const all = drawable ? atlas.activeEvents.filter((e) => drawable.has(e.id)) : atlas.activeEvents;
+  const kept = drawable ? atlas.activeEvents.filter((e) => drawable.has(e.id)) : atlas.activeEvents;
+  // Inside a lens the reader has already said what they want; outside it the
+  // graph draws what organises other events (`organises` above).
+  const all = view ? kept : kept.filter((e) => organises(atlas, e, state, held));
   const window = resolveWindow(state, atlas.extent, atlas.opens);
   // The window and one period either side, which is what the view draws
   // (window.js) and, since H4b, all it lays out. Laying out the whole corpus
