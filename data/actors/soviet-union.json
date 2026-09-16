@@ -42,7 +42,7 @@
   "names": [
     "Soviet Union"
   ],
-  "summary": "A polity whose inception Wikidata states as 1922-12-30 on Q15180 and whose dissolution it states as 1991-12-26. The same item carries a second inception, 1923-07-06, and that value is deprecated there, so this record takes the first and says so. Its name is the one CShapes’ own label for entity 365 — \"Russia (Soviet Union)\" — carried, and its territory is that entity’s: the dataset draws 24 periods for it between 1886 and 2019 under a single label covering three polities, and M52 gave this record the nineteen that run from the Russian Empire’s last period to 1991-12-20. Nine of those nineteen begin before 1922. CShapes draws that ground continuously and Wikidata names no polity holding it, so they are carried here and flagged rather than assigned to a record invented for them.",
+  "summary": "A polity whose inception Wikidata states as 1922-12-30 on Q15180 and whose dissolution it states as 1991-12-26. The same item carries a second inception, 1923-07-06, and that value is deprecated there, so this record takes the first and says so. Its name is its own and not CShapes’ label for entity 365, which reads \"Russia (Soviet Union)\" and covers three polities at once; its territory is that entity’s: the dataset draws 24 periods for it between 1886 and 2019 under a single label covering three polities, and M52 gave this record the nineteen that run from the Russian Empire’s last period to 1991-12-20. Nine of those nineteen begin before 1922. CShapes draws that ground continuously and Wikidata names no polity holding it, so they are carried here and flagged rather than assigned to a record invented for them.",
   "when": {
     "start": 1922,
     "end": 1991
