@@ -47,6 +47,24 @@ test(`every actor at the 1885/1886 seam is accounted for in ${SURVEY}`, () => {
     : undefined);
 });
 
+// The third invariant is about the table itself. The survey's verdict column
+// was open on every row until Wikidata was asked; it is now answered on every
+// row, and every answer names the item or items it rests on. What this refuses
+// is a row going back to "open", or one answered with prose that cites
+// nothing — a verdict without a QID against it is the guess this milestone
+// exists to avoid, whichever way it points.
+const pairRows = survey.split('\n').filter((line) => /^\| `[a-z0-9-]+` \| .* \| gwcode \d+ \| /.test(line));
+
+test(`every candidate pair in ${SURVEY} has a verdict, and it cites what it rests on`, () => {
+  assert.equal(pairRows.length, 26, 'the 26 candidate pairs section 2 found');
+  const unanswered = pairRows
+    .map((line) => ({ id: /^\| `([a-z0-9-]+)`/.exec(line)[1], verdict: line.split('|').at(-2).trim() }))
+    .filter(({ verdict }) => /^open\b/.test(verdict) || !/Q[1-9][0-9]*|nothing\*{0,2} survived|not a pair/.test(verdict));
+  assert.deepEqual(unanswered, [], unanswered.length
+    ? `${unanswered.length} row(s) carry no answered, cited verdict: ${unanswered.map((u) => u.id).join(', ')}`
+    : undefined);
+});
+
 // The second invariant is about what a split writes, and it holds vacuously
 // until one does: a succession whose two actors overlap is not a succession,
 // it is two records claiming the same ground at the same time. The 128
