@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "warumungu-1815",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "basemaps"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "world_1815.geojson, \"Warumungu\""
+    }
+  ],
+  "actor": "warumungu",
+  "presenceType": "polity",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1815,
+    "end": 1877,
+    "date": "1815-01-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1815-1877.json"
+    ],
+    "key": "warumungu"
+  },
+  "capital": null,
+  "confidence": "probable"
+}
