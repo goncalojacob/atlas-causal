@@ -8,20 +8,23 @@ The owner, 16 September, on seeing a chip reading **"Russia (Soviet Union)"**:
 This file is the survey that milestone was told to write before it changed a
 single record: every actor at the seam, both ids, both spans, and the verdict.
 
-**Every verdict in this file is still open, and the reason is stated once
-here.** The brief allows exactly one source for the dates this milestone
-turns on — Wikidata, P571 for inception and P576 for dissolution — and
-Wikidata cannot be reached from the sandbox the scheduled run executes in.
-The run of 16 September established that and wrote the rest of the survey
-around it; section 3 says what that run tried and what a person must do.
+**Every verdict in this file is now answered, and all 26 read "for a
+person".** That is the finding, not a failure to reach one. Wikidata was
+asked — on a GitHub runner, where it answers — about all 83 subjects in
+`docs/m49-subjects.txt`, and the replies are in `docs/m49-dates.md`, cited
+item by item. What they show is that **the question cannot be settled by
+asking Wikidata about the names these two datasets use.** Section 3 says
+exactly why, and section 4a writes out, pair by pair, what a person has to
+decide.
+
 No date in this file is supplied from anywhere else. That is not caution,
 it is the rule: `CLAUDE.md` forbids the assistant writing historical claims,
 and the brief repeats it as "**no invented date, ever — the whole milestone
 turns on this**".
 
-So what follows is the half of the survey that can be taken from the
-repository without asserting anything: what each dataset says, where the two
-meet, and, for each pair, the exact question that has to be put to Wikidata.
+So what follows is what can be said without asserting anything: what each
+dataset says, where the two meet, what Wikidata answered when asked, and what
+is left for a person.
 
 ## 1. The seam, measured
 
@@ -93,57 +96,97 @@ against the Malay entities (`perak`, `selangore`, `straits-settlements`,
 `unfederated-malay-states`). Pairing any of them is still a judgement, and
 the judgement is inseparable from the dates, so it waits with the rest.
 
-## 3. Why no verdict was written, and what a person must do
+## 3. What Wikidata answered, and why it does not settle the seam
 
-The run of 16 September, on the branch `m49`, reached Wikidata this way and
-failed:
+The blocker the run of 16 September recorded is gone. Wikidata is still
+refused at the scheduled run's egress proxy — `www.wikidata.org`,
+`query.wikidata.org` and `en.wikipedia.org` all return
+`CONNECT tunnel failed, response 403`, body `Host not in allowlist`, re-checked
+this day (deviation 731) — but the lookup no longer runs there. Brief
+amendment A4 authorises the route the survey listed second: a `--dates` mode on
+`tools/import/wikidata.mjs`, run by `.github/workflows/import-wikidata.yml` on
+a push to `import/dates-…`, **on a GitHub runner, where Wikidata answers**. It
+is a lookup and not an import: it creates no record, keeps no cursor and writes
+nothing under `data/`.
 
-```
-$ curl -sS "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q34&format=json"
-curl: (56) CONNECT tunnel failed, response 403
-```
+It ran. **83 subjects asked, 199 calls, 41 matched to exactly one item, 40 of
+those carrying a P571.** Everything it saw is in `docs/m49-dates.md`, including
+every item it threw out and why.
 
-Every Wikimedia host behaves the same way from this sandbox —
-`www.wikidata.org`, `query.wikidata.org`, `en.wikipedia.org`,
-`commons.wikimedia.org` all refuse at the egress proxy with
-`Host not in allowlist`. GitHub hosts answer normally, which is why the
-repository's own tooling works and this document could be written at all.
-The brief's amendment A3 states that "Wikidata is reachable from the cloud
-sandbox"; **for this environment that is not true**, and A3 is the assumption
-that has to be revisited rather than worked around.
+And the answers do not settle the seam. Three things came back, and each is a
+finding in its own right.
 
-Nothing on disk substitutes for it. `data/imports/wikidata-seeds.json` is a
-list of 703 QIDs and carries no claims; `tools/import/cache/` holds Wikipedia
-lead paragraphs only; no actor record in `data/actors/` carries a `wikidata`
-field at all — **0 of the 123 and 0 of the 128**. So there is no cached P571
-or P576 anywhere in the repository to read.
+**1. The names in these two datasets resolve to the modern states, whose
+inception is independence.** Thirteen of the 26 pairs matched — cleanly, the
+same single item from both sides — and in every one of them that item is the
+country as it exists now, dated from when it became sovereign:
+`Q262` Algeria P571 1962, `Q916` Angola 1975, `Q242` Belize 1981, `Q971` Congo
+1960, `Q712` Fiji 1970, `Q1000` Gabon 1960, `Q1019` Madagascar 1960, `Q233`
+Malta 1964, `Q1029` Mozambique 1975, `Q1041` Senegal 1960, `Q917` Bhutan 1907,
+`Q189` Iceland 1918. The thirteenth, `Q928` Philippines, is no better for a
+different reason: it carries **four** competing P571 values (1565, 1901-07-04,
+1935-11-15, 1946-07-04), which is a disagreement and not a date.
 
-**One of these unblocks the milestone.** They are listed in the order that
-costs the owner least:
+**Not one of those twelve inceptions is before 1885**, so not one
+of them can say what stood on that ground in 1885, or whether it stopped. An
+item whose life begins after the seam is evidence that the item is *not* the
+polity either record describes — a colony in 1878 and a colony in 1886 are not
+the sovereign state that replaced them. Reading "same name, no P576" as a join
+would assert that colonial Algeria and the Algerian Republic are one continuous
+actor from 1878 to today; the same reasoning would join the Russian Empire to
+the Russian Federation, which is the exact mistake the owner asked to have
+undone.
 
-1. **Allow the Wikimedia hosts in the environment's network policy** —
-   `www.wikidata.org` and `query.wikidata.org` are enough. The next scheduled
-   fire then answers the table itself, with no other change.
-2. **Fetch the dates on a GitHub runner**, where Wikidata is reachable, and
-   commit the answers. `.github/workflows/import-wikidata.yml` already runs
-   `tools/import/wikidata.mjs` against the live service on a push to an
-   `import/**` branch, under the protocol's amendment of 4 September. It has
-   no mode that fetches P571/P576 for a given list, so this costs a small new
-   mode — **which the brief's "no new import" forbids a run to write on its
-   own initiative**, and so needs the owner to say yes.
-3. **Answer the pairs by hand**, in this file, in the `verdict` column. The
-   tables below are laid out so that a person can do it a row at a time, and
-   a partly-answered file is worth having: whatever is filled in, the next
-   run carries out, and leaves the rest.
+**2. Where the seam records name a polity of their own period, the match is
+ambiguous — and the tool refused to break the tie.** `iran-persia` survived
+`Q794` (Iran) and `Q63158027` (Qajar Iran); `turkey-ottoman-empire` survived
+`Q43` and `Q12560`; `germany-prussia` survived `Q183`, `Q38872` and `Q27306`;
+`egypt-before-1886` and `egypt-under-united-kingdom` both survived `Q79` and
+`Q127861`. Two items surviving is not an answer that needs sharpening, it is
+the historical question itself — is the 1886 record the empire or the republic
+that followed it — and a string comparison must not be allowed to settle it.
 
-Until one of those happens, **no record is changed**. The joins, the splits,
-the successions and Russia all wait on dates, and a seam left honest is
-better than a seam closed by guesswork.
+**3. Four dates did come back, whole and cited, and every one of them
+contradicts the seam rather than confirming it.**
+
+| subject | item | P571 | P576 |
+|---|---|---|---|
+| `ottoman-empire` | [`Q12560`](https://www.wikidata.org/wiki/Q12560) Ottoman Empire | 1299-07-29 / 1300 / 1302-07-27 | **1922-11-17** |
+| `persia` | [`Q63158027`](https://www.wikidata.org/wiki/Q63158027) Qajar Iran | **1789** | **1925** |
+| `russian-empire` | [`Q34266`](https://www.wikidata.org/wiki/Q34266) Russian Empire | **1721-10-22** | **1917-09-01** |
+| `imperial-japan` | [`Q188712`](https://www.wikidata.org/wiki/Q188712) Empire of Japan | **1868-01-03** | **1947-05-03** |
+
+Each of those four polities began before 1885 and ended well after 1886. The
+records for them stop at 1885 because the Historical Basemaps import stopped
+extending its last snapshot, and nothing on the 1886 side picks any of them up
+under its own name. So these are the four places where the atlas is most
+plainly wrong — and still not places this run may act, because the record on
+the 1886 side that would receive the ground did not resolve to an item, so
+there is no evidence about *which* actor holds 1886 onward.
+
+**What a person has to supply is not a date; it is a subject.** The two
+datasets name "Algeria", "Egypt", "Turkey (Ottoman Empire)". The items that
+would settle the seam are the polities of that period — French Algeria, the
+Khedivate, the Empire as distinct from the Republic — and **those names are
+nowhere in this repository**, so nothing here may search for them: `--dates`
+refuses an alternate the record does not carry, by design, so that a run cannot
+introduce a name from nowhere and call the answer evidence. Add them to a
+record's `names`, or write the QID pair into section 4a by hand, and the next
+fire answers the rest without asking anything else.
+
+Until then, **no record is changed**. The joins, the splits, the successions
+and Russia all wait on that, and a seam left honest is better than a seam
+closed by guesswork.
 
 ## 4. The 26 candidate pairs
 
-The `verdict` for every row is **open — awaiting Wikidata**. What has to be
-asked of Wikidata is the same three questions each time: the QID of the
+Wikidata has now been asked about every row, and **the `verdict` for every one
+of the 26 is "for a person"** — with, in each cell, the item or items the
+lookup saw and the property the verdict rests on. Section 4a sorts them into
+the four kinds of question they actually are, and section 3 says why none of
+them came out otherwise.
+
+The three questions put to Wikidata were the same each time: the QID of the
 1885-side subject, the QID of the 1886-side subject, and whether P571/P576 on
 those items put an end between them. If they are one subject, the two records
 are **joined** — one record spanning both periods, the other merged with
@@ -156,34 +199,86 @@ assigned to whoever held that ground then.
 
 | 1885-side id | name | span | 1886-side id | name | span | CShapes locator | verdict |
 |---|---|---|---|---|---|---|---|
-| `algeria-fr` | Algeria (FR) | 1878–1885 | `algeria-under-france` | Algeria under France | 1886–1962 | gwcode 615 | open — awaiting Wikidata |
-| `angola-portugal` | Angola (Portugal) | 1878–1885 | `angola-under-portugal` | Angola under Portugal | 1886–1975 | gwcode 540 | open — awaiting Wikidata |
-| `annam` | Annam | 1815–1885 | `vietnam-annam-cochin-china-tonkin` | Vietnam (Annam/Cochin China/Tonkin) | 1886–1954 | gwcode 815 | open — awaiting Wikidata |
-| `belize-before-1886` | Belize | 1650–1885 | `belize-under-united-kingdom` | Belize under United Kingdom | 1886–1981 | gwcode 80 | open — awaiting Wikidata |
-| `bhutan-before-1886` | Bhutan | 1650–1885 | `bhutan-under-united-kingdom` | Bhutan under United Kingdom | 1886–1948 | gwcode 760 | open — awaiting Wikidata |
-| `congo-before-1886` | Congo | 1492–1885 | `congo-under-france` | Congo under France | 1886–1960 | gwcode 484 | open — awaiting Wikidata |
-| `egypt-before-1886` | Egypt | 1715–1885 | `egypt-under-united-kingdom` | Egypt under United Kingdom | 1886–1922 | gwcode 651 | open — awaiting Wikidata |
-| `fiji-before-1886` | Fiji | 1878–1885 | `fiji-under-united-kingdom` | Fiji under United Kingdom | 1886–1970 | gwcode 950 | open — awaiting Wikidata |
-| `gabon-before-1886` | Gabon | 1878–1885 | `gabon-under-france` | Gabon under France | 1886–1960 | gwcode 481 | open — awaiting Wikidata |
-| `germany` | Germany | 1878–1885 | `germany-prussia` | Germany (Prussia) | 1886–1945 | gwcode 255 | open — awaiting Wikidata |
-| `harer-egypt` | Harer (Egypt) | 1878–1885 | `egypt-under-united-kingdom` | Egypt under United Kingdom | 1886–1922 | gwcode 651 | open — awaiting Wikidata |
-| `iceland-before-1886` | Iceland | 1878–1885 | `iceland-under-denmark` | Iceland under Denmark | 1886–1942 | gwcode 395 | open — awaiting Wikidata |
-| `italy` | Italy | 1878–1885 | `italy-sardinia` | Italy/Sardinia | 1886–open | gwcode 325 | open — awaiting Wikidata |
-| `madagascar` | Madagascar | 1400–1885 | `madagascar-malagasy` | Madagascar (Malagasy) | 1886–open | gwcode 580 | open — awaiting Wikidata |
-| `malta-before-1886` | Malta | 1878–1885 | `malta-under-united-kingdom` | Malta under United Kingdom | 1886–1964 | gwcode 338 | open — awaiting Wikidata |
-| `mozambique-before-1886` | Mozambique | 1878–1885 | `mozambique-under-portugal` | Mozambique under Portugal | 1886–1975 | gwcode 541 | open — awaiting Wikidata |
-| `new-south-wales-uk` | New South Wales (UK) | 1878–1885 | `new-south-wales` | New South Wales | 1886–1900 | gwcode 901 | open — awaiting Wikidata |
-| `ottoman-empire` | Ottoman Empire | 1400–1885 | `turkey-ottoman-empire` | Turkey (Ottoman Empire) | 1886–open | gwcode 640 | open — awaiting Wikidata |
-| `persia` | Persia | 1783–1885 | `iran-persia` | Iran (Persia) | 1886–open | gwcode 630 | open — awaiting Wikidata |
-| `philippines-before-1886` | Philippines | 1492–1885 | `philippines-under-united-states-of-america` | Philippines under United States of America | 1886–1946 | gwcode 840 | open — awaiting Wikidata |
-| `queensland-uk` | Queensland (UK) | 1878–1885 | `queensland` | Queensland | 1886–1900 | gwcode 905 | open — awaiting Wikidata |
-| `senegal-fr` | Senegal (FR) | 1878–1885 | `senegal-under-france` | Senegal under France | 1886–1959 | gwcode 433 | open — awaiting Wikidata |
-| `sierra-leone-before-1886` | Sierra Leone | 1815–1885 | `sierra-leone-under-united-kingdom` | Sierra Leone under United Kingdom | 1886–1961 | gwcode 451 | open — awaiting Wikidata |
-| `south-australia-uk` | South Australia (UK) | 1878–1885 | `south-australia` | South Australia | 1886–1900 | gwcode 903 | open — awaiting Wikidata |
-| `victoria-uk` | Victoria (UK) | 1878–1885 | `victoria` | Victoria | 1886–1900 | gwcode 904 | open — awaiting Wikidata |
-| `western-australia-uk` | Western Australia (UK) | 1878–1885 | `western-australia` | Western Australia | 1886–1900 | gwcode 902 | open — awaiting Wikidata |
+| `algeria-fr` | Algeria (FR) | 1878–1885 | `algeria-under-france` | Algeria under France | 1886–1962 | gwcode 615 | for a person — both ids → [`Q262`](https://www.wikidata.org/wiki/Q262), P571 1962-07-05 and 1962-07-03; the item is the modern state and its inception is after the seam |
+| `angola-portugal` | Angola (Portugal) | 1878–1885 | `angola-under-portugal` | Angola under Portugal | 1886–1975 | gwcode 540 | for a person — both ids → [`Q916`](https://www.wikidata.org/wiki/Q916), P571 1975-11-11 and 1992-08-25; the item is the modern state and its inception is after the seam |
+| `annam` | Annam | 1815–1885 | `vietnam-annam-cochin-china-tonkin` | Vietnam (Annam/Cochin China/Tonkin) | 1886–1954 | gwcode 815 | for a person — `annam` survived 3 items (`Q430309`, `Q1034173`, `Q10841085`) and `vietnam-annam-cochin-china-tonkin` 4; neither came down to one |
+| `belize-before-1886` | Belize | 1650–1885 | `belize-under-united-kingdom` | Belize under United Kingdom | 1886–1981 | gwcode 80 | for a person — both ids → [`Q242`](https://www.wikidata.org/wiki/Q242), P571 1981-09-21; the item is the modern state and its inception is after the seam |
+| `bhutan-before-1886` | Bhutan | 1650–1885 | `bhutan-under-united-kingdom` | Bhutan under United Kingdom | 1886–1948 | gwcode 760 | for a person — both ids → [`Q917`](https://www.wikidata.org/wiki/Q917), P571 1907-12-17 and 1949-08-08; both are after the seam |
+| `congo-before-1886` | Congo | 1492–1885 | `congo-under-france` | Congo under France | 1886–1960 | gwcode 484 | for a person — both ids → [`Q971`](https://www.wikidata.org/wiki/Q971) "Republic of the Congo", P571 1960; the item is the modern state and its inception is after the seam |
+| `egypt-before-1886` | Egypt | 1715–1885 | `egypt-under-united-kingdom` | Egypt under United Kingdom | 1886–1922 | gwcode 651 | for a person — both ids survived 2 items, `Q79` and `Q127861`; neither side came down to one |
+| `fiji-before-1886` | Fiji | 1878–1885 | `fiji-under-united-kingdom` | Fiji under United Kingdom | 1886–1970 | gwcode 950 | for a person — both ids → [`Q712`](https://www.wikidata.org/wiki/Q712), P571 1970; the item is the modern state and its inception is after the seam |
+| `gabon-before-1886` | Gabon | 1878–1885 | `gabon-under-france` | Gabon under France | 1886–1960 | gwcode 481 | for a person — both ids → [`Q1000`](https://www.wikidata.org/wiki/Q1000), P571 1960; the item is the modern state and its inception is after the seam |
+| `germany` | Germany | 1878–1885 | `germany-prussia` | Germany (Prussia) | 1886–1945 | gwcode 255 | for a person — `germany` → [`Q183`](https://www.wikidata.org/wiki/Q183), which carries **seven** P571 values (800, 843 read as 641, 1867-07-01, 1871-01-01, 1918, 1933, 1949-05-23); `germany-prussia` survived 3 items (`Q183`, `Q38872`, `Q27306`) |
+| `harer-egypt` | Harer (Egypt) | 1878–1885 | `egypt-under-united-kingdom` | Egypt under United Kingdom | 1886–1922 | gwcode 651 | for a person, and **not a pair** — the match is the false one §2 names; `harer-egypt` survived `Q79` and `Q127861` on the token "Egypt" alone |
+| `iceland-before-1886` | Iceland | 1878–1885 | `iceland-under-denmark` | Iceland under Denmark | 1886–1942 | gwcode 395 | for a person — both ids → [`Q189`](https://www.wikidata.org/wiki/Q189), P571 1918-12-01 and 1944-06-17; both are after the seam |
+| `italy` | Italy | 1878–1885 | `italy-sardinia` | Italy/Sardinia | 1886–open | gwcode 325 | for a person — `italy` survived 4 items (`Q38`, `Q172579`, `Q223936`, `Q838931`) and `italy-sardinia` none; the label "Italy/Sardinia" matches nothing on Wikidata |
+| `madagascar` | Madagascar | 1400–1885 | `madagascar-malagasy` | Madagascar (Malagasy) | 1886–open | gwcode 580 | for a person — both ids → [`Q1019`](https://www.wikidata.org/wiki/Q1019), P571 1960; the item is the modern state and its inception is after the seam |
+| `malta-before-1886` | Malta | 1878–1885 | `malta-under-united-kingdom` | Malta under United Kingdom | 1886–1964 | gwcode 338 | for a person — both ids → [`Q233`](https://www.wikidata.org/wiki/Q233), P571 1964-09-21; the item is the modern state and its inception is after the seam |
+| `mozambique-before-1886` | Mozambique | 1878–1885 | `mozambique-under-portugal` | Mozambique under Portugal | 1886–1975 | gwcode 541 | for a person — both ids → [`Q1029`](https://www.wikidata.org/wiki/Q1029), P571 1975-06-25; the item is the modern state and its inception is after the seam |
+| `new-south-wales-uk` | New South Wales (UK) | 1878–1885 | `new-south-wales` | New South Wales | 1886–1900 | gwcode 901 | for a person — **nothing** survived on either side; "New South Wales" returns no item the class table types as a polity |
+| `ottoman-empire` | Ottoman Empire | 1400–1885 | `turkey-ottoman-empire` | Turkey (Ottoman Empire) | 1886–open | gwcode 640 | for a person — but the one date here is real: `ottoman-empire` → [`Q12560`](https://www.wikidata.org/wiki/Q12560), P571 1299-07-29/1300/1302-07-27, **P576 1922-11-17**. `turkey-ottoman-empire` survived `Q43` and `Q12560` and came down to neither |
+| `persia` | Persia | 1783–1885 | `iran-persia` | Iran (Persia) | 1886–open | gwcode 630 | for a person — but the one date here is real: `persia` → [`Q63158027`](https://www.wikidata.org/wiki/Q63158027) "Qajar Iran", **P571 1789, P576 1925**. `iran-persia` survived `Q794` and `Q63158027` and came down to neither |
+| `philippines-before-1886` | Philippines | 1492–1885 | `philippines-under-united-states-of-america` | Philippines under United States of America | 1886–1946 | gwcode 840 | for a person — both ids → [`Q928`](https://www.wikidata.org/wiki/Q928), which carries **four** P571 values (1565, 1901-07-04, 1935-11-15, 1946-07-04) and no P576 |
+| `queensland-uk` | Queensland (UK) | 1878–1885 | `queensland` | Queensland | 1886–1900 | gwcode 905 | for a person — **nothing** survived on either side |
+| `senegal-fr` | Senegal (FR) | 1878–1885 | `senegal-under-france` | Senegal under France | 1886–1959 | gwcode 433 | for a person — both ids → [`Q1041`](https://www.wikidata.org/wiki/Q1041), P571 1960; the item is the modern state and its inception is after the seam |
+| `sierra-leone-before-1886` | Sierra Leone | 1815–1885 | `sierra-leone-under-united-kingdom` | Sierra Leone under United Kingdom | 1886–1961 | gwcode 451 | for a person — both ids survived 2 items, `Q1044` and `Q14920623`; neither side came down to one |
+| `south-australia-uk` | South Australia (UK) | 1878–1885 | `south-australia` | South Australia | 1886–1900 | gwcode 903 | for a person — **nothing** survived on either side |
+| `victoria-uk` | Victoria (UK) | 1878–1885 | `victoria` | Victoria | 1886–1900 | gwcode 904 | for a person — **nothing** survived on either side |
+| `western-australia-uk` | Western Australia (UK) | 1878–1885 | `western-australia` | Western Australia | 1886–1900 | gwcode 902 | for a person — **nothing** survived on either side |
 `harer-egypt` is the false pair named in section 2; it is listed because the
 matcher produced it, not because it is one.
+
+## 4a. The question, pair by pair
+
+Every verdict above is "for a person". They are not all the same question, and
+a person answering them one at a time should know which kind each is. Four
+kinds, and what each needs.
+
+**A — the item is the modern state (13 pairs):** `algeria`, `angola`, `belize`,
+`bhutan`, `congo`, `fiji`, `gabon`, `iceland`, `madagascar`, `malta`,
+`mozambique`, `philippines`, `senegal`.
+
+> *The question:* which Wikidata item is the polity on each side — French
+> Algeria rather than Algeria, the Colony of Fiji rather than Fiji? Both
+> records matched the modern state, whose P571 is its independence, and an
+> item that begins in 1962 says nothing about 1885. **What to write here** is
+> the QID for the 1885-side subject and the QID for the 1886-side subject; if
+> they are the same item and its P571 is before 1885 with no P576 before 1886,
+> the pair is a **join**, and if they are two items whose P576 and P571 meet,
+> it is a **split**. Adding the period name to the record's `names` is enough
+> for `--dates` to find it on the next run, because the tool will only search
+> for a name the record carries.
+
+**B — two items survived and the tie is the history (7 pairs):** `annam` /
+`vietnam-…`, `egypt-before-1886` / `egypt-under-united-kingdom`, `germany` /
+`germany-prussia`, `italy` / `italy-sardinia`, `ottoman-empire` /
+`turkey-ottoman-empire`, `persia` / `iran-persia`, and
+`sierra-leone-before-1886` / `sierra-leone-under-united-kingdom`.
+
+> *The question:* of the items the search returned, which one is this record?
+> `iran-persia` survived `Q794` (Iran) and `Q63158027` (Qajar Iran); choosing
+> between them *is* the decision of whether the 1886 record is the Qajar state
+> or the modern one, and no string comparison may make it. **What to write
+> here** is one QID per side. The candidates, with everything the tool threw
+> out and why, are under each id in `docs/m49-dates.md`.
+
+**C — nothing survived (5 pairs):** the Australian colonies,
+`new-south-wales`, `queensland`, `south-australia`, `victoria` and
+`western-australia`.
+
+> *The question:* are these actors at all, in this atlas's sense? Nothing the
+> search returned is typed as a polity by
+> `data/imports/wikidata-seeds.json` → `classes`, which is the repository's own
+> editorial table. Either they are subnational and the pair is a different kind
+> of question, or the class table needs a class it does not have. **What to
+> write here** is which, and that is an editorial decision, not a date.
+
+**D — not a pair at all (1):** `harer-egypt` / `egypt-under-united-kingdom`.
+
+> Section 2 named it as the matcher's false pair and the lookup agrees: the
+> only reason the two ever met is the token "Egypt". **What to write here** is
+> that it is struck, and what `harer-egypt` should be paired with instead, if
+> anything.
 
 ## 5. The 97 on the 1885 side with no name match
 
@@ -413,23 +508,101 @@ periods of territorial validity, from 1886 to where the dataset stops, in
 
 What the brief asks for is three actors and two successions: the Empire, the
 Soviet Union and the Federation, with the territory divided between them and
-the presences moved. **Three of the four dates that needs are historical
-claims**, and the two successions are dated events in their own right. Not one
-of them may come from the assistant, and Wikidata is the only source the brief
-allows. So Russia is where this milestone would have started changing records,
-and it is the clearest illustration of why it stopped instead.
+the presences moved. The lookup was asked for all three — `russian-empire`,
+and `russia-soviet-union` three times: as its label stands and once for each
+of the two names that label itself contains. **Two of the three came back, and
+the third did not.**
 
-The 24 territorial periods on `gwcode 365` are on disk and do not need
-Wikidata; they are what the presences will be divided along once the two
-boundary dates are known.
+| subject | item | P571 inception | P576 dissolved |
+|---|---|---|---|
+| `russian-empire` | [`Q34266`](https://www.wikidata.org/wiki/Q34266) Russian Empire | **1721-10-22** (day) | **1917-09-01** (day) |
+| `russia-soviet-union` narrowed to "Soviet Union" | [`Q15180`](https://www.wikidata.org/wiki/Q15180) Soviet Union | **1922-12-30** (day); 1923-07-06 (day) | **1991-12-26** (day) |
+| `russia-soviet-union` narrowed to "Russia" | — | — | — |
+| `russia-soviet-union` as it stands | — | — | — |
 
-## 8. What the next run should do
+The Federation is the one that did not. Narrowed to "Russia" the search
+survived two items, `Q159` and `Q34266`, and the tool refused to choose — which
+is correct, because "Russia" names both the Federation and the Empire, and
+picking is the judgement. Taken whole, "Russia (Soviet Union)" survived three,
+`Q159`, `Q34266` and `Q15180`: that is the conflation the owner saw, shown from
+the outside by a tool that has no way to resolve it either.
 
-1. Re-test egress first — one `curl` to `https://www.wikidata.org/w/api.php`.
-   If it answers, the blocker is gone: fill in section 4 row by row, commit in
-   batches, and carry on into the joins.
-2. If it still refuses, **do not start over and do not widen the matching into
-   a judgement**. Check whether a person has filled in verdicts here; carry out
-   whatever is filled in and leave the rest.
-3. Do not touch a record while the verdict column reads "open". Rule 11 makes
-   a half-done join a hard error, and there is no deadline here worth that.
+**So the split cannot be written, and here is exactly what is missing.**
+
+- **The Federation has no QID and no P571 here.** Its `when.start` would have
+  to come from somewhere, and the only candidate in hand is `Q15180`'s P576,
+  1991-12-26 — the Union's dissolution, which is not the Federation's
+  inception. Writing one as the other is an inference, and the brief's "no
+  invented date, ever" outranks finishing.
+- **The Empire's dates and the Union's do not meet.** `Q34266` ends 1917-09-01
+  and `Q15180` begins 1922-12-30. Five years stand between them, and a
+  `succeeded` relation whose two actors leave a gap is a claim about what held
+  that ground — the fourth actor this milestone was not asked to invent. What
+  a person decides here is whether the gap gets a record or the relation spans
+  it.
+- **`Q15180` carries two inceptions**, 1922-12-30 and 1923-07-06, which is the
+  treaty and the constitution. One of them has to be chosen, and the choice is
+  a person's.
+
+What a person writes here is three QIDs and, for the middle one, which P571.
+Then the presences follow mechanically: the 24 territorial periods on
+`gwcode 365` are on disk, need no source, and are what the ground is divided
+along once the boundary dates are settled.
+
+## 8. What the lookup found beyond the 26
+
+The subject list also asked about the pairs section 2 said a person should
+start from. **None of them is a candidate pair and this run pairs none of
+them** — the judgement stays where section 2 left it. They are recorded here
+because a dated item beside an id is what a person needs in front of them.
+
+| id | item | P571 | P576 |
+|---|---|---|---|
+| `imperial-japan` | [`Q188712`](https://www.wikidata.org/wiki/Q188712) Empire of Japan | 1868-01-03 | 1947-05-03 |
+| `netherlands-indies` **and** `dutch-east-indies` | [`Q188161`](https://www.wikidata.org/wiki/Q188161) Dutch East Indies | 1800-01-01 | 1945-08-17; 1949-12-27 |
+| `united-kingdom-of-great-britain-and-ireland` | [`Q174193`](https://www.wikidata.org/wiki/Q174193) | 1801-01-01 | 1927-04-12 |
+| `ceylon` | [`Q2670092`](https://www.wikidata.org/wiki/Q2670092) Dominion of Ceylon | 1948-02-04 | 1972-05-22 |
+| `thailand` | [`Q869`](https://www.wikidata.org/wiki/Q869) | 1768-12-28; 1238 | — |
+| `brazil` | [`Q155`](https://www.wikidata.org/wiki/Q155) | 1822-09-07; 1549 | — |
+| `rumania` | [`Q218`](https://www.wikidata.org/wiki/Q218) Romania | 1330 | — |
+| `bosnia-herzegovina-before-1886` | [`Q225`](https://www.wikidata.org/wiki/Q225) | 1992-03-06 | — |
+| `sweden` | [`Q34`](https://www.wikidata.org/wiki/Q34) | **none** | — |
+
+`manchu-empire`, `china`, `japan`, `rattanakosin-kingdom`,
+`kingdom-of-brazil`, `british-raj`, `british-india`, `romania`,
+`sri-lanka-ceylon-under-united-kingdom`, `bosnia`, `herzegovina`,
+`sweden-norway`, `united-kingdom`, `malaya`, `perak`, `selangore`,
+`straits-settlements` and `unfederated-malay-states` all came back doubtful;
+their candidates are in `docs/m49-dates.md`.
+
+Two rows there are worth a person's eye before the rest. **`netherlands-indies`
+and `dutch-east-indies` resolved, independently, to the same item, and that
+item spans the seam**: P571 1800-01-01 is before 1885 and every P576 is after
+1886. That is the one pair in all 83 subjects whose evidence points at a join
+— and it is not one of the 26, its two P576 values disagree, and pairing it was
+always listed as a judgement, so it waits for a person to say yes. **`sweden`
+carries no P571 at all**, which is worth knowing before anyone asks Wikidata to
+settle `sweden-norway`.
+
+## 9. What the next run should do
+
+The lookup is done and there is nothing left a run can ask. What remains needs
+a person, and until it comes **no record is changed**.
+
+1. **Read section 4a.** It sorts the 26 into four kinds and says what each one
+   needs. Kinds A and B need one QID per side; kind C needs an editorial answer
+   about `data/imports/wikidata-seeds.json` → `classes`; kind D needs striking.
+2. **Section 7 is Russia**, which is the owner's own example and where a
+   decision buys the most: three QIDs and, for the Soviet Union, which of its
+   two P571 values.
+3. **The cheapest way to answer is to give a record the period name.**
+   `--dates` searches only for names a record carries, on purpose, so adding
+   "French Algeria" to `algeria-under-france`'s `names` is enough to let the
+   next `import/dates-…` run answer that row by itself. Writing the QID pair
+   into section 4a by hand does the same.
+4. **Do not start over, and do not widen the matching into a judgement.** The
+   survey, the lookup and the verdicts stand; carry out whatever a person has
+   filled in and leave the rest.
+5. **Do not touch a record while its verdict reads "for a person".** Rule 11
+   makes a half-done join a hard error, and there is no deadline here worth
+   that.
