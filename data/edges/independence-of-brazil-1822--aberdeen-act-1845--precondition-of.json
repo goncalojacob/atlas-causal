@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "independence-of-brazil-1822--aberdeen-act-1845--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Independence of Brazil\", revision 1373868391"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Aberdeen Act\", revision 1371318387"
+    }
+  ],
+  "from": "independence-of-brazil-1822",
+  "to": "aberdeen-act-1845",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Independence turned an obligation between Britain and Portugal into one between Britain and Brazil, and it did so on British terms: recognition was the thing Brazil needed and the convention of 1826 on the abolition of the trade is what it cost. The Act of 1845 is legislation against a state that exists, over a convention that state signed, and neither the state nor the convention exists without 1822.",
+  "dispute": null
+}

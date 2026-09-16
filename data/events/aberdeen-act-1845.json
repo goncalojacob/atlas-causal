@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "aberdeen-act-1845",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Aberdeen Act\", revision 1371318387"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eusébio de Queirós Law\", revision 1368931242"
+    }
+  ],
+  "title": "The Aberdeen Act",
+  "summary": "An act of the United Kingdom Parliament of 9 August 1845, formally the Slave Trade (Brazil) Act, which authorised the Royal Navy to treat Brazilian slave ships as pirates and to seize them, and put their crews before British admiralty courts. It followed the lapse of the Anglo-Brazilian convention of 1826 on the abolition of the trade, and Brazilian historiography reads it also as retaliation for the Alves Branco tariff of 1844. Its first effect was the opposite of its intention: Brazilian buyers imported as fast as they could while they still might, and the greatest number of arrivals in the whole history of the traffic falls in 1847 to 1849.",
+  "when": {
+    "start": 1845,
+    "end": 1845,
+    "date": "1845-08-09"
+  },
+  "place": "london",
+  "actors": [],
+  "names": [
+    "Slave Trade (Brazil) Act 1845",
+    "Bill Aberdeen"
+  ]
+}

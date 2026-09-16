@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "aberdeen-act-1845--eusebio-de-queiros-law-1850--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eusébio de Queirós Law\", revision 1368931242"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Aberdeen Act\", revision 1371318387"
+    }
+  ],
+  "from": "aberdeen-act-1845",
+  "to": "eusebio-de-queiros-law-1850",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The sources put the two together and put the resentment on the record: the government was against the British pressure — the seizure of Brazilian ships by British warships — and legislated under it anyway, five years after the Act and this time with enforcement behind the text. The law of 1831 had been a dead letter for nineteen years; what changed between 1831 and 1850 was not Brazilian opinion about slavery, which did not change until much later, but the cost of continuing.",
+  "dispute": null
+}

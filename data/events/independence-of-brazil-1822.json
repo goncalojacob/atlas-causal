@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "independence-of-brazil-1822",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Independence of Brazil\", revision 1373868391"
+    }
+  ],
+  "title": "The independence of Brazil",
+  "summary": "On 7 September 1822, beside the Ipiranga brook outside São Paulo, the prince regent Pedro of Braganza declared Brazil separate from Portugal. The break had been building since the court sailed home: the liberal revolution of 1820 called the king back to Lisbon, the Portuguese Cortes set about returning Brazil to colonial status and demoting Pedro to a military commander, and he stayed and rebelled instead. The war had begun the year before with the expulsion of Portuguese troops from Pernambuco, and fighting continued in Bahia, Piauí, Maranhão, Grão-Pará and the Cisplatina. Portugal recognised the separation by the Treaty of Rio de Janeiro in 1825. Alone among the American colonies of Iberia, Brazil came out of it in one piece and under a monarch.",
+  "when": {
+    "start": 1822,
+    "end": 1822,
+    "date": "1822-09-07"
+  },
+  "place": "ipiranga",
+  "actors": [],
+  "names": [
+    "Independência do Brasil",
+    "Grito do Ipiranga"
+  ]
+}

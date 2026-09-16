@@ -40,3 +40,16 @@ justification in the first place.
 | `the-brazilian-sugar-cycle--dutch-brazil-1630-1654--caused` | probable | `wikipedia-en`, `wikipedia-en` | the Company came for the sugar coast and wrecked it in holding it |
 | `the-atlantic-slave-trade-to-brazil--the-brazilian-gold-cycle--enabled` | probable | `wikipedia-en`, `wikipedia-en` | half a million enslaved Africans in the mining region against 400,000 Portuguese |
 | `the-brazilian-gold-cycle--transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--caused` | probable | `wikipedia-en`, `wikipedia-en` | the capital followed the gold to the harbour it shipped from |
+| `the-brazilian-gold-cycle--transfer-of-the-portuguese-court-to-brazil-1807--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | the court fled to the richest colony, and the mines are what had made it rich |
+| `transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--transfer-of-the-portuguese-court-to-brazil-1807--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | the capital the court moved into had been made a capital forty-four years earlier |
+| `transfer-of-the-portuguese-court-to-brazil-1807--strangford-treaty-1810--caused` | probable | `wikipedia-en`, `wikipedia-en` | the navy that carried the court was paid in tariffs and an abolition clause |
+| `transfer-of-the-portuguese-court-to-brazil-1807--independence-of-brazil-1822--caused` | probable | `wikipedia-en`, `wikipedia-en` | a colony that had been the seat of the empire would not be a colony again |
+| `strangford-treaty-1810--aberdeen-act-1845--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | the 1845 Act enforces a promise first given in 1810 and inherited in 1826 |
+| `independence-of-brazil-1822--aberdeen-act-1845--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | there is no Anglo-Brazilian convention to lapse until there is a Brazil |
+| `the-atlantic-slave-trade-to-brazil--aberdeen-act-1845--caused` | probable | `wikipedia-en`, `wikipedia-en` | a trade that would not stop under Brazilian law was stopped under British guns |
+| `aberdeen-act-1845--eusebio-de-queiros-law-1850--caused` | probable | `wikipedia-en`, `wikipedia-en` | five years of seizures, and then the law of 1831 was re-enacted and meant |
+| `eusebio-de-queiros-law-1850--lei-aurea-1888--caused` | probable | `wikipedia-en`, `wikipedia-en` | an institution that could not be resupplied took thirty-eight years to die |
+| `the-atlantic-slave-trade-to-brazil--lei-aurea-1888--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | what the Golden Law abolished is the thing three centuries of landings had made |
+| `lei-aurea-1888--proclamation-of-the-brazilian-republic-1889--caused` | probable | `wikipedia-en`, `wikipedia-en` | abolition without compensation cost the Empire the class that had held it up |
+| `the-atlantic-slave-trade-to-brazil--proclamation-of-the-brazilian-republic-1889--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | the class the Empire rested on is the class the traffic created |
+| `proclamation-of-the-brazilian-republic-1889--the-1930-revolution-and-the-vargas-era--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | the Old Republic is the thing 1930 overthrew, and 1889 is what made it |

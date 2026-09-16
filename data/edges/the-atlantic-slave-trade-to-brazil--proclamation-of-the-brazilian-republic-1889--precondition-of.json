@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-atlantic-slave-trade-to-brazil--proclamation-of-the-brazilian-republic-1889--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Proclamation of the Republic (Brazil)\", revision 1370705081"
+    }
+  ],
+  "from": "the-atlantic-slave-trade-to-brazil",
+  "to": "proclamation-of-the-brazilian-republic-1889",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "A different claim from the one above it, and worth keeping apart from it. That edge says abolition was the trigger; this one says what the Empire was standing on. The political base of the monarchy was a slaveholding agrarian elite, and that class is the traffic’s product: it existed in that form, on that scale, because five and a half million people had been landed to work for it. The Republic of 1889 is the political form that followed the removal of that base, which is a statement about 1540 as much as about 1888.",
+  "dispute": null
+}

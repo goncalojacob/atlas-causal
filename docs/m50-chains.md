@@ -70,7 +70,7 @@ Centre: `the-atlantic-slave-trade-to-brazil`.
 | `the-british-industrial-revolution` | shared |
 | `transfer-of-the-portuguese-court-to-brazil-1807` | |
 | `slave-trade-act-1807` | shared |
-| `anglo-portuguese-treaty-of-1810` | |
+| `strangford-treaty-1810` | |
 | `independence-of-brazil-1822` | |
 | `aberdeen-act-1845` | |
 | `eusebio-de-queiros-law-1850` | |

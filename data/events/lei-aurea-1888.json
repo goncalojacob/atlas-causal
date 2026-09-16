@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "lei-aurea-1888",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lei Áurea\", revision 1368931269"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    }
+  ],
+  "title": "The Lei Áurea",
+  "summary": "Law No. 3,353 of 13 May 1888, signed by Isabel, Princess Imperial, as regent for Pedro II, abolished slavery in Brazil outright and without compensation to the owners. It came after two laws that had abolished it by instalments — the Rio Branco Law of 1871, freeing children born to enslaved mothers, and the Saraiva-Cotegipe Law of 1885, freeing those who reached sixty — and after the institution had already begun to be replaced by European immigrant labour. Brazil was the last country in the Americas to do it.",
+  "when": {
+    "start": 1888,
+    "end": 1888,
+    "date": "1888-05-13"
+  },
+  "place": "rio-de-janeiro",
+  "actors": [],
+  "names": [
+    "Golden Law",
+    "Law No. 3,353 of 1888"
+  ]
+}

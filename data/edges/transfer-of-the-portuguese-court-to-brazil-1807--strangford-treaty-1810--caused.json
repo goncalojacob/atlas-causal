@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "transfer-of-the-portuguese-court-to-brazil-1807--strangford-treaty-1810--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Transfer of the Portuguese court to Brazil\", revision 1373720625"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Strangford Treaty\", revision 1329682227"
+    }
+  ],
+  "from": "transfer-of-the-portuguese-court-to-brazil-1807",
+  "to": "strangford-treaty-1810",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Britain escorted the Braganzas across the Atlantic and then presented the bill. The ports had been opened to friendly nations at Salvador in January 1808, which the sources read as one of the ways John found to repay British assistance; the treaty of 1810 turned that into a rate — fifteen per cent on British goods, below what Portugal itself paid — and into a standing obligation. A government in exile in its own colony, defended by somebody else’s navy, is the condition under which those terms were signable, and it is the transfer that produced it.",
+  "dispute": null
+}

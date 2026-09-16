@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "the-1930-revolution-and-the-vargas-era",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolution of 1930\", revision 1373816376"
+    }
+  ],
+  "title": "The Revolution of 1930 and the Vargas era",
+  "summary": "The Old Republic was run by an alliance of São Paulo and Minas Gerais that passed the presidency between them. In 1929 Washington Luís broke the arrangement by naming a second paulista as his successor; Minas Gerais, Rio Grande do Sul and Paraíba answered with a Liberal Alliance behind Getúlio Vargas, called the March 1930 election fraudulent, and rose on 3 October after the assassination of Vargas’s running mate. The armed insurrection ended the four-decade oligarchy, put Vargas in the presidency in place of the man who had won, and began the fifteen years of his rule.",
+  "when": {
+    "start": 1930,
+    "end": 1945,
+    "date": "1930-10-03"
+  },
+  "place": "rio-de-janeiro",
+  "actors": [],
+  "names": [
+    "Revolução de 1930",
+    "Era Vargas"
+  ]
+}

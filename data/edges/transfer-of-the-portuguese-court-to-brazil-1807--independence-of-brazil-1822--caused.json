@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "transfer-of-the-portuguese-court-to-brazil-1807--independence-of-brazil-1822--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Transfer of the Portuguese court to Brazil\", revision 1373720625"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Independence of Brazil\", revision 1373868391"
+    }
+  ],
+  "from": "transfer-of-the-portuguese-court-to-brazil-1807",
+  "to": "independence-of-brazil-1822",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Wikipedia’s account is direct about it: the transfer \"represented the first step toward Brazilian independence, since the prince regent immediately opened the ports of Brazil to foreign shipping and turned the colonial capital into the seat of government\". Thirteen years of being the centre of an empire rather than a possession of one gave Brazil a treasury, a press, a bank, courts and an administration; when the Cortes in Lisbon set about undoing all of it after 1820, there was a state in Rio for Pedro to refuse on behalf of.",
+  "dispute": null
+}

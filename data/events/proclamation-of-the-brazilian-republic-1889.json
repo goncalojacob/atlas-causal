@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "proclamation-of-the-brazilian-republic-1889",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Proclamation of the Republic (Brazil)\", revision 1370705081"
+    }
+  ],
+  "title": "The proclamation of the Brazilian Republic",
+  "summary": "On 15 November 1889 a group of officers of the Imperial Army under Marshal Deodoro da Fonseca deposed Pedro II and the Viscount of Ouro Preto in Rio de Janeiro without firing a shot, ending the constitutional monarchy and establishing the First Brazilian Republic; a provisional government under Deodoro was in place the same day. The Empire had lost both of the bases it stood on: the Church, after the quarrel of the 1870s, and the large landowners, who withdrew their support after the abolition of slavery eighteen months earlier had been carried without compensating them.",
+  "when": {
+    "start": 1889,
+    "end": 1889,
+    "date": "1889-11-15"
+  },
+  "place": "rio-de-janeiro",
+  "actors": [],
+  "names": [
+    "Proclamação da República"
+  ]
+}

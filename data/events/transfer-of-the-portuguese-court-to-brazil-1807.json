@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "transfer-of-the-portuguese-court-to-brazil-1807",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Transfer of the Portuguese court to Brazil\", revision 1373720625"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Independence of Brazil\", revision 1373868391"
+    }
+  ],
+  "title": "The transfer of the Portuguese court to Brazil",
+  "summary": "Facing a French invasion it could not resist, the Braganza court — Queen Maria I, the prince regent John, the family, the household and the senior officials, near ten thousand people — embarked at Lisbon on 27 November 1807 and sailed on the 29th under Anglo-Portuguese escort, days before the French entered the city on 1 December. John reached Salvador on 22 January 1808 and there signed the decree opening Brazilian ports to friendly nations, ending the rule that the colony could trade only with its metropole. Rio de Janeiro was the capital of the United Kingdom of Portugal, Brazil and the Algarves for thirteen years; Brazil was raised to a kingdom on 16 December 1815; John VI returned to Lisbon on 26 April 1821.",
+  "when": {
+    "start": 1807,
+    "end": 1821,
+    "date": "1807-11-29",
+    "endDate": "1821-04-26"
+  },
+  "place": "rio-de-janeiro",
+  "actors": [],
+  "names": [
+    "Transferência da corte portuguesa para o Brasil"
+  ]
+}

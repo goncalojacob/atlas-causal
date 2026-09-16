@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-atlantic-slave-trade-to-brazil--aberdeen-act-1845--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Aberdeen Act\", revision 1371318387"
+    }
+  ],
+  "from": "the-atlantic-slave-trade-to-brazil",
+  "to": "aberdeen-act-1845",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "By the 1840s Brazil was the last great market in the Atlantic and the law against the traffic there — the Brazilian law of 1831 — had never been enforced. That is what the Act was for and what it names. The causal claim is the plain one: the persistence of this trade, at this scale, is why a foreign parliament legislated to have its ships taken. The Act’s first result was to enlarge what it attacked, since buyers stocked up against the coming suppression and the heaviest arrivals of the whole traffic fall in 1847 to 1849.",
+  "dispute": null
+}
