@@ -1049,7 +1049,7 @@
       ]
     },
     "ottoman-empire--turkey-ottoman-empire--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1083,7 +1083,7 @@
       ]
     },
     "persia--iran-persia--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
