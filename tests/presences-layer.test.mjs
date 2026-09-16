@@ -46,6 +46,17 @@ test('classes separate its own ground from somebody\'s, and mark the selection',
   assert.equal(presenceClasses(own, none), 'presence sovereign unhued');
   assert.equal(presenceClasses(colony, none), 'presence dependency unhued');
   assert.equal(presenceClasses({ ...own, confidence: 'disputed' }, none), 'presence sovereign unhued disputed');
+  // M43a. `probable` is the third word the schema has and it is the one every
+  // territory before 1886 carries: the style sheet dashes the whole outline
+  // for it, shore included, and `consensus` adds no word at all.
+  assert.equal(presenceClasses({ ...own, confidence: 'probable' }, none), 'presence sovereign unhued probable');
+  assert.equal(presenceClasses({ ...own, confidence: 'consensus' }, none), 'presence sovereign unhued');
+  // Said of the stroke as well as the fill, so a probable presence that does
+  // have inland borders dashes those too.
+  assert.equal(
+    presenceClasses({ ...own, confidence: 'probable' }, { ...none, base: 'presence-border' }),
+    'presence-border sovereign unhued probable',
+  );
   // Selecting an actor fills its own ground and the ground it held.
   const selected = { actorId: 'a', dependencyIds: new Set(['b-1']) };
   assert.equal(presenceClasses(own, selected), 'presence sovereign unhued of-actor');

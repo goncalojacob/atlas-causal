@@ -22,6 +22,16 @@
 // Belgian Congo reads as another; a presence whose confidence is `disputed`
 // is dashed, which is what a disputed edge already looks like on this map.
 //
+// And since M43a a presence whose confidence is `probable` is dashed around
+// the WHOLE of its outline, shore included — the one place this map draws a
+// line along a coast. Every territory before 1886 is one: it comes from a
+// snapshot drawn for one year and assumed until the next, and its coastline
+// is the snapshot's own rather than Natural Earth's. A solid second shore was
+// the fault M39b removed; a dashed one is the opposite of that fault, because
+// it is there to say that this whole line — the sea edge as much as the land
+// one — is where a dataset drew a border and not where the border was.
+// about.html says it in prose.
+//
 // The hue means "not the same as the one beside it" and nothing else. Which
 // actor gets which is a graph colouring over the borders themselves
 // (tools/build-palette.mjs → data/geo/palette.json), so there is no legend
@@ -93,7 +103,11 @@ export function presenceClasses(presence, { actorId, dependencyIds, hueOf = () =
     // No hue at all is a territory the palette has never been rebuilt for:
     // it keeps the old cobalt wash rather than disappearing.
     hue === null ? 'unhued' : `hue-${hue}`,
+    // The two words the schema has beyond `consensus`, each with a drawing of
+    // its own. `consensus` adds nothing, which is what an unqualified outline
+    // looks like.
     presence.confidence === 'disputed' ? 'disputed' : '',
+    presence.confidence === 'probable' ? 'probable' : '',
     presence.actor === actorId || dependencyIds.has(presence.id) ? 'of-actor' : '',
   ].filter(Boolean).join(' ');
 }

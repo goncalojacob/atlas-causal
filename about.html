@@ -328,9 +328,10 @@
       <h3>Territories, and where they stop</h3>
       <p>The <strong>territories</strong> layer draws who held which ground in one year: the
       last year of the window, which the band on the timeline says out loud. It covers
-      <strong>1886 to 2019 and nothing else</strong>: before 1886 the layer is simply empty, and
-      that is not a gap to be filled in with guesswork; past 2019 it holds the last year the
-      source covers and says so. The switch in the header turns it off. The
+      <strong>1400 to 2019</strong>, from two different sources with a seam at 1886 that you can
+      see and that this page explains; past 2019 it holds the last year the sources cover and
+      says so, and before 1400 the layer is simply empty, which is not a gap to be filled in with
+      guesswork. The switch in the header turns it off. The
       <strong>coastlines have no switch</strong>: they are the ground everything else is read
       against, and a map without them is a scatter of dots.</p>
       <p>The outlines come from
@@ -343,12 +344,46 @@
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noreferrer">CC BY-NC-SA 4.0</a>,
       which is <strong>not</strong> the licence of the rest of the data. Coordinates have been
       simplified for size; every date, status, sovereign and capital is the dataset's own.</p>
-      <p>What the styles mean: a <strong>state holding its own ground</strong> is a solid wash
+
+      <h3>Before 1886: a border drawn for one year, and assumed until the next</h3>
+      <p>The outlines from <strong>1400 to 1885</strong> come from
+      <a href="https://github.com/aourednik/historical-basemaps" rel="noreferrer">Historical Basemaps</a>
+      — André Ourednik and contributors — used under
+      <a href="https://www.gnu.org/licenses/gpl-3.0.html" rel="license noreferrer">GPL-3.0</a>,
+      which is not the licence of the rest of the data and is not the licence of the outlines
+      after 1886 either. It is a set of <strong>snapshots</strong>: the dataset draws the whole
+      world at 1400, then at 1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878 and
+      1880, and says nothing at all about the years between. Its authors call it work in progress
+      and ask that it be checked against other sources before use.</p>
+      <p>So <strong>every outline before 1886 is dashed all the way round</strong>, coast
+      included, and it is the only thing on this map that draws a line along a shore. It is the
+      whole line that is uncertain. Scrub to 1625 and what you are shown is the 1600 snapshot,
+      because that is the last border the dataset drew; scrub to 1750 and you are shown 1715. The
+      atlas records this as <em>probable</em> — the same word an edge carries when its sources
+      support it and nobody is known to dissent — rather than as <em>consensus</em>, which is what
+      the territories after 1886 carry. A solid outline is a border somebody recorded. A dashed
+      one is a border somebody drew once and this map is holding until the next drawing.</p>
+      <p>Two things this source is not asked to say, because it does not say them. It gives one
+      field for who exercised authority over a region, which conflates a colonial power with an
+      overlord and with the region's own name, so <strong>no territory before 1886 is drawn as
+      anybody's dependency</strong> — there are no tinted possessions and no dotted borders in
+      those centuries, and an empire and its colonies are separate washes. And it holds kingdoms,
+      confederations and peoples under one heading without distinguishing them, so nothing here
+      is called a state. Both are gaps in what is shown, and both are better than a wrong answer
+      that looks confident.</p>
+      <p>There is also a <strong>resolution this atlas would rather have had</strong>. The gaps
+      between snapshots reach ninety-two years (1400 to 1492), seventy (1530 to 1600),
+      sixty-eight (1715 to 1783) and sixty-three (1815 to 1878). No openly licensed source that
+      covers these centuries has more.</p>
+
+      <h3>What the styles mean</h3>
+      <p>A <strong>state holding its own ground</strong> is a solid wash
       with a thin border in the same colour darkened; a <strong>dependency</strong> — colony,
       protectorate, mandate or occupied territory — is the <em>lighter tint of whoever held
       it</em>, bordered dotted, so an empire and its possessions read as one family and hovering
       names both; a <strong>dashed border</strong> means the presence itself is disputed, the
-      same as a dashed link.</p>
+      same as a dashed link; and a <strong>wash dashed all the way round, shore and all</strong>,
+      means the outline is <em>probable</em> — a snapshot, as the section above describes.</p>
       <p><strong>A border is drawn inland only.</strong> CShapes draws its own coastline and it is
       not the one this map draws, so a territory outlined all the way round put a second shore
       beside the first, a few tenths of a degree out and plainly visible zoomed in. The imported
@@ -534,12 +569,18 @@
         is public domain; its makers ask to be credited and are, here and in
         <code>data/geo/LICENSE</code>.</li>
         <li><strong>The territories</strong> — <code>data/geo/presences/</code>,
-        <code>data/presences/</code> and the actor records the CShapes import created — are
+        <code>data/presences/</code> and the actor records the two territory imports created —
+        are under <strong>neither</strong> the licence of the rest of the data, and under two
+        different licences from each other. From 1886 on they are
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noreferrer">CC BY-NC-SA 4.0</a>,
-        because <a href="https://icr.ethz.ch/data/cshapes/" rel="noreferrer">CShapes 2.0</a> is.
-        That licence forbids commercial use and the rest of the data does not, so the two are
-        kept apart and each record says which one it carries. Attribution and the full citation
-        are in <code>data/geo/LICENSE</code>.</li>
+        because <a href="https://icr.ethz.ch/data/cshapes/" rel="noreferrer">CShapes 2.0</a> is;
+        that licence forbids commercial use and the rest of the data does not. From 1400 to 1885
+        they are <a href="https://www.gnu.org/licenses/gpl-3.0.html" rel="license noreferrer">GPL-3.0</a>,
+        because <a href="https://github.com/aourednik/historical-basemaps" rel="noreferrer">Historical Basemaps</a>
+        is; that licence allows commercial use and demands the same licence of anything derived
+        from it. Each record says which one it carries and each shard's file name says which
+        years it covers, so the three are kept apart. Attribution, the full citations and the
+        file list are in <code>data/geo/LICENSE</code>.</li>
         <li><strong>The identifiers</strong> — the Wikidata item, the article titles and the
         count of language editions that a record may carry — are read off
         <a href="https://www.wikidata.org/" rel="noreferrer">Wikidata</a>, whose data is

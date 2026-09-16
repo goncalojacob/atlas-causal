@@ -636,7 +636,8 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
    stroked in the same hue darkened; a dependency is filled with the LIGHTER
    TINT OF ITS OWNER and bordered dotted, so "its own" and "somebody's"
    separate inside one family rather than by a second colour. Disputed is
-   dashed, which is what a disputed edge already looks like here.
+   dashed, which is what a disputed edge already looks like here, and
+   `probable` is dashed around its whole outline for the reason below.
 
    Two elements and not one, since M39b: `.presence` is the closed outline,
    filled and clicked, and `.presence-border` over it is the part of that
@@ -651,6 +652,16 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
    before the hues existed, so a stale palette loses colour and never a
    border. */
 .map .presence { fill-opacity: 0.62; stroke: none; cursor: pointer; }
+/* M43a. A `probable` outline is dashed all the way round, shore included, and
+   it is the only thing on this map that draws a line along a coast. It is the
+   whole line that is uncertain: a snapshot's border was drawn for one year and
+   assumed until the next, and its coastline is the dataset's and not Natural
+   Earth's. `non-scaling-stroke` keeps the dash the same width at every zoom,
+   as `.presence-border` does, so the territory does not gain an edge as the
+   reader comes in. The stroke colour is the hue's own darkened line, set with
+   the hue rules below; `.unhued` keeps cobalt. */
+.map .presence.probable { stroke-width: 0.7; stroke-dasharray: 3 3; vector-effect: non-scaling-stroke; }
+.map .presence.probable.unhued { stroke: var(--cobalt); }
 .map .presence.unhued { fill: var(--cobalt-faint); }
 .map .presence.dependency { fill-opacity: 0.7; }
 .map .presence:hover { fill-opacity: 0.88; }
@@ -671,6 +682,14 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
 .map .presence-border.unhued { stroke: var(--cobalt); }
 .map .presence-border.dependency { stroke-width: 0.9; stroke-dasharray: 1 2; }
 .map .presence-border.disputed { stroke-dasharray: 4 3; }
+.map .presence.probable.hue-0 { stroke: var(--terr-1-line); }
+.map .presence.probable.hue-1 { stroke: var(--terr-2-line); }
+.map .presence.probable.hue-2 { stroke: var(--terr-3-line); }
+.map .presence.probable.hue-3 { stroke: var(--terr-4-line); }
+.map .presence.probable.hue-4 { stroke: var(--terr-5-line); }
+.map .presence.probable.hue-5 { stroke: var(--terr-6-line); }
+.map .presence.probable.hue-6 { stroke: var(--terr-7-line); }
+.map .presence.probable.hue-7 { stroke: var(--terr-8-line); }
 .map .presence-border.hue-0 { stroke: var(--terr-1-line); }
 .map .presence-border.hue-1 { stroke: var(--terr-2-line); }
 .map .presence-border.hue-2 { stroke: var(--terr-3-line); }
