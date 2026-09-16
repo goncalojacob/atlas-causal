@@ -8189,6 +8189,75 @@ skipped**.
      after. It is not the flake the protocol already names. Recorded rather
      than chased: nothing in this milestone touches the label placer.
 
+### M49 — the seam surveyed, and the source it needs refused at the proxy
+
+M49 was to decide, for each actor at the 1885/1886 seam, whether the polity
+ended or only the dataset did, and then join or split accordingly. It surveyed
+all 251 and changed no record, because **the one source the brief allows for
+the dates that decision turns on cannot be reached from the run's sandbox**.
+
+`docs/m49-actors.md` is what landed: the 123 actors active and ending in
+exactly 1885, all of them from the Historical Basemaps import, and the 128
+beginning in exactly 1886, all of them from CShapes — both spans, and the
+provenance of each boundary said plainly. Neither year is a historical fact.
+1885 is where the first import stopped extending the last snapshot it read;
+1886 is where the second dataset opens. The file carries 26 candidate pairs
+found by normalising ids and names, with a `verdict` column open on every row,
+and the 97 and 103 that matched nothing listed in full, because a record that
+did not match is not a record without a counterpart.
+
+`node tools/validate.mjs --index`: **0 errors, 1,257 warnings** — unchanged, no
+record was touched. `node --test`: **1,471 tests, 0 failed, 0 skipped**; the
+two new ones are in `tests/m49-seam.test.mjs`. Browser tests run in this
+sandbox rather than skipping: Chromium is installed and `entry-browser` passes
+on its own.
+
+Of the corpus's 250 active events, 200 carry `actors` entries and **one** names
+an actor not alive at its date: `chinese-civil-war` (1946) → `taiwan`
+(1949–open). No entry was moved, because none needed to be: the event is not
+at the seam and this milestone changed no actor's span.
+
+### Deviations 731 to 733 — M49
+
+731. **Wikidata is not reachable from this sandbox, and the brief says it is.**
+     Amendment A3 states that "Wikidata is reachable from the cloud sandbox
+     through the same path `tools/import/` already uses". It is not.
+     `www.wikidata.org`, `query.wikidata.org`, `en.wikipedia.org` and
+     `commons.wikimedia.org` are all refused at the egress proxy —
+     `CONNECT tunnel failed, response 403`, body `Host not in allowlist` —
+     while GitHub hosts answer normally, which is why the repository's own
+     tooling works and the survey could be written. Nothing on disk
+     substitutes: `data/imports/wikidata-seeds.json` is 703 bare QIDs with no
+     claims, `tools/import/cache/` holds Wikipedia leads only, and **0 of the
+     123 and 0 of the 128** carry a `wikidata` field. A3 is the assumption to
+     revisit; it is not something a run can work around.
+
+732. **No record was changed, and that is the milestone obeying its own first
+     rule rather than failing.** Every join, every split and Russia itself need
+     an inception or a dissolution date, `CLAUDE.md` forbids the assistant
+     writing one, and the brief repeats it as "no invented date, ever — the
+     whole milestone turns on this". The matching in `docs/m49-actors.md`
+     could have been dressed up as verdicts — it pairs `persia` with
+     `iran-persia` and `ottoman-empire` with `turkey-ottoman-empire` correctly
+     enough to be tempting — but the same matcher pairs `harer-egypt` with
+     `egypt-under-united-kingdom`, and that row is kept in the table with the
+     error named against it precisely so the table is read as what it is: an
+     ordering of the work, not an answer to it. Amendment A2 says a run that
+     ends with only the survey written has succeeded, and this is that run.
+
+733. **A new mode on the import workflow would unblock this, and the brief
+     forbids a run to write one on its own.** `.github/workflows/import-wikidata.yml`
+     already runs `tools/import/wikidata.mjs` against the live service on a
+     push to an `import/**` branch, on a GitHub runner, where Wikidata is
+     reachable — the protocol's amendment of 4 September is the pattern. It has
+     no mode that fetches P571/P576 for a given list of subjects, so it would
+     take a small new one, and "no new import" is one of the four things the
+     brief says this run must not do. Recorded as the second of the three ways
+     out in `docs/m49-actors.md` §3, for the owner to allow or refuse; the
+     first and cheapest is to let the two Wikidata hosts through the
+     environment's network policy, after which the next fire answers the table
+     with no change to anything.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
