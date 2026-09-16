@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "oyo-1880",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "basemaps"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "world_1880.geojson, \"Oyo\""
+    }
+  ],
+  "actor": "oyo",
+  "presenceType": "polity",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1880,
+    "end": 1885,
+    "date": "1880-01-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1880-1885.json"
+    ],
+    "key": "oyo"
+  },
+  "capital": null,
+  "confidence": "probable"
+}
