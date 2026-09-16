@@ -13,6 +13,13 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-16, after **M52** (on `m0`): **Russia is three records on cited dates,
+and a succession's two dates now have to meet.** The chip that read "Russia
+(Soviet Union)" is gone; the 1917–1922 gap is left open and written down rather
+than smoothed; and the owner's rule about successions is rule 30, which caught
+four relations the atlas already held. The account is `## M52` below and
+`docs/m52-russia.md`.
+
 2026-09-16, after **M48** (on `m0`): **the interface applies the machinery it
 already had.** The owner spent fifteen minutes with the running atlas on
 16 September and found four faults; three were this milestone and they shared a
@@ -9004,6 +9011,165 @@ merged into `main`.
      validates after the commit as well as before it. That is the owner's to
      decide; this run only records that the amendment as written cannot be
      satisfied.
+
+## M52 — Russia on what is cited, and the successions whose dates meet
+
+The owner's first complaint about this atlas was a chip reading **"Russia
+(Soviet Union)"**. It is gone, and it is gone in three pieces rather than one.
+
+**Russia is three records, every date cited to a QID and a property.**
+
+| record | name | when | the citation on the record |
+|---|---|---|---|
+| `russian-empire` | Russian Empire | 1721 – 1917 | `Q34266` **P571 1721-10-22**, `Q34266` **P576 1917-09-01** |
+| `soviet-union` | Soviet Union | 1922 – 1991 | `Q15180` **P571 1922-12-30**, `Q15180` **P576 1991-12-26** |
+| `russia-soviet-union` | Russia | 1991 – open | CShapes 2.0, `gwcode 365`, the period beginning **1991-12-21** |
+
+`Q15180` carries a second inception, **1923-07-06**, the constitution, and that
+value is **deprecated** on Wikidata; the record takes the normal-rank
+1922-12-30 and `review.note` says which and why. `soviet-union` is the one new
+record. `russia-soviet-union` keeps its id and drops the parenthetical, exactly
+as `turkey-ottoman-empire` did in M51 — an id is immutable once written, the
+name is what the reader sees — and the old label is not kept as a variant
+either, because it names two polities at once.
+
+**No relation was written, between any two of them.** The Empire ends
+1917-09-01 and the Soviet Union begins 1922-12-30; Wikidata asserts nothing
+holding that ground in between, and a `succeeded` relation across five years is
+the false label rule 30 now forbids. **The gap is the finding.**
+
+**The post-1991 record is `russia-soviet-union`, and what is open about it is
+its inception.** It had to exist: ending the Soviet Union in 1991 leaves every
+presence and every event after that date without an actor alive to hold it,
+and five of this atlas's events — the 2008 war, the 2014 war, the 2022
+invasion, Bucha, the 2023 rebellion — are on the far side of it. Its span
+begins at **1991-12-21**, where CShapes' own first post-Soviet period begins;
+that number was already in the atlas, on `russia-soviet-union-1991-f`, and it
+is cited to the dataset. **It is not a claim about when a state was founded.**
+What a person must decide is one question — *when does the post-Soviet Russian
+state begin, and which item is it?* — and the material is this: `Q159` carries
+**four** inceptions and its **preferred** value is **1263**, not 1991; its
+others are **880**, **1125** and **1991-12-25**, and that last falls **one day
+before** the Soviet Union's dissolution, so a succession written on those two
+numbers would have the successor beginning before the predecessor ended.
+`docs/m52-russia.md` §2.4 is the whole of it.
+
+**The territory: 24 periods, no outline redrawn and no period cut.** Each of
+entity 365's periods went to whoever held the ground when the period *began*,
+which is M51's method on entity 640 — 3 to the Empire, 19 to the Soviet Union,
+2 to the post-1991 record — and CShapes draws no boundary on either of
+Wikidata's two days, so cutting one there would have been this atlas inventing
+a border. **Nine of the nineteen begin before 1922** and carry the flag
+`m52-gap`: CShapes draws that ground continuously and no polity here is dated
+for it. Eight of the nine fall entirely outside their actor's interval and are
+**eight new `presence-outside-actor-when` warnings**, 189 → 197. They are
+listed one by one in `docs/m52-russia.md` §2.5, and a person who writes the
+missing actor moves nine `actor` fields and nothing else.
+
+**Twenty event entries named the old record; fifteen moved by their own dates**
+— 5 to the Empire, 10 to the Soviet Union, 5 stayed. Three fall in the
+1917–1922 gap and are left and listed, as M51 left the 1922 war of independence
+and the 1923 treaty: `october-revolution`, `russian-civil-war` and
+`treaty-of-brest-litovsk`. `world-war-i` went to the Empire, which held the
+belligerent role on the day the event begins, and is listed too, because that
+role outlived its holder.
+
+**Events still naming an actor not alive at their date: four**, across the
+whole corpus. Three are the gap events above; the fourth is
+`chinese-civil-war` (1946) naming `taiwan` (1949–), which predates M51, was
+listed by M51, and is untouched here.
+
+### The rule, which is the larger half
+
+**A `succeeded` relation is written only where the predecessor's end and the
+successor's start meet — the same year, or the year boundary between them.**
+The owner, 16 September: *"I still don't agree that it can be marked as
+successor event if the dates are not matching."* A gap is not two imprecise
+dates; it is years in which something else held that ground.
+
+**That is now rule 30**, in `src/validate/rules.js` over every active
+`succeeded` relation, documented in `ARCHITECTURE.md` beside rule 19. What it
+**forbids** is a successor beginning more than one year after its predecessor
+ends, and an actor that has not ended being succeeded at all. What it does
+**not** refuse is the other direction: an overlap leaves no ground unexplained,
+and that pair is already the warning `relation-outside-actor-when`.
+
+**The audit, and the four retractions.** All 88 active successions, 16
+September: **84 contiguous** — 77 meeting in the same year, 7 across a year
+boundary — and four written across a gap. All four are retracted, and **no
+actor was invented** to fill any of them:
+
+| gap | predecessor | ends | successor | starts | what it leaves open |
+|---|---|---|---|---|---|
+| +26 y | `east-timor-under-portugal` | 1976 | `east-timor` | 2002 | what held East Timor between CShapes' 1976-07-16 and 2002-05-20, and whether it is one record or two |
+| +11 y | `zambia-under-united-kingdom` | 1953 | `zambia` | 1964 | what held that ground from 1953, and why CShapes draws a boundary there at all |
+| +4 y | `taiwan-under-japan` | 1945 | `taiwan` | 1949 | who administered Taiwan in between, and whether `taiwan`'s 1949 is a founding or an arrival |
+| +3 y | `singapore-under-united-kingdom` | 1962 | `singapore` | 1965 | what Singapore was part of, and whether that is a succession, a membership or a dependency here |
+
+Retracting a false statement needs no source; making the true one does. Both
+records of every pair stand, and so does their territory.
+
+**Tests: 1544, none skipped** (1530 before), `node tools/validate.mjs --index`
+clean, `node tools/build-index.mjs` committed at every commit touching `data/`.
+`tests/m52.test.mjs` is 13 correspondences between `docs/m52-russia.md` and the
+records, and one case in `tests/relation-rules.test.mjs` for rule 30 itself.
+
+### Deviations
+
+763. **The rule was committed red on the four, deliberately, and the two
+     commits were pushed together.** The brief's STEP 3 says to write the rule
+     and "expect it to fail on the four, which is the point", and STEP 4 says
+     the retraction is what turns it green; the protocol's section 3 says the
+     validator is green at every commit. Both cannot hold for two commits, so
+     `cf356761` (the rule) reports **4 errors of rule 30** on `data/` and
+     `b1cd79f3` (the retractions) clears them, and the two were pushed in one
+     push so that no pushed head was ever red. The run made the choice this
+     way round because the demonstration is the brief's own — a rule nobody
+     has watched bite is a rule nobody has tested.
+764. **Rule 30 refuses the gap and not the overlap, and the reason is in
+     `tests/fixtures/`.** A1 says the two dates must "meet — the same instant,
+     or the year boundary either side of it", which read strictly is a
+     difference of 0 or 1 in either direction. The fixture succession is
+     `fixture-polity-four` (1120–1260) succeeded by `fixture-polity-three`
+     (1100–open): an **overlap of 160 years**, and a two-sided rule would fail
+     it and with it every test that asserts the fixture set has no errors.
+     Restructuring that fixture means moving a presence, an office and the
+     periods keyed to them, which is not this milestone's work. The rule is
+     therefore one-sided, which is also what the brief's own STEP 3 asks for —
+     "so the next **gap** fails where it is written" — and the other direction
+     is asserted over `data/` by `tests/m52.test.mjs` and by
+     `tests/m49-seam.test.mjs`, both green. **The fixture is still wrong** and
+     is the first thing to fix if the rule is ever made two-sided.
+765. **The 1917–1922 ground has nine CShapes periods and no actor, and the
+     brief provided for only the post-1991 hole.** §3 of the brief requires a
+     third record because otherwise every presence after 1991 is orphaned,
+     "which is a hard error"; the same argument applies to 1917–1922 and the
+     brief does not make it, because the answer there is an actor with a name,
+     and naming it is exactly what A2 forbids doing without sources. Three
+     placements were possible — the Empire, the Soviet Union, or nothing — and
+     nothing is not available, because a presence must hang from an active
+     actor. They are on `soviet-union`, flagged `m52-gap`, listed, and outside
+     its interval, because every one of them begins after the Empire's cited
+     end and `soviet-union` is the record entity 365 runs continuously into.
+     **It is a placement and not an assertion**, and each record says so on its
+     face. The alternative — retracting nine outlines — would delete territory
+     the dataset does assert.
+766. **No period was cut, and the brief expected one.** §4 says "a period
+     spanning a boundary is cut the way M51 cut entity 630's". None had to be:
+     M51 cut entity 630 because it had a **single** period covering everything,
+     and entity 365 has 24, so assigning each to whoever held the ground when
+     it began — M51's other method, the one it used on entity 640 — leaves
+     every boundary on a day CShapes itself draws. The last Empire period runs
+     to **1917-12-05**, three months past the Empire's cited end, exactly as
+     `turkey-ottoman-empire-1920` runs past `ottoman-empire`'s 1922.
+767. **`russian-empire` now begins in 1721 and used to begin in 1783.** The
+     1783 was the Historical Basemaps import's own — the first snapshot it
+     draws — and the brief asks for "the Russian Empire, 1721-10-22 to
+     1917-09-01", both cited to `Q34266`. So the record's interval is now
+     Wikidata's at both ends and the import's span is described in the summary
+     rather than being the interval. The five basemaps presences still start
+     in 1783; sixty-two years of the record have no territory drawn, which is
+     true of it and not a defect.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
