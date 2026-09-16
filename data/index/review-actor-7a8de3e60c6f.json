@@ -49645,14 +49645,46 @@
       "authors": [
         {
           "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "degree": 7,
+      "id": "russia-soviet-union",
+      "kind": "actor",
+      "names": [
+        "Russia"
+      ],
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m52-open"
+        ],
+        "note": "M52: this record was named \"Russia (Soviet Union)\" and was one record for three polities. It now carries the post-Soviet period alone, from 1991-12-21, which is where CShapes’ own first post-Soviet period begins and is not a founding. Its inception is an open question: Q159’s preferred P571 is 1263, and its other values are 880, 1125 and 1991-12-25 — one day before the Soviet Union’s dissolution. See docs/m52-russia.md §2.4.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0",
+        "wikidata"
       ],
       "created": "2026-09-16",
-      "degree": 5,
+      "degree": 13,
       "id": "russian-empire",
       "kind": "actor",
       "names": [
@@ -49663,11 +49695,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m52-russia"
         ],
+        "note": "M52: this record and `soviet-union` are two of the three polities CShapes carried under gwcode 365. Its interval is now Wikidata’s Q34266 — P571 1721-10-22, P576 1917-09-01 — and it holds entity 365’s first three periods; the third runs to 1917-12-05 because CShapes draws no boundary on the day Wikidata gives, and cutting one there would invent a border. No succession is written to what follows: five years stand between this end and the Soviet Union’s start. See docs/m52-russia.md.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -54153,6 +54187,37 @@
         "flags": [
           "imported-facts"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-16",
+      "degree": 29,
+      "id": "soviet-union",
+      "kind": "actor",
+      "names": [
+        "Soviet Union"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m52-russia"
+        ],
+        "note": "M52: written to carry the middle of CShapes’ gwcode 365, which held three polities under one label. Its dates are Wikidata’s Q15180: P571 1922-12-30, the normal-rank value — the 1923-07-06 inception, the constitution, is deprecated there — and P576 1991-12-26. Nine of its nineteen periods begin before 1922 and are flagged m52-gap: CShapes draws entity 365 continuously across those years and whose ground it was is open. See docs/m52-russia.md.",
         "status": "draft"
       },
       "revised": null,

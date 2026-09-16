@@ -2541,7 +2541,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-16",
       "status": "active",
       "title": "Boxer Rebellion"
     },
@@ -2771,7 +2771,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-16",
       "status": "active",
       "title": "Charter of the United Nations"
     },
@@ -3493,7 +3493,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-15",
+      "revised": "2026-09-16",
       "status": "active",
       "title": "Eastern Front"
     },
@@ -3814,7 +3814,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-16",
       "status": "active",
       "title": "February Revolution"
     },
@@ -4816,7 +4816,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-16",
       "status": "active",
       "title": "Katyn massacre"
     },
@@ -5413,7 +5413,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-16",
       "status": "active",
       "title": "Molotov–Ribbentrop Pact"
     },
@@ -5733,7 +5733,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-16",
       "status": "active",
       "title": "October Revolution"
     },
@@ -6033,7 +6033,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-16",
       "status": "active",
       "title": "Potsdam Conference"
     },
@@ -6117,7 +6117,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-16",
       "status": "active",
       "title": "Russian Civil War"
     },
@@ -6151,7 +6151,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-16",
       "status": "active",
       "title": "Russian Revolution of 1905"
     },
@@ -6665,7 +6665,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-16",
       "status": "active",
       "title": "Spanish Civil War"
     },
@@ -6985,7 +6985,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-15",
+      "revised": "2026-09-16",
       "status": "active",
       "title": "Treaty of Portsmouth"
     },
@@ -7667,7 +7667,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-16",
       "status": "active",
       "title": "World War II"
     },
@@ -7796,6 +7796,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "october-revolution",
+      "kind": "event",
+      "message": "the event falls entirely outside \"soviet-union\"'s dates",
+      "rule": "actor-outside-when"
+    },
+    {
       "id": "philippine-american-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -7818,6 +7824,12 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-brest-litovsk",
+      "kind": "event",
+      "message": "the event falls entirely outside \"soviet-union\"'s dates",
+      "rule": "actor-outside-when"
     }
   ]
 }

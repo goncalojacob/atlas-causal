@@ -19,19 +19,19 @@
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-0e298840b8bb.json",
+      "file": "index/attributes-1700-1799-a6ff7120c4d0.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-50c072d408e8.json",
+      "file": "index/attributes-1800-1899-659748484723.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-e30459ff6e28.json",
+      "file": "index/attributes-1900-1999-05b06cf6b1ba.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -854,7 +854,7 @@
     }
   ],
   "counts": {
-    "actors": 2686,
+    "actors": 2687,
     "edges": 272,
     "events": 513,
     "narratives": 1,
@@ -884,24 +884,24 @@
     }
   ],
   "files": {
-    "citers": "index/citers-dfee5ad15097",
-    "core": "index/core-19f72bdc9658.json",
+    "citers": "index/citers-576c711b1e3e",
+    "core": "index/core-b81b10ef4a7b.json",
     "grounds": "index/grounds-8b5b1e62afda.json",
-    "presences": "index/presences-06f5d3db3132.json",
-    "review": "index/review-a27d977578a7.json",
-    "search": "index/search-41ce2adc19a6.json",
-    "sources": "index/sources-2858a9177a9b.json"
+    "presences": "index/presences-fce26e6b033b.json",
+    "review": "index/review-c8da647d8607.json",
+    "search": "index/search-7dd46f59ebcf.json",
+    "sources": "index/sources-3668ca9cf235.json"
   },
   "historyShards": [
     {
-      "file": "index/history-event-1800-1899-488522b259dd.json",
+      "file": "index/history-event-1800-1899-09f231a66ad4.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-8353aceb513b.json",
+      "file": "index/history-event-1900-1999-5d9642cf1fd3.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
@@ -964,21 +964,21 @@
       "to": 1699
     },
     {
-      "file": "index/history-actor-1700-1799-209641f17b83.json",
+      "file": "index/history-actor-1700-1799-10b5115c8f73.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "actor",
       "to": 1799
     },
     {
-      "file": "index/history-actor-1800-1899-b6af136acdae.json",
+      "file": "index/history-actor-1800-1899-5b68797d1ddb.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "actor",
       "to": 1899
     },
     {
-      "file": "index/history-actor-1900-1999-7c9594016d33.json",
+      "file": "index/history-actor-1900-1999-292f675bb30a.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "actor",

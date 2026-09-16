@@ -13,9 +13,16 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-16",
   "origin": {
     "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m52-open"
+    ],
+    "note": "M52: this record was named \"Russia (Soviet Union)\" and was one record for three polities. It now carries the post-Soviet period alone, from 1991-12-21, which is where CShapes’ own first post-Soviet period begins and is not a founding. Its inception is an open question: Q159’s preferred P571 is 1263, and its other values are 880, 1125 and 1991-12-25 — one day before the Soviet Union’s dissolution. See docs/m52-russia.md §2.4."
   },
   "sources": [
     {
@@ -25,11 +32,11 @@
   ],
   "actorType": "polity",
   "names": [
-    "Russia (Soviet Union)"
+    "Russia"
   ],
-  "summary": "Entity 365 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 24 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Moscow. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Entity 365 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives entity 365 twenty-four periods of territorial validity under one label, \"Russia (Soviet Union)\", which covers three polities; M52 gave the first three to `russian-empire` and the next nineteen to `soviet-union`, and this record holds the last two, from 1991-12-21. Its last capital in the dataset is Moscow. It begins on that day because that is where CShapes’ own first post-Soviet period begins, and not because any source here says a state was founded then: what this record’s inception is stays an open question, and docs/m52-russia.md says what a person has to decide.",
   "when": {
-    "start": 1886,
+    "start": 1991,
     "end": null
   },
   "where": {

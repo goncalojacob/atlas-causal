@@ -13,9 +13,17 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-16",
   "origin": {
     "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m52-russia"
+    ],
+    "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5."
   },
   "sources": [
     {
@@ -23,7 +31,7 @@
       "locator": "fid 179"
     }
   ],
-  "actor": "russia-soviet-union",
+  "actor": "soviet-union",
   "presenceType": "state",
   "dependencyOf": null,
   "dependencyKind": null,

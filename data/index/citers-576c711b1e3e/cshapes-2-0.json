@@ -1466,6 +1466,12 @@
     },
     {
       "dissent": false,
+      "id": "russian-empire",
+      "kind": "actor",
+      "locator": "gwcode 365"
+    },
+    {
+      "dissent": false,
       "id": "rwanda",
       "kind": "actor",
       "locator": "gwcode 517"
@@ -1607,6 +1613,12 @@
       "id": "southern-zone-of-spanish-morocco",
       "kind": "actor",
       "locator": "gwcode 6021"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-union",
+      "kind": "actor",
+      "locator": "gwcode 365"
     },
     {
       "dissent": false,

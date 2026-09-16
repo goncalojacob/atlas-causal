@@ -95691,6 +95691,609 @@
       "authors": [
         {
           "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1886",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia"
+        ],
+        "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1905",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia"
+        ],
+        "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1914",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia"
+        ],
+        "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1917",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia",
+          "m52-gap"
+        ],
+        "note": "M52: CShapes draws entity 365 continuously from 1917-12-06, and this period begins before the Soviet Union’s cited inception of 1922-12-30 (Q15180, P571). The Russian Empire had ended — Q34266, P576 1917-09-01 — and Wikidata names no polity holding this ground in between, so the outline is carried here unchanged and flagged rather than given to a record invented for it. Whose ground this was is open: docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1918",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia",
+          "m52-gap"
+        ],
+        "note": "M52: CShapes draws entity 365 continuously from 1917-12-06, and this period begins before the Soviet Union’s cited inception of 1922-12-30 (Q15180, P571). The Russian Empire had ended — Q34266, P576 1917-09-01 — and Wikidata names no polity holding this ground in between, so the outline is carried here unchanged and flagged rather than given to a record invented for it. Whose ground this was is open: docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1918-b",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia",
+          "m52-gap"
+        ],
+        "note": "M52: CShapes draws entity 365 continuously from 1917-12-06, and this period begins before the Soviet Union’s cited inception of 1922-12-30 (Q15180, P571). The Russian Empire had ended — Q34266, P576 1917-09-01 — and Wikidata names no polity holding this ground in between, so the outline is carried here unchanged and flagged rather than given to a record invented for it. Whose ground this was is open: docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1918-c",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia",
+          "m52-gap"
+        ],
+        "note": "M52: CShapes draws entity 365 continuously from 1917-12-06, and this period begins before the Soviet Union’s cited inception of 1922-12-30 (Q15180, P571). The Russian Empire had ended — Q34266, P576 1917-09-01 — and Wikidata names no polity holding this ground in between, so the outline is carried here unchanged and flagged rather than given to a record invented for it. Whose ground this was is open: docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1918-d",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia",
+          "m52-gap"
+        ],
+        "note": "M52: CShapes draws entity 365 continuously from 1917-12-06, and this period begins before the Soviet Union’s cited inception of 1922-12-30 (Q15180, P571). The Russian Empire had ended — Q34266, P576 1917-09-01 — and Wikidata names no polity holding this ground in between, so the outline is carried here unchanged and flagged rather than given to a record invented for it. Whose ground this was is open: docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1920",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia",
+          "m52-gap"
+        ],
+        "note": "M52: CShapes draws entity 365 continuously from 1917-12-06, and this period begins before the Soviet Union’s cited inception of 1922-12-30 (Q15180, P571). The Russian Empire had ended — Q34266, P576 1917-09-01 — and Wikidata names no polity holding this ground in between, so the outline is carried here unchanged and flagged rather than given to a record invented for it. Whose ground this was is open: docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1920-b",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia",
+          "m52-gap"
+        ],
+        "note": "M52: CShapes draws entity 365 continuously from 1917-12-06, and this period begins before the Soviet Union’s cited inception of 1922-12-30 (Q15180, P571). The Russian Empire had ended — Q34266, P576 1917-09-01 — and Wikidata names no polity holding this ground in between, so the outline is carried here unchanged and flagged rather than given to a record invented for it. Whose ground this was is open: docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1920-c",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia",
+          "m52-gap"
+        ],
+        "note": "M52: CShapes draws entity 365 continuously from 1917-12-06, and this period begins before the Soviet Union’s cited inception of 1922-12-30 (Q15180, P571). The Russian Empire had ended — Q34266, P576 1917-09-01 — and Wikidata names no polity holding this ground in between, so the outline is carried here unchanged and flagged rather than given to a record invented for it. Whose ground this was is open: docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1921",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia",
+          "m52-gap"
+        ],
+        "note": "M52: CShapes draws entity 365 continuously from 1917-12-06, and this period begins before the Soviet Union’s cited inception of 1922-12-30 (Q15180, P571). The Russian Empire had ended — Q34266, P576 1917-09-01 — and Wikidata names no polity holding this ground in between, so the outline is carried here unchanged and flagged rather than given to a record invented for it. Whose ground this was is open: docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1940",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia"
+        ],
+        "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1940-b",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia"
+        ],
+        "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1940-c",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia"
+        ],
+        "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1945",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia"
+        ],
+        "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1945-b",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia"
+        ],
+        "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1991",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia"
+        ],
+        "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1991-b",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia"
+        ],
+        "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1991-c",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia"
+        ],
+        "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1991-d",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia"
+        ],
+        "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "russia-soviet-union-1991-e",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m52-russia"
+        ],
+        "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
         }
       ],
@@ -132718,6 +133321,54 @@
       "id": "portugal-1880",
       "kind": "presence",
       "message": "the presence falls entirely outside \"portugal\"'s dates",
+      "rule": "presence-outside-actor-when"
+    },
+    {
+      "id": "russia-soviet-union-1917",
+      "kind": "presence",
+      "message": "the presence falls entirely outside \"soviet-union\"'s dates",
+      "rule": "presence-outside-actor-when"
+    },
+    {
+      "id": "russia-soviet-union-1918",
+      "kind": "presence",
+      "message": "the presence falls entirely outside \"soviet-union\"'s dates",
+      "rule": "presence-outside-actor-when"
+    },
+    {
+      "id": "russia-soviet-union-1918-b",
+      "kind": "presence",
+      "message": "the presence falls entirely outside \"soviet-union\"'s dates",
+      "rule": "presence-outside-actor-when"
+    },
+    {
+      "id": "russia-soviet-union-1918-c",
+      "kind": "presence",
+      "message": "the presence falls entirely outside \"soviet-union\"'s dates",
+      "rule": "presence-outside-actor-when"
+    },
+    {
+      "id": "russia-soviet-union-1918-d",
+      "kind": "presence",
+      "message": "the presence falls entirely outside \"soviet-union\"'s dates",
+      "rule": "presence-outside-actor-when"
+    },
+    {
+      "id": "russia-soviet-union-1920",
+      "kind": "presence",
+      "message": "the presence falls entirely outside \"soviet-union\"'s dates",
+      "rule": "presence-outside-actor-when"
+    },
+    {
+      "id": "russia-soviet-union-1920-b",
+      "kind": "presence",
+      "message": "the presence falls entirely outside \"soviet-union\"'s dates",
+      "rule": "presence-outside-actor-when"
+    },
+    {
+      "id": "russia-soviet-union-1920-c",
+      "kind": "presence",
+      "message": "the presence falls entirely outside \"soviet-union\"'s dates",
       "rule": "presence-outside-actor-when"
     },
     {

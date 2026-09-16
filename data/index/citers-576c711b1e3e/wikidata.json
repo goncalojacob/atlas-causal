@@ -122,6 +122,30 @@
     },
     {
       "dissent": false,
+      "id": "russian-empire",
+      "kind": "actor",
+      "locator": "Q34266, P571 1721-10-22"
+    },
+    {
+      "dissent": false,
+      "id": "russian-empire",
+      "kind": "actor",
+      "locator": "Q34266, P576 1917-09-01"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-union",
+      "kind": "actor",
+      "locator": "Q15180, P571 1922-12-30 (normal rank; the 1923-07-06 value is deprecated)"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-union",
+      "kind": "actor",
+      "locator": "Q15180, P576 1991-12-26"
+    },
+    {
+      "dissent": false,
       "id": "turkey-ottoman-empire",
       "kind": "actor",
       "locator": "Q12560, P576 1922-11-17"
