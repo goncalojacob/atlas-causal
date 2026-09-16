@@ -365,6 +365,12 @@ export function planImport(loaded, { created, map = {}, existingActors = new Set
       names,
       summary: actorSummary(known.names, known.years, known.until, known.given !== null),
       when: { start: known.years[0], end: known.until },
+      // Present and null, never absent: every actor record in this atlas
+      // carries the field, and a record the contribution form re-saves
+      // unedited has to come back byte for byte (tests/bundle.test.mjs). The
+      // source names no seat of government for anything, so null is the whole
+      // of the answer.
+      where: null,
       review: { status: REVIEW_STATUS.draft, flags: [IMPORTED_FLAG] },
     }, { created }));
   }

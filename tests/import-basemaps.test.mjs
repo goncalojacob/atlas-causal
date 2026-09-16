@@ -194,6 +194,10 @@ test('an actor says which snapshots drew it and refuses to say more', () => {
   // The interval is the span of the snapshots and says so in the summary, so
   // that nobody reads it as the polity's life.
   assert.deepEqual(west.when, { start: 1500, end: 1885 });
+  // Present and null rather than absent: the contribution form's round trip
+  // has to return a record byte for byte, and every actor here carries it.
+  assert.ok(Object.hasOwn(west, 'where'));
+  assert.equal(west.where, null);
   assert.match(west.summary, /the snapshots for 1500, 1600 and 1700/);
   assert.match(west.summary, /not a claim about when this polity began or ended/);
   assert.match(west.summary, /asserts nothing the dataset does not/);
