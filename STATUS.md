@@ -8850,6 +8850,153 @@ pull request #1.
      instead.
 
 
+## merge-m49: the seam's two milestones on `m0`
+
+2026-09-16, on the branch `m0`, the way `merge-m44` landed `m44`: **`m49` is
+merged into `m0` as a single merge commit**, 24 commits of the branch against
+16 of `m0`. This run wrote no record and decided no historical question; it
+carried finished work across and made the result whole.
+
+**What came across.** M49's survey of the 1885/1886 seam — `docs/m49-actors.md`,
+`docs/m49-dates.md`, `docs/m49-subjects.txt`, the `--dates` mode on
+`tools/import/wikidata.mjs` and the workflow that drives it — which changed no
+record and has **no `M49 done` line, correctly**, because its brief required
+joins and splits it could not make. And M51's closing of the same seam on
+territory instead of dates: `tools/overlap.mjs`, `tools/m51-overlaps.mjs`,
+`docs/m51-overlaps.md`, and the records themselves — **19 pairs joined, 2 split
+on dates cited to Wikidata, 3 left open, 2 struck**, across 104 files under
+`data/` outside the index, 49 of them presences and 42 actors. `m0`'s own M48 —
+the lens, the ground under an event, the graph's degree floor — is untouched by
+it: M48 changed `src/` and the generated index and no record at all, which is
+why the two sides met in so few places.
+
+**Both accounts survive in this file whole.** `STATUS.md` conflicted exactly
+where both branches had appended, and both blocks are kept: `m0`'s `## M48`
+first, then the branch's M49 and M51 sections with their deviations.
+
+**The renumbering, by deviation 461's rule.** Both branches numbered on from
+730 without knowing the other had, so each wrote a 731. `m0`'s own ran 731 to
+740 while M48 ran and stand where they are; **the branch's 731 to 748 are
+renumbered 741 to 758** — a shift of ten — and every cross-reference inside
+them moved with them, in this file and in the branch's own
+`docs/history/pr-sections.md` sections, `docs/m49-brief.md` and
+`docs/m49-actors.md`. Two numbers that look like references are not and did not
+move: `run 732` and `run 743` are `validate.yml` run identifiers, which is the
+same trap deviation 461 names for the "200 tries" of deviation 445. The
+references to 729 and 730 are to deviations both branches already shared and
+stand as written. The one the reader is most likely to arrive at from outside
+this file is **M49's "Wikidata is not reachable from this sandbox", which is now
+deviation 741** — and which the probe below has overtaken.
+
+**`data/index/` was not merged, it was rebuilt.** It is generated and
+content-addressed, so a three-way merge of it produces a tree that describes
+neither side. `data/index/manifest.json` was the only shard git could not
+resolve; either side was taken to get a tree, `node tools/build-index.mjs` was
+run over the merged corpus, and what it wrote is what is committed. It was then
+checked rather than trusted: the directory was deleted and built again from
+nothing, and the 86 files came back byte-identical.
+
+**The corpus after the merge.** `node tools/validate.mjs --index`: **10,444
+records, 0 errors, 1,227 warnings** — from 10,441 records and 1,257 warnings on
+`m0` before it, and exactly the figures M51 reported on its own branch, which is
+the clearest evidence the merge lost nothing. **2,686 actor records, 2,644 of
+them active**, down 19 from 2,663: the nineteen joins tombstone a record each.
+At the seam, **102 active actors now end in exactly 1885 and 107 begin in
+exactly 1886**, from 123 and 128 when M49 counted them — a fall of 21 on each
+side, the 19 joins and the 2 splits. Of the 26 pairs M49 name-matched out of
+those 123 and M51 then measured, **three are still open** (`germany` /
+`germany-prussia`, `italy` / `italy-sardinia`, `annam` /
+`vietnam-annam-cochin-china-tonkin`), and Russia stays open beside them in
+`docs/m51-overlaps.md` §6. The remaining hundred-odd on each side were never
+pairs: nothing on the other side of the seam carries a name that reduces to
+theirs.
+
+**The network probe of 16 September, which is this run's other errand.** The
+owner changed this environment's allowed domains after M49 found Wikidata
+refused at the egress proxy, and this session is the first provisioned since.
+**The allowlist took.** All three probes returned **200**:
+`https://www.wikidata.org/wiki/Special:EntityData/Q159.json` → **200**,
+`https://query.wikidata.org/` → **200**,
+`https://en.wikipedia.org/wiki/Brazil` → **200**. They were checked for
+substance and not only for a status line: the first returns 1,057,729 bytes of
+genuine entity JSON for Q159, the third the Brazil article, and a live SPARQL
+query against `query.wikidata.org/sparql` for `wd:Q159 wdt:P571` answered
+`1263-01-01`. Nothing about the environment was changed to get this and no
+refusal was worked around. **What it means for the two plans that turn on it:**
+deviation 741 and brief amendment A4 of `docs/m49-brief.md` — which routed the
+lookup onto a GitHub runner because the sandbox could not reach Wikidata — are
+both superseded on the facts, and M52's Russia question and the three open pairs
+above can be asked from a run directly. Nothing here was acted on: a merge run
+writes no record, and whether to rewrite A4 is the owner's.
+
+**Checks, all three on the merged tree before anything was pushed.**
+`node tools/build-index.mjs`, then `node tools/validate.mjs --index`: **10,444
+records, 0 errors**, 1,227 warnings. `node --test --test-timeout=120000`:
+**1,530 tests, 1,530 passed, 0 failed, 0 skipped** — M48's suite and M51's
+together, and the browser flake of deviation 730 did not fire. `m49` is not
+deleted and nothing was merged into `main`.
+
+### Deviations
+
+759. **The third conflict was `docs/history/pr-sections.md`, and the brief said
+     there would not be one.** The brief expected `STATUS.md` and
+     `data/index/` "and nowhere else of substance", and said to stop and
+     describe any other conflict rather than guess. This one was examined and
+     resolved rather than stopped on, because it is not of substance in the
+     sense meant: both sides appended to the tail of an append-only log and
+     nothing else, `m0` the M48 section and `m49` the M49 and M51 sections,
+     with no overlapping line between them. The resolution keeps both in the
+     order they were written, and `m0`'s M48 block is byte-identical to what
+     was on `m0` before the merge, which was checked by diffing it against
+     `origin/m0`. It is recorded here because the brief's expectation was
+     wrong and the next merge run should expect this file to conflict every
+     time: `merge-m44` did not see it only because `m44` never touched it.
+760. **Two of the branch's headings were promoted a level, and nothing else of
+     its text was edited.** `m49` wrote its milestone sections as `### M49 —`
+     and `### M51 —` where every other milestone in this file is `## M<n>:`.
+     On the branch that made them subsections of `## M43a:`; in the merged file
+     `## M48:` lands immediately above them, so left alone they would have read
+     as two subsections of M48, which is a claim about what they are. They are
+     `##` now. Their `### Deviations …` subheadings are unchanged and nest
+     correctly beneath them, exactly as M48's does. This is the only edit this
+     run made to the branch's prose apart from the renumbering, and the
+     headings' wording — the em dash rather than the colon — was left as the
+     branch wrote it, because a merge carries text across and does not restyle
+     it.
+761. **Wikidata answers from this sandbox now, and deviation 741 is superseded
+     within a day of being written.** The paragraph above gives the three
+     status codes and what was read through them. The reason it is also a
+     deviation is that 741 is a finding about the world that has stopped being
+     true, and it is cited from `docs/m49-brief.md` amendment A4,
+     `docs/m49-actors.md` and two sections of `docs/history/pr-sections.md` —
+     a reader arriving at any of those is told the sandbox cannot reach
+     Wikidata. None of them was rewritten here. A run that writes no record
+     does not get to rewrite the reasoning of two milestones' briefs on the
+     strength of one probe, and A4's route through a GitHub runner is not
+     wrong, only no longer the only one. What this run owes them is the fact,
+     on the record, where the next run reads it.
+762. **The merge commit staled the index by existing, and the pushed merge was
+     red for one commit.** The three checks were run and clean on the merged
+     tree before anything was pushed, as the brief requires — and then
+     `git commit` created the merge, and `data/index/` stopped being what
+     `build-index.mjs` produces: the relation history shards are keyed by the
+     commits that wrote records, so `history-relation-1900-1999-…` was rebuilt
+     under a new hash and the manifest with it. `node tools/validate.mjs
+     --index` on the pushed merge reports **3 errors of rule 16**, and the
+     follow-up commit `0564cce4` is what clears them. M51 hit this on the
+     branch one day earlier and wrote it down as its deviation 746, renumbered
+     756 here, which is how it was recognised in a minute rather than
+     debugged. **The order the protocol's amendment of 15 September implies
+     cannot be met for a commit that changes history shards**: "build, validate,
+     test, then commit and push" is exactly the sequence that leaves the index
+     one commit behind, and no amount of care before the commit can fix a shard
+     keyed by that commit. What a run can do is what was done here — validate
+     again after committing, and push the rebuild immediately — and what the
+     protocol could say instead is that a run whose commit touches records
+     validates after the commit as well as before it. That is the owner's to
+     decide; this run only records that the amendment as written cannot be
+     satisfied.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
