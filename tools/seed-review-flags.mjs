@@ -176,6 +176,16 @@ async function fileFor(dataDir, id) {
 // them exactly what is not true. Their interval is the source's own, cited by
 // gwcode, and what a reviewer is being asked to look at is already on them,
 // in `imported-facts`.
+//
+// `INTERVAL_CITED` is the third, and it is the same reason without the import.
+// M51 wrote two successions by hand whose dates are Wikidata's, cited to an
+// item and a property: the seeding's sentence would say of them, too, exactly
+// what is not true. "An import created it" was only ever a proxy for "the
+// interval was read in a source", and a record that says so on its own face
+// is left out for the same reason — a reviewer asked to check a date against
+// memory, when the date names its property, is being sent to the wrong place.
+export const INTERVAL_CITED = 'interval-cited';
+
 async function activeIdsIn(dataDir, kind) {
   const dir = path.join(dataDir, KIND_DIRS[kind]);
   if (!existsSync(dir)) return [];
@@ -183,7 +193,9 @@ async function activeIdsIn(dataDir, kind) {
   for (const name of (await readdir(dir)).sort()) {
     if (!name.endsWith('.json')) continue;
     const record = JSON.parse(await readFile(path.join(dir, name), 'utf8'));
-    if (record.status === 'active' && handWritten(record)) out.push(record.id);
+    if (record.status !== 'active' || !handWritten(record)) continue;
+    if ((record.review?.flags ?? []).includes(INTERVAL_CITED)) continue;
+    out.push(record.id);
   }
   return out;
 }

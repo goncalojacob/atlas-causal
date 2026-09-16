@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "gabon-before-1886",
   "kind": "actor",
-  "status": "active",
-  "supersededBy": null,
+  "status": "merged",
+  "supersededBy": "gabon-under-france",
   "aliases": [],
   "authors": [
     {
@@ -13,15 +13,17 @@
   ],
   "license": "GPL-3.0-only",
   "created": "2026-09-16",
-  "revised": null,
-  "origin": {
-    "tool": "basemaps"
-  },
+  "revised": "2026-09-16",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m51-joined"
+    ],
+    "note": "M51: merged into gabon-under-france, the same polity — the outlines either side of the 1885/1886 seam share 99.08% of the smaller (docs/m51-overlaps.md). The names, summary and licence here are Historical Basemaps's and stay here: the survivor carries the other import's licence and could not take them."
+  },
+  "origin": {
+    "tool": "basemaps"
   },
   "sources": [
     {

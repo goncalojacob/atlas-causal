@@ -68,7 +68,7 @@
       "note": "CShapes holds 53 as a colony of United Kingdom to 1966-11-29; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
     },
     "80": {
-      "actor": "belize-under-united-kingdom",
+      "actor": "belize-before-1886",
       "names": [
         "Belize under United Kingdom"
       ],
@@ -824,7 +824,7 @@
       "note": "One CShapes code carries both the dependency and the independent state. Splitting it gives each its own actor, so a presence never hangs off a record whose dates do not contain it."
     },
     "760": {
-      "actor": "bhutan-under-united-kingdom",
+      "actor": "bhutan-before-1886",
       "names": [
         "Bhutan under United Kingdom"
       ],
@@ -941,7 +941,7 @@
       "note": "CShapes holds 835 as a protectorate of United Kingdom to 1983-12-31; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
     },
     "840": {
-      "actor": "philippines-under-united-states-of-america",
+      "actor": "philippines-before-1886",
       "names": [
         "Philippines under United States of America"
       ],

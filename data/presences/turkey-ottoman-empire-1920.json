@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-16",
   "origin": {
     "tool": "cshapes"
   },
@@ -23,7 +23,7 @@
       "locator": "fid 483"
     }
   ],
-  "actor": "turkey-ottoman-empire",
+  "actor": "ottoman-empire",
   "presenceType": "state",
   "dependencyOf": null,
   "dependencyKind": null,
@@ -45,5 +45,12 @@
     "precision": "city",
     "label": "Istanbul"
   },
-  "confidence": "consensus"
+  "confidence": "consensus",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m51-split"
+    ],
+    "note": "M51: entity 640's ground before Wikidata's P576 1922-11-17 on Q12560. It goes to whoever held it when this period began; CShapes draws no boundary on that day, so no period is cut and no outline is redrawn."
+  }
 }

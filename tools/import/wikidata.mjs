@@ -123,7 +123,18 @@ export const BACKOFF_MS = 2000;
 // and it is better to stop halfway with a cursor than to keep going.
 export const CALL_BUDGET = 400;
 
-export const MODES = Object.freeze(['reconcile', 'import', 'candidates']);
+export const MODES = Object.freeze(['reconcile', 'import', 'candidates', 'dates']);
+
+// --dates: the list it is asked about, and the page it writes. M49's seam is
+// 123 actors ending in 1885 and 128 beginning in 1886, and neither year is a
+// fact — both are where a dataset stops. Deciding whether a polity ended or
+// only a file did needs inception and dissolution dates, `CLAUDE.md` forbids
+// the assistant writing them, and Wikidata is refused at the sandbox's egress
+// proxy (deviation 731). So the lookup runs here, on the runner, where it
+// answers. It is not an import: it creates no record, keeps no cursor and
+// writes nothing under data/.
+export const SUBJECTS_FILE = path.join('docs', 'm49-subjects.txt');
+export const DATES_FILE = path.join('docs', 'm49-dates.md');
 
 // Sitelinks that are not language editions of Wikipedia. `sitelinks` is
 // meant to be "how many language editions have an article", so Commons,
@@ -294,6 +305,24 @@ export function parseTime(value) {
 
 export function claimTimes(entity, property) {
   return statements(entity, property).map((s) => parseTime(s.mainsnak.datavalue?.value)).filter(Boolean);
+}
+
+export const PRECISION_NAMES = Object.freeze({ 9: 'year', 10: 'month', 11: 'day' });
+
+// The same times, with the precision kept. Everywhere else in this tool a
+// date becomes an interval and the precision has done its work by then; a
+// person deciding whether a polity ended needs to see the difference between
+// a year Wikidata states to the day and one it states to the year, so --dates
+// reports it rather than flattening it. An item with two inceptions reports
+// both: choosing between them is exactly the judgement this tool must not make.
+export function datedClaims(entity, property) {
+  return statements(entity, property).map((s) => {
+    const value = s.mainsnak.datavalue?.value;
+    const parsed = parseTime(value);
+    if (!parsed) return null;
+    const precision = value.precision;
+    return { ...parsed, precision, precisionLabel: PRECISION_NAMES[precision] ?? `precision ${precision}` };
+  }).filter(Boolean);
 }
 
 export function claimPoint(entity, property = PROPERTIES.coordinate) {
@@ -1320,6 +1349,152 @@ export async function runCandidatesMode(dataDir, { fetcher, today, limitPerQuery
   return { report, failed: [] };
 }
 
+// --- --dates ----------------------------------------------------------------
+
+// Which names a record entitles the lookup to search for: its own, and the
+// parts of them the two imports put there mechanically. CShapes writes the
+// alternates in parentheses — "Iran (Persia)", "Vietnam (Annam/Cochin
+// China/Tonkin)" — and the colonial holdings as "Algeria under France". Those
+// splits are a reading of this repository's own labels, not a claim about
+// history, and every one of them still has to survive the matcher.
+function nameParts(name) {
+  const parts = [];
+  const parenthesised = /^(.*?)\s*\(([^()]*)\)\s*$/.exec(name);
+  if (parenthesised) {
+    if (parenthesised[1].trim()) parts.push(parenthesised[1].trim());
+    for (const inner of parenthesised[2].split('/')) if (inner.trim()) parts.push(inner.trim());
+  }
+  const under = /^(.*?)\s+under\s+\S.*$/.exec(name);
+  if (under && under[1].trim()) parts.push(under[1].trim());
+  return parts;
+}
+
+export function derivableNames(record) {
+  const names = new Set();
+  for (const name of record?.names ?? []) {
+    if (typeof name !== 'string' || !name.trim()) continue;
+    names.add(name.trim());
+    for (const part of nameParts(name)) names.add(part);
+  }
+  return [...names];
+}
+
+// The subject list: one actor id per line, `#` for a comment, and an optional
+// `| name` narrowing the search to one of the names that record carries. The
+// narrowing exists for the records CShapes conflates — `russia-soviet-union`
+// is the Empire, the Union and the Federation under one label — and it is
+// checked against the record, so the file cannot introduce a name from
+// nowhere. A line this cannot read is a named problem, never a silent skip.
+export const SUBJECT_ID = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+
+export function parseSubjects(text) {
+  const subjects = [];
+  const problems = [];
+  String(text ?? '').split(/\r?\n/).forEach((raw, i) => {
+    const line = raw.trim();
+    if (!line || line.startsWith('#')) return;
+    const bar = line.indexOf('|');
+    const id = (bar === -1 ? line : line.slice(0, bar)).trim();
+    const alternate = bar === -1 ? null : line.slice(bar + 1).trim();
+    if (!SUBJECT_ID.test(id)) {
+      problems.push(`line ${i + 1}: "${line}" does not begin with an actor id`);
+      return;
+    }
+    if (bar !== -1 && !alternate) {
+      problems.push(`line ${i + 1}: "${line}" has a bar with no name after it`);
+      return;
+    }
+    subjects.push({ id, alternate });
+  });
+  return { subjects, problems };
+}
+
+export function probeFor(record, alternate = null) {
+  const names = derivableNames(record);
+  if (alternate === null) return { names, why: null };
+  const found = names.find((name) => foldName(name) === foldName(alternate));
+  if (!found) return { names: null, why: `"${alternate}" is not a name \`${record.id}\` carries, nor a part of one` };
+  return { names: [found], why: null };
+}
+
+export async function runDatesMode(dataDir, { fetcher, today, subjectsText = '', batchSize = BATCH } = {}) {
+  const report = { rows: [], refused: [], problems: [], calls: 0, today };
+  const seeds = await readSeeds(dataDir);
+  if (!seeds) return { report, failed: [`no data/${SEEDS_FILE}: without its class table nothing can be told apart from anything`] };
+  const { subjects, problems } = parseSubjects(subjectsText);
+  report.problems = problems;
+  if (!subjects.length) return { report, failed: [`no subject to look up: the list is empty or every line of it was refused`] };
+
+  const entries = await existingRecords(dataDir);
+  const byId = new Map(entries.filter((e) => e.record?.kind === 'actor').map((e) => [e.record.id, e.record]));
+
+  for (const subject of subjects) {
+    const named = subject.alternate ? `${subject.id} | ${subject.alternate}` : subject.id;
+    const record = byId.get(subject.id);
+    if (!record) {
+      report.refused.push({ subject: named, why: `there is no actor called \`${subject.id}\` here` });
+      continue;
+    }
+    const probe = probeFor(record, subject.alternate);
+    if (!probe.names) {
+      report.refused.push({ subject: named, why: probe.why });
+      continue;
+    }
+
+    const qids = [];
+    let entities;
+    try {
+      for (const name of probe.names) {
+        const found = await fetcher.get(searchUrl(name));
+        for (const hit of found?.search ?? []) if (hit?.id && !qids.includes(hit.id)) qids.push(hit.id);
+      }
+      entities = await fetchEntities(fetcher, qids.slice(0, batchSize));
+    } catch (e) {
+      if (e?.name === 'BudgetError') throw e;
+      report.refused.push({ subject: named, why: e.message });
+      continue;
+    }
+
+    const reads = Object.values(entities).filter((e) => !isMissing(e)).map(readEntity);
+    // The record's own interval is withheld from the matcher on purpose.
+    // `datesMatch` would compare the item's dates against 1885 or 1886, and
+    // those are where the Historical Basemaps import stopped and where CShapes
+    // opens — the artefact this milestone exists to remove. Offering them as
+    // if they were dates would settle by assumption the question being asked.
+    const probed = { ...record, names: probe.names, when: null };
+    const { certain, candidates, rejected } = matchesFor(probed, reads, seeds.classes);
+    const entity = certain ? entities[certain.qid] : null;
+    const inception = entity ? datedClaims(entity, PROPERTIES.inception) : [];
+    const dissolved = entity ? datedClaims(entity, PROPERTIES.dissolved) : [];
+    report.rows.push({
+      id: record.id,
+      alternate: subject.alternate,
+      probed: probe.names,
+      qid: certain?.qid ?? null,
+      label: certain ? certain.labels.en ?? certain.labels.pt ?? null : null,
+      description: certain ? certain.descriptions.en ?? certain.descriptions.pt ?? null : null,
+      inception,
+      dissolved,
+      match: certain ? 'safe' : 'doubtful',
+      // A match is not an answer. A safe match with no P571 leaves the pair
+      // exactly where the survey left it, and saying so here is what keeps a
+      // reader from reading an empty cell as a date.
+      settles: Boolean(certain) && inception.length > 0,
+      why: certain
+        ? null
+        : candidates.length
+          ? `${candidates.length} items survived the match and the tool may not pick between them`
+          : 'nothing the search returned survived the match',
+      candidates: candidates.map((c) => c.qid),
+      rejected,
+      searched: reads.length,
+    });
+  }
+
+  report.calls = fetcher.calls;
+  return { report, failed: [] };
+}
+
 // Uma data do SPARQL vem como instante; na tabela só o dia interessa.
 export function dayOf(value) {
   if (typeof value !== 'string') return null;
@@ -1407,6 +1582,80 @@ to that file and another run, never an edit here.
 ${sections.join('\n')}${failures}`;
 }
 
+// A date the way a person has to read it here: the value Wikidata states and
+// how precisely it states it, never one without the other. Two values are
+// printed as two, because an item with two inceptions is a disagreement and
+// not an average.
+export function dateCell(times = []) {
+  if (!times.length) return '—';
+  return times.map((t) => `${t.date ?? t.year} (${t.precisionLabel})`).join('; ');
+}
+
+const ITEM_LINK = (qid) => `[\`${qid}\`](https://www.wikidata.org/wiki/${qid})`;
+
+// What --dates hands M49: one row per subject, and everything the tool would
+// not decide written out underneath rather than left off the page.
+export function datesMarkdown(rows, { generated, subjectsFile = SUBJECTS_FILE, refused = [] } = {}) {
+  const safe = rows.filter((r) => r.match === 'safe');
+  const settled = rows.filter((r) => r.settles);
+  const doubtful = rows.filter((r) => r.match !== 'safe');
+
+  const table = [
+    '| actor | probed as | item | label | P571 inception | P576 dissolved | match |',
+    '|---|---|---|---|---|---|---|',
+    ...rows.map((row) => [
+      `\`${row.id}\``,
+      cell((row.probed ?? []).join(', ')),
+      row.qid ? ITEM_LINK(row.qid) : '—',
+      cell(row.label),
+      cell(dateCell(row.inception)),
+      cell(dateCell(row.dissolved)),
+      row.match,
+    ].join(' | ')).map((line) => `| ${line} |`),
+  ].join('\n');
+
+  const doubtfulSection = doubtful.length
+    ? `\n## The doubtful ones\n
+A subject is doubtful when the matching this tool already uses did not come
+down to exactly one item. **No date is reported for one**, and the verdict on
+it in \`docs/m49-actors.md\` is "for a person", with the question written out.
+
+${doubtful.map((row) => [
+    `### \`${row.id}\`${row.alternate ? ` | ${row.alternate}` : ''}`,
+    '',
+    `Searched for: ${(row.probed ?? []).map((n) => `"${n}"`).join(', ')}. ${row.why}.`,
+    row.candidates.length ? `\nSurvived: ${row.candidates.map(ITEM_LINK).join(', ')}.` : '',
+    row.rejected?.length ? `\nThrown out:\n${row.rejected.map((line) => `- ${line}`).join('\n')}` : '',
+  ].filter(Boolean).join('\n')).join('\n\n')}\n`
+    : '';
+
+  const refusedSection = refused.length
+    ? `\n## Subjects that were not asked\n
+Nothing was put to Wikidata for these, so nothing here bears on them.
+
+${refused.map((r) => `- \`${r.subject}\`: ${r.why}`).join('\n')}\n`
+    : '';
+
+  return `# M49 — what Wikidata says about the actors at the seam
+
+Generated on ${generated} by \`tools/import/wikidata.mjs --dates\`, on a GitHub
+runner, because the scheduled run's sandbox cannot reach Wikidata (deviation
+731, brief amendment A4). This is a lookup, not an import: it reads the actor
+records to know what to ask about and **writes nothing under \`data/\`**.
+
+The subjects are \`${subjectsFile}\`; asking about another actor is an edit to
+that file and another run, never an edit here.
+
+**${rows.length} subject(s) asked, ${safe.length} matched to exactly one item,
+${settled.length} of those carry a P571.** The rest are a person's decision and
+are listed below with what the tool saw. A match is not a date and a date is
+not a verdict: \`docs/m49-actors.md\` is where the verdicts go, and every one
+of them cites the QID and the property it rests on.
+
+${table}
+${doubtfulSection}${refusedSection}`;
+}
+
 // --- the report -------------------------------------------------------------
 
 export function reportLines(report, mode) {
@@ -1448,11 +1697,12 @@ async function main(argv) {
   let budget = CALL_BUDGET;
   let to = null;
   let reportTo = null;
+  let subjectsFrom = null;
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg.startsWith('--') && MODES.includes(arg.slice(2))) {
       if (mode) {
-        console.error('one mode at a time: --reconcile, --import or --candidates');
+        console.error('one mode at a time: --reconcile, --import, --candidates or --dates');
         return 2;
       }
       mode = arg.slice(2);
@@ -1461,13 +1711,14 @@ async function main(argv) {
     else if (arg === '--budget') budget = Number(argv[++i]);
     else if (arg === '--to') to = path.resolve(argv[++i]);
     else if (arg === '--report') reportTo = path.resolve(argv[++i]);
+    else if (arg === '--subjects') subjectsFrom = path.resolve(argv[++i]);
     else {
       console.error(`unknown argument ${arg}`);
       return 2;
     }
   }
   if (!mode) {
-    console.error('usage: node tools/import/wikidata.mjs --reconcile|--import|--candidates [--data <dir>] [--batch 25] [--budget 400] [--to <file>] [--report <file>]');
+    console.error('usage: node tools/import/wikidata.mjs --reconcile|--import|--candidates|--dates [--data <dir>] [--batch 25] [--budget 400] [--to <file>] [--report <file>] [--subjects <file>]');
     return 2;
   }
   if (!Number.isInteger(batchSize) || batchSize < 1 || !Number.isInteger(budget) || budget < 1) {
@@ -1485,13 +1736,41 @@ async function main(argv) {
   try {
     if (mode === 'import') result = await runImportMode(dataDir, { fetcher, today, batchSize, cacheDir, deriveRegion });
     else if (mode === 'reconcile') result = await runReconcileMode(dataDir, { fetcher, today, batchSize, cacheDir });
-    else result = await runCandidatesMode(dataDir, { fetcher, today });
+    else if (mode === 'dates') {
+      const file = subjectsFrom ?? path.join(ROOT, SUBJECTS_FILE);
+      if (!existsSync(file)) {
+        console.error(`error: no subject list at ${path.relative(ROOT, file)}; --dates asks about the actors named there`);
+        return 1;
+      }
+      result = await runDatesMode(dataDir, { fetcher, today, batchSize, subjectsText: await readFile(file, 'utf8') });
+    } else result = await runCandidatesMode(dataDir, { fetcher, today });
   } catch (e) {
     console.error(`error: ${e.message}`);
     return 1;
   }
   for (const problem of result.failed) console.error(`error: ${problem}`);
   if (result.failed.length) return 1;
+  if (mode === 'dates') {
+    const file = to ?? path.join(ROOT, DATES_FILE);
+    await mkdir(path.dirname(file), { recursive: true });
+    await writeFile(file, datesMarkdown(result.report.rows, {
+      generated: today,
+      subjectsFile: subjectsFrom ? path.relative(ROOT, subjectsFrom) : SUBJECTS_FILE,
+      refused: result.report.refused,
+    }), 'utf8');
+    const lines = [
+      `dates: ${result.report.rows.length} subject(s) asked, `
+      + `${result.report.rows.filter((r) => r.match === 'safe').length} matched, `
+      + `${result.report.rows.filter((r) => r.settles).length} with a P571, `
+      + `${result.report.refused.length} not asked, ${result.report.calls} call(s) spent`,
+      ...result.report.problems.map((p) => `subject list: ${p}`),
+      ...result.report.refused.map((r) => `not asked ${r.subject}: ${r.why}`),
+      `written to ${path.relative(ROOT, file)}; nothing under data/ was touched`,
+    ];
+    for (const line of lines) console.log(line);
+    if (reportTo) await appendReport(reportTo, lines);
+    return 0;
+  }
   if (mode === 'candidates') {
     const file = to ?? path.join(ROOT, CANDIDATES_FILE);
     await mkdir(path.dirname(file), { recursive: true });

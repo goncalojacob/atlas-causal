@@ -1,7 +1,7 @@
 {
   "attributeShards": [
     {
-      "file": "index/attributes-1400-1499-3c66d5bb20e3.json",
+      "file": "index/attributes-1400-1499-002482676e6e.json",
       "from": 1400,
       "key": "1400-1499",
       "to": 1499
@@ -13,25 +13,25 @@
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-627e1426c621.json",
+      "file": "index/attributes-1600-1699-3a0dc1f7edc9.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-3ce25c8b9ef3.json",
+      "file": "index/attributes-1700-1799-0e298840b8bb.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-4bb5c17136f4.json",
+      "file": "index/attributes-1800-1899-50c072d408e8.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-33d352743204.json",
+      "file": "index/attributes-1900-1999-32141739317f.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -860,9 +860,9 @@
     "narratives": 1,
     "offices": 11,
     "places": 26,
-    "presences": 6686,
+    "presences": 6687,
     "regions": 5,
-    "relations": 128,
+    "relations": 130,
     "sources": 35,
     "tenures": 83
   },
@@ -884,13 +884,13 @@
     }
   ],
   "files": {
-    "citers": "index/citers-11ad1048e212",
-    "core": "index/core-2d5270f70635.json",
+    "citers": "index/citers-dde03dbb2a4c",
+    "core": "index/core-0ff174b97876.json",
     "grounds": "index/grounds-8b5b1e62afda.json",
-    "presences": "index/presences-fce1d47078bc.json",
-    "review": "index/review-a08f3eaa1d86.json",
-    "search": "index/search-a6c5b9e4a321.json",
-    "sources": "index/sources-62cf6511323b.json"
+    "presences": "index/presences-06f5d3db3132.json",
+    "review": "index/review-24a548ed00ad.json",
+    "search": "index/search-41ce2adc19a6.json",
+    "sources": "index/sources-497d3753eddf.json"
   },
   "historyShards": [
     {
@@ -901,7 +901,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-ca93b1dcdf70.json",
+      "file": "index/history-event-1900-1999-8353aceb513b.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
@@ -943,7 +943,7 @@
       "to": null
     },
     {
-      "file": "index/history-actor-1400-1499-b342da726b5a.json",
+      "file": "index/history-actor-1400-1499-c8eb8a2d8021.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "actor",
@@ -957,28 +957,28 @@
       "to": 1599
     },
     {
-      "file": "index/history-actor-1600-1699-f49375e4e5ec.json",
+      "file": "index/history-actor-1600-1699-bf7e73bf8885.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "actor",
       "to": 1699
     },
     {
-      "file": "index/history-actor-1700-1799-37d4de68adc4.json",
+      "file": "index/history-actor-1700-1799-209641f17b83.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "actor",
       "to": 1799
     },
     {
-      "file": "index/history-actor-1800-1899-81dba49ecd58.json",
+      "file": "index/history-actor-1800-1899-b6af136acdae.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "actor",
       "to": 1899
     },
     {
-      "file": "index/history-actor-1900-1999-2b52c38ab456.json",
+      "file": "index/history-actor-1900-1999-7c9594016d33.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "actor",
@@ -1006,7 +1006,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-relation-1900-1999-44893bf1bfca.json",
+      "file": "index/history-relation-1900-1999-d016f66bdc57.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "relation",
