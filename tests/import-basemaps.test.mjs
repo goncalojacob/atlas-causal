@@ -354,6 +354,22 @@ test('the sweep never touches a shard this import does not own', async () => {
   assert.deepEqual(result.removed.filter((f) => f.includes('1886-1913')), []);
 });
 
+test('a run refuses an id that belongs to a record of another kind', async () => {
+  const { source, data } = await sandbox();
+  // An id is unique across the whole atlas and not per directory (rule 2), so
+  // a polity whose folded name is somebody's place is a mapping decision and
+  // not a merge. The real case is "Boe" in 1492, a polity in Brazil, against
+  // data/places/boe.json, which is Boé in Guinea-Bissau (deviation 722).
+  await mkdir(path.join(data, 'places'), { recursive: true });
+  await writeFile(path.join(data, 'places', 'westland.json'), JSON.stringify({
+    schema: 1, id: 'westland', kind: 'place', status: 'active', license: 'CC-BY-SA-4.0',
+  }, null, 2));
+  const result = await runImport(source, data, { today: '2026-09-16' });
+  assert.ok(result.failed.some((p) => /would take the id of the place "westland"/.test(p)), result.failed.join(' | '));
+  assert.ok(result.failed.some((p) => /basemaps-actors\.json/.test(p)));
+  assert.deepEqual(result.written, []);
+});
+
 test('--check refuses a source file that is not the one the import was written against', async () => {
   const { source, data } = await sandbox();
   const result = await runImport(source, data, { today: '2026-09-16', check: true });

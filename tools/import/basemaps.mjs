@@ -39,6 +39,7 @@ import { readSourceJson, sha256 } from './source.mjs';
 import { SEAM } from '../../src/map/projection.js';
 import { identityOnDisk, mergeIdentity } from './identity.mjs';
 import { isReviewed, writtenBy, REVIEW_STATUS } from '../../src/origin.js';
+import { KIND_DIRS } from '../../src/kinds.js';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 export const DEFAULT_DATA = path.join(ROOT, 'data');
@@ -481,6 +482,26 @@ async function survey(dir) {
   return { owned, foreign, signed };
 }
 
+// Every id already in use by a record of some other kind. A record id is
+// unique across the whole atlas and not per directory (rule 2), so an actor
+// this import wants to create can collide with somebody's place — "Boe" in the
+// 1492 snapshot is a polity in Brazil and data/places/boe.json is Boé in
+// Guinea-Bissau, where independence was declared in 1973. Two unrelated things
+// that fold to one string, which is exactly the case the mapping file exists
+// for; the import reports it and refuses rather than choosing (deviation 722).
+async function idsOfOtherKinds(dataDir, mine) {
+  const taken = new Map();
+  for (const [kind, sub] of Object.entries(KIND_DIRS)) {
+    if (sub === mine) continue;
+    const dir = path.join(dataDir, sub);
+    if (!existsSync(dir)) continue;
+    for (const name of await readdir(dir)) {
+      if (name.endsWith('.json')) taken.set(name.slice(0, -'.json'.length), kind);
+    }
+  }
+  return taken;
+}
+
 const asText = (value) => `${JSON.stringify(value, null, 2)}\n`;
 // Geometry is written the way the rest of data/geo/ is: compact, keys sorted,
 // no indentation (STATUS.md, deviation 9).
@@ -581,9 +602,14 @@ export async function runImport(sourceDir = DEFAULT_SOURCE, dataDir = DEFAULT_DA
   notes.push(...plan.notes);
 
   const writes = [];
-  const claim = (dir, dirName, surveyed, records) => {
+  const claim = (dir, dirName, surveyed, records, taken) => {
     for (const rec of records) {
       const file = `${rec.id}.json`;
+      const elsewhere = taken.get(rec.id);
+      if (elsewhere) {
+        failed.push(`data/${dirName}/${file} would take the id of the ${elsewhere} "${rec.id}", and an id is unique across the whole atlas; give it a different one in data/${MAP_FILE}`);
+        continue;
+      }
       if (surveyed.foreign.has(file)) {
         failed.push(`data/${dirName}/${file} was not written by this import; give ${rec.id} an entry in data/${MAP_FILE} or rename it rather than overwriting somebody's record`);
         continue;
@@ -599,8 +625,8 @@ export async function runImport(sourceDir = DEFAULT_SOURCE, dataDir = DEFAULT_DA
     }
   };
   if (!geometryOnly) {
-    claim(actorsDir, 'actors', actorSurvey, plan.actors);
-    claim(presencesDir, 'presences', presenceSurvey, plan.presences);
+    claim(actorsDir, 'actors', actorSurvey, plan.actors, await idsOfOtherKinds(dataDir, 'actors'));
+    claim(presencesDir, 'presences', presenceSurvey, plan.presences, await idsOfOtherKinds(dataDir, 'presences'));
 
     const sourceCreated = ownedBy(sourceOnDisk) ? sourceOnDisk.created : sourceOnDisk ? null : today;
     if (sourceCreated === null) {
