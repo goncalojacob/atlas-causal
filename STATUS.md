@@ -9359,15 +9359,22 @@ file changed, no new record type, confidence value, edge type, hex value, token
 or type size; no runtime dependency and no build step; nothing merged into
 `main`; `docs/drafts/` untouched.
 
-**What the owner should look at first.** The three disputed edges, because they
-are the first real test of whether the interface shows a disagreement instead
-of asserting a line — open
-`the-atlantic-slave-trade-to-the-caribbean → the-british-industrial-revolution`
-and see whether Engerman's five per cent reads as a dissent or as decoration.
-Then `docs/m50-chains.md`, "the arrow that is not here", which is the decision
-this milestone is most likely to be argued with about. Then the §5 screenshots,
-in the order graph, focus, window: three pictures and one sentence between
-them.
+**§4's question is answered, and the answer is yes.** The brief asks whether the
+interface can show a disagreement instead of asserting a line.
+`docs/screens/m50-disputed-edge.png` is a reader arriving at the Industrial
+Revolution through the Williams edge: the breadcrumb carries a boxed
+**DISPUTED** beside the type, and a madder banner across the panel says *"You
+arrived here through a disputed link. Read the dispute before going on."* The
+atlas does not merely record the dissent where somebody might find it — it
+stops the reader on the way past. Nothing in this milestone changed that; M50
+is the first corpus to give it something worth stopping for.
+
+**What the owner should look at first.** That screenshot, and then the edge
+itself, to see whether Engerman's five per cent reads as an argument or as
+decoration once it is open. Then `docs/m50-chains.md`, "the arrow that is not
+here", which is the decision this milestone is most likely to be argued with
+about. Then the §5 screenshots, in the order graph, focus, window: three
+pictures and one sentence between them.
 
 ### Deviations
 

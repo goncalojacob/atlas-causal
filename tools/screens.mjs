@@ -218,6 +218,16 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&from=1480&to=1980&view=graph&focus=event:the-atlantic-slave-trade-to-brazil&chain=the-atlantic-slave-trade-to-brazil--proclamation-of-the-brazilian-republic-1889--precondition-of&selected=proclamation-of-the-brazilian-republic-1889',
     width: 1440, height: 900,
     what: 'the same lens with the window opened to 1480-1980: all ten nodes, and the long edge whole' },
+  // And the thing M50 says the owner should look at first: a disputed edge
+  // with its dispute open. §4 of the brief asks whether the interface can show
+  // a disagreement instead of asserting a line, and the Williams question is
+  // where that value earns its place — the claim on one side, Engerman's five
+  // per cent and Richardson's one per cent on the other, in the record rather
+  // than in a footnote somebody has to go and find.
+  { name: 'm50-disputed-edge', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1480&to=1980&chain=the-atlantic-slave-trade-to-the-caribbean--the-british-industrial-revolution--enabled&selected=the-british-industrial-revolution',
+    width: 1440, height: 900,
+    what: 'a disputed edge with its dispute: the Williams thesis, and the two historians who put a number against it' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
