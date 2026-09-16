@@ -3380,6 +3380,37 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 2,
+      "id": "cuban-war-of-independence-1895-1898",
+      "kind": "event",
+      "names": [
+        "Guerra de Independencia cubana"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Cuban War of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "ramos-2009-historia-de-portugal"
       ],
@@ -4641,7 +4672,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 3,
       "id": "haitian-revolution-1791-1804",
       "kind": "event",
       "names": [
@@ -6274,6 +6305,37 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 1,
+      "id": "platt-amendment-1901",
+      "kind": "event",
+      "names": [
+        "Enmienda Platt"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Platt Amendment"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
@@ -7201,6 +7263,37 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 3,
+      "id": "spanish-american-war-1898",
+      "kind": "event",
+      "names": [
+        "Guerra hispano-estadounidense"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Spanish–American War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -7364,7 +7457,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 8,
+      "degree": 9,
       "id": "the-atlantic-slave-trade-to-the-caribbean",
       "kind": "event",
       "names": [
@@ -7537,6 +7630,37 @@
       "revised": null,
       "status": "active",
       "title": "The Caribbean sugar revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 4,
+      "id": "the-cuban-sugar-boom",
+      "kind": "event",
+      "names": [
+        "Auge azucarero cubano"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Cuban sugar boom"
     },
     {
       "authors": [

@@ -1,0 +1,53 @@
+{
+  "from": 1700,
+  "kind": "edge",
+  "records": {
+    "haitian-revolution-1791-1804--the-cuban-sugar-boom--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-british-industrial-revolution--slave-trade-act-1807--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-cuban-sugar-boom--cuban-war-of-independence-1895-1898--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-cuban-sugar-boom--spanish-american-war-1898--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--transfer-of-the-portuguese-court-to-brazil-1807--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1799
+}

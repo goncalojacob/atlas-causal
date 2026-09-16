@@ -7916,6 +7916,15 @@
         }
       ]
     },
+    "platt-amendment-1901": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
     "polish-soviet-war": {
       "from": "git",
       "versions": [

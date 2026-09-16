@@ -77,3 +77,9 @@ justification in the first place.
 | `the-atlantic-slave-trade-to-the-caribbean--the-baptist-war-1831--precondition-of` | probable | `wikipedia-en`, `wikipedia-en`, `wikipedia-en` | three enslaved people for every planter is the ground the strike stood on |
 | `the-baptist-war-1831--slavery-abolition-act-1833--caused` | probable | `wikipedia-en` | the rebellion, the two inquiries, and the Act twenty months later |
 | `slave-trade-act-1807--slavery-abolition-act-1833--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | the trade first, the institution twenty-six years later, and the machinery in between |
+| `haitian-revolution-1791-1804--the-cuban-sugar-boom--caused` | probable | `wikipedia-en`, `wikipedia-en` | Saint-Domingue stopped producing and the market moved to Cuba — and so did the fear |
+| `the-atlantic-slave-trade-to-the-caribbean--the-cuban-sugar-boom--enabled` | probable | `wikipedia-en`, `wikipedia-en`, `wikipedia-en` | the last market of the traffic, working until 1886 |
+| `the-cuban-sugar-boom--cuban-war-of-independence-1895-1898--caused` | probable | `wikipedia-en`, `wikipedia-en` | abolition, consolidation, and a colony no longer trading with the power that held it |
+| `cuban-war-of-independence-1895-1898--spanish-american-war-1898--caused` | probable | `wikipedia-en`, `wikipedia-en` | the last three months of one war are the whole of the other |
+| `the-cuban-sugar-boom--spanish-american-war-1898--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | American money owned the sugar and wanted peace — which is still why Cuba was America’s to intervene in |
+| `spanish-american-war-1898--platt-amendment-1901--caused` | probable | `wikipedia-en`, `wikipedia-en` | the terms on which the occupation of 1898 agreed to leave |

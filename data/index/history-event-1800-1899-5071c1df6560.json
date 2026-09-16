@@ -272,6 +272,15 @@
         }
       ]
     },
+    "cuban-war-of-independence-1895-1898": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
     "eusebio-de-queiros-law-1850": {
       "from": "git",
       "versions": [
@@ -415,6 +424,15 @@
     },
     "slavery-abolition-act-1833": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "spanish-american-war-1898": {
+      "from": "revised",
       "versions": [
         {
           "first": true,

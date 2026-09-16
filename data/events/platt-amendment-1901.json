@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "platt-amendment-1901",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Platt Amendment\", revision 1361644701"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    }
+  ],
+  "title": "The Platt Amendment",
+  "summary": "American legislation carried in the Army Appropriations Act of 1901, setting seven conditions for the withdrawal of the troops still in Cuba and an eighth requiring Cuba to sign a treaty accepting the other seven. The Cuban Constitutional Assembly approved it on 12 June 1901 and wrote its demands into the constitution word for word; the Cuban–American Treaty of Relations followed on 22 May 1903. Two of the seven mattered most: the United States could intervene unilaterally in Cuban affairs, and Cuba had to lease it land for naval stations. One of those leases is Guantánamo Bay, and the United States holds it still.",
+  "when": {
+    "start": 1901,
+    "end": 1901,
+    "date": "1901-06-12"
+  },
+  "place": "havana",
+  "actors": [],
+  "names": [
+    "Enmienda Platt"
+  ]
+}

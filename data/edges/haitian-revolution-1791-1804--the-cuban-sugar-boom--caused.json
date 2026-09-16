@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "haitian-revolution-1791-1804--the-cuban-sugar-boom--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    }
+  ],
+  "from": "haitian-revolution-1791-1804",
+  "to": "the-cuban-sugar-boom",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The cited account is direct: after the end of slavery in Saint-Domingue at the turn of the nineteenth century, with the Haitian Revolution, Cuba became the most substantial sugar plantation colony in the Caribbean, outperforming the British islands. The richest producer in the world stopped producing and the market went to the island next to it. The revolution’s second effect on Cuba runs the other way and is in the same sources: the white upper class was so afraid of following Haiti that it supported Spanish rule intensely, which is part of why Cuba was still a slave colony of Spain when its neighbours had been republics for two generations.",
+  "dispute": null
+}

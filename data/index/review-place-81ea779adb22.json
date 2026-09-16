@@ -318,6 +318,7 @@
         }
       ],
       "created": "2026-09-16",
+      "degree": 3,
       "id": "havana",
       "kind": "place",
       "names": [
@@ -826,6 +827,7 @@
         }
       ],
       "created": "2026-09-16",
+      "degree": 1,
       "id": "santiago-de-cuba",
       "kind": "place",
       "names": [
@@ -1020,19 +1022,7 @@
       "rule": "place-unused"
     },
     {
-      "id": "havana",
-      "kind": "place",
-      "message": "place is referenced by no event",
-      "rule": "place-unused"
-    },
-    {
       "id": "saint-denis",
-      "kind": "place",
-      "message": "place is referenced by no event",
-      "rule": "place-unused"
-    },
-    {
-      "id": "santiago-de-cuba",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"

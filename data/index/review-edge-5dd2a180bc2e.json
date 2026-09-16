@@ -3186,6 +3186,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "cuban-war-of-independence-1895-1898",
+      "id": "cuban-war-of-independence-1895-1898--spanish-american-war-1898--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "spanish-american-war-1898",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "ramos-2009-historia-de-portugal"
       ],
@@ -4613,6 +4642,35 @@
       "status": "active",
       "to": "iraq-war",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "haitian-revolution-1791-1804",
+      "id": "haitian-revolution-1791-1804--the-cuban-sugar-boom--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "the-cuban-sugar-boom",
+      "type": "caused"
     },
     {
       "authors": [
@@ -7132,6 +7190,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "spanish-american-war-1898",
+      "id": "spanish-american-war-1898--platt-amendment-1901--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "platt-amendment-1901",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "wikipedia-en"
       ],
@@ -7508,6 +7595,35 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
+      "from": "the-atlantic-slave-trade-to-the-caribbean",
+      "id": "the-atlantic-slave-trade-to-the-caribbean--the-cuban-sugar-boom--enabled",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "the-cuban-sugar-boom",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
       "from": "the-baptist-war-1831",
       "id": "the-baptist-war-1831--slavery-abolition-act-1833--caused",
       "kind": "edge",
@@ -7757,6 +7873,64 @@
       "status": "active",
       "to": "the-atlantic-slave-trade-to-the-caribbean",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "the-cuban-sugar-boom",
+      "id": "the-cuban-sugar-boom--cuban-war-of-independence-1895-1898--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cuban-war-of-independence-1895-1898",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "the-cuban-sugar-boom",
+      "id": "the-cuban-sugar-boom--spanish-american-war-1898--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "spanish-american-war-1898",
+      "type": "precondition-of"
     },
     {
       "authors": [

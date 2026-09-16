@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-cuban-sugar-boom--cuban-war-of-independence-1895-1898--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    }
+  ],
+  "from": "the-cuban-sugar-boom",
+  "to": "cuban-war-of-independence-1895-1898",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Abolition in 1886 broke the arrangement that had held Cuba to Spain. The freedmen went into the countryside and the towns; the economy could not carry the speed of the reform; wealthy Cubans lost property and fell into the middle class; the mills consolidated into the hands of companies and the largest owners, increasingly American ones. By 1894 ninety per cent of Cuban exports went to the United States and Cuba’s exports to Spain were a twelfth of that. A colony whose commerce had stopped running through its metropole, with a dispossessed creole class in it, is the one that rose in 1895.",
+  "dispute": null
+}

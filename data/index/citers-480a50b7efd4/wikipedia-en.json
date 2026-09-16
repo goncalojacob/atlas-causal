@@ -350,6 +350,18 @@
     },
     {
       "dissent": false,
+      "id": "cuban-war-of-independence-1895-1898--spanish-american-war-1898--caused",
+      "kind": "edge",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    },
+    {
+      "dissent": false,
+      "id": "cuban-war-of-independence-1895-1898--spanish-american-war-1898--caused",
+      "kind": "edge",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    },
+    {
+      "dissent": false,
       "id": "dutch-brazil-1630-1654--the-caribbean-sugar-revolution--caused",
       "kind": "edge",
       "locator": "\"Dutch Brazil\", revision 1371124077"
@@ -635,6 +647,18 @@
       "id": "gulf-war--iraq-war--precondition-of",
       "kind": "edge",
       "locator": "\"Iraq War\", revision 1373215695"
+    },
+    {
+      "dissent": false,
+      "id": "haitian-revolution-1791-1804--the-cuban-sugar-boom--caused",
+      "kind": "edge",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    },
+    {
+      "dissent": false,
+      "id": "haitian-revolution-1791-1804--the-cuban-sugar-boom--caused",
+      "kind": "edge",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
     },
     {
       "dissent": false,
@@ -1190,6 +1214,18 @@
     },
     {
       "dissent": false,
+      "id": "spanish-american-war-1898--platt-amendment-1901--caused",
+      "kind": "edge",
+      "locator": "\"Platt Amendment\", revision 1361644701"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-american-war-1898--platt-amendment-1901--caused",
+      "kind": "edge",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    },
+    {
+      "dissent": false,
       "id": "spanish-civil-war--iberian-pact--caused",
       "kind": "edge",
       "locator": "\"Spanish Civil War\", revision 1373335825"
@@ -1346,6 +1382,24 @@
     },
     {
       "dissent": false,
+      "id": "the-atlantic-slave-trade-to-the-caribbean--the-cuban-sugar-boom--enabled",
+      "kind": "edge",
+      "locator": "\"Atlantic slave trade\", revision 1375257090"
+    },
+    {
+      "dissent": false,
+      "id": "the-atlantic-slave-trade-to-the-caribbean--the-cuban-sugar-boom--enabled",
+      "kind": "edge",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    },
+    {
+      "dissent": false,
+      "id": "the-atlantic-slave-trade-to-the-caribbean--the-cuban-sugar-boom--enabled",
+      "kind": "edge",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "dissent": false,
       "id": "the-baptist-war-1831--slavery-abolition-act-1833--caused",
       "kind": "edge",
       "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
@@ -1469,6 +1523,30 @@
       "id": "the-caribbean-sugar-revolution--the-atlantic-slave-trade-to-the-caribbean--caused",
       "kind": "edge",
       "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "dissent": false,
+      "id": "the-cuban-sugar-boom--cuban-war-of-independence-1895-1898--caused",
+      "kind": "edge",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    },
+    {
+      "dissent": false,
+      "id": "the-cuban-sugar-boom--cuban-war-of-independence-1895-1898--caused",
+      "kind": "edge",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    },
+    {
+      "dissent": false,
+      "id": "the-cuban-sugar-boom--spanish-american-war-1898--precondition-of",
+      "kind": "edge",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    },
+    {
+      "dissent": false,
+      "id": "the-cuban-sugar-boom--spanish-american-war-1898--precondition-of",
+      "kind": "edge",
+      "locator": "\"Spanish–American War\", revision 1374740923"
     },
     {
       "dissent": false,
@@ -2204,6 +2282,12 @@
     },
     {
       "dissent": false,
+      "id": "cuban-war-of-independence-1895-1898",
+      "kind": "event",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    },
+    {
+      "dissent": false,
       "id": "dutch-brazil-1630-1654",
       "kind": "event",
       "locator": "\"Dutch Brazil\", revision 1371124077"
@@ -2444,6 +2528,18 @@
     },
     {
       "dissent": false,
+      "id": "platt-amendment-1901",
+      "kind": "event",
+      "locator": "\"Platt Amendment\", revision 1361644701"
+    },
+    {
+      "dissent": false,
+      "id": "platt-amendment-1901",
+      "kind": "event",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    },
+    {
+      "dissent": false,
       "id": "portuguese-landfall-in-brazil-1500",
       "kind": "event",
       "locator": "\"Colonial Brazil\", revision 1371077435"
@@ -2534,6 +2630,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-american-war-1898",
+      "kind": "event",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    },
+    {
+      "dissent": false,
       "id": "spanish-civil-war",
       "kind": "event",
       "locator": "\"Spanish Civil War\", revision 1373335825"
@@ -2613,6 +2715,24 @@
     {
       "dissent": false,
       "id": "the-caribbean-sugar-revolution",
+      "kind": "event",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "dissent": false,
+      "id": "the-cuban-sugar-boom",
+      "kind": "event",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    },
+    {
+      "dissent": false,
+      "id": "the-cuban-sugar-boom",
+      "kind": "event",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    },
+    {
+      "dissent": false,
+      "id": "the-cuban-sugar-boom",
       "kind": "event",
       "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
     },

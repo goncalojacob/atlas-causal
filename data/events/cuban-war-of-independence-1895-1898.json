@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "cuban-war-of-independence-1895-1898",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    }
+  ],
+  "title": "The Cuban War of Independence",
+  "summary": "The last of three wars Cuba fought against Spain, after the Ten Years’ War of 1868–78 and the Little War of 1879–80. Spain sent 220,285 soldiers across the Atlantic, the largest such army before the Second World War, and built the first modern concentration camps under the reconcentration policy of Valeriano Weyler: at least 170,000 Cubans died in them, a tenth of the population. José Martí, who had organised the movement from exile in Florida and lobbied against American annexation as well as against Spain, was killed in 1895. The last three months of the war became the Spanish–American War.",
+  "when": {
+    "start": 1895,
+    "end": 1898
+  },
+  "place": "santiago-de-cuba",
+  "actors": [],
+  "names": [
+    "Guerra de Independencia cubana"
+  ]
+}
