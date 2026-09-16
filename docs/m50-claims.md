@@ -74,3 +74,6 @@ justification in the first place.
 | `the-brazilian-gold-cycle--the-british-industrial-revolution--enabled` | disputed | `wikipedia-en`, `wikipedia-en`, `wikipedia-en` | Minas gold spent in Lisbon on manufactures it could not make — and whether that mattered in Manchester |
 | `the-british-industrial-revolution--slave-trade-act-1807--enabled` | disputed | `wikipedia-en`, `wikipedia-en` | the decline thesis, against Drescher’s Econocide and the abolition of a trade at its peak |
 | `slave-trade-act-1807--aberdeen-act-1845--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | a state that had closed its own trade could then press other states to close theirs |
+| `the-atlantic-slave-trade-to-the-caribbean--the-baptist-war-1831--precondition-of` | probable | `wikipedia-en`, `wikipedia-en`, `wikipedia-en` | three enslaved people for every planter is the ground the strike stood on |
+| `the-baptist-war-1831--slavery-abolition-act-1833--caused` | probable | `wikipedia-en` | the rebellion, the two inquiries, and the Act twenty months later |
+| `slave-trade-act-1807--slavery-abolition-act-1833--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | the trade first, the institution twenty-six years later, and the machinery in between |

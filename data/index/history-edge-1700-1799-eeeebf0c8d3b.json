@@ -3,7 +3,7 @@
   "kind": "edge",
   "records": {
     "the-british-industrial-revolution--slave-trade-act-1807--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

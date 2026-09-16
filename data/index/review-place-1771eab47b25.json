@@ -414,7 +414,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 3,
+      "degree": 4,
       "id": "london",
       "kind": "place",
       "names": [
@@ -495,6 +495,30 @@
       "kind": "place",
       "names": [
         "Manchester"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-16",
+      "degree": 1,
+      "id": "montego-bay",
+      "kind": "place",
+      "names": [
+        "Montego Bay, Saint James, Jamaica"
       ],
       "origin": {
         "run": "m50",

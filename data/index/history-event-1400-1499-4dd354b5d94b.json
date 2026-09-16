@@ -3,7 +3,7 @@
   "kind": "event",
   "records": {
     "indigenous-depopulation-of-the-greater-antilles": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -12,7 +12,7 @@
       ]
     },
     "the-first-columbian-voyage-1492": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

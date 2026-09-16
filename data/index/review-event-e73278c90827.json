@@ -7093,7 +7093,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 3,
       "id": "slave-trade-act-1807",
       "kind": "event",
       "names": [
@@ -7112,6 +7112,34 @@
       "revised": null,
       "status": "active",
       "title": "The Slave Trade Act 1807"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 2,
+      "id": "slavery-abolition-act-1833",
+      "kind": "event",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Slavery Abolition Act 1833"
     },
     {
       "authors": [
@@ -7336,7 +7364,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 7,
+      "degree": 8,
       "id": "the-atlantic-slave-trade-to-the-caribbean",
       "kind": "event",
       "names": [
@@ -7355,6 +7383,38 @@
       "revised": null,
       "status": "active",
       "title": "The Atlantic slave trade to the Caribbean"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "degree": 2,
+      "id": "the-baptist-war-1831",
+      "kind": "event",
+      "names": [
+        "Christmas Rebellion",
+        "Great Jamaican Slave Revolt"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Baptist War"
     },
     {
       "authors": [

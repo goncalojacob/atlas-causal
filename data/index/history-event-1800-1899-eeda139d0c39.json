@@ -405,6 +405,15 @@
       ]
     },
     "slave-trade-act-1807": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "slavery-abolition-act-1833": {
       "from": "revised",
       "versions": [
         {
@@ -415,6 +424,15 @@
     },
     "strangford-treaty-1810": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-baptist-war-1831": {
+      "from": "revised",
       "versions": [
         {
           "first": true,

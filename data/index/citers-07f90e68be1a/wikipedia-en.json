@@ -1178,6 +1178,18 @@
     },
     {
       "dissent": false,
+      "id": "slave-trade-act-1807--slavery-abolition-act-1833--precondition-of",
+      "kind": "edge",
+      "locator": "\"Slave Trade Act 1807\", revision 1373209565"
+    },
+    {
+      "dissent": false,
+      "id": "slave-trade-act-1807--slavery-abolition-act-1833--precondition-of",
+      "kind": "edge",
+      "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
+    },
+    {
+      "dissent": false,
       "id": "spanish-civil-war--iberian-pact--caused",
       "kind": "edge",
       "locator": "\"Spanish Civil War\", revision 1373335825"
@@ -1292,6 +1304,24 @@
     },
     {
       "dissent": false,
+      "id": "the-atlantic-slave-trade-to-the-caribbean--the-baptist-war-1831--precondition-of",
+      "kind": "edge",
+      "locator": "\"Atlantic slave trade\", revision 1375257090"
+    },
+    {
+      "dissent": false,
+      "id": "the-atlantic-slave-trade-to-the-caribbean--the-baptist-war-1831--precondition-of",
+      "kind": "edge",
+      "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
+    },
+    {
+      "dissent": false,
+      "id": "the-atlantic-slave-trade-to-the-caribbean--the-baptist-war-1831--precondition-of",
+      "kind": "edge",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "dissent": false,
       "id": "the-atlantic-slave-trade-to-the-caribbean--the-british-industrial-revolution--enabled",
       "kind": "edge",
       "locator": "\"Capitalism and Slavery\", revision 1341902916"
@@ -1313,6 +1343,12 @@
       "id": "the-atlantic-slave-trade-to-the-caribbean--the-british-industrial-revolution--enabled",
       "kind": "edge",
       "locator": "\"Capitalism and Slavery\", the criticism of the Williams theses, revision 1341902916"
+    },
+    {
+      "dissent": false,
+      "id": "the-baptist-war-1831--slavery-abolition-act-1833--caused",
+      "kind": "edge",
+      "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
     },
     {
       "dissent": false,
@@ -2492,6 +2528,12 @@
     },
     {
       "dissent": false,
+      "id": "slavery-abolition-act-1833",
+      "kind": "event",
+      "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
+    },
+    {
+      "dissent": false,
       "id": "spanish-civil-war",
       "kind": "event",
       "locator": "\"Spanish Civil War\", revision 1373335825"
@@ -2531,6 +2573,12 @@
       "id": "the-atlantic-slave-trade-to-the-caribbean",
       "kind": "event",
       "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "dissent": false,
+      "id": "the-baptist-war-1831",
+      "kind": "event",
+      "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
     },
     {
       "dissent": false,

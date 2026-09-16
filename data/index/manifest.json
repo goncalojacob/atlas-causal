@@ -13,7 +13,7 @@
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-8738c1686283.json",
+      "file": "index/attributes-1600-1699-6f71d850a95d.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
@@ -25,7 +25,7 @@
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-419b9089b73d.json",
+      "file": "index/attributes-1800-1899-55f33ab71c21.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
@@ -49,7 +49,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-9ea65468e96d.json",
+      "file": "index/attributes-place-379b913e398a.json",
       "from": null,
       "key": "place",
       "to": null
@@ -855,11 +855,11 @@
   ],
   "counts": {
     "actors": 2687,
-    "edges": 316,
-    "events": 542,
+    "edges": 319,
+    "events": 544,
     "narratives": 1,
     "offices": 11,
-    "places": 41,
+    "places": 42,
     "presences": 6687,
     "regions": 5,
     "relations": 130,
@@ -878,7 +878,7 @@
       "to": 1599
     },
     {
-      "file": "index/explanations-1600-1699-fda62c41c9b9.json",
+      "file": "index/explanations-1600-1699-99bfd9c07ae4.json",
       "from": 1600,
       "to": 1699
     },
@@ -888,7 +888,7 @@
       "to": 1799
     },
     {
-      "file": "index/explanations-1800-1899-677eb33b2d31.json",
+      "file": "index/explanations-1800-1899-1de091ec1f14.json",
       "from": 1800,
       "to": 1899
     },
@@ -904,17 +904,17 @@
     }
   ],
   "files": {
-    "citers": "index/citers-84017053d037",
-    "core": "index/core-de91a4a5e4e7.json",
-    "grounds": "index/grounds-8db12fbcb083.json",
+    "citers": "index/citers-07f90e68be1a",
+    "core": "index/core-4212546f7d56.json",
+    "grounds": "index/grounds-9fbacfd338e7.json",
     "presences": "index/presences-fce26e6b033b.json",
-    "review": "index/review-f0369ca29daa.json",
-    "search": "index/search-c86dc6d74ff9.json",
-    "sources": "index/sources-7b7352f90388.json"
+    "review": "index/review-6be1eebcfb5f.json",
+    "search": "index/search-9b32d9a36c80.json",
+    "sources": "index/sources-58cbebeec584.json"
   },
   "historyShards": [
     {
-      "file": "index/history-event-1400-1499-c7d385a469ee.json",
+      "file": "index/history-event-1400-1499-4dd354b5d94b.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "event",
@@ -928,21 +928,21 @@
       "to": 1599
     },
     {
-      "file": "index/history-event-1600-1699-30c5a13a2e5f.json",
+      "file": "index/history-event-1600-1699-3abf1626eae5.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "event",
       "to": 1699
     },
     {
-      "file": "index/history-event-1700-1799-beb5f0e13364.json",
+      "file": "index/history-event-1700-1799-05455a62bc99.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "event",
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-472c6f727bc9.json",
+      "file": "index/history-event-1800-1899-eeda139d0c39.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
@@ -963,7 +963,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-edge-1400-1499-cb2fc82cd0ec.json",
+      "file": "index/history-edge-1400-1499-9d01c6ea8ce8.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "edge",
@@ -977,21 +977,21 @@
       "to": 1599
     },
     {
-      "file": "index/history-edge-1600-1699-32db7701ae95.json",
+      "file": "index/history-edge-1600-1699-2bba48422951.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "edge",
       "to": 1699
     },
     {
-      "file": "index/history-edge-1700-1799-05583499198c.json",
+      "file": "index/history-edge-1700-1799-eeeebf0c8d3b.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "edge",
       "to": 1799
     },
     {
-      "file": "index/history-edge-1800-1899-27e7d0a879fb.json",
+      "file": "index/history-edge-1800-1899-996ef59fdc10.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "edge",
@@ -1068,7 +1068,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-aa57e2324516.json",
+      "file": "index/history-place-place-dcbabee5b112.json",
       "from": null,
       "key": "place",
       "kind": "place",

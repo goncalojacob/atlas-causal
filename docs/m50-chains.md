@@ -98,6 +98,7 @@ Centre: `the-atlantic-slave-trade-to-the-caribbean`.
 | `saint-domingue-and-the-french-sugar-colony` | |
 | `haitian-revolution-1791-1804` | |
 | `slave-trade-act-1807` | shared |
+| `the-baptist-war-1831` | |
 | `slavery-abolition-act-1833` | |
 | `the-cuban-sugar-boom` | |
 | `cuban-war-of-independence-1895-1898` | |

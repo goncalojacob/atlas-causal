@@ -3,7 +3,7 @@
   "kind": "event",
   "records": {
     "haitian-revolution-1791-1804": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -12,7 +12,7 @@
       ]
     },
     "the-british-industrial-revolution": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

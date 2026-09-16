@@ -381,6 +381,15 @@
         }
       ]
     },
+    "montego-bay": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
     "near-villanueva-del-fresno": {
       "from": "git",
       "versions": [

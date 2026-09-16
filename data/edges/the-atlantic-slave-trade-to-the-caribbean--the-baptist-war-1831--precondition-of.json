@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "the-atlantic-slave-trade-to-the-caribbean--the-baptist-war-1831--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Atlantic slave trade\", revision 1375257090"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
+    }
+  ],
+  "from": "the-atlantic-slave-trade-to-the-caribbean",
+  "to": "the-baptist-war-1831",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "What struck in Jamaica at Christmas 1831 was the population the traffic had assembled: by the eighteenth century the sugar islands held three enslaved Africans for every planter, and the estates had grown from smallholdings into units of sixty and more. The weak type is right here. The traffic did not organise the strike — a Baptist minister did — and the atlas should not take the agency of the people who withdrew their labour and hand it to the thing that had been done to them. What it supplied is the demographic ground.",
+  "dispute": null
+}

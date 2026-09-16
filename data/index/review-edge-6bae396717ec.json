@@ -7103,6 +7103,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "slave-trade-act-1807",
+      "id": "slave-trade-act-1807--slavery-abolition-act-1833--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "slavery-abolition-act-1833",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "wikipedia-en"
       ],
@@ -7422,6 +7451,35 @@
       ],
       "created": "2026-09-16",
       "from": "the-atlantic-slave-trade-to-the-caribbean",
+      "id": "the-atlantic-slave-trade-to-the-caribbean--the-baptist-war-1831--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "the-baptist-war-1831",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "the-atlantic-slave-trade-to-the-caribbean",
       "id": "the-atlantic-slave-trade-to-the-caribbean--the-british-industrial-revolution--enabled",
       "kind": "edge",
       "origin": {
@@ -7438,6 +7496,35 @@
       "status": "active",
       "to": "the-british-industrial-revolution",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "the-baptist-war-1831",
+      "id": "the-baptist-war-1831--slavery-abolition-act-1833--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "slavery-abolition-act-1833",
+      "type": "caused"
     },
     {
       "authors": [
