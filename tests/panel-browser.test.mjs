@@ -13,7 +13,16 @@ import { withBrowser, open, waitFor, seenIntro, skip } from './browser.mjs';
 import { atlasOf, ROOT } from './helpers.mjs';
 import { defaultState } from '../src/state.js';
 import { horizonSet, horizonYear } from '../src/horizon.js';
-import { MARGIN_YEARS } from '../src/util/window.js';
+import { MARGIN_YEARS, resolveWindow } from '../src/util/window.js';
+
+// The band a URL that names neither bound actually opens on. It was the whole
+// extent while the corpus began in 1890; since M50 put events back to 1492 the
+// extent is five centuries and `opensOn` answers with one of them
+// (src/util/window.js), which is what M43b built it to do.
+const opensOn = async () => {
+  const atlas = await atlasOf(path.join(ROOT, 'data'));
+  return resolveWindow(defaultState(), atlas.extent, atlas.opens);
+};
 
 // A real drag of one end of the time band: press on the handle, move across
 // the lanes, let go. The events are dispatched rather than synthesised at a
@@ -334,8 +343,14 @@ test('a cluster’s list survives the bbox the zoom writes when it settles', { s
 // card being drawn again.
 test('a place’s faded rows follow the band without rebuilding the card', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url('?place=lisbon'));
+    // The whole span by name. It used to be what a URL naming no band got, and
+    // this test is about a list faded against the band rather than about which
+    // band the atlas opens on, so it asks for the one it means.
+    const whole = await opensOn();
+    const atlas = await atlasOf(path.join(ROOT, 'data'));
+    await open(page, url(`?place=lisbon&from=${atlas.extent.min}&to=${atlas.extent.max}`));
     await waitFor(page, 'return document.querySelectorAll("#timeline [data-window]").length === 3;', 'the band');
+    assert.ok(whole, 'the atlas has a window to open on');
     const before = await page.eval(`document.querySelector('.panel .place-head h2').dataset.kept = 'yes';
       return {
         faded: document.querySelectorAll('.card-section[data-section="events"] .actor-row.faded').length,
@@ -397,7 +412,11 @@ test('Back comes back to the picture, and the URL says so', { skip }, async () =
     assert.deepEqual(after.url, { selected: 'carnation-revolution-1974' });
     assert.equal(after.graphShown, false, 'the map is back with the entry that had no view');
     assert.equal(after.pressed, 'true');
-    assert.equal(after.from, after.whole, 'the band is the whole span again');
+    // The entry carried no band, so what comes back is the band a URL with no
+    // band gets — the window the atlas opens on, which since M50 is not the
+    // whole extent. `after.whole` is the slider's floor and stays the extent.
+    assert.equal(after.from, (await opensOn()).from, 'the band is the entry\'s again');
+    assert.ok(after.whole <= after.from, 'and the slider still reaches the whole extent');
   });
 });
 

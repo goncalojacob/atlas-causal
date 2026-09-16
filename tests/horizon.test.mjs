@@ -10,7 +10,7 @@ import { defaultState } from '../src/state.js';
 import {
   horizonSet, horizonResults, horizonYear, horizonBand, rankByCost, RANKED,
 } from '../src/horizon.js';
-import { resolveHorizon, horizonIsOpen } from '../src/util/window.js';
+import { resolveHorizon, horizonIsOpen, resolveWindow } from '../src/util/window.js';
 import {
   shortestPaths, pathTo, stepCost, pathCost, convergence, convergenceByDepth, reachableBy,
 } from '../src/graph.js';
@@ -44,8 +44,16 @@ test('distance becomes three bands, not twenty steps of opacity', () => {
 const atlas = await atlasOf(dataDir);
 const ctx = context(atlas);
 
+// The far end of the window a reader who names neither bound actually gets.
+// It was `atlas.extent.max` while the corpus began in 1890 and there was no
+// opening window to compute; M50 put events back to 1492, the whole extent
+// became five centuries, and `opensOn` started answering — which is what M43b
+// built it to do. Written as the rule rather than as the year, so that the
+// next milestone to widen the corpus does not have to come back here.
+const opensTo = () => resolveWindow(defaultState(), atlas.extent, atlas.opens).to;
+
 test("the horizon year is the reader's own, or the window's far end", async () => {
-  assert.equal(horizonYear(atlas, defaultState()), atlas.extent.max);
+  assert.equal(horizonYear(atlas, defaultState()), opensTo());
   assert.equal(horizonYear(atlas, { ...defaultState(), to: 1980 }), 1980);
   assert.equal(horizonYear(atlas, { ...defaultState(), to: 1980, horizon: 2011 }), 2011, 'the chosen year wins');
   // Astronomical, like everything years are compared in: -44 is -43.
@@ -105,7 +113,7 @@ test('the default horizon is drawn closed and offers no way back', async () => {
   const html = horizonHtml(ctx, { event: atlas.events.get(REVOLUTION), state });
   assert.match(html, /<details>/, 'the default year does not open the section');
   assert.doesNotMatch(html, /data-action="clear-horizon"/, 'there is nothing to clear');
-  assert.match(html, new RegExp(`value="${atlas.extent.max}"`), 'the field starts at the window\'s far end');
+  assert.match(html, new RegExp(`value="${opensTo()}"`), 'the field starts at the window\'s far end');
 });
 
 test('an event that led to nothing by the year says so', async () => {

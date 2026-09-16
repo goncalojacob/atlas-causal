@@ -143,15 +143,19 @@ test("the atlas's own strip: Portugal's three posts, and every turn counted", as
   assert.equal((section.body.match(/No turn at this post is recorded yet\./g) ?? []).length, 0);
   assert.match(section.body, /data-action="office" data-id="monarch-of-portugal"/);
   assert.match(section.body, /data-action="office" data-id="president-of-portugal"/);
-  // Portugal starts in 1886, and the strip is held to what the atlas holds: it
-  // starts at the corpus and not at this actor's own first year. Both ends
-  // move with the corpus and neither is a fact about this strip — the far end
-  // was 2025 until the merge of `world` brought `2025-2026-iranian-protests`,
-  // which runs into February 2026, and the near end was 1899 until M44a
-  // imported the 1890s. So what is written out here is the rule rather than
-  // the years, the way the turn counts above are the number of records: the
-  // strip prints the corpus's extent, whatever the corpus has grown to.
+  // What the strip prints is `stripScale`: the actor's own interval clamped
+  // into the corpus's extent, so that a strip is never wider than the atlas
+  // and never wider than the actor. Written as that rule and not as two years,
+  // the way the turn counts above are the number of records.
+  //
+  // It used to be written as "the strip prints the corpus's extent", and that
+  // held only while the corpus began *after* Portugal did: Portugal starts in
+  // 1886 and the near end of the corpus was 1890 until M50, so the clamp
+  // always won and the two were the same number. M50 put events back to 1492
+  // and they came apart — the strip now prints 1886, which is Portugal's own
+  // first year and is what `stripScale` has always said it would print.
   assert.ok(Number.isInteger(own.extent.min) && Number.isInteger(own.extent.max));
-  assert.notEqual(own.extent.min, 1886, "the strip starts at the corpus, not at Portugal's own first year");
-  assert.match(section.body, new RegExp(`<span>${own.extent.min}</span>\\s*<span>${own.extent.max}</span>`));
+  const scale = stripScale(own.actors.get('portugal'), own.extent);
+  assert.match(section.body, new RegExp(`<span>${scale.min}</span>\\s*<span>${scale.max}</span>`));
+  assert.ok(scale.min >= own.extent.min && scale.max <= own.extent.max, 'never wider than the atlas');
 });

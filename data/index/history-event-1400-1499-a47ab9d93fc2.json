@@ -1,44 +1,53 @@
 {
-  "from": 1700,
+  "from": 1400,
   "kind": "event",
   "records": {
-    "haitian-revolution-1791-1804": {
+    "indigenous-depopulation-of-the-greater-antilles": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
-    "the-british-industrial-revolution": {
+    "the-first-columbian-voyage-1492": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
-    "the-cuban-sugar-boom": {
+    "treaty-of-tordesillas-1494": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-16"
-        }
-      ]
-    },
-    "transfer-of-the-colonial-capital-to-rio-de-janeiro-1763": {
-      "from": "git",
-      "versions": [
+        },
         {
-          "first": true,
+          "fields": [
+            "region"
+          ],
           "on": "2026-09-16"
         }
       ]
     }
   },
   "schema": 1,
-  "to": 1799
+  "to": 1499
 }

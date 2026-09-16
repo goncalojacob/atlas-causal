@@ -34,6 +34,8 @@ const dataDir = path.join(ROOT, 'data');
 // neighbours — and holds no ground in this corpus, so it asserts what this
 // test is about and not what the test below is.
 const FEW = 'fretilin';
+// Wide enough that the views draw the lens rather than the packing.
+const DESK = { width: 1280, height: 900, deviceScaleFactor: 1 };
 const SALAZAR = 'actor:salazar';
 const REGIME = 'actor:estado-novo';
 
@@ -132,7 +134,16 @@ test('a list of foci is the union, and &focusAll=1 is the intersection, on all t
       // "All of these" is the narrower picture, in every view.
       assert.ok(seen.all.size < seen.any.size, `${name} drew ${seen.all.size} for all and ${seen.any.size} for any`);
     }
-  });
+  // At a stated desktop viewport since M50, and the reason is the one the
+  // comment above already gives about stacks carrying no id. A mark with an id
+  // is a proxy for an event drawn, and the proxy is only good while the
+  // picture has room: in the default headless window the timeline packs the
+  // union into fewer rows than the intersection and draws 11 ids for 60 events
+  // against 13 for 35, which inverts the comparison without either lens being
+  // wrong. At 1280 x 900 it draws 60 and 35 and the sets are what they say
+  // they are. M50's corpus is what pushed it over — the assertion is about the
+  // two lenses and should not be about how many rows fit.
+  }, { device: DESK });
 });
 
 test('the header carries a chip per focus, and each chip drops its own', { skip }, async () => {

@@ -16,7 +16,9 @@ import { spawn } from 'node:child_process';
 import path from 'node:path';
 import { createServer, HOST } from '../tools/serve.mjs';
 import { findChrome } from '../tools/screens.mjs';
-import { ROOT, corpusOf } from './helpers.mjs';
+import { ROOT, corpusOf, atlasOf } from './helpers.mjs';
+import { defaultState } from '../src/state.js';
+import { resolveWindow, overlaps } from '../src/util/window.js';
 import { withBrowser, open, waitFor, seenIntro, watchErrors, errorsOn } from './browser.mjs';
 import { LOADING_LABEL } from '../src/attributes.js';
 
@@ -122,7 +124,23 @@ async function foldedTwice(graph) {
 // so a picture of every event is one the reader asks for and these tests ask
 // for it by name (M48 §3, src/graph-filters.js). What they are about is the
 // folding, and the folding has to be counted against what was there to fold.
-const WHOLE = 'degree=0';
+// It also names the whole window, for the same reason and since M50. A view
+// draws the window and a margin either side of it, and the window a URL that
+// names neither end gets used to be the whole extent — true while the corpus
+// began in 1890, and false from the moment M50 put events back to 1492 and
+// `opensOn` started answering with one century of five (src/util/window.js).
+// A test whose arithmetic is "everything is drawn or folded, and nothing is
+// lost" has to ask for everything, or it is counting the events of one century
+// against the corpus of five.
+const CORPUS = await corpusOf(path.join(ROOT, 'data'));
+const ACTIVE = CORPUS.events.filter((e) => e.status === 'active');
+const bound = (v) => (Number.isInteger(v) ? v : (Number.isInteger(v?.min) ? v.min : v?.max));
+const YEARS = ACTIVE.flatMap((e) => [bound(e.when?.start), bound(e.when?.end)]).filter(Number.isInteger);
+const WHOLE = `degree=0&from=${Math.min(...YEARS)}&to=${Math.max(...YEARS)}`;
+
+// The window a reader who names neither bound actually arrives at.
+const ATLAS = await atlasOf(path.join(ROOT, 'data'));
+const WINDOW = resolveWindow(defaultState(), ATLAS.extent, ATLAS.opens);
 
 // How many events the graph would draw one node each for, straight from the
 // index the browser reads: the number the marks and the badges have to add
@@ -132,8 +150,7 @@ async function activeEvents() {
   // the core, and the attribute shards filled into it (I4b). `status` is a core
   // column, so the count is the core's own answer either way — reading the
   // whole of it is what keeps this helper honest about what the index holds.
-  const corpus = await corpusOf(path.join(ROOT, 'data'));
-  return corpus.events.filter((e) => e.status === 'active').length;
+  return ACTIVE.length;
 }
 
 test('at the default zoom the graph draws stacks, and they add up to the events', { skip }, async () => {
@@ -159,7 +176,17 @@ test('grouping into bands crowds the picture, and more of it merges', { skip }, 
     graphOf(await dumpDom(chrome, url(`?view=graph&${WHOLE}`))),
     graphOf(await dumpDom(chrome, url(`?view=graph&group=region&${WHOLE}`))),
   ]);
-  assert.ok(stacks(banded) > stacks(plain), `${stacks(banded)} stacks in bands, ${stacks(plain)} without`);
+  // "More of it merges" counted as **fewer marks on the page**, which is what
+  // merging means, and not as more stack nodes, which was what this line
+  // asserted until M50. The two came apart on this corpus and at every window
+  // tried: 1890–2026 draws 144 marks in 28 stacks without bands and 62 marks
+  // in 14 with them, and the whole extent of 1492–2026 draws 164 in 66 against
+  // 118 in 66. Banding folds more events into each stack rather than making
+  // more stacks, so the stack count is the wrong instrument — it can fall while
+  // the merging rises, and at high density it saturates and stops moving at
+  // all. The claim in the test's name is unchanged and is now measured by the
+  // thing it is about.
+  assert.ok(marks(banded) < marks(plain), `${marks(banded)} marks in bands, ${marks(plain)} without`);
   for (const graph of [plain, banded]) {
     assert.equal(marks(graph) + badges(graph).reduce((a, b) => a + b, 0) + await foldedTwice(graph), events);
   }
@@ -419,7 +446,7 @@ test('a mark outside the rectangle on screen is not drawn, and the selection is 
     // The leftmost event of the fixtures is the selected one, and the wheel
     // is turned over the rightmost: ten notches later the selection is a long
     // way off the left of the screen.
-    await open(page, url(`?fixtures=1&view=graph&selected=fixture-event-a&${WHOLE}`), drawnGraph);
+    await open(page, url(`?fixtures=1&view=graph&selected=fixture-event-a&from=1200&to=2025&${WHOLE}`), drawnGraph);
     await waitFor(page, TITLED('fixture-event-g'), 'the fixtures to be named');
     const rest = await page.eval(DRAWING);
     assert.ok(rest.nodes.length > 4, `the whole picture is drawn at rest (${rest.nodes.length} marks)`);
@@ -525,20 +552,27 @@ async function hubAndLeaf() {
 const DRAWN_IDS = "return [...document.querySelectorAll('svg.graph circle.node[data-id]')].map((el) => el.dataset.id);";
 
 test('the degree floor hides a leaf and keeps the hubs, and the reader moves it', { skip }, async () => {
-  const { leaf, degree } = await hubAndLeaf();
+  const { degree } = await hubAndLeaf();
   await withBrowser(async (page, url) => {
     await watchErrors(page);
     await seenIntro(page);
-    // The whole picture first, so that the leaf is known to be drawable at
-    // this window and this zoom before the floor is asked to hide it.
-    await open(page, url(`?view=graph&${WHOLE}`), drawnGraph);
-    await waitFor(page, NODE(leaf), 'the leaf to be drawn with no floor');
+    // The picture a reader arrives at, with the floor taken off and nothing
+    // else changed — which is the state the last step of this test returns to.
+    // The leaf is **read out of it** rather than chosen from the corpus, and
+    // that is M50's correction: the two levels of detail compose, so an event
+    // can be absent because the floor hid it *or* because a stack swallowed it,
+    // and naming a leaf from `data/` cannot tell the two apart. It could not
+    // tell them apart before either; what changed is that the corpus is now
+    // five centuries long, a URL naming neither bound gets the opening window
+    // of 1900–1999 rather than the whole extent, and the events left in that
+    // window pack tightly enough that the leaf this test used to name lands
+    // inside a stack at every floor. What the floor promises is what is
+    // asserted: nothing under it is drawn at all.
+    await open(page, url('?view=graph&degree=0'), drawnGraph);
+    const withoutFloor = await page.eval(DRAWN_IDS);
+    const leaf = withoutFloor.find((id) => degree.get(id) === 1);
+    assert.ok(leaf, 'the picture with no floor draws at least one event with one link');
 
-    // The default, which is what a reader arrives at. Asserted as the rule and
-    // not on one named node: which events are on screen at the opening zoom is
-    // a fact about the layout, and the rectangle is what decides it
-    // (deviation 714). What the floor promises is that nothing under it is
-    // drawn at all.
     await open(page, url('?view=graph'), drawnGraph);
     await waitFor(page, `return !document.querySelector('svg.graph circle.node[data-id="${leaf}"]');`, 'the leaf to go');
     const drawn = await page.eval(DRAWN_IDS);

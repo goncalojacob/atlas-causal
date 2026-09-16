@@ -339,11 +339,11 @@ test('no active edge joins a Brazil-only event straight to a Caribbean-only one'
 });
 
 test(`every cross-link in ${DOC} is an active edge through a record both chains name`, () => {
-  const byEnds = new Map(activeEdges.map((e) => [`${e.from}${e.to}`, e]));
+  const byEnds = new Map(activeEdges.map((e) => [`${e.from}\u001f${e.to}`, e]));
   const wrong = [];
   assert.ok(crossLinks.length > 0, `${DOC} declares no cross-link`);
   for (const link of crossLinks) {
-    const edge = byEnds.get(`${link.from}${link.to}`);
+    const edge = byEnds.get(`${link.from}\u001f${link.to}`);
     if (!edge) { wrong.push(`${link.from} → ${link.to}: no active edge`); continue; }
     if (!sharedIds.has(link.through)) {
       wrong.push(`${edge.id}: "${link.through}" is not named by both chains`);
