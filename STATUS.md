@@ -7868,6 +7868,94 @@ with parents in it looks like. Deviations 712 to 717.
      tests belongs with it or before it, not after. Run 689 on the head is
      green.
 
+## M43a: the source, its licence, and what the isolation costs
+
+The territories stopped at 1886 because CShapes does. M43a is the second
+import that carries them back to the atlas's founding period, and the first
+thing it had to do was choose a source and say out loud what taking it costs.
+That decision is written here, in its own commit, before a byte of geometry —
+so that a run cut off by a usage limit hands the next one the decision rather
+than the question.
+
+**The candidates, and the licence text each repository actually carries.**
+The sandbox reaches GitHub and nothing else, so "reachable" means a repository
+on GitHub and `raw.githubusercontent.com` is how it was read. The GitHub API
+answers 403 here; every licence below is the repository's own `LICENSE` file,
+fetched raw and read, and not a badge, a README line or a memory.
+
+| Repository | Licence text found | Coverage | Verdict |
+|---|---|---|---|
+| `aourednik/historical-basemaps` | `LICENSE`: "GNU GENERAL PUBLIC LICENSE / Version 3, 29 June 2007" — the stock GPLv3, no copyright line filled in, no data clause, one file covering the whole repository including `geojson/` | 54 world snapshots, 123000 BC to 2010; **23 of them from 1400 on** | **chosen** |
+| `isawnyu/pleiades-datasets` | `LICENSE`: "Creative Commons Legal Code / Attribution 3.0 Unported"; the README repeats it | the ancient world — 41,480 place resources, and places rather than borders | refused on coverage: nothing at 1415 |
+| `whosonfirst-data/whosonfirst-data` | `LICENSE.md`: "Crediting Who's On First is recommended and linking back to the License is required… made available under a Creative Commons Zero designation" | an administrative hierarchy of the present, not dated world snapshots | refused on coverage |
+| `nvkelso/natural-earth-vector` | `LICENSE.md`: "Everything here is public domain." | the present day | already the base map (M36); says nothing about 1500 |
+| `openhistoricalmap/ohm-website` | `LICENSE`: GPL version 2 — and it is the **website's** licence; the data is ODbL and lives on an API server | would cover the period | refused: the data is not in a GitHub repository, and there is no network but GitHub |
+
+**The owner's standing preference is public domain, then CC BY or CC BY-SA,
+and it could not be honoured.** Every openly licensed snapshot set this
+sandbox can reach either stops before 1415 or is not a snapshot set at all.
+There is no genuine choice here, which is the one condition under which the
+preference yields.
+
+**Deviation 718. The source that does cover the period is under GPL-3.0, not
+under a Creative Commons licence at all, and the brief's table has no row for
+it.** The brief says accept CC BY-SA, CC BY, CC0 or public domain outright,
+accept CC BY-NC-SA only under CShapes' isolation, and refuse anything more
+restrictive. GPL-3.0 is not on either side of that line as written, so it was
+placed on it by the one test the owner's decision states: **refuse anything
+more restrictive than CC BY-NC-SA.** GPL-3.0 permits commercial use, which
+CC BY-NC-SA forbids outright; it permits redistribution and modification and
+asks for attribution and share-alike in return. On the axis the owner's
+decision is about — the one that binds the artifact and not only the demo —
+**it is less restrictive than the licence already accepted**, so it is taken,
+and taken under exactly the isolation CShapes has rather than under anything
+looser.
+
+**What the isolation costs, precisely, and who needs to know.** Whoever
+relicenses this atlas later needs the file list, not the sentiment.
+GPL-3.0 now binds, and only binds, these:
+
+- `data/geo/presences/1400-1491.json` … `1880-1885.json` — the thirteen period
+  shards this import writes. The five CShapes shards from 1886 on are
+  untouched and stay CC BY-NC-SA 4.0.
+- `data/presences/` — the presence records this import creates, each carrying
+  `license: "GPL-3.0-only"` and `origin: { "tool": "basemaps" }`.
+- the actors this import creates under `data/actors/`, same two fields. An
+  actor it **reuses** is not relicensed and never touched.
+- `data/geo/palette.json`, which is a colouring over every border and so is
+  derived from both imports at once.
+- `data/index/`, which projects all of it into files that also hold CC BY-SA
+  records. It was already two answers; it is now three.
+
+Nothing else. `data/geo/base/`, `land-present.json` and `regions.json` stay
+public domain — Natural Earth is in none of this — and every record a person
+wrote stays CC BY-SA 4.0.
+
+**And the cost that is not a file list.** GPL-3.0 is written for programs.
+Its operative words — "conveying", "covered work", "Corresponding Source" —
+have no settled meaning over a GeoJSON polygon, which is why the CShapes
+paragraph in `data/geo/LICENSE` could say what CC BY-NC-SA asks for in a
+sentence and this one cannot. A conservative reading is the one taken here:
+the shards and the records derived from them are a covered work, they are
+offered under GPL-3.0, and the isolation exists so that the answer to "which
+of these files is that" is a directory listing. A reader who wants this atlas
+under one licence has two ways out and both are the owner's to take, not
+this run's: drop the thirteen shards and the records that name them, which
+returns the map to 1886; or replace them from a source that does not yet
+exist.
+
+**Deviation 719. The source does not have a snapshot every fifty years before
+1886, and no reachable source does.** The brief asks for one at least that
+often from 1415. What `aourednik/historical-basemaps` actually holds is 1400,
+1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880 — four
+gaps longer than fifty years: **1400→1492 (92), 1530→1600 (70), 1715→1783
+(68), 1815→1878 (63)**. The rule cannot be met by importing more carefully; it
+can only be met by a source that has more snapshots, and the table above is
+every candidate this sandbox can see. So the coverage is continuous — every
+year from 1400 to 2019 has a border on it — and the *resolution* is the
+source's own. That is what `confidence: probable` is for, and it is why every
+outline this import writes carries it.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
