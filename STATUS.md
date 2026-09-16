@@ -34,7 +34,7 @@ question is the owner's, and it is the largest thing waiting on them.
 `node tools/validate.mjs --index`: **10,441 records, 0 errors**, 1,257
 warnings. `node --test`: **1,469 tests, 0 skipped, 0 failed**. The account is
 `## M43a: the source, its licence, and what the isolation costs` below, with
-deviations 718 to 729.
+deviations 718 to 730.
 
 Before it, M47 (on `m0`): **the parent-child relations the corpus
 already implied are written, and the ring M30c built has been drawn on the
@@ -8163,7 +8163,26 @@ skipped**.
      it never rewrites. Whoever reviews `portugal` can widen it by hand, and
      then the warning goes.
 
-729. **A browser test failed twice in eleven full runs and never alone.**
+729. **The `validate` Action is green on the head — run 720 on `bc0fddcb` —
+     and run 718 was red on one test of 1,469.** Between the two there is no
+     code: 719 (cancelled, superseded) and 720 carry only `STATUS.md` and
+     `docs/history/pr-sections.md`. The same suite, the same tree, red then
+     green, which is what a flake is.
+
+     **Which test it was could not be read from here**, and that is worth
+     writing down for the next run. The protocol's own instruction —
+     `gh api repos/.../actions/jobs/<id>/logs | grep -B2 -A12 'not ok'` —
+     does not work in this sandbox: the API answers 302 to
+     `productionresultssa9.blob.core.windows.net`, and the egress proxy
+     refuses that host outright (`connect_rejected`, organization policy).
+     What does work is the GitHub MCP server's `get_job_logs` with
+     `return_content`, which fetches the log server-side — but it returns a
+     **tail** and takes no pattern, so finding a `not ok` two thirds of the
+     way up an 8,846-line log means pulling thousands of lines into the run's
+     own context. The check-run annotations endpoint is reachable and gives
+     the failing line *number* (8846) and nothing else.
+
+730. **A browser test failed twice in eleven full runs and never alone.**
      `map-browser.test.mjs` → "zoomed to Portugal, Lisbon is named once and its
      title carries its names", on runs of the whole suite and never when the
      file is run by itself, before this milestone's data landed as well as
