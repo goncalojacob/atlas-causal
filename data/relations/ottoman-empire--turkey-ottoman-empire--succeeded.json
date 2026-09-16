@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ottoman-empire--turkey-ottoman-empire--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "interval-cited",
+      "m51-split"
+    ],
+    "note": "M51: the interval is not from memory and not the two actors' own. Its date is Wikidata's, named in this record's citation by item and property, and `note` says which. There is nothing here to check against a year somebody remembered."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12560, P576 1922-11-17"
+    }
+  ],
+  "from": "ottoman-empire",
+  "to": "turkey-ottoman-empire",
+  "type": "succeeded",
+  "when": {
+    "start": 1922,
+    "end": 1922,
+    "date": "1922-11-17"
+  },
+  "note": "The two records stand on the same ground across the 1885/1886 seam — 89.79% of the smaller outline — but \"Turkey (Ottoman Empire)\" names two polities, so the seam is closed as a succession and not as a join. The date is Wikidata's P576 on Q12560 and is the only date here not already in the atlas."
+}

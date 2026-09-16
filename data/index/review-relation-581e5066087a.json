@@ -2107,6 +2107,36 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-16",
+      "from": "ottoman-empire",
+      "id": "ottoman-empire--turkey-ottoman-empire--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "interval-cited",
+          "m51-split"
+        ],
+        "note": "M51: the interval is not from memory and not the two actors' own. Its date is Wikidata's, named in this record's citation by item and property, and `note` says which. There is nothing here to check against a year somebody remembered.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "turkey-ottoman-empire",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
@@ -2189,6 +2219,36 @@
       "revised": null,
       "status": "active",
       "to": "bloco-de-esquerda",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-16",
+      "from": "persia",
+      "id": "persia--iran-persia--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "interval-cited",
+          "m51-split"
+        ],
+        "note": "M51: the interval is not from memory and not the two actors' own. Its date is Wikidata's, named in this record's citation by item and property, and `note` says which. There is nothing here to check against a year somebody remembered.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "iran-persia",
       "type": "succeeded"
     },
     {

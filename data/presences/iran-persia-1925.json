@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "iran-persia-1886",
+  "id": "iran-persia-1925",
   "kind": "presence",
   "status": "active",
   "supersededBy": null,
@@ -12,8 +12,8 @@
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
-  "created": "2026-09-02",
-  "revised": "2026-09-16",
+  "created": "2026-09-16",
+  "revised": null,
   "origin": {
     "tool": "cshapes"
   },
@@ -23,19 +23,20 @@
       "locator": "fid 474"
     }
   ],
-  "actor": "persia",
+  "actor": "iran-persia",
   "presenceType": "state",
   "dependencyOf": null,
   "dependencyKind": null,
   "when": {
-    "start": 1886,
-    "end": 1925,
-    "date": "1886-01-01"
+    "start": 1925,
+    "end": null
   },
   "geometry": {
     "files": [
-      "geo/presences/1886-1913.json",
-      "geo/presences/1914-1932.json"
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
     ],
     "key": "474"
   },
@@ -51,6 +52,6 @@
     "flags": [
       "m51-split"
     ],
-    "note": "M51: entity 630's single period ran 1886 to 2019 and Wikidata's P576 1925 on Q63158027 falls inside it, so it is cut in two rather than given whole to either actor. This half is Qajar Iran's; iran-persia-1925 is the other. The outline is the one CShapes filed under this key and is not redrawn: it is identical in all five period files."
+    "note": "M51: the second half of entity 630's single period, cut at Wikidata's P576 1925 on Q63158027. `when` carries no `date` because Wikidata states that dissolution to the year and inventing a day would be a claim. The outline is CShapes' own under this key, unchanged and identical in every period file."
   }
 }

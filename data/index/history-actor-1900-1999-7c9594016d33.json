@@ -2342,6 +2342,31 @@
         }
       ]
     },
+    "iran-persia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "names",
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-16"
+        }
+      ]
+    },
     "iraq": {
       "from": "git",
       "versions": [
@@ -5259,6 +5284,31 @@
             "origin"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "turkey-ottoman-empire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "names",
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },

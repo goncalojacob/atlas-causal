@@ -2408,21 +2408,6 @@
         }
       ]
     },
-    "iran-persia": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "origin"
-          ],
-          "on": "2026-09-02"
-        }
-      ]
-    },
     "italian-somaliland": {
       "from": "git",
       "versions": [
@@ -5309,21 +5294,6 @@
             "where"
           ],
           "on": "2026-09-16"
-        }
-      ]
-    },
-    "turkey-ottoman-empire": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "origin"
-          ],
-          "on": "2026-09-02"
         }
       ]
     },

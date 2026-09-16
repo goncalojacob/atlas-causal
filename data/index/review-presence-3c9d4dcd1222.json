@@ -41783,6 +41783,58 @@
       "authors": [
         {
           "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "iran-persia-1886",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m51-split"
+        ],
+        "note": "M51: entity 630's single period ran 1886 to 2019 and Wikidata's P576 1925 on Q63158027 falls inside it, so it is cut in two rather than given whole to either actor. This half is Qajar Iran's; iran-persia-1925 is the other. The outline is the one CShapes filed under this key and is not redrawn: it is identical in all five period files.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-16",
+      "id": "iran-persia-1925",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m51-split"
+        ],
+        "note": "M51: the second half of entity 630's single period, cut at Wikidata's P576 1925 on Q63158027. `when` carries no `date` because Wikidata states that dissolution to the year and inventing a day would be a claim. The outline is CShapes' own under this key, unchanged and identical in every period file.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
         }
       ],
@@ -110131,6 +110183,214 @@
         "status": "draft"
       },
       "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "turkey-ottoman-empire-1886",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m51-split"
+        ],
+        "note": "M51: entity 640's ground before Wikidata's P576 1922-11-17 on Q12560. It goes to whoever held it when this period began; CShapes draws no boundary on that day, so no period is cut and no outline is redrawn.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "turkey-ottoman-empire-1912",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m51-split"
+        ],
+        "note": "M51: entity 640's ground before Wikidata's P576 1922-11-17 on Q12560. It goes to whoever held it when this period began; CShapes draws no boundary on that day, so no period is cut and no outline is redrawn.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "turkey-ottoman-empire-1913",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m51-split"
+        ],
+        "note": "M51: entity 640's ground before Wikidata's P576 1922-11-17 on Q12560. It goes to whoever held it when this period began; CShapes draws no boundary on that day, so no period is cut and no outline is redrawn.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "turkey-ottoman-empire-1913-b",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m51-split"
+        ],
+        "note": "M51: entity 640's ground before Wikidata's P576 1922-11-17 on Q12560. It goes to whoever held it when this period began; CShapes draws no boundary on that day, so no period is cut and no outline is redrawn.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "turkey-ottoman-empire-1914",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m51-split"
+        ],
+        "note": "M51: entity 640's ground before Wikidata's P576 1922-11-17 on Q12560. It goes to whoever held it when this period began; CShapes draws no boundary on that day, so no period is cut and no outline is redrawn.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "turkey-ottoman-empire-1918",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m51-split"
+        ],
+        "note": "M51: entity 640's ground before Wikidata's P576 1922-11-17 on Q12560. It goes to whoever held it when this period began; CShapes draws no boundary on that day, so no period is cut and no outline is redrawn.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "turkey-ottoman-empire-1918-b",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m51-split"
+        ],
+        "note": "M51: entity 640's ground before Wikidata's P576 1922-11-17 on Q12560. It goes to whoever held it when this period began; CShapes draws no boundary on that day, so no period is cut and no outline is redrawn.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "id": "turkey-ottoman-empire-1920",
+      "kind": "presence",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m51-split"
+        ],
+        "note": "M51: entity 640's ground before Wikidata's P576 1922-11-17 on Q12560. It goes to whoever held it when this period began; CShapes draws no boundary on that day, so no period is cut and no outline is redrawn.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
       "status": "active"
     },
     {

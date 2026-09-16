@@ -26,6 +26,12 @@
     },
     {
       "dissent": false,
+      "id": "iran-persia",
+      "kind": "actor",
+      "locator": "Q63158027, P571 1789 and P576 1925"
+    },
+    {
+      "dissent": false,
       "id": "liberal-initiative",
       "kind": "actor",
       "locator": "Q46122950"
@@ -56,6 +62,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-empire",
+      "kind": "actor",
+      "locator": "Q12560, P576 1922-11-17"
+    },
+    {
+      "dissent": false,
       "id": "people-animals-nature",
       "kind": "actor",
       "locator": "Q2054840"
@@ -71,6 +83,12 @@
       "id": "people-s-monarchist-party",
       "kind": "actor",
       "locator": "Q1851550"
+    },
+    {
+      "dissent": false,
+      "id": "persia",
+      "kind": "actor",
+      "locator": "Q63158027, P571 1789 and P576 1925"
     },
     {
       "dissent": false,
@@ -101,6 +119,12 @@
       "id": "revolutionary-socialist-party",
       "kind": "actor",
       "locator": "Q2054807"
+    },
+    {
+      "dissent": false,
+      "id": "turkey-ottoman-empire",
+      "kind": "actor",
+      "locator": "Q12560, P576 1922-11-17"
     },
     {
       "dissent": false,
@@ -1097,6 +1121,18 @@
       "id": "young-turk-revolution-of-1908",
       "kind": "event",
       "locator": "Q4298662"
+    },
+    {
+      "dissent": false,
+      "id": "ottoman-empire--turkey-ottoman-empire--succeeded",
+      "kind": "relation",
+      "locator": "Q12560, P576 1922-11-17"
+    },
+    {
+      "dissent": false,
+      "id": "persia--iran-persia--succeeded",
+      "kind": "relation",
+      "locator": "Q63158027, P571 1789 and P576 1925"
     }
   ],
   "id": "wikidata",

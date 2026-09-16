@@ -22318,6 +22318,38 @@
       "authors": [
         {
           "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0",
+        "wikidata"
+      ],
+      "created": "2026-09-02",
+      "degree": 5,
+      "id": "iran-persia",
+      "kind": "actor",
+      "names": [
+        "Iran",
+        "Iran (Persia)"
+      ],
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m51-split"
+        ],
+        "note": "M51: split from persia, which held this ground until Wikidata's P576 1925 on Q63158027. Entity 630's single period ran 1886 to 2019 and is divided at that year: iran-persia-1886 now belongs to persia and ends there, and iran-persia-1925 carries the same outline on. names[0] drops \"(Persia)\", which this record no longer covers.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
         }
       ],
@@ -43502,10 +43534,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
-      "degree": 13,
+      "degree": 27,
       "id": "ottoman-empire",
       "kind": "actor",
       "names": [
@@ -43516,11 +43549,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m51-split"
         ],
+        "note": "M51: this record and turkey-ottoman-empire stand on the same ground either side of the 1885/1886 seam (89.79% of the smaller, docs/m51-overlaps.md) but are two polities, so this is a succession and not a join. It ends 1922 because Wikidata states P576 1922-11-17 on Q12560. Nothing here is authored: the year is that claim and the 1400 is the import's own.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -45733,10 +45768,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
-      "degree": 5,
+      "degree": 7,
       "id": "persia",
       "kind": "actor",
       "names": [
@@ -45747,11 +45783,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m51-split"
         ],
+        "note": "M51: this record and iran-persia stand on the same ground either side of the 1885/1886 seam (98.31% of the smaller, docs/m51-overlaps.md) but are two polities, so this is a succession and not a join. It ends 1925 because Wikidata states P576 1925 on Q63158027, Qajar Iran, whose P571 is 1789 — before the seam, which is what puts this record inside it. The 1783 is the import's own.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -59173,6 +59211,38 @@
         "status": "draft"
       },
       "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0",
+        "wikidata"
+      ],
+      "created": "2026-09-02",
+      "degree": 4,
+      "id": "turkey-ottoman-empire",
+      "kind": "actor",
+      "names": [
+        "Turkey",
+        "Turkey (Ottoman Empire)"
+      ],
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m51-split"
+        ],
+        "note": "M51: split from ottoman-empire, which held this ground until Wikidata's P576 1922-11-17 on Q12560. This record begins there and keeps entity 640's last period; the eight before it moved to ottoman-empire, each to whoever held it when it began, because CShapes draws no boundary on that day. names[0] drops \"(Ottoman Empire)\", which this record no longer covers.",
+        "status": "draft"
+      },
+      "revised": "2026-09-16",
       "status": "active"
     },
     {

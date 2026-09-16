@@ -1048,6 +1048,15 @@
         }
       ]
     },
+    "ottoman-empire--turkey-ottoman-empire--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
     "papua-new-guinea-under-australia--papua-new-guinea--succeeded": {
       "from": "git",
       "versions": [
@@ -1070,6 +1079,15 @@
             "review"
           ],
           "on": "2026-09-08"
+        }
+      ]
+    },
+    "persia--iran-persia--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
         }
       ]
     },

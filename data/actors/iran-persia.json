@@ -13,7 +13,14 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-16",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m51-split"
+    ],
+    "note": "M51: split from persia, which held this ground until Wikidata's P576 1925 on Q63158027. Entity 630's single period ran 1886 to 2019 and is divided at that year: iran-persia-1886 now belongs to persia and ends there, and iran-persia-1925 carries the same outline on. names[0] drops \"(Persia)\", which this record no longer covers."
+  },
   "origin": {
     "tool": "cshapes"
   },
@@ -21,15 +28,20 @@
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 630"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q63158027, P571 1789 and P576 1925"
     }
   ],
   "actorType": "polity",
   "names": [
+    "Iran",
     "Iran (Persia)"
   ],
-  "summary": "Entity 630 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Tehran. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Entity 630 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives entity 630 one period of territorial validity, from 1886 to where the dataset stops, in 2019; M51 divided that period at 1925 and this record holds the part after it. Its last capital in the dataset is Tehran. This record was written by the import from those fields. It begins in 1925 because that is the dissolution Wikidata states for Q63158027, Qajar Iran, and not because the dataset says so.",
   "when": {
-    "start": 1886,
+    "start": 1925,
     "end": null
   },
   "where": {
