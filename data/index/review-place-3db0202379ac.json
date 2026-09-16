@@ -31,6 +31,29 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-16",
+      "id": "baracoa",
+      "kind": "place",
+      "names": [
+        "Baracoa, Cuba"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-03",
       "degree": 1,
       "id": "belem",
@@ -111,6 +134,52 @@
         "Braga"
       ],
       "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-16",
+      "id": "bridgetown",
+      "kind": "place",
+      "names": [
+        "Bridgetown, Barbados"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-16",
+      "id": "cap-haitien",
+      "kind": "place",
+      "names": [
+        "Cap-Haïtien (Cap-Français), Haiti"
+      ],
+      "origin": {
+        "run": "m50",
         "tool": "assistant"
       },
       "review": {
@@ -246,6 +315,52 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-16",
+      "id": "havana",
+      "kind": "place",
+      "names": [
+        "Havana, Cuba"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-16",
+      "id": "ipiranga",
+      "kind": "place",
+      "names": [
+        "Ipiranga, São Paulo"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-03",
       "degree": 1,
       "id": "lajes",
@@ -283,6 +398,29 @@
         "flags": [
           "wikidata-assigned-by-assistant"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-16",
+      "id": "london",
+      "kind": "place",
+      "names": [
+        "London"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
         "status": "draft"
       },
       "revised": null,
@@ -335,6 +473,29 @@
         "flags": [
           "wikidata-assigned-by-assistant"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-16",
+      "id": "manchester",
+      "kind": "place",
+      "names": [
+        "Manchester"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
         "status": "draft"
       },
       "revised": null,
@@ -494,6 +655,29 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-16",
+      "id": "porto-seguro",
+      "kind": "place",
+      "names": [
+        "Porto Seguro, Bahia"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-03",
       "degree": 1,
       "id": "recife",
@@ -517,6 +701,29 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-16",
+      "id": "rio-de-janeiro",
+      "kind": "place",
+      "names": [
+        "Rio de Janeiro"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-03",
       "id": "saint-denis",
       "kind": "place",
@@ -524,6 +731,98 @@
         "Saint-Denis"
       ],
       "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-16",
+      "id": "salvador",
+      "kind": "place",
+      "names": [
+        "Salvador, Bahia"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-16",
+      "id": "san-salvador-island",
+      "kind": "place",
+      "names": [
+        "San Salvador Island, Bahamas"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-16",
+      "id": "santiago-de-cuba",
+      "kind": "place",
+      "names": [
+        "Santiago de Cuba"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-16",
+      "id": "santo-domingo",
+      "kind": "place",
+      "names": [
+        "Santo Domingo, Hispaniola"
+      ],
+      "origin": {
+        "run": "m50",
         "tool": "assistant"
       },
       "review": {
@@ -613,6 +912,52 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-16",
+      "id": "tordesillas",
+      "kind": "place",
+      "names": [
+        "Tordesillas, Valladolid"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-16",
+      "id": "vila-rica",
+      "kind": "place",
+      "names": [
+        "Vila Rica de Ouro Preto, Minas Gerais"
+      ],
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-03",
       "degree": 1,
       "id": "washington",
@@ -633,7 +978,97 @@
   "schema": 1,
   "warnings": [
     {
+      "id": "baracoa",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "bridgetown",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "cap-haitien",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "havana",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "ipiranga",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "london",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "manchester",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "porto-seguro",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "rio-de-janeiro",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
       "id": "saint-denis",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "salvador",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "san-salvador-island",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "santiago-de-cuba",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "santo-domingo",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "tordesillas",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "vila-rica",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"

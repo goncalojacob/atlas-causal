@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "porto-seguro",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [],
+  "names": [
+    "Porto Seguro, Bahia"
+  ],
+  "where": {
+    "lon": -39.065,
+    "lat": -16.449,
+    "precision": "city",
+    "label": "Porto Seguro, where the fleet made land"
+  },
+  "region": null,
+  "summary": null
+}

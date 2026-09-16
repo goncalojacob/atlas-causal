@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "ipiranga",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [],
+  "names": [
+    "Ipiranga, São Paulo"
+  ],
+  "where": {
+    "lon": -46.61,
+    "lat": -23.586,
+    "precision": "point",
+    "label": "The Ipiranga, outside São Paulo"
+  },
+  "region": null,
+  "summary": null
+}

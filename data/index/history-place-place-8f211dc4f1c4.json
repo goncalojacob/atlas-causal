@@ -18,6 +18,15 @@
         }
       ]
     },
+    "baracoa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
     "belem": {
       "from": "git",
       "versions": [
@@ -102,6 +111,24 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "bridgetown": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "cap-haitien": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
         }
       ]
     },
@@ -209,6 +236,24 @@
         }
       ]
     },
+    "havana": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "ipiranga": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
     "lajes": {
       "from": "git",
       "versions": [
@@ -253,6 +298,15 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "london": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
         }
       ]
     },
@@ -315,6 +369,15 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "manchester": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
         }
       ]
     },
@@ -468,6 +531,15 @@
         }
       ]
     },
+    "porto-seguro": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
     "recife": {
       "from": "git",
       "versions": [
@@ -481,6 +553,15 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "rio-de-janeiro": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
         }
       ]
     },
@@ -506,6 +587,42 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "salvador": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "san-salvador-island": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "santiago-de-cuba": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "santo-domingo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
         }
       ]
     },
@@ -554,6 +671,24 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "tordesillas": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "vila-rica": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
         }
       ]
     },

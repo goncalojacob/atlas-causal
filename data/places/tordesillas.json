@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "tordesillas",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [],
+  "names": [
+    "Tordesillas, Valladolid"
+  ],
+  "where": {
+    "lon": -5.003,
+    "lat": 41.5,
+    "precision": "city",
+    "label": "Tordesillas, on the Duero"
+  },
+  "region": null,
+  "summary": null
+}
