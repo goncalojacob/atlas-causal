@@ -169,3 +169,38 @@ exception with its source and page; the long-range-edge finding of §5 is in
 `STATUS.md` with its screenshot; `validate --index` clean; `M50 done`.
 
 ## Deviations this brief takes, numbered on from the last in `STATUS.md`
+
+## Amendments after review
+
+**A1 — §6 is answered: the claims come from Wikipedia.** The owner, 16
+September: **"The historical claims should come from wikipedia right now. If
+necessary other sources can be looked into."** That is route 1 of §6, chosen
+deliberately and with its limits known, and it lifts the STEP 0 stop: this
+milestone may now run.
+
+**A2 — and therefore almost nothing here is `consensus`.** Rule 9 reserves that
+value for **two sources by different authors**. Wikipedia is one source however
+many articles are read, so an edge resting on Wikipedia alone is **`probable`**,
+never `consensus`. Rule 22 will not catch this — it tests only that a
+`wikipedia-en` or `wikipedia-pt` locator exists — so the discipline lives in
+this brief and in the milestone's own tests. **A run that marks a
+Wikipedia-only edge `consensus` has failed, whatever the validator says.**
+
+This is not a limitation to be apologised for. A chain whose causal links read
+`probable` is telling the reader the truth about how well it is sourced, and
+§4's whole argument is that the edge carries its own justification. When a
+second author is found for a link, the edge is promoted and says why.
+
+**A3 — "other sources if necessary" means named ones, not more Wikipedia.**
+Where a link matters and Wikipedia will not carry it — the contested economic
+claims of §4 especially — the run may reach for a work Wikipedia itself cites,
+record it as its own source with page or chapter, and only then may the edge
+reach `consensus`, and only if the two authors genuinely differ. **It may not
+promote a claim by finding a second Wikipedia article that repeats it.**
+
+**A4 — Wikipedia and Wikidata are reachable from the runs, confirmed.** The
+owner changed the cloud environment's allowed domains on 16 September, and the
+`merge-m49` run probed them as the first session provisioned since:
+`www.wikidata.org`, `query.wikidata.org` and `en.wikipedia.org` all answered
+**200**. So this milestone fetches directly and needs no GitHub-runner detour.
+Deviation 731's refusal is history, not a constraint.
