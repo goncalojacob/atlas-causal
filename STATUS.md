@@ -13,6 +13,19 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-16, after **M50** (on `m0`): **two worked chains, and the first edges
+this atlas has drawn across three centuries.** Brazil from the meridian of 1494
+to the coup of 1964, the Caribbean from Columbus to 1959 — **36 events, 57
+edges, four hops between any two events of a chain**, and four records that
+both chains name, which are the only places they touch. Fifty-four of the edges
+are `probable`, three are `disputed`, and **none is `consensus`**, which is
+amendment A2 working rather than failing. The §5 question is answered: the
+timeline carries a 349-year link and the graph will too — but only when the
+window holds both ends, and nothing sets it. On the way it found a defect no
+corpus before this one could show: **an event whose name lives in the shard of
+an earlier century is drawn, in the window, with no name**. The account is
+`## M50` below, `docs/m50-chains.md` and `docs/m50-claims.md`.
+
 2026-09-16, after **M52** (on `m0`): **Russia is three records on cited dates,
 and a succession's two dates now have to meet.** The chip that read "Russia
 (Soviet Union)" is gone; the 1917–1922 gap is left open and written down rather
@@ -9194,6 +9207,324 @@ records, and one case in `tests/relation-rules.test.mjs` for rule 30 itself.
      line is still unreadable, and the one line of `validate.yml` that
      deviation 757 asks for is still not written, because it is still not this
      milestone's to write.
+
+## M50 — the worked chain, and what a long edge does to the display
+
+The owner, 16 September: *"My objective is also to test the way we can connect
+european and american colonization and imperialism to understand current
+economical and political situations. Obviously an ignorant won't understand
+that straight away just from the events, but if everything is connected people
+can then easily write narratives."* **The atlas ships the substrate and not the
+story.** This milestone makes one region of the graph dense enough that a
+person could write that layer over it without doing the research first.
+
+**Two chains, thirty-six events and fifty-seven edges.** The Brazil chain runs
+from the meridian of 1494 to the coup of 1964; the Caribbean chain from
+Columbus's landfall to the revolution of 1959. Four records are in both, and
+they are the only places the two chains touch.
+
+| | Brazil | Caribbean |
+|---|---|---|
+| events listed | **21** | **19** |
+| of those, shared with the other chain | 4 | 4 |
+| centre | `the-atlantic-slave-trade-to-brazil` | `the-atlantic-slave-trade-to-the-caribbean` |
+| diameter, over active edges either way | **4** | **4** |
+| every event's distance from the centre | **≤ 2** | **≤ 2** |
+| busiest node | the centre, 9 edges | the centre, 10 edges |
+| fewest edges on any listed event | 2 | 2 |
+
+**The reachability figure is four and it is secured by a shape rather than by
+luck.** Every event in a chain is two hops or fewer from that chain's centre,
+which puts any pair at four. That both centres turn out to be a slave-trade
+record is not a device: it is what the sources say the two economies were
+organised around, and the centres were chosen after the reading. The worst
+pairs are `governorate-general-of-brazil-1549` to
+`transfer-of-the-colonial-capital-to-rio-de-janeiro-1763` on one side and
+`treaty-of-tordesillas-1494` to `slavery-abolition-act-1833` on the other.
+
+**Confidence: 54 `probable`, 3 `disputed`, and no `consensus` at all. The zero
+is the result, not a shortfall.** Amendment A2 said it in advance: rule 9
+reserves `consensus` for two sources by different authors and Wikipedia is one
+source however many articles are read, so an edge resting on it is `probable`
+however settled the history. Rule 22 would not have caught a breach — it tests
+only that a `wikipedia-en` locator exists — so the discipline is stated as a
+test over these chains in `tests/m50.test.mjs` instead. **One edge came close
+and is the clearest illustration**:
+`proclamation-of-the-brazilian-republic-1889 → 1964-brazilian-coup-detat`
+cites a named scholar, Alfred Stepan's model of the Brazilian army as a
+moderating power that overthrows civil governments and installs new ones. It is
+`probable`, and its own explanation says why: **Wikipedia reporting an author
+is not a second author agreeing with him.** Promoting it would need Stepan's
+book read as its own source record and a second historian who differs — which
+is A3, and which this run could not do without inventing a page number.
+
+**The three disputed links, and what is disputed about each.** All three are
+the same hundred-year argument approached from three directions, and they are
+the first real use this atlas makes of the value.
+
+| edge | the claim | who dissents, in the `dispute` block |
+|---|---|---|
+| `the-atlantic-slave-trade-to-the-caribbean → the-british-industrial-revolution` | Williams's thesis: slave-grown Caribbean sugar formed the capital that helped finance British industry | **Stanley Engerman** — the whole profit of the slave trade and the West Indian plantations was under **5 %** of the British economy in any year of the Industrial Revolution; **David Richardson** (1998) — slave-trade profits under **1 %** of British domestic investment, and Williams's industrial claims exaggerated |
+| `the-brazilian-gold-cycle → the-british-industrial-revolution` | the eight hundred tonnes of Minas gold, spent in Lisbon on manufactures Portugal could not make and admitted to Portugal duty-guaranteed by Methuen, reached British industry | the same dissent, because it is the same question asked of a different colonial flow; and the Methuen Treaty carries a dispute of its own in the same sources over whether its terms enriched Portugal or turned it away from industry |
+| `the-british-industrial-revolution → slave-trade-act-1807` | the decline thesis: industrial capitalism in Britain is what destroyed the slave trade | **Seymour Drescher**, *Econocide* (1977) — abolition came from the moral outrage of a public that could vote, and the trade was killed at its economic peak, not in its decline; with Geggus (1981) questioning Drescher's capital valuation and Carrington (1984) replying that he misplaced the peak |
+
+**The four shared records, and the cross-link each carries.** §2's rule is that
+two colonial chains do not connect because both are colonial — that is a theme,
+not an edge — so every path between the chains goes through a record both name.
+`tests/m50.test.mjs` states it negatively and checks it over the whole atlas:
+**no active edge may join a Brazil-only event straight to a Caribbean-only
+one.**
+
+| shared record | what it carries across | into Brazil | into the Caribbean |
+|---|---|---|---|
+| `treaty-of-tordesillas-1494` | one crown east *and* west of the line: the Guinea coast and the Brazilian coast are the two ends of the same traffic | `→ portuguese-landfall-in-brazil-1500`, `→ the-atlantic-slave-trade-to-brazil` | `← the-first-columbian-voyage-1492` |
+| `dutch-brazil-1630-1654` | the mill, the cauldrons, the planters and the credit: the cane that transformed Barbados came from Dutch Brazil in 1640 and Drax went to Pernambuco that year to buy the machinery | `← the-brazilian-sugar-cycle`, `← governorate-general-of-brazil-1549` | `→ the-caribbean-sugar-revolution` |
+| `the-british-industrial-revolution` | the Williams question, asked of Minas gold on one side and of Caribbean sugar on the other | `← the-brazilian-gold-cycle` (disputed) | `← the-atlantic-slave-trade-to-the-caribbean` (disputed) |
+| `slave-trade-act-1807` | a state that had closed its own trade could then press other states to close theirs | `→ aberdeen-act-1845` | `→ slavery-abolition-act-1833` |
+
+**The arrow that is not here is worth as much as the four that are.**
+`cuban-revolution → 1964-brazilian-coup-detat` is a real historiographical
+argument and the reader will expect it — Wikipedia's account of 1964 has
+Goulart opposing the American sanctions on Cuba in the year before the coup,
+and American policy allying itself with his opponents. The atlas holds no
+record **both** chains name that carries it, so it is not written.
+`docs/m50-chains.md` says so and says what closing it properly would take: the
+Alliance for Progress, or the OAS, or the sugar quota, researched and dated on
+its own. That is a milestone, not a line in this one.
+
+**§5, the long-range finding: the timeline carries a three-century edge and the
+graph will not, at the window the atlas opens on.** The longest link these
+chains hold is **349 years** — `the-atlantic-slave-trade-to-brazil`, beginning
+1540, standing as a precondition of the Republic of 1889 — and **18 of the 57
+chain edges span a century or more**, against a median of 40 years. Measured
+from the DOM at 1440 × 900, with a lens on the near end of that edge:
+
+| state | nodes drawn | links | labels over another |
+|---|---|---|---|
+| lens, the window the atlas opens on | **3 of 10** | 4 | 1 |
+| lens, window opened to 1480–1980 | **10 of 10** | 12 | **0** |
+| no lens, window 1480–1980 | 133 | 202 | 15 |
+
+**The graph lays out on a time axis taken from the timeline's window.** At the
+default window the near end of the edge is placed **589 px to the left of a
+959 px pane** and is not drawn: a reader who walks to a link of this length
+gets its last forty years and a line leaving the frame. Open the window and the
+same lens draws the whole thing cleanly, with no label over another. So the
+answer is not "the display cannot carry it" — it is **"the display can carry it
+and nothing sets the window that lets it"**, which is a smaller and more
+fixable defect than §5 feared, and it is still not this run's to fix.
+`docs/screens/m50-long-edge-graph.png` is the worst case,
+`docs/screens/m50-long-edge-focus.png` the same under a lens,
+`docs/screens/m50-long-edge-window.png` the same with the window opened, and
+`docs/screens/m50-long-edge-timeline.png` the timeline.
+
+**The timeline carries the geometry and loses the labels.** The same link is
+one madder band from 1540 to 1889 with both ends in frame, which is the thing
+§5 doubted; but the two step labels are written at the same x and print over
+each other. That is the second half of the same follow-on milestone.
+
+**What the atlas looks like now.** The fault §1 measured was 103 of 250 active
+events carrying one edge or none, 41 per cent.
+
+| | before | after |
+|---|---|---|
+| active events | 250 | **285** |
+| active edges | 272 | **329** |
+| one edge or none | 103 (**41 %**) | 102 (**36 %**) |
+| no edge at all | 17 | **17** — none of them new |
+| events with a parent | 10 of 513 | **12 of 548** |
+
+**Every event this milestone wrote carries at least two edges**, which is why
+the absolute count barely moved while the proportion fell: the seventeen
+isolated events are the old corpus's and are untouched.
+
+**Two records take a parent and the rest would have been invented.** §3 asked
+for eight top-level events a chain with children beneath, and the schema is
+exact about what a child is — a battle inside a war, a decree inside a
+revolution. `strangford-treaty-1810` is an act of the exiled court inside the
+thirteen years the transfer record covers; `spanish-american-war-1898` is a war
+fought inside `cuban-war-of-independence-1895-1898`. Every other candidate was
+refused: a chain made of export cycles, statutes, treaties and a company has
+almost no containment in it, and the capital's move to Rio is a *consequence*
+of the gold cycle, which an edge already says. The hierarchy §3 expected is a
+property of wars, which M42 brings.
+
+**Checks.** `node tools/validate.mjs --index`: **10,553 records, 0 errors**,
+1,210 warnings. `node --test --test-timeout=120000`: **1,580 tests, 0 skipped**,
+0 failures, of which **18 are new**, all in `tests/m50.test.mjs` and all
+correspondences between `docs/m50-chains.md` and the records rather than
+states. `node tools/build-index.mjs` is committed at every commit touching
+`data/`, and once more at the end for the reason in deviation 771. No display
+file changed, no new record type, confidence value, edge type, hex value, token
+or type size; no runtime dependency and no build step; nothing merged into
+`main`; `docs/drafts/` untouched.
+
+**What the owner should look at first.** The three disputed edges, because they
+are the first real test of whether the interface shows a disagreement instead
+of asserting a line — open
+`the-atlantic-slave-trade-to-the-caribbean → the-british-industrial-revolution`
+and see whether Engerman's five per cent reads as a dissent or as decoration.
+Then `docs/m50-chains.md`, "the arrow that is not here", which is the decision
+this milestone is most likely to be argued with about. Then the §5 screenshots,
+in the order graph, focus, window: three pictures and one sentence between
+them.
+
+### Deviations
+
+770. **The claim commit was rebased over two of M49's `STATUS.md` lines, which
+     the protocol's section 3 says to stop for.** Section 3 is unqualified: a
+     rejected push means another agent is writing to `m0`, so stop and do not
+     rebase. The push of `tests: the two chains M50 has not built yet` was
+     rejected by `6ec7a97f` and `4c79a309`, and both are the single-line,
+     single-file commits writing `M49 started` and `M49 done` that the
+     protocol's own amendment of 8 September **requires** to be on `m0` while
+     M49 works on its own branch. This run checked that each touches
+     `STATUS.md` and one line, then rebased and pushed; its own STEP 1 also
+     says to rebase and retry up to five times. Section 3's "stop" is about two
+     runs writing records to `m0` at once and reads badly against the
+     milestone-line convention that two later amendments introduced.
+771. **`data/index/` goes stale on the commit that rebuilds it, and the
+     protocol's amendment of 15 September does not say so.** The history shards
+     are built from `git log` (`tools/lib/history.mjs`), so a rebuild committed
+     *inside* a data commit is one commit too early: that commit is part of the
+     history the shards encode. `validate --index` reported **9 rule 16 errors**
+     on a head this run had already pushed, and the fix is an index-only commit
+     afterwards. On a branch where every data commit is followed by another the
+     staleness is invisible, because the next rebuild clears it; it becomes an
+     error exactly once, on the last one. **A run that writes records needs a
+     final index-only commit**, and this is the third milestone to meet the
+     shards from this direction (deviations 684, 696, 711).
+772. **No event in these chains names an actor, and that was a refusal rather
+     than an omission.** Every polity record the atlas holds for Portugal,
+     Spain, Britain or Brazil carries the span of the territory import that
+     made it — `portugal` begins in **1886**, `castile` ends in **1491**,
+     `portuguese-brazil` runs 1650–1714 — because those are map frames and not
+     lifetimes. Writing `portugal` on a record of 1500 asserts that a thing
+     beginning in 1886 was present; rewriting those actors is M52's work and
+     not this run's. The events carry places instead, and M48's ground
+     containment finds them for the actors whose territory they stand in. **The
+     cost is real and is the reason every cross-link here routes through a
+     shared *event***: §2 offers "the same actors **and** the same institutional
+     events" and this milestone could only use the second.
+773. **The brief names an edge type the schema does not have.** §4 says
+     "`caused`, `enabled`, `constrained` are different claims"; the five types
+     are `caused`, `enabled`, `reacted-to`, `precondition-of` and `inspired`,
+     and §7 forbids adding one. Where the brief would have said `constrained`
+     this milestone wrote `precondition-of`, which is the weakest of the five
+     and says *this had to be true first* without saying *this brought it
+     about*. It is the most used type in the chains: **26 of 57**, against 25
+     `caused` and 6 `enabled`.
+774. **The Methuen Treaty is not in the Brazil chain, and rule 4 would have let
+     it in.** It was the obvious record for the channel by which Brazilian gold
+     reached London. Wikipedia dates it 1703 and the gold rush 1695, so the
+     validator permits `gold → Methuen`; the sources do not, because Methuen was
+     a wartime alliance and a wine-and-textiles bargain struck inside the War of
+     the Spanish Succession and they put Minas nowhere near its making. It is
+     cited as a *source* on the disputed gold edge instead, and
+     `transfer-of-the-colonial-capital-to-rio-de-janeiro-1763` took its place in
+     the chain. **A useful demonstration that the validator is not the
+     historian.**
+775. **The Spanish conquest of Cuba is not in the Caribbean chain because the
+     English Wikipedia has no article under that title.** The API answers
+     `missing`, and under amendment A1 there is nothing to write the record
+     from. It was to be the record `treaty-of-tordesillas-1494` reached the
+     Caribbean through; that work is done instead by an edge from
+     `the-first-columbian-voyage-1492`, which is the same claim the milestone
+     already makes about Cabral's landfall and is the weakest type for the same
+     reason. A run with requests to spare should look for the article under
+     another name.
+776. **Wikipedia rate-limits this sandbox hard, and A4's three green probes do
+     not predict it.** A run that reads thirty-odd articles gets
+     `429 You are making too many requests to the API` unless it sends a
+     `User-Agent` naming the project and a contact and spaces its requests
+     about **20–25 seconds** apart; the default `curl` agent is refused almost
+     at once. Two further things cost this run time: three background fetchers
+     were briefly running at once and **overwrote each other's cache files with
+     the 429 body**, which a cache check on "does the file exist" cannot see —
+     the check has to be "does the file parse"; and `History of Cuba` never
+     answered at all, so the Cuban records were written from `History of
+     Barbados`, `Cuban War of Independence`, `Spanish–American War`,
+     `Platt Amendment` and `Cuban Revolution` instead.
+777. **Two commits were red, by construction, and the brief asked for it.**
+     STEP 3 says to write the tests before a single record and that they will
+     fail, which is the point; eight of the eighteen were red on
+     `dde51de0` and stayed red until the second chain landed, because every one
+     of them is a correspondence over *both* chains. The protocol's section 3
+     asks for green at every commit and the two cannot both hold. The validator
+     was green at every commit throughout, which is the half of section 3 that
+     protects the records.
+778. **Zero `consensus` edges, and the run did not manufacture one.** A3 allows
+     promotion by recording a work Wikipedia itself cites as its own source
+     with page or chapter. Rule 13 needs an ISBN, a DOI or a URL for a book;
+     this run could not verify one for Williams's *Capitalism and Slavery* or
+     Drescher's *Econocide* — the Wikidata lookups it tried were rate-limited
+     out — and inventing an identifier is exactly the confident-looking wrong
+     fact `CLAUDE.md` forbids. The two works are named in the explanations and
+     in the `dispute` blocks and cited through the article that reports them.
+     **The first person with a shelf can promote three edges in an afternoon**,
+     and that is a better state than three edges promoted on a guess.
+779. **An event whose name lives in a shard the window does not ask for is
+     drawn with no name, and this milestone is the first corpus that could show
+     it.** An attribute row is written into the shard of its event's **start**
+     century (`data/index/attributes-<century>-<hash>.json`) and a view fetches
+     the shards its window covers. An event long enough to reach into the
+     window from an earlier century is therefore drawn — correctly, it *is* in
+     the window — with its name in a file nobody asked for, and its bar reads
+     **"still loading" for ever**. Two records do it today:
+     `the-atlantic-slave-trade-to-brazil`, whose row is in `attributes-1500-1599`
+     and whose interval runs to the 1860s, and
+     `indigenous-depopulation-of-coastal-brazil`, 1500 to 1997. It could not
+     happen while every event in the corpus began and ended inside one century,
+     and M50 wrote the first that do not. **Not fixed here**: §7 forbids a
+     display change and this is the index's sharding.
+     `tests/spine-pages.test.mjs` names the rule and exempts exactly the bars it
+     explains, the way the graph's twice-folded events are named rather than
+     skipped (deviation 714). The fix is one of two — write the row into every
+     shard the interval touches, or have the view fetch by the intervals it is
+     drawing rather than by their start — and it belongs with §5's follow-on.
+780. **The corpus is five centuries long now, and six tests had assumed the
+     window a URL gets when it names neither bound is the whole of it.** It
+     was, while `data/` began in 1890; M43b built `opensOn` for exactly this and
+     it started answering the moment M50 put events back to 1492, with
+     **1900–1999** where the whole extent used to be. Each correction states the
+     rule instead of the old coincidence: `tests/horizon.test.mjs` asks for the
+     far end of the window the atlas opens on rather than `atlas.extent.max`,
+     twice; `tests/graph-browser.test.mjs` names the whole window in the `WHOLE`
+     query it already used to name `degree=0`, for the same reason and in the
+     same breath; `tests/panel-browser.test.mjs` asks for the whole span by name
+     where it means it, and expects Back to restore the band the *entry* had,
+     which is the opening window and not the extent. None of them was testing
+     the window.
+781. **Two assertions turned out to be coincidences of a corpus that began in
+     1890, and both are now written as the rule.** `tests/tenure-strip.test.mjs`
+     said the strip "prints the corpus's extent"; what `stripScale` has always
+     printed is the actor's own interval **clamped into** the extent, and the
+     two were the same number only because Portugal began in 1886 and the
+     corpus began in 1890, so the clamp always won. They came apart at 1492 and
+     the strip now prints 1886, which is correct. And
+     `tests/graph-browser.test.mjs` measured "more of it merges" as *more stack
+     nodes*, which banding does not produce on this corpus at any window tried —
+     1890–2026 draws 144 marks in 28 stacks plain against 62 in 14 banded.
+     Banding folds more events into each stack rather than making more stacks,
+     so the count is now of **marks**, which is what merging means.
+782. **The degree-floor test named a leaf from `data/` and now reads one off the
+     page.** The two levels of detail compose, so an event can be missing
+     because the floor hid it *or* because a stack swallowed it, and a leaf
+     named from the records cannot tell the two apart. It did not matter while
+     the leaf happened to be drawn; in the 1900–1999 window the events pack
+     tightly enough that the one this test named lands inside a stack at every
+     floor. It now opens the picture with the floor off, takes a leaf out of
+     what was drawn, and asserts the floor against that — which is the
+     property it was always about.
+783. **`tests/lens-browser.test.mjs` runs at a stated 1280 × 900.** The
+     comparison it makes — "all of these" draws a narrower picture than "any of
+     these" — is counted in marks carrying an id, and the test's own comment
+     already says a stack carries none. In the default headless window the
+     timeline packs the union into fewer rows than the intersection and draws
+     **11 ids for 60 events against 13 for 35**, inverting it; at 1280 × 900 it
+     draws 60 and 35. M50's corpus is what pushed it over. Other browser tests
+     here already name a viewport (`DESK` in `keyboard-browser`, `WIDE` in
+     `map-browser`); this one now does too.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
