@@ -170,11 +170,28 @@ test('data/geo/palette.json is what the tool produces', async () => {
     'run node tools/build-palette.mjs');
   const palette = JSON.parse(built);
   assert.equal(palette.hues, HUES);
-  assert.deepEqual(palette.spilled, {}, 'the atlas\'s own borders fit in eight hues');
+  // Until M43a this asserted that nothing spilled, which was a fact about a
+  // corpus of one import: CShapes' world fits in eight hues. Six centuries of
+  // world borders does not, and cannot — the 1492 snapshot alone draws 1,301
+  // polities — so what is held here is the invariant instead of the luck.
+  // Every pair the file reports as sharing really does share its hue, and
+  // nothing shares a hue without being reported.
+  const spilled = palette.spilled;
+  for (const [id, others] of Object.entries(spilled)) {
+    assert.ok(palette.actors[id] !== undefined, `${id} is reported as sharing and has no hue`);
+    for (const other of others) {
+      assert.equal(palette.actors[id], palette.actors[other], `${id} and ${other} are reported as sharing`);
+      assert.ok(spilled[other]?.includes(id), `${other} does not report ${id} back`);
+    }
+  }
   const values = Object.values(palette.actors);
   assert.ok(values.length > 100);
   for (const hue of values) assert.ok(Number.isInteger(hue) && hue >= 0 && hue < HUES);
   // Portugal and Spain share the longest border on this map; if the tool ever
-  // gives them one hue, it has stopped working.
+  // gives them one hue, it has stopped working. Held with two more of the
+  // longest land borders on the map, so that "something had to share" can
+  // never quietly become "these two did".
   assert.notEqual(palette.actors.portugal, palette.actors.spain);
+  assert.notEqual(palette.actors.france, palette.actors.spain);
+  assert.notEqual(palette.actors['united-states-of-america'], palette.actors.mexico);
 });
