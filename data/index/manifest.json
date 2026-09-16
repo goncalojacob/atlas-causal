@@ -1,6 +1,12 @@
 {
   "attributeShards": [
     {
+      "file": "index/attributes-1400-1499-7e44f4b21815.json",
+      "from": 1400,
+      "key": "1400-1499",
+      "to": 1499
+    },
+    {
       "file": "index/attributes-1800-1899-75484ce7c0b1.json",
       "from": 1800,
       "key": "1800-1899",
@@ -830,16 +836,16 @@
     }
   ],
   "counts": {
-    "actors": 488,
+    "actors": 599,
     "edges": 272,
     "events": 513,
     "narratives": 1,
     "offices": 11,
     "places": 26,
-    "presences": 710,
+    "presences": 825,
     "regions": 5,
     "relations": 128,
-    "sources": 34,
+    "sources": 35,
     "tenures": 83
   },
   "explanationShards": [
@@ -860,12 +866,12 @@
     }
   ],
   "files": {
-    "citers": "index/citers-47f8cb1ed631",
-    "core": "index/core-b7b1c7bec764.json",
-    "presences": "index/presences-b0f8cac28d89.json",
-    "review": "index/review-508eef52e812.json",
-    "search": "index/search-1892fdf99413.json",
-    "sources": "index/sources-ba4d9c77b711.json"
+    "citers": "index/citers-30d5aba24e24",
+    "core": "index/core-fab9c74773fc.json",
+    "presences": "index/presences-8309c2042347.json",
+    "review": "index/review-1013797aa8fe.json",
+    "search": "index/search-79be824f2ca8.json",
+    "sources": "index/sources-af0574e5c2ce.json"
   },
   "historyShards": [
     {
@@ -911,11 +917,18 @@
       "to": 2099
     },
     {
-      "file": "index/history-source-source-59382384e63b.json",
+      "file": "index/history-source-source-ce08ccc3e439.json",
       "from": null,
       "key": "source",
       "kind": "source",
       "to": null
+    },
+    {
+      "file": "index/history-actor-1400-1499-adb718fcd8ac.json",
+      "from": 1400,
+      "key": "1400-1499",
+      "kind": "actor",
+      "to": 1499
     },
     {
       "file": "index/history-actor-1800-1899-06ca95c31407.json",
@@ -1508,6 +1521,11 @@
   },
   "palette": "geo/palette.json",
   "presenceShards": [
+    {
+      "file": "geo/presences/1400-1491.json",
+      "from": 1400,
+      "to": 1491
+    },
     {
       "file": "geo/presences/1886-1913.json",
       "from": 1886,

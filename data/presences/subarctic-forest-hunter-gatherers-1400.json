@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "subarctic-forest-hunter-gatherers-1400",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "basemaps"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "world_1400.geojson, \"Subarctic forest hunter-gatherers\""
+    }
+  ],
+  "actor": "subarctic-forest-hunter-gatherers",
+  "presenceType": "polity",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1400,
+    "end": 1491,
+    "date": "1400-01-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1400-1491.json"
+    ],
+    "key": "subarctic-forest-hunter-gatherers"
+  },
+  "capital": null,
+  "confidence": "probable"
+}

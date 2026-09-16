@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "historical-basemaps",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "basemaps"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "type": "dataset",
+  "creators": [
+    "André Ourednik",
+    "the historical-basemaps contributors"
+  ],
+  "title": "Historical Basemaps: historical boundaries of world countries and cultural regions",
+  "year": 2026,
+  "publisher": null,
+  "isbn": null,
+  "doi": null,
+  "url": "https://github.com/aourednik/historical-basemaps",
+  "accessed": "2026-09-16",
+  "repository": "https://github.com/aourednik/historical-basemaps",
+  "reference": null
+}

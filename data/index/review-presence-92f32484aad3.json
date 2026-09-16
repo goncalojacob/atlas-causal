@@ -1,0 +1,2562 @@
+{
+  "kind": "presence",
+  "records": [
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "aceh-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "ai-viet-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "ainus-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "alwa-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "amazon-hunter-gatherers-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "andean-hunter-gatherers-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "andean-states-and-chiefdoms-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "aragon-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "athabaskan-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "australian-aboriginal-hunter-gatherers-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "aymara-kingdoms-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "ayutthaya-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "bantu-peoples-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "benin-before-1886-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "beothuk-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "beylik-of-aydin-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "blue-horde-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "bosnia-before-1886-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "britany-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "bulgar-khanate-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "byzantine-empire-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "caloosahatchee-culture-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "caribbean-hunter-gatherers-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "castile-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "chagatai-khanate-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "champa-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "chimu-empire-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "chola-empire-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "chuzan-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "corsica-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "cyprus-before-1886-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "desert-hunter-gatherers-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "dorset-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "eastern-north-american-hunter-gatherers-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "english-territory-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "ethiopia-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "france-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "georgia-before-1886-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "granada-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "great-khanate-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "great-zimbabwe-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "guanahatabeyes-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "guanches-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "hadramaut-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "hafsid-caliphate-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "hainan-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "hokuzan-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "holy-roman-empire-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "innu-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "islamic-city-states-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "kalinago-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "kalmar-union-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "kanem-bornu-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "kashmir-and-ladakh-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "kediri-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "khmer-empire-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "khoisan-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "kingdom-of-hungary-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "madagascar-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "makkura-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "mali-before-1886-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "mamluke-sultanate-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "maori-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "maya-city-states-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "merina-kingdom-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "minor-hindu-and-buddhist-kingdoms-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "mixtec-empire-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "moldova-before-1886-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "morocco-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "muscat-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "nanzan-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "navarre-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "north-american-pacific-foraging-hunting-and-fishing-peoples-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "novgorod-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "orissa-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "ottoman-empire-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "pagan-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "pampas-cultures-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "pandya-state-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "papal-states-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "patagonian-shellfish-and-marine-mammal-hunters-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "plain-bison-hunters-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "plateau-fichers-and-hunter-gatherers-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "poland-lithuania-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "polynesians-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "portugal-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "principality-of-wallachia-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "sami-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "sardinia-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "savanna-hunter-gatherers-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "scotland-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "seljuk-caliphate-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "shoa-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "shogun-japan-kamakura-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "shuar-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "siberians-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "sicily-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "sinhalese-kingdom-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "srivijaya-empire-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "subarctic-forest-hunter-gatherers-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "sukhothai-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "sultanate-of-delhi-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "taino-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "tasmanian-hunter-gatherers-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "teutonic-knights-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "thule-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "tibet-before-1886-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "timurid-empire-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "trebizond-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "tu-i-tonga-empire-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "venice-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "west-african-cereal-farmers-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "white-horde-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "yemen-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "cites": [
+        "historical-basemaps"
+      ],
+      "created": "2026-09-16",
+      "id": "zapotec-empire-1400",
+      "kind": "presence",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    }
+  ],
+  "schema": 1,
+  "warnings": [
+    {
+      "id": "ethiopia-1400",
+      "kind": "presence",
+      "message": "the presence falls entirely outside \"ethiopia\"'s dates",
+      "rule": "presence-outside-actor-when"
+    },
+    {
+      "id": "france-1400",
+      "kind": "presence",
+      "message": "the presence falls entirely outside \"france\"'s dates",
+      "rule": "presence-outside-actor-when"
+    },
+    {
+      "id": "morocco-1400",
+      "kind": "presence",
+      "message": "the presence falls entirely outside \"morocco\"'s dates",
+      "rule": "presence-outside-actor-when"
+    },
+    {
+      "id": "portugal-1400",
+      "kind": "presence",
+      "message": "the presence falls entirely outside \"portugal\"'s dates",
+      "rule": "presence-outside-actor-when"
+    }
+  ]
+}
