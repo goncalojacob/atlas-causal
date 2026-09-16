@@ -1,8 +1,8 @@
 {
-  "from": 1600,
+  "from": 1800,
   "kind": "edge",
   "records": {
-    "dutch-brazil-1630-1654--the-caribbean-sugar-revolution--caused": {
+    "aberdeen-act-1845--eusebio-de-queiros-law-1850--caused": {
       "from": "git",
       "versions": [
         {
@@ -11,7 +11,23 @@
         }
       ]
     },
-    "english-settlement-of-barbados-1627--the-atlantic-slave-trade-to-the-caribbean--precondition-of": {
+    "boxer-rebellion--xinhai-revolution--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "eusebio-de-queiros-law-1850--lei-aurea-1888--caused": {
       "from": "git",
       "versions": [
         {
@@ -20,7 +36,7 @@
         }
       ]
     },
-    "english-settlement-of-barbados-1627--the-caribbean-sugar-revolution--precondition-of": {
+    "independence-of-brazil-1822--aberdeen-act-1845--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -29,7 +45,7 @@
         }
       ]
     },
-    "saint-domingue-and-the-french-sugar-colony--haitian-revolution-1791-1804--caused": {
+    "lei-aurea-1888--proclamation-of-the-brazilian-republic-1889--caused": {
       "from": "git",
       "versions": [
         {
@@ -38,7 +54,7 @@
         }
       ]
     },
-    "the-atlantic-slave-trade-to-the-caribbean--haitian-revolution-1791-1804--precondition-of": {
+    "proclamation-of-the-brazilian-republic-1889--1964-brazilian-coup-detat--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -47,7 +63,7 @@
         }
       ]
     },
-    "the-atlantic-slave-trade-to-the-caribbean--royal-african-company--caused": {
+    "proclamation-of-the-brazilian-republic-1889--the-1930-revolution-and-the-vargas-era--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -56,7 +72,23 @@
         }
       ]
     },
-    "the-atlantic-slave-trade-to-the-caribbean--saint-domingue-and-the-french-sugar-colony--enabled": {
+    "second-boer-war--treaty-of-windsor--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "slave-trade-act-1807--aberdeen-act-1845--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -65,16 +97,7 @@
         }
       ]
     },
-    "the-atlantic-slave-trade-to-the-caribbean--the-baptist-war-1831--precondition-of": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        }
-      ]
-    },
-    "the-atlantic-slave-trade-to-the-caribbean--the-british-industrial-revolution--enabled": {
+    "slave-trade-act-1807--slavery-abolition-act-1833--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -83,7 +106,7 @@
         }
       ]
     },
-    "the-brazilian-gold-cycle--the-british-industrial-revolution--enabled": {
+    "strangford-treaty-1810--aberdeen-act-1845--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -92,7 +115,7 @@
         }
       ]
     },
-    "the-brazilian-gold-cycle--transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--caused": {
+    "the-baptist-war-1831--slavery-abolition-act-1833--caused": {
       "from": "git",
       "versions": [
         {
@@ -101,7 +124,7 @@
         }
       ]
     },
-    "the-brazilian-gold-cycle--transfer-of-the-portuguese-court-to-brazil-1807--precondition-of": {
+    "transfer-of-the-portuguese-court-to-brazil-1807--independence-of-brazil-1822--caused": {
       "from": "git",
       "versions": [
         {
@@ -110,7 +133,7 @@
         }
       ]
     },
-    "the-caribbean-sugar-revolution--royal-african-company--caused": {
+    "transfer-of-the-portuguese-court-to-brazil-1807--strangford-treaty-1810--caused": {
       "from": "git",
       "versions": [
         {
@@ -119,16 +142,23 @@
         }
       ]
     },
-    "the-caribbean-sugar-revolution--the-atlantic-slave-trade-to-the-caribbean--caused": {
+    "treaty-of-windsor--germany-declares-war-1916--precondition-of": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-09-16"
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
         }
       ]
     }
   },
   "schema": 1,
-  "to": 1699
+  "to": 1899
 }
