@@ -1,10 +1,12 @@
 {
   "schema": 1,
-  "id": "philippines-under-united-states-of-america--philippines--succeeded",
+  "id": "philippines-before-1886--philippines--succeeded",
   "kind": "relation",
   "status": "active",
   "supersededBy": null,
-  "aliases": [],
+  "aliases": [
+    "philippines-under-united-states-of-america--philippines--succeeded"
+  ],
   "authors": [
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
@@ -13,7 +15,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-16",
   "origin": {
     "tool": "cshapes"
   },
@@ -29,7 +31,7 @@
       "locator": "gwcode 840"
     }
   ],
-  "from": "philippines-under-united-states-of-america",
+  "from": "philippines-before-1886",
   "to": "philippines",
   "type": "succeeded",
   "when": {

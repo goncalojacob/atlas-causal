@@ -1,10 +1,12 @@
 {
   "schema": 1,
-  "id": "belize-under-united-kingdom--belize--succeeded",
+  "id": "belize-before-1886--belize--succeeded",
   "kind": "relation",
   "status": "active",
   "supersededBy": null,
-  "aliases": [],
+  "aliases": [
+    "belize-under-united-kingdom--belize--succeeded"
+  ],
   "authors": [
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
@@ -13,7 +15,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-09-16",
   "origin": {
     "tool": "cshapes"
   },
@@ -29,7 +31,7 @@
       "locator": "gwcode 80"
     }
   ],
-  "from": "belize-under-united-kingdom",
+  "from": "belize-before-1886",
   "to": "belize",
   "type": "succeeded",
   "when": {

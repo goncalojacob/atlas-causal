@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "western-australia",
   "kind": "actor",
-  "status": "active",
-  "supersededBy": null,
+  "status": "merged",
+  "supersededBy": "western-australia-uk",
   "aliases": [],
   "authors": [
     {
@@ -13,7 +13,14 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-16",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m51-joined"
+    ],
+    "note": "M51: merged into western-australia-uk, the same polity — the outlines either side of the 1885/1886 seam share 98.49% of the smaller (docs/m51-overlaps.md). The names, summary and licence here are CShapes 2.0's and stay here: the survivor carries the other import's licence and could not take them."
+  },
   "origin": {
     "tool": "cshapes"
   },

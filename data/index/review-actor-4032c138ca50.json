@@ -1367,29 +1367,31 @@
       "authors": [
         {
           "github": null,
-          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
       "cites": [
+        "cshapes-2-0",
         "historical-basemaps"
       ],
-      "created": "2026-09-16",
-      "degree": 2,
-      "id": "algeria-fr",
+      "created": "2026-09-05",
+      "degree": 8,
+      "id": "algeria-under-france",
       "kind": "actor",
       "names": [
-        "Algeria (FR)"
+        "Algeria under France"
       ],
       "origin": {
-        "tool": "basemaps"
+        "tool": "cshapes"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "m51-joined"
         ],
+        "note": "M51: joined with algeria-fr, the same polity. The outlines either side of the 1885/1886 seam share 99.14% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1962); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -2240,29 +2242,31 @@
       "authors": [
         {
           "github": null,
-          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
       "cites": [
+        "cshapes-2-0",
         "historical-basemaps"
       ],
-      "created": "2026-09-16",
-      "degree": 2,
-      "id": "angola-portugal",
+      "created": "2026-09-05",
+      "degree": 7,
+      "id": "angola-under-portugal",
       "kind": "actor",
       "names": [
-        "Angola (Portugal)"
+        "Angola under Portugal"
       ],
       "origin": {
-        "tool": "basemaps"
+        "tool": "cshapes"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "m51-joined"
         ],
+        "note": "M51: joined with angola-portugal, the same polity. The outlines either side of the 1885/1886 seam share 99.44% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1975); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -5745,10 +5749,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 5,
+      "degree": 8,
       "id": "belize-before-1886",
       "kind": "actor",
       "names": [
@@ -5759,11 +5764,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m51-joined"
         ],
+        "note": "M51: joined with belize-under-united-kingdom, the same polity. The outlines either side of the 1885/1886 seam share 94.63% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1650) and the 1886 record's own end (1981); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -6038,10 +6045,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 8,
+      "degree": 11,
       "id": "bhutan-before-1886",
       "kind": "actor",
       "names": [
@@ -6052,11 +6060,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m51-joined"
         ],
+        "note": "M51: joined with bhutan-under-united-kingdom, the same polity. The outlines either side of the 1885/1886 seam share 93.86% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1650) and the 1886 record's own end (1948); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -14657,29 +14667,31 @@
       "authors": [
         {
           "github": null,
-          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
       "cites": [
+        "cshapes-2-0",
         "historical-basemaps"
       ],
-      "created": "2026-09-16",
-      "degree": 4,
-      "id": "egypt-before-1886",
+      "created": "2026-09-05",
+      "degree": 8,
+      "id": "egypt-under-united-kingdom",
       "kind": "actor",
       "names": [
-        "Egypt"
+        "Egypt under United Kingdom"
       ],
       "origin": {
-        "tool": "basemaps"
+        "tool": "cshapes"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "m51-joined"
         ],
+        "note": "M51: joined with egypt-before-1886, the same polity. The outlines either side of the 1885/1886 seam share 87.00% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1715) and the 1886 record's own end (1922); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -15951,29 +15963,31 @@
       "authors": [
         {
           "github": null,
-          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
       "cites": [
+        "cshapes-2-0",
         "historical-basemaps"
       ],
-      "created": "2026-09-16",
-      "degree": 2,
-      "id": "fiji-before-1886",
+      "created": "2026-09-05",
+      "degree": 4,
+      "id": "fiji-under-united-kingdom",
       "kind": "actor",
       "names": [
-        "Fiji"
+        "Fiji under United Kingdom"
       ],
       "origin": {
-        "tool": "basemaps"
+        "tool": "cshapes"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "m51-joined"
         ],
+        "note": "M51: joined with fiji-before-1886, the same polity. The outlines either side of the 1885/1886 seam share 92.04% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1970); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -16574,29 +16588,31 @@
       "authors": [
         {
           "github": null,
-          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
       "cites": [
+        "cshapes-2-0",
         "historical-basemaps"
       ],
-      "created": "2026-09-16",
-      "degree": 2,
-      "id": "gabon-before-1886",
+      "created": "2026-09-05",
+      "degree": 8,
+      "id": "gabon-under-france",
       "kind": "actor",
       "names": [
-        "Gabon"
+        "Gabon under France"
       ],
       "origin": {
-        "tool": "basemaps"
+        "tool": "cshapes"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "m51-joined"
         ],
+        "note": "M51: joined with gabon-before-1886, the same polity. The outlines either side of the 1885/1886 seam share 99.08% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1960); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -21426,29 +21442,31 @@
       "authors": [
         {
           "github": null,
-          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
       "cites": [
+        "cshapes-2-0",
         "historical-basemaps"
       ],
-      "created": "2026-09-16",
-      "degree": 2,
-      "id": "iceland-before-1886",
+      "created": "2026-09-05",
+      "degree": 5,
+      "id": "iceland-under-denmark",
       "kind": "actor",
       "names": [
-        "Iceland"
+        "Iceland under Denmark"
       ],
       "origin": {
-        "tool": "basemaps"
+        "tool": "cshapes"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "m51-joined"
         ],
+        "note": "M51: joined with iceland-before-1886, the same polity. The outlines either side of the 1885/1886 seam share 91.58% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1942); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -30963,10 +30981,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 12,
+      "degree": 17,
       "id": "madagascar",
       "kind": "actor",
       "names": [
@@ -30977,11 +30996,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m51-joined"
         ],
+        "note": "M51: joined with madagascar-malagasy, the same polity. The outlines either side of the 1885/1886 seam share 98.82% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1400) and the 1886 record's own end (open); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -31655,29 +31676,31 @@
       "authors": [
         {
           "github": null,
-          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
       "cites": [
+        "cshapes-2-0",
         "historical-basemaps"
       ],
-      "created": "2026-09-16",
-      "degree": 2,
-      "id": "malta-before-1886",
+      "created": "2026-09-05",
+      "degree": 4,
+      "id": "malta-under-united-kingdom",
       "kind": "actor",
       "names": [
-        "Malta"
+        "Malta under United Kingdom"
       ],
       "origin": {
-        "tool": "basemaps"
+        "tool": "cshapes"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "m51-joined"
         ],
+        "note": "M51: joined with malta-before-1886, the same polity. The outlines either side of the 1885/1886 seam share 86.15% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1964); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -36456,29 +36479,31 @@
       "authors": [
         {
           "github": null,
-          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
       "cites": [
+        "cshapes-2-0",
         "historical-basemaps"
       ],
-      "created": "2026-09-16",
-      "degree": 2,
-      "id": "mozambique-before-1886",
+      "created": "2026-09-05",
+      "degree": 5,
+      "id": "mozambique-under-portugal",
       "kind": "actor",
       "names": [
-        "Mozambique"
+        "Mozambique under Portugal"
       ],
       "origin": {
-        "tool": "basemaps"
+        "tool": "cshapes"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "m51-joined"
         ],
+        "note": "M51: joined with mozambique-before-1886, the same polity. The outlines either side of the 1885/1886 seam share 95.14% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1975); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -39103,10 +39128,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 3,
       "id": "new-south-wales-uk",
       "kind": "actor",
       "names": [
@@ -39117,11 +39143,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m51-joined"
         ],
+        "note": "M51: joined with new-south-wales, the same polity. The outlines either side of the 1885/1886 seam share 98.06% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1900); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -45821,10 +45849,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 10,
+      "degree": 13,
       "id": "philippines-before-1886",
       "kind": "actor",
       "names": [
@@ -45835,11 +45864,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m51-joined"
         ],
+        "note": "M51: joined with philippines-under-united-states-of-america, the same polity. The outlines either side of the 1885/1886 seam share 87.89% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1492) and the 1886 record's own end (1946); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -48290,10 +48321,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 3,
       "id": "queensland-uk",
       "kind": "actor",
       "names": [
@@ -48304,11 +48336,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m51-joined"
         ],
+        "note": "M51: joined with queensland, the same polity. The outlines either side of the 1885/1886 seam share 99.58% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1900); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -51936,29 +51970,31 @@
       "authors": [
         {
           "github": null,
-          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
       "cites": [
+        "cshapes-2-0",
         "historical-basemaps"
       ],
-      "created": "2026-09-16",
-      "degree": 2,
-      "id": "senegal-fr",
+      "created": "2026-09-05",
+      "degree": 4,
+      "id": "senegal-under-france",
       "kind": "actor",
       "names": [
-        "Senegal (FR)"
+        "Senegal under France"
       ],
       "origin": {
-        "tool": "basemaps"
+        "tool": "cshapes"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "m51-joined"
         ],
+        "note": "M51: joined with senegal-fr, the same polity. The outlines either side of the 1885/1886 seam share 79.56% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1959); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -52981,29 +53017,31 @@
       "authors": [
         {
           "github": null,
-          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
       "cites": [
+        "cshapes-2-0",
         "historical-basemaps"
       ],
-      "created": "2026-09-16",
-      "degree": 3,
-      "id": "sierra-leone-before-1886",
+      "created": "2026-09-05",
+      "degree": 7,
+      "id": "sierra-leone-under-united-kingdom",
       "kind": "actor",
       "names": [
-        "Sierra Leone"
+        "Sierra Leone under United Kingdom"
       ],
       "origin": {
-        "tool": "basemaps"
+        "tool": "cshapes"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "m51-joined"
         ],
+        "note": "M51: joined with sierra-leone-before-1886, the same polity. The outlines either side of the 1885/1886 seam share 99.56% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1815) and the 1886 record's own end (1961); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -53942,10 +53980,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 3,
       "id": "south-australia-uk",
       "kind": "actor",
       "names": [
@@ -53956,11 +53995,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m51-joined"
         ],
+        "note": "M51: joined with south-australia, the same polity. The outlines either side of the 1885/1886 seam share 94.71% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1900); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -60691,10 +60732,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 3,
       "id": "victoria-uk",
       "kind": "actor",
       "names": [
@@ -60705,11 +60747,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m51-joined"
         ],
+        "note": "M51: joined with victoria, the same polity. The outlines either side of the 1885/1886 seam share 90.77% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1900); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {
@@ -63480,10 +63524,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 3,
       "id": "western-australia-uk",
       "kind": "actor",
       "names": [
@@ -63494,11 +63539,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m51-joined"
         ],
+        "note": "M51: joined with western-australia, the same polity. The outlines either side of the 1885/1886 seam share 98.49% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1900); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active"
     },
     {

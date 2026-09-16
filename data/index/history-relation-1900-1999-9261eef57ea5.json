@@ -98,12 +98,20 @@
         }
       ]
     },
-    "belize-under-united-kingdom--belize--succeeded": {
+    "belize-before-1886--belize--succeeded": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "aliases",
+            "from",
+            "id"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -116,12 +124,20 @@
         }
       ]
     },
-    "bhutan-under-united-kingdom--bhutan--succeeded": {
+    "bhutan-before-1886--bhutan--succeeded": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "aliases",
+            "from",
+            "id"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -1057,12 +1073,20 @@
         }
       ]
     },
-    "philippines-under-united-states-of-america--philippines--succeeded": {
+    "philippines-before-1886--philippines--succeeded": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "aliases",
+            "from",
+            "id"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },

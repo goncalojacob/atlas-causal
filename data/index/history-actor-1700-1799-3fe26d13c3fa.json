@@ -928,6 +928,37 @@
             "where"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "egypt-under-united-kingdom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },

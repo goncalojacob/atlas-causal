@@ -183,8 +183,8 @@
         "cshapes-2-0"
       ],
       "created": "2026-09-08",
-      "from": "belize-under-united-kingdom",
-      "id": "belize-under-united-kingdom--belize--succeeded",
+      "from": "belize-before-1886",
+      "id": "belize-before-1886--belize--succeeded",
       "kind": "relation",
       "origin": {
         "tool": "cshapes"
@@ -195,7 +195,7 @@
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active",
       "to": "belize",
       "type": "succeeded"
@@ -239,8 +239,8 @@
         "cshapes-2-0"
       ],
       "created": "2026-09-08",
-      "from": "bhutan-under-united-kingdom",
-      "id": "bhutan-under-united-kingdom--bhutan--succeeded",
+      "from": "bhutan-before-1886",
+      "id": "bhutan-before-1886--bhutan--succeeded",
       "kind": "relation",
       "origin": {
         "tool": "cshapes"
@@ -251,7 +251,7 @@
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active",
       "to": "bhutan",
       "type": "succeeded"
@@ -2202,8 +2202,8 @@
         "cshapes-2-0"
       ],
       "created": "2026-09-08",
-      "from": "philippines-under-united-states-of-america",
-      "id": "philippines-under-united-states-of-america--philippines--succeeded",
+      "from": "philippines-before-1886",
+      "id": "philippines-before-1886--philippines--succeeded",
       "kind": "relation",
       "origin": {
         "tool": "cshapes"
@@ -2214,7 +2214,7 @@
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-16",
       "status": "active",
       "to": "philippines",
       "type": "succeeded"
@@ -3263,9 +3263,9 @@
   "schema": 1,
   "warnings": [
     {
-      "id": "bhutan-under-united-kingdom--bhutan--succeeded",
+      "id": "bhutan-before-1886--bhutan--succeeded",
       "kind": "relation",
-      "message": "the relation falls entirely outside \"bhutan-under-united-kingdom\"'s dates",
+      "message": "the relation falls entirely outside \"bhutan-before-1886\"'s dates",
       "rule": "relation-outside-actor-when"
     },
     {

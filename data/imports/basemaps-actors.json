@@ -173,7 +173,7 @@
       "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Egypt": {
-      "actor": "egypt-before-1886",
+      "actor": "egypt-under-united-kingdom",
       "names": [
         "Egypt"
       ],
@@ -188,7 +188,7 @@
       "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1400, 1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Fiji": {
-      "actor": "fiji-before-1886",
+      "actor": "fiji-under-united-kingdom",
       "names": [
         "Fiji"
       ],
@@ -199,7 +199,7 @@
       "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1400, 1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Gabon": {
-      "actor": "gabon-before-1886",
+      "actor": "gabon-under-france",
       "names": [
         "Gabon"
       ],
@@ -240,7 +240,7 @@
       "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Iceland": {
-      "actor": "iceland-before-1886",
+      "actor": "iceland-under-denmark",
       "names": [
         "Iceland"
       ],
@@ -307,7 +307,7 @@
       "note": "data/actors/mali.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1400, 1492, 1500, 1650, 1700, 1715. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at mali."
     },
     "Malta": {
-      "actor": "malta-before-1886",
+      "actor": "malta-under-united-kingdom",
       "names": [
         "Malta"
       ],
@@ -356,7 +356,7 @@
       "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1400, 1650, 1700, 1715, 1783, 1800, 1815, 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Mozambique": {
-      "actor": "mozambique-before-1886",
+      "actor": "mozambique-under-portugal",
       "names": [
         "Mozambique"
       ],
@@ -460,7 +460,7 @@
       "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Sierra Leone": {
-      "actor": "sierra-leone-before-1886",
+      "actor": "sierra-leone-under-united-kingdom",
       "names": [
         "Sierra Leone"
       ],

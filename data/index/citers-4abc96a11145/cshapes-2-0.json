@@ -140,7 +140,7 @@
     },
     {
       "dissent": false,
-      "id": "belize-under-united-kingdom",
+      "id": "belize-before-1886",
       "kind": "actor",
       "locator": "gwcode 80"
     },
@@ -164,7 +164,7 @@
     },
     {
       "dissent": false,
-      "id": "bhutan-under-united-kingdom",
+      "id": "bhutan-before-1886",
       "kind": "actor",
       "locator": "gwcode 760"
     },
@@ -1052,7 +1052,7 @@
     },
     {
       "dissent": false,
-      "id": "madagascar-malagasy",
+      "id": "madagascar",
       "kind": "actor",
       "locator": "gwcode 580"
     },
@@ -1244,7 +1244,7 @@
     },
     {
       "dissent": false,
-      "id": "new-south-wales",
+      "id": "new-south-wales-uk",
       "kind": "actor",
       "locator": "gwcode 901"
     },
@@ -1406,7 +1406,7 @@
     },
     {
       "dissent": false,
-      "id": "philippines-under-united-states-of-america",
+      "id": "philippines-before-1886",
       "kind": "actor",
       "locator": "gwcode 840"
     },
@@ -1442,7 +1442,7 @@
     },
     {
       "dissent": false,
-      "id": "queensland",
+      "id": "queensland-uk",
       "kind": "actor",
       "locator": "gwcode 905"
     },
@@ -1580,7 +1580,7 @@
     },
     {
       "dissent": false,
-      "id": "south-australia",
+      "id": "south-australia-uk",
       "kind": "actor",
       "locator": "gwcode 903"
     },
@@ -1880,7 +1880,7 @@
     },
     {
       "dissent": false,
-      "id": "victoria",
+      "id": "victoria-uk",
       "kind": "actor",
       "locator": "gwcode 904"
     },
@@ -1916,7 +1916,7 @@
     },
     {
       "dissent": false,
-      "id": "western-australia",
+      "id": "western-australia-uk",
       "kind": "actor",
       "locator": "gwcode 902"
     },
@@ -6260,7 +6260,7 @@
     },
     {
       "dissent": false,
-      "id": "belize-under-united-kingdom--belize--succeeded",
+      "id": "belize-before-1886--belize--succeeded",
       "kind": "relation",
       "locator": "gwcode 80"
     },
@@ -6272,7 +6272,7 @@
     },
     {
       "dissent": false,
-      "id": "bhutan-under-united-kingdom--bhutan--succeeded",
+      "id": "bhutan-before-1886--bhutan--succeeded",
       "kind": "relation",
       "locator": "gwcode 760"
     },
@@ -6584,7 +6584,7 @@
     },
     {
       "dissent": false,
-      "id": "philippines-under-united-states-of-america--philippines--succeeded",
+      "id": "philippines-before-1886--philippines--succeeded",
       "kind": "relation",
       "locator": "gwcode 840"
     },

@@ -82,6 +82,14 @@
             "where"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -97,6 +105,14 @@
             "origin"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -172,6 +188,14 @@
             "where"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -187,6 +211,14 @@
             "origin"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -525,6 +557,14 @@
             "origin"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -564,6 +604,14 @@
             "origin"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -1385,21 +1433,6 @@
         }
       ]
     },
-    "egypt-under-united-kingdom": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-05"
-        },
-        {
-          "fields": [
-            "origin"
-          ],
-          "on": "2026-09-05"
-        }
-      ]
-    },
     "el-salvador": {
       "from": "git",
       "versions": [
@@ -1533,6 +1566,14 @@
             "where"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -1548,6 +1589,14 @@
             "origin"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -1718,6 +1767,14 @@
             "where"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -1733,6 +1790,14 @@
             "origin"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -2250,6 +2315,14 @@
             "where"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -2265,6 +2338,14 @@
             "origin"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -2841,6 +2922,14 @@
             "origin"
           ],
           "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -2893,6 +2982,14 @@
             "where"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -2908,6 +3005,14 @@
             "origin"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -3120,6 +3225,14 @@
             "where"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -3135,6 +3248,14 @@
             "origin"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -3314,6 +3435,14 @@
             "origin"
           ],
           "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -3349,6 +3478,15 @@
         {
           "fields": [
             "where"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary",
+            "when"
           ],
           "on": "2026-09-16"
         }
@@ -3802,6 +3940,14 @@
             "origin"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -3900,6 +4046,14 @@
             "origin"
           ],
           "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -3920,6 +4074,15 @@
         {
           "fields": [
             "where"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary",
+            "when"
           ],
           "on": "2026-09-16"
         }
@@ -4265,6 +4428,14 @@
             "where"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -4280,6 +4451,14 @@
             "origin"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -4401,6 +4580,14 @@
             "where"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -4416,6 +4603,14 @@
             "origin"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -4528,6 +4723,14 @@
             "origin"
           ],
           "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -4548,6 +4751,15 @@
         {
           "fields": [
             "where"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary",
+            "when"
           ],
           "on": "2026-09-16"
         }
@@ -5313,6 +5525,14 @@
             "origin"
           ],
           "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -5333,6 +5553,15 @@
         {
           "fields": [
             "where"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary",
+            "when"
           ],
           "on": "2026-09-16"
         }
@@ -5431,6 +5660,14 @@
             "origin"
           ],
           "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -5451,6 +5688,15 @@
         {
           "fields": [
             "where"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary",
+            "when"
           ],
           "on": "2026-09-16"
         }
