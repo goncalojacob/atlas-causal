@@ -78,7 +78,7 @@ rewritten. `node tools/validate.mjs --index`: **10,441 records, 0 errors**,
 one failure is deviation 730's label flake, which passes whenever its own file
 is run alone and did so here, before and after every change this milestone
 made (deviation 738). The account is `## M48: what the reader sees` below, with
-deviations 731 to 739.
+deviations 731 to 740.
 
 Before it, M43a (on `m0`): **the map has borders at every year from
 1400 to 2019, and the four centuries before CShapes are drawn as what they
@@ -8376,7 +8376,21 @@ difference between a filter and a deletion, and it is what
      three full runs and has not been seen since. Both pass when their file is
      run by itself, before and after this milestone's changes. Neither is the
      timing flake the protocol names.
-739. **A graph link shared before today opens on a narrower graph.** `?degree=`
+739. **The check on the head sat an hour in `Tests` and the harness's one
+     unbounded wait is now bounded.** The same suite takes 234 s locally on a
+     four-core machine and took 286 s on the runner at the commit before it;
+     run 734 on `f89b1309` reached an hour with nothing written, which is the
+     shape deviations 445, 543 and 551 describe. `tests/browser.mjs` opens by
+     saying that neither of its waits may be unbounded and then leaves a third
+     one that is: `page.eval` sends a `Runtime.evaluate` and awaits a reply
+     that a renderer which has gone away never sends, and an `await` in a test
+     body that never settles is a suite that stops printing with nothing in the
+     log to say where. It is bounded at 30 s now — a hundredfold what a DOM
+     read takes — so the same event becomes a failure naming the expression.
+     The push carrying it cancels the hung run and starts a fresh one, which is
+     also the one re-run the protocol allows for a job that died with no test
+     body reporting.
+740. **A graph link shared before today opens on a narrower graph.** `?degree=`
      absent means the default, which is now 2 rather than "everything", so a
      link a reader sent last week draws 147 nodes where it drew 250. The map and
      the timeline in that link are unchanged, and the alternative — writing

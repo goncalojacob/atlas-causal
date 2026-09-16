@@ -31,6 +31,15 @@ export const skip = chrome ? false : 'no headless browser found; set $CHROME to 
 // took too long, which is the thing these sentences exist to replace.
 const HANDSHAKE_MS = 20_000;
 const CLOSE_MS = 15_000;
+// And the third, which was not bounded and is the one that matters most: a
+// `Runtime.evaluate` whose reply never arrives. Every expression these tests
+// send is a DOM read or a click and answers in milliseconds; a page that has
+// stopped answering — a renderer that has gone, a socket the browser has given
+// up on — left `send` pending for ever, and an `await` in a test body that
+// never settles is a suite that stops printing with nothing in the log to say
+// where. Thirty seconds is a hundredfold what an honest eval takes and well
+// under the runner's own `--test-timeout`.
+const EVAL_MS = 30_000;
 
 async function bounded(promise, ms, what) {
   let timer = null;
@@ -103,11 +112,15 @@ export async function connect(wsUrl) {
     // The page's own value, brought back as JSON. A thrown expression is a
     // test failure with the page's message, not a silent undefined.
     async eval(expression) {
-      const result = await send('Runtime.evaluate', {
-        expression: `(() => { ${expression} })()`,
-        returnByValue: true,
-        awaitPromise: true,
-      });
+      const result = await bounded(
+        send('Runtime.evaluate', {
+          expression: `(() => { ${expression} })()`,
+          returnByValue: true,
+          awaitPromise: true,
+        }),
+        EVAL_MS,
+        () => `the page never answered: ${EVAL_MS / 1000} s waiting for ${JSON.stringify(expression.slice(0, 200))}`,
+      );
       if (result.exceptionDetails) throw new Error(result.exceptionDetails.exception?.description ?? 'page threw');
       return result.result.value;
     },
