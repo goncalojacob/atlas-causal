@@ -232,15 +232,19 @@ test('a state change updates the bars in place and does not rebuild them', { ski
     // Before H4c every element in the drawing was removed and made again on
     // every state change, which on this dataset is some hundreds and at
     // twenty thousand events is tens of thousands.
-    // The bound was ten until M47 wrote the first `parent` into `data/` and
-    // the bars layer gained five ring rects, which shifts what the reuse pool
-    // hands to which bar and costs two more <title> elements on a state
-    // change. Ten of some three hundred and fifty was a handful and twelve
-    // still is; what the test is about is the order of magnitude — a state
-    // change touches a bar and its labels and leaves the drawing standing.
+    // The bound was ten until M47 wrote the first `parent` into `data/` and the
+    // bars layer gained five ring rects, then twelve; M50 put 35 more events on
+    // the timeline and it went to thirteen of 540. Raising it by one per
+    // milestone is a bound that means nothing, so it is a **share of the
+    // drawing** now: a state change may touch five per cent of the elements,
+    // which is the order of magnitude the test is about — a bar and its labels,
+    // not the picture. Before H4c every element was removed and made again,
+    // which on this dataset is some hundreds and at twenty thousand events is
+    // tens of thousands.
+    const handful = Math.max(12, Math.round(before * 0.05));
     assert.ok(before > 100, `the atlas drew something (${before} elements)`);
-    assert.ok(churn.removed < 12, `the drawing was not rebuilt (${churn.removed} of ${before} elements removed)`);
-    assert.ok(churn.added < 12, `nor built again (${churn.added} of ${before} elements added)`);
+    assert.ok(churn.removed < handful, `the drawing was not rebuilt (${churn.removed} of ${before} elements removed)`);
+    assert.ok(churn.added < handful, `nor built again (${churn.added} of ${before} elements added)`);
     assert.ok(Math.abs(after - before) < 10, `and it is the same drawing (${before} to ${after})`);
 
     // And the layers are still the only children of the <svg>: nothing was

@@ -9525,6 +9525,23 @@ them.
      draws 60 and 35. M50's corpus is what pushed it over. Other browser tests
      here already name a viewport (`DESK` in `keyboard-browser`, `WIDE` in
      `map-browser`); this one now does too.
+784. **The deepest zoom no longer resolves every event, and the axis is why.**
+     `stackLayout` at `MAX_ZOOM` drew one node per event until this milestone,
+     and that was a fact about an axis a hundred and thirty-six years wide
+     rather than about the zoom: the merge radius there is
+     `STACK_DISTANCE / MAX_ZOOM`, about **1.6 px**, and 285 events over five
+     centuries leave pairs inside it — **260 nodes for 285 events**, with **no
+     two of them at the same position**. It is the same shape of finding as §5
+     and it is not fixed here. `tests/graph-layout.test.mjs` now asserts what
+     the deepest zoom does promise: that it is the most resolved picture there
+     is, and that its badges still account for every event.
+785. **A bound that goes up by one per milestone is a bound that means
+     nothing.** `tests/timeline-browser.test.mjs` allows a state change to
+     churn a "handful" of elements: ten until M47, then twelve, and M50's
+     thirty-five extra bars made it **thirteen of 540**. It is a **share of the
+     drawing** now — five per cent, or twelve, whichever is larger — which is
+     the order of magnitude the test is about: a bar and its labels, not the
+     picture.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled

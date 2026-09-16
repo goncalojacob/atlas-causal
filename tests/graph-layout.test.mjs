@@ -429,7 +429,17 @@ test('the whole atlas at the default zoom: fewer nodes than events, and they add
     assert.ok(s.nodes.length < l.nodes.length, `${what}: the default zoom merges something`);
     assert.equal(s.nodes.reduce((n, c) => n + c.count, 0), events.length, `${what}: the badges sum to the events`);
     assert.ok(s.edges.length <= l.edges.length, `${what}: no line is invented`);
-    assert.equal(stackLayout(l, { k: MAX_ZOOM }).nodes.length, events.length, `${what}: the deepest zoom draws them all`);
+    // The deepest zoom used to draw every event as a node of its own, and that
+    // was a fact about an axis a hundred and thirty-six years wide rather than
+    // about the zoom. M50 made the axis five centuries; at `MAX_ZOOM` the merge
+    // radius is `STACK_DISTANCE / MAX_ZOOM`, about 1.6 px, and 285 events on
+    // that axis leave pairs inside it — 260 nodes for 285 events, with none of
+    // them at another's exact position. What the deepest zoom promises, and
+    // what is asserted instead, is that it is the most resolved picture there
+    // is and that it still accounts for every event.
+    const deepest = stackLayout(l, { k: MAX_ZOOM });
+    assert.ok(deepest.nodes.length > s.nodes.length, `${what}: the deepest zoom resolves more than the default`);
+    assert.equal(deepest.nodes.reduce((n, c) => n + c.count, 0), events.length, `${what}: and still accounts for every event`);
     assert.equal(stackShape(stackLayout(l, { k: 1 })), stackShape(s), `${what}: the same twice`);
   }
 });
