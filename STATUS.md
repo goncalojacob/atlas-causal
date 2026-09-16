@@ -8932,9 +8932,17 @@ writes no record, and whether to rewrite A4 is the owner's.
 **Checks, all three on the merged tree before anything was pushed.**
 `node tools/build-index.mjs`, then `node tools/validate.mjs --index`: **10,444
 records, 0 errors**, 1,227 warnings. `node --test --test-timeout=120000`:
-**1,530 tests, 1,530 passed, 0 failed, 0 skipped** — M48's suite and M51's
-together, and the browser flake of deviation 730 did not fire. `m49` is not
-deleted and nothing was merged into `main`.
+**1,530 tests, 0 skipped** — M48's suite and M51's together. The suite was run
+in full twice on this tree: the first, before the merge commit, passed **1,530
+of 1,530**; the second, on the final tree, failed **2 of 1,530** — `selecting a
+polity finds the events on its ground` in `lens-browser.test.mjs` and `a drag of
+the band leaves the open explanation open` in `panel-browser.test.mjs` — and
+both **pass when the two files are run alone**, 37 of 37. That is the signature
+of deviation 730 exactly as deviation 757 describes it, in a third milestone
+now: a browser test that fails under the full suite's load and never by itself.
+Nothing in this merge touches `src/`, and the count is reported as both runs saw
+it rather than as the greener one did. `m49` is not deleted and nothing was
+merged into `main`.
 
 ### Deviations
 
