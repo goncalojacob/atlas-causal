@@ -1,315 +1,2650 @@
 {
   "actors": {
-    "aceh": 0,
-    "afghanistan": 1,
-    "ai-viet": 2,
+    "a-am-n-g-j-tla-amin-sliammon": 0,
+    "a-i-cofan-kofan": 1,
+    "a-lenene-te-wsanec": 2,
+    "a-uuk-i-ath-tla-o-qui-aht": 5,
+    "a-uwe": 4,
+    "abenaki-abenaquis": 5,
+    "abipones": 6,
+    "abitibiwinni-aki": 7,
+    "accomack": 0,
+    "aceh": 1,
+    "achagua": 2,
+    "ache": 3,
+    "achi": 4,
+    "achires": 5,
+    "acho-dene-koe": 6,
+    "achuar": 7,
+    "achumawi": 0,
+    "acjachemen-juaneno": 1,
+    "adal": 2,
+    "adena": 6,
+    "afghanistan": 4,
+    "ahantchuyuk": 4,
+    "ahe-kawahib": 6,
+    "ahmadnagar": 7,
+    "ahtna-nenn": 0,
+    "ai-viet": 1,
+    "aikana": 2,
     "ainus": 3,
+    "ais": 4,
+    "akaitcho": 5,
+    "akan": 6,
+    "akawaio-akawayo": 7,
+    "akimel-o-odham-upper-pima": 0,
+    "akokisa": 1,
+    "akwe": 2,
+    "alazapas": 3,
     "albania": 4,
     "algeria": 5,
-    "alwa": 6,
-    "amazon-hunter-gatherers": 7,
+    "alse-alsea": 6,
+    "alutiiq-sugpiaq": 7,
+    "alwa": 0,
+    "amahuaca": 1,
+    "amazon-hunter-gatherers": 2,
+    "ambalo": 3,
+    "amboca": 5,
+    "amorua": 5,
+    "amuwu": 6,
+    "anambe": 7,
     "andean-hunter-gatherers": 0,
     "andean-states-and-chiefdoms": 1,
-    "angola": 2,
-    "aragon": 3,
-    "argentina": 4,
-    "armenia": 5,
-    "athabaskan": 6,
-    "australia": 3,
-    "australian-aboriginal-hunter-gatherers": 0,
-    "austria": 1,
-    "austria-hungary": 2,
-    "aymara-kingdoms": 3,
-    "ayutthaya": 4,
-    "azerbaijan": 4,
-    "bahamas": 5,
-    "bahrain": 5,
-    "bangladesh": 0,
-    "bantu-peoples": 1,
-    "barbados": 2,
-    "belarus-byelorussia": 3,
-    "belgium": 4,
-    "belize": 5,
-    "benin": 6,
-    "benin-before-1886": 7,
-    "beothuk": 0,
+    "andoa": 2,
+    "angaite": 7,
+    "angola": 4,
+    "anishinabewaki": 6,
+    "anuu": 5,
+    "aonikenk-tehuelche": 7,
+    "apalachees": 0,
+    "aparai": 1,
+    "apiaka": 2,
+    "apinaye": 3,
+    "appamattuck": 4,
+    "apsaalooke-crow": 0,
+    "apyawa": 6,
+    "arabela": 7,
+    "arabs": 0,
+    "aragon": 1,
+    "arakan": 2,
+    "araona": 3,
+    "arapaho": 4,
+    "arara-of-volta-grande": 3,
+    "argentina": 6,
+    "arikapu": 7,
+    "armenia": 2,
+    "arosaguntacook": 1,
+    "arrohatec": 2,
+    "arua": 3,
+    "aseniwuche-winewak-rocky-mountain": 4,
+    "ashaninka": 5,
+    "asheninka": 6,
+    "assiniboine": 7,
+    "atakapa-ishak": 0,
+    "atakapa-ishak-chawasha": 1,
+    "atfalati": 2,
+    "athabaskan": 3,
+    "atikum-uma": 4,
+    "atsugewi": 1,
+    "attiwonderonk-neutral": 7,
+    "aucocisco": 6,
+    "australia": 0,
+    "australian-aboriginal-hunter-gatherers": 1,
+    "austria": 2,
+    "austria-hungary": 5,
+    "awa": 4,
+    "awa-2": 5,
+    "awaete": 6,
+    "awaete-asurini-of-the-xingu": 7,
+    "awajun": 0,
+    "awaswas": 1,
+    "awytyza": 2,
+    "ayahuacas": 7,
+    "aymara": 4,
+    "aymara-kingdoms": 5,
+    "ayoreo": 6,
+    "ayutthaya": 7,
+    "ayuukja-ay-mixe": 0,
+    "azerbaijan": 1,
+    "bahamas": 2,
+    "bahrain": 3,
+    "banawa": 4,
+    "bangladesh": 5,
+    "bantu-peoples": 6,
+    "barasano-panenoa": 7,
+    "barbados": 0,
+    "bare": 1,
+    "bari": 2,
+    "batsil-winik-otik-tzotzil": 3,
+    "baure": 4,
+    "beaver": 5,
+    "beaver-lake-cree": 6,
+    "belarus-byelorussia": 7,
+    "belgium": 0,
+    "belize": 3,
+    "ben-zaa-binniza-men-diiste-bene-xhon-zapoteco": 2,
+    "bengal": 3,
+    "benin": 4,
+    "benin-before-1886": 5,
+    "beothuk": 6,
+    "berar": 0,
+    "betoy": 7,
     "beylik-of-aydin": 1,
     "bhutan": 2,
-    "blue-horde": 3,
-    "bolivia": 5,
-    "bosnia-before-1886": 4,
-    "bosnia-herzegovina": 1,
-    "botswana": 6,
-    "brazil": 0,
-    "britany": 1,
-    "brunei": 2,
-    "bulgar-khanate": 3,
-    "bulgaria": 4,
-    "burkina-faso-upper-volta": 5,
-    "burundi": 6,
-    "byzantine-empire": 7,
-    "caloosahatchee-culture": 0,
-    "cambodia-kampuchea": 1,
-    "cameroon": 4,
-    "canada": 3,
+    "bia-mbya": 4,
+    "bidai": 4,
+    "bidar": 5,
+    "bide": 0,
+    "big-stone-cree": 7,
+    "bijapur": 6,
+    "biloxi": 1,
+    "blue-horde": 2,
+    "bodewadmiakiwen-potawatomi": 3,
+    "boe-before-1886": 5,
+    "bohanes": 4,
+    "bolivia": 7,
+    "bora": 6,
+    "boriken-taino": 0,
+    "bosnia-before-1886": 1,
+    "bosnia-herzegovina": 2,
+    "bostos": 3,
+    "botswana": 5,
+    "brazil": 4,
+    "bribri": 6,
+    "britany": 7,
+    "brothertown": 0,
+    "brunei": 1,
+    "brunka": 2,
+    "bugle-and-ngabe": 3,
+    "bulgar-khanate": 4,
+    "bulgaria": 2,
+    "burkina-faso-upper-volta": 6,
+    "burmese-kingdoms": 0,
+    "burundi": 7,
+    "byzantine-empire": 2,
+    "cabiyari-kawiyari": 4,
+    "caddo": 3,
+    "cahita": 4,
+    "cahto": 5,
+    "cahuilla": 6,
+    "caldwell": 0,
+    "calicuas": 1,
+    "caloosahatchee-culture": 1,
+    "calusa": 2,
+    "calvas": 5,
+    "cambodia": 3,
+    "cambodia-kampuchea": 4,
+    "cameroon": 6,
+    "canada": 7,
+    "canela-apanyekra": 0,
+    "canela-ramkokamekra": 1,
+    "canichana": 2,
+    "cape-fear": 3,
     "cape-verde": 4,
-    "caribbean-hunter-gatherers": 5,
-    "castile": 6,
-    "central-african-republic": 7,
-    "chad": 0,
-    "chagatai-khanate": 1,
-    "champa": 3,
-    "chile": 2,
-    "chimu-empire": 4,
+    "carcross-tagish-first-nation-bc": 5,
+    "carcross-tagish-first-nation-yukon": 6,
+    "caribbean-hunter-gatherers": 7,
+    "cascades": 2,
+    "castile": 2,
+    "castille": 3,
+    "catawba": 1,
+    "caxas": 4,
+    "caxcan": 5,
+    "cayubaba": 6,
+    "cayuse-umatilla-and-walla-walla": 7,
+    "central-african-republic": 1,
+    "central-pomo": 0,
+    "ch-orti": 2,
+    "chachi": 1,
+    "chad": 4,
+    "chafan": 4,
+    "chagatai-khanate": 6,
+    "chahta-yakni-choctaw": 7,
+    "chalat-i-lo-t-sikati-chalat": 0,
+    "chalon": 1,
+    "chamicuro": 2,
+    "champa": 4,
+    "champagne-aishihik": 3,
+    "chana": 5,
+    "chane": 4,
+    "chango": 6,
+    "chankas": 0,
+    "chaparra": 1,
+    "chapra": 2,
+    "charka": 3,
+    "charrua": 4,
+    "chehalis": 5,
+    "chelamela": 7,
+    "chelan": 7,
+    "chemapho": 0,
+    "chepenefa": 1,
+    "cheraw": 2,
+    "cheroenhaka-nottoway": 3,
+    "cherokee-oklahoma": 4,
+    "chesapeake": 5,
+    "cheyenne": 6,
+    "cheyenne-arapaho-oklahoma": 7,
+    "chiapaneco": 0,
+    "chibuleo": 1,
+    "chichas": 2,
+    "chickahominy": 5,
+    "chickasaw-oklahoma": 0,
+    "chicora": 6,
+    "chikashsha-yaki-chickasaw": 0,
+    "chile": 0,
+    "chilula": 5,
+    "chimacum": 1,
+    "chimariko-territory": 2,
+    "chimu": 6,
+    "chimu-empire": 3,
     "china": 5,
-    "chola-empire": 6,
-    "chuzan": 7,
-    "colombia": 1,
-    "comoros": 0,
-    "congo": 3,
-    "congo-democratic-republic-of-zaire": 5,
+    "chinantla-tsa-ju-jmi": 4,
+    "chinook": 7,
+    "chiquitano": 0,
+    "chiricahua-apache": 7,
+    "chiso": 2,
+    "chit-dee-ni-chetco": 4,
+    "chitimacha": 4,
+    "chitonahua-murunahua": 7,
+    "chochenyo": 5,
+    "choctaw-oklahoma": 6,
+    "chola-empire": 0,
+    "cholulteca": 1,
+    "chono": 2,
+    "chontal-de-guerrero-tuxteco": 5,
+    "chopcca": 4,
+    "chorotega": 5,
+    "chowanoke": 6,
+    "chukchansi": 7,
+    "chumash": 0,
+    "chuzan": 1,
+    "ciguayo": 2,
+    "clackamas": 1,
+    "clatskanie": 5,
+    "clatsop": 6,
+    "coahuiltecan": 6,
+    "coast-salish": 6,
+    "coast-yuki": 7,
+    "coca": 0,
+    "cochimi": 1,
+    "coharie": 2,
+    "colombia": 3,
+    "colville": 4,
+    "comca-ac-seri": 5,
+    "comoros": 7,
+    "confederated-tribes-of-grand-ronde": 1,
+    "confederated-tribes-of-siletz-indians": 2,
+    "confederated-tribes-of-warm-springs": 4,
+    "confederated-villages-of-lisjan": 0,
+    "congaree": 3,
+    "congo": 5,
+    "congo-before-1886": 7,
+    "congo-democratic-republic-of-zaire": 6,
+    "coos-lower-umpqua-siuslaw": 3,
+    "copuces": 0,
+    "coquille": 4,
+    "coree": 5,
     "corsica": 2,
-    "costa-rica": 4,
-    "cote-d-ivoire": 6,
-    "croatia": 7,
-    "cuba": 0,
-    "cyprus": 1,
-    "cyprus-before-1886": 2,
-    "czech-republic": 3,
+    "costa-rica": 5,
+    "cote-d-ivoire": 7,
+    "cow-creek-umpqua": 6,
+    "cowlitz": 3,
+    "coyutecos-nahua": 1,
+    "cree": 0,
+    "crimean-khanate": 2,
+    "croatan": 4,
+    "croatia": 5,
+    "cuba": 6,
+    "cuica": 7,
+    "cuicuilco": 3,
+    "cuitlatec": 1,
+    "cupeno": 0,
+    "cuttatawomen": 3,
+    "cyprus": 4,
+    "cyprus-before-1886": 5,
+    "czech-republic": 6,
     "czechoslovakia": 7,
-    "danzig": 7,
-    "denmark": 6,
+    "da-naxda-xw-awaetlatla": 0,
+    "dake-keyoh": 1,
+    "danzig": 2,
+    "dau-nom-wintu": 1,
+    "dau-pom-wintu": 4,
+    "daw": 5,
+    "deg-xit-an-ngan-deg-xit-an": 6,
+    "dehcho-dene": 7,
+    "dena-ina-e-nena": 1,
+    "dene-tha": 0,
+    "denendeh": 2,
+    "denendeh-denesu-ine-nene": 3,
+    "deni": 4,
+    "denmark": 5,
+    "denmark-norway": 6,
     "desert-hunter-gatherers": 7,
-    "djibouti": 0,
-    "dominican-republic": 1,
-    "dorset": 2,
-    "east-timor": 3,
-    "eastern-north-american-hunter-gatherers": 4,
-    "ecuador": 5,
+    "diaguita": 0,
+    "dine-bikeyah": 2,
+    "ditidaht": 1,
+    "ditidaqiicaq-disiba-k-ditidaht": 2,
+    "djeoromitxi": 5,
+    "djibouti": 3,
+    "doeg": 6,
+    "dokapuara-tuyuca": 6,
+    "dominican-republic": 7,
+    "dorset": 1,
+    "duwamish": 2,
+    "dyo-xaiya-o-ivo-tsa-okaina": 3,
+    "e-nepa": 4,
+    "east-timor": 5,
+    "eastern-mono-monache": 4,
+    "eastern-north-american-hunter-gatherers": 7,
+    "eastern-pomo": 7,
+    "eastern-shawnee-oklahoma": 0,
+    "eastern-shoshone": 2,
+    "ecuador": 4,
+    "ecuana": 5,
+    "eduria-taiwano": 3,
+    "eeyou-istchee": 1,
     "egypt": 6,
-    "el-salvador": 7,
-    "english-territory": 0,
-    "equatorial-guinea": 1,
-    "eritrea": 2,
-    "estonia": 3,
+    "el-pom-wintu": 7,
+    "el-salvador": 0,
+    "embera": 2,
+    "embera-chami": 0,
+    "embera-dobida": 4,
+    "embera-eperara-epera": 5,
+    "embera-katio-eyabida": 6,
+    "emirate-of-the-white-sheep-turks": 7,
+    "enawene-nawe": 0,
+    "enenlhet-toba": 1,
+    "england": 3,
+    "english-territory": 3,
+    "enlhet": 4,
+    "enlhet-enenlhet": 5,
+    "eno": 0,
+    "entiat": 2,
+    "envuga-kawahib": 0,
+    "enxet": 1,
+    "epera": 2,
+    "eperara-siapidara": 7,
+    "equatorial-guinea": 3,
+    "erie": 3,
+    "eritrea": 6,
+    "esketemculeucw-esk-etemc": 0,
+    "esse-ejja": 1,
+    "esselen": 5,
+    "estonia": 2,
     "ethiopia": 4,
-    "fiji": 5,
-    "finland": 6,
+    "eyak": 3,
+    "feenem-naa": 5,
+    "fernandeno-tataviam": 5,
+    "fiji": 7,
+    "finland": 0,
     "france": 2,
-    "gabon": 7,
-    "gambia": 0,
-    "georgia": 1,
-    "georgia-before-1886": 4,
-    "german-democratic-republic": 3,
-    "german-federal-republic": 5,
-    "germany-prussia": 5,
-    "ghana": 3,
-    "granada": 1,
-    "great-khanate": 6,
-    "great-zimbabwe": 2,
-    "greece": 3,
-    "guanahatabeyes": 4,
-    "guanches": 5,
-    "guatemala": 6,
-    "guinea": 5,
-    "guinea-bissau": 0,
-    "guyana": 1,
-    "hadramaut": 2,
-    "hafsid-caliphate": 3,
-    "hainan": 4,
-    "haiti": 5,
-    "hokuzan": 6,
+    "funj": 1,
+    "gabon": 4,
+    "gambia": 3,
+    "garifuna": 5,
+    "garrochambas": 7,
+    "gauigu-kiowa": 3,
+    "georgia": 6,
+    "georgia-before-1886": 1,
+    "german-democratic-republic": 2,
+    "german-federal-republic": 4,
+    "germany-prussia": 4,
+    "ghana": 5,
+    "gitanyow-lax-yip": 1,
+    "gitga-at": 2,
+    "gitga-at-lax-yuup": 0,
+    "gitxaa-a": 1,
+    "gitxsan-laxyip": 3,
+    "golden-horde": 4,
+    "golkonda": 2,
+    "gondwana": 5,
+    "goshute": 6,
+    "granada": 7,
+    "grand-duchy-of-moscow": 0,
+    "graton-rancheria": 2,
+    "great-khanate": 4,
+    "great-zimbabwe": 1,
+    "greece": 6,
+    "guacata": 3,
+    "guachichil": 5,
+    "guahibo-hiwi": 0,
+    "guajajara": 7,
+    "guamares": 1,
+    "guana": 2,
+    "guanaca": 4,
+    "guanahatabey": 3,
+    "guanahatabeyes": 5,
+    "guanches": 6,
+    "guane": 7,
+    "guarasugwe": 1,
+    "guarayo": 2,
+    "guarijio-guarijo": 0,
+    "guasaves-tamazulas": 3,
+    "guatemala": 4,
+    "guato": 7,
+    "guaycura": 5,
+    "guenoa-muinanes": 6,
+    "guinea": 0,
+    "guinea-bissau": 1,
+    "gujarat": 2,
+    "guna-of-madugandi": 3,
+    "guna-of-wargandi": 4,
+    "guna-yala": 6,
+    "gunadule-kuna-tule": 7,
+    "gunun-a-atuk-gunun-a-kuna": 5,
+    "guyana": 0,
+    "gwa-sala-nakwaxda-xw": 1,
+    "gwich-in-nanh": 3,
+    "gwitch-in-settlement-region": 4,
+    "ha-shuta-enima-mazateco": 5,
+    "hach-winik-lacandon": 2,
+    "hadramaut": 6,
+    "hafsid-caliphate": 7,
+    "haida-gwaii": 0,
+    "hainan": 1,
+    "haiti": 2,
+    "haliti": 3,
+    "hammonassets": 4,
+    "han": 5,
+    "hanis-coos": 7,
+    "harakbut": 6,
+    "hatteras": 0,
+    "hausa-states": 1,
+    "havasu-baaja-havasupai": 3,
+    "heiltsuk": 4,
+    "henia-kamiare": 2,
+    "hi-ui-pame-chichimeco-jonaz": 6,
+    "hia-ced-o-odham": 7,
+    "hiaitsiihi": 5,
+    "hixkaryana": 0,
+    "hnahnu-otomi": 2,
+    "ho-de-no-sau-nee-ga-haudenosaunee": 1,
+    "hohokam": 4,
+    "hokuzan": 3,
+    "holikachuk": 5,
     "holy-roman-empire": 7,
-    "honduras": 0,
-    "hungary": 3,
-    "iceland": 1,
-    "indonesia": 4,
-    "innu": 2,
-    "iran-persia": 3,
-    "iraq": 5,
+    "homalco": 5,
+    "honduras": 6,
+    "hoocak-ho-chunk": 0,
+    "hoopa": 1,
+    "hoopa-reservation": 3,
+    "hopewell": 2,
+    "hopitutskwa": 6,
+    "hoti": 7,
+    "houma": 2,
+    "hualapai": 1,
+    "huancas": 3,
+    "huarpe": 4,
+    "huasteco-teenek": 0,
+    "huaylas": 4,
+    "huetar": 7,
+    "hul-kuhk-u": 7,
+    "hul-qumi-num-treaty-group": 3,
+    "hungary": 6,
+    "huni-kuin": 6,
+    "hunkpapa": 5,
+    "hupacasath": 7,
+    "hupd-ah": 0,
+    "huu-ay-aht": 0,
+    "i-tarap": 4,
+    "iceland": 5,
+    "ijku-arhuaco": 6,
+    "ikitu": 6,
+    "ikolen": 2,
+    "ikoots-kunajts-ikoojts-huave": 3,
+    "ikpeng": 4,
+    "imperial-hungary": 5,
+    "in-shuck-ch": 7,
+    "inapari": 6,
+    "indonesia": 2,
+    "ineseno": 1,
+    "inga": 0,
+    "inikana-kukama-kukamiria-kokama": 4,
+    "inkal-awa": 6,
+    "innu": 3,
+    "inuit": 7,
+    "inupiat": 0,
+    "inuvialuit": 5,
+    "iogys": 1,
+    "iowa": 5,
+    "iowa-oklahoma": 0,
+    "iran-persia": 5,
+    "iraq": 4,
     "ireland": 6,
-    "islamic-city-states": 0,
-    "israel": 1,
-    "italy-sardinia": 3,
-    "jamaica": 2,
-    "japan": 2,
-    "jordan": 0,
-    "kalinago": 6,
-    "kalmar-union": 5,
-    "kanem-bornu": 0,
-    "kashmir-and-ladakh": 2,
-    "kazakhstan": 1,
-    "kediri": 3,
-    "kenya": 5,
-    "khmer-empire": 6,
-    "khoisan": 4,
-    "kingdom-of-hungary": 0,
-    "korea": 7,
-    "korea-people-s-republic-of": 1,
-    "korea-republic-of": 2,
-    "kosovo": 3,
-    "kuwait": 4,
-    "kyrgyz-republic": 6,
-    "laos": 7,
-    "latvia": 5,
-    "lebanon": 0,
-    "lesotho": 1,
+    "irritilas-lagunero": 7,
+    "ishir-tomaraho": 0,
+    "ishir-ybytoso": 1,
+    "iskonawa": 2,
+    "islamic-city-states": 3,
+    "israel": 4,
+    "italy-sardinia": 7,
+    "itazipco": 1,
+    "itonama": 5,
+    "ixil": 6,
+    "jamaica": 3,
+    "jamamadi": 2,
+    "janos": 4,
+    "japan": 4,
+    "japan-before-1886": 5,
+    "jaqaru": 6,
+    "jarawara": 7,
+    "jeaga": 0,
+    "jicarilla-apache": 1,
+    "jiwere": 3,
+    "jococobas": 2,
+    "jordan": 5,
+    "juhup-yuju-yuhupdeh": 4,
+    "julimes": 6,
+    "juma-kawahib": 7,
+    "jumanos": 0,
+    "jupau-kawahib": 1,
+    "k-aalo-got-ine": 2,
+    "k-asho-got-ine": 6,
+    "k-iche": 3,
+    "k-omoks": 2,
+    "ka-apor": 5,
+    "ka-yu-k-t-h-che-k-tles7et-h": 6,
+    "kacha-edze-urarina": 0,
+    "kadiweu": 7,
+    "kaiabi": 1,
+    "kaimbe": 3,
+    "kaingang": 5,
+    "kakataibo": 4,
+    "kakinte": 7,
+    "kalapalo": 6,
+    "kalapuya": 0,
+    "kalina-karina": 1,
+    "kalinago": 2,
+    "kalinago-island-carib": 3,
+    "kalispel": 1,
+    "kallawaya": 6,
+    "kalmar-union": 4,
+    "kamaiura": 7,
+    "kambeba-omagua": 0,
+    "kamejeya-yukuna": 3,
+    "kamentsa": 2,
+    "kanari": 0,
+    "kanas": 3,
+    "kandozi": 5,
+    "kanem-bornu": 4,
+    "kanien-keha-ka-mohawk": 7,
+    "kankuamo": 1,
+    "kantarure": 6,
+    "kapanawa": 3,
+    "kaqchikel": 2,
+    "karaja-do-norte": 4,
+    "karanka": 5,
+    "karankawa": 7,
+    "karanki": 0,
+    "karapana-muteamasa": 2,
+    "karijona": 2,
+    "karkin": 1,
+    "karuk": 4,
+    "kashaya": 3,
+    "kashmir-and-ladakh": 5,
+    "kashtik": 3,
+    "kaska-dena-kayeh": 1,
+    "kaskaskia": 5,
+    "kathlamet": 0,
+    "katukina": 3,
+    "kauwets-a-ka": 2,
+    "kaw-oklahoma": 7,
+    "kawahib-jiahui": 4,
+    "kawahib-parintintin": 6,
+    "kawahib-tenharim": 7,
+    "kawaiisu": 1,
+    "kawashkar": 0,
+    "kaxarari": 2,
+    "kaxixo": 3,
+    "kayambi": 3,
+    "kazakhstan": 6,
+    "kecoughtan": 6,
+    "kediri": 5,
+    "kelly-lake-metis-settlement-society": 3,
+    "kenya": 0,
+    "ket-chonhab-kob-a-chuj": 1,
+    "keyauwee": 2,
+    "khanate-of-sibir": 4,
+    "khmer-empire": 5,
+    "khoisan": 7,
+    "kichwa": 2,
+    "kichwa-amazonico": 0,
+    "kichwa-del-rio-napo": 2,
+    "kichwa-del-rio-pastaza": 6,
+    "kichwa-del-rio-tigre": 3,
+    "kichwa-lamista": 6,
+    "kichwa-santarrosino": 4,
+    "kickapoo-oklahoma": 5,
+    "kiikaapoi-kickapoo": 1,
+    "kikiallus": 1,
+    "kiliwa": 6,
+    "killaka-asanajaqi": 0,
+    "kingdom-of-hungary": 3,
+    "kinja": 4,
+    "kiowa-comanche-apache-oklahoma": 5,
+    "kiriri": 6,
+    "kisapincha": 7,
+    "kisedje": 0,
+    "kiskiack": 1,
+    "kitanemuk": 2,
+    "kitasoo-xai-xais": 3,
+    "kitse-cha-tnio-chatino": 4,
+    "kitselas": 5,
+    "kitsumkalum": 4,
+    "kitu-kara": 6,
+    "kizh": 3,
+    "kl-bal-pom-wintu": 6,
+    "klahoose": 1,
+    "klamath": 3,
+    "kluane": 5,
+    "ko-hawai-i-pae-aina-hawaiian-kingdom": 0,
+    "koasati-coushatta": 5,
+    "kogui-kaggabba": 2,
+    "kojomk-awi-konkow": 6,
+    "kolla": 0,
+    "kolla-atacameno": 1,
+    "konnaack": 4,
+    "konomihu": 1,
+    "kore-ah-korebaju-koreguaje": 7,
+    "korea": 2,
+    "korea-people-s-republic-of": 6,
+    "korea-republic-of": 0,
+    "korubo": 1,
+    "kosovo": 2,
+    "koyukon": 4,
+    "krenak": 3,
+    "krenye": 5,
+    "kricatije": 6,
+    "kriol": 7,
+    "ktunaxa-amak-is": 6,
+    "kubewa-cubeo": 1,
+    "kulina-pano": 0,
+    "kumeyaay": 7,
+    "kura": 2,
+    "kuruaya": 4,
+    "kusso": 5,
+    "kuuvuan-kanianiq": 7,
+    "kuwait": 0,
+    "kuyam": 3,
+    "kwakwaka-wakw": 3,
+    "kwanlin-dun": 2,
+    "kwantlen": 1,
+    "kwaza": 4,
+    "kwikwetlem": 5,
+    "kyrgyz-republic": 7,
+    "l-nape-haki-nk-lenni-lenape": 6,
+    "laklano": 0,
+    "laos": 1,
+    "laos-before-1886": 2,
+    "lassik": 6,
+    "latvia": 4,
+    "lebanon": 5,
+    "leco": 3,
+    "lemhi-shoshone": 0,
+    "lenca": 1,
+    "lesotho": 2,
+    "lhaq-temish-lummi": 0,
+    "lheidli-t-enneh": 3,
     "liberia": 3,
-    "libya": 4,
+    "libya": 0,
+    "lickanantay": 3,
+    "lil-wat": 5,
+    "lingit-aani-tlingit": 1,
+    "lipi": 6,
     "lithuania": 2,
-    "luxembourg": 6,
-    "macedonia-fyrom-north-macedonia": 5,
-    "madagascar": 7,
-    "madagascar-malagasy": 0,
+    "lokono-arawak": 3,
+    "lower-chinook": 1,
+    "lower-tohono-o-odham-lower-pima": 6,
+    "luckiamute": 5,
+    "lule": 5,
+    "lumbee": 7,
+    "lumnanas": 0,
+    "luxembourg": 7,
+    "macedonia-fyrom-north-macedonia": 3,
+    "macorix": 5,
+    "macuxi": 2,
+    "madagascar": 6,
+    "madagascar-malagasy": 7,
+    "madija": 2,
+    "maguta-ticuna": 5,
+    "maijuna": 0,
+    "maka": 6,
+    "makah": 1,
     "makkura": 1,
+    "makurap": 0,
+    "malacatos": 1,
+    "malacca": 3,
     "malawi": 2,
     "malaysia": 3,
-    "maldives": 4,
-    "mali": 0,
-    "mali-before-1886": 5,
-    "malta": 6,
-    "mamluke-sultanate": 7,
-    "maori": 1,
+    "malaysian-islamic-states": 4,
+    "maldives": 5,
+    "malecu": 6,
+    "mali": 1,
+    "mali-before-1886": 7,
+    "malta": 0,
+    "mamluke-sultanate": 2,
+    "manahoac": 4,
+    "mandan-hidatsa-and-arikara": 4,
+    "manekenk-haush": 5,
+    "manoki": 6,
+    "manteno-huancavilca": 7,
+    "maori": 0,
+    "marinahua": 1,
+    "marubo": 2,
+    "mashco-piro": 3,
+    "massa-adchu-es-et-massachusett": 4,
+    "massacoes": 0,
+    "massawomeck": 6,
+    "matagalpa-cacaopera": 7,
+    "matawai": 0,
+    "matecumbe": 1,
+    "matetamae-cinta-larga": 3,
+    "matlatzinco-matlatzinteca": 2,
+    "matlatzinco-tlahuica-ocuiltec": 0,
+    "matses-matis": 5,
+    "matses-mayoruna": 6,
+    "matsigenka": 2,
+    "mattamuskeet": 1,
+    "mattaponi": 7,
+    "mattole": 0,
     "mauritania": 3,
-    "mauritius": 2,
-    "maya-city-states": 4,
-    "merina-kingdom": 5,
-    "mexico": 0,
+    "mauritius": 4,
+    "maxakali": 5,
+    "maya-city-states": 6,
+    "maya-yucateco": 7,
+    "mayaimi": 1,
+    "mayangna": 0,
+    "mazahua": 1,
+    "mbya": 2,
+    "mdewakanton": 4,
+    "me-phaa-tlapaneco": 5,
+    "me-wuk-bay-miwok": 2,
+    "me-wuk-central-sierra-miwok": 1,
+    "me-wuk-coast-miwok": 7,
+    "me-wuk-lake-miwok": 4,
+    "me-wuk-northern-sierra-miwok": 2,
+    "me-wuk-southern-sierra-miwok": 3,
+    "mebengokre-kayapo": 3,
+    "mechoopda": 5,
+    "meherrin": 0,
+    "mehin": 6,
+    "mehinako": 3,
+    "menominee": 7,
+    "merina-kingdom": 1,
+    "mescalero-apache": 5,
+    "meskwahki-asa-hina-fox": 7,
+    "methow": 4,
+    "mexicanero-nahuas": 6,
+    "mexico": 7,
+    "mexihcah-triple-alliance": 7,
+    "mi-kma-ki": 7,
+    "miami-oklahoma": 1,
+    "miccosukee": 3,
+    "michif-piyii-metis": 2,
+    "micqanaqa-n": 4,
+    "miluk-coos": 5,
+    "ming-empire": 3,
     "minor-hindu-and-buddhist-kingdoms": 6,
-    "mixtec-empire": 0,
+    "miranha": 6,
+    "misak": 0,
+    "miskito": 1,
+    "mississauga": 2,
+    "mississaugas-of-the-credit-first-nation": 5,
+    "miwko-waali": 4,
+    "mixtec-empire": 7,
+    "mnicoujou": 0,
+    "mocho": 1,
+    "modoc": 7,
+    "modoc-oklahoma": 0,
+    "mohawk-kalapuya": 3,
+    "mohegan": 3,
+    "mohican": 6,
+    "mojeno": 5,
+    "mokana": 0,
+    "molalla": 5,
     "moldova": 1,
-    "moldova-before-1886": 2,
-    "mongolia": 3,
-    "montenegro": 5,
-    "morocco": 4,
-    "mozambique": 6,
+    "moldova-before-1886": 6,
+    "monacan": 1,
+    "moneton": 0,
+    "mongolia": 2,
+    "monqui": 3,
+    "montenegro": 7,
+    "moose-cree": 4,
+    "mopan": 2,
+    "moqoit": 3,
+    "moratok": 4,
+    "moraughtacund": 7,
+    "moregena": 7,
+    "morocco": 6,
+    "moses-columbia": 0,
+    "moseten": 1,
+    "mossi-states": 2,
+    "mount-tabor-indian-community": 5,
+    "mountain-maidu": 3,
+    "mountain-metis": 0,
+    "movima": 7,
+    "mozambique": 5,
+    "muckleshoot": 1,
+    "muina-murui-murui-muinan": 1,
+    "muisca": 4,
+    "multnomah": 6,
+    "mundurukania-wuy-jugu": 3,
+    "muniche": 2,
+    "munsee-lenape": 5,
     "muscat": 7,
-    "myanmar-burma": 1,
-    "namibia": 0,
-    "nanzan": 2,
+    "muscogee-oklahoma": 2,
+    "musgamagw-dzawada-enuxw": 6,
+    "muteamasa-karapana": 5,
+    "muwekma": 3,
+    "mvskoke-muscogee-creek": 6,
+    "mwenemutapa": 0,
+    "myaamia": 4,
+    "myanmar-burma": 6,
+    "n-e-kepmx-tmix-nlaka-pamux": 0,
+    "n-m-n-comanche": 2,
+    "na-cho-nyak-dun": 7,
+    "naayerite-cora": 1,
+    "nacotchtank-anacostan": 3,
+    "nadleh-whut-en": 5,
+    "nadob": 0,
+    "nahua": 6,
+    "nahua-guerrero": 6,
+    "nahua-mexico": 5,
+    "nahua-michoacan": 7,
+    "nahua-morelos-puebla-tlaxcala-veracruz-hidalgo-san-luis-potosi": 3,
+    "nahuas": 1,
+    "nambikwara": 7,
+    "namibia": 2,
+    "nandtaughtacund": 0,
+    "nanrantsouak": 4,
+    "nansemond": 2,
+    "nanti": 6,
+    "nanzan": 5,
+    "narragansett": 1,
+    "nasa": 3,
+    "natabuela": 7,
+    "natchez": 6,
+    "natchitoches": 0,
+    "nauset": 1,
     "navarre": 4,
-    "nepal": 3,
-    "netherlands": 6,
-    "new-zealand": 5,
+    "nawa": 0,
+    "nde-konitsaaii-gokiyaa-lipan-apache": 4,
+    "ndee-nnee-western-apache": 5,
+    "ndongo": 2,
+    "nehalem": 4,
+    "nehiyaw-askiy-plains-cree": 7,
+    "nentego-nanticoke": 1,
+    "nepal": 6,
+    "nespelem": 1,
+    "nestucca": 6,
+    "netherlands": 5,
+    "neusiok": 3,
+    "new-river-shasta": 6,
+    "new-zealand": 7,
+    "newe-western-shoshone": 0,
+    "ngi-iva-popoloca": 7,
     "nicaragua": 1,
-    "niger": 1,
-    "nigeria": 3,
-    "north-american-pacific-foraging-hunting-and-fishing-peoples": 0,
-    "norway": 2,
-    "novgorod": 4,
-    "oman": 5,
-    "orange-free-state": 6,
-    "orissa": 7,
+    "nicarao-nahoa": 2,
+    "niger": 3,
+    "nigeria": 0,
+    "niitsitpiis-stahkoii-blackfoot-niitsitapi": 1,
+    "nimiipuu-nez-perce": 4,
+    "nipmuc": 2,
+    "nisenan": 7,
+    "nisga-a": 0,
+    "nisqually": 0,
+    "nitaskinan-atikamekw-nehirowisi-aski": 2,
+    "nitassinan-innu": 4,
+    "niuachi": 1,
+    "nivacle": 1,
+    "no-iria": 2,
+    "nom-sus-wintu": 3,
+    "nom-ti-pom-wintu": 7,
+    "nomatsigenga": 4,
+    "nomlaki": 0,
+    "nongatl": 4,
+    "nonuya": 7,
+    "nor-rel-muk-wintu": 7,
+    "north-american-pacific-foraging-hunting-and-fishing-peoples": 5,
+    "northeastern-pomo": 1,
+    "northern-pomo": 4,
+    "northern-yuki": 2,
+    "norway": 1,
+    "novgorod": 3,
+    "np-sq-aws-x-wenatchi": 1,
+    "nukak-maku": 6,
+    "nukini": 1,
+    "numu-northern-paiute": 5,
+    "nunatsiavut": 2,
+    "nunatukavut": 3,
+    "nunavik": 6,
+    "nuu-agha-t-v-p-ute": 0,
+    "nuu-savi-mixtecapan": 0,
+    "nuucaanuu-ath-nisma-nuu-chah-nulth": 1,
+    "nuwhaha": 5,
+    "nuwuvi-southern-paiute": 5,
+    "nuwuwu-chemehuevi": 4,
+    "nuxalk": 6,
+    "nuxwsa-7aq-nooksack": 4,
+    "nwt-metis-nation": 1,
+    "nyvukagmit-naukan": 2,
+    "o-aakiiwaki-hina-ki-sauk": 0,
+    "o-de-put-angp-n-zoque": 7,
+    "o-ga-xpa-ma-zho-o-ga-xpa": 2,
+    "o-odham-jewed": 4,
+    "obispeno": 4,
+    "occaneechi": 5,
+    "occohannock": 3,
+    "ochethi-sakowi": 5,
+    "ocloya": 6,
+    "odawa": 4,
+    "odohweja-de-cayuga": 7,
+    "ofaie": 0,
+    "oglala": 1,
+    "ohlone": 4,
+    "oirat-confederation": 2,
+    "okanagan": 2,
+    "okwanuchu": 5,
+    "omaguaca": 4,
+    "omamiwininiwag-algonquin": 5,
+    "oman": 6,
+    "on-yote-a-ka-oneida": 4,
+    "onawmanient": 1,
+    "onondowa-ga-seneca": 2,
+    "onundagaonoga-onondaga": 3,
+    "oohenumpa": 7,
+    "opata-teguima-eudebe-hoba": 2,
+    "opelousas": 1,
+    "opiscopank": 6,
+    "orange-free-state": 0,
+    "orissa": 6,
+    "oro-win-oro-towati": 3,
+    "osage": 7,
+    "osage-oklahoma": 6,
+    "otavalo": 5,
+    "otoe-missouri-oklahoma": 5,
+    "otoe-missouria-oklahoma": 3,
+    "ottawa-oklahoma": 5,
     "ottoman-empire": 0,
-    "pagan": 1,
-    "pakistan": 4,
-    "pampas-cultures": 2,
-    "panama": 3,
-    "pandya-state": 5,
-    "papal-states": 6,
-    "papua-new-guinea": 0,
-    "paraguay": 7,
-    "patagonian-shellfish-and-marine-mammal-hunters": 1,
-    "peru": 3,
-    "philippines": 2,
-    "plain-bison-hunters": 5,
-    "plateau-fichers-and-hunter-gatherers": 4,
-    "poland": 6,
+    "oyo": 1,
+    "p-si-h-andoque-paasiaja": 3,
+    "p-urhepecha": 4,
+    "pacahuara": 0,
+    "pacamoro": 2,
+    "pacaxes": 1,
+    "pacheedaht": 5,
+    "pagan": 2,
+    "paipai-akwa-ala": 0,
+    "pakajaqi": 3,
+    "pakistan": 7,
+    "palouse": 1,
+    "paltas": 3,
+    "pamlico-pomouik": 2,
+    "pamoari": 6,
+    "pampas-cultures": 4,
+    "pamunkey": 3,
+    "panama": 6,
+    "panara": 7,
+    "pandya-state": 1,
+    "pankara": 0,
+    "pankararu": 2,
+    "panzaleo": 4,
+    "papal-states": 5,
+    "papua-new-guinea": 6,
+    "papua-new-guinea-before-1886": 7,
+    "paraguay": 0,
+    "pari-pawnee": 0,
+    "parikwene": 1,
+    "parkateje": 2,
+    "pascua-yaqui": 3,
+    "paspahegh": 0,
+    "passamaquoddy": 6,
+    "pasto": 4,
+    "patagonian-shellfish-and-marine-mammal-hunters": 5,
+    "patamona-ingariko": 1,
+    "patawomeck": 2,
+    "pataxo": 7,
+    "pataxo-ha-ha-hae": 3,
+    "patwin": 3,
+    "paugussett": 7,
+    "pawnee-oklahoma": 7,
+    "pawtucket": 6,
+    "payomkawichum-luiseno": 4,
+    "pech": 2,
+    "pee-dee": 5,
+    "pegu": 1,
+    "pemon": 4,
+    "pennacook": 0,
+    "penobscot": 1,
+    "pentucket": 1,
+    "peoria": 6,
+    "pequawket": 2,
+    "pequonnock": 0,
+    "pequot": 5,
+    "pericu": 4,
+    "perquimans": 1,
+    "peru": 5,
+    "pescado": 3,
+    "petun": 3,
+    "philippines": 6,
+    "philippines-before-1886": 2,
+    "piipaash-maricopa": 5,
+    "pijao": 1,
+    "pilagal-ek": 7,
+    "pipa-aha-macav-mojave": 7,
+    "pisamira": 4,
+    "piscataway": 5,
+    "pissaseck": 4,
+    "pit-river": 4,
+    "plain-bison-hunters": 0,
+    "plains-miwok": 5,
+    "plateau-fichers-and-hunter-gatherers": 2,
+    "pocomoke": 7,
+    "pocumtuc": 1,
+    "podunks": 0,
+    "pokanoket": 7,
+    "poland": 0,
     "poland-lithuania": 1,
-    "polynesians": 7,
-    "portugal": 1,
-    "principality-of-wallachia": 4,
-    "qatar": 0,
-    "republic-of-india": 6,
-    "rumania": 5,
-    "russia-soviet-union": 0,
-    "rwanda": 2,
-    "sami": 3,
+    "polynesians": 3,
+    "ponca": 2,
+    "ponca-oklahoma": 1,
+    "popeloutchom-amah-mutsun": 2,
+    "popoluca-mixe-zoque": 6,
+    "popti": 2,
+    "popukare": 3,
+    "poqomam": 5,
+    "poqomchi": 7,
+    "poquonook": 4,
+    "portugal": 7,
+    "potawatomi-shawnee-oklahoma": 6,
+    "poteskeet": 3,
+    "powhatan": 6,
+    "principality-of-wallachia": 2,
+    "pskov": 3,
+    "pueblos": 7,
+    "puinave": 2,
+    "punjab": 0,
+    "purehno": 5,
+    "puri": 6,
+    "purubora": 4,
+    "puruwa": 3,
+    "puyallup": 4,
+    "puyanawa": 5,
+    "pykopcateje": 0,
+    "q-anjob-al": 0,
+    "q-eqchi": 1,
+    "q-ero": 1,
+    "qatar": 6,
+    "qayqayt": 0,
+    "qhara-qhara": 7,
+    "qom": 4,
+    "quatsino": 2,
+    "quechan-kwatsaan": 1,
+    "quechua": 7,
+    "queets": 1,
+    "quileute": 4,
+    "quillacinga": 5,
+    "quinault": 2,
+    "quinnipiac": 1,
+    "quiyoughcohannock": 0,
+    "quuiich-lower-umpqua": 5,
+    "quw-utsun": 0,
+    "qwu-lh-hwai-pum-klickitat": 7,
+    "rajastan": 3,
+    "rama": 4,
+    "ramaytush": 6,
+    "rankulche": 3,
+    "rappahannock": 2,
+    "raramuri-tarahumara-guarijio": 5,
+    "rayados-borrados": 1,
+    "republic-of-india": 3,
+    "resigaro": 2,
+    "resighini-rancheria-yurok": 0,
+    "rikbaktsa": 5,
+    "roanoke": 6,
+    "rumania": 4,
+    "rumsen": 3,
+    "runixa-ngiigua-chocho": 6,
+    "russia-soviet-union": 3,
+    "rwanda": 5,
+    "ryazan": 6,
+    "s-atsoyaha-yuchi": 3,
+    "s-klallam": 7,
+    "s-lilw-ta-t-m-x-tsleil-waututh": 0,
+    "s-olh-temexw-sto-lo": 2,
+    "sac-and-fox-oklahoma": 1,
+    "sacapultec": 5,
+    "sahtu-dene-and-metis": 0,
+    "sahtu-got-ine": 1,
+    "sakurabiat": 6,
+    "salasaka": 5,
+    "salinan": 7,
+    "salish-kootenai-flathead": 4,
+    "salish-kootenai-tribes": 6,
+    "salmon-river": 4,
+    "saluda": 1,
+    "sami": 2,
+    "samish": 7,
+    "san-carlos-apache": 2,
+    "san-poil": 5,
+    "sana": 3,
+    "sanapana": 0,
+    "sanavirones": 1,
+    "santee": 4,
+    "santiam": 6,
+    "sapara": 5,
+    "sappony": 4,
+    "saraguro": 6,
     "sardinia": 7,
-    "saudi-arabia": 2,
-    "savanna-hunter-gatherers": 4,
-    "scotland": 3,
-    "seljuk-caliphate": 5,
-    "senegal": 6,
-    "serbia": 0,
-    "shoa": 7,
-    "shogun-japan-kamakura": 1,
+    "satare-mawe": 0,
+    "saudi-arabia": 7,
+    "sauk-and-meskwaki": 2,
+    "sauk-suiattle": 1,
+    "saura": 1,
+    "savanna-hunter-gatherers": 3,
+    "sc-wa-ena-t-m-x-tsawwassen": 5,
+    "schitsu-umsh-coeur-d-alene": 0,
+    "scotland": 6,
+    "sduk-albix-snoqualmie": 0,
+    "secotan": 5,
+    "secwepemcul-ecw-secwepemc": 5,
+    "sekakawon": 0,
+    "seljuk-caliphate": 4,
+    "selk-nam": 2,
+    "selkirk": 4,
+    "semiahmoo": 1,
+    "seminole": 7,
+    "seminole-oklahoma": 7,
+    "seminole-tribe-of-florida-big-cypress-reservation": 6,
+    "seminole-tribe-of-florida-brighton-reservation": 7,
+    "seminole-tribe-of-florida-hollywood-reservation": 3,
+    "seminole-tribe-of-florida-immokalee-reservation": 2,
+    "seminole-tribe-of-florida-tampa-reservation": 3,
+    "seneca-cayuga-oklahoma": 6,
+    "senegal": 4,
+    "serbia": 1,
+    "sewee": 2,
+    "shakori": 3,
+    "shanenawa": 4,
+    "sharanahua": 7,
+    "shasta": 0,
+    "shawanaua": 1,
+    "shawandasse-tula-shawanwaki-shawnee": 4,
+    "shawi": 3,
+    "shigom": 6,
+    "shipibo-konibo": 0,
+    "shishalh": 4,
+    "shita-got-ine": 5,
+    "shiwiar": 4,
+    "shiwilu": 1,
+    "shiwinna-zuni": 3,
+    "shmuwich-barbareno": 2,
+    "shoa": 5,
+    "shoalwater-bay": 0,
+    "shogun-japan-kamakura": 6,
+    "shoshone-bannock": 3,
     "shuar": 2,
+    "shuar-wampis": 4,
     "siberians": 5,
-    "sicily": 3,
-    "sierra-leone": 4,
-    "singapore": 6,
-    "sinhalese-kingdom": 7,
-    "slovakia": 0,
-    "slovenia": 2,
-    "solomon-islands": 1,
-    "somalia": 6,
+    "sicangu": 6,
+    "sicaog-saukiog": 5,
+    "sicily": 7,
+    "siekopa-aiinte-aido-pai-secoya": 4,
+    "sierra-leone": 7,
+    "siginygmit-sireniki-yupik": 2,
+    "sihapsa": 7,
+    "siletz": 5,
+    "sind": 6,
+    "singapore": 0,
+    "sinhalese-kingdom": 1,
+    "sinhalese-kingdoms": 2,
+    "sinkyone": 3,
+    "siria-masa-siriano": 0,
+    "siriono": 1,
+    "sisseton": 7,
+    "sissipahaw": 5,
+    "siuslaw": 4,
+    "sivuqaq-st-lawrence-island-yupik": 6,
+    "skagit": 2,
+    "skaruhreh-tuscarora-north-carolina": 1,
+    "skilloot": 3,
+    "skwxwu7mesh-ulh-temixw-squamish": 3,
+    "skykomish": 4,
+    "slijuala-xanuc-chontal": 6,
+    "slovakia": 7,
+    "slovenia": 3,
+    "sn-ickstx-tmx-ula-x-sinixt": 7,
+    "snohomish": 5,
+    "snuneymuxw": 7,
+    "so-to-yekuana": 2,
+    "sobaipuri": 6,
+    "solomon-islands": 3,
+    "somalia": 5,
+    "somi-se-k-esto-k-gna": 0,
+    "songhai": 2,
     "south-africa": 3,
-    "south-sudan": 0,
-    "spain": 6,
+    "south-sudan": 2,
+    "southeastern-pomo": 5,
+    "southern-pomo": 6,
+    "spain": 0,
+    "spokane": 2,
+    "sq-ciya-t-m-x-katzie": 6,
+    "squaxin": 1,
     "sri-lanka-ceylon": 4,
-    "srivijaya-empire": 5,
-    "subarctic-forest-hunter-gatherers": 7,
-    "sudan": 1,
-    "sukhothai": 3,
-    "sultanate-of-delhi": 4,
-    "surinam": 5,
+    "srivijaya-empire": 3,
+    "st-aschinuw-naskapi": 0,
+    "statimc-tmicw-st-at-imc": 1,
+    "steilacoom": 7,
+    "stellat-en": 3,
+    "stillaguamish": 3,
+    "stoney": 4,
+    "sturgeon-lake-cree": 6,
+    "stz-uminus": 4,
+    "subarctic-forest-hunter-gatherers": 5,
+    "subtiaba": 0,
+    "sudan": 7,
+    "sugaree": 5,
+    "sukhothai": 6,
+    "sultanate-of-delhi": 2,
+    "sumas": 6,
+    "suquamish": 0,
+    "sura": 1,
+    "surinam": 7,
+    "surui-paiter": 1,
+    "suruwaha": 5,
+    "susquehannock": 0,
     "swaziland-eswatini": 2,
-    "sweden": 7,
-    "switzerland": 7,
+    "sweden": 4,
+    "sweden-before-1886": 3,
+    "swinomish": 4,
+    "swiss-confederation": 1,
+    "switzerland": 3,
+    "sx-m-k-y-ma-t-m-x-musqueam": 7,
+    "syilx-tmix-okanagan": 3,
     "syria": 2,
-    "taino": 0,
+    "t-cho-nde": 4,
+    "ta-an-kwach-an": 7,
+    "ta-tan-koneline-tahltan": 4,
+    "tacana": 6,
+    "tage-cho-hudan-little-salmon-carmacks": 6,
+    "tagish": 0,
+    "tahues": 2,
+    "taino": 6,
     "taiwan": 1,
-    "tajikistan": 3,
-    "tanzania-tanganyika": 0,
-    "tasmanian-hunter-gatherers": 5,
-    "teutonic-knights": 6,
-    "thailand": 0,
-    "thule": 1,
+    "taiwan-before-1886": 3,
+    "tajikistan": 1,
+    "takelma": 5,
+    "takla": 6,
+    "taku-river-tlingit": 7,
+    "tama-dujo": 2,
+    "tamaulipeco-tribes": 7,
+    "tamien-nation": 7,
+    "tampachoa-mansos": 0,
+    "tanacross": 3,
+    "tanana": 2,
+    "tanimuka": 0,
+    "tanzania-tanganyika": 4,
+    "taos-pueblo": 5,
+    "tapachulteco-mixe-zoque": 4,
+    "tapiete-guarani-nandeva": 2,
+    "tariana": 4,
+    "tasmanian-hunter-gatherers": 3,
+    "tastil": 2,
+    "tawahka": 3,
+    "tawakoni": 5,
+    "te-mexw-treaty-association": 5,
+    "tecuexe": 6,
+    "tekoha-guarani": 3,
+    "tekoha-nandeva-ava-guarani": 1,
+    "tekoha-pai-tavytera-kaiowa": 7,
+    "tenetehara-tembe": 0,
+    "tenino": 6,
+    "tepehua": 1,
+    "tepehuan": 0,
+    "tequesta": 5,
+    "terena": 2,
+    "teslin-tlingit-council-bc": 2,
+    "teslin-tlingit-council-yukon": 3,
+    "tetlit-gwich-in": 1,
+    "teutonic-knights": 4,
+    "thailand": 7,
+    "thule": 5,
     "tibet": 4,
-    "tibet-before-1886": 3,
-    "timurid-empire": 6,
-    "togo": 0,
-    "transvaal": 2,
-    "trebizond": 7,
-    "trinidad-and-tobago": 5,
-    "tu-i-tonga-empire": 1,
-    "tunisia": 3,
-    "turkey-ottoman-empire": 6,
-    "turkmenistan": 2,
+    "tibet-before-1886": 7,
+    "tigua": 2,
+    "tilian": 1,
+    "tillamook": 3,
+    "timotes": 6,
+    "timucua": 3,
+    "timurid-emirates": 4,
+    "timurid-empire": 0,
+    "tinigua": 5,
+    "tjer-di-teribe-broram": 7,
+    "toara": 2,
+    "toba-lengua": 0,
+    "tobosos": 3,
+    "tocobaga": 6,
+    "togo": 7,
+    "tohono-o-odham": 1,
+    "tojolwinik-otik-tojolabal": 5,
+    "tolowa-dee-ni": 3,
+    "tolupan": 4,
+    "tomabela": 6,
+    "tongva": 2,
+    "tonkawa": 6,
+    "tonkawa-oklahoma": 0,
+    "tonokote": 4,
+    "tontotuna-totoro": 2,
+    "toromona": 5,
+    "totonac": 7,
+    "totonaco": 4,
+    "totorames": 3,
+    "tr-ondek-hwech-in": 0,
+    "transvaal": 4,
+    "trebizond": 5,
+    "trinidad-and-tobago": 6,
+    "trio-wu-tareno": 7,
+    "trumai": 1,
+    "ts-msyen-laxyuup-tsimshian": 7,
+    "ts-uubaa-asatx": 3,
+    "tsa-chila": 0,
+    "tsalaguwetiyi-cherokee-east": 7,
+    "tsankupi": 2,
+    "tsase-piapoco": 1,
+    "tse-khene": 7,
+    "tseshaht": 4,
+    "tsilhqot-in-nen": 4,
+    "tsimane": 6,
+    "tsnungwe": 5,
+    "tsuu-t-ina": 6,
+    "tu-i-tonga-empire": 2,
+    "tubatulabal": 3,
+    "tulalip": 7,
+    "tumbalala": 5,
+    "tunica": 0,
+    "tunisia": 1,
+    "tunxis": 3,
+    "tupari": 2,
+    "tupinamba": 4,
+    "turkey-ottoman-empire": 0,
+    "turkmenistan": 1,
+    "tuscarora": 5,
+    "tutelo": 6,
+    "tututni": 0,
+    "tuxa": 3,
+    "twana-skokomish": 4,
+    "tz-utujil": 6,
+    "tzjon-non-tzo-tyio-amuzgo": 1,
+    "u-wa": 3,
+    "uchucklesaht": 6,
+    "ucluelet": 3,
     "uganda": 3,
-    "ukraine": 4,
-    "united-arab-emirates": 4,
-    "united-kingdom": 7,
-    "united-states-of-america": 4,
-    "uruguay": 5,
-    "uzbekistan": 5,
-    "venezuela": 2,
-    "venice": 1,
+    "ukarangma": 2,
+    "ukraine": 2,
+    "ulwas": 7,
+    "umo-ho-omaha": 4,
+    "umukomasa-desana": 1,
+    "umurecoomaja-tatuyo": 1,
+    "unangam-tanangin-unangax-aleut": 5,
+    "ungazigmit-chaplino-yupik": 7,
+    "united-arab-emirates": 0,
+    "united-kingdom": 1,
+    "united-states-of-america": 1,
+    "upper-kuskokwim": 3,
+    "upper-tanana": 2,
+    "uru": 5,
+    "uruguay": 7,
+    "uspantec": 2,
+    "utapinomakaphona": 4,
+    "uwottuja": 6,
+    "uzbekistan": 0,
+    "vacacocha": 3,
+    "vanyume": 6,
+    "venezuela": 5,
+    "venice": 4,
     "vietnam-annam-cochin-china-tonkin": 6,
-    "vietnam-democratic-republic-of": 0,
-    "vietnam-republic-of": 3,
-    "west-african-cereal-farmers": 2,
-    "west-irian-dutch-new-guinea": 0,
-    "white-horde": 7,
-    "yemen": 1,
-    "yemen-arab-republic-of-yemen": 1,
-    "yemen-people-s-republic-of": 6,
-    "yugoslavia": 6,
-    "zambia": 4,
-    "zanzibar": 4,
-    "zapotec-empire": 5,
-    "zimbabwe-rhodesia": 2
+    "vietnam-democratic-republic-of": 7,
+    "vietnam-republic-of": 0,
+    "vijayanagara": 4,
+    "vilela": 1,
+    "vuntut-gwitchin": 6,
+    "wabanaki-dawnland-confederacy": 3,
+    "waccamaw-woccon": 0,
+    "waco": 7,
+    "wahkiakum": 7,
+    "wahpekute": 5,
+    "wahpeton": 6,
+    "waikhana": 3,
+    "wailaki": 1,
+    "waipinomaka-bara": 2,
+    "waiwai": 6,
+    "wajuru": 3,
+    "wakuenai-walimanai-kuripako": 4,
+    "walimanai-baniwa": 3,
+    "wallmapu-mapuche": 6,
+    "wanano-kotiria": 5,
+    "wanapum": 4,
+    "wangunks": 6,
+    "waorani": 6,
+    "wapishana-wapixana": 5,
+    "wappinger": 2,
+    "wappo": 1,
+    "waranka": 5,
+    "warao": 0,
+    "warekena": 7,
+    "wari": 1,
+    "wari-2": 4,
+    "warraskoyack": 7,
+    "wasco-and-wishram": 0,
+    "washtage-mo-zha-kaw-kansa": 6,
+    "wasisiw-itde-washoe": 0,
+    "wateree": 0,
+    "wattasid-caliphate": 2,
+    "wauja": 7,
+    "waxhaw": 4,
+    "wayana": 2,
+    "waymaq": 1,
+    "wayuu": 0,
+    "we-wai-kai": 7,
+    "we-wai-kum": 4,
+    "weenhayek": 7,
+    "weenhayek-wichi": 6,
+    "wendake-nionwentsio": 0,
+    "wenrohronon": 4,
+    "werowocomoco": 4,
+    "west-african-cereal-farmers": 0,
+    "west-irian-dutch-new-guinea": 7,
+    "western-mono-monache": 2,
+    "western-nehantick": 7,
+    "westo": 2,
+    "wet-suwet-en-yintikh": 0,
+    "weyanock": 5,
+    "whilkut": 2,
+    "white-horde": 1,
+    "white-mountain-apache": 1,
+    "white-river-kluane": 7,
+    "wichita": 4,
+    "wichita-caddo-delaware-oklahoma": 3,
+    "wicocomico": 4,
+    "willapa": 4,
+    "winaq-qo-mam": 7,
+    "winefelly": 1,
+    "winik-atel-tzeltal": 6,
+    "winikon-ba-lojon-xk-ukwits-ajlumob-otulob-ch-ol": 4,
+    "winnimem-wintu": 6,
+    "wint-u-po-m-northern-wintu": 3,
+    "winyah": 3,
+    "wisijsa": 1,
+    "wiwa": 7,
+    "wixarika-huichol": 2,
+    "wiyapemiak-weapemeoc-yeopim": 0,
+    "wiyot": 6,
+    "wolastoqiyik-wahsipekuk-maliseet": 2,
+    "woodland-cree": 1,
+    "wopanaak-wampanoag": 0,
+    "wounaan": 1,
+    "wuikinuxv-oweekeno": 5,
+    "wyandot-anderdon": 5,
+    "wyandotte-oklahoma": 7,
+    "xa-isla-wawis-haisla": 6,
+    "xakriaba": 5,
+    "xawi-kwnchawaay-cocopah": 3,
+    "xeta": 3,
+    "xinca": 4,
+    "xixime": 5,
+    "yagan": 5,
+    "yahooskin": 6,
+    "yakama": 5,
+    "yakina": 3,
+    "yamassee": 0,
+    "yamayeka-yamaye": 2,
+    "yamhill": 7,
+    "yaminawa": 4,
+    "yana": 2,
+    "yanam-ninam": 3,
+    "yanesha": 2,
+    "yankton": 1,
+    "yanktonai": 3,
+    "yanomami": 0,
+    "yaros": 3,
+    "yaruro-pume": 7,
+    "yavapaiv-apache": 2,
+    "yawanawa": 5,
+    "yazne": 4,
+    "ye-pa-masa": 6,
+    "yeba-masa": 7,
+    "yekooche": 2,
+    "yemen": 5,
+    "yemen-arab-republic-of-yemen": 5,
+    "yemen-people-s-republic-of": 0,
+    "yeopim": 2,
+    "yihamwo-yagua": 7,
+    "yine": 5,
+    "yjxa": 1,
+    "yoeme-yaqui": 3,
+    "yoko-t-aan-chontal": 1,
+    "yokuts": 6,
+    "yoli-concho": 1,
+    "yoncalla": 2,
+    "yoreme-mayo": 1,
+    "youghtanund": 3,
+    "yudja": 5,
+    "yugoslavia": 0,
+    "yuhaviatam-maarenga-yam-serrano": 7,
+    "yukpa": 4,
+    "yup-ik-cup-ik": 3,
+    "yuracare": 2,
+    "yuri": 7,
+    "yurok": 7,
+    "yuruti": 6,
+    "zacateco": 3,
+    "zambia": 0,
+    "zanzibar": 5,
+    "zapotec-empire": 4,
+    "zayyanid-caliphate": 4,
+    "zenu": 1,
+    "zimbabwe-rhodesia": 6,
+    "ziobain-siona": 3,
+    "zo-e": 4,
+    "zoro-pangyjej": 5
   },
   "grid": 0.25,
   "hues": 8,
   "schema": 1,
   "spilled": {
-    "belgium": [
-      "united-states-of-america"
+    "a-am-n-g-j-tla-amin-sliammon": [
+      "huu-ay-aht",
+      "quw-utsun"
     ],
-    "united-states-of-america": [
-      "belgium"
+    "a-lenene-te-wsanec": [
+      "ditidaqiicaq-disiba-k-ditidaht",
+      "k-omoks",
+      "s-olh-temexw-sto-lo",
+      "skagit"
+    ],
+    "a-uuk-i-ath-tla-o-qui-aht": [
+      "homalco"
+    ],
+    "abenaki-abenaquis": [
+      "omamiwininiwag-algonquin"
+    ],
+    "achumawi": [
+      "shasta"
+    ],
+    "adena": [
+      "tutelo"
+    ],
+    "alse-alsea": [
+      "santiam"
+    ],
+    "amboca": [
+      "calvas"
+    ],
+    "anishinabewaki": [
+      "peoria",
+      "wahpeton"
+    ],
+    "aseniwuche-winewak-rocky-mountain": [
+      "stoney"
+    ],
+    "ashaninka": [
+      "yine"
+    ],
+    "atfalati": [
+      "cascades"
+    ],
+    "atsugewi": [
+      "waymaq"
+    ],
+    "attiwonderonk-neutral": [
+      "meskwahki-asa-hina-fox"
+    ],
+    "barasano-panenoa": [
+      "yeba-masa"
+    ],
+    "batsil-winik-otik-tzotzil": [
+      "nahua-morelos-puebla-tlaxcala-veracruz-hidalgo-san-luis-potosi"
+    ],
+    "cahuilla": [
+      "vanyume"
+    ],
+    "calicuas": [
+      "monacan"
+    ],
+    "calvas": [
+      "amboca"
+    ],
+    "cascades": [
+      "atfalati"
+    ],
+    "catawba": [
+      "saura"
+    ],
+    "chafan": [
+      "siuslaw"
+    ],
+    "chahta-yakni-choctaw": [
+      "osage",
+      "tsalaguwetiyi-cherokee-east"
+    ],
+    "chehalis": [
+      "clatskanie"
+    ],
+    "chelan": [
+      "tulalip"
+    ],
+    "chemapho": [
+      "kalapuya"
+    ],
+    "cheyenne": [
+      "washtage-mo-zha-kaw-kansa"
+    ],
+    "chickahominy": [
+      "weyanock"
+    ],
+    "chilula": [
+      "tsnungwe"
+    ],
+    "chimariko-territory": [
+      "confederated-tribes-of-siletz-indians",
+      "whilkut"
+    ],
+    "chinook": [
+      "wahkiakum"
+    ],
+    "chiricahua-apache": [
+      "pueblos"
+    ],
+    "chochenyo": [
+      "plains-miwok"
+    ],
+    "clackamas": [
+      "confederated-tribes-of-grand-ronde"
+    ],
+    "clatskanie": [
+      "chehalis"
+    ],
+    "clatsop": [
+      "coast-salish",
+      "multnomah"
+    ],
+    "coahuiltecan": [
+      "tonkawa"
+    ],
+    "coast-salish": [
+      "clatsop",
+      "multnomah",
+      "musgamagw-dzawada-enuxw",
+      "sq-ciya-t-m-x-katzie",
+      "uchucklesaht"
+    ],
+    "confederated-tribes-of-grand-ronde": [
+      "clackamas",
+      "lower-chinook"
+    ],
+    "confederated-tribes-of-siletz-indians": [
+      "chimariko-territory",
+      "yana",
+      "yoncalla"
+    ],
+    "coos-lower-umpqua-siuslaw": [
+      "mohawk-kalapuya",
+      "tolowa-dee-ni",
+      "yakina"
+    ],
+    "cow-creek-umpqua": [
+      "yahooskin"
+    ],
+    "cowlitz": [
+      "skilloot",
+      "tillamook"
+    ],
+    "cree": [
+      "mountain-metis"
+    ],
+    "cuttatawomen": [
+      "youghtanund"
+    ],
+    "dau-nom-wintu": [
+      "wailaki"
+    ],
+    "dau-pom-wintu": [
+      "nongatl",
+      "pit-river"
+    ],
+    "denendeh": [
+      "michif-piyii-metis"
+    ],
+    "diaguita": [
+      "kolla"
+    ],
+    "dine-bikeyah": [
+      "yavapaiv-apache"
+    ],
+    "ditidaht": [
+      "makah",
+      "nuucaanuu-ath-nisma-nuu-chah-nulth"
+    ],
+    "ditidaqiicaq-disiba-k-ditidaht": [
+      "a-lenene-te-wsanec",
+      "k-omoks"
+    ],
+    "dokapuara-tuyuca": [
+      "miranha",
+      "ye-pa-masa",
+      "yuruti"
+    ],
+    "eastern-shawnee-oklahoma": [
+      "modoc-oklahoma"
+    ],
+    "eduria-taiwano": [
+      "walimanai-baniwa"
+    ],
+    "el-pom-wintu": [
+      "nor-rel-muk-wintu"
+    ],
+    "embera-eperara-epera": [
+      "otavalo",
+      "quillacinga"
+    ],
+    "gauigu-kiowa": [
+      "otoe-missouria-oklahoma"
+    ],
+    "gitanyow-lax-yip": [
+      "lingit-aani-tlingit"
+    ],
+    "graton-rancheria": [
+      "me-wuk-bay-miwok"
+    ],
+    "hach-winik-lacandon": [
+      "popti"
+    ],
+    "havasu-baaja-havasupai": [
+      "shiwinna-zuni"
+    ],
+    "hohokam": [
+      "o-odham-jewed"
+    ],
+    "homalco": [
+      "a-uuk-i-ath-tla-o-qui-aht",
+      "lil-wat",
+      "te-mexw-treaty-association",
+      "wuikinuxv-oweekeno"
+    ],
+    "hoopa": [
+      "konomihu"
+    ],
+    "hoopa-reservation": [
+      "wint-u-po-m-northern-wintu"
+    ],
+    "hualapai": [
+      "quechan-kwatsaan"
+    ],
+    "hul-kuhk-u": [
+      "salinan",
+      "yuhaviatam-maarenga-yam-serrano"
+    ],
+    "hul-qumi-num-treaty-group": [
+      "kwakwaka-wakw",
+      "skwxwu7mesh-ulh-temixw-squamish",
+      "stillaguamish",
+      "syilx-tmix-okanagan",
+      "ts-uubaa-asatx",
+      "ucluelet"
+    ],
+    "hupacasath": [
+      "snuneymuxw",
+      "we-wai-kai"
+    ],
+    "hupd-ah": [
+      "siria-masa-siriano",
+      "tanimuka"
+    ],
+    "huu-ay-aht": [
+      "a-am-n-g-j-tla-amin-sliammon",
+      "quw-utsun"
+    ],
+    "in-shuck-ch": [
+      "sx-m-k-y-ma-t-m-x-musqueam",
+      "tulalip"
+    ],
+    "ixil": [
+      "winik-atel-tzeltal"
+    ],
+    "juhup-yuju-yuhupdeh": [
+      "utapinomakaphona"
+    ],
+    "k-omoks": [
+      "a-lenene-te-wsanec",
+      "ditidaqiicaq-disiba-k-ditidaht"
+    ],
+    "kalapuya": [
+      "chemapho",
+      "kathlamet"
+    ],
+    "karapana-muteamasa": [
+      "waipinomaka-bara"
+    ],
+    "karijona": [
+      "waipinomaka-bara"
+    ],
+    "karkin": [
+      "wappo"
+    ],
+    "kashaya": [
+      "patwin"
+    ],
+    "kashtik": [
+      "kuyam"
+    ],
+    "kaskaskia": [
+      "ochethi-sakowi",
+      "wyandot-anderdon"
+    ],
+    "kathlamet": [
+      "kalapuya"
+    ],
+    "kaw-oklahoma": [
+      "pawnee-oklahoma"
+    ],
+    "kelly-lake-metis-settlement-society": [
+      "lheidli-t-enneh"
+    ],
+    "kiikaapoi-kickapoo": [
+      "niuachi",
+      "ponca-oklahoma"
+    ],
+    "kikiallus": [
+      "sauk-suiattle"
+    ],
+    "kl-bal-pom-wintu": [
+      "new-river-shasta",
+      "winnimem-wintu"
+    ],
+    "klahoose": [
+      "statimc-tmicw-st-at-imc"
+    ],
+    "kolla": [
+      "diaguita"
+    ],
+    "konnaack": [
+      "nehalem",
+      "willapa"
+    ],
+    "konomihu": [
+      "hoopa"
+    ],
+    "ktunaxa-amak-is": [
+      "tsuu-t-ina"
+    ],
+    "kubewa-cubeo": [
+      "umurecoomaja-tatuyo"
+    ],
+    "kuyam": [
+      "kashtik"
+    ],
+    "kwakwaka-wakw": [
+      "hul-qumi-num-treaty-group"
+    ],
+    "kwantlen": [
+      "sauk-suiattle",
+      "semiahmoo",
+      "statimc-tmicw-st-at-imc"
+    ],
+    "kwikwetlem": [
+      "lil-wat",
+      "sc-wa-ena-t-m-x-tsawwassen"
+    ],
+    "lassik": [
+      "wiyot"
+    ],
+    "lhaq-temish-lummi": [
+      "n-e-kepmx-tmix-nlaka-pamux",
+      "qayqayt",
+      "s-lilw-ta-t-m-x-tsleil-waututh"
+    ],
+    "lheidli-t-enneh": [
+      "kelly-lake-metis-settlement-society"
+    ],
+    "lil-wat": [
+      "homalco",
+      "kwikwetlem",
+      "sc-wa-ena-t-m-x-tsawwassen",
+      "secwepemcul-ecw-secwepemc"
+    ],
+    "lingit-aani-tlingit": [
+      "gitanyow-lax-yip"
+    ],
+    "lower-chinook": [
+      "confederated-tribes-of-grand-ronde"
+    ],
+    "luckiamute": [
+      "siletz"
+    ],
+    "lumbee": [
+      "tsalaguwetiyi-cherokee-east",
+      "warraskoyack"
+    ],
+    "makah": [
+      "ditidaht"
+    ],
+    "manahoac": [
+      "pissaseck"
+    ],
+    "massacoes": [
+      "podunks"
+    ],
+    "mattaponi": [
+      "moraughtacund"
+    ],
+    "me-wuk-bay-miwok": [
+      "graton-rancheria"
+    ],
+    "me-wuk-coast-miwok": [
+      "tamien-nation"
+    ],
+    "me-wuk-lake-miwok": [
+      "northern-pomo"
+    ],
+    "meskwahki-asa-hina-fox": [
+      "attiwonderonk-neutral"
+    ],
+    "michif-piyii-metis": [
+      "denendeh"
+    ],
+    "miluk-coos": [
+      "quuiich-lower-umpqua",
+      "takelma"
+    ],
+    "miranha": [
+      "dokapuara-tuyuca",
+      "ye-pa-masa"
+    ],
+    "miwko-waali": [
+      "ohlone"
+    ],
+    "modoc": [
+      "nom-ti-pom-wintu",
+      "nor-rel-muk-wintu",
+      "yurok"
+    ],
+    "modoc-oklahoma": [
+      "eastern-shawnee-oklahoma"
+    ],
+    "mohawk-kalapuya": [
+      "coos-lower-umpqua-siuslaw"
+    ],
+    "mohegan": [
+      "tunxis"
+    ],
+    "mohican": [
+      "wangunks"
+    ],
+    "molalla": [
+      "quuiich-lower-umpqua",
+      "takelma",
+      "yakama"
+    ],
+    "monacan": [
+      "calicuas"
+    ],
+    "moraughtacund": [
+      "mattaponi"
+    ],
+    "mountain-maidu": [
+      "wint-u-po-m-northern-wintu"
+    ],
+    "mountain-metis": [
+      "cree"
+    ],
+    "muckleshoot": [
+      "np-sq-aws-x-wenatchi"
+    ],
+    "multnomah": [
+      "clatsop",
+      "coast-salish"
+    ],
+    "musgamagw-dzawada-enuxw": [
+      "coast-salish"
+    ],
+    "muteamasa-karapana": [
+      "wanano-kotiria"
+    ],
+    "muwekma": [
+      "patwin"
+    ],
+    "myaamia": [
+      "odawa",
+      "shawandasse-tula-shawanwaki-shawnee"
+    ],
+    "n-e-kepmx-tmix-nlaka-pamux": [
+      "lhaq-temish-lummi"
+    ],
+    "n-m-n-comanche": [
+      "o-ga-xpa-ma-zho-o-ga-xpa"
+    ],
+    "nahua-morelos-puebla-tlaxcala-veracruz-hidalgo-san-luis-potosi": [
+      "batsil-winik-otik-tzotzil"
+    ],
+    "nansemond": [
+      "yeopim"
+    ],
+    "nasa": [
+      "ziobain-siona"
+    ],
+    "nde-konitsaaii-gokiyaa-lipan-apache": [
+      "wichita"
+    ],
+    "ndee-nnee-western-apache": [
+      "nuwuvi-southern-paiute"
+    ],
+    "nehalem": [
+      "konnaack"
+    ],
+    "new-river-shasta": [
+      "kl-bal-pom-wintu"
+    ],
+    "niitsitpiis-stahkoii-blackfoot-niitsitapi": [
+      "woodland-cree"
+    ],
+    "nipmuc": [
+      "wappinger"
+    ],
+    "nisqually": [
+      "suquamish"
+    ],
+    "niuachi": [
+      "kiikaapoi-kickapoo"
+    ],
+    "nom-sus-wintu": [
+      "wint-u-po-m-northern-wintu"
+    ],
+    "nom-ti-pom-wintu": [
+      "modoc"
+    ],
+    "nongatl": [
+      "dau-pom-wintu"
+    ],
+    "nor-rel-muk-wintu": [
+      "el-pom-wintu",
+      "modoc"
+    ],
+    "northeastern-pomo": [
+      "wappo"
+    ],
+    "northern-pomo": [
+      "me-wuk-lake-miwok"
+    ],
+    "np-sq-aws-x-wenatchi": [
+      "muckleshoot",
+      "sauk-suiattle"
+    ],
+    "numu-northern-paiute": [
+      "yakama"
+    ],
+    "nuucaanuu-ath-nisma-nuu-chah-nulth": [
+      "ditidaht"
+    ],
+    "nuwhaha": [
+      "snohomish"
+    ],
+    "nuwuvi-southern-paiute": [
+      "ndee-nnee-western-apache"
+    ],
+    "nuxalk": [
+      "xa-isla-wawis-haisla"
+    ],
+    "nuxwsa-7aq-nooksack": [
+      "stz-uminus",
+      "swinomish"
+    ],
+    "o-ga-xpa-ma-zho-o-ga-xpa": [
+      "n-m-n-comanche"
+    ],
+    "o-odham-jewed": [
+      "hohokam"
+    ],
+    "ochethi-sakowi": [
+      "kaskaskia",
+      "otoe-missouri-oklahoma"
+    ],
+    "odawa": [
+      "myaamia"
+    ],
+    "ohlone": [
+      "miwko-waali"
+    ],
+    "okanagan": [
+      "spokane"
+    ],
+    "okwanuchu": [
+      "tsnungwe"
+    ],
+    "omamiwininiwag-algonquin": [
+      "abenaki-abenaquis"
+    ],
+    "opiscopank": [
+      "powhatan"
+    ],
+    "osage": [
+      "chahta-yakni-choctaw",
+      "tsalaguwetiyi-cherokee-east"
+    ],
+    "otavalo": [
+      "embera-eperara-epera"
+    ],
+    "otoe-missouri-oklahoma": [
+      "ochethi-sakowi"
+    ],
+    "otoe-missouria-oklahoma": [
+      "gauigu-kiowa"
+    ],
+    "pacheedaht": [
+      "te-mexw-treaty-association"
+    ],
+    "pamunkey": [
+      "youghtanund"
+    ],
+    "paspahegh": [
+      "quiyoughcohannock"
+    ],
+    "patawomeck": [
+      "rappahannock"
+    ],
+    "patwin": [
+      "kashaya",
+      "muwekma"
+    ],
+    "pawnee-oklahoma": [
+      "kaw-oklahoma"
+    ],
+    "pennacook": [
+      "wopanaak-wampanoag"
+    ],
+    "peoria": [
+      "anishinabewaki"
+    ],
+    "pisamira": [
+      "utapinomakaphona"
+    ],
+    "pissaseck": [
+      "manahoac",
+      "werowocomoco"
+    ],
+    "pit-river": [
+      "dau-pom-wintu"
+    ],
+    "plains-miwok": [
+      "chochenyo"
+    ],
+    "podunks": [
+      "massacoes"
+    ],
+    "ponca-oklahoma": [
+      "kiikaapoi-kickapoo"
+    ],
+    "popti": [
+      "hach-winik-lacandon"
+    ],
+    "powhatan": [
+      "opiscopank"
+    ],
+    "pueblos": [
+      "chiricahua-apache"
+    ],
+    "puyallup": [
+      "skykomish",
+      "twana-skokomish"
+    ],
+    "qayqayt": [
+      "lhaq-temish-lummi",
+      "s-lilw-ta-t-m-x-tsleil-waututh"
+    ],
+    "qhara-qhara": [
+      "quechua"
+    ],
+    "quechan-kwatsaan": [
+      "hualapai"
+    ],
+    "quechua": [
+      "qhara-qhara",
+      "weenhayek"
+    ],
+    "quileute": [
+      "twana-skokomish"
+    ],
+    "quillacinga": [
+      "embera-eperara-epera"
+    ],
+    "quiyoughcohannock": [
+      "paspahegh"
+    ],
+    "quuiich-lower-umpqua": [
+      "miluk-coos",
+      "molalla"
+    ],
+    "quw-utsun": [
+      "a-am-n-g-j-tla-amin-sliammon",
+      "huu-ay-aht"
+    ],
+    "ramaytush": [
+      "yokuts"
+    ],
+    "rappahannock": [
+      "patawomeck"
+    ],
+    "resighini-rancheria-yurok": [
+      "shasta"
+    ],
+    "s-klallam": [
+      "steilacoom",
+      "tulalip"
+    ],
+    "s-lilw-ta-t-m-x-tsleil-waututh": [
+      "lhaq-temish-lummi",
+      "qayqayt"
+    ],
+    "s-olh-temexw-sto-lo": [
+      "a-lenene-te-wsanec"
+    ],
+    "salasaka": [
+      "waranka"
+    ],
+    "salinan": [
+      "hul-kuhk-u"
+    ],
+    "samish": [
+      "tulalip"
+    ],
+    "san-poil": [
+      "yakama"
+    ],
+    "santiam": [
+      "alse-alsea"
+    ],
+    "sauk-suiattle": [
+      "kikiallus",
+      "kwantlen",
+      "np-sq-aws-x-wenatchi",
+      "semiahmoo"
+    ],
+    "saura": [
+      "catawba",
+      "skaruhreh-tuscarora-north-carolina"
+    ],
+    "sc-wa-ena-t-m-x-tsawwassen": [
+      "kwikwetlem",
+      "lil-wat"
+    ],
+    "sduk-albix-snoqualmie": [
+      "suquamish"
+    ],
+    "secwepemcul-ecw-secwepemc": [
+      "lil-wat"
+    ],
+    "sekakawon": [
+      "susquehannock"
+    ],
+    "semiahmoo": [
+      "kwantlen",
+      "sauk-suiattle",
+      "statimc-tmicw-st-at-imc"
+    ],
+    "shasta": [
+      "achumawi",
+      "resighini-rancheria-yurok"
+    ],
+    "shawandasse-tula-shawanwaki-shawnee": [
+      "myaamia"
+    ],
+    "shigom": [
+      "southern-pomo"
+    ],
+    "shishalh": [
+      "tsilhqot-in-nen"
+    ],
+    "shiwinna-zuni": [
+      "havasu-baaja-havasupai"
+    ],
+    "siletz": [
+      "luckiamute"
+    ],
+    "sinkyone": [
+      "wint-u-po-m-northern-wintu"
+    ],
+    "siria-masa-siriano": [
+      "hupd-ah"
+    ],
+    "siuslaw": [
+      "chafan"
+    ],
+    "skagit": [
+      "a-lenene-te-wsanec"
+    ],
+    "skaruhreh-tuscarora-north-carolina": [
+      "saura"
+    ],
+    "skilloot": [
+      "cowlitz"
+    ],
+    "skwxwu7mesh-ulh-temixw-squamish": [
+      "hul-qumi-num-treaty-group"
+    ],
+    "skykomish": [
+      "puyallup"
+    ],
+    "snohomish": [
+      "nuwhaha"
+    ],
+    "snuneymuxw": [
+      "hupacasath",
+      "we-wai-kai"
+    ],
+    "southern-pomo": [
+      "shigom"
+    ],
+    "spokane": [
+      "okanagan"
+    ],
+    "sq-ciya-t-m-x-katzie": [
+      "coast-salish"
+    ],
+    "statimc-tmicw-st-at-imc": [
+      "klahoose",
+      "kwantlen",
+      "semiahmoo"
+    ],
+    "steilacoom": [
+      "s-klallam"
+    ],
+    "stillaguamish": [
+      "hul-qumi-num-treaty-group",
+      "syilx-tmix-okanagan"
+    ],
+    "stoney": [
+      "aseniwuche-winewak-rocky-mountain"
+    ],
+    "stz-uminus": [
+      "nuxwsa-7aq-nooksack",
+      "tseshaht",
+      "we-wai-kum"
+    ],
+    "suquamish": [
+      "nisqually",
+      "sduk-albix-snoqualmie"
+    ],
+    "susquehannock": [
+      "sekakawon"
+    ],
+    "swinomish": [
+      "nuxwsa-7aq-nooksack"
+    ],
+    "sx-m-k-y-ma-t-m-x-musqueam": [
+      "in-shuck-ch",
+      "tulalip"
+    ],
+    "syilx-tmix-okanagan": [
+      "hul-qumi-num-treaty-group",
+      "stillaguamish"
+    ],
+    "takelma": [
+      "miluk-coos",
+      "molalla"
+    ],
+    "tama-dujo": [
+      "tontotuna-totoro"
+    ],
+    "tamien-nation": [
+      "me-wuk-coast-miwok"
+    ],
+    "tanimuka": [
+      "hupd-ah"
+    ],
+    "te-mexw-treaty-association": [
+      "homalco",
+      "pacheedaht"
+    ],
+    "tillamook": [
+      "cowlitz"
+    ],
+    "tolowa-dee-ni": [
+      "coos-lower-umpqua-siuslaw"
+    ],
+    "tonkawa": [
+      "coahuiltecan"
+    ],
+    "tontotuna-totoro": [
+      "tama-dujo"
+    ],
+    "ts-uubaa-asatx": [
+      "hul-qumi-num-treaty-group",
+      "ucluelet"
+    ],
+    "tsalaguwetiyi-cherokee-east": [
+      "chahta-yakni-choctaw",
+      "lumbee",
+      "osage"
+    ],
+    "tsankupi": [
+      "yoncalla"
+    ],
+    "tseshaht": [
+      "stz-uminus",
+      "we-wai-kum"
+    ],
+    "tsilhqot-in-nen": [
+      "shishalh"
+    ],
+    "tsnungwe": [
+      "chilula",
+      "okwanuchu"
+    ],
+    "tsuu-t-ina": [
+      "ktunaxa-amak-is"
+    ],
+    "tulalip": [
+      "chelan",
+      "in-shuck-ch",
+      "s-klallam",
+      "samish",
+      "sx-m-k-y-ma-t-m-x-musqueam"
+    ],
+    "tunxis": [
+      "mohegan"
+    ],
+    "tutelo": [
+      "adena"
+    ],
+    "twana-skokomish": [
+      "puyallup",
+      "quileute"
+    ],
+    "uchucklesaht": [
+      "coast-salish"
+    ],
+    "ucluelet": [
+      "hul-qumi-num-treaty-group",
+      "ts-uubaa-asatx"
+    ],
+    "umukomasa-desana": [
+      "umurecoomaja-tatuyo"
+    ],
+    "umurecoomaja-tatuyo": [
+      "kubewa-cubeo",
+      "umukomasa-desana"
+    ],
+    "utapinomakaphona": [
+      "juhup-yuju-yuhupdeh",
+      "pisamira"
+    ],
+    "vanyume": [
+      "cahuilla"
+    ],
+    "wahkiakum": [
+      "chinook"
+    ],
+    "wahpeton": [
+      "anishinabewaki"
+    ],
+    "waikhana": [
+      "walimanai-baniwa"
+    ],
+    "wailaki": [
+      "dau-nom-wintu"
+    ],
+    "waipinomaka-bara": [
+      "karapana-muteamasa",
+      "karijona"
+    ],
+    "walimanai-baniwa": [
+      "eduria-taiwano",
+      "waikhana"
+    ],
+    "wanano-kotiria": [
+      "muteamasa-karapana"
+    ],
+    "wangunks": [
+      "mohican"
+    ],
+    "wappinger": [
+      "nipmuc"
+    ],
+    "wappo": [
+      "karkin",
+      "northeastern-pomo"
+    ],
+    "waranka": [
+      "salasaka"
+    ],
+    "warraskoyack": [
+      "lumbee"
+    ],
+    "washtage-mo-zha-kaw-kansa": [
+      "cheyenne"
+    ],
+    "waymaq": [
+      "atsugewi"
+    ],
+    "we-wai-kai": [
+      "hupacasath",
+      "snuneymuxw"
+    ],
+    "we-wai-kum": [
+      "stz-uminus",
+      "tseshaht"
+    ],
+    "weenhayek": [
+      "quechua"
+    ],
+    "werowocomoco": [
+      "pissaseck",
+      "wicocomico"
+    ],
+    "weyanock": [
+      "chickahominy"
+    ],
+    "whilkut": [
+      "chimariko-territory"
+    ],
+    "wichita": [
+      "nde-konitsaaii-gokiyaa-lipan-apache"
+    ],
+    "wicocomico": [
+      "werowocomoco"
+    ],
+    "willapa": [
+      "konnaack"
+    ],
+    "winik-atel-tzeltal": [
+      "ixil"
+    ],
+    "winnimem-wintu": [
+      "kl-bal-pom-wintu"
+    ],
+    "wint-u-po-m-northern-wintu": [
+      "hoopa-reservation",
+      "mountain-maidu",
+      "nom-sus-wintu",
+      "sinkyone"
+    ],
+    "wiyot": [
+      "lassik"
+    ],
+    "woodland-cree": [
+      "niitsitpiis-stahkoii-blackfoot-niitsitapi"
+    ],
+    "wopanaak-wampanoag": [
+      "pennacook"
+    ],
+    "wuikinuxv-oweekeno": [
+      "homalco"
+    ],
+    "wyandot-anderdon": [
+      "kaskaskia"
+    ],
+    "xa-isla-wawis-haisla": [
+      "nuxalk"
+    ],
+    "yahooskin": [
+      "cow-creek-umpqua"
+    ],
+    "yakama": [
+      "molalla",
+      "numu-northern-paiute",
+      "san-poil"
+    ],
+    "yakina": [
+      "coos-lower-umpqua-siuslaw"
+    ],
+    "yana": [
+      "confederated-tribes-of-siletz-indians"
+    ],
+    "yavapaiv-apache": [
+      "dine-bikeyah"
+    ],
+    "ye-pa-masa": [
+      "dokapuara-tuyuca",
+      "miranha",
+      "yuruti"
+    ],
+    "yeba-masa": [
+      "barasano-panenoa"
+    ],
+    "yeopim": [
+      "nansemond"
+    ],
+    "yihamwo-yagua": [
+      "yuri"
+    ],
+    "yine": [
+      "ashaninka"
+    ],
+    "yokuts": [
+      "ramaytush"
+    ],
+    "yoncalla": [
+      "confederated-tribes-of-siletz-indians",
+      "tsankupi"
+    ],
+    "youghtanund": [
+      "cuttatawomen",
+      "pamunkey"
+    ],
+    "yuhaviatam-maarenga-yam-serrano": [
+      "hul-kuhk-u"
+    ],
+    "yuri": [
+      "yihamwo-yagua"
+    ],
+    "yurok": [
+      "modoc"
+    ],
+    "yuruti": [
+      "dokapuara-tuyuca",
+      "ye-pa-masa"
+    ],
+    "ziobain-siona": [
+      "nasa"
     ]
   }
 }

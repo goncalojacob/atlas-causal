@@ -1,7 +1,7 @@
 {
   "attributeShards": [
     {
-      "file": "index/attributes-1400-1499-7e44f4b21815.json",
+      "file": "index/attributes-1400-1499-6c482b6b8d08.json",
       "from": 1400,
       "key": "1400-1499",
       "to": 1499
@@ -836,13 +836,13 @@
     }
   ],
   "counts": {
-    "actors": 599,
+    "actors": 1846,
     "edges": 272,
     "events": 513,
     "narratives": 1,
     "offices": 11,
     "places": 26,
-    "presences": 825,
+    "presences": 2126,
     "regions": 5,
     "relations": 128,
     "sources": 35,
@@ -866,12 +866,12 @@
     }
   ],
   "files": {
-    "citers": "index/citers-30d5aba24e24",
-    "core": "index/core-fab9c74773fc.json",
-    "presences": "index/presences-8309c2042347.json",
-    "review": "index/review-1013797aa8fe.json",
-    "search": "index/search-79be824f2ca8.json",
-    "sources": "index/sources-af0574e5c2ce.json"
+    "citers": "index/citers-f4120d43dc5e",
+    "core": "index/core-f174bc4653fe.json",
+    "presences": "index/presences-b1d3672a05c0.json",
+    "review": "index/review-a39d7e996767.json",
+    "search": "index/search-852c783355e3.json",
+    "sources": "index/sources-f52cf184e5c1.json"
   },
   "historyShards": [
     {
@@ -917,14 +917,14 @@
       "to": 2099
     },
     {
-      "file": "index/history-source-source-ce08ccc3e439.json",
+      "file": "index/history-source-source-22127af35833.json",
       "from": null,
       "key": "source",
       "kind": "source",
       "to": null
     },
     {
-      "file": "index/history-actor-1400-1499-adb718fcd8ac.json",
+      "file": "index/history-actor-1400-1499-f3ad529f4908.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "actor",
@@ -1525,6 +1525,11 @@
       "file": "geo/presences/1400-1491.json",
       "from": 1400,
       "to": 1491
+    },
+    {
+      "file": "geo/presences/1492-1499.json",
+      "from": 1492,
+      "to": 1499
     },
     {
       "file": "geo/presences/1886-1913.json",
