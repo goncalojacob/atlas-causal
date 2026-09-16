@@ -1,0 +1,156 @@
+# M49 — the actors `tools/import/wikidata.mjs --dates` is asked about.
+#
+# One actor id per line. `#` is a comment. A line may end with `| <name>` to
+# narrow the search to one of the names that record carries — the tool checks
+# the name against the record and refuses one the record does not hold, so
+# this file cannot introduce a name from nowhere.
+#
+# Narrowing is a reading of a label, never a claim about history. It is used
+# here only where the parenthetical is plainly the holding power or a country
+# code — "Algeria (FR)" is Algeria, "Senegal (FR)" is Senegal — and the id
+# says the same. Where the two parts are two real subjects it is left alone
+# on purpose: "Turkey (Ottoman Empire)", "Germany (Prussia)" and
+# "Harer (Egypt)" must come back doubtful, because deciding between their
+# parts is the historical judgement this run is forbidden to make.
+#
+# Order follows `docs/m49-actors.md` §4, both sides of each pair together.
+
+# --- the 26 candidate pairs -------------------------------------------------
+
+algeria-fr | Algeria
+algeria-under-france
+
+angola-portugal | Angola
+angola-under-portugal
+
+annam
+vietnam-annam-cochin-china-tonkin
+
+belize-before-1886
+belize-under-united-kingdom
+
+bhutan-before-1886
+bhutan-under-united-kingdom
+
+congo-before-1886
+congo-under-france
+
+egypt-before-1886
+egypt-under-united-kingdom
+
+fiji-before-1886
+fiji-under-united-kingdom
+
+gabon-before-1886
+gabon-under-france
+
+germany
+germany-prussia
+
+harer-egypt
+
+iceland-before-1886
+iceland-under-denmark
+
+italy
+italy-sardinia
+
+madagascar
+madagascar-malagasy
+
+malta-before-1886
+malta-under-united-kingdom
+
+mozambique-before-1886
+mozambique-under-portugal
+
+new-south-wales-uk | New South Wales
+new-south-wales
+
+ottoman-empire
+turkey-ottoman-empire
+
+persia
+iran-persia
+
+philippines-before-1886
+philippines-under-united-states-of-america
+
+queensland-uk | Queensland
+queensland
+
+senegal-fr | Senegal
+senegal-under-france
+
+sierra-leone-before-1886
+sierra-leone-under-united-kingdom
+
+south-australia-uk | South Australia
+south-australia
+
+victoria-uk | Victoria
+victoria
+
+western-australia-uk | Western Australia
+western-australia
+
+# --- Russia, which is the owner's example -----------------------------------
+#
+# CShapes carries the Empire, the Union and the Federation under one record.
+# It is asked about three times: once as the label stands, and once for each
+# of the two names that label itself contains. The first is expected to be
+# doubtful — that is the conflation, seen from the outside — and the other
+# two are what the split would need.
+
+russian-empire
+russia-soviet-union
+russia-soviet-union | Russia
+russia-soviet-union | Soviet Union
+
+# --- the pairs the name matching missed, named in `docs/m49-actors.md` §2 ----
+#
+# These are not candidate pairs: nothing matched them to each other and the
+# tool is not being asked to. They are asked about because a person reading
+# the two lists side by side would start here, and a dated item beside each
+# id is what they would want in front of them. Pairing any two of them stays
+# a judgement, and stays theirs.
+
+manchu-empire
+china
+
+imperial-japan
+japan
+
+rattanakosin-kingdom
+thailand
+
+kingdom-of-brazil
+brazil
+
+british-raj
+british-india
+
+romania
+rumania
+
+netherlands-indies
+dutch-east-indies
+
+ceylon
+sri-lanka-ceylon-under-united-kingdom
+
+bosnia-herzegovina-before-1886
+bosnia
+herzegovina
+
+sweden-norway
+sweden
+
+united-kingdom-of-great-britain-and-ireland
+united-kingdom
+
+malaya
+perak
+selangore
+straits-settlements
+unfederated-malay-states

@@ -7,10 +7,16 @@
 # `m0`, waits for the last commit here, and fast-forward-merges the branch
 # back — that merge is the run's own commit, and this job never touches `m0`.
 #
-# The mode comes from the branch name: import/reconcile-…, import/candidates-…
-# or import/run-… . Nothing is interpolated into a shell command: the branch
-# name is somebody's string and reaches the script through env, like every
-# other value in this repository's workflows.
+# The mode comes from the branch name: import/reconcile-…, import/candidates-…,
+# import/dates-… or import/run-… . Nothing is interpolated into a shell command:
+# the branch name is somebody's string and reaches the script through env, like
+# every other value in this repository's workflows.
+#
+# import/dates-… is M49's, and it is a lookup rather than an import: it reads
+# P571 and P576 for the actors named in docs/m49-subjects.txt and writes one
+# page, docs/m49-dates.md. Nothing under data/ changes, which is why it is
+# allowed here at all (brief amendment A4). Like candidates it has no cursor,
+# so one pass is the whole run.
 name: import-wikidata
 
 on:
@@ -56,9 +62,10 @@ jobs:
           case "$BRANCH" in
             import/reconcile-*) mode=reconcile ;;
             import/candidates-*) mode=candidates ;;
+            import/dates-*) mode=dates ;;
             import/run-*) mode=import ;;
             *)
-              echo "::error::$BRANCH does not name a mode; use import/reconcile-…, import/candidates-… or import/run-…"
+              echo "::error::$BRANCH does not name a mode; use import/reconcile-…, import/candidates-…, import/dates-… or import/run-…"
               exit 1
               ;;
           esac
@@ -127,8 +134,9 @@ jobs:
             git add -A
             git commit -m "import: $MODE batch $batch"
             git push origin "HEAD:$BRANCH"
-            # candidates writes one file and has no cursor: one pass is all.
-            if [ "$MODE" = "candidates" ]; then break; fi
+            # candidates and dates each write one file and have no cursor:
+            # one pass is all, and a second would ask the same questions again.
+            if [ "$MODE" = "candidates" ] || [ "$MODE" = "dates" ]; then break; fi
           done
 
       - name: Say the run is finished
