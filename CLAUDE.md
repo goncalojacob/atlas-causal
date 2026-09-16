@@ -69,6 +69,7 @@ CHROME=... node tools/screens.mjs  # the screenshots under docs/screens/, throug
 node tools/build-regions.mjs       # regenerate data/geo/regions.json from Natural Earth 110m, and --seam-report; rarely
 node tools/import/naturalearth.mjs --source vendor/natural-earth/10m --budget   # the base map: data/geo/land-present.json and data/geo/base/; offline, rarely
 node tools/import/cshapes.mjs --source cshapes_2_gw.topojson [--report]  # territories, 1886-2019; rarely
+node tools/import/basemaps.mjs --source vendor/historical-basemaps --check  # territories, 1400-1885, from the snapshots; rarely
 node tools/import/cshapes.mjs --relations   # the successions the split table states; no topology needed, and it runs here
 node tools/import/wikidata.mjs --reconcile|--import|--candidates   # NOT here: no network in this sandbox — it runs in the Action, on an import/** branch
 node tools/new-record.mjs event|edge|source|actor|place|relation|narrative …   # scaffold a record; the text is yours to write
@@ -94,8 +95,8 @@ data/relations/<id>.json   a dated, typed link between two actors; id from--to--
 data/offices/<id>.json     a post held one person after another, belonging to an actor; asserts that the post exists and nothing more
 data/tenures/<id>.json     one person's turn at one office, with its own years and sources; a free slug, since one person may hold one office three times
 data/narratives/<id>.json  a signed walk through records already here; ordered steps of { ref, text }
-data/presences/<id>.json   who held which ground and when; imported, CC BY-NC-SA 4.0
-data/imports/<source>.json which actor a source's entity becomes, and where one code is two actors
+data/presences/<id>.json   who held which ground and when; imported, CC BY-NC-SA 4.0 from CShapes (1886 on) or GPL-3.0 from Historical Basemaps (1400-1885)
+data/imports/<source>.json which actor a source's entity becomes, and where one code is two actors. Keyed by the source's own code, or by its own name where — as in Historical Basemaps — it numbers nothing and the file says `"keys": "name"`
 data/imports/wikidata-seeds.json  the items, queries and class table the Wikidata import is pointed at; contributor-editable
 data/imports/wikidata-state.json  where a cut-off import stopped, one cursor per mode; written by the tool
 data/imports/naturalearth-places.json  which Natural Earth city a place record is, keyed by NE_ID; written by tools/import/naturalearth.mjs --places, which matches on wikidata and then on an exact fold of the name where one candidate survives and is near the record's own point, and lists everything it refused in docs/naturalearth-places.md for a person. An entry added there by hand is kept. Not in the deploy artifact, so the import copies `place` onto the city itself
@@ -228,6 +229,7 @@ tools/lib/store.mjs        the server's atlas between saves: the save queue, the
 tools/bundle-to-files.mjs  issue body → data/<kind>s/<id>.json; ids slug-checked before any path
 tools/lookup-sources.mjs   what the catalogues say a DOI or ISBN names; a review aid, never a gate
 tools/import/cshapes.mjs   CShapes 2.0 → actors, presences, geometry shards, and the `succeeded` relation each split in data/imports/cshapes-actors.json states; it also asks the topology which of its arcs are inland borders — shared by two entities that existed at the same time — and writes them as the shard's arc list. topojson.mjs is its pure half (arcUsers is that question) and simplify.mjs the name it knows src/util/simplify.js by
+tools/import/basemaps.mjs  Historical Basemaps -> the territories before 1886: one presence per polity per snapshot, `confidence: probable` because a border drawn for one year and assumed until the next is a claim, and one shard per snapshot interval. No `arcs`: GeoJSON has no topology, so there is no shared border to stroke and the outlines are filled and hatched instead. Where it meets CShapes at 1886, CShapes wins and the snapshot is dropped
 tools/import/wikidata.mjs  identifiers and records from Wikidata; injectable fetch layer, tested on fixtures, additive on disk
 tools/import/identity.mjs  the additive rule both imports obey: fill a gap, never change a value, never sign
 tools/import/geometry.mjs  clipToBox (Sutherland-Hodgman, holes kept, lines cut into their runs) and splitAtMeridian over it: where the geometry is cut at the projection's seam
