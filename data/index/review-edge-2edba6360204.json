@@ -6265,6 +6265,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "platt-amendment-1901",
+      "id": "platt-amendment-1901--cuban-revolution--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cuban-revolution",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "meneses-2009-salazar"
       ],
@@ -7886,6 +7915,35 @@
       ],
       "created": "2026-09-16",
       "from": "the-cuban-sugar-boom",
+      "id": "the-cuban-sugar-boom--cuban-revolution--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cuban-revolution",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "the-cuban-sugar-boom",
       "id": "the-cuban-sugar-boom--cuban-war-of-independence-1895-1898--caused",
       "kind": "edge",
       "origin": {
@@ -7902,6 +7960,35 @@
       "status": "active",
       "to": "cuban-war-of-independence-1895-1898",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "the-cuban-sugar-boom",
+      "id": "the-cuban-sugar-boom--platt-amendment-1901--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "platt-amendment-1901",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -7960,6 +8047,35 @@
       "status": "active",
       "to": "indigenous-depopulation-of-the-greater-antilles",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-16",
+      "from": "the-first-columbian-voyage-1492",
+      "id": "the-first-columbian-voyage-1492--the-atlantic-slave-trade-to-the-caribbean--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m50",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m50-chain"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "the-atlantic-slave-trade-to-the-caribbean",
+      "type": "precondition-of"
     },
     {
       "authors": [

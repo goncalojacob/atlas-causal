@@ -83,3 +83,7 @@ justification in the first place.
 | `cuban-war-of-independence-1895-1898--spanish-american-war-1898--caused` | probable | `wikipedia-en`, `wikipedia-en` | the last three months of one war are the whole of the other |
 | `the-cuban-sugar-boom--spanish-american-war-1898--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | American money owned the sugar and wanted peace — which is still why Cuba was America’s to intervene in |
 | `spanish-american-war-1898--platt-amendment-1901--caused` | probable | `wikipedia-en`, `wikipedia-en` | the terms on which the occupation of 1898 agreed to leave |
+| `the-first-columbian-voyage-1492--the-atlantic-slave-trade-to-the-caribbean--precondition-of` | probable | `wikipedia-en`, `wikipedia-en`, `wikipedia-en` | the islands had to be a place Europeans sailed to before anything else here |
+| `the-cuban-sugar-boom--cuban-revolution--precondition-of` | probable | `wikipedia-en`, `wikipedia-en`, `wikipedia-en` | a monoculture on American quotas is three of the five problems the sources name |
+| `platt-amendment-1901--cuban-revolution--precondition-of` | probable | `wikipedia-en`, `wikipedia-en` | a right of intervention written into the constitution, and the decades that followed |
+| `the-cuban-sugar-boom--platt-amendment-1901--precondition-of` | probable | `wikipedia-en`, `wikipedia-en`, `wikipedia-en` | the interest the seven conditions were written around, in Roosevelt’s own words |

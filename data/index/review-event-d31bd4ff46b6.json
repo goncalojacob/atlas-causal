@@ -3355,7 +3355,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 3,
       "id": "cuban-revolution",
       "kind": "event",
       "origin": {
@@ -3364,11 +3364,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-drafted"
+          "summary-drafted",
+          "m50-chain"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-16",
       "status": "active",
       "title": "Cuban Revolution"
     },
@@ -6312,7 +6313,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 1,
+      "degree": 3,
       "id": "platt-amendment-1901",
       "kind": "event",
       "names": [
@@ -7457,7 +7458,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 9,
+      "degree": 10,
       "id": "the-atlantic-slave-trade-to-the-caribbean",
       "kind": "event",
       "names": [
@@ -7642,7 +7643,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 4,
+      "degree": 6,
       "id": "the-cuban-sugar-boom",
       "kind": "event",
       "names": [
@@ -7673,7 +7674,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 3,
       "id": "the-first-columbian-voyage-1492",
       "kind": "event",
       "names": [

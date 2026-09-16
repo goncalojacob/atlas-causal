@@ -87,7 +87,6 @@ Centre: `the-atlantic-slave-trade-to-the-caribbean`.
 |---|---|
 | `the-first-columbian-voyage-1492` | |
 | `treaty-of-tordesillas-1494` | shared |
-| `spanish-conquest-of-cuba-1511` | |
 | `indigenous-depopulation-of-the-greater-antilles` | |
 | `english-settlement-of-barbados-1627` | |
 | `dutch-brazil-1630-1654` | shared |
@@ -115,7 +114,7 @@ shared record the link passes through, and it is always one of the two ends.
 |---|---|---|---|
 | `treaty-of-tordesillas-1494` | `portuguese-landfall-in-brazil-1500` | `treaty-of-tordesillas-1494` | the meridian that made the coast Portuguese |
 | `treaty-of-tordesillas-1494` | `the-atlantic-slave-trade-to-brazil` | `treaty-of-tordesillas-1494` | one crown east *and* west of the line: Guinea and Brazil |
-| `treaty-of-tordesillas-1494` | `spanish-conquest-of-cuba-1511` | `treaty-of-tordesillas-1494` | the Castilian title the conquest of the Antilles rested on |
+| `the-first-columbian-voyage-1492` | `treaty-of-tordesillas-1494` | `treaty-of-tordesillas-1494` | the quarrel the meridian was drawn to settle |
 | `the-brazilian-sugar-cycle` | `dutch-brazil-1630-1654` | `dutch-brazil-1630-1654` | the sugar coast the Company came for |
 | `governorate-general-of-brazil-1549` | `dutch-brazil-1630-1654` | `dutch-brazil-1630-1654` | the royal colony that made it worth taking |
 | `dutch-brazil-1630-1654` | `the-caribbean-sugar-revolution` | `dutch-brazil-1630-1654` | the planters and the sugar technique that left Pernambuco in 1654 |

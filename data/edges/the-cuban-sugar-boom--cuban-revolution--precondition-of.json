@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "the-cuban-sugar-boom--cuban-revolution--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuban Revolution\", revision 1373305240"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    }
+  ],
+  "from": "the-cuban-sugar-boom",
+  "to": "cuban-revolution",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The cited account of the revolution names five socioeconomic problems that marked the decade before it, and three of them are this record’s: excessive dependence on sugar cultivation and exports, reliance on the United States for investment and trade, and a low rate of growth. The sugar sector was subject to American quotas and to world prices, it was seasonal and so dragged trade and transport with it, and Cuban capital went into real estate and financial investments in the United States rather than into industry at home. A hundred and sixty-eight years separate the two records and the type is the weak one: the monoculture is what the revolution happened inside, not what made it.",
+  "dispute": null
+}

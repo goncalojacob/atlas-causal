@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "the-cuban-sugar-boom--platt-amendment-1901--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Platt Amendment\", revision 1361644701"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    }
+  ],
+  "from": "the-cuban-sugar-boom",
+  "to": "platt-amendment-1901",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "What the settlement of 1901 was written around is named in the sources on both sides of it. Theodore Roosevelt, arguing for the war: \"Our own direct interests were great, because of the Cuban tobacco and sugar, and especially because of Cuba’s relation to the projected Isthmian Canal.\" Some historians read even the Teller Amendment’s ban on annexation as protection for American sugar-beet growers rather than for Cuban independence. And after Cuba accepted the Amendment the United States ratified a tariff giving Cuban sugar preference in the American market and protecting selected American goods in the Cuban one. The type is the weak one because the Amendment’s seven conditions are about troops, treaties and naval stations rather than about cane; the boom is the thing that made Cuba worth writing them about.",
+  "dispute": null
+}

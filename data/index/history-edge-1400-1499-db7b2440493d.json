@@ -1,8 +1,8 @@
 {
-  "from": 1600,
-  "kind": "event",
+  "from": 1400,
+  "kind": "edge",
   "records": {
-    "dutch-brazil-1630-1654": {
+    "indigenous-depopulation-of-the-greater-antilles--the-atlantic-slave-trade-to-the-caribbean--caused": {
       "from": "git",
       "versions": [
         {
@@ -11,7 +11,7 @@
         }
       ]
     },
-    "english-settlement-of-barbados-1627": {
+    "indigenous-depopulation-of-the-greater-antilles--the-caribbean-sugar-revolution--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -20,7 +20,7 @@
         }
       ]
     },
-    "royal-african-company": {
+    "the-first-columbian-voyage-1492--indigenous-depopulation-of-the-greater-antilles--caused": {
       "from": "git",
       "versions": [
         {
@@ -29,7 +29,16 @@
         }
       ]
     },
-    "saint-domingue-and-the-french-sugar-colony": {
+    "the-first-columbian-voyage-1492--the-atlantic-slave-trade-to-the-caribbean--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-first-columbian-voyage-1492--treaty-of-tordesillas-1494--caused": {
       "from": "git",
       "versions": [
         {
@@ -38,7 +47,7 @@
         }
       ]
     },
-    "the-atlantic-slave-trade-to-the-caribbean": {
+    "treaty-of-tordesillas-1494--portuguese-landfall-in-brazil-1500--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -47,16 +56,7 @@
         }
       ]
     },
-    "the-brazilian-gold-cycle": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        }
-      ]
-    },
-    "the-caribbean-sugar-revolution": {
+    "treaty-of-tordesillas-1494--the-atlantic-slave-trade-to-brazil--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -67,5 +67,5 @@
     }
   },
   "schema": 1,
-  "to": 1699
+  "to": 1499
 }

@@ -5386,6 +5386,13 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -7917,7 +7924,7 @@
       ]
     },
     "platt-amendment-1901": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
