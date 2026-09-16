@@ -139,3 +139,21 @@ of false green. It must not cost a third.
 
 A run that writes no record is unchanged: the bare validator is what it needs,
 and `--index` is byte-identical for it.
+
+## Amendment, 16 September 2026 — the branch `m49`
+
+**M49 works on a branch `m49`, cut from `m0`, exactly as `m44` did**, and for
+the same reason: M48 and M49 were written the same afternoon and the owner
+asked for both as quickly as possible, so they run at once. M48 owns `m0` —
+it changes `src/lens.js`, `tools/build-index.mjs` and what the reader sees.
+M49 changes records: `data/actors/`, `data/relations/`, `data/presences/`
+and the `actors` entries of events. Both regenerate `data/index/`, which is
+why they cannot share a branch.
+
+As with `m44`: **the `M49 started` claim line and the `M49 done` line go on
+`m0`**, each a single-file commit touching nothing else, because section 1's
+gate reads `origin/m0:STATUS.md` with `grep -qxF`. Everything else M49 writes
+stays on `m49` until a separate merge run lands it, carrying that branch's
+own `STATUS.md` paragraphs, counts and deviations across with deviation 461's
+renumbering. A run on `m0` must not wait for `m49`, and M49 must not push to
+`m0` anything but those two lines.

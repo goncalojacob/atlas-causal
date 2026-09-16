@@ -119,3 +119,25 @@ successions; every date is cited to Wikidata or the pair is listed as a
 person's decision; `validate --index` clean; tests green; `M49 done`.
 
 ## Deviations this brief takes, numbered on from the last in `STATUS.md`
+
+## Amendments after review
+
+**A1 — M49 runs on the branch `m49`, at the same time as M48, not after it.**
+The owner asked on 16 September for both as fast as possible. M48 owns `m0`;
+this milestone owns `m49`, cut from `m0`, under the protocol's amendment of
+16 September. The `M49 started` claim and the `M49 done` line are single-file
+commits to `m0`; every record, document and count stays on `m49` for the merge
+run. **Do not rebase `m49` onto `m0` while M48 is working, and do not merge
+`m0` into it** — the merge run does that once, deliberately.
+
+**A2 — the survey is the milestone's real product.** If a rate limit ends this
+run with only `docs/m49-actors.md` written, the run succeeded: the next fire
+inherits 251 answered questions instead of asking them again. Write each
+verdict into the file *as you reach it*, commit in batches, push. Never hold
+findings in the session.
+
+**A3 — Wikidata is reachable from the cloud sandbox** through the same path
+`tools/import/` already uses; `tools/import/identity.mjs` shows the request
+shape. Every date written in this milestone carries the QID and the property
+(P571 inception, P576 dissolved) it came from, in `docs/m49-actors.md` and in
+the record's `sources`. A pair Wikidata will not answer is listed, not guessed.
