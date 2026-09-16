@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-atlantic-slave-trade-to-the-caribbean--haitian-revolution-1791-1804--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Atlantic slave trade\", revision 1375257090"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Haitian Revolution\", revision 1375172946"
+    }
+  ],
+  "from": "the-atlantic-slave-trade-to-the-caribbean",
+  "to": "haitian-revolution-1791-1804",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "A hundred and fifty years, and the weakest type. The traffic did not organise the rising and nothing about it made a successful revolution likely — the cited account calls it the only slave rebellion known to have founded a state free of slavery and ruled by former captives, which is a statement about how rarely this happened. What the traffic supplied was the demographic fact the revolution was made out of: an enslaved majority, overwhelmingly African-born, in a colony held by a small white population.",
+  "dispute": null
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "dutch-brazil-1630-1654--the-caribbean-sugar-revolution--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"History of Barbados\", revision 1368569649"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch Brazil\", revision 1371124077"
+    }
+  ],
+  "from": "dutch-brazil-1630-1654",
+  "to": "the-caribbean-sugar-revolution",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "This is the edge that makes the two chains one picture, and it is a transfer of a technique, a people and a supply chain rather than a resemblance. The cane that transformed Barbados came from Dutch Brazil in 1640; Colonel James Drax went to Pernambuco that year and bought a triple-roller mill and a set of copper cauldrons; the Sephardic families who had left Iberia for Dutch Brazil were, in the cited account, instrumental in the early success of the Barbadian industry; and Dutch traders supplied the equipment, the financing, the enslaved Africans and the shipping to Europe. What the West India Company had built at Recife it lost by 1654, and it had already been carried north.",
+  "dispute": null
+}

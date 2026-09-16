@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "slave-trade-act-1807",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slave Trade Act 1807\", revision 1373209565"
+    }
+  ],
+  "title": "The Slave Trade Act 1807",
+  "summary": "An act of the United Kingdom Parliament prohibiting the Atlantic slave trade throughout the British Empire, in force from 1 May 1807 after eighteen years of failed bills. It freed nobody: slavery remained legal in most of the empire until the Slavery Abolition Act of 1833. What it did beyond British ships was to turn abolition into British foreign policy — the cited article says it encouraged British action to press other states to abolish their own trades — and that pressure is what the Brazilian half of this milestone spends the next forty years under.",
+  "when": {
+    "start": 1807,
+    "end": 1807,
+    "date": "1807-05-01"
+  },
+  "place": "london",
+  "actors": [],
+  "names": [
+    "Abolition of the Slave Trade Act 1807"
+  ]
+}

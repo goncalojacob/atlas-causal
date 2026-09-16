@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-first-columbian-voyage-1492--indigenous-depopulation-of-the-greater-antilles--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Voyages of Christopher Columbus\", revision 1371524728"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Taíno\", revision 1370165371"
+    }
+  ],
+  "from": "the-first-columbian-voyage-1492",
+  "to": "indigenous-depopulation-of-the-greater-antilles",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The demand for tribute in gold from every Taíno adult on Hispaniola began on the second voyage, in 1493, with hands cut off where it was not paid; the encomienda followed; the famine of 1495 and 1496 killed some fifty thousand; the population of the island was sixty thousand by 1507. Eighty to ninety per cent of the Taíno were dead within thirty years of the landfall. What is in dispute is which of the causes weighed most, and that is carried by its own edge; that the sequence begins with 12 October 1492 is not in dispute anywhere.",
+  "dispute": null
+}

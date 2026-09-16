@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "the-british-industrial-revolution--slave-trade-act-1807--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capitalism and Slavery\", revision 1341902916"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slave Trade Act 1807\", revision 1373209565"
+    }
+  ],
+  "from": "the-british-industrial-revolution",
+  "to": "slave-trade-act-1807",
+  "type": "enabled",
+  "confidence": "disputed",
+  "explanation": "The other half of the Williams argument, and the one his critics attacked hardest: that it was the rise of industrial capitalism in Britain that destroyed the slave trade, the West Indian interest having become an obstacle to a manufacturing economy rather than its engine. The Act of 1807 is where that claim is tested, and the cited account of Capitalism and Slavery says Williams wrote it against a historiography that used the abolition acts as a moral pivot. The atlas records the claim as disputed because the dissent is at least as well argued as the thesis.",
+  "dispute": {
+    "text": "Seymour Drescher’s Econocide (1977) is the major attack: he argued that British abolition in 1807 did not follow from any diminishing value of slavery to the nation but from the moral outrage of a British public that could vote — that the trade was killed at its economic peak, not in its decline. Geggus in 1981 questioned Drescher’s method of valuing capital, and Carrington replied in 1984 that Drescher had misplaced the peak rather than refuted Ragatz and Williams. Nothing in the cited account suggests a settlement.",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Capitalism and Slavery\", the criticism of the Williams theses, revision 1341902916"
+      }
+    ]
+  }
+}

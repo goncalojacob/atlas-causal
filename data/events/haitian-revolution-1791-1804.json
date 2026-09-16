@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "haitian-revolution-1791-1804",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Haitian Revolution\", revision 1375172946"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Saint-Domingue\", revision 1375182685"
+    }
+  ],
+  "title": "The Haitian Revolution",
+  "summary": "Vincent Ogé’s revolt of free men of colour in 1790 pressed the French revolutionary government into granting them citizenship in May 1791, and the clashes with the slave owners that followed destabilised the colony; the slave revolt began on 21 August 1791 and ended with independence on 1 January 1804, Toussaint Louverture emerging as its most prominent general. It is the only slave rebellion known to have founded a state both free of slavery and ruled by former captives, the largest uprising of its kind since Spartacus, and it broke the European belief that the enslaved could not take and keep their own freedom. Slave owners across the hemisphere were frightened by it, which is itself a historical force and appears in this chain as one.",
+  "when": {
+    "start": 1791,
+    "end": 1804,
+    "date": "1791-08-21",
+    "endDate": "1804-01-01"
+  },
+  "place": "cap-haitien",
+  "actors": [],
+  "names": [
+    "Révolution haïtienne",
+    "Haitian War of Independence"
+  ]
+}

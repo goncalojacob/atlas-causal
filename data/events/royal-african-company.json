@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "royal-african-company",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Royal African Company\", revision 1375037445"
+    }
+  ],
+  "title": "The Royal African Company",
+  "summary": "Established in 1660 by the restored House of Stuart and City of London merchants, overseen by the Duke of York and granted a monopoly on all English trade with Africa by Charles II. It was set up to trade for gold on the Gambia River and turned to trading people; historians estimate it shipped more enslaved Africans to the Americas than any other company. William III rescinded the monopoly in 1697 under parliamentary pressure, the company was insolvent by 1708, and it survived in a reduced state until 1752, when its assets passed to the African Company of Merchants.",
+  "when": {
+    "start": 1660,
+    "end": 1752
+  },
+  "place": "london",
+  "actors": [],
+  "names": [
+    "RAC"
+  ]
+}

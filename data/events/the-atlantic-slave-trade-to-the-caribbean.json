@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "the-atlantic-slave-trade-to-the-caribbean",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Atlantic slave trade\", revision 1375257090"
+    }
+  ],
+  "title": "The Atlantic slave trade to the Caribbean",
+  "summary": "Sugar was a crop with economies of scale and the labour that worked it was bought. Before 1650 more than three quarters of the islands’ population was of European descent; by 1680 the median Barbadian plantation held about sixty enslaved people, and on the sugar islands there came to be three enslaved Africans for every planter. The traffic to the Caribbean is the centre of this chain for the same reason its Brazilian counterpart is the centre of the other: it is the thing the economy was built around, and every later event here is either its consequence or an attempt to end it. The end bound is uncertain on purpose — the British trade closed in 1807 and the Spanish and French traffic to the islands ran on for decades after.",
+  "when": {
+    "start": 1640,
+    "end": {
+      "min": 1807,
+      "max": 1867
+    }
+  },
+  "place": "bridgetown",
+  "actors": [],
+  "names": [
+    "Tráfico atlântico de escravizados para as Caraíbas"
+  ]
+}

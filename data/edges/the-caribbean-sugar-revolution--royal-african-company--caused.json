@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-caribbean-sugar-revolution--royal-african-company--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Royal African Company\", revision 1375037445"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    }
+  ],
+  "from": "the-caribbean-sugar-revolution",
+  "to": "royal-african-company",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Twenty years after Drax brought the mill home, the restored Stuart crown chartered a company with a monopoly on all English trade with Africa, overseen by the king’s brother. It was chartered to look for gold on the Gambia and it went into people instead, and historians estimate it shipped more enslaved Africans to the Americas than any other company. The demand it turned to was the sugar islands’, and the turn is what the edge claims.",
+  "dispute": null
+}

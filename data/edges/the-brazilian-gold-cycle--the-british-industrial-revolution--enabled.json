@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "the-brazilian-gold-cycle--the-british-industrial-revolution--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Methuen Treaty\", revision 1337784669"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Industrial Revolution\", revision 1375160528"
+    }
+  ],
+  "from": "the-brazilian-gold-cycle",
+  "to": "the-british-industrial-revolution",
+  "type": "enabled",
+  "confidence": "disputed",
+  "explanation": "The flow is not in doubt and the mechanism is on the record. Eight hundred tonnes of gold were shipped officially from Minas to Portugal over the eighteenth century, and the cited account says what Lisbon did with it: paid for industrialised goods, textiles and weapons, from countries that had the industry Portugal lacked. The Methuen terms of 1703 had already guaranteed English textiles admission to Portugal at all times, whatever the political weather. What is disputed is the same thing that is disputed about Caribbean sugar — whether colonial windfalls of this kind financed British industrialisation or merely accompanied it — and the atlas will not settle from one side of it.",
+  "dispute": {
+    "text": "The dissent cited here is the dissent from the Williams thesis, because it is the same question asked of a different colonial flow: Stanley Engerman puts the whole profit of the slave trade and the West Indian plantations at under five per cent of the British economy in any year of the Industrial Revolution, and David Richardson puts slave-trade profits at under one per cent of British domestic investment. An argument that colonial profits on that scale did not decide British industrialisation applies to Brazilian gold arriving by way of Lisbon as much as to Jamaican sugar. The Methuen Treaty carries a dispute of its own in the same sources, over whether its terms enriched Portugal or turned it away from industry.",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Capitalism and Slavery\", the criticism of the Williams theses, revision 1341902916"
+      },
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Methuen Treaty\", revision 1337784669"
+      }
+    ]
+  }
+}

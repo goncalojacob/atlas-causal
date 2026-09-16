@@ -93,7 +93,7 @@ Centre: `the-atlantic-slave-trade-to-the-caribbean`.
 | `dutch-brazil-1630-1654` | shared |
 | `the-caribbean-sugar-revolution` | |
 | `the-atlantic-slave-trade-to-the-caribbean` | centre |
-| `royal-african-company-1672` | |
+| `royal-african-company` | |
 | `the-british-industrial-revolution` | shared |
 | `saint-domingue-and-the-french-sugar-colony` | |
 | `haitian-revolution-1791-1804` | |

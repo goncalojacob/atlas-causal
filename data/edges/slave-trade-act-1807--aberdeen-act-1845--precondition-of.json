@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "slave-trade-act-1807--aberdeen-act-1845--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slave Trade Act 1807\", revision 1373209565"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Aberdeen Act\", revision 1371318387"
+    }
+  ],
+  "from": "slave-trade-act-1807",
+  "to": "aberdeen-act-1845",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Having closed its own trade, Britain set about closing everyone else’s: the cited account of the Act says it encouraged British action to press other states to abolish their own. The Aberdeen Act is thirty-eight years of that policy arriving at the largest remaining market, with the Royal Navy authorised to take Brazilian ships as pirates. `precondition-of` rather than `caused`: 1807 did not require 1845, and what made 1845 happen was a lapsed convention and a tariff quarrel. But a power that still ran its own slave trade could not have legislated for anybody else’s.",
+  "dispute": null
+}

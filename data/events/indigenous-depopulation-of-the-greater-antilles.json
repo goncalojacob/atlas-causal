@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "indigenous-depopulation-of-the-greater-antilles",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Taíno\", revision 1370165371"
+    }
+  ],
+  "title": "The destruction of the Taíno",
+  "summary": "The Taíno held the Lucayan islands and the Greater Antilles — Cuba, Jamaica, Hispaniola, Puerto Rico — in agricultural societies under caciques when Columbus arrived. Within thirty years, by the cited account, between eighty and ninety per cent of them were dead. Tribute in gold was demanded from every adult on Hispaniola from the second voyage of 1493, with hands cut off where it was not paid; the encomienda put the survivors into the fields and the mines; famine killed some fifty thousand in 1495 and 1496; by 1507 the population of Hispaniola had fallen to sixty thousand. What the sources do not agree on is the weight of disease against the weight of forced labour, and that disagreement is carried by an edge rather than settled here.",
+  "when": {
+    "start": 1492,
+    "end": 1550
+  },
+  "place": "santo-domingo",
+  "actors": [],
+  "names": [
+    "Genocide and depopulation of the Taíno"
+  ]
+}
