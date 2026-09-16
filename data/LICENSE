@@ -14,16 +14,27 @@ Per directory, with the attribution each one asks for
 
   data/actors/  data/relations/
     CC BY-SA 4.0, except what an import derived from a dataset this project
-    does not own, which is CC BY-NC-SA 4.0 and carries that in `license`:
-    the actors created for territory (data/actors/) and the successions the
-    CShapes split table states (data/relations/). Rule 12 is what keeps the
-    two apart, and it keys on `origin.tool`, not on the directory and not on
-    a name in `authors` — a record an import wrote carries its source's
-    licence wherever it lives. Attribution for the NC ones: CShapes 2.0 —
-    Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch.
+    does not own, which carries its source's licence in `license`: the actors
+    created for territory (data/actors/) and the successions the CShapes split
+    table states (data/relations/). Rule 12 is what keeps the two apart, and
+    it keys on `origin.tool`, not on the directory and not on a name in
+    `authors` — a record an import wrote carries its source's licence wherever
+    it lives.
+    Two such licences since M43a, and which one an actor carries is which
+    import created it:
+      CC BY-NC-SA 4.0 — CShapes 2.0, the territories from 1886 on.
+        Attribution: Schvitz, Girardin, Rüegger, Weidmann, Cederman and
+        Gleditsch.
+      GPL-3.0-only — Historical Basemaps, the territories from 1400 to 1885.
+        Attribution: André Ourednik and contributors.
+        https://github.com/aourednik/historical-basemaps
+    data/relations/ has only the first of the two: the Historical Basemaps
+    import writes no relation, because its source states no succession.
 
   data/presences/
-    CC BY-NC-SA 4.0, all of it. Attribution as above.
+    CC BY-NC-SA 4.0 or GPL-3.0-only, all of it, and never CC BY-SA: which of
+    the two is which import wrote the record, exactly as above. Attribution
+    as above.
 
   data/geo/land-present.json, data/geo/regions.json, data/geo/base/
     Public domain. Attribution: Natural Earth. The base map under
@@ -31,13 +42,22 @@ Per directory, with the attribution each one asks for
     M36a; regions.json is still 110 m. See data/geo/LICENSE for the files,
     their sha256 and what each import changed.
 
-  data/geo/presences/, data/geo/palette.json
+  data/geo/presences/
+    Two sources and the file name says which: 1400-1491.json through
+    1880-1885.json are Historical Basemaps under GPL-3.0-only, and
+    1886-1913.json through 1975-2019.json are CShapes 2.0 under
     CC BY-NC-SA 4.0. Attribution as above. See data/geo/LICENSE.
 
+  data/geo/palette.json
+    Both at once, CC BY-NC-SA 4.0 and GPL-3.0-only: it is the graph colouring
+    of who borders whom over every shard, so it is derived from the two
+    together and cannot be split the way the shards can.
+
   data/index/
-    Generated, and both at once: it projects NC actors and presences into the
-    same files as CC BY-SA records, so a reuser of the index is bound by both
-    licences. It is rebuilt from the records and holds no prose.
+    Generated, and all three at once: it projects the imports' actors and
+    presences into the same files as CC BY-SA records, so a reuser of the
+    index is bound by CC BY-SA 4.0, CC BY-NC-SA 4.0 and GPL-3.0-only
+    together. It is rebuilt from the records and holds no prose.
 
   data/regions.json, data/imports/
     CC BY-SA 4.0, like the records: they are this project's own editorial

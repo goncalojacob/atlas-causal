@@ -12,7 +12,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
-import { LICENSES, NON_COMMERCIAL, licensingTable, attributionOf, attributionHtml, attributionSource } from '../src/licensing.js';
+import { LICENSES, IMPORTED_LICENSES, NC_LICENSES, licensingTable, attributionOf, attributionHtml, attributionSource } from '../src/licensing.js';
 import { licensesOf } from '../src/kinds.js';
 import { ALLOWED_LICENSES } from '../src/validate/rules.js';
 import { ROOT, SCHEMA_DIR, fixtures } from './helpers.mjs';
@@ -36,7 +36,7 @@ test('the table says of each record directory what rule 12 enforces', () => {
   }
   // The generated trees have no `license` field of their own, so the table is
   // the only place their licence is written down at all.
-  assert.deepEqual(rows['data/geo/presences/'].licenses, ['CC-BY-NC-SA-4.0']);
+  assert.deepEqual(rows['data/geo/presences/'].licenses, ['CC-BY-NC-SA-4.0', 'GPL-3.0-only']);
   assert.deepEqual(rows['data/geo/land-present.json'].licenses, ['PD']);
   // The base map of M36 is Natural Earth, public domain, and **not** an NC
   // directory: nothing from CShapes is in it and nothing in it goes into a
@@ -45,10 +45,16 @@ test('the table says of each record directory what rule 12 enforces', () => {
   assert.deepEqual(rows['data/geo/base/'].attribution, [
     { license: 'PD', name: 'Natural Earth', source: 'https://www.naturalearthdata.com/about/terms-of-use/' },
   ]);
-  assert.equal(NON_COMMERCIAL.includes('PD'), false);
+  // Natural Earth asks to be named and binds nobody, so PD is attributed and
+  // is not one of the licences only an import may write (M43a).
+  assert.equal(IMPORTED_LICENSES.includes('PD'), false);
   // The index is honestly two answers: it projects NC actors and presences
   // into the same files as CC BY-SA records.
-  assert.deepEqual(rows['data/index/'].licenses, ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0']);
+  assert.deepEqual(rows['data/index/'].licenses, ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0', 'GPL-3.0-only']);
+  // M43a: the presence shards are two sources and the file name is which. The
+  // directory row says both because a reuser of all of it is bound by both.
+  assert.deepEqual(rows['data/geo/presences/'].licenses, ['CC-BY-NC-SA-4.0', 'GPL-3.0-only']);
+  assert.deepEqual(rows['data/geo/palette.json'].licenses, ['CC-BY-NC-SA-4.0', 'GPL-3.0-only']);
 });
 
 // The three statements of one fact: src/licensing.js, the manifest's
@@ -113,10 +119,19 @@ test('a card says whose material it is, and only where that is not this atlas', 
 test('the NC exception follows the origin and not the directory', async () => {
   // Both directories that may hold such a record say so, and no other does.
   const nc = Object.entries(licensesOf())
-    .filter(([, licences]) => licences.some((id) => NON_COMMERCIAL.includes(id)))
+    .filter(([, licences]) => licences.some((id) => IMPORTED_LICENSES.includes(id)))
     .map(([kind]) => kind);
   assert.deepEqual(nc.sort(), ['actor', 'presence', 'relation']);
-  assert.deepEqual([...NON_COMMERCIAL], ['CC-BY-NC-SA-4.0']);
+  // M43a widened the test from "forbids commercial use" to "this project does
+  // not own it", which is what rule 12 was always asking. The NC subset is
+  // still named on its own, because data/LICENSE and about.html say something
+  // about that clause in particular that is not true of GPL.
+  assert.deepEqual([...IMPORTED_LICENSES], ['CC-BY-NC-SA-4.0', 'GPL-3.0-only']);
+  assert.deepEqual([...NC_LICENSES], ['CC-BY-NC-SA-4.0']);
+  // The Historical Basemaps import writes no relation, so `data/relations/`
+  // stays a CC BY-SA directory with exactly one hole in it.
+  assert.deepEqual(licensesOf().relation, ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0']);
+  assert.match(attributionHtml({ kind: 'presence', license: 'GPL-3.0-only', origin: { tool: 'basemaps' } }), /Historical Basemaps/);
 
   // Whichever of them it is in, it is the same record and the same line: the
   // module reads `license`, which rule 12 has already tied to `origin.tool`.

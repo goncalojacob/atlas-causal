@@ -52,9 +52,9 @@
       }
     },
     "license": {
-      "description": "Validated per directory (rule 12). CC-BY-NC-SA-4.0 exists for imported geometry, which data/LICENSE does not cover; it is allowed under data/presences/ and, for the actors an import creates, under data/actors/.",
+      "description": "Validated per directory (rule 12). CC-BY-NC-SA-4.0 and GPL-3.0-only exist for imported geometry, which data/LICENSE does not cover: the first is CShapes 2.0 (1886-2019), the second is Historical Basemaps (1400-1885). Both are allowed under data/presences/ and, for the actors an import creates, under data/actors/.",
       "type": "string",
-      "enum": ["CC-BY-SA-4.0", "CC-BY-NC-SA-4.0", "PD", "CC0-1.0", "ODbL-1.0"]
+      "enum": ["CC-BY-SA-4.0", "CC-BY-NC-SA-4.0", "GPL-3.0-only", "PD", "CC0-1.0", "ODbL-1.0"]
     },
     "created": {
       "type": "string",
@@ -73,9 +73,9 @@
       "additionalProperties": false,
       "properties": {
         "tool": {
-          "description": "The writer. `cshapes` and `wikidata` are the two imports, `assistant` is the drafting exception in CLAUDE.md, `form` is the contribution pipeline. Closed, for the reason the edge types are: a writer nobody has decided about is a line added here.",
+          "description": "The writer. `cshapes` and `basemaps` are the two territory imports and `wikidata` the third, `assistant` is the drafting exception in CLAUDE.md, `form` is the contribution pipeline. Closed, for the reason the edge types are: a writer nobody has decided about is a line added here.",
           "type": "string",
-          "enum": ["cshapes", "wikidata", "assistant", "form"]
+          "enum": ["cshapes", "basemaps", "wikidata", "assistant", "form"]
         },
         "run": {
           "description": "Which run of that tool, where the tool has a name for one: a branch, a date, an input digest. Optional, and never load-bearing.",

@@ -21,35 +21,67 @@ import { esc, safeUrl } from './util/esc.js';
 // records are under and `about.html` says so once for the whole site. It is a
 // name where the material is somebody else's, and then a card carrying that
 // material has to say so beside it.
+// `imported` is the load-bearing flag and not a synonym for "has an
+// attribution": it says this licence binds a reuser with terms the atlas's own
+// licence does not have, and so may stand on a record **only** where an import
+// put it there (rule 12). Natural Earth asks to be named and binds nobody, so
+// PD is attributed and not imported; CC BY-NC-SA forbids commercial use and
+// GPL-3.0 demands the same licence downstream, so both are.
 export const LICENSES = Object.freeze({
   'CC-BY-SA-4.0': Object.freeze({
     name: 'CC BY-SA 4.0',
     url: 'https://creativecommons.org/licenses/by-sa/4.0/',
     attribution: null,
     source: null,
+    imported: false,
   }),
   'CC-BY-NC-SA-4.0': Object.freeze({
     name: 'CC BY-NC-SA 4.0',
     url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
     attribution: 'CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch',
     source: 'https://doi.org/10.1177/00220027211013563',
+    imported: true,
+  }),
+  // M43a. The territories before 1886 come from a repository whose single
+  // LICENSE is the stock GPLv3, covering its GeoJSON with everything else.
+  // GPL-3.0 permits commercial use where CC BY-NC-SA forbids it, which is why
+  // it was taken at all; it demands the same licence of anything derived from
+  // it, which is why it is `imported` like the other.
+  'GPL-3.0-only': Object.freeze({
+    name: 'GPL-3.0',
+    url: 'https://www.gnu.org/licenses/gpl-3.0.html',
+    attribution: 'Historical Basemaps — André Ourednik and contributors',
+    source: 'https://github.com/aourednik/historical-basemaps',
+    imported: true,
   }),
   PD: Object.freeze({
     name: 'Public domain',
     url: null,
     attribution: 'Natural Earth',
     source: 'https://www.naturalearthdata.com/about/terms-of-use/',
+    imported: false,
   }),
 });
 
-// The licences whose material is somebody else's and not commercially
-// reusable. Rule 12 lets one of these stand on a record only where an import
-// created it (`origin.tool` in NC_ORIGINS), whatever directory the record
-// lives in: the exception follows the origin, not the directory (I8, owner
-// question 4). Derived from the table above rather than listed twice, so a
-// licence added there is covered here by having an attribution at all — which
-// is what "somebody else's material" means in this file.
-export const NON_COMMERCIAL = Object.freeze(
+// The licences whose material is somebody else's and whose terms data/LICENSE
+// cannot absorb. Rule 12 lets one of these stand on a record only where an
+// import created it (`origin.tool` in IMPORT_LICENCE_ORIGINS), whatever
+// directory the record lives in: the exception follows the origin, not the
+// directory (I8, owner question 4). Derived from the table above rather than
+// listed twice.
+//
+// It was `NON_COMMERCIAL` until M43a. The NC clause was never what rule 12
+// tested for — it tested for "a licence this project does not own" — and the
+// name stopped being true the moment a GPL source arrived. `NC_LICENSES` below
+// is still here because data/LICENSE's prose and about.html say something
+// about the NC clause in particular that is not true of GPL.
+export const IMPORTED_LICENSES = Object.freeze(
+  Object.keys(LICENSES).filter((id) => LICENSES[id].imported),
+);
+
+// The subset that forbids commercial use, which is a different sentence and
+// is said in a different place.
+export const NC_LICENSES = Object.freeze(
   Object.keys(LICENSES).filter((id) => id.includes('-NC-')),
 );
 
@@ -66,9 +98,15 @@ const GEOMETRY = Object.freeze({
   // it goes into a CShapes file; Natural Earth asks to be named nowhere, so
   // the card and entry-page attribution line is unchanged by its arrival.
   'data/geo/base/': ['PD'],
-  'data/geo/presences/': ['CC-BY-NC-SA-4.0'],
-  'data/geo/palette.json': ['CC-BY-NC-SA-4.0'],
-  'data/index/': ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0'],
+  // Two imports share this directory since M43a and the shards do not mix:
+  // 1400-1885 is Historical Basemaps under GPL-3.0, 1886-2019 is CShapes
+  // under CC BY-NC-SA, and which is which is the file name. The row is both
+  // because the directory is both, and a reuser of all of it is bound by both.
+  'data/geo/presences/': ['CC-BY-NC-SA-4.0', 'GPL-3.0-only'],
+  // The palette is a graph colouring over every border at once, so it is
+  // derived from both and cannot be split the way the shards can.
+  'data/geo/palette.json': ['CC-BY-NC-SA-4.0', 'GPL-3.0-only'],
+  'data/index/': ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0', 'GPL-3.0-only'],
 });
 
 // Directory → the licences its files may carry, and for each the attribution

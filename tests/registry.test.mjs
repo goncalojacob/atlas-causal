@@ -32,7 +32,7 @@ import { KIND_DIRS as READ_KIND_DIRS } from '../tools/lib/read.mjs';
 import { SCHEMA_FILES, TOOL_SIDE } from '../src/validate/schemas.js';
 import { CARDS, OPENINGS } from '../src/state.js';
 import {
-  ORIGIN_TOOLS, IMPORT_TOOLS, NC_ORIGINS, REVIEW_STATUS,
+  ORIGIN_TOOLS, IMPORT_TOOLS, IMPORT_LICENCE_ORIGINS, REVIEW_STATUS,
 } from '../src/origin.js';
 import { ENRICHABLE, CREATOR_ONLY, NAMES_FLAG, mergeNames } from '../tools/import/identity.mjs';
 import {
@@ -247,10 +247,13 @@ test('the writers and the review statuses are the ones the schema names', async 
   assert.deepEqual([...ORIGIN_TOOLS], provenance.properties.origin.properties.tool.enum);
   assert.deepEqual(Object.values(REVIEW_STATUS), provenance.properties.review.properties.status.enum);
   // The two narrower lists are subsets of the vocabulary, not a second one:
-  // an import that is not a writer, or an NC origin that is not an import,
-  // would be a licence hole nobody had opened on purpose.
+  // an import that is not a writer, or a relicensing origin that is not an
+  // import, would be a licence hole nobody had opened on purpose.
   for (const tool of IMPORT_TOOLS) assert.ok(ORIGIN_TOOLS.includes(tool), tool);
-  for (const tool of NC_ORIGINS) assert.ok(IMPORT_TOOLS.includes(tool), tool);
+  for (const tool of IMPORT_LICENCE_ORIGINS) assert.ok(IMPORT_TOOLS.includes(tool), tool);
+  // M43a: the two territory imports may relicense, the Wikidata one may not —
+  // its material is CC0 and data/LICENSE absorbs it.
+  assert.deepEqual([...IMPORT_LICENCE_ORIGINS], ['cshapes', 'basemaps']);
 });
 
 test('an enrichment pass can never be told to write what a creator writes', () => {

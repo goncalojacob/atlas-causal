@@ -122,9 +122,10 @@ const KIND_ENTRIES = {
     schema: 'v1/actor.json',
     label: 'Actor',
     hint: 'A person, polity, institution or people. Actors are reached through their events, never listed on their own.',
-    // An actor may be NC-SA only when an import created it: see NC_ORIGINS in
-    // src/origin.js.
-    licenses: ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0'],
+    // An actor may carry an import's licence only when an import created it:
+    // see IMPORT_LICENCE_ORIGINS in src/origin.js. Two of them now — CShapes'
+    // territories are CC BY-NC-SA and Historical Basemaps' are GPL-3.0.
+    licenses: ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0', 'GPL-3.0-only'],
     identity: true,
     body: true,
     entryPage: true,
@@ -146,9 +147,10 @@ const KIND_ENTRIES = {
     label: null,
     hint: null,
     // A presence is written from imported geometry more often than not, and
-    // that geometry's licence is not data/LICENSE's. A hand-made presence is
-    // CC BY-SA like every other record.
-    licenses: ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0'],
+    // that geometry's licence is not data/LICENSE's — CC BY-NC-SA from CShapes
+    // before M43a, GPL-3.0 from Historical Basemaps since. A hand-made presence
+    // is CC BY-SA like every other record.
+    licenses: ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0', 'GPL-3.0-only'],
     identity: false,
     body: false,
     entryPage: false,
@@ -195,8 +197,10 @@ const KIND_ENTRIES = {
     // successions the CShapes split table states, which the import derives
     // from a dataset this project does not own (I8, owner question 4). The
     // hole is the same one `data/actors/` has and it is opened by the same
-    // thing: rule 12 lets an NC licence stand only where `origin.tool` is an
-    // NC import, so the exception follows the origin and not the directory.
+    // thing: rule 12 lets an import's licence stand only where `origin.tool` is
+    // an import, so the exception follows the origin and not the directory.
+    // GPL-3.0 is absent here on purpose: the Historical Basemaps import writes
+    // no relation, because its source states no succession to derive one from.
     licenses: ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0'],
     identity: false,
     body: false,

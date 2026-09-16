@@ -17,8 +17,8 @@ import {
   DEPRECATED_RELATION_TYPES, WRITABLE_RELATION_TYPE_IDS,
 } from '../vocab.js';
 import { kindsWhere, licensesOf } from '../kinds.js';
-import { NON_COMMERCIAL } from '../licensing.js';
-import { NC_ORIGINS, REVIEW_STATUS, mayBeNonCommercial, originTool } from '../origin.js';
+import { IMPORTED_LICENSES } from '../licensing.js';
+import { IMPORT_LICENCE_ORIGINS, REVIEW_STATUS, mayRelicense, originTool } from '../origin.js';
 
 // An interval as two astronomical bounds for overlap tests: an open end
 // (`end: null`, ongoing) reaches forward without limit.
@@ -66,7 +66,7 @@ export const WIKIPEDIA_LANG = /^[a-z]{2,3}(-[a-z0-9]{2,8})*$/;
 // consensus resting on these alone (rule 22): an encyclopedia reports what
 // the scholarship says, so an argument that cites nothing else has not shown
 // the scholarship. Adding an edition adds a line here, exactly as adding an
-// import adds one to NC_ORIGINS in src/origin.js; nothing else can quietly
+// import adds one to IMPORT_LICENCE_ORIGINS in src/origin.js; nothing else can quietly
 // become an authority.
 export const WIKIPEDIA_SOURCES = Object.freeze(['wikipedia-en', 'wikipedia-pt']);
 // The names the three automated writers signed with before `origin` existed.
@@ -939,9 +939,9 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     // throughout — `data/presences/`, which carries no other licence and
     // which the contribution form cannot write — the licence is the
     // directory's and there is no hole for an origin to open.
-    const mixed = allowed.some((id) => NON_COMMERCIAL.includes(id)) && allowed.some((id) => !NON_COMMERCIAL.includes(id));
-    if (mixed && NON_COMMERCIAL.includes(r.license) && !mayBeNonCommercial(r)) {
-      error(12, r, '/license', `a record may be ${r.license} only when an import wrote it: origin.tool must be ${NC_ORIGINS.join(' or ')}`);
+    const mixed = allowed.some((id) => IMPORTED_LICENSES.includes(id)) && allowed.some((id) => !IMPORTED_LICENSES.includes(id));
+    if (mixed && IMPORTED_LICENSES.includes(r.license) && !mayRelicense(r)) {
+      error(12, r, '/license', `a record may be ${r.license} only when an import wrote it: origin.tool must be ${IMPORT_LICENCE_ORIGINS.join(' or ')}`);
     }
     if (!Array.isArray(r.authors) || r.authors.length === 0) {
       error(12, r, '/authors', 'authors must name at least one contributor');

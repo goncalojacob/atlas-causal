@@ -195,9 +195,85 @@ CShapes 2.0 (presences/*.json)
   for it. Nothing else is altered; every date, status, owner and
   capital is the dataset's own.
 
+Historical Basemaps (presences/1400-1491.json .. presences/1880-1885.json)
+  Licence: GPL-3.0-only — https://www.gnu.org/licenses/gpl-3.0.html
+  NOT COVERED BY data/LICENSE, and not covered by the CShapes paragraph above
+  either: this is a second import under a second licence, and the two do not
+  mix. The records under data/presences/ that this import wrote, and the actor
+  records data/actors/ holds for its polities, carry
+  "license": "GPL-3.0-only" for the same reason: they are derived from this
+  dataset. Which import wrote a record is `origin.tool`, `basemaps` here and
+  `cshapes` above, and rule 12 is what holds the three licences apart.
+
+  Why a GPL source at all. The repository carries one LICENSE, the stock
+  GPLv3, and it covers the GeoJSON with everything else; there is no data
+  clause and no dual licence. It was taken because it is the only openly
+  licensed world-snapshot set this project could reach that covers 1415, and
+  because GPL-3.0 permits commercial use where the CC BY-NC-SA already in this
+  directory forbids it — so on the axis that binds a reuser it asks for less
+  than the licence beside it, not more. The candidates that were refused, and
+  what each one's LICENSE actually says, are in STATUS.md under `M43a`.
+
+  What GPL-3.0 means over a polygon is genuinely less settled than what
+  CC BY-NC-SA means: its operative words are "conveying", "covered work" and
+  "Corresponding Source", and they were written for programs. The reading
+  taken here is the conservative one — these shards and the records that name
+  them are a covered work, offered under GPL-3.0 — and the isolation exists so
+  that the answer to "which files is that" is a directory listing and a range
+  of years.
+
+  Attribution: André Ourednik and contributors.
+  Home: https://github.com/aourednik/historical-basemaps
+  The files imported are thirteen of the fifty-four world snapshots, the ones
+  from 1400 on, taken from the repository at commit da7a4b73:
+  https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/
+  The snapshots from 1900 on were not imported: CShapes covers 1886 onward and
+  wins wherever the two overlap, so the last one taken is 1880 and its
+  presences end in 1885. The copies in this repository are under
+  vendor/historical-basemaps/, gzipped, because a run has no network beyond
+  GitHub and an import that downloads is an import nobody can repeat. The
+  sha256 below is of each file **decompressed** — the file as it was
+  downloaded — which is what vendor/SHA256SUMS records and what --check
+  verifies.
+
+    world_1400.geojson  1,053,803 bytes
+      c6b0efcb42d9520a1a724f981373296e84ea2c0a0527de7a06f8f9e2465eb6ec
+    world_1492.geojson  3,468,360 bytes
+      b0e6b0f299fc7b191fd427547c83dec9808087d390304a37a32bc0357e97c1b8
+    world_1500.geojson  1,170,331 bytes
+      d01ffc9b80629787f13d2b1c2f881f005bc0164433548e30f5c058ddee0bfc7b
+    world_1530.geojson  1,401,257 bytes
+      984005809f085285a48318600e3a198274eb4679f5360ebfaead29da496e9f5b
+    world_1600.geojson  1,680,222 bytes
+      7285c07eeedfda9048de5354ea1744d327b07614085e9696c5802bb54c86849c
+    world_1650.geojson  1,650,748 bytes
+      e691a3b5bab4ca7a0629daffaf8cd31731ee76ad390b19dffc1c267b139de4e2
+    world_1700.geojson  1,625,990 bytes
+      eb73d6b00e98205fb2082de050c35e4d698224b17849628d82584610186b88a4
+    world_1715.geojson  1,695,707 bytes
+      fdf5097dd21c30c9d7bfb1d5c2c2a11a5a39c397e6910116d7173580619f5b5a
+    world_1783.geojson  1,668,045 bytes
+      7cfa92418a8628dffa41e386394b86fb6f93310e449d8261990f6903160c1060
+    world_1800.geojson  1,638,994 bytes
+      51fcb6b1f1c361956a3fc24a9c646844ff88754842aa113780428fb4abcd5f2c
+    world_1815.geojson  2,413,409 bytes
+      fb654f734583f550904cfa45f361e395c1a488c4960050da2632cb2ac7d1cd1e
+    world_1878.geojson  1,713,853 bytes
+      e792520cd24cfb77b117d41533a59b0a5b82fc53a291fff1549ddc73e7f9a8b2
+    world_1880.geojson  1,302,639 bytes
+      4751e30d881d60d31479f5d016ff4d9c1df47e9bb18efaa3a5086601f68f76dc
+
+  Regeneration is reproducible with
+    tools/import/basemaps.mjs --source vendor/historical-basemaps --check
+  which verifies every sha256 before it writes anything, and rewrites every
+  file it owns byte for byte on a second run.
+
 palette.json
-  Derived from the CShapes outlines above — it is the graph colouring of who
-  borders whom — and so it carries the CShapes licence and not data/LICENSE.
+  Derived from the outlines of both imports above — it is the graph colouring
+  of who borders whom, over every shard at once — and so it carries both their
+  licences, CC BY-NC-SA 4.0 and GPL-3.0-only together, and not data/LICENSE.
+  It cannot be split the way the shards can: one colouring answers the whole
+  span, and an actor's hue is chosen against neighbours from either source.
   It holds no geometry and no coordinate: one small integer per actor,
   saying which of the eight hues the map draws that actor's territory in.
   Regeneration is reproducible with tools/build-palette.mjs.

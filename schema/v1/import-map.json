@@ -18,8 +18,12 @@
       "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
       "maxLength": 120
     },
+    "keys": {
+      "description": "What the keys of `entries` are. \"code\" is a stable identifier of the source's own — CShapes' Gleditsch–Ward number — and is the default, because it was the only kind until M43a. \"name\" is for a source that has no such identifier: Historical Basemaps names a polity and numbers nothing, so the key is the source's own NAME string, verbatim and case-sensitive, and a rename upstream is a new key rather than the same entity moved. Which it is has to be declared rather than guessed, because \"1500\" is a plausible name and a plausible code.",
+      "enum": ["code", "name"]
+    },
     "entries": {
-      "description": "Keyed by the source's own entity code — for CShapes the Gleditsch–Ward code, so an entity renamed in the data still lands on the right record. A code absent from here gets the actor the import derives from the entity's name, and --report lists it.",
+      "description": "Keyed by the source's own entity code — for CShapes the Gleditsch–Ward code, so an entity renamed in the data still lands on the right record — or, where `keys` is \"name\", by the source's own name for the entity. A key absent from here gets the actor the import derives from the entity's name, and --report lists it.",
       "type": "object",
       "additionalProperties": {
         "type": "object",

@@ -1017,11 +1017,17 @@
           "license": "CC-BY-NC-SA-4.0",
           "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
           "source": "https://doi.org/10.1177/00220027211013563"
+        },
+        {
+          "license": "GPL-3.0-only",
+          "name": "Historical Basemaps — André Ourednik and contributors",
+          "source": "https://github.com/aourednik/historical-basemaps"
         }
       ],
       "licenses": [
         "CC-BY-SA-4.0",
-        "CC-BY-NC-SA-4.0"
+        "CC-BY-NC-SA-4.0",
+        "GPL-3.0-only"
       ]
     },
     "data/edges/": {
@@ -1066,10 +1072,16 @@
           "license": "CC-BY-NC-SA-4.0",
           "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
           "source": "https://doi.org/10.1177/00220027211013563"
+        },
+        {
+          "license": "GPL-3.0-only",
+          "name": "Historical Basemaps — André Ourednik and contributors",
+          "source": "https://github.com/aourednik/historical-basemaps"
         }
       ],
       "licenses": [
-        "CC-BY-NC-SA-4.0"
+        "CC-BY-NC-SA-4.0",
+        "GPL-3.0-only"
       ]
     },
     "data/geo/presences/": {
@@ -1078,10 +1090,16 @@
           "license": "CC-BY-NC-SA-4.0",
           "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
           "source": "https://doi.org/10.1177/00220027211013563"
+        },
+        {
+          "license": "GPL-3.0-only",
+          "name": "Historical Basemaps — André Ourednik and contributors",
+          "source": "https://github.com/aourednik/historical-basemaps"
         }
       ],
       "licenses": [
-        "CC-BY-NC-SA-4.0"
+        "CC-BY-NC-SA-4.0",
+        "GPL-3.0-only"
       ]
     },
     "data/geo/regions.json": {
@@ -1102,11 +1120,17 @@
           "license": "CC-BY-NC-SA-4.0",
           "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
           "source": "https://doi.org/10.1177/00220027211013563"
+        },
+        {
+          "license": "GPL-3.0-only",
+          "name": "Historical Basemaps — André Ourednik and contributors",
+          "source": "https://github.com/aourednik/historical-basemaps"
         }
       ],
       "licenses": [
         "CC-BY-SA-4.0",
-        "CC-BY-NC-SA-4.0"
+        "CC-BY-NC-SA-4.0",
+        "GPL-3.0-only"
       ]
     },
     "data/narratives/": {
@@ -1133,11 +1157,17 @@
           "license": "CC-BY-NC-SA-4.0",
           "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
           "source": "https://doi.org/10.1177/00220027211013563"
+        },
+        {
+          "license": "GPL-3.0-only",
+          "name": "Historical Basemaps — André Ourednik and contributors",
+          "source": "https://github.com/aourednik/historical-basemaps"
         }
       ],
       "licenses": [
         "CC-BY-SA-4.0",
-        "CC-BY-NC-SA-4.0"
+        "CC-BY-NC-SA-4.0",
+        "GPL-3.0-only"
       ]
     },
     "data/relations/": {

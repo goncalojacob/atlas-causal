@@ -59,9 +59,21 @@ export function checkImportMap(file, map) {
       seen.add(key);
     });
   };
+  // What a key of `entries` may be is the map's own declaration and not this
+  // function's guess (M43a). A source with a numbered state list is keyed by
+  // the number; a source that names its polities and numbers nothing is keyed
+  // by the name, verbatim, because there is no other identifier to key by and
+  // inventing one here would put the mapping decision in code.
+  const byName = map?.keys === 'name';
   for (const [code, entry] of Object.entries(map?.entries ?? {})) {
     const at = `/entries/${code}`;
-    if (!/^[0-9]+$/.test(code)) say(at, `"${code}" is not an entity code of the source (digits)`);
+    if (byName) {
+      if (code.trim() === '' || code !== code.trim()) {
+        say(at, `"${code}" is not a name of the source: a key is the source's own string, with no surrounding space`);
+      }
+    } else if (!/^[0-9]+$/.test(code)) {
+      say(at, `"${code}" is not an entity code of the source (digits)`);
+    }
     names(entry.names, `${at}/names`);
     const used = new Map([[entry.actor, 'the entry itself']]);
     let previous = null;

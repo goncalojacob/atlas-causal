@@ -17,19 +17,26 @@
 // The writers that can create a record. Closed, for the reason the edge types
 // are closed: a writer nobody has decided about is a line added here and in
 // `schema/common/provenance.json`, not a string invented at a call site.
-export const ORIGIN_TOOLS = Object.freeze(['cshapes', 'wikidata', 'assistant', 'form']);
+export const ORIGIN_TOOLS = Object.freeze(['cshapes', 'basemaps', 'wikidata', 'assistant', 'form']);
 
 // The two that read somebody else's database. What separates them from the
 // other writers is that they run again: a re-run rewrites the records it
 // owns, which is why `origin` — and not an author's name — is what says which
 // records those are.
-export const IMPORT_TOOLS = Object.freeze(['cshapes', 'wikidata']);
+export const IMPORT_TOOLS = Object.freeze(['cshapes', 'basemaps', 'wikidata']);
 
-// The one import whose material is not CC BY-SA, and so the whole of rule
-// 12's exception for `data/actors/`. Adding an import adds a line here;
-// nothing else can quietly relicense an actor, and a person named exactly
-// like an import no longer can at all.
-export const NC_ORIGINS = Object.freeze(['cshapes']);
+// The imports whose material is not CC BY-SA, and so the whole of rule 12's
+// exception for `data/actors/` and `data/relations/`. Adding an import adds a
+// line here; nothing else can quietly relicense an actor, and a person named
+// exactly like an import no longer can at all.
+//
+// It was `NC_ORIGINS` until M43a, when the second territory import arrived
+// under GPL-3.0 rather than under a Creative Commons licence at all. The list
+// never was about the NC clause: it is about which writers may put a licence
+// on a record that `data/LICENSE` does not cover, and CShapes' happened to be
+// the only one. `licensing.js` → `IMPORTED_LICENSES` is the other half — which
+// licences those are — and rule 12 is the two of them read together.
+export const IMPORT_LICENCE_ORIGINS = Object.freeze(['cshapes', 'basemaps']);
 
 export const REVIEW_STATUS = Object.freeze({ draft: 'draft', reviewed: 'reviewed' });
 
@@ -54,7 +61,7 @@ export const importWritten = (record) => IMPORT_TOOLS.includes(originTool(record
 export const handWritten = (record) => !importWritten(record);
 
 // A record an import may create and relicense as its source demands.
-export const mayBeNonCommercial = (record) => NC_ORIGINS.includes(originTool(record));
+export const mayRelicense = (record) => IMPORT_LICENCE_ORIGINS.includes(originTool(record));
 
 // Nobody has read this record. What `review.html` lists and what
 // `node tools/validate.mjs` counts down.
