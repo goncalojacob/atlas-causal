@@ -40,32 +40,30 @@ export const PAIRS = Object.freeze([
 ]);
 
 // O par a medir é a última presença antes da costura contra a primeira
-// depois dela. Uma presença fundida por este marco continua a ser a última
-// antes de 1886 ou a primeira depois: a medida não muda quando os registos
-// se juntam, porque é do chão que fala, e é por isso que os ids aqui são os
-// do levantamento e não os que sobreviveram.
+// depois dela.
+//
+// As presenças são encontradas pelo **id**, `<actor>-<ano>`, e não pelo campo
+// `actor`. A medida é sobre o chão de 1885 e o de 1886 e não muda quando os
+// dois registos se juntam — mas uma junção reescreve o `actor` de todas as
+// presenças do registo fundido, e procurá-las por aí dava a medida antes da
+// junção e nada depois dela. O id é o que não se mexe.
+//
+// O `-` e o ano importam: `victoria-uk-1880` começa por `victoria-` e não é
+// uma presença de `victoria`.
 export function measure() {
-  const byActor = new Map();
-  for (const p of readPresences()) {
-    if (p.status !== 'active') continue;
-    if (!byActor.has(p.actor)) byActor.set(p.actor, []);
-    byActor.get(p.actor).push(p);
+  const all = readPresences().filter((p) => p.status === 'active');
+  const byPrefix = new Map();
+  for (const p of all) {
+    const m = /^(.*)-\d{4}(-[a-z0-9]+)?$/.exec(p.id);
+    if (!m) continue;
+    if (!byPrefix.has(m[1])) byPrefix.set(m[1], []);
+    byPrefix.get(m[1]).push(p);
   }
-  // Uma presença fundida guarda `aliases` com o id antigo, e é por aí que o
-  // actor do levantamento ainda se encontra depois de uma junção.
-  const originalActor = new Map();
-  for (const list of byActor.values()) {
-    for (const p of list) for (const a of p.aliases ?? []) originalActor.set(a, p.actor);
-  }
-  const listFor = (id) => byActor.get(id) ?? byActor.get(originalActor.get(id)) ?? [];
 
   return PAIRS.map(([before, after]) => {
-    const pick = (id, keep) => {
-      const seen = listFor(id).filter(keep).sort((a, b) => a.when.start - b.when.start);
-      return seen;
-    };
-    const pb = pick(before, (p) => p.when.start <= 1885 && (p.aliases ?? []).concat(p.id).some((x) => x.startsWith(`${before}-`)));
-    const pa = pick(after, (p) => p.when.start >= 1886 && (p.aliases ?? []).concat(p.id).some((x) => x.startsWith(`${after}-`)));
+    const pick = (id, keep) => (byPrefix.get(id) ?? []).filter(keep).sort((a, b) => a.when.start - b.when.start);
+    const pb = pick(before, (p) => p.when.start <= 1885);
+    const pa = pick(after, (p) => p.when.start >= 1886);
     const lastBefore = pb[pb.length - 1] ?? null;
     const firstAfter = pa[0] ?? null;
     const row = {
