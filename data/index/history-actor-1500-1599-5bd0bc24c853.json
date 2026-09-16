@@ -1,0 +1,1671 @@
+{
+  "from": 1500,
+  "kind": "actor",
+  "records": {
+    "aaniiih": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "abnaki": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "acaxea": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "ainu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "alabama": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "algonquin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "apache": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "apalachee": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "arikara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "assiniboin": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "astrakhan-khanate": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "atakapa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "aztec-empire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "bagirmi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "bella": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "blackfoot": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "bukara-khanate": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "cahitas": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "cahulia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "caxcane": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "cayuse": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "central-asian-khanates": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "chatot": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "cherokee": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "chickasaw": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "chiricahua": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "chisos": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "choctaw": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "chtimacha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "chukchi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "coahuiltec": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "comanche": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "conoy": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "coqs": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "costanoan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "crow": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "cuba-spain": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "cusabo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "darfur": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "delaware": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "enets": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "england-and-ireland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "eyaq": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "flathead": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "florence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "fox": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "genoa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "gharra": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "guachichiles": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "guachimis": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "guamar-pecchichitane": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "habsburg-netherlands": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "havasupai": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "hispaniola-spain": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "hitchiti": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "hopi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "hopie": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "huron": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "illinois": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "inca-empire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "inupiaq": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "iroquois": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "irritilas": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "islamic-and-hindu-states": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "islamic-states": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "itelmen": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "janabres": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "japan-warring-states": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "jicarilla": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "kamia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "kansa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "kawahsu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "kazan-khanate": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "khanty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "khiva-khanate": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "kijkitat": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "kiowa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "knucati": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "komi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "koryaks": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "lagunero": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "lipan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "luba": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "luiseno": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "lunda": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "mahican": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "mahra": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "maiou": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "mandan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "maoris": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "maratines": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "massachusett": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "mayas": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "menomini": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "mescalero": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "miami": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "milan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "ming-chinese-empire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "missouri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "miwok": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "montagnais-innu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "montana": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "mughal-empire": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "muskogee": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "naniaho": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "naples": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "naskapi-innu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "navaho": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "navajo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "nayarit": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "nenets": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "nez-perce": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "nganasan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "ninticoy": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "nogai-horde": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "northern-paiute": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "novgorod-seversky": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "obiwa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "omaha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "oromo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "oto": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "otomies": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "papago": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "papuans": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "pawnee": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "pewa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "pima": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "pisones": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "pocumtuk": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "pomo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "potawatomi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "prussia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "quapaw": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "quazaq-khanate": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "rajputana": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "republic-of-the-seven-zenden": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "riro": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "safavid-empire": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "saunan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "savoy": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "saylan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "senegal-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "serano": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "shan-states": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "shawnee": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "shoshoni": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "southern-paiute": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "suspiaq": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "susquehanna": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "t-atsaot-ine": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "tamalipueca": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "tancalba": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "tano": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "tenimo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "tepehuane": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "teton": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "thompson": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "tlinoit": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "toboso": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "tsardom-of-muscovy": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "umatilla": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "ute": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "viceroyalty-of-new-spain": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "wadai": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "walapai": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "wappynger": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "watassid-morocco": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "winebago": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "xecora": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "yakima": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "yankontai": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "yavapai": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "yuchi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "yukagir": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "yuma": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "zacatecs": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "zuni": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1599
+}
