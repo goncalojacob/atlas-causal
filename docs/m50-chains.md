@@ -231,3 +231,19 @@ Where an edge is `consensus`, it is because a named scholarly work that
 Wikipedia itself cites was read into `data/sources/` as its own record and a
 second author was found who agrees. Where two such authors disagree, the edge
 is `disputed` and carries both. `docs/m50-claims.md` is the ledger.
+
+## What §5 found, in one paragraph
+
+Measured, not fixed, and written out in `STATUS.md` with its numbers. The
+longest link here is **349 years** and eighteen of the fifty-seven chain edges
+span a century or more. **The timeline carries it** — one madder band from 1540
+to 1889, both ends in frame — **and loses the labels**, which print over each
+other. **The graph carries it too, but only when the window holds both ends**:
+at the window the atlas opens on it draws three of the ten lensed nodes and
+lays the near end 589 px to the left of a 959 px pane, and nothing in the
+interface sets the window that would bring it back. Two more things surfaced on
+the way, both of them the same fact from another side: **an event whose name
+lives in the shard of an earlier century is drawn, in the window, with no
+name**, and **the deepest zoom no longer resolves every event** — 260 nodes for
+285, none of them at another's position. Four screenshots,
+`docs/screens/m50-long-edge-{graph,focus,window,timeline}.png`.
