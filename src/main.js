@@ -15,7 +15,7 @@ import { createPanes } from './panes.js';
 import { createPhone } from './phone.js';
 import { createIntro } from './intro.js';
 import { createReadingMode, openingState } from './narrative-mode.js';
-import { parseFocus, lensSet } from './lens.js';
+import { activeFoci, parseFocus, lensSet } from './lens.js';
 import { resolveWindow } from './util/window.js';
 import { bindNarrativeKeys } from './panel/narrative.js';
 import { esc } from './util/esc.js';
@@ -114,6 +114,21 @@ try {
     atlas.loadCiters(focus.id).then(() => remeasure({ force: true }), () => {});
   };
 
+  // And a lens on an actor is the other one: since M48 it keeps the events on
+  // that actor's ground as well as the events that name it, which is one file
+  // the build worked out against the presence outlines (grounds.js). Asked for
+  // when a focus of that kind is actually on — an atlas nobody has selected a
+  // polity in never fetches it, and first paint costs what it did — and the
+  // views are forced to redraw when it lands, because nothing in the state has
+  // changed by then.
+  let askedGrounds = false;
+  const fetchLensGrounds = (s) => {
+    if (askedGrounds || atlas.groundsLoaded()) return;
+    if (!activeFoci(atlas, s).some((f) => f.kind === 'actor')) return;
+    askedGrounds = true;
+    atlas.loadGrounds().then(() => remeasure({ force: true }), () => {});
+  };
+
   // The panel is built first because the map hands it the members of a
   // cluster of marks the reader clicks on.
   //
@@ -198,6 +213,8 @@ try {
 
   state.subscribe(fetchLensCiters);
   fetchLensCiters(state.get());
+  state.subscribe(fetchLensGrounds);
+  fetchLensGrounds(state.get());
 
   // --- the attribute shards ------------------------------------------------
   //

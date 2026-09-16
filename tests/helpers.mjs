@@ -4,6 +4,7 @@ import path from 'node:path';
 import { readFile, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { createAtlas, createAtlasFromCore, expandCore, presencesFromIndex } from '../src/data.js';
+import { decodeGrounds } from '../src/grounds.js';
 import { buildTopology } from '../src/validate/core.js';
 import { createRegionDeriver } from '../src/util/geo.js';
 import { readSchemaFiles, readRecords, readRegions, readRegionPolygons } from '../tools/lib/read.mjs';
@@ -77,6 +78,18 @@ export async function presencesOnDisk(dataDir) {
   return presencesFromIndex(file);
 }
 
+// Which polities each event happened inside, off disk, whole. Seeded exactly
+// as the citers and the presences are, and for the same reason: the browser
+// fetches it when a lens on an actor asks (M48, src/grounds.js), and every
+// atlas built here fetches nothing. An empty map where the manifest names no
+// file — that is what says no event is inside anything — and then the actor
+// lens is the `actors` list alone, which is what it was before M48.
+export async function groundsOnDisk(dataDir) {
+  const manifest = JSON.parse(await readFile(path.join(dataDir, 'index', 'manifest.json'), 'utf8'));
+  if (!manifest.files?.grounds) return new Map();
+  return decodeGrounds(JSON.parse(await readFile(path.join(dataDir, manifest.files.grounds), 'utf8')));
+}
+
 // The atlas as the site builds it: the core and the sources index the manifest
 // names, with the citer rows and the presences seeded — and **every** attribute
 // shard, handed over rather than fetched, which is how "the core plus every
@@ -86,12 +99,13 @@ export async function presencesOnDisk(dataDir) {
 // against.
 export async function atlasOf(dataDir, options = {}) {
   const { manifest, read } = await indexOf(dataDir);
-  const [core, sources, citers, presences, attributes] = await Promise.all([
+  const [core, sources, citers, presences, grounds, attributes] = await Promise.all([
     read(manifest.files.core), read(manifest.files.sources), citersOnDisk(dataDir), presencesOnDisk(dataDir),
+    groundsOnDisk(dataDir),
     Promise.all((manifest.attributeShards ?? []).map(async (shard) => ({ key: shard.key, file: await read(shard.file) }))),
   ]);
   return createAtlasFromCore({
-    manifest, core, attributes, sources: sources.sources, citers, presences, fetchJson: refuse, ...options,
+    manifest, core, attributes, sources: sources.sources, citers, presences, grounds, fetchJson: refuse, ...options,
   });
 }
 

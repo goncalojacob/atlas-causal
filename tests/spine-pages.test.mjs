@@ -236,6 +236,30 @@ test('index.html draws before the presence file arrives, and draws it when it do
   });
 });
 
+// M48 §2: which polities an event happened inside is a file of its own, and it
+// is not part of first paint. A page nobody has selected a polity in never
+// asks for it at all, which is what keeps the widened actor lens free: the
+// join is 83 rows on this corpus and would be one more whole-corpus parse on
+// every page load if it were in the core.
+test('the grounds are asked for by a lens on an actor and by nothing else', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('index.html'), ATLAS_READY);
+    const quiet = await page.eval(REQUESTS);
+    assert.equal(quiet.filter((name) => name.includes('/index/grounds-')).length, 0,
+      'nothing on the page has asked which ground an event is on');
+
+    // And an open actor is a lens on itself (lens.js), so opening one is what
+    // asks. Waited for: it is fetched behind the picture, never in front.
+    await open(page, url('index.html?actor=portugal&from=1800&to=2030'), ATLAS_READY);
+    await waitFor(
+      page,
+      "return performance.getEntriesByType('resource').map((e) => e.name)"
+        + ".filter((name) => name.includes('/index/grounds-')).length === 1;",
+      'the grounds file to be asked for once',
+    );
+  });
+});
+
 // A4: the polygons are still the only thing that can draw a lane as a shape,
 // so the wash a `regional` event is drawn as asks for them — and only then.
 // The fixtures hold one such event, from 1260 to 1300.

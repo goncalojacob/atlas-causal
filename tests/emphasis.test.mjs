@@ -212,10 +212,22 @@ test('an actor with no events at all leaves the atlas whole', async () => {
   const atlas = await fixtureAtlas();
   // Most of the atlas's actors are polities imported with their borders and
   // no event yet; opening one drew a blank map and a blank timeline.
-  assert.deepEqual(atlas.eventsByActor.get('fixture-polity-three') ?? [], []);
-  const w = workingSet(atlas, { ...defaultState(), actor: 'fixture-polity-three' });
+  //
+  // "No events" is a smaller set than it was: since M48 an actor's events are
+  // the events on its ground as well as the events that name it, and
+  // `fixture-polity-three` — which named none — holds the ground under
+  // `fixture-event-b` and is a lens now. Polity four is the case this rule is
+  // still about: borders, and nothing that happened inside them.
+  assert.deepEqual(atlas.eventsByActor.get('fixture-polity-four') ?? [], []);
+  assert.equal(atlas.eventsOnGroundOf('fixture-polity-four'), null, 'and nothing on its ground');
+  const w = workingSet(atlas, { ...defaultState(), actor: 'fixture-polity-four' });
   assert.equal(w.lens, null, 'no lens, so every view draws everything');
   assert.deepEqual(sorted(w.actor), [], 'and there is nothing to emphasise');
+
+  // The other one is the correction itself: a polity imported with its borders
+  // and named by no event is no longer an empty atlas.
+  const ground = workingSet(atlas, { ...defaultState(), actor: 'fixture-polity-three' });
+  assert.ok(ground.lens?.has('fixture-event-b'), 'the event inside its territory is its own');
 });
 
 // --- the category filter, written once, where the lens is -------------------

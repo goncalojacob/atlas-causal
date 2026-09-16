@@ -25,7 +25,8 @@ import { searchIndexFor } from '../src/search.js';
 import { attributeShardName, explanationShards, historyShardName, shardName } from '../src/explanations.js';
 import { licensingTable } from '../src/licensing.js';
 import { createAtlasFromSpine, expandSpine, presencesFromIndex, INDEX_GENERATION } from '../src/data.js';
-import { readRecords, readRegions, readRegionPolygons, readRoles, readCategories, readLandFiles, readBaseLayers, readPresenceShards, paletteFile } from './lib/read.mjs';
+import { buildGrounds, encodeGrounds } from '../src/grounds.js';
+import { readRecords, readRegions, readRegionPolygons, readRoles, readCategories, readLandFiles, readBaseLayers, readPresenceShards, readPresenceGeometry, paletteFile } from './lib/read.mjs';
 import { recordHistories, historyShards } from './lib/history.mjs';
 import { sitePages, ENTRY_DIR } from './lib/prerender.mjs';
 
@@ -51,7 +52,10 @@ export const TEMPLATES = ['entry.html', 'sources.html', 'narratives.html'];
 // `history-<kind>-<key>-<hash>.json` is I5's: what changed at each version of
 // a record, one file per kind and period, where `history/` was a directory of
 // one file per record and the last unhashed thing in the index.
-const HASHED = /^(?:(?:spine|search|sources|review|presences|core)-(?:[a-z]+-)?|(?:explanations|attributes)-(?:-?\d+--?\d+|null|[a-z]+)-|history-[a-z]+-(?:-?\d+--?\d+|null|[a-z]+)-)[0-9a-f]{12}\.json$/;
+// `grounds-<hash>.json` is M48's: which polities each event happened inside,
+// read off the presence outlines once here so that no reader ever waits for a
+// point-in-polygon.
+const HASHED = /^(?:(?:spine|search|sources|review|presences|core|grounds)-(?:[a-z]+-)?|(?:explanations|attributes)-(?:-?\d+--?\d+|null|[a-z]+)-|history-[a-z]+-(?:-?\d+--?\d+|null|[a-z]+)-)[0-9a-f]{12}\.json$/;
 const HASHED_DIR = /^citers-[0-9a-f]{12}$/;
 
 // Deep copy with keys sorted by UTF-16 code unit (Array.prototype.sort's
@@ -152,6 +156,29 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   const presenceIndex = buildPresenceIndex(topology);
   const presencesText = presenceIndex.presences.length ? compact(presenceIndex) : null;
   const presencesName = presencesText ? `presences-${hashOf(presencesText)}.json` : null;
+
+  // Which polities each event happened inside (M48 §2, src/grounds.js). The
+  // outlines are read here and nowhere else in the build: the join is a fact
+  // about a point and a year, and the browser is never given the polygons to
+  // work it out with.
+  //
+  // No file and no manifest key for a dataset whose events are inside
+  // nothing — an absent key is what says there are none, as it is for the
+  // presences above — and then the actor lens is what it was before this
+  // milestone, which is the honest answer for a dataset with no territory.
+  const groundGeometry = prepared.presenceGeometry
+    ?? await readPresenceGeometry(dataDir, await readPresenceShards(dataDir));
+  const outlineOf = (presence) => {
+    for (const file of presence.geometry?.files ?? []) {
+      const found = groundGeometry.get(file)?.geometry?.get(presence.geometry.key) ?? null;
+      if (found) return found;
+    }
+    return null;
+  };
+  const grounds = buildGrounds(topology.events, new Map(topology.places.map((p) => [p.id, p])),
+    topology.presences, outlineOf);
+  const groundsText = grounds.size ? compact(encodeGrounds(grounds)) : null;
+  const groundsName = groundsText ? `grounds-${hashOf(groundsText)}.json` : null;
 
   // The split the second index cycle is for, and since I4b the whole of what
   // the index carries the graph in: the core every page loads whole, and the
@@ -325,6 +352,8 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       // Absent for a dataset with no presences, which is what says there are
       // none: `loadPresences()` then answers [] without a request.
       ...(presencesName === null ? {} : { presences: `index/${presencesName}` }),
+      // And absent where no event is inside any of them, for the same reason.
+      ...(groundsName === null ? {} : { grounds: `index/${groundsName}` }),
     },
     regions: topology.regions,
     // One box per region — [minLon, minLat, maxLon, maxLat] — so that a page
@@ -423,6 +452,9 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     // has them, so the prerendered pages are rendered from a complete atlas
     // and cannot change their bytes because a file was in flight (D7).
     presences: presencesText === null ? [] : presencesFromIndex(JSON.parse(presencesText)),
+    // Seeded for the same reason, and it is this build's own answer rather
+    // than a re-read of the file it has just written.
+    grounds,
     fetchJson: () => Promise.reject(new Error('the build has every record in hand and fetches nothing')),
   });
   const expanded = expandSpine(JSON.parse(spineText));
@@ -438,6 +470,9 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   const unresolved = topology.events.filter((e) => e.status === 'active' && e.place && !e.region);
   return {
     pages,
+    // What the ground join found, for the line the build prints: a count the
+    // report can say without parsing the file it has just written.
+    grounds,
     // The projection the two halves are measured against, carried beside the
     // files rather than among them: it is not written any more and the report
     // below still says what the core is smaller than.
@@ -448,6 +483,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       [coreName]: coreText,
       ...Object.fromEntries(attributes.map(({ name, text }) => [name, text])),
       ...(presencesName === null ? {} : { [presencesName]: presencesText }),
+      ...(groundsName === null ? {} : { [groundsName]: groundsText }),
       [sourcesName]: sourcesText,
       [reviewName]: reviewText,
       ...Object.fromEntries(shards.map(({ name, text }) => [name, text])),
@@ -677,6 +713,12 @@ async function main(argv) {
   const c = built.topology;
   console.log(`index written to ${path.relative(process.cwd(), path.join(dataDir, 'index')) || '.'}: ${c.events.length} events, ${c.edges.length} edges, ${c.actors.length} actors, ${c.relations.length} relations, ${c.offices.length} offices, ${c.tenures.length} tenures, ${c.narratives.length} narratives, ${c.places.length} places, ${c.presences.length} presences, ${c.sources.length} sources`);
   printIndexReport(indexReport(built));
+  // What the actor lens gained, and what it weighs (M48 §2). Printed rather
+  // than kept, because the answer is a fact about this dataset's territory
+  // and the next import moves it.
+  const groundsFile = JSON.parse(built.files['manifest.json']).files?.grounds ?? null;
+  const groundsBytes = groundsFile ? Buffer.byteLength(built.files[path.basename(groundsFile)], 'utf8') : 0;
+  console.log(`the ground under the events: ${built.grounds.size} of ${c.events.filter((e) => e.status === 'active').length} active events are inside a dated territory, ${groundsBytes.toLocaleString('en-US')} B`);
   if (siteDir) {
     await writeSite(siteDir, built.pages);
     const report = pageReport(built.pages);

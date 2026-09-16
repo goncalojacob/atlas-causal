@@ -26,7 +26,14 @@ const dataDir = path.join(ROOT, 'data');
 // An actor with few enough events that the whole neighbourhood is small, and
 // two that overlap in thirteen events, which is what makes "any of these" and
 // "all of these" different pictures.
-const FEW = 'portugal';
+//
+// It was `portugal` until M48, when an actor's lens became the events on its
+// ground as well as the events that name it: Portugal went from eight events
+// to eighty, which is the milestone's own headline and no longer a small
+// neighbourhood. Fretilin is one that stayed small — two events and two
+// neighbours — and holds no ground in this corpus, so it asserts what this
+// test is about and not what the test below is.
+const FEW = 'fretilin';
 const SALAZAR = 'actor:salazar';
 const REGIME = 'actor:estado-novo';
 
@@ -48,6 +55,11 @@ const expected = async (patch) => {
 // are said about.
 const DRAWN = (selector) => `return [...document.querySelectorAll('${selector}')]
   .map((el) => el.dataset.id).filter(Boolean);`;
+
+// Everything the page asked the network for, as the browser recorded it —
+// `performance`'s own resource timeline, which is what tests/spine-pages.test
+// asserts every promise about fetching against.
+const REQUESTS = 'return performance.getEntriesByType("resource").map((e) => e.name);';
 
 const NEAR = (selector) => `return [...document.querySelectorAll('${selector}')]
   .filter((el) => el.classList.contains('lens-near')).map((el) => el.dataset.id).filter(Boolean);`;
@@ -484,5 +496,49 @@ test('“Focus on this” while reading narrows to the step, and lets go back to
         document.querySelector('${VIEWS.timeline.selector.replace(/\[data-id\]$/, '')}[data-id="' + id + '"]'));`,
       'the timeline to hold the whole walk again',
     );
+  });
+});
+
+// ─── the ground under an event (M48 §2) ────────────────────────────────────
+//
+// Selecting Portugal used to find the events that name Portugal and miss every
+// event in Lisbon. The join is worked out at build time and fetched when a
+// lens on an actor asks for it, so what this has to show is that the request
+// is made, that the picture widens when it lands, and that what it widened by
+// is the ground and not something else.
+const POLITY = 'portugal';
+
+test('selecting a polity finds the events on its ground, and asks for the file to do it', { skip }, async () => {
+  const atlas = await atlasOf(dataDir);
+  const view = lensView(atlas, { ...defaultState(), actor: POLITY });
+  const named = new Set((atlas.eventsByActor.get(POLITY) ?? []).map((a) => a.event.id));
+  // The owner's own case: the events in Lisbon that name nobody at all.
+  const onGround = [...view.set].filter((id) => !named.has(id) && atlas.groundOf(id).includes(POLITY));
+  assert.ok(onGround.some((id) => atlas.events.get(id)?.place === 'lisbon'),
+    'the corpus has events in Lisbon that do not name Portugal');
+
+  await withBrowser(async (page, url) => {
+    for (const [name, { selector, url: extra }] of Object.entries(VIEWS)) {
+      await open(page, url(`?actor=${POLITY}&from=1800&to=2030${extra}`), ready);
+      // The lens widens when the file lands, so this is waited for and not
+      // read once — the same discipline every other fetched input here gets.
+      // *Some* of them and not a named one: sixty events in Lisbon are a stack
+      // on the map, and a stack carries no id (cluster.js). What is asserted
+      // is that the ground reached the picture at all.
+      await waitFor(
+        page,
+        `return [...document.querySelectorAll('${selector}')].map((el) => el.dataset.id)
+          .some((id) => ${JSON.stringify(onGround)}.includes(id));`,
+        `${name} to draw an event on Portuguese ground and not in its actors`,
+      );
+      const drawn = await page.eval(DRAWN(selector));
+      for (const id of drawn) assert.ok(view.shown.has(id), `${name} drew ${id}, outside the lens`);
+    }
+
+    // One request, and only because a lens asked: the file is named in the
+    // manifest and is not part of first paint (tests/spine-pages.test.mjs).
+    const requests = await page.eval(REQUESTS);
+    assert.equal(requests.filter((n) => n.includes('/index/grounds-')).length, 1,
+      'the grounds are fetched once');
   });
 });

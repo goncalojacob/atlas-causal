@@ -334,3 +334,53 @@ test('an actor\'s appearances carry the note beside the role', async () => {
     [['fixture-event-t', 'signatory', 'signed it for the synthetic party']]);
   assert.equal(rows.every((r) => 'note' in r), true, 'and a line without one says null');
 });
+
+// ─── the ground under an event ─────────────────────────────────────────────
+//
+// Fetched when a lens on an actor asks and not at load (M48 §2, grounds.js),
+// so this is the same promise the citers and the presences are held to: what
+// the atlas answers before the file lands, that one request is made and not
+// two, and that a manifest naming no file asks for nothing at all.
+test('the grounds are fetched once, when something asks, and never at load', async () => {
+  const asked = [];
+  const file = {
+    schema: 1,
+    actors: ['portugal'],
+    events: { 'carnation-revolution-1974': [0] },
+  };
+  const atlas = createAtlas({
+    manifest: { schema: 1, regions: [], land: [], files: { grounds: 'index/grounds-0000.json' } },
+    topology: { events: [], edges: [] },
+    sources: [],
+    fetchJson: async (url) => { asked.push(url); return file; },
+  });
+
+  // Before it lands the atlas says so, and answers as it did before M48: no
+  // ground under any event, and null for "the events on this actor's ground",
+  // which is what lets the lens tell that apart from "none".
+  assert.equal(atlas.groundsLoaded(), false);
+  assert.deepEqual(atlas.groundOf('carnation-revolution-1974'), []);
+  assert.equal(atlas.eventsOnGroundOf('portugal'), null);
+  assert.deepEqual(asked, [], 'nothing is fetched until something asks');
+
+  await Promise.all([atlas.loadGrounds(), atlas.loadGrounds()]);
+  assert.equal(asked.length, 1, 'one request in flight, however many callers');
+  assert.equal(atlas.groundsLoaded(), true);
+  assert.deepEqual(atlas.groundOf('carnation-revolution-1974'), ['portugal']);
+  assert.deepEqual([...atlas.eventsOnGroundOf('portugal')], ['carnation-revolution-1974']);
+  assert.equal(atlas.eventsOnGroundOf('nobody'), null, 'an actor holding no ground here');
+});
+
+test('a manifest that names no grounds file answers empty and asks for nothing', async () => {
+  const asked = [];
+  const atlas = createAtlas({
+    manifest: { schema: 1, regions: [], land: [], files: {} },
+    topology: { events: [], edges: [] },
+    sources: [],
+    fetchJson: async (url) => { asked.push(url); throw new Error('nothing to fetch'); },
+  });
+  assert.equal(atlas.groundsLoaded(), false);
+  assert.equal((await atlas.loadGrounds()).size, 0);
+  assert.equal(atlas.groundsLoaded(), true);
+  assert.deepEqual(asked, []);
+});

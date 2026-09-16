@@ -111,9 +111,27 @@ export function eventsOfFocus(focus, topology) {
   const { kind, id } = parsed;
   const events = topology.activeEvents ?? [];
   const ids = new Set();
+  // **An actor's events are the events on its ground, not only the ones that
+  // name it** (M48 §2). Two rules, and the second is three: the actor is in
+  // the event's `actors`, or the event's place is inside territory that actor
+  // held at the event's date, or inside territory a *dependency* of it held
+  // then. The last two are `grounds.js`, worked out against the presence
+  // outlines at build time and read here as a lookup — selecting a polity must
+  // not cost a point-in-polygon.
+  //
+  // The union and not a choice between them: an event can name Portugal and
+  // happen in Lisbon, and an event in Lisbon that names nobody is still
+  // Portugal's. An atlas whose grounds file has not landed answers null for
+  // the second half and the lens is the first alone, which is what it was
+  // before this milestone — a frame of the old picture, never a wrong one.
   if (kind === 'actor') {
     for (const event of events) {
       if ((event.actors ?? []).some((a) => a.actor === id)) ids.add(event.id);
+    }
+    const ground = topology.eventsOnGroundOf?.(id) ?? null;
+    if (ground) {
+      const active = new Set(events.map((e) => e.id));
+      for (const event of ground) if (active.has(event)) ids.add(event);
     }
     return ids;
   }
@@ -324,7 +342,10 @@ export function lensView(atlas, state) {
   // until it has, the narrative resolves and its walk is empty, which is the
   // atlas drawn whole for a frame rather than a lens on nothing. The count is
   // what says the shard came.
-  const stamp = `${all}|${foci.map((f) => {
+  // An actor's is the third: which events are on its ground is a file fetched
+  // when a lens of that kind is first set (M48 §2, data.js), and the answer
+  // before it lands is the `actors` list alone.
+  const stamp = `${all}|${atlas.groundsLoaded?.() ? 1 : 0}|${foci.map((f) => {
     if (f.kind === 'source') return `${f.id}:${atlas.citersOf?.(f.id) ? 1 : 0}`;
     if (f.kind === 'narrative') return `${f.id}:${(atlas.narratives?.get(f.id)?.steps ?? []).length}`;
     return '';

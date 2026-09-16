@@ -19,6 +19,7 @@
 // their byte-identity a check on the whole projection (i4-brief, A5).
 
 import { buildAdjacency } from './graph.js';
+import { byActor, decodeGrounds } from './grounds.js';
 import { narrativeEventIds } from './narrative.js';
 import { extent as intervalExtent } from './util/dates.js';
 import { centuryCounts, opensOn } from './util/window.js';
@@ -84,6 +85,10 @@ export function createAtlas({
   manifest, topology, sources, land = null, palette = null, regionBoxes = null, regionShapes = null,
   dataRoot = 'data/', fetchJson = defaultFetchJson, citers: seededCiters = null,
   presences: seededPresences = null,
+  // Which polities each event happened inside (M48, src/grounds.js), when the
+  // caller has the file in hand. Null is an atlas that will ask for it when a
+  // lens wants it, which is every atlas in a browser.
+  grounds: seededGrounds = null,
   // Since I3, and only for an atlas built from the core: whether a record's
   // attribute shard has landed, and what `record()` must wait for before it can
   // ask for a record file with the `?v=` the shard carries (i3-brief, A2 and
@@ -612,6 +617,54 @@ export function createAtlas({
     return presencesPending;
   }
 
+  // --- the ground under an event -----------------------------------------
+  //
+  // Which polities each event happened inside, worked out against the outlines
+  // at build time and read here (M48 §2, src/grounds.js). It is the other half
+  // of the actor lens: `event.actors` says who the record names, this says
+  // whose ground it is on, and Portugal without it is eight events instead of
+  // eighty.
+  //
+  // Fetched when a lens asks and not at load, which is the discipline the
+  // citers and the presences already follow and the reason first paint costs
+  // exactly what it did. Until it lands the atlas answers emptily and the lens
+  // is the `actors` list alone — the picture this milestone replaces, for a
+  // frame, rather than a blank one.
+  let groundsByEvent = new Map();
+  let groundsByActor = new Map();
+  const indexGrounds = (loaded) => {
+    groundsByEvent = loaded;
+    groundsByActor = byActor(loaded);
+  };
+  let haveGrounds = seededGrounds !== null;
+  if (haveGrounds) indexGrounds(seededGrounds);
+  let groundsPending = null;
+  const groundsLoaded = () => haveGrounds;
+  // The polities an event is inside, and the events inside a polity's ground.
+  // Empty rather than null for the first, because a reader of one event wants
+  // a list; null for the second, because the lens has to tell "this actor
+  // holds no ground here" from "nobody has asked for the file yet".
+  const groundOf = (id) => groundsByEvent.get(id) ?? [];
+  const eventsOnGroundOf = (id) => groundsByActor.get(id) ?? null;
+  function loadGrounds() {
+    if (haveGrounds) return Promise.resolve(groundsByEvent);
+    if (!groundsPending) {
+      const file = manifest?.files?.grounds;
+      const pending = (file ? fetchJson(`${dataRoot}${file}`) : Promise.resolve(null))
+        .then((loaded) => {
+          indexGrounds(decodeGrounds(loaded));
+          haveGrounds = true;
+          return groundsByEvent;
+        })
+        .catch((error) => {
+          if (groundsPending === pending) groundsPending = null;
+          throw error;
+        });
+      groundsPending = pending;
+    }
+    return groundsPending;
+  }
+
   const presenceShards = manifest.presenceShards ?? [];
   // The years the outlines actually cover. Past the far end there is nothing
   // to draw — CShapes stops in 2019 — and drawing nothing would say the world
@@ -808,6 +861,10 @@ export function createAtlas({
     presences,
     presencesLoaded,
     loadPresences,
+    groundsLoaded,
+    loadGrounds,
+    groundOf,
+    eventsOnGroundOf,
     presencesByActor,
     dependenciesOf,
     presenceShards,
