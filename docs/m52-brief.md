@@ -110,3 +110,42 @@ is carried and its inception documented as open; `docs/m52-russia.md` states
 what a person must decide; `validate --index` clean; tests green; `M52 done`.
 
 ## Deviations this brief takes, numbered on from the last in `STATUS.md`
+
+## Amendments after review
+
+**A1 — a succession requires the dates to meet, and this is general.** The
+owner, 16 September: *"I still don't agree that it can be marked as successor
+event if the dates are not matching."* They are right, and the rule is
+stronger than §2's. A gap between a predecessor's end and a successor's start
+does not mean the dates are imprecise; **it means something else held that
+ground in between, and `succeeded` is then a false label rather than a rough
+one.** A test that only forbids overlap passes every one of these.
+
+So: **a `succeeded` relation is written only where the predecessor's end and
+the successor's start meet** — the same instant, or the year boundary either
+side of it. Where they do not, the relation is not written, and what is
+missing is named.
+
+**A2 — four relations already in the atlas break it**, found by audit on
+16 September over all 88 active successions; 84 are contiguous and these are
+not:
+
+| gap | from | ends | to | starts |
+|---|---|---|---|---|
+| +26 y | `east-timor-under-portugal` | 1976 | `east-timor` | 2002 |
+| +11 y | `zambia-under-united-kingdom` | 1953 | `zambia` | 1964 |
+| +4 y | `taiwan-under-japan` | 1945 | `taiwan` | 1949 |
+| +3 y | `singapore-under-united-kingdom` | 1962 | `singapore` | 1965 |
+
+In each the gap has an occupant a historian would name at once. **This
+milestone does not invent those actors** — that needs sources and is its own
+work. It **retracts the four relations** and lists each in
+`docs/m52-russia.md` with its span and the question it leaves, so the atlas
+stops asserting a succession it cannot support. Retracting a false statement
+needs no source; making the true one does.
+
+**A3 — the rule becomes a test, not a one-off sweep.** Add it to
+`src/validate/rules.js` as a check over every active `succeeded` relation, so
+the next one written with a gap fails at the validator rather than surviving
+to an audit. Number it on from the last rule and document it where the others
+are documented. **Tests before the rule** (deviations 711, 717).
