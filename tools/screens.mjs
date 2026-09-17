@@ -228,6 +228,22 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&from=1480&to=1980&chain=the-atlantic-slave-trade-to-the-caribbean--the-british-industrial-revolution--enabled&selected=the-british-industrial-revolution',
     width: 1440, height: 900,
     what: 'a disputed edge with its dispute: the Williams thesis, and the two historians who put a number against it' },
+  // M54: the case the owner reported, as it looks once the ground is what
+  // finds the events. Brazil is a CShapes record beginning in 1886 and names
+  // no event at all, so its card used to open on an empty list under an atlas
+  // narrowed to one hijacking; it opens on its ground now, and the ground runs
+  // from the landfall of 1500.
+  //
+  // The band is deliberately the twentieth century and not the whole span,
+  // because the other half of the owner's sentence is what happens when it is
+  // narrowed: the list holds everything it found and the rows outside the band
+  // are **faded** rather than taken away, with the hint counting those inside.
+  // Through the frame, which marks the introduction as seen: a browser started
+  // for one screenshot has never been anywhere (deviation 709).
+  { name: 'm54-territory', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=1400&actor=brazil&from=1900&to=2030',
+    width: 1440, height: 1400,
+    what: 'a territory selected: everything that happened on its ground, faded where the band does not reach' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

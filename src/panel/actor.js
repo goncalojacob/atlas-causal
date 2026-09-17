@@ -260,6 +260,19 @@ function successionHtml(ctx, actor) {
   };
 }
 
+// What the card says when no event names this actor. Three answers and not
+// one, because "so the pictures are not narrowed to it" stopped being true for
+// a territory in M54: a polity whose ground holds events **is** a lens, and the
+// pictures are narrowed to exactly those. A `count` of null is the section
+// saying it is still loading (`groundSection`), which is not a list of events
+// and must not be pointed at as one.
+function noEvents(ground, succession) {
+  if (ground && ground.count !== null) {
+    return 'No event here names this actor, and what the pictures hold is what happened on its ground — see <em>What happened on this ground</em>.';
+  }
+  return `No event here names this actor, so the pictures are not narrowed to it${succession ? ' — see <em>Before and after</em>' : ''}.`;
+}
+
 // Exported for the tests: there is no DOM in node --test, and the card is
 // the string, exactly as the source card is.
 export function actorCardHtml(ctx, actor, { state = null, remembered = null } = {}) {
@@ -281,17 +294,23 @@ export function actorCardHtml(ctx, actor, { state = null, remembered = null } = 
     body: appearances.length ? `<ul class="actor-rows">${rows.join('')}</ul>` : '<p class="muted">No event records this actor yet.</p>',
   };
   const successionSection = succession ? { key: 'succession', label: 'Before and after', ...succession } : null;
+  // What happened on its ground, beside what it did itself (M54): the two are
+  // different questions about the same polity and they read as a pair.
+  const ground = groundSection(ctx, actor, state);
   // With no appearances of its own, what came before is the first thing to
   // show and the section the card opens on: `openSection` falls back to the
   // first key, and a card that opened on an empty list to say "nothing
   // happened here" is the whole of finding 28.
-  const sections = appearances.length === 0 && successionSection
-    ? [successionSection, appearancesSection]
-    : [appearancesSection, ...(successionSection ? [successionSection] : [])];
-  // What happened on its ground, right after what it did itself (M54): the two
-  // are different questions about the same polity and they read as a pair.
-  const ground = groundSection(ctx, actor, state);
-  if (ground) sections.push(ground);
+  //
+  // The ground goes in front of that empty list for the same reason, and it is
+  // the more common case by far: 350 of the 412 actors are polities imported
+  // with their borders and no event of their own, and what happened inside
+  // those borders is the history they have. Behind the succession where there
+  // is one — the polity that held this ground under another name is the nearer
+  // answer to "whose events are these", and it was finding 28's own.
+  const sections = appearances.length === 0
+    ? [...(successionSection ? [successionSection] : []), ...(ground ? [ground] : []), appearancesSection]
+    : [appearancesSection, ...(successionSection ? [successionSection] : []), ...(ground ? [ground] : [])];
   if (relations) sections.push({ key: 'relations', label: 'Relations', ...relations });
   // The posts that belong to this actor, each as a strip of its holders
   // (office.js). Between the relations and the territory because it is the
@@ -317,7 +336,7 @@ export function actorCardHtml(ctx, actor, { state = null, remembered = null } = 
 
   return `
     ${actor.status !== 'active' ? `<p class="notice status">This actor is <strong>${esc(actor.status)}</strong>.</p>` : ''}
-    ${appearances.length === 0 ? `<p class="notice no-events">No event here names this actor, so the pictures are not narrowed to it${successionSection ? ' — see <em>Before and after</em>' : ''}.</p>` : ''}
+    ${appearances.length === 0 ? `<p class="notice no-events">${noEvents(ground, successionSection)}</p>` : ''}
     <header class="actor-head">
       ${ctx.historyHtml()}
       <h2>${esc(actor.name)}</h2>

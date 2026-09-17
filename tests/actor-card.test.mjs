@@ -166,9 +166,10 @@ test('the actor card is sections with counts, opening on where it appears', asyn
   // this polity, and a card that opened on an empty list to say "nothing
   // happened here" is the whole of health review B, finding 28.
   // `ground` since M54: the fixture polity stands on ground of its own, and
-  // *what happened here* is a different question from *what did it do*, asked
-  // right after it.
-  assert.deepEqual(keys, ['succession', 'appearances', 'ground', 'relations', 'offices', 'territory', 'sources']);
+  // *what happened here* is a different question from *what did it do*. With
+  // no appearances it goes in front of that empty list, behind the succession
+  // — finding 28's rule, which is the same rule.
+  assert.deepEqual(keys, ['succession', 'ground', 'appearances', 'relations', 'offices', 'territory', 'sources']);
   assert.match(html, /<section class="card-section open" data-section="succession">/);
   assert.equal(count(html, 'appearances'), String((atlas.eventsByActor.get('fixture-polity-three') ?? []).length));
   assert.equal(count(html, 'sources'), String(atlas.citationCount('actor', 'fixture-polity-three')));
