@@ -3,7 +3,7 @@
   "kind": "actor",
   "records": {
     "kingdom-of-portugal": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
