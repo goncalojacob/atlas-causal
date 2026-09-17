@@ -122,12 +122,19 @@ try {
   // polity in never fetches it, and first paint costs what it did — and the
   // views are forced to redraw when it lands, because nothing in the state has
   // changed by then.
+  //
+  // Since M54 it is two files and one ask: the dated join above, and the
+  // territorial one beside it — every event inside the union of that actor's
+  // outlines, at any date, which is what a reader who clicks a territory is
+  // asking (M54 §2). Neither is at first paint and neither is waited for.
   let askedGrounds = false;
   const fetchLensGrounds = (s) => {
-    if (askedGrounds || atlas.groundsLoaded()) return;
+    if (askedGrounds || (atlas.groundsLoaded() && atlas.territoriesLoaded())) return;
     if (!activeFoci(atlas, s).some((f) => f.kind === 'actor')) return;
     askedGrounds = true;
-    atlas.loadGrounds().then(() => remeasure({ force: true }), () => {});
+    for (const load of [atlas.loadGrounds, atlas.loadTerritories]) {
+      load().then(() => remeasure({ force: true }), () => {});
+    }
   };
 
   // The panel is built first because the map hands it the members of a

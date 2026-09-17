@@ -184,7 +184,6 @@ function polity() {
     narratives: new Map(),
     actors: new Map([['late', { id: 'late', name: 'Late', when: { start: 1886, end: null } }]]),
     places: new Map(),
-    adjacency: { in: new Map(), out: new Map() },
     eventsInsideTerritoryOf: (id) => inside.get(id) ?? null,
     resolve: (id) => (id === 'late' ? { id, kind: 'actor', record: { id } } : null),
   };

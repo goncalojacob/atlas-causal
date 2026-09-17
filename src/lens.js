@@ -23,7 +23,10 @@
 //   set    the events the foci name — drawn in full
 //   near   their direct causes and consequences, one hop, in either
 //          direction — drawn dimmed, because a neighbourhood with no edges
-//          out of it looks like an atlas in which nothing else happened
+//          out of it looks like an atlas in which nothing else happened,
+//          and since M54 the rest of a territory's own history with them:
+//          what a polity's ground holds outside the polity's own span is
+//          related and not chosen, which is what dimmed has always meant
 //   shown  the two together, which is what a view draws at all
 //
 // Everything outside `shown` is hidden. The timeline may keep a density strip
@@ -38,6 +41,8 @@
 import { FOCUS, FOCUS_KINDS, FOCUS_NONE } from './vocab.js';
 import { subgraph } from './graph.js';
 import { narrativeEventIds, readingNarrative } from './narrative.js';
+import { bounds } from './util/dates.js';
+import { overlaps } from './util/window.js';
 
 export { FOCUS_KINDS, FOCUS_NONE };
 
@@ -124,14 +129,26 @@ export function eventsOfFocus(focus, topology) {
   // Portugal's. An atlas whose grounds file has not landed answers null for
   // the second half and the lens is the first alone, which is what it was
   // before this milestone — a frame of the old picture, never a wrong one.
+  //
+  // **And since M54 it is three rules, because selecting a polity is selecting
+  // the ground it is drawn as** (the owner, 17 September: "when I select a
+  // territory I can see all events that are related to that territory
+  // independent of the timespan I select"). The third is the union of that
+  // actor's presences with *no date test at all*: a reader who clicks a
+  // territory has clicked a polygon, and Porto Seguro in 1500 is inside the
+  // outline they clicked. `brazil` is a CShapes record beginning in 1886 and
+  // reached three twentieth-century events where four centuries belonged.
+  //
+  // What the date still decides is `dimmedOfFocus` below: what is found is
+  // ground, what is drawn in full is the actor's own span.
   if (kind === 'actor') {
     for (const event of events) {
       if ((event.actors ?? []).some((a) => a.actor === id)) ids.add(event.id);
     }
-    const ground = topology.eventsOnGroundOf?.(id) ?? null;
-    if (ground) {
-      const active = new Set(events.map((e) => e.id));
-      for (const event of ground) if (active.has(event)) ids.add(event);
+    const active = new Set(events.map((e) => e.id));
+    for (const found of [topology.eventsOnGroundOf?.(id) ?? null, topology.eventsInsideTerritoryOf?.(id) ?? null]) {
+      if (!found) continue;
+      for (const event of found) if (active.has(event)) ids.add(event);
     }
     return ids;
   }
@@ -194,6 +211,50 @@ export function lensFor(focus, topology) {
   return eventsOfFocus(focus, topology);
 }
 
+// Which of the events a focus keeps are kept **only** because of the ground
+// they stand on, outside the life of the polity that stands on it (M54 §2).
+//
+// **Dates decide the emphasis, not the discovery.** The actor's own span gives
+// the full drawing — what it did, and what happened on its ground while it was
+// there — and everything else it reaches is dimmed, which is exactly what
+// M48's one-hop neighbours already are. No new token, no new hex value, no new
+// type size: dimmed already means "related, not chosen", and a second way of
+// saying it would be a second thing for a reader to learn.
+//
+// Always a subset of `eventsOfFocus`. Empty for every kind but an actor: a
+// place, an event, a region, a source and a narrative name their events
+// outright and there is no second reason to have found one.
+export function dimmedOfFocus(focus, topology) {
+  const parsed = typeof focus === 'string' ? parseFocus(focus) : focus;
+  const dimmed = new Set();
+  if (!parsed || parsed.kind !== 'actor') return dimmed;
+  const { id } = parsed;
+  const inside = topology.eventsInsideTerritoryOf?.(id) ?? null;
+  if (!inside) return dimmed;
+  const events = topology.activeEvents ?? [];
+  // The actor's own span as a window, so that "is this event inside it" is the
+  // same lenient question the band asks of a row and the timeline asks of a
+  // bar (util/window.js). An actor with no dates is not a reason to dim
+  // anything: nothing is known to be outside a span nobody wrote down.
+  const when = topology.actors?.get(id)?.when ?? null;
+  const span = when ? { from: bounds(when.start).min, to: when.end === null ? Infinity : bounds(when.end).max } : null;
+  const named = new Set();
+  for (const event of events) {
+    if ((event.actors ?? []).some((a) => a.actor === id)) named.add(event.id);
+  }
+  // What the dated pass found is what the actor did on its own ground while it
+  // held it, so it stays full whatever the actor's own record says about its
+  // dates: M48's answer is not narrowed by this milestone.
+  const held = topology.eventsOnGroundOf?.(id) ?? null;
+  for (const event of events) {
+    if (!inside.has(event.id)) continue;
+    if (named.has(event.id) || held?.has(event.id)) continue;
+    if (span && overlaps(event.when, span)) continue;
+    dimmed.add(event.id);
+  }
+  return dimmed;
+}
+
 // The union of the foci, or their intersection when `all`. The intersection of
 // nothing is nothing and not everything: with no foci there is no lens, and
 // that is said by returning null above rather than by an empty set here.
@@ -211,6 +272,36 @@ export function focusSet(foci, topology, { all = false } = {}) {
   const both = new Set();
   for (const id of smallest) if (rest.every((set) => set.has(id))) both.add(id);
   return both;
+}
+
+// The two halves of what the foci keep: what is drawn in full, and what is
+// only related (M54). Over the whole list at once, because one focus's ground
+// is another's own history — an event dimmed by the lens on Brazil is Portugal
+// in full if Portugal is a focus too, and a reader who asked for both is
+// looking at it for the second reason. So an event is dimmed only when **every
+// focus that keeps it** keeps it for its ground alone.
+//
+// The same rule under `all`: the intersection is narrower, and what it holds is
+// still drawn in full wherever one of the foci chose it.
+export function focusParts(foci, topology, { all = false } = {}) {
+  const parts = foci
+    .map((focus) => ({ keep: eventsOfFocus(focus, topology), dim: dimmedOfFocus(focus, topology) }))
+    .filter((part) => part.keep);
+  const kept = focusSet(foci, topology, { all });
+  const faint = new Set();
+  for (const id of kept) {
+    let chosen = false;
+    let related = false;
+    for (const { keep, dim } of parts) {
+      if (!keep.has(id)) continue;
+      if (dim.has(id)) related = true;
+      else chosen = true;
+    }
+    if (related && !chosen) faint.add(id);
+  }
+  const set = new Set();
+  for (const id of kept) if (!faint.has(id)) set.add(id);
+  return { set, faint, kept };
 }
 
 // The dimmed ring: everything one step out from the focus set, in either
@@ -345,15 +436,24 @@ export function lensView(atlas, state) {
   // An actor's is the third: which events are on its ground is a file fetched
   // when a lens of that kind is first set (M48 §2, data.js), and the answer
   // before it lands is the `actors` list alone.
-  const stamp = `${all}|${atlas.groundsLoaded?.() ? 1 : 0}|${foci.map((f) => {
+  // And the fourth is M54's: the territorial join is a second file, asked for
+  // by the same lens and landing on its own.
+  const stamp = `${all}|${atlas.groundsLoaded?.() ? 1 : 0}|${atlas.territoriesLoaded?.() ? 1 : 0}|${foci.map((f) => {
     if (f.kind === 'source') return `${f.id}:${atlas.citersOf?.(f.id) ? 1 : 0}`;
     if (f.kind === 'narrative') return `${f.id}:${(atlas.narratives?.get(f.id)?.steps ?? []).length}`;
     return '';
   }).join(',')}`;
   const found = state ? held.get(state) : null;
   if (found && found.atlas === atlas && found.stamp === stamp) return found.value;
-  const set = focusSet(foci, atlas, { all });
-  const near = ringOf(atlas, set);
+  // What the foci keep, split into what they chose and what they only reach
+  // (M54). The ring is taken around **everything they keep** and not around
+  // the full half alone: M48's neighbourhood is the neighbourhood of the lens,
+  // and an event found by its ground is in the lens. The two dimmed halves
+  // then join — a neighbour and a territory's older history are the same thing
+  // to a reader, related and not chosen, and they are drawn the same way.
+  const { set, faint, kept } = focusParts(foci, atlas, { all });
+  const near = ringOf(atlas, kept);
+  for (const id of faint) near.add(id);
   const shown = new Set(set);
   for (const id of near) shown.add(id);
   // **What the reader has just clicked is associated by definition.** An
