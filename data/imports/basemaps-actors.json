@@ -56,7 +56,7 @@
       "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Belize": {
-      "actor": "belize-before-1886",
+      "actor": "belize-before-1981",
       "names": [
         "Belize"
       ],
@@ -70,7 +70,7 @@
       "note": "data/actors/benin.json carries this name and is a different question: it runs from 1960, and this source draws the name in 1400, 1492, 1500, 1530, 1600, 1650, 1700, 1878, 1880. Whether they are one polity is a historical judgement nobody here has made, so they are two records until somebody makes it by pointing this entry at benin."
     },
     "Bhutan": {
-      "actor": "bhutan-before-1886",
+      "actor": "bhutan-before-1948",
       "names": [
         "Bhutan"
       ],
@@ -417,7 +417,7 @@
       "note": "The atlas already holds this actor, from CShapes, beginning in 1886 where that dataset begins rather than where the polity did; this source draws the same name in 1878, 1880, the last of them six years earlier. Neither dataset records anything in between, so they are one record."
     },
     "Philippines": {
-      "actor": "philippines-before-1886",
+      "actor": "philippines-before-1946",
       "names": [
         "Philippines"
       ],

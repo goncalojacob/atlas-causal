@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "cshapes"
   },
@@ -25,7 +25,7 @@
   ],
   "actor": "kamerun",
   "presenceType": "state",
-  "dependencyOf": "germany-prussia",
+  "dependencyOf": "german-empire",
   "dependencyKind": "colony",
   "when": {
     "start": 1901,
