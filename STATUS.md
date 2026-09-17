@@ -10010,6 +10010,22 @@ the same ground under another name — M49's question, still a person's.
      a later milestone that wants rule 30 back has to notice that it is taking
      a name with a history rather than the next free integer.
 
+798. **A pushed head was red for three commits, and it was deviation 711 in
+     `data/` rather than in the fixtures.** Run 801 on `d8a544cb`, the commit
+     that wrote the six polities, failed one test — `validate.mjs passes on the
+     repository data` — with six rule 16 errors naming history shards. The
+     index was built from a working tree where `empire-of-brazil` and the rest
+     were still untracked, so the shards it wrote named different files from
+     the ones a build after the commit names. The tree was green locally and
+     the push was red, which is exactly the shape 711 describes and the
+     amendment of 15 September does not: it says to run `build-index.mjs` and
+     commit the result, and leaves the *order* to 711, which is about
+     `tests/fixtures/`. **For `data/` the order is the same: commit the
+     records, rebuild, commit the index** — and, per deviation 796, rebuild the
+     palette first. `b9b1a489` is that second turn of the crank and run 806 on
+     the head is green in every step, the Action's own "The index committed
+     here is the one those records build" included.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
