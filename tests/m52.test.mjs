@@ -32,7 +32,16 @@ const readDir = async (kind) => {
 
 const actors = await readDir('actors');
 const relations = await readDir('relations');
+// M56 renamed five actors, this milestone's among them, and the whole promise
+// of a rename is that the former id keeps resolving. So the lookup here
+// resolves it: an id written in this milestone's document finds the record
+// that carries it today, under whatever handle it is filed under now. That is
+// the atlas's own `resolveId`, narrowed to what these tests ask of it.
 const byId = new Map(actors.map((a) => [a.id, a]));
+for (const a of actors) for (const alias of a.aliases ?? []) if (!byId.has(alias)) byId.set(alias, a);
+// The id a record is filed under today, for the places that compare strings
+// rather than look a record up.
+const idNow = (id) => byId.get(id)?.id ?? id;
 
 // A bound is a year or { min, max }; the latest a record may have ended and
 // the earliest it may have begun are what rule 30 compares, so an uncertain
@@ -301,7 +310,10 @@ test(`${DOC} §2.6 says where each event's entry went, and that is where it went
   for (const [id, actor] of expected) {
     const e = byEvent.get(id);
     if (!e) { wrong.push(`${id}: no such event`); continue; }
-    if (!(e.actors ?? []).some((a) => a.actor === actor)) {
+    // `idNow` on both sides: the document's ids are M52's, and M56 renamed
+    // `russia-soviet-union` to `russian-federation`. A former id resolving to
+    // the record that carries it is the whole promise of a rename.
+    if (!(e.actors ?? []).some((a) => idNow(a.actor) === idNow(actor))) {
       wrong.push(`${id}: ${DOC} puts it on ${actor}, the record names ${(e.actors ?? []).map((a) => a.actor).join(', ')}`);
     }
   }
@@ -310,7 +322,7 @@ test(`${DOC} §2.6 says where each event's entry went, and that is where it went
   for (const e of events) {
     if (e.status !== 'active') continue;
     for (const a of e.actors ?? []) {
-      if (a.actor === 'russia-soviet-union' && expected.get(e.id) !== 'russia-soviet-union') {
+      if (idNow(a.actor) === idNow('russia-soviet-union') && idNow(expected.get(e.id) ?? '') !== idNow('russia-soviet-union')) {
         wrong.push(`${e.id} still names russia-soviet-union and ${DOC} §2.6 does not list it there`);
       }
     }

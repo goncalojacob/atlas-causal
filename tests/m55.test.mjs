@@ -31,9 +31,25 @@ const readDir = async (kind) => {
 const actors = await readDir('actors');
 const relations = await readDir('relations');
 const presences = await readDir('presences');
+// M56 renamed five actors, this milestone's among them, and the whole promise
+// of a rename is that the former id keeps resolving. So the lookup here
+// resolves it: an id written in this milestone's document finds the record
+// that carries it today, under whatever handle it is filed under now. That is
+// the atlas's own `resolveId`, narrowed to what these tests ask of it.
 const byId = new Map(actors.map((a) => [a.id, a]));
+for (const a of actors) for (const alias of a.aliases ?? []) if (!byId.has(alias)) byId.set(alias, a);
+// The id a record is filed under today, for the places that compare strings
+// rather than look a record up.
+const idNow = (id) => byId.get(id)?.id ?? id;
+// Relations and presences resolve through their aliases too: M56's rename of
+// `germany-prussia` cascaded into the relation id derived from it and into the
+// presence ids the CShapes import derives as `<actor>-<year>`. Each keeps its
+// former id, and that is what this document's tables are written in.
 const byRelation = new Map(relations.map((r) => [r.id, r]));
+for (const r of relations) for (const alias of r.aliases ?? []) if (!byRelation.has(alias)) byRelation.set(alias, r);
 const byPresence = new Map(presences.map((p) => [p.id, p]));
+for (const p of presences) for (const alias of p.aliases ?? []) if (!byPresence.has(alias)) byPresence.set(alias, p);
+const relationNow = (id) => byRelation.get(id)?.id ?? id;
 
 const latest = (bound) => (Number.isInteger(bound) ? bound : bound?.max);
 const earliest = (bound) => (Number.isInteger(bound) ? bound : bound?.min);
@@ -102,7 +118,7 @@ test(`${DOC} §3's periods are where it says, and every one belongs to a record`
     const p = byPresence.get(row.id);
     if (!p) { wrong.push(`${row.id}: no such presence`); continue; }
     if (p.status !== 'active') wrong.push(`${row.id}: ${p.status}, not active`);
-    if (p.actor !== row.actor) wrong.push(`${row.id}: belongs to ${p.actor}, not ${row.actor}`);
+    if (idNow(p.actor) !== idNow(row.actor)) wrong.push(`${row.id}: belongs to ${p.actor}, not ${row.actor}`);
     if (earliest(p.when?.start) !== row.from) wrong.push(`${row.id}: begins ${earliest(p.when?.start)}, not ${row.from}`);
     if (latest(p.when?.end) !== row.to) wrong.push(`${row.id}: ends ${latest(p.when?.end)}, not ${row.to}`);
     if (!byId.get(p.actor)) wrong.push(`${row.id}: ${p.actor} is not an actor`);
@@ -151,7 +167,7 @@ test(`${DOC} §4 lists every succession M55 wrote, with the gap the records show
   const mine = relations
     .filter((r) => r.type === 'succeeded' && r.status === 'active' && r.origin?.run === 'm55')
     .map((r) => r.id).sort();
-  assert.deepEqual(successions.map((row) => row.id).sort(), mine,
+  assert.deepEqual(successions.map((row) => relationNow(row.id)).sort(), mine,
     `${DOC} §4 and the successions M55 wrote are not the same set`);
   const wrong = [];
   for (const row of successions) {
@@ -234,7 +250,9 @@ test('`germany` is merged into the record that is now the German Empire', () => 
   const survivor = byId.get('germany-prussia');
   assert.ok(merged && survivor, 'one of the two records is missing');
   assert.equal(merged.status, 'merged', '`germany` is not merged');
-  assert.equal(merged.supersededBy, 'germany-prussia', '`germany` does not point at the survivor');
+  // M56 filed the survivor under `german-empire`; what is asserted is that
+  // `germany` points at *it*, not at a particular spelling of its name.
+  assert.equal(idNow(merged.supersededBy), survivor.id, '`germany` does not point at the survivor');
   assert.equal(survivor.status, 'active', 'the survivor is not active');
   const stranded = presences.filter((p) => p.status === 'active' && p.actor === 'germany').map((p) => p.id);
   assert.deepEqual(stranded, [], `${stranded.join(', ')}: a merged record holds no ground`);
@@ -257,7 +275,7 @@ test(`${DOC} §5 says which actor each event names, and that is the one it names
     if (e.status !== 'active') wrong.push(`${row.id}: ${e.status}, not active`);
     if (earliest(e.when?.start) !== row.year) wrong.push(`${row.id}: begins ${earliest(e.when?.start)}, not ${row.year}`);
     const named = (e.actors ?? []).map((x) => x.actor);
-    if (!named.includes(row.actor)) wrong.push(`${row.id}: ${DOC} puts it on ${row.actor}, it names ${named.join(', ')}`);
+    if (!named.some((x) => idNow(x) === idNow(row.actor))) wrong.push(`${row.id}: ${DOC} puts it on ${row.actor}, it names ${named.join(', ')}`);
     // The brief's third test, over every row and not only over World War II:
     // an entry names the actor that held the role then. M56's rule — the
     // actor's life **meets** the event's span, rather than covering the year

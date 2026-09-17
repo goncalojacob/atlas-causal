@@ -8,6 +8,9 @@
 // veredicto não é medido — é a leitura de uma pessoa sobre o que a medida e o
 // nome dizem juntos — e está escrito no documento, não aqui.
 
+import { readdirSync, readFileSync } from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { readPresences, geometryFor, overlap } from './overlap.mjs';
 
 export const PAIRS = Object.freeze([
@@ -50,8 +53,31 @@ export const PAIRS = Object.freeze([
 //
 // O `-` e o ano importam: `victoria-uk-1880` começa por `victoria-` e não é
 // uma presença de `victoria`.
+// **M56 moved the id after all**, which the paragraph above did not expect.
+// Five actors carried a handle that had stopped describing them —
+// `belize-before-1886` running to 1981 — and renaming one renames the
+// presences whose ids the territory imports derive from it, so
+// `belize-before-1886-1650` is `belize-before-1981-1650` today.
+//
+// The table above keeps the ids `docs/m51-overlaps.md` was written with,
+// because that document is M51's account and the rows are its rows. What moves
+// is where they are looked for: `filedAs` follows the `aliases` a rename
+// leaves behind, which is the whole of the promise that a former id keeps
+// resolving. The measure is over the same two outlines either way.
+function filedAs() {
+  const here = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'data', 'actors');
+  const now = new Map();
+  for (const file of readdirSync(here)) {
+    if (!file.endsWith('.json')) continue;
+    const a = JSON.parse(readFileSync(path.join(here, file), 'utf8'));
+    for (const alias of a.aliases ?? []) if (!now.has(alias)) now.set(alias, a.id);
+  }
+  return (id) => now.get(id) ?? id;
+}
+
 export function measure() {
   const all = readPresences().filter((p) => p.status === 'active');
+  const now = filedAs();
   const byPrefix = new Map();
   for (const p of all) {
     const m = /^(.*)-\d{4}(-[a-z0-9]+)?$/.exec(p.id);
@@ -62,8 +88,8 @@ export function measure() {
 
   return PAIRS.map(([before, after]) => {
     const pick = (id, keep) => (byPrefix.get(id) ?? []).filter(keep).sort((a, b) => a.when.start - b.when.start);
-    const pb = pick(before, (p) => p.when.start <= 1885);
-    const pa = pick(after, (p) => p.when.start >= 1886);
+    const pb = pick(now(before), (p) => p.when.start <= 1885);
+    const pa = pick(now(after), (p) => p.when.start >= 1886);
     const lastBefore = pb[pb.length - 1] ?? null;
     const firstAfter = pa[0] ?? null;
     const row = {

@@ -37,7 +37,16 @@ const actors = await readDir('actors');
 const relations = await readDir('relations');
 const presences = await readDir('presences');
 const events = await readDir('events');
+// M56 renamed five actors, this milestone's among them, and the whole promise
+// of a rename is that the former id keeps resolving. So the lookup here
+// resolves it: an id written in this milestone's document finds the record
+// that carries it today, under whatever handle it is filed under now. That is
+// the atlas's own `resolveId`, narrowed to what these tests ask of it.
 const byId = new Map(actors.map((a) => [a.id, a]));
+for (const a of actors) for (const alias of a.aliases ?? []) if (!byId.has(alias)) byId.set(alias, a);
+// The id a record is filed under today, for the places that compare strings
+// rather than look a record up.
+const idNow = (id) => byId.get(id)?.id ?? id;
 
 // --- the file and the ground -------------------------------------------
 
