@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "brandenburg-prussia",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m55"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-germany"
+    ],
+    "note": "M55: written on Wikidata’s Q157367 — P571 1618, P576 1701, both to the year — because `prussia` claimed 1530 to 1877 and the Kingdom of Prussia it is named for begins 1701-01-18 on Q27306. It holds the ground Historical Basemaps draws as \"Prussia\" before that date. Two of those four periods begin before 1618 and are flagged m55-gap: the atlas has no record for the Duchy of Prussia or the Margraviate of Brandenburg, and docs/m55-germany.md §6 says so."
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q157367, P571 1618"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q157367, P576 1701"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q157367, P1366 Q27306 (replaced by the Kingdom of Prussia)"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Brandenburg-Prussia"
+  ],
+  "summary": "A polity whose inception Wikidata states as 1618 on Q157367 and whose dissolution it states as 1701; both values are given to the year there and both years here are those two values and nothing else. The same item says it was replaced by Q27306, the Kingdom of Prussia, which is where this record’s succession comes from. It is written because the atlas’s `prussia` carried 1530 to 1877 under the name of a kingdom that Wikidata dates from 1701-01-18: the ground Historical Basemaps draws as \"Prussia\" before that day is this polity’s, not the kingdom’s. It holds the snapshots of 1530, 1600 and 1650 and the first half of the one that begins in 1700, cut at the kingdom’s inception; the first two of those begin before its own, because the dataset draws that ground continuously and no record here is dated for the Duchy of Prussia or for Brandenburg alone.",
+  "when": {
+    "start": 1618,
+    "end": 1701
+  },
+  "where": null
+}

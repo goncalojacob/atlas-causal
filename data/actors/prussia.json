@@ -13,30 +13,41 @@
   ],
   "license": "GPL-3.0-only",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "basemaps"
   },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m55-germany"
+    ],
+    "note": "M55: this record said 1530 to 1877 and both ends were file boundaries. Its interval is now Wikidata’s Q27306, P571 1701-01-18 and P576 1918-11-09. The ground it held before 1701 went to `brandenburg-prussia`, and the period that spanned the date is cut at it, outline unchanged. No succession is written to the German Empire: the two stand together for forty-seven years and end on the same day, which is not what `succeeded` says. See docs/m55-germany.md."
   },
   "sources": [
     {
       "source": "historical-basemaps",
       "locator": "NAME \"Prussia\""
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q27306, P571 1701-01-18"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q27306, P576 1918-11-09"
     }
   ],
   "actorType": "polity",
   "names": [
+    "Kingdom of Prussia",
     "Prussia"
   ],
-  "summary": "A polity the Historical Basemaps dataset draws in the snapshots for 1530, 1600, 1650, 1700, 1715, 1783, 1800 and 1815. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The interval on this record is the span those snapshots cover, 1530 to 1877, and not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "A polity Historical Basemaps draws in the snapshots for 1530, 1600, 1650, 1700, 1715, 1783, 1800 and 1815 under the name \"Prussia\". That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors’ work in progress and asks to be checked against other sources before use, and the span those snapshots cover — 1530 to 1877 — was this record’s interval until M55. It is now the Kingdom of Prussia’s own: Wikidata states P571 1701-01-18 and P576 1918-11-09 on Q27306, and neither of the old numbers was a claim about a polity beginning or ending. The snapshots before 1701 are `brandenburg-prussia`’s, and the one that begins in 1700 is cut at the kingdom’s inception. The kingdom outlives the German Empire’s founding by forty-seven years and ends on the same day as it, which is why no succession runs between them.",
   "when": {
-    "start": 1530,
-    "end": 1877
+    "start": 1701,
+    "end": 1918
   },
   "where": null
 }
