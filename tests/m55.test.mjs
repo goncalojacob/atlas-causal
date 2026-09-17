@@ -259,13 +259,17 @@ test(`${DOC} §5 says which actor each event names, and that is the one it names
     const named = (e.actors ?? []).map((x) => x.actor);
     if (!named.includes(row.actor)) wrong.push(`${row.id}: ${DOC} puts it on ${row.actor}, it names ${named.join(', ')}`);
     // The brief's third test, over every row and not only over World War II:
-    // an entry names the actor that held the role then.
+    // an entry names the actor that held the role then. M56's rule — the
+    // actor's life **meets** the event's span, rather than covering the year
+    // it began — which is what lets a three-century process name a polity that
+    // enters part-way through it.
     const a = byId.get(row.actor);
     if (!a) { wrong.push(`${row.id}: ${row.actor} is not a record`); continue; }
     const start = earliest(a.when?.start);
     const end = a.when?.end === null || a.when?.end === undefined ? Infinity : latest(a.when.end);
-    if (row.year < start || row.year > end) {
-      wrong.push(`${row.id} (${row.year}) names ${a.id} (${start}–${a.when?.end ?? 'open'}), which was not alive then`);
+    const until = e.when?.end === null || e.when?.end === undefined ? Infinity : latest(e.when.end);
+    if (end < row.year || start > until) {
+      wrong.push(`${row.id} (${row.year}–${e.when?.end ?? 'open'}) names ${a.id} (${start}–${a.when?.end ?? 'open'}), whose life does not meet it`);
     }
   }
   assert.deepEqual(wrong.sort(), [], wrong.join('; '));

@@ -242,26 +242,29 @@ test('a presence of a record M52 touched is inside that actor\'s interval, unles
   assert.deepEqual(outside.sort(), [], outside.join('; '));
 });
 
-// The brief's fifth test. `chinese-civil-war` names `taiwan` (1949) in 1946;
-// it predates M51, M51 listed it, and M52 does not touch either record, so
-// the scope here is the same as M51's — the records this milestone moved.
-test('an event naming a record M52 touched names one that was alive then, or is listed in the document', () => {
+// The brief's fifth test, under M56's corrected rule: an entry is sound when
+// the actor's life **overlaps** the event's span, not when the actor was alive
+// in the year the event began. The scope is M51's — the records this milestone
+// moved — and the document escape below is kept for an entry the rule refuses
+// and a person has already argued for.
+test('an event naming a record M52 touched names one whose life meets it, or is listed in the document', () => {
   const wrong = [];
   for (const event of events) {
     if (event.status !== 'active') continue;
-    const year = earliest(event.when?.start);
-    if (typeof year !== 'number') continue;
+    const from = earliest(event.when?.start);
+    if (typeof from !== 'number') continue;
+    const to = event.when?.end === null || event.when?.end === undefined ? Infinity : latest(event.when.end);
     for (const entry of event.actors ?? []) {
       if (!touched.has(entry.actor)) continue;
       const a = byId.get(entry.actor);
       if (!a) { wrong.push(`${event.id} names ${entry.actor}, which is not there`); continue; }
       const start = earliest(a.when?.start);
       const end = a.when?.end === null || a.when?.end === undefined ? Infinity : latest(a.when.end);
-      if (year >= start && year <= end) continue;
+      if (!(end < from || start > to)) continue;
       // Listed means named in the document beside the question it raises,
       // not merely mentioned once in a table of what moved where.
       if (new RegExp(`\`${event.id}\`\\*{0,2}, `).test(doc)) continue;
-      wrong.push(`${event.id} (${year}) names ${a.id} (${start}–${a.when?.end ?? 'open'}) and ${DOC} does not say why`);
+      wrong.push(`${event.id} (${from}–${event.when?.end ?? 'open'}) names ${a.id} (${start}–${a.when?.end ?? 'open'}) and ${DOC} does not say why`);
     }
   }
   assert.deepEqual(wrong.sort(), [], wrong.join('; '));

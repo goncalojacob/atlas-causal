@@ -271,6 +271,14 @@ const roles = new Set(JSON.parse(await readFile(path.join(ROOT, 'data/roles.json
 
 const from = (when) => earliest(when?.start);
 const to = (when) => (when?.end === null || when?.end === undefined ? Infinity : latest(when.end));
+// M56: the rule is **overlap**, not life at the event's start. Written here
+// as `meets` and held once in `tests/m56.test.mjs`; `alive` survives below for
+// the one thing that is a count and not a soundness check.
+const meets = (id, when) => {
+  const a = byId.get(id);
+  if (!a || a.status !== 'active') return false;
+  return !(to(a.when) < from(when) || from(a.when) > to(when));
+};
 const alive = (id, year) => {
   const a = byId.get(id);
   if (!a || a.status !== 'active') return false;
@@ -282,7 +290,7 @@ const alive = (id, year) => {
 // never asked whether a chain event is reachable from an actor — which is how
 // M48 and M54 made the atlas explorable. Thirty-five of thirty-six carried
 // `actors: []` until this milestone.
-test('every event of the two M50 chains names an actor alive in the year it starts', () => {
+test('every event of the two M50 chains names an actor whose life meets it', () => {
   assert.ok(chain.size >= 30, `docs/m50-chains.md lists ${chain.size} events`);
   const byEvent = new Map(events.map((e) => [e.id, e]));
   const silent = [];
@@ -293,8 +301,8 @@ test('every event of the two M50 chains names an actor alive in the year it star
     const year = from(e.when);
     const entries = e.actors ?? [];
     if (entries.length === 0) { silent.push(`${id} (${year}) carries actors: []`); continue; }
-    if (!entries.some((x) => alive(x.actor, year))) {
-      silent.push(`${id} (${year}) names ${entries.map((x) => x.actor).join(', ')} and none was alive then`);
+    if (!entries.some((x) => meets(x.actor, e.when))) {
+      silent.push(`${id} (${year}) names ${entries.map((x) => x.actor).join(', ')} and none of them meets it`);
     }
   }
   assert.deepEqual(silent.sort(), [], silent.join('; '));
@@ -328,11 +336,23 @@ test('every actors entry M53 wrote names an actor whose life overlaps the event'
 const COUNT_ROW = /^\| \*\*after M53\*\* \| (\d+) of (\d+) \| (\d+) of (\d+) \|/;
 const counted = doc.split('\n').map((line) => COUNT_ROW.exec(line)).filter(Boolean)[0];
 
+// M56 left the rule here alone, and this is why. §4.1 is a **coverage**
+// figure, not a soundness check, and the document states the rule it counted
+// by in its own words — "an event names at least one actor that is alive in
+// the year the event starts". Rewriting the predicate under a sentence that
+// says otherwise would make the correspondence this file exists for a lie.
+// Measured on 17 September, the two rules give the **same four numbers**: no
+// event owes its place in the count to an actor that merely overlaps it. If
+// that ever stops being true this test fails, and the answer then is to say so
+// in the document rather than to change the reading underneath it.
 test(`${DOC} §4.1 reports the figure the corpus actually shows`, () => {
   assert.ok(counted, `${DOC} §4.1 carries no "after M53" row`);
   const [, chainNamed, chainTotal, allNamed, allTotal] = counted.map(Number);
   const active = events.filter((e) => e.status === 'active');
   const names = (e) => (e.actors ?? []).some((x) => alive(x.actor, from(e.when)));
+  const meeting = (e) => (e.actors ?? []).some((x) => meets(x.actor, e.when));
+  assert.equal(active.filter(names).length, active.filter(meeting).length,
+    'the two rules no longer give the same figure: §4.1 says which one it counted by');
   const chainActive = active.filter((e) => chain.has(e.id));
   assert.equal(chainActive.length, chainTotal, `${DOC} says ${chainTotal} active chain events`);
   assert.equal(chainActive.filter(names).length, chainNamed, `${DOC} says ${chainNamed} chain events name an actor alive at their start`);
@@ -357,7 +377,7 @@ test(`${DOC} §4.3 says where the three stranded events went, and that is where 
     const named = (e.actors ?? []).map((x) => x.actor);
     if (!named.includes(row.is)) wrong.push(`${row.id}: ${DOC} puts it on ${row.is}, it names ${named.join(', ')}`);
     if (named.includes(row.was)) wrong.push(`${row.id}: still names ${row.was}`);
-    if (!alive(row.is, from(e.when))) wrong.push(`${row.id}: ${row.is} was not alive in ${from(e.when)}`);
+    if (!meets(row.is, e.when)) wrong.push(`${row.id}: ${row.is} does not meet ${from(e.when)}–${e.when?.end ?? 'open'}`);
   }
   assert.deepEqual(wrong.sort(), [], wrong.join('; '));
 });

@@ -208,25 +208,31 @@ test('a presence of a record this milestone touched falls inside that actor\'s i
   assert.deepEqual(outside.sort(), [], outside.join('; '));
 });
 
-// The brief's fifth test, and the same scoping. `chinese-civil-war` (1946)
-// names `taiwan` (1949–open); it is known, it predates M51, and this run does
-// not touch either record, so it is listed here rather than fixed.
-const KNOWN = new Set(['chinese-civil-war--taiwan']);
-
-test('an event naming a record this milestone touched names one that was alive then', () => {
+// The brief's fifth test, and the same scoping. M51 carried an exception for
+// `chinese-civil-war` (1946–1950) naming `taiwan` (1949–open), listed rather
+// than fixed because the run touched neither record. **M56 dropped the
+// exception, because under the corrected rule there is nothing to except**:
+// the event ends in 1950 and the actor begins in 1949, so the two meet. The
+// rule is overlap — an entry is sound when the actor's life meets the event's
+// span — and it is held over the whole corpus in `tests/m56.test.mjs`.
+test('an event naming a record this milestone touched names one whose life meets it', () => {
   const wrong = [];
+  const last = (bound) => (Number.isInteger(bound) ? bound : bound?.max);
+  const first = (bound) => (Number.isInteger(bound) ? bound : bound?.min);
   for (const event of events) {
     if (event.status !== 'active') continue;
-    const year = event.when?.start;
-    if (typeof year !== 'number') continue;
+    const from = first(event.when?.start);
+    if (typeof from !== 'number') continue;
+    const to = event.when?.end === null || event.when?.end === undefined ? Infinity : last(event.when.end);
     for (const entry of event.actors ?? []) {
       if (!touched.has(entry.actor)) continue;
-      if (KNOWN.has(`${event.id}--${entry.actor}`)) continue;
       const a = byId.get(entry.actor);
       if (!a) { wrong.push(`${event.id} names ${entry.actor}, which is not there`); continue; }
-      const start = a.when?.start;
-      const end = a.when?.end ?? Infinity;
-      if (year < start || year > end) wrong.push(`${event.id} (${year}) names ${a.id} (${start}–${a.when?.end ?? 'open'})`);
+      const start = first(a.when?.start);
+      const end = a.when?.end === null || a.when?.end === undefined ? Infinity : last(a.when.end);
+      if (end < from || start > to) {
+        wrong.push(`${event.id} (${from}–${event.when?.end ?? 'open'}) names ${a.id} (${start}–${a.when?.end ?? 'open'})`);
+      }
     }
   }
   assert.deepEqual(wrong.sort(), [], wrong.join('; '));
