@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-16",
+  "revised": "2026-09-17",
   "origin": {
     "tool": "wikidata"
   },
@@ -68,7 +68,8 @@
   "actors": [
     {
       "actor": "germany-prussia",
-      "role": "belligerent"
+      "role": "belligerent",
+      "note": "the belligerent when the war begins; Q43287 ends the German Empire on 1918-11-09, two days before this event’s own end date"
     },
     {
       "actor": "austria-hungary",

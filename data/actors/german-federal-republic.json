@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "cshapes"
   },
@@ -21,15 +21,19 @@
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 260"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q713750, P571 1949-05-23"
     }
   ],
   "actorType": "polity",
   "names": [
     "German Federal Republic"
   ],
-  "summary": "Entity 260 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1945 to where the dataset stops, in 2019. Its last capital in the dataset is Berlin. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Entity 260 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1945 to where the dataset stops, in 2019. Its last capital in the dataset is Berlin. This record was written by the import from those fields and asserts nothing the dataset does not. M55 moved its inception from 1945, which is where CShapes starts drawing entity 260, to 1949-05-23, which Wikidata states as P571 on Q713750 and as the preferred P571 on Q183. The period the dataset draws from 1945 to 1949 is kept and flagged: the ground was under Allied occupation and this atlas holds no record for that.",
   "when": {
-    "start": 1945,
+    "start": 1949,
     "end": null
   },
   "where": {
@@ -37,5 +41,12 @@
     "lat": 52.51667,
     "precision": "city",
     "label": "Berlin"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-germany"
+    ],
+    "note": "M55: this record began in 1945, where CShapes begins drawing entity 260 — the German surrender, not a founding. It now begins 1949-05-23, which is Wikidata’s P571 on Q713750 (West Germany) and also the preferred P571 on Q183 (Germany); the citation is to Q713750, whose item covers exactly the state this record’s first CShapes periods draw. Its 1945–1949 period is flagged m55-gap: what held that ground was the Allied occupation, and the atlas has no record for it."
   }
 }

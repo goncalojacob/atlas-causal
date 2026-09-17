@@ -192,6 +192,111 @@ test('every succession whose cited dates do not meet says so in its own note', (
   assert.deepEqual(thin.sort(), [], thin.join('; '));
 });
 
+// --- §2 and §5: the chip, the join, and the events -----------------------
+
+// The chip the owner objected to. Not a count of actors and not a list of
+// ids: the two things wrong with `germany-prussia` were that it was called
+// three polities at once and that it stood through every date Wikidata gives
+// for the end of one of them and the start of the next.
+test('no active actor is called "Germany (Prussia)", and none from entity 255 stands through both 1918 and 1933', () => {
+  const named = actors.filter((a) => a.status === 'active')
+    .filter((a) => (a.names ?? []).some((n) => /\(Prussia\)/.test(n)))
+    .map((a) => a.id);
+  assert.deepEqual(named, [], `${named.join(', ')} still carries the label that started this milestone`);
+  // Asked of the records CShapes' entity 255 produced, which is where the
+  // conflation was, and not of every record whose name says Germany.
+  //
+  // "Stands through" is strict on purpose. The Weimar Republic genuinely runs
+  // from 1918 to 1933 — those are the two dates, and forbidding a record that
+  // *begins* at one and *ends* at the other would be forbidding the history,
+  // which is the exception `tests/m52.test.mjs` had to make for the Russian
+  // SFSR. What may not exist is a record standing straight through either
+  // change with the polity on both sides of it, which is what
+  // "Germany (Prussia)" 1886–1945 did at both dates at once.
+  const fromEntity255 = (a) => (a.sources ?? []).some((s) => s.source === 'cshapes-2-0' && /gwcode 255/.test(s.locator ?? ''));
+  const through = (a, year) => {
+    const start = earliest(a.when?.start);
+    const end = a.when?.end === null || a.when?.end === undefined ? Infinity : latest(a.when.end);
+    return start < year && end > year;
+  };
+  const straddling = actors.filter((a) => a.status === 'active')
+    .filter(fromEntity255)
+    .filter((a) => through(a, 1918) || through(a, 1933))
+    .map((a) => `${a.id} (${earliest(a.when?.start)}–${a.when?.end ?? 'open'})`);
+  assert.deepEqual(straddling, [], `${straddling.join(', ')} stands through a date at which Wikidata changes the polity, which is the record M55 was written to split`);
+});
+
+// The join M51 could not make, held to the shape M51 gave a join: one active
+// record, one merged record pointing at it, and no presence left behind on
+// the merged one.
+test('`germany` is merged into the record that is now the German Empire', () => {
+  const merged = byId.get('germany');
+  const survivor = byId.get('germany-prussia');
+  assert.ok(merged && survivor, 'one of the two records is missing');
+  assert.equal(merged.status, 'merged', '`germany` is not merged');
+  assert.equal(merged.supersededBy, 'germany-prussia', '`germany` does not point at the survivor');
+  assert.equal(survivor.status, 'active', 'the survivor is not active');
+  const stranded = presences.filter((p) => p.status === 'active' && p.actor === 'germany').map((p) => p.id);
+  assert.deepEqual(stranded, [], `${stranded.join(', ')}: a merged record holds no ground`);
+});
+
+// §5's table against the events, in both directions: every entry is where the
+// document says it went, the actor named was alive when the event began, and
+// nothing still names the old record that the table does not account for.
+const events = await readDir('events');
+const byEvent = new Map(events.map((e) => [e.id, e]));
+const EVENT_ROW = /^\| `([a-z0-9-]+)` \| (\d{4}) \| `([a-z0-9-]+)` \|/;
+const entries = rows(EVENT_ROW).map(([, id, year, actor]) => ({ id, year: Number(year), actor }));
+
+test(`${DOC} §5 says which actor each event names, and that is the one it names`, () => {
+  assert.ok(entries.length >= 13, `${DOC} §5 carries ${entries.length} row(s)`);
+  const wrong = [];
+  for (const row of entries) {
+    const e = byEvent.get(row.id);
+    if (!e) { wrong.push(`${row.id}: no such event`); continue; }
+    if (e.status !== 'active') wrong.push(`${row.id}: ${e.status}, not active`);
+    if (earliest(e.when?.start) !== row.year) wrong.push(`${row.id}: begins ${earliest(e.when?.start)}, not ${row.year}`);
+    const named = (e.actors ?? []).map((x) => x.actor);
+    if (!named.includes(row.actor)) wrong.push(`${row.id}: ${DOC} puts it on ${row.actor}, it names ${named.join(', ')}`);
+    // The brief's third test, over every row and not only over World War II:
+    // an entry names the actor that held the role then.
+    const a = byId.get(row.actor);
+    if (!a) { wrong.push(`${row.id}: ${row.actor} is not a record`); continue; }
+    const start = earliest(a.when?.start);
+    const end = a.when?.end === null || a.when?.end === undefined ? Infinity : latest(a.when.end);
+    if (row.year < start || row.year > end) {
+      wrong.push(`${row.id} (${row.year}) names ${a.id} (${start}–${a.when?.end ?? 'open'}), which was not alive then`);
+    }
+  }
+  assert.deepEqual(wrong.sort(), [], wrong.join('; '));
+  // Nothing anywhere still names a record this milestone emptied.
+  const left = [];
+  for (const e of events) {
+    if (e.status !== 'active') continue;
+    for (const x of e.actors ?? []) {
+      if (x.actor === 'germany') left.push(`${e.id} names germany, which is merged`);
+    }
+  }
+  assert.deepEqual(left.sort(), [], left.join('; '));
+});
+
+// The owner's own case, asserted on its own so that a run which gets
+// everything else right and leaves this chip alone still fails.
+test('World War II names a German actor alive for the war it names', () => {
+  const e = byEvent.get('world-war-ii');
+  assert.ok(e, 'there is no world-war-ii');
+  const german = (e.actors ?? [])
+    .map((x) => byId.get(x.actor))
+    .filter(Boolean)
+    .filter((a) => earliest(a.when?.start) >= 1871 && (a.when?.end ?? Infinity) <= 1949);
+  const alive = german.filter((a) => earliest(a.when?.start) <= 1939 && latest(a.when?.end) >= 1945);
+  assert.ok(alive.length > 0,
+    `world-war-ii names ${(e.actors ?? []).map((x) => x.actor).join(', ')} and none of them is a German polity alive from 1939 to 1945`);
+  const labels = alive.map((a) => a.names?.[0]);
+  assert.ok(!labels.some((n) => /\(Prussia\)/.test(n ?? '')),
+    `world-war-ii's chip still reads ${labels.join(', ')}`);
+});
+
 // --- §6.1: the presences that begin before their actor does --------------
 
 const GAP_ROW = /^\| `([a-z0-9-]+)` \| (\d{4}) \| (\d{4}) \| /;

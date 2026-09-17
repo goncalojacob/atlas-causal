@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "germany-prussia-1938",
+  "id": "germany-prussia-1933",
   "kind": "presence",
   "status": "active",
   "supersededBy": null,
@@ -12,15 +12,15 @@
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
-  "created": "2026-09-02",
-  "revised": "2026-09-17",
+  "created": "2026-09-17",
+  "revised": null,
   "origin": {
     "tool": "cshapes"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
-      "locator": "fid 87"
+      "locator": "fid 86"
     }
   ],
   "actor": "nazi-germany",
@@ -28,16 +28,16 @@
   "dependencyOf": null,
   "dependencyKind": null,
   "when": {
-    "start": 1938,
-    "end": 1945,
-    "date": "1938-09-30",
-    "endDate": "1945-05-07"
+    "start": 1933,
+    "end": 1938,
+    "date": "1933-03-15",
+    "endDate": "1938-09-29"
   },
   "geometry": {
     "files": [
       "geo/presences/1933-1945.json"
     ],
-    "key": "87"
+    "key": "86"
   },
   "capital": {
     "lon": 13.4,
@@ -45,5 +45,12 @@
     "precision": "city",
     "label": "Berlin"
   },
-  "confidence": "consensus"
+  "confidence": "consensus",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-split"
+    ],
+    "note": "M55: the second half of the CShapes period that runs 1920-02-10 to 1938-09-29, cut at the Nazi state’s cited inception, Q7318 P571 1933-03-15. `germany-prussia-1920` is the first half and is the Weimar Republic’s. The outline is CShapes’ own under this key, unchanged; the two halves carry one outline between them."
+  }
 }

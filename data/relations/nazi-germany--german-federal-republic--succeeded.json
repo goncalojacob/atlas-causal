@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "nazi-germany--german-federal-republic--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m55"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-germany",
+      "interval-cited"
+    ],
+    "note": "M55: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag."
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7318, P576 1945-05-23"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q713750, P571 1949-05-23"
+    }
+  ],
+  "from": "nazi-germany",
+  "to": "german-federal-republic",
+  "type": "succeeded",
+  "when": {
+    "start": 1945,
+    "end": 1945,
+    "date": "1945-05-23"
+  },
+  "note": "A gap of four years: Q7318 ends the Nazi state on 1945-05-23 and Q713750 begins the Federal Republic on 1949-05-23. What held that ground in between was the Allied occupation of Germany, which this atlas has no record for and which M55 does not invent. The CShapes period of those years is kept and flagged on `german-federal-republic-1945`."
+}

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "cshapes"
   },
@@ -29,9 +29,9 @@
   "dependencyKind": null,
   "when": {
     "start": 1886,
-    "end": 1919,
+    "end": 1918,
     "date": "1886-01-01",
-    "endDate": "1919-06-27"
+    "endDate": "1918-11-09"
   },
   "geometry": {
     "files": [
@@ -46,5 +46,12 @@
     "precision": "city",
     "label": "Berlin"
   },
-  "confidence": "consensus"
+  "confidence": "consensus",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-split"
+    ],
+    "note": "M55: CShapes draws one period here, 1886-01-01 to 1919-06-27, and the German Empire’s cited dissolution — Q43287, P576 1918-11-09 — falls inside it, so it is cut in two rather than given whole to either record. This half is the Empire’s; `germany-prussia-1918` is the other and is the Weimar Republic’s. The outline is the dataset’s own under this key and is not redrawn."
+  }
 }

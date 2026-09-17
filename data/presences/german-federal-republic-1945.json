@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "cshapes"
   },
@@ -46,5 +46,12 @@
     "precision": "city",
     "label": "Bonn"
   },
-  "confidence": "consensus"
+  "confidence": "consensus",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-gap"
+    ],
+    "note": "M55: this period begins before its actor’s cited inception of 1949-05-23 (Q713750, P571). CShapes draws entity 260 from the German surrender onward and what held that ground until the Federal Republic was founded was the Allied occupation, which this atlas has no record for. It is carried here and flagged rather than given to a record invented for it. See docs/m55-germany.md §6."
+  }
 }

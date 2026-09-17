@@ -126,7 +126,7 @@ A pair does not become a join because joining was easier.
 
 ## 5. The verdict on all 26
 
-**Joined — 19.** Same ground, and the stem reduces:
+**Joined — 19, and a twentieth in M55.** Same ground, and the stem reduces:
 
 | pair | overlap | stem |
 |---|---|---|
@@ -150,6 +150,17 @@ A pair does not become a join because joining was easier.
 | `victoria-uk` / `victoria` | 0.9077 | `victoria` |
 | `western-australia-uk` / `western-australia` | 0.9849 | `western-australia` |
 
+The twentieth, added by M55 on 17 September: `germany` / `germany-prussia`,
+0.9824, the pair left open below. It is joined into `germany-prussia`, which
+is now the German Empire. What M51 lacked was a date, and `Q43287` — P571
+1871-01-01, P576 1918-11-09 — is it: both Historical Basemaps snapshots on the
+1885 side fall inside those two days, so the two records are one polity under
+two file names rather than two polities either side of a seam. The span rule
+of the paragraph below does not hold for this one, and deliberately: the
+survivor's interval is Wikidata's and not the two files' boundaries, and its
+1886-side end of 1945 is gone because the Weimar Republic and the Nazi state
+were split out of it in the same milestone. See `docs/m55-germany.md`.
+
 "Madagascar (Malagasy)" is the demonym, not a second polity. `-under-<x>` is
 the dependency the record already carries in `dependencyOf` and
 `dependencyKind` on its presences; it is a way of holding ground, not another
@@ -169,17 +180,20 @@ and for exactly these the green lookup found a date:
 | `ottoman-empire` / `turkey-ottoman-empire` | 0.8979 | `Q12560` **P576 1922-11-17** |
 | `persia` / `iran-persia` | 0.9831 | `Q63158027` **P571 1789, P576 1925** |
 
-**Left open — 3.** Same ground, the name is not one stem, and no date exists
-to split on. Each asks a question a person must answer:
+**Left open — 2, and a third answered since.** Same ground, the name is not
+one stem, and no date exists to split on. Each asks a question a person must
+answer:
 
-- **`germany` / `germany-prussia`, 0.9824.** "Germany (Prussia)". Prussia and
-  the German Empire are two polities, so this is the shape of a succession —
-  but Wikidata could not say which: `germany` came down to `Q183` with
-  **seven** P571 values, and `germany-prussia` survived `Q183`, `Q38872`
-  (Prussia) and `Q27306` (North German Confederation) without choosing.
-  *The question:* is the 1886 record Prussia continuing, or the German Empire?
-  Whichever it is, the split needs its P571/P576, and no item here supplies an
-  unambiguous one. **Not joined**, because "(Prussia)" is not a demonym.
+- **The German pair, 0.9824.** "Germany (Prussia)". Prussia and the German
+  Empire are two polities, so this was the shape of a succession — but
+  Wikidata could not say which: the 1885-side record came down to `Q183` with
+  **seven** P571 values, and the 1886-side one survived `Q183`, `Q38872` and
+  `Q27306` without choosing. *The question was:* is the 1886 record Prussia
+  continuing, or the German Empire? **M55 answered it on 17 September**: the
+  German Empire, on `Q43287` — P571 1871-01-01, P576 1918-11-09 — and the pair
+  is joined, which is why it is listed with the joins above and not here any
+  more. `docs/m55-germany.md` is the milestone, and the 1886 record no longer
+  runs to 1945: the Weimar Republic and the Nazi state were split out of it.
 - **`italy` / `italy-sardinia`, 0.9578.** "Italy/Sardinia". The label names two
   polities with a slash and the lookup found nothing at all for it — no
   Wikidata item matches the string "Italy/Sardinia" — while `italy` survived

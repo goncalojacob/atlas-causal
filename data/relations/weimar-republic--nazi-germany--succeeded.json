@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "weimar-republic--nazi-germany--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m55"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-germany",
+      "interval-cited"
+    ],
+    "note": "M55: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag."
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q41304, P576 1933 (year precision)"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q7318, P571 1933-03-15"
+    }
+  ],
+  "from": "weimar-republic",
+  "to": "nazi-germany",
+  "type": "succeeded",
+  "when": {
+    "start": 1933,
+    "end": 1933,
+    "date": "1933-03-15"
+  },
+  "note": "The gap is inside one year: Q41304 dates the Weimar Republic’s dissolution to 1933 and no further, and Q7318 dates the Nazi state’s inception to 1933-03-15. What stood in between was the same German state, under the government that took office that winter — neither item names a third polity for those weeks, and none is invented here."
+}

@@ -132,6 +132,20 @@ test('a pair the file leaves open still has both its records active', () => {
 
 // A join is one record absorbing another, and rule 11 says the record and
 // everything naming it move together. Vacuous before the first join lands.
+//
+// **The span rule has an exception since M55**, and the exception is the
+// reason the rule exists rather than a hole in it. M51's nineteen joins had no
+// date for either side, so the only honest interval was the two files' own
+// boundaries: the 1885-side record's start and the 1886-side record's end,
+// neither authored here. M55 joined `germany` into `germany-prussia` with
+// Q43287's P571 and P576 in hand — dates that are better than both boundaries
+// and that no longer end in 1945, because the Weimar Republic and the Nazi
+// state were split out of the survivor in the same milestone. So where a
+// survivor's interval is cited to a Wikidata item and property, that is what
+// is asserted of it; where it is not, M51's rule stands unchanged.
+const intervalCited = (a) => (a.sources ?? [])
+  .some((s) => s.source === 'wikidata' && /\bP5(71|76)\b/.test(s.locator ?? ''));
+
 test('a join leaves one active record and a merged one pointing at it', () => {
   const broken = [];
   for (const [before, after] of PAIRS) {
@@ -144,6 +158,7 @@ test('a join leaves one active record and a merged one pointing at it', () => {
     if (survivor.status !== 'active') broken.push(`${before} / ${after}: neither record is active`);
     else if (merged.status !== 'merged') broken.push(`${merged.id}: status is ${merged.status}, not "merged"`);
     else if (merged.supersededBy !== survivor.id) broken.push(`${merged.id}: supersededBy is ${merged.supersededBy}, not ${survivor.id}`);
+    else if (intervalCited(survivor)) continue;
     else if (survivor.when?.start !== b.when?.start) broken.push(`${survivor.id}: begins ${survivor.when?.start}, not ${before}'s own ${b.when?.start}`);
     else if (survivor.when?.end !== a.when?.end) broken.push(`${survivor.id}: ends ${survivor.when?.end}, not ${after}'s own ${a.when?.end}`);
   }
