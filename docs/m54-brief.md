@@ -1,80 +1,109 @@
-# Build brief — M54: the lens follows succession
+# Build brief — M54: a territory shows everything that happened on it
 
-The owner, 17 September, asked for this after selecting **Brazil** and finding
-none of the history that happened there:
+The owner, 17 September, having selected Brazil and found three events where
+four centuries belonged:
 
-> **"Yes I do"** — to the question of whether selecting an actor should reach
-> back through succession to the polities that preceded it.
+> **"The important thing is that when I select a territory I can see all
+> events that are related to that territory independent of the timespan I
+> select"**
 
-A reader who clicks a country means *this place and its past*. The atlas
-answers with one record's own span, which for `brazil` is 1889 onwards, so
-four centuries of Brazilian history sit one hop away and invisible.
+That sentence is the whole brief, and it is simpler than the succession walk
+first proposed. **A reader who clicks a territory has clicked a polygon.** The
+events that belong to it are the events whose place lies **inside that polygon,
+at any date** — regardless of which polity held the ground then, and
+regardless of whether a `succeeded` relation happens to exist. Porto Seguro in
+1500 is inside the outline the reader clicked; that is the entire argument.
 
-Read `src/lens.js` **whole** (M48 built the three sets this milestone reuses),
-`src/parts.js`, `docs/m48-brief.md`, `data/relations/` (the `succeeded` shape),
-`docs/m52-brief.md` A1, `docs/m53-brief.md`, `tools/build-index.mjs`, and the
-lens browser tests for the idioms.
+Read `src/lens.js` **whole** (M48 built the three sets this reuses),
+`src/parts.js`, `docs/m48-brief.md` (**`grounds` is the pass this extends**),
+`tools/build-index.mjs`, `data/presences/`, `schema/v1/presence.json`, the
+lens and panel browser tests for the idioms, and `docs/m53-brief.md`.
 
-## 1. What changes
+## 1. What is wrong today
 
-**A lens on an actor includes the events of the actors it succeeds, and of
-those that succeed it**, following active `succeeded` relations in
-`data/relations/` transitively.
+M48 made an actor's events include the events on its ground — **but only
+territory that actor held at the event's own date**. So `brazil`, a CShapes
+record beginning in 1886, cannot reach a colonial event however close it sits,
+and the atlas answers a click on Brazil with three twentieth-century events.
+The rule is right for the question *what did this polity do*. It is wrong for
+the question the reader is actually asking.
 
-**The predecessors' events are `near`, not `set`** — dimmed, exactly as M48's
-one-hop neighbours are. The actor's own events stay full. **This needs no new
-token, no new hex value and no new type size: dimmed already means "related,
-not chosen" in this interface, and that is precisely what these are.**
+Measured, 17 September: of the two M50 chains, **every early event grounds to
+no actor at all** — `porto-seguro` (1500), `salvador` (1530), `vila-rica`
+(1695), `bridgetown` (1640) each return nothing, because no presence covers
+those points at those dates.
 
-**Walk the chain, but bound it.** A retracted actor ends the walk, and so does
-a missing relation. **A date gap does not**: the owner relaxed that rule on
-17 September, so after M53 the Brazilian chain is Viceroyalty → Empire →
-Republic whether or not the dates meet, and the walk follows it. Where a gap
-exists the relation carries a note saying so, and **the panel shows that note
-on the dimmed rows the gap produced** — the reader is told they have crossed
-one, rather than the walk stopping.
+## 2. What to build
 
-**Compute the closure in `tools/build-index.mjs`**, beside M48's `grounds`
-pass, not at render time — following relations per keystroke is the mistake
-M48 already refused for point-in-polygon.
+**A territorial lens.** Selecting a polity on the map means **the ground it
+is drawn as**, and its events are every event whose place falls inside that
+outline — **with no date test on the containment at all**.
 
-## 2. What the reader controls
+- The outline is the presence the map drew for that actor: take **the union of
+  that actor's presences** so a territory that grew is not punished for
+  growing, and say in `STATUS.md` what that union costs to compute.
+- **Dates still matter for what is emphasised, not for what is found.** The
+  actor's own span decides `set`; everything else on its ground is `near` —
+  dimmed, the way M48's one-hop neighbours are. **No new token, no new hex
+  value, no new type size: dimmed already means "related, not chosen".**
+- **Compute this in `tools/build-index.mjs`**, beside M48's `grounds` pass, and
+  keep that pass: *events the actor did* and *events on its ground* are
+  different questions and both have readers. Point-in-polygon per keystroke
+  remains forbidden.
 
-The succession walk is **on by default** — it is what clicking a country
-means — and **switchable**, in the masthead where M48 put the graph's filters,
-and **in the URL**, so a link opens on the picture its sender saw.
+## 3. The timespan, which is the other half of the sentence
 
-## 3. What must stay true
+**A territorial selection lists everything it found, and the band fades what
+is outside the window rather than removing it.** This idiom already exists and
+is already tested — *"a place's faded rows follow the band without rebuilding
+the card"* — so follow it exactly rather than inventing a second behaviour.
 
-- **No new record, no historical claim, no new date.** This milestone reads
-  relations that already exist; if the Brazilian chain is short, that is M53's
-  business and this one reports it rather than inventing a link.
+The count in the hint says how many are inside the window, as it does for a
+place. **A reader who narrows the band must never be told a territory has no
+history; they must be shown its history, faded.**
+
+## 4. Succession, demoted but not dropped
+
+Following `succeeded` relations is no longer how the events are found — ground
+finds them. It stays worth doing for **naming**: the chips on an event should
+let a reader step to the polity that held that ground before or after, and
+M53 writes those relations. **Build it only if it costs nothing beyond the
+relations already there; if it grows this milestone, say so and leave it.**
+
+## 5. What must stay true
+
+- **No new record, no historical claim, no new date.** Containment is
+  geometry: writing down that a point is inside a polygon is reading two
+  records, not deciding between them — M48 settled that.
 - No new runtime dependency, build step, map library or tiles.
-- A hidden or dimmed event stays reachable by search and by walking.
+- **First paint costs what it does today.** The new file is fetched when a
+  lens first asks, as `grounds-*.json` is, and until it lands the lens is what
+  it is now: a frame of the old picture, never a wrong one.
+- A dimmed or faded event stays reachable by search and by walking.
 - `validate --index` clean; `build-index.mjs` committed with any index change;
   tests before the behaviour they judge (711, 717).
 - **The known shard defect is not yours**: a long event's attribute row lives
   in its start century's shard and its bar reads "still loading" for ever
-  (M50). Do not fix it here; do not let it fail your tests silently.
+  (M50). Do not fix it; do not let it fail your tests silently.
 
-## 4. Tests
+## 6. Tests
 
-1. A lens on `brazil` includes the Empire's **and the Viceroyalty's** events —
-   **dimmed, not full**. After M53 both successions exist.
-2. A lens on an actor with no succession relation is **unchanged** from today.
-3. The walk **crosses a gap** and says so: an actor whose predecessor's dates
-   do not meet its own still contributes its events, and the note on the
-   relation reaches the reader.
-4. A retracted actor ends the walk.
-5. The switch is in the URL and survives a reload.
+1. **A lens on `brazil` includes `portuguese-landfall-in-brazil-1500`** and the
+   rest of the Brazilian chain, dimmed — the case the owner reported.
+2. Events the actor itself did stay **full**, not dimmed.
+3. **Narrowing the band fades rows and removes none**, and the hint counts
+   those inside it.
+4. A territory with no events on it is unchanged from today.
+5. First paint fetches no new file; the lens fetches it on first ask.
 6. No test pins a count of events.
 
-## 5. Done when
+## 7. Done when
 
-Selecting Brazil shows Brazilian history before 1889, dimmed; the switch works
-and is in the URL; the closure is computed in the index and first paint costs
-what it did; screenshots under `docs/screens/m54-succession.png` with the rest
-restored; `STATUS.md` says how many actors gained events this way and how many
-walks stopped at a gap; `validate --index` clean; tests green; `M54 done`.
+Selecting Brazil shows the Brazilian chain from 1500, dimmed and unremoved by
+the band; the union outline is computed in the index; screenshots under
+`docs/screens/m54-territory.png` with the rest restored; `STATUS.md` says how
+many events each of the twenty largest territories gained, what the union
+costs, and what the new index file weighs; `validate --index` clean; tests
+green; `M54 done`.
 
 ## Deviations this brief takes, numbered on from the last in `STATUS.md`
