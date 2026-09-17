@@ -127,14 +127,35 @@ try {
   // territorial one beside it — every event inside the union of that actor's
   // outlines, at any date, which is what a reader who clicks a territory is
   // asking (M54 §2). Neither is at first paint and neither is waited for.
+  //
+  // **An open actor asks even when its lens is empty**, which is the hole M54
+  // found in M48's own rule: `activeFoci` hides a lens that keeps nothing, and
+  // an actor whose events are *all* on its ground and none of them named — a
+  // CShapes polity, which is 350 of the 412 — keeps nothing until the file
+  // lands. Waiting for a lens that the file is what creates is waiting for
+  // ever. A page with no actor open still asks for nothing.
   let askedGrounds = false;
+  const opensAnActor = (s) => Boolean(s.actor) && atlas.resolve(s.actor)?.kind === 'actor';
   const fetchLensGrounds = (s) => {
     if (askedGrounds || (atlas.groundsLoaded() && atlas.territoriesLoaded())) return;
-    if (!activeFoci(atlas, s).some((f) => f.kind === 'actor')) return;
+    if (!activeFoci(atlas, s).some((f) => f.kind === 'actor') && !opensAnActor(s)) return;
     askedGrounds = true;
-    for (const load of [atlas.loadGrounds, atlas.loadTerritories]) {
-      load().then(() => remeasure({ force: true }), () => {});
-    }
+    // Both, and **one arrival**: two redraws would rebuild the card twice, and
+    // a reader whose second rebuild landed between their pointer going down
+    // and coming up would lose what they had open. `allSettled`, so that a
+    // file that failed still lets the other one be drawn.
+    //
+    // The card and the chips as well as the pictures, which is the whole of
+    // what `shardLanded` does below and for the same reason: nothing in the
+    // state has changed, so every key downstream says there is nothing to do.
+    // The card in particular carries the lens it was drawn under (panel.js,
+    // `keyOf`), and one written while an actor's lens was still empty would be
+    // rebuilt by the reader's next nudge of the band.
+    Promise.allSettled([atlas.loadGrounds(), atlas.loadTerritories()]).then(() => {
+      remeasure({ force: true });
+      panel.refresh({ force: true });
+      grouping.render(state.get());
+    });
   };
 
   // The panel is built first because the map hands it the members of a

@@ -386,10 +386,15 @@ test('a territory’s faded rows follow the band without rebuilding the card', {
     const atlas = await atlasOf(path.join(ROOT, 'data'));
     await open(page, url(`?actor=brazil&from=${atlas.extent.min}&to=${atlas.extent.max}`));
     await waitFor(page, 'return document.querySelectorAll("#timeline [data-window]").length === 3;', 'the band');
-    // The ground is a file fetched when a lens on an actor asks (M48, M54), so
-    // the section is written again when it lands: waited for, never timed.
+    // The ground is two files, fetched when a lens on an actor asks (M48, M54)
+    // and landing as one arrival, which the card and the chips are drawn again
+    // for (main.js). Waited for, never timed — and waited for at the *chip*,
+    // which is written after the card is: a marker set between the two would
+    // be wiped by the rebuild this test is not about.
     await waitFor(page, 'return document.querySelectorAll(\'.card-section[data-section="ground"] .actor-row\').length > 0;',
       'the ground list');
+    await waitFor(page, 'return Boolean(document.querySelector(\'.panel .lens-control.on\'));',
+      'the lens the ground gave this territory');
     const before = await page.eval(`document.querySelector('.panel .actor-head h2').dataset.kept = 'yes';
       return {
         rows: document.querySelectorAll('.card-section[data-section="ground"] .actor-row').length,

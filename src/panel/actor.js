@@ -9,6 +9,7 @@
 
 import { esc } from '../util/esc.js';
 import { formatInterval, formatYear, bounds } from '../util/dates.js';
+import { overlaps, resolveWindow } from '../util/window.js';
 import { ACTOR_TYPE_LABEL } from './event.js';
 import { RELATION_LABEL, RELATION_GROUP_ORDER } from '../vocab.js';
 import { sectionHtml, openSection } from './sections.js';
@@ -92,6 +93,77 @@ export function territorySection(ctx, actor) {
   if (territory) return { key: 'territory', label: 'Territory', ...territory };
   if (territoryKnown(ctx)) return null;
   return { key: 'territory', label: 'Territory', count: null, body: '<p class="muted">Loading…</p>' };
+}
+
+// ─── what happened on this ground ─────────────────────────────────────────
+//
+// M54. The owner, 17 September, having selected Brazil and been given three
+// twentieth-century events where four centuries belonged: *"the important
+// thing is that when I select a territory I can see all events that are
+// related to that territory independent of the timespan I select"*.
+//
+// So this section is everything the ground found — every event whose place
+// falls inside the union of this actor's outlines, at any date — and the band
+// **fades** what falls outside the window rather than removing it, which is
+// the idiom the place card has had since B12 and is followed here rather than
+// reinvented. The count in the hint says how many are inside. A reader who
+// narrows the band is never told a territory has no history.
+//
+// The section key, so panel.js can find it in the card it is about to rewrite
+// without spelling the string a second time.
+export const GROUND_SECTION = 'ground';
+
+// Whether the atlas has the territorial join yet. An atlas that was handed it
+// — the build's own, a hand-made one in a test — has it by construction and
+// says so, exactly as `territoryKnown` does for the presences.
+const groundKnown = (ctx) => (ctx.atlas.territoriesLoaded ? ctx.atlas.territoriesLoaded() : true);
+
+// The events on this actor's ground, oldest first. Ties by id, so the list is
+// the same on every machine.
+function eventsOnGround(ctx, actor) {
+  const ids = ctx.atlas.eventsInsideTerritoryOf?.(actor.id) ?? null;
+  if (!ids) return null;
+  return [...ids]
+    .map((id) => ctx.atlas.events.get(id))
+    .filter((event) => event && event.status === 'active')
+    .sort((a, b) => ctx.startYear(a) - ctx.startYear(b) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+}
+
+export function groundEventsSection(ctx, actor, state) {
+  const events = eventsOnGround(ctx, actor);
+  if (!events || events.length === 0) return null;
+  // No state is a card drawn outside the atlas — a test, a prerender — and
+  // then there is no band to fade against: `overlaps` with no window keeps
+  // everything, which is the honest drawing of "no window".
+  const window = state ? resolveWindow(state, ctx.atlas.extent, ctx.atlas.opens) : null;
+  const inside = events.filter((e) => overlaps(e.when, window)).length;
+  const rows = events.map((event) => `<li class="actor-row ${overlaps(event.when, window) ? '' : 'faded'}">
+    <span class="when">${esc(formatYear(ctx.startYear(event)))}</span>
+    ${ctx.eventLink(event)}
+    <span class="muted">${esc(ctx.laneLabel(event.region))}</span>
+  </li>`);
+  return {
+    key: GROUND_SECTION,
+    label: 'What happened on this ground',
+    count: events.length,
+    hint: inside === events.length
+      ? 'Everything that happened inside this outline, whoever held it at the time. All of them are inside the window.'
+      : `Everything that happened inside this outline, whoever held it at the time. ${inside} of them ${inside === 1 ? 'is' : 'are'} inside the window; the rest are faded.`,
+    body: `<ul class="actor-rows">${rows.join('')}</ul>`,
+  };
+}
+
+// The section, or none. Three states as the territory section has: the list,
+// the "loading" line while the file is on its way — it is fetched when a lens
+// on an actor asks and never at first paint (M48, M54) — and nothing at all
+// for an actor that stands on no ground, which is every person in the corpus.
+export function groundSection(ctx, actor, state) {
+  const section = groundEventsSection(ctx, actor, state);
+  if (section) return section;
+  if (groundKnown(ctx)) return null;
+  return {
+    key: GROUND_SECTION, label: 'What happened on this ground', count: null, body: '<p class="muted">Loading…</p>',
+  };
 }
 
 // The relations this actor stands in, both ways round, grouped by type. Built
@@ -216,6 +288,10 @@ export function actorCardHtml(ctx, actor, { state = null, remembered = null } = 
   const sections = appearances.length === 0 && successionSection
     ? [successionSection, appearancesSection]
     : [appearancesSection, ...(successionSection ? [successionSection] : [])];
+  // What happened on its ground, right after what it did itself (M54): the two
+  // are different questions about the same polity and they read as a pair.
+  const ground = groundSection(ctx, actor, state);
+  if (ground) sections.push(ground);
   if (relations) sections.push({ key: 'relations', label: 'Relations', ...relations });
   // The posts that belong to this actor, each as a strip of its holders
   // (office.js). Between the relations and the territory because it is the
@@ -274,8 +350,36 @@ function swapTerritory(ctx, container, actor) {
   held.outerHTML = sectionHtml({ ...section, open: held.classList.contains('open') });
 }
 
+// The same in-place rewrite for the ground list once the territorial join
+// lands. It is fetched when a lens on an actor asks (M48, M54, data.js) and an
+// open actor card *is* such a lens, so the card asks too: both calls are the
+// same promise, so the file is still fetched once.
+function swapGround(ctx, container, actor, state) {
+  const held = container.querySelector(`.card-section[data-section="${GROUND_SECTION}"]`);
+  if (!held) return;
+  const section = groundSection(ctx, actor, state);
+  if (!section) {
+    held.remove();
+    return;
+  }
+  held.outerHTML = sectionHtml({ ...section, open: held.classList.contains('open') });
+}
+
 export function renderActorCard(ctx, { container, actor, mine, state = null, remembered = null }) {
   container.innerHTML = actorCardHtml(ctx, actor, { state, remembered });
+  if (!groundKnown(ctx)) {
+    ctx.atlas.loadTerritories().then(
+      () => {
+        if (!ctx.isCurrent(mine)) return;
+        swapGround(ctx, container, actor, state);
+      },
+      () => {
+        if (!ctx.isCurrent(mine)) return;
+        const held = container.querySelector(`.card-section[data-section="${GROUND_SECTION}"] .section-body`);
+        if (held) held.innerHTML = '<p class="muted">What happened on this ground could not be loaded.</p>';
+      },
+    );
+  }
   // The presences left the spine in I1, so a card opened before the file
   // lands has no territory to show yet and asks for it here (index2-plan D1).
   // A rejection leaves the "loading" line saying what happened; the layer's

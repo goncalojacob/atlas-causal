@@ -22,7 +22,7 @@ import { shortestPaths, pathTo } from '../graph.js';
 import { chainEdges } from '../chain.js';
 import { identifiers, containerText } from '../citation.js';
 import { renderEventCard, drawnHtml } from './event.js';
-import { renderActorCard } from './actor.js';
+import { renderActorCard, groundEventsSection, GROUND_SECTION } from './actor.js';
 import { renderOfficeCard, tenureClusterAt } from './office.js';
 import { renderPlaceCard, placeEventsSection, EVENTS_SECTION } from './place.js';
 import { renderSourceCard } from './source.js';
@@ -532,11 +532,12 @@ export function createPanel(container, {
   // the zoom, the box, the lens, the layers, the grouping's own controls — is
   // not a different card and does not rebuild one.
   //
-  // The window is in the key and is still not a rebuild. It decides three
+  // The window is in the key and is still not a rebuild. It decides four
   // small things — the horizon's default year and therefore its list, the
-  // lane an event is drawn in, which of a place's events are faded — and
-  // those are written into the card that is already there, so that moving
-  // the band under an open `<details>` leaves it open (review finding 7).
+  // lane an event is drawn in, which of a place's events are faded, and since
+  // M54 which of a territory's are — and those are written into the card that
+  // is already there, so that moving the band under an open `<details>` leaves
+  // it open (review finding 7).
   let drawnFor = null;
 
   function keyOf(s) {
@@ -577,7 +578,7 @@ export function createPanel(container, {
   // The window's own bits, put back into the card that is on screen. Each is
   // looked for and skipped when it is not there: the same call serves an
   // event's card, a place's, an actor's and a cluster's list, and only the
-  // first two have anything the window decides.
+  // first three have anything the window decides.
   function updateWindow(s) {
     const found = s.selected && !s.narrative ? atlas.resolve(s.selected) : null;
     const event = found && found.kind === 'event' ? found.record : null;
@@ -602,9 +603,22 @@ export function createPanel(container, {
       return;
     }
     const place = s.place && !s.selected && !s.source && !s.narrative ? atlas.resolve(s.place) : null;
-    if (!place || place.kind !== 'place') return;
-    const body = container.querySelector(`.card-section[data-section="${EVENTS_SECTION}"] .section-body`);
-    if (body) body.innerHTML = sectionBodyHtml(placeEventsSection(ctx, place.record, s));
+    if (place && place.kind === 'place') {
+      const body = container.querySelector(`.card-section[data-section="${EVENTS_SECTION}"] .section-body`);
+      if (body) body.innerHTML = sectionBodyHtml(placeEventsSection(ctx, place.record, s));
+      return;
+    }
+    // And a territory's own list, which is the same idiom on the other card
+    // (M54): everything that happened on this ground, faded where it falls
+    // outside the band and never removed. The precedence is the card's own —
+    // an event, a source, an office, a place, then an actor — so this is
+    // reached only where the actor card is the one on screen.
+    const actor = s.actor && !s.selected && !s.source && !s.office && !s.place && !s.narrative
+      ? atlas.resolve(s.actor) : null;
+    if (!actor || actor.kind !== 'actor') return;
+    const ground = container.querySelector(`.card-section[data-section="${GROUND_SECTION}"] .section-body`);
+    const section = groundEventsSection(ctx, actor.record, s);
+    if (ground && section) ground.innerHTML = sectionBodyHtml(section);
   }
 
   function onState(s) {
@@ -680,9 +694,17 @@ export function createPanel(container, {
   // list off the screen. Same integer, same rule — this is where a shard is
   // what the notification is about, and `keyOf` is where a state change is.
   let seenShards = shardsArrived(atlas);
-  function refresh() {
+  // `force` is for the other kind of arrival: a file the lens is computed from,
+  // fetched when a focus asks for it and landing with nothing in the state
+  // changed (the citers since H3b, the two ground joins since M48 and M54;
+  // main.js is what asks). It is not a shard, so the count above cannot see it,
+  // and the card has to be drawn again for a second reason: `keyOf` carries the
+  // lens the card was drawn under, and an actor whose lens was empty when the
+  // card was written and is not empty now would make the reader's next nudge of
+  // the band look like a different card and rebuild it under them.
+  function refresh({ force = false } = {}) {
     const now = shardsArrived(atlas);
-    if (now === seenShards) return;
+    if (now === seenShards && !force) return;
     seenShards = now;
     if (covered && shown) {
       container.innerHTML = clusterHtml(ctx, shown);

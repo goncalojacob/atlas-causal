@@ -165,7 +165,10 @@ test('the actor card is sections with counts, opening on where it appears', asyn
   // `succession` first since I8, and the card opens on it: no event names
   // this polity, and a card that opened on an empty list to say "nothing
   // happened here" is the whole of health review B, finding 28.
-  assert.deepEqual(keys, ['succession', 'appearances', 'relations', 'offices', 'territory', 'sources']);
+  // `ground` since M54: the fixture polity stands on ground of its own, and
+  // *what happened here* is a different question from *what did it do*, asked
+  // right after it.
+  assert.deepEqual(keys, ['succession', 'appearances', 'ground', 'relations', 'offices', 'territory', 'sources']);
   assert.match(html, /<section class="card-section open" data-section="succession">/);
   assert.equal(count(html, 'appearances'), String((atlas.eventsByActor.get('fixture-polity-three') ?? []).length));
   assert.equal(count(html, 'sources'), String(atlas.citationCount('actor', 'fixture-polity-three')));
@@ -207,6 +210,9 @@ test('the territory section says "loading" until the presences land, then the li
   assert.match(territoryOf(actorCardHtml(context(waiting), waiting.actors.get('fixture-actor-one'))), /Loading…/);
 
   await waiting.loadPresences();
+  // And the territorial join beside them (M54): the seeded atlas is handed
+  // both files, so the card is only the same card once both have landed.
+  await waiting.loadTerritories();
   const after = actorCardHtml(context(waiting), waiting.actors.get('fixture-polity-three'));
   assert.doesNotMatch(territoryOf(after), /Loading…/);
   assert.match(territoryOf(after), /Shown on the map/);
