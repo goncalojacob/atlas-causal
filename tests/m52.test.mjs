@@ -1,6 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
+import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -89,14 +90,26 @@ const GAP_ROW = /^\| \+\d+ y \| `([a-z0-9-]+)` \| (\d{3,4}) \| `([a-z0-9-]+)` \|
 const listed = doc.split('\n').map((line) => GAP_ROW.exec(line)).filter(Boolean)
   .map(([, from, ends, to, starts]) => ({ id: `${from}--${to}--succeeded`, from, to, ends: Number(ends), starts: Number(starts) }));
 
-test(`${DOC} lists a gap for every succession M52 retracted, and no other`, () => {
+// M53's amendment A1 put all four back, so what this asserts is no longer
+// "they are retracted" but "they are the four, and M53 restored every one of
+// them". The audit is still the audit; only the verdict on it moved.
+test(`${DOC} lists the four M52 retracted, and M53 restored every one`, () => {
   assert.ok(listed.length > 0, `${DOC} carries no audit table`);
-  const retracted = relations
+  const byRelation = new Map(relations.map((r) => [r.id, r]));
+  const wrong = [];
+  for (const row of listed) {
+    const r = byRelation.get(row.id);
+    if (!r) { wrong.push(`${row.id}: no such relation`); continue; }
+    if (r.status !== 'active') wrong.push(`${row.id}: ${r.status}, and M53 restored it`);
+    if (r.retraction !== undefined) wrong.push(`${row.id}: still carries M52's retraction block`);
+  }
+  assert.deepEqual(wrong.sort(), [], wrong.join('; '));
+  // And nothing else was left behind retracted under M52's reason.
+  const stillRetracted = relations
     .filter((r) => r.type === 'succeeded' && r.status === 'retracted')
     .filter((r) => /M52/.test(r.retraction?.reason ?? ''))
     .map((r) => r.id).sort();
-  assert.deepEqual(retracted, listed.map((row) => row.id).sort(),
-    `${DOC}'s table and the relations M52 retracted are not the same set`);
+  assert.deepEqual(stillRetracted, [], `${stillRetracted.join(', ')}: M53 A1 withdrew that reason`);
 });
 
 test(`every gap ${DOC} lists is the gap those two records still show`, () => {
@@ -114,20 +127,17 @@ test(`every gap ${DOC} lists is the gap those two records still show`, () => {
   assert.deepEqual(drifted.sort(), [], drifted.join('; '));
 });
 
-// Rule 27 already requires a retracted record to carry a reason. This asks
-// that the reason be the argument and not a label: both dates, and the rule
-// they break.
-test('every retraction M52 wrote says which two dates do not meet', () => {
-  const thin = [];
-  for (const r of relations) {
-    const reason = r.retraction?.reason ?? '';
-    if (!/M52/.test(reason)) continue;
-    const row = listed.find((l) => l.id === r.id);
-    if (!row) { thin.push(`${r.id}: retracted by M52 and not in ${DOC}`); continue; }
-    if (!reason.includes(String(row.ends))) thin.push(`${r.id}: the reason does not say it ends ${row.ends}`);
-    if (!reason.includes(String(row.starts))) thin.push(`${r.id}: the reason does not say it begins ${row.starts}`);
-  }
-  assert.deepEqual(thin.sort(), [], thin.join('; '));
+// M52 asked that its retraction reasons be the argument and not a label: both
+// dates, and the rule they break. The retractions are gone, and the demand
+// survives them in the shape M53 left — the restored relation's own `note`
+// carries the two dates, because that is where a reader now meets the gap.
+// The assertion itself lives in `tests/m53.test.mjs`, over the same four; what
+// is asserted here is that this file's table is still the one it reads.
+test(`${DOC}'s four and the four M53 restored are the same set`, () => {
+  const doc53 = readFileSync(path.join(ROOT, 'docs/m53-polities.md'), 'utf8');
+  const there = [...doc53.matchAll(/^\| `([a-z0-9-]+--[a-z0-9-]+--succeeded)` \| \d+ \|/gm)].map((m) => m[1]).sort();
+  assert.deepEqual(there, listed.map((row) => row.id).sort(),
+    'docs/m53-polities.md §1.2 and this file\'s audit table are not the same four');
 });
 
 // --- Russia (the brief's §2 and §3) --------------------------------------

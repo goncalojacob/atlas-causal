@@ -376,6 +376,14 @@
             "status"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "note",
+            "retraction",
+            "status"
+          ],
+          "on": "2026-09-17"
         }
       ]
     },
@@ -1529,6 +1537,14 @@
             "status"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "note",
+            "retraction",
+            "status"
+          ],
+          "on": "2026-09-17"
         }
       ]
     },
@@ -1599,6 +1615,14 @@
             "status"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "note",
+            "retraction",
+            "status"
+          ],
+          "on": "2026-09-17"
         }
       ]
     },
@@ -1713,6 +1737,14 @@
             "status"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "note",
+            "retraction",
+            "status"
+          ],
+          "on": "2026-09-17"
         }
       ]
     },

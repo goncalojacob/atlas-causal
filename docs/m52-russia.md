@@ -38,6 +38,13 @@ other direction: a successor that begins before its predecessor ends leaves no
 ground unexplained, and that pair is already reported by the warning
 `relation-outside-actor-when`.
 
+> **The owner reversed this the next day, and §1.4 below is what happened to
+> it.** Rule 30 is no longer a rule; the same arithmetic is now the warning
+> `succession-gap`, and the four of §1.2 are active again. §1.1 to §1.3 are
+> left as M52 wrote them, because they are the record of a decision that was
+> taken and then changed, and rewriting them would hide the second half of
+> that.
+
 ### 1.2 The audit
 
 All 88 active `succeeded` relations, 16 September. **84 are contiguous** — 77

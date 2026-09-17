@@ -768,6 +768,34 @@
       "authors": [
         {
           "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "east-timor-under-portugal",
+      "id": "east-timor-under-portugal--east-timor--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-17",
+      "status": "active",
+      "to": "east-timor",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -2766,6 +2794,34 @@
         "cshapes-2-0"
       ],
       "created": "2026-09-08",
+      "from": "singapore-under-united-kingdom",
+      "id": "singapore-under-united-kingdom--singapore--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-17",
+      "status": "active",
+      "to": "singapore",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
       "from": "solomon-islands-under-united-kingdom",
       "id": "solomon-islands-under-united-kingdom--solomon-islands--succeeded",
       "kind": "relation",
@@ -2921,6 +2977,34 @@
       "revised": null,
       "status": "active",
       "to": "syria",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "taiwan-under-japan",
+      "id": "taiwan-under-japan--taiwan--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-17",
+      "status": "active",
+      "to": "taiwan",
       "type": "succeeded"
     },
     {
@@ -3162,6 +3246,34 @@
         "cshapes-2-0"
       ],
       "created": "2026-09-08",
+      "from": "zambia-under-united-kingdom",
+      "id": "zambia-under-united-kingdom--zambia--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-17",
+      "status": "active",
+      "to": "zambia",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
       "from": "zanzibar-under-united-kingdom",
       "id": "zanzibar-under-united-kingdom--zanzibar--succeeded",
       "kind": "relation",
@@ -3229,10 +3341,40 @@
       "rule": "relation-outside-actor-when"
     },
     {
+      "id": "east-timor-under-portugal--east-timor--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"east-timor\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "east-timor-under-portugal--east-timor--succeeded",
+      "kind": "relation",
+      "message": "\"east-timor-under-portugal\" ends 1976 and \"east-timor\" begins 2002, 26 years later: something else held that ground in between, and this relation does not say what",
+      "rule": "succession-gap"
+    },
+    {
       "id": "senegal-under-france--senegal--succeeded",
       "kind": "relation",
       "message": "the relation falls entirely outside \"senegal\"'s dates",
       "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "singapore-under-united-kingdom--singapore--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"singapore-under-united-kingdom\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "singapore-under-united-kingdom--singapore--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"singapore\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "singapore-under-united-kingdom--singapore--succeeded",
+      "kind": "relation",
+      "message": "\"singapore-under-united-kingdom\" ends 1962 and \"singapore\" begins 1965, 3 years later: something else held that ground in between, and this relation does not say what",
+      "rule": "succession-gap"
     },
     {
       "id": "sudan-under-united-kingdom--sudan--succeeded",
@@ -3247,10 +3389,34 @@
       "rule": "relation-outside-actor-when"
     },
     {
+      "id": "taiwan-under-japan--taiwan--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"taiwan\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "taiwan-under-japan--taiwan--succeeded",
+      "kind": "relation",
+      "message": "\"taiwan-under-japan\" ends 1945 and \"taiwan\" begins 1949, 4 years later: something else held that ground in between, and this relation does not say what",
+      "rule": "succession-gap"
+    },
+    {
       "id": "tunisia-under-france--tunisia--succeeded",
       "kind": "relation",
       "message": "the relation falls entirely outside \"tunisia-under-france\"'s dates",
       "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "zambia-under-united-kingdom--zambia--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"zambia\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "zambia-under-united-kingdom--zambia--succeeded",
+      "kind": "relation",
+      "message": "\"zambia-under-united-kingdom\" ends 1953 and \"zambia\" begins 1964, 11 years later: something else held that ground in between, and this relation does not say what",
+      "rule": "succession-gap"
     }
   ]
 }

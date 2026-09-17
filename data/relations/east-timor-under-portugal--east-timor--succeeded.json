@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "east-timor-under-portugal--east-timor--succeeded",
   "kind": "relation",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,13 +13,9 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-08",
-  "revised": "2026-09-16",
+  "revised": "2026-09-17",
   "origin": {
     "tool": "cshapes"
-  },
-  "retraction": {
-    "on": "2026-09-16",
-    "reason": "Retracted in M52 under amendment A1, the owner’s rule of 16 September: a `succeeded` relation is written only where the predecessor’s end and the successor’s start meet. `east-timor-under-portugal` ends in 1976 and `east-timor` begins in 2002, and twenty-six years is not an imprecise date — it is a period in which something else held that ground, which this atlas does not name and which naming needs a source. Retracting a false statement needs none. The two records and their territory are untouched; what is withdrawn is the claim that one followed the other directly. The span and the question it leaves are in docs/m52-russia.md."
   },
   "review": {
     "status": "draft",
@@ -41,5 +37,5 @@
     "end": 1976,
     "date": "1976-07-17"
   },
-  "note": "CShapes holds 860 as a colony of Portugal to 1976-07-16; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. Earlier than its first independent date, 2002-05-20: the source draws no boundary there, and this is the one it does draw."
+  "note": "CShapes holds 860 as a colony of Portugal to 1976-07-16, and this date is that boundary. Restored in M53: `east-timor` begins 2002, twenty-six years later, and this relation does not say who held the ground between — the atlas names nobody for it. Under the owner’s rule of 17 September a succession may be written across a gap; the gap is named here rather than left to make the relation unwritable."
 }
