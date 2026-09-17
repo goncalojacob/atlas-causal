@@ -9563,6 +9563,226 @@ pictures and one sentence between them.
      was missed: the pull request's own description is untouched, as it
      requires.
 
+## M54 — a territory shows everything that happened on it
+
+The owner, 17 September, having selected Brazil and been given three
+twentieth-century events where four centuries belonged: *"The important thing
+is that when I select a territory I can see all events that are related to that
+territory independent of the timespan I select."*
+
+That sentence is the milestone. **A reader who clicks a territory has clicked a
+polygon**, and the events that belong to it are the events whose place lies
+inside that polygon, at any date — whoever held the ground then, and whether or
+not a `succeeded` relation exists. Porto Seguro in 1500 is inside the outline
+the reader clicked; that is the whole argument.
+
+### What was wrong, measured before the change
+
+M48 made an actor's events include the events on its ground, but only ground
+that actor held **at the event's own date**. `brazil` is a CShapes record
+beginning in 1886, so a colonial event was out of its reach however close it
+sat. Selecting Brazil kept **one** event — the seizure of the *Santa Maria* in
+1961 — and drew **three**, that one and its two neighbours. Those are the three
+the owner saw.
+
+### What it does now
+
+| selecting `brazil` | before | after |
+|---|---:|---:|
+| events the lens keeps | 1 | **6** |
+| of those, drawn in full | 1 | 2 |
+| of those, dimmed (ground outside its own span) | 0 | **4** |
+| events drawn at all, with the one-hop ring | 3 | **17** |
+
+The four dimmed are the landfall of 1500, Dutch Brazil, the gold cycle and the
+independence of 1822 — four centuries that were not in the picture yesterday.
+The depopulation of coastal Brazil is drawn in full, because it runs from 1500
+to 1997 and so reaches into Brazil's own span. **Dates decide the emphasis, not the
+discovery**: the actor's own span gives the full drawing, everything else its
+ground reaches is dimmed exactly as M48's one-hop neighbours are, and no token,
+hex value or type size was added — dimmed already means "related, not chosen".
+
+Corpus-wide: **58 actors' lenses grew**, by **156 events** in all, over 2,687
+actors of which 2,511 hold ground. The territorial join reaches **114 of the
+285 active events** where the dated join reaches 100.
+
+### The twenty largest territories
+
+Largest by the area of the biggest outline the dataset draws for them, which is
+what "a large territory" means here. `before` and `after` are the size of that
+actor's lens; `dimmed` is how much of the `after` is drawn faintly.
+
+| territory | km², largest period | before | after | gained | dimmed |
+|---|---:|---:|---:|---:|---:|
+| `russian-empire` | 22,030,562 | 5 | 5 | 0 | 0 |
+| `soviet-union` | 21,949,932 | 10 | 10 | 0 | 0 |
+| `russia-soviet-union` | 16,807,592 | 5 | 7 | 2 | 2 |
+| `tsardom-of-muscovy` | 15,380,641 | 0 | 0 | 0 | 0 |
+| `qing-empire` | 12,202,434 | 0 | 0 | 0 | 0 |
+| `china` | 11,139,939 | 8 | 8 | 0 | 0 |
+| `central-asian-khanates` | 11,138,079 | 0 | 0 | 0 | 0 |
+| `manchu-empire` | 11,011,829 | 0 | 0 | 0 | 0 |
+| `great-khanate` | 10,491,487 | 0 | 0 | 0 | 0 |
+| `canada` | 9,839,817 | 0 | 0 | 0 | 0 |
+| `united-states-of-america` | 9,433,195 | 19 | 24 | 5 | 2 |
+| `siberians` | 9,084,265 | 0 | 0 | 0 | 0 |
+| `brazil` | 8,499,076 | 1 | 6 | 5 | 4 |
+| `bantu-peoples` | 8,449,722 | 0 | 2 | 2 | 2 |
+| `chagatai-khanate` | 8,338,413 | 0 | 0 | 0 | 0 |
+| `viceroyalty-of-brazil` | 8,095,753 | 5 | 12 | 7 | 5 |
+| `kingdom-of-brazil` | 8,027,528 | 0 | 12 | 12 | 11 |
+| `rupert-s-land` | 7,898,237 | 0 | 0 | 0 | 0 |
+| `australia` | 7,697,884 | 0 | 0 | 0 | 0 |
+| `australian-aboriginal-hunter-gatherers` | 7,606,833 | 0 | 0 | 0 | 0 |
+
+**Thirty-three events in all, and six of the twenty gained them.** Eleven of the
+other fourteen hold no event inside them at any date — a fact about a corpus of
+285 events gathered on the Atlantic, not about the join — and the remaining
+three, `russian-empire`, `soviet-union` and `china`, already reached everything
+their ground holds, because what stands on it stands there inside their own
+span.
+
+### What the union costs
+
+**Nothing, because it is never built.** A union of polygons is expensive to
+compute and this never needs one: the only question ever asked of a territory
+is whether a point falls inside it, and a point is inside a union exactly when
+it is inside one of the parts. Nothing is merged, intersected or simplified,
+and a territory that grew is not punished for growing — the 1400 outline and
+the 1500 outline are both asked, and an event inside either is on that ground.
+
+It is measurably *cheaper* than the dated pass it sits beside. Undated, the
+answer is a fact about the point alone, so it is asked once per **place**
+rather than once per place and year: **40 questions on this corpus where the
+dated pass asks 44**, against 6,687 outlines each screened by its bounding box
+first. Three runs, in the build, over the whole corpus:
+
+| | dated pass (M48) | union pass (M54) |
+|---|---:|---:|
+| run 1 (cold) | 109.0 ms | 65.1 ms |
+| run 2 | 47.5 ms | 55.8 ms |
+| run 3 | 42.9 ms | 51.2 ms |
+
+Both are build-time. **Point-in-polygon per keystroke remains forbidden** and
+nothing here moved towards it: the browser is never given a polygon to test.
+
+### What the new file weighs, and what first paint costs
+
+`data/index/territories-<hash>.json`, **5,356 B (2,123 B gzipped)**, beside
+M48's `grounds-<hash>.json` at 3,622 B (1,487 B). Both are the same encoding —
+an id table and integers into it — read back through one decoder.
+
+**First paint costs exactly what it did.** Neither file is in the core, neither
+is fetched at load, and a page nobody has opened a polity in asks for neither:
+`tests/spine-pages.test.mjs` asserts both promises, once per file. They are
+fetched when a lens on an actor asks, they land together as one arrival, and
+until they do the lens is what it was — a frame of the old picture, never a
+wrong one.
+
+**One thing had to change about when they are asked for**, and it is a hole M48
+left: `fetchLensGrounds` waited for `activeFoci` to name an actor, and
+`activeFoci` hides a lens that keeps nothing (health review of 6 September,
+R8). An imported polity that names no event keeps nothing **until the file
+lands**, so the ask waited on a lens that the file is what creates. `?actor=brazil`
+opened on a cold page therefore never fetched the ground at all. An open actor
+asks now, whatever its lens; a page with no actor open still asks for nothing.
+
+### The band, which is the other half of the sentence
+
+A territorial selection **lists everything it found and fades what the band
+does not reach**. The card carries "What happened on this ground", oldest
+first, and the hint counts what is inside the window — the place card's idiom
+since B12, followed rather than reinvented, and rewritten in place when the
+band moves so that moving it does not rebuild the card under the reader.
+`tests/panel-browser.test.mjs` holds it by the same sentence as the place's:
+not one row is removed, the landfall of 1500 is still there faded, and the
+marker set on the card's head survives the drag.
+
+A card that has no band — a test, a prerender — fades nothing, because no
+window keeps everything.
+
+### Succession: left, and why
+
+§4 allows it *only if it costs nothing beyond the relations already there*. It
+does not. The actor card has carried "Before and after" since I8 — the
+`succeeded` relations both ways round with the other polity's events — so the
+naming a reader needs to step between polities is already on the card this
+milestone is about. What §4 asks for beyond that is a chip on the **event**
+card naming who held that ground before and after, which is a new control, a
+new row in the head and its own tests, over relations M53 has not written yet.
+Left, as the brief allows, and said here.
+
+### What this cannot do, and it is worth knowing
+
+**Seven of the forty placed places in the corpus fall inside no outline at
+all**, and every one of them is on a coast: the imported borders are
+generalised, and a generalised coastline cuts the corner that a port stands on.
+
+| place | distance to the nearest outline | whose |
+|---|---:|---|
+| `bridgetown` | 1.3 km | `barbados` |
+| `conakry` | 3.5 km | `guinea` |
+| `salvador` | 3.6 km | `kingdom-of-brazil` |
+| `new-york` | 4.0 km | `british-american-colonies` |
+| `belem` | 7.3 km | `portugal` |
+| `luanda` | 20.6 km | `angola` |
+| `dili` | 28.7 km | `east-timor` |
+
+`rio-de-janeiro` is inside `kingdom-of-brazil` and 10 km outside modern
+`brazil`, for the same reason and in one source rather than both.
+
+It costs this milestone real events. Of the Brazil chain's 21 records, **five
+stand on Brazilian ground and thirteen are drawn** once the one-hop ring is
+counted; the eight that are not include the four filed at Salvador and Rio —
+`the-brazilian-sugar-cycle`, `the-atlantic-slave-trade-to-brazil`,
+`the-1930-revolution-and-the-vargas-era`, `1964-brazilian-coup-detat` — which
+are inside Brazil to any reader and outside it to this dataset's polygon.
+
+**Not fixed here, deliberately.** The two ways out are better geometry, or a
+tolerance — "a point within *n* km of an outline is inside it" — and the second
+is a decision about what *inside* means, with a number nobody has argued for.
+Containment is a reading of two records while it is exact; a tolerance is a
+judgement, and it is the owner's to make. A single figure of 30 km would catch
+all seven of the above.
+
+### Deviations
+
+787. **The M48 closed-world test now names three reasons and not two.**
+     `tests/grounds.test.mjs` asserted that every event in Portugal's lens was
+     there because the record named Portugal or because the dated ground did —
+     a closed-world check, and this milestone opens the world by one. It reads
+     `territoryOf` as the third reason; the closed-world form itself lives in
+     `tests/territory.test.mjs`, where the third reason is written down.
+788. **`atlasOf(dir, { grounds: null })` no longer empties an actor's lens on
+     its own.** The test that holds "an atlas whose ground has not landed is
+     the lens as it was" passes `{ grounds: null, territories: null }` now,
+     because there are two files and either of them answers. Stating both is
+     what the test is about — neither is in hand before a lens asks.
+789. **The card is drawn again when the ground lands, and that is new.** The
+     two files arrive with nothing in the state changed, so the panel's own key
+     carries the lens the card was drawn under and the reader's next nudge of
+     the band was rebuilding the card. `panel.refresh({ force: true })` is how
+     an arrival that is not a shard says so, and main.js now does for these
+     files exactly what `shardLanded` does for a shard: the pictures, the card
+     and the chips. `Promise.allSettled` over the two, so it is **one** arrival
+     and one rebuild, and a file that failed still lets the other be drawn.
+790. **An actor with no events of its own opens on its ground.** Brazil's card
+     opened on an empty "Where it appears" — "No event records this actor yet"
+     — with four centuries of its own history in the section below it. That is
+     health review B's finding 28 in the case that is now the common one, and
+     the same rule answers it: the ground goes in front of the empty list,
+     behind the succession where there is one. The notice above it changed with
+     it, because "so the pictures are not narrowed to it" stopped being true:
+     a polity whose ground holds events *is* a lens.
+791. **The known shard defect does not bite the ground list, and it was
+     checked rather than assumed.** A long event's attribute row lives in its
+     start century's shard (M50, deviation 779), and this list deliberately
+     names events from centuries the band does not cover — so it is exactly
+     where a row could read "still loading" for ever. It does not: the panel
+     asks for the shards of what is on screen, and a territory's list opened
+     over 1960–2030 comes out with every title in place, the depopulation of
+     1500–1997 among them. The defect is still there and still M50's.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
