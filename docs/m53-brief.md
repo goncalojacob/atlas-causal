@@ -101,3 +101,30 @@ SFSR; what remains open is listed with its question; `validate --index` clean;
 tests green; `M53 done`.
 
 ## Deviations this brief takes, numbered on from the last in `STATUS.md`
+
+## Amendments after review
+
+**A1 — the contiguity rule is relaxed, by the owner, 17 September:** *"Forget
+the continuity rule, you can write a succession even if there is no dates
+continuity."* M52 had made it a **hard validator error** and retracted four
+relations to satisfy it. So this milestone:
+
+- **turns that check from an error into a warning.** Do not delete it: the gap
+  is still worth naming where it exists, and a warning names it without
+  forbidding the relation. Keep its documentation and say what it now means.
+- **restores the four relations M52 withdrew** —
+  `east-timor-under-portugal → east-timor` (+26 y),
+  `zambia-under-united-kingdom → zambia` (+11 y),
+  `taiwan-under-japan → taiwan` (+4 y),
+  `singapore-under-united-kingdom → singapore` (+3 y) — from their retracted
+  records, each carrying the gap in its own note so a reader sees it.
+- **and therefore does not need the Brazilian dates to meet.** §1's correction
+  of `brazil` from 1886 to the Republic's cited start **still stands on its own
+  merits** — 1886 is a file boundary and 1889-11-15 is sourced — but it is no
+  longer what makes the succession writable. Write Viceroyalty → Empire →
+  Republic whether or not the dates meet, each with its cited dates and its
+  gap named.
+
+**A2 — the tests of §6 change with it.** No test may require contiguity. The
+test that a succession's dates are **cited** stays; the test that they **meet**
+goes, and is replaced by one asserting the warning fires where a gap exists.

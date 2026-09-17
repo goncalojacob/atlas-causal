@@ -26,12 +26,13 @@ one-hop neighbours are. The actor's own events stay full. **This needs no new
 token, no new hex value and no new type size: dimmed already means "related,
 not chosen" in this interface, and that is precisely what these are.**
 
-**Walk the chain, but bound it.** A retracted actor ends the walk. So does a
-missing relation — and after M53 the Brazilian chain is Viceroyalty → Empire →
-Republic where the dates meet, and stops where they do not. **The walk must
-stop at a gap rather than jumping it**, because a gap means something else
-held that ground: that is the whole point of the owner's contiguity rule, and
-this lens must not quietly undo it.
+**Walk the chain, but bound it.** A retracted actor ends the walk, and so does
+a missing relation. **A date gap does not**: the owner relaxed that rule on
+17 September, so after M53 the Brazilian chain is Viceroyalty → Empire →
+Republic whether or not the dates meet, and the walk follows it. Where a gap
+exists the relation carries a note saying so, and **the panel shows that note
+on the dimmed rows the gap produced** — the reader is told they have crossed
+one, rather than the walk stopping.
 
 **Compute the closure in `tools/build-index.mjs`**, beside M48's `grounds`
 pass, not at render time — following relations per keystroke is the mistake
@@ -58,11 +59,12 @@ and **in the URL**, so a link opens on the picture its sender saw.
 
 ## 4. Tests
 
-1. A lens on `brazil` includes the Empire's events, and the Viceroyalty's if
-   M53 wrote that succession — **dimmed, not full**.
+1. A lens on `brazil` includes the Empire's **and the Viceroyalty's** events —
+   **dimmed, not full**. After M53 both successions exist.
 2. A lens on an actor with no succession relation is **unchanged** from today.
-3. The walk **stops at a gap**: an actor whose predecessor's dates do not meet
-   its own contributes nothing.
+3. The walk **crosses a gap** and says so: an actor whose predecessor's dates
+   do not meet its own still contributes its events, and the note on the
+   relation reaches the reader.
 4. A retracted actor ends the walk.
 5. The switch is in the URL and survives a reload.
 6. No test pins a count of events.
