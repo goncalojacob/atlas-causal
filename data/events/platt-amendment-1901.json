@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -42,7 +42,18 @@
     "date": "1901-06-12"
   },
   "place": "havana",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "government",
+      "note": "American legislation carried in the Army Appropriations Act of 1901"
+    },
+    {
+      "actor": "cuba",
+      "role": "target",
+      "note": "the Constitutional Assembly approved it on 12 June 1901 and wrote its demands into the constitution word for word"
+    }
+  ],
   "names": [
     "Enmienda Platt"
   ],

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -37,7 +37,18 @@
     "end": 1752
   },
   "place": "london",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "england-and-ireland",
+      "role": "government",
+      "note": "granted the monopoly on all English trade with Africa by Charles II in 1660"
+    },
+    {
+      "actor": "united-kingdom-before-1886",
+      "role": "government",
+      "note": "the state the company survived under, reduced, until its assets passed on in 1752"
+    }
+  ],
   "names": [
     "RAC"
   ],

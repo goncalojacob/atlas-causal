@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,7 +38,18 @@
     "date": "1822-09-07"
   },
   "place": "ipiranga",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "empire-of-brazil",
+      "role": "government",
+      "note": "the state the declaration brought into existence, on the date Wikidata gives for its inception"
+    },
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "opposition",
+      "note": "the crown Brazil separated from; it recognised the separation by the Treaty of Rio de Janeiro in 1825"
+    }
+  ],
   "names": [
     "Independência do Brasil",
     "Grito do Ipiranga"

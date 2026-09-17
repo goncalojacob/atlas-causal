@@ -12,7 +12,7 @@
       ]
     },
     "empire-of-brazil--brazil--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -21,7 +21,7 @@
       ]
     },
     "viceroyalty-of-brazil--empire-of-brazil--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

@@ -2861,6 +2861,15 @@
         }
       ]
     },
+    "captaincy-general-of-cuba": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
+        }
+      ]
+    },
     "cayenne": {
       "from": "git",
       "versions": [
@@ -15738,6 +15747,15 @@
             "where"
           ],
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "saint-domingue": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
         }
       ]
     },

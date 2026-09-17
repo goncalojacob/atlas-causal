@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,7 +38,13 @@
     "date": "1930-10-03"
   },
   "place": "rio-de-janeiro",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the armed insurrection ended the Old Republic and put Vargas in the presidency for fifteen years"
+    }
+  ],
   "names": [
     "Revolução de 1930",
     "Era Vargas"

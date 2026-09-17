@@ -233,3 +233,105 @@ would be a claim about which polity held which border in which month of the
 civil war, which is not a lookup and not this milestone's work. The flags and
 `docs/m52-russia.md` §2.5 still say what they say.
 
+---
+
+## 4. The events that named nobody
+
+### 4.1 The fault, measured
+
+`docs/m50-brief.md` asked its chain for reachability *within* the chain, two
+edges, sources, cross-chain routing, a place and a date, and never asked
+whether a chain event is reachable **from an actor** — though M48 had just made
+the actor lens the main way to explore. So M50 wrote thirty-six events and left
+thirty-five of them carrying `actors: []`.
+
+| | chain events | all active events |
+|---|---|---|
+| **before M53** | 1 of 36 | 198 of 285 |
+| **after M53** | 36 of 36 | 235 of 285 |
+
+Counted the same way in both columns: **an event names at least one actor that
+is alive in the year the event starts**. `cuban-revolution` was the one chain
+event that already did. Over the corpus the figure moves by thirty-seven — the
+thirty-five chain events, plus `october-revolution` and `russian-civil-war`,
+which named a state that did not yet exist and now name one that did.
+
+**Fifty active events still name nobody**, and every one of them carries
+`actors: []` rather than a wrong name. They are not in either chain and are not
+this milestone's to write; §5 lists the figure as what it is, an open count.
+
+### 4.2 Where the entries came from
+
+Every entry names an actor **the event's own summary already names**, and that
+summary was written by M50 from the Wikipedia article the record cites at a
+named revision (amendment A1 of M50: *"The historical claims should come from
+wikipedia right now"*). Nothing was added to the atlas's claims about the past;
+what was added is **which record in this atlas each name resolves to**, and a
+`note` of at most 200 characters saying what that actor did, in the summary's
+own terms.
+
+The role comes from the closed list in `data/roles.json` — `signatory`,
+`government`, `occupier`, `belligerent`, `host`, `supporter`, `opposition`,
+`deposed`, `target` — and no role was added.
+
+**The actor named is alive when the event starts, and every actor named
+overlaps the event's interval.** Both are asserted in `tests/m53.test.mjs`, and
+the first is the test M50 lacked. The two are different demands for the long
+events: `the-atlantic-slave-trade-to-brazil` runs 1540 to the 1860s and names
+both the Kingdom of Portugal, alive at its start, and the Empire of Brazil,
+which enters in 1822 and is what the traffic was landing in at its end. A
+process that outlives a state is named by the states it passed through, which
+is the point of an interval.
+
+### 4.3 The three events stranded in 1917
+
+M52 dated `soviet-union` from 1922-12-30 and left three events naming it before
+it existed. Each now names `russian-sfsr`, whose inception, 1917-10-25, is the
+date of the first of them.
+
+| event | was | is |
+|---|---|---|
+| `october-revolution` 1917 | `soviet-union` | `russian-sfsr` |
+| `russian-civil-war` 1917 | `soviet-union` | `russian-sfsr` |
+| `treaty-of-brest-litovsk` 1918 | `soviet-union` | `russian-sfsr` |
+
+`treaty-of-brest-litovsk` keeps its four other signatories untouched. No other
+event anywhere moved off `soviet-union`, and `docs/m52-russia.md` §2.6 still
+accounts for every entry that named the old conflated record; these three are
+the only rows of that table M53 changed.
+
+---
+
+## 5. What is left open, and the question each one asks
+
+1. **The four gaps of §1.2.** Who held East Timor 1976–2002, Northern Rhodesia
+   1953–1964, Taiwan 1945–1949 and Singapore 1962–1965. Each needs an actor
+   with sources; the successions no longer wait on them.
+2. **Which item `viceroyalty-of-brazil` is**, and its start — §2.4, points 1
+   and 2. 1808 or 1815 for the end; 1715, 1763 or 1500 for the start.
+3. **Brazilian ground from 1815 to 1886** — §2.4, point 3. The Empire of Brazil
+   holds territory only from 1886, and the periods that cover the century
+   before it belong to `viceroyalty-of-brazil` and `kingdom-of-brazil`, whose
+   own dates have ended. Re-homing them is the §2.3 operation again and needs a
+   decision about the two datasets.
+4. **The seven years between the colony and the Empire.** `Q903779`, the United
+   Kingdom of Portugal, Brazil and the Algarves, 1815-12-16 to 1822-09-07, is
+   in Wikidata and not in this atlas. Writing it would close the one gap M53
+   left in the Brazilian line. It was not written because the brief asked for
+   the Russian Republic and not for this, and because it would want territory
+   to be worth having.
+5. **`chinese-civil-war` (1946–1950) names `taiwan` (1949–).** The entry is
+   kept, says it enters in 1949, and the event is flagged `m53-open`. The
+   record's own summary has the Nationalist government driven to Taiwan in
+   1949, so the name is sourced and the overlap is real; what is open is
+   whether the CShapes record `taiwan`, which begins 1949-12-08, is the polity
+   that fought the war from 1946. That is the M49 question about a 1886-or-1949
+   boundary, and naming the Republic of China needs a record of its own.
+6. **Fifty active events name nobody**, all with `actors: []`. None is in
+   either chain. The chain was not the only region with the fault, which is
+   what §4.1 was measured to find out.
+7. **`kingdom-of-portugal`, `saint-domingue` and `captaincy-general-of-cuba`
+   hold no territory**, and each overlaps a record the territory imports drew
+   for the same ground under another name. Whether those pairs are one record
+   or two is M49's question, unanswered, and no relation was written between
+   any of them.

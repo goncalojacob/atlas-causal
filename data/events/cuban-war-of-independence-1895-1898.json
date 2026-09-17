@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -37,7 +37,18 @@
     "end": 1898
   },
   "place": "santiago-de-cuba",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "cuba-under-spain",
+      "role": "belligerent",
+      "note": "the last of three wars Cuba fought against Spain"
+    },
+    {
+      "actor": "spain",
+      "role": "belligerent",
+      "note": "sent 220,285 soldiers across the Atlantic and built the reconcentration camps"
+    }
+  ],
   "names": [
     "Guerra de Independencia cubana"
   ],

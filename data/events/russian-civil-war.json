@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-16",
+  "revised": "2026-09-17",
   "origin": {
     "tool": "wikidata"
   },
@@ -63,8 +63,9 @@
   "region": "europe",
   "actors": [
     {
-      "actor": "soviet-union",
-      "role": "belligerent"
+      "actor": "russian-sfsr",
+      "role": "belligerent",
+      "note": "the Bolshevik side: Wikidata dates Q2184 from 1917-10-25, inside this war, while the Soviet Union it later joined begins 1922-12-30, after it"
     }
   ]
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -43,7 +43,18 @@
     "endDate": "1821-04-26"
   },
   "place": "rio-de-janeiro",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "government",
+      "note": "the Braganza court, near ten thousand people, sailed from Lisbon on 29 November 1807 and governed from Rio for thirteen years"
+    },
+    {
+      "actor": "viceroyalty-of-brazil",
+      "role": "host",
+      "note": "the colony the court arrived in, and whose ports the decree of 1808 opened to friendly nations"
+    }
+  ],
   "names": [
     "Transferência da corte portuguesa para o Brasil"
   ],

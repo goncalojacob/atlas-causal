@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -37,7 +37,13 @@
     "end": 1550
   },
   "place": "santo-domingo",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "castille",
+      "role": "government",
+      "note": "the crown whose tribute in gold, encomienda and settlement the account names"
+    }
+  ],
   "names": [
     "Genocide and depopulation of the Taíno"
   ],

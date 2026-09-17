@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,7 +38,13 @@
     "date": "1807-05-01"
   },
   "place": "london",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "united-kingdom-before-1886",
+      "role": "government",
+      "note": "an act of its Parliament, in force from 1 May 1807 throughout the British Empire"
+    }
+  ],
   "names": [
     "Abolition of the Slave Trade Act 1807"
   ],

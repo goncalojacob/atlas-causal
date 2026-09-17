@@ -262,3 +262,102 @@ test('the Russian line from the Empire to 1991 is continuous and cited', () => {
   assert.deepEqual(between, [], `${between.join(', ')}: the SFSR was a republic inside the union, not its predecessor or its successor`);
 });
 
+// --- §4: the events that named nobody -----------------------------------
+
+const events = await readDir('events');
+const chainDoc = await readFile(path.join(ROOT, 'docs/m50-chains.md'), 'utf8');
+const chain = new Set([...chainDoc.matchAll(/^\| `([a-z0-9-]+)` \|/gm)].map((m) => m[1]));
+const roles = new Set(JSON.parse(await readFile(path.join(ROOT, 'data/roles.json'), 'utf8')).map((r) => r.id));
+
+const from = (when) => earliest(when?.start);
+const to = (when) => (when?.end === null || when?.end === undefined ? Infinity : latest(when.end));
+const alive = (id, year) => {
+  const a = byId.get(id);
+  if (!a || a.status !== 'active') return false;
+  return year >= from(a.when) && year <= to(a.when);
+};
+
+// **The test M50 lacked.** Its own tests asked for reachability within the
+// chain, two edges, sources, cross-chain routing, a place and a date, and
+// never asked whether a chain event is reachable from an actor — which is how
+// M48 and M54 made the atlas explorable. Thirty-five of thirty-six carried
+// `actors: []` until this milestone.
+test('every event of the two M50 chains names an actor alive in the year it starts', () => {
+  assert.ok(chain.size >= 30, `docs/m50-chains.md lists ${chain.size} events`);
+  const byEvent = new Map(events.map((e) => [e.id, e]));
+  const silent = [];
+  for (const id of chain) {
+    const e = byEvent.get(id);
+    if (!e) { silent.push(`${id}: no such event`); continue; }
+    if (e.status !== 'active') continue;
+    const year = from(e.when);
+    const entries = e.actors ?? [];
+    if (entries.length === 0) { silent.push(`${id} (${year}) carries actors: []`); continue; }
+    if (!entries.some((x) => alive(x.actor, year))) {
+      silent.push(`${id} (${year}) names ${entries.map((x) => x.actor).join(', ')} and none was alive then`);
+    }
+  }
+  assert.deepEqual(silent.sort(), [], silent.join('; '));
+});
+
+// The other half of the same demand, and the stricter one for a long event: an
+// entry may name an actor that enters part-way through — the Empire of Brazil
+// in a slave trade that began in 1540 — but never one whose whole life falls
+// outside the event. This is the fault the brief found in `chinese-civil-war`.
+test('every actors entry M53 wrote names an actor whose life overlaps the event', () => {
+  const byEvent = new Map(events.map((e) => [e.id, e]));
+  const wrong = [];
+  for (const id of chain) {
+    const e = byEvent.get(id);
+    if (!e || e.status !== 'active') continue;
+    for (const x of e.actors ?? []) {
+      const a = byId.get(x.actor);
+      if (!a) { wrong.push(`${id} names ${x.actor}, which is not a record`); continue; }
+      if (!roles.has(x.role)) wrong.push(`${id}/${x.actor}: "${x.role}" is not a role in data/roles.json`);
+      if (to(a.when) < from(e.when) || from(a.when) > to(e.when)) {
+        wrong.push(`${id} (${from(e.when)}–${e.when?.end ?? 'open'}) names ${a.id} (${from(a.when)}–${a.when?.end ?? 'open'})`);
+      }
+    }
+  }
+  assert.deepEqual(wrong.sort(), [], wrong.join('; '));
+});
+
+// §4.1's table against the corpus. The "after" column is a live count and the
+// "before" column is history, so only the first is checked; what this holds is
+// that the document cannot report a figure the records do not show.
+const COUNT_ROW = /^\| \*\*after M53\*\* \| (\d+) of (\d+) \| (\d+) of (\d+) \|/;
+const counted = doc.split('\n').map((line) => COUNT_ROW.exec(line)).filter(Boolean)[0];
+
+test(`${DOC} §4.1 reports the figure the corpus actually shows`, () => {
+  assert.ok(counted, `${DOC} §4.1 carries no "after M53" row`);
+  const [, chainNamed, chainTotal, allNamed, allTotal] = counted.map(Number);
+  const active = events.filter((e) => e.status === 'active');
+  const names = (e) => (e.actors ?? []).some((x) => alive(x.actor, from(e.when)));
+  const chainActive = active.filter((e) => chain.has(e.id));
+  assert.equal(chainActive.length, chainTotal, `${DOC} says ${chainTotal} active chain events`);
+  assert.equal(chainActive.filter(names).length, chainNamed, `${DOC} says ${chainNamed} chain events name an actor alive at their start`);
+  assert.equal(active.length, allTotal, `${DOC} says ${allTotal} active events`);
+  assert.equal(active.filter(names).length, allNamed, `${DOC} says ${allNamed} active events name an actor alive at their start`);
+});
+
+// §4.3's table against the records, in both directions: the three events named
+// `soviet-union` before it existed and now name the SFSR, and nothing else
+// moved off `soviet-union` that the table does not list.
+const MOVED_ROW = /^\| `([a-z0-9-]+)` \d{4} \| `([a-z0-9-]+)` \| `([a-z0-9-]+)` \|/;
+const movedOff = doc.split('\n').map((line) => MOVED_ROW.exec(line)).filter(Boolean)
+  .map(([, id, was, is]) => ({ id, was, is }));
+
+test(`${DOC} §4.3 says where the three stranded events went, and that is where they went`, () => {
+  assert.equal(movedOff.length, 3, `${DOC} §4.3 should carry one row per stranded event`);
+  const byEvent = new Map(events.map((e) => [e.id, e]));
+  const wrong = [];
+  for (const row of movedOff) {
+    const e = byEvent.get(row.id);
+    if (!e) { wrong.push(`${row.id}: no such event`); continue; }
+    const named = (e.actors ?? []).map((x) => x.actor);
+    if (!named.includes(row.is)) wrong.push(`${row.id}: ${DOC} puts it on ${row.is}, it names ${named.join(', ')}`);
+    if (named.includes(row.was)) wrong.push(`${row.id}: still names ${row.was}`);
+    if (!alive(row.is, from(e.when))) wrong.push(`${row.id}: ${row.is} was not alive in ${from(e.when)}`);
+  }
+  assert.deepEqual(wrong.sort(), [], wrong.join('; '));
+});

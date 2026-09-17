@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -42,7 +42,13 @@
     "date": "1888-05-13"
   },
   "place": "rio-de-janeiro",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "empire-of-brazil",
+      "role": "government",
+      "note": "Law No. 3,353 of 13 May 1888, signed by Isabel as regent for Pedro II"
+    }
+  ],
   "names": [
     "Golden Law",
     "Law No. 3,353 of 1888"

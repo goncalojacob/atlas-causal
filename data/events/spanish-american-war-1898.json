@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": "2026-09-16",
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -39,7 +39,18 @@
     "endDate": "1898-08-13"
   },
   "place": "havana",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent",
+      "note": "American intervention in the Cuban and Philippine wars of independence; it came out a world power"
+    },
+    {
+      "actor": "spain",
+      "role": "belligerent",
+      "note": "the war ended almost four centuries of Spanish presence in the Americas, Asia and the Pacific"
+    }
+  ],
   "names": [
     "Guerra hispano-estadounidense"
   ],

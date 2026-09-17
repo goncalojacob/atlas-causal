@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-16",
+  "revised": "2026-09-17",
   "origin": {
     "tool": "wikidata"
   },
@@ -63,8 +63,9 @@
   "region": "europe",
   "actors": [
     {
-      "actor": "soviet-union",
-      "role": "government"
+      "actor": "russian-sfsr",
+      "role": "government",
+      "note": "the state the insurrection established: Wikidata gives Q2184 an inception of 1917-10-25, this event’s own date, and the Soviet Union does not begin until 1922-12-30"
     }
   ]
 }

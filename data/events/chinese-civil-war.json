@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-05",
+  "revised": "2026-09-17",
   "origin": {
     "tool": "wikidata"
   },
@@ -26,7 +26,8 @@
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "date"
+      "date",
+      "m53-open"
     ],
     "note": "The interval on this record is the imported item's and covers the decisive phase only. The war between the Nationalists and the Communists opens in 1927 and is suspended for the Japanese war; a reviewer should decide whether the record is the whole war or the campaign of 1946–1949 and say so in the title."
   },
@@ -70,7 +71,8 @@
     },
     {
       "actor": "taiwan",
-      "role": "belligerent"
+      "role": "belligerent",
+      "note": "from 1949 only: this record begins 1949-12-08, where CShapes draws it, and the article has the Nationalist government driven there that year. Which polity it names is open — docs/m53-polities.md §5"
     }
   ]
 }

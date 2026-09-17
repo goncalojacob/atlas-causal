@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -44,7 +44,18 @@
     }
   },
   "place": "salvador",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "government",
+      "note": "the crown whose colony landed the enslaved for the sugar and then the mines"
+    },
+    {
+      "actor": "empire-of-brazil",
+      "role": "government",
+      "note": "the state the traffic was landing in for its last forty years, and which abolished it in 1850"
+    }
+  ],
   "names": [
     "Tráfico atlântico de escravizados para o Brasil"
   ],

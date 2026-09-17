@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -41,7 +41,18 @@
     "end": 1700
   },
   "place": "bridgetown",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "england-and-ireland",
+      "role": "government",
+      "note": "by 1660 Barbados generated more trade than all the other English colonies combined"
+    },
+    {
+      "actor": "dutch-republic",
+      "role": "supporter",
+      "note": "Dutch traders supplied the equipment, the financing and the enslaved Africans, and the crop came from Dutch Brazil in 1640"
+    }
+  ],
   "names": [
     "Sugar revolution"
   ],

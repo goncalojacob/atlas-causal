@@ -1453,7 +1453,7 @@
       ]
     },
     "russian-empire--russian-republic--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1462,7 +1462,7 @@
       ]
     },
     "russian-republic--russian-sfsr--succeeded": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

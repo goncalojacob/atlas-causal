@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -43,7 +43,13 @@
     "endDate": "1804-01-01"
   },
   "place": "cap-haitien",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "saint-domingue",
+      "role": "opposition",
+      "note": "the colonial regime the uprising rose against; Wikidata dissolves it on 1804-01-01, the day the revolution ends"
+    }
+  ],
   "names": [
     "Révolution haïtienne",
     "Haitian War of Independence"

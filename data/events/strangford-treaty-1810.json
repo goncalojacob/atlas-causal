@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": "2026-09-16",
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,7 +38,18 @@
     "date": "1810-02-19"
   },
   "place": "rio-de-janeiro",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "united-kingdom-before-1886",
+      "role": "signatory",
+      "note": "took a preferential tariff of fifteen per cent in exchange for defending Portugal and its colonies"
+    },
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "signatory",
+      "note": "the Portuguese government in exile signed at Rio de Janeiro on 19 February 1810"
+    }
+  ],
   "names": [
     "Tratado de Comércio e Navegação (1810)",
     "Anglo-Brazilian Treaty of 1810"

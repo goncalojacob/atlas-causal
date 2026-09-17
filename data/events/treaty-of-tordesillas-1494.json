@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,7 +38,18 @@
     "date": "1494-06-07"
   },
   "place": "tordesillas",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "signatory",
+      "note": "ratified it on 5 September 1494 and took the lands east of the meridian"
+    },
+    {
+      "actor": "castille",
+      "role": "signatory",
+      "note": "ratified it on 2 July 1494 and took the lands west of the meridian"
+    }
+  ],
   "names": [
     "Tratado de Tordesilhas",
     "Tratado de Tordesillas"

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,7 +38,18 @@
     "date": "1889-11-15"
   },
   "place": "rio-de-janeiro",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "empire-of-brazil",
+      "role": "deposed",
+      "note": "the constitutional monarchy ended that day, on the date Wikidata gives for its dissolution"
+    },
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the First Brazilian Republic, whose provisional government was in place the same day"
+    }
+  ],
   "names": [
     "Proclamação da República"
   ],

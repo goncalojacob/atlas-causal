@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -37,7 +37,13 @@
     "end": 1803
   },
   "place": "cap-haitien",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "saint-domingue",
+      "role": "government",
+      "note": "the French colony in the western third of Hispaniola, recognised by Spain at Ryswick in 1697"
+    }
+  ],
   "names": [
     "French Saint-Domingue"
   ],

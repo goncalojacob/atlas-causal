@@ -7013,7 +7013,7 @@
         "wikidata"
       ],
       "created": "2026-09-02",
-      "degree": 5,
+      "degree": 8,
       "id": "brazil",
       "kind": "actor",
       "names": [
@@ -8378,6 +8378,37 @@
         }
       ],
       "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-17",
+      "degree": 1,
+      "id": "captaincy-general-of-cuba",
+      "kind": "actor",
+      "names": [
+        "Captaincy General of Cuba"
+      ],
+      "origin": {
+        "run": "m53",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m53-polities"
+        ],
+        "note": "M53: written on Wikidata’s Q2039931 — P571 1607-01-01, P576 1898 — to carry the century between `cuba-spain` (to 1782) and `cuba-under-spain` (from 1886), which is where `the-cuban-sugar-boom` sits. It overlaps both and no relation is written to either: whether these are one record under three labels is the M49 question and is a person’s. It holds no ground.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "ramos-2009-historia-de-portugal"
       ],
       "created": "2026-09-04",
@@ -8618,7 +8649,7 @@
         "historical-basemaps"
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 5,
       "id": "castille",
       "kind": "actor",
       "names": [
@@ -14196,7 +14227,7 @@
         "historical-basemaps"
       ],
       "created": "2026-09-16",
-      "degree": 4,
+      "degree": 6,
       "id": "dutch-republic",
       "kind": "actor",
       "names": [
@@ -14969,7 +15000,7 @@
         "wikidata"
       ],
       "created": "2026-09-17",
-      "degree": 3,
+      "degree": 9,
       "id": "empire-of-brazil",
       "kind": "actor",
       "names": [
@@ -15150,7 +15181,7 @@
         "historical-basemaps"
       ],
       "created": "2026-09-16",
-      "degree": 4,
+      "degree": 8,
       "id": "england-and-ireland",
       "kind": "actor",
       "names": [
@@ -27175,6 +27206,37 @@
         "flags": [
           "imported-facts"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-17",
+      "degree": 13,
+      "id": "kingdom-of-portugal",
+      "kind": "actor",
+      "names": [
+        "Kingdom of Portugal"
+      ],
+      "origin": {
+        "run": "m53",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m53-polities"
+        ],
+        "note": "M53: written on Wikidata’s Q45670 — P571 1139-07-25, P576 1910-10-05 — because the atlas held no Portugal before 1886 and twelve chain events named nobody for want of one. It overlaps `portugal` (1886–) and ends where `first-portuguese-republic` (1910–) begins; no relation is written to either, because whether these are the same record under two regimes or two records is the M49 question and is a person’s. It holds no ground.",
         "status": "draft"
       },
       "revised": null,
@@ -49809,7 +49871,7 @@
         "wikidata"
       ],
       "created": "2026-09-17",
-      "degree": 1,
+      "degree": 4,
       "id": "russian-sfsr",
       "kind": "actor",
       "names": [
@@ -50233,6 +50295,37 @@
         "flags": [
           "imported-facts"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-17",
+      "degree": 2,
+      "id": "saint-domingue",
+      "kind": "actor",
+      "names": [
+        "Saint-Domingue"
+      ],
+      "origin": {
+        "run": "m53",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m53-polities"
+        ],
+        "note": "M53: written on Wikidata’s Q861551 — P571 1626, P576 1804-01-01 — so that `saint-domingue-and-the-french-sugar-colony` and `haitian-revolution-1791-1804` can name the polity they are about. Its dissolution is the same day `haiti` on Q790 gives for its own inception, but `haiti` in this atlas is the CShapes record beginning 1886, so no succession is written: that is the same 1886 question M49 left open. It holds no ground.",
         "status": "draft"
       },
       "revised": null,
@@ -54329,7 +54422,7 @@
         "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 29,
+      "degree": 26,
       "id": "soviet-union",
       "kind": "actor",
       "names": [
@@ -60266,7 +60359,7 @@
         "historical-basemaps"
       ],
       "created": "2026-09-16",
-      "degree": 4,
+      "degree": 12,
       "id": "united-kingdom-before-1886",
       "kind": "actor",
       "names": [
@@ -60851,7 +60944,7 @@
         "wikidata"
       ],
       "created": "2026-09-16",
-      "degree": 5,
+      "degree": 7,
       "id": "viceroyalty-of-brazil",
       "kind": "actor",
       "names": [

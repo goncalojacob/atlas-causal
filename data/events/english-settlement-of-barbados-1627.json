@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,7 +38,13 @@
     "date": "1627-02-17"
   },
   "place": "bridgetown",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "england-and-ireland",
+      "role": "government",
+      "note": "the island was claimed for James I and settled in 1627 as a proprietary colony"
+    }
+  ],
   "names": [
     "Colony of Barbados"
   ],

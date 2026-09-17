@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,7 +38,13 @@
     "date": "1492-10-12"
   },
   "place": "san-salvador-island",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "castille",
+      "role": "government",
+      "note": "Columbus sailed west for the Catholic Monarchs of Spain"
+    }
+  ],
   "names": [
     "Primer viaje de Colón"
   ],

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -42,7 +42,18 @@
     "date": "1845-08-09"
   },
   "place": "london",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "united-kingdom-before-1886",
+      "role": "government",
+      "note": "an act of its Parliament of 9 August 1845 authorising the Royal Navy to seize Brazilian slave ships"
+    },
+    {
+      "actor": "empire-of-brazil",
+      "role": "target",
+      "note": "the state whose ships the Act made seizable and whose buyers imported faster while they still might"
+    }
+  ],
   "names": [
     "Slave Trade (Brazil) Act 1845",
     "Bill Aberdeen"

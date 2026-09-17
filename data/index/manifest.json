@@ -1,37 +1,43 @@
 {
   "attributeShards": [
     {
-      "file": "index/attributes-1400-1499-02df51ccd7dd.json",
+      "file": "index/attributes-1100-1199-8bd2fc0334fc.json",
+      "from": 1100,
+      "key": "1100-1199",
+      "to": 1199
+    },
+    {
+      "file": "index/attributes-1400-1499-497d8929a0b6.json",
       "from": 1400,
       "key": "1400-1499",
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-364bdf63241f.json",
+      "file": "index/attributes-1500-1599-311ea551d585.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-f5214e3feab4.json",
+      "file": "index/attributes-1600-1699-259ed6e0bb11.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-870285686ba0.json",
+      "file": "index/attributes-1700-1799-0e011a952df7.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-fd66e84b3c87.json",
+      "file": "index/attributes-1800-1899-bc5e7ba615c8.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-eb5f9c45049a.json",
+      "file": "index/attributes-1900-1999-7e80d200ae23.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -854,7 +860,7 @@
     }
   ],
   "counts": {
-    "actors": 2690,
+    "actors": 2693,
     "edges": 329,
     "events": 548,
     "narratives": 1,
@@ -904,53 +910,53 @@
     }
   ],
   "files": {
-    "citers": "index/citers-bd67003f6b32",
-    "core": "index/core-11f369ad171c.json",
+    "citers": "index/citers-7f3cbf2d7c89",
+    "core": "index/core-dd1202bfbe62.json",
     "grounds": "index/grounds-ffd18380b39c.json",
     "presences": "index/presences-7cc5ca88a65a.json",
-    "review": "index/review-365e8e9fb306.json",
-    "search": "index/search-ef42e4c81048.json",
-    "sources": "index/sources-62157fe61c06.json",
+    "review": "index/review-73da657c8ab7.json",
+    "search": "index/search-1b1c83a41692.json",
+    "sources": "index/sources-216e17a3bec9.json",
     "territories": "index/territories-1b0a74d13db7.json"
   },
   "historyShards": [
     {
-      "file": "index/history-event-1400-1499-a47ab9d93fc2.json",
+      "file": "index/history-event-1400-1499-8b1b274601bf.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "event",
       "to": 1499
     },
     {
-      "file": "index/history-event-1500-1599-4e81c7f182b7.json",
+      "file": "index/history-event-1500-1599-7b33c5a8c51d.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "event",
       "to": 1599
     },
     {
-      "file": "index/history-event-1600-1699-7028829e01e2.json",
+      "file": "index/history-event-1600-1699-cf7abc71b382.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "event",
       "to": 1699
     },
     {
-      "file": "index/history-event-1700-1799-ced5bd90488b.json",
+      "file": "index/history-event-1700-1799-dae84667fbb1.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "event",
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-a92d27f80605.json",
+      "file": "index/history-event-1800-1899-91c0166197b1.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-0cda8dfb09de.json",
+      "file": "index/history-event-1900-1999-e04f7a7a4ab7.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
@@ -1020,6 +1026,13 @@
       "to": null
     },
     {
+      "file": "index/history-actor-1100-1199-76beb25aa472.json",
+      "from": 1100,
+      "key": "1100-1199",
+      "kind": "actor",
+      "to": 1199
+    },
+    {
       "file": "index/history-actor-1400-1499-c8eb8a2d8021.json",
       "from": 1400,
       "key": "1400-1499",
@@ -1034,7 +1047,7 @@
       "to": 1599
     },
     {
-      "file": "index/history-actor-1600-1699-bf7e73bf8885.json",
+      "file": "index/history-actor-1600-1699-70560eaedce6.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "actor",
@@ -1048,14 +1061,14 @@
       "to": 1799
     },
     {
-      "file": "index/history-actor-1800-1899-e67ba7dfd826.json",
+      "file": "index/history-actor-1800-1899-945b3560b4ad.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "actor",
       "to": 1899
     },
     {
-      "file": "index/history-actor-1900-1999-cd1d8b62cb22.json",
+      "file": "index/history-actor-1900-1999-7eb63963246a.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "actor",
@@ -1076,14 +1089,14 @@
       "to": null
     },
     {
-      "file": "index/history-relation-1800-1899-13499674d9ad.json",
+      "file": "index/history-relation-1800-1899-58123e1963ad.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "relation",
       "to": 1899
     },
     {
-      "file": "index/history-relation-1900-1999-5ec94a9d54de.json",
+      "file": "index/history-relation-1900-1999-bc5c0a4d5146.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "relation",

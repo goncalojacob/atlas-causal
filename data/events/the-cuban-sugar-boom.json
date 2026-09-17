@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -45,7 +45,13 @@
     "end": 1886
   },
   "place": "havana",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "captaincy-general-of-cuba",
+      "role": "government",
+      "note": "the Spanish government of the island, which kept slavery and kept the Spanish connection while its neighbours became independent"
+    }
+  ],
   "names": [
     "Auge azucarero cubano"
   ],

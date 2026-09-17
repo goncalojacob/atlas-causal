@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,12 @@
     "date": "1833-08-28"
   },
   "place": "london",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "united-kingdom-before-1886",
+      "role": "government",
+      "note": "an act of its Parliament, carried by Earl Grey’s administration, which bought the freedom of the enslaved"
+    }
+  ],
   "region": null
 }

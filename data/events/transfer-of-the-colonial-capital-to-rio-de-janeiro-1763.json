@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -37,7 +37,18 @@
     "end": 1763
   },
   "place": "rio-de-janeiro",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "government",
+      "note": "the crown whose representative was retitled from Governor General to Viceroy at the same time"
+    },
+    {
+      "actor": "viceroyalty-of-brazil",
+      "role": "host",
+      "note": "the colony whose capital moved from Salvador to Rio de Janeiro"
+    }
+  ],
   "names": [
     "Transferência da capital para o Rio de Janeiro"
   ],

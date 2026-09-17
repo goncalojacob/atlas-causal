@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-16",
+  "revised": "2026-09-17",
   "origin": {
     "tool": "wikidata"
   },
@@ -63,8 +63,9 @@
   "parent": "world-war-i",
   "actors": [
     {
-      "actor": "soviet-union",
-      "role": "signatory"
+      "actor": "russian-sfsr",
+      "role": "signatory",
+      "note": "the Russian signatory of 3 March 1918: the Soviet Union Wikidata dates from 1922-12-30 did not exist, and Q2184 did"
     },
     {
       "actor": "germany-prussia",

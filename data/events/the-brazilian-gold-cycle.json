@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -44,7 +44,13 @@
     }
   },
   "place": "vila-rica",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "government",
+      "note": "800 tonnes of gold were officially shipped to Lisbon over the century"
+    }
+  ],
   "names": [
     "Ciclo do ouro",
     "Brazilian gold rush"

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -42,7 +42,13 @@
     "date": "1534-09-24"
   },
   "place": "lisbon",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "government",
+      "note": "John III divided the coast into fifteen captaincies and granted each to a donatário"
+    }
+  ],
   "names": [
     "Capitanias hereditárias"
   ],

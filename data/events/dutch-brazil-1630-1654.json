@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -39,7 +39,18 @@
     "endDate": "1654-01-26"
   },
   "place": "recife",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "dutch-republic",
+      "role": "occupier",
+      "note": "held the north-east from 1630 with the West India Company’s capital at Recife, and capitulated on 26 January 1654"
+    },
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "belligerent",
+      "note": "the crown the colony was taken from and ceded back to by the Treaty of The Hague in 1661"
+    }
+  ],
   "names": [
     "Nieuw-Holland",
     "Brasil Holandês",

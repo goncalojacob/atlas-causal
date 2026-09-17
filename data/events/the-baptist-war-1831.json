@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,7 +38,13 @@
     "date": "1831-12"
   },
   "place": "montego-bay",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "united-kingdom-before-1886",
+      "role": "government",
+      "note": "the plantocracy’s militia and the British garrison put the strike down within ten days"
+    }
+  ],
   "names": [
     "Christmas Rebellion",
     "Great Jamaican Slave Revolt"

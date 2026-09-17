@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -44,7 +44,18 @@
     }
   },
   "place": "bridgetown",
-  "actors": [],
+  "actors": [
+    {
+      "actor": "england-and-ireland",
+      "role": "government",
+      "note": "the crown whose islands the traffic was supplying when it began"
+    },
+    {
+      "actor": "united-kingdom-before-1886",
+      "role": "government",
+      "note": "the state that carried it on and then closed its own trade in 1807"
+    }
+  ],
   "names": [
     "Tráfico atlântico de escravizados para as Caraíbas"
   ],

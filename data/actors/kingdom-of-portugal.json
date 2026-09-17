@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "kingdom-of-portugal",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m53"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m53-polities"
+    ],
+    "note": "M53: written on Wikidata’s Q45670 — P571 1139-07-25, P576 1910-10-05 — because the atlas held no Portugal before 1886 and twelve chain events named nobody for want of one. It overlaps `portugal` (1886–) and ends where `first-portuguese-republic` (1910–) begins; no relation is written to either, because whether these are the same record under two regimes or two records is the M49 question and is a person’s. It holds no ground."
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q45670, P571 1139-07-25"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q45670, P576 1910-10-05"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Kingdom of Portugal"
+  ],
+  "summary": "A polity whose inception Wikidata states as 1139-07-25 on Q45670 and whose dissolution it states as 1910-10-05. Both years here are those two values and nothing else. It is written because the atlas had no metropolitan Portugal before 1886 at all: `portugal` begins where CShapes begins, and everything Portuguese the two territory imports drew before that is a colony — `portuguese-brazil`, `portuguese-guinea`, `portuguese-east-africa` — with no crown above them. Twelve events of the Brazilian chain, from Tordesillas in 1494 to the Strangford Treaty of 1810, had no actor to name without it. It holds no territory: neither import draws Portugal before 1886, and drawing one is not this milestone’s work.",
+  "when": {
+    "start": 1139,
+    "end": 1910
+  },
+  "where": null
+}
