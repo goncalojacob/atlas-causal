@@ -55,7 +55,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-379b913e398a.json",
+      "file": "index/attributes-place-10f554539d33.json",
       "from": null,
       "key": "place",
       "to": null
@@ -687,7 +687,7 @@
             "key": "x1y1"
           },
           {
-            "bytes": 54317,
+            "bytes": 54429,
             "file": "geo/base/cities/x1y2.json",
             "key": "x1y2"
           },
@@ -697,12 +697,12 @@
             "key": "x1y3"
           },
           {
-            "bytes": 17522,
+            "bytes": 17606,
             "file": "geo/base/cities/x2y1.json",
             "key": "x2y1"
           },
           {
-            "bytes": 13601,
+            "bytes": 13622,
             "file": "geo/base/cities/x2y2.json",
             "key": "x2y2"
           },
@@ -914,8 +914,8 @@
     "core": "index/core-178d70374a59.json",
     "grounds": "index/grounds-7674063d04cc.json",
     "presences": "index/presences-b62f52c3618e.json",
-    "review": "index/review-bc935c7d8e9c.json",
-    "search": "index/search-d3d0647dbb8a.json",
+    "review": "index/review-a765540c1dd2.json",
+    "search": "index/search-039d021144de.json",
     "sources": "index/sources-4776eb3a9719.json",
     "territories": "index/territories-87874439f013.json"
   },
@@ -1082,7 +1082,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-770cae7c2ba5.json",
+      "file": "index/history-place-place-49a1a630ea67.json",
       "from": null,
       "key": "place",
       "kind": "place",

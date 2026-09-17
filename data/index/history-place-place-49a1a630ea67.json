@@ -723,6 +723,14 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-17"
         }
       ]
     }
