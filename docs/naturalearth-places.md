@@ -5,9 +5,9 @@ this file whole. Do not edit it: what a person decides goes into
 `data/imports/naturalearth-places.json`, and an entry written there by hand
 is kept by the next run and appears at the end of this document.
 
-26 place records against 7,342 Natural Earth populated places:
-**10 matched on `wikidata`**, **3 on an exact fold of the name**,
-**13 left for a person**, and 0 entries already written by hand.
+42 place records against 7,342 Natural Earth populated places:
+**11 matched on `wikidata`**, **4 on an exact fold of the name**,
+**27 left for a person**, and 8 entries already written by hand.
 
 A match is never guessed. Two signals are accepted: the record's own
 `wikidata` against Natural Earth's `WIKIDATAID`, and an exact fold of one of
@@ -42,12 +42,14 @@ label layer draws it from its own point, which is where it actually is.
 - **panaji** → Panaji — ne_id `1159122667`, Q214681, pop 65,586, at 73.818001, 15.491997
 - **porto** → Porto — ne_id `1159146429`, Q36433, pop 1,337,000, at -8.621947, 41.151952
 - **saint-denis** → St.-Denis / Saint-Denis — ne_id `1159150179`, Q47045, pop 190,047, at 55.448078, -20.878895
+- **washington** → Washington,  D.C. / Washington — ne_id `1159151573`, Q61, pop 4,338,000, at -77.011364, 38.901495
 
 ## Matched on the name, and on the point
 
 - **braga** → Braga — ne_id `1159128157`, Q83247, pop 826,833, at -8.421331, 41.554994, 0.005° from the record's own point — **the record carries `Q3344946` and the city `Q83247`**, so one of the two is about something else
+- **rio-de-janeiro** → Rio de Janeiro — ne_id `1159151619`, Q8678, pop 11,748,000, at -43.212117, -22.907308, 0.016° from the record's own point
+- **santiago-de-cuba** → Santiago de Cuba — ne_id `1159149835`, Q117040, pop 555,865, at -75.821326, 20.025017, 0.009° from the record's own point
 - **stockholm** → Stockholm — ne_id `1159151507`, Q1754, pop 1,264,000, at 18.0663, 59.324127, 0.007° from the record's own point
-- **washington** → Washington,  D.C. / Washington — ne_id `1159151573`, Q61, pop 4,338,000, at -77.011364, 38.901495, 0.029° from the record's own point — **the record carries `Q1018557` and the city `Q61`**, so one of the two is about something else
 
 ## For a person to resolve
 
@@ -63,6 +65,20 @@ a search:
   "1159136129": { "place": "alvor", "note": "" },   // Portimão — ne_id 1159136129, Q2652703, pop 61,226, at -8.533314, 37.13374 — 0.057° away
   "1159136133": { "place": "alvor", "note": "" },   // Faro — ne_id 1159136133, Q159457, pop 41,355, at -7.933273, 37.01708 — 0.666° away
   "1159115703": { "place": "alvor", "note": "" },   // Beja — ne_id 1159115703, Q213251, pop 35,854, at -7.863002, 38.014002 — 1.145° away
+```
+
+### baracoa
+
+Named "Baracoa, Cuba", no wikidata. Refused because no city of that name and no wikidata match.
+
+Nothing below is a match — these are the cities within 2° of the point the
+record already gives, nearest first, so that accepting one is a line and not
+a search:
+
+```json
+  "1159146923": { "place": "baracoa", "note": "" },   // Guantánamo — ne_id 1159146923, Q185156, pop 272,801, at -75.206144, 20.145294 — 0.738° away
+  "1159149835": { "place": "baracoa", "note": "" },   // Santiago de Cuba — ne_id 1159149835, Q117040, pop 555,865, at -75.821326, 20.025017 — 1.364° away — ALREADY "santiago-de-cuba"
+  "1159140099": { "place": "baracoa", "note": "" },   // Banes — ne_id 1159140099, Q806424, pop 53,104, at -75.718593, 20.962918 — 1.369° away
 ```
 
 ### belem
@@ -91,6 +107,34 @@ a search:
   "1159117115": { "place": "boe", "note": "" },   // Gabú — ne_id 1159117115, Q1015891, pop 14,430, at -14.234004, 12.279996 — 0.531° away
   "1159139425": { "place": "boe", "note": "" },   // Bafatá — ne_id 1159139425, Q799788, pop 29,704, at -14.666015, 12.166995 — 0.625° away
   "1159148705": { "place": "boe", "note": "" },   // Boké — ne_id 1159148705, Q891240, pop 116,270, at -14.29999, 10.93999 — 0.816° away
+```
+
+### bridgetown
+
+Named "Bridgetown, Barbados", no wikidata. Refused because no city of that name and no wikidata match.
+
+Nothing below is a match — these are the cities within 2° of the point the
+record already gives, nearest first, so that accepting one is a line and not
+a search:
+
+```json
+  "1159150339": { "place": "bridgetown", "note": "" },   // Bridgetown — ne_id 1159150339, Q36168, pop 191,152, at -59.616527, 13.102003 — 0.006° away
+  "1159150431": { "place": "bridgetown", "note": "" },   // Kingstown — ne_id 1159150431, Q41474, pop 49,485, at -61.220236, 13.155756 — 1.604° away
+  "1159150433": { "place": "bridgetown", "note": "" },   // Castries — ne_id 1159150433, Q41699, pop 37,963, at -60.992875, 14.007875 — 1.651° away
+```
+
+### cap-haitien
+
+Named "Cap-Haïtien (Cap-Français), Haiti", no wikidata. Refused because no city of that name and no wikidata match.
+
+Nothing below is a match — these are the cities within 2° of the point the
+record already gives, nearest first, so that accepting one is a line and not
+a search:
+
+```json
+  "1159146363": { "place": "cap-haitien", "note": "" },   // Cap-Haïtien — ne_id 1159146363, Q216835, pop 281,487, at -72.212516, 19.759222 — 0.009° away
+  "1159113361": { "place": "cap-haitien", "note": "" },   // Fort-Liberté — ne_id 1159113361, Q983788, pop 11,465, at -71.84484, 19.665567 — 0.371° away
+  "1159118639": { "place": "cap-haitien", "note": "" },   // Dajabón — ne_id 1159118639, Q1969407, pop 16,398, at -71.704998, 19.548 — 0.541° away
 ```
 
 ### central-portugal
@@ -135,6 +179,34 @@ a search:
   "1159144553": { "place": "flanders", "note": "" },   // Brugge / Bruges — ne_id 1159144553, Q12994, pop 146,469, at 3.230025, 51.220374 — 0.750° away
 ```
 
+### havana
+
+Named "Havana, Cuba", no wikidata. Refused because no city of that name and no wikidata match.
+
+Nothing below is a match — these are the cities within 2° of the point the
+record already gives, nearest first, so that accepting one is a line and not
+a search:
+
+```json
+  "1159151347": { "place": "havana", "note": "" },   // Havana — ne_id 1159151347, Q1563, pop 2,174,000, at -82.366128, 23.133905 — 0.007° away
+  "1159129975": { "place": "havana", "note": "" },   // San Antonio de los Baños — ne_id 1159129975, Q114984, pop 42,724, at -82.499083, 22.891121 — 0.282° away
+  "1159129979": { "place": "havana", "note": "" },   // Güines — ne_id 1159129979, Q270297, pop 68,935, at -82.028027, 22.836137 — 0.447° away
+```
+
+### ipiranga
+
+Named "Ipiranga, São Paulo", no wikidata. Refused because no city of that name and no wikidata match.
+
+Nothing below is a match — these are the cities within 2° of the point the
+record already gives, nearest first, so that accepting one is a line and not
+a search:
+
+```json
+  "1159151621": { "place": "ipiranga", "note": "" },   // São Paulo — ne_id 1159151621, Q174, pop 18,845,000, at -46.626966, -23.556734 — 0.034° away
+  "1159131983": { "place": "ipiranga", "note": "" },   // Santo André — ne_id 1159131983, Q191652, pop 662,373, at -46.527817, -23.652834 — 0.106° away
+  "1159148975": { "place": "ipiranga", "note": "" },   // Santos — ne_id 1159148975, Q81882, pop 1,709,000, at -46.328496, -23.961836 — 0.470° away
+```
+
 ### lajes
 
 Named "Lajes, Terceira", no wikidata. Refused because no city of that name and no wikidata match.
@@ -147,6 +219,63 @@ a search:
   "1159136123": { "place": "lajes", "note": "" },   // Angra do Heroísmo — ne_id 1159136123, Q193677, pop 12,045, at -27.21667, 38.650391 — 0.168° away
   "1159136119": { "place": "lajes", "note": "" },   // Horta — ne_id 1159136119, Q990385, pop 6,611, at -28.644757, 38.534656 — 1.571° away
   "1159149431": { "place": "lajes", "note": "" },   // Ponta Delgada — ne_id 1159149431, Q208149, pop 61,526, at -25.666584, 37.748302 — 1.746° away
+```
+
+### london
+
+Named "London", no wikidata. Refused because 3 cities fold to that name.
+
+Candidates by name, one line each, to paste into `entries`:
+
+```json
+  "1159125229": { "place": "london", "note": "" },   // London — ne_id 1159125229, Q3061911, pop 7,844, at -84.083354, 37.128882
+  "1159131487": { "place": "london", "note": "" },   // London — ne_id 1159131487, Q92561, pop 346,765, at -81.249987, 42.969999
+  "1159151577": { "place": "london", "note": "" },   // London — ne_id 1159151577, Q84, pop 8,567,000, at -0.118668, 51.501941
+```
+
+Nothing below is a match — these are the cities within 2° of the point the
+record already gives, nearest first, so that accepting one is a line and not
+a search:
+
+```json
+  "1159135305": { "place": "london", "note": "" },   // Luton — ne_id 1159135305, Q203889, pop 235,958, at -0.420011, 51.880359 — 0.474° away
+  "1159135295": { "place": "london", "note": "" },   // Brighton — ne_id 1159135295, Q131491, pop 503,008, at -0.169974, 50.830346 — 0.678° away
+  "1159135079": { "place": "london", "note": "" },   // Cambridge — ne_id 1159135079, Q350, pop 128,488, at 0.116623, 52.200391 — 0.735° away
+```
+
+### manchester
+
+Named "Manchester", no wikidata. Refused because 2 cities fold to that name.
+
+Candidates by name, one line each, to paste into `entries`:
+
+```json
+  "1159133213": { "place": "manchester", "note": "" },   // Manchester — ne_id 1159133213, Q48370, pop 196,566, at -71.455287, 42.995992
+  "1159149119": { "place": "manchester", "note": "" },   // Manchester — ne_id 1159149119, Q18125, pop 2,230,000, at -2.248685, 53.47532
+```
+
+Nothing below is a match — these are the cities within 2° of the point the
+record already gives, nearest first, so that accepting one is a line and not
+a search:
+
+```json
+  "1159135323": { "place": "manchester", "note": "" },   // Stoke / Stoke-on-Trent — ne_id 1159135323, Q134902, pop 390,801, at -2.180007, 53.000368 — 0.484° away
+  "1159127641": { "place": "manchester", "note": "" },   // Bradford — ne_id 1159127641, Q22905, pop 501,700, at -1.754465, 53.791675 — 0.579° away
+  "1159127337": { "place": "manchester", "note": "" },   // Chester — ne_id 1159127337, Q170263, pop 89,531, at -2.902965, 53.186325 — 0.722° away
+```
+
+### montego-bay
+
+Named "Montego Bay, Saint James, Jamaica", no wikidata. Refused because no city of that name and no wikidata match.
+
+Nothing below is a match — these are the cities within 2° of the point the
+record already gives, nearest first, so that accepting one is a line and not
+a search:
+
+```json
+  "1159146929": { "place": "montego-bay", "note": "" },   // Montego Bay — ne_id 1159146929, Q637555, pop 126,008, at -77.916676, 18.466688 — 0.006° away
+  "1159117759": { "place": "montego-bay", "note": "" },   // Lucea — ne_id 1159117759, Q1632220, pop 6,289, at -78.179004, 18.442998 — 0.262° away
+  "1159117809": { "place": "montego-bay", "note": "" },   // Falmouth — ne_id 1159117809, Q1394786, pop 7,779, at -77.65605, 18.479583 — 0.263° away
 ```
 
 ### near-villanueva-del-fresno
@@ -191,6 +320,20 @@ a search:
   "1159115639": { "place": "pedrogao-grande", "note": "" },   // Leiria — ne_id 1159115639, Q206933, pop 45,112, at -8.804996, 39.738996 — 0.689° away
 ```
 
+### porto-seguro
+
+Named "Porto Seguro, Bahia", no wikidata. Refused because no city of that name and no wikidata match.
+
+Nothing below is a match — these are the cities within 2° of the point the
+record already gives, nearest first, so that accepting one is a line and not
+a search:
+
+```json
+  "1159143553": { "place": "porto-seguro", "note": "" },   // Porto Seguro — ne_id 1159143553, Q499922, pop 123,173, at -39.080028, -16.429606 — 0.025° away
+  "1159131263": { "place": "porto-seguro", "note": "" },   // Santa Cruz Cabrália — ne_id 1159131263, Q993466, pop 19,545, at -39.02998, -16.280002 — 0.173° away
+  "1159143545": { "place": "porto-seguro", "note": "" },   // Itamaraju — ne_id 1159143545, Q943536, pop 47,628, at -39.529949, -17.039594 — 0.752° away
+```
+
 ### recife
 
 Named "Recife, at the end of the voyage", no wikidata. Refused because no city of that name and no wikidata match.
@@ -203,6 +346,45 @@ a search:
   "1159151461": { "place": "recife", "note": "" },   // Recife — ne_id 1159151461, Q48344, pop 3,651,000, at -34.908766, -8.060532 — 0.031° away
   "1159132119": { "place": "recife", "note": "" },   // Olinda — ne_id 1159132119, Q28301, pop 921,840, at -34.849951, -7.999991 — 0.058° away
   "1159132115": { "place": "recife", "note": "" },   // Jaboatao / Jaboatão dos Guararapes — ne_id 1159132115, Q271393, pop 702,621, at -35.020044, -8.11001 — 0.152° away
+```
+
+### salvador
+
+Named "Salvador, Bahia", no wikidata. Refused because no city of that name and no wikidata match.
+
+Nothing below is a match — these are the cities within 2° of the point the
+record already gives, nearest first, so that accepting one is a line and not
+a search:
+
+```json
+  "1159151453": { "place": "salvador", "note": "" },   // Salvador — ne_id 1159151453, Q36947, pop 3,484,000, at -38.481933, -12.968026 — 0.019° away
+  "1159143557": { "place": "salvador", "note": "" },   // Valença — ne_id 1159143557, Q1010498, pop 63,231, at -39.080028, -13.359612 — 0.697° away
+  "1159147617": { "place": "salvador", "note": "" },   // Alagoinhas — ne_id 1159147617, Q818261, pop 124,070, at -38.429991, -12.139997 — 0.834° away
+```
+
+### san-salvador-island
+
+Named "San Salvador Island, Bahamas", no wikidata. Refused because no city of that name and no wikidata match.
+
+No candidate by name and nothing within
+2° of the record's own point. If Natural Earth has this place under
+another name, its `ne_id` is what to write; if it does not have it at all —
+and it has no village, no parish and no fort — there is nothing to write and
+the label layer will draw the record alone, which is the ordinary case for
+a place this atlas names and a world gazetteer does not.
+
+### santo-domingo
+
+Named "Santo Domingo, Hispaniola", no wikidata. Refused because no city of that name and no wikidata match.
+
+Nothing below is a match — these are the cities within 2° of the point the
+record already gives, nearest first, so that accepting one is a line and not
+a search:
+
+```json
+  "1159151401": { "place": "santo-domingo", "note": "" },   // Santo Domingo — ne_id 1159151401, Q34820, pop 2,154,000, at -69.929742, 18.470745 — 0.015° away
+  "1159118885": { "place": "santo-domingo", "note": "" },   // San Cristóbal — ne_id 1159118885, Q373759, pop 154,040, at -70.109, 18.415998 — 0.191° away
+  "1159118825": { "place": "santo-domingo", "note": "" },   // Monte Plata — ne_id 1159118825, Q634487, pop 15,532, at -69.784002, 18.807003 — 0.353° away
 ```
 
 ### tete-district
@@ -233,8 +415,42 @@ a search:
   "1159117095": { "place": "tite", "note": "" },   // Fulacunda — ne_id 1159117095, Q2427704, pop 1,311, at -15.194997, 11.772999 — 0.386° away
 ```
 
+### tordesillas
+
+Named "Tordesillas, Valladolid", no wikidata. Refused because no city of that name and no wikidata match.
+
+Nothing below is a match — these are the cities within 2° of the point the
+record already gives, nearest first, so that accepting one is a line and not
+a search:
+
+```json
+  "1159147867": { "place": "tordesillas", "note": "" },   // Valladolid — ne_id 1159147867, Q8356, pop 322,304, at -4.750031, 41.650002 — 0.294° away
+  "1159133809": { "place": "tordesillas", "note": "" },   // Salamanca — ne_id 1159133809, Q15695, pop 162,353, at -5.67, 40.970405 — 0.852° away
+  "1159126109": { "place": "tordesillas", "note": "" },   // León — ne_id 1159126109, Q15699, pop 136,227, at -5.570007, 42.579971 — 1.220° away
+```
+
+### vila-rica
+
+Named "Vila Rica de Ouro Preto, Minas Gerais", no wikidata. Refused because no city of that name and no wikidata match.
+
+Nothing below is a match — these are the cities within 2° of the point the
+record already gives, nearest first, so that accepting one is a line and not
+a search:
+
+```json
+  "1159131009": { "place": "vila-rica", "note": "" },   // Conselheiro Lafaiete — ne_id 1159131009, Q570312, pop 111,596, at -43.789999, -20.670019 — 0.404° away
+  "1159130953": { "place": "vila-rica", "note": "" },   // Nova Lima — ne_id 1159130953, Q1642662, pop 88,399, at -43.850021, -19.980035 — 0.533° away
+  "1159143355": { "place": "vila-rica", "note": "" },   // Ponte Nova — ne_id 1159143355, Q999139, pop 48,187, at -42.89995, -20.409621 — 0.604° away
+```
+
 ## Entries written by hand
 
-None yet. Everything in `data/imports/naturalearth-places.json` today is
-what the two signals above proved.
+- `1159143553` → **porto-seguro** — M56, 17 September. The record names this city and then qualifies it — a phrase, a province or a parish — which is the only reason the exact fold refused it: the atlas's name is not a fold of "NAME", it begins with one. The city Natural Earth draws under that same name is the nearest to the record's own point, within a twenty-fifth of a degree, and no other city of the name is anywhere near. Resolved by hand, one line each.
+- `1159146363` → **cap-haitien** — M56, 17 September. The record names this city and then qualifies it — a phrase, a province or a parish — which is the only reason the exact fold refused it: the atlas's name is not a fold of "NAME", it begins with one. The city Natural Earth draws under that same name is the nearest to the record's own point, within a twenty-fifth of a degree, and no other city of the name is anywhere near. Resolved by hand, one line each.
+- `1159146929` → **montego-bay** — M56, 17 September. The record names this city and then qualifies it — a phrase, a province or a parish — which is the only reason the exact fold refused it: the atlas's name is not a fold of "NAME", it begins with one. The city Natural Earth draws under that same name is the nearest to the record's own point, within a twenty-fifth of a degree, and no other city of the name is anywhere near. Resolved by hand, one line each.
+- `1159150339` → **bridgetown** — M56, 17 September. The record names this city and then qualifies it — a phrase, a province or a parish — which is the only reason the exact fold refused it: the atlas's name is not a fold of "NAME", it begins with one. The city Natural Earth draws under that same name is the nearest to the record's own point, within a twenty-fifth of a degree, and no other city of the name is anywhere near. Resolved by hand, one line each.
+- `1159151347` → **havana** — M56, 17 September. The record names this city and then qualifies it — a phrase, a province or a parish — which is the only reason the exact fold refused it: the atlas's name is not a fold of "NAME", it begins with one. The city Natural Earth draws under that same name is the nearest to the record's own point, within a twenty-fifth of a degree, and no other city of the name is anywhere near. Resolved by hand, one line each.
+- `1159151401` → **santo-domingo** — M56, 17 September. The record names this city and then qualifies it — a phrase, a province or a parish — which is the only reason the exact fold refused it: the atlas's name is not a fold of "NAME", it begins with one. The city Natural Earth draws under that same name is the nearest to the record's own point, within a twenty-fifth of a degree, and no other city of the name is anywhere near. Resolved by hand, one line each.
+- `1159151453` → **salvador** — M56, 17 September. The record names this city and then qualifies it — a phrase, a province or a parish — which is the only reason the exact fold refused it: the atlas's name is not a fold of "NAME", it begins with one. The city Natural Earth draws under that same name is the nearest to the record's own point, within a twenty-fifth of a degree, and no other city of the name is anywhere near. Resolved by hand, one line each.
+- `1159151461` → **recife** — M56, 17 September. The record names this city and then qualifies it — a phrase, a province or a parish — which is the only reason the exact fold refused it: the atlas's name is not a fold of "NAME", it begins with one. The city Natural Earth draws under that same name is the nearest to the record's own point, within a twenty-fifth of a degree, and no other city of the name is anywhere near. Resolved by hand, one line each.
 
