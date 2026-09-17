@@ -1118,29 +1118,35 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     }
   }
 
-  // --- rule 30: a succession's two dates meet ------------------------------
-  // O dono, a 16 de Setembro: "I still don't agree that it can be marked as
-  // successor event if the dates are not matching." Está certo, e a razão é
-  // mais forte do que parecer impreciso: um intervalo entre o fim do
-  // antecessor e o início do sucessor não são duas datas grosseiras, são
-  // vinte e seis anos em que outra coisa segurou aquele chão — a Indonésia
-  // entre `east-timor-under-portugal` (1976) e `east-timor` (2002) — e
-  // `succeeded` passa a ser uma etiqueta falsa e não uma aproximação. Uma
-  // auditoria às 88 sucessões activas encontrou quatro assim; sem esta regra
-  // a quinta só aparece na auditoria seguinte.
+  // --- `succession-gap`: a succession written across a gap -----------------
+  // Esta verificação nasceu regra 30, um erro, com a regra do dono de 16 de
+  // Setembro: "I still don't agree that it can be marked as successor event if
+  // the dates are not matching." A 17 de Setembro o mesmo dono desdisse-a:
+  // **"Forget the continuity rule, you can write a succession even if there is
+  // no dates continuity."** M53 não a apaga por isso, porque as duas frases não
+  // se contradizem tanto como parece: um intervalo entre o fim do antecessor e
+  // o início do sucessor continua a ser anos em que outra coisa segurou aquele
+  // chão — a Indonésia entre `east-timor-under-portugal` (1976) e `east-timor`
+  // (2002) —, e isso vale a pena ser dito. O que mudou é quem decide: **dizê-lo
+  // é do aviso, proibi-lo não é do validador.** Uma sucessão com intervalo é
+  // agora escrevível, e o intervalo aparece no relatório em vez de travar o
+  // commit.
+  //
+  // Por isso deixou de ser numerada. Uma regra é um erro neste validador; isto
+  // é um aviso e vive com os outros, com o código `succession-gap`, ao lado de
+  // `relation-outside-actor-when`, que olha para o mesmo par por outro motivo.
   //
   // Encontrar-se é isto: o mesmo ano, ou a fronteira de ano entre os dois. O
   // ano é o limite mais fino que este modelo tem, portanto quem acaba em 1922
   // é sucedido em 1922 ou em 1923 e não mais longe; e quem ainda não acabou
-  // não foi sucedido por ninguém.
+  // não foi sucedido por ninguém — esse caso também é aviso agora.
   //
-  // O que esta regra não diz é que os dois não se possam sobrepor. Essa é a
-  // outra direcção e é outra pergunta — um sucessor que começa antes de o
-  // antecessor acabar não deixa chão nenhum por explicar, que é o que aqui
-  // se procura, e o aviso `relation-outside-actor-when` já olha para o par.
-  // Os limites incertos são lidos pelo lado que favorece o registo: o maior
-  // fim possível contra o menor início possível, porque uma data incerta não
-  // é o que esta regra veio apanhar.
+  // O que isto não diz é que os dois não se possam sobrepor. Essa é a outra
+  // direcção e é outra pergunta — um sucessor que começa antes de o antecessor
+  // acabar não deixa chão nenhum por explicar, que é o que aqui se procura, e
+  // `relation-outside-actor-when` já olha para o par. Os limites incertos são
+  // lidos pelo lado que favorece o registo: o maior fim possível contra o menor
+  // início possível, porque uma data incerta não é o que isto veio apanhar.
   for (const r of own) {
     if (r.kind !== 'relation' || r.status !== 'active' || r.type !== 'succeeded') continue;
     const from = lookup(r.from, 'actor');
@@ -1150,12 +1156,12 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     const successor = span(to.when);
     if (!predecessor || !successor) continue;
     if (predecessor.to === Infinity) {
-      error(30, r, '/from', `a succession begins where another ends: "${from.id}" has not ended`);
+      warning('succession-gap', r, `a succession usually begins where another ends: "${from.id}" has not ended`);
       continue;
     }
     const gap = successor.from - predecessor.to;
     if (gap > 1) {
-      error(30, r, '/to', `a succession's dates meet: "${from.id}" ends ${formatBound(from.when.end)} and "${to.id}" begins ${formatBound(to.when.start)}, ${gap} years later, and something else held that ground in between`);
+      warning('succession-gap', r, `"${from.id}" ends ${formatBound(from.when.end)} and "${to.id}" begins ${formatBound(to.when.start)}, ${gap} years later: something else held that ground in between, and this relation does not say what`);
     }
   }
 

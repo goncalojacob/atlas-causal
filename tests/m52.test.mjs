@@ -39,32 +39,20 @@ const byId = new Map(actors.map((a) => [a.id, a]));
 const latest = (bound) => (Number.isInteger(bound) ? bound : bound?.max);
 const earliest = (bound) => (Number.isInteger(bound) ? bound : bound?.min);
 
-// --- the rule (amendments A1 and A3) ------------------------------------
+// --- the rule (amendments A1 and A3), as M53 left it ---------------------
 
-// Rule 30 as the corpus sees it, asserted here as well as in the validator
-// because this is the statement the milestone exists to make. The validator
-// reports it on the record; this says it about `data/` as a whole, so that a
-// succession reinstated by hand cannot slip past by not being under
-// validation at the time.
-test('every active succession begins where the record before it ends', () => {
-  const wrong = [];
-  for (const r of relations) {
-    if (r.type !== 'succeeded' || r.status !== 'active') continue;
-    const from = byId.get(r.from);
-    const to = byId.get(r.to);
-    if (!from || !to) { wrong.push(`${r.id}: an end does not resolve to an actor`); continue; }
-    const ends = from.when?.end;
-    const starts = to.when?.start;
-    if (ends === null || ends === undefined) { wrong.push(`${r.id}: "${from.id}" has not ended`); continue; }
-    const gap = earliest(starts) - latest(ends);
-    if (gap > 1) wrong.push(`${r.id}: "${from.id}" ends ${latest(ends)} and "${to.id}" begins ${earliest(starts)}, ${gap} years later`);
-  }
-  assert.deepEqual(wrong.sort(), [], wrong.length
-    ? `${wrong.length} active succession(s) are written across a gap, which amendment A1 forbids: ${wrong.join('; ')}`
-    : undefined);
-});
+// M52's first test asserted over `data/` that no active succession is written
+// across a gap. **It is deleted, by M53's amendment A2**, and deliberately not
+// replaced by a weaker version of itself: the owner, 17 September — *"Forget
+// the continuity rule, you can write a succession even if there is no dates
+// continuity"* — and A2 says in as many words that **no test may require
+// contiguity**. What took its place is `tests/m53.test.mjs`, which asserts the
+// warning `succession-gap` fires on exactly the successions that carry a gap,
+// and `tests/relation-rules.test.mjs`, which asserts the same over the
+// fixtures and that rule 30 reports nothing at all. Everything below this line
+// is what M52 wrote that A2 leaves standing.
 
-// The other direction, which rule 30 deliberately leaves alone because an
+// The other direction, which the check deliberately leaves alone because an
 // overlap explains no ground away. It is still not something the corpus
 // should acquire quietly, so it is asserted here over `data/` (the brief's
 // test 2).
