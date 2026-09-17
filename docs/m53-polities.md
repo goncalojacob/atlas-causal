@@ -83,3 +83,153 @@ the honest form is the gap stated and the occupant left open.
 **Those four questions are still open**, in exactly the words
 `docs/m52-russia.md` §1.3 put them. What changed is that the atlas no longer
 withholds the succession while they wait.
+
+---
+
+## 2. The polities that were missing
+
+### 2.1 What Wikidata says, by QID and property
+
+Read on 17 September, from `Special:EntityData` over the same proxy the
+milestone ran behind. Every date in §2 and §3 is one of these values or is
+copied from a record that already carried its own source. Nothing here is
+recalled.
+
+| item | QID | P571 inception | P576 dissolved |
+|---|---|---|---|
+| Empire of Brazil | `Q217230` | 1822-09-07 | 1889-11-15 |
+| Russian SFSR | `Q2184` | 1917-10-25 | 1991-12-25 |
+| Russian Republic | `Q139319` | 1917-09-01 | 1917-10-25 |
+| Kingdom of Portugal | `Q45670` | 1139-07-25 | 1910-10-05 |
+| Saint-Domingue | `Q861551` | 1626 | 1804-01-01 |
+| Captaincy General of Cuba | `Q2039931` | 1607 | 1898 |
+| Colonial Brazil | `Q2088324` | 1500 | 1815 |
+| State of Brazil | `Q11876909` | 1621-06-13 | 1815-01-01 |
+| Viceroyalty of Brazil (the office) | `Q2920081` | 1763 | 1808 |
+| United Kingdom of Portugal, Brazil and the Algarves | `Q903779` | 1815-12-16 | 1822-09-07 |
+
+The last four are lookups this milestone made and did **not** turn into a
+record of their own; §2.4 and §5 say why, and each is cited where it is used.
+
+### 2.2 What was written
+
+| record | name | span | provenance |
+|---|---|---|---|
+| `empire-of-brazil` | Empire of Brazil | 1822 – 1889 | Q217230, P571 and P576 |
+| `russian-sfsr` | Russian Soviet Federative Socialist Republic | 1917 – 1991 | Q2184, P571 and P576 |
+| `russian-republic` | Russian Republic | 1917 – 1917 | Q139319, P571 and P576 |
+
+`when` carries integer years, as every other actor in this atlas does; the two
+exact dates live in `sources` and in the record's own prose, which is the
+convention M52 set for `russian-empire` and `soviet-union`.
+
+### 2.3 Brazil's own start, and the one period that moved
+
+`brazil` began **1886**. That is where CShapes begins, full stop — the record's
+own imported summary says it "asserts nothing the dataset does not" — while
+Wikidata dissolves the Empire on **1889-11-15**. Both could not be right, and
+only one of them is a date about Brazil.
+
+So `brazil` now begins **1889**, taken from `Q217230, P576` — from the record
+either side of it, not invented here — and the succession
+`empire-of-brazil--brazil--succeeded` carries that date.
+
+**One CShapes period moved, and it had to be cut to move.** Entity 140's first
+period runs 1886-01-01 to 1903-11-16 and therefore spans the Empire's end:
+
+| presence | actor | from | to |
+|---|---|---|---|
+| `brazil-1886` | `empire-of-brazil` | 1886-01-01 | 1889-11-15 |
+| `brazil-1889` | `brazil` | 1889-11-16 | 1903-11-16 |
+
+**Both halves carry the same outline file and the same key, `57`.** No geometry
+was redrawn and no border was invented: the Republic inherited the Empire's
+borders, and the dataset draws one polygon for both, which is exactly what two
+periods sharing a key say.
+
+This is a **deviation from M52's method** and it is deliberate. M52 §2.5 gave
+each period whole to whoever held the ground when the period *began*, and said
+that cutting one at a Wikidata date "would be this atlas inventing a border".
+That reasoning holds where the two records are different territories. Here they
+are the same territory under two regimes, and moving the period whole would
+have given the Empire fourteen years of ground after its own cited death and
+left the Republic with none until 1903 — which is the very fault this milestone
+was written to fix, since M54 made selecting a territory the way the atlas is
+read. A cut that keeps the outline byte-for-byte asserts nothing about a
+border; it asserts who held it, which is the question.
+
+### 2.4 The Viceroyalty, and what a person must decide
+
+`viceroyalty-of-brazil` ended **1877**, the last snapshot the Historical
+Basemaps import read — the same kind of artefact as `brazil`'s 1886, and the
+record's own summary says so. Its end is now **1815**, which is what Wikidata
+states for the colonial entity on **two** items that agree: `Q2088324` (Colonial
+Brazil) P576 1815, and `Q11876909` (State of Brazil) P576 1815-01-01.
+
+**A third item carries this record's exact name and disagrees.** `Q2920081`,
+the Viceroyalty of Brazil as an *office*, gives P571 1763 and P576 **1808**. It
+is cited on the record and not taken. Which of the three this polygon is — the
+office, the state, or the colony — is a judgement about what a basemaps label
+means, which is M49's finding in one sentence, and it is not a lookup.
+
+**Three things are left open here, and each is a person's decision:**
+
+1. **Which item the record is**, per the paragraph above: 1808 or 1815.
+2. **The record's start is still 1715**, the first snapshot, and no item was
+   consulted for it. `Q2088324` would give 1500 and `Q2920081` 1763. Correcting
+   an end and leaving a start is half a job, and the half that was done is the
+   one the brief asked for.
+3. **Brazilian ground from 1815 to 1886 belongs to records whose own dates have
+   ended.** `viceroyalty-of-brazil-1815` runs to 1877 and its actor now ends in
+   1815; `kingdom-of-brazil` (1878–1885) is a basemaps span that Wikidata's
+   `Q3932042` dates 1815–1825 instead. The Empire of Brazil holds no ground at
+   all before 1886. Re-homing those periods is the same shape of work as §2.3
+   and needs a decision about the two datasets rather than another lookup, so
+   this milestone lists it instead of doing it.
+
+### 2.5 The successions written
+
+| succession | gap | what its note says |
+|---|---|---|
+| `viceroyalty-of-brazil--empire-of-brazil--succeeded` | 7 years | the colony ends 1815 and the Empire begins 1822-09-07; `Q903779` holds a polity for those years and this atlas has no record of it |
+| `empire-of-brazil--brazil--succeeded` | none | the Republic begins on the day the Empire ends, because its start was taken from that dissolution |
+| `russian-empire--russian-republic--succeeded` | none | the same instant, 1917-09-01, on `Q34266` P576 and `Q139319` P571 |
+| `russian-republic--russian-sfsr--succeeded` | none | the same instant, 1917-10-25, on `Q139319` P576 and `Q2184` P571 |
+
+Three of the four meet exactly. The first does not, and under A1 that is no
+longer a reason to withhold it: the gap is in the note, where a reader meets
+it, and `succession-gap` reports it on every run.
+
+---
+
+## 3. The 1917 gap, closed by a lookup
+
+M52 ended the Russian Empire on 1917-09-01 and began the Soviet Union on
+1922-12-30, and wrote no relation across the five years between, because
+"Wikidata asserts nothing holding that ground in between". Three events fell
+into the hole and named `soviet-union` before it existed: the October
+Revolution, the Russian Civil War and the Treaty of Brest-Litovsk.
+
+Wikidata does assert something, on two items nobody had asked:
+
+- **`Q139319`, the Russian Republic**, P571 1917-09-01 and P576 1917-10-25 —
+  the same two instants the Empire ends on and the SFSR begins on;
+- **`Q2184`, the Russian SFSR**, P571 1917-10-25 and P576 1991-12-25.
+
+So the line from the Russian Empire runs unbroken to 1991 and every date on it
+is cited: Empire → Republic → SFSR, two successions, neither with a gap. The
+three events name **`russian-sfsr`**; §4 says which, and where each one went.
+
+**No succession is written between the SFSR and the Soviet Union, in either
+direction.** Their intervals overlap by sixty-nine years because the one was a
+republic inside the other, and `succeeded` says that one took the other's
+place. M52's rule that no relation joins the three records it split apart still
+holds, and the SFSR is not one of them.
+
+**Neither new record holds any territory.** CShapes draws entity 365
+continuously across 1917–1922 under a single label and M52 gave those nine
+periods to `soviet-union` with the flag `m52-gap` on each. Moving them here
+would be a claim about which polity held which border in which month of the
+civil war, which is not a lookup and not this milestone's work. The flags and
+`docs/m52-russia.md` §2.5 still say what they say.
+

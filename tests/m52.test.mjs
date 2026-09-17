@@ -154,8 +154,15 @@ test('no active actor is called "Russia (Soviet Union)", and none stands through
     .filter((a) => (a.names ?? []).some((n) => /\(Soviet Union\)/.test(n)))
     .map((a) => a.id);
   assert.deepEqual(named, [], `${named.join(', ')} still carries the label that started this milestone`);
+  // The straddle is asked of the records CShapes' entity 365 produced, which
+  // is where the conflation was. It is not asked of every record whose name
+  // says Russia or Soviet, because M53 wrote one that genuinely stands through
+  // both dates on its own cited ones: the Russian SFSR, 1917-10-25 to
+  // 1991-12-25 on Q2184, a republic inside the union rather than a label over
+  // three polities. Forbidding that would be forbidding the history.
+  const fromEntity365 = (a) => (a.sources ?? []).some((s) => s.source === 'cshapes-2-0' && /gwcode 365/.test(s.locator ?? ''));
   const straddling = actors.filter((a) => a.status === 'active')
-    .filter((a) => (a.names ?? []).some((n) => /^Russia\b|Soviet/.test(n)))
+    .filter((a) => fromEntity365(a))
     .filter((a) => {
       const start = earliest(a.when?.start);
       const end = a.when?.end === null || a.when?.end === undefined ? Infinity : latest(a.when.end);
@@ -276,6 +283,16 @@ test(`${DOC} §2.6 says where each event's entry went, and that is where it went
     row.forEach((id, i) => { if (id) expected.set(id, where[i]); });
   }
   assert.equal(expected.size, 20, `${DOC} §2.6 should account for every entry that named the old record`);
+  // M53 moved three of these on again, and says so in its own §4.3: the
+  // October Revolution, the Civil War and Brest-Litovsk sat on `soviet-union`
+  // before its cited inception of 1922-12-30 and now name `russian-sfsr`. The
+  // substitution is read out of that file rather than written here, so a run
+  // that moves an entry and does not say so still fails, in whichever file it
+  // was supposed to say it.
+  const doc53 = readFileSync(path.join(ROOT, 'docs/m53-polities.md'), 'utf8');
+  for (const [, id, was, is] of doc53.matchAll(/^\| `([a-z0-9-]+)` \d{4} \| `([a-z0-9-]+)` \| `([a-z0-9-]+)` \|/gm)) {
+    if (expected.get(id) === was) expected.set(id, is);
+  }
   const byEvent = new Map(events.map((e) => [e.id, e]));
   const wrong = [];
   for (const [id, actor] of expected) {

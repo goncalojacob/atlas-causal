@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "viceroyalty-of-brazil--empire-of-brazil--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m53"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m53-polities",
+      "interval-cited"
+    ],
+    "note": "M53: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag."
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q217230, P571 1822-09-07"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q2088324, P576 1815 (Colonial Brazil)"
+    }
+  ],
+  "from": "viceroyalty-of-brazil",
+  "to": "empire-of-brazil",
+  "type": "succeeded",
+  "when": {
+    "start": 1822,
+    "end": 1822,
+    "date": "1822-09-07"
+  },
+  "note": "Seven years stand between them: the colony ends 1815 and the Empire begins 1822-09-07. Wikidata holds a polity for those years — Q903779, the United Kingdom of Portugal, Brazil and the Algarves, 1815-12-16 to 1822-09-07 — and this atlas has no record of it, so the gap is named here and not closed. Written under the owner’s rule of 17 September, which allows a succession across a gap."
+}

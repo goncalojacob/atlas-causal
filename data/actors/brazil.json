@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "cshapes"
   },
@@ -21,15 +21,19 @@
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 140"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q217230, P576 1889-11-15 (the Empire of Brazil’s dissolution, taken as this record’s start)"
     }
   ],
   "actorType": "polity",
   "names": [
     "Brazil"
   ],
-  "summary": "Entity 140 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 4 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Brasilia. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Entity 140 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 4 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Brasilia. This record was written by the import from those fields and asserts nothing the dataset does not. M53 moved its start from 1886 to 1889: 1886 is where the dataset begins and the Empire of Brazil, on Wikidata’s Q217230, was dissolved on 1889-11-15, so the two could not both be right. The first of the four periods is cut at that date and its earlier half belongs to the Empire.",
   "when": {
-    "start": 1886,
+    "start": 1889,
     "end": null
   },
   "where": {
@@ -37,5 +41,13 @@
     "lat": -15.8,
     "precision": "city",
     "label": "Brasilia"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m53-polities"
+    ],
+    "note": "M53: this record began 1886, which is where CShapes begins and not where a republic was proclaimed. Its start is now 1889, the dissolution Wikidata states for the Empire of Brazil on Q217230, P576 1889-11-15 — the same instant, taken from the record either side rather than invented here. The CShapes period that ran 1886-01-01 to 1903-11-16 is cut at that date: the first part is the Empire’s ground and the second is this record’s. See docs/m53-polities.md §2."
   }
 }

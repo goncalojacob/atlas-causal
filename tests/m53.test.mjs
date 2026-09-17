@@ -108,3 +108,157 @@ test('a succession written across a gap is a warning and not an error', async ()
   assert.deepEqual(result.errors.filter((e) => e.rule === 30), [],
     'rule 30 is gone and nothing reports under its number');
 });
+
+// --- §2 and §3: the polities written, and their dates -------------------
+
+// §2.2's table against the records, the way `tests/m52.test.mjs` reads M52's.
+// Every QID and property a row names has to be cited on the record itself, so
+// the document cannot claim a provenance the record does not carry.
+const POLITY_ROW = /^\| `([a-z0-9-]+)` \| ([^|]+?) \| (-?\d{3,4}) – (-?\d{3,4}|open) \| ([^|]+?) \|/;
+const written = doc.split('\n').map((line) => POLITY_ROW.exec(line)).filter(Boolean)
+  .map(([, id, name, start, end, provenance]) => ({ id, name, start: Number(start), end: end === 'open' ? null : Number(end), provenance }));
+
+test(`${DOC} §2.2 names the records M53 wrote, their dates and where each date came from`, () => {
+  assert.ok(written.length > 0, `${DOC} §2.2 carries no table`);
+  const wrong = [];
+  for (const row of written) {
+    const a = byId.get(row.id);
+    if (!a) { wrong.push(`${row.id}: no such record`); continue; }
+    if (a.status !== 'active') wrong.push(`${row.id}: ${a.status}, not active`);
+    if (a.names?.[0] !== row.name) wrong.push(`${row.id}: named "${a.names?.[0]}", not "${row.name}"`);
+    if (earliest(a.when?.start) !== row.start) wrong.push(`${row.id}: begins ${earliest(a.when?.start)}, not ${row.start}`);
+    const end = a.when?.end === null || a.when?.end === undefined ? null : latest(a.when.end);
+    if (end !== row.end) wrong.push(`${row.id}: ends ${end}, not ${row.end}`);
+    const cited = JSON.stringify(a.sources ?? []);
+    for (const token of row.provenance.match(/Q[1-9][0-9]*|P5(?:71|76)/g) ?? []) {
+      if (!cited.includes(token)) wrong.push(`${row.id}: ${DOC} says ${token} and the record cites no such thing`);
+    }
+  }
+  assert.deepEqual(wrong.sort(), [], wrong.join('; '));
+});
+
+// §2.1's lookup table is the only place a date in this milestone may come
+// from, so every year any record M53 touched now carries has to appear there
+// or in a source the record already had. This is the "no invented date" rule
+// as an assertion rather than as a promise.
+const LOOKUP_ROW = /^\| [^|]+ \| `(Q[1-9][0-9]*)` \| ([^|]+?) \| ([^|]+?) \|$/;
+const looked = doc.split('\n').map((line) => LOOKUP_ROW.exec(line)).filter(Boolean)
+  .map(([, qid, inception, dissolved]) => ({ qid, inception: inception.trim(), dissolved: dissolved.trim() }));
+
+test(`${DOC} §2.1 cites a QID and a property for every date M53's own records give`, () => {
+  assert.ok(looked.length > 0, `${DOC} §2.1 carries no lookup table`);
+  const years = new Set();
+  for (const row of looked) {
+    for (const value of [row.inception, row.dissolved]) {
+      const year = /^(-?\d{3,4})/.exec(value);
+      if (year) years.add(Number(year[1]));
+    }
+  }
+  const wrong = [];
+  for (const row of written) {
+    if (!years.has(row.start)) wrong.push(`${row.id}: begins ${row.start} and no row of §2.1 gives that year`);
+    if (row.end !== null && !years.has(row.end)) wrong.push(`${row.id}: ends ${row.end} and no row of §2.1 gives that year`);
+  }
+  assert.deepEqual(wrong.sort(), [], wrong.join('; '));
+});
+
+// §2.3: Brazil's start is the Empire's cited dissolution, and the CShapes
+// period that spanned it was cut rather than moved whole. The two halves have
+// to carry the same outline, because "presences move, geometry is never
+// redrawn" is the rule the cut had to satisfy.
+const presences = await readDir('presences');
+const PRESENCE_ROW = /^\| `([a-z0-9-]+-\d{4})` \| `([a-z0-9-]+)` \| (\d{4})-\d{2}-\d{2} \| (\d{4})-\d{2}-\d{2} \|/;
+const moved = doc.split('\n').map((line) => PRESENCE_ROW.exec(line)).filter(Boolean)
+  .map(([, id, actor, from, to]) => ({ id, actor, from: Number(from), to: Number(to) }));
+
+test(`${DOC} §2.3's periods are where it says, on one outline and not two`, () => {
+  assert.equal(moved.length, 2, `${DOC} §2.3 should carry the two halves of the cut period`);
+  const byPresence = new Map(presences.map((p) => [p.id, p]));
+  const wrong = [];
+  const keys = new Set();
+  for (const row of moved) {
+    const p = byPresence.get(row.id);
+    if (!p) { wrong.push(`${row.id}: no such presence`); continue; }
+    if (p.status !== 'active') wrong.push(`${row.id}: ${p.status}, not active`);
+    if (p.actor !== row.actor) wrong.push(`${row.id}: belongs to ${p.actor}, not ${row.actor}`);
+    if (earliest(p.when?.start) !== row.from) wrong.push(`${row.id}: begins ${earliest(p.when?.start)}, not ${row.from}`);
+    if (latest(p.when?.end) !== row.to) wrong.push(`${row.id}: ends ${latest(p.when?.end)}, not ${row.to}`);
+    if (!byId.get(p.actor)) wrong.push(`${row.id}: ${p.actor} is not an actor`);
+    keys.add(`${(p.geometry?.files ?? []).join(',')}#${p.geometry?.key}`);
+  }
+  assert.deepEqual(wrong.sort(), [], wrong.join('; '));
+  assert.equal(keys.size, 1, `the two halves of a cut period carry one outline between them, not ${keys.size}`);
+});
+
+// The point of §2.3, stated over the records rather than over the document: no
+// active presence of a record M53 touched sits outside its actor's own
+// interval. This is the fault the milestone exists to fix — the Empire holding
+// ground fourteen years after it ended, the Republic holding none until 1903.
+const TOUCHED = ['empire-of-brazil', 'brazil', 'russian-sfsr', 'russian-republic'];
+
+test('every presence of a record M53 wrote or re-dated is inside that actor\'s interval', () => {
+  const touched = new Set(TOUCHED);
+  const outside = [];
+  for (const p of presences) {
+    if (p.status !== 'active' || !touched.has(p.actor)) continue;
+    const a = byId.get(p.actor);
+    const start = earliest(a.when?.start);
+    const end = a.when?.end === null || a.when?.end === undefined ? Infinity : latest(a.when.end);
+    const from = earliest(p.when?.start);
+    const to = p.when?.end === null || p.when?.end === undefined ? Infinity : latest(p.when.end);
+    if (from < start || to > end) outside.push(`${p.id} (${from}–${p.when?.end ?? 'open'}) is outside ${a.id} (${start}–${a.when?.end ?? 'open'})`);
+  }
+  assert.deepEqual(outside.sort(), [], outside.join('; '));
+});
+
+// §2.5's table against the relations: every succession M53 wrote is there, its
+// gap is what the row claims, and a row saying "none" is a pair whose dates
+// meet. A milestone that writes a succession and does not list it fails here,
+// and so does one that lists a gap the records do not show.
+const SUCCESSION_ROW = /^\| `([a-z0-9-]+--[a-z0-9-]+--succeeded)` \| (none|\d+ years?) \|/;
+const written53 = doc.split('\n').map((line) => SUCCESSION_ROW.exec(line)).filter(Boolean)
+  .map(([, id, gap]) => ({ id, gap: gap === 'none' ? 0 : Number(/\d+/.exec(gap)[0]) }));
+
+test(`${DOC} §2.5 lists every succession M53 wrote, with the gap the records show`, () => {
+  const mine = relations
+    .filter((r) => r.type === 'succeeded' && r.status === 'active' && r.origin?.run === 'm53')
+    .map((r) => r.id).sort();
+  assert.deepEqual(written53.map((row) => row.id).sort(), mine,
+    `${DOC} §2.5 and the successions M53 wrote are not the same set`);
+  const byRelation = new Map(relations.map((r) => [r.id, r]));
+  const wrong = [];
+  for (const row of written53) {
+    const r = byRelation.get(row.id);
+    const from = byId.get(r.from);
+    const to = byId.get(r.to);
+    if (!from || !to) { wrong.push(`${row.id}: an end does not resolve to an actor`); continue; }
+    const gap = Math.max(0, earliest(to.when?.start) - latest(from.when?.end));
+    if (gap !== row.gap) wrong.push(`${row.id}: the gap is ${gap} years and ${DOC} says ${row.gap}`);
+    // Amendment A2: a succession's dates are cited. That test stays.
+    if (!Array.isArray(r.sources) || r.sources.length === 0) wrong.push(`${row.id}: cites no source`);
+  }
+  assert.deepEqual(wrong.sort(), [], wrong.join('; '));
+});
+
+// §3: the 1917 line composes, and nothing was written between the SFSR and the
+// Soviet Union in either direction — they overlap by design.
+test('the Russian line from the Empire to 1991 is continuous and cited', () => {
+  const chain = ['russian-empire', 'russian-republic', 'russian-sfsr'];
+  const byRelation = new Map(relations.map((r) => [r.id, r]));
+  for (let i = 0; i + 1 < chain.length; i += 1) {
+    const id = `${chain[i]}--${chain[i + 1]}--succeeded`;
+    const r = byRelation.get(id);
+    assert.ok(r && r.status === 'active', `${id} is not an active succession`);
+    const from = byId.get(chain[i]);
+    const to = byId.get(chain[i + 1]);
+    assert.ok(earliest(to.when?.start) - latest(from.when?.end) <= 1,
+      `${id}: ${chain[i]} ends ${latest(from.when?.end)} and ${chain[i + 1]} begins ${earliest(to.when?.start)}`);
+    assert.ok((r.sources ?? []).some((s) => /Q\d+, P57[16]/.test(s.locator ?? '')),
+      `${id} does not cite a QID and a property for the date it gives`);
+  }
+  const between = relations.filter((r) => r.status === 'active')
+    .filter((r) => (r.from === 'russian-sfsr' && r.to === 'soviet-union') || (r.from === 'soviet-union' && r.to === 'russian-sfsr'))
+    .map((r) => r.id);
+  assert.deepEqual(between, [], `${between.join(', ')}: the SFSR was a republic inside the union, not its predecessor or its successor`);
+});
+

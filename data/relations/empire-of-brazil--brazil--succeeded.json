@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "empire-of-brazil--brazil--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m53"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m53-polities",
+      "interval-cited"
+    ],
+    "note": "M53: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag."
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q217230, P576 1889-11-15"
+    }
+  ],
+  "from": "empire-of-brazil",
+  "to": "brazil",
+  "type": "succeeded",
+  "when": {
+    "start": 1889,
+    "end": 1889,
+    "date": "1889-11-15"
+  },
+  "note": "No gap: `brazil` begins on the day this record ends, because M53 took the Republic’s start from the Empire’s cited dissolution rather than from 1886, where CShapes begins. The CShapes period that spanned the date is cut at it, outline unchanged."
+}

@@ -231,6 +231,13 @@ Twenty active events named `russia-soviet-union`. **An event's `actors` entry
 names the actor that held the role then**, so they were moved by their own
 dates:
 
+> **M53 moved three of them on again.** `october-revolution`,
+> `russian-civil-war` and `treaty-of-brest-litovsk` were put on `soviet-union`
+> here and sat before its cited inception of 1922-12-30, which §3 below named
+> as the thing left open. They now name `russian-sfsr`, written on Q2184 from
+> 1917-10-25. The table below is left as M52 wrote it and
+> `docs/m53-polities.md` §4.3 carries the substitution; the test reads both.
+
 | to `russian-empire` (5) | to `soviet-union` (10) | left on `russia-soviet-union` (5) |
 |---|---|---|
 | `boxer-rebellion` 1899 | `october-revolution` 1917 † | `russo-georgian-war` 2008 |

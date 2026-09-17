@@ -2,6 +2,12 @@
   "citations": [
     {
       "dissent": false,
+      "id": "brazil",
+      "kind": "actor",
+      "locator": "Q217230, P576 1889-11-15 (the Empire of Brazil’s dissolution, taken as this record’s start)"
+    },
+    {
+      "dissent": false,
       "id": "democratic-leftwing-republican-party",
       "kind": "actor",
       "locator": "Q3366682"
@@ -11,6 +17,18 @@
       "id": "ecologist-party-the-greens",
       "kind": "actor",
       "locator": "Q978086"
+    },
+    {
+      "dissent": false,
+      "id": "empire-of-brazil",
+      "kind": "actor",
+      "locator": "Q217230, P571 1822-09-07"
+    },
+    {
+      "dissent": false,
+      "id": "empire-of-brazil",
+      "kind": "actor",
+      "locator": "Q217230, P576 1889-11-15"
     },
     {
       "dissent": false,
@@ -134,6 +152,30 @@
     },
     {
       "dissent": false,
+      "id": "russian-republic",
+      "kind": "actor",
+      "locator": "Q139319, P571 1917-09-01"
+    },
+    {
+      "dissent": false,
+      "id": "russian-republic",
+      "kind": "actor",
+      "locator": "Q139319, P576 1917-10-25"
+    },
+    {
+      "dissent": false,
+      "id": "russian-sfsr",
+      "kind": "actor",
+      "locator": "Q2184, P571 1917-10-25"
+    },
+    {
+      "dissent": false,
+      "id": "russian-sfsr",
+      "kind": "actor",
+      "locator": "Q2184, P576 1991-12-25"
+    },
+    {
+      "dissent": false,
       "id": "soviet-union",
       "kind": "actor",
       "locator": "Q15180, P571 1922-12-30 (normal rank; the 1923-07-06 value is deprecated)"
@@ -155,6 +197,24 @@
       "id": "university-of-porto",
       "kind": "actor",
       "locator": "Q1422903"
+    },
+    {
+      "dissent": false,
+      "id": "viceroyalty-of-brazil",
+      "kind": "actor",
+      "locator": "Q11876909, P576 1815-01-01 (State of Brazil)"
+    },
+    {
+      "dissent": false,
+      "id": "viceroyalty-of-brazil",
+      "kind": "actor",
+      "locator": "Q2088324, P576 1815 (Colonial Brazil)"
+    },
+    {
+      "dissent": false,
+      "id": "viceroyalty-of-brazil",
+      "kind": "actor",
+      "locator": "Q2920081, P576 1808 (Viceroyalty of Brazil, the office; not taken)"
     },
     {
       "dissent": false,
@@ -1148,6 +1208,12 @@
     },
     {
       "dissent": false,
+      "id": "empire-of-brazil--brazil--succeeded",
+      "kind": "relation",
+      "locator": "Q217230, P576 1889-11-15"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-empire--turkey-ottoman-empire--succeeded",
       "kind": "relation",
       "locator": "Q12560, P576 1922-11-17"
@@ -1157,6 +1223,42 @@
       "id": "persia--iran-persia--succeeded",
       "kind": "relation",
       "locator": "Q63158027, P571 1789 and P576 1925"
+    },
+    {
+      "dissent": false,
+      "id": "russian-empire--russian-republic--succeeded",
+      "kind": "relation",
+      "locator": "Q139319, P571 1917-09-01"
+    },
+    {
+      "dissent": false,
+      "id": "russian-empire--russian-republic--succeeded",
+      "kind": "relation",
+      "locator": "Q34266, P576 1917-09-01"
+    },
+    {
+      "dissent": false,
+      "id": "russian-republic--russian-sfsr--succeeded",
+      "kind": "relation",
+      "locator": "Q139319, P576 1917-10-25"
+    },
+    {
+      "dissent": false,
+      "id": "russian-republic--russian-sfsr--succeeded",
+      "kind": "relation",
+      "locator": "Q2184, P571 1917-10-25"
+    },
+    {
+      "dissent": false,
+      "id": "viceroyalty-of-brazil--empire-of-brazil--succeeded",
+      "kind": "relation",
+      "locator": "Q2088324, P576 1815 (Colonial Brazil)"
+    },
+    {
+      "dissent": false,
+      "id": "viceroyalty-of-brazil--empire-of-brazil--succeeded",
+      "kind": "relation",
+      "locator": "Q217230, P571 1822-09-07"
     }
   ],
   "id": "wikidata",

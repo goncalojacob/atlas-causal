@@ -1452,6 +1452,24 @@
         }
       ]
     },
+    "russian-empire--russian-republic--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "russian-republic--russian-sfsr--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
+        }
+      ]
+    },
     "salazar--estado-novo--led": {
       "from": "git",
       "versions": [

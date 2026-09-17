@@ -854,6 +854,37 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-17",
+      "from": "empire-of-brazil",
+      "id": "empire-of-brazil--brazil--succeeded",
+      "kind": "relation",
+      "origin": {
+        "run": "m53",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m53-polities",
+          "interval-cited"
+        ],
+        "note": "M53: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "brazil",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
@@ -2731,6 +2762,68 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-17",
+      "from": "russian-empire",
+      "id": "russian-empire--russian-republic--succeeded",
+      "kind": "relation",
+      "origin": {
+        "run": "m53",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m53-polities",
+          "interval-cited"
+        ],
+        "note": "M53: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "russian-republic",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-17",
+      "from": "russian-republic",
+      "id": "russian-republic--russian-sfsr--succeeded",
+      "kind": "relation",
+      "origin": {
+        "run": "m53",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m53-polities",
+          "interval-cited"
+        ],
+        "note": "M53: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "russian-sfsr",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
@@ -3239,6 +3332,37 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-17",
+      "from": "viceroyalty-of-brazil",
+      "id": "viceroyalty-of-brazil--empire-of-brazil--succeeded",
+      "kind": "relation",
+      "origin": {
+        "run": "m53",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m53-polities",
+          "interval-cited"
+        ],
+        "note": "M53: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "empire-of-brazil",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
@@ -3405,6 +3529,18 @@
       "kind": "relation",
       "message": "the relation falls entirely outside \"tunisia-under-france\"'s dates",
       "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "viceroyalty-of-brazil--empire-of-brazil--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"viceroyalty-of-brazil\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "viceroyalty-of-brazil--empire-of-brazil--succeeded",
+      "kind": "relation",
+      "message": "\"viceroyalty-of-brazil\" ends 1815 and \"empire-of-brazil\" begins 1822, 7 years later: something else held that ground in between, and this relation does not say what",
+      "rule": "succession-gap"
     },
     {
       "id": "zambia-under-united-kingdom--zambia--succeeded",

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "russian-sfsr",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m53"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m53-polities"
+    ],
+    "note": "M53: written on Wikidata’s Q2184 — P571 1917-10-25, P576 1991-12-25 — to carry the three events M52 left naming `soviet-union` before its cited inception of 1922-12-30. It stands beside the Soviet Union rather than before it: the two intervals overlap by design, because this was a republic within that union, and no succession is written between them. It holds no territory; the nine CShapes periods of the 1917–1922 gap stay where M52 put them, flagged m52-gap."
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2184, P571 1917-10-25"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q2184, P576 1991-12-25"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Russian Soviet Federative Socialist Republic"
+  ],
+  "summary": "A polity whose inception Wikidata states as 1917-10-25 on Q2184 and whose dissolution it states as 1991-12-25. Both years here are those two values and nothing else. It is written because M52 dated `soviet-union` from 1922-12-30, which left three events of 1917 and 1918 — the October Revolution, the Russian Civil War and the Treaty of Brest-Litovsk — naming a state that did not yet exist. This record is what they name instead. It holds no territory: CShapes draws entity 365 across these years under a single label and M52 gave those periods to `soviet-union` with the gap flagged, and moving ground is a claim about borders that this milestone does not make.",
+  "when": {
+    "start": 1917,
+    "end": 1991
+  },
+  "where": null
+}

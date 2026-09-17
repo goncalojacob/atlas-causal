@@ -13,30 +13,44 @@
   ],
   "license": "GPL-3.0-only",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-17",
   "origin": {
     "tool": "basemaps"
   },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "m53-polities"
+    ],
+    "note": "M53: this record ended 1877, the last snapshot the basemaps import read, which is a file boundary and not a dissolution. Its end is now 1815, what Wikidata states for the colonial entity on Q2088324 (Colonial Brazil) P576 1815 and Q11876909 (State of Brazil) P576 1815-01-01. Q2920081 carries this record’s exact name, the viceroyalty as an office, and gives 1808; it is cited above and not taken. Its start is still the snapshot boundary. See docs/m53-polities.md §2.4."
   },
   "sources": [
     {
       "source": "historical-basemaps",
       "locator": "NAME \"Viceroyalty of Brazil\""
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q2088324, P576 1815 (Colonial Brazil)"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q11876909, P576 1815-01-01 (State of Brazil)"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q2920081, P576 1808 (Viceroyalty of Brazil, the office; not taken)"
     }
   ],
   "actorType": "polity",
   "names": [
     "Viceroyalty of Brazil"
   ],
-  "summary": "A polity the Historical Basemaps dataset draws in the snapshots for 1715, 1783, 1800 and 1815. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The interval on this record is the span those snapshots cover, 1715 to 1877, and not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "A polity the Historical Basemaps dataset draws in the snapshots for 1715, 1783, 1800 and 1815. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The interval on this record is the span those snapshots cover, 1715 to 1877, and not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields and asserts nothing the dataset does not. M53 moved its end from 1877 to 1815, the dissolution Wikidata states for the colonial entity on Q2088324 and Q11876909; its start is still the snapshot boundary. The record’s last territorial period runs to 1877 and so outlives it: that period, and Brazilian ground from 1815 to 1886, are listed as open.",
   "when": {
     "start": 1715,
-    "end": 1877
+    "end": 1815
   },
   "where": null
 }

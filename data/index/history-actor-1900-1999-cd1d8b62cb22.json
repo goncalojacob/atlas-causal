@@ -4635,6 +4635,24 @@
         }
       ]
     },
+    "russian-republic": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "russian-sfsr": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
+        }
+      ]
+    },
     "rwanda": {
       "from": "git",
       "versions": [
