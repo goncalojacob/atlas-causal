@@ -372,6 +372,52 @@ test('a place’s faded rows follow the band without rebuilding the card', { ski
   });
 });
 
+// M54: and a territory's list is the same idiom, deliberately. The owner's
+// sentence — "when I select a territory I can see all events that are related
+// to that territory independent of the timespan I select" — is kept by the
+// list holding everything the ground found and the band **fading** what falls
+// outside it. A reader who narrows the band must never be told a territory has
+// no history.
+//
+// Brazil is the case that was reported: a CShapes record that begins in 1886,
+// standing on ground four centuries older.
+test('a territory’s faded rows follow the band without rebuilding the card', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    const atlas = await atlasOf(path.join(ROOT, 'data'));
+    await open(page, url(`?actor=brazil&from=${atlas.extent.min}&to=${atlas.extent.max}`));
+    await waitFor(page, 'return document.querySelectorAll("#timeline [data-window]").length === 3;', 'the band');
+    // The ground is a file fetched when a lens on an actor asks (M48, M54), so
+    // the section is written again when it lands: waited for, never timed.
+    await waitFor(page, 'return document.querySelectorAll(\'.card-section[data-section="ground"] .actor-row\').length > 0;',
+      'the ground list');
+    const before = await page.eval(`document.querySelector('.panel .actor-head h2').dataset.kept = 'yes';
+      return {
+        rows: document.querySelectorAll('.card-section[data-section="ground"] .actor-row').length,
+        faded: document.querySelectorAll('.card-section[data-section="ground"] .actor-row.faded').length,
+        landfall: Boolean(document.querySelector('.card-section[data-section="ground"] [data-id="portuguese-landfall-in-brazil-1500"]')),
+      };`);
+    assert.equal(before.faded, 0, 'the whole span: nothing is outside it');
+    assert.ok(before.landfall, 'the 1500 landfall is on the card of the territory it happened in');
+
+    // The band narrowed onto the twentieth century, which is where the reader
+    // who reported this was looking.
+    await page.eval(dragWindowTo('from', 600));
+    await waitFor(page, 'return /from=/.test(location.search);', 'the window in the URL');
+    const after = await page.eval(`return {
+      head: document.querySelector('.panel .actor-head h2').dataset.kept ?? null,
+      rows: document.querySelectorAll('.card-section[data-section="ground"] .actor-row').length,
+      faded: document.querySelectorAll('.card-section[data-section="ground"] .actor-row.faded').length,
+      hint: document.querySelector('.card-section[data-section="ground"] .hint').textContent.trim(),
+      landfall: Boolean(document.querySelector('.card-section[data-section="ground"] [data-id="portuguese-landfall-in-brazil-1500"]')),
+    };`);
+    assert.equal(after.head, 'yes', 'the card was not rebuilt');
+    assert.equal(after.rows, before.rows, 'not one row was removed');
+    assert.ok(after.faded > 0, `the rows outside the band are faded: ${after.faded}`);
+    assert.ok(after.landfall, 'the history is shown, faded, and never taken away');
+    assert.match(after.hint, /inside the window; the rest are faded\./);
+  });
+});
+
 // "Open an event, open an actor, narrow the band, Back": the address bar and
 // the band used to disagree from there on. The popped entry was parsed with
 // the live state as its defaults, so the band the reader had just dragged

@@ -302,6 +302,27 @@ test('the grounds are asked for by a lens on an actor and by nothing else', { sk
   });
 });
 
+// M54: and the territorial join beside it — every event inside the union of a
+// polity's outlines, at any date — is a second file under the same discipline.
+// First paint costs what it did: it is fetched when a lens first asks, and
+// until it lands the lens is what it was, a frame of the old picture.
+test('the territories are asked for by a lens on an actor and by nothing else', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('index.html'), ATLAS_READY);
+    const quiet = await page.eval(REQUESTS);
+    assert.equal(quiet.filter((name) => name.includes('/index/territories-')).length, 0,
+      'nothing on the page has asked what stands on whose ground');
+
+    await open(page, url('index.html?actor=portugal&from=1800&to=2030'), ATLAS_READY);
+    await waitFor(
+      page,
+      "return performance.getEntriesByType('resource').map((e) => e.name)"
+        + ".filter((name) => name.includes('/index/territories-')).length === 1;",
+      'the territories file to be asked for once',
+    );
+  });
+});
+
 // A4: the polygons are still the only thing that can draw a lane as a shape,
 // so the wash a `regional` event is drawn as asks for them — and only then.
 // The fixtures hold one such event, from 1260 to 1300.

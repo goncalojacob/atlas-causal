@@ -13,6 +13,8 @@ import { loadAtlas } from '../src/data.js';
 import { actorCardHtml } from '../src/panel/actor.js';
 import { articleFor } from '../src/wikipedia.js';
 import { esc } from '../src/util/esc.js';
+import { bounds } from '../src/util/dates.js';
+import { defaultState } from '../src/state.js';
 import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
 
 // The context panel.js hands every card, reduced to what this one uses.
@@ -23,6 +25,7 @@ function context(atlas) {
     partOfHtml: () => '<ul class="narrative-rows"></ul>',
     eventLink: (event) => `<button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button>`,
     laneLabel: (region) => region ?? '',
+    startYear: (event) => bounds(event.when.start).min,
     lensControl: (kind, id) => `<button type="button" class="link small lens-control" data-action="focus" data-focus="${kind}:${id}">show only these</button>`,
     entryLink: (kind, id) => `<p class="entry-link"><a href="entry.html?id=${esc(id)}">Read the full entry →</a></p>`,
     discussLink: (kind, id) => `<p class="discuss"><a href="${esc(discussUrl(kind, id))}" rel="noopener" target="_blank">Discuss this record</a></p>`,
@@ -304,4 +307,45 @@ test('the fixture succession is drawn from both ends of the pair', () => {
   const colony = sectionOf(actorCardHtml(ctx, atlas.actors.get('fixture-polity-four')), 'succession');
   assert.match(colony, /<h3>After /);
   assert.match(colony, /data-action="actor" data-id="fixture-polity-three"/);
+});
+
+// ─── what happened on this ground (M54) ────────────────────────────────────
+//
+// "The important thing is that when I select a territory I can see all events
+// that are related to that territory independent of the timespan I select"
+// (the owner, 17 September). The card lists everything the ground found, at
+// any date, and the band **fades** what falls outside the window rather than
+// removing it — the idiom the place card has had since B12, followed rather
+// than reinvented. A reader who narrows the band is never told a territory has
+// no history.
+const rows = (html, key) => [...sectionOf(html, key).matchAll(/<li class="actor-row([^"]*)"/g)].map((m) => m[1]);
+const hintOf = (html, key) => sectionOf(html, key).match(/<p class="hint">([^<]*)<\/p>/)?.[1] ?? null;
+
+test('a territory’s card lists everything on its ground, and the band fades rather than removes', async () => {
+  const atlas = await atlasOf(path.join(ROOT, 'data'));
+  const ctx = context(atlas);
+  const brazil = atlas.actors.get('brazil');
+  const band = (from, to) => actorCardHtml(ctx, brazil, { state: { ...defaultState(), from, to } });
+
+  const whole = band(atlas.extent.min, atlas.extent.max);
+  assert.match(sectionOf(whole, 'ground'), /portuguese-landfall-in-brazil-1500/,
+    'the 1500 landfall is on Brazilian ground');
+  assert.deepEqual(rows(whole, 'ground').filter((cls) => cls.includes('faded')), [],
+    'the whole span: nothing is outside it');
+  assert.match(hintOf(whole, 'ground'), /All of them are inside the window\./);
+
+  // The band narrowed to the century the reader was looking at. The same rows,
+  // and some of them faded: this is the whole of the owner's sentence.
+  const narrow = band(1900, 2000);
+  assert.equal(rows(narrow, 'ground').length, rows(whole, 'ground').length, 'no row was removed');
+  assert.ok(rows(narrow, 'ground').some((cls) => cls.includes('faded')), 'and the rest are faded');
+  assert.match(hintOf(narrow, 'ground'), /inside the window; the rest are faded\./);
+  assert.match(sectionOf(narrow, 'ground'), /portuguese-landfall-in-brazil-1500/,
+    'a reader who narrows the band is shown the history, faded');
+});
+
+test('an actor that stands on no ground has no such section', async () => {
+  const atlas = await atlasOf(path.join(ROOT, 'data'));
+  const html = actorCardHtml(context(atlas), atlas.actors.get('salazar'), { state: defaultState() });
+  assert.equal(sectionOf(html, 'ground'), '', 'a person holds no territory');
 });
