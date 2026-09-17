@@ -10212,6 +10212,274 @@ order each time.
      for Russia. Its 1945–1949 CShapes period is kept and flagged `m55-gap`,
      as M52 kept and flagged the nine periods of the Russian gap.
 
+## M56 — the rule was in the tests, and five handles had stopped being true
+
+Two small debts and a third the brief found on its way past. `docs/m56-brief.md`
+is the milestone; this is what it cost and what it decided.
+
+### The rule is overlap, and all four survive it
+
+**An `actors` entry is sound when the actor's span overlaps the event's span.**
+Not when the actor was alive in the year the event began, which is right for a
+battle and nonsense for a three-century process: the Atlantic trade to Brazil
+runs from 1540 and names the Empire of Brazil, 1822–1889, and the entry is
+correct.
+
+**The validator already had the rule.** `actor-outside-when` fires only where
+the event falls *entirely* outside the actor's dates, and it is a warning
+because the two intervals come from two records and neither is wrong on its
+own. What carried the start-only reading was **four copies in the milestone
+suites** — `tests/m51.test.mjs`, `tests/m52.test.mjs`, `tests/m53.test.mjs`
+twice and `tests/m55.test.mjs` — which is where the four false positives came
+from. So the fix was in the tests, and the brief said as much.
+
+**Four of four survive the corrected rule**, `chinese-civil-war` included, and
+that is the one the brief expected to fail. It reads the event as the point
+1946; the record runs **1946 to 1950** and `taiwan` begins 1949, so the two
+meet by a year. Deviation 795 reached the same place from the other side when
+M53 annotated the entry rather than removing it. **What `chinese-civil-war`
+needed turned out not to be arithmetic**: the open question is whether the
+CShapes record `taiwan` is the polity that fought from 1946 — the Republic of
+China, which would need a record of its own and sources for it — and that is
+M49's 1886-or-1949 question again, still a person's. It stays listed and
+flagged `m53-open`.
+
+M51's standing exception for the pair is **dropped**, having nothing left to
+except. `tests/m56.test.mjs` holds the rule once over the whole corpus, so a
+milestone tempted to write a fifth copy has one to point at.
+
+### The five ids, and what each was chosen against
+
+Five records were re-dated or re-scoped by M51 and M55 and kept a handle that
+had stopped describing them. **The data was right every time; the handle was
+the lie** — which is amendment A1's general rule, below.
+
+| was | is | span | what it holds |
+|---|---|---|---|
+| `belize-before-1886` | `belize-before-1981` | 1650–1981 | Belize up to independence |
+| `bhutan-before-1886` | `bhutan-before-1948` | 1650–1948 | Bhutan up to 1948 |
+| `philippines-before-1886` | `philippines-before-1946` | 1492–1946 | the Philippines up to 1946 |
+| `russia-soviet-union` | `russian-federation` | 1991– | the Russian Federation |
+| `germany-prussia` | `german-empire` | 1871–1918 | the German Empire |
+
+**The three `-before-` ids keep the form and correct the number**, and that is
+the choice the brief asked to be argued. `-before-1886` names the seam between
+Historical Basemaps and CShapes — a file boundary, which is exactly the import
+artefact M51 existed to erase — and `-before-1981` names the record's **own
+cited end**. It is the same shape with the lie taken out of it, not a suffix
+invented to dodge a collision.
+
+**A historical proper name was considered and refused.** `british-honduras` is
+the obvious candidate and the record does not support it: the colony of that
+name ran 1862 to 1973 and this record runs 1650 to 1981, so the id would
+assert a name over three centuries the dataset never gives it — and the
+record's own summary says in as many words that it "asserts nothing the
+dataset does not". `bhutan-under-british-protection` and `colonial-philippines`
+fail the same way at one end or the other. CLAUDE.md's hardest rule is that
+this project does not make a historical claim by accident, and an id is read
+by everyone who sees a URL.
+
+**The other two take the name they already display**, where nothing is
+claimed: `german-empire` beside `german-federal-republic` and
+`german-democratic-republic`, `russian-federation` beside `russian-empire`,
+`russian-republic` and `russian-sfsr`. Neither says anything the record's own
+`names[0]` does not say already, and no display changed.
+
+Every old id is in its survivor's `aliases`. **35 records renamed, 42 rewritten,
+two mapping files and ten geometry shards**, in one commit per rename as rule
+11 asks.
+
+### The rename tool could not do it, and why that was the finding
+
+`tools/migrate/ids.mjs` refused all five: a record an import re-derives is
+corrected in `data/imports/` and by re-running the import. **That route was
+measured before it was argued with.** Re-running the basemaps import on a copy
+of `data/` **reverts M51's joins** — it deletes `egypt-before-1886` and writes
+back the `egypt-under-united-kingdom` it was joined from, and does the same
+down the list. A rename must not have to undo a milestone.
+
+The refusal is narrowed instead, by the argument M44c used on the Wikidata
+case. What makes a territory import re-derive an id is that the id is a
+**value in the mapping file**; a plan that rewrites that value has answered the
+objection, because the next import finds the new id where it looked for the
+old one. It is only true with **the presence cascade beside it**: those two
+imports write `<actor>-<year>`, so without it the import would put
+`british-honduras-1650` beside a stale `belize-before-1886-1650` even with the
+map corrected. `geometry.key` follows too — for the basemaps presences it is
+the actor's own id, and rule 17 reads it against the shard — so the shards
+move with it. The two changes are one change.
+
+**Entities 255 and 365 gained an entry in `data/imports/cshapes-actors.json`.**
+Neither had one: both took their id from the source's own `country_name`,
+"Germany (Prussia)" and "Russia (Soviet Union)", which is how the atlas came by
+two ids naming three polities each. The segments M52 and M55 cut are
+deliberately **not** written there — that would re-derive a person's judgement
+from a date list and hand the import boundaries a milestone decided.
+
+### The two Wikidata ids: one was wrong, and the other was the brief
+
+Both checked against Wikidata by item on 17 September.
+
+**`washington` was wrong, and worse than the brief says.** It carried
+`Q1018557` — *Washington, West Sussex*, a village in the Horsham District —
+with an `enwiki` link to match, while its own point is 38.90, −77.04 and the
+one event that names it is the founding of NATO. It is **`Q61`** now, with
+`wikipedia.en` corrected and the sitelink count re-counted from that item: 251
+language editions, not 14.
+
+**`braga` was right, and the brief has the two items the wrong way round.**
+`Q3344946` is the **city**, seat of the municipality, at 41.5503, −8.42 —
+which is the record's own point to four decimals. `Q83247` is the
+**municipality** around it, and it is what Natural Earth's city feature
+carries, which is why `docs/naturalearth-places.md` reported the two as
+disagreeing. They are the same place at two granularities and the record is on
+the right one. **Nothing changed.**
+
+### The places: 27, not 13, and eight of them settled
+
+The brief's figure is stale — M50 and M53 wrote place records after that
+measurement, and the document counts **42 records and 27 left for a person**.
+Eight are settled by one signal, and it is the same fault in every case: **the
+record names the city and then qualifies it**, so the exact fold refuses a name
+the record only *begins* with. `bridgetown`, `cap-haitien`, `havana`,
+`montego-bay`, `porto-seguro`, `recife`, `salvador` and `santo-domingo` — each
+matched to the city of that same name nearest its own point, every one within
+a twenty-fifth of a degree, with no other city of the name anywhere near.
+
+**Nineteen stay listed, and most want no city at all**: `belem`,
+`parque-das-nacoes` and `ipiranga` are parishes or districts of a city the
+document's own rule forbids them to claim, and `central-portugal`, `flanders`,
+`tete-district`, `boe` and `near-villanueva-del-fresno` are regions. `london`
+and `manchester` are the two that are genuinely odd — each names a city
+Natural Earth certainly holds, and neither is among the candidates within 2° of
+its own point. That is a question and it is left as one.
+
+Porto Seguro at 123,173 is under the far layer's own cutoff and is drawn now
+because a place record claims it. **`cities far` is 190.5 KB of its 200 KB
+cap**, still the tightest layer in the base map.
+
+### What is left open
+
+`chinese-civil-war`'s actor, above. **Fifty-five presence records carry an id
+naming a record that is no longer their actor** — `turkey-ottoman-empire-*`
+under eight of them, `prussia-*` under four — which is this milestone's fault
+one level down, left by M51's joins and by M52's and M55's splits. A presence
+id is a plain slug and nothing derives it in general, so renaming one is
+choosing a name; the tool now moves those the territory imports do derive, and
+the rest are a person's. `london` and `manchester`. And M51's `-before-` form
+itself, which is now honest about its date and still says nothing about what
+the polity was.
+
+### Cost
+
+`validate --index` clean, **0 errors**, and the warning count unchanged at
+**1,215** across every commit. The full suite is **1,616 tests, all green, none
+skipped** — nine more than M55 left: five in `tests/m56.test.mjs` and four in
+`tests/migrate-ids.test.mjs`. Six commits of records, index, tests and tools,
+in deviation 798's order both times records moved.
+
+**The two tests red at HEAD when this run began both passed here.** They are
+`map-browser`'s "zoomed to Portugal, Lisbon is named once", which is deviation
+799's flake exactly, and `panel-browser`'s "a drag of the band leaves the open
+explanation open", which timed out rather than asserting — the shape the
+protocol names as a known flake. Neither was touched and both are green in the
+run above; recorded because a run that assumes a red baseline is its own doing
+wastes an hour, and so does one that assumes it is not.
+
+### Deviations
+
+803. **The brief's own exception survived the rule, and the arithmetic was the
+     brief's.** It says `chinese-civil-war` → `taiwan` "will not" survive —
+     "1946 is outside 1949–, no overlap" — and instructs the run to fix it or
+     list it with its question. The record is **not** the point 1946: it runs
+     1946 to 1950, with `date` 1946-03-31 and `endDate` 1950-05-01, and
+     `taiwan` begins 1949-12-08. The two meet by a year, so under the rule the
+     brief itself states there is nothing to fix. Deviation 795 is the same
+     reading made a day earlier from M53's side. **The entry is untouched and
+     the question is listed**, which is the brief's second branch and was
+     always the honest one: what is wrong with the pair is not a date but an
+     identity, and no rule about intervals will settle it.
+
+804. **`docs/m53-polities.md` §4.1 keeps the start-only predicate, and that is
+     not the rule surviving in a corner.** §4.1 is a **coverage** figure — how
+     many events name at least one actor — and the document states the rule it
+     counted by in its own words: "an event names at least one actor that is
+     alive in the year the event starts". Rewriting the predicate under a
+     sentence that says otherwise would make the correspondence that file
+     exists for a lie. Measured on 17 September the two readings give the
+     **same four numbers**, 36 of 36 and 235 of 285, because no event owes its
+     place in the count to an actor that merely overlaps it; a new assertion
+     holds them to each other, so the day that stops being true the test fails
+     and the answer is to say so in the document rather than to change the
+     reading underneath it.
+
+805. **The rename tool's refusal was narrowed rather than obeyed, and the route
+     it named was measured before it was argued with.** "Edit the mapping file
+     and re-run the import" is what it says, and re-running the basemaps
+     import on a copy of `data/` **reverts M51's joins**: it removes
+     `egypt-before-1886`, `fiji-before-1886`, `gabon-before-1886`,
+     `iceland-before-1886`, `malta-before-1886`, `mozambique-before-1886` and
+     `sierra-leone-before-1886` — seven of M51's nineteen survivors — puts the
+     `-under-<sovereign>` presences each was joined with back on disk, and
+     rewrites eighteen further actor records besides. The refusal's own
+     argument — an id the import **re-derives** — is answered by rewriting the
+     mapping value, which is what the plan now does, together with the
+     presences whose ids those two imports derive from the actor's. A rename
+     must not have to undo a milestone to be allowed.
+
+806. **Two CShapes entities gained a mapping entry that names a record and
+     does not segment it.** 255 and 365 had none, which is how their ids came
+     from the source's `country_name` — "Germany (Prussia)", "Russia (Soviet
+     Union)" — and how the atlas came by two ids naming three polities each.
+     The entries give the id and stop there. **The segments M52 and M55 cut
+     are deliberately absent**: writing them would re-derive a person's
+     judgement about where a state ends from a list of dates, and hand the
+     import boundaries a milestone decided. The cost is that the import is
+     still out of step with those two splits, which it was already and this
+     entry does not worsen; the gain is that it no longer takes a record's
+     name from a label naming three things.
+
+807. **The brief has `braga`'s two items the wrong way round, and the record
+     was right.** It says the record carries Q3344946 "where the city is
+     Q83247". Wikidata, read by item on 17 September: **Q3344946 is the city**,
+     described as the seat of Braga municipality and typed `Q1549591` (city),
+     at 41.5503, −8.42; **Q83247 is the municipality**, typed `Q13217644`
+     (municipality of Portugal), at 41.5333, −8.4167. The record's own point is
+     −8.42, 41.55 — Q3344946's, to four decimals. What
+     `docs/naturalearth-places.md` saw was the two granularities disagreeing,
+     not an error: Natural Earth's city feature carries the municipality's
+     item. Nothing was changed, and the brief's instruction to "check each
+     against Wikidata before changing it" is the reason.
+
+808. **The thirteen unresolved places are twenty-seven.** The figure the brief
+     carries was measured at M36c against 26 place records; M50 and M53 wrote
+     sixteen more, and the generated document counts 42 records with 27 left
+     for a person. Eight were settled here and nineteen stay listed, so the
+     debt is larger than the brief thought and smaller than it was.
+
+809. **A milestone that is not a map milestone rewrote four files of the base
+     map.** Resolving a place against a Natural Earth city is two commands, and
+     the second puts the city into the layer. Four files changed —
+     `cities-world.json` and three cells — and the change is the eight `place`
+     links plus **one new feature**: Porto Seguro, at 123,173, is under the far
+     layer's own 250,000 cutoff and is drawn because a place record now claims
+     it. `cities far` went from 189.9 KB to **190.5 KB of its 200 KB cap**,
+     which STATUS already names as the tightest any layer sits. Every other
+     layer is byte for byte what it was. A run that resolves the remaining
+     nineteen should check that cap first.
+
+810. **`tools/m51-overlaps.mjs` said the presence id was the thing that does
+     not move, and M56 moved it.** Its comment is explicit — the pairs are
+     found by id and not by `actor`, because a join rewrites `actor` on every
+     presence of the merged record "e o id é o que não se mexe". Renaming an
+     actor renames the presences whose ids the territory imports derive from
+     it, so `belize-before-1886-1650` is `belize-before-1981-1650`. The pairs
+     table keeps the ids `docs/m51-overlaps.md` was written with, because that
+     document is M51's account, and `measure()` follows the `aliases` to find
+     them. The same is true of the milestone suites: `byId`, `byRelation` and
+     `byPresence` resolve a former id now, which is what a rename promises and
+     the first thing in the repository to depend on it.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
