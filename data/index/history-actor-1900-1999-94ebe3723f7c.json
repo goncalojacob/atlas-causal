@@ -2084,6 +2084,15 @@
             "origin"
           ],
           "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-17"
         }
       ]
     },
@@ -3579,6 +3588,15 @@
             "sitelinks"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "nazi-germany": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
         }
       ]
     },
@@ -5627,6 +5645,15 @@
             "origin"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "weimar-republic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
         }
       ]
     },

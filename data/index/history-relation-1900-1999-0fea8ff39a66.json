@@ -633,6 +633,15 @@
         }
       ]
     },
+    "germany-prussia--weimar-republic--succeeded": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
+        }
+      ]
+    },
     "ghana-under-united-kingdom--ghana--succeeded": {
       "from": "git",
       "versions": [
@@ -1017,6 +1026,15 @@
         {
           "first": true,
           "on": "2026-09-08"
+        }
+      ]
+    },
+    "nazi-germany--german-federal-republic--succeeded": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
         }
       ]
     },
@@ -1739,6 +1757,15 @@
         {
           "first": true,
           "on": "2026-09-08"
+        }
+      ]
+    },
+    "weimar-republic--nazi-germany--succeeded": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
         }
       ]
     },

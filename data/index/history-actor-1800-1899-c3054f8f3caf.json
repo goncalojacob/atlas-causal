@@ -1905,6 +1905,14 @@
             "where"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-17"
         }
       ]
     },
@@ -1920,6 +1928,16 @@
             "origin"
           ],
           "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "names",
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-17"
         }
       ]
     },

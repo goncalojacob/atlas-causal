@@ -1220,6 +1220,12 @@
     },
     {
       "dissent": false,
+      "id": "nazi-germany",
+      "kind": "actor",
+      "locator": "gwcode 255"
+    },
+    {
+      "dissent": false,
       "id": "nepal",
       "kind": "actor",
       "locator": "gwcode 790"
@@ -1913,6 +1919,12 @@
       "id": "vietnam-republic-of",
       "kind": "actor",
       "locator": "gwcode 817"
+    },
+    {
+      "dissent": false,
+      "id": "weimar-republic",
+      "kind": "actor",
+      "locator": "gwcode 255"
     },
     {
       "dissent": false,
@@ -3470,6 +3482,12 @@
     },
     {
       "dissent": false,
+      "id": "germany-prussia-1918",
+      "kind": "presence",
+      "locator": "fid 84"
+    },
+    {
+      "dissent": false,
       "id": "germany-prussia-1919",
       "kind": "presence",
       "locator": "fid 85"
@@ -3477,6 +3495,12 @@
     {
       "dissent": false,
       "id": "germany-prussia-1920",
+      "kind": "presence",
+      "locator": "fid 86"
+    },
+    {
+      "dissent": false,
+      "id": "germany-prussia-1933",
       "kind": "presence",
       "locator": "fid 86"
     },

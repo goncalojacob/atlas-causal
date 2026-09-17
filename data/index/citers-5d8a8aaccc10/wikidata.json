@@ -74,6 +74,24 @@
     },
     {
       "dissent": false,
+      "id": "german-federal-republic",
+      "kind": "actor",
+      "locator": "Q713750, P571 1949-05-23"
+    },
+    {
+      "dissent": false,
+      "id": "germany-prussia",
+      "kind": "actor",
+      "locator": "Q43287, P571 1871-01-01"
+    },
+    {
+      "dissent": false,
+      "id": "germany-prussia",
+      "kind": "actor",
+      "locator": "Q43287, P576 1918-11-09"
+    },
+    {
+      "dissent": false,
       "id": "iran-persia",
       "kind": "actor",
       "locator": "Q63158027, P571 1789 and P576 1925"
@@ -119,6 +137,18 @@
       "id": "nationalist-republican-party",
       "kind": "actor",
       "locator": "Q847883"
+    },
+    {
+      "dissent": false,
+      "id": "nazi-germany",
+      "kind": "actor",
+      "locator": "Q7318, P571 1933-03-15"
+    },
+    {
+      "dissent": false,
+      "id": "nazi-germany",
+      "kind": "actor",
+      "locator": "Q7318, P576 1945-05-23"
     },
     {
       "dissent": false,
@@ -281,6 +311,18 @@
       "id": "viceroyalty-of-brazil",
       "kind": "actor",
       "locator": "Q2920081, P576 1808 (Viceroyalty of Brazil, the office; not taken)"
+    },
+    {
+      "dissent": false,
+      "id": "weimar-republic",
+      "kind": "actor",
+      "locator": "Q41304, P571 1918-11-09"
+    },
+    {
+      "dissent": false,
+      "id": "weimar-republic",
+      "kind": "actor",
+      "locator": "Q41304, P576 1933 (year precision)"
     },
     {
       "dissent": false,
@@ -1298,6 +1340,30 @@
     },
     {
       "dissent": false,
+      "id": "germany-prussia--weimar-republic--succeeded",
+      "kind": "relation",
+      "locator": "Q41304, P571 1918-11-09"
+    },
+    {
+      "dissent": false,
+      "id": "germany-prussia--weimar-republic--succeeded",
+      "kind": "relation",
+      "locator": "Q43287, P576 1918-11-09"
+    },
+    {
+      "dissent": false,
+      "id": "nazi-germany--german-federal-republic--succeeded",
+      "kind": "relation",
+      "locator": "Q713750, P571 1949-05-23"
+    },
+    {
+      "dissent": false,
+      "id": "nazi-germany--german-federal-republic--succeeded",
+      "kind": "relation",
+      "locator": "Q7318, P576 1945-05-23"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-empire--turkey-ottoman-empire--succeeded",
       "kind": "relation",
       "locator": "Q12560, P576 1922-11-17"
@@ -1343,6 +1409,18 @@
       "id": "viceroyalty-of-brazil--empire-of-brazil--succeeded",
       "kind": "relation",
       "locator": "Q217230, P571 1822-09-07"
+    },
+    {
+      "dissent": false,
+      "id": "weimar-republic--nazi-germany--succeeded",
+      "kind": "relation",
+      "locator": "Q41304, P576 1933 (year precision)"
+    },
+    {
+      "dissent": false,
+      "id": "weimar-republic--nazi-germany--succeeded",
+      "kind": "relation",
+      "locator": "Q7318, P571 1933-03-15"
     }
   ],
   "id": "wikidata",

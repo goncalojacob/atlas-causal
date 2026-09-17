@@ -1293,6 +1293,37 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-17",
+      "from": "germany-prussia",
+      "id": "germany-prussia--weimar-republic--succeeded",
+      "kind": "relation",
+      "origin": {
+        "run": "m55",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m55-germany",
+          "interval-cited"
+        ],
+        "note": "M55: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "weimar-republic",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
@@ -2050,6 +2081,37 @@
       "revised": null,
       "status": "active",
       "to": "namibia",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-17",
+      "from": "nazi-germany",
+      "id": "nazi-germany--german-federal-republic--succeeded",
+      "kind": "relation",
+      "origin": {
+        "run": "m55",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m55-germany",
+          "interval-cited"
+        ],
+        "note": "M55: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "german-federal-republic",
       "type": "succeeded"
     },
     {
@@ -3394,6 +3456,37 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-17",
+      "from": "weimar-republic",
+      "id": "weimar-republic--nazi-germany--succeeded",
+      "kind": "relation",
+      "origin": {
+        "run": "m55",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m55-germany",
+          "interval-cited"
+        ],
+        "note": "M55: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "nazi-germany",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
@@ -3505,6 +3598,18 @@
       "id": "east-timor-under-portugal--east-timor--succeeded",
       "kind": "relation",
       "message": "\"east-timor-under-portugal\" ends 1976 and \"east-timor\" begins 2002, 26 years later: something else held that ground in between, and this relation does not say what",
+      "rule": "succession-gap"
+    },
+    {
+      "id": "nazi-germany--german-federal-republic--succeeded",
+      "kind": "relation",
+      "message": "the relation falls entirely outside \"german-federal-republic\"'s dates",
+      "rule": "relation-outside-actor-when"
+    },
+    {
+      "id": "nazi-germany--german-federal-republic--succeeded",
+      "kind": "relation",
+      "message": "\"nazi-germany\" ends 1945 and \"german-federal-republic\" begins 1949, 4 years later: something else held that ground in between, and this relation does not say what",
       "rule": "succession-gap"
     },
     {
