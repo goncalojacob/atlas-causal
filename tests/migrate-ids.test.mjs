@@ -21,7 +21,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { renamePlan, partsOf, DERIVED_ID_KINDS } from '../tools/migrate/ids.mjs';
+import { renamePlan, rewriteShard, partsOf, DERIVED_ID_KINDS } from '../tools/migrate/ids.mjs';
 import { rewriteReferences } from '../src/references.js';
 import { aliasIndex, resolveId } from '../src/validate/rules.js';
 import { bodyCitations, bodyLinks } from '../src/markdown.js';
@@ -550,4 +550,101 @@ test('a derived id is read with its own vocabulary and never the other one', () 
   assert.deepEqual(partsOf('relation', 'a--b--member-of'), { from: 'a', to: 'b', type: 'member-of' });
   assert.equal(partsOf('relation', 'a--b--caused'), null);
   assert.deepEqual([...DERIVED_ID_KINDS], ['edge', 'relation']);
+});
+
+// ─── M56: the id a mapping file carries, and its presences ──────────────────
+//
+// The A2 refusal above is about an id an import **re-derives**, and what makes
+// a territory import re-derive one is that the id is a *value* in
+// `data/imports/<source>-actors.json`. A plan that rewrites that value has
+// answered the objection: the next import looks the code up, finds the new id
+// where the old one was, and writes nothing beside it. M56 needed this because
+// five actors carried a handle that had stopped being true — `belize-before-1886`
+// running to 1981 — and the only route left was re-running the import, which
+// **reverts M51's joins**.
+
+const mapOf = (entries) => ({
+  file: 'imports/cshapes-actors.json',
+  name: 'cshapes-actors',
+  kind: 'import-map',
+  map: { schema: 1, source: 'cshapes-2-0', entries },
+});
+
+const presence = (id, actor, over = {}) => envelope(id, 'presence', {
+  actor,
+  dependencyOf: null,
+  when: { start: 1650, end: 1699 },
+  geometry: { files: ['geo/presences/1650-1699.json'], key: actor },
+  ...over,
+});
+
+const imported = (tool = 'cshapes') => corpus().map((r) => (r.id === 'an-actor' ? { ...r, origin: { tool } } : r));
+
+test('an imported id a mapping file carries is renamed, because the mapping moves with it', () => {
+  const maps = [mapOf({ 255: { actor: 'an-actor' } })];
+  const plan = renamePlan(imported(), 'actor', 'an-actor', 'the-actor', { today: TODAY, maps });
+  assert.equal(plan.error, undefined);
+  assert.equal(find(plan, 'an-actor').id, 'the-actor');
+  assert.deepEqual(find(plan, 'an-actor').aliases, ['an-actor']);
+  // The mapping is rewritten in the same plan; that is what makes it allowed.
+  assert.equal(plan.maps.length, 1);
+  assert.equal(plan.maps[0].map.entries['255'].actor, 'the-actor');
+
+  // And without the entry it is still refused, with the message unchanged.
+  const without = renamePlan(imported(), 'actor', 'an-actor', 'the-actor', { today: TODAY, maps: [mapOf({ 255: { actor: 'somebody-else' } })] });
+  assert.match(without.error, /created by the cshapes import and is corrected in data\/imports\//);
+});
+
+test('the presences of a mapped actor follow it, because their ids are derived too', () => {
+  const maps = [mapOf({ 255: { actor: 'an-actor' } })];
+  const before = [
+    ...imported(),
+    presence('an-actor-1650', 'an-actor'),
+    presence('an-actor-1700', 'an-actor', { when: { start: 1700, end: 1714 } }),
+    // Named by hand rather than derived: left alone, because renaming it would
+    // be the tool choosing a name.
+    presence('the-settlement', 'an-actor'),
+    // Somebody else's, and still filed under this actor's old id — M52 and M55
+    // debt of exactly the kind this milestone is about, and not this rename's
+    // to guess at.
+    presence('an-actor-1800', 'another-actor', { geometry: { files: ['geo/presences/1650-1699.json'], key: 'another-actor' } }),
+  ];
+  const plan = renamePlan(before, 'actor', 'an-actor', 'the-actor', { today: TODAY, maps });
+  assert.equal(plan.error, undefined);
+  const renamed = plan.renames.map((r) => `${r.from}→${r.to}`).sort();
+  assert.deepEqual(renamed, ['an-actor-1650→the-actor-1650', 'an-actor-1700→the-actor-1700', 'an-actor→the-actor']);
+  // `geometry.key` is not a reference to a record, so `references.js` does not
+  // know it; the plan moves it because for these two imports it is the actor's
+  // own id, and rule 17 reads it against the shard.
+  assert.equal(find(plan, 'an-actor-1650').geometry.key, 'the-actor');
+  assert.equal(find(plan, 'the-settlement').geometry.key, 'the-actor');
+  assert.equal(find(plan, 'an-actor-1800'), undefined, 'a presence of another actor is not touched');
+  assert.deepEqual(plan.geo.files, ['geo/presences/1650-1699.json']);
+  assert.deepEqual(plan.geo.keys, { 'an-actor': 'the-actor' });
+});
+
+test('a presence cascade that would collide with an id already taken is refused whole', () => {
+  const maps = [mapOf({ 255: { actor: 'an-actor' } })];
+  const before = [...imported(), presence('an-actor-1650', 'an-actor'), presence('the-actor-1650', 'another-actor')];
+  assert.match(renamePlan(before, 'actor', 'an-actor', 'the-actor', { today: TODAY, maps }).error,
+    /would give "an-actor-1650" the id "the-actor-1650", which is already taken/);
+});
+
+test('the shard rewrite moves the geometry key and the presence that claims it', () => {
+  const shard = {
+    type: 'FeatureCollection',
+    arcs: [],
+    features: [
+      { type: 'Feature', id: 'an-actor', properties: { presence: 'an-actor-1650' }, geometry: null },
+      { type: 'Feature', id: 'another-actor', properties: { presence: 'another-actor-1650' }, geometry: null },
+    ],
+  };
+  const { shard: out, count } = rewriteShard(shard, { keys: { 'an-actor': 'the-actor' }, presences: { 'an-actor-1650': 'the-actor-1650' } });
+  assert.equal(count, 1);
+  assert.deepEqual(out.features[0], { type: 'Feature', id: 'the-actor', properties: { presence: 'the-actor-1650' }, geometry: null });
+  // Everything else is the same object it was: a shard is fetched a cell at a
+  // time and rewriting one that did not change would churn the byte budget.
+  assert.equal(out.features[1], shard.features[1]);
+  assert.equal(out.arcs, shard.arcs);
+  assert.equal(rewriteShard(shard, { keys: {}, presences: {} }).shard, shard);
 });

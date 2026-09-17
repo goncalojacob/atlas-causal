@@ -106,6 +106,10 @@
       ],
       "note": "CShapes holds 115 as a colony of Netherlands to 1975-11-24; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
     },
+    "255": {
+      "actor": "germany-prussia",
+      "note": "CShapes calls entity 255 \"Germany (Prussia)\" and the import took its id from that name. M55 read the record as the German Empire, 1871-1918, and split the Weimar Republic and the Nazi state out of it; this entry names the record so that the id no longer comes from a label naming three polities. The segments M55 cut are NOT in this file: adding them would re-derive a milestone's judgement from a date list, and the import would then own boundaries a person decided."
+    },
     "338": {
       "actor": "malta-under-united-kingdom",
       "names": [
@@ -131,6 +135,10 @@
         }
       ],
       "note": "CShapes holds 352 as a colony of United Kingdom to 1960-08-15; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+    },
+    "365": {
+      "actor": "russia-soviet-union",
+      "note": "CShapes calls entity 365 \"Russia (Soviet Union)\" and the import took its id from that name. M52 read the record as the Russian Federation, 1991 onwards, and split the Russian Empire, the Russian Republic, the RSFSR and the Soviet Union out of it; this entry names the record so that the id no longer comes from that label. As with 255, the segments are not written here."
     },
     "395": {
       "actor": "iceland-under-denmark",

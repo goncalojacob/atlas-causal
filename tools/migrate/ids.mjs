@@ -27,7 +27,7 @@
 // and is what the tests hold, the way `planTenures` is in `led-to-tenures.mjs`
 // and `topojson.mjs` is under `tools/import/`.
 
-import { writeFile, rm } from 'node:fs/promises';
+import { readFile, writeFile, rm } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -125,7 +125,29 @@ export function renamePlan(records, kind, oldId, newId, { today = null, maps = [
   // Wikidata record that keeps its `wikidata` across a rename is re-found
   // under its new id and is never written twice, and the refusal asks for
   // that identifier rather than for the origin alone.
-  if (importWritten(target) && !(originTool(target) === 'wikidata' && typeof target.wikidata === 'string')) {
+  // M56 narrowed this a second time, and by the same argument M44c used. The
+  // refusal is about an id the import **re-derives**, and what makes it
+  // re-derivable is that the id is a *value* in the mapping file: the territory
+  // imports read `data/imports/<source>-actors.json`, take the id it gives for
+  // a name or a gwcode, and write the record under it. A plan that rewrites
+  // that entry has already answered the objection — the next import finds the
+  // new id where it looked for the old one, and writes nothing beside it. So
+  // the question is not who created the record but **whether this rename moves
+  // the mapping too**, which is what `carriedByMap` asks.
+  //
+  // It is not the whole answer for those two imports, because their presence
+  // ids are `<actor>-<year>`, derived from the actor id in that same file. The
+  // cascade below carries them, and without it this narrowing would be false:
+  // the import would write `x-1650` beside the stale `y-1650` even with the
+  // map corrected. The two changes are one change.
+  //
+  // M56 needed it because five actors carried a handle that had stopped being
+  // true — `belize-before-1886` running to 1981 — and the only route the tool
+  // left was re-running the import, which was measured on 17 September and
+  // **reverts M51's joins**: it rewrote nineteen merged records back into the
+  // pairs they were joined from. A rename must not have to undo a milestone.
+  const carriedByMap = maps.some((entry) => rewriteImportMap(entry.map, entry.kind, (id) => (id === oldId ? newId : id)).count > 0);
+  if (importWritten(target) && !(originTool(target) === 'wikidata' && typeof target.wikidata === 'string') && !carriedByMap) {
     return refuse(`"${oldId}" was created by the ${originTool(target)} import and is corrected in data/imports/, not here: `
       + 'edit the mapping file and re-run the import (CLAUDE.md, "Correcting a territory")');
   }
@@ -150,6 +172,28 @@ export function renamePlan(records, kind, oldId, newId, { today = null, maps = [
   // changes, which terminates because an id is only ever rewritten once and
   // nothing derives an id from a derived one.
   const renames = new Map([[oldId, newId]]);
+
+  // The presence cascade, and only where the mapping carries the actor. A
+  // presence id is a slug like any other and nothing derives it in general —
+  // a person may call one whatever they like — but the two territory imports
+  // write `<actor>-<year>`, and for those the id *is* derived. Renaming the
+  // actor without them would leave the next import writing a second set
+  // beside the first, which is exactly what the refusal above guards against.
+  //
+  // A presence whose id does not begin with the actor's is left alone: it was
+  // named by hand, and renaming it would be the tool choosing a name.
+  if (kind === 'actor' && carriedByMap) {
+    for (const record of records) {
+      if (record.kind !== 'presence' || record.actor !== oldId) continue;
+      if (!record.id.startsWith(`${oldId}-`)) continue;
+      const derived = `${newId}${record.id.slice(oldId.length)}`;
+      if (byId.has(derived)) return refuse(`renaming "${oldId}" would give "${record.id}" the id "${derived}", which is already taken`);
+      const held = records.find((r) => (r.aliases ?? []).includes(derived));
+      if (held) return refuse(`renaming "${oldId}" would give "${record.id}" the id "${derived}", which is already an alias of "${held.id}"`);
+      renames.set(record.id, derived);
+    }
+  }
+
   for (let pass = 0; pass < KINDS.length; pass += 1) {
     let added = false;
     for (const record of records) {
@@ -171,12 +215,27 @@ export function renamePlan(records, kind, oldId, newId, { today = null, maps = [
   const rename = (id) => renames.get(id) ?? id;
   const counts = {};
   const writes = [];
+  // `geometry.key` on a presence is not a reference to a record — it is the
+  // name of a feature in a shard under `data/geo/`, which `references.js`
+  // deliberately does not know about. For the territory imports that name is
+  // the actor's id, so renaming the actor moves it, and the shard has to move
+  // with it or rule 17 finds a presence naming a feature that is not there.
+  const geoKeys = new Map();
+  const geoFiles = new Set();
+  for (const record of records) {
+    if (record.kind !== 'presence' || record.geometry?.key !== oldId) continue;
+    geoKeys.set(oldId, newId);
+    for (const file of record.geometry?.files ?? []) geoFiles.add(file);
+  }
   for (const record of records) {
     const { record: rewritten, count } = rewriteReferences(record, rename);
     const to = renames.get(record.id);
-    if (!to && count === 0) continue;
+    const movesKey = record.kind === 'presence' && geoKeys.has(record.geometry?.key);
+    if (!to && count === 0 && !movesKey) continue;
     if (count) counts[record.kind] = (counts[record.kind] ?? 0) + count;
-    let out = rewritten;
+    let out = movesKey
+      ? { ...rewritten, geometry: { ...rewritten.geometry, key: geoKeys.get(rewritten.geometry.key) } }
+      : rewritten;
     if (to) {
       // The former id goes in `aliases`, which is the whole of "a former id
       // keeps resolving": `resolveId` in the validator and `resolve()` in the
@@ -214,8 +273,30 @@ export function renamePlan(records, kind, oldId, newId, { today = null, maps = [
       .sort((a, b) => (a.from === oldId ? -1 : b.from === oldId ? 1 : a.from < b.from ? -1 : 1)),
     writes,
     maps: mapWrites,
+    // What the shell has to do under `data/geo/`: in each of these shards,
+    // a feature whose `id` is a key in `keys` takes the new one, and a
+    // `properties.presence` naming a renamed presence follows it. Returned
+    // rather than done here so that `renamePlan` stays a pure function of the
+    // records it was handed, which is what the tests hold it as.
+    geo: geoKeys.size ? { files: [...geoFiles].sort(), keys: Object.fromEntries(geoKeys), presences: Object.fromEntries([...renames].filter(([from]) => byId.get(from)?.kind === 'presence')) } : null,
     counts,
   };
+}
+
+// The shard rewrite, kept beside the plan so it is testable without a disk.
+// A shard is TopoJSON: `features[].id` is the geometry key and
+// `features[].properties.presence` the presence that claims it.
+export function rewriteShard(shard, { keys = {}, presences = {} } = {}) {
+  let count = 0;
+  const features = (shard.features ?? []).map((f) => {
+    const id = Object.hasOwn(keys, f.id) ? keys[f.id] : f.id;
+    const was = f.properties?.presence;
+    const presence = Object.hasOwn(presences, was) ? presences[was] : was;
+    if (id === f.id && presence === was) return f;
+    count += 1;
+    return { ...f, id, properties: { ...f.properties, presence } };
+  });
+  return { shard: count ? { ...shard, features } : shard, count };
 }
 
 // ─── The shell ──────────────────────────────────────────────────────────────
@@ -287,6 +368,7 @@ async function main(argv) {
   for (const r of plan.renames) console.log(`rename  ${r.kind.padEnd(9)} ${r.from}  →  ${r.to}`);
   for (const [k, n] of Object.entries(plan.counts).sort()) console.log(`rewrite ${k.padEnd(9)} ${n} reference(s)`);
   for (const m of plan.maps) console.log(`rewrite ${m.file} ${m.count} reference(s)`);
+  for (const file of plan.geo?.files ?? []) console.log(`rewrite ${file}`);
 
   if (!dryRun) {
     const at = (file) => path.join(dataDir, ...file.split('/'));
@@ -297,6 +379,15 @@ async function main(argv) {
     const written = new Set(plan.writes.map((w) => w.file));
     for (const w of plan.writes) if (w.was && !written.has(w.was)) await rm(at(w.was));
     for (const m of plan.maps) await write(at(m.file), m.map);
+    // The shards last, and written the way the import writes them: one line,
+    // no indentation. A shard is fetched by the browser a cell at a time and
+    // `data/geo/` sits under a byte ceiling, so pretty-printing one here would
+    // put kilobytes back that M36 spent three sub-runs taking out.
+    for (const file of plan.geo?.files ?? []) {
+      const shard = JSON.parse(await readFile(at(file), 'utf8'));
+      const { shard: out, count } = rewriteShard(shard, plan.geo);
+      if (count) await writeFile(at(file), `${JSON.stringify(out)}\n`, 'utf8');
+    }
   }
 
   const renamed = plan.renames.length;
