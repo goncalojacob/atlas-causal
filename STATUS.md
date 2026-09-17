@@ -10480,6 +10480,21 @@ wastes an hour, and so does one that assumes it is not.
      `byPresence` resolve a former id now, which is what a rename promises and
      the first thing in the repository to depend on it.
 
+811. **Two pushed heads were red, and this one was avoidable.** `e275ac99` —
+     the index commit that closes the five renames — failed run 819 with
+     **eleven tests**, every one a correspondence between a milestone document
+     and the live records: M51's, M52's and M55's suites read their own
+     documents' ids and looked them up, and the records had just moved. The
+     fix was one commit later, `e93841d0`, and the tests have been green since.
+     **It should have been in the same commit.** Deviation 711's rule — the
+     commit that teaches the tests goes with or before the one that changes
+     what they see — was read here as "the tests M56 is about", which was
+     `tests/m56.test.mjs` and landed first; the four suites that merely *read*
+     the renamed records were not counted as tests the change was about, and
+     they are. Rule 11 says a rename moves every reference in one commit, and a
+     test that names an id is a reference. The next run that renames anything
+     should stage the suites that look it up in the same commit as the records.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
