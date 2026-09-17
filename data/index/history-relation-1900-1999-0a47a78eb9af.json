@@ -98,7 +98,7 @@
         }
       ]
     },
-    "belize-before-1886--belize--succeeded": {
+    "belize-before-1981--belize--succeeded": {
       "from": "git",
       "versions": [
         {
@@ -111,7 +111,7 @@
             "from",
             "id"
           ],
-          "on": "2026-09-16"
+          "on": "2026-09-17"
         }
       ]
     },
@@ -124,7 +124,7 @@
         }
       ]
     },
-    "bhutan-before-1886--bhutan--succeeded": {
+    "bhutan-before-1948--bhutan--succeeded": {
       "from": "git",
       "versions": [
         {
@@ -137,7 +137,7 @@
             "from",
             "id"
           ],
-          "on": "2026-09-16"
+          "on": "2026-09-17"
         }
       ]
     },
@@ -633,11 +633,19 @@
         }
       ]
     },
-    "germany-prussia--weimar-republic--succeeded": {
+    "german-empire--weimar-republic--succeeded": {
       "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "aliases",
+            "from",
+            "id"
+          ],
           "on": "2026-09-17"
         }
       ]
@@ -1124,7 +1132,7 @@
         }
       ]
     },
-    "philippines-before-1886--philippines--succeeded": {
+    "philippines-before-1946--philippines--succeeded": {
       "from": "git",
       "versions": [
         {
@@ -1137,7 +1145,7 @@
             "from",
             "id"
           ],
-          "on": "2026-09-16"
+          "on": "2026-09-17"
         }
       ]
     },

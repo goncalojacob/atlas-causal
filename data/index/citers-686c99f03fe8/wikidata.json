@@ -74,21 +74,21 @@
     },
     {
       "dissent": false,
-      "id": "german-federal-republic",
-      "kind": "actor",
-      "locator": "Q713750, P571 1949-05-23"
-    },
-    {
-      "dissent": false,
-      "id": "germany-prussia",
+      "id": "german-empire",
       "kind": "actor",
       "locator": "Q43287, P571 1871-01-01"
     },
     {
       "dissent": false,
-      "id": "germany-prussia",
+      "id": "german-empire",
       "kind": "actor",
       "locator": "Q43287, P576 1918-11-09"
+    },
+    {
+      "dissent": false,
+      "id": "german-federal-republic",
+      "kind": "actor",
+      "locator": "Q713750, P571 1949-05-23"
     },
     {
       "dissent": false,
@@ -1340,13 +1340,13 @@
     },
     {
       "dissent": false,
-      "id": "germany-prussia--weimar-republic--succeeded",
+      "id": "german-empire--weimar-republic--succeeded",
       "kind": "relation",
       "locator": "Q41304, P571 1918-11-09"
     },
     {
       "dissent": false,
-      "id": "germany-prussia--weimar-republic--succeeded",
+      "id": "german-empire--weimar-republic--succeeded",
       "kind": "relation",
       "locator": "Q43287, P576 1918-11-09"
     },

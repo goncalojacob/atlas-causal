@@ -5754,7 +5754,7 @@
       ],
       "created": "2026-09-16",
       "degree": 8,
-      "id": "belize-before-1886",
+      "id": "belize-before-1981",
       "kind": "actor",
       "names": [
         "Belize"
@@ -5770,7 +5770,7 @@
         "note": "M51: joined with belize-under-united-kingdom, the same polity. The outlines either side of the 1885/1886 seam share 94.63% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1650) and the 1886 record's own end (1981); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": "2026-09-16",
+      "revised": "2026-09-17",
       "status": "active"
     },
     {
@@ -6050,7 +6050,7 @@
       ],
       "created": "2026-09-16",
       "degree": 11,
-      "id": "bhutan-before-1886",
+      "id": "bhutan-before-1948",
       "kind": "actor",
       "names": [
         "Bhutan"
@@ -6066,7 +6066,7 @@
         "note": "M51: joined with bhutan-under-united-kingdom, the same polity. The outlines either side of the 1885/1886 seam share 93.86% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1650) and the 1886 record's own end (1948); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": "2026-09-16",
+      "revised": "2026-09-17",
       "status": "active"
     },
     {
@@ -17242,6 +17242,39 @@
       ],
       "cites": [
         "cshapes-2-0",
+        "historical-basemaps",
+        "wikidata"
+      ],
+      "created": "2026-09-02",
+      "degree": 7,
+      "id": "german-empire",
+      "kind": "actor",
+      "names": [
+        "German Empire"
+      ],
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m55-germany",
+          "m55-joined"
+        ],
+        "note": "M55: this record was named \"Germany (Prussia)\" and was one record for three polities, 1886 to 1945. It is now the German Empire alone, on Wikidata’s Q43287 — P571 1871-01-01, P576 1918-11-09 — and the Weimar Republic and the Nazi state carry the rest. `germany` is merged into it: the outlines either side of the 1885/1886 seam share 98.24% of the smaller and both snapshots fall inside these dates. Its eighteen colonial dependencies all run 1886–1916 and are untouched.",
+        "status": "draft"
+      },
+      "revised": "2026-09-17",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0",
         "wikidata"
       ],
       "created": "2026-09-02",
@@ -17259,39 +17292,6 @@
           "m55-germany"
         ],
         "note": "M55: this record began in 1945, where CShapes begins drawing entity 260 — the German surrender, not a founding. It now begins 1949-05-23, which is Wikidata’s P571 on Q713750 (West Germany) and also the preferred P571 on Q183 (Germany); the citation is to Q713750, whose item covers exactly the state this record’s first CShapes periods draw. Its 1945–1949 period is flagged m55-gap: what held that ground was the Allied occupation, and the atlas has no record for it.",
-        "status": "draft"
-      },
-      "revised": "2026-09-17",
-      "status": "active"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
-        }
-      ],
-      "cites": [
-        "cshapes-2-0",
-        "historical-basemaps",
-        "wikidata"
-      ],
-      "created": "2026-09-02",
-      "degree": 7,
-      "id": "germany-prussia",
-      "kind": "actor",
-      "names": [
-        "German Empire"
-      ],
-      "origin": {
-        "tool": "cshapes"
-      },
-      "review": {
-        "flags": [
-          "m55-germany",
-          "m55-joined"
-        ],
-        "note": "M55: this record was named \"Germany (Prussia)\" and was one record for three polities, 1886 to 1945. It is now the German Empire alone, on Wikidata’s Q43287 — P571 1871-01-01, P576 1918-11-09 — and the Weimar Republic and the Nazi state carry the rest. `germany` is merged into it: the outlines either side of the 1885/1886 seam share 98.24% of the smaller and both snapshots fall inside these dates. Its eighteen colonial dependencies all run 1886–1916 and are untouched.",
         "status": "draft"
       },
       "revised": "2026-09-17",
@@ -46115,7 +46115,7 @@
       ],
       "created": "2026-09-16",
       "degree": 13,
-      "id": "philippines-before-1886",
+      "id": "philippines-before-1946",
       "kind": "actor",
       "names": [
         "Philippines"
@@ -46131,7 +46131,7 @@
         "note": "M51: joined with philippines-under-united-states-of-america, the same polity. The outlines either side of the 1885/1886 seam share 87.89% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1492) and the 1886 record's own end (1946); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence.",
         "status": "draft"
       },
-      "revised": "2026-09-16",
+      "revised": "2026-09-17",
       "status": "active"
     },
     {
@@ -49872,36 +49872,6 @@
       "authors": [
         {
           "github": null,
-          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
-        }
-      ],
-      "cites": [
-        "cshapes-2-0"
-      ],
-      "created": "2026-09-02",
-      "degree": 7,
-      "id": "russia-soviet-union",
-      "kind": "actor",
-      "names": [
-        "Russia"
-      ],
-      "origin": {
-        "tool": "cshapes"
-      },
-      "review": {
-        "flags": [
-          "m52-open"
-        ],
-        "note": "M52: this record was named \"Russia (Soviet Union)\" and was one record for three polities. It now carries the post-Soviet period alone, from 1991-12-21, which is where CShapes’ own first post-Soviet period begins and is not a founding. Its inception is an open question: Q159’s preferred P571 is 1263, and its other values are 880, 1125 and 1991-12-25 — one day before the Soviet Union’s dissolution. See docs/m52-russia.md §2.4.",
-        "status": "draft"
-      },
-      "revised": "2026-09-16",
-      "status": "active"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
           "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
         }
       ],
@@ -49929,6 +49899,36 @@
         "status": "draft"
       },
       "revised": "2026-09-16",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-02",
+      "degree": 7,
+      "id": "russian-federation",
+      "kind": "actor",
+      "names": [
+        "Russia"
+      ],
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "m52-open"
+        ],
+        "note": "M52: this record was named \"Russia (Soviet Union)\" and was one record for three polities. It now carries the post-Soviet period alone, from 1991-12-21, which is where CShapes’ own first post-Soviet period begins and is not a founding. Its inception is an open question: Q159’s preferred P571 is 1263, and its other values are 880, 1125 and 1991-12-25 — one day before the Soviet Union’s dissolution. See docs/m52-russia.md §2.4.",
+        "status": "draft"
+      },
+      "revised": "2026-09-17",
       "status": "active"
     },
     {

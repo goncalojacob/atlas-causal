@@ -1106,7 +1106,7 @@
     },
     {
       "dissent": false,
-      "id": "belize-before-1886",
+      "id": "belize-before-1981",
       "kind": "actor",
       "locator": "NAME \"Belize\""
     },
@@ -1160,7 +1160,7 @@
     },
     {
       "dissent": false,
-      "id": "bhutan-before-1886",
+      "id": "bhutan-before-1948",
       "kind": "actor",
       "locator": "NAME \"Bhutan\""
     },
@@ -3224,7 +3224,7 @@
     },
     {
       "dissent": false,
-      "id": "germany-prussia",
+      "id": "german-empire",
       "kind": "actor",
       "locator": "NAME \"Germany\""
     },
@@ -8792,7 +8792,7 @@
     },
     {
       "dissent": false,
-      "id": "philippines-before-1886",
+      "id": "philippines-before-1946",
       "kind": "actor",
       "locator": "NAME \"Philippines\""
     },
@@ -16340,31 +16340,31 @@
     },
     {
       "dissent": false,
-      "id": "belize-before-1886-1650",
+      "id": "belize-before-1981-1650",
       "kind": "presence",
       "locator": "world_1650.geojson, \"Belize\""
     },
     {
       "dissent": false,
-      "id": "belize-before-1886-1700",
+      "id": "belize-before-1981-1700",
       "kind": "presence",
       "locator": "world_1700.geojson, \"Belize\""
     },
     {
       "dissent": false,
-      "id": "belize-before-1886-1715",
+      "id": "belize-before-1981-1715",
       "kind": "presence",
       "locator": "world_1715.geojson, \"Belize\""
     },
     {
       "dissent": false,
-      "id": "belize-before-1886-1878",
+      "id": "belize-before-1981-1878",
       "kind": "presence",
       "locator": "world_1878.geojson, \"Belize\""
     },
     {
       "dissent": false,
-      "id": "belize-before-1886-1880",
+      "id": "belize-before-1981-1880",
       "kind": "presence",
       "locator": "world_1880.geojson, \"Belize\""
     },
@@ -16514,49 +16514,49 @@
     },
     {
       "dissent": false,
-      "id": "bhutan-before-1886-1650",
+      "id": "bhutan-before-1948-1650",
       "kind": "presence",
       "locator": "world_1650.geojson, \"Bhutan\""
     },
     {
       "dissent": false,
-      "id": "bhutan-before-1886-1700",
+      "id": "bhutan-before-1948-1700",
       "kind": "presence",
       "locator": "world_1700.geojson, \"Bhutan\""
     },
     {
       "dissent": false,
-      "id": "bhutan-before-1886-1715",
+      "id": "bhutan-before-1948-1715",
       "kind": "presence",
       "locator": "world_1715.geojson, \"Bhutan\""
     },
     {
       "dissent": false,
-      "id": "bhutan-before-1886-1783",
+      "id": "bhutan-before-1948-1783",
       "kind": "presence",
       "locator": "world_1783.geojson, \"Bhutan\""
     },
     {
       "dissent": false,
-      "id": "bhutan-before-1886-1800",
+      "id": "bhutan-before-1948-1800",
       "kind": "presence",
       "locator": "world_1800.geojson, \"Bhutan\""
     },
     {
       "dissent": false,
-      "id": "bhutan-before-1886-1815",
+      "id": "bhutan-before-1948-1815",
       "kind": "presence",
       "locator": "world_1815.geojson, \"Bhutan\""
     },
     {
       "dissent": false,
-      "id": "bhutan-before-1886-1878",
+      "id": "bhutan-before-1948-1878",
       "kind": "presence",
       "locator": "world_1878.geojson, \"Bhutan\""
     },
     {
       "dissent": false,
-      "id": "bhutan-before-1886-1880",
+      "id": "bhutan-before-1948-1880",
       "kind": "presence",
       "locator": "world_1880.geojson, \"Bhutan\""
     },
@@ -37568,61 +37568,61 @@
     },
     {
       "dissent": false,
-      "id": "philippines-before-1886-1492",
+      "id": "philippines-before-1946-1492",
       "kind": "presence",
       "locator": "world_1492.geojson, \"Philippines\""
     },
     {
       "dissent": false,
-      "id": "philippines-before-1886-1500",
+      "id": "philippines-before-1946-1500",
       "kind": "presence",
       "locator": "world_1500.geojson, \"Philippines\""
     },
     {
       "dissent": false,
-      "id": "philippines-before-1886-1650",
+      "id": "philippines-before-1946-1650",
       "kind": "presence",
       "locator": "world_1650.geojson, \"Philippines\""
     },
     {
       "dissent": false,
-      "id": "philippines-before-1886-1700",
+      "id": "philippines-before-1946-1700",
       "kind": "presence",
       "locator": "world_1700.geojson, \"Philippines\""
     },
     {
       "dissent": false,
-      "id": "philippines-before-1886-1715",
+      "id": "philippines-before-1946-1715",
       "kind": "presence",
       "locator": "world_1715.geojson, \"Philippines\""
     },
     {
       "dissent": false,
-      "id": "philippines-before-1886-1783",
+      "id": "philippines-before-1946-1783",
       "kind": "presence",
       "locator": "world_1783.geojson, \"Philippines\""
     },
     {
       "dissent": false,
-      "id": "philippines-before-1886-1800",
+      "id": "philippines-before-1946-1800",
       "kind": "presence",
       "locator": "world_1800.geojson, \"Philippines\""
     },
     {
       "dissent": false,
-      "id": "philippines-before-1886-1815",
+      "id": "philippines-before-1946-1815",
       "kind": "presence",
       "locator": "world_1815.geojson, \"Philippines\""
     },
     {
       "dissent": false,
-      "id": "philippines-before-1886-1878",
+      "id": "philippines-before-1946-1878",
       "kind": "presence",
       "locator": "world_1878.geojson, \"Philippines\""
     },
     {
       "dissent": false,
-      "id": "philippines-before-1886-1880",
+      "id": "philippines-before-1946-1880",
       "kind": "presence",
       "locator": "world_1880.geojson, \"Philippines\""
     },

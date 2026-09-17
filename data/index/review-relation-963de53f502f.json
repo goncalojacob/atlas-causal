@@ -183,8 +183,8 @@
         "cshapes-2-0"
       ],
       "created": "2026-09-08",
-      "from": "belize-before-1886",
-      "id": "belize-before-1886--belize--succeeded",
+      "from": "belize-before-1981",
+      "id": "belize-before-1981--belize--succeeded",
       "kind": "relation",
       "origin": {
         "tool": "cshapes"
@@ -195,7 +195,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-16",
+      "revised": "2026-09-17",
       "status": "active",
       "to": "belize",
       "type": "succeeded"
@@ -239,8 +239,8 @@
         "cshapes-2-0"
       ],
       "created": "2026-09-08",
-      "from": "bhutan-before-1886",
-      "id": "bhutan-before-1886--bhutan--succeeded",
+      "from": "bhutan-before-1948",
+      "id": "bhutan-before-1948--bhutan--succeeded",
       "kind": "relation",
       "origin": {
         "tool": "cshapes"
@@ -251,7 +251,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-16",
+      "revised": "2026-09-17",
       "status": "active",
       "to": "bhutan",
       "type": "succeeded"
@@ -1300,8 +1300,8 @@
         "wikidata"
       ],
       "created": "2026-09-17",
-      "from": "germany-prussia",
-      "id": "germany-prussia--weimar-republic--succeeded",
+      "from": "german-empire",
+      "id": "german-empire--weimar-republic--succeeded",
       "kind": "relation",
       "origin": {
         "run": "m55",
@@ -1315,7 +1315,7 @@
         "note": "M55: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-17",
       "status": "active",
       "to": "weimar-republic",
       "type": "succeeded"
@@ -2386,8 +2386,8 @@
         "cshapes-2-0"
       ],
       "created": "2026-09-08",
-      "from": "philippines-before-1886",
-      "id": "philippines-before-1886--philippines--succeeded",
+      "from": "philippines-before-1946",
+      "id": "philippines-before-1946--philippines--succeeded",
       "kind": "relation",
       "origin": {
         "tool": "cshapes"
@@ -2398,7 +2398,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-16",
+      "revised": "2026-09-17",
       "status": "active",
       "to": "philippines",
       "type": "succeeded"
@@ -3571,9 +3571,9 @@
   "schema": 1,
   "warnings": [
     {
-      "id": "bhutan-before-1886--bhutan--succeeded",
+      "id": "bhutan-before-1948--bhutan--succeeded",
       "kind": "relation",
-      "message": "the relation falls entirely outside \"bhutan-before-1886\"'s dates",
+      "message": "the relation falls entirely outside \"bhutan-before-1948\"'s dates",
       "rule": "relation-outside-actor-when"
     },
     {

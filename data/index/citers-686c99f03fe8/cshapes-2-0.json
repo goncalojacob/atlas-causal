@@ -140,7 +140,7 @@
     },
     {
       "dissent": false,
-      "id": "belize-before-1886",
+      "id": "belize-before-1981",
       "kind": "actor",
       "locator": "gwcode 80"
     },
@@ -164,7 +164,7 @@
     },
     {
       "dissent": false,
-      "id": "bhutan-before-1886",
+      "id": "bhutan-before-1948",
       "kind": "actor",
       "locator": "gwcode 760"
     },
@@ -680,6 +680,12 @@
     },
     {
       "dissent": false,
+      "id": "german-empire",
+      "kind": "actor",
+      "locator": "gwcode 255"
+    },
+    {
+      "dissent": false,
       "id": "german-federal-republic",
       "kind": "actor",
       "locator": "gwcode 260"
@@ -695,12 +701,6 @@
       "id": "german-togoland",
       "kind": "actor",
       "locator": "gwcode 460"
-    },
-    {
-      "dissent": false,
-      "id": "germany-prussia",
-      "kind": "actor",
-      "locator": "gwcode 255"
     },
     {
       "dissent": false,
@@ -1412,7 +1412,7 @@
     },
     {
       "dissent": false,
-      "id": "philippines-before-1886",
+      "id": "philippines-before-1946",
       "kind": "actor",
       "locator": "gwcode 840"
     },
@@ -1466,13 +1466,13 @@
     },
     {
       "dissent": false,
-      "id": "russia-soviet-union",
+      "id": "russian-empire",
       "kind": "actor",
       "locator": "gwcode 365"
     },
     {
       "dissent": false,
-      "id": "russian-empire",
+      "id": "russian-federation",
       "kind": "actor",
       "locator": "gwcode 365"
     },
@@ -3404,6 +3404,12 @@
     },
     {
       "dissent": false,
+      "id": "german-empire-1886",
+      "kind": "presence",
+      "locator": "fid 84"
+    },
+    {
+      "dissent": false,
       "id": "german-federal-republic-1945",
       "kind": "presence",
       "locator": "fid 90"
@@ -3473,12 +3479,6 @@
       "id": "german-togoland-1919",
       "kind": "presence",
       "locator": "fid 290"
-    },
-    {
-      "dissent": false,
-      "id": "germany-prussia-1886",
-      "kind": "presence",
-      "locator": "fid 84"
     },
     {
       "dissent": false,
@@ -5318,13 +5318,13 @@
     },
     {
       "dissent": false,
-      "id": "russia-soviet-union-1991-f",
+      "id": "russian-federation-1991-f",
       "kind": "presence",
       "locator": "fid 181"
     },
     {
       "dissent": false,
-      "id": "russia-soviet-union-2014",
+      "id": "russian-federation-2014",
       "kind": "presence",
       "locator": "fid 182"
     },
@@ -6308,7 +6308,7 @@
     },
     {
       "dissent": false,
-      "id": "belize-before-1886--belize--succeeded",
+      "id": "belize-before-1981--belize--succeeded",
       "kind": "relation",
       "locator": "gwcode 80"
     },
@@ -6320,7 +6320,7 @@
     },
     {
       "dissent": false,
-      "id": "bhutan-before-1886--bhutan--succeeded",
+      "id": "bhutan-before-1948--bhutan--succeeded",
       "kind": "relation",
       "locator": "gwcode 760"
     },
@@ -6632,7 +6632,7 @@
     },
     {
       "dissent": false,
-      "id": "philippines-before-1886--philippines--succeeded",
+      "id": "philippines-before-1946--philippines--succeeded",
       "kind": "relation",
       "locator": "gwcode 840"
     },
