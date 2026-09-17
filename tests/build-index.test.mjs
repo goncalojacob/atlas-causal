@@ -514,7 +514,7 @@ test('every hashed file the build names matches the pattern, and a record could 
     await writeIndex(dir, built);
     const written = Object.keys(await readIndex(dir));
     for (const name of Object.keys(built.files)) assert.ok(written.includes(name), `${name} was not read back`);
-    const HASHED = /^(?:(?:spine|search|sources|review|presences|core|grounds)-(?:[a-z]+-)?|(?:explanations|attributes)-(?:-?\d+--?\d+|null|[a-z]+)-|history-[a-z]+-(?:-?\d+--?\d+|null|[a-z]+)-)[0-9a-f]{12}\.json$/;
+    const HASHED = /^(?:(?:spine|search|sources|review|presences|core|grounds|territories)-(?:[a-z]+-)?|(?:explanations|attributes)-(?:-?\d+--?\d+|null|[a-z]+)-|history-[a-z]+-(?:-?\d+--?\d+|null|[a-z]+)-)[0-9a-f]{12}\.json$/;
     for (const name of written.filter((n) => n !== 'manifest.json' && !n.includes('/'))) {
       assert.ok(HASHED.test(name), name);
     }
@@ -524,7 +524,7 @@ test('every hashed file the build names matches the pattern, and a record could 
     for (const name of ['carnation-revolution-1974.json', 'core-values.json', 'attributes-1900-1999.json',
       'spine.json', 'presences-of-portugal.json', 'attributes-place-not-a-hash.json',
       'history-of-portugal.json', 'history-event-1900-1999.json',
-      'grounds.json', 'grounds-of-portugal.json']) {
+      'grounds.json', 'grounds-of-portugal.json', 'territories.json', 'territories-of-brazil.json']) {
       assert.equal(HASHED.test(name), false, name);
     }
   } finally {

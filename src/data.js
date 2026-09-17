@@ -89,6 +89,9 @@ export function createAtlas({
   // caller has the file in hand. Null is an atlas that will ask for it when a
   // lens wants it, which is every atlas in a browser.
   grounds: seededGrounds = null,
+  // And which territories each event is inside whatever the date (M54). The
+  // same discipline, the same null, a file of its own.
+  territories: seededTerritories = null,
   // Since I3, and only for an atlas built from the core: whether a record's
   // attribute shard has landed, and what `record()` must wait for before it can
   // ask for a record file with the `?v=` the shard carries (i3-brief, A2 and
@@ -665,6 +668,51 @@ export function createAtlas({
     return groundsPending;
   }
 
+  // --- and the ground whatever the date --------------------------------
+  //
+  // M54. The pass above is a question about a polity **at a time**, which is
+  // right for *what did this polity do* and wrong for the question a reader
+  // asking about a territory is actually asking: `brazil` is a CShapes record
+  // beginning in 1886 and cannot reach the landfall of 1500 by it, however
+  // close the two sit. Selecting a polity means the ground it is drawn as, and
+  // its events are every event whose place falls inside that outline — the
+  // union of its presences, with no date test on the containment at all.
+  //
+  // A second file under exactly the discipline of the first: not at load, not
+  // before a lens asks, and until it lands the answer is null rather than
+  // empty, so the lens can tell "this territory holds nothing" from "nobody
+  // has asked for the file yet".
+  let territoriesByEvent = new Map();
+  let territoriesByActor = new Map();
+  const indexTerritories = (loaded) => {
+    territoriesByEvent = loaded;
+    territoriesByActor = byActor(loaded);
+  };
+  let haveTerritories = seededTerritories !== null;
+  if (haveTerritories) indexTerritories(seededTerritories);
+  let territoriesPending = null;
+  const territoriesLoaded = () => haveTerritories;
+  const territoryOf = (id) => territoriesByEvent.get(id) ?? [];
+  const eventsInsideTerritoryOf = (id) => territoriesByActor.get(id) ?? null;
+  function loadTerritories() {
+    if (haveTerritories) return Promise.resolve(territoriesByEvent);
+    if (!territoriesPending) {
+      const file = manifest?.files?.territories;
+      const pending = (file ? fetchJson(`${dataRoot}${file}`) : Promise.resolve(null))
+        .then((loaded) => {
+          indexTerritories(decodeGrounds(loaded));
+          haveTerritories = true;
+          return territoriesByEvent;
+        })
+        .catch((error) => {
+          if (territoriesPending === pending) territoriesPending = null;
+          throw error;
+        });
+      territoriesPending = pending;
+    }
+    return territoriesPending;
+  }
+
   const presenceShards = manifest.presenceShards ?? [];
   // The years the outlines actually cover. Past the far end there is nothing
   // to draw — CShapes stops in 2019 — and drawing nothing would say the world
@@ -865,6 +913,10 @@ export function createAtlas({
     loadGrounds,
     groundOf,
     eventsOnGroundOf,
+    territoriesLoaded,
+    loadTerritories,
+    territoryOf,
+    eventsInsideTerritoryOf,
     presencesByActor,
     dependenciesOf,
     presenceShards,

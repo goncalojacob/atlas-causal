@@ -1,4 +1,7 @@
-// Which polities an event happened inside, once, at build time.
+// Which polities an event happened inside, once, at build time. Two passes:
+// the ground an actor **held at the event's own date** (M48), and the ground
+// it is **ever drawn as** (M54). Different questions — *what did this polity
+// do* and *what happened here* — and both have readers.
 //
 // The actor lens matched `event.actors` and nothing else, so selecting
 // Portugal found the eight events that name Portugal and missed the sixty
@@ -71,6 +74,34 @@ function pointOf(event, places) {
 // are 40-odd questions — and a presence whose box does not contain the point
 // is skipped before its rings are walked.
 export function buildGrounds(events, places, presences, geometryOf) {
+  return containment(events, places, presences, geometryOf, { dated: true });
+}
+
+// And the same join with the date test taken out (M54): every event whose
+// place falls inside the **union** of an actor's presences, whenever it
+// happened and whoever held the ground then.
+//
+// **A reader who clicks a territory has clicked a polygon** (the owner,
+// 17 September: "when I select a territory I can see all events that are
+// related to that territory independent of the timespan I select"). Porto
+// Seguro in 1500 is inside the outline the reader clicked, and `brazil` is a
+// CShapes record that begins in 1886, so the dated pass above cannot reach it
+// however close it sits. That is right for *what did this polity do* and wrong
+// for *what happened here*, so both are built and neither replaces the other.
+//
+// **The union is never computed.** A union of polygons is an expensive thing
+// to build and this never needs one: the only question asked of it is whether
+// a point falls inside, and a point is inside a union exactly when it is
+// inside one of the parts. So this costs what the pass above costs, minus the
+// date test — the same outlines, the same boxes, one comparison fewer — and
+// nothing has to be intersected, merged or simplified. It is also why a
+// territory that grew is not punished for growing: the 1400 outline and the
+// 1500 outline are both asked, and an event in either is on that ground.
+export function buildTerritories(events, places, presences, geometryOf) {
+  return containment(events, places, presences, geometryOf, { dated: false });
+}
+
+function containment(events, places, presences, geometryOf, { dated }) {
   const standing = [];
   for (const presence of presences) {
     if (presence.status !== 'active') continue;
@@ -83,7 +114,7 @@ export function buildGrounds(events, places, presences, geometryOf) {
   const at = (point, year) => {
     const ids = new Set();
     for (const { presence, geometry, box } of standing) {
-      if (!covers(presence.when, year)) continue;
+      if (dated && !covers(presence.when, year)) continue;
       if (box && (point[0] < box[0] || point[0] > box[2] || point[1] < box[1] || point[1] > box[3])) continue;
       if (!pointInGeometry(point, geometry)) continue;
       ids.add(presence.actor);
@@ -97,26 +128,34 @@ export function buildGrounds(events, places, presences, geometryOf) {
     return [...ids].sort();
   };
 
-  const grounds = new Map();
+  const found = new Map();
   for (const event of events) {
     if (event.status !== 'active') continue;
     const point = pointOf(event, places);
     if (!point) continue;
     const year = yearOf(event);
-    const key = `${event.place}|${year}`;
+    // Undated, the answer is a fact about the **point alone**, so it is asked
+    // once per place rather than once per place and year — fewer questions
+    // than the dated pass asks, not more.
+    const key = dated ? `${event.place}|${year}` : event.place;
     if (!answered.has(key)) answered.set(key, at(point, year));
     const ids = answered.get(key);
-    if (ids.length) grounds.set(event.id, ids);
+    if (ids.length) found.set(event.id, ids);
   }
-  return grounds;
+  return found;
 }
 
-// ─── the file ──────────────────────────────────────────────────────────────
+// ─── the files ─────────────────────────────────────────────────────────────
 //
 // An id table and integers into it, for the reason every other index file has
 // one: an actor holding ground under forty events would otherwise be its own
 // id forty times, and this file grows with the corpus. Sorted by id
 // throughout, so two builds of one dataset write one file.
+//
+// One shape for both passes, because both are the same thing — an event and
+// the polities its place is inside — and two encoders for one map would be
+// two things to keep in step. `grounds-<hash>.json` and
+// `territories-<hash>.json` are written, fetched and decoded the same way.
 
 export function encodeGrounds(grounds) {
   const actors = [...new Set([...grounds.values()].flat())].sort();

@@ -25,7 +25,7 @@ import { searchIndexFor } from '../src/search.js';
 import { attributeShardName, explanationShards, historyShardName, shardName } from '../src/explanations.js';
 import { licensingTable } from '../src/licensing.js';
 import { createAtlasFromSpine, expandSpine, presencesFromIndex, INDEX_GENERATION } from '../src/data.js';
-import { buildGrounds, encodeGrounds } from '../src/grounds.js';
+import { buildGrounds, buildTerritories, encodeGrounds } from '../src/grounds.js';
 import { readRecords, readRegions, readRegionPolygons, readRoles, readCategories, readLandFiles, readBaseLayers, readPresenceShards, readPresenceGeometry, paletteFile } from './lib/read.mjs';
 import { recordHistories, historyShards } from './lib/history.mjs';
 import { sitePages, ENTRY_DIR } from './lib/prerender.mjs';
@@ -54,8 +54,9 @@ export const TEMPLATES = ['entry.html', 'sources.html', 'narratives.html'];
 // one file per record and the last unhashed thing in the index.
 // `grounds-<hash>.json` is M48's: which polities each event happened inside,
 // read off the presence outlines once here so that no reader ever waits for a
-// point-in-polygon.
-const HASHED = /^(?:(?:spine|search|sources|review|presences|core|grounds)-(?:[a-z]+-)?|(?:explanations|attributes)-(?:-?\d+--?\d+|null|[a-z]+)-|history-[a-z]+-(?:-?\d+--?\d+|null|[a-z]+)-)[0-9a-f]{12}\.json$/;
+// point-in-polygon. `territories-<hash>.json` is M54's: the same join with no
+// date test, which is what a reader who clicks a territory is asking.
+const HASHED = /^(?:(?:spine|search|sources|review|presences|core|grounds|territories)-(?:[a-z]+-)?|(?:explanations|attributes)-(?:-?\d+--?\d+|null|[a-z]+)-|history-[a-z]+-(?:-?\d+--?\d+|null|[a-z]+)-)[0-9a-f]{12}\.json$/;
 const HASHED_DIR = /^citers-[0-9a-f]{12}$/;
 
 // Deep copy with keys sorted by UTF-16 code unit (Array.prototype.sort's
@@ -175,10 +176,24 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     }
     return null;
   };
-  const grounds = buildGrounds(topology.events, new Map(topology.places.map((p) => [p.id, p])),
-    topology.presences, outlineOf);
+  const placesById = new Map(topology.places.map((p) => [p.id, p]));
+  const grounds = buildGrounds(topology.events, placesById, topology.presences, outlineOf);
   const groundsText = grounds.size ? compact(encodeGrounds(grounds)) : null;
   const groundsName = groundsText ? `grounds-${hashOf(groundsText)}.json` : null;
+
+  // And beside it, the same join with the date test taken out (M54 §2): every
+  // event whose place falls inside the union of an actor's outlines, at any
+  // date. A reader who clicks a territory has clicked a polygon, and `brazil`
+  // — a CShapes record beginning in 1886 — cannot reach the landfall of 1500
+  // by the pass above however close it sits.
+  //
+  // Its own file and not a widening of that one: the pass above is what
+  // answers *what did this polity do*, and a reader asking that must not be
+  // handed four centuries of other people's history. Both are read from the
+  // same encoder, and neither is fetched until a lens asks (data.js).
+  const territories = buildTerritories(topology.events, placesById, topology.presences, outlineOf);
+  const territoriesText = territories.size ? compact(encodeGrounds(territories)) : null;
+  const territoriesName = territoriesText ? `territories-${hashOf(territoriesText)}.json` : null;
 
   // The split the second index cycle is for, and since I4b the whole of what
   // the index carries the graph in: the core every page loads whole, and the
@@ -354,6 +369,9 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       ...(presencesName === null ? {} : { presences: `index/${presencesName}` }),
       // And absent where no event is inside any of them, for the same reason.
       ...(groundsName === null ? {} : { grounds: `index/${groundsName}` }),
+      // M54's: the same join with no date test, so that selecting a territory
+      // answers with everything that happened on it.
+      ...(territoriesName === null ? {} : { territories: `index/${territoriesName}` }),
     },
     regions: topology.regions,
     // One box per region — [minLon, minLat, maxLon, maxLat] — so that a page
@@ -455,6 +473,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
     // Seeded for the same reason, and it is this build's own answer rather
     // than a re-read of the file it has just written.
     grounds,
+    territories,
     fetchJson: () => Promise.reject(new Error('the build has every record in hand and fetches nothing')),
   });
   const expanded = expandSpine(JSON.parse(spineText));
@@ -470,9 +489,10 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
   const unresolved = topology.events.filter((e) => e.status === 'active' && e.place && !e.region);
   return {
     pages,
-    // What the ground join found, for the line the build prints: a count the
-    // report can say without parsing the file it has just written.
+    // What the two ground joins found, for the lines the build prints: counts
+    // the report can say without parsing the files it has just written.
     grounds,
+    territories,
     // The projection the two halves are measured against, carried beside the
     // files rather than among them: it is not written any more and the report
     // below still says what the core is smaller than.
@@ -484,6 +504,7 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       ...Object.fromEntries(attributes.map(({ name, text }) => [name, text])),
       ...(presencesName === null ? {} : { [presencesName]: presencesText }),
       ...(groundsName === null ? {} : { [groundsName]: groundsText }),
+      ...(territoriesName === null ? {} : { [territoriesName]: territoriesText }),
       [sourcesName]: sourcesText,
       [reviewName]: reviewText,
       ...Object.fromEntries(shards.map(({ name, text }) => [name, text])),
@@ -719,6 +740,11 @@ async function main(argv) {
   const groundsFile = JSON.parse(built.files['manifest.json']).files?.grounds ?? null;
   const groundsBytes = groundsFile ? Buffer.byteLength(built.files[path.basename(groundsFile)], 'utf8') : 0;
   console.log(`the ground under the events: ${built.grounds.size} of ${c.events.filter((e) => e.status === 'active').length} active events are inside a dated territory, ${groundsBytes.toLocaleString('en-US')} B`);
+  // And the territorial join beside it (M54): the same events against the
+  // union of each actor's outlines, with no date test at all.
+  const territoriesFile = JSON.parse(built.files['manifest.json']).files?.territories ?? null;
+  const territoriesBytes = territoriesFile ? Buffer.byteLength(built.files[path.basename(territoriesFile)], 'utf8') : 0;
+  console.log(`the territory under the events: ${built.territories.size} of ${c.events.filter((e) => e.status === 'active').length} active events are inside some territory at some date, ${territoriesBytes.toLocaleString('en-US')} B`);
   if (siteDir) {
     await writeSite(siteDir, built.pages);
     const report = pageReport(built.pages);

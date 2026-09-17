@@ -143,17 +143,22 @@ test('an actor’s lens is what names it and what is on its ground', async () =>
   assert.ok(unnamed.some((id) => atlas.events.get(id)?.place === 'lisbon'),
     'selecting Portugal finds the events in Lisbon');
 
-  // Every event the lens keeps is there for one of the two reasons and not
-  // for some third one.
+  // Every event the lens keeps is there for one of the reasons the lens
+  // states. Three of them since M54, which added the territorial join beside
+  // this one: the closed-world check itself is in tests/territory.test.mjs,
+  // where the third reason is written down.
   for (const id of lens) {
-    assert.ok(named.has(id) || atlas.groundOf(id).includes('portugal'),
-      `${id} is in Portugal's lens for neither reason`);
+    assert.ok(named.has(id) || atlas.groundOf(id).includes('portugal') || atlas.territoryOf(id).includes('portugal'),
+      `${id} is in Portugal's lens for none of the reasons`);
   }
 });
 
+// Both files, since M54: the dated join and the territorial one are fetched
+// when a lens on an actor asks and neither is in hand before that.
 test('an atlas whose grounds have not landed is the lens as it was', async () => {
-  const atlas = await atlasOf(path.join(ROOT, 'data'), { grounds: null });
+  const atlas = await atlasOf(path.join(ROOT, 'data'), { grounds: null, territories: null });
   assert.equal(atlas.groundsLoaded(), false, 'nothing has asked for the file');
+  assert.equal(atlas.territoriesLoaded(), false, 'nor for the one beside it');
   const lens = eventsOfFocus('actor:portugal', atlas);
   const named = new Set((atlas.eventsByActor.get('portugal') ?? []).map((a) => a.event.id));
   assert.deepEqual([...lens].sort(), [...named].sort(),

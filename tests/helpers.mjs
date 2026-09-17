@@ -90,6 +90,15 @@ export async function groundsOnDisk(dataDir) {
   return decodeGrounds(JSON.parse(await readFile(path.join(dataDir, manifest.files.grounds), 'utf8')));
 }
 
+// And the same for the territorial join (M54): which territories each event is
+// inside whatever the date. Its own file and its own seed, so that a test can
+// take either away and see the lens the atlas draws without it.
+export async function territoriesOnDisk(dataDir) {
+  const manifest = JSON.parse(await readFile(path.join(dataDir, 'index', 'manifest.json'), 'utf8'));
+  if (!manifest.files?.territories) return new Map();
+  return decodeGrounds(JSON.parse(await readFile(path.join(dataDir, manifest.files.territories), 'utf8')));
+}
+
 // The atlas as the site builds it: the core and the sources index the manifest
 // names, with the citer rows and the presences seeded — and **every** attribute
 // shard, handed over rather than fetched, which is how "the core plus every
@@ -99,13 +108,13 @@ export async function groundsOnDisk(dataDir) {
 // against.
 export async function atlasOf(dataDir, options = {}) {
   const { manifest, read } = await indexOf(dataDir);
-  const [core, sources, citers, presences, grounds, attributes] = await Promise.all([
+  const [core, sources, citers, presences, grounds, territories, attributes] = await Promise.all([
     read(manifest.files.core), read(manifest.files.sources), citersOnDisk(dataDir), presencesOnDisk(dataDir),
-    groundsOnDisk(dataDir),
+    groundsOnDisk(dataDir), territoriesOnDisk(dataDir),
     Promise.all((manifest.attributeShards ?? []).map(async (shard) => ({ key: shard.key, file: await read(shard.file) }))),
   ]);
   return createAtlasFromCore({
-    manifest, core, attributes, sources: sources.sources, citers, presences, grounds, fetchJson: refuse, ...options,
+    manifest, core, attributes, sources: sources.sources, citers, presences, grounds, territories, fetchJson: refuse, ...options,
   });
 }
 
