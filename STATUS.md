@@ -9783,6 +9783,233 @@ all seven of the above.
      over 1960–2030 comes out with every title in place, the depopulation of
      1500–1997 among them. The defect is still there and still M50's.
 
+## M53 — the polities the events need, and the rule that stopped forbidding
+
+The owner selected **Brazil** and saw three events where four centuries
+belonged. M54 made the lens territorial, so the chain became *findable*; this
+milestone fixed the records underneath it. And on the same day the owner
+withdrew the rule they had given the day before: **"Forget the continuity rule,
+you can write a succession even if there is no dates continuity."**
+
+### The rule, relaxed rather than deleted
+
+M52 had made contiguity **rule 30**, a hard validator error, and retracted four
+successions to satisfy it. Rule 30 is now the warning **`succession-gap`**.
+
+The check is not deleted, because a gap is still years in which something else
+held that ground and that is worth naming. What changed is who decides: it
+**reports** and no longer **forbids**. It stopped being numbered because in
+this validator a rule is an error; a check that only reports belongs with the
+warnings, beside `relation-outside-actor-when`, which looks at the same pair
+for another reason. It warns about the same two things rule 30 refused — a
+successor beginning more than a year after its predecessor ends, and a record
+succeeded before it has ended — and still says nothing about an overlap.
+
+**The four M52 withdrew are back**: East Timor's 26 years, Zambia's 11,
+Taiwan's 4, Singapore's 3, restored from their own retracted records with the
+`retraction` block dropped, which rule 27 requires of an active record. Each
+carries its gap in its own `note`. **None of the notes names the occupant** —
+not Indonesia, not the Federation, not the Republic of China, not Malaysia —
+because naming the occupant of a gap is a historical claim and `CLAUDE.md` is
+not relaxed here. M52 was right about that and wrong only about the remedy.
+
+**No test requires contiguity any more.** M52's `data/`-wide assertion is
+deleted rather than weakened (A2), the test that a succession's dates are
+**cited** stays exactly as it was, and what replaced the deleted one asserts
+the warning fires where a gap exists — over the fixtures in
+`tests/relation-rules.test.mjs` and over `data/` in `tests/m53.test.mjs`.
+
+### What was created, and on which cited dates
+
+Every date read from Wikidata on 17 September, by item and property, and cited
+on the record. Nothing recalled.
+
+| record | QID | P571 | P576 |
+|---|---|---|---|
+| `empire-of-brazil` | Q217230 | 1822-09-07 | 1889-11-15 |
+| `russian-sfsr` | Q2184 | 1917-10-25 | 1991-12-25 |
+| `russian-republic` | Q139319 | 1917-09-01 | 1917-10-25 |
+| `kingdom-of-portugal` | Q45670 | 1139-07-25 | 1910-10-05 |
+| `saint-domingue` | Q861551 | 1626 | 1804-01-01 |
+| `captaincy-general-of-cuba` | Q2039931 | 1607-01-01 | 1898 |
+
+The first three are the brief's. **The last three are deviation 792**: the
+brief's own test — every chain event names an actor alive at its date — could
+not pass without them, because this atlas had no metropolitan Portugal before
+1886 at all, nothing French on Hispaniola, and nothing alive in Cuba between
+1782 and 1886. Twelve chain events, then two, then one had nobody to name.
+
+The Russian Republic is the one the brief said to create *if Wikidata
+answered*. It answered, and its two dates are the same instants the Empire ends
+on and the SFSR begins on, so **the 1917 gap M52 named is closed by a lookup
+and not by a judgement**: Empire → Republic → SFSR, two successions, neither
+with a gap.
+
+### Brazil's span, and the one period that moved
+
+**`brazil` is now 1889 to open**, where it was 1886 to open. 1886 is where
+CShapes begins; 1889-11-15 is the Empire's cited dissolution, taken from the
+record either side rather than invented.
+
+**One CShapes period moved, and it had to be cut to move** — deviation 793.
+Entity 140's first period runs 1886-01-01 to 1903-11-16 and spans the Empire's
+end, so it is cut at 1889-11-15: `brazil-1886` is the Empire's, 1886-01-01 to
+1889-11-15, and a new `brazil-1889` is the Republic's, 1889-11-16 to
+1903-11-16. **Both halves carry the same outline file and the same key, 57.**
+Nothing was redrawn.
+
+This departs from M52's stated method, which gave a period whole to whoever
+held the ground when it began. That holds where the two records are different
+territories. These are the same territory under two regimes, and moving the
+period whole would have given the Empire fourteen years of ground after its own
+cited death and left the Republic with none until 1903 — which is the fault
+this milestone exists to fix, now that M54 has made selecting a territory the
+way the atlas is read.
+
+**`viceroyalty-of-brazil` is now 1715 to 1815**, where it was 1715 to 1877 —
+deviation 794. 1877 is the last basemaps snapshot. Wikidata gave three answers
+and two agree: Q2088324 (Colonial Brazil) P576 1815 and Q11876909 (State of
+Brazil) P576 1815-01-01. Q2920081 carries the record's exact name, the
+viceroyalty as an *office*, and gives 1808; it is cited on the record and not
+taken, and which of the three this polygon is stays a person's decision.
+
+**Four successions were written.** Viceroyalty → Empire → Republic for Brazil,
+Empire → Republic → SFSR for Russia. Three meet exactly. **One carries a gap
+note**: `viceroyalty-of-brazil--empire-of-brazil--succeeded`, seven years,
+1815 to 1822-09-07, with Q903779 — the United Kingdom of Portugal, Brazil and
+the Algarves, 1815-12-16 to 1822-09-07 — named as what Wikidata holds for those
+years and this atlas does not.
+
+### The events that named nobody
+
+M50 wrote thirty-six chain events and left **thirty-five carrying
+`actors: []`**, because its brief asked for reachability within the chain and
+never for reachability from an actor, though M48 had just made the actor lens
+the main way to explore. That was the hole, and the test it lacked goes in
+here.
+
+| | chain events | all active events |
+|---|---|---|
+| **before** | 1 of 36 | 198 of 285 |
+| **after** | 36 of 36 | 235 of 285 |
+
+Counted the same way in both columns: **an event names at least one actor alive
+in the year it starts**. `cuban-revolution` was the one chain event that
+already did. **Fifty active events still name nobody**, every one of them
+carrying `actors: []` rather than a wrong name; none is in either chain, and
+the chain was not the only region with the fault, which is what the second
+column was measured to find out.
+
+Every entry names an actor **the event's own summary already names**, and that
+summary was written by M50 from the Wikipedia article the record cites at a
+named revision. Nothing was added to the atlas's claims about the past; what
+was added is which record each name resolves to, the role from the closed list
+in `data/roles.json`, and a note of at most 200 characters in the summary's own
+terms. No role was added.
+
+**The three stranded in 1917** — `october-revolution`, `russian-civil-war`,
+`treaty-of-brest-litovsk` — named `soviet-union`, which M52 dates from
+1922-12-30. They now name `russian-sfsr`, whose inception is the date of the
+first of them. Brest-Litovsk keeps its four other signatories.
+
+**What the reader gets.** Selecting `brazil` kept 1 event before M54 and 6
+after it; it now keeps **9**. The Empire of Brazil keeps 11, the Viceroyalty
+12, the Kingdom of Portugal 13 — a century and a half of Brazilian history that
+was reachable from nothing yesterday.
+
+### What is left open
+
+`docs/m53-polities.md` §5 lists seven, each with its question. The four gaps of
+the restored successions. Which item `viceroyalty-of-brazil` is, and its start.
+**Brazilian ground from 1815 to 1886**, which still sits on records whose own
+dates have ended — the Empire holds territory only from 1886, and re-homing the
+basemaps periods needs a decision about two datasets rather than another
+lookup. The seven years Q903779 would fill. `chinese-civil-war` (1946–1950)
+naming `taiwan` (1949–), which is **deviation 795**: the entry is kept, says it
+enters in 1949, and the event is flagged `m53-open`, because the record's own
+summary has the Nationalist government driven to Taiwan that year, so the name
+is sourced and the overlap is real; what is open is whether the CShapes record
+`taiwan` is the polity that fought from 1946, and naming the Republic of China
+needs a record of its own. The fifty events that name nobody. And the three new
+polities that hold no territory, each overlapping a record the imports drew for
+the same ground under another name — M49's question, still a person's.
+
+### Deviations
+
+792. **Three polities the brief did not name were created, because the test it
+     did name could not otherwise pass.** §2 of the brief says every chain
+     event names an actor alive at its date and that "the early Brazilian
+     events name Portugal and the colonial entity". **There is no metropolitan
+     Portugal in this atlas before 1886.** `portugal` is the CShapes record;
+     everything Portuguese either import drew before it is a colony —
+     `portuguese-brazil`, `portuguese-guinea`, `portuguese-east-africa` — with
+     no crown above them. The Caribbean chain had the same hole twice: nothing
+     French on Hispaniola at all, and nothing alive in Cuba between
+     `cuba-spain` (to 1782) and `cuba-under-spain` (from 1886), which is the
+     whole span of `the-cuban-sugar-boom`. So `kingdom-of-portugal` (Q45670),
+     `saint-domingue` (Q861551) and `captaincy-general-of-cuba` (Q2039931) were
+     written, on the same terms as the three the brief named: dates read from
+     Wikidata by item and property, cited on the record, no territory, and no
+     relation to the record the imports drew for the same ground. Twelve chain
+     events, then two, then one had nobody to name without them. The scheduled
+     prompt's "look up anything else you need rather than recalling it" is the
+     permission this took.
+
+793. **The CShapes period was cut rather than moved whole, against M52's
+     stated method, and the reason is that the two records are the same
+     ground.** M52 §2.5 gave each period to whoever held the ground when the
+     period *began* and said cutting one at a Wikidata date "would be this
+     atlas inventing a border". Entity 140's first period runs 1886-01-01 to
+     1903-11-16 and spans the Empire's dissolution on 1889-11-15. Moving it
+     whole would have given the Empire fourteen years of ground after its own
+     cited death and left the Republic with none until 1903 — the fault this
+     milestone exists to fix, now that M54 reads the atlas by territory. **Both
+     halves carry the same outline file and the same key, 57**, so nothing was
+     redrawn and no border was asserted; what was asserted is who held it,
+     which is the question. M52's reasoning holds where the two records are
+     different territories, and these are one territory under two regimes.
+
+794. **The Viceroyalty's dissolution had three answers on Wikidata and the two
+     that agree were taken.** Q2088324 (Colonial Brazil) P576 1815 and
+     Q11876909 (State of Brazil) P576 1815-01-01 agree; Q2920081, which carries
+     the record's exact name — the viceroyalty as an *office* — gives 1808 and
+     is cited on the record and not taken. The brief said to look up "the
+     colonial entity's own dissolution", and the colonial entity is what the
+     basemaps polygon draws. **The record's start was left at 1715**, the first
+     snapshot, with no item consulted for it: correcting an end and leaving a
+     start is half a job, and the half that was done is the half the brief
+     asked for. Both are listed as a person's decision.
+
+795. **`chinese-civil-war` was annotated and listed rather than fixed, and the
+     brief allowed either.** The event runs 1946 to 1950 and names `taiwan`,
+     which this atlas dates from 1949-12-08, so under the milestone's own test
+     — an actor's life overlaps the event — it is not a violation, and under
+     the stricter reading of the event's start year it is. The record's own
+     summary has the Nationalist government driven to Taiwan in 1949, so the
+     name is **sourced** and the overlap is real. The entry keeps its place,
+     its note says it enters in 1949, and the event is flagged `m53-open`.
+     What is open is whether the CShapes record `taiwan` is the polity that
+     fought from 1946, which is M49's 1886-or-1949 question again; naming the
+     Republic of China needs a record of its own and sources for it.
+
+796. **`build-index.mjs` is not the whole of what a run that writes an actor
+     must rebuild: `build-palette.mjs` is the other half.** `data/geo/palette.json`
+     is derived from the actors that hold territory, and rule 16 compares it
+     byte for byte with what `tools/build-palette.mjs` produces. Writing
+     `empire-of-brazil` and giving it a presence made the committed palette
+     stale, and `validate --index` reported it as **one error** on a tree where
+     the index itself was fresh. The amendment of 15 September names the index
+     and not the palette; both are generated from `data/` and both go stale on
+     the commit that writes a record. The order that works is palette, index,
+     validate.
+
+797. **Rule 30's number was retired, not reused.** The check became a warning
+     and warnings in this validator carry a string code, so it is
+     `succession-gap` and no rule is numbered 30 any more. `tests/relation-rules.test.mjs`
+     carries a case asserting that nothing reports under the number at all, so
+     a later milestone that wants rule 30 back has to notice that it is taking
+     a name with a history rather than the next free integer.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
