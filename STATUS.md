@@ -10026,6 +10026,192 @@ the same ground under another name — M49's question, still a person's.
      the head is green in every step, the Action's own "The index committed
      here is the one those records build" included.
 
+## M55 — Germany, split on what is cited, and one id that could not be neutral
+
+The owner, 17 September, looking at the actor chips on **World War II**:
+**"You corrected Russia, but for example here you have the same issue with
+Germany"**. The chip read **"Germany (Prussia)"**, and behind it were three
+fragments whose every boundary was a file boundary: `prussia` 1530–1877,
+`germany` 1878–1885, `germany-prussia` 1886–1945 — the German Empire, the
+Weimar Republic and the Nazi state under one record. It is the fault M52 fixed
+for `gwcode 365`, fixed the same way. `docs/m55-germany.md` is the milestone;
+this is what it cost and what it decided.
+
+### What Germany is now
+
+Every date read from Wikidata on 17 September, by item and property, re-read by
+this run before a record was written, and cited on the record. Nothing recalled.
+
+| record | name | QID | P571 | P576 |
+|---|---|---|---|---|
+| `brandenburg-prussia` | Brandenburg-Prussia | Q157367 | 1618 *(year)* | 1701 *(year)* |
+| `prussia` | Kingdom of Prussia | Q27306 | 1701-01-18 | 1918-11-09 |
+| `germany-prussia` | German Empire | Q43287 | 1871-01-01 | 1918-11-09 |
+| `weimar-republic` | Weimar Republic | Q41304 | 1918-11-09 | 1933 *(year)* |
+| `nazi-germany` | Nazi Germany | Q7318 | 1933-03-15 | 1945-05-23 |
+| `german-federal-republic` | German Federal Republic | Q713750 | 1949-05-23 | — |
+
+Two records were created, four re-dated, one merged. **No record is named
+"Germany (Prussia)" any more**, and the label is not kept as a variant either:
+it names three polities and search would offer it as one.
+
+### The id that could not be neutral
+
+M52's pattern gives the CShapes record's id to the **last** of the polities it
+conflated — `russia-soviet-union` kept its id and became post-Soviet Russia.
+Followed literally here, `germany-prussia` would have become the Nazi state.
+**It became the German Empire instead**, for two reasons that are not style.
+
+The first is measurable: **eighteen colonial presences name `germany-prussia`
+as their sovereign** — Togoland, Kamerun, German New Guinea, the Solomon
+Islands, South West Africa, Tanganyika — and all eighteen run between 1886 and
+1916. They are the Empire's ground. Giving the id to the Nazi state would have
+moved every one of them for nothing.
+
+The second is not: an id reading `germany-prussia` under a chip reading "Nazi
+Germany" puts the Prussia-to-Nazism thesis into the atlas's own URLs. That is a
+historical claim, and `CLAUDE.md`'s hardest rule is that this project does not
+make those by accident. Against the Empire the same id says what the dataset's
+label meant — Prussia-led Germany — and claims nothing.
+
+### `germany`, joined; `prussia`, corrected at both ends
+
+**`germany` (1878–1885) is joined into `germany-prussia`**, which answers a
+question M51 left open and listed in `docs/m51-overlaps.md` §5. The overlap is
+**0.9824**, re-measured from `data/` by this run rather than copied; the name
+is the same word; and both Basemaps snapshots fall inside Q43287's two dates.
+M51's only objection was that no item it found dated either side — `germany`
+came down to Q183 with seven P571 values and `germany-prussia` survived Q183,
+Q38872 and Q27306 without choosing. Q43287 is the date that was missing. The
+brief's own instruction was to join or leave and **never to split the
+difference**, and leaving would have kept a third German fragment standing over
+eight years the Empire's cited interval already covers.
+
+**`prussia` was wrong at both ends and is now Q27306's own span**, 1701–1918,
+displayed as "Kingdom of Prussia" with "Prussia" kept as a second name. What it
+held before 1701 is `brandenburg-prussia`: Wikidata **does** name and date that
+polity — Q157367, 1618 to 1701, with P1366 pointing at Q27306 — so the brief's
+"create it if Wikidata answers" applies and the succession between them is
+written on those two values.
+
+### The territory: nine moves, three cuts, nothing redrawn
+
+Seven periods moved whole and **three were cut at a cited boundary into six
+halves**, two of those three also changing hands. Nine `actor` fields changed
+and three presences were written, so **twelve records carry a placement this
+milestone decided**. Every file in `data/geo/` is byte for byte what it was: a
+cut narrows a half's `geometry.files` to the period files its own span touches
+and leaves the key alone, so the two halves of a cut period carry one outline
+between them, and a test asserts exactly that.
+
+The cut of entity 255's third period is the one with a judgement in it. It runs
+1920-02-10 to 1938-09-29 and spans **both** dates the change of state is given
+by — Q41304's dissolution of 1933, to the year, and Q7318's inception of
+1933-03-15, to the day. **It is cut at the later one**, so that no period begins
+before the actor holding it does; the cost is that the Weimar Republic's half
+runs about ten weeks past the year its own item ends in, which is M52's
+`russian-empire` case and M51's `turkey-ottoman-empire-1920` case exactly.
+
+### The successions, and the two gaps
+
+| relation | gap | what the note names |
+|---|---|---|
+| Brandenburg-Prussia → Kingdom of Prussia | none | — |
+| German Empire → Weimar Republic | none | — |
+| Weimar Republic → Nazi Germany | inside one year | the same German state, under the government that took office that winter |
+| Nazi Germany → Federal Republic | 4 years | the Allied occupation of Germany |
+
+Four written, two of them meeting exactly. **`succession-gap` fires on one** —
+the occupation — and the other is inside a single year, so the validator says
+nothing and the note carries it anyway, because a reader comparing the two
+records would otherwise find ten weeks unaccounted for. **No actor was invented
+for either gap.**
+
+**A fifth was not written, and that is a finding.** Kingdom of Prussia → German
+Empire is in the brief's chain, and on the dates the brief itself supplies the
+two are **contemporaries**: 1701–1918 against 1871–1918, forty-seven years
+together, ending on the same day. `succeeded` would say the Empire took the
+Kingdom's place while the Kingdom stood, and the atlas's own test — a successor
+may not begin before its predecessor ends, which M53's relaxation deliberately
+left standing — refuses it. The relation it wants is "a member state of the
+federation it led", which this vocabulary cannot say: rule 19 lets only an
+institution stand at the `from` end of `part-of`. It is deviation 800.
+
+### The events
+
+Thirteen active events named `germany-prussia`; three stay with the Empire,
+three go to the Weimar Republic, seven to the Nazi state. **World War II's chips
+now read "Nazi Germany", "Italy/Sardinia", "Japan", "United Kingdom", "Soviet
+Union", "United States of America", "France", "China", "Poland"** — which is
+the chip the owner was looking at when they asked for this. The Holocaust reads
+"Nazi Germany" too, as the perpetrator.
+
+Three entries name a polity the role outlives, listed rather than grown, which
+is what M52 did on the Russian side: `world-war-i`, whose German belligerent's
+cited dissolution falls **two days before the event's own end date**;
+`great-depression`, whose government runs past 1933; and `world-war-ii`, which
+ends three months after Q7318 ends the state that fought it.
+
+### What is left open
+
+Four questions, each with its material in `docs/m55-germany.md` §6: whose
+ground Basemaps draws as "Prussia" before 1618; what relation the Kingdom and
+the Empire stand in; whether the Allied occupation is one record or several;
+and when the **German Democratic Republic** begins, which still carries
+CShapes' 1945 and was left alone because re-dating it needs its own lookup and
+its own succession.
+
+### Cost
+
+`validate --index` clean, **0 errors**; the full suite **1,607 tests, all
+green, none skipped**. Four commits of records and index, in deviation 798's
+order each time.
+
+799. **The full suite was red once at HEAD before any of this, and it was a
+     browser flake.** `tests/map-browser.test.mjs`, "zoomed to Portugal, Lisbon
+     is named once and its title carries its names", failed on the baseline run
+     of `92f70568` — the branch head as M55 found it — asserting rather than
+     timing out, which is not the shape the known flakes take. Run alone the
+     same file passes 35 of 35, and it passed in both full runs afterwards. It
+     is recorded because a run that assumes a red baseline is its own doing
+     wastes an hour, and so does one that assumes it is not.
+
+800. **The brief's chain has five successions and four were written.**
+     "Kingdom of Prussia → German Empire → Weimar → Nazi Germany → the Federal
+     Republic", it says, and the first pair is the one its own date table makes
+     impossible: Q27306 runs 1701–1918 and Q43287 1871–1918, so the successor
+     begins forty-seven years before the predecessor ends. M53's amendment A1
+     relaxed the **gap** rule and said nothing about the other direction; M52's
+     test forbidding a successor that begins early is still active and was kept
+     on purpose — "an overlap explains no ground away". Writing the relation
+     would have meant weakening a standing test to fit one case, which M53 A1
+     forbids in as many words. It is listed with its question instead, which is
+     what M52 did with the 1917–1922 gap: the missing thing is a *type*, not a
+     date.
+
+801. **A join with a cited interval breaks M51's span rule, and the rule was
+     amended rather than the join bent.** `tests/m51.test.mjs` asserts that a
+     merged pair's survivor spans the 1885-side record's own start to the
+     1886-side record's own end — right for M51's nineteen, where neither side
+     had a date and the file boundaries were the only honest interval. M55's
+     join arrives with Q43287, whose dates are better than both boundaries, and
+     the survivor's end of 1945 is gone because Weimar and the Nazi state were
+     split out of it in the same commit. The test now asks the span rule only
+     of a survivor whose interval is **not** cited to a Wikidata item and
+     property. The exception is narrow and the nineteen are untouched.
+
+802. **`german-federal-republic` was re-dated although the brief only said to
+     create one "if the atlas has no post-1945 German actor".** It has one —
+     CShapes' entity 260, beginning 1945, which is the surrender and not a
+     founding. Leaving it there would have made the brief's own gap
+     arithmetic false: it says the Nazi state's end of 1945-05-23 stands
+     against **1949-05-23**, "which is the occupation", and that is only a gap
+     if the Federal Republic begins in 1949. So the record moved to Q713750's
+     P571, which is also Q183's preferred P571 — the two agree on the day,
+     which is what makes this a lookup rather than the judgement M52 refused
+     for Russia. Its 1945–1949 CShapes period is kept and flagged `m55-gap`,
+     as M52 kept and flagged the nine periods of the Russian gap.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

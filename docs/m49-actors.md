@@ -255,6 +255,13 @@ kinds, and what each needs.
 `turkey-ottoman-empire`, `persia` / `iran-persia`, and
 `sierra-leone-before-1886` / `sierra-leone-under-united-kingdom`.
 
+> Three of the seven have been settled since, each by a person reading the
+> items rather than by a sharper string comparison: `persia` / `iran-persia`
+> and `ottoman-empire` / `turkey-ottoman-empire` in M51, and
+> `germany` / `germany-prussia` in **M55**, which took `Q43287` — the German
+> Empire, P571 1871-01-01 and P576 1918-11-09 — and neither `Q183` nor
+> `Q38872` nor `Q27306`. See `docs/m55-germany.md`.
+
 > *The question:* of the items the search returned, which one is this record?
 > `iran-persia` survived `Q794` (Iran) and `Q63158027` (Qajar Iran); choosing
 > between them *is* the decision of whether the 1886 record is the Qajar state
