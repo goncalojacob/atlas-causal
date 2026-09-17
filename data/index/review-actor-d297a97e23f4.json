@@ -7005,6 +7005,37 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-17",
+      "degree": 5,
+      "id": "brandenburg-prussia",
+      "kind": "actor",
+      "names": [
+        "Brandenburg-Prussia"
+      ],
+      "origin": {
+        "run": "m55",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m55-germany"
+        ],
+        "note": "M55: written on Wikidata’s Q157367 — P571 1618, P576 1701, both to the year — because `prussia` claimed 1530 to 1877 and the Kingdom of Prussia it is named for begins 1701-01-18 on Q27306. It holds the ground Historical Basemaps draws as \"Prussia\" before that date. Two of those four periods begin before 1618 and are flagged m55-gap: the atlas has no record for the Duchy of Prussia or the Margraviate of Brandenburg, and docs/m55-germany.md §6 says so.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
@@ -47603,13 +47634,15 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
-      "degree": 8,
+      "degree": 6,
       "id": "prussia",
       "kind": "actor",
       "names": [
+        "Kingdom of Prussia",
         "Prussia"
       ],
       "origin": {
@@ -47617,11 +47650,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m55-germany"
         ],
+        "note": "M55: this record said 1530 to 1877 and both ends were file boundaries. Its interval is now Wikidata’s Q27306, P571 1701-01-18 and P576 1918-11-09. The ground it held before 1701 went to `brandenburg-prussia`, and the period that spanned the date is cut at it, outline unchanged. No succession is written to the German Empire: the two stand together for forty-seven years and end on the same day, which is not what `succeeded` says. See docs/m55-germany.md.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-17",
       "status": "active"
     },
     {

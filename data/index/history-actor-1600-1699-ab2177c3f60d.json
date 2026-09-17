@@ -2490,6 +2490,15 @@
         }
       ]
     },
+    "brandenburg-prussia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
+        }
+      ]
+    },
     "brunei-before-1886": {
       "from": "git",
       "versions": [

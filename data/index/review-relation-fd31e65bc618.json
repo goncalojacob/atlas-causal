@@ -292,6 +292,37 @@
         }
       ],
       "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-17",
+      "from": "brandenburg-prussia",
+      "id": "brandenburg-prussia--prussia--succeeded",
+      "kind": "relation",
+      "origin": {
+        "run": "m55",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m55-germany",
+          "interval-cited"
+        ],
+        "note": "M55: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "prussia",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "cshapes-2-0"
       ],
       "created": "2026-09-03",

@@ -2,6 +2,24 @@
   "citations": [
     {
       "dissent": false,
+      "id": "brandenburg-prussia",
+      "kind": "actor",
+      "locator": "Q157367, P1366 Q27306 (replaced by the Kingdom of Prussia)"
+    },
+    {
+      "dissent": false,
+      "id": "brandenburg-prussia",
+      "kind": "actor",
+      "locator": "Q157367, P571 1618"
+    },
+    {
+      "dissent": false,
+      "id": "brandenburg-prussia",
+      "kind": "actor",
+      "locator": "Q157367, P576 1701"
+    },
+    {
+      "dissent": false,
       "id": "brazil",
       "kind": "actor",
       "locator": "Q217230, P576 1889-11-15 (the Empire of Brazil’s dissolution, taken as this record’s start)"
@@ -137,6 +155,18 @@
       "id": "portuguese-democratic-movement",
       "kind": "actor",
       "locator": "Q613464"
+    },
+    {
+      "dissent": false,
+      "id": "prussia",
+      "kind": "actor",
+      "locator": "Q27306, P571 1701-01-18"
+    },
+    {
+      "dissent": false,
+      "id": "prussia",
+      "kind": "actor",
+      "locator": "Q27306, P576 1918-11-09"
     },
     {
       "dissent": false,
@@ -1241,6 +1271,24 @@
       "id": "young-turk-revolution-of-1908",
       "kind": "event",
       "locator": "Q4298662"
+    },
+    {
+      "dissent": false,
+      "id": "brandenburg-prussia--prussia--succeeded",
+      "kind": "relation",
+      "locator": "Q157367, P1366 Q27306"
+    },
+    {
+      "dissent": false,
+      "id": "brandenburg-prussia--prussia--succeeded",
+      "kind": "relation",
+      "locator": "Q157367, P576 1701"
+    },
+    {
+      "dissent": false,
+      "id": "brandenburg-prussia--prussia--succeeded",
+      "kind": "relation",
+      "locator": "Q27306, P571 1701-01-18"
     },
     {
       "dissent": false,

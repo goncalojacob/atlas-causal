@@ -38564,6 +38564,12 @@
     },
     {
       "dissent": false,
+      "id": "prussia-1701",
+      "kind": "presence",
+      "locator": "world_1700.geojson, \"Prussia\""
+    },
+    {
+      "dissent": false,
       "id": "prussia-1715",
       "kind": "presence",
       "locator": "world_1715.geojson, \"Prussia\""
