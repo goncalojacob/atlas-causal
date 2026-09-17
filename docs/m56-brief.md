@@ -71,3 +71,16 @@ checked; what remains open is listed with its question; `validate --index`
 clean; tests green; `M56 done`.
 
 ## Deviations this brief takes, numbered on from the last in `STATUS.md`
+
+## Amendment A1 — a fifth id, left by M55
+
+M55 split `germany-prussia` correctly but kept its id: that record is now
+**the German Empire, 1871–1918**, under an id naming Prussia. Add it to §2's
+renames on the same terms — a new id that says what it holds, the old id in
+`aliases`, every reference moved in one commit.
+
+**And the general rule this makes plain:** a milestone that re-dates or
+re-scopes a record must ask whether its id still describes it. M51 left four
+such ids, M55 left a fifth, and each time the data was right and the handle
+was a lie. Say so in `STATUS.md` so the next milestone of this kind checks
+before it is told to.
