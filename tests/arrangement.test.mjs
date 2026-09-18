@@ -114,10 +114,19 @@ test('an explicit lens while reading is the one that is applied', () => {
 test('what the key is allowed not to notice', () => {
   const before = state({ ...NAMED, selected: 'shared' });
   const after = state({
-    ...NAMED, selected: 'early-0', chain: [], bbox: [-10, 36, -6, 42], view: 'graph', horizon: 1955,
+    ...NAMED, selected: 'shared', chain: [], bbox: [-10, 36, -6, 42], view: 'graph', horizon: 1955,
   });
   assert.equal(arrangementOf(ATLAS, before).key, arrangementOf(ATLAS, after).key,
-    'selecting, walking and panning never move a node');
+    'walking and panning never move a node');
+});
+
+// **Selecting is not one of them since M65**: a choice is a filter now, and
+// two choices are two sets of events. A key that could not see it would leave
+// the nodes of the last choice standing under the new one.
+test('choosing a different event is a different picture, and the key says so', () => {
+  const one = arrangementOf(ATLAS, state({ ...NAMED, selected: 'shared' }));
+  const two = arrangementOf(ATLAS, state({ ...NAMED, selected: 'early-0' }));
+  assert.notEqual(one.key, two.key);
 });
 
 // The key is a function of the arrangement it is given, so it can be held to
@@ -171,8 +180,11 @@ test('what the reader is holding beyond the margin is laid out anyway', () => {
 // Otherwise selecting an event would move every node in the picture, which
 // is what the test above about panning and walking says it must not.
 test('holding something inside the band is not part of the key', () => {
+  // The same choice either way, because since M65 a different choice is a
+  // different set of events and the key must notice that (above); what is
+  // asserted here is that what is *held* inside the band is not in the key.
   const a = arrangementOf(ATLAS, state({ selected: 'early-0' }), new Set(['early-0']));
-  const b = arrangementOf(ATLAS, state({ selected: 'shared', actor: 'beta' }), new Set(['shared', 'late-0']));
+  const b = arrangementOf(ATLAS, state({ selected: 'early-0', actor: 'beta' }), new Set(['early-0', 'late-0']));
   assert.equal(a.key, b.key);
 
   // And when it is outside, two different holdings are two different keys.

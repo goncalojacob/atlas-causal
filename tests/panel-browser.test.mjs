@@ -681,7 +681,12 @@ test('the colony a state succeeded is named on its card, and opens', { skip }, a
 test('“Focus on this” becomes “stop focusing on this” without leaving the card', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await seenIntro(page);
-    await open(page, url('?selected=carnation-revolution-1974&from=1800&to=2030'));
+    // **`focus=none`**, which is the reader turning the implicit lens off
+    // (lens.js): since M65 an open event is a lens on itself, so the card
+    // would open already offering to stop. What this test is about is the
+    // control flipping without the card being thrown away, so it starts from
+    // the state where the lens is off.
+    await open(page, url('?selected=carnation-revolution-1974&focus=none&from=1800&to=2030'));
     await waitFor(page, 'return Boolean(document.querySelector(".panel .lens-control"));', 'the card to offer the lens');
     assert.equal(
       await page.eval('return document.querySelector(".panel .lens-control").textContent;'),

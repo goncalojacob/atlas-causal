@@ -29,7 +29,7 @@ import { chainEdges } from './chain.js';
 import { convergence } from './graph.js';
 import { horizonSet, SHOWN } from './horizon.js';
 import { narrativeSet } from './narrative.js';
-import { lensView } from './lens.js';
+import { lensView, restingSet } from './lens.js';
 import { categoriesOn } from './categories.js';
 
 // The eight sets, and what each one is:
@@ -49,8 +49,10 @@ import { categoriesOn } from './categories.js';
 //                 direct neighbours — or null when there is no lens
 //   lensNear      the neighbours alone, which are the ones drawn dimmed
 //   lensFocus     the focus set alone, or null when there is no lens
-//   shown         what a view draws at all: the lens narrowed by the category
-//                 toggles still on, or null when neither narrows anything.
+//   shown         what a view draws at all: the lens — or, with no lens, the
+//                 resting picture of the main events (M65) — narrowed by the
+//                 category toggles still on. Never null: there is always a
+//                 picture, and at rest it is smaller than the corpus.
 //                 The three views filter their event list by this and not by
 //                 `lens`, which stays the reader's own question
 //
@@ -115,10 +117,15 @@ function assemble(atlas, state, view) {
   // asked about a neighbourhood, and the graph draws what it kept one event to
   // a node (heldSet, `lens: true`), which a category filter over the whole
   // corpus is not.
-  const shown = lens === null
-    ? (categories ? new Set([...atlas.events.keys()].filter(inCategory)) : null)
-    : new Set([...lens].filter(inCategory));
-  const kept = (id) => !shown || shown.has(id);
+  //
+  // **And with no lens at all it is the resting picture and not the corpus**
+  // (M65). At rest a view draws the main events alone — what is part of
+  // something else is inside it and is drawn when the reader opens it. So
+  // `shown` is a set on every frame now, where it used to be `null` for "draw
+  // everything"; the three views and the masthead's count already read it, so
+  // they rest on the same smaller picture without one of them being told.
+  const shown = new Set([...(lens ?? restingSet(atlas, state))].filter(inCategory));
+  const kept = (id) => shown.has(id);
   const filter = (ids) => new Set([...ids].filter(kept));
 
   const walked = chainEdges(atlas, state.chain ?? [])
@@ -167,10 +174,10 @@ function assemble(atlas, state, view) {
     converging,
     actor,
     narrative: narrative ? filter(narrative) : null,
-    reachable: shown ? new Map([...reachable].filter(([id]) => shown.has(id))) : reachable,
+    reachable: new Map([...reachable].filter(([id]) => shown.has(id))),
     lens,
-    // What each view filters its event list by: the lens and the categories
-    // together, or null when neither narrows anything.
+    // What each view filters its event list by: the lens, or the resting
+    // picture where there is none, and the categories over either.
     shown,
     // The half of the lens that is drawn faintly: the direct causes and
     // consequences of the focus set, which are in the picture so that a
