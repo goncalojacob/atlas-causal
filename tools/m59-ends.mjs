@@ -23,6 +23,8 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { inSchemaOrder } from './lib/order.mjs';
+import { repointSpan } from './lib/span.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -59,14 +61,9 @@ export const DISSOLUTIONS = Object.freeze([
 ]);
 
 const readJson = async (file) => JSON.parse(await readFile(file, 'utf8'));
-const writeJson = async (file, value) => writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
+const writeJson = async (file, value) => writeFile(file, `${JSON.stringify(inSchemaOrder(value, 'actor'), null, 2)}\n`);
 const dedupe = (list) => [...new Set(list)];
 
-// A mesma frase que M51 teve de reapontar em nove resumos. Enquanto o `when`
-// do registo é o que os snapshots cobrem, ela é verdadeira; assim que uma data
-// citada o substitui, passaria a contradizê-lo.
-const SPAN_SENTENCE = /The interval on this record is the span those snapshots cover, (\d{4}) to (\d{4}),/;
-const repointSpan = (summary) => summary.replace(SPAN_SENTENCE, 'The span those snapshots cover is $1 to $2, and that');
 
 export async function run(dataDir, { today, dryRun = false } = {}) {
   const actorsDir = path.join(dataDir, 'actors');
@@ -86,6 +83,7 @@ export async function run(dataDir, { today, dryRun = false } = {}) {
       a.sources = [...(a.sources ?? []), { source: 'wikidata', locator: `${d.qid}, P576 ${d.value}` }];
       a.summary = repointSpan(a.summary);
       a.review = {
+        status: 'draft',
         ...(a.review ?? {}),
         flags: dedupe([...(a.review?.flags ?? []), DATED_FLAG]),
         note: `M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's ${d.qid} (${d.label}) gives P576 ${d.value}, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.`.slice(0, 500),
@@ -101,6 +99,7 @@ export async function run(dataDir, { today, dryRun = false } = {}) {
     // dizer.
     if ((a.review?.flags ?? []).includes(HORIZON_FLAG)) continue;
     a.review = {
+      status: 'draft',
       ...(a.review ?? {}),
       flags: dedupe([...(a.review?.flags ?? []), HORIZON_FLAG]),
       note: `M59: 1885 is where Historical Basemaps stops, not where this polity ended. No 1886-side record stands on this ground under any name (docs/m59-singletons.md), and Wikidata gives no dissolution this record could cite, so the end here is the horizon of the source and nothing more. The summary above says the same of the whole interval; this says it of the end, which is the number a reader would otherwise take for a fact.`.slice(0, 500),

@@ -19,6 +19,8 @@
 import { readdir, readFile, writeFile, rename } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { inSchemaOrder } from './lib/order.mjs';
+import { repointSpan } from './lib/span.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -78,7 +80,7 @@ export const JOINS = Object.freeze([
 ]);
 
 const readJson = async (file) => JSON.parse(await readFile(file, 'utf8'));
-const writeJson = async (file, value) => writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
+const writeJson = async (file, value, kind) => writeFile(file, `${JSON.stringify(kind ? inSchemaOrder(value, kind) : value, null, 2)}\n`);
 
 const dedupe = (list) => {
   const seen = new Set();
@@ -90,13 +92,6 @@ const dedupe = (list) => {
   });
 };
 
-// A frase que nove resumos de M51 já tinham de perder. Um resumo do basemaps
-// diz "the interval on this record is the span those snapshots cover, X to
-// 1885"; depois da junção o `when` do registo deixa de ser isso, e a frase
-// passaria a contradizê-lo. Passa a apontar para os snapshots, que é o que
-// sempre soube.
-const SPAN_SENTENCE = /The interval on this record is the span those snapshots cover, (\d{4}) to (\d{4}),/;
-const repointSpan = (summary) => summary.replace(SPAN_SENTENCE, 'The span those snapshots cover is $1 to $2, and that');
 
 export async function join(dataDir, { today, dryRun = false } = {}) {
   const actorsDir = path.join(dataDir, 'actors');
@@ -121,6 +116,7 @@ export async function join(dataDir, { today, dryRun = false } = {}) {
     survivor.sources = dedupe([...(survivor.sources ?? []), ...(merged.sources ?? [])]);
     survivor.revised = today;
     survivor.review = {
+      status: 'draft',
       ...(survivor.review ?? {}),
       flags: dedupe([...(survivor.review?.flags ?? []), 'm59-joined']),
       note: note.slice(0, 500),
@@ -131,14 +127,15 @@ export async function join(dataDir, { today, dryRun = false } = {}) {
     merged.supersededBy = survivorId;
     merged.revised = today;
     merged.review = {
+      status: 'draft',
       ...(merged.review ?? {}),
       flags: dedupe([...(merged.review?.flags ?? []), 'm59-joined']),
       note: `M59: merged into ${survivorId}, the same polity — ${why}. The outlines share ${percent}% of the smaller (docs/m59-singletons.md). The names, summary and licence here are this import's and stay here: the survivor carries the other import's licence and could not take them.`.slice(0, 500),
     };
 
     if (!dryRun) {
-      await writeJson(survivorFile, survivor);
-      await writeJson(mergedFile, merged);
+      await writeJson(survivorFile, survivor, 'actor');
+      await writeJson(mergedFile, merged, 'actor');
     }
     touched.push(survivorFile, mergedFile);
 
@@ -164,7 +161,7 @@ async function moveReferences(dataDir, from, to, today, dryRun) {
     if (p.actor !== from) continue;
     p.actor = to;
     p.revised = today;
-    if (!dryRun) await writeJson(full, p);
+    if (!dryRun) await writeJson(full, p, 'presence');
     moved.push(full);
   }
 
@@ -182,7 +179,7 @@ async function moveReferences(dataDir, from, to, today, dryRun) {
     r.revised = today;
     const target = path.join(relationsDir, `${id}.json`);
     if (!dryRun) {
-      await writeJson(full, r);
+      await writeJson(full, r, 'relation');
       if (renamed) await rename(full, target);
     }
     moved.push(renamed ? target : full);
@@ -197,7 +194,7 @@ async function moveReferences(dataDir, from, to, today, dryRun) {
     if (!entries.some((a) => a.actor === from)) continue;
     for (const a of entries) if (a.actor === from) a.actor = to;
     e.revised = today;
-    if (!dryRun) await writeJson(full, e);
+    if (!dryRun) await writeJson(full, e, 'event');
     moved.push(full);
   }
 
