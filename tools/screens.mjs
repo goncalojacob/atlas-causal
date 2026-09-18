@@ -363,6 +363,28 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&from=1900&to=1999&view=timeline&selected=angola-war-begins-1961',
     width: 1440, height: 900,
     what: 'the timeline with the same event chosen: the same few bars the other two views draw' },
+
+  // M64: the toggle closed and open, on the same window as M60, M61 and M65,
+  // so that five runs' pictures of the map go side by side and what differs
+  // between the last two is only the control.
+  //
+  // The first is the point of the milestone as much as the second: **closed it
+  // costs nothing**, the map is the whole pane M60 gave it, and all that is on
+  // it is one button in the corner. The second is the band over the map, with
+  // the profile under it saying where the events are — `density.js`'s own
+  // columns over what the atlas is currently showing (M65).
+  //
+  // `band=open` is the frame's, not the atlas's: the window is URL state and
+  // the toggle is not, so a shot of the band open cannot be asked for by link
+  // alone (docs/screens/frame.html).
+  { name: 'm64-map-closed', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999',
+    width: 1440, height: 900,
+    what: 'a first visit: the whole pane, and the toggle in the corner costing nothing' },
+  { name: 'm64-map-open', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&band=open',
+    width: 1440, height: 900,
+    what: 'the band open over the map: two handles to sweep, and where the events are under them' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

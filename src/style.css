@@ -1101,6 +1101,58 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .map-corner p { margin: 0; }
 .map-corner p + p { margin-top: var(--space-1); }
 
+/* --- the band over the map (M64) -------------------------------------- */
+
+/* The owner, 18 September: "There should be a toggle on the map so I can
+   choose the dates instead of a selector." M60 was right to take the strip
+   out of the bottom of the map; what it lost is that a year could be swept.
+   So the band comes back over the map, on demand, and never again as
+   furniture.
+
+   An overlay and not a row of the grid, which is the whole of "it does not
+   become the strip again": the map pane is the layout's own height open or
+   closed, and a first visit — where nothing below the toggle exists at all —
+   is exactly the picture M60 left. The container takes no clicks so that the
+   map under it is still a map; the toggle and the strip take their own. */
+.map-band {
+  position: absolute; inset-inline: 0; top: 0; z-index: 3;
+  display: flex; flex-direction: column; align-items: flex-start;
+  pointer-events: none;
+}
+.map-band > * { pointer-events: auto; }
+
+/* The toggle: quiet, in the corner, and the same kind of thing as the export
+   button opposite it — a way to ask for something, not a thing to read. It
+   sits under the band it opens, so the button and the drawing stay together. */
+.map-band-toggle {
+  order: 2; margin: var(--space-3);
+  padding: var(--space-1) var(--space-2);
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  font-family: var(--font-ui); font-size: var(--text-xs); color: var(--ink-soft); cursor: pointer;
+}
+.map-band-toggle:hover { color: var(--cobalt); border-color: var(--cobalt); }
+.map-band-toggle[aria-expanded="true"] { color: var(--cobalt); border-color: var(--cobalt); }
+.map-band-toggle:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 1px; }
+
+/* The strip itself: the width of the pane, against its top edge, under the
+   masthead's two number fields that say the same window in words. Paper rather
+   than nothing, so the coastline under it does not read as part of the
+   drawing; one hairline to say where it ends. */
+.window-strip {
+  order: 1; display: block; align-self: stretch;
+  background: var(--paper); border-bottom: 1px solid var(--line);
+  box-shadow: 0 1px 4px var(--cobalt-faint);
+}
+/* Where the events are, under the band: density.js's own columns at
+   density.js's own scale, drawn as the timeline draws its stubs and never a
+   target — a two-pixel column is not something to aim at. */
+.window-strip .stub { fill: var(--cobalt); stroke: none; pointer-events: none; }
+
+/* The one thing on the map that must stay above the band: the note saying a
+   shard of borders would not load. It is a warning, and a warning behind a
+   control the reader has just opened is a warning nobody reads. */
+.map-note { z-index: 4; }
+
 /* A large event over the ground it covers, in place of a mark it has no
    honest point for (map/layers/regions.js). Faint enough that a coastline, a
    territory and a mark are all still readable through it, and never a target:
@@ -1200,17 +1252,25 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .timeline .bracket { stroke: var(--cobalt-soft); stroke-width: 2; pointer-events: none; }
 
 /* The window of time: a shaded band under the bars, a handle at each end
-   over them. The band is the only time control the atlas has, so it is drawn
-   as a control — the handles are solid cobalt bars with a visible grip, not
-   a tint of the shading, and the keyboard focus is the atlas's own ring
-   rather than the browser's. */
-.timeline .window-band { fill: var(--cobalt); opacity: 0.07; cursor: grab; }
-.timeline .window-band:hover { opacity: 0.11; }
-.timeline .window-band:active { cursor: grabbing; }
-.timeline .window-handle { fill: var(--cobalt); opacity: 0.62; cursor: ew-resize; }
-.timeline .window-handle:hover { opacity: 0.85; }
-.timeline .window-handle:focus { outline: none; opacity: 1; stroke: var(--madder); stroke-width: 2; }
-.timeline .window-year { fill: var(--cobalt); font-size: 11px; font-weight: 600; pointer-events: none; }
+   over them. The band is drawn as a control — the handles are solid cobalt
+   bars with a visible grip, not a tint of the shading, and the keyboard focus
+   is the atlas's own ring rather than the browser's.
+
+   Two drawings carry it since M64 and there is one rule for both: the lanes,
+   and the strip a reader opens over the map (.window-strip, below). They are
+   the same elements from the same module (src/window-band.js), so a reader who
+   has learnt one band has learnt the other. */
+.timeline .window-band, .window-strip .window-band { fill: var(--cobalt); opacity: 0.07; cursor: grab; }
+.timeline .window-band:hover, .window-strip .window-band:hover { opacity: 0.11; }
+.timeline .window-band:active, .window-strip .window-band:active { cursor: grabbing; }
+.timeline .window-handle, .window-strip .window-handle { fill: var(--cobalt); opacity: 0.62; cursor: ew-resize; }
+.timeline .window-handle:hover, .window-strip .window-handle:hover { opacity: 0.85; }
+.timeline .window-handle:focus, .window-strip .window-handle:focus {
+  outline: none; opacity: 1; stroke: var(--madder); stroke-width: 2;
+}
+.timeline .window-year, .window-strip .window-year {
+  fill: var(--cobalt); font-size: 11px; font-weight: 600; pointer-events: none;
+}
 /* What year the borders on the map are from. Its own line at the top right:
    a note about the whole drawing, not about either handle. */
 .timeline .window-marker { fill: var(--ink-soft); font-size: 10.5px; font-style: italic; pointer-events: none; }

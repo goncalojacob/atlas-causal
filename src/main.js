@@ -22,6 +22,7 @@ import { esc } from './util/esc.js';
 import { createLayerControl } from './layer-control.js';
 import { createGraphFilters } from './graph-filters.js';
 import { createWindowControl } from './window-control.js';
+import { createMapBand } from './map-band.js';
 
 const params = new URLSearchParams(window.location.search);
 const fixtures = params.get('fixtures') === '1';
@@ -225,6 +226,13 @@ try {
   // view — the band is still there, on the timeline, and the two write the
   // same two fields of the state.
   createWindowControl(document.getElementById('window-control'), { atlas, state });
+  // And the same window as a band over the map, behind a toggle in its corner
+  // (M64). The two write the same `from` and `to`: typing is for when the reader
+  // knows the year, the band for when they do not and want to sweep for it with
+  // the map answering as they go. Closed on a first visit, so what this line
+  // costs at first paint is one `<button>` — the strip, its scale and its
+  // subscription are built the first time somebody opens it (map-band.js).
+  createMapBand(mapArea, { atlas, state });
   const showView = (view) => {
     const graphOn = view === 'graph';
     const timelineOn = view === 'timeline';
