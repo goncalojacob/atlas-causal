@@ -10766,6 +10766,144 @@ The ledger is `docs/m57-claims.md` and it exists to be read as a body.
      narrative**, found by title rather than by position, so the next account to
      land fails on a card that is wrong rather than on a corpus that grew.
 
+## M58 — a long event's bar stopped saying "still loading"
+
+**The oldest known defect in the atlas, and the shortest to state.** An
+attribute row was written into the shard of its record's **start** century, and
+a view fetches the shards its **window** covers. A record long enough to reach
+into the window from an earlier century was drawn — correctly, it is in the
+window — with its name in a file nobody asked for, and its bar read "still
+loading" for ever. M50 found it walking the timeline and was forbidden to fix
+it, which was right: M50 was writing records, not display. `docs/m58-brief.md`
+is the instruction and `docs/m58-shards.md` is the measurement.
+
+**It was 23 events, not two.** The brief names
+`the-atlantic-slave-trade-to-brazil` (filed in `attributes-1500-1599`, running
+to the 1860s) and `indigenous-depopulation-of-coastal-brazil` (1500 to 1997)
+because those are the two a reader happened to walk into. Counted by property —
+*a record whose interval touches a century later than the one it begins in* —
+the corpus holds **23 events, 35 edges, 1,203 actors, 13 relations, 4 tenures
+and 1 narrative: 1,279 records of 3,906, a third of the atlas.** An actor is an
+interval and most polities outlive their founding century, so this was never a
+defect about two long processes. **250 of the 1,279 have no end date at all.**
+
+**The choice, measured before anything was built.** The brief names two
+answers and `docs/m58-shards.md` prices both on this corpus:
+
+| | the index (attribute shards, gzipped) | first paint, on the window the atlas opens on | requests |
+| --- | ---: | ---: | ---: |
+| today | 114,938 B | 43,757 B | 3 |
+| **the row in every shard its span touches** | 166,127 B (+44.5 %) | **49,980 B (+14.2 %)** | **3** |
+| the window's shards plus an index of what reaches in | 148,129 B (+28.9 %) | 76,948 B (+75.9 %) | 4 |
+
+**The second answer is the smaller index and the more expensive atlas, and the
+index is not what anybody waits for.** Its file must be fetched whatever the
+window is — a reader of the 1400s would download the names of 1,279 records
+reaching across centuries they are not looking at — which is also the brief's
+own third test, *first paint fetches no more shards than today for a window
+containing no long event*, and a test that answer cannot pass. It would also be
+a second mechanism beside `attributePeriod`, with a record's row in two places
+by two different rules, and a file that grows with every long record the atlas
+will ever hold. **The first answer was taken.**
+
+**What it cost, said plainly.** `data/index/` goes from **10,586,272 B to
+10,817,447 B** (+231,175 B, +2.2 % of the directory). The attribute shards
+themselves, which are the part that moved: **486,783 B raw and 114,938 B
+gzipped, to 717,682 B and 166,127 B** — +230,899 B raw, **+51,189 B gzipped,
++44.5 %**. 2,096 rows are written more than once. The fixtures' index goes from
+81,258 B to 87,404 B.
+
+**First paint.** The atlas opens on **1900–1999** (`opensOn`, the busiest
+century), so first paint is the core and three attribute shards — the window's
+century and the two that answer no year. Before: 177,204 B raw, **43,757 B
+gzipped**, three requests. After: 207,562 B raw, **49,980 B gzipped**, three
+requests. With the core beside them, **89,997 B gzipped to 96,220 B, +6.9 %**.
+**Not one extra request, and no shard fetched that is not on screen** — the
+1900–1999 shard grew by 6 KB gzipped because 1900–1999 draws 6 KB more names
+than it could label before.
+
+**The build files a row in every century its interval touches**, and an
+interval with no end reaches into every century after it began, because that is
+already how `overlaps()` draws it: a polity that has not fallen is in every
+window after its founding. The index gained two centuries — **1200–1299 and
+1300–1399, which no record begins in** — holding the rows of the records that
+run through them; a reader there was drawn bars with no names at all before and
+is drawn names now.
+
+**Half the fix is the loader.** `attributesLoaded(id)` asked whether *the*
+shard was in hand, so a record filed in four centuries would have read as
+unloaded in three of them with its name already on the page; and eviction
+stripped every record of a dropped shard, which would have stripped records
+another loaded shard was still carrying. Both now read the filing *keys*: a
+record's attributes are in hand when any shard that carries them is, and
+eviction strips only what no loaded shard still holds. **A card still asks for
+the one century its record begins in** — a card that asked for five centuries of
+an actor's life would be holding five — and a window still asks for the shards
+it covers and no others.
+
+**Nothing a reader sees changed except the fault.** No file under `src/` draws
+anything differently; `attributes.js`, `large.js` and `timeline.js` are
+untouched. The exemption M50 left in `tests/spine-pages.test.mjs` — the bars it
+named and let through — is gone, and that browser test now asserts a name on
+**every** bar the timeline holds.
+
+**Checks.** `node tools/validate.mjs --index`: **10,632 records, 0 errors**,
+1,215 warnings — unchanged, no record was written. `node --test
+--test-timeout=120000`: **1,648 tests, 1,648 passing, 0 failures, 0 skipped**,
+of which **7 are new** in `tests/m58.test.mjs`. No new record, no historical
+claim, no runtime dependency, no build step, no map library, no token, hex
+value or type size. Nothing merged into `main`; `docs/drafts/` ignored.
+
+**What is left open.** The index grows with the corpus faster than it did: a
+record that runs through six centuries is six rows. At M42's volume the honest
+next question is whether the century is still the right period for the
+attribute shards, or whether a long record's row should be trimmed to the
+fields a *bar* needs in the centuries it only passes through. Neither is this
+milestone's to decide, and both are measurable the same way this one was.
+
+820. **The defect was 23 events and 1,279 records, not the two the brief
+     names.** Both briefs — M50's account and this one — describe it through
+     the two records a reader walked into. It is counted here by property, and
+     every test names it that way: 1,279 of 3,906 records reach past their own
+     century, of which 1,203 are actors. A suite that had listed the two ids
+     would have gone on passing over the other 1,277.
+821. **An interval with no end reaches into every century after it began**, and
+     the brief's "every shard its span touches" does not say so. 250 of the
+     1,279 have no end date — 236 actors, 13 relations, 1 event. `overlaps()`
+     already draws them in every later window, so the build files them in every
+     century to the last year the corpus names (**2026**). Reading "span" as
+     start-to-start would have left those 250 exactly as broken as before, and
+     the defect would have looked fixed.
+822. **The index gained two centuries no record begins in.** `1200-1299` and
+     `1300-1399` hold nothing but rows reaching through them. A window there
+     fetched no century shard at all before — and had nothing to name its bars
+     with — so this is the fix working and not a cost: 1,676 B apiece.
+823. **`tests/spine.test.mjs` asserted the thing that changed.** "Every record
+     is in exactly one shard, chosen by its own key" was the invariant M58
+     breaks on purpose. It was taught the new rule — every shard its span
+     touches, and no shard it does not — in the same commit as
+     `tests/m58.test.mjs`, per deviation 717's "with it or before it". Its name
+     changed with it, so a reader of the log sees which assertion moved.
+824. **Two pushed heads were red before a line of this milestone's code
+     existed, and both were flakes.** Run 836 on `860c24c1` (the claim line,
+     one line of `STATUS.md`) failed `a drag of the band leaves the open
+     explanation open and moves the horizon` with *timed out waiting for the
+     explanation*; run 837 on `983a3dd4` (the measurement document, and nothing
+     else) failed `the source card fetches its own citer file and draws the
+     rows` with *timed out waiting for the rest of the rows*. Two different
+     browser tests, two timeouts rather than assertions, on two commits that
+     changed no code at all. Written down because the next run should not read
+     a red claim commit as a broken tree.
+825. **The commit that teaches the tests is red by construction, deliberately.**
+     `f9f802b2` carries `tests/m58.test.mjs` and the two suites it changes, and
+     on a build that still files one row per record the file does not even
+     import: `attributeSpan` and `periodsTouched` do not exist yet. That is
+     deviations 711 and 717's order and the brief asks for it in as many words;
+     it is not deviation 811's red head, which was a red nobody intended. In
+     the event its own check never reported — the fix was pushed 90 seconds
+     later and `concurrency: cancel-in-progress` cancelled run 838 — so the red
+     is recorded here from the local run rather than from a check.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
