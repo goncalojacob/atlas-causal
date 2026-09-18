@@ -60,7 +60,15 @@ loads each, spreads 212–320 and 207–314) — the same within the noise of th
 measurement, which is what "not slower" honestly means here.
 
 **One behaviour is superseded and it is worth saying out loud**: the graph's
-semantic collapse (M30c) no longer fires. Deviations 883 to 889.
+semantic collapse (M30c) no longer fires.
+
+**And one thing for the owner to decide.** Because a choice now narrows the
+views, the centuries the rest of the corpus lives in are no longer fetched, so
+the first drag of the band after choosing an event asks for one — and a shard
+landing makes `panel.js` redraw the open card, which throws away the
+explanation the reader had open. That is `refresh` rebuilding rather than
+patching, it is older than this milestone, and it is now reachable in a way it
+was not before (deviation 890). Deviations 883 to 891.
 
 2026-09-18, after **M63** (`docs/m63-brief.md`, on `m0`): **the check tells the
 truth again.** It had been red since 17 September on a different browser test
@@ -12232,6 +12240,35 @@ with `docs/m62-umbrellas.md`.
      is tighter, and no zoom — not even `MAX_ZOOM` — buys the whole of its 59
      characters. Choosing it does, which is what a reader who wants to read a
      node does. M61's promise is unchanged and is asserted at the same k = 6.
+
+890. **The branch's check was red on M65's head, and it was a defect this
+     milestone uncovered rather than the load M63 spent itself on.** The one
+     test that failed for a reason — *a drag of the band leaves the open
+     explanation open and moves the horizon* — reproduces here at
+     `--test-concurrency=4` and **does not reproduce on the head before M65**
+     under the same load, which is what says it is this milestone's. The
+     mechanism: a shard landing is not a state change and `refresh` in
+     `panel.js` redraws the whole card for one, deliberately and in as many
+     words. Until M65 a chosen event left all three views drawing the corpus,
+     so the centuries the band could be dragged onto were already in hand and
+     no shard ever landed mid-drag. **Now a choice narrows the views to one
+     neighbourhood, the rest of the corpus is not fetched, and the first drag
+     of the band asks for a century — which throws away the explanation the
+     reader had open.** The test now waits for every attribute shard before it
+     marks the card, so it reads its own promise — *a state change patches the
+     card* — and not a shard arrival the panel is allowed to redraw for; not
+     one assertion changed. **The defect itself is left for the owner**: it is
+     `refresh` rebuilding an open card rather than patching it, it is older
+     than this milestone, and fixing it is a change to the panel that M65 was
+     not asked to make.
+891. **`the atlas draws its bars before the last century lands` failed on the
+     same runner and does not reproduce here at all** — not serially, not at
+     concurrency 4, not in three runs of its own suite. It is a `waitFor` that
+     ran out at 11.4 s on a 4-core runner with a browser under it, with no
+     wrong value in it, which is the shape M63 measured ten times over. It is
+     named here rather than left unsaid, because a test that fails once on the
+     runner and never here is exactly what the standing instruction to ignore
+     the check used to hide.
 
 ## M65 — choosing an event is a filter, not a highlight
 
