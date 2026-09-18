@@ -101,8 +101,17 @@ test('the three views switch, the view is in the URL, and the window does not mo
     assert.deepEqual([before.urlFrom, before.urlTo], ['1500', '1600']);
 
     const press = (view) => `document.querySelector('[data-view="${view}"]').click(); return true;`;
+    // The address bar is written on the next animation frame rather than in
+    // the click itself — a forty-frame drag of the band would otherwise be
+    // forty history calls, which is Safari's limit in two seconds (state.js,
+    // `write`). So the frame is waited for instead of assumed. Reading the URL
+    // straight after the click raced that frame and lost about one run in
+    // four, always as `the URL says graph` with the view before it still
+    // there; nothing about what is asserted changes (M63, docs/m63-load.md).
+    const frame = 'return new Promise((resolve) => { requestAnimationFrame(() => resolve(true)); });';
     for (const view of ['graph', 'timeline', 'map', 'timeline', 'graph']) {
       await page.eval(press(view));
+      await page.eval(frame);
       const shown = await page.eval(SHOWN);
       assert.deepEqual(shown.pressed, [view], `${view} is the view that is pressed`);
       assert.equal(shown[view], true, `${view} has the pane`);
