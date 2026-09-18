@@ -1,0 +1,57 @@
+{
+  "drafts": 9331,
+  "kinds": [
+    {
+      "count": 6016,
+      "file": "index/review-presence-3ea62b7f205e.json",
+      "kind": "presence"
+    },
+    {
+      "count": 34,
+      "file": "index/review-source-0e773f0f4ee2.json",
+      "kind": "source"
+    },
+    {
+      "count": 47,
+      "file": "index/review-place-78afb74c5108.json",
+      "kind": "place"
+    },
+    {
+      "count": 2349,
+      "file": "index/review-actor-145d73c521ef.json",
+      "kind": "actor"
+    },
+    {
+      "count": 303,
+      "file": "index/review-event-ad48697d21b0.json",
+      "kind": "event"
+    },
+    {
+      "count": 362,
+      "file": "index/review-edge-ae22c235897a.json",
+      "kind": "edge"
+    },
+    {
+      "count": 124,
+      "file": "index/review-relation-963de53f502f.json",
+      "kind": "relation"
+    },
+    {
+      "count": 11,
+      "file": "index/review-office-d1e402fdae69.json",
+      "kind": "office"
+    },
+    {
+      "count": 83,
+      "file": "index/review-tenure-cabba184c1b3.json",
+      "kind": "tenure"
+    },
+    {
+      "count": 2,
+      "file": "index/review-narrative-3a16993fe76e.json",
+      "kind": "narrative"
+    }
+  ],
+  "schema": 1,
+  "total": 3941
+}

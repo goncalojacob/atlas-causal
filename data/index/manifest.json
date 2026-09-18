@@ -13,7 +13,7 @@
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-44b7c6e60ced.json",
+      "file": "index/attributes-1500-1599-2e4be35b467e.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
@@ -31,19 +31,19 @@
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-9c84ad0698d3.json",
+      "file": "index/attributes-1800-1899-98cb83120f22.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-459788ef1411.json",
+      "file": "index/attributes-1900-1999-a9deaa5e14b3.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-c620c029de6b.json",
+      "file": "index/attributes-2000-2099-bae5b53476be.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
@@ -55,7 +55,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-10f554539d33.json",
+      "file": "index/attributes-place-9147c9fd6a56.json",
       "from": null,
       "key": "place",
       "to": null
@@ -861,11 +861,11 @@
   ],
   "counts": {
     "actors": 2696,
-    "edges": 329,
-    "events": 548,
-    "narratives": 1,
+    "edges": 362,
+    "events": 567,
+    "narratives": 2,
     "offices": 11,
-    "places": 42,
+    "places": 47,
     "presences": 6691,
     "regions": 5,
     "relations": 138,
@@ -879,7 +879,7 @@
       "to": 1499
     },
     {
-      "file": "index/explanations-1500-1599-ea164490755c.json",
+      "file": "index/explanations-1500-1599-32dae263bd4c.json",
       "from": 1500,
       "to": 1599
     },
@@ -894,30 +894,30 @@
       "to": 1799
     },
     {
-      "file": "index/explanations-1800-1899-b70447785230.json",
+      "file": "index/explanations-1800-1899-fa6254c3e205.json",
       "from": 1800,
       "to": 1899
     },
     {
-      "file": "index/explanations-1900-1999-9569661f9836.json",
+      "file": "index/explanations-1900-1999-ef2e0045a873.json",
       "from": 1900,
       "to": 1999
     },
     {
-      "file": "index/explanations-2000-2099-a3faf54a292f.json",
+      "file": "index/explanations-2000-2099-a8caad83845e.json",
       "from": 2000,
       "to": 2099
     }
   ],
   "files": {
-    "citers": "index/citers-686c99f03fe8",
-    "core": "index/core-178d70374a59.json",
-    "grounds": "index/grounds-7674063d04cc.json",
+    "citers": "index/citers-12342d71b57f",
+    "core": "index/core-e62c59c7bcf7.json",
+    "grounds": "index/grounds-65201373810d.json",
     "presences": "index/presences-b62f52c3618e.json",
-    "review": "index/review-a765540c1dd2.json",
-    "search": "index/search-039d021144de.json",
-    "sources": "index/sources-4776eb3a9719.json",
-    "territories": "index/territories-87874439f013.json"
+    "review": "index/review-ad4477edae2b.json",
+    "search": "index/search-0faeae77e133.json",
+    "sources": "index/sources-879c50bdcc10.json",
+    "territories": "index/territories-9325af5a58a6.json"
   },
   "historyShards": [
     {
@@ -949,21 +949,21 @@
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-66357a8fe74b.json",
+      "file": "index/history-event-1800-1899-dd180222eebd.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-b2464060fd28.json",
+      "file": "index/history-event-1900-1999-4039a9a1481c.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
       "to": 1999
     },
     {
-      "file": "index/history-event-2000-2099-8b8383d8d717.json",
+      "file": "index/history-event-2000-2099-d485dbf67eef.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "event",
@@ -977,7 +977,7 @@
       "to": 1499
     },
     {
-      "file": "index/history-edge-1500-1599-f526f1834ce8.json",
+      "file": "index/history-edge-1500-1599-79503ec884f4.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "edge",
@@ -998,21 +998,21 @@
       "to": 1799
     },
     {
-      "file": "index/history-edge-1800-1899-d91bce31396f.json",
+      "file": "index/history-edge-1800-1899-c8584cfdc3d9.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "edge",
       "to": 1899
     },
     {
-      "file": "index/history-edge-1900-1999-d83cad7db8ca.json",
+      "file": "index/history-edge-1900-1999-6aa9f3a5d151.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "edge",
       "to": 1999
     },
     {
-      "file": "index/history-edge-2000-2099-f4364d226a61.json",
+      "file": "index/history-edge-2000-2099-ca9d883690d6.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "edge",
@@ -1082,7 +1082,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-49a1a630ea67.json",
+      "file": "index/history-place-place-2d78905e5bf6.json",
       "from": null,
       "key": "place",
       "kind": "place",
@@ -1143,6 +1143,13 @@
       "key": "2000-2099",
       "kind": "tenure",
       "to": 2099
+    },
+    {
+      "file": "index/history-narrative-1500-1599-cab9f24349ed.json",
+      "from": 1500,
+      "key": "1500-1599",
+      "kind": "narrative",
+      "to": 1599
     },
     {
       "file": "index/history-narrative-1900-1999-5d46152b952c.json",
