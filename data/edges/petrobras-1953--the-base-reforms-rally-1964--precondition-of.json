@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "petrobras-1953--the-base-reforms-rally-1964--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Reformas de base\", revision 72119911"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Petrobras\", revision 72337059"
+    }
+  ],
+  "from": "petrobras-1953",
+  "to": "the-base-reforms-rally-1964",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "One of the three decrees Goulart announced from the platform at the Central do Brasil expropriated the remaining private refineries in favour of Petrobras. The company created in 1953 is what that decree expanded and what it expanded into; without the monopoly of 1953 there is nothing for the refineries to be expropriated in favour of.",
+  "dispute": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "the-base-reforms-rally-1964",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Reformas de base\", revision 72119911"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"João Goulart\", revision 1366723860"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
+    }
+  ],
+  "title": "The base reforms rally at the Central do Brasil, 1964",
+  "summary": "On 13 March 1964 João Goulart held a rally at the Central do Brasil station in Rio de Janeiro and announced the decrees of the base reforms: the SUPRA decree expropriating rural properties over five hundred hectares within ten kilometres of federal roads, and areas over thirty hectares beside publicly financed dams and irrigation works, and the expropriation of the private refineries in favour of Petrobras. With the message to Congress on the 15th it marked, on Wikipedia’s account, the end of conciliation: the president had opted for confrontation at the end of February and meant to hold rallies until a general strike on 1 May. The opposition answered in kind — Ademar de Barros demanding impeachment on the 15th, the March of the Family with God for Liberty on the 20th, the sailors’ revolt on the 25th.",
+  "when": {
+    "start": 1964,
+    "end": 1964,
+    "date": "1964-03-13"
+  },
+  "place": "rio-de-janeiro",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the Goulart government, which decreed the reforms from the platform"
+    }
+  ],
+  "names": [
+    "Comício da Central do Brasil",
+    "Comício das reformas de base"
+  ],
+  "region": null
+}

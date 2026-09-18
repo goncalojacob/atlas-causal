@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "the-brazilian-debt-crisis-1982",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Latin American debt crisis\", revision 1356110819"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazilian Miracle\", revision 1349557960"
+    }
+  ],
+  "title": "The debt crisis and the lost decade, 1982",
+  "summary": "The borrowing that had paid for the miracle became the debt that ended it. Between 1975 and 1982 Latin American debt to commercial banks grew at a cumulative 20.4 per cent a year, and after the oil shock of 1973 the military government borrowed ever more heavily from international lenders; by the end of the decade Brazil carried the largest debt in the world, about ninety-two billion dollars. Growth ended with the energy crisis of 1979 and gave way to recession and hyperinflation. When the region reached the point where foreign debt exceeded earning power and could not be repaid, the decade that followed took the name it still has, *La Década Perdida*. Inflation in Brazil reached 239 per cent in 1983.",
+  "when": {
+    "start": 1982,
+    "end": 1989
+  },
+  "place": "brasilia",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "debtor",
+      "note": "borrowed to grow and could not repay; the largest foreign debt in the world by 1980"
+    }
+  ],
+  "names": [
+    "Crise da dívida",
+    "Década perdida"
+  ],
+  "region": null
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-1930-revolution-and-the-vargas-era--companhia-siderurgica-nacional-1941--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Companhia Siderúrgica Nacional\", revision 1369475395"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Companhia Siderúrgica Nacional\", revision 72948718"
+    }
+  ],
+  "from": "the-1930-revolution-and-the-vargas-era",
+  "to": "companhia-siderurgica-nacional-1941",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The company was created by decree of Getúlio Vargas during the Estado Novo, its shares authorised by decree-laws of January and April 1941, and Vargas greeted it in 1943 as the symbol of Brazil’s economic emancipation. A state steelworks financed abroad is the Estado Novo’s own instrument and not something that happened during it.",
+  "dispute": null
+}

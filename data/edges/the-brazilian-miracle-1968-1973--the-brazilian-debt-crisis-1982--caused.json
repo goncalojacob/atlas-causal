@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-brazilian-miracle-1968-1973--the-brazilian-debt-crisis-1982--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazilian Miracle\", revision 1349557960"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Latin American debt crisis\", revision 1356110819"
+    }
+  ],
+  "from": "the-brazilian-miracle-1968-1973",
+  "to": "the-brazilian-debt-crisis-1982",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The growth was borrowed. To fuel it Brazil needed ever more imported oil, and after the shock of 1973 the military government borrowed increasingly from international lenders until the debt was unmanageable; by the end of the decade it was the largest in the world, about ninety-two billion dollars. Growth ended with the energy crisis of 1979 and gave way to recession and hyperinflation.",
+  "dispute": null
+}

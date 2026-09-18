@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "companhia-siderurgica-nacional-1941--petrobras-1953--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Companhia Siderúrgica Nacional\", revision 1369475395"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Petrobras\", revision 72337059"
+    }
+  ],
+  "from": "companhia-siderurgica-nacional-1941",
+  "to": "petrobras-1953",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The second state company follows the first, and the argument for it was the argument the first had won: a strategic industry Brazil could not finance privately should be held by the state. CSN was created by Vargas’s decree and owned by the state for fifty years; Petrobras was created by a law Vargas sanctioned, against a draft statute of 1948 that would have opened oil to private capital at a time when world production was dominated by the Seven Sisters. `inspired` and not `caused`: what carried Law 2,004 was the campaign in the streets, and the precedent is what it had to point at.",
+  "dispute": null
+}

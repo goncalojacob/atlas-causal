@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "profit-remittance-law-1962",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Reformas de base\", revision 72119911"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"João Goulart\", revision 1366723860"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
+    }
+  ],
+  "title": "The profit remittance law, 1962",
+  "summary": "Law 4,131 of 3 September 1962 restricted the remittance abroad of profits on foreign capital to a maximum of ten per cent a year on the capital invested, excluding profits reinvested and capitalised inside the country. It was the fiscal limb of João Goulart’s base reforms: multinationals were to reinvest in Brazil rather than send the money home. Wikipedia’s account says the law changed the accounting of the large foreign companies outright, and that returns had been running far above the capital invested. It is the sharpest economic fact in this part of the story, and it is named first among the reasons Wikipedia gives for the deterioration of relations between Brasília and Washington. The decree regulating it, 53,451, was signed in 1964.",
+  "when": {
+    "start": 1962,
+    "end": 1962,
+    "date": "1962-09-03"
+  },
+  "place": "brasilia",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the state that capped what foreign companies could send home"
+    }
+  ],
+  "names": [
+    "Lei de Remessa de Lucros",
+    "Lei nº 4.131/1962"
+  ],
+  "region": null
+}

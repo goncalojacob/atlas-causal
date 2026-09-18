@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "1964-brazilian-coup-detat--the-brazilian-miracle-1968-1973--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazilian Miracle\", revision 1349557960"
+    }
+  ],
+  "from": "1964-brazilian-coup-detat",
+  "to": "the-brazilian-miracle-1968-1973",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "After the coup the military was more concerned with political control and left economic policy to a group of trusted technocrats under Delfim Netto, and the model that followed rested on low wages, rising exports and inflows of foreign capital — three things a government answerable to an electorate would have found harder to hold together. James Petras’s reading, which Wikipedia carries, makes the seizure of power and the system of military-police control part of what the growth was built on. `enabled`: the regime did not produce ten per cent a year by decree, but it is what made that particular model available.",
+  "dispute": null
+}

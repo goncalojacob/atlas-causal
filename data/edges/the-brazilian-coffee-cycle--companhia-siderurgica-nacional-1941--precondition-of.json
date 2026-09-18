@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-brazilian-coffee-cycle--companhia-siderurgica-nacional-1941--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Companhia Siderúrgica Nacional\", revision 72948718"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Companhia Siderúrgica Nacional\", revision 1369475395"
+    }
+  ],
+  "from": "the-brazilian-coffee-cycle",
+  "to": "companhia-siderurgica-nacional-1941",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The steelworks stands where the coffee was. Colonel Macedo Soares, who chaired the commission studying where to put a large mill, argued for the Paraíba valley, which had fallen into decadence with the decline of coffee in Rio de Janeiro state, and had the support of Amaral Peixoto, then interventor there. The claim is narrow and is meant to be: not that coffee produced steel, but that the ground the first industrial plant was set on had been cleared by the end of the crop that came before it.",
+  "dispute": null
+}

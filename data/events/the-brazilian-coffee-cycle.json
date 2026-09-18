@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "the-brazilian-coffee-cycle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Coffee production in Brazil\", revision 1371259594"
+    }
+  ],
+  "title": "The Brazilian coffee cycle",
+  "summary": "Coffee reached Rio de Janeiro in 1770 and was grown for the house until American and European demand turned it into an export. The first boom ran from the 1830s to the 1850s, and by that decade coffee was Brazil’s largest export and two fifths of world production. The second ran from the 1880s to the 1930s — the café com leite years, named for the dominant industries of the two largest states, coffee in São Paulo and dairy in Minas Gerais — and by the early twentieth century coffee was 16 per cent of gross national product and three quarters of export earnings. The first boom was worked by enslaved people; the second by Italian, Spanish and Japanese immigrants, the railways built to carry the beans, and a São Paulo that grew from thirty thousand people in the 1850s to a million in the 1930s. The government answered overproduction with valorisation — buying the harvest to hold the price up — from the Taubaté Agreement of February 1906 onward. In the 1920s Brazil supplied four fifths of the world’s coffee.",
+  "when": {
+    "start": 1830,
+    "end": 1930
+  },
+  "place": "sao-paulo",
+  "actors": [
+    {
+      "actor": "empire-of-brazil",
+      "role": "government",
+      "note": "the state the first boom belonged to, and whose principal export coffee had become by the 1830s"
+    },
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the republic of the café com leite years, whose valorisation schemes held the price up from 1906"
+    }
+  ],
+  "names": [
+    "Ciclo do café"
+  ],
+  "region": null
+}

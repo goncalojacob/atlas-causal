@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "the-amazon-rubber-boom--the-end-of-the-amazon-rubber-monopoly--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Amazon rubber cycle\", revision 1373636077"
+    }
+  ],
+  "from": "the-amazon-rubber-boom",
+  "to": "the-end-of-the-amazon-rubber-monopoly",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "There is no monopoly to lose until something has made one. The boom is what built the extractive trade, the towns, the railway and the market position, and the position is exactly what plantation latex took away: a commodity gathered from wild trees scattered through forest could not be produced at the cost of one grown in rows. The two are one record split at the point the price fell.",
+  "dispute": null
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "companhia-siderurgica-nacional-1941--us-air-bases-in-the-brazilian-northeast-1942--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazil in World War II\", revision 1373489318"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Getúlio Vargas\", revision 1373660809"
+    }
+  ],
+  "from": "companhia-siderurgica-nacional-1941",
+  "to": "us-air-bases-in-the-brazilian-northeast-1942",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The hinge of the whole narrative: strategic commodities and strategic ground exchanged for industrial capital. Wikipedia states the sequence — in 1942, following the American proposal to finance the CSN, United States forces established air bases along Brazil’s north-eastern coast — and states the bargain: in exchange for raw materials the United States provided equipment, technical assistance and financing for a Brazilian steel mill, settled in July 1940. Roosevelt’s Good Neighbor policy is where the financing sat, and reports at the time said the United States had a plan to invade the Northeast if Vargas insisted on neutrality. What Brazil bought with the Atlantic narrows was the plant at Volta Redonda.",
+  "dispute": null
+}

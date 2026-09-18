@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "the-end-of-the-amazon-rubber-monopoly",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Amazon rubber cycle\", revision 1373636077"
+    }
+  ],
+  "title": "The end of the Amazon rubber monopoly, 1912",
+  "summary": "The Amazon lost the rubber trade to plantations grown from its own seed. Henry Wickham had taken seeds out of Brazil in 1876; the British government planted them in Malaysia, Ceylon and tropical Africa, and by 1899 Ceylon alone had between fifteen hundred and sixteen hundred acres under rubber. Plantation latex could be produced with greater efficiency and productivity than latex tapped from wild trees scattered through forest, so it cost less, and with the lower price the British Empire took the world rubber market. The railway finished in 1912 arrived too late; the price fell and the first boom closed the same year. This is the shape of the thesis in one commodity: what Brazil sold was decided elsewhere, and so was when it stopped selling it.",
+  "when": {
+    "start": 1912,
+    "end": 1912
+  },
+  "place": "manaus",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the state whose export was undercut, and whose railway opened into the fall"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "government",
+      "note": "the empire whose colonial plantations, grown from seed taken out of Brazil in 1876, took the market"
+    }
+  ],
+  "names": [
+    "Fim do monopólio da borracha amazônica"
+  ],
+  "region": null
+}

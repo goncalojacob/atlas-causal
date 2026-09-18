@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "1964-brazilian-coup-detat--operation-brother-sam-1964--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Brother Sam\", revision 1372915756"
+    }
+  ],
+  "from": "1964-brazilian-coup-detat",
+  "to": "operation-brother-sam-1964",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The operation was activated when the coup broke out. The task force was ordered out on 31 March and the Forrestal left Norfolk on 1 April; when Castelo Branco told Lincoln Gordon that logistical support would not be needed the order to disband came, at 17:22 on the 2nd. Read in this direction the edge says only what the record supports — the American movement followed the Brazilian one and was called off by it. What the Americans were answering, and why, is the disputed link into this same event.",
+  "dispute": null
+}

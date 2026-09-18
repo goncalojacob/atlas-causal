@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-amazon-rubber-boom--the-rubber-battle-1942--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Amazon rubber cycle\", revision 1373636077"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rubber soldiers\", revision 1276596979"
+    }
+  ],
+  "from": "the-amazon-rubber-boom",
+  "to": "the-rubber-battle-1942",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The second boom went back to the forests the first had opened and found them nearly empty: after the first collapse no more than thirty-five thousand workers remained in the region, against the hundred thousand men the wartime quota needed. The tapping paths, the river towns and the trade’s whole apparatus were the first boom’s; what 1942 had to supply was the labour, and it took it from the Northeast by conscription.",
+  "dispute": null
+}

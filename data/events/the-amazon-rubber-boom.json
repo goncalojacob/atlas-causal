@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "the-amazon-rubber-boom",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Amazon rubber cycle\", revision 1373636077"
+    }
+  ],
+  "title": "The Amazon rubber boom",
+  "summary": "Between 1879 and 1912 latex from Hevea brasiliensis made the Amazon basin, for a generation, the supplier of a commodity the industrial world could not do without. It built Manaus and Belém and the towns along the rivers, drew migrants from the drought-stricken Northeast, and was extracted by forced indigenous labour on a scale Wikipedia’s account describes as amounting to genocide: slavery and systematic brutality were widespread, and in some areas ninety per cent of the native population was destroyed. One estate began with fifty thousand indigenous workers and was found with eight thousand alive. The Madeira–Mamoré railway, built to carry the rubber out past the falls, was completed on 30 April 1912 and was no longer profitable when it opened.",
+  "when": {
+    "start": 1879,
+    "end": 1912
+  },
+  "place": "manaus",
+  "actors": [
+    {
+      "actor": "empire-of-brazil",
+      "role": "government",
+      "note": "the state the boom began under, and whose Amazonian provinces the rubber came from"
+    },
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the republic that held the basin for most of the boom and fought the Acre question over it"
+    }
+  ],
+  "names": [
+    "Ciclo da borracha"
+  ],
+  "region": null
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "companhia-siderurgica-nacional-1941--the-rubber-battle-1942--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Companhia Siderúrgica Nacional\", revision 1369475395"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Amazon rubber cycle\", revision 1373636077"
+    }
+  ],
+  "from": "companhia-siderurgica-nacional-1941",
+  "to": "the-rubber-battle-1942",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Both sit inside the same agreement. The steelworks was created after the Washington Accords between the Brazilian and American governments, and it is under the Washington Accords that Brazil undertook to raise Amazon latex production from eighteen thousand to forty-five thousand tons a year. The accords are the instrument in which what Brazil supplied and what Brazil received were written on the same page, and the steel side of it came first.",
+  "dispute": null
+}
