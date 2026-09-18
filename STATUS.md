@@ -11351,11 +11351,28 @@ say so" asks for.
      §1's "done when" names `m45-ground-iberia.png` and `m45-ground-alps.png`;
      the run was asked for three zooms under `m45a-*`. Both pictures the brief
      names exist, under the sub-run's own prefix, with two more beside them.
-844. **One browser test timed out in the full run and passed on its own.**
-     `a drag of the band leaves the open explanation open and moves the
-     horizon`, in `tests/panel-browser.test.mjs` — a timeout and not an
-     assertion, on a file this run did not touch, and one of the four M58 named
-     in deviation 826. 26 of 26 on the re-run with no change.
+844. **The branch's check is red, it was red before M45a, and it is the whole
+     browser suite under load rather than one test.** The head's `validate` run
+     fails on `a drag of the band leaves the open explanation open and moves
+     the horizon` (`tests/panel-browser.test.mjs`) — a `waitFor` timeout and
+     never a wrong value. **Run 843 is the proof it is not this milestone's**:
+     it was M59's own claim commit, `e1d7b0be`, one appended line in
+     `STATUS.md` and no code at all, and it failed on that same test with that
+     same message. Runs 841, 842, 844, 848 and 864 are red across M58's and
+     M59's commits too.
+     Four full local runs on this head, nothing changed between them, dropped a
+     different test each time: the explanation twice, `zoomed to Portugal,
+     Lisbon is named once` once, and one run clean at 1,666 of 1,666 — which is
+     deviation 826's finding arriving again, naming two of its own four.
+     **The obvious patch was tried and is the wrong one.** With that one wait
+     raised to `{ tries: 400 }` the explanation test passed and the Lisbon
+     label test dropped in its place: raising a bound moves the failure rather
+     than removing it. It was reverted and nothing was pushed. Every one of
+     these is a timeout on something fetched after load, with several headless
+     Chromiums contending for two cores, so what wants fixing is how many
+     browsers `tests/browser.mjs` runs at once — a change to the whole
+     repository's test harness, deliberately nobody's to make in passing, and
+     recorded here instead. Said once on pull request #1 as well.
 845. **The base map's own numbers had drifted from the brief's.** §0 records
      5.89 MB and `data/geo` at 10.95 MB; measured at this run's start they were
      5.93 MiB and 14.33 MiB, because M43a's historical basemaps and M44's
