@@ -10650,6 +10650,40 @@ them is drawn under M48's degree floor of 2; the densest are
 `the-impeachment-of-dilma-rousseff-2016` at four. Petrobras is the record that
 carries the fourth movement, sixty-one years after the law that created it.
 
+### Checks
+
+`node tools/validate.mjs --index`: **10,632 records, 0 errors**, 1,215
+warnings — the same warning count as before this milestone, the nineteen events
+and thirty-three edges having tripped none. `node --test --test-timeout=120000`:
+**1,641 tests, 1,641 passing, 0 failures, 0 skipped**, of which **25 are new**,
+all in `tests/m57.test.mjs`; four existing suites were amended rather than added
+to (deviations 816 to 819). No test pins a count of events or edges.
+
+Records committed first, then the index rebuilt and committed (deviation 798).
+Events and their edges land in the same commit throughout — the fault M50
+exists to cure. The only files outside `data/` and `docs/` this milestone
+touched are its own suite and the four it corrected; **`src/` is untouched.**
+Nothing merged into `main`; `docs/drafts/` ignored.
+
+### What is left open
+
+**The eleven pairs at five hops**, above, and whether the brief's reading or
+this one is the right one — deviation 812 is the place to argue with it.
+
+**The narratives page says "listed under both" about an account that crosses
+six.** `who-was-buying` runs 1530 to 2023, so the page lists it under six
+centuries. That is the page's own rule working, but the sentence under the
+heading — *"arranged by the centuries they cross, an account that crosses two
+listed under both"* — was written when the widest narrative crossed two. It is
+in `src/narratives/list.js` and this milestone was under instruction to make no
+display change, so it is left for the owner rather than reworded here. Whether
+six cards for one narrative is what the page should do at all is the same
+question one level up.
+
+**Every record this milestone wrote is `review.status: draft`**, flagged
+`m57-narrative`, and no historical claim in any of it was checked by a person.
+The ledger is `docs/m57-claims.md` and it exists to be read as a body.
+
 ### Deviations
 
 812. **The brief's first test is applied per movement and not across all four,
@@ -10718,6 +10752,19 @@ carries the fourth movement, sixty-one years after the law that created it.
      The rule that would have caught both is the same — before committing
      records, run every suite, not the milestone's — and it is cheap: the full
      run takes about three and a half minutes.
+
+818. **The claims commit carried `STATUS.md` and `docs/history/pr-sections.md`
+     without saying so.** `c97c3cfa` was staged with `git add -A` while those
+     two were already written and unstaged, so a commit whose message is about
+     four corrected test suites also carries this milestone's account. Nothing
+     is wrong in the tree and the history is pushed, so it is written down here
+     rather than rewritten.
+819. **`tests/narratives-page.test.mjs` and `tests/narratives-browser.test.mjs`
+     asserted that `data/` holds one narrative.** Writing a second broke three
+     assertions in them, which is the same class as 816: a test that names the
+     shape of the corpus is a reference to it. Both now hold **one card per
+     narrative**, found by title rather than by position, so the next account to
+     land fails on a card that is wrong rather than on a corpus that grew.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
