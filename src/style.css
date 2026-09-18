@@ -1029,7 +1029,14 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
 .graph .ring.in-horizon.mid { opacity: 0.72; }
 .graph .ring.in-horizon.far { opacity: 0.45; }
 .graph .ring.in-horizon.on-path, .graph .ring.in-horizon.selected { opacity: 1; }
-.graph .node-label { fill: var(--ink); font-family: var(--font-ui); paint-order: stroke; stroke: var(--paper); stroke-width: 3; pointer-events: none; }
+/* The halo behind a label: paper under the letters, so a name is readable
+   over a line or a mark. `vector-effect` for the reason `.graph .node` above
+   carries it — a stroke inside the group the zoom scales grows with the
+   picture, and the letters do not (M61), so the band round them swelled as
+   the reader went in until it began eating what it exists to hold apart. The
+   3 is the width on screen now and at every zoom, which is what it was always
+   meant to be. */
+.graph .node-label { fill: var(--ink); font-family: var(--font-ui); paint-order: stroke; stroke: var(--paper); stroke-width: 3; vector-effect: non-scaling-stroke; pointer-events: none; }
 .graph .node-label.selected { fill: var(--madder); font-weight: 600; }
 /* The key — in the corner of the graph, and again in about.html — is drawn
    with the same rules as the lines it explains, so the two cannot drift

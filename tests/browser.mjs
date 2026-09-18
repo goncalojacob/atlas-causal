@@ -139,7 +139,10 @@ export async function connect(wsUrl) {
 // 551 × 1191 — and what these tests need is the width the brief names, laid
 // out under a finger. The touchscreen comes from setTouchEmulationEnabled,
 // which is a separate thing and works either way.
-export async function withBrowser(fn, { device = null, touch = false } = {}) {
+//
+// `args` are extra flags for the browser itself, for the one thing a suite may
+// need that no other should have: see the note at the flag list below.
+export async function withBrowser(fn, { device = null, touch = false, args = [] } = {}) {
   const port = await freePort();
   const server = createServer({ port });
   // What the close below is waiting on, when it waits: `server.close()` stops
@@ -184,6 +187,13 @@ export async function withBrowser(fn, { device = null, touch = false } = {}) {
     // viewport to the window it was given, and a phone inside an 800 × 600
     // window comes out neither 390 wide nor 844 tall.
     ...(device ? [`--window-size=${device.width},${device.height}`] : []),
+    // What one suite needs of the browser and no other should carry: the halo
+    // tests ask for `--disable-lcd-text`, because subpixel-antialiased text
+    // puts a blue fringe down the right of every stem and a blue fringe cannot
+    // be told from the cobalt line the halo is holding off (M66). A flag here
+    // rather than in the list above, so a test that reads pixels does not
+    // change how every other test's page is rasterised.
+    ...args,
     `--remote-debugging-port=${debugPort}`, `--user-data-dir=${profile}`,
     'about:blank',
   ], { stdio: ['ignore', 'pipe', 'pipe'] });
