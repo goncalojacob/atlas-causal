@@ -127,4 +127,89 @@ name fits in that.
 
 ## 5. After
 
-Filled in by the commit that lands the rule.
+The same measurement, same page, same three zooms, same mark under the wheel,
+on `764b1e28`:
+
+| zoom | marks | labels | truncated | mean | max | overlapping | clipped |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| world, `k = 1` | 122 | 14 | 7 of 14 | 19.5 | 28 | 0 | 0 |
+| arrival, `k = 2` | 128 | 74 | 35 of 74 | 19.9 | 47 | 0 | 0 |
+| continent, `k = 3.5` | 62 | 45 | 14 of 45 | 23.8 | 59 | 0 | 0 |
+| handful, `k = 8` | 19 | 17 | 2 of 17 | 27.5 | 59 | 0 | 0 |
+
+Against §2, zoom by zoom:
+
+| | world | arrival | continent | handful |
+| --- | --- | --- | --- | --- |
+| truncated | 6 → 7 of 14 | 60 → 35 | **27 → 14** of 55/45 | **10 → 2** of 19/17 |
+| share cut | 43 % → 50 % | 49 % → 47 % | **49 % → 31 %** | **53 % → 12 %** |
+| longest name drawn | 28 → 28 | 28 → **47** | 28 → **59** | 28 → **59** |
+| labels over labels | 0 → 0 | **136 → 0** | **14 → 0** | **3 → 0** |
+| labels off the pane | 2 → 0 | 12 → 0 | 6 → 0 | 3 → 0 |
+| labels drawn | 14 → 14 | 123 → 74 | 55 → 45 | 19 → 17 |
+
+**The complaint is answered where it was made.** Eight times in, one label in
+eight is cut where it was one in two, and the longest name on screen is drawn
+whole at 59 characters where the picture would give it 28. `The base reforms
+rally at the Central do Brasil, 1964` is in `docs/screens/m61-labels-close.png`
+with nothing after it.
+
+**The world view is the picture it was.** The same fourteen names, none of
+them longer than the constant they were cut at. Two are shorter: the mean falls
+from 22.0 to 19.5 because the pane's edge is room now, and a name that used to
+run off the screen is cut where the screen ends rather than clipped mid-word by
+the browser. Nothing there is readable that was not readable before — the two
+labels that were clipped are the two that shrank.
+
+**Nothing is drawn over anything.** 136 pairs at the arrival view, 14 at a
+continent, 3 at `MAX_ZOOM`: nil at all four. This was not in the brief's
+complaint and is the larger of the two faults.
+
+**What it costs: names.** 123 labels at the arrival view become 74, 55 become
+45, 19 become 17. A mark whose line of text is full on both sides is not named
+at all now, where before it was named on top of its neighbour — those 136
+overlapping pairs *were* those labels. The mark keeps its title, so the name is
+one hover away, and the reader who wants it closer has the wheel. It is a
+deliberate trade and it is the one the brief asks for: "where two nodes are
+close, the shorter cut is the right one".
+
+## 6. What it costs to draw
+
+Median of seven loads, and of twenty-four wheel notches, on this machine,
+before and after — the same instrument, the page driven the same way:
+
+| | before | after |
+| --- | ---: | ---: |
+| first mark in the DOM | 242 ms, 234 ms | 242 ms, 234 ms |
+| first label in the DOM | 341 ms, 270 ms | 292 ms, 281 ms |
+| one wheel notch at `k = 1` | 5.9 ms, 6.7 ms | 6.0 ms, 6.2 ms |
+| one wheel notch at `k = 3.5` | 2.1 ms | 1.8 ms, 1.9 ms |
+| one wheel notch at `k = 8` | 0.7 ms | 0.6 ms |
+
+**First paint does not move.** It is not where the work is: the labels are
+drawn where they were drawn, the pass is the same one loop over the same
+candidates, and what it does inside that loop — two scans of what is already
+placed rather than one, plus a scan of the marks that will be named — is of
+the same order as the collision test it replaces. The two numbers that do move
+are the notches at the closer zooms, and they move down: fewer labels are built
+and inserted, because the ones that used to be drawn over a neighbour are not
+drawn at all.
+
+## 7. What was not changed, and one thing worth a look
+
+The zoom gate is untouched: below `LABEL_ALL_ZOOM` only the heaviest marks on
+screen are named, and `LABEL_LIMIT` is what it was. The font is untouched, and
+so is its size — `docs/screens/m61-labels-*.png` are three pictures of text at
+one size in a picture at three zooms, which is the rule of the brief's §2 and
+is asserted rather than assumed in `tests/graph-labels-browser.test.mjs`.
+
+One thing the close view now makes obvious and this milestone did not touch:
+**the halo behind a label is in the picture's units and the text is not.**
+`.graph .node-label` carries `stroke-width: 3` in `src/style.css`, inside the
+group the zoom scales, so at `k = 8` the paper behind a name is drawn eight
+times as thick as at the world view while the letters are the same size. It
+was there before M61 — the before-and-after shots have the same blot — but
+there are more names in the close view now, so there is more of it. It is a
+style, which this milestone was told not to touch, and it is a change of one
+number when somebody wants it.
+
