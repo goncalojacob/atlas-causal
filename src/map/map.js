@@ -868,6 +868,17 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   if (state.get().bbox) fitTo(state.get().bbox);
 
   state.subscribe((s) => {
+    // A box the reader has just dismissed is not one to put back. A pan, a
+    // wheel notch or the pane changing size leaves a settle timer behind
+    // (`scheduleBbox`, BBOX_SETTLE), and switching to the timeline is a resize
+    // — so the pin's `bbox: null` was overwritten a moment later by a timer
+    // that had been waiting since before the reader pressed it. The state went
+    // back to the box and the address bar with it, and *show the world* did
+    // nothing at all, about one press in six (M63, docs/m63-load.md).
+    if (!s.bbox && settling) {
+      clearTimeout(settling);
+      settling = null;
+    }
     if (s.bbox && !sameBox(s.bbox, published)) fitTo(s.bbox);
     render(s);
   });
