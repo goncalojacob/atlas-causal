@@ -25,7 +25,7 @@ import {
   ATTRIBUTE_COLUMNS, CORE_COLUMNS, SPINE_COLUMNS, SPINE_KINDS, SPLIT_COLUMNS,
   applyAttributes, boundsOf, decodeSpineFile, fillFallbacks,
 } from '../src/spine.js';
-import { attributePeriod, attributeShardKey, periodOf } from '../src/explanations.js';
+import { attributePeriod, attributeShardKey, attributeSpan, periodOf, periodsTouched } from '../src/explanations.js';
 import { extent as intervalExtent } from '../src/util/dates.js';
 import { KINDS } from '../src/kinds.js';
 import { buildIndex } from '../tools/build-index.mjs';
@@ -620,12 +620,20 @@ test('category is a core column of an event and not an attribute one', () => {
 });
 
 for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', DATA]]) {
-  // A1 and plan A8: one filing key for every kind, so that a record is in one
-  // shard and the loader and the build agree which.
-  test(`every record is in exactly one shard, chosen by its own key, over ${label}`, async () => {
+  // A1 and plan A8: one filing rule for every kind, so that the loader and the
+  // build agree which files a record is in.
+  //
+  // **Until M58 that was one shard each.** A row went into the shard of its
+  // record's start century and a view fetches the shards its window covers, so
+  // a record reaching into the window from an earlier century was drawn with
+  // its name in a file nobody asked for (docs/m58-shards.md). A row is now in
+  // every century its interval touches — the one it begins in among them — and
+  // in no century it does not.
+  test(`every record is in the shards its own key names, and no others, over ${label}`, async () => {
     const topology = await topologyOf(dir);
     const shards = buildAttributeShards(topology);
     const events = new Map(topology.events.map((e) => [e.id, e]));
+    const centuries = shards.filter((s) => s.from !== null).map(({ from, to }) => ({ from, to }));
     const seen = new Map();
     let filed = 0;
     for (const shard of shards) {
@@ -633,8 +641,9 @@ for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', D
       for (const kind of SPINE_KINDS) {
         for (const row of rows[`${kind}s`] ?? []) {
           const key = `${kind}:${row.id}`;
-          assert.ok(!seen.has(key), `${key} is in two shards: ${seen.get(key)} and ${shard.key}`);
-          seen.set(key, shard.key);
+          if (!seen.has(key)) seen.set(key, []);
+          assert.ok(!seen.get(key).includes(shard.key), `${key} is twice in ${shard.key}`);
+          seen.get(key).push(shard.key);
           filed += 1;
         }
       }
@@ -644,21 +653,26 @@ for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', D
       for (const record of topology[`${kind}s`]) {
         const key = `${kind}:${record.id}`;
         assert.ok(seen.has(key), `${key} is in no shard at all`);
-        assert.equal(seen.get(key), attributeShardKey(attributePeriod(kind, record, events)), key);
+        const touched = periodsTouched(attributeSpan(kind, record, events), centuries);
+        const wanted = touched.length === 0
+          ? [attributeShardKey(attributePeriod(kind, record, events))]
+          : touched.map((period) => attributeShardKey(period));
+        assert.deepEqual(seen.get(key), wanted, key);
       }
     }
-    assert.equal(seen.size, filed);
+    assert.equal([...seen.values()].reduce((n, keys) => n + keys.length, 0), filed);
 
-    // An event is in the century it begins in, a place is in the one shard of
-    // places, and a record with no year at all is in the `null` shard — which
-    // is fetched with the first century whatever the window is.
+    // An event is in the century it begins in — and in every later one it runs
+    // through — a place is in the one shard of places, and a record with no
+    // year at all is in the `null` shard, which is fetched with the first
+    // century whatever the window is.
     for (const event of topology.events) {
       const period = periodOf(intervalStart(event));
-      assert.equal(seen.get(`event:${event.id}`), `${period.from}-${period.to}`, event.id);
+      assert.ok(seen.get(`event:${event.id}`).includes(`${period.from}-${period.to}`), event.id);
     }
-    for (const place of topology.places) assert.equal(seen.get(`place:${place.id}`), 'place', place.id);
+    for (const place of topology.places) assert.deepEqual(seen.get(`place:${place.id}`), ['place'], place.id);
     for (const office of topology.offices.filter((o) => o.when === null)) {
-      assert.equal(seen.get(`office:${office.id}`), 'null', office.id);
+      assert.deepEqual(seen.get(`office:${office.id}`), ['null'], office.id);
     }
     // The keys the manifest will name, in the order the build writes them: the
     // centuries in year order, then the two that answer no year.
