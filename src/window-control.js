@@ -37,6 +37,7 @@ import {
 } from './util/window.js';
 import { columnHeight } from './density.js';
 import { workingSet, heldSet } from './emphasis.js';
+import { bandEvents, windowOf } from './window-band.js';
 import { eventsInView } from './util/viewport.js';
 
 // The hint's own box, in the units of its `viewBox`. Not a token and not a
@@ -51,17 +52,16 @@ export const DENSITY = Object.freeze({ width: 84, height: 12 });
 // the URL carries it; the clamping is done in astronomical years, because that
 // is the only numbering arithmetic is allowed on (util/dates.js).
 //
-// The same two rules the band's own drag follows: the window never leaves the
-// scale it is drawn on, and its ends never cross — written backwards is two
-// ends the wrong way round and not garbage to drop, exactly as `?from=` and
-// `?to=` are read that way in state.js.
+// The same two rules the band's own drag follows, and since M64 the same
+// function: the window never leaves the scale it is drawn on, and its ends
+// never cross — written backwards is two ends the wrong way round and not
+// garbage to drop, exactly as `?from=` and `?to=` are read that way in
+// state.js. Typing is for when you know the year and the band is for when you
+// do not; `windowOf` is why they cannot mean two different things.
 export function windowPatch(from, to, extent) {
   if (!extent) return null;
   if (!isValidYear(from) || !isValidYear(to)) return null;
-  const clamp = (year) => Math.min(extent.max, Math.max(extent.min, toAstronomical(year)));
-  const a = clamp(from);
-  const b = clamp(to);
-  return { from: fromAstronomical(Math.min(a, b)), to: fromAstronomical(Math.max(a, b)) };
+  return windowOf(toAstronomical(from), toAstronomical(to), extent);
 }
 
 // The hint: one column per century the corpus actually holds events in, over
@@ -194,8 +194,10 @@ export function createWindowControl(group, { atlas, state }) {
   // map pays nothing for it, at first paint or after.
   const countInView = (s) => {
     const working = workingSet(atlas, s);
-    const drawable = working.shown;
-    const inLens = drawable ? atlas.activeEvents.filter((e) => drawable.has(e.id)) : atlas.activeEvents;
+    // The same function the lanes and the strip over the map draw from
+    // (window-band.js): a count said against one picture of the corpus and a
+    // band drawn over another would be two answers to one question.
+    const inLens = bandEvents(atlas, s);
     const held = heldSet(working, { reachable: true });
     const shown = eventsInView(inLens, s.bbox, atlas.places, { keep: held, regions: atlas.regionBoxes });
     return { shown: shown.length, whole: inLens.length };
