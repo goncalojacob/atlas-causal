@@ -11776,15 +11776,20 @@ because the labels that used to be drawn over a neighbour are not built at all.
      the owner wants it.
 
 867. **The branch's check is red for the reason deviation 844 measured, and
-     this run saw it once more.** The full suite here: **1,702 tests, 1,700
-     passing, 0 skipped**, with two failures. One was real and is fixed in the
-     same commit as the change — `tests/site.test.mjs` requires every module
-     under `src/` to be named in CLAUDE.md's layout tree, and
-     `src/graph-view/label-fit.js` was new. The other was
-     `tests/spine-pages.test.mjs`, "the source card fetches its own citer file
-     and draws the rows", timing out on a wait; that file run on its own is
-     21 of 21 green on the same head. It is the browser suite under load, as
-     844 says, and not this milestone.
+     this run saw it twice, on two different tests.** Two full local runs of
+     **1,702 tests, 0 skipped**. The first dropped one real failure and one
+     flake: the real one is fixed in the commit that made it —
+     `tests/site.test.mjs` requires every module under `src/` to be named in
+     CLAUDE.md's layout tree and `src/graph-view/label-fit.js` was new — and
+     the flake was `tests/spine-pages.test.mjs`, "the source card fetches its
+     own citer file and draws the rows", timing out on a wait; that file alone
+     is 21 of 21 green on the same head. The second run, on the final head, is
+     **1,701 passing with one failure**, and it is a *different* browser test:
+     `tests/panel-browser.test.mjs`, "a drag of the band leaves the open
+     explanation open and moves the horizon", timing out on a wait; that file
+     alone is 26 of 26 green. A different test each run on an unchanged head
+     is 844's measurement exactly: the browser suite under load, not a
+     regression, and not this milestone.
 
 868. **No record was written and no historical claim was made.** Nothing under
      `data/` was touched; `node tools/validate.mjs --index` reports 0 errors
