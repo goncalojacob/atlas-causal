@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
+  "revised": "2026-09-18",
   "origin": {
     "tool": "assistant",
     "run": "m57"
@@ -61,5 +61,6 @@
   "names": [
     "Batalha da borracha"
   ],
-  "region": null
+  "region": null,
+  "parent": "the-1930-revolution-and-the-vargas-era"
 }

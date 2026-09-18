@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-18",
   "origin": {
     "tool": "assistant"
   },
@@ -40,6 +40,7 @@
   },
   "place": "tete-district",
   "region": null,
+  "parent": "portuguese-colonial-war-1961-1974",
   "actors": [
     {
       "actor": "estado-novo",

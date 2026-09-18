@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
+  "revised": "2026-09-18",
   "origin": {
     "tool": "assistant",
     "run": "m57"
@@ -53,5 +53,6 @@
     "Eleição presidencial no Brasil em 1985",
     "Diretas Já"
   ],
-  "region": null
+  "region": null,
+  "parent": "brazilian-military-dictatorship-1964-1985"
 }

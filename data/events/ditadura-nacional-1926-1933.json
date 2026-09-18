@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "ditadura-nacional-1926-1933",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m62-umbrella",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q2729197",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-18"
+  },
+  "wikipedia": {
+    "en": "Ditadura Nacional",
+    "pt": "Ditadura Nacional"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2729197"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ditadura Nacional\", revision 1365513062"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Ditadura Nacional\", revision 72710910"
+    }
+  ],
+  "title": "The Ditadura Nacional",
+  "summary": "The regime that governed Portugal from the coup of 28 May 1926, which ended the First Republic, until the adoption of the constitution of 1933 that ushered in the Estado Novo. Some authors use the name Ditadura Militar for its first stage only and others for the whole of it; together with the Estado Novo it makes up the period historians call the Second Portuguese Republic. The atlas held the actor military-dictatorship and no event for the seven years it governed, which is why Salazar’s arrival at the finance ministry and at the presidency of the council had nothing to be part of.",
+  "when": {
+    "start": 1926,
+    "end": 1933,
+    "date": "1926-05-29",
+    "endDate": "1933-03-19",
+    "calendar": "gregorian"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "A regime has no single point on the map, so the lane is given rather than derived: Portugal’s.",
+  "actors": [
+    {
+      "actor": "military-dictatorship",
+      "role": "government"
+    },
+    {
+      "actor": "gomes-da-costa",
+      "role": "leader",
+      "note": "led the coup of 28 May 1926"
+    },
+    {
+      "actor": "oscar-carmona",
+      "role": "head-of-state"
+    },
+    {
+      "actor": "salazar",
+      "role": "minister",
+      "note": "finance minister from 1928, president of the council from 1932"
+    }
+  ]
+}

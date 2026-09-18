@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-16",
+  "revised": "2026-09-18",
   "origin": {
     "tool": "wikidata"
   },
@@ -60,6 +60,7 @@
   },
   "place": null,
   "region": "europe",
+  "parent": "world-war-ii",
   "actors": [
     {
       "actor": "soviet-union",

@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "portuguese-colonial-war-1961-1974",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m62-umbrella",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q609836",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-09-18"
+  },
+  "wikipedia": {
+    "en": "Portuguese Colonial War",
+    "pt": "Guerra Colonial Portuguesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q609836"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese Colonial War\", revision 1372834694"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra Colonial Portuguesa\", revision 72993312"
+    }
+  ],
+  "title": "The Portuguese Colonial War",
+  "summary": "The war the Estado Novo fought in Angola, Guinea and Mozambique against the MPLA, the PAIGC and FRELIMO. Wikidata dates it from 4 February 1961, the attack on the prisons and police stations of Luanda, to 25 April 1974, the day the revolution in Lisbon ended the regime that was fighting it. It is held here as a period of its own and not as a part of the Estado Novo: the two end on the same day, and a war is not a part of a government in the way a decree is.",
+  "when": {
+    "start": 1961,
+    "end": 1974,
+    "date": "1961-02-04",
+    "endDate": "1974-04-25",
+    "calendar": "gregorian"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "The lane is the theatre and not the capital: the war was fought in Angola, Guinea and Mozambique and directed from Lisbon.",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "estado-novo",
+      "role": "belligerent"
+    },
+    {
+      "actor": "mpla",
+      "role": "belligerent"
+    },
+    {
+      "actor": "paigc",
+      "role": "belligerent"
+    },
+    {
+      "actor": "frelimo",
+      "role": "belligerent"
+    },
+    {
+      "actor": "salazar",
+      "role": "head-of-government",
+      "note": "president of the council for the first seven years of it"
+    },
+    {
+      "actor": "marcelo-caetano",
+      "role": "head-of-government",
+      "note": "president of the council for the last six"
+    },
+    {
+      "actor": "amilcar-cabral",
+      "role": "leader",
+      "note": "led the PAIGC"
+    },
+    {
+      "actor": "eduardo-mondlane",
+      "role": "leader",
+      "note": "led FRELIMO"
+    },
+    {
+      "actor": "pvde-pide-dgs",
+      "role": "institution",
+      "note": "the regime’s political police in the overseas territories"
+    }
+  ]
+}
