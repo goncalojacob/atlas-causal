@@ -11135,6 +11135,237 @@ deterministic failures in the same runs were real and are fixed above: the layou
 tree, and `tests/import-map.test.mjs`, which named `dutch-east-indies` where
 gwcode 850 now names the survivor it was joined into.
 
+## M45a — the ground made to read
+
+**The oldest request in the file, answered.** On 16 September the owner asked
+whether the map ought to be topographical; when it was argued back that relief
+would compete with the territories for the reader's attention, the answer was
+*"yeah but relief would help you understand how borders and territories move
+around geographical features"*. That settled it, and it was right. Every
+milestone since has been about records. This one is about the ground.
+
+**It cost no new source and almost no new bytes.** The two layers it needed
+have been on disk since M36b: `physical`, 544 polygons under a frozen
+seventeen-class allow-list, and `mountains`, 711 elevation points every one of
+which already carries a height in metres. What neither did was *say* anything.
+A desert and a mountain range were the same dashed hairline, and Everest and a
+400-metre hill were the same three-pixel dot.
+
+### The base map, before and after
+
+| | before | after | ceiling |
+|---|---|---|---|
+| `data/geo/base/` | 6,214,897 B (5.93 MiB) | **6,225,806 B (5.94 MiB)** | 8 MiB |
+| `data/geo/` | 15,028,161 B (14.33 MiB) | **15,039,070 B (14.34 MiB)** | 24 MiB |
+| `physical` far | 246,659 B (240.9 KB) | **251,506 B (245.6 KB)** | 250 KB |
+| `physical` near, 23 cells | 711,171 B (694.5 KB) | **717,233 B (700.4 KB)** | 750 KB |
+
+**+10,909 bytes, 0.18 per cent, and neither ceiling moved.** Nothing under
+`data/geo/` changed but the one layer: the 23 cells and the world file of
+`physical`, and the index's byte counts for them. The other five layers and
+`land-present.json` are byte-for-byte what they were, and so is the geometry of
+this one — with `kind` stripped out again, all 24 files compare equal, which is
+how the run knew the tolerance had not stepped. Both levels fit at exactly the
+tolerance they fitted at before, 0.25° far and 0.075° near.
+
+**First paint costs the same.** No new file, no new request, and no request
+earlier: `data/geo/base/` is not fetched before the first contentful paint and
+`tests/spine-pages.test.mjs` still says so. The one file that grew is the
+`physical` far file, which is fetched a frame *after* the first picture, and it
+grew by 4,847 raw bytes — **490 bytes gzipped**, which is what a reader
+actually downloads, 73,038 → 73,528.
+
+**What is left in the far cap is 4.4 KB**, and M45b should know it before it
+plans anything: this level is 245.6 KB of 250 and another field on a physical
+feature does not fit.
+
+### The four families, and where they came from
+
+The family is decided in `tools/import/features.mjs`, beside the `z` table, and
+written onto the feature as `kind`. In the import and **not** in CSS: a
+stylesheet switching on `FEATURECLA` would be M36's allow-list copied into
+another language, free to fall out of step with it.
+
+| family | classes | in the source | in the world file |
+|---|---|---|---|
+| `relief` | Range/mtn, Foothills | 222 + 3 | 225 |
+| `cover` | Desert, Tundra, Wetlands | 58 + 4 + 3 | 65 |
+| `hollow` | Basin, Depression, Valley | 9 + 2 + 6 | 17 |
+| `outline` | the other nine classes | 237 | 236 |
+
+Four and not seventeen for the reason the milestone exists: the ground is what
+the territories moved around and is never the subject, and seventeen marks
+would be a legend nobody asked for. Across all 24 files there are 1,238 feature
+instances — a region is written whole into every cell its box touches — of
+which 501 are relief, 147 cover, 43 hollow and 547 outline.
+
+`outline` is what all seventeen looked like before this run, and it is **the
+absence of the key**: the import writes `kind` only where the family is not the
+default, which is the rule `nameEn` and `zl` are already written by. 307 of 544
+carry one.
+
+### What each family is drawn with
+
+Every rule is an opacity over a token that already existed. **No new hex value,
+no new token, no new type size.**
+
+- **relief** — `--cobalt-soft` at 0.26, stroked `--cobalt-soft` at 0.7 and
+  **solid**. It is the only one of the three without a dash, and that is the
+  argument: a ridge has an edge, and the edge is the thing a frontier is seen
+  to sit on. A dash says "approximate limit", which is what a desert's border
+  is and a watershed is not.
+- **cover** — `--line` at 0.45, keeping the dashed hairline the layer already
+  had. A desert's boundary is a convention.
+- **hollow** — `--ink-soft` at 0.12, dotted `1 3` at 0.5. Grey and not cobalt,
+  so a basin does not read as a range at second glance.
+- **outline** — untouched. `fill: none`, `--line`, 0.5, dashed `3 3`.
+
+For scale: a territory is filled at **0.62** of one of the eight hues. The
+loudest ground on this map is 0.26 of a pale token. `docs/screens/m45a-ground-bare-andes.png`
+is the same box as `m45a-ground-andes.png` with the territories switched off,
+and the pair is the measurement: on its own the ground is a whole topography —
+the cordillera, the Amazon basin and the Gran Chaco as hollows, the Brazilian
+highlands, Patagonia — and under the washes what survives is the ridge the
+Chile–Argentina border runs along, which is precisely what was asked for and
+nothing more.
+
+**What the palette could not express, and what was done about it.** The first
+attempt drew relief with `--cobalt-faint`. It is unusable for a ground: at
+`#d5deef` against a `--land` of `#e6ecf5` the two are six to seventeen values
+apart per channel, so at 0.45 it moved the land by about eight values in red
+and three in blue — invisible on its own and gone entirely under a territory.
+The palette *can* express ground, but only with `--cobalt-soft`, which is a
+drawing colour used here at a quarter strength rather than a new pale token
+invented for the purpose. **Nothing was invented and nothing was refused for
+being impossible**: what was refused was a `--relief` token, a hatch pattern
+needing a `<defs>` entry of its own, and any second hex value near `--land`.
+
+### A peak drawn at its height
+
+`peakRadius` in `src/map/layers/base.js`, frozen with its domain and its range:
+
+    r(e) = 0.6 + 2.0 × √( clamp(e, 0, 9000) / 9000 )
+
+Domain every real number — a non-finite elevation is the minimum, not a throw —
+clamped to **0 to 9,000 metres**; range **0.6 to 2.6** page units, where the
+whole layer used to be 1.5. The ceiling is a round 9,000 and not the file's own
+8,848, so the function belongs to the map rather than to the version of Natural
+Earth in `vendor/`.
+
+Not linear, and that is the point. Measured over the 711: minimum −416 (the
+Dead Sea, the one below sea level, drawn at the floor), first quartile 1,447,
+median 2,453, third quartile 3,480, maximum 8,848. A linear scale puts the
+median at 0.27 of the range and heaps the world's ranges in the bottom third
+under a single Everest-sized blob; the square root puts it at **0.52**.
+
+| | 400 m | 1,447 | 1,993 | 2,453 | 3,480 | 8,848 |
+|---|---|---|---|---|---|---|
+| radius | 1.02 | 1.40 | 1.54 | 1.64 | 1.84 | 2.58 |
+
+A peak's label anchor moved with it: the gap is now that peak's own radius plus
+two, so a name beside Everest is not the name beside a hill.
+
+### The one thing that had to change beyond the two sections
+
+**The ground is painted before the water.** Until this run no base layer filled
+open land, so the order `manifest.base.layers` gives — coast, rivers, lakes,
+physical, mountains, cities — decided nothing at all. Give `physical` a tint and
+it decides a great deal: the Sahara's wash would pass over the Nile, and "a
+river inside the land is precisely what one wants to see" is the argument the
+whole base map is placed by. `physical` is appended first now. It is paint
+order and nothing else — the manifest is unchanged, the layer control is
+unchanged, `LAYERS` is unchanged, and `?layers=` is unchanged, which is what
+§1.3 asks.
+
+### What is in the pictures
+
+Three zooms, in `docs/screens/`, four of them with the territories **on**
+because whether ground and border read together is the whole question:
+
+- `m45a-ground-world.png` — the whole world. The cordilleras, the Rockies, the
+  Himalaya and the Sahara under the colonial borders of 1911.
+- `m45a-ground-andes.png` — a continent. South America, the Andes down its
+  spine, Chile and Argentina divided along them.
+- `m45a-ground-iberia.png` — a frontier on **rivers**: Portugal and Spain, with
+  the Cordillera Cantábrica, the Sistema Central, the Sierra Morena and the
+  Ebro basin drawn, and the Pyrenees lying under the French border.
+- `m45a-ground-alps.png` — a frontier on a **ridge**: the Alps arc with France,
+  Switzerland, Austria and Italy around it, and the Apennines down Italy.
+- `m45a-ground-bare-andes.png` — the same box as the second with the
+  territories off, for the comparison above.
+
+No other picture was retaken, so no other picture had to be restored.
+
+### Tests
+
+1,666 and 0 skipped, against 1,657 at the head this run started from. The nine
+are three in `tests/features.test.mjs` (the families are read off the frozen
+allow-list; an unknown `FEATURECLA` takes the default rather than throwing;
+`kind` is written only where it is not the default), five in
+`tests/base-layer.test.mjs` (the radius function is monotone over its whole
+domain, bounded at both ends, and not linear; each peak is drawn at its own
+height and keeps it through a zoom; a family reaches the DOM as a class and an
+unrecognised one does not), and one in `tests/map-browser.test.mjs` over the
+repository's own data at Iberia — more than one family on screen, more than one
+peak size, relief a tint and not a wash, and the ground painted before the
+rivers and the lakes.
+
+### Deviations, numbered on from 836
+
+`m44` is merged, so the last deviation on `m0` is 836 and this run numbers from
+837, which is what the brief's "number from the last on the merged branch and
+say so" asks for.
+
+837. **The brief puts the elevation-to-radius function in `features.mjs` and it
+     cannot live there.** §1.2 says "one frozen, monotone function in
+     `features.mjs` beside the `z` table". `features.mjs` is under `tools/`, and
+     the browser can never import it — the radius is not a number written into
+     a record, it is a decision the map makes at every zoom. It is in
+     `src/map/layers/base.js` beside `DOT`, which is where that module already
+     argues the point: *saber quão largo é um ponto desta camada é assunto desta
+     camada*. Writing the radius into the data instead would have put a drawing
+     decision into 711 records and cost bytes for it.
+838. **A tinted `physical` cannot be drawn in the manifest's order.** Covered
+     above; it is the one change this run made outside §1.1 and §1.2, and
+     without it §1.1 draws a desert over a river.
+839. **`--cobalt-faint` cannot carry relief.** Covered above. The palette
+     expresses ground at `--cobalt-soft` and a quarter strength, so nothing was
+     invented — but a run that had insisted on a fill token rather than an
+     opacity would have had to stop and say so, which is what §1.1 provides for.
+840. **`kind` is absent on the default family rather than written 237 times.**
+     `nameEn` and `zl` set the precedent and the far cap has 4.4 KB left in it.
+     The cost of the alternative would have been about another 5 KB, which the
+     cap can take and the discipline should not.
+841. **The families are held as a closed list at both ends.** `data/` is
+     untrusted input and `kind` ends up in a `class` attribute. The import
+     writes from the frozen allow-list; the browser checks against its own copy
+     and draws an unrecognised `kind` in the default family. One list would
+     have been tidier and would have meant the browser trusting the file.
+842. **The fixture base map was left alone, and it is stale.** Regenerating
+     `tests/fixtures/data/geo/base/` writes more than this run's `kind`: the
+     fixture rivers, lakes and mountains all differ too, and the fixture desert
+     would gain the `zl` M38 added, which would put a new label into every
+     fixture picture. That is not M45a's change to make. The consequence is
+     that the one fixture physical region draws in the default family.
+843. **The screenshots are `m45a-*` at three zooms, not the brief's two.**
+     §1's "done when" names `m45-ground-iberia.png` and `m45-ground-alps.png`;
+     the run was asked for three zooms under `m45a-*`. Both pictures the brief
+     names exist, under the sub-run's own prefix, with two more beside them.
+844. **One browser test timed out in the full run and passed on its own.**
+     `a drag of the band leaves the open explanation open and moves the
+     horizon`, in `tests/panel-browser.test.mjs` — a timeout and not an
+     assertion, on a file this run did not touch, and one of the four M58 named
+     in deviation 826. 26 of 26 on the re-run with no change.
+845. **The base map's own numbers had drifted from the brief's.** §0 records
+     5.89 MB and `data/geo` at 10.95 MB; measured at this run's start they were
+     5.93 MiB and 14.33 MiB, because M43a's historical basemaps and M44's
+     shards landed under `data/geo/` afterwards. The table above is measured,
+     not quoted.
+846. **No record was written and no historical claim was made.** Elevation is
+     geography. The only thing this run put into `data/` is which of four
+     visual families a Natural Earth polygon belongs to, read off a column that
+     has been in the source file since M36.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
