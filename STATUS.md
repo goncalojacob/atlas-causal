@@ -11508,6 +11508,20 @@ turned up in a test rather than in a measurement — at k = 8 over Portugal the
 taller pane has room for one more name, and a feature label now sits beside the
 cities where none fitted before (deviation 853).
 
+### Checks
+
+`node tools/validate.mjs --index`: **10,632 records, 0 errors**, 1,208
+warnings — unchanged, no record was written, and the index is byte-identical.
+`node --test --test-timeout=120000`: **1,684 tests, 0 skipped**, one wholly
+clean run of all of them, against 1,666 at the head this run started from.
+Fourteen of the eighteen new ones are M60's own — six driven and eight pure —
+and the rest of the diff to the suites is amendment: tests that were measuring
+the strip rather than the rule they were about (deviations 851 to 855). An
+earlier run of the same head dropped one browser test to a `waitFor` timeout
+(`the source card fetches its own citer file`), which passes on its own file
+and in every later run; it is the flake deviation 844 measured on this branch
+before this milestone.
+
 ### Deviations
 
 848. **The resize handle was removed rather than left half-alive, and the
@@ -11855,3 +11869,4 @@ M59 done
 M45a started 2026-09-18T04:29:03Z by scheduled
 M45a done
 M60 started 2026-09-18T10:08:34Z by scheduled
+M60 done
