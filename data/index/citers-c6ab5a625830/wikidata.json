@@ -2,6 +2,18 @@
   "citations": [
     {
       "dissent": false,
+      "id": "basutoland",
+      "kind": "actor",
+      "locator": "Q2340665, P576 1966"
+    },
+    {
+      "dissent": false,
+      "id": "bokhara-khanate",
+      "kind": "actor",
+      "locator": "Q746558, P576 1920-10-07"
+    },
+    {
+      "dissent": false,
       "id": "brandenburg-prussia",
       "kind": "actor",
       "locator": "Q157367, P1366 Q27306 (replaced by the Kingdom of Prussia)"
@@ -26,6 +38,18 @@
     },
     {
       "dissent": false,
+      "id": "buganda",
+      "kind": "actor",
+      "locator": "Q473748, P576 1966"
+    },
+    {
+      "dissent": false,
+      "id": "bunyoro",
+      "kind": "actor",
+      "locator": "Q889897, P576 1899"
+    },
+    {
+      "dissent": false,
       "id": "captaincy-general-of-cuba",
       "kind": "actor",
       "locator": "Q2039931, P571 1607-01-01"
@@ -41,6 +65,12 @@
       "id": "democratic-leftwing-republican-party",
       "kind": "actor",
       "locator": "Q3366682"
+    },
+    {
+      "dissent": false,
+      "id": "dendi-kingdom",
+      "kind": "actor",
+      "locator": "Q761103, P576 1901"
     },
     {
       "dissent": false,
@@ -92,9 +122,27 @@
     },
     {
       "dissent": false,
+      "id": "imerina",
+      "kind": "actor",
+      "locator": "Q1071439, P576 1897"
+    },
+    {
+      "dissent": false,
+      "id": "imperial-japan",
+      "kind": "actor",
+      "locator": "Q188712, P576 1947-05-03"
+    },
+    {
+      "dissent": false,
       "id": "iran-persia",
       "kind": "actor",
       "locator": "Q63158027, P571 1789 and P576 1925"
+    },
+    {
+      "dissent": false,
+      "id": "kingdom-of-hawaii",
+      "kind": "actor",
+      "locator": "Q156418, P576 1895-01-24"
     },
     {
       "dissent": false,
@@ -107,6 +155,12 @@
       "id": "kingdom-of-portugal",
       "kind": "actor",
       "locator": "Q45670, P576 1910-10-05"
+    },
+    {
+      "dissent": false,
+      "id": "kong-empire",
+      "kind": "actor",
+      "locator": "Q1587244, P576 1898"
     },
     {
       "dissent": false,
@@ -155,6 +209,12 @@
       "id": "ottoman-empire",
       "kind": "actor",
       "locator": "Q12560, P576 1922-11-17"
+    },
+    {
+      "dissent": false,
+      "id": "oyo",
+      "kind": "actor",
+      "locator": "Q849623, P576 1905"
     },
     {
       "dissent": false,
@@ -272,6 +332,12 @@
     },
     {
       "dissent": false,
+      "id": "sokoto-caliphate",
+      "kind": "actor",
+      "locator": "Q600524, P576 1903"
+    },
+    {
+      "dissent": false,
       "id": "soviet-union",
       "kind": "actor",
       "locator": "Q15180, P571 1922-12-30 (normal rank; the 1923-07-06 value is deprecated)"
@@ -284,9 +350,27 @@
     },
     {
       "dissent": false,
+      "id": "sultanate-of-damagaram",
+      "kind": "actor",
+      "locator": "Q4154364, P576 1899"
+    },
+    {
+      "dissent": false,
+      "id": "sultanate-of-utetera",
+      "kind": "actor",
+      "locator": "Q60775599, P576 1887"
+    },
+    {
+      "dissent": false,
       "id": "turkey-ottoman-empire",
       "kind": "actor",
       "locator": "Q12560, P576 1922-11-17"
+    },
+    {
+      "dissent": false,
+      "id": "united-kingdom-of-great-britain-and-ireland",
+      "kind": "actor",
+      "locator": "Q174193, P576 1927-04-12"
     },
     {
       "dissent": false,
@@ -314,6 +398,18 @@
     },
     {
       "dissent": false,
+      "id": "wadai-empire",
+      "kind": "actor",
+      "locator": "Q1132786, P576 1909"
+    },
+    {
+      "dissent": false,
+      "id": "wassoulou-empire",
+      "kind": "actor",
+      "locator": "Q568712, P576 1898-09-29"
+    },
+    {
+      "dissent": false,
       "id": "weimar-republic",
       "kind": "actor",
       "locator": "Q41304, P571 1918-11-09"
@@ -323,6 +419,12 @@
       "id": "weimar-republic",
       "kind": "actor",
       "locator": "Q41304, P576 1933 (year precision)"
+    },
+    {
+      "dissent": false,
+      "id": "zululand",
+      "kind": "actor",
+      "locator": "Q729768, P576 1897"
     },
     {
       "dissent": false,

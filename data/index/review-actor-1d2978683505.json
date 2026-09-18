@@ -5517,7 +5517,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 2,
@@ -5531,11 +5532,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q2340665 (Basutoland) gives P576 1966, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -6748,7 +6751,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 2,
@@ -6762,11 +6766,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q746558 (Emirate of Bukhara) gives P576 1920-10-07, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -7455,7 +7461,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 3,
@@ -7469,11 +7476,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q473748 (Buganda) gives P576 1966, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -7687,7 +7696,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 3,
@@ -7701,11 +7711,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q889897 (Bunyoro) gives P576 1899, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -13299,7 +13311,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 2,
@@ -13313,11 +13326,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q761103 (Dendi Kingdom) gives P576 1901, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -21855,7 +21870,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 2,
@@ -21869,11 +21885,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q1071439 (Merina Kingdom) gives P576 1897, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -21946,7 +21964,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 2,
@@ -21960,11 +21979,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q188712 (Empire of Japan) gives P576 1947-05-03, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -27213,7 +27234,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 3,
@@ -27227,11 +27249,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q156418 (Kingdom of Hawaiʻi) gives P576 1895-01-24, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -28317,7 +28341,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 4,
@@ -28331,11 +28356,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q1587244 (Kong Empire) gives P576 1898, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -43865,7 +43892,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 12,
@@ -43879,11 +43907,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q849623 (Oyo Empire) gives P576 1905, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -54247,7 +54277,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 2,
@@ -54261,11 +54292,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q600524 (Sokoto Caliphate) gives P576 1903, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -55064,7 +55097,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 2,
@@ -55078,11 +55112,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q4154364 (Sultanate of Damagaram) gives P576 1899, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -55122,7 +55158,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 2,
@@ -55136,11 +55173,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q60775599 (Tippu Tip's state) gives P576 1887, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -60507,7 +60546,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 3,
@@ -60521,11 +60561,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q174193 (United Kingdom of Great Britain and Ireland) gives P576 1927-04-12, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -61561,7 +61603,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 2,
@@ -61575,11 +61618,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q1132786 (Ouaddai Empire) gives P576 1909, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -63335,7 +63380,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 2,
@@ -63349,11 +63395,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q568712 (Samorian state) gives P576 1898-09-29, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -68649,7 +68697,8 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata"
       ],
       "created": "2026-09-16",
       "degree": 2,
@@ -68663,11 +68712,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-dissolved"
         ],
+        "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q729768 (Zulu Kingdom) gives P576 1897, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
