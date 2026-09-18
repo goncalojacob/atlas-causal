@@ -13,6 +13,55 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-18, after **M65** (`docs/m65-brief.md`, on `m0`): **choosing an event is
+a filter, not a highlight.** The owner, 18 September: *"everywhere, graph, map
+and timeline you should only see the main events. Then, when you click on a
+specific event, in both the map, graph and timeline the other unrelated events
+are hidden and only the children events and direct connections are shown"*. The
+atlas had been **dimming**; this is **hiding**, in all three views at once, and
+both rules are one answer computed in one place.
+
+**242 of 309 events are main**, and that number is the whole of what this
+milestone can be judged on. M62 filing fifty events under five umbrellas moved
+the resting picture from 309 to 242 — a cut of about a fifth. **"Only the main
+events" will not feel like much until far more of the 242 have somewhere to
+hang.** That is a records problem and not a code one: the next milestone that
+wants this to bite writes umbrellas, not filters.
+
+**One place, so the three views cannot disagree.** `src/lens.js` gained
+`restingSet` — the events that are part of no other — and the chosen event as a
+lens of one; `emphasis.js`'s `shown` is the lens, or the resting picture where
+there is none, narrowed by the categories still on. The map, the timeline, the
+graph and the masthead's count already read that set and nothing had to be told.
+**"N of N events in view" now counts against the resting picture**, not against
+the corpus: 18 of the fixtures' 20 active events, 242 of the repository's 309.
+
+**What a choice keeps**: the event, its parts all the way down, one hop along an
+edge either way, and **what it is part of**, dimmed. The last is a new clause on
+every lens (`parentsOf`) and it can only widen one, so M54's territorial answer
+is what it was with the umbrella over it drawn too. **An open horizon is kept
+too**, because it is multi-hop by construction and would otherwise have been cut
+back to its first step.
+
+**`?selected=` links written before today show less than they did.** A link that
+used to open the whole atlas with one mark ringed now opens that event's
+neighbourhood — it, its parts, its parent and one hop — and nothing else. The
+way back is the one that already existed: clear the selection, or the chip's ×
+in the masthead, which writes `?focus=none` and leaves the card open over the
+resting picture.
+
+**First paint does not get slower, and it does not get faster either.** The same
+97 files are fetched against 98 — the same list; `parent` is a **core** column,
+so the rule reads what the first frame already holds and asks for nothing more.
+The rule itself is **0.010 ms** over 309 events, once per state change and not
+once per view. The first frame carrying marks draws **14 marks against 21**, and
+the time from navigation to it is **240 ms against 254** (medians of twelve
+loads each, spreads 212–320 and 207–314) — the same within the noise of the
+measurement, which is what "not slower" honestly means here.
+
+**One behaviour is superseded and it is worth saying out loud**: the graph's
+semantic collapse (M30c) no longer fires. Deviations 883 to 889.
+
 2026-09-18, after **M63** (`docs/m63-brief.md`, on `m0`): **the check tells the
 truth again.** It had been red since 17 September on a different browser test
 every run, always a `waitFor` that ran out and never a wrong value, and every
@@ -12124,6 +12173,161 @@ with `docs/m62-umbrellas.md`.
      step, which is thousands of lines further down and the only one reachable
      when a red check is being read. The suite has said its failing tests twice
      for the same reason since M44a.
+883. **The graph's semantic collapse (M30c) no longer fires, anywhere.** It
+     drew a parent's parts inside it while the reader was zoomed out. At rest
+     there are no parts in the picture to fold, and inside a lens — which a
+     selection now is — M25's never-hide rule holds everything the lens kept
+     out of any fold, so `collapseLayout` returns its argument unchanged on
+     every path a reader can reach. What it said, *there is more inside this
+     one*, the resting rule says by hiding the parts and the ring (M30c's own
+     look) still says on the mark. The code is untouched and
+     `tests/collapse.test.mjs` still holds it to its rule; the two browser
+     tests that drove it now assert what the pictures actually do. **This was
+     not asked for and is not reversible by accident** — a milestone that wants
+     the fold back has to decide which of the two rules gives way.
+884. **`keptRegardless` gained the open horizon, which widens what a choice
+     keeps.** The brief says a choice leaves "it, its children, its parent and
+     its one-hop neighbours and nothing else". A horizon is multi-hop by
+     construction, and `?selected=X&horizon=1580` would have answered *what had
+     this led to by 1580* with its first step. The same sentence that already
+     kept the walked chain keeps this: an implicit lens is nobody's question and
+     may not take away what the reader has just asked for. An explicit
+     `?focus=` still keeps its own narrow answer.
+885. **An event selection now beats an open place or an open actor, which
+     reverses R8 for events.** R8 (6 September) settled that "a selected event
+     does not take the lens away: the reader walking from a place's list is
+     still inside that place's neighbourhood, and an atlas that opened up again
+     on the first click would be flipping the picture under them." The worry was
+     the atlas *opening up*; M65's click closes it further down, so the worry
+     does not apply and the owner's sentence is unconditional about clicking an
+     event. M54's own rule is untouched: a territorial selection is not an event
+     selection, and the place card's listing is not the lens.
+886. **Twelve test files judged the old behaviour and were corrected in the
+     commit that changed it**, not before it and not after. Deviation 711's
+     order is about the index, which has to be built from what is committed;
+     deviation 717's is about behaviour, and it reads "when a commit changes
+     what the pictures draw, the commit that teaches the tests belongs with it
+     or before it". Splitting the two rules into two green commits would have
+     meant splitting one test file down the middle for the sake of the shape.
+887. **`validate --index` reported 69 errors that were not there, because this
+     sandbox clones shallow.** Every one was a history shard: `tools/lib/history.mjs`
+     builds them out of the commits that touched each record's file, and a clone
+     with 52 commits names different files from one with 1,217. `git fetch
+     --unshallow` and the same command reports **0 errors**. Nothing under
+     `data/` was touched by this run; the amendment of 15 September is what
+     made the run look, and the answer it gave first was the clone's and not the
+     repository's.
+888. **A browser test's arithmetic counted 46 events the picture never had.**
+     `foldedTwice` in `tests/graph-browser.test.mjs` walks each parted event up
+     to the node it was folded into and counts it when that node is drawn
+     nowhere. At rest no part is in the picture at all now, so a part whose
+     parent had been swallowed by a stack was counted as folded — 288 accounted
+     for against a resting picture of 242. It counts over what the picture is
+     *of* now, which is `emphasis.js`'s own answer for the state the URL
+     describes, and the identity closes exactly.
+889. **How long a label may be depends on the room in the picture, so M61's
+     longest name needs the event opened.** `label-fit.js` budgets a label by
+     the room to the next one at the world view; with 67 fewer nodes the layout
+     around `2022-portuguese-social-democratic-party-leadership-election-q111182017`
+     is tighter, and no zoom — not even `MAX_ZOOM` — buys the whole of its 59
+     characters. Choosing it does, which is what a reader who wants to read a
+     node does. M61's promise is unchanged and is asserted at the same k = 6.
+
+## M65 — choosing an event is a filter, not a highlight
+
+### The two rules, and the one place they live
+
+**At rest every view draws only the main events.** An event is *main* when it is
+part of no other — no `parent`, or a parent that is not an active record here,
+because an event filed under an umbrella that was retracted or never written
+hangs nowhere. `isMain` and `restingSet` are in `src/lens.js`, and
+`emphasis.js` is where a view is told what it may draw:
+
+```js
+const shown = new Set([...(lens ?? restingSet(atlas, state))].filter(inCategory));
+```
+
+That line is the whole of the change to what a view draws. `shown` used to be
+`null` for "draw everything" and is a set on every frame now; the map, the
+timeline, the graph's arrangement and the masthead's count all filtered by it
+already, so none of them had to be taught anything and none of them can now
+hide by a different rule. **There is no second filtering path**, which is the
+fault this milestone exists to prevent.
+
+**Choosing an event is a lens on it.** `activeFoci` gains one line: an
+`event:` focus on `state.selected`. Everything after it was already built —
+`eventsOfFocus` on an event is that event and its parts all the way down (M30b),
+`ringOf` is the one hop either way (M48), and `near` is what is drawn dimmed. So
+a click writes no new machinery; it sets the lens the reader could already ask
+for by hand.
+
+**Where it sits in the precedence** is the only judgement in it: **after a
+narrative being read, before an open place or actor.** A walk is what a reader
+in narrative mode came for and a step of it must not narrow it to itself. A
+place or an actor loses, because the click on the event is the later and the
+more particular of the two acts — and **M54 is untouched by that**: selecting a
+*territory* is still a lens on all of its ground, and the place card still lists
+everything inside the outline whatever the window is. What changes is only what
+happens after the reader picks one event out of that list.
+
+### What a lens never hides
+
+**`parentsOf`**: what a lens's own events are part of, all the way up, dimmed
+beside the ring. A reader who has walked down into a regime must be able to see
+the regime, and what an event is part of is not clutter. It applies to every
+lens and not only to an event's, because it can only ever widen one: nothing a
+lens found is lost to it.
+
+**The open horizon**, added to `keptRegardless`. "Where the open event leads
+directly" was enough while a selection was an emphasis over the whole atlas;
+now that it is a filter of one hop, *what had this led to by 1580* would have
+been cut back to its first step and stopped being an answer. `horizonSet` is
+empty unless a horizon is open, so it costs nothing on the frames nobody asked.
+
+**The walked chain**, which `keptRegardless` already kept, and which
+`restingSet` now keeps too: a `?chain=` shared with no event selected is a walk
+being shown to somebody, and a step of it filed under a war would otherwise be
+a link into nothing.
+
+### A main event with nothing attached
+
+Chosen, it shows **only itself**. That is correct and is asserted
+(`tests/m65.test.mjs`); it is not special-cased into showing more, and it is
+what 103 of the corpus's events with one link or none will look like until the
+records give them somewhere to hang.
+
+### What it costs
+
+| | before | after |
+| --- | --- | --- |
+| files fetched to the first frame with marks | 98 | 97 (the same list) |
+| marks on that frame | 21 | 14 |
+| navigation to that frame, median of twelve | 254 ms | 240 ms |
+| spread over those twelve | 207–314 ms | 212–320 ms |
+| the resting rule itself | — | 0.010 ms per state change |
+
+`parent` is a **core** column (`spine.js`), so the resting picture is right on
+the first frame: nothing appears and then vanishes a moment later when a century
+lands. The two times are the same within the noise of a measurement whose spread
+is ±50 ms; what can be said without hedging is that **nothing new is fetched and
+nothing is computed per view** — `workingSet` is memoised on the state object
+and the three views share one answer.
+
+### Tests
+
+`tests/m65.test.mjs` (13) and `tests/m65-browser.test.mjs` (3). The resting rule
+is asserted as a **property** — every drawn event is main and every main event is
+drawn — over the repository's own corpus, so it survives the corpus doubling;
+nothing pins a count anywhere in either file. The browser suite computes what
+each view should draw with `emphasis.js` itself, over an atlas built from the
+same index the page fetches: the assertion is *the picture is the filter* and
+not a second implementation of the filter written in test code.
+
+**Twelve existing suites judged the old behaviour and were corrected with the
+commit that changed it**, which is deviation 717's rule and not deviation 711's:
+counts that were taken against the whole corpus are taken against the resting
+picture now, and from the same shared source, so they move with the rule instead
+of beside it.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
