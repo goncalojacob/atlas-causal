@@ -13,6 +13,21 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-18, after **M60** (on `m0`): **the timeline is the third view, and the
+window is set from the masthead.** The owner asked for the strip along the
+bottom of the map to stop eating the screen — *"something to choose the
+timeline is enough"* — and it does not, but it is not deleted either: a control
+can say which years are in the window and only the lanes can say where history
+is dense. So `Map | Graph | Timeline` share one pane, **the map and the graph
+have the layout's whole height where they had about 70 % of it**, and the two
+ends of the window, a density hint of one column per century, and the
+"N of N events in view" count stand in the masthead on all three. The view is
+in the URL and **switching one does not move the window**. First paint costs
+one more module (11 KB) and 189 fewer bars: the first mark is on screen at
+249 ms where it was at 261. `#split-timeline` is gone rather than left
+half-alive. The account is `## M60` below, and the three pictures are
+`docs/screens/m60-*.png`.
+
 2026-09-18, after **M57** (on `m0`): **the narrative the owner asked for, and
 the one link the atlas refuses to settle.** *Who was buying* walks 28 steps from
 the sugar cycle to 1 January 2023 on the claim that Brazil has been organised
@@ -11393,6 +11408,213 @@ say so" asks for.
      rewritten; the legacy Portuguese around them is untouched, because
      translating a module this run barely edits is not this run's change to
      make.
+
+## M60 — the timeline becomes a view, not a strip
+
+**The owner, 18 September, after using the atlas:** *"I don't think the bottom
+timeline on the map is still necessary, I think something to choose the
+timeline is enough"*. They were right that it should not permanently eat the
+bottom of the map, and the timeline is not deleted, because the strip did two
+jobs and a control can only do one of them. It **set the window** — the band
+and its two handles — and it **showed the distribution**: where history is
+dense, what a narrative's walk looks like in time, which events cluster. The
+first is now a control in the masthead. The second is why the timeline is the
+third view.
+
+### The three views, and how a reader moves between them
+
+The masthead carries `Map | Graph | Timeline`. One pane holds whichever is
+chosen, and the timeline gets the whole of it — the lanes, the clusters, the
+band and its handles, the axis, the density strip, exactly what it drew as a
+strip and with the height it never had. Everything its head comments record
+survives: it still asks `src/lanes.js`, **the same file the graph asks**; it
+still clusters with the map's own `cluster.js`; it still never stacks what the
+reader is working with; and **its lanes are still on the whole extent of the
+data whatever the window is** — neither file was touched.
+
+`view` was already URL state and now carries three values, so a link opens on
+the picture its sender saw. **Switching views does not touch the window**, the
+lens, the box or what is open: `tests/m60-browser.test.mjs` walks
+graph → timeline → map → timeline → graph and asserts the two ends are what
+they were at every step.
+
+Each picture is built the first time it is asked for, as the graph already was.
+The timeline used to be built on every load, whether it was being read or not.
+
+### The window control, and the density hint that was not refused
+
+In the masthead, where M48 put the graph filters and the layer switches
+(`src/window-control.js`):
+
+- **the two ends of the window**, as numbers to read and to type. They clamp to
+  the data and never cross — the band's own two rules — and what a reader types
+  goes into `?from=` and `?to=`, so a reload opens on it;
+- **a density hint beside them**: one column per century of the corpus, the
+  window's own centuries in cobalt and the rest in the faint wash. **It was
+  drawn, not refused.** It needed no new hex value, token or type size: the two
+  fills are `--cobalt` and `--cobalt-faint`, the type is the row's own, and the
+  column heights come from `columnHeight` in `src/density.js` — the same
+  logarithmic, absolute scale the timeline's own density strip uses, imported
+  rather than copied, so two drawings of one corpus cannot disagree about which
+  century is the busy one. Like the lanes, it stands on the **whole extent**
+  whatever the window is: narrowing marks fewer columns and never moves one;
+- **the "N of N events in view" count**, with the pin that gives the world back.
+
+### What happened to the count, and to the resize handle
+
+**The count** lived above the lanes and would have gone with them. It is in the
+masthead now, on all three views, computed from the same two files the lanes
+and the marks are drawn from (`emphasis.js`, `viewport.js`) and **only while
+the map is looking at part of the world** — a reader who has never moved the
+map pays nothing for it. It is said in one place, so it cannot disagree with
+itself; `src/timeline.js` no longer draws a note at all.
+
+**The resize handle `#split-timeline` is gone**, and so is the stored height it
+set. It existed to drag a strip that is always there; there is no strip, the
+chosen picture has the whole pane, and leaving the handle half-alive was the
+one thing the brief told this run not to do. `src/panes.js` is down to one
+edge — the panel's — and `readSizes` reads a `timeline` written by an older
+version into nothing, so a reader who had dragged it still opens the atlas.
+
+### What first paint costs, before and after
+
+Nine loads of `index.html` at 1440 × 900 through the test harness, medians:
+
+| | before (`origin/m0`) | after |
+|---|---|---|
+| first contentful paint | 48 ms | **44 ms** |
+| the first mark on the map | 261 ms | **249 ms** |
+| requests for the whole load | 108 | **109** |
+| bytes for the whole load | 5,934,906 | **5,948,391** |
+| drawn at load on the map view | 21 marks, **189 bars, 20 lanes** | 21 marks, **nothing else** |
+
+**One module more and one picture less.** The page fetches `window-control.js`
+(11,014 B raw, +13,485 B over the wire with its headers, 0.2 % of the load) and
+the same data files as before — not one byte of `data/` moved. Against that,
+the lanes are not packed and 189 bars are not built before the first mark is on
+screen. A reader who asks for `?view=timeline` pays what the strip used to
+cost, at the moment they ask: the bars are drawn at 263 ms, and there are 197
+of them where the strip drew 189, because the pane is taller.
+
+### The map pane
+
+The map and the graph now have the layout's whole height. It used to be
+`minmax(0, 1fr)` above a `var(--timeline-height, 30vh)` row and a 6 px handle,
+so **the picture was about 70 % of the layout and is 100 % of it**; on a phone
+it was the screen less an 8.5 rem strip. The tests assert the property and not
+a pixel count: the map's box reaches the bottom of the layout and is the
+layout's own height, on the desktop and on the phone alike. One consequence
+turned up in a test rather than in a measurement — at k = 8 over Portugal the
+taller pane has room for one more name, and a feature label now sits beside the
+cities where none fitted before (deviation 853).
+
+### Deviations
+
+848. **The resize handle was removed rather than left half-alive, and the
+     preference with it.** The brief asked for a decision about
+     `#split-timeline` and this is it: a handle that drags the height of a
+     strip that no longer exists is a control with nothing behind it.
+     `src/panes.js` lost `clampTimeline`, `MIN_TIMELINE`, `MAX_TIMELINE_SHARE`
+     and the `timeline` half of the stored size; `--timeline-height` is gone
+     from the stylesheet and `applySizes` writes one property. A stored
+     `{"panel":420,"timeline":260}` still opens the atlas at 420 and the 260 is
+     read into nothing — a preference from a version that had the strip is not
+     an error, it is a preference with nowhere to apply.
+
+849. **A hidden map would have published a box the reader cannot see.** With
+     the map behind another view its pane measures nothing, and `visibleBox`
+     answers with the *nominal* box when it does — so the map's own
+     `ResizeObserver`, which republishes the box whenever one is in force,
+     would have replaced the reader's box with the box of a picture that is not
+     on screen. It was latent before this milestone (switching to the graph did
+     it) and would have fired constantly once the timeline became a view. One
+     guard in `src/map/map.js`: a pane with no width or height publishes
+     nothing and does not record the size, so coming back is a change and is
+     drawn again.
+
+850. **The drawing was one ulp shorter than its own last lane.** With the whole
+     pane the lane height divides it exactly — 337 px over twenty rows is
+     16.85 — and `AXIS_HEIGHT + rows * laneHeight` in binary floating point
+     lands 6 × 10⁻¹⁴ px past the pane it was computed from. The SVG was
+     therefore a hair shorter than the ground under its bottom row, and
+     `tests/timeline-browser.test.mjs` caught it as "no lane below the
+     drawing". The height is rounded to a whole pixel now and the last lane is
+     carried down to it, which is half a pixel of honesty either way.
+
+851. **Two tests were measuring the strip's height and not the rule they were
+     about.** "A named grouping takes the lanes its pane holds" and "the lanes
+     are laid out again when the window changes height" both narrowed the
+     browser window to 460 px to make the pane too short for every lane. With
+     the strip gone a 460 px window is *taller* than the strip's 30 % ever was,
+     so both premises evaporated and both tests failed by passing nothing. They
+     ask for 300 px now, which is genuinely short. The rule they hold —
+     fewer lanes rather than a lane below the floor — is untouched.
+
+852. **The churn test was measuring the panel arriving.** "A state change
+     updates the bars in place and does not rebuild them" opened with nothing
+     selected and clicked a bar; that click both changes the state *and* brings
+     the panel back, which takes a third of the width from the pane the lanes
+     are packed into. While the timeline was a full-width strip under the
+     panel, that relayout cost it nothing; in the view's own column it is a
+     repack, and 90 of 609 elements were replaced. The test opens with a record
+     already open now, so the click under test is a state change and nothing
+     else: 7 removed and 12 added of 587.
+
+853. **A map with the whole layout's height writes one more name.** At k = 8
+     over Portugal with the events off, `tests/map-browser.test.mjs` asserted
+     that *every* label was a city's. That held only because the pane was short
+     enough that no feature label had room — `physical` and `mountains` are
+     both on in that link, and M38b gave them names. The taller pane fits one.
+     The assertion now says what it was always about: with the events off, no
+     event is named, and what is written is the cities' and the ground's. (It
+     was also one of the two tests that dropped in the *baseline* full run on
+     unmodified `origin/m0`, for load; alone on `origin/m0` it passes.)
+
+854. **M54's rule was re-tested through the control, which is what the brief
+     asked for.** "A place's faded rows follow the band without rebuilding the
+     card" and its territorial twin dragged the band; the band is on the
+     timeline now and the card is opened beside the map, so both narrow the
+     window from the masthead instead — *with the control standing where the
+     band stood*. Both still pass, and the card is still not rebuilt. The
+     place test also had to wait for the attribute shards to stop landing
+     before marking the card: the drag took long enough that they had settled
+     under it, and one state change does not.
+
+855. **The three band-drags that had to stay band-drags moved to the timeline
+     view**, since that is where the band is, and `dragWindowTo` now aims at a
+     *share of the drawing* rather than a pixel of the page — the timeline is
+     in the layout's own column and is no longer as wide as the window, so a
+     fixed `clientX` meant a different year than it used to.
+
+856. **Every other picture under `docs/screens/` still shows the strip.** The
+     three `m60-*` shots were taken with `--only`, so nothing else was
+     rewritten, which is what the brief asked for. It leaves twenty-odd
+     pictures from earlier milestones showing a layout the atlas no longer has.
+     The three that are *of* the timeline — `m43-timeline-wide`,
+     `m43-timeline-phone`, `m50-long-edge-timeline` — carry `view=timeline` in
+     their links in `tools/screens.mjs` now, so a run that retakes them gets
+     the picture they describe; their PNGs are for whoever retakes the set.
+
+857. **The timeline has room to spare under its rows, and that is the owner's
+     to spend.** A packed row is 22 px and there are at most twenty of them
+     (`ROW_HEIGHT`, `MAX_ROWS`), which is 498 px of an 800 px pane: under the
+     last row there is now empty ground where the strip had none. Neither
+     number was changed, because how tall a bar is and how many rows there may
+     be is what the timeline looks like, and CLAUDE.md says that is asked for
+     and not decided here. A named grouping fills more of it.
+
+858. **The category toggles are not shown on the timeline view.** They are in
+     the layer control, which is the map's legend and is hidden for the graph;
+     the timeline has no coastlines either, so it follows the graph's rule. A
+     category turned off on the map is still off in the lanes — `emphasis.js`
+     decides that for all three — but it cannot be turned off *from* the
+     timeline. Said here rather than fixed, because which controls belong to
+     which picture is M48's decision and this milestone only added a picture.
+
+859. **No record was written and no historical claim was made.** Nothing under
+     `data/` was touched; `node tools/validate.mjs --index` reports 0 errors
+     over 10,632 records, the same 1,208 warnings as before, and the index is
+     byte-identical.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
