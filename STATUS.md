@@ -10925,6 +10925,216 @@ milestone's to decide, and both are measurable the same way this one was.
      branch should not read the red as a broken tree, and the browser suite's
      stability on the runner is worth a milestone of its own.
 
+## M59 — the hundred that ended at a file boundary, and the two tests that had to disagree
+
+**The number that says whether the seam is closed.** Before: **100** active
+actors ended in exactly 1885 and **104** began in exactly 1886 — one fewer on
+each side than the brief's 17 September count, because M51, M53 and M55 had all
+moved actors since. After: **76 end in exactly 1885 and 97 begin in exactly
+1886**, and none of the 76 is bare. Twenty-four records stopped ending at a file
+boundary: 7 joined into their counterpart and 17 given a dissolution with the
+Wikidata item and property it was read from. The other 76 keep 1885 and now say
+what it is.
+
+**1885 and 1886 are where two files stop and start.** Historical Basemaps ends
+at 1885 and CShapes 2.0 begins at 1886, and neither is a fact about any polity.
+M51 closed the 26 pairs the name found. These hundred had no counterpart to pair
+with, so `tools/m59-singletons.mjs` asks the question backwards: for each record
+ending in 1885, which record beginning in 1886 is standing on its ground?
+10,400 comparisons, bounding boxes that do not touch skipped without a sweep,
+twenty-five seconds. `docs/m59-singletons.md` is the measurement and every
+verdict rests on a row of it.
+
+**The distribution refused to give a cut, and that is the finding of this
+milestone.** M51 chose 0.50 because the numbers offered it: an empty band 0.727
+wide against a widest-within-cluster gap of 0.066 — eleven times wider — so that
+moving the cut anywhere from 0.10 to 0.79 changed not one verdict. Here the
+widest gap is **0.1735** and the next is **0.1159**: 1.5 times, not eleven.
+There is no knee. A cut drawn at any of the three shallow notches would be a
+number fitted to the cases either side of it, which is what `NEAR_ZOOM` did and
+`NEAR_SPAN` had to undo.
+
+So **M59 does not draw one**. M51's own instruction is what a distribution like
+this calls for — *put everything near the cut to a person* — and here everything
+is near the cut. Geometry is demoted from verdict to **filter**: it narrows 100
+records to 24 that could possibly have a partner, and then M51 §4's name rule
+decides, and nothing looser.
+
+**A second ratio, which M51 did not need.** Its pairs were already name-matched,
+so a high intersection-over-the-smaller could only mean identity. A singleton's
+best territorial match is usually not its twin but its **container**, and that
+ratio reads **1.0000** for both: `lunda` measures 1.0000 against the Congo Free
+State and is a piece of it. Jaccard — intersection over the union — falls with
+the difference in size and gives Lunda **0.0373**. Both are in the table,
+because the first is M51's quantity and the cut inherited from it still reads
+that one.
+
+**Both directions of the two tests did real work, which is the whole reason
+there are two.**
+
+- `portuguese-guinea` against `guinea-bissau-under-portugal` is the pair every
+  string matcher would make. The outlines share **0.0572** of the smaller,
+  because Historical Basemaps draws the colony a degree north of where CShapes
+  draws it. The name proposed and the ground refused — the answer M51 got on
+  `harer-egypt`, reached from the other side.
+- `maori` against `new-zealand-under-united-kingdom` is **0.8260** of the union,
+  eighth-highest in the table. It is a people measured against the colony drawn
+  over them. The ground proposed and the name refused.
+- `manchu-empire` against `china` is **0.9655**, the highest jaccard anywhere in
+  the measurement, and is not joined. A dynasty and a country are not one name
+  in two spellings.
+
+**The seven joins.** Each is a polity that continued under a name the other
+import spells differently, which is what M51's 26 were, reached by geometry
+instead of by string:
+
+| survivor | merged | overlap | jaccard |
+| --- | --- | ---: | ---: |
+| `french-guiana` | `french-guyana` | 0.9457 | 0.8681 |
+| `british-guiana` | `guyana-under-united-kingdom` | 0.9589 | 0.5492 |
+| `rumania` | `romania` | 0.9277 | 0.5819 |
+| `ceylon` | `sri-lanka-ceylon-under-united-kingdom` | 0.9717 | 0.8790 |
+| `british-india` | `british-raj` | 0.9518 | 0.8975 |
+| `netherlands-indies` | `dutch-east-indies` | 0.9293 | 0.7977 |
+| `dutch-guiana` | `surinam-under-netherlands` | 0.9717 | 0.9095 |
+
+Every one is far above the inherited 0.50. No date is authored: each span is the
+1885 record's own start and the 1886 record's own end, both already in the atlas
+and each already carrying its source. Rule 11: 21 presences, 4 relations and one
+import-map entry moved in the same commit, and **no geometry was redrawn** — a
+presence changed its `actor` and nothing else, which is why `romania-1880` still
+keys into the 1880–1885 shard under `romania`.
+
+Two of the seven are corroborated from outside the join. `netherlands-indies`
+takes 1945 from the record it absorbed, and `Q188161` gives P576 1945-08-17;
+`ceylon` takes 1948, and `Q2670092` puts the Dominion of Ceylon's inception at
+1948-02-04, the day the record it absorbed ends. Neither date came from
+Wikidata; neither is contradicted by it.
+
+**The seventeen dissolutions.** `docs/m59-dates.md` put all 100 to
+`tools/import/wikidata.mjs --dates`: 40 matched an item, 21 carried a P576.
+Seventeen are written — Zululand to 1897 on `Q729768`, the Sokoto Caliphate to
+1903 on `Q600524`, the Empire of Japan to 1947 on `Q188712`, the United Kingdom
+of Great Britain and Ireland to 1927 on `Q174193` — each with the QID and the
+property on its `sources`, so a reader can go and disagree with it. **Only `end`
+moves**: the start on every one of them is still the first snapshot the dataset
+draws, which is a horizon too, and writing one on a P571 nobody asked for would
+be the overreach this seam is being cleared of.
+
+**Four of the 21 are refused, on one rule.** An item whose P571 is later than
+the record's last snapshot is not the polity the record draws. The Dominion of
+Ceylon begins in 1948 and the Netherlands Antilles in 1954, against a record
+drawn from 1715; French Indochina in 1887, two years after the last outline its
+record has. A match is not a date and a date is not a verdict.
+
+**The mark, which is the answer to the brief's "how you mark it is yours to
+design".** Nothing new was invented. `review.flags` and `review.note` are what
+M51 used to say why a record is what it is, and the import's own summary already
+carried the sentence *"the interval on this record is the span those snapshots
+cover, X to 1885, and not a claim about when this polity began or ended."* That
+is true and it is general. What it never said is that **1885 in particular is a
+file boundary**, and 1885 is the number a reader takes for a fact.
+`source-horizon` and its note make the existing sentence explicit rather than
+replacing it.
+
+**And the note says what was measured.** Three sentences are possible and each
+record gets its true one, read from `docs/m59-singletons.md` rather than written
+a second time: 40 records overlap no 1886-side record at all and say so; a
+record with a neighbour above the cut and a different name says the name is what
+refused; a record with the 1886 name and not its ground says that whatever the
+names say, this is not the same ground. The first draft told all seventy-six
+that nothing stood on their land, which was false for thirty-six of them.
+
+**Thirteen questions are written out rather than answered.** `docs/m59-singletons.md`
+§7 keeps the pairs where the ground found something real and the name would not
+allow a join — `manchu-empire` / `china`, `sweden-norway` / `sweden`,
+`bosnia-herzegovina-before-1886` against both `bosnia` and `herzegovina`,
+`gold-coast-gb` and `asante` against the same `ghana-under-united-kingdom`, and
+M51's own two, `italy` and `annam`, unchanged. They carry the mark with the
+rest, because the mark is what the record says; the question is what the
+document says.
+
+**No display change, `validate --index` clean at 0 errors, 1,648 → 1,657 tests.**
+Warnings fell from 1,215 to 1,208; citations rose from 11,026 to 11,043, which is
+the seventeen P576s. `tests/m59.test.mjs` pins no count of actors, as the brief
+asks: every assertion is a correspondence between the document, the ground and
+the records, because a count is a fact about one afternoon and a test holding one
+turns every later import into a false failure.
+
+### Deviations 827 to 836 — M59
+
+827. **Wikidata is reachable from this sandbox, and deviation 731 no longer
+     holds.** M49 had to run its lookup on a GitHub runner. This run put all 100
+     subjects to the API from the sandbox itself and spent 196 calls doing it, in
+     about fourteen minutes. The brief said so and the brief was right; nothing
+     was worked around to make it true.
+828. **`--dates` wrote M49's name and M49's provenance over another milestone's
+     rows.** `datesMarkdown` hard-coded the title, the sentence about the GitHub
+     runner, and `docs/m49-actors.md` as where the verdicts go. The runner
+     sentence in particular had become false. They are `--title`, `--provenance`
+     and `--verdicts` now, with M49's values as the defaults.
+829. **`docs/m49-dates.md` on disk is no longer byte-for-byte what its generator
+     produces**, because the "Generated on" paragraph was reflowed to take a
+     provenance of any length. Its content is unchanged and it was not
+     regenerated: it is the record of a run on 16 September and rewriting it
+     would be claiming that run happened differently. No test pins it.
+830. **Intersection over the smaller cannot tell identity from containment, and
+     M51 never had to.** Its pairs came pre-matched by name. Asked of a singleton
+     it answers 1.0000 for `lunda` inside the Congo Free State. Jaccard is the
+     second column, and without it the first three rows of the measurement would
+     have been three polities swallowed by their containers.
+831. **Two coincident rings annihilate under the even-odd rule, and the first
+     draft of the tool unioned them.** `guinea-bissau-under-portugal` has two
+     presences beginning in 1886 and `namibia-under-south-africa` two more —
+     successive drawings of one year, not halves of a territory. Merged into one
+     MultiPolygon, a point inside both crosses an even number of times and counts
+     as outside: Portuguese Guinea measured 0.0572 against the drawing the tool
+     saw and **0.0000** against the union of the two. Each drawing is measured on
+     its own now and the best-matching one is the row. Where they had not
+     coincided, the larger area would have been counted twice instead.
+832. **The distribution has no empty band, and the milestone was designed around
+     that rather than against it.** Widest gap 0.1735, next 0.1159 — 1.5 times,
+     where M51's was eleven. Fitting a cut to it would have been fitting it to
+     the cases either side, so no cut was drawn and geometry became a filter.
+     This is the reason only 7 of 24 candidates were joined.
+833. **The join's rewrite of the summary lost a verb, on five records, pushed.**
+     M51's rule is to repoint the interval sentence at the snapshots; the pattern
+     stopped at the comma and left the original's own "and not" standing, so five
+     survivors read "and that and not a claim". The sentence lives in
+     `tools/lib/span.mjs` now, with a second pattern that repairs what was
+     written and is a no-op on a sound summary.
+834. **The mark's first note told all 76 records that nothing stood on their
+     ground. It was false for 36 of them.** Written as one sentence for every
+     case, it would have put a claim on `maori` — which names
+     `new-zealand-under-united-kingdom` at 0.9416 — that the milestone's own
+     measurement contradicts. The note reads the measurement out of the document
+     now and says which of the three cases the record is.
+835. **A record with no `review` gets one appended after `where`.** CShapes actors
+     carry no review envelope, and `record.review = {...}` writes the key at the
+     end of the object and so at the end of the file. `tools/lib/order.mjs` writes
+     a record's keys in the order the schema declares them. The schema does not
+     care — `additionalProperties: false` is about which keys, not their order —
+     but a diff does, and an envelope that appears sometimes mid-file and
+     sometimes last makes a record look like something else.
+836. **Two pushed heads were red because CLAUDE.md's layout tree did not name
+     `tools/lib/span.mjs`.** `tests/site.test.mjs` holds that tree to every module
+     under `src/` and `tools/`, and the commit that added the module did not add
+     the line. The same test caught `tools/m59-singletons.mjs` and its two
+     siblings before they were pushed and this one after, because the full suite
+     was run before that commit and not after it. **A new file under `tools/` is a
+     line in CLAUDE.md in the same commit**, and `node --test tests/site.test.mjs`
+     takes eleven seconds.
+
+**On the browser flakes, which the brief warned about and which showed up
+exactly as described.** Four full runs dropped three different tests between
+them — `the source card fetches its own citer file` (a timeout),
+`zoomed to Portugal, Lisbon is named once`, `a drag of the band leaves the open
+explanation open`, and `selecting a polity finds the events on its ground`. Each
+passed on the next run with no change to the code it exercises. The two
+deterministic failures in the same runs were real and are fixed above: the layout
+tree, and `tests/import-map.test.mjs`, which named `dutch-east-indies` where
+gwcode 850 now names the survivor it was joined into.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
