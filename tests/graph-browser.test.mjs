@@ -98,23 +98,47 @@ const badges = (graph) => [...graph.matchAll(/class="cluster-count[^"]*"[^>]*>\+
 // run to change what the graph draws, so the arithmetic below says what the
 // picture actually accounts for and names what it does not.
 //
-// An event is folded twice when the highest ancestor of its chain is drawn
+// An event is folded twice when **the node it was folded into** is drawn
 // nowhere — a drawn node carries `data-id`, and a stack carries `data-stack`
 // and no id at all.
+//
+// Which node that is, is not "the highest ancestor" and never was: a parent
+// swallows its parts only when it is allowed to, and `collapseLayout` blocks
+// every ancestor of anything the reader is holding (collapse.js, M25's
+// never-hide rule). This read as the highest ancestor until M62, because the
+// corpus had no parent that was ever blocked; M62 wrote five umbrellas and
+// the Colonial War is an ancestor of half the carnation revolution's chain,
+// so with a selection its parts are their own nodes and counting them as
+// folded counted them twice. Two things say a parent kept its parts apart,
+// and both are on the page: it is drawn and not drawn `collapsed`, or one of
+// its parts has a mark of its own. Where nothing is held — the picture these
+// tests count most often — no parent is blocked, every chain walks to its
+// top, and this is the old reading exactly.
 async function foldedTwice(graph) {
   const corpus = await corpusOf(path.join(ROOT, 'data'));
   const events = new Map(corpus.events.filter((e) => e.status === 'active').map((e) => [e.id, e]));
   const drawn = new Set([...graph.matchAll(/<circle[^>]*data-id="([^"]+)"/g)].map((m) => m[1]));
+  const classOf = new Map([...graph.matchAll(/<circle\b([^>]*)>/g)]
+    .map((m) => [/data-id="([^"]*)"/.exec(m[1])?.[1], /class="([^"]*)"/.exec(m[1])?.[1]])
+    .filter(([id]) => id !== undefined));
+  const partsDrawn = new Set();
+  for (const event of events.values()) if (typeof event.parent === 'string' && drawn.has(event.id)) partsDrawn.add(event.parent);
+  const keptApart = (id) => {
+    const cls = classOf.get(id);
+    return (cls !== undefined && !/\bcollapsed\b/.test(cls)) || partsDrawn.has(id);
+  };
   let folded = 0;
   for (const event of events.values()) {
     if (typeof event.parent !== 'string') continue;
-    let top = event;
-    const seen = new Set([top.id]);
-    for (let up = events.get(top.parent); up && !seen.has(up.id); up = events.get(up.parent)) {
-      top = up;
+    let node = event;
+    const seen = new Set([node.id]);
+    for (;;) {
+      const up = typeof node.parent === 'string' ? events.get(node.parent) : null;
+      if (!up || seen.has(up.id) || keptApart(up.id)) break;
+      node = up;
       seen.add(up.id);
     }
-    if (!drawn.has(top.id)) folded += 1;
+    if (node !== event && !drawn.has(node.id)) folded += 1;
   }
   return folded;
 }

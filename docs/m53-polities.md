@@ -250,6 +250,7 @@ thirty-five of them carrying `actors: []`.
 | **before M53** | 1 of 36 | 198 of 285 |
 | **after M53** | 36 of 36 | 235 of 285 |
 | **after M57** | 36 of 36 | 254 of 304 |
+| **after M62** | 36 of 36 | 259 of 309 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -269,6 +270,17 @@ figure moves by nineteen in both columns and **the fifty that name nobody are
 still the same fifty**. The two rules — alive at the start, and overlapping —
 still give the same number, 254, so the sentence above about which rule was
 counted by is still true of this row as well.
+
+**The "after M62" row is that measurement taken a third time.** M62 wrote five
+umbrella events — the Estado Novo, the First Republic, the Ditadura Nacional,
+the Colonial War and the Brazilian dictatorship — so that the timeline's events
+could be part of something (`docs/m62-umbrellas.md`). All five name actors, so
+the figure moves by five in the whole-corpus column and not at all in the
+chain's, and **the fifty that name nobody are still the same fifty** — seven of
+them are the presidential elections M62 could not file for exactly that reason.
+The two rules still give the same number, 259, though four of M62's own
+`actors` entries are of the shape M56 is about: a party founded in 1912 is an
+actor of a republic that began in 1910, and `tests/m56.test.mjs` lists all four.
 
 ### 4.2 Where the entries came from
 

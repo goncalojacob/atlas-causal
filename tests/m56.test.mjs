@@ -69,9 +69,24 @@ const MEASURED = [
 // says neither may name the republic, while the café com leite politics, the
 // valorisation schemes from 1906 and the Acre question are all the republic's.
 // The records name it, and they are right to (docs/m57-claims.md).
+//
+// M62's four are the same argument again, and this time about a period rather
+// than a trade. An umbrella event is a stretch of years, so **its actors are
+// the actors of the stretch and not of its first day**: the First Republic
+// runs 1910–1926 and the Partido Democrático was founded in 1912, the
+// Republican Liberal Party in 1919 and the Democratic Left in 1920 — three
+// parties of that republic, none of them alive on the day it was proclaimed.
+// The Colonial War runs from February 1961 and FRELIMO was founded in 1962,
+// which does not stop it being one of the three movements the war was fought
+// against. The records name them, and they are right to
+// (docs/m62-umbrellas.md).
 const LATER = [
   ['the-brazilian-coffee-cycle', 'brazil'],
   ['the-amazon-rubber-boom', 'brazil'],
+  ['first-portuguese-republic-1910-1926', 'partido-democratico'],
+  ['first-portuguese-republic-1910-1926', 'republican-liberal-party'],
+  ['first-portuguese-republic-1910-1926', 'democratic-leftwing-republican-party'],
+  ['portuguese-colonial-war-1961-1974', 'frelimo'],
 ];
 
 test('all four entries the brief measured survive the overlap rule', () => {

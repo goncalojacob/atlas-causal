@@ -241,7 +241,9 @@ the regime the coup created.
 | `world-war-ii` | 1939–1945 | 16 | 8 | **3** |
 | `the-1930-revolution-and-the-vargas-era` | 1930–1945 | 26 | 3 | **3** |
 
-**World War II gains** `warsaw-uprising`, `katyn-massacre` and
+**World War II already held one child**, `eastern-front`, which M47 gave it out
+of what the corpus implied — the one umbrella in the atlas that was already
+doing this job. **It gains** `warsaw-uprising`, `katyn-massacre` and
 `potsdam-conference`. It does **not** gain the five others the actor test
 returns, and they are the clearest demonstration that the test is necessary
 and not sufficient:
