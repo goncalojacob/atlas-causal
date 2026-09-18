@@ -11789,7 +11789,10 @@ because the labels that used to be drawn over a neighbour are not built at all.
      explanation open and moves the horizon", timing out on a wait; that file
      alone is 26 of 26 green. A different test each run on an unchanged head
      is 844's measurement exactly: the browser suite under load, not a
-     regression, and not this milestone.
+     regression, and not this milestone. **The check itself came back green**:
+     run 886 on `c4059454`, the first head to carry all of M61, is a success,
+     and the run on M61's own last commit was cancelled by the push after it
+     rather than failed.
 
 868. **No record was written and no historical claim was made.** Nothing under
      `data/` was touched; `node tools/validate.mjs --index` reports 0 errors
