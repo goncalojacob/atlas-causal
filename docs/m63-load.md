@@ -6,8 +6,8 @@ Deviations 826, 844 and 876 established that it is not a regression and not one
 test. This is the measurement that says what it *is*, taken before anything was
 changed, so that the fix is chosen by a number rather than by a guess.
 
-**It turned out to be four things and not one.** The load the brief named is
-the first and the largest, and it is what hid the other three: with the
+**It turned out to be five things and not one.** The load the brief named is
+the first and the largest, and it is what hid the other four: with the
 contention removed, the same suite still dropped a test in two of three runs,
 and each of those was its own defect — two of them in the atlas itself.
 
