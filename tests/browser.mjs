@@ -299,6 +299,22 @@ export async function open(page, url, ready = 'return document.querySelectorAll(
   const loaded = page.once('Page.loadEventFired');
   await page.send('Page.navigate', { url });
   await loaded;
+  // The load event is not the first picture, and neither is a node being in
+  // the DOM: a paint timing is recorded when the compositor has presented a
+  // frame, a frame or two behind the elements a `ready` expression looks for.
+  // So a test that reads `first-contentful-paint` on a page that is ready by
+  // its own lights could find nothing recorded at all — which is how
+  // `sources.html never reported a first contentful paint` dropped one run in
+  // ten with the page perfectly well drawn (M63, docs/m63-load.md). A page is
+  // open here when it has painted. Bounded like everything else in this file,
+  // and a page that never paints still reaches the test, which has its own
+  // assertion about that and a better sentence for it.
+  for (let tries = 0; tries < 200; tries += 1) {
+    // eslint-disable-next-line no-await-in-loop
+    if (await page.eval('return performance.getEntriesByType("paint").some((e) => e.name === "first-contentful-paint");')) break;
+    // eslint-disable-next-line no-await-in-loop
+    await new Promise((resolve) => { setTimeout(resolve, 50); });
+  }
   for (let tries = 0; tries < 200; tries += 1) {
     if (await page.eval(ready)) return;
     await new Promise((resolve) => { setTimeout(resolve, 50); });
