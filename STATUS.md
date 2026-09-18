@@ -11798,6 +11798,215 @@ because the labels that used to be drawn over a neighbour are not built at all.
      `data/` was touched; `node tools/validate.mjs --index` reports 0 errors
      over 10,632 records and 5 regions, with the same 1,208 warnings as before.
 
+## M62 — the events that other events are part of
+
+**The owner, 18 September:** *"the timeline has too many events and gets very
+confusing because most events don't have a parent. For example, a lot of
+portuguese political events before 1974 could have as a parent 'Portuguese
+Dictatorship' or something like that... This way everything would be way more
+organized"*.
+
+Measured, and right. **304 active events, 12 with a parent, 292 top-level** —
+everything a peer of everything. And the reason was structural: **`estado-novo`
+existed as an *actor* and there was no Estado Novo *event*.** The atlas had the
+regime as a thing that acts and nothing that anything could be *part of*. That
+is also why **M48's top-level-only filter had been a no-op for a week**: the
+filter was right and the hierarchy was never written.
+
+**Top-level is 242 of 309 now, against 292 of 304.** Events with a parent go
+from **12 to 67**. Five umbrellas were written; **the top-level count falls by
+fifty**.
+
+### The five, and whose dates they are
+
+An umbrella here is **a real period with a sourced span**, never a bucket. Every
+span is Wikidata's, day-precision, with both Wikipedia editions cited by
+revision beside it — the owner's decision of 16 September, applied the way any
+other claim is. `docs/m62-umbrellas.md` is the measurement, written and
+committed before a single record was, as M51 and M58 did.
+
+| umbrella | span | source | filed |
+| --- | --- | --- | --- |
+| `first-portuguese-republic-1910-1926` | 1910-10-05 – 1926-05-28 | Q167360 | **14** |
+| `ditadura-nacional-1926-1933` | 1926-05-29 – 1933-03-19 | Q2729197 | **3** |
+| `estado-novo-1933-1974` | 1933-03-19 – 1974-04-25 | Q824489 | **24** |
+| `portuguese-colonial-war-1961-1974` | 1961-02-04 – 1974-04-25 | Q609836 | **6** |
+| `brazilian-military-dictatorship-1964-1985` | 1964-04-01 – 1985-03-15 | Q1370527 | **2** |
+
+Two umbrellas the corpus already held gained children as well: **`world-war-ii`**
+took `warsaw-uprising`, `katyn-massacre` and `potsdam-conference`, and **the
+Vargas era** took the three Brazilian records of 1941–42 — which is the brief's
+own trap handled the right way round, since those three are inside the Second
+World War's years and share an actor with it and are not part of it.
+
+### The rule for a child, which a date alone cannot settle
+
+**Inside the span *and* inside the subject.** Ninety parentless events start
+between 1926 and 1974, and that window also holds the Wall Street Crash, the
+Great Depression, the Holocaust and Vargas's Brazil. So a child must also be
+the umbrella's own: **its `actors` or its place put it there**.
+
+That test is **necessary and not sufficient**, and the measurement shows why —
+it puts `charter-of-the-united-nations` inside the Second World War (five shared
+belligerents) and `us-air-bases-in-the-brazilian-northeast-1942` inside it too
+(shared `united-states-of-america`). Neither is part of the war. The property is
+what the tests assert; the filing is a judgement and every one of them is
+written down, case by case, in `docs/m62-umbrellas.md`.
+
+Two rules of judgement were used, and both are stated so they can be argued
+with:
+
+- **A period named for a form of government does not contain the act that
+  created or destroyed it.** Before the coup the regime did not exist; after the
+  revolution it did not. So `republic-proclaimed-1910`, `coup-28-may-1926`,
+  `constitution-1933`, `carnation-revolution-1974`, `1964-brazilian-coup-detat`
+  and `operation-brother-sam-1964` stay top-level, on the boundary rather than
+  inside either side of it. **A war is different** — a war is made of its
+  fighting — so `angola-war-begins-1961` is filed inside the Colonial War.
+- **An event whose author is another state, with the umbrella as its object, is
+  not part of the umbrella.** `goa-annexed-1961` is India's operation; the
+  Estado Novo is what it was done to.
+
+**No child is dated outside its parent**: `validate --index` reports the warning
+`child-outside-parent` nought times, and `tests/m62.test.mjs` asserts it twice
+over, once against the records and once against the validator's own output.
+
+### What was refused, and why
+
+- **World War I — nothing qualified.** Sixteen parentless events fall in
+  1914–1918; **eight name no actor at all**, and the two the actor test returns
+  are the assassination of Franz Ferdinand, dated a month before the war the
+  record itself dates from 28 July, and the February Revolution, whose subject
+  is the Russian Revolution. It keeps the three children M47 gave it.
+- **"Portuguese dictatorship" as one period, 1926–1974** — the owner's own
+  phrase, and the one thing here not built as asked. No source names a single
+  period by that span: Wikipedia and Wikidata both give two, divided at the
+  constitution of 19 March 1933. One umbrella would have meant inventing a span.
+  The atlas holds both, so the timeline shows the regime the owner meant, in the
+  two pieces the sources say it was.
+- **The Third Portuguese Republic, 1974–** — still open, and
+  `third-portuguese-republic` sits on twenty-odd records as an actor. Filing
+  them all under one node replaces a flat list with a single trunk carrying the
+  same flat list.
+- **The PREC** — refused on the span, which the sources do not agree on:
+  Wikidata gives 11 March – 25 November 1975 and the Portuguese article gives,
+  in one paragraph, both the broad sense (25 April 1974 to the constitution of
+  April 1976) and the narrow one. Four events qualify under one reading and not
+  the other, and `parent` has no `disputada` to mark that with.
+- **The Cold War, 1947–1991** — ninety-seven parentless events in the span, five
+  by the actor test, and every one of those five is a case where "part of the
+  Cold War" *is* the historiographical argument. That belongs in an edge with an
+  explanation and a confidence.
+
+### The thing the owner should look at first
+
+**The Estado Novo is now drawn as a band and a wash**, and it is the first
+record in the atlas's life to be. `src/large.js` calls an event large when its
+parts fall in more than one lane, and the Estado Novo's fall in Europe, Africa
+and the Americas. Nothing in the corpus had ever triggered it — no record
+carries `scope`, and until now there were hardly any parents — so the machinery
+M30b built has been asleep since it was written.
+
+**It costs 221 KB**: `data/geo/regions.json` is fetched the first time a wash is
+actually drawn, and the window the atlas opens on holds this one, so index.html
+now asks for the lane polygons where it never used to. That is `large.js` doing
+exactly what plan decision 4 says, and this run did not touch it; whether the
+regime should be a wash, and whether a parent's parts should be able to make one
+without anybody writing `scope`, is the owner's to decide (deviation 873).
+
+### What this run did not do
+
+**No edge and no causal claim.** `parent` stays a display fact: saying the
+decree is part of the regime takes no edge and asserts no cause, and the five
+umbrellas carry the `degree-zero` warning to prove it. **No invented date.** No
+new record type, confidence value, hex value, token or type size. No change to
+`src/` at all. Nothing merged into `main`; `docs/drafts/` ignored.
+
+**Checks.** `node tools/validate.mjs --index`: **10,637 records, 0 errors**,
+1,213 warnings — five more than the 1,208 at the head this run started from, and
+all five are `degree-zero` on the new umbrellas. Records first, rebuild, then
+the index (deviation 798).
+
+**Tests: 1,712 and 0 skipped**, against 1,702 at the head this run started from.
+Ten are `tests/m62.test.mjs`, which finds an umbrella by its `review` flag and
+so **pins no count and lists no id**: a closed span, a source cited for it, a
+child whose actors or place put it inside its umbrella, rule 24 and the
+`child-outside-parent` warning both ways, no empty umbrella, more children than
+umbrellas so the top-level count falls, and a correspondence in both directions
+with `docs/m62-umbrellas.md`.
+
+### Deviations
+
+869. **A review flag is how an umbrella is found, and two records that were
+     already umbrellas got one.** `tests/m62.test.mjs` had to name its subject
+     without naming a record, so the five new umbrellas carry
+     `review.flags: ["m62-umbrella"]` — the idiom `m50-chain`, `m51-joined` and
+     `m59-joined` already use. `world-war-ii` and
+     `the-1930-revolution-and-the-vargas-era` carry it too, because this run
+     filed children into them and the tests must judge those filings by the same
+     rule. It is an edit outside `parent` on two records the brief scoped to
+     `parent`, and it is a note about review rather than a claim about the
+     world, which is what `review` is for.
+
+870. **Seven presidential elections could not be filed, and the reason is a
+     finding.** `may-1915-`, `august-1915-`, `1918-`, `1919-`, `1923-`,
+     `1925-` and `1951-portuguese-presidential-election` **name no actor and no
+     place at all**. Their titles say plainly what they are, but a title is not
+     what the rule reads, and nothing *on the record* puts them inside a
+     subject. Filing them would have meant supplying the relation from outside
+     the corpus, which is the bar M47 set and this milestone kept for children.
+     They are one actor line away from being filable and that line is a records
+     milestone's work.
+
+871. **Three suites were written to fail rather than go quiet when the corpus
+     grows past them, and all three did.** `tests/m53.test.mjs` holds the last
+     row of the count table in `docs/m53-polities.md` against the live corpus,
+     so the table gets an **"after M62" row, 259 of 309**, taken the same way.
+     `tests/m56.test.mjs` lists the `actors` entries the start-only rule and the
+     overlap rule disagree about, so M62's **four** are listed beside M57's two
+     — a party founded in 1912 is an actor of a republic that began in 1910, and
+     FRELIMO, founded in 1962, is a belligerent of a war that began in 1961.
+     Neither was a fix; both were the mechanism working.
+
+872. **`foldedTwice` read "the highest ancestor", and that is only the node an
+     event was folded into when the parent was allowed to swallow it.**
+     `collapseLayout` blocks every ancestor of anything the reader is holding
+     (M25's never-hide rule). No parent in the corpus had ever been blocked,
+     because there were hardly any parents; the Colonial War is an ancestor of
+     half the carnation revolution's chain, so under `?selected=` its parts are
+     their own nodes and the helper counted six of them twice — 315 against 309.
+     It now walks only through parents that actually folded, which two things on
+     the page say: the parent is drawn and not drawn `collapsed`, or one of its
+     parts has a mark of its own. **Where nothing is held it is the old reading
+     exactly**, and the plain and banded pictures give the same nineteen they
+     gave before. The graph itself was not touched.
+
+873. **The lane polygons were asserted at a flat zero, and the Estado Novo is
+     the first event to want them.** `tests/spine-pages.test.mjs` said no page
+     fetches `data/geo/regions.json`, which was true only because **nothing in
+     the corpus had ever been large**. The rule (index2-plan, D2) is that the
+     shapes are fetched by the wash a `regional` event is drawn as, and there is
+     one now. The assertion is the rule in both directions now — a page that
+     asked has a wash to show for it, and a page that drew none never asked —
+     and what the wash costs is above, for the owner.
+
+874. **A push was rejected once, and it was M61's run finishing rather than
+     another agent on M62.** The protocol says a rejected push while working
+     means another agent is writing to `m0` and to stop. The commit was
+     `c342061c`, M61 reporting that its check came back green: two documentation
+     files, no `data/`, landing after this run's own claim line. Rebased onto it
+     and continued, since the thing section 3 protects against — two runs
+     writing the same records — was not what had happened.
+
+875. **`sources.html` is written by `build-index.mjs` too, and went out one
+     commit late.** The prerendered bibliography counts citations, the umbrellas
+     added fifteen, and `validate --index` compares the prerender with a fresh
+     build. It was green locally because the working tree had it and the commit
+     did not — deviation 798's shape exactly, one file further on. The amendment
+     of 15 September names the index and deviation 796 names the palette;
+     **`sources.html` and `narratives.html` are the third thing that goes stale
+     on the commit that writes a record**.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
