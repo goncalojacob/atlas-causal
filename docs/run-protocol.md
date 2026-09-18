@@ -157,3 +157,19 @@ stays on `m49` until a separate merge run lands it, carrying that branch's
 own `STATUS.md` paragraphs, counts and deviations across with deviation 461's
 renumbering. A run on `m0` must not wait for `m49`, and M49 must not push to
 `m0` anything but those two lines.
+
+## Amendment, 18 September 2026 — unshallow before the first validate
+
+**The sandbox clones shallow, and `validate --index` reports errors that are
+not there until it does not.** Every one of them is a history shard:
+`tools/lib/history.mjs` builds them out of the commits that touched each
+record's file, refuses a shallow clone outright rather than reading it for what
+it holds, and so names different files from the committed ones. It cost M65 a
+confused reading of a clean tree (deviation 887) and M64 the same one on a run
+that had touched no record at all (deviation 897).
+
+So: **`git fetch --unshallow origin` belongs beside the claim of section 2**,
+before the run's first `validate`, and not after 69 errors have been read as
+real. It is one command, it is idempotent — a repository that is already whole
+answers at once — and since the amendment of 15 September makes `--index` the
+validator every run reaches for, every run needs it.

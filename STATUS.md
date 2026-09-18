@@ -12584,16 +12584,15 @@ not offer at all.
      the 4 September amendment already carves one out for an import branch the
      run itself pushed.
 
-897. **`validate --index` reported 69 errors that were not there, because the
-     sandbox's clone is shallow.** Every one of them was a history shard —
-     `history-event-1400-1499-…` and its kin — and `tools/lib/history.mjs`
-     refuses a shallow clone outright rather than reading it for what it holds,
-     so the shards it builds here name different files from the committed ones.
-     `git fetch --unshallow origin` and the same command reports **0 errors**.
-     It cost one confused reading of a clean tree, and it is worth a line
-     because the amendment of 15 September makes `--index` the validator every
-     run with records uses: a run that sees 69 errors on a tree it has not
-     touched should check the clone before it believes them.
+897. **Deviation 887 again, on a run that touched no record at all: the same 69
+     phantom errors from the same shallow clone.** It cost a confused reading of
+     a clean tree for the second milestone running, and `git fetch --unshallow
+     origin` answered it for the second time. 887 recorded it; this records that
+     it is **every session and not one**, because each one is cloned afresh.
+     Worth a line in `docs/run-protocol.md` rather than in a second STATUS
+     entry: since the amendment of 15 September makes `--index` the validator
+     every run uses, the unshallow belongs beside the claim, before the first
+     `validate` and not after it.
 
 898. **Closed is the strip removed from the document, not hidden.** `hidden`
      would have been one attribute and would have kept the subscription, the
