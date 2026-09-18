@@ -21,6 +21,7 @@ import { defaultState } from '../src/state.js';
 import { resolveWindow, overlaps } from '../src/util/window.js';
 import { withBrowser, open, waitFor, seenIntro, watchErrors, errorsOn } from './browser.mjs';
 import { LOADING_LABEL } from '../src/attributes.js';
+import { workingSet } from '../src/emphasis.js';
 
 const chrome = findChrome();
 const skip = chrome ? false : 'no headless browser found; set $CHROME to one';
@@ -114,9 +115,17 @@ const badges = (graph) => [...graph.matchAll(/class="cluster-count[^"]*"[^>]*>\+
 // its parts has a mark of its own. Where nothing is held — the picture these
 // tests count most often — no parent is blocked, every chain walks to its
 // top, and this is the old reading exactly.
-async function foldedTwice(graph) {
+//
+// **Over what the picture is of, and not over the corpus, since M65.** At rest
+// no view draws an event that is part of another, so a part is not folded into
+// anything — it is not in the picture at all, and counting it as folded would
+// count 46 events the drawing never had. `drawable` is `emphasis.js`'s own
+// answer for the state the URL describes.
+async function foldedTwice(graph, drawable) {
   const corpus = await corpusOf(path.join(ROOT, 'data'));
-  const events = new Map(corpus.events.filter((e) => e.status === 'active').map((e) => [e.id, e]));
+  const events = new Map(corpus.events
+    .filter((e) => e.status === 'active' && drawable.has(e.id))
+    .map((e) => [e.id, e]));
   const drawn = new Set([...graph.matchAll(/<circle[^>]*data-id="([^"]+)"/g)].map((m) => m[1]));
   const classOf = new Map([...graph.matchAll(/<circle\b([^>]*)>/g)]
     .map((m) => [/data-id="([^"]*)"/.exec(m[1])?.[1], /class="([^"]*)"/.exec(m[1])?.[1]])
@@ -166,19 +175,21 @@ const WHOLE = `degree=0&from=${Math.min(...YEARS)}&to=${Math.max(...YEARS)}`;
 const ATLAS = await atlasOf(path.join(ROOT, 'data'));
 const WINDOW = resolveWindow(defaultState(), ATLAS.extent, ATLAS.opens);
 
-// How many events the graph would draw one node each for, straight from the
-// index the browser reads: the number the marks and the badges have to add
-// back up to.
-async function activeEvents() {
-  // Rows over an id table since I2, read back the way the browser reads them:
-  // the core, and the attribute shards filled into it (I4b). `status` is a core
-  // column, so the count is the core's own answer either way — reading the
-  // whole of it is what keeps this helper honest about what the index holds.
-  return ACTIVE.length;
-}
+// How many events the graph would draw one node each for: the number the marks
+// and the badges have to add back up to.
+//
+// **The resting picture and not the corpus, since M65.** At rest every view
+// draws the main events alone; an event that is part of another is inside the
+// event it belongs to and is drawn when a reader opens that one. Asked of
+// `emphasis.js`, which is the one place that decides what a view may draw, so
+// this count follows the rule rather than repeating it — and it is a count of
+// what the picture is *of*, which is what makes the arithmetic below a promise
+// about folding and not about the size of the corpus.
+const drawableOf = (patch = {}) => workingSet(ATLAS, { ...defaultState(), degree: 0, ...patch }).shown;
 
 test('at the default zoom the graph draws stacks, and they add up to the events', { skip }, async () => {
-  const events = await activeEvents();
+  const drawable = drawableOf();
+  const events = drawable.size;
   const dom = await withServer((url) => dumpDom(chrome, url(`?view=graph&${WHOLE}`)));
   const graph = graphOf(dom);
   const drawn = marks(graph);
@@ -190,12 +201,13 @@ test('at the default zoom the graph draws stacks, and they add up to the events'
   // only folded into it — and what is folded into a parent that a stack then
   // swallowed is in neither badge, which is the graph's defect and not the
   // drawing losing a record.
-  assert.equal(drawn + hidden.reduce((a, b) => a + b, 0) + await foldedTwice(graph), events);
+  assert.equal(drawn + hidden.reduce((a, b) => a + b, 0) + await foldedTwice(graph, drawable), events);
   for (const n of hidden) assert.ok(n >= 1, 'a badge never says +0');
 });
 
 test('grouping into bands crowds the picture, and more of it merges', { skip }, async () => {
-  const events = await activeEvents();
+  const drawable = drawableOf();
+  const events = drawable.size;
   const [plain, banded] = await withServer(async (url) => [
     graphOf(await dumpDom(chrome, url(`?view=graph&${WHOLE}`))),
     graphOf(await dumpDom(chrome, url(`?view=graph&group=region&${WHOLE}`))),
@@ -212,7 +224,7 @@ test('grouping into bands crowds the picture, and more of it merges', { skip }, 
   // thing it is about.
   assert.ok(marks(banded) < marks(plain), `${marks(banded)} marks in bands, ${marks(plain)} without`);
   for (const graph of [plain, banded]) {
-    assert.equal(marks(graph) + badges(graph).reduce((a, b) => a + b, 0) + await foldedTwice(graph), events);
+    assert.equal(marks(graph) + badges(graph).reduce((a, b) => a + b, 0) + await foldedTwice(graph, drawable), events);
   }
 });
 
@@ -232,7 +244,11 @@ test('a merged line carries its count and its type; a single one is unchanged', 
 });
 
 test('the selected event and its chain are never inside a stack', { skip }, async () => {
-  const events = await activeEvents();
+  // Since M65 a choice is a filter, so what this picture has to add back up to
+  // is what the choice leaves: the event, its parts, what it is part of and one
+  // hop either way.
+  const drawable = drawableOf({ selected: 'carnation-revolution-1974' });
+  const events = drawable.size;
   const dom = await withServer((url) => dumpDom(chrome, url(`?view=graph&selected=carnation-revolution-1974&${WHOLE}`)));
   const graph = graphOf(dom);
   // Its own mark, drawn last so it is on top, and not a stack. It is on the
@@ -243,7 +259,7 @@ test('the selected event and its chain are never inside a stack', { skip }, asyn
   // leaves fewer stacks than the same picture with nothing selected.
   const plain = graphOf(await withServer((url) => dumpDom(chrome, url(`?view=graph&${WHOLE}`))));
   assert.ok(stacks(graph) < stacks(plain), `${stacks(graph)} stacks with a selection, ${stacks(plain)} without`);
-  assert.equal(marks(graph) + badges(graph).reduce((a, b) => a + b, 0) + await foldedTwice(graph), events);
+  assert.equal(marks(graph) + badges(graph).reduce((a, b) => a + b, 0) + await foldedTwice(graph, drawable), events);
 });
 
 // R7: o grafo aberto numa janela estreita. `fitToWindow` só atribui
@@ -292,6 +308,15 @@ const TITLED = (id) => `
   const title = el && el.querySelector('title');
   return Boolean(title) && title.textContent !== ${JSON.stringify(LOADING_LABEL)};`;
 
+// **M65 supersedes the semantic collapse in the two tests below.** The graph
+// used to draw a parent's parts inside it while the reader was zoomed out;
+// since M65 no view draws a part at rest at all, and a reader who opens the
+// parent is holding its parts, which M25's never-hide rule keeps out of any
+// fold. So the collapse no longer fires in either picture: what it said —
+// *there is more inside this one* — the resting rule says by hiding the parts,
+// and the ring (M30c) still says it on the mark. `collapseLayout` is unchanged
+// and `tests/collapse.test.mjs` still holds it to its own rule.
+//
 // `from=1200&to=2025` in the three tests below, and it is not decoration.
 // Since M43b the atlas opens on the century that holds most of the corpus
 // (util/window.js, `opensOn`), and a window that is a small share of the data
@@ -300,40 +325,27 @@ const TITLED = (id) => `
 // view is now *above* the threshold these tests are about, and naming the
 // whole extent is how a reader asks for the zoomed-out picture the collapse
 // belongs to. Nothing else about them changes.
-test('a parent holds its parts at the default zoom and gives them up when the reader zooms in', { skip }, async () => {
+test('at rest a parent keeps its parts out of the graph, and choosing it draws them beside it', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await watchErrors(page);
     await open(page, url(`?fixtures=1&view=graph&from=1200&to=2025&${WHOLE}`), drawnGraph);
     await waitFor(page, TITLED('fixture-event-f'), "the parent's century to land");
 
-    const collapsed = await page.eval(`
+    const resting = await page.eval(`
       const el = document.querySelector('svg.graph circle.node[data-id="fixture-event-f"]');
-      const badge = document.querySelector('svg.graph .cluster-count[data-collapsed="fixture-event-f"]');
       return {
         classes: el ? el.getAttribute('class') : null,
-        badge: badge ? badge.textContent : null,
         title: el ? el.querySelector('title').textContent : null,
       };`);
-    assert.match(collapsed.classes ?? '', /\bcollapsed\b/, 'the parent says it is holding something');
-    assert.equal(collapsed.badge, '+2', 'and how many');
-    // The count is counted; the weight is the subtree's, which the index
-    // derived. A weight is not a count, so both are said and neither is
-    // said twice.
-    assert.match(collapsed.title, /2 parts drawn inside it, weight 6/);
+    assert.ok(resting.classes, 'the parent itself is drawn at rest');
+    assert.doesNotMatch(resting.classes, /\bcollapsed\b/, 'and holds nothing inside it, because there is nothing to hold');
     for (const id of ['fixture-event-t', 'fixture-event-h']) {
-      assert.equal(await page.eval(NODE(id)), false, `${id} is inside its parent, not beside it`);
+      assert.equal(await page.eval(NODE(id)), false, `${id} is part of F and is not drawn at rest`);
     }
 
-    // One notch of the wheel past the threshold, on the graph itself: the
-    // parts come back, where they always were.
-    await page.eval(`
-      const svg = document.querySelector('svg.graph');
-      const box = svg.getBoundingClientRect();
-      svg.dispatchEvent(new WheelEvent('wheel', {
-        bubbles: true, cancelable: true, deltaY: -600,
-        clientX: box.left + box.width / 2, clientY: box.top + box.height / 2,
-      }));
-      return true;`);
+    // Choosing the parent is what puts its parts in the picture, and they are
+    // their own nodes: what the reader opened is never folded away from them.
+    await open(page, url(`?fixtures=1&view=graph&selected=fixture-event-f&from=1200&to=2025&${WHOLE}`), drawnGraph);
     await waitFor(page, NODE('fixture-event-t'), 'the parts to be drawn on their own');
     assert.equal(await page.eval(NODE('fixture-event-h')), true, 'both of them');
     const parent = await page.eval(`
@@ -372,14 +384,17 @@ const RING = `
     },
   };`;
 
-test('a parent keeps its ring at every zoom, collapsed or parted', { skip }, async () => {
+test('a parent keeps its ring at rest and at every zoom', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await watchErrors(page);
+    // At rest, where its parts are not drawn at all: the ring is the whole of
+    // what says there is more inside this one, which is what M30c built it for
+    // and what M65 leaves it doing alone.
     await open(page, url(`?fixtures=1&view=graph&from=1200&to=2025&${WHOLE}`), drawnGraph);
     await waitFor(page, TITLED('fixture-event-f'), "the parent's century to land");
 
     const held = await page.eval(RING);
-    assert.match(held.node.classes, /\bcollapsed\b/, 'at this zoom the parts are inside it');
+    assert.doesNotMatch(held.node.classes, /\bcollapsed\b/, 'nothing is folded into it: its parts are not in the picture');
     assert.equal(held.rings, 1, 'one ring, for the one parent on the fixtures');
     assert.ok(held.ring, 'and the parent has it');
     assert.ok(held.ring.sibling, 'beside the node, in the same layer');
@@ -389,9 +404,11 @@ test('a parent keeps its ring at every zoom, collapsed or parted', { skip }, asy
     assert.equal(held.ring.events, 'none');
     assert.doesNotMatch(held.ring.classes, /\bnode\b/, 'a ring is an outline, not a record');
 
-    // One notch of the wheel past the threshold: the parts come out and the
-    // parent stops being collapsed. The ring stays, because it is not about
-    // the zoom — it is about the record having parts at all.
+    // The reader opens it and zooms in: the parts come out beside it. The ring
+    // stays, because it is not about the zoom and not about the choice — it is
+    // about the record having parts at all.
+    await open(page, url(`?fixtures=1&view=graph&selected=fixture-event-f&from=1200&to=2025&${WHOLE}`), drawnGraph);
+    await waitFor(page, NODE('fixture-event-t'), 'the parts to be drawn on their own');
     await page.eval(`
       const svg = document.querySelector('svg.graph');
       const box = svg.getBoundingClientRect();
@@ -400,7 +417,6 @@ test('a parent keeps its ring at every zoom, collapsed or parted', { skip }, asy
         clientX: box.left + box.width / 2, clientY: box.top + box.height / 2,
       }));
       return true;`);
-    await waitFor(page, NODE('fixture-event-t'), 'the parts to be drawn on their own');
     const parted = await page.eval(RING);
     assert.doesNotMatch(parted.node.classes, /\bcollapsed\b/, 'nothing is folded into it now');
     assert.ok(parted.ring, 'and it is still ringed');
@@ -470,7 +486,12 @@ test('a mark outside the rectangle on screen is not drawn, and the selection is 
     // The leftmost event of the fixtures is the selected one, and the wheel
     // is turned over the rightmost: ten notches later the selection is a long
     // way off the left of the screen.
-    await open(page, url(`?fixtures=1&view=graph&selected=fixture-event-a&from=1200&to=2025&${WHOLE}`), drawnGraph);
+    // **`focus=none`**, which is the reader turning the implicit lens off
+    // (lens.js): since M65 a selection is a filter, and a picture narrowed to
+    // one event's neighbourhood has nothing to cull. What this test is about is
+    // the culling and the selection's exemption from it, so it asks for the
+    // whole resting picture and keeps the selection in it.
+    await open(page, url(`?fixtures=1&view=graph&selected=fixture-event-a&focus=none&from=1200&to=2025&${WHOLE}`), drawnGraph);
     await waitFor(page, TITLED('fixture-event-g'), 'the fixtures to be named');
     const rest = await page.eval(DRAWING);
     assert.ok(rest.nodes.length > 4, `the whole picture is drawn at rest (${rest.nodes.length} marks)`);

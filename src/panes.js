@@ -21,6 +21,15 @@
 import { PHONE_QUERY } from './phone.js';
 
 export const STORAGE_KEY = 'atlas-causal.panes';
+// And the one thing on the map that is arranged rather than shown: whether the
+// band M64 opens over it is open (map-band.js). It is a preference by exactly
+// the argument above — it says nothing about what the atlas is showing, so a
+// link carries the window and never the control that set it — and it is kept
+// here because this is the file that remembers how a reader has arranged their
+// window, not because it is a size. Its own key rather than a field of the one
+// above, so that a panel dragged and a band opened cannot write over each
+// other's answer.
+export const BAND_KEY = 'atlas-causal.band';
 // What must be left of each pane for it to be worth drawing at all. The
 // panel's minimum is a line of prose at the type scale's measure; the map's
 // is about a continent.
@@ -59,6 +68,30 @@ export function writeSizes(storage, sizes) {
     return true;
   } catch {
     // A browser with storage turned off still resizes; it just forgets.
+    return false;
+  }
+}
+
+// Closed on a first visit, and closed for anything that is not the word this
+// file writes: a value from a version that stored something else, or storage
+// that refuses to be read, must not decide that a reader wants a control they
+// have never opened. The brief's "closed on a first visit" is this default and
+// not a line in `map-band.js`.
+export function readBandOpen(storage) {
+  try {
+    return storage?.getItem(BAND_KEY) === 'open';
+  } catch {
+    return false;
+  }
+}
+
+export function writeBandOpen(storage, open) {
+  try {
+    storage?.setItem(BAND_KEY, open ? 'open' : 'closed');
+    return true;
+  } catch {
+    // A browser with storage turned off still opens and closes the band; it
+    // just forgets, exactly as it forgets a dragged edge.
     return false;
   }
 }

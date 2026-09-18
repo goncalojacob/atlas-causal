@@ -40,11 +40,77 @@
 // drift (health review A, finding 28).
 import { FOCUS, FOCUS_KINDS, FOCUS_NONE } from './vocab.js';
 import { subgraph } from './graph.js';
+import { horizonSet } from './horizon.js';
 import { narrativeEventIds, readingNarrative } from './narrative.js';
 import { bounds } from './util/dates.js';
-import { overlaps } from './util/window.js';
+import { horizonIsOpen, overlaps } from './util/window.js';
 
 export { FOCUS_KINDS, FOCUS_NONE };
+
+// ─── the resting picture ───────────────────────────────────────────────────
+//
+// **At rest every view draws only the main events** (M65, the owner of 18
+// September: "everywhere, graph, map and timeline you should only see the main
+// events"). An event is *main* when it is not part of another — no `parent`,
+// or a parent that is not an active event here, because an event filed under
+// an umbrella that was retracted or never written hangs nowhere and is the
+// top of its own branch.
+//
+// `parent` is a **core** column (spine.js), so this is known on the first
+// frame and costs no shard and no wait: the resting picture is smaller than
+// the corpus from the first paint rather than a fifth of the marks vanishing
+// when a century lands.
+//
+// This is not a lens. A lens is a question the reader asked and it removes
+// what the question does not reach; the resting picture is what the atlas
+// draws when nobody has asked anything, and `lensView` still answers null for
+// it. The two meet in `emphasis.js`, which is the one place a view is told
+// what it may draw.
+export function isMain(topology, event) {
+  const parent = typeof event?.parent === 'string' ? event.parent : null;
+  if (!parent) return true;
+  return (topology.events?.get(parent)?.status ?? null) !== 'active';
+}
+
+// The resting picture itself: the main events, plus whatever the reader is
+// already holding. The second half is `keptRegardless`'s own rule and not a
+// second one — a `?chain=` that arrives in a shared link with no event
+// selected is a walk the reader is being shown, and a step of it filed under
+// a war would otherwise be a link into nothing.
+export function restingSet(topology, state = null) {
+  const ids = new Set();
+  for (const event of topology.activeEvents ?? []) if (isMain(topology, event)) ids.add(event.id);
+  if (state) for (const id of keptRegardless(topology, state)) ids.add(id);
+  return ids;
+}
+
+// What a set of events is part of, all the way up: the parents, their parents,
+// and so on, minus the set itself. **A lens never hides what its own events
+// are part of** (M65): a reader who has walked down into a regime must be able
+// to see the regime, and what an event is part of is not clutter.
+//
+// It can only ever widen a lens, so nothing a lens found is lost to it — M54's
+// territorial answer is what it was, with the umbrella over it drawn too.
+//
+// Walked through `parent` and never through the adjacency, for the reason
+// `eventsOfFocus` walks `childrenOf`: being part of something is a display
+// fact and not an argument. A visited set, because rule 24 refuses a cycle and
+// a lens draws whatever is in the file.
+export function parentsOf(topology, set) {
+  const parents = new Set();
+  for (const id of set) {
+    let at = topology.events?.get(id) ?? null;
+    while (at) {
+      const parent = typeof at.parent === 'string' ? at.parent : null;
+      if (!parent || parents.has(parent) || set.has(parent)) break;
+      const record = topology.events?.get(parent) ?? null;
+      if (!record || record.status !== 'active') break;
+      parents.add(parent);
+      at = record;
+    }
+  }
+  return parents;
+}
 
 // "actor:salazar" → { kind: 'actor', id: 'salazar' }. Anything else is null,
 // including a focus on a kind that has no lens; the URL is untrusted input
@@ -364,6 +430,27 @@ export function activeFoci(atlas, state) {
     // card. The same rule the two cards below follow.
     return (eventsOfFocus(focus, atlas)?.size ?? 0) > 0 ? [focus] : [];
   }
+  // **Choosing an event is a focus on it** (M65). It used to be an emphasis
+  // over the whole corpus — the mark ringed, the rest of the atlas drawn as
+  // it was — and the owner asked for the other thing: "when you click on a
+  // specific event, in both the map, graph and timeline the other unrelated
+  // events are hidden and only the children events and direct connections are
+  // shown". An `event:` focus is already the event and its parts, and the ring
+  // every focus gets is already the one hop; what this line adds is that a
+  // click sets one.
+  //
+  // **Before the two cards below and after the narrative.** A reader reading a
+  // walk has an event open at every step and the walk is what they came for,
+  // so the narrative still wins — a step that narrowed the atlas to itself
+  // would hide the rest of the argument. A place or an actor does not: the
+  // click on the event is the later and the more particular of the two acts,
+  // and a reader who opens Angola and then picks one event out of it is asking
+  // about that event. M54's rule is about the territorial selection itself,
+  // which is untouched: opening a territory is still a lens on all of its
+  // ground, and its card still lists everything inside the outline.
+  if (state?.selected && (eventsOfFocus({ kind: 'event', id: state.selected }, atlas)?.size ?? 0) > 0) {
+    return [{ kind: 'event', id: state.selected }];
+  }
   for (const [key, kind] of [['place', 'place'], ['actor', 'actor']]) {
     if (!state?.[key]) continue;
     const found = atlas.resolve?.(state[key]) ?? null;
@@ -399,6 +486,19 @@ export function keptRegardless(atlas, state) {
     if (!edge || edge.status !== 'active') break;
     ids.add(edge.from);
     ids.add(edge.to);
+  }
+  // And, since M65, what the open horizon says the selected event led to.
+  // "Where the open event leads directly" was enough while a selection was an
+  // emphasis over the whole atlas; now that it is a filter of one hop, an
+  // answer to *what had this led to by 1580* would be cut back to its first
+  // step and stop being an answer. The horizon is the reader's own question,
+  // asked of the event they have open, and `horizonSet` is empty unless one is
+  // open (horizon.js), so this costs nothing on the frames nobody asked.
+  // The adjacency is what the horizon's walk is memoised on, and a topology
+  // written by hand in a test has none; asking then would throw where it
+  // should simply have nothing to add.
+  if (atlas.adjacency && horizonIsOpen(state ?? {})) {
+    for (const id of horizonSet(atlas, state).keys()) ids.add(id);
   }
   return ids;
 }
@@ -454,6 +554,11 @@ export function lensView(atlas, state) {
   const { set, faint, kept } = focusParts(foci, atlas, { all });
   const near = ringOf(atlas, kept);
   for (const id of faint) near.add(id);
+  // And what the lens's events are part of, dimmed beside the ring: related
+  // and not chosen is exactly what an umbrella over the chosen event is
+  // (M65, `parentsOf`). Never in `set`, because the reader picked the battle
+  // and not the war.
+  for (const id of parentsOf(atlas, kept)) if (!set.has(id)) near.add(id);
   const shown = new Set(set);
   for (const id of near) shown.add(id);
   // **What the reader has just clicked is associated by definition.** An

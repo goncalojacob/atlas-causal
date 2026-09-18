@@ -324,9 +324,17 @@ test('an open actor or place with no lens is a lens of one, until the reader say
   // And `none` is the reader saying no to it while keeping the card open.
   assert.deepEqual(activeFoci(t, { actor: 'salazar', focus: FOCUS_NONE }), []);
   assert.equal(lensView(t, { actor: 'salazar', focus: FOCUS_NONE }), null);
-  // A selected event does not take it away: the reader walking from a place's
-  // list is still inside that place's neighbourhood.
-  assert.deepEqual(activeFoci(t, { place: 'lisbon', selected: 'a' }), [{ kind: 'place', id: 'lisbon' }]);
+  // **A selected event takes it, since M65**: choosing an event is a filter
+  // and not a highlight, and the click on the event is the later and the more
+  // particular of the two acts. Until then the place kept the lens, so that an
+  // atlas would not open up again on the first click — which is not what this
+  // does: it closes further down.
+  assert.deepEqual(activeFoci(t, { place: 'lisbon', selected: 'a' }), [{ kind: 'event', id: 'a' }]);
+  // The territorial selection itself is untouched (M54): a place with no event
+  // chosen inside it is still a lens on all of its ground.
+  assert.deepEqual(activeFoci(t, { place: 'lisbon' }), [{ kind: 'place', id: 'lisbon' }]);
+  // An event that is not in the atlas, or is retracted, is nobody's lens.
+  assert.deepEqual(activeFoci(t, { place: 'lisbon', selected: 'no-such-event' }), [{ kind: 'place', id: 'lisbon' }]);
   // An id that names nothing, or names something that is not an actor.
   assert.deepEqual(activeFoci(t, { actor: 'nobody' }), []);
   assert.deepEqual(activeFoci(t, { place: 'salazar' }), []);
@@ -392,14 +400,14 @@ test('an actor or a place with no events is not an implicit lens', () => {
 
 test('an implicit lens keeps the selection, the walked chain and the consequences', () => {
   const t = withResolve(topology());
-  // `pide` is at b and c; a is outside its lens and outside the ring of it
-  // only if nothing joins them — a--b--caused puts a in the ring, so the
-  // event held out here is d, which the retracted edge does not reach.
+  // `pide`'s card may be open behind it; since M65 the event the reader chose
+  // is the lens, and `d` — which the retracted edge does not reach — is the
+  // whole of what was chosen.
   const state = { actor: 'pide', selected: 'd', chain: ['a--b--caused'] };
   const view = lensView(t, state);
   assert.equal(view.implicit, true);
-  assert.ok(!view.set.has('d') && !view.near.has('d'), 'the open event is outside the focus and its ring');
-  assert.ok(view.shown.has('d'), 'and is drawn all the same');
+  assert.deepEqual(sorted(view.set), ['d'], 'the chosen event and its parts, which are none');
+  assert.ok(view.shown.has('d'), 'and it is drawn');
   assert.ok(view.shown.has('a') && view.shown.has('b'), 'and so are both ends of every walked step');
   // An explicit lens is a question the reader asked, and keeps its own narrow
   // answer: `?focus=` is how they say "only this".

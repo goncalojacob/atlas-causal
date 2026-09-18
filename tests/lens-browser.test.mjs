@@ -271,8 +271,14 @@ test('two hops walked out of an actor keep the selected event drawn', { skip }, 
   const view = lensView(atlas, {
     ...defaultState(), actor: OPEN, chain: chain.split(','), selected: END,
   });
-  assert.ok(view, 'the actor has an event, so it is a lens');
-  assert.ok(!view.set.has(END) && !view.near.has(END), 'and the walk has left its neighbourhood');
+  // Since M65 the event the reader has open is itself the lens — the actor's
+  // card is open behind it — and the first step of a two-hop walk is outside
+  // it. What this test is about is unchanged: the walk is drawn all the same.
+  assert.ok(view, 'the open event is a lens');
+  assert.ok(view.set.has(END), 'and it is what the lens is of');
+  const FIRST_STEP = '1908-portuguese-legislative-election';
+  assert.ok(!view.set.has(FIRST_STEP) && !view.near.has(FIRST_STEP), 'and the walk has left its neighbourhood');
+  assert.ok(view.shown.has(FIRST_STEP), 'and is drawn all the same');
 
   await withBrowser(async (page, url) => {
     for (const [name, { selector, url: extra }] of Object.entries(VIEWS)) {

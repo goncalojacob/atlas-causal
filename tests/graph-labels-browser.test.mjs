@@ -109,7 +109,22 @@ test('a node with room round it is named in full, with nothing left off', { skip
 
     // Zoomed in on that very mark, the room round it is the room the zoom
     // opened, and the whole name is drawn in it.
-    const k = await zoomOnto(page, longest, 6);
+    //
+    // **Opened first, since M65.** How long a label may be is the room to the
+    // next one at the world view (label-fit.js), and choosing an event is what
+    // gives a node room: the resting picture is the 242 main events and this
+    // one sits close enough to its neighbours there that no zoom buys it the
+    // whole of a 59-character name. A reader who wants to read a node opens it,
+    // and what this test is about — a node with room round it is named in full,
+    // with nothing left off — is unchanged.
+    await open(page, url(`${VIEW}&selected=${longest.id}`), DRAWN);
+    await page.eval(WORLD);
+    await waitFor(page, DRAWN, 'the world view of the chosen event');
+    const at = await page.eval(`
+      const el = document.querySelector('svg.graph circle.node[data-id="${longest.id}"]');
+      const r = el.getBoundingClientRect();
+      return { x: r.left + r.width / 2, y: r.top + r.height / 2 };`);
+    const k = await zoomOnto(page, at, 6);
     assert.ok(k >= 6, `the wheel went in (k = ${k})`);
     await waitFor(
       page,

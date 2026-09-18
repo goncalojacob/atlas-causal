@@ -35,8 +35,14 @@ import { createTimelineScale } from './timeline-scale.js';
 import { clusterPoints } from './cluster.js';
 import { fromAstronomical, formatYear } from './util/dates.js';
 import {
-  resolveWindow, overlaps, decadeOf, zoomWindow, withMargin, centuryCounts,
+  resolveWindow, overlaps, withMargin, centuryCounts,
 } from './util/window.js';
+// The band, its two handles and every gesture that moves them: one
+// implementation, shared with the strip M64 opens over the map, so the two
+// pictures cannot come to disagree about the same window (window-band.js).
+import {
+  bandEvents, bandShade, bandHandles, bindWindowGestures,
+} from './window-band.js';
 import { renderKey, shardsArrived } from './render-key.js';
 import { labelOf, LOADING_LABEL } from './attributes.js';
 import { horizonBand } from './horizon.js';
@@ -101,7 +107,6 @@ const PADDING = 0.04;
 // Two bars whose middles are closer than this are drawn as one. In pixels of
 // the lane, not years: what overlaps is a question about the drawing.
 const BAR_MERGE = 11;
-const HANDLE_WIDTH = 9;
 const BADGE_SIZE = 10;
 // The corner a bar is rounded by, and the ring outside a parent's bar: how far
 // outside it on every side, and how thin. A ring says "there is more inside"
@@ -204,102 +209,23 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     root.setAttribute('height', height);
   };
 
-  // Years, clamped to the data: the band never leaves the scale it is drawn
-  // on, and its ends never cross.
-  const clamp = (year) => Math.min(atlas.extent.max, Math.max(atlas.extent.min, Math.round(year)));
-  const setWindow = ({ from, to }) => state.set({
-    from: fromAstronomical(clamp(Math.min(from, to))),
-    to: fromAstronomical(clamp(Math.max(from, to))),
-  });
-  const yearAt = (clientX) => {
-    const rect = root.getBoundingClientRect();
-    const x = ((clientX - rect.left) / rect.width) * width;
-    return { x, year: Math.round(scale.invert(x)) };
-  };
-
   // --- moving the band ----------------------------------------------------
-  // A drag is over by the time the click arrives, so whether it moved has to
-  // outlive it — the same guard the map needs (STATUS.md, deviation 34).
-  let drag = null;
-  let dragged = false;
-
-  root.addEventListener('pointerdown', (e) => {
-    if (!atlas.extent) return;
-    const handle = e.target.closest('[data-window]');
-    // The empty ground of the lanes is a drag surface too, and it slides the
-    // band as the band itself does: the gesture that pans the map sideways
-    // should move the window here, since time is the timeline's one
-    // dimension. A press on a bar or a stack is not a drag — it is how a
-    // record is opened.
-    const onGround = !handle
-      && !e.target.closest('[data-id], [data-cluster]')
-      && yearAt(e.clientX).x >= LABEL_WIDTH;
-    if (!handle && !onGround) return;
-    const window = resolveWindow(state.get(), atlas.extent, atlas.opens);
-    drag = {
-      kind: handle ? handle.getAttribute('data-window') : 'band',
-      origin: window,
-      startYear: yearAt(e.clientX).year,
-    };
-    dragged = false;
-    try { root.setPointerCapture(e.pointerId); } catch { /* no such pointer any more */ }
-    e.preventDefault();
-  });
-
-  // The wheel narrows or widens the band around the year under the cursor.
-  // The lanes themselves do not move: they stay on the whole extent of the
-  // data (M6), so "zooming" the timeline is a statement about the window and
-  // nothing else. The map's own factor, so both pictures answer a wheel at
-  // the same rate.
-  root.addEventListener('wheel', (e) => {
-    if (!atlas.extent) return;
-    const { x, year } = yearAt(e.clientX);
-    if (x < LABEL_WIDTH) return;
-    e.preventDefault();
-    const whole = Math.max(atlas.extent.max - atlas.extent.min, 1);
-    setWindow(zoomWindow(resolveWindow(state.get(), atlas.extent, atlas.opens), year, e.deltaY, { whole }));
-  }, { passive: false });
-  root.addEventListener('pointermove', (e) => {
-    if (!drag) return;
-    const { year } = yearAt(e.clientX);
-    if (year !== drag.startYear) dragged = true;
-    if (drag.kind === 'from') setWindow({ from: year, to: drag.origin.to });
-    else if (drag.kind === 'to') setWindow({ from: drag.origin.from, to: year });
-    else {
-      // The band slides as a whole and keeps its width, stopping at the ends
-      // of the data rather than shrinking against them.
-      const span = drag.origin.to - drag.origin.from;
-      const shift = year - drag.startYear;
-      const from = Math.min(Math.max(drag.origin.from + shift, atlas.extent.min), atlas.extent.max - span);
-      setWindow({ from, to: from + span });
-    }
-  });
-  const endDrag = (e) => {
-    if (!drag) return;
-    try { root.releasePointerCapture(e.pointerId); } catch { /* already released */ }
-    drag = null;
-  };
-  root.addEventListener('pointerup', endDrag);
-  root.addEventListener('pointercancel', endDrag);
-
-  // Arrow keys nudge the focused handle; shift makes it a decade. The band
-  // itself moves whole under the same keys.
-  root.addEventListener('keydown', (e) => {
-    const el = e.target.closest?.('[data-window]');
-    if (!el || !atlas.extent) return;
-    const step = e.shiftKey ? 10 : 1;
-    const delta = e.key === 'ArrowLeft' ? -step : e.key === 'ArrowRight' ? step : 0;
-    if (!delta) return;
-    e.preventDefault();
-    const window = resolveWindow(state.get(), atlas.extent, atlas.opens);
-    const kind = el.getAttribute('data-window');
-    if (kind === 'from') setWindow({ from: window.from + delta, to: window.to });
-    else if (kind === 'to') setWindow({ from: window.from, to: window.to + delta });
-    else {
-      const span = window.to - window.from;
-      const from = Math.min(Math.max(window.from + delta, atlas.extent.min), atlas.extent.max - span);
-      setWindow({ from, to: from + span });
-    }
+  //
+  // Not written here any more (M64). A handle dragged, the ground under the
+  // lanes slid, the wheel, the arrow keys and the double-click that snaps to a
+  // decade are all `window-band.js`'s, and the strip over the map is given the
+  // same ones — a band on the map that answered a wheel differently from this
+  // one would be the second band this milestone exists to prevent.
+  //
+  // Two arguments are the timeline's own: the lane labels are not part of the
+  // scale, and a press on a bar or a stack is not a drag but the way a record
+  // is opened.
+  const gestures = bindWindowGestures(root, {
+    atlas,
+    state,
+    scale: () => scale,
+    viewWidth: () => width,
+    gutter: () => LABEL_WIDTH,
   });
 
   // --- the bars from the keyboard -----------------------------------------
@@ -398,10 +324,10 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   });
 
   root.addEventListener('click', (e) => {
-    if (dragged) {
-      dragged = false;
-      return;
-    }
+    // A drag is over by the time the click arrives, so whether it moved has to
+    // outlive it — the same guard the map needs (STATUS.md, deviation 34). The
+    // band keeps it now, and hands it over once.
+    if (gestures.consumedDrag()) return;
     const bar = e.target.closest('[data-id], [data-cluster]');
     if (bar) {
       if (bar.hasAttribute('data-bar')) focusBar(bar);
@@ -416,16 +342,6 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // still one double-click away, and "Map at 1911" is still on the card.
     const s = state.get();
     if (s.selected || s.chain.length) state.set({ selected: null, chain: [] });
-  });
-
-  // The band is a drag surface, but a double-click still means "that
-  // decade" wherever it lands in the lanes — otherwise the whole gesture
-  // would be unavailable at the default window, which covers everything.
-  root.addEventListener('dblclick', (e) => {
-    if (!atlas.extent || e.target.closest('.window-handle')) return;
-    const { x, year } = yearAt(e.clientX);
-    if (x < LABEL_WIDTH) return;
-    setWindow(decadeOf(clamp(year)));
   });
 
   // --- drawing ------------------------------------------------------------
@@ -618,7 +534,11 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // applied (emphasis.js): a category the reader turned off on the map is
     // not a bar here either.
     const drawable = working.shown;
-    const inLens = drawable ? atlas.activeEvents.filter((e) => drawable.has(e.id)) : atlas.activeEvents;
+    // The events this picture is of, from the one function the masthead's count
+    // and the strip over the map also ask (window-band.js). It is the line that
+    // used to stand here; it is shared so that the band on the map cannot draw
+    // a different corpus from the lanes.
+    const inLens = bandEvents(atlas, s);
     const pathIds = new Set([...working.path, ...working.selected]);
     // And then the map's viewport, which composes with the lens rather than
     // replacing it: the lens says which events exist, the box says which of
@@ -761,7 +681,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
 
     // The band under the bars, its handles over them: the shading must not
     // hide a record, and a handle must always be grabbable.
-    if (window) bandShade(into.band, window);
+    if (window) bandShade(into.band, window, bandBox());
 
     const byLane = new Map(lanes.map((lane) => [lane.id, []]));
     for (const event of near) {
@@ -865,56 +785,29 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       }
     }
 
-    if (window) bandHandles(into.handles, into.handleLabels, window, s);
+    if (window) {
+      bandHandles(into.handles, into.handleLabels, window, bandBox());
+      territoryMarker(into.handleLabels, window, s);
+    }
 
     for (const layer of Object.values(into)) layer.done();
     applyRoving();
     restoreFocus(wasFocused);
   }
 
-  function bandShade(into, { from, to }) {
-    const x0 = scale.x(from);
-    const x1 = scale.x(to);
-    into.take('rect', {
-      x: x0, y: MARKER_HEIGHT, width: Math.max(x1 - x0, 1), height: height - MARKER_HEIGHT,
-      class: 'window-band', 'data-window': 'band',
-      // Focusable, so the arrow keys slide the band as they nudge a handle;
-      // the handles are the two ends of the same slider and say so.
-      tabindex: '0', role: 'slider',
-      'aria-label': 'The window of time',
-      'aria-valuemin': String(fromAstronomical(atlas.extent.min)),
-      'aria-valuemax': String(fromAstronomical(atlas.extent.max)),
-      'aria-valuenow': String(fromAstronomical(from)),
-      'aria-valuetext': `${formatYear(fromAstronomical(from))} to ${formatYear(fromAstronomical(to))}`,
-    }, { title: 'The window of time. Drag it or the ground to slide, drag an end to widen, the wheel to narrow, double-click a year to snap to its decade.' });
-  }
+  // The geometry of the band on this drawing: the whole height under the
+  // marker row. What it is drawn like is `window-band.js`'s and is the same on
+  // the strip over the map.
+  const bandBox = () => ({
+    scale, extent: atlas.extent, top: MARKER_HEIGHT, height: height - MARKER_HEIGHT, labelY: MARKER_HEIGHT - 6,
+  });
 
   // The two handles, and the one line the far end says about the borders the
   // map is drawing — which is a different year from `to` whenever the window
-  // runs past where the outlines stop.
-  function bandHandles(into, labels, { from, to }, s) {
-    const ends = [['from', from], ['to', to]];
-    // A window one year wide has both handles on the same pixel, and two
-    // labels either side of it read as "1911 1911" — a range, which is what
-    // the reader has just narrowed away from. One label, centred, instead.
-    const single = from === to;
-    for (const [kind, year] of ends) {
-      const x = scale.x(year);
-      into.take('rect', {
-        x: x - HANDLE_WIDTH / 2, y: MARKER_HEIGHT, width: HANDLE_WIDTH, height: height - MARKER_HEIGHT,
-        class: `window-handle ${kind}`, 'data-window': kind, tabindex: '0', role: 'slider',
-        'aria-label': kind === 'from' ? 'Start of the window' : 'End of the window',
-        'aria-valuemin': String(fromAstronomical(atlas.extent.min)),
-        'aria-valuemax': String(fromAstronomical(atlas.extent.max)),
-        'aria-valuenow': String(fromAstronomical(year)),
-        'aria-valuetext': formatYear(fromAstronomical(year)),
-      }, { title: `${kind === 'from' ? 'Start' : 'End'} of the window — ${formatYear(fromAstronomical(year))}` });
-      if (single && kind === 'from') continue;
-      labels.take('text', {
-        x: single ? x : kind === 'from' ? x - 6 : x + 6, y: MARKER_HEIGHT - 6,
-        class: 'window-year', 'text-anchor': single ? 'middle' : kind === 'from' ? 'end' : 'start',
-      }, { text: formatYear(fromAstronomical(year)) });
-    }
+  // runs past where the outlines stop. The handles are shared; the line about
+  // the borders is the timeline's own, because it is a note about what the map
+  // beside it is showing and there is no map beside the strip.
+  function territoryMarker(labels, { to }, s) {
     if (s.layers.includes('territories') && atlas.presenceCoverage) {
       const shown = atlas.territoryYear(to);
       // On its own line, at the right edge rather than beside the handle:

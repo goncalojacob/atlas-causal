@@ -210,7 +210,12 @@ test('a state change updates the bars in place and does not rebuild them', { ski
     // relayout and not the thing this test is about. It was invisible while
     // the timeline was a full-width strip under the panel; since M60 it is in
     // the view's own column and the panel takes width from it.
-    await open(page, url(on('selected=carnation-revolution-1974')), READY);
+    // **`focus=none`**, which is the reader turning the implicit lens off
+    // (lens.js). Since M65 choosing an event is a filter, so clicking a second
+    // bar draws a different set of events and the picture *is* rebuilt — as it
+    // should be. What this test is about is the other case, which is still the
+    // common one: a state change over a picture that is not narrowing.
+    await open(page, url(on('selected=carnation-revolution-1974&focus=none')), READY);
     // Every element the timeline has drawn, watched for children coming and
     // going. `subtree` so the layers themselves are covered.
     // Elements only. A bar that now stands for a different event still has
@@ -400,6 +405,13 @@ test('a parent\'s bar is ringed under no grouping and under the region lanes', {
     assert.ok(packed.ring.stroke > 0 && packed.ring.stroke < 1, `thinner than the bar: ${packed.ring.stroke}`);
     assert.equal(packed.layer, 'layer layer-bars', 'drawn through the bars\' own pool');
 
+    // A leaf is drawn exactly as it was — read here, in the resting picture,
+    // because since M65 the choice below narrows the bars to what it reaches
+    // and B is not one of them.
+    const leaf = await page.eval(RING_AROUND('fixture-event-b'));
+    assert.ok(leaf.bar, 'the leaf has a bar');
+    assert.equal(leaf.ring, null, 'and nothing around it');
+
     // And in the region lanes, where this parent's parts cross lanes and it is
     // drawn as a band rather than a bracket. Selected, because that is the
     // only way to be sure of a bar of its own there (the band test above), and
@@ -410,11 +422,6 @@ test('a parent\'s bar is ringed under no grouping and under the region lanes', {
     assert.equal(banded.layer, 'layer layer-held', 'in the layer its bar is in');
     assert.match(banded.ring.classes, /\bselected\b/, 'and it carries the emphasis its bar carries');
     assert.doesNotMatch(banded.ring.classes, /\bbar\b/, 'a ring is an outline, not a record');
-
-    // A leaf is drawn exactly as it was.
-    const leaf = await page.eval(RING_AROUND('fixture-event-b'));
-    assert.ok(leaf.bar, 'the leaf has a bar');
-    assert.equal(leaf.ring, null, 'and nothing around it');
   }, { device: { width: 1280, height: 700, deviceScaleFactor: 1 } });
 });
 
@@ -454,6 +461,26 @@ test('a bar wide enough carries its category, and one below the threshold does n
         wide: at('fixture-event-g'),
         narrow: at('fixture-event-c'),
         glyphs: document.querySelectorAll('#timeline use.glyph').length,
+        // Which bar each symbol sits on, so the promise can be read off the
+        // drawing rather than counted: since M65 the resting picture is the
+        // main events, and how many of them are wide enough is a fact about
+        // the fixtures and not about the threshold.
+        carrying: [...document.querySelectorAll('#timeline use.glyph')].map((g) => {
+          const gy = Number(g.getAttribute('y')) + Number(g.getAttribute('height')) / 2;
+          const gx = Number(g.getAttribute('x'));
+          const bar = [...document.querySelectorAll('#timeline rect[data-id]')].find((b) => {
+            const y = Number(b.getAttribute('y'));
+            const h = Number(b.getAttribute('height'));
+            const x = Number(b.getAttribute('x'));
+            const w = Number(b.getAttribute('width'));
+            return Math.abs(gy - (y + h / 2)) < 0.01 && gx >= x - 1 && gx < x + w;
+          }) ?? null;
+          return bar && {
+            id: bar.getAttribute('data-id'),
+            width: Number(bar.getAttribute('width')),
+            height: Number(bar.getAttribute('height')),
+          };
+        }),
         symbols: document.querySelectorAll('#glyph-defs symbol').length,
         onStacks: [...document.querySelectorAll('#timeline rect.bar.stack')].length,
       };`);
@@ -471,7 +498,14 @@ test('a bar wide enough carries its category, and one below the threshold does n
     assert.ok(seen.narrow, 'the narrow bar is drawn all the same');
     assert.ok(seen.narrow.width < 10, `below the threshold (${seen.narrow.width})`);
     assert.equal(seen.narrow.glyph, null, 'and carries no symbol');
-    assert.equal(seen.glyphs, 1, 'one bar on the fixtures is wide enough, and it is the one');
+    // Every symbol on the page sits on a bar that is over the threshold, and
+    // no bar under it carries one. That is the whole of the rule, and it does
+    // not pin how many of the fixtures happen to qualify.
+    assert.ok(seen.glyphs > 0, 'some bar on the fixtures is wide enough');
+    for (const bar of seen.carrying) {
+      assert.ok(bar, 'every symbol sits on a bar');
+      assert.ok(bar.width >= 10 && bar.height >= 10, `${bar.id} is ${bar.width} x ${bar.height}`);
+    }
 
     // Under the default grouping a bar is eight pixels tall and none of them
     // reaches the threshold, on the fixtures or on the repository's data.

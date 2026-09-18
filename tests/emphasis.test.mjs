@@ -11,6 +11,7 @@ import assert from 'node:assert/strict';
 import { defaultState } from '../src/state.js';
 import { workingSet, heldSet } from '../src/emphasis.js';
 import { SHOWN } from '../src/horizon.js';
+import { isMain } from '../src/lens.js';
 import { atlasOf, FIXTURE_DATA } from './helpers.mjs';
 
 const fixtureAtlas = () => atlasOf(FIXTURE_DATA);
@@ -192,13 +193,16 @@ test('an implicit lens never removes the selection, the walk or the consequences
     ...defaultState(), actor: 'fixture-actor-two', selected: E, chain: [`${O}--${E}--enabled`],
   };
   const w = workingSet(atlas, state);
-  assert.ok(!w.lensFocus.has(E) && !w.lensNear.has(E), 'the open event is outside the lens and its ring');
-  assert.deepEqual(sorted(w.selected), [E], 'and is drawn all the same');
+  // Since M65 the event they chose is itself the lens — the actor's card is
+  // open behind it and the picture is the event they clicked — so E is the
+  // focus rather than something the focus had to be stopped from removing.
+  assert.ok(w.lensFocus.has(E), 'the open event is what the lens is of');
+  assert.deepEqual(sorted(w.selected), [E], 'and is drawn');
   assert.deepEqual(sorted(w.path), [E, O], 'with both ends of the step walked to it');
   assert.deepEqual(sorted(w.consequences), [C, E], 'and where it leads');
   for (const id of [O, E, C]) assert.ok(w.lens.has(id), `${id} is what the reader is looking at`);
-  // The lens is still a lens: what it never asked for and nobody clicked is
-  // gone, so the picture is still Actor two's neighbourhood.
+  // The lens is still a lens: what the choice does not reach is gone, and the
+  // walk the reader made to get here is not gone with it.
   assert.ok(!w.lens.has('fixture-event-a2'), 'an event nothing here reaches is still removed');
 
   // The same walk under a focus the reader typed: their question, their
@@ -247,12 +251,18 @@ const CATEGORY_OF = {
   'fixture-event-g': 'disaster',
 };
 
-test('with every category on, nothing is narrowed at all', async () => {
+test('with every category on, the only narrowing left is the resting rule', async () => {
   const atlas = await fixtureAtlas();
   // The bare `events` token is the default and means every category *and* the
-  // events that have none.
+  // events that have none. Since M65 `shown` is a set all the same, because
+  // there is always a picture and at rest it is the main events: H and T are
+  // parts of F and are drawn when a reader opens F.
   const w = workingSet(atlas, defaultState());
-  assert.equal(w.shown, null, 'no lens and no category filter is nothing to filter by');
+  assert.ok(w.shown instanceof Set);
+  for (const event of atlas.activeEvents) {
+    assert.equal(w.shown.has(event.id), isMain(atlas, event), `${event.id} is drawn at rest iff it is main`);
+  }
+  assert.ok(!w.shown.has('fixture-event-h') && !w.shown.has('fixture-event-t'), 'and the two parts of F are not');
 });
 
 test('a category token removes the events of every other category, and no uncategorised one', async () => {
@@ -261,6 +271,10 @@ test('a category token removes the events of every other category, and no uncate
   const w = workingSet(atlas, state);
   assert.ok(w.shown instanceof Set);
   for (const event of atlas.activeEvents) {
+    // Inside the resting picture, which is what a category toggle narrows
+    // (M65): a part of another event is not drawn at rest and no token of any
+    // category puts it back.
+    if (!isMain(atlas, event)) continue;
     const category = CATEGORY_OF[event.id] ?? null;
     const drawn = w.shown.has(event.id);
     if (category === null) assert.equal(drawn, true, `${event.id} has no category and is removed by no token`);

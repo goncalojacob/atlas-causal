@@ -205,14 +205,22 @@ const TIMELINE = `return {
 // is that *every* active event of the opening century has a bar, not that
 // there are eleven of them.
 const all = await fixtures();
+// **The resting picture and not every active event, since M65.** At rest every
+// view draws the main events alone — an event that is part of another is drawn
+// when a reader opens the one it belongs to — so a bar for a part is not a bar
+// the lanes owe anybody.
+const PARTED = new Set(all.records
+  .filter((r) => r.kind === 'event' && r.status === 'active' && typeof r.parent === 'string')
+  .map((r) => r.id));
+const MAIN = (r) => r.kind === 'event' && r.status === 'active' && !PARTED.has(r.id);
 const ACTIVE = all.records
-  .filter((r) => r.kind === 'event' && r.status === 'active'
-    && (r.when.start?.min ?? r.when.start) < 1300)
+  .filter((r) => MAIN(r) && (r.when.start?.min ?? r.when.start) < 1300)
   .map((r) => r.id)
   .sort();
-// And how many active events the corpus holds altogether, which is the second
-// number in the count in the masthead.
-const ACTIVE_TOTAL = all.records.filter((r) => r.kind === 'event' && r.status === 'active').length;
+// And how big the resting picture is altogether, which is the second number in
+// the count in the masthead: "N of N events in view" counts against what the
+// atlas is drawing and not against the whole corpus (M65).
+const ACTIVE_TOTAL = all.records.filter(MAIN).length;
 const inView = (n) => new RegExp(`^${n} of ${ACTIVE_TOTAL} events in view$`);
 
 test('the whole world is no box at all, and the lanes carry every active event', { skip }, async () => {
@@ -314,9 +322,12 @@ test('a click on a consequence walks the chain on the map and on the timeline', 
     );
 
     // A mark that does not follow from what is open starts afresh, walk and
-    // all: the chain is one argument and this is not part of it.
-    await page.eval(clickOn('#map circle.mark[data-id="fixture-event-g"]'));
-    await waitFor(page, 'return new URLSearchParams(location.search).get("selected") === "fixture-event-g";', 'a fresh start');
+    // all: the chain is one argument and this is not part of it. The first
+    // step of the walk, because since M65 the picture is narrowed to what the
+    // open event reaches and G is no longer in it — and A, which the reader
+    // walked from, is not a consequence of D either.
+    await page.eval(clickOn('#map circle.mark[data-id="fixture-event-a"]'));
+    await waitFor(page, 'return new URLSearchParams(location.search).get("selected") === "fixture-event-a";', 'a fresh start');
     assert.equal(await page.eval(CHAIN), null);
   });
 });
@@ -364,7 +375,10 @@ test('zoomed in, only the marks on screen are in the DOM', { skip }, async () =>
 
     const before = await page.eval(MARKS_AND_BOX);
     assert.equal(before.k, 1, 'the map opens at k = 1');
-    assert.ok(before.marks.length >= 8, `the whole world is drawn to begin with (${before.marks.length})`);
+    // Six and not eight since M65: the resting picture is the main events, and
+    // the fixtures file two of theirs under F. What this test is about is that
+    // the number falls when the reader zooms in, not what it starts at.
+    assert.ok(before.marks.length >= 6, `the whole world is drawn to begin with (${before.marks.length})`);
 
     // In hard, over the left-hand third of the pane: the fixtures are spread
     // across the world, so most of them are now nowhere near the screen.
@@ -599,7 +613,19 @@ test('a regional event is a wash over its lane, and its parts are still their ow
     assert.equal(wash.count, 1, 'one wash for the one large event');
     assert.equal(wash.clickable, 'none', 'a wash covers marks and territories and takes no click');
     assert.ok(wash.under, 'and is drawn under them');
-    assert.ok(wash.mark, 'an event inside a large one is still a mark of its own');
+    assert.equal(wash.mark, false, 'and at rest the events inside it are inside it (M65)');
+
+    // Opening the large event is what puts its parts on the map, and they are
+    // marks of their own there — the wash is a drawing of the parent and never
+    // a replacement for them.
+    await open(page, url('?fixtures=1&selected=fixture-event-f'), READY);
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-regions path").length > 0;', 'the wash');
+    const opened = await page.eval(`return {
+      wash: document.querySelectorAll('#map .layer-regions path.region-wash').length,
+      mark: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-t"]')),
+    };`);
+    assert.equal(opened.wash, 1, 'the wash is still drawn');
+    assert.ok(opened.mark, 'an event inside a large one is a mark of its own once it is opened');
   });
 });
 

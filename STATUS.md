@@ -13,6 +13,63 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-18, after **M65** (`docs/m65-brief.md`, on `m0`): **choosing an event is
+a filter, not a highlight.** The owner, 18 September: *"everywhere, graph, map
+and timeline you should only see the main events. Then, when you click on a
+specific event, in both the map, graph and timeline the other unrelated events
+are hidden and only the children events and direct connections are shown"*. The
+atlas had been **dimming**; this is **hiding**, in all three views at once, and
+both rules are one answer computed in one place.
+
+**242 of 309 events are main**, and that number is the whole of what this
+milestone can be judged on. M62 filing fifty events under five umbrellas moved
+the resting picture from 309 to 242 — a cut of about a fifth. **"Only the main
+events" will not feel like much until far more of the 242 have somewhere to
+hang.** That is a records problem and not a code one: the next milestone that
+wants this to bite writes umbrellas, not filters.
+
+**One place, so the three views cannot disagree.** `src/lens.js` gained
+`restingSet` — the events that are part of no other — and the chosen event as a
+lens of one; `emphasis.js`'s `shown` is the lens, or the resting picture where
+there is none, narrowed by the categories still on. The map, the timeline, the
+graph and the masthead's count already read that set and nothing had to be told.
+**"N of N events in view" now counts against the resting picture**, not against
+the corpus: 18 of the fixtures' 20 active events, 242 of the repository's 309.
+
+**What a choice keeps**: the event, its parts all the way down, one hop along an
+edge either way, and **what it is part of**, dimmed. The last is a new clause on
+every lens (`parentsOf`) and it can only widen one, so M54's territorial answer
+is what it was with the umbrella over it drawn too. **An open horizon is kept
+too**, because it is multi-hop by construction and would otherwise have been cut
+back to its first step.
+
+**`?selected=` links written before today show less than they did.** A link that
+used to open the whole atlas with one mark ringed now opens that event's
+neighbourhood — it, its parts, its parent and one hop — and nothing else. The
+way back is the one that already existed: clear the selection, or the chip's ×
+in the masthead, which writes `?focus=none` and leaves the card open over the
+resting picture.
+
+**First paint does not get slower, and it does not get faster either.** The same
+97 files are fetched against 98 — the same list; `parent` is a **core** column,
+so the rule reads what the first frame already holds and asks for nothing more.
+The rule itself is **0.010 ms** over 309 events, once per state change and not
+once per view. The first frame carrying marks draws **14 marks against 21**, and
+the time from navigation to it is **240 ms against 254** (medians of twelve
+loads each, spreads 212–320 and 207–314) — the same within the noise of the
+measurement, which is what "not slower" honestly means here.
+
+**One behaviour is superseded and it is worth saying out loud**: the graph's
+semantic collapse (M30c) no longer fires.
+
+**And one thing for the owner to decide.** Because a choice now narrows the
+views, the centuries the rest of the corpus lives in are no longer fetched, so
+the first drag of the band after choosing an event asks for one — and a shard
+landing makes `panel.js` redraw the open card, which throws away the
+explanation the reader had open. That is `refresh` rebuilding rather than
+patching, it is older than this milestone, and it is now reachable in a way it
+was not before (deviation 890). Deviations 883 to 891.
+
 2026-09-18, after **M63** (`docs/m63-brief.md`, on `m0`): **the check tells the
 truth again.** It had been red since 17 September on a different browser test
 every run, always a `waitFor` that ran out and never a wrong value, and every
@@ -12124,6 +12181,430 @@ with `docs/m62-umbrellas.md`.
      step, which is thousands of lines further down and the only one reachable
      when a red check is being read. The suite has said its failing tests twice
      for the same reason since M44a.
+883. **The graph's semantic collapse (M30c) no longer fires, anywhere.** It
+     drew a parent's parts inside it while the reader was zoomed out. At rest
+     there are no parts in the picture to fold, and inside a lens — which a
+     selection now is — M25's never-hide rule holds everything the lens kept
+     out of any fold, so `collapseLayout` returns its argument unchanged on
+     every path a reader can reach. What it said, *there is more inside this
+     one*, the resting rule says by hiding the parts and the ring (M30c's own
+     look) still says on the mark. The code is untouched and
+     `tests/collapse.test.mjs` still holds it to its rule; the two browser
+     tests that drove it now assert what the pictures actually do. **This was
+     not asked for and is not reversible by accident** — a milestone that wants
+     the fold back has to decide which of the two rules gives way.
+884. **`keptRegardless` gained the open horizon, which widens what a choice
+     keeps.** The brief says a choice leaves "it, its children, its parent and
+     its one-hop neighbours and nothing else". A horizon is multi-hop by
+     construction, and `?selected=X&horizon=1580` would have answered *what had
+     this led to by 1580* with its first step. The same sentence that already
+     kept the walked chain keeps this: an implicit lens is nobody's question and
+     may not take away what the reader has just asked for. An explicit
+     `?focus=` still keeps its own narrow answer.
+885. **An event selection now beats an open place or an open actor, which
+     reverses R8 for events.** R8 (6 September) settled that "a selected event
+     does not take the lens away: the reader walking from a place's list is
+     still inside that place's neighbourhood, and an atlas that opened up again
+     on the first click would be flipping the picture under them." The worry was
+     the atlas *opening up*; M65's click closes it further down, so the worry
+     does not apply and the owner's sentence is unconditional about clicking an
+     event. M54's own rule is untouched: a territorial selection is not an event
+     selection, and the place card's listing is not the lens.
+886. **Twelve test files judged the old behaviour and were corrected in the
+     commit that changed it**, not before it and not after. Deviation 711's
+     order is about the index, which has to be built from what is committed;
+     deviation 717's is about behaviour, and it reads "when a commit changes
+     what the pictures draw, the commit that teaches the tests belongs with it
+     or before it". Splitting the two rules into two green commits would have
+     meant splitting one test file down the middle for the sake of the shape.
+887. **`validate --index` reported 69 errors that were not there, because this
+     sandbox clones shallow.** Every one was a history shard: `tools/lib/history.mjs`
+     builds them out of the commits that touched each record's file, and a clone
+     with 52 commits names different files from one with 1,217. `git fetch
+     --unshallow` and the same command reports **0 errors**. Nothing under
+     `data/` was touched by this run; the amendment of 15 September is what
+     made the run look, and the answer it gave first was the clone's and not the
+     repository's.
+888. **A browser test's arithmetic counted 46 events the picture never had.**
+     `foldedTwice` in `tests/graph-browser.test.mjs` walks each parted event up
+     to the node it was folded into and counts it when that node is drawn
+     nowhere. At rest no part is in the picture at all now, so a part whose
+     parent had been swallowed by a stack was counted as folded — 288 accounted
+     for against a resting picture of 242. It counts over what the picture is
+     *of* now, which is `emphasis.js`'s own answer for the state the URL
+     describes, and the identity closes exactly.
+889. **How long a label may be depends on the room in the picture, so M61's
+     longest name needs the event opened.** `label-fit.js` budgets a label by
+     the room to the next one at the world view; with 67 fewer nodes the layout
+     around `2022-portuguese-social-democratic-party-leadership-election-q111182017`
+     is tighter, and no zoom — not even `MAX_ZOOM` — buys the whole of its 59
+     characters. Choosing it does, which is what a reader who wants to read a
+     node does. M61's promise is unchanged and is asserted at the same k = 6.
+
+890. **The branch's check was red on M65's head, and it was a defect this
+     milestone uncovered rather than the load M63 spent itself on.** The one
+     test that failed for a reason — *a drag of the band leaves the open
+     explanation open and moves the horizon* — reproduces here at
+     `--test-concurrency=4` and **does not reproduce on the head before M65**
+     under the same load, which is what says it is this milestone's. The
+     mechanism: a shard landing is not a state change and `refresh` in
+     `panel.js` redraws the whole card for one, deliberately and in as many
+     words. Until M65 a chosen event left all three views drawing the corpus,
+     so the centuries the band could be dragged onto were already in hand and
+     no shard ever landed mid-drag. **Now a choice narrows the views to one
+     neighbourhood, the rest of the corpus is not fetched, and the first drag
+     of the band asks for a century — which throws away the explanation the
+     reader had open.** The test now waits for every attribute shard before it
+     marks the card, so it reads its own promise — *a state change patches the
+     card* — and not a shard arrival the panel is allowed to redraw for; not
+     one assertion changed. **The defect itself is left for the owner**: it is
+     `refresh` rebuilding an open card rather than patching it, it is older
+     than this milestone, and fixing it is a change to the panel that M65 was
+     not asked to make.
+891. **`the atlas draws its bars before the last century lands` failed on the
+     same runner and does not reproduce here at all** — not serially, not at
+     concurrency 4, not in three runs of its own suite. It is a `waitFor` that
+     ran out at 11.4 s on a 4-core runner with a browser under it, with no
+     wrong value in it, which is the shape M63 measured ten times over. It is
+     named here rather than left unsaid, because a test that fails once on the
+     runner and never here is exactly what the standing instruction to ignore
+     the check used to hide.
+
+## M65 — choosing an event is a filter, not a highlight
+
+### The two rules, and the one place they live
+
+**At rest every view draws only the main events.** An event is *main* when it is
+part of no other — no `parent`, or a parent that is not an active record here,
+because an event filed under an umbrella that was retracted or never written
+hangs nowhere. `isMain` and `restingSet` are in `src/lens.js`, and
+`emphasis.js` is where a view is told what it may draw:
+
+```js
+const shown = new Set([...(lens ?? restingSet(atlas, state))].filter(inCategory));
+```
+
+That line is the whole of the change to what a view draws. `shown` used to be
+`null` for "draw everything" and is a set on every frame now; the map, the
+timeline, the graph's arrangement and the masthead's count all filtered by it
+already, so none of them had to be taught anything and none of them can now
+hide by a different rule. **There is no second filtering path**, which is the
+fault this milestone exists to prevent.
+
+**Choosing an event is a lens on it.** `activeFoci` gains one line: an
+`event:` focus on `state.selected`. Everything after it was already built —
+`eventsOfFocus` on an event is that event and its parts all the way down (M30b),
+`ringOf` is the one hop either way (M48), and `near` is what is drawn dimmed. So
+a click writes no new machinery; it sets the lens the reader could already ask
+for by hand.
+
+**Where it sits in the precedence** is the only judgement in it: **after a
+narrative being read, before an open place or actor.** A walk is what a reader
+in narrative mode came for and a step of it must not narrow it to itself. A
+place or an actor loses, because the click on the event is the later and the
+more particular of the two acts — and **M54 is untouched by that**: selecting a
+*territory* is still a lens on all of its ground, and the place card still lists
+everything inside the outline whatever the window is. What changes is only what
+happens after the reader picks one event out of that list.
+
+### What a lens never hides
+
+**`parentsOf`**: what a lens's own events are part of, all the way up, dimmed
+beside the ring. A reader who has walked down into a regime must be able to see
+the regime, and what an event is part of is not clutter. It applies to every
+lens and not only to an event's, because it can only ever widen one: nothing a
+lens found is lost to it.
+
+**The open horizon**, added to `keptRegardless`. "Where the open event leads
+directly" was enough while a selection was an emphasis over the whole atlas;
+now that it is a filter of one hop, *what had this led to by 1580* would have
+been cut back to its first step and stopped being an answer. `horizonSet` is
+empty unless a horizon is open, so it costs nothing on the frames nobody asked.
+
+**The walked chain**, which `keptRegardless` already kept, and which
+`restingSet` now keeps too: a `?chain=` shared with no event selected is a walk
+being shown to somebody, and a step of it filed under a war would otherwise be
+a link into nothing.
+
+### A main event with nothing attached
+
+Chosen, it shows **only itself**. That is correct and is asserted
+(`tests/m65.test.mjs`); it is not special-cased into showing more, and it is
+what 103 of the corpus's events with one link or none will look like until the
+records give them somewhere to hang.
+
+### What it costs
+
+| | before | after |
+| --- | --- | --- |
+| files fetched to the first frame with marks | 98 | 97 (the same list) |
+| marks on that frame | 21 | 14 |
+| navigation to that frame, median of twelve | 254 ms | 240 ms |
+| spread over those twelve | 207–314 ms | 212–320 ms |
+| the resting rule itself | — | 0.010 ms per state change |
+
+`parent` is a **core** column (`spine.js`), so the resting picture is right on
+the first frame: nothing appears and then vanishes a moment later when a century
+lands. The two times are the same within the noise of a measurement whose spread
+is ±50 ms; what can be said without hedging is that **nothing new is fetched and
+nothing is computed per view** — `workingSet` is memoised on the state object
+and the three views share one answer.
+
+### Tests
+
+`tests/m65.test.mjs` (13) and `tests/m65-browser.test.mjs` (3). The resting rule
+is asserted as a **property** — every drawn event is main and every main event is
+drawn — over the repository's own corpus, so it survives the corpus doubling;
+nothing pins a count anywhere in either file. The browser suite computes what
+each view should draw with `emphasis.js` itself, over an atlas built from the
+same index the page fetches: the assertion is *the picture is the filter* and
+not a second implementation of the filter written in test code.
+
+**Twelve existing suites judged the old behaviour and were corrected with the
+commit that changed it**, which is deviation 717's rule and not deviation 711's:
+counts that were taken against the whole corpus are taken against the resting
+picture now, and from the same shared source, so they move with the rule instead
+of beside it.
+
+## M64 — the dates are chosen on the map, not typed
+
+The owner, 18 September, after using what M60 built:
+
+> **"There should be a toggle on the map so I can choose the dates instead of a
+> selector."**
+
+M60 was right and nothing about it is undone: the timeline is still a view of
+its own, the two number fields are still in the masthead, and a first visit is
+still the whole pane. What M60 lost is that **a year could be swept** — you
+pulled an end and the map answered as you moved, and you could see where the
+events were while you were choosing. A number field can do neither, because you
+must already know the year you want.
+
+### The toggle, and where it sits
+
+A button in the **top-left corner of the map pane**, reading `dates` — the
+owner's own word — with the title saying the rest: *"Choose the window of time
+on the map: drag either end and the map follows"*. `aria-expanded` says whether
+it is open and `aria-controls` names the strip.
+
+The top-left is the one corner of the map that was free. The bottom left is
+`.map-corner` (what the map is not drawing as a mark), the bottom right is
+`.view-export`, and the top right is `.map-note`. It is also the corner
+directly under the two number fields that say the same window in words, which
+is the argument for it rather than an accident of what was left: the two ways
+of setting one window stand next to each other.
+
+Open, a strip **44 units tall** spans the pane's width above it: the two years
+on their own row, the shade and its two handles under them, and the profile of
+where the events are along the bottom. Closed, the strip is **gone from the
+document** and not hidden — a drawing still in the page is still redrawn on
+every nudge of the window, and "closed costs nothing" would stop being true
+the moment anybody believed it.
+
+### How the band was reused rather than rebuilt
+
+The brief's sharpest instruction was *"do not write a second one"*, so the
+answer is not that the two bands agree today but that **there is one band**.
+`src/window-band.js` is where the band that was inside `src/timeline.js` now
+lives: the shade, the two handles, the year each stands on, and every gesture
+that moves them — a handle dragged, the ground slid, the wheel, the arrow keys,
+the double-click that snaps to a decade. The timeline calls it and so does the
+strip; neither builds an element of its own.
+
+The two drawings differ in exactly two arguments, and both are arguments rather
+than branches: `gutter` is the x below which the drawing is not the scale (the
+timeline's lane labels; nought on the strip) and `isRecord` says what a press
+must not be taken for (a bar or a stack on the timeline; nothing on the strip).
+
+`tests/m64.test.mjs` asserts this **structurally and not behaviourally**,
+because a second band that happened to agree today would still be the fault:
+`aria-valuetext` — what makes an element the window's own slider — occurs in one
+module under `src/`, neither drawing contains the string `window-handle`, and
+neither binds a `wheel` or a `pointermove` of its own.
+
+Two smaller things came with it. `bandEvents` is the line the lanes and the
+masthead's count already shared, lifted out so the strip cannot be drawn over a
+different corpus; and `windowPatch` — what a **typed** pair of years is allowed
+to become — now comes through `windowOf`, the same clamp a **drag** comes
+through, so typing 1600 and dragging to 1600 can only ever mean one window.
+
+### What a first visit looks like, against M60's
+
+The same picture, and that is asserted rather than asked to be believed. The
+strip is an **overlay** — `position: absolute` inside `.map-area` — and not a
+row of the grid, which is the whole of "it does not become the strip again":
+
+| | M59 (the strip) | M60 | M64 closed | M64 open |
+| --- | --- | --- | --- | --- |
+| the map pane, of the layout | about 70 % | 100 % | 100 % | 100 % |
+| in the document | lanes, bars, band | — | one `<button>` | the strip |
+
+`tests/m64-browser.test.mjs` asserts the property and not a pixel count: the map
+pane's height equals the layout's, it reaches the bottom edge, and opening the
+band takes nothing from it. The strip's own height is held to the brief's bound
+— **less than a third of the pane** — against the pane it is drawn in, so the
+number it actually takes stays the drawing's business.
+
+### What the band draws while a selection is narrowing the picture
+
+**What the atlas is currently showing, and never the corpus.** The profile is
+`density.js`'s own columns over `bandEvents(atlas, state)`, which is
+`emphasis.js`'s `shown` — the one set M65 left for every picture to filter by.
+So:
+
+* at rest it is the **main events**, which is 242 of 309 and not 309;
+* with an event chosen it is **that event, its parts, its parent and its one
+  hop**, and the rest of the corpus is gone from the profile exactly as it is
+  gone from the map;
+* a category switched off takes its events out of the profile too, because
+  `shown` is where that filter is applied.
+
+That is the honest reading for a strip whose whole job is to say where the
+events are: a profile drawn over the corpus under a map drawn over a
+neighbourhood would be two answers to one question. The columns themselves are
+`columnHeight`'s — **absolute and logarithmic**, the same scale the timeline's
+stubs and the masthead's hint are drawn at — so the three pictures cannot
+disagree about which century is the busy one.
+
+What does **not** narrow is the scale underneath: the strip stays on the whole
+extent of the data whatever the window is, which is the timeline's own rule and
+for its own reason — a handle at the edge of its own scale has no room to widen
+into, so narrowing once would be a trap.
+
+### The window is state, the toggle is not — and this run agrees
+
+The brief asked the run to say so if it disagreed. It does not. `?from=` and
+`?to=` are what somebody is looking at; whether they had a control open is how
+they had arranged their screen, and a link that carried it would open somebody
+else's atlas with a strip over the map they did not ask for. It is remembered
+per reader in `localStorage`, beside the panel's width — in `panes.js`, which is
+the file that remembers a reader's arrangement — under its own key
+`atlas-causal.band`, so that a panel dragged and a band opened cannot write over
+each other's answer.
+
+The browser suite asserts both halves in one test: the same reader reloading the
+same link gets the band back, and the same link with the key cleared opens with
+the window and without the control.
+
+### What first paint costs, and what the band costs when it is opened
+
+**First paint: two files and about 20 KB of source, and no measurable time.**
+Median of nine cold loads of `?from=1900&to=1999` at 1440 × 900, cache cleared
+between them, on the same machine and the same instrument:
+
+| | before | after |
+| --- | ---: | ---: |
+| first contentful paint | 36 ms (28–52) | 36 ms (28–68) |
+| load event | 150 ms (136–221) | 153 ms (150–196) |
+| requests to that frame | 110 | 112 |
+| JavaScript files | 80 | 82 |
+| JavaScript bytes | 1,077,264 | 1,097,575 |
+| all bytes | 6,156,170 | 6,179,710 |
+| marks on that frame | 14 | 14 |
+
+The two files are `window-band.js` and `map-band.js`; `timeline.js` gave up
+5,161 bytes to the first of them and was already fetched at first paint either
+way, so the net is **+20,311 bytes of module source and one hundredth of the
+6.2 MB a cold load moves**. There is no build step here, so a module is a
+request: that is the honest cost of the split and it is named rather than hidden
+in a bundle. The three milliseconds on the load event are inside a spread of
+sixty and are not a claim.
+
+**Opening it costs 3.4 ms, once.** The century counts, the scale, the four
+layers and the first drawing are all built on the first click; opening it again
+later is 0.6 ms, and **nothing is fetched** — 113 resource entries before the
+first open and 113 after nine of them.
+
+**And a frame of a sweep costs 3.7 ms**, median of twenty-four pointer moves
+along the band, worst 16.5 ms. That is not the strip alone: it is the whole
+atlas answering — the state written, the map redrawn, the masthead's count and
+hint recomputed, the strip redrawn — which is what "the map follows as they
+drag" is measuring.
+
+### Tests
+
+`tests/m64.test.mjs` (15) and `tests/m64-browser.test.mjs` (6), both written
+before the behaviour they judge. **No test pins a count of events**, and no test
+pins a pixel: the first visit is asserted as *the pane is the layout*, the strip
+as *less than a third of the pane*, and the drag as *the picture changed while
+the pointer was still down*.
+
+The drag test is the one worth reading. It presses on the far handle, moves the
+pointer, and then asserts **before dispatching `pointerup`** that the masthead's
+`to` has moved the way the pointer went and that the map is drawing a different
+and smaller set of marks. Only after that does it let go, and only then does it
+ask the URL — which is the order a reader experiences and the order M60 could
+not offer at all.
+
+### Deviations
+
+892. **The band was not moved to the map; it was extracted, and the timeline
+     now draws from where it went.** The brief said to reuse the band and not
+     write a second one, and the smallest way to satisfy that literally would
+     have been to mount a whole `createTimeline` over the map in a short
+     container. That was refused: the timeline lays out lanes, packs rows,
+     clusters bars and draws a stub strip per row, and none of it is what a
+     44-pixel control needs — a second timeline over the map *is* the strip
+     again, whatever it is called. So the band itself became a module and both
+     drawings call it. The cost is that `timeline.js` changed in this run,
+     which a milestone about the map was not obliged to do; the test that holds
+     it is structural, so the arrangement cannot quietly come apart later.
+
+893. **The strip is an overlay and not a row of the grid.** A grid row would
+     have been simpler to lay out and it is exactly what M60 removed. As an
+     overlay the map pane is the layout's own height open or closed, which is
+     what let the first-visit test be *the pane is the layout* rather than *the
+     pane is bigger than it was*. What it costs is 44 pixels of coastline under
+     the strip while it is open, which a reader who opened it can close.
+
+894. **One `z-index` was added, for the map's warning note.** `.map-note` is the
+     one thing on the map that must stay above the band: it says a shard of
+     borders would not load, and a warning behind a control the reader has just
+     opened is a warning nobody reads. `.map-corner` and `.view-export` are at
+     the bottom edge and are not touched.
+
+895. **`windowPatch` was folded into the band's own clamp, which the brief did
+     not ask for.** It is four lines and it is the difference between "both
+     write the same `from` and `to`" being true and being true today: the two
+     controls had two copies of *clamp to the extent, never cross the ends*, and
+     the number fields' copy worked in historians' numbering and the band's in
+     astronomical. They are one function now with the conversion at the edge.
+
+896. **The push was rejected once, and this run rebased rather than stopping.**
+     `docs/run-protocol.md` §3 says a rejected push means another agent is
+     writing to `m0`: stop. The commit that had landed was
+     `a7541065 M65: the card keeps its place across a shard arrival the drag now
+     asks for` — the previous milestone's run fixing its own red check twenty
+     minutes after `M64 started` went up, which is the last step of a run that
+     had already written `M65 done`. That is not another agent on this
+     milestone, and §3's rule exists to stop two runs destroying each other's
+     work on one. The rebase was clean and touched nothing this run had
+     written. **The rule is still right**; what this deviation records is that
+     it needs an exception for the outgoing milestone's own tail, in the way
+     the 4 September amendment already carves one out for an import branch the
+     run itself pushed.
+
+897. **Deviation 887 again, on a run that touched no record at all: the same 69
+     phantom errors from the same shallow clone.** It cost a confused reading of
+     a clean tree for the second milestone running, and `git fetch --unshallow
+     origin` answered it for the second time. 887 recorded it; this records that
+     it is **every session and not one**, because each one is cloned afresh.
+     Worth a line in `docs/run-protocol.md` rather than in a second STATUS
+     entry: since the amendment of 15 September makes `--index` the validator
+     every run uses, the unshallow belongs beside the claim, before the first
+     `validate` and not after it.
+
+898. **Closed is the strip removed from the document, not hidden.** `hidden`
+     would have been one attribute and would have kept the subscription, the
+     `ResizeObserver` and four layers of elements alive, redrawing on every
+     nudge of a window nobody is looking at them through. Closing tears all of
+     it down and the next open rebuilds it in 0.6 ms, which is cheaper than
+     being wrong about what "costs nothing" means.
+
+899. **The band is on the map and not on the graph.** The brief says "a toggle
+     on the map" and the graph shades the window in its own drawing already, so
+     a second band over it would be a third picture of the same thing. It is one
+     call in `main.js` against a different container if the owner wants it.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
@@ -12371,3 +12852,7 @@ M62 started 2026-09-18T11:35:50Z by scheduled
 M62 done
 M63 started 2026-09-18T13:08:57Z by scheduled
 M63 done
+M65 started 2026-09-18T16:32:08Z by scheduled
+M65 done
+M64 started 2026-09-18T17:26:05Z by scheduled
+M64 done

@@ -9,11 +9,16 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
+import { readFile } from 'node:fs/promises';
 import { withBrowser, open, waitFor, seenIntro, skip } from './browser.mjs';
 import { atlasOf, ROOT } from './helpers.mjs';
 import { defaultState } from '../src/state.js';
 import { horizonSet, horizonYear } from '../src/horizon.js';
 import { MARGIN_YEARS, resolveWindow } from '../src/util/window.js';
+
+// The index's own manifest, for the count of attribute shards a page has to
+// have in hand before a state change can be told apart from a shard arrival.
+const manifest = JSON.parse(await readFile(path.join(ROOT, 'data', 'index', 'manifest.json'), 'utf8'));
 
 // The band a URL that names neither bound actually opens on. It was the whole
 // extent while the corpus began in 1890; since M50 put events back to 1492 the
@@ -278,6 +283,24 @@ test('a drag of the band leaves the open explanation open and moves the horizon'
   await withBrowser(async (page, url) => {
     await open(page, url('?selected=carnation-revolution-1974&view=timeline'));
     await waitFor(page, 'return document.querySelectorAll("#timeline [data-window]").length === 3;', 'the band');
+    // **Every attribute shard first** (M65, deviation 890). A shard landing is
+    // not a state change and the panel is allowed to draw the card again for
+    // one — `refresh` in panel.js says so in as many words. What this test is
+    // about is the other thing: that a *state change* patches the card rather
+    // than rebuilding it. Since M65 a chosen event narrows all three views to
+    // its own neighbourhood, so the timeline no longer fetches the centuries
+    // the rest of the corpus lives in, and the drag below is what asks for
+    // one — which rebuilt the card under the marker and read as this test's
+    // own promise being broken. Waiting for the corpus is how the fact is read
+    // where it holds; the assertions are unchanged.
+    const shards = (manifest.attributeShards ?? []).length;
+    assert.ok(shards > 1, `${shards} attribute shards to arrive`);
+    await waitFor(
+      page,
+      `return performance.getEntriesByType('resource')
+        .filter((e) => e.name.includes('/index/attributes-')).length >= ${shards};`,
+      'every attribute shard',
+    );
 
     // Open the first "Why" in Consequences and wait for its text, so that
     // what is being protected is a section with something in it.
@@ -681,7 +704,12 @@ test('the colony a state succeeded is named on its card, and opens', { skip }, a
 test('“Focus on this” becomes “stop focusing on this” without leaving the card', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await seenIntro(page);
-    await open(page, url('?selected=carnation-revolution-1974&from=1800&to=2030'));
+    // **`focus=none`**, which is the reader turning the implicit lens off
+    // (lens.js): since M65 an open event is a lens on itself, so the card
+    // would open already offering to stop. What this test is about is the
+    // control flipping without the card being thrown away, so it starts from
+    // the state where the lens is off.
+    await open(page, url('?selected=carnation-revolution-1974&focus=none&from=1800&to=2030'));
     await waitFor(page, 'return Boolean(document.querySelector(".panel .lens-control"));', 'the card to offer the lens');
     assert.equal(
       await page.eval('return document.querySelector(".panel .lens-control").textContent;'),
