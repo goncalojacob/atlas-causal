@@ -310,6 +310,25 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&from=1900&to=1999&view=timeline',
     width: 1440, height: 900,
     what: 'the timeline as a view: the lanes, the clusters and the band, in a pane the strip never had' },
+
+  // The three zooms M61 measured, over the same mark it measured them over:
+  // `the-base-reforms-rally-1964`, whose name is 53 characters and was cut to
+  // 28 at every one of them. The zoom is not in the URL — it is not what the
+  // reader is looking at, it is how far they have wheeled into it — so these
+  // go through the frame's `zoom` and `at`, which drive the wheel the way a
+  // reader would (docs/screens/frame.html).
+  { name: 'm61-labels-world', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=graph&zoom=1&at=the-base-reforms-rally-1964',
+    width: 1440, height: 900,
+    what: 'the world view: the same fourteen names, none longer than they were, none off the pane' },
+  { name: 'm61-labels-continent', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=graph&zoom=3.5&at=the-base-reforms-rally-1964',
+    width: 1440, height: 900,
+    what: 'a continent: the names using the room the zoom opened, and no two of them on each other' },
+  { name: 'm61-labels-close', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=graph&zoom=8&at=the-base-reforms-rally-1964',
+    width: 1440, height: 900,
+    what: 'a handful of nodes at MAX_ZOOM, each named in full where the room is there' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
