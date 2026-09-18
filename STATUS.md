@@ -13,6 +13,49 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-18, after **M63** (`docs/m63-brief.md`, on `m0`): **the check tells the
+truth again.** It had been red since 17 September on a different browser test
+every run, always a `waitFor` that ran out and never a wrong value, and every
+brief since M58 has carried a standing instruction to ignore it. **Ten
+consecutive full runs on the unchanged head `9453aa49` are ten green**, at a
+mean of **265 s** (260–270), 1,712 tests and 0 skipped in every one; the check
+on the runner is green on three heads running. **The standing instruction can
+be dropped from the next brief.**
+
+**It was five things, not one, and the load the brief named is the largest.**
+`docs/m63-load.md` is the measurement, taken before anything was changed.
+
+1. **Three browsers on four cores.** `node --test` runs
+   `availableParallelism() - 1` files at once — 3 here and 3 on the runner,
+   which has 4 cores and 15.6 GB and now prints both in the check's own log.
+   18 of the 147 test files start a browser and each `withBrowser` call
+   launches its own: about 130 browsers in a run, peaking at four at once and
+   25 chrome processes. **Memory was never the constraint** (3.4 GB of peak
+   RSS, 14.2 GB free). The check now runs **two passes**: the 129 pure suites
+   parallel, the 18 browser ones at `--test-concurrency=1`. `tools/suites.mjs`
+   reads which is which off the files themselves.
+2. **The source card forgot the rows the reader had asked for.** Every
+   attribute shard that lands rebuilds the card — thirteen rebuilds behind one
+   click, measured — and the rebuild drew 200 rows again.
+3. **`show the world` was undone by the map's own settle timer**, scheduled by
+   the pane changing size before the reader ever pressed the pin. Twelve
+   presses: two left the box in the address bar and all twelve had it back in
+   the state.
+4. **The browser was throttling the page.** A headless window taken for
+   backgrounded stops its animation frames, and this atlas writes the address
+   bar on a frame. Five flags now say otherwise.
+5. **Three tests read a fact before it was true** — the lane-polygon rule
+   sampled at two instants, the address bar read before the frame it is written
+   on, and a page taken as open before it had painted. Each now reads where the
+   fact holds; **not one assertion changed**, nothing was skipped, deleted,
+   retried or given a longer timeout.
+
+**Two of the five are defects in the atlas**, not in the tests: the check had
+been reporting them all along in a form nobody could read as a report. The
+price is **about 40 % more wall-clock here and 27 % on the runner** — 314 s
+against the 247 s of the last green run of the old arrangement — which is what
+an honest check costs. Deviations 877 to 882.
+
 2026-09-18, after **M60** (on `m0`): **the timeline is the third view, and the
 window is set from the masthead.** The owner asked for the strip along the
 bottom of the map to stop eating the screen — *"something to choose the
@@ -12023,6 +12066,64 @@ with `docs/m62-umbrellas.md`.
      **33 of 33 green** run together on the same head. A different browser test
      each run on an unchanged head is what 844 says it is — the suite under
      load, not a regression.
+877. **The brief's premise was right about the largest cause, and there were
+     four more under it.** Serialising the browser suites removed the failures
+     that only ever happened in a parallel run — the band drag, the Lisbon
+     label, the view switch. But **two of three consecutive serial browser
+     passes still dropped a test**, and neither was load: `index.html asks for
+     the core exactly 1 time(s)` and `the source card fetches its own citer
+     file and draws the rows`. Two more turned up in the first ten-run attempt
+     and a fifth in the second, which is why there are two sets of ten in
+     `docs/m63-load.md` and why the first is reported as nine and one. Each
+     cause was measured on the page with the driven browser before anything was
+     changed for it.
+878. **Two of the five causes are defects in the atlas and not in the tests.**
+     The source card threw away the citers list the reader had just opened,
+     because every attribute shard that lands rebuilds the card (thirteen
+     rebuilds behind one click). *Show the world* was undone by the map's own
+     settle timer, scheduled by the pane changing size before the pin was ever
+     pressed (twelve presses, the box back in the state in all twelve). The
+     brief said this milestone changes how the tests are run and not what they
+     check — and it did; but the check had been reporting two real bugs the
+     whole time in a form nobody could read as one. `src/panel/source.js` and
+     `src/map/map.js`, one small change each, each with its measurement.
+879. **Three test files were edited, which the brief did not allow for, and no
+     assertion changed.** `tests/spine-pages.test.mjs` read the request list at
+     one instant and counted the washes at another with the fetch landing in
+     between; both halves now come back from one evaluation.
+     `tests/m60-browser.test.mjs` read the address bar immediately after a
+     click, and `state.js` writes it on the next animation frame on purpose; it
+     waits for that frame now. `tests/browser.mjs` — the harness, not a test —
+     now treats a page as open when it has painted, which is the third of them
+     fixed for every test at once. All three are the same kind of change,
+     **where a measurement is taken and not what is asserted**, and all three
+     are the owner's to overrule. Nothing was skipped, deleted, retried or
+     given a longer timeout, and the suite is 1,712 tests and 0 skipped at both
+     ends of this milestone.
+880. **`tests/browser.mjs` launched Chromium with three flags and needed
+     eight.** A headless window can be taken for occluded or backgrounded, and
+     a backgrounded renderer has its timers throttled and its animation frames
+     stopped — which for this atlas means the address bar stops being written,
+     since every replace-type write waits for a frame. With the four
+     anti-throttling flags the frames arrive sixty a second for a minute with
+     no gap over 117 ms. `--disable-dev-shm-usage` is in the same commit for a
+     different reason: /dev/shm is 64 MB on a GitHub runner and a renderer that
+     fills it dies rather than slows, which is what deviation 876's `headless
+     Chromium opened a debugging port` had nothing else to say about.
+881. **`tests/entry-browser.test.mjs` starts a browser and does not import
+     `tests/browser.mjs`**, because it renders with `--dump-dom`. So the split
+     is by what a file *does* — an import of the driven browser or a call to
+     `findChrome` — and not by a name ending in `-browser`: 18 files in the
+     serial pass, 129 in the parallel one, 147 in all, which is every test file
+     there is. `tools/suites.mjs` refuses to hand over an empty pass, because
+     `node --test` with no files goes back to discovering them all, and that
+     would look green and be this same check again.
+882. **Only the tail of a job's log can be read from this sandbox (deviation
+     729), so the check says what machine it ran on twice**: four lines at the
+     head of the job, and the cores and memory again at the end of the Tests
+     step, which is thousands of lines further down and the only one reachable
+     when a red check is being read. The suite has said its failing tests twice
+     for the same reason since M44a.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled

@@ -77,11 +77,13 @@ So the two halves were measured apart:
 
 | pass | files | tests | how it ran | wall | result |
 | --- | --- | --- | --- | --- | --- |
-| C | the driven browser suites | 176 | `--test-concurrency=1` | 154 s | green |
-| D | the pure suites | 1,536 | default | 90 s | green |
+| C | the 17 driven browser suites | 176 | `--test-concurrency=1` | 154 s | green |
+| D | the other 130 files | 1,536 | default | 90 s | green |
 
 176 + 1,536 = 1,712, which is the whole suite: the two passes are a partition
-and nothing is left unrun. **154 + 90 = 244 s** — 29 % more than the red run
+and nothing is left unrun. (`tests/entry-browser.test.mjs` and its two tests
+moved into the serial pass afterwards, on the rule below, so the passes as the
+check runs them are 178 and 1,534.) **154 + 90 = 244 s** — 29 % more than the red run
 costs today, and 135 s less than serialising everything.
 
 **What was chosen: the browser suites run one at a time, the pure suites keep
