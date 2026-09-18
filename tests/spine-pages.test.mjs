@@ -98,13 +98,24 @@ for (const [query, ready, graph, times] of PAGES) {
       // asked for the shapes has a wash to show for it, and a page that drew
       // no wash never asked. What the wash costs is STATUS.md's to report and
       // the owner's to decide.
-      const asked = requests.filter((name) => name.includes('geo/regions.json')).length;
-      assert.ok(asked <= 1, `${query} asked for the lane polygons ${asked} times: ${requests.join(' · ')}`);
-      if (asked === 1) {
+      //
+      // Both halves of that rule are read in **one** evaluation, and the
+      // reason is M63 (docs/m63-load.md): the shapes are asked for at about
+      // the instant the page becomes ready, so `requests` — taken above — and
+      // a count of washes taken a round trip later are two different moments,
+      // and a page whose fetch landed between them reads as one that drew a
+      // wash it never asked for. It is the same rule, sampled where it is
+      // true: a wash cannot be on screen before the file it is filled from.
+      const wash = await page.eval(`return {
+        asked: performance.getEntriesByType('resource').filter((e) => e.name.includes('geo/regions.json')).length,
+        washes: document.querySelectorAll('.region-wash').length,
+      };`);
+      assert.ok(wash.asked <= 1, `${query} asked for the lane polygons ${wash.asked} times: ${requests.join(' · ')}`);
+      if (wash.asked === 1) {
         await waitFor(page, 'return document.querySelectorAll(".region-wash").length > 0;', `${query} to draw the wash it fetched the lane polygons for`);
       } else {
         assert.equal(
-          await page.eval('return document.querySelectorAll(".region-wash").length;'), 0,
+          wash.washes, 0,
           `${query} drew a wash without ever asking for the shapes`,
         );
       }
