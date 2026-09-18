@@ -157,6 +157,28 @@ export async function withBrowser(fn, { device = null, touch = false } = {}) {
   const profile = await mkdtemp(path.join(tmpdir(), 'atlas-cdp-'));
   const child = spawn(chrome, [
     '--headless', '--disable-gpu', '--no-sandbox',
+    // The four flags that stop the browser slowing the page down under it.
+    // A headless window can be taken for occluded or backgrounded, and a
+    // backgrounded renderer has its timers throttled and its animation frames
+    // stopped — and the atlas defers every replace-type write of the address
+    // bar to an animation frame (state.js, `write`), so a frame that never
+    // comes is a URL that never changes and a test that waits ten seconds for
+    // it. That is what dropped *the count of what the map is looking at is in
+    // the masthead* with `timed out waiting for the world back` on a pass with
+    // one browser and nothing else running (M63, docs/m63-load.md).
+    // The fourth is Chromium's own rate limit on a renderer that sends it too
+    // many messages: a band drag is a great many history writes, and the
+    // protection delays them rather than dropping them, which reads here as
+    // the page going quiet. None of the four changes what the page does — only
+    // what the browser does to it when it thinks nobody is looking.
+    '--disable-background-timer-throttling',
+    '--disable-backgrounding-occluded-windows',
+    '--disable-renderer-backgrounding',
+    '--disable-ipc-flooding-protection',
+    // And /dev/shm, which is 64 MB on a GitHub runner: a renderer that fills
+    // it does not slow down, it dies, and a browser that died mid-test is the
+    // launch failure the assertion below reports with nothing else to say.
+    '--disable-dev-shm-usage',
     // The window is the device's own size before the page is ever loaded.
     // The override below alone is not enough: headless scales the emulated
     // viewport to the window it was given, and a phone inside an 800 × 600
