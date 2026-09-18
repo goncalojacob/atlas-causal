@@ -12007,6 +12007,23 @@ with `docs/m62-umbrellas.md`.
      **`sources.html` and `narratives.html` are the third thing that goes stale
      on the commit that writes a record**.
 
+876. **The branch's check is red on the head that carries M62, and it is
+     deviation 844's measurement again.** Run 893 on `939224ff` failed the
+     test step with **1,710 passing, 2 failing and 1 cancelled of 1,713**, and
+     neither failure is this milestone's. One is
+     `tests/panel-browser.test.mjs`, *"a drag of the band leaves the open
+     explanation open and moves the horizon"*, timing out on a wait — **the
+     same test M61's second run dropped**, on a head that changed no code. The
+     other is `tests/review-browser.test.mjs`, where **headless Chromium never
+     started**: the log is D-Bus, `Failed to connect to the bus: Could not
+     parse server address`, and the file's 120-second timeout is what that
+     cost rather than an assertion. Two full local runs on this head: the first
+     dropped `tests/spine-pages.test.mjs`'s citer-file test, the second is
+     **1,712 of 1,712 with nothing skipped**; the two files CI dropped are
+     **33 of 33 green** run together on the same head. A different browser test
+     each run on an unchanged head is what 844 says it is — the suite under
+     load, not a regression.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
