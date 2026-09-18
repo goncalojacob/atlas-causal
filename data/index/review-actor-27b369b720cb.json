@@ -7217,10 +7217,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 4,
+      "degree": 6,
       "id": "british-guiana",
       "kind": "actor",
       "names": [
@@ -7231,40 +7232,45 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-joined"
         ],
+        "note": "M59: joined with guyana-under-united-kingdom, the same polity — the same word in the same two spellings, under the sovereign the 1886 id states in its own fields. The outlines either side of the 1885/1886 seam share 95.89% of the smaller and 54.92% of the union (docs/m59-singletons.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1783) and the 1886 record's own end (1966); neither was authored here.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
       "authors": [
         {
           "github": null,
-          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
       "cites": [
+        "cshapes-2-0",
         "historical-basemaps"
       ],
-      "created": "2026-09-16",
-      "degree": 2,
-      "id": "british-raj",
+      "created": "2026-09-03",
+      "degree": 9,
+      "id": "british-india",
       "kind": "actor",
       "names": [
-        "British Raj"
+        "British India",
+        "India (British)"
       ],
       "origin": {
-        "tool": "basemaps"
+        "tool": "cshapes"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "m59-joined"
         ],
+        "note": "M59: joined with british-raj, the same polity — the British Raj and British India are two English names for one polity. The outlines either side of the 1885/1886 seam share 95.18% of the smaller and 89.75% of the union (docs/m59-singletons.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1947); neither was authored here.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -9057,10 +9063,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 6,
+      "degree": 8,
       "id": "ceylon",
       "kind": "actor",
       "names": [
@@ -9071,11 +9078,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-joined"
         ],
+        "note": "M59: joined with sri-lanka-ceylon-under-united-kingdom, the same polity — the parenthetical is the same polity's other name, as \"Madagascar (Malagasy)\" was in M51. The outlines either side of the 1885/1886 seam share 97.17% of the smaller and 87.90% of the union (docs/m59-singletons.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1650) and the 1886 record's own end (1948); neither was authored here.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -14226,10 +14235,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 5,
       "id": "dutch-guiana",
       "kind": "actor",
       "names": [
@@ -14240,11 +14250,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-joined"
         ],
+        "note": "M59: joined with surinam-under-netherlands, the same polity — Dutch Guiana is the colony the other import files as Surinam. The outlines either side of the 1885/1886 seam share 97.17% of the smaller and 90.95% of the union (docs/m59-singletons.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1975); neither was authored here.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -16481,10 +16493,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 5,
       "id": "french-guiana",
       "kind": "actor",
       "names": [
@@ -16495,11 +16508,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-joined"
         ],
+        "note": "M59: joined with french-guyana, the same polity — Guiana and Guyana are one word in two spellings. The outlines either side of the 1885/1886 seam share 94.57% of the smaller and 86.81% of the union (docs/m59-singletons.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (open); neither was authored here.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -39209,10 +39224,11 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "cshapes-2-0"
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 5,
       "id": "netherlands-indies",
       "kind": "actor",
       "names": [
@@ -39223,11 +39239,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "m59-joined"
         ],
+        "note": "M59: joined with dutch-east-indies, the same polity — Netherlands and Dutch are one adjective in two forms, and the Indies are the same Indies. The outlines either side of the 1885/1886 seam share 92.93% of the smaller and 79.77% of the union (docs/m59-singletons.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1945); neither was authored here.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -49734,11 +49752,11 @@
         "historical-basemaps"
       ],
       "created": "2026-09-16",
-      "degree": 2,
-      "id": "romania",
+      "degree": 5,
+      "id": "rozwi",
       "kind": "actor",
       "names": [
-        "Romania"
+        "Rozwi"
       ],
       "origin": {
         "tool": "basemaps"
@@ -49756,29 +49774,31 @@
       "authors": [
         {
           "github": null,
-          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
       "cites": [
+        "cshapes-2-0",
         "historical-basemaps"
       ],
-      "created": "2026-09-16",
-      "degree": 5,
-      "id": "rozwi",
+      "created": "2026-09-02",
+      "degree": 13,
+      "id": "rumania",
       "kind": "actor",
       "names": [
-        "Rozwi"
+        "Rumania"
       ],
       "origin": {
-        "tool": "basemaps"
+        "tool": "cshapes"
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "m59-joined"
         ],
+        "note": "M59: joined with romania, the same polity — Rumania is Romania in the older English spelling. The outlines either side of the 1885/1886 seam share 92.77% of the smaller and 58.19% of the union (docs/m59-singletons.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (open); neither was authored here.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {

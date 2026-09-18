@@ -81,7 +81,7 @@
       "note": "CShapes holds 80 as a colony of United Kingdom to 1981-09-20; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
     },
     "110": {
-      "actor": "guyana-under-united-kingdom",
+      "actor": "british-guiana",
       "names": [
         "Guyana under United Kingdom"
       ],
@@ -94,7 +94,7 @@
       "note": "CShapes holds 110 as a colony of United Kingdom to 1966-05-25; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
     },
     "115": {
-      "actor": "surinam-under-netherlands",
+      "actor": "dutch-guiana",
       "names": [
         "Surinam under Netherlands"
       ],
@@ -858,7 +858,7 @@
       "note": "CShapes holds 775 as a colony of United Kingdom to 1948-01-03; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
     },
     "780": {
-      "actor": "sri-lanka-ceylon-under-united-kingdom",
+      "actor": "ceylon",
       "names": [
         "Sri Lanka (Ceylon) under United Kingdom"
       ],
@@ -962,7 +962,7 @@
       "note": "CShapes holds 840 as a colony of United States of America to 1946-07-03; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. The source gives the held period under more than one power (Spain, then United States of America); the record is named for the one that held it longest (Spain:13y, United States of America:48y)."
     },
     "850": {
-      "actor": "dutch-east-indies",
+      "actor": "netherlands-indies",
       "names": [
         "Dutch East Indies",
         "Netherlands East Indies"

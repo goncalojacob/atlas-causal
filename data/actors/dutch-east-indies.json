@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "dutch-east-indies",
   "kind": "actor",
-  "status": "active",
-  "supersededBy": null,
+  "status": "merged",
+  "supersededBy": "netherlands-indies",
   "aliases": [],
   "authors": [
     {
@@ -13,7 +13,14 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-03",
-  "revised": null,
+  "revised": "2026-09-18",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m59-joined"
+    ],
+    "note": "M59: merged into netherlands-indies, the same polity — Netherlands and Dutch are one adjective in two forms, and the Indies are the same Indies. The outlines share 92.93% of the smaller (docs/m59-singletons.md). The names, summary and licence here are this import's and stay here: the survivor carries the other import's licence and could not take them."
+  },
   "origin": {
     "tool": "cshapes"
   },

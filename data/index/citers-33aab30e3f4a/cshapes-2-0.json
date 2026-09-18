@@ -224,6 +224,12 @@
     },
     {
       "dissent": false,
+      "id": "british-guiana",
+      "kind": "actor",
+      "locator": "gwcode 110"
+    },
+    {
+      "dissent": false,
       "id": "british-india",
       "kind": "actor",
       "locator": "gwcode 750"
@@ -335,6 +341,12 @@
       "id": "central-african-republic-under-france",
       "kind": "actor",
       "locator": "gwcode 482"
+    },
+    {
+      "dissent": false,
+      "id": "ceylon",
+      "kind": "actor",
+      "locator": "gwcode 780"
     },
     {
       "dissent": false,
@@ -494,9 +506,9 @@
     },
     {
       "dissent": false,
-      "id": "dutch-east-indies",
+      "id": "dutch-guiana",
       "kind": "actor",
-      "locator": "gwcode 850"
+      "locator": "gwcode 115"
     },
     {
       "dissent": false,
@@ -620,7 +632,7 @@
     },
     {
       "dissent": false,
-      "id": "french-guyana",
+      "id": "french-guiana",
       "kind": "actor",
       "locator": "gwcode 120"
     },
@@ -759,12 +771,6 @@
     {
       "dissent": false,
       "id": "guyana",
-      "kind": "actor",
-      "locator": "gwcode 110"
-    },
-    {
-      "dissent": false,
-      "id": "guyana-under-united-kingdom",
       "kind": "actor",
       "locator": "gwcode 110"
     },
@@ -1238,6 +1244,12 @@
     },
     {
       "dissent": false,
+      "id": "netherlands-indies",
+      "kind": "actor",
+      "locator": "gwcode 850"
+    },
+    {
+      "dissent": false,
       "id": "new-caledonia-and-dependencies",
       "kind": "actor",
       "locator": "gwcode 930"
@@ -1658,12 +1670,6 @@
     },
     {
       "dissent": false,
-      "id": "sri-lanka-ceylon-under-united-kingdom",
-      "kind": "actor",
-      "locator": "gwcode 780"
-    },
-    {
-      "dissent": false,
       "id": "straits-settlements",
       "kind": "actor",
       "locator": "gwcode 827"
@@ -1683,12 +1689,6 @@
     {
       "dissent": false,
       "id": "surinam",
-      "kind": "actor",
-      "locator": "gwcode 115"
-    },
-    {
-      "dissent": false,
-      "id": "surinam-under-netherlands",
       "kind": "actor",
       "locator": "gwcode 115"
     },
@@ -6332,6 +6332,12 @@
     },
     {
       "dissent": false,
+      "id": "british-guiana--guyana--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 110"
+    },
+    {
+      "dissent": false,
       "id": "british-india--republic-of-india--succeeded",
       "kind": "relation",
       "locator": "gwcode 750"
@@ -6371,6 +6377,12 @@
       "id": "central-african-republic-under-france--central-african-republic--succeeded",
       "kind": "relation",
       "locator": "gwcode 482"
+    },
+    {
+      "dissent": false,
+      "id": "ceylon--sri-lanka-ceylon--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 780"
     },
     {
       "dissent": false,
@@ -6422,9 +6434,9 @@
     },
     {
       "dissent": false,
-      "id": "dutch-east-indies--indonesia--succeeded",
+      "id": "dutch-guiana--surinam--succeeded",
       "kind": "relation",
-      "locator": "gwcode 850"
+      "locator": "gwcode 115"
     },
     {
       "dissent": false,
@@ -6485,12 +6497,6 @@
       "id": "guinea-under-france--guinea--succeeded",
       "kind": "relation",
       "locator": "gwcode 438"
-    },
-    {
-      "dissent": false,
-      "id": "guyana-under-united-kingdom--guyana--succeeded",
-      "kind": "relation",
-      "locator": "gwcode 110"
     },
     {
       "dissent": false,
@@ -6608,6 +6614,12 @@
     },
     {
       "dissent": false,
+      "id": "netherlands-indies--indonesia--succeeded",
+      "kind": "relation",
+      "locator": "gwcode 850"
+    },
+    {
+      "dissent": false,
       "id": "new-zealand-under-united-kingdom--new-zealand--succeeded",
       "kind": "relation",
       "locator": "gwcode 920"
@@ -6668,21 +6680,9 @@
     },
     {
       "dissent": false,
-      "id": "sri-lanka-ceylon-under-united-kingdom--sri-lanka-ceylon--succeeded",
-      "kind": "relation",
-      "locator": "gwcode 780"
-    },
-    {
-      "dissent": false,
       "id": "sudan-under-united-kingdom--sudan--succeeded",
       "kind": "relation",
       "locator": "gwcode 625"
-    },
-    {
-      "dissent": false,
-      "id": "surinam-under-netherlands--surinam--succeeded",
-      "kind": "relation",
-      "locator": "gwcode 115"
     },
     {
       "dissent": false,

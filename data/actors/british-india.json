@@ -13,7 +13,14 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-03",
-  "revised": null,
+  "revised": "2026-09-18",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m59-joined"
+    ],
+    "note": "M59: joined with british-raj, the same polity — the British Raj and British India are two English names for one polity. The outlines either side of the 1885/1886 seam share 95.18% of the smaller and 89.75% of the union (docs/m59-singletons.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1947); neither was authored here."
+  },
   "origin": {
     "tool": "cshapes"
   },
@@ -21,6 +28,10 @@
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 750"
+    },
+    {
+      "source": "historical-basemaps",
+      "locator": "NAME \"British Raj\""
     }
   ],
   "actorType": "polity",
@@ -30,7 +41,7 @@
   ],
   "summary": "Entity 750 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 6 periods of territorial validity, from 1886 to 1947. The source calls it \"India\"; the names on this record are the ones data/imports/cshapes-actors.json gives it. Its last capital in the dataset is New Delhi (Delhi). The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods before the first cut. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
-    "start": 1886,
+    "start": 1878,
     "end": 1947
   },
   "where": {

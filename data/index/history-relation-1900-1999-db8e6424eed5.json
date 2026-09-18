@@ -150,6 +150,19 @@
         }
       ]
     },
+    "british-guiana--guyana--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
     "british-india--republic-of-india--succeeded": {
       "from": "git",
       "versions": [
@@ -256,6 +269,19 @@
         }
       ]
     },
+    "ceylon--sri-lanka-ceylon--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
     "chad-under-france--chad--succeeded": {
       "from": "git",
       "versions": [
@@ -341,25 +367,16 @@
         }
       ]
     },
-    "dutch-east-indies--indonesia--succeeded": {
-      "from": "git",
+    "dutch-guiana--surinam--succeeded": {
+      "from": "revised",
       "versions": [
         {
           "first": true,
-          "on": "2026-09-03"
+          "on": "2026-09-08"
         },
         {
-          "fields": [
-            "review"
-          ],
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
+          "fields": [],
+          "on": "2026-09-18"
         }
       ]
     },
@@ -669,15 +686,6 @@
       ]
     },
     "guinea-under-france--guinea--succeeded": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-08"
-        }
-      ]
-    },
-    "guyana-under-united-kingdom--guyana--succeeded": {
       "from": "git",
       "versions": [
         {
@@ -1043,6 +1051,19 @@
         {
           "first": true,
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "netherlands-indies--indonesia--succeeded": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
         }
       ]
     },
@@ -1601,25 +1622,7 @@
         }
       ]
     },
-    "sri-lanka-ceylon-under-united-kingdom--sri-lanka-ceylon--succeeded": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-08"
-        }
-      ]
-    },
     "sudan-under-united-kingdom--sudan--succeeded": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-08"
-        }
-      ]
-    },
-    "surinam-under-netherlands--surinam--succeeded": {
       "from": "git",
       "versions": [
         {

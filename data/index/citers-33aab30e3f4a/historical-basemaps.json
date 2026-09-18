@@ -1388,7 +1388,7 @@
     },
     {
       "dissent": false,
-      "id": "british-raj",
+      "id": "british-india",
       "kind": "actor",
       "locator": "NAME \"British Raj\""
     },
@@ -9434,15 +9434,15 @@
     },
     {
       "dissent": false,
-      "id": "romania",
-      "kind": "actor",
-      "locator": "NAME \"Romania\""
-    },
-    {
-      "dissent": false,
       "id": "rozwi",
       "kind": "actor",
       "locator": "NAME \"Rozwi\""
+    },
+    {
+      "dissent": false,
+      "id": "rumania",
+      "kind": "actor",
+      "locator": "NAME \"Romania\""
     },
     {
       "dissent": false,

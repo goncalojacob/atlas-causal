@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "surinam-under-netherlands",
   "kind": "actor",
-  "status": "active",
-  "supersededBy": null,
+  "status": "merged",
+  "supersededBy": "dutch-guiana",
   "aliases": [],
   "authors": [
     {
@@ -13,7 +13,14 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-09-18",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m59-joined"
+    ],
+    "note": "M59: merged into dutch-guiana, the same polity — Dutch Guiana is the colony the other import files as Surinam. The outlines share 97.17% of the smaller (docs/m59-singletons.md). The names, summary and licence here are this import's and stay here: the survivor carries the other import's licence and could not take them."
+  },
   "origin": {
     "tool": "cshapes"
   },

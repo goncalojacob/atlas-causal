@@ -63,7 +63,10 @@ test('the repository map carries the two splits the milestone asked for', async 
   const { entries } = maps.find((m) => m.file === 'imports/cshapes-actors.json').map;
   assert.equal(entries['750'].actor, 'british-india');
   assert.deepEqual(entries['750'].splits.map((s) => [s.from, s.actor]), [['1947-08-15', 'republic-of-india']]);
-  assert.equal(entries['850'].actor, 'dutch-east-indies');
+  // M59 joined `dutch-east-indies` into `netherlands-indies`, the Historical
+  // Basemaps record of the same colony, so 850 names the survivor. The split
+  // is untouched: what the entry maps onto moved, not when it divides.
+  assert.equal(entries['850'].actor, 'netherlands-indies');
   assert.deepEqual(entries['850'].splits.map((s) => [s.from, s.actor]), [['1945-08-17', 'indonesia']]);
 });
 

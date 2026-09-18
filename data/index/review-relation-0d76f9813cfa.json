@@ -319,6 +319,34 @@
       "authors": [
         {
           "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "british-guiana",
+      "id": "british-guiana--guyana--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-18",
+      "status": "active",
+      "to": "guyana",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -510,6 +538,34 @@
       "revised": null,
       "status": "active",
       "to": "central-african-republic",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-08",
+      "from": "ceylon",
+      "id": "ceylon--sri-lanka-ceylon--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-18",
+      "status": "active",
+      "to": "sri-lanka-ceylon",
       "type": "succeeded"
     },
     {
@@ -770,29 +826,28 @@
       "authors": [
         {
           "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
       "cites": [
         "cshapes-2-0"
       ],
-      "created": "2026-09-03",
-      "from": "dutch-east-indies",
-      "id": "dutch-east-indies--indonesia--succeeded",
+      "created": "2026-09-08",
+      "from": "dutch-guiana",
+      "id": "dutch-guiana--surinam--succeeded",
       "kind": "relation",
       "origin": {
-        "tool": "assistant"
+        "tool": "cshapes"
       },
       "review": {
         "flags": [
-          "date"
+          "imported-facts"
         ],
-        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active",
-      "to": "indonesia",
+      "to": "surinam",
       "type": "succeeded"
     },
     {
@@ -1402,34 +1457,6 @@
       "revised": null,
       "status": "active",
       "to": "guinea",
-      "type": "succeeded"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
-        }
-      ],
-      "cites": [
-        "cshapes-2-0"
-      ],
-      "created": "2026-09-08",
-      "from": "guyana-under-united-kingdom",
-      "id": "guyana-under-united-kingdom--guyana--succeeded",
-      "kind": "relation",
-      "origin": {
-        "tool": "cshapes"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "guyana",
       "type": "succeeded"
     },
     {
@@ -2112,6 +2139,35 @@
       "revised": null,
       "status": "active",
       "to": "german-federal-republic",
+      "type": "succeeded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "cshapes-2-0"
+      ],
+      "created": "2026-09-03",
+      "from": "netherlands-indies",
+      "id": "netherlands-indies--indonesia--succeeded",
+      "kind": "relation",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "date"
+        ],
+        "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source.",
+        "status": "draft"
+      },
+      "revised": "2026-09-18",
+      "status": "active",
+      "to": "indonesia",
       "type": "succeeded"
     },
     {
@@ -3036,34 +3092,6 @@
         "cshapes-2-0"
       ],
       "created": "2026-09-08",
-      "from": "sri-lanka-ceylon-under-united-kingdom",
-      "id": "sri-lanka-ceylon-under-united-kingdom--sri-lanka-ceylon--succeeded",
-      "kind": "relation",
-      "origin": {
-        "tool": "cshapes"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "sri-lanka-ceylon",
-      "type": "succeeded"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
-        }
-      ],
-      "cites": [
-        "cshapes-2-0"
-      ],
-      "created": "2026-09-08",
       "from": "sudan-under-united-kingdom",
       "id": "sudan-under-united-kingdom--sudan--succeeded",
       "kind": "relation",
@@ -3079,34 +3107,6 @@
       "revised": null,
       "status": "active",
       "to": "sudan",
-      "type": "succeeded"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
-        }
-      ],
-      "cites": [
-        "cshapes-2-0"
-      ],
-      "created": "2026-09-08",
-      "from": "surinam-under-netherlands",
-      "id": "surinam-under-netherlands--surinam--succeeded",
-      "kind": "relation",
-      "origin": {
-        "tool": "cshapes"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "surinam",
       "type": "succeeded"
     },
     {

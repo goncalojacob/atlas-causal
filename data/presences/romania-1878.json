@@ -13,12 +13,12 @@
   ],
   "license": "GPL-3.0-only",
   "created": "2026-09-16",
-  "revised": null,
-  "origin": {
-    "tool": "basemaps"
-  },
+  "revised": "2026-09-18",
   "review": {
     "status": "draft"
+  },
+  "origin": {
+    "tool": "basemaps"
   },
   "sources": [
     {
@@ -26,7 +26,7 @@
       "locator": "world_1878.geojson, \"Romania\""
     }
   ],
-  "actor": "romania",
+  "actor": "rumania",
   "presenceType": "polity",
   "dependencyOf": null,
   "dependencyKind": null,
