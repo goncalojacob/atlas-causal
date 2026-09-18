@@ -434,6 +434,12 @@
     },
     {
       "dissent": false,
+      "id": "brazilian-military-dictatorship-1964-1985",
+      "kind": "event",
+      "locator": "\"Ditadura militar brasileira\", revision 72895311"
+    },
+    {
+      "dissent": false,
       "id": "bucha-massacre",
       "kind": "event",
       "locator": "\"Massacre de Bucha\", revision 71884669"
@@ -482,9 +488,21 @@
     },
     {
       "dissent": false,
+      "id": "ditadura-nacional-1926-1933",
+      "kind": "event",
+      "locator": "\"Ditadura Nacional\", revision 72710910"
+    },
+    {
+      "dissent": false,
       "id": "eastern-front",
       "kind": "event",
       "locator": "\"Frente Oriental (Segunda Guerra Mundial)\", revision 71477173"
+    },
+    {
+      "dissent": false,
+      "id": "estado-novo-1933-1974",
+      "kind": "event",
+      "locator": "\"Estado Novo (Portugal)\", revision 72805786"
     },
     {
       "dissent": false,
@@ -509,6 +527,12 @@
       "id": "first-indochina-war",
       "kind": "event",
       "locator": "\"Primeira Guerra da Indochina\", revision 72128882"
+    },
+    {
+      "dissent": false,
+      "id": "first-portuguese-republic-1910-1926",
+      "kind": "event",
+      "locator": "\"Primeira República Portuguesa\", revision 72349802"
     },
     {
       "dissent": false,
@@ -641,6 +665,12 @@
       "id": "petrobras-1953",
       "kind": "event",
       "locator": "\"Petrobras\", revision 72337059"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-colonial-war-1961-1974",
+      "kind": "event",
+      "locator": "\"Guerra Colonial Portuguesa\", revision 72993312"
     },
     {
       "dissent": false,
