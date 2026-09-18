@@ -85,7 +85,10 @@ export function createMapBand(container, {
     'aria-controls': 'map-band-strip',
     'aria-expanded': 'false',
     title: 'Choose the window of time on the map: drag either end and the map follows',
-  }, 'years');
+    // The owner's own word for them: "a toggle on the map so I can choose the
+    // dates instead of a selector". Two syllables in the corner of a picture,
+    // and the title says the rest.
+  }, 'dates');
   wrap.append(toggle);
   container.append(wrap);
 
