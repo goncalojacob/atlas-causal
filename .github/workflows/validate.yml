@@ -60,7 +60,27 @@ jobs:
         # the bounds in tests/browser.mjs are what should make it never fire.
         # The slowest single test takes about 6s, so 120s is not a deadline an
         # honest test comes near.
-        run: node --test --test-timeout=120000
+        #
+        # Two passes since M63, and the reason is docs/m63-load.md: at the
+        # default concurrency three of the suites that drive a headless
+        # Chromium are scheduled together on four cores, and a page that is
+        # still fetching when its `waitFor` runs out drops a different test
+        # every run. The eighteen that start a browser therefore run one at a
+        # time and the other 129 stay parallel — 244s against the 189s of the
+        # red arrangement and the 379s of serialising everything. Both passes
+        # are run whatever the first one does, because a browser failure and a
+        # regression in the records are different news and the log should
+        # carry both; the step fails if either did.
+        # tools/suites.mjs reads which files are which rather than holding a
+        # list, and refuses to hand over an empty pass — `node --test` with no
+        # files goes back to discovering them all, which would look green and
+        # be this same check again.
+        run: |
+          set -u
+          status=0
+          node --test --test-timeout=120000 $(node tools/suites.mjs --pure) || status=1
+          node --test --test-timeout=120000 --test-concurrency=1 $(node tools/suites.mjs --browser) || status=1
+          exit $status
       - name: Whether this pull request touches data/index/
         id: data
         env:

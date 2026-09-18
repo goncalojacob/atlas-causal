@@ -45,7 +45,16 @@ jobs:
       - name: Validate records
         run: node tools/validate.mjs
       - name: Tests
-        run: node --test
+        # The two passes of validate.yml, for the same reason and with the
+        # same tool: the suites that start a headless Chromium one at a time,
+        # the pure ones parallel (docs/m63-load.md). This job publishes the
+        # site, so a flake here is a deploy that did not happen.
+        run: |
+          set -u
+          status=0
+          node --test $(node tools/suites.mjs --pure) || status=1
+          node --test --test-concurrency=1 $(node tools/suites.mjs --browser) || status=1
+          exit $status
       # The palette before the index: the manifest names the palette file, so
       # building them the other way round would write a manifest for a file
       # that is about to change.

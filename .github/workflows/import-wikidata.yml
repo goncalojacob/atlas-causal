@@ -122,7 +122,17 @@ jobs:
             # thousands of lines above the end and out of reach. M44a spent two
             # runs unable to read which test had stopped it. The output is kept
             # whole, and the failing tests are repeated at the end.
-            if ! node --test --test-timeout=120000 2>&1 | tee /tmp/tests.log; then
+            # Two passes since M63 (docs/m63-load.md): the eighteen suites
+            # that start a headless Chromium run one at a time, the other 129
+            # stay parallel, because three browsers on four cores time each
+            # other out and drop a different test every run. Both passes are
+            # run and both are kept in the log, which is the file the report
+            # below is read out of.
+            : > /tmp/tests.log
+            dropped=0
+            node --test --test-timeout=120000 $(node tools/suites.mjs --pure) 2>&1 | tee -a /tmp/tests.log || dropped=1
+            node --test --test-timeout=120000 --test-concurrency=1 $(node tools/suites.mjs --browser) 2>&1 | tee -a /tmp/tests.log || dropped=1
+            if [ "$dropped" = 1 ]; then
               echo "--- the tests that failed after batch $batch ---"
               { grep -a -A 18 '^not ok ' /tmp/tests.log || true; } | head -300
               fail "the tests do not pass after batch $batch"

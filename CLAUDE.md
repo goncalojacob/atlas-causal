@@ -76,6 +76,7 @@ node tools/new-record.mjs event|edge|source|actor|place|relation|narrative …  
 node tools/migrate/apply.mjs       # the migration chain of src/validate/migrate.js applied to data/; in the same commit as any migration that changes bytes
 node tools/seed-review-flags.mjs   # STATUS.md's "Dates to verify" onto the records as review flags; once
 node --test                        # every test under tests/ (Node 22 takes no directory argument)
+node --test $(node tools/suites.mjs --pure) && node --test --test-concurrency=1 $(node tools/suites.mjs --browser)   # the same tests the way the check runs them since M63: the suites that start a browser one at a time (docs/m63-load.md)
 python3 -m http.server 8000        # then http://localhost:8000/ — add ?fixtures=1 for the synthetic graph
 node tools/serve.mjs               # the same, plus the one write endpoint review.html saves through; loopback only, never deployed
 ```
@@ -221,6 +222,7 @@ tools/build-index.mjs      deterministic index: manifest + the hashed core, attr
 tools/lib/history.mjs      each record's versions, from the commits that touched its file, and the shards they are filed into by kind and century; a shallow clone is refused and the file says `revised` instead
 tools/lib/colour.mjs       the eight hues a territory may be drawn in, and the assignment no two neighbours share
 tools/screens.mjs          the screenshots, through headless Chromium's own command line; it finds the browser, and tests/browser.mjs asks it where
+tools/suites.mjs           which test files start a browser and which do not, read off the files themselves rather than listed: the check runs the eighteen that do one at a time and the other 129 in parallel, which is what stopped a different browser test dropping every run (docs/m63-load.md)
 tools/build-regions.mjs    Natural Earth 110m → data/geo/regions.json, and the seam report; the coastline left it in M36a
 tools/new-record.mjs       scaffold a record of any written kind; --new-place writes an event and its place at once
 tools/migrate-places.mjs   one-time: every event's `where` → a place record; kept as documentation

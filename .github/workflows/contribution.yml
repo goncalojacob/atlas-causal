@@ -79,7 +79,17 @@ jobs:
           node tools/validate.mjs 2>&1 | tee -a "$RUNNER_TEMP/report.log"
 
       - name: Tests
-        run: node --test
+        # The two passes of validate.yml, for the same reason and with the
+        # same tool: the suites that start a headless Chromium one at a time,
+        # the pure ones parallel (docs/m63-load.md). A contributor whose
+        # records are sound should not be told they are not because three
+        # browsers wanted the same core.
+        run: |
+          set -u
+          status=0
+          node --test $(node tools/suites.mjs --pure) || status=1
+          node --test --test-concurrency=1 $(node tools/suites.mjs --browser) || status=1
+          exit $status
 
       # Before the pull request and not after it. It used to run as a second
       # comment once the request was already open, so the reviewer read the
