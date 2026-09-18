@@ -642,48 +642,49 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
 .map .layer-base-rivers path { fill: none; stroke: var(--cobalt-soft); stroke-width: 0.5; vector-effect: non-scaling-stroke; }
 .map .layer-base-lakes path { fill: var(--cobalt-faint); stroke: var(--cobalt-soft); stroke-width: 0.5; vector-effect: non-scaling-stroke; }
 .map .layer-base-physical path { fill: none; stroke: var(--line); stroke-width: 0.5; stroke-dasharray: 3 3; vector-effect: non-scaling-stroke; }
-/* M45a. As dezassete classes do `physical` eram todas este mesmo traço: um
-   deserto e uma serra valiam a mesma linha tracejada, e o mapa não dizia nada
-   sobre o chão em que as fronteiras se mexeram. São quatro famílias agora, e
-   a família vem escrita no ficheiro pelo importador (tools/import/features.mjs)
-   — a folha de estilo não adivinha nada a partir de um nome.
+/* M45a. All seventeen classes of `physical` were this same mark: a desert and
+   a mountain range were worth the same dashed line, and the map said nothing
+   about the ground the frontiers moved across. There are four families now,
+   and the family travels in the file, written by the import
+   (tools/import/features.mjs) — the stylesheet guesses nothing from a name.
 
-   **Nenhum valor hexadecimal novo e nenhuma ficha nova**, que é a regra desta
-   carta (CLAUDE.md) e a razão por que estas três regras são opacidades sobre
-   fichas que já existiam. E nenhuma delas compete com os territórios: a
-   pergunta do dono era "as fronteiras mexem-se à volta de quê", e a resposta
-   tem de ficar **por baixo** da fronteira e não no lugar dela. Um território
-   é desenhado a 0,62 de uma das oito matizes; o chão mais carregado que há
-   aqui é 0,45 de uma ficha pálida.
+   **No new hex value and no new token**, which is this map's rule (CLAUDE.md)
+   and the reason all three rules below are opacities over tokens that already
+   existed. And none of them competes with the territories: the owner's
+   question was "what do the frontiers move around", and the answer has to sit
+   **under** the frontier rather than in its place. A territory is drawn at
+   0.62 of one of the eight hues; the loudest ground here is 0.45 of a pale
+   token.
 
-   A regra acima continua a ser a das nove classes que ficaram como estavam —
-   planaltos, planícies, cabos, penínsulas, baixas, deltas, istmos, gargantas
-   e geoáreas —, e é o que uma feature sem família desenha. */
+   The rule above is still the one for the nine classes that stayed as they
+   were — plateaus, plains, capes, peninsulas, lowlands, deltas, isthmuses,
+   gorges and geoareas — and it is what a feature with no family draws as. */
 
-/* Serras e contrafortes: o chão que sobe. É a única das três com traço
-   contínuo, porque uma crista tem aresta — é a aresta que se vê por baixo de
-   uma fronteira que a segue — e o tracejado é o que diz "limite aproximado".
-   Cobalto, que é a cor com que esta carta desenha, e não uma cor nova. */
+/* Ranges and foothills: ground that rises. The only one of the three with a
+   solid stroke, because a ridge has an edge — that edge is what is seen under
+   a frontier following it — and a dash is what says "approximate limit".
+   Cobalt, which is the colour this map draws in, and not a new colour. */
 .map .layer-base-physical path.ground-relief {
   fill: var(--cobalt-soft); fill-opacity: 0.26;
   stroke: var(--cobalt-soft); stroke-width: 0.7; stroke-dasharray: none;
 }
-/* Desertos, tundra e pântanos: chão de uma espécie, a qualquer altura. Fica
-   com o tracejado que a camada já tinha — o limite de um deserto é uma
-   convenção e não uma aresta — e ganha uma mancha neutra por baixo. */
+/* Deserts, tundra and wetlands: ground of a kind, at any height. It keeps the
+   dash the layer already had — a desert's limit is a convention and not an
+   edge — and gains a neutral wash under it. */
 .map .layer-base-physical path.ground-cover {
   fill: var(--line); fill-opacity: 0.45;
   stroke: var(--line); stroke-width: 0.5;
 }
-/* Bacias, depressões e vales: o chão que desce. Ponteado fino e não tracejado,
-   e a tinta é a do texto suave e não a do cobalto, para que uma cova não se
-   leia como uma serra à segunda vista. */
+/* Basins, depressions and valleys: ground that dips. Finely dotted rather than
+   dashed, and the ink is the soft text colour and not cobalt, so that a hollow
+   does not read as a range at second glance. */
 .map .layer-base-physical path.ground-hollow {
   fill: var(--ink-soft); fill-opacity: 0.12;
   stroke: var(--ink-soft); stroke-width: 0.5; stroke-dasharray: 1 3;
 }
-/* Um pico é desenhado à sua altura desde M45a (layers/base.js, `peakRadius`):
-   o raio vem do atributo e não daqui, porque é um número por ponto. */
+/* A peak is drawn at its height since M45a (layers/base.js, `peakRadius`): the
+   radius comes from the attribute and not from here, being one number per
+   point. */
 .map .layer-base-mountains circle { fill: var(--ink-soft); stroke: none; }
 /* Aureolada a papel, como as marcas são: um ponto de cidade cai muitas vezes
    sobre um território cheio, e sem a auréola desaparecia lá dentro. */

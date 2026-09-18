@@ -43,36 +43,38 @@ import { shorten } from '../labels.js';
 // traz e a linha de todos os nomes que o rato faz aparecer (names.js).
 import { faceName, titleLine } from '../names.js';
 
-// O diâmetro de um ponto, em unidades da página, antes de ser dividido pelo
-// zoom. É o único número deste ficheiro que não vem do manifesto, porque não
-// há campo no manifesto que o carregue. Os picos saíram desta tabela em M45a e
-// são medidos pela sua altura (`peakRadius`, abaixo); ficou a das cidades, que
-// são todas do mesmo tamanho porque o que as ordena é a etiqueta e não a marca.
+// The diameter of a dot, in page units, before it is divided by the zoom. It
+// is the one number in this file that does not come from the manifest, because
+// there is no field in the manifest that would carry it. The peaks left this
+// table in M45a and are measured by their own height (`peakRadius`, below);
+// what is left is the cities, which are all one size because what ranks a city
+// is its label and not its mark.
 const DOT = Object.freeze({ cities: 2 });
 const DEFAULT_DOT = 2;
 
-// --- um pico é desenhado à sua altura ---------------------------------------
+// --- a peak drawn at its height ---------------------------------------------
 //
-// M45a, §1.2. Os 711 pontos de elevação traziam a sua altura em metros desde
-// M36b e eram todos o mesmo ponto de 1,5: o Evereste a 8.848 m e uma colina de
-// 400 m valiam o mesmo na página. A altura é geografia e não história — nada
-// aqui é uma afirmação sobre o passado —, e é ela que diz ao leitor que uma
-// fronteira segue uma crista e não uma linha qualquer.
+// M45a, §1.2. The 711 elevation points have carried their height in metres
+// since M36b and were all the same 1.5 dot: Everest at 8,848 m and a 400-metre
+// hill were worth the same on the page. Height is geography and not history —
+// nothing here asserts anything about the past — and it is what tells a reader
+// that a frontier follows a ridge rather than a line somebody drew.
 //
-// **Não é uma escala linear.** Linearmente a mediana dos 711 (2.453 m) daria
-// 0,27 do intervalo e quase toda a serra do mundo ficaria amontoada na ponta
-// de baixo, com o Evereste sozinho a fazer de borrão. A raiz quadrada é a
-// função: monótona em todo o domínio, limitada nas duas pontas, e reparte o
-// intervalo por onde as alturas estão — a mediana fica a 0,52 dele. Medida
-// sobre o próprio ficheiro — mínimo −416 (o mar Morto), quartil 1.447, mediana
-// 2.453, quartil 3.480, máximo 8.848 — dá 1,02 a uma colina de 400 m, 1,64 à
-// mediana, 1,54 à serra da Estrela e 2,58 ao Evereste, onde a camada inteira
-// era 1,5.
+// **Not a linear scale.** Linearly the median of the 711 (2,453 m) would sit
+// at 0.27 of the range and nearly every range in the world would be heaped at
+// the bottom of it with Everest alone making a blob. The square root is the
+// function: monotone over the whole domain, bounded at both ends, and it
+// spreads the range over where the heights actually are — the median lands at
+// 0.52 of it. Measured against the file itself — minimum −416 (the Dead Sea),
+// quartiles 1,447 and 3,480, median 2,453, maximum 8,848 — it gives 1.02 to a
+// 400-metre hill, 1.64 to the median, 1.54 to the Serra da Estrela and 2.58 to
+// Everest, where the whole layer used to be 1.5.
 //
-// O tecto são 9.000 m redondos e não os 8.848 do ficheiro: a função é da
-// carta e não da versão do Natural Earth que está em `vendor/`. O chão é o
-// nível do mar, e um ponto abaixo dele — o mar Morto é o único — desenha-se ao
-// mínimo. Uma depressão é um acidente do `physical` e é desenhada como tal.
+// The ceiling is a round 9,000 m and not the file's own 8,848: the function
+// belongs to the map and not to the version of Natural Earth in `vendor/`. The
+// floor is sea level, and a point below it — the Dead Sea is the only one —
+// draws at the minimum. A depression is a `physical` feature and is drawn as
+// one.
 export const PEAK_RADIUS = Object.freeze({ min: 0.6, max: 2.6, floor: 0, ceiling: 9000 });
 
 export function peakRadius(elevation) {
@@ -82,17 +84,18 @@ export function peakRadius(elevation) {
   return min + (max - min) * Math.sqrt((clamped - floor) / (ceiling - floor));
 }
 
-// --- de que família é uma região física -------------------------------------
+// --- what family a physical region is drawn in ------------------------------
 //
-// M45a, §1.1. A família vem no ficheiro, escrita pelo importador a partir da
-// lista fechada de `FEATURECLA` (tools/import/features.mjs); aqui está a mesma
-// lista outra vez, e está por uma razão: **`data/` é entrada não confiável**
-// (CLAUDE.md) e isto vai parar a um atributo `class` no DOM. Um `kind` que esta
-// lista não tenha desenha na família por omissão e nunca numa classe sua.
+// M45a, §1.1. The family travels in the file, written by the import off the
+// closed `FEATURECLA` allow-list (tools/import/features.mjs); here is that
+// same list a second time, and it is here for one reason: **`data/` is
+// untrusted input** (CLAUDE.md) and this ends up in a `class` attribute in the
+// DOM. A `kind` this list does not hold draws in the default family and never
+// in a class of its own.
 //
-// `outline` — a família por omissão, o que as dezassete classes eram todas
-// antes de M45a — não está aqui: é o que uma feature sem `kind` desenha, e o
-// importador não a escreve por isso mesmo.
+// `outline` — the default family, which is what all seventeen classes were
+// before M45a — is not in it: it is what a feature with no `kind` draws as,
+// and the import does not write it for that very reason.
 const KINDS = Object.freeze(['relief', 'cover', 'hollow']);
 
 const kindOf = (feature) => {
@@ -148,9 +151,10 @@ const zlOf = (feature) => {
   return typeof zl === 'number' ? zl : null;
 };
 
-// A altura de um pico, em metros, onde a fonte a dá. Desde M45a é o raio a que
-// o pico é desenhado (`peakRadius`) e o desempate do seu peso entre os outros
-// acidentes físicos (`labelCandidates` abaixo), e mais nada.
+// A peak's height in metres, where the source gives one. Since M45a it is the
+// radius the peak is drawn at (`peakRadius`) and the tie-breaker of its weight
+// among the other physical features (`labelCandidates` below), and nothing
+// else.
 const elevationOf = (feature) => {
   const value = feature?.elevation ?? feature?.properties?.elevation;
   return typeof value === 'number' ? value : null;
@@ -303,10 +307,10 @@ export function createBaseLayer(group, projection, {
   const paths = new Map();
   const boxes = new Map();
   const thresholds = new Map();
-  // O raio de um ponto desta camada, em unidades da página e antes de ser
-  // dividido pelo zoom. Uma cidade é do tamanho da tabela; um pico é da sua
-  // própria altura (M45a). Saber quão largo é um ponto desta camada é assunto
-  // desta camada — é o que `labelCandidates` já dizia da âncora do nome.
+  // The radius of one of this layer's dots, in page units and before it is
+  // divided by the zoom. A city is the table's size; a peak is its own height
+  // (M45a). How wide a dot of this layer is, is this layer's business — which
+  // is what `labelCandidates` already says about where a name is anchored.
   const radiusOf = (feature) => (id === 'mountains'
     ? peakRadius(elevationOf(feature))
     : (DOT[id] ?? DEFAULT_DOT));
@@ -329,11 +333,11 @@ export function createBaseLayer(group, projection, {
   // está no ecrã: é a mesma passagem do `draw` que a enche, e quem decide o
   // que cabe é o colocador, uma vez, em `map.js` (labels.js).
   let labelled = [];
-  // O raio de cada círculo desenhado, na ordem por que foram pendurados. Uma
-  // camada de pontos deixou de ter um raio só em M45a, por isso `resize` não
-  // pode escrever o mesmo número em todos os nós: escreve o que cada um é.
-  // Uma lista paralela e não um atributo a mais no DOM — é a mesma passagem
-  // do `draw` que a enche, e os filhos do grupo estão pela mesma ordem.
+  // The radius of each circle drawn, in the order they were hung. A point
+  // layer stopped having one radius in M45a, so `resize` cannot write the same
+  // number onto every node: it writes what each one is. A parallel list and
+  // not one more attribute in the DOM — the same pass of `draw` fills it, and
+  // the group's children are in that same order.
   let radii = [];
   // Os registos de lugar que os ficheiros em mão nomeiam, desenhados ou não.
   let placesHeld = new Set();
@@ -426,9 +430,9 @@ export function createBaseLayer(group, projection, {
         const historicalNames = place?.historicalNames ?? null;
         const face = faceName({ name: entry.name, historicalNames, year });
         if (face === null) continue;
-        // O afastamento é o raio **deste** ponto e não o da camada: desde M45a
-        // um pico é do tamanho da sua altura, e um nome ancorado ao raio médio
-        // ficava por cima do Evereste e longe de mais de uma colina.
+        // The gap is **this** dot's radius and not the layer's: since M45a a
+        // peak is the size of its own height, and a name anchored to an
+        // average radius sat on top of Everest and too far from a hill.
         const gap = geometry === 'point' ? (entry.r + 2) / lastK : 0;
         candidates.push({
           id: entry.id,
@@ -637,9 +641,9 @@ export function createBaseLayer(group, projection, {
       weight: id === 'cities'
         ? (typeof feature.pop === 'number' ? feature.pop : 0)
         : -zl + (elevation === null ? 0 : Math.min(Math.max(elevation, 0), 9_999) / 10_000),
-      // O raio do ponto que este nome nomeia, para o afastamento da âncora.
-      // Zero onde não há ponto nenhum desenhado: um rio, um lago e uma região
-      // física são nomeados no seu próprio ponto de etiqueta e sem folga.
+      // The radius of the dot this name names, for the anchor's gap. Zero
+      // where no dot is drawn at all: a river, a lake and a physical region
+      // are named at their own label point and with no gap.
       r: geometry === 'point' ? radiusOf(feature) : 0,
       x,
       y,
@@ -661,10 +665,10 @@ export function createBaseLayer(group, projection, {
     // `fill-rule` para os polígonos, porque um lago com uma ilha lá dentro é um
     // anel dentro de outro e a ilha tem de ficar por encher.
     const attributes = geometry === 'polygon' ? { d, 'fill-rule': 'evenodd' } : { d };
-    // E a família em que esta feature é desenhada, onde o ficheiro traz uma e
-    // é uma das que existem (M45a). A folha de estilo desenha `ground-relief`,
-    // `ground-cover` e `ground-hollow`; tudo o resto — e tudo o que `kindOf`
-    // não reconhece — fica com a regra que a camada já tinha.
+    // And the family this feature is drawn in, where the file carries one and
+    // it is one that exists (M45a). The stylesheet draws `ground-relief`,
+    // `ground-cover` and `ground-hollow`; everything else — and everything
+    // `kindOf` does not recognise — keeps the rule the layer already had.
     const kind = kindOf(feature);
     if (kind !== null) attributes.class = `ground-${kind}`;
     return svg('path', attributes);

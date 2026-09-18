@@ -11365,6 +11365,17 @@ say so" asks for.
      geography. The only thing this run put into `data/` is which of four
      visual families a Natural Earth polygon belongs to, read off a column that
      has been in the source file since M36.
+847. **This run's comments went in in Portuguese and had to be rewritten in
+     English.** The session was handed a stale copy of `CLAUDE.md` whose code
+     conventions read "Comments explain why, not what. In Portuguese." The file
+     on disk says **English**, and it is what M43a followed when it wrote into
+     these same modules — `src/map/layers/base.js`, `src/map/map.js` and the
+     map section of `src/style.css` all still carry Portuguese comments from
+     the runs before that rule changed, and matching the neighbours is what
+     produced the mistake. Only the comments this milestone added were
+     rewritten; the legacy Portuguese around them is untouched, because
+     translating a module this run barely edits is not this run's change to
+     make.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
