@@ -53,7 +53,7 @@ test('choosing an event outside the window still widens it to include the event'
     // Nothing is open, so the panel's first card is not what says the atlas
     // arrived: the search box is built from the topology and is.
     await open(page, url('?from=1950&to=2000'),
-      'return document.querySelectorAll("#search-input").length > 0 && Boolean(document.querySelector(".timeline-area svg"));');
+      'return document.querySelectorAll("#search-input").length > 0 && Boolean(document.querySelector("#map svg.map"));');
 
     await page.eval(type('Lisbon Regicide'));
     await waitFor(page, `return Boolean(document.querySelector('[role="option"][data-id="lisbon-regicide"]'));`,
@@ -125,7 +125,7 @@ test('typing a word in a burst draws the list once, and Enter does not wait', { 
 test('the box finds an event by its summary, below anything called that', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url('?from=1900&to=2030'),
-      'return document.querySelectorAll("#search-input").length > 0 && Boolean(document.querySelector(".timeline-area svg"));');
+      'return document.querySelectorAll("#search-input").length > 0 && Boolean(document.querySelector("#map svg.map"));');
 
     // "Otelo" is an actor's name and is also in the revolution's opening
     // sentence: both are offered, and the actor is first.
@@ -156,9 +156,9 @@ test('an office is findable and opens its own card, and no lens marks it outside
     // A lens is on, so that the hint the box draws for what falls outside it
     // is actually being asked about every row.
     // Nothing is open, so there is no card to wait for: the box itself and a
-    // drawn timeline are what "ready" means here.
+    // drawn map are what "ready" means here.
     await open(page, url('?focus=actor:salazar'),
-      'return document.querySelectorAll("#search-input").length > 0 && Boolean(document.querySelector(".timeline-area svg"));');
+      'return document.querySelectorAll("#search-input").length > 0 && Boolean(document.querySelector("#map svg.map"));');
 
     await page.eval(type('prime minister'));
     await waitFor(page, `return Boolean(document.querySelector('[role="option"][data-id="prime-minister-of-portugal"]'));`,

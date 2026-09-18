@@ -2,6 +2,14 @@
 // with a handle at each end. The scale is injected (timeline-scale.js) so
 // deep time can swap it.
 //
+// **A view since M60, not a strip.** It used to run along the bottom of the
+// map, thirty per cent of every screen whether the reader was reading it or
+// not, which is what the owner asked to have back. Nothing about what it draws
+// changed: the window is set from the masthead now (window-control.js) and the
+// band is still here, because a control can say which years are in the window
+// and only this picture can say where history is dense. It is given the whole
+// pane when it is chosen, so the lanes have the height the strip never had.
+//
 // What a lane *is* is not decided here any more (M14): lanes.js is asked,
 // and the graph view asks the same file, so the two pictures cannot disagree
 // about which lane an event belongs in. Without a grouping — the default —
@@ -127,26 +135,13 @@ const STUB_TALLEST = 9;
 export function createTimeline(container, { atlas, state, createScale = createTimelineScale, onCluster = null }) {
   const root = svg('svg', { class: 'timeline', role: 'group', 'aria-label': 'Timeline and the window of time' });
 
-  // The one part of the timeline that is not drawn in SVG: the line saying
-  // the lanes are showing what the map is looking at rather than the world,
-  // and the pin that gives the world back. A button is a button — focus ring,
-  // keyboard, a name a screen reader can say — and none of that is free
-  // inside an <svg>.
-  const note = document.createElement('p');
-  note.className = 'timeline-note';
-  note.hidden = true;
-  const noteText = document.createElement('span');
-  const pin = document.createElement('button');
-  pin.type = 'button';
-  pin.className = 'pin';
-  pin.textContent = 'show the world';
-  pin.title = 'Draw every event again, wherever the map is looking';
-  // The pin says something about the lanes, not about the map: it stops the
-  // filtering and leaves the map where the reader put it. Moving the map
-  // again narrows the lanes again, which is the whole of the coupling.
-  pin.addEventListener('click', () => state.set({ bbox: null }));
-  note.append(noteText, pin);
-  container.appendChild(note);
+  // There used to be one part of the timeline that was not drawn in SVG: the
+  // line saying the lanes were showing what the map is looking at rather than
+  // the world, and the pin that gives the world back. Both are in the masthead
+  // since M60 (window-control.js), where they are on every view — a reader on
+  // the map could not see a note that lived under lanes that are not there any
+  // more, and a count said in two places is a count that can disagree with
+  // itself.
   container.appendChild(root);
 
   // The lanes, their height and the height of the drawing are all decided by
@@ -168,11 +163,10 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   const counts = centuryCounts(atlas.activeEvents);
 
   let width = 0;
-  // The height the pane gives the drawing, minus whatever the note above it
-  // is taking. The timeline is as tall as its pane and no taller: the lanes
-  // are laid out into that height rather than the pane growing to hold them,
-  // which is what left the bottom row clipped whenever the window was short
-  // (owner, 5 September).
+  // The height the pane gives the drawing. The timeline is as tall as its pane
+  // and no taller: the lanes are laid out into that height rather than the
+  // pane growing to hold them, which is what left the bottom row clipped
+  // whenever the window was short (owner, 5 September).
   let paneHeight = 0;
   let scale = null;
   // The layers, made once and kept. Everything this file draws goes into one
@@ -202,9 +196,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   const measure = () => {
     width = Math.max(container.clientWidth || 960, 320);
     scale = createScale({ domain, range: [LABEL_WIDTH, width - 12], counts, extent: atlas.extent });
-    // The note is inside the pane and above the drawing, so it is the pane's
-    // height less the note's, and it is measured after `note.hidden` is set.
-    paneHeight = Math.max(0, (container.clientHeight || 0) - (note.hidden ? 0 : note.offsetHeight || 0));
+    paneHeight = Math.max(0, container.clientHeight || 0);
   };
   const resize = () => {
     root.setAttribute('viewBox', `0 0 ${width} ${height}`);
@@ -652,13 +644,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     for (const event of shown) {
       (overlaps(event.when, margin) || held.has(event.id) ? near : far).push(event);
     }
-    note.hidden = !s.bbox;
-    if (s.bbox) {
-      const n = shown.length;
-      noteText.textContent = `${n} of ${inLens.length} ${inLens.length === 1 ? 'event' : 'events'} in view`;
-    }
-    // After the note, because it is above the drawing and takes some of the
-    // pane's height; before the lanes, because they are laid out into it.
+    // Before the lanes, because they are laid out into the pane it measures.
     measure();
     // A second emphasis, distinct from the path's: the events of the actor
     // whose card is open; the whole of an open narrative's walk, so the lanes
@@ -725,12 +711,20 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // there is no dead strip under the last lane.
     const rows = Math.max(lanes.length, 1);
     laneHeight = room > 0 ? Math.max(minimum, Math.min(natural, room / rows)) : natural;
-    height = Math.max(AXIS_HEIGHT + rows * laneHeight, paneHeight);
+    // A whole number of pixels, and the last lane carried down to it. A lane
+    // height that divides the pane exactly — which is what a full pane gives,
+    // 337 over twenty rows — makes `rows * laneHeight` land a fraction of a
+    // billionth of a pixel past the pane it was computed from, so the drawing
+    // was that much shorter than its own last lane and the pane scrolled by
+    // nothing at all. Rounding is the honest half-pixel; the clamp below is
+    // what makes the ground under the last row end where the drawing does.
+    height = Math.max(Math.round(AXIS_HEIGHT + rows * laneHeight), paneHeight);
     resize();
 
     lanes.forEach((lane, i) => {
       const y = AXIS_HEIGHT + i * laneHeight;
-      into.lanes.take('rect', { x: 0, y, width, height: laneHeight, class: `lane ${i % 2 ? 'odd' : 'even'}` });
+      const tall = i === rows - 1 ? Math.max(0, height - y) : laneHeight;
+      into.lanes.take('rect', { x: 0, y, width, height: tall, class: `lane ${i % 2 ? 'odd' : 'even'}` });
       if (!lane.label) return;
       into.laneLabels.take('text', {
         x: 10, y: y + laneHeight / 2, class: `lane-label ${lane.other ? 'other' : ''}`.trim(), 'dominant-baseline': 'middle',

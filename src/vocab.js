@@ -138,8 +138,13 @@ export const FOCUS_KINDS = Object.freeze(['actor', 'place', 'source', 'event', '
 // what asks for that lens in the first place.
 export const FOCUS_NONE = 'none';
 
-// The two views the atlas draws the same state in.
-export const VIEWS = Object.freeze(['map', 'graph']);
+// The three views the atlas draws the same state in. The timeline joined them
+// in M60: it used to be a strip along the bottom of the map, which is what the
+// owner asked to have back — "something to choose the timeline is enough" —
+// and it is a picture of its own, not a control, so it takes a pane like the
+// others rather than being deleted. The window itself is set from the
+// masthead now (src/window-control.js), on whichever view is up.
+export const VIEWS = Object.freeze(['map', 'graph', 'timeline']);
 
 const ids = (types) => Object.freeze(types.map((t) => t.id));
 const alternation = (types) => types.map((t) => t.id).join('|');

@@ -46,25 +46,33 @@ const AT_REST_DOWN = `const b = document.getElementById("sheet").getBoundingClie
 const AT_REST_UP = `const b = document.getElementById("sheet").getBoundingClientRect();
   return Math.round(b.top) === Math.round(innerHeight - b.height);`;
 
-test('at 390 × 844 the atlas stacks and the panel is a sheet down to its grip', { skip }, async () => {
+test('at 390 × 844 the view takes the screen and the panel is a sheet down to its grip', { skip }, async () => {
   await phone(async (page, url) => {
     await open(page, url('?fixtures=1'), 'return Boolean(document.querySelector(".map .mark"));');
 
     assert.equal(await page.eval('return document.body.classList.contains("phone");'), true);
     const layout = await page.eval(`const l = document.querySelector(".layout");
       const map = document.getElementById("map").getBoundingClientRect();
-      const timeline = document.querySelector(".timeline-area").getBoundingClientRect();
+      const whole = l.getBoundingClientRect();
       return {
         columns: getComputedStyle(l).gridTemplateColumns.split(" ").length,
         splits: [...document.querySelectorAll(".split")].map((s) => getComputedStyle(s).display),
-        mapAbove: Math.round(map.bottom) <= Math.round(timeline.top),
-        timelineHeight: Math.round(timeline.height),
+        mapHeight: Math.round(map.height),
+        // The layout keeps the grip's worth of screen clear at the bottom, so
+        // nothing of the picture is permanently underneath it: what the view
+        // has is the layout less that.
+        layoutHeight: Math.round(whole.height)
+          - Math.round(document.getElementById("sheet-grip").getBoundingClientRect().height),
+        timelineShown: !document.getElementById("timeline").hidden,
         wider: document.documentElement.scrollWidth <= 390,
       };`);
     assert.equal(layout.columns, 1, 'one column');
-    assert.deepEqual(layout.splits, ['none', 'none'], 'the draggable edges of M24 are gone');
-    assert.equal(layout.mapAbove, true, 'the view on top, the timeline under it');
-    assert.ok(layout.timelineHeight > 100 && layout.timelineHeight < 180, `a fixed strip, got ${layout.timelineHeight}`);
+    assert.deepEqual(layout.splits, ['none'], 'the draggable edge of M24 is gone');
+    // Since M60 the timeline is a view rather than a strip under the map, so a
+    // phone spends none of its screen on a picture the reader is not reading:
+    // the map is the whole of the layout and the lanes are a tap away.
+    assert.equal(layout.timelineShown, false, 'the timeline is not a strip under the view');
+    assert.equal(layout.mapHeight, layout.layoutHeight, 'the view has the screen');
     assert.equal(layout.wider, true, 'nothing sticks out sideways');
 
     // Nothing open: the sheet is down, and only its grip is over the atlas.
@@ -156,7 +164,7 @@ test('the search is full width and the toggles are behind one Options button', {
   });
 });
 
-test('the graph pans by touch, and the timeline still scrolls under a finger', { skip }, async () => {
+test('the graph pans by touch', { skip }, async () => {
   await phone(async (page, url) => {
     await open(page, url('?fixtures=1&view=graph'), 'return Boolean(document.querySelector(".graph .node"));');
     // The sheet is over the middle of the screen until it has finished going
@@ -165,7 +173,6 @@ test('the graph pans by touch, and the timeline still scrolls under a finger', {
     // touch-action decides whether the browser takes the gesture before the
     // view sees it: none on the graph is what makes a one-finger drag a pan.
     assert.equal(await page.eval('return getComputedStyle(document.querySelector(".graph")).touchAction;'), 'none');
-    assert.equal(await page.eval('return getComputedStyle(document.querySelector(".timeline")).touchAction;'), 'pan-y');
 
     // Set before the drag: the attribute is written only when the view moves,
     // so "it changed" has to be measured against something that exists.
@@ -374,7 +381,13 @@ test('the layer control is four targets in the drawer, and base map opens into f
 // take hold of with a thumb.
 test('the whole extent is legible on a phone, and the band is a thumb wide', { skip }, async () => {
   await phone(async (page, url) => {
-    await open(page, url('?fixtures=1'), 'return Boolean(document.querySelector(".map .mark"));');
+    // On the timeline's own view, which on a phone is the whole screen: it is
+    // chosen from the masthead since M60 rather than being a strip that is
+    // always there. A finger still scrolls the lanes, which is what `pan-y`
+    // on `.timeline` is for.
+    await open(page, url('?fixtures=1&view=timeline'),
+      'return Boolean(document.querySelector("#timeline svg.timeline rect.lane"));');
+    assert.equal(await page.eval('return getComputedStyle(document.querySelector(".timeline")).touchAction;'), 'pan-y');
     const seen = await page.eval(`
       const svg = document.querySelector('#timeline svg.timeline');
       const band = svg.querySelector('[data-window="band"]');

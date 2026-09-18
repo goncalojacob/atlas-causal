@@ -27,7 +27,15 @@
       <div class="views" role="group" aria-label="View">
         <button type="button" data-view="map" aria-pressed="true">Map</button>
         <button type="button" data-view="graph" aria-pressed="false">Graph</button>
+        <button type="button" data-view="timeline" aria-pressed="false">Timeline</button>
       </div>
+      <!-- The window of time, from the masthead instead of from a strip along
+           the bottom of the map (M60): its two ends, the density of the corpus
+           beside them, and what the map is looking at when it is looking at
+           part of the world. Filled by src/window-control.js, for the reason
+           the layer switches and the graph filters are — one file decides what
+           a control writes into the URL. -->
+      <div class="window-control" id="window-control" role="group" aria-label="The window of time"></div>
       <!-- Only on a phone, where the grouping picker and the three layer
            switches will not fit beside the search: one button in front of
            both. The stylesheet shows it and hides them; nothing moves in the
@@ -64,10 +72,18 @@
        when nothing is open, and nothing is open on a first visit. -->
   <div id="intro" class="intro-overlay" hidden></div>
   <main class="layout">
+    <!-- The three views take one slot between them and one of them is shown
+         at a time (src/main.js). The timeline was a strip along the bottom
+         until M60 and is a picture like the other two now: it draws where
+         history is dense, which is the one thing a pair of years in the
+         masthead cannot say. -->
     <section id="map" class="map-area" aria-label="Map"></section>
     <section id="graph" class="graph-area" aria-label="Graph" hidden></section>
-    <!-- The two edges the reader can drag. Separators, not decoration: they
-         take focus, they answer the arrow keys, and Home puts them back. -->
+    <section id="timeline" class="timeline-area" aria-label="Timeline" hidden></section>
+    <!-- The one edge the reader can drag. A separator, not decoration: it
+         takes focus, it answers the arrow keys, and Home puts it back. The
+         other one used to be under the map, for a timeline strip that is not
+         there any more (M60). -->
     <div id="split-panel" class="split split-panel" role="separator" tabindex="0"
          aria-orientation="vertical" aria-label="Resize the panel — arrow keys, Home to restore"></div>
     <!-- On a desktop this wrapper is `display: contents` and the panel is the
@@ -82,9 +98,6 @@
       </button>
       <aside id="panel" class="panel" aria-live="polite"></aside>
     </div>
-    <div id="split-timeline" class="split split-timeline" role="separator" tabindex="0"
-         aria-orientation="horizontal" aria-label="Resize the timeline — arrow keys, Home to restore"></div>
-    <section id="timeline" class="timeline-area" aria-label="Timeline"></section>
   </main>
   <script type="module" src="src/main.js"></script>
 </body>

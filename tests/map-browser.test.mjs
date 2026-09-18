@@ -34,6 +34,12 @@ async function settledShards(page) {
 }
 
 const READY = 'return Boolean(document.querySelector(".map .mark"));';
+// The timeline is the third view since M60 and is drawn when it is chosen, so
+// a test that reads the lanes asks for them the way a reader does: the button
+// in the masthead, or `?view=timeline` in the link. The window, the box and
+// the lens are the state and do not move when the view does (m60-brief §3).
+const TO_TIMELINE = 'document.querySelector(\'[data-view="timeline"]\').click(); return true;';
+const LANES = 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;';
 
 // A real pan: press near the right edge on empty ground, move across the
 // pane, let go. Dispatched as pointer events because the handlers under test
@@ -65,13 +71,10 @@ const zoomIn = (deltaY = -400) => `
   }));
   return true;`;
 
-// The pane the map is drawn in must not change size while a pan is being
-// measured, or the picture moves for two reasons at once. A reader who has
-// dragged the timeline's edge has said exactly this (panes.js).
-const FREEZE_TIMELINE = `
-  const layout = document.querySelector('.layout');
-  layout.style.setProperty('--timeline-height', '160px');
-  return true;`;
+// The map's pane used to have to be frozen before a pan was measured: the
+// timeline was a strip under it whose height a reader could drag, so the
+// picture could move for two reasons at once. Since M60 the map has the whole
+// layout and nothing shares the row with it, so there is nothing to freeze.
 
 // Every mark the reader can see, with where it is on the screen and where it
 // is in the SVG's own units — which is how "outside the nominal box" is said
@@ -94,7 +97,6 @@ const VISIBLE_MARKS = `
 test('the map is letterboxed, and a mark out in the letterbox has a bar under it', { skip }, async () => {
   await wide(async (page, url) => {
     await open(page, url('?fixtures=1'), READY);
-    await page.eval(FREEZE_TIMELINE);
 
     // The premise: the pane really is wider than the viewBox's ratio, so the
     // visible SVG units run past 0 and 960 on either side.
@@ -125,6 +127,10 @@ test('the map is letterboxed, and a mark out in the letterbox has a bar under it
     // viewport.js's promise: a mark the reader can see has a bar under it.
     // The fixtures are eleven placed events spread across the world, so no
     // two of them stack on the timeline and every one drawn is its own rect.
+    // The box the map published is the state, so the lanes answer it on the
+    // other view without the map being on screen at all.
+    await page.eval(TO_TIMELINE);
+    await waitFor(page, LANES, 'the lanes');
     const bars = await page.eval(`return [...document.querySelectorAll('#timeline rect.bar[data-id]')]
       .map((el) => el.getAttribute('data-id'));`);
     const missing = marks.map((m) => m.id).filter((id) => !bars.includes(id));
@@ -135,7 +141,6 @@ test('the map is letterboxed, and a mark out in the letterbox has a bar under it
 test('a click on a mark out in the letterbox selects it, and a pan follows the cursor', { skip }, async () => {
   await wide(async (page, url) => {
     await open(page, url('?fixtures=1'), READY);
-    await page.eval(FREEZE_TIMELINE);
     await page.eval(zoomIn());
     await page.eval(panBy(150));
     await waitFor(page, 'return new URLSearchParams(location.search).has("bbox");', 'the box to be published');
@@ -177,10 +182,13 @@ test('a click on a mark out in the letterbox selects it, and a pan follows the c
 
 // --- the world is not a box, and a placeless event answers with its region --
 
+// The count and the pin moved to the masthead with M60 — they were under the
+// lanes, which are a view of their own now, and a reader on the map would
+// never have seen them there again (window-control.js).
 const TIMELINE = `return {
   search: location.search,
-  filtered: !document.querySelector('.timeline-note').hidden,
-  note: document.querySelector('.timeline-note span').textContent,
+  filtered: !document.querySelector('#window-control .window-view').hidden,
+  note: document.querySelector('#window-control .window-count').textContent,
   bars: [...document.querySelectorAll('#timeline rect.bar[data-id]')]
     .map((el) => el.getAttribute('data-id')).sort(),
 };`;
@@ -203,15 +211,15 @@ const ACTIVE = all.records
   .map((r) => r.id)
   .sort();
 // And how many active events the corpus holds altogether, which is the second
-// number in the note under the lanes.
+// number in the count in the masthead.
 const ACTIVE_TOTAL = all.records.filter((r) => r.kind === 'event' && r.status === 'active').length;
 const inView = (n) => new RegExp(`^${n} of ${ACTIVE_TOTAL} events in view$`);
 
 test('the whole world is no box at all, and the lanes carry every active event', { skip }, async () => {
   await wide(async (page, url) => {
-    await open(page, url('?fixtures=1&bbox=-180,-90,180,90'), READY);
+    await open(page, url('?fixtures=1&view=timeline&bbox=-180,-90,180,90'), LANES);
     const shown = await page.eval(TIMELINE);
-    assert.equal(shown.search, '?fixtures=1', 'the world box does not survive being read');
+    assert.equal(shown.search, '?fixtures=1&view=timeline', 'the world box does not survive being read');
     assert.equal(shown.filtered, false, 'so the lanes are not filtered and the pin is not offered');
     assert.deepEqual(shown.bars, ACTIVE);
   });
@@ -220,7 +228,7 @@ test('the whole world is no box at all, and the lanes carry every active event',
 test('an event with no place is in view when its region\'s box is', { skip }, async () => {
   await wide(async (page, url) => {
     // A box inside fixture-lane-3, which is where the placeless event is.
-    await open(page, url('?fixtures=1&bbox=15,0,35,40'), READY);
+    await open(page, url('?fixtures=1&view=timeline&bbox=15,0,35,40'), LANES);
     let shown = await page.eval(TIMELINE);
     assert.equal(shown.filtered, true);
     // The number in view is the box's own business and changes whenever a
@@ -229,7 +237,7 @@ test('an event with no place is in view when its region\'s box is', { skip }, as
     assert.ok(shown.bars.includes('fixture-event-f'), 'the placeless process is in the lanes');
 
     // And a box in fixture-lane-1, which is not.
-    await open(page, url('?fixtures=1&bbox=-40,20,-10,50'), READY);
+    await open(page, url('?fixtures=1&view=timeline&bbox=-40,20,-10,50'), LANES);
     shown = await page.eval(TIMELINE);
     assert.match(shown.note, inView('\\d+'));
     assert.ok(!shown.bars.includes('fixture-event-f'), 'and out of them when the map is elsewhere');
@@ -263,10 +271,10 @@ const CHAIN = 'return new URLSearchParams(location.search).get("chain");';
 // that none of them is in it.
 test('a box across the antimeridian is the strip it names, not its complement', { skip }, async () => {
   await wide(async (page, url) => {
-    // Not READY: no fixture mark is in the Pacific, so there is no mark to
-    // wait for — which is the point. The note under the lanes is the signal.
-    const COUNTED = 'return (document.querySelector(".timeline-note span")?.textContent ?? "").includes("in view");';
-    await open(page, url('?fixtures=1&bbox=170,-20,-170,0'), COUNTED);
+    // Not the lanes: nothing of the fixtures is in the Pacific, so there is
+    // no bar to wait for — which is the point. The count is the signal.
+    const COUNTED = 'return (document.querySelector("#window-control .window-count")?.textContent ?? "").includes("in view");';
+    await open(page, url('?fixtures=1&view=timeline&bbox=170,-20,-170,0'), COUNTED);
     const shown = await page.eval(TIMELINE);
     assert.match(shown.search, /bbox=170,-20,-170,0/, 'the box survives being read and written again');
     assert.equal(shown.filtered, true);
@@ -274,7 +282,7 @@ test('a box across the antimeridian is the strip it names, not its complement', 
     assert.deepEqual(shown.bars, []);
 
     // And the same strip the other way round really is the rest of the world.
-    await open(page, url('?fixtures=1&bbox=-170,-20,170,0'), READY);
+    await open(page, url('?fixtures=1&view=timeline&bbox=-170,-20,170,0'), LANES);
     const wideBox = await page.eval(TIMELINE);
     assert.ok(wideBox.bars.length > 0, 'the complement holds the fixtures');
   });
@@ -289,7 +297,11 @@ test('a click on a consequence walks the chain on the map and on the timeline', 
     assert.equal(await page.eval(CHAIN), 'fixture-event-a--fixture-event-b--caused');
     assert.equal(await page.eval('return new URLSearchParams(location.search).get("selected");'), 'fixture-event-b');
 
-    // And on again from the timeline, which followed the map's old rule.
+    // And on again from the timeline, which followed the map's old rule. It
+    // is a view of its own since M60, so the reader goes to it; what they
+    // were holding — the selection and the chain — goes with them.
+    await page.eval(TO_TIMELINE);
+    await waitFor(page, LANES, 'the lanes');
     await page.eval(clickOn('#timeline rect.bar[data-id="fixture-event-d"]'));
     await waitFor(
       page,
@@ -349,7 +361,6 @@ const MARKS_AND_BOX = `
 test('zoomed in, only the marks on screen are in the DOM', { skip }, async () => {
   await wide(async (page, url) => {
     await open(page, url('?fixtures=1'), READY);
-    await page.eval(FREEZE_TIMELINE);
 
     const before = await page.eval(MARKS_AND_BOX);
     assert.equal(before.k, 1, 'the map opens at k = 1');
@@ -399,7 +410,6 @@ test('a click on a splittable cluster splits it, and the animation redraws once'
     // attribute shard landing is the same thing — it is what puts the names on
     // the marks — so the count starts once they are all in.
     await open(page, url('?layers=land,events'), SPLITTABLE);
-    await page.eval(FREEZE_TIMELINE);
     await settledShards(page);
 
     // Count the times the layer is emptied and drawn again. Before H4a the
@@ -461,7 +471,6 @@ const TERRITORY_DETAIL = `
 test('a border is drawn to the detail the zoom is worth, and no finer', { skip }, async () => {
   await wide(async (page, url) => {
     await open(page, url(''), 'return Boolean(document.querySelector("#map .layer-presences path"));');
-    await page.eval(FREEZE_TIMELINE);
 
     const world = await page.eval(TERRITORY_DETAIL);
     assert.ok(world.drawn > 10, `the world's borders are drawn (${world.drawn})`);
@@ -511,7 +520,6 @@ const TERRITORY_EDGES = `
 test('a territory is stroked along its inland borders and nowhere else', { skip }, async () => {
   await wide(async (page, url) => {
     await open(page, url(''), 'return Boolean(document.querySelector("#map .layer-presences path"));');
-    await page.eval(FREEZE_TIMELINE);
     const seen = await page.eval(TERRITORY_EDGES);
 
     assert.ok(seen.fills > 10, `the world's territories are filled (${seen.fills})`);
@@ -990,10 +998,6 @@ test('?layers=events:war opens on the wars, the uncategorised, and nothing else 
       disaster: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-c"]')),
       none: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-d"]')),
       glyphs: document.querySelectorAll('#map use.glyph').length,
-      // The timeline narrows with it, from the same answer (emphasis.js).
-      bars: document.querySelectorAll('#timeline rect.bar[data-id]').length,
-      warBar: Boolean(document.querySelector('#timeline rect.bar[data-id="fixture-event-e"]')),
-      treatyBar: Boolean(document.querySelector('#timeline rect.bar[data-id="fixture-event-a"]')),
       boxes: [...document.querySelectorAll('.bar .layers input[data-category]')]
         .map((b) => [b.dataset.category, b.checked]),
       events: document.querySelector('.bar .layers input[data-layer="events"]').checked,
@@ -1003,8 +1007,17 @@ test('?layers=events:war opens on the wars, the uncategorised, and nothing else 
     assert.equal(seen.disaster, false);
     assert.equal(seen.none, true, 'and the events with no category are still drawn');
     assert.equal(seen.glyphs, 1, 'one categorised mark, one symbol');
-    assert.equal(seen.warBar, true, 'the timeline draws the same answer');
-    assert.equal(seen.treatyBar, false);
+
+    // The timeline narrows with it, from the same answer (emphasis.js) — on
+    // the view it is drawn in since M60, and with the same link.
+    await page.eval(TO_TIMELINE);
+    await waitFor(page, LANES, 'the lanes');
+    const lanes = await page.eval(`return {
+      warBar: Boolean(document.querySelector('#timeline rect.bar[data-id="fixture-event-e"]')),
+      treatyBar: Boolean(document.querySelector('#timeline rect.bar[data-id="fixture-event-a"]')),
+    };`);
+    assert.equal(lanes.warBar, true, 'the timeline draws the same answer');
+    assert.equal(lanes.treatyBar, false);
     // The control says what the link says, and the events row is still on:
     // under A11 the bare token is gone while any `events:<id>` stands.
     assert.deepEqual(seen.boxes.sort(), [['disaster', false], ['treaty', false], ['war', true]]);
@@ -1099,7 +1112,6 @@ test('the base map is drawn under the territories and over the coastlines', { sk
 test('at the whole world the base map fetches its far files and not one cell', { skip }, async () => {
   await wide(async (page, url) => {
     await open(page, url(''), 'return Boolean(document.querySelector("#map .layer-base > g"));');
-    await page.eval(FREEZE_TIMELINE);
     // The far files arrive a frame and a task after the first picture; wait
     // until something of the base map is actually drawn.
     await waitFor(page, 'return document.querySelectorAll("#map .layer-base circle, #map .layer-base path").length > 0;',
@@ -1164,10 +1176,9 @@ async function settledBase(page) {
 
 test('zoomed into Portugal the cells of the viewport are fetched and no others', { skip }, async () => {
   await wide(async (page, url) => {
-    // Deliberately not FREEZE_TIMELINE: that resizes the map's pane, and what
-    // is being compared here is the cells fetched for a viewport against the
-    // box that same viewport publishes. Nothing is panned, so nothing needs
-    // the pane held still.
+    // What is being compared here is the cells fetched for a viewport against
+    // the box that same viewport publishes. Nothing is panned, so nothing
+    // needs the pane held still.
     await open(page, url(PORTUGAL_AT_8), 'return Boolean(document.querySelector("#map .layer-base > g"));');
     const k = await page.eval(K_NOW);
     assert.ok(k > 7.5 && k < 8.5, `the link opened at k = 8 (${k})`);
@@ -1216,7 +1227,6 @@ test('a pan does not rebuild the base map', { skip }, async () => {
   await wide(async (page, url) => {
     await open(page, url(PORTUGAL_AT_8),
       'return Boolean(document.querySelector("#map .layer-base-rivers path"));');
-    await page.eval(FREEZE_TIMELINE);
     await waitFor(page, 'return document.querySelectorAll("#map .layer-base-rivers path").length > 0;', 'the rivers');
     // Every cell in hand first: a river that arrives during the pan is a river
     // that arrived, not a rebuild, and counting before the last one lands would
@@ -1547,10 +1557,17 @@ test('zoomed to Portugal, Lisbon is named once and its title carries its names',
         assert.ok(!hit, `"${a.text}" and "${b.text}" overlap`);
       }
     }
-    // And no name is written for a dot that is not drawn yet: every label on
-    // screen belongs to a city whose `zl` the zoom has passed.
-    assert.equal(labels.every((l) => l.cls === 'city-label'), true,
-      `with the events off, the names are the cities' alone: ${[...new Set(labels.map((l) => l.cls))].join(' ')}`);
+    // And with the events off, no event is named: what is on the map is the
+    // cities and the ground M38b put under them (`physical` and `mountains`
+    // are in `CITIES_ON`). The assertion used to be that *every* label was a
+    // city's, which held only because the pane was short enough that no
+    // feature label had room; since M60 the map has the whole layout's height
+    // and one does. What it is about — a name written for something the zoom
+    // has not drawn — is the class it must not be.
+    assert.equal(labels.some((l) => l.cls === 'mark-label'), false,
+      `the events are off, so none of their names is written: ${labels.map((l) => `${l.text} (${l.cls})`).join(' · ')}`);
+    assert.equal(labels.every((l) => l.cls === 'city-label' || l.cls === 'feature-label'), true,
+      `the names are the cities' and the ground's: ${[...new Set(labels.map((l) => l.cls))].join(' ')}`);
   });
 });
 

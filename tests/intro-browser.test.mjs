@@ -8,8 +8,10 @@ import assert from 'node:assert/strict';
 import { withBrowser, open, waitFor, seenIntro, skip } from './browser.mjs';
 
 // Nothing here is a first-card wait: with nothing open there is no panel
-// (H1c), so what says the atlas arrived is the timeline.
-const ready = 'return Boolean(document.querySelector(".timeline-area svg"));';
+// (H1c), so what says the atlas arrived is the map. It used to be the
+// timeline, which was drawn on every load while it was a strip along the
+// bottom; since M60 it is a view and is drawn when it is chosen.
+const ready = 'return Boolean(document.querySelector("#map svg.map"));';
 const visible = 'return document.getElementById("intro").hidden === false;';
 const gone = 'return document.getElementById("intro").hidden === true;';
 

@@ -69,12 +69,13 @@ const NEAR = (selector) => `return [...document.querySelectorAll('${selector}')]
 const VIEWS = {
   map: { selector: '#map svg .mark[data-id]', url: '' },
   graph: { selector: '#graph svg.graph circle.node[data-id]', url: '&view=graph' },
-  timeline: { selector: '.timeline-area svg rect.bar[data-id]', url: '' },
+  timeline: { selector: '.timeline-area svg rect.bar[data-id]', url: '&view=timeline' },
 };
 
-// The graph is built the first time it is asked for, so a page opened on the
-// map has no graph in it: each view is a page load of its own.
-const ready = 'return Boolean(document.querySelector(".timeline-area svg"));';
+// Each view is built the first time it is asked for, so a page opened on the
+// map has neither the graph nor the lanes in it: each view is a page load of
+// its own, and the lens is the state all three read (M60).
+const ready = 'return Boolean(document.querySelector("#map svg.map"));';
 
 test('with ?actor=portugal every view draws that actor and its direct neighbours, and nothing else', { skip }, async () => {
   const view = await expected({ actor: FEW });
@@ -448,7 +449,7 @@ test('a focus the reader wrote wins over the walk, and none turns the lens off',
     // `none` is the reader turning the lens off, while reading as everywhere
     // else: the walk is drawn over the whole atlas, which is what it did
     // before M48 and is now something they have to ask for.
-    await open(page, url(`?narrative=${WALK}&focus=none`), ready);
+    await open(page, url(`?narrative=${WALK}&focus=none&view=timeline`), ready);
     await waitFor(
       page,
       `return [...document.querySelectorAll('${VIEWS.timeline.selector}')].map((el) => el.dataset.id)
@@ -477,7 +478,7 @@ test('“Focus on this” while reading narrows to the step, and lets go back to
   assert.ok(walk.set.size > narrowed.set.size, 'the step is narrower than the walk');
 
   await withBrowser(async (page, url) => {
-    await open(page, url(`?narrative=${WALK}&step=${step}`),
+    await open(page, url(`?narrative=${WALK}&step=${step}&view=timeline`),
       'return Boolean(document.querySelector(".panel .narrative-head"));');
     await waitFor(page, 'return document.querySelector(".panel .lens-control")?.textContent === "Focus on this";',
       'the card to offer the step');

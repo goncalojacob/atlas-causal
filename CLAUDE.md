@@ -146,10 +146,11 @@ src/chain.js               pure: the walked chain as edges, where a withdrawal c
 src/walk.js                pure: the walk the atlas assembles rather than the reader clicking it out — the best path into an endpoint from where the question starts, as edge ids, with a provenance beside it saying the atlas put it together, on what day and to answer what. Built out of `shortestPaths`, `pathTo`, `pathCost` and `subgraph` and adding no traversal, so the chain it hands back is the chain the reader would have walked. A walk lives in the session and never enters `data/`; the Why mode (M35) is what will ask for one
 src/render-key.js          pure: whether two states draw the same picture, per view; the one place a view asks "has anything I draw changed?" — and the count of attribute-shard arrivals every one of the four keys carries, since a century landing changes what is drawn and the state cannot see it
 src/attributes.js          pure: which records are on screen when one is open, and therefore which attribute shards a card or an entry page pins while it is; and what a view may print as a name, which is nothing until the record's century has landed
+src/window-control.js      the window of time from the masthead, on every view: the two ends as numbers to read and to type, a density hint of one column per century at the density strip's own scale, and the "N of N events in view" count with the pin that gives the world back. Writes `from` and `to`; pure halves — `windowPatch` and `densityColumns` — hold the clamping and the columns
 src/graph-filters.js       the graph's own two controls, beside the map's layer switches and shown where those are hidden: the degree floor (how many active links an event needs to be drawn) and top level only. Writes `degree` and `tops`; `graph-view/arrangement.js` is where they are applied, outside a lens and never inside one
 src/grouping.js            pure: which band a record belongs to under each grouping, and the bands in order
 src/lanes.js               the one file that decides what a lane is: the region lanes, an actor's, a place's, and where a bar goes in one
-src/panes.js               which of the three views is on screen and how the panes divide, from the state
+src/panes.js               the one edge a reader can drag — how wide the panel is — remembered per reader and never in the URL. The timeline's edge went with the strip (M60)
 src/share.js               a record's own address on the atlas and in the form, and `parseEdit` for `<kind>/<id>`; nothing of what the reader did to get there
 src/intro.js               the card over the view on a first visit, and the "?" that brings it back; the only thing in localStorage
 src/density.js             pure: the strip under the lanes — how many events fall in each column of the part of the window the bars do not reach
@@ -180,7 +181,7 @@ src/graph-view/arrangement.js  pure: which events an arrangement is of — the b
 src/graph-view/layout-runner.js  which of the two paths a layout takes, and the fallback: the Worker above 600 events, the synchronous call below it and whenever a thread is absent or fails
 src/graph-view/layout-worker.js  the layout on a thread of its own; it fetches nothing, so no data root can be got wrong there
 src/graph-view/layout-message.js  pure: what crosses to that thread and back — ids, years, weights and lanes, and no records
-src/timeline.js            one lane per region; the window as a band with two handles; bars stack
+src/timeline.js            the third view since M60: one lane per region; the window as a band with two handles; bars stack. It is chosen from the masthead and given the whole pane, where it used to be a strip along the bottom of the map
 src/panel/panel.js         the shell: container, clicks, load token, what the cards share
 src/panel/event.js         one card each: event.js, source.js, place.js, actor.js, office.js, cluster.js, narrative.js;  horizon.js  the "led to by year X" section; the actor card also lists its relations, both ways round
 src/panel/office.js        the office card — the actor it belongs to, its category, every turn at it in order — and the tenure strip the actor card draws from the same list

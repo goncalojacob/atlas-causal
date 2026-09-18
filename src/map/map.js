@@ -849,6 +849,13 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     let last = '';
     new ResizeObserver(() => {
       const rect = root.getBoundingClientRect();
+      // A pane nobody can see measures nothing, and `visibleBox` answers with
+      // the nominal box when it does — so a map hidden behind another view
+      // would publish the box of a picture that is not on screen and take the
+      // reader's own away. Since M60 that happens whenever the graph or the
+      // timeline has the pane, which is often; `last` is deliberately left
+      // alone, so the size it comes back at is a change and is drawn again.
+      if (!rect.width || !rect.height) return;
       const now = `${Math.round(rect.width)}x${Math.round(rect.height)}`;
       if (now === last) return;
       last = now;

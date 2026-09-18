@@ -28,20 +28,50 @@ const opensOn = async () => {
 // the lanes, let go. The events are dispatched rather than synthesised at a
 // higher level because what is being tested is that the panel survives the
 // twenty state changes a drag makes, and the handlers that make them are the
-// timeline's own (timeline.js).
-const dragWindowTo = (kind, x) => `
+// timeline's own (timeline.js). On the timeline's own view since M60, which
+// is where the band is; the card stands beside all three.
+const dragWindowTo = (kind, fraction) => `
   const root = document.querySelector('#timeline svg');
   const handle = root.querySelector('[data-window="${kind}"]');
   const box = handle.getBoundingClientRect();
+  const drawing = root.getBoundingClientRect();
   const y = box.top + box.height / 2;
   const at = (clientX, type, target) => target.dispatchEvent(new PointerEvent(type, {
     bubbles: true, clientX, clientY: y, pointerId: 1,
   }));
+  // A share of the drawing rather than a pixel of the page: since M60 the
+  // timeline is a view in the layout's own column and is not the width of the
+  // window, so a fixed x said something different about which year it is.
+  const target = drawing.left + drawing.width * ${fraction};
   const start = box.left + box.width / 2;
   at(start, 'pointerdown', handle);
-  for (let i = 1; i <= 20; i += 1) at(start + ((${x} - start) * i) / 20, 'pointermove', root);
-  at(${x}, 'pointerup', root);
+  for (let i = 1; i <= 20; i += 1) at(start + ((target - start) * i) / 20, 'pointermove', root);
+  at(target, 'pointerup', root);
   return true;`;
+
+// And the other way to the same two fields, which is the one a reader on the
+// map has since M60: the two ends in the masthead (window-control.js). One
+// state change rather than twenty, and no band anywhere near it.
+const setWindowTo = (kind, year) => `
+  const input = document.querySelector('#window-control [data-window="${kind}"]');
+  input.value = '${year}';
+  input.dispatchEvent(new Event('change', { bubbles: true }));
+  return true;`;
+
+// Waits until the attribute shards have stopped arriving: two readings of the
+// page's own resource timeline the same, a beat apart. The count is a property
+// of the build and not of this file, and what a caller wants is "nothing more
+// is coming" (attributes.js, I4a; the same wait as in map-browser).
+async function settledShards(page) {
+  const count = 'return performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).length;';
+  let last = -1;
+  for (let tries = 0; tries < 40; tries += 1) {
+    const now = await page.eval(count);
+    if (now > 0 && now === last) return;
+    last = now;
+    await new Promise((resolve) => { setTimeout(resolve, 100); });
+  }
+}
 
 // What the reader can see of the sections: which are there, and which is open.
 const SECTIONS = `return [...document.querySelectorAll(".panel .card-section")].map((s) => ({
@@ -246,7 +276,7 @@ test('a walk whose steps all stand is left alone and says nothing', { skip }, as
 // window — and the window's own bits are written into the card that is there.
 test('a drag of the band leaves the open explanation open and moves the horizon', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url('?selected=carnation-revolution-1974'));
+    await open(page, url('?selected=carnation-revolution-1974&view=timeline'));
     await waitFor(page, 'return document.querySelectorAll("#timeline [data-window]").length === 3;', 'the band');
 
     // Open the first "Why" in Consequences and wait for its text, so that
@@ -276,7 +306,7 @@ test('a drag of the band leaves the open explanation open and moves the horizon'
     assert.ok(lit > 0, 'the revolution leads somewhere inside the band');
     assert.equal(before.horizon, String(lit));
 
-    await page.eval(dragWindowTo('to', 450));
+    await page.eval(dragWindowTo('to', 0.5));
     await waitFor(page, 'return /to=/.test(location.search);', 'the window in the URL');
 
     const after = await page.eval(`return {
@@ -341,6 +371,11 @@ test('a cluster’s list survives the bbox the zoom writes when it settles', { s
 // A place's list is faded event by event against the band, and the count in
 // the hint says how many are inside it. Both follow the window without the
 // card being drawn again.
+//
+// **With the control standing where the band stood** (m60-brief §3): the card
+// is open beside the map, which is where a reader opens a place, and the
+// window is set from the masthead. The rule is about the list following the
+// window and never about which control moved it.
 test('a place’s faded rows follow the band without rebuilding the card', { skip }, async () => {
   await withBrowser(async (page, url) => {
     // The whole span by name. It used to be what a URL naming no band got, and
@@ -349,7 +384,12 @@ test('a place’s faded rows follow the band without rebuilding the card', { ski
     const whole = await opensOn();
     const atlas = await atlasOf(path.join(ROOT, 'data'));
     await open(page, url(`?place=lisbon&from=${atlas.extent.min}&to=${atlas.extent.max}`));
-    await waitFor(page, 'return document.querySelectorAll("#timeline [data-window]").length === 3;', 'the band');
+    await waitFor(page, `return document.querySelector('#window-control [data-window="to"]').value === '${atlas.extent.max}';`,
+      'the control to carry the window');
+    // The shards land after the card does and each arrival draws it again
+    // (main.js), so the marker below goes on after they have stopped: what
+    // this test is about is the window, not the corpus arriving.
+    await settledShards(page);
     assert.ok(whole, 'the atlas has a window to open on');
     const before = await page.eval(`document.querySelector('.panel .place-head h2').dataset.kept = 'yes';
       return {
@@ -359,8 +399,9 @@ test('a place’s faded rows follow the band without rebuilding the card', { ski
     assert.equal(before.faded, 0, 'the whole span: nothing is outside it');
     assert.match(before.hint, /All of them are inside the window\./);
 
-    await page.eval(dragWindowTo('to', 450));
-    await waitFor(page, 'return /to=/.test(location.search);', 'the window in the URL');
+    // Narrowed from the masthead, on the map, where the band no longer is.
+    await page.eval(setWindowTo('to', 1700));
+    await waitFor(page, 'return /to=1700/.test(location.search);', 'the window in the URL');
     const after = await page.eval(`return {
       head: document.querySelector('.panel .place-head h2').dataset.kept ?? null,
       faded: document.querySelectorAll('.card-section[data-section="events"] .actor-row.faded').length,
@@ -385,7 +426,8 @@ test('a territory’s faded rows follow the band without rebuilding the card', {
   await withBrowser(async (page, url) => {
     const atlas = await atlasOf(path.join(ROOT, 'data'));
     await open(page, url(`?actor=brazil&from=${atlas.extent.min}&to=${atlas.extent.max}`));
-    await waitFor(page, 'return document.querySelectorAll("#timeline [data-window]").length === 3;', 'the band');
+    await waitFor(page, `return document.querySelector('#window-control [data-window="to"]').value === '${atlas.extent.max}';`,
+      'the control to carry the window');
     // The ground is two files, fetched when a lens on an actor asks (M48, M54)
     // and landing as one arrival, which the card and the chips are drawn again
     // for (main.js). Waited for, never timed — and waited for at the *chip*,
@@ -404,10 +446,11 @@ test('a territory’s faded rows follow the band without rebuilding the card', {
     assert.equal(before.faded, 0, 'the whole span: nothing is outside it');
     assert.ok(before.landfall, 'the 1500 landfall is on the card of the territory it happened in');
 
-    // The band narrowed onto the twentieth century, which is where the reader
-    // who reported this was looking.
-    await page.eval(dragWindowTo('from', 600));
-    await waitFor(page, 'return /from=/.test(location.search);', 'the window in the URL');
+    // The window narrowed onto the twentieth century, which is where the
+    // reader who reported this was looking — from the masthead, since that is
+    // what stands where the band stood.
+    await page.eval(setWindowTo('from', 1900));
+    await waitFor(page, 'return /from=1900/.test(location.search);', 'the window in the URL');
     const after = await page.eval(`return {
       head: document.querySelector('.panel .actor-head h2').dataset.kept ?? null,
       rows: document.querySelectorAll('.card-section[data-section="ground"] .actor-row').length,
@@ -434,15 +477,16 @@ test('Back comes back to the picture, and the URL says so', { skip }, async () =
     await page.eval('document.querySelector(\'.event-head .chip[data-id="estado-novo"]\').click(); return true;');
     await waitFor(page, 'return Boolean(document.querySelector(".panel .actor-head h2"));', 'the actor');
 
-    // The band, narrowed on this second entry, and the graph instead of the
-    // map: both are the picture and neither is what is open.
+    // The window, narrowed on this second entry, and the graph instead of the
+    // map: both are the picture and neither is what is open. Narrowed from the
+    // masthead, which is the one control that is there on every view (M60).
     await page.eval('document.querySelector(\'[data-view="graph"]\').click(); return true;');
-    await page.eval(dragWindowTo('from', 400));
-    await waitFor(page, 'return /from=/.test(location.search);', 'the band in the URL');
+    await page.eval(setWindowTo('from', 1900));
+    await waitFor(page, 'return /from=1900/.test(location.search);', 'the window in the URL');
     const narrowed = await page.eval(`return {
       from: Number(new URLSearchParams(location.search).get('from')),
       view: new URLSearchParams(location.search).get('view'),
-      whole: Number(document.querySelector('#timeline [data-window="band"]').getAttribute('aria-valuemin')),
+      whole: Number(document.querySelector('#window-control [data-window="from"]').min),
     };`);
     assert.ok(narrowed.from > narrowed.whole, `the band was narrowed: from=${narrowed.from}`);
     assert.equal(narrowed.view, 'graph');
@@ -450,11 +494,11 @@ test('Back comes back to the picture, and the URL says so', { skip }, async () =
     await page.eval('history.back(); return true;');
     await waitFor(page, 'return Boolean(document.querySelector(".panel .event-head h2"));', 'the event again');
 
-    const after = await page.eval(`const band = document.querySelector('#timeline [data-window="band"]');
+    const after = await page.eval(`const end = document.querySelector('#window-control [data-window="from"]');
     return {
       url: Object.fromEntries(new URLSearchParams(location.search)),
-      from: Number(document.querySelector('#timeline [data-window="from"]').getAttribute('aria-valuenow')),
-      whole: Number(band.getAttribute('aria-valuemin')),
+      from: Number(end.value),
+      whole: Number(end.min),
       graphShown: !document.getElementById('graph').hidden,
       pressed: document.querySelector('[data-view="map"]').getAttribute('aria-pressed'),
     };`);
@@ -689,7 +733,7 @@ test('the timeline lights a reachable event past the margin, as the hint promise
 
   await withBrowser(async (page, url) => {
     await seenIntro(page);
-    await open(page, url('?selected=republic-proclaimed-1910&from=1908&to=1912&horizon=2011'));
+    await open(page, url('?selected=republic-proclaimed-1910&from=1908&to=1912&horizon=2011&view=timeline'));
     await waitFor(page, 'return document.querySelectorAll(".timeline-area svg rect.bar").length > 0;', 'the bars');
     const lit = new Set(await page.eval(`return [...document.querySelectorAll(".timeline-area svg rect.bar.in-horizon")]
       .map((el) => el.dataset.id).filter(Boolean);`));

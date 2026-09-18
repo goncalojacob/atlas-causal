@@ -12,7 +12,12 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { withBrowser, open, waitFor, skip } from './browser.mjs';
 
-const READY = 'return Boolean(document.querySelector(".map .mark"));';
+// The timeline is the third view since M60, so every URL here names it: the
+// map is what a link with no `?view=` opens on, and the lanes are drawn when
+// the reader asks for them (main.js). What says the drawing arrived is a lane.
+const READY = 'return Boolean(document.querySelector(".timeline-area svg rect.lane"));';
+// The link a reader follows to the timeline, with whatever else the test needs.
+const on = (query = '') => `?view=timeline${query ? `&${query}` : ''}`;
 
 // Where the drawing is, against the pane that holds it. Client coordinates
 // for the parts that must not leave the screen, the SVG's own units for the
@@ -55,7 +60,7 @@ function fits(fit, where) {
 
 test('at a window 500 px tall every lane is inside the timeline pane', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url(''), READY);
+    await open(page, url(on()), READY);
     const fit = await page.eval(FIT);
     assert.equal(fit.windowHeight, 500);
     assert.ok(fit.lanes > 1 && fit.bars > 0, `the atlas drew something (${fit.lanes} lanes, ${fit.bars} bars)`);
@@ -66,7 +71,7 @@ test('at a window 500 px tall every lane is inside the timeline pane', { skip },
 test('when the rows have the room they take it, and the pane does not scroll', { skip }, async () => {
   await withBrowser(async (page, url) => {
     // Eleven fixture events pack into a handful of rows, which fit.
-    await open(page, url('?fixtures=1'), READY);
+    await open(page, url(on('fixtures=1')), READY);
     const fit = await page.eval(FIT);
     fits(fit, 'the fixtures at 500 px');
     assert.equal(fit.svgHeight, fit.paneHeight, 'the drawing is exactly the pane');
@@ -82,7 +87,7 @@ test('a named grouping takes the lanes its pane holds, and drops one rather than
   const at = async (height) => {
     let fit = null;
     await withBrowser(async (page, url) => {
-      await open(page, url('?group=actor'), READY);
+      await open(page, url(on('group=actor')), READY);
       fit = await page.eval(FIT);
     }, { device: { width: 1280, height, deviceScaleFactor: 1 } });
     return fit;
@@ -94,8 +99,12 @@ test('a named grouping takes the lanes its pane holds, and drops one rather than
   assert.equal(tall.svgHeight, tall.paneHeight, 'the drawing is exactly the pane');
   assert.equal(tall.scrollHeight, tall.paneHeight, 'so nothing scrolls');
 
-  const short = await at(460);
-  fits(short, 'the actor lanes in a 460 px window');
+  // Short enough that the lanes really do not all fit. Since M60 the timeline
+  // has the whole pane rather than a strip of it, so what used to be a short
+  // window for this rule — 460 px, with 30 % of it the timeline's — is now
+  // tall enough to hold every lane there is.
+  const short = await at(300);
+  fits(short, 'the actor lanes in a 300 px window');
   assert.equal(short.svgHeight, short.paneHeight, 'still exactly the pane');
   assert.equal(short.scrollHeight, short.paneHeight, 'and still nothing scrolls');
   assert.ok(short.lanes < tall.lanes, `fewer lanes in a shorter pane (${short.lanes} of ${tall.lanes})`);
@@ -112,14 +121,17 @@ test('a named grouping takes the lanes its pane holds, and drops one rather than
 // window is fewer rows.
 test('the lanes are laid out again when the window changes height', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url(''), READY);
+    await open(page, url(on()), READY);
     const tall = await page.eval(FIT);
     fits(tall, 'a 900 px window');
 
+    // Short enough to hold fewer rows than the ceiling: since M60 the lanes
+    // have the whole pane instead of a strip of it, and a 460 px window still
+    // holds twenty packed rows at their floor.
     await page.send('Emulation.setDeviceMetricsOverride', {
-      mobile: false, width: 1280, height: 460, deviceScaleFactor: 1,
+      mobile: false, width: 1280, height: 300, deviceScaleFactor: 1,
     });
-    await waitFor(page, 'return innerHeight === 460;', 'the window to be short');
+    await waitFor(page, 'return innerHeight === 300;', 'the window to be short');
     await waitFor(
       page,
       `return document.querySelector('.timeline-area').clientHeight !== ${tall.paneHeight};`,
@@ -156,27 +168,26 @@ test('the lanes are laid out again when the window changes height', { skip }, as
   }, { device: { width: 1280, height: 900, deviceScaleFactor: 1 } });
 });
 
-// The note is inside the pane and above the drawing, so its height is the
-// drawing's to lose — and while it was hidden it kept its 29 pixels and its
-// pin anyway, because `display: flex` beats the UA rule for [hidden].
-test('the note takes no room while the timeline is showing the whole world', { skip }, async () => {
+// The note above the lanes — "N of N events in view" and the pin — used to be
+// the one part of this pane that was not the drawing, and its height was the
+// drawing's to lose. It is in the masthead since M60, where a reader on the
+// map can see it too (window-control.js; `tests/m60-browser.test.mjs` holds
+// what it says). So the pane is the drawing and nothing else, with a box in
+// force as without one.
+test('the pane is the drawing, with a box in force as without one', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url(''), READY);
-    const quiet = await page.eval(`const note = document.querySelector('.timeline-note');
-      return { hidden: note.hidden, height: Math.round(note.getBoundingClientRect().height) };`);
-    assert.equal(quiet.hidden, true);
-    assert.equal(quiet.height, 0, 'a hidden note is not a 29-pixel strip with a button in it');
+    await open(page, url(on()), READY);
     fits(await page.eval(FIT), 'with no box');
+    assert.equal(await page.eval('return document.querySelectorAll(".timeline-area p").length;'), 0,
+      'nothing above the lanes but the lanes');
 
-    // With a box it is back, and the drawing gives way to it.
-    await open(page, url('?bbox=-10,36,-6,43'), READY);
-    const loud = await page.eval(`const note = document.querySelector('.timeline-note');
-      return { hidden: note.hidden, height: Math.round(note.getBoundingClientRect().height) };`);
-    assert.equal(loud.hidden, false);
-    assert.ok(loud.height > 10, 'the note is showing');
+    await open(page, url(on('bbox=-10,36,-6,43')), READY);
     const fit = await page.eval(FIT);
-    assert.equal(fit.scrollHeight, fit.svgHeight + loud.height, 'and the pane holds the note and the drawing');
+    fits(fit, 'with a box');
+    assert.equal(fit.scrollHeight, fit.svgHeight, 'the pane holds the drawing and nothing else');
     assert.ok(fit.lowestBar <= fit.svgHeight);
+    // And the count is where the reader can see it, on this view too.
+    assert.equal(await page.eval('return document.querySelector("#window-control .window-view").hidden;'), false);
   }, { device: { width: 1280, height: 700, deviceScaleFactor: 1 } });
 });
 
@@ -192,7 +203,14 @@ test('the note takes no room while the timeline is showing the whole world', { s
 // which is why it is here and not in the pure suite.
 test('a state change updates the bars in place and does not rebuild them', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url(''), READY);
+    // With a record already open, so that the click under test is a state
+    // change and nothing else. Opening the *first* record also brings the
+    // panel back — there is none while nothing is open (H1c) — and the pane
+    // the lanes are laid out into loses a third of its width, which is a
+    // relayout and not the thing this test is about. It was invisible while
+    // the timeline was a full-width strip under the panel; since M60 it is in
+    // the view's own column and the panel takes width from it.
+    await open(page, url(on('selected=carnation-revolution-1974')), READY);
     // Every element the timeline has drawn, watched for children coming and
     // going. `subtree` so the layers themselves are covered.
     // Elements only. A bar that now stands for a different event still has
@@ -212,7 +230,8 @@ test('a state change updates the bars in place and does not rebuild them', { ski
     const before = await page.eval("return document.querySelectorAll('#timeline svg.timeline *').length;");
 
     const first = await page.eval(`
-      const el = document.querySelector('#timeline rect.bar[data-id]');
+      const el = [...document.querySelectorAll('#timeline rect.bar[data-id]')]
+        .find((b) => !b.classList.contains('selected'));
       return { id: el.getAttribute('data-id'), before: el.getAttribute('class') };`);
     // Selecting a bar changes the class of that bar and of everything the
     // selection emphasises, and nothing else about the picture.
@@ -222,8 +241,9 @@ test('a state change updates the bars in place and does not rebuild them', { ski
       return true;`);
     await waitFor(
       page,
-      `return document.querySelector('#timeline rect.bar[data-id="${first.id}"]')?.classList.contains('selected');`,
-      'the bar to be drawn as selected',
+      `return document.querySelector('#timeline rect.bar[data-id="${first.id}"]')?.classList.contains('selected')
+        || Boolean(document.querySelector('#timeline .layer-held rect[data-id="${first.id}"]'));`,
+      'the bar the click opened to be drawn as what the reader is holding',
     );
     const churn = await page.eval('return { added: window.__added, removed: window.__removed };');
     const after = await page.eval("return document.querySelectorAll('#timeline svg.timeline *').length;");
@@ -275,7 +295,7 @@ test('a large event is a band the height of the drawing, under the bars and with
     // Opened on the large event itself, which is the only way to be sure of a
     // bar to compare the band against: two of the fixtures' events fall on the
     // same year in that lane and are drawn as one stack otherwise.
-    await open(page, url('?fixtures=1&group=region&selected=fixture-event-f'), READY);
+    await open(page, url(on('fixtures=1&group=region&selected=fixture-event-f')), READY);
     await waitFor(page, 'return document.querySelectorAll("#timeline .layer-bands rect").length > 0;', 'the band');
 
     const band = await page.eval(`
@@ -316,9 +336,9 @@ test('a large event is a band the height of the drawing, under the bars and with
 test('no bracket where the parts cross lanes, and none at all with no grouping', { skip }, async () => {
   await withBrowser(async (page, url) => {
     const brackets = 'return document.querySelectorAll("#timeline .layer-brackets line").length;';
-    await open(page, url('?fixtures=1&group=region'), READY);
+    await open(page, url(on('fixtures=1&group=region')), READY);
     assert.equal(await page.eval(brackets), 0, 'the fixtures\' one parent is a large event, and has the band');
-    await open(page, url('?fixtures=1'), READY);
+    await open(page, url(on('fixtures=1')), READY);
     assert.equal(await page.eval(brackets), 0, 'and with no grouping there are no lanes to draw one on');
   }, { device: { width: 1280, height: 700, deviceScaleFactor: 1 } });
 });
@@ -364,7 +384,7 @@ test('a parent\'s bar is ringed under no grouping and under the region lanes', {
   await withBrowser(async (page, url) => {
     // With no grouping at all, where there is no vertical room for a bracket
     // and the card's "Part of" line used to be the only word on it.
-    await open(page, url('?fixtures=1'), READY);
+    await open(page, url(on('fixtures=1')), READY);
     const packed = await page.eval(RING_AROUND('fixture-event-f'));
     assert.ok(packed.bar, 'the parent has a bar of its own in the packed rows');
     assert.equal(packed.rings, 1, 'one ring, for the one parent on the fixtures');
@@ -384,7 +404,7 @@ test('a parent\'s bar is ringed under no grouping and under the region lanes', {
     // drawn as a band rather than a bracket. Selected, because that is the
     // only way to be sure of a bar of its own there (the band test above), and
     // it exercises the layer the reader's own records are drawn in.
-    await open(page, url('?fixtures=1&group=region&selected=fixture-event-f'), READY);
+    await open(page, url(on('fixtures=1&group=region&selected=fixture-event-f')), READY);
     const banded = await page.eval(RING_AROUND('fixture-event-f'));
     assert.ok(banded.ring, 'the ring is drawn under a grouping too');
     assert.equal(banded.layer, 'layer layer-held', 'in the layer its bar is in');
@@ -412,7 +432,7 @@ test('a parent\'s bar is ringed under no grouping and under the region lanes', {
 // well as on the fixtures, and recorded as deviation 585.
 test('a bar wide enough carries its category, and one below the threshold does not', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url('?fixtures=1&group=region'), READY);
+    await open(page, url(on('fixtures=1&group=region')), READY);
     await waitFor(page, 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;', 'the bars');
     const seen = await page.eval(`
       const at = (id) => {
@@ -455,7 +475,7 @@ test('a bar wide enough carries its category, and one below the threshold does n
 
     // Under the default grouping a bar is eight pixels tall and none of them
     // reaches the threshold, on the fixtures or on the repository's data.
-    await open(page, url('?fixtures=1'), READY);
+    await open(page, url(on('fixtures=1')), READY);
     await waitFor(page, 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;', 'the packed rows');
     const packed = await page.eval(`return {
       heights: [...new Set([...document.querySelectorAll('#timeline rect.bar[data-id]')].map((b) => Number(b.getAttribute('height'))))],
@@ -507,7 +527,7 @@ const EXTENT = `
 
 test('the whole extent is on the axis at 1440 px, a labelled column per century', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url('?fixtures=1'), READY);
+    await open(page, url(on('fixtures=1')), READY);
     const seen = await page.eval(EXTENT);
     // The corpus really does run over several centuries, or this test is
     // about nothing.
@@ -534,7 +554,7 @@ test('the whole extent is on the axis at 1440 px, a labelled column per century'
 
 test('the band opens on a century, and drags from the first year of the data to the last', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url('?fixtures=1'), READY);
+    await open(page, url(on('fixtures=1')), READY);
     const opened = await page.eval(EXTENT);
     // Not the whole extent: the atlas opens on the century that holds most of
     // the corpus (util/window.js, `opensOn`). Which century that is depends on
@@ -596,10 +616,10 @@ test('the wheel zooms on the year under the pointer, in the compressed part as i
     // Opened on the whole extent, so there is a compressed part to put the
     // pointer over.
     const seen = await (async () => {
-      await open(page, url('?fixtures=1'), READY);
+      await open(page, url(on('fixtures=1')), READY);
       return page.eval(EXTENT);
     })();
-    await open(page, url(`?fixtures=1&from=${seen.min}&to=${seen.max}`), READY);
+    await open(page, url(on(`fixtures=1&from=${seen.min}&to=${seen.max}`)), READY);
     const wheelAt = (x) => `
       const svg = document.querySelector('#timeline svg.timeline');
       const box = svg.getBoundingClientRect();
@@ -638,7 +658,7 @@ test('the wheel zooms on the year under the pointer, in the compressed part as i
 
 test('past the margin the corpus is a density strip, and it covers the compressed part', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url('?fixtures=1'), READY);
+    await open(page, url(on('fixtures=1')), READY);
     const seen = await page.eval(EXTENT);
     // The events the band does not reach are still said to be there — that is
     // what the strip is for (density.js) — and on this corpus there are some.

@@ -21,6 +21,7 @@ import { bindNarrativeKeys } from './panel/narrative.js';
 import { esc } from './util/esc.js';
 import { createLayerControl } from './layer-control.js';
 import { createGraphFilters } from './graph-filters.js';
+import { createWindowControl } from './window-control.js';
 
 const params = new URLSearchParams(window.location.search);
 const fixtures = params.get('fixtures') === '1';
@@ -190,7 +191,6 @@ try {
   const showCluster = (cluster) => { panel.showCluster(cluster); phone.open(); };
 
   map = createMap(document.getElementById('map'), { atlas, state, onCluster: showCluster });
-  timeline = createTimeline(document.getElementById('timeline'), { atlas, state, onCluster: showCluster });
   createSearchBox(document.getElementById('search'), { atlas, state, fixtures, shard });
   // First contact: the narratives, what most of the atlas hangs on, and what
   // "follow the consequences" actually means here. Shown on a first visit
@@ -202,11 +202,14 @@ try {
   const grouping = createGrouping(document.getElementById('grouping'), { atlas, state });
   bindNarrativeKeys(document, { atlas, state });
 
-  // The graph view takes the map's slot behind the toggle. It is built the
-  // first time it is asked for, not at load: a reader who never leaves the
-  // map never pays for the layout.
+  // The graph and the timeline take the map's slot behind the toggle. Each is
+  // built the first time it is asked for, not at load: a reader who never
+  // leaves the map never pays for the layout, and since M60 never pays for the
+  // lanes either — the timeline used to be drawn on every load whether it was
+  // being read or not, because it was a strip along the bottom of the map.
   const mapArea = document.getElementById('map');
   const graphArea = document.getElementById('graph');
+  const timelineArea = document.getElementById('timeline');
   const layersGroup = document.querySelector('.bar .layers');
   const graphFiltersGroup = document.querySelector('.bar .graph-filters');
   // The layer switches and the category toggles, which are the legend; built
@@ -216,17 +219,32 @@ try {
   // And the graph's own two, which are the other half of the same idea: what
   // is drawn at all. They swap with the layer switches below.
   createGraphFilters(graphFiltersGroup, { state });
+  // The window of time, on every view: its two ends to read and to type, the
+  // density of the corpus beside them, and the count of what the map is
+  // looking at. It stands where the band stood before M60 made the timeline a
+  // view — the band is still there, on the timeline, and the two write the
+  // same two fields of the state.
+  createWindowControl(document.getElementById('window-control'), { atlas, state });
   const showView = (view) => {
     const graphOn = view === 'graph';
+    const timelineOn = view === 'timeline';
+    // Hidden first and built after, so whichever picture is being made for the
+    // first time measures the pane it is about to be drawn in rather than a
+    // pane that is still `hidden` and therefore measures nothing.
+    mapArea.hidden = graphOn || timelineOn;
+    graphArea.hidden = !graphOn;
+    timelineArea.hidden = !timelineOn;
     if (graphOn && !graph) {
       graph = createGraphView(graphArea, { atlas, state, onCluster: showCluster });
     }
-    mapArea.hidden = graphOn;
-    graphArea.hidden = !graphOn;
-    // The layer switches belong to the map: the graph has no coastlines. And
-    // the degree floor belongs to the graph, for the same reason the other way
-    // round — the map draws every event whatever the graph is organising.
-    if (layersGroup) layersGroup.hidden = graphOn;
+    if (timelineOn && !timeline) {
+      timeline = createTimeline(timelineArea, { atlas, state, onCluster: showCluster });
+    }
+    // The layer switches belong to the map: the graph has no coastlines and
+    // the timeline no territories. And the degree floor belongs to the graph,
+    // for the same reason the other way round — the map draws every event
+    // whatever the graph is organising.
+    if (layersGroup) layersGroup.hidden = graphOn || timelineOn;
     if (graphFiltersGroup) graphFiltersGroup.hidden = !graphOn;
     for (const button of document.querySelectorAll('[data-view]')) {
       button.setAttribute('aria-pressed', String(button.dataset.view === view));
@@ -238,12 +256,11 @@ try {
   state.subscribe((s) => showView(s.view));
   showView(state.get().view);
 
-  // The edges between the panes. The sizes are a preference and not state:
-  // they are remembered per reader in localStorage and never in the URL. The
-  // views are told to redraw, because each of them measures its own box.
+  // The edge between the view and the panel. The size is a preference and not
+  // state: it is remembered per reader in localStorage and never in the URL.
+  // The views are told to redraw, because each of them measures its own box.
   createPanes(layout, {
     panelHandle: document.getElementById('split-panel'),
-    timelineHandle: document.getElementById('split-timeline'),
     onResize: remeasure,
   });
 

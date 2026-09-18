@@ -30,6 +30,9 @@ async function shardCount() {
 // nothing open there is no card, and the empty panel is the page's own
 // resting state (main.js).
 const ATLAS_READY = 'return document.querySelectorAll(".map .mark, .timeline .bar").length > 0;';
+// And what says the lanes have been drawn, for the tests that are about them:
+// since M60 the timeline is a view of its own and a link asks for it (main.js).
+const BARS_READY = 'return document.querySelectorAll(".timeline .bar").length > 0;';
 
 // query, what says the page has finished loading its data, which graph file
 // the page reads and how many times it asks for it. One for every page that
@@ -162,7 +165,7 @@ const SHARDS = 'return performance.getEntriesByType("resource").map((e) => e.nam
 // would be a derived string presented as the name of the thing (attributes.js).
 test('the atlas draws its bars before the last century lands, and names them when it has', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url('index.html'), ATLAS_READY);
+    await open(page, url('index.html?view=timeline'), BARS_READY);
     const every = await shardCount();
     const landed = () => page.eval('return performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).length;');
     assert.ok(every > 1, `${every} attribute shards to arrive`);
@@ -206,18 +209,22 @@ test('the atlas draws its bars before the last century lands, and names them whe
 test('the atlas draws its three views out of the core', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url('index.html'), ATLAS_READY);
+    const marks = await page.eval('return document.querySelectorAll(".map .mark").length;');
+    assert.ok(marks > 10, `${marks} marks`);
+
+    // The timeline is the second of the three and is built on the first click
+    // of its button, out of the same atlas (M60).
+    await page.eval('return document.querySelector(\'[data-view="timeline"]\').click();');
+    await waitFor(page, BARS_READY, 'bars in the lanes');
     const drawn = await page.eval(`return {
-      marks: document.querySelectorAll(".map .mark").length,
       bars: document.querySelectorAll(".timeline .bar").length,
       lanes: document.querySelectorAll(".timeline .lane").length,
-      title: document.querySelector(".panel h2")?.textContent ?? "",
     };`);
-    assert.ok(drawn.marks > 10, `${drawn.marks} marks`);
     assert.ok(drawn.bars > 10, `${drawn.bars} bars`);
     assert.ok(drawn.lanes > 0, `${drawn.lanes} lanes`);
 
-    // The graph is built on the first click of the toggle, out of the same
-    // atlas, and it is the view that would notice a missing edge first.
+    // The graph is the third, out of the same atlas again, and it is the view
+    // that would notice a missing edge first.
     await page.eval('return document.querySelector(\'[data-view="graph"]\').click();');
     await waitFor(page, 'return document.querySelectorAll(".graph .node").length > 0;', 'nodes in the graph');
     const nodes = await page.eval('return document.querySelectorAll(".graph .node").length;');
@@ -327,7 +334,7 @@ test('the search box answers off the search shard', { skip }, async () => {
 // silent deletion (review finding 28).
 test('a narrow window leaves stubs on the timeline and nothing on the map', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url('index.html?from=2000&to=2025'), ATLAS_READY);
+    await open(page, url('index.html?from=2000&to=2025&view=timeline'), BARS_READY);
     const drawn = await page.eval(`return {
       stubs: document.querySelectorAll(".timeline .bar.stub").length,
       rects: document.querySelectorAll("rect.bar.stub").length,

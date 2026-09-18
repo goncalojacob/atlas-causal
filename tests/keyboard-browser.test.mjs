@@ -80,8 +80,10 @@ test('every mark on the map is a control with a name, and Enter opens it', { ski
 
 test('the lanes are one tab stop each, and the arrows walk along a lane', { skip }, async () => {
   await desk(async (page, url) => {
-    // Grouped by region, so the lanes are named and there are several of them.
-    await open(page, url('?fixtures=1&group=region'), READY);
+    // Grouped by region, so the lanes are named and there are several of them,
+    // and on the timeline's own view since M60.
+    await open(page, url('?fixtures=1&group=region&view=timeline'),
+      'return document.querySelectorAll("#timeline [data-bar]").length > 0;');
 
     const lanes = await page.eval(`const out = {};
       for (const el of document.querySelectorAll('#timeline [data-bar]')) {

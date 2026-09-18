@@ -247,8 +247,8 @@ input, select, textarea { accent-color: var(--cobalt); }
 .bar .layers label, .bar .graph-filters label { display: inline-flex; align-items: center; gap: 0.3em; }
 .bar .graph-filters select { font: inherit; color: inherit; background: var(--paper); border: 1px solid var(--line); }
 /* `display: flex` above beats the UA stylesheet's rule for [hidden], exactly as
-   it did for the timeline's note (see `.timeline-note[hidden]` below). Both
-   groups are hidden by `main.js` when the other view is on — the layer
+   it does for the window control's own count below. Both groups are hidden by
+   `main.js` when another view is on — the layer
    switches are the map's legend and the degree floor is the graph's — and
    without this neither of them ever went away: the layer switches have been on
    the graph since the graph had them, which is what taking M48's screenshot
@@ -314,6 +314,45 @@ input, select, textarea { accent-color: var(--cobalt); }
 .bar .views button:hover { background: var(--cobalt-faint); }
 .bar .views button[aria-pressed="true"] { background: var(--cobalt); color: var(--paper); font-weight: 600; }
 .bar .views button[aria-pressed="true"]:hover { background: var(--cobalt); }
+
+/* The window of time, where the band used to be (M60). It sits in the row with
+   the layer switches and the graph filters and is drawn exactly like them —
+   the same text size, the same soft ink, the same paper and line on a field —
+   because it is the same kind of control: what the atlas is showing. Nothing
+   here is a new token, a new hex value or a new size.
+
+   The two ends are `<input type="number">`, so a phone offers digits and a
+   desktop offers the spinner; `tabular-nums` because two years side by side
+   that jump as they are typed are two years nobody can read. */
+.bar .window-control {
+  display: flex; align-items: center; gap: var(--space-2);
+  color: var(--ink-soft); font-size: var(--text-sm);
+}
+.bar .window-control[hidden] { display: none; }
+.window-end-label { display: inline-flex; align-items: baseline; gap: 0.3em; }
+.window-end {
+  width: 6ch; font: inherit; font-variant-numeric: tabular-nums;
+  color: var(--ink); background: var(--paper); border: 1px solid var(--line);
+  padding: 0.1rem 0.2rem;
+}
+.window-end:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 1px; }
+/* The density hint: one column per century of the corpus, the window's own
+   centuries in cobalt and the rest in the faint wash the map uses for
+   everything that is there but not being looked at. It is the one thing the
+   strip did that a pair of years cannot say, kept small enough to stand in a
+   masthead (src/window-control.js). */
+.window-density { display: block; flex: 0 0 auto; }
+.window-density .density-column { fill: var(--cobalt-faint); }
+.window-density .density-column.in { fill: var(--cobalt); }
+/* "N of N events in view", and the pin that gives the world back: the line
+   that used to sit above the lanes, on every view now. */
+.bar .window-view { display: flex; gap: var(--space-2); align-items: baseline; margin: 0; }
+.bar .window-view[hidden] { display: none; }
+.bar .window-view .pin {
+  background: none; border: 0; padding: 0; font: inherit;
+  color: var(--cobalt); text-decoration: underline; text-underline-offset: 0.18em; cursor: pointer;
+}
+.bar .window-view .pin:hover { color: var(--ink); }
 
 /* The grouping picker and the lens badge. The panel is absolutely
    positioned, like the search results, so the header does not grow when it
@@ -424,37 +463,38 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
   letter-spacing: var(--tracking-label);
 }
 
-/* The two sizes a reader can drag are custom properties with the layout's own
-   values as their fallbacks, so panes.js sets two numbers and removes them
-   again for the default — and nothing here has to know a pixel it did not
-   choose. */
+/* The one size a reader can drag is a custom property with the layout's own
+   value as its fallback, so panes.js sets one number and removes it again for
+   the default — and nothing here has to know a pixel it did not choose.
+
+   One row, since M60: the timeline used to have a row of its own along the
+   bottom, 30vh of every screen whether the reader was reading it or not. It
+   is a view now and takes the same slot the map and the graph take, so the
+   picture that is up is as tall as the layout. */
 .layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) var(--handle) var(--panel-width, minmax(300px, 33%));
-  /* A length and not `auto`: the timeline is as tall as its pane, and the
-     pane does not grow to hold however many rows the packing made. That is
-     what left the bottom row clipped in a short window — and it is what made
-     the drawing and the container chase each other's size. */
-  grid-template-rows: minmax(0, 1fr) var(--handle) var(--timeline-height, 30vh);
-  grid-template-areas:
-    "map      split-panel panel"
-    "split-timeline split-timeline split-timeline"
-    "timeline timeline    timeline";
+  grid-template-rows: minmax(0, 1fr);
+  grid-template-areas: "map split-panel panel";
   flex: 1 1 auto;
   min-height: 0;
   --handle: 6px;
 }
 .map-area { grid-area: map; position: relative; min-height: 0; background: var(--ground); }
-/* The graph view takes the map's slot; one of the two is hidden at a time. */
+/* The graph view takes the map's slot; one of the three is hidden at a time. */
 .graph-area { grid-area: map; position: relative; min-height: 0; background: var(--ground); }
 .panel { grid-area: panel; overflow: auto; padding: 1rem; border-left: 1px solid var(--line); background: var(--paper); }
 /* The pane is the height the grid row gives it, and the drawing is laid out
    into that height (timeline.js). Past the point where a lane cannot be
    squeezed any further the drawing is taller than the pane and this scrolls,
    which is why `min-height: 0` is here: without it a grid item refuses to be
-   smaller than its content and the scroll would land on the page instead. */
+   smaller than its content and the scroll would land on the page instead.
+
+   The same slot as the map and the graph since M60, and the whole of it: the
+   lanes have the height the strip never had, which is what the drawing was
+   squeezing them into. */
 .timeline-area {
-  grid-area: timeline; border-top: 1px solid var(--line); background: var(--paper);
+  grid-area: map; background: var(--paper);
   overflow: auto; min-height: 0;
 }
 /* An `<svg>` is inline by default, so the line box under it added a
@@ -463,7 +503,7 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
    fit it exactly. */
 .timeline-area .timeline { display: block; }
 
-/* The edges themselves. Six pixels of ground with a grab line down the
+/* The edge itself. Six pixels of ground with a grab line down the
    middle: enough to hit with a pointer, quiet enough not to read as a
    border. */
 .split {
@@ -476,8 +516,6 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
 }
 .split-panel { grid-area: split-panel; cursor: col-resize; }
 .split-panel::after { width: 1px; height: 2rem; }
-.split-timeline { grid-area: split-timeline; cursor: row-resize; }
-.split-timeline::after { height: 1px; width: 2rem; }
 .split:hover::after, .split:focus-visible::after, .split.dragging::after { background: var(--cobalt); }
 .split:focus-visible { outline: 2px solid var(--cobalt); outline-offset: -2px; }
 .split.dragging { background: var(--cobalt-faint); }
@@ -512,15 +550,19 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
 
 /* --- the phone ------------------------------------------------------- */
 
-/* Under 720px the three panes cannot stand side by side: the panel at the
-   type scale's measure and a map worth looking at do not both fit. So the
-   atlas stacks — the view, then the timeline at a fixed height — and the
-   panel becomes a sheet over them, up when a record is open and down to its
-   grip when it is in the way. src/phone.js says why none of it is state.
+/* Under 720px the panel cannot stand beside the view: the panel at the type
+   scale's measure and a map worth looking at do not both fit. So the view
+   takes the screen — whichever of the three it is, since M60 — and the panel
+   becomes a sheet over it, up when a record is open and down to its grip when
+   it is in the way. src/phone.js says why none of it is state.
+
+   The timeline used to be a strip of 8.5rem under the view here, which on a
+   phone is a fifth of the screen; it is chosen from the masthead now, like
+   the other two pictures, and gets the whole of it when it is.
 
    Not one size a reader dragged on a desktop is named below, which is how
-   this layout ignores the resizable panes of M24: --panel-width and
-   --timeline-height are set on .layout and nothing here reads them. */
+   this layout ignores the resizable panel of M24: --panel-width is set on
+   .layout and nothing here reads it. */
 @media (max-width: 720px) {
   /* What a thumb can hit, and how much of the screen the grip keeps for
      itself at the bottom edge. */
@@ -528,16 +570,15 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
 
   .layout {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: minmax(0, 1fr) var(--phone-timeline);
-    grid-template-areas: "map" "timeline";
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-areas: "map";
     /* The peeking grip sits over the bottom edge, so the layout keeps that
        much clear: nothing is permanently underneath it. */
     padding-bottom: var(--sheet-grip);
-    --phone-timeline: 8.5rem;
   }
   .split { display: none; }
-  /* A fixed height, and its own scroll: the timeline is a strip under the
-     view here, not a pane that grows with the rows it packs. */
+  /* The view's own row, and its own scroll: the lanes are laid out into the
+     screen the way they are laid out into a pane on a desktop. */
   .timeline-area { height: 100%; }
 
   .sheet {
@@ -591,9 +632,14 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
   .options-button[aria-expanded="true"] { border-color: var(--cobalt); background: var(--cobalt-faint); }
   /* Behind the button until it is pressed. `:not([hidden])` so that the map's
      own rule — the layer switches are gone in graph view — still wins. */
-  .masthead-tools .grouping, .masthead-tools .layers { display: none; }
+  .masthead-tools .grouping, .masthead-tools .layers,
+  .masthead-tools .window-control { display: none; }
   .masthead-tools.options-open .grouping { display: flex; flex: 1 0 100%; }
   .masthead-tools.options-open .layers:not([hidden]) { display: flex; flex: 1 0 100%; flex-wrap: wrap; }
+  /* The window of time is in the drawer with them: the two ends, the density
+     hint and the count of what the map is looking at are the same kind of
+     control, and the row outside it is the search and the three views. */
+  .masthead-tools.options-open .window-control { display: flex; flex: 1 0 100%; flex-wrap: wrap; }
   /* Inside the drawer the two panels flow rather than floating: an absolutely
      positioned panel over a sheet is a panel half off the screen. Each
      collapsed <details> is one 40 px target the drawer keeps, and opening it
@@ -608,7 +654,7 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
      Not on a link inside a sentence — a citation's title, a crumb of the
      breadcrumb — which is set in the line it belongs to and would break the
      sentence if it were given a height of its own. */
-  .options-button, .bar .views button, .search-input,
+  .options-button, .bar .views button, .search-input, .window-end,
   .panel button:not(.link), .panel .section-toggle, .panel .chips .chip,
   .bar .layers label, .bar .layers summary, .grouping-button, .grouping-lane label {
     min-height: var(--touch);
@@ -1064,26 +1110,6 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
    moving up the screen still scrolls the timeline, which is taller than its
    own area as soon as the rows pack. */
 .timeline { display: block; font-family: var(--font-ui); font-variant-numeric: tabular-nums; touch-action: pan-y; }
-/* What the lanes are showing, when they are not showing the world. Sticky,
-   because the timeline scrolls under it and a note about the whole drawing
-   must not scroll away from the drawing it is about. */
-.timeline-note {
-  position: sticky; top: 0; z-index: 1;
-  display: flex; gap: var(--space-2); align-items: baseline;
-  margin: 0; padding: var(--space-1) var(--space-3);
-  border-bottom: 1px solid var(--line);
-  background: var(--paper);
-  font-family: var(--font-ui); font-size: var(--text-sm); color: var(--ink-soft);
-}
-/* `display: flex` above beats the UA stylesheet's rule for [hidden], so the
-   note kept its 29 pixels of the pane — and its pin — while the timeline was
-   showing the whole world and had nothing to say. */
-.timeline-note[hidden] { display: none; }
-.timeline-note .pin {
-  background: none; border: 0; padding: 0; font: inherit;
-  color: var(--cobalt); text-decoration: underline; text-underline-offset: 0.18em; cursor: pointer;
-}
-.timeline-note .pin:hover { color: var(--ink); }
 /* The alternating ground behind the rows: quiet enough to be felt rather
    than seen, because it is there to keep the eye on one row and not to
    divide the drawing into stripes. */
