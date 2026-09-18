@@ -5,6 +5,9 @@
 //   node tools/import/wikidata.mjs --reconcile   [--data <dir>] [--batch 25] [--budget 400]
 //   node tools/import/wikidata.mjs --import      [--data <dir>] [--batch 25] [--budget 400]
 //   node tools/import/wikidata.mjs --candidates  [--to docs/m18-candidates.md]
+//   node tools/import/wikidata.mjs --dates       [--subjects <file>] [--to <file>]
+//                                                [--title <text>] [--provenance <text>]
+//                                                [--verdicts <file>]
 //
 // Any of them takes --report <file>, which appends what the run did to that
 // file as well as printing it. The Action commits it, because a job's log is
@@ -1595,7 +1598,13 @@ const ITEM_LINK = (qid) => `[\`${qid}\`](https://www.wikidata.org/wiki/${qid})`;
 
 // What --dates hands M49: one row per subject, and everything the tool would
 // not decide written out underneath rather than left off the page.
-export function datesMarkdown(rows, { generated, subjectsFile = SUBJECTS_FILE, refused = [] } = {}) {
+// M49's header is the default because M49's file must regenerate byte for
+// byte. The three things that are not true of every run — the title, where the
+// run reached the network from, and which document carries the verdicts — are
+// arguments, so a later milestone's page does not have to claim M49's.
+export const M49_PROVENANCE = "on a GitHub runner, because the scheduled run's sandbox cannot reach Wikidata (deviation 731, brief amendment A4)";
+
+export function datesMarkdown(rows, { generated, subjectsFile = SUBJECTS_FILE, refused = [], title = 'M49 — what Wikidata says about the actors at the seam', provenance = M49_PROVENANCE, verdictsFile = 'docs/m49-actors.md' } = {}) {
   const safe = rows.filter((r) => r.match === 'safe');
   const settled = rows.filter((r) => r.settles);
   const doubtful = rows.filter((r) => r.match !== 'safe');
@@ -1618,7 +1627,7 @@ export function datesMarkdown(rows, { generated, subjectsFile = SUBJECTS_FILE, r
     ? `\n## The doubtful ones\n
 A subject is doubtful when the matching this tool already uses did not come
 down to exactly one item. **No date is reported for one**, and the verdict on
-it in \`docs/m49-actors.md\` is "for a person", with the question written out.
+it in \`${verdictsFile}\` is "for a person", with the question written out.
 
 ${doubtful.map((row) => [
     `### \`${row.id}\`${row.alternate ? ` | ${row.alternate}` : ''}`,
@@ -1636,12 +1645,11 @@ Nothing was put to Wikidata for these, so nothing here bears on them.
 ${refused.map((r) => `- \`${r.subject}\`: ${r.why}`).join('\n')}\n`
     : '';
 
-  return `# M49 — what Wikidata says about the actors at the seam
+  return `# ${title}
 
-Generated on ${generated} by \`tools/import/wikidata.mjs --dates\`, on a GitHub
-runner, because the scheduled run's sandbox cannot reach Wikidata (deviation
-731, brief amendment A4). This is a lookup, not an import: it reads the actor
-records to know what to ask about and **writes nothing under \`data/\`**.
+Generated on ${generated} by \`tools/import/wikidata.mjs --dates\`, ${provenance}.
+This is a lookup, not an import: it reads the actor records to know what to ask
+about and **writes nothing under \`data/\`**.
 
 The subjects are \`${subjectsFile}\`; asking about another actor is an edit to
 that file and another run, never an edit here.
@@ -1649,7 +1657,7 @@ that file and another run, never an edit here.
 **${rows.length} subject(s) asked, ${safe.length} matched to exactly one item,
 ${settled.length} of those carry a P571.** The rest are a person's decision and
 are listed below with what the tool saw. A match is not a date and a date is
-not a verdict: \`docs/m49-actors.md\` is where the verdicts go, and every one
+not a verdict: \`${verdictsFile}\` is where the verdicts go, and every one
 of them cites the QID and the property it rests on.
 
 ${table}
@@ -1698,6 +1706,9 @@ async function main(argv) {
   let to = null;
   let reportTo = null;
   let subjectsFrom = null;
+  let title = null;
+  let provenance = null;
+  let verdictsFile = null;
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg.startsWith('--') && MODES.includes(arg.slice(2))) {
@@ -1712,13 +1723,16 @@ async function main(argv) {
     else if (arg === '--to') to = path.resolve(argv[++i]);
     else if (arg === '--report') reportTo = path.resolve(argv[++i]);
     else if (arg === '--subjects') subjectsFrom = path.resolve(argv[++i]);
+    else if (arg === '--title') title = argv[++i];
+    else if (arg === '--provenance') provenance = argv[++i];
+    else if (arg === '--verdicts') verdictsFile = argv[++i];
     else {
       console.error(`unknown argument ${arg}`);
       return 2;
     }
   }
   if (!mode) {
-    console.error('usage: node tools/import/wikidata.mjs --reconcile|--import|--candidates|--dates [--data <dir>] [--batch 25] [--budget 400] [--to <file>] [--report <file>] [--subjects <file>]');
+    console.error('usage: node tools/import/wikidata.mjs --reconcile|--import|--candidates|--dates [--data <dir>] [--batch 25] [--budget 400] [--to <file>] [--report <file>] [--subjects <file>] [--title <text>] [--provenance <text>] [--verdicts <file>]');
     return 2;
   }
   if (!Number.isInteger(batchSize) || batchSize < 1 || !Number.isInteger(budget) || budget < 1) {
@@ -1757,6 +1771,9 @@ async function main(argv) {
       generated: today,
       subjectsFile: subjectsFrom ? path.relative(ROOT, subjectsFrom) : SUBJECTS_FILE,
       refused: result.report.refused,
+      ...(title ? { title } : {}),
+      ...(provenance ? { provenance } : {}),
+      ...(verdictsFile ? { verdictsFile } : {}),
     }), 'utf8');
     const lines = [
       `dates: ${result.report.rows.length} subject(s) asked, `
