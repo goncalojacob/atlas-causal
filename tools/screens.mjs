@@ -329,6 +329,40 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&from=1900&to=1999&view=graph&zoom=8&at=the-base-reforms-rally-1964',
     width: 1440, height: 900,
     what: 'a handful of nodes at MAX_ZOOM, each named in full where the room is there' },
+
+  // M65: the two rules, on the same window as M60 and M61 so that the three
+  // runs' pictures can be laid beside each other. At rest each view draws the
+  // main events alone — 242 of the corpus's 309 — and choosing an event hides
+  // everything unrelated.
+  //
+  // `angola-war-begins-1961` is the event chosen, because it is a part: what
+  // it is part of is the colonial war, and the pair of shots is the whole of
+  // the milestone in one picture — the war is still there, dimmed, and a
+  // reader who has walked down into it can walk back out.
+  { name: 'm65-map-rest', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999',
+    width: 1440, height: 900,
+    what: 'the map at rest: the main events, and no mark for anything inside one of them' },
+  { name: 'm65-map-chosen', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&selected=angola-war-begins-1961',
+    width: 1440, height: 900,
+    what: 'the map with an event chosen: it, its one hop, and the war it is part of — the rest gone' },
+  { name: 'm65-graph-rest', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=graph',
+    width: 1440, height: 900,
+    what: 'the graph at rest, on the same window as m60-graph and a fifth lighter' },
+  { name: 'm65-graph-chosen', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=graph&selected=angola-war-begins-1961',
+    width: 1440, height: 900,
+    what: 'the graph with the same event chosen: a neighbourhood and not a corpus' },
+  { name: 'm65-timeline-rest', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=timeline',
+    width: 1440, height: 900,
+    what: 'the timeline at rest: one bar per main event, and the parts inside their umbrellas' },
+  { name: 'm65-timeline-chosen', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=timeline&selected=angola-war-begins-1961',
+    width: 1440, height: 900,
+    what: 'the timeline with the same event chosen: the same few bars the other two views draw' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
