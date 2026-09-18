@@ -37,6 +37,17 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
+      - name: What this runner has
+        # Four lines at the head of every log, because the load measurement of
+        # M63 (docs/m63-load.md) turns on how many cores this machine has: the
+        # test runner's own default concurrency is derived from that number,
+        # and the browser suites were failing for want of a core rather than
+        # for anything they assert. Measured here rather than assumed, so the
+        # next person reading a red check can see what it ran on.
+        run: |
+          nproc
+          free -m
+          node -e 'console.log("availableParallelism", require("node:os").availableParallelism())'
       - name: Validate records
         run: node tools/validate.mjs
       - name: Tests
