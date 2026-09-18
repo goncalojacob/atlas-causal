@@ -154,28 +154,45 @@ export function sourceCardHtml(ctx, source, citations = ctx.atlas?.citersOf?.(so
     ${citersHtml(ctx, source, citations, options)}`;
 }
 
+// Which source the reader has asked to see the whole list of, by id. The card
+// is rebuilt whenever an attribute shard lands — `shardLanded` in main.js
+// calls `panel.refresh()`, and the shards arrive for as long as the window
+// holds records — so "Show the remaining 926" used to be undone by the next
+// file to arrive: one click, then thirteen rebuilds, and the card back at 200
+// rows with nothing to say it had ever opened (M63, docs/m63-load.md). Held
+// here and not in the state because it is a card open wider and not a
+// different address; a reload forgets it, as the panel's open section does
+// when storage is off.
+let expandedFor = null;
+
 // The card, then the rows when they arrive. The section is replaced rather
 // than the whole card: the head, the citation and whatever the reader has
 // already got hold of stay where they are, which is the same discipline the
 // event card follows when its record text lands (panel/event.js).
 export function renderSourceCard(ctx, { container, source }) {
   const { atlas } = ctx;
+  const all = expandedFor === source.id;
   const swap = (rows, options) => {
     const section = container.querySelector('.citers');
     if (section) section.outerHTML = citersHtml(ctx, source, rows, options);
     const more = container.querySelector('[data-action="all-citers"]');
-    if (more) more.addEventListener('click', () => swap(rows, { all: true }));
+    if (more) {
+      more.addEventListener('click', () => {
+        expandedFor = source.id;
+        swap(rows, { all: true });
+      });
+    }
   };
   const known = atlas.citersOf ? atlas.citersOf(source.id) : source.citations ?? [];
-  container.innerHTML = sourceCardHtml(ctx, source, known);
+  container.innerHTML = sourceCardHtml(ctx, source, known, { all });
   if (known) {
-    swap(known, {});
+    swap(known, { all });
     return;
   }
   atlas.loadCiters(source.id).then(
     (rows) => {
       // The card may have been replaced while the file was in the air.
-      if (container.querySelector('.citers')) swap(rows, {});
+      if (container.querySelector('.citers')) swap(rows, { all });
     },
     () => {
       const section = container.querySelector('.citers');
