@@ -56,6 +56,24 @@ const MEASURED = [
   ['chinese-civil-war', 'taiwan'],
 ];
 
+// Entries later milestones added that the two rules also disagree about. They
+// are listed apart from the four so that "the brief measured" keeps meaning
+// what it meant, and listed at all because the test below is the one that
+// stops the difference between the rules going quiet: a corpus growing past
+// this file is expected, a corpus growing past it *silently* is not.
+//
+// Both of M57's are the same shape as the brief's first, and the shape is the
+// whole argument of this milestone: **a long export cycle that begins under
+// one polity and goes on under the next**. The coffee cycle runs 1830–1930 and
+// the rubber boom 1879–1912; `brazil` begins in 1889, so the start-only rule
+// says neither may name the republic, while the café com leite politics, the
+// valorisation schemes from 1906 and the Acre question are all the republic's.
+// The records name it, and they are right to (docs/m57-claims.md).
+const LATER = [
+  ['the-brazilian-coffee-cycle', 'brazil'],
+  ['the-amazon-rubber-boom', 'brazil'],
+];
+
 test('all four entries the brief measured survive the overlap rule', () => {
   const byEvent = new Map(events.map((e) => [e.id, e]));
   const wrong = [];
@@ -90,10 +108,11 @@ test('chinese-civil-war and taiwan meet, and the year they meet in is 1949', () 
 });
 
 test('the start-only rule is the wrong rule, and these are the entries that prove it', () => {
-  // The two rules disagree on exactly these four. If a later run re-dates one
-  // of the records so that they agree again, this fails — deliberately: the
-  // difference between the rules is what the milestone was about and should
-  // not go quiet unnoticed.
+  // The two rules disagree on exactly the entries named above — the brief's
+  // four, and the ones later milestones added. If a later run re-dates one of
+  // the records so that they agree again, or writes a new entry of this shape
+  // without saying so, this fails — deliberately: the difference between the
+  // rules is what the milestone was about and should not go quiet unnoticed.
   const differ = [];
   for (const e of events) {
     if (e.kind !== 'event' || e.status !== 'active') continue;
@@ -104,7 +123,8 @@ test('the start-only rule is the wrong rule, and these are the entries that prov
       if (!startAlive && overlaps(a.when, e.when)) differ.push(`${e.id}--${x.actor}`);
     }
   }
-  assert.deepEqual(differ.sort(), MEASURED.map(([e, a]) => `${e}--${a}`).sort(), differ.join('; '));
+  const expected = [...MEASURED, ...LATER].map(([e, a]) => `${e}--${a}`);
+  assert.deepEqual(differ.sort(), expected.sort(), differ.join('; '));
 });
 
 test('no active event names an actor whose whole life falls outside it', () => {
