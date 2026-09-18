@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ricardo-salgado",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The birth or founding year, and the end where there is one, were written from memory."
+  },
+  "wikidata": "Q15267277",
+  "wikipedia": {
+    "en": "Ricardo Salgado",
+    "pt": "Ricardo Salgado"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-03"
+  },
+  "sources": [
+    {
+      "source": "banco-de-portugal-2014-bes-resolution",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Ricardo Salgado",
+    "Ricardo Espírito Santo Silva Salgado"
+  ],
+  "summary": "Executive chairman of Banco Espírito Santo until July 2014, and the figure at the centre of the group's collapse and of the criminal proceedings that followed it.",
+  "when": {
+    "start": 1944,
+    "end": null
+  },
+  "where": null
+}

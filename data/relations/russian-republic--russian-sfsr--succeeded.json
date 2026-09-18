@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "russian-republic--russian-sfsr--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m53"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m53-polities",
+      "interval-cited"
+    ],
+    "note": "M53: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag."
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q139319, P576 1917-10-25"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q2184, P571 1917-10-25"
+    }
+  ],
+  "from": "russian-republic",
+  "to": "russian-sfsr",
+  "type": "succeeded",
+  "when": {
+    "start": 1917,
+    "end": 1917,
+    "date": "1917-10-25"
+  },
+  "note": "No gap: the two dates are the same instant, the Republic’s dissolution and the Russian SFSR’s inception as Wikidata states them. With the relation before it, the line from the Russian Empire to 1991 is continuous and every date on it is cited."
+}

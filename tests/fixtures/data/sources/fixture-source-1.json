@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "fixture-source-1",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "type": "book",
+  "creators": [
+    "Fixture Author One"
+  ],
+  "title": "Fixture source 1",
+  "year": 2001,
+  "publisher": "Fixture Press",
+  "isbn": "9780000000002",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": null,
+  "reference": null
+}

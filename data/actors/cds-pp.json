@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "cds-pp",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The birth or founding year, and the end where there is one, were written from memory."
+  },
+  "wikidata": "Q1054298",
+  "wikipedia": {
+    "en": "CDS – People's Party",
+    "pt": "CDS – Partido Popular"
+  },
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-09-03"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "CDS - Partido Popular",
+    "CDS-PP",
+    "Centro Democrático Social"
+  ],
+  "summary": "Founded in July 1974 to the right of the PPD, in coalition with the PSD in government in 2011 and again, as the Aliança Democrática, in 2024.",
+  "when": {
+    "start": 1974,
+    "end": null
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

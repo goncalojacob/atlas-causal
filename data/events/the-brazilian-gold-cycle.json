@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "the-brazilian-gold-cycle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazilian gold rush\", revision 1360546842"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    }
+  ],
+  "title": "The Brazilian gold cycle",
+  "summary": "Bandeirantes found gold in the mountains of Minas Gerais in the 1690s — Manuel Borba Gato at the Rio das Velhas in 1695 — and Vila Rica was founded in 1698. More than 400,000 Portuguese and 500,000 enslaved Africans came to the mining region; by 1725 half the population of Brazil lived in the south-east, and 800 tonnes of gold were officially shipped to Portugal over the century. In Lisbon the gold mostly went straight out again, to pay for textiles and weapons from countries that had the industry Portugal did not. Production declined in the second half of the eighteenth century.",
+  "when": {
+    "start": 1695,
+    "end": {
+      "min": 1760,
+      "max": 1800
+    }
+  },
+  "place": "vila-rica",
+  "actors": [
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "government",
+      "note": "800 tonnes of gold were officially shipped to Lisbon over the century"
+    }
+  ],
+  "names": [
+    "Ciclo do ouro",
+    "Brazilian gold rush"
+  ],
+  "region": null
+}

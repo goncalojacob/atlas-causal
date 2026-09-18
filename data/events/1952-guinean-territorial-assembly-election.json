@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "1952-guinean-territorial-assembly-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21 as outside the atlas: this is FRENCH Guinea — Conakry, not Bissau — and the import caught it on a class query rather than on any Portuguese connection. The cached lead is one sentence giving a date. The one thing French Guinea does for this atlas happens in 1958 and is wired there."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q22090902",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1952 Guinean Territorial Assembly election"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q22090902"
+    }
+  ],
+  "title": "1952 Guinean Territorial Assembly election",
+  "summary": "Wikidata item Q22090902, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1952,
+    "end": 1952,
+    "date": "1952-03-30"
+  },
+  "place": null,
+  "region": "africa",
+  "category": "election",
+  "actors": []
+}

@@ -1,0 +1,185 @@
+{
+  "schema": 1,
+  "id": "who-was-buying",
+  "kind": "narrative",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Coffee production in Brazil\", revision 1371259594"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Amazon rubber cycle\", revision 1373636077"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Companhia Siderúrgica Nacional\", revision 1369475395"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazil in World War II\", revision 1373489318"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Reformas de base\", revision 72119911"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Brother Sam\", revision 1372915756"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2000s commodities boom\", revision 1368808962"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazil–China relations\", revision 1364321291"
+    }
+  ],
+  "title": "Who was buying",
+  "summary": "Brazil has been organised around exporting commodities since 1500, and the identity of the buyer kept changing — Portugal, then Britain, then the United States, now China. Each change was political. The walk follows four movements: sugar and gold for the crown that owned the coast; coffee and rubber under terms Britain wrote in 1810 and enforced in 1845; steel, oil and wartime latex traded to the United States for industrial capital, ending in a coup and twenty-one years of dictatorship; and iron ore, soya and oil sold to China since 2009. It is one account among the possible ones. The weight it puts on the buyer is exactly what a second narrative would argue with, and the disputed link at its centre — whether the United States moved against Goulart because of what Brazil produced or out of Cold War anti-communism — is where that argument is sharpest.",
+  "window": {
+    "from": 1500,
+    "to": 2024
+  },
+  "steps": [
+    {
+      "ref": "the-brazilian-sugar-cycle",
+      "text": "The walk starts with what the place was for. From the 1530s to about 1700 sugar was the colony’s reason to exist: the engenhos spread along the settled coast on a model already tried on Madeira and São Tomé, and the sugar went to Portugal. That is the first movement of this narrative and the first answer to its question — the buyer was the crown that owned the coast. Everything below follows one claim: that Brazil has been organised around exporting commodities ever since, that the identity of the buyer kept changing, and that each change was political rather than natural."
+    },
+    {
+      "ref": "the-brazilian-sugar-cycle--the-atlantic-slave-trade-to-brazil--caused",
+      "text": "The mills are what the traffic was for. This is the step that sets the pattern the rest of the walk keeps finding: an export decided elsewhere, and a labour system built to serve it. Nothing in the four movements that follow is intelligible without this one, and the atlas records it as `caused` rather than as background."
+    },
+    {
+      "ref": "the-atlantic-slave-trade-to-brazil--the-brazilian-gold-cycle--enabled",
+      "text": "Sugar gave way to gold and the traffic did not stop; it moved inland. Half a million enslaved Africans were taken into the mining region against four hundred thousand Portuguese. The commodity changed, the buyer did not, and the institution that worked both was the same — which is the shape of every transition in this story except the last two."
+    },
+    {
+      "ref": "the-brazilian-gold-cycle--transfer-of-the-portuguese-court-to-brazil-1807--precondition-of",
+      "text": "In 1807 the court itself moved to the colony, and it moved to the richest one it had. The gold is what had made Brazil worth fleeing to. This is where the first movement ends: a colony that had been the seat of the empire could not be a colony again, and the buyer was about to change for the first time."
+    },
+    {
+      "ref": "transfer-of-the-portuguese-court-to-brazil-1807--strangford-treaty-1810--caused",
+      "text": "The second movement opens here, and it opens with a bill. The navy that carried the court across the Atlantic was paid in tariffs and in a promise about the slave trade: the treaty of 1810 gave Britain terms inside Brazilian commerce that Portugal had never given anyone. The buyer is now Britain, and it did not become the buyer by trading better. It became the buyer by escorting a monarchy into exile and charging for the passage."
+    },
+    {
+      "ref": "strangford-treaty-1810--aberdeen-act-1845--precondition-of",
+      "text": "Thirty-five years later the same power enforced the same promise with warships, seizing Brazilian ships as pirates under its own statute. Read beside the step before it, the Aberdeen Act is what the terms of 1810 looked like when Brazil wanted to stop keeping them: the buyer legislated in its own parliament about what the seller could do at home."
+    },
+    {
+      "ref": "aberdeen-act-1845--eusebio-de-queiros-law-1850--caused",
+      "text": "Five years of seizures, and then the law of 1831 was re-enacted and this time meant. What changed between 1831 and 1850 was not Brazilian opinion about slavery — that took another thirty-eight years — but the cost of continuing. This is the second movement’s clearest instance of the thesis: a change in the economy of Brazil made in London."
+    },
+    {
+      "ref": "the-atlantic-slave-trade-to-brazil--the-brazilian-coffee-cycle--enabled",
+      "text": "And now the commodity between sugar and steel. Coffee became Brazil’s largest export in the 1830s and two fifths of world production in the 1840s; the first boom was worked by a million and a half enslaved people imported in the first half of the century, and when the traffic was stopped in 1850 the planters turned to European immigrants because the supply had ended, not the demand. By the early twentieth century coffee was three quarters of export earnings, and the buyers were in Europe and North America."
+    },
+    {
+      "ref": "the-amazon-rubber-boom",
+      "text": "The chain breaks here on purpose: the second commodity of the same movement is not downstream of the first. Between 1879 and 1912 Amazon latex was something the industrial world could not do without. It built Manaus and Belém, drew the drought-stricken Northeast into the forest, and was extracted by forced indigenous labour on a scale the sources describe as genocide — in some areas ninety per cent of the native population destroyed. A second export, a second labour system, the same logic."
+    },
+    {
+      "ref": "the-amazon-rubber-boom--the-end-of-the-amazon-rubber-monopoly--precondition-of",
+      "text": "It ended in 1912, and it ended abroad. Seeds taken out of Brazil in 1876 had been planted in British Malaya, Ceylon and Africa; plantation rubber cost less than rubber tapped from wild trees, and the British Empire took the market. The railway built to carry the rubber out was finished the same year and was obsolete when it opened. This is the thesis in one commodity: what Brazil sold was decided elsewhere, and so was when it stopped selling it. Remember this step — the walk comes back to it thirty years later."
+    },
+    {
+      "ref": "the-brazilian-coffee-cycle--the-1930-revolution-and-the-vargas-era--precondition-of",
+      "text": "Back to coffee, and into the third movement. The politics of the second boom is named after the crop — café com leite, coffee in São Paulo and dairy in Minas Gerais — and the valorisation schemes that held the price up produced the oversupply that deepened the damage when the Depression came. 1930 overthrew that arrangement. What replaced it wanted something the second movement had never offered: industry."
+    },
+    {
+      "ref": "the-1930-revolution-and-the-vargas-era--companhia-siderurgica-nacional-1941--caused",
+      "text": "On 9 April 1941 Vargas decreed a state company to build Brazil’s first integrated steelworks, in the Paraíba valley, on ground left decadent by the decline of coffee. The money came from the Export-Import Bank of the United States, because American private capital would not put it up. A country that had exported sugar, gold, coffee and rubber was going to make steel, and it could not pay for the plant."
+    },
+    {
+      "ref": "companhia-siderurgica-nacional-1941--us-air-bases-in-the-brazilian-northeast-1942--caused",
+      "text": "This is the hinge of the whole narrative and the step to read slowly. In 1942, following the American proposal to finance the steelworks, United States forces established air bases along the north-eastern coast — Parnamirim beside Natal above all, on the narrowest crossing of the Atlantic. The sources put the bargain in plain words: in exchange for raw materials the United States supplied equipment, technical assistance and the financing of the mill. Strategic commodities and strategic ground, exchanged for industrial capital. The buyer has changed for the third time, and this is the transaction in which it changed."
+    },
+    {
+      "ref": "the-end-of-the-amazon-rubber-monopoly--the-rubber-battle-1942--precondition-of",
+      "text": "And here is the other half of what Brazil gave, reached from the step nine back rather than from the one before it. When Japan took Malaya at the start of 1942 the Allies lost ninety-seven per cent of Asian rubber — Asian because of the seeds of 1876 — and the Amazon was what was left. Under the same accords Brazil undertook to raise latex production from eighteen to forty-five thousand tons; the Estado Novo conscripted the men in 1943 through SEMTA at Fortaleza, the Rubber Development Corporation paid to move them, and the United States paid Brazil a hundred dollars a head. About thirty thousand of them died there. The collapse of 1912 is what made the United States come back to buy, and the price was paid in the Northeast."
+    },
+    {
+      "ref": "companhia-siderurgica-nacional-1941--petrobras-1953--inspired",
+      "text": "The precedent held. Law 2,004 of 3 October 1953 took the state monopoly of oil and created Petrobras, against a draft statute of 1948 that would have opened the fields to private capital at a time when world production was held by the Seven Sisters, five of them American. What carried the law was a popular campaign — *O petróleo é nosso* — and what it had to point at was the steelworks. From here the argument of the third movement is no longer about what Brazil sells but about who owns what produces it."
+    },
+    {
+      "ref": "petrobras-1953--the-base-reforms-rally-1964--precondition-of",
+      "text": "On 13 March 1964 João Goulart stood at the Central do Brasil station and read out the decrees of the base reforms: land over five hundred hectares beside federal roads expropriated, and the private refineries expropriated in favour of Petrobras. The sources call it the end of conciliation. Within twelve days there was a march against him, a revolt in the navy, and a conspiracy that had been waiting since 1961 deciding it could not wait longer."
+    },
+    {
+      "ref": "profit-remittance-law-1962",
+      "text": "Step back eighteen months to the sharpest economic fact in this story. Law 4,131 of 3 September 1962 capped what foreign companies could send home at ten per cent a year on the capital invested; profits reinvested in Brazil were exempt. It is the fiscal limb of the base reforms, and the sources say it changed the accounting of the large foreign companies outright. Hold it beside the step before and beside the one that follows: an economy organised around foreign buyers had just told them what they could take out of it."
+    },
+    {
+      "ref": "profit-remittance-law-1962--operation-brother-sam-1964--caused",
+      "text": "**Stop here.** This is the one disputed link on the walk, and it is disputed because the question the whole narrative is asked to answer is the question historians do not agree on. On 31 March 1964 the United States ordered out a task force built round the carrier Forrestal, with tankers loading in Aruba and munitions at air bases, to support the men overthrowing Goulart. Why? On one reading, because of what Brazil produced and who was to keep the proceeds: the remittance law, the expropriation of an ITT subsidiary, Brizola’s seizures, the credits withheld. On the other, because of the Cold War: Gordon feared a Brazil that might become \"the China of the 1960s\", and a review of the literature in 2018 found the American role real but the dynamics of the crisis fundamentally Brazilian. Read the argument under the link before taking the step. The atlas is not going to decide it for you, and the profit remittance law and the task force are both in the graph so that you can weigh them."
+    },
+    {
+      "ref": "1964-brazilian-coup-detat--operation-brother-sam-1964--reacted-to",
+      "text": "What is not in dispute is what happened. The coup succeeded in three days without the fleet: Castelo Branco told the ambassador that logistical support would not be needed, the order to disband came at 17:22 on 2 April, and the ships turned round. The operation had no physical effect in Brazil and was unknown until the declassifications of 1976 and 1977. A buyer that sends a carrier and does not have to use it has still told you what it was prepared to do."
+    },
+    {
+      "ref": "1964-brazilian-coup-detat--the-brazilian-miracle-1968-1973--enabled",
+      "text": "What followed was twenty-one years of dictatorship and, for five of them, growth close to ten per cent a year on low wages, rising exports and inflows of foreign capital. By 1980 industrial goods were 57 per cent of exports against 20 per cent in 1968. The remittance cap was not what survived. Elio Gaspari’s formulation is that the miracle and the years of lead happened at once, each denying the other."
+    },
+    {
+      "ref": "the-brazilian-miracle-1968-1973--the-brazilian-debt-crisis-1982--caused",
+      "text": "The growth was borrowed. After the oil shock of 1973 the military governments borrowed harder, and by the end of the decade Brazil held the largest foreign debt in the world, about ninety-two billion dollars. Then the lending stopped. This is the fourth time in the walk that a decision taken outside Brazil decided what happened inside it, and the first time the commodity involved was money."
+    },
+    {
+      "ref": "the-brazilian-debt-crisis-1982--1985-brazilian-presidential-election--precondition-of",
+      "text": "Inflation reached 239 per cent in 1983 and the Diretas Já movement grew alongside it. The direct election the country asked for was refused; the electoral college met on 15 January 1985 and, for the first time, was under no coercion. It elected Tancredo Neves, who died before taking office. The regime’s own machine ended the regime."
+    },
+    {
+      "ref": "1985-brazilian-presidential-election--the-1988-brazilian-constitution--caused",
+      "text": "The fourth movement opens with a text. Promulgated on 5 October 1988 after two years of drafting from scratch, the constitution replaced the autocratic charter of 1967, capped the twenty-one years, and set out an apparatus of rights that reads as an inventory of what those years had done. Keep hold of it: it is the instrument under which a president would be removed twenty-eight years later."
+    },
+    {
+      "ref": "petrobras-1953--the-commodity-boom-and-the-chinese-buyer--enabled",
+      "text": "And the buyer changes for the fourth time. The commodity supercycle of the early twenty-first century is also called the China boom, because what drove it was Chinese demand for raw materials and agricultural produce. Brazilian trade with China went from 6.7 billion dollars in 2003 to 36.7 billion in 2009, and in 2009 China became Brazil’s largest trading partner. It financed oil exploration and repaired railways; what it bought was iron ore, soya and oil. Five centuries after the first movement, the question the narrative asks is the same question and the answer has changed again."
+    },
+    {
+      "ref": "the-commodity-boom-and-the-chinese-buyer--the-impeachment-of-dilma-rousseff-2016--precondition-of",
+      "text": "The supercycle peaked in 2011. Dilma Rousseff began her second term in the recession of 2014 to 2016 with disapproval at 71 per cent, and was removed from office on 31 August 2016 under article 85 of the 1988 constitution. An economy organised around selling commodities is an economy whose politics turns when the price does — which is the claim this walk opened with, five centuries earlier, and it is being made about a decade most readers remember."
+    },
+    {
+      "ref": "petrobras-1953--operation-car-wash-2014--precondition-of",
+      "text": "The chain breaks once more and goes back to 1953. What Operation Car Wash found, from March 2014, was a scheme inside the state companies, and the largest sums by far were at Petrobras — the company the oil monopoly created, sixty-one years earlier, so that the proceeds of what Brazil produced would stay in Brazil. The atlas records the link and does not make it an indictment of the monopoly: what it says is that the institution built in the third movement is the one the fourth broke open."
+    },
+    {
+      "ref": "operation-car-wash-2014--the-2018-brazilian-general-election--precondition-of",
+      "text": "The inquiry then decided who could stand. Lula led the polling for both rounds of 2018; his conviction of 2017 barred him, the Superior Electoral Court rejected his candidacy six to one on 1 September, and the party replaced him with a candidate the electorate did not know. Jair Bolsonaro won the runoff."
+    },
+    {
+      "ref": "the-2018-brazilian-general-election--lula-returns-to-the-presidency-2023--precondition-of",
+      "text": "And the rematch. A series of Supreme Federal Court rulings questioning the legality of the trial and the impartiality of the judge freed Lula in 2019, annulled the cases by 2021 and restored his political rights; he beat Bolsonaro in 2022 by 50.90 to 49.10 per cent and was sworn in on 1 January 2023, a week before supporters of the loser stormed the Congress, the palace and the court. The walk ends with the government changed and the buyer not. That is the argument: over five centuries and four buyers, what Brazil produced has been the thing other people decided about, and the decisions were political every time. A second narrative would argue with the weight this one puts on the buyer against the weight it could have put on Brazilian politics making its own choices — and the disputed link in the middle of the walk is where that argument is sharpest."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "slave-trade-act-1807--slavery-abolition-act-1833--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slave Trade Act 1807\", revision 1373209565"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
+    }
+  ],
+  "from": "slave-trade-act-1807",
+  "to": "slavery-abolition-act-1833",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Act of 1807 outlawed the trade and not the institution, and many of its supporters expected the one to finish the other; it did not. What followed instead was a twenty-six-year apparatus — the Slave Trade Felony Act of 1811 making the overseas traffic a felony, the West Africa Squadron sent to suppress it, the Anti-Slavery Society founded in 1823, the Colonial Office rejecting colonial slave legislation as it arrived in London. 1833 is where that apparatus finally reached the thing itself. `precondition-of`: the first act made the second thinkable and did not make it happen.",
+  "dispute": null
+}

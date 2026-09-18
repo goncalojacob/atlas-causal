@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "constitution-1976--legislative-election-1976--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "from": "constitution-1976",
+  "to": "legislative-election-1976",
+  "type": "enabled",
+  "confidence": "consensus",
+  "explanation": "The Assembly of the Republic elected on 25 April 1976 is the body the constitution created three weeks earlier, elected under the rules it laid down. The constituent assembly's work is the reason there was an ordinary parliament to elect at all."
+}

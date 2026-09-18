@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "pedro-passos-coelho",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The birth or founding year, and the end where there is one, were written from memory."
+  },
+  "wikidata": "Q57615",
+  "wikipedia": {
+    "en": "Pedro Passos Coelho",
+    "pt": "Pedro Passos Coelho"
+  },
+  "sitelinks": {
+    "count": 48,
+    "on": "2026-09-03"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "imf-2016-portugal-ex-post-evaluation",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Pedro Passos Coelho",
+    "Pedro Manuel Mamede Passos Coelho"
+  ],
+  "summary": "Leader of the PSD from 2010 and prime minister from June 2011 to November 2015, at the head of the coalition that carried out the adjustment programme agreed with the European Commission, the ECB and the IMF.",
+  "when": {
+    "start": 1964,
+    "end": null
+  },
+  "where": null
+}

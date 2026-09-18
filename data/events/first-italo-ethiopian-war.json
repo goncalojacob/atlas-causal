@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "first-italo-ethiopian-war",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A: the neighbour is missing. The only route from Adwa to anything Portuguese runs through the partition of Africa, and this atlas holds none of it — no Berlin conference, no British ultimatum of 1890, no Mapa Cor-de-Rosa, no Italian invasion of 1935 that was fought to avenge this defeat. Every edge that could be written here would have to be written to something that is not a record, and an edge from an Italian defeat in Ethiopia to a Portuguese event would be an invention. The record is sound and the atlas around it is not there yet."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q989115",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "First Italo-Ethiopian War",
+    "pt": "Primeira Guerra Ítalo-Etíope"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q989115"
+    }
+  ],
+  "title": "First Italo-Ethiopian War",
+  "summary": "Wikidata item Q989115, imported by tools/import/wikidata.mjs. The item's own description reads \"1895-1896 war between the Ethiopian Empire and the Kingdom of Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1894,
+    "end": 1896,
+    "date": "1894-12-15",
+    "endDate": "1896-10-23"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "east-timor-independence-2002",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Independence of East Timor",
+  "summary": "East Timor became independent on 20 May 2002, twenty-seven years after Portugal's administration ended and Indonesia invaded. The path to it ran through the referendum of 30 August 1999, in which about seventy-eight per cent voted against autonomy within Indonesia, the violence by militias that followed the result, an Australian-led international force, and two and a half years of United Nations transitional administration. Portugal had never recognised the annexation and had kept the question at the United Nations throughout, which is why the case remained open long after it had ceased to be news. In the atlas it is the last of the territories to leave, and the one whose decolonisation took a quarter of a century longer than the rest.",
+  "when": {
+    "start": 2002,
+    "end": 2002,
+    "date": "2002-05-20",
+    "calendar": "gregorian"
+  },
+  "place": "dili",
+  "region": null,
+  "actors": [
+    {
+      "actor": "fretilin",
+      "role": "government"
+    },
+    {
+      "actor": "indonesia",
+      "role": "opposition",
+      "note": "withdrew"
+    },
+    {
+      "actor": "united-nations",
+      "role": "government",
+      "note": "administered"
+    }
+  ]
+}

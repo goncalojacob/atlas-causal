@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "jose-socrates",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted",
+      "date"
+    ],
+    "note": "The years were written from the assistant’s memory in M31-2 and have not been read in a source. The works cited are where a reviewer should check them, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "José Sócrates",
+    "José Sócrates Carvalho Pinto de Sousa"
+  ],
+  "summary": "José Sócrates (born 1957) is a politician who led the Socialist Party from 2004 and was prime minister from March 2005 to June 2011. He is in the atlas as the head of government of the two socialist governments of that period.",
+  "when": {
+    "start": 1957,
+    "end": null
+  },
+  "where": null
+}

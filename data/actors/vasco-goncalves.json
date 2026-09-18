@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "vasco-goncalves",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q712532",
+  "wikipedia": {
+    "en": "Vasco Gonçalves",
+    "pt": "Vasco Gonçalves"
+  },
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Vasco Gonçalves",
+    "Vasco dos Santos Gonçalves"
+  ],
+  "summary": "Vasco Gonçalves (1921–2005) was an officer of the Armed Forces Movement who became prime minister in July 1974 and led five of the six provisional governments, through the nationalisations, the agrarian reform and the confrontations of 1975. He was identified with the movement's left and with cooperation with the Communist Party, and his removal in September 1975, after the moderate officers' Document of the Nine and weeks of pressure, marked the turn away from the revolutionary course two months before 25 November. He is in the atlas as the head of government through the year in which the shape of the new state was fought over.",
+  "when": {
+    "start": 1921,
+    "end": 2005
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

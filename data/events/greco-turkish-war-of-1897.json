@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "greco-turkish-war-of-1897",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class B. The honest edge is to the First Balkan war — the defeat of 1897 is what produced the Greek army reform and, through the Goudi coup, the Venizelos who made the Balkan League — and the First Balkan war stands at two hops from the nearest Portuguese event, which leaves this one at three. The bar of this round is two. The record is good and the chain to it is one link too long; what would shorten it is a record of the Greek 1909, which the atlas does not hold."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q657055",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Greco-Turkish War (1897)",
+    "pt": "Guerra Greco-Turca (1897)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q657055"
+    }
+  ],
+  "title": "Greco-Turkish War of 1897",
+  "summary": "Wikidata item Q657055, imported by tools/import/wikidata.mjs. The item's own description reads \"1897 war between the Kingdom of Greece and the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1897,
+    "end": 1897,
+    "endDate": "1897-05-20"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

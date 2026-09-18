@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "legislative-election-2022",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+  },
+  "sources": [
+    {
+      "source": "cne-legislative-2022",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "title": "Legislative election of 2022",
+  "summary": "Called after the Bloco de Esquerda and the PCP joined the right in voting down the budget for 2022, the election of 30 January returned the PS with an absolute majority, the first any party had won since 2005. Chega became the third parliamentary group.",
+  "when": {
+    "start": 2022,
+    "end": 2022,
+    "date": "2022-01-30",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "antonio-costa",
+      "role": "head-of-government"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "government"
+    },
+    {
+      "actor": "bloco-de-esquerda",
+      "role": "opposition"
+    },
+    {
+      "actor": "pcp",
+      "role": "opposition"
+    },
+    {
+      "actor": "chega",
+      "role": "opposition"
+    },
+    {
+      "actor": "andre-ventura",
+      "role": "leader",
+      "note": "party leader"
+    }
+  ]
+}

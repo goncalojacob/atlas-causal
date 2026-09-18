@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "republic-proclaimed-1910--1911-portuguese-constituent-national-assembly-election--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "republic-proclaimed-1910",
+  "to": "1911-portuguese-constituent-national-assembly-election",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The Provisional Government installed on 5 October 1910 held power without any title anyone had voted for, and said from the first day that it would call a constituent assembly to give the new regime a constitution. The election of 28 May 1911 was that promise kept. It is the revolution’s own instrument, not an event that would have happened without it.",
+  "dispute": null
+}

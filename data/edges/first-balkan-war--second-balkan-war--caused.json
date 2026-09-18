@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "first-balkan-war--second-balkan-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Balkan War\", revision 1373171791"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Balkan War\", revision 1370735824"
+    }
+  ],
+  "from": "first-balkan-war",
+  "to": "second-balkan-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The second war was fought over the spoils of the first. The Balkan League had agreed how to divide Ottoman Europe before it went to war and could not hold to it once it had won: Serbia, denied the Adriatic coast by the powers, wanted compensation in the Macedonian districts promised to Bulgaria, Greece had taken Salonika, and Bulgaria attacked its allies on 29 June 1913 rather than accept arbitration. The claim is the ordinary one and it is narrow: the first war did not make the second inevitable, it made the quarrel that the second was about.",
+  "dispute": null
+}

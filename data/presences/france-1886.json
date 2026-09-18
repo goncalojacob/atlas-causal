@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "france-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 79"
+    }
+  ],
+  "actor": "france",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1886,
+    "end": 1919,
+    "date": "1886-01-01",
+    "endDate": "1919-06-27"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "79"
+  },
+  "capital": {
+    "lon": 2.333333,
+    "lat": 48.86666,
+    "precision": "city",
+    "label": "Paris"
+  },
+  "confidence": "consensus"
+}

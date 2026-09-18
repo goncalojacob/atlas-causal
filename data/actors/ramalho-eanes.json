@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ramalho-eanes",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q60114",
+  "wikipedia": {
+    "en": "António Ramalho Eanes",
+    "pt": "António Ramalho Eanes"
+  },
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Ramalho Eanes",
+    "António dos Santos Ramalho Eanes"
+  ],
+  "summary": "Ramalho Eanes (born 1935), an officer who had served in India, Angola, Mozambique and Guinea, commanded the operation that put down the events of 25 November 1975 and was elected President of the Republic in June 1976 with the support of the Socialists, the Social Democrats and the CDS. He was re-elected in 1980 and served until 1986, presiding over the return of the armed forces to their barracks, the constitutional revision of 1982 that abolished the Council of the Revolution he had chaired, and a series of unstable governments. He is in the atlas as the actor who closes the revolutionary period and then dismantles the institutions it had left behind.",
+  "when": {
+    "start": 1935,
+    "end": null
+  },
+  "where": {
+    "lon": -7.45,
+    "lat": 39.92,
+    "precision": "city",
+    "label": "Alcains"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "2022-portuguese-social-democratic-party-leadership-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted",
+      "id-mismatch"
+    ],
+    "note": "The import filed the ballot of 27 November 2021 under the id and title of a 2022 election; both cached leads and the Wikidata item date it to 2021, and M22 corrected the title. The id is immutable once written, so it stays wrong: a reader following the id will find a record whose title, date and summary all say 2021."
+  },
+  "wikidata": "Q108542274",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2021 Portuguese Social Democratic Party leadership election",
+    "pt": "Eleições diretas do Partido Social Democrata (Portugal) de 2021"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2021 Portuguese Social Democratic Party leadership election\", revision 1356491687"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições diretas do Partido Social Democrata (Portugal) de 2021\", revision 71085688"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "2021 Portuguese Social Democratic Party leadership election",
+  "summary": "The Social Democrats voted on 27 November 2021 for the leader who would take them into the early legislative election called for 30 January 2022. Rui Rio was returned against Paulo Rangel, of about 47,000 members registered to vote. It is in the atlas as the first link of the chain that ends in the government of April 2024: this ballot chose the candidate for prime minister at the election of January 2022, and the defeat there produced the leadership contest of May 2022 that Luís Montenegro won.",
+  "when": {
+    "start": 2021,
+    "end": 2021,
+    "date": "2021-11-27",
+    "calendar": "gregorian"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "psd",
+      "role": "leader",
+      "note": "chose its leader and candidate for prime minister"
+    }
+  ]
+}

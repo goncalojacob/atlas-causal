@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "poland-1921",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 97"
+    }
+  ],
+  "actor": "poland",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1921,
+    "end": 1945,
+    "date": "1921-03-18",
+    "endDate": "1945-05-07"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json"
+    ],
+    "key": "97"
+  },
+  "capital": {
+    "lon": 21,
+    "lat": 52.25,
+    "precision": "city",
+    "label": "Warsaw"
+  },
+  "confidence": "consensus"
+}

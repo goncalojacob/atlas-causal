@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "washington",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q61",
+  "wikipedia": {
+    "en": "Washington, D.C."
+  },
+  "sitelinks": {
+    "count": 251,
+    "on": "2026-09-17"
+  },
+  "sources": [],
+  "names": [
+    "Washington"
+  ],
+  "where": {
+    "lon": -77.04,
+    "lat": 38.9,
+    "precision": "city",
+    "label": "Washington"
+  },
+  "region": null,
+  "summary": null
+}

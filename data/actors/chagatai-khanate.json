@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "chagatai-khanate",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "basemaps"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "NAME \"Chagatai Khanate\""
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Chagatai Khanate"
+  ],
+  "summary": "A polity the Historical Basemaps dataset draws in the snapshots for 1400, 1492 and 1500. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The interval on this record is the span those snapshots cover, 1400 to 1529, and not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1400,
+    "end": 1529
+  },
+  "where": null
+}

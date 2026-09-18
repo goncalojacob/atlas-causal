@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "iraq-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q545449",
+  "sitelinks": {
+    "count": 95,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Iraq War",
+    "pt": "Guerra do Iraque"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iraq War\", revision 1373215695"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra do Iraque\", revision 72919918"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q545449"
+    }
+  ],
+  "title": "Iraq War",
+  "summary": "A coalition led by the United States and the United Kingdom invaded Iraq on 20 March 2003 without a Security Council authorisation, on the case that Baghdad held weapons of mass destruction and would not disarm. Saddam Hussein's government fell in three weeks; no such weapons were found; the occupation dissolved the army and the ruling party and produced an insurgency, a sectarian civil war and, eventually, the Islamic State. Portugal is in the story at its opening: the summit that set the ultimatum was held at Lajes in the Azores on 16 March 2003, with the Portuguese prime minister as host, which is the only time the islands' base has been the site of a decision rather than a facility.",
+  "when": {
+    "start": 2003,
+    "end": 2011,
+    "date": "2003-03-20",
+    "endDate": "2011-12-15"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "iraq",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    }
+  ]
+}

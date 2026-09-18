@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "guinea-war-begins-1963--guinea-bissau-declares-independence-1973--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "from": "guinea-war-begins-1963",
+  "to": "guinea-bissau-declares-independence-1973",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "Ten years of war left the PAIGC in control of much of the territory and able to proclaim a state that other governments recognised; the declaration was the political outcome of the military situation.",
+  "dispute": null
+}

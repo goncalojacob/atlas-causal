@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "portuguese-investment-bank",
+  "kind": "actor",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-08",
+    "reason": "Retracted in M41b: Banco BPI, founded in 1981 as Banco Português de Investimento and now owned by CaixaBank. The atlas holds no event of the Portuguese banking system between the nationalisations of 1975 and the resolution of BES in 2014 that BPI took any part in, and the leads say nothing that could be argued from. Same gap as BCP's."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-retracted"
+    ]
+  },
+  "wikidata": "Q537886",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-09-08"
+  },
+  "wikipedia": {
+    "en": "Banco BPI",
+    "pt": "Banco Português de Investimento"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q537886"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Portuguese Investment Bank",
+    "Banco Português de Investimento",
+    "Banco BPI"
+  ],
+  "summary": "Wikidata item Q537886, imported by tools/import/wikidata.mjs. The item's own description reads \"Portugal banking institution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1981,
+    "end": null
+  },
+  "where": null
+}

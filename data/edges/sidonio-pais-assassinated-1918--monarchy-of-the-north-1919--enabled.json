@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "sidonio-pais-assassinated-1918--monarchy-of-the-north-1919--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "sidonio-pais-assassinated-1918",
+  "to": "monarchy-of-the-north-1919",
+  "type": "enabled",
+  "confidence": "consensus",
+  "explanation": "The killing of Sidónio removed the one figure around whom the anti-Democratic right had gathered and left it without a route to power through the Republic. The monarchist rising followed within five weeks, into that vacuum and with officers who had served the New Republic."
+}

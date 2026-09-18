@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "iceland-under-denmark-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 211"
+    }
+  ],
+  "actor": "iceland-under-denmark",
+  "presenceType": "state",
+  "dependencyOf": "denmark",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1886,
+    "end": 1918,
+    "date": "1886-01-01",
+    "endDate": "1918-11-30"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "211"
+  },
+  "capital": {
+    "lon": -21.950001,
+    "lat": 64.15,
+    "precision": "city",
+    "label": "Reykjavik"
+  },
+  "confidence": "consensus"
+}

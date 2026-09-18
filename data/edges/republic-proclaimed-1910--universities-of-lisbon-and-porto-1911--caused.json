@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "republic-proclaimed-1910--universities-of-lisbon-and-porto-1911--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "republic-proclaimed-1910",
+  "to": "universities-of-lisbon-and-porto-1911",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The provisional government legislated by decree from October 1910 and this is one of its decrees, made in the first six months, alongside the divorce law, the separation of church and state and the reform of primary schooling. The claim is about the programme and its authorship, not about inevitability: republicanism in Portugal had been an educational movement as much as a political one, its strength was in the professional schools of Lisbon and Porto that the decree turned into universities, and the men who signed it had taught in them. A monarchy that had survived 1910 would very likely have founded them too, later and differently; what October 1910 decided was that it was done at once and by these people.",
+  "dispute": null
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "bhutan-before-1948-1700",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [
+    "bhutan-before-1886-1700"
+  ],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "basemaps"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "world_1700.geojson, \"Bhutan\""
+    }
+  ],
+  "actor": "bhutan-before-1948",
+  "presenceType": "polity",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1700,
+    "end": 1714,
+    "date": "1700-01-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1700-1714.json"
+    ],
+    "key": "bhutan-before-1948"
+  },
+  "capital": null,
+  "confidence": "probable"
+}

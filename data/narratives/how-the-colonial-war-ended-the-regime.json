@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "how-the-colonial-war-ended-the-regime",
+  "kind": "narrative",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "title": "How the colonial war ended the regime",
+  "summary": "A walk from the first shots in Angola in 1961 to the end of the revolutionary period in November 1975, following one claim: that the Estado Novo was brought down by the war it refused to end, and that the war then went on setting the terms of what replaced it. It is one account among the possible ones — the weight it puts on the army against the weight others put on the economy, on the succession to Salazar or on the opposition inside Portugal is exactly what a second narrative would argue with.",
+  "window": {
+    "from": 1960,
+    "to": 1976
+  },
+  "steps": [
+    {
+      "ref": "angola-war-begins-1961",
+      "text": "The walk starts where the war did. The attacks on the prisons in Luanda in February 1961 and the risings in the north the following month opened a conflict that Lisbon answered by sending an army rather than by negotiating. Everything that follows here rests on that choice: the regime tied its own survival to holding three territories at once, and this narrative treats that as the decision it never recovered from."
+    },
+    {
+      "ref": "angola-war-begins-1961--guinea-war-begins-1963--inspired",
+      "text": "Two years later the PAIGC opened the second front, at Tite. The link the atlas records is 'inspired' and not 'caused', and the distinction matters: the movement had prepared its own struggle, and what Angola supplied was the timing, the demonstration that Portugal would not negotiate, and the international attention that made an armed campaign worth beginning. Guinea is where the argument of this narrative is sharpest, because it is the front the army came closest to losing outright."
+    },
+    {
+      "ref": "angola-war-begins-1961--mozambique-war-begins-1964--inspired",
+      "text": "The step before this one ended in Guinea, so the chain breaks here and starts again from Angola: the third front is a second consequence of the first, not a continuation of the second. FRELIMO moved to armed struggle at Chai in September 1964. From then on Portugal was fighting three wars, on three fronts, thousands of kilometres apart, with a conscript army from a country of nine million."
+    },
+    {
+      "ref": "mozambique-war-begins-1964--wiriyamu-massacre-1972--precondition-of",
+      "text": "Eight years of counter-insurgency in the Tete district are the conditions in which the killings at Wiriyamu happened in December 1972. Both the death toll and the chain of command are disputed and this narrative does not settle them. What it does claim is that the publication in London in July 1973, days before Caetano's state visit, cost the regime the last of the international standing it had left — which is a claim about reputation, not about the killings themselves."
+    },
+    {
+      "ref": "guinea-war-begins-1963--cabral-assassinated-1973--precondition-of",
+      "text": "Back to Guinea, and the chain starts again. Ten years of war had made Amílcar Cabral the most exposed figure of the movements and the PAIGC an organisation with its own quarrels over command; he was shot outside his house in Conakry in January 1973 by members of his own movement. Portuguese involvement through the PIDE has been alleged since the day it happened and is argued over — the atlas records the allegation and does not decide it."
+    },
+    {
+      "ref": "cabral-assassinated-1973--guinea-bissau-declares-independence-1973--caused",
+      "text": "Eight months later the PAIGC proclaimed the Republic of Guinea-Bissau in the liberated zone of Boé, and dozens of states recognised it within weeks. This is the one disputed link on the walk, and the dispute is worth stopping at: on one reading the declaration was the movement's answer to the killing, and on another it was already planned and the killing only fixed its date. Read the argument under the link before taking the step."
+    },
+    {
+      "ref": "guinea-bissau-declares-independence-1973--portugal-e-o-futuro-1974--caused",
+      "text": "Spínola had governed and commanded in Guinea from 1968 to 1973 and had concluded that the war could not be won by military means. The declaration and the recognitions that followed it confirmed in public what he had concluded in private, and in February 1974 he published it. A general saying in print that the war was unwinnable is the moment the argument moved from the barracks into the country."
+    },
+    {
+      "ref": "portugal-e-o-futuro-1974--carnation-revolution-1974--enabled",
+      "text": "Two months later the Armed Forces Movement overthrew the Estado Novo. The atlas marks this link 'enabled' rather than 'caused', and the reason is that the captains' conspiracy had its own causes — the decree on promotions, the exhaustion of the officer corps, the years of war. What the book supplied was a political horizon and a senior general willing to stand at the front of it."
+    },
+    {
+      "ref": "carnation-revolution-1974--alvor-agreement-1975--caused",
+      "text": "Decolonisation by negotiation was the revolution's own programme, so the first consequence to follow is Alvor: Portugal, the MPLA, the FNLA and UNITA agreeing in January 1975 on a transitional government and on independence for Angola in November. The Portuguese side at that table was the government the revolution had produced, and there is no version of the agreement without the change of regime in Lisbon."
+    },
+    {
+      "ref": "alvor-agreement-1975--angola-independence-1975--enabled",
+      "text": "The agreement fixed the date and the terms; the transitional government collapsed and the three movements went to war with one another before the date arrived. Portugal left on 11 November 1975 without transferring power to any of them. That the settlement failed does not undo what it settled, and this is where the narrative's claim cuts both ways: the war ended the regime, and the regime's end did not end the war."
+    },
+    {
+      "ref": "carnation-revolution-1974--constituent-assembly-election-1975--caused",
+      "text": "The chain breaks again, deliberately: this step goes back to 25 April 1974 and follows its other consequence, inside Portugal. Free elections to a Constituent Assembly within a year were a commitment of the Armed Forces Movement programme, and the election of 25 April 1975 — the first with universal suffrage — kept it. The result gave the Socialists and the Popular Democrats a clear majority over the Communists and their allies."
+    },
+    {
+      "ref": "constituent-assembly-election-1975--25-november-1975--enabled",
+      "text": "The walk ends on 25 November 1975, when a radical military rising failed and its suppression closed the revolutionary period. The election is recorded as having enabled that outcome rather than caused it: it gave the officers who put the rising down a claim to a majority that the revolutionary left could not make. Fourteen years after Luanda, the war had removed the regime, decided how the empire ended, and set the boundaries of the state that followed — which is the whole of what this narrative argues."
+    }
+  ]
+}

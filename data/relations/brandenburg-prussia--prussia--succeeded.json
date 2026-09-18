@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "brandenburg-prussia--prussia--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m55"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-germany",
+      "interval-cited"
+    ],
+    "note": "M55: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag."
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q157367, P576 1701"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q27306, P571 1701-01-18"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q157367, P1366 Q27306"
+    }
+  ],
+  "from": "brandenburg-prussia",
+  "to": "prussia",
+  "type": "succeeded",
+  "when": {
+    "start": 1701,
+    "end": 1701,
+    "date": "1701-01-18"
+  },
+  "note": "No gap: Q157367 gives 1701 for the dissolution and Q27306 gives 1701-01-18 for the inception, and the same item says Brandenburg-Prussia was replaced by the Kingdom of Prussia (P1366). The Basemaps period that spanned the date is cut at it, outline unchanged."
+}

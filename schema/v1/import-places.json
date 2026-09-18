@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/import-places.json",
+  "title": "Import places",
+  "description": "Which Natural Earth city a place record of this atlas is. It is not a record: nothing under data/imports/ is a node of the graph, it carries no provenance envelope, and the browser never reads it — deploy.yml keeps data/imports/ out of the artifact, so the base map's import copies the place id onto the city itself and the site fetches this file never (M36 review, F9). It exists so that saying \"this dot is Lisbon\" is one entry in one JSON file through the ordinary pull-request path, reviewable by somebody who knows the place, and so that a match is data rather than a rule in code that guessed. tools/import/naturalearth.mjs --places writes the entries it can prove and lists the rest in docs/naturalearth-places.md; an entry a person adds there by hand is kept on the next run.",
+  "type": "object",
+  "required": ["schema", "kind", "source", "entries"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": 1 },
+    "kind": {
+      "description": "data/imports/ holds more than one kind of file and tools/lib/read.mjs dispatches on this field. Required here, unlike on an import map, because a file that does not say is read as a map — which is what the directory held before there was anything else.",
+      "const": "import-places"
+    },
+    "source": {
+      "description": "Which dataset the keys are ids of. Not a source record: Natural Earth is public domain, asks to be named nowhere, and this import writes no record of any kind; data/geo/LICENSE and src/licensing.js are where it is credited.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 120
+    },
+    "entries": {
+      "description": "Keyed by Natural Earth's own NE_ID, as a decimal string, because that is what the import has in its hand when it reads a city and it is stable across a rename. That a key is digits is checked by tools/validate.mjs, the schema subset having no propertyNames. A city absent from here is drawn from Natural Earth alone; a city named here carries `place` into data/geo/base/cities/, which is what M38 labels from the record by.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["place"],
+        "additionalProperties": false,
+        "properties": {
+          "place": {
+            "description": "The place record this city is. It must exist: unlike an import map's actor, nothing here creates one, and a place the atlas does not hold is a label M38 could never draw.",
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "maxLength": 120
+          },
+          "note": {
+            "description": "Why this entry is what it is, for whoever reads the file next. Written by a person resolving one of the candidates in docs/naturalearth-places.md; the tool writes none, because how it matched is in that document.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        }
+      }
+    }
+  }
+}

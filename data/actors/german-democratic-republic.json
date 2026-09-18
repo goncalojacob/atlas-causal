@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "german-democratic-republic",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 265"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "German Democratic Republic"
+  ],
+  "summary": "Entity 265 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1945 to 1990. Its last capital in the dataset is East Berlin. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1945,
+    "end": 1990
+  },
+  "where": {
+    "lon": 13.402665056,
+    "lat": 52.517831262,
+    "precision": "city",
+    "label": "East Berlin"
+  }
+}

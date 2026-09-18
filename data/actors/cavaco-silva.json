@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cavaco-silva",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q57398",
+  "wikipedia": {
+    "en": "Aníbal Cavaco Silva",
+    "pt": "Aníbal Cavaco Silva"
+  },
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Aníbal Cavaco Silva",
+    "Cavaco Silva"
+  ],
+  "summary": "Aníbal Cavaco Silva (born 1939), an economist, led the Social Democratic Party from 1985 and was prime minister from that year until 1995, with absolute majorities from 1987 — the first stable single-party government of the Third Republic. His governments coincided with accession to the European Community, the largest inflow of structural funds the country had received, the constitutional revision of 1989 that allowed the nationalised sector to be sold, and the privatisations that followed. He was President of the Republic from 2006 to 2016, and so held that office through the crisis of 2011 and the adjustment programme. He is in the atlas as the actor who connects accession to Europe with the economic settlement that the arguments about 2011 are conducted over.",
+  "when": {
+    "start": 1939,
+    "end": null
+  },
+  "where": {
+    "lon": -8.14,
+    "lat": 37.13,
+    "precision": "city",
+    "label": "Boliqueime"
+  }
+}

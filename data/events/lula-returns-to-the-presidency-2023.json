@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "lula-returns-to-the-presidency-2023",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2022 Brazilian general election\", revision 1375252300"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazil–China relations\", revision 1364321291"
+    }
+  ],
+  "title": "Lula returns to the presidency, 2023",
+  "summary": "A series of rulings by the Supreme Federal Court questioning the legality of his trial and the impartiality of the judge released Lula from prison in 2019, annulled Moro’s cases against him and restored his political rights by 2021. He stood again in 2022 and beat Bolsonaro in the second round by 50.90 per cent to 49.10, the first person elected president of Brazil three times and, at 77, the oldest to take the post. He was sworn in on 1 January 2023; a week later supporters of the defeated president stormed the Congress, the presidential palace and the Supreme Court and failed to overthrow the new government. He returned to a country whose largest trading partner had been China since 2009 — which is where this walk ends and the question it began with is asked again.",
+  "when": {
+    "start": 2023,
+    "end": 2023,
+    "date": "2023-01-01"
+  },
+  "place": "brasilia",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the state that changed government again, with the buyer unchanged since 2009"
+    }
+  ],
+  "names": [
+    "Posse de Luiz Inácio Lula da Silva em 2023"
+  ],
+  "region": null
+}

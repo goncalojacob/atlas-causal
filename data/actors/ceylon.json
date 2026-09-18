@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ceylon",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": "2026-09-18",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m59-joined"
+    ],
+    "note": "M59: joined with sri-lanka-ceylon-under-united-kingdom, the same polity — the parenthetical is the same polity's other name, as \"Madagascar (Malagasy)\" was in M51. The outlines either side of the 1885/1886 seam share 97.17% of the smaller and 87.90% of the union (docs/m59-singletons.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1650) and the 1886 record's own end (1948); neither was authored here."
+  },
+  "origin": {
+    "tool": "basemaps"
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "NAME \"Ceylon\""
+    },
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 780"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Ceylon"
+  ],
+  "summary": "A polity the Historical Basemaps dataset draws in the snapshots for 1650, 1700, 1715, 1815, 1878 and 1880. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The span those snapshots cover is 1650 to 1885, and that is not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1650,
+    "end": 1948
+  },
+  "where": null
+}

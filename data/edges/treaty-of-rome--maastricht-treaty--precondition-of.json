@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "treaty-of-rome--maastricht-treaty--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Rome\", revision 1311520265"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Maastricht Treaty\", revision 1360900516"
+    }
+  ],
+  "from": "treaty-of-rome",
+  "to": "maastricht-treaty",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Maastricht did not found a new organisation beside the old one: it converted the Community established at Rome, keeping the same members, the same Commission, Council and Court, and the whole accumulated body of law. That is why monetary union arrived attached to an existing legal order with an existing court to enforce it, rather than as a treaty between governments that any of them could reinterpret — and why the Portuguese argument of the 1990s was about how much further to go rather than about whether to be in it. The claim is about the institutional continuity, which is what the treaty text and its own name, the Treaty on European Union, make explicit.",
+  "dispute": null
+}

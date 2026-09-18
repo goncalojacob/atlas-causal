@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "brisa-auto-estradas-de-portugal",
+  "kind": "actor",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-08",
+    "reason": "Retracted in M41b: the motorway concessionaire founded in 1972 by Jorge de Brito, which built and runs most of the Portuguese network. The motorway programme of the 1980s and 1990s is a real consequence of accession to the Communities and would make a good record; the atlas does not hold it, and without it the company has nothing to be joined to."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-retracted"
+    ]
+  },
+  "wikidata": "Q587719",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-08"
+  },
+  "wikipedia": {
+    "en": "Brisa – Auto-estradas de Portugal",
+    "pt": "Brisa (empresa)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q587719"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Brisa – Auto-estradas de Portugal",
+    "Brisa",
+    "Brisa (empresa)"
+  ],
+  "summary": "Wikidata item Q587719, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese company\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1972,
+    "end": null
+  },
+  "where": null
+}

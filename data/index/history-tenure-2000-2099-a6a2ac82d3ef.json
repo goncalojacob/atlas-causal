@@ -1,0 +1,116 @@
+{
+  "from": 2000,
+  "kind": "tenure",
+  "records": {
+    "andre-ventura-chega-2019": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "antonio-costa-partido-socialista-2014": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "antonio-costa-prime-minister-2015": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "cavaco-silva-president-2006": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "durao-barroso-prime-minister-2002": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "jose-socrates-prime-minister-2005": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "luis-montenegro-prime-minister-2024": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "luis-montenegro-psd-2022": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "marcelo-rebelo-de-sousa-president-2016": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "pedro-passos-coelho-prime-minister-2011": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "pedro-passos-coelho-psd-2010": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "santana-lopes-prime-minister-2004": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 2099
+}

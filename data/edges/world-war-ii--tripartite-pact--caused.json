@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--tripartite-pact--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tripartite Pact\", revision 1372727349"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "tripartite-pact",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The pact is made of the first year of the war. The fall of France in June 1940 left the French and Dutch possessions in Asia without a defender and made the southern advance thinkable; Germany wanted Japan to hold American attention in the Pacific while Britain was dealt with; Italy wanted to be in whatever was signed. None of the three alignments existed in 1938 and all of them are consequences of the campaigns of 1939 and 1940. The claim is about the timing and the terms, not about the ideological affinity, which was older.",
+  "dispute": null
+}

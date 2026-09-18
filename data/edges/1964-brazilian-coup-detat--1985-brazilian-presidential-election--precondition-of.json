@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "1964-brazilian-coup-detat--1985-brazilian-presidential-election--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1985 Brazilian presidential election\", revision 1344763908"
+    }
+  ],
+  "from": "1964-brazilian-coup-detat",
+  "to": "1985-brazilian-presidential-election",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The college that ended the dictatorship was the dictatorship’s own machine. It had been built under the constitution of 1967–69 so that the candidate chosen by the High Command of the Armed Forces would always be elected; in 1985, with the negotiated transition already running, its members were placed under no coercion and chose whom they liked. The last indirect election and the last under military rule are the same election.",
+  "dispute": null
+}

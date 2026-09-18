@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-cuban-sugar-boom--spanish-american-war-1898--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    }
+  ],
+  "from": "the-cuban-sugar-boom",
+  "to": "spanish-american-war-1898",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The weakest type, and the sources are the reason it is not a stronger one. American money had been buying into the devalued Cuban sugar market since the Ten Years’ War, and by 1894 the United States held the economic power over Cuba while Spain held the political authority — that is the asymmetry the war resolved. But the sugar investors did not want the war. The cited account has them looking to Spain to restore order, and the shipping firms pressing Washington to end the revolt: stability, not war, was what both wanted. So this edge does not say the sugar interest procured the intervention. It says the intervention happened in a country the United States already owned the economy of, and that this is why intervening was thinkable.",
+  "dispute": null
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "vietnam-annam-cochin-china-tonkin-1893-b",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 604"
+    }
+  ],
+  "actor": "vietnam-annam-cochin-china-tonkin",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1893,
+    "end": 1954,
+    "date": "1893-10-03",
+    "endDate": "1954-04-30"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "604"
+  },
+  "capital": {
+    "lon": 107.580038,
+    "lat": 16.46999,
+    "precision": "city",
+    "label": "Hue"
+  },
+  "confidence": "consensus"
+}

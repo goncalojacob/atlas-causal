@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "charter-of-the-united-nations--genocide-convention--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Charter of the United Nations\", revision 1365430628"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Genocide Convention\", revision 1371861623"
+    }
+  ],
+  "from": "charter-of-the-united-nations",
+  "to": "genocide-convention",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Charter is the machinery the convention was made in and the authority it was made under: the General Assembly resolved in December 1946 that genocide was a crime under international law, the Economic and Social Council had the text drafted, and the Assembly adopted it two years later. The claim is narrow on purpose, because this atlas will hold a good many United Nations instruments and the fact that the United Nations convened the conference is not by itself an argument about any of them. What makes it one here is that the convention is the first treaty the Charter’s human-rights clauses were turned into, and the precedent for everything of the kind that followed.",
+  "dispute": null
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "cambodia-kampuchea-1953",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 599"
+    }
+  ],
+  "actor": "cambodia-kampuchea",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1953,
+    "end": null,
+    "date": "1953-11-09"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "599"
+  },
+  "capital": {
+    "lon": 104.916702,
+    "lat": 11.55,
+    "precision": "city",
+    "label": "Phnom Penh"
+  },
+  "confidence": "consensus"
+}

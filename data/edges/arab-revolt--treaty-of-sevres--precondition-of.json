@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "arab-revolt--treaty-of-sevres--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Arab Revolt\", revision 1370428832"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Sèvres\", revision 1369307123"
+    }
+  ],
+  "from": "arab-revolt",
+  "to": "treaty-of-sevres",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Sèvres is where the Ottoman defeat the revolt helped to bring about was written down, and where what had been promised during it was disposed of. The Arab provinces the revolt had fought across were separated from the Ottoman state and put under mandate rather than gathered into the kingdom the McMahon letters had been read as offering. The claim is deliberately narrow: the revolt is one of the things that put those provinces on the table at Sèvres and not the only one, and the Allied war aims for the Ottoman partition are older than the rising and were not made by it.",
+  "dispute": null
+}

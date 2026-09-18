@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "guinean-constitutional-referendum-1958--cabral-assassinated-1973--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "from": "guinean-constitutional-referendum-1958",
+  "to": "cabral-assassinated-1973",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "This is narrower than the edge the atlas already carries into Cabral’s death from the war, and it is about exile rather than about geography. Cabral was shot in Conakry in January 1973 by men of his own movement, in a plot the Portuguese political police had worked at from outside. Those are the conditions of a liberation leadership that had spent a decade quartered in somebody else’s capital, with its ranks, its rivalries and its own security all maintained abroad and none of them answerable to a population it governed. The sanctuary that made the war possible is the same arrangement that left the movement open at its head.",
+  "dispute": null
+}

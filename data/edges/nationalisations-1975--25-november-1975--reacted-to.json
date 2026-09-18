@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "nationalisations-1975--25-november-1975--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "from": "nationalisations-1975",
+  "to": "25-november-1975",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The nationalisations and the agrarian occupations of 1975 radicalised the revolutionary process; the moderate military and the parties that acted on 25 November were reacting against that course.",
+  "dispute": null
+}

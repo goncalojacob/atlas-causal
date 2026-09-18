@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "1995-portuguese-legislative-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q1511117",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1995 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1995"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1995 Portuguese legislative election\", revision 1372483449"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1995\", revision 72180486"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "1995 Portuguese legislative election",
+  "summary": "The election of 1 October 1995 ended ten years of Social Democrat government and brought the Socialists to office under António Guterres, four seats short of a majority. The government it made is the one that took Portugal into the first wave of the single currency in 1999, opened Expo 98 on the riverfront its predecessor had committed to, and put two questions to referendum in 1998 — the decriminalisation of abortion in June and the creation of administrative regions in November — losing both. It is in the atlas as the government of the convergence years, and as the point at which the referendum, written into the constitution in 1989, was first used.",
+  "when": {
+    "start": 1995,
+    "end": 1995,
+    "date": "1995-10-01"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "partido-socialista",
+      "role": "head-of-government",
+      "note": "won and formed a minority government"
+    },
+    {
+      "actor": "psd",
+      "role": "opposition",
+      "note": "lost office after ten years"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "republic-proclaimed-1910",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "title": "Proclamation of the Republic",
+  "summary": "A rising by republican civilians and units of the army and navy began in Lisbon on the night of 3 October 1910 and the Republic was proclaimed from the balcony of the city hall on the morning of the 5th, after the warships in the Tagus had shelled the royal palace. Manuel II left the country for exile in England, and a provisional government under Teófilo Braga took power. The revolution was made in Lisbon and largely accepted elsewhere, which is one reason the republic then struggled to govern a country that had not made it. It is in the atlas as the beginning of the sequence — republic, dictatorship, Estado Novo, revolution — that this part of the map follows.",
+  "when": {
+    "start": 1910,
+    "end": 1910,
+    "date": "1910-10-05",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "manuel-ii",
+      "role": "deposed"
+    },
+    {
+      "actor": "first-portuguese-republic",
+      "role": "founder"
+    }
+  ]
+}

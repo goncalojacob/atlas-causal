@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "bolivia",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 145"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Bolivia"
+  ],
+  "summary": "Entity 145 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 4 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is La Paz. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1886,
+    "end": null
+  },
+  "where": {
+    "lon": -68.150002,
+    "lat": -16.5,
+    "precision": "city",
+    "label": "La Paz"
+  }
+}

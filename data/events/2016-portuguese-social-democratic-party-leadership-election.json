@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "2016-portuguese-social-democratic-party-leadership-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the Social Democrat leadership election of 5 March 2016, months after the party lost office. The atlas keeps a party's internal election where something in the atlas follows from it — the Socialist ballots of 2011 and 2014 are kept because the chain they start ends at the government of November 2015. This one ends nowhere the atlas holds. Revisit if the party's course under this leader is written."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q110079930",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2016 Portuguese Social Democratic Party leadership election",
+    "pt": "Eleições diretas do Partido Social Democrata (Portugal) de 2016"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q110079930"
+    }
+  ],
+  "title": "2016 Portuguese Social Democratic Party leadership election",
+  "summary": "Wikidata item Q110079930, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2016,
+    "end": 2016,
+    "date": "2016-03-05"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

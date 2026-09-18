@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "germany-prussia-1920",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 86"
+    }
+  ],
+  "actor": "weimar-republic",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1920,
+    "end": 1933,
+    "date": "1920-02-10",
+    "endDate": "1933-03-15"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json"
+    ],
+    "key": "86"
+  },
+  "capital": {
+    "lon": 13.4,
+    "lat": 52.51667,
+    "precision": "city",
+    "label": "Berlin"
+  },
+  "confidence": "consensus",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-split"
+    ],
+    "note": "M55: CShapes draws one period here, 1920-02-10 to 1938-09-29, and it spans both dates Wikidata gives for the change of state — Q41304’s P576 of 1933, to the year, and Q7318’s P571 of 1933-03-15, to the day. It is cut at the later one, so that no period begins before its actor does; this half is the Weimar Republic’s and `germany-prussia-1933` is the Nazi state’s. The outline is not redrawn."
+  }
+}

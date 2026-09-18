@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "strangford-treaty-1810--aberdeen-act-1845--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Strangford Treaty\", revision 1329682227"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Aberdeen Act\", revision 1371318387"
+    }
+  ],
+  "from": "strangford-treaty-1810",
+  "to": "aberdeen-act-1845",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Aberdeen Act did not invent a British claim over the Brazilian traffic; it enforced one that had been conceded thirty-five years earlier. The 1810 treaty is where Portugal first agreed to limit the importation of Africans and to consider abolishing the trade, and the Anglo-Brazilian convention of 1826 — the instrument the 1845 Act names in its own long title as the thing it amends — is that concession inherited by the new empire. `precondition-of`: without the promise there is nothing for the Act to be the enforcement of.",
+  "dispute": null
+}

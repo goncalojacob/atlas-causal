@@ -1,0 +1,25 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "featurecla": "mountain",
+    "name": "Fixture Peak",
+    "scalerank": 6,
+    "min_zoom": 6,
+    "elevation": 1934,
+    "label": "Fixture Peak",
+    "wikidataid": "Q1000000902",
+    "ne_id": 1159100007
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -28.5,
+     27.5
+    ]
+   }
+  }
+ ]
+}

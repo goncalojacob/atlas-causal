@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "carnation-revolution-1974--angola-independence-1975--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "from": "carnation-revolution-1974",
+  "to": "angola-independence-1975",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "Decolonisation was the revolution's first purpose; the Alvor agreement and the withdrawal of November 1975 followed from the decision, taken in Lisbon in 1974, to end the war by granting independence.",
+  "dispute": null
+}

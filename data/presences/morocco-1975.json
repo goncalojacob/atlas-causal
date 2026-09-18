@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "morocco-1975",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 442"
+    }
+  ],
+  "actor": "morocco",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1975,
+    "end": 1979,
+    "date": "1975-11-14",
+    "endDate": "1979-08-04"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "442"
+  },
+  "capital": {
+    "lon": -6.83,
+    "lat": 34.02,
+    "precision": "city",
+    "label": "Rabat"
+  },
+  "confidence": "consensus"
+}

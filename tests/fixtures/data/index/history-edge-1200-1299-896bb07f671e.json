@@ -1,0 +1,104 @@
+{
+  "from": 1200,
+  "kind": "edge",
+  "records": {
+    "fixture-event-a--fixture-event-a2--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-a--fixture-event-b--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-b--fixture-event-d--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-c--fixture-event-t--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-d--fixture-event-t--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-e--fixture-event-c--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-e--fixture-event-t--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "retraction"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-f--fixture-event-t--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-g--fixture-event-t--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-o--fixture-event-e--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1299
+}

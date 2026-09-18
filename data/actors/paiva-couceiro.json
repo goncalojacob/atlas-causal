@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "paiva-couceiro",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "STATUS.md names these as the least certain years of the twenty persons in the dataset."
+  },
+  "wikidata": "Q1384253",
+  "wikipedia": {
+    "en": "Henrique Mitchell de Paiva Cabral Couceiro",
+    "pt": "Paiva Couceiro"
+  },
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Henrique Mitchell de Paiva Couceiro",
+    "Paiva Couceiro"
+  ],
+  "summary": "Colonial officer and monarchist who led armed incursions against the Republic from Galicia in 1911 and 1912 and headed the short-lived monarchist government proclaimed in Porto in January 1919.",
+  "when": {
+    "start": 1861,
+    "end": 1944
+  },
+  "where": null
+}

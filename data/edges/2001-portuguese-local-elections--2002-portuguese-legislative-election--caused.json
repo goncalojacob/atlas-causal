@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "2001-portuguese-local-elections--2002-portuguese-legislative-election--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "2001-portuguese-local-elections",
+  "to": "2002-portuguese-legislative-election",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Nothing obliged Guterres to resign: he had a legislature running to 2003 and the local result changed no seat in the Assembly. He resigned on the night, in his own phrase to avoid the country falling into a political swamp, and the president dissolved the Assembly in December for an election in March. The election of 2002 exists because of a ballot that was not about it, and the atlas keeps the edge as `caused` because the chain has no other link in it: local defeat, resignation, dissolution, early election, all inside three months.",
+  "dispute": null
+}

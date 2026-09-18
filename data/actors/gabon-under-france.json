@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "gabon-under-france",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-16",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m51-joined"
+    ],
+    "note": "M51: joined with gabon-before-1886, the same polity. The outlines either side of the 1885/1886 seam share 99.08% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1960); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence."
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 481"
+    },
+    {
+      "source": "historical-basemaps",
+      "locator": "NAME \"Gabon\""
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Gabon under France"
+  ],
+  "summary": "Entity 481 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 5 periods of territorial validity, from 1886 to 1960. The source calls it \"Gabon\"; the names on this record are the ones data/imports/cshapes-actors.json gives it. Its last capital in the dataset is Libreville. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods before the first cut. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1878,
+    "end": 1960
+  },
+  "where": {
+    "lon": 9.45,
+    "lat": 0.38333,
+    "precision": "city",
+    "label": "Libreville"
+  }
+}

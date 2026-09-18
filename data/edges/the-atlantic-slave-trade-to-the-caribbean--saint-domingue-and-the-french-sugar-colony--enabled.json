@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-atlantic-slave-trade-to-the-caribbean--saint-domingue-and-the-french-sugar-colony--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Saint-Domingue\", revision 1375182685"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    }
+  ],
+  "from": "the-atlantic-slave-trade-to-the-caribbean",
+  "to": "saint-domingue-and-the-french-sugar-colony",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "France got the western third of Hispaniola recognised at Ryswick in 1697 and made it the richest sugar colony in the Caribbean, which it could do because the Atlantic traffic was by then a going concern that a new colony could buy into rather than build. `enabled` and not `caused`: the traffic did not make France take Saint-Domingue, and the French had been on Tortuga and the western coast for decades before. What it made possible was the speed and the scale.",
+  "dispute": null
+}

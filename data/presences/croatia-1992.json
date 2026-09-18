@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "croatia-1992",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 134"
+    }
+  ],
+  "actor": "croatia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1992,
+    "end": null,
+    "date": "1992-04-27"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "134"
+  },
+  "capital": {
+    "lon": 15.981919,
+    "lat": 45.81501,
+    "precision": "city",
+    "label": "Zagreb"
+  },
+  "confidence": "consensus"
+}

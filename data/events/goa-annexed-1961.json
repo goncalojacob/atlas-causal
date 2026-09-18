@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "goa-annexed-1961",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "India annexes Goa, Daman and Diu",
+  "summary": "Indian forces entered Goa, Daman and Diu on 18 December 1961 and the Portuguese governor-general surrendered the following day, ending four and a half centuries of Portuguese rule in India. Salazar had ordered a defence to the last man and refused to negotiate; the garrison was small, isolated and could not be reinforced. India presented the action as the completion of its own decolonisation and much of the world accepted that; Portugal called it an invasion, kept the territories on its books until 1974, and drew from the episode the lesson that its position in Africa would have to be held by force. In the atlas it stands between the outbreak of the war in Angola and the wars that followed, and it is where the regime's isolation at the United Nations becomes plain.",
+  "when": {
+    "start": 1961,
+    "end": 1961,
+    "date": "1961-12-18",
+    "calendar": "gregorian"
+  },
+  "place": "panaji",
+  "region": null,
+  "actors": [
+    {
+      "actor": "republic-of-india",
+      "role": "invader",
+      "note": "annexed it"
+    },
+    {
+      "actor": "jawaharlal-nehru",
+      "role": "leader"
+    },
+    {
+      "actor": "estado-novo",
+      "role": "government",
+      "note": "dispossessed"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A viewport of a given size — Atlas causal</title>
+  <link rel="stylesheet" href="../../src/style.css">
+  <style>
+    /* Only this page's own arrangement; every colour is a token of
+       src/style.css and nothing here is a new value. */
+    body { margin: 0; background: var(--ground); display: flex; justify-content: center; }
+    iframe { border: 0; display: block; background: var(--paper); }
+  </style>
+</head>
+<body>
+  <iframe id="viewport" title="The atlas at a given viewport"></iframe>
+  <script type="module">
+    // Why this page exists: tools/screens.mjs drives headless Chromium from
+    // its own command line and nothing else, and headless Chromium will not
+    // give a window narrower than 500 CSS pixels. Asking it for 390 does not
+    // make a phone — it lays the page out at 500 and crops the picture to 390,
+    // so the right tenth of the interface is simply missing from the file.
+    //
+    // An iframe has a viewport of its own, and the media queries inside it are
+    // the frame's. So the shot is taken at a window the browser will give, and
+    // what is photographed inside it is a viewport of exactly the width asked
+    // for — 390 × 844 for the phone, which is what `tests/phone-browser.test.mjs`
+    // drives too, so the picture and the test are of the same thing.
+    //
+    // `w` and `h` are this page's; every other parameter is passed on to the
+    // atlas, so the link inside the frame is the link a reader would have.
+    const params = new URLSearchParams(location.search);
+    const size = (key, fallback) => {
+      const value = Number(params.get(key));
+      params.delete(key);
+      return Number.isFinite(value) && value > 0 ? value : fallback;
+    };
+    const width = size('w', 390);
+    const height = size('h', 844);
+    // A reader who has been here before: the introduction covers the view on a
+    // first visit with nothing open (src/intro.js), and a browser started for
+    // one screenshot has never been anywhere. Written on this page, which is
+    // the frame's own origin, so the frame reads it back.
+    try { localStorage.setItem('atlas-causal.intro', 'seen'); } catch { /* storage off */ }
+    // How far into the graph the picture is taken, and over which mark. The
+    // zoom is not in the URL — the atlas keeps what the reader is *looking at*
+    // there and not how far they have wheeled into it (graph-view.js) — so a
+    // shot of a zoomed graph cannot be asked for by link alone. This page can
+    // ask for one, because it is the frame's own origin and may reach into it
+    // with the gesture a reader would make: a double click back to the world
+    // view, then notches of the wheel held over one mark.
+    //
+    // `zoom` is the scale to reach, `at` the `data-id` of the mark to hold the
+    // pointer over; without `at` it is the middle of the pane. Neither is
+    // passed on to the atlas.
+    const zoom = Number(params.get('zoom'));
+    const at = params.get('at');
+    params.delete('zoom');
+    params.delete('at');
+    const frame = document.getElementById('viewport');
+    frame.width = width;
+    frame.height = height;
+    const query = params.toString().replace(/%2C/g, ',').replace(/%3A/g, ':');
+    frame.src = `/${query ? `?${query}` : ''}`;
+
+    if (Number.isFinite(zoom) && zoom > 0) {
+      const inside = () => frame.contentDocument;
+      const scaleOf = () => {
+        const viewport = inside()?.querySelector('svg.graph .viewport');
+        const found = /scale\(([\d.]+)\)/.exec(viewport?.getAttribute('transform') || '');
+        return found ? Number(found[1]) : 1;
+      };
+      const notch = (svg, point) => {
+        svg.dispatchEvent(new frame.contentWindow.WheelEvent('wheel', {
+          bubbles: true, cancelable: true, deltaY: -120, clientX: point.x, clientY: point.y,
+        }));
+      };
+      // The graph arrives after the spine and the names do, so this waits for
+      // a drawing with a label in it rather than for the load event.
+      let tries = 0;
+      const drive = () => {
+        const svg = inside()?.querySelector('svg.graph');
+        if (!svg || !svg.querySelector('text.node-label')) {
+          if ((tries += 1) < 400) setTimeout(drive, 50);
+          return;
+        }
+        svg.dispatchEvent(new frame.contentWindow.MouseEvent('dblclick', { bubbles: true, cancelable: true }));
+        const mark = at ? svg.querySelector(`circle.node[data-id="${at}"]`) : null;
+        const pane = svg.getBoundingClientRect();
+        const box = mark ? mark.getBoundingClientRect() : null;
+        const point = box && box.width
+          ? { x: box.left + box.width / 2, y: box.top + box.height / 2 }
+          : { x: pane.left + pane.width / 2, y: pane.top + pane.height / 2 };
+        for (let i = 0; i < 80 && scaleOf() < zoom; i += 1) notch(svg, point);
+      };
+      setTimeout(drive, 50);
+    }
+  </script>
+</body>
+</html>

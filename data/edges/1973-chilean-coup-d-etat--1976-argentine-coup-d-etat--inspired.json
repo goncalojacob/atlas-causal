@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "1973-chilean-coup-d-etat--1976-argentine-coup-d-etat--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1973 Chilean coup d'état\", revision 1372926646"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1976 Argentine coup d'état\", revision 1370279728"
+    }
+  ],
+  "from": "1973-chilean-coup-d-etat",
+  "to": "1976-argentine-coup-d-etat",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The claim here is a shared doctrine and a demonstration, not a chain of command. The junta of March 1976 took power with the same doctrine of national security the Chilean and Brazilian officers worked from, it organised its repression on a scale Chile had shown was survivable internationally, and the two co-operated in the surveillance and transfer of exiles that came to be called Condor. The Argentine coup had Argentine causes, a government that had lost control of prices and of its own armed left, and this edge does not claim otherwise. Marked probable: the doctrine was continental and Chile was its most visible case, not its only source.",
+  "dispute": null
+}

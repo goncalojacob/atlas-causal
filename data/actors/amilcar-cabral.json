@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "amilcar-cabral",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q213416",
+  "wikipedia": {
+    "en": "Amílcar Cabral",
+    "pt": "Amílcar Cabral"
+  },
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Amílcar Cabral",
+    "Abel Djassi"
+  ],
+  "summary": "Amílcar Cabral (1924–1973), an agronomist trained in Lisbon, founded the PAIGC in 1956 and led the liberation war in Portuguese Guinea and Cape Verde from 1963. He was the movement's strategist and its theorist, and the most internationally effective of the leaders of the Portuguese-African movements: the PAIGC combined guerrilla war with administration, schools and clinics in the areas it held, and won diplomatic recognition at the United Nations before it had a state. He was assassinated outside his house in Conakry in January 1973 by members of his own movement, eight months before Guinea-Bissau declared independence. He is in the atlas as the actor whose work made the Guinea front the one Portugal came closest to losing outright.",
+  "when": {
+    "start": 1924,
+    "end": 1973
+  },
+  "where": {
+    "lon": -14.66,
+    "lat": 12.17,
+    "precision": "city",
+    "label": "Bafatá"
+  }
+}

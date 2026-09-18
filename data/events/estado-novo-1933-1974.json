@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "estado-novo-1933-1974",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m62-umbrella",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q824489",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-09-18"
+  },
+  "wikipedia": {
+    "en": "Estado Novo (Portugal)",
+    "pt": "Estado Novo (Portugal)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q824489"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Estado Novo (Portugal)\", revision 1372069303"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Estado Novo (Portugal)\", revision 72805786"
+    }
+  ],
+  "title": "The Estado Novo",
+  "summary": "The corporatist Portuguese state installed in 1933, developed by António de Oliveira Salazar and ended by the revolution of 25 April 1974. It evolved out of the Ditadura Nacional formed after the coup of 28 May 1926, and the two together are what historians call the Second Portuguese Republic. The span is Wikidata’s: from the constitution of 19 March 1933 to 25 April 1974. The atlas already held estado-novo as an actor — a thing that acts — and until this record there was nothing for a decree, an election or a massacre of those forty-one years to be part of, which is the whole reason most of the timeline was flat.",
+  "when": {
+    "start": 1933,
+    "end": 1974,
+    "date": "1933-03-19",
+    "endDate": "1974-04-25",
+    "calendar": "gregorian"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "A regime has no single point on the map, so the lane is given rather than derived: Portugal’s, though it governed an empire.",
+  "actors": [
+    {
+      "actor": "estado-novo",
+      "role": "government"
+    },
+    {
+      "actor": "salazar",
+      "role": "head-of-government",
+      "note": "president of the council until illness forced him out in 1968"
+    },
+    {
+      "actor": "marcelo-caetano",
+      "role": "head-of-government",
+      "note": "president of the council from 1968 to 1974"
+    },
+    {
+      "actor": "oscar-carmona",
+      "role": "head-of-state"
+    },
+    {
+      "actor": "americo-tomas",
+      "role": "head-of-state"
+    },
+    {
+      "actor": "uniao-nacional",
+      "role": "party",
+      "note": "the regime’s single party"
+    },
+    {
+      "actor": "pvde-pide-dgs",
+      "role": "institution",
+      "note": "the regime’s political police, under its three successive names"
+    }
+  ]
+}

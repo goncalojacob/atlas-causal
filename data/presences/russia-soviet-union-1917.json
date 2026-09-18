@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "russia-soviet-union-1917",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-16",
+  "origin": {
+    "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m52-russia",
+      "m52-gap"
+    ],
+    "note": "M52: CShapes draws entity 365 continuously from 1917-12-06, and this period begins before the Soviet Union’s cited inception of 1922-12-30 (Q15180, P571). The Russian Empire had ended — Q34266, P576 1917-09-01 — and Wikidata names no polity holding this ground in between, so the outline is carried here unchanged and flagged rather than given to a record invented for it. Whose ground this was is open: docs/m52-russia.md §2.5."
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 186"
+    }
+  ],
+  "actor": "soviet-union",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1917,
+    "end": 1918,
+    "date": "1917-12-06",
+    "endDate": "1918-02-15"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "186"
+  },
+  "capital": {
+    "lon": 30.31602,
+    "lat": 59.93902,
+    "precision": "city",
+    "label": "Saint Petersburg (Petrograd)"
+  },
+  "confidence": "consensus"
+}

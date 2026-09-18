@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "antonio-maria-da-silva",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted",
+      "date"
+    ],
+    "note": "The years were written from the assistant’s memory in M31-3 and have not been read in a source. The works cited are where a reviewer should check them, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "António Maria da Silva"
+  ],
+  "summary": "António Maria da Silva (1872–1950) was a Democratic Party politician and several times President of the Ministry of the Portuguese First Republic. He is in the atlas as the holder of two of those turns at the headship of the government: from 1922 to 1923, and from 1925 until the coup of 28 May 1926.",
+  "when": {
+    "start": 1872,
+    "end": 1950
+  },
+  "where": null
+}

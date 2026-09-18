@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "solomon-islands-1978",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 669"
+    }
+  ],
+  "actor": "solomon-islands",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1978,
+    "end": null,
+    "date": "1978-07-07"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "669"
+  },
+  "capital": {
+    "lon": 159.949997,
+    "lat": -9.43333,
+    "precision": "city",
+    "label": "Honiara"
+  },
+  "confidence": "consensus"
+}

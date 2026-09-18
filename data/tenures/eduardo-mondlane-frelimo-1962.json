@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "eduardo-mondlane-frelimo-1962",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "person": "eduardo-mondlane",
+  "office": "leadership-of-frelimo",
+  "when": {
+    "start": 1962,
+    "end": 1969
+  },
+  "startedBy": null,
+  "note": "First president, until he was killed in 1969."
+}

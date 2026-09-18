@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "pinheiro-de-azevedo",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted",
+      "date"
+    ],
+    "note": "The years were written from the assistant’s memory in M31-2 and have not been read in a source. The works cited are where a reviewer should check them, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "José Pinheiro de Azevedo",
+    "José Baptista Pinheiro de Azevedo"
+  ],
+  "summary": "José Pinheiro de Azevedo (1917–1983) was a naval officer who was prime minister of the sixth and last provisional government, from September 1975 until the first constitutional government took office in July 1976. He is in the atlas as the head of government through the months in which the revolutionary period ended.",
+  "when": {
+    "start": 1917,
+    "end": 1983
+  },
+  "where": null
+}

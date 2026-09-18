@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "dre-2020-state-of-emergency",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "type": "primary",
+  "creators": [
+    "Presidência da República"
+  ],
+  "title": "Declaration and renewals of the state of emergency, March to May 2020",
+  "year": 2020,
+  "publisher": null,
+  "isbn": null,
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": "Diário da República",
+  "reference": "decrees of the President of the Republic declaring and renewing the state of emergency between 18 March and 2 May 2020"
+}

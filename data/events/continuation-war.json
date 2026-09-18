@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "continuation-war",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class B. Finland’s second war argues from the Winter war, which this round wired at two hops from a Portuguese event, and that leaves this one at three. The link that would shorten it is Barbarossa, and the atlas holds the Eastern front at two hops itself. Finland reaches this atlas through 1918 and 1939 and no further; the record is sound and one link too far out."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q122100",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Continuation War",
+    "pt": "Guerra da Continuação"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q122100"
+    }
+  ],
+  "title": "Continuation War",
+  "summary": "Wikidata item Q122100, imported by tools/import/wikidata.mjs. The item's own description reads \"1941–1944 Finnish war against USSR\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1941,
+    "end": 1944,
+    "date": "1941-06-25",
+    "endDate": "1944-09-19"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

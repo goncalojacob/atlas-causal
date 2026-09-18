@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "montenegro-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 129"
+    }
+  ],
+  "actor": "montenegro",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1886,
+    "end": 1913,
+    "date": "1886-01-01",
+    "endDate": "1913-08-09"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "129"
+  },
+  "capital": {
+    "lon": 18.911596,
+    "lat": 42.3931,
+    "precision": "city",
+    "label": "Cetinje"
+  },
+  "confidence": "consensus"
+}

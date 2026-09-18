@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "wall-street-crash-of-1929--great-depression--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Wall Street crash of 1929\", revision 1364914482"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Depression\", revision 1371653684"
+    }
+  ],
+  "from": "wall-street-crash-of-1929",
+  "to": "great-depression",
+  "type": "caused",
+  "confidence": "disputed",
+  "explanation": "The conventional account runs from the crash to the Depression through confidence: the collapse of share values destroyed household wealth and lending, consumption and investment fell, and the banking failures of 1930–33 followed. The dating is not in question — the slump does begin in the autumn of 1929 in the United States and spreads outward from there — but the causal weight of the crash itself is, which is why this edge is marked as it is rather than left out.",
+  "dispute": {
+    "text": "A large body of economic history treats the crash as a symptom and a trigger rather than the cause. Friedman and Schwartz put the Depression's depth on the Federal Reserve's failure to stop the banking panics; the gold-standard literature — Eichengreen, Temin — puts it on the deflationary discipline countries accepted by staying on gold, and explains both the international spread and the order of recovery by when each country left it. On those accounts a crash without those mechanisms would have been a bad recession. The atlas takes no side.",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Great Depression\", revision 1371653684"
+      }
+    ]
+  }
+}

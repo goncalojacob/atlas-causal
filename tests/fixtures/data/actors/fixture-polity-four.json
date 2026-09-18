@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "fixture-polity-four",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-2",
+      "locator": null
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Fixture Polity Four"
+  ],
+  "summary": "Synthetic record used by the test suite. This polity never existed and was never anybody's colony.",
+  "when": {
+    "start": 1120,
+    "end": 1260
+  },
+  "where": null
+}

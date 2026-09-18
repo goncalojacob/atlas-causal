@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "norton-de-matos",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted"
+    ]
+  },
+  "where": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "José Norton de Matos",
+    "Norton de Matos"
+  ],
+  "summary": "José Norton de Matos (1867–1955) was a career officer of the First Republic who governed Angola as governor-general and then as high commissioner in the 1910s and 1920s, with an expansive settlement and public-works programme that ended in financial collapse and his recall. In 1948, in his eighties, he agreed to stand for the presidency as the candidate of the democratic opposition, and drew crowds the regime had not expected. His committees were arrested and his meetings broken up, and he withdrew on the eve of the vote of February 1949 saying that no honest election was possible. He is in the atlas as the first of the two generals the opposition ran against the Estado Novo.",
+  "when": {
+    "start": 1867,
+    "end": 1955
+  }
+}

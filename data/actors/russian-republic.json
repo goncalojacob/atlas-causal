@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "russian-republic",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m53"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m53-polities"
+    ],
+    "note": "M53: written on Wikidata’s Q139319 — P571 1917-09-01, P576 1917-10-25 — which are the same two instants the Russian Empire ends on and the Russian SFSR begins on, so the 1917 gap M52 named is closed by a lookup and not by a judgement. It holds no territory. See docs/m53-polities.md §3."
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q139319, P571 1917-09-01"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q139319, P576 1917-10-25"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Russian Republic"
+  ],
+  "summary": "A polity whose inception Wikidata states as 1917-09-01 on Q139319 and whose dissolution it states as 1917-10-25. Both years here are those two values and nothing else, and both are the same year: it lasted eight weeks. It is written because M52 ended the Russian Empire on 1917-09-01 and could begin nothing until 1922-12-30, and said that the weeks in between were a further missing actor rather than a missing date. Wikidata answers for them, and the two dates meet the records either side exactly, so what M52 left open here is closed. It holds no territory, for the reason `russian-sfsr` holds none.",
+  "when": {
+    "start": 1917,
+    "end": 1917
+  },
+  "where": null
+}

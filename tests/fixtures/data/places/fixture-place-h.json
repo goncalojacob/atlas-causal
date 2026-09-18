@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "fixture-place-h",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "sources": [],
+  "names": [
+    "Fixture place H"
+  ],
+  "where": {
+    "lon": -12,
+    "lat": 25,
+    "precision": "city",
+    "label": "Fixture place H"
+  },
+  "region": null,
+  "summary": null
+}

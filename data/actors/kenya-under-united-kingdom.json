@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "kenya-under-united-kingdom",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 501"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Kenya under United Kingdom"
+  ],
+  "summary": "Entity 501 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 10 periods of territorial validity, from 1888 to 1963. The source calls it \"Kenya\"; the names on this record are the ones data/imports/cshapes-actors.json gives it. Its last capital in the dataset is Nairobi. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods before the first cut. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1888,
+    "end": 1963
+  },
+  "where": {
+    "lon": 36.816669,
+    "lat": -1.28333,
+    "precision": "city",
+    "label": "Nairobi"
+  }
+}

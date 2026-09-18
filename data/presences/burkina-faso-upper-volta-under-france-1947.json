@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "burkina-faso-upper-volta-under-france-1947",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 270"
+    }
+  ],
+  "actor": "burkina-faso-upper-volta-under-france",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1947,
+    "end": 1960,
+    "date": "1947-01-04",
+    "endDate": "1960-08-04"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "270"
+  },
+  "capital": {
+    "lon": -1.524722,
+    "lat": 12.37028,
+    "precision": "city",
+    "label": "Ouagadougou"
+  },
+  "confidence": "consensus"
+}

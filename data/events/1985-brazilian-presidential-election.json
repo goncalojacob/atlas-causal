@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1985-brazilian-presidential-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": "2026-09-18",
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1985 Brazilian presidential election\", revision 1344763908"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Diretas Já\", revision 1360480962"
+    }
+  ],
+  "title": "The presidential election of 1985 and the end of the dictatorship",
+  "summary": "On 15 January 1985 the electoral college elected Tancredo Neves president: the last indirect election and the last under military rule. The college had been built under the constitution of 1967–69 so that the High Command’s candidate would always win, and in 1985 the negotiated transition meant its members were under no coercion and chose whom they liked. The direct elections the country had asked for had been refused — the Diretas Já movement, from the first protest at Abreu e Lima in Pernambuco on 31 March 1983 through the great rallies of 1984, grew alongside an inflation of 239 per cent. Neves fell ill the day before his inauguration and died, and his running mate José Sarney became president.",
+  "when": {
+    "start": 1985,
+    "end": 1985,
+    "date": "1985-01-15"
+  },
+  "place": "brasilia",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the state whose last indirect election this was, and whose regime it ended"
+    }
+  ],
+  "names": [
+    "Eleição presidencial no Brasil em 1985",
+    "Diretas Já"
+  ],
+  "region": null,
+  "parent": "brazilian-military-dictatorship-1964-1985"
+}

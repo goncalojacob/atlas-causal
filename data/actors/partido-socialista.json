@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "partido-socialista",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The birth or founding year, and the end where there is one, were written from memory."
+  },
+  "wikidata": "Q847263",
+  "wikipedia": {
+    "en": "Socialist Party (Portugal)",
+    "pt": "Partido Socialista (Portugal)"
+  },
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-09-03"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Partido Socialista",
+    "PS",
+    "Socialist Party"
+  ],
+  "summary": "Founded in exile in 1973 and in government for most of the periods of adjustment and of recovery since; the party of the minority government of 2015 and of the majority of 2022.",
+  "when": {
+    "start": 1973,
+    "end": null
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

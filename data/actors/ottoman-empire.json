@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ottoman-empire",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": "2026-09-16",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m51-split"
+    ],
+    "note": "M51: this record and turkey-ottoman-empire stand on the same ground either side of the 1885/1886 seam (89.79% of the smaller, docs/m51-overlaps.md) but are two polities, so this is a succession and not a join. It ends 1922 because Wikidata states P576 1922-11-17 on Q12560. Nothing here is authored: the year is that claim and the 1400 is the import's own."
+  },
+  "origin": {
+    "tool": "basemaps"
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "NAME \"Ottoman Empire\""
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q12560, P576 1922-11-17"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Ottoman Empire"
+  ],
+  "summary": "A polity the Historical Basemaps dataset draws in the snapshots for 1400, 1492, 1500, 1530, 1600, 1650, 1700, 1715, 1783, 1800, 1815, 1878 and 1880. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The span those snapshots cover is 1400 to 1885, and that is not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields. M51 then carried it to 1922, the dissolution Wikidata states for Q12560, and gave it the territory entity 640 holds until then; that year is Wikidata's and not this dataset's, and review.note says so.",
+  "when": {
+    "start": 1400,
+    "end": 1922
+  },
+  "where": null
+}

@@ -1,0 +1,156 @@
+# The one place tools/import/wikidata.mjs runs against the live service.
+#
+# It triggers on a push to an `import/**` branch rather than on
+# workflow_dispatch, because a dispatch resolves the workflow on the default
+# branch and `main` carries no workflows yet (docs/review-2026-09-04-plan.md,
+# finding 1). A run that wants an import pushes `import/<mode>-<date>` from
+# `m0`, waits for the last commit here, and fast-forward-merges the branch
+# back — that merge is the run's own commit, and this job never touches `m0`.
+#
+# The mode comes from the branch name: import/reconcile-…, import/candidates-…,
+# import/dates-… or import/run-… . Nothing is interpolated into a shell command:
+# the branch name is somebody's string and reaches the script through env, like
+# every other value in this repository's workflows.
+#
+# import/dates-… is M49's, and it is a lookup rather than an import: it reads
+# P571 and P576 for the actors named in docs/m49-subjects.txt and writes one
+# page, docs/m49-dates.md. Nothing under data/ changes, which is why it is
+# allowed here at all (brief amendment A4). Like candidates it has no cursor,
+# so one pass is the whole run.
+name: import-wikidata
+
+on:
+  push:
+    branches:
+      - 'import/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-wikidata
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The whole history, as validate.yml and deploy.yml already take it.
+          # tools/lib/history.mjs reads a record's versions out of `git log`
+          # and refuses a shallow repository outright — "a shallow repository
+          # is not half a history, it is a different one" — so on the default
+          # depth-1 checkout build-index.mjs writes `history-*` shards with
+          # different content, and different content-addressed names. That
+          # passes this job's own `validate --index`, because the job rebuilt
+          # the index it is checking, and then fails the suite against the
+          # fixture index committed here, which was built with the history:
+          # rule 16, four tests, and batch 1 thrown away with the cursor never
+          # moving. It is what stopped M44a's first run.
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      - name: Read the mode from the branch name
+        id: mode
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          case "$BRANCH" in
+            import/reconcile-*) mode=reconcile ;;
+            import/candidates-*) mode=candidates ;;
+            import/dates-*) mode=dates ;;
+            import/run-*) mode=import ;;
+            *)
+              echo "::error::$BRANCH does not name a mode; use import/reconcile-…, import/candidates-…, import/dates-… or import/run-…"
+              exit 1
+              ;;
+          esac
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+          echo "running $mode"
+
+      - name: Import, one batch at a time, committing each
+        env:
+          MODE: ${{ steps.mode.outputs.mode }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Every batch is indexed and validated before it is committed, and a
+          # failure restores data/ rather than leaving half an import in the
+          # tree for the next batch to build on. The index is rebuilt first
+          # because the test suite runs `validate.mjs --index` against the
+          # repository: a batch that wrote a record and left data/index/
+          # describing the tree before it fails rule 16, which is the index
+          # being stale and not the import being wrong.
+          fail() {
+            echo "::error::$1"
+            git checkout -- data/ || true
+            exit 1
+          }
+          # The report each batch appends to, committed with the batch. A job's
+          # log is not something the run that pushed this branch can read back,
+          # and what an import refused — and which classes it could not type —
+          # is the half of the report somebody acts on. It describes this run
+          # only, so it starts empty, and a failure leaves it behind on purpose.
+          : > docs/import-report.md
+          for batch in $(seq 1 40); do
+            node "tools/import/wikidata.mjs" "--$MODE" --report docs/import-report.md || fail "the import failed on batch $batch"
+            node tools/build-index.mjs || fail "the index cannot be built after batch $batch"
+            node tools/validate.mjs --index || fail "the tree does not validate after batch $batch"
+            # --test-timeout, because a test that hangs is not a test that
+            # fails. The browser tests drive a headless Chromium over the
+            # DevTools protocol, and tests/browser.mjs waits on a reply and on
+            # Page.loadEventFired with no bound: when one of those never
+            # arrives the suite stops printing and the runner sits there with
+            # the browser still open. That is what happened to the run of
+            # 7 September on this branch — the suite stopped after 339 tests
+            # and the job was killed at its 5.5-hour limit with two Chromiums
+            # orphaned, having committed nothing, so batch 1's import was
+            # thrown away and the cursor never moved. Bounded, the same hang
+            # is a failed batch: the batches already pushed stand, the cursor
+            # keeps them, and pushing this branch again resumes from there.
+            # The slowest single test takes 4s, so 120s is not a deadline any
+            # honest test comes near.
+            # Said twice, because only the tail of a job's log can be fetched
+            # from the sandbox that pushes this branch, and TAP prints six
+            # lines for every one of 1,400 passing tests — so a failure is
+            # thousands of lines above the end and out of reach. M44a spent two
+            # runs unable to read which test had stopped it. The output is kept
+            # whole, and the failing tests are repeated at the end.
+            # Two passes since M63 (docs/m63-load.md): the eighteen suites
+            # that start a headless Chromium run one at a time, the other 129
+            # stay parallel, because three browsers on four cores time each
+            # other out and drop a different test every run. Both passes are
+            # run and both are kept in the log, which is the file the report
+            # below is read out of.
+            : > /tmp/tests.log
+            dropped=0
+            node --test --test-timeout=120000 $(node tools/suites.mjs --pure) 2>&1 | tee -a /tmp/tests.log || dropped=1
+            node --test --test-timeout=120000 --test-concurrency=1 $(node tools/suites.mjs --browser) 2>&1 | tee -a /tmp/tests.log || dropped=1
+            if [ "$dropped" = 1 ]; then
+              echo "--- the tests that failed after batch $batch ---"
+              { grep -a -A 18 '^not ok ' /tmp/tests.log || true; } | head -300
+              fail "the tests do not pass after batch $batch"
+            fi
+            if [ -z "$(git status --porcelain)" ]; then
+              echo "batch $batch changed nothing; the walk is finished"
+              break
+            fi
+            git add -A
+            git commit -m "import: $MODE batch $batch"
+            git push origin "HEAD:$BRANCH"
+            # candidates and dates each write one file and have no cursor:
+            # one pass is all, and a second would ask the same questions again.
+            if [ "$MODE" = "candidates" ] || [ "$MODE" = "dates" ]; then break; fi
+          done
+
+      - name: Say the run is finished
+        run: |
+          set -euo pipefail
+          git commit --allow-empty -m "import: done"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

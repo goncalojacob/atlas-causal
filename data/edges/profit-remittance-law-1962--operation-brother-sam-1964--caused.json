@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "profit-remittance-law-1962--operation-brother-sam-1964--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
+    }
+  ],
+  "from": "profit-remittance-law-1962",
+  "to": "operation-brother-sam-1964",
+  "type": "caused",
+  "confidence": "disputed",
+  "explanation": "The reading this edge states: what turned Washington from pressure to removal was what Brazil was doing to foreign capital. Wikipedia’s account of the deterioration in relations names the Profit Remittance Act first among the factors, alongside the expropriations of American companies by Brizola, the nationalisation of an ITT subsidiary, the difficulty of American credits, and economic reasons. The law capped remittance of profits on foreign capital at ten per cent a year, and on Wikipedia’s account it changed the accounting of the large foreign companies outright. Marxist scholarship of the 1960s and 1970s placed heavy emphasis on the American factor, and Dreifuss’s 1964: A Conquista do Estado (1981) reads the coup as the project of entrepreneurs linked to international capital who concluded that to secure their interests they would have to conquer the state. On this reading Brother Sam is what a threatened buyer does about its supplier.",
+  "dispute": {
+    "text": "The reading against it: the American commitment was Cold War anti-communism, and the economics were one grievance among several rather than the motive. Wikipedia records that anti-communism is considered a fundamental element of the coup both in the scholarship and among the military; that Lincoln Gordon feared a \"major disaster\" which \"might make Brazil the China of the 1960s\"; that Kennedy’s hostility dated from Goulart’s refusal to join an invasion of Cuba; and that Washington was also worried by the Peasant Leagues and by Cuban support for the guerrillas found in 1962. A literature review of 2018 defines the American role as increasing the chances of a rebellion occurring and succeeding while finding the dynamics of the crisis fundamentally Brazilian, and that a Brazilian crisis with American influence weighing for the opposition is the opinion of several historians; Carlos Fico’s criticism of Dreifuss is that the book does not distinguish destabilisation from conspiracy. Wikipedia states plainly that at some point the United States decided to favour Goulart’s deposition but that the chronology and the reasons are controversial. That sentence is why this edge is `disputed` and not `probable`: the atlas has one mechanism for telling a reader that serious historians disagree, and this is the claim it was built for.",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Operation Brother Sam\", revision 1372915756"
+      }
+    ]
+  }
+}

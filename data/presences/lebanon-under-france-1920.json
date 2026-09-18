@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "lebanon-under-france-1920",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 503"
+    }
+  ],
+  "actor": "lebanon-under-france",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "occupied",
+  "when": {
+    "start": 1920,
+    "end": 1920,
+    "date": "1920-04-26",
+    "endDate": "1920-12-23"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "503"
+  },
+  "capital": {
+    "lon": 35.50972,
+    "lat": 33.87194,
+    "precision": "city",
+    "label": "Beirut"
+  },
+  "confidence": "consensus"
+}

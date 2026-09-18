@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "portuguese-european-constitution-referendum",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: this is a referendum that never happened. It was planned for 9 October 2005 on ratifying the Treaty establishing a Constitution for Europe, and was abandoned after the French and Dutch votes of that summer killed the treaty. The atlas holds events that occurred; a cancelled ballot is a fact about a government's calendar. What could be written instead is the abandonment itself, as part of the Portuguese presidency of 2007 and the treaty that replaced the constitution."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q3454893",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "Portuguese European Constitution referendum"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3454893"
+    }
+  ],
+  "title": "Portuguese European Constitution referendum",
+  "summary": "Wikidata item Q3454893, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2005,
+    "end": 2005
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

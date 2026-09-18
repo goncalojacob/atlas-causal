@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "the-caribbean-sugar-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"History of Barbados\", revision 1368569649"
+    }
+  ],
+  "title": "The Caribbean sugar revolution",
+  "summary": "Sugar cane was introduced to Barbados in 1637 by Pieter Blower and cultivation began in the 1640s; the crop that transformed the island came from Dutch Brazil in 1640, and Colonel James Drax went there in that year to buy a triple-roller mill and a set of copper cauldrons. Dutch traders supplied the equipment, the financing and the enslaved Africans, and Sephardic Jews who had left Iberia for Pernambuco were instrumental in the early success. Smallholdings were consolidated into estates, the poorer farmers were pushed out to South Carolina, and by 1660 Barbados generated more trade than all the other English colonies combined. By 1700 the English West Indies made 25,000 tons of sugar against Brazil’s 20,000. The Caribbean plantations came to supply 80 to 90 per cent of the sugar consumed in western Europe.",
+  "when": {
+    "start": 1640,
+    "end": 1700
+  },
+  "place": "bridgetown",
+  "actors": [
+    {
+      "actor": "england-and-ireland",
+      "role": "government",
+      "note": "by 1660 Barbados generated more trade than all the other English colonies combined"
+    },
+    {
+      "actor": "dutch-republic",
+      "role": "supporter",
+      "note": "Dutch traders supplied the equipment, the financing and the enslaved Africans, and the crop came from Dutch Brazil in 1640"
+    }
+  ],
+  "names": [
+    "Sugar revolution"
+  ],
+  "region": null
+}

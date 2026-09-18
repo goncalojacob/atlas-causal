@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "banco-de-portugal-2014-bes-resolution",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "type": "primary",
+  "creators": [
+    "Banco de Portugal"
+  ],
+  "title": "Resolution measure applied to Banco Espírito Santo, S.A.",
+  "year": 2014,
+  "publisher": null,
+  "isbn": null,
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": "Banco de Portugal",
+  "reference": "deliberation of the Board of Directors of 3 August 2014"
+}

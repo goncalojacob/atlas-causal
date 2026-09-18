@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bernardino-machado",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted",
+      "date"
+    ],
+    "note": "The years were written from the assistant’s memory in M31-1 and have not been read in a source. The works cited are where a reviewer should check them, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "where": null,
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Bernardino Machado",
+    "Bernardino Luís Machado Guimarães"
+  ],
+  "summary": "Bernardino Machado (1851–1944) was a republican politician and twice President of the Republic: from October 1915 until Sidónio Pais deposed him in December 1917, and from December 1925 until the coup of 28 May 1926 deposed him again. He is in the atlas as the president both of the First Republic’s breaks removed.",
+  "when": {
+    "start": 1851,
+    "end": 1944
+  }
+}

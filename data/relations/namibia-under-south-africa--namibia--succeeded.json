@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "namibia-under-south-africa--namibia--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 565"
+    }
+  ],
+  "from": "namibia-under-south-africa",
+  "to": "namibia",
+  "type": "succeeded",
+  "when": {
+    "start": 1990,
+    "end": 1990,
+    "date": "1990-03-21"
+  },
+  "note": "CShapes holds 565 as a colony of South Africa to 1990-03-20; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. The source gives the held period under more than one power (Germany (Prussia), then South Africa); the record is named for the one that held it longest (Germany (Prussia):30y, South Africa:75y)."
+}

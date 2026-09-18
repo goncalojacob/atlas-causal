@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "swaziland-eswatini-under-united-kingdom--swaziland-eswatini--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 572"
+    }
+  ],
+  "from": "swaziland-eswatini-under-united-kingdom",
+  "to": "swaziland-eswatini",
+  "type": "succeeded",
+  "when": {
+    "start": 1968,
+    "end": 1968,
+    "date": "1968-09-06"
+  },
+  "note": "CShapes holds 572 as a colony of United Kingdom to 1968-09-05; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. The source gives the held period under more than one power (Transvaal, then United Kingdom); the record is named for the one that held it longest (Transvaal:7y, United Kingdom:66y)."
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "persia--iran-persia--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "interval-cited",
+      "m51-split"
+    ],
+    "note": "M51: the interval is not from memory and not the two actors' own. Its date is Wikidata's, named in this record's citation by item and property, and `note` says which. There is nothing here to check against a year somebody remembered."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q63158027, P571 1789 and P576 1925"
+    }
+  ],
+  "from": "persia",
+  "to": "iran-persia",
+  "type": "succeeded",
+  "when": {
+    "start": 1925,
+    "end": 1925
+  },
+  "note": "The two records stand on the same ground across the 1885/1886 seam — 98.31% of the smaller outline — but \"Iran (Persia)\" names two polities, so the seam is closed as a succession and not as a join. The date is Wikidata's P576 on Q63158027, Qajar Iran, whose P571 1789 is what puts the 1885-side record inside it."
+}

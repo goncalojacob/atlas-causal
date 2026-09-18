@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-brazilian-gold-cycle--transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazilian gold rush\", revision 1360546842"
+    }
+  ],
+  "from": "the-brazilian-gold-cycle",
+  "to": "transfer-of-the-colonial-capital-to-rio-de-janeiro-1763",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The reason given in the sources is logistical and is the whole of it: Rio de Janeiro lay closer to the mining region and gave the gold a harbour to leave from, so in 1763 the capital of the State of Brazil moved there from Salvador and the king’s representative began to be called Viceroy. The centre of gravity of the colony had already moved — by 1725 half the population lived in the south-east — and the capital followed it.",
+  "dispute": null
+}

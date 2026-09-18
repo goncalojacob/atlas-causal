@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "madagascar-malagasy",
+  "kind": "actor",
+  "status": "merged",
+  "supersededBy": "madagascar",
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-16",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m51-joined"
+    ],
+    "note": "M51: merged into madagascar, the same polity — the outlines either side of the 1885/1886 seam share 98.82% of the smaller (docs/m51-overlaps.md). The names, summary and licence here are CShapes 2.0's and stay here: the survivor carries the other import's licence and could not take them."
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 580"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Madagascar (Malagasy)"
+  ],
+  "summary": "Entity 580 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 5 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Antananarivo. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1886,
+    "end": null
+  },
+  "where": {
+    "lon": 47.51667,
+    "lat": -18.91667,
+    "precision": "city",
+    "label": "Antananarivo"
+  }
+}

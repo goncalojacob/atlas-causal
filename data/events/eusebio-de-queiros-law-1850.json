@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "eusebio-de-queiros-law-1850",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eusébio de Queirós Law\", revision 1368931242"
+    }
+  ],
+  "title": "The Eusébio de Queirós Law",
+  "summary": "Law No. 581 of 4 September 1850, passed by the Empire of Brazil under Pedro II and named for the Minister of Justice who carried it, abolished the international slave trade to Brazil. It re-enacted a law of 7 November 1831 that had never been enforced, and it was enforced. The government resented the British pressure that produced it — the seizures under the Aberdeen Act — and passed it anyway. Slavery itself stood for another thirty-eight years.",
+  "when": {
+    "start": 1850,
+    "end": 1850,
+    "date": "1850-09-04"
+  },
+  "place": "rio-de-janeiro",
+  "actors": [
+    {
+      "actor": "empire-of-brazil",
+      "role": "government",
+      "note": "Law No. 581 of 4 September 1850, passed under Pedro II and enforced"
+    }
+  ],
+  "names": [
+    "Lei Eusébio de Queirós",
+    "Law No. 581 of 1850"
+  ],
+  "region": null
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "gaza-war--twelve-day-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gaza war\", revision 1372809003"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Twelve-Day War\", revision 1370751931"
+    }
+  ],
+  "from": "gaza-war",
+  "to": "twelve-day-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The war of June 2025 is the last step of a regional escalation that began on 8 October 2023, when Hezbollah opened the northern front, and ran through the Houthi campaign in the Red Sea, the killing of Iranian officers in Damascus, and the two direct exchanges of missiles between Iran and Israel in April and October 2024 — the first in the history of either state. By 2025 Iran's allies had been broken and its air defences opened, which is the condition of a surprise attack on the nuclear sites. The immediate cause was the nuclear programme and the negotiation that had stalled over it; what the Gaza war supplied was the sequence that made a direct war between the two states ordinary.",
+  "dispute": null
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "indigenous-depopulation-of-the-greater-antilles--the-caribbean-sugar-revolution--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Taíno\", revision 1370165371"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"History of Barbados\", revision 1368569649"
+    }
+  ],
+  "from": "indigenous-depopulation-of-the-greater-antilles",
+  "to": "the-caribbean-sugar-revolution",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Spain took the Greater Antilles for gold and tribute, exhausted both, and left islands it barely occupied; the English, French and Dutch colonies of the seventeenth century were founded in and around that vacancy. Barbados itself is the extreme case: the cited account has the Amerindian settlement of the island ending in the early sixteenth century, so that the party of 1627 landed on ground with nobody on it. The type is the weak one: emptiness did not make sugar, it is what sugar was planted in.",
+  "dispute": null
+}

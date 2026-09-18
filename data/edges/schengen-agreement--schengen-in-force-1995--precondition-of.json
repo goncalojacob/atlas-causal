@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "schengen-agreement--schengen-in-force-1995--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Schengen Agreement\", revision 1370029483"
+    }
+  ],
+  "from": "schengen-agreement",
+  "to": "schengen-in-force-1995",
+  "type": "precondition-of",
+  "confidence": "consensus",
+  "explanation": "What Portugal joined in 1991 and applied in 1995 was not a Community policy but the club of 1985, and the shape of that club decides both halves of what Portugal got. Because Schengen was built outside the treaties, accession to it was a separate act that Portugal and Spain could take together five years after joining the Communities, rather than something that came with membership. And because the 1990 convention paid for open internal borders with a common external one, the abolition of checks on the Spanish frontier arrived bound to the obligation to hold the Atlantic coast and the airports on everyone else's behalf — which is where the Portuguese argument about Schengen has been ever since.",
+  "dispute": null
+}

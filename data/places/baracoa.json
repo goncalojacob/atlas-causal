@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "baracoa",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [],
+  "names": [
+    "Baracoa, Cuba"
+  ],
+  "where": {
+    "lon": -74.496,
+    "lat": 20.347,
+    "precision": "city",
+    "label": "Baracoa, the first Spanish town on Cuba"
+  },
+  "region": null,
+  "summary": null
+}

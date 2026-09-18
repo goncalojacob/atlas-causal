@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sa-carneiro",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted",
+      "date"
+    ],
+    "note": "The years were written from the assistant’s memory in M31-2 and have not been read in a source. The works cited are where a reviewer should check them, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Francisco Sá Carneiro",
+    "Francisco Manuel Lumbrales de Sá Carneiro"
+  ],
+  "summary": "Francisco Sá Carneiro (1934–1980) was a founder and leader of the Social Democratic Party who was prime minister from January 1980 until he died in an air crash at Camarate in December of that year. He is in the atlas as the head of government whose turn at the office ended with his death in post.",
+  "when": {
+    "start": 1934,
+    "end": 1980
+  },
+  "where": null
+}

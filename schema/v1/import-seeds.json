@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/import-seeds.json",
+  "title": "Import seeds",
+  "description": "What an import is pointed at: the items to fetch and the queries that find more of them. Like an import map it is not a record — no provenance envelope, no kind of node — and the browser never reads it; unlike an import map it says nothing about what the result means, only where to look. It is contributor-editable through the ordinary pull-request path, which is the point: which corner of Wikidata this atlas draws from is an editorial decision and belongs in a file somebody can argue with, not in the tool. tools/validate.mjs checks it; whether an item or a query exists at all is checked at import time, against the source.",
+  "type": "object",
+  "required": ["schema", "kind", "source"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": 1 },
+    "kind": {
+      "description": "What kind of file this is. data/imports/ holds more than one, and tools/lib/read.mjs dispatches on this rather than on the file name.",
+      "const": "import-seeds"
+    },
+    "source": {
+      "description": "The id of the source record the import cites, so a seeds file cannot be pointed at the wrong catalogue by accident.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 120
+    },
+    "items": {
+      "description": "Items named one by one, in the source's own identifier — for Wikidata, Q followed by digits. The list is what --import walks.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^Q[1-9][0-9]*$",
+        "maxLength": 20
+      }
+    },
+    "lanes": {
+      "description": "Which timeline lane an item's event takes when nothing the import can reach gives it one, keyed by the source's identifier for the item. An event that names no place record of this atlas takes its lane from a point — its own, or one of the country or location it names — and a war fought across four countries has no point at all, so twenty-nine of them were refused rather than given a lane by guess (STATUS.md, deviation 447). This table is the answer: like the class table it is data and not code, because which continent a stateless thing belongs to is an editorial decision somebody should have to argue for in a pull request, and unlike a coordinate it is nobody's measurement. Each value is an id of data/regions.json, which tools/validate.mjs checks; each key is an item of the source, which it checks too, the shape being unable to. It is read only where an item has no place record and no point that reaches a lane: a lane a coordinate gives is never overridden by one written here.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+        "maxLength": 120
+      }
+    },
+    "queries": {
+      "description": "Searches that find items nobody has listed by hand. Run by --candidates, which writes a list for a person to tick and nothing under data/: a query is a way of proposing records, never of creating them.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "sparql"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "description": "A slug naming the query, unique in the file: within a period it is what the candidate list is grouped by, and it is what the report names when a query fails.",
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "maxLength": 120
+          },
+          "period": {
+            "description": "Which stretch of time the query asks about, as a person would name it — \"1970s\". The candidate list is grouped by it and counted per group, because a list of a thousand rows in one heap is not something anybody ticks. Absent means the query is not about a period; those rows are grouped together at the end.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
+          },
+          "sparql": {
+            "description": "The query itself, exactly as it is sent. Written by a person and readable in the diff, so what the atlas asked for is reviewable.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "note": {
+            "description": "Why this query is here, for whoever reads the file next.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        }
+      }
+    },
+    "classes": {
+      "description": "What a class of the source means here, keyed by the source's identifier for it: which kind of record an item of that class becomes, and for actors which actorType. It is deliberately data and not code. Whether \"battle\" is an event of this atlas and whether a political party is an institution or a people are editorial decisions, and a table in a file somebody can argue with in a pull request is the only honest place for them. An item whose classes are all absent from here is refused and listed with its labels, never guessed at.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["kind"],
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": ["event", "actor", "place"]
+          },
+          "actorType": {
+            "description": "Required when kind is actor and meaningless otherwise; the import refuses an actor class that does not say which.",
+            "type": "string",
+            "enum": ["person", "polity", "institution", "people"]
+          },
+          "category": {
+            "description": "Which category of data/categories.json an item of this class becomes. Meaningful only where kind is event, and checked against that file by tools/validate.mjs — a category spelled wrong here would be written onto every record the class creates. A class with none is a class whose mapping nobody has decided: the import writes no category for it rather than guessing one (plan decision 13, amendment A17).",
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "maxLength": 120
+          },
+          "label": {
+            "description": "What the source calls the class, copied in by the report so the file reads as something other than a list of numbers. Never used for matching.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        }
+      }
+    },
+    "reconcile": {
+      "description": "Whether --reconcile may match this atlas's existing hand-written records against the source. Off by default: matching writes identifiers onto records somebody wrote.",
+      "type": "boolean"
+    }
+  }
+}

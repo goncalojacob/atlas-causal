@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "santo-domingo",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [],
+  "names": [
+    "Santo Domingo, Hispaniola"
+  ],
+  "where": {
+    "lon": -69.931,
+    "lat": 18.486,
+    "precision": "city",
+    "label": "Santo Domingo"
+  },
+  "region": null,
+  "summary": null
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "2022-portuguese-legislative-election",
+  "kind": "event",
+  "status": "merged",
+  "supersededBy": "legislative-election-2022",
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-merged"
+    ],
+    "note": "Merged in M22 into legislative-election-2022, which is the same event: the early election of 30 January 2022, called after the budget for that year was voted down, at which the PS won an absolute majority. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
+  },
+  "wikidata": "Q84081925",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2022 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 2022"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q84081925"
+    }
+  ],
+  "title": "2022 Portuguese legislative election",
+  "summary": "Wikidata item Q84081925, imported by tools/import/wikidata.mjs. The item's own description reads \"general election\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2022,
+    "end": 2022,
+    "date": "2022-01-30"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

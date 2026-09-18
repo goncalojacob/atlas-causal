@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "fixture-event-a2",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "title": "Fixture event A2",
+  "summary": "Synthetic record used by the test suite. It is not history and describes nothing that happened.",
+  "when": {
+    "start": 1200,
+    "end": 1200,
+    "date": "1200-06-01"
+  },
+  "place": "fixture-place-a2",
+  "region": null,
+  "actors": []
+}

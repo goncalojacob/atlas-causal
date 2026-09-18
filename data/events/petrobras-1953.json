@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "petrobras-1953",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Petrobras\", revision 1372204096"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Petrobras\", revision 72337059"
+    }
+  ],
+  "title": "Petrobras and the state monopoly of oil, 1953",
+  "summary": "Law 2,004 of 3 October 1953, sanctioned by Getúlio Vargas, established the state monopoly of petroleum and created Petróleo Brasileiro S.A. It answered a draft Petroleum Statute of 1948 that would have opened the industry to private capital, at a time when world production was dominated by the Seven Sisters, five of them American; the campaign against it — *O petróleo é nosso*, \"the oil is ours\" — was the largest popular mobilisation of the period and is what carried the law. Brazil was producing 2,700 barrels a day in 1953. The company held the monopoly for over forty years, until Law 9,478 of 1997 opened the fields to competition.",
+  "when": {
+    "start": 1953,
+    "end": 1953,
+    "date": "1953-10-03"
+  },
+  "place": "rio-de-janeiro",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the state that took the monopoly and created the company to hold it"
+    }
+  ],
+  "names": [
+    "Petróleo Brasileiro S.A.",
+    "O petróleo é nosso"
+  ],
+  "region": null
+}

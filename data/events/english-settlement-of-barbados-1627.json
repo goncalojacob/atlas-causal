@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "english-settlement-of-barbados-1627",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"History of Barbados\", revision 1368569649"
+    }
+  ],
+  "title": "The English settlement of Barbados",
+  "summary": "The first English ship touched Barbados on 14 May 1625 under John Powell and the island was claimed for James I; the lasting settlement began on 17 February 1627 near what is now Holetown, when the William and John landed a party under Henry Powell of eighty settlers and ten English indentured labourers, with about forty enslaved Taíno brought from Guyana to plant. It was a proprietary colony funded by the London merchant Sir William Courten, so the first colonists were his tenants. Tobacco was the export. Nothing in this yet is a sugar island.",
+  "when": {
+    "start": 1627,
+    "end": 1627,
+    "date": "1627-02-17"
+  },
+  "place": "bridgetown",
+  "actors": [
+    {
+      "actor": "england-and-ireland",
+      "role": "government",
+      "note": "the island was claimed for James I and settled in 1627 as a proprietary colony"
+    }
+  ],
+  "names": [
+    "Colony of Barbados"
+  ],
+  "region": null
+}

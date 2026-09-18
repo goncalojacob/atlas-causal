@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "amilcar-cabral--paigc--led",
+  "kind": "relation",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "retraction": {
+    "on": "2026-09-06",
+    "reason": "Retracted in M30a-2 and re-filed as the tenure \"amilcar-cabral-paigc-1956\": who led a body is an office somebody held and not a link between two actors, because a relation's id is from--to--type and one person may lead one body more than once. The type \"led\" is deprecated and no active relation may take it; nothing this record claimed was changed in the move."
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "amilcar-cabral",
+  "to": "paigc",
+  "type": "led",
+  "when": {
+    "start": 1956,
+    "end": 1973
+  },
+  "note": "Founder, and its leader until he was killed in January 1973."
+}

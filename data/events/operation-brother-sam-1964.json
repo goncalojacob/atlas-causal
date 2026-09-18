@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "operation-brother-sam-1964",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Brother Sam\", revision 1372915756"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
+    }
+  ],
+  "title": "Operation Brother Sam, 1964",
+  "summary": "The American naval and air operation in support of the Brazilian coup. Contingency planning had run since the end of 1963 and the December version already described the removal of Goulart; on 31 March 1964 the operation was activated. Rear Admiral John L. Chew ordered out a task force built round the carrier USS Forrestal, a helicopter carrier and six destroyers of the Second Fleet, with four tankers loading in Aruba; the air component was seven C-135s, eight fighters, an airborne command post, weapons and ammunition, under Air Force general George S. Brown and coordinated from Panama. The Forrestal left Norfolk on 1 April and the ships were expected off Brazil about the 10th. They never arrived: Castelo Branco told ambassador Lincoln Gordon that logistical support would not be needed, the order to disband the task force came at 17:22 on the 2nd, and on the 3rd it was settled that no carriers were required. The operation had no physical effect in Brazil. It came to light with the declassifications of 1976 and 1977.",
+  "when": {
+    "start": 1964,
+    "end": 1964,
+    "date": "1964-03-31",
+    "endDate": "1964-04-03"
+  },
+  "place": "washington",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "government",
+      "note": "ordered the task force out and stood it down when the coup succeeded without it"
+    },
+    {
+      "actor": "brazil",
+      "role": "target",
+      "note": "the country the fleet was sailing towards, and the government it was sailing against"
+    }
+  ],
+  "names": [
+    "Operação Brother Sam"
+  ],
+  "region": null
+}

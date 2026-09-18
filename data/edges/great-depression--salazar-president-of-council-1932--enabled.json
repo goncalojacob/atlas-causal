@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "great-depression--salazar-president-of-council-1932--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Depression\", revision 1371653684"
+    }
+  ],
+  "from": "great-depression",
+  "to": "salazar-president-of-council-1932",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Salazar came to the presidency of the Council on a reputation made entirely of public accounts: he had balanced the budget from 1928 and he kept it balanced through the slump, while the currencies and the governments of the parliamentary states failed one after another. The argument here is about the political value of that record, not about the economy — Portugal's slump was comparatively shallow because the economy was poor, agricultural and barely exposed to short-term foreign lending, and the credit for that belongs less to the minister than the regime claimed. What the Depression supplied was the contrast that made the claim credible, at home and abroad, at the moment the military dictatorship had to choose a civilian form.",
+  "dispute": null
+}

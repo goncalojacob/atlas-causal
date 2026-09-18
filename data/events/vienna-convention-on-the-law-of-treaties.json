@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "vienna-convention-on-the-law-of-treaties",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class C, with the diplomatic relations convention. The convention on the law of treaties is a codification of practice and the atlas holds no event it decided; the Charter edge is available, is true of a dozen records, and argues nothing. Marked here rather than written, so that the refusal is on the record."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q239768",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Vienna Convention on the Law of Treaties",
+    "pt": "Convenção de Viena sobre Direito dos Tratados"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q239768"
+    }
+  ],
+  "title": "Vienna Convention on the Law of Treaties",
+  "summary": "Wikidata item Q239768, imported by tools/import/wikidata.mjs. The item's own description reads \"1969 United Nations treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1969,
+    "end": 1969,
+    "date": "1969-05-23"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

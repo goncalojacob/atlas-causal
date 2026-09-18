@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "hungarian-revolution-of-1956",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: the rising of October 1956 against the Hungarian government and the Soviet presence, crushed by the Red Army in a fortnight. The atlas holds no record of the eastern bloc's internal history — no Berlin 1953, no Prague 1968 — for it to connect to, and its clearest reach into Portugal, the crisis it caused in the western communist parties and so in the PCP, would need that crisis as a record here. Wiring it forward to 1989 across thirty-three years would be an invention."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m40-retracted"
+    ]
+  },
+  "wikidata": "Q164348",
+  "sitelinks": {
+    "count": 77,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Hungarian Revolution of 1956",
+    "pt": "Revolução Húngara de 1956"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q164348"
+    }
+  ],
+  "title": "Hungarian Revolution of 1956",
+  "summary": "Wikidata item Q164348, imported by tools/import/wikidata.mjs. The item's own description reads \"1956 revolution in Hungary\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1956,
+    "end": 1956,
+    "endDate": "1956-11-10"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

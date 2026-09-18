@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "2001-portuguese-presidential-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the presidential election of 14 January 2001, at which Jorge Sampaio was re-elected for a second term. As with the re-elections of 1980 and 1991, the atlas holds nothing the result can be argued to have changed. Sampaio's second term contains the dismissal of the Santana Lopes government in November 2004, which the atlas does hold — through the election of 2005 that it caused — but the dismissal belongs to the president, not to the ballot that put him back."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q3131667",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2001 Portuguese presidential election",
+    "pt": "Eleições presidenciais portuguesas de 2001"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3131667"
+    }
+  ],
+  "title": "2001 Portuguese presidential election",
+  "summary": "Wikidata item Q3131667, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2001,
+    "end": 2001,
+    "date": "2001-01-14"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

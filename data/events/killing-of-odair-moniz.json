@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "killing-of-odair-moniz",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the death of Odair Moniz, shot by a PSP officer during a chase at Cova da Moura on 21 October 2024, and the riots across six municipalities that followed. The atlas holds nothing about immigration, about policing or about these neighbourhoods, and the one edge somebody will want to draw — to the vote of May 2025 — is an interpretation of an election, not a fact about it. Retracted for want of an atlas to attach it to, not for want of importance."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q130648555",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "Killing of Odair Moniz",
+    "pt": "Morte de Odair Moniz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q130648555"
+    }
+  ],
+  "title": "killing of Odair Moniz",
+  "summary": "Wikidata item Q130648555, imported by tools/import/wikidata.mjs. The item's own description reads \"Portugal police shooting of a Cape Verde immigrant and resulting riots\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2024,
+    "end": 2024,
+    "date": "2024-10-21"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

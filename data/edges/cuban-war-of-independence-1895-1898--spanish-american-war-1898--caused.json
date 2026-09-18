@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "cuban-war-of-independence-1895-1898--spanish-american-war-1898--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    }
+  ],
+  "from": "cuban-war-of-independence-1895-1898",
+  "to": "spanish-american-war-1898",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The two are the same conflict for its last three months, which is how the cited accounts put it: major escalation as American forces were deployed to Cuba, Puerto Rico and the Philippines. The mechanism between them is documented and is not only the Maine. Weyler’s reconcentration camps killed a tenth of the population; the Cuban Junta in Florida ran a propaganda campaign in the American press and funded and smuggled arms; and the American papers, W. Joseph Campbell argues, exaggerated the atrocities to sell copies, though Andrea Pitzer notes the turn to savagery was real.",
+  "dispute": null
+}

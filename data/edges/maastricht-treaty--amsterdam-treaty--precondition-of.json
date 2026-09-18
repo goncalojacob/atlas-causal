@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "maastricht-treaty--amsterdam-treaty--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Maastricht Treaty\", revision 1360900516"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Amsterdam\", revision 1352365700"
+    }
+  ],
+  "from": "maastricht-treaty",
+  "to": "amsterdam-treaty",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Amsterdam is an amendment to Maastricht and was provided for by it: Maastricht wrote a review conference into its own text, and the intergovernmental conference that produced the treaty of October 1997 is that review. What it amended is the thing Portugal had ratified in 1992 and was inside. The claim is the plain institutional one and it is worth having because it is the spine the next two records hang from.",
+  "dispute": null
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "balkan-wars",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b as redundant, which is its own small class. The same import created records of the First and the Second Balkan war, and this round wired both — the first into the second and each of them into Sarajevo, which is where the historiography puts the claim this series record would have carried. Every edge available to it is carried by one of its two parts, and three records of two wars is less of the atlas rather than more. Nothing was lost but a duplicate: the item Q165725 stays on the tombstone, and a future run that wants the series as such should merge it rather than write a third."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q165725",
+  "sitelinks": {
+    "count": 80,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Balkan Wars",
+    "pt": "Guerras dos Balcãs"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q165725"
+    }
+  ],
+  "title": "Balkan Wars",
+  "summary": "Wikidata item Q165725, imported by tools/import/wikidata.mjs. The item's own description reads \"two consecutive wars in 1912 and 1913\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1912,
+    "end": 1913,
+    "date": "1912-10-08",
+    "endDate": "1913-07-18"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

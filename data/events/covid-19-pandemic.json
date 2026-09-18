@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted",
+      "facts-thin"
+    ],
+    "note": "The bibliography holds nothing on the pandemic: this record and its edge stand on the two cached Wikipedia leads and the Wikidata item alone, which is why the edge is `probable` and not `consensus` (rule 22 would forbid consensus here in any case). A reviewer should add a source before signing."
+  },
+  "wikidata": "Q81068910",
+  "sitelinks": {
+    "count": 170,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "COVID-19 pandemic",
+    "pt": "Pandemia de COVID-19"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic\", revision 1373210817"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Pandemia de COVID-19\", revision 72622783"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "COVID-19 pandemic",
+  "summary": "An outbreak of a new coronavirus disease in Wuhan at the end of 2019 spread through Asia and then worldwide in the first months of 2020. The World Health Organization declared a public health emergency of international concern on 30 January 2020 and called it a pandemic on 11 March; it ended the emergency in May 2023. It is in the atlas as the origin of a chain that reaches Portugal in March 2020 and produces the first state of emergency under the constitution of 1976 — the only event here that begins outside Europe and changes the Portuguese state directly.",
+  "when": {
+    "start": 2019,
+    "end": null,
+    "date": "2019-11-15"
+  },
+  "place": null,
+  "region": "asia",
+  "category": "disaster",
+  "actors": []
+}

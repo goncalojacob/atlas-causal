@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "estado-novo",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q824489",
+  "wikipedia": {
+    "en": "Estado Novo (Portugal)",
+    "pt": "Estado Novo (Portugal)"
+  },
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Estado Novo",
+    "New State",
+    "Second Portuguese Republic"
+  ],
+  "summary": "The Estado Novo was the authoritarian regime founded on the constitution of 1933 and dissolved on 25 April 1974, the longest-lived of its kind in twentieth-century Europe. It was corporatist in doctrine and Catholic and conservative in temper, with a single party, a political police, censorship, a corporative chamber and no free elections; Salazar governed it until 1968 and Marcelo Caetano until its fall. It stayed out of the world war while granting the Azores to the Allies, joined NATO in 1949 and the United Nations in 1955, and from 1961 held the African territories by a war on three fronts that consumed nearly half the state budget. Historians disagree over how far to call it fascist and how much of it was improvised around one man; they agree that the war is what ended it. It is in the atlas as the polity most of the events between 1933 and 1974 belong to.",
+  "when": {
+    "start": 1933,
+    "end": 1974
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

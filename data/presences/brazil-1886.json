@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "brazil-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 57"
+    }
+  ],
+  "actor": "empire-of-brazil",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1886,
+    "end": 1889,
+    "date": "1886-01-01",
+    "endDate": "1889-11-15"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "57"
+  },
+  "capital": {
+    "lon": -43.1964,
+    "lat": -22.9083,
+    "precision": "city",
+    "label": "Rio de Janeiro"
+  },
+  "confidence": "consensus",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m53-polities"
+    ],
+    "note": "M53: CShapes draws this period from 1886-01-01 to 1903-11-16 under gwcode 140 and the atlas gave it to `brazil`, which is why Brazilian ground of the imperial years belonged to the Republic. It is cut at 1889-11-15, the Empire’s dissolution on Wikidata’s Q217230, and the remainder is `brazil-1889`. The outline is the same file and the same key in both halves: nothing was redrawn, and the Republic inherited these borders unchanged."
+  }
+}

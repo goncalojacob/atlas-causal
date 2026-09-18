@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "pimenta-de-castro",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "STATUS.md names these as the least certain years of the twenty persons in the dataset."
+  },
+  "wikidata": "Q305493",
+  "wikipedia": {
+    "en": "Joaquim Pimenta de Castro",
+    "pt": "Joaquim Pimenta de Castro"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Joaquim Pereira Pimenta de Castro",
+    "Pimenta de Castro"
+  ],
+  "summary": "General appointed head of government in January 1915, who suspended parliament and governed with the Democrats excluded until he was overthrown by the revolt of 14 May.",
+  "when": {
+    "start": 1846,
+    "end": 1918
+  },
+  "where": null
+}

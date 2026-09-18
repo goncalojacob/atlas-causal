@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "philippines-before-1946-1878",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [
+    "philippines-before-1886-1878"
+  ],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "basemaps"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "world_1878.geojson, \"Philippines\""
+    }
+  ],
+  "actor": "philippines-before-1946",
+  "presenceType": "polity",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1878,
+    "end": 1879,
+    "date": "1878-01-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1878-1879.json"
+    ],
+    "key": "philippines-before-1946"
+  },
+  "capital": null,
+  "confidence": "probable"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "legiao-portuguesa",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "wikidata-assigned-by-assistant"
+    ]
+  },
+  "wikidata": "Q2405862",
+  "wikipedia": {
+    "en": "Legião Portuguesa (Estado Novo)",
+    "pt": "Legião Portuguesa (Estado Novo)"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Portuguese Legion",
+    "Legião Portuguesa"
+  ],
+  "summary": "The Portuguese Legion was the regime's volunteer militia, created in September 1936 in the atmosphere of the Spanish Civil War as an anti-communist paramilitary body and as a counterweight, inside the regime, to the army. It ran civil defence and later the state's radio-monitoring service, took part in surveillance alongside the political police, and provided the regime with the parades and uniforms of the period. Its importance declined after the world war, though it survived on paper until it was dissolved after 25 April 1974. It is in the atlas as the militia arm of the Estado Novo, beside the political police.",
+  "when": {
+    "start": 1936,
+    "end": 1974
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

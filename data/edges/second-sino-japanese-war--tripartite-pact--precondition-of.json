@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "second-sino-japanese-war--tripartite-pact--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Sino-Japanese War\", revision 1372437913"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tripartite Pact\", revision 1372727349"
+    }
+  ],
+  "from": "second-sino-japanese-war",
+  "to": "tripartite-pact",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Japan signed in Berlin in September 1940 because it had been at war in China for three years and could not finish it. The war had brought the American embargoes and the aid to Chongqing, it had made the resources of South-East Asia look like the way out, and an alliance that might deter the United States from intervening was worth having for both reasons. The claim is about the Japanese motive for the pact and not about the German or Italian ones, which were different.",
+  "dispute": null
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "english-settlement-of-barbados-1627--the-caribbean-sugar-revolution--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"History of Barbados\", revision 1368569649"
+    }
+  ],
+  "from": "english-settlement-of-barbados-1627",
+  "to": "the-caribbean-sugar-revolution",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Thirteen years separate the landing at Holetown from the cane that changed everything, and in those thirteen years Barbados was a tobacco colony of tenants working for a London merchant. That is the point of keeping the two records apart rather than writing one: the settlement is not the sugar revolution and did not contain it in embryo. What it supplied was an English island with cleared ground, a population and a proprietor — the thing Drax could bring a mill back to in 1640.",
+  "dispute": null
+}

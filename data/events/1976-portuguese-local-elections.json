@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "1976-portuguese-local-elections",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q7232774",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1976 Portuguese local elections",
+    "pt": "Eleições autárquicas portuguesas de 1976"
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1976 Portuguese local elections\", revision 1368844806"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições autárquicas portuguesas de 1976\", revision 72409266"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "1976 Portuguese local elections",
+  "summary": "Portugal elected its municipal chambers and parish assemblies on 12 December 1976, in the first local elections held under the constitution approved that April. They closed a year of three national ballots — the legislative election of 25 April, the presidential election of 27 June and this one — and they were the first time since the Republic of 1910 that local government was chosen by its own voters rather than appointed from Lisbon. It is in the atlas as the completion of the institutions of 1976 from the bottom up, and as the start of the second arena of Portuguese party competition, one that has never lined up neatly with the first.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "date": "1976-12-12"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "government",
+      "note": "the state constituting local power"
+    }
+  ]
+}

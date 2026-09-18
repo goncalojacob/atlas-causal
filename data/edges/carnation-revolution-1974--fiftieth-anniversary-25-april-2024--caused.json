@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "carnation-revolution-1974--fiftieth-anniversary-25-april-2024--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "ar-2024-fiftieth-anniversary",
+      "locator": null
+    }
+  ],
+  "from": "carnation-revolution-1974",
+  "to": "fiftieth-anniversary-25-april-2024",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The commemoration exists because of the coup it commemorates, and the form it takes — a solemn session of parliament, a march down the Avenida da Liberdade, a public holiday — was settled in the years immediately after 1974 and has been argued over at every round number since. The fiftieth fell three weeks after a legislative election, in a chamber whose arithmetic had just changed.",
+  "dispute": null
+}

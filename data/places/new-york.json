@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "new-york",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "wikidata-assigned-by-assistant"
+    ]
+  },
+  "wikidata": "Q60",
+  "wikipedia": {
+    "en": "New York City",
+    "pt": "Nova Iorque"
+  },
+  "sitelinks": {
+    "count": 265,
+    "on": "2026-09-03"
+  },
+  "sources": [],
+  "names": [
+    "New York"
+  ],
+  "where": {
+    "lon": -73.97,
+    "lat": 40.75,
+    "precision": "city",
+    "label": "New York"
+  },
+  "region": null,
+  "summary": null
+}

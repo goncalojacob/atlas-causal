@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "jose-luciano-de-castro",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted",
+      "date"
+    ],
+    "note": "The years were written from the assistant’s memory in M31-3 and have not been read in a source. The works cited are where a reviewer should check them, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "José Luciano de Castro",
+    "José Luciano de Castro Pereira Corte-Real"
+  ],
+  "summary": "José Luciano de Castro (1834–1914) led the Progressive Party and was President of the Council of Ministers of Portugal three times under the constitutional monarchy: from 1886 to 1890, from 1897 to 1900 and from 1904 to 1906. He is in the atlas as the holder of those three turns at the headship of the government.",
+  "when": {
+    "start": 1834,
+    "end": 1914
+  },
+  "where": null
+}

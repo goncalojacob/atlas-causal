@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "russian-revolution-of-1905--february-revolution--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian Revolution of 1905\", revision 1371938345"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"February Revolution\", revision 1370618162"
+    }
+  ],
+  "from": "russian-revolution-of-1905",
+  "to": "february-revolution",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "February 1917 repeated 1905 in its form — a strike in the capital, the garrison refusing to fire, a council of workers' and soldiers' deputies constituting itself beside the official assembly — because the institutions and the people were the ones 1905 had made. The soviet was a device invented in St Petersburg twelve years earlier; the parties that filled it had been legalised, and then harassed, under the constitution 1905 extracted. The claim is about the repertoire and the personnel, not that 1905 made 1917 inevitable.",
+  "dispute": null
+}

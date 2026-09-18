@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "united-arab-emirates-under-united-kingdom-1892",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 529"
+    }
+  ],
+  "actor": "united-arab-emirates-under-united-kingdom",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1892,
+    "end": 1913,
+    "date": "1892-03-08",
+    "endDate": "1913-07-28"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "529"
+  },
+  "capital": {
+    "lon": 54.366661,
+    "lat": 24.46667,
+    "precision": "city",
+    "label": "Abu Dhabi"
+  },
+  "confidence": "consensus"
+}

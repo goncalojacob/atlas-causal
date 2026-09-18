@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "fixture-actor-one",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "wikidata": "Q1000000002",
+  "wikipedia": {
+    "en": "Fixture Actor One"
+  },
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-01-01"
+  },
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Fixture Actor One",
+    "Fixture the Elder"
+  ],
+  "summary": "Synthetic record used by the test suite. This person never lived and did nothing.",
+  "when": {
+    "start": 1180,
+    "end": 1240
+  },
+  "where": {
+    "lon": -30,
+    "lat": 40,
+    "precision": "city",
+    "label": "Fixture place A"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "cuba-1898",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 15"
+    }
+  ],
+  "actor": "cuba",
+  "presenceType": "state",
+  "dependencyOf": "united-states-of-america",
+  "dependencyKind": "occupied",
+  "when": {
+    "start": 1898,
+    "end": 1902,
+    "date": "1898-12-10",
+    "endDate": "1902-05-19"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "15"
+  },
+  "capital": {
+    "lon": -82.364166,
+    "lat": 23.13194,
+    "precision": "city",
+    "label": "Havana"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "parnamirim",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [],
+  "names": [
+    "Parnamirim, Rio Grande do Norte"
+  ],
+  "where": {
+    "lon": -35.262778,
+    "lat": -5.915833,
+    "precision": "city",
+    "label": "Parnamirim Field, beside Natal"
+  },
+  "region": null,
+  "summary": null
+}

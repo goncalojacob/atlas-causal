@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "southern-zone-of-spanish-morocco-1956",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 697"
+    }
+  ],
+  "actor": "southern-zone-of-spanish-morocco",
+  "presenceType": "state",
+  "dependencyOf": "spain",
+  "dependencyKind": "protectorate",
+  "when": {
+    "start": 1956,
+    "end": 1958,
+    "date": "1956-04-07",
+    "endDate": "1958-04-09"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "697"
+  },
+  "capital": {
+    "lon": -12.922222,
+    "lat": 27.93889,
+    "precision": "city",
+    "label": "Tarfaya"
+  },
+  "confidence": "consensus"
+}

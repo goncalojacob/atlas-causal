@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "amilcar-cabral-paigc-1956",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "person": "amilcar-cabral",
+  "office": "leadership-of-paigc",
+  "when": {
+    "start": 1956,
+    "end": 1973
+  },
+  "startedBy": null,
+  "note": "Founder, and its leader until he was killed in January 1973."
+}

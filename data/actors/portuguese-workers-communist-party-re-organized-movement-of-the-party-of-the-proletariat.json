@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "portuguese-workers-communist-party-re-organized-movement-of-the-party-of-the-proletariat",
+  "kind": "actor",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-08",
+    "reason": "Retracted in M41b: the PCTP/MRPP, the Maoist party founded on 18 September 1970 and legalised in 1975. The atlas holds the revolutionary period in some detail and no record of the far left outside the PCP; the leads say when the party was founded and renamed and nothing about anything it did. There is no honest way from either to the other."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-retracted"
+    ]
+  },
+  "wikidata": "Q2054628",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-09-08"
+  },
+  "wikipedia": {
+    "en": "Portuguese Workers' Communist Party",
+    "pt": "Partido Comunista dos Trabalhadores Portugueses"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2054628"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Portuguese Workers' Communist Party/Re-Organized Movement of the Party of the Proletariat",
+    "PCTP/MRPP",
+    "Portuguese Workers' Communist Party",
+    "Partido Comunista dos Trabalhadores Portugueses"
+  ],
+  "summary": "Wikidata item Q2054628, imported by tools/import/wikidata.mjs. The item's own description reads \"communist political party in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1970,
+    "end": null
+  },
+  "where": null
+}

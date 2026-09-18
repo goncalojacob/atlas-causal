@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/wikipedia-lead.json",
+  "title": "Cached Wikipedia lead",
+  "description": "One article's opening paragraphs as they stood at one revision, kept under tools/import/cache/wikipedia/ so a drafting run can read the same text twice and a reviewer can go and check it. It is somebody else's writing under CC BY-SA 4.0, not this atlas's: it lives outside data/, is never a record, is never published with the site (deploy.yml removes the cache before the Pages upload), and nothing in data/ may be a copy of it. The envelope exists so that the text always travels with the revision it came from and a link to the history that proves it.",
+  "type": "object",
+  "required": ["qid", "lang", "title", "revid", "fetched", "license", "url", "historyUrl", "text"],
+  "additionalProperties": false,
+  "properties": {
+    "qid": {
+      "type": "string",
+      "pattern": "^Q[1-9][0-9]*$",
+      "maxLength": 20
+    },
+    "lang": {
+      "description": "The language edition the text is from. Which edition matters: the editions are not translations of each other.",
+      "type": "string",
+      "pattern": "^[a-z]{2,3}(-[a-z0-9]{2,8})*$",
+      "maxLength": 20
+    },
+    "title": { "type": "string", "minLength": 1, "maxLength": 300 },
+    "revid": {
+      "description": "The revision the text was taken from. Without it the cache is a quotation of nothing in particular.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "fetched": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "license": { "const": "CC-BY-SA-4.0" },
+    "url": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "historyUrl": {
+      "description": "The article's history, which is where the attribution the licence requires actually lives: the list of everyone who wrote it.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "text": {
+      "description": "The lead section as plain text. Long, and deliberately not trimmed: a drafting run that reads half a paragraph draws worse conclusions than one that reads all of it.",
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

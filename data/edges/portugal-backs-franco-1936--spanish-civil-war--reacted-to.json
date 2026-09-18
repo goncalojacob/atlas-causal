@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "portugal-backs-franco-1936--spanish-civil-war--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish Civil War\", revision 1373335825"
+    }
+  ],
+  "from": "portugal-backs-franco-1936",
+  "to": "spanish-civil-war",
+  "type": "reacted-to",
+  "confidence": "consensus",
+  "explanation": "Salazar's government did not have a Spanish policy before July 1936 and improvised one in a fortnight, out of the belief that a Popular Front victory next door would not stop at the border. Everything it then did — the frontier left open to the rebels, Radio Club Português put at their disposal, republican refugees returned to be shot, the Viriatos allowed to enlist, and the seat on the Non-Intervention Committee taken in order to be obstructive from inside — is a response to the war rather than a policy the war interrupted. The atlas keeps the direction of that dependence explicit because the Estado Novo later preferred to tell it the other way round.",
+  "dispute": null
+}

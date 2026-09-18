@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "1987-european-parliament-election-in-portugal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q2404857",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1987 European Parliament election in Portugal",
+    "pt": "Eleições europeias de 1987 (Portugal)"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1987 European Parliament election in Portugal\", revision 1355729527"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições europeias de 1987 (Portugal)\", revision 71024054"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "1987 European Parliament election in Portugal",
+  "summary": "Portugal elected its twenty-four members of the European Parliament for the first time on 19 July 1987, the same day as the legislative election that gave the Social Democrats their absolute majority. The country had acceded on 1 January 1986 and had been represented until then by delegates appointed from the Assembly of the Republic; this ballot filled the remainder of the 1984–1989 term. It is in the atlas as the point at which membership of the Communities became something Portuguese voters were asked about directly, eighteen months after it took effect — and, because the two ballots were held on one day, as an early sign of how little a European election would ever be about Europe here.",
+  "when": {
+    "start": 1987,
+    "end": 1987,
+    "date": "1987-07-19"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "government",
+      "note": "the state holding the election"
+    },
+    {
+      "actor": "european-economic-community",
+      "role": "government",
+      "note": "the parliament being elected to"
+    }
+  ]
+}

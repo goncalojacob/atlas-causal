@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "budapest-memorandum",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A. The memorandum of 1994 argues forward to the Russo-Ukrainian war of 2014 and to the full-scale war of 2022, which are both records here and both reach no Portuguese event at all; the atlas holds nothing of Portugal and Ukraine, neither the Ukrainian emigration to Portugal after 2001 nor any Portuguese act after February 2022. Wiring the memorandum to two stranded records would have left three where there were two."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q1000658",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Budapest Memorandum",
+    "pt": "Memorando de Budapeste sobre Garantias de Segurança"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1000658"
+    }
+  ],
+  "title": "Budapest Memorandum",
+  "summary": "Wikidata item Q1000658, imported by tools/import/wikidata.mjs. The item's own description reads \"international treaty of Ukraine, the United States, Russia, and the United Kingdom\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1994,
+    "end": 1994,
+    "date": "1994-12-05"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

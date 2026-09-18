@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "the-atlantic-slave-trade-to-the-caribbean--the-cuban-sugar-boom--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Atlantic slave trade\", revision 1375257090"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    }
+  ],
+  "from": "the-atlantic-slave-trade-to-the-caribbean",
+  "to": "the-cuban-sugar-boom",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Cuban boom is the last chapter of the traffic this chain is centred on and not a new thing: Cuba kept slavery until October 1886, half a century after the British islands and two years before Brazil, and it kept importing while it could. `enabled` rather than `caused`, because the boom’s occasion was Haiti and its market was North American; what the traffic supplied was the only labour force the Cuban planters intended to use.",
+  "dispute": null
+}

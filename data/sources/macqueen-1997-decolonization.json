@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "macqueen-1997-decolonization",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "type": "book",
+  "creators": [
+    "Norrie MacQueen"
+  ],
+  "title": "The Decolonization of Portuguese Africa: Metropolitan Revolution and the Dissolution of Empire",
+  "year": 1997,
+  "publisher": "Longman",
+  "isbn": null,
+  "doi": null,
+  "url": "https://search.worldcat.org/search?q=The%20Decolonization%20of%20Portuguese%20Africa%3A%20Metropolitan%20Revolution%20and%20the%20Dissolution%20of%20Empire%20Norrie%20MacQueen",
+  "accessed": null,
+  "repository": null,
+  "reference": null
+}

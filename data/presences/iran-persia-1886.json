@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "iran-persia-1886",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-16",
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 474"
+    }
+  ],
+  "actor": "persia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1886,
+    "end": 1925,
+    "date": "1886-01-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "474"
+  },
+  "capital": {
+    "lon": 51.42445,
+    "lat": 35.67194,
+    "precision": "city",
+    "label": "Tehran"
+  },
+  "confidence": "consensus",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m51-split"
+    ],
+    "note": "M51: entity 630's single period ran 1886 to 2019 and Wikidata's P576 1925 on Q63158027 falls inside it, so it is cut in two rather than given whole to either actor. This half is Qajar Iran's; iran-persia-1925 is the other. The outline is the one CShapes filed under this key and is not redrawn: it is identical in all five period files."
+  }
+}

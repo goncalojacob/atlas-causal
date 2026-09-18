@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "santana-lopes-prime-minister-2004",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval was written from the assistant’s memory in M31-2 and has not been read in a source. The works cited are where a reviewer should check it, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "person": "santana-lopes",
+  "office": "prime-minister-of-portugal",
+  "when": {
+    "start": 2004,
+    "end": 2005
+  },
+  "startedBy": null,
+  "note": "Prime minister from July 2004 until March 2005, after the President dissolved the Assembly and called an election."
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "imf",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "wikidata-assigned-by-assistant"
+    ]
+  },
+  "wikidata": "Q7804",
+  "wikipedia": {
+    "en": "International Monetary Fund",
+    "pt": "Fundo Monetário Internacional"
+  },
+  "sitelinks": {
+    "count": 143,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "International Monetary Fund",
+    "IMF",
+    "Fundo Monetário Internacional",
+    "FMI"
+  ],
+  "summary": "The International Monetary Fund, founded in 1945, appears in this atlas as one of the external constraints on Portuguese economic policy. Its stabilisation programmes framed the response to the balance-of-payments crises of 1977 and 1983 that followed the revolution and the oil shocks, and it returned in 2011 as one of the three institutions — with the European Commission and the European Central Bank — behind the adjustment programme. It is in the atlas because twice, a generation apart, the terms of Portuguese fiscal policy were written with it at the table.",
+  "when": {
+    "start": 1945,
+    "end": null
+  },
+  "where": {
+    "lon": -77.04,
+    "lat": 38.9,
+    "precision": "city",
+    "label": "Washington, D.C."
+  }
+}

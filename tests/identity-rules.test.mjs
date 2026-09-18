@@ -1,0 +1,295 @@
+// Rules 21 and 22, and the citation-flag half of rule 3. Everything here is
+// synthetic: fixture-* ids, invented titles, Q-numbers chosen because they
+// are short. No historical claim anywhere.
+
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { checkRules, citedSources, WIKIPEDIA_SOURCES, WRITER_NAMES } from '../src/validate/rules.js';
+import { validate, buildTopology } from '../src/validate/core.js';
+import { createRegionDeriver } from '../src/util/geo.js';
+import { fixtures, schemas, clone } from './helpers.mjs';
+
+async function run(mutate = () => {}) {
+  const fx = await fixtures();
+  mutate(fx);
+  const topology = buildTopology(fx.records, fx.regions, { deriveRegion: createRegionDeriver(fx.polygons) });
+  return validate(fx.records, topology, await schemas());
+}
+
+const rulesHit = (result, rule) => result.errors.filter((e) => e.rule === rule);
+const messages = (result) => result.errors.map((e) => `${e.rule} ${e.id}${e.path}: ${e.message}`).join('\n');
+
+// --- the schema accepts them ------------------------------------------------
+
+test('the schemas accept the three identity fields on an event, an actor and a place', async () => {
+  const r = await run((fx) => {
+    fx.byId['fixture-event-a'].wikidata = 'Q11';
+    fx.byId['fixture-event-a'].wikipedia = { en: 'Fixture article A', 'pt-br': 'Artigo de fixture A' };
+    fx.byId['fixture-event-a'].sitelinks = { count: 0, on: '2026-09-05' };
+    fx.byId['fixture-actor-one'].wikidata = 'Q12';
+    fx.byId['fixture-actor-one'].sitelinks = { count: 7, on: '2026-09-05' };
+    fx.byId['fixture-place-a'].wikidata = 'Q13';
+    fx.byId['fixture-place-a'].wikipedia = { pt: 'Lugar de fixture A' };
+  });
+  assert.equal(r.errors.length, 0, messages(r));
+});
+
+test('the schema refuses a malformed item id, a non-string title and a negative count', async () => {
+  let r = await run((fx) => { fx.byId['fixture-event-a'].wikidata = 'Q0'; });
+  assert.equal(rulesHit(r, 1)[0].path, '/wikidata');
+  r = await run((fx) => { fx.byId['fixture-event-a'].wikidata = 'https://www.wikidata.org/wiki/Q42'; });
+  assert.equal(rulesHit(r, 1)[0].path, '/wikidata');
+  r = await run((fx) => {
+    fx.byId['fixture-event-a'].wikidata = 'Q11';
+    fx.byId['fixture-event-a'].wikipedia = { en: 42 };
+  });
+  assert.equal(rulesHit(r, 1)[0].path, '/wikipedia/en');
+  r = await run((fx) => { fx.byId['fixture-event-a'].sitelinks = { count: -1, on: '2026-09-05' }; });
+  assert.equal(rulesHit(r, 1)[0].path, '/sitelinks/count');
+  r = await run((fx) => { fx.byId['fixture-event-a'].sitelinks = { count: 1.5, on: '2026-09-05' }; });
+  assert.equal(rulesHit(r, 1)[0].path, '/sitelinks/count');
+  // A count with no date is the shape the migration took away: it says a
+  // third party's number is a fact of this record's own (finding 23b).
+  r = await run((fx) => { fx.byId['fixture-event-a'].sitelinks = 3; });
+  assert.equal(rulesHit(r, 1)[0].path, '/sitelinks');
+  // An edge is an argument about things, not a thing: it has no item, and
+  // the schema says so before rule 21 has to.
+  r = await run((fx) => { fx.byId['fixture-event-a--fixture-event-b--caused'].wikidata = 'Q11'; });
+  assert.equal(rulesHit(r, 1)[0].path, '/wikidata');
+});
+
+// --- rule 21 ---------------------------------------------------------------
+
+test('rule 21: one item, one record of a kind', async () => {
+  const r = await run((fx) => {
+    fx.byId['fixture-event-a'].wikidata = 'Q11';
+    fx.byId['fixture-event-b'].wikidata = 'Q11';
+  });
+  const hits = rulesHit(r, 21);
+  assert.equal(hits.length, 2, messages(r));
+  assert.equal(hits[0].path, '/wikidata');
+  assert.match(hits[0].message, /already the Wikidata item of the event/);
+});
+
+test('rule 21: two kinds may claim the same item, because they are two things', async () => {
+  // A polity and the place it is named after are different records and the
+  // atlas does not decide that they are the same thing.
+  const r = await run((fx) => {
+    fx.byId['fixture-actor-one'].wikidata = 'Q11';
+    fx.byId['fixture-place-a'].wikidata = 'Q11';
+  });
+  assert.equal(rulesHit(r, 21).length, 0, messages(r));
+});
+
+test('rule 21: a Wikipedia title without an item is refused', async () => {
+  const r = await run((fx) => {
+    delete fx.byId['fixture-event-a'].wikidata;
+    fx.byId['fixture-event-a'].wikipedia = { en: 'Fixture article A' };
+  });
+  const hits = rulesHit(r, 21);
+  assert.equal(hits.length, 1, messages(r));
+  assert.equal(hits[0].path, '/wikipedia');
+  assert.match(hits[0].message, /beside the Wikidata item/);
+});
+
+test('rule 21: a language key that is not a language code is refused', async () => {
+  const r = await run((fx) => {
+    fx.byId['fixture-event-a'].wikidata = 'Q11';
+    fx.byId['fixture-event-a'].wikipedia = { 'evil.example.com': 'Fixture article A' };
+  });
+  assert.equal(rulesHit(r, 21)[0].path, '/wikipedia/evil.example.com');
+});
+
+test('rule 21: a kind that has no identity is caught even when the schema is bypassed', () => {
+  const r = checkRules([{
+    id: 'fixture-source-x', kind: 'source', status: 'active', license: 'CC-BY-SA-4.0',
+    authors: [{ name: 'Fixture Author', github: null }], type: 'web', creators: ['Somebody'],
+    title: 'A fixture source', url: 'https://example.org/', accessed: '2026-01-01', wikidata: 'Q11',
+  }], {});
+  assert.match(r.errors.find((e) => e.rule === 21).message, /only event, actor, place/);
+});
+
+test('rule 21: uniqueness is judged against the whole atlas, not only the bundle', async () => {
+  const fx = await fixtures();
+  fx.byId['fixture-event-a'].wikidata = 'Q11';
+  const topology = buildTopology(fx.records, fx.regions);
+  const newcomer = { ...clone(fx.byId['fixture-event-h']), id: 'fixture-event-new', title: 'Fixture event NEW', wikidata: 'Q11' };
+  const r = checkRules([newcomer], topology);
+  assert.match(r.errors.find((e) => e.rule === 21).message, /already the Wikidata item/);
+});
+
+// --- rule 22 ---------------------------------------------------------------
+
+// The two Wikipedia records the atlas cites are written by one body of
+// editors, so rule 9 refuses this pair as well. Rule 22 is asserted on its
+// own terms: a single Wikipedia citation that rule 9 never sees.
+test('rule 22: consensus cannot rest on Wikipedia alone', async () => {
+  const r = await run((fx) => {
+    for (const id of WIKIPEDIA_SOURCES) {
+      fx.records.push({
+        ...clone(fx.byId['fixture-source-1']), id, type: 'web', creators: ['Wikipedia contributors'],
+        title: `Fixture stand-in for ${id}`, url: 'https://example.org/', accessed: '2026-09-04',
+      });
+    }
+    const edge = fx.byId['fixture-event-a--fixture-event-b--caused'];
+    edge.confidence = 'consensus';
+    edge.sources = WIKIPEDIA_SOURCES.map((source) => ({ source, locator: null }));
+  });
+  const hits = rulesHit(r, 22);
+  assert.equal(hits.length, 1, messages(r));
+  assert.equal(hits[0].path, '/sources');
+  assert.match(hits[0].message, /cannot rest on Wikipedia alone/);
+});
+
+test('rule 22: one other source is enough, and probable is never touched', async () => {
+  const seed = (fx) => {
+    for (const id of WIKIPEDIA_SOURCES) {
+      fx.records.push({
+        ...clone(fx.byId['fixture-source-1']), id, type: 'web', creators: ['Wikipedia contributors'],
+        title: `Fixture stand-in for ${id}`, url: 'https://example.org/', accessed: '2026-09-04',
+      });
+    }
+    return fx.byId['fixture-event-a--fixture-event-b--caused'];
+  };
+  let r = await run((fx) => {
+    const edge = seed(fx);
+    edge.confidence = 'consensus';
+    edge.sources = [{ source: 'wikipedia-en', locator: null }, { source: 'fixture-source-2', locator: null }];
+  });
+  assert.equal(rulesHit(r, 22).length, 0, messages(r));
+  r = await run((fx) => {
+    const edge = seed(fx);
+    edge.confidence = 'probable';
+    edge.sources = [{ source: 'wikipedia-en', locator: null }];
+  });
+  assert.equal(rulesHit(r, 22).length, 0, messages(r));
+});
+
+// --- rule 3: the keys of the citation flags --------------------------------
+
+test('citedSources is the distinct sources a record rests on, dissent included', async () => {
+  const { byId } = await fixtures();
+  const disputed = Object.values(byId).find((r) => r.kind === 'edge' && r.confidence === 'disputed');
+  assert.ok(disputed, 'the fixtures have a disputed edge');
+  const cited = citedSources(disputed);
+  assert.deepEqual([...new Set(cited)], cited, 'no source is counted twice');
+  for (const c of [...disputed.sources, ...disputed.dispute.sources]) assert.ok(cited.includes(c.source));
+  assert.deepEqual(citedSources({}), []);
+});
+
+test('rule 3: a verification flag names a source the record actually cites', async () => {
+  let r = await run((fx) => {
+    const event = fx.byId['fixture-event-a'];
+    event.review = { flags: [], citations: { [event.sources[0].source]: { verified: { by: 'A Reviewer', on: '2026-09-04' } } } };
+  });
+  assert.equal(r.errors.length, 0, messages(r));
+  r = await run((fx) => {
+    fx.byId['fixture-event-a'].review = { flags: [], citations: { 'fixture-source-4': { verified: null } } };
+  });
+  const hits = rulesHit(r, 3);
+  assert.equal(hits.length, 1, messages(r));
+  assert.equal(hits[0].path, '/review/citations/fixture-source-4');
+});
+
+test('the schema holds the shape of a verification', async () => {
+  let r = await run((fx) => {
+    const event = fx.byId['fixture-event-a'];
+    event.review = { flags: [], citations: { [event.sources[0].source]: { verified: { by: 'A Reviewer' } } } };
+  });
+  assert.equal(rulesHit(r, 1).length, 1, messages(r));
+  r = await run((fx) => {
+    const event = fx.byId['fixture-event-a'];
+    event.review = { flags: [], citations: { [event.sources[0].source]: { verified: { by: 'A Reviewer', on: 'yesterday' } } } };
+  });
+  assert.equal(rulesHit(r, 1).length, 1, messages(r));
+  r = await run((fx) => {
+    const event = fx.byId['fixture-event-a'];
+    event.review = { flags: [], citations: { [event.sources[0].source]: { checked: true } } };
+  });
+  assert.ok(rulesHit(r, 1).length >= 1, messages(r));
+});
+
+// --- rules 27, 28, 29: the envelope's conditional requirements --------------
+// Three fields whose meaning is a relation between fields, which is why they
+// are rules and not schema keywords.
+
+test('rule 27: a retraction and a tombstone stand or fall together', async () => {
+  const reason = { on: '2026-09-05', reason: 'A synthetic withdrawal, written in a test.' };
+  // Retracted and saying why: the shape every tombstone in data/ carries.
+  let r = await run((fx) => {
+    fx.byId['fixture-event-b'].status = 'retracted';
+    fx.byId['fixture-event-b'].retraction = { ...reason };
+  });
+  assert.equal(rulesHit(r, 27).length, 0, messages(r));
+
+  // Retracted and silent: the history has gone missing, which is what taking
+  // the reason out of `review.note` was meant to make impossible.
+  r = await run((fx) => { fx.byId['fixture-event-b'].status = 'retracted'; });
+  assert.equal(rulesHit(r, 27)[0].path, '/retraction');
+  assert.match(rulesHit(r, 27)[0].message, /says when it was withdrawn and why/);
+
+  // A retraction on a record that is not one says nothing true.
+  r = await run((fx) => { fx.byId['fixture-event-b'].retraction = { ...reason }; });
+  assert.match(rulesHit(r, 27)[0].message, /only a retracted record/);
+  r = await run((fx) => {
+    fx.byId['fixture-event-b'].status = 'merged';
+    fx.byId['fixture-event-b'].supersededBy = 'fixture-event-a';
+    fx.byId['fixture-event-b'].retraction = { ...reason };
+  });
+  assert.equal(rulesHit(r, 27).length, 1);
+});
+
+test('rule 28: a reviewed record names who signed it', async () => {
+  let r = await run((fx) => { fx.byId['fixture-event-a'].review = { status: 'reviewed' }; });
+  assert.equal(rulesHit(r, 28)[0].path, '/review/signedBy');
+  r = await run((fx) => { fx.byId['fixture-event-a'].review = { status: 'reviewed', signedBy: [] }; });
+  assert.equal(rulesHit(r, 28).length, 1, 'an empty list is nobody');
+  r = await run((fx) => {
+    fx.byId['fixture-event-a'].review = { status: 'reviewed', signedBy: [{ name: 'A Reviewer', github: 'reviewer', on: '2026-09-05' }] };
+  });
+  assert.equal(r.errors.length, 0, messages(r));
+  // `draft` claims nothing about a person, so it asks for nobody.
+  r = await run((fx) => { fx.byId['fixture-event-a'].review = { status: 'draft' }; });
+  assert.equal(r.errors.length, 0, messages(r));
+});
+
+test('rule 29: a record an automated writer made says so in origin', async () => {
+  let r = await run((fx) => {
+    fx.byId['fixture-event-a'].authors = [{ name: WRITER_NAMES[1], github: null }];
+  });
+  assert.equal(rulesHit(r, 29)[0].path, '/origin');
+  r = await run((fx) => {
+    fx.byId['fixture-event-a'].authors = [{ name: WRITER_NAMES[1], github: null }];
+    fx.byId['fixture-event-a'].origin = { tool: 'wikidata' };
+  });
+  assert.equal(rulesHit(r, 29).length, 0, messages(r));
+  // A person's record carries no origin at all, and that is what absent means.
+  r = await run((fx) => {
+    fx.byId['fixture-event-a'].authors = [{ name: 'A Person', github: null }];
+  });
+  assert.equal(rulesHit(r, 29).length, 0, messages(r));
+});
+
+// --- rule 18, the half about events ----------------------------------------
+
+test('rule 18: an event\'s other names are optional, and held to a shape', async () => {
+  // The list exists because the atlas could not be searched for its most
+  // famous event by its common name (health review B, finding 17). It is
+  // optional where a place's is required: the title is already the display
+  // name, so an event nobody calls anything else carries no key at all.
+  let r = await run((fx) => { fx.byId['fixture-event-a'].names = ['A Fixture Rising', 'O Levantamento']; });
+  assert.equal(rulesHit(r, 18).length, 0, messages(r));
+  r = await run(() => {});
+  assert.equal(rulesHit(r, 18).length, 0, 'no key at all is the ordinary case');
+
+  r = await run((fx) => { fx.byId['fixture-event-a'].names = []; });
+  assert.match(rulesHit(r, 18)[0].message, /carries no list, rather than an empty one/);
+  r = await run((fx) => { fx.byId['fixture-event-a'].names = ['A Fixture Rising', 'A Fixture Rising']; });
+  assert.equal(rulesHit(r, 18)[0].path, '/names/1');
+  // The title in the list would be a second hit for one record.
+  r = await run((fx) => {
+    const event = fx.byId['fixture-event-a'];
+    event.names = [event.title, 'O Levantamento'];
+  });
+  assert.match(rulesHit(r, 18)[0].message, /the title is already the display name/);
+});

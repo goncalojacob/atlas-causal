@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "european-commission--european-union--part-of",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "from": "european-commission",
+  "to": "european-union",
+  "type": "part-of",
+  "when": {
+    "start": 1993,
+    "end": null
+  },
+  "note": "The Union's executive, and before 1993 the Community's; this record starts where the Union does."
+}

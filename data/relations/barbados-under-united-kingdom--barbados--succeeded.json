@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "barbados-under-united-kingdom--barbados--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 53"
+    }
+  ],
+  "from": "barbados-under-united-kingdom",
+  "to": "barbados",
+  "type": "succeeded",
+  "when": {
+    "start": 1966,
+    "end": 1966,
+    "date": "1966-11-30"
+  },
+  "note": "CShapes holds 53 as a colony of United Kingdom to 1966-11-29; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+}

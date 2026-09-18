@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-atlantic-slave-trade-to-brazil--lei-aurea-1888--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lei Áurea\", revision 1368931269"
+    }
+  ],
+  "from": "the-atlantic-slave-trade-to-brazil",
+  "to": "lei-aurea-1888",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The long edge in this chain, three hundred and forty-eight years end to end, and the weakest type on purpose. The traffic did not bring about its own abolition; a movement, a princess regent and a parliament did that. What it did was determine what there was to abolish — the largest enslaved population in the Americas, built by five and a half million landings — and therefore why Brazil was the last country in the hemisphere to act and why, when it acted, it did so without compensating anybody. An edge of this length is here to be argued with, which is what its explanation is for.",
+  "dispute": null
+}

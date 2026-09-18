@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "young-turk-revolution-of-1908--armenian-genocide--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Young Turk Revolution\", revision 1372902192"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Armenian genocide\", revision 1367030542"
+    }
+  ],
+  "from": "young-turk-revolution-of-1908",
+  "to": "armenian-genocide",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The deportations and killings of 1915 were ordered by the Committee of Union and Progress, which is the organisation that made the revolution of 1908 and which held the Ottoman state after the coup of 1913. The claim is about who was in a position to order it and with what apparatus, not that the constitutional revolution contained the genocide: the Armenian deputies elected in 1908 sat in the parliament the revolution restored, and the programme the Committee carried out in 1915 was one it arrived at after the loss of the Balkans, not one it began with.",
+  "dispute": null
+}

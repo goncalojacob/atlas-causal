@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "1948-arab-israeli-war--1952-egyptian-revolution--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1948 Arab–Israeli War\", revision 1374830770"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Egyptian revolution of 1952\", revision 1374209538"
+    }
+  ],
+  "from": "1948-arab-israeli-war",
+  "to": "1952-egyptian-revolution",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Free Officers were made in Palestine. The defeat of 1948, the scandal over defective weapons bought by the palace, and the conviction that the army had been sent to fight with nothing by a government that was corrupt and a king who was worse are what the officers who took power on 23 July 1952 said had brought them together; Nasser and Naguib had both served in that war. The claim is about the movement and its grievance. Egypt in 1952 had other causes as well, the British presence in the canal zone above all, and this edge does not claim to be the only one.",
+  "dispute": null
+}

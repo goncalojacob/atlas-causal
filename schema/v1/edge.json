@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/edge.json",
+  "title": "Edge",
+  "description": "A causal link: a small historiographical argument. The id is derived, from--to--type, so the same argument cannot be filed twice (rule 2). Five types, no generic one, no strength.",
+  "type": "object",
+  "required": ["schema", "id", "kind", "status", "supersededBy", "aliases", "authors", "license", "created", "revised", "sources", "from", "to", "type", "confidence", "explanation"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "$ref": "../common/provenance.json#/properties/schema" },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*--[a-z0-9]+(-[a-z0-9]+)*--(caused|enabled|reacted-to|precondition-of|inspired)$",
+      "maxLength": 260
+    },
+    "kind": { "const": "edge" },
+    "status": { "$ref": "../common/provenance.json#/properties/status" },
+    "supersededBy": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/properties/id" }
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "$ref": "#/properties/id" }
+    },
+    "authors": { "$ref": "../common/provenance.json#/properties/authors" },
+    "license": { "$ref": "../common/provenance.json#/properties/license" },
+    "created": { "$ref": "../common/provenance.json#/properties/created" },
+    "revised": { "$ref": "../common/provenance.json#/properties/revised" },
+    "review": { "$ref": "../common/provenance.json#/properties/review" },
+    "origin": { "$ref": "../common/provenance.json#/properties/origin" },
+    "retraction": { "$ref": "../common/provenance.json#/properties/retraction" },
+    "sources": {
+      "description": "Supporting citations. Dissenting ones go in dispute.sources, kept apart so the panel can show which is which.",
+      "$ref": "../common/provenance.json#/properties/sources"
+    },
+    "from": { "$ref": "../common/provenance.json#/properties/id" },
+    "to": { "$ref": "../common/provenance.json#/properties/id" },
+    "type": {
+      "type": "string",
+      "enum": ["caused", "enabled", "reacted-to", "precondition-of", "inspired"]
+    },
+    "confidence": { "$ref": "../common/confidence.json" },
+    "explanation": {
+      "description": "Written by a person: the argument, not an assertion.",
+      "type": "string",
+      "minLength": 1
+    },
+    "dispute": {
+      "description": "Required when confidence is disputed (rule 8): who disagrees and why, with the dissenting citations.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["text", "sources"],
+          "additionalProperties": false,
+          "properties": {
+            "text": { "type": "string", "minLength": 1 },
+            "sources": { "$ref": "../common/provenance.json#/properties/sources" }
+          }
+        }
+      ]
+    }
+  }
+}

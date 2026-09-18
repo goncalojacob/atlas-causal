@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "batepa-massacre--1975-sao-tomean-legislative-election--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "from": "batepa-massacre",
+  "to": "1975-sao-tomean-legislative-election",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "Twenty-two years is too long for causation and the edge does not claim it. What Batepá did was furnish São Toméan nationalism with the thing it had not had — a grievance against the colonial state that every forro family could name — and the movement that formed in exile in the following decade dated itself from it, as the independent state has done ever since with the day of the martyrs. The ballot of July 1975 is the moment that movement took the islands, and this edge says that the claim it took them with was made at Batepá. `inspired` is the type in this atlas for exactly that relation, and the reason the five types exist.",
+  "dispute": null
+}

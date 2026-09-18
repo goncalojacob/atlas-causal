@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1979-portuguese-legislative-election--constitutional-revision-1982--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "1979-portuguese-legislative-election",
+  "to": "constitutional-revision-1982",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Abolishing the Council of the Revolution meant amending the constitution, and amending it meant two thirds of the deputies. The Democratic Alliance had wanted the Council gone since before it was an alliance, and the election of 2 December 1979 — confirmed at the fresh election of October 1980 — is what put it in charge of the Assembly with the standing to demand the revision. Two thirds it did not have on its own: the text of 1982 was a bargain with the Socialists, and what the 1979 result bought was not the votes but the position from which the bargain could be forced.",
+  "dispute": null
+}

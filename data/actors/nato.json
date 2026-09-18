@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "nato",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q7184",
+  "wikipedia": {
+    "en": "NATO",
+    "pt": "Organização do Tratado do Atlântico Norte"
+  },
+  "sitelinks": {
+    "count": 201,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "NATO",
+    "North Atlantic Treaty Organization",
+    "OTAN",
+    "Organização do Tratado do Atlântico Norte"
+  ],
+  "summary": "The North Atlantic Treaty Organization was founded in April 1949, with Portugal among the twelve original signatories and the only one that was not a democracy — a fact explained by the Azores and by what the 1943 agreement had shown they were worth. Membership professionalised the Portuguese officer corps, sent officers to train abroad, and equipped an army that from 1961 was used for a purpose the alliance had not intended; other members' discomfort about that grew through the 1960s without producing much action. It is in the atlas because the alliance shaped both the armed forces that fought the colonial war and the officers who ended it.",
+  "when": {
+    "start": 1949,
+    "end": null
+  },
+  "where": {
+    "lon": 4.35,
+    "lat": 50.85,
+    "precision": "city",
+    "label": "Brussels"
+  }
+}

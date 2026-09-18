@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "chiado-fire",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the fire that began in the Grandella store on 25 August 1988 and destroyed a large part of the Chiado. Its consequence is the reconstruction Álvaro Siza directed over the following two decades, which the atlas does not hold; without that record there is nothing here for an edge to reach, and a link to anything else would be invented. Revisit when the reconstruction is written."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q10301908",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "pt": "Incêndio do Chiado"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10301908"
+    }
+  ],
+  "title": "Chiado Fire",
+  "summary": "Wikidata item Q10301908, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1988,
+    "end": 1988,
+    "date": "1988-08-25"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

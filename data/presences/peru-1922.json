@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "peru-1922",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 54"
+    }
+  ],
+  "actor": "peru",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1922,
+    "end": 1942,
+    "date": "1922-03-24",
+    "endDate": "1942-01-28"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json"
+    ],
+    "key": "54"
+  },
+  "capital": {
+    "lon": -77.050003,
+    "lat": -12.05,
+    "precision": "city",
+    "label": "Lima"
+  },
+  "confidence": "consensus"
+}

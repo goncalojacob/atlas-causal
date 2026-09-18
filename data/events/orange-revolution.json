@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "orange-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q836386",
+  "sitelinks": {
+    "count": 63,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Orange Revolution",
+    "pt": "Revolução Laranja"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Orange Revolution\", revision 1372581321"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Revolução Laranja\", revision 71828848"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q836386"
+    }
+  ],
+  "title": "Orange Revolution",
+  "summary": "The runoff of the Ukrainian presidential election of November 2004 was awarded to Viktor Yanukovych on a count that observers and much of the country rejected, and Kyiv's Independence Square filled for two months until the Supreme Court ordered the vote rerun; Viktor Yushchenko won it. It was the largest of the post-Soviet electoral revolutions and it delivered less than it promised: the winners quarrelled, the reforms stalled, and the man the square had turned out was elected president in 2010. That disappointment is not a footnote to it — it is why the square filled again nine years later.",
+  "when": {
+    "start": 2004,
+    "end": 2005,
+    "date": "2004-11-22",
+    "endDate": "2005-01-23"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "ukraine",
+      "role": "government"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "molotov-ribbentrop-pact--world-war-ii--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War II\", revision 1372726772"
+    }
+  ],
+  "from": "molotov-ribbentrop-pact",
+  "to": "world-war-ii",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Hitler had decided on Poland before he had the pact, and the British guarantee of March 1939 meant the attack risked a general war. What Moscow supplied on 23 August was the removal of the second front: a Germany not fighting the Soviet Union could fight in the west, and the secret protocol gave Stalin a price for staying out. Poland was attacked nine days later. The claim is about the timing and the confidence of the decision, not that the pact caused the war — the demand on Danzig and the corridor was already made, and Britain and France had already committed themselves.",
+  "dispute": null
+}

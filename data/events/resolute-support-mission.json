@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "resolute-support-mission",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the NATO training mission in Afghanistan, from January 2015 to 2021, to which Portugal contributed a small contingent. It is an act of the alliance and not of Portugal, and the atlas holds nothing of the Portuguese armed forces after 1974 for a contribution to attach to."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q18651204",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "Resolute Support Mission",
+    "pt": "Missão Apoio Resoluto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18651204"
+    }
+  ],
+  "title": "Resolute Support Mission",
+  "summary": "Wikidata item Q18651204, imported by tools/import/wikidata.mjs. The item's own description reads \"NATO-led training, advisory, assistance, and counter-terror mission in the Islamic Republic of Afghanistan (2015–2021)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2014,
+    "end": 2021,
+    "date": "2014-12-28",
+    "endDate": "2021-07-12"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

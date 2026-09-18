@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "flanders",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [],
+  "names": [
+    "Flanders, near Laventie"
+  ],
+  "where": {
+    "lon": 2.78,
+    "lat": 50.62,
+    "precision": "region",
+    "label": "Flanders, near Laventie"
+  },
+  "region": null,
+  "summary": null
+}

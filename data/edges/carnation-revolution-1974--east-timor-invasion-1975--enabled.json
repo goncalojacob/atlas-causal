@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "carnation-revolution-1974--east-timor-invasion-1975--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "from": "carnation-revolution-1974",
+  "to": "east-timor-invasion-1975",
+  "type": "enabled",
+  "confidence": "consensus",
+  "explanation": "The Portuguese withdrawal from Timor during 1975, and the civil conflict that followed, created the vacuum that Indonesia filled; the invasion is generally read as a consequence of decolonisation conducted without the means to guarantee the outcome.",
+  "dispute": null
+}

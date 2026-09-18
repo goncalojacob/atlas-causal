@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "fixture-polity-three-1100",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "actor": "fixture-polity-three",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1100,
+    "end": null,
+    "date": "1100-03-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1100-1199.json",
+      "geo/presences/1200-1299.json"
+    ],
+    "key": "f1"
+  },
+  "capital": {
+    "lon": -25,
+    "lat": 35,
+    "precision": "city",
+    "label": "Fixture seat C"
+  },
+  "confidence": "consensus"
+}

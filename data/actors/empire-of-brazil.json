@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "empire-of-brazil",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m53"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m53-polities"
+    ],
+    "note": "M53: written on Wikidata’s Q217230 — P571 1822-09-07, P576 1889-11-15 — because the atlas had no Brazilian state between 1877 and 1886, both of which are dataset boundaries. `brazil` now begins at this record’s dissolution and the CShapes period of 1886 is cut at the same date. It holds no ground before 1886: Brazilian territory from 1815 to 1886 still sits on records whose own dates have ended, and docs/m53-polities.md §2.4 says what a person must decide about it."
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q217230, P571 1822-09-07"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q217230, P576 1889-11-15"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Empire of Brazil"
+  ],
+  "summary": "A polity whose inception Wikidata states as 1822-09-07 on Q217230 and whose dissolution it states as 1889-11-15. Both years here are those two values and nothing else. It is written because the atlas had no record for the Brazilian state between the colony and the Republic: `viceroyalty-of-brazil` ran to 1877 and `brazil` began in 1886, and both of those are file boundaries rather than foundings, so the whole nineteenth century of Brazil belonged to records whose own dates say it should not have. Its territory is the CShapes period that begins 1886-01-01, cut at this record’s cited dissolution; before 1886 it holds no ground, because neither territory import draws any for it and drawing one here is not this milestone’s work.",
+  "when": {
+    "start": 1822,
+    "end": 1889
+  },
+  "where": null
+}

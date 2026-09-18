@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "hereditary-captaincies-of-brazil-1534--the-atlantic-slave-trade-to-brazil--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Captaincies of Brazil\", revision 1360950595"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    }
+  ],
+  "from": "hereditary-captaincies-of-brazil-1534",
+  "to": "the-atlantic-slave-trade-to-brazil",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The captaincies failed as an administration and succeeded as a land settlement: they put the coast into private hands in very large pieces, granted with everything on them, and it was on two of those pieces that the first engenhos were built after 1542. A plantation is a unit of property before it is a unit of production, and the traffic that later supplied it had somewhere to deliver to because of how the land had been cut up. The type is the weak one: the grants did not bring the trade about, they are what it arrived into.",
+  "dispute": null
+}

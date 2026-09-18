@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-tordesillas-1494",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Tordesillas\", revision 1374273992"
+    }
+  ],
+  "title": "Treaty of Tordesillas",
+  "summary": "Signed at Tordesillas on 7 June 1494 and ratified by Castile on 2 July and by Portugal on 5 September, the treaty drew a meridian 370 leagues west of the Cape Verde islands and gave the lands east of it to Portugal and those west of it to Castile, amending an earlier bull of Alexander VI. The line was meant to settle the quarrel that followed Columbus’s return in 1493; it also left the whole Guinea coast, and a wedge of a continent nobody in Europe had yet charted, on the Portuguese side. Portugal and Spain largely respected it. The indigenous peoples of the Americas were not party to it and did not acknowledge it.",
+  "when": {
+    "start": 1494,
+    "end": 1494,
+    "date": "1494-06-07"
+  },
+  "place": "tordesillas",
+  "actors": [
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "signatory",
+      "note": "ratified it on 5 September 1494 and took the lands east of the meridian"
+    },
+    {
+      "actor": "castille",
+      "role": "signatory",
+      "note": "ratified it on 2 July 1494 and took the lands west of the meridian"
+    }
+  ],
+  "names": [
+    "Tratado de Tordesilhas",
+    "Tratado de Tordesillas"
+  ],
+  "region": null
+}

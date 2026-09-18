@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "indigenous-depopulation-of-coastal-brazil--the-atlantic-slave-trade-to-brazil--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    }
+  ],
+  "from": "indigenous-depopulation-of-coastal-brazil",
+  "to": "the-atlantic-slave-trade-to-brazil",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The colonists began with enslaved indigenous labour — the brazilwood was cut by it, São Vicente prospered on it, and the bandeirante expeditions were raids for it — and they moved to enslaved Africans. The sources give both halves: that the shift happened, and that the population being drawn on was collapsing at the same time. The claim is about the shift and not about the whole traffic: what the collapse caused was the turn to an Atlantic supply, and the scale that supply reached was the sugar economy’s doing.",
+  "dispute": null
+}

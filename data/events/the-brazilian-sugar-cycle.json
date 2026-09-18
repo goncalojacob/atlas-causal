@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "the-brazilian-sugar-cycle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonial Brazil\", revision 1371077435"
+    }
+  ],
+  "title": "The Brazilian sugar cycle",
+  "summary": "From the 1530s to about 1700 sugar was what Brazil was for. The engenhos spread from Pernambuco and São Vicente along the whole settled coast, and the model — plantation, mill, and a labour force held in the senzala beside the owner’s house — had been tried first on Madeira and São Tomé. The colonists began with enslaved indigenous labour and moved to enslaved Africans. Sugar remained the colony’s principal export until the early eighteenth century, and Wikipedia’s account dates the cycle 1530 to about 1700.",
+  "when": {
+    "start": 1530,
+    "end": 1700
+  },
+  "place": "salvador",
+  "actors": [
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "government",
+      "note": "the crown whose colony the engenhos were in and whose principal export the sugar was"
+    }
+  ],
+  "names": [
+    "Ciclo do açúcar"
+  ],
+  "region": null
+}

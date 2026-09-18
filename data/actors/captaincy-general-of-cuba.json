@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "captaincy-general-of-cuba",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m53"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m53-polities"
+    ],
+    "note": "M53: written on Wikidata’s Q2039931 — P571 1607-01-01, P576 1898 — to carry the century between `cuba-spain` (to 1782) and `cuba-under-spain` (from 1886), which is where `the-cuban-sugar-boom` sits. It overlaps both and no relation is written to either: whether these are one record under three labels is the M49 question and is a person’s. It holds no ground."
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2039931, P571 1607-01-01"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q2039931, P576 1898"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Captaincy General of Cuba"
+  ],
+  "summary": "A polity whose inception Wikidata states as 1607 on Q2039931 and whose dissolution it states as 1898. Both years here are those two values and nothing else. It is the Spanish government of Cuba, and it is written because `the-cuban-sugar-boom` runs from 1791 to 1886 and the atlas had nothing alive across it: `cuba-spain` ends 1782, `cuba-under-spain` begins 1886 where CShapes begins, and between them a century of the thing the chain is about had no actor. It holds no territory; the island’s outlines belong to the records already there.",
+  "when": {
+    "start": 1607,
+    "end": 1898
+  },
+  "where": null
+}

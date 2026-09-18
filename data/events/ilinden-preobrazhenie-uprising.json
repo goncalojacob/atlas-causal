@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "ilinden-preobrazhenie-uprising",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: the rising of the Internal Macedonian-Adrianople Revolutionary Organization against Ottoman rule, August to October 1903. The line historians draw from it to the Committee of Union and Progress is real, but nothing this atlas holds argues it: the cached leads say only what the rising was. It would need a work on the late Ottoman Balkans in the bibliography before the edge to 1908 could be written rather than assumed."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m40-retracted"
+    ]
+  },
+  "wikidata": "Q1145682",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Ilinden–Preobrazhenie Uprising",
+    "pt": "Revolta de Ilinden-Preobrazhenie"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1145682"
+    }
+  ],
+  "title": "Ilinden–Preobrazhenie Uprising",
+  "summary": "Wikidata item Q1145682, imported by tools/import/wikidata.mjs. The item's own description reads \"revolt against the Ottoman Empire in Southeastern Europe 1903\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1903,
+    "end": 1903,
+    "endDate": "1903-10"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "proclamation-of-the-brazilian-republic-1889--1964-brazilian-coup-detat--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Proclamation of the Republic (Brazil)\", revision 1370705081"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolution of 1930\", revision 1373816376"
+    }
+  ],
+  "from": "proclamation-of-the-brazilian-republic-1889",
+  "to": "1964-brazilian-coup-detat",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Seventy-five years, and the claim is about a pattern rather than about a plan. The Republic was founded on 15 November 1889 by army officers deposing a head of state without firing a shot, and the political life of the First Republic it began ran from 1889 to 1930. Wikipedia’s account of 1964 reports Alfred Stepan’s model of the Brazilian army as a moderating power — a force that overthrows civil governments and installs new ones — and says that what was new in 1964 was the officers keeping the power instead of handing it on, breaking the pattern rather than beginning it. The edge says that 1889 is where that pattern starts and that 1964 is the last act of the period it defines. It does not say the one produced the other.\n\nWhy this is `probable` and not `consensus`, although it cites a named scholar: the atlas has one source here, not two. Stepan is where the claim comes from and Wikipedia is where this run read him. An encyclopedia reporting an author is not a second author agreeing with him, which is what amendment A2 is about and what rule 9 asks for.",
+  "dispute": null
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "operation-car-wash-2014--the-2018-brazilian-general-election--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2018 Brazilian general election\", revision 1361748195"
+    }
+  ],
+  "from": "operation-car-wash-2014",
+  "to": "the-2018-brazilian-general-election",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The inquiry decided who could stand. Lula intended to run and led the polling for both rounds; his 2017 conviction on corruption charges barred him, and on 1 September 2018 the Superior Electoral Court rejected his candidacy six to one under the Ficha Limpa law. The Workers’ Party replaced him with Fernando Haddad, then largely unknown to the electorate, who lost the runoff to Jair Bolsonaro.",
+  "dispute": null
+}

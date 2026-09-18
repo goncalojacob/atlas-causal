@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1967-portugal-floods",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21, with regret: the floods of the night of 25 to 26 November 1967 killed between 500 and 700 people around Lisbon and destroyed some 20,000 houses, the worst disaster in the region since 1755, and the regime censored the scale of it. The relief effort became a school for opposition organising, which is the consequence worth drawing — but the atlas holds no record of that organising, and the floods cannot be wired to 1974 without inventing the steps between."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q48876710",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1967 Portugal floods",
+    "pt": "Cheias de 1967 na região de Lisboa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q48876710"
+    }
+  ],
+  "title": "1967 Portugal floods",
+  "summary": "Wikidata item Q48876710, imported by tools/import/wikidata.mjs. The item's own description reads \"catastrophic flooding event that occurred in November 1967, affecting the Lisbon metropolitan area and surrounding regions\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1967,
+    "end": 1967,
+    "date": "1967-11-25",
+    "endDate": "1967-11-26"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

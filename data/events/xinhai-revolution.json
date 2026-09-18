@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "xinhai-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q190517",
+  "sitelinks": {
+    "count": 67,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "1911 Revolution",
+    "pt": "Revolução Xinhai"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q190517"
+    }
+  ],
+  "title": "Xinhai Revolution",
+  "summary": "Wikidata item Q190517, imported by tools/import/wikidata.mjs. The item's own description reads \"revolution in China that overthrew the Qing dynasty and established the Republic of China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1911,
+    "end": 1912,
+    "date": "1911-10-10",
+    "endDate": "1912-02-12"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "prussia-1530",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "basemaps"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-gap"
+    ],
+    "note": "M55: moved to `brandenburg-prussia` with the rest of the ground `prussia` held before the Kingdom of Prussia’s cited inception of 1701-01-18. It begins before that record’s own inception of 1618 as well: Historical Basemaps draws this ground continuously and the atlas has no dated record for the Duchy of Prussia, so it is carried here and flagged rather than given to a record invented for it. See docs/m55-germany.md §6."
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "world_1530.geojson, \"Prussia\""
+    }
+  ],
+  "actor": "brandenburg-prussia",
+  "presenceType": "polity",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1530,
+    "end": 1599,
+    "date": "1530-01-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1530-1599.json"
+    ],
+    "key": "prussia"
+  },
+  "capital": null,
+  "confidence": "probable"
+}

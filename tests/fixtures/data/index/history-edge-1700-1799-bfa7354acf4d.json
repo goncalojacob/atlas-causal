@@ -1,0 +1,17 @@
+{
+  "from": 1700,
+  "kind": "edge",
+  "records": {
+    "fixture-event-deep-1755--fixture-event-deep-1822--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1799
+}

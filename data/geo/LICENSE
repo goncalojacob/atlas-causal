@@ -1,0 +1,283 @@
+Geometry under data/geo/ is licensed per source, file by file.
+
+Natural Earth 1:110m (regions.json)
+  Public domain. Natural Earth is made with the participation of volunteers
+  and is free of any licence restrictions in any way.
+  https://www.naturalearthdata.com/about/terms-of-use/
+  Files derived from Natural Earth 1:110m vector data, version 5.1.2, taken
+  from the GeoJSON conversions published in the upstream repository:
+  https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2/geojson
+  The two files are in this repository, gzipped, under vendor/natural-earth/
+  110m/, with their sha256 in vendor/SHA256SUMS; the tool reads them there.
+  Regeneration is reproducible with tools/build-regions.mjs.
+
+  land-present.json was one of these until M36a and is 10 m now — see the
+  paragraph below. The lane polygons of regions.json stay at 110 m: they are
+  a point-in-polygon question about which lane a place is on and nothing is
+  drawn from them but a wash.
+
+  What the import changed: coordinates are Natural Earth's own, to the
+  precision it publishes. Since M39a every outline is cut at 30 degrees
+  west, the meridian the map is cut at (see below); nothing else is altered.
+  The cut divides Greenland, which is the one landmass there, and nothing
+  else: land-present.json went from 125,938 to 126,436 bytes and
+  regions.json from 221,050 to 221,298.
+
+Natural Earth 10 m (land-present.json since M36a, base/*)
+  Public domain, on the same terms as the 110 m files above, from the same
+  upstream repository at the same pinned tag:
+  https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2/geojson
+  The files are in this repository, gzipped, under vendor/natural-earth/10m/,
+  and the tool reads them there: a run has no network and Natural Earth is
+  never downloaded by one. The sha256 below is of each file **decompressed**
+  — the file as it was downloaded — which is what vendor/SHA256SUMS records
+  and what --check verifies.
+
+  ne_10m_land.geojson            10,157,965 bytes
+    1ac90796408bc6ad6911d69448485d3c4dbf2190370080368a09976e1c9f7416
+  ne_10m_minor_islands.geojson    1,320,514 bytes
+    8c933ca7a4760256bdc46408355706e39764b0fa01c160c28888b90b4faec29f
+  ne_10m_rivers_lake_centerlines.geojson   7,307,743 bytes
+    bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a
+  ne_10m_lakes.geojson                     5,043,554 bytes
+    2d036f53dedec578001c5c30c2959ee7d4eebc1306900fa4367c49929ec8f2d9
+  ne_10m_geography_regions_polys.geojson   5,583,870 bytes
+    b7b26e50ea917d3696aec87f932def2bf5f890f5770e441d59c162c6f4c92a77
+  ne_10m_geography_regions_elevation_points.geojson   862,686 bytes
+    f98a16867867146ec4146d6d4b18c823eeedb2825947de666116cf9a4e3f43cb
+
+  Regeneration is reproducible with
+    tools/import/naturalearth.mjs --source vendor/natural-earth/10m --check
+  which verifies both sha256 before it writes anything, and rewrites every
+  file it owns byte for byte on a second run.
+
+  What the import changed. land-present.json is no longer the 110 m
+  coastline: it is the 10 m land, simplified with Douglas-Peucker at 0.4
+  degrees — or a sixth of a ring's own extent, whichever is less, which is
+  what keeps a small island a shape and not a line — and quantized to three
+  decimals, so 10,787 of the source's 446,175 points remain. Rings smaller
+  than 0.007 square degrees, about 85 km², are dropped: 1,471 of the source's
+  6,837 polygons survive, which is what a whole world costs inside the 200 KB
+  the coastline is allowed at first paint. Malta, Bahrain, Madeira, Santa
+  Maria and Graciosa in the Azores, Santiago in Cape Verde, Barbados and
+  Bermuda are above that floor and are on this map for the first time; Corvo,
+  at about 17 km², and the Maldives' outer atolls are under it and are not.
+  The 0,0 marker Natural Earth ships as `Null island` is dropped.
+
+  base/coast/<cell>.json is the same coastline again at the near level, cut
+  on a fixed 60 by 45 degree grid of twenty-four cells and written as
+  **lines** — the shore, not the shape — because a polygon clipped to a cell
+  is filled and stroked and the cut edge would draw a straight line across a
+  continent. It is simplified at 0.015 degrees, 144,396 points of the
+  481,687 the land and the minor islands hold together, and a cell with
+  nothing in it is not written at all. Every cell is cut out of one
+  simplified geometry, so the cells come to exactly the world's coastline and
+  no two of them disagree about where the shore is.
+
+  Both levels are cut at 30 degrees west, the meridian the map is cut at, as
+  everything under data/geo/ has been since M39a. Nothing else is altered:
+  no coordinate is moved, no feature is invented, and no name is read off
+  those two files, which carry none.
+
+  base/rivers, base/lakes, base/physical and base/mountains were added by
+  M36b, from the four files above, each at the same two levels: one file for
+  the whole world (base/<layer>-world.json) and one per non-empty cell of the
+  same twenty-four-cell grid. Simplification is the same Douglas-Peucker at
+  three decimals, at the tolerance each level's cap forced:
+
+    layer      level  tolerance  features        points kept / of
+    rivers     far      0.4 deg    978/1455     5,650 / 256,386
+    rivers     near    0.015 deg  1455/1455    60,661 / 256,386
+    lakes      far     0.15 deg    434/1355     4,694 / 162,852
+    lakes      near    0.03 deg   1355/1355    24,670 / 162,852
+    physical   far     0.25 deg    543/544     10,147 /  70,307
+    physical   near   0.075 deg    544/544     36,091 /  70,307
+    mountains  both       none     711/711        711 /     711
+    cities     far        none    1726/3086      1,726 /   7,342
+    cities     near       none    3086/3086      3,086 /   7,342
+
+  The far level of the rivers and the lakes also has a size floor, because
+  what decides the bytes at that level is the feature count and not the
+  tolerance: a river shorter than 1.9 degrees and a lake smaller than 0.05
+  square degrees are not in the world file. Both are in the cells, at their
+  own detail, and nothing is dropped from a cell for being small. The floor
+  is 1.9 and not 2 because the Tejo is 1.912 degrees long.
+
+  The physical regions keep only the seventeen FEATURECLA values that are
+  landforms - Range/mtn, Desert, Plateau, Plain, Pen/cape, Peninsula, Basin,
+  Depression, Valley, Lowland, Delta, Isthmus, Foothills, Tundra, Wetlands,
+  Gorge, Geoarea - of the 1,047 in the file; the 503 dropped are islands,
+  island groups, coasts, continents, lakes and one Dragons-be-here, which
+  would have drawn the coastline a third time. base/mountains is all 711
+  elevation points, each with the elevation the file gives it, depressions
+  included; no height is invented and none is read off anything else.
+
+  base/cities was added by M36c, from ne_10m_populated_places.geojson, at the
+  same two levels. It is the one layer that is filtered rather than
+  simplified, a point having nothing along it to take off: what is kept is
+  every populated place whose POP_MAX is over 100,000 - 3,085 of the file's
+  7,342 - plus every populated place a place record of this atlas names,
+  whatever its population, which is one more (Panaji, 65,586). The other
+  4,256 are in no file. Each city carries Natural Earth's own NE_ID, NAME,
+  NAME_EN where it differs, POP_MAX, WIKIDATAID and the coordinates rounded
+  to three decimals, and nothing is invented: `z` is MIN_ZOOM and `zl`
+  LABELRANK, each through the same table the other layers' `z` goes through.
+
+  The far level of the cities has a floor of its own, in people rather than
+  in degrees and for the same reason the rivers' and the lakes' have one:
+  a city under 250,000 is not in the world file, which leaves 1,726 of the
+  3,086 there. Every one of the rest is in its cell, and a city that a place
+  record names is never under the floor whatever its population.
+
+  Names are Natural Earth's own, carried through unchanged: NAME (or `name`),
+  and NAME_EN (or `name_en`) only where it differs. A feature the file left
+  unnamed is written without a name, never with an empty one. Every one of
+  these files is cut at 30 degrees west like the rest.
+
+CShapes 2.0 (presences/*.json)
+  Licence: CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
+  NOT COVERED BY data/LICENSE. The records under data/presences/, and the
+  actor records that data/actors/ holds for CShapes entities, carry
+  "license": "CC-BY-NC-SA-4.0" for the same reason: they are derived from
+  this dataset. Nothing derived from it is merged into a CC BY-SA record,
+  and the two licences are not compatible in either direction.
+
+  Attribution: Guy Schvitz, Luc Girardin, Seraina Rüegger, Nils B. Weidmann,
+  Lars-Erik Cederman and Kristian Skrede Gleditsch.
+
+  Citation: Schvitz, G., Girardin, L., Rüegger, S., Weidmann, N. B.,
+  Cederman, L.-E., & Gleditsch, K. S. (2022). Mapping the International
+  System, 1886-2019: The CShapes 2.0 Dataset. Journal of Conflict
+  Resolution, 66(1), 144–161. https://doi.org/10.1177/00220027211013563
+
+  Home: https://icr.ethz.ch/data/cshapes/
+  The file imported was cshapes_2_gw.topojson, version 2.0 (package
+  changelog dated 2021-05-31), taken from the CRAN package's GitHub mirror
+  because the ETH site is not reachable from every network:
+  https://github.com/cran/cshapes — inst/extdata/cshapes_2_gw.topojson.xz,
+  decompressed with `xz -dc`.
+  sha256 of the decompressed file:
+  9f73468bb56aae6a6b22bb5e56bf5f3e013b9ee17c641aba37db97bcb5c1c3bc
+  The copy in this repository is vendor/cshapes/cshapes_2_gw.topojson.gz —
+  the same bytes, gzipped instead of xz'd, because node:zlib reads gzip and
+  a run has no network. The sha256 above is of the decompressed file either
+  way, which is what the tool checks.
+  Regeneration is reproducible with
+    tools/import/cshapes.mjs --source <file> --check --geometry-only
+  for the outlines alone, or without --geometry-only for the records too;
+  either verifies that sha256 before it writes anything.
+
+  What the import changed: coordinates are quantized to three decimals and
+  the topology's arcs are simplified (Douglas–Peucker, 0.1° or a sixth of an
+  arc's own extent, whichever is less), so the outlines are less detailed
+  than the source. Since M39a every outline is also cut at 30 degrees west —
+  the map projects longitudes around 150 degrees east, which makes the
+  meridian half a world away both edges of the picture at once, and an
+  outline lying across it would be drawn as a smear from one side to the
+  other. The cut adds points at that one longitude and removes none, except
+  where a vertex was already a repeat of the one before it; no CShapes
+  outline actually reaches 30 degrees west, so the shards lost 1,872 bytes
+  of duplicate vertices and gained nothing: 888,209 → 888,017, 1,114,091 →
+  1,113,499, 774,581 → 774,197, 846,877 → 846,781 and 880,280 → 879,672 bytes
+  for the five periods in order. Since M39b each shard also carries `arcs`,
+  its own list of the boundaries between the territories in it — an arc of the
+  source's topology that two features share, of different entities, whose
+  dates overlap — each held once and named by index from the features on
+  either side; the map fills a territory's outline and strokes only these,
+  because the coastline it draws is Natural Earth's and CShapes' shore beside
+  it was a second shore. Those lines are the source's own vertices, taken from
+  the same simplified arcs the outlines are built from, and nothing is added
+  to them. A boundary the simplified outline no longer runs along is dropped
+  with the polygon simplification dropped, so that no line is stroked where
+  there is no territory under it. The five shards went to 961,624, 1,194,268,
+  845,338, 918,615 and 957,458 bytes; `data/geo/` as a whole went from
+  4,858,556 to 5,234,665, which is a fifth of the 24 MB the map block records
+  for it. Nothing else is altered; every date, status, owner and
+  capital is the dataset's own.
+
+Historical Basemaps (presences/1400-1491.json .. presences/1880-1885.json)
+  Licence: GPL-3.0-only — https://www.gnu.org/licenses/gpl-3.0.html
+  NOT COVERED BY data/LICENSE, and not covered by the CShapes paragraph above
+  either: this is a second import under a second licence, and the two do not
+  mix. The records under data/presences/ that this import wrote, and the actor
+  records data/actors/ holds for its polities, carry
+  "license": "GPL-3.0-only" for the same reason: they are derived from this
+  dataset. Which import wrote a record is `origin.tool`, `basemaps` here and
+  `cshapes` above, and rule 12 is what holds the three licences apart.
+
+  Why a GPL source at all. The repository carries one LICENSE, the stock
+  GPLv3, and it covers the GeoJSON with everything else; there is no data
+  clause and no dual licence. It was taken because it is the only openly
+  licensed world-snapshot set this project could reach that covers 1415, and
+  because GPL-3.0 permits commercial use where the CC BY-NC-SA already in this
+  directory forbids it — so on the axis that binds a reuser it asks for less
+  than the licence beside it, not more. The candidates that were refused, and
+  what each one's LICENSE actually says, are in STATUS.md under `M43a`.
+
+  What GPL-3.0 means over a polygon is genuinely less settled than what
+  CC BY-NC-SA means: its operative words are "conveying", "covered work" and
+  "Corresponding Source", and they were written for programs. The reading
+  taken here is the conservative one — these shards and the records that name
+  them are a covered work, offered under GPL-3.0 — and the isolation exists so
+  that the answer to "which files is that" is a directory listing and a range
+  of years.
+
+  Attribution: André Ourednik and contributors.
+  Home: https://github.com/aourednik/historical-basemaps
+  The files imported are thirteen of the fifty-four world snapshots, the ones
+  from 1400 on, taken from the repository at commit da7a4b73:
+  https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/
+  The snapshots from 1900 on were not imported: CShapes covers 1886 onward and
+  wins wherever the two overlap, so the last one taken is 1880 and its
+  presences end in 1885. The copies in this repository are under
+  vendor/historical-basemaps/, gzipped, because a run has no network beyond
+  GitHub and an import that downloads is an import nobody can repeat. The
+  sha256 below is of each file **decompressed** — the file as it was
+  downloaded — which is what vendor/SHA256SUMS records and what --check
+  verifies.
+
+    world_1400.geojson  1,053,803 bytes
+      c6b0efcb42d9520a1a724f981373296e84ea2c0a0527de7a06f8f9e2465eb6ec
+    world_1492.geojson  3,468,360 bytes
+      b0e6b0f299fc7b191fd427547c83dec9808087d390304a37a32bc0357e97c1b8
+    world_1500.geojson  1,170,331 bytes
+      d01ffc9b80629787f13d2b1c2f881f005bc0164433548e30f5c058ddee0bfc7b
+    world_1530.geojson  1,401,257 bytes
+      984005809f085285a48318600e3a198274eb4679f5360ebfaead29da496e9f5b
+    world_1600.geojson  1,680,222 bytes
+      7285c07eeedfda9048de5354ea1744d327b07614085e9696c5802bb54c86849c
+    world_1650.geojson  1,650,748 bytes
+      e691a3b5bab4ca7a0629daffaf8cd31731ee76ad390b19dffc1c267b139de4e2
+    world_1700.geojson  1,625,990 bytes
+      eb73d6b00e98205fb2082de050c35e4d698224b17849628d82584610186b88a4
+    world_1715.geojson  1,695,707 bytes
+      fdf5097dd21c30c9d7bfb1d5c2c2a11a5a39c397e6910116d7173580619f5b5a
+    world_1783.geojson  1,668,045 bytes
+      7cfa92418a8628dffa41e386394b86fb6f93310e449d8261990f6903160c1060
+    world_1800.geojson  1,638,994 bytes
+      51fcb6b1f1c361956a3fc24a9c646844ff88754842aa113780428fb4abcd5f2c
+    world_1815.geojson  2,413,409 bytes
+      fb654f734583f550904cfa45f361e395c1a488c4960050da2632cb2ac7d1cd1e
+    world_1878.geojson  1,713,853 bytes
+      e792520cd24cfb77b117d41533a59b0a5b82fc53a291fff1549ddc73e7f9a8b2
+    world_1880.geojson  1,302,639 bytes
+      4751e30d881d60d31479f5d016ff4d9c1df47e9bb18efaa3a5086601f68f76dc
+
+  Regeneration is reproducible with
+    tools/import/basemaps.mjs --source vendor/historical-basemaps --check
+  which verifies every sha256 before it writes anything, and rewrites every
+  file it owns byte for byte on a second run.
+
+palette.json
+  Derived from the outlines of both imports above — it is the graph colouring
+  of who borders whom, over every shard at once — and so it carries both their
+  licences, CC BY-NC-SA 4.0 and GPL-3.0-only together, and not data/LICENSE.
+  It cannot be split the way the shards can: one colouring answers the whole
+  span, and an actor's hue is chosen against neighbours from either source.
+  It holds no geometry and no coordinate: one small integer per actor,
+  saying which of the eight hues the map draws that actor's territory in.
+  Regeneration is reproducible with tools/build-palette.mjs.
+
+Any geometry later imported from another source gets its own directory, its
+own paragraph here and its own attribution in the interface. Imported
+geometry is never merged into record files (see ARCHITECTURE.md).

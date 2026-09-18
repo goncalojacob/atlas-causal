@@ -1,0 +1,26 @@
+{
+  "from": 1900,
+  "kind": "edge",
+  "records": {
+    "fixture-event-deep-1900--fixture-event-deep-1969--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "fixture-event-deep-1969--fixture-event-deep-2025--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1999
+}

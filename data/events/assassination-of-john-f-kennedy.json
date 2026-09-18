@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "assassination-of-john-f-kennedy",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: Kennedy shot in Dallas on 22 November 1963. The Portuguese link would be American policy on the African territories — the vote against Portugal in the Security Council in 1961, and the renewal of the Azores base agreement used against it — and the atlas holds no record of either, so there is nothing here the death can be argued to have changed. It would need the Azores lease of 1962 as a record before the change of American tone after 1963 could be argued rather than asserted."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m40-retracted"
+    ]
+  },
+  "wikidata": "Q193484",
+  "sitelinks": {
+    "count": 59,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Assassination of John F. Kennedy",
+    "pt": "Assassinato de John F. Kennedy"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q193484"
+    }
+  ],
+  "title": "assassination of John F. Kennedy",
+  "summary": "Wikidata item Q193484, imported by tools/import/wikidata.mjs. The item's own description reads \"1963 murder in Dallas, Texas, U.S\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1963,
+    "end": 1963,
+    "date": "1963-11-22"
+  },
+  "place": null,
+  "region": "americas",
+  "actors": []
+}

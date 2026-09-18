@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "antonio-costa--partido-socialista--member-of",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "cne-legislative-2015",
+      "locator": null
+    }
+  ],
+  "from": "antonio-costa",
+  "to": "partido-socialista",
+  "type": "member-of",
+  "when": {
+    "start": 2015,
+    "end": null
+  },
+  "note": "The years the atlas's own records show him acting for the party; when he joined it is not in this dataset."
+}

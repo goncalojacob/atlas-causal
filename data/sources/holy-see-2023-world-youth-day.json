@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "holy-see-2023-world-youth-day",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "type": "primary",
+  "creators": [
+    "Holy See Press Office"
+  ],
+  "title": "World Youth Day, Lisbon 2023",
+  "year": 2023,
+  "publisher": null,
+  "isbn": null,
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": "Holy See Press Office",
+  "reference": "designation of Lisbon on 27 January 2019 and the celebration of 1-6 August 2023"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "strangford-treaty-1810",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Strangford Treaty\", revision 1329682227"
+    }
+  ],
+  "title": "The Strangford Treaty",
+  "summary": "Signed at Rio de Janeiro on 19 February 1810 between Britain and the Portuguese government in exile, negotiated by Viscount Strangford. It gave British goods a preferential tariff of fifteen per cent — better than Portugal’s own — in exchange for the defence of Portugal and its colonies during the Napoleonic war. It also bound Portugal to limit the importation of Africans and to consider abolishing the trade altogether: the first commitment of its kind extracted from the crown that ran the largest slave trade in the Atlantic, and the ancestor of every British claim against Brazil for the next forty years.",
+  "when": {
+    "start": 1810,
+    "end": 1810,
+    "date": "1810-02-19"
+  },
+  "place": "rio-de-janeiro",
+  "actors": [
+    {
+      "actor": "united-kingdom-before-1886",
+      "role": "signatory",
+      "note": "took a preferential tariff of fifteen per cent in exchange for defending Portugal and its colonies"
+    },
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "signatory",
+      "note": "the Portuguese government in exile signed at Rio de Janeiro on 19 February 1810"
+    }
+  ],
+  "names": [
+    "Tratado de Comércio e Navegação (1810)",
+    "Anglo-Brazilian Treaty of 1810"
+  ],
+  "parent": "transfer-of-the-portuguese-court-to-brazil-1807",
+  "region": null
+}

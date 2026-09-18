@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "council-of-the-revolution--third-portuguese-republic--part-of",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "from": "council-of-the-revolution",
+  "to": "third-portuguese-republic",
+  "type": "part-of",
+  "when": {
+    "start": 1975,
+    "end": 1982
+  },
+  "note": "A constitutional organ of the republic until the revision of 1982 abolished it."
+}

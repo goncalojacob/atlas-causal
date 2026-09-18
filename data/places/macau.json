@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "macau",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "wikidata-assigned-by-assistant"
+    ]
+  },
+  "wikidata": "Q14773",
+  "wikipedia": {
+    "en": "Macau",
+    "pt": "Macau"
+  },
+  "sitelinks": {
+    "count": 200,
+    "on": "2026-09-03"
+  },
+  "sources": [],
+  "names": [
+    "Macau"
+  ],
+  "where": {
+    "lon": 113.54,
+    "lat": 22.2,
+    "precision": "city",
+    "label": "Macau"
+  },
+  "region": null,
+  "summary": null
+}

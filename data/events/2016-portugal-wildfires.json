@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "2016-portugal-wildfires",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the fire season of 2016, including the fires that reached Funchal in August and burned much of the island of Madeira. The atlas holds nothing it can be argued to have changed — no record of the response, the inquiry or the rules that followed — and the disasters it does hold, the fires of 2017, are wired to each other and to the reform they produced. A disaster with no recorded consequence has no honest edge."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q26252770",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2016 Portugal wildfires",
+    "pt": "Incêndios na ilha da Madeira em agosto de 2016"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q26252770"
+    }
+  ],
+  "title": "2016 Portugal wildfires",
+  "summary": "Wikidata item Q26252770, imported by tools/import/wikidata.mjs. The item's own description reads \"series of wildfires that burned across mainland Portugal and the Madeira archipelago\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2016,
+    "end": 2016,
+    "date": "2016-08"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "disaster",
+  "actors": []
+}

@@ -1,0 +1,161 @@
+// The tenure strip on the actor's card: one per office the actor owns,
+// holders as bars over the actor's own years, merged where they would overlap
+// and opening the person who held the post.
+//
+// Laid out without measuring anything, so all of it can be held here: the
+// scale is a pure function of two intervals and the bars are numbers in the
+// strip's own units.
+
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import path from 'node:path';
+import {
+  stripScale, tenureBars, tenureClusters, tenureClusterAt, officeStripsSection, STRIP_UNITS,
+} from '../src/panel/office.js';
+import { clusterHtml } from '../src/panel/cluster.js';
+import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
+
+function context(atlas) {
+  return {
+    atlas,
+    laneLabel: (region) => region ?? '',
+    startYear: (event) => event.when.start,
+  };
+}
+
+const atlas = await atlasOf(FIXTURE_DATA);
+const polity = atlas.actors.get('fixture-polity-three');
+const office = atlas.offices.get('fixture-office-one');
+
+// What the four tests below scale against. Written out rather than taken from
+// the fixture corpus, which reached 1300 until M43b stretched it to 2025 and
+// will move again with the next record: what a bar's x says about a turn is a
+// fact about the strip and not about how long the corpus happens to be, and a
+// test that read the corpus here would have to be rewritten every time one is
+// added. The corpus's own extent is what the first test is about, and it is
+// asserted there as the rule rather than as two years.
+const HELD = { min: 1200, max: 1300 };
+const held = { ...atlas, extent: HELD };
+
+test('the scale is the actor\'s own interval, held inside what the atlas holds', () => {
+  // The polity runs from 1100 with no end, so the strip starts where the
+  // records do and ends where they end: an actor's own years never stretch
+  // the picture past the corpus, whatever the corpus has grown to.
+  assert.deepEqual(stripScale(polity, atlas.extent), { min: atlas.extent.min, max: atlas.extent.max });
+  assert.deepEqual(stripScale({ when: { start: 1220, end: 1250 } }, atlas.extent), { min: 1220, max: 1250 });
+  // An actor with no interval of its own gets the extent whole.
+  assert.deepEqual(stripScale({ when: null }, atlas.extent), { min: atlas.extent.min, max: atlas.extent.max });
+  // And with nothing to scale against there is no strip.
+  assert.equal(stripScale(polity, null), null);
+});
+
+test('a bar spans the years of its turn, in the strip\'s own units', () => {
+  const { scale, bars } = tenureBars(held, polity, office);
+  assert.deepEqual(scale, HELD);
+  const at = (year) => ((year - 1200) / 100) * STRIP_UNITS;
+  assert.deepEqual(bars.map((b) => b.id),
+    ['fixture-tenure-one', 'fixture-tenure-two', 'fixture-tenure-three']);
+  assert.equal(bars[0].x.toFixed(2), at(1200).toFixed(2));
+  assert.equal((bars[0].x + bars[0].width).toFixed(2), at(1210).toFixed(2));
+  assert.equal(bars[2].x.toFixed(2), at(1230).toFixed(2));
+});
+
+test('bars that would overlap are merged, and the widest turn is what is drawn', () => {
+  const { clusters } = tenureClusters(held, polity, office);
+  // 1200–1210 and 1208–1220 are 133 units apart in the middle, so they stay
+  // apart at this width; three separate turns, three bars.
+  assert.deepEqual(clusters.map((c) => c.count), [1, 1, 1]);
+
+  // Squeeze the same three turns into a tenth of the scale and they merge.
+  const narrow = { ...polity, when: { start: 1200, end: 1800 } };
+  const merged = tenureClusters({ ...atlas, extent: { min: 1200, max: 1800 } }, narrow, office);
+  const stacks = merged.clusters.filter((c) => c.count > 1);
+  assert.ok(stacks.length > 0, 'the three turns are one bar at this width');
+  // The seed is the widest of them, which is the bar the reader can see.
+  const widest = Math.max(...stacks[0].members.map((m) => m.bar.width));
+  assert.equal(stacks[0].representative.bar.width, widest);
+});
+
+test('a merged bar opens a list of its turns, and each row opens the holder', () => {
+  const narrow = { ...polity, when: { start: 1200, end: 1800 } };
+  const wide = { ...atlas, extent: { min: 1200, max: 1800 } };
+  const key = tenureClusters(wide, narrow, office).clusters.find((c) => c.count > 1).key;
+  const cluster = tenureClusterAt(wide, narrow, office, key);
+  assert.equal(cluster.on, 'tenures');
+  assert.equal(cluster.office.id, 'fixture-office-one');
+  const html = clusterHtml(context(atlas), cluster);
+  assert.match(html, /turns here/);
+  assert.match(html, /data-action="actor" data-id="fixture-actor-one"/);
+  assert.match(html, /data-action="office" data-id="fixture-office-one"/);
+  // A key nothing was grouped under is not a list of everything.
+  assert.equal(tenureClusterAt(wide, narrow, office, 'no-such-cluster'), null);
+});
+
+test('the section draws one strip per office, and a bar opens the holder', () => {
+  const section = officeStripsSection(context(held), polity);
+  assert.equal(section.key, 'offices');
+  assert.equal(section.count, 1);
+  assert.match(section.body, /viewBox="0 0 1000 24"/);
+  assert.match(section.body, /preserveAspectRatio="none"/);
+  // Clicking a bar opens the person, never the tenure.
+  assert.match(section.body, /<rect class="tenure-bar"[^>]*data-action="actor" data-id="fixture-actor-one"/);
+  assert.doesNotMatch(section.body, /data-action="tenure"/);
+  // The office's own name is the way to its card.
+  assert.match(section.body, /data-action="office" data-id="fixture-office-one"/);
+  // The scale is written out, so the picture says which years it covers.
+  assert.match(section.body, /<span>1200<\/span>\s*<span>1300<\/span>/);
+});
+
+test('an actor that owns no office has no section at all', () => {
+  assert.equal(officeStripsSection(context(atlas), atlas.actors.get('fixture-actor-one')), null);
+});
+
+test('nothing from a record reaches the strip unescaped', () => {
+  const nasty = {
+    ...atlas,
+    offices: new Map([['x', { ...office, id: 'x', title: '<script>alert(1)</script>' }]]),
+    officesByActor: new Map([['fixture-polity-three', [{ ...office, id: 'x', title: '<script>alert(1)</script>' }]]]),
+    tenuresByOffice: new Map([['x', atlas.tenuresByOffice.get('fixture-office-one')]]),
+  };
+  const section = officeStripsSection(context(nasty), polity);
+  assert.doesNotMatch(section.body, /<script>/);
+  assert.match(section.body, /&lt;script&gt;/);
+});
+
+test("the atlas's own strip: Portugal's three posts, and every turn counted", async () => {
+  const own = await atlasOf(path.join(ROOT, 'data'));
+  const section = officeStripsSection(context(own), own.actors.get('portugal'));
+  assert.equal(section.count, 3, 'monarch, president, prime minister');
+  assert.match(section.body, /data-action="office" data-id="prime-minister-of-portugal"/);
+  assert.match(section.body, /data-action="actor" data-id="salazar"/);
+  // Which bars survive the clustering is the strip's business and moves with
+  // the corpus — Marcelo Caetano's is inside a cluster now that M31-2 has
+  // written twenty-five more turns at this post. What each row must say is how
+  // many turns there are, which is the number of records and not a number
+  // written out here.
+  for (const office of ['monarch-of-portugal', 'president-of-portugal', 'prime-minister-of-portugal']) {
+    const count = section.body.match(new RegExp(`data-id="${office}"[\\s\\S]*?<span class="count">(\\d+)</span>`))?.[1];
+    assert.equal(Number(count), (own.tenuresByOffice.get(office) ?? []).length, office);
+  }
+  // Until M31-1 two of the three had no holder recorded and said so rather
+  // than drawing an empty picture. The crown and the presidency have their
+  // holders now, so nothing says it.
+  assert.equal((section.body.match(/No turn at this post is recorded yet\./g) ?? []).length, 0);
+  assert.match(section.body, /data-action="office" data-id="monarch-of-portugal"/);
+  assert.match(section.body, /data-action="office" data-id="president-of-portugal"/);
+  // What the strip prints is `stripScale`: the actor's own interval clamped
+  // into the corpus's extent, so that a strip is never wider than the atlas
+  // and never wider than the actor. Written as that rule and not as two years,
+  // the way the turn counts above are the number of records.
+  //
+  // It used to be written as "the strip prints the corpus's extent", and that
+  // held only while the corpus began *after* Portugal did: Portugal starts in
+  // 1886 and the near end of the corpus was 1890 until M50, so the clamp
+  // always won and the two were the same number. M50 put events back to 1492
+  // and they came apart — the strip now prints 1886, which is Portugal's own
+  // first year and is what `stripScale` has always said it would print.
+  assert.ok(Number.isInteger(own.extent.min) && Number.isInteger(own.extent.max));
+  const scale = stripScale(own.actors.get('portugal'), own.extent);
+  assert.match(section.body, new RegExp(`<span>${scale.min}</span>\\s*<span>${scale.max}</span>`));
+  assert.ok(scale.min >= own.extent.min && scale.max <= own.extent.max, 'never wider than the atlas');
+});

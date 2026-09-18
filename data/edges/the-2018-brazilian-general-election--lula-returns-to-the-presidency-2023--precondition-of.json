@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "the-2018-brazilian-general-election--lula-returns-to-the-presidency-2023--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2022 Brazilian general election\", revision 1375252300"
+    }
+  ],
+  "from": "the-2018-brazilian-general-election",
+  "to": "lula-returns-to-the-presidency-2023",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The 2022 election was a rematch and is read as one: the incumbent seeking a second term against the man the courts had kept off the ballot four years earlier. Lula won the runoff 50.90 to 49.10 per cent, the first person elected president of Brazil three times, and Bolsonaro became the first incumbent since the re-election amendment of 1997 not to be returned.",
+  "dispute": null
+}

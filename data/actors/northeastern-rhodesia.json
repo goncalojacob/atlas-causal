@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "northeastern-rhodesia",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 5518"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Northeastern Rhodesia"
+  ],
+  "summary": "Entity 5518 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1900 to 1911. Its last capital in the dataset is Chipata (Fort Jameson). This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1900,
+    "end": 1911
+  },
+  "where": {
+    "lon": 32.633333,
+    "lat": -13.65,
+    "precision": "city",
+    "label": "Chipata (Fort Jameson)"
+  }
+}

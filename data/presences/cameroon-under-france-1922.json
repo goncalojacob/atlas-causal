@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "cameroon-under-france-1922",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 301"
+    }
+  ],
+  "actor": "cameroon-under-france",
+  "presenceType": "state",
+  "dependencyOf": "france",
+  "dependencyKind": "mandate",
+  "when": {
+    "start": 1922,
+    "end": 1959,
+    "date": "1922-07-20",
+    "endDate": "1959-12-31"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "301"
+  },
+  "capital": {
+    "lon": 11.51667,
+    "lat": 3.86667,
+    "precision": "city",
+    "label": "Yaounde"
+  },
+  "confidence": "consensus"
+}

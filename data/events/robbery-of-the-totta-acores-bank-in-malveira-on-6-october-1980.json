@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "robbery-of-the-totta-acores-bank-in-malveira-on-6-october-1980",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: a robbery of the Banco Totta & Açores at Malveira on 6 October 1980, the same day and the same village as the item above and possibly the same raid. The atlas holds no record of the armed far left — not the PRP-BR, not the FP-25, not the trials — so there is nothing for an action of theirs to attach to in either direction, and any edge would be invented. Revisit once the organisations themselves are here."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q115636352",
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q115636352"
+    }
+  ],
+  "title": "Robbery of the Totta & Açores Bank in Malveira, on 6 October 1980",
+  "summary": "Wikidata item Q115636352, imported by tools/import/wikidata.mjs. The item's own description reads \"Robbery carried out by the Popular Forces of 25 April, yielding 2,854,822 escudos, during which three people were killed\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1980,
+    "end": 1980,
+    "date": "1980-10-06"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

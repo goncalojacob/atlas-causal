@@ -1,0 +1,58 @@
+{
+  "from": 1100,
+  "kind": "actor",
+  "records": {
+    "fixture-actor-one": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "sitelinks"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-actor-two": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-polity-four": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-polity-three": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1199
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "first-indochina-war--geneva-conference--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Indochina War\", revision 1373236226"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1954 Geneva Conference\", revision 1369041532"
+    }
+  ],
+  "from": "first-indochina-war",
+  "to": "geneva-conference",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Indochinese half of the conference is the half that produced agreements, and it produced them because Dien Bien Phu fell on 7 May 1954, the day after the Indochina session opened. Eight years of war had exhausted a French government that changed while the conference sat; the accords of 20 July partitioned Vietnam at the seventeenth parallel, provided for elections in two years, and took France out. The claim is that the war brought the conference to that point and set what it had to decide.",
+  "dispute": null
+}

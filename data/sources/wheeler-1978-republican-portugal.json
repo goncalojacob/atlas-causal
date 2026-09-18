@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "wheeler-1978-republican-portugal",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "type": "book",
+  "creators": [
+    "Douglas L. Wheeler"
+  ],
+  "title": "Republican Portugal: A Political History, 1910–1926",
+  "year": 1978,
+  "publisher": "University of Wisconsin Press",
+  "isbn": null,
+  "doi": null,
+  "url": "https://search.worldcat.org/search?q=Republican%20Portugal%3A%20A%20Political%20History%2C%201910%E2%80%931926%20Douglas%20L.%20Wheeler",
+  "accessed": null,
+  "repository": null,
+  "reference": null
+}

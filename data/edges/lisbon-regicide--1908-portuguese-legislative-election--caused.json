@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "lisbon-regicide--1908-portuguese-legislative-election--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1908\", revision 66807862"
+    }
+  ],
+  "from": "lisbon-regicide",
+  "to": "1908-portuguese-legislative-election",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "João Franco’s government fell within days of the killing, and with it the rule by decree that had suspended parliament since May 1907. The election of 5 April 1908 was the instrument by which the new king’s ministers returned the country to constitutional forms. Without the regicide there is no reason to think the country would have been consulted at all: Franco had dissolved the Chamber precisely in order not to consult it.",
+  "dispute": null
+}

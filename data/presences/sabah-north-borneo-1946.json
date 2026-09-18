@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sabah-north-borneo-1946",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 618"
+    }
+  ],
+  "actor": "sabah-north-borneo",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1946,
+    "end": 1963,
+    "date": "1946-07-15",
+    "endDate": "1963-09-15"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "618"
+  },
+  "capital": {
+    "lon": 118.107974,
+    "lat": 5.84296,
+    "precision": "city",
+    "label": "Sandakan (Elopura)"
+  },
+  "confidence": "consensus"
+}

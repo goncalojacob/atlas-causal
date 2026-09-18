@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "german-federal-republic-1945",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 90"
+    }
+  ],
+  "actor": "german-federal-republic",
+  "presenceType": "state",
+  "dependencyOf": "united-states-of-america",
+  "dependencyKind": "occupied",
+  "when": {
+    "start": 1945,
+    "end": 1949,
+    "date": "1945-05-08",
+    "endDate": "1949-09-20"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "90"
+  },
+  "capital": {
+    "lon": 7.1,
+    "lat": 50.73333,
+    "precision": "city",
+    "label": "Bonn"
+  },
+  "confidence": "consensus",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-gap"
+    ],
+    "note": "M55: this period begins before its actor’s cited inception of 1949-05-23 (Q713750, P571). CShapes draws entity 260 from the German surrender onward and what held that ground until the Federal Republic was founded was the Allied occupation, which this atlas has no record for. It is carried here and flagged rather than given to a record invented for it. See docs/m55-germany.md §6."
+  }
+}

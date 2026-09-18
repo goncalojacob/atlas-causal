@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "covid-state-of-emergency-2020--world-youth-day-2023--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "holy-see-2023-world-youth-day",
+      "locator": null
+    },
+    {
+      "source": "dre-2020-state-of-emergency",
+      "locator": null
+    }
+  ],
+  "from": "covid-state-of-emergency-2020",
+  "to": "world-youth-day-2023",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Lisbon had been given the celebration for 2022. The pandemic that the state of emergency marks in Portugal is why it was held in August 2023 instead, and why it was planned twice. The edge is about the postponement and about nothing else.",
+  "dispute": null
+}

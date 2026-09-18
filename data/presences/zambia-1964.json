@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "zambia-1964",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 396"
+    }
+  ],
+  "actor": "zambia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1964,
+    "end": null,
+    "date": "1964-01-22"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "396"
+  },
+  "capital": {
+    "lon": 28.283331,
+    "lat": -15.41667,
+    "precision": "city",
+    "label": "Lusaka"
+  },
+  "confidence": "consensus"
+}

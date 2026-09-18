@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "second-boer-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q215112",
+  "sitelinks": {
+    "count": 65,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Second Boer War",
+    "pt": "Segunda Guerra dos Bôeres"
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Boer War\", revision 1372994797"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Segunda Guerra dos Bôeres\", revision 68232995"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q215112"
+    }
+  ],
+  "title": "Second Boer War",
+  "summary": "Britain and the two Boer republics — the South African Republic, or Transvaal, and the Orange Free State — fought from October 1899 to May 1902 for the mastery of southern Africa and of the gold of the Witwatersrand. The Boers took the initiative and then lost it; the British answered the guerrilla war that followed by burning farms and interning civilians in camps in which tens of thousands died, and the republics surrendered in 1902. The war is in this atlas for what it did to Portugal rather than for what it did to South Africa. Delagoa Bay and the railway from Lourenço Marques were the Transvaal's only route to the sea that did not pass through British territory, which made Portuguese Mozambique a belligerent question from the first week, and made the alliance with Britain worth something to London for the first time in a generation.",
+  "when": {
+    "start": 1899,
+    "end": 1902,
+    "date": "1899-10-11",
+    "endDate": "1902-05-31"
+  },
+  "place": null,
+  "region": "africa",
+  "actors": [
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    },
+    {
+      "actor": "transvaal",
+      "role": "belligerent"
+    },
+    {
+      "actor": "orange-free-state",
+      "role": "belligerent"
+    }
+  ]
+}

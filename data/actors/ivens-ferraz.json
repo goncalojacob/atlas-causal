@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ivens-ferraz",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted",
+      "date"
+    ],
+    "note": "The years were written from the assistant’s memory in M31-2 and have not been read in a source. The works cited are where a reviewer should check them, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Artur Ivens Ferraz",
+    "Ivens Ferraz"
+  ],
+  "summary": "Artur Ivens Ferraz (1870–1933) was an army officer who was President of the Ministry from July 1929 to January 1930, in the years of the Ditadura Nacional between the coup of 1926 and the government of Salazar. He is in the atlas as one of the three men who held the headship of the government in that interval.",
+  "when": {
+    "start": 1870,
+    "end": 1933
+  },
+  "where": null
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "tanzania-tanganyika-under-united-kingdom--tanzania-tanganyika--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 510"
+    }
+  ],
+  "from": "tanzania-tanganyika-under-united-kingdom",
+  "to": "tanzania-tanganyika",
+  "type": "succeeded",
+  "when": {
+    "start": 1961,
+    "end": 1961,
+    "date": "1961-12-09"
+  },
+  "note": "CShapes holds 510 as a mandate of United Kingdom to 1961-12-08; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. The source gives the held period under more than one power (Germany (Prussia), then United Kingdom); the record is named for the one that held it longest (Germany (Prussia):26y, United Kingdom:45y)."
+}

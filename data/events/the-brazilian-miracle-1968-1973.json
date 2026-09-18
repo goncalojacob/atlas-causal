@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "the-brazilian-miracle-1968-1973",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": "2026-09-18",
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazilian Miracle\", revision 1349557960"
+    }
+  ],
+  "title": "The Brazilian miracle, 1968–1973",
+  "summary": "After the coup the military left economic policy to technocrats under Antônio Delfim Netto, and average annual growth ran close to ten per cent, from 9.8 per cent in 1968 to 14 per cent in 1973. The model was heterodox and developmentalist and rested on three things: low wages, rapidly rising exports, and inflows of foreign capital. The state built highways, bridges and railways; Eletrobras and Petrobras built steel mills, petrochemical plants, dams and reactors; by 1980 industrial goods were 57 per cent of exports against 20 per cent in 1968. Delfim Netto’s cake had to grow before it could be shared, and it grew unequally. Elio Gaspari’s formulation is that the miracle and the years of lead happened at once, each denying the other. Inflation went from 19.46 per cent in 1968 to 34.55 per cent in 1974.",
+  "when": {
+    "start": 1968,
+    "end": 1973
+  },
+  "place": "sao-paulo",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the military governments, whose technocrats ran the model and took the credit"
+    }
+  ],
+  "names": [
+    "Milagre econômico brasileiro"
+  ],
+  "region": null,
+  "parent": "brazilian-military-dictatorship-1964-1985"
+}

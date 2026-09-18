@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "2006-thai-coup-d-etat",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A: the neighbour is missing. Thailand enters this atlas nowhere and the coup of 2006 has no argued relation to anything in it. It was ticked because set 3 of M44a’s rule needed a revolution and deviation 670 had struck the row above it; the tick rule was right to take it and this round has nothing to do with it."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q860423",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "2006 Thai coup d'état",
+    "pt": "Golpe de Estado na Tailândia em 2006"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q860423"
+    }
+  ],
+  "title": "2006 Thai coup d'état",
+  "summary": "Wikidata item Q860423, imported by tools/import/wikidata.mjs. The item's own description reads \"coup d'état\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2006,
+    "end": 2006,
+    "date": "2006-09-19"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

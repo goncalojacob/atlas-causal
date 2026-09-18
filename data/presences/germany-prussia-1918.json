@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "germany-prussia-1918",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 84"
+    }
+  ],
+  "actor": "weimar-republic",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1918,
+    "end": 1919,
+    "date": "1918-11-09",
+    "endDate": "1919-06-27"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "84"
+  },
+  "capital": {
+    "lon": 13.4,
+    "lat": 52.51667,
+    "precision": "city",
+    "label": "Berlin"
+  },
+  "confidence": "consensus",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-split"
+    ],
+    "note": "M55: the second half of the CShapes period that runs 1886-01-01 to 1919-06-27, cut at the German Empire’s cited dissolution, which is the same day as the Weimar Republic’s cited inception — Q43287 P576 and Q41304 P571 both give 1918-11-09. `germany-prussia-1886` is the first half. The outline is CShapes’ own under this key, unchanged; the two halves carry one outline between them."
+  }
+}

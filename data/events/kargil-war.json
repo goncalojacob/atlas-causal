@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "kargil-war",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class A, with the Kashmir conflict it belongs to. Its only neighbour here would be the conflict record retracted in the same commit and the Indo-Pakistani war of 1965, which reaches no Portuguese event."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q404517",
+  "sitelinks": {
+    "count": 53,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Kargil War",
+    "pt": "Guerra de Cargil"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q404517"
+    }
+  ],
+  "title": "Kargil War",
+  "summary": "Wikidata item Q404517, imported by tools/import/wikidata.mjs. The item's own description reads \"1999 conflict between India and Pakistan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1999,
+    "end": 1999,
+    "endDate": "1999-07-26"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

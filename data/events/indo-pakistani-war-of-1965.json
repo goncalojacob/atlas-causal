@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "indo-pakistani-war-of-1965",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q233583",
+  "sitelinks": {
+    "count": 57,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "India–Pakistan war of 1965",
+    "pt": "Guerra Indo-Paquistanesa de 1965"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"India–Pakistan war of 1965\", revision 1371230624"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra Indo-Paquistanesa de 1965\", revision 71856542"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q233583"
+    }
+  ],
+  "title": "Indo-Pakistani War of 1965",
+  "summary": "Pakistan infiltrated irregulars into Indian-administered Kashmir in August 1965 in the expectation of a rising that did not come; India crossed the ceasefire line and then the international frontier towards Lahore, and after five weeks of the largest tank fighting since 1945 the two armies stopped where the United Nations told them to. The Tashkent declaration of January 1966, brokered by the Soviet Union, restored the pre-war lines and settled nothing. Its consequence was felt hardest in the half of Pakistan that had not been fought over: East Pakistan had been left with almost no defence for the duration, and the argument for provincial autonomy began there.",
+  "when": {
+    "start": 1965,
+    "end": 1965,
+    "date": "1965-08",
+    "endDate": "1965-09-23"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "republic-of-india",
+      "role": "belligerent"
+    },
+    {
+      "actor": "pakistan",
+      "role": "belligerent"
+    }
+  ]
+}

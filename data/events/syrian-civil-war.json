@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "syrian-civil-war",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: fourteen years from the protests of March 2011 to the fall of Assad in December 2024. As with Libya, its cause is the Arab Spring, which the import refused for want of a lane. Everything it can be argued to have changed in this dataset is absent: the Islamic State, the refugee movement of 2015 and the European politics that followed it, and the Russian intervention of 2015. It would need the Arab Spring, or the refugee crisis, as a record."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m40-retracted"
+    ]
+  },
+  "wikidata": "Q178810",
+  "sitelinks": {
+    "count": 95,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Syrian civil war",
+    "pt": "Guerra Civil Síria"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q178810"
+    }
+  ],
+  "title": "Syrian Civil War",
+  "summary": "Wikidata item Q178810, imported by tools/import/wikidata.mjs. The item's own description reads \"2011–2024 armed conflict in Syria\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2011,
+    "end": 2024,
+    "date": "2011-03-15",
+    "endDate": "2024-12-08"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

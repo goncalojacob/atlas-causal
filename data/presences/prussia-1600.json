@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "prussia-1600",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "basemaps"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-gap"
+    ],
+    "note": "M55: moved to `brandenburg-prussia` with the rest of the ground `prussia` held before the Kingdom of Prussia’s cited inception of 1701-01-18. It begins before that record’s own inception of 1618 as well, and runs past it; the outline is Historical Basemaps’ own and is not redrawn. See docs/m55-germany.md §6."
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "world_1600.geojson, \"Prussia\""
+    }
+  ],
+  "actor": "brandenburg-prussia",
+  "presenceType": "polity",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1600,
+    "end": 1649,
+    "date": "1600-01-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1600-1649.json"
+    ],
+    "key": "prussia"
+  },
+  "capital": null,
+  "confidence": "probable"
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "telo-2007-historia-contemporanea",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "type": "book",
+  "creators": [
+    "António José Telo"
+  ],
+  "title": "História Contemporânea de Portugal: do 25 de Abril à Actualidade",
+  "year": 2007,
+  "publisher": "Presença",
+  "isbn": null,
+  "doi": null,
+  "url": "https://search.worldcat.org/search?q=Hist%C3%B3ria%20Contempor%C3%A2nea%20de%20Portugal%3A%20do%2025%20de%20Abril%20%C3%A0%20Actualidade%20Ant%C3%B3nio%20Jos%C3%A9%20Telo",
+  "accessed": null,
+  "repository": null,
+  "reference": null
+}

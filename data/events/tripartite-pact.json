@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "tripartite-pact",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q153122",
+  "sitelinks": {
+    "count": 59,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Tripartite Pact",
+    "pt": "Pacto Tripartite"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q153122"
+    }
+  ],
+  "title": "Tripartite Pact",
+  "summary": "Wikidata item Q153122, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty establishing the Axis Powers of World War Two\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1940,
+    "end": 1945,
+    "date": "1940-09-27"
+  },
+  "place": "berlin",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

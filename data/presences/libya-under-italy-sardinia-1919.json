@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "libya-under-italy-sardinia-1919",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 460"
+    }
+  ],
+  "actor": "libya-under-italy-sardinia",
+  "presenceType": "state",
+  "dependencyOf": "italy-sardinia",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1919,
+    "end": 1925,
+    "date": "1919-09-12",
+    "endDate": "1925-12-05"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "460"
+  },
+  "capital": {
+    "lon": 13.18,
+    "lat": 32.8925,
+    "precision": "city",
+    "label": "Tripoli"
+  },
+  "confidence": "consensus"
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "nationalisations-1975--edp-created-1976--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "nationalisations-1975",
+  "to": "edp-created-1976",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The company of 1976 is made out of what the nationalisations took. March 1975 is where this atlas puts the wave — the banks first, insurance the next day — and because the banks held much of Portuguese industry, what followed them into public ownership over that year included the electricity concerns. EDP is the state deciding what to do with them. The claim is that the expropriation is the precondition of the merger and not that it required it: a state can own fourteen companies and leave them fourteen, and the choice of a single vertically integrated monopoly was a choice, made by a government of 1976 and not by the Council of the Revolution of 1975. The decree that constituted it is not cited here because this run could not point at it in a source it has read.",
+  "dispute": null
+}

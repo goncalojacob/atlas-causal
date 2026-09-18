@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "genocide-convention",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q865344",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Genocide Convention",
+    "pt": "Convenção para a Prevenção e a Repressão do Crime de Genocídio"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q865344"
+    }
+  ],
+  "title": "Genocide Convention",
+  "summary": "Wikidata item Q865344, imported by tools/import/wikidata.mjs. The item's own description reads \"1948 United Nations resolution which legally defined genocide\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1948,
+    "end": 1948,
+    "date": "1948-12-09"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

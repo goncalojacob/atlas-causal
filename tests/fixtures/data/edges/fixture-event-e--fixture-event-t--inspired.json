@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "fixture-event-e--fixture-event-t--inspired",
+  "kind": "edge",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "retraction": {
+    "on": "2026-01-01",
+    "reason": "Retracted by hand in the fixture tree, so that it carries a tombstone with its reason on it as rule 27 requires, and so that the chain has a retraction to take back and put again. Nothing here is a claim about anything."
+  },
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "from": "fixture-event-e",
+  "to": "fixture-event-t",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "Synthetic explanation used by the test suite. It argues nothing about the past; it only has to be long enough to count as an argument.",
+  "dispute": null
+}

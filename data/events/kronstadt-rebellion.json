@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "kronstadt-rebellion",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class B. March 1921 argues to the October revolution and the Russian civil war, which are two and three hops from anything Portuguese, and forward to the New Economic Policy, which is not a record here. Every route is one link too long. The record that would fix it is the NEP, or any Portuguese event of the reception of Bolshevism — the atlas holds the PCP as an actor and no event of its founding."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q208300",
+  "sitelinks": {
+    "count": 54,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Kronstadt rebellion",
+    "pt": "Revolta de Kronstadt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q208300"
+    }
+  ],
+  "title": "Kronstadt rebellion",
+  "summary": "Wikidata item Q208300, imported by tools/import/wikidata.mjs. The item's own description reads \"uprising against the Bolsheviks in March 1921\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1921,
+    "end": 1921,
+    "endDate": "1921-03-18"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

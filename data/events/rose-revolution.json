@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "rose-revolution",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class B. Georgia in 2003 argues forward to the Orange revolution of 2004, which this atlas holds and which reaches no Portuguese event at all. The colour revolutions are a cluster here with no way out of themselves; wiring a third record into them would have made the cluster larger and no less stranded."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q219470",
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Rose Revolution",
+    "pt": "Revolução Rosa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q219470"
+    }
+  ],
+  "title": "Rose Revolution",
+  "summary": "Wikidata item Q219470, imported by tools/import/wikidata.mjs. The item's own description reads \"2003 popular uprising against corrupt leadership in Georgia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2003,
+    "end": 2003
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

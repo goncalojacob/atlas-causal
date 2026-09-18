@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-first-columbian-voyage-1492--treaty-of-tordesillas-1494--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Tordesillas\", revision 1374273992"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Voyages of Christopher Columbus\", revision 1371524728"
+    }
+  ],
+  "from": "the-first-columbian-voyage-1492",
+  "to": "treaty-of-tordesillas-1494",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The cited account of the treaty says what it was for in its first line of argument: it was intended to settle the dispute that arose following Columbus’s return in 1493, after he put in at Lisbon on his way back and John II claimed the new lands under an earlier bull. Twenty months from a landfall to a meridian is a short causal chain and the sources draw it themselves.",
+  "dispute": null
+}

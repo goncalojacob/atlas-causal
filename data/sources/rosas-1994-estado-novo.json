@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "rosas-1994-estado-novo",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "type": "book",
+  "creators": [
+    "Fernando Rosas"
+  ],
+  "title": "O Estado Novo (1926–1974). História de Portugal, vol. 7 (dir. José Mattoso)",
+  "year": 1994,
+  "publisher": "Círculo de Leitores",
+  "isbn": null,
+  "doi": null,
+  "url": "https://search.worldcat.org/search?q=O%20Estado%20Novo%20(1926%E2%80%931974).%20Hist%C3%B3ria%20de%20Portugal%2C%20vol.%207%20(dir.%20Jos%C3%A9%20Mattoso)%20Fernando%20Rosas",
+  "accessed": null,
+  "repository": null,
+  "reference": null
+}

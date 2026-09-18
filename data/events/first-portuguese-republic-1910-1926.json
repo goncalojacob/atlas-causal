@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "first-portuguese-republic-1910-1926",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m62-umbrella",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q167360",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-09-18"
+  },
+  "wikipedia": {
+    "en": "First Portuguese Republic",
+    "pt": "Primeira República Portuguesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q167360"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Portuguese Republic\", revision 1370244290"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Primeira República Portuguesa\", revision 72349802"
+    }
+  ],
+  "title": "The First Portuguese Republic",
+  "summary": "The republic proclaimed on 5 October 1910 and brought down by the coup of 28 May 1926. Sixteen years, eight presidents and forty-five ministries: the article this record takes its span from calls the period more a transition between the Kingdom of Portugal and the Estado Novo than a coherent stretch of governance. The coup that ended it instituted the military dictatorship known as the Ditadura Nacional, and that in turn the Estado Novo. The record exists so that the republic’s elections, governments, risings and assassinations can be read as one thing rather than as twenty peers of everything else on the timeline. It is a period and not an argument: nothing is claimed here about what caused what.",
+  "when": {
+    "start": 1910,
+    "end": 1926,
+    "date": "1910-10-05",
+    "endDate": "1926-05-28",
+    "calendar": "gregorian"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "A regime has no single point on the map, so the lane is given rather than derived: Portugal’s.",
+  "actors": [
+    {
+      "actor": "first-portuguese-republic",
+      "role": "government"
+    },
+    {
+      "actor": "partido-republicano-portugues",
+      "role": "party",
+      "note": "the party that made the republic, before it split"
+    },
+    {
+      "actor": "partido-democratico",
+      "role": "party",
+      "note": "the largest of the republic’s parties after the split of 1912"
+    },
+    {
+      "actor": "republican-liberal-party",
+      "role": "party"
+    },
+    {
+      "actor": "democratic-leftwing-republican-party",
+      "role": "party"
+    },
+    {
+      "actor": "manuel-de-arriaga",
+      "role": "head-of-state",
+      "note": "the republic’s first elected president"
+    },
+    {
+      "actor": "sidonio-pais",
+      "role": "head-of-state",
+      "note": "president after the coup of December 1917, assassinated in December 1918"
+    },
+    {
+      "actor": "afonso-costa",
+      "role": "head-of-government"
+    },
+    {
+      "actor": "pimenta-de-castro",
+      "role": "head-of-government"
+    },
+    {
+      "actor": "paiva-couceiro",
+      "role": "opposition",
+      "note": "led the monarchist rising of 1919 against the republic"
+    }
+  ]
+}

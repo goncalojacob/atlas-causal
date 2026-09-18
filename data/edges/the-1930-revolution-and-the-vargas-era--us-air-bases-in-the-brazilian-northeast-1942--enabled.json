@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "the-1930-revolution-and-the-vargas-era--us-air-bases-in-the-brazilian-northeast-1942--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazil in World War II\", revision 1373489318"
+    }
+  ],
+  "from": "the-1930-revolution-and-the-vargas-era",
+  "to": "us-air-bases-in-the-brazilian-northeast-1942",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Somebody had to say yes. Brazil broke off relations with Germany, Japan and Italy in January 1942 in exchange for direct American economic assistance and allowed the bases to be built; the alignment was the Estado Novo’s decision, taken against a government whose own sympathies had been read both ways, and it cost Brazil thirty-six merchant ships and two thousand lives before the year was out.",
+  "dispute": null
+}

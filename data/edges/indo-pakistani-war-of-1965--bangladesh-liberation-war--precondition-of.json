@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "indo-pakistani-war-of-1965--bangladesh-liberation-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"India–Pakistan war of 1965\", revision 1371230624"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bangladesh Liberation War\", revision 1370362676"
+    }
+  ],
+  "from": "indo-pakistani-war-of-1965",
+  "to": "bangladesh-liberation-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The war was fought in the west, over Kashmir, and left the eastern province defended by a single division and a promise. Mujibur Rahman put the Six Points to the Awami League in February 1966, four months after Tashkent, and the first of the arguments for them was that East Pakistan had been shown to be indefensible under a government that spent its army and its budget on the other frontier. From that programme come the election of 1970, the refusal to seat its winners, Operation Searchlight and the war. The claim is about where the autonomy movement got its decisive argument, not that 1965 made 1971 inevitable.",
+  "dispute": null
+}

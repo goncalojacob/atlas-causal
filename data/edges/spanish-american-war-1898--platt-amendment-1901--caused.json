@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "spanish-american-war-1898--platt-amendment-1901--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Platt Amendment\", revision 1361644701"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    }
+  ],
+  "from": "spanish-american-war-1898",
+  "to": "platt-amendment-1901",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Amendment exists to answer a question the war created: on what terms do the American troops in Cuba leave. It sets seven conditions for their withdrawal and an eighth requiring Cuba to sign a treaty accepting the other seven, and the Treaty of Paris had already set Cuba up as an independent state in 1902 that was a protectorate in practice. The occupation had been the McKinley administration’s answer, in 1899, to the appearance of a revolutionary government on the island; the Amendment is how it ended without ending.",
+  "dispute": null
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "moldova-1991",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 153"
+    }
+  ],
+  "actor": "moldova",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1991,
+    "end": null,
+    "date": "1991-08-25"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "153"
+  },
+  "capital": {
+    "lon": 28.8575,
+    "lat": 47.00555,
+    "precision": "city",
+    "label": "Chisinau"
+  },
+  "confidence": "consensus"
+}

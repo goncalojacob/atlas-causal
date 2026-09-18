@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "the-2018-brazilian-general-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2018 Brazilian general election\", revision 1361748195"
+    }
+  ],
+  "title": "The general election of 2018",
+  "summary": "Held on 7 October with a runoff on 28 October, at which the right-wing outsider Jair Bolsonaro defeated Fernando Haddad. The Workers’ Party had dominated Brazilian politics since 2002; Rousseff had been impeached in 2016 and Temer, who replaced her, left office with an approval rating of 7 per cent and was himself ineligible to stand. Lula intended to run and was the favourite in polling for both rounds, but his 2017 conviction on corruption charges barred him: on 1 September the Superior Electoral Court rejected his candidacy six to one under the Ficha Limpa law, and the party replaced him with Haddad, who was then largely unknown to the electorate.",
+  "when": {
+    "start": 2018,
+    "end": 2018,
+    "date": "2018-10-07",
+    "endDate": "2018-10-28"
+  },
+  "place": "brasilia",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the state whose electorate changed course, and whose courts decided who could stand"
+    }
+  ],
+  "names": [
+    "Eleições gerais no Brasil em 2018"
+  ],
+  "region": null
+}

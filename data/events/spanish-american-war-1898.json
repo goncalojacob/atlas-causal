@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "spanish-american-war-1898",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    }
+  ],
+  "title": "The Spanish–American War",
+  "summary": "Fought between 21 April and 13 August 1898, after the USS Maine blew up in Havana harbour on 15 February and political pressure overcame a president who had not sought a war. It was American intervention in the Cuban and Philippine wars of independence, and it ended almost four centuries of Spanish presence in the Americas, Asia and the Pacific. The Treaty of Paris of 10 December ceded Puerto Rico, Guam and the Philippines to the United States and set Cuba up to become independent in 1902 — in practice an American protectorate. The United States came out of it a world power with island possessions across the globe, and an argument at home about whether it should have them.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-04-21",
+    "endDate": "1898-08-13"
+  },
+  "place": "havana",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent",
+      "note": "American intervention in the Cuban and Philippine wars of independence; it came out a world power"
+    },
+    {
+      "actor": "spain",
+      "role": "belligerent",
+      "note": "the war ended almost four centuries of Spanish presence in the Americas, Asia and the Pacific"
+    }
+  ],
+  "names": [
+    "Guerra hispano-estadounidense"
+  ],
+  "parent": "cuban-war-of-independence-1895-1898",
+  "region": null
+}

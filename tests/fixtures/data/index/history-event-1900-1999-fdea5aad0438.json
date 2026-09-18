@@ -1,0 +1,26 @@
+{
+  "from": 1900,
+  "kind": "event",
+  "records": {
+    "fixture-event-deep-1900": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "fixture-event-deep-1969": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1999
+}

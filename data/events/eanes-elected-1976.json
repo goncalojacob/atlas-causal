@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "eanes-elected-1976",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    }
+  ],
+  "title": "Ramalho Eanes elected president",
+  "summary": "Ramalho Eanes, the officer who had commanded the operation of 25 November 1975, was elected President of the Republic on 27 June 1976 in the first round, with about sixty per cent of the vote and the support of the Socialists, the Social Democrats and the CDS. The office he entered was the one the 1976 constitution had just created: directly elected, with the Council of the Revolution beside it. He served two terms, to 1986, and presided over the return of the military to barracks and the end of the Council in the 1982 revision. It is in the atlas as the completion of the institutional settlement begun by the constitution, and as the point where the officers of 1974 begin to leave politics.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "date": "1976-06-27",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "ramalho-eanes",
+      "role": "elected"
+    },
+    {
+      "actor": "mario-soares",
+      "role": "supporter",
+      "note": "backer"
+    }
+  ]
+}

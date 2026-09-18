@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "brazilian-military-dictatorship-1964-1985",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m62-umbrella",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q1370527",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-09-18"
+  },
+  "wikipedia": {
+    "en": "Military dictatorship in Brazil",
+    "pt": "Ditadura militar brasileira"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1370527"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Military dictatorship in Brazil\", revision 1373177216"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Ditadura militar brasileira\", revision 72895311"
+    }
+  ],
+  "title": "The Brazilian military dictatorship",
+  "summary": "Brazil under military rule, established on 1 April 1964 by a coup of the armed forces against President João Goulart and lasting twenty-one years, until 15 March 1985. Wikidata gives the start as a day and the end only as a year; the day of the end is the English article’s. The period is held here so that the events of those twenty-one years the atlas already carries have something to be part of — and so that the coup that created the regime is not filed inside it.",
+  "when": {
+    "start": 1964,
+    "end": 1985,
+    "date": "1964-04-01",
+    "endDate": "1985-03-15",
+    "calendar": "gregorian"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "A regime has no single point on the map, so the lane is given rather than derived: Brazil’s.",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "government"
+    }
+  ]
+}

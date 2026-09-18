@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1/bundle.json",
+  "title": "Bundle",
+  "description": "The unit of contribution: a set of records validated together. References may resolve inside the bundle or in the topology index.",
+  "type": "object",
+  "required": ["schema", "records"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": 1 },
+    "records": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "$ref": "event.json" },
+          { "$ref": "edge.json" },
+          { "$ref": "source.json" },
+          { "$ref": "actor.json" },
+          { "$ref": "place.json" },
+          { "$ref": "relation.json" },
+          { "$ref": "office.json" },
+          { "$ref": "tenure.json" },
+          { "$ref": "narrative.json" }
+        ]
+      }
+    }
+  }
+}

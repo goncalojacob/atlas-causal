@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "cultural-revolution",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-05",
+    "reason": "Retracted in M40b: the decade of upheaval Mao launched in May 1966. The atlas holds nothing in China between 1949 and 1999, and the link that would matter here is precise: the spill-over into Macau in December 1966, after which Portuguese authority in the territory was nominal and the question of returning it was open. No source this atlas holds carries that incident, so the edge would rest on nothing. It needs the 1-2-3 incident of 1966–67 as a record first."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m40-retracted"
+    ]
+  },
+  "wikidata": "Q8690",
+  "sitelinks": {
+    "count": 116,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Cultural Revolution",
+    "pt": "Revolução Cultural Chinesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8690"
+    }
+  ],
+  "title": "Cultural Revolution",
+  "summary": "Wikidata item Q8690, imported by tools/import/wikidata.mjs. The item's own description reads \"1966–1976 Maoist sociopolitical movement in China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1966,
+    "end": 1976,
+    "date": "1966-05-16",
+    "endDate": "1976-10-06"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": []
+}

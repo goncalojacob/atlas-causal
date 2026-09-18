@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "zululand",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": "2026-09-18",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m59-dissolved"
+    ],
+    "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q729768 (Zulu Kingdom) gives P576 1897, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began."
+  },
+  "origin": {
+    "tool": "basemaps"
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "NAME \"Zululand\""
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q729768, P576 1897"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Zululand"
+  ],
+  "summary": "A polity the Historical Basemaps dataset draws in the snapshots for 1878 and 1880. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The span those snapshots cover is 1878 to 1885, and that is not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1878,
+    "end": 1897
+  },
+  "where": null
+}

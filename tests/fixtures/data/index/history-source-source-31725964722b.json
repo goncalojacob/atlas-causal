@@ -1,0 +1,50 @@
+{
+  "from": null,
+  "kind": "source",
+  "records": {
+    "fixture-source-1": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-source-2": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "container"
+          ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-source-3": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-source-4": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-01-01"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": null
+}

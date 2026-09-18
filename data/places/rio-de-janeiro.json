@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "rio-de-janeiro",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [],
+  "names": [
+    "Rio de Janeiro"
+  ],
+  "where": {
+    "lon": -43.196,
+    "lat": -22.908,
+    "precision": "city",
+    "label": "Rio de Janeiro"
+  },
+  "region": null,
+  "summary": null
+}

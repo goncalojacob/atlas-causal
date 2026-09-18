@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "germany-declares-war-1916--battle-of-the-lys-1918--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "from": "germany-declares-war-1916",
+  "to": "battle-of-the-lys-1918",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "Belligerency led directly to the dispatch of the Portuguese Expeditionary Corps to Flanders in 1917; the corps was on the Lys because Portugal was at war.",
+  "dispute": null
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "fnla",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date",
+      "wikidata-assigned-by-assistant"
+    ],
+    "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry."
+  },
+  "wikidata": "Q907051",
+  "wikipedia": {
+    "en": "National Liberation Front of Angola",
+    "pt": "Frente Nacional de Libertação de Angola"
+  },
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "FNLA",
+    "Frente Nacional de Libertação de Angola",
+    "National Front for the Liberation of Angola"
+  ],
+  "summary": "The northern Angolan movement, formed in 1962 out of the UPA and the PDA and operating largely from what was then the Congo; a signatory of the Alvor Agreement and a loser of the war that followed it.",
+  "when": {
+    "start": 1962,
+    "end": null
+  },
+  "where": null
+}

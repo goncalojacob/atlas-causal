@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "wikipedia-en",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "type": "web",
+  "creators": [
+    "Wikipedia contributors"
+  ],
+  "title": "Wikipedia, English edition",
+  "year": null,
+  "publisher": "Wikimedia Foundation; the text is licensed CC BY-SA 4.0",
+  "isbn": null,
+  "doi": null,
+  "url": "https://en.wikipedia.org/",
+  "accessed": "2026-09-04",
+  "repository": null,
+  "reference": null
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "marcelo-rebelo-de-sousa",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The birth or founding year, and the end where there is one, were written from memory."
+  },
+  "wikidata": "Q6756617",
+  "wikipedia": {
+    "en": "Marcelo Rebelo de Sousa",
+    "pt": "Marcelo Rebelo de Sousa"
+  },
+  "sitelinks": {
+    "count": 66,
+    "on": "2026-09-03"
+  },
+  "sources": [
+    {
+      "source": "cne-presidential-2016",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Marcelo Rebelo de Sousa",
+    "Marcelo"
+  ],
+  "summary": "Law professor, PSD leader in the mid-1990s and television commentator for two decades, elected president in the first round in 2016 and re-elected in 2021. His two terms covered the minority government of 2015, the pandemic, and the dissolutions of 2021, 2024 and 2025.",
+  "when": {
+    "start": 1948,
+    "end": null
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

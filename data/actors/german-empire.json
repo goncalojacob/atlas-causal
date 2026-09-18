@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "german-empire",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [
+    "germany-prussia"
+  ],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 255"
+    },
+    {
+      "source": "historical-basemaps",
+      "locator": "NAME \"Germany\""
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q43287, P571 1871-01-01"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q43287, P576 1918-11-09"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "German Empire"
+  ],
+  "summary": "A polity whose inception Wikidata states as 1871-01-01 on Q43287 and whose dissolution it states as 1918-11-09. Both years here are those two values. Its territory is CShapes’ entity 255, which the dataset labels \"Germany (Prussia)\" and draws in four periods from 1886 to 1945 — a label and a span covering three polities at once: M55 gave this record the first period, cut at the Empire’s cited dissolution, and the Weimar Republic and the Nazi state the rest. It also carries the two Historical Basemaps snapshots of 1878 and 1880, merged in from `germany`: the outlines either side of the 1885/1886 seam share 98.24% of the smaller and both years fall inside these dates, which is the question docs/m51-overlaps.md left open and could not answer without them. The eighteen colonial presences that name this record as their sovereign run from 1886 to 1916 and are all inside its interval.",
+  "when": {
+    "start": 1871,
+    "end": 1918
+  },
+  "where": {
+    "lon": 13.4,
+    "lat": 52.51667,
+    "precision": "city",
+    "label": "Berlin"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-germany",
+      "m55-joined"
+    ],
+    "note": "M55: this record was named \"Germany (Prussia)\" and was one record for three polities, 1886 to 1945. It is now the German Empire alone, on Wikidata’s Q43287 — P571 1871-01-01, P576 1918-11-09 — and the Weimar Republic and the Nazi state carry the rest. `germany` is merged into it: the outlines either side of the 1885/1886 seam share 98.24% of the smaller and both snapshots fall inside these dates. Its eighteen colonial dependencies all run 1886–1916 and are untouched."
+  }
+}

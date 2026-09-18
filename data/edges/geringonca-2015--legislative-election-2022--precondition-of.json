@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "geringonca-2015--legislative-election-2022--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "cne-legislative-2022",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "from": "geringonca-2015",
+  "to": "legislative-election-2022",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The election of January 2022 was called because the arrangement of 2015 had ended: the two parties that had kept the PS in office voted its budget down, and the president dissolved parliament rather than let a government continue without one. The arrangement is therefore a precondition of the election in the strict sense — the election happened at that moment because the arrangement had existed and had stopped.",
+  "dispute": null
+}

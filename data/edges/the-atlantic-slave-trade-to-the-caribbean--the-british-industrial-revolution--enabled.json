@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "the-atlantic-slave-trade-to-the-caribbean--the-british-industrial-revolution--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capitalism and Slavery\", revision 1341902916"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Industrial Revolution\", revision 1375160528"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    }
+  ],
+  "from": "the-atlantic-slave-trade-to-the-caribbean",
+  "to": "the-british-industrial-revolution",
+  "type": "enabled",
+  "confidence": "disputed",
+  "explanation": "The most contested link either chain touches, and the reason `disputed` exists in this schema. The thesis is Eric Williams’s in Capitalism and Slavery (1944), stated by Carrington as: the slave trade and the sugar industry based on slavery led to the formation of capital in England which helped finance the Industrial Revolution. The plantations supplied 80 to 90 per cent of the sugar consumed in western Europe and Barbados alone out-traded every other English colony combined by 1660, so there is no argument about whether the profits were large; the argument is about what they did. The atlas marks the link rather than asserting it, and a reader who opens this edge gets the disagreement rather than a line drawn confidently through it.",
+  "dispute": {
+    "text": "Seymour Drescher, Stanley Engerman and David Richardson are the named dissenters in the cited account. Engerman finds that even without subtracting the costs of the trade or the reinvestment of profits, the total profits of the slave trade and the West Indian plantations came to less than five per cent of the British economy in any year of the Industrial Revolution; Richardson (1998) finds the slave-trade profits were under one per cent of domestic investment in Britain and calls Williams’s claims about industrialisation exaggerated. Against them, Ryden (2009) and Carrington (1984) defend the thesis, Geggus (1981) questioned Drescher’s method of capital valuation, and Beckles wrote in 2004 of the academic respect the book holds in the Caribbean. The dispute is a hundred years old and live.",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Capitalism and Slavery\", the criticism of the Williams theses, revision 1341902916"
+      }
+    ]
+  }
+}

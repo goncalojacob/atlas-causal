@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "porajmos",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-15",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-15",
+    "reason": "Retracted in M44b, class B. The Romani genocide argues to the Holocaust, which this atlas holds and which reaches no Portuguese event within two hops even after the edge this round wrote from it to the genocide convention. There is nothing dishonest about the record and nothing to hang it on: what is missing is any Portuguese record of the war’s persecutions — Sousa Mendes and the visas of 1940 are not in this atlas — and until one is here the whole of the Nazi genocide sits outside the Portuguese reach the round requires."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m44b-retracted"
+    ]
+  },
+  "wikidata": "Q117571",
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Romani Holocaust",
+    "pt": "Porajmos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q117571"
+    }
+  ],
+  "title": "Porajmos",
+  "summary": "Wikidata item Q117571, imported by tools/import/wikidata.mjs. The item's own description reads \"mass murder against Roma people in Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1939,
+    "end": 1945
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

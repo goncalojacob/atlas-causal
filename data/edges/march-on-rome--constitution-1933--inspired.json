@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "march-on-rome--constitution-1933--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"March on Rome\", revision 1374461265"
+    }
+  ],
+  "from": "march-on-rome",
+  "to": "constitution-1933",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The corporative state the constitution of 1933 set up was built on a model Italy had made, and the model is the whole of what this edge claims. The National Assembly with a single party in it, the Corporative Chamber beside it, the labour statute and the strike ban, the vocabulary of the organic nation against the party state: Salazar read the Italian arrangements and his collaborators studied them, and the Portuguese text of 1933 is unintelligible without them. The claim is about the shape of the institutions and is marked probable for a reason the Portuguese historiography insists on: Salazar was not Mussolini, the Estado Novo demobilised where fascism mobilised, and the constitution of 1933 borrowed the corporative machinery precisely in order to have the thing without the movement. Inspired is the right type here and caused would be wrong.",
+  "dispute": null
+}

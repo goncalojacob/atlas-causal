@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "people-s-democratic-union--bloco-de-esquerda--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date",
+      "relation-drafted"
+    ],
+    "note": "Written in M41b from the cached Wikipedia leads it cites, to join an actor the second Portuguese round imported to a record the atlas already held. The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"União Democrática Popular\", revision 69821974"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Popular Democratic Union (Portugal)\", revision 1352555139"
+    }
+  ],
+  "from": "people-s-democratic-union",
+  "to": "bloco-de-esquerda",
+  "type": "succeeded",
+  "when": {
+    "start": 1999,
+    "end": 1999
+  },
+  "note": "The UDP was one of three parties at the origin of the Bloco in 1999 and became a political association inside it."
+}

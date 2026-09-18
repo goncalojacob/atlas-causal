@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "constitutional-revision-1959--1965-portuguese-presidential-election--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "constitutional-revision-1959",
+  "to": "1965-portuguese-presidential-election",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The revision of 1959 abolished the direct election of the president and gave the choice to an electoral college the regime controlled. The election of July 1965 is the first one held that way, and it is the revision working exactly as intended: no campaign, no crowds, no count to dispute, and the same admiral returned for another seven years.",
+  "dispute": null
+}

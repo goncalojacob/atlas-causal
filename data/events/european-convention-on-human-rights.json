@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "european-convention-on-human-rights",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q183191",
+  "sitelinks": {
+    "count": 67,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "European Convention on Human Rights",
+    "pt": "Convenção Europeia dos Direitos Humanos"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"European Convention on Human Rights\", revision 1366403378"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Convenção Europeia dos Direitos Humanos\", revision 71694314"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q183191"
+    }
+  ],
+  "title": "European Convention on Human Rights",
+  "summary": "Signed in Rome on 4 November 1950 by the members of the newly founded Council of Europe, the convention set out the rights a state may not take from a person — life, liberty, a fair trial, conscience, expression, assembly — and, unusually for a treaty of that date, built machinery to enforce them, ending in a court at Strasbourg that individuals could eventually reach directly. It is the first instrument of its kind with teeth. Portugal, a dictatorship in 1950 and not a member of the Council of Europe, joined both only after the revolution, and the convention entered into force here in 1978.",
+  "when": {
+    "start": 1950,
+    "end": 1950,
+    "date": "1950-11-04"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": [
+    {
+      "actor": "council-of-europe",
+      "role": "institution"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "signatory"
+    },
+    {
+      "actor": "france",
+      "role": "signatory"
+    },
+    {
+      "actor": "italy-sardinia",
+      "role": "signatory"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "manuel-ii",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q154308",
+  "wikipedia": {
+    "en": "Manuel II of Portugal",
+    "pt": "Manuel II de Portugal"
+  },
+  "sitelinks": {
+    "count": 56,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Manuel II",
+    "D. Manuel II",
+    "Manuel II of Portugal"
+  ],
+  "summary": "Manuel II (1889–1932) came to the throne on 1 February 1908, when his father Carlos I and his elder brother were shot dead in the Terreiro do Paço, and reigned until the republican revolution of 5 October 1910. His two and a half years were spent trying to govern through rotating ministries in a monarchy whose credit had been spent by the dictatorship of João Franco. He left for exile in England, refused to endorse the monarchist risings made in his name during the First Republic, and died at Twickenham in 1932. He is in the atlas as the last king, and as the endpoint of the chain that begins the twentieth century in Portugal.",
+  "when": {
+    "start": 1889,
+    "end": 1932
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "portuguese-constitutional-referendum-1933",
+  "kind": "event",
+  "status": "merged",
+  "supersededBy": "constitution-1933",
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-merged"
+    ],
+    "note": "Merged in M21 into constitution-1933, which is the same event: the atlas already dates the Constitution of 1933 to the plebiscite of 19 March and its summary describes that vote, abstentions counted as approval and all. Rather than retract, this record names its survivor, and it keeps the Wikidata id and the two Wikipedia links the import brought — constitution-1933 carries no identity, and whether the referendum’s item is the right one for it is a question for review, not for this run."
+  },
+  "wikidata": "Q7232706",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1933 Portuguese constitutional referendum",
+    "pt": "Referendo constitucional em Portugal (1933)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7232706"
+    }
+  ],
+  "title": "Portuguese constitutional referendum, 1933",
+  "summary": "Wikidata item Q7232706, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1933,
+    "end": 1933,
+    "date": "1933-03-19"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

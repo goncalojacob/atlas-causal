@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1945-portuguese-legislative-election--1949-portuguese-presidential-election--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "1945-portuguese-legislative-election",
+  "to": "1949-portuguese-presidential-election",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "What 1945 taught the democratic opposition was that the regime would concede the form of a contest when it wanted something from abroad, and would concede nothing that decided one — not the rolls, not the censorship, not the count. The campaign for Norton de Matos was built on that reading. It went for the presidency rather than the Assembly, because a single national candidacy could not be taken apart constituency by constituency, and it went early and in the open. It ended the same way and for the same reasons, which is the point of putting the two side by side.",
+  "dispute": null
+}

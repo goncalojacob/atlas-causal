@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "profit-remittance-law-1962--the-base-reforms-rally-1964--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Reformas de base\", revision 72119911"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"João Goulart\", revision 1366723860"
+    }
+  ],
+  "from": "profit-remittance-law-1962",
+  "to": "the-base-reforms-rally-1964",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The law of 1962 is the fiscal limb of the base reforms, and the rally of 13 March 1964 is where the reforms stopped being a programme and became decrees. Wikipedia’s account of the reforms puts the cap on profit remittance under the fiscal reform and the decree regulating it, 53,451, in 1964 — the same season as the rally.",
+  "dispute": null
+}

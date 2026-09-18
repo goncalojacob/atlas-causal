@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "russia-soviet-union-1945",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-16",
+  "origin": {
+    "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m52-russia"
+    ],
+    "note": "M52: this period moved with entity 365’s split into the three polities CShapes carried under one label. The outline, the dates and the id are untouched; only `actor` changed. docs/m52-russia.md §2.5."
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 174"
+    }
+  ],
+  "actor": "soviet-union",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1945,
+    "end": 1945,
+    "date": "1945-05-08",
+    "endDate": "1945-08-14"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1933-1945.json"
+    ],
+    "key": "174"
+  },
+  "capital": {
+    "lon": 37.615551,
+    "lat": 55.75222,
+    "precision": "city",
+    "label": "Moscow"
+  },
+  "confidence": "consensus"
+}

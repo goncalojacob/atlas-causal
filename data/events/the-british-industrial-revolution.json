@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "the-british-industrial-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Industrial Revolution\", revision 1375160528"
+    }
+  ],
+  "title": "The Industrial Revolution",
+  "summary": "The transition to widespread, efficient and stable manufacturing, beginning in Great Britain around 1760 and spread to continental Europe and the United States by about 1840. Economic historians call its onset the most important event in human history after the adoption of agriculture. It is in both chains of this milestone for one reason: whether the profits of Atlantic slavery paid for it is the most contested question either chain touches, and the atlas would rather hold the question as a marked disagreement than answer it.",
+  "when": {
+    "start": 1760,
+    "end": 1840
+  },
+  "place": "manchester",
+  "actors": [
+    {
+      "actor": "united-kingdom-before-1886",
+      "role": "host",
+      "note": "the transition began in Great Britain around 1760"
+    }
+  ],
+  "region": null
+}

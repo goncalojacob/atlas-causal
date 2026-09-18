@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "2002-portuguese-legislative-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q2053133",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2002 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 2002"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2002 Portuguese legislative election\", revision 1372484114"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 2002\", revision 72017791"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "2002 Portuguese legislative election",
+  "summary": "The early election of 17 March 2002 followed Guterres's resignation after the local defeat of December. The Social Democrats came first under José Manuel Durão Barroso and governed with the CDS, on a programme of correcting a deficit that had gone through the three per cent the single currency allowed — Portugal was the first member state put under the excessive deficit procedure, in November of that year. The government did not last the legislature: Barroso left for the presidency of the European Commission in July 2004, Pedro Santana Lopes replaced him, and President Sampaio dismissed the government four months later. It is in the atlas as the beginning of the decade in which the deficit became the permanent subject of Portuguese politics.",
+  "when": {
+    "start": 2002,
+    "end": 2002,
+    "date": "2002-03-17"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "psd",
+      "role": "head-of-government",
+      "note": "came first and led the government"
+    },
+    {
+      "actor": "cds-pp",
+      "role": "party",
+      "note": "junior partner"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "opposition",
+      "note": "lost office"
+    }
+  ]
+}

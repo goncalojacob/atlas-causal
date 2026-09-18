@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-brazilian-gold-cycle--transfer-of-the-portuguese-court-to-brazil-1807--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Independence of Brazil\", revision 1373868391"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazilian gold rush\", revision 1360546842"
+    }
+  ],
+  "from": "the-brazilian-gold-cycle",
+  "to": "transfer-of-the-portuguese-court-to-brazil-1807",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "A court in flight goes somewhere that can keep it. The reason given for Brazil, in so many words, is that it was by then the richest and most developed of the Portuguese colonies, and what had made it so within living memory was the gold: eight hundred tonnes shipped over the century, half the population of the colony resettled into the south-east by 1725. The type is the weak one, and deliberately: the mines did not send the French army into Portugal. They are why the answer to the invasion could be a transatlantic capital rather than a surrender.",
+  "dispute": null
+}

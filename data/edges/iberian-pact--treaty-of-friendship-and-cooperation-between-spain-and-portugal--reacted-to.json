@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "iberian-pact--treaty-of-friendship-and-cooperation-between-spain-and-portugal--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "from": "iberian-pact",
+  "to": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The treaty of 1977 was drawn up to replace the Iberian Pact of 1939 and names the instrument it supersedes. What it answers is the pact’s content as much as its existence — an agreement between two dictators to leave each other alone, made when neither state had a foreign policy its people had any part in. Two democratic prime ministers signing a treaty of friendship and cooperation in November 1977, in the same year both governments applied to the European Communities, is a deliberate answer to that: the same neighbourly non-interference, resting on something else.",
+  "dispute": null
+}

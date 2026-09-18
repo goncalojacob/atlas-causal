@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "the-brazilian-coffee-cycle--the-1930-revolution-and-the-vargas-era--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Coffee production in Brazil\", revision 1371259594"
+    }
+  ],
+  "from": "the-brazilian-coffee-cycle",
+  "to": "the-1930-revolution-and-the-vargas-era",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The politics 1930 overthrew is named after the crop. The second boom, from the 1880s to the 1930s, corresponds to the period called café com leite after the dominant industries of the two largest states, coffee in São Paulo and dairy in Minas Gerais, and coffee was three quarters of export earnings. Valorisation — the state buying the harvest to hold the price up, from Taubaté in 1906 — worked for the planters and the treasury, and produced a global oversupply that, on Wikipedia’s account, increased the damage the Depression did when it came. `precondition-of` rather than `caused`: the revolution had its own quarrel, and what the cycle supplied was the arrangement it was a quarrel with and the crash it happened in.",
+  "dispute": null
+}

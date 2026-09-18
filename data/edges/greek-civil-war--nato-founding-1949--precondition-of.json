@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "greek-civil-war--nato-founding-1949--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Greek Civil War\", revision 1374372236"
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "greek-civil-war",
+  "to": "nato-founding-1949",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Greece is where the American commitment to defend Europe west of the Soviet line was first made and first paid for. Britain told Washington in February 1947 that it could no longer carry Greece and Turkey; the Truman doctrine of 12 March is the answer, and the Atlantic treaty of April 1949 is that answer turned into an alliance with a European membership. Portugal was a founder of it, which is why this edge reaches this atlas at all. The claim is about the commitment and not about the drafting: the treaty was negotiated over Berlin and Prague as much as over Greece, and those belong to the other edges around this one.",
+  "dispute": null
+}

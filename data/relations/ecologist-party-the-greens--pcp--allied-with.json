@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ecologist-party-the-greens--pcp--allied-with",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date",
+      "relation-drafted"
+    ],
+    "note": "Written in M41b from the cached Wikipedia leads it cites, to join an actor the second Portuguese round imported to a record the atlas already held. The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Partido Ecologista \"Os Verdes\"\", revision 72696956"
+    }
+  ],
+  "from": "ecologist-party-the-greens",
+  "to": "pcp",
+  "type": "allied-with",
+  "when": {
+    "start": 1982,
+    "end": null
+  },
+  "note": "Coalition at every election: the Aliança Povo Unido and then the Coligação Democrática Unitária. The lead does not date the change between them and neither does this."
+}

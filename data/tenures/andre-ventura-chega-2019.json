@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "andre-ventura-chega-2019",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "cne-legislative-2019",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "person": "andre-ventura",
+  "office": "leadership-of-chega",
+  "when": {
+    "start": 2019,
+    "end": null
+  },
+  "startedBy": null,
+  "note": "Founder. The sources name him at the head of the party; neither is a party record."
+}

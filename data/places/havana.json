@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "havana",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [],
+  "names": [
+    "Havana, Cuba"
+  ],
+  "where": {
+    "lon": -82.359,
+    "lat": 23.136,
+    "precision": "city",
+    "label": "Havana"
+  },
+  "region": null,
+  "summary": null
+}

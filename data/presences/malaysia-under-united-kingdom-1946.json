@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "malaysia-under-united-kingdom-1946",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 610"
+    }
+  ],
+  "actor": "malaysia-under-united-kingdom",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1946,
+    "end": 1957,
+    "date": "1946-04-01",
+    "endDate": "1957-08-30"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "610"
+  },
+  "capital": {
+    "lon": 101.699997,
+    "lat": 3.16667,
+    "precision": "city",
+    "label": "Kuala Lumpur"
+  },
+  "confidence": "consensus"
+}

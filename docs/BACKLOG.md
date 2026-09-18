@@ -1,0 +1,135 @@
+# Backlog
+
+Features agreed as worth doing, not yet scheduled. Owner's list, kept by
+the assistant. Scheduled work lives in `docs/*-brief.md`; the position in
+`STATUS.md`.
+
+## World scope
+
+- Hand-drawn presences for what CShapes lacks: Cape Verde, São Tomé and
+  Príncipe, Portuguese India (Goa, Daman, Diu). CC BY-SA, ours, from
+  public-domain sources.
+- Spheres of influence for 1415–1580, the period the project was conceived
+  for: `presenceType` `sphere-of-influence` and `polity` exist and are
+  unused. Historical work, not import work.
+- Split the remaining mixed-status CShapes entities (colony → state) in
+  batches by editing `data/imports/cshapes-actors.json`; the report is in
+  `STATUS.md`.
+- Deep-time timeline scale (bucketed or log) and paleo-coastlines
+  (`data/geo/land-<epoch>.json`), both designed in `ARCHITECTURE.md`.
+- International administrations as actors (League of Nations, United
+  Nations) so Danzig and West New Guinea have a `dependencyOf`.
+- Portuguese as an i18n overlay (`data/i18n/`), designed.
+
+## Smaller
+
+- "Discuss this record" link to a GitHub issue per record, prefilled.
+- Export the current view (map, graph, timeline) as an image; it is SVG.
+- ~~A layout that works on a phone~~ — built in M28: under 720 px the atlas
+  stacks and the panel is a sheet over the view.
+- Level of detail in the graph view past a few hundred events (the map's
+  clustering idea along the time axis).
+- Close the roles vocabulary (62 in use; the manifest lists them).
+- ~~A `container` field on sources (journal, edited volume)~~ — built in M28,
+  with `series` and `website` beside those two.
+- ~~Reordering the steps of a narrative in the contribution form~~ — built in
+  M28, in the review dashboard's editor too: two controls on the row, and Alt
+  with an arrow from anywhere in it.
+- ~~A narrative's own page in the list~~ — built in M28 as `narratives.html`,
+  grouped by the centuries each account crosses.
+- **One renderer for the contribution form and the review editor.** They
+  share the field definitions and not the code that draws them (deviation 82
+  in `STATUS.md`). Extracting `form.js`'s entry renderer is the right shape;
+  do it with a DOM test under the form first, because nothing in the test
+  suite would catch a regression there today.
+- A record's history on the review dashboard: what a signature changed, read
+  from git, so a reviewer can see what the draft said before they fixed it.
+- Presences' `capital` as a reference to a place record once places exist.
+- Natural Earth's continent assignment (Russia → Europe, Turkey → Asia,
+  Greenland → Americas): keep, or redraw the lane polygons.
+
+## Reading
+
+- **A full page per record.** The map and the timeline show a summary; a
+  reader should be able to open a full entry — an extensive, structured
+  text on the event, actor or place, with sections and citations, written
+  by contributors from any sources, not a redirect to Wikipedia. This is
+  where information that lives in several sources gets written down at
+  length. Needs a long-text field on the record (a safe subset of Markdown,
+  escaped like everything else), a route or page per record, "Read the
+  full entry" from every card, the field in the form and the dashboard,
+  and the same citation-verification treatment as the summary. Owner's
+  request, 4 September 2026.
+
+## Look
+
+- **Colour on the map, and a more styled interface.** Owner's request,
+  4 September 2026. Today the territories are cobalt outlines on white
+  (a decision taken in M5 to avoid "a rainbow of forty hues") and the
+  whole interface is blue lines. The owner wants each country or
+  territory to have its own colour and the interface to carry more
+  visual identity. What a design pass has to solve rather than decorate:
+  a limited palette of tints assigned so that neighbouring territories
+  differ and a territory keeps its colour as the years pass (a stable
+  map-colouring, not per-year random), still inside the azulejo tokens or
+  an extension of them; the selected actor and the walked chain must stay
+  the loudest things on screen (cobalt and madder), so territory colour
+  has to be quieter than both; dependencies tied to their owner's hue;
+  the graph view's five edge types and the timeline lanes given the same
+  treatment; typography and spacing revisited with the same care. A
+  visual-identity brief, reviewed before it runs; every colour stays a
+  token in `style.css`.
+
+## Map and timeline together
+
+- **The timeline follows the map's viewport.** Owner's request, 4
+  September 2026. When the reader pans or zooms the map, the timeline
+  shows the events inside the area on screen (with the walked chain and
+  the selection always kept), and says so; zooming out restores the
+  whole. A geographic filter that composes with the lens and the window
+  rather than replacing them; `?bbox=` in the URL so a view is shareable;
+  a control to pin the timeline to the world again.
+- **A real base map under the events.** Owner's request, 4 September
+  2026. As the reader zooms in, the map should show what a map shows:
+  cities, rivers, mountains, borders of the present or the chosen year —
+  more detail at each level. This is the one place where the "no map
+  tiles, no map library" constraint has to be re-argued: public-domain
+  vector data exists (Natural Earth at 50 m and 10 m for coastlines,
+  rivers, lakes, populated places, physical labels) and can be drawn as
+  SVG at the appropriate zoom with the same offline pipeline as the
+  coastlines, sharded by zoom level and region so the page stays light;
+  raster tiles would break hosting and honesty and stay out. Historical
+  place names by period are a separate, editorial layer. Needs a brief,
+  a data budget, and a review.
+
+## Publishing
+
+- Public visibility and GitHub Pages (needs the repository public on the
+  current plan).
+- The `CONTRIBUTION_PAT` secret and an end-to-end test of the contribution
+  pipeline.
+- When contributions open to strangers; `CONTEXT.md` argues for after the
+  1415–1580 slice exists.
+
+## Research
+
+- **A small language model that writes narratives on demand from the
+  atlas's own records, and nothing else** — no paid API, no dependence on a
+  vendor. Owner's idea, 3 September 2026. Constraints it must satisfy
+  before it can be more than an experiment, from `CONTEXT.md` and
+  `CLAUDE.md`: the model may only *explain and connect records that
+  exist* (events, edges with their explanations and sources, actors,
+  relations), never invent a link or a fact; every generated narrative is
+  marked as generated, keeps the subgraph it was built from (the record
+  ids), and can be checked claim by claim against those records; a
+  generated narrative never enters `data/narratives/` unless a person
+  reviews and signs it. Open questions: whether "on demand" means in the
+  browser (a quantised small model over WebGPU/WASM is a large optional
+  asset, not a runtime dependency in the sense of the rule, but it has to
+  be decided) or on the maintainer's machine in batch, as `CONTEXT.md`
+  already sketches; how to constrain generation to the retrieved records
+  (retrieval over the graph plus a verifier that rejects sentences that
+  cite nothing); and how the interface labels a generated walk so it is
+  never mistaken for a signed one. Start with the batch form and a
+  verifier; the browser form only if the batch form proves honest.
+

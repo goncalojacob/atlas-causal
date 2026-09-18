@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "pakistan-1949",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 579"
+    }
+  ],
+  "actor": "pakistan",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1949,
+    "end": 1959,
+    "date": "1949-01-05",
+    "endDate": "1959-09-30"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "579"
+  },
+  "capital": {
+    "lon": 66.990009,
+    "lat": 24.86999,
+    "precision": "city",
+    "label": "Karachi"
+  },
+  "confidence": "consensus"
+}

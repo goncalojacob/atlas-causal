@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "the-commodity-boom-and-the-chinese-buyer",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2000s commodities boom\", revision 1368808962"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazil–China relations\", revision 1364321291"
+    }
+  ],
+  "title": "The commodity boom and the Chinese buyer",
+  "summary": "The rise in commodity prices through the early twenty-first century — food, oil, metals, fuels — is called the commodities supercycle, and also the China boom, because what drove it was demand from emerging markets and above all from China. It peaked in 2011 on strong demand from emerging nations against slow supply growth. For Brazil the change of buyer is dated: trade with China grew from 6.7 billion dollars in 2003 to 36.7 billion in 2009, and in 2009 China became Brazil’s largest trading partner. Lula and much of the Brazilian press treated China as the country’s most promising partner and a strategic ally, on the strength of its rapidly rising demand for raw materials and agricultural produce; China for its part was financing oil exploration and repairing railways. It is the fourth change of buyer in this story and, like the three before it, it was political.",
+  "when": {
+    "start": 2000,
+    "end": 2014
+  },
+  "place": "brasilia",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the state whose exports the boom was of, and whose largest partner changed in 2009"
+    },
+    {
+      "actor": "china",
+      "role": "government",
+      "note": "the buyer whose demand for raw materials and agricultural produce carried the boom, and the lender behind it"
+    }
+  ],
+  "names": [
+    "Boom das commodities",
+    "Superciclo das commodities"
+  ],
+  "region": null
+}

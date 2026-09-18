@@ -1,0 +1,15 @@
+{
+  "type": "standard",
+  "title": "Northfield Rising",
+  "displaytitle": "Northfield Rising",
+  "pageid": 999001,
+  "revision": "1234567890",
+  "tid": "00000000-0000-0000-0000-000000000000",
+  "timestamp": "2026-08-31T10:00:00Z",
+  "lang": "en",
+  "dir": "ltr",
+  "extract": "The Northfield Rising was an invented uprising written for a test fixture. It has no date, no place and no consequences outside this repository, which is the point: the import is checked on what it does with a lead, not on what the lead says.",
+  "content_urls": {
+    "desktop": { "page": "https://en.wikipedia.org/wiki/Northfield_Rising", "revisions": "https://en.wikipedia.org/wiki/Northfield_Rising?action=history" }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "argentina-1899",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 70"
+    }
+  ],
+  "actor": "argentina",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1899,
+    "end": 1902,
+    "date": "1899-03-24",
+    "endDate": "1902-11-19"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "70"
+  },
+  "capital": {
+    "lon": -58.672501,
+    "lat": -34.5875,
+    "precision": "city",
+    "label": "Buenos Aires"
+  },
+  "confidence": "consensus"
+}

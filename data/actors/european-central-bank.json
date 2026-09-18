@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "european-central-bank",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date",
+      "wikidata-assigned-by-assistant"
+    ],
+    "note": "The birth or founding year, and the end where there is one, were written from memory."
+  },
+  "wikidata": "Q8901",
+  "wikipedia": {
+    "en": "European Central Bank",
+    "pt": "Banco Central Europeu"
+  },
+  "sitelinks": {
+    "count": 84,
+    "on": "2026-09-03"
+  },
+  "sources": [
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    },
+    {
+      "source": "imf-2016-portugal-ex-post-evaluation",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "European Central Bank",
+    "ECB",
+    "Banco Central Europeu",
+    "BCE"
+  ],
+  "summary": "The central bank of the euro area since 1998, one of the three lenders of the 2011 programme and, through its purchases and its conditions, a party to the years of adjustment that followed.",
+  "when": {
+    "start": 1998,
+    "end": null
+  },
+  "where": {
+    "lon": 8.68,
+    "lat": 50.11,
+    "precision": "city",
+    "label": "Frankfurt am Main"
+  }
+}

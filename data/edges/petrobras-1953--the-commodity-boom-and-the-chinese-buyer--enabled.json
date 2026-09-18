@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "petrobras-1953--the-commodity-boom-and-the-chinese-buyer--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazil–China relations\", revision 1364321291"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Petrobras\", revision 1372204096"
+    }
+  ],
+  "from": "petrobras-1953",
+  "to": "the-commodity-boom-and-the-chinese-buyer",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Oil is one of the commodities the fourth buyer came for, and the company that produces it is the one the monopoly of 1953 created: Chinese investment in Brazil has gone into financing oil exploration as well as repairing railways, and Petrobras is what there was to invest in. `enabled` and not `caused`: the boom was made by demand from emerging markets and above all from China, and what the state monopoly supplied was a Brazilian counterparty large enough to sell at that scale.",
+  "dispute": null
+}

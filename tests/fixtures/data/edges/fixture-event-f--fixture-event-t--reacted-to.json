@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "fixture-event-f--fixture-event-t--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "from": "fixture-event-f",
+  "to": "fixture-event-t",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Synthetic explanation used by the test suite. It argues nothing about the past; it only has to be long enough to count as an argument.",
+  "dispute": null
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the-atlantic-slave-trade-to-the-caribbean--royal-african-company--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Royal African Company\", revision 1375037445"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Atlantic slave trade\", revision 1375257090"
+    }
+  ],
+  "from": "the-atlantic-slave-trade-to-the-caribbean",
+  "to": "royal-african-company",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "A separate claim from the one above and worth keeping separate. That edge says the islands created the demand; this one says the traffic already existed, in Dutch and Portuguese hands — Dutch traders were supplying Barbados with its enslaved labour as well as its equipment and its credit — and that a monopoly company granted by the crown was how England moved to carry its own. A monopoly is a claim on an existing trade, not the invention of one.",
+  "dispute": null
+}

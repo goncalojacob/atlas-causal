@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "south-australia-uk",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": "2026-09-16",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m51-joined"
+    ],
+    "note": "M51: joined with south-australia, the same polity. The outlines either side of the 1885/1886 seam share 94.71% of the smaller (docs/m51-overlaps.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (1900); neither was authored here. Nothing else crossed: the merged record keeps its own names, summary and licence."
+  },
+  "origin": {
+    "tool": "basemaps"
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "NAME \"South Australia (UK)\""
+    },
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 903"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "South Australia (UK)"
+  ],
+  "summary": "A polity the Historical Basemaps dataset draws in the snapshots for 1878 and 1880. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The span those snapshots cover is 1878 to 1885, and that is not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1878,
+    "end": 1900
+  },
+  "where": null
+}

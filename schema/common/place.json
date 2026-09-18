@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common/place.json",
+  "title": "Place",
+  "description": "A point in WGS84. The projection lives in one file; this shape never changes. Bounds are checked by the rules.",
+  "type": "object",
+  "required": ["lon", "lat", "precision", "label"],
+  "additionalProperties": false,
+  "properties": {
+    "lon": { "type": "number" },
+    "lat": { "type": "number" },
+    "precision": {
+      "type": "string",
+      "enum": ["point", "city", "region"]
+    },
+    "label": { "type": "string", "minLength": 1, "maxLength": 200 }
+  }
+}

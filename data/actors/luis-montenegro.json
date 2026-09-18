@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "luis-montenegro",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The birth or founding year, and the end where there is one, were written from memory."
+  },
+  "wikidata": "Q11764394",
+  "wikipedia": {
+    "en": "Luís Montenegro",
+    "pt": "Luís Montenegro"
+  },
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-09-03"
+  },
+  "sources": [
+    {
+      "source": "cne-legislative-2024",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Luís Montenegro",
+    "Luís Filipe Montenegro"
+  ],
+  "summary": "Parliamentary leader of the PSD from 2011 to 2017, leader of the party from 2022 and prime minister from April 2024, at the head of an AD minority government that fell on its own motion of confidence in March 2025 and was returned in May.",
+  "when": {
+    "start": 1973,
+    "end": null
+  },
+  "where": null
+}

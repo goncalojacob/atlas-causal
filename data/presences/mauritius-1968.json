@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mauritius-1968",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 436"
+    }
+  ],
+  "actor": "mauritius",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1968,
+    "end": null,
+    "date": "1968-03-12"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "436"
+  },
+  "capital": {
+    "lon": 57.49889,
+    "lat": -20.16195,
+    "precision": "city",
+    "label": "Port Louis"
+  },
+  "confidence": "consensus"
+}

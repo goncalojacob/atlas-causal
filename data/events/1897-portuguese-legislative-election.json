@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "1897-portuguese-legislative-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: a routine election of the rotativismo, the arranged alternation of Regenerators and Progressives under the constitutional monarchy. Held 2 May 1897; the Republicans boycotted and the Progressives won 88 seats. The cached lead gives the date and the seat count and nothing more, and the atlas holds no event between 1890 and 1910 that this result can be argued to have changed. It could not be wired without inventing the argument."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q7232740",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1897 Portuguese legislative election"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7232740"
+    }
+  ],
+  "title": "1897 Portuguese legislative election",
+  "summary": "Wikidata item Q7232740, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1897,
+    "end": 1897
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "2009-portuguese-legislative-election--troika-bailout-2011--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "imf-2016-portugal-ex-post-evaluation",
+      "locator": null
+    }
+  ],
+  "from": "2009-portuguese-legislative-election",
+  "to": "troika-bailout-2011",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The request of April 2011 was made by a government that had resigned, to a parliament that had refused its fourth austerity package, in a market that had stopped lending to it. The election of 2009 is where the arithmetic comes from: a Socialist government forty-nine seats short of a majority, dependent on opponents who had every reason to withhold the votes and then to force an election. The edge is `precondition-of` rather than `caused` because the debt, the deficit and the sovereign crisis in the euro area would have been there whatever the Assembly looked like — what this election settled was that there would be no majority to meet them with.",
+  "dispute": null
+}

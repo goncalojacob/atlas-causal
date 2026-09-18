@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "fretilin",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "A founding year from memory, and for the movements that were founded under another name it is also a question of which year the record should carry."
+  },
+  "wikidata": "Q935996",
+  "wikipedia": {
+    "en": "Fretilin",
+    "pt": "Frente Revolucionária de Timor-Leste Independente"
+  },
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "FRETILIN",
+    "Frente Revolucionária de Timor-Leste Independente",
+    "Revolutionary Front for an Independent East Timor"
+  ],
+  "summary": "The Timorese independence movement formed in 1974, which declared independence in November 1975 days before the Indonesian invasion and led the resistance through the occupation.",
+  "when": {
+    "start": 1974,
+    "end": null
+  },
+  "where": {
+    "lon": 125.57,
+    "lat": -8.56,
+    "precision": "city",
+    "label": "Dili"
+  }
+}

@@ -1,0 +1,119 @@
+# M59 — the actors `tools/import/wikidata.mjs --dates` is asked about.
+#
+# The 100 active actors that end in exactly 1885, which is where Historical
+# Basemaps stops. The question is the one the brief calls case 1: did this
+# polity really end near then, and can Wikidata say so? A match is not a date
+# and a date is not a verdict; `docs/m59-singletons.md` is where the verdicts
+# go, and every one of them cites the QID and the property it rests on.
+#
+# One actor id per line. `#` is a comment. A line may end with `| <name>` to
+# narrow the search to one of the names that record carries — the tool checks
+# the name against the record and refuses one the record does not hold.
+#
+# Narrowing follows M49's rule and is used only where the parenthetical is
+# plainly the holding power or a country code. "Harer (Egypt)" is left alone
+# on purpose, as M49 left it: deciding between its two parts is the historical
+# judgement this run is forbidden to make.
+#
+# Order is alphabetical by id.
+
+american-samoa
+annam
+antigua-and-barbuda
+arabia
+asante
+ato-trading-confederacy
+barotse
+basutoland
+benin-before-1886
+bokhara-khanate
+borgu-states
+bosnia-herzegovina-before-1886
+british-guiana
+british-raj
+brunei-before-1886
+buganda
+bunyoro
+burundi-before-1886
+calabar
+central-asian-khanates
+ceylon
+congo-before-1886
+cotonou
+dahomey
+dendi-kingdom
+dominica
+dutch-guiana
+french-guiana
+french-indochina
+futa-jalon
+futa-toro
+gambia-before-1886
+gold-coast-gb | Gold Coast
+greenland
+griqualand-west
+harer-egypt
+hong-kong
+ibadan
+imerina
+imperial-japan
+italy
+ivory-coast
+kanem-bornu
+kingdom-of-brazil
+kingdom-of-hawaii
+kong-empire
+kuba
+lozi
+luba
+lunda
+malaya
+manchu-empire
+maori
+mbailundu
+mirambo-unyanyembe-ukimbu
+montserrat
+mossi-states
+ndebele
+netherlands-antilles
+netherlands-indies
+nguni
+ngwato
+niue
+northern-territory-uk | Northern Territory
+opobo
+ovimbundu
+oyo
+papua-new-guinea-before-1886
+polynesians
+portuguese-guinea
+qatar-before-1886
+rabih-az-zubayr
+rattanakosin-kingdom
+romania
+rwanda-before-1886
+saint-barthelemy
+saint-kitts-and-nevis
+saint-martin
+samoa
+shona
+sokoto-caliphate
+spanish-guinea
+sultanate-of-damagaram
+sultanate-of-utetera
+sultanate-of-zanzibar
+swaziland
+sweden-norway
+taiwan-before-1886
+teke
+tonga
+trucial-oman
+tukular-caliphate
+united-kingdom-of-great-britain-and-ireland
+united-states-virgin-islands
+wadai-empire
+wallis-and-futuna-islands
+wassoulou-empire
+yaka
+yeke
+zululand

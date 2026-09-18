@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "weimar-republic",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m55"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-germany"
+    ],
+    "note": "M55: written to carry the middle of CShapes’ entity 255, which held three polities under one label. Its dates are Wikidata’s Q41304: P571 1918-11-09, the day Q43287 gives for the German Empire’s dissolution, and P576 1933, which that item gives to the year and not to the day. Its territory is entity 255’s second and third periods and the tail of the first, each cut at a cited date rather than redrawn."
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q41304, P571 1918-11-09"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q41304, P576 1933 (year precision)"
+    },
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 255"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Weimar Republic"
+  ],
+  "summary": "A polity whose inception Wikidata states as 1918-11-09 on Q41304 and whose dissolution it states as 1933; the first is given to the day there and the second only to the year, and this record writes neither more precisely than the item does. Its inception is the same instant as the German Empire’s dissolution on Q43287, which is why a succession runs between them with no gap. Its name is its own and not CShapes’ label for entity 255, which reads \"Germany (Prussia)\" and covers three polities; its territory is that entity’s — the period that begins 1919-06-28, the tail of the one that begins 1886 after the Empire’s dissolution, and the head of the one that begins 1920-02-10, cut where Q7318 says the Nazi state begins.",
+  "when": {
+    "start": 1918,
+    "end": 1933
+  },
+  "where": null
+}

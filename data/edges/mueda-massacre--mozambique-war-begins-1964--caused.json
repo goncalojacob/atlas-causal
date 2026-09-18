@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "mueda-massacre--mozambique-war-begins-1964--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "from": "mueda-massacre",
+  "to": "mozambique-war-begins-1964",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The argument is the one FRELIMO itself made and most accounts of the war repeat: Mueda ended the case for petitioning. The Makonde cooperative movement had gone to the administration with a demand and had been shot at for it, and the men who founded the nationalist parties out of which FRELIMO was assembled in 1962 came from that milieu. What the edge does not claim is a straight line — the movement was built in Tanganyika out of three exile parties, on the Cold War's terms as much as on Mueda's — and the toll is disputed. What is not disputed is that after 1960 nobody in the north argued for petitioning again.",
+  "dispute": null
+}

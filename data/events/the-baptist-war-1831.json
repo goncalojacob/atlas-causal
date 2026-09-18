@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "the-baptist-war-1831",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
+    }
+  ],
+  "title": "The Baptist War",
+  "summary": "Over the Christmas holiday of 1831 the enslaved people of western Jamaica stopped work. It had been organised by the Baptist minister Samuel Sharpe as a peaceful strike and it became the largest slave revolt in the island’s history; the plantocracy’s militia and the British garrison put it down within ten days, in early 1832. The loss of life and property was such that Parliament held two inquiries into it, and the cited account says their results contributed greatly to the abolition of slavery two years later.",
+  "when": {
+    "start": 1831,
+    "end": 1832,
+    "date": "1831-12"
+  },
+  "place": "montego-bay",
+  "actors": [
+    {
+      "actor": "united-kingdom-before-1886",
+      "role": "government",
+      "note": "the plantocracy’s militia and the British garrison put the strike down within ten days"
+    }
+  ],
+  "names": [
+    "Christmas Rebellion",
+    "Great Jamaican Slave Revolt"
+  ],
+  "region": null
+}

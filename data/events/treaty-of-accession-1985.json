@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "treaty-of-accession-1985",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q9360737",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "Treaty of Accession 1985"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Accession 1985\", revision 1287624946"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "Treaty of Accession 1985",
+  "summary": "The treaty by which Portugal and Spain joined the European Communities was signed on 12 June 1985 — for Portugal at the Jerónimos monastery in Lisbon — and came into force on 1 January 1986. It closed nine years of negotiation begun with the application of March 1977, amended the founding treaties of the Communities to make room for two more members, and set the transitional periods over which Portuguese agriculture, fisheries and free movement of workers would be brought inside the common rules. It is in the atlas as the instrument of an accession the atlas already holds as an event: the signature and the entry into force are six months and one constitutional threshold apart, and the reader following the chain should see both.",
+  "when": {
+    "start": 1985,
+    "end": 1985,
+    "date": "1985-06-12"
+  },
+  "place": "lisbon",
+  "region": "europe",
+  "category": "treaty",
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "member",
+      "note": "acceding state"
+    },
+    {
+      "actor": "european-economic-community",
+      "role": "government",
+      "note": "the Communities being joined"
+    },
+    {
+      "actor": "mario-soares",
+      "role": "head-of-government",
+      "note": "signed as prime minister"
+    }
+  ]
+}

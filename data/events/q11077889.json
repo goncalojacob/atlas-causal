@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "q11077889",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21 as unidentifiable from the material here. The import got no label, no description and no cached lead for this item — the record is titled with its own Wikidata id. What it holds is a date and a place, 28 May 1922 at Macau, which points strongly at the shooting of Chinese demonstrators and the general strike that followed. Pointing is not knowing, and the atlas does not write a record on an inference about what an item probably is."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q11077889",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11077889"
+    }
+  ],
+  "title": "Q11077889",
+  "summary": "Wikidata item Q11077889, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1922,
+    "end": 1922,
+    "date": "1922-05-28"
+  },
+  "place": "macau",
+  "region": null,
+  "actors": []
+}

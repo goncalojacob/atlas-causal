@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "saint-domingue-and-the-french-sugar-colony--haitian-revolution-1791-1804--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Haitian Revolution\", revision 1375172946"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Saint-Domingue\", revision 1375182685"
+    }
+  ],
+  "from": "saint-domingue-and-the-french-sugar-colony",
+  "to": "haitian-revolution-1791-1804",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The revolution is the colony’s own structure coming apart. Ogé’s revolt of free men of colour in 1790 and the citizenship granted them in May 1791 set them against the slave owners and destabilised the colony; the rising of 21 August 1791 came out of that. Saint-Domingue was the most thoroughly enslaved place in the Caribbean and the richest, and the two facts are the same fact; what rose in 1791 was the majority the sugar economy had assembled.",
+  "dispute": null
+}

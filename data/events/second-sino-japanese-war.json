@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "second-sino-japanese-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q170314",
+  "sitelinks": {
+    "count": 84,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Second Sino-Japanese War",
+    "pt": "Segunda Guerra Sino-Japonesa"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Sino-Japanese War\", revision 1372437913"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Segunda Guerra Sino-Japonesa\", revision 72853076"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q170314"
+    }
+  ],
+  "title": "Second Sino-Japanese War",
+  "summary": "Japan and the Republic of China fought from the Marco Polo Bridge incident of July 1937 until the surrender of 1945, in a war that grew out of the occupation of Manchuria in 1931 and merged into the Second World War after Pearl Harbor. Japan took the coast and the great cities — Nanjing was sacked in December 1937 — and could not take the interior; the Nationalist government withdrew to Chongqing and the war settled into a stalemate that consumed the best of its armies. Chinese deaths are usually put at fifteen to twenty million. It is in the atlas because it is the war that decided which of the two Chinese parties would be standing in 1945.",
+  "when": {
+    "start": 1937,
+    "end": 1945,
+    "date": "1937-07-07",
+    "endDate": "1945-09-09"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "china",
+      "role": "belligerent"
+    },
+    {
+      "actor": "japan",
+      "role": "belligerent"
+    }
+  ]
+}

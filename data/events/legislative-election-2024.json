@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "legislative-election-2024",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date",
+      "figures"
+    ],
+    "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. The summary carries a number that was written from memory. Check it, or take it out."
+  },
+  "sources": [
+    {
+      "source": "cne-legislative-2024",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "title": "Legislative election of 2024",
+  "summary": "The Aliança Democrática of the PSD and the CDS-PP won on 10 March 2024 by a margin of about two seats over the PS, and Chega went from twelve deputies to fifty. No majority existed that did not include Chega, and the winner had ruled that out during the campaign.",
+  "when": {
+    "start": 2024,
+    "end": 2024,
+    "date": "2024-03-10",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "luis-montenegro",
+      "role": "elected"
+    },
+    {
+      "actor": "psd",
+      "role": "party",
+      "note": "coalition party"
+    },
+    {
+      "actor": "cds-pp",
+      "role": "party",
+      "note": "coalition party"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "opposition",
+      "note": "outgoing party"
+    },
+    {
+      "actor": "chega",
+      "role": "opposition"
+    },
+    {
+      "actor": "andre-ventura",
+      "role": "leader",
+      "note": "party leader"
+    }
+  ]
+}

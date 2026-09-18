@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "the-rubber-battle-1942",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": "2026-09-18",
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Amazon rubber cycle\", revision 1373636077"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rubber soldiers\", revision 1276596979"
+    }
+  ],
+  "title": "The rubber battle, 1942",
+  "summary": "When Japan took the Malayan plantations at the beginning of 1942 the Allies lost access to ninety-seven per cent of Asian rubber production, and the Amazon was what was left. Under the Washington Accords the Brazilian government undertook to raise annual latex production from eighteen thousand to forty-five thousand tons, which needed a hundred thousand men against the thirty-five thousand still in the forest. The Estado Novo ordered compulsory enlistment in 1943 through SEMTA, based at Fortaleza in a Northeast then in drought; the Rubber Development Corporation, financed by American industry, paid to move the migrants, and the United States government paid Brazil a hundred dollars for every worker delivered. Fifty-four thousand came from the Northeast, thirty thousand of them from Ceará. About thirty thousand of the *soldados da borracha* died there, of malaria, yellow fever and hepatitis; perhaps six thousand got home, at their own expense.",
+  "when": {
+    "start": 1942,
+    "end": 1945
+  },
+  "place": "manaus",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the Estado Novo, which conscripted the workers and shipped them to the Amazon"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "creditor",
+      "note": "paid for the recruitment through the Rubber Development Corporation, a hundred dollars a worker"
+    },
+    {
+      "actor": "japan",
+      "role": "belligerent",
+      "note": "took the Malayan plantations at the start of 1942, which is what made Amazon latex worth the price again"
+    }
+  ],
+  "names": [
+    "Batalha da borracha"
+  ],
+  "region": null,
+  "parent": "the-1930-revolution-and-the-vargas-era"
+}

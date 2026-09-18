@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "slavery-abolition-act-1833",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
+    }
+  ],
+  "title": "The Slavery Abolition Act 1833",
+  "summary": "An act of the United Kingdom Parliament, carried by Earl Grey’s reforming Whig administration, which abolished slavery across the British Empire by having the government buy the freedom of the enslaved. Around 800,000 people were attested in the claims process, and the Act set out nineteen separate pots of compensation covering the Caribbean, South Africa and Mauritius — paid to the owners. India was excluded and dealt with separately in 1843; in the protectorates, and in territories colonised later, the institution ran on for decades. The Reform Act of the previous year had swept away the rotten boroughs the West India Lobby had been buying, which is what cleared the Commons for it.",
+  "when": {
+    "start": 1833,
+    "end": 1833,
+    "date": "1833-08-28"
+  },
+  "place": "london",
+  "actors": [
+    {
+      "actor": "united-kingdom-before-1886",
+      "role": "government",
+      "note": "an act of its Parliament, carried by Earl Grey’s administration, which bought the freedom of the enslaved"
+    }
+  ],
+  "region": null
+}

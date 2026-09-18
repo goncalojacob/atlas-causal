@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "guinea-war-begins-1963--carnation-revolution-1974--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "macqueen-1997-decolonization",
+      "locator": null
+    }
+  ],
+  "from": "guinea-war-begins-1963",
+  "to": "carnation-revolution-1974",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The Armed Forces Movement originated among the officers who had served in Guinea, the front where defeat seemed nearest; the specific grievances of that war shaped the conspiracy.",
+  "dispute": null
+}

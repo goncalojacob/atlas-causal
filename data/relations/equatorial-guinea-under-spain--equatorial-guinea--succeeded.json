@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "equatorial-guinea-under-spain--equatorial-guinea--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 411"
+    }
+  ],
+  "from": "equatorial-guinea-under-spain",
+  "to": "equatorial-guinea",
+  "type": "succeeded",
+  "when": {
+    "start": 1968,
+    "end": 1968,
+    "date": "1968-10-12"
+  },
+  "note": "CShapes holds 411 as a colony of Spain to 1968-10-11; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had."
+}

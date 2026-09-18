@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "2018-portuguese-social-democratic-party-leadership-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the Social Democrat leadership election of 13 January 2018, at which Rui Rio was chosen. The atlas keeps a party's internal election where something in the atlas follows from it — the Socialist ballots of 2011 and 2014 are kept because the chain they start ends at the government of November 2015. This one ends nowhere the atlas holds. Revisit if the party's course under this leader is written."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q85871536",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2018 Portuguese Social Democratic Party leadership election",
+    "pt": "Eleições diretas do Partido Social Democrata (Portugal) de 2018"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q85871536"
+    }
+  ],
+  "title": "2018 Portuguese Social Democratic Party leadership election",
+  "summary": "Wikidata item Q85871536, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2018,
+    "end": 2018,
+    "date": "2018-01-13"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

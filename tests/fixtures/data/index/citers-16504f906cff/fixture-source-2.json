@@ -1,0 +1,54 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "fixture-actor-two",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-polity-four",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-a--fixture-event-b--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-c--fixture-event-t--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-event-d--fixture-event-t--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-polity-four-1120",
+      "kind": "presence",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-actor-one--fixture-actor-two--member-of",
+      "kind": "relation",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "fixture-tenure-two",
+      "kind": "tenure",
+      "locator": null
+    }
+  ],
+  "id": "fixture-source-2",
+  "schema": 1
+}

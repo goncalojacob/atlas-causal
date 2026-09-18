@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1934-portuguese-legislative-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: 16 December 1934, the first election under the 1933 constitution and the first since 1925. The National Union was the only party permitted to stand, took all 100 seats on a single national list, and three of them went to women. It is the template for forty years of Estado Novo elections, which is a fact about the regime rather than a consequence of this ballot; nothing argued leads out of it."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q7232754",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1934 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1934"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7232754"
+    }
+  ],
+  "title": "1934 Portuguese legislative election",
+  "summary": "Wikidata item Q7232754, imported by tools/import/wikidata.mjs. The item's own description reads \"election in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1934,
+    "end": 1934,
+    "date": "1934-12-16"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

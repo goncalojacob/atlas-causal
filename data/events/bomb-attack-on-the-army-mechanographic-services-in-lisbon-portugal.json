@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "bomb-attack-on-the-army-mechanographic-services-in-lisbon-portugal",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: no cached lead in either language, and all the import recovered beyond the title was the Wikidata description, \"attack perpetrated on March 10, 1973\". This one names the Army Mechanographic Services. It is one of three such attacks the import caught on two consecutive days, which the atlas cannot tell apart or source. Three records out of three one-line descriptions would be invention, not record."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q112154101",
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q112154101"
+    }
+  ],
+  "title": "Bomb attack on the Army Mechanographic Services, in Lisbon, Portugal",
+  "summary": "Wikidata item Q112154101, imported by tools/import/wikidata.mjs. The item's own description reads \"attack perpetrated on March 10, 1973, Lisbon, Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1973,
+    "end": 1973,
+    "date": "1973-03-10"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

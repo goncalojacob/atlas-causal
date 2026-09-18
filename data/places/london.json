@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "london",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [],
+  "names": [
+    "London"
+  ],
+  "where": {
+    "lon": -0.128,
+    "lat": 51.507,
+    "precision": "city",
+    "label": "London"
+  },
+  "region": null,
+  "summary": null
+}

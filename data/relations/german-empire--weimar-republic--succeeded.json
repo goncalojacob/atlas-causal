@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "german-empire--weimar-republic--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [
+    "germany-prussia--weimar-republic--succeeded"
+  ],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-17",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m55"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-germany",
+      "interval-cited"
+    ],
+    "note": "M55: the date on this relation is Wikidata’s, cited by item and property in sources — not a year read from memory, which is why it carries interval-cited rather than the seeding’s date flag."
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q43287, P576 1918-11-09"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q41304, P571 1918-11-09"
+    }
+  ],
+  "from": "german-empire",
+  "to": "weimar-republic",
+  "type": "succeeded",
+  "when": {
+    "start": 1918,
+    "end": 1918,
+    "date": "1918-11-09"
+  },
+  "note": "No gap: the two dates are the same instant, the German Empire’s dissolution and the Weimar Republic’s inception as Wikidata states them. The CShapes period that spanned the day is cut at it, outline unchanged."
+}

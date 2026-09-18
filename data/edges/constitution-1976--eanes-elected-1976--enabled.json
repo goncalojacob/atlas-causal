@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "constitution-1976--eanes-elected-1976--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "from": "constitution-1976",
+  "to": "eanes-elected-1976",
+  "type": "enabled",
+  "confidence": "consensus",
+  "explanation": "The directly elected presidency with its own powers is a creation of the 1976 text, and the June election is the first held under it. The office Eanes won did not exist in that form before April."
+}

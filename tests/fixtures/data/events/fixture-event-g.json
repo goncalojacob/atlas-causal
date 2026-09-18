@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "fixture-event-g",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "sources": [
+    {
+      "source": "fixture-source-1",
+      "locator": null
+    }
+  ],
+  "title": "Fixture event G",
+  "summary": "Synthetic record used by the test suite. It is not history and describes nothing that happened. Its start is uncertain and it is ongoing, and it is held ten years clear of fixture-event-f so that the two are two nodes on the graph now that the fixture corpus spans eight centuries.",
+  "when": {
+    "start": {
+      "min": 1270,
+      "max": 1280
+    },
+    "end": null
+  },
+  "place": "fixture-place-g",
+  "region": null,
+  "category": "disaster",
+  "actors": []
+}

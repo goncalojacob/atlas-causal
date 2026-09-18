@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "legislative-election-2022--legislative-election-2024--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "cne-legislative-2024",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "from": "legislative-election-2022",
+  "to": "legislative-election-2024",
+  "type": "caused",
+  "confidence": "disputed",
+  "explanation": "The majority elected in January 2022 did not last two years, and the election of March 2024 is where its collapse was settled: the same electorate, two years later, returned a chamber in which the PS was no longer the largest list and a party founded in 2019 held fifty seats.",
+  "dispute": {
+    "text": "Whether the narrow win of the Aliança Democrática and the quadrupling of Chega should be read as a verdict on the searches of November 2023, or as the end of a cycle whose housing, health and wage problems long predated them, is argued and matters: the first reading makes the result an accident of one month, the second makes it the arrival of something that had been building since at least 2019. No account written since has settled it, and this record is filed while the question is open.",
+    "sources": [
+      {
+        "source": "cne-legislative-2024",
+        "locator": null
+      },
+      {
+        "source": "costa-pinto-teixeira-2019-political-institutions",
+        "locator": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "assault-on-the-grupo-8-cash-van-in-lisbon-carried-out-by-the-fp-25-which-yielded-108-thousand-contos-on-february-7-1984",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the FP-25's raid on a Grupo 8 cash van in Lisbon on 7 February 1984, which took 108 thousand contos. The atlas holds no record of the armed far left — not the PRP-BR, not the FP-25, not the trials — so there is nothing for an action of theirs to attach to in either direction, and any edge would be invented. Revisit once the organisations themselves are here."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q115779750",
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q115779750"
+    }
+  ],
+  "title": "Assault on the Grupo 8 cash van, in Lisbon, carried out by the FP-25, which yielded 108 thousand contos, on February 7, 1984",
+  "summary": "Wikidata item Q115779750, imported by tools/import/wikidata.mjs. The item's own description reads \"Assault carried out by Forças Populares 25 de Abril, at the exit of Banco Fonsecas & Burnay, in Lisbon\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1984,
+    "end": 1984,
+    "date": "1984-02-07"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": []
+}

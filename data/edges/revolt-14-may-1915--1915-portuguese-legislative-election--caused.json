@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "revolt-14-may-1915--1915-portuguese-legislative-election--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "from": "revolt-14-may-1915",
+  "to": "1915-portuguese-legislative-election",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "Pimenta de Castro had governed with the Chamber suspended; the rising of 14 May removed him and the question of a parliament was open again at once. The election of 13 June followed directly from the overthrow, and returned the party that had made it.",
+  "dispute": null
+}

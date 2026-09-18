@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "troika-bailout-2011--troika-programme-ends-2014--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "imf-2016-portugal-ex-post-evaluation",
+      "locator": null
+    },
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    }
+  ],
+  "from": "troika-bailout-2011",
+  "to": "troika-programme-ends-2014",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "The programme signed in May 2011 was written to run for three years, and the exit of May 2014 is that term reached rather than a separate decision. What was decided was the manner of it: the government left without the precautionary line the lenders had prepared, and the IMF's own evaluation records that choice as contested at the time.",
+  "dispute": null
+}

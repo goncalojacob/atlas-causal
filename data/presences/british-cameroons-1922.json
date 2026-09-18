@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "british-cameroons-1922",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 303"
+    }
+  ],
+  "actor": "british-cameroons",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "mandate",
+  "when": {
+    "start": 1922,
+    "end": 1961,
+    "date": "1922-07-20",
+    "endDate": "1961-09-30"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "303"
+  },
+  "capital": {
+    "lon": 9.231004,
+    "lat": 4.155,
+    "precision": "city",
+    "label": "Buea"
+  },
+  "confidence": "consensus"
+}

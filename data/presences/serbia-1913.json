@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "serbia-1913",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 125"
+    }
+  ],
+  "actor": "serbia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1913,
+    "end": 1915,
+    "date": "1913-08-10",
+    "endDate": "1915-10-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json",
+      "geo/presences/1914-1932.json"
+    ],
+    "key": "125"
+  },
+  "capital": {
+    "lon": 20.46806,
+    "lat": 44.81861,
+    "precision": "city",
+    "label": "Belgrade"
+  },
+  "confidence": "consensus"
+}

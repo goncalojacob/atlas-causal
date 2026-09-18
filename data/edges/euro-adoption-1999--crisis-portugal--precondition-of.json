@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "euro-adoption-1999--crisis-portugal--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "reis-2013-portuguese-slump",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2010–2014 Portuguese financial crisis\", revision 1372626457"
+    }
+  ],
+  "from": "euro-adoption-1999",
+  "to": "crisis-portugal",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "This is the argument Ricardo Reis makes about the Portuguese slump: that the capital which flowed in after the escudo was fixed and the euro adopted went disproportionately into non-tradable sectors, that productivity did not follow it, and that the debt built in those years is what made the country unable to refinance itself when lending stopped in 2010. The atlas already draws the same line from the euro to the bailout of 2011; drawn here it says the same thing one step earlier, at the crisis rather than at the rescue. Probable, not consensus: the weight the euro decade carries against the recession of 2008 is a live argument among economists, and this record was drafted without reading either side at length."
+}

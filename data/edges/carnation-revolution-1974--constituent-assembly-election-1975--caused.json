@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "carnation-revolution-1974--constituent-assembly-election-1975--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "carnation-revolution-1974",
+  "to": "constituent-assembly-election-1975",
+  "type": "caused",
+  "confidence": "consensus",
+  "explanation": "Free elections to a Constituent Assembly within a year were a commitment of the Armed Forces Movement programme; the election of 25 April 1975 fulfilled it.",
+  "dispute": null
+}

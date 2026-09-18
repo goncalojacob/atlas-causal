@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "luis-montenegro-psd-2022",
+  "kind": "tenure",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "cne-legislative-2024",
+      "locator": null
+    }
+  ],
+  "person": "luis-montenegro",
+  "office": "leadership-of-psd",
+  "when": {
+    "start": 2022,
+    "end": null
+  },
+  "startedBy": null,
+  "note": "The source is the election return that names him at the head of the list, not a party record; the year he became leader wants checking."
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "espirito-santo-bank-of-campolide-robbery",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the robbery of a Banco Espírito Santo branch at Campolide on 7 August 2008. The atlas holds the bank as an actor and holds its resolution in 2014, and neither has anything to do with a branch robbery; wiring one to the other would be a pun on the name rather than an argument."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q111918021",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "Espírito Santo Bank of Campolide robbery",
+    "pt": "Assalto ao BES de Campolide"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q111918021"
+    }
+  ],
+  "title": "Espírito Santo Bank of Campolide robbery",
+  "summary": "Wikidata item Q111918021, imported by tools/import/wikidata.mjs. The item's own description reads \"2008 bank robbery in Lisbon, Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2008,
+    "end": 2008,
+    "date": "2008-08-07"
+  },
+  "place": null,
+  "region": "europe",
+  "actors": []
+}

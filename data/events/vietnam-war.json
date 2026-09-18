@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "vietnam-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q8740",
+  "sitelinks": {
+    "count": 150,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Vietnam War",
+    "pt": "Guerra do Vietnã"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Vietnam War\", revision 1373025356"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra do Vietnã\", revision 72906135"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q8740"
+    }
+  ],
+  "title": "Vietnam War",
+  "summary": "The second Indochina war was fought from the late 1950s to 1975 between the Republic of Vietnam and its American ally and the Democratic Republic of the North with the southern insurgency of the National Liberation Front. American ground forces arrived in 1965 and left in 1973, having reached half a million men; the bombing extended to Laos and Cambodia; between two and three million Vietnamese died. Saigon fell on 30 April 1975. It is in the atlas as the war that made the limits of a superpower visible, and because those limits are part of what the movements fighting Portugal in Africa were counting on.",
+  "when": {
+    "start": 1955,
+    "end": 1975,
+    "date": "1955-11-01",
+    "endDate": "1975-04-30"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "vietnam-republic-of",
+      "role": "belligerent"
+    },
+    {
+      "actor": "vietnam-democratic-republic-of",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    }
+  ]
+}

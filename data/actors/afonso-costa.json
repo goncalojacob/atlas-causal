@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "afonso-costa",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q383401",
+  "wikipedia": {
+    "en": "Afonso Costa",
+    "pt": "Afonso Costa"
+  },
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Afonso Costa",
+    "Afonso Augusto da Costa"
+  ],
+  "summary": "Jurist, professor of law and the dominant politician of the First Republic, Afonso Costa (1871–1937) led the Democratic Party, the largest of the republican parties, and headed the government three times between 1913 and 1917. He drafted the law separating church and state in 1911, put the state's finances briefly in order, and was the principal advocate of Portuguese belligerence in the First World War, which he defended as the price of keeping the colonies and a seat at the peace. The war divided the republic and cost him his position: he was deposed by Sidónio Pais in December 1917, and after leading the delegation to the Paris peace conference he settled in Paris and never governed again. Historians differ over whether his anticlericalism and his party's methods deepened the divisions the republic fell to, or whether he was the only figure capable of governing it at all. He is in the atlas as the actor at the centre of the republic's decisions between 1910 and 1917.",
+  "when": {
+    "start": 1871,
+    "end": 1937
+  },
+  "where": {
+    "lon": -7.7,
+    "lat": 40.42,
+    "precision": "city",
+    "label": "Seia"
+  }
+}

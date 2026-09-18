@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "eusebio-de-queiros-law-1850--lei-aurea-1888--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eusébio de Queirós Law\", revision 1368931242"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    }
+  ],
+  "from": "eusebio-de-queiros-law-1850",
+  "to": "lei-aurea-1888",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Closing the traffic did not free anybody — the sources are emphatic that slavery stood for another thirty-eight years and that Brazil was the last country in the Americas to end it. What closing the traffic did was fix the size of the enslaved population and start it falling, against manumission, against the free-birth law of 1871, against the sexagenarian law of 1885, and against European immigrant labour arriving from the 1880s. Thirty-eight years is the interval between an institution losing its supply and losing its defenders.",
+  "dispute": null
+}

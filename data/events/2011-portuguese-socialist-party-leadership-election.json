@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "2011-portuguese-socialist-party-leadership-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q125030453",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "July 2011 Portuguese Socialist Party leadership election"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"July 2011 Portuguese Socialist Party leadership election\", revision 1360451493"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "2011 Portuguese Socialist Party leadership election",
+  "summary": "The Socialists chose a new secretary-general on 22 and 23 July 2011, José Sócrates having resigned the leadership after the June defeat. António José Seguro won, and led the party through the three years of the adjustment programme from an opposition that had signed the memorandum and could not campaign against all of it. It is in the atlas as the first link of the chain that ends at the government of November 2015: Seguro's leadership is what António Costa challenged in the primary of 2014, and the challenge was about exactly that position.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-07-22"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "partido-socialista",
+      "role": "leader",
+      "note": "chose a new secretary-general"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "february-revolution--october-revolution--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"February Revolution\", revision 1370618162"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"October Revolution\", revision 1370630358"
+    }
+  ],
+  "from": "february-revolution",
+  "to": "october-revolution",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "February did not make October, but it made the two things October used. It created the soviet, an assembly with real authority over the garrison and the railways and no responsibility for governing, which is the instrument the Bolsheviks took Petrograd with in October; and it left the Provisional Government committed to continuing the war, which is the commitment that emptied it of support through the summer. The Kornilov affair in August then armed the Bolsheviks and discredited the government at once. Whether October was a revolution or a coup is argued elsewhere; this edge only says that February set the field it was played on.",
+  "dispute": null
+}

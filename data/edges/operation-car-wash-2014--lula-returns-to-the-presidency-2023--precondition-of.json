@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "operation-car-wash-2014--lula-returns-to-the-presidency-2023--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2022 Brazilian general election\", revision 1375252300"
+    }
+  ],
+  "from": "operation-car-wash-2014",
+  "to": "lula-returns-to-the-presidency-2023",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same inquiry that barred him is what he came back through. A series of Supreme Federal Court rulings questioning the legality of his trial and the impartiality of the judge released him from prison in 2019, annulled Moro’s cases against him, and restored his political rights by 2021 — which is what made the candidacy of 2022 possible at all.",
+  "dispute": null
+}

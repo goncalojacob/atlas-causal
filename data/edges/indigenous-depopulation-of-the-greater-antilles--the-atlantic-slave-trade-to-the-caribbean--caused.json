@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "indigenous-depopulation-of-the-greater-antilles--the-atlantic-slave-trade-to-the-caribbean--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Taíno\", revision 1370165371"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    }
+  ],
+  "from": "indigenous-depopulation-of-the-greater-antilles",
+  "to": "the-atlantic-slave-trade-to-the-caribbean",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The islands the sugar planters took in the seventeenth century had been emptied in the sixteenth. There was no indigenous labour force left in the Greater Antilles to compel, and the Lesser Antilles had never held one of the size a plantation economy needed; the labour was therefore bought and shipped. The cause here is a negative one and none the weaker for it — the decision to import Africans in those numbers was taken against the absence the previous century had made.",
+  "dispute": null
+}

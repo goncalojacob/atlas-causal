@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "marcelo-elected-president-2016",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+  },
+  "sources": [
+    {
+      "source": "cne-presidential-2016",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    }
+  ],
+  "title": "Marcelo Rebelo de Sousa elected president",
+  "summary": "Marcelo Rebelo de Sousa was elected in the first round on 24 January 2016. A former leader of the PSD and, for two decades, the country's most watched political commentator, he ran on cohabiting with the two-month-old minority government rather than on obstructing it, and took office in March.",
+  "when": {
+    "start": 2016,
+    "end": 2016,
+    "date": "2016-01-24",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "marcelo-rebelo-de-sousa",
+      "role": "elected"
+    },
+    {
+      "actor": "cavaco-silva",
+      "role": "head-of-state",
+      "note": "outgoing president"
+    },
+    {
+      "actor": "psd",
+      "role": "party",
+      "note": "party of origin"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "saint-domingue-and-the-french-sugar-colony",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Saint-Domingue\", revision 1375182685"
+    }
+  ],
+  "title": "Saint-Domingue",
+  "summary": "The French colony in the western third of Hispaniola, from 1659 until 1803. Spain formally recognised French control of that third and of Tortuga in the Treaty of Ryswick in 1697. It became the richest sugar colony in the Caribbean and the most thoroughly enslaved, and it is the place where the largest slave uprising since Spartacus began in 1791.",
+  "when": {
+    "start": 1659,
+    "end": 1803
+  },
+  "place": "cap-haitien",
+  "actors": [
+    {
+      "actor": "saint-domingue",
+      "role": "government",
+      "note": "the French colony in the western third of Hispaniola, recognised by Spain at Ryswick in 1697"
+    }
+  ],
+  "names": [
+    "French Saint-Domingue"
+  ],
+  "region": null
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "portugal-backs-franco-1936--iberian-pact--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "meneses-2009-salazar",
+      "locator": null
+    }
+  ],
+  "from": "portugal-backs-franco-1936",
+  "to": "iberian-pact",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Salazar’s support for the Nationalists — the transit of arms and men, the Viriatos, non-intervention as practised rather than as written — was not sentiment about a fellow authoritarian. What he wanted out of a Nationalist victory was a neighbour that owed Portugal something and had no designs on it, and the treaty signed in Lisbon a fortnight before the war ended, by the victor’s own brother, recognising the frontier and promising consultation, is close to being that want written down.",
+  "dispute": null
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "murder-of-delfim-de-almeida-fernandes-by-the-prp-br",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the killing of Delfim de Almeida Fernandes by the PRP-BR on 25 February 1980. The atlas holds no record of the armed far left — not the PRP-BR, not the FP-25, not the trials — so there is nothing for an action of theirs to attach to in either direction, and any edge would be invented. Revisit once the organisations themselves are here."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q115210882",
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q115210882"
+    }
+  ],
+  "title": "Murder of Delfim de Almeida Fernandes, by the PRP-BR",
+  "summary": "Wikidata item Q115210882, imported by tools/import/wikidata.mjs. The item's own description reads \"murder on 25-02-1980, in Sintra, Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1980,
+    "end": 1980,
+    "date": "1980-02-25"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "death",
+  "actors": []
+}

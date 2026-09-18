@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "katyn-massacre--warsaw-uprising--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Katyn massacre\", revision 1368830884"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Warsaw Uprising\", revision 1372481662"
+    }
+  ],
+  "from": "katyn-massacre",
+  "to": "warsaw-uprising",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Home Army rose in August 1944 to take Warsaw before the Red Army reached it, so that Poland would be liberated by its own government rather than handed a new one — and the reason that had become the object was Katyn. The discovery of the graves in April 1943 and the Polish request for a Red Cross investigation gave Moscow the pretext to break with the London government, after which a rival Polish administration was assembled under Soviet auspices. The rising was an answer to that position. Whether the Red Army halted at the Vistula for military or political reasons is disputed and is not decided here.",
+  "dispute": null
+}

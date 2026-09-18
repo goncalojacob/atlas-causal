@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "the-atlantic-slave-trade-to-brazil",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slavery in Brazil\", revision 1365192365"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Atlantic slave trade\", revision 1375257090"
+    }
+  ],
+  "title": "The Atlantic slave trade to Brazil",
+  "summary": "Of the twelve million Africans carried to the western hemisphere, about five and a half million were landed in Brazil between 1540 and the 1860s — more than in any other country. Until the early 1850s most had been embarked at West Central African ports, above all Luanda. The trade was the labour supply of each of the colony’s export cycles in turn: sugar first, then the mines after the strikes of 1690, then coffee from the 1830s, and between 1700 and 1800 alone it landed 1.7 million people. It is the record at the centre of this chain because it is what the Brazilian economy was organised around for three hundred years.",
+  "when": {
+    "start": 1540,
+    "end": {
+      "min": 1860,
+      "max": 1869
+    }
+  },
+  "place": "salvador",
+  "actors": [
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "government",
+      "note": "the crown whose colony landed the enslaved for the sugar and then the mines"
+    },
+    {
+      "actor": "empire-of-brazil",
+      "role": "government",
+      "note": "the state the traffic was landing in for its last forty years, and which abolished it in 1850"
+    }
+  ],
+  "names": [
+    "Tráfico atlântico de escravizados para o Brasil"
+  ],
+  "region": null
+}

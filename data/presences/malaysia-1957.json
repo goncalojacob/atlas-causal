@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "malaysia-1957",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 611"
+    }
+  ],
+  "actor": "malaysia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1957,
+    "end": 1963,
+    "date": "1957-08-31",
+    "endDate": "1963-09-15"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json"
+    ],
+    "key": "611"
+  },
+  "capital": {
+    "lon": 101.699997,
+    "lat": 3.16667,
+    "precision": "city",
+    "label": "Kuala Lumpur"
+  },
+  "confidence": "consensus"
+}

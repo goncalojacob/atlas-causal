@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "fixture-source-4",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Fixture Author",
+      "github": "fixture-author"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-01-01",
+  "revised": null,
+  "type": "primary",
+  "creators": [
+    "Fixture Author Four"
+  ],
+  "title": "Fixture source 4",
+  "year": null,
+  "publisher": null,
+  "isbn": null,
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": "Fixture archive",
+  "reference": "FX 1/2/3"
+}

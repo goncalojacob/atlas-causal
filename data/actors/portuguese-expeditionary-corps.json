@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "portuguese-expeditionary-corps",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "wikidata-assigned-by-assistant"
+    ]
+  },
+  "wikidata": "Q1634975",
+  "wikipedia": {
+    "en": "Portuguese Expeditionary Corps",
+    "pt": "Corpo Expedicionário Português"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    },
+    {
+      "source": "wheeler-1978-republican-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Portuguese Expeditionary Corps",
+    "Corpo Expedicionário Português",
+    "CEP"
+  ],
+  "summary": "The Portuguese Expeditionary Corps was the force sent to Flanders from January 1917 after Germany's declaration of war, some 55,000 men at its height, holding a sector of the British line under British command. It was poorly supplied, and after the fall of Afonso Costa's government in December 1917 the reinforcement and rotation it depended on effectively stopped; its divisions were left too long in the line. The 2nd Division was broken by the German attack on the Lys on 9 April 1918 and the corps was withdrawn from front-line duty. The officers who returned brought a grievance against the republic's politicians that shaped the army's politics for a decade. It is in the atlas as the actor whose experience links the war policy of 1916 to the coup of 1926.",
+  "when": {
+    "start": 1916,
+    "end": 1919
+  },
+  "where": null
+}

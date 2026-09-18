@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "iran-persia-1925",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 474"
+    }
+  ],
+  "actor": "iran-persia",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1925,
+    "end": null
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1914-1932.json",
+      "geo/presences/1933-1945.json",
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "474"
+  },
+  "capital": {
+    "lon": 51.42445,
+    "lat": 35.67194,
+    "precision": "city",
+    "label": "Tehran"
+  },
+  "confidence": "consensus",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m51-split"
+    ],
+    "note": "M51: the second half of entity 630's single period, cut at Wikidata's P576 1925 on Q63158027. `when` carries no `date` because Wikidata states that dissolution to the year and inventing a day would be a claim. The outline is CShapes' own under this key, unchanged and identical in every period file."
+  }
+}

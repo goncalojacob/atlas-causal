@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "craveiro-lopes",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted",
+      "date"
+    ],
+    "note": "The years were written from the assistant’s memory in M31-1 and have not been read in a source. The works cited are where a reviewer should check them, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "where": null,
+  "sources": [
+    {
+      "source": "rosas-1994-estado-novo",
+      "locator": null
+    },
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Francisco Craveiro Lopes",
+    "Francisco Higino Craveiro Lopes"
+  ],
+  "summary": "Francisco Craveiro Lopes (1894–1964) was an air force general and President of the Republic from 1951, elected in the year Óscar Carmona died in office, until 1958, when the regime did not put him forward for a second term. He is in the atlas as the Estado Novo’s second president.",
+  "when": {
+    "start": 1894,
+    "end": 1964
+  }
+}

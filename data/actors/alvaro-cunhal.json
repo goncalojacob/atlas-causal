@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "alvaro-cunhal",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "wikidata": "Q250919",
+  "wikipedia": {
+    "en": "Álvaro Cunhal",
+    "pt": "Álvaro Cunhal"
+  },
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-09-02"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Álvaro Cunhal"
+  ],
+  "summary": "Álvaro Cunhal (1913–2005) was secretary-general of the Portuguese Communist Party from 1961 to 1992, after eleven years in prison — eight of them in solitary confinement — an escape from Peniche in 1960 and fourteen years of exile. He returned to Portugal on 30 April 1974 and served as a minister without portfolio in the provisional governments. The party he had rebuilt clandestinely was the best-organised political force of the revolutionary period, with roots in the Alentejo and in the industrial belt, and it stood at the centre of the disputes of 1975 over the direction of the revolution and the place of elections in it. Whether the party was attempting to take power in 1975 or defending gains it expected to lose is argued about to this day. He is in the atlas as one of the two poles — Soares the other — around which the politics of 1975 organised itself.",
+  "when": {
+    "start": 1913,
+    "end": 2005
+  },
+  "where": {
+    "lon": -8.43,
+    "lat": 40.21,
+    "precision": "city",
+    "label": "Coimbra"
+  }
+}

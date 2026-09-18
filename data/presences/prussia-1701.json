@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "prussia-1701",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-17",
+  "revised": null,
+  "origin": {
+    "tool": "basemaps"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-split"
+    ],
+    "note": "M55: the second half of the period Historical Basemaps draws from 1700 to 1714, cut at the Kingdom of Prussia’s cited inception, Q27306 P571 1701-01-18. `prussia-1700` is the first half and belongs to `brandenburg-prussia`. The outline is the dataset’s own under this key, unchanged, and the two halves carry one outline between them."
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "world_1700.geojson, \"Prussia\""
+    }
+  ],
+  "actor": "prussia",
+  "presenceType": "polity",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1701,
+    "end": 1714,
+    "date": "1701-01-18"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1700-1714.json"
+    ],
+    "key": "prussia"
+  },
+  "capital": null,
+  "confidence": "probable"
+}

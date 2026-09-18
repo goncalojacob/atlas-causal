@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "the-cuban-sugar-boom",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    }
+  ],
+  "title": "The Cuban sugar boom",
+  "summary": "When the Haitian Revolution destroyed the sugar of Saint-Domingue at the turn of the nineteenth century, Cuba became the most substantial sugar colony in the Caribbean and outproduced the British islands. Two things came with it. Cuba kept slavery and kept the Spanish connection while its neighbours were becoming independent, because the demand for sugar rewarded both, and because the white upper class was afraid of following Haiti. Slavery was abolished on the island in October 1886, the freedmen went into farming and the towns, the number of mills fell and only the companies and the largest owners survived. By 1894, ninety per cent of Cuban exports went to the United States.",
+  "when": {
+    "start": 1791,
+    "end": 1886
+  },
+  "place": "havana",
+  "actors": [
+    {
+      "actor": "captaincy-general-of-cuba",
+      "role": "government",
+      "note": "the Spanish government of the island, which kept slavery and kept the Spanish connection while its neighbours became independent"
+    }
+  ],
+  "names": [
+    "Auge azucarero cubano"
+  ],
+  "region": null
+}

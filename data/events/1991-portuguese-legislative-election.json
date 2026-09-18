@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "1991-portuguese-legislative-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q2053113",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1991 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1991"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1991 Portuguese legislative election\", revision 1372483511"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1991\", revision 72164419"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "1991 Portuguese legislative election",
+  "summary": "The election of 6 October 1991 returned the Social Democrats to an absolute majority under Aníbal Cavaco Silva, and was the first in the democratic period held at the end of a legislature that had run its full four years. It elected 230 deputies rather than 250, the constitutional revision of 1989 having cut the Assembly by twenty. The government it produced is the one that presided over the second half of the convergence decade — the European funds, the Lisbon bid for the 1998 world exposition, won in June 1992, and the works on the eastern riverfront that followed it. It is in the atlas as the ordinary end of an extraordinary decade: the first time the country's calendar, rather than a crisis, decided when it voted.",
+  "when": {
+    "start": 1991,
+    "end": 1991,
+    "date": "1991-10-06"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "psd",
+      "role": "party",
+      "note": "won a second absolute majority"
+    },
+    {
+      "actor": "cavaco-silva",
+      "role": "head-of-government"
+    },
+    {
+      "actor": "partido-socialista",
+      "role": "opposition",
+      "note": "in opposition"
+    }
+  ]
+}

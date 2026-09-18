@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "nationalisations-1975",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "title": "Nationalisation of banks and insurance",
+  "summary": "Three days after the failed coup of 11 March 1975, the newly created Council of the Revolution nationalised the Portuguese banks, and the insurance companies followed the next day. Because the banks held much of the country's industry, the decision carried the largest economic groups with it, and the nationalisations of electricity, steel, cement, transport and other sectors over the following months completed a state sector that had not existed in April 1974. The agrarian reform in the Alentejo ran in parallel and by a different route, through occupations later given legal form. The 1976 constitution declared the nationalisations irreversible; the revision of 1989 removed that clause and privatisation followed through the 1990s. It is in the atlas as the moment the revolution changed who owned the economy, and as the direct consequence of a coup that failed.",
+  "when": {
+    "start": 1975,
+    "end": 1975,
+    "date": "1975-03-14",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "vasco-goncalves",
+      "role": "leader"
+    },
+    {
+      "actor": "armed-forces-movement",
+      "role": "author"
+    }
+  ]
+}

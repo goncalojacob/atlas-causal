@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "2005-portuguese-legislative-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q2031494",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2005 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 2005"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2005 Portuguese legislative election\", revision 1368665672"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 2005\", revision 71998339"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "2005 Portuguese legislative election",
+  "summary": "The early election of 20 February 2005, called after President Sampaio dismissed Santana Lopes's government, gave the Socialists the first absolute majority they had ever won, under José Sócrates. The government held the abortion referendum it had promised, in February 2007, and legislated on the yes; it presided over the European Union in the second half of 2007, when the Treaty of Lisbon was signed at the Jerónimos; and it spent the majority on the deficit, the Novas Oportunidades qualification programme and a long argument about public works. It is in the atlas as the majority that carried the country into the financial crisis, and as the government whose second, minority term ended in the request for assistance of 2011.",
+  "when": {
+    "start": 2005,
+    "end": 2005,
+    "date": "2005-02-20"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "partido-socialista",
+      "role": "party",
+      "note": "won its first absolute majority"
+    },
+    {
+      "actor": "psd",
+      "role": "opposition",
+      "note": "lost office"
+    }
+  ]
+}

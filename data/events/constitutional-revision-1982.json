@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "constitutional-revision-1982",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-02",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "title": "The revision that abolishes the Council of the Revolution",
+  "summary": "The first revision of the 1976 constitution removed the Council of the Revolution, put constitutional review in the hands of a new Constitutional Court, and ended the military tutelage written into the text in 1976. The exact date should be checked.",
+  "when": {
+    "start": 1982,
+    "end": 1982,
+    "date": "1982-09-30",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "council-of-the-revolution",
+      "role": "government",
+      "note": "abolished"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "author",
+      "note": "legislator"
+    },
+    {
+      "actor": "ramalho-eanes",
+      "role": "head-of-state",
+      "note": "president"
+    }
+  ]
+}

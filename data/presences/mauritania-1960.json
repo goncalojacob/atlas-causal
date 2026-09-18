@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mauritania-1960",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 246"
+    }
+  ],
+  "actor": "mauritania",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1960,
+    "end": 1975,
+    "date": "1960-11-28",
+    "endDate": "1975-11-13"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1946-1974.json",
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "246"
+  },
+  "capital": {
+    "lon": -16.027356,
+    "lat": 18.11944,
+    "precision": "city",
+    "label": "Nouakchott"
+  },
+  "confidence": "consensus"
+}

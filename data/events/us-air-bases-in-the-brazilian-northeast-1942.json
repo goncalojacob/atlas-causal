@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "us-air-bases-in-the-brazilian-northeast-1942",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": "2026-09-18",
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brazil in World War II\", revision 1373489318"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Getúlio Vargas\", revision 1373660809"
+    }
+  ],
+  "title": "The American air bases in the Brazilian Northeast, 1942",
+  "summary": "In 1942, following the American proposal to finance the steelworks, United States forces established air bases along Brazil’s north-eastern coast. The most important was at Parnamirim near Natal, established on 2 March 1942 and known as the Trampoline of Victory; it mattered most before the Allied landing in North Africa in November. The narrowest stretch of the Atlantic, the seventeen hundred miles from Natal to Dakar, was what the bases were for, and the ports of Recife and Salvador had been prepared for the United States Navy from mid-June 1941. Brazil broke off relations with Germany, Japan and Italy in January 1942 in exchange for direct American economic assistance; the Axis answered by sinking its merchant ships, and Brazil declared war in August. The bases were wound down through 1944 and 1945, though the United States kept a presence on Fernando de Noronha until 1960.",
+  "when": {
+    "start": 1942,
+    "end": {
+      "min": 1944,
+      "max": 1945
+    },
+    "date": "1942-03-02"
+  },
+  "place": "parnamirim",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "host",
+      "note": "the state on whose ground the bases stood, and which broke with the Axis to allow them"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "commander",
+      "note": "established and commanded the bases; the Natal–Dakar crossing was what they were for"
+    }
+  ],
+  "names": [
+    "Trampolim da Vitória"
+  ],
+  "region": null,
+  "parent": "the-1930-revolution-and-the-vargas-era"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "altice-portugal",
+  "kind": "actor",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-08",
+    "reason": "Retracted in M41b: the largest Portuguese telecommunications provider, founded in 1994 and a wholly owned subsidiary of Altice since June 2015. The atlas holds no record of the privatisation of Portugal Telecom, of the liberalisation of the fixed market in 2000, or of the sale to Altice, which are the three events this company would be joined by. Nothing here can be argued to follow from it or to have produced it."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-retracted"
+    ]
+  },
+  "wikidata": "Q2105426",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-09-08"
+  },
+  "wikipedia": {
+    "en": "Altice Portugal",
+    "pt": "Altice Portugal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2105426"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Altice Portugal"
+  ],
+  "summary": "Wikidata item Q2105426, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese telecommunication company\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1994,
+    "end": null
+  },
+  "where": null
+}

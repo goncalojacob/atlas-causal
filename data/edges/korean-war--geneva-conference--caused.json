@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "korean-war--geneva-conference--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Korean War\", revision 1371767674"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1954 Geneva Conference\", revision 1369041532"
+    }
+  ],
+  "from": "korean-war",
+  "to": "geneva-conference",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The conference of April to July 1954 was convened to settle what the armistice of Panmunjom had left open: the armistice had stopped the fighting and settled nothing about Korea’s future, and the Berlin conference of February 1954 agreed to take the Korean question to Geneva. That half of the conference ended without adopting anything, which is a result and belongs in the record. The claim is about why the conference met, not about what it achieved in Korea, which was nothing.",
+  "dispute": null
+}

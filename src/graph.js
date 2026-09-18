@@ -1,0 +1,395 @@
+// Traversal over the topology: consequences, ancestors, convergence, and
+// what an event led to by a given year. Pure functions over an adjacency
+// object; nothing here knows the DOM or how files are loaded. Results are
+// ordered by edge type, then confidence, then id, so the panel never depends
+// on file order.
+
+import { extent } from './util/dates.js';
+import { EDGE_TYPE_IDS } from './vocab.js';
+import { keyedCache, SEP } from './util/memo.js';
+
+// The order an answer list is sorted in is the order the types are declared
+// in (vocab.js): the strongest claim first, the loosest last.
+export const TYPE_ORDER = EDGE_TYPE_IDS;
+export const CONFIDENCE_ORDER = Object.freeze(['consensus', 'probable', 'disputed']);
+
+function rank(list, value) {
+  const i = list.indexOf(value);
+  return i < 0 ? list.length : i;
+}
+
+// ─── what a step costs ─────────────────────────────────────────────────────
+//
+// `shortestPaths` is by hops and stays by hops (plan decision 6, review
+// finding 21): the chain the atlas hands a reader must not change silently
+// under them, and a weighted shortest path would hand them a different
+// argument for the same click. Ranking is a *separate ordering of the answer
+// lists* — the horizon's list and the convergence branches — and never a
+// different walk.
+//
+// Confidence dominates type, and by construction rather than by tuning: a
+// step's confidence cost is multiplied past the whole type scale, so a
+// probable `caused` is dearer than a consensus `inspired` and a disputed
+// anything is dearer than every probable thing. That is this project's own
+// order of worries — presenting a disputed link as fact is the worst mistake
+// it can make (CLAUDE.md) — and it is what "a consensus caused path should
+// beat a disputed inspired one of the same length" asks for (health review B,
+// finding 30). Within one confidence the types break the tie in the order
+// they are declared in: the strongest claim first, the loosest last.
+export const CONFIDENCE_COST = Object.freeze({ consensus: 0, probable: 1, disputed: 3 });
+
+// A type this file has never heard of costs as much as the loosest one, and a
+// confidence it has never heard of as much as the least certain: an unknown
+// is not free, and the vocabularies are closed anyway (vocab.js).
+export function stepCost(edge) {
+  const type = rank(TYPE_ORDER, edge?.type);
+  const confidence = CONFIDENCE_COST[edge?.confidence] ?? CONFIDENCE_COST.disputed;
+  return confidence * (TYPE_ORDER.length + 1) + type;
+}
+
+export function pathCost(edges) {
+  let total = 0;
+  for (const edge of edges) total += stepCost(edge);
+  return total;
+}
+
+export function compareEdges(a, b) {
+  return rank(TYPE_ORDER, a.type) - rank(TYPE_ORDER, b.type)
+    || rank(CONFIDENCE_ORDER, a.confidence) - rank(CONFIDENCE_ORDER, b.confidence)
+    || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+}
+
+// Only active edges between active events are walkable. Merged and
+// retracted records stay in the maps so ids keep resolving, but they carry
+// no edges (the validator guarantees it; this filters defensively).
+export function buildAdjacency(events, edges) {
+  const eventById = new Map(events.map((e) => [e.id, e]));
+  const edgeById = new Map();
+  const out = new Map();
+  const inc = new Map();
+  for (const id of eventById.keys()) {
+    out.set(id, []);
+    inc.set(id, []);
+  }
+  for (const edge of edges) {
+    edgeById.set(edge.id, edge);
+    if (edge.status !== 'active') continue;
+    const from = eventById.get(edge.from);
+    const to = eventById.get(edge.to);
+    if (!from || !to || from.status !== 'active' || to.status !== 'active') continue;
+    out.get(edge.from).push(edge);
+    inc.get(edge.to).push(edge);
+  }
+  for (const list of out.values()) list.sort(compareEdges);
+  for (const list of inc.values()) list.sort(compareEdges);
+  return { events: eventById, edges: edgeById, out, in: inc };
+}
+
+// Direct consequences: [{ edge, event }] for every active outgoing edge.
+export function consequences(adj, id) {
+  return (adj.out.get(id) ?? []).map((edge) => ({ edge, event: adj.events.get(edge.to) }));
+}
+
+// Direct antecedents: [{ edge, event }] for every active incoming edge.
+export function antecedents(adj, id) {
+  return (adj.in.get(id) ?? []).map((edge) => ({ edge, event: adj.events.get(edge.from) }));
+}
+
+function reach(adj, id, direction) {
+  const seen = new Set();
+  const queue = [id];
+  // Read with a moving index rather than with `shift`, which copies the whole
+  // queue down by one on every pop and is what made a breadth-first walk of a
+  // large graph quadratic (health review A, finding 12).
+  for (let at = 0; at < queue.length; at += 1) {
+    const current = queue[at];
+    for (const edge of adj[direction].get(current) ?? []) {
+      const next = direction === 'out' ? edge.to : edge.from;
+      if (seen.has(next) || next === id) continue;
+      seen.add(next);
+      queue.push(next);
+    }
+  }
+  return seen;
+}
+
+export function ancestors(adj, id) {
+  return reach(adj, id, 'in');
+}
+
+export function descendants(adj, id) {
+  return reach(adj, id, 'out');
+}
+
+// The start of an event's interval, astronomical, which is the only
+// numbering years may be compared in (dates.js). A record whose interval
+// will not parse sorts last rather than throwing: the validator's business,
+// not the panel's.
+function startOf(event) {
+  try {
+    return extent(event.when).min;
+  } catch {
+    return Infinity;
+  }
+}
+
+// Breadth-first from `id` over active edges: Map<event id, { depth, edge,
+// from }>, the tree of shortest paths outward. Breadth-first is what makes
+// the first arrival the shortest one in hops; where two paths of the same
+// length arrive, the earlier predecessor wins, then the smaller id, then the
+// edge's own order — so the tree is one tree on every machine and the chain
+// a reader is handed is the same chain twice running.
+export function shortestPaths(adj, id) {
+  const best = new Map();
+  let frontier = [id];
+  let depth = 0;
+  while (frontier.length) {
+    const next = new Map();
+    depth += 1;
+    for (const current of frontier) {
+      for (const edge of adj.out.get(current) ?? []) {
+        const to = edge.to;
+        if (to === id || best.has(to)) continue;
+        const candidate = { depth, edge, from: current };
+        const standing = next.get(to);
+        if (!standing || better(candidate, standing)) next.set(to, candidate);
+      }
+    }
+    for (const [to, entry] of next) best.set(to, entry);
+    frontier = [...next.keys()].sort();
+  }
+  return best;
+
+  function better(a, b) {
+    const ya = startOf(adj.events.get(a.from));
+    const yb = startOf(adj.events.get(b.from));
+    if (ya !== yb) return ya < yb;
+    if (a.from !== b.from) return a.from < b.from;
+    return compareEdges(a.edge, b.edge) < 0;
+  }
+}
+
+// The edges of the shortest path from the event `shortestPaths` was called
+// on to `target`, in order. Empty when the target is that event itself or is
+// not reachable from it.
+export function pathTo(best, target) {
+  const edges = [];
+  let current = target;
+  while (best.has(current)) {
+    const step = best.get(current);
+    edges.push(step.edge);
+    current = step.from;
+  }
+  return edges.reverse();
+}
+
+// "What did this lead to by year X?" Every event reachable downstream from
+// `id` whose interval has begun by `horizon` — `start.min ≤ horizon`,
+// astronomical, the same lenient bound the arrow of time and the window use
+// — each with the shortest path to it, the first step of that path, and
+// whether any step of it is disputed.
+//
+// The horizon cuts the *answer*, not the walk: reachability is explored in
+// full and the year is applied to what it found. Under the arrow of time the
+// years along a path mostly rise, but a start written as { min, max } can
+// dip below its own antecedent's, and a walk that stopped at the first event
+// past the horizon would silently drop what lies beyond it.
+//
+// Ordered by path length, then by year, then by id, which is the order the
+// question is asked in: what did this lead to first, and how soon.
+// **The path is reconstructed only when it is read.** `edges`, `first`,
+// `last` and `disputed` are all one walk up the tree, and at twenty thousand
+// events this list is four thousand rows of which the panel shows forty and
+// the three views read none: they light a mark by its depth and nothing else.
+// Building every path cost the sum of their lengths on every state change
+// (health review A, finding 12). The four are getters on one prototype per
+// call — one object, not one per row — and the walk each row needs is done
+// once and kept.
+export function reachableBy(adj, id, horizon) {
+  const best = shortestPaths(adj, id);
+  const paths = new Map();
+  const pathOf = (target) => {
+    let edges = paths.get(target);
+    if (!edges) {
+      edges = pathTo(best, target);
+      paths.set(target, edges);
+    }
+    return edges;
+  };
+  const row = {
+    get edges() { return pathOf(this.event.id); },
+    get first() { return pathOf(this.event.id)[0] ?? null; },
+    get last() {
+      const edges = pathOf(this.event.id);
+      return edges[edges.length - 1] ?? null;
+    },
+    get disputed() { return pathOf(this.event.id).some((e) => e.confidence === 'disputed'); },
+  };
+  const results = [];
+  for (const [eventId, step] of best) {
+    const event = adj.events.get(eventId);
+    if (!event || event.status !== 'active') continue;
+    if (startOf(event) > horizon) continue;
+    const found = Object.create(row);
+    found.event = event;
+    found.depth = step.depth;
+    results.push(found);
+  }
+  results.sort((a, b) => a.depth - b.depth
+    || startOf(a.event) - startOf(b.event)
+    || (a.event.id < b.event.id ? -1 : a.event.id > b.event.id ? 1 : 0));
+  return results;
+}
+
+// ─── a neighbourhood, whole ────────────────────────────────────────────────
+//
+// Everything within `depth` steps of a set of events, in both directions, with
+// the records that hang off it: the events, the edges *between* those events,
+// the actors those events name and the relations between those actors. One
+// answer rather than four walks, because the three things that want it —
+// the lens's dimmed ring (lens.js), the Why mode the plan reserves (M35) and
+// a narrative writer reading a path (health review B, finding 18) — each need
+// all four and none of them can assemble the set twice and be sure it is the
+// same set.
+//
+// `depth` is in hops over active edges and is symmetric: a cause two steps
+// back is as much part of the neighbourhood as a consequence two steps on.
+// Depth 0 is the seeds themselves, which is a real question — "the edges
+// among exactly these" — and not an empty answer.
+//
+// The atlas is the argument rather than the adjacency because actors and
+// relations are not in the adjacency; a test may hand it a literal with
+// `events` and `edges` and no adjacency at all, and one is built for it.
+// The real atlas always carries its own, so nothing is built per call there.
+function adjacencyOf(atlas) {
+  if (atlas.adjacency) return atlas.adjacency;
+  const events = atlas.events instanceof Map ? [...atlas.events.values()] : atlas.activeEvents ?? [];
+  const edges = atlas.edges instanceof Map ? [...atlas.edges.values()] : atlas.edges ?? [];
+  return buildAdjacency(events, edges);
+}
+
+const byStartThenId = (a, b) => startOf(a) - startOf(b)
+  || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+
+export function subgraph(atlas, ids, depth = 1) {
+  const adj = adjacencyOf(atlas);
+  const depths = new Map();
+  const queue = [];
+  for (const id of ids) {
+    const event = adj.events.get(id);
+    if (!event || event.status !== 'active' || depths.has(id)) continue;
+    depths.set(id, 0);
+    queue.push(id);
+  }
+  for (let at = 0; at < queue.length; at += 1) {
+    const id = queue[at];
+    const out = depths.get(id);
+    if (out >= depth) continue;
+    for (const direction of ['out', 'in']) {
+      for (const edge of adj[direction].get(id) ?? []) {
+        const next = direction === 'out' ? edge.to : edge.from;
+        if (depths.has(next)) continue;
+        depths.set(next, out + 1);
+        queue.push(next);
+      }
+    }
+  }
+
+  const events = [...depths.keys()].map((id) => adj.events.get(id)).sort(byStartThenId);
+  // Only the edges with both ends inside: an edge with one end outside is a
+  // line into nothing, and the reader was told the neighbourhood ends here.
+  const edges = [];
+  for (const id of depths.keys()) {
+    for (const edge of adj.out.get(id) ?? []) if (depths.has(edge.to)) edges.push(edge);
+  }
+  edges.sort(compareEdges);
+
+  const actorIds = new Set();
+  for (const event of events) {
+    for (const { actor } of event.actors ?? []) if (atlas.actors?.has(actor)) actorIds.add(actor);
+  }
+  const actors = [...actorIds].sort().map((id) => atlas.actors.get(id));
+  // A relation is in when both of its ends are: a line from an actor in the
+  // neighbourhood to one outside it says nothing about this neighbourhood.
+  const relations = [...(atlas.relations?.values() ?? [])]
+    .filter((r) => r.status === 'active' && actorIds.has(r.from) && actorIds.has(r.to))
+    .sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+
+  return { events, edges, actors, relations, depths };
+}
+
+// The convergence query. Given the target and the path the user walked
+// (event ids, target included), every ancestor of the target that is not
+// on the walked path, each with the edge by which it feeds the way to the
+// target and the depth at which it was met.
+//
+// Only the walked path is excluded, not everything descending from the
+// starting event: that wider exclusion always returned empty, because in a
+// connected graph nearly every node descends from the oldest one
+// (CONTEXT.md). Traversal passes through path nodes, so a branch feeding
+// the middle of the path is reported too. Do not "simplify" this back.
+// Memoised on the adjacency, the target and the walked path, because the
+// graph view, the event card and the working set each ask it and each asked
+// it separately on every state change (health review A, finding 12). Four
+// answers are held per graph, least recently used dropped first: a reader
+// walking a chain back and forth is asking about two or three targets.
+const answered = keyedCache(4);
+
+export function convergence(adj, target, path = []) {
+  // The path is a list of ids and its order is the reader's walk, so it keys
+  // as it is; two states with the same branches in a different order miss the
+  // cache and are answered again, which costs a walk and never an error.
+  return answered(adj, `${target}${SEP}${path.join(SEP)}`, () => converging(adj, target, path));
+}
+
+function converging(adj, target, path) {
+  const excluded = new Set([...path, target]);
+  const seen = new Set([target]);
+  const results = [];
+  const queue = [target];
+  const depths = [0];
+  // An index rather than `shift`, as in `reach` above: at a hundred thousand
+  // ancestors the copy per pop was the walk.
+  for (let at = 0; at < queue.length; at += 1) {
+    const id = queue[at];
+    const depth = depths[at];
+    for (const edge of adj.in.get(id) ?? []) {
+      const source = edge.from;
+      if (seen.has(source)) continue;
+      seen.add(source);
+      if (!excluded.has(source)) {
+        results.push({ event: adj.events.get(source), edge, to: adj.events.get(id), depth: depth + 1 });
+      }
+      queue.push(source);
+      depths.push(depth + 1);
+    }
+  }
+  results.sort((a, b) => compareEdges(a.edge, b.edge) || a.depth - b.depth);
+  return results;
+}
+
+// The convergence answer, grouped by how far up it was met, with a count per
+// tier. Forty-four rows for a three-step walk today and thousands at twenty
+// thousand events, in one flat list where the nearest branch and one met eight
+// steps up read alike (health review B, finding 30). Depth is the thing a
+// reader can act on — "what fed this directly" is a different question from
+// "what fed the thing that fed it" — so it is what the list divides on, and
+// within a tier the branches are ordered by what their edge costs.
+//
+// Pure and given the answer rather than asking for it: `convergence` is
+// memoised on the adjacency and the walk (above), and this must not miss that
+// cache by asking again.
+export function convergenceByDepth(rows) {
+  const tiers = new Map();
+  for (const row of rows) {
+    if (!tiers.has(row.depth)) tiers.set(row.depth, []);
+    tiers.get(row.depth).push(row);
+  }
+  return [...tiers.entries()]
+    .sort((a, b) => a[0] - b[0])
+    .map(([depth, list]) => ({
+      depth,
+      count: list.length,
+      rows: [...list].sort((a, b) => stepCost(a.edge) - stepCost(b.edge) || compareEdges(a.edge, b.edge)),
+    }));
+}

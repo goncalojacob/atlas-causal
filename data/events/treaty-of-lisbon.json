@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "treaty-of-lisbon",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the treaty signed by the twenty-seven member states at the Jerónimos on 13 December 2007, in force from 1 December 2009, which amended the Union's two founding treaties. It is an act of the Union rather than of Portugal, and the atlas has no lane for one; keeping it would mean inventing Portugal's particular part in it. The venue is not a causal fact: a treaty signed in Lisbon belongs to the history of what it settles."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q52843",
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "Treaty of Lisbon",
+    "pt": "Tratado de Lisboa (2007)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q52843"
+    }
+  ],
+  "title": "Treaty of Lisbon",
+  "summary": "Wikidata item Q52843, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty modifying the constitutional basis of the European Union, signed by all the States of the Union in Lisbon on 2007\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2007,
+    "end": 2007,
+    "date": "2007-12-13"
+  },
+  "place": "lisbon",
+  "region": null,
+  "category": "treaty",
+  "actors": []
+}

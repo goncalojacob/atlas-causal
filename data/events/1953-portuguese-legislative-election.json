@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1953-portuguese-legislative-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: 8 November 1953, the National Union taking all 120 seats; the Democratic Opposition stood in several circles and got 10.1% in Lisbon, 11.8% in Porto and 8.7% in Angola. A single-party election with no consequence that can be argued from the bibliography here."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q7232759",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1953 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1953"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7232759"
+    }
+  ],
+  "title": "1953 Portuguese legislative election",
+  "summary": "Wikidata item Q7232759, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1953,
+    "end": 1953,
+    "date": "1953-11-08"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "wiriyamu-massacre",
+  "kind": "event",
+  "status": "merged",
+  "supersededBy": "wiriyamu-massacre-1972",
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-merged"
+    ],
+    "note": "Merged in M21 into wiriyamu-massacre-1972, which is the same event: the killing of the civilian population of Wiriyamu in Tete province by Portuguese troops in December 1972, Operation Marosca, which the atlas already holds and wires. This record keeps the Wikidata id and the two Wikipedia links the import brought, and names its survivor rather than becoming an anonymous tombstone."
+  },
+  "wikidata": "Q51750785",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "Wiriyamu Massacre",
+    "pt": "Massacre de Wiriyamu"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q51750785"
+    }
+  ],
+  "title": "Wiriyamu Massacre",
+  "summary": "Wikidata item Q51750785, imported by tools/import/wikidata.mjs. The item's own description reads \"massacre during the Mozambican War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1972,
+    "end": 1972,
+    "date": "1972-12"
+  },
+  "place": null,
+  "region": "africa",
+  "actors": []
+}

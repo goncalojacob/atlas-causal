@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "2020-azorean-regional-election",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M22: the Azorean regional election of 25 October 2020, after which the Social Democrats formed a government with the CDS and Chega's support. The atlas keeps the first exercise of an institution and the ballot at which it became a cycle, and retracts the routine repetitions after them; the twelfth Azorean regional election is one. The only link available is the constitutional one the earlier records already carry. Revisit if a consequence is written."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-retracted"
+    ]
+  },
+  "wikidata": "Q39060523",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2020 Azorean regional election",
+    "pt": "Eleições legislativas regionais nos Açores em 2020"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q39060523"
+    }
+  ],
+  "title": "2020 Azorean regional election",
+  "summary": "Wikidata item Q39060523, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2020,
+    "end": 2020,
+    "date": "2020-10-25"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "palma-carlos",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-06",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "actor-drafted",
+      "date"
+    ],
+    "note": "The years were written from the assistant’s memory in M31-2 and have not been read in a source. The works cited are where a reviewer should check them, not works this run read: every citation carries no locator and none has been checked."
+  },
+  "sources": [
+    {
+      "source": "maxwell-1995-making-of-portuguese-democracy",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "person",
+  "names": [
+    "Adelino da Palma Carlos",
+    "Palma Carlos"
+  ],
+  "summary": "Adelino da Palma Carlos (1905–1992) was a lawyer and a professor of law who was prime minister of the first provisional government after 25 April 1974, from May of that year until he resigned in July. He is in the atlas as the first head of government of the new regime.",
+  "when": {
+    "start": 1905,
+    "end": 1992
+  },
+  "where": null
+}

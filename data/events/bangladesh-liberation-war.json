@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "bangladesh-liberation-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-05",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q371394",
+  "sitelinks": {
+    "count": 64,
+    "on": "2026-09-05"
+  },
+  "wikipedia": {
+    "en": "Bangladesh Liberation War",
+    "pt": "Guerra de Independência de Bangladesh"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bangladesh Liberation War\", revision 1370362676"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Guerra de Independência de Bangladesh\", revision 70046456"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q371394"
+    }
+  ],
+  "title": "Bangladesh Liberation War",
+  "summary": "The Awami League won an absolute majority of the Pakistani national assembly in December 1970 on a programme of autonomy for the eastern province, and the government in the west refused to seat it. Operation Searchlight opened on the night of 25 March 1971 with the army's attack on Dhaka; nine months of killing followed, with estimates of the dead running from three hundred thousand to three million and ten million refugees driven into India. India intervened in December and the Pakistani army in the east surrendered within a fortnight. Bangladesh is the first state of the post-colonial world to be made by seceding from another post-colonial state.",
+  "when": {
+    "start": 1971,
+    "end": 1971,
+    "date": "1971-03-26",
+    "endDate": "1971-12-16"
+  },
+  "place": null,
+  "region": "asia",
+  "actors": [
+    {
+      "actor": "pakistan",
+      "role": "belligerent"
+    },
+    {
+      "actor": "bangladesh",
+      "role": "belligerent"
+    },
+    {
+      "actor": "republic-of-india",
+      "role": "belligerent"
+    }
+  ]
+}

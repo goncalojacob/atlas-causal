@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bes-resolution-2014",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
+  },
+  "sources": [
+    {
+      "source": "banco-de-portugal-2014-bes-resolution",
+      "locator": null
+    },
+    {
+      "source": "imf-2016-portugal-ex-post-evaluation",
+      "locator": null
+    }
+  ],
+  "title": "Resolution of Banco Espírito Santo",
+  "summary": "On 3 August 2014 the Banco de Portugal applied a resolution measure to Banco Espírito Santo, one of the largest private banks in the country, splitting it into a bridge bank called Novo Banco and a residual entity that kept the losses of the family group behind it. It came ten weeks after the exit from the adjustment programme and was met from the bank solvency support line that the programme had provided.",
+  "when": {
+    "start": 2014,
+    "end": 2014,
+    "date": "2014-08-03",
+    "calendar": "gregorian"
+  },
+  "place": "lisbon",
+  "region": null,
+  "actors": [
+    {
+      "actor": "banco-de-portugal",
+      "role": "leader",
+      "note": "resolution authority"
+    },
+    {
+      "actor": "banco-espirito-santo",
+      "role": "government",
+      "note": "resolved"
+    },
+    {
+      "actor": "novo-banco",
+      "role": "government",
+      "note": "created"
+    },
+    {
+      "actor": "ricardo-salgado",
+      "role": "leader",
+      "note": "executive chairman"
+    }
+  ]
+}

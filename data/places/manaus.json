@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "manaus",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [],
+  "names": [
+    "Manaus"
+  ],
+  "where": {
+    "lon": -60.021667,
+    "lat": -3.118889,
+    "precision": "city",
+    "label": "Manaus, on the Rio Negro"
+  },
+  "region": null,
+  "summary": null
+}

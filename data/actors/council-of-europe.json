@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "council-of-europe",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date",
+      "claim"
+    ],
+    "note": "The 1949 founding, the September 1976 admission and the claim that the Estado Novo could not have met the membership conditions were written from memory."
+  },
+  "sources": [
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Council of Europe",
+    "Conselho da Europa"
+  ],
+  "summary": "The organisation founded at London in 1949 to bind western Europe to parliamentary democracy, the rule of law and, through the European Convention on Human Rights, to a court an individual can reach. Its conditions of membership are why Portugal spent the Council's first twenty-seven years outside it: the Estado Novo could not meet them and did not try, which makes this one of the few European bodies whose door was visibly shut to the regime rather than quietly ajar. Portugal was admitted in September 1976, months after the constitution that made it eligible, and the admission is usually read as the first international confirmation that the new democracy would hold. With it came the Convention and its court, and a route out of the Portuguese courts that had not existed before. It is in the atlas because it dates, more precisely than most things do, the readmission of Portugal to democratic Europe.",
+  "when": {
+    "start": 1949,
+    "end": null
+  },
+  "where": {
+    "lon": 7.75,
+    "lat": 48.58,
+    "precision": "city",
+    "label": "Strasbourg"
+  }
+}

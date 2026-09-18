@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "operation-car-wash-2014--the-impeachment-of-dilma-rousseff-2016--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Impeachment of Dilma Rousseff\", revision 1369411417"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Car Wash\", revision 1371266803"
+    }
+  ],
+  "from": "operation-car-wash-2014",
+  "to": "the-impeachment-of-dilma-rousseff-2016",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The petition accused the president of criminal responsibility for failing to act on the scandal at Petrobras that Car Wash had uncovered, and for failing to distance herself from those under investigation; she had chaired the Petrobras board during the period investigated. The Petrobras charges were finally left out of the trial, on the prosecutor-general’s argument that a sitting president could not be investigated for acts before election — which is why this is `precondition-of` and not `caused`: the inquiry set the terms of the crisis without supplying the article she was tried under.",
+  "dispute": null
+}

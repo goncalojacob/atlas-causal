@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "calicuas-1492",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "basemaps"
+  },
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "world_1492.geojson, \"Calicuas\""
+    }
+  ],
+  "actor": "calicuas",
+  "presenceType": "polity",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 1492,
+    "end": 1499,
+    "date": "1492-01-01"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1492-1499.json"
+    ],
+    "key": "calicuas"
+  },
+  "capital": null,
+  "confidence": "probable"
+}

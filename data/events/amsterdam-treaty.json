@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "amsterdam-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q193739",
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-09-15"
+  },
+  "wikipedia": {
+    "en": "Treaty of Amsterdam",
+    "pt": "Tratado de Amesterdão"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q193739"
+    }
+  ],
+  "title": "Amsterdam Treaty",
+  "summary": "Wikidata item Q193739, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty of the European Union, revision of the Treaty of Maastricht\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1997,
+    "end": 1997,
+    "date": "1997-10-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

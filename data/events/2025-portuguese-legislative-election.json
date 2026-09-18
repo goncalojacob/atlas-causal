@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "2025-portuguese-legislative-election",
+  "kind": "event",
+  "status": "merged",
+  "supersededBy": "legislative-election-2025",
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m22-merged"
+    ],
+    "note": "Merged in M22 into legislative-election-2025, which is the same event: the election of 18 May 2025, called after the Montenegro government lost a confidence vote. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
+  },
+  "wikidata": "Q125201429",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "2025 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 2025"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q125201429"
+    }
+  ],
+  "title": "2025 Portuguese legislative election",
+  "summary": "Wikidata item Q125201429, imported by tools/import/wikidata.mjs. The item's own description reads \"eleições para a Assembleia da República Portuguesa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2025,
+    "end": 2025,
+    "date": "2025-05-18"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": []
+}

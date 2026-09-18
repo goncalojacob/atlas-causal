@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "psd",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-03",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The birth or founding year, and the end where there is one, were written from memory."
+  },
+  "wikidata": "Q595575",
+  "wikipedia": {
+    "en": "Social Democratic Party (Portugal)",
+    "pt": "Partido Social Democrata (Portugal)"
+  },
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-09-03"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-teixeira-2019-political-institutions",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Partido Social Democrata",
+    "PSD",
+    "Partido Popular Democrático",
+    "PPD"
+  ],
+  "summary": "Founded as the PPD weeks after the coup of 1974 and renamed in 1976, the larger of the two parties of the centre-right and the senior partner of the coalitions of 2011 and of 2024.",
+  "when": {
+    "start": 1974,
+    "end": null
+  },
+  "where": {
+    "lon": -9.14,
+    "lat": 38.72,
+    "precision": "city",
+    "label": "Lisbon"
+  }
+}

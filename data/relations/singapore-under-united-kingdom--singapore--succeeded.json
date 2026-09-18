@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "singapore-under-united-kingdom--singapore--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-17",
+  "origin": {
+    "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 830"
+    }
+  ],
+  "from": "singapore-under-united-kingdom",
+  "to": "singapore",
+  "type": "succeeded",
+  "when": {
+    "start": 1963,
+    "end": 1963,
+    "date": "1963-01-01"
+  },
+  "note": "CShapes holds 830 as a colony of United Kingdom to 1962-12-31, and this date is that boundary. Restored in M53: `singapore` begins 1965, three years later, and this relation does not say who held the ground between — the atlas names nobody for it. Under the owner’s rule of 17 September a succession may be written across a gap; the gap is named here rather than left to make the relation unwritable."
+}

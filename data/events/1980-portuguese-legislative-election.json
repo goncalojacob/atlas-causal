@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "1980-portuguese-legislative-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q606275",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "en": "1980 Portuguese legislative election",
+    "pt": "Eleições legislativas portuguesas de 1980"
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1980 Portuguese legislative election\", revision 1372482157"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Eleições legislativas portuguesas de 1980\", revision 71194426"
+    },
+    {
+      "source": "wikidata",
+      "locator": null
+    }
+  ],
+  "title": "1980 Portuguese legislative election",
+  "summary": "A legislative election was held on 5 October 1980, ten months after the last one, because the December 1979 ballot had only filled out the legislature elected in 1976, which the constitution ran to 14 October 1980. The Democratic Alliance won again and Francisco Sá Carneiro stayed in office; he was killed in the Camarate air crash two months later, on 4 December, and Francisco Pinto Balsemão took the government. It is in the atlas as the majority that carried the constitutional revision of 1982 — the first legislature of the new regime to run its full course, and the one that removed the military tutelage from the constitution.",
+  "when": {
+    "start": 1980,
+    "end": 1980,
+    "date": "1980-10-05"
+  },
+  "place": null,
+  "region": "europe",
+  "category": "election",
+  "actors": [
+    {
+      "actor": "psd",
+      "role": "leader",
+      "note": "led the winning alliance"
+    },
+    {
+      "actor": "cds-pp",
+      "role": "party",
+      "note": "partner in the winning alliance"
+    },
+    {
+      "actor": "third-portuguese-republic",
+      "role": "government",
+      "note": "the state holding the election"
+    }
+  ]
+}

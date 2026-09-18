@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "eritrea-under-italy-sardinia--eritrea--succeeded",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-08",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 531"
+    }
+  ],
+  "from": "eritrea-under-italy-sardinia",
+  "to": "eritrea",
+  "type": "succeeded",
+  "when": {
+    "start": 1941,
+    "end": 1941,
+    "date": "1941-05-19"
+  },
+  "note": "CShapes holds 531 as a colony of Italy/Sardinia to 1941-05-18; the cut is the boundary the source draws there, and the state keeps the actor id the atlas already had. Earlier than its first independent date, 1993-05-24: the occupation between the two (occupied 1941-05-19..1952-09-14) is the state's own record, not the colony's."
+}

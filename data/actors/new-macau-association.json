@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "new-macau-association",
+  "kind": "actor",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-08",
+  "revised": "2026-09-08",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-08",
+    "reason": "Retracted in M41b: the pro-democracy association founded in Macau in 1992 by António Ng Kuok Cheong, which won seats in the Legislative Assembly from 2005. The atlas's two Macau records are the chief executive selection of May 1999 and the transfer of administration that December, and this association took part in neither; everything the leads describe about it happened under Chinese sovereignty, after the Portuguese period this atlas covers ends."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m41-retracted"
+    ]
+  },
+  "wikidata": "Q2495255",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-08"
+  },
+  "wikipedia": {
+    "en": "New Macau Association",
+    "pt": "Associação Novo Macau"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2495255"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "New Macau Association",
+    "Associação Novo Macau"
+  ],
+  "summary": "Wikidata item Q2495255, imported by tools/import/wikidata.mjs. The item's own description reads \"political party in Macau\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1992,
+    "end": null
+  },
+  "where": null
+}

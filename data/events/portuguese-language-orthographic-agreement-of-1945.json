@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "portuguese-language-orthographic-agreement-of-1945",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": "2026-09-04",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-04",
+    "reason": "Retracted in M21: the orthographic convention signed in Lisbon on 6 October 1945 between the Academia das Ciências and the Academia Brasileira de Letras, which set the spelling of Portuguese for all Portuguese territories. Brazil never ratified it and repealed its own approving decree in 1955, which is the interesting part — but the agreement that eventually resolved that, in 1990, is not in the atlas, and nothing here follows from this one."
+  },
+  "review": {
+    "flags": [
+      "imported-facts",
+      "m21-retracted"
+    ]
+  },
+  "wikidata": "Q9581238",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-04"
+  },
+  "wikipedia": {
+    "pt": "Acordo Ortográfico de 1945"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q9581238"
+    }
+  ],
+  "title": "Portuguese Language Orthographic Agreement of 1945",
+  "summary": "Wikidata item Q9581238, imported by tools/import/wikidata.mjs. The item's own description reads \"convenção ortográfica da língua portuguesa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1945,
+    "end": 1945,
+    "date": "1945-10-06"
+  },
+  "place": null,
+  "region": "americas",
+  "actors": []
+}

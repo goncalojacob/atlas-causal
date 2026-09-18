@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "myanmar-burma-2005",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 583"
+    }
+  ],
+  "actor": "myanmar-burma",
+  "presenceType": "state",
+  "dependencyOf": null,
+  "dependencyKind": null,
+  "when": {
+    "start": 2005,
+    "end": null,
+    "date": "2005-11-06"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1975-2019.json"
+    ],
+    "key": "583"
+  },
+  "capital": {
+    "lon": 96.118619,
+    "lat": 19.76656,
+    "precision": "city",
+    "label": "Naypyidaw"
+  },
+  "confidence": "consensus"
+}

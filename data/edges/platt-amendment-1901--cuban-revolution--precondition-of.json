@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "platt-amendment-1901--cuban-revolution--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-16",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m50-chain"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Platt Amendment\", revision 1361644701"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuban Revolution\", revision 1373305240"
+    }
+  ],
+  "from": "platt-amendment-1901",
+  "to": "cuban-revolution",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Three statements, each from its own source, and the edge is what they amount to together. The Amendment gave the United States the absolute right to involve itself in Cuban affairs and leases for naval stations, written word for word into the Cuban constitution. What followed its acceptance was a reciprocity tariff giving Cuban sugar preference in the American market, and American investment on a scale that concentrated a fifth of all Cuban land into the largest mills — the cited account puts the further impoverishment of the rural masses, the constant fear of eviction, the cheap imported labour and the wages held down beside it. And in the decades after 1898 and the formal independence of 20 May 1902, Cuba went through revolts, coups, an American military occupation and an intervention in 1906, in a republic whose politics the same account calls a route to private wealth. The edge does not say the Amendment produced Batista. It says the republic the revolution overthrew was constituted with another state’s right of entry inside it and its land inside another state’s market.",
+  "dispute": null
+}

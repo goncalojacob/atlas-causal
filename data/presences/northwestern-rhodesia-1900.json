@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "northwestern-rhodesia-1900",
+  "kind": "presence",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-02",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "fid 693"
+    }
+  ],
+  "actor": "northwestern-rhodesia",
+  "presenceType": "state",
+  "dependencyOf": "united-kingdom",
+  "dependencyKind": "colony",
+  "when": {
+    "start": 1900,
+    "end": 1905,
+    "date": "1900-01-29",
+    "endDate": "1905-05-29"
+  },
+  "geometry": {
+    "files": [
+      "geo/presences/1886-1913.json"
+    ],
+    "key": "693"
+  },
+  "capital": {
+    "lon": 25.860013,
+    "lat": -17.86001,
+    "precision": "city",
+    "label": "Livingstone"
+  },
+  "confidence": "consensus"
+}

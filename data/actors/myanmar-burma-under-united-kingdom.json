@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "myanmar-burma-under-united-kingdom",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "created": "2026-09-05",
+  "revised": null,
+  "origin": {
+    "tool": "cshapes"
+  },
+  "sources": [
+    {
+      "source": "cshapes-2-0",
+      "locator": "gwcode 775"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Myanmar (Burma) under United Kingdom"
+  ],
+  "summary": "Entity 775 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1937 to 1948. The source calls it \"Myanmar (Burma)\"; the names on this record are the ones data/imports/cshapes-actors.json gives it. Its last capital in the dataset is Rangoon. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods before the first cut. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1937,
+    "end": 1948
+  },
+  "where": {
+    "lon": 96.166656,
+    "lat": 16.78333,
+    "precision": "city",
+    "label": "Rangoon"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "portugal--league-of-nations--member-of",
+  "kind": "relation",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [
+    "portugal--league-of-nations--allied-with"
+  ],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-05",
+  "revised": "2026-09-06",
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "date"
+    ],
+    "note": "The interval is either the actors' own, and only as good as those records, or it was written from memory. Neither has been read in a source."
+  },
+  "sources": [
+    {
+      "source": "ramos-2009-historia-de-portugal",
+      "locator": null
+    },
+    {
+      "source": "meneses-2004-portugal-1914-1926",
+      "locator": null
+    }
+  ],
+  "from": "portugal",
+  "to": "league-of-nations",
+  "type": "member-of",
+  "when": {
+    "start": 1920,
+    "end": 1946
+  },
+  "note": "Original member from 1920 until the League was wound up in 1946."
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "kingdom-of-hawaii",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
+      "github": null
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "created": "2026-09-16",
+  "revised": "2026-09-18",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m59-dissolved"
+    ],
+    "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q156418 (Kingdom of Hawaiʻi) gives P576 1895-01-24, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began."
+  },
+  "origin": {
+    "tool": "basemaps"
+  },
+  "sources": [
+    {
+      "source": "historical-basemaps",
+      "locator": "NAME \"Kingdom of Hawaii\""
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q156418, P576 1895-01-24"
+    }
+  ],
+  "actorType": "polity",
+  "names": [
+    "Kingdom of Hawaii"
+  ],
+  "summary": "A polity the Historical Basemaps dataset draws in the snapshots for 1815, 1878 and 1880. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The span those snapshots cover is 1815 to 1885, and that is not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "when": {
+    "start": 1815,
+    "end": 1895
+  },
+  "where": null
+}

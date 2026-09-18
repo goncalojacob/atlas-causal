@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1995-portuguese-legislative-election--portuguese-regionalisation-referendum-1998--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-04",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "costa-pinto-2003-contemporary-portugal",
+      "locator": null
+    },
+    {
+      "source": "telo-2007-historia-contemporanea",
+      "locator": null
+    }
+  ],
+  "from": "1995-portuguese-legislative-election",
+  "to": "portuguese-regionalisation-referendum-1998",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Administrative regions have been in the constitution since 1976 and have never existed. Creating them was a Socialist commitment carried into the 1995 campaign, and the government this election produced is what turned the commitment into a law of regional delimitation and then into the referendum of 8 November 1998. Nobody else would have called it: the Social Democrats campaigned against, the referendum failed on both questions, and no government has proposed regionalisation since. This edge is `caused` rather than `enabled` because the ballot exists for no other reason than that this government decided to hold it.",
+  "dispute": null
+}
