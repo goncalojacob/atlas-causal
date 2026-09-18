@@ -181,6 +181,7 @@ src/graph-view/arrangement.js  pure: which events an arrangement is of — the b
 src/graph-view/layout-runner.js  which of the two paths a layout takes, and the fallback: the Worker above 600 events, the synchronous call below it and whenever a thread is absent or fails
 src/graph-view/layout-worker.js  the layout on a thread of its own; it fetches nothing, so no data root can be got wrong there
 src/graph-view/layout-message.js  pure: what crosses to that thread and back — ids, years, weights and lanes, and no records
+src/graph-view/label-fit.js  pure: how long a label may be — the room to the next one and to the pane's edge, under the slice of the picture a label took at the world view; the cut follows the zoom because the text does not
 src/timeline.js            the third view since M60: one lane per region; the window as a band with two handles; bars stack. It is chosen from the masthead and given the whole pane, where it used to be a strip along the bottom of the map
 src/panel/panel.js         the shell: container, clicks, load token, what the cards share
 src/panel/event.js         one card each: event.js, source.js, place.js, actor.js, office.js, cluster.js, narrative.js;  horizon.js  the "led to by year X" section; the actor card also lists its relations, both ways round

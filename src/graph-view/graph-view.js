@@ -38,6 +38,7 @@ import { arrangementOf, holdingKey } from './arrangement.js';
 import { layoutGraph, stackLayout, MIN_ZOOM, MAX_ZOOM } from './layout.js';
 import { collapseLayout } from './collapse.js';
 import { createLayoutRunner } from './layout-runner.js';
+import { LABEL_SIZE, fitLabel, shorten } from './label-fit.js';
 import { exportButton } from '../share.js';
 
 // Sizes in SVG units at k = 1; divided by k when drawn, so a node keeps its
@@ -53,8 +54,10 @@ const SELECTED_RADIUS = 7.5;
 const STACK_BONUS = 1.2;
 const HEAD_LENGTH = 7;
 const HEAD_WIDTH = 4.5;
-const LABEL_SIZE = 11;
-const LABEL_CHARS = 28;
+// How far from a mark's centre the text of its label starts, clear of the
+// widest node and its outline. In units of the screen, like every other size
+// here, and divided by the zoom where it is used.
+const LABEL_GAP = MAX_RADIUS + 3;
 // What fits in the left gutter a band label is written in.
 const BAND_LABEL_CHARS = 12;
 // Below this zoom only the heaviest nodes on screen are named; at or above
@@ -118,10 +121,6 @@ function textNode(text, attrs) {
   const el = svg('text', attrs);
   el.textContent = text;
   return el;
-}
-
-function shorten(text, chars = LABEL_CHARS) {
-  return text.length > chars ? `${text.slice(0, chars - 1).trimEnd()}…` : text;
 }
 
 // Weight decides size only within a small range: the graph is about the
@@ -855,16 +854,24 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     drawLabels(s, k, box);
   }
 
-  // Zoomed out, only the heaviest marks on screen are named and a label
-  // that would land on one already placed is skipped, as on the map. A
+  // Zoomed out, only the heaviest marks on screen are named, as on the map. A
   // stack is named after its representative — the heaviest event under it,
   // which is the one worth showing (cluster.js) — and weighs what its
   // members weigh together, so a thicket of small events can outrank a
   // single large one and say what it is. Zoomed in, every mark on screen is
-  // named: a name that disappeared because a neighbour got there first
-  // would be the wrong kind of tidy. A label that collides is moved to the
-  // other side of its mark first, and only drawn over another if neither
-  // side is free.
+  // named.
+  //
+  // What each of those names is cut to is the room it has, and not a constant
+  // (label-fit.js): the heaviest label is placed first and keeps the room it
+  // wants, and the next one is cut to what is left of its own line of text.
+  // So a label is never drawn over its neighbour — where it used to be moved
+  // to the other side of its mark and then drawn over one anyway, it is now
+  // cut to fit, on whichever side shows more of the name — and where the room
+  // is there, which zooming in is what makes, the whole name is drawn.
+  //
+  // A mark whose line is full on both sides keeps its title and loses its
+  // label, at every zoom. Five letters and an ellipsis is not a name, and a
+  // name drawn across another is two names nobody can read.
   function drawLabels(s, k, box) {
     labelsGroup.replaceChildren();
     const all = k >= LABEL_ALL_ZOOM;
@@ -872,39 +879,23 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     const candidates = [...onScreen].sort(
       (a, b) => b.weight - a.weight || (a.key < b.key ? -1 : a.key > b.key ? 1 : 0),
     );
+    // Which marks a label has to leave room to write from: every one that is
+    // going to be named, which below the gate is the heaviest of them and at
+    // or above it is all of them.
+    const naming = all ? candidates : candidates.slice(0, LABEL_LIMIT);
     const placed = [];
-    // Rough, and deliberately so: an em is about half the font size, and the
-    // box only has to be good enough to keep two labels off each other.
-    const boxFor = (node, text, right) => {
-      const width = (text.length * LABEL_SIZE * 0.55) / k;
-      const x = node.x + (right ? 1 : -1) * (MAX_RADIUS + 3) / k;
-      return {
-        x0: right ? x : x - width,
-        x1: right ? x + width : x,
-        y0: node.y - (LABEL_SIZE * 0.7) / k,
-        y1: node.y + (LABEL_SIZE * 0.7) / k,
-        x,
-        right,
-      };
-    };
-    const free = (rect) => !placed.some((p) => rect.x0 < p.x1 && p.x0 < rect.x1 && rect.y0 < p.y1 && p.y0 < rect.y1);
     for (const node of candidates) {
       if (!all && placed.length >= LABEL_LIMIT) break;
       // No name yet is no label, and the next node still gets its own.
-      const named = labelOf(atlas, node.representative.event);
-      if (named === null) continue;
-      const text = shorten(named);
-      let rect = boxFor(node, text, true);
-      if (!free(rect)) {
-        const other = boxFor(node, text, false);
-        if (free(other)) rect = other;
-        else if (!all) continue;
-      }
-      placed.push(rect);
-      labelsGroup.appendChild(textNode(text, {
-        x: rect.x, y: node.y + (LABEL_SIZE * 0.35) / k,
+      const name = labelOf(atlas, node.representative.event);
+      if (name === null) continue;
+      const fitted = fitLabel(name, node, { k, gap: LABEL_GAP, box, placed, named: naming });
+      if (!fitted) continue;
+      placed.push(fitted.rect);
+      labelsGroup.appendChild(textNode(fitted.text, {
+        x: fitted.rect.x, y: node.y + (LABEL_SIZE * 0.35) / k,
         class: classes('node-label', node.representative.id === s.selected ? 'selected' : ''),
-        'text-anchor': rect.right ? 'start' : 'end',
+        'text-anchor': fitted.right ? 'start' : 'end',
         'font-size': LABEL_SIZE / k,
       }));
     }
