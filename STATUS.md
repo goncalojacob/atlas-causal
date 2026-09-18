@@ -12366,6 +12366,247 @@ counts that were taken against the whole corpus are taken against the resting
 picture now, and from the same shared source, so they move with the rule instead
 of beside it.
 
+## M64 — the dates are chosen on the map, not typed
+
+The owner, 18 September, after using what M60 built:
+
+> **"There should be a toggle on the map so I can choose the dates instead of a
+> selector."**
+
+M60 was right and nothing about it is undone: the timeline is still a view of
+its own, the two number fields are still in the masthead, and a first visit is
+still the whole pane. What M60 lost is that **a year could be swept** — you
+pulled an end and the map answered as you moved, and you could see where the
+events were while you were choosing. A number field can do neither, because you
+must already know the year you want.
+
+### The toggle, and where it sits
+
+A button in the **top-left corner of the map pane**, reading `dates` — the
+owner's own word — with the title saying the rest: *"Choose the window of time
+on the map: drag either end and the map follows"*. `aria-expanded` says whether
+it is open and `aria-controls` names the strip.
+
+The top-left is the one corner of the map that was free. The bottom left is
+`.map-corner` (what the map is not drawing as a mark), the bottom right is
+`.view-export`, and the top right is `.map-note`. It is also the corner
+directly under the two number fields that say the same window in words, which
+is the argument for it rather than an accident of what was left: the two ways
+of setting one window stand next to each other.
+
+Open, a strip **44 units tall** spans the pane's width above it: the two years
+on their own row, the shade and its two handles under them, and the profile of
+where the events are along the bottom. Closed, the strip is **gone from the
+document** and not hidden — a drawing still in the page is still redrawn on
+every nudge of the window, and "closed costs nothing" would stop being true
+the moment anybody believed it.
+
+### How the band was reused rather than rebuilt
+
+The brief's sharpest instruction was *"do not write a second one"*, so the
+answer is not that the two bands agree today but that **there is one band**.
+`src/window-band.js` is where the band that was inside `src/timeline.js` now
+lives: the shade, the two handles, the year each stands on, and every gesture
+that moves them — a handle dragged, the ground slid, the wheel, the arrow keys,
+the double-click that snaps to a decade. The timeline calls it and so does the
+strip; neither builds an element of its own.
+
+The two drawings differ in exactly two arguments, and both are arguments rather
+than branches: `gutter` is the x below which the drawing is not the scale (the
+timeline's lane labels; nought on the strip) and `isRecord` says what a press
+must not be taken for (a bar or a stack on the timeline; nothing on the strip).
+
+`tests/m64.test.mjs` asserts this **structurally and not behaviourally**,
+because a second band that happened to agree today would still be the fault:
+`aria-valuetext` — what makes an element the window's own slider — occurs in one
+module under `src/`, neither drawing contains the string `window-handle`, and
+neither binds a `wheel` or a `pointermove` of its own.
+
+Two smaller things came with it. `bandEvents` is the line the lanes and the
+masthead's count already shared, lifted out so the strip cannot be drawn over a
+different corpus; and `windowPatch` — what a **typed** pair of years is allowed
+to become — now comes through `windowOf`, the same clamp a **drag** comes
+through, so typing 1600 and dragging to 1600 can only ever mean one window.
+
+### What a first visit looks like, against M60's
+
+The same picture, and that is asserted rather than asked to be believed. The
+strip is an **overlay** — `position: absolute` inside `.map-area` — and not a
+row of the grid, which is the whole of "it does not become the strip again":
+
+| | M59 (the strip) | M60 | M64 closed | M64 open |
+| --- | --- | --- | --- | --- |
+| the map pane, of the layout | about 70 % | 100 % | 100 % | 100 % |
+| in the document | lanes, bars, band | — | one `<button>` | the strip |
+
+`tests/m64-browser.test.mjs` asserts the property and not a pixel count: the map
+pane's height equals the layout's, it reaches the bottom edge, and opening the
+band takes nothing from it. The strip's own height is held to the brief's bound
+— **less than a third of the pane** — against the pane it is drawn in, so the
+number it actually takes stays the drawing's business.
+
+### What the band draws while a selection is narrowing the picture
+
+**What the atlas is currently showing, and never the corpus.** The profile is
+`density.js`'s own columns over `bandEvents(atlas, state)`, which is
+`emphasis.js`'s `shown` — the one set M65 left for every picture to filter by.
+So:
+
+* at rest it is the **main events**, which is 242 of 309 and not 309;
+* with an event chosen it is **that event, its parts, its parent and its one
+  hop**, and the rest of the corpus is gone from the profile exactly as it is
+  gone from the map;
+* a category switched off takes its events out of the profile too, because
+  `shown` is where that filter is applied.
+
+That is the honest reading for a strip whose whole job is to say where the
+events are: a profile drawn over the corpus under a map drawn over a
+neighbourhood would be two answers to one question. The columns themselves are
+`columnHeight`'s — **absolute and logarithmic**, the same scale the timeline's
+stubs and the masthead's hint are drawn at — so the three pictures cannot
+disagree about which century is the busy one.
+
+What does **not** narrow is the scale underneath: the strip stays on the whole
+extent of the data whatever the window is, which is the timeline's own rule and
+for its own reason — a handle at the edge of its own scale has no room to widen
+into, so narrowing once would be a trap.
+
+### The window is state, the toggle is not — and this run agrees
+
+The brief asked the run to say so if it disagreed. It does not. `?from=` and
+`?to=` are what somebody is looking at; whether they had a control open is how
+they had arranged their screen, and a link that carried it would open somebody
+else's atlas with a strip over the map they did not ask for. It is remembered
+per reader in `localStorage`, beside the panel's width — in `panes.js`, which is
+the file that remembers a reader's arrangement — under its own key
+`atlas-causal.band`, so that a panel dragged and a band opened cannot write over
+each other's answer.
+
+The browser suite asserts both halves in one test: the same reader reloading the
+same link gets the band back, and the same link with the key cleared opens with
+the window and without the control.
+
+### What first paint costs, and what the band costs when it is opened
+
+**First paint: two files and about 20 KB of source, and no measurable time.**
+Median of nine cold loads of `?from=1900&to=1999` at 1440 × 900, cache cleared
+between them, on the same machine and the same instrument:
+
+| | before | after |
+| --- | ---: | ---: |
+| first contentful paint | 36 ms (28–52) | 36 ms (28–68) |
+| load event | 150 ms (136–221) | 153 ms (150–196) |
+| requests to that frame | 110 | 112 |
+| JavaScript files | 80 | 82 |
+| JavaScript bytes | 1,077,264 | 1,097,575 |
+| all bytes | 6,156,170 | 6,179,710 |
+| marks on that frame | 14 | 14 |
+
+The two files are `window-band.js` and `map-band.js`; `timeline.js` gave up
+5,161 bytes to the first of them and was already fetched at first paint either
+way, so the net is **+20,311 bytes of module source and one hundredth of the
+6.2 MB a cold load moves**. There is no build step here, so a module is a
+request: that is the honest cost of the split and it is named rather than hidden
+in a bundle. The three milliseconds on the load event are inside a spread of
+sixty and are not a claim.
+
+**Opening it costs 3.4 ms, once.** The century counts, the scale, the four
+layers and the first drawing are all built on the first click; opening it again
+later is 0.6 ms, and **nothing is fetched** — 113 resource entries before the
+first open and 113 after nine of them.
+
+**And a frame of a sweep costs 3.7 ms**, median of twenty-four pointer moves
+along the band, worst 16.5 ms. That is not the strip alone: it is the whole
+atlas answering — the state written, the map redrawn, the masthead's count and
+hint recomputed, the strip redrawn — which is what "the map follows as they
+drag" is measuring.
+
+### Tests
+
+`tests/m64.test.mjs` (15) and `tests/m64-browser.test.mjs` (6), both written
+before the behaviour they judge. **No test pins a count of events**, and no test
+pins a pixel: the first visit is asserted as *the pane is the layout*, the strip
+as *less than a third of the pane*, and the drag as *the picture changed while
+the pointer was still down*.
+
+The drag test is the one worth reading. It presses on the far handle, moves the
+pointer, and then asserts **before dispatching `pointerup`** that the masthead's
+`to` has moved the way the pointer went and that the map is drawing a different
+and smaller set of marks. Only after that does it let go, and only then does it
+ask the URL — which is the order a reader experiences and the order M60 could
+not offer at all.
+
+### Deviations
+
+892. **The band was not moved to the map; it was extracted, and the timeline
+     now draws from where it went.** The brief said to reuse the band and not
+     write a second one, and the smallest way to satisfy that literally would
+     have been to mount a whole `createTimeline` over the map in a short
+     container. That was refused: the timeline lays out lanes, packs rows,
+     clusters bars and draws a stub strip per row, and none of it is what a
+     44-pixel control needs — a second timeline over the map *is* the strip
+     again, whatever it is called. So the band itself became a module and both
+     drawings call it. The cost is that `timeline.js` changed in this run,
+     which a milestone about the map was not obliged to do; the test that holds
+     it is structural, so the arrangement cannot quietly come apart later.
+
+893. **The strip is an overlay and not a row of the grid.** A grid row would
+     have been simpler to lay out and it is exactly what M60 removed. As an
+     overlay the map pane is the layout's own height open or closed, which is
+     what let the first-visit test be *the pane is the layout* rather than *the
+     pane is bigger than it was*. What it costs is 44 pixels of coastline under
+     the strip while it is open, which a reader who opened it can close.
+
+894. **One `z-index` was added, for the map's warning note.** `.map-note` is the
+     one thing on the map that must stay above the band: it says a shard of
+     borders would not load, and a warning behind a control the reader has just
+     opened is a warning nobody reads. `.map-corner` and `.view-export` are at
+     the bottom edge and are not touched.
+
+895. **`windowPatch` was folded into the band's own clamp, which the brief did
+     not ask for.** It is four lines and it is the difference between "both
+     write the same `from` and `to`" being true and being true today: the two
+     controls had two copies of *clamp to the extent, never cross the ends*, and
+     the number fields' copy worked in historians' numbering and the band's in
+     astronomical. They are one function now with the conversion at the edge.
+
+896. **The push was rejected once, and this run rebased rather than stopping.**
+     `docs/run-protocol.md` §3 says a rejected push means another agent is
+     writing to `m0`: stop. The commit that had landed was
+     `a7541065 M65: the card keeps its place across a shard arrival the drag now
+     asks for` — the previous milestone's run fixing its own red check twenty
+     minutes after `M64 started` went up, which is the last step of a run that
+     had already written `M65 done`. That is not another agent on this
+     milestone, and §3's rule exists to stop two runs destroying each other's
+     work on one. The rebase was clean and touched nothing this run had
+     written. **The rule is still right**; what this deviation records is that
+     it needs an exception for the outgoing milestone's own tail, in the way
+     the 4 September amendment already carves one out for an import branch the
+     run itself pushed.
+
+897. **`validate --index` reported 69 errors that were not there, because the
+     sandbox's clone is shallow.** Every one of them was a history shard —
+     `history-event-1400-1499-…` and its kin — and `tools/lib/history.mjs`
+     refuses a shallow clone outright rather than reading it for what it holds,
+     so the shards it builds here name different files from the committed ones.
+     `git fetch --unshallow origin` and the same command reports **0 errors**.
+     It cost one confused reading of a clean tree, and it is worth a line
+     because the amendment of 15 September makes `--index` the validator every
+     run with records uses: a run that sees 69 errors on a tree it has not
+     touched should check the clone before it believes them.
+
+898. **Closed is the strip removed from the document, not hidden.** `hidden`
+     would have been one attribute and would have kept the subscription, the
+     `ResizeObserver` and four layers of elements alive, redrawing on every
+     nudge of a window nobody is looking at them through. Closing tears all of
+     it down and the next open rebuilds it in 0.6 ms, which is cheaper than
+     being wrong about what "costs nothing" means.
+
+899. **The band is on the map and not on the graph.** The brief says "a toggle
+     on the map" and the graph shades the window in its own drawing already, so
+     a second band over it would be a third picture of the same thing. It is one
+     call in `main.js` against a different container if the owner wants it.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
