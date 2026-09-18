@@ -5,7 +5,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import {
-  CITY_POPULATION, LAYERS, PROPERTIES, Z_BY_NE_ZOOM, Z_VISIBLE_BY, kept, keptCity, layer,
+  CITY_POPULATION, LAYERS, PHYSICAL_DEFAULT_FAMILY, PHYSICAL_FAMILIES, PHYSICAL_KINDS,
+  PROPERTIES, Z_BY_NE_ZOOM, Z_VISIBLE_BY, familyOf, kept, keptCity, layer,
   lineLength, polygonArea, readFeature, surveyProperties, surveyShape, zFor, zOf,
 } from '../tools/import/features.mjs';
 
@@ -206,6 +207,65 @@ test('what a cell holds is decided per layer, and no cut edge is ever stroked', 
   // river is keyed by nothing — which is why it is the layer that is clipped.
   assert.equal(PROPERTIES.rivers.id, null);
   assert.equal(layer('mountains').geometry, 'point', 'a point is in one cell and there is nothing to cut');
+});
+
+// --- M45a: the family a physical region is drawn in -------------------------
+//
+// Brief test 3. The families are the brief's and this is what holds them: a
+// family read off a class the table does not name, or a class this atlas does
+// not keep, is the default family and never a throw — a Natural Earth release
+// that adds a class must not stop an import.
+
+test('a physical region\'s family is read off the frozen allow-list', () => {
+  const table = PROPERTIES.physical;
+  // Every class the layer keeps has a family, and it is one of the four.
+  for (const kind of table.keep) {
+    const family = familyOf(table, { FEATURECLA: kind });
+    assert.ok(PHYSICAL_KINDS.includes(family), `${kind} → ${family} is a family`);
+  }
+  // The brief's three named families, class by class, so that moving one is a
+  // change somebody has to make here as well.
+  assert.equal(familyOf(table, { FEATURECLA: 'Range/mtn' }), 'relief');
+  assert.equal(familyOf(table, { FEATURECLA: 'Foothills' }), 'relief');
+  assert.equal(familyOf(table, { FEATURECLA: 'Desert' }), 'cover');
+  assert.equal(familyOf(table, { FEATURECLA: 'Tundra' }), 'cover');
+  assert.equal(familyOf(table, { FEATURECLA: 'Wetlands' }), 'cover');
+  assert.equal(familyOf(table, { FEATURECLA: 'Basin' }), 'hollow');
+  assert.equal(familyOf(table, { FEATURECLA: 'Depression' }), 'hollow');
+  assert.equal(familyOf(table, { FEATURECLA: 'Valley' }), 'hollow');
+  // And the rest keep what all seventeen looked like before M45a.
+  for (const kind of ['Plateau', 'Plain', 'Pen/cape', 'Peninsula', 'Lowland', 'Delta', 'Isthmus', 'Gorge', 'Geoarea']) {
+    assert.equal(familyOf(table, { FEATURECLA: kind }), PHYSICAL_DEFAULT_FAMILY, kind);
+  }
+  assert.deepEqual(PHYSICAL_KINDS, ['cover', 'hollow', 'outline', 'relief']);
+  // The families are a subset of the allow-list: a family on a class the
+  // layer does not keep would be a rule nothing can ever read.
+  for (const kind of Object.keys(PHYSICAL_FAMILIES)) {
+    assert.ok(table.keep.includes(kind), `${kind} is a class this layer keeps`);
+  }
+});
+
+test('an unknown FEATURECLA takes the default family rather than throwing', () => {
+  const table = PROPERTIES.physical;
+  for (const properties of [{ FEATURECLA: 'Ice shelf' }, { FEATURECLA: '' }, { FEATURECLA: null }, {}]) {
+    assert.equal(familyOf(table, properties), PHYSICAL_DEFAULT_FAMILY, JSON.stringify(properties));
+  }
+  // And a layer with no families at all answers null, so nothing else in the
+  // import grows a `kind` by accident.
+  for (const id of ['coast', 'rivers', 'lakes', 'mountains', 'cities']) {
+    assert.equal(familyOf(PROPERTIES[id], { featurecla: 'Lake', FEATURECLA: 'Admin-0 capital' }), null, id);
+  }
+});
+
+test('kind is written on a physical feature and only where it is not the default', () => {
+  const geometry = square(0, 0, 1);
+  const range = readFeature('physical', { properties: { FEATURECLA: 'Range/mtn', NAME: 'Serra da Estrela', SCALERANK: 5 }, geometry });
+  assert.equal(range.kind, 'relief');
+  const plateau = readFeature('physical', { properties: { FEATURECLA: 'Plateau', NAME: 'Meseta', SCALERANK: 5 }, geometry });
+  assert.equal('kind' in plateau, false, 'the default family is the absence of the key');
+  // A lake is not a physical region and never carries one.
+  const lake = readFeature('lakes', { properties: { featurecla: 'Lake', name: 'Alqueva', scalerank: 5 }, geometry });
+  assert.equal('kind' in lake, false);
 });
 
 test('every layer but the coast has a far level of its own, under data/geo/base/', () => {

@@ -197,9 +197,16 @@ export function pointOf(read, { decimals, carry = [] }) {
 // coastline the reader gets. `readFeature` writes one for every feature all
 // the same: what a nameless feature's label zoom *would* be is still the
 // import's answer and not a hole in it.
+// `kind` is M45a's family for the one layer that has families, and it travels
+// for the reason `place` travels on a city: what a feature *is* decides how it
+// is drawn, the browser never reads the Natural Earth file, and a stylesheet
+// switching on `FEATURECLA` would be the allow-list copied into another
+// language. It is absent on the 237 of 544 in the default family, which is
+// what a feature with no `kind` draws as anyway.
 export function featureOf(read, geometry) {
   const properties = { z: read.z };
   if (read.id !== undefined) properties.id = read.id;
+  if (read.kind !== undefined) properties.kind = read.kind;
   if (read.name !== undefined) properties.name = read.name;
   if (read.nameEn !== undefined) properties.nameEn = read.nameEn;
   if (read.name !== undefined && read.zl !== undefined) properties.zl = read.zl;

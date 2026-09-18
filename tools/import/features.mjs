@@ -117,6 +117,58 @@ export const neZoomByArea = (area) => ladder(AREA_TO_NE_ZOOM, area);
 export const neZoomByLength = (length) => ladder(LENGTH_TO_NE_ZOOM, length);
 export const neZoomByPopulation = (population) => ladder(POPULATION_TO_NE_ZOOM, population);
 
+// --- what kind of ground a physical region is ----------------------------
+//
+// `ne_10m_geography_regions_polys` carries seventeen classes this atlas keeps
+// and M36b drew all seventeen the same way: one dashed hairline, so a desert
+// and a mountain range were the same mark. **The families are the brief's**
+// (M45a, §1.1) and they are decided here rather than in CSS, because a
+// stylesheet that switched on `FEATURECLA` would be a second copy of the
+// allow-list above, in another language, free to fall out of step with it.
+//
+//   relief   Range/mtn, Foothills          — ground that rises
+//   cover    Desert, Tundra, Wetlands      — ground of a kind, at any height
+//   hollow   Basin, Depression, Valley     — ground that dips
+//   outline  everything else               — what all seventeen looked like
+//
+// Four families and not seventeen for the reason the whole milestone exists:
+// the ground is what the territories moved around and never the subject, and
+// seventeen marks on one map would be a legend nobody asked for.
+export const PHYSICAL_FAMILIES = Object.freeze({
+  'Range/mtn': 'relief',
+  Foothills: 'relief',
+  Desert: 'cover',
+  Tundra: 'cover',
+  Wetlands: 'cover',
+  Basin: 'hollow',
+  Depression: 'hollow',
+  Valley: 'hollow',
+});
+
+// The family a class this table does not name falls to, which is what the
+// plateaus, the plains, the capes, the peninsulas, the lowlands, the deltas,
+// the isthmuses, the gorges and the geoareas are — and what an unknown
+// `FEATURECLA` is, rather than a throw. It is the mark M36b gave all of them.
+export const PHYSICAL_DEFAULT_FAMILY = 'outline';
+
+// Every family that exists, the default included. The browser holds the same
+// closed list (src/map/layers/base.js): a `kind` is written into a class
+// attribute, data from `data/` is untrusted input, and neither end trusts the
+// other to have filtered it.
+export const PHYSICAL_KINDS = Object.freeze([
+  ...new Set([...Object.values(PHYSICAL_FAMILIES), PHYSICAL_DEFAULT_FAMILY]),
+].sort());
+
+// The family of one feature, through its layer's table. Always a string: a
+// class the table does not name is the default family and never an error,
+// which is what keeps a Natural Earth release that adds a class from stopping
+// an import.
+export function familyOf(table, properties) {
+  if (!table?.families) return null;
+  const kind = value(properties, table.class);
+  return table.families[kind] ?? table.defaultFamily ?? PHYSICAL_DEFAULT_FAMILY;
+}
+
 // --- the property tables -------------------------------------------------
 //
 // One per layer. `name`, `nameEn`, `scaleRank`, `minZoom`, `population`,
@@ -201,6 +253,10 @@ export const PROPERTIES = Object.freeze({
       'Depression', 'Valley', 'Lowland', 'Delta', 'Isthmus', 'Foothills', 'Tundra',
       'Wetlands', 'Gorge', 'Geoarea',
     ]),
+    // The one table with families: the class that decides whether a feature
+    // is kept at all also decides how it is drawn (M45a, §1.1).
+    families: PHYSICAL_FAMILIES,
+    defaultFamily: PHYSICAL_DEFAULT_FAMILY,
     name: 'NAME',
     nameEn: null,
     scaleRank: 'SCALERANK',
@@ -477,6 +533,14 @@ export function readFeature(layerId, feature) {
   // which is the only thing this atlas actually knows.
   const label = value(properties, table.label);
   out.zl = Number.isFinite(label) ? Math.max(zOf(label), out.z) : out.z + 1;
+  // M45a's family, for the one layer that has families. Written **only where
+  // it is not the default**, which is the rule `nameEn` and `zl` are already
+  // written by: the default family is what a feature with no `kind` draws as
+  // at the other end, so the key would say what its absence already says.
+  // 307 of the 544 carry one and 237 do not, and the run that added it moved
+  // the base map by 6.5 KB of 5.93 MB.
+  const family = familyOf(table, properties);
+  if (family !== null && family !== (table.defaultFamily ?? PHYSICAL_DEFAULT_FAMILY)) out.kind = family;
   return out;
 }
 
