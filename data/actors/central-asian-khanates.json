@@ -13,15 +13,17 @@
   ],
   "license": "GPL-3.0-only",
   "created": "2026-09-16",
-  "revised": null,
-  "origin": {
-    "tool": "basemaps"
-  },
+  "revised": "2026-09-18",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "source-horizon"
+    ],
+    "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `bokhara` — 0.0213 of the smaller outline, 0.0052 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more."
+  },
+  "origin": {
+    "tool": "basemaps"
   },
   "sources": [
     {

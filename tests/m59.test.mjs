@@ -186,3 +186,18 @@ test(`a record marked ${HORIZON_FLAG} says on its own face what 1885 is`, () => 
   }
   assert.deepEqual(silent, [], silent.join('; '));
 });
+
+// The brief's first test in full, and the one the milestone exists to make
+// true. It lands with the commit that marks the records, per deviation 717's
+// "with it or before it": until then there is nothing for it to be true of.
+test('no active actor ends in exactly 1885 without a join, a cited dissolution, or the mark', () => {
+  const bare = endsAtTheSeam
+    .filter((a) => !flagsOf(a).includes(HORIZON_FLAG))
+    .filter((a) => !flagsOf(a).includes(DATED_FLAG))
+    .filter((a) => !JOINS.some((j) => j.survivor === a.id || j.merged === a.id))
+    .map((a) => a.id);
+  assert.deepEqual(bare.sort(), [], bare.length
+    ? `${bare.length} active actor(s) end in exactly 1885 with nothing saying what that year is: ${bare.join(', ')}. `
+      + '1885 is where Historical Basemaps stops; left bare it reads as a dissolution.'
+    : undefined);
+});

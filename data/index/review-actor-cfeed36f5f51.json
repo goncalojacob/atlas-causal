@@ -1820,11 +1820,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -2407,11 +2409,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `vietnam-annam-cochin-china-tonkin` — 0.9431 of the smaller outline, 0.6978 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -2465,11 +2469,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -3025,11 +3031,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `oman` — 0.6283 of the smaller outline, 0.0834 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -3494,11 +3502,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `ghana-under-united-kingdom` — 0.5940 of the smaller outline, 0.3389 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -3929,11 +3939,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `oil-rivers-protectorate` — 1.0000 of the smaller outline, 0.1103 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -5415,11 +5427,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `congo-democratic-republic-of-zaire-under-belgium` — 0.0900 of the smaller outline, 0.0041 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -5885,11 +5899,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `oil-rivers-protectorate` — 0.8670 of the smaller outline, 0.0814 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -6855,11 +6871,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -6942,11 +6960,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `bosnia` — 0.9292 of the smaller outline, 0.7573 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -7330,11 +7350,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -7829,11 +7851,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `congo-democratic-republic-of-zaire-under-belgium` — 0.0002 of the smaller outline, 0.0000 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -8090,11 +8114,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `oil-rivers-protectorate` — 0.2637 of the smaller outline, 0.0232 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -9031,11 +9057,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `bokhara` — 0.0213 of the smaller outline, 0.0052 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -11820,11 +11848,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `congo-under-france` — 0.0687 of the smaller outline, 0.0129 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -12112,11 +12142,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -12823,11 +12855,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `german-togoland` — 0.3447 of the smaller outline, 0.0638 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -14058,11 +14092,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -16554,11 +16590,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `cambodia-kampuchea-under-france` — 0.9674 of the smaller outline, 0.5686 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -16674,11 +16712,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `guinea-bissau-under-portugal` — 0.3216 of the smaller outline, 0.1654 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -16703,11 +16743,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -16879,11 +16921,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -17639,11 +17683,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `ghana-under-united-kingdom` — 0.9619 of the smaller outline, 0.3525 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -18077,11 +18123,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -18135,11 +18183,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `cape-colony` — 0.8876 of the smaller outline, 0.0782 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -20112,11 +20162,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `british-somaliland-somaliland-republic` — 0.7449 of the smaller outline, 0.4583 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -20866,11 +20918,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `china` — 0.8216 of the smaller outline, 0.0001 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -21621,11 +21675,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `lagos` — 0.7189 of the smaller outline, 0.3626 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -22825,11 +22881,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `italy-sardinia` — 0.9578 of the smaller outline, 0.8839 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -22973,11 +23031,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -25247,11 +25307,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `kamerun` — 0.0244 of the smaller outline, 0.0093 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -27219,11 +27281,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `bolivia` — 0.0553 of the smaller outline, 0.0079 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -28735,11 +28799,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `congo-democratic-republic-of-zaire-under-belgium` — 0.8054 of the smaller outline, 0.0241 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -30703,11 +30769,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `namibia-under-south-africa` — 0.0147 of the smaller outline, 0.0027 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -30732,11 +30800,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `congo-democratic-republic-of-zaire-under-belgium` — 0.9757 of the smaller outline, 0.0094 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -31086,11 +31156,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `congo-democratic-republic-of-zaire-under-belgium` — 1.0000 of the smaller outline, 0.0373 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -31814,11 +31886,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `perak` — 0.9946 of the smaller outline, 0.0577 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -32077,11 +32151,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `china` — 0.9881 of the smaller outline, 0.9655 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -32428,11 +32504,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `new-zealand-under-united-kingdom` — 0.9416 of the smaller outline, 0.8260 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -33998,11 +34076,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -35364,11 +35444,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `congo-democratic-republic-of-zaire-under-belgium` — 0.0085 of the smaller outline, 0.0007 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -36295,11 +36377,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -36585,11 +36669,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -38946,11 +39032,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -39236,11 +39324,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -40460,11 +40550,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -40547,11 +40639,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `botswana-under-united-kingdom` — 0.7435 of the smaller outline, 0.0713 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -40982,11 +41076,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -41507,11 +41603,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -43408,11 +43506,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `oil-rivers-protectorate` — 0.8674 of the smaller outline, 0.0453 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -43877,11 +43977,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -44731,11 +44833,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `papua` — 0.9411 of the smaller outline, 0.4824 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -47083,11 +47187,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `chile` — 0.7745 of the smaller outline, 0.0002 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -47560,11 +47666,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `guinea-bissau-under-portugal` — 0.0572 of the smaller outline, 0.0168 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -48329,11 +48437,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -48941,11 +49051,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -49230,11 +49342,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `thailand` — 0.8679 of the smaller outline, 0.7183 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -50065,11 +50179,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -50445,11 +50561,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -50505,11 +50623,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -50592,11 +50712,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -50939,11 +51061,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -53130,11 +53254,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -54618,11 +54744,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `equatorial-guinea-under-spain` — 0.9913 of the smaller outline, 0.5018 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -55204,11 +55332,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -55552,11 +55682,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `transvaal` — 0.4076 of the smaller outline, 0.0230 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -55610,11 +55742,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `sweden` — 0.9428 of the smaller outline, 0.8585 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -56016,11 +56150,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record on this ground is `china` — 0.9587 of the smaller outline, 0.0032 of the union, and its name is not this record's, so nothing was joined, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -56832,11 +56968,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `congo-under-france` — 0.4628 of the smaller outline, 0.0920 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -58461,11 +58599,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -58925,11 +59065,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `oman` — 0.0806 of the smaller outline, 0.0121 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -59418,11 +59560,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -60680,11 +60824,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -62321,11 +62467,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. No record beginning in 1886 overlaps this ground at all, under any name, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more. The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -66071,11 +66219,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `congo-democratic-republic-of-zaire-under-belgium` — 0.3832 of the smaller outline, 0.0139 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {
@@ -67086,11 +67236,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "source-horizon"
         ],
+        "note": "M59: 1885 is where Historical Basemaps stops, not where this polity ended. The nearest 1886-side record is `congo-democratic-republic-of-zaire-under-belgium` — 0.4454 of the smaller outline, 0.0389 of the union, which is below M51's cut of 0.50: whatever the names say, this is not the same ground, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-18",
       "status": "active"
     },
     {

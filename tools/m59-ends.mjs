@@ -60,14 +60,63 @@ export const DISSOLUTIONS = Object.freeze([
   { actor: 'zululand', qid: 'Q729768', label: 'Zulu Kingdom', value: '1897', end: 1897 },
 ]);
 
+export const DOC = path.join('docs', 'm59-singletons.md');
+
+// A marca diz o que a medida encontrou, e a medida está no documento — não
+// aqui e não outra vez. Ler a tabela do §4 de lá é o que impede a nota de
+// dizer "não há nada neste chão" a um registo que tem um vizinho a 0.98 de
+// sobreposição e a quem só o nome recusou a junção.
+const MEASURED = /^\| (\d\.\d{4}) \| (\d\.\d{4}) \| `([a-z0-9-]+)` \| `([a-z0-9-]+)` \|/;
+
+export async function readMeasurement(root) {
+  const text = await readFile(path.join(root, DOC), 'utf8');
+  const best = new Map();
+  for (const line of text.split('\n')) {
+    const m = MEASURED.exec(line);
+    if (!m) continue;
+    const [, jaccard, ratio, actor, against] = m;
+    if (!best.has(actor)) best.set(actor, { against, ratio: Number(ratio), jaccard: Number(jaccard) });
+  }
+  return best;
+}
+
+// O que a nota diz sobre o chão depende do que lá estava. Sem sobreposição
+// nenhuma não há parceiro que se tenha falhado; com sobreposição houve um
+// candidato e foi o nome que o recusou, e esconder isso seria a mesma
+// desonestidade em ponto pequeno que deixar o 1885 nu.
+// Duas razões diferentes para não haver junção, e dizer a errada seria uma
+// mentira pequena sobre o que se mediu. `portuguese-guinea` tem o nome do
+// registo de 1886 e 0.0572 do chão: ali foi a geometria que recusou, não o
+// nome. `maori` tem 0.9416 do chão e não tem o nome: ali foi o contrário.
+const CUT = 0.5; // a de M51, herdada e não reajustada
+function groundSentence(found) {
+  if (!found) return 'No record beginning in 1886 overlaps this ground at all, under any name';
+  const measured = `\`${found.against}\` — ${found.ratio.toFixed(4)} of the smaller outline, ${found.jaccard.toFixed(4)} of the union`;
+  return found.ratio < CUT
+    ? `The nearest 1886-side record is ${measured}, which is below M51's cut of 0.50: whatever the names say, this is not the same ground`
+    : `The nearest 1886-side record on this ground is ${measured}, and its name is not this record's, so nothing was joined`;
+}
+
+// `review.note` tem 500 caracteres e a frase final é a que explica em vez de
+// dizer. Cortá-la inteira quando não cabe é melhor do que a deixar cortada a
+// meio, que é o que um `.slice(500)` faria.
+const LIMIT = 500;
+function horizonNote(id, measured) {
+  const head = `M59: 1885 is where Historical Basemaps stops, not where this polity ended. ${groundSentence(measured.get(id))}, and Wikidata gives no dissolution this record could cite (docs/m59-singletons.md). The end here is the horizon of the source and nothing more.`;
+  const tail = ' The summary says that of the whole interval; this says it of the end, which is the number a reader takes for a fact.';
+  const full = head + tail;
+  return full.length <= LIMIT ? full : head.slice(0, LIMIT);
+}
+
 const readJson = async (file) => JSON.parse(await readFile(file, 'utf8'));
 const writeJson = async (file, value) => writeFile(file, `${JSON.stringify(inSchemaOrder(value, 'actor'), null, 2)}\n`);
 const dedupe = (list) => [...new Set(list)];
 
 
-export async function run(dataDir, { today, dryRun = false } = {}) {
+export async function run(dataDir, { today, dryRun = false, root = ROOT } = {}) {
   const actorsDir = path.join(dataDir, 'actors');
   const byId = new Map(DISSOLUTIONS.map((d) => [d.actor, d]));
+  const measured = await readMeasurement(root);
   const dated = [];
   const marked = [];
 
@@ -102,7 +151,7 @@ export async function run(dataDir, { today, dryRun = false } = {}) {
       status: 'draft',
       ...(a.review ?? {}),
       flags: dedupe([...(a.review?.flags ?? []), HORIZON_FLAG]),
-      note: `M59: 1885 is where Historical Basemaps stops, not where this polity ended. No 1886-side record stands on this ground under any name (docs/m59-singletons.md), and Wikidata gives no dissolution this record could cite, so the end here is the horizon of the source and nothing more. The summary above says the same of the whole interval; this says it of the end, which is the number a reader would otherwise take for a fact.`.slice(0, 500),
+      note: horizonNote(a.id, measured),
     };
     a.revised = today;
     if (!dryRun) await writeJson(full, a);
