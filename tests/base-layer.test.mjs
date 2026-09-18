@@ -7,7 +7,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-import { createBaseLayer, baseSignature, bboxOf } from '../src/map/layers/base.js';
+import {
+  PEAK_RADIUS, createBaseLayer, baseSignature, bboxOf, peakRadius,
+} from '../src/map/layers/base.js';
 import { createProjection } from '../src/map/projection.js';
 
 // --- the smallest document that will do -------------------------------------
@@ -339,6 +341,136 @@ test('the signature is the four things that decide the picture', () => {
   assert.notEqual(baseSignature(same), baseSignature({ ...same, drawable: false }));
   assert.notEqual(baseSignature(same), baseSignature({ ...same, bucket: '0.2:4' }));
   assert.notEqual(baseSignature(same), baseSignature({ ...same, files: ['a.json'] }));
+});
+
+// --- M45a: a peak is drawn at its height ------------------------------------
+//
+// Brief test 2. The function is frozen, so this is what holds it: monotone
+// over its whole domain and bounded at both ends. Not a linear scale — a
+// linear one puts the median of the 711 at 0.28 of the top and leaves every
+// range but Everest under an invisible dot — which the spread below is what
+// actually checks.
+
+test('the elevation-to-radius function is monotone over its whole domain', () => {
+  // Every metre from a kilometre below the sea to a kilometre above the
+  // ceiling, which is the whole domain and then some.
+  let previous = -Infinity;
+  for (let metres = -1000; metres <= 10000; metres += 1) {
+    const r = peakRadius(metres);
+    assert.ok(r >= previous, `${metres} m gave ${r}, under the ${previous} before it`);
+    previous = r;
+  }
+  // And the pathological inputs a file could carry, none of which throws.
+  for (const value of [null, undefined, NaN, Infinity, -Infinity, 'tall', {}]) {
+    assert.equal(peakRadius(value), PEAK_RADIUS.min, JSON.stringify(value) ?? String(value));
+  }
+});
+
+test('the elevation-to-radius function is bounded at both ends', () => {
+  for (const metres of [-100000, -416, 0, 1, 4500, 8848, 9000, 9001, 1e9]) {
+    const r = peakRadius(metres);
+    assert.ok(r >= PEAK_RADIUS.min && r <= PEAK_RADIUS.max, `${metres} m → ${r} is inside the range`);
+  }
+  assert.equal(peakRadius(PEAK_RADIUS.floor), PEAK_RADIUS.min);
+  assert.equal(peakRadius(PEAK_RADIUS.ceiling), PEAK_RADIUS.max);
+  // The Dead Sea, the one point of the 711 below sea level, is the floor and
+  // not a negative radius.
+  assert.equal(peakRadius(-416), PEAK_RADIUS.min);
+  // The domain and the range are the numbers STATUS.md records; a run that
+  // moves one moves this line with it.
+  assert.deepEqual({ ...PEAK_RADIUS }, { min: 0.6, max: 2.6, floor: 0, ceiling: 9000 });
+});
+
+test('a peak is not on a linear scale: the middle of the file is near the middle of the range', () => {
+  const span = PEAK_RADIUS.max - PEAK_RADIUS.min;
+  // The median of the 711 elevation points is 2,453 m. Linearly that is 0.27
+  // of the range; what the function has to do is put it past a third, or the
+  // whole of the world's ranges draws as one small dot under Everest.
+  const median = (peakRadius(2453) - PEAK_RADIUS.min) / span;
+  assert.ok(median > 0.4 && median < 0.6, `the median peak is at ${median.toFixed(3)} of the range`);
+  // And the two ends still tell each other apart at a glance: a 400 m hill,
+  // the Serra da Estrela at 1,993 m and Everest are three sizes and not one.
+  assert.ok(peakRadius(1993) - peakRadius(400) > 0.3, 'a range is bigger than a hill');
+  assert.ok(peakRadius(8848) - peakRadius(1993) > 0.5, 'and Everest is bigger than a range');
+});
+
+test('each peak is drawn at its own height, and stays its own size through a zoom', async () => {
+  const peaks = {
+    'geo/base/mountains-world.json': [
+      { id: 'everest', lon: -45, lat: 8, name: 'Everest', z: 1, elevation: 8848 },
+      { id: 'estrela', lon: -46, lat: 9, name: 'Estrela', z: 1, elevation: 1993 },
+      { id: 'flat', lon: -44, lat: 7, name: 'Nothing said', z: 1 },
+    ],
+  };
+  const group = fakeElement('g');
+  const io = loader(peaks);
+  const layer = createBaseLayer(group, projection, {
+    id: 'mountains', geometry: 'point', minZoom: 1, world: 'geo/base/mountains-world.json', cells: [],
+    nearSpan: 120, load: io.load, loaded: io.loaded,
+  });
+  layer.render({ k: 1, view: CELL_BOX });
+  await settle();
+  layer.render({ k: 1, view: CELL_BOX });
+  assert.equal(group.childNodes.length, 3);
+  const [everest, estrela, flat] = group.childNodes;
+  assert.equal(everest.getAttribute('r'), peakRadius(8848).toFixed(3));
+  assert.equal(estrela.getAttribute('r'), peakRadius(1993).toFixed(3));
+  // A peak the file gave no height is the floor, not the average and not a
+  // guess: all 711 carry one, and this is what a file that stopped doing so
+  // would draw as.
+  assert.equal(flat.getAttribute('r'), PEAK_RADIUS.min.toFixed(3));
+  assert.notEqual(everest.getAttribute('r'), estrela.getAttribute('r'));
+
+  // The dot is a mark on the page, so it shrinks with the zoom — over the
+  // nodes that are already there, and each keeps its own height.
+  layer.render({ k: 4, view: CELL_BOX });
+  assert.equal(group.childNodes[0], everest, 'the same node');
+  assert.equal(everest.getAttribute('r'), (peakRadius(8848) / 4).toFixed(3));
+  assert.equal(estrela.getAttribute('r'), (peakRadius(1993) / 4).toFixed(3));
+  assert.equal(flat.getAttribute('r'), (PEAK_RADIUS.min / 4).toFixed(3));
+});
+
+// --- M45a: a physical region is drawn by what it is -------------------------
+
+const groundFeature = (id, kind, ring) => ({
+  type: 'Feature',
+  geometry: { type: 'Polygon', coordinates: [ring] },
+  properties: kind === null ? { id, z: 1 } : { id, z: 1, kind },
+});
+
+test('a physical region carries its family as a class, and an unknown one carries none', async () => {
+  const ring = [[-46, 7], [-44, 7], [-44, 9], [-46, 7]];
+  const data = {
+    'geo/base/physical-world.json': {
+      type: 'FeatureCollection',
+      features: [
+        groundFeature('a', 'relief', ring),
+        groundFeature('b', 'cover', ring),
+        groundFeature('c', 'hollow', ring),
+        groundFeature('d', null, ring),
+        // `data/` is untrusted input and this ends up in a class attribute:
+        // a kind the browser's own closed list does not hold draws in the
+        // default family and never in a class of its own.
+        groundFeature('e', 'outline', ring),
+        groundFeature('f', 'relief" onload="alert(1)', ring),
+        groundFeature('g', 42, ring),
+      ],
+    },
+  };
+  const group = fakeElement('g');
+  const io = loader(data);
+  const layer = createBaseLayer(group, projection, {
+    id: 'physical', geometry: 'polygon', minZoom: 1, world: 'geo/base/physical-world.json', cells: [],
+    nearSpan: 120, load: io.load, loaded: io.loaded,
+  });
+  layer.render({ k: 1, view: CELL_BOX });
+  await settle();
+  layer.render({ k: 1, view: CELL_BOX });
+  assert.equal(group.childNodes.length, 7);
+  assert.deepEqual(
+    group.childNodes.map((el) => el.getAttribute('class')),
+    ['ground-relief', 'ground-cover', 'ground-hollow', null, null, null, null],
+  );
 });
 
 test('bboxOf takes a box off a point, a line and a polygon alike', () => {

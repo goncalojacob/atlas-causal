@@ -44,11 +44,61 @@ import { shorten } from '../labels.js';
 import { faceName, titleLine } from '../names.js';
 
 // O diâmetro de um ponto, em unidades da página, antes de ser dividido pelo
-// zoom. As duas camadas de pontos são desenhadas aos tamanhos que a tabela do
-// briefing nomeia; é o único número deste ficheiro que não vem do manifesto,
-// porque não há campo no manifesto que o carregue.
-const DOT = Object.freeze({ mountains: 1.5, cities: 2 });
+// zoom. É o único número deste ficheiro que não vem do manifesto, porque não
+// há campo no manifesto que o carregue. Os picos saíram desta tabela em M45a e
+// são medidos pela sua altura (`peakRadius`, abaixo); ficou a das cidades, que
+// são todas do mesmo tamanho porque o que as ordena é a etiqueta e não a marca.
+const DOT = Object.freeze({ cities: 2 });
 const DEFAULT_DOT = 2;
+
+// --- um pico é desenhado à sua altura ---------------------------------------
+//
+// M45a, §1.2. Os 711 pontos de elevação traziam a sua altura em metros desde
+// M36b e eram todos o mesmo ponto de 1,5: o Evereste a 8.848 m e uma colina de
+// 400 m valiam o mesmo na página. A altura é geografia e não história — nada
+// aqui é uma afirmação sobre o passado —, e é ela que diz ao leitor que uma
+// fronteira segue uma crista e não uma linha qualquer.
+//
+// **Não é uma escala linear.** Linearmente a mediana dos 711 (2.453 m) daria
+// 0,27 do intervalo e quase toda a serra do mundo ficaria amontoada na ponta
+// de baixo, com o Evereste sozinho a fazer de borrão. A raiz quadrada é a
+// função: monótona em todo o domínio, limitada nas duas pontas, e reparte o
+// intervalo por onde as alturas estão — a mediana fica a 0,52 dele. Medida
+// sobre o próprio ficheiro — mínimo −416 (o mar Morto), quartil 1.447, mediana
+// 2.453, quartil 3.480, máximo 8.848 — dá 1,02 a uma colina de 400 m, 1,64 à
+// mediana, 1,54 à serra da Estrela e 2,58 ao Evereste, onde a camada inteira
+// era 1,5.
+//
+// O tecto são 9.000 m redondos e não os 8.848 do ficheiro: a função é da
+// carta e não da versão do Natural Earth que está em `vendor/`. O chão é o
+// nível do mar, e um ponto abaixo dele — o mar Morto é o único — desenha-se ao
+// mínimo. Uma depressão é um acidente do `physical` e é desenhada como tal.
+export const PEAK_RADIUS = Object.freeze({ min: 0.6, max: 2.6, floor: 0, ceiling: 9000 });
+
+export function peakRadius(elevation) {
+  const { min, max, floor, ceiling } = PEAK_RADIUS;
+  if (!Number.isFinite(elevation)) return min;
+  const clamped = Math.min(Math.max(elevation, floor), ceiling);
+  return min + (max - min) * Math.sqrt((clamped - floor) / (ceiling - floor));
+}
+
+// --- de que família é uma região física -------------------------------------
+//
+// M45a, §1.1. A família vem no ficheiro, escrita pelo importador a partir da
+// lista fechada de `FEATURECLA` (tools/import/features.mjs); aqui está a mesma
+// lista outra vez, e está por uma razão: **`data/` é entrada não confiável**
+// (CLAUDE.md) e isto vai parar a um atributo `class` no DOM. Um `kind` que esta
+// lista não tenha desenha na família por omissão e nunca numa classe sua.
+//
+// `outline` — a família por omissão, o que as dezassete classes eram todas
+// antes de M45a — não está aqui: é o que uma feature sem `kind` desenha, e o
+// importador não a escreve por isso mesmo.
+const KINDS = Object.freeze(['relief', 'cover', 'hollow']);
+
+const kindOf = (feature) => {
+  const kind = feature?.kind ?? feature?.properties?.kind;
+  return typeof kind === 'string' && KINDS.includes(kind) ? kind : null;
+};
 
 // O que uma camada desenhou, num texto. Igual, não se reconstrói nada: mexer a
 // banda, seleccionar um acontecimento ou mudar o agrupamento não pode
@@ -98,8 +148,9 @@ const zlOf = (feature) => {
   return typeof zl === 'number' ? zl : null;
 };
 
-// A altura de um pico, em metros, onde a fonte a dá. É o peso de um pico entre
-// os outros acidentes físicos (`labelCandidates` abaixo) e mais nada.
+// A altura de um pico, em metros, onde a fonte a dá. Desde M45a é o raio a que
+// o pico é desenhado (`peakRadius`) e o desempate do seu peso entre os outros
+// acidentes físicos (`labelCandidates` abaixo), e mais nada.
 const elevationOf = (feature) => {
   const value = feature?.elevation ?? feature?.properties?.elevation;
   return typeof value === 'number' ? value : null;
@@ -252,6 +303,13 @@ export function createBaseLayer(group, projection, {
   const paths = new Map();
   const boxes = new Map();
   const thresholds = new Map();
+  // O raio de um ponto desta camada, em unidades da página e antes de ser
+  // dividido pelo zoom. Uma cidade é do tamanho da tabela; um pico é da sua
+  // própria altura (M45a). Saber quão largo é um ponto desta camada é assunto
+  // desta camada — é o que `labelCandidates` já dizia da âncora do nome.
+  const radiusOf = (feature) => (id === 'mountains'
+    ? peakRadius(elevationOf(feature))
+    : (DOT[id] ?? DEFAULT_DOT));
   // Os ficheiros por que esta camada está à espera. `load` já junta dois
   // pedidos do mesmo ficheiro num só; isto é para não pendurar um `onReady` por
   // cada render que passa enquanto o pedido está no ar.
@@ -271,6 +329,12 @@ export function createBaseLayer(group, projection, {
   // está no ecrã: é a mesma passagem do `draw` que a enche, e quem decide o
   // que cabe é o colocador, uma vez, em `map.js` (labels.js).
   let labelled = [];
+  // O raio de cada círculo desenhado, na ordem por que foram pendurados. Uma
+  // camada de pontos deixou de ter um raio só em M45a, por isso `resize` não
+  // pode escrever o mesmo número em todos os nós: escreve o que cada um é.
+  // Uma lista paralela e não um atributo a mais no DOM — é a mesma passagem
+  // do `draw` que a enche, e os filhos do grupo estão pela mesma ordem.
+  let radii = [];
   // Os registos de lugar que os ficheiros em mão nomeiam, desenhados ou não.
   let placesHeld = new Set();
   let lastK = 1;
@@ -353,7 +417,6 @@ export function createBaseLayer(group, projection, {
     // dado de fora, porque a camada não conhece o atlas — e `year` é o extremo
     // da janela, que é o ano por que um nome datado é escolhido.
     labelCandidates({ priority = 1, placeOf = () => null, weightOf = null, year = null } = {}) {
-      const gap = geometry === 'point' ? ((DOT[id] ?? DEFAULT_DOT) + 2) / lastK : 0;
       const candidates = [];
       for (const entry of labelled) {
         // O nome aparece depois do ponto e nunca antes: é o que `zl` quer
@@ -363,6 +426,10 @@ export function createBaseLayer(group, projection, {
         const historicalNames = place?.historicalNames ?? null;
         const face = faceName({ name: entry.name, historicalNames, year });
         if (face === null) continue;
+        // O afastamento é o raio **deste** ponto e não o da camada: desde M45a
+        // um pico é do tamanho da sua altura, e um nome ancorado ao raio médio
+        // ficava por cima do Evereste e longe de mais de uma colina.
+        const gap = geometry === 'point' ? (entry.r + 2) / lastK : 0;
         candidates.push({
           id: entry.id,
           text: shorten(face),
@@ -414,6 +481,7 @@ export function createBaseLayer(group, projection, {
           signature = null;
           count = 0;
           labelled = [];
+          radii = [];
           placesHeld = new Set();
         }
         return { drawn: 0, complete: false, cells: [] };
@@ -471,15 +539,19 @@ export function createBaseLayer(group, projection, {
   };
 
   function resize(k) {
-    const value = ((DOT[id] ?? DEFAULT_DOT) / k).toFixed(3);
-    for (const el of group.childNodes) {
-      if (el.getAttribute && el.getAttribute('r') !== value) el.setAttribute('r', value);
+    const children = group.childNodes;
+    for (let i = 0; i < children.length; i += 1) {
+      const el = children[i];
+      if (!el.getAttribute) continue;
+      const value = ((radii[i] ?? DEFAULT_DOT) / k).toFixed(3);
+      if (el.getAttribute('r') !== value) el.setAttribute('r', value);
     }
   }
 
   function draw(files, tolerance, k, covered) {
     group.replaceChildren();
     labelled = [];
+    radii = [];
     placesHeld = new Set();
     // Uma feature que chega em mais do que uma célula — um lago e uma região
     // física são escritos inteiros em todas as células que a sua caixa toca —
@@ -528,6 +600,7 @@ export function createBaseLayer(group, projection, {
       const el = element(file, index, feature, tolerance, k);
       if (!el) continue;
       group.appendChild(el);
+      if (geometry === 'point') radii.push(radiusOf(feature));
       remember(feature);
       drawn += 1;
     }
@@ -564,6 +637,10 @@ export function createBaseLayer(group, projection, {
       weight: id === 'cities'
         ? (typeof feature.pop === 'number' ? feature.pop : 0)
         : -zl + (elevation === null ? 0 : Math.min(Math.max(elevation, 0), 9_999) / 10_000),
+      // O raio do ponto que este nome nomeia, para o afastamento da âncora.
+      // Zero onde não há ponto nenhum desenhado: um rio, um lago e uma região
+      // física são nomeados no seu próprio ponto de etiqueta e sem folga.
+      r: geometry === 'point' ? radiusOf(feature) : 0,
       x,
       y,
     });
@@ -576,13 +653,20 @@ export function createBaseLayer(group, projection, {
       const [x, y] = projection.project([lon, lat]);
       const name = nameOf(feature);
       return svg('circle', {
-        cx: x.toFixed(2), cy: y.toFixed(2), r: ((DOT[id] ?? DEFAULT_DOT) / k).toFixed(3),
+        cx: x.toFixed(2), cy: y.toFixed(2), r: (radiusOf(feature) / k).toFixed(3),
       }, name ? [svgTitle(name)] : []);
     }
     const d = pathFor(file, index, feature, tolerance);
     if (!d) return null;
     // `fill-rule` para os polígonos, porque um lago com uma ilha lá dentro é um
     // anel dentro de outro e a ilha tem de ficar por encher.
-    return svg('path', geometry === 'polygon' ? { d, 'fill-rule': 'evenodd' } : { d });
+    const attributes = geometry === 'polygon' ? { d, 'fill-rule': 'evenodd' } : { d };
+    // E a família em que esta feature é desenhada, onde o ficheiro traz uma e
+    // é uma das que existem (M45a). A folha de estilo desenha `ground-relief`,
+    // `ground-cover` e `ground-hollow`; tudo o resto — e tudo o que `kindOf`
+    // não reconhece — fica com a regra que a camada já tinha.
+    const kind = kindOf(feature);
+    if (kind !== null) attributes.class = `ground-${kind}`;
+    return svg('path', attributes);
   }
 }

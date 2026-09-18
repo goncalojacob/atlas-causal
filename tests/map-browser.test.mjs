@@ -1085,8 +1085,12 @@ test('the base map is drawn under the territories and over the coastlines', { sk
     assert.ok(seen.land < seen.base, 'over the coastlines: a river inside the land is the point');
     assert.ok(seen.base < seen.presences, 'under the territories: a border is a claim, a river is the ground');
     assert.ok(seen.base < seen.events, 'and under the marks');
-    // One group per layer of `manifest.base.layers`, in the manifest's order.
-    assert.deepEqual(seen.groups, ['coast', 'rivers', 'lakes', 'physical', 'mountains', 'cities']);
+    // One group per layer of `manifest.base.layers`, in the manifest's order —
+    // with the one exception M45a made: **the ground goes under the water.**
+    // The physical regions have a tint since M45a and they are the only base
+    // layer that fills open land, so drawn where the manifest names them, after
+    // the lakes, a desert's wash would pass over the Nile.
+    assert.deepEqual(seen.groups, ['physical', 'coast', 'rivers', 'lakes', 'mountains', 'cities']);
     // A river is not a control.
     assert.equal(seen.pointerEvents, 'none');
   });
@@ -1370,6 +1374,63 @@ test('turning rivers off empties its group and asks for nothing, and back on dra
     // Everything on again is the default, and the default writes no link.
     assert.equal(await page.eval('return new URLSearchParams(location.search).get("layers");'), null,
       'back to the default, and the link says nothing');
+  });
+});
+
+// M45a. What the styling is actually for, over the repository's own data and
+// not over a fixture: at Iberia the ground is drawn in more than one family,
+// the peaks are drawn at more than one size, and neither of them is painted
+// over the borders — the whole argument the owner made is that relief is what
+// a frontier moved *around*, so it has to be underneath it.
+test('the ground is drawn in its families, the peaks at their heights, and both under the borders', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url(PORTUGAL_AT_8), 'return Boolean(document.querySelector("#map .layer-base-physical path"));');
+    await settledBase(page);
+    const seen = await page.eval(`
+      const ground = [...document.querySelectorAll('#map .layer-base-physical path')];
+      const peaks = [...document.querySelectorAll('#map .layer-base-mountains circle')];
+      const groups = [...document.querySelectorAll('#map .layer-base > g')]
+        .map((el) => el.getAttribute('class').replace('layer layer-base-', ''));
+      return {
+        drawn: ground.length,
+        families: [...new Set(ground.map((el) => el.getAttribute('class')))].sort(),
+        radii: [...new Set(peaks.map((el) => el.getAttribute('r')))].sort(),
+        // What the relief family is actually painted with, read off the
+        // stylesheet as the browser resolved it.
+        relief: (() => {
+          const el = ground.find((p) => p.getAttribute('class') === 'ground-relief');
+          if (!el) return null;
+          const style = getComputedStyle(el);
+          return { fill: style.fill, fillOpacity: style.fillOpacity, dash: style.strokeDasharray };
+        })(),
+        physicalAt: groups.indexOf('physical'),
+        riversAt: groups.indexOf('rivers'),
+        lakesAt: groups.indexOf('lakes'),
+      };`);
+    assert.ok(seen.drawn > 0, `the physical layer is drawn (${seen.drawn})`);
+    // More than one family on the screen is the whole of M45a's §1.1: before
+    // it, all seventeen classes were the same dashed hairline.
+    assert.ok(seen.families.length > 1,
+      `Iberia shows more than one family of ground: ${JSON.stringify(seen.families)}`);
+    assert.ok(seen.families.includes('ground-relief'),
+      `the Iberian ranges are relief: ${JSON.stringify(seen.families)}`);
+    // Every class on the map is one of the three the stylesheet draws, or
+    // none at all — `data/` is untrusted input and this is a class attribute.
+    for (const family of seen.families) {
+      assert.ok(family === null || ['ground-relief', 'ground-cover', 'ground-hollow'].includes(family),
+        `${family} is a family the stylesheet has`);
+    }
+    // A tint and not a wash: the territories are drawn at 0.62 of a hue and
+    // the loudest ground on the map is under half that.
+    assert.ok(Number(seen.relief.fillOpacity) > 0 && Number(seen.relief.fillOpacity) <= 0.5,
+      `relief is a tint, not a wash: ${seen.relief.fillOpacity}`);
+    assert.ok(seen.relief.dash === 'none' || seen.relief.dash === '',
+      `a ridge has an edge: ${seen.relief.dash}`);
+    // §1.2: a peak of 8,848 m and a hill of 400 m stopped being the same dot.
+    assert.ok(seen.radii.length > 1, `the peaks are drawn at more than one size: ${JSON.stringify(seen.radii)}`);
+    // And the ground is under the water, which is what the tint made necessary.
+    assert.ok(seen.physicalAt < seen.riversAt && seen.physicalAt < seen.lakesAt,
+      `the ground is painted before the rivers and the lakes: ${seen.physicalAt} / ${seen.riversAt} / ${seen.lakesAt}`);
   });
 });
 

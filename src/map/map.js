@@ -232,9 +232,9 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   let baseIn = 0;
   const baseLayers = (atlas.baseLayers ?? []).map((layer) => {
     const group = svg('g', { class: `layer layer-base-${layer.id}` });
-    baseGroup.appendChild(group);
     return {
       id: layer.id,
+      group,
       layer: createBaseLayer(group, projection, {
         id: layer.id,
         geometry: layer.geometry,
@@ -249,6 +249,24 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       }),
     };
   });
+  // A ordem por que são pendurados é a do manifesto, com uma excepção: **o
+  // chão fica por baixo da água.** Até M45a nenhuma camada de base enchia
+  // nada em terra aberta, por isso a ordem do manifesto não decidia coisa
+  // nenhuma; a partir de M45a as regiões físicas têm uma tinta, e desenhadas
+  // na posição do manifesto — a seguir aos lagos — passavam uma mancha de
+  // deserto por cima do Nilo. Um rio dentro de um deserto é precisamente o
+  // que se quer ver, que é o argumento por que o mapa de base está por baixo
+  // dos territórios e por cima da costa.
+  //
+  // É ordem de pintura e não uma ficha nem um controlo: `manifest.base` não
+  // muda, a lista de camadas não muda, e cada camada continua a ser a linha
+  // que o controlo já tinha.
+  const GROUND = Object.freeze(['physical']);
+  for (const { group } of [...baseLayers].sort(
+    (a, b) => (GROUND.includes(a.id) ? 0 : 1) - (GROUND.includes(b.id) ? 0 : 1),
+  )) {
+    baseGroup.appendChild(group);
+  }
 
   // Pan and zoom live here, not in the state: the URL carries what the user
   // is looking at in history, not how far they scrolled.
