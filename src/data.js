@@ -23,7 +23,7 @@ import { byActor, decodeGrounds } from './grounds.js';
 import { narrativeEventIds } from './narrative.js';
 import { extent as intervalExtent } from './util/dates.js';
 import { centuryCounts, opensOn } from './util/window.js';
-import { attributePeriod, attributeShardKey, periodOfEdge } from './explanations.js';
+import { attributePeriod, attributeShardKey, attributeSpan, periodOfEdge, periodsTouched } from './explanations.js';
 // The index's column tables, read backwards here and forwards by the build.
 import {
   ATTRIBUTE_COLUMNS, CORE_COLUMNS, PRESENCE_KINDS, SPINE_KINDS,
@@ -1128,27 +1128,48 @@ export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }
   const byKey = new Map();
   const shardOfRecord = new Map();
   const shardOfId = new Map();
+  const shardsOfRecord = new Map();
+  const shardsOfId = new Map();
   const recordsByShard = new Map();
+
+  const shards = manifest?.attributeShards ?? [];
+  // The centuries the index has, in the manifest's own order — the same list
+  // the build filed the rows against, which is what keeps the two from coming
+  // to disagree about which files a record is in (M58).
+  const centuries = shards.filter((shard) => shard.from !== null)
+    .map(({ from, to }) => ({ from, to }));
   for (const kind of SPINE_KINDS) {
     for (const record of topology[`${kind}s`] ?? []) {
       const key = `${kind}:${record.id}`;
       bounds.set(key, boundsOf(record));
       byKey.set(key, record);
       fillFallbacks(record, bounds.get(key));
-      // Which shard the record's attributes are in, by the same table the build
-      // files them with — an event by the year it begins in, an edge by the
-      // year its cause begins in, a place in the one shard of places
-      // (index2-plan, A8). The core carries every field that table reads, which
-      // is what lets the loader answer before a single shard has landed.
-      const shard = attributeShardKey(attributePeriod(kind, record, eventsById));
-      shardOfRecord.set(key, shard);
-      if (!shardOfId.has(record.id)) shardOfId.set(record.id, shard);
-      if (!recordsByShard.has(shard)) recordsByShard.set(shard, []);
-      recordsByShard.get(shard).push(record);
+      // Which shards the record's attributes are in, by the same table the
+      // build files them with — an event by every century its interval touches,
+      // an edge by its cause's, a place in the one shard of places
+      // (index2-plan, A8; M58). The core carries every field that table reads,
+      // which is what lets the loader answer before a single shard has landed.
+      //
+      // `shardOfRecord` is the one it *begins* in and is still one key: it is
+      // what a card asks for and what `record()` waits on, and a card that
+      // asked for five centuries of an actor's life would be holding five.
+      // `shardsOfRecord` is all of them, and it is what says whether a record
+      // has its attributes in hand — a bar drawn in the 1800s out of the 1800s
+      // shard is named, whatever century its event began in.
+      const home = attributeShardKey(attributePeriod(kind, record, eventsById));
+      const touched = periodsTouched(attributeSpan(kind, record, eventsById), centuries);
+      const keys = touched.length === 0 ? [home] : touched.map((period) => attributeShardKey(period));
+      shardOfRecord.set(key, home);
+      shardsOfRecord.set(key, keys);
+      if (!shardOfId.has(record.id)) shardOfId.set(record.id, home);
+      if (!shardsOfId.has(record.id)) shardsOfId.set(record.id, keys);
+      for (const shard of keys) {
+        if (!recordsByShard.has(shard)) recordsByShard.set(shard, []);
+        recordsByShard.get(shard).push(record);
+      }
     }
   }
 
-  const shards = manifest?.attributeShards ?? [];
   const shardByKey = new Map(shards.map((shard) => [shard.key, shard]));
   const loaded = new Map();
   const order = [];
@@ -1168,7 +1189,10 @@ export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }
   // Counting the changes cannot say four twice about two different atlases.
   let arrived = 0;
   const keyOf = (shard) => (typeof shard === 'string' ? shard : shard?.key ?? null);
-  const attributesLoaded = (id) => loaded.has(shardOfId.get(id) ?? null);
+  // **Any** of the shards the record is filed in, not the one it begins in: a
+  // record whose interval reaches into four centuries has the same row in four
+  // files, and one of them in hand is its attributes in hand (M58).
+  const attributesLoaded = (id) => (shardsOfId.get(id) ?? []).some((key) => loaded.has(key));
   const touch = (key) => {
     const at = order.indexOf(key);
     if (at !== -1) order.splice(at, 1);
@@ -1180,10 +1204,16 @@ export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }
     for (const key of [...order]) {
       if (order.filter((k) => (pins.get(k) ?? 0) === 0).length <= ATTRIBUTE_SHARD_CAP) break;
       if ((pins.get(key) ?? 0) > 0) continue;
-      for (const record of recordsByShard.get(key) ?? []) {
-        stripAttributes(record, bounds.get(`${record.kind ?? 'edge'}:${record.id}`));
-      }
       loaded.delete(key);
+      for (const record of recordsByShard.get(key) ?? []) {
+        // A record filed in several centuries is carried by each of them, so
+        // dropping one shard strips it only when no shard still in hand has its
+        // row. `loaded` is deleted first so that this reads the atlas as it will
+        // be and not as it was (M58).
+        const recordKey = `${record.kind ?? 'edge'}:${record.id}`;
+        if ((shardsOfRecord.get(recordKey) ?? []).some((other) => loaded.has(other))) continue;
+        stripAttributes(record, bounds.get(recordKey));
+      }
       order.splice(order.indexOf(key), 1);
       arrived += 1;
       dropped = true;

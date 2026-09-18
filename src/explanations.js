@@ -114,6 +114,61 @@ export function attributeShardName(key, hash) {
   return `attributes-${key}-${hash}.json`;
 }
 
+// ─── Every century a record reaches into (M58) ─────────────────────────────
+//
+// `attributePeriod` above answers "which century does this record *begin* in",
+// and until M58 that was the only answer the build had: a row went into the
+// shard of its start century and nowhere else. A view, meanwhile, fetches the
+// shards its **window** covers. The two disagree the moment a record is longer
+// than a century: the slave trade to Brazil begins in the 1500s and runs to the
+// 1860s, so a reader of the 1800s is drawn a bar — correctly, it is in the
+// window — whose name is in a file that window never asks for, and the bar says
+// "still loading" for ever (M50, deviation 779; docs/m58-shards.md).
+//
+// So the filing key becomes the filing *keys*: a row goes in every century its
+// interval touches. 23 events and 1,279 records of every kind reach out of
+// their own century on this corpus, which is a third of it.
+//
+// The interval is the record's own, read through `extent` like the start bound
+// is, so one function decides both and they cannot come to disagree. An edge is
+// filed by its cause, so its interval is the cause's; a narrative's is the
+// window it says it is about; a place and a source have no year and are one
+// shard each, as they were.
+export function attributeSpan(kind, record, events) {
+  const period = attributePeriod(kind, record, events);
+  if (typeof period === 'string' || period === null) return null;
+  if (kind === 'narrative') {
+    const from = record?.window?.from;
+    const to = record?.window?.to;
+    if (!Number.isInteger(from)) return null;
+    const min = extent({ start: from, end: from }).min;
+    return { min, max: Number.isInteger(to) ? extent({ start: to, end: to }).max : min };
+  }
+  const source = kind === 'edge' ? (events.get?.(record?.from) ?? null) : record;
+  if (!source) return null;
+  try {
+    const { min, max } = extent(source.when);
+    return min === null || min === undefined ? null : { min, max };
+  } catch {
+    return null;
+  }
+}
+
+// The shards of `periods` that interval reaches into. **An interval with no end
+// reaches into every one of them after it began**, because that is already how
+// `overlaps()` draws it: a polity that has not fallen is in every window after
+// its founding, and 250 records here are of that shape.
+//
+// `periods` is the list of centuries the index has — the groups the build made,
+// or the manifest's own `attributeShards` in the browser — so that the build and
+// the loader read one list and file one record in one set of files.
+export function periodsTouched(span, periods) {
+  if (span === null) return [];
+  const { min } = span;
+  const max = span.max === null || span.max === undefined ? null : span.max;
+  return periods.filter((period) => period.from <= (max === null ? Infinity : max) && period.to >= min);
+}
+
 // `history-<kind>-<key>-<hash>.json` (I5). The kind is in the name as well as
 // the key because a history shard holds one kind and one period, where an
 // attribute shard holds one period of every kind: a reviewer opens a record,

@@ -18,7 +18,7 @@ import {
 } from '../spine.js';
 // The filing key, one table for the attribute shards here and the history
 // shards of I5 (docs/index2-plan.md, A8).
-import { attributePeriod, attributeShardKey } from '../explanations.js';
+import { attributePeriod, attributeShardKey, attributeSpan, periodOf, periodsTouched, PERIOD } from '../explanations.js';
 import { astronomicalBounds } from '../util/dates.js';
 // The number the *reader* refuses an unknown value of, which is why it lives
 // there and is imported here rather than written out twice (data.js).
@@ -771,11 +771,50 @@ export function buildCore(topology) {
   });
 }
 
+// The centuries the index has, in year order: from the one the earliest year in
+// the corpus falls in to the one the latest falls in, with no gaps. The gaps
+// matter because a record is filed in every century it *touches* and not only
+// the one it begins in (M58), and a century nothing begins in is one a long
+// record still reaches through — 1200–1299 and 1300–1399 on this corpus are
+// exactly that. A century no record touches at all never becomes a group below
+// and so never becomes a file.
+//
+// The same list the manifest then carries, which is the list `data.js` reads:
+// one list, so the build and the loader cannot come to disagree about which
+// files a record is in (index2-plan, A8).
+function centuriesOf(topology, events) {
+  let first = null;
+  let last = null;
+  for (const kind of SPINE_KINDS) {
+    for (const record of topology[`${kind}s`] ?? []) {
+      const span = attributeSpan(kind, record, events);
+      if (span === null) continue;
+      for (const year of [span.min, span.max]) {
+        if (!Number.isInteger(year)) continue;
+        if (first === null || year < first) first = year;
+        if (last === null || year > last) last = year;
+      }
+    }
+  }
+  if (first === null) return [];
+  const out = [];
+  for (let year = periodOf(first).from; year <= periodOf(last).from; year += PERIOD) out.push(periodOf(year));
+  return out;
+}
+
 // One file per century, plus the places and the records with no year at all.
 // Every list is in the same id order the core's is, so a shard's rows and the
 // core's records are two readings of one corpus; a kind with nothing in a
 // century is an empty list in that shard, which is what makes every file say
 // the same about its own shape.
+//
+// A record's row is in **every century its interval touches**, not only the one
+// it begins in: until M58 a bar drawn in a window its event reached into from an
+// earlier century had its name in a file that window never asked for, and said
+// "still loading" for ever (docs/m58-shards.md). What that costs is 2,096 rows
+// written more than once, 51 KB gzipped over the corpus, and 6 KB of it on the
+// window the atlas opens on — against a second fetch on every window, for every
+// reader, for the answer that keeps one row per record.
 //
 // The order of the files is the order they are named in the manifest: the
 // centuries in year order, then the two that answer no year — because those
@@ -784,23 +823,31 @@ export function buildAttributeShards(topology) {
   const events = new Map((topology.events ?? []).map((e) => [e.id, e]));
   const cites = citesCountByRecord(topology.sources);
   const citesCount = (kind, id) => cites.get(`${kind}:${id}`) ?? 0;
+  const centuries = centuriesOf(topology, events);
 
   const groups = new Map();
+  const fileIn = (kind, record, period) => {
+    const key = attributeShardKey(period);
+    let group = groups.get(key);
+    if (!group) {
+      group = {
+        key,
+        from: typeof period === 'object' && period !== null ? period.from : null,
+        to: typeof period === 'object' && period !== null ? period.to : null,
+        records: new Map(SPINE_KINDS.map((k) => [k, []])),
+      };
+      groups.set(key, group);
+    }
+    group.records.get(kind).push(record);
+  };
   for (const kind of SPINE_KINDS) {
     for (const record of topology[`${kind}s`] ?? []) {
-      const period = attributePeriod(kind, record, events);
-      const key = attributeShardKey(period);
-      let group = groups.get(key);
-      if (!group) {
-        group = {
-          key,
-          from: typeof period === 'object' && period !== null ? period.from : null,
-          to: typeof period === 'object' && period !== null ? period.to : null,
-          records: new Map(SPINE_KINDS.map((k) => [k, []])),
-        };
-        groups.set(key, group);
-      }
-      group.records.get(kind).push(record);
+      const span = attributeSpan(kind, record, events);
+      const touched = periodsTouched(span, centuries);
+      // A place, a source and a record whose year will not parse have no span
+      // and are in the one shard `attributePeriod` names, as they always were.
+      if (touched.length === 0) fileIn(kind, record, attributePeriod(kind, record, events));
+      else for (const period of touched) fileIn(kind, record, period);
     }
   }
 
