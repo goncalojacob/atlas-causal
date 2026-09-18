@@ -244,6 +244,50 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=1400&actor=brazil&from=1900&to=2030',
     width: 1440, height: 1400,
     what: 'a territory selected: everything that happened on its ground, faded where the band does not reach' },
+  // M45a: the oldest request in the file, answered. The owner asked for a
+  // topographical map on 16 September and, when it was argued that relief
+  // would compete with the territories, said the thing that settled it —
+  // relief is how a reader understands that a border moves around a
+  // geographical feature. So all four of these are taken **with the
+  // territories on**, which is the whole question: the ground has to be
+  // legible *underneath* a frontier and never instead of it. Nothing else
+  // changed about what is fetched — these are the same files M37 drew.
+  //
+  // The events are off in all four. At this scale a mark is a mark on a
+  // border, and what these are of is the ground the border sits on.
+  //
+  // Three zooms, and the third twice because the two cases argue different
+  // halves of it: Iberia is a frontier that follows rivers — the Minho, the
+  // Douro, the Guadiana — and the Alps and the Andes are frontiers that follow
+  // a ridge. All through `frame.html`, which marks the introduction as seen: a
+  // browser started for one screenshot has never been anywhere (deviation 709).
+  { name: 'm45a-ground-world', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&layers=land,territories,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'the whole world: the ranges of the planet as relief, the deserts as cover, under the colonial borders' },
+  { name: 'm45a-ground-andes', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&bbox=-82,-56,-34,13&layers=land,territories,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'a continent: the Andes down the spine of South America, and Chile and Argentina divided along them' },
+  { name: 'm45a-ground-iberia', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&bbox=-10.5,35.8,-0.5,44.2&layers=land,territories,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'a border on rivers: Portugal and Spain along the Minho, the Douro and the Guadiana, with the ranges between them' },
+  { name: 'm45a-ground-alps', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&bbox=3.5,42.8,17.5,49.2&layers=land,territories,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'a border on a ridge: France, Switzerland, Austria and Italy around the Alps, peaks drawn at their heights' },
+  // And the fifth, which is the only one with the territories **off**: the same
+  // box as `m45a-ground-andes`, so the two go side by side and the difference
+  // between them is the one thing the owner and I disagreed about. It is the
+  // measure of "does not compete": the ground is a whole topography on its own
+  // — the cordillera, the Amazon basin as a hollow, the Gran Chaco, Patagonia
+  // — and under eight hues at 0.62 what survives is the ridge the border sits
+  // on, which is exactly what was asked for and no more.
+  { name: 'm45a-ground-bare-andes', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&bbox=-82,-56,-34,13&layers=land,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'the same continent with the territories off: the ground alone, which is what the washes are drawn over' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
