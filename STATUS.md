@@ -11630,6 +11630,166 @@ before this milestone.
      over 10,632 records, the same 1,208 warnings as before, and the index is
      byte-identical.
 
+## M61 — a label says as much as the room allows
+
+**The owner, 18 September, with a screenshot of the graph zoomed in:** *"When I
+zoom in on the graph the text remains too small"*. In the picture
+`The depopulation of indigen…` sits with empty space to its right, and so does
+half the screen. The text was not too small. It was needlessly abbreviated:
+
+```js
+function shorten(text, chars = LABEL_CHARS) { … }   // LABEL_CHARS = 28, at every zoom
+```
+
+A label holds its size **on screen** at every zoom, as the map's marks do —
+that is right, and it has not changed — so in the picture's own units it gets
+smaller the further in the reader is, while the gaps between the nodes stay
+exactly where the arrangement put them. Zooming in opens room and the constant
+never spent it.
+
+### What a label is cut to now
+
+`src/graph-view/label-fit.js`, pure and new: **the smaller of the room around
+the node and the slice of the picture a label has always been allowed, counted
+in characters at the zoom it is drawn at** — and the whole name when the whole
+name fits in that.
+
+- **The room** is the nearest label already placed in the same line of text,
+  the mark of a neighbour that is *itself going to be named*, and the edge of
+  the pane. Cutting and placing are one act now: a label cut to fit beside its
+  neighbour cannot then be drawn over it, and a name that would run off the
+  screen is cut where the screen ends instead of being clipped mid-word.
+- **The slice** is the one part of the old rule worth keeping. 28 characters at
+  `k = 1` is a width — about 190 units of the picture — and a label never takes
+  more of the picture than that. At the world view it binds and nothing grows;
+  at `k = 2` the same slice is 56 characters on screen, at `k = 8` it is 230.
+
+The zoom gate is untouched (`LABEL_ALL_ZOOM`, `LABEL_LIMIT`), no font, size,
+token or hex value was added or changed, and `lanes.js`, `cluster.js` and
+`layout*.js` were not opened.
+
+### The counts, before and after
+
+Headless Chromium at 1440 × 900 on `?view=graph&from=1900&to=1999`, three
+zooms reached with the wheel held over the longest-named mark on screen, and
+the arrival view as a fourth. The whole measurement is `docs/m61-labels.md`;
+the pictures are `docs/screens/m61-labels-{world,continent,close}.png`.
+
+| | world `k=1` | arrival `k=2` | continent `k=3.5` | handful `k=8` |
+| --- | --- | --- | --- | --- |
+| truncated | 6 → 7 of 14 | 60 → 35 | **27 of 55 → 14 of 45** | **10 of 19 → 2 of 17** |
+| share cut | 43 % → 50 % | 49 % → 47 % | **49 % → 31 %** | **53 % → 12 %** |
+| longest name drawn | 28 → 28 | 28 → **47** | 28 → **59** | 28 → **59** |
+| labels over labels | 0 → 0 | **136 → 0** | **14 → 0** | **3 → 0** |
+| labels off the pane | 2 → 0 | 12 → 0 | 6 → 0 | 3 → 0 |
+| labels drawn | 14 → 14 | 123 → 74 | 55 → 45 | 19 → 17 |
+
+**The complaint is answered where it was made**: eight times in, one label in
+eight is cut where it was one in two, and `The base reforms rally at the
+Central do Brasil, 1964` is drawn whole. **The world view is the picture it
+was**: the same fourteen names, none longer than the constant they were cut at,
+and the two that shrank are the two that used to run off the pane.
+
+### What first paint costs
+
+Nothing. Median of seven loads and of twenty-four wheel notches, before and
+after, on the same machine and the same instrument:
+
+| | before | after |
+| --- | ---: | ---: |
+| first mark in the DOM | 242 ms, 234 ms | 242 ms, 234 ms |
+| first label in the DOM | 341 ms, 270 ms | 292 ms, 281 ms |
+| one wheel notch at `k = 1` | 5.9 ms, 6.7 ms | 6.0 ms, 6.2 ms |
+| one wheel notch at `k = 3.5` | 2.1 ms | 1.8 ms, 1.9 ms |
+| one wheel notch at `k = 8` | 0.7 ms | 0.6 ms |
+
+The labels are drawn where they were drawn: the same loop over the same
+candidates, and what it does inside it — two scans of what is already placed
+rather than one, plus a scan of the marks that will be named — is of the order
+of the collision test it replaces. The notches at the closer zooms fall,
+because the labels that used to be drawn over a neighbour are not built at all.
+
+### Deviations
+
+860. **The room is the labels and the pane's edge, never the marks.** All three
+     candidate obstacles were measured first (`docs/m61-labels.md`, §3). At the
+     world view the nearest *mark* in a label's own line of text is between
+     nought and seven characters away for eleven of the fourteen labels: a rule
+     that stopped a label at the next mark would have cut eleven of fourteen
+     names to nothing. The graph has always written a name across marks that
+     carry no name of their own, and the complaint was that names are short,
+     not that they are bold. The one mark that does stop a label is the mark of
+     a node that is going to be named itself, which has to be left a side to
+     write from.
+
+861. **A label with no room on either side is not drawn at all, at any zoom.**
+     Before, at or above `LABEL_ALL_ZOOM`, it was drawn over its neighbour —
+     deliberately, on the ground that "a name that disappeared because a
+     neighbour got there first would be the wrong kind of tidy". Measured, that
+     ground had given way: 136 pairs of labels were on top of each other at the
+     arrival view alone. The brief's "a label must never overlap its neighbour"
+     decides it, and it costs names — 123 labels become 74 there, 55 become 45,
+     19 become 17. The mark keeps its title, so the name is one hover away, and
+     the reader who wants it closer has the wheel.
+
+862. **The box carries slack: a tenth, and one character.** An em is an average
+     and a name is not — digits, capitals and the ellipsis are all wider than
+     one. With the box at `EM` exactly, the arithmetic said two labels were
+     clear and the screen showed them 2.8 px into each other at the arrival
+     view. Measured against `getBoundingClientRect` across four views, a
+     label's letters run up to about a tenth over the average, and a short one
+     up to a character over on top of that; the box holds both, and the
+     overlapping pairs are nil in every view tried. `EM` itself is untouched —
+     it is the map's estimate too (`src/map/labels.js`).
+
+863. **A label goes to the left of its mark when the left shows more of the
+     name.** The old rule flipped a label to the other side when the right
+     collided; the new one reads that through the room — a side a label does
+     not fit on is a side with no room — and, where both sides have room, takes
+     the one that shows more of the name. It is the same decision generalised,
+     and it is why a mark near the right edge of the pane is now named
+     leftwards instead of being written off the screen.
+
+864. **The arrival view is a fourth measurement the brief did not ask for.**
+     The three zooms it names are reached with the wheel; the picture most
+     readers actually see is the one `fitToWindow` leaves them at, `k = 2`, and
+     it is where both faults were worst. It is measured and reported with the
+     other three rather than instead of them.
+
+865. **The screenshots needed a zoom no link can carry.** Pan and zoom are
+     deliberately not URL state — the URL carries what the reader is looking
+     at, not how far they have wheeled into it — so `tools/screens.mjs`, which
+     drives a browser from its command line and nothing else, could not ask for
+     a zoomed graph. `docs/screens/frame.html` takes `zoom` and `at` now and
+     makes the gesture a reader would, inside its own iframe: a double click
+     back to the world view, then notches of the wheel held over one mark.
+     Neither parameter reaches the atlas. The three shots were taken with
+     `--only`, so no other picture was rewritten.
+
+866. **The paper behind a label grows with the zoom and the letters do not.**
+     `.graph .node-label` carries `stroke-width: 3` in `src/style.css`, inside
+     the group the zoom scales: at `k = 8` the halo is drawn eight times as
+     thick as at the world view behind text of the same size, which is the blot
+     around every name in `m61-labels-close.png`. It is older than this
+     milestone — the before-and-after shots have the same blot — and it is a
+     style, which this milestone was told not to touch. One number, whenever
+     the owner wants it.
+
+867. **The branch's check is red for the reason deviation 844 measured, and
+     this run saw it once more.** The full suite here: **1,702 tests, 1,700
+     passing, 0 skipped**, with two failures. One was real and is fixed in the
+     same commit as the change — `tests/site.test.mjs` requires every module
+     under `src/` to be named in CLAUDE.md's layout tree, and
+     `src/graph-view/label-fit.js` was new. The other was
+     `tests/spine-pages.test.mjs`, "the source card fetches its own citer file
+     and draws the rows", timing out on a wait; that file run on its own is
+     21 of 21 green on the same head. It is the browser suite under load, as
+     844 says, and not this milestone.
+
+868. **No record was written and no historical claim was made.** Nothing under
+     `data/` was touched; `node tools/validate.mjs --index` reports 0 errors
+     over 10,632 records and 5 regions, with the same 1,208 warnings as before.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
