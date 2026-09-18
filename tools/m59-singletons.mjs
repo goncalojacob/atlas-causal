@@ -45,6 +45,31 @@ function disjoint(a, b) {
   return a.maxX < b.minX || b.maxX < a.minX || a.maxY < b.minY || b.maxY < a.minY;
 }
 
+// Re-mede linhas que já existem, pelos **ids das presenças** e não pelos dos
+// actores. É o que `tests/m59.test.mjs` usa para segurar o documento ao chão,
+// e tem de continuar a funcionar depois de o milestone mexer nos registos:
+// uma junção reescreve o `actor` de todas as presenças do registo fundido e
+// tira o registo de 1885 da lista que `measure()` descobre, mas o id de uma
+// presença não se mexe — foi a mesma lição que M51 escreveu em
+// `tools/m51-overlaps.mjs`.
+export function remeasure(rows) {
+  const byId = new Map(readPresences().map((p) => [p.id, p]));
+  return rows.map(({ lastBefore, firstAfter }) => {
+    const a = byId.get(lastBefore);
+    const b = byId.get(firstAfter);
+    if (!a || !b) return { lastBefore, firstAfter, ratio: null, jaccard: null };
+    const o = overlap(geometryFor(a), geometryFor(b));
+    if (!o || o.ratio === null) return { lastBefore, firstAfter, ratio: null, jaccard: null };
+    const union = o.areaA + o.areaB - o.areaI;
+    return {
+      lastBefore,
+      firstAfter,
+      ratio: Number(o.ratio.toFixed(4)),
+      jaccard: union > 0 ? Number((o.areaI / union).toFixed(4)) : null,
+    };
+  });
+}
+
 export function measure() {
   const actors = readActors();
   const { ending, beginning } = sides(actors);
