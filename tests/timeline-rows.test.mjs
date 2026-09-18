@@ -15,10 +15,19 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { lanesThatFit, ROW_LIMITS } from '../src/timeline.js';
+import { lanesThatFit, laneHeightFor, ROW_LIMITS } from '../src/timeline.js';
 import { LANE_CAP } from '../src/lanes.js';
 
-const { AXIS_HEIGHT, MIN_ROW_HEIGHT, MIN_LANE_HEIGHT, MAX_ROWS } = ROW_LIMITS;
+const {
+  AXIS_HEIGHT, MIN_ROW_HEIGHT, MIN_LANE_HEIGHT, MAX_ROWS, ROW_HEIGHT, LANE_HEIGHT, LANE_MAX,
+} = ROW_LIMITS;
+
+// The two kinds of row, each with the height it would settle for and the floor
+// it may be squeezed to: a packed row carries no label, a named lane does.
+const KINDS = [
+  { what: 'a packed row', natural: ROW_HEIGHT, minimum: MIN_ROW_HEIGHT },
+  { what: 'a named lane', natural: LANE_HEIGHT, minimum: MIN_LANE_HEIGHT },
+];
 
 test('the row count is what the pane holds at the floor, capped by the ceiling', () => {
   // The plan's own example, which is the pane a 900 px window leaves.
@@ -52,10 +61,52 @@ test('every lane the rule allows fits under the axis at its own floor', () => {
       assert.ok(rows >= 1 && rows <= ceiling, `pane ${pane}: ${rows} lanes`);
       if (room >= floor) {
         assert.ok(rows * floor <= room, `pane ${pane}: ${rows} lanes of ${floor} in ${room}`);
-        // And the height the drawing takes is the pane's, not more.
-        const laneHeight = Math.max(floor, Math.min(floor * 2, room / rows));
+        // And the height the drawing takes is the pane's, not more — the rule
+        // itself, and not a second copy of it written out here.
+        const kind = floor === MIN_ROW_HEIGHT ? KINDS[0] : KINDS[1];
+        const laneHeight = laneHeightFor(pane, rows, kind);
         assert.ok(AXIS_HEIGHT + rows * laneHeight <= pane + 1e-9, `pane ${pane}: the drawing fits`);
+        // Since M66 it is also the pane's and not less, unless the cap is what
+        // stopped it: room left under the bottom row is room the rows could
+        // have had.
+        assert.ok(laneHeight === LANE_MAX || AXIS_HEIGHT + rows * laneHeight >= pane - 1e-9,
+          `pane ${pane}: ${rows} rows of ${laneHeight} leave ${pane - AXIS_HEIGHT - rows * laneHeight} px unused`);
       }
     }
+  }
+});
+
+// M60 gave the timeline a whole view and its rows were still sized for the
+// strip it used to be: twenty of them at 22 px under a 795 px pane, and a band
+// of empty ground under the bottom one. The rule grows them into the room now,
+// and stops at a cap so that three lanes in a tall window are three lanes and
+// not three stripes (docs/m66-rows.md).
+test('a row grows into the room going spare, as far as the cap', () => {
+  for (const kind of KINDS) {
+    assert.ok(LANE_MAX > kind.natural, `the cap is above what ${kind.what} settles for`);
+
+    // Room going spare: the row takes it rather than leaving it under the
+    // bottom one, and stops at the cap.
+    const roomy = AXIS_HEIGHT + MAX_ROWS * (LANE_MAX + 10);
+    assert.equal(laneHeightFor(roomy, MAX_ROWS, kind), LANE_MAX, `${kind.what} stops at the cap`);
+
+    // Room for more than it would settle for and less than the cap: all of it.
+    const between = (kind.natural + LANE_MAX) / 2;
+    assert.equal(laneHeightFor(AXIS_HEIGHT + 10 * between, 10, kind), between,
+      `${kind.what} takes the room where the room is under the cap`);
+
+    // Less room than it would settle for: squeezed, to its own floor and no
+    // further. Past that the drawing is taller than the pane and the pane
+    // scrolls, which is the rule I6 wrote and this milestone does not touch.
+    assert.equal(laneHeightFor(AXIS_HEIGHT + 10 * (kind.minimum + 1), 10, kind), kind.minimum + 1,
+      `${kind.what} shrinks to fit`);
+    assert.equal(laneHeightFor(AXIS_HEIGHT + 10, 10, kind), kind.minimum,
+      `${kind.what} stops at its floor`);
+
+    // A pane that has measured nothing is not a pane with no room in it.
+    for (const nothing of [0, null, undefined, -50, AXIS_HEIGHT]) {
+      assert.equal(laneHeightFor(nothing, 10, kind), kind.natural, `${nothing} is not a measurement`);
+    }
+    assert.equal(laneHeightFor(1000, 0, kind), kind.natural, 'nor is a drawing with no rows in it');
   }
 });

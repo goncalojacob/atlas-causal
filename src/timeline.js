@@ -102,7 +102,29 @@ export function lanesThatFit(paneHeight, floorHeight, ceiling) {
   if (room <= 0 || !(floorHeight > 0)) return ceiling;
   return Math.min(ceiling, Math.max(1, Math.floor(room / floorHeight)));
 }
-export const ROW_LIMITS = { AXIS_HEIGHT, MIN_ROW_HEIGHT, MIN_LANE_HEIGHT, MAX_ROWS, ROW_HEIGHT, LANE_HEIGHT };
+// How tall a row may grow. M60 gave the timeline the whole pane; its rows were
+// still sized for the strip it used to be, so twenty of them at 22 px left a
+// band of empty ground under the bottom one — 304 px of the 795 a 900 px
+// window gives — and it read as a drawing that had stopped early (the owner,
+// 18 September). A row takes the room going spare now, as far as this.
+//
+// Measured rather than picked: docs/m66-rows.md has the four candidates at
+// both window heights and what each does to the bar inside the row.
+const LANE_MAX = 44;
+export const ROW_LIMITS = {
+  AXIS_HEIGHT, MIN_ROW_HEIGHT, MIN_LANE_HEIGHT, MAX_ROWS, ROW_HEIGHT, LANE_HEIGHT, LANE_MAX,
+};
+
+// How tall a lane is in a pane of this height: the room under the axis shared
+// between the rows, never below the floor its kind needs, never past the cap
+// above. A pane that has measured nothing — a test with no layout behind it,
+// the first render before the panes are sized — gets the height the lane would
+// like, which is what every pane got before the pane was measured at all.
+export function laneHeightFor(paneHeight, rows, { natural, minimum, cap = LANE_MAX }) {
+  const room = Math.max(0, (paneHeight ?? 0) - AXIS_HEIGHT);
+  if (!(room > 0) || !(rows > 0)) return natural;
+  return Math.max(minimum, Math.min(Math.max(cap, natural), room / rows));
+}
 const PADDING = 0.04;
 // Two bars whose middles are closer than this are drawn as one. In pixels of
 // the lane, not years: what overlaps is a question about the drawing.
@@ -623,14 +645,14 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       natural = LANE_HEIGHT;
       minimum = MIN_LANE_HEIGHT;
     }
-    // The lanes are laid out into the height the pane has. They never grow
-    // past the height they want, and they shrink to fit down to a floor; past
-    // that the drawing is taller than the pane and the pane scrolls, which is
-    // better than a row two pixels high. The drawing is never shorter than
+    // The lanes are laid out into the height the pane has. They grow into the
+    // room it has going spare, as far as the cap above, and they shrink to fit
+    // down to a floor; past that the drawing is taller than the pane and the
+    // pane scrolls, which is better than a row two pixels high. The drawing is never shorter than
     // the pane either, so the band and its handles run its whole height and
     // there is no dead strip under the last lane.
     const rows = Math.max(lanes.length, 1);
-    laneHeight = room > 0 ? Math.max(minimum, Math.min(natural, room / rows)) : natural;
+    laneHeight = laneHeightFor(paneHeight, rows, { natural, minimum });
     // A whole number of pixels, and the last lane carried down to it. A lane
     // height that divides the pane exactly — which is what a full pane gives,
     // 337 over twenty rows — makes `rows * laneHeight` land a fraction of a
