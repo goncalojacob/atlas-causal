@@ -13,6 +13,18 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-18, after **M66** (`docs/m66-brief.md`, on `m0`): **two the owner handed
+over.** The halo behind a graph label was a stroke inside the group the zoom
+scales, so it grew with the picture while the letters held their size — 2 px at
+the world view, 12.5 px at k = 6, closing on what it exists to hold apart. One
+property, the one `.graph .node` has carried all along: **1.5 px at every
+zoom**. And the timeline's rows, still sized for the strip M60 replaced, take
+the room the pane has going spare now, to a **44 px cap**: twenty rows in the
+owner's 900 px window go from 22 px with 297 px of empty ground under them to
+**36.85 px filling the pane exactly**. The cap was measured against three others
+(`docs/m66-rows.md`); the pictures are `docs/screens/m66-*.png`. No new record,
+no new token, no new behaviour.
+
 2026-09-18, after **M65** (`docs/m65-brief.md`, on `m0`): **choosing an event is
 a filter, not a highlight.** The owner, 18 September: *"everywhere, graph, map
 and timeline you should only see the main events. Then, when you click on a
@@ -12605,6 +12617,129 @@ not offer at all.
      on the map" and the graph shades the window in its own drawing already, so
      a second band over it would be a third picture of the same thing. It is one
      call in `main.js` against a different container if the owner wants it.
+
+## M66 — two the owner handed over
+
+Neither was the owner's to spend time on and both were put to them and handed
+back, so this milestone is two changes, no new behaviour and no new record.
+
+### The halo stopped growing with the zoom
+
+A graph label holds its size on screen at any zoom — M61's rule, and the map's
+before it. **The paper band behind it did not**, because it is a stroke on the
+text and a stroke inside the group the zoom scales grows with the picture. Read
+off the drawing, the band above the letters was **2 px at the world view, 7 px
+at k = 3.5 and 12.5 px at k = 6**: six times the width it was meant to be, on
+letters that had not grown at all, and closing on them. `m61-labels-close.png`
+is what that looks like — every name sitting in a white slab.
+
+The fix is the one property `.graph .node` has carried for the same reason since
+the graph was drawn: `vector-effect: non-scaling-stroke`. The 3 is unchanged,
+because 3 is what it was always meant to be on screen. **1.5 px at k = 1, 3.5
+and 6** — the outer half of a 3 px stroke, and the same at every zoom.
+
+### The timeline's rows take the pane M60 gave them
+
+M60 gave the timeline a whole view; its rows were still sized for the strip it
+used to be. Twenty packed rows at 22 px under a 795 px pane ended **297 px above
+the bottom of it**, and the rest was drawn as one enormous last lane — a drawing
+that had stopped early.
+
+The rule keeps its shape: never below the floor a row of its kind needs, and
+past that the pane scrolls rather than draw a row two pixels high. What changed
+is that **the height a row would settle for is no longer the ceiling when there
+is room going spare**. `laneHeightFor` is the whole of it, exported so the test
+holds the rule and not a second copy of the arithmetic. No change to `lanes.js`
+or `cluster.js`: this is a height and not a re-layout, and the packing that
+never stacks what the reader is working with is untouched.
+
+**The cap is 44 px, chosen by measuring four** (`docs/m66-rows.md`). At 1440 px
+wide, on the repository's own records:
+
+| window | grouping | lane before | lane after | left under the bottom row |
+|---|---|---|---|---|
+| 900 | none, 20 rows | 22 | **36.85** | 297 → **0** |
+| 1400 | none, 20 rows | 22 | **44** (the cap) | 797 → **357** |
+| 900 | region, 5 lanes | 34 | **44** | 567 → 517 |
+| 1400 | region, 5 lanes | 34 | **44** | 1067 → 1017 |
+| 250 | none, 6 rows at the floor | 14.5 | 14.5 | unchanged |
+| 250 | a reader's own four lanes | 22 | 22 | the pane scrolls, as before |
+
+The twenty-lane worst case is the second row of that table, and it is where the
+cap bites: twenty rows in a 1400 px pane would take 61.85 px each, and a row of
+62 draws a 46 px bar for an event about 6 px wide — a single year drawn as a
+column taller than it is wide. 44 puts the bar at 28 px, above the 24 the WCAG
+2.5.8 target asks for, with the row itself at the 44 of 2.5.5. **On the 900 px
+window the owner works in the cap never binds at all**: twenty rows divide the
+pane out at 36.85 and the drawing fills it exactly.
+
+Five lanes in a very tall window is the case the cap does not fix and will not:
+a region lane 247 px tall with one bar floating in the middle of it is the three
+stripes the brief refused.
+
+### Tests
+
+`tests/graph-halo-browser.test.mjs` (2), `tests/timeline-rows.test.mjs` (+1) and
+`tests/timeline-browser.test.mjs` (+3), each in the commit with the change it
+judges. **No test pins a count or a height**: the halo is asserted as *the same
+width on screen at three zooms*, the rows as *nothing left under the bottom one
+that a row could have had*, and the cap through the exported constant rather
+than the number.
+
+The halo is read from **pixels**, which is new here and was not a preference.
+An SVG text's bounding box does not include its stroke — which is why M61 could
+measure the letters and say nothing about the band round them — and a computed
+`stroke-width` is what was asked for and not what was painted. `tests/png.mjs`
+decodes Chromium's own screenshot with `zlib` and nothing else, and the pixels
+are classified in OKLab against the tokens of `src/style.css`, so the test names
+no colour the stylesheet does not. The second test is the one that says the halo
+is doing its job rather than merely present: a label with an edge under it and a
+label with a mark under it, and **not one pixel of a letter with the line
+against it**.
+
+### Deviations
+
+900. **A test suite may now pass flags to its browser, and one does.**
+     `tests/browser.mjs` takes `args`; the halo suite passes
+     `--disable-lcd-text`. Subpixel-antialiased text carries a blue fringe down
+     the right-hand side of every stem, and a blue fringe cannot be told from
+     the cobalt line the halo is holding off — 455 letter pixels read as
+     touching a line that was nowhere near them. Grayscale antialiasing is what
+     a pixel test can read. It is per suite and not in the shared flag list, so
+     no other test's page is rasterised differently for it.
+
+901. **`src/timeline.js` gained an exported function the brief did not ask for.**
+     The height rule was one expression inside the render, and a cap inside it
+     would have been testable only through a browser. `laneHeightFor` is the
+     same expression, exported, and `tests/timeline-rows.test.mjs` holds it
+     directly — including the property that the drawing is now the pane's height
+     and not less, unless the cap is what stopped it. The existing property test
+     dropped its own copy of the arithmetic at the same time.
+
+902. **An existing test had to be rewritten, because taller rows changed what it
+     asserted.** `a bar wide enough carries its category` ended on *a packed row
+     leaves the bar eight pixels, and eight is below the symbol, so none is
+     drawn*. With the rows taking the room a packed bar is 20.85 px at 900, and
+     the symbols appear under no grouping too. Nothing about the rule changed —
+     a symbol still goes on a bar over the threshold and on no other — so the
+     test now asserts it at both ends: squeezed in a 250 px window the bars are
+     under the symbol and none is drawn, and given the room they clear it. The
+     literal 8 is gone from the file.
+
+903. **Three screenshots rather than two, and taken with `--only`.** The brief
+     asked for the graph zoomed in and the timeline on a tall window;
+     `m66-timeline` at 900 px is the third, because that is the window every
+     other picture of the timeline was taken at and the fault the owner saw was
+     on it. `--only` writes one file and leaves the rest of `docs/screens/`
+     untouched, which is a cleaner answer to M38a's rule than restoring
+     nineteen files after rewriting them.
+
+904. **The backticks in a commit message were eaten by the shell.** The second
+     commit's body reads " is the rule, exported so…" where it should name
+     `laneHeightFor`: the message was written unescaped inside a double-quoted
+     `-m`. It was already pushed, and `m0` is a branch other runs fetch, so it
+     was left rather than amended and force-pushed. The lesson is the escaping,
+     not the rewrite.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
