@@ -140,10 +140,10 @@ export const SHOTS = Object.freeze([
   // viewport of exactly the width asked for, and a reader who has been here
   // before — and passes every other parameter through, so what is inside it is
   // the atlas at the link a reader would have.
-  { name: 'm43-timeline-wide', page: 'docs/screens/frame.html', query: '?w=1440&h=900&fixtures=1',
+  { name: 'm43-timeline-wide', page: 'docs/screens/frame.html', query: '?w=1440&h=900&fixtures=1&view=timeline',
     width: 1440, height: 900,
     what: 'five centuries on one axis at 1440 px: a column per century, the band on the busiest' },
-  { name: 'm43-timeline-phone', page: 'docs/screens/frame.html', query: '?w=390&h=844&fixtures=1',
+  { name: 'm43-timeline-phone', page: 'docs/screens/frame.html', query: '?w=390&h=844&fixtures=1&view=timeline',
     width: 500, height: 844,
     what: 'the same five centuries in a 390 x 844 viewport, labelled only where a label fits' },
   // M43a. The check the brief names and the one the owner can make by eye:
@@ -197,7 +197,7 @@ export const SHOTS = Object.freeze([
     width: 1440, height: 900,
     what: 'the graph drawing a 349-year edge: 1540 to 1889, walked' },
   { name: 'm50-long-edge-timeline', page: 'docs/screens/frame.html',
-    query: '?w=1440&h=900&from=1480&to=1980&chain=the-atlantic-slave-trade-to-brazil--proclamation-of-the-brazilian-republic-1889--precondition-of&selected=proclamation-of-the-brazilian-republic-1889',
+    query: '?w=1440&h=900&view=timeline&from=1480&to=1980&chain=the-atlantic-slave-trade-to-brazil--proclamation-of-the-brazilian-republic-1889--precondition-of&selected=proclamation-of-the-brazilian-republic-1889',
     width: 1440, height: 900,
     what: 'the same 349-year link on the timeline, over the five centuries that hold both ends' },
   // And the same edge under a lens, which is what tells the difference between
@@ -288,6 +288,28 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&from=1911&to=1911&bbox=-82,-56,-34,13&layers=land,rivers,lakes,physical,mountains,cities',
     width: 1440, height: 900,
     what: 'the same continent with the territories off: the ground alone, which is what the washes are drawn over' },
+  // M60: the three views, at one link apart. The owner asked for the strip
+  // along the bottom of the map to go and for "something to choose the
+  // timeline" instead; these are what that turned out to be. The same window
+  // in all three — the point of the milestone is that choosing a view does not
+  // move it — and the same masthead, where the control now stands: the two
+  // ends of the window, the density of the corpus beside them as one column
+  // per century, and the count of what the map is looking at when there is one.
+  //
+  // All through `frame.html`, which marks the introduction as seen: a browser
+  // started for one screenshot has never been anywhere (deviation 709).
+  { name: 'm60-map', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999',
+    width: 1440, height: 900,
+    what: 'the map with the whole pane: no strip under it, and the window in the masthead' },
+  { name: 'm60-graph', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=graph',
+    width: 1440, height: 900,
+    what: 'the graph, the same window, the same height back' },
+  { name: 'm60-timeline', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=timeline',
+    width: 1440, height: 900,
+    what: 'the timeline as a view: the lanes, the clusters and the band, in a pane the strip never had' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

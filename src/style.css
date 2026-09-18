@@ -331,7 +331,10 @@ input, select, textarea { accent-color: var(--cobalt); }
 .bar .window-control[hidden] { display: none; }
 .window-end-label { display: inline-flex; align-items: baseline; gap: 0.3em; }
 .window-end {
-  width: 6ch; font: inherit; font-variant-numeric: tabular-nums;
+  /* Room for four digits, a minus for a year before the era, and the spinner
+     the browser puts inside the field: at 6ch the year was clipped to three
+     digits, which is a control that cannot say what it is showing. */
+  width: 8ch; font: inherit; font-variant-numeric: tabular-nums;
   color: var(--ink); background: var(--paper); border: 1px solid var(--line);
   padding: 0.1rem 0.2rem;
 }
