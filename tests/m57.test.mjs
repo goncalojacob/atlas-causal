@@ -349,7 +349,7 @@ test('the 1964 motive edge is disputed', () => {
 test('the 1964 motive edge carries two sources, one for each reading', () => {
   const edge = edges.find((e) => e.id === MOTIVE_EDGE);
   assert.ok(edge, `the 1964 motive edge "${MOTIVE_EDGE}" is not a record`);
-  const citation = (c) => `${c.source}${c.locator ?? ''}`;
+  const citation = (c) => `${c.source}\u001f${c.locator ?? ''}`;
   const forIt = (edge.sources ?? []).map(citation);
   const against = (edge.dispute?.sources ?? []).map(citation);
   assert.ok(forIt.length > 0, 'the edge cites nothing for the reading it states');

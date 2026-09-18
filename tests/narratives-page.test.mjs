@@ -96,23 +96,60 @@ test('the fixture narrative crosses two centuries and is listed under both', asy
   assert.match(markup, /an account that crosses two listed under both/);
 });
 
-test('the one narrative in data/ is listed, with its narrator and its years', async () => {
+// Each narrative in `data/` is listed, with its narrator and its years. This
+// asserted one narrative until M57 wrote a second; what it holds now is one
+// card per narrative rather than a number of them, so the next account to land
+// fails on a card that is wrong and not on a corpus that grew.
+//
+// **`who-was-buying` is what a wide narrative does to this page.** Its period
+// is taken from the events its steps stand on, 1530 to 2023, so it is listed
+// under six centuries — the page's own rule, "an account that crosses two
+// listed under both", applied to an account that crosses six. M57 left the
+// sentence alone because it was under instruction to make no display change,
+// and it is in that milestone's open questions.
+const IN_DATA = [
+  { id: 'how-the-colonial-war-ended-the-regime', period: { from: 1961, to: 1975 }, steps: 12,
+    title: 'How the colonial war ended the regime', centuries: ['The 20th century'] },
+  { id: 'who-was-buying', period: { from: 1530, to: 2023 }, steps: 28,
+    title: 'Who was buying',
+    centuries: ['The 16th century', 'The 17th century', 'The 18th century',
+      'The 19th century', 'The 20th century', 'The 21st century'] },
+];
+
+test('every narrative in data/ is listed, with its narrator and its years', async () => {
   const topology = await topologyOf(null);
   const records = recordsOf(topology);
-  assert.equal(topology.narratives.length, 1, 'the dataset has one narrative');
-
   const groups = groupByCentury(topology.narratives, records);
-  assert.deepEqual(groups.map((g) => g.label), ['The 20th century']);
-  const [card] = groups[0].cards;
-  assert.equal(card.narrative.id, 'how-the-colonial-war-ended-the-regime');
-  assert.deepEqual(card.period, { from: 1961, to: 1975 });
-  assert.equal(card.narrative.steps.length, 12);
-
   const markup = narrativesHtml(topology.narratives, records);
-  assert.match(markup, /1 narrative,\s+arranged by the centuries they cross\./);
-  assert.match(markup, /How the colonial war ended the regime/);
+
+  assert.deepEqual(
+    topology.narratives.map((n) => n.id).sort(),
+    IN_DATA.map((n) => n.id).sort(),
+    'a narrative landed or left without this test being told',
+  );
+
+  const wrong = [];
+  for (const want of IN_DATA) {
+    const under = groups.filter((g) => g.cards.some((c) => c.narrative.id === want.id)).map((g) => g.label);
+    if (JSON.stringify(under) !== JSON.stringify(want.centuries)) {
+      wrong.push(`${want.id}: listed under ${under.join(', ') || 'nothing'}`);
+    }
+    const card = groups.flatMap((g) => g.cards).find((c) => c.narrative.id === want.id);
+    if (!card) { wrong.push(`${want.id}: no card`); continue; }
+    if (JSON.stringify(card.period) !== JSON.stringify(want.period)) {
+      wrong.push(`${want.id}: period ${JSON.stringify(card.period)}`);
+    }
+    if (card.narrative.steps.length !== want.steps) {
+      wrong.push(`${want.id}: ${card.narrative.steps.length} steps, not ${want.steps}`);
+    }
+    if (!markup.includes(want.title)) wrong.push(`${want.id}: the page does not carry its title`);
+  }
+  assert.deepEqual(wrong, [], wrong.join('\n'));
+
   assert.match(markup, /1961–1975/);
+  assert.match(markup, /1530–2023/);
   assert.match(markup, /12 steps/);
+  assert.match(markup, /28 steps/);
   assert.match(markup, /Claude \(assistant draft, unreviewed\)/, 'the narrator, unhidden');
 });
 

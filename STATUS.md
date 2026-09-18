@@ -13,6 +13,20 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-18, after **M57** (on `m0`): **the narrative the owner asked for, and
+the one link the atlas refuses to settle.** *Who was buying* walks 28 steps from
+the sugar cycle to 1 January 2023 on the claim that Brazil has been organised
+around exporting commodities since 1500 and that the identity of the buyer —
+Portugal, Britain, the United States, China — kept changing, politically, every
+time. **Nineteen events, 33 edges, five places**; the atlas stands at 304 active
+events and 362 active edges. **Thirty-two of the 33 edges are `probable`, one is
+`disputed`, none is `consensus`** — amendment A2 again. The disputed one is the
+milestone: whether the United States backed the 1964 coup because of what Brazil
+produced or out of Cold War anti-communism is contested by serious historians,
+both readings are sourced and named, and **step 18 of 28 walks the reader
+through it**. The account is `## M57` below, `docs/m57-claims.md` and the record
+`who-was-buying`.
+
 2026-09-16, after **M50** (on `m0`): **two worked chains, and the first edges
 this atlas has drawn across three centuries.** Brazil from the meridian of 1494
 to the coup of 1964, the Caribbean from Columbus to 1959 — **36 events, 57
@@ -10494,6 +10508,216 @@ wastes an hour, and so does one that assumes it is not.
      they are. Rule 11 says a rename moves every reference in one commit, and a
      test that names an id is a reference. The next run that renames anything
      should stage the suites that look it up in the same commit as the records.
+
+## M57 — who was buying, and the one link the atlas refuses to settle
+
+The owner asked on 17 September for **a narrative that reaches the present**:
+that the colonisation made Brazil a producer of certain goods, and that when
+the United States rose it wanted control of several of them and intervened when
+Brazil elected a socialist government. `docs/m57-brief.md` is the instruction,
+`docs/m57-claims.md` is the ledger, and the narrative record is
+`who-was-buying`.
+
+### What landed
+
+**Nineteen events, thirty-three edges, five places and one narrative of
+twenty-eight steps.** The atlas now holds **304 active events and 362 active
+edges**, against 285 and 329 before. Every event carries a place, a dated
+`when` and at least one actor; every event cites the Wikipedia article and the
+revision it was read at; every edge cites a source; **no claim here was written
+without a source and no source here is the assistant.**
+
+Three of the four movements gained records. **Movement II — Britain buys** gained
+what Brazil actually sold in those years, without which the thesis had a hole:
+`the-brazilian-coffee-cycle` (1830–1930), `the-amazon-rubber-boom` (1879–1912)
+and `the-end-of-the-amazon-rubber-monopoly` (1912). **Movement III — the United
+States buys** gained ten: `companhia-siderurgica-nacional-1941`,
+`us-air-bases-in-the-brazilian-northeast-1942`, `the-rubber-battle-1942`,
+`petrobras-1953`, `profit-remittance-law-1962`, `the-base-reforms-rally-1964`,
+`operation-brother-sam-1964`, `the-brazilian-miracle-1968-1973`,
+`the-brazilian-debt-crisis-1982` and `1985-brazilian-presidential-election`.
+**Movement IV — China buys** gained six: `the-1988-brazilian-constitution`,
+`the-commodity-boom-and-the-chinese-buyer`, `operation-car-wash-2014`,
+`the-impeachment-of-dilma-rousseff-2016`, `the-2018-brazilian-general-election`
+and `lula-returns-to-the-presidency-2023`.
+
+### The hinge
+
+**`companhia-siderurgica-nacional-1941 → us-air-bases-in-the-brazilian-northeast-1942`,
+`caused`.** Wikipedia states both the sequence — in 1942, following the
+American proposal to finance the steelworks, United States forces established
+air bases along the north-eastern coast — and the bargain: in exchange for raw
+materials the United States supplied equipment, technical assistance and the
+financing of the mill, settled in July 1940. The money came through the
+Export-Import Bank because American private capital would not put it up, and
+the plant went into the Paraíba valley, on ground left decadent by the decline
+of coffee. **Strategic commodities exchanged for industrial capital** is the
+whole third movement in one edge, and the other half of what Brazil gave is
+`the-rubber-battle-1942`: forty-five thousand tons of latex a year, conscripts
+taken from a drought-stricken Northeast, a hundred dollars a head paid by the
+United States, and about thirty thousand of them dead in the Amazon.
+
+### The confidence distribution, and why nothing is `consensus`
+
+**Thirty-two of the thirty-three edges are `probable`, one is `disputed`, and
+none is `consensus`.** That is M50's amendment A2 working rather than failing:
+**Wikipedia is one source however many of its articles are read**, so a link
+resting on it alone is `probable` however settled the history is, and rule 22
+will not catch a run that inflates it. Promotion means a work Wikipedia itself
+cites, with a page — never a second Wikipedia article repeating the first, and
+this run promoted nothing. `tests/m57.test.mjs` fails any edge of this
+milestone that claims `consensus` on encyclopedias alone. The corpus now stands
+at 282 `probable`, 61 `consensus` and 19 `disputed`.
+
+By type the thirty-three are 20 `precondition-of`, 6 `caused`, 4 `enabled`, 2
+`reacted-to` and 1 `inspired`. No new record type, confidence value, edge type,
+hex value, token or type size; **no display change**.
+
+### The link that is disputed, and both readings
+
+**`profit-remittance-law-1962--operation-brother-sam-1964--caused`, confidence
+`disputed`.** This is the claim the owner asked about and the one the
+confidence vocabulary was built for, so writing it flat would have failed the
+milestone whatever else it did.
+
+**The reading the edge states** (cited to "1964 Brazilian coup d'état",
+revision 1374834512): Washington moved because of what Brazil produced and who
+was to keep the proceeds. Law 4,131 of 3 September 1962 capped remittance of
+profits on foreign capital at ten per cent a year, and that article names the
+Profit Remittance Act **first** among the factors in the deterioration of
+relations, beside Brizola's expropriations, the nationalisation of an ITT
+subsidiary and the credits withheld. Marxist scholarship of the 1960s and 1970s
+placed heavy emphasis on the American factor, and Dreifuss's *1964: A Conquista
+do Estado* (1981) reads the coup as the project of entrepreneurs linked to
+international capital.
+
+**The reading against it** (cited to "Operation Brother Sam", revision
+1372915756 — a different article at its own revision, so the two readings do
+not rest on the same page): the commitment was Cold War anti-communism and the
+economics were one grievance among several. Anti-communism is treated as a
+fundamental element of the coup in the scholarship and among the military;
+Gordon feared a Brazil that "might make Brazil the China of the 1960s"; a
+literature review of 2018 finds the American role real but the dynamics of the
+crisis **fundamentally Brazilian**; Carlos Fico's criticism of Dreifuss is that
+he does not distinguish destabilisation from conspiracy.
+
+**What settles it is that nothing settles it.** The coup article says in as
+many words that at some point the United States decided to favour Goulart's
+deposition but that *the chronology and the reasons are controversial*. Both
+readings are named and sourced, and the profit remittance law and the task
+force both sit in the graph as evidence a reader can weigh. That is the
+difference between an atlas and an opinion.
+
+### What the narrative looks like to a reader walking it
+
+`who-was-buying` opens at the sugar cycle with the question stated: Brazil has
+been organised around exporting commodities since 1500, the buyer kept
+changing, and each change was political. **Twenty-eight steps**, window 1500 to
+2024, each naming the event or the edge it stands on. Sugar and gold to the
+crown that owned the coast; then the court's passage paid for in tariffs, the
+Aberdeen Act, coffee, rubber and the collapse of 1912; then the steelworks, the
+bases, the latex, Petrobras, the base reforms rally.
+
+At **step 18 of 28** the reader takes the disputed link and meets M50's banner
+— *"You arrived here through a disputed link"* — two thirds of the way through
+the argument rather than as a curiosity. The step's own text stops them: it
+sets out both readings, says the atlas is not going to decide between them, and
+tells them to read the argument under the link before taking the step. Then the
+fleet turns round, the dictatorship borrows, the debt arrives, the college that
+the regime built ends the regime, and the buyer changes a fourth time — 6.7
+billion dollars of trade with China in 2003, 36.7 billion in 2009, largest
+trading partner from 2009. It ends on 1 January 2023 with the government
+changed and the buyer not.
+
+The walk breaks its chain three times on purpose and says so each time. Because
+M48 made reading a narrative set the lens, this walk is what the three views
+draw while it is being read.
+
+### The reachability figure
+
+**Within each movement, four hops or fewer between any two events, measured
+over the whole active graph — asserted, and green.** Across all four at once it
+is **five**: the greatest distance between any two of the nineteen events is 5
+hops, between `lula-returns-to-the-presidency-2023` and
+`operation-brother-sam-1964`. Of the 171 pairs, **160 are within four hops and
+11 are at five** — 22 at one, 36 at two, 61 at three, 41 at four. The figure is
+written down rather than asserted, and deviation 812 says why.
+
+Every one of the nineteen carries at least two active edges, so every one of
+them is drawn under M48's degree floor of 2; the densest are
+`companhia-siderurgica-nacional-1941` at five and `petrobras-1953`,
+`operation-car-wash-2014`, `the-rubber-battle-1942` and
+`the-impeachment-of-dilma-rousseff-2016` at four. Petrobras is the record that
+carries the fourth movement, sixty-one years after the law that created it.
+
+### Deviations
+
+812. **The brief's first test is applied per movement and not across all four,
+     and the global figure is reported instead.** §6.1 asks that every event of
+     this milestone be four hops or fewer from every other. Nineteen events
+     spanning 1830 to 2023 can only satisfy that with a single event every one
+     of them is two hops from, and no such event exists: the shape would have
+     to be manufactured with edges the sources do not support, and §5 forbids
+     that before it asks for anything else. So the property is asserted the way
+     `tests/m50.test.mjs` asserted it — **per chain, which here means per
+     movement** — and the global distance is measured and written down instead
+     (5 hops; 160 of 171 pairs within four). The suite also asserts, unbounded,
+     that every event of the milestone reaches every other by some path. The
+     reading is argued in `docs/m57-claims.md`, "the reading of the brief's
+     tests", and it is the one change this run made to what the brief asked
+     for.
+813. **The brief's §6.5 is split between two suites rather than written here.**
+     "Every event names an actor whose span overlaps its own" is two claims.
+     The overlap half is M56's and is held **corpus-wide** — *no active event
+     names an actor whose whole life falls outside it* — over every active
+     event, these nineteen included; M56 exists precisely so that a later
+     milestone does not write a fifth copy of it. Copying it would have been
+     that fifth copy. So `tests/m57.test.mjs` asserts only the half M56 cannot
+     state — that an event **names an actor at all**, which an event naming
+     nobody would otherwise pass by having nothing to check.
+814. **A place id collided with an actor id and the place was renamed before
+     it was ever committed.** The bases event wanted a place `natal`, and
+     `natal` is already an actor: entity 562 of the Gleditsch–Ward list, the
+     colony of Natal, 1886–1910. Rule 2 is across all records and caught it at
+     once. The place written instead is **`parnamirim`**, which is where the
+     air base actually was — Parnamirim Field, beside Natal — so the collision
+     produced a more precise record than the one it refused.
+815. **Eighteen tests were red on a pushed head, deliberately.** The commit
+     that introduces `tests/m57.test.mjs` names nineteen events that do not
+     exist yet, so 18 of its 25 assertions fail on it. That is deviations 711
+     and 717's rule — the commit that teaches the tests goes before the one
+     that changes what they see — and the brief says so in as many words:
+     *"They will fail — that is the point."* It is recorded here because
+     deviation 811, one milestone ago, is about a red head that was **not**
+     intended, and the two should not be confused when someone reads the run
+     log.
+
+816. **M56's suite caught this milestone's records, and the records were
+     right.** `tests/m56.test.mjs` holds a list of the entries where the
+     start-only rule and the overlap rule disagree, and fails if the corpus
+     grows past it, "deliberately: the difference between the rules is what the
+     milestone was about and should not go quiet unnoticed". Two of this
+     milestone's events extend it — `the-brazilian-coffee-cycle--brazil` and
+     `the-amazon-rubber-boom--brazil` — and they are **the same shape as the
+     brief's own first case**: a long export cycle that begins under one polity
+     and continues under the next. Coffee runs 1830–1930 and rubber 1879–1912;
+     `brazil` begins 1889, so the start-only rule would forbid either to name
+     the republic, while the café com leite politics, the valorisation schemes
+     from 1906 and the Acre question are all the republic's. **So the list was
+     extended and the records were not weakened**, in a second constant
+     `LATER` kept apart from `MEASURED` so that "the four the brief measured"
+     goes on meaning that. It is the only file outside `data/`, `docs/` and
+     this milestone's own suite that M57 touched.
+817. **A pushed head was red on `tests/m56.test.mjs` for three commits.** The
+     records commit `a9a2c0aa` extended that list without extending the test,
+     and the run did not notice until the milestone's own suite was green and
+     the whole suite was run. This is **deviation 811 again, one milestone
+     later and from the other side**: 811 was a rename whose references lived
+     in suites the run did not count as its own, and this is a record whose
+     *properties* were asserted in a suite the run did not count as its own.
+     The rule that would have caught both is the same — before committing
+     records, run every suite, not the milestone's — and it is cheap: the full
+     run takes about three and a half minutes.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled

@@ -11,7 +11,13 @@ import { withBrowser, open, waitFor, skip } from './browser.mjs';
 
 const READY = 'return document.querySelectorAll(".narrative-card").length > 0;';
 
-test('the page lists the one narrative in the dataset, under the century it crosses', { skip }, async () => {
+// This read the page when the dataset held one narrative. M57 wrote a second
+// and it is a wide one — `who-was-buying` runs 1530 to 2023, so the page lists
+// it under six centuries, which is the page's own rule about an account that
+// crosses more than one applied to an account that crosses six. The cards are
+// found by title rather than by position, so the next narrative to land moves
+// nothing here.
+test('the page lists each narrative in the dataset, under the centuries it crosses', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url('narratives.html'), READY);
     const page1 = await page.eval(`return {
@@ -24,13 +30,23 @@ test('the page lists the one narrative in the dataset, under the century it cros
       })),
       wider: document.documentElement.scrollWidth <= innerWidth,
     };`);
-    assert.deepEqual(page1.periods, ['The 20th century']);
-    assert.equal(page1.cards.length, 1);
-    assert.equal(page1.cards[0].title, 'How the colonial war ended the regime');
-    assert.equal(page1.cards[0].href, 'index.html?narrative=how-the-colonial-war-ended-the-regime&step=0');
+    assert.deepEqual(page1.periods, [
+      'The 16th century', 'The 17th century', 'The 18th century',
+      'The 19th century', 'The 20th century', 'The 21st century',
+    ]);
+
+    const colonial = page1.cards.find((c) => c.title === 'How the colonial war ended the regime');
+    assert.ok(colonial, 'the colonial war narrative is on the page');
+    assert.equal(colonial.href, 'index.html?narrative=how-the-colonial-war-ended-the-regime&step=0');
     // Narrator, period covered, number of steps — the card's own line.
-    assert.match(page1.cards[0].meta, /Claude \(assistant draft, unreviewed\) · 1961–1975 · 12 steps/);
-    assert.match(page1.cards[0].summary, /^A walk from the first shots/);
+    assert.match(colonial.meta, /Claude \(assistant draft, unreviewed\) · 1961–1975 · 12 steps/);
+    assert.match(colonial.summary, /^A walk from the first shots/);
+
+    const buying = page1.cards.filter((c) => c.title === 'Who was buying');
+    assert.equal(buying.length, 6, 'a card under each century it crosses');
+    assert.equal(buying[0].href, 'index.html?narrative=who-was-buying&step=0');
+    assert.match(buying[0].meta, /Claude \(assistant draft, unreviewed\) · 1530–2023 · 28 steps/);
+
     assert.equal(page1.wider, true, 'nothing sticks out sideways');
 
     // The way back into the atlas and on to the bibliography.
@@ -44,7 +60,9 @@ test('the page lists the one narrative in the dataset, under the century it cros
 test('a card opens the narrative at its first step, and the atlas follows', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url('narratives.html'), READY);
-    await page.eval('document.querySelector(".narrative-card h3 a").click(); return true;');
+    // By name, not by position: the first card on the page is the earliest
+    // century's, and since M57 that is a different narrative from this one.
+    await page.eval('document.querySelector(\'.narrative-card h3 a[href$="narrative=how-the-colonial-war-ended-the-regime&step=0"]\').click(); return true;');
     await waitFor(page, 'return Boolean(document.querySelector(".panel .narrative-head h2"));', 'the narrative card');
 
     const at = await page.eval(`const params = new URLSearchParams(location.search);

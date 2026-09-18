@@ -331,10 +331,19 @@ test('every actors entry M53 wrote names an actor whose life overlaps the event'
 });
 
 // §4.1's table against the corpus. The "after" column is a live count and the
-// "before" column is history, so only the first is checked; what this holds is
-// that the document cannot report a figure the records do not show.
-const COUNT_ROW = /^\| \*\*after M53\*\* \| (\d+) of (\d+) \| (\d+) of (\d+) \|/;
-const counted = doc.split('\n').map((line) => COUNT_ROW.exec(line)).filter(Boolean)[0];
+// "before" column is history; what this holds is that the document cannot
+// report a figure the records do not show.
+//
+// It reads the **last** "after" row rather than M53's own, because the corpus
+// goes on growing: M57 wrote nineteen events, every one of them naming an
+// actor, and the M53 row went stale the moment they landed. Taking the last
+// row means a milestone that writes events has to re-take the count and put a
+// row under the old one, which is the correspondence this file exists for;
+// pinning M53's row would have meant either a permanently red test or a
+// document quietly rewritten to say something it never measured.
+const COUNT_ROW = /^\| \*\*after M\d+\*\* \| (\d+) of (\d+) \| (\d+) of (\d+) \|/;
+const countRows = doc.split('\n').map((line) => COUNT_ROW.exec(line)).filter(Boolean);
+const counted = countRows[countRows.length - 1];
 
 // M56 left the rule here alone, and this is why. §4.1 is a **coverage**
 // figure, not a soundness check, and the document states the rule it counted
@@ -346,7 +355,7 @@ const counted = doc.split('\n').map((line) => COUNT_ROW.exec(line)).filter(Boole
 // that ever stops being true this test fails, and the answer then is to say so
 // in the document rather than to change the reading underneath it.
 test(`${DOC} §4.1 reports the figure the corpus actually shows`, () => {
-  assert.ok(counted, `${DOC} §4.1 carries no "after M53" row`);
+  assert.ok(counted, `${DOC} §4.1 carries no "after M<n>" row`);
   const [, chainNamed, chainTotal, allNamed, allTotal] = counted.map(Number);
   const active = events.filter((e) => e.status === 'active');
   const names = (e) => (e.actors ?? []).some((x) => alive(x.actor, from(e.when)));

@@ -249,6 +249,7 @@ thirty-five of them carrying `actors: []`.
 |---|---|---|
 | **before M53** | 1 of 36 | 198 of 285 |
 | **after M53** | 36 of 36 | 235 of 285 |
+| **after M57** | 36 of 36 | 254 of 304 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -259,6 +260,15 @@ which named a state that did not yet exist and now name one that did.
 **Fifty active events still name nobody**, and every one of them carries
 `actors: []` rather than a wrong name. They are not in either chain and are not
 this milestone's to write; §5 lists the figure as what it is, an open count.
+
+**The "after M57" row is the same measurement taken again.** `tests/m53.test.mjs`
+holds the *last* row of this table against the live corpus, so a milestone that
+writes events has to re-take the count rather than leave a stale one standing.
+M57 added nineteen events and every one of them names an actor, which is why the
+figure moves by nineteen in both columns and **the fifty that name nobody are
+still the same fifty**. The two rules — alive at the start, and overlapping —
+still give the same number, 254, so the sentence above about which rule was
+counted by is still true of this row as well.
 
 ### 4.2 Where the entries came from
 
