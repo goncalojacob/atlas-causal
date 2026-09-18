@@ -80,6 +80,13 @@ jobs:
           status=0
           node --test --test-timeout=120000 $(node tools/suites.mjs --pure) || status=1
           node --test --test-timeout=120000 --test-concurrency=1 $(node tools/suites.mjs --browser) || status=1
+          # The machine, said again at the end. Only the tail of a job's log can
+          # be fetched from the sandbox these runs are driven from (deviation
+          # 729), and the step above prints thousands of lines, so the four
+          # lines at the head of the job are out of reach exactly when a red
+          # check is being read. The suite says its failing tests twice for the
+          # same reason.
+          echo "this ran on $(nproc) cores, $(awk '/MemTotal/ {printf "%.1f GB", $2 / 1048576}' /proc/meminfo)"
           exit $status
       - name: Whether this pull request touches data/index/
         id: data
