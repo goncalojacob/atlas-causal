@@ -224,7 +224,6 @@ export function createMapBand(container, {
     toggle.title = open
       ? 'Close the window of time'
       : 'Choose the window of time on the map: drag either end and the map follows';
-    container.classList.toggle('band-open', open);
     if (open && !built) build();
     if (!open) teardown();
     if (remember) writeBandOpen(storage, open);
