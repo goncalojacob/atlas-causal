@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "petrobras-1953--operation-car-wash-2014--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Car Wash\", revision 1371266803"
+    }
+  ],
+  "from": "petrobras-1953",
+  "to": "operation-car-wash-2014",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The scheme the investigation found was a scheme inside state companies, and the largest amounts of bribes by far were detected at Petrobras: directors negotiated with contractors for kickbacks, part of which went to the parties. A state oil monopoly is not a cause of corruption, and this edge does not say it is. It says that the thing Lava Jato investigated is the company Law 2,004 created, and that sixty-one years is the distance between the two records.",
+  "dispute": null
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "1985-brazilian-presidential-election--the-1988-brazilian-constitution--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Constitution of Brazil\", revision 1375080943"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1985 Brazilian presidential election\", revision 1344763908"
+    }
+  ],
+  "from": "1985-brazilian-presidential-election",
+  "to": "the-1988-brazilian-constitution",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The constitution was made in the light of the transition to democracy, written from scratch over two years and promulgated on 5 October 1988 — which is to say by the congress and the presidency the election of January 1985 produced, after Neves died and Sarney took office. The New Republic the text founds is named after that handover.",
+  "dispute": null
+}

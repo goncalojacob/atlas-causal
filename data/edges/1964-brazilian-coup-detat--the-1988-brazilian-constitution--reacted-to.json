@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "1964-brazilian-coup-detat--the-1988-brazilian-constitution--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Constitution of Brazil\", revision 1375080943"
+    }
+  ],
+  "from": "1964-brazilian-coup-detat",
+  "to": "the-1988-brazilian-constitution",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The text is an answer to the regime the coup began. It replaced the autocratic constitution of 1967 and capped twenty-one years of military dictatorship, and it resignified the role of the state in citizens’ lives with a vast apparatus of human and individual rights protection — a list that reads as an inventory of what the twenty-one years had done. Read in this direction the edge says the constitution reacted to the coup, which is what its own drafters said they were doing.",
+  "dispute": null
+}

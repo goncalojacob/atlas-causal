@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "operation-car-wash-2014",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Car Wash\", revision 1371266803"
+    }
+  ],
+  "title": "Operation Car Wash, 2014",
+  "summary": "What began in March 2014 as a money-laundering investigation into a small car wash in Brasília became the largest corruption inquiry the country has had. Prosecutors under Deltan Dallagnol, before judge Sergio Moro, found that political appointees in state companies had systematically extorted bribes from private suppliers, part of it going to the parties and part into pockets; the largest sums by far were at Petrobras. It reached businessmen, deputies, senators, governors, ministers and the former presidents Collor, Temer and Lula, and companies and individuals agreed to pay 25 billion reais in fines and restitution. Its own standing did not survive the Vaza Jato leak of 2019, which purported to show coordination between the judge and the prosecutors; Moro and Dallagnol deny wrongdoing. The task force was disbanded on 1 February 2021.",
+  "when": {
+    "start": 2014,
+    "end": 2021,
+    "endDate": "2021-02-01"
+  },
+  "place": "brasilia",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "government",
+      "note": "the state whose companies were the scheme, and whose prosecutors broke it open"
+    }
+  ],
+  "names": [
+    "Operação Lava Jato"
+  ],
+  "region": null
+}

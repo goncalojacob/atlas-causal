@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "the-impeachment-of-dilma-rousseff-2016--the-2018-brazilian-general-election--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-18",
+  "revised": null,
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m57-narrative"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2018 Brazilian general election\", revision 1361748195"
+    }
+  ],
+  "from": "the-impeachment-of-dilma-rousseff-2016",
+  "to": "the-2018-brazilian-general-election",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The election was fought on what the impeachment left. Temer, who replaced Rousseff, broke sharply with her policies, amended the constitution to freeze public spending, reached an approval rating of 7 per cent against 76 per cent wanting him gone, and was himself ineligible to stand. A right-wing outsider won an election in which the party that had governed since 2002 could field neither its president nor its strongest candidate.",
+  "dispute": null
+}
