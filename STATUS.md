@@ -10904,6 +10904,27 @@ milestone's to decide, and both are measurable the same way this one was.
      later and `concurrency: cancel-in-progress` cancelled run 838 — so the red
      is recorded here from the local run rather than from a check.
 
+826. **The head's check is red on a browser flake, and the evidence says it is
+     not this milestone's.** Four runs of `validate` completed on this branch's
+     commits and three failed, each on a **different** browser test:
+     `860c24c1` (one line of `STATUS.md`, no code) on *a drag of the band
+     leaves the open explanation open and moves the horizon*, timed out;
+     `983a3dd4` (one document, no code) on *the source card fetches its own
+     citer file and draws the rows*, timed out; and `c1333f2f`, the head, on
+     *a place's faded rows follow the band without rebuilding the card* —
+     an assertion, not a timeout, which is why it was re-run rather than
+     waved through. **The re-run dropped a different test again**: the same
+     *source card* timeout that had already failed on the commit carrying no
+     code at all. 1,647 of 1,648 both times.
+     Locally the whole suite is green — **1,648 passing, 0 failures, 0
+     skipped** — and `tests/panel-browser.test.mjs` is green on three
+     consecutive runs of its own. The citers are their own index and M58
+     touched nothing about them; `tests/spine-pages.test.mjs` itself, which is
+     where the exemption came out, passes in every run including both red
+     ones. **The one re-run the rules allow is spent.** The next run on this
+     branch should not read the red as a broken tree, and the browser suite's
+     stability on the runner is worth a milestone of its own.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
