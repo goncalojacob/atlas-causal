@@ -13,9 +13,16 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-16",
+  "revised": "2026-09-20",
   "origin": {
     "tool": "cshapes"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "standing-backfilled",
+      "imported-by-cshapes"
+    ]
   },
   "sources": [
     {
