@@ -13,14 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
-  "revised": "2026-09-06",
+  "revised": "2026-09-20",
   "origin": {
     "tool": "assistant"
   },
   "review": {
     "status": "draft",
     "flags": [
-      "date"
+      "date",
+      "m69-categorised"
     ],
     "note": "Filed in a run that could not reach a source: no date on this record has been checked against one."
   },
@@ -44,6 +45,7 @@
   },
   "place": "lisbon",
   "region": null,
+  "category": "election",
   "actors": [
     {
       "actor": "antonio-costa",

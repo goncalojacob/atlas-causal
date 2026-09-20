@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
-  "revised": "2026-09-06",
+  "revised": "2026-09-20",
   "origin": {
     "tool": "assistant"
   },
@@ -21,7 +21,8 @@
     "status": "draft",
     "flags": [
       "claim",
-      "date"
+      "date",
+      "m69-categorised"
     ],
     "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. The summary says more than the dates do, and what it adds was written from memory rather than read in a source."
   },
@@ -45,6 +46,7 @@
   },
   "place": "lisbon",
   "region": null,
+  "category": "election",
   "actors": [
     {
       "actor": "luis-montenegro",

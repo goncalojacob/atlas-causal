@@ -13,12 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-18",
+  "revised": "2026-09-20",
   "origin": {
     "tool": "assistant"
   },
   "review": {
-    "status": "draft"
+    "status": "draft",
+    "flags": [
+      "m69-categorised"
+    ]
   },
   "sources": [
     {
@@ -37,6 +40,7 @@
   "place": "tite",
   "region": null,
   "parent": "portuguese-colonial-war-1961-1974",
+  "category": "war",
   "actors": [
     {
       "actor": "paigc",
