@@ -229,7 +229,17 @@ test('grouping into bands crowds the picture, and more of it merges', { skip }, 
 });
 
 test('a merged line carries its count and its type; a single one is unchanged', { skip }, async () => {
-  const dom = await withServer((url) => dumpDom(chrome, url('?view=graph&group=region')));
+  // The picture is the whole extent with no degree floor, as the test above
+  // takes it, and not the default window. What this test is about is what a
+  // *merged* line carries; whether any line merges at all at a given window is
+  // a fact about how crowded the corpus happens to be there, and M67 made the
+  // banded default window less crowded on purpose — it filed thirteen events
+  // under parents, and the resting picture is the main events only (M65). At
+  // the default window `group=region` went from merging lines to merging none
+  // while `?view=graph` still merged two, which is the milestone working, not
+  // the drawing breaking. Asking for everything is the same lesson the test
+  // above learned in M50: count the thing the claim is about.
+  const dom = await withServer((url) => dumpDom(chrome, url(`?view=graph&group=region&${WHOLE}`)));
   const graph = graphOf(dom);
   const merged = [...graph.matchAll(/<line[^>]*class="edge ([^"]*merged[^"]*)"[^>]*style="--merged-width: ([\d.]+)"/g)];
   assert.ok(merged.length > 0, 'the banded picture merges some lines');
