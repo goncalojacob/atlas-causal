@@ -190,3 +190,31 @@ errors; the counts are in `STATUS.md`; `M42 done`.
 ## Deviations this brief takes, numbered on from 717
 
 The last deviation on `m0` is 717. M42a numbers from 718.
+
+## Amendments after review
+
+**A1 (20 September). The numbers in §0 are stale and the run must re-measure
+them before anything else.** §0 says 250 active events; there are **309**, and
+M62 and M67 have given many of them parents. The first commit of the run is the
+measurement, in `docs/m42-pool.md`.
+
+**A2 (20 September). The seed pool is exhausted.** `data/imports/wikidata-seeds.json`
+holds eight seeds and every one has been walked. The next batch comes from the
+sweep the tool already has — `node tools/import/wikidata.mjs --candidates`,
+writing `docs/wikidata-candidates.md` — and **the run ticks candidates from that
+sweep, not from seeds**. A candidate is imported under the owner's decision of
+16 September: Wikipedia and Wikidata, `probable`, `consensus` only through a
+work Wikipedia itself cites.
+
+**A3 (20 September). Volume without parents undoes M65.** Since M65 the resting
+picture is the main events only, and every event imported without a parent
+lands on it. **A batch that adds two hundred main events makes the map a wall
+again.** So the run files what it imports as it imports it, under M62's rule —
+inside the span *and* inside the subject — and reports in `STATUS.md` how many
+of the new events are main against how many have a parent. **An import that
+leaves the main count higher than it found it has to say why.**
+
+**A4 (20 September). The owner has authorised the whole backlog**, so the
+brief's own "wait for the owner" clauses no longer bind — with the standing
+exceptions: no AI-written historical claim outside the dated exception, no
+invented date, and nothing merged into `main`.
