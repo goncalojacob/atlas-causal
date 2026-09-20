@@ -49,13 +49,13 @@
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-3e65830ed976.json",
+      "file": "index/attributes-1900-1999-bc7e269665c1.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-fbf9e33bf2a6.json",
+      "file": "index/attributes-2000-2099-6c09271e4f94.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
@@ -793,7 +793,7 @@
       "id": "disaster"
     },
     {
-      "count": 48,
+      "count": 55,
       "id": "election"
     },
     {
@@ -801,11 +801,11 @@
       "id": "revolution"
     },
     {
-      "count": 12,
+      "count": 13,
       "id": "treaty"
     },
     {
-      "count": 11,
+      "count": 16,
       "id": "war"
     }
   ],
@@ -923,10 +923,10 @@
   ],
   "files": {
     "citers": "index/citers-77483050753b",
-    "core": "index/core-199522322abe.json",
+    "core": "index/core-41859507c096.json",
     "grounds": "index/grounds-f4e990118ce8.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-6704f78ad253.json",
+    "review": "index/review-4408eb38c3cb.json",
     "search": "index/search-a3e30027a676.json",
     "sources": "index/sources-f40063d90c24.json",
     "territories": "index/territories-cdf8b6e729d5.json"
@@ -968,14 +968,14 @@
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-e860bb899d0a.json",
+      "file": "index/history-event-1900-1999-54143176ab66.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
       "to": 1999
     },
     {
-      "file": "index/history-event-2000-2099-f328b7a1ec77.json",
+      "file": "index/history-event-2000-2099-3e715b269056.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "event",
