@@ -251,6 +251,7 @@ thirty-five of them carrying `actors: []`.
 | **after M53** | 36 of 36 | 235 of 285 |
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
+| **after M67** | 36 of 36 | 306 of 310 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -281,6 +282,17 @@ them are the presidential elections M62 could not file for exactly that reason.
 The two rules still give the same number, 259, though four of M62's own
 `actors` entries are of the shape M56 is about: a party founded in 1912 is an
 actor of a republic that began in 1910, and `tests/m56.test.mjs` lists all four.
+
+**The "after M67" row is the one that closes the open count.** M67 wrote the
+actor and place lines for forty-six of the forty-eight main events that named
+nothing at all, read off the Wikidata item each record already cited
+(`docs/m67-umbrellas.md`), and added one umbrella, the Empire of Brazil, which
+names one. So the whole-corpus column moves by forty-seven and the chain's not
+at all, and **the fifty that name nobody are down to four**: `20-july-plot` and
+`covid-19-pandemic`, which §2.1 of that document explains,
+`covid-19-pandemic-in-europe`, which is part of the pandemic and so not a main
+event at all, and `tripartite-pact`, which carries a place and no actor. The
+two rules still give the same number, 306.
 
 ### 4.2 Where the entries came from
 
