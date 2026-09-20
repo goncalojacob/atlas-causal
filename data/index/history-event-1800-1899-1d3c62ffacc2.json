@@ -311,6 +311,15 @@
         }
       ]
     },
+    "empire-of-brazil-1822-1889": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-20"
+        }
+      ]
+    },
     "eusebio-de-queiros-law-1850": {
       "from": "git",
       "versions": [
@@ -329,6 +338,12 @@
             "actors"
           ],
           "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-20"
         }
       ]
     },
@@ -422,6 +437,12 @@
             "actors"
           ],
           "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-20"
         }
       ]
     },

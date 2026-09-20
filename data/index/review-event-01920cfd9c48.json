@@ -172,6 +172,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "first-portuguese-republic-1910-1926",
       "review": {
         "flags": [
           "imported-facts",
@@ -204,6 +205,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "first-portuguese-republic-1910-1926",
       "review": {
         "flags": [
           "imported-facts",
@@ -276,6 +278,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "first-portuguese-republic-1910-1926",
       "review": {
         "flags": [
           "imported-facts",
@@ -348,6 +351,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "first-portuguese-republic-1910-1926",
       "review": {
         "flags": [
           "imported-facts",
@@ -560,6 +564,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "estado-novo-1933-1974",
       "review": {
         "flags": [
           "imported-facts",
@@ -2372,6 +2377,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "world-war-i",
       "review": {
         "flags": [
           "imported-facts",
@@ -2472,6 +2478,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "first-portuguese-republic-1910-1926",
       "review": {
         "flags": [
           "imported-facts",
@@ -3986,6 +3993,35 @@
         }
       ],
       "cites": [
+        "wikidata",
+        "wikipedia-en",
+        "wikipedia-pt"
+      ],
+      "created": "2026-09-20",
+      "id": "empire-of-brazil-1822-1889",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m67-umbrella",
+          "summary-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Empire of Brazil"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en"
       ],
       "created": "2026-09-16",
@@ -4185,13 +4221,14 @@
         "run": "m50",
         "tool": "assistant"
       },
+      "parent": "empire-of-brazil-1822-1889",
       "review": {
         "flags": [
           "m50-chain"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-17",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "The Eusébio de Queirós Law"
     },
@@ -4338,6 +4375,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "russian-civil-war",
       "review": {
         "flags": [
           "imported-facts",
@@ -5909,13 +5947,14 @@
         "run": "m50",
         "tool": "assistant"
       },
+      "parent": "empire-of-brazil-1822-1889",
       "review": {
         "flags": [
           "m50-chain"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-17",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "The Lei Áurea"
     },
@@ -6193,6 +6232,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "first-portuguese-republic-1910-1926",
       "review": {
         "flags": [
           "imported-facts",
@@ -6870,6 +6910,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "russian-civil-war",
       "review": {
         "flags": [
           "imported-facts",
@@ -9679,6 +9720,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "world-war-ii",
       "review": {
         "flags": [
           "imported-facts",
@@ -9932,6 +9974,12 @@
     },
     {
       "id": "ditadura-nacional-1926-1933",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "empire-of-brazil-1822-1889",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
