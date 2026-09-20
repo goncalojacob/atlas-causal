@@ -1557,6 +1557,10 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
@@ -1569,13 +1573,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "world-war-ii",
       "review": {
         "flags": [
           "imported-facts"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-20",
       "status": "active",
       "title": "20 July plot"
     },
