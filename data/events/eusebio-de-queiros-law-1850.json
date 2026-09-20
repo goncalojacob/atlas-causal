@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": "2026-09-17",
+  "revised": "2026-09-20",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,7 @@
     "date": "1850-09-04"
   },
   "place": "rio-de-janeiro",
+  "parent": "empire-of-brazil-1822-1889",
   "actors": [
     {
       "actor": "empire-of-brazil",
