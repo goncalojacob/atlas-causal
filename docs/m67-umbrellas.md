@@ -152,8 +152,8 @@ confident wrong date `CLAUDE.md` forbids. A gap is honest; a guess is not.
   Adolf Hitler, who has no record here; and its country (P17) is **Poland**,
   which is where the Wolf's Lair stands today and not the state the plot was
   against. There is no line to write that the item supports and the atlas can
-  hold. Q105570 does put it inside **World War II** (P361), so the day somebody
-  writes it an actor it will file itself.
+  hold. It is **filed inside `world-war-ii` all the same**, under amendment A1
+  — see §5.
 - **`covid-19-pandemic`.** Q81068910 gives **119 countries** under P17 and one
   location, Wuhan, for which the atlas holds no place. A hundred and nineteen
   actor lines would say nothing, and picking one of them would be a claim the
@@ -335,12 +335,13 @@ explanation and a confidence. The PREC's span two sources disagree about, and
 | | before | after |
 | --- | --- | --- |
 | active events | 309 | 310 |
-| **main events** (part of nothing) | **242** | **230** |
-| events naming neither an actor nor a place | **48** | **2** |
+| **main events** (part of nothing) | **242** | **229** |
+| events naming neither an actor nor a place | 48 | 2 |
+| of those, still **main** | 48 | **1** |
 | umbrellas created | — | **1** |
 
-Thirteen events found a parent: six under the First Republic, one under the
-Estado Novo, one under World War I, one under World War II, two under the
+Fourteen events found a parent: six under the First Republic, one under the
+Estado Novo, one under World War I, **two** under World War II, two under the
 Russian Civil War and two under the new Empire of Brazil. **One umbrella was
 created and five candidates were refused** — the Soviet period, the First
 Brazilian Republic, the Balkan Wars, and the Cold War and the PREC the brief
@@ -349,3 +350,46 @@ told this run to leave alone.
 Nothing here is a causal claim and no edge was written. `parent` stays a
 display fact, and the forty-six records that gained a line gained no assertion
 about why anything happened — only who did it and where.
+
+## 5. Amendment A1 — bareness is not a defect, and the 20 July plot is filed
+
+The owner, 21 September, after this measurement was written: *"It's fine to
+have no actor or place, you have to read the context. Consider covid pandemic
+for example."*
+
+**The framing above is corrected by that and the correction is worth stating
+plainly.** §1 counted the forty-eight as a fault to be cleared, and the table
+read the drop from 48 to 2 as the milestone's achievement. It is not. **A
+pandemic, a crash, a treaty system has no single actor and no one place**, and
+a line written to give it one would be a claim the record does not support —
+which is why `covid-19-pandemic`, with 119 countries on its item, was left
+alone here and is right to be left alone. What the first job did that was
+worth doing is narrower than §2 claimed: it wrote **the lines the source
+already had and the record was missing**, and it wrote none where the source
+gives none. That distinction, and not the count, is what the job was.
+
+**What A1 changes about the second job** is that an event naming neither can
+still be filed, from its context — its title, its summary, the sources it
+cites — recorded case by case, with the filing note standing in for a property
+that cannot be asked of a record with nothing on it.
+
+**One event is filed under it: `20-july-plot`, into `world-war-ii`.** The
+context is the record's own and none of it is new here: its item Q105570 gives
+`part of` **World War II** (P361), its own summary quotes the item's
+description — *"attempt to assassinate Adolf Hitler, 1944"* — and 20 July 1944
+is inside the war's span of 1939-09-01 to 1945-09-02. The plot against the head
+of the German state, in the middle of the war, by officers of its army, is part
+of the war in the way a decree is part of a regime. Nothing was written on the
+record but the `parent`: **no actor line was invented to justify it**, which is
+the whole point of the amendment.
+
+**`covid-19-pandemic` gains no parent**, because there is nothing here for it
+to be part of — it is itself an umbrella, and it already holds
+`covid-19-pandemic-in-europe`. It is the amendment's own example and it stays
+exactly as it is.
+
+`tests/m67.test.mjs` holds the new clause in both directions: the subject
+property is not asked of a child with nothing on it, and every such child must
+be named in this document, so a filing made on context and not argued for here
+fails. `tests/m62.test.mjs` gained the same clause, and nothing else in it
+moved.

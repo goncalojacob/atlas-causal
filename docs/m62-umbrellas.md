@@ -339,10 +339,19 @@ changed; the records caught up with them.
 inside 1910-10-05 – 1926-05-28. **`estado-novo-1933-1974` gained**
 `1951-portuguese-presidential-election` on the same ground.
 
-**`world-war-ii` gained `winter-war`**, which is not from §4.1's list: it named
-nothing until M67 gave it `finland` and `soviet-union` from Q134949, and that
-item also puts it inside the Second World War. The five this document refused
-for the war are still refused, `bretton-woods-system` with them.
+**`world-war-ii` gained `winter-war` and `20-july-plot`.** Neither is from
+§4.1's list. The Winter War named nothing until M67 gave it `finland` and
+`soviet-union` from Q134949, and that item also puts it inside the Second
+World War. **`20-july-plot` still names neither an actor nor a place and is
+filed all the same**, under amendment A1 of M67's brief — the owner, 21
+September: *"It's fine to have no actor or place, you have to read the
+context."* Its context is on the record: Q105570 gives `part of` World War II,
+its summary quotes the item's *"attempt to assassinate Adolf Hitler, 1944"*,
+and 20 July 1944 is inside the war's span. The subject property of §3 cannot be
+asked of a record with nothing on it, so `tests/m62.test.mjs` admits that case
+and the filing note carries it instead; nothing else about §3 moved. The five
+this document refused for the war are still refused, `bretton-woods-system`
+with them.
 
 The two boundary acts, `republic-proclaimed-1910` and `coup-28-may-1926`, are
 where §4.1 left them, and so is every other refusal above.
