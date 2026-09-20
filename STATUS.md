@@ -12944,6 +12944,22 @@ this milestone writes no edge.
      because `russian-civil-war` already existed as an event and had never held
      a child.
 
+912. **The check went red once on a head that was not this milestone's, and
+     green on the one that was.** The run on `M67 done` (`eed0c5ee`) was
+     cancelled by a push from another session two minutes later, and the run on
+     that session's head failed twice over: `workflows.test.mjs` on the
+     `validate.yml` it had just changed, which is that session's to answer, and
+     `lens-browser.test.mjs` on *"graph drew `the-brazilian-coffee-cycle`, which
+     the walk does not touch"*. The second is **deviation 488 happening again** —
+     that suite failed once in twelve runs in M30b and was recorded then because
+     it is named as a flake nowhere — and it is the graph's own assertion, the
+     one view the test reads without first waiting for the walk to be drawn,
+     because the opening zoom means only part of a long walk ever is. It passed
+     three times in a row here afterwards. **The run at `eed0c5ee` was re-run and
+     is green in every step**, the index check included. The test was not
+     touched: a barrier added to a race is worth having, but not from a run that
+     would be adding it to make its own check pass.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
