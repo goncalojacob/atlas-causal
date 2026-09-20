@@ -11,6 +11,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { withBrowser, open, waitFor, skip } from './browser.mjs';
+import { ROW_LIMITS } from '../src/timeline.js';
+import { GLYPH_BOX } from '../src/map/glyphs.js';
 
 // The timeline is the third view since M60, so every URL here names it: the
 // map is what a link with no `?view=` opens on, and the lanes are drawn when
@@ -33,6 +35,7 @@ const FIT = `
   return {
     lanes: lanes.length,
     laneHeight: lanes.length ? Number(lanes[0].getAttribute('height')) : 0,
+    lastLane: lanes.length ? Number(lanes[lanes.length - 1].getAttribute('height')) : 0,
     bars: bars.length,
     svgHeight: Number(svg.getAttribute('height')),
     lowestLane: lanes.length ? Math.max(...lanes.map(bottom)) : 0,
@@ -507,16 +510,40 @@ test('a bar wide enough carries its category, and one below the threshold does n
       assert.ok(bar.width >= 10 && bar.height >= 10, `${bar.id} is ${bar.width} x ${bar.height}`);
     }
 
-    // Under the default grouping a bar is eight pixels tall and none of them
-    // reaches the threshold, on the fixtures or on the repository's data.
-    await open(page, url(on('fixtures=1')), READY);
-    await waitFor(page, 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;', 'the packed rows');
-    const packed = await page.eval(`return {
+    // Under the default grouping the bar is what is left of the packed row
+    // once the air round it is taken off, so the threshold is a question about
+    // the pane. Squeezed — a row at its floor — the bar is under the symbol
+    // and none is drawn, which is what a packed row looked like everywhere
+    // before M66 let the rows take the room a tall pane has going spare. The
+    // rule is the same one either way: the symbol follows the bar's size.
+    const PACKED = `return {
       heights: [...new Set([...document.querySelectorAll('#timeline rect.bar[data-id]')].map((b) => Number(b.getAttribute('height'))))],
-      glyphs: document.querySelectorAll('#timeline use.glyph').length,
-    };`);
-    assert.deepEqual(packed.heights, [8], 'a packed row leaves the bar eight pixels');
-    assert.equal(packed.glyphs, 0, 'and eight is below the symbol, so none is drawn');
+      glyphs: [...document.querySelectorAll('#timeline use.glyph')].length,
+    };`;
+    await page.send('Emulation.setDeviceMetricsOverride', {
+      mobile: false, width: 1280, height: 250, deviceScaleFactor: 1,
+    });
+    await waitFor(page, 'return innerHeight === 250;', 'the window to be short');
+    await open(page, url(on('from=1900&to=1999')), READY);
+    await waitFor(page, 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;', 'the packed rows');
+    const squeezed = await page.eval(PACKED);
+    for (const height of squeezed.heights) {
+      assert.ok(height < GLYPH_BOX, `a squeezed row leaves the bar under the symbol (${height})`);
+    }
+    assert.equal(squeezed.glyphs, 0, 'so none is drawn');
+
+    // And with the room to grow, the packed rows clear it and the same rule
+    // puts a symbol on every bar that is also wide enough, and on no other.
+    await page.send('Emulation.setDeviceMetricsOverride', {
+      mobile: false, width: 1280, height: 900, deviceScaleFactor: 1,
+    });
+    await waitFor(page, 'return innerHeight === 900;', 'the window to be tall again');
+    await open(page, url(on('from=1900&to=1999')), READY);
+    await waitFor(page, 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;', 'the packed rows again');
+    const roomy = await page.eval(PACKED);
+    for (const height of roomy.heights) {
+      assert.ok(height > Math.max(...squeezed.heights), `a row with room leaves more of it to the bar (${height})`);
+    }
   }, { device: { width: 1280, height: 900, deviceScaleFactor: 1 } });
 });
 
@@ -711,4 +738,64 @@ test('past the margin the corpus is a density strip, and it covers the compresse
         `${bar.id} is inside the drawing (${bar.x}…${bar.x + bar.width} of ${seen.width})`);
     }
   }, { device: { width: 1440, height: 900, deviceScaleFactor: 1 } });
+});
+
+// M66. The rows were still sized for the strip the timeline was before M60
+// gave it the whole view: twenty of them at 22 px under a 795 px pane, with
+// 304 px of empty ground below the bottom one drawn as one enormous last lane.
+// It read as a drawing that had stopped early. The rows grow into the room
+// now, as far as a cap (docs/m66-rows.md), and what this asserts is the
+// property and not either number: nothing is left under the bottom row that a
+// row could have had.
+test('on a tall pane the rows take the room, and nothing is left under the bottom one', { skip }, async () => {
+  const { ROW_HEIGHT, LANE_MAX } = ROW_LIMITS;
+  await withBrowser(async (page, url) => {
+    await open(page, url(on('from=1900&to=1999')), READY);
+    const fit = await page.eval(FIT);
+    fits(fit, 'a 900 px window');
+    assert.ok(fit.lanes > 1 && fit.bars > 0, `the atlas drew something (${fit.lanes} lanes, ${fit.bars} bars)`);
+    // The rows are taller than the height they would have settled for, which
+    // is the whole of the change.
+    assert.ok(fit.laneHeight > ROW_HEIGHT,
+      `a row takes more than the strip's height (${fit.laneHeight} of ${ROW_HEIGHT})`);
+    assert.ok(fit.laneHeight <= LANE_MAX, `and never more than the cap (${fit.laneHeight})`);
+    // And the drawing reaches the bottom of the pane: the last lane is a lane
+    // like the others and not the leftover strip it used to be. A pixel of
+    // slack for the rounding the drawing's own height is made of.
+    assert.ok(fit.lastLane <= fit.laneHeight + 1,
+      `no band of empty ground under the bottom row (${fit.lastLane} against ${fit.laneHeight})`);
+  }, { device: { width: 1440, height: 900, deviceScaleFactor: 1 } });
+});
+
+// Taller still, and the cap is what stops the rows rather than the room: a
+// timeline of stripes would be no better a drawing than one that stopped
+// early. The pane is the drawing either way — the last lane carries the
+// remainder, as it has since the lanes were laid into a measured pane.
+test('on a very tall pane the rows stop at their cap', { skip }, async () => {
+  const { LANE_MAX } = ROW_LIMITS;
+  await withBrowser(async (page, url) => {
+    await open(page, url(on('from=1900&to=1999')), READY);
+    const fit = await page.eval(FIT);
+    fits(fit, 'a 1400 px window');
+    assert.equal(fit.laneHeight, LANE_MAX, `the rows are at the cap (${fit.laneHeight})`);
+  }, { device: { width: 1440, height: 1400, deviceScaleFactor: 1 } });
+});
+
+// And the other end, which M66 leaves exactly as I6 wrote it: a pane with less
+// room than the rows need squeezes them to their floor and no further, and
+// then the drawing is taller than its pane and the pane scrolls. The reader's
+// own lane list is the one thing the row count does not come down for —
+// somebody who names four actors has said they want four lanes — so it is what
+// this asks with, on the fixtures, whose actors are four and always the same.
+test('on a short pane the floor still holds and the pane scrolls', { skip }, async () => {
+  const { MIN_LANE_HEIGHT } = ROW_LIMITS;
+  await withBrowser(async (page, url) => {
+    await open(page, url(on('fixtures=1&group=actor&lanes=fixture-actor-one,fixture-actor-two,fixture-polity-three,fixture-polity-four')), READY);
+    const fit = await page.eval(FIT);
+    assert.ok(fit.lanes >= 4, `the reader's lanes are all drawn (${fit.lanes})`);
+    assert.equal(fit.laneHeight, MIN_LANE_HEIGHT, `squeezed to the floor and no further (${fit.laneHeight})`);
+    assert.ok(fit.svgHeight > fit.paneHeight,
+      `the drawing is taller than the pane (${fit.svgHeight} of ${fit.paneHeight})`);
+    assert.equal(fit.scrollHeight, fit.svgHeight, 'so the pane scrolls it rather than cutting it off');
+  }, { device: { width: 1280, height: 250, deviceScaleFactor: 1 } });
 });

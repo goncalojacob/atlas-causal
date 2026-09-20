@@ -385,6 +385,32 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&from=1900&to=1999&band=open',
     width: 1440, height: 900,
     what: 'the band open over the map: two handles to sweep, and where the events are under them' },
+
+  // M66, the two the owner handed over.
+  //
+  // The graph at the zoom M61 took `m61-labels-close` at, over the same mark
+  // and through the same frame, so the two files go side by side: the letters
+  // are the size they were and the paper band behind them is the width it is
+  // at the world view, where it used to be six times that and closing on the
+  // letters.
+  { name: 'm66-graph-zoom', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=graph&zoom=8&at=the-base-reforms-rally-1964',
+    width: 1440, height: 900,
+    what: 'a handful of nodes at MAX_ZOOM: the halo the width it is at the world view' },
+  // And the timeline on the window every other shot is taken at, so it goes
+  // beside m60-timeline and m65-timeline-rest: the twenty rows reach the
+  // bottom of the pane instead of ending 297 px above it.
+  { name: 'm66-timeline', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=timeline',
+    width: 1440, height: 900,
+    what: 'the rows taking the whole pane, with no band of empty ground under the bottom one' },
+  // Taller still, where the cap is what stops them rather than the room: 44 px
+  // a row, because a row tall enough to fill a 1400 px window draws an event
+  // of one year as a column taller than it is wide (docs/m66-rows.md).
+  { name: 'm66-timeline-tall', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=1400&from=1900&to=1999&view=timeline',
+    width: 1440, height: 1400,
+    what: 'a 1400 px window: the rows at their cap, and what the cap leaves rather than stripe the pane' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
