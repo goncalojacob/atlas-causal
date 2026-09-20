@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-06",
+  "revised": "2026-09-20",
   "origin": {
     "tool": "wikidata"
   },
@@ -26,7 +26,8 @@
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "m22-reinstated"
+      "m22-reinstated",
+      "m67-lined"
     ],
     "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
   },
@@ -53,7 +54,7 @@
     },
     {
       "source": "wikidata",
-      "locator": null
+      "locator": "Q2518953"
     }
   ],
   "title": "Treaty of Windsor",
@@ -65,5 +66,16 @@
   "place": null,
   "region": "europe",
   "category": "treaty",
-  "actors": []
+  "actors": [
+    {
+      "actor": "united-kingdom",
+      "role": "signatory",
+      "note": "Q2518953 gives the United Kingdom as one of the two countries of the declaration"
+    },
+    {
+      "actor": "portugal",
+      "role": "signatory",
+      "note": "Q2518953 gives Portugal as the other"
+    }
+  ]
 }

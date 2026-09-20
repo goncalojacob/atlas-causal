@@ -9,18 +9,23 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-20",
   "origin": {
     "tool": "wikidata"
   },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m67-lined"
     ]
   },
   "wikidata": "Q865344",
@@ -48,5 +53,16 @@
   "place": null,
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "actors": []
+  "actors": [
+    {
+      "actor": "united-nations",
+      "role": "institution",
+      "note": "Q865344 gives it as a United Nations treaty and a United Nations conference resolution"
+    },
+    {
+      "actor": "france",
+      "role": "host",
+      "note": "Q865344 places its adoption at Paris and gives France as its country"
+    }
+  ]
 }

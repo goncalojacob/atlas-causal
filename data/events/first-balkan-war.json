@@ -9,11 +9,15 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-20",
   "origin": {
     "tool": "wikidata"
   },
@@ -21,7 +25,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "imported-names"
+      "imported-names",
+      "m67-lined"
     ]
   },
   "wikidata": "Q177918",
@@ -55,5 +60,31 @@
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "ottoman-empire",
+      "role": "belligerent",
+      "note": "Q177918 gives the Ottoman Empire as a participant"
+    },
+    {
+      "actor": "bulgaria",
+      "role": "belligerent",
+      "note": "Q177918 gives the Kingdom of Bulgaria as a participant"
+    },
+    {
+      "actor": "serbia",
+      "role": "belligerent",
+      "note": "Q177918 gives the Kingdom of Serbia as a participant"
+    },
+    {
+      "actor": "greece",
+      "role": "belligerent",
+      "note": "Q177918 gives the Kingdom of Greece as a participant"
+    },
+    {
+      "actor": "montenegro",
+      "role": "belligerent",
+      "note": "Q177918 gives the Kingdom of Montenegro as a participant"
+    }
+  ]
 }

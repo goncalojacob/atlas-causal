@@ -9,18 +9,23 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-06",
+  "revised": "2026-09-20",
   "origin": {
     "tool": "wikidata"
   },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m67-lined"
     ]
   },
   "wikidata": "Q21714338",
@@ -48,5 +53,21 @@
   "place": null,
   "region": "europe",
   "category": "election",
-  "actors": []
+  "actors": [
+    {
+      "actor": "teixeira-gomes",
+      "role": "elected",
+      "note": "Q21714338 gives him as the successful candidate"
+    },
+    {
+      "actor": "bernardino-machado",
+      "role": "candidate",
+      "note": "Q21714338 gives him as the other candidate"
+    },
+    {
+      "actor": "first-portuguese-republic",
+      "role": "government",
+      "note": "the regime whose presidency was filled; Q21714338 places the election in Portugal"
+    }
+  ]
 }
