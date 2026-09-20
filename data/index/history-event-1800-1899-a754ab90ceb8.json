@@ -355,6 +355,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review"
+          ],
+          "on": "2026-09-20"
         }
       ]
     },
@@ -423,6 +431,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review"
+          ],
+          "on": "2026-09-20"
         }
       ]
     },
@@ -701,6 +717,14 @@
             "category"
           ],
           "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "actors",
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-20"
         }
       ]
     }
