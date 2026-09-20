@@ -169,3 +169,13 @@ M45a is gated on `M38 done`, which is already written. **M45b is gated on
 `M45a done` and on the owner having looked at M45a's two screenshots**, because
 if the ground reads well enough at M45a then the bands may want different tints
 — or, if it reads badly, the fault is not the data and 6 MB would not fix it.
+
+## Amendments after review
+
+**A1 (20 September). The grid is committed.** `vendor/elevation/etopo5-10min.i2` — ETOPO5 averaged 2 × 2 to 10 arc-minutes, 2160 × 1080 int16 little-endian metres, row 0 at 90° N, column 0 at 0° E running east; 4,665,600 bytes raw, 3.3 MB gzipped, sha256 in `vendor/SHA256SUMS`; `vendor/README.md` has the derivation and the ground it was checked against. §2.1's "at most 8 MB" holds with room. **A `fetch` in the tool is still a bug**: the file is here.
+
+**A2 (20 September). The owner's gate is met by the owner's word.** §2 gated M45b on the owner having looked at M45a's screenshots. On 20 September the owner authorised everything left including the backlog, which this is; the run proceeds on that and says so in `STATUS.md`.
+
+**A3 (20 September). Relief is ground, not a lens.** M65 has landed since this brief: at rest the views draw only the main events and choosing one hides the rest. **`relief` is a base layer and takes no part in that** — it is drawn under everything whatever is chosen, like the coastline; the lens never hides ground.
+
+**A4 (20 September). The ceiling in §2.5 stands at 6 MB** and the owner has not moved it. Land what fits; say what was coarsened.
