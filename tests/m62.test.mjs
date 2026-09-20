@@ -95,14 +95,25 @@ test('every umbrella cites a source for that span', () => {
 // this property admits into the Second World War that do not belong there.
 // The judgement is in the document; this is the floor it may not go under.
 
+// One clause was added in M67, under amendment A1 of its brief — the owner on
+// 21 September: *"It's fine to have no actor or place, you have to read the
+// context. Consider covid pandemic for example."* A record that names neither
+// is not a defective record, and the property above cannot be asked of it at
+// all: there is nothing on it to intersect with. Where that is the case the
+// **filing note** stands in, and `the measurement names every event filed
+// under one`, below, is what holds it — the document has to say what context
+// placed the event, or the filing fails there instead. Nothing else moved:
+// a child that does name an actor or a place is held to exactly what M62
+// wrote.
 test("every child's actors or place put it inside its umbrella", () => {
   for (const u of umbrellas) {
     const mine = actorsOf(u);
     for (const child of childrenOf(u.id)) {
       const shared = [...actorsOf(child)].filter((a) => mine.has(a));
       const samePlace = typeof child.place === 'string' && child.place === u.place;
+      const namesNeither = (child.actors ?? []).length === 0 && typeof child.place !== 'string';
       assert.ok(
-        shared.length > 0 || samePlace,
+        shared.length > 0 || samePlace || namesNeither,
         `${child.id} is filed inside "${u.id}" and neither its actors nor its place say it belongs there`,
       );
     }

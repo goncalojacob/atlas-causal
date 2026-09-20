@@ -186,17 +186,42 @@ test('no umbrella created here is an umbrella over nothing', () => {
   }
 });
 
+// Amendment A1 of the brief, the owner on 21 September: *"It's fine to have no
+// actor or place, you have to read the context. Consider covid pandemic for
+// example."* A pandemic, a crash, a treaty system has no single actor and no
+// one place, and a line written to give it one would be a claim the record
+// does not support — so bareness is not a defect and not a bar to being filed.
+// What stands in for the property there is **the filing note**: where a record
+// names neither, the measurement has to say what context placed it, and the
+// document naming it is what this can check. It is the weaker test on purpose
+// and only where the stronger one cannot be asked.
+const inSubject = (child, mine, umbrella) => {
+  if ([...actorsOf(child)].some((a) => mine.has(a))) return true;
+  if (typeof child.place === 'string') return child.place === umbrella.place;
+  return (child.actors ?? []).length === 0;
+};
+
 test("every child's actors or place put it inside its umbrella", () => {
   for (const u of umbrellas) {
     const mine = actorsOf(u);
     for (const child of childrenOf(u.id)) {
-      const shared = [...actorsOf(child)].filter((a) => mine.has(a));
-      const samePlace = typeof child.place === 'string' && child.place === u.place;
       assert.ok(
-        shared.length > 0 || samePlace,
+        inSubject(child, mine, u),
         `${child.id} is filed inside "${u.id}" and neither its actors nor its place say it belongs there`,
       );
     }
+  }
+});
+
+test('a child that names neither is one the measurement argues for', () => {
+  assert.ok(doc.length > 0, `${DOC} is missing`);
+  for (const child of active) {
+    if (typeof child.parent !== 'string') continue;
+    if ((child.actors ?? []).length > 0 || typeof child.place === 'string') continue;
+    assert.ok(
+      doc.includes(`\`${child.id}\``),
+      `${child.id} names neither an actor nor a place and is filed inside "${child.parent}" with nothing said about why`,
+    );
   }
 });
 
