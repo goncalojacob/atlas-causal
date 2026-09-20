@@ -76,3 +76,18 @@ are main now against 242 and how many still name nothing; `validate --index`
 clean; tests green; `M67 done`.
 
 ## Deviations this brief takes, numbered on from the last in `STATUS.md`
+
+## Amendments after review
+
+**A1 (21 September). An event with no actor and no place is not a defect.**
+The owner: *"It's fine to have no actor or place, you have to read the
+context. Consider covid pandemic for example."* §1 called the forty-eight
+"bare" as if bareness were the fault; it is not. A pandemic, a crash, a
+treaty system has no single actor and no one place, and a line written to
+give it one would be a claim the record does not support. **What §2 asked
+for stands where it was honest** — a line read off the source the record
+already cites — and **nothing is written where the source gives none.**
+Filing such an event under an umbrella is a judgement made from its context
+— its summary, its sources, its title — recorded case by case as M62 did,
+and the property test admits a child with no lines when the filing note says
+what context placed it.

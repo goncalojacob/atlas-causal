@@ -218,3 +218,14 @@ leaves the main count higher than it found it has to say why.**
 brief's own "wait for the owner" clauses no longer bind — with the standing
 exceptions: no AI-written historical claim outside the dated exception, no
 invented date, and nothing merged into `main`.
+
+**A5 (21 September). Volume must connect, not only file.** The owner: *"the
+goal is to have chains throughout the globe and time."* M44 imported 82
+events and left 45 of the world's events stranded because it wrote edges
+only among its own new records. **Every batch this run imports writes its
+edges to what already exists as well as to itself**, each from the source
+that supports it, under the confidence rules; and `docs/m42-pool.md` reports
+**the largest connected component of the causal graph before and after each
+batch**, because that is the number "chains throughout the globe and time"
+actually is. A batch that grows the corpus and not the component has to say
+why.
