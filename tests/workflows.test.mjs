@@ -103,7 +103,14 @@ test('contribution.yml runs only on the maintainer label, with the scoped PAT', 
 
 test('the index is built on main, and checked on a pull request that carries one', async () => {
   const validate = await read(WORKFLOWS, 'validate.yml');
-  assert.match(validate, /on:\s*\n\s*pull_request:/);
+  // Every pull request, and — since the two lanes of 21 September — every push
+  // to a lane branch, which carries no pull request while it runs. The keys
+  // are matched one at a time rather than as one block: the triggers gained a
+  // comment and a second key above `pull_request`, which is exactly the shape
+  // a `/on:\s*\n\s*pull_request:/` cannot see past.
+  assert.match(validate, /^on:$/m);
+  assert.match(validate, /^\s{2}pull_request:$/m);
+  assert.match(validate, /^\s{2}push:\n\s{4}branches: \['m\*'\]$/m);
   // Never built and never committed here: that is deploy.yml's, on main, so
   // two open pull requests cannot conflict on the index.
   assert.doesNotMatch(validate, /build-index/);
