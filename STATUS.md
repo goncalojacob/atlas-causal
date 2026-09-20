@@ -13,6 +13,22 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-20, after **M67** (`docs/m67-brief.md`, on `m0`): **the rest of the
+corpus finds its parents.** M65 left the resting picture at 242 of 309 main
+events and said it would not feel like much until more of the 242 had somewhere
+to hang — and the reason they had nowhere was that **forty-eight of them named
+no actor and no place at all**, so no rule that reads a record could file them.
+Forty-six were given the line they were missing, read off the Wikidata item each
+record already cited and cited on the line; the two that could not be are listed
+in `docs/m67-umbrellas.md`. Then the umbrellas were measured again: **thirteen
+events found a parent** and **one umbrella, the Empire of Brazil, was written**.
+**Main events: 242 of 309 → 230 of 310. Events naming neither an actor nor a
+place: 48 → 2.** World War I was re-measured and gained one, the Arab Revolt;
+the Russian Civil War became an umbrella at no cost. Refused, with the
+measurement to say why: the Soviet period, the First Brazilian Republic and the
+Balkan Wars, whose end date the source contradicts itself about. No edge, no
+causal claim, no invented actor and no invented date.
+
 2026-09-18, after **M66** (`docs/m66-brief.md`, on `m0`): **two the owner handed
 over.** The halo behind a graph label was a stroke inside the group the zoom
 scales, so it grew with the picture while the letters held their size — 2 px at
@@ -12740,6 +12756,193 @@ against it**.
      `-m`. It was already pushed, and `m0` is a branch other runs fetch, so it
      was left rather than amended and force-pushed. The lesson is the escaping,
      not the rewrite.
+
+## M67 — the rest of the corpus finds its parents
+
+The owner, 20 September: *"you can do everything that is left including what
+was in the backlog."* The first thing left was the one M65 named out loud: the
+resting picture is the main events, **242 of 309**, and *"will not feel like
+much until far more of the 242 have somewhere to hang."*
+
+**The reason they had nowhere to hang was that forty-eight of them said
+nothing.** No actor, no place — so no rule that reads a record could file them,
+which is exactly why M62 refused World War I (*"eight of them name no actor at
+all"*) and left seven Portuguese presidential elections flat with a note that
+the line was *"a records milestone's work, not this one's"*.
+
+**Main events: 242 of 309 → 230 of 310. Events naming neither an actor nor a
+place: 48 → 2.** `docs/m67-umbrellas.md` is the measurement and every judgement
+below is argued there, case by case.
+
+### Job one — forty-six of the forty-eight got their lines
+
+Every line was read off **the Wikidata item the record already cites**:
+`participant` (P710), `signatory` (P1891), `location` (P276), `country` (P17),
+`successful candidate` (P991), `candidate` (P726), `perpetrator` (P8031). The
+note beside each line names the claim and the item it came from, so a reviewer
+can check it without reading the document. Where the item's own citation
+carried no locator, the item's id was written into it.
+
+**No actor was created**, which the brief forbids twice: where the item names a
+body this atlas has no record for — the First Philippine Republic, the Arab
+League, the Military Junta of Chile, the Kingdom of Romania whose atlas record
+is a Historical Basemaps snapshot ending in 1885 — the note says so and the
+line is left out. Where the atlas's record for a state does not cover the year,
+another record for the same ground was used and the note says which: `china`
+for the Qing dynasty, `persia` before 1925 and `iran-persia` after it,
+`italy-sardinia` for the Kingdom of Italy, as the corpus already does on the
+two world wars.
+
+Fourteen wars got their belligerents, twelve treaties their signatories or the
+state that hosted them, ten revolutions and coups the state they happened in,
+`sayfo` the perpetrator its item names, and **the nine Portuguese presidential
+elections the regime whose presidency was filled**. Four of those nine also got
+the person elected, because the item says who won — `teixeira-gomes` in 1923,
+`craveiro-lopes` in 1951, `jorge-sampaio` in 1996, `cavaco-silva` in 2006.
+**The other five got no winner**: their items name none, the atlas holds
+`canto-e-castro` and the rest, and a name out of the assistant's own memory is
+the confident wrong fact `CLAUDE.md` forbids. One place line was written,
+**London** on `treaty-of-london`, which the item gives.
+
+**Two are still bare and are listed rather than guessed at.** `20-july-plot`,
+whose item gives a list article as its participant, a person with no record
+here as its target, and modern Poland as its country; and `covid-19-pandemic`,
+whose item gives 119 countries and one city the atlas holds no place for.
+
+### Job two — thirteen events found a parent, and one umbrella was written
+
+| umbrella | gained | cost |
+|---|---|---|
+| `first-portuguese-republic-1910-1926` | **6** — the elections M62 listed and could not file | — |
+| `estado-novo-1933-1974` | **1** — `1951-portuguese-presidential-election` | — |
+| `world-war-i` | **1** — `arab-revolt` | — |
+| `world-war-ii` | **1** — `winter-war` | — |
+| `russian-civil-war` | **2** — `finnish-civil-war`, `polish-soviet-war`; it had no children at all | — |
+| `empire-of-brazil-1822-1889` | **2** — `eusebio-de-queiros-law-1850`, `lei-aurea-1888` | **created** |
+
+**World War I was re-measured, as the brief asked, and the lines changed
+exactly one thing about it.** Eleven parentless events now fall in its span and
+the actor test returns five; four of those five were already refused by M62 on
+grounds the lines do not touch — the assassination is a month before the war
+starts, the February Revolution's subject is the Russian Revolution, the German
+Revolution begins a week before the armistice and its item puts it in the
+revolutions of 1917–1923, and `treaty-of-london` is the arguable one and was
+left flat. The eight events M62 could not read turned out to be the Portuguese
+elections of the First Republic and other countries' revolutions and civil
+wars. They had somewhere to go. It was mostly not the Great War.
+
+**Four candidates were refused, and the reasons are worth keeping:**
+
+- **The Soviet period, 1922–1991.** 103 parentless events in the span, six in
+  the subject — the Second World War, the Spanish Civil War, the
+  Molotov–Ribbentrop pact, the Winter War, the UN Charter, the Soviet–Afghan
+  war. Every one is a thing the Soviet Union was **a party to**, and being a
+  party to a thing is not being part of a period. Nesting the Second World War
+  inside the Soviet Union would say what no historian says. It is the Cold War
+  refusal in another costume, and there is a second reason: the Soviet Union is
+  an **actor** here and has never needed an event for anything to be part of.
+- **The First Brazilian Republic, 1889–1930.** Fifty-two in the span, two in
+  the subject, one of which is its own founding act. **One child under one new
+  umbrella reorganises nothing**, and the events of those years this atlas
+  holds are two long cycles that straddle both its boundaries.
+- **The Balkan Wars, 1912–1913.** On every count the strongest candidate this
+  run found — both wars carry the pair under `part of` on their own items, both
+  are inside the span, both name the same five belligerents — and refused on a
+  date: **Q165725 ends the pair on 1913-07-18 and Q184183 ends the Second
+  Balkan War on 1913-08-10**, three weeks later. Writing the umbrella on the
+  source's own span would put a child's last day outside its parent's, and
+  writing it on the child's would be a date this run made up. The year bound
+  the validator reads is 1913 either way, so the warning would not have fired —
+  which is why it is refused out loud. The same discipline refused the PREC.
+- **The Cold War and the PREC** are untouched, as the brief instructs.
+
+**No edge was written and no causal claim was made.** `parent` stays a display
+fact and the forty-six records that gained a line gained no assertion about why
+anything happened — only who did it and where.
+
+### Tests
+
+`tests/m67.test.mjs` (18), written and committed before the records it judges
+(711, 717) and failing four of eighteen on that commit. **Nothing is named and
+no count is pinned**: the two things the run writes are found by the flags they
+carry, `m67-lined` and `m67-umbrella`, and everything is asserted of whatever
+carries them. Every line cites a source that resolves and is active; every
+actor a line names is an active record of this atlas and its dates overlap the
+event, which is the floor under the `actor-outside-when` warning; every role is
+one of `data/roles.json`'s; every umbrella has a closed, cited span and no
+child of one is outside its subject; rule 24 holds over the whole atlas and no
+child is dated outside its parent; the events filed outnumber the umbrellas
+written to hold them, which is how the main count falls without a number in a
+test; and the measurement accounts for every event lined, every event filed and
+every main event still bare.
+
+`validate --index` is clean: **0 errors, 1213 warnings**, with
+`actor-outside-when`, `child-outside-parent` and `no-lane` all still at zero.
+The new umbrella carries `degree-zero`, as every M62 umbrella does, because
+this milestone writes no edge.
+
+### Deviations
+
+905. **The network was used, from this sandbox, against Wikidata and
+     Wikipedia.** `CLAUDE.md` says the Wikidata import "has no network in this
+     sandbox — it runs in the Action", and that is still true of
+     `tools/import/wikidata.mjs`, which was not run. But a plain `fetch` to
+     `www.wikidata.org` answers here, and every line this run wrote was read
+     off the item the record already cited rather than out of the assistant's
+     memory — which is the whole reason the notes can name a property and an
+     item id. `curl` was rate-limited where `fetch` was not, which is worth
+     knowing for the next run. Nothing was written to `data/` by a tool: the
+     lines were applied by a script and the values came from the API.
+
+906. **The script that applied the lines is not in the repository.** Earlier
+     one-time migrations were kept under `tools/migrate/` "as documentation".
+     This one was kept in the scratchpad and **the table it applied is
+     `docs/m67-umbrellas.md` §2 instead**, record by record, with the property
+     and the item beside each line. A table a person can argue with is worth
+     more here than a script nobody will run again, and the document is what
+     `tests/m67.test.mjs` holds the records against.
+
+907. **`treaty-of-london` lost a lane override the brief did not mention.** It
+     gained the place **London**, and the `regionNote` it carried said in so
+     many words that the event "points at no place record, so the timeline has
+     nothing else to go on". Both the override and its note were cleared, so
+     the lane derives from London's own point, which is the same lane. Leaving
+     a note that had become false beside a value that had become redundant
+     would have been worse than the edit.
+
+908. **`xinhai-revolution` gained a `review.status` this run did not set out to
+     write.** It carried `review.flags` and no `status`; adding the draft
+     author to it made migration 4 derive one on read, and the file on disk
+     stopped being what an unedited save of it writes — `tests/bundle.test.mjs`
+     says so. It now says `draft` itself, which is what the migration would
+     have written. It is the only record in `data/` that was in that state.
+
+909. **Two documents of earlier milestones were edited, because their
+     correspondence tests read the live corpus.** `docs/m53-polities.md` §4.1
+     gains a fourth measurement row — **306 of 310 active events name an actor
+     alive at their start, and the fifty that named nobody are down to four** —
+     which is what `tests/m53.test.mjs` asks of the *last* row of that table.
+     `docs/m62-umbrellas.md` gains an addendum naming the seven elections it
+     found and could not file, and `winter-war`, because `tests/m62.test.mjs`
+     asks that its measurement account for every child of its own umbrellas.
+     **No judgement, verdict or span in either document was changed.**
+
+910. **One existing browser test was changed.** `a merged line carries its
+     count and its type` took the banded picture **at the default window** and
+     asserted that some line merges there. Filing thirteen events under parents
+     made that picture less crowded — which is what M62 and M65 are for — and
+     it merged none, while the ungrouped picture at the same window still
+     merged two. What the test is about is what a *merged* line carries, so it
+     now takes the picture the test above it takes, the whole extent with no
+     degree floor, where twenty lines merge. **The claim is unchanged**; the
+     instrument is, for the reason M50 gave the neighbouring test.
+
+911. **One umbrella was created where the brief suggested three might be.** The
+     Empire of Brazil is the only candidate that qualified. The First Brazilian
+     Republic, the Soviet period and the Balkan Wars were measured and refused
+     for the reasons above; the Russian chain got its umbrella at no cost,
+     because `russian-civil-war` already existed as an event and had never held
+     a child.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
