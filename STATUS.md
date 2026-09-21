@@ -14028,6 +14028,28 @@ that alone, because a second source thickens an edge and a person decides
 
 ### Deviations
 
+1009. **Deviation 595's thirty-second browser deadline is still the check's one
+     flake, and batch 17 hit it.** The `validate` run on batch 17's head went
+     red on a single browser test — `"Edit this record" on a card opens the
+     form on that record`, the **first** browser test of
+     `tests/contribute-browser.test.mjs` — with `withBrowser`'s own assertion,
+     `headless Chromium opened a debugging port`, at `duration_ms: 30107`. The
+     second red line, `# cancelled 1`, is that same suite timing out at 120 s
+     behind the browser that never answered; the runner's cleanup then
+     terminated it as an orphan, so Chromium had started and simply not opened
+     its port inside the deadline. 595 recorded this exact shape — *"always on
+     the first browser test of a file"* — and made the child's output readable,
+     which is why the failure now quotes Chromium's dbus noise; **the dbus
+     lines are not the fault and reading them as one would be the mistake 595
+     was written to prevent.** One re-run of the failed job, which is the one
+     the rules allow for confirming a failure a diff of records, index and docs
+     cannot have caused, came back **green**, and the same suite passes in the
+     sandbox on the same tree: 1,630 of 1,630 pure and 196 of 196 browser, none
+     skipped. Recorded rather than left for the next fire to re-diagnose, and
+     recorded as a deadline that is still marginal on a four-core runner that
+     has just finished 137 pure suites — **not** as load in the M63 sense,
+     which `--test-concurrency=1` already answers.
+
 1008. **Deviation 999 recurred one day after it was written, in the same
      shape.** A hand-written source record for batch 17 carried
      `"pages": null` inside its `container`, and `tools/lib/order.mjs` does
