@@ -78,6 +78,26 @@ const LAID_OUT_FOR_ITS_PANE = (height) => `
   const drawn = Number(svg.getAttribute('height'));
   return drawn ${height} && pane.scrollHeight === drawn;`;
 
+// The drawing, read once it is the drawing of the pane it is in. `READY` is a
+// lane existing, which is as true of the first layout as of the settled one:
+// the masthead wraps and a scrollbar comes and goes, so the timeline is laid
+// out twice on an ordinary visit and `fits`'s own first assertion — the pane
+// holds the drawing and nothing else — is false in between. Measured on a page
+// nobody had resized: one run in six read `a 1400 px window: 1295 !== 1276`
+// (M78, docs/m78-flakes.md). So the wait is that assertion, and `fits` still
+// makes it: a drawing that never settles is reported by the assertion, with
+// both numbers, and not as a timeout.
+const SETTLED = `
+  const pane = document.querySelector('.timeline-area');
+  const svg = document.querySelector('#timeline svg.timeline');
+  if (!pane || !svg) return false;
+  return pane.scrollHeight === Number(svg.getAttribute('height'));`;
+
+const fitOf = async (page) => {
+  await until(page, SETTLED);
+  return page.eval(FIT);
+};
+
 // The same assertions wherever the pane's height comes from.
 function fits(fit, where) {
   assert.equal(fit.scrollHeight, fit.svgHeight, `${where}: the pane holds the drawing and nothing else`);
@@ -94,7 +114,7 @@ function fits(fit, where) {
 test('at a window 500 px tall every lane is inside the timeline pane', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url(on()), READY);
-    const fit = await page.eval(FIT);
+    const fit = await fitOf(page);
     assert.equal(fit.windowHeight, 500);
     assert.ok(fit.lanes > 1 && fit.bars > 0, `the atlas drew something (${fit.lanes} lanes, ${fit.bars} bars)`);
     fits(fit, 'a 500 px window');
@@ -105,7 +125,7 @@ test('when the rows have the room they take it, and the pane does not scroll', {
   await withBrowser(async (page, url) => {
     // Eleven fixture events pack into a handful of rows, which fit.
     await open(page, url(on('fixtures=1')), READY);
-    const fit = await page.eval(FIT);
+    const fit = await fitOf(page);
     fits(fit, 'the fixtures at 500 px');
     assert.equal(fit.svgHeight, fit.paneHeight, 'the drawing is exactly the pane');
     assert.ok(fit.lowestBar <= fit.paneHeight, 'so the bottom row is on screen without scrolling');
@@ -129,7 +149,7 @@ test('when the rows have the room they take it, and the pane does not scroll', {
 test('the rows are laid out again when the window changes height', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url(on('fixtures=1')), READY);
-    const tall = await page.eval(FIT);
+    const tall = await fitOf(page);
     fits(tall, 'a 900 px window');
     assert.equal(tall.svgHeight, tall.paneHeight, 'the drawing is exactly the pane');
 
@@ -156,7 +176,7 @@ test('the rows are laid out again when the window changes height', { skip }, asy
     // pane it was measured against is gone.
     await until(page, LAID_OUT_FOR_ITS_PANE(`!== ${tall.svgHeight}`));
 
-    const short = await page.eval(FIT);
+    const short = await fitOf(page);
     fits(short, 'after the window was made short');
     assert.equal(short.lanes, tall.lanes, 'the same rows: the count is what the titles need');
     assert.ok(short.laneHeight < tall.laneHeight,
@@ -168,7 +188,7 @@ test('the rows are laid out again when the window changes height', { skip }, asy
       mobile: false, width: 1280, height: 900, deviceScaleFactor: 1,
     });
     await until(page, LAID_OUT_FOR_ITS_PANE(`=== ${tall.svgHeight}`));
-    const back = await page.eval(FIT);
+    const back = await fitOf(page);
     fits(back, 'back at 900 px');
     assert.equal(back.laneHeight, tall.laneHeight, 'and the height the taller pane gave is back');
   }, { device: { width: 1280, height: 900, deviceScaleFactor: 1 } });
@@ -183,12 +203,12 @@ test('the rows are laid out again when the window changes height', { skip }, asy
 test('the pane is the drawing, with a box in force as without one', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url(on()), READY);
-    fits(await page.eval(FIT), 'with no box');
+    fits(await fitOf(page), 'with no box');
     assert.equal(await page.eval('return document.querySelectorAll(".timeline-area p").length;'), 0,
       'nothing above the lanes but the lanes');
 
     await open(page, url(on('bbox=-10,36,-6,43')), READY);
-    const fit = await page.eval(FIT);
+    const fit = await fitOf(page);
     fits(fit, 'with a box');
     assert.equal(fit.scrollHeight, fit.svgHeight, 'the pane holds the drawing and nothing else');
     assert.ok(fit.lowestBar <= fit.svgHeight);
@@ -754,7 +774,7 @@ test('on a tall pane the rows take the room, and nothing is left under the botto
     // carries its title, that takes more rows than a pane holds, and the rows
     // are at their floor with the pane scrolling — which is the test below.
     await open(page, url(on('fixtures=1')), READY);
-    const fit = await page.eval(FIT);
+    const fit = await fitOf(page);
     fits(fit, 'a 900 px window');
     assert.ok(fit.lanes > 1 && fit.bars > 0, `the atlas drew something (${fit.lanes} lanes, ${fit.bars} bars)`);
     // The rows are taller than the height they would have settled for, which
@@ -783,7 +803,7 @@ test('on a very tall pane the rows stop at their cap', { skip }, async () => {
   const { LANE_MAX } = ROW_LIMITS;
   await withBrowser(async (page, url) => {
     await open(page, url(on('fixtures=1')), READY);
-    const fit = await page.eval(FIT);
+    const fit = await fitOf(page);
     fits(fit, 'a 1400 px window');
     assert.equal(fit.laneHeight, LANE_MAX, `the rows are at the cap (${fit.laneHeight})`);
   }, { device: { width: 1440, height: 1400, deviceScaleFactor: 1 } });
@@ -800,8 +820,12 @@ test('when the titles need more rows than the pane holds, the floor holds and th
   const { ROW_HEIGHT } = ROW_LIMITS;
   await withBrowser(async (page, url) => {
     await open(page, url(on('from=1900&to=1999')), READY);
-    await waitFor(page, 'return document.querySelectorAll("#timeline text.bar-label").length > 0;', 'the titles');
-    const fit = await page.eval(FIT);
+    // How many rows the titles need is the whole question here, so the wait is
+    // that they are all in — not that one label has been drawn, which is true
+    // while the rest of the centuries are still arriving and the rows are still
+    // being counted.
+    await until(page, BARS_NAMED);
+    const fit = await fitOf(page);
     assert.equal(fit.laneHeight, ROW_HEIGHT, `at the floor and no further (${fit.laneHeight})`);
     assert.ok(fit.svgHeight > fit.paneHeight,
       `the drawing is taller than the pane (${fit.svgHeight} of ${fit.paneHeight})`);
