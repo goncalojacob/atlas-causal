@@ -13657,16 +13657,17 @@ batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
 every edge. **The milestone is not done**: §7 of the pool file says where it
 stands and what the next fire does.
 
-**Thirteen batches.** The pool before: 310 active events, 229 of them main, 362
+**Fourteen batches.** The pool before: 310 active events, 229 of them main, 362
 active edges, a largest connected component of 254 and 23 events with no edge.
-**After batch 13: 423 active, 326 main, 97 filed, 513 edges, largest component
-400, 3 with no edge.** Forty-seven records came back from the tombstones and
-seventy-two were imported and kept; a hundred and forty-three edges were
+**After batch 14: 435 active, 335 main, 100 filed, 528 edges, largest component
+412, 3 with no edge.** Forty-seven records came back from the tombstones and
+eighty-four were imported and kept; a hundred and fifty-eight edges were
 written — eighteen in batch 0, seven in batch 1, **nineteen in batch 3, which
 imported nothing at all and moved the component by twenty-seven**, eight in
 batch 4, eleven in batch 5, eight in batch 6, eighteen in batch 7, eleven in
 batch 8, eight in batch 9, fourteen in batch 10, ten in batch 11, six in batch 12
-and fourteen in batch 13.
+fourteen in batch 13
+and fifteen in batch 14.
 
 **Batch 13 is the fourth sweep batch and the first one to grow the component as
 fast as the corpus.** Sixteen rows ticked by §5's rule over a pool recomputed
@@ -13684,6 +13685,23 @@ the Saur revolution, the Khyber Pakhtunkhwa insurgency, the Cambodian civil war
 and the murder of the Romanov family. **Step 0's tombstone pass ran first and
 came back empty** — eleven came back across batches 10 to 12, none here — which
 is reported rather than skipped, and is what the vein running thin looks like.
+
+**Batch 14 repeats batch 13 exactly, which turns a finding into a rule.** The
+same sixteen-row cap over a pool recomputed at 1,175, fifteen created and **one
+refused at the class table** — `Q1274389`, the People Power Revolution, whose
+three Wikidata classes the table does not name and none of which was added
+(1005) — twelve kept, three retracted, fifteen edges, three filings: corpus
++12, component +12, component count unmoved again. Its new records are the
+treaty of Tartu, the Declaration by United Nations, the armistice of 22 June
+1940, the Slovak national uprising, the Volhynian massacres, the fourth Geneva
+convention, the Greek–Turkish population exchange, the Two Plus Four agreement,
+the Baltic Entente, the Philippine declaration of independence, the French
+conquest of Morocco and the Merger Treaty. **So a sweep batch grows the
+component as fast as the corpus when it is willing to retract the rows with no
+neighbour** — seven of the thirty-two rows across the two batches went out on
+arrival, each with the missing record named — and that is the same result batch
+12 got from the tombstones by the opposite hand. The tombstone scan came back
+empty in both.
 
 **Batches 10 and 11 are sweep batches taken by §5's tick rule**, sets 1 and 2
 having been spent on the hinges and the bridges. The pool was recomputed each
@@ -13758,7 +13776,7 @@ of the rest were main before they were withdrawn.
 `estonian-war-of-independence` and `sino-soviet-border-conflict` are the two
 that were arguable and are listed rather than filed, which is M62 §3's rule.
 Every new record carries `actors: []`, which is M67 A1 and not a defect, and it
-is why `docs/m53-polities.md` §4.1 moves to **306 of 423** with the numerator
+is why `docs/m53-polities.md` §4.1 moves to **306 of 435** with the numerator
 standing still: the gap that row shows is the gap between an imported corpus
 and a written one, and it widens by exactly the number of records each batch
 keeps. Batch 13 files two more on the same rule and on a sentence its article
@@ -13769,12 +13787,12 @@ four of them treaties, because a treaty is not part of the war it ends.
 
 **The milestone is a long way from its done-condition and that is the honest
 reading**: the brief asks for an order of magnitude more than the 250 it was
-written against, and the corpus stands at 423 — **but 400 of those 423 are in
+written against, and the corpus stands at 435 — **but 412 of those 435 are in
 one connected component, against 254 of 310 when the run started, and three
 active events carry no edge at all, against twenty-three.** The connectedness
 the owner asked for on 21 September is substantially done; the volume is barely
-begun. The sweep's **unwalked rows** are what that volume comes from — 1,191 of
-them on batch 13's recount over the `world` sections — and at ten to twelve kept
+begun. The sweep's **unwalked rows** are what that volume comes from — 1,175 of
+them on batch 14's recount over the `world` sections — and at ten to twelve kept
 records a batch the brief's own number is many hundreds of batches away. That is
 a fact the owner should have rather than a number to be optimistic about.
 
@@ -13817,6 +13835,8 @@ of batch 13's sixteen**, each with its reason in its own record and the missing
 neighbour named. Two items refused at the class table, `Q475678` and
 `Q3771738` — the second because a *historical document* is not a kind of event,
 and one of the Kosovo declaration's two classes was enough to let it through.
+**Three of batch 14's sixteen** likewise, and one row refused at the class
+table before it was ever written — `Q1274389`, the People Power Revolution.
 **A fourth edge an article argues and an imported date forbids**, found by
 batch 13: the Second Sino-Japanese war into the Soviet–Japanese border
 conflicts, which the conflicts' own article states twice and cites to Coox,

@@ -104,6 +104,7 @@ A5: a batch that grows the corpus and not the component has to say why.
 | 11 | sets 3 and 4 a third time: 15 created, 9 kept and 6 retracted, **3 more tombstones back**, 10 edges, one filing | 405 | 311 | 94 | 493 | **382** | 3 |
 | 12 | **the tombstone pass**: one sweep row taken out of order, 5 tombstones back, 6 edges, one filing — corpus +6 and component +6 | 411 | 316 | 95 | 499 | **388** | 3 |
 | 13 | sets 3 and 4 a fourth time: 16 created, **12 kept and 4 retracted**, no tombstone back, 14 edges, two filings — corpus +12 and component +12 | 423 | 326 | 97 | 513 | **400** | 3 |
+| 14 | sets 3 and 4 a fifth time: 15 created and **one refused at the class table**, 12 kept and 3 retracted, 15 edges, three filings — corpus +12 and component +12 | 435 | 335 | 100 | 528 | **412** | 3 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -279,16 +280,18 @@ the next, so a killed run loses a batch and not the milestone.
 | batch 11 | sets 3 and 4 again: 9 kept, 6 retracted, 3 reinstated, 10 edges, 376 → 382 |
 | batch 12 | the Great Lakes joined: 1 import, 5 reinstated, 6 edges, 382 → 388 |
 | batch 13 | sets 3 and 4 a fourth time: 12 kept, 4 retracted, 0 reinstated, 14 edges, 388 → 400 |
+| batch 14 | sets 3 and 4 a fifth time: 12 kept, 3 retracted, 1 refused at the class table, 15 edges, 400 → 412 |
 
 **Where the milestone stands against its own done-condition.** The brief asks
 for an order of magnitude more active events than the 250 it was written
-against. The corpus holds **423**, up from 310, and its largest connected
-component holds **400 of them**, up from 254 — so the connectedness is nearly
+against. The corpus holds **435**, up from 310, and its largest connected
+component holds **412 of them**, up from 254 — so the connectedness is nearly
 done and the volume is barely begun. **The volume is the sweep**: the rows the
 tool has already found and nobody has walked, recomputed against `data/` at
 every ticking rather than remembered. That recount stood at 1,557 on 21
 September and again at batch 10, and batch 13 measures the same pool over the
-`world` sections alone at **1,191 rows**; the two numbers are the same rule
+`world` sections alone at **1,191 rows**, batch 14 at **1,175**, sixteen fewer,
+which is the sixteen batch 13 spent; the two numbers are the same rule
 asked of a slightly different set of sections, and the one to trust is whichever
 the batch that is ticking has just computed. §5's tick rule, written before a
 box was ticked, is how they are chosen. Batches 7, 8, 10, 11 and 13 are the ones
