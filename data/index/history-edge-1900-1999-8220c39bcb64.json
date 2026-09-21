@@ -567,6 +567,15 @@
         }
       ]
     },
+    "1995-portuguese-legislative-election--1996-portuguese-presidential-election--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "1995-portuguese-legislative-election--euro-adoption-1999--enabled": {
       "from": "git",
       "versions": [
@@ -1269,6 +1278,51 @@
         }
       ]
     },
+    "constitution-1911--1918-portuguese-presidential-election--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "constitution-1911--1919-portuguese-presidential-election--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "constitution-1911--1925-portuguese-presidential-election--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "constitution-1911--august-1915-portuguese-presidential-election--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "constitution-1911--may-1915-portuguese-presidential-election--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "constitution-1911--pimenta-de-castro-government-1915--precondition-of": {
       "from": "git",
       "versions": [
@@ -1420,6 +1474,15 @@
             "review"
           ],
           "on": "2026-09-04"
+        }
+      ]
+    },
+    "constitution-1976--2006-portuguese-presidential-election--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3386,6 +3449,15 @@
       ]
     },
     "second-sudanese-civil-war--war-in-darfur--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "sidonio-pais-assassinated-1918--1918-portuguese-presidential-election--caused": {
       "from": "git",
       "versions": [
         {

@@ -167,6 +167,7 @@
         "wikidata"
       ],
       "created": "2026-09-04",
+      "degree": 2,
       "id": "1918-portuguese-presidential-election",
       "kind": "event",
       "origin": {
@@ -200,6 +201,7 @@
         "wikidata"
       ],
       "created": "2026-09-04",
+      "degree": 1,
       "id": "1919-portuguese-presidential-election",
       "kind": "event",
       "origin": {
@@ -346,6 +348,7 @@
         "wikidata"
       ],
       "created": "2026-09-04",
+      "degree": 1,
       "id": "1925-portuguese-presidential-election",
       "kind": "event",
       "origin": {
@@ -1517,7 +1520,7 @@
         "wikidata"
       ],
       "created": "2026-09-04",
-      "degree": 2,
+      "degree": 3,
       "id": "1995-portuguese-legislative-election",
       "kind": "event",
       "origin": {
@@ -1550,6 +1553,7 @@
         "wikidata"
       ],
       "created": "2026-09-04",
+      "degree": 1,
       "id": "1996-portuguese-presidential-election",
       "kind": "event",
       "origin": {
@@ -1832,6 +1836,7 @@
         "wikidata"
       ],
       "created": "2026-09-04",
+      "degree": 1,
       "id": "2006-portuguese-presidential-election",
       "kind": "event",
       "origin": {
@@ -2763,6 +2768,7 @@
         "wikidata"
       ],
       "created": "2026-09-04",
+      "degree": 1,
       "id": "august-1915-portuguese-presidential-election",
       "kind": "event",
       "origin": {
@@ -3551,7 +3557,7 @@
         "wheeler-1978-republican-portugal"
       ],
       "created": "2026-09-02",
-      "degree": 5,
+      "degree": 10,
       "id": "constitution-1911",
       "kind": "event",
       "origin": {
@@ -3602,7 +3608,7 @@
         "telo-2007-historia-contemporanea"
       ],
       "created": "2026-09-02",
-      "degree": 9,
+      "degree": 10,
       "id": "constitution-1976",
       "kind": "event",
       "origin": {
@@ -7382,6 +7388,7 @@
         "wikidata"
       ],
       "created": "2026-09-04",
+      "degree": 1,
       "id": "may-1915-portuguese-presidential-election",
       "kind": "event",
       "origin": {
@@ -9281,7 +9288,7 @@
         "wheeler-1978-republican-portugal"
       ],
       "created": "2026-09-02",
-      "degree": 2,
+      "degree": 3,
       "id": "sidonio-pais-assassinated-1918",
       "kind": "event",
       "origin": {

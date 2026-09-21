@@ -284,6 +284,12 @@
     },
     {
       "dissent": false,
+      "id": "1995-portuguese-legislative-election--1996-portuguese-presidential-election--precondition-of",
+      "kind": "edge",
+      "locator": "\"1996 Portuguese presidential election\", revision 1371811573, § lead"
+    },
+    {
+      "dissent": false,
       "id": "2005-portuguese-legislative-election--2009-portuguese-legislative-election--precondition-of",
       "kind": "edge",
       "locator": "\"2009 Portuguese legislative election\", revision 1373358204, § lead"
@@ -530,6 +536,36 @@
     },
     {
       "dissent": false,
+      "id": "constitution-1911--1918-portuguese-presidential-election--enabled",
+      "kind": "edge",
+      "locator": "\"1918 Portuguese presidential election\", revision 1340296036, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "constitution-1911--1919-portuguese-presidential-election--enabled",
+      "kind": "edge",
+      "locator": "\"1919 Portuguese presidential election\", revision 1273401624, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "constitution-1911--1925-portuguese-presidential-election--enabled",
+      "kind": "edge",
+      "locator": "\"1925 Portuguese presidential election\", revision 1362155033, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "constitution-1911--august-1915-portuguese-presidential-election--enabled",
+      "kind": "edge",
+      "locator": "\"August 1915 Portuguese presidential election\", revision 1273396087, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "constitution-1911--may-1915-portuguese-presidential-election--enabled",
+      "kind": "edge",
+      "locator": "\"May 1915 Portuguese presidential election\", revision 1305366818, § lead"
+    },
+    {
+      "dissent": false,
       "id": "constitution-1933--estado-novo-1933-1974--caused",
       "kind": "edge",
       "locator": "\"Ditadura Nacional\", revision 1365513062, § lead"
@@ -539,6 +575,12 @@
       "id": "constitution-1933--estado-novo-1933-1974--caused",
       "kind": "edge",
       "locator": "\"Estado Novo (Portugal)\", revision 1375585347, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "constitution-1976--2006-portuguese-presidential-election--precondition-of",
+      "kind": "edge",
+      "locator": "\"2006 Portuguese presidential election\", revision 1374338206, § Background"
     },
     {
       "dissent": false,
@@ -1841,6 +1883,12 @@
       "id": "second-sudanese-civil-war--war-in-darfur--precondition-of",
       "kind": "edge",
       "locator": "\"War in Darfur\", revision 1375318567, § Origins of the conflict"
+    },
+    {
+      "dissent": false,
+      "id": "sidonio-pais-assassinated-1918--1918-portuguese-presidential-election--caused",
+      "kind": "edge",
+      "locator": "\"1918 Portuguese presidential election\", revision 1340296036, § lead"
     },
     {
       "dissent": false,
