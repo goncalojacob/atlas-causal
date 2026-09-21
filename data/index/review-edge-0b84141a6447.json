@@ -9,6 +9,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "1893-franco-siamese-crisis",
+      "id": "1893-franco-siamese-crisis--entente-cordiale--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "entente-cordiale",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "ramos-2009-historia-de-portugal",
         "wikipedia-pt"
       ],
@@ -491,6 +519,34 @@
       "revised": null,
       "status": "active",
       "to": "algerian-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "1952-egyptian-revolution",
+      "id": "1952-egyptian-revolution--suez-crisis--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "suez-crisis",
       "type": "precondition-of"
     },
     {
@@ -1823,6 +1879,62 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "2022-brazilian-general-election",
+      "id": "2022-brazilian-general-election--2023-brazilian-congress-attack--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2023-brazilian-congress-attack",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "2022-brazilian-general-election",
+      "id": "2022-brazilian-general-election--lula-returns-to-the-presidency-2023--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "lula-returns-to-the-presidency-2023",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "costa-pinto-teixeira-2019-political-institutions"
       ],
       "created": "2026-09-04",
@@ -2492,6 +2604,62 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
+      "from": "anschluss",
+      "id": "anschluss--austrian-state-treaty--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "austrian-state-treaty",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "anschluss",
+      "id": "anschluss--munich-agreement--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "munich-agreement",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
       "from": "anti-comintern-pact",
       "id": "anti-comintern-pact--tripartite-pact--precondition-of",
       "kind": "edge",
@@ -2593,6 +2761,34 @@
       "status": "active",
       "to": "world-war-i",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "austrian-civil-war",
+      "id": "austrian-civil-war--anschluss--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "anschluss",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -2926,6 +3122,34 @@
       "status": "active",
       "to": "imf-agreement-1978",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "british-expedition-to-tibet",
+      "id": "british-expedition-to-tibet--treaty-of-lhasa--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-lhasa",
+      "type": "caused"
     },
     {
       "authors": [
@@ -4957,6 +5181,34 @@
       "status": "active",
       "to": "the-caribbean-sugar-revolution",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "earth-summit",
+      "id": "earth-summit--aarhus-convention--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "aarhus-convention",
+      "type": "inspired"
     },
     {
       "authors": [
@@ -7356,6 +7608,34 @@
       "revised": null,
       "status": "active",
       "to": "empire-of-brazil-1822-1889",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "independence-of-morocco",
+      "id": "independence-of-morocco--ifni-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "ifni-war",
       "type": "caused"
     },
     {
@@ -11923,6 +12203,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "suez-crisis",
+      "id": "suez-crisis--1958-lebanon-crisis--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1958-lebanon-crisis",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "the-1930-revolution-and-the-vargas-era",
       "id": "the-1930-revolution-and-the-vargas-era--1964-brazilian-coup-detat--precondition-of",
@@ -12058,6 +12366,34 @@
       "revised": null,
       "status": "active",
       "to": "the-impeachment-of-dilma-rousseff-2016",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "the-2018-brazilian-general-election",
+      "id": "the-2018-brazilian-general-election--2022-brazilian-general-election--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2022-brazilian-general-election",
       "type": "precondition-of"
     },
     {
@@ -14564,6 +14900,34 @@
       "status": "active",
       "to": "great-depression",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "wall-street-crash-of-1929",
+      "id": "wall-street-crash-of-1929--siamese-revolution-of-1932--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siamese-revolution-of-1932",
+      "type": "precondition-of"
     },
     {
       "authors": [

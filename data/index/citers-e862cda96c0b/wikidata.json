@@ -434,6 +434,12 @@
     },
     {
       "dissent": false,
+      "id": "1893-franco-siamese-crisis",
+      "kind": "event",
+      "locator": "Q1359846"
+    },
+    {
+      "dissent": false,
       "id": "1908-portuguese-legislative-election",
       "kind": "event",
       "locator": "Q7232747"
@@ -545,6 +551,12 @@
       "id": "1957-guinean-territorial-assembly-election",
       "kind": "event",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1958-lebanon-crisis",
+      "kind": "event",
+      "locator": "Q1542222"
     },
     {
       "dissent": false,
@@ -812,6 +824,12 @@
     },
     {
       "dissent": false,
+      "id": "2022-brazilian-general-election",
+      "kind": "event",
+      "locator": "Q65053343"
+    },
+    {
+      "dissent": false,
       "id": "2022-portuguese-social-democratic-party-leadership-election",
       "kind": "event",
       "locator": null
@@ -821,6 +839,12 @@
       "id": "2022-portuguese-social-democratic-party-leadership-election-q111182017",
       "kind": "event",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2023-brazilian-congress-attack",
+      "kind": "event",
+      "locator": "Q116142348"
     },
     {
       "dissent": false,
@@ -851,6 +875,12 @@
       "id": "31-march-incident",
       "kind": "event",
       "locator": "Q2073490"
+    },
+    {
+      "dissent": false,
+      "id": "aarhus-convention",
+      "kind": "event",
+      "locator": "Q301336"
     },
     {
       "dissent": false,
@@ -908,9 +938,21 @@
     },
     {
       "dissent": false,
+      "id": "anschluss",
+      "kind": "event",
+      "locator": "Q154681"
+    },
+    {
+      "dissent": false,
       "id": "anti-comintern-pact",
       "kind": "event",
       "locator": "Q152195"
+    },
+    {
+      "dissent": false,
+      "id": "arab-israeli-conflict",
+      "kind": "event",
+      "locator": "Q8669"
     },
     {
       "dissent": false,
@@ -953,6 +995,12 @@
       "id": "august-1915-portuguese-presidential-election",
       "kind": "event",
       "locator": "Q97516196"
+    },
+    {
+      "dissent": false,
+      "id": "austrian-civil-war",
+      "kind": "event",
+      "locator": "Q306123"
     },
     {
       "dissent": false,
@@ -1043,6 +1091,12 @@
       "id": "bretton-woods-system",
       "kind": "event",
       "locator": "Q188532"
+    },
+    {
+      "dissent": false,
+      "id": "british-expedition-to-tibet",
+      "kind": "event",
+      "locator": "Q592550"
     },
     {
       "dissent": false,
@@ -1193,6 +1247,12 @@
       "id": "donghak-peasant-revolution",
       "kind": "event",
       "locator": "Q701045"
+    },
+    {
+      "dissent": false,
+      "id": "earth-summit",
+      "kind": "event",
+      "locator": "Q751149"
     },
     {
       "dissent": false,
@@ -1496,9 +1556,21 @@
     },
     {
       "dissent": false,
+      "id": "ifni-war",
+      "kind": "event",
+      "locator": "Q1640107"
+    },
+    {
+      "dissent": false,
       "id": "ilinden-preobrazhenie-uprising",
       "kind": "event",
       "locator": "Q1145682"
+    },
+    {
+      "dissent": false,
+      "id": "independence-of-morocco",
+      "kind": "event",
+      "locator": "Q74200048"
     },
     {
       "dissent": false,
@@ -1769,6 +1841,12 @@
       "id": "munich-agreement",
       "kind": "event",
       "locator": "Q154255"
+    },
+    {
+      "dissent": false,
+      "id": "nova-republica-brazil-since-1985",
+      "kind": "event",
+      "locator": "Q2920526"
     },
     {
       "dissent": false,
@@ -2048,6 +2126,12 @@
     },
     {
       "dissent": false,
+      "id": "siamese-revolution-of-1932",
+      "kind": "event",
+      "locator": "Q2120252"
+    },
+    {
+      "dissent": false,
       "id": "sierra-leone-civil-war",
       "kind": "event",
       "locator": "Q795269"
@@ -2132,6 +2216,12 @@
     },
     {
       "dissent": false,
+      "id": "suez-crisis",
+      "kind": "event",
+      "locator": "Q49101"
+    },
+    {
+      "dissent": false,
       "id": "svalbard-treaty",
       "kind": "event",
       "locator": "Q461891"
@@ -2207,6 +2297,12 @@
       "id": "treaty-of-lausanne",
       "kind": "event",
       "locator": "Q193258"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-lhasa",
+      "kind": "event",
+      "locator": "Q3536822"
     },
     {
       "dissent": false,

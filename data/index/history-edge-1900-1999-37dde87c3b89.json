@@ -225,6 +225,15 @@
         }
       ]
     },
+    "1952-egyptian-revolution--suez-crisis--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "1957-1958-influenza-pandemic--hong-kong-flu--precondition-of": {
       "from": "git",
       "versions": [
@@ -899,6 +908,24 @@
         }
       ]
     },
+    "anschluss--austrian-state-treaty--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "anschluss--munich-agreement--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "anti-comintern-pact--tripartite-pact--precondition-of": {
       "from": "git",
       "versions": [
@@ -939,6 +966,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "austrian-civil-war--anschluss--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -1021,6 +1057,15 @@
         {
           "first": true,
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "british-expedition-to-tibet--treaty-of-lhasa--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -1888,6 +1933,15 @@
         }
       ]
     },
+    "earth-summit--aarhus-convention--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "east-timor-invasion-1975--east-timor-independence-2002--precondition-of": {
       "from": "git",
       "versions": [
@@ -2617,6 +2671,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "independence-of-morocco--ifni-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -4043,6 +4106,15 @@
         }
       ]
     },
+    "suez-crisis--1958-lebanon-crisis--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "the-1930-revolution-and-the-vargas-era--1964-brazilian-coup-detat--precondition-of": {
       "from": "git",
       "versions": [
@@ -4521,6 +4593,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "wall-street-crash-of-1929--siamese-revolution-of-1932--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

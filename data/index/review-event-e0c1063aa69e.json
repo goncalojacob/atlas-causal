@@ -6,6 +6,35 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "1893-franco-siamese-crisis",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "1893 Franco-Siamese crisis"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -464,6 +493,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "arab-israeli-conflict",
       "review": {
         "flags": [
           "imported-facts",
@@ -471,7 +501,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-21",
       "status": "active",
       "title": "1948 Arab–Israeli War"
     },
@@ -594,7 +624,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "1952-egyptian-revolution",
       "kind": "event",
       "origin": {
@@ -676,6 +706,34 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "1957 Guinean Territorial Assembly election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "1958-lebanon-crisis",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "1958 Lebanon crisis"
     },
     {
       "authors": [
@@ -1912,6 +1970,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "arab-israeli-conflict",
       "review": {
         "flags": [
           "imported-facts",
@@ -1919,7 +1978,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-21",
       "status": "active",
       "title": "2006 Lebanon War"
     },
@@ -2286,6 +2345,35 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "election",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 3,
+      "id": "2022-brazilian-general-election",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "nova-republica-brazil-since-1985",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "2022 Brazilian general election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -2356,6 +2444,35 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "2022 Portuguese Social Democratic Party leadership election"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "2023-brazilian-congress-attack",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "nova-republica-brazil-since-1985",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "2023 Brazilian Congress attack"
     },
     {
       "authors": [
@@ -2557,6 +2674,34 @@
       "revised": null,
       "status": "active",
       "title": "31 March Incident"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "aarhus-convention",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Aarhus Convention"
     },
     {
       "authors": [
@@ -2942,6 +3087,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "founding",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 3,
+      "id": "anschluss",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "interwar-period",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Anschluss"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata"
       ],
@@ -2963,6 +3137,33 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Anti-Comintern Pact"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "id": "arab-israeli-conflict",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Arab–Israeli conflict"
     },
     {
       "authors": [
@@ -3078,13 +3279,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "world-war-i",
       "review": {
         "flags": [
           "imported-facts"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "title": "Armistice of Mudros"
     },
@@ -3193,12 +3395,41 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
-      "category": "treaty",
       "cites": [
         "wikidata"
       ],
       "created": "2026-09-21",
       "degree": 1,
+      "id": "austrian-civil-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "interwar-period",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Austrian Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 2,
       "id": "austrian-state-treaty",
       "kind": "event",
       "origin": {
@@ -3590,13 +3821,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "arab-israeli-conflict",
       "review": {
         "flags": [
           "imported-facts"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "title": "Black September"
     },
@@ -3783,6 +4015,34 @@
       "revised": "2026-09-20",
       "status": "active",
       "title": "Bretton Woods system"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "british-expedition-to-tibet",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "British expedition to Tibet"
     },
     {
       "authors": [
@@ -5161,6 +5421,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "earth-summit",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Earth Summit"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5462,7 +5749,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "entente-cordiale",
       "kind": "event",
       "origin": {
@@ -6409,6 +6696,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "gaza-war",
       "review": {
         "flags": [
           "imported-facts",
@@ -6416,7 +6704,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-21",
       "status": "active",
       "title": "Gaza genocide"
     },
@@ -6472,6 +6760,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "arab-israeli-conflict",
       "review": {
         "flags": [
           "imported-facts",
@@ -6479,7 +6768,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-15",
+      "revised": "2026-09-21",
       "status": "active",
       "title": "Gaza War (2008–2009)"
     },
@@ -7338,6 +7627,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "ifni-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Ifni War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata"
       ],
@@ -7450,6 +7768,34 @@
       "revised": "2026-09-17",
       "status": "active",
       "title": "The independence of Brazil"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "founding",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "independence-of-morocco",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Independence of Morocco"
     },
     {
       "authors": [
@@ -8781,7 +9127,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-18",
-      "degree": 2,
+      "degree": 3,
       "id": "lula-returns-to-the-presidency-2023",
       "kind": "event",
       "names": [
@@ -8791,13 +9137,14 @@
         "run": "m57",
         "tool": "assistant"
       },
+      "parent": "nova-republica-brazil-since-1985",
       "review": {
         "flags": [
           "m57-narrative"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "title": "Lula returns to the presidency, 2023"
     },
@@ -9368,7 +9715,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "munich-agreement",
       "kind": "event",
       "origin": {
@@ -9499,6 +9846,35 @@
       "revised": "2026-09-18",
       "status": "active",
       "title": "Noite Sangrenta"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en",
+        "wikipedia-pt"
+      ],
+      "created": "2026-09-21",
+      "id": "nova-republica-brazil-since-1985",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m42-umbrella",
+          "summary-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Nova República"
     },
     {
       "authors": [
@@ -9644,13 +10020,14 @@
         "run": "m57",
         "tool": "assistant"
       },
+      "parent": "nova-republica-brazil-since-1985",
       "review": {
         "flags": [
           "m57-narrative"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "title": "Operation Car Wash, 2014"
     },
@@ -11341,13 +11718,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "arab-israeli-conflict",
       "review": {
         "flags": [
           "imported-facts"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "title": "Second Intifada"
     },
@@ -11495,6 +11873,34 @@
       "revised": null,
       "status": "active",
       "title": "Second Sudanese Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "siamese-revolution-of-1932",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siamese revolution of 1932"
     },
     {
       "authors": [
@@ -12150,6 +12556,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 2,
+      "id": "suez-crisis",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-interval-corrected"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Suez Crisis"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "treaty",
       "cites": [
         "wikidata"
@@ -12255,13 +12690,14 @@
         "run": "m57",
         "tool": "assistant"
       },
+      "parent": "nova-republica-brazil-since-1985",
       "review": {
         "flags": [
           "m57-narrative"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "title": "The constitution of 1988"
     },
@@ -12276,7 +12712,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-18",
-      "degree": 3,
+      "degree": 4,
       "id": "the-2018-brazilian-general-election",
       "kind": "event",
       "names": [
@@ -12286,13 +12722,14 @@
         "run": "m57",
         "tool": "assistant"
       },
+      "parent": "nova-republica-brazil-since-1985",
       "review": {
         "flags": [
           "m57-narrative"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "title": "The general election of 2018"
     },
@@ -12693,13 +13130,14 @@
         "run": "m57",
         "tool": "assistant"
       },
+      "parent": "nova-republica-brazil-since-1985",
       "review": {
         "flags": [
           "m57-narrative"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "title": "The commodity boom and the Chinese buyer"
     },
@@ -12851,13 +13289,14 @@
         "run": "m57",
         "tool": "assistant"
       },
+      "parent": "nova-republica-brazil-since-1985",
       "review": {
         "flags": [
           "m57-narrative"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "title": "The impeachment of Dilma Rousseff, 2016"
     },
@@ -13267,6 +13706,35 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Treaty of Lausanne"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "treaty-of-lhasa",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Treaty of Lhasa"
     },
     {
       "authors": [
@@ -14278,7 +14746,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "wall-street-crash-of-1929",
       "kind": "event",
       "origin": {
@@ -14836,6 +15304,12 @@
   "schema": 1,
   "warnings": [
     {
+      "id": "arab-israeli-conflict",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "iberian-blackout-2025",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -14843,6 +15317,12 @@
     },
     {
       "id": "interwar-period",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "nova-republica-brazil-since-1985",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

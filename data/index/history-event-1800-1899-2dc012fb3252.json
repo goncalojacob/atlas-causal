@@ -70,6 +70,14 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },

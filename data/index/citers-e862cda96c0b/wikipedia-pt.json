@@ -650,6 +650,12 @@
     },
     {
       "dissent": false,
+      "id": "nova-republica-brazil-since-1985",
+      "kind": "event",
+      "locator": "\"Nova República\", revision 72521647"
+    },
+    {
+      "dissent": false,
       "id": "october-revolution",
       "kind": "event",
       "locator": "\"Revolução de Outubro\", revision 71345414"

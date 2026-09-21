@@ -104,6 +104,12 @@
     },
     {
       "dissent": false,
+      "id": "1893-franco-siamese-crisis--entente-cordiale--precondition-of",
+      "kind": "edge",
+      "locator": "\"1893 Franco-Siamese crisis\", revision 1374343940, § Consequences"
+    },
+    {
+      "dissent": false,
       "id": "1948-arab-israeli-war--1952-egyptian-revolution--caused",
       "kind": "edge",
       "locator": "\"1948 Arab–Israeli War\", revision 1374830770"
@@ -173,6 +179,12 @@
       "id": "1952-egyptian-revolution--algerian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Egyptian revolution of 1952\", revision 1374209538"
+    },
+    {
+      "dissent": false,
+      "id": "1952-egyptian-revolution--suez-crisis--precondition-of",
+      "kind": "edge",
+      "locator": "\"Suez Crisis\", revision 1374851403, § The Egyptian Revolution"
     },
     {
       "dissent": false,
@@ -326,6 +338,18 @@
     },
     {
       "dissent": false,
+      "id": "2022-brazilian-general-election--2023-brazilian-congress-attack--reacted-to",
+      "kind": "edge",
+      "locator": "\"8 January Brasília attacks\", revision 1372449713, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "2022-brazilian-general-election--lula-returns-to-the-presidency-2023--caused",
+      "kind": "edge",
+      "locator": "\"2022 Brazilian general election\", revision 1375252300, § lead"
+    },
+    {
+      "dissent": false,
       "id": "2024-madeiran-regional-election--2025-madeiran-regional-election--caused",
       "kind": "edge",
       "locator": "\"2025 Madeiran regional election\", revision 1363880650"
@@ -422,6 +446,18 @@
     },
     {
       "dissent": false,
+      "id": "anschluss--austrian-state-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"Anschluss\", revision 1374499407, § Changes in Central Europe"
+    },
+    {
+      "dissent": false,
+      "id": "anschluss--munich-agreement--precondition-of",
+      "kind": "edge",
+      "locator": "\"Anschluss\", revision 1374499407, § Changes in Central Europe"
+    },
+    {
+      "dissent": false,
       "id": "anti-comintern-pact--tripartite-pact--precondition-of",
       "kind": "edge",
       "locator": "\"Tripartite Pact\", revision 1375181328, § Background"
@@ -461,6 +497,12 @@
       "id": "assassination-of-archduke-franz-ferdinand--world-war-i--caused",
       "kind": "edge",
       "locator": "\"World War I\", revision 1372979664"
+    },
+    {
+      "dissent": false,
+      "id": "austrian-civil-war--anschluss--precondition-of",
+      "kind": "edge",
+      "locator": "\"Austrian Civil War\", revision 1375005540, § Long term"
     },
     {
       "dissent": false,
@@ -515,6 +557,18 @@
       "id": "bretton-woods-system--imf-agreement-1978--precondition-of",
       "kind": "edge",
       "locator": "\"Bretton Woods system\", revision 1374837351"
+    },
+    {
+      "dissent": false,
+      "id": "british-expedition-to-tibet--treaty-of-lhasa--caused",
+      "kind": "edge",
+      "locator": "\"British expedition to Tibet\", revision 1370606386, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "british-expedition-to-tibet--treaty-of-lhasa--caused",
+      "kind": "edge",
+      "locator": "\"Convention of Lhasa\", revision 1305728166, § lead"
     },
     {
       "dissent": false,
@@ -803,6 +857,18 @@
       "id": "dutch-brazil-1630-1654--the-caribbean-sugar-revolution--caused",
       "kind": "edge",
       "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "dissent": false,
+      "id": "earth-summit--aarhus-convention--inspired",
+      "kind": "edge",
+      "locator": "\"Aarhus Convention\", revision 1367239958, § Reception, influence and implementation"
+    },
+    {
+      "dissent": false,
+      "id": "earth-summit--aarhus-convention--inspired",
+      "kind": "edge",
+      "locator": "\"Earth Summit\", revision 1368901985, § Development"
     },
     {
       "dissent": false,
@@ -1313,6 +1379,12 @@
       "id": "independence-of-brazil-1822--empire-of-brazil-1822-1889--caused",
       "kind": "edge",
       "locator": "\"Empire of Brazil\", revision 1374829984, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "independence-of-morocco--ifni-war--caused",
+      "kind": "edge",
+      "locator": "\"Ifni War\", revision 1370623332, § lead"
     },
     {
       "dissent": false,
@@ -2396,6 +2468,12 @@
     },
     {
       "dissent": false,
+      "id": "suez-crisis--1958-lebanon-crisis--precondition-of",
+      "kind": "edge",
+      "locator": "\"1958 Lebanon crisis\", revision 1370279391, § Situation in Lebanon"
+    },
+    {
+      "dissent": false,
       "id": "the-1930-revolution-and-the-vargas-era--1964-brazilian-coup-detat--precondition-of",
       "kind": "edge",
       "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
@@ -2441,6 +2519,12 @@
       "id": "the-1988-brazilian-constitution--the-impeachment-of-dilma-rousseff-2016--precondition-of",
       "kind": "edge",
       "locator": "\"Impeachment of Dilma Rousseff\", revision 1369411417"
+    },
+    {
+      "dissent": false,
+      "id": "the-2018-brazilian-general-election--2022-brazilian-general-election--precondition-of",
+      "kind": "edge",
+      "locator": "\"2022 Brazilian general election\", revision 1375252300, § lead"
     },
     {
       "dissent": false,
@@ -3281,6 +3365,12 @@
       "id": "wall-street-crash-of-1929--great-depression--caused",
       "kind": "edge",
       "locator": "\"Great Depression\", revision 1371653684"
+    },
+    {
+      "dissent": false,
+      "id": "wall-street-crash-of-1929--siamese-revolution-of-1932--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siamese revolution of 1932\", revision 1370738350, § Discontent from the economic crisis"
     },
     {
       "dissent": false,
@@ -4295,6 +4385,12 @@
       "id": "munich-agreement",
       "kind": "event",
       "locator": "\"Munich Agreement\", revision 1372429724"
+    },
+    {
+      "dissent": false,
+      "id": "nova-republica-brazil-since-1985",
+      "kind": "event",
+      "locator": "\"History of Brazil (1985–present)\", revision 1371710443"
     },
     {
       "dissent": false,

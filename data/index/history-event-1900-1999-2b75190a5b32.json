@@ -1108,6 +1108,12 @@
             "review"
           ],
           "on": "2026-09-20"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -1459,6 +1465,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-21"
         }
       ]
@@ -3927,6 +3941,14 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -4222,6 +4244,15 @@
         }
       ]
     },
+    "anschluss": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "anti-comintern-pact": {
       "from": "git",
       "versions": [
@@ -4289,6 +4320,15 @@
             "category"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "arab-israeli-conflict": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -4362,6 +4402,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-09-21"
         }
       ]
@@ -4825,6 +4871,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent",
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -5141,6 +5196,12 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -5292,6 +5353,15 @@
             "review"
           ],
           "on": "2026-09-20"
+        }
+      ]
+    },
+    "british-expedition-to-tibet": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -6521,6 +6591,15 @@
           "fields": [
             "parent"
           ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "earth-summit": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-21"
         }
       ]
@@ -7843,6 +7922,14 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -7969,6 +8056,15 @@
           "fields": [
             "parent"
           ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "independence-of-morocco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-21"
         }
       ]
@@ -9616,6 +9712,15 @@
             "parent"
           ],
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "nova-republica-brazil-since-1985": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -11307,6 +11412,24 @@
         }
       ]
     },
+    "sharpeville-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "siamese-revolution-of-1932": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "sidonio-pais-assassinated-1918": {
       "from": "git",
       "versions": [
@@ -11761,6 +11884,15 @@
         }
       ]
     },
+    "suez-crisis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "svalbard-treaty": {
       "from": "git",
       "versions": [
@@ -11831,6 +11963,12 @@
         {
           "first": true,
           "on": "2026-09-18"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -12146,6 +12284,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-21"
         }
       ]
