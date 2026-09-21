@@ -9,18 +9,23 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-20",
   "origin": {
     "tool": "wikidata"
   },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m67-lined"
     ]
   },
   "wikidata": "Q1368440",
@@ -47,5 +52,11 @@
   "place": null,
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "actors": []
+  "actors": [
+    {
+      "actor": "persia",
+      "role": "government",
+      "note": "Q1368440 places it in Iran; `persia` is the record this atlas holds for that state before 1925"
+    }
+  ]
 }

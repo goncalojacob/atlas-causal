@@ -43,11 +43,19 @@
       <button type="button" id="options-button" class="options-button" aria-expanded="false"
               aria-controls="masthead-tools">Options</button>
       <div class="grouping" id="grouping" role="group" aria-label="Grouping and lens"></div>
-      <!-- Filled by src/main.js: one switch per layer a reader may turn off,
-           and the coastlines are not one of them (plan decision 14). The
-           category switches to come are read out of data/categories.json,
-           which is data and therefore untrusted, so the whole control is
-           built rather than written here. -->
+      <!-- The kinds of event that are drawn, on every view (M68). They used to
+           be inside the layer control, which is the map's legend and is hidden
+           on the graph and the timeline, so a filter that narrows all three
+           pictures could be changed from only one of them (deviation 858).
+           Filled by src/category-control.js, which owns the switches: a label
+           comes from data/categories.json, which is data and therefore
+           untrusted. -->
+      <div class="categories-control" id="categories" role="group" aria-label="Events by category"></div>
+      <!-- Filled by src/layer-control.js: one switch per layer of the map a
+           reader may turn off, and the coastlines are not one of them (plan
+           decision 14). The id of a base layer comes from the manifest, which
+           is data and therefore untrusted, so the control is built rather than
+           written here. -->
       <div class="layers" id="layers" role="group" aria-label="Layers"></div>
       <!-- What the graph draws, and only the graph: the degree floor and the
            top-level switch (M48 §3, src/graph-filters.js). Shown where the

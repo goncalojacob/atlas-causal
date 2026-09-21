@@ -315,3 +315,43 @@ was invented without a source for its dates**. Top-level goes from **292 of
 Nothing here is a causal claim and no edge was written. `parent` stays a
 display fact: saying the decree is part of the regime asserts no cause, and
 M48's filter and M60's views now have something to read.
+
+
+## 8. Addendum, 20 September 2026 — the records this measurement said it could not file
+
+M62 closed §4.1 with a finding rather than a filing: **six presidential
+elections of the Republic name no actor and no place at all**, and *"that line
+is a records milestone's work, not this one's"*. `1951-` was the seventh, in
+§4.3. **M67 is that milestone** (`docs/m67-umbrellas.md`): it wrote each of them
+the line the record was missing, out of the Wikidata item the record already
+cited, and then filed them under the umbrellas this document had already
+measured and argued for. Nothing about the umbrellas or the judgements above
+changed; the records caught up with them.
+
+**`first-portuguese-republic-1910-1926` gained six:**
+`may-1915-portuguese-presidential-election`,
+`august-1915-portuguese-presidential-election`,
+`1918-portuguese-presidential-election`,
+`1919-portuguese-presidential-election`,
+`1923-portuguese-presidential-election` and
+`1925-portuguese-presidential-election` — each now naming
+`first-portuguese-republic`, which is this umbrella's own actor, and each
+inside 1910-10-05 – 1926-05-28. **`estado-novo-1933-1974` gained**
+`1951-portuguese-presidential-election` on the same ground.
+
+**`world-war-ii` gained `winter-war` and `20-july-plot`.** Neither is from
+§4.1's list. The Winter War named nothing until M67 gave it `finland` and
+`soviet-union` from Q134949, and that item also puts it inside the Second
+World War. **`20-july-plot` still names neither an actor nor a place and is
+filed all the same**, under amendment A1 of M67's brief — the owner, 21
+September: *"It's fine to have no actor or place, you have to read the
+context."* Its context is on the record: Q105570 gives `part of` World War II,
+its summary quotes the item's *"attempt to assassinate Adolf Hitler, 1944"*,
+and 20 July 1944 is inside the war's span. The subject property of §3 cannot be
+asked of a record with nothing on it, so `tests/m62.test.mjs` admits that case
+and the filing note carries it instead; nothing else about §3 moved. The five
+this document refused for the war are still refused, `bretton-woods-system`
+with them.
+
+The two boundary acts, `republic-proclaimed-1910` and `coup-28-may-1926`, are
+where §4.1 left them, and so is every other refusal above.

@@ -13,6 +13,10 @@
 name: validate
 
 on:
+  # Lane branches (m68, m69, ...) carry no pull request while they run, and a
+  # run that waits for its check needs one to exist: every m* push is checked.
+  push:
+    branches: ['m*']
   pull_request:
   workflow_dispatch:
 

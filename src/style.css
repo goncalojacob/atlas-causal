@@ -243,8 +243,12 @@ input, select, textarea { accent-color: var(--cobalt); }
    at all — for the other view, and one of the two is always hidden
    (src/graph-filters.js, main.js). No colour, no size and no token of their
    own; the row is the row. */
-.bar .layers, .bar .graph-filters { display: flex; gap: var(--space-3); color: var(--ink-soft); font-size: var(--text-sm); }
-.bar .layers label, .bar .graph-filters label { display: inline-flex; align-items: center; gap: 0.3em; }
+/* And the category switches, which since M68 are a masthead control of their
+   own and not a group inside the legend: the same kind of control again — what
+   is drawn at all — for all three views at once, so it is the same row with
+   nothing of its own (src/category-control.js). */
+.bar .layers, .bar .graph-filters, .bar .categories-control { display: flex; gap: var(--space-3); color: var(--ink-soft); font-size: var(--text-sm); }
+.bar .layers label, .bar .graph-filters label, .bar .categories-control label { display: inline-flex; align-items: center; gap: 0.3em; }
 .bar .graph-filters select { font: inherit; color: inherit; background: var(--paper); border: 1px solid var(--line); }
 /* `display: flex` above beats the UA stylesheet's rule for [hidden], exactly as
    it does for the window control's own count below. Both groups are hidden by
@@ -254,24 +258,27 @@ input, select, textarea { accent-color: var(--cobalt); }
    the graph since the graph had them, which is what taking M48's screenshot
    showed (deviation 734). */
 .bar .layers[hidden], .bar .graph-filters[hidden] { display: none; }
-/* The two collapsed groups — the base map and the categories — which together
-   with the two rows above them are the whole legend: there is no other.
-   Collapsed, so the phone drawer keeps four targets instead of nineteen, and
-   every row carries its own symbol or its own swatch at the row's text size —
-   the reader learns the shapes and the colours here and nowhere else
-   (glyphs-brief §4; M37 brief §3). */
-.bar .layers details { position: relative; }
-.bar .layers summary { cursor: pointer; list-style: none; }
-.bar .layers summary::-webkit-details-marker { display: none; }
-.bar .layers summary::after { content: ' \25BE'; }
-.bar .layers details[open] summary::after { content: ' \25B4'; }
-.bar .layers .categories, .bar .layers .base-layers {
+/* The two collapsed groups — the base map, in the legend, and the categories,
+   which are a control of their own since M68. Collapsed, so the phone drawer
+   keeps four targets instead of nineteen, and every row carries its own symbol
+   or its own swatch at the row's text size — the reader learns the shapes and
+   the colours here and nowhere else (glyphs-brief §4; M37 brief §3). Drawn
+   exactly alike because they are the same thing twice: a name, a list under
+   it, and nothing of its own. */
+.bar .layers details, .bar .categories-control details { position: relative; }
+.bar .layers summary, .bar .categories-control summary { cursor: pointer; list-style: none; }
+.bar .layers summary::-webkit-details-marker,
+.bar .categories-control summary::-webkit-details-marker { display: none; }
+.bar .layers summary::after, .bar .categories-control summary::after { content: ' \25BE'; }
+.bar .layers details[open] summary::after,
+.bar .categories-control details[open] summary::after { content: ' \25B4'; }
+.bar .categories-control .categories, .bar .layers .base-layers {
   display: flex; flex-direction: column; gap: var(--space-1);
   padding: var(--space-2); margin-top: var(--space-1);
   background: var(--paper); border: 1px solid var(--line);
   position: absolute; z-index: 5; min-width: 14ch;
 }
-.bar .layers .glyph { width: 1em; height: 1em; flex: 0 0 auto; color: var(--cobalt); }
+.bar .categories-control .glyph { width: 1em; height: 1em; flex: 0 0 auto; color: var(--cobalt); }
 /* A swatch is what a base layer looks like on the map, at the row's own text
    size: a line for the rivers, a filled ring for the lakes, a dashed line for
    the physical regions, and a dot the size the layer draws for the peaks and
@@ -636,9 +643,12 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
   /* Behind the button until it is pressed. `:not([hidden])` so that the map's
      own rule — the layer switches are gone in graph view — still wins. */
   .masthead-tools .grouping, .masthead-tools .layers,
-  .masthead-tools .window-control { display: none; }
+  .masthead-tools .categories-control, .masthead-tools .window-control { display: none; }
   .masthead-tools.options-open .grouping { display: flex; flex: 1 0 100%; }
   .masthead-tools.options-open .layers:not([hidden]) { display: flex; flex: 1 0 100%; flex-wrap: wrap; }
+  /* The categories are in the drawer too, and on every view: they are hidden
+     by nothing, so they need no `:not([hidden])` (M68). */
+  .masthead-tools.options-open .categories-control { display: flex; flex: 1 0 100%; flex-wrap: wrap; }
   /* The window of time is in the drawer with them: the two ends, the density
      hint and the count of what the map is looking at are the same kind of
      control, and the row outside it is the search and the three views. */
@@ -647,8 +657,8 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
      positioned panel over a sheet is a panel half off the screen. Each
      collapsed <details> is one 40 px target the drawer keeps, and opening it
      puts its rows in the drawer's own flow. */
-  .bar .layers details { flex: 1 0 100%; }
-  .bar .layers .categories, .bar .layers .base-layers {
+  .bar .layers details, .bar .categories-control details { flex: 1 0 100%; }
+  .bar .categories-control .categories, .bar .layers .base-layers {
     position: static; border: 0; padding: 0; background: none;
   }
   .grouping-panel { width: min(30ch, calc(100vw - 2 * var(--space-4))); }
@@ -659,12 +669,13 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
      sentence if it were given a height of its own. */
   .options-button, .bar .views button, .search-input, .window-end,
   .panel button:not(.link), .panel .section-toggle, .panel .chips .chip,
-  .bar .layers label, .bar .layers summary, .grouping-button, .grouping-lane label {
+  .bar .layers label, .bar .layers summary, .grouping-button, .grouping-lane label,
+  .bar .categories-control label, .bar .categories-control summary {
     min-height: var(--touch);
   }
   /* The summary is the collapsed group's one target, so it is a target: a
      20 px line with thirteen rows behind it is a thumb's worth of guesswork. */
-  .bar .layers summary { display: flex; align-items: center; }
+  .bar .layers summary, .bar .categories-control summary { display: flex; align-items: center; }
   .bar .views button { padding-inline: var(--space-4); }
   .panel .chips .chip { display: inline-flex; align-items: center; }
   .panel .section-toggle { padding-block: var(--space-3); }

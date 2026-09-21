@@ -11,6 +11,8 @@ Inputs to the geometry imports, never served and never in the deploy allowlist. 
 
 - Historical Basemaps (`aourednik/historical-basemaps` at commit `da7a4b73`, from `https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/<file>`, re-gzipped), **GPL-3.0** — the repository's single `LICENSE` is the stock GPLv3 and covers `geojson/` with everything else. Thirteen of its fifty-four world snapshots, the ones from 1400 on; the ten from 1900 on are not here because CShapes covers 1886 onward and wins there. `data/geo/LICENSE` records what was derived and under what; STATUS.md → `M43a` records why a GPL source was taken at all and exactly which files it binds. Downloaded by the owner's assistant on 16 September 2026.
 
+- **ETOPO5, downsampled** (`elevation/etopo5-10min.i2`), from NOAA NCEI at `https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO5/TOPO/ETOPO5/ETOPO5.DOS` — a work of the United States Government, **public domain**. The download is the 5-arc-minute grid (4320 × 2160 int16 little-endian, 18,662,400 bytes, sha256 of the raw file `bcb4ed5585e07ffe4244b19cb0d645c0ceb10877a22a71b21370efa19e6cb792`), which gzips to 11.35 MB and is over the 8 MB the M45 brief allows a vendored grid; what is committed is that grid **averaged 2 × 2 to 10 arc-minutes**, each cell the mean of its four source cells rounded to the nearest metre (Python `round`, ties to even), so a coastline is not decided by whichever of four samples happened to be kept. **Layout**: 2160 columns × 1080 rows of int16 little-endian metres, **row 0 at 90° N and rows running south, column 0 at 0° E and columns running east through 360°**, one cell = 10 arc-minutes, no header. Checked against known ground before committing: Lisbon 6 m, the Everest region 5,276 m, the Tibetan plateau 5,143 m, the Andes at 16° S 2,362 m, the Mariana Trench −6,792 m, the mid-Pacific −5,228 m. Downloaded and derived by the owner's assistant on 20 September 2026 for M45b.
+
 | file | raw bytes | gzipped bytes | sha256 (raw) |
 |---|---|---|---|
 | `natural-earth/110m/ne_110m_admin_0_countries.geojson` | 838,726 | 209,562 | `6866c877d39cba9c…` |
@@ -36,3 +38,4 @@ Inputs to the geometry imports, never served and never in the deploy allowlist. 
 | `historical-basemaps/world_1815.geojson` | 2,413,409 | 865,299 | `fb654f734583f550…` |
 | `historical-basemaps/world_1878.geojson` | 1,713,853 | 534,972 | `e792520cd24cfb77…` |
 | `historical-basemaps/world_1880.geojson` | 1,302,639 | 507,561 | `4751e30d881d60d3…` |
+| `elevation/etopo5-10min.i2` | 4,665,600 | 3,302,132 | `a05c9065457588a2…` |

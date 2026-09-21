@@ -245,18 +245,18 @@ test('stepping through a narrative leaves the sheet where the reader put it', { 
 
 // A13 and the glyph brief's §4: the category toggles go inside a collapsed
 // `<details>` so the drawer keeps one 40 px target instead of thirteen. Open,
-// every row is a target of its own and carries its symbol — the control is the
-// legend and there is no other.
+// every row is a target of its own and carries its symbol — the switches are
+// the legend for the categories and there is no other.
 test('the category toggles are one collapsed target in the drawer, and open into rows with their glyphs', { skip }, async () => {
   await phone(async (page, url) => {
     await open(page, url('?fixtures=1'), 'return Boolean(document.querySelector(".map .mark"));');
     await page.eval('document.getElementById("options-button").click(); return true;');
 
     const shut = await page.eval(`
-      // The categories' group by its own anchor, not by position: since M37b
-      // the base map's group is the first <details> in the control, and this
-      // test is about the second (layer-control.js).
-      const details = document.querySelector('.bar .layers #events-by-category').closest('details');
+      // The categories' group by its own anchor: since M68 it is a control of
+      // its own in the masthead and no longer the second <details> of the
+      // legend (category-control.js).
+      const details = document.querySelector('.bar .categories-control #events-by-category').closest('details');
       const summary = details.querySelector('summary');
       return {
         there: Boolean(details),
@@ -275,7 +275,7 @@ test('the category toggles are one collapsed target in the drawer, and open into
     assert.equal(shut.group, shut.height, 'the whole group is that one row while it is shut');
 
     const open_ = await page.eval(`
-      const details = document.querySelector('.bar .layers #events-by-category').closest('details');
+      const details = document.querySelector('.bar .categories-control #events-by-category').closest('details');
       details.open = true;
       const rows = [...details.querySelectorAll('label')];
       return {
@@ -295,9 +295,10 @@ test('the category toggles are one collapsed target in the drawer, and open into
 
 // M37b, and the whole reason the base layers are behind a `<details>` of their
 // own: the control is nineteen controls now, and a drawer nineteen rows long is
-// a drawer nobody scrolls to the bottom of. Two rows and two summaries — four
-// targets — and the rows are there when the reader asks for them.
-test('the layer control is four targets in the drawer, and base map opens into five', { skip }, async () => {
+// a drawer nobody scrolls to the bottom of. Two rows and one summary — three
+// targets since the categories left for the masthead (M68) — and the rows are
+// there when the reader asks for them.
+test('the layer control is three targets in the drawer, and base map opens into five', { skip }, async () => {
   await phone(async (page, url) => {
     await open(page, url('?fixtures=1'), 'return Boolean(document.querySelector(".map .mark"));');
     await page.eval('document.getElementById("options-button").click(); return true;');
@@ -319,9 +320,12 @@ test('the layer control is four targets in the drawer, and base map opens into f
         height: Math.round(control.getBoundingClientRect().height),
         onScreen: targets.every((t) => t.el.getBoundingClientRect().right <= innerWidth + 1),
       };`);
-    assert.deepEqual(shut.labels, ['territories', 'events', 'base map', 'events by category'],
-      'four targets: two rows and two collapsed groups');
-    assert.deepEqual(shut.open, [false, false], 'both groups collapsed');
+    // Three since M68: the categories are a target of the drawer still, but in
+    // a control of their own beside it, because they narrow all three pictures
+    // and not the map alone (deviation 858).
+    assert.deepEqual(shut.labels, ['territories', 'events', 'base map'],
+      'three targets: two rows and one collapsed group');
+    assert.deepEqual(shut.open, [false], 'the group is collapsed');
     assert.ok(shut.touch >= 40, `--touch is a thumb, got ${shut.touch}`);
     assert.ok(shut.shortest >= shut.touch, `every one of the four is --touch tall, shortest ${shut.shortest}`);
     assert.equal(shut.onScreen, true, 'and none of them runs off the side');

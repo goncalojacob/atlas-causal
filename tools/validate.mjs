@@ -520,9 +520,13 @@ function formatItem(kind, item) {
 // How many of one warning are worth printing before the rest become a count.
 // Not a cap on the warnings themselves — they are all in the returned list,
 // which is what the review index and the tests read — only on what the
-// terminal is asked to scroll through. `unread` fires on 1 231 records the
-// two imports created before they wrote `review.status`, and a command
-// CLAUDE.md tells every session to run cannot answer with 1 231 lines.
+// terminal is asked to scroll through. `unread` is why it exists: it fired on
+// 1 231 records the two imports created before they wrote `review.status`, and
+// a command CLAUDE.md tells every session to run cannot answer with 1 231
+// lines. M69 gave the last 973 of them the standing that was true of them, so
+// today it fires on none of `data/` and the cap is held open by
+// `presence-outside-actor-when` instead — which is the point: the cap is about
+// how many lines a rule may print and not about which rule.
 export const SHOWN_PER_RULE = 20;
 
 export function warningLines(warnings, shown = SHOWN_PER_RULE) {

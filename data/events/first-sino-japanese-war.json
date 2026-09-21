@@ -9,18 +9,23 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-20",
   "origin": {
     "tool": "wikidata"
   },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m67-lined"
     ]
   },
   "wikidata": "Q178687",
@@ -50,5 +55,16 @@
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "china",
+      "role": "belligerent",
+      "note": "Q178687 gives the Qing dynasty as a participant; `china` is the record this atlas holds for that state"
+    },
+    {
+      "actor": "japan",
+      "role": "belligerent",
+      "note": "Q178687 gives the Empire of Japan as a participant"
+    }
+  ]
 }

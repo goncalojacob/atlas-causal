@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "empire-of-brazil-1822-1889",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-20",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m67-umbrella",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q217230",
+  "sitelinks": {
+    "count": 68,
+    "on": "2026-09-20"
+  },
+  "wikipedia": {
+    "en": "Empire of Brazil",
+    "pt": "Império do Brasil"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q217230"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Empire of Brazil\", revision 1374829984"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Império do Brasil\", revision 72974929"
+    }
+  ],
+  "title": "The Empire of Brazil",
+  "summary": "The Brazilian state between independence and the republic, a constitutional monarchy under Pedro I and Pedro II. The span is Wikidata’s: from the declaration of 7 September 1822 to the proclamation of the republic on 15 November 1889. The atlas already held empire-of-brazil as an actor — a thing that acts — and until this record there was nothing for a law of those sixty-seven years to be part of, which is why the two that end the slave trade and slavery sat as peers of everything else on the timeline. Neither the act that created the Empire nor the act that ended it is inside it: both stand on the boundary between two periods.",
+  "when": {
+    "start": 1822,
+    "end": 1889,
+    "date": "1822-09-07",
+    "endDate": "1889-11-15",
+    "calendar": "gregorian"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "A state has no single point on the map, so the lane is given rather than derived.",
+  "actors": [
+    {
+      "actor": "empire-of-brazil",
+      "role": "government"
+    }
+  ]
+}

@@ -173,3 +173,34 @@ before the run's first `validate`, and not after 69 errors have been read as
 real. It is one command, it is idempotent — a repository that is already whole
 answers at once — and since the amendment of 15 September makes `--index` the
 validator every run reaches for, every run needs it.
+
+## Amendment, 21 September 2026 — two lanes
+
+The owner: *"try to get as many things done in parallel as possible."* One
+branch can carry one run at a time, so from M68 on the queue is **two lanes**
+that run at once:
+
+- **Lane A, display**: M68 → M70 → M71 → M73 → M45b. Touches `src/`, `tests/`,
+  screenshots.
+- **Lane B, records**: M69 → M72 → M42. Touches `data/`, the index, the
+  validator's counts.
+
+**Each milestone works on its own branch `mNN`, created from `origin/m0` at
+claim time and never rebased onto `m0` by the run.** The claim line and the
+done line are written in `STATUS.md` **on that branch**. A run never pushes to
+`m0`. **The owner's assistant merges `mNN` into `m0`** when `MNN done` is on
+the branch, in arrival order, resolving `STATUS.md` and
+`docs/history/pr-sections.md` by keeping both sides (the sections are
+independent appends), rebuilding the index if `data/` changed, running
+`validate --index`, and pushing `m0`; `main` is merged from `m0` as before.
+
+**A lane's next milestone gates on its predecessor's done line being on
+`origin/m0`** — merged, not merely written — so every new branch starts from
+a `m0` that carries the other lane's landed work too.
+
+**Deviation numbers cannot collide across lanes**: lane A numbers on from the
+last in `STATUS.md` as always; **lane B numbers from 950 upward**, its own
+block. When the lanes rejoin, numbering continues from the larger.
+
+The claim rule, the idempotent gate, and everything else in this protocol
+apply on the branch exactly as they did on `m0`.
