@@ -13657,17 +13657,17 @@ batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
 every edge. **The milestone is not done**: §7 of the pool file says where it
 stands and what the next fire does.
 
-**Fourteen batches.** The pool before: 310 active events, 229 of them main, 362
+**Fifteen batches.** The pool before: 310 active events, 229 of them main, 362
 active edges, a largest connected component of 254 and 23 events with no edge.
-**After batch 14: 435 active, 335 main, 100 filed, 528 edges, largest component
-412, 3 with no edge.** Forty-seven records came back from the tombstones and
-eighty-four were imported and kept; a hundred and fifty-eight edges were
+**After batch 15: 445 active, 343 main, 102 filed, 539 edges, largest component
+420, 3 with no edge.** Forty-eight records came back from the tombstones and
+ninety-three were imported and kept; a hundred and sixty-nine edges were
 written — eighteen in batch 0, seven in batch 1, **nineteen in batch 3, which
 imported nothing at all and moved the component by twenty-seven**, eight in
 batch 4, eleven in batch 5, eight in batch 6, eighteen in batch 7, eleven in
 batch 8, eight in batch 9, fourteen in batch 10, ten in batch 11, six in batch 12
-fourteen in batch 13
-and fifteen in batch 14.
+fourteen in batch 13,
+fifteen in batch 14 and eleven in batch 15.
 
 **Batch 13 is the fourth sweep batch and the first one to grow the component as
 fast as the corpus.** Sixteen rows ticked by §5's rule over a pool recomputed
@@ -13702,6 +13702,28 @@ neighbour** — seven of the thirty-two rows across the two batches went out on
 arrival, each with the missing record named — and that is the same result batch
 12 got from the tombstones by the opposite hand. The tombstone scan came back
 empty in both.
+
+**Batch 15 is the counter-example and the more instructive one.** Sixteen rows,
+nine kept, seven retracted, eleven edges — and corpus +10 against component
+**+8**, which A5 asks about. The two that did not reach the middle are
+`ethiopian-civil-war` and `tigray-war`: they joined the Ogaden war and the
+Somali civil war and made a **fragment of four**, the second-largest in the
+atlas after the Sudanese five. There is no honest edge out of it. The civil
+war's article files it under the Cold War and the Revolutions of 1989; the
+first is a class, the second is a record here and **rule 4 forbids an edge from
+1989 into a war that began in 1974**, and the date was not widened; and the
+article never mentions either Italo-Ethiopian war, which are the two records a
+reader would expect it to reach. **The Horn is the second Sudan** — records
+joined to each other and to nothing else, waiting on a page rather than a
+fetch. The batch also brought back the milestone's **twelfth tombstone**, and
+by the other route: `tigray-war`'s batch 13 retraction had named the Ethiopian
+civil war by name, and `Q257724` came up in batch 15's own set 3. And it wrote
+the milestone's **first `inspired` edge**, the 2011 Egyptian revolution into
+the Yemeni one. One retraction is about the tick rule rather than the record:
+the assassination of Charlie Kirk is **eleven days old**, and set 4 ranks by
+sitelinks, which a story in the news accumulates fast; its article is being
+rewritten hourly, so a revision cited today is not the article a reader will
+open.
 
 **Batches 10 and 11 are sweep batches taken by §5's tick rule**, sets 1 and 2
 having been spent on the hinges and the bridges. The pool was recomputed each
@@ -13776,7 +13798,7 @@ of the rest were main before they were withdrawn.
 `estonian-war-of-independence` and `sino-soviet-border-conflict` are the two
 that were arguable and are listed rather than filed, which is M62 §3's rule.
 Every new record carries `actors: []`, which is M67 A1 and not a defect, and it
-is why `docs/m53-polities.md` §4.1 moves to **306 of 435** with the numerator
+is why `docs/m53-polities.md` §4.1 moves to **306 of 445** with the numerator
 standing still: the gap that row shows is the gap between an imported corpus
 and a written one, and it widens by exactly the number of records each batch
 keeps. Batch 13 files two more on the same rule and on a sentence its article
@@ -13787,12 +13809,12 @@ four of them treaties, because a treaty is not part of the war it ends.
 
 **The milestone is a long way from its done-condition and that is the honest
 reading**: the brief asks for an order of magnitude more than the 250 it was
-written against, and the corpus stands at 435 — **but 412 of those 435 are in
+written against, and the corpus stands at 445 — **but 420 of those 445 are in
 one connected component, against 254 of 310 when the run started, and three
 active events carry no edge at all, against twenty-three.** The connectedness
 the owner asked for on 21 September is substantially done; the volume is barely
-begun. The sweep's **unwalked rows** are what that volume comes from — 1,175 of
-them on batch 14's recount over the `world` sections — and at ten to twelve kept
+begun. The sweep's **unwalked rows** are what that volume comes from — 1,159 of
+them on batch 15's recount over the `world` sections — and at ten to twelve kept
 records a batch the brief's own number is many hundreds of batches away. That is
 a fact the owner should have rather than a number to be optimistic about.
 
@@ -13837,6 +13859,11 @@ neighbour named. Two items refused at the class table, `Q475678` and
 and one of the Kosovo declaration's two classes was enough to let it through.
 **Three of batch 14's sixteen** likewise, and one row refused at the class
 table before it was ever written — `Q1274389`, the People Power Revolution.
+**Seven of batch 15's sixteen**, the highest rate of any batch and the answer
+to a set 3 that reaches into decades this atlas is thin in for a reason:
+Japan–Korea 1907, the Ifni war, the racial-discrimination convention, the
+Ottawa treaty, Soweto, the Nepalese civil war and an assassination eleven days
+old.
 **A fourth edge an article argues and an imported date forbids**, found by
 batch 13: the Second Sino-Japanese war into the Soviet–Japanese border
 conflicts, which the conflicts' own article states twice and cites to Coox,
@@ -13853,7 +13880,8 @@ test because the article hangs that very sentence on Miroiu and Alecu 2024) and
 one is `disputed` (`cultural-revolution --precondition-of--> sino-soviet-border-conflict`,
 whose article attributes Mao's motive to "historians have suggested" and offers
 a second motive beside it, both named in the edge's `dispute` block). **All
-fourteen of batch 13's edges are `probable` and nothing was promoted**: four of
+fourteen of batch 13's edges, all fifteen of batch 14's and all eleven of batch
+15's are `probable` and nothing was promoted**: four of
 them carry a second author on M72's standard — Gellately 2007 p. 65, Kaplan
 1990 pp. 115–116, Isaacs and Hardy 1988 p. 90 and Hall 2000, each cited by the
 article for the very sentence the edge paraphrases — and none was promoted on
