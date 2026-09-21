@@ -906,6 +906,33 @@
         }
       ]
     },
+    "tunisian-revolution--2011-egyptian-revolution--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "tunisian-revolution--2011-yemeni-revolution--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "tunisian-revolution--libyan-civil-war--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "war-in-afghanistan-2001-2021--insurgency-in-khyber-pakhtunkhwa--caused": {
       "from": "git",
       "versions": [

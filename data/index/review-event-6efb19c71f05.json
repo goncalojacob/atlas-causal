@@ -2132,7 +2132,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "2011-egyptian-revolution",
       "kind": "event",
       "origin": {
@@ -2262,7 +2262,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "2011-yemeni-revolution",
       "kind": "event",
       "origin": {
@@ -9129,7 +9129,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "libyan-civil-war",
       "kind": "event",
       "origin": {
@@ -14666,6 +14666,34 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Tulip Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 3,
+      "id": "tunisian-revolution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "arab-spring",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Tunisian revolution"
     },
     {
       "authors": [

@@ -4866,6 +4866,15 @@
         }
       ]
     },
+    "tunisian-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "twelve-day-war": {
       "from": "git",
       "versions": [
