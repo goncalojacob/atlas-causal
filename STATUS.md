@@ -13657,17 +13657,17 @@ batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
 every edge. **The milestone is not done**: §7 of the pool file says where it
 stands and what the next fire does.
 
-**Fifteen batches.** The pool before: 310 active events, 229 of them main, 362
+**Sixteen batches.** The pool before: 310 active events, 229 of them main, 362
 active edges, a largest connected component of 254 and 23 events with no edge.
-**After batch 15: 445 active, 343 main, 102 filed, 539 edges, largest component
-420, 3 with no edge.** Forty-eight records came back from the tombstones and
-ninety-three were imported and kept; a hundred and sixty-nine edges were
+**After batch 16: 451 active, 348 main, 103 filed, 546 edges, largest component
+424, 3 with no edge.** Forty-eight records came back from the tombstones and
+ninety-nine were imported and kept; a hundred and seventy-six edges were
 written — eighteen in batch 0, seven in batch 1, **nineteen in batch 3, which
 imported nothing at all and moved the component by twenty-seven**, eight in
 batch 4, eleven in batch 5, eight in batch 6, eighteen in batch 7, eleven in
 batch 8, eight in batch 9, fourteen in batch 10, ten in batch 11, six in batch 12
 fourteen in batch 13,
-fifteen in batch 14 and eleven in batch 15.
+fifteen in batch 14, eleven in batch 15 and seven in batch 16.
 
 **Batch 13 is the fourth sweep batch and the first one to grow the component as
 fast as the corpus.** Sixteen rows ticked by §5's rule over a pool recomputed
@@ -13724,6 +13724,26 @@ the assassination of Charlie Kirk is **eleven days old**, and set 4 ranks by
 sitelinks, which a story in the news accumulates fast; its article is being
 rewritten hourly, so a revision cited today is not the article a reader will
 open.
+
+**Batch 16 is the lowest yield of the run and it is the number to plan the next
+hour against.** Sixteen rows, one refused at the class table (`Q1366688`, the
+Trans-Pacific Partnership), **six kept and nine retracted**, seven edges, one
+filing: corpus +6 and component +4, the Horn fragment growing from four to six
+exactly as batch 15 said it would. Across batches 13 to 16 the sweep's yield
+runs **twelve, twelve, nine, six**. That is §5's ordering reporting the shape of
+the corpus rather than failing: once the rows a corpus of 450 has a neighbour
+for are spent, a ranking by sitelinks and thin decade keeps offering
+**instruments nobody here signed and wars in countries this atlas has never
+held**. Four of batch 16's nine retractions are instruments, which makes **eight
+retracted on arrival** across the milestone. Its one real surprise is
+`libyan-civil-war-q16911838`: two hundred and twenty-six kilobytes whose
+background section is the General National Congress and the 2012 elections, and
+which **never argues a line back to the 2011 war this atlas holds** — the only
+mention is a hatnote, and a hatnote is not a claim. Its most useful retraction
+is `2023-brazilian-congress-attack`, whose named cause is the 2022 Brazilian
+general election: **the atlas holds the 2018 election and not the 2022 one**,
+which is a one-row gap a later batch can close and the clearest single thing a
+Portuguese-language atlas is missing.
 
 **Batches 10 and 11 are sweep batches taken by §5's tick rule**, sets 1 and 2
 having been spent on the hinges and the bridges. The pool was recomputed each
@@ -13798,7 +13818,7 @@ of the rest were main before they were withdrawn.
 `estonian-war-of-independence` and `sino-soviet-border-conflict` are the two
 that were arguable and are listed rather than filed, which is M62 §3's rule.
 Every new record carries `actors: []`, which is M67 A1 and not a defect, and it
-is why `docs/m53-polities.md` §4.1 moves to **306 of 445** with the numerator
+is why `docs/m53-polities.md` §4.1 moves to **306 of 451** with the numerator
 standing still: the gap that row shows is the gap between an imported corpus
 and a written one, and it widens by exactly the number of records each batch
 keeps. Batch 13 files two more on the same rule and on a sentence its article
@@ -13809,12 +13829,12 @@ four of them treaties, because a treaty is not part of the war it ends.
 
 **The milestone is a long way from its done-condition and that is the honest
 reading**: the brief asks for an order of magnitude more than the 250 it was
-written against, and the corpus stands at 445 — **but 420 of those 445 are in
+written against, and the corpus stands at 451 — **but 424 of those 451 are in
 one connected component, against 254 of 310 when the run started, and three
 active events carry no edge at all, against twenty-three.** The connectedness
 the owner asked for on 21 September is substantially done; the volume is barely
-begun. The sweep's **unwalked rows** are what that volume comes from — 1,159 of
-them on batch 15's recount over the `world` sections — and at ten to twelve kept
+begun. The sweep's **unwalked rows** are what that volume comes from — 1,143 of
+them on batch 16's recount over the `world` sections — and at ten to twelve kept
 records a batch the brief's own number is many hundreds of batches away. That is
 a fact the owner should have rather than a number to be optimistic about.
 

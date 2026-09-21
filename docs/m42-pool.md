@@ -106,6 +106,7 @@ A5: a batch that grows the corpus and not the component has to say why.
 | 13 | sets 3 and 4 a fourth time: 16 created, **12 kept and 4 retracted**, no tombstone back, 14 edges, two filings — corpus +12 and component +12 | 423 | 326 | 97 | 513 | **400** | 3 |
 | 14 | sets 3 and 4 a fifth time: 15 created and **one refused at the class table**, 12 kept and 3 retracted, 15 edges, three filings — corpus +12 and component +12 | 435 | 335 | 100 | 528 | **412** | 3 |
 | 15 | sets 3 and 4 a sixth time: 16 created, 9 kept and 7 retracted, **1 tombstone back**, 11 edges, two filings — corpus +10 and component **+8**, the two missing being the Horn of Africa fragment | 445 | 343 | 102 | 539 | **420** | 3 |
+| 16 | sets 3 and 4 a seventh time: 15 created and one refused at the class table, **6 kept and 9 retracted**, 7 edges, one filing — corpus +6 and component **+4**, the Horn fragment 4 → 6 | 451 | 348 | 103 | 546 | **424** | 3 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -283,18 +284,19 @@ the next, so a killed run loses a batch and not the milestone.
 | batch 13 | sets 3 and 4 a fourth time: 12 kept, 4 retracted, 0 reinstated, 14 edges, 388 → 400 |
 | batch 14 | sets 3 and 4 a fifth time: 12 kept, 3 retracted, 1 refused at the class table, 15 edges, 400 → 412 |
 | batch 15 | the Horn of Africa opens: 9 kept, 7 retracted, 1 reinstated, 11 edges, 412 → 420 |
+| batch 16 | the lowest yield of the run: 6 kept, 9 retracted, 1 refused, 7 edges, 420 → 424 |
 
 **Where the milestone stands against its own done-condition.** The brief asks
 for an order of magnitude more active events than the 250 it was written
-against. The corpus holds **445**, up from 310, and its largest connected
-component holds **420 of them**, up from 254 — so the connectedness is nearly
+against. The corpus holds **451**, up from 310, and its largest connected
+component holds **424 of them**, up from 254 — so the connectedness is nearly
 done and the volume is barely begun. **The volume is the sweep**: the rows the
 tool has already found and nobody has walked, recomputed against `data/` at
 every ticking rather than remembered. That recount stood at 1,557 on 21
 September and again at batch 10, and batch 13 measures the same pool over the
-`world` sections alone at **1,191 rows**, batch 14 at **1,175** and batch 15 at
-**1,159**, sixteen fewer each time, which is the sixteen the batch before it
-spent; the two numbers are the same rule
+`world` sections alone at **1,191 rows**, batch 14 at **1,175**, batch 15 at
+**1,159** and batch 16 at **1,143**, sixteen fewer each time, which is the
+sixteen the batch before it spent; the two numbers are the same rule
 asked of a slightly different set of sections, and the one to trust is whichever
 the batch that is ticking has just computed. §5's tick rule, written before a
 box was ticked, is how they are chosen. Batches 7, 8, 10, 11 and 13 are the ones
@@ -367,6 +369,18 @@ forbidden by rule 4 against a war that began in 1974. **The Horn is the second
 Sudan.** A sweep that opens a new corner of the world will keep producing
 these, and the run should say which of the two it did rather than reporting one
 number.
+
+**Batch 16 is where the sweep's yield starts falling, and the number is worth
+planning an hour against.** Across batches 13 to 16 it goes **twelve, twelve,
+nine, six** kept of sixteen. That is §5's ordering reporting the shape of the
+corpus rather than failing: sets 3 and 4 rank by sitelinks and by thin decade,
+and once the rows a corpus of 450 records has a neighbour for are spent, what
+the ranking keeps offering is **instruments nobody here signed and wars in
+countries this atlas has never held**. Eight instruments have now been retracted
+on arrival; §7.4's environment-shaped hole is the general case of it. **Plan on
+about half a sweep batch from here**, and on the two things that are still
+cheap: the tombstone notes, and reading the tick list against them before
+importing.
 
 **What the next fire does**, in this order:
 
