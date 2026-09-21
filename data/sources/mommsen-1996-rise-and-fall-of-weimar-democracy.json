@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "mommsen-1996-rise-and-fall-of-weimar-democracy",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "Hans Mommsen"
+  ],
+  "title": "The Rise and Fall of Weimar Democracy",
+  "year": 1996,
+  "publisher": "University of North Carolina Press",
+  "isbn": "0807847216",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "container": null,
+  "repository": null,
+  "reference": null
+}

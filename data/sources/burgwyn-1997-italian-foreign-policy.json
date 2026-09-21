@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "burgwyn-1997-italian-foreign-policy",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "H. James Burgwyn"
+  ],
+  "title": "Italian Foreign Policy in the Interwar Period 1918–1940",
+  "year": 1997,
+  "publisher": "Praeger Publishers",
+  "isbn": "9780275948771",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "container": null,
+  "repository": null,
+  "reference": null
+}

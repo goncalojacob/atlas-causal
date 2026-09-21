@@ -13,14 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-21",
   "origin": {
     "tool": "assistant"
   },
   "review": {
     "status": "draft",
     "flags": [
-      "edge-drafted"
+      "edge-drafted",
+      "m72-second-source"
     ],
     "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
   },
@@ -28,12 +29,16 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Finnish Civil War\", revision 1370618272"
+    },
+    {
+      "source": "upton-1980-vallankumous-suomessa",
+      "locator": "pp. 62–144"
     }
   ],
   "from": "world-war-i",
   "to": "finnish-civil-war",
   "type": "precondition-of",
-  "confidence": "probable",
+  "confidence": "consensus",
   "explanation": "Finland was a Russian grand duchy in 1914 and an independent state in a civil war by January 1918, and the war is what stands between the two. It broke the Russian state that had governed Finland, it put a garrison of Russian troops on Finnish soil who would sell or hand over their rifles, it turned the food supply of a country that imported its grain into a famine question, and it made a German intervention possible by giving Germany an interest in the Baltic. The claim is that the war is the condition of the Finnish rupture, not that it decided which side would win it.",
   "dispute": null
 }
