@@ -66,11 +66,35 @@
     const at = params.get('at');
     params.delete('zoom');
     params.delete('at');
+    // And which collapsed group is open, by the id of the block inside it: a
+    // `<details>` opens on a click or on an anchor, and neither is in the URL
+    // the atlas keeps — what a reader had open is not what they were looking
+    // at. Same reason as `band` and `zoom` above, and the same licence: this
+    // page is the frame's own origin and may reach in with the gesture a
+    // reader would make. Not passed on to the atlas (M68).
+    const openId = params.get('open');
+    params.delete('open');
     const frame = document.getElementById('viewport');
     frame.width = width;
     frame.height = height;
     const query = params.toString().replace(/%2C/g, ',').replace(/%3A/g, ':');
     frame.src = `/${query ? `?${query}` : ''}`;
+
+    if (openId) {
+      // The control is built from the manifest, so it arrives after the load
+      // event: this waits for the block rather than for the frame.
+      let waits = 0;
+      const reveal = () => {
+        const block = frame.contentDocument?.getElementById(openId);
+        const details = block?.closest('details');
+        if (!details) {
+          if ((waits += 1) < 400) setTimeout(reveal, 50);
+          return;
+        }
+        details.open = true;
+      };
+      setTimeout(reveal, 50);
+    }
 
     if (Number.isFinite(zoom) && zoom > 0) {
       const inside = () => frame.contentDocument;

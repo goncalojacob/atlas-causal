@@ -636,13 +636,14 @@ test('a regional event is a wash over its lane, and its parts are still their ow
 test('the coastlines have no switch and are always drawn', { skip }, async () => {
   await wide(async (page, url) => {
     await open(page, url('?fixtures=1'), READY);
-    // Every box of the control that is not a category: the two plain rows and
-    // the five inside the base-map group (layer-control.js). Neither of the two
-    // names of a coastline is among them — `land` lost its switch in M30b, and
-    // `coast` never had one, because the near shore is a level of detail of the
-    // same line and not a layer a reader turns off (deviation 523).
+    // Every box of the legend, which since M68 is the map's own layers and
+    // nothing else: the two plain rows and the five inside the base-map group
+    // (layer-control.js). Neither of the two names of a coastline is among
+    // them — `land` lost its switch in M30b, and `coast` never had one, because
+    // the near shore is a level of detail of the same line and not a layer a
+    // reader turns off (deviation 523).
     const control = await page.eval(`
-      const boxes = [...document.querySelectorAll('.bar .layers input[data-layer]:not([data-category])')];
+      const boxes = [...document.querySelectorAll('.bar .layers input[data-layer]')];
       return {
         ids: boxes.map((b) => b.dataset.layer),
         labels: boxes.map((b) => b.closest('label').textContent.trim()),
@@ -661,8 +662,8 @@ test('the coastlines have no switch and are always drawn', { skip }, async () =>
     const after = await page.eval(`return {
       land: getComputedStyle(document.querySelector('#map .layer-land')).display,
       territories: getComputedStyle(document.querySelector('#map .layer-presences')).display,
-      checked: [...document.querySelectorAll('.bar .layers input[data-layer]:not([data-category])')].map((b) => b.checked),
-      categories: [...document.querySelectorAll('.bar .layers input[data-category]')].map((b) => b.checked),
+      checked: [...document.querySelectorAll('.bar .layers input[data-layer]')].map((b) => b.checked),
+      categories: [...document.querySelectorAll('.bar .categories-control input[data-category]')].map((b) => b.checked),
     };`);
     assert.notEqual(after.land, 'none', 'the coastlines survive an old link that dropped them');
     assert.equal(after.territories, 'none', 'and the rest of the link is obeyed');
@@ -969,7 +970,7 @@ test('turning a category off removes its marks on the same frame, and leaves the
     await open(page, url('?fixtures=1'), READY);
     await settledShards(page);
     const before = await page.eval(`return {
-      rows: document.querySelectorAll('.bar .layers .categories label').length,
+      rows: document.querySelectorAll('.bar .categories-control .categories label').length,
       glyphs: document.querySelectorAll('#map use.glyph').length,
       marks: document.querySelectorAll('#map circle.mark[data-id]').length,
       war: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-e"]')),
@@ -983,7 +984,7 @@ test('turning a category off removes its marks on the same frame, and leaves the
     // The click and the reading are one script: whatever the page did between
     // them, it did synchronously.
     const after = await page.eval(`
-      const box = document.querySelector('.bar .layers input[data-category="war"]');
+      const box = document.querySelector('.bar .categories-control input[data-category="war"]');
       box.checked = false;
       box.dispatchEvent(new Event('change', { bubbles: true }));
       return {
@@ -1024,7 +1025,7 @@ test('?layers=events:war opens on the wars, the uncategorised, and nothing else 
       disaster: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-c"]')),
       none: Boolean(document.querySelector('#map circle.mark[data-id="fixture-event-d"]')),
       glyphs: document.querySelectorAll('#map use.glyph').length,
-      boxes: [...document.querySelectorAll('.bar .layers input[data-category]')]
+      boxes: [...document.querySelectorAll('.bar .categories-control input[data-category]')]
         .map((b) => [b.dataset.category, b.checked]),
       events: document.querySelector('.bar .layers input[data-layer="events"]').checked,
     };`);
@@ -1052,7 +1053,7 @@ test('?layers=events:war opens on the wars, the uncategorised, and nothing else 
     // And the link round-trips: turning the war back on writes the bare token
     // again, which is what "every category" is called.
     await page.eval(`
-      for (const b of document.querySelectorAll('.bar .layers input[data-category]')) {
+      for (const b of document.querySelectorAll('.bar .categories-control input[data-category]')) {
         if (!b.checked) { b.checked = true; b.dispatchEvent(new Event('change', { bubbles: true })); }
       }
       return true;`);
@@ -1484,7 +1485,10 @@ test('?layers=territories,events opens with the base map off and its boxes untic
 
     const seen = await page.eval(BASE_SWITCHES);
     assert.deepEqual(seen.visible, ['territories', 'events'], 'two visible rows');
-    assert.deepEqual(seen.summaries, ['base map', 'events by category'], 'and two collapsed groups');
+    // One collapsed group since M68: the categories left the legend for the
+    // masthead, where they can be reached from the graph and the lanes too
+    // (deviation 858, category-control.js).
+    assert.deepEqual(seen.summaries, ['base map'], 'and one collapsed group');
     const byId = Object.fromEntries(seen.rows.map((r) => [r.id, r]));
     assert.equal(byId.coast.box, null, 'the coastlines have no box: they are the ground (decision 14)');
     assert.ok(byId.coast.drawn > 0, 'and they are drawn whatever the link says');

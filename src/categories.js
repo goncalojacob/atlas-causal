@@ -40,6 +40,21 @@ export function categoriesOn(layers) {
   return on.length === 0 ? null : new Set(on);
 }
 
+// The same answer said as the switches show it: which of the categories in use
+// a `?layers=` list leaves ticked. All of them behind the bare `events` token,
+// the named ones behind `events:<id>`, and none at all where the events layer
+// is off — which `categoriesOn` cannot say on its own, because `null` there
+// means "nothing to narrow" and not "nothing on".
+//
+// Since M68 a control that does not own the category switches reads its half of
+// the list through this rather than off the boxes, because the boxes may be in
+// another group and are no longer its to read.
+export function categoriesChecked(layers, all) {
+  if (!eventsOn(layers)) return [];
+  const on = categoriesOn(layers);
+  return on === null ? [...all] : all.filter((id) => on.has(id));
+}
+
 // A lista de fichas que o leitor acabou de escrever, a partir do que está
 // ligado: a ficha nua quando estão todas, uma por categoria quando não estão.
 // `all` são as categorias em uso — as que têm ficha no controlo — e não as doze
