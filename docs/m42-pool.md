@@ -911,3 +911,41 @@ waits on: `libyan-civil-war-q16911838`, whose article never names the war of
 2011, and `sharpeville-massacre` with `soweto-uprising` from batch 18. Eleven
 live *"It waits on …"* clauses are left after this batch, and the scan that
 finds them is twenty lines over `data/events/*.json`.
+
+## Batch 20 — the `part of` pass, run over the whole corpus
+
+*21 September, the third batch of the same fire, and the rule batch 19 found
+turned into a pass.*
+
+| | |
+| --- | --- |
+| main events asked | 218 of 263 (those carrying a Wikidata id) |
+| API calls | 5 |
+| answers naming a record here | 20 |
+| filed | 5 |
+| refused | 15 — one lane, eleven dates, three depths |
+| corpus | 496 active, unchanged |
+| **main** | 263 → **258** |
+| largest connected component | 442, unchanged and necessarily so |
+
+**This is the cheapest filing there is and it is nearly spent.** Twenty
+answers out of 218 items, five of them usable: the corpus does not carry many
+main events whose item names another main event here as its whole. The pass
+should be **re-run after every import batch**, because each new record brings
+its own `part of` and may also become the parent an older record was waiting
+for — it costs five calls — but it will not be what gets Asia's seventy main
+events down to the low tens per century. That still needs periods, and periods
+still need articles.
+
+**The refusals are the more interesting half and they are listed record by
+record in `docs/m67-umbrellas.md` §7.** Eleven are the atlas's own dates
+disagreeing with the source's containment, and eight of those are not
+mistakes on either side: **a `part of` statement is a claim about subject, not
+about time.** One is the lane, which is A6's own rule refusing an African war
+a place under a European period. Three are depth.
+
+**One defect was found and left visible rather than filed over**:
+`the-troubles` is dated `1998–1998` in this atlas, for a conflict of thirty
+years. Filing `good-friday-agreement` under it would have buried that. It is
+not this batch's to fix — the record's interval came from an import and a
+person should set it — and it is written here so the next fire can.

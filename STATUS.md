@@ -13666,7 +13666,9 @@ same largest component of 433, because a filing writes `parent` and `parent`
 takes no edge. **After batch 18: 493 active, 266 main, 227 filed, 578 edges,
 largest component 441, 8 with no edge** — the first batch under A6, and the
 main count comes out below where it found it. **After batch 19: 496 active,
-263 main, 233 filed, 580 edges, largest component 442**, on no import at all. The one count that moved against the pass is **events with no
+263 main, 233 filed, 580 edges, largest component 442**, on no import at all.
+**After batch 20: the same 496 and the same 442, and 258 main**, on no import
+and no edge — five filings off the corpus's own `part of` statements. The one count that moved against the pass is **events with no
 edge at all, 3 to 6**, and the three are the umbrellas themselves: M62's brief
 says an umbrella carries no edge, so each arrives at degree zero and the
 warning is the expected one.
@@ -14573,6 +14575,41 @@ nest a second deep costs one API call**, and `docs/m42-pool.md` says to run it
 over the whole corpus before the next period is written.
 
 ### Deviations
+
+### Batch 20 — the `part of` pass over the whole corpus
+
+The rule batch 19 found, run as a pass: every main event carrying a Wikidata
+id — 218 of 263 — asked for `part of` in **five API calls**, and the twenty
+answers naming a record this atlas already holds filed where the dates and the
+lane allow. **Five taken, fifteen refused**, and every refusal is a date, a
+lane or a depth rather than a judgement about history. Main 263 to **258**;
+the corpus and the largest component do not move, because `parent` takes no
+edge.
+
+**It is the cheapest filing there is and it is nearly spent**: five usable
+answers out of 218 items. It should be re-run after every import batch — each
+new record brings its own `part of`, and may also be the parent an older
+record was waiting for — and it will not be what gets Asia's seventy main
+events to the low tens per century. That still needs periods, and periods
+still need articles.
+
+### Deviations
+
+1021. **A `part of` statement is a claim about subject and not about time, and
+     eight of this pass's eleven date refusals are neither side's mistake.**
+     The Basmachi movement really does outlive the Russian civil war the item
+     files it under; the Rif war really does begin seven years before the
+     interwar period; the second Sino-Japanese war really does begin two years
+     before this atlas dates the Second World War. Rule 24 is what keeps
+     containment-in-subject and containment-in-time apart, and the answer when
+     they disagree is to leave the record main and say so, never to widen a
+     span to fit a filing.
+1022. **`the-troubles` is dated `1998–1998` in this atlas, for a conflict of
+     thirty years.** It came up because `good-friday-agreement` carries
+     `part of` it, and filing the agreement under a one-year stub would have
+     buried the defect. Left visible, named in `docs/m42-pool.md`, and not
+     repaired here: the interval came from an import and what it should be is
+     a person's to set, not a run's to guess.
 
 1019. **Reinstating an M44b-era record can put an unread record on no
      dashboard.** `2021-myanmar-coup-d-etat`'s `review` block carried flags
