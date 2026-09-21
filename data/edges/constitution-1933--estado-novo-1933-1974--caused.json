@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "constitution-1933--estado-novo-1933-1974--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ditadura Nacional\", revision 1365513062, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Estado Novo (Portugal)\", revision 1375585347, § lead"
+    }
+  ],
+  "from": "constitution-1933",
+  "to": "estado-novo-1933-1974",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the Ditadura Nacional says the dictatorship lasted until the adoption of a new constitution in 1933 that ushered in the so-called Estado Novo; the article on the Estado Novo dates the corporatist state it describes to its installation in 1933.",
+  "dispute": null
+}

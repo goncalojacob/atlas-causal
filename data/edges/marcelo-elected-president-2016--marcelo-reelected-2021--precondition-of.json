@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "marcelo-elected-president-2016--marcelo-reelected-2021--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2021 Portuguese presidential election\", revision 1371534929, § lead"
+    }
+  ],
+  "from": "marcelo-elected-president-2016",
+  "to": "marcelo-reelected-2021",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the election of 2021 describes it as the re-election of a sitting president: the incumbent, Marcelo Rebelo de Sousa, was re-elected for a second term, by a landslide of 60.7 per cent, winning every district and all 308 municipalities.",
+  "dispute": null
+}

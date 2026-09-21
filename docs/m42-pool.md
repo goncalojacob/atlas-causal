@@ -93,6 +93,7 @@ A5: a batch that grows the corpus and not the component has to say why.
 | — | before M42 | 310 | 229 | 81 | 362 | 254 | 23 |
 | 0 | the fifteen M44b retracted that the new bar puts back, and 18 edges | 325 | 237 | 88 | 380 | **268** | 22 |
 | 1 | seven earlier tombstones — M40b's and M22's — that the new bar reaches, and 7 edges | 332 | 244 | 88 | 387 | **274** | 21 |
+| 3 | the connection pass: 19 edges, both ends on records already here, no import | 332 | 244 | 88 | 406 | **301** | 11 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -249,7 +250,7 @@ item walked again is named in every report.
 
 ## 7. Where the run stands, for the fire that picks it up
 
-Three batches are on `m42` and each was validated, indexed and pushed before
+Four batches are on `m42` and each was validated, indexed and pushed before
 the next, so a killed run loses a batch and not the milestone.
 
 | | what landed |
@@ -257,31 +258,35 @@ the next, so a killed run loses a batch and not the milestone.
 | batch 0 | the fifteen M44b retracted that the new bar puts back, 18 edges |
 | batch 1 | seven earlier tombstones — M40b's and M22's — 7 edges |
 | batch 2a | the twelve hinges seeded, ten classes, twelve lanes, one rewind |
+| batch 3 | the connection pass: 19 edges, no import, largest component 274 → 301 |
 
-**Two Action runs are queued on `import-wikidata.yml`**, which takes them one
-at a time (`concurrency: import-wikidata`, never cancelling):
+**The two Action runs queued on `import-wikidata.yml` have still not
+committed anything.** `import/candidates-2026-09-21` was pushed at 00:52Z and
+run 29 was still `in_progress` at 04:30Z; `import/run-m42-2026-09-21`, the
+walk over the twelve hinges of §6, is run 30 and still `pending` behind it,
+because the workflow's `concurrency: import-wikidata` takes them one at a
+time and never cancels. The walk runs up to forty batches and validates,
+indexes and runs both test passes between each, so hours are expected; the
+timeout is 330 minutes and run 29 reaches it at 06:22Z.
 
-- `import/candidates-2026-09-21`, the fresh sweep amendment A2 names, pushed
-  at 00:52Z and still running. It writes `docs/wikidata-candidates.md` and
-  nothing else. **It is not on the critical path**: the committed sweep holds
-  1,586 unwalked rows and §5's rule reads either.
-- `import/run-m42-2026-09-21`, the walk over the twelve hinges of §6, queued
-  behind it.
+Neither is on the critical path for a batch that writes edges: batch 3 is
+proof that the corpus in hand still had a quarter of its component left to
+win. It **is** on the critical path for the fragments §4b of
+`docs/m42-connections.md` names — the post-Soviet eight and the subcontinent
+five between them are thirteen of the sixteen events that cannot reach a
+Portuguese one — and those wait on the dissolution of the Soviet Union and
+the partition of India, both seeded in batch 2a.
 
 **A batch lands in two commits, not one** (deviation 798, re-learned as 982):
 the records, then the rebuilt index. The history shards are built out of the
 commits that touch each record's file, so the commit that writes a record
-makes the shard describing it stale in that same commit. Batch 1's own commit
-was red for exactly that; the head of `m42` is green.
+makes the shard describing it stale in that same commit.
 
-**What the next fire does.** Fast-forward whichever import branch has
-finished into `m42` — that merge is the run's own commit, by the amendment of
-4 September — then the connection pass for what arrived: read the records,
-write the edges to **what already exists** as well as to each other, file each
-under a parent where M62's rule reaches, and reread the tombstones the new
-records unblock. `docs/m42-connections.md` §5a and §5b name them against the
-record each waits for, so the hinges arriving is a list of reinstatements
-already written down: the dissolution of the Soviet Union and the revolutions
-of 1989 unblock four, the breakup of Yugoslavia and the Bosnian war unblock
-five, the Angolan civil war unblocks two. Then §3's row here, and the next
-batch.
+**What the next fire does.** Check run 30 first: if it has committed, fast-
+forward `import/run-m42-2026-09-21` into `m42` — that merge is the run's own
+commit, by the amendment of 4 September — and do the connection pass for what
+arrived, rereading `docs/m42-connections.md` §5a and §5b, which name the
+tombstones each hinge unblocks. If it has not, batch 4 is the rest of §4b: the
+presidential-election singletons, which are a chain the corpus holds only the
+ends of, and then the fragments whose anchor is a record rather than an
+import. Either way: §3's row here, then the next batch.

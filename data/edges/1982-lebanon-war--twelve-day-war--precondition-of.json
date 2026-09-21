@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1982-lebanon-war--twelve-day-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Twelve-Day War\", revision 1375310571, § Background"
+    }
+  ],
+  "from": "1982-lebanon-war",
+  "to": "twelve-day-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same background section dates the proxy conflict the war grew out of from that war: Israel has fought wars with Iranian proxies including against Hezbollah since the 1982 Lebanon war.",
+  "dispute": null
+}

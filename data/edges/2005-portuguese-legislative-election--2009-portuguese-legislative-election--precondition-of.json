@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2005-portuguese-legislative-election--2009-portuguese-legislative-election--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2009 Portuguese legislative election\", revision 1373358204, § lead"
+    }
+  ],
+  "from": "2005-portuguese-legislative-election",
+  "to": "2009-portuguese-legislative-election",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the election of 2009 reads it against the one before: the vote came after four years under a majority government of the Socialist Party, and the Socialists, led by then prime minister José Sócrates, won the largest number of votes and seats but failed to repeat the overall majority they had obtained in 2005, losing eight per cent of the vote and twenty-four seats.",
+  "dispute": null
+}

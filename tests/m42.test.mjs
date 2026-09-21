@@ -116,3 +116,36 @@ test('every event this milestone put back is accounted for in writing', async ()
   }
   assert.deepEqual(unaccounted, [], `put back and argued nowhere: ${unaccounted.join(', ')}`);
 });
+
+test('every edge this milestone wrote has both its ends argued in writing', async () => {
+  // Amendment A5: volume must connect, not only file — and batch 3 is edges
+  // alone, every end of every one of them a record the atlas already held.
+  // That is a change of practice (deviation 979 wrote the first such edge and
+  // said so), and the discipline that keeps it from becoming a licence to
+  // wire the graph up for the pleasure of the number is this: **an edge
+  // nobody argued in writing fails**. `docs/m42-connections.md` is where the
+  // sentence that argues each one lives, and it names records rather than
+  // edge ids, so the property is asserted over the two ends.
+  //
+  // The date is how the milestone's own edges are told from the corpus's:
+  // M42 is a one-day run and its records carry `created: 2026-09-21`. A
+  // batch that writes an edge and argues it nowhere is red; a batch that
+  // writes none is green, which is what makes this a property and not a
+  // count (brief, test 2).
+  const connections = path.join(ROOT, 'docs', 'm42-connections.md');
+  const argued = existsSync(connections) ? await readFile(connections, 'utf8') : '';
+  const dir = path.join(ROOT, 'data', 'edges');
+  const files = (await readdir(dir)).filter((f) => f.endsWith('.json'));
+  const unargued = [];
+  for (const f of files) {
+    const edge = JSON.parse(await readFile(path.join(dir, f), 'utf8'));
+    if (edge.status !== 'active' || edge.created !== '2026-09-21') continue;
+    // Named, whether on its own or inside the `from --type--> to` span the
+    // batches before this one write an edge as. The bound is what keeps
+    // `gulf-war` from being read out of `iraq-war`.
+    const named = (end) => new RegExp(`(^|[^a-z0-9-])${end}([^a-z0-9-]|$)`).test(argued);
+    const missing = [edge.from, edge.to].filter((end) => !named(end));
+    if (missing.length) unargued.push(`${edge.id} (${missing.join(', ')})`);
+  }
+  assert.deepEqual(unargued, [], `written and argued nowhere: ${unargued.join('; ')}`);
+});

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "first-sino-japanese-war--boxer-rebellion--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Boxer Rebellion\", revision 1375554581, § lead"
+    }
+  ],
+  "from": "first-sino-japanese-war",
+  "to": "boxer-rebellion",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the Boxer rebellion opens its account of the causes with that war: following the First Sino-Japanese war, villagers in North China feared the expansion of foreign spheres of influence and resented Christian missionaries who ignored local customs and used their power to protect their followers in court. The fear of the concessions that followed the defeat is the ground the article says the movement spread over from 1899.",
+  "dispute": null
+}

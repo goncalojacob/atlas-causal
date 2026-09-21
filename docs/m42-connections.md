@@ -170,6 +170,241 @@ Its retraction read, verbatim:
 
 > Retracted in M40b: twenty years of war from October 2001 to the Taliban's return in August 2021. Its cause is the attacks of 11 September 2001, which is not a record here — the War on Terrorism as a series was among the twenty-nine candidates the import refused for want of a lane — and its consequences in this dataset are none. Portugal sent forces under ISAF for most of the war and the atlas holds no record of that either. It would need 11 September first.
 
+## 2c. Batch 3 — the connection pass, which imports nothing
+
+Amendment A5: *volume must connect, not only file*, and the number it asks for
+is the largest connected component. Batches 0 and 1 moved it by putting
+records back. **This batch writes no record at all.** It reads the graph
+instead: at its head the atlas drew 332 active events as **thirty-two
+components** — one of 274 and thirty-one fragments beside it, twenty-one of
+them events carrying no edge whatsoever — and asks of each fragment the
+question §1 asks of a reinstatement. Is there a sentence, in an article this
+atlas can open at a revision, that argues a line from this fragment to
+something already in the corpus?
+
+Nineteen times there was. Every end of every edge below is a record this
+atlas already held, which is the practice deviation 979 opened and this batch
+is made of: M44's discipline was that every edge have one end on a new
+record, and that discipline is exactly what left forty-five events stranded.
+A fragment is not made honest by an import; it is made honest by a source.
+
+**What this batch does not touch.** No record was created, none was
+reinstated, none was filed, and no `parent` was written — so the main count
+cannot move, and §3 says so. Nine fragments are left standing and §4b says
+what each waits for.
+
+#### `first-sino-japanese-war --precondition-of--> russo-japanese-war`
+
+The English article on the Russo-Japanese war, at revision 1375146144, opens
+its own account with that war: at its end the Treaty of Shimonoseki of 1895
+had ceded the Liaodong Peninsula and Port Arthur to Japan before the Triple
+Intervention, in which Russia, Germany and France forced Japan to relinquish
+the claim; Japan then feared Russia would impede its plans in mainland Asia
+as Russia built the Trans-Siberian Railroad, made inroads in Korea and took
+a lease of Liaodong and Port Arthur in 1898. `first-sino-japanese-war` had no
+edge at all before this.
+
+#### `russo-japanese-war --caused--> russian-revolution-of-1905`
+
+The same article and revision: Russia's substantial casualties and losses for
+a cause that ended in a humiliating defeat *contributed to* internal unrest
+culminating in the 1905 Russian Revolution, during which the autocracy was
+forced to make concessions. The article's own hedge is why this is `probable`.
+This is the edge that joins the pair to the main component.
+
+#### `first-sino-japanese-war --precondition-of--> boxer-rebellion`
+
+The English article on the Boxer rebellion, at revision 1375554581, begins its
+causes there: following the First Sino-Japanese war, villagers in North China
+feared the expansion of foreign spheres of influence and resented Christian
+missionaries who ignored local customs and used their power to protect their
+followers in court. It carries `boxer-rebellion` and `xinhai-revolution`,
+until now a component of two, in with it.
+
+#### `treaty-of-brest-litovsk --precondition-of--> polish-soviet-war`
+
+The English article on the Polish–Soviet war, at revision 1370704570: after
+the collapse of the Central Powers and the Armistice of 11 November 1918,
+Lenin's Soviet Russia annulled the Treaty of Brest-Litovsk and moved forces
+westward to reclaim the Ober Ost regions the Germans had abandoned, Lenin
+viewing the newly independent Poland as a critical route for spreading
+revolution into Europe. `polish-soviet-war` is filed under `russian-civil-war`
+already; a filing is not an argument, and this is the argument.
+
+#### `iranian-revolution --caused--> iran-iraq-war`
+
+The English article on the war, at revision 1375407163: in starting it the
+Iraqi government under Saddam Hussein primarily wanted to prevent Khomeini,
+Iran's leader following the 1979 revolution, from exporting Iran's new state
+ideology to Iraq, and feared Iran would rally Iraq's Shia majority against the
+Ba'athist government. The article names older border disputes beside it, which
+is why the confidence is `probable`. `iran-iraq-war` had no edge at all.
+
+#### `iran-iraq-war --precondition-of--> gulf-war`
+
+The English article on the Gulf war, at revision 1375784270, § Background: by
+the August 1988 ceasefire Iraq was heavily debt-ridden, most of it owed to
+Saudi Arabia and Kuwait, fourteen billion dollars to Kuwait alone, and both
+refused to forgive it; Kuwait was overproducing oil at least in part to repair
+losses caused by Iranian attacks in the war, and the resulting price slump cost
+Iraq seven billion dollars a year — what the Iraqi government called economic
+warfare. It carries `gulf-war` and `iraq-war` in.
+
+#### `coup-28-may-1926 --caused--> ditadura-nacional-1926-1933`
+
+The English article on the Ditadura Nacional, at revision 1365513062, defines
+the regime by the coup: it governed Portugal from the end of the First Republic
+with the 28 May 1926 coup until the adoption of a new constitution in 1933.
+
+#### `ditadura-nacional-1926-1933 --precondition-of--> estado-novo-1933-1974`
+
+The English article on the Estado Novo, at revision 1375585347: it evolved from
+the Ditadura Nacional formed after the coup of 28 May 1926 against the unstable
+First Republic, and historians recognise the two together as the Second
+Portuguese Republic. The article on the Ditadura Nacional says the same from
+its own end.
+
+#### `constitution-1933 --caused--> estado-novo-1933-1974`
+
+The same two articles: the dictatorship lasted until the adoption of a new
+constitution in 1933 *that ushered in* the Estado Novo, which the article on
+the Estado Novo dates to its installation in that year.
+
+#### `republic-proclaimed-1910 --caused--> first-portuguese-republic-1910-1926`
+
+The English article on the First Republic, at revision 1370244290, bounds it by
+the two events: it spans the sixteen years between the end of the constitutional
+monarchy marked by the 5 October 1910 revolution and the 28 May 1926 coup.
+
+#### `estado-novo-1933-1974 --precondition-of--> portuguese-colonial-war-1961-1974`
+
+The English article on the colonial war, at revision 1372834694: unlike other
+European nations during the 1950s and 1960s the Estado Novo did not withdraw
+from its African territories, and the thirteen-year conflict from 1961 was
+fought between Portugal's military and the nationalist movements that became
+active there.
+
+#### `portuguese-colonial-war-1961-1974 --precondition-of--> carnation-revolution-1974`
+
+The English article on the revolution, at revision 1374066068: the coup of
+25 April 1974 came in the midst of the colonial war, was organised by the
+Armed Forces Movement of officers who opposed the regime, and resulted in an
+end to that war; the article on the war says the Estado Novo was overthrown by
+a military coup in 1974 and the change of government brought the conflict to an
+end. Each article puts the other in its account and neither calls the war the
+cause, which is why this is a precondition and `probable` — the strong claim,
+that the war made the coup, is one a person should write from a historian and
+not from an encyclopedia's framing.
+
+#### `independence-of-brazil-1822 --caused--> empire-of-brazil-1822-1889`
+
+The English article on the Empire, at revision 1374829984: on 7 September 1822
+Pedro declared the independence of Brazil and, after a successful war against
+his father's kingdom, was acclaimed on 12 October as Pedro I, first Emperor of
+Brazil.
+
+#### `empire-of-brazil-1822-1889 --precondition-of--> proclamation-of-the-brazilian-republic-1889`
+
+The English article on the proclamation, at revision 1370705081: the coup of
+15 November 1889 abolished the constitutional monarchy of the Empire of Brazil,
+ended the reign of Pedro II and established the First Brazilian Republic.
+
+#### `1964-brazilian-coup-detat --caused--> brazilian-military-dictatorship-1964-1985`
+
+The English article on the dictatorship, at revision 1373177216: it was
+established on 1 April 1964 after a coup by the Brazilian Armed Forces with
+support from the United States government against President João Goulart, and
+lasted twenty-one years, until 15 March 1985.
+
+#### `marcelo-elected-president-2016 --precondition-of--> marcelo-reelected-2021`
+
+The English article on the election of 2021, at revision 1371534929: the
+incumbent, Marcelo Rebelo de Sousa, was re-elected for a second term by a
+landslide of 60.7 per cent, winning every district and all 308 municipalities.
+It carries a component of five in with it — `covid-19-pandemic`,
+`covid-19-pandemic-in-europe`, `covid-state-of-emergency-2020` and
+`world-youth-day-2023` beside `marcelo-reelected-2021`.
+
+#### `2005-portuguese-legislative-election --precondition-of--> 2009-portuguese-legislative-election`
+
+The English article on the election of 2009, at revision 1373358204: it came
+after four years under a majority government of the Socialist Party, and the
+Socialists under José Sócrates won the most votes and seats but failed to
+repeat the overall majority obtained in 2005, losing eight per cent of the vote
+and twenty-four seats. It carries in the component of five that holds
+`1998-portuguese-abortion-referendum`, `2007-portuguese-abortion-referendum`,
+`2001-portuguese-local-elections` and `2002-portuguese-legislative-election`.
+
+#### `iranian-revolution --precondition-of--> twelve-day-war`
+
+The English article on the war of June 2025, at revision 1375310571,
+§ Background: Israel maintained a close relationship with the Pahlavi monarchy
+until the Iranian Revolution, when the monarchy was ousted and replaced by an
+anti-Western theocratic Islamic republic led by Khomeini, and ever since Iran's
+government has repeatedly pledged to destroy Israel.
+
+#### `1982-lebanon-war --precondition-of--> twelve-day-war`
+
+The same section of the same revision dates the proxy conflict the war grew out
+of: Israel has fought wars with Iranian proxies, including against Hezbollah,
+since the 1982 Lebanon war. The two edges together carry `gaza-war`,
+`gaza-genocide` and `twelve-day-war` in.
+
+### What batch 3 did to the graph
+
+| | before | after |
+| --- | --: | --: |
+| active events | 332 | 332 |
+| main | 244 | 244 |
+| filed under a parent | 88 | 88 |
+| active edges | 387 | 406 |
+| **largest connected component** | **274** | **301** |
+| components | 32 | 17 |
+| active events with no edge at all | 21 | 11 |
+| active events that cannot reach a Portuguese event | 29 | 16 |
+
+Nineteen edges, twenty-seven events joined. The corpus did not grow by a
+single record and the picture the atlas draws at rest is the same 244 events
+it drew before — which is A5 and A3 pulling in opposite directions, and A5
+winning this batch on purpose.
+
+## 4b. The nine fragments batch 3 left standing, and what each waits for
+
+Named because a fragment nobody wrote down is a fragment the next run has to
+find again.
+
+- **The post-Soviet component of eight** — `russo-ukrainian-war`,
+  `full-scale-russo-ukrainian-war`, `bucha-massacre`, `euromaidan`,
+  `orange-revolution`, `rose-revolution`, `russo-georgian-war`,
+  `wagner-group-rebellion` — waits on **the dissolution of the Soviet Union**,
+  `Q5167679`, which batch 2a seeded and the queued walk brings. Every article
+  read for it puts the dissolution at the head of the account, and nothing the
+  atlas holds now stands in that place. It is the largest fragment and the
+  clearest single thing the import is for.
+- **The Indian subcontinent component of five** — `kashmir-conflict`,
+  `kargil-war`, `indo-pakistani-war-of-1965`, `sino-indian-war`,
+  `bangladesh-liberation-war` — waits on **the partition of India**, seeded in
+  the same batch. `goa-annexed-1961` is in the corpus and in the main
+  component, and was considered as an anchor; the article on the Sino-Indian
+  war does not argue a line from it at the revision read, and an edge nobody's
+  page argues is exactly what §1 forbids.
+- **The Afghan pair** — `soviet-afghan-war`, `war-in-afghanistan-2001-2021` —
+  waits on the September 11 attacks, which the atlas does not hold at all, or
+  on the dissolution of the Soviet Union.
+- **The Madeiran three** — `2023-madeiran-regional-election`,
+  `2024-madeiran-regional-election`, `2025-madeiran-regional-election` — have
+  `1976-madeira-regional-legislative-election` in the main component forty-seven
+  years away, and nothing in between. Their own articles argue each from the
+  one before it, which is the edge they already have.
+- **The fires pair** — `october-fires-2017`, `pedrogao-grande-fires-2017` —
+  waits on a record of the political consequence the articles name, which the
+  atlas does not hold.
+- `entente-cordiale`, `iberian-blackout-2025`,
+  `1996-portuguese-presidential-election` and
+  `2006-portuguese-presidential-election` stand alone. The last two are a
+  chain of presidential elections the corpus holds only the ends of, and are
+  the cheapest thing left for the next batch.
+
 ## 3. The main count, and why it moved up
 
 Amendment A3: an import that leaves the main count higher than it found it has

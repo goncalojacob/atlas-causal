@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "estado-novo-1933-1974--portuguese-colonial-war-1961-1974--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese Colonial War\", revision 1372834694, § lead"
+    }
+  ],
+  "from": "estado-novo-1933-1974",
+  "to": "portuguese-colonial-war-1961-1974",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the colonial war puts the regime at the centre of why it happened at all: unlike other European nations during the 1950s and 1960s, the Portuguese Estado Novo regime did not withdraw from its African territories, and the thirteen-year conflict from 1961 was fought between Portugal’s military and the nationalist movements that became active there during the 1960s.",
+  "dispute": null
+}

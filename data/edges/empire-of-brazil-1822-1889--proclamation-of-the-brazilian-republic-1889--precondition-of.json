@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "empire-of-brazil-1822-1889--proclamation-of-the-brazilian-republic-1889--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Proclamation of the Republic (Brazil)\", revision 1370705081, § lead"
+    }
+  ],
+  "from": "empire-of-brazil-1822-1889",
+  "to": "proclamation-of-the-brazilian-republic-1889",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the proclamation says the coup of 15 November 1889 abolished the constitutional monarchy of the Empire of Brazil and ended the reign of Emperor Pedro II, establishing the First Brazilian Republic in its place.",
+  "dispute": null
+}

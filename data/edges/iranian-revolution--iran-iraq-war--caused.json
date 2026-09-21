@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "iranian-revolution--iran-iraq-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iran–Iraq War\", revision 1375407163, § lead"
+    }
+  ],
+  "from": "iranian-revolution",
+  "to": "iran-iraq-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the war gives the revolution as the first of Iraq’s reasons for starting it: in starting the war the Iraqi government, led by Saddam Hussein, primarily wanted to prevent Ruhollah Khomeini, Iran’s leader following the 1979 Iranian Revolution, from exporting Iran’s new state ideology to Iraq, and feared that Iran, a theocratic state mostly composed of Shia Muslims, would rally Iraq’s Shia majority against the Sunni-controlled Baʻathist government. The article names older border disputes beside it, which is why the link is probable.",
+  "dispute": null
+}
