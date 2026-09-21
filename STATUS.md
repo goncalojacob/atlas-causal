@@ -15464,6 +15464,54 @@ is recorded, not rewritten (m76-brief §4).
       both columns were measured here, in one session, on `origin/m0` in a
       worktree and on this branch's head.
 
+## M77 — the graph read as the walk, the timeline titled, grouping gone
+
+Three instructions from the owner on 21 September, each with a screenshot.
+Lane A, on the branch `m77`.
+
+### Section 1's measurement, before anything was changed
+
+What is actually on the graph with a narrative open. Headless Chromium at
+1440 × 900, on the commit that claimed the milestone, both narratives the
+atlas holds. A label is *truncated* when the text drawn ends in an ellipsis;
+a node is *the walk's* when it carries `of-narrative`; an edge is *the walk's*
+when its two ends are the two events of one of the narrative's own edge steps.
+
+| | `who-was-buying` | `how-the-colonial-war-ended-the-regime` |
+|---|---:|---:|
+| nodes drawn | 41 | 37 |
+| of them the walk's | 28 | 12 |
+| of them the one-hop ring | 13 | 25 |
+| labels drawn | 14 | 14 |
+| of them truncated | **8** | 1 |
+| of them naming a node outside the walk | 3 | **8** |
+| walk nodes carrying a label at all | 11 of 28 | 6 of 12 |
+| walk nodes named in full | **4 of 28** | 6 of 12 |
+| edges drawn | 61 | 43 |
+| of them the walk's own steps | 20 | 11 |
+| of them not the walk's | **41** | **32** |
+| edge types drawn at once | 5 | 5 |
+| ink opacities drawn at once | 3 | 3 |
+
+And the note: `The map is looking at part of the world…` is drawn over the
+picture whenever `?bbox=` is in the state, which is after any pan or zoom of
+the map — which is how the owner's screenshot has it.
+
+**The diagnosis is not "too many labels". It is that the labels are not the
+walk's.** On `how-the-colonial-war-ended-the-regime` eight of the fourteen
+names on the page belong to events the reader did not ask about, and half the
+walk's own steps have no name at all. On `who-was-buying` four of the
+twenty-eight steps are named in full. The picture the owner called clouded is
+two thirds ink that is not the argument — 41 of 61 edges and 32 of 43 — with
+the argument itself unreadable underneath it.
+
+The cause is that nothing in the drawing knows what a lens is. Labels are
+ordered by weight and cut to the room beside them (`label-fit.js`, M61), which
+is the right rule for a picture of everything and the wrong one for a picture
+of one argument: the ring's heaviest events outrank the walk's lightest steps
+and take the room. The five edge types and three confidences are drawn the
+same whether an edge is a step of the walk or a neighbour of one.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
