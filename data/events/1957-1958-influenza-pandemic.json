@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1957-1958-influenza-pandemic",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1434550",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "1957–1958 influenza pandemic",
+    "pt": "Gripe asiática"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1434550"
+    }
+  ],
+  "title": "1957–1958 influenza pandemic",
+  "summary": "Wikidata item Q1434550, imported by tools/import/wikidata.mjs. The item's own description reads \"pandemic of influenza virus (H2N2)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1956,
+    "end": 1958
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": [],
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 10 under brief §1: the record earns no honest edge. The English article, at revision 1371253096, argues backwards to the 1918 pandemic and the epidemiological infrastructure built after it, and forwards to the Hong Kong flu of 1968–1970; this atlas holds neither, and its only pandemic record is COVID-19, which the article does not mention. Writing a link from one pandemic to another because both are pandemics would be the kind of edge brief §1 forbids."
+  }
+}

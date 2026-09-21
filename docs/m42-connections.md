@@ -1205,6 +1205,308 @@ records with no edge — `1923-portuguese-presidential-election`,
 `1951-portuguese-presidential-election` and `iberian-blackout-2025`. Every one
 of them is named above or in §2g with what it waits for.
 
+## 2j. Batch 10 — sets 3 and 4 again, and three tombstones the imports unblock by name
+
+Sets 1 and 2 were spent by batch 7, so this batch is §5's **set 3 and set 4**,
+recomputed on 21 September against `data/` and not read from the sweep file's
+own *"in the atlas"* column. The pool came out at **1,557 rows**, exactly the
+number §5 of `docs/m42-pool.md` records, which is the check that the rule was
+recomputed and not remembered. The five thinnest decades are the same five
+batch 8 found — the 1900s at eleven active events, the 1890s at twelve, the
+1930s at twenty, the 1950s and the 2000s at twenty-one — so set 3 is their two
+best by sitelinks each, ten rows, and set 4 is the six best remaining over the
+whole pool. Sixteen rows, the cap batch 8 used.
+
+**Sixteen seeded, sixteen created, twelve kept and four retracted.** Four
+classes were refused on the first pass and three were added from the item's own
+label and description, read over the network: `Q13427116` *peasant revolt* as
+`revolution`, `Q1464916` *declaration of independence* as `founding`, and
+`Q21994376` *war of independence* as `war`. **`Q3771738`, *historical
+document*, was not added** — it is the Kosovo declaration's other class, one
+was enough to let the item through, and a historical document is not a kind of
+event. Four lanes were written for items whose own point the import cannot
+reach: Korea and the 1957 influenza to `asia`, Greece and Romania to `europe`.
+
+**The three tombstones this batch brings back are the point of it.** Each was
+retracted with a reason naming the record it waited for, and this batch's
+imports are those records:
+
+#### `anglo-zanzibar-war`
+
+Reinstated on `heligoland-zanzibar-treaty --enabled--> anglo-zanzibar-war`. Its
+retraction read, verbatim:
+
+> Retracted in M40b: the shortest war on record, forty minutes on 27 August 1896 over who would succeed as Sultan of Zanzibar. The atlas holds no event in East Africa before 1953 and nothing about the British protectorate, so there is nothing the war can be argued to have changed here and nothing here that can be argued to have caused it. It would need a record of the 1890 protectorate agreement, or of the abolition of slavery in Zanzibar in 1897, before it had an honest edge.
+
+The 1890 protectorate agreement is the Heligoland–Zanzibar treaty, and the
+treaty's own article says Britain "immediately declared a protectorate over
+Zanzibar" under it. The tombstone asked for a record by name and the sweep
+produced it.
+
+#### `libyan-civil-war`
+
+Reinstated on `libyan-civil-war --precondition-of--> mali-war`. Its retraction
+read, verbatim:
+
+> Retracted in M40b: the rising against Gaddafi from February 2011 and the NATO-supported war that ended with his death in October. Its cause, the Arab Spring, was among the twenty-nine candidates the import refused for want of a lane; its consequences — the second Libyan war, the collapse of the state, the central Mediterranean route — are not records here, and neither is the Security Council's later refusal over Syria, which is the argument that would have run out of it.
+
+One of those consequences is a record now. The Mali War article argues the
+rebellion of January 2012 out of "the collapse of Gaddafi's Libya" and the
+return of his Tuareg fighters with their weapons — so the record comes back on
+a consequence and not on the Arab Spring, which is still refused (975).
+
+#### `thousand-days-war`
+
+Reinstated on `thousand-days-war --precondition-of--> hay-bunau-varilla-treaty`.
+**Batch 8 of this same run retracted it eight hours earlier**, and its reason
+ended: *"It waits on the separation of Panama, or on any record of the
+region."* Set 3's best 1900s row is the treaty the separation produced. This is
+the tick rule and the bar working together across two batches, and it is the
+clearest case this milestone has that a retraction is a note of what is
+missing rather than a verdict.
+
+### The edges
+
+Fourteen. Every one runs to a record that was already here, which is what
+amendment A5 asks; none joins two of this batch's own imports to each other.
+
+#### `donghak-peasant-revolution --caused--> first-sino-japanese-war`
+
+*"Tonghak Peasant Revolution"*, revision 1375257262, § lead and § Siege of
+Jeonju Fortress: the alarmed government asked the Qing for intervention, the
+Qing sent 2,700 soldiers, and Japan — angered that the Qing had not notified it
+as the Convention of Tientsin promised — **started the First Sino-Japanese
+War**. The siege section says the same thing twice over: 1,500 Qing and 6,000
+Japanese troops landed at Incheon on 3 May, and the Japanese question about the
+Convention "soon caused the First Sino-Japanese War". The record's
+`wikipedia.en` field carries the item's sitelink, *"Donghak Peasant
+Revolution"*, which now redirects to the article cited here; the locator names
+the article as it stands at that revision and not as Wikidata files it.
+
+#### `berlin-conference --precondition-of--> heligoland-zanzibar-treaty`, `heligoland-zanzibar-treaty --enabled--> anglo-zanzibar-war` and `heligoland-zanzibar-treaty --precondition-of--> entente-cordiale`
+
+*"Heligoland–Zanzibar Treaty"*, revision 1372103388, § Consequences, which is
+three arguments in one paragraph. Backwards: the treaty served Caprivi's aims
+for a settlement with the British, and **after the 1884 Berlin Conference
+Germany had been losing out in the scramble for Africa**. Forwards: Britain
+"immediately declared a protectorate over Zanzibar and, in the subsequent 1896
+Anglo-Zanzibar War, gained full control of the sultanate" — `enabled` and not
+`caused`, because the article gives the treaty as the position the war was
+fought from and not as its cause. And further forward: Heligoland was
+"strategically placed for control over the German Bight", which the Kiel Canal
+had made essential to Wilhelm II's naval expansion, and **"Wilhelm's naval
+policies aborted an accommodation with the British and ultimately led to a
+rapprochement between Britain and France, sealed with the Entente cordiale in
+1904"**. The last is `precondition-of` and nothing stronger: it is the naval
+policy, not the treaty, that the article says drove Britain to France. The
+paragraph carries **no footnote at all**, so all three rest on the encyclopedia
+alone and none of them could be `consensus` under rule 22 even if this run
+wanted it to be.
+
+#### `thousand-days-war --precondition-of--> hay-bunau-varilla-treaty`
+
+Two articles, because neither says the whole of it. *"Thousand Days' War"*,
+revision 1370750751, § lead: the war's repercussions included **"the eventual
+loss of the Department of Panama as an incorporated territory of the republic
+in 1903"**, and the American navy was sent by Roosevelt's government to protect
+United States interests in the canal's construction. *"Hay–Bunau-Varilla
+Treaty"*, revision 1375195423, § Background: the United States intent to
+influence the area **"led to the separation of Panama from Colombia in 1903 and
+its establishment as an independent state"**. A treaty between Washington and
+Panama was possible only because Panama had stopped being Colombian.
+
+#### `treaty-of-versailles --precondition-of--> german-polish-declaration-of-non-aggression`
+
+*"German–Polish declaration of non-aggression"*, revision 1363397316, § lead
+and § Effect of the declaration: the declaration **"effectively normalised
+relations between Poland and Germany, which had been strained by border
+disputes arising from the territorial settlement in the Treaty of Versailles"**,
+and until then Germany had withheld normalisation without first settling the
+border question. What the declaration did was put the Versailles border aside
+for ten years.
+
+#### `molotov-ribbentrop-pact --precondition-of--> german-soviet-treaty-of-friendship-cooperation-and-demarcation`
+
+*"German–Soviet Boundary and Friendship Treaty"*, revision 1375965836, § lead
+and § Secret articles: the treaty is **"a second supplementary protocol of the
+Molotov–Ribbentrop Pact of 23 August 1939"**, amended on 28 September after the
+joint invasion and occupation of Poland, superseding the first treaty; its
+secret articles redrew the spheres of interest the pact had dictated and moved
+Lithuania into the Soviet sphere to compensate for Polish ground the Wehrmacht
+had taken. **Filed under the pact as well**, which is the one place in this
+batch where the umbrella and the edge are the same record: the pact runs
+23 August 1939 to 22 June 1941, the supplement falls inside it, and a
+supplementary protocol is inside its subject by definition.
+
+#### `world-war-i --precondition-of--> estonian-war-of-independence`
+
+*"Estonian War of Independence"*, revision 1370918612, § lead: the campaign was
+**"the struggle of the newly established democratic state of Estonia for
+independence in the aftermath of World War I"**, against the Soviet Russian
+westward offensive of 1918–1919 and the Baltische Landeswehr, concluded in the
+1920 Treaty of Tartu. **Not filed under `russian-civil-war`**: the article puts
+it in the aftermath of one war and against an offensive out of the other, and
+M62 §3 says an arguable filing is listed rather than made.
+
+#### `world-war-ii --precondition-of--> greco-italian-war`
+
+*"Greco-Italian War"*, revision 1370621958, § lead, which argues the Italian
+move on Greece out of Italy's own belligerency: Italy declared war on France
+and the United Kingdom on 10 June 1940 and had invaded France, British
+Somaliland and Egypt by September; **this "was followed by a hostile press
+campaign in Italy against Greece, accused of being a British ally"**, and the
+provocations culminated in the sinking of the cruiser Elli and Mussolini's
+ultimatum of 28 October. The same lead says the conflict **"began the Balkans
+campaign of World War II"**, which is why the record is also **filed under the
+war**.
+
+#### `first-sudanese-civil-war --caused--> second-sudanese-civil-war`
+
+*"First Sudanese Civil War"*, revision 1375454294, § lead and § Impact: the
+Addis Ababa Agreement ended the war in 1972 but **"failed to completely dispel
+the tensions"**, and **"the breakdown of the initial appeasement later led to a
+reigniting of the north–south conflict during the Second Sudanese Civil War"**;
+the aftermath section says infringements by the north increased unrest in the
+mid-1970s, leading to the 1983 mutiny that sparked the second war. **This edge
+grows the Sudanese fragment and does not bridge it** — §2g's finding stands,
+and this batch confirms it from a new page: neither the first war's article nor
+the Darfur article relates any Sudanese record to anything else this atlas
+holds. The Sudanese component is four records and is now five.
+
+#### `war-of-attrition --precondition-of--> yom-kippur-war`
+
+*"War of Attrition"*, revision 1371500938, § Egyptian front: after Nasser's
+death in September 1970 Sadat continued the ceasefire, rebuilding the army and
+planning a full-scale attack across the Suez Canal, and **"these plans would
+materialize three years later in the Yom Kippur War"**. **The paragraph carries
+a `Citation needed` tag dated December 2025**, which is said here and in the
+edge's own explanation rather than left for a reader to find: it is why the
+edge is `probable` and would not be promoted even if a second author were added
+to it.
+
+#### `kosovo-war --precondition-of--> 2008-kosovo-declaration-of-independence`
+
+*"2008 Kosovo declaration of independence"*, revision 1368774231, § Build-up and
+§ Political background: after the war ended in 1999 the Security Council adopted
+Resolution 1244, which put Kosovo under transitional United Nations
+administration and **"envisioned an eventual UN-facilitated political process to
+resolve the status of Kosovo"**; negotiations on the final status began in 2006
+**"as envisaged under UN Security Council Resolution 1244 which ended the Kosovo
+conflict of 1999"**. The declaration of 17 February 2008 is the end of that
+process.
+
+#### `libyan-civil-war --precondition-of--> mali-war` — the one `consensus` edge
+
+*"Mali War"*, revision 1375920868, § Background: **"From February 2011, with the
+collapse of Gaddafi's Libya, hundreds of his Tuareg fighters, many veterans of
+the previous rebellions and now unemployed, returned to Mali with large
+stockpiles of weapons"**; in October 2011 those returning fighters negotiated at
+Zakak and formed the MNLA, which began the rebellion of 16 January 2012.
+
+This is the only edge in the batch that is `consensus`, and it is promoted by
+**M72's own three-part test and not because this run finds the claim
+convincing**: rule 9 is satisfied by the work added, the work is scholarship
+rather than an encyclopedia, and **the article hangs the very sentence stating
+this link on that work**. The work is Miroiu and Alecu, *"Mali: Conflict, Social
+Order and the Crime-Terror Nexus"*, *Conflict Studies Quarterly* 48 (July 2024),
+pp. 58–71, doi:10.24193/csq.48.4, written into `data/sources/` with the
+publisher and identifier the article's own citation template carries. It is the
+batch's one second author, and it exists because the article had one to give;
+the other thirteen edges rest on sentences that carry no footnote at all.
+
+#### `revolution-of-dignity --caused--> russo-ukrainian-war`
+
+*"Revolution of Dignity"*, revision 1375565667, § lead, in one sentence: **"The
+revolution prompted Russia to occupy Crimea, starting the Russo-Ukrainian
+war."* The third paragraph says the same at length — counter-revolutionary
+protests in the south-east, the occupation and annexation of Crimea, and the
+Russian-backed seizures that proclaimed Donetsk and Luhansk. **Filed under
+`euromaidan`**, whose span it shares exactly (2013-11 to 2014-02-23) and whose
+protests its own lead says it took place at the end of. The item is not a
+duplicate of `euromaidan`: `Q15224558` and `Q15733401` are two items with two
+English articles, the movement and its February culmination, which is the check
+`operation-rising-lion` failed in batch 8 (994).
+
+### The four retracted, and what each waits for
+
+| record | what it waits for |
+| --- | --- |
+| `1907-romanian-peasants-revolt` | any Romanian record at all. Its article argues out of the 1864 land reforms and forward to the agricultural-contracts law of December 1907; this atlas holds neither, and no Balkan, Russian or imperial record the article names |
+| `1957-1958-influenza-pandemic` | the 1918 pandemic, or the Hong Kong flu of 1968. Its article argues to both and to neither of this atlas's records; the only pandemic here is COVID-19, which the article does not mention |
+| `montreal-protocol` | the Vienna Convention for the protection of the ozone layer, or the Kyoto Protocol |
+| `stockholm-convention-on-persistent-organic-pollutants` | the Rotterdam or Basel conventions, or any environmental record a person has argued |
+
+**The last two are one finding and it is worth the owner's attention.** This
+atlas has an **environment-shaped hole**: `paris-agreement`, `ramsar-convention`
+and `united-nations-convention-on-the-law-of-the-sea` are all tombstones in §5b
+above, each retracted for the same reason — the instrument decided nothing this
+corpus holds. Two of the sweep's best remaining rows by sitelinks fell into that
+hole in the same batch. It is not the sweep failing: it is a real gap in what
+the atlas is about, and until one environmental record is argued by a person
+every environmental treaty the sweep offers will be retracted on arrival.
+
+### The nine left main, and the three filed
+
+Twelve records were kept and **three took a parent**, each under M62's rule of
+inside the span *and* inside the subject: `greco-italian-war` under
+`world-war-ii`, `german-soviet-treaty-of-friendship-cooperation-and-demarcation`
+under `molotov-ribbentrop-pact`, and `revolution-of-dignity` under `euromaidan`.
+The nine that stayed top-level are named here one by one, because M67's test
+asks for every bare main event by name and a sentence about "treaties" is not
+an argument about any of them:
+
+| record | why it is nobody's part |
+| --- | --- |
+| `heligoland-zanzibar-treaty` | a bargain between two empires over four coasts; the scramble for Africa is a process this atlas has no record and no sourced span for, and `berlin-conference` is one conference inside it and not an umbrella over it |
+| `hay-bunau-varilla-treaty` | the canal is not a record here, and the separation of Panama — which would be the umbrella — is not one either |
+| `german-polish-declaration-of-non-aggression` | a bilateral declaration of 1934 that the article sets against the Versailles settlement; the interwar period is not a record here, and it ran to April 1939, outside the war's span |
+| `donghak-peasant-revolution` | it *caused* the First Sino-Japanese War and began four months before it, so the war cannot contain it; the Joseon dynasty's collapse is no record here |
+| `estonian-war-of-independence` | **the one that was arguable.** Its article sets it against the Soviet Russian westward offensive of 1918–1919, which is `russian-civil-war`'s ground, and calls it the aftermath of one war fought against an offensive out of the other. M62 §3 says an arguable filing is listed rather than made, and this is the listing |
+| `first-sudanese-civil-war` | the north–south conflict it is the first half of is not a record here; `second-sudanese-civil-war` is its sequel, not its container |
+| `war-of-attrition` | the Arab–Israeli conflict is not a record here, and the atlas holds its wars — 1948, 1973, Lebanon, Gaza — as separate records with edges between them and no node over them |
+| `2008-kosovo-declaration-of-independence` | `kosovo-war` ended nine years before it and cannot contain it; the status process that produced it is a UN procedure, not an event here |
+| `mali-war` | it began in 2012 and has no end date; nothing here contains it, and the Sahel insurgency is not a record |
+
+**Every one of the fifteen new active records carries `actors: []`.** That is
+M67 A1 and not a defect: an event with no actor and no place is not filable and
+no line was invented to make one so. It is why §4.1 of `docs/m53-polities.md`
+moves to **306 of 393** — the numerator does not move at all.
+
+### What batch 10 did to the graph
+
+| | before | after |
+| --- | --- | --- |
+| active events | 378 | **393** |
+| main | 288 | **300** |
+| filed under a parent | 90 | **93** |
+| active edges | 469 | **483** |
+| largest connected component | 366 | **376** |
+| components | 7 | 9 |
+| active events with no edge | 3 | 3 |
+| unreachable from any Portuguese event | 4 | 9 |
+
+**The component grew by ten and the corpus by fifteen, and the five-record
+difference is two new pairs and one fragment.** Amendment A5 asks a batch that
+grows the corpus and not the component to say why, and this batch owes that
+answer three times over:
+
+- **`thousand-days-war` + `hay-bunau-varilla-treaty` is a component of two.**
+  Neither article names anything else this atlas holds: the treaty's own
+  aftermath runs to the Martyrs' Day riots of 1964 and the Torrijos–Carter
+  treaties of 1977, and the war's runs back to the Colombian constitution of
+  1886. It is the atlas's **first Panamanian and first Colombian ground**, and a
+  pair standing alone is what a first record in a region looks like.
+- **`libyan-civil-war` + `mali-war` is a component of two**, for the reason
+  M40b's tombstone already gave: the Arab Spring is refused for want of a lane
+  (975) and it is the record that would join Libya to Egypt and Tunisia.
+- **The Sudanese fragment is now five** and §2g's reading is unchanged.
+
+Nine components against seven is therefore the honest shape of a batch that
+opened two new regions: **three of the nine are records this atlas had never
+reached before**, and every other import in the batch went straight into the
+largest component. Unreachable-from-Portuguese rises from four to nine for the
+same reason and means the same thing.
+
 ## 3. The main count, and why it moved up
 
 Amendment A3: an import that leaves the main count higher than it found it has
@@ -1264,6 +1566,19 @@ length, because it is the one the article would file and the dates refuse.
 
 **Batch 9 leaves it at 288, exactly where batch 8 did**: it created no record
 and retracted none, so A3 has nothing to ask of it.
+
+**Batch 10 leaves it at 300 against 288**, twelve higher, and the arithmetic is
+fifteen records in and three filed. Twelve came from the sweep and three came
+back from the tombstones — `anglo-zanzibar-war`, `libyan-civil-war` and
+`thousand-days-war` — and a reinstated record is main again because it was main
+before it was withdrawn. The three filed are argued in §2j:
+`greco-italian-war` under `world-war-ii`, the German–Soviet boundary treaty
+under `molotov-ribbentrop-pact`, and `revolution-of-dignity` under
+`euromaidan`. The nine left main are four treaties between states, three wars, a
+peasant revolution and a war of independence, and **`estonian-war-of-independence`
+is the one that was arguable and is listed rather than filed**, as M62 §3
+requires. The count moved because the corpus did, and every record that could
+be filed was.
 
 ## 4. What these batches refused to write
 
@@ -1329,11 +1644,11 @@ imports its neighbour lands, and its reason is rewritten then.
 | `velvet-revolution`, `second-chechen-war`, `second-nagorno-karabakh-war`, `hungarian-revolution-of-1956` | the revolutions of 1989 and the dissolution of the Soviet Union |
 | `srebrenica-massacre` | the Bosnian war |
 | `1994-genocide-against-tutsi` | the Rwandan civil war, or the tribunal at Arusha |
-| `syrian-civil-war`, `libyan-civil-war` | the Arab Spring, which the import refused for want of a lane |
+| `syrian-civil-war` | the Arab Spring, which the import refused for want of a lane. **`libyan-civil-war` was here until batch 10** and came back on `libyan-civil-war --precondition-of--> mali-war`: its reason named its consequences, and one of them is a record now |
 | `sudanese-civil-war` | Darfur, or the Sudanese revolution of 2019 |
 | `cultural-revolution` | the 1-2-3 incident of 1966–67 in Macau, which is the precise link its reason names |
 | `2016-turkish-coup-d-etat-attempt` | the Turkish coups of 1960, 1971 and 1980 |
 | `holodomor` | collectivisation and the grain procurement quotas |
-| `mexican-revolution`, `anglo-zanzibar-war`, `january-6-united-states-capitol-attack`, `assassination-of-john-f-kennedy` | a neighbour in a place or a politics this atlas does not reach at all |
+| `mexican-revolution`, `january-6-united-states-capitol-attack`, `assassination-of-john-f-kennedy` | a neighbour in a place or a politics this atlas does not reach at all. **`anglo-zanzibar-war` was here until batch 10**: its reason asked for the 1890 protectorate agreement by name and the sweep produced it |
 | `treaty-on-the-non-proliferation-of-nuclear-weapons`, `paris-agreement`, `ramsar-convention`, `convention-on-the-elimination-of-all-forms-of-discrimination-against-women`, `convention-on-the-rights-of-the-child`, `united-nations-convention-on-the-law-of-the-sea` | an event the instrument decided, which for each of these would be a national one this atlas does not hold |
 | `russian-revolution` | nothing: the atlas holds February, October and the civil war as three records with edges of their own, and a fourth node over all three would double every path through them without adding an argument. Redundancy, not reach, and the new bar does not touch it |

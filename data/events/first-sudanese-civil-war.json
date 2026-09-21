@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "thousand-days-war",
+  "id": "first-sudanese-civil-war",
   "kind": "event",
   "status": "active",
   "supersededBy": null,
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": null,
   "origin": {
     "tool": "wikidata"
   },
@@ -23,31 +23,31 @@
       "imported-facts"
     ]
   },
-  "wikidata": "Q43378",
+  "wikidata": "Q823730",
   "sitelinks": {
-    "count": 30,
+    "count": 32,
     "on": "2026-09-21"
   },
   "wikipedia": {
-    "en": "Thousand Days' War",
-    "pt": "Guerra dos Mil Dias"
+    "en": "First Sudanese Civil War",
+    "pt": "Primeira Guerra Civil Sudanesa"
   },
   "sources": [
     {
       "source": "wikidata",
-      "locator": "Q43378"
+      "locator": "Q823730"
     }
   ],
-  "title": "Thousand Days' War",
-  "summary": "Wikidata item Q43378, imported by tools/import/wikidata.mjs. The item's own description reads \"1899–1902 civil war in Colombia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "First Sudanese Civil War",
+  "summary": "Wikidata item Q823730, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflict in Sudan (1955–1972)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1899,
-    "end": 1902,
-    "date": "1899-10-17",
-    "endDate": "1902-11-21"
+    "start": 1955,
+    "end": 1972,
+    "date": "1955-08-18",
+    "endDate": "1972-03-27"
   },
   "place": null,
-  "region": "americas",
+  "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []
 }

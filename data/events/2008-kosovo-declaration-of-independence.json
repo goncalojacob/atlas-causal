@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "thousand-days-war",
+  "id": "2008-kosovo-declaration-of-independence",
   "kind": "event",
   "status": "active",
   "supersededBy": null,
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": null,
   "origin": {
     "tool": "wikidata"
   },
@@ -23,31 +23,31 @@
       "imported-facts"
     ]
   },
-  "wikidata": "Q43378",
+  "wikidata": "Q861510",
   "sitelinks": {
-    "count": 30,
+    "count": 40,
     "on": "2026-09-21"
   },
   "wikipedia": {
-    "en": "Thousand Days' War",
-    "pt": "Guerra dos Mil Dias"
+    "en": "2008 Kosovo declaration of independence",
+    "pt": "Independência do Kosovo"
   },
   "sources": [
     {
       "source": "wikidata",
-      "locator": "Q43378"
+      "locator": "Q861510"
     }
   ],
-  "title": "Thousand Days' War",
-  "summary": "Wikidata item Q43378, imported by tools/import/wikidata.mjs. The item's own description reads \"1899–1902 civil war in Colombia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "2008 Kosovo declaration of independence",
+  "summary": "Wikidata item Q861510, imported by tools/import/wikidata.mjs. The item's own description reads \"declaration of independence for Kosovo\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1899,
-    "end": 1902,
-    "date": "1899-10-17",
-    "endDate": "1902-11-21"
+    "start": 2008,
+    "end": 2008,
+    "date": "2008-02-17"
   },
   "place": null,
-  "region": "americas",
+  "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "founding",
   "actors": []
 }

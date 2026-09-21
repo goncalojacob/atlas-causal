@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "berlin-conference--heligoland-zanzibar-treaty--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Heligoland–Zanzibar Treaty\", revision 1372103388, § Consequences"
+    }
+  ],
+  "from": "berlin-conference",
+  "to": "heligoland-zanzibar-treaty",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says the treaty served Chancellor Leo von Caprivi's aims for a settlement with the British, and that after the 1884 Berlin Conference Germany had been losing out in the scramble for Africa: the German East Africa Company had a strip of the Tanganyikan coast but no control over the Zanzibar sultanate's islands. The position the conference left Germany in is what the article gives as the reason the bargain was worth making.",
+  "dispute": null
+}

@@ -743,7 +743,23 @@
     "Q285280",
     "Q1332160",
     "Q134884640",
-    "Q155796"
+    "Q155796",
+    "Q676676",
+    "Q811241",
+    "Q701045",
+    "Q705537",
+    "Q126413",
+    "Q26195",
+    "Q1434550",
+    "Q823730",
+    "Q861510",
+    "Q82908",
+    "Q219438",
+    "Q223604",
+    "Q322607",
+    "Q1127302",
+    "Q2946372",
+    "Q15733401"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -786,7 +802,11 @@
     "Q285280": "europe",
     "Q1332160": "asia",
     "Q134884640": "asia",
-    "Q1775286": "europe"
+    "Q1775286": "europe",
+    "Q701045": "asia",
+    "Q1434550": "asia",
+    "Q223604": "europe",
+    "Q811241": "europe"
   },
   "queries": [
     {
@@ -3753,6 +3773,24 @@
       "category": "war",
       "label": "airstrike",
       "note": "Added in M42 batch 8, read from Wikidata itself: one of the three classes Q134884640, Operation Rising Lion, carries. An airstrike is organised armed force between polities, which is the war category as data/categories.json describes it."
+    },
+    "Q13427116": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "peasant revolt",
+      "note": "Added in M42 batch 10 from the import report, where a ticked sweep candidate was refused under it. The label and the description are read from the item itself over the network, which this sandbox has."
+    },
+    "Q1464916": {
+      "kind": "event",
+      "category": "founding",
+      "label": "declaration of independence",
+      "note": "Added in M42 batch 10 from the import report, where a ticked sweep candidate was refused under it. The label and the description are read from the item itself over the network, which this sandbox has."
+    },
+    "Q21994376": {
+      "kind": "event",
+      "category": "war",
+      "label": "war of independence",
+      "note": "Added in M42 batch 10 from the import report, where a ticked sweep candidate was refused under it. The label and the description are read from the item itself over the network, which this sandbox has."
     }
   },
   "reconcile": true

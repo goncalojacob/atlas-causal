@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-of-versailles--german-polish-declaration-of-non-aggression--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"German–Polish declaration of non-aggression\", revision 1363397316, § lead and § Effect of the declaration"
+    }
+  ],
+  "from": "treaty-of-versailles",
+  "to": "german-polish-declaration-of-non-aggression",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says the 1934 declaration \"effectively normalised relations between Poland and Germany, which had been strained by border disputes arising from the territorial settlement in the Treaty of Versailles\", and that until then Germany had withheld normalisation without first settling the question of the German-Polish border. What the declaration did was set the Versailles border question aside for ten years, so the settlement is what the declaration was about.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "revolution-of-dignity--russo-ukrainian-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolution of Dignity\", revision 1375565667, § lead"
+    }
+  ],
+  "from": "revolution-of-dignity",
+  "to": "russo-ukrainian-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article's lead says in one sentence that \"the revolution prompted Russia to occupy Crimea, starting the Russo-Ukrainian war\", and its third paragraph adds that pro-Russian counter-revolutionary protests began in parts of south-eastern Ukraine, that Russia occupied and then annexed Crimea, and that armed Russian-backed separatists seized government buildings and proclaimed Donetsk and Luhansk, sparking the Donbas war.",
+  "dispute": null
+}

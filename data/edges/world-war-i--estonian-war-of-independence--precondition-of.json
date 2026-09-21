@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-i--estonian-war-of-independence--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Estonian War of Independence\", revision 1370918612, § lead"
+    }
+  ],
+  "from": "world-war-i",
+  "to": "estonian-war-of-independence",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article describes the campaign as \"the struggle of the newly established democratic state of Estonia for independence in the aftermath of World War I\", fought against the Soviet Russian westward offensive of 1918–1919 and the 1919 aggression of the pro-German Baltische Landeswehr, and concluded in the 1920 Treaty of Tartu. The state that fought it existed because the war had unmade the empire that held the ground.",
+  "dispute": null
+}

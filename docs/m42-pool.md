@@ -100,6 +100,7 @@ A5: a batch that grows the corpus and not the component has to say why.
 | 7 | the first sweep batch: 10 imported, 1 tombstone back, 18 edges, one filing | 369 | 279 | 90 | 450 | **349** | 11 |
 | 8 | sets 3 and 4: 15 created, 9 kept and 6 retracted, 11 edges | 378 | 288 | 90 | 461 | **359** | 10 |
 | 9 | the singletons §4b named: 8 edges, no import | 378 | 288 | 90 | 469 | **366** | 3 |
+| 10 | sets 3 and 4 again: 16 created, 12 kept and 4 retracted, **3 tombstones back on their own named blockers**, 14 edges, three filings | 393 | 300 | 93 | 483 | **376** | 3 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -271,20 +272,32 @@ the next, so a killed run loses a batch and not the milestone.
 | batch 7 | the first sweep batch: 10 imports, 1 tombstone, 18 edges, 330 → 349 |
 | batch 8 | sets 3 and 4: 15 created, 6 retracted, 11 edges, 349 → 359 |
 | batch 9 | the singletons §4b named: 8 edges, no import, 359 → 366 |
+| batch 10 | sets 3 and 4 again: 12 kept, 4 retracted, 3 reinstated, 14 edges, 366 → 376 |
 
 **Where the milestone stands against its own done-condition.** The brief asks
 for an order of magnitude more active events than the 250 it was written
-against. The corpus holds **378**, up from 310, and its largest connected
-component holds **366 of them**, up from 254 — so the connectedness is nearly
+against. The corpus holds **393**, up from 310, and its largest connected
+component holds **376 of them**, up from 254 — so the connectedness is nearly
 done and the volume is barely begun. **The volume is the sweep**: **1,557 rows**
 the tool has already found and nobody has walked, recomputed against `data/` on
-21 September after batch 8, and §5's tick rule, written before a box was ticked,
-is how they are chosen. Batches 7 and 8 are the first taken by that rule: sets 1
-and 2 are spent, and from here the sweep is sets 3 and 4. **Batch 8 is what that
-costs**: sixteen rows ticked, fifteen created, nine kept and six retracted,
-because a rule that picks by sitelinks and by thin decades picks records this
-corpus has no neighbour for. That is the bar of brief §1 working, and the rate
-to plan on is **nine or ten kept records a batch**, not sixteen.
+21 September and again at batch 10, which returned the same 1,557 and is the
+check that the rule is recomputed rather than remembered. §5's tick rule,
+written before a box was ticked, is how they are chosen. Batches 7, 8 and 10 are
+the ones taken by that rule: sets 1 and 2 are spent, and from here the sweep is
+sets 3 and 4. **Batch 8 is what that costs**: sixteen rows ticked, fifteen
+created, nine kept and six retracted, because a rule that picks by sitelinks and
+by thin decades picks records this corpus has no neighbour for. **Batch 10 is
+the same sixteen-row cap and it kept twelve**, which puts the rate over the two
+sweep batches at **ten or eleven kept a batch**, not sixteen.
+
+**Batch 10 found the other thing a sweep row can do, and it is worth more than
+the row itself.** Three of its sixteen brought back a tombstone whose own
+retraction named the missing record by name — the Heligoland–Zanzibar treaty
+for `anglo-zanzibar-war`, the Mali war for `libyan-civil-war`, and the
+Hay–Bunau-Varilla treaty for `thousand-days-war`, which **batch 8 of this same
+run had retracted eight hours earlier**. The corpus writes down what it is
+missing every time it withdraws a record, and a sweep row is worth reading
+against those 215 notes and not only against the graph.
 
 **The Action cannot land an import**, and two runs proved it — §2d has the
 reading and deviation 987 the short form. Every batch from here is therefore
@@ -309,12 +322,23 @@ the records, then the rebuilt index.
    the runner cannot discharge and a run can, and skipping them is what turns
    a green tree red two commits later.
 3. **The fragments no import reaches**, when a batch has room. §4b's list is
-   nearly spent: batch 8 took `entente-cordiale` and batch 9 took seven of the
-   nine presidential singletons, so what is left outside the largest component
-   is the Sudanese four, the Madeiran three, the fires pair and three records
-   with no edge — `1923-portuguese-presidential-election`,
-   `1951-portuguese-presidential-election` and `iberian-blackout-2025`. §2i
-   says what each waits for, and none of them waits on a fetch.
-4. **Sudan is the one fragment a sweep row cannot reach**, and §2g says why:
-   four records joined to each other and to nothing else. It waits on a page
-   that relates one of them to something this atlas holds, not on a fetch.
+   spent: batch 8 took `entente-cordiale` and batch 9 took seven of the nine
+   presidential singletons. What is left outside the largest component after
+   batch 10 is the Sudanese five, the Madeiran three, the fires pair, the two
+   new pairs batch 10 opened — Panama/Colombia and Libya/Mali — and three
+   records with no edge: `1923-portuguese-presidential-election`,
+   `1951-portuguese-presidential-election` and `iberian-blackout-2025`. §2i and
+   §2j say what each waits for, and none of them waits on a fetch.
+4. **The environment-shaped hole**, which batch 10 found and which costs the
+   sweep two of its best rows every time it reaches one. `paris-agreement`,
+   `ramsar-convention`, `united-nations-convention-on-the-law-of-the-sea`,
+   `montreal-protocol` and the Stockholm convention are all tombstones for the
+   same reason: the instrument decided nothing this corpus holds. Until a person
+   argues one environmental record, every environmental treaty the sweep offers
+   is retracted on arrival, and §2j says so rather than working around it.
+5. **Sudan is the one fragment a sweep row cannot reach**, and §2g says why:
+   records joined to each other and to nothing else. Batch 10 tested that
+   reading against two more pages — the first Sudanese civil war's and
+   Darfur's — and neither relates a Sudanese record to anything else this atlas
+   holds, so the fragment grew to five and stayed a fragment. It waits on a
+   page, not on a fetch.
