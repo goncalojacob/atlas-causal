@@ -326,38 +326,18 @@ input, select, textarea { accent-color: var(--cobalt); }
 .bar .views button[aria-pressed="true"] { background: var(--cobalt); color: var(--paper); font-weight: 600; }
 .bar .views button[aria-pressed="true"]:hover { background: var(--cobalt); }
 
-/* The window of time, where the band used to be (M60). It sits in the row with
-   the layer switches and the graph filters and is drawn exactly like them —
-   the same text size, the same soft ink, the same paper and line on a field —
-   because it is the same kind of control: what the atlas is showing. Nothing
-   here is a new token, a new hex value or a new size.
-
-   The two ends are `<input type="number">`, so a phone offers digits and a
-   desktop offers the spinner; `tabular-nums` because two years side by side
-   that jump as they are typed are two years nobody can read. */
+/* What the map is looking at, and how much of it anybody has read. The two
+   number fields and the density hint that stood here went with M76 — the
+   owner, 21 September: *"Picking up the dates exactly is unnecessary"* — so
+   what is left is two lines of text and a pin. It sits in the row with the
+   layer switches and the graph filters and is drawn exactly like them: the
+   same text size, the same soft ink. Nothing here is a new token, a new hex
+   value or a new size. */
 .bar .window-control {
   display: flex; align-items: center; gap: var(--space-2);
   color: var(--ink-soft); font-size: var(--text-sm);
 }
 .bar .window-control[hidden] { display: none; }
-.window-end-label { display: inline-flex; align-items: baseline; gap: 0.3em; }
-.window-end {
-  /* Room for four digits, a minus for a year before the era, and the spinner
-     the browser puts inside the field: at 6ch the year was clipped to three
-     digits, which is a control that cannot say what it is showing. */
-  width: 8ch; font: inherit; font-variant-numeric: tabular-nums;
-  color: var(--ink); background: var(--paper); border: 1px solid var(--line);
-  padding: 0.1rem 0.2rem;
-}
-.window-end:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 1px; }
-/* The density hint: one column per century of the corpus, the window's own
-   centuries in cobalt and the rest in the faint wash the map uses for
-   everything that is there but not being looked at. It is the one thing the
-   strip did that a pair of years cannot say, kept small enough to stand in a
-   masthead (src/window-control.js). */
-.window-density { display: block; flex: 0 0 auto; }
-.window-density .density-column { fill: var(--cobalt-faint); }
-.window-density .density-column.in { fill: var(--cobalt); }
 /* "N of N events in view", and the pin that gives the world back: the line
    that used to sit above the lanes, on every view now. */
 .bar .window-view { display: flex; gap: var(--space-2); align-items: baseline; margin: 0; }
@@ -740,7 +720,7 @@ body:not(.phone) .layout.panel-empty.composing {
      Not on a link inside a sentence — a citation's title, a crumb of the
      breadcrumb — which is set in the line it belongs to and would break the
      sentence if it were given a height of its own. */
-  .options-button, .bar .views button, .search-input, .window-end,
+  .options-button, .bar .views button, .search-input,
   .panel button:not(.link), .panel .section-toggle, .panel .chips .chip,
   .bar .layers label, .bar .layers summary, .grouping-button, .grouping-lane label,
   .bar .categories-control label, .bar .categories-control summary {

@@ -30,7 +30,6 @@ import {
   HANDLE_WIDTH, bandEvents, bandProfile, windowOf,
 } from '../src/window-band.js';
 import { STRIP } from '../src/map-band.js';
-import { windowPatch } from '../src/window-control.js';
 import { workingSet } from '../src/emphasis.js';
 import { densityPath } from '../src/density.js';
 import { barBox } from '../src/lanes.js';
@@ -222,14 +221,11 @@ test('a window a drag asks for is clamped to the data and never crossed', () => 
   assert.equal(windowOf(1500, 1600, null), null, 'an atlas with no extent has no window');
 });
 
-test('the two number fields and the band come through the same clamp', () => {
-  const extent = { min: 1415, max: 2025 };
-  for (const [from, to] of [[1500, 1600], [1600, 1500], [1, 9000], [2025, 2025]]) {
-    assert.deepEqual(windowPatch(from, to, extent), windowOf(from, to, extent),
-      `typing ${from}–${to} and dragging to it mean the same window`);
-  }
-  assert.equal(windowPatch('not a year', 1600, extent), null, 'and what is not a pair of years is still refused');
-});
+// The other half of this pair — that typing a year and dragging to it mean the
+// same window, through the same `windowOf` — went with the two number fields
+// (M76; the owner, 21 September: *"Picking up the dates exactly is
+// unnecessary"*). There is one way to set the window on the map now, so there
+// is nothing left for it to agree with.
 
 // ─── 5. the window is state and nothing else is ────────────────────────────
 
