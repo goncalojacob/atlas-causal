@@ -113,8 +113,11 @@ test('nameEn is written only where it differs from the name', () => {
   assert.equal(differs.nameEn, 'Lake Geneva');
 });
 
-test('the layer table names the six layers of M36, and coast is lines with no world file', () => {
-  assert.deepEqual(LAYERS.map((l) => l.id), ['coast', 'rivers', 'lakes', 'physical', 'mountains', 'cities']);
+test('the layer table names the six layers of M36 and M45b\'s bands, and coast is lines with no world file', () => {
+  // `relief` is first because it is first on the page: the bands are the
+  // ground everything else is drawn on (M45b §2.4), and the manifest's order
+  // is the order the map hangs the groups in.
+  assert.deepEqual(LAYERS.map((l) => l.id), ['relief', 'coast', 'rivers', 'lakes', 'physical', 'mountains', 'cities']);
   const coast = layer('coast');
   assert.equal(coast.geometry, 'line', 'a cut ring is never stroked as a ring');
   assert.equal(coast.world, null, 'its far level is manifest.land');

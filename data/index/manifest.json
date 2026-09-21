@@ -82,6 +82,141 @@
     },
     "layers": [
       {
+        "bands": [
+          0,
+          200,
+          500,
+          1000,
+          2000
+        ],
+        "cells": [
+          {
+            "bytes": 54837,
+            "file": "geo/base/relief/x0y0.json",
+            "key": "x0y0"
+          },
+          {
+            "bytes": 228,
+            "file": "geo/base/relief/x0y1.json",
+            "key": "x0y1"
+          },
+          {
+            "bytes": 26231,
+            "file": "geo/base/relief/x0y2.json",
+            "key": "x0y2"
+          },
+          {
+            "bytes": 333643,
+            "file": "geo/base/relief/x0y3.json",
+            "key": "x0y3"
+          },
+          {
+            "bytes": 172816,
+            "file": "geo/base/relief/x1y0.json",
+            "key": "x1y0"
+          },
+          {
+            "bytes": 144970,
+            "file": "geo/base/relief/x1y1.json",
+            "key": "x1y1"
+          },
+          {
+            "bytes": 384716,
+            "file": "geo/base/relief/x1y2.json",
+            "key": "x1y2"
+          },
+          {
+            "bytes": 468492,
+            "file": "geo/base/relief/x1y3.json",
+            "key": "x1y3"
+          },
+          {
+            "bytes": 73870,
+            "file": "geo/base/relief/x2y0.json",
+            "key": "x2y0"
+          },
+          {
+            "bytes": 117551,
+            "file": "geo/base/relief/x2y1.json",
+            "key": "x2y1"
+          },
+          {
+            "bytes": 107144,
+            "file": "geo/base/relief/x2y2.json",
+            "key": "x2y2"
+          },
+          {
+            "bytes": 248960,
+            "file": "geo/base/relief/x2y3.json",
+            "key": "x2y3"
+          },
+          {
+            "bytes": 44399,
+            "file": "geo/base/relief/x3y0.json",
+            "key": "x3y0"
+          },
+          {
+            "bytes": 161173,
+            "file": "geo/base/relief/x3y1.json",
+            "key": "x3y1"
+          },
+          {
+            "bytes": 512551,
+            "file": "geo/base/relief/x3y2.json",
+            "key": "x3y2"
+          },
+          {
+            "bytes": 273063,
+            "file": "geo/base/relief/x3y3.json",
+            "key": "x3y3"
+          },
+          {
+            "bytes": 54026,
+            "file": "geo/base/relief/x4y0.json",
+            "key": "x4y0"
+          },
+          {
+            "bytes": 57627,
+            "file": "geo/base/relief/x4y1.json",
+            "key": "x4y1"
+          },
+          {
+            "bytes": 439897,
+            "file": "geo/base/relief/x4y2.json",
+            "key": "x4y2"
+          },
+          {
+            "bytes": 328866,
+            "file": "geo/base/relief/x4y3.json",
+            "key": "x4y3"
+          },
+          {
+            "bytes": 91150,
+            "file": "geo/base/relief/x5y0.json",
+            "key": "x5y0"
+          },
+          {
+            "bytes": 234674,
+            "file": "geo/base/relief/x5y1.json",
+            "key": "x5y1"
+          },
+          {
+            "bytes": 132834,
+            "file": "geo/base/relief/x5y2.json",
+            "key": "x5y2"
+          },
+          {
+            "bytes": 364244,
+            "file": "geo/base/relief/x5y3.json",
+            "key": "x5y3"
+          }
+        ],
+        "geometry": "polygon",
+        "id": "relief",
+        "minZoom": 1,
+        "world": "geo/base/relief-world.json"
+      },
+      {
         "cells": [
           {
             "bytes": 20410,

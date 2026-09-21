@@ -2720,3 +2720,243 @@ One row, in the graph's own key and in `about.html`'s copy of it: three segments
 ### Checks
 
 `node tools/validate.mjs --index`: **10,653 records, 5 regions, 0 errors, 238 warnings**, clean over the repository and over the fixtures and byte-identical to a fresh build. **Nothing under `data/` changed at all** — no record, no historical claim, no new confidence value. The fixtures already held one edge of each of the three, which is why the tests needed nothing written for them. `node --test`: **1,652 pure and 210 browser, 1,862 in all, 0 failed and 0 skipped**, the browser suites one at a time as the check runs them (M63). `lanes.js`, `cluster.js` and `emphasis.js` are untouched. No new runtime dependency. Both screenshots taken with `--only`, so every other picture is untouched. Nothing pushed to `m0` or `main`; `docs/drafts/` ignored. Deviations **946 to 949** and **973 to 975** — the second block because lane A's numbers ran into lane B's at 950, which is deviation 973 itself.
+
+
+## M45b — the elevation bands
+
+*The brief is `docs/m45-brief.md` §2 and its amendments; the position is
+`STATUS.md` → **M45b — the elevation bands**, with the budget table and
+deviations 976 onward. Lane A's fifth milestone, on the branch `m45b`.*
+
+**The owner, 16 September:** *"relief would help you understand how borders and
+territories move around geographical features."* M45a answered the half that
+was free — seventeen `FEATURECLA` classes into four visual families, a peak
+drawn at its own height — and said plainly what it could not do: Natural Earth
+ships no land hypsometry in its vectors, so nothing on the map said how high
+anything was. **This is the half that costs bytes**, and the question it exists
+to answer is one you can only settle by looking: *can a border be seen to sit
+on a ridge?*
+
+### The source, and the one thing it does not say
+
+`vendor/elevation/etopo5-10min.i2` — ETOPO5 averaged 2 × 2 to 10 arc-minutes,
+2160 × 1080 int16 little-endian metres, no header, 3.3 MB gzipped against the
+8 MB §2.1 allows. **The run does not download it and cannot**: it is read
+through `tools/import/source.mjs` exactly as Natural Earth is, its sha256 is
+checked against `vendor/SHA256SUMS`, and a test asserts that neither
+`tools/import/elevation.mjs` nor `tools/import/naturalearth.mjs` contains a
+`fetch` at all.
+
+What the file does not say is **which point a value is at** — the node the
+2 × 2 block starts at, or the centre of the block — and the two differ by
+1/24°, about 4.6 km. `vendor/README.md` settles it without meaning to: it
+records the ground the grid was checked against before it was committed, and
+**node registration reproduces four of those spot checks exactly** (Everest
+region 5,276 m, Tibetan plateau 5,143 m, the Mariana Trench at 11° N 142° E
+−6,792 m, the mid-Pacific at 0°, 180° −5,228 m) where the half-cell reading
+gives 5,982 m for the first. The test asserts those four numbers rather than
+the convention, so a grid that disagrees fails on the ground.
+
+### Five bands, frozen before a tint was chosen
+
+**0–200 m, 200–500, 500–1000, 1000–2000, above 2000.** Below sea level is not
+a band. They are `BAND_EDGES` in `tools/import/elevation.mjs` and they are
+carried into `manifest.base.layers[relief].bands`, so what the tints mean is
+readable off the manifest and the test that freezes them reads them from what
+was built.
+
+Cut by **marching squares**, interpolated at every crossing — which is what
+keeps a 10-arc-minute shore from being a staircase — with the field padded so
+that every contour closes into a ring. Two of the paddings earn their keep: a
+column at **exactly ±180°**, the same meridian carrying the same values,
+because the map's seam is 30° W and the antimeridian is in the middle of the
+picture where a sixth of a degree of nothing would be a gap through the Bering
+Strait; and a row at **−90°** carrying the last row to the pole, because the
+grid stops at 89.833° S and Antarctica does not. A crossing is named by the
+edge it lies on and not by its coordinates, so the two squares sharing an edge
+agree about it to the bit.
+
+**A band is its own edge's rings plus the next edge's, drawn even-odd.** The
+ground above the next edge is inside both sets, so a renderer counting
+crossings leaves it unfilled — a hole, and a band with a hole in it is exactly
+the ground between two heights. The base map already drew every polygon
+`fill-rule: evenodd`, for the island inside a lake, so nothing was added for
+it. The alternative, nesting each ring inside the ring it belongs to, needs a
+point-in-polygon pass over half a million points and draws the same picture.
+
+### The layer
+
+`relief` is a base layer like the other six and almost nothing is
+special-cased: a row in `LAYERS` and a property table in `features.mjs`, a cap
+in `CAPS`, a row in the layer control built from the manifest, `minZoom`, a
+far file, twenty-four cells on the same 6 × 4 grid, the same `--budget`
+reporting, `?layers=relief`.
+
+Four things are its own. **It draws under everything else the map draws** —
+`GROUND` in `map.js`, which M45a made a flag, is an order now: `['relief',
+'physical']`. The land token beneath it is the paper this map is drawn on and
+not a layer, so that is as far under as there is. **It is clipped into its
+cells and is fill with no stroke**: every other polygon layer arrives whole per
+cell because a cut ring's edge would be stroked along a cell border, and a band
+is one feature for the world, so it is clipped and nothing is stroked instead.
+**It is ground and not a lens** (amendment A3): M65 hides the rest of the
+picture when an event is chosen, and the bands are drawn regardless, which a
+browser test holds. **It is off until a reader asks for it**: `DEFAULT_LAYERS`
+is `LAYERS` without it, two lists so the resting link stays empty and
+`?layers=…,relief,…` is what a reader gets when they switch it on.
+
+### The budget, and what was coarsened
+
+| layer | level | tolerance | bytes | cap |
+| --- | --- | --- | --- | --- |
+| relief | far | 0.4° | 365.7 KB | 400.0 KB |
+| relief | near | 0.005° | 4,714.8 KB | 5,600.0 KB |
+
+**4.96 MB of the bands' own 6 MB ceiling** — 374,523 bytes for the far file and
+4,827,962 for the twenty-four cells. The base map is **5.94 MB of its 8 MB**
+and is *to the byte* what it was: the run rewrote all 161 files and `git
+status` named two, both new. `du -sh data/geo` is **20M**; exactly, `data/geo/`
+is **19.30 MB of its 24 MB**, up from 14.34.
+
+**Nothing was coarsened at the near level.** It fits at 0.005°, the first rung
+of the ladder and finer than the grid itself, so every point the contouring
+produced is in the cells.
+
+**The far level was**, and it took two things. The tolerance stepped to
+**0.4°** — the very tolerance the far coastline is drawn at — and it needed a
+**ring floor of its own**, `farMinArea: 0.2` square degrees, because the
+far-level *feature* floor every other layer uses can never bite here: the bands
+are five features for the whole world, and what decides the bytes is the number
+of **rings**, four points and thirty bytes of brackets each at any tolerance.
+Without it the far level is 846.8 KB at the coarsest rung the ladder has,
+against a 400 KB cap it could never reach by simplifying. What that leaves, per
+band: 404 of 2,191 rings, 548 of 3,011, 503 of 2,963, 291 of 1,930, 83 of 594 —
+the shape of the continents' relief and not its freckles, and all of it back as
+soon as a cell lands.
+
+### What first paint costs: nothing
+
+| | before | after |
+| --- | --- | --- |
+| JavaScript files | 113 | **113** |
+| JavaScript bytes | 1,509,168 | **1,511,498** (+0.15%) |
+| stylesheet bytes | 134,465 | **137,201** |
+| `geo/base/relief` bytes at first paint | — | **0** |
+
+No new module under `src/`: `map.js`, `layers/base.js` and `state.js` gained a
+few lines each. `relief` is off by default, so a first visit makes no request
+for it at any zoom, and `tests/spine-pages.test.mjs` asserts that by name on
+every page as well as by the `geo/base/` rule it already had. Switched on, its
+far file goes out behind the same `defer` every other far file does — a frame,
+then a task — so the promise that not one byte of the base map is fetched
+before the first contentful paint is unchanged.
+
+### What the palette could and could not express
+
+Five tints, **one token at five opacities**: `--ink-soft`, neutral, so it
+competes with none of the eight territory hues, with cobalt or with madder. No
+new hex value, no new token, no new type size. They are spaced as **equal steps
+in OKLab over the land token** — 0.030 apart, against the ~0.02 at which a
+large flat field stops being tellable from its neighbour — so over bare ground
+all five can be told apart and counted.
+
+**0.33 on the top band is where the ramp stops, and the number is not taste.**
+It is the largest opacity at which every promise this atlas already made still
+holds over the band: a mark at 5.08:1, its label at 8.34:1 and the walked chain
+at 3.45:1 bare, and 4.43:1, 7.26:1 and 3.00:1 with the worst of the eight hues
+washed over it at 0.62. A darker ramp takes the chain under the 3:1 a line has
+to have.
+
+And the honest half. **A territory wash is 0.62 of a hue, so only 38 % of the
+ramp survives under one**: the 0.030 steps become 0.013, under the threshold,
+and through a frontier's own colour a reader sees the trend and the top band
+rather than five countable steps. No tint fixes it — at 0.62 on the top band,
+far past where the walked chain fails, the step under a wash is still 0.021. So
+the brief's escape hatch, *"if five bands cannot be told apart, use fewer and
+say so"*, is not taken: five **can** be told apart, which is what the bands are
+for; what they cannot do is be counted under a territory, and that is said
+rather than answered by throwing two bands away.
+
+**And one thing the resolution cannot express.** The lowest band's seaward edge
+is the grid's own shore, which can stand up to about 0.17° — some 19 km —
+outside the 10 m coastline the map draws, so at a peninsular zoom the lightest
+tint shows as a faint halo in the water. It is the price of the resolution the
+6 MB ceiling allows, there is no cheap fix (clipping to the far coastline would
+cut the bands against a 0.4°-simplified shore and be wrong further inland), and
+it is written down rather than left to be noticed.
+
+### The pictures, and the answer to the question
+
+All with the territories on, which is the whole question. **Iberia**
+(`m45b-relief-iberia.png`): the Meseta stands out of the coastal lowland as a
+step, the Guadalquivir and the Ebro run through the lowest band as corridors,
+the Cantabrian range and the Pyrenees are two bands higher, and the Portuguese
+frontier reads as what it is — rivers in the middle, high ground at the ends.
+**The Andes** (`m45b-relief-andes.png`): the top band runs the length of the
+western edge of the continent and the Chilean–Argentine border runs down it.
+That is the milestone's question answered — **the border is on the ridge, and
+the ridge is drawn** — and it is also where the limit above is visible, because
+at 48° across the cordillera is a **narrow** band and under eight hues at 0.62
+it has to be hunted for rather than seen.
+
+Which is why two of the five pictures exist. The **Alps**
+(`m45b-relief-alps.png`) is the case where the ridge is **wide**, and it is the
+one picture in which the question is answered without having to be looked for:
+France, Switzerland, Austria and Italy meet on the top band, the Po valley is
+two bands below, the Jura and the Massif Central stand out of the plain as
+their own shapes. And **`m45b-relief-bare-andes.png`** is the Andes box with
+the territories off, which is the proof that the mottling is the wash and not
+the data — the cordillera is the top band the length of the continent, the
+Altiplano a broad mass of it, the Amazon basin the lowest, Patagonia between.
+A point-in-polygon check against the far file agrees with the picture: 70° W
+33° S is band 4, the Amazon at 60° W 3° S band 0, Lisbon band 0, and the
+Southern Ocean and the mid-Atlantic in no band at all.
+
+So the answer is **yes where a band is broad — the Alps, the Meseta, the
+Tibetan plateau — and barely where it is narrow and the zoom is continental.**
+The **world** (`m45b-relief-world.png`) shows the bands quiet at the scale the
+atlas opens at. The comparison without the bands is not repeated: M45a's
+`m45a-ground-iberia` and `m45a-ground-andes` are these very boxes with these
+very `?layers=` lists and `relief` absent.
+
+### Tests
+
+`tests/m45b.test.mjs` (12) and `tests/m45b-browser.test.mjs` (5), written
+before the behaviour they judge (711, 717), plus four new assertions in
+`tests/contrast.test.mjs` and one in `tests/spine-pages.test.mjs`. **No test
+pins a byte count**: what is asserted is that the committed bands are inside
+their own ceiling and inside `data/geo/`, that every cell the manifest names is
+on disk with the bytes it claims, and that the figure STATUS.md prints is the
+total of the files rather than a number somebody typed. The one thing that is
+pinned is the five band edges, which are frozen on purpose. The import's
+determinism is the suite that already held it: `tests/import-naturalearth.test.mjs`
+runs the whole plan twice and compares, and it makes its fixture grid at run
+time rather than committing four and a half megabytes of synthetic ground.
+
+### Checks
+
+`node tools/validate.mjs --index`: **10,653 records, 5 regions, 0 errors, 238
+warnings**, byte-identical to a fresh build. **No record changed and no
+historical claim was written** — elevation is geography. `node --test`:
+**1,668 pure and 215 browser, 1,883 in all, 0 failed and 0 skipped**, the
+browser suites one at a time as the check runs them (M63). No map library, no
+tiles, no raster, no new runtime dependency, no build step, no new hex value or
+token or type size. `src/layer-control.js` is untouched: the row comes from
+`manifest.base.layers`, which is the point of building the control from the
+manifest. No picture under `docs/screens/` was rewritten at all — M45b's five
+were taken one at a time with `--only`, so every other one is the file it was. Nothing pushed to `m0` or `main`; `docs/drafts/` ignored.
+Deviations **976 to 989**.
+
+**One thing the owner should know about the run itself**, and it is deviation
+988. Two runs built this milestone at once on one branch with no channel
+between them — nine commits in fifty minutes. **Nothing was lost**: every
+rejected push was answered by taking the other side's work whole and keeping
+only what this side had that it did not, and one commit is an explicit merge
+that says so. It was paid for in duplicated work: three of the tests the
+seventh layer broke were fixed twice, several screenshots were taken twice, and
+two `## M45b` sections were written of which the fuller was kept and the
+other's paragraphs grafted in. The collision was found by a rejected push and
+not before it, because the two containers cannot see each other. **The claim
+line needs to name the runner, not only say that the lane is held** —
+`M45b started <instant> by scheduled` was true of both of them — and one of the
+two triggers is worth switching off.

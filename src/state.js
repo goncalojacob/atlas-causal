@@ -113,8 +113,8 @@ const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 // a member so that every `?layers=` link ever shared still parses, and so that
 // the default is the literal it always was.
 //
-// The five after it are the base map's, the ones the layer control switches
-// (M37b). `coast` is deliberately **not** among them: the near coastline is the
+// The six after it are the base map's, the ones the layer control switches
+// (M37b, and `relief` since M45b). `coast` is deliberately **not** among them: the near coastline is the
 // coastline, and a switch that turned off half of it at one zoom would be a
 // switch for a level of detail and not for a layer (deviation 523).
 //
@@ -124,7 +124,18 @@ const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 // name an old link could not have carried as on, makes turning a base layer off
 // impossible to express in the URL at all (deviation 522).
 export const LAYERS = Object.freeze(['land', 'territories', 'events',
-  'rivers', 'lakes', 'physical', 'mountains', 'cities']);
+  'relief', 'rivers', 'lakes', 'physical', 'mountains', 'cities']);
+// And what is on when the reader has said nothing. It is `LAYERS` without
+// `relief` (M45b): the bands are 5 MB of ground and the only layer that fills
+// across open land, and a map that opened with them on would be a relief map
+// of the world with a history drawn on it rather than the other way round.
+// Everything else is on, as it always was.
+//
+// Two lists and not one, so that the default still writes nothing into the
+// address bar and `?layers=relief,…` is what a reader gets when they switch
+// the bands on — which is what makes the picture they are looking at shareable
+// (deviation 979).
+export const DEFAULT_LAYERS = Object.freeze(LAYERS.filter((id) => id !== 'relief'));
 // A category of events, off the closed list in `data/categories.json`:
 // `events:war`. Which categories exist is deliberately not known here — this
 // file holds none of the data — so a token is checked for shape only and a
@@ -149,7 +160,7 @@ export function defaultState() {
     from: null, to: null, view: 'map', focus: null, focusAll: false, group: 'none', lanes: [],
     degree: DEGREE_DEFAULT, tops: false,
     selected: null, source: null, place: null,
-    actor: null, office: null, chain: [], horizon: null, layers: [...LAYERS], narrative: null, step: 0,
+    actor: null, office: null, chain: [], horizon: null, layers: [...DEFAULT_LAYERS], narrative: null, step: 0,
     walk: null,
     bbox: null,
   };
@@ -359,11 +370,11 @@ export function formatState(state, search = '') {
   if (state.chain.length) params.set('chain', state.chain.join(','));
   if (state.bbox) params.set('bbox', formatBbox(state.bbox));
   if (state.horizon !== null && state.horizon !== undefined) params.set('horizon', String(state.horizon));
-  // The default is the three names in order and writes nothing. Anything else
+  // The default is `DEFAULT_LAYERS` in order and writes nothing. Anything else
   // is written as it stands, category tokens included: turning one category
   // off replaces `events` with one `events:<id>` per category still on, so
   // what the reader did is always in the link they copy.
-  if (state.layers.length !== LAYERS.length || state.layers.some((l, i) => l !== LAYERS[i])) {
+  if (state.layers.length !== DEFAULT_LAYERS.length || state.layers.some((l, i) => l !== DEFAULT_LAYERS[i])) {
     params.set('layers', state.layers.join(','));
   }
   const text = params.toString().replace(/%2C/g, ',').replace(/%2D/g, '-').replace(/%3A/g, ':');

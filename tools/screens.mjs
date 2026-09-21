@@ -494,6 +494,69 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=1400&from=1955&to=1980&view=graph&selected=angola-war-begins-1961',
     width: 1440, height: 1400,
     what: 'the same five links on the graph, inked alike, with the key saying what the difference means' },
+  // M45b: the elevation bands, and the question the whole of M45 exists to
+  // answer — *can a border be seen to sit on a ridge?* M45a made the ground
+  // the base map already had legible; these are the half that costs bytes.
+  //
+  // **With the territories on**, as §2.4 asks, because the point is not that
+  // the bands are pretty but that a frontier stays legible over them and that
+  // a reader can see what the frontier is following. `relief` is named in the
+  // `?layers=` list because it is the one layer off by default (deviation
+  // 979), and a list is "these and nothing else".
+  //
+  // Two places, and they argue the two halves of it. **Iberia** is a frontier
+  // that follows rivers in its middle and a range at either end — the Minho
+  // and the Douro through the low bands, and the Serra da Estrela and the
+  // Cantabrian and Central ranges standing out of them. **The Andes** is the
+  // clearest case there is: two thousand miles of border between Chile and
+  // Argentina drawn along the highest band on the continent, with the Amazon
+  // basin's lowland beside it for the contrast.
+  //
+  // The events are off in both, as they were in M45a's four: at this scale a
+  // mark is a mark on a border, and what these are of is the ground.
+  { name: 'm45b-relief-iberia', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&bbox=-10.5,35.8,-0.5,44.2&layers=land,territories,relief,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'Portugal and Spain over five bands: the border on the Minho and the Douro in the lowest, the ranges between them two bands higher' },
+  { name: 'm45b-relief-andes', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&bbox=-82,-56,-34,13&layers=land,territories,relief,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'the Andes as the top band down the spine of the continent, with Chile and Argentina divided along it' },
+  // There is no pair of "without the bands" shots here, and there does not need
+  // to be: `m45a-ground-iberia` and `m45a-ground-andes` are these very two
+  // boxes with these very two `?layers=` lists and `relief` left out of them,
+  // so the comparison is already on disk and is one picture and not three.
+  // The world, once, for the shape of the planet and to show that the bands
+  // are quiet at the scale the atlas opens at.
+  { name: 'm45b-relief-world', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&layers=land,territories,relief,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'the whole world in five bands under the colonial borders' },
+  // Two more, and each answers something the three above leave open.
+  //
+  // **The Alps**, because Iberia's frontier follows rivers and the Andes are a
+  // single narrow spine: the Alps are the case where the ridge is *wide*, and
+  // four countries meet on the top band with the Po valley flat below it. It
+  // is the picture in which the milestone's question — can a border be seen to
+  // sit on a ridge? — is answered yes without having to be looked for.
+  //
+  // **The Andes with the territories off**, which is M45a's own measure asked
+  // again (`m45a-ground-bare-andes`) and is here because the answer is not
+  // flattering. The bands are right and they read: the cordillera is the top
+  // band the length of the continent, the Amazon basin the lowest, Patagonia
+  // between. Eight territory hues at 0.62 on top of that leave the broad bands
+  // — the Meseta, the Alps — and very little of a narrow one at 48° across.
+  // A set that showed only the two zooms where it works would be the assertion
+  // §2.4 refused; this is the screenshot that proves the limit as well as the
+  // promise, and STATUS.md says what it means.
+  { name: 'm45b-relief-alps', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&bbox=3.5,42.8,17.5,49.2&layers=land,territories,relief,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'a border on a wide ridge: France, Switzerland, Austria and Italy meeting on the top band, the Po valley two bands below it' },
+  { name: 'm45b-relief-bare-andes', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&bbox=-82,-56,-34,13&layers=land,relief,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'the same continent with the territories off: the cordillera in five bands, which is what the eight hues are drawn over' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

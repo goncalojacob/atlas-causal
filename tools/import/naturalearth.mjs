@@ -43,9 +43,10 @@ import { clipToBox, splitAtMeridian } from './geometry.mjs';
 import { keepRing, simplifyArc, simplifyLine } from './simplify.mjs';
 import { GRID, allCells, cellBounds } from './grid.mjs';
 import {
-  BASE_SOURCE, BASE_VERSION, CITIES_SOURCE, LAYERS, PROPERTIES, kept, layerSources,
-  surveyProperties, surveyShape, zFor,
+  BASE_SOURCE, BASE_VERSION, CITIES_SOURCE, ELEVATION_SOURCE, LAYERS, PROPERTIES, kept,
+  layerSources, surveyProperties, surveyShape, zFor,
 } from './features.mjs';
+import { readGrid, reliefCollection } from './elevation.mjs';
 import {
   cellValues, readLayer, sourcePoints, takeLayer, valuePoints, worldValue,
 } from './layers.mjs';
@@ -57,6 +58,12 @@ import { SEAM } from '../../src/map/projection.js';
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 export const DEFAULT_DATA = path.join(ROOT, 'data');
 export const VENDOR_10M = 'vendor/natural-earth/10m';
+// The elevation grid M45b cuts the bands out of, committed by the owner's
+// assistant beside the Natural Earth downloads and read the same way: gzipped,
+// through source.mjs, hashed decompressed. **A `fetch` here is a bug and not a
+// fallback** — the grid is in the repository and a run that could not find it
+// stops and says so.
+export const VENDOR_ELEVATION = 'vendor/elevation';
 
 // --- what was imported, exactly ------------------------------------------
 
@@ -79,6 +86,21 @@ export const SOURCE_SHA256 = Object.freeze({
   'ne_10m_geography_regions_elevation_points.geojson': 'f98a16867867146ec4146d6d4b18c823eeedb2825947de666116cf9a4e3f43cb',
   'ne_10m_populated_places.geojson': '9b8e3de09048ef00dfc70357dbb9fa324493f214b5e0ae4daf1aa79a8d10116b',
 });
+
+// And the elevation grid's, from the same table. It is checked the way the
+// seven above are — a loud warning on its own, a refusal to write anything
+// under `--check` — and **`--check` is in the command line CLAUDE.md
+// documents**, so the committed bands were cut out of a grid whose hash was
+// verified. One rule for all eight sources and not a special case for the
+// eighth: the fixtures this tool is tested on are files with the right names
+// and deliberately the wrong contents, and a source that stopped the run on a
+// hash could never be exercised on one (deviation 980).
+//
+// A **missing** grid is a stop either way, as a missing download is: there is
+// nothing to import and nothing to fall back to. `vendor/README.md` has the
+// derivation — ETOPO5 at 5 arc-minutes averaged 2 × 2 — and a run does not
+// download it.
+export const ELEVATION_SHA256 = 'a05c9065457588a22b3b557f62749452bd381d3351544e12f83b63d1d82f771b';
 
 // Three decimals is about 110 m on the ground, which is finer than any
 // tolerance below and is what the CShapes shards are already written at.
@@ -121,6 +143,13 @@ export const FAR_START = 0.05;
 // serves these gzipped and a reader downloads about a third, but the cap is
 // about what is in the repository and what the deploy artifact carries.
 export const CAPS = Object.freeze({
+  // The bands, inside the 6 MB of their own that M45b §2.5 gives them: 6,144
+  // KB, of which 400 for the world and 5,600 for the cells, and 144 left over
+  // so that the two caps together cannot round past the ceiling. The far level
+  // is the whole world at k = 1, where a sixth of a degree is less than half
+  // an SVG unit, so it can be taken down very hard indeed; the near level is
+  // where the ridge under a frontier has to be a ridge.
+  relief: Object.freeze({ far: 400 * 1024, near: 5600 * 1024 }),
   coast: Object.freeze({ far: 200 * 1024, near: 2600 * 1024 }),
   rivers: Object.freeze({ far: 200 * 1024, near: 1200 * 1024 }),
   lakes: Object.freeze({ far: 150 * 1024, near: 700 * 1024 }),
@@ -192,6 +221,22 @@ export const FAR_FLOORS = Object.freeze({
 // hosting actually see.
 export const BASE_CEILING = 8 * 1024 * 1024;
 export const GEO_CEILING = 24 * 1024 * 1024;
+
+// Which files a layer with a ceiling of its own owns: its cells and its world
+// file. They are counted against that ceiling and are **left out** of the base
+// map's, which is what "outside the base map's 8 MB" means (M45b §2.5).
+export function ownedFiles(layer) {
+  const dir = `${BASE_DIR}/${layer.dir}/`;
+  const world = layer.world ? layer.world.slice('geo/'.length) : null;
+  return (file) => file.startsWith(dir) || (world !== null && file === world);
+}
+
+// Every layer that is counted against a ceiling of its own, with the test for
+// its files and the ceiling itself.
+export function ownCeilings(layers = LAYERS) {
+  return layers.filter((layer) => Number.isFinite(layer.ceiling))
+    .map((layer) => ({ id: layer.id, ceiling: layer.ceiling, owns: ownedFiles(layer) }));
+}
 
 export const BASE_DIR = 'base';
 export const LAND_FILE = 'land-present.json';
@@ -400,9 +445,16 @@ export function planLayer(layer, sources, {
 
   // The far level: one file for the whole world, which is what a reader sees
   // before a cell arrives.
+  // A ring floor at the far level, where the layer's row asks for one. It is
+  // `FAR_MIN_AREA`'s argument (deviation 605) for a layer whose features are
+  // not one ring each: the bands are five features for the whole world, so the
+  // far-level **feature** floor above can never drop anything, and what
+  // actually decides whether they fit 400 KB is the number of rings — a ring
+  // is four points at any tolerance and about thirty bytes of brackets, and
+  // eleven thousand of them are over the cap before a coordinate is written.
   const buildFar = (tolerance) => {
     const built = takeLayer(layer, features, {
-      tolerance, decimals, minArea: MIN_AREA, seam, floor, splitArea: MIN_AREA,
+      tolerance, decimals, minArea: layer.farMinArea ?? MIN_AREA, seam, floor, splitArea: MIN_AREA,
     });
     const text = serializeGeo(worldValue(layer, built.taken));
     return { bytes: bytesOf(text), text, points: built.points, features: built.taken.length, belowFloor: built.belowFloor };
@@ -580,13 +632,39 @@ export async function loadSource(dir, name) {
   return { name, file, json: JSON.parse(bytes.toString('utf8')), digest, raw: bytes.length, problem };
 }
 
-// Every file the layers this tool writes actually need.
+// Every **GeoJSON** file the layers this tool writes actually need. The
+// elevation grid is a source like the others and is not one of these: it is
+// 2,332,800 int16 and there is nothing in it to parse, so it is read by
+// `loadElevation` below and injected into the same `sources` object the seven
+// downloads land in.
 export function sourceNames() {
   const names = [];
   for (const layer of LAYERS) {
-    for (const source of layerSources(layer.id)) if (!names.includes(source.file)) names.push(source.file);
+    for (const source of layerSources(layer.id)) {
+      if (source.file === ELEVATION_SOURCE || names.includes(source.file)) continue;
+      names.push(source.file);
+    }
   }
   return names;
+}
+
+// The committed grid, hashed, as the collection of five bands the `relief`
+// layer is read from. **No network**: the file is in the repository, and a
+// missing file or a hash that differs is a stop with the reason named, never a
+// download and never a lower resolution.
+//
+// → { collection, digest, problem }: `problem` is a sentence and the caller
+// refuses to write when there is one.
+export async function loadElevation(dir, name = ELEVATION_SOURCE) {
+  const plain = path.join(dir, name);
+  const file = existsSync(plain) ? plain : `${plain}.gz`;
+  if (!existsSync(file)) {
+    return { collection: null, problem: `${name} is not in ${dir}` };
+  }
+  const { bytes, digest } = await readSource(file);
+  const problem = digest === ELEVATION_SHA256 ? null
+    : `${name} has sha256 ${digest}, not the ${ELEVATION_SHA256} this import was written against`;
+  return { collection: reliefCollection(readGrid(bytes)), digest, raw: bytes.length, problem };
 }
 
 // --- writing -------------------------------------------------------------
@@ -640,7 +718,7 @@ const kb = (n) => `${(n / 1024).toFixed(1)} KB`;
 // and a number here would be one the file does not depend on.
 const degrees = (t) => (t === null || t === undefined ? '—' : `${t}°`);
 
-function printBudget(plan, { geoBytes, baseBytes }) {
+function printBudget(plan, { geoBytes, baseBytes, own = [] }) {
   console.log('layer      level  tolerance        bytes          cap  points kept  points dropped  what');
   for (const row of plan.layers) {
     console.log([
@@ -655,6 +733,9 @@ function printBudget(plan, { geoBytes, baseBytes }) {
     ].join(''));
   }
   console.log('');
+  // A layer with a ceiling of its own first, because it is the one a run is
+  // measuring after every band it lands.
+  for (const row of own) console.log(`${row.id.padEnd(9)} ${kb(row.bytes)} of its own ${kb(row.ceiling)} ceiling`);
   console.log(`base map  ${kb(baseBytes)} of the ${kb(BASE_CEILING)} ceiling`);
   console.log(`data/geo  ${kb(geoBytes)} of the ${kb(GEO_CEILING)} ceiling`);
 }
@@ -726,6 +807,7 @@ export async function readPlaces(dataDir) {
 export async function main(argv) {
   let dataDir = DEFAULT_DATA;
   let sourceDir = path.join(ROOT, ...VENDOR_10M.split('/'));
+  let elevationDir = path.join(ROOT, ...VENDOR_ELEVATION.split('/'));
   let outDir = null;
   let check = false;
   let budget = false;
@@ -743,6 +825,7 @@ export async function main(argv) {
   for (let i = 0; i < argv.length; i += 1) {
     if (argv[i] === '--data') dataDir = path.resolve(argv[++i]);
     else if (argv[i] === '--source') sourceDir = path.resolve(argv[++i]);
+    else if (argv[i] === '--elevation') elevationDir = path.resolve(argv[++i]);
     else if (argv[i] === '--out') outDir = path.resolve(argv[++i]);
     else if (argv[i] === '--check') check = true;
     else if (argv[i] === '--budget') budget = true;
@@ -798,6 +881,24 @@ export async function main(argv) {
   }
 
   const sources = Object.fromEntries(loaded.map((source) => [source.name, source.json]));
+  // And the bands, cut out of the committed grid before anything is planned.
+  // A missing grid is a stop; a hash that differs is the seven downloads'
+  // rule, which is a refusal under --check and a loud warning without it.
+  const elevation = await loadElevation(elevationDir);
+  if (!elevation.collection) {
+    console.error(`error: ${elevation.problem}`);
+    console.error('The elevation grid is committed, not downloaded: see vendor/README.md. Nothing was written.');
+    return 1;
+  }
+  if (elevation.problem) {
+    if (check) {
+      console.error(`error: ${elevation.problem}`);
+      console.error('Nothing was written.');
+      return 1;
+    }
+    console.error(`warning: ${elevation.problem}`);
+  }
+  sources[ELEVATION_SOURCE] = elevation.collection;
   // The committed mapping, read and never written by an import run: it is
   // what keeps a city under the hundred thousand that this atlas names, and
   // what puts `place` on the city for M38.
@@ -816,12 +917,24 @@ export async function main(argv) {
     if (existsSync(full)) replaced += (await stat(full)).size;
   }
   const written = plan.files.reduce((n, entry) => n + entry.bytes, 0);
-  const baseBytes = plan.files.filter((entry) => entry.file.startsWith(`${BASE_DIR}/`)).reduce((n, entry) => n + entry.bytes, 0);
+  // A layer with a ceiling of its own — the bands — is counted against it and
+  // is left out of the base map's, which is what M45b §2.5 means by "inside
+  // data/geo/'s 24 MB and outside the base map's 8 MB".
+  const own = ownCeilings().map((row) => ({
+    ...row,
+    bytes: plan.files.filter((entry) => row.owns(entry.file)).reduce((n, entry) => n + entry.bytes, 0),
+  }));
+  const baseBytes = plan.files
+    .filter((entry) => entry.file.startsWith(`${BASE_DIR}/`) && !own.some((row) => row.owns(entry.file)))
+    .reduce((n, entry) => n + entry.bytes, 0);
   const geoBytes = existing - replaced + written;
 
-  if (budget) printBudget(plan, { geoBytes, baseBytes });
+  if (budget) printBudget(plan, { geoBytes, baseBytes, own });
 
   const stops = [...plan.problems];
+  for (const row of own) {
+    if (row.bytes > row.ceiling) stops.push(`${row.id} would be ${kb(row.bytes)}, over its own ${kb(row.ceiling)} ceiling`);
+  }
   if (baseBytes > BASE_CEILING) stops.push(`the base map would be ${kb(baseBytes)}, over the ${kb(BASE_CEILING)} ceiling`);
   if (geoBytes > GEO_CEILING) stops.push(`data/geo/ would be ${kb(geoBytes)}, over the ${kb(GEO_CEILING)} ceiling`);
   if (stops.length) {
