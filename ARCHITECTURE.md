@@ -1107,8 +1107,8 @@ atlas-causal/
 │   ├── build-index.mjs           ● writes data/index/*; recursive key sort, code-unit comparator, content hash
 │   ├── build-palette.mjs         ● the adjacency of the presence shards → data/geo/palette.json; greedy colouring in actor-id order, then settling
 │   ├── build-regions.mjs         ● Natural Earth 110m countries → lane polygons in data/geo/regions.json, and --seam-report (run once, committed); the coastline left this tool in M36a
-│   ├── import/elevation.mjs      ● pure: the committed 10-arc-minute ETOPO5 grid → the five elevation bands, by marching squares at BAND_EDGES (0, 200, 500, 1000, 2000 m). No fs, no network: it is given the decompressed bytes. Read as node registration, which is the reading that reproduces vendor/README.md's own spot checks
 │   ├── import/naturalearth.mjs   ● Natural Earth 10m and the elevation grid → the base map: land-present.json at the far level and data/geo/base/<layer>/<cell>.json at the near, each level's tolerance stepped up until its cap holds; --survey, --budget, --check. Offline, and its two pure halves are import/features.mjs (the property table and the one zoom table) and import/grid.mjs (src/map/grid.js under the name the import knows it by)
+│   ├── import/elevation.mjs      ● pure: the committed elevation grid → M45b’s five bands as rings. Bytes in, a FeatureCollection out; it opens no file and no socket. Marching squares once per frozen band edge (0, 200, 500, 1000, 2000 m), the field padded at both antimeridians and at the south pole so every contour closes, each crossing interpolated from the same two corners by both squares that share it so a ring closes to the bit. A band is its own rings plus the rings of the edge above it, drawn even-odd, which is what makes the ground above the next edge a hole
 │   ├── screens.mjs               ● docs/screens/*.png through a headless browser's own command line; no Puppeteer, no npm
 │   ├── lib/colour.mjs            ● tool-side only: sRGB ⇄ OKLab, perceptual distance, WCAG contrast; nothing in src/ computes a colour
 │   ├── bundle-to-files.mjs       ● fenced JSON in an issue body → data/<kind>/<id>.json; slug-checked before any path
@@ -1877,20 +1877,52 @@ file gives it) and `cities`. The first five are geometry; the last two are
 **arrays of small objects and not GeoJSON**, because a `Feature` around a
 point is about a third scaffolding and neither is ever drawn as a shape.
 
-**`relief` ● is M45b's, and it is the one layer that is not a download.** Five
-elevation bands — 0–200 m, 200–500, 500–1000, 1000–2000, above 2000, frozen in
-`tools/import/elevation.mjs` and carried into the manifest as `bands` — cut by
-marching squares out of `vendor/elevation/etopo5-10min.i2`, a 10-arc-minute
-ETOPO5 grid committed beside the Natural Earth files and hashed the same way.
-Below sea level is not a band. A band is its own edge's rings plus the next
-edge's, drawn **even-odd**, so the ground above it is a hole rather than a
-second fill. It is **fill and no stroke**, which is what lets it be the one
-polygon layer clipped into its cells: a stroked ring cut at a cell border
-draws a ridge that does not exist. It draws **under everything else the map
-draws**, it is the only layer with a fill across open land, and it is counted
-against a **6 MB ceiling of its own**, inside `data/geo/`'s 24 MB and outside
-the base map's 8 MB. It is also the one base layer **off until a reader asks
-for it**: `DEFAULT_LAYERS` in `src/state.js` is `LAYERS` without it.
+**A seventh since M45b: `relief`** ●, and it is the one layer of the seven
+whose source is not a Natural Earth download. It is **five elevation bands as
+polygons** — 0–200 m, 200–500, 500–1000, 1000–2000 and above 2000; below sea
+level is not a band — cut by marching squares from
+`vendor/elevation/etopo5-10min.i2`, a 2160 × 1080 int16 grid of ETOPO5
+averaged to 10 arc-minutes, committed gzipped with its sha256 in
+`vendor/SHA256SUMS` and read through `tools/import/source.mjs` exactly as
+Natural Earth is. `tools/import/elevation.mjs` is the pure half: bytes in, a
+`FeatureCollection` out, no file and no socket. **The band edges are frozen**
+and were fixed before any tint was chosen, so that nobody tunes the bands to
+make a picture; a test asserts the five off the manifest.
+
+Four things are true of `relief` and of no other layer.
+
+- **It draws underneath everything, the coastline included** (`GROUND` in
+  `src/map/map.js`), and it is the only layer allowed a fill across open land.
+  Everything else on the base map draws a shore, a course or a mark; the bands
+  are the ground those are read against.
+- **It is ground and not a lens.** M65 made the views draw the main events at
+  rest and hide the rest when one is chosen. `relief` takes no part in that: it
+  is drawn whatever is chosen, the way the coastline is, because the lens
+  narrows an argument and never the world it happened in.
+- **It has a ceiling of its own**: 6 MB, *inside* `data/geo/`'s 24 MB and
+  *outside* the base map's 8 MB, which would otherwise have had 2.11 MB free.
+  `ownCeilings()` in the import is the whole of that arithmetic — a layer with
+  a ceiling of its own is counted against it and left out of the base map's —
+  and the tool refuses to write if either is passed.
+- **It is clipped into its cells, and it is fill with no stroke.** Every other
+  polygon layer arrives whole in each cell its bbox touches, because a clipped
+  ring's cut edge would be a hairline along a cell border. A band is one
+  feature for the whole world, so whole features would put every band in every
+  cell; it is clipped instead, and nothing is stroked, so there is no cut edge
+  to draw. The edge a reader sees is the edge between two tints.
+- **It is off by default.** `LAYERS` has it; `DEFAULT_LAYERS` does not. Two
+  lists and not one, so the resting state still writes no `?layers=` and a
+  reader who switches the bands on gets a link that carries them (see the
+  `layers` paragraph under **State and the URL**). A map that opened with the
+  bands on would be a relief map of the world with a history drawn on it,
+  rather than the other way round.
+
+A band is its own rings plus the rings of the edge above it, drawn
+**even-odd** — which the base map already did, for the island inside a lake —
+so the ground above the next edge falls out as a hole and a band is exactly
+the ground between two heights. The five tints are five opacities of one
+existing ink and no new hex value, no new token and no new type size was
+added for them.
 
 **Two levels, and they are not a zoom pyramid.** The **far** level is one
 file for the whole world, simplified hard, and is what the reader sees before
@@ -2824,7 +2856,7 @@ no check at all rather than an empty closed set: a fork with no
 | Search ● | built in M6: `search.js`, `search-box.js`, a box in the header; the shard `search-<hash>.json` in H3a-1 | the shard was reserved through M6 on the grounds that the graph file already carried every title and a few hundred of them is a scan. It is emitted since H3a-1 — folded once at build time rather than on every page load — and fetched beside the core, never waited for |
 | Another import's mapping | one file under `data/imports/`, validated by the same `v1/import-map.json` | keyed by the source's own entity code; splits by date; the schema is tool-side and the browser never fetches it |
 | A file under `data/imports/` that is not a mapping ● | since M36c: one `kind`, one schema under `schema/v1/`, one line in `TOOL_SIDE`, one row in `IMPORT_SCHEMAS` and one in `IMPORT_REFERENCES`, and whatever a shape cannot say in `tools/validate.mjs` | `tools/lib/read.mjs` dispatches on the file's own `kind` and not on its name, so a fourth kind is a row and not a branch; `tests/registry.test.mjs` fails on a kind that has a schema and no references row, which is how a rename could otherwise miss it |
-| A seventh base-map layer ● | since M36c: one row in `LAYERS` and one property table in `tools/import/features.mjs`, one cap in `CAPS` and, where its far level is decided by the feature count, one floor in `FAR_FLOORS` | the manifest block is built by scanning `data/geo/base/`, so a layer arrives in it by existing; `geometry` says which of the three shapes its cells are in and M37 dispatches on that; every threshold is `z` on the feature and `minZoom` on the layer, both in `k`, and neither is in code |
+| An eighth base-map layer ● | since M36c: one row in `LAYERS` and one property table in `tools/import/features.mjs`, one cap in `CAPS` and, where its far level is decided by the feature count, one floor in `FAR_FLOORS`. M45b took the seventh, `relief`, and added two rows to that list and no branch: a `ceiling` on the layer, which `ownCeilings()` counts it against and out of the base map’s, and a `farMinArea`, which is `FAR_FLOORS`’ argument for a layer whose features are not one ring each | the manifest block is built by scanning `data/geo/base/`, so a layer arrives in it by existing; `geometry` says which of the three shapes its cells are in and M37 dispatches on that; every threshold is `z` on the feature and `minZoom` on the layer, both in `k`, and neither is in code |
 | Which city a place record is ● | since M36c: `data/imports/naturalearth-places.json`, `schema/v1/import-places.json`, `tools/import/places.mjs` | keyed by Natural Earth's `NE_ID`; a match is never guessed — two signals, wikidata and an exact name fold inside a degree of the record's own point, and everything refused is listed in `docs/naturalearth-places.md` for a person, whose entry the tool then keeps |
 | Contributors without GitHub | `submit.js` target only | bundle format is the wire format |
 | Tens of thousands of records | render only the visible window; the core stays whole | hashed, immutable index files; manifest uncached |
