@@ -15,6 +15,10 @@ import { RELATION_LABEL, RELATION_GROUP_ORDER } from '../vocab.js';
 import { sectionHtml, openSection } from './sections.js';
 import { officeStripsSection } from './office.js';
 import { attributionHtml, attributionSource } from '../licensing.js';
+// How far this record has been read, in one line (M70). The slot goes in the
+// card's head and is filled when the record's own file lands, because the core
+// row a card is built from carries no signature.
+import { standingSlot, fillStanding } from '../standing.js';
 
 // What a relation is called from each end, and the order the groups are drawn
 // in: both from the one list of relation types (vocab.js), which is also
@@ -347,6 +351,7 @@ export function actorCardHtml(ctx, actor, { state = null, remembered = null } = 
         ${ctx.lensControl('actor', actor.id)}
       </p>
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
+      ${standingSlot()}
       <div class="head-links">${ctx.entryLink('actor', actor.id)}${ctx.wikipediaHtml(actor)}${ctx.discussLink('actor', actor.id)}</div>
     </header>
     <section class="summary" data-slot="actor-summary"><p class="muted">Loading…</p></section>
@@ -436,6 +441,7 @@ export function renderActorCard(ctx, { container, actor, mine, state = null, rem
       container.querySelector('[data-slot="actor-sources"]').innerHTML = rec.sources?.length
         ? ctx.citationsHtml(rec.sources, '', rec)
         : '<p class="muted">This actor cites nothing yet.</p>';
+      fillStanding(container, rec);
     },
     () => {
       if (!ctx.isCurrent(mine)) return;

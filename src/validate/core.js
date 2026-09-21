@@ -20,6 +20,11 @@ import {
 // shards of I5 (docs/index2-plan.md, A8).
 import { attributePeriod, attributeShardKey, attributeSpan, periodOf, periodsTouched, PERIOD } from '../explanations.js';
 import { astronomicalBounds } from '../util/dates.js';
+// "Has a person read this record", asked of the record's own `review` block.
+// The index carries the answer rather than the block, and it is imported
+// rather than rewritten here so that the builder and the two readers of the
+// standing marker are one function (M70).
+import { hasBeenRead } from '../standing.js';
 // The number the *reader* refuses an unknown value of, which is why it lives
 // there and is imported here rather than written out twice (data.js).
 import { INDEX_GENERATION } from '../data.js';
@@ -669,6 +674,11 @@ function slotReader(citesCount) {
   return (kind, name, record) => {
     switch (name) {
       case 'citesCount': return citesCount(kind, record.id);
+      // The index's copy of "has a person read this", so the masthead can
+      // count it without fetching 573 files. `true` or nothing: a slot written
+      // `false` on every unread record would be 10,311 falses saying what the
+      // absence already says (M70).
+      case 'reviewed': return hasBeenRead(record) ? true : undefined;
       case 'geometry': return record.geometry ?? null;
       case 'wikidata': return typeof record.wikidata === 'string' ? record.wikidata : undefined;
       case 'wikipedia': return isObject(record.wikipedia) ? record.wikipedia : undefined;
