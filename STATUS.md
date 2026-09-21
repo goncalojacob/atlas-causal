@@ -13657,25 +13657,39 @@ batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
 every edge. **The milestone is not done**: §7 of the pool file says where it
 stands and what the next fire does.
 
-**Seven batches.** The pool before: 310 active events, 229 of them main, 362
+**Nine batches.** The pool before: 310 active events, 229 of them main, 362
 active edges, a largest connected component of 254 and 23 events with no edge.
-**After batch 6: 358 active, 269 main, 432 edges, largest component 330, 11
-with no edge.** Thirty-five records came back from the tombstones and thirteen
-were imported; seventy edges were written — eighteen in batch 0, seven in
-batch 1, **nineteen in batch 3, which imported nothing at all and moved the
-component by twenty-seven**, eight in batch 4, eleven in batch 5 and eight in
-batch 6.
+**After batch 8: 378 active, 288 main, 461 edges, largest component 359, 10
+with no edge.** Thirty-six records came back from the tombstones and
+thirty-eight were imported and kept; ninety-nine edges were written — eighteen
+in batch 0, seven in batch 1, **nineteen in batch 3, which imported nothing at
+all and moved the component by twenty-seven**, eight in batch 4, eleven in
+batch 5, eight in batch 6, eighteen in batch 7 and eleven in batch 8.
+
+**Batches 7 and 8 are the first taken from the sweep by the tick rule**, sets 1
+and 2 having been spent on the hinges. Batch 7 took the three bridges left out
+of the fragments and seven treaties that end or amend something this atlas
+already held: ten created, none refused, and **two edges that imported nothing
+at all** — `world-war-ii --precondition-of--> partition-of-india`, which brought
+the South Asian component of six in, and
+`soviet-afghan-war --precondition-of--> dissolution-of-the-soviet-union`, which
+brought the Afghan pair. Batch 8 was sets 3 and 4 alone and is **what the rule
+costs**: sixteen ticked, fifteen created, **nine kept and six retracted with
+their reasons**, because a rule that picks by sitelinks and by thin decades
+picks records this corpus has no neighbour for. The rate to plan on is nine or
+ten kept records a batch, not sixteen.
 
 **The milestone is a long way from its done-condition and that is the honest
 reading**: the brief asks for an order of magnitude more than the 250 it was
-written against, and the corpus stands at 358 — **but 330 of those 358 are in
-one connected component, against 254 of 310 when the run started.** The
-connectedness the owner asked for on 21 September is nearly done; the volume
-is barely begun. The sweep's **1,586 unwalked
-rows** are what that volume comes from, untouched, and §5 of
-`docs/m42-pool.md` holds the tick rule written before a box was ticked. What
-this run establishes is that the volume can only be walked **here**: see the
-finding below.
+written against, and the corpus stands at 378 — **but 359 of those 378 are in
+one connected component, against 254 of 310 when the run started, and only four
+active events are now unreachable from any Portuguese one, against thirteen
+before batch 7.** The connectedness the owner asked for on 21 September is
+substantially done; the volume is barely begun. The sweep's **1,557 unwalked
+rows** are what that volume comes from, and §5 of `docs/m42-pool.md` holds the
+tick rule written before a box was ticked. At nine or ten kept records a batch
+the brief's own number is many hundreds of batches away, and that is a fact the
+owner should have rather than a number to be optimistic about.
 
 **The finding that matters most for the next run.** The import Action cannot
 commit a batch and two runs proved it: `import-wikidata.yml` runs the suite
@@ -13691,13 +13705,21 @@ from the breakup of Yugoslavia into the Bosnian war, and the filing that goes
 with it, because Wikidata gives the breakup a point date of 27 April 1992 for
 a process its own article dates to the early 1990s and the war began on the
 6th — no imported date was widened, because that is a person's reading (989).
-`war-in-darfur`, because no page read here argues a line from Darfur to the
-South Sudanese referendum. `majimaji-war`, because joining the Berlin
+`war-in-darfur`, until batch 7 imported the Second Sudanese Civil War its
+retraction named and put it back. `majimaji-war`, because joining the Berlin
 conference's aftermath to the Maji Maji article's cotton policy would be this
 run's inference and not anybody's page. A second edge out of
 `second-italo-ethiopian-war`, because its own aftermath names no event this
 atlas holds. Three of the fifty M44b withdrew, and three of its class C,
-which no bar reaches. **No historical claim was written**: every explanation
+which no bar reaches. **Six of batch 8's fifteen**, each with its reason in its
+own record and the missing neighbour named: `may-coup`, `thousand-days-war`,
+`austrian-civil-war`, `transnistria-war` — where the record the pages argue
+from is the dissolution of the Soviet Union, dated after this war's start, so
+rule 4 refuses the edge and no date was widened —
+`anti-counterfeiting-trade-agreement`, which reaches no lane either, and
+`operation-rising-lion`, whose article is a section of a list about a war this
+atlas already draws (994). And one item refused at the class table,
+`Q475678`. **No historical claim was written**: every explanation
 is a paraphrase of a sentence the cited article carries at the cited revision,
 every citation names the article, the revision and the section, and no date
 was invented.
