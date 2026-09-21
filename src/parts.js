@@ -1,13 +1,15 @@
 // Which events have parts, once.
 //
 // M30b-2 gave a parent two *behaviours* — a bracket over its parts where they
-// share a lane, a collapsed badge on the graph while the reader is zoomed out
-// — and neither is a *look*: a parent whose parts are spread over lanes, or
-// under `group: none`, or at a zoom where nothing collapses, was drawn exactly
-// like any other event. M30c gives it one look on the three views, a ring
+// share a lane, and a fold on the graph that drew them inside it while the
+// reader was zoomed out — and neither was a *look*: a parent whose parts were
+// spread over lanes, or under `group: none`, or zoomed past the fold's
+// threshold, was drawn exactly like any other event. M30c gives it one look on
+// the three views, a ring
 // outside its mark, and this is the file that says which events get it, so the
 // map, the timeline and the graph cannot come to disagree about what a ring
-// means (the same argument large.js makes about a band).
+// means (the same argument large.js makes about a band). The graph's fold is
+// gone since M70 and the bracket is what is left beside the ring.
 //
 // `parent` is a display fact and never an argument (CLAUDE.md): this is read
 // out of `childrenOf`, which is built from the active events alone and is

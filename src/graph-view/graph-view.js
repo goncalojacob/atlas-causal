@@ -36,7 +36,6 @@ import { zoomBucket } from '../cluster.js';
 import { onScreen } from '../map/layers/events.js';
 import { arrangementOf, holdingKey } from './arrangement.js';
 import { layoutGraph, stackLayout, MIN_ZOOM, MAX_ZOOM } from './layout.js';
-import { collapseLayout } from './collapse.js';
 import { createLayoutRunner } from './layout-runner.js';
 import { LABEL_SIZE, fitLabel, shorten } from './label-fit.js';
 import { exportButton } from '../share.js';
@@ -128,8 +127,8 @@ function textNode(text, attrs) {
 // argument the data does not make.
 function radiusFor(weight, weights) {
   if (weights.max === weights.min) return MIN_RADIUS;
-  // Clamped, because a collapsed parent carries the weight of its whole
-  // subtree and the range was measured over the events (collapse.js): the
+  // Clamped, because a node may carry a weight the range was not measured
+  // over — `subtreeWeight` on a parent the index derived one for: the
   // heaviest mark is the heaviest size and not a larger one.
   const t = Math.min(1, Math.max(0, (weight - weights.min) / (weights.max - weights.min)));
   return MIN_RADIUS + t * (MAX_RADIUS - MIN_RADIUS);
@@ -647,11 +646,13 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // arrangement, how far in, and what may not be swallowed. A wheel notch
     // that returns to a zoom already seen redraws rather than re-clusters.
     //
-    // Two levels of detail, in this order: the semantic one first — an event's
-    // parts drawn inside it while the reader is zoomed out (collapse.js) — and
-    // M25's geometric one on the node set that comes out of it. Both are
-    // filed under the same key, because both depend on exactly these three
-    // things and on nothing else.
+    // One level of detail, M25's geometric one. There were two until M70: a
+    // *semantic* fold drew an event's parts inside it while the reader was
+    // zoomed out, and M65 left it dead — at rest there are no parts in the
+    // picture to fold, and inside a lens M25's never-hide rule holds
+    // everything the lens kept out of any fold. What it said, *there is more
+    // inside this one*, the resting rule says by hiding the parts and the
+    // ring (M30c) says on the mark.
     //
     // And the zoom it is filed under is the bucket below the one the picture
     // is drawn at, as the map's grouping has been since H4a: what decides a
@@ -666,7 +667,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     const groupAt = exactZoom ? k : zoomBucket(k);
     const stackKey = `${laidFor}|${groupAt}|${holdingKey(s)}`;
     stacked = stackings.get(stackKey)
-      ?? stackings.set(stackKey, stackLayout(collapseLayout(laid, { k: groupAt, alone }), { k: groupAt, alone }));
+      ?? stackings.set(stackKey, stackLayout(laid, { k: groupAt, alone }));
     // A stack is in the window if any event under it is, and in the horizon
     // at the band of its nearest member: the same rule the map's stacks
     // follow. Both are only ever asked of a stack of one in practice, since
@@ -797,14 +798,8 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       }
       const faded = !inWindow.get(node.id);
       const isSelected = node.id === s.selected;
-      // An event with its parts drawn inside it. It is still one record and
-      // still opens its own card — the card is where the parts are listed —
-      // so it keeps its `data-id`; what it gains is a count of what is folded
-      // into it and a ring saying there is something to zoom into.
-      const collapsed = node.collapsed ?? null;
       const cls = classes(
         'node',
-        collapsed ? 'collapsed' : '',
         faded ? 'faded' : '',
         lensNear.has(node.id) ? 'lens-near' : '',
         reachable.has(node.id) ? `in-horizon ${horizonBand(reachable.get(node.id))}` : '',
@@ -814,37 +809,25 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         pathIds.has(node.id) ? 'on-path' : '',
         isSelected ? 'selected' : '',
       );
-      const parts = collapsed
-        ? ` — ${collapsed.count} part${collapsed.count === 1 ? '' : 's'} drawn inside it, weight ${collapsed.weight}; zoom in to part them`
-        : '';
       // The node is drawn out of the core; what it is called arrives with its
       // century, and until then it is a node with no name (attributes.js).
       const name = labelOf(atlas, node.event);
       const title = name === null ? LOADING_LABEL
-        : `${name} — ${formatInterval(node.event.when)}${parts}${faded ? ' — outside the window' : ''}`;
+        : `${name} — ${formatInterval(node.event.when)}${faded ? ' — outside the window' : ''}`;
       const mark = svg('circle', {
         cx: node.x, cy: node.y, r: radius / k, class: cls, 'data-id': node.id,
       }, [svgTitle(title)]);
       nodesGroup.appendChild(mark);
-      // An event with parts carries the ring at every zoom, whether or not
-      // the parts are folded into it: the collapse is a behaviour and the ring
-      // is the look, and a reader zoomed past the threshold was being told
-      // nothing at all (m30c-brief, §1). The badge sits on top of it while the
-      // parts are inside. Not a control — no `data-id` — so a click still
-      // lands on the node and opens the one record.
+      // An event with parts carries the ring at every zoom (m30c-brief, §1),
+      // and since M70 it is the whole of what says *there is more inside this
+      // one* on the graph: the fold that used to draw a count beside it is
+      // gone, and the parts are in the picture when the reader opens the
+      // event and out of it when they do not. Not a control — no `data-id` —
+      // so a click still lands on the node and opens the one record.
       if (isParent(atlas, node.event)) {
         nodesGroup.appendChild(svg('circle', {
           cx: node.x, cy: node.y, r: (radius + RING_GAP) / k, class: ringClasses(cls, 'node'),
           'stroke-width': RING_WIDTH / k,
-        }));
-      }
-      if (collapsed) {
-        nodesGroup.appendChild(textNode(`+${collapsed.count}`, {
-          x: node.x + (radius + 2) / k,
-          y: node.y - (radius + 1) / k,
-          class: classes('cluster-count', faded ? 'faded' : ''),
-          'font-size': BADGE_SIZE / k,
-          'data-collapsed': node.id,
         }));
       }
       if (isSelected) selectedMark = mark;

@@ -158,10 +158,11 @@ export function eventWeights(events, edges) {
 }
 
 // How much the whole of an event carries: its own `weight` plus every
-// descendant's, through `parent`, transitively. It is what the graph draws a
-// collapsed parent at when the children are folded into it (plan decision 4),
-// and it is derived exactly as `weight` is — nobody can make a node bigger
-// except by giving it more edges, more actors or more parts.
+// descendant's, through `parent`, transitively. It was what the graph drew a
+// folded parent at (plan decision 4); the fold went in M70 and the column is
+// carried and drawn by nothing at present. It is derived exactly as `weight`
+// is — nobody can make a node bigger except by giving it more edges, more
+// actors or more parts.
 //
 // `weight` itself is untouched: the two are different questions and a reader
 // zoomed in on a battle should see the battle's own size.
