@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--georgian-uprising-on-texel--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Georgian uprising on Texel\", revision 1375503259, § lead"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "georgian-uprising-on-texel",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The war put the men and the island where they were: the rising was “an insurrection by the 882nd Infantry Battalion Königin Tamara of the Georgian Legion of the German Army stationed on the German-occupied Dutch island of Texel”, and the article calls it “one of the last battles in the European theatre”. A battle inside a war is caused by it in the sense this atlas uses, and it is filed inside the war as well.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "revolution-of-dignity--2014-pro-russian-unrest-in-ukraine--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2014 pro-Russian unrest in Ukraine\", revision 1374474822, § lead"
+    }
+  ],
+  "from": "revolution-of-dignity",
+  "to": "2014-pro-russian-unrest-in-ukraine",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The unrest’s article dates it to the revolution and says what it answered: “From the end of February 2014, in the aftermath of the Euromaidan and the Revolution of Dignity, which resulted in the ousting of Russian-leaning Ukrainian president Viktor Yanukovych, demonstrations by Russian-backed, pro-Russian, and anti-government groups took place in Crimea, Donetsk, Luhansk, Kharkiv, and Odesa.” The same sentence says the unrest “was supported by the Russian military and intelligence services”, so the ousting is the occasion and not the whole cause, which is what `probable` is for.",
+  "dispute": null
+}

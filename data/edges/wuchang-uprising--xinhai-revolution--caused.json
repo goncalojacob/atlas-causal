@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "wuchang-uprising--xinhai-revolution--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Wuchang Uprising\", revision 1371641231, § lead"
+    }
+  ],
+  "from": "wuchang-uprising",
+  "to": "xinhai-revolution",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The uprising’s article puts the revolution downstream of it in its first sentence: the rebellion of 10 October 1911 in Wuchang began “the 1911 Revolution that successfully overthrew China’s last imperial dynasty, the Qing dynasty”. The uprising is also filed inside the revolution here, which is the display fact; the edge is the argument, and the two are not the same statement.",
+  "dispute": null
+}

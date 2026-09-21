@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "war-in-afghanistan-2001-2021--republican-insurgency-in-afghanistan--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Republican insurgency in Afghanistan\", revision 1375985393, § lead"
+    }
+  ],
+  "from": "war-in-afghanistan-2001-2021",
+  "to": "republican-insurgency-in-afghanistan",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The insurgency’s article dates it to the end of the war: “The conflict started immediately following the fall of Kabul in August 2021, and the insurgency represents the continuation of the decades-long Afghan conflict”, waged “by armed factions loyal to the defunct Islamic Republic of Afghanistan against the Taliban-led Islamic Emirate”. The fall of Kabul on 15 August 2021 is where this atlas ends `war-in-afghanistan-2001-2021`; both records are filed inside `afghan-conflict`, which the same sentence names.",
+  "dispute": null
+}

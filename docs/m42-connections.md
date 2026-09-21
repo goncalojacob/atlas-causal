@@ -3702,3 +3702,70 @@ refuse `consensus` to three citations that are one encyclopedia.
 and are on the main chain now; the largest component goes 442 → **445** and
 the count of components 30 → 29, while the main count stays at 251 because the
 import was filed in the batch that made it.
+
+## 2v. Batch 23 — the rows whose parent this atlas already holds
+
+*21 September, the third batch of the same fire. Batch 21 asked the corpus's
+own main events what they are part of; this batch asks the **sweep pool** the
+same question, which is a tick rule §5 does not have and which A3 and A6
+between them make the obvious one: **a row whose item names a parent this
+atlas holds arrives filed, so the main count cannot rise by importing it.***
+
+Of the 250 best rows of the world pool by sitelinks, **19 name a parent that
+is an active record here**. Ten were taken, eight landed, and each of the
+eight earned an edge — the bar of §1 of the brief, which a filing does not
+satisfy on its own: **a record that cannot earn an honest edge is retracted,
+and being somebody's child is not an edge.**
+
+| the record | filed under | the edge it earned |
+| --- | --- | --- |
+| `paris-peace-accords` | `vietnam-war` | `vietnam-war --caused--> paris-peace-accords` |
+| `wuchang-uprising` | `xinhai-revolution` | `wuchang-uprising --caused--> xinhai-revolution` |
+| `tambov-rebellion` | `russian-civil-war` | `russian-civil-war --caused--> tambov-rebellion` |
+| `georgian-uprising-on-texel` | `world-war-ii` | `world-war-ii --caused--> georgian-uprising-on-texel` |
+| `2014-pro-russian-unrest-in-ukraine` | `russo-ukrainian-war` | `revolution-of-dignity --caused--> 2014-pro-russian-unrest-in-ukraine` |
+| `2020-malian-coup-d-etat` | `mali-war` | `mali-war --caused--> 2020-malian-coup-d-etat` |
+| `iraqi-insurgency` | `iraq-war` | `iraq-war --caused--> iraqi-insurgency` |
+| `republican-insurgency-in-afghanistan` | `afghan-conflict` | `war-in-afghanistan-2001-2021 --caused--> republican-insurgency-in-afghanistan` |
+
+**Every explanation quotes the article it rests on, at the revision it was
+read at**, and two of them are worth reading for what they refuse to say.
+`mali-war --caused--> 2020-malian-coup-d-etat` rests on the coup's own
+§Background — the protesters "were displeased with the government's management
+of the ongoing insurgency, alleged government corruption, the ongoing COVID-19
+pandemic, and a floundering economy" — and the war is **one of four**
+grievances named, which is why the edge is `probable` and why no edge was
+written from `covid-19-pandemic`, which the same sentence names.
+`russian-civil-war --caused--> tambov-rebellion` is the argument this atlas
+already carries from the same war to the Kronstadt rebellion, read off the
+child's own §Background in the same encyclopedia.
+
+**Two rows were taken and did not land, and both refusals are the tool's:**
+`Q780845` the Franco-Thai War, refused for want of a lane — it names no place
+record, its point reaches no lane polygon and the seeds file named none for it
+— and `Q2587808` "The Holocaust in Poland", refused because the item carries
+**no date the atlas can use**, which is deviation 989 doing its job.
+
+**Nine of the nineteen were refused before the import ran**, and the reasons
+are worth keeping because they are all dates or duplicates rather than
+judgements:
+
+- **Three would duplicate records this atlas already holds.** `Q1780216` the
+  Angolan War of Independence, `Q2609193` the Guinea-Bissau war and
+  `Q2002270` the Mozambican war each begin on the day of a record here —
+  `angola-war-begins-1961`, `guinea-war-begins-1963`,
+  `mozambique-war-begins-1964` — and each is the Portuguese colonial war in
+  one theatre, which `portuguese-colonial-war-1961-1974` already is.
+- **Four are refused on this atlas's own dates.** `Q957586` the
+  Turkish–Armenian war of 1920 against `turkish-war-of-independence`, dated
+  `1922–1923` here; `Q32993` the Chinese Communist Revolution and `Q476634`
+  the Nanchang uprising, both of 1927, against `chinese-civil-war`, dated
+  `1946–1950` here; `Q1070890` the Georgian civil war of 1991–1993 against
+  `dissolution-of-the-soviet-union`, dated `1991–1991`. **Three more records
+  whose interval an import read short**, after `the-troubles` and
+  `cambodian-vietnamese-war`: the pattern is now five and it is the clearest
+  piece of work a person could do in this corpus.
+- **Two are refused on the lane**, which is deviation 1023 again: `Q242864`
+  the 2011 Bahraini uprising under `arab-spring`, and `Q2992403` the
+  Franco-Syrian war of 1920 under `interwar-period`. Both are in their
+  parent's span and neither is in its lane.
