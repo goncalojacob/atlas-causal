@@ -13663,7 +13663,10 @@ events with no edge. **After batch 17: 474 active, 370 main, 104 filed, 565
 edges, largest component 433, 3 with no edge.** **After the filing pass of
 amendment A6: 477 active, 267 main, 210 filed**, the same 565 edges and the
 same largest component of 433, because a filing writes `parent` and `parent`
-takes no edge.
+takes no edge. The one count that moved against the pass is **events with no
+edge at all, 3 to 6**, and the three are the umbrellas themselves: M62's brief
+says an umbrella carries no edge, so each arrives at degree zero and the
+warning is the expected one.
 
 **The filing pass (A6) is the twenty-first of September and it came before any
 further import**, as the amendment instructs. The owner, with a screenshot of
