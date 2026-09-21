@@ -20,17 +20,44 @@
 // not of the row it happens to be in.
 
 // How tall a column is, in pixels: the tick's own height for one event, and
-// no more than `max` however many there are. Logarithmic and **absolute**,
-// so that two rows of the strip can be compared with each other: a scale
-// relative to each row's own busiest column would draw one far event and a
-// thousand of them the same way. Sixty-four is where it saturates, which on
-// this dataset is a decade of one lane at its thickest.
+// no more than `max` however many there are. Logarithmic, and by default
+// **absolute**, so that two rows of the strip can be compared with each other:
+// a scale relative to each row's own busiest column would draw one far event
+// and a thousand of them the same way. Sixty-four is where it saturates, which
+// on this dataset is a decade of one lane at its thickest.
 const SATURATES_AT = 64;
 
-export function columnHeight(count, { min = 3, max = 9 } = {}) {
+// `saturatesAt` is the count a column has to hold to reach `max`. It is the
+// constant above for every drawing that is one row among several — the
+// timeline's per-lane stubs, which are compared with each other, so the
+// absolute scale is the whole of what makes them comparable.
+//
+// A drawing that is **one row over one set** has nothing to compare itself
+// with, and the absolute scale costs it everything: the map's band is 44 units
+// deep and the whole range here is 3 to 9, so on this corpus the world drew a
+// tallest column of 6 px and one country drew 5. One pixel between the atlas
+// and Portugal, which is the diagnosis M76 opens with. Such a caller passes
+// its own set's busiest column and gets the shape back (M76, `busiestColumn`).
+//
+// A set whose busiest column holds one event has no scale to be relative to:
+// the floor is the honest answer there, not a division by zero.
+export function columnHeight(count, { min = 3, max = 9, saturatesAt = SATURATES_AT } = {}) {
   if (count <= 1) return min;
-  const of = Math.min(1, Math.log2(count) / Math.log2(SATURATES_AT));
+  if (saturatesAt <= 1) return max;
+  const of = Math.min(1, Math.log2(count) / Math.log2(saturatesAt));
   return min + Math.round((max - min) * of);
+}
+
+// How many events fall in the busiest column of a drawing, counted on the same
+// grid the columns are drawn on: what a caller passes back as `saturatesAt` to
+// have its profile drawn at its own scale. Zero for nothing to draw.
+export function busiestColumn(xs, { unit = 2 } = {}) {
+  const columns = new Map();
+  for (const x of xs) {
+    const at = Math.floor(x / unit) * unit;
+    columns.set(at, (columns.get(at) ?? 0) + 1);
+  }
+  return columns.size === 0 ? 0 : Math.max(...columns.values());
 }
 
 // The strip for one row. `xs` are the left edges of the bars that would have
@@ -40,7 +67,9 @@ export function columnHeight(count, { min = 3, max = 9 } = {}) {
 // Returns '' when there is nothing beyond the margin, so the caller can leave
 // the row's path out of the drawing altogether rather than append an empty
 // one.
-export function densityPath(xs, { floor, unit = 2, min = 3, max = 9 } = {}) {
+export function densityPath(xs, {
+  floor, unit = 2, min = 3, max = 9, saturatesAt = SATURATES_AT,
+} = {}) {
   if (xs.length === 0) return '';
   const columns = new Map();
   for (const x of xs) {
@@ -54,7 +83,7 @@ export function densityPath(xs, { floor, unit = 2, min = 3, max = 9 } = {}) {
   const at = [...columns.keys()].sort((a, b) => a - b);
   let d = '';
   for (const x of at) {
-    const height = columnHeight(columns.get(x), { min, max });
+    const height = columnHeight(columns.get(x), { min, max, saturatesAt });
     d += `M${x} ${floor - height}h${unit}v${height}h${-unit}Z`;
   }
   return d;

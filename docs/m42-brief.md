@@ -229,3 +229,48 @@ that supports it, under the confidence rules; and `docs/m42-pool.md` reports
 batch**, because that is the number "chains throughout the globe and time"
 actually is. A batch that grows the corpus and not the component has to say
 why.
+
+**A6 (21 September). The resting timeline must be readable, and that is a
+records question before it is a display one.** The owner, with a screenshot
+of the timeline at 435 active events: *"the timeline has too many events. As
+it is right now it is useless. For it to be useful it should only show parent
+and main events and the title for the events. For example, sometimes
+historians call interwar period for the years between WW1 and WW2, you could
+only show that for Europe (there are other important events for other parts
+of the world of course) and then when you click on it it can show you
+everything that happened during that time."* After batch 14 the corpus is 435
+active and **335 main** — the imports arrive as main events and stay main, so
+the resting picture is nearly the whole corpus and A3 has not held in
+practice.
+
+**Two things change from the next fire.**
+
+First, **a period is an umbrella when historians name it as one.** M67
+refused the Soviet period because being a party to a thing is not being part
+of a period; the owner has now asked for exactly the period umbrella, scoped
+to a region: *the interwar period, Europe, 1918–1939*. So: **a period that
+Wikipedia has an article for, with a span and a region or polity, is a
+legitimate umbrella**, sourced as any record is (Wikipedia and Wikidata,
+`probable`), and a main event whose place or actors are in that region and
+whose dates are inside the span is filed under it — M62's span-and-subject
+property, with the region as the subject. M67's rule 1 stands (a period
+named for a form of government does not contain the act that created or
+destroyed it), and a war is still its own umbrella by its fighting. Where a
+period would nest inside another period (the interwar period inside the
+twentieth century), choose the one historians use and do not nest periods
+more than one deep. Other parts of the world get their own periods — the
+owner said so — chosen the same way, from what Wikipedia names for that
+region and time; the run does not invent a period that has no article.
+
+Second, **the next fire is a filing pass before it is an import.** Before
+importing anything more, create the period umbrellas the existing 335 main
+events call for, file under them, rebuild, push; `docs/m42-pool.md` reports
+the main count before and after, by region. **From then on every batch
+reports the main count and it must not rise**: an import that leaves the
+main count higher than it found it has to say why (A3, now with teeth). The
+target is a resting timeline a reader can take in — main events in the low
+tens per century, not the hundreds — and the run says each fire how far it
+is from that.
+
+The display half — every bar titled, an umbrella opening on click, grouping
+removed — is lane A's M77 and is not this run's.

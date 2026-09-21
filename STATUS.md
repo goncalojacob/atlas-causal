@@ -15159,6 +15159,311 @@ but the two tests about the stored preference.
       both columns were measured here, with the same instrument, in the same
       session, on the commit before and the commit after.
 
+## M76 — the band follows the selection, the fields go, the graph shows every date
+
+Three instructions from the owner on 21 September, after seeing M75 published.
+Lane A, on the branch `m76`.
+
+### Which of section 1's candidates it was: the first, and a fourth beside it
+
+The brief's first instruction is *"if for example I select portugal, the map
+timeline I use to pick the dates should show only those events"*, and it asks
+this run to find out on the real page why the band does not look narrowed
+rather than to argue from the code. Measured at 1280 × 900, headless, on the
+commit that claimed the milestone:
+
+| | columns | tallest column | x span of the ink | events behind it |
+|---|---|---|---|---|
+| nothing selected | 134 | 6 px | 14 → 1252 of 1280 | 229 |
+| `?actor=portugal` | 25 | 5 px | 466 → 684 of 852 | 33 |
+| `?actor=kingdom-of-portugal` | 19 | 4 px | 10 → 454 of 852 | 20 |
+
+**Candidate 3 is ruled out.** Selecting Portugal *is* a lens: the set behind
+the band goes from 229 events to 33, and the band redraws. The picture is
+narrowed in the data.
+
+**Candidate 1 is the cause.** The strip is 44 units deep and the profile is
+drawn at `density.js`'s absolute scale, whose whole range is 3 to 9 px and
+which saturates at 64 events in one 2-px column — a count no column of this
+corpus comes near. So the world draws a tallest column of 6 px and Portugal
+draws one of 5: **one pixel between the atlas and one country.** Both read as
+the same faint dusting along the bottom edge, and the only thing that changes
+is which x positions carry a 3-px tick. The narrowing was real and was spent
+on a pixel.
+
+**And a fourth the brief did not list, found while ruling out the third.** The
+band was drawn over `bandEvents` — `emphasis.js`'s `shown` — and `shown` is
+the lens *plus its one-hop ring*. Portugal names 9 events; the band drew 33.
+Twenty-four of them are the Boer War, Franz Ferdinand, the Sayfo, the Armenian
+genocide, the Easter Rising: the neighbourhood, correctly in the picture the
+map draws, and not what the owner pointed at. Three quarters of the ink under
+a band that says "Portugal" was not Portugal's.
+
+**Candidate 2 is real and is section 2's.** The masthead's hint keeps 7 columns
+of the corpus on the same row as the years and never narrows — 7 before the
+selection and 7 after it, on every one of the three ways in.
+
+### What section 1 changed
+
+Two things, and the fourth candidate is why there are two.
+
+1. **The profile is over the selection's own events.** A new pure half,
+   `profileEvents` in `window-band.js`: with a lens on, the lens's own events
+   — `lensView`'s `kept`, which is what the foci name and not the ring around
+   it — and with no lens, `bandEvents` exactly as before. Narrowed by the
+   categories still on, because it is intersected with `bandEvents` rather
+   than read straight off the lens. `bandEvents` itself is untouched, so the
+   masthead's count in view and the standing line still count what the views
+   draw; `emphasis.js`'s `shown` contract is untouched, as the brief requires.
+   `lensView` gained one key, `kept`, which `focusParts` already handed it.
+2. **The profile is drawn at its own set's scale.** `densityPath` takes a
+   `saturatesAt`, and `bandProfile` takes `own: true` and computes it from the
+   busiest column of the set it is given. The map's band asks for it, with the
+   strip's own body — 28 units, `STRIP.height - STRIP.marker` — as the cap, so
+   the busiest column reaches the top of the band and the year labels are
+   still clear above it. The timeline's per-lane stubs keep the absolute scale
+   they have always had: they are rows being compared with each other, and the
+   map's band is one row over one set.
+
+### What a first visit with Portugal selected looks like now
+
+`docs/screens/m76-map-portugal.png`. The band over the map carries twenty-five
+columns in one stretch of the scale, the tallest of them reaching the top of
+the band's body; everywhere else the strip is empty. Nine of Portugal's own
+events are what those columns are, where the same picture on M75 drew
+thirty-three — the nine and the twenty-four of the ring — as a flat 3-to-5-pixel
+dusting the reader could not tell from the world's.
+
+The map beside it is unchanged, and that is on purpose: the ring is still
+drawn, the territories are still there, the card still lists everything inside
+the outline. What narrowed is the thing the owner pointed at.
+
+### What was removed from the masthead
+
+The two `<input type="number">` ends of the window, their labels, and the
+density hint between them. `windowPatch` went with them — it was the clamp for
+a typed pair of years and nothing types one now — and so did
+`densityColumns`, `DENSITY` and `tests/window-control.test.mjs`, which was
+those two functions and nothing else. `windowOf` keeps the clamp itself and
+`tests/m64.test.mjs` keeps its assertions.
+
+What is left in `#window-control` is two lines of text: **"N of N events in
+view"** with the pin that gives the world back, and the standing line. Neither
+was ever a control.
+
+Removing the hint reverses M75's deviation 1000, which kept it against the
+brief's permission on a measurement: two questions, two sets, and one of them
+on views the strip is not on. The measurement was right and is why it goes
+rather than in spite of it. The owner's next sentence was that the band does
+not look narrowed, and a corpus-wide profile on the same row as the years —
+seven columns before the click and seven after it — is one of the three
+candidates the M76 brief lists for exactly that. On the timeline the hint
+duplicated a view that has its own band and its own per-lane density strip, and
+on the graph it now describes a window the picture ignores.
+
+### What the timeline does for the window
+
+Nothing changed there. The timeline's own two-handled band is how the window is
+set on that view and has been since M60 made the timeline a view of its own: it
+is the same `window-band.js` the map's strip is built from, with the same
+shade, the same two handles, the same drag, wheel, arrow keys and
+double-click-to-a-decade. `tests/m75-browser.test.mjs` still holds the two
+bands to one window, now from a link rather than from a keystroke.
+
+On the map the band is the control. On the graph there is none, because the
+graph no longer draws the window — a reader who wants a period there zooms and
+pans (M61). `?from=` and `?to=` are unchanged on all three: a link still opens
+on its window.
+
+### What the graph draws now, and where its camera rests
+
+`docs/screens/m76-graph.png`, taken on `?from=1900&to=1999&view=graph` — the
+same narrow window `m74-graph-rest` was taken on, which is the point.
+
+Three rules went, and the arrangement with them:
+
+* **the shaded band is gone.** `layer-window` is not built, `.graph
+  .window-band` is not a rule in the stylesheet any more;
+* **nothing is drawn faded for falling outside a window.** Every `.graph
+  .faded` rule went with the class: the node, the stack, the cluster count, the
+  ring and the edge. A mark's title no longer ends *"— outside the window"*.
+  The map and the timeline still fade, and their rules are theirs;
+* **the arrangement is every event of `shown`.** From H4b until now it was the
+  window and one period either side, so an event a century away was not faded
+  but absent. On that link the graph laid out 32 nodes under M75 and lays out
+  **87** under M76 — the whole resting picture, from the Atlantic slave trade
+  to the legislative election of 2024, on a link whose window is one century.
+
+The lanes go with it: `arrangementOf` passes no window to `lanesFor`, because
+which lane an event is drawn in is weighted inside a window and the band would
+otherwise be silently reordering a picture that no longer obeys it. And the
+band leaves the arrangement's key, so moving it lays out nothing again — the
+promise panning, zooming, selecting and walking already made, now kept for the
+band too.
+
+The camera is one rule where there were two. **It fits what is drawn**: the
+whole of `shown` at rest, and the lens when there is one (M74), offered widest
+first and clamped between `MIN_ZOOM` and `FIT_ZOOM` as M74 left it. The window
+fit of deviation 54 — *a reader arriving on a narrow band should not have to
+hunt for it* — is gone, because a camera that opened on the band would be the
+window deciding the picture by the back door. `FIT_SHARE`, which was the share
+of the data a window had to be under before the graph zoomed at all, has no
+caller and is gone.
+
+### What first paint costs, against M75's numbers
+
+Median of nine cold loads of `?from=1900&to=1999` at 1440 × 900, cache off, one
+browser, one instrument, on this machine: `origin/m0` (M75, in a worktree) and
+this branch's head, measured in the same session.
+
+| | M75 | M76 |
+| --- | ---: | ---: |
+| first contentful paint | 32 ms (32–80) | 32 ms (32–60) |
+| load event | 206 ms (192–256) | 184 ms (174–228) |
+| requests to that frame | 116 (116–117) | 116 (116–117) |
+| JavaScript files | 85 | 85 |
+| JavaScript bytes | 1,126,173 | **1,122,903** |
+| all bytes | 6,248,616 | 6,244,014 |
+| marks on that frame | 15 | 15 |
+
+**No new file and no new request**, and the page is **3,270 bytes smaller** —
+the one deterministic number here: the two fields, the hint's markup and its
+drawing loop, `windowPatch`, `densityColumns` and the dead CSS, less what the
+new comments and `profileEvents` add back. First contentful paint and the load
+event both moved by less than their own spreads and neither is a claim; the
+band is built after the core has landed, long after the first paint, so there
+is no mechanism by which section 1 could have moved either.
+
+The absolute numbers do not compare with M75's own table (96 requests, 2.97 MB)
+because lane B's M42 has landed on `m0` since. Both columns here were measured
+on this machine, in one session, with the same instrument.
+
+**What section 3 costs is on the graph and not at first paint.** Time from
+navigation start to the graph's first node, median of seven cold loads of
+`?view=graph&from=1900&to=1910`:
+
+| | M75 | M76 |
+| --- | ---: | ---: |
+| to the first node | 297 ms (289–362) | 305 ms (280–338) |
+| nodes laid out | 32 | 87 |
+
+Nearly three times the picture for eight milliseconds inside the spread, which
+is the honest price of the owner's sentence. What H4b was buying is bought
+instead by `shown` — since M65 the main events at rest, not the corpus — and by
+I6's cull, which puts in the DOM only what falls inside the rectangle on
+screen.
+
+### Tests
+
+`tests/m76.test.mjs` (14) and `tests/m76-browser.test.mjs` (8), both written
+before the behaviour they judge. No test pins a count or a pixel: what is
+asserted is the profile over the selection's own events, the tallest column at
+the band's body or at the tick and never between them, no field in the
+document, an event outside the window drawn as one inside it, and the resting
+camera with every drawn node on the screen.
+
+Changed first, as the brief requires:
+
+* `tests/m74-browser.test.mjs` — *at rest the graph opens on the window* became
+  *at rest the graph opens on everything it draws, whatever the window says*:
+  two windows, one camera, no band, every node on the screen;
+* `tests/arrangement.test.mjs` — the three tests about the band and its margin
+  now say the opposite, which is the milestone;
+* `tests/m64.test.mjs` — the three files no longer ask **one function**; they
+  ask one *module*, and the map's band asks it the narrower question. Its
+  `windowPatch` test went with the fields;
+* `tests/m75.test.mjs` — the two tests about the hint and the one about the
+  fields were removed rather than re-pointed, and the comment where they were
+  says why;
+* `tests/m60-browser.test.mjs`, `tests/m75-browser.test.mjs`,
+  `tests/panel-browser.test.mjs` — everything that read the window *out of* a
+  field now reads it out of the band or the link;
+* `tests/window-control.test.mjs` — deleted.
+
+169 suites: 1,687 assertions pure, 225 in a browser, 0 failing, 0 skipped.
+`node tools/validate.mjs --index`: 10,653 records, 0 errors, 238 warnings —
+the same counts as on `origin/m0`, since this milestone writes no record.
+
+### Deviations
+
+**Lane A numbers from 1100 from this milestone.** M75's ran 999–1004 and lane
+B's M42 runs from 950 and had reached 1005: the two blocks overlap. The overlap
+is recorded, not rewritten (m76-brief §4).
+
+1100. **The band's profile is drawn at its own scale always, and not only
+      under a selection.** The brief's first candidate says *"the profile over
+      a selection is drawn at the selection's own scale"*. Two scales on one
+      control would mean the band's shape changed meaning when a reader
+      clicked, and it would leave the first thing anybody sees — the resting
+      band — the 3-to-6-pixel dusting that is the whole diagnosis. So it is one
+      rule: a profile is drawn at the scale of the set it is over. `density.js`
+      keeps the absolute scale as its default, because the timeline's per-lane
+      stubs are rows compared with each other and that is what makes them
+      comparable; the map's band is one row over one set and has nothing to
+      compare itself with.
+
+1101. **The profile is over the lens's own events and not over `shown`, which
+      the brief did not list as a candidate.** Ruling out candidate 3 found it:
+      selecting Portugal *is* a lens, and `shown` is the lens **plus its
+      one-hop ring** — nine events named, thirty-three drawn. The ring is
+      right in the picture and wrong under a band that says "Portugal". So the
+      band asks `lensView` for `kept` and the pictures keep the ring.
+      `emphasis.js`'s `shown` contract is untouched, as §4 requires, and
+      `bandEvents` is untouched too, so the masthead's count and the standing
+      line still count what the views draw.
+
+1102. **A walked chain's far end is in the picture and not in the profile.**
+      An implicit lens keeps what the reader has just clicked — the open event,
+      both ends of every walked step, an open horizon (`keptRegardless`) — and
+      those are in `shown` but not in `kept`. The brief's sentence is *"every
+      column of the band is Portugal's events and nothing else"*, and a step
+      walked out of an event is the reader's walk rather than the selection's
+      events. The map and the graph draw the chain as they always did.
+
+1103. **A profile whose busiest column holds one event is still the row of
+      ticks it was**, where the brief's test 2 says the profile "reaches full
+      height for its busiest century". Thirteen of `kingdom-of-portugal`'s
+      events fall one to a column at any width this band is drawn at; drawing
+      them all at the band's full height would be the picture claiming a heap
+      where there is a single record. The test says the property that is
+      actually true and is the one the diagnosis is about: the tallest column
+      is the band's body or the tick, and never the middling four-to-six
+      pixels the absolute scale produced.
+
+1104. **The masthead's density hint was removed everywhere and not only on the
+      map**, where §2 says "the masthead's density hint on the map". The
+      masthead is one bar across three views and a hint that appeared on two of
+      them would be a per-view masthead — a new thing to build and a new thing
+      to explain. It had nothing left to do on either: the timeline draws its
+      own band and its own density, and the graph ignores the window since §3.
+
+1105. **`arrangementKey` lost its `margin` parameter rather than keeping it
+      unused.** Nothing passes one now and a parameter that is always null is a
+      reader's question with no answer. The two callers are this file and
+      `tests/arrangement.test.mjs`, both changed in the same commit.
+
+1106. **The graph's lanes are chosen with no window at all.** `lanesFor` takes
+      one to weight which actors get a lane and which band an event lands in
+      (lanes.js, untouched). A graph that draws every date and still ordered
+      its lanes by a window would have the band silently rearranging a picture
+      that does not obey it — and would put the band back in the arrangement's
+      key through the side door, which is the thing §3 removes. The timeline
+      still passes its own.
+
+1107. **Three shot definitions were removed and their pictures kept**:
+      `m74-graph-rest`, `m75-map` and `m75-map-phone`. All three photograph
+      rules this milestone replaced. Re-pointing one would have left a sentence
+      in `screens.mjs` describing something else and deleting the PNGs would
+      have thrown away the only record of what M74 and M75 looked like — which
+      is deviation 997's own reasoning, three milestones later.
+
+1108. **The first-paint table is a fresh before/after on this machine and not a
+      comparison with the numbers in M75's own table.** Lane B's M42 has landed
+      on `m0` since M75 was measured, so the corpus behind both columns here is
+      larger than the corpus behind M75's; what transfers is the question, so
+      both columns were measured here, in one session, on `origin/m0` in a
+      worktree and on this branch's head.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -15432,3 +15737,5 @@ M74 started 2026-09-21T06:28:33Z by scheduled
 M74 done
 M75 started 2026-09-21T10:18:34Z by scheduled (branch m75)
 M75 done
+M76 started 2026-09-21T13:05:03Z by scheduled (branch m76)
+M76 done

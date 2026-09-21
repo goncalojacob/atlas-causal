@@ -558,34 +558,49 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&view=graph&narrative=how-the-colonial-war-ended-the-regime',
     width: 1440, height: 900,
     what: 'the colonial-war walk framed on the graph: twelve steps, every one of them on the screen' },
-  // And the same view with nothing asked of it, on the window the atlas opens
-  // at — the picture `m65-graph-rest` and `m60-graph` were taken of, and the
-  // one this milestone promises not to have touched.
-  { name: 'm74-graph-rest', page: 'docs/screens/frame.html',
-    query: '?w=1440&h=900&from=1900&to=1999&view=graph',
-    width: 1440, height: 900,
-    what: 'the graph at rest, opening on its window exactly as it did before there was a frame' },
+  // M74's second picture, `m74-graph-rest`, and M75's two, `m75-map` and
+  // `m75-map-phone`, were definitions here until M76 and their files are still
+  // in `docs/screens/`. All three photograph rules this milestone replaced —
+  // the graph opening on the window, and the band's profile at the corpus's
+  // absolute scale beside two number fields — so re-pointing a definition at
+  // the new picture would leave a sentence describing something else, and
+  // deleting the PNGs would throw away the only record of what M74 and M75
+  // looked like. The definitions went, the files stayed, and the four below
+  // are what the same views show now. (Deviation 997's rule, applied again.)
 
-  // M75. The owner, 21 September: "The dates two-handled band should not be
-  // hidden." So there is nothing to arrange and nothing to ask for: the query
-  // is the window and the size, exactly as a reader's own link would be, and
-  // the band is in the picture because it is always in the picture.
+  // M76. Three instructions from the owner on 21 September, one picture each
+  // and a phone.
   //
-  // The same window as M60, M61, M64 and M65, so that six runs' pictures of
-  // the map go side by side; what differs from `m64-map-closed` is the whole
-  // of this milestone, and what differs from `m64-map-open` is that nobody
-  // pressed anything.
-  { name: 'm75-map', page: 'docs/screens/frame.html',
+  // The first: *"If for example I select portugal, the map timeline I use to
+  // pick the dates should show only those events."* Nothing in the query but
+  // the actor — no window, no view — because the band following the selection
+  // is the whole of what is being photographed.
+  { name: 'm76-map-portugal', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&actor=portugal',
+    width: 1440, height: 900,
+    what: 'Portugal selected: every column of the band is Portugal\u2019s own events, drawn at Portugal\u2019s own scale' },
+  // The same map with nothing chosen, on the window M60, M61, M64, M65 and M75
+  // photographed, so the run's pictures of the map go side by side. What is
+  // different from `m75-map` is the whole of this milestone: a profile with a
+  // shape in it, and a masthead with no year to type into.
+  { name: 'm76-map', page: 'docs/screens/frame.html',
     query: '?w=1440&h=900&from=1900&to=1999',
     width: 1440, height: 900,
-    what: 'a first visit to the map: the band on it, two handles to sweep, and the map still the whole pane' },
-  // And the same on a phone, where the question was whether forty-four units
-  // over a 390-pixel screen is too much. It is not: the strip is what a thumb
-  // needs to find and hold, and the map keeps the rest of the screen.
-  { name: 'm75-map-phone', page: 'docs/screens/frame.html',
+    what: 'a first visit to the map: the band with a shape, and no field left in the masthead to type a year into' },
+  // And on a phone, where the fields were the hardest thing in the masthead to
+  // use and the band is the easiest.
+  { name: 'm76-map-phone', page: 'docs/screens/frame.html',
     query: '?w=390&h=844&from=1900&to=1999',
     width: 500, height: 844,
-    what: 'the same band in a 390 x 844 viewport: not hidden, not behind a button, and not a third of the screen' },
+    what: 'the same in a 390 x 844 viewport: the band is the control and there is nothing to type into' },
+  // The third: *"I think the graph can always show all dates, then one can
+  // zoom in and out and pan to look at different times."* The same narrow
+  // window `m74-graph-rest` was taken on, which is the point — the window is
+  // still in the link and the graph no longer obeys it.
+  { name: 'm76-graph', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=graph',
+    width: 1440, height: 900,
+    what: 'the graph on a window of one century: every date drawn in full, no shaded band, the camera fitting all of it' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

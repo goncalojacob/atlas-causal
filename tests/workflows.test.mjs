@@ -110,7 +110,9 @@ test('the index is built on main, and checked on a pull request that carries one
   // a `/on:\s*\n\s*pull_request:/` cannot see past.
   assert.match(validate, /^on:$/m);
   assert.match(validate, /^\s{2}pull_request:$/m);
-  assert.match(validate, /^\s{2}push:\n\s{4}branches: \['m\*'\]$/m);
+  assert.match(validate, /^\s{2}push:\n\s{4}branches: \['m\[0-9\]\*'\]$/m);
+  // `m*` matched `main` too, and ran this job on every merge beside deploy.yml.
+  assert.doesNotMatch(validate, /branches: \['m\*'\]/);
   // Never built and never committed here: that is deploy.yml's, on main, so
   // two open pull requests cannot conflict on the index.
   assert.doesNotMatch(validate, /build-index/);

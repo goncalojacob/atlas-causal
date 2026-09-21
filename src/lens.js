@@ -571,7 +571,12 @@ export function lensView(atlas, state) {
   const implicit = isImplicitLens(state);
   if (implicit) for (const id of keptRegardless(atlas, state)) shown.add(id);
   const value = {
-    foci, all, set, near, shown, implicit,
+    // `kept` is what the foci themselves name, both halves of it: the full and
+    // the merely related, and never the ring around them. It is `focusParts`'s
+    // own answer, carried out rather than recomputed by a caller that wants
+    // "the selection's own events" — which since M76 is the map band's profile
+    // (window-band.js, `profileEvents`).
+    foci, all, set, near, shown, kept, implicit,
   };
   if (state) held.set(state, { atlas, stamp, value });
   return value;
