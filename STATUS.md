@@ -13657,7 +13657,7 @@ batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
 every edge. **The milestone is not done**: §7 of the pool file says where it
 stands and what the next fire does.
 
-**Eighteen batches and a filing pass.** The pool before: 310 active events,
+**Nineteen batches and a filing pass.** The pool before: 310 active events,
 229 of them main, 362 active edges, a largest connected component of 254 and 23
 events with no edge. **After batch 17: 474 active, 370 main, 104 filed, 565
 edges, largest component 433, 3 with no edge.** **After the filing pass of
@@ -13665,7 +13665,8 @@ amendment A6: 477 active, 267 main, 210 filed**, the same 565 edges and the
 same largest component of 433, because a filing writes `parent` and `parent`
 takes no edge. **After batch 18: 493 active, 266 main, 227 filed, 578 edges,
 largest component 441, 8 with no edge** — the first batch under A6, and the
-main count comes out below where it found it. The one count that moved against the pass is **events with no
+main count comes out below where it found it. **After batch 19: 496 active,
+263 main, 233 filed, 580 edges, largest component 442**, on no import at all. The one count that moved against the pass is **events with no
 edge at all, 3 to 6**, and the three are the umbrellas themselves: M62's brief
 says an umbrella carries no edge, so each arrives at degree zero and the
 warning is the expected one.
@@ -14548,6 +14549,53 @@ the whole of it, with the two bare records and the one refusal.
      answers every time. `tools/import/wikidata.mjs`'s own backoff — 2, 4, 8,
      16 seconds over four retries — clears it too, which is why `--import`
      ran here without a change. Nothing in the tool was touched.
+### Batch 19 — the tombstone pass, and the filing that needs no new period
+
+The same fire as batch 18, after it was pushed, and **no import**: two edges,
+three tombstones back, two refused again, six main events filed. Corpus 493 to
+496, main 266 to **263**, largest component 441 to 442.
+
+`2021-myanmar-coup-d-etat --caused--> myanmar-civil-war` brings back both ends
+at once — the war's article opens on the coup — and they are a pair that
+reaches nothing else, which is batch 17's finding about a tombstone pass said
+again. `rose-revolution --inspired--> tulip-revolution` is the page the Tulip
+Revolution's reason asked for by name.
+
+**The filing half is the finding.** The filing pass wrote that there was no
+umbrella here for the seventeen European records of the Third Republic's span
+that are not Portugal's, and it was right about the *period* and wrong about
+the *filing*: six of the seventeen have a parent on disk already — the
+revolutions of 1989, the Yugoslav wars, the dissolution of the Soviet Union —
+named by the child's own `part of` on Wikidata and not by any judgement of
+this run. **A filing rule that asks each main event's item for `part of`,
+keeps the answers that are main events here and refuses the ones that would
+nest a second deep costs one API call**, and `docs/m42-pool.md` says to run it
+over the whole corpus before the next period is written.
+
+### Deviations
+
+1019. **Reinstating an M44b-era record can put an unread record on no
+     dashboard.** `2021-myanmar-coup-d-etat`'s `review` block carried flags
+     and **no `status`**, which is invisible while a record is retracted and
+     is the validator's `unread` warning the moment it is active again. The
+     repair is `review.status: draft`, which is what
+     `tools/migrate/backfill-standing.mjs` writes for exactly this shape, and
+     nothing else on the record was touched. **Every reinstatement from here
+     should check the block before it pushes**, because the queue is how the
+     dated exception is retired and a record outside it is outside that too.
+1020. **A browser test read the corpus on the day and typed a query the
+     corpus had stopped answering, and it was not load.** `tests/graph-browser.test.mjs`
+     picks the leaf with one link off `data/` — which is what its own comment
+     says it is for — and batch 18 moved that leaf to
+     `1893-franco-siamese-crisis`. The query was built as the id with the
+     dashes taken out; `fold()` lowers and strips diacritics and **leaves
+     punctuation alone**, so "1893 franco siamese crisis" matches nothing and
+     "1893 Franco-Siamese crisis" matches. The search was right and the query
+     was wrong, and the test now types the leaf's title. Deviation 1009 says
+     the browser deadline is the usual cause of a red check and this one was
+     not it: **the failure reproduced alone, in twelve seconds, on an empty
+     machine.** A red check is read before it is explained.
+
 1018. **No historical claim was written.** Every edge explanation is a
      paraphrase of a sentence the cited article carries at the cited revision,
      and every citation names the article, the revision and the section. Two

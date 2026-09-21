@@ -863,3 +863,51 @@ validator catches it and nothing else does.
    `earth-summit` and `aarhus-convention` as a pair, the ozone pair beside it,
    and no article naming one from the other. §7.4 stands, with the first half
    of its answer delivered — the *event* it asked for exists now.
+
+## Batch 19 — the tombstone pass, and where the filing can come from without a new period
+
+*21 September, the same fire as batch 18, after it was pushed.*
+
+| | |
+| --- | --- |
+| imported | 0 |
+| tombstones back | 3 |
+| tombstones refused again | 2 |
+| edges written | 2 |
+| main events filed | 6 |
+| corpus | 493 → **496** active |
+| **main** | 266 → **263** |
+| largest connected component | 441 → **442** |
+
+**No fetch bought any of this.** The three records were on disk as tombstones,
+the six filings were main events waiting for an umbrella the atlas already
+held, and the only network calls were the three articles read to argue two
+edges and the one call that read six items' `part of`.
+
+**The finding worth carrying forward is the filing half.** The filing pass
+wrote *"there is no such umbrella here yet and one is not invented: the pass
+refuses to write a period no article names"*, and it was right about the
+period and wrong about the filing. **Six of the seventeen European records it
+named have a parent here already** — not a period, but an event this atlas
+holds as a main record, named by the child's own `part of` on Wikidata. The
+revolutions of 1989 take the Romanian revolution and the Soviet coup attempt;
+the Yugoslav wars take the Croatian war, the Kosovo war and the Macedonian
+insurgency; the dissolution of the Soviet Union takes the Belovezh accords.
+**That is a filing rule a fire can run in ten minutes with one API call, and
+it invents nothing**: ask each main event's item for `part of`, keep the
+answers that are main events here, refuse the ones that would nest a second
+deep, and file. It should be run over the whole corpus before the next period
+is written.
+
+**And what it cannot do is worth saying too.** `revolutions-of-1989` is
+`part of` the **Cold War**, which M67 refused and A6 does not overrule;
+`yugoslav-wars` is part of the breakup of Yugoslavia and
+`dissolution-of-the-soviet-union` part of the revolutions of 1989, and acting
+on either would nest three levels. The rule stops where A6's one-deep clause
+does, and the seventeen are now eleven.
+
+**Two tombstones were read and refused again**, with the reason each still
+waits on: `libyan-civil-war-q16911838`, whose article never names the war of
+2011, and `sharpeville-massacre` with `soweto-uprising` from batch 18. Eleven
+live *"It waits on …"* clauses are left after this batch, and the scan that
+finds them is twenty lines over `data/events/*.json`.
