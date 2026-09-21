@@ -103,7 +103,12 @@ test('contribution.yml runs only on the maintainer label, with the scoped PAT', 
 
 test('the index is built on main, and checked on a pull request that carries one', async () => {
   const validate = await read(WORKFLOWS, 'validate.yml');
-  assert.match(validate, /on:\s*\n\s*pull_request:/);
+  // Under `on:`, and no longer the first thing under it: the two lanes of
+  // 21 September added `push: branches: ['m*']`, because a lane branch carries
+  // no pull request while it runs and a run that waits for its check needs one
+  // to exist. The trigger is what is asserted, not its position.
+  const triggers = validate.slice(validate.indexOf('\non:'), validate.indexOf('\nconcurrency:'));
+  assert.match(triggers, /^ {2}pull_request:$/m);
   // Never built and never committed here: that is deploy.yml's, on main, so
   // two open pull requests cannot conflict on the index.
   assert.doesNotMatch(validate, /build-index/);
