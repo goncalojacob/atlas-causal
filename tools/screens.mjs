@@ -411,6 +411,23 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=1400&from=1900&to=1999&view=timeline',
     width: 1440, height: 1400,
     what: 'a 1400 px window: the rows at their cap, and what the cap leaves rather than stripe the pane' },
+  // M68. The category switches on the timeline, which is the milestone: they
+  // were inside the map's legend, the legend is hidden here, and the filter
+  // they hold narrows these lanes (deviation 858). `open=` is the frame asking
+  // for the collapsed group — what a reader had open is not in the URL, for the
+  // reason the band's toggle is not.
+  { name: 'm68-timeline-categories', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=timeline&open=events-by-category',
+    width: 1440, height: 900,
+    what: 'the switches in the masthead over the lanes, one symbol a row, on a view that had none' },
+  // And the same view with one of them off, through the very link the control
+  // writes: the elections, which are 48 of the corpus's 78 categorised events,
+  // leave the lanes and the switch says which one did it.
+  { name: 'm68-timeline-narrowed', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=timeline&open=events-by-category'
+      + '&layers=land,territories,events:death,events:disaster,events:revolution,events:treaty,events:war',
+    width: 1440, height: 900,
+    what: 'the elections switched off from the lanes: the picture narrowed and the switch saying so' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
