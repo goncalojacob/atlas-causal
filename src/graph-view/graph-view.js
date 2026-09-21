@@ -28,6 +28,7 @@ import { renderKey, shardsArrived } from '../render-key.js';
 import { labelOf, LOADING_LABEL } from '../attributes.js';
 import { convergence } from '../graph.js';
 import { EDGE_TYPE_IDS } from '../vocab.js';
+import { CONFIDENCE_ORDER, CONFIDENCE_CLASS, bundleClass } from '../confidence.js';
 import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
 import { horizonBand } from '../horizon.js';
 import { workingSet, heldSet } from '../emphasis.js';
@@ -139,20 +140,28 @@ function classes(...list) {
 }
 
 // The key to the five line patterns, in the corner of the view that uses
-// them. Drawn with the very same classes the edges are drawn with, so the
-// key cannot come to disagree with the picture; about.html carries the same
-// six lines for the same reason. Outside the SVG, so panning and zooming
-// leave it where it is.
+// them, and — since M73 — to the ink that says how sure the atlas is of one.
+// Drawn with the very same classes the edges are drawn with, so the key
+// cannot come to disagree with the picture; about.html carries the same rows
+// for the same reason. Outside the SVG, so panning and zooming leave it
+// where it is.
 export function edgeKey() {
   const box = document.createElement('div');
   box.className = 'graph-key';
   const line = (type, extra = '') => `<svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true">
       <line class="edge type-${type} ${extra}" x1="1" y1="6" x2="50" y2="6"/>
       <polygon class="edge-head type-${type}" points="60,6 50,3 50,9"/></svg>`;
+  // The three confidences as three segments of one type, surest first: the
+  // dash is the type's and stays the type's, so what the reader is being
+  // shown here is the ink alone, which is the one thing this row is about.
+  const sureness = `<svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true">
+      ${CONFIDENCE_ORDER.map((confidence, i) => `<line class="edge type-caused ${CONFIDENCE_CLASS[confidence]}"
+        x1="${i * 21 + 1}" y1="6" x2="${i * 21 + 19}" y2="6"/>`).join('')}
+    </svg>`;
   box.innerHTML = `<h2>Links</h2><dl class="edge-key">
     ${EDGE_TYPE_IDS
       .map((type) => `<dt>${line(type)}</dt><dd>${type}</dd>`).join('')}
-    <dt>${line('caused', 'disputed')}</dt><dd>any type, disputed</dd>
+    <dt>${sureness}</dt><dd>how sure: ${CONFIDENCE_ORDER.join(', ')}</dd>
   </dl>`;
   return box;
 }
@@ -712,8 +721,9 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
 
     // One line per pair of marks. A line carrying several links is drawn in
     // the commonest of their types, heavier for how many it carries, and
-    // dashed as disputed if any single one of them is — a bundle the reader
-    // must not read as settled (cluster.js).
+    // inked as the least sure of them — a bundle one of whose links
+    // historians argue about is a bundle the reader must not read as settled
+    // (cluster.js, and confidence.js for all three levels of it).
     const stackByKey = new Map(stacked.nodes.map((stack) => [stack.key, stack]));
     edgesGroup.replaceChildren();
     for (const line of stacked.edges) {
@@ -726,7 +736,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       const faded = !stackInWindow(stackByKey.get(line.from)) || !stackInWindow(stackByKey.get(line.to));
       const marks = classes(
         `type-${line.type}`,
-        line.disputed ? 'disputed' : '',
+        bundleClass(line.members),
         faded ? 'faded' : '',
         any(chainEdgeIds) ? 'chain' : '',
         any(consequenceIds) ? 'consequence' : '',

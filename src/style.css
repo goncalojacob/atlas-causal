@@ -965,7 +965,6 @@ body:not(.phone) .layout.panel-empty.composing {
 .map .spread-leg { stroke: var(--cobalt-soft); stroke-width: 0.8; vector-effect: non-scaling-stroke; }
 .map .edge { stroke: var(--cobalt-soft); stroke-width: 1.2; vector-effect: non-scaling-stroke; fill: none; }
 .map .edge.chain { stroke: var(--madder); stroke-width: 2; }
-.map .edge.disputed { stroke-dasharray: 5 4; }
 
 /* Outside the window, but still drawn because the reader is working with it:
    the walked path, the selected event, an actor's events. Greyed, not
@@ -1002,13 +1001,39 @@ body:not(.phone) .layout.panel-empty.composing {
 .map .ring.in-horizon.far { opacity: 0.45; }
 .map .ring.in-horizon.on-path, .map .ring.in-horizon.selected { opacity: 1; }
 
+/* --- how sure the atlas is, on the line -------------------------------- */
+
+/* Every line that stands for an edge carries one of these three, spelled by
+   `src/confidence.js` and by nothing else. Written without a view in front
+   of them on purpose: the graph's edges and the map's walk lines are two
+   pictures of the same records, and they must not be able to disagree about
+   which link is the shaky one (M73).
+
+   Type owns the dash pattern and the weight — that is what the tokens under
+   "graph view" below are — so confidence takes the dimension that is left:
+   how solidly the line is inked. `stroke-opacity`, and not the `opacity`
+   the emphasis states already use, because two rules writing one property
+   would have the reader's own picture erase the atlas's confidence in it, or
+   the other way about. These two multiply instead, which is the reading
+   wanted: a disputed link outside the window is outside the window *and*
+   doubtful. `fill-opacity` beside each, for the arrowhead — a filled polygon
+   and not a stroke — which carries its line's classes so that it fades,
+   reddens and doubts with it.
+
+   No colour of its own. The atlas has one accent and it belongs to the path
+   being followed; how sure a link is is not an accent, it is how much ink
+   the line was worth. */
+.edge.confidence-consensus, .edge-head.confidence-consensus { stroke-opacity: 1; fill-opacity: 1; }
+.edge.confidence-probable, .edge-head.confidence-probable { stroke-opacity: 0.7; fill-opacity: 0.7; }
+.edge.confidence-disputed, .edge-head.confidence-disputed { stroke-opacity: 0.34; fill-opacity: 0.34; }
+
 /* --- graph view ------------------------------------------------------- */
 
 /* The five edge types are told apart by the pattern of the line and its
    weight, both from these tokens, so the key in about.html has one place to
    agree with. Not by colour: the atlas has one accent and it belongs to the
-   path being followed. A disputed edge is dashed whatever its type, as it is
-   everywhere else, and its type then reads in the weight alone. */
+   path being followed. How sure the atlas is of a link is said above and in
+   ink, so no type's dash is ever taken away from it to say something else. */
 :root {
   --edge-caused: none;
   --edge-caused-width: 2;
@@ -1042,7 +1067,6 @@ body:not(.phone) .layout.panel-empty.composing {
 .graph .edge.type-reacted-to { stroke-width: var(--edge-reacted-to-width); stroke-dasharray: var(--edge-reacted-to); stroke-linecap: round; }
 .graph .edge.type-precondition-of { stroke-width: var(--edge-precondition-of-width); stroke-dasharray: var(--edge-precondition-of); }
 .graph .edge.type-inspired { stroke-width: var(--edge-inspired-width); stroke-dasharray: var(--edge-inspired); }
-.graph .edge.disputed { stroke-dasharray: 5 4; opacity: 0.75; }
 /* A line carrying several links. After the type rules and at the same
    specificity, so it is the one that decides the width; the dash pattern is
    still the type's, because what the links are is not what merging changed.
