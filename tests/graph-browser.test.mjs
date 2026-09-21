@@ -601,7 +601,15 @@ async function hubAndLeaf() {
   assert.ok(hub && hub[1] >= 3, 'the corpus has a hub');
   assert.ok(leaf, 'and a leaf with one link');
   const edge = corpus.edges.find((e) => e.status === 'active' && (e.from === leaf[0] || e.to === leaf[0]));
-  return { hub: hub[0], leaf: leaf[0], edge: edge.id, degree };
+  // What a reader would type to find the leaf, which is **its title** and not
+  // its id with the dashes taken out. The two are the same word for word for
+  // most records and are not for any record whose title carries a hyphen of
+  // its own — `1893 Franco-Siamese crisis` became the leaf in M42 batch 18 and
+  // "1893 franco siamese crisis" matches nothing, correctly: `fold()` lowers
+  // and strips diacritics and leaves punctuation alone, so the hyphen in the
+  // title is still there. The search was right and the query was wrong.
+  const title = corpus.events.find((e) => e.id === leaf[0])?.title ?? leaf[0].replace(/-/g, ' ');
+  return { hub: hub[0], leaf: leaf[0], leafTitle: title, edge: edge.id, degree };
 }
 
 const DRAWN_IDS = "return [...document.querySelectorAll('svg.graph circle.node[data-id]')].map((el) => el.dataset.id);";
@@ -646,7 +654,7 @@ test('the degree floor hides a leaf and keeps the hubs, and the reader moves it'
 });
 
 test('a filtered-out event is still searched for, still walked to, and still kept by a lens', { skip }, async () => {
-  const { leaf, edge } = await hubAndLeaf();
+  const { leaf, leafTitle, edge } = await hubAndLeaf();
   await withBrowser(async (page, url) => {
     await watchErrors(page);
     await seenIntro(page);
@@ -664,7 +672,7 @@ test('a filtered-out event is still searched for, still walked to, and still kep
     await open(page, url('?view=graph'), drawnGraph);
     await waitFor(page, "return !document.getElementById('search-results').hidden === false || true;", 'the box');
     await page.eval(`const box = document.getElementById('search-input');
-      box.value = ${JSON.stringify(leaf.replace(/-/g, ' '))};
+      box.value = ${JSON.stringify(leafTitle)};
       box.dispatchEvent(new Event('input', { bubbles: true }));
       return true;`);
     await waitFor(
