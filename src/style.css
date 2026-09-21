@@ -287,6 +287,10 @@ input, select, textarea { accent-color: var(--cobalt); }
    value and it is up there at `:root`. The coastlines have no row and so no
    swatch: they are always drawn (plan decision 14). */
 .bar .layers .swatch { width: 1em; height: 1em; flex: 0 0 auto; align-self: center; }
+/* The bands are a ramp and not a colour, so their swatch is the ramp: the same
+   token the map draws them in, lightest at the foot and darkest at the head,
+   which is the order the five heights are in. */
+.bar .layers .swatch-relief { background: linear-gradient(to top, var(--land), var(--ink-soft)); opacity: 0.55; }
 .bar .layers .swatch-rivers { height: 0.5em; border-bottom: 2px solid var(--cobalt-soft); }
 .bar .layers .swatch-lakes { background: var(--cobalt-faint); border: 1px solid var(--cobalt-soft); }
 .bar .layers .swatch-physical { height: 0.5em; border-bottom: 1px dashed var(--line); }
@@ -767,6 +771,37 @@ body:not(.phone) .layout.panel-empty.composing {
    ambas era desenhar duas margens (M36a; emenda A2 do briefing de M37). */
 .map .layer-base { pointer-events: none; }
 .map .layer-land.near-coast .land { stroke: none; }
+/* M45b, the elevation bands. Five heights — 0–200 m, 200–500, 500–1000,
+   1000–2000, above 2000 — cut out of the committed grid as polygons
+   (tools/import/elevation.mjs) and drawn **under everything else the map
+   draws**: this is the one layer with a fill across open land, so the
+   coastline, a river, a lake, a desert and every frontier pass over it.
+
+   **One token at five opacities, and no new hex value.** A hypsometric ramp
+   is a single quantity said five times, so it is one colour said five times:
+   --ink-soft, which is neutral and therefore competes with none of the eight
+   territory hues, with cobalt or with madder — a relief map in a colour would
+   have been a second palette, and this atlas has a palette. The five are
+   spaced to be **equal steps in OKLab over --land**: 0.034 apart, against the
+   ~0.02 at which a large flat field stops being tellable from its neighbour,
+   so all five can be told apart and the reader can count them.
+
+   What the darkest one still leaves legible, measured over it (and asserted in
+   tests/contrast.test.mjs): an event mark at 4.70:1, a label at 7.71:1, the
+   walked chain at 3.19:1, a peak at 3.31:1, and a territory's wash 0.049 in
+   OKLab — every one of them above the floor the palette was built to.
+
+   **Fill and no stroke.** A band is cut into cell files at the grid the base
+   map is sharded on, and a stroked ring cut at a cell border draws a line
+   along that border — a ridge that does not exist (M36 review, F1). The edge a
+   reader sees is the edge between two tints, which is the edge that matters:
+   it is what a frontier can be seen to sit on. */
+.map .layer-base-relief path { stroke: none; fill: var(--ink-soft); }
+.map .layer-base-relief path.band-0 { fill-opacity: 0.075; }
+.map .layer-base-relief path.band-1 { fill-opacity: 0.155; }
+.map .layer-base-relief path.band-2 { fill-opacity: 0.23; }
+.map .layer-base-relief path.band-3 { fill-opacity: 0.305; }
+.map .layer-base-relief path.band-4 { fill-opacity: 0.38; }
 .map .layer-base-coast path { fill: none; stroke: var(--cobalt); stroke-width: 0.6; vector-effect: non-scaling-stroke; }
 .map .layer-base-rivers path { fill: none; stroke: var(--cobalt-soft); stroke-width: 0.5; vector-effect: non-scaling-stroke; }
 .map .layer-base-lakes path { fill: var(--cobalt-faint); stroke: var(--cobalt-soft); stroke-width: 0.5; vector-effect: non-scaling-stroke; }
