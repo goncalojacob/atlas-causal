@@ -2927,10 +2927,18 @@ browser suites one at a time as the check runs them (M63). No map library, no
 tiles, no raster, no new runtime dependency, no build step, no new hex value or
 token or type size. Every picture `tools/screens.mjs` rewrites that is not
 M45b's was restored. Nothing pushed to `m0` or `main`; `docs/drafts/` ignored.
-Deviations **976 to 987**.
+Deviations **976 to 989**.
 
-**One thing the owner should know about the run itself.** Two scheduled runs
-worked `m45b` at the same time — this one claimed it at 02:16 UTC and a second
-began pushing at 02:52 without honouring the claim. Nothing was lost: the two
-were merged rather than one overwriting the other, and this branch carries both
-sides' work. But the second trigger is worth switching off.
+**One thing the owner should know about the run itself**, and it is deviation
+988. Two runs built this milestone at once on one branch with no channel
+between them — nine commits in fifty minutes. **Nothing was lost**: every
+rejected push was answered by taking the other side's work whole and keeping
+only what this side had that it did not, and one commit is an explicit merge
+that says so. It was paid for in duplicated work: three of the tests the
+seventh layer broke were fixed twice, several screenshots were taken twice, and
+two `## M45b` sections were written of which the fuller was kept and the
+other's paragraphs grafted in. The collision was found by a rejected push and
+not before it, because the two containers cannot see each other. **The claim
+line needs to name the runner, not only say that the lane is held** —
+`M45b started <instant> by scheduled` was true of both of them — and one of the
+two triggers is worth switching off.
