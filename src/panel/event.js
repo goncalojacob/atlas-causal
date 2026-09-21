@@ -19,6 +19,10 @@ import { eventsOfFocus } from '../lens.js';
 import { largeEvent } from '../large.js';
 import { sectionHtml, openSection } from './sections.js';
 import { EDGE_TYPE_LABEL } from '../vocab.js';
+// How far this record has been read, in one line (M70). The slot goes in the
+// card's head and is filled when the record's own file lands, because the core
+// row a card is built from carries no signature.
+import { standingSlot, fillStanding } from '../standing.js';
 
 // What a card calls each edge type, from the one list of them (vocab.js).
 export const TYPE_LABEL = EDGE_TYPE_LABEL;
@@ -410,6 +414,7 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
       ${actorChipsHtml(ctx, event, highlightedActor?.id ?? null)}
       ${drawnHtml(ctx, event, state)}
       ${largeEventHtml(ctx, event)}
+      ${standingSlot()}
       <div class="head-links">${ctx.entryLink('event', event.id)}${ctx.wikipediaHtml(event)}${ctx.discussLink('event', event.id)}</div>
     </header>
     <section class="summary" data-slot="summary"><p class="muted">Loading…</p></section>
@@ -427,6 +432,11 @@ export function renderEventCard(ctx, { container, event, found, state, mine, rem
     (rec) => {
       if (!ctx.isCurrent(mine)) return;
       container.querySelector('[data-slot="summary"]').innerHTML = `<p>${esc(rec.summary)}</p>`;
+      // Who has read this, from the record's own `review` block — the same
+      // fields the validator counts and the masthead's count is built from
+      // (standing.js). It waits for the file, like the summary, because the
+      // core row a card is built from carries no signature.
+      fillStanding(container, rec);
       // No sub-heading: the section's own header already says "Sources".
       container.querySelector('[data-slot="sources"]').innerHTML = rec.sources?.length
         ? ctx.citationsHtml(rec.sources, '', rec)

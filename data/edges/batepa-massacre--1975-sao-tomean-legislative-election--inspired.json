@@ -13,20 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-21",
   "origin": {
     "tool": "assistant"
   },
   "review": {
     "status": "draft",
     "flags": [
-      "edge-drafted"
+      "edge-drafted",
+      "m72-second-source"
     ]
   },
   "sources": [
     {
       "source": "macqueen-1997-decolonization",
       "locator": null
+    },
+    {
+      "source": "seibert-2005-comrades-clients-and-cousins",
+      "locator": "pp. 66–82"
     }
   ],
   "from": "batepa-massacre",

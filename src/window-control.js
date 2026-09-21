@@ -39,6 +39,7 @@ import { columnHeight } from './density.js';
 import { workingSet, heldSet } from './emphasis.js';
 import { bandEvents, windowOf } from './window-band.js';
 import { eventsInView } from './util/viewport.js';
+import { readCount, readCountText } from './standing.js';
 
 // The hint's own box, in the units of its `viewBox`. Not a token and not a
 // type size: it is the geometry of a drawing, like the eleven pixels of a lane
@@ -121,6 +122,9 @@ export function createWindowControl(group, { atlas, state }) {
     <p class="window-view" hidden>
       <span class="window-count"></span>
       <button type="button" class="pin" title="Draw every event again, wherever the map is looking">show the world</button>
+    </p>
+    <p class="window-standing">
+      <span class="window-read" title="How many of the events in view a person has read and signed. Nothing here changes what is drawn: a draft is drawn exactly as a signed record is."></span>
     </p>`;
 
   const ends = {
@@ -130,6 +134,7 @@ export function createWindowControl(group, { atlas, state }) {
   const hint = group.querySelector('.window-density');
   const view = group.querySelector('.window-view');
   const count = group.querySelector('.window-count');
+  const read = group.querySelector('.window-read');
   const pin = group.querySelector('.pin');
 
   // How the corpus is spread over the centuries, counted once at build and not
@@ -192,15 +197,24 @@ export function createWindowControl(group, { atlas, state }) {
   // same two files (emphasis.js, viewport.js) — and computed only while the
   // map is looking at part of the world, so a reader who has never moved the
   // map pays nothing for it, at first paint or after.
+  //
+  // It returns the events themselves and not only the two numbers, because
+  // the standing line below counts over the very same array: "how many of
+  // these have been read" and "how many of these are in view" asked of two
+  // different sets would be two pictures of the corpus in one bar (M70).
   const countInView = (s) => {
     const working = workingSet(atlas, s);
     // The same function the lanes and the strip over the map draw from
     // (window-band.js): a count said against one picture of the corpus and a
     // band drawn over another would be two answers to one question.
     const inLens = bandEvents(atlas, s);
+    // Only while the map is looking at part of the world: with no box every
+    // event of the picture is in view, and the intersection would be a pass
+    // over the places for an answer that is already in hand.
+    if (!s.bbox) return { events: inLens, shown: inLens.length, whole: inLens.length };
     const held = heldSet(working, { reachable: true });
     const shown = eventsInView(inLens, s.bbox, atlas.places, { keep: held, regions: atlas.regionBoxes });
-    return { shown: shown.length, whole: inLens.length };
+    return { events: shown, shown: shown.length, whole: inLens.length };
   };
 
   function render(s, { force = false } = {}) {
@@ -218,10 +232,22 @@ export function createWindowControl(group, { atlas, state }) {
     }
     drawHint(window);
     view.hidden = !s.bbox;
+    const n = countInView(s);
     if (s.bbox) {
-      const n = countInView(s);
       count.textContent = `${n.shown} of ${n.whole} ${n.whole === 1 ? 'event' : 'events'} in view`;
     }
+    // **How much of what is on screen a person has actually read** (M70).
+    // Beside the count above and counted over the very same events, from the
+    // `reviewed` column the index carries — which is `standing.js`'s own
+    // answer, written at build time, and the same function a card's line is
+    // written by. The two cannot disagree because they are one predicate.
+    //
+    // It is said whether or not the map is looking at part of the world,
+    // where the count above is not: "12 of 40 in view" is about a gesture the
+    // reader made and is nothing until they make it, and "0 of 242 read" is
+    // about the corpus and is true from the first frame. It is honesty and
+    // never a filter — nothing here decides what is drawn.
+    read.textContent = readCountText(readCount(n.events));
   }
 
   state.subscribe(render);

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "seibert-2005-comrades-clients-and-cousins",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "Gerhard Seibert"
+  ],
+  "title": "Comrades, Clients and Cousins: Colonialism, Socialism and Democratization in São Tomé and Príncipe",
+  "year": 2005,
+  "publisher": "Brill",
+  "isbn": null,
+  "doi": null,
+  "url": "https://search.worldcat.org/search?q=Comrades+Clients+and+Cousins+Seibert",
+  "accessed": null,
+  "container": null,
+  "repository": null,
+  "reference": null
+}

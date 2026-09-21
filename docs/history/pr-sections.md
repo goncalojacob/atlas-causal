@@ -2507,3 +2507,94 @@ Lane A's first milestone, on its own branch `m68` (run protocol, amendment of 21
 **Checks.** `node tools/validate.mjs --index`: **10,638 records, 0 errors**, the same **1,213 warnings**, index byte-identical — nothing under `data/` was touched. **No record and no historical claim. No new hex value, token or type size**: the stylesheet gained selectors and not values. Two screenshots under `docs/screens/m68-*.png` — the switches open over the lanes, and the elections switched off from there through the very link the control writes — taken with `--only`, so **every other picture under `docs/screens/` is untouched**. `docs/screens/frame.html` gained an `open=<id>` parameter beside its `band=` and `zoom=`, because a `<details>` opens on a click or on an anchor and neither is in the URL the atlas keeps. Nothing pushed to `m0`; `docs/drafts/` ignored.
 
 **One wart preserved on purpose.** With every category switched off, the events row is unticked and ticking it does nothing — the row writes the events half from the categories, which are all off, so no token is written and the box unticks itself on the next render. That is exactly what it did before this run, and "no new behaviour" is the brief's instruction. It belongs to whichever milestone decides what "everything off, now put it back" should mean.
+## M72 — every link carries the sources a reader can check
+
+Lane B's second milestone, on its own branch `m72` (run protocol, amendment of 21 September). The owner, 21 September: *"First I think each link should have sources associated with it, then I think the confidence visibility thing makes sense."* This is the first half; M73 is the second and waits on it.
+
+**The request was not sources where there are none.** All 362 active edges already named one. The measurement — `docs/m72-sources.md`, committed before a record was touched, out of `tools/m72-sources.mjs` so the table after is the same question asked twice rather than a retyping — said where the thinness actually was: **81 edges on a single source**, **149 more naming two or three that are all by one author** because the two Wikipedia editions are one encyclopedia and rule 9 counts them so, and **299 of 660 citations with no locator at all**.
+
+| | before | after |
+| --- | --- | --- |
+| edges resting on one source | **81** | **65** |
+| citations with a locator | **361** | **377** |
+| `consensus` / `probable` / `disputed` | **61 / 282 / 19** | **68 / 275 / 19** |
+| edges satisfying rule 9 | 132 | 148 |
+| source records | 35 | 50 |
+
+**Sixteen edges given a second source, sixteen locators written, seven promoted, none demoted.** No edge added, removed, redirected or retyped; no citation taken off anything; no explanation rewritten.
+
+### Nothing was promoted on this run's opinion of the claim
+
+The brief allows promotion "only where rule 9 is now satisfied" and "never by this run's own judgement of the claim", and those are two tests, not one. The one applied: rule 9 is satisfied by the work this run added, **and** the work is scholarship rather than an encyclopedia (so rule 22 holds for a reason and not by accident), **and the cited article hangs the very sentence stating this edge's link on that work**. The third clause is what keeps the run's opinion out of it — what promotes an edge is a second author stating the link, reached through the article's own footnote. Seven passed it: Caulfield 1995 p. 18 on the IRB electing in September 1914 to rise before the war ended; Mommsen 1996 p. 11 on the Emperor held responsible for the war's outcome; Upton 1980 pp. 62–144, "the main factor behind the Finnish Civil War was a political crisis arising out of World War I"; Burgwyn 1997 pp. 7–8 on Wilson holding Italian ambitions in check; Parker 1977 pp. 109, 115 on Brother Sam's disband order at 17:22 on 2 April; Eakin 1998 pp. 33–34 on the coffee industry's dependence on the traffic; Craton 1982 pp. 319–323 on the inquiries held because of the losses of 1831.
+
+**Nine edges took a source and kept the confidence a person had given them**, because the work answers the surrounding facts rather than the link — Hall 2000 says what Serbia was after the second Balkan war, not whether Vienna would have been refused once more, which is the doubt that edge's own explanation states. One of the nine is `disputed` and stays so: a second source does not settle a disagreement the record exists to hold open.
+
+**One promotion is worth naming.** `world-war-i --caused--> german-revolution-of-1918-1919` ends its explanation "it is marked probable rather than consensus only because this atlas holds no work of German history to cite" — the author naming what would change it. Mommsen 1996 is cited now, so that sentence is stale. **This run did not rewrite it**: a `review.note` says it is stale and why, and striking prose a person wrote is a person's to do.
+
+### Where the route runs out, which is most of the corpus
+
+Every one of the fifteen new source records is **a work the cited Wikipedia article itself cites** — the owner's decision of 16 September — read off that revision's own citation template: title, creators, publisher, year, ISBN or DOI, and the page range the article gives the work for the sentence in question. **Nothing was supplied from memory**; every ISBN's check digit was verified before the record was written; two works whose templates carry no identifier got a catalogue search URL, which is what this repository already does, rather than an invented one. Each article was fetched **at the revision the edge cites**, not at today's, so the footnote read is the one the locator already points at.
+
+Of the **65 edges still on one source, 53 already rest on a work of scholarship** — MacQueen on decolonisation (14), Telo on contemporary Portugal (13), Costa Pinto and Pequito Teixeira (7), Reis (4) — and Wikipedia cites nothing for those claims to put beside them. The English articles on Wiriyamu and Mueda are three-kilobyte stubs; "Transfer of sovereignty over Macau" and "Portugal and NATO" likewise. Where the Portuguese colonial war *is* covered at length, the work cited is **MacQueen's own 1999 Portuguese edition** — same author, so rule 9 refuses it, and different pagination, so it cannot even be borrowed as a locator. **The other twelve rest on `wikipedia-en` alone and are listed one by one in `docs/m72-sources.md` with the reason each gave nothing**, which for six of them is that the article is sourced to news reports. A news report is a fact somebody checked, not an argument somebody made, and citing one for a causal link would be padding.
+
+### The 299 locators that are still 299
+
+Not one moved, and the section says why rather than repeating the count. The split measured at the start was total and has not changed: every Wikipedia citation carries article and revision because the import wrote it that way; every book and primary document carries `null`. The brief's allowance — a locator "where the cited article makes it findable" — reaches almost nothing: **only 26 active edges carry both a located `wikipedia-en` citation and a bare one**, across 24 articles that are about the Spanish Civil War and the Maastricht Treaty and have no reason to cite Telo or Rosas. **These locators are in the books, not on any network**, and `review.html` is where somebody with Maxwell 1995 on a shelf writes "pp. 112–118". What the run could do instead was hold itself to the rule that every citation it *wrote* carries one, and all sixteen do.
+
+### Tests
+
+`tests/m72.test.mjs`, written before the records it judges (deviations 711 and 717): ten, **no count pinned and no edge named**. What this run touched is found by the flag it wrote — `m72-second-source` — so the suite still judges the sixty-sixth edge nobody has sourced yet. The property that already held and must still (every active edge names a source, every citation resolves); a citation this run wrote carries a locator, and an edge it gave a second source to has one by an author the first does not share; every `consensus` edge satisfies rule 9 and none rests on the encyclopedia alone; an edge this run marked `disputed` carries the dissent it found.
+
+**Two suites this run made red were fixed here.** `tests/bundle.test.mjs` round-trips every record through the contribution form and asks for the same bytes back: two new source records carried `container` keys set to `null`, and the form writes a container without the keys it has nothing for. `tests/site.test.mjs` asks that CLAUDE.md's layout tree name every module under `src/` and `tools/`; `tools/m72-sources.mjs` is a line there now.
+
+**Checks.** `node tools/validate.mjs --index`: **10,653 records, 5 regions, 0 errors**, **238 warnings** (240 before — two `source-unused` warnings went when two more sources were cited). **10,326 records nobody has read yet**; **11,077 of 11,077 citations not yet checked**. Tests: **1,625 pure and 196 browser, 1,821 in all, 0 failed and 0 skipped**, run the way the check runs them since M63. **No new edge, no removed edge, no changed direction or type. No invented source, page or date. No AI-written historical claim** — nothing in `data/` gained a sentence; the only prose this run wrote is a `review.note` about a record's own staleness and the two documents under `docs/`. **No new record type, confidence value, hex value, token or type size; no display change.** Records first, rebuild, then the index, four times over (deviation 798). Nothing pushed to `m0` or `main`; `docs/drafts/` ignored. Deviations **963 to 972**, lane B's block.
+## M70 — dead code out, standing in
+
+Lane A's second milestone, on its own branch `m70`. Two things the owner decided on 21 September, neither of them large and both of them about telling the truth: one piece of behaviour that had stopped happening and still had code, and one fact about the whole corpus that the interface had never said out loud.
+
+### 1. The fold is gone, and the ring is what is left
+
+M30b-2 gave the graph a **semantic level of detail** beside M25's geometric one: below a zoom an event's parts were drawn *inside* it, with a `+N` badge beside a filled mark and the links between folded parts dropped. M30c then gave a parent a **look** as well — the ring outside its mark, on all three views, at every zoom — precisely because the fold was a behaviour that stopped above its threshold and said nothing when it did. **M65 took the behaviour away and left the code**: at rest no view draws an event that is part of another, so there is nothing in the picture to fold, and inside a lens — which a selection now is — M25's never-hide rule holds everything the reader is working with out of any fold. `collapseLayout` returned its argument unchanged on every path a reader could reach, `tests/collapse.test.mjs` went on passing, and deviation 883 said so at the time. **The owner: "Remove it."**
+
+**Removed**: `src/graph-view/collapse.js` (128 lines), `tests/collapse.test.mjs` (nine tests holding a live rule to a dead behaviour), `COLLAPSE_ZOOM` in `layout.js`, the call and the import in `graph-view.js`, the `collapsed` class it wrote, the `+N` badge and its `data-collapsed` attribute, and the stylesheet rule that dressed the mark. `stackLayout` now runs on the layout itself.
+
+**What the graph does where it used to fold.** It draws the parent alone, ringed. The sentence the fold was making — *there is more inside this one* — is made twice over by what M65 and M30c already built: the resting rule says it by keeping the parts out of the picture until the reader opens the parent, and the ring says it on the mark, at every zoom and on the map and the timeline too. Opening the parent puts its parts beside it as their own nodes, which is where they were going anyway. `docs/screens/m70-graph-parent.png` is the Estado Novo — 25 parts, the most of any event in the corpus — showing exactly that.
+
+Two tests in `tests/graph-browser.test.mjs` were about the fold and are now about what is there. **`foldedTwice` went with it**: the helper counted the events a parent swallowed inside a stack that then swallowed the parent, eight of 250 on this corpus, and it existed because the arithmetic had to name a defect it could not fix. The promise is the plain one again — **every event the picture is of is a mark on the page or a unit in a badge, and there is no third place for one to be.**
+
+### 2. What has been read, said on the card and in the masthead
+
+**10,311 of 10,638 records are `draft` and 11,061 of 11,061 citations have never been opened against the source.** The atlas draws all of it by the owner's decision of 2 September, and that decision is right: a draft is a record nobody has read, not a record that is wrong. What was missing is that a **reader** could not tell — the validator has counted it down from the command line since H9, and a card said what a record claims and nothing about who, if anyone, had checked the claim. **The owner: "Add a standing marker, that's a good idea."**
+
+**One predicate, and that is the whole design.** `src/standing.js` is a leaf module beside `origin.js`; `hasBeenRead` reads a record's `review.status` where the record's own file is in hand, and the `reviewed` column where it is a row of `data/index/`. **The column is written by calling that same function at build time**, so the count in the bar and the line on the card are one function twice and cannot drift. The agreement is asserted record by record over the repository and the fixtures, and the positive case — a signature travelling from a record through `buildTopology`, `buildCore`, the count and the sentence — is asserted **in memory**, because nothing on disk is signed.
+
+**On the card**: one line under the head of the event, actor, place, office, narrative and source cards — *Unread: no person has checked this record*, or *Read by Ana Sousa (2026-09-03).* It is written into an empty slot when the record's own file lands, and the slot says nothing until then: a card that said "unread" while it was still loading would be making a claim it had not checked, which is the one thing this marker exists not to do. The source card says it at once, because a source's whole record is in the sources index.
+
+**In the masthead**: `N of N read`, beside the "N of N events in view" count and over the very same array that count is taken from. It is said whether or not the map is looking at part of the world, where the count beside it is not — "12 of 40 in view" is about a gesture the reader made and is nothing until they make it; "0 of 242 read" is about the corpus and is true from the first frame.
+
+**A citation nobody has checked already said so**: `panel.js` has drawn `unchecked` beside every unverified citation since the review dashboard, so that half of the brief was already built and nothing was added for it.
+
+**It is honesty and not a filter, and that is asserted rather than promised.** A draft is drawn exactly as a signed record is, no colour is spent on the difference, and a test reads `emphasis.js`, `lens.js`, `lanes.js`, `cluster.js`, `large.js` and `parts.js` and fails if any of them imports `standing.js` or names `hasBeenRead`. The three files the brief forbids touching were not touched.
+
+### What first paint costs
+
+**The same 94 files and eleven more bytes.** The `reviewed` column is last in the event's core row and absent on every record nobody has signed — which today is all of them — so the trailing trim takes it away and no row grows: the core is **169,817 bytes against 169,806**, and the eleven are `,"reviewed"` in the file's own `columns` list. The masthead's count is one pass over the array the count beside it already builds.
+
+Measured at 1440 × 900 against `origin/m0`, twenty loads each, the time from navigation to the first mark recorded **inside the page on the frame it appears**: **189 ms against 187**, spreads 165–234 and 167–243, medians. That is the same within the noise of the measurement, which is what "not slower" honestly means here.
+
+### Tests
+
+`tests/m70.test.mjs` (14) and `tests/m70-browser.test.mjs` (3), both written before the behaviour they judge (deviations 711 and 717), and **no test pins a count**. The removal is asserted **structurally** — no module under `src/` imports `collapse.js`, names `collapseLayout` or reads `COLLAPSE_ZOOM`, the file is gone, the graph writes no `collapsed` class and the stylesheet dresses none — because a behaviour that is gone cannot be tested by exercising it. The marker is asserted from a record and never from a count: what the sentence says for a draft, for a signature, for two signatures, for a record with no `review` block at all, for a name out of `data/` that has to be escaped before it is markup, and for the empty slot that claims nothing. **1,621 pure and 199 browser, 1,820 in all, 0 failed and 0 skipped**, run the way the check runs them since M63.
+
+### Checks
+
+`node tools/validate.mjs --index`: **10,638 records, 5 regions, 0 errors, 240 warnings**, and `--index` clean over the repository and over the fixtures. **10,311 records nobody has read yet; 11,061 of 11,061 citations not yet checked.** **No record and no historical claim. No new hex value, token or type size**: the stylesheet gained two selectors built from `--ink-soft`, `--text-xs`, `--font-ui` and `--space-1`, and no value. Two screenshots under `docs/screens/m70-*.png`, taken with `--only`, so **every other picture is untouched**. Nothing pushed to `m0` or `main`; `docs/drafts/` ignored. Deviations **921 to 931**.
+
+### Three things for the owner
+
+**`subtreeWeight` is now derived, carried by the index and drawn by nothing** — the fold was its only reader. It is left in place with a comment saying so, because removing a core column is a change to every `data/index/` file and this milestone had one of those already (deviation 928).
+
+**The standing line is on the cards and not on the prerendered entry pages** (deviation 929). Same line, same module; it rebuilds every `entry/<id>.html`, which is a small obvious follow-up and not this run's.
+
+**Every picture under `docs/screens/` taken before today shows a masthead without the read count** (deviation 930). The brief asked that no other picture be rewritten and none was; whichever milestone next re-takes the set will bring them up.
+

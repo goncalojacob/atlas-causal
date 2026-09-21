@@ -98,6 +98,15 @@ const KIND_COLUMNS = {
     col('parent', 'id', { absent: OMIT }),
     col('scope', 'vocab', { vocab: 'scope', absent: OMIT }),
     col('subtreeWeight', 'raw', { absent: OMIT }),
+    // Whether a person has read and signed this record (M70). Derived, like
+    // `citesCount`: `standing.js`'s own answer, written here so the masthead's
+    // count and the card's line are one function and not two.
+    //
+    // Last, and `true` or nothing: nought of 573 events are signed today, so
+    // on the real data every row's slot is null and the trailing trim takes it
+    // away — the column costs nothing at first paint until somebody starts
+    // signing, and then it costs one `true` per record they have read.
+    col('reviewed', 'raw', { absent: OMIT }),
   ],
   // The one kind whose row was already a row: `[from, to, type, confidence,
   // status, revised]` since H3a, and the first six slots are still those six in
@@ -285,6 +294,13 @@ const CORE_BY_KIND = {
     col('category', 'vocab', { vocab: 'category', absent: OMIT }),
     col('parent', 'id', { absent: OMIT }),
     col('subtreeWeight', 'raw', { absent: OMIT }),
+    // In the core and not in a shard, for the reason `category` is: the
+    // masthead counts what is in view on the frame the reader moves the map,
+    // and an attribute column arrives with its century — the count would be
+    // wrong for a moment and then right, which is a count saying something it
+    // has not checked. It is null on every event nobody has signed, so the
+    // trim carries it for nothing (M70).
+    col('reviewed', 'raw', { absent: OMIT }),
   ],
   // The tuple, less the one slot a card reads: `revised` is what a record's
   // file is asked for with, and `record()` waits for the shard that carries it

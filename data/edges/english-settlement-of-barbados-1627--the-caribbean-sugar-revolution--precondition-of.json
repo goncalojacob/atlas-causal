@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-21",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -21,13 +21,18 @@
   "review": {
     "status": "draft",
     "flags": [
-      "m50-chain"
+      "m50-chain",
+      "m72-second-source"
     ]
   },
   "sources": [
     {
       "source": "wikipedia-en",
       "locator": "\"History of Barbados\", revision 1368569649"
+    },
+    {
+      "source": "watson-1970-brief-history-of-barbados",
+      "locator": "pp. 30–38, 42, 44"
     }
   ],
   "from": "english-settlement-of-barbados-1627",

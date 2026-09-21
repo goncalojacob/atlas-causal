@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "eakin-1998-brazil-once-and-future-country",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "Marshall C. Eakin"
+  ],
+  "title": "Brazil: The Once and Future Country",
+  "year": 1998,
+  "publisher": "Palgrave Macmillan",
+  "isbn": "9780312214456",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "container": null,
+  "repository": null,
+  "reference": null
+}

@@ -428,6 +428,23 @@ export const SHOTS = Object.freeze([
       + '&layers=land,territories,events:death,events:disaster,events:revolution,events:treaty,events:war',
     width: 1440, height: 900,
     what: 'the elections switched off from the lanes: the picture narrowed and the switch saying so' },
+  // M70. The standing marker, on the card the atlas has been photographed with
+  // since M19 (`m19-event-card`), so the two can be laid side by side: the one
+  // line under the head saying nobody has read this record, and `0 of N read`
+  // in the masthead beside the window. Nothing else about the picture changes,
+  // which is the point — the marker is honesty and not a filter.
+  { name: 'm70-card-standing', query: '?selected=carnation-revolution-1974', width: 1440, height: 900,
+    what: 'a card saying in one line that nobody has read the record, and the masthead counting it' },
+  // And the graph where the fold used to fire. Below the zoom the semantic
+  // collapse worked at, a parent's parts were drawn inside it with a `+N`
+  // beside the mark; since M65 there were no parts in the picture to fold and
+  // since M70 there is no fold. The ring is what says there is more inside
+  // this one, and the Estado Novo — 25 parts, the most of any event in the
+  // corpus — is where a reader can see it saying so alone.
+  { name: 'm70-graph-parent', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=graph&selected=estado-novo-1933-1974',
+    width: 1440, height: 900,
+    what: 'a parent and its parts side by side: rings, no badge, and nothing folded into anything' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
