@@ -13685,6 +13685,23 @@ active events, `docs/m67-umbrellas.md` is asked to say why each bare main
 event was left bare — so the job restores `data/` and commits nothing, every
 time. Batch 4 was walked in this sandbox instead, through the same tool.
 
+**What was refused, and said out loud rather than worked around.** `Q33761`,
+the Arab Spring, for want of a lane the owner has not decided (975). The edge
+from the breakup of Yugoslavia into the Bosnian war, and the filing that goes
+with it, because Wikidata gives the breakup a point date of 27 April 1992 for
+a process its own article dates to the early 1990s and the war began on the
+6th — no imported date was widened, because that is a person's reading (989).
+`war-in-darfur`, because no page read here argues a line from Darfur to the
+South Sudanese referendum. `majimaji-war`, because joining the Berlin
+conference's aftermath to the Maji Maji article's cotton policy would be this
+run's inference and not anybody's page. A second edge out of
+`second-italo-ethiopian-war`, because its own aftermath names no event this
+atlas holds. Three of the fifty M44b withdrew, and three of its class C,
+which no bar reaches. **No historical claim was written**: every explanation
+is a paraphrase of a sentence the cited article carries at the cited revision,
+every citation names the article, the revision and the section, and no date
+was invented.
+
 **The finding this run turned on.** The brief's §2 is about the fifty M44b
 retracted. The bar of §1 is not about M44b, and the corpus holds 229
 tombstones: two hundred of M21's and M22's are Portuguese elections, bank
