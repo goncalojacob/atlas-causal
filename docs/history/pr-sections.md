@@ -2894,12 +2894,28 @@ the Cantabrian range and the Pyrenees are two bands higher, and the Portuguese
 frontier reads as what it is — rivers in the middle, high ground at the ends.
 **The Andes** (`m45b-relief-andes.png`): the top band runs the length of the
 western edge of the continent and the Chilean–Argentine border runs down it.
-That is the milestone's question answered: **the border is on the ridge, and
-the ridge is drawn.** The **Alps** (`m45b-relief-alps.png`) is the same
-argument on a narrower range and is where the limit above is visible. The
-**world** (`m45b-relief-world.png`) shows the bands quiet at the scale the
-atlas opens at, and `m45b-relief-bare-andes.png` is the ground without the
-hues over it. The comparison without the bands is not repeated: M45a's
+That is the milestone's question answered — **the border is on the ridge, and
+the ridge is drawn** — and it is also where the limit above is visible, because
+at 48° across the cordillera is a **narrow** band and under eight hues at 0.62
+it has to be hunted for rather than seen.
+
+Which is why two of the five pictures exist. The **Alps**
+(`m45b-relief-alps.png`) is the case where the ridge is **wide**, and it is the
+one picture in which the question is answered without having to be looked for:
+France, Switzerland, Austria and Italy meet on the top band, the Po valley is
+two bands below, the Jura and the Massif Central stand out of the plain as
+their own shapes. And **`m45b-relief-bare-andes.png`** is the Andes box with
+the territories off, which is the proof that the mottling is the wash and not
+the data — the cordillera is the top band the length of the continent, the
+Altiplano a broad mass of it, the Amazon basin the lowest, Patagonia between.
+A point-in-polygon check against the far file agrees with the picture: 70° W
+33° S is band 4, the Amazon at 60° W 3° S band 0, Lisbon band 0, and the
+Southern Ocean and the mid-Atlantic in no band at all.
+
+So the answer is **yes where a band is broad — the Alps, the Meseta, the
+Tibetan plateau — and barely where it is narrow and the zoom is continental.**
+The **world** (`m45b-relief-world.png`) shows the bands quiet at the scale the
+atlas opens at. The comparison without the bands is not repeated: M45a's
 `m45a-ground-iberia` and `m45a-ground-andes` are these very boxes with these
 very `?layers=` lists and `relief` absent.
 
@@ -2922,11 +2938,13 @@ time rather than committing four and a half megabytes of synthetic ground.
 `node tools/validate.mjs --index`: **10,653 records, 5 regions, 0 errors, 238
 warnings**, byte-identical to a fresh build. **No record changed and no
 historical claim was written** — elevation is geography. `node --test`:
-**1,668 pure and 214 browser, 1,882 in all, 0 failed and 0 skipped**, the
+**1,668 pure and 215 browser, 1,883 in all, 0 failed and 0 skipped**, the
 browser suites one at a time as the check runs them (M63). No map library, no
 tiles, no raster, no new runtime dependency, no build step, no new hex value or
-token or type size. Every picture `tools/screens.mjs` rewrites that is not
-M45b's was restored. Nothing pushed to `m0` or `main`; `docs/drafts/` ignored.
+token or type size. `src/layer-control.js` is untouched: the row comes from
+`manifest.base.layers`, which is the point of building the control from the
+manifest. No picture under `docs/screens/` was rewritten at all — M45b's five
+were taken one at a time with `--only`, so every other one is the file it was. Nothing pushed to `m0` or `main`; `docs/drafts/` ignored.
 Deviations **976 to 989**.
 
 **One thing the owner should know about the run itself**, and it is deviation
