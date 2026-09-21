@@ -14382,6 +14382,324 @@ Deviations **946 to 949** and **973 to 975**.
      with `layers=land,events`, through the very link the control writes.
 
 
+## M45b — the elevation bands
+
+The owner, 16 September: *"relief would help you understand how borders and
+territories move around geographical features."* M45a made the ground the base
+map already had legible — seventeen `FEATURECLA` classes into four families, a
+peak drawn at its height — and said what it could not do: there is no
+elevation model in Natural Earth's vectors, so nothing on the map said how
+high anything was. **This is the half that costs bytes.** Lane A's fifth
+milestone, on the branch `m45b`.
+
+The owner authorised the backlog on 20 September, which is the gate §2 put on
+this run (brief, amendment A2): M45b was to wait for the owner to have looked
+at M45a's two screenshots, and the word stands in for the look.
+
+### The source, and the one thing it does not say
+
+`vendor/elevation/etopo5-10min.i2`, committed by the owner's assistant on
+20 September: ETOPO5 averaged 2 × 2 to 10 arc-minutes, 2160 columns × 1080
+rows of int16 little-endian metres, no header, 4,665,600 bytes raw and 3.3 MB
+gzipped, well inside the 8 MB §2.1 allows a vendored grid. **The run does not
+download it and cannot**: it is read through `tools/import/source.mjs`, the
+sha256 of the decompressed bytes is checked against `vendor/SHA256SUMS`, and a
+test asserts that neither `tools/import/elevation.mjs` nor
+`tools/import/naturalearth.mjs` contains a `fetch` at all.
+
+What the file does not say in so many words is **which point a value is at**,
+and it is a half cell — 1/24°, about 4.6 km — either way: the centre of the
+2 × 2 block that was averaged, or the node the block starts at.
+`vendor/README.md` settles it without meaning to. It records the ground the
+grid was checked against before it was committed, and **node registration
+reproduces four of those spot checks exactly** — the Everest region 5,276 m,
+the Tibetan plateau 5,143 m, the Mariana Trench at 11° N 142° E −6,792 m, the
+mid-Pacific at 0°, 180° −5,228 m — where the half-cell reading gives 5,982 m
+for the first of them. So the value at (row, column) is the height at latitude
+90 − row/6 and longitude column/6, and `tests/m45b.test.mjs` holds it there
+against those very numbers.
+
+### Five bands, frozen before a tint was chosen
+
+**0–200 m, 200–500, 500–1000, 1000–2000, above 2000**, and below sea level is
+not a band — the Dead Sea and the Qattara depression are `physical` features
+and M45a draws them as hollows. They are `BAND_EDGES` in
+`tools/import/elevation.mjs`, they are carried into
+`manifest.base.layers[relief].bands` so that what the tints mean is readable
+off the manifest, and a test asserts all five from there.
+
+They are cut by **marching squares** over the grid, linearly interpolated at
+each crossing — which is what keeps a 10-arc-minute shore from being a
+staircase — with the field padded on four sides so that every contour closes
+into a ring rather than an open line somebody has to walk a boundary to shut.
+Two of those paddings are not decoration: a column at **exactly ±180°**, which
+is the same meridian carrying the same values, because the map's seam is 30° W
+and the antimeridian is in the middle of the picture, where a sixth of a degree
+of nothing would be a gap through the Bering Strait; and a row at **−90°**
+carrying the southernmost row down to the pole, because the grid stops at
+89.833° S and Antarctica does not.
+
+A crossing is named by the edge it lies on and not by its coordinates, so the
+two squares that share an edge agree about it to the bit and a ring closes
+without a tolerance.
+
+**A band is its own edge's rings plus the next edge's, drawn even-odd.** The
+ground above the next edge is inside both sets, so a renderer counting
+crossings leaves it unfilled — which is a hole, and a band with a hole in it
+is exactly the ground between two heights. The map already draws every
+base-map polygon with `fill-rule: evenodd`, for the island inside a lake, so
+nothing had to be added for it.
+
+### The layer
+
+`relief` is a base layer like the other six and almost nothing about it is
+special-cased: a row in `LAYERS` and a property table in
+`tools/import/features.mjs`, a cap in `CAPS`, a row in the layer control built
+from the manifest, a member of `?layers=`, `minZoom`, a far file and
+twenty-four cells on the same 6 × 4 grid, the same `--budget` reporting.
+
+Four things are its own.
+
+**It draws under everything else the map draws.** `map.js`'s `GROUND` list,
+which M45a made for the physical regions, is an order and not a flag now:
+`['relief', 'physical']`. Under the coastline, under the rivers, under the
+territories, under the marks. The land token beneath it is the paper this map
+is drawn on and not a layer — it is what a band is a tint *of* — so this is as
+far under as there is.
+
+**It is clipped into its cells, and it is fill with no stroke.** Every other
+polygon layer here arrives whole in each cell its bbox touches, because a
+clipped ring's cut edge would be a hairline along a cell border: a shore, or a
+mountain range, that does not exist. A band is one feature for the whole
+world, so whole features would put every band in every cell; it is clipped
+instead, and **nothing is stroked**, so there is no cut edge to draw. The edge
+a reader sees is the edge between two tints, which is the edge that matters.
+
+**It is ground and not a lens** (brief, A3). M65 made choosing an event a lens
+of one that hides the rest of the picture; the base layers are drawn from
+`state.layers` and know nothing of it, so the bands stay whatever is chosen. A
+browser test holds it.
+
+**It is off until a reader asks for it.** `DEFAULT_LAYERS` in `src/state.js` is
+`LAYERS` without `relief` — a second list beside the first, so that the default
+still writes no `?layers=` at all and `?layers=land,territories,relief,…` is
+what a reader gets when they switch the bands on.
+
+### The budget
+
+| layer | level | tolerance | bytes | cap |
+| --- | --- | --- | --- | --- |
+| relief | far | 0.4° | 365.7 KB | 400.0 KB |
+| relief | near | 0.005° | 4,714.8 KB | 5,600.0 KB |
+
+**The bands come to 4.96 MB of their own 6 MB ceiling** — 374,523 bytes for
+the far file and 4,827,962 for the twenty-four cells, 5,202,485 in all. The
+base map is **5.94 MB of its 8 MB** and is to the byte what it was before this
+run: the seven layers M36 and M37 wrote are unchanged, which `git status`
+said and a second run of the import says again. `du -sh data/geo` is **20M**;
+measured exactly, `data/geo/` is **19.30 MB of its 24 MB ceiling**, up from
+14.34 MB.
+
+**Nothing was coarsened at the near level.** It fits at 0.005°, which is the
+first rung of the ladder and finer than the grid itself, so every point the
+contouring produced is in the cells: the ridge under a frontier is the ridge
+the grid has, and no tolerance was spent to make it fit.
+
+**The far level was.** It is the whole world at k = 1, where a sixth of a
+degree is 0.44 of an SVG unit, and it took two things to fit 400 KB. The
+tolerance stepped to **0.4°**, which is the very tolerance the far coastline is
+drawn at. And it needed a **ring floor of its own** — `farMinArea: 0.2` square
+degrees, about 0.45° on a side and 1.2 units at k = 1 — because the far-level
+*feature* floor every other layer uses can never drop anything here: the bands
+are five features for the whole world, and what decides the bytes is the
+number of **rings**, which is four points and about thirty bytes of brackets
+each at any tolerance at all. What that drops, per band:
+
+| band | rings in the grid | kept at the far level | kept at the near level |
+| --- | --- | --- | --- |
+| 0–200 m | 2,191 | 404 | 2,055 |
+| 200–500 | 3,011 | 548 | 2,940 |
+| 500–1000 | 2,963 | 503 | 2,903 |
+| 1000–2000 | 1,930 | 291 | 1,869 |
+| above 2000 | 594 | 83 | 577 |
+
+So the world view has the shape of the continents' relief and not its
+freckles, and everything dropped comes back as soon as a cell lands. The near
+level's 4,714.8 KB is roughly 1,231 / 1,419 / 1,167 / 687 / 210 KB across the
+five bands: the middle bands cost most, because a band's rings are its own
+edge's and the next one's and the middle ones are long.
+
+**First paint costs nothing at all.** `relief` is off by default, so a first
+visit makes no request for it, at any zoom — a browser test asserts that for a
+`?layers=` list without it. Switched on, its far file goes out behind the same
+`defer` every other far file does — a frame, then a task — so
+`tests/spine-pages.test.mjs`, which holds every `geo/base/` request against the
+first contentful paint and needed no new list because it was always written
+over the whole directory, still passes.
+
+### What the palette could and could not express
+
+Five tints, one token at five opacities: `--ink-soft`, neutral, so it competes
+with none of the eight territory hues, with cobalt or with madder. No new hex
+value, no new token, no new type size. They are spaced to be **equal steps in
+OKLab over the land token** — 0.030 apart, against the ~0.02 at which a large
+flat field stops being tellable from its neighbour — so over bare ground all
+five can be told apart and a reader can count them.
+
+**0.33 on the top band is where the ramp stops, and the number is not taste.**
+It is the largest opacity at which every promise this atlas already made still
+holds over the band: a mark at 5.08:1, its label at 8.34:1 and the walked
+chain at 3.45:1 bare, and 4.43:1, 7.26:1 and 3.00:1 with the worst of the
+eight territory hues washed over it at 0.62. A darker ramp takes the chain
+under the 3:1 a line has to have. `tests/contrast.test.mjs` fixes it there.
+
+And here is what it cannot do, which is the honest half. **A territory wash is
+0.62 of a hue, so only 38 % of the ramp survives under one**: the 0.030 steps
+become 0.013, well under the 0.02 threshold, and under a territory a reader
+sees the trend and the top band rather than five countable steps. It is not a
+tint that can be fixed. Pushing the darkest to 0.62 — far past where the
+walked chain fails — would still only reach 0.021 under a wash. So the brief's
+escape hatch, "if five bands cannot be told apart, use fewer and say so", is
+not taken: five *can* be told apart, which is what the bands are for and what
+the bare-ground picture shows; what they cannot do is be counted through a
+frontier's own colour, and that is said here rather than answered by throwing
+two bands away.
+
+### The two places, and whether a border sits on a ridge
+
+`docs/screens/m45b-relief-iberia.png` and `docs/screens/m45b-relief-andes.png`,
+both **with the territories on**, which is the whole question, and
+`docs/screens/m45b-relief-world.png` for the planet. The comparison pair is
+already on disk and is not repeated: `m45a-ground-iberia` and
+`m45a-ground-andes` are these very two boxes with these very two `?layers=`
+lists and `relief` left out.
+
+**Iberia**: the Meseta stands out of the coastal lowland as a whole step, the
+Guadalquivir and the Ebro run through the lowest band as visible corridors, and
+the Cantabrian range and the Pyrenees are two bands higher along the top of the
+picture. The Portuguese frontier reads as what it is: **rivers in the middle —
+the Minho and the Douro cross the low bands — and high ground at the ends.**
+
+**The Andes**: the top band runs two thousand miles down the western edge of
+the continent and the Chilean–Argentine border runs down it. That is the
+milestone's own question answered: the border is on the ridge, and the ridge is
+drawn.
+
+What the pictures also show is the limit written above. Under the territory
+hues the ramp is a mottling rather than a ladder; the ground is legible as
+shape and not as five countable heights. At the world view the bands are quiet,
+which is what they should be at the scale the atlas opens at.
+
+### Deviations
+
+976. **The grid's registration is a reading the brief does not state, and it
+     had to be chosen.** "2160 columns × 1080 rows, row 0 at 90° N, column 0
+     at 0° E" does not say whether a value is at a node or at the centre of
+     the 2 × 2 block it averages, and the two differ by 4.6 km. Node
+     registration was taken because it reproduces `vendor/README.md`'s own
+     spot checks and the other reading does not. The test asserts the four
+     numbers from that file rather than the rule, so a future grid that
+     disagrees fails on the ground and not on a convention.
+
+977. **A band is drawn even-odd rather than nested, which costs about twice
+     the rings.** A band's geometry is its own edge's rings *and* the next
+     edge's, each as a single-ring polygon; the higher ground is a hole
+     because a renderer counting crossings makes it one. The alternative —
+     nesting each ring inside the outer ring it belongs to — needs a
+     point-in-polygon pass over half a million points to work out which ring
+     is inside which, and it draws the same picture. Both fit the ceiling, so
+     the cheaper one to be right about was taken.
+
+978. **`relief` is `clip: true`, which no other polygon layer here is, and
+     therefore fill with no stroke.** M36's rule is that a cell holds whole
+     polygons because a clipped ring's cut edge would be stroked along a cell
+     border. That rule is about the stroke. A band is one feature for the
+     world, so whole features would be the whole world in every cell; it is
+     clipped, and nothing is stroked, so the rule's reason does not arise.
+     The edge a reader sees is the edge between two tints.
+
+979. **`relief` is off by default, and `src/state.js` grew a second list.**
+     The brief says a base layer like any other and does not say which way it
+     starts. Off, for two reasons: it is 5 MB of ground that a first visit
+     should not spend, and it is the only layer that fills across open land,
+     so a map that opened with it on would be a relief map with a history
+     drawn on it rather than the other way round. That needs `DEFAULT_LAYERS`
+     beside `LAYERS` — `LAYERS` is still what a `?layers=` token may name and
+     the order the list is assembled in; `DEFAULT_LAYERS` is what the default
+     compares against, so the resting link stays empty and `relief` appears in
+     the link the moment it is switched on.
+
+980. **The grid's hash refuses under `--check` and warns without it, where the
+     brief says the run stops either way — and `--check` joined the documented
+     command line.** One rule for all eight sources rather than a special case
+     for the eighth: the fixtures this import is tested on are files with the
+     right names and deliberately the wrong contents, and a source that
+     stopped the run on a hash could never be exercised on one. What the brief
+     is actually protecting is the committed bands, and they are protected by
+     the stronger thing — `CLAUDE.md`'s command line for this import is now
+     `--check --budget`, and this run used it. A **missing** grid is still a
+     stop either way.
+
+981. **The far level needed a ring floor of its own, which no other layer
+     has.** `FAR_FLOORS` drops whole features and there are five features
+     here, so it could not bite; `farMinArea` on the layer row is the
+     coastline's `FAR_MIN_AREA` argument (deviation 605) for a layer whose
+     features are not one ring each. Without it the far level is 846.8 KB at
+     the coarsest tolerance the ladder has, over a 400 KB cap it could never
+     reach by simplifying.
+
+982. **"Underneath everything, including the coastline" is the position above
+     the land fill, and there is no lower one.** `.land` is an opaque fill of
+     the land token; a layer under it is a layer nobody sees. So the bands are
+     the first thing drawn above it, under the near coastline, the rivers, the
+     lakes, the physical regions, the territories and the marks. The far
+     coastline's stroke is `.land`'s own and is therefore under the bands —
+     at 0.065 of a pale token over a 0.6-wide cobalt line it still reads, and
+     as soon as the near coastline covers the view that stroke is `.land`'s no
+     longer and is drawn over them.
+
+983. **The 0 m contour is a 10-arc-minute coastline and does not meet Natural
+     Earth's.** The lowest band's seaward edge is the grid's own shore, which
+     can stand up to about 0.17° — some 19 km — outside the 10 m coast the map
+     draws, so at a peninsular zoom the lowest tint shows as a faint halo in
+     the water. It is the price of the resolution the 6 MB ceiling allows and
+     not a fault in the contouring, and there is no cheap fix: clipping the
+     bands to the far coastline would cut them against a 0.4°-simplified shore
+     and be wrong further inland. It is the lightest of the five tints, and it
+     is written down here rather than left for a reader to notice.
+
+984. **Five bands, and the brief's escape hatch was not used — but the reason
+     it exists is real and is reported.** Over bare ground the five are 0.030
+     apart in OKLab and countable. Under a territory wash at 0.62 they are
+     0.013 apart and are not. No opacity fixes that: at 0.62 on the top band,
+     which is far past where the walked chain drops under 3:1, the step under
+     a wash is still only 0.021. Fewer bands would lose the bare-ground
+     picture to buy nothing, so five stayed and the limit is in the section
+     above.
+
+985. **Three screenshots and not four, because the fourth already exists.**
+     The brief asks for the bands at two places with the territories on; the
+     obvious companion is the same two boxes without them, and
+     `m45a-ground-iberia` and `m45a-ground-andes` are exactly that — the same
+     boxes, the same `?layers=` lists, `relief` absent. A duplicate pair under
+     a new name would be two more pictures saying what two already say. The
+     world view is added because the bands had to be shown to be quiet at the
+     scale the atlas opens at.
+
+986. **The fixture elevation grid is written at run time and is not
+     committed.** The format has no header, so a grid is the full 2160 × 1080
+     int16 whatever is in it, and four and a half megabytes of synthetic
+     ground does not belong in the repository. `tests/import-naturalearth.test.mjs`
+     makes one — a stepped cone at 20° N, 30° W with a step for every band —
+     into a temporary directory and removes it after.
+
+987. **`CLAUDE.md` and `ARCHITECTURE.md` were edited, and the brief names only
+     the second.** `ARCHITECTURE.md` is a done-condition. `CLAUDE.md` gained
+     the new module's line, which `tests/site.test.mjs` requires of every file
+     under `tools/`, the `--check` in the documented command line (deviation
+     980), and the layer counts that were six and are seven.
+
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

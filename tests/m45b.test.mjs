@@ -246,7 +246,7 @@ test('the budget table in STATUS.md is the bytes on disk, rounded and not typed'
   // What STATUS.md says the bands come to, read back out of it. The number is
   // in the document because a reader needs it; it is checked here because a
   // number in a document that nothing checks is a number that goes stale.
-  const said = status.match(/the bands come to ([\d.]+) MB of their own 6 MB/);
+  const said = status.match(/the bands come to \*?\*?([\d.]+) MB of their own 6 MB/i);
   assert.ok(said, "STATUS.md says what the bands come to");
   assert.equal(Number(said[1]).toFixed(2), (own / 1024 / 1024).toFixed(2),
     'and it is the total of the files on disk');
