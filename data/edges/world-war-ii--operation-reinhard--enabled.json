@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--operation-reinhard--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Reinhard\", revision 1367661549, § lead and § Background"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "operation-reinhard",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article makes the operation an act of the war: it \"was the codename of the secret German plan **in World War II** to exterminate Polish Jews in the General Government district of German-occupied Poland. This deadliest phase of the Holocaust was marked by the introduction of extermination camps.\" § Background dates the decision to the war's turn east: **\"after the German–Soviet war began, the Nazis undertook their European-wide 'Final Solution to the Jewish Question'. In January 1942, during a secret meeting of German leaders chaired by Reinhard Heydrich, Operation Reinhard was drafted\"**, and within months the three camps at Bełżec, Sobibór and Treblinka were built. `enabled`, because the war supplied the occupied territory and the secrecy and the article credits the plan to the men who drafted it.",
+  "dispute": null
+}

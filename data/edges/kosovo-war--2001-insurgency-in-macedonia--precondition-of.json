@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "kosovo-war--2001-insurgency-in-macedonia--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2001 insurgency in Macedonia\", revision 1375673043, § lead"
+    }
+  ],
+  "from": "kosovo-war",
+  "to": "2001-insurgency-in-macedonia",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article names the earlier war in the insurgents' own description: the conflict \"began in the Republic of Macedonia in 2001 when the ethnic Albanian National Liberation Army (NLA) insurgent group, **formed from veterans of the Kosovo War and insurgency in the Preševo Valley**, attacked Macedonian security forces at the end of January 2001, and ended with the Ohrid Agreement, signed on 13 August of that same year.\" The article is careful about motive — \"there were also claims that the NLA ultimately wished to see Albanian-majority areas secede from the country\" — and the edge claims only the continuity of fighters the lead states.",
+  "dispute": null
+}

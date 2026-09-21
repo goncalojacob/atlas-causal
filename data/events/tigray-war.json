@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "tigray-war",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -17,15 +17,12 @@
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m42-reinstated"
     ]
   },
   "origin": {
     "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 13 under brief §1: the record earns no honest edge. The English article, at revision 1374637577, begins its § Historical and political context at \"the end of the Ethiopian Civil War in 1991\" and runs from there through the EPRDF, the TPLF, Meles Zenawi, the Oromo protests of 2014–2016 and Hailemariam Desalegn's resignation in 2018 — not one of which this atlas holds. Its § Spillover reaches Sudan, but as the Al-Fashaga border conflict and sixty thousand refugees, which touches none of the four Sudanese records here. The atlas's Ethiopian records are the two Italo-Ethiopian wars of 1894 and 1935 and the Ogaden war of 1977, and the article argues a line to none of them. It waits on a record of the Ethiopian Civil War, which is the record its own background starts from."
   },
   "wikidata": "Q101231200",
   "wikipedia": {

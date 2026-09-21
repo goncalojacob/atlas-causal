@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "soviet-afghan-war--afghan-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Afghan Civil War (1989–1992)\", revision 1371765193, § lead and § Background (1978–1989)"
+    }
+  ],
+  "from": "soviet-afghan-war",
+  "to": "afghan-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article defines this war by the end of the last one: it \"took place between **the Soviet withdrawal from Afghanistan on 15 February 1989 which ended the Soviet–Afghan War**, and 27 April 1992, the day after the proclamation of the Peshawar Accords proclaiming a new interim Afghan government\". Its whole § Background (1978–1989) is the earlier war — the mujahideen revolt of October 1978, the 1979 Soviet invasion, nine years in which \"between 500,000 and 2 million Afghans were killed and millions were displaced\", and Gorbachev's announcement in 1987 of a withdrawal carried out between May 1988 and February 1989 — and the combatants of 1989 are the two sides that war left standing.",
+  "dispute": null
+}

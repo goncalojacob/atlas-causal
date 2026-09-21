@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-i--polish-ukrainian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Polish–Ukrainian War\", revision 1372213817, § infobox and lead"
+    }
+  ],
+  "from": "world-war-i",
+  "to": "polish-ukrainian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article files the war under the war that made it possible — its infobox reads \"part of the Ukrainian War of Independence and **the aftermath of World War I**\" — and its lead says how: **\"the war started in Eastern Galicia after the dissolution of the Austro-Hungarian Empire and spilled over into the Chełm and Volhynia regions formerly belonging to the Russian Empire.\"** Two empires had governed that ground in 1914 and neither existed in November 1918, which is what the two sides fought over.",
+  "dispute": null
+}

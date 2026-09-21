@@ -2510,6 +2510,270 @@ the thirty-two rows across the two batches went out on arrival with the missing
 record named, and one more was refused at the class table before it was ever
 written. The rate stands at **twelve kept a batch** over the two.
 
+## 2o. Batch 15 — the Horn of Africa opens, and does not join
+
+**Sixteen rows ticked and created, nine kept, seven retracted, one tombstone
+reinstated, eleven edges, two filings.** Corpus +10 and component **+8**, which
+is the first sweep batch since batch 11 where the two numbers differ, and
+amendment A5 asks why.
+
+**Why: `ethiopian-civil-war` and `tigray-war` went into a fragment and not into
+the middle.** The Ogaden war and the Somali civil war have been a component of
+two since batch 11 joined them; this batch put the Ethiopian civil war and the
+Tigray war beside them and made it a component of **four**, the second-largest
+fragment in the atlas after the Sudanese five. That is a corner of the world
+opening, which is what a sweep batch does, and it is not a failure to write an
+edge: **there is no honest edge out of it and §2p below says what each end of
+it waits for.**
+
+### The Horn of Africa, and why it stays a fragment
+
+`ethiopian-civil-war` is the record batch 13's `tigray-war` retraction named by
+name — *"it waits on a record of the Ethiopian Civil War, which is the record
+its own background starts from"* — and the Tigray article's own § Historical and
+political context opens exactly there, so the reinstatement was written the
+moment the record existed. That is the twelfth tombstone this milestone has
+brought back on its own note.
+
+What the cluster cannot do is reach the rest of the atlas. The civil war's
+infobox files it under "the Eritrean War of Independence, the Ethiopian–Somali
+conflict, the Oromo conflict, **the Cold War, and the Revolutions of 1989**".
+Two of those five are classes rather than events; two are wars this atlas does
+not hold; and the fifth, `revolutions-of-1989`, **is a record here and rule 4
+forbids the edge** — a war that began on 12 September 1974 cannot be caused by
+1989, and the date was not widened, which is deviation 989's rule. The body
+offers no other reach: the Soviet Union and Cuba appear as intervening powers
+and not as records, and the sentence that would most like to be an edge —
+"the Soviet Union began ending its support for the Derg in the late-1980s and
+the government was overwhelmed by the increasingly victorious rebel groups" —
+names no event. The article never mentions either Italo-Ethiopian war, which
+are the two records here a reader would expect it to reach.
+
+**So the Horn is the second Sudan** (§2g): records joined to each other and to
+nothing else, waiting on a page rather than on a fetch. The nearest missing
+record is the Eritrean War of Independence, and importing it would make the
+fragment five rather than join it.
+
+### The sixteen
+
+§5's rule over a pool recomputed at **1,159 rows**, sixteen fewer than batch
+14's 1,175. Set 3 took the thinnest six decades (1900s at 16 active events,
+1890s at 17, 1980s and 2000s at 23, 1930s and 1950s at 24) and set 4 the rest
+by sitelinks. All sixteen passed the class table this time.
+
+### The edges
+
+Eleven. Nine run from a record the atlas already held into one of this batch's;
+`jameson-raid --precondition-of--> second-boer-war` runs the other way, and
+`ethiopian-civil-war --enabled--> ogaden-war` and
+`ethiopian-civil-war --precondition-of--> tigray-war` are the pair inside the
+Horn fragment.
+
+#### `ethiopian-civil-war --enabled--> ogaden-war` and `ethiopian-civil-war --precondition-of--> tigray-war`
+
+*"Ethiopian Civil War"*, revision 1375950588, § Somali insurgency and Ogaden
+War — a subsection of § War, which is where the article puts the Ogaden war in
+its own account: "by June 1977, the Western Somali Liberation Front (WSLF) had
+been successful in forcing the Ethiopian army out of much of the Ogaden…
+President of Somalia Siad Barre decided to intensify the war by involving the
+Somali army as he believed it would allow the WSLF to press home their growing
+victories… **On 13 July 1977, the Ogaden War was triggered when the Somali
+Democratic Republic invaded the Ogaden region in order to assist the WSLF.**"
+`enabled` and not `caused`: what the civil war supplied was an Ethiopian army
+already losing ground, and the article credits the invasion to Barre.
+
+The second edge is read from the other end. *"Tigray war"*, revision 1374637577,
+§ Historical and political context: **"following the end of the Ethiopian Civil
+War in 1991, Ethiopia became a dominant-party state under the rule of the
+Ethiopian People's Revolutionary Democratic Front (EPRDF)… The founding and
+most influential member was the Tigray People's Liberation Front (TPLF), led by
+Meles Zenawi."** The civil war's own infobox says the same from its side —
+among its results, "installation of the TPLF-led transitional government which
+would later become the EPRDF government in Ethiopia". The party that lost power
+in 2018 and fought in 2020 is the one that won in 1991.
+
+#### `world-war-ii --enabled--> operation-reinhard`
+
+*"Operation Reinhard"*, revision 1367661549. The lead: it "was the codename of
+the secret German plan **in World War II** to exterminate Polish Jews in the
+General Government district of German-occupied Poland. This deadliest phase of
+the Holocaust was marked by the introduction of extermination camps."
+§ Background dates the decision to the war's turn east: **"after the
+German–Soviet war began, the Nazis undertook their European-wide 'Final
+Solution to the Jewish Question'. In January 1942, during a secret meeting of
+German leaders chaired by Reinhard Heydrich, Operation Reinhard was drafted"**,
+and within months the camps at Bełżec, Sobibór and Treblinka were built.
+`enabled`, because the war supplied the occupied territory and the secrecy and
+the article credits the plan to the men who drafted it.
+
+#### `world-war-i --precondition-of--> polish-ukrainian-war`
+
+*"Polish–Ukrainian War"*, revision 1372213817. The infobox reads "part of the
+Ukrainian War of Independence and **the aftermath of World War I**", and the
+lead says how: **"the war started in Eastern Galicia after the dissolution of
+the Austro-Hungarian Empire and spilled over into the Chełm and Volhynia
+regions formerly belonging to the Russian Empire."** Two empires had governed
+that ground in 1914 and neither existed in November 1918, which is what the two
+sides fought over. This is the fourth record the atlas draws out of the
+collapse of 1918, beside `polish-soviet-war`, `estonian-war-of-independence`
+and `treaty-of-tartu`.
+
+#### `world-war-ii --enabled--> anglo-iraqi-war`
+
+*"Anglo-Iraqi War"*, revision 1372842948. The short description calls it "a
+1941 campaign during World War II" and the infobox files it under "the
+Mediterranean and Middle East theatre of World War II", with Nazi Germany
+listed as giving military support to the Iraqi side. § Mandatory Iraq gives the
+quarrel, and dates it to 1930: Britain governed Iraq under a League of Nations
+mandate until 1932 and before granting independence "concluded the Anglo-Iraqi
+Treaty of 1930, which included permission to establish military bases for
+British use, and allowed unrestricted movement of British forces through the
+country upon request… **the conditions of the treaty were imposed by the
+British to ensure control of Iraqi petroleum. Many Iraqis resented these
+conditions.**" The grievance is older than the war; what the war supplied was a
+Britain that could be fought and an Axis that would help.
+
+#### `munich-agreement --precondition-of--> slovak-hungarian-war` and `first-vienna-award --precondition-of--> slovak-hungarian-war`
+
+*"Slovak–Hungarian War"*, revision 1370747590, § Prelude, which argues both in
+four sentences. On the first: **"after the Munich Pact, which weakened Czech
+lands to the west, Hungarian forces remained poised threateningly on the Slovak
+border"** — a bluff, the article says, "but had been encouraged by Germany". On
+the second: Germany and Italy "pressured the Czechoslovak government to accept
+their joint Arbitration of Vienna. On 2 November 1938, it found largely in
+favour of Hungary and obliged Czechoslovakia to cede to Hungary 11,833 km² of
+the south part of Slovakia… The partition also cost Košice, Slovakia's second
+largest city." And then: **"the First Vienna Award did not fully satisfy
+Hungary, which carried out 22 border clashes between 2 November 1938 and 12
+January 1939."** Two months after the last of those the war began. Two
+preconditions on one record, argued by one section, is the shape this atlas is
+for.
+
+#### `jameson-raid --precondition-of--> second-boer-war`
+
+*"Jameson Raid"*, revision 1370624782, § lead, in those words: **"the raid was
+a contributory cause of the Second Boer War."** What it contributed is listed
+just before — the raid of 29 December 1895 "was intended to trigger an uprising
+by the primarily British expatriate and settler workers (known as Uitlanders)
+in the Transvaal, but it failed", and its results "included embarrassment of
+the British government; the replacement of Cecil Rhodes as prime minister of
+the Cape Colony; and **the strengthening of Boer dominance of the Transvaal and
+its gold mines**". `precondition-of`, because "contributory cause" is what the
+article claims and no more. This is the batch's one edge into a record the
+atlas has held since M40, and the only southern African edge in the corpus.
+
+#### `kosovo-war --precondition-of--> 2001-insurgency-in-macedonia`
+
+*"2001 insurgency in Macedonia"*, revision 1375673043, § lead: the conflict
+"began in the Republic of Macedonia in 2001 when the ethnic Albanian National
+Liberation Army (NLA) insurgent group, **formed from veterans of the Kosovo War
+and insurgency in the Preševo Valley**, attacked Macedonian security forces at
+the end of January 2001, and ended with the Ohrid Agreement, signed on 13
+August of that same year". The article is careful about motive — "there were
+also claims that the NLA ultimately wished to see Albanian-majority areas
+secede from the country" — and the edge claims only the continuity of fighters
+the lead states. It is the seventh record of the Yugoslav wars' aftermath here.
+
+#### `soviet-afghan-war --precondition-of--> afghan-civil-war`
+
+*"Afghan Civil War (1989–1992)"*, revision 1371765193. The article defines this
+war by the end of the last one: it "took place between **the Soviet withdrawal
+from Afghanistan on 15 February 1989 which ended the Soviet–Afghan War**, and
+27 April 1992, the day after the proclamation of the Peshawar Accords". Its
+whole § Background (1978–1989) is the earlier war — the mujahideen revolt of
+October 1978, the 1979 invasion, nine years in which "between 500,000 and 2
+million Afghans were killed", and Gorbachev's withdrawal of May 1988 to
+February 1989 — and the combatants of 1989 are the two sides that war left
+standing. **It does not clear `tajikistani-civil-war`**, which batch 13
+retracted waiting on "the Afghan Civil War of 1992–1996": that is the *next*
+phase and a different record, and the Tajik article names it by its dates.
+
+#### `2011-egyptian-revolution --inspired--> 2011-yemeni-revolution`
+
+*"Yemeni revolution"*, revision 1375746838. **"By February, opposition leader
+Tawakel Karman called for a 'Day of Rage' in the mold of mass nationwide
+demonstrations that helped to topple the government of Tunisia and put pressure
+on the government of President Hosni Mubarak in Egypt"**, and **"after Mubarak
+quit power in Egypt, demonstrators celebrating the revolution and calling for a
+similar uprising in Yemen were attacked by police and pro-Saleh tribesmen."**
+The infobox lists among the causes "inspiration from concurrent regional
+protests" and files the revolution under the Arab Spring, which this atlas does
+not hold for want of a lane the owner has not decided (975). `inspired` is the
+type for exactly this and the article supports no stronger one: the Yemeni
+protests began in January 2011, before Mubarak fell. **This is the milestone's
+first `inspired` edge** and the fifth type's first use in it.
+
+### The seven retracted, and what each waits for
+
+| record | what its article argues, and what is missing |
+| --- | --- |
+| `japan-korea-treaty-of-1907` | Revision 1369056589, eight kilobytes, argues out of the Eulsa Treaty of 1905 and the Hague Secret Emissary Affair and forward to the treaty of 1910 — none a record here. The Russo-Japanese war, which this atlas holds and which every history puts behind the 1905 protectorate, is **not mentioned in the article at all**. Waits on the Eulsa Treaty |
+| `ifni-war` | Revision 1370623332 argues out of the Hispano-Moroccan war of 1859–1860 and Moroccan independence in 1956 — "after Morocco achieved independence in 1956, it sought to claim Spain's remaining possessions in West Africa" — and forward to the Treaty of Angra de Cintra, the return of Ifni in 1969 and the Green March of 1975. `french-conquest-of-morocco`, which batch 14 imported and which ends in 1937, is not mentioned. Waits on Moroccan independence |
+| `international-convention-on-the-elimination-of-all-forms-of-racial-discrimination` | Revision 1372930206 traces the convention to a General Assembly resolution of December 1960 "following incidents of antisemitism in several parts of the world". The only record here it names is `charter-of-the-united-nations`, as the instrument such hatred violates rather than as something the convention answered — a legal citation and not a consequence. Waits on the 1960 resolution |
+| `ottawa-treaty` | Revision 1354825098, a hundred and eighteen kilobytes on what the treaty obliges and who has signed, argues it out of the landmine problem in general and the International Campaign to Ban Landmines, and names no war this atlas holds. The sixth instrument this milestone has retracted for §7.4's reason, generalised |
+| `soweto-uprising` | Revision 1369412868 files it under "the internal resistance to apartheid" and argues out of the Bantu Education policy and the Afrikaans-medium decree, forward to international condemnation and the Transkei bantustan. This atlas holds no South African record but `second-boer-war`, and the article names neither it nor the Angolan and Mozambican independences of 1975. Waits on any South African record of the apartheid period |
+| `nepalese-civil-war` | Revision 1375833499 has **no background section at all**: its § Overview begins with the United Left Front of January 1990 and its timeline runs year by year from 1996. Every actor in it is Nepali; the atlas's South Asian records are the partition of India, the Indo-Pakistani wars, Kargil and the Sino-Indian war, and none is mentioned. Waits on any Himalayan neighbour |
+| `assassination-of-charlie-kirk` | Revision 1375772690, an account of a killing eleven days ago and of the reaction to it, naming no event this atlas holds. **It is also a record whose article is being rewritten hourly**, so a revision cited today is not the article a reader will open |
+
+**The last of the seven is worth a sentence about the rule rather than about
+the record.** Set 4 ranks by sitelinks and a story in the news accumulates them
+fast: that is how a row eleven days old came to be among the sixteen best
+remaining in a pool of 1,159. The rule is not wrong — an atlas of the world
+does want what the world has written about — but a sitelink count is a
+measurement of attention and attention is fastest when it is newest. A batch
+that finds a fortnight-old event at the top of its set 4 should retract it and
+say so, which is what this one did.
+
+### The nine left main, the two filed, and the one reinstated
+
+Two were filed, both on a sentence the article states and neither naming an
+actor or a place, which is M67 A1 and A1's note obligation:
+
+- **`operation-reinhard` under `the-holocaust`.** The article's second sentence
+  calls it "this deadliest phase of the Holocaust"; March 1942 to November 1943
+  is inside the Holocaust's 1933–1945; the perpetrators are the same. **No actor
+  line was invented.**
+- **`anglo-iraqi-war` under `world-war-ii`.** The infobox files it under "the
+  Mediterranean and Middle East theatre of World War II" and the short
+  description calls it "a 1941 campaign during World War II"; May 1941 is inside
+  the war's span; Britain and Nazi Germany are on the two sides. Same note.
+
+`tigray-war` came back active with `m42-reinstated` on it and no new record
+written; its retraction reason was correct when it was written and the record it
+named now exists.
+
+The other nine are top-level and every one carries `actors: []`:
+`ethiopian-civil-war`, `polish-ukrainian-war`, `slovak-hungarian-war`,
+`jameson-raid`, `2001-insurgency-in-macedonia`, `afghan-civil-war`,
+`2011-yemeni-revolution`, and the two the batch put into the Horn fragment are
+among them. **None is anybody's part in this atlas.**
+`2001-insurgency-in-macedonia` would want `yugoslav-wars`, which ends before it
+begins; `afghan-civil-war` and `2011-yemeni-revolution` would want the Afghan
+conflict and the Arab Spring as umbrellas and the atlas holds neither;
+`slovak-hungarian-war` sits between Munich and the outbreak of the world war
+and is inside neither; `jameson-raid` precedes the Boer war rather than
+belonging to it, which is what `precondition-of` says and `parent` would deny.
+
+`docs/m53-polities.md` §4.1 accordingly moves to **306 of 445**.
+
+### What batch 15 did to the graph
+
+| | before | after |
+| --- | --- | --- |
+| active events | 435 | **445** |
+| main | 335 | **343** |
+| filed under a parent | 100 | **102** |
+| active edges | 528 | **539** |
+| largest connected component | 412 | **420** |
+| components | 12 | **12** |
+| active events with no edge | 3 | 3 |
+| unreachable from any Portuguese event | 15 | 17 |
+
+**Ten and eight**, and the two that are missing are the Horn of Africa. The
+unreachable count rising by two is the same two records said another way. This
+is the honest shape of a sweep that opens a region the atlas has never had:
+the component does not move, a fragment does, and the run says which.
+
 ## 3. The main count, and why it moved up
 
 Amendment A3: an import that leaves the main count higher than it found it has

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "ottawa-treaty",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 15 under brief §1: the record earns no honest edge. The English article, at revision 1354825098, is a hundred and eighteen kilobytes on what the 1997 treaty obliges its parties to do, who has signed and who has not, and the clearance work since; it argues the treaty out of the landmine problem in general and out of the International Campaign to Ban Landmines, and names no war this atlas holds as the one that produced it. It is the sixth instrument this milestone has retracted on arrival for the reason §7.4 calls the environment-shaped hole, generalised: an instrument that decided nothing this corpus holds has nothing here to be joined to."
+  },
+  "wikidata": "Q570224",
+  "wikipedia": {
+    "en": "Ottawa Treaty",
+    "pt": "Tratado de Ottawa"
+  },
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q570224"
+    }
+  ],
+  "title": "Ottawa Treaty",
+  "summary": "Wikidata item Q570224, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty aimed at eliminating anti-personnel landmines around the world\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1997,
+    "end": 1997,
+    "date": "1997-12-03"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

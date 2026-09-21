@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "assassination-of-charlie-kirk",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 15 under brief §1: the record earns no honest edge, and it is eleven days old. The English article, at revision 1375772690, is an account of a killing on 10 September 2025 and of the reaction to it, and it names no event this atlas holds; the atlas's most recent American records are the Iraq war and the financial crisis, and nothing connects. A record this recent is also one whose article is being rewritten hourly, so a revision cited today is not the article a reader will open. The sweep's set 4 ranks by sitelinks and a story in the news accumulates them fast, which is how a row eleven days old came to be among the best remaining; that is worth knowing about the rule rather than working around."
+  },
+  "wikidata": "Q136210698",
+  "wikipedia": {
+    "en": "Assassination of Charlie Kirk",
+    "pt": "Assassinato de Charlie Kirk"
+  },
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q136210698"
+    }
+  ],
+  "title": "assassination of Charlie Kirk",
+  "summary": "Wikidata item Q136210698, imported by tools/import/wikidata.mjs. The item's own description reads \"2025 murder in Orem, Utah, US\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2025,
+    "end": 2025,
+    "date": "2025-09-10"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "death",
+  "actors": []
+}
