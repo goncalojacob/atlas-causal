@@ -36,13 +36,16 @@
            the layer switches and the graph filters are — one file decides what
            a control writes into the URL. -->
       <div class="window-control" id="window-control" role="group" aria-label="The window of time"></div>
-      <!-- Only on a phone, where the grouping picker and the three layer
+      <!-- Only on a phone, where the lens chips and the three layer
            switches will not fit beside the search: one button in front of
            both. The stylesheet shows it and hides them; nothing moves in the
            DOM, so every module still finds the control it wired. -->
       <button type="button" id="options-button" class="options-button" aria-expanded="false"
               aria-controls="masthead-tools">Options</button>
-      <div class="grouping" id="grouping" role="group" aria-label="Grouping and lens"></div>
+      <!-- Which records the lens is on, one chip each. Filled by
+           src/lens-chips.js. It was the back half of the grouping picker,
+           which M77 removed at the owner's word. -->
+      <div class="lens-chips-bar" id="lens-chips" role="group" aria-label="The lens"></div>
       <!-- The kinds of event that are drawn, on every view (M68). They used to
            be inside the layer control, which is the map's legend and is hidden
            on the graph and the timeline, so a filter that narrows all three

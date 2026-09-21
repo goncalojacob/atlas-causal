@@ -10,11 +10,11 @@
 // and only this picture can say where history is dense. It is given the whole
 // pane when it is chosen, so the lanes have the height the strip never had.
 //
-// What a lane *is* is not decided here any more (M14): lanes.js is asked,
-// and the graph view asks the same file, so the two pictures cannot disagree
-// about which lane an event belongs in. Without a grouping — the default —
-// there are no named lanes at all: the bars are packed into as many
-// unlabelled rows as it takes for none of them to overlap at this width.
+// What a lane *is* is not decided here (M14): lanes.js is asked. Since M77
+// there is one arrangement and it is what the atlas always opened on — the
+// bars packed into as many unlabelled rows as it takes for none of them to
+// overlap at this width, with no named lanes at all. The picker that offered
+// one lane per actor, per place or per region went at the owner's word.
 //
 // The lanes stay on the whole extent of the data whatever the window is.
 // Zooming them to the window was tried on paper and rejected: a handle at
@@ -22,17 +22,24 @@
 // window once would be a trap. Narrowing filters the map and greys the
 // timeline outside the band; it does not rescale the lanes.
 //
-// Bars that would overlap at the current width are drawn as one with a `+n`
-// badge, by the same cluster.js the map uses, in one dimension. Only the
-// events inside the window are stacked together, so narrowing the band
-// splits the stacks — which is what "zooming" means here, since the scale
-// itself does not move. What the reader is working with — the selected
-// event, the walked path, the events of the selected actor — is never
-// stacked.
+// **Every bar carries its title** (M77). The owner, 21 September: *"The
+// timeline has too many events. As it is right now it is useless. For it to
+// be useful it should only show parent and main events and the title for the
+// events… and then when you click on it it can show you everything that
+// happened during that time."* So there are no stacks and no `+n` badges any
+// more: two bars that would have been drawn as one with a count are two bars
+// in two rows, and the packing reserves the room each title needs beside its
+// bar rather than only the room the bar itself takes. If the rows do not fit
+// the pane, the pane scrolls — a title never disappears to make room.
+//
+// What is at rest is the **main events** (M65, unchanged), and an event with
+// parts is drawn with the ring that says there is more inside it. Clicking it
+// is a lens on it: the timeline then holds that event and what happened
+// during it, each with its own title, and a click on the empty ground gives
+// the whole picture back.
 
 import { svg, reuse } from './util/dom.js';
 import { createTimelineScale } from './timeline-scale.js';
-import { clusterPoints } from './cluster.js';
 import { fromAstronomical, formatYear } from './util/dates.js';
 import {
   resolveWindow, overlaps, withMargin, centuryCounts,
@@ -48,35 +55,20 @@ import { labelOf, LOADING_LABEL } from './attributes.js';
 import { horizonBand } from './horizon.js';
 import { workingSet, heldSet } from './emphasis.js';
 import { walkOrSelect } from './chain.js';
-import { lanesFor, rowLanes, laneOf, barBox, LANE_CAP } from './lanes.js';
-import { largeEventsIn, bracketsIn } from './large.js';
+import { rowLanes, laneOf, barBox } from './lanes.js';
+import { largeEventsIn } from './large.js';
 import { isParent, ringClasses } from './parts.js';
 import { GLYPH_BOX, glyphAttributes, glyphClasses, hasGlyph, installGlyphs } from './map/glyphs.js';
 import { eventsInView } from './util/viewport.js';
 import { densityPath } from './density.js';
 
-const LANE_HEIGHT = 34;
-// A packed row carries no label, so it needs only the height of a bar and
-// the air around it; ten rows of a named lane's height would push the map
-// off the screen.
+// How tall a row is: enough for a bar, the air around it, and the title
+// written beside it. There is one kind of row since M77 — the named lanes
+// went with the grouping — so there is one height and one floor, and the
+// floor is the height a row of titles needs. It was 14 px while a row was a
+// bar and nothing else, and a title at 14 px in a 14 px row is a title with
+// its ascenders in the row above.
 const ROW_HEIGHT = 22;
-// How far a lane and a row may be squeezed to fit the pane. A named lane has
-// to keep room for its label; a packed row only for a bar and a hair of air
-// around it. Since I6 this is also what decides how many there are: rather
-// than shrink past the floor and let the pane scroll, the drawing takes as
-// many lanes as the pane holds at it. A row two pixels high is not a row, and
-// a row below the fold is not a row either.
-const MIN_LANE_HEIGHT = 22;
-const MIN_ROW_HEIGHT = 14;
-// Past this the rows share and stacking draws the overlap as one bar with a
-// count, which is what the timeline did before packing existed.
-//
-// A ceiling and not a promise: what the timeline actually draws is what its
-// pane can hold at the floor above, which in a 269 px pane is fifteen rows
-// and not twenty (index2 plan, D10; owner question 1). Twenty rows at 14 px
-// plus the axis want 338, and a drawing taller than its pane is a bottom row
-// the reader cannot see.
-const MAX_ROWS = 20;
 // The gap the packing leaves between two bars in one row. Wider than the
 // hairline that would technically not overlap: two bars touching read as one
 // long bar.
@@ -88,20 +80,6 @@ const LABEL_WIDTH = 120;
 // line, and a window as wide as the data drew "1911" over "1911 of 1911".
 const MARKER_HEIGHT = 32;
 const AXIS_HEIGHT = MARKER_HEIGHT + 26;
-// How many lanes a pane of this height holds: as many as fit under the axis
-// at the floor a lane of this kind may be squeezed to, never more than the
-// ceiling and never fewer than one. A pane that has not been laid out
-// measures nothing — a test with no layout behind it, or the first render
-// before the panes are sized — and then nothing is capped, which is what this
-// file did before I6 and what `MAX_ROWS` alone used to mean.
-//
-// Exported because it is the whole of the rule and it is worth a test of its
-// own: `tests/timeline-rows.test.mjs`.
-export function lanesThatFit(paneHeight, floorHeight, ceiling) {
-  const room = Math.max(0, (paneHeight ?? 0) - AXIS_HEIGHT);
-  if (room <= 0 || !(floorHeight > 0)) return ceiling;
-  return Math.min(ceiling, Math.max(1, Math.floor(room / floorHeight)));
-}
 // How tall a row may grow. M60 gave the timeline the whole pane; its rows were
 // still sized for the strip it used to be, so twenty of them at 22 px left a
 // band of empty ground under the bottom one — 304 px of the 795 a 900 px
@@ -111,25 +89,40 @@ export function lanesThatFit(paneHeight, floorHeight, ceiling) {
 // Measured rather than picked: docs/m66-rows.md has the four candidates at
 // both window heights and what each does to the bar inside the row.
 const LANE_MAX = 44;
+// The title beside a bar: how far from the bar's right end it starts, what
+// size it is drawn at, and how wide a character of it is on average. The
+// width is an estimate of the stylesheet and not a second one — the same
+// reckoning `map/labels.js` and `graph-view/label-fit.js` make — and it is
+// what the packing reserves so that two titles never land on each other.
+const BAR_LABEL_SIZE = 11;
+const BAR_LABEL_EM = 0.55;
+const BAR_LABEL_GAP = 5;
+// What a bar with no name yet reserves. A title arrives with its century
+// (attributes.js) and the rows are packed again when it does; until then the
+// room is a plausible one rather than none, so the arrival moves a few bars
+// instead of re-cutting every row.
+const BAR_LABEL_UNKNOWN = 16;
 export const ROW_LIMITS = {
-  AXIS_HEIGHT, MIN_ROW_HEIGHT, MIN_LANE_HEIGHT, MAX_ROWS, ROW_HEIGHT, LANE_HEIGHT, LANE_MAX,
+  AXIS_HEIGHT, ROW_HEIGHT, LANE_MAX,
 };
 
-// How tall a lane is in a pane of this height: the room under the axis shared
-// between the rows, never below the floor its kind needs, never past the cap
+// How tall a row is in a pane of this height: the room under the axis shared
+// between the rows, never below the floor a title needs, never past the cap
 // above. A pane that has measured nothing — a test with no layout behind it,
-// the first render before the panes are sized — gets the height the lane would
+// the first render before the panes are sized — gets the height the row would
 // like, which is what every pane got before the pane was measured at all.
+//
+// **It no longer shrinks to fit** (M77). It did, down to a 14 px floor, and
+// below that the drawing took fewer rows rather than overflowing; a row is a
+// bar and a title now, and a title is not something the timeline may drop to
+// keep its drawing inside the pane. Too many rows for the pane is a pane that
+// scrolls.
 export function laneHeightFor(paneHeight, rows, { natural, minimum, cap = LANE_MAX }) {
   const room = Math.max(0, (paneHeight ?? 0) - AXIS_HEIGHT);
   if (!(room > 0) || !(rows > 0)) return natural;
   return Math.max(minimum, Math.min(Math.max(cap, natural), room / rows));
 }
 const PADDING = 0.04;
-// Two bars whose middles are closer than this are drawn as one. In pixels of
-// the lane, not years: what overlaps is a question about the drawing.
-const BAR_MERGE = 11;
-const BADGE_SIZE = 10;
 // The corner a bar is rounded by, and the ring outside a parent's bar: how far
 // outside it on every side, and how thin. A ring says "there is more inside"
 // and nothing else, so it is thinner than the bar's own outline.
@@ -143,10 +136,10 @@ const RING_WIDTH = 0.8;
 // the atlas knows — and it is never shrunk to fit, because twelve line
 // drawings are not tellable apart below ten (review of the map block, F14).
 //
-// **Under the default grouping no bar reaches it**: a packed row is 22 px and
-// `barHeight` is 8, so the symbols are a named grouping's (deviation 585).
-// Making the bar taller is a change to the timeline's own look and is the
-// owner's to ask for.
+// **No bar reaches it in a 22 px row**, where `barHeight` is 8 (deviation
+// 585); a row that has grown into a pane's spare height does. Making the bar
+// taller is a change to the timeline's own look and is the owner's to ask
+// for.
 const GLYPH_MIN_BAR = GLYPH_BOX;
 // The stub an event past the margin is drawn as: a tick on the floor of its
 // lane, faded, with no title and no click. It is not a bar — it says the
@@ -159,7 +152,7 @@ const STUB_WIDTH = 2;
 const STUB_HEIGHT = 3;
 const STUB_TALLEST = 9;
 
-export function createTimeline(container, { atlas, state, createScale = createTimelineScale, onCluster = null }) {
+export function createTimeline(container, { atlas, state, createScale = createTimelineScale }) {
   const root = svg('svg', { class: 'timeline', role: 'group', 'aria-label': 'Timeline and the window of time' });
 
   // There used to be one part of the timeline that was not drawn in SVG: the
@@ -171,12 +164,12 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   // itself.
   container.appendChild(root);
 
-  // The lanes, their height and the height of the drawing are all decided by
-  // the grouping, and the grouping changes under the reader: they are read
-  // at every render and not once at build.
+  // How many rows the packing needs, and therefore how tall the drawing is,
+  // changes under the reader: both are read at every render and not once at
+  // build.
   let lanes = [];
-  let laneHeight = LANE_HEIGHT;
-  let height = AXIS_HEIGHT + LANE_HEIGHT;
+  let laneHeight = ROW_HEIGHT;
+  let height = AXIS_HEIGHT + ROW_HEIGHT;
 
   const domain = atlas.extent
     ? [atlas.extent.min - (atlas.extent.max - atlas.extent.min) * PADDING - 1, atlas.extent.max + (atlas.extent.max - atlas.extent.min) * PADDING + 1]
@@ -205,7 +198,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   const layers = {};
   for (const name of [
     'lanes', 'laneLabels', 'bands', 'bandLabels', 'ticks', 'tickLabels', 'band', 'strips',
-    'brackets', 'bars', 'badges', 'glyphs', 'held', 'heldGlyphs', 'heldLabels', 'handles', 'handleLabels',
+    'bars', 'rings', 'barLabels', 'glyphs', 'held', 'heldRings', 'heldGlyphs', 'heldLabels', 'handles', 'handleLabels',
   ]) {
     layers[name] = svg('g', { class: `layer layer-${name}` });
     root.appendChild(layers[name]);
@@ -215,9 +208,6 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   // id, so a page with a timeline and no map still has its glyphs (glyphs.js).
   installGlyphs(root);
 
-  // What the last render drew, so a click on a stack can be answered with the
-  // cluster itself rather than an id the caller would have to look up.
-  let drawn = new Map();
   // The width and the scale first, because the packing needs the scale to
   // know what overlaps; the height only once the lanes are known.
   const measure = () => {
@@ -262,7 +252,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   // Which bar that is, per lane, is remembered by what it names, so that
   // redrawing the lanes does not send the focus back to the first bar.
   const roving = new Map();
-  const keyOf = (el) => el.getAttribute('data-id') ?? `cluster:${el.getAttribute('data-cluster')}`;
+  const keyOf = (el) => el.getAttribute('data-id');
   const barControl = (laneId, label) => ({
     'data-bar': '', 'data-lane': laneId, tabindex: '-1', role: 'button', 'aria-label': label,
   });
@@ -291,14 +281,13 @@ export function createTimeline(container, { atlas, state, createScale = createTi
 
   const activate = (bar) => {
     const id = bar.getAttribute('data-id');
-    if (id) {
-      // The same rule the map and the graph follow: a bar that is a
-      // consequence of what is open is a step of the walk (chain.js).
-      walkOrSelect(state, atlas, id);
-      return;
-    }
-    const cluster = drawn.get(bar.getAttribute('data-cluster'));
-    if (cluster && onCluster) onCluster(cluster);
+    if (!id) return;
+    // The same rule the map and the graph follow: a bar that is a consequence
+    // of what is open is a step of the walk (chain.js). Otherwise it is a
+    // selection, which since M65 is a lens on that event and its parts — the
+    // owner's *"when you click on it it can show you everything that happened
+    // during that time"*. Clicking the empty ground below puts it down again.
+    walkOrSelect(state, atlas, id);
   };
 
   // The focused bar is drawn again on every state change, so what it names is
@@ -350,7 +339,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // outlive it — the same guard the map needs (STATUS.md, deviation 34). The
     // band keeps it now, and hands it over once.
     if (gestures.consumedDrag()) return;
-    const bar = e.target.closest('[data-id], [data-cluster]');
+    const bar = e.target.closest('[data-id]');
     if (bar) {
       if (bar.hasAttribute('data-bar')) focusBar(bar);
       activate(bar);
@@ -374,7 +363,41 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   const barHeight = () => Math.max(8, laneHeight - 16);
   const barTop = (i) => AXIS_HEIGHT + i * laneHeight + (laneHeight - barHeight()) / 2;
 
-  function laneBars(bars, badges, glyphs, lane, i, events, s, window, actorIds, narrativeIds, pathIds, reachable, lensNear) {
+  // What a bar is drawn like, said once: the drawing has two paths through it
+  // — the ordinary bars and, above them, the ones the reader is holding — and
+  // two lists of classes that could come apart would be two bars that look
+  // different for the same reason.
+  const barClasses = (item) => ['bar',
+    item.instant ? 'instant' : '',
+    item.ongoing ? 'ongoing' : '',
+    item.inside ? '' : 'faded',
+    item.lensNear ? 'lens-near' : '',
+    item.depth === null ? '' : `in-horizon ${horizonBand(item.depth)}`,
+    item.ofNarrative ? 'of-narrative' : '',
+    item.ofActor ? 'of-actor' : '',
+    item.onPath ? 'on-path' : '',
+    item.selected ? 'selected' : '',
+  ].filter(Boolean).join(' ');
+
+  // How much room a title needs beside its bar, in pixels of the drawing.
+  // What the packing reserves and what the drawing then writes, so a row that
+  // was packed with room for a title is a row the title fits in.
+  const labelRoom = (name) => BAR_LABEL_GAP
+    + (name === null ? BAR_LABEL_UNKNOWN : name.length) * BAR_LABEL_SIZE * BAR_LABEL_EM;
+
+  // **Every bar carries its title** (M77). No `+N`, no unlabelled mark: the
+  // owner asked for the titles and for nothing to be packed away behind a
+  // count, and the rows are as many as that takes.
+  const barLabel = (into, item, { classes, y: top, height: tall, name }) => {
+    if (name === null) return;
+    into.take('text', {
+      x: item.x + item.width + BAR_LABEL_GAP, y: top + tall / 2,
+      class: `bar-label ${classes.includes('selected') ? 'selected' : ''}${item.inside ? '' : ' faded'}`.trim(),
+      'dominant-baseline': 'middle', 'font-size': BAR_LABEL_SIZE,
+    }, { text: name });
+  };
+
+  function laneBars(bars, rings, labels, glyphs, lane, i, events, s, window, actorIds, narrativeIds, pathIds, reachable, lensNear) {
     const y = barTop(i);
     const height_ = barHeight();
     // barBox is lanes.js's, and it is the geometry the packing itself used:
@@ -383,7 +406,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     const geometry = (event) => barBox(event, scale, { openEnd: domain[1] });
 
     const alone = [];
-    const groups = { inside: [], outside: [] };
+    const ordinary = [];
     for (const event of events) {
       const onPath = pathIds.has(event.id);
       const selected = event.id === s.selected;
@@ -399,59 +422,32 @@ export function createTimeline(container, { atlas, state, createScale = createTi
         ...box,
       };
       if (onPath || selected || ofActor || ofNarrative) alone.push(item);
-      else groups[inside ? 'inside' : 'outside'].push(item);
+      else ordinary.push(item);
     }
 
-    const bar = (item, { count = 0, key = null } = {}) => {
-      const classes = ['bar',
-        item.instant ? 'instant' : '',
-        item.ongoing ? 'ongoing' : '',
-        item.inside ? '' : 'faded',
-        item.lensNear ? 'lens-near' : '',
-        count ? 'stack' : '',
-        item.depth === null ? '' : `in-horizon ${horizonBand(item.depth)}`,
-        item.ofNarrative ? 'of-narrative' : '',
-        item.ofActor ? 'of-actor' : '',
-        item.onPath ? 'on-path' : '',
-        item.selected ? 'selected' : '',
-      ].filter(Boolean).join(' ');
+    const bar = (item) => {
+      const classes = barClasses(item);
       // No name until the century carrying it has landed: a bar is drawn, and
-      // labelled when the shard arrives (attributes.js). The count and the
-      // "outside the window" are the timeline's own words about a bar it has
-      // drawn, so they are said either way.
+      // labelled when the shard arrives (attributes.js). "Outside the window"
+      // is the timeline's own word about a bar it has drawn, so it is said
+      // either way.
       const name = labelOf(atlas, item.event);
-      const title = count
-        ? `${name ?? LOADING_LABEL} — and ${count} more here`
-        : name === null ? LOADING_LABEL
-          : item.inside ? name : `${name} — outside the window`;
-      // One of the two, never both: an element kept from the last render
-      // would otherwise still name the cluster it used to stand for. `reuse`
-      // drops an attribute it set before and is not given now.
-      const data = key === null
-        ? { 'data-id': item.id, 'data-cluster': null }
-        : { 'data-cluster': key, 'data-id': null };
+      const title = name === null ? LOADING_LABEL
+        : item.inside ? name : `${name} — outside the window`;
       const el = bars.take('rect', {
-        x: item.x, y, width: item.width, height: height_, rx: BAR_ROUND, class: classes, ...data,
+        x: item.x, y, width: item.width, height: height_, rx: BAR_ROUND, class: classes, 'data-id': item.id,
         ...barControl(lane.id, title),
       }, { title });
       // An event with parts: a second, thinner outline two pixels outside its
-      // bar on every side, under every grouping including `none` — the one
-      // look a parent has on the three views (m30c-brief, §1). Through the
-      // same pool as the bars, so a state change still updates the drawing in
-      // place rather than rebuilding it. A stack gets none: a stack is a count
-      // and not a record, and the ring would be a claim about whichever of the
-      // bars under it happens to be on top.
-      if (!count && isParent(atlas, item.event)) ring(item, { classes, y, height: height_ });
+      // bar on every side — the one look a parent has on the three views
+      // (m30c-brief, §1), and since M77 the whole of what says *this one opens*
+      // on the timeline. Through the same pool as the bars, so a state change
+      // updates the drawing in place rather than rebuilding it.
+      if (isParent(atlas, item.event)) ring(item, { classes, y, height: height_ });
       // And the symbol of its category at the left end of the bar, vertically
-      // centred. A stack gets none, as a cluster on the map gets none: a count
-      // is not a record, and a stack of three categories has no category.
-      if (!count) glyph(glyphs, item, { classes, y, height: height_ });
-      if (count) {
-        badges.take('text', {
-          x: item.x + item.width + 3, y: y + height_ / 2, class: `cluster-count ${item.inside ? '' : 'faded'}`.trim(),
-          'dominant-baseline': 'middle', 'font-size': BADGE_SIZE, 'data-cluster': key,
-        }, { text: `+${count}` });
-      }
+      // centred.
+      glyph(glyphs, item, { classes, y, height: height_ });
+      barLabel(labels, item, { classes, y, height: height_, name });
       return el;
     };
 
@@ -473,8 +469,16 @@ export function createTimeline(container, { atlas, state, createScale = createTi
 
     // Not a control: no id, no title, no focus. What an event's parts are is
     // read on its card, and the bar under the ring opens it.
+    //
+    // Through a pool of its own since M77. It shared the bars', and a bar
+    // leaving the packed rows for the layer of what the reader is holding
+    // shifted every element after it by two — so a pooled element that had
+    // been a bar came back as a ring and lost the `<title>` a ring does not
+    // have. Seventy-three titles removed and made again on one click, for a
+    // click that changes one bar (`tests/timeline-browser.test.mjs`, *a state
+    // change updates the bars in place*).
     const ring = (item, { classes, y: top, height: tall }) => {
-      bars.take('rect', {
+      rings.take('rect', {
         x: item.x - RING_GAP, y: top - RING_GAP,
         width: item.width + RING_GAP * 2, height: tall + RING_GAP * 2,
         rx: BAR_ROUND + RING_GAP, class: ringClasses(classes, 'bar'),
@@ -482,39 +486,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       });
     };
 
-    // Stacks, per group: the events in the window merge with each other and
-    // the events outside it with each other, so moving the band splits both.
-    for (const [name, list] of Object.entries(groups)) {
-      if (list.length === 0) continue;
-      const clusters = clusterPoints(
-        list.map((item) => ({ id: item.id, x: item.x + item.width / 2, y: 0, weight: item.event.weight ?? 0, item })),
-        { k: 1, distance: BAR_MERGE, epsilon: 0 },
-      );
-      for (const cluster of clusters) {
-        const item = cluster.representative.item;
-        if (cluster.count === 1) {
-          bar(item);
-          continue;
-        }
-        // A stack is in the horizon when any bar under it is, at the band of
-        // its nearest member — the same rule the map's stacks follow.
-        const depths = cluster.members.map((m) => m.item.depth).filter((d) => d !== null);
-        const stacked = { ...item, depth: depths.length ? Math.min(...depths) : null };
-        // Namespaced by lane and group, because one event's id names at most
-        // one cluster but the same id could seed two if a lane were redrawn.
-        const key = `${lane.id}:${name}:${cluster.key}`;
-        drawn.set(key, {
-          key,
-          count: cluster.count,
-          representative: { id: item.id, event: item.event },
-          members: cluster.members.map((m) => ({ id: m.id, event: m.item.event })),
-          on: 'timeline',
-          lane,
-          inside: item.inside,
-        });
-        bar(stacked, { count: cluster.count - 1, key });
-      }
-    }
+    for (const item of ordinary) bar(item);
     // Path, actor and selection last, so they sit above their neighbours.
     return alone;
   }
@@ -541,7 +513,6 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // Each layer hands its children out from the start again; whatever this
     // render does not ask for is dropped by `done()` at the end.
     const into = Object.fromEntries(Object.entries(layers).map(([name, g]) => [name, reuse(g)]));
-    drawn = new Map();
     const window = resolveWindow(s, atlas.extent, atlas.opens);
     // What is drawn as a bar at all: the band and one period either side of
     // it. Past that an event is a stub — it is still there, it is simply not
@@ -601,58 +572,31 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // the walked path and the events of one place together where a row has
     // the room, so a reader following a chain finds its steps near each
     // other instead of scattered down the rows.
-    let natural = ROW_HEIGHT;
-    let minimum = MIN_ROW_HEIGHT;
-    // The room under the axis, and therefore how many lanes there is room
-    // for. The cap used to be a constant, and twenty packed rows at the 14 px
-    // floor plus the axis do not fit the 269 px pane a 900 px window leaves:
-    // the drawing overflowed, the pane scrolled, and a window made shorter
-    // could not change a height that was already at the floor (index2 plan,
-    // D10; the owner's own "the timeline fits its pane").
     //
-    // A pane that has not been laid out measures nothing — a test with no
-    // layout behind it, the first render before the panes are sized — and
-    // then nothing is capped and the ceiling is the one it always was.
-    const room = Math.max(0, paneHeight - AXIS_HEIGHT);
-    const fits = (floorHeight, ceiling) => lanesThatFit(paneHeight, floorHeight, ceiling);
-    if (s.group === 'none') {
-      lanes = rowLanes(near, scale, width, {
-        openEnd: domain[1],
-        gap: ROW_GAP,
-        maxRows: fits(MIN_ROW_HEIGHT, MAX_ROWS),
-        affinity: (event) => (pathIds.has(event.id) ? 'chain' : event.place ?? null),
-      });
-    } else {
-      // The same rule for a named grouping, against a lane's own floor: a lane
-      // keeps room for its label, so it is squeezed less far than a row.
-      //
-      // Two things are outside it. A grouping by region draws one lane per
-      // region and has no "Other" to put the rest in, so a region dropped for
-      // room would be events with nowhere to stand; there are five of them and
-      // they fit. And the reader's own list of lanes is unlimited by design —
-      // somebody who names fifteen actors has said they want fifteen — which
-      // is the one case that may still overflow, and `lanesFor` already lets
-      // that list past the cap.
-      //
-      // "Other" is a lane like any other and counts against the room, so if it
-      // appears and takes the drawing past what fits, the cap comes down by
-      // one and the lanes are made again.
-      const cap = fits(MIN_LANE_HEIGHT, LANE_CAP);
-      lanes = lanesFor(s.group, atlas, window, drawable, s.lanes, { cap });
-      if (room > 0 && lanes.length > fits(MIN_LANE_HEIGHT, lanes.length) && cap > 1) {
-        lanes = lanesFor(s.group, atlas, window, drawable, s.lanes, { cap: cap - 1 });
-      }
-      natural = LANE_HEIGHT;
-      minimum = MIN_LANE_HEIGHT;
-    }
-    // The lanes are laid out into the height the pane has. They grow into the
-    // room it has going spare, as far as the cap above, and they shrink to fit
-    // down to a floor; past that the drawing is taller than the pane and the
-    // pane scrolls, which is better than a row two pixels high. The drawing is never shorter than
-    // the pane either, so the band and its handles run its whole height and
-    // there is no dead strip under the last lane.
+    // **As many rows as it takes, and no ceiling** (M77). There was one — the
+    // number the pane could hold at a 14 px floor — and past it the bars
+    // shared a row and stacking drew the overlap as one bar with a count.
+    // Every bar carries its title now, and a title is not something the
+    // timeline may pack away to keep its drawing inside the pane: what does
+    // not fit the pane is what the pane scrolls to.
+    //
+    // And what the packing reserves is the bar **and its title**: two bars a
+    // hair apart whose titles run over each other are two titles nobody can
+    // read, which is the fault this section exists to fix and not a smaller
+    // version of it.
+    lanes = rowLanes(near, scale, width, {
+      openEnd: domain[1],
+      gap: ROW_GAP,
+      extra: (event) => labelRoom(labelOf(atlas, event)),
+      affinity: (event) => (pathIds.has(event.id) ? 'chain' : event.place ?? null),
+    });
+    // The rows are laid out into the height the pane has: they grow into the
+    // room it has going spare, as far as `LANE_MAX`, and they never shrink
+    // below the height a title needs. The drawing is never shorter than the
+    // pane either, so the band and its handles run its whole height and there
+    // is no dead strip under the last row.
     const rows = Math.max(lanes.length, 1);
-    laneHeight = laneHeightFor(paneHeight, rows, { natural, minimum });
+    laneHeight = laneHeightFor(paneHeight, rows, { natural: ROW_HEIGHT, minimum: ROW_HEIGHT });
     // A whole number of pixels, and the last lane carried down to it. A lane
     // height that divides the pane exactly — which is what a full pane gives,
     // 337 over twenty rows — makes `rows * laneHeight` land a fraction of a
@@ -732,48 +676,21 @@ export function createTimeline(container, { atlas, state, createScale = createTi
         if (d) into.strips.take('path', { d, class: 'bar stub faded', 'aria-hidden': 'true' });
       }
     }
-    // A parent over its parts: a thin rule along the top edge of the lane they
-    // share, spanning them (large.js). Only where they do share one — a parent
-    // whose parts cross lanes is a large event and has the band above instead
-    // — and only where the lanes are named, since with no grouping the rows
-    // are packed and there is no vertical room for it (health review §5.2.4).
-    // Not a control: what an event is part of is read on its card.
-    if (s.group !== 'none') {
-      for (const { event, lane, parts } of bracketsIn(near, lanes, atlas)) {
-        const i = lanes.indexOf(lane);
-        if (i < 0) continue;
-        const boxes = parts.map((part) => barBox(part, scale, { openEnd: domain[1] }));
-        const y = AXIS_HEIGHT + i * laneHeight + 2;
-        into.brackets.take('line', {
-          x1: Math.min(...boxes.map((b) => b.x)),
-          x2: Math.max(...boxes.map((b) => b.x + b.width)),
-          y1: y,
-          y2: y,
-          class: 'bracket',
-          'data-parent': event.id,
-        }, { title: `${labelOf(atlas, event) ?? LOADING_LABEL} — the ${parts.length} event${parts.length === 1 ? '' : 's'} inside it` });
-      }
-    }
+    // A parent's parts used to be drawn with a bracket over them — a thin rule
+    // along the top edge of the lane they shared — and only where the lanes
+    // were named, which since M77 they never are. It went with the grouping.
+    // What says an event has parts is the ring around its bar, on this view as
+    // on the other two (parts.js), and what a click on it does is open it.
 
     const deferred = [];
     lanes.forEach((lane, i) => {
-      for (const item of laneBars(into.bars, into.badges, into.glyphs, lane, i, byLane.get(lane.id), s, window, actorIds, narrativeIds, pathIds, reachable, working.lensNear)) {
+      for (const item of laneBars(into.bars, into.rings, into.barLabels, into.glyphs, lane, i, byLane.get(lane.id), s, window, actorIds, narrativeIds, pathIds, reachable, working.lensNear)) {
         deferred.push({ item, i });
       }
     });
     for (const { item, i } of deferred) {
       const y = barTop(i);
-      const classes = ['bar',
-        item.instant ? 'instant' : '',
-        item.ongoing ? 'ongoing' : '',
-        item.inside ? '' : 'faded',
-        item.lensNear ? 'lens-near' : '',
-        item.depth === null ? '' : `in-horizon ${horizonBand(item.depth)}`,
-        item.ofNarrative ? 'of-narrative' : '',
-        item.ofActor ? 'of-actor' : '',
-        item.onPath ? 'on-path' : '',
-        item.selected ? 'selected' : '',
-      ].filter(Boolean).join(' ');
+      const classes = barClasses(item);
       const name = labelOf(atlas, item.event);
       into.held.take('rect', {
         x: item.x, y, width: item.width, height: barHeight(), rx: BAR_ROUND, class: classes, 'data-id': item.id,
@@ -783,7 +700,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       // layer's own pool rather than the bars': it has to sit above the
       // neighbours its bar sits above.
       if (isParent(atlas, item.event)) {
-        into.held.take('rect', {
+        into.heldRings.take('rect', {
           x: item.x - RING_GAP, y: y - RING_GAP,
           width: item.width + RING_GAP * 2, height: barHeight() + RING_GAP * 2,
           rx: BAR_ROUND + RING_GAP, class: ringClasses(classes, 'bar'),
@@ -800,11 +717,12 @@ export function createTimeline(container, { atlas, state, createScale = createTi
           classes: glyphClasses(classes, 'bar'),
         }));
       }
-      if (item.selected || item.onPath) {
-        into.heldLabels.take('text', {
-          x: item.x + item.width + 4, y: y + barHeight() / 2, class: `bar-label ${item.selected ? 'selected' : ''}`, 'dominant-baseline': 'middle',
-        }, { text: name ?? '' });
-      }
+      // And its title, like every other bar's — it was the selection's and
+      // the walked path's alone until M77, which is exactly the half of the
+      // owner's sentence this milestone is about.
+      barLabel(into.heldLabels, item, {
+        classes, y, height: barHeight(), name,
+      });
     }
 
     if (window) {

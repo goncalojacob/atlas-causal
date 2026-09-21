@@ -13,7 +13,6 @@ import { esc } from '../util/esc.js';
 import { consequences, antecedents, convergence, convergenceByDepth } from '../graph.js';
 import { chainEdges as walkedEdges, walkProvenance } from '../chain.js';
 import { formatInterval, formatYear, defaultCalendar } from '../util/dates.js';
-import { laneExplain } from '../lanes.js';
 import { horizonHtml } from './horizon.js';
 import { eventsOfFocus } from '../lens.js';
 import { largeEvent } from '../large.js';
@@ -263,27 +262,11 @@ function whereHtml(ctx, event) {
   return ` · <span class="where">${name} <span class="muted">(${esc(where.precision)})</span></span>`;
 }
 
-// Where this event is drawn, and by what rule. An event is in exactly one
-// lane and the rule that picked it is mechanical, so it can be stated: a
-// rule the reader cannot see is a rule they cannot check.
-//
-// Which lane that is depends on the window — the heaviest of an event's
-// actors is counted inside the band (lanes.js) — so this is one of the two
-// bits of the event card the band moves. It carries a slot of its own
-// because panel.js writes it back into a card it is deliberately not
-// rebuilding (B12, A3).
-export function drawnHtml(ctx, event, state) {
-  const lanes = ctx.lanes(state);
-  const { lane, reason, others } = laneExplain(event, lanes, state.group, ctx.atlas);
-  if (!lane) {
-    return `<p class="drawn muted" data-slot="drawn">Drawn in a packed row: with no grouping the timeline fits the bars
-      where they go and the graph has no bands.</p>`;
-  }
-  const also = others.length
-    ? ` Also involves ${others.map((o) => esc(o.label)).join(', ')}.`
-    : '';
-  return `<p class="drawn muted" data-slot="drawn">Drawn in the <strong>${esc(lane.label)}</strong> lane${reason ? ` (${esc(reason)})` : ''}.${also}</p>`;
-}
+// There was a paragraph here saying which lane the event is drawn in and by
+// what rule — "Drawn in the Salazar lane (heaviest of its actors)". It went
+// with the grouping in M77: there is one arrangement of the rows now, the
+// rows have no names, and a sentence explaining a choice the reader can no
+// longer make is a sentence about nothing.
 
 // Exported for the tests: there is no DOM in node --test, and the card is
 // the string, as the actor's and the source's are. `remembered` is the
@@ -412,7 +395,6 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
       ${partOfEventHtml(ctx, event)}
       ${subtreeLensHtml(ctx, event)}
       ${actorChipsHtml(ctx, event, highlightedActor?.id ?? null)}
-      ${drawnHtml(ctx, event, state)}
       ${largeEventHtml(ctx, event)}
       ${standingSlot()}
       <div class="head-links">${ctx.entryLink('event', event.id)}${ctx.wikipediaHtml(event)}${ctx.discussLink('event', event.id)}</div>

@@ -16,12 +16,23 @@ import { layoutGraph } from '../src/graph-view/layout.js';
 import { packInput, unpackInput, packLayout, unpackLayout } from '../src/graph-view/layout-message.js';
 import { arrangeMessage } from '../src/graph-view/layout-worker.js';
 import { createLayoutRunner, OFFLOAD_ABOVE } from '../src/graph-view/layout-runner.js';
-import { lanesFor } from '../src/lanes.js';
 
 const REGIONS = [
   { id: 'europe', label: 'Europe', order: 1 },
   { id: 'africa', label: 'Africa', order: 2 },
 ];
+
+// One lane per region, with its events in it. It was `lanesFor('region', …)`
+// until M77, when the named lanes went with the grouping; `layoutGraph` still
+// takes lanes and this is the shape it takes them in, so the bands can go on
+// being tested without a grouping to ask for them.
+const regionLanes = (events, regions = REGIONS) => regions.map((r) => ({
+  id: r.id,
+  label: r.label,
+  other: false,
+  members: new Set(events.filter((e) => e.region === r.id).map((e) => e.id)),
+  count: events.filter((e) => e.region === r.id).length,
+}));
 
 const event = (id, region, year, weight = 1) => ({
   id,
@@ -54,7 +65,7 @@ function graph(count = OFFLOAD_ABOVE + 40) {
   return {
     events,
     edges,
-    lanes: lanesFor('region', { activeEvents: events, regions: REGIONS }),
+    lanes: regionLanes(events),
     extent: { min: Math.min(...starts), max: Math.max(...starts) },
   };
 }
