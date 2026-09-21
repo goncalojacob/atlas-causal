@@ -35,7 +35,7 @@ const DESK = { width: 1280, height: 900, deviceScaleFactor: 1 };
 // are a smaller and smaller part of the picture. Measured on 21 September, at
 // the whole extent, the map draws 17 marks of which 4 carry an id, and the
 // lens of one event draws 4 marks all of which do — the map narrowed by a
-// factor of four and the id count did not move at all (M42, deviation 952).
+// factor of four and the id count did not move at all (M42, deviation 976).
 const VIEWS = {
   map: { selector: '#map svg .mark[data-id]', drawn: '#map svg .mark', url: '' },
   graph: { selector: '#graph svg.graph circle.node[data-id]', drawn: '#graph svg.graph circle.node', url: '&view=graph' },

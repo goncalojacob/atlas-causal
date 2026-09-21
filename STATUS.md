@@ -13650,6 +13650,106 @@ dissent it found.
      prose it wrote is a `review.note` about a record's own staleness and the
      two documents under `docs/`.
 
+## M42 — the world at scale (in progress, branch `m42`)
+
+Lane B. `docs/m42-pool.md` is the measurement amendment A1 asks for and the
+batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
+every edge. **The milestone is not done**: §7 of the pool file says where it
+stands and what the next fire does.
+
+**Three batches, none of them an import.** The pool before: 310 active events,
+229 of them main, 362 active edges, a largest connected component of 254 and
+23 events with no edge. After batch 2a: **332 active, 244 main, 387 edges,
+largest component 274, 21 with no edge**. Twenty-two records came back, all of
+them already written and sitting as tombstones, and twenty-five edges were
+written — eighteen in batch 0 and seven in batch 1.
+
+**The finding this run turned on.** The brief's §2 is about the fifty M44b
+retracted. The bar of §1 is not about M44b, and the corpus holds 229
+tombstones: two hundred of M21's and M22's are Portuguese elections, bank
+robberies and local disasters, correctly withdrawn, but **M40b's twenty-eight
+are world events with full summaries**, each withdrawn on 7 September with its
+reason naming the record it was waiting for. Seven of those blockers have
+since stopped being true. The cheapest events this milestone gets are not in
+Wikidata; they are in `data/events/` with `status: retracted`.
+
+### Deviations
+
+973. **The seeds are exhausted and the sweep is not.** Amendment A2 says the
+     pool is exhausted; `data/imports/wikidata-seeds.json` names 703 items and
+     all 703 are walked, so that half is exact. `docs/wikidata-candidates.md`
+     holds **1,586 rows whose item is on no record here and in no seed**, which
+     is the pool this milestone draws on. The fresh `--candidates` pass was run
+     anyway, because A2 names it.
+
+974. **The hinges are not in the sweep, so they were seeded by name.** Applying
+     the tick rule of `docs/m42-pool.md` §5 to the committed sweep finds five
+     of the sixteen named neighbours; the dissolution of the Soviet Union, the
+     revolutions of 1989, the breakup of Yugoslavia, the Bosnian war, the
+     partition of India and the Troubles are not in it at all — which is what
+     M44b said when it retracted the Romanian revolution. Twelve ids were
+     resolved against Wikidata and added to `items` directly, as M44a added 111
+     from ticks. Substring-matching a label instead would have taken `Q4892411`,
+     a diplomatic conference of 1954, for the Berlin conference of 1884.
+
+975. **`Q5167679` takes `europe`, and it is deviation 447's open question.**
+     The dissolution of the Soviet Union is ground across two lanes, which the
+     owner was asked about and has not answered. It takes `europe` because
+     every Soviet and Russian event this atlas already draws is in `europe`.
+     Consistency with the corpus and not a judgement about where the Soviet
+     Union was; one line in `lanes` to undo. **`Q33761`, the Arab Spring, has
+     no such precedent and stays refused**, with the three tombstones that wait
+     on it named in `docs/m42-connections.md` §5.
+
+976. **`tests/m65-browser.test.mjs` asserted narrowing by counting marks that
+     carry a `data-id`, and a stack carries none.** At the whole extent the map
+     now draws 17 marks of which 4 carry an id, and the lens of one event draws
+     4 marks all of which do: the map narrowed fourfold and the count did not
+     move, so the assertion failed on a corpus 22 events larger. Narrowing is
+     now read off everything the view drew, and what carries an id during a
+     selection is asserted to be inside the lens — which the count could never
+     say. This is the brief's test 2 in a shape it did not predict: not a test
+     that pins a count, but a test whose proxy the corpus outgrows.
+
+977. **`tests/m62.test.mjs` and `tests/m67.test.mjs` read one document each and
+     would have stopped any later milestone filing anything.** Each asserted
+     that a filed child is argued for in *its own* measurement file. The
+     property is that a filing nobody argued in writing fails; they now read
+     the measurements together. Nothing was loosened and the assertions are
+     the same.
+
+978. **`docs/m53-polities.md` §4.1 takes an "after M42" row and it is rewritten
+     as each batch lands.** That file's correspondence test holds its last row
+     to the corpus, so a milestone that changes the corpus must update it. The
+     numerator stands where M67 left it and the denominator grows — 306 of 332
+     against 306 of 310 — because every record this milestone puts back is an
+     imported one carrying `actors: []`, and M67's amendment A1 says that is
+     not a defect.
+
+979. **One edge runs between two records that were both already here.**
+     `1948-arab-israeli-war --precondition-of--> lebanese-civil-war`. M44b's
+     discipline was that every edge have one end on a new record; amendment A5
+     asks for the component to grow, and without this edge the Lebanese pair
+     stays a component of its own. Said plainly because it is a change of
+     practice and not an oversight.
+
+980. **`kashmir-conflict` carried `when.end: 1947`** for a conflict its own
+     article dates from the partition and describes as continuing. The end is
+     `null` now and the article is cited on the record for it. No day was
+     supplied, because none was read — M44c's rule for the Croatian war.
+
+981. **A `git checkout HEAD -- .` in this sandbox discarded batch 1's tracked
+     edits after they had been validated and tested.** Everything was replayed
+     from the scripts that wrote it and the numbers came back identical, which
+     is the argument for a batch being a script and not a sequence of hand
+     edits. The untracked files — the seven new edge records — survived.
+
+982. **No historical claim was written.** Every edge explanation is a
+     paraphrase of a sentence the cited article carries at the cited revision,
+     and every citation names the article, the revision and the section. No
+     date was invented, no record was created, and nothing was merged into
+     `main`.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
