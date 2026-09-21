@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "fifer-1970-empire-builders",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "article",
+  "creators": [
+    "Valerie Fifer"
+  ],
+  "title": "The Empire Builders: A History of the Bolivian Rubber Boom and the Rise of the House of Suarez",
+  "year": 1970,
+  "publisher": null,
+  "isbn": null,
+  "doi": "10.1017/S0022216X00005095",
+  "url": "https://www.jstor.org/stable/156583",
+  "accessed": null,
+  "container": {
+    "title": "Journal of Latin American Studies",
+    "kind": "journal",
+    "volume": "2",
+    "issue": "2",
+    "pages": null
+  },
+  "repository": null,
+  "reference": null
+}

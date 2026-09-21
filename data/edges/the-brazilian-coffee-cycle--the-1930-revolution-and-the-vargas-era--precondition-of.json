@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
+  "revised": "2026-09-21",
   "origin": {
     "tool": "assistant",
     "run": "m57"
@@ -21,13 +21,18 @@
   "review": {
     "status": "draft",
     "flags": [
-      "m57-narrative"
+      "m57-narrative",
+      "m72-second-source"
     ]
   },
   "sources": [
     {
       "source": "wikipedia-en",
       "locator": "\"Coffee production in Brazil\", revision 1371259594"
+    },
+    {
+      "source": "fausto-1999-concise-history-of-brazil",
+      "locator": "pp. 160–161"
     }
   ],
   "from": "the-brazilian-coffee-cycle",
