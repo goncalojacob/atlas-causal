@@ -1125,3 +1125,71 @@ instruments the filing pass refused under M67's judgement 2 — conventions,
 treaties and protocols whose author is a body of states. They are the honest
 remainder of A6's target and no period will take them; what would is a
 different umbrella entirely, and nobody has asked for one.
+
+## Batch 22 — the Arab Spring's own origin, which nothing here held
+
+*21 September, the second batch of the same fire, and it is batch 17's rule
+read off a new umbrella: **a record that names what it is missing is worth
+more than a row that ranks well.** Batch 21 wrote `arab-spring` and filed two
+events under it; the article it was written from says where the wave began,
+and the corpus did not hold it.*
+
+| | |
+| --- | --- |
+| imported | **1** — `tunisian-revolution` (Q46959) |
+| classes added | 1 — Q3109572 *civil resistance* |
+| edges written | **3** |
+| filed | 1, under `arab-spring` |
+| corpus | 499 → **500** active |
+| **main** | 251, **unchanged** — the import arrived main and was filed in the same batch |
+| largest connected component | 442 → **445** |
+| components | 30 → **29** |
+
+**This is the shape A5 and A6 ask for together**, and it is worth naming
+because the two amendments usually pull against each other: an import that
+files itself leaves the main count where it found it, and an import chosen
+because a fragment needs it moves the component by more than itself. One
+record joined three: `libyan-civil-war` and `mali-war` were a component of two
+and are now on the main chain, and `tunisian-revolution` is on it with them.
+
+**The three edges, each quoting the article it rests on.** The Arab Spring's
+own lead, at revision 1373656404, is the spine of all three: *"It began in
+Tunisia in response to the death of Mohamed Bouazizi by self-immolation. From
+Tunisia, the protests initially spread to five other countries: Libya, Egypt,
+Yemen, Syria and Bahrain."*
+
+- `tunisian-revolution --inspired--> 2011-egyptian-revolution`. Egypt's own
+  article gives the occasion as National Police Day and the grievance as
+  police brutality and does not name Tunisia, so what the edge asserts is the
+  spread the first article states.
+- `tunisian-revolution --inspired--> libyan-civil-war`. The war's article says
+  it was ignited by protests in Benghazi *"inspired by the Arab Spring"*.
+- `tunisian-revolution --inspired--> 2011-yemeni-revolution`. Yemen's article
+  is the most cautious of the three — it says the uprising *"occurred
+  concurrently with the Arab Spring"* — and the edge is written at the
+  strength that supports.
+
+All three are `inspired` and `probable`. **None is `caused`**: not one of the
+four articles says a Tunisian event brought about a foreign one, and rule 22
+would refuse `consensus` to a citation list that is one encyclopedia twice
+over.
+
+**Two fragments were read and left alone, with what each waits on.** The Horn
+of Africa's six (`ethiopian-civil-war`, `eritrean-war-of-independence`,
+`eritrean-ethiopian-war`, `ogaden-war`, `somali-civil-war`, `tigray-war`) and
+Sudan's five (`first-sudanese-civil-war`, `second-sudanese-civil-war`,
+`war-in-darfur`, `2011-south-sudanese-independence-referendum`,
+`south-sudanese-civil-war`) are the two largest fragments left, and the leads
+of all three articles read for them — the Ethiopian civil war at revision
+1375950588, the Ogaden war at 1373903527, the first Sudanese civil war at
+1375454294 — **name no event this atlas holds outside their own fragment**.
+The Tunisian move worked because the umbrella's article named the missing
+record in its first sentence; neither of these does, and the hinge each wants
+is a paragraph further into an article than a summary endpoint returns. That
+is a fetch a later fire can spend, and it is not a judgement about history.
+
+**Also read and refused a bridge**: `british-expedition-to-tibet` and
+`treaty-of-lhasa` are a pair of two, and `british-russian-convention` is the
+obvious third — but the convention's lead, at revision 1358051340, is about
+the Great Game and Persia and never mentions Tibet. An edge written on that
+lead would be this run's argument and not the source's.

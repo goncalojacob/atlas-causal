@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "tunisian-revolution--libyan-civil-war--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Arab Spring\", revision 1373656404, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Libyan civil war (2011)\", revision 1374512354, § lead"
+    }
+  ],
+  "from": "tunisian-revolution",
+  "to": "libyan-civil-war",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The war's own article says what set it off and what that answered: “The war was ignited by protests in Benghazi beginning on 15 February 2011 inspired by the Arab Spring, which led to clashes with security forces and armed protesters.” It credits the wave rather than any one country, and the Arab Spring's article says where the wave came from and that Libya was one of the five it reached: “It began in Tunisia in response to the death of Mohamed Bouazizi by self-immolation. From Tunisia, the protests initially spread to five other countries: Libya, Egypt, Yemen, Syria and Bahrain.” The link is therefore to the origin of the wave and is `inspired`; a `caused` edge would claim more than either article does.",
+  "dispute": null
+}

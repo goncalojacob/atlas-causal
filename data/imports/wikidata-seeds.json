@@ -869,7 +869,8 @@
     "Q2120252",
     "Q8669",
     "Q1519107",
-    "Q2342102"
+    "Q2342102",
+    "Q46959"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1013,7 +1014,8 @@
     "Q8669": "asia",
     "Q1519107": "asia",
     "Q2342102": "asia",
-    "Q33761": "africa"
+    "Q33761": "africa",
+    "Q46959": "africa"
   },
   "queries": [
     {
@@ -4050,6 +4052,11 @@
       "category": "war",
       "label": "international conflict",
       "note": "Added in M42 batch 18 for the umbrella A6 asks the asia lane for, which docs/m42-pool.md nominated: the Arab–Israeli conflict, Q8669. The label and description are read from the item itself over the network. Wikidata glosses it “dispute between nations” and the war category as data/categories.json has it is organised armed force between polities, which a conflict of eight wars is. Its other class, Q766875 ethnic conflict, is left out of the table rather than refused: one known class is enough to classify the item and a second would only be a second place to argue."
+    },
+    "Q3109572": {
+      "kind": "event",
+      "label": "civil resistance",
+      "note": "Added in M42 batch 22 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own. The class is here because the Arab Spring’s own origin event — the Tunisian revolution, which every other record of that wave points back to — carries it and the table did not. No category: a campaign of civil resistance is not one of the twelve kinds of event, and most of them are not revolutions in the end."
     }
   },
   "reconcile": true
