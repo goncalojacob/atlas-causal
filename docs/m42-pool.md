@@ -412,7 +412,9 @@ against six of fifteen, and nine tombstones back in one batch against eleven
 across the previous eight. The rule is in §5 above, written before a box was
 ticked, and it recomputes from `data/events/*.json` rather than from a list, so
 it cannot go stale and it cannot run out while the atlas keeps writing down
-what it is missing. **The next fire should run set 0 again**, not sets 3 and 4.
+what it is missing — **though the paragraph three below this one qualifies that
+last clause sharply, and it was written by the same batch an hour later**: set 0
+recomputes but it does not refill, and batch 17 took almost everything it had.
 
 **What set 0 does not buy is reach, and batch 17 is where that shows.** Corpus
 +23 and component +9: the other fourteen went into six new pairs and trios,
