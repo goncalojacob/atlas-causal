@@ -221,17 +221,27 @@ test('a state change updates the bars in place and does not rebuild them', { ski
     await open(page, url(on('selected=carnation-revolution-1974&focus=none')), READY);
     // Every element the timeline has drawn, watched for children coming and
     // going. `subtree` so the layers themselves are covered.
-    // Elements only. A bar that now stands for a different event still has
-    // its own <title>, and the text inside that title is replaced — a text
-    // node coming and going is the label changing, not the drawing being
-    // rebuilt, and it is the element that costs layout.
+    // Elements only, and **not `<title>`**, which is the clause M42 had to
+    // write down rather than raise a bound over. A bar that now stands for a
+    // different event still has its own <title>, and the text inside it is
+    // replaced — a text node coming and going is the label changing, not the
+    // drawing being rebuilt, and it is the element that costs layout. The
+    // tooltip element itself is in the same position: it is never laid out,
+    // never painted and never part of the picture. It moves because the ring
+    // a parent's bar is drawn with shares the bars layer with the bars and
+    // carries no title (timeline.js), so `reuse()`'s positional take hands
+    // position *i* to a ring in one render and to a bar in the next and the
+    // title goes with it. **Filing events under parents makes rings**, which
+    // is what M42's A6 pass does by the dozen, so this count rises with every
+    // umbrella while nothing about the drawing changes. What this test is
+    // about is the drawn elements, and those are counted here.
     await page.eval(`
       window.__added = 0;
       window.__removed = 0;
       new MutationObserver((records) => {
         for (const r of records) {
-          for (const n of r.addedNodes) if (n.nodeType === 1) window.__added += 1;
-          for (const n of r.removedNodes) if (n.nodeType === 1) window.__removed += 1;
+          for (const n of r.addedNodes) if (n.nodeType === 1 && n.tagName !== 'title') window.__added += 1;
+          for (const n of r.removedNodes) if (n.nodeType === 1 && n.tagName !== 'title') window.__removed += 1;
         }
       }).observe(document.querySelector('#timeline svg.timeline'), { childList: true, subtree: true });
       return true;`);
