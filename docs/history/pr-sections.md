@@ -3267,7 +3267,7 @@ three milestones later.
 
 ### Tests
 
-`tests/m76.test.mjs` (14) and `tests/m76-browser.test.mjs` (8), written before
+`tests/m76.test.mjs` (15) and `tests/m76-browser.test.mjs` (8), written before
 the behaviour they judge (711, 717) and pushed before it. **No test pins a
 count or a pixel.** Changed first, as the brief requires:
 `tests/m74-browser.test.mjs`'s resting-camera test, the three band tests in
@@ -3280,11 +3280,27 @@ window probes in `m60-browser`, `m75-browser` and `panel-browser`.
 
 `node tools/validate.mjs --index`: **10,653 records, 5 regions, 0 errors, 238
 warnings** — unchanged, because **no record was touched and no historical claim
-written**; nothing under `data/` changed at all. `node --test`: **1,687 pure
-and 225 browser, 1,912 in all, 0 failed and 0 skipped**, the browser suites one
+written**; nothing under `data/` changed at all. `node --test`: **1,688 pure
+and 225 browser, 1,913 in all, 0 failed and 0 skipped**, the browser suites one
 at a time as the check runs them (M63). No new runtime dependency, no build
 step, **no new hex value, token or type size**; `lanes.js`, `cluster.js`,
 `emphasis.js`'s `shown` contract and `window-band.js`'s gestures unchanged.
-`docs/drafts/` ignored. Deviations **1100 to 1108** — lane A numbers from 1100
+`docs/drafts/` ignored. Deviations **1100 to 1109** — lane A numbers from 1100
 from this milestone, because M75's 999–1004 and lane B's M42 block from 950
 overlap; the overlap is recorded, not rewritten.
+
+### And the prose that still described what went
+
+`about.html` told a reader the graph's window "is the shaded band across the
+picture" and that what falls outside it "fades rather than leaving": the two
+sentences section 3 makes false, on the page that explains the atlas to
+somebody who has not used it. It now says the graph ignores the window and
+that a period is somewhere you zoom and pan to, and its window paragraph says
+the band is over the map as well as on the timeline and is the whole of how a
+window is set. `CLAUDE.md`'s layout tree for `window-control.js`,
+`window-band.js`, `density.js`, `graph-view.js` and `frame.js`, which still
+described fields to type a year into and a shaded window on the graph, and two
+source comments that named `windowPatch` or said the fields were still in the
+masthead. Words only — no gesture and no behaviour — with one test beside
+them: *an actor chosen and an actor focused draw the same profile*, the set
+identity the phone picture stands on. Deviation 1109.
