@@ -38,6 +38,7 @@ import { onScreen } from '../map/layers/events.js';
 import { arrangementOf, holdingKey } from './arrangement.js';
 import { layoutGraph, stackLayout, MIN_ZOOM, MAX_ZOOM } from './layout.js';
 import { createLayoutRunner } from './layout-runner.js';
+import { frameFor } from './frame.js';
 import { LABEL_SIZE, fitLabel, shorten } from './label-fit.js';
 import { exportButton } from '../share.js';
 
@@ -86,8 +87,16 @@ const mergedWidth = (count) => MERGED_BASE + Math.log2(count) * MERGED_STEP;
 const CLUSTER_ZOOM_STEP = 1.2;
 // As far as the first drawing will zoom to a narrow window on its own, and
 // the share of the data a window has to be under before it zooms at all.
+// Since M74 the same cap holds a frame of a lens: opening on a walk and
+// opening on a narrow band go as far in as each other and no further.
 const FIT_ZOOM = 2;
 const FIT_SHARE = 0.6;
+// The room a frame leaves around what it frames: the widest a mark is drawn,
+// its ring and the ring's own stroke. In the SVG's units, which is what a mark
+// measures in at any zoom — the radius is divided by k and the viewport
+// multiplies by it — so a node framed at the very edge of the rectangle would
+// be a node half off the screen (frame.js).
+const FRAME_PAD = SELECTED_RADIUS + RING_GAP + RING_WIDTH;
 // How many arrangements and how many stackings are kept. Small on purpose:
 // what these are for is the reader who narrows the band and widens it again,
 // or zooms in and back out, and finds the picture already there. Holding
@@ -199,12 +208,23 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // map, never stacks the reachable set: the horizon is the answer this
   // picture exists to draw, and a band inside a stack is a band the reader
   // cannot read off.
+  //
+  // Kept by the working set it is made of and **not by the state**, which is
+  // what it was keyed on until M74. Two of the things a lens is built from
+  // arrive after the state does — a narrative's steps come with their century,
+  // an actor's ground with its own file (lens.js, `stamp`) — and `workingSet`
+  // answers again when they land, on the very same state object. This cache
+  // did not: the answer computed before the walk existed stood for the rest of
+  // the session, so eighteen events of a twelve-step lens were swallowed by
+  // stacks that M25's rule says may never hold one. `workingSet` replaces the
+  // object exactly when the answer changes, so the object is the key.
   let aloneFor = null;
   let aloneIs = null;
   const alonesOf = (s) => {
-    if (s !== aloneFor) {
-      aloneFor = s;
-      aloneIs = heldSet(workingOf(s), { lens: true, reachable: true });
+    const working = workingOf(s);
+    if (working !== aloneFor) {
+      aloneFor = working;
+      aloneIs = heldSet(working, { lens: true, reachable: true });
     }
     return aloneIs;
   };
@@ -235,18 +255,19 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // the last picture stays on screen, and a stacking of it must not be filed
   // under the key of a layout it was not made from.
   let laidFor = null;
-  let fitted = false;
   const runner = createLayoutRunner({ records: { events: atlas.events, edges: atlas.edges } });
 
-  // Pan e zoom, como o mapa os tem. Não estão no estado: o URL carrega o que
-  // o leitor está a ver, não até onde deslocou a vista.
+  // Pan and zoom, as the map has them. Not in the state: the URL carries what
+  // the reader is looking at, not how far they have pushed the view about.
   //
-  // Declarados aqui, acima do primeiro `arrange()`, e não junto aos gestos que
-  // os usam: o primeiro `adopt()` chama `fitToWindow()`, que atribui
-  // `transform` e chama `applyTransform`. Numa janela estreita — um passo de
-  // narrativa, ou um `?from=&to=&view=graph` partilhado — `fitToWindow` não
-  // sai mais cedo e morria com `Cannot access 'transform' before
-  // initialization`, deixando o painel do grafo escondido.
+  // Declared here, above the first `arrange()`, rather than beside the
+  // gestures that use them. It was `adopt()` calling `fitToWindow()` that
+  // needed that — on a narrow window, a narrative's step or a shared
+  // `?from=&to=&view=graph`, the fit did not return early and died with
+  // `Cannot access 'transform' before initialization`, leaving the graph's
+  // pane blank. Where the camera is put moved into `render` in M74 and the
+  // hazard went with it; the declaration stays where it is, because every
+  // gesture below still reads it.
   let transform = { x: 0, y: 0, k: 1 };
   // Whether the zoom in force was chosen to part a stack, in which case the
   // stacking is done at exactly it rather than at the bucket below it: the
@@ -316,12 +337,10 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     waiting.hidden = true;
     root.setAttribute('viewBox', `0 0 ${laid.width} ${laid.height}`);
     drawFrame();
-    // The first picture there has ever been is the one the window is fitted
-    // to, whether it was made here or arrived from the runner's thread.
-    if (!fitted) {
-      fitted = true;
-      fitToWindow();
-    }
+    // Where the camera is put is decided in `render`, on the drawing that
+    // follows this one: it needs the rectangle the reader can see, and asking
+    // for that here would be asking the browser to lay out a picture that has
+    // not been drawn yet.
   }
 
   function arrange(s) {
@@ -580,6 +599,9 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // And there is no picture at all until the first arrangement lands, which
     // it does on this turn at every size this atlas has held (layout-runner).
     if (!laid) return;
+    // Then where the camera stands, which is not one of the reader's gestures
+    // and has to be settled before the rectangle below is read off it.
+    frameCamera(s);
     const box = view();
     const key = renderKey(s, transform.x, transform.y, transform.k, shardsArrived(atlas),
       Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
@@ -894,14 +916,64 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     }
   }
 
+  // --- where the camera starts ----------------------------------------------
+  //
+  // Not a gesture and not in the URL: a link carries the picture its sender
+  // saw, and the reader's own pan and zoom are theirs to keep. Two rules, and
+  // which of them applies is the one question this function asks.
+  //
+  // **At rest the camera is the window's** and nothing else, exactly as it has
+  // been since deviation 54: the first drawing zooms to a narrow band so that
+  // a reader arriving on one does not have to hunt for it, and after that
+  // nothing moves the camera but the reader.
+  //
+  // **With a lens on the camera is the lens's** (M74). The graph draws what
+  // falls inside the rectangle on screen and nothing else (I6's cull), so the
+  // opening rectangle decides what a reader sees of their own question — and
+  // where the layout happens to put a walk is a fact about the arrangement,
+  // not about the question. Two thirds of the owner's twelve-step argument
+  // about the colonial war fell outside that rectangle and were not in the
+  // picture at all, while the map and the timeline, which have no camera,
+  // went on drawing every step. The frame is offered the lens widest first —
+  // everything it draws, then the focus alone — so an event chosen with a
+  // small ring is framed with its ring and one whose ring is wider than the
+  // pane is framed on the event (frame.js).
+  //
+  // The key is the arrangement's own, which already carries the lens as it is
+  // *applied* and not as it is written (arrangement.js): a new question, or a
+  // new arrangement of the same one — a narrative's step moving the band under
+  // its own walk — frames again, and a pan, a zoom or a click inside the lens
+  // does not. At rest it collapses to one string, so moving the band never
+  // re-fits a picture the reader is already holding.
+  let framedFor = null;
+  function frameCamera(s) {
+    const working = workingOf(s);
+    const key = working.lens ? arrangedFor : '';
+    if (key === framedFor) return;
+    framedFor = key;
+    if (!working.lens) {
+      fitToWindow();
+      return;
+    }
+    const wanted = [working.shown, working.lensFocus].filter(Boolean);
+    const at = frameFor(laid.nodes, wanted, visibleBox(), {
+      min: MIN_ZOOM, max: FIT_ZOOM, pad: FRAME_PAD,
+    });
+    // A lens the arrangement holds no node of leaves the camera alone: there
+    // is nothing to frame, and a frame of nothing would be a number invented.
+    if (!at) return;
+    transform = at;
+    exactZoom = false;
+    applyTransform();
+  }
+
   // The reader arriving on a narrow window should not have to hunt for it,
   // so the first drawing zooms to it. Capped: a window of two years filling
   // the width would push the outer bands off the screen, and the bands are
   // what the view is read against (STATUS.md, deviation 54).
   //
-  // A declaration rather than a const, because `adopt` calls it on the first
-  // arrangement, and that may be an arrangement that arrives from elsewhere
-  // long after this line has been read.
+  // A declaration rather than a const, because `frameCamera` above calls it
+  // and is itself called from `render`, which is read long before either.
   function fitToWindow() {
     const timeWindow = resolveWindow(state.get(), atlas.extent, atlas.opens);
     if (!timeWindow || !laid) return;
