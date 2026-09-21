@@ -854,6 +854,12 @@
     },
     {
       "dissent": false,
+      "id": "armistice-of-mudros",
+      "kind": "event",
+      "locator": "Q328499"
+    },
+    {
+      "dissent": false,
       "id": "assassination-of-archduke-franz-ferdinand",
       "kind": "event",
       "locator": "Q192050"
@@ -881,6 +887,12 @@
       "id": "beer-hall-putsch",
       "kind": "event",
       "locator": "Q36749"
+    },
+    {
+      "dissent": false,
+      "id": "belovezh-accords",
+      "kind": "event",
+      "locator": "Q76986"
     },
     {
       "dissent": false,
@@ -971,6 +983,12 @@
       "id": "crisis-portugal",
       "kind": "event",
       "locator": "Q3002776"
+    },
+    {
+      "dissent": false,
+      "id": "croat-bosniak-war",
+      "kind": "event",
+      "locator": "Q1069736"
     },
     {
       "dissent": false,
@@ -1190,6 +1208,12 @@
     },
     {
       "dissent": false,
+      "id": "indo-pakistani-war-of-1947-1948",
+      "kind": "event",
+      "locator": "Q652285"
+    },
+    {
+      "dissent": false,
       "id": "indo-pakistani-war-of-1965",
       "kind": "event",
       "locator": "Q233583"
@@ -1292,6 +1316,12 @@
     },
     {
       "dissent": false,
+      "id": "locarno-treaties",
+      "kind": "event",
+      "locator": "Q152925"
+    },
+    {
+      "dissent": false,
       "id": "maastricht-treaty",
       "kind": "event",
       "locator": "Q11146"
@@ -1328,6 +1358,12 @@
     },
     {
       "dissent": false,
+      "id": "moscow-peace-treaty",
+      "kind": "event",
+      "locator": "Q695285"
+    },
+    {
+      "dissent": false,
       "id": "mueda-massacre",
       "kind": "event",
       "locator": null
@@ -1361,6 +1397,12 @@
       "id": "partition-of-india",
       "kind": "event",
       "locator": "Q129053"
+    },
+    {
+      "dissent": false,
+      "id": "peace-of-riga",
+      "kind": "event",
+      "locator": "Q1076469"
     },
     {
       "dissent": false,
@@ -1502,6 +1544,18 @@
     },
     {
       "dissent": false,
+      "id": "second-sudanese-civil-war",
+      "kind": "event",
+      "locator": "Q842380"
+    },
+    {
+      "dissent": false,
+      "id": "single-european-act",
+      "kind": "event",
+      "locator": "Q622649"
+    },
+    {
+      "dissent": false,
       "id": "sino-indian-war",
       "kind": "event",
       "locator": "Q208694"
@@ -1577,6 +1631,12 @@
       "id": "treaty-of-london",
       "kind": "event",
       "locator": "Q824165"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-neuilly-sur-seine",
+      "kind": "event",
+      "locator": "Q269267"
     },
     {
       "dissent": false,
@@ -1685,6 +1745,12 @@
       "id": "war-in-bosnia-and-herzegovina",
       "kind": "event",
       "locator": "Q181533"
+    },
+    {
+      "dissent": false,
+      "id": "war-in-darfur",
+      "kind": "event",
+      "locator": "Q190758"
     },
     {
       "dissent": false,

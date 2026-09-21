@@ -1231,6 +1231,34 @@
       ],
       "created": "2026-09-21",
       "from": "1991-soviet-coup-d-etat-attempt",
+      "id": "1991-soviet-coup-d-etat-attempt--belovezh-accords--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "belovezh-accords",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "1991-soviet-coup-d-etat-attempt",
       "id": "1991-soviet-coup-d-etat-attempt--dissolution-of-the-soviet-union--caused",
       "kind": "edge",
       "origin": {
@@ -2295,6 +2323,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "armistice-of-mudros",
+      "id": "armistice-of-mudros--treaty-of-sevres--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-sevres",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "assassination-of-archduke-franz-ferdinand",
       "id": "assassination-of-archduke-franz-ferdinand--world-war-i--caused",
@@ -2394,6 +2450,34 @@
       "status": "active",
       "to": "coup-28-may-1926",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "belovezh-accords",
+      "id": "belovezh-accords--dissolution-of-the-soviet-union--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "dissolution-of-the-soviet-union",
+      "type": "caused"
     },
     {
       "authors": [
@@ -3980,6 +4064,35 @@
       "status": "active",
       "to": "troika-bailout-2011",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "goldstein-1999-croatia-a-history"
+      ],
+      "created": "2026-09-21",
+      "from": "croatian-war-of-independence",
+      "id": "croatian-war-of-independence--croat-bosniak-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "croat-bosniak-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -7223,6 +7336,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "moscow-peace-treaty",
+      "id": "moscow-peace-treaty--continuation-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "continuation-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "macqueen-1997-decolonization",
         "telo-2007-historia-contemporanea"
       ],
@@ -7730,6 +7871,34 @@
       ],
       "created": "2026-09-21",
       "from": "partition-of-india",
+      "id": "partition-of-india--indo-pakistani-war-of-1947-1948--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "indo-pakistani-war-of-1947-1948",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "partition-of-india",
       "id": "partition-of-india--kashmir-conflict--caused",
       "kind": "edge",
       "origin": {
@@ -7943,6 +8112,34 @@
       "status": "active",
       "to": "cuban-revolution",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "polish-soviet-war",
+      "id": "polish-soviet-war--peace-of-riga--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "peace-of-riga",
+      "type": "caused"
     },
     {
       "authors": [
@@ -9112,6 +9309,62 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "second-sudanese-civil-war",
+      "id": "second-sudanese-civil-war--2011-south-sudanese-independence-referendum--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2011-south-sudanese-independence-referendum",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "second-sudanese-civil-war",
+      "id": "second-sudanese-civil-war--war-in-darfur--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "war-in-darfur",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wheeler-1978-republican-portugal",
         "ramos-2009-historia-de-portugal"
       ],
@@ -9153,6 +9406,34 @@
       "revised": null,
       "status": "active",
       "to": "noite-sangrenta-1921",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "single-european-act",
+      "id": "single-european-act--maastricht-treaty--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "maastricht-treaty",
       "type": "precondition-of"
     },
     {
@@ -9239,6 +9520,34 @@
       "revised": null,
       "status": "active",
       "to": "slavery-abolition-act-1833",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "soviet-afghan-war",
+      "id": "soviet-afghan-war--dissolution-of-the-soviet-union--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "dissolution-of-the-soviet-union",
       "type": "precondition-of"
     },
     {
@@ -11235,6 +11544,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "treaty-of-rome",
+      "id": "treaty-of-rome--single-european-act--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "single-european-act",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "treaty-of-sevres",
       "id": "treaty-of-sevres--turkish-war-of-independence--caused",
@@ -11337,6 +11674,34 @@
       "revised": null,
       "status": "active",
       "to": "beer-hall-putsch",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "treaty-of-versailles",
+      "id": "treaty-of-versailles--locarno-treaties--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "locarno-treaties",
       "type": "precondition-of"
     },
     {
@@ -11567,6 +11932,34 @@
       ],
       "created": "2026-09-21",
       "from": "war-in-bosnia-and-herzegovina",
+      "id": "war-in-bosnia-and-herzegovina--croat-bosniak-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "croat-bosniak-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "war-in-bosnia-and-herzegovina",
       "id": "war-in-bosnia-and-herzegovina--dayton-agreement--caused",
       "kind": "edge",
       "origin": {
@@ -11609,6 +12002,34 @@
       "revised": null,
       "status": "active",
       "to": "continuation-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "winter-war",
+      "id": "winter-war--moscow-peace-treaty--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "moscow-peace-treaty",
       "type": "caused"
     },
     {
@@ -11669,6 +12090,35 @@
       "status": "active",
       "to": "armenian-genocide",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "fromkin-2009-peace-to-end-all-peace"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-i",
+      "id": "world-war-i--armistice-of-mudros--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "armistice-of-mudros",
+      "type": "caused"
     },
     {
       "authors": [
@@ -11863,6 +12313,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "world-war-i",
+      "id": "world-war-i--treaty-of-neuilly-sur-seine--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-neuilly-sur-seine",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-15",
       "from": "world-war-ii",
       "id": "world-war-ii--20-july-plot--caused",
@@ -11968,6 +12446,35 @@
       "status": "active",
       "to": "convention-relating-to-the-status-of-refugees",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "metcalf-metcalf-2006-concise-history-of-modern-india"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-ii",
+      "id": "world-war-ii--partition-of-india--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "partition-of-india",
+      "type": "precondition-of"
     },
     {
       "authors": [

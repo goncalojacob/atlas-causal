@@ -549,6 +549,15 @@
         }
       ]
     },
+    "1991-soviet-coup-d-etat-attempt--belovezh-accords--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "1991-soviet-coup-d-etat-attempt--dissolution-of-the-soviet-union--caused": {
       "from": "git",
       "versions": [
@@ -845,6 +854,15 @@
         }
       ]
     },
+    "armistice-of-mudros--treaty-of-sevres--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "assassination-of-archduke-franz-ferdinand--world-war-i--caused": {
       "from": "git",
       "versions": [
@@ -913,6 +931,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "belovezh-accords--dissolution-of-the-soviet-union--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -1596,6 +1623,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "croatian-war-of-independence--croat-bosniak-war--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -2623,6 +2659,15 @@
         }
       ]
     },
+    "moscow-peace-treaty--continuation-war--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "mozambique-war-begins-1964--1977-mozambican-general-election--enabled": {
       "from": "git",
       "versions": [
@@ -2840,6 +2885,15 @@
         }
       ]
     },
+    "partition-of-india--indo-pakistani-war-of-1947-1948--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "partition-of-india--kashmir-conflict--caused": {
       "from": "git",
       "versions": [
@@ -2898,6 +2952,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "polish-soviet-war--peace-of-riga--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3304,6 +3367,24 @@
         }
       ]
     },
+    "second-sudanese-civil-war--2011-south-sudanese-independence-referendum--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "second-sudanese-civil-war--war-in-darfur--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "sidonio-pais-assassinated-1918--monarchy-of-the-north-1919--enabled": {
       "from": "git",
       "versions": [
@@ -3336,8 +3417,26 @@
         }
       ]
     },
+    "single-european-act--maastricht-treaty--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "sino-indian-war--indo-pakistani-war-of-1965--enabled": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "soviet-afghan-war--dissolution-of-the-soviet-union--precondition-of": {
+      "from": "revised",
       "versions": [
         {
           "first": true,
@@ -3627,6 +3726,15 @@
         }
       ]
     },
+    "treaty-of-rome--single-european-act--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "treaty-of-sevres--turkish-war-of-independence--caused": {
       "from": "git",
       "versions": [
@@ -3656,6 +3764,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-versailles--locarno-treaties--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3723,6 +3840,15 @@
         }
       ]
     },
+    "war-in-bosnia-and-herzegovina--croat-bosniak-war--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "war-in-bosnia-and-herzegovina--dayton-agreement--caused": {
       "from": "git",
       "versions": [
@@ -3734,6 +3860,15 @@
     },
     "winter-war--continuation-war--caused": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "winter-war--moscow-peace-treaty--caused": {
+      "from": "revised",
       "versions": [
         {
           "first": true,
@@ -3770,6 +3905,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "world-war-i--armistice-of-mudros--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3865,6 +4009,15 @@
         }
       ]
     },
+    "world-war-i--treaty-of-neuilly-sur-seine--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "world-war-ii--20-july-plot--caused": {
       "from": "git",
       "versions": [
@@ -3913,6 +4066,15 @@
             "to"
           ],
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "world-war-ii--partition-of-india--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

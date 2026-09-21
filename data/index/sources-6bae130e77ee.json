@@ -909,6 +909,47 @@
       "container": null,
       "created": "2026-09-21",
       "creators": [
+        "David Fromkin"
+      ],
+      "doi": null,
+      "id": "fromkin-2009-peace-to-end-all-peace",
+      "isbn": "9780805088090",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Macmillan",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m42-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "A Peace to End All Peace: The Fall of the Ottoman Empire and the Creation of the Modern Middle East",
+      "type": "book",
+      "url": null,
+      "year": 2009
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 1,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
         "David Gaunt"
       ],
       "doi": null,
@@ -936,6 +977,47 @@
       "type": "book",
       "url": null,
       "year": 2006
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 1,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
+        "Ivo Goldstein"
+      ],
+      "doi": null,
+      "id": "goldstein-1999-croatia-a-history",
+      "isbn": "9781850655251",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "C. Hurst & Co.",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m42-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Croatia: A History",
+      "type": "book",
+      "url": null,
+      "year": 1999
     },
     {
       "accessed": null,
@@ -1237,6 +1319,48 @@
       "type": "book",
       "url": "https://search.worldcat.org/search?q=Salazar%3A%20A%20Political%20Biography%20Filipe%20Ribeiro%20de%20Meneses",
       "year": 2009
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 1,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
+        "Barbara D. Metcalf",
+        "Thomas R. Metcalf"
+      ],
+      "doi": null,
+      "id": "metcalf-metcalf-2006-concise-history-of-modern-india",
+      "isbn": "9780521863629",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Cambridge University Press",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m42-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "A Concise History of Modern India",
+      "type": "book",
+      "url": null,
+      "year": 2006
     },
     {
       "accessed": null,
@@ -1832,7 +1956,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 308,
+      "citationCount": 319,
       "created": "2026-09-04",
       "creators": [
         "Wikidata contributors"
@@ -1869,7 +1993,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 680,
+      "citationCount": 699,
       "created": "2026-09-04",
       "creators": [
         "Wikipedia contributors"

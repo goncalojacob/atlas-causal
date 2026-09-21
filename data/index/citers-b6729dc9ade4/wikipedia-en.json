@@ -272,6 +272,12 @@
     },
     {
       "dissent": false,
+      "id": "1991-soviet-coup-d-etat-attempt--belovezh-accords--precondition-of",
+      "kind": "edge",
+      "locator": "\"Belovezha Accords\", revision 1373420915, § lead"
+    },
+    {
+      "dissent": false,
       "id": "1991-soviet-coup-d-etat-attempt--dissolution-of-the-soviet-union--caused",
       "kind": "edge",
       "locator": "\"Dissolution of the Soviet Union\", revision 1375840189, § lead"
@@ -392,6 +398,12 @@
     },
     {
       "dissent": false,
+      "id": "armistice-of-mudros--treaty-of-sevres--precondition-of",
+      "kind": "edge",
+      "locator": "\"Armistice of Mudros\", revision 1369160266, § lead"
+    },
+    {
+      "dissent": false,
       "id": "assassination-of-archduke-franz-ferdinand--world-war-i--caused",
       "kind": "edge",
       "locator": "\"Assassination of Archduke Franz Ferdinand\", revision 1367945761"
@@ -401,6 +413,12 @@
       "id": "assassination-of-archduke-franz-ferdinand--world-war-i--caused",
       "kind": "edge",
       "locator": "\"World War I\", revision 1372979664"
+    },
+    {
+      "dissent": false,
+      "id": "belovezh-accords--dissolution-of-the-soviet-union--caused",
+      "kind": "edge",
+      "locator": "\"Belovezha Accords\", revision 1373420915, § lead"
     },
     {
       "dissent": false,
@@ -581,6 +599,12 @@
       "id": "crisis-portugal--troika-bailout-2011--caused",
       "kind": "edge",
       "locator": "\"2010–2014 Portuguese financial crisis\", revision 1372626457"
+    },
+    {
+      "dissent": false,
+      "id": "croatian-war-of-independence--croat-bosniak-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Croat–Bosniak War\", revision 1373788616, § Background"
     },
     {
       "dissent": false,
@@ -1334,6 +1358,12 @@
     },
     {
       "dissent": false,
+      "id": "moscow-peace-treaty--continuation-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Continuation War\", revision 1375847616, § lead"
+    },
+    {
+      "dissent": false,
       "id": "munich-agreement--molotov-ribbentrop-pact--enabled",
       "kind": "edge",
       "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
@@ -1436,6 +1466,12 @@
     },
     {
       "dissent": false,
+      "id": "partition-of-india--indo-pakistani-war-of-1947-1948--caused",
+      "kind": "edge",
+      "locator": "\"India–Pakistan war of 1947–1948\", revision 1373782125, § lead"
+    },
+    {
+      "dissent": false,
       "id": "partition-of-india--kashmir-conflict--caused",
       "kind": "edge",
       "locator": "\"Kashmir conflict\", revision 1374133428, § lead"
@@ -1487,6 +1523,12 @@
       "id": "platt-amendment-1901--cuban-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"Platt Amendment\", revision 1361644701"
+    },
+    {
+      "dissent": false,
+      "id": "polish-soviet-war--peace-of-riga--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Riga\", revision 1368931640, § lead"
     },
     {
       "dissent": false,
@@ -1766,6 +1808,30 @@
     },
     {
       "dissent": false,
+      "id": "second-sudanese-civil-war--2011-south-sudanese-independence-referendum--precondition-of",
+      "kind": "edge",
+      "locator": "\"2011 South Sudanese independence referendum\", revision 1362366338, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "second-sudanese-civil-war--2011-south-sudanese-independence-referendum--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Sudanese Civil War\", revision 1375675485, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "second-sudanese-civil-war--war-in-darfur--precondition-of",
+      "kind": "edge",
+      "locator": "\"War in Darfur\", revision 1375318567, § Origins of the conflict"
+    },
+    {
+      "dissent": false,
+      "id": "single-european-act--maastricht-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"Single European Act\", revision 1324525488, § lead"
+    },
+    {
+      "dissent": false,
       "id": "sino-indian-war--indo-pakistani-war-of-1965--enabled",
       "kind": "edge",
       "locator": "\"India–Pakistan war of 1965\", revision 1371230624, § Background"
@@ -1793,6 +1859,12 @@
       "id": "slave-trade-act-1807--slavery-abolition-act-1833--precondition-of",
       "kind": "edge",
       "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-afghan-war--dissolution-of-the-soviet-union--precondition-of",
+      "kind": "edge",
+      "locator": "\"Soviet–Afghan War\", revision 1375699993, § lead"
     },
     {
       "dissent": false,
@@ -2522,6 +2594,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-rome--single-european-act--precondition-of",
+      "kind": "edge",
+      "locator": "\"Single European Act\", revision 1324525488, § lead"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-sevres--turkish-war-of-independence--caused",
       "kind": "edge",
       "locator": "\"Treaty of Sèvres\", revision 1369307123"
@@ -2567,6 +2645,12 @@
       "id": "treaty-of-versailles--beer-hall-putsch--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of Versailles\", revision 1371877530"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-versailles--locarno-treaties--precondition-of",
+      "kind": "edge",
+      "locator": "\"Locarno Treaties\", revision 1373366462, § lead"
     },
     {
       "dissent": false,
@@ -2618,6 +2702,12 @@
     },
     {
       "dissent": false,
+      "id": "war-in-bosnia-and-herzegovina--croat-bosniak-war--caused",
+      "kind": "edge",
+      "locator": "\"Bosnian War\", revision 1375967053, § lead"
+    },
+    {
+      "dissent": false,
       "id": "war-in-bosnia-and-herzegovina--dayton-agreement--caused",
       "kind": "edge",
       "locator": "\"Bosnian War\", revision 1375967053, § lead"
@@ -2636,6 +2726,12 @@
     },
     {
       "dissent": false,
+      "id": "winter-war--moscow-peace-treaty--caused",
+      "kind": "edge",
+      "locator": "\"Moscow Peace Treaty\", revision 1355516673, § lead"
+    },
+    {
+      "dissent": false,
       "id": "world-war-i--arab-revolt--enabled",
       "kind": "edge",
       "locator": "\"Arab Revolt\", revision 1370428832"
@@ -2651,6 +2747,12 @@
       "id": "world-war-i--armenian-genocide--enabled",
       "kind": "edge",
       "locator": "\"World War I\", revision 1372979664"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--armistice-of-mudros--caused",
+      "kind": "edge",
+      "locator": "\"Armistice of Mudros\", revision 1369160266, § Background"
     },
     {
       "dissent": false,
@@ -2696,6 +2798,12 @@
     },
     {
       "dissent": false,
+      "id": "world-war-i--treaty-of-neuilly-sur-seine--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Neuilly-sur-Seine\", revision 1370636231, § lead"
+    },
+    {
+      "dissent": false,
       "id": "world-war-ii--20-july-plot--caused",
       "kind": "edge",
       "locator": "\"20 July plot\", revision 1374938720"
@@ -2729,6 +2837,12 @@
       "id": "world-war-ii--convention-relating-to-the-status-of-refugees--caused",
       "kind": "edge",
       "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--partition-of-india--precondition-of",
+      "kind": "edge",
+      "locator": "\"Partition of India\", revision 1374133022, § Labour victory in the UK election, decision to decolonize: 1945"
     },
     {
       "dissent": false,

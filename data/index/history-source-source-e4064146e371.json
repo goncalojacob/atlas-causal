@@ -332,8 +332,26 @@
         }
       ]
     },
+    "fromkin-2009-peace-to-end-all-peace": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "gaunt-2006-massacres-resistance-protectors": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "goldstein-1999-croatia-a-history": {
+      "from": "revised",
       "versions": [
         {
           "first": true,
@@ -452,6 +470,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "metcalf-metcalf-2006-concise-history-of-modern-india": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

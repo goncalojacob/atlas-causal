@@ -4130,6 +4130,15 @@
         }
       ]
     },
+    "armistice-of-mudros": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "arusha-accords": {
       "from": "git",
       "versions": [
@@ -4800,6 +4809,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "belovezh-accords": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -5776,6 +5794,15 @@
             "actors"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "croat-bosniak-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -7272,6 +7299,15 @@
         }
       ]
     },
+    "indo-pakistani-war-of-1947-1948": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "indo-pakistani-war-of-1965": {
       "from": "git",
       "versions": [
@@ -7907,6 +7943,15 @@
         }
       ]
     },
+    "locarno-treaties": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "maastricht-treaty": {
       "from": "git",
       "versions": [
@@ -8215,6 +8260,15 @@
             "review",
             "status"
           ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "moscow-peace-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-21"
         }
       ]
@@ -8749,6 +8803,15 @@
     },
     "partition-of-india": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "peace-of-riga": {
+      "from": "revised",
       "versions": [
         {
           "first": true,
@@ -10180,6 +10243,15 @@
         }
       ]
     },
+    "second-sudanese-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "sidonio-pais-assassinated-1918": {
       "from": "git",
       "versions": [
@@ -10274,6 +10346,15 @@
             "parent"
           ],
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "single-european-act": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -10814,6 +10895,15 @@
             "review"
           ],
           "on": "2026-09-20"
+        }
+      ]
+    },
+    "treaty-of-neuilly-sur-seine": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
