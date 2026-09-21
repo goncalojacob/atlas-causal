@@ -3550,3 +3550,82 @@ act of the war and not of what followed it"; and `gaza-genocide` into
 **`gaza-war` itself was left main on purpose.** Filing it under
 `arab-israeli-conflict` with `gaza-genocide` under it would nest three deep,
 and A6 allows one.
+
+## 2s. Batch 19 — a tombstone pass, and the post-1989 filing the pass could not do
+
+*21 September, the same fire as batch 18. No import: every record here was
+already on disk, three of them as tombstones and six as main events waiting
+for an umbrella the atlas already held. Batch 12 found the ratio between the
+two ways of growing this corpus — the sweep is the volume, the tombstones are
+the connection — and this is the second kind.*
+
+### The two edges
+
+- `2021-myanmar-coup-d-etat --caused--> myanmar-civil-war`. The war's article,
+  at revision 1375700231, opens on the coup: "The Myanmar civil war began
+  following the military coup on 1 February 2021. The seizure of power
+  triggered mass anti-coup demonstrations and a violent crackdown by the
+  Tatmadaw (Myanmar armed forces), which significantly escalated the country's
+  longstanding insurgencies." The insurgencies are older and the article says
+  so; what it dates to February 2021 is the war. **Both ends were tombstones**
+  — the coup was withdrawn as having no neighbour in a region this atlas does
+  not reach, the war as waiting on the coup by name — so one edge brings back
+  two records and makes a pair, not a reach. §7's own reading of batch 17.
+- `rose-revolution --inspired--> tulip-revolution`. The Tulip Revolution's
+  article, at revision 1372025111, names the transmission and the man who
+  carried it: "Givi Targamadze, a former member of the Liberty Institute of
+  Georgia … consulted Ukrainian opposition leaders on the technique of
+  nonviolent struggle. He later advised leaders of the Kyrgyz opposition
+  during the Tulip Revolution." Its reason asked for exactly this — "a page
+  that argues the Kyrgyz opposition took the Georgian or Ukrainian revolution
+  as a model" — and the same section records that Akayev coined the name
+  against those precedents. `inspired` and not `caused`: what crossed was a
+  technique and a name.
+
+### The three put back
+
+`2021-myanmar-coup-d-etat`, `myanmar-civil-war`, `tulip-revolution`, each
+carrying `m42-reinstated`.
+
+**`2021-myanmar-coup-d-etat` gained a `review.status` it did not have.** It is
+an M44b-era record whose `review` block carried flags and no status, so
+reinstating it put an unread record on no dashboard — the validator's `unread`
+warning. `draft` is what `tools/migrate/backfill-standing.mjs` writes for
+exactly this shape, and nothing else on the record was touched.
+
+### The two refused, with the reason each still waits on
+
+- **`libyan-civil-war-q16911838`** waits on "a page that argues the second
+  Libyan war out of the first", and its own article, at revision 1374738410,
+  is not that page: its background is the General National Congress's
+  paralysis, the political isolation law and the 2014 election, it never names
+  the war of 2011 and it mentions Gaddafi only as the regime the isolation law
+  barred from office. The reason stands as written.
+- **`sharpeville-massacre`** and **`soweto-uprising`**, from batch 18 above.
+
+### The post-1989 filing, on the source's own `part of`
+
+The filing pass named seventeen European events of the Third Republic's span
+that are not Portugal's and said there was no umbrella here for them. **Six of
+them have one after all**, and it is not a period this run invented: it is a
+`part of` statement on the record's own Wikidata item, pointing at an event
+this atlas already holds as a main record.
+
+| filed | under | the item's own claim |
+| --- | --- | --- |
+| `romanian-revolution-1989` | `revolutions-of-1989` | Q204213 → Q382861 |
+| `1991-soviet-coup-d-etat-attempt` | `revolutions-of-1989` | Q221382 → Q382861 |
+| `croatian-war-of-independence` | `yugoslav-wars` | Q68969 → Q242352 |
+| `kosovo-war` | `yugoslav-wars` | Q190029 → Q242352 |
+| `2001-insurgency-in-macedonia` | `yugoslav-wars` | Q817137 → Q242352 |
+| `belovezh-accords` | `dissolution-of-the-soviet-union` | Q76986 → Q5167679 |
+
+**Two further `part of` claims were read and not acted on**, both because they
+would nest a second deep and A6 allows one: `yugoslav-wars` is part of
+`breakup-of-yugoslavia` (Q242352 → Q4390259) and
+`dissolution-of-the-soviet-union` is part of `revolutions-of-1989`
+(Q5167679 → Q382861). Filing either would put a war inside a breakup inside
+nothing, with three levels under it. `revolutions-of-1989` itself carries
+`part of` the **Cold War**, which M67 refused and A6 does not overrule.
+
+Corpus 493 → 496 active, **main 266 → 263**, largest component 441 → 442.

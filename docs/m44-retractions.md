@@ -16,6 +16,22 @@ rule 27 makes a retraction on a non-retracted record an error. The reason is
 copied here verbatim, in the same commit, so that the account of the withdrawal
 survives the undoing of it.
 
+### `2021-myanmar-coup-d-etat`
+
+Reinstated in M42 batch 19 on `2021-myanmar-coup-d-etat --caused--> myanmar-civil-war`.
+Its reason said Burma enters this atlas nowhere, and that was true until the
+same batch put `myanmar-civil-war` back beside it: the war's own article opens
+on the coup and dates the war to it. The two are a pair and reach nothing else
+here, which is honest and is what §2s of `docs/m42-connections.md` says. The
+record also gained `review.status: draft`, which its M44b-era `review` block
+never carried — an unread record that is active again belongs in the queue.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A: the neighbour is missing. Burma enters this
+> atlas nowhere. No edge to a Portuguese event and none to a world event here
+> can be argued.
+
 ### `second-congo-war`
 
 Reinstated in M42 batch 12 on `first-congo-war --caused--> second-congo-war`

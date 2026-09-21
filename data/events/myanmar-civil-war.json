@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "myanmar-civil-war",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,19 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m42-reinstated"
     ]
   },
   "origin": {
     "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge. The English article, at revision 1375700231, says the war \"began following the military coup on 1 February 2021\", which \"triggered mass anti-coup demonstrations and a violent crackdown by the Tatmadaw, which significantly escalated the country's longstanding insurgencies\", and traces the older insurgencies to the 1962 coup and the 8888 uprising. None of the four is a record here and the atlas holds nothing at all of Burma or Myanmar. It waits on the 2021 Myanmar coup d'état."
   },
   "wikidata": "Q110613097",
   "wikipedia": {
