@@ -35,10 +35,14 @@ import {
 } from '../src/standing.js';
 import { isReviewed, REVIEW_STATUS } from '../src/origin.js';
 import { CORE_COLUMNS, SPINE_COLUMNS, decodeSpineFile, SPINE_KINDS } from '../src/spine.js';
-import { buildCore } from '../src/validate/core.js';
+import { buildCore, buildTopology } from '../src/validate/core.js';
 import { workingSet } from '../src/emphasis.js';
 import { defaultState } from '../src/state.js';
-import { ROOT, atlasOf, topologyOf, corpusOf, FIXTURE_DATA } from './helpers.mjs';
+import { ROOT, atlasOf, topologyOf, FIXTURE_DATA } from './helpers.mjs';
+// The records as they are on disk, `review` block and all — the reference the
+// index's own column is checked against. `corpusOf` would not do: it reads the
+// built index, and comparing the index with itself would say nothing.
+import { readRecords, readRegions } from '../tools/lib/read.mjs';
 
 const dataDir = path.join(ROOT, 'data');
 
@@ -172,21 +176,74 @@ test('the read count is the per-record answer, counted', () => {
 // answer, event by event, on the real corpus. Not a number: the two readings
 // are compared with each other, so a corpus somebody starts signing tomorrow
 // moves both at once or fails here.
-test('the index column and the record agree about every event', async () => {
-  const topology = await topologyOf(dataDir);
-  const core = decodeSpineFile(buildCore(topology), SPINE_KINDS, CORE_COLUMNS);
-  const rows = new Map(core.events.map((e) => [e.id, e]));
-  const corpus = await corpusOf(dataDir);
-  assert.ok(corpus.events.length > 0);
-  for (const record of corpus.events) {
-    const row = rows.get(record.id);
-    if (!row) continue;
-    assert.equal(
-      hasBeenRead(row), hasBeenRead(record),
-      `${record.id}: the index says ${hasBeenRead(row)} and the record says ${hasBeenRead(record)}`,
-    );
-    assert.equal(hasBeenRead(record), isReviewed(record), `${record.id}: and it is review.status and nothing else`);
-  }
+const eventsOnDisk = async (dir) => {
+  const { entries, problems } = await readRecords(dir);
+  assert.deepEqual(problems, [], `${dir}: the records read cleanly`);
+  return entries.map((e) => e.record).filter((r) => r.kind === 'event');
+};
+
+for (const [label, dir] of [['the repository', dataDir], ['the fixtures', FIXTURE_DATA]]) {
+  test(`the index column and the record agree about every event, over ${label}`, async () => {
+    const core = decodeSpineFile(buildCore(await topologyOf(dir)), SPINE_KINDS, CORE_COLUMNS);
+    const rows = new Map(core.events.map((e) => [e.id, e]));
+    const records = await eventsOnDisk(dir);
+    assert.ok(records.length > 0);
+    for (const record of records) {
+      const row = rows.get(record.id);
+      if (!row) continue;
+      assert.equal(
+        hasBeenRead(row), isReviewed(record),
+        `${record.id}: the index says ${hasBeenRead(row)} and the file's review block says ${isReviewed(record)}`,
+      );
+      assert.equal(hasBeenRead(record), isReviewed(record), `${record.id}: and it is review.status and nothing else`);
+    }
+  });
+}
+
+// The positive case, which no corpus on disk can supply: **nought of the
+// 10,638 records have been signed**, so a column that was never written at all
+// would agree with every record above and say nothing whatever.
+//
+// So the signature is added **in memory**, to the fixtures' own records, and
+// the corpus on disk is left exactly as it is. That is deliberate and not a
+// shortcut: signing a fixture file is a claim about a synthetic record that
+// four migration tools then rightly refuse to touch — `migrate.js`'s
+// migration 4 will not take a signature back, and the roles and categories
+// tools stand off a reviewed record — and five suites would have had to be
+// taught about a signature that exists only to be looked at.
+//
+// What is asserted is the whole path: the record's `review` block, the
+// topology's `reviewed`, the core row the masthead counts, the count itself,
+// and the sentence a card prints.
+test('a signature travels from the record to the count and the sentence', async () => {
+  const { entries, problems } = await readRecords(FIXTURE_DATA);
+  assert.deepEqual(problems, []);
+  const records = entries.map((e) => e.record);
+  const subject = records.find((r) => r.kind === 'event' && r.status === 'active');
+  assert.ok(subject, 'the fixtures hold an active event');
+  assert.equal(isReviewed(subject), false, 'and nobody has signed it on disk');
+
+  const before = decodeSpineFile(
+    buildCore(buildTopology(records, await readRegions(FIXTURE_DATA))), SPINE_KINDS, CORE_COLUMNS,
+  );
+  assert.equal(readCount(before.events).read, 0, 'so nothing is read to begin with');
+
+  const signature = { name: 'Fixture Reviewer', github: null, on: '2026-02-01' };
+  const read = { ...subject, review: { status: REVIEW_STATUS.reviewed, signedBy: [signature] } };
+  const after = decodeSpineFile(
+    buildCore(buildTopology(records.map((r) => (r.id === subject.id ? read : r)), await readRegions(FIXTURE_DATA))),
+    SPINE_KINDS, CORE_COLUMNS,
+  );
+
+  const row = after.events.find((e) => e.id === subject.id);
+  assert.equal(hasBeenRead(row), true, 'the core row carries the signature');
+  assert.equal(readCount(after.events).read, 1, 'the masthead counts exactly the one that was signed');
+  assert.equal(readCount(after.events).of, readCount(before.events).of, 'and no event left the picture for it');
+  assert.ok(readCount(after.events).read < readCount(after.events).of, 'with unread events beside it');
+  // And what the card would print about the same record.
+  assert.match(standingText(read), /^Read by Fixture Reviewer/);
+  assert.match(standingText(read), /2026-02-01/);
+  assert.deepEqual(readersOf(read), [{ name: signature.name, on: signature.on }]);
 });
 
 // The column is in the core and in the spine, and it is what a trailing trim

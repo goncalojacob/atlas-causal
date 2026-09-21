@@ -53,6 +53,25 @@
             "category"
           ],
           "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-01-01",
+          "signedBy": [
+            {
+              "github": "fixture-reviewer",
+              "name": "Fixture Reviewer",
+              "on": "2026-02-01"
+            }
+          ]
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-01-01"
         }
       ]
     },
@@ -89,6 +108,18 @@
           "fields": [
             "place",
             "where"
+          ],
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "review"
           ],
           "on": "2026-01-01"
         }

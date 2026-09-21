@@ -382,6 +382,16 @@ function identityOf(record) {
   return out;
 }
 
+// Whether a person has read and signed this record (M70). The whole `review`
+// block stays out — the flags, the note, the claim and the per-citation ticks
+// are the reviewer's and are read from the record's own file — and what the
+// topology carries is the one bit the masthead counts. `true` or absent, so
+// that nothing is written on the records nobody has signed, which today is
+// every one of them.
+function standingOf(record) {
+  return hasBeenRead(record) ? { reviewed: true } : {};
+}
+
 // Where a record sits and which lane that puts it in: the override on the
 // record wins, then the polygon the point falls in, then the nearest lane
 // within tolerance.
@@ -455,6 +465,7 @@ export function buildTopology(records, regions, { deriveRegion, roles, categorie
         regionMethod,
         ...partsOf(r),
         ...identityOf(r),
+        ...standingOf(r),
         status: r.status,
         supersededBy: r.supersededBy ?? null,
         aliases: r.aliases ?? [],
@@ -675,10 +686,11 @@ function slotReader(citesCount) {
     switch (name) {
       case 'citesCount': return citesCount(kind, record.id);
       // The index's copy of "has a person read this", so the masthead can
-      // count it without fetching 573 files. `true` or nothing: a slot written
+      // count it without fetching 573 files. The topology already carries the
+      // bit (`standingOf`) and this is `true` or nothing: a slot written
       // `false` on every unread record would be 10,311 falses saying what the
       // absence already says (M70).
-      case 'reviewed': return hasBeenRead(record) ? true : undefined;
+      case 'reviewed': return record.reviewed === true ? true : undefined;
       case 'geometry': return record.geometry ?? null;
       case 'wikidata': return typeof record.wikidata === 'string' ? record.wikidata : undefined;
       case 'wikipedia': return isObject(record.wikipedia) ? record.wikipedia : undefined;

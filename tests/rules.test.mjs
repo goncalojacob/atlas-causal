@@ -30,14 +30,20 @@ test('the fixture dataset passes with exactly the three intended warnings', asyn
 });
 
 // R10: a record with neither `review.status` nor a signature is in no queue
-// and on no dashboard, and until this warning existed nothing said so. The
-// fixture corpus is exactly such a corpus — nobody has read a synthetic
-// record — so it is what the warning is counted on.
+// and on no dashboard, and until this warning existed nothing said so. Counted
+// against the records the fixtures leave without a standing — which since M70
+// is all of them but two, because the standing marker needed a signed record
+// and a draft to be seen at all (tests/m70-browser.test.mjs).
 test('a record with neither a status nor a signature is reported as unread', async () => {
   const r = await run();
   const unread = r.warnings.filter((w) => w.rule === 'unread');
-  const active = (await fixtures()).records.filter((x) => x.status === 'active');
-  assert.equal(unread.length, active.length, 'one per active record, and none for a tombstone');
+  const standingless = (await fixtures()).records
+    .filter((x) => x.status === 'active' && x.review?.status === undefined && !(x.review?.signedBy?.length > 0));
+  assert.equal(unread.length, standingless.length, 'one per active record with no standing, and none for a tombstone');
+  assert.deepEqual(
+    unread.map((w) => w.id).sort(), standingless.map((x) => x.id).sort(),
+    'and it is those records and not some others of the same number',
+  );
   for (const w of unread) assert.match(w.message, /neither review\.status nor a signature/);
 
   // A draft is accounted for, and so is a record somebody has signed.

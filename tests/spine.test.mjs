@@ -126,6 +126,10 @@ export function projectV1(topology) {
       ...(e.category === undefined ? {} : { category: e.category }),
       weight: e.weight,
       ...(e.subtreeWeight === undefined ? {} : { subtreeWeight: e.subtreeWeight }),
+      // And `reviewed` where a person has signed the record (M70), absent
+      // otherwise — which is every event of the repository today and all but
+      // one of the fixtures'.
+      ...(e.reviewed === undefined ? {} : { reviewed: e.reviewed }),
       actors: e.actors ?? [],
       citesCount: citesCount('event', e.id),
     })),
