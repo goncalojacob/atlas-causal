@@ -12913,7 +12913,7 @@ anything happened — only who did it and where.
 
 ### Tests
 
-`tests/m67.test.mjs` (18), written and committed before the records it judges
+`tests/m67.test.mjs` (19), written and committed before the records it judges
 (711, 717) and failing four of eighteen on that commit. **Nothing is named and
 no count is pinned**: the two things the run writes are found by the flags they
 carry, `m67-lined` and `m67-umbrella`, and everything is asserted of whatever
