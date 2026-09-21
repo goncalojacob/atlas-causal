@@ -13657,15 +13657,15 @@ batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
 every edge. **The milestone is not done**: §7 of the pool file says where it
 stands and what the next fire does.
 
-**Eleven batches.** The pool before: 310 active events, 229 of them main, 362
+**Twelve batches.** The pool before: 310 active events, 229 of them main, 362
 active edges, a largest connected component of 254 and 23 events with no edge.
-**After batch 11: 405 active, 311 main, 94 filed, 493 edges, largest component
-382, 3 with no edge.** Forty-two records came back from the tombstones and
-fifty-nine were imported and kept; a hundred and twenty-three edges were
+**After batch 12: 411 active, 316 main, 95 filed, 499 edges, largest component
+388, 3 with no edge.** Forty-seven records came back from the tombstones and
+sixty were imported and kept; a hundred and twenty-nine edges were
 written — eighteen in batch 0, seven in batch 1, **nineteen in batch 3, which
 imported nothing at all and moved the component by twenty-seven**, eight in
 batch 4, eleven in batch 5, eight in batch 6, eighteen in batch 7, eleven in
-batch 8, eight in batch 9, fourteen in batch 10 and ten in batch 11.
+batch 8, eight in batch 9, fourteen in batch 10, ten in batch 11 and six in batch 12.
 
 **Batches 10 and 11 are sweep batches taken by §5's tick rule**, sets 1 and 2
 having been spent on the hinges and the bridges. The pool was recomputed each
@@ -13688,9 +13688,33 @@ the Hay–Bunau-Varilla treaty, **eight hours after batch 8 of this same run
 retracted it** saying it waited on the separation of Panama;
 `somali-civil-war` on the Ogaden war; `cultural-revolution` on the Sino-Soviet
 border conflict; and the non-proliferation treaty on the treaty written because
-its prohibitions are partial. The corpus holds **218 tombstones** and every one
+its prohibitions are partial. The corpus holds **213 tombstones** and every one
 wrote down what it was waiting for. Reading a sweep row against those notes is
 now the cheapest thing a batch can do after the row itself.
+
+**Batch 12 pushed that finding as far as it goes and found the ratio between
+the two ways of growing this corpus.** One sweep row — the First Congo War,
+seventh in set 4 and taken out of the cap's order, which deviation 1003 records
+rather than dressing as a tie-break — brought back **five** tombstones at once:
+`second-congo-war`, `rwandan-civil-war`, `arusha-accords`,
+`1994-genocide-against-tutsi` and `srebrenica-massacre`. `second-congo-war`'s
+reason had said for a week that Angola's intervention "is a genuine edge from
+the Great Lakes to the Portuguese-speaking world. **It cannot be written**: the
+atlas holds Angolan independence in 1975 and no record of the Angolan civil
+war." The Angolan civil war came back in batch 0 of this same run; what the
+reason could not know is that the Second Congo War's own article never says why
+Angola intervened, and the First Congo War's article has a section on it and
+states the motive outright. **Eleven tombstones have come back this way.**
+
+So: **the sweep is the volume and the tombstones are the connection**, and they
+are not interchangeable. A sweep batch adds ten or eleven records and opens a
+corner of the world this atlas has one or two records of, so the corpus grows
+faster than the component and the component count rises. Batch 12 grew the
+corpus by six and the component by six with the component count unmoved,
+because every record it touched already had a neighbour waiting. A run with
+time for one of the two should know which it is choosing, and §0 of
+`docs/m42-pool.md`'s "what the next fire does" now starts with reading the
+tombstones, which costs no fetch at all.
 
 **The component count is rising and that is not a failure to write edges
 against.** Sets 1 and 2 were the rows the corpus had asked for by name and they
@@ -13701,7 +13725,7 @@ Mali, batch 11 the Horn of Africa, the Sino-Soviet border and nuclear
 disarmament. Each is a pair standing on its own, and in every case the only
 record in this atlas the article relates its subject to was a tombstone the
 same edge brought back. So components went 7 → 9 → 12 while the ratio held:
-**382 of 405, 94.3 per cent, against 254 of 310 and 82 per cent when the
+**388 of 411, 94.4 per cent, against 254 of 310 and 82 per cent when the
 milestone began.** A run that reads a rising component count as a failure will
 start writing edges to prevent it, and that is what brief §1 forbids.
 
@@ -13716,18 +13740,18 @@ of the rest were main before they were withdrawn.
 `estonian-war-of-independence` and `sino-soviet-border-conflict` are the two
 that were arguable and are listed rather than filed, which is M62 §3's rule.
 Every new record carries `actors: []`, which is M67 A1 and not a defect, and it
-is why `docs/m53-polities.md` §4.1 moves to **306 of 405** with the numerator
+is why `docs/m53-polities.md` §4.1 moves to **306 of 411** with the numerator
 standing still: the gap that row shows is the gap between an imported corpus
 and a written one, and it widens by exactly the number of records each batch
 keeps.
 
 **The milestone is a long way from its done-condition and that is the honest
 reading**: the brief asks for an order of magnitude more than the 250 it was
-written against, and the corpus stands at 405 — **but 382 of those 405 are in
+written against, and the corpus stands at 411 — **but 388 of those 411 are in
 one connected component, against 254 of 310 when the run started, and three
 active events carry no edge at all, against twenty-three.** The connectedness
 the owner asked for on 21 September is substantially done; the volume is barely
-begun. The sweep's **1,525 unwalked rows** are what that volume comes from, and
+begun. The sweep's **1,524 unwalked rows** are what that volume comes from, and
 at ten or eleven kept records a batch the brief's own number is many hundreds
 of batches away. That is a fact the owner should have rather than a number to
 be optimistic about.
@@ -13812,6 +13836,21 @@ a second motive beside it, both named in the edge's `dispute` block).
      marked `disputed` and the disagreement written down. Both were done, and the
      record is **not** filed under the Cultural Revolution although 1969 falls
      inside 1966–1976: a motive historians merely suggest is not a subject.
+
+### Deviations
+
+1003. **A sweep row taken out of the cap's order, said plainly rather than
+     dressed as a tie-break.** §5's set 4 is "the best remaining by sitelinks
+     over the whole pool" and the cap is "what the Action can finish", which
+     batches 7, 8, 10 and 11 all set at sixteen by judgement. `Q838695`, the
+     First Congo War, is **seventh** in set 4 at 44 sitelinks: inside the
+     rule's ordering, outside a cap of sixteen. Batch 12 took it alone, because
+     reading it against the tombstones showed it unlocks four of them — and
+     **raising the cap to seventeen to reach it would have been a hand dressed
+     as a rule**, which is exactly what §5 was written before a box was ticked
+     to prevent. Nothing above it was skipped; the sixteen are still there in
+     order for the next batch. The rule survives an exception that says it is
+     one; it does not survive an exception that pretends to be the rule.
 
 ### Deviations
 
