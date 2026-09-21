@@ -188,16 +188,35 @@ const TIMELINE = `
     rings: svg.querySelectorAll('rect.ring').length,
   };`;
 
+// `TIMELINE`'s `unnamed` as a predicate: every bar whose title is a name has
+// that name drawn as a label. A bar whose century has not landed carries the
+// interface saying it is still loading, which is in no label, so it counts as
+// unnamed here exactly as it does there.
+const BARS_NAMED = `
+  const svg = document.querySelector('#timeline svg.timeline');
+  if (!svg) return false;
+  const bars = [...svg.querySelectorAll('rect.bar[data-id], .layer-held rect[data-id]')];
+  if (bars.length < 2) return false;
+  const drawn = new Set([...svg.querySelectorAll('text.bar-label')].map((l) => l.textContent));
+  return bars.every((b) => {
+    const t = b.querySelector('title');
+    const name = t ? t.textContent.split(' \\u2014 ')[0] : null;
+    return !name || drawn.has(name);
+  });`;
+
 test('every bar on the resting timeline carries its title, and no +N is drawn', { skip }, async () => {
   await desk(async (page, url) => {
     await watchErrors(page);
     await seenIntro(page);
     await open(page, url('?view=timeline'), BARS_DRAWN);
-    await waitFor(page, `
-      const n = document.querySelectorAll('#timeline text.bar-label').length;
-      if (window.__n === n && n > 0) return true;
-      window.__n = n;
-      return false;`, 'the titles to settle');
+    // The wait was the count of labels being the same on two polls 50 ms apart.
+    // A count is stable between two shards, and it is stable for the whole of
+    // the gap between the picture being drawn and the last century landing:
+    // seven bars were still unnamed at the assertion on the runner on
+    // 21 September. What it waits for now is the assertion itself — no bar
+    // whose title is not drawn as a label — with `until`, so a bar that never
+    // gets one is still reported by name and not as a timeout.
+    await until(page, BARS_NAMED);
 
     const seen = await page.eval(TIMELINE);
     assert.ok(seen.bars.length > 1, `the timeline drew bars (${seen.bars.length})`);
