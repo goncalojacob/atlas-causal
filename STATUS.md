@@ -13657,18 +13657,21 @@ batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
 every edge. **The milestone is not done**: §7 of the pool file says where it
 stands and what the next fire does.
 
-**Six batches.** The pool before: 310 active events, 229 of them main, 362
+**Seven batches.** The pool before: 310 active events, 229 of them main, 362
 active edges, a largest connected component of 254 and 23 events with no edge.
-**After batch 5: 354 active, 265 main, 424 edges, largest component 323, 16
-with no edge, and 16 events that cannot reach a Portuguese one against 27.**
-Thirty-one records came back from the tombstones and thirteen were imported;
-sixty-two edges were written — eighteen in batch 0, seven in batch 1,
-**nineteen in batch 3, which imported nothing at all and moved the component
-by twenty-seven**, eight in batch 4 and eleven in batch 5.
+**After batch 6: 358 active, 269 main, 432 edges, largest component 330, 11
+with no edge.** Thirty-five records came back from the tombstones and thirteen
+were imported; seventy edges were written — eighteen in batch 0, seven in
+batch 1, **nineteen in batch 3, which imported nothing at all and moved the
+component by twenty-seven**, eight in batch 4, eleven in batch 5 and eight in
+batch 6.
 
 **The milestone is a long way from its done-condition and that is the honest
 reading**: the brief asks for an order of magnitude more than the 250 it was
-written against, and the corpus stands at 354. The sweep's **1,586 unwalked
+written against, and the corpus stands at 358 — **but 330 of those 358 are in
+one connected component, against 254 of 310 when the run started.** The
+connectedness the owner asked for on 21 September is nearly done; the volume
+is barely begun. The sweep's **1,586 unwalked
 rows** are what that volume comes from, untouched, and §5 of
 `docs/m42-pool.md` holds the tick rule written before a box was ticked. What
 this run establishes is that the volume can only be walked **here**: see the
