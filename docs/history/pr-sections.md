@@ -3172,3 +3172,119 @@ runs them (M63). No new runtime dependency, no build step, **no new hex value,
 token or type size**; no change to `lanes.js`, `cluster.js`, `emphasis.js` or
 `window-band.js`'s gestures. Nothing pushed to `m0` or `main`; `docs/drafts/`
 ignored. Deviations **997 to 1004**.
+
+## M76 — the band follows the selection, the fields go, the graph shows every date
+
+Three instructions from the owner on 21 September, after seeing M75 published.
+Lane A, on the branch `m76`; nothing pushed to `m0` or `main`.
+
+### 1. *"If for example I select portugal, the map timeline I use to pick the dates should show only those events"*
+
+The brief told the run to find out **on the real page** why the band does not
+look narrowed, and not to argue from the code. It was the first of the three
+candidates, with a fourth beside it that the brief did not list.
+
+Measured at 1280 × 900, headless, on the commit that claimed the milestone:
+
+| | columns | tallest column | events behind it |
+|---|---:|---:|---:|
+| nothing selected | 134 | 6 px | 229 |
+| `?actor=portugal` | 25 | 5 px | 33 |
+
+**Candidate 3 is ruled out**: Portugal *is* a lens and the band *does* redraw.
+**Candidate 1 is the cause**: the profile was drawn at `density.js`'s absolute
+scale, whose whole range is 3 to 9 px inside a strip 44 deep, and which
+saturates at 64 events in one column — a count no column of this corpus comes
+near. One pixel of height between the atlas and one country, and both read as
+the same faint dusting. **And the fourth**: the band was over `shown`, which is
+the lens **plus its one-hop ring** — Portugal names nine events and the band
+drew thirty-three, three quarters of the ink being the Boer War, Franz
+Ferdinand and the Armenian genocide.
+
+So two changes. `profileEvents` in `window-band.js` is the lens's own half
+(`lensView`'s `kept`), intersected with `bandEvents` so the categories still
+narrow it, and `bandEvents` itself is untouched — the masthead's count and the
+standing line still count what the views draw, and `emphasis.js`'s `shown`
+contract is unchanged. And `bandProfile` takes `own`, which draws the set at
+its own busiest column, with the band's body as the cap: the profile has a
+shape again and the shape follows the click.
+
+### 2. *"Picking up the dates exactly is unnecessary" — "This can be removed"*
+
+The two `<input type="number">` ends of the window go, with their labels and
+the density hint between them. `windowPatch`, `densityColumns`, `DENSITY` and
+`tests/window-control.test.mjs` go with them; `windowOf` keeps the clamp and
+`tests/m64.test.mjs` keeps its assertions. What is left in `#window-control` is
+"N of N events in view" with its pin, and the standing line — neither was ever
+a control.
+
+This reverses M75's deviation 1000, and the measurement behind that deviation
+is why rather than in spite of it: the hint sat on the same row as the years,
+over the corpus, seven columns before the click and seven after it, which is
+one of the three candidates the brief lists for *why the band does not look
+narrowed*. On the timeline it duplicated a view with its own band and its own
+density; on the graph it describes a window the picture now ignores.
+
+**`?from=` and `?to=` are unchanged**, and so is every gesture of
+`window-band.js`: a precise year is still reached by double-clicking to a
+decade or nudging an end with the arrow keys. On the timeline the window is set
+by that view's own band, as it has been since M60.
+
+### 3. *"I think the graph can always show all dates, then one can zoom in and out and pan to look at different times"*
+
+All three window rules go. There is no shaded band across the picture; nothing
+is drawn faded for falling outside one (every `.graph .faded` rule went with
+the class); and the arrangement is every event of `shown` rather than the
+window and one period either side. On `?view=graph&from=1900&to=1910` the graph
+laid out 32 nodes before and lays out **87** now.
+
+The lanes are chosen with no window, so the band cannot silently reorder a
+picture that does not obey it, and the band leaves the arrangement's key, so
+moving it lays out nothing again. The camera is one rule where there were two:
+**it fits what is drawn** — all of `shown` at rest, the lens when there is one
+(M74), clamped between the same two zooms. The window fit of deviation 54 is
+gone, because a camera that opened on the band would be the window deciding the
+picture by the back door.
+
+### What it costs
+
+First paint, median of nine cold loads of `?from=1900&to=1999` at 1440 × 900,
+`origin/m0` and this head measured in one session on one machine: first
+contentful paint **32 ms either side**, load **206 → 184 ms**, same 116
+requests and same 85 files, and the page **3,270 bytes smaller**. The graph's
+first drawing on a narrow window: **297 → 305 ms**, inside the spread, for
+nearly three times the picture.
+
+### Pictures
+
+`docs/screens/m76-map-portugal.png` (the band over Portugal's own events),
+`m76-map.png` (a first visit, no field in the masthead), `m76-map-phone.png`
+(390 × 844) and `m76-graph.png` (every date on a window of one century). Every
+other picture the tool rewrites was restored. `m74-graph-rest`, `m75-map` and
+`m75-map-phone` left `tools/screens.mjs` and their files stayed, because all
+three photograph rules this milestone replaced — deviation 997's reasoning,
+three milestones later.
+
+### Tests
+
+`tests/m76.test.mjs` (14) and `tests/m76-browser.test.mjs` (8), written before
+the behaviour they judge (711, 717) and pushed before it. **No test pins a
+count or a pixel.** Changed first, as the brief requires:
+`tests/m74-browser.test.mjs`'s resting-camera test, the three band tests in
+`tests/arrangement.test.mjs`, `tests/m64.test.mjs`'s one-function and
+`windowPatch` tests, `tests/m75.test.mjs`'s hint and field tests, and the
+window probes in `m60-browser`, `m75-browser` and `panel-browser`.
+`tests/window-control.test.mjs` is deleted.
+
+### Checks
+
+`node tools/validate.mjs --index`: **10,653 records, 5 regions, 0 errors, 238
+warnings** — unchanged, because **no record was touched and no historical claim
+written**; nothing under `data/` changed at all. `node --test`: **1,687 pure
+and 225 browser, 1,912 in all, 0 failed and 0 skipped**, the browser suites one
+at a time as the check runs them (M63). No new runtime dependency, no build
+step, **no new hex value, token or type size**; `lanes.js`, `cluster.js`,
+`emphasis.js`'s `shown` contract and `window-band.js`'s gestures unchanged.
+`docs/drafts/` ignored. Deviations **1100 to 1108** — lane A numbers from 1100
+from this milestone, because M75's 999–1004 and lane B's M42 block from 950
+overlap; the overlap is recorded, not rewritten.
