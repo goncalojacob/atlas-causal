@@ -13142,12 +13142,19 @@ untouched.**
      over 10,638 records, the same 1,213 warnings as before, and the index is
      byte-identical.
 
-920. **One browser suite failed once in the full serial pass and passed alone
-     and on the next full pass.** `lens-browser`'s *reading a narrative draws
-     the walk* — a suite this milestone does not touch, on a view with no
-     categories in it. Read rather than assumed (M63): the assertion is about a
-     narrative's walk, the re-run is green, and it is the load flake
-     `docs/m63-load.md` describes and not a fault of this change.
+920. **A browser test dropped once here and once on the check, both times for
+     the browser and not for the picture.** Locally, `lens-browser`'s *reading a
+     narrative draws the walk* failed in one full serial pass and passed alone
+     and on the next two — a suite this milestone does not touch, on a view
+     with no categories in it. On the check's first attempt at `M68 done`,
+     `contribute-browser`'s first test failed at
+     `withBrowser`'s own launch assertion: **headless Chromium opened no page
+     target in thirty seconds**, with dbus noise on its stderr and no exit
+     code, so nothing of the test body ever ran. Read rather than assumed
+     (M63): neither is an assertion about what this milestone changed, and the
+     second is the launch case the run protocol allows exactly one re-run for.
+     That re-run is green — 1,597 pure and 196 browser, 0 failing and 0
+     skipped, on the same commit.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
