@@ -14940,6 +14940,225 @@ claim written.
      milestone is called done, and not only after.
 
 
+
+## M75 — the band is not hidden
+
+The owner, 21 September, after M60 moved the window to the masthead and M64
+put the band back behind a button:
+
+> **"still don't like the way years are selected when looking at the map,
+> should be more intuitive"**
+
+and, asked what shape the fix should take:
+
+> **"The dates two-handled band should not be hidden."**
+
+That settled two things, and both were the owner's call. **It is the band** —
+two handles, a range — and not a single-year scrubber, so `window-band.js` is
+the control and nothing was rebuilt. And **it is not hidden**: the `dates`
+button is gone, and on the map the strip is present from first paint, on every
+visit, with no mode to enter and nothing to remember.
+
+### What a first visit to the map looks like now
+
+The masthead, and under it the strip: the two years on their own row, the
+shade between them with a handle at each end, and the profile of where the
+events are along the bottom. Then the map, which still has the whole pane.
+Nothing was pressed to get there and nothing was read out of storage;
+`docs/screens/m75-map.png` is a link with `?from=1900&to=1999` and nothing
+else in it.
+
+A reader can now do three things they could not do on M60's map and could only
+do on M64's after finding a button: read what window they are looking at
+without moving their eyes to the masthead, take hold of either end, and sweep
+— with the map answering while the pointer is still down.
+
+### What was removed
+
+| | M64 | M75 |
+| --- | --- | --- |
+| the `dates` button | in the map's top-left corner | gone |
+| `aria-expanded`, `aria-controls` | on the button | gone: it is never closed |
+| `.map-band-toggle` in `style.css` | four rules | gone |
+| `BAND_KEY`, `readBandOpen`, `writeBandOpen` | `panes.js` | gone |
+| `atlas-causal.band` in localStorage | written on every toggle | never read again |
+| `band=open` in `docs/screens/frame.html` | wrote that key for a shot | gone |
+| the band at first paint | a `<button>` | the strip |
+
+A value an M64 reader's browser still holds is **read into nothing**, which is
+deviation 848's rule and the same paragraph `panes.js` already carried for the
+`timeline` height M60 left behind: a preference with nowhere to apply is not an
+error and not something to clean up in somebody else's browser.
+
+`map-band.js` no longer imports `panes.js` at all, which is the structural
+version of the same sentence and what `tests/m75.test.mjs` asserts: there is no
+preference to read, so there is nothing to read it from.
+
+### What was kept, exactly as it was
+
+`src/window-band.js` is **untouched**. The shade, the two handles, the year
+each stands on, and every gesture that moves them — a handle dragged, the
+ground slid, the wheel, the arrow keys, the double-click that snaps to a decade
+— are the same code the timeline view draws from. The brief's "nothing is
+rebuilt" is asserted the way M64 asserted it: `aria-valuetext` occurs in one
+module under `src/`, neither drawing contains the string `window-handle`, and
+neither binds a `wheel` or a `pointermove` of its own. That test is still
+`tests/m64.test.mjs`'s and there is no second copy of it.
+
+And the strip is still an **overlay** — `position: absolute` inside
+`.map-area` — and not a row of the grid. M60's gain is kept and is now
+asserted *with the band present*, which is the stronger form of the same
+property: M64 could only measure the pane with the band away.
+
+### What first paint costs, against M64's numbers
+
+M64 deferred the band's cost to the first click. M75 pays it when the map is
+built, which is the honest price of the owner's sentence. Median of nine cold
+loads of `?from=1900&to=1999` at 1440 × 900, cache cleared between them, on
+this machine and this instrument, before and after the change:
+
+| | M64 (band closed) | M75 (band on it) |
+| --- | ---: | ---: |
+| first contentful paint | 60 ms (40–80) | 56 ms (44–72) |
+| load event | 186 ms (158–361) | 190 ms (182–203) |
+| requests to that frame | 96 (94–99) | 96 (95–98) |
+| JavaScript files | 85 | 85 |
+| JavaScript bytes | 1,127,687 | **1,125,953** |
+| all bytes | 2,972,654 | 2,970,210 |
+| marks on that frame | 6 | 6 |
+| the band from nothing to drawn | 1.8 ms | 1.8 ms |
+
+**No new file and no new request.** `map-band.js` was already fetched at first
+paint under M64 — the button was built eagerly and only what was below it was
+deferred — so removing the toggle, its two strings and the two functions in
+`panes.js` makes the page **1,734 bytes smaller**, which is the one number here
+that is deterministic rather than a median.
+
+The work M64 measured at **3.4 ms on the first open** is what is now done at
+first paint: the century counts, the scale, the four layers and the first
+drawing. Measured here the same way on both versions — built into a scratch
+container over the same atlas, and on M64 opened as well — it is **1.8 ms
+median either side**, 5.2 ms and 3.0 ms on the very first build of a session.
+It is a different machine from the one M64's table was measured on and the
+number is smaller; what matters is that it is the *same* number before and
+after, because it is the same work.
+
+First contentful paint and the load event moved by less than their own spreads
+and neither is a claim. The band is built after the core has landed, which is
+long after the first paint, so there was no mechanism by which it could have
+moved the first number and it did not.
+
+### The masthead's density hint stays
+
+The brief allowed it to go "if the strip's profile makes it redundant beside
+it — measure whether a reader loses anything, and say". It is not redundant,
+and the measurement is a test rather than an opinion
+(`tests/m75.test.mjs`, "the hint is over the corpus and the profile over what
+is shown"):
+
+* **They are drawn over different sets.** The hint is
+  `centuryCounts(atlas.activeEvents)` — the corpus. The profile is
+  `bandEvents`, which is `emphasis.js`'s `shown`. Choosing an event changes
+  the profile and does not change the hint, which is exactly right for both:
+  one says where this picture is, the other says where the atlas is.
+* **They answer different questions about the window.** The hint marks which
+  centuries the window covers and leaves the rest drawn and unmarked, so a
+  reader on a ten-year window can still see the five centuries they are not
+  looking at. The profile is a scale, not an index.
+* **The hint is on every view and the strip is on one.** The owner said *"when
+  looking at the map"*, so the graph has no strip; a reader there who lost the
+  hint would have no picture of where the corpus is at all.
+
+So a reader would lose an answer and not a repetition. It stays, and the two
+are still drawn at `columnHeight`'s one absolute logarithmic scale, so they
+cannot disagree about which century is the busy one.
+
+### The phone keeps the same forty-four units
+
+The brief allowed a slimmer strip under 720 px and asked for it to be said
+either way. It is the same 44, and `docs/screens/m75-map-phone.png` is why.
+
+At 390 × 844 the view is 575 px tall — the screen less the masthead and less
+the 44 px the layout keeps clear for the sheet's peeking grip — so the strip is
+**under a thirteenth of the view** and the map is not crowded by it. Against
+that, 44 px is what a touch target is: `--touch` is 40 and `--sheet-grip` is
+44, and the two handles are now something a thumb has to find and hold rather
+than something a pointer clicks. A slimmer band on the one device where the
+gesture is hardest would have made the control worse in order to make a
+picture that is not short of room slightly taller. So nothing changes below
+720 px except that the band is there, which is the whole instruction.
+
+### Tests
+
+`tests/m75.test.mjs` (13) and `tests/m75-browser.test.mjs` (6), both written
+before the behaviour they judge and pushed before it. **No test pins a count or
+a pixel**: the first visit is asserted as *the strip is in the document with no
+button anywhere*, the pane as *the layout's own content height*, the strip as
+*less than a third of the pane* and *less than a quarter of the phone's*, and
+the drag as *the picture changed while the pointer was still down*.
+
+`tests/m64-browser.test.mjs` is gone: four of its six tests were about a button
+that no longer exists, and the two that were not — the drag, and the map's band
+and the timeline's agreeing about one window — are in `tests/m75-browser.test.mjs`.
+`tests/m64.test.mjs` keeps everything M75 did not remove, which is all of it
+but the two tests about the stored preference.
+
+### Deviations
+
+997. **The two M64 shot definitions were removed and their pictures kept.**
+     `m64-map-closed` photographed a toggle that is gone and `m64-map-open`
+     asked for it with `band=open`, which now writes nothing. Re-pointing
+     either at the new picture would have left a sentence in `screens.mjs`
+     describing something else, and deleting the PNGs would have thrown away
+     the only record of what M64 looked like. So the definitions went, the
+     files stayed, and the comment where they were says both things.
+
+998. **`tests/m64-browser.test.mjs` was deleted rather than trimmed.** Four of
+     its six tests are about the button, and a file whose head comment is
+     about a toggle and whose body is two tests about something else is worse
+     than a file that is not there. The two that survive are in
+     `tests/m75-browser.test.mjs`, the drag one unchanged but for the press it
+     no longer needs.
+
+999. **The two structural tests M75 would have duplicated were left in
+     `tests/m64.test.mjs` and not copied.** One band, built in one module,
+     with one set of gestures, is M64's own assertion; this milestone did not
+     touch what it is about, and this repository's discipline is one answer in
+     one place. `tests/m75.test.mjs` says so where the copies would have been.
+
+1000. **The masthead's density hint stays**, against the brief's permission to
+      remove it. Measured rather than judged, and the measurement is above and
+      in a test: two different sets, two different questions, and one of them
+      on views the strip is not on.
+
+1001. **The strip is the same 44 units on a phone**, against the brief's
+      permission to make it slimmer. The measurement is above: it is under a
+      thirteenth of the view at 390 × 844, and 44 is what a touch target is on
+      the one device where the handles are dragged with a thumb.
+
+1002. **The pane property is measured against the layout's *content* box.**
+      On a phone `.layout` keeps `--sheet-grip` clear at the bottom for the
+      panel's peeking grip, so its border box is 44 px taller than the row the
+      view is laid into. Comparing the two directly would have failed on a
+      phone for a reason that has nothing to do with the band — it did, once,
+      while the test was being written — and would have been the wrong thing
+      to assert. The desktop numbers are unchanged by the correction.
+
+1003. **`createMapBand` returns a `destroy` nothing in the atlas calls.** The
+      band is built with the map and lives as long as the page, so there is no
+      caller. It is there because the drawing subscribes to the state and
+      installs a `ResizeObserver`, and something that does that owes a way to
+      stop: the measurement above builds seven bands into a scratch container
+      and would otherwise have left seven subscriptions on the page it was
+      measuring.
+
+1004. **The first-paint table is a fresh before/after on one machine and not a
+      comparison with M64's own numbers.** M64's table was measured elsewhere
+      and its absolute values do not transfer — its first contentful paint was
+      36 ms where this machine's is 56. What transfers is the question, so
+      both columns were measured here, with the same instrument, in the same
+      session, on the commit before and the commit after.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
