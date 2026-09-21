@@ -24,19 +24,15 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 
-import { HANDLE_WIDTH, bandEvents, bandProfile } from '../src/window-band.js';
+import { HANDLE_WIDTH, bandEvents } from '../src/window-band.js';
 import { STRIP } from '../src/map-band.js';
 import * as panes from '../src/panes.js';
-import { densityColumns } from '../src/window-control.js';
 import { workingSet } from '../src/emphasis.js';
-import { createTimelineScale } from '../src/timeline-scale.js';
-import { centuryCounts } from '../src/util/window.js';
 import { defaultState, parseState, formatState } from '../src/state.js';
 import { buildAdjacency } from '../src/graph.js';
-import { atlasOf, ROOT } from './helpers.mjs';
+import { ROOT } from './helpers.mjs';
 
 const read = (file) => readFile(path.join(ROOT, file), 'utf8');
-const dataDir = path.join(ROOT, 'data');
 const at = (patch) => ({ ...defaultState(), ...patch });
 const sorted = (ids) => [...ids].sort();
 
@@ -182,66 +178,18 @@ test('its geometry still leaves room for the two years above the band they label
     'a handle at either end of the data is drawn whole and not half off the edge');
 });
 
-// ─── 5. the masthead's hint is not the strip's profile ─────────────────────
+// ─── 5. the masthead's hint, and the two fields ────────────────────────────
 //
-// The brief asked whether the hint is now redundant beside the strip and told
-// the run to measure and say. It is not, and this is the measurement: the two
-// drawings answer different questions over different sets, so a reader who
-// lost the hint would lose an answer and not a repetition.
-
-test('the hint is over the corpus and the profile over what is shown: narrowing moves one and not the other', () => {
-  const t = topology();
-  const counts = centuryCounts(t.activeEvents);
-  const scale = createTimelineScale({
-    domain: [1499, 1601], range: [HANDLE_WIDTH, 400 - HANDLE_WIDTH], counts, extent: t.extent,
-  });
-  const profileAt = (state) => bandProfile(bandEvents(t, state), scale, {
-    floor: STRIP.height, openEnd: 1601,
-  });
-  const columnsAt = (state) => densityColumns(counts, t.extent, {
-    from: state.from ?? t.extent.min, to: state.to ?? t.extent.max,
-  });
-
-  const rest = at({});
-  const chosen = at({ selected: 'war' });
-  // Choosing an event takes `elsewhere` out of the picture, so the profile
-  // changes; the hint's columns do not, because the corpus has not.
-  assert.notEqual(profileAt(chosen), profileAt(rest),
-    'the profile follows the picture');
-  assert.deepEqual(
-    columnsAt(chosen).map((c) => [c.century, c.height]),
-    columnsAt(rest).map((c) => [c.century, c.height]),
-    'the hint says where the corpus is, and a selection does not change that',
-  );
-  // And the hint keeps every century of the data whatever the window is, which
-  // is the thing a reader on a narrow window would otherwise have no way to see.
-  const narrow = at({ from: 1500, to: 1510 });
-  assert.deepEqual(columnsAt(narrow).map((c) => c.century), columnsAt(rest).map((c) => c.century),
-    'narrowing marks fewer columns; it never removes one');
-  assert.ok(columnsAt(narrow).some((c) => !c.inside),
-    'and it says which centuries the window has left behind');
-});
-
-test('over the repository’s own corpus the two are still different questions', async () => {
-  const atlas = await atlasOf(dataDir);
-  const counts = centuryCounts(atlas.activeEvents);
-  const whole = densityColumns(counts, atlas.extent, null);
-  assert.ok(whole.length > 1, 'the corpus spans more than one century, so the hint has something to say');
-  // The profile is over `shown`, which at rest is the main events and not the
-  // corpus: two drawings of the same set would be the redundancy the brief
-  // asked about, and they are not the same set.
-  const shown = workingSet(atlas, at({})).shown;
-  assert.ok(shown.size < atlas.activeEvents.length,
-    'what the profile is drawn over is narrower than what the hint is drawn over');
-});
-
-// ─── 6. the masthead's two fields are untouched ────────────────────────────
-
-test('the two number fields are still there and still the typed half of one window', async () => {
-  const html = await read('index.html');
-  assert.match(html, /id="window-control"/, 'the masthead still holds the control');
-  const source = await read('src/window-control.js');
-  assert.match(source, /windowPatch/, 'typing still comes through the one clamp');
-  assert.match(source, /data-window="from"/);
-  assert.match(source, /data-window="to"/);
-});
+// M75 measured the hint against the strip's profile, found them two questions
+// over two sets, and kept it against the brief's permission to remove it
+// (deviation 1000). **M76 removed it, with the two number fields beside it**,
+// and the measurement is why rather than in spite of it: the owner's next
+// sentence was about the band not looking narrowed, and one of the three
+// candidates the M76 brief lists is a corpus-wide profile sitting on the same
+// row as the years, never narrowing, while the one below it does. The two
+// tests that stood here are therefore not re-pointed at anything — the thing
+// they were about is gone, and `tests/m76.test.mjs` asserts its absence.
+//
+// What M75 asserted that M76 did not touch is above: the band is still drawn
+// over what the atlas is showing, it is still an overlay, and its geometry
+// still leaves the two years their row.

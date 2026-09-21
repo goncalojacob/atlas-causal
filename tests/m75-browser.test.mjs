@@ -48,9 +48,12 @@ const BAND = `
     width: box ? Math.round(box.width) : 0,
   };`;
 
+// The window as the reader can read it. It was the masthead's two fields until
+// M76 took them away — the owner, 21 September: *"Picking up the dates exactly
+// is unnecessary"* — so it is the band's own two ends and the link.
 const WINDOW = `return {
-  from: document.querySelector('#window-control [data-window="from"]').value,
-  to: document.querySelector('#window-control [data-window="to"]').value,
+  from: document.querySelector('#map-band-strip .window-handle.from').getAttribute('aria-valuenow'),
+  to: document.querySelector('#map-band-strip .window-handle.to').getAttribute('aria-valuenow'),
   urlFrom: new URLSearchParams(location.search).get('from'),
   urlTo: new URLSearchParams(location.search).get('to'),
 };`;
@@ -176,25 +179,17 @@ test('pulling an end of the band moves the map while the pointer is still down',
   }, { device: DESK });
 });
 
-// 4. The masthead still types the same window, and the timeline still has its
-//    own band. The two halves of "nothing else changed".
-test('the masthead fields still set the window, and the timeline still draws its own band', { skip }, async () => {
+// 4. One window, said the same way by both bands, and the map's is still there
+//    when the reader comes back to it. The half of this that typed into the
+//    masthead's two fields went with the fields (M76); what it was really
+//    asserting — that the two drawings never disagree about one window — is
+//    what is left, and it is asserted from a link instead of from a keystroke.
+test('one window, said the same way by the map’s band and the timeline’s', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await seenIntro(page);
-    await open(page, url('?from=1500&to=1600'), MAP_READY);
+    await open(page, url('?from=1500&to=1550'), MAP_READY);
     const onMap = (await page.eval(BAND)).valuetext;
-    assert.equal(onMap, '1500 to 1600', 'the band says the window the link carried');
-
-    // Typed, not dragged: the other half of the pair, writing the same fields.
-    await page.eval(`
-      const field = document.querySelector('#window-control [data-window="to"]');
-      field.value = '1550';
-      field.dispatchEvent(new Event('change', { bubbles: true }));
-      return true;`);
-    await waitFor(page, "return new URLSearchParams(location.search).get('to') === '1550';",
-      'the typed window in the URL');
-    assert.equal((await page.eval(BAND)).valuetext, '1500 to 1550',
-      'and the band on the map followed the number that was typed');
+    assert.equal(onMap, '1500 to 1550', 'the band says the window the link carried');
 
     // The timeline is untouched: it has the band as a view of its own.
     await page.eval('document.querySelector(\'[data-view="timeline"]\').click(); return true;');
