@@ -559,6 +559,51 @@ body:not(.phone) .layout.panel-empty {
 body:not(.phone) .layout.panel-empty .panel,
 body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
 
+/* --- the composer (M71) ----------------------------------------------- */
+
+/* A fourth column, opened by the button in the masthead and closed by the one
+   in its own head. A column and not an overlay, for one reason: while it is
+   open the reader goes on clicking events on the picture, and a panel that
+   covered the picture would be asking them to click what it is hiding. The
+   view gives up the width, the card keeps its own, and closing gives it all
+   back. Nothing below the button exists until the composer is opened, so the
+   default state of this rule is the one that costs nothing. */
+.layout.composing {
+  grid-template-columns: minmax(0, 1fr) var(--handle) var(--panel-width, minmax(300px, 33%)) minmax(320px, 30%);
+  grid-template-areas: "map split-panel panel composer";
+}
+/* With nothing open there is still no panel: the two rules compose, and the
+   composer takes the column the panel would have had beside it. */
+body:not(.phone) .layout.panel-empty.composing {
+  grid-template-columns: minmax(0, 1fr) 0 0 minmax(320px, 34%);
+}
+.composer {
+  grid-area: composer; overflow: auto; min-height: 0;
+  padding: var(--space-3) var(--space-4) var(--space-6);
+  border-left: 1px solid var(--line); background: var(--paper);
+}
+.composer[hidden] { display: none; }
+.composer.contrib { margin-top: 0; }
+.composer .composer-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); }
+.composer h2 { font-family: var(--font); font-weight: normal; font-size: var(--text-lg); color: var(--cobalt); margin: 0; }
+.composer h3 { font-family: var(--font); font-weight: normal; font-size: var(--text-md); color: var(--cobalt); margin: 0; }
+/* The window, beside the heading of the walk it is the span of: a number the
+   reader reads and never types. */
+.composer .composer-window { font-family: var(--font-ui); font-size: var(--text-sm); color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.composer .composer-steps { list-style: none; margin: var(--space-2) 0 0; padding: 0; counter-reset: step; }
+.composer .composer-step { border-top: 1px solid var(--line); padding: var(--space-2) 0 var(--space-3); }
+.composer .composer-step-head { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2); }
+.composer .composer-step-head::before {
+  counter-increment: step; content: counter(step) ".";
+  font-family: var(--font-ui); font-size: var(--text-sm); color: var(--ink-soft); font-variant-numeric: tabular-nums;
+}
+.composer .composer-step-name { font-family: var(--font); font-size: var(--text-md); color: var(--ink); }
+/* The id the step actually names, shown as an identifier and never dressed as
+   a title: a slug drawn where a name goes is the atlas presenting a derived
+   string as the name of the thing (attributes.js). */
+.composer .composer-step-ref { font-size: var(--text-xs); color: var(--ink-soft); }
+.composer .composer-step-head { grid-column: 1 / -1; }
+
 /* The sheet's wrapper is not a box on a desktop: `contents` takes it out of
    the grid and leaves the panel the grid item it has always been. */
 .sheet { display: contents; }
@@ -629,6 +674,19 @@ body:not(.phone) .layout.panel-empty > .split-panel { display: none; }
   .sheet-grip-bar { width: 2.5rem; height: 4px; border-radius: 2px; background: var(--line); }
   .sheet-grip[aria-expanded="true"] .sheet-grip-bar { background: var(--cobalt-soft); }
   .panel { border-left: 0; flex: 1 1 auto; min-height: 0; overflow: auto; }
+
+  /* There is no fourth column on a phone, because there is no second one.
+     The composer comes down from under the masthead and takes the top half,
+     leaving the picture below it: a reader picks a step by clicking an event
+     down there, so a composer that covered the screen would be asking them to
+     click what it is hiding. `.composing` changes nothing about the grid
+     here — the area name it sets on a desktop has no column to land in. */
+  .layout.composing { grid-template-areas: "map"; }
+  .composer {
+    position: fixed; z-index: 6; inset-inline: 0; top: 0;
+    max-height: 56vh; border-left: 0; border-bottom: 1px solid var(--line);
+    box-shadow: 0 2px 12px var(--cobalt-faint);
+  }
 
   /* The search is the widest thing a reader types into and gets its own
      line; the two view buttons and the Options button share the next one. */
