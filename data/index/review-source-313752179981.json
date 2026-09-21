@@ -1008,6 +1008,33 @@
       "created": "2026-09-21",
       "degree": 1,
       "doi": null,
+      "id": "seibert-2005-comrades-clients-and-cousins",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Comrades, Clients and Cousins: Colonialism, Socialism and Democratization in São Tomé and Príncipe",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
       "id": "tauber-2014-arab-movements-world-war-i",
       "isbn": "9781135199784",
       "kind": "source",

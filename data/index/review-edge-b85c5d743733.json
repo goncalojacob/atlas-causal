@@ -1954,7 +1954,8 @@
         }
       ],
       "cites": [
-        "macqueen-1997-decolonization"
+        "macqueen-1997-decolonization",
+        "seibert-2005-comrades-clients-and-cousins"
       ],
       "created": "2026-09-04",
       "from": "batepa-massacre",
@@ -1965,11 +1966,12 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "1975-sao-tomean-legislative-election",
       "type": "inspired"
