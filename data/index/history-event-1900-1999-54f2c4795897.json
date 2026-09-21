@@ -3979,10 +3979,31 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
     "afghan-civil-war-q1980081": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "afghan-conflict": {
       "from": "git",
       "versions": [
         {
@@ -7295,6 +7316,12 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-05"
         }
       ]
     },
@@ -8141,6 +8168,15 @@
         }
       ]
     },
+    "indochina-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "indonesian-national-revolution": {
       "from": "git",
       "versions": [
@@ -8548,6 +8584,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-09-21"
         }
       ]
@@ -11251,6 +11293,12 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -11646,6 +11694,12 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -11757,6 +11811,12 @@
             "actors",
             "authors",
             "review"
+          ],
+          "on": "2026-09-20"
+        },
+        {
+          "fields": [
+            "parent"
           ],
           "on": "2026-09-20"
         }

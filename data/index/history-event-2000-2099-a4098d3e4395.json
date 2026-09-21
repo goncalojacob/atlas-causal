@@ -822,6 +822,12 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -2729,6 +2735,15 @@
         }
       ]
     },
+    "arab-spring": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "assassination-of-charlie-kirk": {
       "from": "git",
       "versions": [
@@ -3893,6 +3908,12 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -4942,6 +4963,12 @@
             "retraction",
             "review",
             "status"
+          ],
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
           ],
           "on": "2026-09-21"
         }

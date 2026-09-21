@@ -908,6 +908,12 @@
     },
     {
       "dissent": false,
+      "id": "afghan-conflict",
+      "kind": "event",
+      "locator": "Q1519107"
+    },
+    {
+      "dissent": false,
       "id": "algerian-war",
       "kind": "event",
       "locator": "Q200790"
@@ -965,6 +971,12 @@
       "id": "arab-revolt",
       "kind": "event",
       "locator": "Q239060"
+    },
+    {
+      "dissent": false,
+      "id": "arab-spring",
+      "kind": "event",
+      "locator": "Q33761"
     },
     {
       "dissent": false,
@@ -1589,6 +1601,12 @@
       "id": "indo-pakistani-war-of-1965",
       "kind": "event",
       "locator": "Q233583"
+    },
+    {
+      "dissent": false,
+      "id": "indochina-wars",
+      "kind": "event",
+      "locator": "Q2342102"
     },
     {
       "dissent": false,

@@ -2138,6 +2138,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "arab-spring",
       "review": {
         "flags": [
           "imported-facts"
@@ -2812,6 +2813,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "afghan-conflict",
       "review": {
         "flags": [
           "imported-facts"
@@ -2839,6 +2841,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "afghan-conflict",
       "review": {
         "flags": [
           "imported-facts"
@@ -2848,6 +2851,33 @@
       "revised": null,
       "status": "active",
       "title": "Afghan Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "id": "afghan-conflict",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-umbrella"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Afghan Conflict"
     },
     {
       "authors": [
@@ -3230,6 +3260,33 @@
       "revised": "2026-09-20",
       "status": "active",
       "title": "Arab Revolt"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "id": "arab-spring",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-umbrella"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Arab Spring"
     },
     {
       "authors": [
@@ -6372,6 +6429,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "indochina-wars",
       "review": {
         "flags": [
           "imported-facts",
@@ -7965,6 +8023,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "id": "indochina-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-umbrella"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Indochina Wars"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata"
@@ -8647,6 +8732,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "indochina-wars",
       "review": {
         "flags": [
           "imported-facts"
@@ -9049,6 +9135,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "arab-spring",
       "review": {
         "flags": [
           "imported-facts",
@@ -11524,6 +11611,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "afghan-conflict",
       "review": {
         "flags": [
           "imported-facts"
@@ -12154,6 +12242,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "indochina-wars",
       "review": {
         "flags": [
           "imported-facts"
@@ -12390,6 +12479,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "afghan-conflict",
       "review": {
         "flags": [
           "imported-facts",
@@ -14876,6 +14966,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "afghan-conflict",
       "review": {
         "flags": [
           "imported-facts",
@@ -15401,13 +15492,31 @@
   "schema": 1,
   "warnings": [
     {
+      "id": "afghan-conflict",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "arab-israeli-conflict",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
     },
     {
+      "id": "arab-spring",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "iberian-blackout-2025",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "indochina-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
