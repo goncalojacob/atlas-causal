@@ -752,6 +752,26 @@ region**. What the measurement suggests, for the fire that picks this up:
   confidence, not in a `parent` that carries no hedge. A6 legitimises a period
   **with a region**, and the Cold War's region is the world.
 
+**Round two was stopped by the Wikimedia API and not by a judgement**
+(deviation 1013). The Brazilian *Nova República* — `Q2920526`, "History of
+Brazil (1985–present)", the pt article's own title — is the one further
+umbrella this pass had read far enough to write: it completes the Brazilian
+chain the corpus already holds (`empire-of-brazil-1822-1889`,
+`the-1930-revolution-and-the-vargas-era`, `brazilian-military-dictatorship-1964-1985`)
+and would take `the-1988-brazilian-constitution`, `operation-car-wash-2014`,
+`the-impeachment-of-dilma-rousseff-2016`, `the-2018-brazilian-general-election`,
+`lula-returns-to-the-presidency-2023` and `the-commodity-boom-and-the-chinese-buyer`.
+Its item carries **no start date**, so like the Third Republic it must be
+written by hand from the article, and the article API answered *"You are
+making too many requests"* for as long as this fire asked. **A record whose
+citation cannot be read is not written**, so it waits for the next fire, which
+should spend its article calls before its Wikidata ones.
+
+**What the next fire does.** The pass is written down, so the gate of STEP 3
+is satisfied and **the batches resume** — batch 18, the eight hinges §7
+resolves, each imported, connected and **filed as it lands**. The two
+umbrellas above are the filing work still owed, and neither blocks a batch.
+
 **The main count must not rise from here.** Every batch after this pass
 reports it and files what it imports as it imports it; a batch that leaves it
 higher than it found it says why (A3, with A6's teeth).

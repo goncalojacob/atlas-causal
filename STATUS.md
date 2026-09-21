@@ -13657,10 +13657,43 @@ batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
 every edge. **The milestone is not done**: §7 of the pool file says where it
 stands and what the next fire does.
 
-**Seventeen batches.** The pool before: 310 active events, 229 of them main, 362
-active edges, a largest connected component of 254 and 23 events with no edge.
-**After batch 17: 474 active, 370 main, 104 filed, 565 edges, largest component
-433, 3 with no edge.** Fifty-seven records came back from the tombstones and a
+**Seventeen batches and a filing pass.** The pool before: 310 active events,
+229 of them main, 362 active edges, a largest connected component of 254 and 23
+events with no edge. **After batch 17: 474 active, 370 main, 104 filed, 565
+edges, largest component 433, 3 with no edge.** **After the filing pass of
+amendment A6: 477 active, 267 main, 210 filed**, the same 565 edges and the
+same largest component of 433, because a filing writes `parent` and `parent`
+takes no edge.
+
+**The filing pass (A6) is the twenty-first of September and it came before any
+further import**, as the amendment instructs. The owner, with a screenshot of
+the timeline: *"the timeline has too many events. As it is right now it is
+useless. For it to be useful it should only show parent and main events."*
+Three period umbrellas were written, each on a span its source gives:
+`interwar-period` (Q154611, 11 November 1918 to 11 September 1939),
+`scramble-for-africa` (Q179848, 1885 to 1914) — both the Wikidata import's own
+work, walked here from the seeds file — and
+`third-portuguese-republic-since-1974` (Q1259200, since 25 April 1974),
+written here on M62's pattern because its item is an instance of *republic* and
+the import reads it as the actor this atlas already holds. **106 main events
+were filed**: 28, 6 and 72. Main falls **370 to 267**; by lane, europe 190 → 92,
+africa 44 → 39, asia 73 and americas 63 unmoved. Europe's twentieth century
+goes 135 → 71 and its twenty-first 43 → 9, which is the part of the picture the
+owner was looking at. **The target — main events in the low tens per century —
+is met for Europe after 1974 and nowhere else yet.**
+
+**What the pass refused is in `docs/m42-pool.md` § "Filing pass (A6)" with a
+reason each**: three events dated before 11 November 1918, which is the
+interwar period's own start and not 1 January; `ditadura-nacional-1926-1933`,
+because A6 refuses to nest periods more than one deep;
+`carnation-revolution-1974`, on M67's judgement 1; thirteen multilateral
+instruments Portugal signed and did not author, on M67's judgement 2, against
+seven of Portugal's own acts on the same subjects that *are* filed; seventeen
+European events of the span that are not Portugal's, which is what a European
+period after 1989 would take if one existed here; and the **decolonisation of
+Africa**, the umbrella that lane most wants, which Wikidata dates to a decade
+and no date is invented here. **Asia and the Americas are the pass's own
+unfinished half** and the pool file says what each waits on. Fifty-seven records came back from the tombstones and a
 hundred and thirteen were imported and kept; a hundred and ninety-five edges
 were written — eighteen in batch 0, seven in batch 1, **nineteen in batch 3, which
 imported nothing at all and moved the component by twenty-seven**, eight in
@@ -14027,6 +14060,64 @@ that alone, because a second source thickens an edge and a person decides
      one; it does not survive an exception that pretends to be the rule.
 
 ### Deviations
+
+1013. **The Wikimedia API rate-limits this sandbox, and it stopped the filing
+     pass's second round.** After the pass's own lookups — three Wikidata
+     items, two article revisions and one lead — `en.wikipedia.org` began
+     answering *"You are making too many requests to the API"* with a
+     request-id and the rate-limit page, and went on doing so a hundred
+     seconds later. The second round would have written the Brazilian
+     **Nova República** umbrella (`Q2920526`, "History of Brazil
+     (1985–present)"), which needs a revision id and a lead to cite. **A
+     record whose citation this run cannot read is a record this run does not
+     write**, so the round was dropped rather than sourced from memory. The
+     Wikidata endpoint answered throughout; it is the article API that is
+     limited, and a run that needs both should spend the article calls first.
+
+1012. **A period Wikidata dates to a decade cannot be imported at all, and
+     that is the right refusal.** `Q1146918`, the decolonisation of Africa, is
+     the umbrella the africa lane most wants: thirty of its records fall
+     between 1950 and 1975 — the Algerian war, the two Sudanese wars, the
+     Portuguese colonial war, the Guinean ballots, the Zanzibar revolution.
+     Its `P580` carries **precision 8**, a decade, and `intervalFor` refuses
+     an item with no year it can read: *"an event with no year has nowhere on
+     the timeline"*. Reading "1950s" as 1950 is the widening deviation 989
+     forbids, so the umbrella is refused and named in the pool file with what
+     it waits on — a year from the article or from a person, not a fetch.
+     **The class was added to the seeds table anyway** (`Q230533`
+     *decolonization*), against deviation 1005's rule, because here the record
+     *is* blocked and the class question is the one §6 says a batch pointed at
+     a named record should pose and answer.
+
+1011. **The import cannot write a period named for a form of government, and
+     the reason is the class table doing its job.** `Q1259200`, the Third
+     Portuguese Republic, is an *instance of republic* (`Q7270`), so
+     `classify` reads it as an **actor** — and this atlas already holds that
+     actor, `third-portuguese-republic`. An actor cannot be a parent, so the
+     import would have enriched the polity and written no umbrella at all.
+     The record was written here instead, on M62's own pattern for
+     `first-portuguese-republic-1910-1926` and `estado-novo-1933-1974`, with
+     its span taken from the item's description and the article's lead and
+     both cited with the revision each was read at. **Not a fault in the
+     table**: a republic *is* a polity, and the umbrella is a period whose
+     name happens to be the polity's. It is a standing limit on how far an
+     import can take A6's filing rule, and the next regime umbrella will meet
+     it again.
+
+1010. **`inSchemaOrder` rewrote a hundred and six records to add one line, and
+     the diff hid the change it was making.** The filing pass first wrote
+     `parent` through `tools/lib/order.mjs`, which is correct about where a
+     key belongs and therefore moved `origin`, `review`, `sitelinks` and
+     `wikipedia` on **every record it touched**: 961 insertions and 669
+     deletions for 106 one-line additions, on records whose existing order
+     predates the schema's. The commit was withdrawn before it was pushed and
+     the pass wrote the key in place instead, leaving each file's own order
+     alone: 209 insertions, 103 deletions, two lines a record. **The tool is
+     not wrong** — it exists so that an envelope added to a record that had
+     none lands where every other record keeps it — but it is for a record
+     being *written*, and a pass that is adding one field to records somebody
+     else wrote should insert and not reorder. Deviation 999 found the other
+     half of this about sub-objects.
 
 1009. **Deviation 595's thirty-second browser deadline is still the check's one
      flake, and batch 17 hit it.** The `validate` run on batch 17's head went

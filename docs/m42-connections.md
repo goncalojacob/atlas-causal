@@ -3358,3 +3358,32 @@ imports its neighbour lands, and its reason is rewritten then.
 | `mexican-revolution`, `january-6-united-states-capitol-attack`, `assassination-of-john-f-kennedy` | a neighbour in a place or a politics this atlas does not reach at all. **`anglo-zanzibar-war` was here until batch 10**: its reason asked for the 1890 protectorate agreement by name and the sweep produced it |
 | `treaty-on-the-non-proliferation-of-nuclear-weapons`, `paris-agreement`, `ramsar-convention`, `convention-on-the-elimination-of-all-forms-of-discrimination-against-women`, `convention-on-the-rights-of-the-child`, `united-nations-convention-on-the-law-of-the-sea` | an event the instrument decided, which for each of these would be a national one this atlas does not hold |
 | `russian-revolution` | nothing: the atlas holds February, October and the civil war as three records with edges of their own, and a fourth node over all three would double every path through them without adding an argument. Redundancy, not reach, and the new bar does not touch it |
+
+## The filing pass (A6) — the two records it leaves bare, and why
+
+*21 September. The pass itself is in `docs/m42-pool.md` § "Filing pass (A6)";
+this section exists because a main event that names neither an actor nor a
+place is argued for here or in `docs/m67-umbrellas.md`, and `tests/m67.test.mjs`
+holds the obligation.*
+
+The pass wrote three period umbrellas and filed 106 main events under them. It
+wrote **no edge**: `parent` is a display fact and takes none, so the largest
+connected component is unchanged at 433 and §2's bare-record measurement is
+unmoved by it.
+
+**Two of the three name neither an actor nor a place**, and both were created
+by the Wikidata import from the item's own fields:
+
+- **`interwar-period`** (Q154611). The item gives no participant, no country
+  and no coordinate — a period between two wars is not a thing anybody did in
+  one place. M67's amendment A1 is the general answer and the owner's own:
+  *"It's fine to have no actor or place, you have to read the context."* An
+  actor line written to fill the gap would be a claim the item does not make.
+- **`scramble-for-africa`** (Q179848). The same, and more sharply: the item's
+  own description is *"1880s–1900s Western European colonisation of Africa"*,
+  which is half a continent and seven powers. Naming one of them would be
+  picking a side of the thing the record exists to hold.
+
+**`third-portuguese-republic-since-1974` is not bare**: it names the republic
+itself, which is the one actor line a period named for a polity can honestly
+carry.
