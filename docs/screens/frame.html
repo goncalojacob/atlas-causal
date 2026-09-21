@@ -41,16 +41,12 @@
     // one screenshot has never been anywhere. Written on this page, which is
     // the frame's own origin, so the frame reads it back.
     try { localStorage.setItem('atlas-causal.intro', 'seen'); } catch { /* storage off */ }
-    // And whether the band M64 opens over the map is open. It is a preference
-    // and not state — a link is the picture its sender saw, not the controls
-    // they had open (src/map-band.js) — so a shot of the band cannot be asked
-    // for by link alone either. `band=open` writes the same key the toggle
-    // writes, on this page's origin, and is not passed on to the atlas.
-    const band = params.get('band');
+    // M64 needed a `band` parameter here, because whether the band over the map
+    // was open was a preference and a shot of it could not be asked for by link
+    // alone. M75 removed the button — the band is on the map on every visit —
+    // so there is nothing to write and the parameter is dropped rather than
+    // left writing a key nobody reads (src/map-band.js).
     params.delete('band');
-    try {
-      localStorage.setItem('atlas-causal.band', band === 'open' ? 'open' : 'closed');
-    } catch { /* storage off */ }
     // How far into the graph the picture is taken, and over which mark. The
     // zoom is not in the URL — the atlas keeps what the reader is *looking at*
     // there and not how far they have wheeled into it (graph-view.js) — so a

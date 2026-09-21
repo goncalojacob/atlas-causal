@@ -364,27 +364,14 @@ export const SHOTS = Object.freeze([
     width: 1440, height: 900,
     what: 'the timeline with the same event chosen: the same few bars the other two views draw' },
 
-  // M64: the toggle closed and open, on the same window as M60, M61 and M65,
-  // so that five runs' pictures of the map go side by side and what differs
-  // between the last two is only the control.
-  //
-  // The first is the point of the milestone as much as the second: **closed it
-  // costs nothing**, the map is the whole pane M60 gave it, and all that is on
-  // it is one button in the corner. The second is the band over the map, with
-  // the profile under it saying where the events are — `density.js`'s own
-  // columns over what the atlas is currently showing (M65).
-  //
-  // `band=open` is the frame's, not the atlas's: the window is URL state and
-  // the toggle is not, so a shot of the band open cannot be asked for by link
-  // alone (docs/screens/frame.html).
-  { name: 'm64-map-closed', page: 'docs/screens/frame.html',
-    query: '?w=1440&h=900&from=1900&to=1999',
-    width: 1440, height: 900,
-    what: 'a first visit: the whole pane, and the toggle in the corner costing nothing' },
-  { name: 'm64-map-open', page: 'docs/screens/frame.html',
-    query: '?w=1440&h=900&from=1900&to=1999&band=open',
-    width: 1440, height: 900,
-    what: 'the band open over the map: two handles to sweep, and where the events are under them' },
+  // M64 had two shots here, the toggle closed and the band open, and neither
+  // can be taken any more: there is no toggle to photograph closed and no
+  // `band=open` to ask with, because M75 put the band on the map on every
+  // visit. A shot definition that would now produce a different picture from
+  // the sentence beside it is worse than no definition, so the two are gone
+  // and `docs/screens/m64-map-closed.png` and `m64-map-open.png` stay where
+  // they are: they are the record of what M64 looked like, which is the one
+  // thing a picture of a removed control is still good for.
 
   // M66, the two the owner handed over.
   //
@@ -578,6 +565,27 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&from=1900&to=1999&view=graph',
     width: 1440, height: 900,
     what: 'the graph at rest, opening on its window exactly as it did before there was a frame' },
+
+  // M75. The owner, 21 September: "The dates two-handled band should not be
+  // hidden." So there is nothing to arrange and nothing to ask for: the query
+  // is the window and the size, exactly as a reader's own link would be, and
+  // the band is in the picture because it is always in the picture.
+  //
+  // The same window as M60, M61, M64 and M65, so that six runs' pictures of
+  // the map go side by side; what differs from `m64-map-closed` is the whole
+  // of this milestone, and what differs from `m64-map-open` is that nobody
+  // pressed anything.
+  { name: 'm75-map', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999',
+    width: 1440, height: 900,
+    what: 'a first visit to the map: the band on it, two handles to sweep, and the map still the whole pane' },
+  // And the same on a phone, where the question was whether forty-four units
+  // over a 390-pixel screen is too much. It is not: the strip is what a thumb
+  // needs to find and hold, and the map keeps the rest of the screen.
+  { name: 'm75-map-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&from=1900&to=1999',
+    width: 500, height: 844,
+    what: 'the same band in a 390 x 844 viewport: not hidden, not behind a button, and not a third of the screen' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
