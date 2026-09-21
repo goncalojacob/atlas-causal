@@ -1445,6 +1445,63 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "1991-soviet-coup-d-etat-attempt",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active",
+      "title": "1991 Soviet coup d'état attempt"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "1993-russian-constitutional-crisis",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active",
+      "title": "1993 Russian constitutional crisis"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -3015,7 +3072,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "breakup-of-yugoslavia",
       "kind": "event",
       "origin": {
@@ -3098,6 +3155,34 @@
       "revised": "2026-09-17",
       "status": "active",
       "title": "Bucha massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 2,
+      "id": "budapest-memorandum",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active",
+      "title": "Budapest Memorandum"
     },
     {
       "authors": [
@@ -3823,6 +3908,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "croatian-war-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "dates-corrected-m44c",
+          "wants-exact-dates",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active",
+      "title": "Croatian War of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -3884,6 +4000,34 @@
       "revised": "2026-09-17",
       "status": "active",
       "title": "The Cuban War of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "dayton-agreement",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active",
+      "title": "Dayton Agreement"
     },
     {
       "authors": [
@@ -3953,7 +4097,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 5,
       "id": "dissolution-of-the-soviet-union",
       "kind": "event",
       "origin": {
@@ -5136,6 +5280,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "good-friday-agreement",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active",
+      "title": "Good Friday Agreement"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -6115,6 +6287,35 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "Korean War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "kosovo-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active",
+      "title": "Kosovo War"
     },
     {
       "authors": [
@@ -7913,7 +8114,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "revolutions-of-1989",
       "kind": "event",
       "origin": {
@@ -7928,6 +8129,34 @@
       "revised": null,
       "status": "active",
       "title": "Revolutions of 1989"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "romanian-revolution-1989",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active",
+      "title": "Romanian Revolution (1989)"
     },
     {
       "authors": [
@@ -8169,7 +8398,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 5,
       "id": "russo-ukrainian-war",
       "kind": "event",
       "origin": {
@@ -9594,7 +9823,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "the-troubles",
       "kind": "event",
       "origin": {
@@ -10655,11 +10884,13 @@
         "wikidata"
       ],
       "created": "2026-09-21",
+      "degree": 1,
       "id": "war-in-bosnia-and-herzegovina",
       "kind": "event",
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "yugoslav-wars",
       "review": {
         "flags": [
           "imported-facts"
@@ -11010,6 +11241,34 @@
       "revised": "2026-09-16",
       "status": "active",
       "title": "Young Turk Revolution of 1908"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 3,
+      "id": "yugoslav-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active",
+      "title": "Yugoslav Wars"
     }
   ],
   "schema": 1,
@@ -11052,12 +11311,6 @@
     },
     {
       "id": "second-italo-ethiopian-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "war-in-bosnia-and-herzegovina",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

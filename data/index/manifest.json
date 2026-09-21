@@ -49,13 +49,13 @@
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-8f337d5a8546.json",
+      "file": "index/attributes-1900-1999-d07a4d91b44d.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-bdedc8552031.json",
+      "file": "index/attributes-2000-2099-7071787cb70b.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
@@ -801,7 +801,7 @@
       "id": "other"
     },
     {
-      "count": 6,
+      "count": 7,
       "id": "revolution"
     },
     {
@@ -809,7 +809,7 @@
       "id": "treaty"
     },
     {
-      "count": 27,
+      "count": 29,
       "id": "war"
     }
   ],
@@ -877,7 +877,7 @@
   ],
   "counts": {
     "actors": 2696,
-    "edges": 414,
+    "edges": 424,
     "events": 586,
     "narratives": 2,
     "offices": 11,
@@ -915,7 +915,7 @@
       "to": 1899
     },
     {
-      "file": "index/explanations-1900-1999-3c85fe37b079.json",
+      "file": "index/explanations-1900-1999-f7903c682940.json",
       "from": 1900,
       "to": 1999
     },
@@ -926,13 +926,13 @@
     }
   ],
   "files": {
-    "citers": "index/citers-1b241c7fdfd4",
-    "core": "index/core-61fb2b8e6f49.json",
+    "citers": "index/citers-ad5787afe680",
+    "core": "index/core-2a2492b8bf91.json",
     "grounds": "index/grounds-3e76e72cfb2e.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-bf00470d4b63.json",
-    "search": "index/search-9b602b228003.json",
-    "sources": "index/sources-c985cb48f048.json",
+    "review": "index/review-9ab8e53a5007.json",
+    "search": "index/search-2058549798f8.json",
+    "sources": "index/sources-de1371beb4ce.json",
     "territories": "index/territories-d9304e6db415.json"
   },
   "historyShards": [
@@ -972,7 +972,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-a34362aa3785.json",
+      "file": "index/history-event-1900-1999-b7510a51d9ed.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
@@ -1021,7 +1021,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-edge-1900-1999-a89dffe927c9.json",
+      "file": "index/history-edge-1900-1999-8aba971ca8f0.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "edge",

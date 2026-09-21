@@ -540,6 +540,15 @@
         }
       ]
     },
+    "1991-soviet-coup-d-etat-attempt--dissolution-of-the-soviet-union--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "1995-portuguese-legislative-election--euro-adoption-1999--enabled": {
       "from": "git",
       "versions": [
@@ -904,6 +913,15 @@
         {
           "first": true,
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "budapest-memorandum--russo-ukrainian-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -1633,6 +1651,24 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "dissolution-of-the-soviet-union--1993-russian-constitutional-crisis--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "dissolution-of-the-soviet-union--budapest-memorandum--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3086,6 +3122,15 @@
         }
       ]
     },
+    "revolutions-of-1989--romanian-revolution-1989--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "russian-civil-war--kronstadt-rebellion--caused": {
       "from": "git",
       "versions": [
@@ -3456,6 +3501,15 @@
         }
       ]
     },
+    "the-troubles--good-friday-agreement--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "treaty-of-accession-1985--eec-accession-1986--precondition-of": {
       "from": "git",
       "versions": [
@@ -3657,6 +3711,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "war-in-bosnia-and-herzegovina--dayton-agreement--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3900,6 +3963,33 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "yugoslav-wars--breakup-of-yugoslavia--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "yugoslav-wars--croatian-war-of-independence--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "yugoslav-wars--kosovo-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     }

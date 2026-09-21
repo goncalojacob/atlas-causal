@@ -656,6 +656,18 @@
     },
     {
       "dissent": false,
+      "id": "1991-soviet-coup-d-etat-attempt",
+      "kind": "event",
+      "locator": "Q221382"
+    },
+    {
+      "dissent": false,
+      "id": "1993-russian-constitutional-crisis",
+      "kind": "event",
+      "locator": "Q862099"
+    },
+    {
+      "dissent": false,
       "id": "1995-portuguese-legislative-election",
       "kind": "event",
       "locator": null
@@ -902,6 +914,12 @@
     },
     {
       "dissent": false,
+      "id": "budapest-memorandum",
+      "kind": "event",
+      "locator": "Q1000658"
+    },
+    {
+      "dissent": false,
       "id": "charter-of-the-united-nations",
       "kind": "event",
       "locator": "Q171328"
@@ -950,9 +968,21 @@
     },
     {
       "dissent": false,
+      "id": "croatian-war-of-independence",
+      "kind": "event",
+      "locator": "Q68969"
+    },
+    {
+      "dissent": false,
       "id": "cuban-revolution",
       "kind": "event",
       "locator": "Q11264"
+    },
+    {
+      "dissent": false,
+      "id": "dayton-agreement",
+      "kind": "event",
+      "locator": "Q190315"
     },
     {
       "dissent": false,
@@ -1088,6 +1118,12 @@
     },
     {
       "dissent": false,
+      "id": "good-friday-agreement",
+      "kind": "event",
+      "locator": "Q208958"
+    },
+    {
+      "dissent": false,
       "id": "great-depression",
       "kind": "event",
       "locator": "Q8698"
@@ -1199,6 +1235,12 @@
       "id": "korean-war",
       "kind": "event",
       "locator": "Q8663"
+    },
+    {
+      "dissent": false,
+      "id": "kosovo-war",
+      "kind": "event",
+      "locator": "Q190029"
     },
     {
       "dissent": false,
@@ -1349,6 +1391,12 @@
       "id": "revolutions-of-1989",
       "kind": "event",
       "locator": "Q382861"
+    },
+    {
+      "dissent": false,
+      "id": "romanian-revolution-1989",
+      "kind": "event",
+      "locator": "Q204213"
     },
     {
       "dissent": false,
@@ -1661,6 +1709,12 @@
       "id": "young-turk-revolution-of-1908",
       "kind": "event",
       "locator": "Q4298662"
+    },
+    {
+      "dissent": false,
+      "id": "yugoslav-wars",
+      "kind": "event",
+      "locator": "Q242352"
     },
     {
       "dissent": false,

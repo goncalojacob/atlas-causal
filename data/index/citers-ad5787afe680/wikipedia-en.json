@@ -266,6 +266,12 @@
     },
     {
       "dissent": false,
+      "id": "1991-soviet-coup-d-etat-attempt--dissolution-of-the-soviet-union--caused",
+      "kind": "edge",
+      "locator": "\"Dissolution of the Soviet Union\", revision 1375840189, § lead"
+    },
+    {
+      "dissent": false,
       "id": "2005-portuguese-legislative-election--2009-portuguese-legislative-election--precondition-of",
       "kind": "edge",
       "locator": "\"2009 Portuguese legislative election\", revision 1373358204, § lead"
@@ -395,6 +401,12 @@
       "id": "bretton-woods-system--imf-agreement-1978--precondition-of",
       "kind": "edge",
       "locator": "\"Bretton Woods system\", revision 1374837351"
+    },
+    {
+      "dissent": false,
+      "id": "budapest-memorandum--russo-ukrainian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Russo-Ukrainian war\", revision 1375351069, § Background"
     },
     {
       "dissent": false,
@@ -557,6 +569,18 @@
       "id": "cuban-war-of-independence-1895-1898--spanish-american-war-1898--caused",
       "kind": "edge",
       "locator": "\"Spanish–American War\", revision 1374740923"
+    },
+    {
+      "dissent": false,
+      "id": "dissolution-of-the-soviet-union--1993-russian-constitutional-crisis--precondition-of",
+      "kind": "edge",
+      "locator": "\"Dissolution of the Soviet Union\", revision 1375840189, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "dissolution-of-the-soviet-union--budapest-memorandum--precondition-of",
+      "kind": "edge",
+      "locator": "\"Russo-Ukrainian war\", revision 1375351069, § Background"
     },
     {
       "dissent": false,
@@ -1550,6 +1574,12 @@
     },
     {
       "dissent": false,
+      "id": "revolutions-of-1989--romanian-revolution-1989--caused",
+      "kind": "edge",
+      "locator": "\"Revolutions of 1989\", revision 1375849372, § lead"
+    },
+    {
+      "dissent": false,
       "id": "rose-revolution--orange-revolution--inspired",
       "kind": "edge",
       "locator": "\"Orange Revolution\", revision 1374383386, § U.S. involvement in the revolution"
@@ -2324,6 +2354,12 @@
     },
     {
       "dissent": false,
+      "id": "the-troubles--good-friday-agreement--caused",
+      "kind": "edge",
+      "locator": "\"The Troubles\", revision 1375596184, § lead"
+    },
+    {
+      "dissent": false,
       "id": "transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--transfer-of-the-portuguese-court-to-brazil-1807--precondition-of",
       "kind": "edge",
       "locator": "\"Colonial Brazil\", revision 1371077435"
@@ -2534,6 +2570,12 @@
     },
     {
       "dissent": false,
+      "id": "war-in-bosnia-and-herzegovina--dayton-agreement--caused",
+      "kind": "edge",
+      "locator": "\"Bosnian War\", revision 1375967053, § lead"
+    },
+    {
+      "dissent": false,
       "id": "winter-war--continuation-war--caused",
       "kind": "edge",
       "locator": "\"Continuation War\", revision 1375847616, § Winter War"
@@ -2693,6 +2735,24 @@
       "id": "young-turk-revolution-of-1908--armenian-genocide--precondition-of",
       "kind": "edge",
       "locator": "\"Young Turk Revolution\", revision 1372902192"
+    },
+    {
+      "dissent": false,
+      "id": "yugoslav-wars--breakup-of-yugoslavia--precondition-of",
+      "kind": "edge",
+      "locator": "\"Yugoslav Wars\", revision 1373953860, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "yugoslav-wars--croatian-war-of-independence--precondition-of",
+      "kind": "edge",
+      "locator": "\"Breakup of Yugoslavia\", revision 1373988162, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "yugoslav-wars--kosovo-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Breakup of Yugoslavia\", revision 1373988162, § lead"
     },
     {
       "dissent": false,
