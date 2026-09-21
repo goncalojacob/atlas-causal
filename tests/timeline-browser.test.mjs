@@ -10,7 +10,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { withBrowser, open, waitFor, skip } from './browser.mjs';
+import { withBrowser, open, waitFor, until, skip } from './browser.mjs';
 import { ROW_LIMITS } from '../src/timeline.js';
 import { GLYPH_BOX } from '../src/map/glyphs.js';
 
@@ -47,6 +47,19 @@ const FIT = `
     paneBottom: Math.round(box.bottom),
     windowHeight: innerHeight,
   };`;
+
+// The rows have been laid out for the pane they are in *now*, and the height
+// they were laid out at is what the caller says. `fits`'s own first assertion
+// — the pane holds the drawing and nothing else — said as a predicate: a
+// layout measured against a pane that has since changed fails it, which is
+// what tells the settled drawing from the one the observer wrote on its way
+// there.
+const LAID_OUT_FOR_ITS_PANE = (height) => `
+  const svg = document.querySelector('#timeline svg.timeline');
+  const pane = document.querySelector('.timeline-area');
+  if (!svg || !pane) return false;
+  const drawn = Number(svg.getAttribute('height'));
+  return drawn ${height} && pane.scrollHeight === drawn;`;
 
 // The same assertions wherever the pane's height comes from.
 function fits(fit, where) {
@@ -112,12 +125,19 @@ test('the rows are laid out again when the window changes height', { skip }, asy
       `return document.querySelector('.timeline-area').clientHeight !== ${tall.paneHeight};`,
       'the pane to be re-measured',
     );
-    // The observer answers a change of height, not only of width.
-    await waitFor(
-      page,
-      `return Number(document.querySelector('#timeline svg.timeline').getAttribute('height')) !== ${tall.svgHeight};`,
-      'the rows to be laid out again',
-    );
+    // The observer answers a change of height, not only of width — and it
+    // answers twice. Measured here (docs/m78-flakes.md): one resize lays the
+    // rows out at 280 against a pane that is already 295, and again at 295
+    // two milliseconds later. The wait was "the height is not the tall one",
+    // which the first of those satisfies, and `fits` then read a drawing laid
+    // out for a pane the timeline is no longer in: `295 !== 280`, one browser
+    // pass in five here.
+    //
+    // What it waits for now is the first thing `fits` asserts — the pane holds
+    // the drawing and nothing else — beside the height having moved at all. An
+    // intermediate layout fails that conjunction by construction, because the
+    // pane it was measured against is gone.
+    await until(page, LAID_OUT_FOR_ITS_PANE(`!== ${tall.svgHeight}`));
 
     const short = await page.eval(FIT);
     fits(short, 'after the window was made short');
@@ -130,11 +150,7 @@ test('the rows are laid out again when the window changes height', { skip }, asy
     await page.send('Emulation.setDeviceMetricsOverride', {
       mobile: false, width: 1280, height: 900, deviceScaleFactor: 1,
     });
-    await waitFor(
-      page,
-      `return Number(document.querySelector('#timeline svg.timeline').getAttribute('height')) === ${tall.svgHeight};`,
-      'the rows to come back',
-    );
+    await until(page, LAID_OUT_FOR_ITS_PANE(`=== ${tall.svgHeight}`));
     const back = await page.eval(FIT);
     fits(back, 'back at 900 px');
     assert.equal(back.laneHeight, tall.laneHeight, 'and the height the taller pane gave is back');
