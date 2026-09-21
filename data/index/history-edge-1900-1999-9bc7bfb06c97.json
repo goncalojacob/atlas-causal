@@ -2103,6 +2103,15 @@
         }
       ]
     },
+    "first-balkan-war--treaty-of-london-q584617--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "first-congo-war--second-congo-war--caused": {
       "from": "git",
       "versions": [
@@ -2967,6 +2976,15 @@
         }
       ]
     },
+    "october-revolution--execution-of-the-romanov-family--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "october-revolution--finnish-civil-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -3016,6 +3034,15 @@
       ]
     },
     "ogaden-war--somali-civil-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "paris-peace-conference--svalbard-treaty--enabled": {
       "from": "git",
       "versions": [
         {
@@ -3224,6 +3251,15 @@
         }
       ]
     },
+    "potsdam-conference--potsdam-declaration--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "profit-remittance-law-1962--operation-brother-sam-1964--caused": {
       "from": "git",
       "versions": [
@@ -3374,6 +3410,15 @@
         }
       ]
     },
+    "russian-civil-war--execution-of-the-romanov-family--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "russian-civil-war--kronstadt-rebellion--caused": {
       "from": "git",
       "versions": [
@@ -3434,6 +3479,15 @@
       ]
     },
     "russo-japanese-war--russian-revolution-of-1905--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "russo-japanese-war--soviet-japanese-border-conflicts--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -3508,6 +3562,15 @@
         }
       ]
     },
+    "saur-revolution--soviet-afghan-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "schengen-agreement--schengen-in-force-1995--precondition-of": {
       "from": "git",
       "versions": [
@@ -3536,6 +3599,15 @@
             "review",
             "sources"
           ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "second-balkan-war--treaty-of-bucharest--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-21"
         }
       ]
@@ -3901,6 +3973,15 @@
         }
       ]
     },
+    "treaty-of-london-q584617--second-balkan-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "treaty-of-paris--treaty-of-rome--precondition-of": {
       "from": "git",
       "versions": [
@@ -4073,6 +4154,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "vietnam-war--cambodian-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -4402,7 +4492,25 @@
         }
       ]
     },
+    "world-war-ii--hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "world-war-ii--indonesian-national-revolution--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "world-war-ii--paris-peace-treaties--caused": {
       "from": "git",
       "versions": [
         {
@@ -4460,6 +4568,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "young-turk-revolution-of-1908--31-march-incident--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

@@ -3329,6 +3329,15 @@
         }
       ]
     },
+    "insurgency-in-khyber-pakhtunkhwa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "iraq-war": {
       "from": "git",
       "versions": [
@@ -4252,6 +4261,15 @@
         {
           "first": true,
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "tigray-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

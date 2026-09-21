@@ -824,6 +824,12 @@
     },
     {
       "dissent": false,
+      "id": "31-march-incident",
+      "kind": "event",
+      "locator": "Q2073490"
+    },
+    {
+      "dissent": false,
       "id": "algerian-war",
       "kind": "event",
       "locator": "Q200790"
@@ -992,6 +998,12 @@
     },
     {
       "dissent": false,
+      "id": "cambodian-civil-war",
+      "kind": "event",
+      "locator": "Q817206"
+    },
+    {
+      "dissent": false,
       "id": "cambodian-vietnamese-war",
       "kind": "event",
       "locator": "Q635533"
@@ -1145,6 +1157,12 @@
       "id": "european-convention-on-human-rights",
       "kind": "event",
       "locator": "Q183191"
+    },
+    {
+      "dissent": false,
+      "id": "execution-of-the-romanov-family",
+      "kind": "event",
+      "locator": "Q1356047"
     },
     {
       "dissent": false,
@@ -1316,6 +1334,12 @@
     },
     {
       "dissent": false,
+      "id": "hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict",
+      "kind": "event",
+      "locator": "Q1566342"
+    },
+    {
+      "dissent": false,
       "id": "hat-nipah-and-same-massacres",
       "kind": "event",
       "locator": null
@@ -1361,6 +1385,12 @@
       "id": "indonesian-national-revolution",
       "kind": "event",
       "locator": "Q1332160"
+    },
+    {
+      "dissent": false,
+      "id": "insurgency-in-khyber-pakhtunkhwa",
+      "kind": "event",
+      "locator": "Q179275"
     },
     {
       "dissent": false,
@@ -1568,6 +1598,12 @@
     },
     {
       "dissent": false,
+      "id": "paris-peace-treaties",
+      "kind": "event",
+      "locator": "Q322943"
+    },
+    {
+      "dissent": false,
       "id": "partition-of-india",
       "kind": "event",
       "locator": "Q129053"
@@ -1619,6 +1655,12 @@
       "id": "potsdam-conference",
       "kind": "event",
       "locator": "Q151187"
+    },
+    {
+      "dissent": false,
+      "id": "potsdam-declaration",
+      "kind": "event",
+      "locator": "Q163244"
     },
     {
       "dissent": false,
@@ -1685,6 +1727,12 @@
       "id": "rwandan-civil-war",
       "kind": "event",
       "locator": "Q426722"
+    },
+    {
+      "dissent": false,
+      "id": "saur-revolution",
+      "kind": "event",
+      "locator": "Q1341539"
     },
     {
       "dissent": false,
@@ -1784,6 +1832,12 @@
     },
     {
       "dissent": false,
+      "id": "soviet-japanese-border-conflicts",
+      "kind": "event",
+      "locator": "Q696389"
+    },
+    {
+      "dissent": false,
       "id": "spanish-civil-war",
       "kind": "event",
       "locator": "Q10859"
@@ -1793,6 +1847,12 @@
       "id": "srebrenica-massacre",
       "kind": "event",
       "locator": "Q170334"
+    },
+    {
+      "dissent": false,
+      "id": "svalbard-treaty",
+      "kind": "event",
+      "locator": "Q461891"
     },
     {
       "dissent": false,
@@ -1832,6 +1892,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-bucharest",
+      "kind": "event",
+      "locator": "Q500067"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-friendship-and-cooperation-between-spain-and-portugal",
       "kind": "event",
       "locator": null
@@ -1853,6 +1919,12 @@
       "id": "treaty-of-london",
       "kind": "event",
       "locator": "Q824165"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-london-q584617",
+      "kind": "event",
+      "locator": "Q584617"
     },
     {
       "dissent": false,

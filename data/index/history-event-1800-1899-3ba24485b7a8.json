@@ -614,6 +614,15 @@
         }
       ]
     },
+    "sixth-cholera-pandemic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "slave-trade-act-1807": {
       "from": "git",
       "versions": [

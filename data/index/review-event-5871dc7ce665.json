@@ -2423,6 +2423,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "31-march-incident",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "31 March Incident"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -3585,6 +3612,34 @@
       "revised": "2026-09-18",
       "status": "active",
       "title": "Marcelo Caetano succeeds Salazar"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "cambodian-civil-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "vietnam-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Cambodian Civil War"
     },
     {
       "authors": [
@@ -5200,6 +5255,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "death",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 2,
+      "id": "execution-of-the-romanov-family",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russian-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "execution of the Romanov family"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5395,7 +5479,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "first-balkan-war",
       "kind": "event",
       "names": [
@@ -6361,6 +6445,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Hague Convention for the Protection of Cultural Property in the Event of Armed Conflict"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -6844,6 +6955,34 @@
       "revised": null,
       "status": "active",
       "title": "Indonesian National Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "insurgency-in-khyber-pakhtunkhwa",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "insurgency in Khyber Pakhtunkhwa"
     },
     {
       "authors": [
@@ -8437,7 +8576,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 5,
       "id": "october-revolution",
       "kind": "event",
       "origin": {
@@ -8595,7 +8734,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "paris-peace-conference",
       "kind": "event",
       "origin": {
@@ -8611,6 +8750,33 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "Paris Peace Conference"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "paris-peace-treaties",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Paris Peace Treaties"
     },
     {
       "authors": [
@@ -9081,7 +9247,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "potsdam-conference",
       "kind": "event",
       "origin": {
@@ -9098,6 +9264,34 @@
       "revised": "2026-09-18",
       "status": "active",
       "title": "Potsdam Conference"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "potsdam-declaration",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Potsdam Declaration"
     },
     {
       "authors": [
@@ -9404,7 +9598,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "russian-civil-war",
       "kind": "event",
       "origin": {
@@ -9505,7 +9699,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "russo-japanese-war",
       "kind": "event",
       "origin": {
@@ -9703,6 +9897,33 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "saur-revolution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Saur Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -9812,7 +10033,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 4,
       "id": "second-balkan-war",
       "kind": "event",
       "names": [
@@ -10347,7 +10568,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "soviet-afghan-war",
       "kind": "event",
       "origin": {
@@ -10363,6 +10584,34 @@
       "revised": "2026-09-20",
       "status": "active",
       "title": "Soviet-Afghan War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "soviet-japanese-border-conflicts",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Soviet–Japanese border conflicts"
     },
     {
       "authors": [
@@ -10520,6 +10769,34 @@
       "revised": "2026-09-17",
       "status": "active",
       "title": "The Strangford Treaty"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "svalbard-treaty",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Svalbard Treaty"
     },
     {
       "authors": [
@@ -11436,6 +11713,33 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "treaty-of-bucharest",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Bucharest"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -11561,6 +11865,33 @@
         "status": "draft"
       },
       "revised": "2026-09-20",
+      "status": "active",
+      "title": "Treaty of London"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 2,
+      "id": "treaty-of-london-q584617",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active",
       "title": "Treaty of London"
     },
@@ -12330,7 +12661,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 5,
+      "degree": 6,
       "id": "vietnam-war",
       "kind": "event",
       "origin": {
@@ -12426,7 +12757,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "war-in-afghanistan-2001-2021",
       "kind": "event",
       "origin": {
@@ -12722,7 +13053,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 14,
+      "degree": 16,
       "id": "world-war-ii",
       "kind": "event",
       "origin": {
@@ -12852,7 +13183,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "young-turk-revolution-of-1908",
       "kind": "event",
       "origin": {

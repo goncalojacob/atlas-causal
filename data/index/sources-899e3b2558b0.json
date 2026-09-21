@@ -991,6 +991,47 @@
       "container": null,
       "created": "2026-09-21",
       "creators": [
+        "Robert Gellately"
+      ],
+      "doi": null,
+      "id": "gellately-2007-lenin-stalin-hitler",
+      "isbn": "1400040051",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Knopf",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m42-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Lenin, Stalin, and Hitler: The Age of Social Catastrophe",
+      "type": "book",
+      "url": null,
+      "year": 2007
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 1,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
         "Ivo Goldstein"
       ],
       "doi": null,
@@ -1028,7 +1069,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
+      "citationCount": 2,
       "container": null,
       "created": "2026-09-21",
       "creators": [
@@ -1171,6 +1212,89 @@
       "type": "article",
       "url": "https://search.worldcat.org/search?q=Portugal%3A%20Ex%20Post%20Evaluation%20of%20Exceptional%20Access%20under%20the%202011%20Extended%20Arrangement%20International%20Monetary%20Fund",
       "year": 2016
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 1,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
+        "Arnold Isaacs",
+        "Gordon Hardy"
+      ],
+      "doi": null,
+      "id": "isaacs-hardy-1988-pawns-of-war",
+      "isbn": "0939526247",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Boston Publishing Company",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m42-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Pawns of War: Cambodia and Laos",
+      "type": "book",
+      "url": null,
+      "year": 1988
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 1,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
+        "Robert D. Kaplan"
+      ],
+      "doi": null,
+      "id": "kaplan-1990-soldiers-of-god",
+      "isbn": "9780395521328",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Knopf Doubleday",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m42-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Soldiers of God: With Islamic Warriors in Afghanistan and Pakistan",
+      "type": "book",
+      "url": null,
+      "year": 1990
     },
     {
       "accessed": null,
@@ -2044,7 +2168,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 361,
+      "citationCount": 373,
       "created": "2026-09-04",
       "creators": [
         "Wikidata contributors"
@@ -2081,7 +2205,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 750,
+      "citationCount": 764,
       "created": "2026-09-04",
       "creators": [
         "Wikipedia contributors"

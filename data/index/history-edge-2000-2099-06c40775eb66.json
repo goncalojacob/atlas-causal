@@ -1,710 +1,8 @@
 {
-  "from": null,
-  "kind": "source",
+  "from": 2000,
+  "kind": "edge",
   "records": {
-    "ar-2024-fiftieth-anniversary": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "ar-2025-confidence-vote": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "banco-de-portugal-2014-bes-resolution": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "burgwyn-1997-italian-foreign-policy": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "caulfield-1995-easter-rebellion": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "cne-legislative-2015": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "cne-legislative-2019": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "cne-legislative-2022": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "cne-legislative-2024": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "cne-legislative-2025": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "cne-presidential-2016": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "cne-presidential-2021": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "costa-pinto-2003-contemporary-portugal": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-02"
-        }
-      ]
-    },
-    "costa-pinto-teixeira-2019-political-institutions": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "craton-1982-testing-the-chains": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "cshapes-2-0": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "origin"
-          ],
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "review"
-          ],
-          "on": "2026-09-20"
-        }
-      ]
-    },
-    "cti-2017-2018-fires": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "dre-2020-state-of-emergency": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "dre-government-appointments-2015-2024": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "eakin-1998-brazil-once-and-future-country": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "fausto-1999-concise-history-of-brazil": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "ferreira-gomes-2014-1964": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "fifer-1970-empire-builders": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        },
-        {
-          "fields": [
-            "container"
-          ],
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "fromkin-2009-peace-to-end-all-peace": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "gaunt-2006-massacres-resistance-protectors": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "goldstein-1999-croatia-a-history": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "hall-2000-balkan-wars": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "historical-basemaps": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        }
-      ]
-    },
-    "holy-see-2023-world-youth-day": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "imf-2016-portugal-ex-post-evaluation": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "macqueen-1997-decolonization": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-02"
-        }
-      ]
-    },
-    "maxwell-1995-making-of-portuguese-democracy": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-02"
-        }
-      ]
-    },
-    "meneses-2004-portugal-1914-1926": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-02"
-        }
-      ]
-    },
-    "meneses-2009-salazar": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-02"
-        }
-      ]
-    },
-    "metcalf-metcalf-2006-concise-history-of-modern-india": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "miroiu-alecu-2024-mali-conflict": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "mommsen-1996-rise-and-fall-of-weimar-democracy": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "parker-1977-papel-dos-estados-unidos": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "pgr-2023-operation-influencer": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "ramos-2009-historia-de-portugal": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-02"
-        }
-      ]
-    },
-    "reis-2013-portuguese-slump": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-02"
-        }
-      ]
-    },
-    "ren-2025-blackout": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "ricklefs-1991-history-of-modern-indonesia": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "rosas-1994-estado-novo": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-02"
-        }
-      ]
-    },
-    "rosas-2012-salazar-e-o-poder": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-02"
-        }
-      ]
-    },
-    "seibert-2005-comrades-clients-and-cousins": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "tauber-2014-arab-movements-world-war-i": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "telo-2007-historia-contemporanea": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-02"
-        }
-      ]
-    },
-    "uefa-2016-final": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-03"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-03"
-        }
-      ]
-    },
-    "upton-1980-vallankumous-suomessa": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "watson-1970-brief-history-of-barbados": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-21"
-        },
-        {
-          "fields": [
-            "container"
-          ],
-          "on": "2026-09-21"
-        }
-      ]
-    },
-    "wheeler-1978-republican-portugal": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-02"
-        },
-        {
-          "fields": [
-            "origin",
-            "review"
-          ],
-          "on": "2026-09-02"
-        }
-      ]
-    },
-    "wikidata": {
+    "2001-portuguese-local-elections--2002-portuguese-legislative-election--caused": {
       "from": "git",
       "versions": [
         {
@@ -720,7 +18,7 @@
         }
       ]
     },
-    "wikipedia-en": {
+    "2002-portuguese-legislative-election--2005-portuguese-legislative-election--caused": {
       "from": "git",
       "versions": [
         {
@@ -736,7 +34,7 @@
         }
       ]
     },
-    "wikipedia-pt": {
+    "2005-portuguese-legislative-election--2007-portuguese-abortion-referendum--caused": {
       "from": "git",
       "versions": [
         {
@@ -749,10 +47,821 @@
             "review"
           ],
           "on": "2026-09-04"
+        }
+      ]
+    },
+    "2005-portuguese-legislative-election--2009-portuguese-legislative-election--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "2009-portuguese-legislative-election--troika-bailout-2011--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "2011-egyptian-revolution--2013-egyptian-coup-d-etat--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "2011-portuguese-legislative-election--2011-portuguese-socialist-party-leadership-election--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "2011-portuguese-legislative-election--troika-programme-ends-2014--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "2011-portuguese-socialist-party-leadership-election--2014-portuguese-socialist-party-prime-ministerial-primary--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "2011-south-sudanese-independence-referendum--south-sudanese-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "2014-portuguese-socialist-party-prime-ministerial-primary--geringonca-2015--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "2022-portuguese-social-democratic-party-leadership-election--legislative-election-2022--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "2022-portuguese-social-democratic-party-leadership-election-q111182017--montenegro-government-2024--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "2023-madeiran-regional-election--2024-madeiran-regional-election--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "2024-madeiran-regional-election--2025-madeiran-regional-election--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "bpn-nationalisation-2008--troika-bailout-2011--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "costa-resigns-2023--legislative-election-2024--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "covid-19-pandemic--covid-19-pandemic-in-europe--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-europe--covid-state-of-emergency-2020--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "covid-state-of-emergency-2020--marcelo-reelected-2021--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "covid-state-of-emergency-2020--world-youth-day-2023--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "crisis-portugal--2011-portuguese-legislative-election--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "crisis-portugal--troika-bailout-2011--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-08"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-08"
+        }
+      ]
+    },
+    "euromaidan--russo-ukrainian-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "full-scale-russo-ukrainian-war--bucha-massacre--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "full-scale-russo-ukrainian-war--wagner-group-rebellion--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "gaza-war--gaza-genocide--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "gaza-war--twelve-day-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "geringonca-2015--legislative-election-2019--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "geringonca-2015--legislative-election-2022--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "geringonca-2015--marcelo-elected-president-2016--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "government-falls-2025--legislative-election-2025--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "legislative-election-2015--geringonca-2015--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "legislative-election-2019--legislative-election-2022--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "legislative-election-2022--2022-portuguese-social-democratic-party-leadership-election-q111182017--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "legislative-election-2022--costa-resigns-2023--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "legislative-election-2022--legislative-election-2024--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "legislative-election-2024--montenegro-government-2024--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "libyan-civil-war--mali-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "mahsa-amini-protests--2025-2026-iranian-protests--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "marcelo-elected-president-2016--marcelo-reelected-2021--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "montenegro-government-2024--government-falls-2025--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "operation-car-wash-2014--lula-returns-to-the-presidency-2023--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "operation-car-wash-2014--the-2018-brazilian-general-election--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "operation-car-wash-2014--the-impeachment-of-dilma-rousseff-2016--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "orange-revolution--euromaidan--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "pedrogao-grande-fires-2017--october-fires-2017--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "revolution-of-dignity--russo-ukrainian-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "rose-revolution--orange-revolution--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "russo-georgian-war--russo-ukrainian-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "russo-ukrainian-war--full-scale-russo-ukrainian-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "second-intifada--gaza-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "second-intifada--gaza-war-2008-2009--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "the-2018-brazilian-general-election--lula-returns-to-the-presidency-2023--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "the-commodity-boom-and-the-chinese-buyer--the-impeachment-of-dilma-rousseff-2016--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "the-impeachment-of-dilma-rousseff-2016--the-2018-brazilian-general-election--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "treaty-establishing-a-constitution-for-europe--treaty-of-lisbon--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "treaty-of-nice--treaty-establishing-a-constitution-for-europe--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "troika-bailout-2011--bes-resolution-2014--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "troika-bailout-2011--troika-programme-ends-2014--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "troika-programme-ends-2014--legislative-election-2015--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "war-in-afghanistan-2001-2021--insurgency-in-khyber-pakhtunkhwa--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     }
   },
   "schema": 1,
-  "to": null
+  "to": 2099
 }

@@ -5415,6 +5415,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
+      "from": "first-balkan-war",
+      "id": "first-balkan-war--treaty-of-london-q584617--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-london-q584617",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
       "from": "first-congo-war",
       "id": "first-congo-war--second-congo-war--caused",
       "kind": "edge",
@@ -8281,6 +8309,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "october-revolution",
+      "id": "october-revolution--execution-of-the-romanov-family--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "execution-of-the-romanov-family",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "upton-1980-vallankumous-suomessa"
       ],
@@ -8503,6 +8559,34 @@
       "status": "active",
       "to": "euromaidan",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "paris-peace-conference",
+      "id": "paris-peace-conference--svalbard-treaty--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "svalbard-treaty",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -9079,6 +9163,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "potsdam-conference",
+      "id": "potsdam-conference--potsdam-declaration--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "potsdam-declaration",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "proclamation-of-the-brazilian-republic-1889",
       "id": "proclamation-of-the-brazilian-republic-1889--1964-brazilian-coup-detat--precondition-of",
@@ -9530,6 +9642,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "gellately-2007-lenin-stalin-hitler"
+      ],
+      "created": "2026-09-21",
+      "from": "russian-civil-war",
+      "id": "russian-civil-war--execution-of-the-romanov-family--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "execution-of-the-romanov-family",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en"
       ],
       "created": "2026-09-21",
@@ -9718,6 +9859,34 @@
       "status": "active",
       "to": "russian-revolution-of-1905",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "russo-japanese-war",
+      "id": "russo-japanese-war--soviet-japanese-border-conflicts--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "soviet-japanese-border-conflicts",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -9918,6 +10087,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "kaplan-1990-soldiers-of-god"
+      ],
+      "created": "2026-09-21",
+      "from": "saur-revolution",
+      "id": "saur-revolution--soviet-afghan-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "soviet-afghan-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "telo-2007-historia-contemporanea",
         "costa-pinto-teixeira-2019-political-institutions",
         "wikipedia-en"
@@ -9970,6 +10168,34 @@
       "status": "active",
       "to": "assassination-of-archduke-franz-ferdinand",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "second-balkan-war",
+      "id": "second-balkan-war--treaty-of-bucharest--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-bucharest",
+      "type": "caused"
     },
     {
       "authors": [
@@ -12352,6 +12578,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "hall-2000-balkan-wars"
+      ],
+      "created": "2026-09-21",
+      "from": "treaty-of-london-q584617",
+      "id": "treaty-of-london-q584617--second-balkan-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-balkan-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en"
       ],
       "created": "2026-09-21",
@@ -12965,6 +13220,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "isaacs-hardy-1988-pawns-of-war"
+      ],
+      "created": "2026-09-21",
+      "from": "vietnam-war",
+      "id": "vietnam-war--cambodian-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cambodian-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en"
       ],
       "created": "2026-09-21",
@@ -13067,6 +13351,34 @@
       "revised": null,
       "status": "active",
       "to": "great-depression",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "war-in-afghanistan-2001-2021",
+      "id": "war-in-afghanistan-2001-2021--insurgency-in-khyber-pakhtunkhwa--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "insurgency-in-khyber-pakhtunkhwa",
       "type": "caused"
     },
     {
@@ -13772,6 +14084,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-ii",
+      "id": "world-war-ii--hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "ricklefs-1991-history-of-modern-indonesia"
       ],
@@ -13792,6 +14132,34 @@
       "status": "active",
       "to": "indonesian-national-revolution",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-ii",
+      "id": "world-war-ii--paris-peace-treaties--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "paris-peace-treaties",
+      "type": "caused"
     },
     {
       "authors": [
@@ -13937,6 +14305,34 @@
       "status": "active",
       "to": "imf-agreement-1978",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "young-turk-revolution-of-1908",
+      "id": "young-turk-revolution-of-1908--31-march-incident--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "31-march-incident",
+      "type": "reacted-to"
     },
     {
       "authors": [

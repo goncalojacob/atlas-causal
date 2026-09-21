@@ -878,6 +878,12 @@
     },
     {
       "dissent": false,
+      "id": "first-balkan-war--treaty-of-london-q584617--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of London (1913)\", revision 1359713953, § lead"
+    },
+    {
+      "dissent": false,
       "id": "first-congo-war--second-congo-war--caused",
       "kind": "edge",
       "locator": "\"First Congo War\", revision 1374918500, § lead"
@@ -1526,6 +1532,12 @@
     },
     {
       "dissent": false,
+      "id": "october-revolution--execution-of-the-romanov-family--precondition-of",
+      "kind": "edge",
+      "locator": "\"Murder of the Romanov family\", revision 1374973698, § lead"
+    },
+    {
+      "dissent": false,
       "id": "october-revolution--finnish-civil-war--precondition-of",
       "kind": "edge",
       "locator": "\"Finnish Civil War\", revision 1370618272"
@@ -1595,6 +1607,12 @@
       "id": "orange-revolution--euromaidan--precondition-of",
       "kind": "edge",
       "locator": "\"Orange Revolution\", revision 1372581321"
+    },
+    {
+      "dissent": false,
+      "id": "paris-peace-conference--svalbard-treaty--enabled",
+      "kind": "edge",
+      "locator": "\"Svalbard Treaty\", revision 1372436106, § Contents"
     },
     {
       "dissent": false,
@@ -1736,6 +1754,12 @@
     },
     {
       "dissent": false,
+      "id": "potsdam-conference--potsdam-declaration--caused",
+      "kind": "edge",
+      "locator": "\"Potsdam Declaration\", revision 1371052620, § lead and § Drafting"
+    },
+    {
+      "dissent": false,
       "id": "proclamation-of-the-brazilian-republic-1889--1964-brazilian-coup-detat--precondition-of",
       "kind": "edge",
       "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
@@ -1832,6 +1856,12 @@
     },
     {
       "dissent": false,
+      "id": "russian-civil-war--execution-of-the-romanov-family--caused",
+      "kind": "edge",
+      "locator": "\"Murder of the Romanov family\", revision 1374973698, § lead and § Execution"
+    },
+    {
+      "dissent": false,
       "id": "russian-civil-war--kronstadt-rebellion--caused",
       "kind": "edge",
       "locator": "\"Kronstadt rebellion\", revision 1373564650, § Background"
@@ -1898,6 +1928,12 @@
     },
     {
       "dissent": false,
+      "id": "russo-japanese-war--soviet-japanese-border-conflicts--precondition-of",
+      "kind": "edge",
+      "locator": "\"Soviet–Japanese border conflicts\", revision 1375520653, § Prelude from 1904 to 1932"
+    },
+    {
+      "dissent": false,
       "id": "russo-ukrainian-war--full-scale-russo-ukrainian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
@@ -1934,6 +1970,12 @@
     },
     {
       "dissent": false,
+      "id": "saur-revolution--soviet-afghan-war--caused",
+      "kind": "edge",
+      "locator": "\"Saur Revolution\", revision 1370730356, § lead, infobox result and § Reactions"
+    },
+    {
+      "dissent": false,
       "id": "schengen-agreement--schengen-in-force-1995--precondition-of",
       "kind": "edge",
       "locator": "\"Schengen Agreement\", revision 1370029483"
@@ -1943,6 +1985,12 @@
       "id": "second-balkan-war--assassination-of-archduke-franz-ferdinand--precondition-of",
       "kind": "edge",
       "locator": "\"Second Balkan War\", revision 1370735824"
+    },
+    {
+      "dissent": false,
+      "id": "second-balkan-war--treaty-of-bucharest--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Bucharest (1913)\", revision 1359715572, § lead"
     },
     {
       "dissent": false,
@@ -2768,6 +2816,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-london-q584617--second-balkan-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of London (1913)\", revision 1359713953, § Terms"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-nice--treaty-establishing-a-constitution-for-europe--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of Lisbon\", revision 1366118806, § Background"
@@ -2924,6 +2978,12 @@
     },
     {
       "dissent": false,
+      "id": "vietnam-war--cambodian-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Cambodian Civil War\", revision 1375075951, § lead"
+    },
+    {
+      "dissent": false,
       "id": "vietnam-war--cambodian-vietnamese-war--precondition-of",
       "kind": "edge",
       "locator": "\"Cambodian–Vietnamese War\", revision 1375855358, § Vietnam War and § Rise of communism"
@@ -2957,6 +3017,12 @@
       "id": "wall-street-crash-of-1929--great-depression--caused",
       "kind": "edge",
       "locator": "\"Great Depression\", revision 1371653684"
+    },
+    {
+      "dissent": false,
+      "id": "war-in-afghanistan-2001-2021--insurgency-in-khyber-pakhtunkhwa--caused",
+      "kind": "edge",
+      "locator": "\"Insurgency in Khyber Pakhtunkhwa\", revision 1374407113, § infobox and lead"
     },
     {
       "dissent": false,
@@ -3134,9 +3200,21 @@
     },
     {
       "dissent": false,
+      "id": "world-war-ii--hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict--reacted-to",
+      "kind": "edge",
+      "locator": "\"Hague Convention for the Protection of Cultural Property in the Event of Armed Conflict\", revision 1374191348, § After World War II"
+    },
+    {
+      "dissent": false,
       "id": "world-war-ii--indonesian-national-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"Indonesian National Revolution\", revision 1375837705, § Japanese surrender"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--paris-peace-treaties--caused",
+      "kind": "edge",
+      "locator": "\"Paris Peace Treaties, 1947\", revision 1369078996, § lead"
     },
     {
       "dissent": false,
@@ -3185,6 +3263,12 @@
       "id": "yom-kippur-war--imf-agreement-1978--precondition-of",
       "kind": "edge",
       "locator": "\"Yom Kippur War\", revision 1373227342"
+    },
+    {
+      "dissent": false,
+      "id": "young-turk-revolution-of-1908--31-march-incident--reacted-to",
+      "kind": "edge",
+      "locator": "\"31 March incident\", revision 1370103767, § lead"
     },
     {
       "dissent": false,
