@@ -13657,13 +13657,15 @@ batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
 every edge. **The milestone is not done**: §7 of the pool file says where it
 stands and what the next fire does.
 
-**Seventeen batches and a filing pass.** The pool before: 310 active events,
+**Eighteen batches and a filing pass.** The pool before: 310 active events,
 229 of them main, 362 active edges, a largest connected component of 254 and 23
 events with no edge. **After batch 17: 474 active, 370 main, 104 filed, 565
 edges, largest component 433, 3 with no edge.** **After the filing pass of
 amendment A6: 477 active, 267 main, 210 filed**, the same 565 edges and the
 same largest component of 433, because a filing writes `parent` and `parent`
-takes no edge. The one count that moved against the pass is **events with no
+takes no edge. **After batch 18: 493 active, 266 main, 227 filed, 578 edges,
+largest component 441, 8 with no edge** — the first batch under A6, and the
+main count comes out below where it found it. The one count that moved against the pass is **events with no
 edge at all, 3 to 6**, and the three are the umbrellas themselves: M62's brief
 says an umbrella carries no edge, so each arrives at degree zero and the
 warning is the expected one.
@@ -14478,6 +14480,80 @@ that alone, because a second source thickens an edge and a person decides
      crank — and this run put records and index in one commit and re-learned
      it. Batch 2a carried the rebuild and **run 1020 on the branch head is
      green**. The remaining batches take the two commits.
+
+### Batch 18 — the hinges the tombstones name
+
+The fire after the filing pass, and the first batch judged by A6. Set 0 was
+spent in batch 17 and does not refill, so this batch took the other vein the
+pool file had resolved: the live tombstones that carry an explicit *"It waits
+on …"* clause naming a record. **Eight imported, seven kept, one retracted on
+arrival, seven tombstones back, thirteen edges, two umbrellas, seventeen main
+events filed.** Corpus 477 to 493, main 267 to **266**, largest component 433
+to 441. Seven of seven hinges paid, against six of fifteen in batch 16: a
+reason that names a record is worth more than a reason that asks for a kind of
+record.
+
+**Eight classes were added to `data/imports/wikidata-seeds.json` and one
+refused**, each named in `docs/m42-pool.md`: military expedition, annexation,
+group of elections, independence, military campaign, invasion, convention and
+international conflict; `Q183366` *territory* is refused, because an area of
+land is not an event. `Q625994` *convention* is the trap — Wikidata glosses it
+as a meeting, so the Earth Summit is a conference and not a treaty, and the
+entry carries no category rather than the one the word suggests.
+
+**`sharpeville-massacre` is the one retracted on arrival, and it is the
+batch's most useful finding.** It is exactly the record `soweto-uprising`'s
+reason asks for — "any South African record of the apartheid period" — and no
+article argues the link, so both stay retracted. The record a tombstone asks
+for and the sentence an edge needs are two different things.
+
+**Two umbrellas, because sixteen records arriving main would have raised the
+count A6 says must not rise**, and both are ones the filing pass had already
+nominated by name: `nova-republica-brazil-since-1985`, written here on M62's
+pattern because Q2920526 gives no start date, taking eight Brazilian main
+events; and `arab-israeli-conflict`, the import's own work from Q8669, taking
+five. `anschluss` and `austrian-civil-war` went into `interwar-period`,
+`armistice-of-mudros` into `world-war-i` and `gaza-genocide` into `gaza-war`,
+all four on arguments already written down. `docs/m67-umbrellas.md` §6 carries
+the whole of it, with the two bare records and the one refusal.
+
+### Deviations
+
+1015. **An item that carries both a span and a point in time can import an
+     interval that runs backwards, and rule 15 is the only thing that sees
+     it.** `Q49101`, the Suez Crisis, has P580 29 October 1956 and P582
+     7 November 1956, and also a stray P585 of March 1957. `intervalFor`
+     prefers `pointInTime` to `start` for an event, so the record arrived with
+     `start: 1957` and `end: 1956`. The correction is the **same item's own
+     span** — no date invented, none widened, deviation 989 untouched — and
+     the record carries `m42-interval-corrected` so a reviewer can see where
+     its interval came from. The preference is not wrong in general and was
+     not changed; what is new is that a fire importing an item of that shape
+     should run the validator before it writes an edge, because nothing else
+     catches it.
+1016. **A batch had to write two period umbrellas in the same hour as thirteen
+     edges, and that is the wrong order.** A6 says the main count must not
+     rise, and sixteen new active records means sixteen filings; the Americas
+     and Asia had nowhere to put any of them. It worked, and it worked because
+     the filing pass had already nominated both umbrellas by name — had it
+     not, the batch would have had to choose between inventing a period and
+     breaking A6. **The rule for the fires after this one is in the pool
+     file: file before importing**, and a fire that spends its whole hour on
+     filing has done A6's work.
+1017. **The Wikimedia API rate-limits this sandbox's egress and the limit is
+     short, not a ban.** The fire before this one was stopped by *"You are
+     making too many requests"* (deviation 1013) and recorded it as a wall.
+     It is not: the response carries `retry-after: 22`, and one call at a time
+     with that wait, or `curl --retry 6 --retry-delay 25 --retry-all-errors`,
+     answers every time. `tools/import/wikidata.mjs`'s own backoff — 2, 4, 8,
+     16 seconds over four retries — clears it too, which is why `--import`
+     ran here without a change. Nothing in the tool was touched.
+1018. **No historical claim was written.** Every edge explanation is a
+     paraphrase of a sentence the cited article carries at the cited revision,
+     and every citation names the article, the revision and the section. Two
+     umbrellas were written from their own items and articles, cited at the
+     revision each was read at. No date was invented, no record was signed,
+     and nothing was merged into `main`.
 
 983. **No historical claim was written.** Every edge explanation is a
      paraphrase of a sentence the cited article carries at the cited revision,

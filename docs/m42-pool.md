@@ -775,3 +775,91 @@ umbrellas above are the filing work still owed, and neither blocks a batch.
 **The main count must not rise from here.** Every batch after this pass
 reports it and files what it imports as it imports it; a batch that leaves it
 higher than it found it says why (A3, with A6's teeth).
+
+## Batch 18 — the hinges the tombstones name, and the two umbrellas they forced
+
+*21 September, the fire after the filing pass. §7 resolved these eight before
+this fire started and the resolutions held: all eight items answered, all eight
+carry a date, and nothing had to be looked up twice.*
+
+| | |
+| --- | --- |
+| imported | 8 |
+| kept | 7 |
+| retracted on arrival | 1 (`sharpeville-massacre`) |
+| tombstones back | 7 |
+| edges written | 13 |
+| umbrellas written | 2 |
+| main events filed | 17 |
+| corpus | 477 → **493** active |
+| **main** | 267 → **266** |
+| largest connected component | 433 → **441** |
+| components | 21 → 26 |
+
+**The main count fell, which is what A6 asks of every batch from here.**
+Sixteen of the batch's records would have arrived main; two umbrellas and
+seventeen filings more than cover them. The two umbrellas are the ones the
+filing pass's own §"What the filing pass leaves" nominated by name, so nothing
+here is a period this run invented.
+
+### The seven classes added, and the one refused
+
+`Q1384277` military expedition, `Q194465` annexation, `Q76853179` group of
+elections, `Q37055` independence, `Q831663` military campaign, `Q467011`
+invasion, `Q625994` convention — and `Q11422542` international conflict for
+the Arab–Israeli umbrella, eight in all. Every label and description is read
+from the item over the network, as batch 2a's ten were. **`Q183366` territory
+is refused**: an area of land is not an event, and the Anschluss carries it
+beside `Q194465`, so adding it as anything but an event would make that item's
+classes disagree and refuse it. One known class is enough, which is what
+`classify` does.
+
+`Q625994` is the one worth reading twice. Wikidata glosses it "meeting of a
+group of individuals and/or companies in a certain field", so the Earth Summit
+is a **conference and not a treaty**, and the entry carries no category rather
+than the one the word suggests — `Q154278` is the precedent for leaving it
+unset.
+
+### The one refusal, which is the batch's most useful finding
+
+**`sharpeville-massacre` was imported to unlock `soweto-uprising` and does
+not.** The uprising's reason asks for "any South African record of the
+apartheid period"; Sharpeville is one; no article argues the link. Both stay
+retracted and §5a's reading is the general case: **the record a tombstone asks
+for and the sentence an edge needs are two different things**, and a reason
+written as "it waits on any X" is a weaker promise than one that names a
+record. Of the nineteen live "It waits on …" clauses, the ones that name a
+record by name are the ones that pay: seven of seven here.
+
+### What this batch says about the interval rule
+
+`suez-crisis` arrived starting in 1957 and ending in 1956, which rule 15
+refused. Q49101 carries a span (P580/P582, 29 October to 7 November 1956) and a
+stray point in time (P585, March 1957), and `intervalFor` prefers the point in
+time to the span for an event. **The record was corrected to the same item's
+own span** — no date invented, none widened, deviation 989 untouched — and
+flagged `m42-interval-corrected`. It is the first time this run has seen the
+preference produce an inverted interval, and it will happen again: any item
+with both a span and a later point in time is the same shape. A fire that
+imports one should check rule 15 before it writes an edge, because the
+validator catches it and nothing else does.
+
+### What the next fire does
+
+1. **The eleven remaining "It waits on …" tombstones**, which §7's table did
+   not resolve. Three were looked up and refused there (Austrofascism,
+   perestroika, the OAU) and three more name no date at all (UN resolution
+   1514, the Moldovan declaration, the Rivonia trial). What is left is worth a
+   lookup pass of its own, and it is the vein batch 18 proves: **seven of
+   seven kept, against six of fifteen in batch 16.**
+2. **File before importing.** Batch 18 had to write two umbrellas in the same
+   hour as thirteen edges to keep main from rising, which is the wrong order.
+   Africa's decolonisation still waits on a year, Europe after 1989 still has
+   no umbrella and its seventeen records are still main, and Asia's seventy-odd
+   main events now have one umbrella covering five of them. **A fire that
+   spends its whole hour on filing would be a fire well spent**, and A6 puts it
+   ahead of volume.
+3. **The environmental corner is now three records and still not joined**:
+   `earth-summit` and `aarhus-convention` as a pair, the ozone pair beside it,
+   and no article naming one from the other. §7.4 stands, with the first half
+   of its answer delivered — the *event* it asked for exists now.
