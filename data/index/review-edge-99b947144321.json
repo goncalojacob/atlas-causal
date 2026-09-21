@@ -530,6 +530,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "1964-brazilian-coup-detat",
+      "id": "1964-brazilian-coup-detat--brazilian-military-dictatorship-1964-1985--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "brazilian-military-dictatorship-1964-1985",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "parker-1977-papel-dos-estados-unidos"
       ],
@@ -997,6 +1025,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "1982-lebanon-war",
+      "id": "1982-lebanon-war--twelve-day-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "twelve-day-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "costa-pinto-2003-contemporary-portugal",
         "reis-2013-portuguese-slump"
       ],
@@ -1335,6 +1391,34 @@
       "status": "active",
       "to": "2007-portuguese-abortion-referendum",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "2005-portuguese-legislative-election",
+      "id": "2005-portuguese-legislative-election--2009-portuguese-legislative-election--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2009-portuguese-legislative-election",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -2835,6 +2919,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "constitution-1933",
+      "id": "constitution-1933--estado-novo-1933-1974--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "estado-novo-1933-1974",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo"
       ],
       "created": "2026-09-02",
@@ -3351,6 +3463,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "coup-28-may-1926",
+      "id": "coup-28-may-1926--ditadura-nacional-1926-1933--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "ditadura-nacional-1926-1933",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "meneses-2009-salazar",
         "rosas-2012-salazar-e-o-poder"
       ],
@@ -3694,6 +3834,34 @@
       "status": "active",
       "to": "santa-maria-hijacking-1961",
       "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "ditadura-nacional-1926-1933",
+      "id": "ditadura-nacional-1926-1933--estado-novo-1933-1974--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "estado-novo-1933-1974",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -4063,6 +4231,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "empire-of-brazil-1822-1889",
+      "id": "empire-of-brazil-1822-1889--proclamation-of-the-brazilian-republic-1889--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "proclamation-of-the-brazilian-republic-1889",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "english-settlement-of-barbados-1627",
       "id": "english-settlement-of-barbados-1627--the-atlantic-slave-trade-to-the-caribbean--precondition-of",
@@ -4111,6 +4307,34 @@
       "revised": "2026-09-21",
       "status": "active",
       "to": "the-caribbean-sugar-revolution",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "estado-novo-1933-1974",
+      "id": "estado-novo-1933-1974--portuguese-colonial-war-1961-1974--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portuguese-colonial-war-1961-1974",
       "type": "precondition-of"
     },
     {
@@ -4394,6 +4618,62 @@
       "revised": null,
       "status": "active",
       "to": "vietnam-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "first-sino-japanese-war",
+      "id": "first-sino-japanese-war--boxer-rebellion--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "boxer-rebellion",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "first-sino-japanese-war",
+      "id": "first-sino-japanese-war--russo-japanese-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "russo-japanese-war",
       "type": "precondition-of"
     },
     {
@@ -5375,6 +5655,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "independence-of-brazil-1822",
+      "id": "independence-of-brazil-1822--empire-of-brazil-1822-1889--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "empire-of-brazil-1822-1889",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "indigenous-depopulation-of-coastal-brazil",
       "id": "indigenous-depopulation-of-coastal-brazil--the-atlantic-slave-trade-to-brazil--caused",
@@ -5490,6 +5798,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "iran-iraq-war",
+      "id": "iran-iraq-war--gulf-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "gulf-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "iranian-revolution",
       "id": "iranian-revolution--2025-2026-iranian-protests--precondition-of",
@@ -5547,6 +5883,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "iranian-revolution",
+      "id": "iranian-revolution--iran-iraq-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "iran-iraq-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-15",
       "from": "iranian-revolution",
       "id": "iranian-revolution--mahsa-amini-protests--precondition-of",
@@ -5564,6 +5928,34 @@
       "revised": null,
       "status": "active",
       "to": "mahsa-amini-protests",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "iranian-revolution",
+      "id": "iranian-revolution--twelve-day-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "twelve-day-war",
       "type": "precondition-of"
     },
     {
@@ -6175,6 +6567,34 @@
       "revised": null,
       "status": "active",
       "to": "2025-2026-iranian-protests",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "marcelo-elected-president-2016",
+      "id": "marcelo-elected-president-2016--marcelo-reelected-2021--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "marcelo-reelected-2021",
       "type": "precondition-of"
     },
     {
@@ -7226,6 +7646,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "portuguese-colonial-war-1961-1974",
+      "id": "portuguese-colonial-war-1961-1974--carnation-revolution-1974--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "portuguese-landfall-in-brazil-1500",
       "id": "portuguese-landfall-in-brazil-1500--indigenous-depopulation-of-coastal-brazil--caused",
@@ -7476,6 +7924,34 @@
       "revised": null,
       "status": "active",
       "to": "constitution-1911",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "republic-proclaimed-1910",
+      "id": "republic-proclaimed-1910--first-portuguese-republic-1910-1926--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-portuguese-republic-1910-1926",
       "type": "caused"
     },
     {
@@ -7756,6 +8232,34 @@
       "status": "active",
       "to": "russo-ukrainian-war",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "russo-japanese-war",
+      "id": "russo-japanese-war--russian-revolution-of-1905--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "russian-revolution-of-1905",
+      "type": "caused"
     },
     {
       "authors": [
@@ -9902,6 +10406,34 @@
       "status": "active",
       "to": "battle-of-the-lys-1918",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "treaty-of-brest-litovsk",
+      "id": "treaty-of-brest-litovsk--polish-soviet-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "polish-soviet-war",
+      "type": "precondition-of"
     },
     {
       "authors": [

@@ -656,7 +656,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 8,
+      "degree": 9,
       "id": "1964-brazilian-coup-detat",
       "kind": "event",
       "names": [
@@ -1241,7 +1241,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "1982-lebanon-war",
       "kind": "event",
       "origin": {
@@ -1708,7 +1708,7 @@
         "wikidata"
       ],
       "created": "2026-09-04",
-      "degree": 2,
+      "degree": 3,
       "id": "2005-portuguese-legislative-election",
       "kind": "event",
       "origin": {
@@ -1847,7 +1847,7 @@
         "wikidata"
       ],
       "created": "2026-09-04",
-      "degree": 1,
+      "degree": 2,
       "id": "2009-portuguese-legislative-election",
       "kind": "event",
       "origin": {
@@ -2794,7 +2794,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "boxer-rebellion",
       "kind": "event",
       "origin": {
@@ -2852,6 +2852,7 @@
         "wikipedia-pt"
       ],
       "created": "2026-09-18",
+      "degree": 1,
       "id": "brazilian-military-dictatorship-1964-1985",
       "kind": "event",
       "origin": {
@@ -3000,7 +3001,7 @@
         "telo-2007-historia-contemporanea"
       ],
       "created": "2026-09-02",
-      "degree": 16,
+      "degree": 17,
       "id": "carnation-revolution-1974",
       "kind": "event",
       "origin": {
@@ -3213,7 +3214,7 @@
         "meneses-2009-salazar"
       ],
       "created": "2026-09-02",
-      "degree": 6,
+      "degree": 7,
       "id": "constitution-1933",
       "kind": "event",
       "origin": {
@@ -3448,7 +3449,7 @@
         "rosas-1994-estado-novo"
       ],
       "created": "2026-09-02",
-      "degree": 8,
+      "degree": 9,
       "id": "coup-28-may-1926",
       "kind": "event",
       "origin": {
@@ -3791,6 +3792,7 @@
         "wikipedia-pt"
       ],
       "created": "2026-09-18",
+      "degree": 2,
       "id": "ditadura-nacional-1926-1933",
       "kind": "event",
       "origin": {
@@ -4103,6 +4105,7 @@
         "wikipedia-pt"
       ],
       "created": "2026-09-20",
+      "degree": 2,
       "id": "empire-of-brazil-1822-1889",
       "kind": "event",
       "origin": {
@@ -4195,6 +4198,7 @@
         "wikipedia-pt"
       ],
       "created": "2026-09-18",
+      "degree": 3,
       "id": "estado-novo-1933-1974",
       "kind": "event",
       "origin": {
@@ -4605,6 +4609,7 @@
         "wikipedia-pt"
       ],
       "created": "2026-09-18",
+      "degree": 1,
       "id": "first-portuguese-republic-1910-1926",
       "kind": "event",
       "origin": {
@@ -4637,6 +4642,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "first-sino-japanese-war",
       "kind": "event",
       "origin": {
@@ -5197,7 +5203,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "gulf-war",
       "kind": "event",
       "origin": {
@@ -5473,7 +5479,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 3,
       "id": "independence-of-brazil-1822",
       "kind": "event",
       "names": [
@@ -5640,6 +5646,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "iran-iraq-war",
       "kind": "event",
       "origin": {
@@ -5674,7 +5681,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 6,
       "id": "iranian-revolution",
       "kind": "event",
       "origin": {
@@ -6491,7 +6498,7 @@
         "costa-pinto-teixeira-2019-political-institutions"
       ],
       "created": "2026-09-03",
-      "degree": 1,
+      "degree": 2,
       "id": "marcelo-elected-president-2016",
       "kind": "event",
       "origin": {
@@ -6519,7 +6526,7 @@
         "cne-presidential-2021"
       ],
       "created": "2026-09-03",
-      "degree": 1,
+      "degree": 2,
       "id": "marcelo-reelected-2021",
       "kind": "event",
       "origin": {
@@ -7330,6 +7337,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 1,
       "id": "polish-soviet-war",
       "kind": "event",
       "origin": {
@@ -7441,6 +7449,7 @@
         "wikipedia-pt"
       ],
       "created": "2026-09-18",
+      "degree": 2,
       "id": "portuguese-colonial-war-1961-1974",
       "kind": "event",
       "origin": {
@@ -7571,7 +7580,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 4,
+      "degree": 5,
       "id": "proclamation-of-the-brazilian-republic-1889",
       "kind": "event",
       "names": [
@@ -7636,7 +7645,7 @@
         "ramos-2009-historia-de-portugal"
       ],
       "created": "2026-09-02",
-      "degree": 6,
+      "degree": 7,
       "id": "republic-proclaimed-1910",
       "kind": "event",
       "origin": {
@@ -7814,7 +7823,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "russian-revolution-of-1905",
       "kind": "event",
       "origin": {
@@ -7881,6 +7890,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "russo-japanese-war",
       "kind": "event",
       "origin": {
@@ -9417,7 +9427,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "treaty-of-brest-litovsk",
       "kind": "event",
       "origin": {
@@ -10076,7 +10086,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 3,
       "id": "twelve-day-war",
       "kind": "event",
       "origin": {
@@ -10651,73 +10661,13 @@
   "schema": 1,
   "warnings": [
     {
-      "id": "brazilian-military-dictatorship-1964-1985",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "ditadura-nacional-1926-1933",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "empire-of-brazil-1822-1889",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "entente-cordiale",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
     },
     {
-      "id": "estado-novo-1933-1974",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "first-portuguese-republic-1910-1926",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "first-sino-japanese-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "iberian-blackout-2025",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "iran-iraq-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "polish-soviet-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "portuguese-colonial-war-1961-1974",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "russo-japanese-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

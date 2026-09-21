@@ -50,6 +50,15 @@
         }
       ]
     },
+    "2005-portuguese-legislative-election--2009-portuguese-legislative-election--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "2009-portuguese-legislative-election--troika-bailout-2011--precondition-of": {
       "from": "git",
       "versions": [
@@ -568,6 +577,15 @@
         {
           "first": true,
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "marcelo-elected-president-2016--marcelo-reelected-2021--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

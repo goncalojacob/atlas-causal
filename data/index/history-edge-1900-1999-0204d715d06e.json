@@ -241,6 +241,15 @@
         }
       ]
     },
+    "1964-brazilian-coup-detat--brazilian-military-dictatorship-1964-1985--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "1964-brazilian-coup-detat--operation-brother-sam-1964--reacted-to": {
       "from": "git",
       "versions": [
@@ -441,6 +450,15 @@
       ]
     },
     "1982-lebanon-war--2006-lebanon-war--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "1982-lebanon-war--twelve-day-war--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -1202,6 +1220,15 @@
         }
       ]
     },
+    "constitution-1933--estado-novo-1933-1974--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "constitution-1933--exposicao-mundo-portugues-1940--enabled": {
       "from": "git",
       "versions": [
@@ -1477,6 +1504,15 @@
         }
       ]
     },
+    "coup-28-may-1926--ditadura-nacional-1926-1933--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "coup-28-may-1926--salazar-finance-minister-1928--enabled": {
       "from": "git",
       "versions": [
@@ -1570,6 +1606,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "ditadura-nacional-1926-1933--estado-novo-1933-1974--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -1755,6 +1800,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "estado-novo-1933-1974--portuguese-colonial-war-1961-1974--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -2168,6 +2222,15 @@
         }
       ]
     },
+    "iran-iraq-war--gulf-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "iranian-revolution--2025-2026-iranian-protests--precondition-of": {
       "from": "git",
       "versions": [
@@ -2200,12 +2263,30 @@
         }
       ]
     },
+    "iranian-revolution--iran-iraq-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "iranian-revolution--mahsa-amini-protests--precondition-of": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "iranian-revolution--twelve-day-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -2794,6 +2875,15 @@
         }
       ]
     },
+    "portuguese-colonial-war-1961-1974--carnation-revolution-1974--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "potsdam-conference--nato-founding-1949--precondition-of": {
       "from": "git",
       "versions": [
@@ -2864,6 +2954,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "republic-proclaimed-1910--first-portuguese-republic-1910-1926--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -2971,6 +3070,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "russo-japanese-war--russian-revolution-of-1905--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3314,6 +3422,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-brest-litovsk--polish-soviet-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
