@@ -13713,6 +13713,18 @@ Wikidata; they are in `data/events/` with `status: retracted`.
 
 ### Deviations
 
+994. **A sweep row whose article is not an article.** `Q134884640`, Operation
+     Rising Lion, is the fifth best by sitelinks in the 2020s and its English
+     sitelink redirects into *"List of attacks during the Twelve-Day War"*, a
+     section of a list. The atlas already holds that war as `twelve-day-war`,
+     `Q134900605`, with the same month. The record was created by the rule and
+     **retracted in the same batch**, because a section of a list about a war
+     this atlas already draws is not a second record — and because an edge
+     between the two would be an assertion made out of a redirect. The sweep
+     cannot see this: sitelinks count redirects, and the check is a person
+     opening the page. It is the second refusal this run has made on what an
+     article is rather than on what it says, after `majimaji-war`.
+
 993. **Three edges of batch 7 satisfy rule 9 and were kept `probable` anyway.**
      §1 of `docs/m42-connections.md` says no edge this milestone writes is
      `consensus`, and gives the reason: the English and Portuguese Wikipedias

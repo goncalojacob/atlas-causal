@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--indonesian-national-revolution--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Indonesian National Revolution\", revision 1375837705, § Japanese surrender"
+    },
+    {
+      "source": "ricklefs-1991-history-of-modern-indonesia",
+      "locator": "p. 213"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "indonesian-national-revolution",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says the unconditional surrender of Japan on 15 August 1945 was eagerly received by the radical and politicised pemuda groups, who pressured Sukarno and Hatta to proclaim Indonesian independence two days later, on 17 August; the Preparatory Committee elected Sukarno president the following day. The article hangs that on Ricklefs 1991, page 213, among others, which is the second author here. The four-year war that followed was against the Dutch, and the article says the Netherlands was critically weakened by the war in Europe and did not return as a significant military force until early 1946.",
+  "dispute": null
+}

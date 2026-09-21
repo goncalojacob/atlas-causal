@@ -960,6 +960,164 @@ conference's own aftermath in the Nile valley, or a Portuguese or European
 event the pages relate to Sudan, and **no page read here names one**. It is
 written down rather than fixed by an edge nobody argues.
 
+## 2h. Batch 8 — sets 3 and 4, and the bar doing its work
+
+Batch 7 spent what was left of sets 1 and 2, so this batch is §5's **set 3 and
+set 4 and nothing else**: the two best by sitelinks in each of the five decades
+the corpus is thinnest in — the 1900s at ten active events, the 1890s at
+eleven, the 1930s and the 1950s at nineteen, the 2000s at twenty-one — then the
+six best remaining by sitelinks over the whole pool. Sixteen rows, a cap the
+same size as batch 7's read.
+
+**This is the first batch where the rule picks records the corpus cannot use**,
+and that is the rule working rather than failing. Sixteen items seeded,
+**fifteen created, one refused** for want of a class nobody has decided about
+(`Q475678`, the Mexican drug war, whose only classes are *asymmetric warfare*,
+*irregular warfare* and *drug war*; the three are listed rather than added,
+because the record would have been retracted for want of a neighbour in the
+same breath). Of the fifteen, **nine earned an edge and six did not and are
+retracted with their reasons**. Nothing was written in order to keep a record.
+
+Two classes were added, both read from Wikidata itself: `Q154278`, *ethnic
+cleansing*, with no category — the atlas holds the Holocaust, the Armenian
+genocide and Katyn with none either — and `Q2380335`, *airstrike*, as `war`.
+Eleven lanes were written for items whose own point the import cannot reach.
+
+### The edges
+
+Eleven, of which one imports nothing.
+
+#### `the-amazon-rubber-boom --precondition-of--> treaty-of-petropolis`
+
+*"Treaty of Petrópolis"*, revision 1370155152, lead: the treaty ended the Acre
+War between Bolivia and Brazil over Acre, **"a desirable territory in
+Bolivia-Brazil border during the contemporary rubber boom"**, Brazil taking it
+for land between the Abuna and the Madeira, two million pounds and a railway
+around the rapids. The boom is the record this atlas already held, and it is
+what the article says made the ground worth a war. **The article dates the
+signature 17 November 1903 and the record carries the item's own 11 November**;
+neither was changed to match the other, which is deviation 989's rule.
+
+#### `franco-russian-alliance --precondition-of--> world-war-i`
+
+*"Franco-Russian Alliance"*, revision 1375457134, § History: Russia and France
+**entered the war united by the treaty of alliance**, which forced Germany from
+the first days to fight on two fronts, leading to the defeat at the Marne and
+the collapse of the Schlieffen Plan. The article puts the alliance among the
+causes of the shape the war took and not of its outbreak.
+
+#### `munich-agreement --caused--> first-vienna-award` and `treaty-of-trianon --precondition-of--> first-vienna-award`
+
+*"First Vienna Award"*, revision 1373350087, lead: the arbitration and the award
+were **direct consequences of the previous month's Munich Agreement**, and
+Hungary's claim was a claim for the revision of the 1920 Treaty of Trianon, some
+of whose losses the award returned. Both ends were already here.
+
+#### `vietnam-war --precondition-of--> laotian-civil-war`
+
+*"Laotian Civil War"*, revision 1370626595, lead: the Kingdom of Laos was **a
+covert theatre during the Vietnam War**, the North Vietnamese Army invaded in
+1958 and 1959 to use the east for the Ho Chi Minh trail, and the Pathet Lao won
+in December 1975 following North Vietnam's victory in April. **Not filed under
+it**: the Laotian war ends 2 December 1975 and the Vietnam War 30 April 1975, so
+a child would be dated outside its parent.
+
+#### `world-war-ii --precondition-of--> deportation-of-the-crimean-tatars`
+
+*"Deportation of the Crimean Tatars"*, revision 1375533569, lead: the Soviet
+government presented the deportation as collective punishment for collaboration
+with Nazi Germany — **noting that the 20,000 who collaborated with the Axis were
+half the 40,000 who served in the Red Army** — while several modern scholars
+believe it was part of a plan to reach the Dardanelles or to clear minorities
+from the border regions. The war is the occasion the government gave, and the
+article says plainly that scholars dispute it is the reason.
+
+#### `world-war-ii --precondition-of--> indonesian-national-revolution`
+
+*"Indonesian National Revolution"*, revision 1375837705, § Japanese surrender:
+**the unconditional surrender of Japan on 15 August 1945** was received by the
+pemuda groups, who pressed Sukarno and Hatta to proclaim independence two days
+later. **Second author: Ricklefs 1991, p. 213**, one of the works the article
+hangs that sentence on.
+
+#### `world-war-ii --precondition-of--> austrian-state-treaty`
+
+*"Austrian State Treaty"*, revision 1374482051, § Development: **the Allied
+occupation of Austria began on 27 April 1945** and divided the country into four
+zones, and the treaty of 15 May 1955 was signed among those occupying powers and
+the Austrian government. The treaty ends the occupation the war produced.
+
+#### `treaty-of-versailles --precondition-of--> treaty-of-rapallo`
+
+*"Treaty of Rapallo (1922)"*, revision 1362703017, § Background: both states were
+left vulnerable after the First World War, **Versailles led to German
+disarmament and the cession of German territories**, and the article quotes the
+reading that the victors' policies "left no alternative to Germany but to move
+closer to Russia".
+
+#### `vietnam-war --precondition-of--> sino-vietnamese-war`
+
+*"Sino-Vietnamese War"*, revision 1375848359, § Background: the three wars in one
+line — just as the First Indochina War and the Vietnam War arose from the
+indecisive aftermath of political relations, **the Third Indochina War again
+followed the unresolved problems of the earlier wars**. The immediate occasion
+the lead gives, Vietnam's occupation of Cambodia, is not a record here.
+
+#### `second-boer-war --precondition-of--> entente-cordiale`
+
+**This one imports nothing and is the batch's other job.** *"Entente Cordiale"*,
+revision 1370844455, § Background: the situation for Britain and France changed
+in the last decade of the century, and **"the change had its roots in a British
+loss of confidence after the Second Boer War and a growing fear of the strength
+of Germany"**. §4b named `entente-cordiale` as one of four records standing
+alone; this is the sentence that ends it, and the Boer war was here all along.
+
+### The six retracted, and what each waits for
+
+Each carries its reason in its own `retraction` block, which is where it
+belongs, and each names the record that would bring it back.
+
+| record | what it waits for |
+| --- | --- |
+| `may-coup` | a record of Serbia between 1903 and 1912, or a page arguing a line from the coup to the Balkan wars or to Sarajevo. Its Legacy section is a television series and a novel |
+| `thousand-days-war` | the separation of Panama, or any Colombian or Andean record: the atlas holds none |
+| `austrian-civil-war` | the Anschluss or the Dollfuss dictatorship. The atlas holds no Austrian record before the state treaty of 1955 |
+| `transnistria-war` | a record of perestroika or of Moldovan independence. The record the pages argue from is the dissolution of the Soviet Union, which this atlas dates 26 December 1991 — **after the war's start of 2 November 1990, so rule 4 refuses the edge**, and no imported date was widened to make it fit |
+| `anti-counterfeiting-trade-agreement` | a record of the trade order it belongs to. It carries **no lane either**: the item gives no point and names no country |
+| `operation-rising-lion` | nothing. Its English sitelink redirects into *"List of attacks during the Twelve-Day War"*, and the Twelve-Day War is `twelve-day-war`, `Q134900605`, active here. A section of a list about a war the atlas already draws is not a second record |
+
+### The nine left main, and the one that could have been filed
+
+`treaty-of-petropolis`, `franco-russian-alliance`, `first-vienna-award`,
+`laotian-civil-war`, `austrian-state-treaty`, `treaty-of-rapallo`,
+`sino-vietnamese-war`, `deportation-of-the-crimean-tatars` and
+`indonesian-national-revolution` name neither an actor nor a place and are
+left main, which M67's amendment A1 settles. Five are treaties between states,
+which is A1's own case. **`laotian-civil-war` is the one that could have been
+filed** — its article calls Laos a covert theatre of the Vietnam War — and it
+is not, because its end of 2 December 1975 falls outside the Vietnam War's
+30 April 1975 and rule 24 would warn. The deportation is arguable under
+`world-war-ii` and is listed rather than filed, as M62 §3 requires: the article
+says the war was the justification the government gave and that scholars
+dispute it, and a filing would assert with a display fact what the article
+declines to assert.
+
+### What batch 8 did to the graph
+
+| | before | after |
+| --- | --: | --: |
+| active events | 369 | 378 |
+| main | 279 | 288 |
+| active edges | 450 | 461 |
+| **largest connected component** | **349** | **359** |
+| components | 15 | 14 |
+| active events with no edge at all | 11 | 10 |
+| active events unreachable from any Portuguese one | 5 | 4 |
+
+**Nine records in and ten into the component**: the tenth is
+`entente-cordiale`, which was already here. The corpus grew by nine and the
+component by ten, which is the only shape A5 accepts without an explanation.
+
 ## 3. The main count, and why it moved up
 
 Amendment A3: an import that leaves the main count higher than it found it has
@@ -1012,6 +1170,10 @@ top-level — seven because a treaty between states is part of no event here, an
 three because the filing is arguable and M62 §3 says an arguable filing is
 listed rather than made. **The count moved because the corpus did, and the one
 record that could be filed was.**
+
+**Batch 8 leaves it at 288 against 279**, nine higher, and nine records came
+in: none took a parent and §2h says why for each, `laotian-civil-war` at
+length, because it is the one the article would file and the dates refuse.
 
 ## 4. What these batches refused to write
 

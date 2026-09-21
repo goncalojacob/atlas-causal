@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "thousand-days-war",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": "2026-09-21",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q43378",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "Thousand Days' War",
+    "pt": "Guerra dos Mil Dias"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q43378"
+    }
+  ],
+  "title": "Thousand Days' War",
+  "summary": "Wikidata item Q43378, imported by tools/import/wikidata.mjs. The item's own description reads \"1899–1902 civil war in Colombia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1902,
+    "date": "1899-10-17",
+    "endDate": "1902-11-21"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 8 under brief §1: the record earns no honest edge. The English article, at revision 1370750751, argues the war forward to the loss of Panama in 1903 and back to the Colombian constitution of 1886 and the Regeneración, and this atlas holds no Colombian, Panamanian or Andean record at all. It waits on the separation of Panama, or on any record of the region."
+  }
+}

@@ -98,6 +98,7 @@ A5: a batch that grows the corpus and not the component has to say why.
 | 5 | the nine tombstones those hinges unblock, 11 edges, one filing | 354 | 265 | 89 | 424 | **323** | 16 |
 | 6 | the five batch 4 left bare: 4 tombstones back, 8 edges | 358 | 269 | 89 | 432 | **330** | 11 |
 | 7 | the first sweep batch: 10 imported, 1 tombstone back, 18 edges, one filing | 369 | 279 | 90 | 450 | **349** | 11 |
+| 8 | sets 3 and 4: 15 created, 9 kept and 6 retracted, 11 edges | 378 | 288 | 90 | 461 | **359** | 10 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -267,22 +268,26 @@ the next, so a killed run loses a batch and not the milestone.
 | batch 5 | the nine tombstones they unblock: 11 edges, one filing, 315 → 323 |
 | batch 6 | the five batch 4 left bare: 4 tombstones, 8 edges, 323 → 330 |
 | batch 7 | the first sweep batch: 10 imports, 1 tombstone, 18 edges, 330 → 349 |
+| batch 8 | sets 3 and 4: 15 created, 6 retracted, 11 edges, 349 → 359 |
 
 **Where the milestone stands against its own done-condition.** The brief asks
 for an order of magnitude more active events than the 250 it was written
-against. The corpus holds **369**, up from 310, and its largest connected
-component holds **349 of them**, up from 254 — so the connectedness is nearly
-done and the volume is barely begun. **The volume is the sweep**: **1,573 rows**
+against. The corpus holds **378**, up from 310, and its largest connected
+component holds **359 of them**, up from 254 — so the connectedness is nearly
+done and the volume is barely begun. **The volume is the sweep**: **1,557 rows**
 the tool has already found and nobody has walked, recomputed against `data/` on
-21 September after batch 7, and §5's tick rule, written before a box was ticked,
-is how they are chosen. Batch 7 is the first batch taken by that rule: sets 1
-and 2 are nearly spent — set 1 entirely — and from here the sweep is sets 3 and
-4, which is where the volume actually is.
+21 September after batch 8, and §5's tick rule, written before a box was ticked,
+is how they are chosen. Batches 7 and 8 are the first taken by that rule: sets 1
+and 2 are spent, and from here the sweep is sets 3 and 4. **Batch 8 is what that
+costs**: sixteen rows ticked, fifteen created, nine kept and six retracted,
+because a rule that picks by sitelinks and by thin decades picks records this
+corpus has no neighbour for. That is the bar of brief §1 working, and the rate
+to plan on is **nine or ten kept records a batch**, not sixteen.
 
 **The Action cannot land an import**, and two runs proved it — §2d has the
 reading and deviation 987 the short form. Every batch from here is therefore
 walked in this sandbox, through `tools/import/wikidata.mjs`, which answers
-here now. The seeds are exhausted as fast as they are written: 725 items, 725
+here now. The seeds are exhausted as fast as they are written: 741 items, 741
 walked.
 
 **A batch lands in two commits, not one** (deviation 798, re-learned as 982):

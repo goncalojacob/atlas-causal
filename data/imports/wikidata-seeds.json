@@ -727,7 +727,23 @@
     "Q1076469",
     "Q695285",
     "Q622649",
-    "Q76986"
+    "Q76986",
+    "Q2403418",
+    "Q1122547",
+    "Q243799",
+    "Q43378",
+    "Q306123",
+    "Q126604",
+    "Q877450",
+    "Q306535",
+    "Q475678",
+    "Q192135",
+    "Q623171",
+    "Q1775286",
+    "Q285280",
+    "Q1332160",
+    "Q134884640",
+    "Q155796"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -759,7 +775,18 @@
     "Q842380": "africa",
     "Q152925": "europe",
     "Q269267": "europe",
-    "Q1076469": "europe"
+    "Q1076469": "europe",
+    "Q1122547": "americas",
+    "Q243799": "europe",
+    "Q43378": "americas",
+    "Q306123": "europe",
+    "Q126604": "europe",
+    "Q877450": "asia",
+    "Q623171": "asia",
+    "Q285280": "europe",
+    "Q1332160": "asia",
+    "Q134884640": "asia",
+    "Q1775286": "europe"
   },
   "queries": [
     {
@@ -3715,6 +3742,17 @@
       "category": "treaty",
       "label": "armistice",
       "note": "Added in M42 batch 7, read from Wikidata itself: the only class Q328499, the Armistice of Mudros, carries. An armistice is an agreement two sides sign, which is why it takes the treaty category and not war."
+    },
+    "Q154278": {
+      "kind": "event",
+      "label": "ethnic cleansing",
+      "note": "Added in M42 batch 8, read from Wikidata itself: one of the three classes Q1775286, the deportation of the Crimean Tatars, carries. No category, as Q8465 and Q625298 beside it have none: the atlas holds the Holocaust, the Armenian genocide and Katyn with no category either, and this run is not the one to decide which of the twelve they are."
+    },
+    "Q2380335": {
+      "kind": "event",
+      "category": "war",
+      "label": "airstrike",
+      "note": "Added in M42 batch 8, read from Wikidata itself: one of the three classes Q134884640, Operation Rising Lion, carries. An airstrike is organised armed force between polities, which is the war category as data/categories.json describes it."
     }
   },
   "reconcile": true

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-of-versailles--treaty-of-rapallo--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Rapallo (1922)\", revision 1362703017, § Background"
+    }
+  ],
+  "from": "treaty-of-versailles",
+  "to": "treaty-of-rapallo",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article's background says both Germany and Russia were left vulnerable after the end of the First World War: Germany had lost and become diplomatically isolated, and the postwar Treaty of Versailles led to German disarmament and the cession of German territories including all her colonies; Russia, likewise isolated after the Bolshevik revolution, had ceded its western territories at Brest-Litovsk. The article quotes the reading that the policies pursued by the victors, especially France, left no alternative to Germany but to move closer to Russia. The lead adds that the secret military co-operation already scheduled between the two was itself a violation of Versailles.",
+  "dispute": null
+}
