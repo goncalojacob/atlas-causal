@@ -12,6 +12,10 @@ import { formatInterval } from '../util/dates.js';
 import { narrativeSteps, readingNarrative, clampStep } from '../narrative.js';
 import { TYPE_LABEL, badge } from './event.js';
 import { RELATION_LABEL } from '../vocab.js';
+// How far this record has been read, in one line (M70). The slot goes in the
+// card's head and is filled when the record's own file lands, because the core
+// row a card is built from carries no signature.
+import { standingSlot, fillStanding } from '../standing.js';
 
 function authorsLine(narrative) {
   const names = (narrative.authors ?? []).map((a) => a.name).filter(Boolean);
@@ -133,6 +137,7 @@ export function renderNarrativeCard(ctx, { container, narrative, state, mine }) 
         ${resolved?.event ? ctx.lensControl('event', resolved.event.id, { only: true }) : ''}</p>
       <p class="entry-link"><a href="narratives.html">Every narrative, by the years it is about →</a></p>
       ${ctx.discussLink('narrative', narrative.id)}
+      ${standingSlot()}
     </header>
     <section class="step-text" data-slot="step-text"><p class="muted">Loading…</p></section>
     ${resolved ? stepRecordHtml(ctx, resolved) : ''}
@@ -154,6 +159,7 @@ export function renderNarrativeCard(ctx, { container, narrative, state, mine }) 
       const text = record.steps?.[index]?.text ?? '';
       container.querySelector('[data-slot="step-text"]').innerHTML = `<p>${esc(text)}</p>`;
       container.querySelector('[data-slot="narrative-sources"]').innerHTML = ctx.citationsHtml(record.sources, 'What this narrative rests on');
+      fillStanding(container, record);
     },
     () => {
       if (!ctx.isCurrent(mine)) return;

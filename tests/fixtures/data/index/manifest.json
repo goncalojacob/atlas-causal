@@ -251,7 +251,7 @@
   ],
   "files": {
     "citers": "index/citers-16504f906cff",
-    "core": "index/core-c57576761acd.json",
+    "core": "index/core-e74d8e472b5b.json",
     "grounds": "index/grounds-7905b603a65a.json",
     "presences": "index/presences-acbe704f1f89.json",
     "review": "index/review-d8045cdf1b45.json",
@@ -261,7 +261,7 @@
   },
   "historyShards": [
     {
-      "file": "index/history-event-1200-1299-283dad056bbe.json",
+      "file": "index/history-event-1200-1299-d76eb3973864.json",
       "from": 1200,
       "key": "1200-1299",
       "kind": "event",

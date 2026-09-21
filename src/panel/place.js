@@ -11,6 +11,10 @@ import { esc } from '../util/esc.js';
 import { formatYear, isValidYear } from '../util/dates.js';
 import { overlaps, resolveWindow } from '../util/window.js';
 import { sectionHtml, openSection } from './sections.js';
+// How far this record has been read, in one line (M70). The slot goes in the
+// card's head and is filled when the record's own file lands, because the core
+// row a card is built from carries no signature.
+import { standingSlot, fillStanding } from '../standing.js';
 
 // The section key of the list below, so panel.js can find it in the card it
 // is about to rewrite without spelling the string a second time.
@@ -123,6 +127,7 @@ export function placeCardHtml(ctx, place, state, { remembered = null } = {}) {
       </p>
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
       <div data-slot="place-names"></div>
+      ${standingSlot()}
       <div class="head-links">${ctx.entryLink('place', place.id)}${ctx.wikipediaHtml(place)}${ctx.discussLink('place', place.id)}</div>
     </header>
     <section class="summary" data-slot="place-summary"></section>
@@ -145,6 +150,7 @@ export function renderPlaceCard(ctx, { container, place, state, mine, remembered
       if (rec.sources?.length) {
         container.querySelector('[data-slot="place-sources"]').innerHTML = ctx.citationsHtml(rec.sources, '', rec);
       }
+      fillStanding(container, rec);
     },
     () => {},
   );

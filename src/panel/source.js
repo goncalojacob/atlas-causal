@@ -16,6 +16,10 @@
 // evidence for it.
 
 import { esc } from '../util/esc.js';
+// The standing marker (M70). A source is the one kind whose whole record is
+// in the sources index, `review` block and all, so this card can say it at
+// once instead of waiting for a file.
+import { standingHtml } from '../standing.js';
 import { formatInterval } from '../util/dates.js';
 import { citationText, identifiers, groupCiters } from '../citation.js';
 import { TYPE_LABEL } from './event.js';
@@ -148,6 +152,7 @@ export function sourceCardHtml(ctx, source, citations = ctx.atlas?.citersOf?.(so
       ${source.publisher ? `<p class="muted">${esc(source.publisher)}</p>` : ''}
       ${identifiersHtml(source)}
       ${source.accessed ? `<p class="muted">accessed ${esc(source.accessed)}</p>` : ''}
+      ${standingHtml(source)}
       ${ctx.discussLink('source', source.id)}
     </header>
     <p class="citation-full">${esc(citationText(source))}</p>

@@ -20,6 +20,11 @@ import {
 // shards of I5 (docs/index2-plan.md, A8).
 import { attributePeriod, attributeShardKey, attributeSpan, periodOf, periodsTouched, PERIOD } from '../explanations.js';
 import { astronomicalBounds } from '../util/dates.js';
+// "Has a person read this record", asked of the record's own `review` block.
+// The index carries the answer rather than the block, and it is imported
+// rather than rewritten here so that the builder and the two readers of the
+// standing marker are one function (M70).
+import { hasBeenRead } from '../standing.js';
 // The number the *reader* refuses an unknown value of, which is why it lives
 // there and is imported here rather than written out twice (data.js).
 import { INDEX_GENERATION } from '../data.js';
@@ -158,10 +163,11 @@ export function eventWeights(events, edges) {
 }
 
 // How much the whole of an event carries: its own `weight` plus every
-// descendant's, through `parent`, transitively. It is what the graph draws a
-// collapsed parent at when the children are folded into it (plan decision 4),
-// and it is derived exactly as `weight` is — nobody can make a node bigger
-// except by giving it more edges, more actors or more parts.
+// descendant's, through `parent`, transitively. It was what the graph drew a
+// folded parent at (plan decision 4); the fold went in M70 and the column is
+// carried and drawn by nothing at present. It is derived exactly as `weight`
+// is — nobody can make a node bigger except by giving it more edges, more
+// actors or more parts.
 //
 // `weight` itself is untouched: the two are different questions and a reader
 // zoomed in on a battle should see the battle's own size.
@@ -376,6 +382,16 @@ function identityOf(record) {
   return out;
 }
 
+// Whether a person has read and signed this record (M70). The whole `review`
+// block stays out — the flags, the note, the claim and the per-citation ticks
+// are the reviewer's and are read from the record's own file — and what the
+// topology carries is the one bit the masthead counts. `true` or absent, so
+// that nothing is written on the records nobody has signed, which today is
+// every one of them.
+function standingOf(record) {
+  return hasBeenRead(record) ? { reviewed: true } : {};
+}
+
 // Where a record sits and which lane that puts it in: the override on the
 // record wins, then the polygon the point falls in, then the nearest lane
 // within tolerance.
@@ -449,6 +465,7 @@ export function buildTopology(records, regions, { deriveRegion, roles, categorie
         regionMethod,
         ...partsOf(r),
         ...identityOf(r),
+        ...standingOf(r),
         status: r.status,
         supersededBy: r.supersededBy ?? null,
         aliases: r.aliases ?? [],
@@ -668,6 +685,12 @@ function slotReader(citesCount) {
   return (kind, name, record) => {
     switch (name) {
       case 'citesCount': return citesCount(kind, record.id);
+      // The index's copy of "has a person read this", so the masthead can
+      // count it without fetching 573 files. The topology already carries the
+      // bit (`standingOf`) and this is `true` or nothing: a slot written
+      // `false` on every unread record would be 10,311 falses saying what the
+      // absence already says (M70).
+      case 'reviewed': return record.reviewed === true ? true : undefined;
       case 'geometry': return record.geometry ?? null;
       case 'wikidata': return typeof record.wikidata === 'string' ? record.wikidata : undefined;
       case 'wikipedia': return isObject(record.wikipedia) ? record.wikipedia : undefined;
