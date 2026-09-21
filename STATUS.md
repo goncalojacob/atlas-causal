@@ -13657,76 +13657,91 @@ batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
 every edge. **The milestone is not done**: §7 of the pool file says where it
 stands and what the next fire does.
 
-**Ten batches.** The pool before: 310 active events, 229 of them main, 362
+**Eleven batches.** The pool before: 310 active events, 229 of them main, 362
 active edges, a largest connected component of 254 and 23 events with no edge.
-**After batch 10: 393 active, 300 main, 93 filed, 483 edges, largest component
-376, 3 with no edge.** Thirty-nine records came back from the tombstones and
-fifty were imported and kept; a hundred and thirteen edges were written —
-eighteen in batch 0, seven in batch 1, **nineteen in batch 3, which imported
-nothing at all and moved the component by twenty-seven**, eight in batch 4,
-eleven in batch 5, eight in batch 6, eighteen in batch 7, eleven in batch 8,
-eight in batch 9 and fourteen in batch 10.
+**After batch 11: 405 active, 311 main, 94 filed, 493 edges, largest component
+382, 3 with no edge.** Forty-two records came back from the tombstones and
+fifty-nine were imported and kept; a hundred and twenty-three edges were
+written — eighteen in batch 0, seven in batch 1, **nineteen in batch 3, which
+imported nothing at all and moved the component by twenty-seven**, eight in
+batch 4, eleven in batch 5, eight in batch 6, eighteen in batch 7, eleven in
+batch 8, eight in batch 9, fourteen in batch 10 and ten in batch 11.
 
-**Batch 10 is the second sweep batch taken by the tick rule** and the first to
-find what a sweep row is worth beyond itself. The pool recomputed to **1,557
-rows**, the same number §5 records, which is the check that the rule was
-recomputed and not remembered; the five thinnest decades came out the same five
-batch 8 found. Sixteen ticked, sixteen created, **twelve kept and four
-retracted with their reasons** — which puts the rate over the two sweep batches
-at ten or eleven kept a batch. Three classes were added from the items' own
-labels and one, *historical document*, was refused as not a kind of event.
+**Batches 10 and 11 are sweep batches taken by §5's tick rule**, sets 1 and 2
+having been spent on the hinges and the bridges. The pool was recomputed each
+time and came out at 1,557 and then 1,541 — sixteen fewer, which is the sixteen
+batch 10 spent, and the check that the rule is recomputed rather than
+remembered. Thirty-two rows ticked, thirty-one created, **twenty-one kept and
+ten retracted with their reasons**, which puts the rate to plan on at **ten or
+eleven kept records a batch**. One row could not be created at all: `Q276172`,
+the Jewish exodus from the Muslim world, has no date the atlas can use, and a
+date was not invented.
 
-**Three tombstones came back on their own named blockers, and that is the
-finding of the batch.** `anglo-zanzibar-war`, retracted in M40b asking for
-"a record of the 1890 protectorate agreement" by name, came back on the
-Heligoland–Zanzibar treaty this batch imported. `libyan-civil-war`, retracted
-for having no consequence here, came back on the Mali war, whose article
-argues the 2012 rebellion out of "the collapse of Gaddafi's Libya".
-`thousand-days-war`, which **batch 8 of this same run had retracted eight hours
-earlier** saying it waited on "the separation of Panama, or any record of the
-region", came back on the Hay–Bunau-Varilla treaty. The corpus writes down what
-it is missing every time it withdraws a record, and 215 tombstones now carry
-those notes: a sweep row is worth reading against them and not only against the
-graph.
+**The finding of these two batches: a tombstone is a note of what is missing,
+and six of them came back on records the sweep supplied.** Each of the six was
+retracted with a reason naming the record it was waiting for, and a batch's own
+imports turned out to be those records — `anglo-zanzibar-war` on the
+Heligoland–Zanzibar treaty, which its reason called "the 1890 protectorate
+agreement" by name; `libyan-civil-war` on the Mali war, whose article argues the
+2012 rebellion out of "the collapse of Gaddafi's Libya"; `thousand-days-war` on
+the Hay–Bunau-Varilla treaty, **eight hours after batch 8 of this same run
+retracted it** saying it waited on the separation of Panama;
+`somali-civil-war` on the Ogaden war; `cultural-revolution` on the Sino-Soviet
+border conflict; and the non-proliferation treaty on the treaty written because
+its prohibitions are partial. The corpus holds **218 tombstones** and every one
+wrote down what it was waiting for. Reading a sweep row against those notes is
+now the cheapest thing a batch can do after the row itself.
 
-**The component grew by ten and the corpus by fifteen**, and amendment A5's
-question about the five-record difference is answered three times in §2j: two
-of the batch's edges open regions this atlas had never reached — Panama with
-Colombia, and Libya with Mali — and a first record in a region is a pair
-standing alone. The Sudanese fragment grew from four to five and stayed a
-fragment, which two further pages confirmed rather than a fetch failing.
+**The component count is rising and that is not a failure to write edges
+against.** Sets 1 and 2 were the rows the corpus had asked for by name and they
+joined the middle. Sets 3 and 4 are the best remaining by sitelinks and by thin
+decade, and what they increasingly find is a corner of the world this atlas has
+one or two records of: batch 10 opened Panama with Colombia and Libya with
+Mali, batch 11 the Horn of Africa, the Sino-Soviet border and nuclear
+disarmament. Each is a pair standing on its own, and in every case the only
+record in this atlas the article relates its subject to was a tombstone the
+same edge brought back. So components went 7 → 9 → 12 while the ratio held:
+**382 of 405, 94.3 per cent, against 254 of 310 and 82 per cent when the
+milestone began.** A run that reads a rising component count as a failure will
+start writing edges to prevent it, and that is what brief §1 forbids.
 
-**The main count moved from 288 to 300**, which amendment A3 asks about:
-fifteen records came in, three were filed under a parent where an umbrella
-genuinely held them — `greco-italian-war` under `world-war-ii`, the
-German–Soviet boundary treaty under `molotov-ribbentrop-pact`,
-`revolution-of-dignity` under `euromaidan` — and three of the twelve remaining
-were main before they were withdrawn. `estonian-war-of-independence` is the one
-that was arguable and is listed rather than filed, which is M62 §3's rule.
-Every one of the fifteen carries `actors: []`, which is M67 A1 and not a
-defect, and it is why `docs/m53-polities.md` §4.1 moves to **306 of 393** with
-the numerator standing still.
+**The main count moved from 288 to 311**, which amendment A3 asks about.
+Twenty-seven records came in over the two batches and **four were filed under a
+parent** where an umbrella genuinely held them — `greco-italian-war` under
+`world-war-ii`, the German–Soviet boundary treaty under
+`molotov-ribbentrop-pact`, `revolution-of-dignity` under `euromaidan`, and
+`korean-armistice-agreement` under `korean-war`, which is the shape
+`treaty-of-paris-1898` under `spanish-american-war-1898` already set here. Six
+of the rest were main before they were withdrawn.
+`estonian-war-of-independence` and `sino-soviet-border-conflict` are the two
+that were arguable and are listed rather than filed, which is M62 §3's rule.
+Every new record carries `actors: []`, which is M67 A1 and not a defect, and it
+is why `docs/m53-polities.md` §4.1 moves to **306 of 405** with the numerator
+standing still: the gap that row shows is the gap between an imported corpus
+and a written one, and it widens by exactly the number of records each batch
+keeps.
 
 **The milestone is a long way from its done-condition and that is the honest
 reading**: the brief asks for an order of magnitude more than the 250 it was
-written against, and the corpus stands at 393 — **but 376 of those 393 are in
+written against, and the corpus stands at 405 — **but 382 of those 405 are in
 one connected component, against 254 of 310 when the run started, and three
 active events carry no edge at all, against twenty-three.** The connectedness
 the owner asked for on 21 September is substantially done; the volume is barely
-begun. The sweep's **1,557 unwalked rows** are what that volume comes from, and
+begun. The sweep's **1,525 unwalked rows** are what that volume comes from, and
 at ten or eleven kept records a batch the brief's own number is many hundreds
 of batches away. That is a fact the owner should have rather than a number to
 be optimistic about.
 
-**Batch 10's second finding: the atlas has an environment-shaped hole.** Two of
-the sweep's best remaining rows by sitelinks — the Montreal Protocol and the
-Stockholm Convention on persistent organic pollutants — were retracted on
-arrival for the same reason `paris-agreement`, `ramsar-convention` and
+**The second finding: the atlas has an environment-shaped hole**, and it has
+now cost three sweep rows. The Montreal Protocol, the Stockholm Convention on
+persistent organic pollutants and the Basel Convention were all retracted the
+day they landed, for the same reason `paris-agreement`, `ramsar-convention` and
 `united-nations-convention-on-the-law-of-the-sea` are already tombstones: the
-instrument decided nothing this corpus holds. Until one environmental record is
-argued by a person, every environmental treaty the sweep offers will be
-retracted the day it lands. It is not the sweep failing; it is a real gap in
-what the atlas is about, and it costs a batch two of its sixteen slots.
+instrument decided nothing this corpus holds, and the three relate only to each
+other and to conventions the atlas does not have. Until **one** environmental
+record is argued by a person, every environmental treaty the sweep offers will
+be retracted on arrival. It is not the tick rule failing; it is a real gap in
+what the atlas is about.
 
 **The finding that matters most for the next run.** The import Action cannot
 commit a batch and two runs proved it: `import-wikidata.yml` runs the suite
@@ -13734,37 +13749,69 @@ before it commits, and any record an import writes makes two prose
 measurements stale in the same breath — `docs/m53-polities.md` §4.1 counts the
 active events, `docs/m67-umbrellas.md` is asked to say why each bare main
 event was left bare — so the job restores `data/` and commits nothing, every
-time. Batches 4 and 10 were walked in this sandbox instead, through the same
-tool.
+time. Batches 4, 10 and 11 were walked in this sandbox instead, through the
+same tool.
 
 **What was refused, and said out loud rather than worked around.** `Q33761`,
 the Arab Spring, for want of a lane the owner has not decided (975), which is
-still the record that would join Libya to Egypt and Tunisia. The edge from the
-breakup of Yugoslavia into the Bosnian war, because Wikidata gives the breakup
-a point date of 27 April 1992 for a process its own article dates to the early
-1990s and the war began on the 6th — no imported date was widened, because that
-is a person's reading (989). `majimaji-war`, because joining the Berlin
+still the record that would join Libya to Egypt and Tunisia. **Three edges the
+articles themselves argue, refused because an imported date forbids them** and
+no date was widened, which is deviation 989's rule: the breakup of Yugoslavia
+into the Bosnian war; the Cambodian–Vietnamese war into the Sino-Vietnamese
+war, because Wikidata dates that record from the 1989 withdrawal and rule 4
+refuses an edge from 1989 to 1979; and the October Revolution into the Basmachi
+movement, which is dated from 1916. `majimaji-war`, because joining the Berlin
 conference's aftermath to the Maji Maji article's cotton policy would be this
 run's inference and not anybody's page. A second edge out of
 `second-italo-ethiopian-war`, because its own aftermath names no event this
-atlas holds. Three of the fifty M44b withdrew, and three of its class C.
-**Six of batch 8's fifteen**, each with its reason in its own record — among
-them `thousand-days-war`, which batch 10 brought back. **Four of batch 10's
-sixteen**: `1907-romanian-peasants-revolt`, for want of any Romanian record at
-all; `1957-1958-influenza-pandemic`, whose article argues to the 1918 pandemic
-and the Hong Kong flu and this atlas holds neither; and the two environmental
-treaties above. Two items refused at the class table, `Q475678` and
-`Q3771738`. **No historical claim was written**: every explanation is a
-paraphrase of a sentence the cited article carries at the cited revision, every
-citation names the article, the revision and the section, and no date was
-invented. One edge of batch 10 is `consensus` and only one — `libyan-civil-war
---precondition-of--> mali-war` — promoted by M72's own three-part test, because
-the article hangs that very sentence on Miroiu and Alecu 2024, which is written
-into `data/sources/` with the identifier the article's own template carries.
-The other thirteen rest on sentences that carry no footnote at all, and the one
-that carries a `Citation needed` tag says so in its own explanation.
+atlas holds. Three of the fifty M44b withdrew, and three of its class C. **Six
+of batch 8's fifteen**, among them `thousand-days-war`, which batch 10 brought
+back. **Four of batch 10's sixteen** and **six of batch 11's fifteen**, each
+with its reason in its own record and the missing neighbour named. Two items
+refused at the class table, `Q475678` and `Q3771738` — the second because a
+*historical document* is not a kind of event, and one of the Kosovo
+declaration's two classes was enough to let it through. **No historical claim
+was written**: every explanation is a paraphrase of a sentence the cited
+article carries at the cited revision, every citation names the article, the
+revision and the section, and no date was invented. Twenty-three of these two
+batches' twenty-four edges are `probable`; one is `consensus`
+(`libyan-civil-war --precondition-of--> mali-war`, promoted by M72's three-part
+test because the article hangs that very sentence on Miroiu and Alecu 2024) and
+one is `disputed` (`cultural-revolution --precondition-of--> sino-soviet-border-conflict`,
+whose article attributes Mao's motive to "historians have suggested" and offers
+a second motive beside it, both named in the edge's `dispute` block).
 
 ### Deviations
+
+### Deviations
+
+1002. **A record M44b retracted goes into `docs/m44-retractions.md` even when a
+     different milestone's rule brings it back.** `tests/m42.test.mjs` asks that
+     every record M44b withdrew and the atlas now draws be accounted for under
+     "Reinstated", and batch 11 reinstated `somali-civil-war` under brief §1's
+     bar without writing the entry. The test caught it, which is what it is for:
+     the account of a withdrawal has to survive the undoing of it, whatever rule
+     did the undoing.
+1001. **An imported interval can forbid an edge the article argues, and twice in
+     one batch it did.** Wikidata dates `cambodian-vietnamese-war` from the 1989
+     withdrawal, so rule 4 refuses `cambodian-vietnamese-war --caused-->
+     sino-vietnamese-war` (1989 after 1979) although the article states the link
+     twice; and `basmachi-movement` is dated from 1916, so the October Revolution
+     of 1917 cannot be a precondition of it. **Neither date was widened**, which
+     is deviation 989's rule, and both edges are named in §2k as waiting on a
+     person correcting an interval rather than on a page. This is now the most
+     common reason an argued edge is not written, ahead of a missing neighbour.
+1000. **A `disputed` edge is an honest edge, and it can be the one that brings a
+     record back.** `cultural-revolution` was retracted in M40b naming the Macau
+     1-2-3 incident as the precise link it wanted, and that record still does not
+     exist. What exists is a sentence in the Sino-Soviet border conflict's
+     article saying "historians have suggested" Mao provoked the clash to further
+     the Cultural Revolution's radical sentiments — with a second motive beside
+     it and no historian named for either. Brief §1's bar is one honest edge to
+     anything here, and `CLAUDE.md` says a link the sources do not settle is
+     marked `disputed` and the disagreement written down. Both were done, and the
+     record is **not** filed under the Cultural Revolution although 1969 falls
+     inside 1966–1976: a motive historians merely suggest is not a subject.
 
 ### Deviations
 

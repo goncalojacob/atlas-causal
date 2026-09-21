@@ -16,6 +16,21 @@ rule 27 makes a retraction on a non-retracted record an error. The reason is
 copied here verbatim, in the same commit, so that the account of the withdrawal
 survives the undoing of it.
 
+### `somali-civil-war`
+
+Reinstated in M42 batch 11 on `ogaden-war --caused--> somali-civil-war`. Its
+reason said nothing in this atlas touched Somalia, which was true; the Ogaden
+war of 1977–78 is the sweep row that made it untrue, and the war's own article
+ends its lead saying the defeat left Somalia with a disorganized and demoralized
+army whose revolt "eventually spiraled into the ongoing Somali Civil War".
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A: the neighbour is missing. Nothing in this atlas
+> touches Somalia — not the collapse of 1991, not the intervention of 1992, not
+> the piracy of the 2000s — and no edge to a Portuguese event can be argued
+> without inventing one.
+
 ### `first-italo-ethiopian-war`
 
 Reinstated on `berlin-conference --precondition-of--> first-italo-ethiopian-war` and `first-italo-ethiopian-war --precondition-of--> second-italo-ethiopian-war`. Its reason named exactly what was missing — "no Berlin conference, no British ultimatum of 1890, no Mapa Cor-de-Rosa, no Italian invasion of 1935 that was fought to avenge this defeat" — and batch 4 wrote two of the four. The British ultimatum and the Pink Map are still missing and are still worth writing.
