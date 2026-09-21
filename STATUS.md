@@ -14574,6 +14574,21 @@ already on disk and is not repeated: `m45a-ground-iberia` and
 `m45a-ground-andes` are these very two boxes with these very two `?layers=`
 lists and `relief` left out.
 
+Two more were taken beside them, for what the three above leave open.
+**`docs/screens/m45b-relief-alps.png`** is the case where the ridge is *wide*:
+France, Switzerland, Austria and Italy meet on the top band with the Po valley
+two bands below, and there the border on the ridge needs no looking for — where
+in the Andes shot, at 48° across, it has to be hunted through the wash. And
+**`docs/screens/m45b-relief-bare-andes.png`** is the same box with the
+territories off, which is M45a's own measure asked again: the cordillera is the
+top band the length of the continent, the Altiplano a broad mass of it, the
+Amazon basin the lowest. It is there because it is the proof that the mottling
+above is the wash and not the data, and a set that showed only the zooms where
+the milestone works would be the assertion §2.4 refused. A point-in-polygon
+check against the far file agrees with the picture: 70° W 33° S is band 4, the
+Amazon at 60° W 3° S band 0, Lisbon band 0, and the Southern Ocean and the
+mid-Atlantic in no band at all.
+
 **Iberia**: the Meseta stands out of the coastal lowland as a whole step, the
 Guadalquivir and the Ebro run through the lowest band as visible corridors, and
 the Cantabrian range and the Pyrenees are two bands higher along the top of the
