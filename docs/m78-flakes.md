@@ -75,7 +75,7 @@ That is also the answer to the brief's question about the M63-era 12 s waits in
 `spine-pages` 186, `graph-labels-browser` 32 and `compose-browser` 1. Two of
 them do not want a longer bound; see §5.
 
-The one that ran out is §4.
+The one that ran out is the second defect of §4.
 
 ## 3. The races, measured one at a time
 
@@ -180,7 +180,21 @@ asserts every step is named. 98 waits for the count of bars to be unchanged
 after a click and then asserts the picture has narrowed *and* is named. Neither
 had dropped yet; both are the same wait as 95's and 97's.
 
-## 4. The defect in the atlas
+### `map-browser` 126 — the link, found by the re-measurement
+
+One browser pass in five of the *first* re-measurement, as `the link says so:
+null`. The test clicks the rivers switch and reads `?layers=` straight after
+the drawing has answered; the address bar is written on the next animation
+frame instead, so that a forty-frame drag is not forty history calls
+(`state.js`). Two tests higher up the same file already wait for the link and
+say why in a comment; this one did not.
+
+A re-measurement that finds one more is the measurement doing its job, and it
+is the reason the after rate below is five of five and not four.
+
+## 4. The two defects in the atlas
+
+### The first: the graph draws marks it can never name
 
 **Since M76 the graph is not windowed, and the shards held on screen still
 were.** The owner asked on 21 September for a picture that always shows all
@@ -215,7 +229,50 @@ every round at every sample. The test is in `spine-pages.test.mjs` — *the grap
 names every mark it draws, however narrow the band* — and it fails on the
 commit before the fix and passes on it.
 
-This is the one display change M78 makes.
+### The second: the timeline stops laying itself out
+
+This is §6 of the first draft of this file — *one thing seen once and not
+reproduced* — and it is here because the re-measurement saw it again, which is
+what a re-measurement is for.
+
+The symptom: the window is made short, made tall again, and the rows stay at
+the short pane's height **for ever**, with the pane scrolling a drawing three
+times smaller than itself. Red as `back at 900 px: the pane holds the drawing
+and nothing else — 795 !== 295`, in one browser pass in five.
+
+It was not reproduced at first: 12 rounds idle, 25 under load, 60 under load
+with the test's interleaving, 8 full runs of the file. What all of those had in
+common is a browser reused between rounds. **With a fresh browser each round,
+as the suite itself uses, it came back at one round in thirty**; the observer's
+own decisions, recorded in the page:
+
+    observed 1280x295   queued=false  last=1280x795
+    draw     now=1280x795              last=1280x795   -> equal, no render
+    observed 1280x795   queued=false  last=1280x795
+    draw     now=1280x795              last=1280x795   -> equal, no render
+
+The ResizeObserver in `src/timeline.js` kept a string of the pane's size and
+skipped the render when it had not moved — reading that size **live, a frame
+after the observation**. When the pane comes back to the remembered size in
+between, the observation is thrown away. And the atlas draws the timeline from
+more than one place: `remeasure` in `main.js` draws it too, so the pane can be
+observed at 295, drawn at 295 by that other path, and be back at 795 by the
+time the frame runs. The observer reads "unchanged", and the rows are left laid
+out for a pane nobody is in, with nothing that will ever ask again.
+
+**Fixed in `src/timeline.js`**: `render` already asks the right question — its
+key carries the pane's width and height and is set by whoever last drew, from
+any path — so the guard was both redundant and wrong. A frame later,
+unconditionally, is the loop protection M77 added and the whole of the guard.
+
+| | stuck | rounds |
+| --- | --- | --- |
+| before | 3 | 90 |
+| after | 0 | 60 |
+
+Its test is `timeline-browser` 215, which is what caught it.
+
+These two are the only display changes M78 makes.
 
 ## 5. What was not changed, and why
 
@@ -242,39 +299,36 @@ before this milestone and 229 and 0 after it — the one added is the defect's.
 count or a pixel: every number compared below is read off the page and compared
 with another read off the page.
 
-## 6. One thing seen once and not reproduced
+## 6. After: five of five, on both machines
 
-The instrumented pass had one wait run out: `timeline-browser` 214's **way
-back**, where the window is put back to 900 px. The drawing stayed at 295 for
-the full ten seconds while the pane was 795 — the timeline never laid itself
-out again — and `fits` then read `795 !== 295`. The old wait would have failed
-there too.
-
-It was not reproduced: 12 rounds idle, 25 rounds under load, 60 rounds under
-load with the test's own interleaving and a varying phase, and 8 full runs of
-the file under load. **105 attempts, 0 recurrences.** The suspect is the
-`queued`/`requestAnimationFrame` guard in `src/timeline.js`'s ResizeObserver,
-which reads the pane's size live a frame after the observation and, when that
-read matches the last one rendered, returns without rendering and without the
-observation coming back. That is a guess and it is written down as a guess: it
-is here so that the next person to see `the rows to come back` has a name for
-it and 105 attempts they do not have to repeat.
-
-## 7. After: five of five, on both machines
-
-Five consecutive browser passes on the sandbox, on the finished tree, nothing
-changed between them:
+Five consecutive browser passes on the sandbox, on the finished tree
+(`7fc97ed6`), nothing changed between them:
 
 | pass | wall | tests | result |
 | --- | --- | --- | --- |
-| 1 | — | — | — |
-| 2 | — | — | — |
-| 3 | — | — | — |
-| 4 | — | — | — |
-| 5 | — | — | — |
+| 1 | 248 s | 229, 0 skipped | green |
+| 2 | 250 s | 229, 0 skipped | green |
+| 3 | 251 s | 229, 0 skipped | green |
+| 4 | 248 s | 229, 0 skipped | green |
+| 5 | 249 s | 229, 0 skipped | green |
 
-And five `workflow_dispatch` runs of `validate.yml` on `m78`, on the same tree:
+And five `workflow_dispatch` runs of `validate.yml` on `m78`, on the same
+tree — both passes, the records validated, 1,680 pure tests and 229 browser
+tests each:
 
-| run | conclusion |
-| --- | --- |
-| — | — |
+| run | started | conclusion |
+| --- | --- | --- |
+| 1164 | 17:45 | success |
+| 1165 | 17:56 | success |
+| 1166 | 18:05 | success |
+| 1167 | 18:16 | success |
+| 1168 | 18:25 | success |
+
+The two `push` runs on that head, 1160 and the one for this file, are green
+beside them and are not counted in the five.
+
+**Three of five red before, five of five green after, on both machines.** The
+wall time is unchanged — 244–251 s here, against the 244–249 s of the red
+arrangement — because nothing was made to wait longer: every wait that moved
+moved to a condition that is true *later* than the proxy only when the proxy
+was lying.

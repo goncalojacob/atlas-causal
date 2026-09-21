@@ -15822,6 +15822,237 @@ same counts as on `origin/m0`, since this milestone writes no record.
       `tests/phone-browser.test.mjs`, *the whole extent is legible on a phone*,
       which is exactly what that assertion is there for.
 
+## M78 — the browser suite honest under load, round two
+
+The check went red seven times on 21 September on trees that were green
+elsewhere, every time a browser test and never a wrong value that survived a
+second look. Lane A, on the branch `m78`. The measurement is
+`docs/m78-flakes.md`; this is what it found and what was done about it.
+
+### Before: three of five red, here
+
+Five browser passes on the claimed commit, the way the check runs that pass
+(`--test-concurrency=1` over the 29 browser files), nothing changed between
+them:
+
+| pass | wall | result |
+| --- | --- | --- |
+| 1 | 249 s | **red** — `m77-browser` 95, `the pointer names it (still loading)` |
+| 2 | 248 s | green |
+| 3 | 246 s | green |
+| 4 | 245 s | **red** — `timeline-browser` 214, `295 !== 280` |
+| 5 | 244 s | **red** — `m77-browser` 95, the same |
+
+**Three of five, on two tests the brief had not named.** The runner, on the
+same commit, was green twice (runs 1150 and 1152) — the seven reds were on
+earlier trees.
+
+### The number that decided what could be changed
+
+Before any wait was touched, `until` — the poll every wait in the suite is
+written over — was instrumented to print how many of its 200 polls each wait
+actually used, and one whole browser pass was run under it. **366 waits, and
+the worst honest one used six.** 282 of them answered on the first poll.
+
+So no bound was raised. `tests/browser.mjs` keeps its 200 × 50 ms,
+`--test-timeout` and the two-pass arrangement are untouched, and the brief's
+question about the M63-era 12 s waits is answered: they are not running out of
+time here, they are ending too early or asking the wrong question.
+
+### The eleven tests, and what each waits for now
+
+A title arrives with its century and not with the picture (`src/attributes.js`):
+a bar, a mark and a node are drawn unlabelled and labelled when their shard
+lands, and until then the control says `still loading`. **A count of labels is
+therefore the same number on either side of a shard landing** — which is what
+six of these tests were waiting on.
+
+| test | the proxy | what it waits for now |
+| --- | --- | --- |
+| `m77-browser` 94 | the walk's marks unchanged 50 ms apart | every step carries its name and has it drawn |
+| `m77-browser` 95 | a label exists | every mark on the page carries its own name |
+| `m77-browser` 97 | the label count unchanged 50 ms apart | no bar whose title is not drawn as a label |
+| `m77-browser` 98 | the bar count unchanged after the click | fewer bars than the resting picture, and all named |
+| `timeline-browser` 214 | the svg's height is not the tall one | the height moved **and** the pane holds exactly the drawing |
+| `timeline-browser` 216 | the label count unchanged 50 ms apart | no bar left waiting for its name |
+| `timeline-browser` 217 | a rect in the bands layer | the band's label carrying text |
+| `timeline-browser` 212, 213, 215, 224, 225, 226 | `READY`, a lane existing | the pane holds exactly the drawing (`fitOf`) |
+| `m74-browser` 79 | the transform is not the one read a moment ago | the pane changed, the camera moved, and every step is inside it |
+| `graph-labels-browser` 32 | a label exists | every mark named, so the longest is the same mark every run |
+| `map-browser` 126 | the rivers group emptying | the `?layers=` the click writes a frame later |
+
+Each has its own commit, saying what the proxy was and what replaced it. Two
+of them — `m77-browser` 94 and 98 — had not dropped yet and are the same wait
+as the two that had. `map-browser` 126 was found by the first re-measurement,
+which is a re-measurement doing its job.
+
+**No test's assertion changed.** `until` was added to `tests/browser.mjs`
+beside `waitFor` for exactly that reason: it is the same poll without the
+assertion on the end, so a wait that *is* the test's own assertion can be
+waited for and then asserted, and a real defect is reported as *every bar
+carries its title: [three ids]* rather than as a timeout that threw the ids
+away. `named(selector)` is the one predicate for a name, over `LOADING_LABEL`
+rather than over a count.
+
+### Two defects in the atlas, which are the only display changes here
+
+**The graph drew marks it could never name.** Since M76 the graph is not
+windowed — the owner asked for a picture that always shows all dates — and
+`onScreenShards` in `main.js` still pinned the shards the *band* covers. The
+rest are fetched unpinned, the cap of four evicts the oldest, and a record
+carried only by an evicted shard is stripped of its title. On
+`?view=graph&from=1900&to=1999`, three marks of eighty-seven were drawn and
+still read `still loading` ten seconds after all twelve shards had landed —
+the same three every round, and in files the page had fetched. It is also what
+made `graph-labels-browser` 32 pick a different mark run to run. What the graph
+draws is now pinned while the graph is the view; the map and the timeline are
+untouched, because there the band still decides what is drawn. Its test is in
+`spine-pages.test.mjs` and fails on the commit before the fix.
+
+**The timeline stopped laying itself out.** Make the window short and tall
+again and the rows could stay at the short pane's height for ever, the pane
+scrolling a drawing three times smaller than itself. The ResizeObserver kept a
+string of the pane's size and skipped the render when it had not moved — but
+read that size *live, a frame after the observation*, so an observation was
+thrown away whenever the pane came back to the remembered size in between. The
+atlas draws the timeline from more than one place (`remeasure` in `main.js`),
+so the pane could be observed at 295, drawn at 295 by that other path, and be
+back at 795 by the time the frame ran. `render` already asks the right
+question — its key carries the pane's size and is set by whoever last drew —
+so the guard was redundant as well as wrong, and a frame later,
+unconditionally, is both the loop protection M77 added and the whole of the
+guard. Reproduced at 3 of 90 rounds with a fresh browser each round, 0 of 60
+after. Its test is `timeline-browser` 215, which is what caught it.
+
+### What was left alone
+
+`spine-pages` 186 and `compose-browser` 1, the two the brief named that are
+not races: both of their waits are already their assertions and both answered
+on the first poll here. Their shape is `withBrowser`'s own thirty-second
+deadline for an evaluation the page never answers, which M42 wrote down the
+same afternoon as its deviation 1009; it was reproduced here once at six times
+the check's own load. That deadline is a candidate for its own measurement and
+raising it is not this milestone's to do.
+
+Nothing was skipped, deleted or marked `todo`. The browser pass was 228 tests
+and 0 skipped before and is 229 and 0 after — the one added is the first
+defect's.
+
+### After: five of five, on both machines
+
+| pass | wall | result |
+| --- | --- | --- |
+| 1 | 248 s | green, 229 of 229, 0 skipped |
+| 2 | 250 s | green, 229 of 229, 0 skipped |
+| 3 | 251 s | green, 229 of 229, 0 skipped |
+| 4 | 248 s | green, 229 of 229, 0 skipped |
+| 5 | 249 s | green, 229 of 229, 0 skipped |
+
+And five `workflow_dispatch` runs of `validate.yml` on `m78`, on the same
+tree: runs 1164, 1165, 1166, 1167 and 1168, all five green, on the head
+`7fc97ed6`. The two `push` runs on that head are green beside them and are
+not counted in the five.
+
+### Deviations
+
+1123. **The sandbox reproduced it, at three of five, and on two tests the brief
+      had not named.** The brief's table is seven reds on the runner across
+      five tests; the five passes taken here before anything was changed were
+      red three times, on `m77-browser` 95 and `timeline-browser` 214, neither
+      of which is in that table. M63's lesson holds: a rate taken on the
+      machine you can instrument is worth more than a list of what went red
+      where you cannot, and the table is where to start looking rather than the
+      list of what to fix.
+1124. **Every wait in the suite was measured before any of them was changed.**
+      `until` was instrumented to print how many of its 200 polls each wait
+      used, and one whole browser pass run under it: 366 waits, 282 answering
+      on the first poll, and **the worst honest one using six**. That number is
+      what ruled out the obvious wrong fix. A longer bound would have bought
+      nothing here, and it is also what says the M63-era 12 s waits are not
+      short of time — they are ending early or asking the wrong question.
+1125. **`until` is `waitFor` without the assertion on the end.** A wait that is
+      a *precondition* should fail with `timed out waiting for …`, because a
+      page that never becomes what the test is about has nothing else to say.
+      A wait that is the test's **own assertion** should not: `timed out
+      waiting for the bars to be named` throws away the ids the assertion was
+      about to print. So the two are separate and the choice is the test's,
+      and eight of the changed tests take the second.
+1126. **One predicate for a name, over the loading label and not over a count.**
+      `named(selector)` in `tests/browser.mjs`: every element the selector
+      reaches carries a title that is not `LOADING_LABEL`. It imports the
+      constant from `src/attributes.js` rather than repeating the string, so a
+      test cannot disagree with the interface about what "not named yet" looks
+      like.
+1127. **A count of labels is the same number on either side of a shard
+      landing.** This is the whole of six of the eleven races, and it is worth
+      saying as a rule rather than as six incidents: a wait of the shape *the
+      count has not moved in 50 ms* is satisfied from the moment the picture is
+      drawn until the moment the last century lands, and says nothing about
+      names at all. Measured: the walk is drawn at 397 ms with 26 of its 28
+      steps still loading, and the last name lands at 639 ms.
+1128. **One resize lays a drawing out twice, and the first is measured against
+      a pane that is already gone.** A MutationObserver over the timeline's
+      `height`: `280` against a pane already at `295`, then `295`, two to four
+      milliseconds later, in all three rounds. Any wait of the shape *the
+      number changed* ends on the first of those. What tells them apart is the
+      drawing's own consistency with its pane, which is `fits`'s first
+      assertion, so that is the wait.
+1129. **The graph's camera moves twice at the opening size, after the picture
+      is drawn.** 417 ms and 421 ms in one round, 395 and 399 in another: the
+      arrangement lands and the frame is taken again. A `before` read between
+      them is not what the page is holding, so *the transform is not `before`*
+      is satisfied without a resize having been taken up at all. The reframe
+      has no signal of its own in the DOM, so what is waited for is the three
+      things that are observable and are what the test asserts: the pane is not
+      the one measured, the camera has moved, and every step is inside it.
+1130. **`READY` is not settled.** A lane existing is as true of the first
+      layout as of the last, and the timeline is laid out twice on an ordinary
+      visit with nothing resized — the masthead wraps and a scrollbar comes and
+      goes. One run in six read `a 1400 px window: 1295 !== 1276` on a page
+      nobody had touched. Every reading of `FIT` that feeds `fits` now goes
+      through `fitOf`, which waits for the drawing to be the pane's and then
+      reads.
+1131. **The graph drew marks it could never name, and that is M76's.** Since
+      M76 the graph is not windowed and `onScreenShards` still pinned the
+      band's centuries; the rest are fetched unpinned, the cap of four evicts
+      the oldest, and a record carried only by an evicted shard is stripped of
+      its title. Three marks of eighty-seven on
+      `?view=graph&from=1900&to=1999`, the same three every round, still
+      reading `still loading` ten seconds after all twelve shards had landed.
+      A picture the atlas has the names for and will not say. **A display
+      change, and one of the two this milestone makes.**
+1132. **The timeline's ResizeObserver could throw an observation away for
+      good.** It kept a string of the pane's size and skipped the render when
+      it had not moved, reading that size *live, a frame after the
+      observation*. The atlas draws the timeline from more than one place, so
+      the pane could be observed at 295, drawn at 295 by `remeasure`, and be
+      back at 795 by the time the frame ran — and the rows then stayed at the
+      short pane's height for ever. `render` already carries the pane's size in
+      its own key and is set by whoever last drew, so the guard was redundant
+      as well as wrong. **The second display change, and the last.**
+1133. **A browser reused between rounds hid it; a fresh browser each round
+      found it.** 1132 survived 105 attempts — idle, under load, at the test's
+      own interleaving, and eight full runs of the file — because every one of
+      those loops drove one browser through many rounds. The suite opens a new
+      one per test. Thirty rounds with a fresh browser each found it once, and
+      the recorded observer decisions made the cause plain in one reading. A
+      reproduction that does not match how the thing is actually used is not a
+      reproduction.
+1134. **`spine-pages` 186 and `compose-browser` 1 are a deadline and not a
+      race, and were left alone.** Both of their waits are already their
+      assertions and both answered on the first poll here. Their shape is
+      `withBrowser`'s own thirty-second bound on an evaluation the page never
+      answers — M42's deviation 1009, written the same afternoon — and it was
+      reproduced here once at six times the check's own load. Saying so is
+      worth more than changing a bound this milestone has no measurement for.
+1135. **The re-measurement found a twelfth test, and that is the point of a
+      re-measurement.** The first five after-passes were four of five, on
+      `map-browser` 126 reading `?layers=` in the click rather than on the
+      frame the address bar is written on. Two tests higher up that same file
+      already wait for the link and say why. The rate is not the deliverable on
+      its own: a rate that is not five of five is a test that has not been
+      found yet.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
