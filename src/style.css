@@ -782,14 +782,19 @@ body:not(.phone) .layout.panel-empty.composing {
    --ink-soft, which is neutral and therefore competes with none of the eight
    territory hues, with cobalt or with madder — a relief map in a colour would
    have been a second palette, and this atlas has a palette. The five are
-   spaced to be **equal steps in OKLab over --land**: 0.034 apart, against the
+   spaced to be **equal steps in OKLab over --land**: 0.030 apart, against the
    ~0.02 at which a large flat field stops being tellable from its neighbour,
    so all five can be told apart and the reader can count them.
 
-   What the darkest one still leaves legible, measured over it (and asserted in
-   tests/contrast.test.mjs): an event mark at 4.70:1, a label at 7.71:1, the
-   walked chain at 3.19:1, a peak at 3.31:1, and a territory's wash 0.049 in
-   OKLab — every one of them above the floor the palette was built to.
+   0.33 is the darkest the top band can be, and it is the darkest for a reason
+   that is not taste: it is the largest opacity at which **every promise this
+   atlas already made still holds over it** — an event mark, its label and the
+   walked chain, over the band alone and over the band with the worst of the
+   eight territory hues washed on top of it. Measured, and asserted in
+   tests/contrast.test.mjs: bare, a mark at 5.08:1, a label at 8.34:1, the
+   chain at 3.45:1; under a territory, 4.43:1, 7.26:1 and 3.00:1. A darker
+   ramp would take the walked chain under the 3:1 a line has to have, and it
+   would buy almost nothing — see STATUS.md on what the wash does to the ramp.
 
    **Fill and no stroke.** A band is cut into cell files at the grid the base
    map is sharded on, and a stroked ring cut at a cell border draws a line
@@ -797,11 +802,11 @@ body:not(.phone) .layout.panel-empty.composing {
    reader sees is the edge between two tints, which is the edge that matters:
    it is what a frontier can be seen to sit on. */
 .map .layer-base-relief path { stroke: none; fill: var(--ink-soft); }
-.map .layer-base-relief path.band-0 { fill-opacity: 0.075; }
-.map .layer-base-relief path.band-1 { fill-opacity: 0.155; }
-.map .layer-base-relief path.band-2 { fill-opacity: 0.23; }
-.map .layer-base-relief path.band-3 { fill-opacity: 0.305; }
-.map .layer-base-relief path.band-4 { fill-opacity: 0.38; }
+.map .layer-base-relief path.band-0 { fill-opacity: 0.065; }
+.map .layer-base-relief path.band-1 { fill-opacity: 0.135; }
+.map .layer-base-relief path.band-2 { fill-opacity: 0.2; }
+.map .layer-base-relief path.band-3 { fill-opacity: 0.265; }
+.map .layer-base-relief path.band-4 { fill-opacity: 0.33; }
 .map .layer-base-coast path { fill: none; stroke: var(--cobalt); stroke-width: 0.6; vector-effect: non-scaling-stroke; }
 .map .layer-base-rivers path { fill: none; stroke: var(--cobalt-soft); stroke-width: 0.5; vector-effect: non-scaling-stroke; }
 .map .layer-base-lakes path { fill: var(--cobalt-faint); stroke: var(--cobalt-soft); stroke-width: 0.5; vector-effect: non-scaling-stroke; }

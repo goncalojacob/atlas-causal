@@ -146,3 +146,20 @@ test('the darkest band still leaves a mark, a label, the chain and a territory l
       `--terr-${i} over the highest band is ${distance(territory, wash).toFixed(3)} in OKLab from it`);
   }
 });
+
+test('and nothing the atlas already promised is weakened by the ground under it', () => {
+  // The hardest ground on the map is the highest band with a territory washed
+  // over it, and that is where the three promises of the table above have to
+  // go on holding: a mark at 3:1, its label at 4.5, the walked chain at 3.
+  // The darkest band is set to the largest opacity that keeps all three
+  // (src/style.css), and this is the assertion that fixes it there.
+  const land = colour('--land');
+  const [, darkest] = bandOpacities().at(-1);
+  const wash = over(colour('--ink-soft'), darkest, land);
+  for (let i = 1; i <= 8; i += 1) {
+    const ground = over(colour(`--terr-${i}`), 0.62, wash);
+    assert.ok(contrast(colour('--cobalt'), ground) >= 3, `--terr-${i} over the highest band: a mark's outline`);
+    assert.ok(contrast(colour('--ink'), ground) >= 4.5, `--terr-${i} over the highest band: a label`);
+    assert.ok(contrast(colour('--madder'), ground) >= 3, `--terr-${i} over the highest band: the walked chain`);
+  }
+});
