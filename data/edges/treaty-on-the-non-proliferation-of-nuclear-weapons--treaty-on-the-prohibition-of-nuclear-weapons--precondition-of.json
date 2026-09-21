@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-on-the-non-proliferation-of-nuclear-weapons--treaty-on-the-prohibition-of-nuclear-weapons--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty on the Prohibition of Nuclear Weapons\", revision 1363091604, § Concept and § Overview of provisions"
+    }
+  ],
+  "from": "treaty-on-the-non-proliferation-of-nuclear-weapons",
+  "to": "treaty-on-the-prohibition-of-nuclear-weapons",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article defines the prohibition treaty against the one this atlas already had a record of: nuclear weapons, unlike chemical weapons, biological weapons, landmines and cluster munitions, \"are not prohibited in a comprehensive and universal manner\", because **\"the Non-Proliferation Treaty (NPT) of 1968 contains only partial prohibitions\"** and the nuclear-weapon-free zone treaties prohibit them only regionally. The treaty's own preamble cites the slow pace of nuclear disarmament and expresses compliance with the NPT, and its Article 3 requires parties to keep the safeguards built on the NPT model.",
+  "dispute": null
+}

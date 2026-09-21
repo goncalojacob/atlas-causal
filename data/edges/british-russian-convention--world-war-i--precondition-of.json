@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "british-russian-convention--world-war-i--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Russian Convention\", revision 1358051340, § lead and § Persia"
+    }
+  ],
+  "from": "british-russian-convention",
+  "to": "world-war-i",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says the convention \"would eventually form a component of the Triple Entente\", that the treaty furthered the Anglo-Russian interest in outflanking the German Empire, and that \"for Britain and Russia, the agreement was important in establishing a diplomatic alignment that endured until the First World War\". The alignment and not the war is what the article claims the convention made, which is why this is a precondition and nothing stronger.",
+  "dispute": null
+}

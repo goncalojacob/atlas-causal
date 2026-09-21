@@ -1507,6 +1507,219 @@ reached before**, and every other import in the batch went straight into the
 largest component. Unreachable-from-Portuguese rises from four to nine for the
 same reason and means the same thing.
 
+## 2k. Batch 11 — sets 3 and 4 a third time, and three more tombstones back
+
+The pool recomputed to **1,541 rows** on the same rule, sixteen fewer than batch
+10's 1,557, which is the sixteen batch 10 spent. The thinnest five decades moved
+— batch 10's imports took the 1890s and the 1900s off the floor, so the 1980s
+joined at twenty-two — and set 3 is again their two best by sitelinks each, with
+set 4's six best remaining over the whole pool. Sixteen rows.
+
+**Sixteen ticked, fifteen created, nine kept and six retracted.** One item was
+refused at import and could not be rescued: `Q276172`, the Jewish exodus from
+the Muslim world, **has no date the atlas can use**. The sweep row prints
+1930-01-01 because that is where the tool files an undated row in its decade
+table; the item itself gives no year, and the article describes a movement over
+half a century. A date was not invented, which is deviation 989's rule applied
+to an absence rather than to a disagreement.
+
+Two lanes were written — Matabeleland to `africa`, Turkestan to `asia` — and no
+class was added, the first batch of this run that needed none.
+
+### The three tombstones this batch brings back
+
+**`somali-civil-war`**, retracted in M44b for wanting "a neighbour in a region
+this atlas does not reach at all", comes back on
+`ogaden-war --caused--> somali-civil-war`: the Ogaden war's own article ends its
+lead saying the defeat of March 1978 left Somalia with a disorganized and
+demoralized army and that "these conditions led to a revolt in the army which
+eventually spiraled into the ongoing Somali Civil War". The region is reached
+now, by one war.
+
+**`cultural-revolution`**, retracted in M40b naming "the 1-2-3 incident of
+1966–67 in Macau" as the precise link it wanted, comes back on something else:
+`cultural-revolution --precondition-of--> sino-soviet-border-conflict`,
+**`disputed`**. The Macau incident is still not a record here. The new bar asks
+for one honest edge to anything in the atlas and this is one, with its
+disagreement written down rather than smoothed over.
+
+**`treaty-on-the-non-proliferation-of-nuclear-weapons`**, retracted in M40b for
+wanting "an event the instrument decided", comes back on
+`treaty-on-the-non-proliferation-of-nuclear-weapons --precondition-of--> treaty-on-the-prohibition-of-nuclear-weapons`.
+It is still true that this atlas holds no event the NPT decided; what it holds
+now is the treaty written **because** the NPT's prohibitions are partial, which
+is the prohibition treaty's own first argument about itself.
+
+That is **six tombstones in two batches**, every one of them found by reading a
+sweep row against the 215 notes the corpus has written about what it is missing.
+
+### The edges
+
+Ten.
+
+#### `russo-japanese-war --precondition-of--> british-russian-convention` and `british-russian-convention --precondition-of--> world-war-i`
+
+*"Anglo-Russian Convention"*, revision 1358051340. § Background gives the two
+reasons the article says overcame twenty years of British resistance to a deal
+with Russia: the emergence of the German Empire as a world power, and **"the
+defeat in 1905 of Russia by a nascent Asian power, the Empire of Japan, in the
+Russo-Japanese War"**. The lead and § Persia give the consequence: the
+convention "would eventually form a component of the Triple Entente" and "was
+important in establishing a diplomatic alignment that endured until the First
+World War". The alignment, not the war, is what the article says the convention
+made.
+
+#### `young-turk-revolution-of-1908 --enabled--> bulgarian-declaration-of-independence`
+
+*"Bulgarian Declaration of Independence"*, revision 1375171159, § Background: a
+unilateral declaration would normally have violated the Treaty of Berlin and been
+unlikely to be approved by the Great Powers, but **"the chaos that ensued in the
+Ottoman Empire following the Young Turk Revolution of 1908 provided suitable
+conditions for the Bulgarian proclamation of independence"**, and the Powers had
+turned to their own gains — Bosnia, the Arab provinces, the Straits. `enabled`
+and not `caused`: the revolution made the declaration possible and did not ask
+for it.
+
+#### `korean-war --caused--> korean-armistice-agreement`
+
+*"Korean Armistice Agreement"*, revision 1370487806, § lead: the armistice
+"brought about a cessation of hostilities of the Korean War", signed on 27 July
+1953 by the United Nations Command, the Korean People's Army and the Chinese
+People's Volunteer Army. **Filed under the war as well**, which is the shape
+`treaty-of-paris-1898` under `spanish-american-war-1898` already set here.
+
+#### `cultural-revolution --precondition-of--> sino-soviet-border-conflict` — the batch's one `disputed` edge
+
+*"Sino-Soviet border conflict"*, revision 1372863432, § lead: **"Historians have
+suggested Mao provoked the clash to further the radical sentiments of the
+Cultural Revolution or to elevate China's international standing towards the
+Cold War's two superpowers."** That is a suggestion with an alternative beside
+it and no historian named for either, and the same lead gives causes that are
+not about the Cultural Revolution at all — the 1964 reopening of the
+nineteenth-century demarcation, and the worsening of relations after the Soviet
+invasion of Czechoslovakia in 1968. So the edge is `disputed` and its `dispute`
+block says all of that, which is what `CLAUDE.md` asks for when the sources do
+not agree: mark it and say who disagrees, rather than pick a side. **The record
+is not filed under the Cultural Revolution**, although 1969 falls inside
+1966–1976: a motive historians merely suggest is not a subject, and M62 §3 says
+an arguable filing is listed rather than made.
+
+#### `ogaden-war --caused--> somali-civil-war`
+
+*"Ogaden War"*, revision 1373903527, § lead, quoted above.
+
+#### `vietnam-war --precondition-of--> cambodian-vietnamese-war`
+
+*"Cambodian–Vietnamese War"*, revision 1375855358, § Vietnam War and § Rise of
+communism: during the Vietnam War the Vietnamese and Cambodian communists
+"again had formed an alliance to fight anti-communist regimes in their
+respective countries", the Vietnamese used Cambodian territory as a route and a
+staging area against South Vietnam, both took power in April 1975 as the war
+ended, and the Khmer Rouge — fearing a Vietnamese-dominated Indochinese
+federation — purged Vietnamese-trained personnel and began attacking southern
+Vietnam in May 1975.
+
+**The second edge this article argues could not be written, and deviation 989 is
+why.** § International response says the United States asked that Vietnam
+withdraw from Cambodia and that China withdraw from Vietnam, "which it had
+invaded on 17 February 1979 in the Sino-Vietnamese War", and § 1978 says the
+Chinese divisions massed on the Vietnamese border "would eventually be deployed
+in the brief Sino-Vietnamese War". The atlas holds `sino-vietnamese-war` at
+1979. But **Wikidata dates this record 26 September 1989 to 23 October 1991** —
+the withdrawal, not the war the article dates to 1978–1989 — so rule 4 refuses
+an edge from 1989 to 1979. **No date was widened to make the edge possible**,
+which is exactly what deviation 989 refused for the breakup of Yugoslavia. The
+edge is waiting on a person correcting the record's interval, not on a page.
+
+#### `black-september --precondition-of--> lebanese-civil-war`
+
+*"Black September"*, revision 1370604477, § lead: after the fighting "Jordan
+allowed the fedayeen to relocate to Lebanon via Syria, where they later became
+involved in the Lebanese Civil War".
+
+#### `world-war-i --precondition-of--> basmachi-movement`
+
+*"Basmachi movement"*, revision 1374693404, § lead: **"The movement's roots lay
+in the anti-conscription violence of 1916 which erupted when the Russian Empire
+began to draft Muslims for army service in World War I."** The article names
+that before the Bolsheviks and before Kokand. **The October Revolution edge the
+same lead would carry was not written**: the movement is dated from 1916 and the
+October Revolution from 1917, so rule 4 refuses it, and the article's own
+sentence — "in the months following the October 1917 Revolution … the Russian
+Civil War began" — describes what the movement grew into rather than what began
+it.
+
+#### `treaty-on-the-non-proliferation-of-nuclear-weapons --precondition-of--> treaty-on-the-prohibition-of-nuclear-weapons`
+
+*"Treaty on the Prohibition of Nuclear Weapons"*, revision 1363091604, § Concept:
+nuclear weapons, unlike chemical and biological weapons, landmines and cluster
+munitions, "are not prohibited in a comprehensive and universal manner", because
+**"the Non-Proliferation Treaty (NPT) of 1968 contains only partial
+prohibitions"**. Its preamble cites the slow pace of disarmament and expresses
+compliance with the NPT, and its Article 3 requires parties to keep the
+safeguards built on the NPT model.
+
+### The six retracted, and what each waits for
+
+| record | what it waits for |
+| --- | --- |
+| `first-matabele-war` | any record in southern Africa between the Berlin conference and 1953. Its article argues out of the 1889 royal charter and the Pioneer Column and forward to the Second Matabele War; this atlas holds none of them |
+| `panic-of-1893` | an American or Argentine record of the 1890s. Its one sentence naming something here — that it was the worst American depression "until the Great Depression of the 1930s" — is a comparison and not a link |
+| `montevideo-convention` | the Seventh International Conference of American States, or the Good Neighbor Policy. A criterion of statehood is not an event that decided one, and the article relates the convention to no declaration this corpus holds |
+| `universal-copyright-convention` | the Berne Convention, or any copyright record at all |
+| `basel-convention` | **the same environmental hole batch 10 named**, for the third time: the article relates it to the Rotterdam and Stockholm conventions and to the IAEA regime, and the Stockholm convention is itself a batch 10 tombstone |
+| `intermediate-range-nuclear-forces-treaty` | an event the treaty decided, or the Euromissile deployments it was negotiated over. The article never says it ended the Cold War, and saying so here would be this run's claim and not the article's |
+
+### The nine left main, and the one filed
+
+One record took a parent — `korean-armistice-agreement` under `korean-war` —
+and the other eight are named here one by one, with `cambodian-vietnamese-war`
+which is also bare:
+
+| record | why it is nobody's part |
+| --- | --- |
+| `british-russian-convention` | a bilateral settlement of three buffer states; the Great Game is a period this atlas has no record and no sourced span for |
+| `bulgarian-declaration-of-independence` | the Young Turk revolution *enabled* it and did not contain it; the Balkan crisis of 1908 is not a record here |
+| `sino-soviet-border-conflict` | **the one that was arguable**: 1969 falls inside the Cultural Revolution's 1966–1976, but the only thing joining them is a motive the article says historians have suggested, and M62 §3 says an arguable filing is listed rather than made |
+| `ogaden-war` | the Cold War in the Horn is not a record here, and `somali-civil-war` is its consequence and not its container |
+| `cambodian-vietnamese-war` | the Third Indochina War, which its own lead says it was part of, is not a record here; `vietnam-war` ended in April 1975 and cannot contain a war the record dates from 1989 |
+| `black-september` | the Arab–Israeli conflict is not a record here, for the reason §2j gave of `war-of-attrition` |
+| `basmachi-movement` | it runs 1916 to 1934, beginning before `russian-civil-war` and ending twelve years after it, so nothing here contains it |
+| `treaty-on-the-prohibition-of-nuclear-weapons` | it happened at the United Nations in New York, which is the place it carries; no event here contains it |
+| `korean-armistice-agreement` | **filed**, under `korean-war` |
+
+### What batch 11 did to the graph
+
+| | before | after |
+| --- | --- | --- |
+| active events | 393 | **405** |
+| main | 300 | **311** |
+| filed under a parent | 93 | **94** |
+| active edges | 483 | **493** |
+| largest connected component | 376 | **382** |
+| components | 9 | 12 |
+| unreachable from any Portuguese event | 9 | 15 |
+
+**The component grew by six and the corpus by twelve, and amendment A5's
+question now has a general answer rather than a case-by-case one.** Three of
+this batch's edges made a pair standing on its own — Ogaden with Somalia, the
+Cultural Revolution with the border conflict, the two nuclear treaties — and
+none of the three could have been written any other way, because in each case
+the only record in this atlas the article relates its subject to was a
+tombstone that the same edge brought back.
+
+**That is the shape of the sweep from here and it should be said plainly.** Sets
+1 and 2 were the rows the corpus had asked for by name, and they joined the
+middle. Sets 3 and 4 are the best remaining by sitelinks and by thin decade, and
+what they increasingly find is **a corner of the world this atlas has one or two
+records of**. Batch 10 opened Panama and the Sahel; batch 11 opened the Horn of
+Africa, the Sino-Soviet border and nuclear disarmament. The ratio is still very
+high — **382 of 405, 94.3 per cent, against 94.2 after batch 10 and 82 per cent
+when the milestone began** — but the count of components will keep rising while
+the volume does, and a run that treats that as a failure will start writing
+edges to prevent it. That is what brief §1 forbids, and it is worth writing down
+before a later batch is tempted.
+
 ## 3. The main count, and why it moved up
 
 Amendment A3: an import that leaves the main count higher than it found it has
@@ -1579,6 +1792,16 @@ peasant revolution and a war of independence, and **`estonian-war-of-independenc
 is the one that was arguable and is listed rather than filed**, as M62 §3
 requires. The count moved because the corpus did, and every record that could
 be filed was.
+
+**Batch 11 leaves it at 311 against 300**, eleven higher, and the arithmetic is
+twelve records in — nine kept from the sweep and three back from the tombstones
+— and one filed, `korean-armistice-agreement` under `korean-war`.
+`sino-soviet-border-conflict` is this batch's arguable filing and is listed
+rather than made, for the reason §2k gives. As in batch 10 every one of the new
+records carries `actors: []`, so `docs/m53-polities.md` §4.1 moves to **306 of
+405** with its numerator standing still: the gap that row shows is the gap
+between an imported corpus and a written one, and it widens by exactly the
+number of records each batch keeps.
 
 ## 4. What these batches refused to write
 

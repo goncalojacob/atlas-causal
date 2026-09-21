@@ -101,6 +101,7 @@ A5: a batch that grows the corpus and not the component has to say why.
 | 8 | sets 3 and 4: 15 created, 9 kept and 6 retracted, 11 edges | 378 | 288 | 90 | 461 | **359** | 10 |
 | 9 | the singletons §4b named: 8 edges, no import | 378 | 288 | 90 | 469 | **366** | 3 |
 | 10 | sets 3 and 4 again: 16 created, 12 kept and 4 retracted, **3 tombstones back on their own named blockers**, 14 edges, three filings | 393 | 300 | 93 | 483 | **376** | 3 |
+| 11 | sets 3 and 4 a third time: 15 created, 9 kept and 6 retracted, **3 more tombstones back**, 10 edges, one filing | 405 | 311 | 94 | 493 | **382** | 3 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -273,11 +274,12 @@ the next, so a killed run loses a batch and not the milestone.
 | batch 8 | sets 3 and 4: 15 created, 6 retracted, 11 edges, 349 → 359 |
 | batch 9 | the singletons §4b named: 8 edges, no import, 359 → 366 |
 | batch 10 | sets 3 and 4 again: 12 kept, 4 retracted, 3 reinstated, 14 edges, 366 → 376 |
+| batch 11 | sets 3 and 4 again: 9 kept, 6 retracted, 3 reinstated, 10 edges, 376 → 382 |
 
 **Where the milestone stands against its own done-condition.** The brief asks
 for an order of magnitude more active events than the 250 it was written
-against. The corpus holds **393**, up from 310, and its largest connected
-component holds **376 of them**, up from 254 — so the connectedness is nearly
+against. The corpus holds **405**, up from 310, and its largest connected
+component holds **382 of them**, up from 254 — so the connectedness is nearly
 done and the volume is barely begun. **The volume is the sweep**: **1,557 rows**
 the tool has already found and nobody has walked, recomputed against `data/` on
 21 September and again at batch 10, which returned the same 1,557 and is the

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "korean-war--korean-armistice-agreement--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Korean Armistice Agreement\", revision 1370487806, § lead"
+    }
+  ],
+  "from": "korean-war",
+  "to": "korean-armistice-agreement",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article opens by saying the armistice \"brought about a cessation of hostilities of the Korean War\", signed on 27 July 1953 by the United Nations Command, the Korean People's Army and the Chinese People's Volunteer Army, and designed to ensure a complete cessation of hostilities \"until a final peaceful settlement is achieved\". This is the atlas's existing shape for a war and the instrument that ends it, as `spanish-american-war-1898 --caused--> treaty-of-paris-1898` already is.",
+  "dispute": null
+}

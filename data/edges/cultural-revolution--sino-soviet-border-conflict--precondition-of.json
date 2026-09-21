@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "cultural-revolution--sino-soviet-border-conflict--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sino-Soviet border conflict\", revision 1372863432, § lead"
+    }
+  ],
+  "from": "cultural-revolution",
+  "to": "sino-soviet-border-conflict",
+  "type": "precondition-of",
+  "confidence": "disputed",
+  "explanation": "The English article says of the March 1969 attack on Zhenbao Island that \"historians have suggested Mao provoked the clash to further the radical sentiments of the Cultural Revolution or to elevate China's international standing towards the Cold War's two superpowers\". The first of those two motives is this edge.",
+  "dispute": {
+    "text": "The article states the motive as a suggestion by historians and offers a second one beside it — elevating China's standing between the two superpowers — without deciding between them, and names no historian for either. It also gives the conflict causes that are not about the Cultural Revolution at all: the 1964 reopening of the nineteenth-century border demarcation, and the worsening of relations after the Soviet invasion of Czechoslovakia in 1968.",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Sino-Soviet border conflict\", revision 1372863432, § lead and § History"
+      }
+    ]
+  }
+}
