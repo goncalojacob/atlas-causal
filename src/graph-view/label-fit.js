@@ -51,7 +51,10 @@ export const MIN_CHARS = 6;
 // A character's width and a line's half-height, in the graph's own units at
 // this zoom. Both shrink as the reader zooms in, because the text does not.
 export const charWidth = (k) => (LABEL_SIZE * EM) / k;
-const halfLine = (k) => (LABEL_SIZE * 0.7) / k;
+// Exported since M77: the placer beside this file writes a label on a line of
+// its own when its own line is taken, and the half-height of a line is what
+// says which line a box is in. One number, in one place.
+export const halfLine = (k) => (LABEL_SIZE * 0.7) / k;
 
 // What a label of so many characters takes across the picture, slack and all.
 export const boxWidth = (chars, k) => (chars * SLACK + SLACK_CHARS) * charWidth(k);

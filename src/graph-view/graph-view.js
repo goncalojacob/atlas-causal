@@ -39,7 +39,10 @@ import { arrangementOf, holdingKey } from './arrangement.js';
 import { layoutGraph, stackLayout, MIN_ZOOM, MAX_ZOOM } from './layout.js';
 import { createLayoutRunner } from './layout-runner.js';
 import { frameFor } from './frame.js';
-import { LABEL_SIZE, fitLabel, shorten } from './label-fit.js';
+import { LABEL_SIZE, shorten } from './label-fit.js';
+import {
+  naming, placeLabels, placeOne, labelBoxAt, movedAway, ROWS_AWAY, LENS_ROWS_AWAY,
+} from './labels.js';
 import { exportButton } from '../share.js';
 
 // Sizes in SVG units at k = 1; divided by k when drawn, so a node keeps its
@@ -234,7 +237,9 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   const edgesGroup = svg('g', { class: 'layer layer-edges' });
   const nodesGroup = svg('g', { class: 'layer layer-nodes' });
   const labelsGroup = svg('g', { class: 'layer layer-labels' });
-  viewport.append(bandsGroup, edgesGroup, nodesGroup, labelsGroup);
+  // Over every other layer: the one name the pointer is asking for.
+  const hoverGroup = svg('g', { class: 'layer layer-hover' });
+  viewport.append(bandsGroup, edgesGroup, nodesGroup, labelsGroup, hoverGroup);
   const root = svg('svg', {
     class: 'graph',
     role: 'img',
@@ -465,7 +470,14 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     dragged = false;
   });
   root.addEventListener('pointermove', (e) => {
-    if (!drag) return;
+    // Not dragging: the pointer is asking what a mark is called. Since M77 a
+    // mark whose name did not fit carries no label at all, so this is how the
+    // reader gets it back — and it is one element written and rubbed out, not
+    // a redraw (`hoverLabel` returns at once when the mark has not changed).
+    if (!drag) {
+      if (stacked) hoverLabel(nearestStack(e));
+      return;
+    }
     const [x, y] = toSvg(e);
     const dx = x - drag.start[0];
     const dy = y - drag.start[1];
@@ -501,18 +513,13 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     render(state.get());
   });
 
-  // Which mark a click means is decided by distance, not by which circle
+  // Which mark a pointer means is decided by distance, not by which circle
   // happens to be on top. Two adjacent years are about eight units apart
   // here, and a mark or its stroke covering a neighbour's centre would have
   // made that neighbour unreachable at rest — the nearest centre inside the
-  // reach is always the one the reader aimed at.
-  root.addEventListener('click', (e) => {
-    // A drag that ends over a node must not select it; the flag is cleared
-    // here, once this click has been judged, so the next clean one selects.
-    if (dragged) {
-      dragged = false;
-      return;
-    }
+  // reach is always the one the reader aimed at. One answer for the click and
+  // for the hover, so the mark that is named is the mark that would open.
+  function nearestStack(e) {
     const [x, y] = toGraph(e);
     const reach = HIT_RADIUS / transform.k;
     let best = null;
@@ -524,7 +531,20 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         distance = d;
       }
     }
-    if (!best || distance > reach) return;
+    return best && distance <= reach ? best : null;
+  }
+
+  root.addEventListener('pointerleave', () => hoverLabel(null));
+
+  root.addEventListener('click', (e) => {
+    // A drag that ends over a node must not select it; the flag is cleared
+    // here, once this click has been judged, so the next clean one selects.
+    if (dragged) {
+      dragged = false;
+      return;
+    }
+    const best = nearestStack(e);
+    if (!best) return;
     if (best.count === 1) {
       select(best.representative.id);
       return;
@@ -565,19 +585,18 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // way (health review B, finding 10).
   const select = (id) => walkOrSelect(state, atlas, id);
 
-  // The map's viewport narrows the timeline, and this view has no viewport of
-  // its own to be narrowed by: the graph is arranged by year and by band, and
-  // nothing in it is anywhere. Rather than filter it by a box that means
-  // nothing here, or leave the reader wondering why the lanes below are
-  // shorter than the picture above, it says so.
-  const note = document.createElement('p');
-  note.className = 'graph-note';
-  note.hidden = true;
-  note.textContent = 'The map is looking at part of the world. The graph has no viewport of its own, so it draws every event; the lanes below are narrowed to what the map can see.';
+  // There was a note here, a paragraph wide across the top of the picture,
+  // saying that the map is looking at part of the world and the graph has no
+  // viewport of its own. It went in M77. It was drawn whenever `?bbox=` was in
+  // the state — which is after any pan or zoom of the map, so most visits —
+  // and it answered a question about the lanes that used to run under the map
+  // and have been a view of their own since M60. The owner, 21 September,
+  // pointing at it in a screenshot of a narrative: it is not what the reader
+  // asked about. What the map is looking at is said in the masthead, where the
+  // count of events in view has been since M60.
 
   container.append(root);
   container.append(waiting);
-  container.append(note);
   container.append(exportButton(root, 'graph'));
   container.append(edgeKey());
 
@@ -617,7 +636,6 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // own to hand: the fixture-free tests that call `draw` through `render`
   // always pass one.
   function draw(s, box = view()) {
-    note.hidden = !s.bbox;
     // **The window is not this picture's business** (M76). The owner, 21
     // September: *"I think the graph can always show all dates, then one can
     // zoom in and out and pan to look at different times."* So there is no
@@ -650,7 +668,9 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // The same lens the arrangement was built from; what it kept is drawn
     // one event to a node — the focus set in full, and the direct causes and
     // consequences around it faintly (lens.js).
-    const lens = working.lens;
+    // What the lens itself names, or null at rest: since M77 it is what says
+    // which lines are in ink and which marks are labelled.
+    const lensFocus = working.lensFocus;
     const lensNear = working.lensNear;
     const actorIds = working.actor;
     // The whole of an open narrative's walk: where it is going, not only
@@ -739,9 +759,20 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       // never enters (index2 review, finding 11's amendment).
       if (!drawable(stackByKey.get(line.from)) && !drawable(stackByKey.get(line.to))) continue;
       const any = (ids) => line.members.some((m) => ids.has(m.id));
+      // **With a lens on, the lens's own links are the ones in ink** (M77).
+      // A line between two events the lens merely reaches is drawn faintly,
+      // with the very class the ring's marks already carry — the owner, 21
+      // September: *"It looks clouded."* Two thirds of the lines on the page
+      // with a narrative open are not the walk (STATUS.md, the measurement),
+      // and they were drawn in the same five patterns and three inks as the
+      // argument running under them. At rest there is no lens and no line is
+      // faint: nothing has been asked, so nothing is the answer.
+      const ofLens = lensFocus === null
+        || line.members.every((m) => lensFocus.has(m.from) && lensFocus.has(m.to));
       const marks = classes(
         `type-${line.type}`,
         bundleClass(line.members),
+        ofLens ? '' : 'lens-near',
         any(chainEdgeIds) ? 'chain' : '',
         any(consequenceIds) ? 'consequence' : '',
         any(convergingEdges) ? 'converging' : '',
@@ -845,54 +876,100 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     }
     if (selectedMark) nodesGroup.appendChild(selectedMark);
 
-    drawLabels(s, k, box);
+    drawLabels(s, k, box, working);
   }
 
-  // Zoomed out, only the heaviest marks on screen are named, as on the map. A
-  // stack is named after its representative — the heaviest event under it,
-  // which is the one worth showing (cluster.js) — and weighs what its
-  // members weigh together, so a thicket of small events can outrank a
-  // single large one and say what it is. Zoomed in, every mark on screen is
-  // named.
+  // Which marks are named, and where each name goes: `labels.js`, purely.
+  // What this function does is ask it and build the text.
   //
-  // What each of those names is cut to is the room it has, and not a constant
-  // (label-fit.js): the heaviest label is placed first and keeps the room it
-  // wants, and the next one is cut to what is left of its own line of text.
-  // So a label is never drawn over its neighbour — where it used to be moved
-  // to the other side of its mark and then drawn over one anyway, it is now
-  // cut to fit, on whichever side shows more of the name — and where the room
-  // is there, which zooming in is what makes, the whole name is drawn.
+  // **A name is drawn whole or it is not drawn at all** (M77). It used to be
+  // cut to the room beside its mark, and eight of the fourteen names on the
+  // page with a narrative open were `The Ab…`, `The Rev…`, `Dutch B…` — ink
+  // where a name should be. A name that does not fit waits for the reader's
+  // pointer, which is what the mark's title has always carried.
   //
-  // A mark whose line is full on both sides keeps its title and loses its
-  // label, at every zoom. Five letters and an ellipsis is not a name, and a
-  // name drawn across another is two names nobody can read.
-  function drawLabels(s, k, box) {
+  // **With a lens on, the lens is what is named.** A lens is a question the
+  // reader asked and the ring around it is context: the walk of an open
+  // narrative is named in the narrator's own order, first step first, so the
+  // room a crowded picture has goes to the argument rather than to whichever
+  // neighbour happens to weigh most. At rest nothing has been asked and the
+  // rule is the one it was — the heaviest marks on screen, every one of them
+  // once the reader has zoomed past `LABEL_ALL_ZOOM`.
+  function drawLabels(s, k, box, working) {
     labelsGroup.replaceChildren();
     const all = k >= LABEL_ALL_ZOOM;
     const onScreen = stacked.nodes.filter((n) => n.x >= box.x0 && n.x <= box.x1 && n.y >= box.y0 && n.y <= box.y1);
-    const candidates = [...onScreen].sort(
-      (a, b) => b.weight - a.weight || (a.key < b.key ? -1 : a.key > b.key ? 1 : 0),
-    );
-    // Which marks a label has to leave room to write from: every one that is
-    // going to be named, which below the gate is the heaviest of them and at
-    // or above it is all of them.
-    const naming = all ? candidates : candidates.slice(0, LABEL_LIMIT);
-    const placed = [];
-    for (const node of candidates) {
-      if (!all && placed.length >= LABEL_LIMIT) break;
+    const focus = working.lensFocus;
+    const order = working.narrative ? [...working.narrative] : null;
+    const candidates = naming(onScreen, { focus, order, limit: LABEL_LIMIT, all })
+      .map((node) => ({ node, name: labelOf(atlas, node.representative.event) }))
       // No name yet is no label, and the next node still gets its own.
-      const name = labelOf(atlas, node.representative.event);
-      if (name === null) continue;
-      const fitted = fitLabel(name, node, { k, gap: LABEL_GAP, box, placed, named: naming });
-      if (!fitted) continue;
-      placed.push(fitted.rect);
-      labelsGroup.appendChild(textNode(fitted.text, {
-        x: fitted.rect.x, y: node.y + (LABEL_SIZE * 0.35) / k,
+      .filter((c) => c.name !== null);
+    // The lens is not capped by M61's slice: the reader has asked about these
+    // events, and a walk whose steps have long names is a walk with long
+    // names. At rest the cap stands, and is what keeps a fifty-character title
+    // out of a picture of everything until somebody zooms in for it.
+    const placed = placeLabels(candidates, {
+      k,
+      gap: LABEL_GAP,
+      view: box,
+      capped: focus === null,
+      rows: focus === null ? ROWS_AWAY : LENS_ROWS_AWAY,
+    });
+    named = new Set(placed.map((p) => p.node.key));
+    for (const { node, text, rect } of placed) {
+      // A label that had to be written on another line is tied back to its
+      // mark by a hairline. It is what buys the room: 22 of a 28-step walk sit
+      // on one line of the layout with the whole field free above and below,
+      // and a name on a line of its own with a leader under it is legible
+      // where a name cut to six letters is not. Nothing at all when the label
+      // is where it has always been, which is every label at rest.
+      if (movedAway(node, rect, k)) {
+        labelsGroup.appendChild(svg('line', {
+          x1: node.x + (rect.right ? 1 : -1) * (MAX_RADIUS / k),
+          y1: node.y,
+          x2: rect.x - (rect.right ? 1 : -1) * (1 / k),
+          y2: rect.y,
+          class: 'label-leader',
+        }));
+      }
+      labelsGroup.appendChild(textNode(text, {
+        x: rect.x, y: rect.y + (LABEL_SIZE * 0.35) / k,
         class: classes('node-label', node.representative.id === s.selected ? 'selected' : ''),
-        'text-anchor': fitted.right ? 'start' : 'end',
+        'text-anchor': rect.right ? 'start' : 'end',
         'font-size': LABEL_SIZE / k,
       }));
     }
+  }
+
+  // --- the name under the pointer -------------------------------------------
+  //
+  // What is not always visible has to be findable, or taking it away is just
+  // taking it away. A mark with no drawn label is named while the pointer is
+  // on it: one label, in a layer of its own over everything, whole, and gone
+  // when the pointer moves off. It is drawn outside `render` and is in no
+  // render key — it is not a fact about the picture, it is the reader's finger.
+  let named = new Set();
+  let hovering = null;
+  function hoverLabel(stack) {
+    if (stack?.key === hovering) return;
+    hovering = stack?.key ?? null;
+    hoverGroup.replaceChildren();
+    if (!stack || named.has(stack.key)) return;
+    const name = labelOf(atlas, stack.representative.event);
+    if (name === null) return;
+    const k = transform.k;
+    const found = placeOne(name, stack, { k, gap: LABEL_GAP, view: view(), capped: false })
+      // Nowhere clear to write it is still written: the reader is pointing at
+      // this mark and at no other, so there is nothing for it to be confused
+      // with. Its halo is what keeps it readable over whatever is under it.
+      ?? { text: name, right: true, rect: labelBoxAt(stack, name, true, { k, gap: LABEL_GAP }) };
+    hoverGroup.appendChild(textNode(found.text, {
+      x: found.rect.x, y: found.rect.y + (LABEL_SIZE * 0.35) / k,
+      class: 'node-label hovered',
+      'text-anchor': found.right ? 'start' : 'end',
+      'font-size': LABEL_SIZE / k,
+    }));
   }
 
   // --- where the camera starts ----------------------------------------------

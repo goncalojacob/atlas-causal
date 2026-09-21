@@ -406,6 +406,12 @@ input, select, textarea { accent-color: var(--cobalt); }
    and faint enough that nobody takes them for what was asked for. Fainter
    than `faded`, which means "outside the band" and is a different sentence. */
 .map .mark.lens-near, .graph .node.lens-near, .timeline .bar.lens-near { opacity: 0.22; }
+/* And the lines between them (M77): with a lens on, the lens's own links are
+   the ones in ink and everything else is there to be found. The arrowhead
+   goes with its line, as it does for every other class they share. */
+.graph .edge.lens-near, .graph .edge-head.lens-near { opacity: 0.16; }
+.graph .edge.lens-near.chain, .graph .edge-head.lens-near.chain,
+.graph .edge.lens-near.converging, .graph .edge-head.lens-near.converging { opacity: 0.6; }
 .map .mark.lens-near.selected, .map .mark.lens-near.on-path,
 .graph .node.lens-near.selected, .graph .node.lens-near.on-path,
 .timeline .bar.lens-near.selected, .timeline .bar.lens-near.on-path { opacity: 0.6; }
@@ -1157,6 +1163,14 @@ body:not(.phone) .layout.panel-empty.composing {
    meant to be. */
 .graph .node-label { fill: var(--ink); font-family: var(--font-ui); paint-order: stroke; stroke: var(--paper); stroke-width: 3; vector-effect: non-scaling-stroke; pointer-events: none; }
 .graph .node-label.selected { fill: var(--madder); font-weight: 600; }
+/* The one name the pointer is asking for (M77): a mark whose name did not
+   fit carries no label until it is hovered, and this is that label. Over
+   everything, since it is the reader's finger and not part of the picture. */
+.graph .node-label.hovered { fill: var(--ink); font-weight: 600; }
+/* The hairline that ties a label to the mark it names when it had to be
+   written on another line (M77). Thin and soft: it is a tie and not a link,
+   and it must never be read as an edge. */
+.graph .label-leader { stroke: var(--cobalt-soft); stroke-width: 1; stroke-opacity: 0.6; vector-effect: non-scaling-stroke; fill: none; pointer-events: none; }
 /* The key — in the corner of the graph, and again in about.html — is drawn
    with the same rules as the lines it explains, so the two cannot drift
    apart. */
