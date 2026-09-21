@@ -14685,6 +14685,88 @@ and that is written down rather than guessed at.
      umbrella's article for what it names and the atlas does not hold**, the
      way batch 17 read the retraction reasons.
 
+### Batches 23 and 24 — the sweep rows whose parent this atlas already holds
+
+**A tick rule §5 does not have, and the one A3 and A6 make obvious.** Batch 21
+asked the corpus's main events what they are part of; these two batches ask
+the **sweep pool** the same question. A row whose item names a parent this
+atlas holds **arrives filed**, so importing it cannot raise the main count,
+and it arrives in a neighbourhood where an edge is usually there to be read.
+Of the 250 best world rows by sitelinks, **19** name such a parent; of the
+next 450, **38 more**.
+
+| | batch 23 | batch 24 |
+| --- | --- | --- |
+| taken | 10 | 11 |
+| landed | 8 | 7 |
+| filed | 8 | 7 |
+| edges | 8 | 8 |
+| corpus | 500 → **508** | 508 → **515** |
+| **main** | **251, unchanged** | **251, unchanged** |
+| largest component | 445 → **453** | 453 → **459** |
+
+**Three batches running, the main count has not moved and the component has
+grown by fourteen.** That is A5 and A6 held together, which §7 of
+`docs/m42-pool.md` said a sweep batch does not do: a row ranked by sitelinks
+opens a corner of the world with nothing beside it, and a row ranked by
+*whose child it is* lands where the atlas already has something to say.
+
+**The Franco-Thai war is the batch worth reading.** Its own § Background names
+two records this atlas holds — the armistice of 22 June 1940 and the
+Franco-Siamese crisis of 1893 — so one import bought two edges, and
+`1893-franco-siamese-crisis`, the loneliest record in the corpus and the leaf
+deviation 1020's browser test picks, stopped being a leaf.
+
+**The five short intervals are the other finding and they are a person's to
+fix.** `the-troubles` (1998–1998 for thirty years), `cambodian-vietnamese-war`
+(1989–1991 for a war its own summary dates 1978–1989),
+`turkish-war-of-independence` (1922–1923 for 1919–1923), `chinese-civil-war`
+(1946–1950 for a war that began in 1927) and `dissolution-of-the-soviet-union`
+(1991–1991). Each refused a filing the source itself asserts, and each is an
+import that read a later pair of dates than the item's own description.
+
+### Deviations
+
+1027. **A pool row whose item names a parent this atlas holds is a different
+     vein from a pool row that ranks well, and it is the one A6 leaves open.**
+     Sitelinks say how much of the world has written about a row; `part of`
+     says whether this atlas has somewhere to put it. Fifty-seven such rows
+     were found in the 700 best of the world pool, fifteen landed across two
+     batches, and **the main count did not move once**. The rule costs nine
+     API calls to compute and it should be run before the sitelink ranking
+     from here on, as set 0 is: it is not a licence to keep a record, and
+     three of this fire's takes were still refused for want of an edge, a
+     lane or a date.
+1028. **A red check, read rather than assumed, was this run's own doing and
+     the fault was in what the test counted.** `tests/timeline-browser.test.mjs`
+     asks that a state change not rebuild the drawing, with a bound of five
+     per cent of the elements; it went to 31 of 544. **Thirty of the 31 were
+     `<title>` elements**, moving between a parent's ring and a bar: the ring
+     shares the bars layer and carries no tooltip, so `reuse()`'s positional
+     take hands one position to a ring in one render and to a bar in the next,
+     and the title goes with it. **Filing events under parents makes rings**,
+     which is what A6 asks for by the dozen, so the count rises with every
+     umbrella while the picture is identical. A tooltip is never laid out and
+     never painted, which is the distinction the test's own comment already
+     drew for the text inside it, so the observer now skips `<title>`.
+     **Nothing under `src/` was touched** — the run is forbidden a display
+     change — and the churn the positional take really costs, which is the
+     attributes rewritten on a ring that becomes a bar, is written down here
+     for whoever owns the timeline next.
+1029. **An import refused for want of a lane is a one-line fix in the seeds
+     file, not a dead row.** `Q780845`, the Franco-Thai war, was refused in
+     batch 23 — no place record, no lane from its point, no lane named for it
+     — and landed in batch 24 with `"Q780845": "asia"` in
+     `data/imports/wikidata-seeds.json` and its id taken out of the state
+     file's `done` list. Three more rows are waiting on exactly that line.
+1030. **A record carrying Julian dates needs `when.calendar` or rule 4 refuses
+     the edge the sources themselves describe.** Wikidata gives the
+     Kerensky–Krasnov uprising as 26–31 October 1917, which is the Old Style
+     the article prints in brackets beside 8–13 November. Filed as written it
+     is dated *before* the October Revolution it was an attempt to crush.
+     `when.calendar: julian` is the whole repair, `src/util/dates.js` does the
+     rest, and no date was changed.
+
 1019. **Reinstating an M44b-era record can put an unread record on no
      dashboard.** `2021-myanmar-coup-d-etat`'s `review` block carried flags
      and **no `status`**, which is invisible while a record is retracted and
