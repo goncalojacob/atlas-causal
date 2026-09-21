@@ -1372,6 +1372,53 @@
         }
       ],
       "citationCount": 1,
+      "container": {
+        "issue": "48",
+        "kind": "journal",
+        "pages": "58-71",
+        "title": "Conflict Studies Quarterly"
+      },
+      "created": "2026-09-21",
+      "creators": [
+        "Andrei Miroiu",
+        "Ana Raluca Alecu"
+      ],
+      "doi": "10.24193/csq.48.4",
+      "id": "miroiu-alecu-2024-mali-conflict",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": null,
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Mali: Conflict, Social Order and the Crime-Terror Nexus",
+      "type": "article",
+      "url": null,
+      "year": 2024
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 1,
       "container": null,
       "created": "2026-09-21",
       "creators": [
@@ -1997,7 +2044,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 328,
+      "citationCount": 343,
       "created": "2026-09-04",
       "creators": [
         "Wikidata contributors"
@@ -2034,7 +2081,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 718,
+      "citationCount": 733,
       "created": "2026-09-04",
       "creators": [
         "Wikipedia contributors"

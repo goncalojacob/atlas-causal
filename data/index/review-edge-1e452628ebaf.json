@@ -2547,6 +2547,34 @@
       ],
       "created": "2026-09-21",
       "from": "berlin-conference",
+      "id": "berlin-conference--heligoland-zanzibar-treaty--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "heligoland-zanzibar-treaty",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "berlin-conference",
       "id": "berlin-conference--second-boer-war--precondition-of",
       "kind": "edge",
       "origin": {
@@ -4546,6 +4574,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "donghak-peasant-revolution",
+      "id": "donghak-peasant-revolution--first-sino-japanese-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-sino-japanese-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "dutch-brazil-1630-1654",
       "id": "dutch-brazil-1630-1654--the-caribbean-sugar-revolution--caused",
@@ -5388,6 +5444,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
+      "from": "first-sudanese-civil-war",
+      "id": "first-sudanese-civil-war--second-sudanese-civil-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-sudanese-civil-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
       "from": "franco-russian-alliance",
       "id": "franco-russian-alliance--world-war-i--precondition-of",
       "kind": "edge",
@@ -6161,6 +6245,62 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "heligoland-zanzibar-treaty",
+      "id": "heligoland-zanzibar-treaty--anglo-zanzibar-war--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "anglo-zanzibar-war",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "heligoland-zanzibar-treaty",
+      "id": "heligoland-zanzibar-treaty--entente-cordiale--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "entente-cordiale",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "hereditary-captaincies-of-brazil-1534",
       "id": "hereditary-captaincies-of-brazil-1534--governorate-general-of-brazil-1549--caused",
@@ -6866,6 +7006,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "kosovo-war",
+      "id": "kosovo-war--2008-kosovo-declaration-of-independence--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2008-kosovo-declaration-of-independence",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wheeler-1978-republican-portugal",
         "ramos-2009-historia-de-portugal"
       ],
@@ -7160,6 +7328,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "miroiu-alecu-2024-mali-conflict"
+      ],
+      "created": "2026-09-21",
+      "from": "libyan-civil-war",
+      "id": "libyan-civil-war--mali-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "mali-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "ramos-2009-historia-de-portugal",
         "wikipedia-pt"
       ],
@@ -7412,6 +7609,34 @@
       "revised": null,
       "status": "active",
       "to": "lateran-treaty",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "molotov-ribbentrop-pact",
+      "id": "molotov-ribbentrop-pact--german-soviet-treaty-of-friendship-cooperation-and-demarcation--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "german-soviet-treaty-of-friendship-cooperation-and-demarcation",
       "type": "precondition-of"
     },
     {
@@ -8932,6 +9157,34 @@
       "status": "active",
       "to": "sidonio-pais-coup-1917",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "revolution-of-dignity",
+      "id": "revolution-of-dignity--russo-ukrainian-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "russo-ukrainian-war",
+      "type": "caused"
     },
     {
       "authors": [
@@ -11476,6 +11729,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "thousand-days-war",
+      "id": "thousand-days-war--hay-bunau-varilla-treaty--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "hay-bunau-varilla-treaty",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "transfer-of-the-colonial-capital-to-rio-de-janeiro-1763",
       "id": "transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--transfer-of-the-portuguese-court-to-brazil-1807--precondition-of",
@@ -12052,6 +12333,34 @@
       ],
       "created": "2026-09-21",
       "from": "treaty-of-versailles",
+      "id": "treaty-of-versailles--german-polish-declaration-of-non-aggression--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "german-polish-declaration-of-non-aggression",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "treaty-of-versailles",
       "id": "treaty-of-versailles--locarno-treaties--precondition-of",
       "kind": "edge",
       "origin": {
@@ -12435,6 +12744,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
+      "from": "war-of-attrition",
+      "id": "war-of-attrition--yom-kippur-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "yom-kippur-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
       "from": "winter-war",
       "id": "winter-war--continuation-war--caused",
       "kind": "edge",
@@ -12598,6 +12935,34 @@
       "status": "active",
       "to": "easter-rising",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-i",
+      "id": "world-war-i--estonian-war-of-independence--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "estonian-war-of-independence",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -12949,6 +13314,34 @@
       "revised": null,
       "status": "active",
       "to": "deportation-of-the-crimean-tatars",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-ii",
+      "id": "world-war-ii--greco-italian-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "greco-italian-war",
       "type": "precondition-of"
     },
     {

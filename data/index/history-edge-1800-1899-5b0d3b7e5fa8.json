@@ -20,6 +20,15 @@
         }
       ]
     },
+    "berlin-conference--heligoland-zanzibar-treaty--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "berlin-conference--second-boer-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -51,6 +60,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "donghak-peasant-revolution--first-sino-japanese-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -109,6 +127,24 @@
       ]
     },
     "greco-turkish-war-of-1897--first-balkan-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "heligoland-zanzibar-treaty--anglo-zanzibar-war--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "heligoland-zanzibar-treaty--entente-cordiale--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -313,6 +349,15 @@
             "review",
             "sources"
           ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "thousand-days-war--hay-bunau-varilla-treaty--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-21"
         }
       ]

@@ -126,6 +126,15 @@
         }
       ]
     },
+    "1907-romanian-peasants-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "1908-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -1342,6 +1351,15 @@
             "category"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "1957-1958-influenza-pandemic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -6358,6 +6376,15 @@
         }
       ]
     },
+    "estonian-war-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "euro-adoption-1999": {
       "from": "git",
       "versions": [
@@ -6689,6 +6716,15 @@
         }
       ]
     },
+    "first-sudanese-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "first-vienna-award": {
       "from": "git",
       "versions": [
@@ -6757,6 +6793,15 @@
         }
       ]
     },
+    "german-polish-declaration-of-non-aggression": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "german-revolution-of-1918-1919": {
       "from": "git",
       "versions": [
@@ -6771,6 +6816,15 @@
             "review"
           ],
           "on": "2026-09-20"
+        }
+      ]
+    },
+    "german-soviet-treaty-of-friendship-cooperation-and-demarcation": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -6919,6 +6973,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "greco-italian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -7126,6 +7189,15 @@
             "actors"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "hay-bunau-varilla-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -8299,6 +8371,15 @@
             "parent"
           ],
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "montreal-protocol": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -11486,6 +11567,15 @@
           "fields": [
             "parent"
           ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "war-of-attrition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-21"
         }
       ]

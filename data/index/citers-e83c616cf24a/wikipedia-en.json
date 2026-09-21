@@ -434,6 +434,12 @@
     },
     {
       "dissent": false,
+      "id": "berlin-conference--heligoland-zanzibar-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"Heligoland–Zanzibar Treaty\", revision 1372103388, § Consequences"
+    },
+    {
+      "dissent": false,
       "id": "berlin-conference--second-boer-war--precondition-of",
       "kind": "edge",
       "locator": "\"Berlin Conference\", revision 1369494326, § Aftermath"
@@ -698,6 +704,12 @@
     },
     {
       "dissent": false,
+      "id": "donghak-peasant-revolution--first-sino-japanese-war--caused",
+      "kind": "edge",
+      "locator": "\"Tonghak Peasant Revolution\", revision 1375257262, § lead and § Siege of Jeonju Fortress"
+    },
+    {
+      "dissent": false,
       "id": "dutch-brazil-1630-1654--the-caribbean-sugar-revolution--caused",
       "kind": "edge",
       "locator": "\"Dutch Brazil\", revision 1371124077"
@@ -884,6 +896,12 @@
     },
     {
       "dissent": false,
+      "id": "first-sudanese-civil-war--second-sudanese-civil-war--caused",
+      "kind": "edge",
+      "locator": "\"First Sudanese Civil War\", revision 1375454294, § lead and § Impact"
+    },
+    {
+      "dissent": false,
       "id": "franco-russian-alliance--world-war-i--precondition-of",
       "kind": "edge",
       "locator": "\"Franco-Russian Alliance\", revision 1375457134, § History"
@@ -1049,6 +1067,18 @@
       "id": "haitian-revolution-1791-1804--the-cuban-sugar-boom--caused",
       "kind": "edge",
       "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "dissent": false,
+      "id": "heligoland-zanzibar-treaty--anglo-zanzibar-war--enabled",
+      "kind": "edge",
+      "locator": "\"Heligoland–Zanzibar Treaty\", revision 1372103388, § Consequences"
+    },
+    {
+      "dissent": false,
+      "id": "heligoland-zanzibar-treaty--entente-cordiale--precondition-of",
+      "kind": "edge",
+      "locator": "\"Heligoland–Zanzibar Treaty\", revision 1372103388, § Consequences"
     },
     {
       "dissent": false,
@@ -1268,6 +1298,12 @@
     },
     {
       "dissent": false,
+      "id": "kosovo-war--2008-kosovo-declaration-of-independence--precondition-of",
+      "kind": "edge",
+      "locator": "\"2008 Kosovo declaration of independence\", revision 1368774231, § Build-up and § Political background"
+    },
+    {
+      "dissent": false,
       "id": "lebanese-civil-war--1982-lebanon-war--enabled",
       "kind": "edge",
       "locator": "\"1982 Lebanon War\", revision 1370279817, § PLO's objectives"
@@ -1301,6 +1337,12 @@
       "id": "lei-aurea-1888--proclamation-of-the-brazilian-republic-1889--caused",
       "kind": "edge",
       "locator": "\"Proclamation of the Republic (Brazil)\", revision 1370705081"
+    },
+    {
+      "dissent": false,
+      "id": "libyan-civil-war--mali-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Mali War\", revision 1375920868, § Background"
     },
     {
       "dissent": false,
@@ -1367,6 +1409,12 @@
       "id": "march-on-rome--lateran-treaty--precondition-of",
       "kind": "edge",
       "locator": "\"March on Rome\", revision 1374461265, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "molotov-ribbentrop-pact--german-soviet-treaty-of-friendship-cooperation-and-demarcation--precondition-of",
+      "kind": "edge",
+      "locator": "\"German–Soviet Boundary and Friendship Treaty\", revision 1375965836, § lead and § Secret articles"
     },
     {
       "dissent": false,
@@ -1685,6 +1733,12 @@
       "id": "republic-proclaimed-1910--first-portuguese-republic-1910-1926--caused",
       "kind": "edge",
       "locator": "\"First Portuguese Republic\", revision 1370244290, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "revolution-of-dignity--russo-ukrainian-war--caused",
+      "kind": "edge",
+      "locator": "\"Revolution of Dignity\", revision 1375565667, § lead"
     },
     {
       "dissent": false,
@@ -2552,6 +2606,18 @@
     },
     {
       "dissent": false,
+      "id": "thousand-days-war--hay-bunau-varilla-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"Hay–Bunau-Varilla Treaty\", revision 1375195423, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "thousand-days-war--hay-bunau-varilla-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"Thousand Days' War\", revision 1370750751, § lead"
+    },
+    {
+      "dissent": false,
       "id": "transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--transfer-of-the-portuguese-court-to-brazil-1807--precondition-of",
       "kind": "edge",
       "locator": "\"Colonial Brazil\", revision 1371077435"
@@ -2726,6 +2792,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-versailles--german-polish-declaration-of-non-aggression--precondition-of",
+      "kind": "edge",
+      "locator": "\"German–Polish declaration of non-aggression\", revision 1363397316, § lead and § Effect of the declaration"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-versailles--locarno-treaties--precondition-of",
       "kind": "edge",
       "locator": "\"Locarno Treaties\", revision 1373366462, § lead"
@@ -2810,6 +2882,12 @@
     },
     {
       "dissent": false,
+      "id": "war-of-attrition--yom-kippur-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"War of Attrition\", revision 1371500938, § Egyptian front"
+    },
+    {
+      "dissent": false,
       "id": "winter-war--continuation-war--caused",
       "kind": "edge",
       "locator": "\"Continuation War\", revision 1375847616, § Winter War"
@@ -2855,6 +2933,12 @@
       "id": "world-war-i--easter-rising--enabled",
       "kind": "edge",
       "locator": "\"Easter Rising\", revision 1374874334"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--estonian-war-of-independence--precondition-of",
+      "kind": "edge",
+      "locator": "\"Estonian War of Independence\", revision 1370918612, § lead"
     },
     {
       "dissent": false,
@@ -2945,6 +3029,12 @@
       "id": "world-war-ii--deportation-of-the-crimean-tatars--precondition-of",
       "kind": "edge",
       "locator": "\"Deportation of the Crimean Tatars\", revision 1375533569, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--greco-italian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Greco-Italian War\", revision 1370621958, § lead"
     },
     {
       "dissent": false,

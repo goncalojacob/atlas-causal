@@ -890,6 +890,33 @@
       ],
       "created": "2026-09-21",
       "degree": 1,
+      "doi": "10.24193/csq.48.4",
+      "id": "miroiu-alecu-2024-mali-conflict",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mali: Conflict, Social Order and the Crime-Terror Nexus",
+      "type": "article"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
       "doi": null,
       "id": "mommsen-1996-rise-and-fall-of-weimar-democracy",
       "isbn": "0807847216",
@@ -1293,7 +1320,7 @@
         }
       ],
       "created": "2026-09-04",
-      "degree": 328,
+      "degree": 343,
       "doi": null,
       "id": "wikidata",
       "isbn": null,
@@ -1317,7 +1344,7 @@
         }
       ],
       "created": "2026-09-04",
-      "degree": 718,
+      "degree": 733,
       "doi": null,
       "id": "wikipedia-en",
       "isbn": null,

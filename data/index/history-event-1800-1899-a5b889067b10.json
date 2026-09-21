@@ -231,6 +231,14 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -317,6 +325,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "donghak-peasant-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -428,6 +445,15 @@
             "review",
             "status"
           ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "heligoland-zanzibar-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-21"
         }
       ]
@@ -710,6 +736,13 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "retraction",
+            "status"
+          ],
           "on": "2026-09-21"
         }
       ]

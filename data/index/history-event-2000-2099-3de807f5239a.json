@@ -553,6 +553,15 @@
         }
       ]
     },
+    "2008-kosovo-declaration-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "2009-european-parliament-election-in-portugal": {
       "from": "git",
       "versions": [
@@ -3614,6 +3623,14 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3640,6 +3657,15 @@
             "review"
           ],
           "on": "2026-09-20"
+        }
+      ]
+    },
+    "mali-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3959,6 +3985,15 @@
         }
       ]
     },
+    "revolution-of-dignity": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "rose-revolution": {
       "from": "git",
       "versions": [
@@ -4106,6 +4141,15 @@
             "status"
           ],
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "stockholm-convention-on-persistent-organic-pollutants": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
