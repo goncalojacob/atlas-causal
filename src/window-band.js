@@ -10,8 +10,11 @@
 // you were choosing; a number field can do neither, because you must already
 // know the year you want.
 //
-// So M64 brings the band back over the map, on demand (`map-band.js`), and
-// this file is why there is still one band and not two. Two bands that can
+// So M64 brought the band back over the map behind a button, and M75 took the
+// button away — the owner, 21 September: *"The dates two-handled band should
+// not be hidden"* — so it is simply on the map (`map-band.js`). Neither run
+// changed a line below this comment, which is the point: this file is why
+// there is still one band and not two. Two bands that can
 // disagree about the same window would be a worse fault than the one being
 // fixed, so the shade, the handles, their labels and every gesture that moves
 // them live here, and the timeline and the map's strip both draw from it.
