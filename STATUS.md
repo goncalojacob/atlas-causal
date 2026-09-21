@@ -14611,6 +14611,80 @@ still need articles.
      repaired here: the interval came from an import and what it should be is
      a person's to set, not a run's to guess.
 
+### Batch 21 — the parents the corpus names, imported as umbrellas
+
+Batch 20 asked every main event's item for `part of` and kept only the answers
+this atlas already held. This batch asks what the rest were: of the **89**
+parents named by the 213 main events carrying an id, **75 are not here**, and
+three of them are periods A6 allows — an article, a span and a region each.
+`afghan-conflict` (Q1519107), `indochina-wars` (Q2342102) and `arab-spring`
+(Q33761) were written by the import from the items' own fields, and **ten main
+events filed under them**: four on their own `part of` statement, six on A6's
+span-and-subject rule with the article quoted for each. Corpus 496 to **499**,
+main 258 to **251**, largest component 442 and unchanged, because a filing
+takes no edge.
+
+**The refusals are the more useful half and they are in `docs/m42-pool.md` by
+item.** The Cold War again, which 17 main events name and which has no region
+smaller than the world; the decolonisation of Africa again, whose start
+Wikidata gives as a decade; three parents with **no article at all**; six that
+are a category, a list, a disambiguation page, a term, a body of law or a
+bilateral relationship; and four that would sit between an umbrella here and
+its own children.
+
+### Batch 22 — the Arab Spring's own origin, which nothing here held
+
+The article batch 21 wrote `arab-spring` from says the wave began in Tunisia,
+and the corpus held no Tunisian record. **One import, one filing, three
+edges**: `tunisian-revolution` (Q46959), filed under `arab-spring` in the same
+batch, and `inspired` edges to the Egyptian revolution, the Libyan civil war
+and the Yemeni revolution, each quoting the Arab Spring lead and the target's
+own article. Corpus 499 to **500**, main **251 and unchanged**, largest
+component 442 to **445**, components 30 to 29: `libyan-civil-war` and
+`mali-war` were a component of two and are on the main chain now.
+
+The Horn of Africa's six and Sudan's five were read and left alone; the leads
+of their articles name no event this atlas holds outside their own fragment,
+and that is written down rather than guessed at.
+
+### Deviations
+
+1023. **A period whose subject crosses two lanes can only ever take one half
+     of itself.** `2011-yemeni-revolution` carries `part of` the Arab Spring
+     on its own item and is drawn in the asia lane; `arab-spring` is drawn in
+     africa, because the wave began in Tunisia and deposed three rulers
+     there. A6 gives the filing rule as the region and
+     `tests/m42-filing.test.mjs` holds every child to its umbrella's lane, so
+     the filing the source itself asserts is refused. It is batch 20's lane
+     refusal seen from the other side and it will recur for every umbrella
+     whose subject is a sea, a wave or an empire rather than a continent.
+     **Left as a refusal and not worked around**, because a two-lane umbrella
+     is a shape the owner has not asked for.
+1024. **An item the import has walked and left no record for can be walked
+     again, and the rewind belongs in the state file.** `Q33761` was in
+     `data/imports/wikidata-state.json`'s `done` list with nothing on disk to
+     show for it — a walk from before its classes were in the table. Removing
+     the one id let `--import` write the record with no change to the tool and
+     no record edited by hand. **It is the state file and never a record**,
+     and a rewind is written down here because a `done` list that is edited
+     silently is a list nobody can trust.
+1025. **The Wikimedia API's refusal is about the User-Agent before it is about
+     the rate.** Deviation 1013 read *"You are making too many requests"* as a
+     wall and 1017 answered it with backoff. Both are half the story: a plain
+     request with **no** `user-agent` header is refused immediately and every
+     time, and the same request carrying the tool's own descriptive agent —
+     the repository, the contact — answers first try. Every fetch this fire
+     made, the import's and the summary endpoint's alike, carried one, and not
+     one call was refused.
+1026. **An import chosen because a fragment names it pays twice, and that is
+     the shape A5 and A6 ask for together.** Batch 22 imported one record and
+     the largest component grew by three, while the main count did not move at
+     all, because the record arrived with an umbrella to be filed under and a
+     named place in another record's own article. A sweep row ranked by
+     sitelinks does neither. **The rule for the fires after this one: read the
+     umbrella's article for what it names and the atlas does not hold**, the
+     way batch 17 read the retraction reasons.
+
 1019. **Reinstating an M44b-era record can put an unread record on no
      dashboard.** `2021-myanmar-coup-d-etat`'s `review` block carried flags
      and **no `status`**, which is invisible while a record is retracted and
