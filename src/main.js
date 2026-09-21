@@ -240,6 +240,29 @@ try {
   // costs at first paint is one `<button>` — the strip, its scale and its
   // subscription are built the first time somebody opens it (map-band.js).
   createMapBand(mapArea, { atlas, state });
+
+  // The composer (M71), which is the one control on this page whose module is
+  // not loaded with the page. Everything else in this file is a few kilobytes
+  // beside the index; the composer brings the schema validator, the rules and
+  // the contribution form's record builder with it, which is the whole of what
+  // "first paint must not get slower" is about here. A reader who never writes
+  // a narrative pays for the `<button>` in the masthead and nothing else.
+  const composeButton = document.getElementById('compose-button');
+  let composer = null;
+  // The import is started once and held: a second press while the module is
+  // still on the wire would otherwise build a second composer over the first,
+  // both subscribed to the state and only one of them on the page.
+  let composerLoading = null;
+  composeButton?.addEventListener('click', () => {
+    if (composer) { composer.toggle(); return; }
+    composerLoading ??= import('./compose/composer.js').then(({ createComposer }) => {
+      composer = createComposer(layout, {
+        atlas, state, toggle: composeButton, onLayout: () => remeasure({ force: true }),
+      });
+      composer.open();
+    });
+  });
+
   const showView = (view) => {
     const graphOn = view === 'graph';
     const timelineOn = view === 'timeline';
@@ -294,7 +317,12 @@ try {
   // (render-key.js), so this asks and then tells the views to look again.
   // The three pictures, the card, and the header's chips: a lens chip names a
   // record too, and it is drawn in the masthead rather than by the panel.
-  const shardLanded = () => { remeasure(); panel.refresh(); grouping.render(state.get()); };
+  const shardLanded = () => {
+    remeasure(); panel.refresh(); grouping.render(state.get());
+    // And the composer's step list, where a step is named by the record's
+    // title once its century is in and by its id until then (attributes.js).
+    composer?.refresh();
+  };
   const askFor = (shards) => {
     for (const shard of shards) atlas.loadAttributes(shard).then(shardLanded, () => {});
   };

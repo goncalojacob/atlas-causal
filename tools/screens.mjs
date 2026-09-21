@@ -445,6 +445,35 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&from=1900&to=1999&view=graph&selected=estado-novo-1933-1974',
     width: 1440, height: 900,
     what: 'a parent and its parts side by side: rings, no badge, and nothing folded into anything' },
+
+  // M71. The composer, open beside the picture it is composed out of, with
+  // three steps in it. `compose=` is the frame's, for the reason `band` and
+  // `open` are: whether the composer is open is a preference and the draft
+  // inside it lives in localStorage, so neither is in the URL the atlas keeps.
+  //
+  // Two pictures, and the split between them is the project's own rule about
+  // what may be written here. The first is on the **real corpus** — three
+  // events of the colonial war picked by clicking them, the window 1961 to
+  // 1975 computed from them, and the paragraphs **not written**, because a
+  // paragraph in this file arguing that one thing led to another would be a
+  // historical claim nobody made. What it shows is the walk, the computed
+  // window and the verdict saying what is still missing, which is the
+  // composer as a reader meets it.
+  //
+  // The second is on the **fixtures**, where every word is synthetic and says
+  // so: the same composer with the prose written, a source cited and the
+  // verdict green — the whole of it working, with nothing asserted about the
+  // world.
+  { name: 'm71-composer', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1955&to=1980'
+      + '&compose=angola-war-begins-1961,portugal-e-o-futuro-1974,carnation-revolution-1974',
+    width: 1440, height: 900,
+    what: 'the composer beside the map, three events picked by clicking them, the window computed from them' },
+  { name: 'm71-composer-valid', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=1500&fixtures=1&fill=1'
+      + '&compose=fixture-event-b,fixture-event-d,fixture-event-t',
+    width: 1440, height: 1500,
+    what: 'the same composer over the synthetic corpus, written and cited, the validator’s own rules saying yes' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
