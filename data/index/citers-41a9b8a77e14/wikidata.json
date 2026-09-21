@@ -812,6 +812,18 @@
     },
     {
       "dissent": false,
+      "id": "2012-malian-coup-d-etat",
+      "kind": "event",
+      "locator": "Q875912"
+    },
+    {
+      "dissent": false,
+      "id": "2012-tuareg-rebellion",
+      "kind": "event",
+      "locator": "Q1525846"
+    },
+    {
+      "dissent": false,
       "id": "2013-egyptian-coup-d-etat",
       "kind": "event",
       "locator": "Q13605743"
@@ -1436,6 +1448,12 @@
     },
     {
       "dissent": false,
+      "id": "foibe-massacres",
+      "kind": "event",
+      "locator": "Q1294142"
+    },
+    {
+      "dissent": false,
       "id": "fourth-geneva-convention",
       "kind": "event",
       "locator": "Q973748"
@@ -1445,6 +1463,12 @@
       "id": "franco-russian-alliance",
       "kind": "event",
       "locator": "Q243799"
+    },
+    {
+      "dissent": false,
+      "id": "franco-thai-war",
+      "kind": "event",
+      "locator": "Q780845"
     },
     {
       "dissent": false,
@@ -1733,6 +1757,12 @@
       "id": "kellogg-briand-pact",
       "kind": "event",
       "locator": "Q205073"
+    },
+    {
+      "dissent": false,
+      "id": "kerensky-krasnov-uprising",
+      "kind": "event",
+      "locator": "Q597026"
     },
     {
       "dissent": false,
@@ -2420,6 +2450,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-peace-with-italy",
+      "kind": "event",
+      "locator": "Q2314717"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-petropolis",
       "kind": "event",
       "locator": "Q1122547"
@@ -2567,6 +2603,12 @@
       "id": "war-in-darfur",
       "kind": "event",
       "locator": "Q190758"
+    },
+    {
+      "dissent": false,
+      "id": "war-in-somalia",
+      "kind": "event",
+      "locator": "Q1072042"
     },
     {
       "dissent": false,

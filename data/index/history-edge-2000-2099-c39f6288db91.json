@@ -150,6 +150,15 @@
         }
       ]
     },
+    "2012-tuareg-rebellion--2012-malian-coup-d-etat--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "2014-portuguese-socialist-party-prime-ministerial-primary--geringonca-2015--enabled": {
       "from": "git",
       "versions": [
@@ -631,6 +640,15 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "libyan-civil-war--2012-tuareg-rebellion--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

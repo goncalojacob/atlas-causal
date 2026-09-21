@@ -7367,7 +7367,25 @@
         }
       ]
     },
+    "foibe-massacres": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "fourth-geneva-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "franco-thai-war": {
       "from": "git",
       "versions": [
         {
@@ -8482,6 +8500,15 @@
           "fields": [
             "parent"
           ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "kerensky-krasnov-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-21"
         }
       ]
@@ -12495,6 +12522,15 @@
             "review"
           ],
           "on": "2026-09-20"
+        }
+      ]
+    },
+    "treaty-of-peace-with-italy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

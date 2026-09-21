@@ -1032,6 +1032,24 @@
         }
       ]
     },
+    "2012-malian-coup-d-etat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "2012-tuareg-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "2013-20-olive-quick-decline-syndrome-outbreak": {
       "from": "git",
       "versions": [
@@ -5040,6 +5058,15 @@
             "review",
             "status"
           ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "war-in-somalia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-21"
         }
       ]

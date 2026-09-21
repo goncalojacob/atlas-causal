@@ -110,6 +110,12 @@
     },
     {
       "dissent": false,
+      "id": "1893-franco-siamese-crisis--franco-thai-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Franco-Thai War\", revision 1375769371, § Background"
+    },
+    {
+      "dissent": false,
       "id": "1948-arab-israeli-war--1952-egyptian-revolution--caused",
       "kind": "edge",
       "locator": "\"1948 Arab–Israeli War\", revision 1374830770"
@@ -338,6 +344,12 @@
     },
     {
       "dissent": false,
+      "id": "2012-tuareg-rebellion--2012-malian-coup-d-etat--caused",
+      "kind": "edge",
+      "locator": "\"2012 Malian coup d'état\", revision 1370102863, § lead"
+    },
+    {
+      "dissent": false,
       "id": "2021-myanmar-coup-d-etat--myanmar-civil-war--caused",
       "kind": "edge",
       "locator": "\"Myanmar civil war (2021–present)\", revision 1375700231, § lead"
@@ -485,6 +497,12 @@
       "id": "arab-revolt--treaty-of-sevres--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of Sèvres\", revision 1369307123"
+    },
+    {
+      "dissent": false,
+      "id": "armistice-of-22-june-1940--franco-thai-war--enabled",
+      "kind": "edge",
+      "locator": "\"Franco-Thai War\", revision 1375769371, § Background"
     },
     {
       "dissent": false,
@@ -1652,6 +1670,12 @@
     },
     {
       "dissent": false,
+      "id": "libyan-civil-war--2012-tuareg-rebellion--enabled",
+      "kind": "edge",
+      "locator": "\"Tuareg rebellion (2012)\", revision 1370751541, § lead"
+    },
+    {
+      "dissent": false,
       "id": "libyan-civil-war--mali-war--precondition-of",
       "kind": "edge",
       "locator": "\"Mali War\", revision 1375920868, § Background"
@@ -1817,6 +1841,12 @@
       "id": "october-revolution--finnish-civil-war--precondition-of",
       "kind": "edge",
       "locator": "\"Finnish Civil War\", revision 1370618272"
+    },
+    {
+      "dissent": false,
+      "id": "october-revolution--kerensky-krasnov-uprising--reacted-to",
+      "kind": "edge",
+      "locator": "\"Kerensky–Krasnov uprising\", revision 1370625643, § lead"
     },
     {
       "dissent": false,
@@ -2423,6 +2453,12 @@
       "id": "slave-trade-act-1807--slavery-abolition-act-1833--precondition-of",
       "kind": "edge",
       "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
+    },
+    {
+      "dissent": false,
+      "id": "somali-civil-war--war-in-somalia--caused",
+      "kind": "edge",
+      "locator": "\"War in Somalia (2006–2009)\", revision 1375639759, § Background"
     },
     {
       "dissent": false,
@@ -3662,6 +3698,12 @@
     },
     {
       "dissent": false,
+      "id": "world-war-ii--foibe-massacres--caused",
+      "kind": "edge",
+      "locator": "\"Foibe massacres\", revision 1372732009, § lead"
+    },
+    {
+      "dissent": false,
       "id": "world-war-ii--fourth-geneva-convention--reacted-to",
       "kind": "edge",
       "locator": "\"Fourth Geneva Convention\", revision 1375615781, § Article 27 and Article 33"
@@ -3719,6 +3761,12 @@
       "id": "world-war-ii--slovak-national-uprising--caused",
       "kind": "edge",
       "locator": "\"Slovak National Uprising\", revision 1374904143, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--treaty-of-peace-with-italy--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Paris between Italy and the Allied Powers\", revision 1373123064, § lead"
     },
     {
       "dissent": false,

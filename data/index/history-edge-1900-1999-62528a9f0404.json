@@ -944,6 +944,15 @@
         }
       ]
     },
+    "armistice-of-22-june-1940--franco-thai-war--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "armistice-of-mudros--treaty-of-sevres--precondition-of": {
       "from": "git",
       "versions": [
@@ -3280,6 +3289,15 @@
         }
       ]
     },
+    "october-revolution--kerensky-krasnov-uprising--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "october-revolution--russian-civil-war--caused": {
       "from": "git",
       "versions": [
@@ -4030,6 +4048,15 @@
       ]
     },
     "sino-indian-war--indo-pakistani-war-of-1965--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "somali-civil-war--war-in-somalia--caused": {
       "from": "git",
       "versions": [
         {
@@ -4942,6 +4969,15 @@
         }
       ]
     },
+    "world-war-ii--foibe-massacres--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "world-war-ii--fourth-geneva-convention--reacted-to": {
       "from": "git",
       "versions": [
@@ -5024,6 +5060,15 @@
       ]
     },
     "world-war-ii--slovak-national-uprising--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "world-war-ii--treaty-of-peace-with-italy--caused": {
       "from": "git",
       "versions": [
         {
