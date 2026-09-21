@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "estonian-war-of-independence--treaty-of-tartu--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Tartu (Estonia–Russia)\", revision 1368812511, § lead"
+    }
+  ],
+  "from": "estonian-war-of-independence",
+  "to": "treaty-of-tartu",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article says it in its first sentence: the treaty was signed at Tartu on 2 February 1920 between the Republic of Estonia and Soviet Russia, **\"ending the 1918–1920 Estonian War of Independence\"**, and \"in the treaty, Bolshevik Russia recognized the independence of the newly established state of Estonia\". § Significance adds that it \"has been regarded as the *birth certificate* of the Republic of Estonia because it was the first *de jure* recognition of the state\".",
+  "dispute": null
+}

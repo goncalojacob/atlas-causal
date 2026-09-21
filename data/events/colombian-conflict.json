@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "colombian-conflict",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 14 under brief §1: the record earns no honest edge. The English article, at revision 1375841708, says the conflict \"is historically rooted in the conflict known as *La Violencia*, which was triggered by the 1948 assassination of liberal political leader Jorge Eliécer Gaitán and in the aftermath of the anti-communist repression in rural Colombia in the 1960s\", and neither La Violencia nor the Bogotazo is a record here. The atlas's one Colombian record is `thousand-days-war`, which batch 10 brought back and which this article does not mention at all. It waits on a record of La Violencia."
+  },
+  "wikidata": "Q169072",
+  "wikipedia": {
+    "en": "Colombian conflict",
+    "pt": "Conflito armado na Colômbia"
+  },
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q169072"
+    }
+  ],
+  "title": "Colombian conflict",
+  "summary": "Wikidata item Q169072, imported by tools/import/wikidata.mjs. The item's own description reads \"low-intensity asymmetric war, beginning in 1960,\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1964,
+    "end": null,
+    "date": "1964-05-27"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

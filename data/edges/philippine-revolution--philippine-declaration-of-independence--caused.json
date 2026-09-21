@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "philippine-revolution--philippine-declaration-of-independence--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Philippine Declaration of Independence\", revision 1358972217, § History"
+    }
+  ],
+  "from": "philippine-revolution",
+  "to": "philippine-declaration-of-independence",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article's § History begins the story at the revolution: \"in 1896, the Philippine Revolution began. In December 1897, the Spanish government and the revolutionaries signed a truce, the Pact of Biak-na-Bato, requiring that the Spaniards pay the revolutionaries $MXN800,000 and that Aguinaldo and other leaders go into exile in Hong Kong.\" The declaration of 12 June 1898 \"was proclaimed by Filipino revolutionary forces general Emilio Aguinaldo… It asserted the sovereignty and independence of the Philippine islands from the 300 years of colonial rule by Spain\": the same movement, the same general, back from the exile the truce sent him into.",
+  "dispute": null
+}

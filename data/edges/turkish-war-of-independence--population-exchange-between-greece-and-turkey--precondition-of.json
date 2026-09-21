@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "turkish-war-of-independence--population-exchange-between-greece-and-turkey--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Population exchange between Greece and Turkey\", revision 1372041572, § Historical background"
+    }
+  ],
+  "from": "turkish-war-of-independence",
+  "to": "population-exchange-between-greece-and-turkey",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article's § Historical background argues the exchange out of the fighting rather than out of the treaty that formalised it: **\"the Greek–Turkish population exchange came out of the Turkish and Greek militaries' treatment of the Christian minorities and Muslim majorities, respectively, in Asia Minor during the Greco-Turkish War (1919–1922) that followed the Allied Powers' authorization of a Greek zone of occupation in the defeated Ottoman Empire.\"** The Greek occupation \"unleashed further massacres both of these Christians and now also of Muslims as both armies sought to secure their rule by eliminating any inhabitants whose existence could justify unfavorable borders\". This atlas draws that war as `turkish-war-of-independence`, whose own record names the Greek army in western Anatolia and the recapture of Smyrna.",
+  "dispute": null
+}

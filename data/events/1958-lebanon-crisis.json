@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1958-lebanon-crisis",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 14 under brief §1: the record earns no honest edge. The English article, at revision 1370279391, argues the crisis out of the Arab Cold War — the Truman Doctrine, the Suez Crisis of 1956, Nasser and the United Arab Republic — and this atlas holds none of them. Its one named consequence chain runs through Camille Chamoun's term and the American landing at Beirut, and the Lebanese Civil War appears only in its See also. The closest it comes to a record here is \"after the end of World War II in 1945, the United States and Soviet Union were the two major world powers\", which is the class of claim §4 of docs/m42-connections.md refuses: an edge true of a dozen records argues nothing about any of them. It waits on a record of the Suez Crisis, which is the record its own background turns on."
+  },
+  "wikidata": "Q1542222",
+  "wikipedia": {
+    "en": "1958 Lebanon crisis",
+    "pt": "Crise do Líbano de 1958"
+  },
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1542222"
+    }
+  ],
+  "title": "1958 Lebanon crisis",
+  "summary": "Wikidata item Q1542222, imported by tools/import/wikidata.mjs. The item's own description reads \"Lebanese political crisis accompanied by military intervention in Lebanon by the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1958,
+    "end": 1958,
+    "date": "1958-07-15",
+    "endDate": "1958-10-25"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

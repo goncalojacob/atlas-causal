@@ -2211,6 +2211,305 @@ rather than three; the rate over four sweep batches is now **ten to twelve kept
 a batch**, and the component moves by the same number when the retractions are
 made honestly.
 
+## 2n. Batch 14 — sets 3 and 4 a fifth time, and the same twelve-for-twelve
+
+**Sixteen rows ticked, fifteen created and one refused at the class table,
+twelve kept and three retracted, fifteen edges, three filings.** Corpus +12,
+component +12, component count unmoved, the three events with no edge still
+three. That is batch 13's shape repeated, and two batches in a row is enough to
+call it the rule rather than the accident: **a sweep batch grows the component
+as fast as it grows the corpus when it retracts the rows that have no
+neighbour.**
+
+Step 0's tombstone scan ran first and returned nothing to reinstate, as in
+batch 13.
+
+### The sixteen, and the one the class table refused
+
+§5's rule over a pool recomputed at **1,175 rows** — sixteen fewer than batch
+13's 1,191, which is the sixteen batch 13 spent and the check that the rule is
+recomputed and not remembered. Set 3 took the best by sitelinks in the six
+thinnest decades (1900s at 15 active events, 1890s at 16, 1930s, 1980s and
+2000s at 23, 1950s at 24) and set 4 filled the rest by sitelinks over the whole
+pool.
+
+**`Q1274389`, the People Power Revolution, was refused by the import**, because
+none of its three classes — `Q3827292`, `Q61671409`, `Q751967` — is in the
+class table of `data/imports/wikidata-seeds.json`, and **none was added**, which
+is deviation 1005's rule applied the moment it cost something: a class table is
+a decision somebody argues with, and adding three entries in the middle of a
+sweep batch to keep one record would be deciding three questions nobody asked.
+The row is reported here and stays untaken. It is the third item this milestone
+has lost at the class table, after `Q475678` and `Q3771738` in batch 8.
+
+### The edges
+
+Fifteen. Every one runs from a record the atlas already held into one of the
+twelve, except `declaration-by-united-nations --precondition-of-->
+charter-of-the-united-nations`, which runs the other way, and none runs between
+two of this batch's own records.
+
+**Five of the fifteen run out of `world-war-ii`**, which is what a sweep of the
+1940s finds, and the five are not the same kind of claim: the armistice of June
+1940 and the Slovak uprising are acts inside the war and are filed under it;
+the Volhynian massacres are `enabled` by it, because what the war supplied was
+the collapse of the state and the article credits the killing to the UPA; the
+Declaration by United Nations is the alliance putting its name to paper; and
+the Fourth Geneva Convention `reacted-to` it. Only the first two are filed.
+
+#### `estonian-war-of-independence --caused--> treaty-of-tartu`
+
+*"Treaty of Tartu (Estonia–Russia)"*, revision 1368812511, § lead: the treaty
+of 2 February 1920 between the Republic of Estonia and Soviet Russia, **"ending
+the 1918–1920 Estonian War of Independence"**, in which "Bolshevik Russia
+recognized the independence of the newly established state of Estonia".
+§ Significance calls it "the *birth certificate* of the Republic of Estonia
+because it was the first *de jure* recognition of the state".
+`estonian-war-of-independence` came back in batch 10 and was one of the two
+records batch 11 listed as arguable rather than filed; this is its second edge.
+
+#### `world-war-ii --caused--> declaration-by-united-nations` and `declaration-by-united-nations --precondition-of--> charter-of-the-united-nations`
+
+*"Declaration by United Nations"*, revision 1369044189, § lead. On the first:
+it "was the main treaty that formalized the Allies of World War II and was
+signed by 47 national governments between 1942 and 1945. On 1 January 1942,
+during the Arcadia Conference in Washington D.C., the Allied 'Big Four' — the
+United States, the United Kingdom, the Soviet Union, and China — signed a short
+document which later came to be known as the United Nations Declaration, and
+the next day the representatives of 22 other nations added their signatures."
+On the second: **"the Declaration by United Nations became the basis of the
+United Nations (UN), which was formalized in the UN Charter, signed by 50
+countries on 26 June 1945."** Same name, same signatories, three years apart.
+
+#### `world-war-ii --caused--> armistice-of-22-june-1940`
+
+*"Armistice of 22 June 1940"*, revision 1370957537: **"following the decisive
+German victory in the Battle of France, the armistice established a German
+occupation zone in Northern and Western France that encompassed about
+three-fifths of France's European territory, including all English Channel and
+Atlantic Ocean ports."** § Battle of France is the account of how it came to be
+signed — the best French armies lost in the northern encirclement, the
+government to Bordeaux on 10 June, Paris an open city the same day, Reynaud's
+resignation on 16 June and Pétain prime minister.
+
+#### `world-war-ii --caused--> slovak-national-uprising`
+
+*"Slovak National Uprising"*, revision 1374904143, § lead: it "was an attempted
+insurrection organised by the Slovak resistance during the Second World War. It
+was directed on the one hand against **the German invasion of Slovakia by the
+Wehrmacht, which began on 29 August 1944**, and on the other against the Slovak
+collaborationist regime of the Ludaks under Jozef Tiso." Carried out by parts of
+the Slovak army under a council linked to the Czechoslovak government-in-exile
+in London and supported by Soviet and Slovak partisans; it ended after sixty
+days with the fall of Banská Bystrica.
+
+#### `world-war-ii --enabled--> massacres-of-poles-in-volhynia-and-eastern-galicia`
+
+*"Massacres of Poles in Volhynia and Eastern Galicia"*, revision 1372344283.
+The infobox subheader reads "Part of the Eastern Front of World War II" and the
+first sentence says the killings "were carried out in **German-occupied
+Poland** by the Ukrainian Insurgent Army (UPA), with the support of parts of the
+local Ukrainian population, against the Polish minority". The occupation is the
+war's: "in September 1939, Poland was invaded by Nazi Germany and the Soviet
+Union. The eastern part of Poland was annexed by the Soviet Union; Volhynia and
+Eastern Galicia were attached to the Ukrainian SSR." `enabled` rather than
+`caused`, because what the war supplied was the collapse of the state that had
+governed those provinces and the article credits the killing to the UPA.
+
+#### `world-war-ii --reacted-to--> fourth-geneva-convention`
+
+*"Fourth Geneva Convention"*, revision 1375615781. The article is a commentary
+on the convention's articles and not a history of its drafting, and the edge
+claims only what that commentary states: **"the prohibition on scientific
+experiments was added, in part, in response to experiments by German and
+Japanese doctors during World War II of whom Josef Mengele was the most
+infamous"**, and, on the article forbidding collective punishment, "by
+collective punishment, the drafters of the Geneva Conventions had in mind the
+reprisal killings of World War I and World War II". The convention of 12 August
+1949 "was the first to deal with humanitarian protections for civilians during
+war". This is the second instrument this milestone has kept on an edge out of
+the war that produced it, after the 1954 Hague convention in batch 13, and the
+two together say what the environment-shaped hole of §7.4 is missing: an
+instrument survives arrival here when its article argues it out of an event this
+atlas holds.
+
+#### `treaty-of-lausanne --caused--> population-exchange-between-greece-and-turkey` and `turkish-war-of-independence --precondition-of--> population-exchange-between-greece-and-turkey`
+
+*"Population exchange between Greece and Turkey"*, revision 1372041572. The
+lead: the exchange "stemmed from the 'Convention Concerning the Exchange of
+Greek and Turkish Populations' signed at Lausanne, Switzerland, on 30 January
+1923", and the article quotes the historian Dinah Shelton that **"the Lausanne
+Treaty of 1923 completed the process of the forcible transfer of the Greeks"**.
+The Convention and the Treaty are two instruments of one settlement and this
+atlas holds only the Treaty, whose own record already says it "gave legal form
+to the compulsory exchange of Orthodox Christians and Muslims between Greece and
+Turkey" — both ends saying the same thing, which is why the edge is `caused`
+although the record it runs from is dated six months after the Convention.
+§ Historical background argues the exchange out of the fighting instead:
+**"the Greek–Turkish population exchange came out of the Turkish and Greek
+militaries' treatment of the Christian minorities and Muslim majorities,
+respectively, in Asia Minor during the Greco-Turkish War (1919–1922)"**, a
+Greek occupation that "unleashed further massacres both of these Christians and
+now also of Muslims as both armies sought to secure their rule by eliminating
+any inhabitants whose existence could justify unfavorable borders". This atlas
+draws that war as `turkish-war-of-independence`, whose record names the Greek
+army in western Anatolia and the recapture of Smyrna, so the second edge is
+`precondition-of` and the identification is said here rather than assumed.
+
+#### `potsdam-conference --precondition-of--> treaty-on-the-final-settlement-with-respect-to-germany`
+
+*"Treaty on the Final Settlement with Respect to Germany"*, revision
+1369082326. § Background: "on 1 August 1945, the Potsdam Agreement, promulgated
+in the Potsdam Conference, among other things agreed on the initial terms under
+which the Allies of World War II would govern Germany", with a provisional
+German–Polish border to be finalised by **"a peace settlement for Germany to be
+accepted by the Government of Germany when a government adequate for the purpose
+is established"**. The lead: the Two Plus Four Agreement **"supplanted the 1945
+Potsdam Agreement: in it, the Four Powers renounced all rights they had held
+with regard to Germany, allowing for its reunification as a fully sovereign
+state the following year."** Forty-five years is a long edge and the article is
+what makes it one: the 1990 treaty answers a question the 1945 conference
+wrote down and left open. `potsdam-conference` now carries two of this
+milestone's edges, the other being batch 13's `potsdam-declaration`.
+
+#### `german-polish-declaration-of-non-aggression --precondition-of--> baltic-entente`
+
+*"Baltic Entente"*, revision 1363789006, § Formation. The article names the
+obstacle and what removed it: the union was wanted from 1918, but "it was not
+until 1934 that establishing the union was possible. Lithuania remained
+reluctant to the idea because its international political strategy contradicted
+those of Latvia and Estonia… **However, in 1934, the Soviet–Polish
+Non-Aggression Pact and the German–Polish Non-Aggression Pact both resulted in
+the collapse of the Lithuanian foreign policy and forced a change of
+position.**" The German–Polish declaration of 26 January 1934 is one of the two
+the sentence names and the atlas does not hold the other; the entente followed
+on 12 September of the same year.
+
+#### `philippine-revolution --caused--> philippine-declaration-of-independence` and `spanish-american-war-1898 --enabled--> philippine-declaration-of-independence`
+
+*"Philippine Declaration of Independence"*, revision 1358972217, § History. The
+first: "in 1896, the Philippine Revolution began. In December 1897, the Spanish
+government and the revolutionaries signed a truce, the Pact of Biak-na-Bato,
+requiring that the Spaniards pay the revolutionaries $MXN800,000 and that
+Aguinaldo and other leaders go into exile in Hong Kong" — and the declaration
+of 12 June 1898 "was proclaimed by Filipino revolutionary forces general Emilio
+Aguinaldo". The second: **"in April 1898, shortly after the beginning of the
+Spanish–American War, Commodore George Dewey… sailed into Manila Bay… On May 1,
+1898, the US defeated the Spaniards in the Battle of Manila Bay. Emilio
+Aguinaldo decided to return to the Philippines to help American forces defeat
+the Spaniards. The US Navy agreed to transport him back aboard the USS
+*McCulloch*."** `enabled` and not `caused`, because the article is equally plain
+that the war did not ratify the declaration: "the declaration was never
+recognized by either the US or Spain. Instead, Spain ceded the Philippines to
+the United States in the 1898 Treaty of Paris." This joins the Philippine
+cluster — `philippine-revolution`, `philippine-american-war`,
+`spanish-american-war-1898`, `treaty-of-paris-1898` — which batch 0 first
+brought into the component.
+
+#### `entente-cordiale --enabled--> french-conquest-of-morocco`
+
+*"French conquest of Morocco"*, revision 1374837625, § Background: an earlier
+attempt to agree with Spain "failed in 1902 because of disagreement over the
+limits of the future Spanish zone", and then **"the Franco-British agreement
+reached on 8 April 1904 involved the recognition of the predominant position of
+France in Morocco in exchange for France's recognition of the permanency of
+Britain's position in Egypt"**, which "also specified a zone to be entrusted to
+Spain when it became necessary for France to occupy Morocco". The article hangs
+that sentence on Trout 1969, p. 171, which is the new source record
+`trout-1969-moroccos-saharan-frontiers` and the second author M72 asks for. The
+article then records Germany refusing the arrangement — "since 1904 the German
+Empire directed its efforts towards the internationalization of the Moroccan
+question", and Wilhelm II at Tangier on 31 March 1905 — which is the first
+Moroccan crisis and not a record here.
+
+#### `treaty-of-rome --precondition-of--> merger-treaty`
+
+*"Merger Treaty"*, revision 1340086782, § lead: the treaty of 8 April 1965
+"unified the executive institutions of the European Coal and Steel Community
+(ECSC), European Atomic Energy Community (Euratom) and the European Economic
+Community (EEC)… It set out that the **Commission of the European Communities
+should replace the High Authority of the ECSC, the Commission of the EEC and the
+Commission of Euratom**, and that the Council of the European Communities should
+replace the Special Council of Ministers of the ECSC, the Council of the EEC and
+the Council of Euratom." This atlas's own record of the Treaty of Rome says that
+treaty "created the European Economic Community… and institutions — a
+Commission, a Council, an Assembly and a Court — with powers of their own":
+those are two of the three sets of institutions the 1965 treaty merged. The
+article is a four-kilobyte stub with no background section, and this is the only
+edge it supports.
+
+### The three retracted, and what each waits for
+
+| record | what its article argues, and what is missing |
+| --- | --- |
+| `tulip-revolution` | Revision 1372025111 argues the revolution out of the Kyrgyz parliamentary elections of 2005 and allegations against Askar Akayev, none a record here. Its only line to a record this atlas holds is about the *name*: "it was Akayev himself who coined the term… using a color or floral term evoked similarity with the non-violent Rose Revolution in Georgia, the Orange Revolution in Ukraine (2004)" — and where it mentions the two again it is to contrast, "this is in contrast to the Ukrainian and Georgian revolutionary forces which demonstrated united fronts against the state". A shared name and an explicit contrast are not `inspired`; the word does not appear in the article. Waits on a page arguing the Kyrgyz opposition took either as a model |
+| `1958-lebanon-crisis` | Revision 1370279391 argues the crisis out of the Arab Cold War — the Truman Doctrine, the Suez Crisis of 1956, Nasser and the United Arab Republic — and this atlas holds none of them; the Lebanese civil war appears only in its See also. Its nearest reach to a record here is "after the end of World War II in 1945, the United States and Soviet Union were the two major world powers", which is the class of claim §4 refuses. Waits on the Suez Crisis |
+| `colombian-conflict` | Revision 1375841708: the conflict "is historically rooted in the conflict known as *La Violencia*, which was triggered by the 1948 assassination of liberal political leader Jorge Eliécer Gaitán", and neither La Violencia nor the Bogotazo is a record here. The atlas's one Colombian record is `thousand-days-war`, which batch 10 brought back and which this article does not mention at all. Waits on La Violencia |
+
+### The nine left main, and the three filed
+
+Three were filed under `world-war-ii` on M62's rule of inside the span *and*
+inside the subject, each on a sentence the article states:
+
+- **`armistice-of-22-june-1940`.** Signed 22 June 1940, inside 1939-09-01 to
+  1945-09-02; the parties are Nazi Germany and the French Third Republic, both
+  belligerents. It is an armistice signed inside its own war's span, which is
+  the shape `korean-armistice-agreement` under `korean-war` already set here and
+  which batch 13 named as the exception the four treaties it left main did not
+  fit. It names neither an actor nor a place, so the filing is made on the
+  record's context, which amendment A1 of `docs/m67-umbrellas.md` allows and
+  this paragraph is the note it requires. **No actor line was invented.**
+- **`slovak-national-uprising`.** August–October 1944, inside the span; its
+  article calls it an insurrection "during the Second World War" against the
+  Wehrmacht's invasion of Slovakia. It is the fourth record filed under the war
+  beside `warsaw-uprising`, `warsaw-ghetto-uprising` and `20-july-plot`, and it
+  names neither an actor nor a place; the same note applies.
+- **`massacres-of-poles-in-volhynia-and-eastern-galicia`.** 1942–1944, inside
+  the span; the article's own infobox reads "Part of the Eastern Front of World
+  War II" and the killings were carried out in German-occupied Poland. Same
+  note.
+
+The other nine are top-level and every one carries `actors: []`, which is M67
+A1 and not a defect: `treaty-of-tartu`, `declaration-by-united-nations`,
+`fourth-geneva-convention`, `population-exchange-between-greece-and-turkey`,
+`treaty-on-the-final-settlement-with-respect-to-germany`, `baltic-entente`,
+`philippine-declaration-of-independence`, `french-conquest-of-morocco` and
+`merger-treaty`. **None of the nine is anybody's part in this atlas.** Five are
+treaties or conventions whose war either is not a record here or is not the war
+they sit inside; `population-exchange-between-greece-and-turkey` would want the
+Lausanne settlement as an umbrella and the atlas holds the treaty as a record
+rather than the settlement as a period; `french-conquest-of-morocco` runs
+1907–1937 and is nobody's part; `philippine-declaration-of-independence` would
+want the Philippine Revolution, whose record ends in 1898 with the declaration
+inside it — an arguable filing, and M62 §3 says list it rather than make it,
+because the declaration is what the article treats as the revolution's outcome
+and not as an episode within it. `baltic-entente` is the one that would most
+like an umbrella of the interwar Baltic and there is none.
+
+`docs/m53-polities.md` §4.1 accordingly moves to **306 of 435**, its numerator
+standing still for the fifth batch running.
+
+### What batch 14 did to the graph
+
+| | before | after |
+| --- | --- | --- |
+| active events | 423 | **435** |
+| main | 326 | **335** |
+| filed under a parent | 97 | **100** |
+| active edges | 513 | **528** |
+| largest connected component | 400 | **412** |
+| components | 12 | **12** |
+| active events with no edge | 3 | 3 |
+| unreachable from any Portuguese event | 15 | 15 |
+
+Twelve and twelve again. **Two sweep batches in a row have grown the component
+by exactly what they grew the corpus by**, and the thing they have in common is
+not the pick — batch 13's sixteen were treaties and wars, batch 14's were
+treaties and wars and revolutions — but the willingness to retract. Seven of
+the thirty-two rows across the two batches went out on arrival with the missing
+record named, and one more was refused at the class table before it was ever
+written. The rate stands at **twelve kept a batch** over the two.
+
 ## 3. The main count, and why it moved up
 
 Amendment A3: an import that leaves the main count higher than it found it has

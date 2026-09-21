@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "tulip-revolution",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 14 under brief §1: the record earns no honest edge. The English article, at revision 1372025111, argues the revolution out of the Kyrgyz parliamentary elections of February and March 2005 and out of allegations of corruption and authoritarianism by Askar Akayev — no record here — and the only line it draws to a record this atlas holds is about the name: \"it was Akayev himself who coined the term, 'Tulip Revolution'… using a color or floral term evoked similarity with the non-violent Rose Revolution in Georgia, the Orange Revolution in Ukraine (2004), the Czechoslovak Velvet revolution\". Its infobox files it under the Colour revolutions, which is a class and not an event, and where it mentions Georgia and Ukraine again it is to contrast: \"this is in contrast to the Ukrainian and Georgian revolutionary forces which demonstrated united fronts against the state\". A shared name and an explicit contrast are not `inspired`, and the word does not appear in the article. It waits on a page that argues the Kyrgyz opposition took the Georgian or Ukrainian revolution as a model."
+  },
+  "wikidata": "Q459162",
+  "wikipedia": {
+    "en": "Tulip Revolution",
+    "pt": "Revolução das Tulipas"
+  },
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q459162"
+    }
+  ],
+  "title": "Tulip Revolution",
+  "summary": "Wikidata item Q459162, imported by tools/import/wikidata.mjs. The item's own description reads \"2005 revolution in Kyrgyzstan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2005,
+    "end": 2005,
+    "endDate": "2005-04-11"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

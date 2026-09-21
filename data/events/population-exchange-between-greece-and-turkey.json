@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "population-exchange-between-greece-and-turkey",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q131017",
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "Population exchange between Greece and Turkey",
+    "pt": "Troca de populações entre a Grécia e a Turquia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q131017"
+    }
+  ],
+  "title": "population exchange between Greece and Turkey",
+  "summary": "Wikidata item Q131017, imported by tools/import/wikidata.mjs. The item's own description reads \"1923 agreement between Greece and Turkey\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1923,
+    "end": 1923
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
