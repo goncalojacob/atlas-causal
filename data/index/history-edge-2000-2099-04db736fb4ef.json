@@ -529,6 +529,15 @@
         }
       ]
     },
+    "iraq-war--iraqi-insurgency--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "legislative-election-2015--geringonca-2015--enabled": {
       "from": "git",
       "versions": [
@@ -643,6 +652,15 @@
         }
       ]
     },
+    "mali-war--2020-malian-coup-d-etat--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "marcelo-elected-president-2016--marcelo-reelected-2021--precondition-of": {
       "from": "git",
       "versions": [
@@ -724,6 +742,15 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "revolution-of-dignity--2014-pro-russian-unrest-in-ukraine--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -934,6 +961,15 @@
       ]
     },
     "war-in-afghanistan-2001-2021--insurgency-in-khyber-pakhtunkhwa--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "war-in-afghanistan-2001-2021--republican-insurgency-in-afghanistan--caused": {
       "from": "git",
       "versions": [
         {

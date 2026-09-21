@@ -1270,6 +1270,15 @@
         }
       ]
     },
+    "2014-pro-russian-unrest-in-ukraine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "2015-madeiran-regional-election": {
       "from": "git",
       "versions": [
@@ -1753,6 +1762,15 @@
             "category"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "2020-malian-coup-d-etat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3603,6 +3621,15 @@
         }
       ]
     },
+    "iraqi-insurgency": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "january-6-united-states-capitol-attack": {
       "from": "git",
       "versions": [
@@ -4308,6 +4335,15 @@
             "sitelinks"
           ],
           "on": "2026-09-04"
+        }
+      ]
+    },
+    "republican-insurgency-in-afghanistan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

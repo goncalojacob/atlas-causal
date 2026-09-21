@@ -824,6 +824,18 @@
     },
     {
       "dissent": false,
+      "id": "2014-pro-russian-unrest-in-ukraine",
+      "kind": "event",
+      "locator": "Q15871713"
+    },
+    {
+      "dissent": false,
+      "id": "2020-malian-coup-d-etat",
+      "kind": "event",
+      "locator": "Q98457371"
+    },
+    {
+      "dissent": false,
       "id": "2021-myanmar-coup-d-etat",
       "kind": "event",
       "locator": "Q105180889"
@@ -1478,6 +1490,12 @@
     },
     {
       "dissent": false,
+      "id": "georgian-uprising-on-texel",
+      "kind": "event",
+      "locator": "Q161391"
+    },
+    {
+      "dissent": false,
       "id": "german-polish-declaration-of-non-aggression",
       "kind": "event",
       "locator": "Q126413"
@@ -1649,6 +1667,12 @@
       "id": "iraq-war",
       "kind": "event",
       "locator": "Q545449"
+    },
+    {
+      "dissent": false,
+      "id": "iraqi-insurgency",
+      "kind": "event",
+      "locator": "Q926905"
     },
     {
       "dissent": false,
@@ -1910,6 +1934,12 @@
     },
     {
       "dissent": false,
+      "id": "paris-peace-accords",
+      "kind": "event",
+      "locator": "Q696802"
+    },
+    {
+      "dissent": false,
       "id": "paris-peace-conference",
       "kind": "event",
       "locator": "Q199820"
@@ -2003,6 +2033,12 @@
       "id": "potsdam-declaration",
       "kind": "event",
       "locator": "Q163244"
+    },
+    {
+      "dissent": false,
+      "id": "republican-insurgency-in-afghanistan",
+      "kind": "event",
+      "locator": "Q108137226"
     },
     {
       "dissent": false,
@@ -2261,6 +2297,12 @@
       "id": "tajikistani-civil-war",
       "kind": "event",
       "locator": "Q1122110"
+    },
+    {
+      "dissent": false,
+      "id": "tambov-rebellion",
+      "kind": "event",
+      "locator": "Q811250"
     },
     {
       "dissent": false,
@@ -2567,6 +2609,12 @@
       "id": "world-war-ii",
       "kind": "event",
       "locator": "Q362"
+    },
+    {
+      "dissent": false,
+      "id": "wuchang-uprising",
+      "kind": "event",
+      "locator": "Q339291"
     },
     {
       "dissent": false,

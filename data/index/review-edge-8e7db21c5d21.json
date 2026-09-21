@@ -7962,6 +7962,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
+      "from": "iraq-war",
+      "id": "iraq-war--iraqi-insurgency--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "iraqi-insurgency",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
       "from": "jameson-raid",
       "id": "jameson-raid--second-boer-war--precondition-of",
       "kind": "edge",
@@ -8845,6 +8873,34 @@
       "status": "active",
       "to": "2025-2026-iranian-protests",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "mali-war",
+      "id": "mali-war--2020-malian-coup-d-etat--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2020-malian-coup-d-etat",
+      "type": "caused"
     },
     {
       "authors": [
@@ -10773,6 +10829,34 @@
       ],
       "created": "2026-09-21",
       "from": "revolution-of-dignity",
+      "id": "revolution-of-dignity--2014-pro-russian-unrest-in-ukraine--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2014-pro-russian-unrest-in-ukraine",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "revolution-of-dignity",
       "id": "revolution-of-dignity--russo-ukrainian-war--caused",
       "kind": "edge",
       "origin": {
@@ -10984,6 +11068,34 @@
       "revised": null,
       "status": "active",
       "to": "kronstadt-rebellion",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "russian-civil-war",
+      "id": "russian-civil-war--tambov-rebellion--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "tambov-rebellion",
       "type": "caused"
     },
     {
@@ -14997,6 +15109,34 @@
       ],
       "created": "2026-09-21",
       "from": "vietnam-war",
+      "id": "vietnam-war--paris-peace-accords--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "paris-peace-accords",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "vietnam-war",
       "id": "vietnam-war--sino-vietnamese-war--precondition-of",
       "kind": "edge",
       "origin": {
@@ -15095,6 +15235,34 @@
       "revised": null,
       "status": "active",
       "to": "insurgency-in-khyber-pakhtunkhwa",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "war-in-afghanistan-2001-2021",
+      "id": "war-in-afghanistan-2001-2021--republican-insurgency-in-afghanistan--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "republican-insurgency-in-afghanistan",
       "type": "caused"
     },
     {
@@ -15944,6 +16112,34 @@
       ],
       "created": "2026-09-21",
       "from": "world-war-ii",
+      "id": "world-war-ii--georgian-uprising-on-texel--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "georgian-uprising-on-texel",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-ii",
       "id": "world-war-ii--greco-italian-war--precondition-of",
       "kind": "edge",
       "origin": {
@@ -16244,6 +16440,34 @@
       "status": "active",
       "to": "winter-war",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "wuchang-uprising",
+      "id": "wuchang-uprising--xinhai-revolution--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "xinhai-revolution",
+      "type": "caused"
     },
     {
       "authors": [

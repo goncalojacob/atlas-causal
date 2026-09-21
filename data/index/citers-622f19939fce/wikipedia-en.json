@@ -1490,6 +1490,12 @@
     },
     {
       "dissent": false,
+      "id": "iraq-war--iraqi-insurgency--caused",
+      "kind": "edge",
+      "locator": "\"Iraqi insurgency (2003–2011)\", revision 1375582804, § lead"
+    },
+    {
+      "dissent": false,
       "id": "jameson-raid--second-boer-war--precondition-of",
       "kind": "edge",
       "locator": "\"Jameson Raid\", revision 1370624782, § lead"
@@ -1685,6 +1691,12 @@
       "id": "mahsa-amini-protests--2025-2026-iranian-protests--precondition-of",
       "kind": "edge",
       "locator": "\"Mahsa Amini protests\", revision 1372464386"
+    },
+    {
+      "dissent": false,
+      "id": "mali-war--2020-malian-coup-d-etat--caused",
+      "kind": "edge",
+      "locator": "\"2020 Malian coup d'état\", revision 1370424404, § Background"
     },
     {
       "dissent": false,
@@ -2102,6 +2114,12 @@
     },
     {
       "dissent": false,
+      "id": "revolution-of-dignity--2014-pro-russian-unrest-in-ukraine--caused",
+      "kind": "edge",
+      "locator": "\"2014 pro-Russian unrest in Ukraine\", revision 1374474822, § lead"
+    },
+    {
+      "dissent": false,
       "id": "revolution-of-dignity--russo-ukrainian-war--caused",
       "kind": "edge",
       "locator": "\"Revolution of Dignity\", revision 1375565667, § lead"
@@ -2159,6 +2177,12 @@
       "id": "russian-civil-war--kronstadt-rebellion--caused",
       "kind": "edge",
       "locator": "\"Kronstadt rebellion\", revision 1373564650, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "russian-civil-war--tambov-rebellion--caused",
+      "kind": "edge",
+      "locator": "\"Tambov Rebellion\", revision 1370749600, § Background"
     },
     {
       "dissent": false,
@@ -3392,6 +3416,12 @@
     },
     {
       "dissent": false,
+      "id": "vietnam-war--paris-peace-accords--caused",
+      "kind": "edge",
+      "locator": "\"Paris Peace Accords\", revision 1374303685, § lead"
+    },
+    {
+      "dissent": false,
       "id": "vietnam-war--sino-vietnamese-war--precondition-of",
       "kind": "edge",
       "locator": "\"Sino-Vietnamese War\", revision 1375848359, § Background"
@@ -3425,6 +3455,12 @@
       "id": "war-in-afghanistan-2001-2021--insurgency-in-khyber-pakhtunkhwa--caused",
       "kind": "edge",
       "locator": "\"Insurgency in Khyber Pakhtunkhwa\", revision 1374407113, § infobox and lead"
+    },
+    {
+      "dissent": false,
+      "id": "war-in-afghanistan-2001-2021--republican-insurgency-in-afghanistan--caused",
+      "kind": "edge",
+      "locator": "\"Republican insurgency in Afghanistan\", revision 1375985393, § lead"
     },
     {
       "dissent": false,
@@ -3632,6 +3668,12 @@
     },
     {
       "dissent": false,
+      "id": "world-war-ii--georgian-uprising-on-texel--caused",
+      "kind": "edge",
+      "locator": "\"Georgian uprising on Texel\", revision 1375503259, § lead"
+    },
+    {
+      "dissent": false,
       "id": "world-war-ii--greco-italian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Greco-Italian War\", revision 1370621958, § lead"
@@ -3713,6 +3755,12 @@
       "id": "world-war-ii--winter-war--enabled",
       "kind": "edge",
       "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "dissent": false,
+      "id": "wuchang-uprising--xinhai-revolution--caused",
+      "kind": "edge",
+      "locator": "\"Wuchang Uprising\", revision 1371641231, § lead"
     },
     {
       "dissent": false,

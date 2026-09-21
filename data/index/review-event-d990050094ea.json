@@ -2350,6 +2350,64 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "2014-pro-russian-unrest-in-ukraine",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-ukrainian-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2014 pro-Russian unrest in Ukraine"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "2020-malian-coup-d-etat",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2020 Malian coup d'état"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "revolution",
       "cites": [
         "wikidata"
@@ -6934,6 +6992,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "georgian-uprising-on-texel",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Georgian uprising on Texel"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -8245,7 +8331,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "iraq-war",
       "kind": "event",
       "origin": {
@@ -8261,6 +8347,34 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "Iraq War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "iraqi-insurgency",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "iraq-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Iraqi insurgency"
     },
     {
       "authors": [
@@ -9379,7 +9493,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "mali-war",
       "kind": "event",
       "origin": {
@@ -10279,6 +10393,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "paris-peace-accords",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "vietnam-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Paris Peace Accords"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -11059,6 +11201,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "republican-insurgency-in-afghanistan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "afghan-conflict",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Republican insurgency in Afghanistan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -11093,7 +11263,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "revolution-of-dignity",
       "kind": "event",
       "origin": {
@@ -11300,7 +11470,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "russian-civil-war",
       "kind": "event",
       "origin": {
@@ -12792,6 +12962,35 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Tajikistani Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "tambov-rebellion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russian-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Tambov Rebellion"
     },
     {
       "authors": [
@@ -14892,7 +15091,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 6,
+      "degree": 7,
       "id": "vietnam-war",
       "kind": "event",
       "origin": {
@@ -14988,7 +15187,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "war-in-afghanistan-2001-2021",
       "kind": "event",
       "origin": {
@@ -15313,7 +15512,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 23,
+      "degree": 24,
       "id": "world-war-ii",
       "kind": "event",
       "origin": {
@@ -15365,6 +15564,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "wuchang-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "xinhai-revolution",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Wuchang Uprising"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -15375,7 +15602,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "xinhai-revolution",
       "kind": "event",
       "origin": {

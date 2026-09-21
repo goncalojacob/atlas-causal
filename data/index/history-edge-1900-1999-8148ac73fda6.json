@@ -3734,6 +3734,15 @@
         }
       ]
     },
+    "russian-civil-war--tambov-rebellion--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "russian-revolution-of-1905--constitutionalization-attempts-in-iran--inspired": {
       "from": "git",
       "versions": [
@@ -4571,6 +4580,15 @@
         }
       ]
     },
+    "vietnam-war--paris-peace-accords--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "vietnam-war--sino-vietnamese-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -4933,6 +4951,15 @@
         }
       ]
     },
+    "world-war-ii--georgian-uprising-on-texel--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "world-war-ii--greco-italian-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -5029,6 +5056,15 @@
         {
           "first": true,
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "wuchang-uprising--xinhai-revolution--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

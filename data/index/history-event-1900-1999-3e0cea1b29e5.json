@@ -7444,6 +7444,15 @@
         }
       ]
     },
+    "georgian-uprising-on-texel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "german-polish-declaration-of-non-aggression": {
       "from": "git",
       "versions": [
@@ -9900,6 +9909,15 @@
         }
       ]
     },
+    "paris-peace-accords": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "paris-peace-conference": {
       "from": "git",
       "versions": [
@@ -12044,6 +12062,15 @@
         }
       ]
     },
+    "tambov-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "the-1930-revolution-and-the-vargas-era": {
       "from": "git",
       "versions": [
@@ -13308,6 +13335,15 @@
             "review"
           ],
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "wuchang-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
