@@ -728,6 +728,12 @@
     },
     {
       "dissent": false,
+      "id": "2011-egyptian-revolution",
+      "kind": "event",
+      "locator": "Q29198"
+    },
+    {
+      "dissent": false,
       "id": "2011-portuguese-legislative-election",
       "kind": "event",
       "locator": null
@@ -737,6 +743,12 @@
       "id": "2011-portuguese-socialist-party-leadership-election",
       "kind": "event",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2011-south-sudanese-independence-referendum",
+      "kind": "event",
+      "locator": "Q207950"
     },
     {
       "dissent": false,
@@ -794,6 +806,18 @@
     },
     {
       "dissent": false,
+      "id": "anglo-irish-treaty",
+      "kind": "event",
+      "locator": "Q541191"
+    },
+    {
+      "dissent": false,
+      "id": "angolan-civil-war",
+      "kind": "event",
+      "locator": "Q12055176"
+    },
+    {
+      "dissent": false,
       "id": "anti-comintern-pact",
       "kind": "event",
       "locator": "Q152195"
@@ -842,6 +866,12 @@
     },
     {
       "dissent": false,
+      "id": "berlin-conference",
+      "kind": "event",
+      "locator": "Q13582"
+    },
+    {
+      "dissent": false,
       "id": "boxer-rebellion",
       "kind": "event",
       "locator": "Q150229"
@@ -851,6 +881,12 @@
       "id": "brazilian-military-dictatorship-1964-1985",
       "kind": "event",
       "locator": "Q1370527"
+    },
+    {
+      "dissent": false,
+      "id": "breakup-of-yugoslavia",
+      "kind": "event",
+      "locator": "Q4390259"
     },
     {
       "dissent": false,
@@ -917,6 +953,12 @@
       "id": "cuban-revolution",
       "kind": "event",
       "locator": "Q11264"
+    },
+    {
+      "dissent": false,
+      "id": "dissolution-of-the-soviet-union",
+      "kind": "event",
+      "locator": "Q5167679"
     },
     {
       "dissent": false,
@@ -1256,6 +1298,12 @@
     },
     {
       "dissent": false,
+      "id": "partition-of-india",
+      "kind": "event",
+      "locator": "Q129053"
+    },
+    {
+      "dissent": false,
       "id": "philippine-american-war",
       "kind": "event",
       "locator": "Q214456"
@@ -1295,6 +1343,12 @@
       "id": "potsdam-conference",
       "kind": "event",
       "locator": "Q151187"
+    },
+    {
+      "dissent": false,
+      "id": "revolutions-of-1989",
+      "kind": "event",
+      "locator": "Q382861"
     },
     {
       "dissent": false,
@@ -1364,6 +1418,18 @@
     },
     {
       "dissent": false,
+      "id": "second-intifada",
+      "kind": "event",
+      "locator": "Q49106"
+    },
+    {
+      "dissent": false,
+      "id": "second-italo-ethiopian-war",
+      "kind": "event",
+      "locator": "Q94916"
+    },
+    {
+      "dissent": false,
       "id": "second-sino-japanese-war",
       "kind": "event",
       "locator": "Q170314"
@@ -1391,6 +1457,12 @@
       "id": "the-holocaust",
       "kind": "event",
       "locator": "Q2763"
+    },
+    {
+      "dissent": false,
+      "id": "the-troubles",
+      "kind": "event",
+      "locator": "Q815436"
     },
     {
       "dissent": false,
@@ -1535,6 +1607,12 @@
       "id": "war-in-afghanistan-2001-2021",
       "kind": "event",
       "locator": "Q182865"
+    },
+    {
+      "dissent": false,
+      "id": "war-in-bosnia-and-herzegovina",
+      "kind": "event",
+      "locator": "Q181533"
     },
     {
       "dissent": false,

@@ -314,6 +314,36 @@
     },
     {
       "dissent": false,
+      "id": "anglo-irish-treaty--irish-civil-war--caused",
+      "kind": "edge",
+      "locator": "\"Anglo-Irish Treaty\", revision 1363486671, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-irish-treaty--irish-civil-war--caused",
+      "kind": "edge",
+      "locator": "\"Irish Civil War\", revision 1374338052, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-irish-treaty--the-troubles--precondition-of",
+      "kind": "edge",
+      "locator": "\"Anglo-Irish Treaty\", revision 1363486671, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-irish-treaty--the-troubles--precondition-of",
+      "kind": "edge",
+      "locator": "\"The Troubles\", revision 1375596184, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "angola-independence-1975--angolan-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Angolan Civil War\", revision 1371337338, § lead"
+    },
+    {
+      "dissent": false,
       "id": "anti-comintern-pact--tripartite-pact--precondition-of",
       "kind": "edge",
       "locator": "\"Tripartite Pact\", revision 1375181328, § Background"
@@ -527,6 +557,12 @@
       "id": "cuban-war-of-independence-1895-1898--spanish-american-war-1898--caused",
       "kind": "edge",
       "locator": "\"Spanish–American War\", revision 1374740923"
+    },
+    {
+      "dissent": false,
+      "id": "dissolution-of-the-soviet-union--russo-ukrainian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Russo-Ukrainian war\", revision 1375351069, § Background"
     },
     {
       "dissent": false,
@@ -1340,6 +1376,18 @@
     },
     {
       "dissent": false,
+      "id": "partition-of-india--kashmir-conflict--caused",
+      "kind": "edge",
+      "locator": "\"Kashmir conflict\", revision 1374133428, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "partition-of-india--kashmir-conflict--caused",
+      "kind": "edge",
+      "locator": "\"Partition of India\", revision 1374133022, § lead"
+    },
+    {
+      "dissent": false,
       "id": "petrobras-1953--operation-car-wash-2014--precondition-of",
       "kind": "edge",
       "locator": "\"Operation Car Wash\", revision 1371266803"
@@ -1481,6 +1529,24 @@
       "id": "republic-proclaimed-1910--first-portuguese-republic-1910-1926--caused",
       "kind": "edge",
       "locator": "\"First Portuguese Republic\", revision 1370244290, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "revolutions-of-1989--dissolution-of-the-soviet-union--caused",
+      "kind": "edge",
+      "locator": "\"Revolutions of 1989\", revision 1375849372, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "revolutions-of-1989--maastricht-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"Maastricht Treaty\", revision 1360900516, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "revolutions-of-1989--maastricht-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"Revolutions of 1989\", revision 1375849372, § lead"
     },
     {
       "dissent": false,
@@ -2555,6 +2621,12 @@
       "id": "world-war-ii--azores-agreement-1943--precondition-of",
       "kind": "edge",
       "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--breakup-of-yugoslavia--precondition-of",
+      "kind": "edge",
+      "locator": "\"Breakup of Yugoslavia\", revision 1373988162, § Background"
     },
     {
       "dissent": false,

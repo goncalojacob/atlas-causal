@@ -750,6 +750,15 @@
         }
       ]
     },
+    "2011-egyptian-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "2011-madeiran-regional-election": {
       "from": "git",
       "versions": [
@@ -887,6 +896,15 @@
             "category"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "2011-south-sudanese-independence-referendum": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3995,6 +4013,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "second-intifada": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

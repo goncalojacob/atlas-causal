@@ -686,6 +686,33 @@
         }
       ]
     },
+    "anglo-irish-treaty--irish-civil-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "anglo-irish-treaty--the-troubles--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "angola-independence-1975--angolan-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "angola-independence-1975--cplp-founding-1996--precondition-of": {
       "from": "git",
       "versions": [
@@ -1606,6 +1633,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "dissolution-of-the-soviet-union--russo-ukrainian-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -2759,6 +2795,15 @@
         }
       ]
     },
+    "partition-of-india--kashmir-conflict--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "petrobras-1953--operation-car-wash-2014--precondition-of": {
       "from": "git",
       "versions": [
@@ -3020,6 +3065,24 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "revolutions-of-1989--dissolution-of-the-soviet-union--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "revolutions-of-1989--maastricht-treaty--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3752,6 +3815,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "world-war-ii--breakup-of-yugoslavia--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

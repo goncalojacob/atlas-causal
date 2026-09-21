@@ -234,6 +234,15 @@
         }
       ]
     },
+    "berlin-conference": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "boer-wars": {
       "from": "git",
       "versions": [
