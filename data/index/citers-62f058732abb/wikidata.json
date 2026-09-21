@@ -626,6 +626,12 @@
     },
     {
       "dissent": false,
+      "id": "1982-lebanon-war",
+      "kind": "event",
+      "locator": "Q49103"
+    },
+    {
+      "dissent": false,
       "id": "1983-portuguese-legislative-election",
       "kind": "event",
       "locator": null
@@ -872,6 +878,12 @@
     },
     {
       "dissent": false,
+      "id": "continuation-war",
+      "kind": "event",
+      "locator": "Q122100"
+    },
+    {
+      "dissent": false,
       "id": "convention-relating-to-the-status-of-refugees",
       "kind": "event",
       "locator": "Q60433"
@@ -1028,6 +1040,12 @@
     },
     {
       "dissent": false,
+      "id": "greco-turkish-war-of-1897",
+      "kind": "event",
+      "locator": "Q657055"
+    },
+    {
+      "dissent": false,
       "id": "greek-civil-war",
       "kind": "event",
       "locator": "Q188972"
@@ -1094,6 +1112,18 @@
     },
     {
       "dissent": false,
+      "id": "kargil-war",
+      "kind": "event",
+      "locator": "Q404517"
+    },
+    {
+      "dissent": false,
+      "id": "kashmir-conflict",
+      "kind": "event",
+      "locator": "Q1413732"
+    },
+    {
+      "dissent": false,
       "id": "katyn-massacre",
       "kind": "event",
       "locator": "Q134301"
@@ -1109,6 +1139,18 @@
       "id": "korean-war",
       "kind": "event",
       "locator": "Q8663"
+    },
+    {
+      "dissent": false,
+      "id": "kronstadt-rebellion",
+      "kind": "event",
+      "locator": "Q208300"
+    },
+    {
+      "dissent": false,
+      "id": "lapland-war",
+      "kind": "event",
+      "locator": "Q154940"
     },
     {
       "dissent": false,
@@ -1154,6 +1196,12 @@
     },
     {
       "dissent": false,
+      "id": "montreux-convention",
+      "kind": "event",
+      "locator": "Q869500"
+    },
+    {
+      "dissent": false,
       "id": "mueda-massacre",
       "kind": "event",
       "locator": null
@@ -1190,9 +1238,21 @@
     },
     {
       "dissent": false,
+      "id": "philippine-revolution",
+      "kind": "event",
+      "locator": "Q422082"
+    },
+    {
+      "dissent": false,
       "id": "polish-soviet-war",
       "kind": "event",
       "locator": "Q186284"
+    },
+    {
+      "dissent": false,
+      "id": "porajmos",
+      "kind": "event",
+      "locator": "Q117571"
     },
     {
       "dissent": false,
@@ -1211,6 +1271,18 @@
       "id": "potsdam-conference",
       "kind": "event",
       "locator": "Q151187"
+    },
+    {
+      "dissent": false,
+      "id": "rome-statute-of-the-international-criminal-court",
+      "kind": "event",
+      "locator": "Q838958"
+    },
+    {
+      "dissent": false,
+      "id": "rose-revolution",
+      "kind": "event",
+      "locator": "Q219470"
     },
     {
       "dissent": false,
@@ -1274,6 +1346,12 @@
     },
     {
       "dissent": false,
+      "id": "sino-indian-war",
+      "kind": "event",
+      "locator": "Q208694"
+    },
+    {
+      "dissent": false,
       "id": "soviet-afghan-war",
       "kind": "event",
       "locator": "Q83085"
@@ -1331,6 +1409,12 @@
       "id": "treaty-of-paris",
       "kind": "event",
       "locator": "Q724496"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-paris-1898",
+      "kind": "event",
+      "locator": "Q847137"
     },
     {
       "dissent": false,
@@ -1409,6 +1493,12 @@
       "id": "wall-street-crash-of-1929",
       "kind": "event",
       "locator": "Q201684"
+    },
+    {
+      "dissent": false,
+      "id": "warsaw-ghetto-uprising",
+      "kind": "event",
+      "locator": "Q160161"
     },
     {
       "dissent": false,

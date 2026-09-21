@@ -252,6 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
+| **after M42** | 36 of 36 | 306 of 325 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -293,6 +294,18 @@ at all, and **the fifty that name nobody are down to four**: `20-july-plot` and
 `covid-19-pandemic-in-europe`, which is part of the pandemic and so not a main
 event at all, and `tripartite-pact`, which carries a place and no actor. The
 two rules still give the same number, 306.
+
+**The "after M42" row is the count with the world put back into it, and it is
+rewritten as each of that milestone's batches lands.** M42 adds active events
+and does not add actor lines: everything it reinstates or imports is a
+Wikidata record carrying `actors: []`, which is what `docs/m67-umbrellas.md`
+§2.1 and M67's amendment A1 already settled — **an event with no actor and no
+place is not a defect**, and inventing a line to make one filable is the thing
+that document forbids. So the numerator stands where M67 left it and the
+denominator grows: 306 of 325 after batch 0, against 306 of 310 before. The
+gap is not a regression in what M67 did; it is the new records arriving in the
+state every imported record arrives in, and `review.html` is where a person
+gives them their lines.
 
 ### 4.2 Where the entries came from
 

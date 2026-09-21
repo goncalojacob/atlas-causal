@@ -455,7 +455,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "1948-arab-israeli-war",
       "kind": "event",
       "origin": {
@@ -1234,6 +1234,36 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 2,
+      "id": "1982-lebanon-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "lebanese-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "1982 Lebanon War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -1712,7 +1742,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "2006-lebanon-war",
       "kind": "event",
       "origin": {
@@ -3289,6 +3319,36 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 2,
+      "id": "continuation-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Continuation War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -4420,7 +4480,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "first-balkan-war",
       "kind": "event",
       "names": [
@@ -4688,7 +4748,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "genocide-convention",
       "kind": "event",
       "origin": {
@@ -4914,6 +4974,35 @@
       "revised": "2026-09-17",
       "status": "active",
       "title": "Great Depression"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "greco-turkish-war-of-1897",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Greco-Turkish War of 1897"
     },
     {
       "authors": [
@@ -5400,7 +5489,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 3,
       "id": "indo-pakistani-war-of-1965",
       "kind": "event",
       "origin": {
@@ -5589,6 +5678,66 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "kargil-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "kashmir-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Kargil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "degree": 2,
+      "id": "kashmir-conflict",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Kashmir conflict"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -5690,6 +5839,65 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "kronstadt-rebellion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russian-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Kronstadt rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "lapland-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Lapland War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5731,7 +5939,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 3,
       "id": "lebanese-civil-war",
       "kind": "event",
       "origin": {
@@ -6379,6 +6587,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "montreux-convention",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Montreux Convention"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -6730,7 +6966,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "orange-revolution",
       "kind": "event",
       "origin": {
@@ -6859,6 +7095,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 2,
       "id": "philippine-american-war",
       "kind": "event",
       "origin": {
@@ -6874,6 +7111,35 @@
       "revised": "2026-09-20",
       "status": "active",
       "title": "Philippine–American War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "philippine-revolution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Philippine Revolution"
     },
     {
       "authors": [
@@ -6968,6 +7234,34 @@
       "revised": "2026-09-20",
       "status": "active",
       "title": "Polish–Soviet War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "porajmos",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Porajmos"
     },
     {
       "authors": [
@@ -7273,6 +7567,63 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "rome-statute-of-the-international-criminal-court",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Rome Statute of the International Criminal Court"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "rose-revolution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Rose Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -7317,7 +7668,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "russian-civil-war",
       "kind": "event",
       "origin": {
@@ -7845,6 +8196,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "sino-indian-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Sino-Indian War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -7972,7 +8352,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 3,
+      "degree": 4,
       "id": "spanish-american-war-1898",
       "kind": "event",
       "names": [
@@ -8700,7 +9080,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 4,
       "id": "the-holocaust",
       "kind": "event",
       "origin": {
@@ -8967,7 +9347,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "treaty-of-lausanne",
       "kind": "event",
       "origin": {
@@ -9082,6 +9462,35 @@
       "revised": "2026-09-20",
       "status": "active",
       "title": "Treaty of Paris"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 2,
+      "id": "treaty-of-paris-1898",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-war-1898",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Treaty of Paris (1898)"
     },
     {
       "authors": [
@@ -9703,6 +10112,35 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "warsaw-ghetto-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Warsaw Ghetto Uprising"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -9751,7 +10189,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "winter-war",
       "kind": "event",
       "names": [
@@ -10063,12 +10501,6 @@
     },
     {
       "id": "iran-iraq-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "philippine-american-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

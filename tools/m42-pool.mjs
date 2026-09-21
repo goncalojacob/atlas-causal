@@ -9,6 +9,7 @@
 //   node tools/m42-pool.mjs --at <rev>
 import { readdirSync, readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { pathToFileURL } from 'node:url';
 
 const root = new URL('..', import.meta.url).pathname;
 
@@ -168,6 +169,11 @@ export function measure(events, edges) {
   };
 }
 
+// Only when run, never when imported: a test or a script that wants
+// `measure()` or `components()` must not have the tables printed at it.
+const invoked = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (invoked) {
+
 const at = process.argv.indexOf('--at');
 const rev = at >= 0 ? process.argv[at + 1] : null;
 const load = rev ? (d) => fromRev(rev, d) : fromDisk;
@@ -188,4 +194,5 @@ components of the causal graph: ${out.components}
   active events with no edge at all: ${out.noEdge}
 Portuguese ${out.portuguese}, world ${out.world}
   hops to a Portuguese event: ${Object.entries(out.reach).map(([k, v]) => `${k}: ${v}`).join(', ')}`);
+}
 }

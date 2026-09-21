@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "winter-war--continuation-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Continuation War\", revision 1375847616, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Continuation War\", revision 1375847616, § Winter War"
+    }
+  ],
+  "from": "winter-war",
+  "to": "continuation-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article says that numerous reasons have been proposed for the Finnish decision to go to war again in June 1941, and that regaining the territory lost in the Winter War is regarded as the most common of them. It adds that after the Moscow Peace Treaty Finnish public opinion favoured the reconquest of the ceded territory, that the government made national defence its first priority and raised military spending to nearly half of public spending, and that by September 1941 Finland had regained its post-Winter-War concessions in Karelia. The confidence is `probable` because the article itself says the reasons are several and disputed, not one.",
+  "dispute": null
+}

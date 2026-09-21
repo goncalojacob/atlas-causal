@@ -301,6 +301,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "1948-arab-israeli-war",
+      "id": "1948-arab-israeli-war--lebanese-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "lebanese-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-15",
       "from": "1948-arab-israeli-war",
       "id": "1948-arab-israeli-war--yom-kippur-war--precondition-of",
@@ -904,6 +932,34 @@
       "status": "active",
       "to": "constitutional-revision-1982",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "1982-lebanon-war",
+      "id": "1982-lebanon-war--2006-lebanon-war--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2006-lebanon-war",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -3130,6 +3186,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "continuation-war",
+      "id": "continuation-war--lapland-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "lapland-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "pgr-2023-operation-influencer",
         "cne-legislative-2024"
       ],
@@ -4434,6 +4518,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "genocide-convention",
+      "id": "genocide-convention--rome-statute-of-the-international-criminal-court--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "rome-statute-of-the-international-criminal-court",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "costa-pinto-teixeira-2019-political-institutions",
         "imf-2016-portugal-ex-post-evaluation"
       ],
@@ -4698,6 +4810,34 @@
       "status": "active",
       "to": "salazar-president-of-council-1932",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "greco-turkish-war-of-1897",
+      "id": "greco-turkish-war-of-1897--first-balkan-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-balkan-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -5352,6 +5492,62 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "kashmir-conflict",
+      "id": "kashmir-conflict--indo-pakistani-war-of-1965--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "indo-pakistani-war-of-1965",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "kashmir-conflict",
+      "id": "kashmir-conflict--kargil-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "kargil-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "katyn-massacre",
       "id": "katyn-massacre--warsaw-uprising--precondition-of",
@@ -5482,6 +5678,34 @@
       "status": "active",
       "to": "coup-28-may-1926",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "lebanese-civil-war",
+      "id": "lebanese-civil-war--1982-lebanon-war--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1982-lebanon-war",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -6693,6 +6917,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "philippine-revolution",
+      "id": "philippine-revolution--philippine-american-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "philippine-american-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wheeler-1978-republican-portugal",
         "meneses-2004-portugal-1914-1926"
       ],
@@ -7234,6 +7486,62 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "rose-revolution",
+      "id": "rose-revolution--orange-revolution--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "orange-revolution",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "russian-civil-war",
+      "id": "russian-civil-war--kronstadt-rebellion--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "kronstadt-rebellion",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-15",
       "from": "russian-revolution-of-1905",
       "id": "russian-revolution-of-1905--constitutionalization-attempts-in-iran--inspired",
@@ -7681,6 +7989,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "sino-indian-war",
+      "id": "sino-indian-war--indo-pakistani-war-of-1965--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "indo-pakistani-war-of-1965",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "slave-trade-act-1807",
       "id": "slave-trade-act-1807--aberdeen-act-1845--precondition-of",
@@ -7756,6 +8092,34 @@
       "revised": null,
       "status": "active",
       "to": "platt-amendment-1901",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "spanish-american-war-1898",
+      "id": "spanish-american-war-1898--treaty-of-paris-1898--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-paris-1898",
       "type": "caused"
     },
     {
@@ -9150,6 +9514,62 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "the-holocaust",
+      "id": "the-holocaust--porajmos--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "porajmos",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "the-holocaust",
+      "id": "the-holocaust--warsaw-ghetto-uprising--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "warsaw-ghetto-uprising",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-18",
       "from": "the-impeachment-of-dilma-rousseff-2016",
       "id": "the-impeachment-of-dilma-rousseff-2016--the-2018-brazilian-general-election--precondition-of",
@@ -9323,6 +9743,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "treaty-of-lausanne",
+      "id": "treaty-of-lausanne--montreux-convention--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "montreux-convention",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "burgwyn-1997-italian-foreign-policy"
       ],
@@ -9374,6 +9822,34 @@
       "status": "active",
       "to": "treaty-of-rome",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "treaty-of-paris-1898",
+      "id": "treaty-of-paris-1898--philippine-american-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "philippine-american-war",
+      "type": "caused"
     },
     {
       "authors": [
@@ -9761,6 +10237,34 @@
       "revised": null,
       "status": "active",
       "to": "great-depression",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "winter-war",
+      "id": "winter-war--continuation-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "continuation-war",
       "type": "caused"
     },
     {

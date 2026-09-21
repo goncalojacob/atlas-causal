@@ -155,6 +155,15 @@
         }
       ]
     },
+    "1948-arab-israeli-war--lebanese-civil-war--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "1948-arab-israeli-war--yom-kippur-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -419,6 +428,15 @@
             "review"
           ],
           "on": "2026-09-04"
+        }
+      ]
+    },
+    "1982-lebanon-war--2006-lebanon-war--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -1400,6 +1418,15 @@
         }
       ]
     },
+    "continuation-war--lapland-war--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "coup-28-may-1926--1928-portuguese-presidential-election--caused": {
       "from": "git",
       "versions": [
@@ -1838,6 +1865,15 @@
         }
       ]
     },
+    "genocide-convention--rome-statute-of-the-international-criminal-court--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "german-revolution-of-1918-1919--treaty-of-versailles--precondition-of": {
       "from": "git",
       "versions": [
@@ -2146,6 +2182,24 @@
         }
       ]
     },
+    "kashmir-conflict--indo-pakistani-war-of-1965--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "kashmir-conflict--kargil-war--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "katyn-massacre--warsaw-uprising--precondition-of": {
       "from": "git",
       "versions": [
@@ -2202,6 +2256,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "lebanese-civil-war--1982-lebanon-war--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -2825,6 +2888,15 @@
         }
       ]
     },
+    "russian-civil-war--kronstadt-rebellion--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "russian-revolution-of-1905--constitutionalization-attempts-in-iran--inspired": {
       "from": "git",
       "versions": [
@@ -3003,6 +3075,15 @@
         }
       ]
     },
+    "sino-indian-war--indo-pakistani-war-of-1965--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "spanish-civil-war--iberian-pact--caused": {
       "from": "git",
       "versions": [
@@ -3141,6 +3222,24 @@
         }
       ]
     },
+    "the-holocaust--porajmos--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "the-holocaust--warsaw-ghetto-uprising--reacted-to": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "treaty-of-accession-1985--eec-accession-1986--precondition-of": {
       "from": "git",
       "versions": [
@@ -3170,6 +3269,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-lausanne--montreux-convention--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3324,6 +3432,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "winter-war--continuation-war--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

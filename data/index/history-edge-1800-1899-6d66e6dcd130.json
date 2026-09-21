@@ -45,6 +45,15 @@
         }
       ]
     },
+    "greco-turkish-war-of-1897--first-balkan-war--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "independence-of-brazil-1822--aberdeen-act-1845--precondition-of": {
       "from": "git",
       "versions": [
@@ -60,6 +69,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "philippine-revolution--philippine-american-war--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -121,6 +139,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "spanish-american-war-1898--treaty-of-paris-1898--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -215,6 +242,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "treaty-of-paris-1898--philippine-american-war--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "kashmir-conflict--kargil-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kashmir conflict\", revision 1374133428, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kargil War\", revision 1374037705, § lead"
+    }
+  ],
+  "from": "kashmir-conflict",
+  "to": "kargil-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the conflict lists Kargil among its wars: in 1999 armed conflict between the two countries broke out again in Kargil, with no effect on the status quo. The article on the war says it was triggered by the infiltration of Pakistani troops, disguised as Kashmiri militants, into positions on the Indian side of the Line of Control, which is the de facto border in the disputed region of Kashmir. The war is the conflict continued by other means and the article treats it as such.",
+  "dispute": null
+}

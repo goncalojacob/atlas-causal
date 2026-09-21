@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1982-lebanon-war--2006-lebanon-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1982 Lebanon War\", revision 1370279817, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lebanese Civil War\", revision 1375063016, § Shia Muslims"
+    }
+  ],
+  "from": "1982-lebanon-war",
+  "to": "2006-lebanon-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The party on one side of the 2006 war did not exist before the invasion of 1982. The English article on the 1982 war says that the Israeli occupation that followed it \"saw the emergence of Hezbollah, an Iranian-backed Shia Islamist group\", which waged a guerrilla war against that occupation until the final Israeli withdrawal in 2000; the article on the civil war says the same, that a radical turnover followed the invasion with the establishment of Hezbollah, whose stated object was to end the occupation. The 2006 war was fought between Hezbollah and Israel, and the article calls it the third Israeli invasion of Lebanon since 1978.",
+  "dispute": null
+}

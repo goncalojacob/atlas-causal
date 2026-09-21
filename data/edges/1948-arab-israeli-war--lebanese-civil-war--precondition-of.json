@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1948-arab-israeli-war--lebanese-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1982 Lebanon War\", revision 1370279817, § PLO's objectives"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lebanese Civil War\", revision 1375063016, § Background"
+    }
+  ],
+  "from": "1948-arab-israeli-war",
+  "to": "lebanese-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Palestinian refugee population in Lebanon is what the war of 1948 put there, and it is the standing term in every account of how the civil war began: by 1975 it numbered more than 300,000, and the PLO had made of southern Lebanon an unofficial state within a state, which the English article says then played an important role in the civil war. This is a precondition and not a cause. The confessional settlement of 1943, the Cairo agreement of 1969 and the arrival of the PLO leadership from Jordan after 1970 are each part of the same account, and none of them is a record here; what is claimed is that without the population the 1948 war displaced there is no Lebanese civil war of the shape that happened.",
+  "dispute": null
+}

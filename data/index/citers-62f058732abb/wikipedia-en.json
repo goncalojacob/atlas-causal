@@ -116,6 +116,18 @@
     },
     {
       "dissent": false,
+      "id": "1948-arab-israeli-war--lebanese-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"1982 Lebanon War\", revision 1370279817, § PLO's objectives"
+    },
+    {
+      "dissent": false,
+      "id": "1948-arab-israeli-war--lebanese-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Lebanese Civil War\", revision 1375063016, § Background"
+    },
+    {
+      "dissent": false,
       "id": "1948-arab-israeli-war--yom-kippur-war--precondition-of",
       "kind": "edge",
       "locator": "\"1948 Arab–Israeli War\", revision 1374830770"
@@ -209,6 +221,18 @@
       "id": "1973-chilean-coup-d-etat--25-november-1975--inspired",
       "kind": "edge",
       "locator": "\"1973 Chilean coup d'état\", revision 1372926646"
+    },
+    {
+      "dissent": false,
+      "id": "1982-lebanon-war--2006-lebanon-war--enabled",
+      "kind": "edge",
+      "locator": "\"1982 Lebanon War\", revision 1370279817, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "1982-lebanon-war--2006-lebanon-war--enabled",
+      "kind": "edge",
+      "locator": "\"Lebanese Civil War\", revision 1375063016, § Shia Muslims"
     },
     {
       "dissent": false,
@@ -389,6 +413,18 @@
       "id": "constitutionalization-attempts-in-iran--iranian-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"Iranian Revolution\", revision 1373278840"
+    },
+    {
+      "dissent": false,
+      "id": "continuation-war--lapland-war--caused",
+      "kind": "edge",
+      "locator": "\"Lapland War\", revision 1370626600, § Prelude"
+    },
+    {
+      "dissent": false,
+      "id": "continuation-war--lapland-war--caused",
+      "kind": "edge",
+      "locator": "\"Lapland War\", revision 1370626600, § lead"
     },
     {
       "dissent": false,
@@ -674,6 +710,18 @@
     },
     {
       "dissent": false,
+      "id": "genocide-convention--rome-statute-of-the-international-criminal-court--precondition-of",
+      "kind": "edge",
+      "locator": "\"Genocide Convention\", revision 1371861623, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "genocide-convention--rome-statute-of-the-international-criminal-court--precondition-of",
+      "kind": "edge",
+      "locator": "\"Rome Statute\", revision 1363920501, § Background"
+    },
+    {
+      "dissent": false,
       "id": "german-revolution-of-1918-1919--treaty-of-versailles--precondition-of",
       "kind": "edge",
       "locator": "\"German revolution of 1918–1919\", revision 1373097617"
@@ -707,6 +755,12 @@
       "id": "great-depression--salazar-president-of-council-1932--enabled",
       "kind": "edge",
       "locator": "\"Great Depression\", revision 1371653684"
+    },
+    {
+      "dissent": false,
+      "id": "greco-turkish-war-of-1897--first-balkan-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Greco-Turkish War (1897)\", revision 1374612994, § Aftermath"
     },
     {
       "dissent": false,
@@ -854,6 +908,30 @@
     },
     {
       "dissent": false,
+      "id": "kashmir-conflict--indo-pakistani-war-of-1965--caused",
+      "kind": "edge",
+      "locator": "\"India–Pakistan war of 1965\", revision 1371230624, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "kashmir-conflict--indo-pakistani-war-of-1965--caused",
+      "kind": "edge",
+      "locator": "\"Kashmir conflict\", revision 1374133428, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "kashmir-conflict--kargil-war--caused",
+      "kind": "edge",
+      "locator": "\"Kargil War\", revision 1374037705, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "kashmir-conflict--kargil-war--caused",
+      "kind": "edge",
+      "locator": "\"Kashmir conflict\", revision 1374133428, § lead"
+    },
+    {
+      "dissent": false,
       "id": "katyn-massacre--warsaw-uprising--precondition-of",
       "kind": "edge",
       "locator": "\"Katyn massacre\", revision 1368830884"
@@ -899,6 +977,18 @@
       "id": "korean-war--treaty-of-san-francisco--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of San Francisco\", revision 1374408216"
+    },
+    {
+      "dissent": false,
+      "id": "lebanese-civil-war--1982-lebanon-war--enabled",
+      "kind": "edge",
+      "locator": "\"1982 Lebanon War\", revision 1370279817, § PLO's objectives"
+    },
+    {
+      "dissent": false,
+      "id": "lebanese-civil-war--1982-lebanon-war--enabled",
+      "kind": "edge",
+      "locator": "\"Lebanese Civil War\", revision 1375063016, § 1982 Israeli invasion"
     },
     {
       "dissent": false,
@@ -1130,6 +1220,18 @@
     },
     {
       "dissent": false,
+      "id": "philippine-revolution--philippine-american-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Philippine Revolution\", revision 1375892184, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "philippine-revolution--philippine-american-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Philippine–American War\", revision 1372638665, § lead"
+    },
+    {
+      "dissent": false,
       "id": "platt-amendment-1901--cuban-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"Cuban Revolution\", revision 1373305240"
@@ -1223,6 +1325,24 @@
       "id": "profit-remittance-law-1962--the-base-reforms-rally-1964--precondition-of",
       "kind": "edge",
       "locator": "\"João Goulart\", revision 1366723860"
+    },
+    {
+      "dissent": false,
+      "id": "rose-revolution--orange-revolution--inspired",
+      "kind": "edge",
+      "locator": "\"Orange Revolution\", revision 1374383386, § U.S. involvement in the revolution"
+    },
+    {
+      "dissent": false,
+      "id": "rose-revolution--orange-revolution--inspired",
+      "kind": "edge",
+      "locator": "\"Rose Revolution\", revision 1375844898, § International effects"
+    },
+    {
+      "dissent": false,
+      "id": "russian-civil-war--kronstadt-rebellion--caused",
+      "kind": "edge",
+      "locator": "\"Kronstadt rebellion\", revision 1373564650, § Background"
     },
     {
       "dissent": false,
@@ -1340,6 +1460,12 @@
     },
     {
       "dissent": false,
+      "id": "sino-indian-war--indo-pakistani-war-of-1965--enabled",
+      "kind": "edge",
+      "locator": "\"India–Pakistan war of 1965\", revision 1371230624, § Background"
+    },
+    {
+      "dissent": false,
       "id": "slave-trade-act-1807--aberdeen-act-1845--precondition-of",
       "kind": "edge",
       "locator": "\"Aberdeen Act\", revision 1371318387"
@@ -1373,6 +1499,12 @@
       "id": "spanish-american-war-1898--platt-amendment-1901--caused",
       "kind": "edge",
       "locator": "\"Spanish–American War\", revision 1374740923"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-american-war-1898--treaty-of-paris-1898--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Paris (1898)\", revision 1375676698, § lead"
     },
     {
       "dissent": false,
@@ -1934,6 +2066,18 @@
     },
     {
       "dissent": false,
+      "id": "the-holocaust--porajmos--enabled",
+      "kind": "edge",
+      "locator": "\"Romani Holocaust\", revision 1374733157, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "the-holocaust--warsaw-ghetto-uprising--reacted-to",
+      "kind": "edge",
+      "locator": "\"Warsaw Ghetto Uprising\", revision 1373044103, § lead"
+    },
+    {
+      "dissent": false,
       "id": "the-impeachment-of-dilma-rousseff-2016--the-2018-brazilian-general-election--precondition-of",
       "kind": "edge",
       "locator": "\"2018 Brazilian general election\", revision 1361748195"
@@ -1982,6 +2126,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-lausanne--montreux-convention--precondition-of",
+      "kind": "edge",
+      "locator": "\"Montreux Convention Regarding the Regime of the Straits\", revision 1358705200, § Background"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-london--paris-peace-conference--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of London (1915)\", revision 1364595903"
@@ -1997,6 +2147,12 @@
       "id": "treaty-of-paris--treaty-of-rome--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of Rome\", revision 1311520265"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-paris-1898--philippine-american-war--caused",
+      "kind": "edge",
+      "locator": "\"Philippine–American War\", revision 1372638665, § lead"
     },
     {
       "dissent": false,
@@ -2111,6 +2267,18 @@
       "id": "wall-street-crash-of-1929--great-depression--caused",
       "kind": "edge",
       "locator": "\"Great Depression\", revision 1371653684"
+    },
+    {
+      "dissent": false,
+      "id": "winter-war--continuation-war--caused",
+      "kind": "edge",
+      "locator": "\"Continuation War\", revision 1375847616, § Winter War"
+    },
+    {
+      "dissent": false,
+      "id": "winter-war--continuation-war--caused",
+      "kind": "edge",
+      "locator": "\"Continuation War\", revision 1375847616, § lead"
     },
     {
       "dissent": false,
@@ -2855,6 +3023,12 @@
       "id": "iraq-war",
       "kind": "event",
       "locator": "\"Iraq War\", revision 1373215695"
+    },
+    {
+      "dissent": false,
+      "id": "kashmir-conflict",
+      "kind": "event",
+      "locator": "\"Kashmir conflict\", revision 1374133428, lead"
     },
     {
       "dissent": false,

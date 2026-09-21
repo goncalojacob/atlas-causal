@@ -91,6 +91,7 @@ A5: a batch that grows the corpus and not the component has to say why.
 | batch | what it was | active events | main | filed | active edges | largest component | isolated events |
 | --- | --- | --: | --: | --: | --: | --: | --: |
 | — | before M42 | 310 | 229 | 81 | 362 | 254 | 23 |
+| 0 | the fifteen M44b retracted that the new bar puts back, and 18 edges | 325 | 237 | 88 | 380 | **268** | 22 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -99,5 +100,11 @@ the cheapest fifty events this milestone will ever get. **Fifty** event
 records carry a `retraction.reason` naming M44b, and every one of those
 reasons names the edge that could not be written under the Portuguese bar —
 which is to say the corpus wrote down, fifty times, exactly what to do with
-them once the bar changed. That work is section 4 of `docs/m42-connections.md`
-and its counts land in the table above.
+them once the bar changed. That work is section 2 of `docs/m42-connections.md`
+and its counts are batch 0 in the table above: **fifteen came back**, on
+eighteen edges, and twenty more of the fifty are listed there against the
+record whose import would bring them back. The component moved because two of
+those edges ran into the old corpus rather than between new records —
+`philippine-american-war` had no edge at all and `lebanese-civil-war` and
+`2006-lebanon-war` were a component of two — which is A5's whole instruction
+tested on a batch that fetched nothing.

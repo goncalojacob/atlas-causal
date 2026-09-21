@@ -79,6 +79,120 @@ needs in §5 of `docs/m44-connections.md`.
 `nos`, `brisa-auto-estradas-de-portugal`, `semapa`, `altri`,
 `the-navigator-company`.
 
+### M42, the fifteen the new bar puts back
+
+M44b’s bar was that a record reach a Portuguese event within two hops, and
+`docs/m42-brief.md` §1 retires it with the Portuguese scope: **a record earns
+its place by carrying at least one honest edge to anything already in the
+atlas**. Fifteen of the fifty clear that bar today, every one of them on an
+edge its own retraction reason had already named and refused for reach alone.
+The other thirty-five are in `docs/m42-connections.md` §5, with what each is
+waiting for; a reason that still cites the retired rule is rewritten when the
+milestone decides that record, not before.
+
+Each reason is copied verbatim below, in the same commit that deleted the
+`retraction` block it came from, which is amendment A11’s procedure.
+
+#### `1982-lebanon-war`
+
+Reinstated on `lebanese-civil-war --enabled--> 1982-lebanon-war` and `1982-lebanon-war --enabled--> 2006-lebanon-war`, and the pair the 2006 war made with the civil war is joined to the rest of the atlas by `1948-arab-israeli-war --precondition-of--> lebanese-civil-war`. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A. The war of 1982 argues from the Lebanese civil war, which this atlas holds and which itself reaches no Portuguese event, and to the massacres and the occupation, which it does not hold. Nothing in the chain arrives anywhere Portuguese, and the 1948 war that the Israeli records here do connect through is thirty-four years and two wars away.
+
+#### `continuation-war`
+
+Reinstated on `winter-war --caused--> continuation-war`, which is the edge the reason itself names. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class B. Finland’s second war argues from the Winter war, which this round wired at two hops from a Portuguese event, and that leaves this one at three. The link that would shorten it is Barbarossa, and the atlas holds the Eastern front at two hops itself. Finland reaches this atlas through 1918 and 1939 and no further; the record is sound and one link too far out.
+
+#### `lapland-war`
+
+Reinstated on `continuation-war --caused--> lapland-war`. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class B, with the Continuation war it followed. Its only neighbours are that war and the Moscow armistice, the first retracted in this commit and the second not a record here, so it stands at four hops from anything Portuguese on the best route available.
+
+#### `greco-turkish-war-of-1897`
+
+Reinstated on `greco-turkish-war-of-1897 --precondition-of--> first-balkan-war`, which is the edge the reason calls honest and one link too long. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class B. The honest edge is to the First Balkan war — the defeat of 1897 is what produced the Greek army reform and, through the Goudi coup, the Venizelos who made the Balkan League — and the First Balkan war stands at two hops from the nearest Portuguese event, which leaves this one at three. The bar of this round is two. The record is good and the chain to it is one link too long; what would shorten it is a record of the Greek 1909, which the atlas does not hold.
+
+#### `kashmir-conflict`
+
+Reinstated on `kashmir-conflict --caused--> indo-pakistani-war-of-1965` and `kashmir-conflict --caused--> kargil-war`. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A. The conflict argues to the Indo-Pakistani wars, one of which is a record here and reaches no Portuguese event, and to the partition of India, which is not. The one place where India and Portugal meet in this atlas is Goa in 1961, and the claim that would join them — that Nehru’s success in Goa emboldened the forward policy on the Chinese border — is contested, and no source this atlas holds carries it. Rather than write a disputed edge from a source nobody here has read, the record is withdrawn.
+
+Its span was `1947–1947`, an end the import invented for a conflict its own article says began with the partition of 1947 and has not ended. The end is now `null` and the article is cited on the record for it; no day was supplied, because none was read.
+
+#### `kargil-war`
+
+Reinstated on `kashmir-conflict --caused--> kargil-war`. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A, with the Kashmir conflict it belongs to. Its only neighbour here would be the conflict record retracted in the same commit and the Indo-Pakistani war of 1965, which reaches no Portuguese event.
+
+#### `kronstadt-rebellion`
+
+Reinstated on `russian-civil-war --caused--> kronstadt-rebellion`. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class B. March 1921 argues to the October revolution and the Russian civil war, which are two and three hops from anything Portuguese, and forward to the New Economic Policy, which is not a record here. Every route is one link too long. The record that would fix it is the NEP, or any Portuguese event of the reception of Bolshevism — the atlas holds the PCP as an actor and no event of its founding.
+
+#### `montreux-convention`
+
+Reinstated on `treaty-of-lausanne --precondition-of--> montreux-convention`, which is the edge the reason calls honest. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class B. The honest edge is to the treaty of Lausanne, whose straits regime Montreux revised, and Lausanne reaches no Portuguese event at all; the Turkish cluster in this atlas — Sèvres, the war of independence, Lausanne — is joined to the rest of it only through the Sèvres edge this round wrote, which leaves Montreux at four hops. The straits question at Potsdam would be the other route and the atlas records nothing of it.
+
+#### `philippine-revolution`
+
+Reinstated on `philippine-revolution --precondition-of--> philippine-american-war`. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A: the neighbour is missing. The revolution belongs with the Spanish-American war and the treaty of Paris of 1898, and the war is not a record here. Its one possible bearing on Portugal — 1898 as the year in which a weak colonial empire was dismembered, while Britain and Germany secretly agreed how Portugal’s might be — runs through the Anglo-German convention of August 1898, which the atlas does not hold either. The treaty of Windsor of 1899 is here and is the Portuguese answer to that convention, but with the convention missing there is no honest edge between them.
+
+The reason says “the war is not a record here”. It is now: `spanish-american-war-1898` and `philippine-american-war` are both active, imported after M44b wrote that sentence, and `philippine-american-war` had no edge at all until this one.
+
+#### `treaty-of-paris-1898`
+
+Reinstated on `spanish-american-war-1898 --caused--> treaty-of-paris-1898` and `treaty-of-paris-1898 --caused--> philippine-american-war`. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A: the neighbour is missing, and it is the same missing neighbour as the Philippine revolution’s. The treaty settles a war this atlas does not hold. Its Portuguese bearing would run through the Anglo-German convention of August 1898 on the partition of the Portuguese colonies, which is what the treaty of Windsor of 1899 already here was the answer to; without the convention there is nothing between the two but a date. Naming that link without a source this atlas holds would be exactly the confident sentence the brief forbids.
+
+The same correction as the Philippine revolution’s: the war the treaty settles is a record now. The Anglo-German convention of August 1898 is still missing and the edge to the treaty of Windsor is still not written, exactly as the reason says.
+
+#### `porajmos`
+
+Reinstated on `the-holocaust --enabled--> porajmos`. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class B. The Romani genocide argues to the Holocaust, which this atlas holds and which reaches no Portuguese event within two hops even after the edge this round wrote from it to the genocide convention. There is nothing dishonest about the record and nothing to hang it on: what is missing is any Portuguese record of the war’s persecutions — Sousa Mendes and the visas of 1940 are not in this atlas — and until one is here the whole of the Nazi genocide sits outside the Portuguese reach the round requires.
+
+Left top-level rather than filed under the Holocaust: the article dates the persecution of Roma from 1933, alongside the Jewish persecution rather than inside it, and M62’s rule says an arguable filing is left flat and listed.
+
+#### `rome-statute-of-the-international-criminal-court`
+
+Reinstated on `genocide-convention --precondition-of--> rome-statute-of-the-international-criminal-court`, which is the neighbour the reason calls honest. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class B. The honest neighbour is the genocide convention, which this round wired at two hops, leaving the statute at three; the other candidates are the tribunals for Yugoslavia and Rwanda, which are not records here, and the Yugoslav wars, retracted in this same commit. An edge from the Charter of the United Nations would be available and would argue nothing, which is what class C below refuses.
+
+#### `rose-revolution`
+
+Reinstated on `rose-revolution --inspired--> orange-revolution`, which is the record the reason names. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class B. Georgia in 2003 argues forward to the Orange revolution of 2004, which this atlas holds and which reaches no Portuguese event at all. The colour revolutions are a cluster here with no way out of themselves; wiring a third record into them would have made the cluster larger and no less stranded.
+
+#### `sino-indian-war`
+
+Reinstated on `sino-indian-war --enabled--> indo-pakistani-war-of-1965` — not the Goa claim the reason refused, which stays refused. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A, with the Kashmir conflict and the Kargil war. The border war of 1962 has its Portuguese edge ten months behind it in the annexation of Goa, and the argument that links them is one about Indian military policy that this atlas holds no source for. It is not being written on a guess. What the atlas needs is a work on Indian foreign policy of the 1950s and 1960s in data/sources.
+
+The reason refused a claim about Goa and Indian military policy for want of a source, and that refusal stands: the edge written here is the one the article on the war of 1965 makes, that Pakistan believed India weak after its defeat by China.
+
+#### `warsaw-ghetto-uprising`
+
+Reinstated on `the-holocaust --reacted-to--> warsaw-ghetto-uprising`. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class B. April 1943 argues to the Holocaust, which it rose against, and to the Warsaw uprising of 1944, which it is not the same as; both are here and both are out of Portuguese reach. An edge to the Second World War would be true and would say nothing, which is the edge this round refuses to write. Retracted for reach, with the same missing Portuguese record as the Porajmos.
+
 ## The fifty retractions, by class
 
 Every reason is in the record's own `retraction` block. This is the index.

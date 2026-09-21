@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "treaty-of-paris-1898",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,28 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A: the neighbour is missing, and it is the same missing neighbour as the Philippine revolution’s. The treaty settles a war this atlas does not hold. Its Portuguese bearing would run through the Anglo-German convention of August 1898 on the partition of the Portuguese colonies, which is what the treaty of Windsor of 1899 already here was the answer to; without the convention there is nothing between the two but a date. Naming that link without a source this atlas holds would be exactly the confident sentence the brief forbids."
-  },
+  "revised": "2026-09-21",
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q847137",
-  "sitelinks": {
-    "count": 40,
-    "on": "2026-09-15"
-  },
   "wikipedia": {
     "en": "Treaty of Paris (1898)",
     "pt": "Tratado de Paris (1898)"
+  },
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -52,5 +49,6 @@
   "place": null,
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "spanish-american-war-1898",
   "actors": []
 }

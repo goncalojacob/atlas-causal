@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "lapland-war",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,28 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class B, with the Continuation war it followed. Its only neighbours are that war and the Moscow armistice, the first retracted in this commit and the second not a record here, so it stands at four hops from anything Portuguese on the best route available."
-  },
+  "revised": "2026-09-21",
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q154940",
-  "sitelinks": {
-    "count": 53,
-    "on": "2026-09-15"
-  },
   "wikipedia": {
     "en": "Lapland War",
     "pt": "Guerra da Lapônia"
+  },
+  "sitelinks": {
+    "count": 53,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -53,6 +50,7 @@
   "place": null,
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "world-war-ii",
   "category": "war",
   "actors": []
 }

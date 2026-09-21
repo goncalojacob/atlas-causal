@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
 import { readFile, readdir } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -25,7 +26,17 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DOC = 'docs/m62-umbrellas.md';
 const UMBRELLA_FLAG = 'm62-umbrella';
 
-const doc = await readFile(path.join(ROOT, DOC), 'utf8');
+// The filing arguments are not all in one file, and they never could be: M62
+// wrote the umbrellas, M67 the lines, M42 files what it imports as it imports
+// it, and each argues its own filings where it argues everything else. What
+// the correspondence below asserts is that **a filing nobody argued in writing
+// fails** — not that one document holds every argument, which would make the
+// measurement a ratchet no later milestone could add a child through.
+const ARGUED_IN = [DOC, 'docs/m67-umbrellas.md', 'docs/m42-connections.md'];
+const doc = (await Promise.all(ARGUED_IN.map(async (f) => {
+  const at = path.join(ROOT, f);
+  return existsSync(at) ? readFile(at, 'utf8') : '';
+}))).join('\n');
 
 const readDir = async (kind) => {
   const dir = path.join(ROOT, 'data', kind);

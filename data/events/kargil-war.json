@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "kargil-war",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,28 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A, with the Kashmir conflict it belongs to. Its only neighbour here would be the conflict record retracted in the same commit and the Indo-Pakistani war of 1965, which reaches no Portuguese event."
-  },
+  "revised": "2026-09-21",
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q404517",
-  "sitelinks": {
-    "count": 53,
-    "on": "2026-09-15"
-  },
   "wikipedia": {
     "en": "Kargil War",
     "pt": "Guerra de Cargil"
+  },
+  "sitelinks": {
+    "count": 53,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -52,6 +49,7 @@
   "place": null,
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "kashmir-conflict",
   "category": "war",
   "actors": []
 }

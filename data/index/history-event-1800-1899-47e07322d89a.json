@@ -395,6 +395,14 @@
             "status"
           ],
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -477,6 +485,14 @@
             "status"
           ],
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -698,6 +714,15 @@
             "status"
           ],
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "parent",
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
