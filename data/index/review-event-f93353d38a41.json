@@ -2784,13 +2784,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "revolutions-of-1989",
       "review": {
         "flags": [
           "imported-facts"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "title": "Afghan Civil War"
     },
@@ -7911,13 +7912,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "kashmir-conflict",
       "review": {
         "flags": [
           "imported-facts"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "title": "Indo-Pakistani War of 1947–1948"
     },
@@ -7944,6 +7946,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "kashmir-conflict",
       "review": {
         "flags": [
           "imported-facts",
@@ -7951,7 +7954,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-21",
       "status": "active",
       "title": "Indo-Pakistani War of 1965"
     },
@@ -12631,6 +12634,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "arab-israeli-conflict",
       "review": {
         "flags": [
           "imported-facts",
@@ -14958,13 +14962,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "arab-israeli-conflict",
       "review": {
         "flags": [
           "imported-facts"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "title": "War of Attrition"
     },
