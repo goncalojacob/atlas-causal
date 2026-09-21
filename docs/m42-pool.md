@@ -557,3 +557,201 @@ the hinge whose waiting tombstone is not the only thing it can reach.**
    Darfur's — and neither relates a Sudanese record to anything else this atlas
    holds, so the fragment grew to five and stayed a fragment. It waits on a
    page, not on a fetch.
+
+## Filing pass (A6)
+
+*21 September, by the scheduled run, before any further import. Amendment A6
+is the owner's, with a screenshot of the timeline at 474 active events:*
+**"the timeline has too many events. As it is right now it is useless. For it
+to be useful it should only show parent and main events and the title for the
+events. For example, sometimes historians call interwar period for the years
+between WW1 and WW2, you could only show that for Europe … and then when you
+click on it it can show you everything that happened during that time."**
+
+**The main count before the pass: 474 active events, 370 of them main.** By
+lane and century, which is the measurement A6 asks for:
+
+| century | europe | asia | africa | americas |
+| --- | --- | --- | --- | --- |
+| 15th | 1 | 0 | 0 | 4 |
+| 16th | 1 | 0 | 0 | 3 |
+| 17th | 1 | 0 | 0 | 6 |
+| 18th | 1 | 0 | 0 | 3 |
+| 19th | 8 | 6 | 6 | 11 |
+| **20th** | **135** | **52** | **30** | **31** |
+| 21st | 43 | 15 | 8 | 5 |
+| **all** | **190** | **73** | **44** | **63** |
+
+**After it: 477 active events, 267 main** — three umbrellas written, 106 main
+events filed under them, and no other record touched.
+
+| century | europe | asia | africa | americas |
+| --- | --- | --- | --- | --- |
+| 15th | 1 | 0 | 0 | 4 |
+| 16th | 1 | 0 | 0 | 3 |
+| 17th | 1 | 0 | 0 | 6 |
+| 18th | 1 | 0 | 0 | 3 |
+| 19th | 8 | 6 | **1** | 11 |
+| **20th** | **71** | 52 | 30 | 31 |
+| 21st | **9** | 15 | 8 | 5 |
+| **all** | **92** | **73** | **39** | **63** |
+
+Europe's twentieth century falls from 135 to 71 and its twenty-first from 43
+to 9, which is the part of the picture the owner was looking at. **Asia and
+the Americas are untouched and that is this pass's own unfinished half**;
+§"What the filing pass leaves" below says what each waits on. The target A6
+sets — main events in the low tens per century — is met for Europe after 1974
+and is not met anywhere else.
+
+**The largest connected component is unchanged at 433**, and it must be: a
+filing writes `parent` and `parent` is a display fact that takes no edge
+(`CLAUDE.md`). A5's number moves on a batch, not on a filing.
+
+### The three umbrellas, each on a span its source gives
+
+| id | item | span | lane | where it came from |
+| --- | --- | --- | --- | --- |
+| `interwar-period` | Q154611 | 1918-11-11 – 1939-09-11 | europe | the Wikidata import, walked here |
+| `scramble-for-africa` | Q179848 | 1885 – 1914 | africa | the Wikidata import, walked here |
+| `third-portuguese-republic-since-1974` | Q1259200 | since 1974-04-25 | europe | written here on M62's pattern |
+
+The first two are the import's own work: the items were added to
+`data/imports/wikidata-seeds.json` with a lane each, and `--import` walked
+them, so their spans, titles and summaries are Wikidata's and nothing in them
+was written here. One class was added to the seeds file for the pass, as
+batch 2a and batch 18 added theirs: **Q230533 *decolonization***, and it is
+not used yet — see the refusal below.
+
+**`third-portuguese-republic-since-1974` could not come from the import**, and
+the reason is worth writing down: Q1259200 is an *instance of republic*, so
+the class table reads it as the **actor** this atlas already holds
+(`third-portuguese-republic`), and an actor cannot be a parent. It is written
+here instead, exactly as M62 wrote `first-portuguese-republic-1910-1926` and
+`estado-novo-1933-1974`: `origin.tool: assistant`, `review.status: draft`,
+flagged `summary-drafted`, and **its span taken from the sources and not from
+memory** — the item's own description ("period in the history of Portugal
+since the Carnation Revolution on 25 April 1974") and the article's lead,
+both cited on the record with the revision each was read at. It is the third
+of the four Portuguese regime umbrellas and the one M62 did not write.
+
+**Both imported umbrellas name neither an actor nor a place**, which
+`tests/m67.test.mjs` asks to be accounted for and M67's amendment A1 already
+answered in general: a period has no single actor and no one place, and a line
+written to give it one would be a claim the source does not make. The import
+wrote none because the items give none.
+
+### What was filed, and under which
+
+**Under `interwar-period`, 28** — every main event of the europe lane whose
+years fall inside 1918–1939, less the four refused below. The rule is A6's:
+in the span and in the region. The peace settlement of the war that ends the
+day the period begins goes here and nowhere else, because this atlas dates
+`world-war-i` 1914–1918 and rule 4 would refuse an edge from a war to a
+treaty signed after it; the period is the honest home for Versailles, Sèvres,
+Trianon and Neuilly.
+
+`estonian-war-of-independence`, `paris-peace-conference`, `treaty-of-neuilly-sur-seine`, `treaty-of-versailles`, `kapp-putsch`, `svalbard-treaty`, `treaty-of-sevres`, `treaty-of-tartu`, `treaty-of-trianon`, `anglo-irish-treaty`, `peace-of-riga`, `irish-civil-war`, `march-on-rome`, `treaty-of-rapallo`, `beer-hall-putsch`, `population-exchange-between-greece-and-turkey`, `treaty-of-lausanne`, `locarno-treaties`, `coup-28-may-1926`, `kellogg-briand-pact`, `constitution-1933`, `baltic-entente`, `german-polish-declaration-of-non-aggression`, `anti-comintern-pact`, `spanish-civil-war`, `first-vienna-award`, `munich-agreement`, `slovak-hungarian-war`
+
+**Under `scramble-for-africa`, 6** — every main event of the africa lane
+inside 1885–1914, with nothing refused. The partition wars of southern and
+eastern Africa are what the article is about.
+
+`first-matabele-war`, `first-italo-ethiopian-war`, `jameson-raid`, `anglo-zanzibar-war`, `second-matabele-war`, `second-boer-war`
+
+**Under `third-portuguese-republic-since-1974`, 72** — the europe lane inside
+the span *and* inside the subject, which here is Portugal: the event's place
+is Portuguese, or its actors are the republic, its parties, its presidents
+and prime ministers, its banks and its utilities. Fifty years of elections,
+governments, referendums, bailouts, fires and crises.
+
+`spinola-resigns-1974`, `25-november-1975`, `alvor-agreement-1975`, `constituent-assembly-election-1975`, `coup-attempt-11-march-1975`, `nationalisations-1975`, `1976-azorean-regional-election`, `1976-madeira-regional-legislative-election`, `1976-portuguese-local-elections`, `constitution-1976`, `eanes-elected-1976`, `edp-created-1976`, `legislative-election-1976`, `eec-application-1977`, `treaty-of-friendship-and-cooperation-between-spain-and-portugal`, `imf-agreement-1978`, `1979-portuguese-legislative-election`, `1979-portuguese-local-elections`, `1980-portuguese-legislative-election`, `1980-portuguese-presidential-election`, `constitutional-revision-1982`, `1983-portuguese-legislative-election`, `imf-agreement-1983`, `1985-portuguese-legislative-election`, `treaty-of-accession-1985`, `eec-accession-1986`, `soares-elected-president-1986`, `1987-european-parliament-election-in-portugal`, `cavaco-absolute-majority-1987`, `1991-portuguese-legislative-election`, `1995-portuguese-legislative-election`, `schengen-in-force-1995`, `1996-portuguese-presidential-election`, `cplp-founding-1996`, `1998-portuguese-abortion-referendum`, `expo-98`, `portuguese-regionalisation-referendum-1998`, `euro-adoption-1999`, `2001-portuguese-local-elections`, `2002-portuguese-legislative-election`, `2005-portuguese-legislative-election`, `2006-portuguese-presidential-election`, `2007-portuguese-abortion-referendum`, `bpn-nationalisation-2008`, `2009-portuguese-legislative-election`, `crisis-portugal`, `2011-portuguese-legislative-election`, `2011-portuguese-socialist-party-leadership-election`, `2014-portuguese-socialist-party-prime-ministerial-primary`, `bes-resolution-2014`, `geringonca-2015`, `legislative-election-2015`, `marcelo-elected-president-2016`, `october-fires-2017`, `pedrogao-grande-fires-2017`, `legislative-election-2019`, `covid-state-of-emergency-2020`, `2022-portuguese-social-democratic-party-leadership-election`, `marcelo-reelected-2021`, `2022-portuguese-social-democratic-party-leadership-election-q111182017`, `legislative-election-2022`, `2023-madeiran-regional-election`, `costa-resigns-2023`, `world-youth-day-2023`, `2024-madeiran-regional-election`, `fiftieth-anniversary-25-april-2024`, `legislative-election-2024`, `montenegro-government-2024`, `2025-madeiran-regional-election`, `government-falls-2025`, `iberian-blackout-2025`, `legislative-election-2025`
+
+### What was refused, and why
+
+**Four candidates of the interwar period's own span.** Three are refused on
+the period's own start date, which is 11 November 1918 and not 1 January:
+
+- `armistice-of-mudros` — 30 October 1918, twelve days before the period
+  begins. It is an act of the war and not of what followed it.
+- `german-revolution-of-1918-1919` — begins 4 November 1918, a week before.
+  M67 already read Q170306's `part of` as the *revolutions of 1917–1923*, and
+  that is where it belongs when this atlas holds one.
+- `polish-ukrainian-war` — begins 1 November 1918, ten days before.
+- `ditadura-nacional-1926-1933` — **a period inside a period**, which A6
+  refuses: "do not nest periods more than one deep". It keeps its three
+  children and stays main, as `first-portuguese-republic-1910-1926`,
+  `estado-novo-1933-1974` and `the-holocaust` do; the last two also outlive
+  the span.
+
+**One act refused under the Third Republic**, on M67's judgement 1, which A6
+leaves standing: a period named for a form of government does not contain the
+act that created it. `carnation-revolution-1974` stays main, as
+`republic-proclaimed-1910` and `coup-28-may-1926` do for the republics they
+made and unmade.
+
+**Thirteen multilateral instruments in the lane and in the span, refused on
+M67's judgement 2**: the author is another state or a body of states, with
+Portugal one signatory among many. `maastricht-treaty`, `treaty-of-lisbon`,
+`treaty-of-nice`, `amsterdam-treaty`, `single-european-act`,
+`treaty-establishing-a-constitution-for-europe`, `schengen-agreement`,
+`good-friday-agreement`, `rome-statute-of-the-international-criminal-court`,
+`budapest-memorandum`, `treaty-on-the-final-settlement-with-respect-to-germany`,
+`vienna-convention-for-the-protection-of-the-ozone-layer` and `louvre-accord`.
+**Portugal's own acts on the same subjects are filed**, and the distinction is
+the whole of the judgement: `eec-application-1977`, `treaty-of-accession-1985`,
+`eec-accession-1986`, `schengen-in-force-1995`, `euro-adoption-1999`,
+`1987-european-parliament-election-in-portugal` and `cplp-founding-1996` are
+things the Portuguese republic did, not things done to it.
+
+**Seventeen European events of the span that are not Portugal's**:
+`revolutions-of-1989`, `romanian-revolution-1989`,
+`1991-soviet-coup-d-etat-attempt`, `belovezh-accords`,
+`dissolution-of-the-soviet-union`, `breakup-of-yugoslavia`,
+`croatian-war-of-independence`, `yugoslav-wars`, `kosovo-war`, `the-troubles`,
+`1993-russian-constitutional-crisis`, `orange-revolution`, `euromaidan`,
+`russo-ukrainian-war`, `wagner-group-rebellion`,
+`2001-insurgency-in-macedonia` and `2008-kosovo-declaration-of-independence`.
+They are in the lane and in the span and outside the subject, and they are
+exactly what a European period after 1989 would take. **There is no such
+umbrella here yet** and one is not invented: the pass refuses to write a
+period no article names.
+
+**One umbrella refused for want of a date, and it is the one Africa most
+wants.** *Decolonisation of Africa*, Q1146918, is the obvious umbrella for
+the thirty African records between 1950 and 1975 — the Algerian war, the two
+Sudanese wars, the Portuguese colonial war, the Guinean ballots, the Zanzibar
+revolution. **Wikidata dates its start to the decade** (precision 8, "1950s"),
+and the import refuses a date it cannot read as a year: deviation 989's rule
+is that no date is invented and none is widened. Its class Q230533 is now in
+the seeds table so that the next attempt is not blocked twice, and what it
+waits on is a year from the article or from a person, not a fetch.
+
+### What the filing pass leaves
+
+**Asia (73 main) and the Americas (63 main) are not filed**, and neither is
+Africa before 1885 or after 1914. The pass ran the two lanes where the crowd
+was thickest and the periods were named; the rest is the same job and needs
+the same thing — **a period Wikipedia has an article for, with a span and a
+region**. What the measurement suggests, for the fire that picks this up:
+
+- **the Americas.** Brazil is two thirds of the lane and its periods are
+  already half written here: `empire-of-brazil-1822-1889`,
+  `the-1930-revolution-and-the-vargas-era` and
+  `brazilian-military-dictatorship-1964-1985` exist as umbrellas, and what is
+  missing between and after them is the Old Republic — which **M67 refused by
+  name** and A6 does not overrule, because M67's ground was the subject test
+  and not the article — and the *Nova República* since 1985.
+- **Asia.** No one period covers it and none should: the lane holds the
+  Chinese revolutions, the two Indochina wars, the partition of India, the
+  Arab–Israeli conflict and the Afghan wars. The Arab–Israeli conflict
+  (Q8669, from 1948) is the one umbrella of the lane with an article, a start
+  date and a subject a record can be tested against, and it is a conflict
+  rather than a period, which A6 allows in the way it allows a war.
+- **the Cold War stays refused**, as M67 refused it: *"part of the Cold War"*
+  is a historiographical argument and an argument belongs in an edge with a
+  confidence, not in a `parent` that carries no hedge. A6 legitimises a period
+  **with a region**, and the Cold War's region is the world.
+
+**The main count must not rise from here.** Every batch after this pass
+reports it and files what it imports as it imports it; a batch that leaves it
+higher than it found it says why (A3, with A6's teeth).

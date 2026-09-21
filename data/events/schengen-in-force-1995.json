@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-06",
+  "revised": "2026-09-21",
   "origin": {
     "tool": "assistant"
   },
@@ -45,6 +45,7 @@
   },
   "place": "lisbon",
   "region": "europe",
+  "parent": "third-portuguese-republic-since-1974",
   "actors": [
     {
       "actor": "portugal",

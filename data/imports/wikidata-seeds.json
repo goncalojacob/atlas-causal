@@ -855,7 +855,10 @@
     "Q161141",
     "Q278960",
     "Q301336",
-    "Q665554"
+    "Q665554",
+    "Q154611",
+    "Q179848",
+    "Q1146918"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -984,7 +987,10 @@
     "Q161141": "europe",
     "Q278960": "europe",
     "Q301336": "europe",
-    "Q665554": "asia"
+    "Q665554": "asia",
+    "Q154611": "europe",
+    "Q179848": "africa",
+    "Q1146918": "africa"
   },
   "queries": [
     {
@@ -3969,6 +3975,11 @@
       "category": "war",
       "label": "war of independence",
       "note": "Added in M42 batch 10 from the import report, where a ticked sweep candidate was refused under it. The label and the description are read from the item itself over the network, which this sandbox has."
+    },
+    "Q230533": {
+      "kind": "event",
+      "label": "decolonization",
+      "note": "Added in M42’s filing pass (A6) from a lookup against Wikidata, which this run could reach: the label and description are the service’s own. The class is here because the period umbrella the owner’s rule calls for — the decolonisation of Africa — carries it and the table did not. No category: a period is not one of the twelve kinds of event."
     }
   },
   "reconcile": true
