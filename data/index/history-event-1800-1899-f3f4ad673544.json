@@ -541,6 +541,15 @@
         }
       ]
     },
+    "philippine-declaration-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "philippine-revolution": {
       "from": "git",
       "versions": [

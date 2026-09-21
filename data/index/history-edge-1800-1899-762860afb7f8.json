@@ -189,6 +189,15 @@
         }
       ]
     },
+    "philippine-revolution--philippine-declaration-of-independence--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "proclamation-of-the-brazilian-republic-1889--1964-brazilian-coup-detat--precondition-of": {
       "from": "git",
       "versions": [
@@ -247,6 +256,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "spanish-american-war-1898--philippine-declaration-of-independence--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

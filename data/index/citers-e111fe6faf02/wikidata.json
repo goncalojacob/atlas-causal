@@ -878,6 +878,12 @@
     },
     {
       "dissent": false,
+      "id": "armistice-of-22-june-1940",
+      "kind": "event",
+      "locator": "Q170360"
+    },
+    {
+      "dissent": false,
       "id": "armistice-of-mudros",
       "kind": "event",
       "locator": "Q328499"
@@ -905,6 +911,12 @@
       "id": "austrian-state-treaty",
       "kind": "event",
       "locator": "Q306535"
+    },
+    {
+      "dissent": false,
+      "id": "baltic-entente",
+      "kind": "event",
+      "locator": "Q167759"
     },
     {
       "dissent": false,
@@ -1088,6 +1100,12 @@
     },
     {
       "dissent": false,
+      "id": "declaration-by-united-nations",
+      "kind": "event",
+      "locator": "Q176930"
+    },
+    {
+      "dissent": false,
       "id": "deportation-of-the-crimean-tatars",
       "kind": "event",
       "locator": "Q1775286"
@@ -1232,9 +1250,21 @@
     },
     {
       "dissent": false,
+      "id": "fourth-geneva-convention",
+      "kind": "event",
+      "locator": "Q973748"
+    },
+    {
+      "dissent": false,
       "id": "franco-russian-alliance",
       "kind": "event",
       "locator": "Q243799"
+    },
+    {
+      "dissent": false,
+      "id": "french-conquest-of-morocco",
+      "kind": "event",
+      "locator": "Q2935421"
     },
     {
       "dissent": false,
@@ -1538,9 +1568,21 @@
     },
     {
       "dissent": false,
+      "id": "massacres-of-poles-in-volhynia-and-eastern-galicia",
+      "kind": "event",
+      "locator": "Q695020"
+    },
+    {
+      "dissent": false,
       "id": "may-1915-portuguese-presidential-election",
       "kind": "event",
       "locator": "Q97516248"
+    },
+    {
+      "dissent": false,
+      "id": "merger-treaty",
+      "kind": "event",
+      "locator": "Q622766"
     },
     {
       "dissent": false,
@@ -1622,6 +1664,12 @@
     },
     {
       "dissent": false,
+      "id": "philippine-declaration-of-independence",
+      "kind": "event",
+      "locator": "Q69772"
+    },
+    {
+      "dissent": false,
       "id": "philippine-revolution",
       "kind": "event",
       "locator": "Q422082"
@@ -1631,6 +1679,12 @@
       "id": "polish-soviet-war",
       "kind": "event",
       "locator": "Q186284"
+    },
+    {
+      "dissent": false,
+      "id": "population-exchange-between-greece-and-turkey",
+      "kind": "event",
+      "locator": "Q131017"
     },
     {
       "dissent": false,
@@ -1814,6 +1868,12 @@
     },
     {
       "dissent": false,
+      "id": "slovak-national-uprising",
+      "kind": "event",
+      "locator": "Q163780"
+    },
+    {
+      "dissent": false,
       "id": "somali-civil-war",
       "kind": "event",
       "locator": "Q243620"
@@ -1988,6 +2048,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-tartu",
+      "kind": "event",
+      "locator": "Q1056439"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-trianon",
       "kind": "event",
       "locator": "Q181902"
@@ -2003,6 +2069,12 @@
       "id": "treaty-of-windsor",
       "kind": "event",
       "locator": "Q2518953"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-on-the-final-settlement-with-respect-to-germany",
+      "kind": "event",
+      "locator": "Q159644"
     },
     {
       "dissent": false,

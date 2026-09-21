@@ -710,6 +710,12 @@
     },
     {
       "dissent": false,
+      "id": "declaration-by-united-nations--charter-of-the-united-nations--precondition-of",
+      "kind": "edge",
+      "locator": "\"Declaration by United Nations\", revision 1369044189, § lead"
+    },
+    {
+      "dissent": false,
       "id": "dissolution-of-the-soviet-union--1993-russian-constitutional-crisis--precondition-of",
       "kind": "edge",
       "locator": "\"Dissolution of the Soviet Union\", revision 1375840189, § lead"
@@ -812,9 +818,21 @@
     },
     {
       "dissent": false,
+      "id": "entente-cordiale--french-conquest-of-morocco--enabled",
+      "kind": "edge",
+      "locator": "\"French conquest of Morocco\", revision 1374837625, § Background"
+    },
+    {
+      "dissent": false,
       "id": "estado-novo-1933-1974--portuguese-colonial-war-1961-1974--precondition-of",
       "kind": "edge",
       "locator": "\"Portuguese Colonial War\", revision 1372834694, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "estonian-war-of-independence--treaty-of-tartu--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Tartu (Estonia–Russia)\", revision 1368812511, § lead"
     },
     {
       "dissent": false,
@@ -1043,6 +1061,12 @@
       "id": "genocide-convention--rome-statute-of-the-international-criminal-court--precondition-of",
       "kind": "edge",
       "locator": "\"Rome Statute\", revision 1363920501, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "german-polish-declaration-of-non-aggression--baltic-entente--precondition-of",
+      "kind": "edge",
+      "locator": "\"Baltic Entente\", revision 1363789006, § Formation"
     },
     {
       "dissent": false,
@@ -1688,6 +1712,12 @@
     },
     {
       "dissent": false,
+      "id": "philippine-revolution--philippine-declaration-of-independence--caused",
+      "kind": "edge",
+      "locator": "\"Philippine Declaration of Independence\", revision 1358972217, § History"
+    },
+    {
+      "dissent": false,
       "id": "platt-amendment-1901--cuban-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"Cuban Revolution\", revision 1373305240"
@@ -1757,6 +1787,12 @@
       "id": "potsdam-conference--potsdam-declaration--caused",
       "kind": "edge",
       "locator": "\"Potsdam Declaration\", revision 1371052620, § lead and § Drafting"
+    },
+    {
+      "dissent": false,
+      "id": "potsdam-conference--treaty-on-the-final-settlement-with-respect-to-germany--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty on the Final Settlement with Respect to Germany\", revision 1369082326, § lead and § Background"
     },
     {
       "dissent": false,
@@ -2117,6 +2153,12 @@
       "id": "soviet-afghan-war--war-in-afghanistan-2001-2021--precondition-of",
       "kind": "edge",
       "locator": "\"War in Afghanistan (2001–2021)\", revision 1375768099, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-american-war-1898--philippine-declaration-of-independence--enabled",
+      "kind": "edge",
+      "locator": "\"Philippine Declaration of Independence\", revision 1358972217, § History"
     },
     {
       "dissent": false,
@@ -2810,6 +2852,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-lausanne--population-exchange-between-greece-and-turkey--caused",
+      "kind": "edge",
+      "locator": "\"Population exchange between Greece and Turkey\", revision 1372041572, § lead and § The road to the exchange"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-london--paris-peace-conference--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of London (1915)\", revision 1364595903"
@@ -2861,6 +2909,12 @@
       "id": "treaty-of-rome--maastricht-treaty--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of Rome\", revision 1311520265"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-rome--merger-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"Merger Treaty\", revision 1340086782, § lead"
     },
     {
       "dissent": false,
@@ -2963,6 +3017,12 @@
       "id": "treaty-on-the-non-proliferation-of-nuclear-weapons--treaty-on-the-prohibition-of-nuclear-weapons--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty on the Prohibition of Nuclear Weapons\", revision 1363091604, § Concept and § Overview of provisions"
+    },
+    {
+      "dissent": false,
+      "id": "turkish-war-of-independence--population-exchange-between-greece-and-turkey--precondition-of",
+      "kind": "edge",
+      "locator": "\"Population exchange between Greece and Turkey\", revision 1372041572, § Historical background"
     },
     {
       "dissent": false,
@@ -3158,6 +3218,12 @@
     },
     {
       "dissent": false,
+      "id": "world-war-ii--armistice-of-22-june-1940--caused",
+      "kind": "edge",
+      "locator": "\"Armistice of 22 June 1940\", revision 1370957537, § lead and § Battle of France"
+    },
+    {
+      "dissent": false,
       "id": "world-war-ii--austrian-state-treaty--precondition-of",
       "kind": "edge",
       "locator": "\"Austrian State Treaty\", revision 1374482051, § Development"
@@ -3188,9 +3254,21 @@
     },
     {
       "dissent": false,
+      "id": "world-war-ii--declaration-by-united-nations--caused",
+      "kind": "edge",
+      "locator": "\"Declaration by United Nations\", revision 1369044189, § lead"
+    },
+    {
+      "dissent": false,
       "id": "world-war-ii--deportation-of-the-crimean-tatars--precondition-of",
       "kind": "edge",
       "locator": "\"Deportation of the Crimean Tatars\", revision 1375533569, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--fourth-geneva-convention--reacted-to",
+      "kind": "edge",
+      "locator": "\"Fourth Geneva Convention\", revision 1375615781, § Article 27 and Article 33"
     },
     {
       "dissent": false,
@@ -3212,6 +3290,12 @@
     },
     {
       "dissent": false,
+      "id": "world-war-ii--massacres-of-poles-in-volhynia-and-eastern-galicia--enabled",
+      "kind": "edge",
+      "locator": "\"Massacres of Poles in Volhynia and Eastern Galicia\", revision 1372344283, § lead and § Background"
+    },
+    {
+      "dissent": false,
       "id": "world-war-ii--paris-peace-treaties--caused",
       "kind": "edge",
       "locator": "\"Paris Peace Treaties, 1947\", revision 1369078996, § lead"
@@ -3221,6 +3305,12 @@
       "id": "world-war-ii--partition-of-india--precondition-of",
       "kind": "edge",
       "locator": "\"Partition of India\", revision 1374133022, § Labour victory in the UK election, decision to decolonize: 1945"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--slovak-national-uprising--caused",
+      "kind": "edge",
+      "locator": "\"Slovak National Uprising\", revision 1374904143, § lead"
     },
     {
       "dissent": false,

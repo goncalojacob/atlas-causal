@@ -675,6 +675,15 @@
         }
       ]
     },
+    "trout-1969-moroccos-saharan-frontiers": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "uefa-2016-final": {
       "from": "git",
       "versions": [

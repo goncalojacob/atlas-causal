@@ -4524,6 +4524,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "declaration-by-united-nations",
+      "id": "declaration-by-united-nations--charter-of-the-united-nations--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "charter-of-the-united-nations",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "ramos-2009-historia-de-portugal"
       ],
@@ -5186,6 +5214,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "trout-1969-moroccos-saharan-frontiers"
+      ],
+      "created": "2026-09-21",
+      "from": "entente-cordiale",
+      "id": "entente-cordiale--french-conquest-of-morocco--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "french-conquest-of-morocco",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en"
       ],
       "created": "2026-09-21",
@@ -5205,6 +5262,34 @@
       "status": "active",
       "to": "portuguese-colonial-war-1961-1974",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "estonian-war-of-independence",
+      "id": "estonian-war-of-independence--treaty-of-tartu--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-tartu",
+      "type": "caused"
     },
     {
       "authors": [
@@ -5959,6 +6044,34 @@
       "revised": null,
       "status": "active",
       "to": "marcelo-elected-president-2016",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "german-polish-declaration-of-non-aggression",
+      "id": "german-polish-declaration-of-non-aggression--baltic-entente--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "baltic-entente",
       "type": "precondition-of"
     },
     {
@@ -8851,6 +8964,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "philippine-revolution",
+      "id": "philippine-revolution--philippine-declaration-of-independence--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "philippine-declaration-of-independence",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wheeler-1978-republican-portugal",
         "meneses-2004-portugal-1914-1926"
       ],
@@ -9180,6 +9321,34 @@
       "status": "active",
       "to": "potsdam-declaration",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "potsdam-conference",
+      "id": "potsdam-conference--treaty-on-the-final-settlement-with-respect-to-germany--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-on-the-final-settlement-with-respect-to-germany",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -10672,6 +10841,34 @@
       "status": "active",
       "to": "war-in-afghanistan-2001-2021",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "spanish-american-war-1898",
+      "id": "spanish-american-war-1898--philippine-declaration-of-independence--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "philippine-declaration-of-independence",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -12547,6 +12744,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "treaty-of-lausanne",
+      "id": "treaty-of-lausanne--population-exchange-between-greece-and-turkey--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "population-exchange-between-greece-and-turkey",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "burgwyn-1997-italian-foreign-policy"
       ],
@@ -12740,6 +12965,34 @@
       "revised": null,
       "status": "active",
       "to": "maastricht-treaty",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "treaty-of-rome",
+      "id": "treaty-of-rome--merger-treaty--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "merger-treaty",
       "type": "precondition-of"
     },
     {
@@ -13157,6 +13410,34 @@
       "revised": null,
       "status": "active",
       "to": "legislative-election-2015",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "turkish-war-of-independence",
+      "id": "turkish-war-of-independence--population-exchange-between-greece-and-turkey--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "population-exchange-between-greece-and-turkey",
       "type": "precondition-of"
     },
     {
@@ -13917,6 +14198,34 @@
       ],
       "created": "2026-09-21",
       "from": "world-war-ii",
+      "id": "world-war-ii--armistice-of-22-june-1940--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "armistice-of-22-june-1940",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-ii",
       "id": "world-war-ii--austrian-state-treaty--precondition-of",
       "kind": "edge",
       "origin": {
@@ -14032,6 +14341,34 @@
       ],
       "created": "2026-09-21",
       "from": "world-war-ii",
+      "id": "world-war-ii--declaration-by-united-nations--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "declaration-by-united-nations",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-ii",
       "id": "world-war-ii--deportation-of-the-crimean-tatars--precondition-of",
       "kind": "edge",
       "origin": {
@@ -14047,6 +14384,34 @@
       "status": "active",
       "to": "deportation-of-the-crimean-tatars",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-ii",
+      "id": "world-war-ii--fourth-geneva-convention--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "fourth-geneva-convention",
+      "type": "reacted-to"
     },
     {
       "authors": [
@@ -14145,6 +14510,34 @@
       ],
       "created": "2026-09-21",
       "from": "world-war-ii",
+      "id": "world-war-ii--massacres-of-poles-in-volhynia-and-eastern-galicia--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "massacres-of-poles-in-volhynia-and-eastern-galicia",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-ii",
       "id": "world-war-ii--paris-peace-treaties--caused",
       "kind": "edge",
       "origin": {
@@ -14189,6 +14582,34 @@
       "status": "active",
       "to": "partition-of-india",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-ii",
+      "id": "world-war-ii--slovak-national-uprising--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "slovak-national-uprising",
+      "type": "caused"
     },
     {
       "authors": [
