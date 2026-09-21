@@ -14061,6 +14061,18 @@ that alone, because a second source thickens an edge and a person decides
 
 ### Deviations
 
+1014. **Deviation 798's order has a second half nobody had written down: the
+     rebuild belongs after the record *commit*, not after the records are
+     written.** The filing pass built the index with the 106 filed records on
+     disk and uncommitted, and five history shards came out stale — rule 16
+     named them one by one — because `tools/lib/history.mjs` builds a record's
+     versions **out of the repository's own commits**, so a record whose
+     change is not yet a commit has no version to shard. Everything else in
+     the index was correct, which is what made it quiet: `validate --index`
+     passed before the commit and failed after it. The repair is one more
+     rebuild in the right place, and the rule is now: records committed,
+     **then** rebuild, then the index committed.
+
 1013. **The Wikimedia API rate-limits this sandbox, and it stopped the filing
      pass's second round.** After the pass's own lookups — three Wikidata
      items, two article revisions and one lead — `en.wikipedia.org` began

@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 306 of 474 |
+| **after M42** | 36 of 36 | 307 of 477 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -313,6 +313,10 @@ Wikidata record carrying `actors: []`, which is what `docs/m67-umbrellas.md`
 place is not a defect**, and inventing a line to make one filable is the thing
 that document forbids. So the numerator stands where M67 left it and the
 denominator grows: 306 of 358 after batch 6, against 306 of 310 before. The
+filing pass of amendment A6 moved the numerator by one for the first time —
+**307 of 477** — because `third-portuguese-republic-since-1974`, the one
+umbrella of that pass written here rather than imported, names the republic
+itself, and the two the import wrote name nothing, as the imports do. The
 gap is not a regression in what M67 did; it is the new records arriving in the
 state every imported record arrives in, and `review.html` is where a person
 gives them their lines.
