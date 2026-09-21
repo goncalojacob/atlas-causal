@@ -62,8 +62,9 @@ const PANE = (selector) => `
   };`;
 
 // 1. Choosing Timeline gives the timeline the pane, with its lanes and its
-//    clusters as they are today.
-test('choosing Timeline gives it the whole pane, with the lanes and the stacks it always drew', { skip }, async () => {
+//    bars as they are today. It said *and its clusters* until M77, when the
+//    stacks and their `+n` badges went and every bar took its title instead.
+test('choosing Timeline gives it the whole pane, with the lanes and the titles it always drew', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await seenIntro(page);
     await open(page, url('?view=timeline'), LANES_READY);
@@ -73,12 +74,14 @@ test('choosing Timeline gives it the whole pane, with the lanes and the stacks i
         lanes: svg.querySelectorAll('rect.lane').length,
         bars: svg.querySelectorAll('rect.bar[data-id]').length,
         stacks: svg.querySelectorAll('rect.bar.stack').length,
+        badges: svg.querySelectorAll('text.cluster-count').length,
         handles: svg.querySelectorAll('[data-window]').length,
         ticks: svg.querySelectorAll('text.tick-label').length,
       };`);
     assert.ok(drawing.lanes > 0, 'the lanes');
     assert.ok(drawing.bars > 0, 'the bars');
-    assert.ok(drawing.stacks > 0, `the clusters, drawn as one bar with a count (${drawing.stacks})`);
+    assert.equal(drawing.stacks, 0, 'and no stack: every bar is its own bar since M77');
+    assert.equal(drawing.badges, 0, 'and no +n');
     assert.equal(drawing.handles, 3, 'the band and its two handles');
     assert.ok(drawing.ticks > 0, 'and the axis');
 

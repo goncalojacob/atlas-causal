@@ -16,8 +16,6 @@ test('parse and format round trip', () => {
     view: 'graph',
     focus: null,
     focusAll: false,
-    group: 'none',
-    lanes: [],
     selected: 'fixture-event-t',
     source: 'fixture-source-one',
     place: 'fixture-place-one',
@@ -164,7 +162,7 @@ test('the store merges patches and notifies', () => {
   store.set({ to: 1220 });
   assert.deepEqual(seen, [1210, 1210]);
   assert.deepEqual(store.get(), {
-    from: null, to: 1220, view: 'map', focus: null, focusAll: false, group: 'none', lanes: [],
+    from: null, to: 1220, view: 'map', focus: null, focusAll: false,
     degree: DEGREE_DEFAULT, tops: false,
     selected: 'fixture-event-a', source: null,
     place: null, actor: null, office: null, chain: [], horizon: null,
@@ -331,7 +329,7 @@ test('a decade is the ten years around a year, floored', () => {
   assert.deepEqual(decadeOf(-5), { from: -10, to: -1 });
 });
 
-// The lens and the grouping: how the atlas is drawn, not what is selected in
+// The lens: how the atlas is drawn, not what is selected in
 // it, and both in the link for the same reason the view is.
 //
 // Six kinds since H7, and a list of any length. One focus is the same string
@@ -370,33 +368,22 @@ test('a lens travels in the URL, readably, as a list of any of six kinds', () =>
   assert.equal(formatState({ ...defaultState(), focus: null }), '');
 });
 
-test('the grouping travels in the URL, and only when it is not the default', () => {
-  assert.equal(formatState({ ...defaultState(), group: 'none' }), '', 'no grouping is the default');
-  assert.equal(formatState({ ...defaultState(), group: 'actor' }), '?group=actor');
-  assert.equal(parseState('?group=place').group, 'place');
-  assert.equal(parseState('?group=region').group, 'region');
-  assert.equal(parseState('?group=continent').group, 'none', 'an unknown grouping falls back');
-  assert.equal(parseState('').group, 'none');
+// **The grouping is gone** (M77). There were three tests here: that `?group=`
+// travelled in the URL and only when it was not the default, that an explicit
+// `?lanes=` list kept the reader's order, and that a lens and a grouping
+// round-tripped together. The owner asked for the picker and everything behind
+// it to go; what is left is that an old link naming either opens the atlas on
+// the default lanes and says nothing about it, which is deviation 848's rule
+// and is the test below.
+test('a retired ?group= or ?lanes= is read into nothing', () => {
+  const parsed = parseState('?group=actor&lanes=salazar,pide&from=1960&to=1975');
+  assert.equal('group' in parsed, false, 'no grouping in the state at all');
+  assert.equal('lanes' in parsed, false);
+  assert.equal(formatState(parsed), '?from=1960&to=1975', 'and neither comes back out');
 });
 
-test('an explicit lane list keeps the reader\'s order and needs a grouping', () => {
-  assert.deepEqual(parseState('?group=actor&lanes=salazar,paigc').lanes, ['salazar', 'paigc']);
-  assert.deepEqual(parseState('?lanes=paigc,salazar,paigc').lanes, ['paigc', 'salazar'], 'once each');
-  assert.deepEqual(parseState('?lanes=../secret,salazar').lanes, ['salazar']);
-  assert.deepEqual(parseState('').lanes, []);
-  assert.equal(
-    formatState({ ...defaultState(), group: 'actor', lanes: ['salazar', 'paigc'] }),
-    '?group=actor&lanes=salazar,paigc',
-  );
-  assert.equal(
-    formatState({ ...defaultState(), group: 'none', lanes: ['salazar'] }),
-    '',
-    'a lane list without a grouping is an instruction with no addressee',
-  );
-});
-
-test('the whole of a lens and a grouping round-trips', () => {
-  const url = '?from=1960&to=1975&view=graph&focus=actor:salazar&group=actor&lanes=salazar,pide';
+test('the whole of a lens round-trips', () => {
+  const url = '?from=1960&to=1975&view=graph&focus=actor:salazar';
   const parsed = parseState(url);
   assert.equal(formatState(parsed), url);
 });
@@ -481,7 +468,7 @@ test('the push/replace rule, as a decision on the patch', () => {
     assert.equal(pushes(patch, before), true, JSON.stringify(patch));
   }
   for (const patch of [{ to: 1500 }, { from: 1400, to: 1500 }, { view: 'graph' },
-    { bbox: [1, 2, 3, 4] }, { group: 'region' }, { lanes: ['europe'] },
+    { bbox: [1, 2, 3, 4] },
     { layers: ['land'] }, { focus: 'actor:salazar' }, { horizon: 1600 },
     { chain: [] }, {}]) {
     assert.equal(pushes(patch, before), false, JSON.stringify(patch));

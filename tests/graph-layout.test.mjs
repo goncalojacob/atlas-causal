@@ -16,7 +16,6 @@ import {
   layoutGraph, stackLayout, crosses, BAND_HEIGHT, AXIS_HEIGHT, STACK_DISTANCE, MAX_ZOOM,
 } from '../src/graph-view/layout.js';
 import { zoomBucket, ZOOM_BUCKETS_PER_OCTAVE, SPLIT_MARGIN } from '../src/cluster.js';
-import { lanesFor } from '../src/lanes.js';
 import { ROOT, corpusOf } from './helpers.mjs';
 
 const REGIONS = [
@@ -25,10 +24,17 @@ const REGIONS = [
   { id: 'asia', label: 'Asia', order: 3 },
 ];
 
-// The bands are lanes now (M14), and the lanes come from the one file that
-// decides what a lane is — here, the region grouping, which is what the
-// graph view drew before there was a choice.
-const regionLanes = (events, regions = REGIONS) => lanesFor('region', { activeEvents: events, regions });
+// One lane per region, with its events in it. It was `lanesFor('region', …)`
+// until M77, when the named lanes went with the grouping; `layoutGraph` still
+// takes lanes and this is the shape it takes them in, so the bands can go on
+// being tested without a grouping to ask for them.
+const regionLanes = (events, regions = REGIONS) => regions.map((r) => ({
+  id: r.id,
+  label: r.label,
+  other: false,
+  members: new Set(events.filter((e) => e.region === r.id).map((e) => e.id)),
+  count: events.filter((e) => e.region === r.id).length,
+}));
 
 const event = (id, region, year, weight = 1) => ({
   id, region, weight, status: 'active', title: id, when: { start: year, end: year },

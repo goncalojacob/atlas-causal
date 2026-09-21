@@ -143,28 +143,12 @@ test('at the default zoom the graph draws stacks, and they add up to the events'
   for (const n of hidden) assert.ok(n >= 1, 'a badge never says +0');
 });
 
-test('grouping into bands crowds the picture, and more of it merges', { skip }, async () => {
-  const drawable = drawableOf();
-  const events = drawable.size;
-  const [plain, banded] = await withServer(async (url) => [
-    graphOf(await dumpDom(chrome, url(`?view=graph&${WHOLE}`))),
-    graphOf(await dumpDom(chrome, url(`?view=graph&group=region&${WHOLE}`))),
-  ]);
-  // "More of it merges" counted as **fewer marks on the page**, which is what
-  // merging means, and not as more stack nodes, which was what this line
-  // asserted until M50. The two came apart on this corpus and at every window
-  // tried: 1890–2026 draws 144 marks in 28 stacks without bands and 62 marks
-  // in 14 with them, and the whole extent of 1492–2026 draws 164 in 66 against
-  // 118 in 66. Banding folds more events into each stack rather than making
-  // more stacks, so the stack count is the wrong instrument — it can fall while
-  // the merging rises, and at high density it saturates and stops moving at
-  // all. The claim in the test's name is unchanged and is now measured by the
-  // thing it is about.
-  assert.ok(marks(banded) < marks(plain), `${marks(banded)} marks in bands, ${marks(plain)} without`);
-  for (const graph of [plain, banded]) {
-    assert.equal(marks(graph) + badges(graph).reduce((a, b) => a + b, 0), events);
-  }
-});
+// *Grouping into bands crowds the picture, and more of it merges* stood here.
+// It went in M77 with the grouping itself: there are no bands on the graph any
+// more, `?group=region` is read into nothing, and the two pictures the test
+// compared are one picture. What it was about — that merging drops nothing,
+// only folds it — is the test above, which counts marks and badges against the
+// corpus with no grouping to ask for.
 
 test('a merged line carries its count and its type; a single one is unchanged', { skip }, async () => {
   // The picture is the whole extent with no degree floor, as the test above
@@ -173,11 +157,13 @@ test('a merged line carries its count and its type; a single one is unchanged', 
   // a fact about how crowded the corpus happens to be there, and M67 made the
   // banded default window less crowded on purpose — it filed thirteen events
   // under parents, and the resting picture is the main events only (M65). At
-  // the default window `group=region` went from merging lines to merging none
-  // while `?view=graph` still merged two, which is the milestone working, not
-  // the drawing breaking. Asking for everything is the same lesson the test
-  // above learned in M50: count the thing the claim is about.
-  const dom = await withServer((url) => dumpDom(chrome, url(`?view=graph&group=region&${WHOLE}`)));
+  // the default window the banded picture went from merging lines to merging
+  // none while `?view=graph` still merged two, which was the milestone working
+  // and not the drawing breaking. Asking for everything is the same lesson the
+  // test above learned in M50: count the thing the claim is about. (The bands
+  // themselves went in M77; the window is still the whole extent, for the
+  // reason above.)
+  const dom = await withServer((url) => dumpDom(chrome, url(`?view=graph&${WHOLE}`)));
   const graph = graphOf(dom);
   const merged = [...graph.matchAll(/<line[^>]*class="edge ([^"]*merged[^"]*)"[^>]*style="--merged-width: ([\d.]+)"/g)];
   assert.ok(merged.length > 0, 'the banded picture merges some lines');

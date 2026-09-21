@@ -1,12 +1,12 @@
-// The lanes are one rule read by two pictures, so this file holds it to the
-// four things the interface promises: the cap, the order, the catch-all, and
-// that an event is drawn once and in a lane the card can explain.
+// The packing is one rule read by two pictures, so this file holds it to what
+// the interface promises: that no two bars overlap in a row, that the same
+// events pack the same way twice running whatever order they arrive in, and
+// that what belongs together lands together where a row has the room.
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  lanesFor, laneOf, laneExplain, availableLanes, packRows, rowLanes, barBox,
-  GROUPS, LANE_CAP, OTHER_ID,
+  laneOf, packRows, rowLanes, barBox,
 } from '../src/lanes.js';
 import { createLinearScale } from '../src/timeline-scale.js';
 
@@ -45,173 +45,13 @@ function topology() {
 const idsOf = (lanes) => lanes.map((l) => l.id);
 const membersOf = (lanes) => Object.fromEntries(lanes.map((l) => [l.id, [...l.members].sort()]));
 
-test('the four groupings are the four groupings', () => {
-  assert.deepEqual([...GROUPS], ['none', 'actor', 'place', 'region']);
-  assert.equal(lanesFor('none', topology()).length, 0, 'no grouping means no named lanes');
-  assert.equal(lanesFor('rubbish', topology()).length, 0);
-});
-
-test('every shown event is in exactly one lane, in every grouping', () => {
-  const t = topology();
-  for (const group of ['actor', 'place', 'region']) {
-    const lanes = lanesFor(group, t);
-    const ids = lanes.flatMap((l) => [...l.members]);
-    assert.equal(new Set(ids).size, ids.length, `${group}: no event in two lanes`);
-    // `region` has no catch-all, and e5 has a region like everything else.
-    assert.equal(ids.length, t.activeEvents.length, `${group}: nothing is dropped`);
-    for (const e of t.activeEvents) assert.ok(laneOf(e, lanes), `${group}: ${e.id} has a lane`);
-  }
-});
-
-test('lanes are ordered by how many events fall in them', () => {
-  const lanes = lanesFor('actor', topology());
-  assert.deepEqual(idsOf(lanes), ['salazar', 'pide', 'church', OTHER_ID]);
-  assert.deepEqual(availableLanes('actor', topology()).map((a) => [a.id, a.count]), [
-    ['salazar', 4], ['pide', 3], ['church', 1],
-  ]);
-});
-
-test('an event with several actors is drawn in the heaviest of them', () => {
-  const lanes = lanesFor('actor', topology());
-  assert.deepEqual(membersOf(lanes), {
-    salazar: ['e0', 'e1', 'e2', 'e3'],
-    pide: ['e4'],
-    church: [],
-    other: ['e5'],
-  });
-  // The rule, as the card states it.
-  const t = topology();
-  const explained = laneExplain(t.activeEvents[3], lanes, 'actor', t);
-  assert.equal(explained.lane.id, 'salazar');
-  assert.equal(explained.reason, 'heaviest of its actors');
-  assert.deepEqual(explained.others.map((o) => o.label), ['PIDE', 'Church']);
-});
-
-test('an event none of whose actors has a lane goes to Other, and says why', () => {
-  const t = topology();
-  const lanes = lanesFor('actor', t, null, null, ['church']);
-  assert.deepEqual(idsOf(lanes), ['church', OTHER_ID]);
-  assert.deepEqual(membersOf(lanes).church, ['e3']);
-  assert.deepEqual(membersOf(lanes).other, ['e0', 'e1', 'e2', 'e4', 'e5']);
-  assert.equal(laneExplain(t.activeEvents[0], lanes, 'actor', t).reason, 'none of its actors has a lane');
-  assert.equal(laneExplain(t.activeEvents[5], lanes, 'actor', t).reason, 'it names no actor');
-});
-
-test('an explicit list is taken in the order it was given, and dropped ids are dropped', () => {
-  const t = topology();
-  const lanes = lanesFor('actor', t, null, null, ['pide', 'salazar', 'nobody', 'pide']);
-  assert.deepEqual(idsOf(lanes), ['pide', 'salazar', OTHER_ID]);
-  // Order is the reader's; which lane an event lands in is still the weight.
-  assert.deepEqual(membersOf(lanes).salazar, ['e0', 'e1', 'e2', 'e3']);
-  assert.deepEqual(membersOf(lanes).pide, ['e4']);
-});
-
-test('there is no Other lane when nothing falls outside', () => {
-  const t = topology();
-  const lanes = lanesFor('place', t, null, null, ['lisbon', 'porto']);
-  assert.deepEqual(idsOf(lanes), ['lisbon', 'porto', OTHER_ID], 'e5 has no place');
-  const shown = new Set(['e1', 'e2']);
-  assert.deepEqual(idsOf(lanesFor('place', t, null, shown, ['lisbon'])), ['lisbon'], 'both are in Lisbon');
-});
-
-test('a place lane is the place, and a placeless event says so', () => {
-  const t = topology();
-  const lanes = lanesFor('place', t);
-  assert.deepEqual(idsOf(lanes), ['lisbon', 'porto', OTHER_ID]);
-  assert.equal(laneExplain(t.activeEvents[0], lanes, 'place', t).reason, 'its place');
-  assert.equal(laneExplain(t.activeEvents[5], lanes, 'place', t).reason, 'it has no place');
-});
-
-test('the region grouping is the lane list, in its own order, with no Other', () => {
-  const t = topology();
-  const lanes = lanesFor('region', t);
-  assert.deepEqual(idsOf(lanes), ['europe', 'africa']);
-  assert.deepEqual(membersOf(lanes), { europe: ['e0', 'e1', 'e2', 'e3'], africa: ['e4', 'e5'] });
-  assert.equal(laneExplain(t.activeEvents[0], lanes, 'region', t).reason, 'its region');
-});
-
-test('the automatic list is capped at six, plus Other', () => {
-  const events = [];
-  const actors = new Map();
-  for (let i = 0; i < 20; i += 1) {
-    const id = `a${String(i).padStart(2, '0')}`;
-    actors.set(id, { id, name: `Actor ${i}` });
-    // Actor i is in (20 - i) events, so the order is a00 first.
-    for (let n = 0; n < 20 - i; n += 1) events.push(event(`${id}-${n}`, { actors: [id], start: 1900 + n }));
-  }
-  const t = { activeEvents: events, actors, places: new Map(), regions: [] };
-  const lanes = lanesFor('actor', t);
-  assert.equal(lanes.length, LANE_CAP + 1);
-  assert.deepEqual(idsOf(lanes).slice(0, 3), ['a00', 'a01', 'a02']);
-  assert.equal(lanes[LANE_CAP].id, OTHER_ID);
-  assert.equal(lanes[LANE_CAP].members.size, events.filter((e) => Number(e.id.slice(1, 3)) >= LANE_CAP).length);
-});
-
-// The pane says how many lanes there is room for and hands the number down;
-// six is still the most this file will draw of its own accord (I6, and
-// tests/timeline-rows.test.mjs for where the number comes from).
-test('the automatic list is cut to the room the caller has, and never widened past six', () => {
-  const events = [];
-  const actors = new Map();
-  for (let i = 0; i < 20; i += 1) {
-    const id = `a${String(i).padStart(2, '0')}`;
-    actors.set(id, { id, name: `Actor ${i}` });
-    for (let n = 0; n < 20 - i; n += 1) events.push(event(`${id}-${n}`, { actors: [id], start: 1900 + n }));
-  }
-  const t = { activeEvents: events, actors, places: new Map(), regions: [] };
-  const named = (lanes) => lanes.filter((l) => l.id !== OTHER_ID);
-
-  // Room for three: the three heaviest, in the same order, and the rest in
-  // Other — which is a lane too, and is why a pane with room for four asks
-  // for three.
-  const three = lanesFor('actor', t, null, null, null, { cap: 3 });
-  assert.deepEqual(idsOf(named(three)), ['a00', 'a01', 'a02']);
-  assert.equal(three[three.length - 1].id, OTHER_ID);
-
-  // Room for more than six is still six: the cap narrows and never widens.
-  assert.equal(named(lanesFor('actor', t, null, null, null, { cap: 40 })).length, LANE_CAP);
-  // And no room at all is still one lane: a grouping that drew none would be
-  // an empty timeline.
-  assert.equal(named(lanesFor('actor', t, null, null, null, { cap: 0 })).length, 1);
-
-  // Whatever the cap, every event is still in exactly one lane.
-  for (const cap of [1, 3, 6, 40]) {
-    const lanes = lanesFor('actor', t, null, null, null, { cap });
-    const members = lanes.flatMap((l) => [...l.members]);
-    assert.equal(new Set(members).size, members.length, `cap ${cap}: no event in two lanes`);
-    assert.equal(members.length, events.length, `cap ${cap}: no event left out`);
-  }
-
-  // The reader's own list is not capped: naming ten actors is asking for ten
-  // lanes, however short the pane is (i6-brief §2).
-  const chosen = [...actors.keys()].slice(0, 10);
-  assert.deepEqual(idsOf(named(lanesFor('actor', t, null, null, chosen, { cap: 2 }))), chosen);
-});
-
-test('the window decides which lanes there are and never which events are in them', () => {
-  const t = topology();
-  // 1958–1974 counts PIDE twice and Salazar once, so PIDE leads.
-  const window = { from: 1958, to: 1974 };
-  assert.deepEqual(availableLanes('actor', t, window).map((a) => a.id), ['pide', 'church', 'salazar']);
-  const lanes = lanesFor('actor', t, window, null, ['pide']);
-  // e0, e1 and e2 are outside the window and still have somewhere to be
-  // drawn: e2 names PIDE, so it is in PIDE's lane though it was not counted
-  // into it.
-  assert.deepEqual(membersOf(lanes).other, ['e0', 'e1', 'e5']);
-  assert.deepEqual(membersOf(lanes).pide, ['e2', 'e3', 'e4']);
-  assert.equal(lanes[0].count, 2, 'the count is of the window; the members are not');
-});
-
-test('the lens narrows what the lanes are built from', () => {
-  const t = topology();
-  const lens = new Set(['e4', 'e5']);
-  const lanes = lanesFor('actor', t, null, lens);
-  assert.deepEqual(idsOf(lanes), ['pide', OTHER_ID]);
-  assert.deepEqual(membersOf(lanes), { pide: ['e4'], other: ['e5'] });
-  assert.deepEqual(availableLanes('actor', t, null, lens).map((a) => a.id), ['pide']);
-});
-
-// --- packing -------------------------------------------------------------
+// **The named lanes went in M77.** Fourteen tests stood here: the four
+// groupings, the cap of six, the "Other" catch-all, the order, the reader's
+// own list, what the window and the lens decided about which lanes there
+// were, and what the event card said about the lane it had picked. The owner
+// asked for the grouping to go and it went, with `lanesFor`, `availableLanes`
+// and `laneExplain`. What `lanes.js` is now is the packing below and
+// `barBox`, which is what the default always used.
 
 const scale = createLinearScale({ domain: [1900, 2000], range: [0, 1000] });
 
