@@ -13657,14 +13657,22 @@ batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
 every edge. **The milestone is not done**: §7 of the pool file says where it
 stands and what the next fire does.
 
-**Five batches.** The pool before: 310 active events, 229 of them main, 362
+**Six batches.** The pool before: 310 active events, 229 of them main, 362
 active edges, a largest connected component of 254 and 23 events with no edge.
-**After batch 4: 345 active, 256 main, 414 edges, largest component 315, 17
-with no edge, and 15 events that cannot reach a Portuguese one against 27.**
-Twenty-two records came back from the tombstones and thirteen were imported;
-fifty-two edges were written — eighteen in batch 0, seven in batch 1,
+**After batch 5: 354 active, 265 main, 424 edges, largest component 323, 16
+with no edge, and 16 events that cannot reach a Portuguese one against 27.**
+Thirty-one records came back from the tombstones and thirteen were imported;
+sixty-two edges were written — eighteen in batch 0, seven in batch 1,
 **nineteen in batch 3, which imported nothing at all and moved the component
-by twenty-seven**, and eight in batch 4.
+by twenty-seven**, eight in batch 4 and eleven in batch 5.
+
+**The milestone is a long way from its done-condition and that is the honest
+reading**: the brief asks for an order of magnitude more than the 250 it was
+written against, and the corpus stands at 354. The sweep's **1,586 unwalked
+rows** are what that volume comes from, untouched, and §5 of
+`docs/m42-pool.md` holds the tick rule written before a box was ticked. What
+this run establishes is that the volume can only be walked **here**: see the
+finding below.
 
 **The finding that matters most for the next run.** The import Action cannot
 commit a batch and two runs proved it: `import-wikidata.yml` runs the suite
@@ -13684,6 +13692,25 @@ since stopped being true. The cheapest events this milestone gets are not in
 Wikidata; they are in `data/events/` with `status: retracted`.
 
 ### Deviations
+
+991. **A row of `docs/m42-pool.md` was written before an undoing and said 256
+     main and 89 filed where the committed tree says 257 and 88.** Batch 4
+     measured the corpus with `war-in-bosnia-and-herzegovina` filed under
+     `breakup-of-yugoslavia`, then unfiled it when M67's rule refused the
+     imported date, and the row kept the first reading.
+     `node tools/m42-pool.mjs --at 88725432` is what caught it, which is the
+     whole argument for that tool existing: every number in the file can be
+     asked again of any commit. Corrected in the row and in §2d rather than
+     left to be inherited.
+
+992. **The nine records batch 5 put back had no `review.status` at all.** A
+     retracted record carries its standing in `retraction`, so removing the
+     block left them outside the draft queue entirely — `node
+     tools/validate.mjs` counted them as neither read nor unread. Batch 0's
+     own reinstatements carry `review.status: draft`, so the nine were
+     normalised to match, and `m44b-retracted` was dropped from their flags
+     because it is no longer true of them. Standing and not content: no
+     summary, date, actor or source was touched.
 
 984. **Two tests typed the Carnation revolution's causes as a literal, and the
      corpus outgrew it.** `tests/event-card.test.mjs` and
