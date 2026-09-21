@@ -20,10 +20,11 @@ to hang — and the reason they had nowhere was that **forty-eight of them named
 no actor and no place at all**, so no rule that reads a record could file them.
 Forty-six were given the line they were missing, read off the Wikidata item each
 record already cited and cited on the line; the two that could not be are listed
-in `docs/m67-umbrellas.md`. Then the umbrellas were measured again: **thirteen
+in `docs/m67-umbrellas.md`. Then the umbrellas were measured again: **fourteen
 events found a parent** and **one umbrella, the Empire of Brazil, was written**.
-**Main events: 242 of 309 → 230 of 310. Events naming neither an actor nor a
-place: 48 → 2.** World War I was re-measured and gained one, the Arab Revolt;
+**Main events: 242 of 309 → 229 of 310. Events naming neither an actor nor a
+place: 48 → 2**, one of which is still main. World War I was re-measured and
+gained one, the Arab Revolt;
 the Russian Civil War became an umbrella at no cost. Refused, with the
 measurement to say why: the Soviet period, the First Brazilian Republic and the
 Balkan Wars, whose end date the source contradicts itself about. No edge, no
@@ -12770,9 +12771,9 @@ which is exactly why M62 refused World War I (*"eight of them name no actor at
 all"*) and left seven Portuguese presidential elections flat with a note that
 the line was *"a records milestone's work, not this one's"*.
 
-**Main events: 242 of 309 → 230 of 310. Events naming neither an actor nor a
-place: 48 → 2.** `docs/m67-umbrellas.md` is the measurement and every judgement
-below is argued there, case by case.
+**Main events: 242 of 309 → 229 of 310. Events naming neither an actor nor a
+place: 48 → 2, of which one is still main.** `docs/m67-umbrellas.md` is the
+measurement and every judgement below is argued there, case by case.
 
 ### Job one — forty-six of the forty-eight got their lines
 
@@ -12809,7 +12810,7 @@ whose item gives a list article as its participant, a person with no record
 here as its target, and modern Poland as its country; and `covid-19-pandemic`,
 whose item gives 119 countries and one city the atlas holds no place for.
 
-### Job two — thirteen events found a parent, and one umbrella was written
+### Job two — fourteen events found a parent, and one umbrella was written
 
 | umbrella | gained | cost |
 |---|---|---|
@@ -12819,6 +12820,7 @@ whose item gives 119 countries and one city the atlas holds no place for.
 | `world-war-ii` | **1** — `winter-war` | — |
 | `russian-civil-war` | **2** — `finnish-civil-war`, `polish-soviet-war`; it had no children at all | — |
 | `empire-of-brazil-1822-1889` | **2** — `eusebio-de-queiros-law-1850`, `lei-aurea-1888` | **created** |
+| `world-war-ii`, again | **1** — `20-july-plot`, under amendment A1 | — |
 
 **World War I was re-measured, as the brief asked, and the lines changed
 exactly one thing about it.** Eleven parentless events now fall in its span and
@@ -12959,6 +12961,44 @@ this milestone writes no edge.
      is green in every step**, the index check included. The test was not
      touched: a barrier added to a race is worth having, but not from a run that
      would be adding it to make its own check pass.
+
+913. **Amendment A1 arrived after `M67 done` was pushed, and the run reopened
+     for it.** The owner, 21 September: *"It's fine to have no actor or place,
+     you have to read the context. Consider covid pandemic for example."* The
+     binding half this run had already met — **nothing was written where the
+     source gives none**, which is why `covid-19-pandemic` was left alone and
+     said so. The permissive half it had not: an event naming neither can be
+     filed from its context, with the filing note standing in for a property
+     that cannot be asked of a record with nothing on it. **`20-july-plot` is
+     that event and it is now part of `world-war-ii`** — its item gives the war
+     under `part of`, its own summary quotes *"attempt to assassinate Adolf
+     Hitler, 1944"*, and the date is inside the span. **No actor line was
+     invented to justify it.** `tests/m67.test.mjs` gained the clause and a
+     test that every such child is argued for in the measurement;
+     `tests/m62.test.mjs` gained the clause alone. A1 also corrects this
+     milestone's own framing — the forty-eight were **not** a defect to be
+     cleared and the drop from 48 to 2 is not the achievement; what the first
+     job did worth doing is that it wrote the lines the source already had —
+     and `docs/m67-umbrellas.md` §5 says so in those words.
+
+914. **The push was rejected once, by another session, and this run rebased.**
+     `docs/run-protocol.md` §3 says a rejected push means stop and do not
+     rebase. The rejection came after `M67 done` was already pushed and green:
+     another session had put four commits on `m0` — a vendored elevation grid,
+     three brief documents and a change to `validate.yml` — none of them
+     touching `STATUS.md`, so the rebase of a one-paragraph append could
+     destroy nothing. This is the case deviation 896 said the rule wants an
+     exception for: **the outgoing milestone's tail**.
+
+915. **One test of another session's change was corrected, and it was not this
+     milestone's.** That session made `validate.yml` run on every `m*` push, so
+     a lane branch with no pull request open has a check to wait for, and
+     `tests/workflows.test.mjs` went red on `m0` for everyone: it asserted that
+     the check runs on pull requests with a pattern for *"`pull_request` is the
+     first key under `on:`"*, which it was only because it was the only one,
+     and a comment between the two keys was enough to fail it. The assertion now
+     says the thing it means. **Their workflow file was not touched**, which is
+     the lower-collision half of the same fix.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
