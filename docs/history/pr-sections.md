@@ -2960,3 +2960,97 @@ not before it, because the two containers cannot see each other. **The claim
 line needs to name the runner, not only say that the lane is held** —
 `M45b started <instant> by scheduled` was true of both of them — and one of the
 two triggers is worth switching off.
+
+## M74 — the graph frames the walk it is asked to show
+
+Found by M42 (deviation 986, lane B) and paid for here. Lane A's sixth
+milestone, on the branch `m74`.
+
+Reading a narrative is a lens: the three views draw the walk, dim its
+neighbours and hide the rest. On the map and the timeline that held. **On the
+graph it did not** — the graph opens zoomed in to a rectangle and draws only
+what falls inside it (I6's cull), and where the layout puts a walk is a fact
+about the arrangement and not about the reader's choice. M42's new edges moved
+the arrangement, the colonial-war narrative lost most of its steps, and M42's
+run excepted the graph from the lens test rather than loosen the rule. **That
+exception is gone and all three views answer the same question the same way.**
+
+### The rule
+
+**At rest the camera is the window's**, exactly as it has been since deviation
+54: the first drawing zooms to a narrow band, capped, and a window that is most
+of the data is not zoomed to at all. Nothing about that changed.
+
+**With a lens on the camera is the lens's.** `src/graph-view/frame.js` is pure
+and is the whole of it: the bounds of a set of nodes, and the transform that
+puts them inside the rectangle the reader can see. The view offers it the lens
+**widest first** — everything the lens draws, then the focus alone — and the
+rule is one sentence: *the widest set that fits is the one framed, and the
+narrowest is the fallback*. An event chosen with a small ring is framed with
+its ring; the colonial-war walk is framed on its twelve steps; a focus larger
+than the pane is clamped to the view's own floor, which is the frame saying
+nothing about what is outside it rather than pretending to contain it. The cap
+is the window fit's own, so opening on a walk and opening on a narrow band go
+as far in as each other.
+
+**No change to the layout** — `layout*.js` decides where a node goes, this
+decides where the camera starts, and `lanes.js`, `cluster.js` and
+`emphasis.js` are untouched. **The URL carries no camera**: a link to a
+narrative opens on its walk because the walk is the lens.
+
+### Two things the framing found
+
+**The graph kept what may never be swallowed by a stack under the state
+object**, and a narrative's steps arrive after the state does. The answer
+computed before the walk existed stood, so eighteen of the walk's thirty-seven
+events were inside stacks that M25's rule says may never hold one — and a step
+inside a stack is not drawn at all, so no amount of framing would have fixed
+it. Keyed on the working set now.
+
+**And a frame can go stale.** The rectangle it is computed against is measured
+once and kept, and the first drawing of a view lands before the pane has
+settled. A walk framed to a pane thirty pixels taller than the one it ends in
+loses its outermost steps: the lens test passed in an 800 × 600 window and
+would have failed in a 1440 × 900 one. What was measured is part of the frame's
+key now, and the test asserts it at two sizes.
+
+### What first paint costs
+
+**Nothing measurable, and nothing at all at rest by construction** — the frame
+runs only when a lens is on. Measured anyway in a `before` worktree, three
+rounds of nine loads of `?view=graph`, medians 283 / 295 / 302 ms before
+against 290 / 303 / 301 ms after, the gap closing when the order of the two is
+reversed and the spread within one round being 268–394 ms.
+
+### Pictures
+
+`docs/screens/m74-graph-walk.png`, the twelve-step walk framed on the graph
+with every step on the screen, and `docs/screens/m74-graph-rest.png`, the same
+view at rest on the window `m60-graph` and `m65-graph-rest` were taken at —
+the picture this milestone promises not to have touched.
+
+### Tests
+
+`tests/m74.test.mjs` (6) and `tests/m74-browser.test.mjs` (3), written before
+the behaviour they judge (711, 717), and **the graph's exception removed from
+`tests/lens-browser.test.mjs`** first, so the suite was red for the right
+reason. That test now asks all three views the same thing and adds the one M74
+is about: a step is **on screen**, asserted from the boxes themselves as M61
+asserted the labels, and not merely in the document. **No test pins a count**
+and none pins a pixel — the resting opening is asserted as its two properties
+(a window that is most of the data is not zoomed to; a narrower one is centred
+in the pane), and the wide-ring case asserts that what the reader chose is on
+the screen and that nothing outside the lens is drawn.
+
+### Checks
+
+`node tools/validate.mjs --index`: **10,653 records, 5 regions, 0 errors, 238
+warnings**, byte-identical to a fresh build. **No record was touched and no
+historical claim written** — nothing under `data/` changed at all. `node --test`:
+**1,674 pure and 218 browser, 1,892 in all, 0 failed and 0 skipped**, the
+browser suites one at a time as the check runs them (M63). No new runtime
+dependency, no build step, **no new hex value, token or type size** — every
+constant the frame uses is one the view already had. No picture under
+`docs/screens/` was rewritten: M74's two were taken with `--only`, so every
+other one is the file it was. Nothing pushed to `m0` or `main`;
+`docs/drafts/` ignored. Deviations **990 to 995**.
