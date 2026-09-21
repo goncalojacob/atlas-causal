@@ -340,6 +340,14 @@ test('a large event is a band the height of the drawing, under the bars and with
     // same year in that lane and are drawn as one stack otherwise.
     await open(page, url(on('fixtures=1&group=region&selected=fixture-event-f')), READY);
     await waitFor(page, 'return document.querySelectorAll("#timeline .layer-bands rect").length > 0;', 'the band');
+    // And the band's own label, which is the event's name and arrives with its
+    // century (attributes.js). The wait above is "a band rect exists", which is
+    // true of a band drawn before the fixtures' titles are in: one run in
+    // twenty-four read `and says which event it is: '' !== 'Fixture event F'`.
+    // So it waits for the thing the assertion below reads.
+    await until(page, `
+      const label = document.querySelector('#timeline .layer-bandLabels text.large-band-label');
+      return Boolean(label && label.textContent);`);
 
     const band = await page.eval(`
       const svg = document.querySelector('#timeline svg.timeline');
