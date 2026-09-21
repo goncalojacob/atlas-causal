@@ -16,6 +16,54 @@ rule 27 makes a retraction on a non-retracted record an error. The reason is
 copied here verbatim, in the same commit, so that the account of the withdrawal
 survives the undoing of it.
 
+### `first-italo-ethiopian-war`
+
+Reinstated on `berlin-conference --precondition-of--> first-italo-ethiopian-war` and `first-italo-ethiopian-war --precondition-of--> second-italo-ethiopian-war`. Its reason named exactly what was missing — "no Berlin conference, no British ultimatum of 1890, no Mapa Cor-de-Rosa, no Italian invasion of 1935 that was fought to avenge this defeat" — and batch 4 wrote two of the four. The British ultimatum and the Pink Map are still missing and are still worth writing.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A: the neighbour is missing. The only route from
+> Adwa to anything Portuguese runs through the partition of Africa, and this
+> atlas holds none of it — no Berlin conference, no British ultimatum of
+> 1890, no Mapa Cor-de-Rosa, no Italian invasion of 1935 that was fought to
+> avenge this defeat. Every edge that could be written here would have to be
+> written to something that is not a record, and an edge from an Italian
+> defeat in Ethiopia to a Portuguese event would be an invention. The record
+> is sound and the atlas around it is not there yet.
+
+### `2013-egyptian-coup-d-etat`
+
+Reinstated on `2011-egyptian-revolution --precondition-of--> 2013-egyptian-coup-d-etat`. Its reason ends "the missing record is 2011", and 2011 arrived in batch 4.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class B. July 2013 argues from the Egyptian revolution
+> of 2011 and the Arab Spring, neither of which is a record here — the Arab
+> Spring is among the twenty-two that M44a’s import refused again for want
+> of a lane — and from the revolution of 1952, which this round wired at two
+> hops and which leaves 2013 at three. The missing record is 2011.
+
+### `gaza-war-2008-2009`
+
+Reinstated on `second-intifada --precondition-of--> gaza-war-2008-2009`. Its reason named the second intifada and the disengagement of 2005 as the records it needed; the intifada arrived in batch 4, and the article on the 2008 war opens its background with that intifada’s end.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A. Its neighbours are the Gaza records of 2023,
+> which the atlas holds and which reach no Portuguese event, and the second
+> intifada and the disengagement of 2005, which it does not hold. Retracted
+> rather than wired into a cluster that is stranded itself.
+
+### `south-sudanese-civil-war`
+
+Reinstated on `2011-south-sudanese-independence-referendum --precondition-of--> south-sudanese-civil-war`. Its reason named the independence of South Sudan as the record it lacked. The referendum arrived in batch 4, and the article on the war says the desire for independence is what kept the in-fighting in check for the six years before it. The war in Darfur, withdrawn beside it, is **not** put back, and docs/m42-connections.md §2f says why.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A, with the war in Darfur and the independence of
+> South Sudan, which is not a record here. Both of the neighbours it has are
+> the wrong side of the same gap.
+
 ### `1991-soviet-coup-d-etat-attempt`
 
 Reinstated on `1991-soviet-coup-d-etat-attempt --caused--> dissolution-of-the-soviet-union`. The neighbour its reason named is now a record.

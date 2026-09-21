@@ -636,6 +636,94 @@ the Egyptian revolution of 2011, and `war-in-darfur` with
 tombstones is now unblocked by a record in `data/`; what they need is the
 sentence that argues each edge, read at a revision, which is the next batch.
 
+## 2f. Batch 6 — the five batch 4 left without an edge
+
+Batch 4 imported thirteen records and eight of them earned an edge the same
+day. §2d listed the other five against the tombstone §5a names for each, and
+said the tombstones were now unblocked. This is that batch: **four
+reinstatements and eight edges**, and four of the five are no longer bare.
+
+- `berlin-conference --precondition-of--> second-boer-war` and
+  `berlin-conference --precondition-of--> first-italo-ethiopian-war`. The
+  English article on the conference, at revision 1369494326, § Aftermath,
+  lists the African states independent as of 1895 and what became of them:
+  the two Boer republics were annexed by the British Empire roughly a decade
+  after the conference and conquered in the Second Boer War of 1899–1902;
+  Ethiopia fended off an Italian invasion from Eritrea in the First
+  Italo-Ethiopian War of 1895–1896 and fell to Italian occupation in 1936
+  after defeat in the second. **`second-boer-war` is a record this atlas
+  already held**, so this is the edge that gives the conference — and
+  everything hanging off it — its place in the corpus rather than beside it.
+- `first-italo-ethiopian-war --precondition-of--> second-italo-ethiopian-war`.
+  The article on the war of 1935, at revision 1374151253, § Background, begins
+  with the war of 1896: Italy began its attempts to colonise the Horn in the
+  1880s, the first phase concluded with the defeat at Adwa on 1 March 1896,
+  and Italy then abandoned its expansionist plans for decades.
+- `1952-egyptian-revolution --precondition-of--> 2011-egyptian-revolution` and
+  `2011-egyptian-revolution --precondition-of--> 2013-egyptian-coup-d-etat`.
+  The article on the revolution of 2011, at revision 1374677056, § Background,
+  traces the system it rose against to 1952: Mubarak inherited an authoritarian
+  system imposed after the coup against King Farouk, which abolished the
+  monarchy and made Egypt a military-dominated one-party state, and he was in
+  the thirtieth year of his regime when the uprising began. The article on the
+  coup, at revision 1369875339, § Background, writes the two years between
+  Mubarak's resignation and the removal of Morsi. `1952-egyptian-revolution`
+  was already here, so the pair joins the corpus rather than standing beside it.
+- `second-intifada --precondition-of--> gaza-war` and
+  `second-intifada --precondition-of--> gaza-war-2008-2009`. The article on the
+  Gaza war, at revision 1375729607, § Background, names the First and Second
+  Intifadas of 1987 and 2000, "with the latter's end seeing Israel's unilateral
+  withdrawal from Gaza in 2005"; the article on the war of 2008–2009, at
+  revision 1370620825, § Background, opens with the ceasefire Abbas and Sharon
+  signed on 8 February 2005 to bring the intifada to an end, and dates its
+  breakdown to June 2006.
+- `2011-south-sudanese-independence-referendum --precondition-of--> south-sudanese-civil-war`.
+  The article on the war, at revision 1374713494, says the peace agreement of
+  2005 created an autonomous region with a promise of a referendum in 2011, and
+  that **during the six years of autonomy the desire for independence kept the
+  in-fighting within the SPLM in check**; the referendum passed with 98 per
+  cent and the state existed from 9 July 2011, and the war broke out in
+  December 2013. What the referendum removed is what the article names, and it
+  does not call it the cause.
+
+### What batch 6 did to the graph
+
+| | before | after |
+| --- | --: | --: |
+| active events | 354 | 358 |
+| main | 265 | 269 |
+| active edges | 424 | 432 |
+| **largest connected component** | **323** | **330** |
+| components | 22 | 18 |
+| active events with no edge at all | 16 | 11 |
+
+Seven of the eight new joins land in the largest component; the eighth, the
+South Sudanese pair, is a component of two, for the reason below.
+
+### What batch 6 refused
+
+- **`war-in-darfur` stays retracted.** Its reason says Sudan enters this atlas
+  nowhere and that the record would have to be wired to the South Sudanese
+  civil war and touch nothing else. The civil war is back, so the pair could
+  now be written — and it would still touch nothing else, because the war in
+  Darfur began in 2003, before the referendum, and no page read here argues a
+  line from one to the other. The record that would change this is the Second
+  Sudanese Civil War, which the atlas does not hold and which the sweep does.
+- **`majimaji-war` stays retracted.** The rising of 1905 in German East Africa
+  is a consequence of the scramble the Berlin conference regulated, and the
+  conference is now a record — but **no article read here names both**. The
+  conference's own aftermath lists what became of the independent states and
+  the Maji Maji article says the war was triggered by German colonial policies
+  designed to force the growing of cotton for export. Joining those two
+  sentences would be this run's inference and not anybody's page, which §1
+  forbids. It waits on a record of German East Africa, or on a page that says
+  it.
+- **`second-italo-ethiopian-war` carries no edge forward.** Its aftermath and
+  its section on international reaction, both read at revision 1374151253,
+  argue about Mussolini's standing and the League of Nations and name no event
+  this atlas holds. The missing record is the Abyssinia crisis, or Italy's
+  alignment with Germany, and neither is written here on this run's word.
+
 ## 3. The main count, and why it moved up
 
 Amendment A3: an import that leaves the main count higher than it found it has

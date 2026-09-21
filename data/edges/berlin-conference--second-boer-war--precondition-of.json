@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "berlin-conference--second-boer-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Berlin Conference\", revision 1369494326, § Aftermath"
+    }
+  ],
+  "from": "berlin-conference",
+  "to": "second-boer-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the conference lists, under its own aftermath, the states that were independent as of 1895 and were annexed by the British Empire roughly a decade after it — the two Boer republics among them — and says the Boer republics were conquered by the British in the Second Boer War of 1899 to 1902. The General Act the conference signed is what the article says regulated European colonisation and trade in Africa and agreed a common framework for recognising effective occupation; it does not say the conference decided this war, and this is drawn as a precondition for that reason.",
+  "dispute": null
+}

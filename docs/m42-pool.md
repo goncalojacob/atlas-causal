@@ -96,6 +96,7 @@ A5: a batch that grows the corpus and not the component has to say why.
 | 3 | the connection pass: 19 edges, both ends on records already here, no import | 332 | 244 | 88 | 406 | **301** | 11 |
 | 4 | the twelve hinges walked, thirteen records, 8 edges | 345 | 257 | 88 | 414 | **315** | 17 |
 | 5 | the nine tombstones those hinges unblock, 11 edges, one filing | 354 | 265 | 89 | 424 | **323** | 16 |
+| 6 | the five batch 4 left bare: 4 tombstones back, 8 edges | 358 | 269 | 89 | 432 | **330** | 11 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -252,8 +253,8 @@ item walked again is named in every report.
 
 ## 7. Where the run stands, for the fire that picks it up
 
-Six batches are on `m42` and each was validated, indexed and pushed before the
-next, so a killed run loses a batch and not the milestone.
+Seven batches are on `m42` and each was validated, indexed and pushed before
+the next, so a killed run loses a batch and not the milestone.
 
 | | what landed |
 | --- | --- |
@@ -263,37 +264,39 @@ next, so a killed run loses a batch and not the milestone.
 | batch 3 | the connection pass: 19 edges, no import, component 274 → 301 |
 | batch 4 | the hinges walked here: 13 records, 8 edges, component 301 → 315 |
 | batch 5 | the nine tombstones they unblock: 11 edges, one filing, 315 → 323 |
+| batch 6 | the five batch 4 left bare: 4 tombstones, 8 edges, 323 → 330 |
 
-**The Action cannot land an import**, and two runs proved it — §2d of
-`docs/m42-connections.md` has the reading and deviation 987 the short form.
-The job runs the suite before it commits, and an import that adds a record
-makes two prose measurements stale in the same breath, so every batch fails,
-`data/` is restored and nothing is committed. Batch 4 was therefore walked in
-this sandbox through `tools/import/wikidata.mjs`, which answers here now.
-**The seeds are exhausted again**: 715 items, 715 walked, nothing pending.
+**Where the milestone stands against its own done-condition.** The brief asks
+for an order of magnitude more active events than the 250 it was written
+against. The corpus holds **358**, up from 310, and its largest connected
+component holds **330 of them**, up from 254 — so the connectedness is nearly
+done and the volume is barely begun. **The volume is the sweep**: 1,586 rows
+the tool has already found and nobody has walked, and §5's tick rule, written
+before a box was ticked, is how they are chosen.
+
+**The Action cannot land an import**, and two runs proved it — §2d has the
+reading and deviation 987 the short form. Every batch from here is therefore
+walked in this sandbox, through `tools/import/wikidata.mjs`, which answers
+here now. The seeds are exhausted: 715 items, 715 walked.
 
 **A batch lands in two commits, not one** (deviation 798, re-learned as 982):
-the records, then the rebuilt index. The history shards are built out of the
-commits that touch each record's file, so the commit that writes a record
-makes the shard describing it stale in that same commit.
+the records, then the rebuilt index.
 
 **What the next fire does**, in this order:
 
-1. **The five of batch 4 that carry no edge**, each with a tombstone §5a names
-   against it and each of those tombstones now unblocked by a record in
-   `data/`: `first-italo-ethiopian-war` and `majimaji-war` for
-   `second-italo-ethiopian-war` and `berlin-conference`, `gaza-war-2008-2009`
-   for `second-intifada`, `2013-egyptian-coup-d-etat` for
-   `2011-egyptian-revolution`, and `war-in-darfur` with
-   `south-sudanese-civil-war` for
-   `2011-south-sudanese-independence-referendum`. Ten records, and the
-   sentence that argues each edge is a page nobody here has opened yet.
-2. **The fragments §4b names that no import reaches** — the Madeiran three,
-   the fires pair, the presidential-election singletons, `entente-cordiale`,
-   `iberian-blackout-2025`. The presidential elections are the cheapest.
-3. **The sweep**, whose 1,586 unwalked rows are untouched. §5's tick rule was
-   written before a box was ticked and is still the rule. An import of that
-   size has to be walked here for as long as deviation 987 holds, and each
-   batch has to re-measure `docs/m53-polities.md` §4.1 and name its bare
-   records in this file's §2 — which is what the runner cannot do and a run
-   can.
+1. **A sweep batch.** Tick by §5's rule, add the ids to
+   `data/imports/wikidata-seeds.json` → `items` with a lane and a class each,
+   walk them here, and connect every one of them the same day. The rate at
+   which this milestone can go is **the rate at which a person can read the
+   sentence that argues each edge**, which batches 3 to 6 put at roughly ten
+   to twenty records. It is not the rate at which records can be fetched, and
+   a batch that fetches a hundred and argues eight has not done the work.
+2. **Every batch re-measures** `docs/m53-polities.md` §4.1 and names its bare
+   records in §2 of `docs/m42-connections.md`. Those two obligations are what
+   the runner cannot discharge and a run can, and skipping them is what turns
+   a green tree red two commits later.
+3. **The fragments no import reaches**, when a batch has room: §4b names them
+   — the Madeiran three, the fires pair, the presidential-election singletons,
+   `entente-cordiale`, `iberian-blackout-2025` — and §2f names the three
+   records this run could not argue an edge for, each waiting on a page rather
+   than on a fetch.

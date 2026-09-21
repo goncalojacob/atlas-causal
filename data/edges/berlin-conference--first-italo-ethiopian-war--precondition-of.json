@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "berlin-conference--first-italo-ethiopian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Berlin Conference\", revision 1369494326, § Aftermath"
+    }
+  ],
+  "from": "berlin-conference",
+  "to": "first-italo-ethiopian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same section, listing the African states still independent after the conference, says Ethiopia fended off an Italian invasion from Eritrea in the First Italo-Ethiopian War of 1895–1896 and fell to Italian occupation in 1936 after defeat in the second. Eritrea is a colony of the scramble the General Act regulated, and the article names both wars as what became of Ethiopia in it.",
+  "dispute": null
+}

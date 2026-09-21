@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "first-italo-ethiopian-war",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -17,15 +17,12 @@
   "origin": {
     "tool": "wikidata"
   },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A: the neighbour is missing. The only route from Adwa to anything Portuguese runs through the partition of Africa, and this atlas holds none of it — no Berlin conference, no British ultimatum of 1890, no Mapa Cor-de-Rosa, no Italian invasion of 1935 that was fought to avenge this defeat. Every edge that could be written here would have to be written to something that is not a record, and an edge from an Italian defeat in Ethiopia to a Portuguese event would be an invention. The record is sound and the atlas around it is not there yet."
-  },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
   },
   "wikidata": "Q989115",
   "sitelinks": {
