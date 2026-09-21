@@ -154,3 +154,49 @@ test('the bands are ground and not a lens: choosing an event does not hide them'
     assert.equal(after, before, 'the bands are drawn whatever the lens hides');
   });
 });
+
+// §2.3's last clause, and the only one of its four the tests above do not
+// reach: **a row in the layer control**. It is not written into `index.html`
+// and it is not written here either — the control is built from
+// `manifest.base.layers`, so `relief` has a row by existing — which is exactly
+// why it is worth a test: a layer that arrives in the manifest by being on
+// disk can leave it the same way, and the row would go with it silently.
+//
+// `?fixtures=1` cannot answer this. The fixture dataset has no bands, so its
+// manifest has no `relief` layer and its control rightly has no row — which is
+// what `map-browser.test.mjs`'s list of seven switches is asserting, and why
+// that list is not this one.
+test('the bands have a row in the layer control, and it writes the link', { skip }, async () => {
+  await wide(async (page, url) => {
+    await open(page, url('?from=1911&to=1911'), DRAWN);
+    const row = await page.eval(`
+      const box = document.querySelector('.bar .layers input[data-layer="relief"]');
+      if (!box) return null;
+      const label = box.closest('label');
+      return {
+        checked: box.checked,
+        label: label.textContent.trim(),
+        swatch: Boolean(label.querySelector('.swatch-relief')),
+        inBaseGroup: Boolean(box.closest('#base-map')),
+        first: [...document.querySelectorAll('#base-map input[data-layer]')][0].dataset.layer,
+      };`);
+    assert.ok(row, 'the layer control has a row for the bands');
+    assert.equal(row.label, 'relief', 'labelled by its own id, as every base row is');
+    assert.ok(row.swatch, 'with the swatch that says what the tint means');
+    assert.ok(row.inBaseGroup, 'inside the collapsed base-map group and not beside the territories');
+    assert.equal(row.first, 'relief', 'and first in it, which is the order the map draws in');
+    assert.equal(row.checked, false, 'unticked, because the bands are off until a reader asks');
+
+    // And the switch is the link. Ticking it writes `relief` into `?layers=`,
+    // in `LAYERS` order and with every other layer carried over untouched —
+    // which is the whole of `layersFrom` (M68) exercised on the one member the
+    // default leaves out.
+    await page.eval(`document.querySelector('.bar .layers input[data-layer="relief"]').click(); return true;`);
+    await waitFor(page, 'return new URLSearchParams(location.search).has("layers");',
+      'the bands switched on to reach the address bar');
+    const written = await page.eval('return new URLSearchParams(location.search).get("layers").split(",");');
+    assert.deepEqual(written, [...LAYERS], 'the default plus the bands is every layer there is, in LAYERS order');
+    await waitFor(page, 'return document.querySelectorAll("#map .layer-base-relief path").length > 0;',
+      'the bands to be drawn once the switch is ticked');
+  });
+});
