@@ -3053,4 +3053,13 @@ dependency, no build step, **no new hex value, token or type size** — every
 constant the frame uses is one the view already had. No picture under
 `docs/screens/` was rewritten: M74's two were taken with `--only`, so every
 other one is the file it was. Nothing pushed to `m0` or `main`;
-`docs/drafts/` ignored. Deviations **990 to 995**.
+`docs/drafts/` ignored. Deviations **990 to 996**.
+
+**Two things about the run itself.** The check went red once, on the push that
+carried the framing: `tests/site.test.mjs` holds `CLAUDE.md`'s layout tree to
+the modules under `src/`, and a milestone that adds one has to name it there in
+the same push. And that same run passed all 217 browser tests on a commit whose
+frame was measured against a stale rectangle — **the check is blind to the size
+of the pane**, the fault shows at 1440 × 900 and not at the runner's own window,
+and it was found by taking the screenshot and looking at it. The test that
+catches it now asserts the walk at two sizes.

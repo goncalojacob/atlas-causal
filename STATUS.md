@@ -14918,12 +14918,26 @@ claim written.
      written. `git status` after the run listed the two new files and no
      modified png.
 
-995. **The tests were committed before the behaviour and the two commits were
-     pushed together, so the branch was never red on the remote.** The run
-     protocol asks for green at every commit and deviations 711 and 717 ask for
-     the tests to come first; the history has the order and the check has never
-     seen the red half. The suite was red locally in between, which is where it
-     was meant to be.
+995. **The tests were committed before the behaviour and the two were pushed
+     together — and the check went red anyway, on neither of them.** Deviations
+     711 and 717 ask for the tests to come first and the protocol asks for
+     green at every commit, so the red half was never pushed on its own. Run
+     1060 failed all the same: `tests/site.test.mjs` holds `CLAUDE.md`'s layout
+     tree to the modules under `src/`, and a milestone that adds a module has
+     to name it there in the same push. The full suite was run locally before
+     that push and would have said so; what was run was the pure suites, and
+     the one failure in 1,674 was read after the push rather than before it.
+     **A new file is a `CLAUDE.md` edit**, and the cheapest guard is
+     `node --test tests/site.test.mjs` before the first push of any run that
+     adds one.
+
+996. **The check is blind to the size of the pane, and that is why the run's
+     own defect nearly shipped.** Run 1060 passed all 217 browser tests on the
+     commit whose frame was measured against a stale rectangle: the runner's
+     window is not the 1440 × 900 one the fault appears in. It was found here
+     by taking the screenshot and looking at it, and the test that now catches
+     it asserts the walk at two pane sizes. A picture is worth taking before a
+     milestone is called done, and not only after.
 
 
 ## Milestones landed
