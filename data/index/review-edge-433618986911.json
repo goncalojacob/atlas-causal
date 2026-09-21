@@ -7003,7 +7003,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "ferreira-gomes-2014-1964"
       ],
       "created": "2026-09-18",
       "degree": 1,
@@ -7016,11 +7017,12 @@
       },
       "review": {
         "flags": [
-          "m57-narrative"
+          "m57-narrative",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "operation-brother-sam-1964",
       "type": "caused"
@@ -8407,7 +8409,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "craton-1982-testing-the-chains"
       ],
       "created": "2026-09-16",
       "from": "the-baptist-war-1831",
@@ -8419,11 +8422,12 @@
       },
       "review": {
         "flags": [
-          "m50-chain"
+          "m50-chain",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "slavery-abolition-act-1833",
       "type": "caused"

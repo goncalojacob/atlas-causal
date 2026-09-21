@@ -534,6 +534,47 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 1,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
+        "Michael Craton"
+      ],
+      "doi": null,
+      "id": "craton-1982-testing-the-chains",
+      "isbn": "9780801412523",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Cornell University Press",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Testing the Chains",
+      "type": "book",
+      "url": null,
+      "year": 1982
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
@@ -766,6 +807,48 @@
       "type": "book",
       "url": null,
       "year": 1999
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 1,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
+        "Jorge Ferreira",
+        "Angela de Castro Gomes"
+      ],
+      "doi": null,
+      "id": "ferreira-gomes-2014-1964",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Civilização Brasileira",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "1964: O golpe que derrubou um presidente, pôs fim ao regime democrático e instituiu a ditadura no Brasil",
+      "type": "book",
+      "url": "https://search.worldcat.org/search?q=1964+O+golpe+que+derrubou+um+presidente+Ferreira+Gomes",
+      "year": 2014
     },
     {
       "accessed": null,

@@ -347,6 +347,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "craton-1982-testing-the-chains",
+      "isbn": "9780801412523",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Testing the Chains",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
@@ -495,6 +522,33 @@
       "revised": null,
       "status": "active",
       "title": "A Concise History of Brazil",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "ferreira-gomes-2014-1964",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1964: O golpe que derrubou um presidente, pôs fim ao regime democrático e instituiu a ditadura no Brasil",
       "type": "book"
     },
     {

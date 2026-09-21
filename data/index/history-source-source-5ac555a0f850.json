@@ -212,6 +212,15 @@
         }
       ]
     },
+    "craton-1982-testing-the-chains": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "cshapes-2-0": {
       "from": "git",
       "versions": [
@@ -291,6 +300,15 @@
       ]
     },
     "fausto-1999-concise-history-of-brazil": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "ferreira-gomes-2014-1964": {
       "from": "git",
       "versions": [
         {
