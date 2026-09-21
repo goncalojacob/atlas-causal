@@ -1996,6 +1996,15 @@
         }
       ]
     },
+    "2023-brazilian-congress-attack": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "2023-madeiran-regional-election": {
       "from": "git",
       "versions": [
@@ -2988,6 +2997,15 @@
         }
       ]
     },
+    "eritrean-ethiopian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "espirito-santo-bank-of-campolide-robbery": {
       "from": "git",
       "versions": [
@@ -3670,6 +3688,15 @@
         }
       ]
     },
+    "libyan-civil-war-q16911838": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "lula-returns-to-the-presidency-2023": {
       "from": "git",
       "versions": [
@@ -3842,6 +3869,15 @@
             "category"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "myanmar-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -4543,6 +4579,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "united-nations-convention-against-corruption": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

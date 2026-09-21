@@ -830,6 +830,24 @@
     },
     {
       "dissent": false,
+      "id": "eritrean-war-of-independence--eritrean-ethiopian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Eritrean–Ethiopian War\", revision 1372677015, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "eritrean-war-of-independence--ethiopian-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Eritrean War of Independence\", revision 1374058781, § infobox"
+    },
+    {
+      "dissent": false,
+      "id": "eritrean-war-of-independence--ethiopian-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Ethiopian Civil War\", revision 1375950588, § lead"
+    },
+    {
+      "dissent": false,
       "id": "estado-novo-1933-1974--portuguese-colonial-war-1961-1974--precondition-of",
       "kind": "edge",
       "locator": "\"Portuguese Colonial War\", revision 1372834694, § lead"
@@ -839,6 +857,12 @@
       "id": "estonian-war-of-independence--treaty-of-tartu--caused",
       "kind": "edge",
       "locator": "\"Treaty of Tartu (Estonia–Russia)\", revision 1368812511, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "ethiopian-civil-war--eritrean-ethiopian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Eritrean–Ethiopian War\", revision 1372677015, § lead"
     },
     {
       "dissent": false,
@@ -995,6 +1019,12 @@
       "id": "franco-russian-alliance--world-war-i--precondition-of",
       "kind": "edge",
       "locator": "\"Franco-Russian Alliance\", revision 1375457134, § History"
+    },
+    {
+      "dissent": false,
+      "id": "french-conquest-of-morocco--rif-war--reacted-to",
+      "kind": "edge",
+      "locator": "\"French conquest of Morocco\", revision 1374837625, § Rif War"
     },
     {
       "dissent": false,
@@ -1175,6 +1205,12 @@
       "id": "heligoland-zanzibar-treaty--entente-cordiale--precondition-of",
       "kind": "edge",
       "locator": "\"Heligoland–Zanzibar Treaty\", revision 1372103388, § Consequences"
+    },
+    {
+      "dissent": false,
+      "id": "heligoland-zanzibar-treaty--zanzibar-revolution--precondition-of",
+      "kind": "edge",
+      "locator": "\"Zanzibar Revolution\", revision 1375266442, § Background"
     },
     {
       "dissent": false,
@@ -2234,6 +2270,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-civil-war--spanish-revolution--caused",
+      "kind": "edge",
+      "locator": "\"Spanish Revolution of 1936\", revision 1369913897, § lead"
+    },
+    {
+      "dissent": false,
       "id": "srebrenica-massacre--dayton-agreement--precondition-of",
       "kind": "edge",
       "locator": "\"Bosnian War\", revision 1375967053, § lead"
@@ -3149,6 +3191,12 @@
       "id": "war-of-attrition--yom-kippur-war--precondition-of",
       "kind": "edge",
       "locator": "\"War of Attrition\", revision 1371500938, § Egyptian front"
+    },
+    {
+      "dissent": false,
+      "id": "white-revolution--iranian-revolution--precondition-of",
+      "kind": "edge",
+      "locator": "\"White Revolution\", revision 1364402941, § lead and § Opposition"
     },
     {
       "dissent": false,

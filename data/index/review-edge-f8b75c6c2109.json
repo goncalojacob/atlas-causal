@@ -5274,6 +5274,62 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
+      "from": "eritrean-war-of-independence",
+      "id": "eritrean-war-of-independence--eritrean-ethiopian-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "eritrean-ethiopian-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "eritrean-war-of-independence",
+      "id": "eritrean-war-of-independence--ethiopian-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "ethiopian-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
       "from": "estado-novo-1933-1974",
       "id": "estado-novo-1933-1974--portuguese-colonial-war-1961-1974--precondition-of",
       "kind": "edge",
@@ -5318,6 +5374,34 @@
       "status": "active",
       "to": "treaty-of-tartu",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "ethiopian-civil-war",
+      "id": "ethiopian-civil-war--eritrean-ethiopian-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "eritrean-ethiopian-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -5881,6 +5965,34 @@
       "status": "active",
       "to": "world-war-i",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "french-conquest-of-morocco",
+      "id": "french-conquest-of-morocco--rif-war--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "rif-war",
+      "type": "reacted-to"
     },
     {
       "authors": [
@@ -6710,6 +6822,34 @@
       "revised": null,
       "status": "active",
       "to": "entente-cordiale",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "heligoland-zanzibar-treaty",
+      "id": "heligoland-zanzibar-treaty--zanzibar-revolution--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "zanzibar-revolution",
       "type": "precondition-of"
     },
     {
@@ -11188,6 +11328,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "spanish-civil-war",
+      "id": "spanish-civil-war--spanish-revolution--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "spanish-revolution",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "telo-2007-historia-contemporanea"
       ],
       "created": "2026-09-02",
@@ -13968,6 +14136,34 @@
       "revised": null,
       "status": "active",
       "to": "yom-kippur-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "white-revolution",
+      "id": "white-revolution--iranian-revolution--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "iranian-revolution",
       "type": "precondition-of"
     },
     {

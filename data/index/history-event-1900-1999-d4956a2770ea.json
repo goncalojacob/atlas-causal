@@ -3837,6 +3837,24 @@
         }
       ]
     },
+    "african-charter-on-human-and-peoples-rights": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "agreement-concerning-the-international-carriage-of-dangerous-goods-by-road": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "algerian-war": {
       "from": "git",
       "versions": [
@@ -6532,6 +6550,15 @@
             "sitelinks"
           ],
           "on": "2026-09-04"
+        }
+      ]
+    },
+    "eritrean-war-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -10014,6 +10041,15 @@
         }
       ]
     },
+    "rif-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "robbery-of-banco-borges-irmao-in-monte-dos-burgos-porto-november-4-1977": {
       "from": "git",
       "versions": [
@@ -10884,6 +10920,15 @@
         }
       ]
     },
+    "sierra-leone-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "single-european-act": {
       "from": "git",
       "versions": [
@@ -11091,6 +11136,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "spanish-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -11517,6 +11571,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-of-lhasa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -12169,6 +12232,15 @@
         }
       ]
     },
+    "white-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "winter-war": {
       "from": "git",
       "versions": [
@@ -12473,6 +12545,15 @@
             "status"
           ],
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "zanzibar-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     }

@@ -2046,6 +2046,24 @@
         }
       ]
     },
+    "eritrean-war-of-independence--eritrean-ethiopian-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "eritrean-war-of-independence--ethiopian-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "estado-novo-1933-1974--portuguese-colonial-war-1961-1974--precondition-of": {
       "from": "git",
       "versions": [
@@ -2056,6 +2074,15 @@
       ]
     },
     "estonian-war-of-independence--treaty-of-tartu--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "ethiopian-civil-war--eritrean-ethiopian-war--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -2217,6 +2244,15 @@
       ]
     },
     "first-vienna-award--slovak-hungarian-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "french-conquest-of-morocco--rif-war--reacted-to": {
       "from": "git",
       "versions": [
         {
@@ -3847,6 +3883,15 @@
         }
       ]
     },
+    "spanish-civil-war--spanish-revolution--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "spinola-resigns-1974--coup-attempt-11-march-1975--precondition-of": {
       "from": "git",
       "versions": [
@@ -4354,6 +4399,15 @@
       ]
     },
     "war-of-attrition--yom-kippur-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "white-revolution--iranian-revolution--precondition-of": {
       "from": "git",
       "versions": [
         {

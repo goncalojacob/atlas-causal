@@ -64,6 +64,15 @@
         }
       ]
     },
+    "1893-franco-siamese-crisis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "1894-portuguese-legislative-election": {
       "from": "git",
       "versions": [

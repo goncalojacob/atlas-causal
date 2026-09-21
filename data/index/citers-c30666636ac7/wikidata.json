@@ -1178,6 +1178,18 @@
     },
     {
       "dissent": false,
+      "id": "eritrean-ethiopian-war",
+      "kind": "event",
+      "locator": "Q832273"
+    },
+    {
+      "dissent": false,
+      "id": "eritrean-war-of-independence",
+      "kind": "event",
+      "locator": "Q607257"
+    },
+    {
+      "dissent": false,
       "id": "estado-novo-1933-1974",
       "kind": "event",
       "locator": "Q824489"
@@ -1778,6 +1790,12 @@
     },
     {
       "dissent": false,
+      "id": "rif-war",
+      "kind": "event",
+      "locator": "Q766437"
+    },
+    {
+      "dissent": false,
       "id": "romanian-revolution-1989",
       "kind": "event",
       "locator": "Q204213"
@@ -1955,6 +1973,12 @@
       "id": "spanish-civil-war",
       "kind": "event",
       "locator": "Q10859"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-revolution",
+      "kind": "event",
+      "locator": "Q1982745"
     },
     {
       "dissent": false,
@@ -2222,6 +2246,12 @@
     },
     {
       "dissent": false,
+      "id": "white-revolution",
+      "kind": "event",
+      "locator": "Q1068139"
+    },
+    {
+      "dissent": false,
       "id": "winter-war",
       "kind": "event",
       "locator": "Q134949"
@@ -2261,6 +2291,12 @@
       "id": "yugoslav-wars",
       "kind": "event",
       "locator": "Q242352"
+    },
+    {
+      "dissent": false,
+      "id": "zanzibar-revolution",
+      "kind": "event",
+      "locator": "Q75844"
     },
     {
       "dissent": false,
