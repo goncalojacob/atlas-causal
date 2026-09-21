@@ -97,6 +97,7 @@ A5: a batch that grows the corpus and not the component has to say why.
 | 4 | the twelve hinges walked, thirteen records, 8 edges | 345 | 257 | 88 | 414 | **315** | 17 |
 | 5 | the nine tombstones those hinges unblock, 11 edges, one filing | 354 | 265 | 89 | 424 | **323** | 16 |
 | 6 | the five batch 4 left bare: 4 tombstones back, 8 edges | 358 | 269 | 89 | 432 | **330** | 11 |
+| 7 | the first sweep batch: 10 imported, 1 tombstone back, 18 edges, one filing | 369 | 279 | 90 | 450 | **349** | 11 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -265,19 +266,24 @@ the next, so a killed run loses a batch and not the milestone.
 | batch 4 | the hinges walked here: 13 records, 8 edges, component 301 → 315 |
 | batch 5 | the nine tombstones they unblock: 11 edges, one filing, 315 → 323 |
 | batch 6 | the five batch 4 left bare: 4 tombstones, 8 edges, 323 → 330 |
+| batch 7 | the first sweep batch: 10 imports, 1 tombstone, 18 edges, 330 → 349 |
 
 **Where the milestone stands against its own done-condition.** The brief asks
 for an order of magnitude more active events than the 250 it was written
-against. The corpus holds **358**, up from 310, and its largest connected
-component holds **330 of them**, up from 254 — so the connectedness is nearly
-done and the volume is barely begun. **The volume is the sweep**: 1,586 rows
-the tool has already found and nobody has walked, and §5's tick rule, written
-before a box was ticked, is how they are chosen.
+against. The corpus holds **369**, up from 310, and its largest connected
+component holds **349 of them**, up from 254 — so the connectedness is nearly
+done and the volume is barely begun. **The volume is the sweep**: **1,573 rows**
+the tool has already found and nobody has walked, recomputed against `data/` on
+21 September after batch 7, and §5's tick rule, written before a box was ticked,
+is how they are chosen. Batch 7 is the first batch taken by that rule: sets 1
+and 2 are nearly spent — set 1 entirely — and from here the sweep is sets 3 and
+4, which is where the volume actually is.
 
 **The Action cannot land an import**, and two runs proved it — §2d has the
 reading and deviation 987 the short form. Every batch from here is therefore
 walked in this sandbox, through `tools/import/wikidata.mjs`, which answers
-here now. The seeds are exhausted: 715 items, 715 walked.
+here now. The seeds are exhausted as fast as they are written: 725 items, 725
+walked.
 
 **A batch lands in two commits, not one** (deviation 798, re-learned as 982):
 the records, then the rebuilt index.
@@ -300,3 +306,6 @@ the records, then the rebuilt index.
    `entente-cordiale`, `iberian-blackout-2025` — and §2f names the three
    records this run could not argue an edge for, each waiting on a page rather
    than on a fetch.
+4. **Sudan is the one fragment a sweep row cannot reach**, and §2g says why:
+   four records joined to each other and to nothing else. It waits on a page
+   that relates one of them to something this atlas holds, not on a fetch.

@@ -13713,6 +13713,21 @@ Wikidata; they are in `data/events/` with `status: retracted`.
 
 ### Deviations
 
+993. **Three edges of batch 7 satisfy rule 9 and were kept `probable` anyway.**
+     §1 of `docs/m42-connections.md` says no edge this milestone writes is
+     `consensus`, and gives the reason: the English and Portuguese Wikipedias
+     are one author, so an edge citing only them cannot reach two. Batch 7's
+     edges into the Armistice of Mudros, the Croat–Bosniak war and the
+     partition of India each carry a second author — Fromkin 2009, Goldstein
+     1999, Metcalf and Metcalf 2006 — because the cited article hangs the very
+     sentence on that work, which is the route the owner's decision of
+     16 September opens and the standard M72 set. **So the stated reason no
+     longer holds for those three and the confidence was not raised**, because
+     M72's own test is that two authors say the same thing and this run did not
+     open the second book to check that it does. It is a promotion a reviewer
+     can make on `review.html` with the page in front of them, and it is named
+     here rather than taken.
+
 991. **A row of `docs/m42-pool.md` was written before an undoing and said 256
      main and 89 filed where the committed tree says 257 and 88.** Batch 4
      measured the corpus with `war-in-bosnia-and-herzegovina` filed under

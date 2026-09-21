@@ -54,6 +54,23 @@ Its M44b retraction read, verbatim:
 > intifada and the disengagement of 2005, which it does not hold. Retracted
 > rather than wired into a cluster that is stranded itself.
 
+### `war-in-darfur`
+
+Reinstated on `second-sudanese-civil-war --precondition-of--> war-in-darfur`.
+Its reason said Sudan enters this atlas nowhere and that the record would have
+to be wired to the South Sudanese civil war and would touch nothing else; §2f
+of `docs/m42-connections.md` refused to put it back on those terms when the
+civil war returned, and named the missing record by name. Batch 7 imported it.
+The pair is still a small component that reaches nothing else, and §2g says so
+rather than writing an edge nobody argues.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A: the neighbour is missing. Sudan enters this
+> atlas nowhere. The record would have to be wired to the South Sudanese civil
+> war, imported in the same batch and retracted in the same commit, and the
+> pair would touch nothing else.
+
 ### `south-sudanese-civil-war`
 
 Reinstated on `2011-south-sudanese-independence-referendum --precondition-of--> south-sudanese-civil-war`. Its reason named the independence of South Sudan as the record it lacked. The referendum arrived in batch 4, and the article on the war says the desire for independence is what kept the in-fighting in check for the six years before it. The war in Darfur, withdrawn beside it, is **not** put back, and docs/m42-connections.md §2f says why.

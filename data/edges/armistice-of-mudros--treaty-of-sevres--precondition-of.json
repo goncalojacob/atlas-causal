@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "armistice-of-mudros--treaty-of-sevres--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Armistice of Mudros\", revision 1369160266, § lead"
+    }
+  ],
+  "from": "armistice-of-mudros",
+  "to": "treaty-of-sevres",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article's lead puts the two in that order and in that relation: the armistice was followed by the occupation of Istanbul and the subsequent partitioning of the Ottoman Empire, and the Treaty of Sèvres of 10 August 1920, signed in the aftermath of the First World War, imposed harsh terms on the Ottoman Empire. The armistice is what opened the Straits and the capital to the Allies; the terms came later and are the treaty's, not the armistice's.",
+  "dispute": null
+}

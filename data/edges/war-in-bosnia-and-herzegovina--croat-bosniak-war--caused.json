@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "war-in-bosnia-and-herzegovina--croat-bosniak-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bosnian War\", revision 1375967053, § lead"
+    }
+  ],
+  "from": "war-in-bosnia-and-herzegovina",
+  "to": "croat-bosniak-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the Bosnian war says the conflict was initially between Yugoslav Army units in Bosnia, later the VRS, on one side and the ARBiH and the Croat forces of the HVO on the other, and that tensions between Croats and Bosniaks increased throughout late 1992, resulting in the escalation of the Croat–Bosniak war in early 1993. The article on the smaller war calls it a war within a war for that reason: the allies of the first year turned on each other inside it.",
+  "dispute": null
+}

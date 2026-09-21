@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "world-war-i--armistice-of-mudros--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Armistice of Mudros\", revision 1369160266, § Background"
+    },
+    {
+      "source": "fromkin-2009-peace-to-end-all-peace",
+      "locator": "pp. 360–373"
+    }
+  ],
+  "from": "world-war-i",
+  "to": "armistice-of-mudros",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article's background is the war closing on the Ottoman government: the Macedonian front collapsed in September 1918 and Bulgaria sued for peace, leaving Constantinople to be defended against an overland siege without Bulgarian help; Talaat Pasha returned from Berlin and Sofia understanding that the war was no longer winnable, and resigned with his ministry on 13 October; two days after taking office Ahmed Izzet Pasha sent the captured British general Townshend to the Allies to seek terms. The article hangs that account on Fromkin 2009, pages 360 to 373, which is the second author here. It is the war ending, not a policy the Ottomans chose freely.",
+  "dispute": null
+}

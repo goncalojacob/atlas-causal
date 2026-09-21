@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "single-european-act--maastricht-treaty--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Single European Act\", revision 1324525488, § lead"
+    }
+  ],
+  "from": "single-european-act",
+  "to": "maastricht-treaty",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says that, anticipating the 1992 Maastricht Treaty, the Act's signatories declared themselves moved by the will to continue the work undertaken on the basis of the treaties establishing the European Communities and to transform relations as a whole among their states into a European Union. The article also calls the Act a forerunner of the Union's Common Foreign and Security Policy, which Maastricht is where that became a pillar.",
+  "dispute": null
+}

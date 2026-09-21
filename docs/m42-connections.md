@@ -724,6 +724,242 @@ South Sudanese pair, is a component of two, for the reason below.
   this atlas holds. The missing record is the Abyssinia crisis, or Italy's
   alignment with Germany, and neither is written here on this run's word.
 
+## 2g. Batch 7 — the first sweep batch, and the treaties that end the wars the atlas holds
+
+The seeds were exhausted after batch 2a, so this is the first batch taken from
+the sweep by §5's tick rule, recomputed against `data/` on the day of ticking.
+**Set 1 is empty**: of the sixteen named neighbours, fifteen are records now
+and the sixteenth, the Arab Spring, is the refusal of deviation 975 and stays
+refused. **Set 2 — the bridges out of the fragments named in §4b — gives
+three**: `Q652285`, the India–Pakistan war of 1947–1948, for the South Asian
+component; `Q1069736`, the Croat–Bosniak war, for the Bosnian pair; `Q842380`,
+the Second Sudanese Civil War, which §2f named in as many words as the record
+that would let `war-in-darfur` come back. **Set 4 takes the remaining seven by
+sitelinks**, every one of them a treaty or an armistice that ends or amends
+something this atlas already holds, which is why they connect on the day they
+arrive rather than waiting for a neighbour.
+
+Ten items seeded, ten walked, **ten created, none refused, 22 calls**. One
+class was added to the class table and read from Wikidata itself — `Q107706`,
+*armistice*, the only class `Q328499` carries — and five lanes were written for
+the items whose own point the import cannot reach. One tombstone came back.
+
+### The edges
+
+Seventeen edges, and the eighteenth is the reinstatement's. Three carry a
+second author, each a work the cited article hangs the very sentence on, which
+is the standard M72 set; the rest cite the encyclopedia alone with the article,
+the revision and the section, because for those sentences the article cites
+nothing. **Every one is `probable`.** Three of them would satisfy rule 9 as
+they stand, and none was promoted: M72's own test is that two authors say the
+same thing, and this run did not open the second book to check that it does.
+
+#### `world-war-i --caused--> armistice-of-mudros`
+
+The Background of *"Armistice of Mudros"*, revision 1369160266: the Macedonian
+front collapsed in September 1918 and Bulgaria sued for peace, leaving
+Constantinople to be defended against an overland siege without Bulgarian help;
+Talaat Pasha returned from Berlin and Sofia understanding the war was no longer
+winnable and resigned with his ministry on 13 October; two days after taking
+office Ahmed Izzet Pasha sent the captured British general Townshend to seek
+terms. **Second author: Fromkin 2009, pp. 360–373**, which the article hangs
+that account on.
+
+#### `armistice-of-mudros --precondition-of--> treaty-of-sevres`
+
+The same article's lead: the armistice was followed by the occupation of
+Istanbul and the subsequent partitioning of the Ottoman Empire, and the Treaty
+of Sèvres of 10 August 1920 imposed harsh terms. The armistice opened the
+Straits and the capital; the terms are the treaty's.
+
+#### `world-war-i --caused--> treaty-of-neuilly-sur-seine`
+
+*"Treaty of Neuilly-sur-Seine"*, revision 1370636231, lead: a treaty between the
+victorious Allies of the First World War and Bulgaria, one of the defeated
+Central Powers, requiring Bulgaria to cede various territories, and one of the
+series of treaties after the war — with Versailles, Saint-Germain, Trianon and
+Sèvres — intended to diminish the strength of the defeated.
+
+#### `polish-soviet-war --caused--> peace-of-riga`
+
+*"Treaty of Riga"*, revision 1368931640, lead: signed in Riga on 18 March 1921
+between Poland on one side and Soviet Russia and Soviet Ukraine on the other,
+**ending the Polish–Soviet War of 1919 to 1921**.
+
+#### `treaty-of-versailles --precondition-of--> locarno-treaties`
+
+*"Locarno Treaties"*, revision 1373366462, lead: the five western European
+states pledged to guarantee the inviolability of the borders between Germany
+and France and Germany and Belgium **as defined in the Treaty of Versailles**,
+and to observe the demilitarised Rhineland — with no guarantee of the eastern
+border, which the article says left the path open to revising Versailles in the
+east.
+
+#### `winter-war --caused--> moscow-peace-treaty`
+
+*"Moscow Peace Treaty"*, revision 1355516673, lead: signed by Finland and the
+Soviet Union on 12 March 1940, it **marked the end of the 105-day Winter War**,
+upon which Finland ceded border areas.
+
+#### `moscow-peace-treaty --precondition-of--> continuation-war`
+
+*"Continuation War"*, revision 1375847616, lead: the Winter War ended with the
+Moscow Peace Treaty, and numerous reasons have been proposed for the Finnish
+decision to invade, **regaining territory lost during the Winter War regarded as
+the most common**. The article names other motives beside it, so the treaty is
+where it starts and not the whole of what it says decided the war.
+
+#### `treaty-of-rome --precondition-of--> single-european-act`
+
+*"Single European Act"*, revision 1324525488, lead: **the first major revision of
+the 1957 Treaty of Rome**, setting the objective of a single market by
+31 December 1992 and reforming the legislative process.
+
+#### `single-european-act --precondition-of--> maastricht-treaty`
+
+The same article: **anticipating the 1992 Maastricht Treaty**, the signatories
+declared themselves moved by the will to transform relations among their states
+into a European Union.
+
+#### `1991-soviet-coup-d-etat-attempt --precondition-of--> belovezh-accords`
+
+*"Belovezha Accords"*, revision 1373420915, lead, quoting Shushkevich in 2006:
+by December **the union had already been broken up by the putschists** who in
+August 1991 tried to remove Gorbachev to prevent the transformation of the
+Soviet Union into a confederation. A participant's account of why the three
+met, reported as that and not as a settled finding.
+
+#### `belovezh-accords --caused--> dissolution-of-the-soviet-union`
+
+The same article's first sentence: the agreement **declared that the Soviet
+Union had effectively ceased to exist** and established the Commonwealth of
+Independent States in its place, signed near Viskuli on 8 December 1991 by the
+leaders of three of the four republics that had signed the 1922 treaty creating
+the USSR. The formal dissolution, which this atlas dates 26 December, followed.
+
+#### `croatian-war-of-independence --precondition-of--> croat-bosniak-war`
+
+*"Croat–Bosniak War"*, revision 1373788616, Background: from July 1991 to
+January 1992, **during the Croatian War of Independence**, the JNA and Serb
+paramilitaries used Bosnian territory to attack Croatia, and the Croatian
+government began arming Croats in Herzegovina as early as October or November
+1991, expecting the Serbs to spread the war into Bosnia and Herzegovina; by
+late 1991 about 20,000 Bosnian Croats had enlisted in the Croatian National
+Guard. **Second author: Goldstein 1999, p. 243.**
+
+#### `war-in-bosnia-and-herzegovina --caused--> croat-bosniak-war`
+
+*"Bosnian War"*, revision 1375967053, lead: the conflict was initially between
+Yugoslav Army units, later the VRS, on one side and the ARBiH and the Croat HVO
+on the other, and **tensions between Croats and Bosniaks increased throughout
+late 1992, resulting in the escalation of the Croat–Bosniak war in early 1993**.
+This is the edge that puts the Bosnian pair into the largest component: it runs
+from a record that was stranded to one that is not.
+
+#### `partition-of-india --caused--> indo-pakistani-war-of-1947-1948`
+
+*"India–Pakistan war of 1947–1948"*, revision 1373782125, lead: the first of the
+India–Pakistan wars **between the two newly independent nations**, precipitated
+by Pakistan a few weeks after its independence to capture Kashmir and pre-empt
+its ruler joining India.
+
+#### `world-war-ii --precondition-of--> partition-of-india`
+
+*"Partition of India"*, revision 1374133022, § *Labour victory in the UK
+election, decision to decolonize: 1945*: the Attlee government's exchequer **had
+been exhausted by the Second World War** and the British public did not appear
+enthusiastic about costly distant involvements; late in 1945 the government
+decided to end the British Raj. **Second author: Metcalf and Metcalf 2006,
+p. 212** — *"though victorious in war, Britain had suffered immensely in the
+struggle. It simply did not possess the manpower or economic resources required
+to coerce a restive India."* **This is the edge that brings the South Asian
+component of six into the corpus**, and it imports nothing: the partition was
+already here and had nothing before it.
+
+#### `soviet-afghan-war --precondition-of--> dissolution-of-the-soviet-union`
+
+*"Soviet–Afghan War"*, revision 1375699993, lead: the decade-long confrontation
+**has been cited by scholars as a significant factor contributing to the
+dissolution of the Soviet Union in 1991**, which is why it is sometimes called
+the Soviet Union's Vietnam. Reported as what scholars have said, and as one
+factor among others. **This is the edge that brings the Afghan pair in**, and it
+too imports nothing — §4b said the pair waited on the September 11 attacks *or*
+on the dissolution, and the dissolution arrived in batch 4.
+
+#### `second-sudanese-civil-war --precondition-of--> 2011-south-sudanese-independence-referendum`
+
+*"Second Sudanese Civil War"*, revision 1375675485, lead: the war ran 1983 to
+2005 and **resulted in the independence of South Sudan six years after it
+ended**; *"2011 South Sudanese independence referendum"*, revision 1362366338,
+lead: the vote was **one of the consequences of the 2005 Naivasha Agreement**.
+Both citations are the encyclopedia, so this link rests on one author and says
+so.
+
+#### `second-sudanese-civil-war --precondition-of--> war-in-darfur`
+
+*"War in Darfur"*, revision 1375318567, § *Origins of the conflict*: the article
+gives several different explanations for the conflict that began in 2003 — land
+disputes between herders and farmers, access to water, the two rebel groups
+against Khartoum — and among them says **the Darfur crisis is also related to
+the First and Second Sudanese civil wars**. The article relates them and does
+not rank them, and the edge is written at the strength the page gives it.
+
+### The one filing, and the ten left bare
+
+**`croat-bosniak-war` is filed under `war-in-bosnia-and-herzegovina`**, and it
+names neither an actor nor a place, so M67's amendment A1 asks for the argument
+here. It is the record's own context and none of it is new: the English article
+calls the war **"a war within a war" because it was part of the larger Bosnian
+War**, its Wikidata item gives Bosnia and Herzegovina as its location, and its
+span of 18 October 1992 to 23 February 1994 sits inside the Bosnian war's
+6 April 1992 to 14 December 1995. Nothing else was written on the record —
+**no actor line was invented to justify the filing**, which is the whole of A1.
+
+The other ten — `armistice-of-mudros`, `treaty-of-neuilly-sur-seine`,
+`peace-of-riga`, `locarno-treaties`, `moscow-peace-treaty`,
+`single-european-act`, `belovezh-accords`,
+`indo-pakistani-war-of-1947-1948`, `second-sudanese-civil-war` and
+`war-in-darfur` — **name neither an actor nor a place and are left main**, which
+A1 settles: bareness is not a defect. Seven of them are treaties, and a treaty
+between states is the amendment's own case: it has no single actor and no one
+place, and a line written to give it one would be a claim the record does not
+support. The three wars could each be argued into something — the Indian one
+into the Kashmir conflict, the Sudanese pair into each other — and **§3 of
+`docs/m62-brief.md` says that where the filing is arguable the event stays
+top-level and is listed**, which is what this paragraph is. No actor record was
+created to make any of them filable.
+
+### What batch 7 did to the graph
+
+| | before | after |
+| --- | --: | --: |
+| active events | 358 | 369 |
+| main | 269 | 279 |
+| active edges | 432 | 450 |
+| **largest connected component** | **330** | **349** |
+| components | 18 | 15 |
+| active events with no edge at all | 11 | 11 |
+| active events unreachable from any Portuguese one | 13 | 5 |
+
+**The component grew by nineteen and the corpus by eleven**, which is amendment
+A5's question answered the right way round: eight of the nineteen are records
+that were already here and stranded — the South Asian six, minus the partition
+which the batch reached directly, and the Afghan pair — and they came in on two
+edges that imported nothing at all. The eleven with no edge are unchanged and
+are the same eleven: the Madeiran three now sit in a component of three, the
+eight Portuguese presidential singletons and `entente-cordiale`,
+`iberian-blackout-2025` and the fires pair are untouched by a world sweep and
+are named in §4b as the cheapest thing left.
+
+**The one place the corpus grew and the component did not** is Sudan. Both
+Sudanese records join the South Sudanese pair, making a component of four, and
+that component reaches nothing else: the referendum, the civil war, the war in
+Darfur and the war that preceded all three are joined to each other and to
+nothing this atlas holds. The record that would join them is the Berlin
+conference's own aftermath in the Nile valley, or a Portuguese or European
+event the pages relate to Sudan, and **no page read here names one**. It is
+written down rather than fixed by an edge nobody argues.
+
 ## 3. The main count, and why it moved up
 
 Amendment A3: an import that leaves the main count higher than it found it has
@@ -767,6 +1003,15 @@ has something to file into, and the umbrellas the world corpus wants — the
 Cold War, the Yugoslav wars, the Arab Spring, the Afghan conflict — are
 records in the pool rather than inventions. What would be wrong is to file
 these seven under an umbrella made up to hold them.
+
+**Batch 7 leaves it at 279 against 269**, ten higher, and the arithmetic is
+eleven records in and one filed: `croat-bosniak-war` under
+`war-in-bosnia-and-herzegovina`, argued in §2g. The other ten are seven
+treaties, two wars and a reinstated war, and §2g says of each why it stayed
+top-level — seven because a treaty between states is part of no event here, and
+three because the filing is arguable and M62 §3 says an arguable filing is
+listed rather than made. **The count moved because the corpus did, and the one
+record that could be filed was.**
 
 ## 4. What these batches refused to write
 

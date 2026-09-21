@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "belovezh-accords--dissolution-of-the-soviet-union--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Belovezha Accords\", revision 1373420915, § lead"
+    }
+  ],
+  "from": "belovezh-accords",
+  "to": "dissolution-of-the-soviet-union",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article's first sentence is that the agreement declared that the Soviet Union had effectively ceased to exist and established the Commonwealth of Independent States in its place, signed near Viskuli in Belovezhskaya Pushcha on 8 December 1991 by the leaders of three of the four republics that had signed the 1922 treaty creating the USSR. The formal dissolution followed later in the month; this is the document that declared it.",
+  "dispute": null
+}

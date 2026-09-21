@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "winter-war--moscow-peace-treaty--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Moscow Peace Treaty\", revision 1355516673, § lead"
+    }
+  ],
+  "from": "winter-war",
+  "to": "moscow-peace-treaty",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article's lead says the treaty was signed by Finland and the Soviet Union on 12 March 1940 and marked the end of the 105-day Winter War, upon which Finland ceded border areas to the Soviet Union. The article adds that the terms were not reversed after the dissolution of the Soviet Union, which is the treaty's own afterlife and not part of this link.",
+  "dispute": null
+}

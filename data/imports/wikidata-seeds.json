@@ -717,7 +717,17 @@
     "Q29198",
     "Q12055176",
     "Q207950",
-    "Q13582"
+    "Q13582",
+    "Q652285",
+    "Q1069736",
+    "Q842380",
+    "Q328499",
+    "Q152925",
+    "Q269267",
+    "Q1076469",
+    "Q695285",
+    "Q622649",
+    "Q76986"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -744,7 +754,12 @@
     "Q29198": "africa",
     "Q12055176": "africa",
     "Q94916": "africa",
-    "Q207950": "africa"
+    "Q207950": "africa",
+    "Q1069736": "europe",
+    "Q842380": "africa",
+    "Q152925": "europe",
+    "Q269267": "europe",
+    "Q1076469": "europe"
   },
   "queries": [
     {
@@ -3694,6 +3709,12 @@
       "category": "election",
       "label": "independence referendum",
       "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q107706": {
+      "kind": "event",
+      "category": "treaty",
+      "label": "armistice",
+      "note": "Added in M42 batch 7, read from Wikidata itself: the only class Q328499, the Armistice of Mudros, carries. An armistice is an agreement two sides sign, which is why it takes the treaty category and not war."
     }
   },
   "reconcile": true

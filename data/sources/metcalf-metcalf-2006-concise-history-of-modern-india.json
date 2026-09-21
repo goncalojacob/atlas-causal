@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "metcalf-metcalf-2006-concise-history-of-modern-india",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m42-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "Barbara D. Metcalf",
+    "Thomas R. Metcalf"
+  ],
+  "title": "A Concise History of Modern India",
+  "year": 2006,
+  "publisher": "Cambridge University Press",
+  "isbn": "9780521863629",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "container": null,
+  "repository": null,
+  "reference": null
+}
