@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "laotian-civil-war",
+  "id": "arab-spring",
   "kind": "event",
   "status": "active",
   "supersededBy": null,
@@ -17,38 +17,38 @@
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m42-umbrella"
     ]
   },
   "origin": {
     "tool": "wikidata"
   },
-  "wikidata": "Q877450",
+  "wikidata": "Q33761",
   "wikipedia": {
-    "en": "Laotian Civil War",
-    "pt": "Guerra Civil do Laos"
+    "en": "Arab Spring",
+    "pt": "Primavera Árabe"
   },
   "sitelinks": {
-    "count": 43,
+    "count": 98,
     "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
-      "locator": "Q877450"
+      "locator": "Q33761"
     }
   ],
-  "title": "Laotian Civil War",
-  "summary": "Wikidata item Q877450, imported by tools/import/wikidata.mjs. The item's own description reads \"1959–1975 civil war in Laos\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "Arab Spring",
+  "summary": "Wikidata item Q33761, imported by tools/import/wikidata.mjs. The item's own description reads \"protests and revolutions in the Arab world in the 2010s\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1959,
-    "end": 1975,
-    "date": "1959-05-23",
-    "endDate": "1975-12-02"
+    "start": 2010,
+    "end": 2012,
+    "date": "2010-12-17",
+    "endDate": "2012-12"
   },
   "place": null,
-  "region": "asia",
+  "region": "africa",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "indochina-wars",
   "actors": []
 }

@@ -555,3 +555,37 @@ item gives no participant and whose own summary and article, cited on the
 record at revision 1374851403, say whose crisis it was.
 
 Main falls 263 to **258**.
+
+## 8. M42 batch 21 — three parents the corpus names, and three more bare records
+
+*21 September, the fire after batch 20. The `part of` pass of §7 kept only the
+answers this atlas already held; batch 21 asked what the thrown-away answers
+were, and three of them are periods A6 allows. `docs/m42-pool.md` → "Batch 21"
+carries the whole measurement, the ten filings and the twenty-five refusals;
+what belongs here is the same clause A1 exists for.*
+
+**`afghan-conflict` (Q1519107), `indochina-wars` (Q2342102) and `arab-spring`
+(Q33761) each name neither an actor nor a place**, and they are the fourth,
+fifth and sixth umbrellas here to do so, after `interwar-period`,
+`scramble-for-africa` and `arab-israeli-conflict`. A1's answer holds and it is
+the items' own doing: the Wikidata import writes an actor line only where the
+item gives a participant and a place only where it gives a coordinate, and
+none of the three gives either. Nor could one be chosen honestly. The Afghan
+conflict has run for forty-eight years through a monarchy, two republics, a
+communist state, two civil wars, a Soviet army, a NATO coalition and two
+Taliban governments; the Indochina wars were fought across three states by
+France, the United States, China, Vietnam and Cambodia in turn; the Arab
+Spring began in Tunisia and deposed rulers in three countries while its
+protests reached a dozen more. **Naming one participant for any of them would
+be picking a side of the thing the record exists to hold**, which is exactly
+what A1 says of a period, and inventing a place for a series of wars across
+half a continent would be worse.
+
+**Each carries a lane, which is what a period owes the timeline**: asia, asia
+and africa. The lane is the subject test A6 gives the filing rule, and
+`tests/m42-filing.test.mjs` holds every child to it — which is why
+`2011-yemeni-revolution` is *not* filed under `arab-spring` although its own
+item says it is part of it. That refusal is written up in the pool file; the
+finding it produced is that **a period whose subject crosses two lanes can
+only ever take one half of itself**, and no rule here can fix that without the
+owner saying what a two-lane umbrella should look like.

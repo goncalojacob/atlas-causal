@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -26,14 +23,17 @@
       "imported-by-wikidata"
     ]
   },
-  "wikidata": "Q81545",
-  "sitelinks": {
-    "count": 74,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q81545",
   "wikipedia": {
     "en": "Libyan civil war (2011)",
     "pt": "Guerra Civil Líbia (2011)"
+  },
+  "sitelinks": {
+    "count": 74,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -51,5 +51,6 @@
   },
   "place": null,
   "region": "africa",
+  "parent": "arab-spring",
   "actors": []
 }

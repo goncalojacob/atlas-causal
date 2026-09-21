@@ -18,9 +18,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
   "revised": "2026-09-05",
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -28,14 +25,17 @@
       "summary-drafted"
     ]
   },
-  "wikidata": "Q748780",
-  "sitelinks": {
-    "count": 65,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q748780",
   "wikipedia": {
     "en": "First Indochina War",
     "pt": "Primeira Guerra da Indochina"
+  },
+  "sitelinks": {
+    "count": 65,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -61,6 +61,7 @@
   },
   "place": null,
   "region": "asia",
+  "parent": "indochina-wars",
   "actors": [
     {
       "actor": "france",

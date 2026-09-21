@@ -14,23 +14,23 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts"
     ]
   },
-  "wikidata": "Q1341539",
-  "sitelinks": {
-    "count": 41,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1341539",
   "wikipedia": {
     "en": "Saur Revolution",
     "pt": "Revolução de Saur"
+  },
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -49,5 +49,6 @@
   "place": null,
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "afghan-conflict",
   "actors": []
 }

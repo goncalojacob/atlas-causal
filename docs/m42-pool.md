@@ -949,3 +949,179 @@ a place under a European period. Three are depth.
 years. Filing `good-friday-agreement` under it would have buried that. It is
 not this batch's to fix — the record's interval came from an import and a
 person should set it — and it is written here so the next fire can.
+
+## Batch 21 — the parents the corpus names, imported as umbrellas
+
+*21 September, the fire after batch 20. Batch 20 ran the `part of` pass and
+kept only the answers this atlas already held; the twenty answers it threw
+away are the other half of the same question, and **the useful ones are the
+parents the corpus names and does not have**. Three of them are periods A6
+allows, so this batch imported them and filed under them.*
+
+| | |
+| --- | --- |
+| main events asked for `part of` | 213 of 258 (those carrying a Wikidata id) |
+| API calls | 5 for the statements, 1 for the labels, 8 in the import |
+| distinct parents named | 89 — 14 held here, **75 not** |
+| imported as umbrellas | **3** |
+| main events filed under them | **10** |
+| refused | 6 filings and 19 candidate parents, each with its reason below |
+| corpus | 496 → **499** active |
+| **main** | 258 → **251** |
+| largest connected component | 442, **unchanged** |
+| components | 27 → 30 |
+
+**The main count fell by seven, which is what A6 asks of every batch from
+here**, and it fell without a period being invented: each of the three
+umbrellas is an item the atlas's own records name as the thing they are part
+of, and each was written by `tools/import/wikidata.mjs` from the item's own
+fields — its title, its description, its span. Nothing in the three records
+was composed here.
+
+**The component did not move, and it cannot.** A filing writes `parent` and
+`parent` is a display fact that takes no edge; the three new records are
+umbrellas, and `tests/m42-filing.test.mjs` refuses an edge that runs to one.
+So the component count rises by three — three records that are on no chain —
+while the largest component stays at 442. That is A5 answered rather than
+dodged: this batch bought readability, not reach, and the reach is what the
+next sweep batch is for.
+
+### The three umbrellas, each named by the records it takes
+
+| id | item | span the item gives | lane | how many named it |
+| --- | --- | --- | --- | --- |
+| `afghan-conflict` | Q1519107 | 1978-04-27, no end | asia | 4 |
+| `indochina-wars` | Q2342102 | 1946 – 1989 | asia | 2 |
+| `arab-spring` | Q33761 | 2010-12-17 – 2012-12 | africa | 3 |
+
+All three carry an English article, a span and a region, which is A6's whole
+test, and each is a conflict or a wave rather than a form of government, so
+M67's judgement 1 does not bite. `arab-spring` had been walked by an earlier
+import and left no record; its item was **rewound** in
+`data/imports/wikidata-state.json` so that this batch could walk it again,
+which is the one state edit here and is noted as deviation 1024.
+
+### What was filed, and why each
+
+**Under `afghan-conflict`, five.** Four carry `part of` Q1519107 on their own
+items — `soviet-afghan-war`, `afghan-civil-war-q1980081`,
+`afghan-civil-war-q12302518`, `war-in-afghanistan-2001-2021` — so the filing
+is the source's claim and not this run's. The fifth, `saur-revolution`, is
+filed on A6's span-and-subject rule with the article behind it: the item dates
+the conflict's start to 27 April 1978, which is the revolution's own date, and
+the English article at revision 1370427137 says *"all-out fighting did not
+erupt until after 1978, when the Saur Revolution violently overthrew"* the
+government. The opening act of a conflict is inside it; the act that created
+or destroyed a *form of government* is the case M67's judgement 1 keeps out,
+and this is not one.
+
+**Under `indochina-wars`, three.** `first-indochina-war` carries `part of`
+Q2342102. `laotian-civil-war` and `sino-vietnamese-war` are filed on span and
+subject: both are inside 1946–1989 and both are wars in former French
+Indochina, which the article at revision 1373921212 defines as *"the current
+states of Vietnam, Laos, and Cambodia"*.
+
+**Under `arab-spring`, two.** `2011-egyptian-revolution` and
+`libyan-civil-war` both carry `part of` Q33761, and both are in the umbrella's
+own lane.
+
+### What was refused, and why
+
+**Two filings refused on depth**, which is A6's "do not nest periods more than
+one deep" as batch 18 read it: `vietnam-war` (which already holds a child
+here) under `indochina-wars`, and `gaza-war` under anything. A war is its own
+umbrella and keeps its children.
+
+**One filing refused on a date, and it is this batch's `the-troubles`.**
+`cambodian-vietnamese-war` is dated `1989–1991` here, and its own summary
+quotes the item's description: *"1978–1989 interstate war"*. The record's
+interval and the record's summary contradict each other, which means the
+import read a later pair of dates off the item than the one the description
+names. It is the second instance of deviation 1022 and it is left visible for
+the same reason: the interval came from an import and a person should set it.
+Filing it under a series that ends in 1989 would have buried that.
+
+**One filing refused on the lane**: `2011-yemeni-revolution` carries `part of`
+Q33761 and is drawn in the asia lane, while `arab-spring` is drawn in africa —
+the Arab Spring began in Tunisia and deposed three rulers in Africa, so africa
+is the lane it belongs in. A6 gives the filing rule as the region, and
+`tests/m42-filing.test.mjs` holds every child to its umbrella's lane. It is
+the same refusal batch 20 made of an African war under a European period, and
+it is the price of a rule that is one lane wide. **A period whose subject
+crosses two lanes cannot take both halves**, and that is worth the owner's
+attention rather than a workaround here (deviation 1023).
+
+**Two filings refused on the subject**: `insurgency-in-khyber-pakhtunkhwa`
+names Q185729 and not the Afghan conflict, and it is Pakistan's;
+`2013-egyptian-coup-d-etat` is a year past the Arab Spring's end.
+
+**Nineteen candidate parents refused**, every one of them named by a record
+here:
+
+- **Q8683 *Cold War*, which 17 main events name — by far the largest.**
+  Refused, as M67 refused it and as the filing pass refused it again: A6
+  legitimises a period **with a region**, and the Cold War's region is the
+  world. Q185729 *War on Terrorism* (5) and Q17510383 *Second Cold War* (2)
+  are the same refusal, and the second is a term rather than a period.
+- **Q1146918 *decolonisation of Africa* (3), which Africa most wants.** Still
+  refused. Its P580 is the decade 1950 and not a year, the English article's
+  own lead gives no crisper start than the article title's, and deviation 989
+  is that no date is invented and none is widened. What it waits on is a year
+  from a person, and the seeds table already carries its class so that the
+  attempt is cheap when that year exists.
+- **Q7318933 *revolutions of 1917–1923* (3)** — an article and a span in its
+  own title, but the item carries no P580 and no P582 at all, so the import
+  can write nothing and a hand-written span would be read off a title. Its
+  three candidates (`october-revolution`, `russian-civil-war`,
+  `german-revolution-of-1918-1919`) are all umbrellas here already, so two of
+  the three would have been refused on depth in any case.
+- **Q1975306 *post-Soviet conflicts* (3)**, **Q40719 *Conflicts in the Horn of
+  Africa* (2)** and **Q364610 *Congolese Civil War* (2)** — a category, a
+  Wikimedia list article and a disambiguation page. None is an event or a
+  period.
+- **Q819264 *colour revolution* (3)** — a term of political science with no
+  span and no region; **Q1147615 *international human rights law* (2)** and
+  **Q491271 *history of Japan–Korea relations* (2)** — a body of law and a
+  bilateral relationship, neither an event.
+- **Q13581596 *Brazilian Republic* (2)** and **Q17748736 *Second Portuguese
+  Republic* (2)** — periods that would each contain periods this atlas
+  already holds (`brazilian-military-dictatorship-1964-1985` and
+  `nova-republica-brazil-since-1985`; `ditadura-nacional-1926-1933` and
+  `estado-novo-1933-1974`), which is nesting two deep.
+- **Q4783165 *Arab Cold War* (2)**, **Q796498 *Third Indochina War* (2)** and
+  **Q124373310 *Middle Eastern crisis (2023–present)* (2)** — each would sit
+  between an umbrella here and its children, so each is a second period on the
+  same ground.
+- **Q118144130 *Franco–Moroccan conflicts* (2)**, **Q116301618
+  *Spanish–Moroccan conflicts* (2)** and **Q133098437 (2)** — **no article at
+  all**, which A6 refuses outright: "the run does not invent a period that has
+  no article", and an item with no sitelink is the same hole seen from the
+  other side.
+
+### What the next fire does
+
+**The `part of` pass is now worth running in both directions and it is still
+cheap**: five calls for the statements and one for the labels of everything
+they name. Batch 20 kept the answers already here; this batch imported three
+of the ones that were not. **What is left of the 75 is thin** — the list above
+is every parent that two or more main events name, and the rest are named
+once each — so the next fire should spend its hour on a sweep batch and not on
+this question again until a batch of imports has brought new statements with
+it.
+
+**Where the readability target stands.** Main by lane and century after this
+batch, which is the measurement A6 asks for:
+
+| century | europe | asia | africa | americas | no lane |
+| --- | --- | --- | --- | --- | --- |
+| **20th** | **61** | **42** | **29** | 18 | 23 |
+| 21st | 7 | 13 | 8 | — | 3 |
+| 19th | 4 | 7 | 1 | 4 | 11 |
+| all | 72 | 62 | 38 | 22 | 57 |
+
+Asia's twentieth century falls from 47 to 42 and nothing else moves. **Europe's
+sixty-one is now the largest single crowd** and most of it is multilateral
+instruments the filing pass refused under M67's judgement 2 — conventions,
+treaties and protocols whose author is a body of states. They are the honest
+remainder of A6's target and no period will take them; what would is a
+different umbrella entirely, and nobody has asked for one.

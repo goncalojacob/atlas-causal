@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "laotian-civil-war",
+  "id": "indochina-wars",
   "kind": "event",
   "status": "active",
   "supersededBy": null,
@@ -17,38 +17,36 @@
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m42-umbrella"
     ]
   },
   "origin": {
     "tool": "wikidata"
   },
-  "wikidata": "Q877450",
+  "wikidata": "Q2342102",
   "wikipedia": {
-    "en": "Laotian Civil War",
-    "pt": "Guerra Civil do Laos"
+    "en": "Indochina wars",
+    "pt": "Guerras na Indochina"
   },
   "sitelinks": {
-    "count": 43,
+    "count": 22,
     "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
-      "locator": "Q877450"
+      "locator": "Q2342102"
     }
   ],
-  "title": "Laotian Civil War",
-  "summary": "Wikidata item Q877450, imported by tools/import/wikidata.mjs. The item's own description reads \"1959–1975 civil war in Laos\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "Indochina Wars",
+  "summary": "Wikidata item Q2342102, imported by tools/import/wikidata.mjs. The item's own description reads \"series of wars fought in Southeast Asia from 1946 until 1991\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1959,
-    "end": 1975,
-    "date": "1959-05-23",
-    "endDate": "1975-12-02"
+    "start": 1946,
+    "end": 1989
   },
   "place": null,
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "indochina-wars",
   "actors": []
 }

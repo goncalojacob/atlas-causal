@@ -14,23 +14,23 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts"
     ]
   },
-  "wikidata": "Q623171",
-  "sitelinks": {
-    "count": 49,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q623171",
   "wikipedia": {
     "en": "Sino-Vietnamese War",
     "pt": "Guerra sino-vietnamita"
+  },
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -49,6 +49,7 @@
   "place": null,
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "indochina-wars",
   "category": "war",
   "actors": []
 }
