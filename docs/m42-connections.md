@@ -3659,3 +3659,46 @@ about time**, and rule 24 is what keeps the two apart here. The exception is
 `the-troubles`, dated `1998–1998` in this atlas for a conflict of thirty
 years: that one is a defect in a record and is left visible rather than filed
 over.
+
+## 2u. Batches 21 and 22 — three umbrellas the corpus named, and the origin one of them needed
+
+*21 September. Batch 21 imported the three parents the atlas's own main events
+name and A6 allows — `afghan-conflict`, `indochina-wars` and `arab-spring` —
+and filed ten main events under them; the whole measurement, with every
+refusal, is `docs/m42-pool.md` → "Batch 21", and the bareness of the three
+umbrellas is accounted for in `docs/m67-umbrellas.md` §8. **No edge was
+written for any of it**, because a filing is a display fact and a period is
+not something an event causes.*
+
+**Batch 22 is where the edges are, and there are three.** The article batch 21
+wrote `arab-spring` from opens on the record this atlas did not hold: *"It
+began in Tunisia in response to the death of Mohamed Bouazizi by
+self-immolation. From Tunisia, the protests initially spread to five other
+countries: Libya, Egypt, Yemen, Syria and Bahrain."* So `tunisian-revolution`
+(Q46959) was imported, filed under `arab-spring` in the same batch — Tunisia
+is in the africa lane and 18 December 2010 is inside the period's span — and
+three edges were written out of it:
+
+- **`tunisian-revolution --inspired--> 2011-egyptian-revolution`.** The Arab
+  Spring's lead names Egypt among the five the protests reached. Egypt's own
+  article, at revision 1374677056, gives the occasion as National Police Day
+  and the grievance as police brutality and never names Tunisia, so the edge
+  asserts the spread the first article states and nothing about a cause inside
+  Egypt.
+- **`tunisian-revolution --inspired--> libyan-civil-war`.** The war's article,
+  at revision 1374512354: *"The war was ignited by protests in Benghazi
+  beginning on 15 February 2011 inspired by the Arab Spring."* It credits the
+  wave, and the wave's own article says where the wave started.
+- **`tunisian-revolution --inspired--> 2011-yemeni-revolution`.** The most
+  cautious of the three, and written at the strength the source gives: Yemen's
+  article, at revision 1375746838, says the uprising *"occurred concurrently
+  with the Arab Spring"* and lists its own grievances first.
+
+All three are `inspired` and `probable`. **Not one article says a Tunisian
+event brought about a foreign one**, so none is `caused`; and rule 22 would
+refuse `consensus` to three citations that are one encyclopedia.
+
+**What it bought**: `libyan-civil-war` and `mali-war` were a component of two
+and are on the main chain now; the largest component goes 442 → **445** and
+the count of components 30 → 29, while the main count stays at 251 because the
+import was filed in the batch that made it.
