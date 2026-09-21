@@ -13,6 +13,12 @@
 
 import { ringArea } from './simplify.mjs';
 import { geometryBbox, ringsOf } from './geometry.mjs';
+// The five band edges, which are M45b's and are frozen there beside the grid
+// they are cut out of. Named here so that the layer table and the manifest
+// carry the same five numbers the contouring used.
+import { BAND_EDGES } from './elevation.mjs';
+
+export { BAND_EDGES };
 
 // --- the zoom table ------------------------------------------------------
 //
@@ -286,6 +292,32 @@ export const PROPERTIES = Object.freeze({
     nameRequired: false,
     fallback: null,
   }),
+  // The bands, from `tools/import/elevation.mjs` and not from a download.
+  // The only table here whose keys were **written** rather than surveyed off a
+  // committed file, because the collection is built in this repository; it
+  // goes through this table all the same, so that there is one path from a
+  // source to a cell and not two.
+  //
+  // `min_zoom` is 0 on all five, which this table's own ladder turns into
+  // `z = 1`: relief is ground and is drawn at every zoom the map has, the way
+  // the coastline is. There is no name, no id and no rank: a band is not a
+  // thing with a name, and an id would be dedupe-by-id across the cells a band
+  // is clipped into, which would draw one cell of it and drop the rest.
+  relief: Object.freeze({
+    class: null,
+    drop: null,
+    name: null,
+    nameEn: null,
+    scaleRank: null,
+    minZoom: 'min_zoom',
+    band: 'band',
+    population: null,
+    elevation: null,
+    wikidata: null,
+    id: null,
+    nameRequired: false,
+    fallback: null,
+  }),
   // ne_10m_populated_places.geojson — 137 keys per city, upper case, of which
   // these ten are read and the other 127 are not. POP_MAX and not POP_MIN:
   // the metropolitan figure is what "over 100 000" is about, and all 7,342
@@ -345,6 +377,12 @@ export function keptCity(read, places = new Map(), { minimum = CITY_POPULATION }
 // property table off this file — the other way round would be a cycle.
 export const CITIES_SOURCE = 'ne_10m_populated_places.geojson';
 
+// And the one source that is not a Natural Earth download: the committed
+// elevation grid M45b cuts the bands out of. It is named here for the same
+// reason the cities' file is — the layer row below reads it, and the import
+// has to know which of its sources is not GeoJSON before it opens any of them.
+export const ELEVATION_SOURCE = 'etopo5-10min.i2';
+
 export const BASE_SOURCE = 'natural-earth-10m';
 export const BASE_VERSION = 'v5.1.2';
 export const BASE_GEO_DIR = 'geo/base';
@@ -371,6 +409,45 @@ export const BASE_GEO_DIR = 'geo/base';
 // polygons at Natural Earth's own zoom 6.5 — nothing a reader can see at the
 // world — and the far coastline has 200 KB for the whole planet.
 export const LAYERS = Object.freeze([
+  // The bands, first in the table because they are first on the page: relief
+  // is the ground everything else is drawn on, and M45b's §2.4 gives it the
+  // bottom of the pile and the only fill across open land. `bands` is what
+  // puts the five frozen edges in the manifest, so a reader — and a test —
+  // can see what the tints mean without opening the import.
+  //
+  // `clip: true`, which no other polygon layer here is: a band is one feature
+  // for the whole world, so a cell that held whole features by bbox would hold
+  // every band in full. The cut edge that rule exists to avoid is a cut edge
+  // that gets **stroked**, and the bands are fill and no stroke at all
+  // (src/style.css) — which is also why they carry no `id` to be drawn once
+  // by: every cell holds its own piece, and the pieces abut.
+  //
+  // `ceiling` is M45b §2.5's: 6 MB of its own, inside `data/geo/`'s 24 MB and
+  // **outside** the base map's 8 MB, which would otherwise have 2.11 MB free.
+  // A layer with a ceiling of its own is counted against it and against
+  // nothing else, and the import refuses to write over it.
+  Object.freeze({
+    id: 'relief',
+    geometry: 'polygon',
+    minZoom: 1,
+    dir: 'relief',
+    clip: true,
+    bands: BAND_EDGES,
+    ceiling: 6 * 1024 * 1024,
+    // The far level's ring floor, in square degrees, and it is the coastline's
+    // argument (deviation 605) for a layer whose five features are the whole
+    // world: the far-level *feature* floor can never drop anything here, so
+    // what decides whether the bands fit 400 KB is the number of **rings** —
+    // eleven thousand of them, four points and thirty bytes of brackets each
+    // at any tolerance at all. 0.2 square degrees is about 0.45° on a side,
+    // which is 1.2 SVG units at k = 1 and cannot be seen; what it leaves is
+    // 400 KB at 0.4°, the very tolerance the far coastline is drawn at.
+    // Nothing is floored at the near level, where the ridge under a frontier
+    // has to be a ridge.
+    farMinArea: 0.2,
+    world: 'geo/base/relief-world.json',
+    sources: Object.freeze([Object.freeze({ file: ELEVATION_SOURCE, far: true })]),
+  }),
   Object.freeze({
     id: 'coast',
     geometry: 'line',
@@ -541,6 +618,11 @@ export function readFeature(layerId, feature) {
   // the base map by 6.5 KB of 5.93 MB.
   const family = familyOf(table, properties);
   if (family !== null && family !== (table.defaultFamily ?? PHYSICAL_DEFAULT_FAMILY)) out.kind = family;
+  // M45b's band, for the one layer that has bands. An integer and nothing
+  // else: which of the five heights this polygon is between is what decides
+  // its tint, and the tint is in `src/style.css` where every colour is.
+  const band = value(properties, table.band);
+  if (Number.isInteger(band)) out.band = band;
   return out;
 }
 

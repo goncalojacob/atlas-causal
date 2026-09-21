@@ -279,7 +279,14 @@ export async function readBaseLayers(dataDir) {
     }
     const world = layer.world && existsSync(path.join(dataDir, ...layer.world.split('/'))) ? layer.world : null;
     if (cells.length === 0 && world === null) continue;
-    layers.push({ id: layer.id, geometry: layer.geometry, world, minZoom: layer.minZoom, cells });
+    const entry = { id: layer.id, geometry: layer.geometry, world, minZoom: layer.minZoom, cells };
+    // The heights a layer's bands are between, where it has bands (M45b).
+    // Five numbers, frozen in tools/import/elevation.mjs and carried here so
+    // that what the five tints mean is readable off the manifest — and so that
+    // the test that holds the edges can read them from what was built rather
+    // than from the constant it is checking.
+    if (layer.bands) entry.bands = [...layer.bands];
+    layers.push(entry);
   }
   if (layers.length === 0) return null;
   return {

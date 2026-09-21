@@ -103,6 +103,21 @@ const kindOf = (feature) => {
   return typeof kind === 'string' && KINDS.includes(kind) ? kind : null;
 };
 
+// --- which band a relief polygon is ------------------------------------------
+//
+// M45b. The band travels in the file, written by the import off the five
+// frozen edges (tools/import/elevation.mjs), and here it is turned into a
+// class. `BANDS` is how many there are, a second time, for the reason `KINDS`
+// is a second copy of the families: this ends up in a `class` attribute and
+// `data/` is untrusted input. A band this range does not hold draws in no
+// class at all, which is the lowest tint and never a class of its own.
+const BANDS = 5;
+
+const bandOf = (feature) => {
+  const band = feature?.band ?? feature?.properties?.band;
+  return Number.isInteger(band) && band >= 0 && band < BANDS ? band : null;
+};
+
 // O que uma camada desenhou, num texto. Igual, não se reconstrói nada: mexer a
 // banda, seleccionar um acontecimento ou mudar o agrupamento não pode
 // reconstruir quatro mil caminhos.
@@ -671,6 +686,12 @@ export function createBaseLayer(group, projection, {
     // `kindOf` does not recognise — keeps the rule the layer already had.
     const kind = kindOf(feature);
     if (kind !== null) attributes.class = `ground-${kind}`;
+    // And the band, where the file carries one (M45b). Five tints, lightest
+    // low, all of them opacities over tokens that already existed: the
+    // stylesheet is where every colour on this map is, and a band index is not
+    // a colour.
+    const band = bandOf(feature);
+    if (band !== null) attributes.class = `band-${band}`;
     return svg('path', attributes);
   }
 }

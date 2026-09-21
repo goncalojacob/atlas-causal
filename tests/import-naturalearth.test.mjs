@@ -9,17 +9,20 @@
 // whose sha256 differs stops the tool under --check rather than being
 // imported quietly.
 
-import test from 'node:test';
+import test, { after } from 'node:test';
 import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
+import { existsSync, mkdtempSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { gzipSync } from 'node:zlib';
 
 import {
   BASE_DIR, GEO_CEILING, LAND_FILE, coastLines, coastPolygons, main, planImport,
 } from '../tools/import/naturalearth.mjs';
+import { ELEVATION_SOURCE } from '../tools/import/features.mjs';
+import { BAND_EDGES, GRID as ELEVATION_GRID } from '../tools/import/elevation.mjs';
 import { clipLine } from '../tools/import/geometry.mjs';
 import { allCells, cellBounds } from '../src/map/grid.js';
 
@@ -57,6 +60,44 @@ async function filesUnder(dir) {
   return out.sort();
 }
 
+// The fixture elevation grid, and it is **made here rather than committed**:
+// the format has no header, so a grid has to be the full 2160 × 1080 int16
+// whatever is in it, and four and a half megabytes of synthetic ground does
+// not belong in the repository. Written once into a temporary directory and
+// removed with it.
+//
+// One stepped cone at 20° N, 30° W — inside the cell x2y2 the other fixtures
+// are in — with a step for every one of the five bands, so that a band is
+// something this file can make assertions about. Everything else is 1,000 m
+// below the sea and therefore in no band at all, which is the other half of
+// what the bands are: below sea level is not one (M45b §2.2).
+const ELEVATION_DIR = mkdtempSync(path.join(tmpdir(), 'atlas-elev-'));
+after(() => rm(ELEVATION_DIR, { recursive: true, force: true }));
+
+function writeFixtureGrid() {
+  const { columns, rows } = ELEVATION_GRID;
+  const grid = new Int16Array(columns * rows).fill(-1000);
+  // The grid's own frame: row 0 at 90° N running south, column 0 at 0° E
+  // running east (tools/import/elevation.mjs).
+  const at = (lat, lon) => Math.round((90 - lat) * 6) * columns
+    + (Math.round((((lon % 360) + 360) % 360) * 6) % columns);
+  // Radii in cells, narrowest first, so the first one a point is inside is the
+  // height it gets: each band is then a ring around the next one up.
+  const steps = [[3, 3000], [6, 1500], [12, 750], [18, 350], [24, 100]];
+  for (let dy = -24; dy <= 24; dy += 1) {
+    for (let dx = -24; dx <= 24; dx += 1) {
+      const d = Math.hypot(dy, dx);
+      const step = steps.find(([radius]) => d <= radius);
+      if (!step) continue;
+      grid[at(20 + dy / 6, -30 + dx / 6)] = step[1];
+    }
+  }
+  writeFileSync(path.join(ELEVATION_DIR, `${ELEVATION_SOURCE}.gz`), gzipSync(Buffer.from(grid.buffer)));
+  return ELEVATION_DIR;
+}
+
+const ELEVATION = ['--elevation', writeFixtureGrid()];
+
 const quiet = async (fn) => {
   const log = console.log;
   const error = console.error;
@@ -81,11 +122,14 @@ test('the plan is a pure function of the input', async () => {
 
 test('every layer is written at both levels, and a cell with nothing in it is not', async (t) => {
   const dir = await temporary(t);
-  const { code } = await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir]));
+  const { code } = await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION]));
   assert.equal(code, 0);
   const written = await filesUnder(dir);
   assert.deepEqual(written, [
     LAND_FILE,
+    // M45b's bands, cut out of the fixture grid: one cone at 20° N, 30° W, so
+    // the world file and the one cell it falls in and no other.
+    'base/relief-world.json', 'base/relief/x2y2.json',
     'base/coast/x2y2.json', 'base/coast/x2y3.json',
     'base/rivers-world.json', 'base/rivers/x2y2.json',
     'base/lakes-world.json', 'base/lakes/x2y2.json',
@@ -103,7 +147,7 @@ test('every layer is written at both levels, and a cell with nothing in it is no
 
 test('the four layers M36b added carry what M37 and M38 need of them', async (t) => {
   const dir = await temporary(t);
-  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir]));
+  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION]));
   const read = async (...names) => JSON.parse(await readFile(path.join(dir, ...names), 'utf8'));
 
   // Rivers are lines, clipped to the cell, and carry the name M38 labels
@@ -150,7 +194,7 @@ test('the four layers M36b added carry what M37 and M38 need of them', async (t)
 
 test('the population filter keeps the cities over 100 000, and the one the atlas names', async (t) => {
   const dir = await temporary(t);
-  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir]));
+  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION]));
   const cities = JSON.parse(await readFile(path.join(dir, BASE_DIR, 'cities', 'x2y2.json'), 'utf8'));
   // Five populated places in the fixture file. Four are over a hundred
   // thousand; the fifth, Fixture Town at 9,400, is in the base map only
@@ -184,7 +228,7 @@ test('a peak carries its label zoom and nothing else the cities carry', async (t
   // `zl` to the row, because a peak's name is drawn at its own label zoom like
   // every other, and nothing else moved with it.
   const dir = await temporary(t);
-  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir]));
+  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION]));
   const peaks = JSON.parse(await readFile(path.join(dir, BASE_DIR, 'mountains-world.json'), 'utf8'));
   assert.deepEqual(peaks, [{
     elevation: 1934, id: '1159100007', lat: 27.5, lon: -28.5, name: 'Fixture Peak', z: 6, zl: 7,
@@ -198,7 +242,7 @@ test('a peak carries its label zoom and nothing else the cities carry', async (t
 // label zoom at all, because there is no label for it to be the zoom of.
 test('every feature carries a label zoom, from the rank or from z + 1', async (t) => {
   const dir = await temporary(t);
-  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir]));
+  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION]));
   const read = async (...names) => JSON.parse(await readFile(path.join(dir, ...names), 'utf8'));
 
   // The three files that rank their labels: `min_label` on the rivers and the
@@ -255,7 +299,7 @@ test('a lake reaching two cells is the same lake in both, and is never clipped',
 
 test('the far level keeps its name and its shape, and the near level is lines', async (t) => {
   const dir = await temporary(t);
-  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir]));
+  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION]));
   const land = JSON.parse(await readFile(path.join(dir, LAND_FILE), 'utf8'));
   assert.equal(land.type, 'FeatureCollection');
   for (const feature of land.features) {
@@ -273,7 +317,7 @@ test('the far level keeps its name and its shape, and the near level is lines', 
 
 test('the Null island marker Natural Earth ships at 0,0 is drawn nowhere', async (t) => {
   const dir = await temporary(t);
-  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir]));
+  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION]));
   assert.equal(existsSync(path.join(dir, BASE_DIR, 'coast', 'x3y2.json')), false, 'the cell east of Greenwich holds nothing');
   const land = await readFile(path.join(dir, LAND_FILE), 'utf8');
   assert.equal(land.includes('0.05'), false, 'and the marker is not in the far coastline either');
@@ -302,10 +346,10 @@ test('the cells cut the same coastline the world has, and no more', async () => 
 
 test('a second run rewrites every file byte for byte', async (t) => {
   const dir = await temporary(t);
-  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir]));
+  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION]));
   const first = new Map();
   for (const name of await filesUnder(dir)) first.set(name, await readFile(path.join(dir, ...name.split('/')), 'utf8'));
-  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir]));
+  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION]));
   const second = new Map();
   for (const name of await filesUnder(dir)) second.set(name, await readFile(path.join(dir, ...name.split('/')), 'utf8'));
   assert.deepEqual([...second.keys()], [...first.keys()]);
@@ -314,17 +358,17 @@ test('a second run rewrites every file byte for byte', async (t) => {
 
 test('a cell that stops holding anything is removed, not left behind', async (t) => {
   const dir = await temporary(t);
-  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir]));
+  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION]));
   // A cell from a run against other data: the manifest would not name it and
   // the directory and the manifest would then disagree about what the map has.
   await writeFile(path.join(dir, BASE_DIR, 'coast', 'x0y0.json'), '{"type":"FeatureCollection","features":[]}\n', 'utf8');
-  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir]));
+  await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION]));
   assert.equal(existsSync(path.join(dir, BASE_DIR, 'coast', 'x0y0.json')), false);
 });
 
 test('--check fails loudly on a source whose sha256 differs, and writes nothing', async (t) => {
   const dir = await temporary(t);
-  const { code, said } = await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, '--check']));
+  const { code, said } = await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION, '--check']));
   assert.equal(code, 1);
   assert.match(said, /ne_10m_land\.geojson has sha256 [0-9a-f]{64}, not the [0-9a-f]{64}/);
   assert.match(said, /Nothing was written/);
@@ -334,7 +378,7 @@ test('--check fails loudly on a source whose sha256 differs, and writes nothing'
 test('a missing source is a stop, and never a download', async (t) => {
   const dir = await temporary(t);
   const empty = await temporary(t);
-  const { code, said } = await quiet(() => main(['--source', empty, '--data', FIXTURE_DATA, '--out', dir]));
+  const { code, said } = await quiet(() => main(['--source', empty, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION]));
   assert.equal(code, 1);
   assert.match(said, /ne_10m_land\.geojson is not in/);
   assert.match(said, /committed, not downloaded/);
@@ -343,7 +387,7 @@ test('a missing source is a stop, and never a download', async (t) => {
 
 test('--survey prints the keys a file actually has, and writes nothing', async (t) => {
   const dir = await temporary(t);
-  const { code, said } = await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, '--survey']));
+  const { code, said } = await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION, '--survey']));
   assert.equal(code, 0);
   assert.match(said, /## ne_10m_land\.geojson/);
   assert.match(said, /featurecla/);
@@ -353,7 +397,7 @@ test('--survey prints the keys a file actually has, and writes nothing', async (
 
 test('--budget prints the tolerance, the points kept and the points dropped', async (t) => {
   const dir = await temporary(t);
-  const { code, said } = await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, '--budget']));
+  const { code, said } = await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION, '--budget']));
   assert.equal(code, 0);
   assert.match(said, /tolerance.*points kept.*points dropped/);
   assert.match(said, /coast\s+far/);
@@ -379,7 +423,7 @@ test('a run that would cross a ceiling exits non-zero and writes nothing', async
   await mkdir(path.join(dir, 'presences'), { recursive: true });
   await writeFile(path.join(dir, 'presences', 'ballast.json'), 'x'.repeat(GEO_CEILING + 1), 'utf8');
   const before = await filesUnder(dir);
-  const { code, said } = await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir]));
+  const { code, said } = await quiet(() => main(['--source', FIXTURES, '--data', FIXTURE_DATA, '--out', dir, ...ELEVATION]));
   assert.equal(code, 1);
   assert.match(said, /data\/geo\/ would be .*, over the .* ceiling/);
   assert.match(said, /Nothing was written/);
