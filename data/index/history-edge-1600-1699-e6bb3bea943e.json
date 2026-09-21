@@ -1,0 +1,150 @@
+{
+  "from": 1600,
+  "kind": "edge",
+  "records": {
+    "dutch-brazil-1630-1654--the-caribbean-sugar-revolution--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "english-settlement-of-barbados-1627--the-atlantic-slave-trade-to-the-caribbean--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "english-settlement-of-barbados-1627--the-caribbean-sugar-revolution--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "saint-domingue-and-the-french-sugar-colony--haitian-revolution-1791-1804--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-atlantic-slave-trade-to-the-caribbean--haitian-revolution-1791-1804--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-atlantic-slave-trade-to-the-caribbean--royal-african-company--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-atlantic-slave-trade-to-the-caribbean--saint-domingue-and-the-french-sugar-colony--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-atlantic-slave-trade-to-the-caribbean--the-baptist-war-1831--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-atlantic-slave-trade-to-the-caribbean--the-british-industrial-revolution--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-atlantic-slave-trade-to-the-caribbean--the-cuban-sugar-boom--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-brazilian-gold-cycle--the-british-industrial-revolution--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-brazilian-gold-cycle--transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-brazilian-gold-cycle--transfer-of-the-portuguese-court-to-brazil-1807--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-caribbean-sugar-revolution--royal-african-company--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-caribbean-sugar-revolution--the-atlantic-slave-trade-to-the-caribbean--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1699
+}

@@ -502,7 +502,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "parker-1977-papel-dos-estados-unidos"
       ],
       "created": "2026-09-18",
       "degree": 1,
@@ -515,11 +516,12 @@
       },
       "review": {
         "flags": [
-          "m57-narrative"
+          "m57-narrative",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "operation-brother-sam-1964",
       "type": "reacted-to"
@@ -3946,7 +3948,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "watson-1970-brief-history-of-barbados"
       ],
       "created": "2026-09-16",
       "from": "english-settlement-of-barbados-1627",
@@ -3958,11 +3961,12 @@
       },
       "review": {
         "flags": [
-          "m50-chain"
+          "m50-chain",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "the-caribbean-sugar-revolution",
       "type": "precondition-of"
@@ -8019,7 +8023,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "fifer-1970-empire-builders"
       ],
       "created": "2026-09-18",
       "degree": 1,
@@ -8032,11 +8037,12 @@
       },
       "review": {
         "flags": [
-          "m57-narrative"
+          "m57-narrative",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "the-end-of-the-amazon-rubber-monopoly",
       "type": "precondition-of"
@@ -8165,7 +8171,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "eakin-1998-brazil-once-and-future-country"
       ],
       "created": "2026-09-18",
       "degree": 1,
@@ -8178,11 +8185,12 @@
       },
       "review": {
         "flags": [
-          "m57-narrative"
+          "m57-narrative",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "the-brazilian-coffee-cycle",
       "type": "enabled"
@@ -8488,7 +8496,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "fausto-1999-concise-history-of-brazil"
       ],
       "created": "2026-09-18",
       "degree": 1,
@@ -8501,11 +8510,12 @@
       },
       "review": {
         "flags": [
-          "m57-narrative"
+          "m57-narrative",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "the-1930-revolution-and-the-vargas-era",
       "type": "precondition-of"
