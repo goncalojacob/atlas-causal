@@ -293,7 +293,7 @@
       <p><strong>Zoomed out, what is too close together to tell apart is drawn as one mark</strong>
       with a <code>+3</code> beside it saying how many more are underneath, and the links between
       two such marks become one line, drawn heavier for how many it carries, in the commonest of
-      their types and dashed if any single one of them is disputed. Nothing is dropped: the counts
+      their types and inked as the least sure of them. Nothing is dropped: the counts
       add the picture back up to every event. Zooming in splits the marks; clicking one lists what
       is under it in the panel and goes to the zoom where it comes apart. Events of different
       bands never merge, and neither does anything you are working with — the open event, the path
@@ -307,9 +307,12 @@
 
       <h3>The key to the lines</h3>
       <p>The five types are told apart by the pattern and weight of the line, not by colour: the
-      atlas has one accent and it belongs to the path being followed. A disputed link is dashed
-      whatever its type, as it is everywhere else in the atlas, and its type then reads in the
-      weight of the line alone.</p>
+      atlas has one accent and it belongs to the path being followed. <strong>How sure the atlas
+      is of a link is the ink the line is drawn in</strong> — solid where historians agree, fainter
+      where the link is probable, faintest where it is disputed. The type and the confidence are
+      two readings of one line and neither takes the other’s dimension, so a
+      <code>caused</code> link that is disputed is still the unbroken line, only ghosted. The card
+      keeps saying it in words as well; this is so that you can see it without opening one.</p>
       <dl class="edge-key">
         <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-caused" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-caused" points="60,6 50,3 50,9"/></svg></dt>
         <dd><code>caused</code></dd>
@@ -321,8 +324,8 @@
         <dd><code>precondition-of</code></dd>
         <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-inspired" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-inspired" points="60,6 50,3 50,9"/></svg></dt>
         <dd><code>inspired</code></dd>
-        <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-caused disputed" x1="1" y1="6" x2="50" y2="6"/><polygon class="edge-head type-caused" points="60,6 50,3 50,9"/></svg></dt>
-        <dd>any type, <span class="badge disputed">disputed</span></dd>
+        <dt><svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true"><line class="edge type-caused confidence-consensus" x1="1" y1="6" x2="19" y2="6"/><line class="edge type-caused confidence-probable" x1="22" y1="6" x2="40" y2="6"/><line class="edge type-caused confidence-disputed" x1="43" y1="6" x2="61" y2="6"/></svg></dt>
+        <dd>how sure: <code>consensus</code>, <code>probable</code>, <span class="badge disputed">disputed</span></dd>
       </dl>
 
       <h3>Territories, and where they stop</h3>
