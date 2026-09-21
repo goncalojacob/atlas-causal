@@ -4705,6 +4705,24 @@
         }
       ]
     },
+    "basel-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "basmachi-movement": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "batepa-massacre": {
       "from": "git",
       "versions": [
@@ -4849,6 +4867,15 @@
       ]
     },
     "belovezh-accords": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "black-september": {
       "from": "git",
       "versions": [
         {
@@ -5008,6 +5035,15 @@
         }
       ]
     },
+    "british-russian-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "budapest-memorandum": {
       "from": "git",
       "versions": [
@@ -5030,6 +5066,15 @@
             "status"
           ],
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "bulgarian-declaration-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -5124,6 +5169,15 @@
             "parent"
           ],
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "cambodian-vietnamese-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -5931,6 +5985,14 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -7452,6 +7514,15 @@
         }
       ]
     },
+    "intermediate-range-nuclear-forces-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "international-covenant-on-civil-and-political-rights": {
       "from": "git",
       "versions": [
@@ -7646,6 +7717,15 @@
             "review"
           ],
           "on": "2026-09-20"
+        }
+      ]
+    },
+    "korean-armistice-agreement": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -8374,6 +8454,15 @@
         }
       ]
     },
+    "montevideo-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "montreal-protocol": {
       "from": "git",
       "versions": [
@@ -8889,6 +8978,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "ogaden-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -10527,6 +10625,15 @@
         }
       ]
     },
+    "sino-soviet-border-conflict": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "sino-vietnamese-war": {
       "from": "git",
       "versions": [
@@ -10591,6 +10698,14 @@
             "status"
           ],
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -11302,6 +11417,14 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -11410,6 +11533,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "universal-copyright-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

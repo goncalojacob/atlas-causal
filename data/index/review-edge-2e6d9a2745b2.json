@@ -2601,6 +2601,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "black-september",
+      "id": "black-september--lebanese-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "lebanese-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "boxer-rebellion",
       "id": "boxer-rebellion--xinhai-revolution--precondition-of",
@@ -2672,6 +2700,34 @@
       "revised": null,
       "status": "active",
       "to": "imf-agreement-1978",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "british-russian-convention",
+      "id": "british-russian-convention--world-war-i--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "world-war-i",
       "type": "precondition-of"
     },
     {
@@ -4375,6 +4431,34 @@
       "status": "active",
       "to": "spanish-american-war-1898",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "cultural-revolution",
+      "id": "cultural-revolution--sino-soviet-border-conflict--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "sino-soviet-border-conflict",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -6979,6 +7063,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "korean-war",
+      "id": "korean-war--korean-armistice-agreement--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "korean-armistice-agreement",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-15",
       "from": "korean-war",
       "id": "korean-war--treaty-of-san-francisco--precondition-of",
@@ -8162,6 +8274,34 @@
       "revised": null,
       "status": "active",
       "to": "treaty-of-brest-litovsk",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "ogaden-war",
+      "id": "ogaden-war--somali-civil-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "somali-civil-war",
       "type": "caused"
     },
     {
@@ -9437,6 +9577,34 @@
       "revised": null,
       "status": "active",
       "to": "russo-ukrainian-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "russo-japanese-war",
+      "id": "russo-japanese-war--british-russian-convention--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "british-russian-convention",
       "type": "precondition-of"
     },
     {
@@ -12470,6 +12638,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "treaty-on-the-non-proliferation-of-nuclear-weapons",
+      "id": "treaty-on-the-non-proliferation-of-nuclear-weapons--treaty-on-the-prohibition-of-nuclear-weapons--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-on-the-prohibition-of-nuclear-weapons",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "imf-2016-portugal-ex-post-evaluation",
         "banco-de-portugal-2014-bes-resolution"
       ],
@@ -12591,6 +12787,34 @@
       "revised": null,
       "status": "active",
       "to": "angola-war-begins-1961",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "vietnam-war",
+      "id": "vietnam-war--cambodian-vietnamese-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cambodian-vietnamese-war",
       "type": "precondition-of"
     },
     {
@@ -12904,6 +13128,34 @@
       "status": "active",
       "to": "armistice-of-mudros",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-i",
+      "id": "world-war-i--basmachi-movement--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "basmachi-movement",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -13545,6 +13797,34 @@
       "status": "active",
       "to": "armenian-genocide",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "young-turk-revolution-of-1908",
+      "id": "young-turk-revolution-of-1908--bulgarian-declaration-of-independence--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "bulgarian-declaration-of-independence",
+      "type": "enabled"
     },
     {
       "authors": [

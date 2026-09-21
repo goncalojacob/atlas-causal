@@ -398,6 +398,15 @@
         }
       ]
     },
+    "first-matabele-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "first-sino-japanese-war": {
       "from": "git",
       "versions": [
@@ -503,6 +512,15 @@
             "parent"
           ],
           "on": "2026-09-20"
+        }
+      ]
+    },
+    "panic-of-1893": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

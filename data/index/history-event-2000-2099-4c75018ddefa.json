@@ -4367,6 +4367,15 @@
         }
       ]
     },
+    "treaty-on-the-prohibition-of-nuclear-weapons": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "troika-bailout-2011": {
       "from": "git",
       "versions": [

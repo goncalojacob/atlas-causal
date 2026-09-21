@@ -446,6 +446,12 @@
     },
     {
       "dissent": false,
+      "id": "black-september--lebanese-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Black September\", revision 1370604477, § lead"
+    },
+    {
+      "dissent": false,
       "id": "boxer-rebellion--xinhai-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"1911 Revolution\", revision 1373070054"
@@ -461,6 +467,12 @@
       "id": "bretton-woods-system--imf-agreement-1978--precondition-of",
       "kind": "edge",
       "locator": "\"Bretton Woods system\", revision 1374837351"
+    },
+    {
+      "dissent": false,
+      "id": "british-russian-convention--world-war-i--precondition-of",
+      "kind": "edge",
+      "locator": "\"Anglo-Russian Convention\", revision 1358051340, § lead and § Persia"
     },
     {
       "dissent": false,
@@ -671,6 +683,18 @@
       "id": "cuban-war-of-independence-1895-1898--spanish-american-war-1898--caused",
       "kind": "edge",
       "locator": "\"Spanish–American War\", revision 1374740923"
+    },
+    {
+      "dissent": false,
+      "id": "cultural-revolution--sino-soviet-border-conflict--precondition-of",
+      "kind": "edge",
+      "locator": "\"Sino-Soviet border conflict\", revision 1372863432, § lead"
+    },
+    {
+      "dissent": true,
+      "id": "cultural-revolution--sino-soviet-border-conflict--precondition-of",
+      "kind": "edge",
+      "locator": "\"Sino-Soviet border conflict\", revision 1372863432, § lead and § History"
     },
     {
       "dissent": false,
@@ -1286,6 +1310,12 @@
     },
     {
       "dissent": false,
+      "id": "korean-war--korean-armistice-agreement--caused",
+      "kind": "edge",
+      "locator": "\"Korean Armistice Agreement\", revision 1370487806, § lead"
+    },
+    {
+      "dissent": false,
       "id": "korean-war--treaty-of-san-francisco--precondition-of",
       "kind": "edge",
       "locator": "\"Korean War\", revision 1371767674"
@@ -1505,6 +1535,12 @@
       "id": "october-revolution--treaty-of-brest-litovsk--caused",
       "kind": "edge",
       "locator": "\"Treaty of Brest-Litovsk\", revision 1368334684"
+    },
+    {
+      "dissent": false,
+      "id": "ogaden-war--somali-civil-war--caused",
+      "kind": "edge",
+      "locator": "\"Ogaden War\", revision 1373903527, § lead"
     },
     {
       "dissent": false,
@@ -1829,6 +1865,12 @@
       "id": "russo-georgian-war--russo-ukrainian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Russo-Ukrainian war\", revision 1372896482"
+    },
+    {
+      "dissent": false,
+      "id": "russo-japanese-war--british-russian-convention--precondition-of",
+      "kind": "edge",
+      "locator": "\"Anglo-Russian Convention\", revision 1358051340, § Background"
     },
     {
       "dissent": false,
@@ -2828,6 +2870,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-on-the-non-proliferation-of-nuclear-weapons--treaty-on-the-prohibition-of-nuclear-weapons--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty on the Prohibition of Nuclear Weapons\", revision 1363091604, § Concept and § Overview of provisions"
+    },
+    {
+      "dissent": false,
       "id": "turkish-war-of-independence--treaty-of-lausanne--caused",
       "kind": "edge",
       "locator": "\"Treaty of Lausanne\", revision 1370957561"
@@ -2837,6 +2885,12 @@
       "id": "turkish-war-of-independence--treaty-of-lausanne--caused",
       "kind": "edge",
       "locator": "\"Turkish War of Independence\", revision 1372145108"
+    },
+    {
+      "dissent": false,
+      "id": "vietnam-war--cambodian-vietnamese-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Cambodian–Vietnamese War\", revision 1375855358, § Vietnam War and § Rise of communism"
     },
     {
       "dissent": false,
@@ -2927,6 +2981,12 @@
       "id": "world-war-i--armistice-of-mudros--caused",
       "kind": "edge",
       "locator": "\"Armistice of Mudros\", revision 1369160266, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--basmachi-movement--precondition-of",
+      "kind": "edge",
+      "locator": "\"Basmachi movement\", revision 1374693404, § lead"
     },
     {
       "dissent": false,
@@ -3101,6 +3161,12 @@
       "id": "young-turk-revolution-of-1908--armenian-genocide--precondition-of",
       "kind": "edge",
       "locator": "\"Young Turk Revolution\", revision 1372902192"
+    },
+    {
+      "dissent": false,
+      "id": "young-turk-revolution-of-1908--bulgarian-declaration-of-independence--enabled",
+      "kind": "edge",
+      "locator": "\"Bulgarian Declaration of Independence\", revision 1375171159, § Background"
     },
     {
       "dissent": false,

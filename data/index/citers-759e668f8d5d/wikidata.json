@@ -896,6 +896,12 @@
     },
     {
       "dissent": false,
+      "id": "basmachi-movement",
+      "kind": "event",
+      "locator": "Q255352"
+    },
+    {
+      "dissent": false,
       "id": "batepa-massacre",
       "kind": "event",
       "locator": null
@@ -917,6 +923,12 @@
       "id": "berlin-conference",
       "kind": "event",
       "locator": "Q13582"
+    },
+    {
+      "dissent": false,
+      "id": "black-september",
+      "kind": "event",
+      "locator": "Q154288"
     },
     {
       "dissent": false,
@@ -944,6 +956,12 @@
     },
     {
       "dissent": false,
+      "id": "british-russian-convention",
+      "kind": "event",
+      "locator": "Q2996241"
+    },
+    {
+      "dissent": false,
       "id": "bucha-massacre",
       "kind": "event",
       "locator": "Q111467700"
@@ -953,6 +971,18 @@
       "id": "budapest-memorandum",
       "kind": "event",
       "locator": "Q1000658"
+    },
+    {
+      "dissent": false,
+      "id": "bulgarian-declaration-of-independence",
+      "kind": "event",
+      "locator": "Q1628090"
+    },
+    {
+      "dissent": false,
+      "id": "cambodian-vietnamese-war",
+      "kind": "event",
+      "locator": "Q635533"
     },
     {
       "dissent": false,
@@ -1019,6 +1049,12 @@
       "id": "cuban-revolution",
       "kind": "event",
       "locator": "Q11264"
+    },
+    {
+      "dissent": false,
+      "id": "cultural-revolution",
+      "kind": "event",
+      "locator": "Q8690"
     },
     {
       "dissent": false,
@@ -1364,6 +1400,12 @@
     },
     {
       "dissent": false,
+      "id": "korean-armistice-agreement",
+      "kind": "event",
+      "locator": "Q2862267"
+    },
+    {
+      "dissent": false,
       "id": "korean-war",
       "kind": "event",
       "locator": "Q8663"
@@ -1487,6 +1529,12 @@
       "id": "october-revolution",
       "kind": "event",
       "locator": "Q42976"
+    },
+    {
+      "dissent": false,
+      "id": "ogaden-war",
+      "kind": "event",
+      "locator": "Q318250"
     },
     {
       "dissent": false,
@@ -1676,9 +1724,21 @@
     },
     {
       "dissent": false,
+      "id": "sino-soviet-border-conflict",
+      "kind": "event",
+      "locator": "Q244932"
+    },
+    {
+      "dissent": false,
       "id": "sino-vietnamese-war",
       "kind": "event",
       "locator": "Q623171"
+    },
+    {
+      "dissent": false,
+      "id": "somali-civil-war",
+      "kind": "event",
+      "locator": "Q243620"
     },
     {
       "dissent": false,
@@ -1835,6 +1895,18 @@
       "id": "treaty-of-windsor",
       "kind": "event",
       "locator": "Q2518953"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
+      "kind": "event",
+      "locator": "Q186444"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-on-the-prohibition-of-nuclear-weapons",
+      "kind": "event",
+      "locator": "Q28130514"
     },
     {
       "dissent": false,

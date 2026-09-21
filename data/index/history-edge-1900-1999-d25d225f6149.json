@@ -952,12 +952,30 @@
         }
       ]
     },
+    "black-september--lebanese-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "bretton-woods-system--imf-agreement-1978--precondition-of": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "british-russian-convention--world-war-i--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -1711,6 +1729,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "cultural-revolution--sino-soviet-border-conflict--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -2531,6 +2558,15 @@
         }
       ]
     },
+    "korean-war--korean-armistice-agreement--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "korean-war--treaty-of-san-francisco--precondition-of": {
       "from": "git",
       "versions": [
@@ -2952,6 +2988,15 @@
         }
       ]
     },
+    "ogaden-war--somali-civil-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "paris-peace-conference--treaty-of-trianon--caused": {
       "from": "git",
       "versions": [
@@ -3349,6 +3394,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "russo-japanese-war--british-russian-convention--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3927,6 +3981,15 @@
         }
       ]
     },
+    "treaty-on-the-non-proliferation-of-nuclear-weapons--treaty-on-the-prohibition-of-nuclear-weapons--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "turkish-war-of-independence--treaty-of-lausanne--caused": {
       "from": "git",
       "versions": [
@@ -3956,6 +4019,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "vietnam-war--cambodian-vietnamese-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -4071,6 +4143,15 @@
       ]
     },
     "world-war-i--armistice-of-mudros--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "world-war-i--basmachi-movement--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -4341,6 +4422,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "young-turk-revolution-of-1908--bulgarian-declaration-of-independence--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
