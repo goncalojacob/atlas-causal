@@ -1,0 +1,103 @@
+# M42 — the pool, measured
+
+Amendment A1 says §0 of `docs/m42-brief.md` is stale and that the run's first
+commit is the re-measurement. This is it. Every number here is printed by
+`node tools/m42-pool.mjs`, which reads `data/` and nothing else; none of it is
+typed from memory, and `--at <rev>` asks the same question of any earlier
+commit.
+
+Amendment A5 asks for **the largest connected component of the causal graph
+before and after each batch**, because that is what *"chains throughout the
+globe and time"* is as a number. Section 3 is that table, one row per batch,
+appended as each batch lands.
+
+## 1. The corpus, 21 September 2026, before M42 wrote anything
+
+Measured at `m42`'s first commit, cut from `origin/m0` after M72 merged.
+
+```
+event records: 573 (active 310, retracted 244, merged 19)
+active events: 310 — main 229, filed under a parent 81
+  review status: draft 310
+  written by: wikidata 165, assistant 145
+edge records: 362, active 362, between two active events 362
+components of the causal graph: 34
+  largest: 254
+  next: 7, 5, 5, 3, 3, 2, 2, 2, 2
+  active events with no edge at all: 23
+Portuguese 156, world 154
+  hops to a Portuguese event: 0: 156, 1: 41, 2: 41, 3: 20, 4: 17, 5: 6,
+                              6: 2, unreachable: 27
+```
+
+**What moved since the brief was written.** §0 said 250 active events and
+249 drafts; there are **310**, all 310 draft. §0's 263 tombstones are 244 and
+19 records have since been merged into others. M62 and M67 filed 81 of the
+310 under a parent, which is why the main count is 229 and not 310 — and it
+is the number amendment A3 is about.
+
+**The causal graph is one large component and thirty-three fragments.**
+254 of the 310 active events are in the largest; the next is seven. Twenty-
+three active events carry no edge at all. So the atlas is already mostly one
+chain — and what a batch has to do is join its records to *that*, not to each
+other, which is A5's whole point and what M44 failed at.
+
+**Portuguese reach is a measurement and not a gate** (brief §1). 156 of the
+310 active events are Portuguese by the frozen rule of
+`docs/m44-connections.md` §1; 27 active events cannot reach a Portuguese
+event at all, which is the 23 with no edge plus four in fragments of their
+own.
+
+## 2. The pool to import from
+
+Amendment A2: the **seeds** are exhausted, and they are.
+`data/imports/wikidata-seeds.json` names **703 items** and
+`data/imports/wikidata-state.json` records all 703 as walked, cursor at
+2026-09-15, nothing pending. An `--import` run today would fetch nothing.
+
+**The sweep is not exhausted.** `docs/wikidata-candidates.md`, written by
+`node tools/import/wikidata.mjs --candidates` on 2026-09-06, holds **2,219
+candidate rows** across 42 periods. 290 are ticked and all 290 have been
+walked. Of the 2,219:
+
+| | rows |
+| --- | --: |
+| total | 2,219 |
+| ticked, and walked | 290 |
+| whose item is on a record here now | — of 546 item ids on records, most came this way |
+| **neither on a record nor in the seeds** | **1,586** |
+| of those, `world-*` families | 1,253 |
+| of those, `pt2-*` families | 333 |
+
+So the pool this milestone draws on is **1,586 rows the tool has already
+found and nobody has walked**, and the top of it by sitelinks is not thin:
+the Armistice of Mudros, the Indo-Pakistani war of 1947, the Sino-Vietnamese
+war, the Angolan civil war, the Locarno treaties, the Anglo-Irish treaty, the
+Indonesian national revolution, the second Intifada, the Estonian war of
+independence, the Greco-Italian war — every one of them at 45 sitelinks or
+more and none of them here.
+
+A fresh `--candidates` pass is run anyway, because A2 names it and because the
+committed sweep's *"in the atlas"* column was computed against a `data/` two
+weeks and four milestones old. Ticks are made against the fresh file where it
+lands and against the committed one where it does not; either way they are the
+same tool's output and the rule that picks them is written down before a box
+is ticked.
+
+## 3. The largest connected component, batch by batch
+
+A5: a batch that grows the corpus and not the component has to say why.
+
+| batch | what it was | active events | main | filed | active edges | largest component | isolated events |
+| --- | --- | --: | --: | --: | --: | --: | --: |
+| — | before M42 | 310 | 229 | 81 | 362 | 254 | 23 |
+
+## 4. The fifty M44b retracted, which are batch 0
+
+Brief §2: they were retracted under a rule that no longer exists, and they are
+the cheapest fifty events this milestone will ever get. **Fifty** event
+records carry a `retraction.reason` naming M44b, and every one of those
+reasons names the edge that could not be written under the Portuguese bar —
+which is to say the corpus wrote down, fifty times, exactly what to do with
+them once the bar changed. That work is section 4 of `docs/m42-connections.md`
+and its counts land in the table above.
