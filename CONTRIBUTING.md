@@ -50,6 +50,34 @@ whole record, keeping the id it already has. The Action replaces the file and
 appends you to `authors`, keeping the original `created` date and setting
 `revised`.
 
+### Writing a narrative, in the atlas (M71)
+
+A narrative is the one kind you do not have to leave the map to write. Press
+**write** in the masthead and the composer opens as a column beside the
+picture; then **click events** — on the map, the graph or the lanes, the same
+click that chooses one — and they become the steps, in the order you clicked
+them. Each step takes your own paragraph on why it follows; the title, the
+summary, your name and at least one source are asked once. **The window is the
+span of the steps** and is shown rather than typed.
+
+Three things worth knowing:
+
+- **A step is always an event the atlas already has.** There is no field to
+  type an id into: the composer offers nothing it cannot cite.
+- **It is checked here by the rules that check it there.** The verdict under
+  the form is `validate()` from `src/validate/core.js` — the function
+  `node tools/validate.mjs` runs — over the atlas the page has loaded, so a
+  submission does not fail on shape.
+- **Nothing leaves your browser until you send it.** The draft is kept in
+  `localStorage` between visits and is in no link; submitting opens the
+  `Contribution` template prefilled, in your own browser and under your own
+  account, and the page makes no request of its own. A GitHub account is
+  therefore needed. From there it is steps 4 to 6 above.
+
+The record the composer writes carries `review.status: draft` — nobody has
+read it — and it stays `draft` when the Action writes it, so a contributed
+narrative lands in `review.html`'s queue like every other unread record.
+
 ## The review checklist — the part no tool does
 
 The validator can prove that a record is well-formed and that its references

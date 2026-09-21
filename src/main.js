@@ -249,16 +249,18 @@ try {
   // a narrative pays for the `<button>` in the masthead and nothing else.
   const composeButton = document.getElementById('compose-button');
   let composer = null;
-  composeButton?.addEventListener('click', async () => {
-    if (!composer) {
-      const { createComposer } = await import('./compose/composer.js');
+  // The import is started once and held: a second press while the module is
+  // still on the wire would otherwise build a second composer over the first,
+  // both subscribed to the state and only one of them on the page.
+  let composerLoading = null;
+  composeButton?.addEventListener('click', () => {
+    if (composer) { composer.toggle(); return; }
+    composerLoading ??= import('./compose/composer.js').then(({ createComposer }) => {
       composer = createComposer(layout, {
         atlas, state, toggle: composeButton, onLayout: () => remeasure({ force: true }),
       });
       composer.open();
-      return;
-    }
-    composer.toggle();
+    });
   });
 
   const showView = (view) => {
