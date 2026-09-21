@@ -246,3 +246,36 @@ because a class that types anything types nothing.
 lane. It has one now, so it goes back into the walk — which is M44-0's and
 M46's move, and deviation 546's rule that an item in `done` is silent and an
 item walked again is named in every report.
+
+## 7. Where the run stands, for the fire that picks it up
+
+Three batches are on `m42` and each was validated, indexed and pushed before
+the next, so a killed run loses a batch and not the milestone.
+
+| | what landed |
+| --- | --- |
+| batch 0 | the fifteen M44b retracted that the new bar puts back, 18 edges |
+| batch 1 | seven earlier tombstones — M40b's and M22's — 7 edges |
+| batch 2a | the twelve hinges seeded, ten classes, twelve lanes, one rewind |
+
+**Two Action runs are queued on `import-wikidata.yml`**, which takes them one
+at a time (`concurrency: import-wikidata`, never cancelling):
+
+- `import/candidates-2026-09-21`, the fresh sweep amendment A2 names, pushed
+  at 00:52Z and still running. It writes `docs/wikidata-candidates.md` and
+  nothing else. **It is not on the critical path**: the committed sweep holds
+  1,586 unwalked rows and §5's rule reads either.
+- `import/run-m42-2026-09-21`, the walk over the twelve hinges of §6, queued
+  behind it.
+
+**What the next fire does.** Fast-forward whichever import branch has
+finished into `m42` — that merge is the run's own commit, by the amendment of
+4 September — then the connection pass for what arrived: read the records,
+write the edges to **what already exists** as well as to each other, file each
+under a parent where M62's rule reaches, and reread the tombstones the new
+records unblock. `docs/m42-connections.md` §5a and §5b name them against the
+record each waits for, so the hinges arriving is a list of reinstatements
+already written down: the dissolution of the Soviet Union and the revolutions
+of 1989 unblock four, the breakup of Yugoslavia and the Bosnian war unblock
+five, the Angolan civil war unblocks two. Then §3's row here, and the next
+batch.
