@@ -192,11 +192,14 @@ const TIMELINE = `
 // that name drawn as a label. A bar whose century has not landed carries the
 // interface saying it is still loading, which is in no label, so it counts as
 // unnamed here exactly as it does there.
-const BARS_NAMED = `
+// `also` is a further clause about `bars`, for the caller that is waiting for a
+// picture to have narrowed as well as to have been named.
+const barsNamed = (also = 'true') => `
   const svg = document.querySelector('#timeline svg.timeline');
   if (!svg) return false;
   const bars = [...svg.querySelectorAll('rect.bar[data-id], .layer-held rect[data-id]')];
   if (bars.length < 2) return false;
+  if (!(${also})) return false;
   const drawn = new Set([...svg.querySelectorAll('text.bar-label')].map((l) => l.textContent));
   return bars.every((b) => {
     const t = b.querySelector('title');
@@ -216,7 +219,7 @@ test('every bar on the resting timeline carries its title, and no +N is drawn', 
     // 21 September. What it waits for now is the assertion itself — no bar
     // whose title is not drawn as a label — with `until`, so a bar that never
     // gets one is still reported by name and not as a timeout.
-    await until(page, BARS_NAMED);
+    await until(page, barsNamed());
 
     const seen = await page.eval(TIMELINE);
     assert.ok(seen.bars.length > 1, `the timeline drew bars (${seen.bars.length})`);
@@ -243,11 +246,12 @@ test('clicking a bar with children narrows the timeline to it and them, and one 
         .dispatchEvent(new MouseEvent('click', { bubbles: true }));
       return true;`);
     await waitFor(page, 'return location.search.includes("selected=fixture-event-f");', 'the umbrella to open');
-    await waitFor(page, `
-      const n = document.querySelectorAll('#timeline rect[data-id]').length;
-      if (window.__open === n && n > 0) return true;
-      window.__open = n;
-      return false;`, 'the narrowed picture');
+    // The same proxy as test 97's, one test along: the count of bars unchanged
+    // 50 ms apart. It is stable before the click has narrowed anything and
+    // stable again before the narrowed picture has been named, and both of the
+    // next assertions want the other thing. So it waits for them: fewer bars
+    // than the resting picture had, and every one of them titled.
+    await until(page, barsNamed(`bars.length < ${rest.bars.length}`));
 
     const opened = await page.eval(TIMELINE);
     assert.ok(opened.bars.length < rest.bars.length,
