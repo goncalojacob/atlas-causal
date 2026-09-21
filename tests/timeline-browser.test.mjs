@@ -48,6 +48,23 @@ const FIT = `
     windowHeight: innerHeight,
   };`;
 
+// No bar is waiting for its name: every bar whose title is a name has that name
+// drawn as a label. A bar whose century has not landed carries the interface
+// saying it is still loading, which is in no label, so it counts as unnamed
+// here. The wait a test about what the drawing *does next* owes itself, since
+// a shard landing is a hundred and fifty labels drawn (M78).
+const BARS_NAMED = `
+  const svg = document.querySelector('#timeline svg.timeline');
+  if (!svg) return false;
+  const bars = [...svg.querySelectorAll('rect.bar[data-id], .layer-held rect[data-id]')];
+  if (bars.length < 1) return false;
+  const drawn = new Set([...svg.querySelectorAll('text.bar-label')].map((l) => l.textContent));
+  return bars.every((b) => {
+    const t = b.querySelector('title');
+    const name = t ? t.textContent.split(' \\u2014 ')[0] : null;
+    return !name || drawn.has(name);
+  });`;
+
 // The rows have been laid out for the pane they are in *now*, and the height
 // they were laid out at is what the caller says. `fits`'s own first assertion
 // — the pane holds the drawing and nothing else — said as a predicate: a
@@ -209,12 +226,14 @@ test('a state change updates the bars in place and does not rebuild them', { ski
     // title arrives with its century (attributes.js): an observer installed
     // before the shard lands watches the shard arrive, which is a hundred and
     // fifty labels drawn and is not the click this test is about.
-    await waitFor(page, 'return document.querySelectorAll("#timeline text.bar-label").length > 0;', 'the titles');
-    await waitFor(page, `
-      const n = document.querySelectorAll('#timeline text.bar-label').length;
-      if (window.__labels === n) return true;
-      window.__labels = n;
-      return false;`, 'the titles to settle');
+    // The proxy was the count of labels being the same on two polls 50 ms
+    // apart, which is the same number on either side of a shard landing and is
+    // stable for the whole of the gap between the bars being drawn and the last
+    // century arriving. An observer installed inside that gap watches the
+    // shards arrive, which is the hundred and fifty labels this test would then
+    // count as a rebuild. What it waits for is what it needs: no bar whose
+    // title is not drawn as a label, so there is no label left to come.
+    await until(page, BARS_NAMED);
     // Every element the timeline has drawn, watched for children coming and
     // going. `subtree` so the layers themselves are covered.
     // Elements only. A bar that now stands for a different event still has
