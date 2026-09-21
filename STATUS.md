@@ -15464,6 +15464,25 @@ is recorded, not rewritten (m76-brief §4).
       both columns were measured here, in one session, on `origin/m0` in a
       worktree and on this branch's head.
 
+1109. **`about.html` and `CLAUDE.md` were edited, which the brief did not
+      list.** Two sentences of the reader's own page had become false: it told
+      whoever had not used the atlas that the graph's window "is the shaded
+      band across the picture" and that what falls outside it "fades rather
+      than leaving", which is exactly the three rules section 3 removed. Its
+      window paragraph now also says the band is over the map as well as on
+      the timeline and that it is the whole of how a window is set, which is
+      section 2 said to a reader rather than to us. `CLAUDE.md`'s layout tree
+      said `window-control.js` held "the two ends as numbers to read and to
+      type" and named `windowPatch` and `densityColumns`, which this milestone
+      deleted, and `graph-view.js` "the window shaded"; the tree is the
+      repository's map of itself and a wrong line in it is worse than no line.
+      Two source comments went with them — the one above `windowOf` that
+      pointed the clamp at `windowPatch`, and `map-band.js`'s "the two number
+      fields are still in the masthead". No gesture and no behaviour: this
+      deviation is words only, and one test came with it — *an actor chosen
+      and an actor focused draw the same profile*, which is the set identity
+      the phone picture stands on, asserted rather than assumed.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

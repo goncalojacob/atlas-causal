@@ -11,9 +11,11 @@
 // present on the map from first paint, on every visit, with nothing to press
 // and nothing to remember. A reader arrives, sees the years, and drags.
 //
-// M60 was right and nothing about it is undone: the timeline is still a view
-// of its own, the two number fields are still in the masthead, and **the map
-// pane is still the whole layout**. What M60 lost is that a year could be
+// M60 was right in what it removed and nothing about that is undone: the
+// timeline is still a view of its own and **the map pane is still the whole
+// layout**. Its two number fields are gone, though — the owner, 21 September:
+// *"Picking up the dates exactly is unnecessary"* — so this strip is the
+// control on the map and not one of two. What M60 lost is that a year could be
 // *swept* — you pulled an end and the map answered as you moved, and you could
 // see where the events were while you were choosing. A number field can do
 // neither, because you must already know the year you want. That is what is

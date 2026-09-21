@@ -218,6 +218,17 @@ test('over the repository’s own corpus the lens is narrower than the picture',
   for (const e of profile) assert.ok(view.kept.has(e.id), `${e.id} is one of the selection’s own`);
 });
 
+// The explicit lens and the implicit one are one set (M65), so the band under
+// a selection is the same band whichever of the two the reader arrived by.
+test('an actor chosen and an actor focused draw the same profile', async () => {
+  const atlas = await atlasOf(dataDir);
+  const chosen = profileEvents(atlas, at({ actor: 'portugal' }));
+  const focused = profileEvents(atlas, at({ focus: 'actor:portugal' }));
+  assert.ok(chosen.length > 0, 'Portugal has events of its own');
+  assert.deepEqual(sorted(focused.map((e) => e.id)), sorted(chosen.map((e) => e.id)),
+    'the same events, so the same columns at the same scale');
+});
+
 // ─── 3. nothing in the masthead types a year ───────────────────────────────
 //
 // The owner: *"Picking up the dates exactly is unnecessary"* — *"This can be

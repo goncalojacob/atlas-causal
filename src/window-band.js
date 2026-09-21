@@ -90,9 +90,11 @@ export function profileEvents(atlas, state) {
 // is the only numbering arithmetic is allowed on; historians' numbering out,
 // because that is what the state and the URL carry (util/dates.js).
 //
-// The band's drag and the masthead's two number fields both come through here
-// (`window-control.js`, `windowPatch`), so typing 1600 and dragging to 1600 can
-// only ever mean the same thing.
+// Every gesture on either band comes through here — and, until M76, the
+// masthead's two number fields did too (`window-control.js`, `windowPatch`),
+// so that typing 1600 and dragging to 1600 could only ever mean the same
+// thing. There is nothing to type into now, and this is the one clamp left:
+// a handle, the ground, the wheel, an arrow key, a double-click.
 export function windowOf(from, to, extent) {
   if (!extent) return null;
   const clamp = (year) => Math.min(extent.max, Math.max(extent.min, Math.round(year)));
