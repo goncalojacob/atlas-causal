@@ -30,7 +30,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import {
-  withBrowser, open, waitFor, watchErrors, errorsOn, skip,
+  withBrowser, open, waitFor, until, watchErrors, errorsOn, skip,
 } from './browser.mjs';
 import { atlasOf, ROOT } from './helpers.mjs';
 import { lensView } from '../src/lens.js';
@@ -165,6 +165,31 @@ test('an event chosen with a ring wider than the pane is framed on the event, an
 // pane of that first instant lost its outermost steps when the pane shrank
 // under it. One size is not a test of a frame; two are.
 const TRANSFORM = "return document.querySelector('svg.graph g.viewport').getAttribute('transform') || '';";
+// The pane the graph is drawn in, as the screen has it. Rounded, because a
+// device metrics override arrives in whole pixels and a fractional rectangle
+// would make this a comparison of floats.
+const PANE = `
+  const r = document.querySelector('svg.graph').getBoundingClientRect();
+  return Math.round(r.width) + 'x' + Math.round(r.height);`;
+
+// The graph has been framed for the pane it is in *now*: the pane is not the
+// one that was measured, the camera has moved since it was read, and every
+// step of the walk is inside the rectangle — which is what the test goes on to
+// assert, said as a predicate. A camera still framed for the pane the page
+// opened in leaves a step outside and fails the last clause, so the wait
+// cannot end on one.
+const FRAMED_FOR_ITS_PANE = (pane, before, steps) => `
+  const svg = document.querySelector('svg.graph');
+  if (!svg) return false;
+  const r = svg.getBoundingClientRect();
+  if (Math.round(r.width) + 'x' + Math.round(r.height) === ${JSON.stringify(pane)}) return false;
+  if ((svg.querySelector('g.viewport').getAttribute('transform') || '') === ${JSON.stringify(before)}) return false;
+  return ${JSON.stringify(steps)}.every((id) => {
+    const el = svg.querySelector('.layer-nodes circle.node[data-id="' + id + '"]');
+    if (!el) return false;
+    const box = el.getBoundingClientRect();
+    return box.left >= r.left && box.right <= r.right && box.top >= r.top && box.bottom <= r.bottom;
+  });`;
 
 test('a pane that changes size frames the walk again, and no step falls off it', { skip }, async () => {
   const atlas = await atlasOf(dataDir);
@@ -186,12 +211,27 @@ test('a pane that changes size frames the walk again, and no step falls off it',
     }
 
     const before = await page.eval(TRANSFORM);
+    const pane = await page.eval(PANE);
     await page.send('Emulation.setDeviceMetricsOverride', {
       mobile: false, width: 1100, height: 620, deviceScaleFactor: 1,
     });
     await waitFor(page, 'return innerHeight === 620 && innerWidth === 1100;', 'the window to be smaller');
-    await waitFor(page, `return ${TRANSFORM.slice('return '.length, -1)} !== ${JSON.stringify(before)};`,
-      'the graph to be framed again for the pane it is now in');
+    // The proxy was "the transform is not the one read a moment ago", and the
+    // moment is the trouble: measured here (docs/m78-flakes.md), the camera
+    // moves **twice at the opening size** — the arrangement lands, and the
+    // frame is taken again — 4 ms apart and 20 ms after the walk is drawn. A
+    // `before` read between those two is not the transform the page is holding,
+    // so the wait ends on a camera move that has nothing to do with the resize
+    // and the assertion is read against a walk framed for the pane the page
+    // opened in. That is `a step still on screen after the resize` on the
+    // runner at 15:33 on 21 September.
+    //
+    // What it waits for now is the reframe itself: the pane on screen is no
+    // longer the one that was measured, the camera has moved since, and — the
+    // thing the next lines assert — every step of the walk is inside it. An
+    // intermediate camera leaves a step off and the wait goes on; `until`, so
+    // one that never comes is reported by the assertion, which says which step.
+    await until(page, FRAMED_FOR_ITS_PANE(pane, before, steps));
 
     const short = await page.eval(MARKS);
     for (const id of steps) {

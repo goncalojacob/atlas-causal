@@ -16,6 +16,7 @@ import { createPhone } from './phone.js';
 import { createIntro } from './intro.js';
 import { createReadingMode, openingState } from './narrative-mode.js';
 import { activeFoci, parseFocus, lensSet } from './lens.js';
+import { workingSet } from './emphasis.js';
 import { resolveWindow } from './util/window.js';
 import { bindNarrativeKeys } from './panel/narrative.js';
 import { esc } from './util/esc.js';
@@ -340,6 +341,22 @@ try {
   let releaseWindow = null;
   const onScreenShards = (s) => {
     const wanted = [...atlas.attributeShardsIn(resolveWindow(s, atlas.extent, atlas.opens))];
+    // **The graph is not windowed since M76**, and the pinning was still the
+    // band's. The owner asked for a picture that always shows all dates, so the
+    // graph draws every century while `attributeShardsIn` pinned the two or
+    // three the band covers; the rest are fetched unpinned, the cap of four
+    // evicts the oldest of them, and every record carried only by an evicted
+    // shard is stripped of its title (data.js, `evictIfOver`). The graph then
+    // holds marks it has drawn and can never name — measured on
+    // `?view=graph&from=1900&to=1999` as three of eighty-seven, the same three
+    // every round, still reading "still loading" ten seconds later (M78,
+    // docs/m78-flakes.md). What a view draws is what is on screen, so the
+    // shards of what the graph draws are pinned while it is the view.
+    if (s.view === 'graph') {
+      for (const shard of atlas.attributeShardsOf(workingSet(atlas, s).shown)) {
+        if (!wanted.some((w) => w.key === shard.key)) wanted.push(shard);
+      }
+    }
     const lens = lensSet(atlas, s);
     if (lens) {
       for (const shard of atlas.attributeShardsOf(lens)) {

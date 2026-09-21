@@ -792,7 +792,6 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   // length in the stylesheet, not `auto`), so the only loop left would be a
   // scrollbar appearing, which the compare stops in one turn.
   if (typeof ResizeObserver !== 'undefined') {
-    let last = '';
     let queued = false;
     // On the next frame rather than inside the callback. Since M77 the drawing
     // is regularly taller than its pane — every bar carries its title and the
@@ -806,11 +805,24 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     new ResizeObserver(() => {
       if (queued) return;
       queued = true;
+      // **`render` decides, and nothing here second-guesses it** (M78). This
+      // kept a string of the pane's size and skipped the render when it had
+      // not moved — a guard that read the size *live, a frame after the
+      // observation*, and so threw the observation away whenever the pane came
+      // back to that size in between. The atlas is drawn from more than one
+      // place: `remeasure` in main.js draws the timeline too, so the pane could
+      // be observed at 295, drawn at 295 by that other path, be back at 795 by
+      // the time this frame ran, and read as "unchanged" — leaving the rows
+      // laid out for a pane the reader is no longer in, for good. Reproduced at
+      // one round in thirty with a fresh browser each round, and red in one
+      // browser pass in five.
+      //
+      // `render` already asks the right question: its key carries the pane's
+      // width and height and is set by whoever last drew, from any path
+      // (`drawnFor`). So a frame later, unconditionally, is both the loop
+      // protection M77 added and the whole of the guard.
       const draw = () => {
         queued = false;
-        const now = `${container.clientWidth}x${container.clientHeight}`;
-        if (now === last) return;
-        last = now;
         render(state.get());
       };
       if (typeof requestAnimationFrame === 'function') requestAnimationFrame(draw);

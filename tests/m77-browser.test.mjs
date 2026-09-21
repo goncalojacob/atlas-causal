@@ -14,7 +14,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  withBrowser, open, seenIntro, waitFor, watchErrors, errorsOn, skip,
+  withBrowser, open, seenIntro, waitFor, until, named, watchErrors, errorsOn, skip,
 } from './browser.mjs';
 
 const DESK = { width: 1440, height: 900, deviceScaleFactor: 1 };
@@ -56,20 +56,38 @@ const GRAPH = `
     exportable: Boolean(document.querySelector('.graph-area [data-export], .graph-area button')),
   };`;
 
+// What the two tests below wait for, which is what they go on to assert:
+// every step of the walk carries its own name and has it drawn as a label.
+// `nameOf` and `drawn` are `GRAPH`'s own, said again as a predicate — a bar or
+// a mark whose century has not landed carries the interface saying it is still
+// loading, which is a name no label is ever drawn with (src/attributes.js).
+const WALK_NAMED = `
+  const svg = document.querySelector('svg.graph');
+  if (!svg) return false;
+  const walk = [...svg.querySelectorAll('circle.node.of-narrative')];
+  if (walk.length < 2) return false;
+  const drawn = new Set([...svg.querySelectorAll('text.node-label')].map((l) => l.textContent));
+  return walk.every((m) => {
+    const t = m.querySelector('title');
+    const name = (t ? t.textContent : '').split(' \\u2014 ')[0];
+    return Boolean(name) && drawn.has(name);
+  });`;
+
 // 1 and 2, on one page: the walk is named in full, and nothing else is named.
 test('with a narrative open every step is named in full, and nothing is cut', { skip }, async () => {
   await desk(async (page, url) => {
     await watchErrors(page);
     await seenIntro(page);
     await open(page, url(`?view=graph&narrative=${WALK}`), GRAPH_DRAWN);
-    await waitFor(page, 'return document.querySelectorAll("svg.graph text.node-label").length > 0;', 'the labels');
-    // The walk's own names arrive with their century; wait until the picture
-    // has settled rather than racing the shard.
-    await waitFor(page, `
-      const walk = document.querySelectorAll('svg.graph circle.node.of-narrative').length;
-      if (window.__walk === walk && walk > 0) return true;
-      window.__walk = walk;
-      return false;`, 'the walk to be drawn');
+    await waitFor(page, 'return document.querySelectorAll("svg.graph circle.node.of-narrative").length > 0;', 'the walk to be drawn');
+    // The walk's own names arrive with their century. The wait was the count of
+    // the walk's marks being the same on two polls 50 ms apart — a count that
+    // is the same number on either side of a shard landing, and that is settled
+    // the moment the lens is built and long before it is named. What it waits
+    // for now is the thing the next lines assert: every step carries its own
+    // name, and that name is drawn as a label. `until` and not `waitFor`, so a
+    // step that never gets one is reported by the assertion, which says which.
+    await until(page, WALK_NAMED);
 
     const seen = await page.eval(GRAPH);
     assert.ok(seen.walk.length > 1, `the walk is drawn (${seen.walk.length} steps)`);
@@ -89,7 +107,14 @@ test('with a narrative open nothing outside the walk is named until it is hovere
     // resting one, where the heaviest marks *are* named and this test would be
     // asking the wrong question of the right page.
     await waitFor(page, 'return document.querySelectorAll("svg.graph circle.node.of-narrative").length > 0;', 'the walk');
-    await waitFor(page, 'return document.querySelectorAll("svg.graph text.node-label").length > 0;', 'the labels');
+    // And then the mark this test points at, which is the race that dropped it
+    // three runs in five here (docs/m78-flakes.md). The wait was "some label is
+    // drawn": the walk's own names satisfy it, while the neighbourhood's marks
+    // — the ones outside the walk, which is all this test hovers — were still
+    // carrying "still loading", and a mark with no name yet is a mark the
+    // pointer draws nothing over. What it waits for now is every mark on the
+    // page carrying its own name, which is what "the pointer names it" needs.
+    await until(page, named('svg.graph circle.node[data-id]'));
 
     const seen = await page.eval(GRAPH);
     assert.deepEqual(seen.offWalkNamed, [],
@@ -163,16 +188,38 @@ const TIMELINE = `
     rings: svg.querySelectorAll('rect.ring').length,
   };`;
 
+// `TIMELINE`'s `unnamed` as a predicate: every bar whose title is a name has
+// that name drawn as a label. A bar whose century has not landed carries the
+// interface saying it is still loading, which is in no label, so it counts as
+// unnamed here exactly as it does there.
+// `also` is a further clause about `bars`, for the caller that is waiting for a
+// picture to have narrowed as well as to have been named.
+const barsNamed = (also = 'true') => `
+  const svg = document.querySelector('#timeline svg.timeline');
+  if (!svg) return false;
+  const bars = [...svg.querySelectorAll('rect.bar[data-id], .layer-held rect[data-id]')];
+  if (bars.length < 2) return false;
+  if (!(${also})) return false;
+  const drawn = new Set([...svg.querySelectorAll('text.bar-label')].map((l) => l.textContent));
+  return bars.every((b) => {
+    const t = b.querySelector('title');
+    const name = t ? t.textContent.split(' \\u2014 ')[0] : null;
+    return !name || drawn.has(name);
+  });`;
+
 test('every bar on the resting timeline carries its title, and no +N is drawn', { skip }, async () => {
   await desk(async (page, url) => {
     await watchErrors(page);
     await seenIntro(page);
     await open(page, url('?view=timeline'), BARS_DRAWN);
-    await waitFor(page, `
-      const n = document.querySelectorAll('#timeline text.bar-label').length;
-      if (window.__n === n && n > 0) return true;
-      window.__n = n;
-      return false;`, 'the titles to settle');
+    // The wait was the count of labels being the same on two polls 50 ms apart.
+    // A count is stable between two shards, and it is stable for the whole of
+    // the gap between the picture being drawn and the last century landing:
+    // seven bars were still unnamed at the assertion on the runner on
+    // 21 September. What it waits for now is the assertion itself — no bar
+    // whose title is not drawn as a label — with `until`, so a bar that never
+    // gets one is still reported by name and not as a timeout.
+    await until(page, barsNamed());
 
     const seen = await page.eval(TIMELINE);
     assert.ok(seen.bars.length > 1, `the timeline drew bars (${seen.bars.length})`);
@@ -199,11 +246,12 @@ test('clicking a bar with children narrows the timeline to it and them, and one 
         .dispatchEvent(new MouseEvent('click', { bubbles: true }));
       return true;`);
     await waitFor(page, 'return location.search.includes("selected=fixture-event-f");', 'the umbrella to open');
-    await waitFor(page, `
-      const n = document.querySelectorAll('#timeline rect[data-id]').length;
-      if (window.__open === n && n > 0) return true;
-      window.__open = n;
-      return false;`, 'the narrowed picture');
+    // The same proxy as test 97's, one test along: the count of bars unchanged
+    // 50 ms apart. It is stable before the click has narrowed anything and
+    // stable again before the narrowed picture has been named, and both of the
+    // next assertions want the other thing. So it waits for them: fewer bars
+    // than the resting picture had, and every one of them titled.
+    await until(page, barsNamed(`bars.length < ${rest.bars.length}`));
 
     const opened = await page.eval(TIMELINE);
     assert.ok(opened.bars.length < rest.bars.length,
