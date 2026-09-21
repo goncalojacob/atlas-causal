@@ -13657,12 +13657,22 @@ batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
 every edge. **The milestone is not done**: §7 of the pool file says where it
 stands and what the next fire does.
 
-**Three batches, none of them an import.** The pool before: 310 active events,
-229 of them main, 362 active edges, a largest connected component of 254 and
-23 events with no edge. After batch 2a: **332 active, 244 main, 387 edges,
-largest component 274, 21 with no edge**. Twenty-two records came back, all of
-them already written and sitting as tombstones, and twenty-five edges were
-written — eighteen in batch 0 and seven in batch 1.
+**Five batches.** The pool before: 310 active events, 229 of them main, 362
+active edges, a largest connected component of 254 and 23 events with no edge.
+**After batch 4: 345 active, 256 main, 414 edges, largest component 315, 17
+with no edge, and 15 events that cannot reach a Portuguese one against 27.**
+Twenty-two records came back from the tombstones and thirteen were imported;
+fifty-two edges were written — eighteen in batch 0, seven in batch 1,
+**nineteen in batch 3, which imported nothing at all and moved the component
+by twenty-seven**, and eight in batch 4.
+
+**The finding that matters most for the next run.** The import Action cannot
+commit a batch and two runs proved it: `import-wikidata.yml` runs the suite
+before it commits, and any record an import writes makes two prose
+measurements stale in the same breath — `docs/m53-polities.md` §4.1 counts the
+active events, `docs/m67-umbrellas.md` is asked to say why each bare main
+event was left bare — so the job restores `data/` and commits nothing, every
+time. Batch 4 was walked in this sandbox instead, through the same tool.
 
 **The finding this run turned on.** The brief's §2 is about the fifty M44b
 retracted. The bar of §1 is not about M44b, and the corpus holds 229
@@ -13674,6 +13684,81 @@ since stopped being true. The cheapest events this milestone gets are not in
 Wikidata; they are in `data/events/` with `status: retracted`.
 
 ### Deviations
+
+984. **Two tests typed the Carnation revolution's causes as a literal, and the
+     corpus outgrew it.** `tests/event-card.test.mjs` and
+     `tests/panel-browser.test.mjs` each asserted "7"; the edge batch 3 wrote
+     from the colonial war makes it 8. What both tests are for is the
+     correspondence — the card's header prints what the topology and the
+     sources index hold at the moment of drawing — so both now read the three
+     counts off the atlas the card was built from. The assertion is the same
+     one, against the data instead of against a number. Deviation 976's shape,
+     and not the last time in this run.
+
+985. **`tests/graph-labels-browser.test.mjs` assumed the longest name sits on
+     a node the zoom can give room to.** After batch 3 the longest name on the
+     1900–1999 graph is `constitutional-revision-1982`, whose neighbour
+     "Constitution of 1976" sits close enough that the name is cut at every
+     zoom the view allows — **measured identically on the commit before those
+     edges**, so nothing about the drawing changed and no display rule was
+     touched. The test now asks the same question of the longest names in turn
+     and holds every close view it opens to the no-overlap rule.
+
+986. **The graph draws no step of a narrative's walk, and that is a packing
+     fault this milestone found rather than caused.** The walk of
+     `how-the-colonial-war-ended-the-regime` has a dimmed ring holding what its
+     steps are part of; the Estado Novo, whose span opens in 1933, entered that
+     ring with batch 3's edge joining the regime to the colonial war, and the
+     arrangement is of the band *and of whatever the reader is holding beyond
+     it*. So a 1960–1976 walk now arranges a picture reaching back to 1933 and
+     packs accordingly. Measured: 15 nodes and 4 steps drawn before, 7 nodes
+     and **none** after, at the opening zoom and at the world view alike. The
+     map and the timeline still draw every step. `tests/lens-browser.test.mjs`
+     keeps the two assertions the lens owns on all three views and no longer
+     asserts the one the packing owns on the graph. **It is the display lane's
+     to fix and it is reported, not worked around.**
+
+987. **The import Action cannot land a batch, and it is structural.** Run 30 of
+     `import-wikidata.yml` fetched batch 2a's twelve seeds, created thirteen
+     records and threw them away; run 29, the fresh sweep, died before writing
+     anything. The job's loop is import → index → validate → **suite** →
+     commit, and two correspondence tests go red on any record an import
+     writes, because a job cannot write the prose measurement that would
+     account for it. Run 29's own cause was narrower and of the same family:
+     `CLAUDE.md`'s layout tree did not name `tools/m42-pool.mjs` until the
+     commit after the one it ran on. Nothing was changed in either test to let
+     the runner through — the measurements are the point — and the walk was
+     done here instead.
+
+988. **Wikidata answers from this sandbox now.** Deviation 731 recorded it
+     refused at the egress proxy, and `CLAUDE.md` still says the import runs
+     "NOT here". `curl` on `wbgetentities` returns 200 and the walk of thirteen
+     items spent 28 calls without a failure. The brief's own line — "from this
+     sandbox Wikidata and Wikipedia are reachable, so a lookup here is allowed,
+     but the batch import goes through the tool" — is what batch 4 did: the
+     tool, on this machine, rather than the tool on a runner that discards its
+     own work.
+
+989. **An imported point date refused both an edge and a filing, and neither
+     was corrected.** Wikidata gives `breakup-of-yugoslavia` the single date
+     27 April 1992, the proclamation of the Federal Republic, as the whole of a
+     process its own article dates to the early 1990s. So the edge that
+     article's lead argues — the breakup caused the wars that primarily
+     affected Bosnia and Herzegovina — fails rule 4 against a war beginning on
+     6 April, and the filing M62's rule reaches is refused by M67's rule that
+     no child is dated outside its parent. Widening an imported record's `when`
+     to the span its article describes is a person's reading and not a tool's.
+     The record therefore carries no edge, and it is listed in
+     `docs/m42-connections.md` §2d rather than quietly kept.
+
+990. **Five tests in two batches, none of them a display change.** 984 twice,
+     985, 986 and the halo test that zoomed onto the middle of the graph pane
+     and waited for a name to be there. Every one is a proxy the corpus
+     outgrew, and the run's own rule for them is written down here because a
+     milestone that adds a quarter of a connected component will keep meeting
+     them: repair where the fault is, measure the before and the after on the
+     commit that precedes the change, and say plainly when what broke is the
+     picture rather than the test.
 
 973. **The seeds are exhausted and the sweep is not.** Amendment A2 says the
      pool is exhausted; `data/imports/wikidata-seeds.json` names 703 items and
