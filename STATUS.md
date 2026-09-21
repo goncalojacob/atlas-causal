@@ -14189,14 +14189,21 @@ missing.
      column wide with the author's name truncated. Noticed in the picture,
      which is what the pictures are for.
 
-945. **One of four full serial browser passes had a single failure and its
-     name was not captured.** The run was read through a pipe that kept only
-     the summary — `pass 204, fail 1` — and the three passes either side of it,
-     including one that grepped for `not ok` and found none, were green, as was
-     every run of `tests/compose-browser.test.mjs` alone. Deviation 920 records
-     the same thing happening to M68 in the same place. It is written down
-     rather than explained, because "flake" is not a root cause: if the check
-     on `m71` shows it, it has a name and belongs to whoever reads it.
+945. **A browser suite failed once here and once on the check, and its name
+     was not captured either time.** Locally, one of four full serial passes
+     read `pass 204, fail 1` through a pipe that kept only the summary; the
+     three passes either side, one of them grepping for `not ok` and finding
+     none, were green, as was every run of `tests/compose-browser.test.mjs`
+     alone. On the check, run 1005 on `94def83c` reported the same
+     `205 tests, 204 pass, 1 fail` in the browser pass, and run 1009 on
+     `ba7607f9` — a superset of the same tree — was green. The log the name is
+     in could not be read from this sandbox: the job-logs endpoint refuses
+     (deviation 729) and the blob URL the MCP server hands back is refused by
+     the egress proxy. Deviation 920 records the same signature on M68.
+     Written down rather than explained, because "flake" is not a root cause:
+     roughly one browser test in a thousand is failing somewhere in the serial
+     pass, and the next run that catches it with its output kept has a name to
+     give whoever reads it.
 
 
 ## Milestones landed
