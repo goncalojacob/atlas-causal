@@ -824,6 +824,12 @@
     },
     {
       "dissent": false,
+      "id": "2021-myanmar-coup-d-etat",
+      "kind": "event",
+      "locator": "Q105180889"
+    },
+    {
+      "dissent": false,
       "id": "2022-brazilian-general-election",
       "kind": "event",
       "locator": "Q65053343"
@@ -1844,6 +1850,12 @@
     },
     {
       "dissent": false,
+      "id": "myanmar-civil-war",
+      "kind": "event",
+      "locator": "Q110613097"
+    },
+    {
+      "dissent": false,
       "id": "nova-republica-brazil-since-1985",
       "kind": "event",
       "locator": "Q2920526"
@@ -2429,6 +2441,12 @@
       "id": "tripartite-pact",
       "kind": "event",
       "locator": "Q153122"
+    },
+    {
+      "dissent": false,
+      "id": "tulip-revolution",
+      "kind": "event",
+      "locator": "Q459162"
     },
     {
       "dissent": false,

@@ -1882,6 +1882,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
+      "from": "2021-myanmar-coup-d-etat",
+      "id": "2021-myanmar-coup-d-etat--myanmar-civil-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "myanmar-civil-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
       "from": "2022-brazilian-general-election",
       "id": "2022-brazilian-general-election--2023-brazilian-congress-attack--reacted-to",
       "kind": "edge",
@@ -10871,6 +10899,34 @@
       "revised": null,
       "status": "active",
       "to": "orange-revolution",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "rose-revolution",
+      "id": "rose-revolution--tulip-revolution--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "tulip-revolution",
       "type": "inspired"
     },
     {

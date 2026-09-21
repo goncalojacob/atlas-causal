@@ -70,6 +70,12 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -1820,6 +1826,14 @@
             "status"
           ],
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -4096,6 +4110,14 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -4811,6 +4833,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-21"
         }
       ]

@@ -1558,6 +1558,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "revolutions-of-1989",
       "review": {
         "flags": [
           "imported-facts",
@@ -1565,7 +1566,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-15",
+      "revised": "2026-09-21",
       "status": "active",
       "title": "1991 Soviet coup d'état attempt"
     },
@@ -1823,13 +1824,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "yugoslav-wars",
       "review": {
         "flags": [
           "imported-facts"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "title": "2001 insurgency in Macedonia"
     },
@@ -2339,6 +2341,36 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "2014 Portuguese Socialist Party prime ministerial primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "2021-myanmar-coup-d-etat",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m44b-retracted",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "2021 Myanmar coup d'état"
     },
     {
       "authors": [
@@ -3708,13 +3740,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "dissolution-of-the-soviet-union",
       "review": {
         "flags": [
           "imported-facts"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "title": "Belovezh Accords"
     },
@@ -5024,6 +5057,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "yugoslav-wars",
       "review": {
         "flags": [
           "imported-facts",
@@ -5033,7 +5067,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-15",
+      "revised": "2026-09-21",
       "status": "active",
       "title": "Croatian War of Independence"
     },
@@ -8525,6 +8559,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "yugoslav-wars",
       "review": {
         "flags": [
           "imported-facts",
@@ -8532,7 +8567,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-15",
+      "revised": "2026-09-21",
       "status": "active",
       "title": "Kosovo War"
     },
@@ -9732,6 +9767,34 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Munich agreement"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "myanmar-civil-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Myanmar Civil War"
     },
     {
       "authors": [
@@ -11030,6 +11093,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "revolutions-of-1989",
       "review": {
         "flags": [
           "imported-facts",
@@ -11037,7 +11101,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-15",
+      "revised": "2026-09-21",
       "status": "active",
       "title": "Romanian Revolution (1989)"
     },
@@ -11081,7 +11145,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 1,
+      "degree": 2,
       "id": "rose-revolution",
       "kind": "event",
       "origin": {
@@ -14480,6 +14544,34 @@
       "revised": "2026-09-15",
       "status": "active",
       "title": "Exit from the adjustment programme"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "tulip-revolution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Tulip Revolution"
     },
     {
       "authors": [

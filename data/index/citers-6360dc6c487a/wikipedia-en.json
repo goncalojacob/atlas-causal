@@ -338,6 +338,12 @@
     },
     {
       "dissent": false,
+      "id": "2021-myanmar-coup-d-etat--myanmar-civil-war--caused",
+      "kind": "edge",
+      "locator": "\"Myanmar civil war (2021–present)\", revision 1375700231, § lead"
+    },
+    {
+      "dissent": false,
       "id": "2022-brazilian-general-election--2023-brazilian-congress-attack--reacted-to",
       "kind": "edge",
       "locator": "\"8 January Brasília attacks\", revision 1372449713, § Background"
@@ -2135,6 +2141,12 @@
       "id": "rose-revolution--orange-revolution--inspired",
       "kind": "edge",
       "locator": "\"Rose Revolution\", revision 1375844898, § International effects"
+    },
+    {
+      "dissent": false,
+      "id": "rose-revolution--tulip-revolution--inspired",
+      "kind": "edge",
+      "locator": "\"Tulip Revolution\", revision 1372025111, § Origins"
     },
     {
       "dissent": false,
