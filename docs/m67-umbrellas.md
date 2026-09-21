@@ -393,3 +393,97 @@ property is not asked of a child with nothing on it, and every such child must
 be named in this document, so a filing made on context and not argued for here
 fails. `tests/m62.test.mjs` gained the same clause, and nothing else in it
 moved.
+
+## 6. M42 batch 18 — two umbrellas for the two lanes that had none
+
+*21 September, after the filing pass of amendment A6. The pass filed Europe
+and the Scramble and left `docs/m42-pool.md` saying in as many words what the
+Americas and Asia each waited on. Batch 18 imported sixteen records that would
+all have arrived main, so the filing had to happen in the same batch — A6's
+"the main count must not rise from here" is what forced both umbrellas, and
+each is one the pool file had already nominated by name.*
+
+### 6.1 `nova-republica-brazil-since-1985`
+
+The fourth of the Brazilian periods this atlas holds, after
+`empire-of-brazil-1822-1889`, `the-1930-revolution-and-the-vargas-era` and
+`brazilian-military-dictatorship-1964-1985`. Q2920526 carries **no start
+date**, so like `third-portuguese-republic-since-1974` it is written here on
+M62's pattern rather than walked by the import, and its span is the article's
+own: "Brazilian history from 1985 to the present … beginning when civilian
+government was restored after a 21-year-long military dictatorship". The
+English article is cited at revision 1371710443 and the Portuguese, which
+carries the name the period is known by, at revision 72521647. **No day is
+given**, because neither the item nor the article gives one — both say 1985,
+and the article dates the phase to "the inauguration of José Sarney in 1985"
+without naming its date. It names one actor, `brazil`, which is the line a
+period named for a polity can honestly carry.
+
+**Eight filed under it**: `the-1988-brazilian-constitution`,
+`the-commodity-boom-and-the-chinese-buyer`, `operation-car-wash-2014`,
+`the-impeachment-of-dilma-rousseff-2016`,
+`the-2018-brazilian-general-election`, `2022-brazilian-general-election`,
+`lula-returns-to-the-presidency-2023`, `2023-brazilian-congress-attack`.
+
+**Two of those name neither an actor nor a place**, and A1 is why they are
+filed anyway, with the context recorded here as the amendment requires:
+
+- **`2022-brazilian-general-election`** (Q65053343), written by the Wikidata
+  import, whose item gives no participant and no coordinate — a general
+  election across a federation is not a thing one actor did in one place. Its
+  own title and summary say whose election it was, its article at revision
+  1375252300 is Brazil's, and 2 October 2022 is inside the period's span.
+- **`2023-brazilian-congress-attack`** (reinstated by this batch), the same:
+  the item names no single participant for a mob. Its article, at revision
+  1372449713, is about the Praça dos Três Poderes in Brasília, and 8 January
+  2023 is inside the span.
+
+**`1985-brazilian-presidential-election` is refused**, on judgement 1, which
+A6 leaves standing: a period named for a form of government does not contain
+the act that created it. It is already filed under the dictatorship it ended,
+which is the same judgement read from the other side.
+
+### 6.2 `arab-israeli-conflict`
+
+Q8669, the Wikidata import's own work: its span is the item's (P580,
+15 May 1948, no end), its title and summary are the item's, and the class
+Q11422542 *international conflict* was added to
+`data/imports/wikidata-seeds.json` for it. `docs/m42-pool.md` nominated it
+before this fire started as **the one umbrella the asia lane has with an
+article, a start date and a subject a record can be tested against**, and it
+is a conflict rather than a period, which A6 allows in the way it allows a
+war.
+
+**Five filed under it**: `1948-arab-israeli-war`, `black-september`,
+`2006-lebanon-war`, `second-intifada`, `gaza-war-2008-2009`. Two are the
+source's own claim — Q154288 and Q49104 each carry `part of` Q8669 — and the
+other three carry `part of` a sub-conflict of it (Q49097, Q151622, Q553184),
+which this atlas does not hold as a record.
+
+**`arab-israeli-conflict` names neither an actor nor a place**, and it is the
+third such umbrella here after `interwar-period` and `scramble-for-africa`.
+A1 is the answer and it is sharper in this case than in either of those: the
+item's own description is "geopolitical conflict in the Middle East and North
+Africa between Israel and its Arab neighbours", which is one state and a dozen
+others across seventy-eight years and three continents' worth of coastline.
+Naming one of them would be picking a side of the thing the record exists to
+hold. The import wrote no actor line because the item gives none, and none was
+invented here.
+
+**`gaza-war` was left main**, although `gaza-genocide` is now filed under it
+on Q124086054's own `part of`. Filing the war under the conflict as well would
+nest three deep and A6 allows one; the war is its own umbrella, which is M67's
+own rule.
+
+### 6.3 What this leaves
+
+Africa still has one umbrella and it covers 1885 to 1914. The decolonisation
+of Africa is still refused for want of a date Wikidata will give as a year,
+which is where the filing pass left it; nothing in batch 18 changes that.
+Europe after 1989 still has no umbrella and the seventeen records the filing
+pass named are still main. `suez-crisis`, `independence-of-morocco`,
+`british-expedition-to-tibet`, `siamese-revolution-of-1932`,
+`1893-franco-siamese-crisis`, `treaty-of-lhasa`, `earth-summit` and
+`aarhus-convention` are all main after this batch and all of them are outside
+every umbrella the atlas holds — five of the eight in the decades and the
+regions the two refusals above describe.

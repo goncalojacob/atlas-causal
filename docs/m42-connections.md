@@ -3387,3 +3387,166 @@ by the Wikidata import from the item's own fields:
 **`third-portuguese-republic-since-1974` is not bare**: it names the republic
 itself, which is the one actor line a period named for a polity can honestly
 carry.
+
+## 2r. Batch 18 — the eight records the live tombstones name, and the two umbrellas they made necessary
+
+*21 September. Batch 17 found that set 0 recomputes but does not refill, and
+§7 of `docs/m42-pool.md` resolved the alternative before this fire started:
+nineteen live tombstones carry an explicit "It waits on …" clause and most
+name a record by name, and the sweep does not carry those names. This batch is
+the eight of them whose item resolves with a date. Six carried a class the
+table did not name; those seven classes are listed in the pool file's own
+batch 18 section, with the one refused.*
+
+### The eight imported, and the one refused on arrival
+
+`suez-crisis`, `anschluss`, `2022-brazilian-general-election`,
+`sharpeville-massacre`, `independence-of-morocco`,
+`british-expedition-to-tibet`, `earth-summit`, `siamese-revolution-of-1932`.
+
+**`sharpeville-massacre` is retracted on arrival**, and it is the batch's one
+refusal. It was imported to unlock `soweto-uprising`, whose reason asks for
+"any South African record of the apartheid period" — and it is one. The
+article does not argue the link: the uprising's own English article, at
+revision 1369412868, gives its cause as the Afrikaans Medium Decree of 1974
+and names Sharpeville once, inside a paragraph describing a 1999 BBC
+broadcast, which is a gloss. The massacre's article, at revision 1375931445,
+argues forward to UN Security Council Resolution 134, to the departure from
+the Commonwealth in 1961, to the banning of the PAC and the ANC and to the
+founding of Poqo and Umkhonto we Sizwe, and not to 1976; none of the five is a
+record here. "Internal resistance to apartheid", at revision 1373723428, puts
+the two in one sequence without relating them, which is §4's own class of
+refusal. **`soweto-uprising` therefore stays retracted too**, and the pair is
+the clearest case this run has produced of the difference between the record a
+tombstone asks for and the sentence an edge needs.
+
+**`suez-crisis`'s interval was corrected by hand before anything else touched
+it**, and the correction is the item's own: Q49101 carries both a span
+(P580 29 October 1956, P582 7 November 1956) and a stray point in time
+(P585, March 1957), and `intervalFor` prefers the point in time, so the
+import wrote a record starting in 1957 and ending in 1956, which rule 15
+refused. The record now carries the span the same item gives. No date was
+invented and none widened; the record is flagged `m42-interval-corrected`
+so a reviewer can see where the interval came from.
+
+### The thirteen edges
+
+#### Into the largest component
+
+- `1952-egyptian-revolution --precondition-of--> suez-crisis`. The Suez
+  article, at revision 1374851403, has a section headed The Egyptian
+  Revolution inside its own account of how the crisis came about: the Free
+  Officers overthrew King Farouk in July 1952 and the republic they made is
+  what nationalised the canal four years later.
+- `suez-crisis --precondition-of--> 1958-lebanon-crisis`. The Lebanese
+  crisis's article, at revision 1370279391, makes Suez the split the crisis
+  was fought across: two ministers resigned over Chamoun's refusal to condemn
+  the invasion of Egypt, and that "caused Muslim opposition groups to form the
+  National Union Front in 1957". Not the general Arab Cold War background the
+  same article also gives — a named consequence.
+- `austrian-civil-war --precondition-of--> anschluss`. The civil war's
+  article, at revision 1375005540, states it under Long term and hedges it as
+  a later judgement: "Austria's ability to resist National Socialism was
+  decidedly weakened by the Austrian Civil War and its consequences."
+- `anschluss --precondition-of--> munich-agreement`. One sentence of the
+  Anschluss article, at revision 1374499407: "After the Anschluss, Hitler
+  targeted Czechoslovakia, provoking an international crisis which led to the
+  Munich Agreement in September 1938."
+- `anschluss --precondition-of--> austrian-state-treaty`. The same article:
+  with the Anschluss "the Republic of Austria ceased to exist as an
+  independent state", and it remained under the Allied Commission "until 1955,
+  when the Austrian State Treaty restored its sovereignty".
+- `the-2018-brazilian-general-election --precondition-of--> 2022-brazilian-general-election`
+  and `2022-brazilian-general-election --caused--> lula-returns-to-the-presidency-2023`.
+  The 2022 article, at revision 1375252300, introduces the contest as the 2018
+  one still being settled — Bolsonaro elected in 2018, Lula's 2018 candidacy
+  disallowed and his rights restored by 2021 — and states the result: Lula
+  "was elected president of Brazil for a third, non-consecutive term".
+- `2022-brazilian-general-election --reacted-to--> 2023-brazilian-congress-attack`.
+  The attack's article, at revision 1372449713, gives the election as what the
+  mob was answering: supporters "alleged that the 2022 Brazilian general
+  election suffered from widespread electoral fraud that caused Bolsonaro's
+  loss", and "the military helped oversee the election and found no signs of
+  fraud".
+- `independence-of-morocco --caused--> ifni-war`. The war's article, at
+  revision 1370623332: "After Morocco achieved independence in 1956, it sought
+  to claim Spain's remaining possessions in West Africa." Eleven months
+  separate the independence from the incursions.
+- `wall-street-crash-of-1929 --precondition-of--> siamese-revolution-of-1932`.
+  The revolution's article, at revision 1370738350, names the crash and
+  traces it to the men who made the coup: the budget cuts that followed it
+  angered "most of the country's educated elite" and "the officer corps was
+  especially disgruntled".
+- `1893-franco-siamese-crisis --precondition-of--> entente-cordiale`. The
+  crisis's article, at revision 1374343940, counts the Entente among its own
+  consequences: France and Britain "put aside their many differences with the
+  Entente Cordiale, ending this dispute in southeastern Asia".
+
+#### Opening a corner rather than reaching the middle
+
+- `british-expedition-to-tibet --caused--> treaty-of-lhasa`. Both articles say
+  it: the treaty's, at revision 1305728166, that it "was signed following the
+  British expedition to Tibet of 1903–1904"; the expedition's, at revision
+  1370606386, by what means — "the Commission forced remaining Tibetan
+  officials to sign the Convention of Lhasa". A pair, joined to each other and
+  to nothing else: `british-russian-convention` of 1907, which this atlas
+  holds and which settled Tibet between the two empires, is named in neither
+  article.
+- `earth-summit --inspired--> aarhus-convention`. The Earth Summit's article,
+  at revision 1368901985, lists what it produced, the Rio Declaration among
+  them; the convention's, at revision 1367239958, quotes the UN
+  Secretary-General calling it "by far the most impressive elaboration of
+  principle 10 of the Rio Declaration". Inspired and not caused: Rio declared
+  the principle, it did not negotiate the convention. **This is the first dent
+  in §7.4's environment-shaped hole that is an environmental *event* rather
+  than a tenth instrument** — and it is still a pair, because neither article
+  names `vienna-convention-for-the-protection-of-the-ozone-layer` or
+  `montreal-protocol`.
+
+### The seven put back
+
+`1958-lebanon-crisis`, `austrian-civil-war`, `2023-brazilian-congress-attack`,
+`ifni-war`, `treaty-of-lhasa`, `aarhus-convention` and
+`1893-franco-siamese-crisis`, each on the edge above it and each carrying
+`m42-reinstated`. Six were brought back by the record their own reason named;
+`1893-franco-siamese-crisis` was not. Its reason asked for "any Siamese or
+Indochinese neighbour before 1946" and `siamese-revolution-of-1932` is one,
+but the two articles do not relate — so what brought it back is its own
+Consequences section naming the Entente Cordiale, a record this atlas has held
+since batch 8 and nobody had read that paragraph against.
+
+### The two umbrellas, which are this batch's filing half
+
+A6 says the main count must not rise, so a batch of sixteen new active records
+has to file sixteen. Two regions had nowhere to put them and
+`docs/m42-pool.md` had already nominated both:
+
+- **`nova-republica-brazil-since-1985`**, written here on M62's pattern
+  because Q2920526 carries no start date, from the English article at revision
+  1371710443 and the Portuguese at revision 72521647. It takes eight:
+  `the-1988-brazilian-constitution`,
+  `the-commodity-boom-and-the-chinese-buyer`, `operation-car-wash-2014`,
+  `the-impeachment-of-dilma-rousseff-2016`,
+  `the-2018-brazilian-general-election`, `2022-brazilian-general-election`,
+  `lula-returns-to-the-presidency-2023` and `2023-brazilian-congress-attack`.
+  `1985-brazilian-presidential-election` is **not** among them: it is the act
+  that made the republic, which M67's judgement 1 keeps outside, and it is
+  already filed under the dictatorship it ended.
+- **`arab-israeli-conflict`** (Q8669), the Wikidata import's own work, which
+  `docs/m42-pool.md` named as the one umbrella the asia lane has with an
+  article, a start date and a testable subject. It takes five:
+  `1948-arab-israeli-war`, `black-september`, `2006-lebanon-war`,
+  `second-intifada` and `gaza-war-2008-2009`. Two of the five are the source's
+  own claim — Q154288 and Q49104 both carry `part of` Q8669 — and the other
+  three point at sub-conflicts of it.
+
+Three more were filed under umbrellas that already existed: `anschluss` and
+`austrian-civil-war` into `interwar-period`, both inside its span and in its
+lane; `armistice-of-mudros` into `world-war-i`, which the filing pass had
+already argued when it refused the armistice from the interwar period as "an
+act of the war and not of what followed it"; and `gaza-genocide` into
+`gaza-war`, which is Q124086054's own `part of`.
+
+**`gaza-war` itself was left main on purpose.** Filing it under
+`arab-israeli-conflict` with `gaza-genocide` under it would nest three deep,
+and A6 allows one.

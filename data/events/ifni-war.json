@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "ifni-war",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,19 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m42-reinstated"
     ]
   },
   "origin": {
     "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 15 under brief §1: the record earns no honest edge. The English article, at revision 1370623332, argues the war out of the Hispano-Moroccan war of 1859–1860, which ceded Sidi Ifni to Spain, and out of Moroccan independence in 1956 — \"after Morocco achieved independence in 1956, it sought to claim Spain's remaining possessions in West Africa\" — and forward to the Treaty of Angra de Cintra, the return of Ifni in 1969 and the Green March of 1975. None of the five is a record here. `french-conquest-of-morocco`, which batch 14 imported and which ends in 1937, is not mentioned. It waits on Moroccan independence in 1956."
   },
   "wikidata": "Q1640107",
   "wikipedia": {

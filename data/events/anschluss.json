@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "black-september",
+  "id": "anschluss",
   "kind": "event",
   "status": "active",
   "supersededBy": null,
@@ -23,32 +23,32 @@
   "origin": {
     "tool": "wikidata"
   },
-  "wikidata": "Q154288",
+  "wikidata": "Q154681",
   "wikipedia": {
-    "en": "Black September",
-    "pt": "Setembro Negro"
+    "en": "Anschluss",
+    "pt": "Anschluss"
   },
   "sitelinks": {
-    "count": 44,
+    "count": 74,
     "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
-      "locator": "Q154288"
+      "locator": "Q154681"
     }
   ],
-  "title": "Black September",
-  "summary": "Wikidata item Q154288, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war (1970–1971) in Jordan between King Hussein’s forces and the Palestine Liberation Organisation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "Anschluss",
+  "summary": "Wikidata item Q154681, imported by tools/import/wikidata.mjs. The item's own description reads \"annexation of Austria into Nazi Germany on 12 March 1938\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1970,
-    "end": 1971,
-    "date": "1970-09-06",
-    "endDate": "1971-07-17"
+    "start": 1938,
+    "end": 1938,
+    "date": "1938-03-13"
   },
   "place": null,
-  "region": "asia",
+  "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "arab-israeli-conflict",
+  "parent": "interwar-period",
+  "category": "founding",
   "actors": []
 }

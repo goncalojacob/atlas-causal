@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1893-franco-siamese-crisis",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,19 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m42-reinstated"
     ]
   },
   "origin": {
     "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge. The English article, at revision 1374343940, argues the crisis out of French Indochina's expansion up the Mekong and Siamese claims on the left bank, and forward to the Franco-Siamese treaty of October 1893 and the Anglo-French declaration of 1896. This atlas holds no record of mainland Southeast Asia before `first-indochina-war` of 1946, and the article names none of the records it does hold. It waits on any Siamese or Indochinese neighbour before 1946."
   },
   "wikidata": "Q1359846",
   "wikipedia": {

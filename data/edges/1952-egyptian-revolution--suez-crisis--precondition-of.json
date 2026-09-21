@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1952-egyptian-revolution--suez-crisis--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Suez Crisis\", revision 1374851403, § The Egyptian Revolution"
+    }
+  ],
+  "from": "1952-egyptian-revolution",
+  "to": "suez-crisis",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article gives the crisis its own government: \"On 23 July 1952 a military coup by the Egyptian nationalist 'Free Officers Movement'—led by Muhammad Neguib and Gamal Abdul Nasser—overthrew King Farouk. After a brief regency under the nominal reign of the infant Fuad II, the monarchy was abolished and the Republic of Egypt established in its stead.\" It is the section the article puts under the heading The Egyptian Revolution, inside its own account of how the crisis came about: the republic the coup made is what nationalised the canal four years later.",
+  "dispute": null
+}

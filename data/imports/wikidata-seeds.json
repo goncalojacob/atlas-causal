@@ -858,7 +858,16 @@
     "Q665554",
     "Q154611",
     "Q179848",
-    "Q1146918"
+    "Q1146918",
+    "Q49101",
+    "Q154681",
+    "Q65053343",
+    "Q518753",
+    "Q74200048",
+    "Q592550",
+    "Q751149",
+    "Q2120252",
+    "Q8669"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -990,7 +999,16 @@
     "Q665554": "asia",
     "Q154611": "europe",
     "Q179848": "africa",
-    "Q1146918": "africa"
+    "Q1146918": "africa",
+    "Q49101": "africa",
+    "Q154681": "europe",
+    "Q65053343": "americas",
+    "Q518753": "africa",
+    "Q74200048": "africa",
+    "Q592550": "asia",
+    "Q751149": "americas",
+    "Q2120252": "asia",
+    "Q8669": "asia"
   },
   "queries": [
     {
@@ -3980,6 +3998,53 @@
       "kind": "event",
       "label": "decolonization",
       "note": "Added in M42’s filing pass (A6) from a lookup against Wikidata, which this run could reach: the label and description are the service’s own. The class is here because the period umbrella the owner’s rule calls for — the decolonisation of Africa — carries it and the table did not. No category: a period is not one of the twelve kinds of event."
+    },
+    "Q1384277": {
+      "kind": "event",
+      "category": "war",
+      "label": "military expedition",
+      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. A military expedition is organised armed force between polities, which is the war category as data/categories.json describes it. Two of the eight carry it: the Suez Crisis and the British expedition to Tibet."
+    },
+    "Q194465": {
+      "kind": "event",
+      "category": "founding",
+      "label": "annexation",
+      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. Wikidata glosses it “acquisition of a state’s territory by another state”; the category is founding, which data/categories.json describes as something coming into existence or ending, because what an annexation does to the annexed state is end it. Carried by the Anschluss."
+    },
+    "Q76853179": {
+      "kind": "event",
+      "category": "election",
+      "label": "group of elections",
+      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. Wikidata glosses it “multiple distinct elections happening at the same time”, which is a vote that fills offices and chambers and so the election category. Carried by the 2022 Brazilian general election."
+    },
+    "Q37055": {
+      "kind": "event",
+      "category": "founding",
+      "label": "independence",
+      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. The category is founding, as Q1464916 declaration of independence already takes in this table: a state coming into existence. Carried by the independence of Morocco."
+    },
+    "Q831663": {
+      "kind": "event",
+      "category": "war",
+      "label": "military campaign",
+      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. Organised armed force between polities, as data/categories.json has the war category. Carried by the British expedition to Tibet."
+    },
+    "Q467011": {
+      "kind": "event",
+      "category": "war",
+      "label": "invasion",
+      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. Organised armed force between polities. Carried by the British expedition to Tibet."
+    },
+    "Q625994": {
+      "kind": "event",
+      "label": "convention",
+      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name. The label and description are read from the item itself over the network. Wikidata glosses it “meeting of a group of individuals and/or companies in a certain field”, so it is a conference and not a treaty — the trap the Earth Summit sets for a table that reads the word. No category: none of the twelve is a meeting of states, and Q154278 is the precedent for leaving it unset rather than guessing."
+    },
+    "Q11422542": {
+      "kind": "event",
+      "category": "war",
+      "label": "international conflict",
+      "note": "Added in M42 batch 18 for the umbrella A6 asks the asia lane for, which docs/m42-pool.md nominated: the Arab–Israeli conflict, Q8669. The label and description are read from the item itself over the network. Wikidata glosses it “dispute between nations” and the war category as data/categories.json has it is organised armed force between polities, which a conflict of eight wars is. Its other class, Q766875 ethnic conflict, is left out of the table rather than refused: one known class is enough to classify the item and a second would only be a second place to argue."
     }
   },
   "reconcile": true

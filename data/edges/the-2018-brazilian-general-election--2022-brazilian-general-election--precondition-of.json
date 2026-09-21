@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "the-2018-brazilian-general-election--2022-brazilian-general-election--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2022 Brazilian general election\", revision 1375252300, § lead"
+    }
+  ],
+  "from": "the-2018-brazilian-general-election",
+  "to": "2022-brazilian-general-election",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article introduces the 2022 contest as the 2018 one still being settled: Bolsonaro \"had been elected in 2018 as the candidate of the Social Liberal Party but left that party in 2019\", and \"Lula's intended candidacy in 2018 was disallowed due to his conviction on corruption charges in 2017 and subsequent arrest; a series of court rulings led to his release from prison in 2019, followed by the annulment of his conviction and restoration of his political rights by 2021.\" The two candidates of 2022 are the winner of 2018 and the man kept off that ballot.",
+  "dispute": null
+}

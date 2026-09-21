@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "treaty-of-lhasa",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,19 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m42-reinstated"
     ]
   },
   "origin": {
     "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge. The English article, at revision 1305728166, says the convention of 1904 \"was signed following the British expedition to Tibet of 1903–1904, a military expedition led by Colonel Francis Younghusband, and was followed by the Anglo-Chinese Convention of 1906\" — neither a record here — and frames Younghusband's purpose as the Great Game, \"to extend British influence in Tibet by securing the Chumbi Valley for Britain and denying it to the Russians\". `british-russian-convention` of 1907, which this atlas holds and which settled Tibet between the two empires, is not mentioned in the article at all. It waits on the British expedition to Tibet."
   },
   "wikidata": "Q3536822",
   "wikipedia": {

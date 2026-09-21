@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "austrian-civil-war",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -14,23 +14,24 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
   "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m42-reinstated"
     ]
   },
-  "wikidata": "Q306123",
-  "sitelinks": {
-    "count": 37,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q306123",
   "wikipedia": {
     "en": "Austrian Civil War",
     "pt": "Guerra Civil Austríaca"
+  },
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -49,9 +50,6 @@
   "place": null,
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
-  "actors": [],
-  "retraction": {
-    "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 8 under brief §1: the record earns no honest edge. The English article, at revision 1375005540, argues from the dissolution of Austria-Hungary and the paramilitaries of the late 1920s and forward to the authoritarian constitution of May 1934 and the Fatherland Front, and this atlas holds no Austrian record before the state treaty of 1955. It waits on the Anschluss, on the Dollfuss dictatorship, or on a page that argues a line from it to something here."
-  }
+  "parent": "interwar-period",
+  "actors": []
 }

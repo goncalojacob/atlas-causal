@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "2023-brazilian-congress-attack",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,19 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m42-reinstated"
     ]
   },
   "origin": {
     "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge, and it is the one retraction of this batch that a Portuguese-language atlas should mind. The English article, at revision 1372449713, gives the attack's causes as \"false allegations of electoral fraud in the 2022 Brazilian general election promoted by former President Jair Bolsonaro and his allies\" and \"denial of the 2022 presidential election results\", and its § Background is the 2022 election and the January 6 United States Capitol attack of 2021. **The atlas holds `the-2018-brazilian-general-election` and not the 2022 one**, and neither the 2022 election nor the Capitol attack is a record here. The article does link the rioters' call for a \"military intervention\" to the coup of 1964, but as a gloss on a phrase rather than as a claim about influence, and an edge read off a wikilink target is not an edge read off a sentence. It waits on the 2022 Brazilian general election, which is a one-row gap a later batch can close."
   },
   "wikidata": "Q116142348",
   "wikipedia": {
@@ -52,5 +49,6 @@
   "place": null,
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "nova-republica-brazil-since-1985",
   "actors": []
 }

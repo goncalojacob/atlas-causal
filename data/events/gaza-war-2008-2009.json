@@ -13,10 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-21",
   "review": {
     "flags": [
       "imported-facts",
@@ -24,14 +21,17 @@
     ],
     "status": "draft"
   },
-  "wikidata": "Q170682",
-  "sitelinks": {
-    "count": 57,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q170682",
   "wikipedia": {
     "en": "Gaza War (2008–2009)",
     "pt": "Operação Chumbo Fundido"
+  },
+  "sitelinks": {
+    "count": 57,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -50,6 +50,7 @@
   "place": null,
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "arab-israeli-conflict",
   "category": "war",
   "actors": []
 }

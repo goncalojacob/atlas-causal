@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "aarhus-convention",
+  "id": "suez-crisis",
   "kind": "event",
   "status": "active",
   "supersededBy": null,
@@ -21,33 +21,35 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-interval-corrected"
     ]
   },
-  "wikidata": "Q301336",
+  "wikidata": "Q49101",
   "sitelinks": {
-    "count": 38,
+    "count": 84,
     "on": "2026-09-21"
   },
   "wikipedia": {
-    "en": "Aarhus Convention",
-    "pt": "Convenção Aarhus"
+    "en": "Suez Crisis",
+    "pt": "Crise de Suez"
   },
   "sources": [
     {
       "source": "wikidata",
-      "locator": "Q301336"
+      "locator": "Q49101"
     }
   ],
-  "title": "Aarhus Convention",
-  "summary": "Wikidata item Q301336, imported by tools/import/wikidata.mjs. The item's own description reads \"UNECE Convention on Access to Information\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "Suez Crisis",
+  "summary": "Wikidata item Q49101, imported by tools/import/wikidata.mjs. The item's own description reads \"1956 invasion of Egypt by Israel, the United Kingdom, and France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1998,
-    "end": 1998,
-    "date": "1998-06-25"
+    "start": 1956,
+    "end": 1956,
+    "date": "1956-10-29",
+    "endDate": "1956-11-07"
   },
   "place": null,
-  "region": "europe",
+  "region": "africa",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
   "actors": []
 }

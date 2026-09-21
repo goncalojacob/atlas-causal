@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "anschluss--austrian-state-treaty--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anschluss\", revision 1374499407, § Changes in Central Europe"
+    }
+  ],
+  "from": "anschluss",
+  "to": "austrian-state-treaty",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The treaty of 1955 is what undid the annexation, and the English article of the Anschluss is where the line is drawn: \"With the Anschluss, the Republic of Austria ceased to exist as an independent state\", and Austria \"remained divided into occupation zones and controlled by the Allied Commission until 1955, when the Austrian State Treaty restored its sovereignty.\" The provisional government had declared the Anschluss null and void in April 1945; the treaty is the settlement that made the declaration good.",
+  "dispute": null
+}
