@@ -557,6 +557,27 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&from=1911&to=1911&bbox=-82,-56,-34,13&layers=land,relief,rivers,lakes,physical,mountains,cities',
     width: 1440, height: 900,
     what: 'the same continent with the territories off: the cordillera in five bands, which is what the eight hues are drawn over' },
+
+  // M74. The two halves of one rule, and the pair is the milestone: the graph
+  // opens on the window when nobody has asked it anything, and on the lens
+  // when somebody has.
+  //
+  // The walk is the owner's own twelve-step argument about how the colonial
+  // war ended the regime — the narrative `m48-narrative` photographs on the
+  // map, here on the view that was losing it. Nothing in the query says where
+  // the camera is: `?narrative=` is the whole of the state, and the frame
+  // follows from the walk being the lens.
+  { name: 'm74-graph-walk', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph&narrative=how-the-colonial-war-ended-the-regime',
+    width: 1440, height: 900,
+    what: 'the colonial-war walk framed on the graph: twelve steps, every one of them on the screen' },
+  // And the same view with nothing asked of it, on the window the atlas opens
+  // at — the picture `m65-graph-rest` and `m60-graph` were taken of, and the
+  // one this milestone promises not to have touched.
+  { name: 'm74-graph-rest', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=graph',
+    width: 1440, height: 900,
+    what: 'the graph at rest, opening on its window exactly as it did before there was a frame' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

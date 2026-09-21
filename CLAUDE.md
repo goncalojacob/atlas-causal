@@ -183,6 +183,7 @@ src/map/layers/land.js     coastlines, always drawn and no longer a switch;  lay
 src/graph-view/layout.js   pure: where every node goes — x is the year, y is bands and a barycentre pass
 src/graph-view/graph-view.js  the graph drawn: nodes, the five edge types, the window shaded, pan/zoom
 src/graph-view/arrangement.js  pure: which events an arrangement is of — the band, its margin and whatever the reader is holding beyond it — and the key it is filed under
+src/graph-view/frame.js    pure: where the camera starts, and never where a node goes — the bounds of a set of nodes and the transform that puts them inside the rectangle the reader can see. The graph draws what falls inside that rectangle, so with a lens on it frames the lens, widest part first and the focus as the fallback (M74); at rest the window is still what the first drawing fits
 src/graph-view/layout-runner.js  which of the two paths a layout takes, and the fallback: the Worker above 600 events, the synchronous call below it and whenever a thread is absent or fails
 src/graph-view/layout-worker.js  the layout on a thread of its own; it fetches nothing, so no data root can be got wrong there
 src/graph-view/layout-message.js  pure: what crosses to that thread and back — ids, years, weights and lanes, and no records
