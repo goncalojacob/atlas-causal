@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-21",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -21,19 +21,24 @@
   "review": {
     "status": "draft",
     "flags": [
-      "m50-chain"
+      "m50-chain",
+      "m72-second-source"
     ]
   },
   "sources": [
     {
       "source": "wikipedia-en",
       "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
+    },
+    {
+      "source": "craton-1982-testing-the-chains",
+      "locator": "pp. 319–323"
     }
   ],
   "from": "the-baptist-war-1831",
   "to": "slavery-abolition-act-1833",
   "type": "caused",
-  "confidence": "probable",
+  "confidence": "consensus",
   "explanation": "The causal statement is the cited account’s own: because of the loss of property and life in the rebellion of 1831, Parliament held two inquiries, and the results of those inquiries contributed greatly to the abolition of slavery in the Act of 1833. Twenty months from a strike put down in ten days to an act of Parliament. It is worth marking that the atlas can say this plainly while the same sources are still arguing about whether industrial capitalism or moral outrage ended the trade in 1807 — a specific, dated, documented mechanism is a different kind of claim from a thesis about an economy.",
   "dispute": null
 }
