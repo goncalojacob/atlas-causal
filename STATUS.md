@@ -14692,14 +14692,25 @@ which is what they should be at the scale the atlas opens at.
      picture to buy nothing, so five stayed and the limit is in the section
      above.
 
-985. **Three screenshots and not four, because the fourth already exists.**
-     The brief asks for the bands at two places with the territories on; the
-     obvious companion is the same two boxes without them, and
-     `m45a-ground-iberia` and `m45a-ground-andes` are exactly that — the same
-     boxes, the same `?layers=` lists, `relief` absent. A duplicate pair under
-     a new name would be two more pictures saying what two already say. The
-     world view is added because the bands had to be shown to be quiet at the
-     scale the atlas opens at.
+985. **Five screenshots and not the brief's two, and they are named
+     `m45b-relief-*`.** §2's done-conditions name `m45-relief-iberia.png` and
+     `m45-relief-alps.png`; every milestone since names its pictures after
+     itself, M45a's own four included (`m45a-ground-*`), so the brief's names
+     are from before the run was split in two.
+     The set grew for three separate reasons and each is a picture that says
+     something the others do not. The **world** is there because the bands had
+     to be shown to be *quiet* at the scale the atlas opens at. The **Alps** is
+     there because Iberia's frontier follows rivers and the Andes are a single
+     narrow spine: the Alps are the case where the ridge is wide, and they are
+     the one picture in which the milestone's question is answered without
+     having to be looked for. And the **Andes with the territories off** is
+     there because the answer at that zoom is otherwise unflattering — it is
+     the proof that the mottling under the hues is the wash and not the data.
+     What is *not* repeated is the pair M45a already holds:
+     `m45a-ground-iberia` and `m45a-ground-andes` are these very boxes with
+     these very `?layers=` lists and `relief` absent, so the bands-off
+     comparison is on disk already and a duplicate under a new name would be
+     two more pictures saying what two already say.
 
 986. **The fixture elevation grid is written at run time and is not
      committed.** The format has no header, so a grid is the full 2160 × 1080
@@ -14713,6 +14724,31 @@ which is what they should be at the scale the atlas opens at.
      the new module's line, which `tests/site.test.mjs` requires of every file
      under `tools/`, the `--check` in the documented command line (deviation
      980), and the layer counts that were six and are seven.
+
+988. **Two runs built M45b at once, on one branch, with no channel between
+     them.** A persistent session and a scheduled fire both claimed `m45b` and
+     both worked it — nine commits in fifty minutes between the two. Nothing
+     was lost: the protocol's "read what is pushed and continue" held, every
+     rejected push was answered by taking the other side's work and keeping
+     only what this side had that it did not, and one commit is an explicit
+     merge that says so. But it was paid for: three of the four tests the
+     seventh layer broke were fixed twice, three screenshots were taken twice,
+     and two `## M45b` sections were written of which one was thrown away —
+     the fuller one was kept and the other run's paragraphs on the two extra
+     pictures were grafted into it. The collision was found by a rejected push
+     and not before it, because the two containers cannot see each other.
+     **The claim line needs to say which runner holds a lane, not only that it
+     is held** — `M45b started <instant> by scheduled` is true of both of them.
+
+989. **`tests/m45b-browser.test.mjs` grew a fifth test the brief's list does
+     not have.** §Tests names six and the row in the layer control is not
+     among them, but §2.3's done-condition is "a member of `LAYERS`, a row in
+     the layer control, `?layers=relief`" and the row was the one clause of
+     the four with nothing asserting it. It cannot be tested on `?fixtures=1`
+     — the fixture dataset has no bands, so its manifest has no `relief`
+     layer and its control rightly has no row, which is what
+     `map-browser.test.mjs`'s list of seven switches says — so it is asserted
+     on the real dataset beside the other four.
 
 
 ## Milestones landed
