@@ -1076,9 +1076,12 @@ body:not(.phone) .layout.panel-empty.composing {
 .graph .band-label { fill: var(--ink-soft); font-size: 12px; pointer-events: none; }
 .graph .tick { stroke: var(--line); stroke-width: 1; vector-effect: non-scaling-stroke; }
 .graph .tick-label { fill: var(--ink-soft); font-size: 11px; pointer-events: none; }
-/* The window of time, shaded across every band: what is outside it fades
-   rather than leaving, so the whole web is always there. */
-.graph .window-band { fill: var(--cobalt); opacity: 0.06; pointer-events: none; }
+/* There is no window on this picture since M76 — the owner, 21 September: *"I
+   think the graph can always show all dates, then one can zoom in and out and
+   pan to look at different times"* — so the shaded band that stood here is
+   gone, and with it every `.graph .faded` rule: nothing on the graph is drawn
+   faded for falling outside a band any more. The two other views still fade,
+   and their rules are theirs. */
 
 .graph .edge, .graph .edge-head { stroke: var(--cobalt-soft); fill: none; vector-effect: non-scaling-stroke; pointer-events: none; }
 .graph .edge-head { fill: var(--cobalt-soft); stroke: none; }
@@ -1102,7 +1105,6 @@ body:not(.phone) .layout.panel-empty.composing {
 .graph .edge-head.converging { fill: var(--cobalt); }
 .graph .edge.chain { stroke: var(--madder); stroke-width: 2.4; }
 .graph .edge-head.chain { fill: var(--madder); }
-.graph .edge.faded, .graph .edge-head.faded { opacity: 0.16; }
 
 .graph .node { fill: var(--paper); stroke: var(--cobalt); stroke-width: 1.5; vector-effect: non-scaling-stroke; cursor: pointer; }
 .graph .node:hover { fill: var(--cobalt-faint); }
@@ -1111,8 +1113,6 @@ body:not(.phone) .layout.panel-empty.composing {
 .graph .node.converging { fill: var(--cobalt); stroke: var(--cobalt); }
 .graph .node.on-path { fill: var(--madder); stroke: var(--madder); }
 .graph .node.selected { fill: var(--madder); stroke: var(--paper); stroke-width: 2; }
-.graph .node.faded { opacity: 0.28; }
-.graph .node.faded.selected, .graph .node.faded.on-path { opacity: 0.6; }
 /* A stack of nodes drawn as one, and the count beside it: read exactly as
    the map's stacks and the timeline's, so one reading serves all three.
    Filled with paper and ringed heavier, because the reader has to be able to
@@ -1130,7 +1130,6 @@ body:not(.phone) .layout.panel-empty.composing {
   fill: var(--cobalt); font-family: var(--font-ui); font-weight: 600;
   font-variant-numeric: tabular-nums; letter-spacing: 0.01em; pointer-events: none;
 }
-.graph .cluster-count.faded { opacity: 0.35; }
 /* The horizon, drawn the way the map draws it: see the note there. */
 .graph .node.in-horizon { fill: var(--cobalt-faint); stroke: var(--cobalt); stroke-width: 2; }
 .graph .node.in-horizon.near { opacity: 1; }
@@ -1144,8 +1143,6 @@ body:not(.phone) .layout.panel-empty.composing {
    per zoom by the view, so nothing is declared here. */
 .graph .ring { fill: none; stroke: var(--cobalt); pointer-events: none; }
 .graph .ring.on-path, .graph .ring.selected { stroke: var(--madder); }
-.graph .ring.faded { opacity: 0.28; }
-.graph .ring.faded.selected, .graph .ring.faded.on-path { opacity: 0.6; }
 .graph .ring.lens-near { opacity: 0.22; }
 .graph .ring.lens-near.selected, .graph .ring.lens-near.on-path { opacity: 0.6; }
 .graph .ring.in-horizon.mid { opacity: 0.72; }

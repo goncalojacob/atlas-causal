@@ -284,6 +284,16 @@ test('the graph’s own source has no window band and no fade left in it', async
   assert.ok(!/fitToWindow/.test(source), 'and the camera at rest is not the window’s');
   const arrangement = await read('src/graph-view/arrangement.js');
   assert.ok(!/withMargin/.test(arrangement), 'the arrangement has stopped taking a margin round the band');
+
+  // And the stylesheet says the same thing: nothing on the graph is drawn
+  // faded for falling outside a band, so no rule is left describing one. The
+  // map and the timeline still fade, and their rules are theirs.
+  const css = await read('src/style.css');
+  const rules = css.split('\n').filter((line) => /^\.graph [^{]*\{/.test(line));
+  for (const rule of rules) {
+    assert.ok(!/\.faded/.test(rule), `the graph still styles a faded thing: ${rule.trim()}`);
+    assert.ok(!/\.window-band/.test(rule), `the graph still styles a window band: ${rule.trim()}`);
+  }
 });
 
 test('the window is still state, and the two views that read it still do', async () => {

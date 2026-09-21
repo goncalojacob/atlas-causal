@@ -159,16 +159,38 @@ test('with Portugal selected every column of the band is Portugal’s, whichever
   }, { device: DESK });
 });
 
-test('the profile over a selection reaches the band’s full height for its busiest column', { skip }, async () => {
+// The diagnosis, turned round. At the absolute scale the world drew a tallest
+// column of 6 px and Portugal drew 5, inside a strip 44 deep: every profile
+// was the same faint dusting and a reader could not see that the band had
+// narrowed. At its own scale a profile with any density in it reaches the top
+// of the band's body, and one with none — every column a single event — is the
+// row of ticks it honestly is. What can no longer happen is the middle: a
+// heap drawn three pixels tall because somewhere else in the corpus there is a
+// bigger one.
+test('a profile with density in it reaches the band’s full height, and one without is ticks', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await seenIntro(page);
-    for (const query of ['', '?actor=portugal', '?actor=kingdom-of-portugal']) {
+    const tallestOf = async (query) => {
       await open(page, url(`index.html${query}`), MAP_READY);
       await waitFor(page, 'return Boolean(document.querySelector("#map-band-strip .layer-profile path"));', 'the profile');
       const profile = await page.eval(PROFILE);
-      const tallest = Math.max(...profile.columns.map((c) => c.height));
-      assert.equal(tallest, profile.body,
+      return { tallest: Math.max(...profile.columns.map((c) => c.height)), body: profile.body };
+    };
+
+    // Two sets that do have a busy column: the resting picture, and Portugal —
+    // which is the selection the owner's sentence is about.
+    for (const query of ['', '?actor=portugal']) {
+      const { tallest, body } = await tallestOf(query);
+      assert.equal(tallest, body,
         `the busiest column fills the band’s body on ${query || 'the resting picture'}`);
+    }
+
+    // And whatever the selection, the tallest column is one of the two honest
+    // answers and never something between them.
+    for (const query of ['', '?actor=portugal', '?actor=kingdom-of-portugal', '?actor=brazil']) {
+      const { tallest, body } = await tallestOf(query);
+      assert.ok(tallest === body || tallest === 3,
+        `on ${query || 'the resting picture'} the tallest column is ${tallest}: neither the band’s body (${body}) nor a tick`);
     }
   }, { device: DESK });
 });

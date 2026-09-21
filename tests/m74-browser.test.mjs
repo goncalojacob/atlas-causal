@@ -8,11 +8,14 @@
 // three views. What is left, and what is here, is the pair of promises either
 // side of that:
 //
-//   * **the resting picture is unchanged.** With no lens on, the camera is the
-//     window's, exactly as it has been since deviation 54 — the whole of the
-//     data opens at no zoom at all, a narrow band opens on the band. Asserted
-//     as the property and never as a pixel: the numbers below are read off the
-//     page and compared with each other;
+//   * **the resting picture.** With no lens on, the camera fits what is drawn.
+//     It was the *window's* until M76 — the whole of the data at no zoom at
+//     all, a narrow band opening on the band (deviation 54) — and the owner,
+//     21 September: *"I think the graph can always show all dates, then one
+//     can zoom in and out and pan to look at different times."* So two
+//     different windows now open on one picture, and every node of it is on
+//     the screen. Asserted as the property and never as a pixel: the numbers
+//     below are read off the page and compared with each other;
 //   * **a lens larger than the pane still frames what fits.** An event chosen
 //     with a ring too wide to draw whole is framed on the event, with as much
 //     of its ring as the pane reaches — and the picture says nothing false
@@ -42,10 +45,10 @@ const WALK = 'how-the-colonial-war-ended-the-regime';
 const ready = 'return Boolean(document.querySelector("#map svg.map"));';
 const NODES = "return document.querySelectorAll('#graph svg.graph circle.node[data-id]').length > 0;";
 
-// The camera, read off the page: the viewport's own transform, and the two
-// rectangles — the picture's and the window band's — in the coordinates of the
-// screen. No attribute at all until something moves the camera, which is the
-// picture at rest and is itself one of the answers below.
+// The camera, read off the page: the viewport's own transform and the pane it
+// is drawn in, in the coordinates of the screen. The window band that used to
+// be read beside them went with M76 — the graph draws every date now — so
+// `band` is asked for only to assert that there is none.
 const CAMERA = `
   const svg = document.querySelector('svg.graph');
   const written = svg.querySelector('g.viewport').getAttribute('transform');
@@ -76,34 +79,32 @@ const MARKS = `
     };
   });`;
 
-test('at rest the graph opens on the window, as it did before there was a frame', { skip }, async () => {
+test('at rest the graph opens on everything it draws, whatever the window says', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await watchErrors(page);
 
-    // A window that is most of the data is not worth zooming to: the right
-    // first view of the whole graph is the whole graph, and the camera is not
-    // touched at all — there is no transform on the viewport to read.
+    // The whole of the data, and a band of eleven years inside it. Before M76
+    // these were two different cameras — the first untouched at k = 1, the
+    // second zoomed on to the band with the rest faded or gone. They are one
+    // camera now, because the picture is the same picture.
     await open(page, url('?view=graph&from=1492&to=2026'), ready);
     await waitFor(page, NODES, 'the graph to draw its nodes');
     const whole = await page.eval(CAMERA);
-    assert.equal(whole.written, null, 'nothing has moved the camera, so the viewport carries no transform');
-    assert.equal(whole.k, 1);
+    const wholeMarks = await page.eval(MARKS);
+    assert.equal(whole.band, null, 'there is no window band across the picture');
 
-    // And the other half of the same rule, which is what the atlas's own
-    // opening window asks for: a reader arriving on a band should not have to
-    // hunt for it, so the first drawing zooms to the band and puts it in the
-    // middle of the pane. The band on the screen is what says where the camera
-    // is, and it is compared with the pane and never with a number somebody
-    // typed.
-    await open(page, url('?view=graph'), ready);
+    await open(page, url('?view=graph&from=1900&to=1910'), ready);
     await waitFor(page, NODES, 'the graph to draw its nodes');
-    const opening = await page.eval(CAMERA);
-    assert.ok(opening.k > whole.k, `a band narrower than the data zooms in: ${opening.k} against ${whole.k}`);
-    assert.ok(opening.band, 'and the window is a band across the picture');
-    assert.ok(
-      Math.abs(opening.band.centre - opening.pane.centre) < 1,
-      `the band is in the middle of the pane: ${opening.band.centre} against ${opening.pane.centre}`,
-    );
+    const narrow = await page.eval(CAMERA);
+    assert.equal(narrow.band, null, 'and none on a narrow window either');
+    assert.equal(narrow.written, whole.written,
+      `a narrow band opens on the same camera as a wide one (${narrow.written} against ${whole.written})`);
+
+    // And what that camera is: every node the graph drew, on the screen. The
+    // reader zooms and pans from there, which is what the owner asked for.
+    for (const mark of wholeMarks) {
+      assert.ok(mark.seen, `${mark.id ?? 'a stack'} is on the screen at rest`);
+    }
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   });
 });

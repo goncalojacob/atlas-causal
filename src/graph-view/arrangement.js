@@ -10,7 +10,6 @@
 // Pure, and here rather than in graph-view.js, because the key is the whole
 // of that promise and `node --test` has no DOM to build a view in.
 
-import { overlaps, resolveWindow, withMargin } from '../util/window.js';
 import { formatFoci, lensView } from '../lens.js';
 import { lanesFor } from '../lanes.js';
 
@@ -20,9 +19,12 @@ import { lanesFor } from '../lanes.js';
 // hold the same events; a key of the ids would have been the same answer
 // spelled at the length of the corpus.
 //
-// It is only ever appended when something held falls outside the margin —
-// otherwise selecting an event would move every node in the picture, which
-// is the one thing the arrangement promises never to do.
+// It was only ever appended to an arrangement's key when something held fell
+// outside the band's margin, and since M76 there is no margin and nothing
+// falls outside one: selecting an event does not move a node, which is the one
+// thing the arrangement promises never to do. What still reads it is the
+// graph's *stacking* key (graph-view.js) — what a cluster may not swallow is a
+// question about what the reader is holding and always was.
 export function holdingKey(state) {
   return [
     state.selected ?? '',
@@ -48,17 +50,19 @@ export function holdingKey(state) {
 // with only the parameter in hand, which is what this was before.
 //
 // Membership, not the lane ids: which lane an event is drawn in is the
-// heaviest of its actors *among the lanes on screen*, and that weight is
-// counted inside the window (lanes.js). The same six lanes in the same order
-// can therefore hold different events after the band is moved, which a key of
+// heaviest of its actors *among the lanes on screen* (lanes.js). The same six
+// lanes in the same order can therefore hold different events, which a key of
 // ids alone could not see.
 //
-// The band the events are taken from is part of the key too (H4b): the
-// arrangement is laid out over the window and one period either side of it,
-// so a reader who moves the band is looking at a different set of events and
-// therefore at a different picture. Nothing else about the picture moves a
-// node — panning, zooming, selecting and walking all leave the key alone.
-export function arrangementKey(state, events, lanes, lens, margin = null, holding = '', foci = null) {
+// **The band is no longer part of the key** (M76). It was, from H4b until this
+// milestone, because the arrangement was laid out over the window and one
+// period either side of it and a reader who moved the band was looking at a
+// different set of events. The owner, 21 September: *"I think the graph can
+// always show all dates, then one can zoom in and out and pan to look at
+// different times."* So the graph lays out every event it draws, whatever the
+// window says, and moving the band moves no node at all — which is what
+// panning, zooming, selecting and walking already promised.
+export function arrangementKey(state, events, lanes, lens, holding = '', foci = null) {
   const focus = lens === null ? '' : (foci ?? state.focus ?? '');
   // What the graph draws, when it is the graph deciding: inside a lens the two
   // filters are off and two states that differ only in them are one picture.
@@ -76,8 +80,7 @@ export function arrangementKey(state, events, lanes, lens, margin = null, holdin
   // With no grouping there are no lanes and nothing to be a member of; the
   // set of events is then the whole of the arrangement.
   const membership = lanes.length === 0 ? '' : events.map((e) => at.get(e.id) ?? -1).join(',');
-  const band = margin ? `${margin.from}:${margin.to}` : '';
-  return `${focus}|${filters}|${layers}|${state.group}|${lanes.map((l) => l.id).join(',')}|${membership}|${band}|${holding}`;
+  return `${focus}|${filters}|${layers}|${state.group}|${lanes.map((l) => l.id).join(',')}|${membership}|${holding}`;
 }
 
 // How many active links an event has, both directions counted: the adjacency
@@ -128,28 +131,28 @@ export function arrangementOf(atlas, state, held = null, shown = undefined) {
   // Inside a lens the reader has already said what they want; outside it the
   // graph draws what organises other events (`organises` above).
   const all = view ? kept : kept.filter((e) => organises(atlas, e, state, held));
-  const window = resolveWindow(state, atlas.extent, atlas.opens);
-  // The window and one period either side, which is what the view draws
-  // (window.js) and, since H4b, all it lays out. Laying out the whole corpus
-  // to draw a decade of it was the cost the window was meant to save.
-  const margin = withMargin(window);
-  // Beyond the margin, only what the reader is holding: a walked chain that
-  // ran off the end of the band is still a chain, and a node of it with no
-  // coordinates would be a link into nothing.
-  const events = [];
-  let beyond = 0;
-  for (const event of all) {
-    if (overlaps(event.when, margin)) events.push(event);
-    else if (held && held.has(event.id)) {
-      events.push(event);
-      beyond += 1;
-    }
-  }
-  const lanes = state.group === 'none' ? [] : lanesFor(state.group, atlas, window, lens, state.lanes);
+  // **Every one of them, whatever the window says** (M76). From H4b until this
+  // milestone the arrangement was the window and one period either side, and
+  // what fell outside it was not faded but absent — the reader moved the band
+  // to see another century. The owner, 21 September: *"I think the graph can
+  // always show all dates, then one can zoom in and out and pan to look at
+  // different times."* Zoom and pan are M61's and already do that, so the
+  // window has nothing left to decide here: what is laid out is what is drawn,
+  // and what is drawn is `shown`.
+  //
+  // What H4b was buying — not laying out thirty thousand events to draw a
+  // decade of them — is bought instead by `shown` itself, which since M65 is
+  // the main events at rest and the lens when there is one, and by I6's cull,
+  // which puts in the DOM only what falls inside the rectangle on screen.
+  const events = all;
+  // And the lanes are chosen over everything drawn, not over the window: which
+  // lane an event goes in is the heaviest of its actors *among the lanes on
+  // screen*, weighted inside a window (lanes.js) — so a window passed here
+  // would have the band silently reordering a picture that no longer obeys it.
+  const lanes = state.group === 'none' ? [] : lanesFor(state.group, atlas, null, lens, state.lanes);
   return {
     events,
     lanes,
-    key: arrangementKey(state, events, lanes, lens, margin, beyond === 0 ? '' : holdingKey(state),
-      view ? formatFoci(view.foci) : null),
+    key: arrangementKey(state, events, lanes, lens, '', view ? formatFoci(view.foci) : null),
   };
 }
