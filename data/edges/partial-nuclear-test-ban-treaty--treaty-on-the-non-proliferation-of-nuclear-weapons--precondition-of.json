@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "partial-nuclear-test-ban-treaty--treaty-on-the-non-proliferation-of-nuclear-weapons--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Partial Nuclear Test Ban Treaty\", revision 1375345300, § Effects"
+    }
+  ],
+  "from": "partial-nuclear-test-ban-treaty",
+  "to": "treaty-on-the-non-proliferation-of-nuclear-weapons",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the test ban states the relation and says the later treaty states it too: \"The PTBT has been considered the stepping stone to the Treaty on the Non-Proliferation of Nuclear Weapons (NPT) of 1968, which explicitly referred to the progress provided by the PTBT.\" The edge claims that and no more; the article attributes the reading rather than asserting it, which is why it is probable.",
+  "dispute": null
+}

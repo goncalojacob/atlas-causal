@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "panic-of-1893",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-21",
   "origin": {
     "tool": "wikidata"
   },
@@ -47,9 +47,5 @@
   "place": null,
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "actors": [],
-  "retraction": {
-    "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 11 under brief §1: the record earns no honest edge. The English article, at revision 1374530409, argues the depression out of the Baring crisis and Argentine investment, Harrison's tariff and silver policy, and forward to the Panic of 1896 and the presidency of McKinley; this atlas holds none of them. Its one sentence naming a record here — that it was the most serious American depression \"until the Great Depression of the 1930s\" — is a comparison and not a link, and writing an edge out of it would be exactly the kind brief §1 forbids."
-  }
+  "actors": []
 }

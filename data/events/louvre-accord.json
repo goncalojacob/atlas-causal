@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "1957-1958-influenza-pandemic",
+  "id": "louvre-accord",
   "kind": "event",
   "status": "active",
   "supersededBy": null,
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": null,
   "origin": {
     "tool": "wikidata"
   },
@@ -23,30 +23,29 @@
       "imported-facts"
     ]
   },
-  "wikidata": "Q1434550",
+  "wikidata": "Q471261",
   "sitelinks": {
-    "count": 34,
+    "count": 15,
     "on": "2026-09-21"
   },
   "wikipedia": {
-    "en": "1957–1958 influenza pandemic",
-    "pt": "Gripe asiática"
+    "en": "Louvre Accord"
   },
   "sources": [
     {
       "source": "wikidata",
-      "locator": "Q1434550"
+      "locator": "Q471261"
     }
   ],
-  "title": "1957–1958 influenza pandemic",
-  "summary": "Wikidata item Q1434550, imported by tools/import/wikidata.mjs. The item's own description reads \"pandemic of influenza virus (H2N2)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "Louvre Accord",
+  "summary": "Wikidata item Q471261, imported by tools/import/wikidata.mjs. The item's own description reads \"1987 international agreement aiming to stabilize international currency markets and halt the decline of the US dollar after the Plaza Accord\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1956,
-    "end": 1958
+    "start": 1987,
+    "end": 1987,
+    "date": "1987-02-22"
   },
   "place": null,
-  "region": "asia",
+  "region": "europe",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
-  "category": "disaster",
   "actors": []
 }

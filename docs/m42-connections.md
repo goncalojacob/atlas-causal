@@ -2954,6 +2954,248 @@ changing the rule** — it is the rule reporting the shape of the corpus, which 
 what it is for — but it is the number a run should plan its hour against:
 **about half a sweep batch now.**
 
+## 2q. Batch 17 — set 0, and what reading the tick list against the tombstones buys
+
+**Sixteen rows taken by the rule, fifteen ticked and one refused before the
+fetch, fifteen created, fourteen kept and one retracted, nine tombstones back,
+nineteen edges, one filing.** Corpus +23, component +9, component count 12 → 18.
+
+This is the first batch under **set 0 of §5 of `docs/m42-pool.md`**, written
+before a box was ticked and computed over `data/events/*.json` on the day: the
+pool rows whose English label appears inside the `retraction.reason` of a record
+that is retracted now. Twelve rows matched. One was dropped by reading the
+sentence — `Q1972326` is the **Treaty of Lausanne of 1912**, which ended the
+Italo-Turkish war, and the reason that named "the treaty of Lausanne in 1923"
+was `2016-turkish-coup-d-etat-attempt`'s, about a different treaty the atlas
+already holds as `treaty-of-lausanne`. So set 0 contributed eleven, and set 4
+topped the batch up to sixteen with the best remaining by sitelinks, in item-id
+order at the 38-sitelink tie: `Q161141`, `Q278960`, `Q301336`, `Q638903` and
+`Q665554`.
+
+**`Q638903` was refused before the fetch**: it is the 5 October 1910 revolution
+in Portugal, which this atlas has held since its first week as
+`republic-proclaimed-1910`. That record carries no `wikidata`, which is why the
+pool did not know it was held, and importing the item would have written a
+second record of one event. The right repair is the additive one — put `Q638903`
+on the record that exists — and it is not this batch's, because
+`tools/import/identity.mjs` fills a gap on a record the import can *find*, and
+it finds by id. It is written down here instead (**deviation 1006**).
+
+### The nine tombstones, which are what set 0 is for
+
+Each was retracted with a reason naming the record it waited for, and this
+batch imported that record. None was reinstated because it looked reinstatable:
+the sweep row and the reason are the same sentence read from two ends.
+
+| back | it waited for | now |
+| --- | --- | --- |
+| `japan-korea-treaty-of-1907` | the 1910 annexation its own article argues forward to | `japan-korea-treaty-of-1910` |
+| `first-matabele-war` | the Second Matabele War its article argues forward to | `second-matabele-war` |
+| `tajikistani-civil-war` | "a record of the Afghan Civil War of 1992–1996" | `afghan-civil-war-q1980081` |
+| `sierra-leone-civil-war` | "the First Liberian Civil War" | `first-liberian-civil-war` |
+| `colombian-conflict` | "a record of La Violencia" | `la-violencia` |
+| `1957-1958-influenza-pandemic` | the Hong Kong flu of 1968–1970 | `hong-kong-flu` |
+| `black-monday` | "a record of the Louvre Accord" | `louvre-accord` |
+| `panic-of-1893` | the Baring crisis its article lists first among the causes | `baring-crisis` |
+| `montreal-protocol` | "the 1985 Vienna Convention for the protection of the ozone layer" | `vienna-convention-for-the-protection-of-the-ozone-layer` |
+
+**Nine in one batch, against the eleven batches 10 to 12 found between them and
+the none of batches 13 and 14.** The vein §7 called thinning was not thinning;
+it was being asked the wrong way round. Scanning the reasons for a record that
+has *already* become active finds what earlier batches happened to import.
+Choosing the import *from* the reasons finds it on purpose.
+
+### Step 0, the tombstone scan, which ran first and came back empty
+
+Thirty-four retracted records name an active record somewhere in their reason,
+and every one was read. None was unlocked by a record that was already here:
+the four §5b keeps on the list — `velvet-revolution`, `second-chechen-war`,
+`second-nagorno-karabakh-war`, `hungarian-revolution-of-1956` — each still names
+a different missing record (the first Chechen war, the first Nagorno-Karabakh
+war, the fall of the Wall), and none of those is a record or a pool row this
+batch could take. One near-miss is worth writing down, because it is the shape
+of the mistake set 0 could make: `tajikistani-civil-war`'s reason names "the
+Afghan Civil War of 1992–1996", and the atlas already held an `afghan-civil-war`
+— **but that record is `Q2405009`, the war of 1989–1992, a different war.** The
+tombstone came back on the record imported for it and not on the one whose title
+looked right.
+
+### The edges
+
+Nineteen. **Nine ends land in the main component and ten open six new pairs and
+trios**, which is the whole of what §4b below has to say about this batch.
+
+#### Into the main component
+
+`treaty-of-versailles --precondition-of--> kapp-putsch`. The English article
+puts the trigger in the treaty: Germany "was required to reduce its land forces
+to a maximum of 100,000 men... Freikorps units were expected to be disbanded",
+and it is the order to disband the Marine Brigade under that ceiling that
+Lüttwitz refused. Second source: Sturm 2011, the work the article hangs that
+sentence on.
+
+`german-revolution-of-1918-1919 --reacted-to--> kapp-putsch`. The article's
+first paragraph: the putsch's "goal was to undo the German Revolution of
+1918–1919, overthrow the Weimar Republic, and establish an autocratic
+government."
+
+`potsdam-declaration --precondition-of--> japanese-instrument-of-surrender`.
+The declaration is formally the "Proclamation Defining Terms for Japanese
+Surrender"; the instrument formalises the acceptance of those terms. The edge
+claims that the declaration set what a surrender would have to say, and not
+that it is what made Japan surrender.
+
+`japan-korea-treaty-of-1907 --precondition-of--> japan-korea-treaty-of-1910`,
+from the 1910 article's own sentence naming the 1905 and 1907 treaties it
+completes. The 1905 Eulsa treaty is not a record here and no edge is written
+for it.
+
+`japan-korea-treaty-of-1910 --precondition-of--> korean-war`. The Korean War's
+article opens its background at the annexation and gives it a section,
+"Japanese colonization (1910–1945)". Second source: Schnabel 1972, pp. 3, 18,
+22. **This is the edge that puts the Korean pair in the middle rather than
+beside it**, and it was found by reading the article at the far end, not the
+near one.
+
+`jameson-raid --precondition-of--> second-matabele-war`: "Only a few months
+earlier... Jameson had sent most of his troops and armaments to fight the
+Transvaal Republic in the ill-fated Jameson Raid. This left the country nearly
+defenceless."
+
+`first-matabele-war --precondition-of--> second-matabele-war`, which is what
+both articles argue and what the 1893 record's own retraction reason said it
+was waiting for.
+
+`afghan-civil-war --precondition-of--> afghan-civil-war-q1980081`: "The war
+immediately followed the 1989–1992 civil war with the Mujahideen victory and
+dissolution of the Republic of Afghanistan in April 1992."
+
+`afghan-civil-war-q1980081 --caused--> afghan-civil-war-q12302518`, in the
+article's own words: "The events of this war lead to the Afghan Civil War
+(1996–2001)."
+
+`afghan-civil-war-q1980081 --enabled--> tajikistani-civil-war`. The Tajik
+article's infobox files the war as part of "the post-Soviet conflicts and
+spillover of the Afghan Civil War (1992–1996)". **An infobox `part_of` is not a
+hatnote** — batch 16 refused `libyan-civil-war-q16911838` because a hatnote is a
+disambiguation device and asserts nothing — it is the article stating what the
+war was part of. The claim is spillover, so the type is `enabled`; the prose
+does not argue the Afghan war as the Tajik war's origin and neither does this
+edge.
+
+#### Opening a corner rather than reaching the middle
+
+`first-liberian-civil-war --enabled--> sierra-leone-civil-war` (second source:
+Gberie 2005, p. 56), `first-liberian-civil-war --precondition-of-->
+second-liberian-civil-war` and `sierra-leone-civil-war --reacted-to-->
+second-liberian-civil-war` make **a West African trio**. Nothing in any of the
+three articles reaches a record this atlas holds: no Gaddafi, no ECOWAS record,
+no Special Court, and `mali-war` — the one other West African record — is named
+by none of them.
+
+`la-violencia --precondition-of--> colombian-conflict` (second source: Leech
+2009, pp. 242–247) makes **a Colombian pair that does not join the Colombian
+records already here**. La Violencia's article does not mention the Thousand
+Days' War at all, and `thousand-days-war` and `hay-bunau-varilla-treaty` remain
+their own fragment of two. The atlas now holds four Colombian events in two
+disconnected pieces, which is honest and is worth a reader's seeing.
+
+`1957-1958-influenza-pandemic --precondition-of--> hong-kong-flu` (second
+source: Jester, Uyeki and Jernigan 2020) rests on descent of the virus and not
+on resemblance between pandemics: the 1968 virus "was descended from H2N2
+(which caused the Asian flu pandemic in 1957–1958) through antigenic shift".
+`covid-19-pandemic` is in the middle and neither article argues a line to it.
+
+`louvre-accord --precondition-of--> black-monday` (second source: Cohen 2007,
+p. 65) is the article's explicitly *second* explanation of the crash, which is
+why it is `probable`.
+
+`baring-crisis --precondition-of--> panic-of-1893`, first in the panic
+article's own list of causes.
+
+`vienna-convention-for-the-protection-of-the-ozone-layer --precondition-of-->
+montreal-protocol`: "20 nations, including most major CFC producers, signed the
+Vienna Convention, which established a framework for negotiating international
+regulations on ozone-depleting substances." **This is the atlas's first
+environmental pair**, and §7.4's hole is exactly why it is only a pair.
+
+`partial-nuclear-test-ban-treaty --precondition-of-->
+treaty-on-the-non-proliferation-of-nuclear-weapons` takes the nuclear fragment
+from two records to three: "The PTBT has been considered the stepping stone to
+the Treaty on the Non-Proliferation of Nuclear Weapons (NPT) of 1968, which
+explicitly referred to the progress provided by the PTBT."
+
+### The one retracted, and what it waits for
+
+`aarhus-convention` — eleven kilobytes that argue the convention out of
+principle 10 of the Rio Declaration and forward to nothing. The Rio Declaration
+is not a record here; the two environmental records this same batch brings are
+about chlorofluorocarbons, which an information-access convention answered
+nothing about. **The ninth environmental instrument retracted on arrival.** It
+waits on a record of the Rio Earth Summit of 1992.
+
+### The one filed
+
+`japanese-instrument-of-surrender` under `world-war-ii`, whose span ends on the
+day the instrument was signed. It is the batch's only available filing: the
+other twenty-two are wars, pandemics, financial crises and instruments that are
+not part of any record this atlas holds. §3 below is where that is argued.
+
+### The fourteen kept, and the one refused
+
+Kept: `japanese-instrument-of-surrender`, `kapp-putsch`,
+`japan-korea-treaty-of-1910`, `second-matabele-war`,
+`afghan-civil-war-q1980081`, `afghan-civil-war-q12302518`,
+`partial-nuclear-test-ban-treaty`,
+`vienna-convention-for-the-protection-of-the-ozone-layer`, `la-violencia`,
+`first-liberian-civil-war`, `second-liberian-civil-war`, `hong-kong-flu`,
+`louvre-accord`, `baring-crisis`. Retracted: `aarhus-convention`. Refused
+before the fetch: `Q638903` and `Q1972326`.
+
+### What batch 17 did to the graph
+
+| | before | after |
+| --- | --- | --- |
+| active events | 451 | **474** |
+| main | 348 | **370** |
+| filed under a parent | 103 | **104** |
+| active edges | 546 | **565** |
+| largest connected component | 424 | **433** |
+| components | 12 | **18** |
+| active events with no edge | 3 | 3 |
+| unreachable from any Portuguese event | 19 | 33 |
+
+**Fourteen of fifteen kept, against six of fifteen in batch 16.** Set 0 more
+than doubles the yield, and the reason is structural rather than lucky: a row
+chosen because a tombstone names it arrives with a neighbour already written
+down, so the connection pass is reading one page to confirm a link the corpus
+proposed, not searching a page for any link at all.
+
+**But the component grew by nine while the corpus grew by twenty-three, and
+A5 asks about that.** The answer is in the table above the edges: nine of the
+twenty-three joined the middle and fourteen did not, because **a tombstone is
+a note of what is missing, and where the tombstone was is where its record
+lands.** Nine of the nine that reached the middle are records whose waiting
+neighbour was itself in the middle — the Korean war, the Jameson raid, the
+Versailles treaty, the Afghan civil war of 1989–1992, the Potsdam declaration.
+The other six pairs and trios are records whose waiting neighbour was *also* a
+tombstone, and two tombstones joined to each other are a fragment however
+honest the edge between them. **Set 0 buys keep rate; it does not by itself buy
+reach.** A batch that wants reach should order set 0 by whether the waiting
+tombstone's other end is in the largest component, which is a question
+`tools/m42-pool.mjs` can already answer, and that is the rule the next fire
+should write before it ticks (**deviation 1007**).
+
+The count of components rising from twelve to eighteen is the same fact said
+the other way, and it is the number batch 12 predicted: *"a sweep batch adds
+ten or eleven records and opens a corner of the world the atlas has one or two
+records of, so the corpus grows faster than the component and the component
+count rises."* Six new corners in one batch — West Africa, Colombia's
+mid-century, the influenza pandemics, the 1987 monetary crisis, the ozone
+treaties and the test-ban treaty — is the most this milestone has opened at
+once, and every one of them is a corner a person can now write into rather than
+a gap nobody had a record for.
+
 ## 3. The main count, and why it moved up
 
 Amendment A3: an import that leaves the main count higher than it found it has

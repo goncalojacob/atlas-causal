@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "afghan-civil-war-q1980081--afghan-civil-war-q12302518--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Afghan Civil War (1992–1996)\", revision 1371836551, § Aftermath"
+    }
+  ],
+  "from": "afghan-civil-war-q1980081",
+  "to": "afghan-civil-war-q12302518",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the 1992–1996 war ends by saying so in its own words: \"The events of this war lead to the Afghan Civil War (1996–2001).\" The Taliban’s capture of Kabul on 27 September 1996 is the closing date of the one and the opening date of the other, and the Northern Alliance the later war is fought against was formed out of the losers of this one.",
+  "dispute": null
+}

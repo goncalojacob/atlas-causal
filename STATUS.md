@@ -13657,17 +13657,61 @@ batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
 every edge. **The milestone is not done**: §7 of the pool file says where it
 stands and what the next fire does.
 
-**Sixteen batches.** The pool before: 310 active events, 229 of them main, 362
+**Seventeen batches.** The pool before: 310 active events, 229 of them main, 362
 active edges, a largest connected component of 254 and 23 events with no edge.
-**After batch 16: 451 active, 348 main, 103 filed, 546 edges, largest component
-424, 3 with no edge.** Forty-eight records came back from the tombstones and
-ninety-nine were imported and kept; a hundred and seventy-six edges were
-written — eighteen in batch 0, seven in batch 1, **nineteen in batch 3, which
+**After batch 17: 474 active, 370 main, 104 filed, 565 edges, largest component
+433, 3 with no edge.** Fifty-seven records came back from the tombstones and a
+hundred and thirteen were imported and kept; a hundred and ninety-five edges
+were written — eighteen in batch 0, seven in batch 1, **nineteen in batch 3, which
 imported nothing at all and moved the component by twenty-seven**, eight in
 batch 4, eleven in batch 5, eight in batch 6, eighteen in batch 7, eleven in
-batch 8, eight in batch 9, fourteen in batch 10, ten in batch 11, six in batch 12
+batch 8, eight in batch 9, fourteen in batch 10, ten in batch 11, six in batch 12,
 fourteen in batch 13,
-fifteen in batch 14, eleven in batch 15 and seven in batch 16.
+fifteen in batch 14, eleven in batch 15, seven in batch 16 and nineteen in
+batch 17.
+
+**Batch 17 is the best batch of the milestone and it is a rule change, not a
+better hand.** §5 of `docs/m42-pool.md` gained **set 0**, written before a box
+was ticked: the pool rows whose English label appears inside the
+`retraction.reason` of a record that is retracted *now*, computed over
+`data/events/*.json` on the day. Sixteen rows taken, fifteen ticked, one
+refused before the fetch, fifteen created, **fourteen kept and one retracted**,
+**nine tombstones back** and nineteen edges: corpus +23, component +9. Fourteen
+of fifteen against batch 16's six of fifteen, and nine reinstatements against
+the eleven the previous eight batches found between them. The vein §7 called
+thinning was being asked the wrong way round — scanning the reasons for a
+record that is *already* active finds what an earlier batch happened to import,
+while choosing the import *from* the reasons finds it on purpose. **The next
+fire should run set 0 again.**
+
+**What set 0 does not buy is reach, which is deviation 1007 and the finding to
+carry forward.** The component count went from twelve to eighteen: nine of the
+twenty-three joined the middle and fourteen opened six new pairs and trios —
+West Africa (the two Liberian wars and Sierra Leone), Colombia's mid-century
+(La Violencia and the Colombian conflict), the influenza pandemics, the 1987
+monetary crisis (the Louvre accord and Black Monday), the ozone treaties and
+the test-ban treaty. The reason is structural: **a tombstone is a note of what
+is missing, and its record lands where the tombstone was.** Where the waiting
+tombstone already had a neighbour in the middle — the Korean war behind
+`japan-korea-treaty-of-1907`, the Jameson raid behind `first-matabele-war`, the
+Afghan war of 1989–1992 behind `tajikistani-civil-war` — the import reaches the
+middle; where it was itself outside, two tombstones join each other. Ordering
+set 0 by whether the waiting tombstone's other end is in the largest component
+is the rule the next fire writes before it ticks.
+
+**One row was refused before the fetch and it is worth a line**: `Q638903`, the
+5 October 1910 revolution, is `republic-proclaimed-1910`, which this atlas has
+held since its first week and which carries no `wikidata` — so the pool's
+membership test could not see it (deviation 1006). Every hand-written record
+that predates the imports is invisible the same way. `Q1972326`, the Treaty of
+Lausanne of **1912**, was dropped from set 0 by reading the sentence: the
+reason that named "the treaty of Lausanne in 1923" meant a different treaty,
+which the atlas already holds. The one record retracted on arrival is
+`aarhus-convention`, **the ninth environmental instrument**; the same batch put
+`montreal-protocol` back on the Vienna ozone convention it is a protocol to, so
+the atlas now holds an environmental pair and §7.4's hole is narrower and the
+same shape: what it wants is an environmental *event*, the Rio Earth Summit or
+the discovery of the ozone hole, not a tenth treaty.
 
 **Batch 13 is the fourth sweep batch and the first one to grow the component as
 fast as the corpus.** Sixteen rows ticked by §5's rule over a pool recomputed
@@ -13956,6 +14000,49 @@ that alone, because a second source thickens an edge and a person decides
      one; it does not survive an exception that pretends to be the rule.
 
 ### Deviations
+
+1008. **Deviation 999 recurred one day after it was written, in the same
+     shape.** A hand-written source record for batch 17 carried
+     `"pages": null` inside its `container`, and `tools/lib/order.mjs` does
+     not reach inside a sub-object, so the byte-identical test of
+     `tests/bundle.test.mjs` caught it rather than the writer. The fix was to
+     delete the key. Worth recording because 999 already says exactly this:
+     the lesson does not survive a run, and what would survive it is the tool
+     ordering nested objects rather than a note asking people to remember.
+
+1007. **Set 0 buys keep rate and not reach, and the two are different
+     questions.** Batch 17's rule — take the pool rows whose label a live
+     retraction reason names — kept fourteen of fifteen against batch 16's six
+     of fifteen, which is the best yield of the milestone. It grew the corpus
+     by twenty-three and the largest component by **nine**, and took the
+     component *count* from twelve to eighteen. That is not the rule failing:
+     **a tombstone is a note of what is missing, and its record lands where
+     the tombstone was.** A tombstone whose waiting neighbour was already in
+     the middle brings its import into the middle; a tombstone that was itself
+     outside it joins one more record to itself and makes a fragment. Nine of
+     batch 17's imports did the first and fourteen did the second. The
+     ordering that would buy both is set 0 sorted by whether the waiting
+     tombstone's other end is in the largest component, which
+     `tools/m42-pool.mjs` already computes; §7 of `docs/m42-pool.md` says so
+     and the next fire writes it before it ticks. Recorded rather than
+     quietly fixed, because the batch that found it is the batch that had the
+     worse ordering.
+
+1006. **A record the atlas has held since its first week can sit in the import
+     pool, and the pool cannot see it.** `Q638903`, the 5 October 1910
+     revolution, came fourth in batch 17's set-4 top-up at 38 sitelinks. It is
+     `republic-proclaimed-1910`, one of the oldest records here — and that
+     record carries no `wikidata`, so the membership test of §5 of
+     `docs/m42-pool.md`, which asks whether the item id is on a record, said
+     no. It was refused before the fetch and a second record of one event was
+     not written. **The repair is additive and is not a batch's to make on the
+     way past**: `tools/import/identity.mjs` fills a gap on a record the
+     import can find, and it finds by id, so an item put on a record by hand
+     is the only route and it is a decision about a Portuguese record that a
+     world-volume batch should not take alone. What this says about the pool
+     is more general than one row: **every hand-written record that predates
+     the imports is invisible to the membership test**, so a sweep can offer
+     any of them, and only a reader recognising the title stops the duplicate.
 
 1005. **A class an item carries and the class table does not is not a hole to
      be filled on the way past.** Batch 13's sixteen items carry six classes

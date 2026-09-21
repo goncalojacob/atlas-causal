@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "baring-crisis--panic-of-1893--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Panic of 1893\", revision 1374530409, § Causes"
+    }
+  ],
+  "from": "baring-crisis",
+  "to": "panic-of-1893",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article lists the Baring crisis first among the panic’s causes: \"Baring crisis — Heavy investment in Argentina by Barings Bank, followed by the 1890 wheat crop failure and the Revolution of the Park, a failed coup in Buenos Aires, ended further investments in the country.\" The withdrawal of British capital that followed is what the article makes the panic’s external half.",
+  "dispute": null
+}

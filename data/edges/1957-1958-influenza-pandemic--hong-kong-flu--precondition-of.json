@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "1957-1958-influenza-pandemic--hong-kong-flu--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hong Kong flu\", revision 1362933012, § lead"
+    },
+    {
+      "source": "jester-uyeki-jernigan-2020-fifty-years-h3n2",
+      "locator": "pp. 669–676; the work the article hangs this sentence on"
+    }
+  ],
+  "from": "1957-1958-influenza-pandemic",
+  "to": "hong-kong-flu",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The link here is the virus itself, which the English article states as a fact of descent rather than as a resemblance between two pandemics: the 1968 virus \"was descended from H2N2 (which caused the Asian flu pandemic in 1957–1958) through antigenic shift, a genetic process in which genes from multiple subtypes are reassorted to form a new virus.\" Nothing is claimed about the handling of one pandemic changing the handling of the other.",
+  "dispute": null
+}

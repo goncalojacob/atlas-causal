@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "japan-korea-treaty-of-1907",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
@@ -22,10 +22,6 @@
   },
   "origin": {
     "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 15 under brief §1: the record earns no honest edge. The English article, at revision 1369056589, is eight kilobytes and argues the treaty out of two instruments this atlas does not hold — the Eulsa Treaty of 1905, under which \"the Korean Empire had become a protectorate of Japan\", and the Hague Secret Emissary Affair, after which \"on July 18, 1907, Japan made Emperor Gojong abdicate in favor of his son Sunjong\" — and forward to the Japan–Korea Treaty of 1910. It names no event this corpus has; the Russo-Japanese war, which this atlas does hold and which every history puts behind the 1905 protectorate, is not mentioned in the article at all. It waits on the Eulsa Treaty of 1905."
   },
   "wikidata": "Q713917",
   "wikipedia": {

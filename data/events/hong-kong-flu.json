@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "1957-1958-influenza-pandemic",
+  "id": "hong-kong-flu",
   "kind": "event",
   "status": "active",
   "supersededBy": null,
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": null,
   "origin": {
     "tool": "wikidata"
   },
@@ -23,26 +23,27 @@
       "imported-facts"
     ]
   },
-  "wikidata": "Q1434550",
+  "wikidata": "Q1069785",
   "sitelinks": {
-    "count": 34,
+    "count": 32,
     "on": "2026-09-21"
   },
   "wikipedia": {
-    "en": "1957–1958 influenza pandemic",
-    "pt": "Gripe asiática"
+    "en": "Hong Kong flu",
+    "pt": "Gripe de Hong Kong"
   },
   "sources": [
     {
       "source": "wikidata",
-      "locator": "Q1434550"
+      "locator": "Q1069785"
     }
   ],
-  "title": "1957–1958 influenza pandemic",
-  "summary": "Wikidata item Q1434550, imported by tools/import/wikidata.mjs. The item's own description reads \"pandemic of influenza virus (H2N2)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "Hong Kong flu",
+  "summary": "Wikidata item Q1069785, imported by tools/import/wikidata.mjs. The item's own description reads \"1968—1970 flu pandemic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1956,
-    "end": 1958
+    "start": 1968,
+    "end": 1970,
+    "date": "1968-07-13"
   },
   "place": null,
   "region": "asia",

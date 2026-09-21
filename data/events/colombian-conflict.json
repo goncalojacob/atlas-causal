@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "colombian-conflict",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
@@ -22,10 +22,6 @@
   },
   "origin": {
     "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 14 under brief §1: the record earns no honest edge. The English article, at revision 1375841708, says the conflict \"is historically rooted in the conflict known as *La Violencia*, which was triggered by the 1948 assassination of liberal political leader Jorge Eliécer Gaitán and in the aftermath of the anti-communist repression in rural Colombia in the 1960s\", and neither La Violencia nor the Bogotazo is a record here. The atlas's one Colombian record is `thousand-days-war`, which batch 10 brought back and which this article does not mention at all. It waits on a record of La Violencia."
   },
   "wikidata": "Q169072",
   "wikipedia": {

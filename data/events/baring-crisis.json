@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "montreal-protocol",
+  "id": "baring-crisis",
   "kind": "event",
   "status": "active",
   "supersededBy": null,
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": null,
   "origin": {
     "tool": "wikidata"
   },
@@ -23,31 +23,29 @@
       "imported-facts"
     ]
   },
-  "wikidata": "Q219438",
+  "wikidata": "Q3544276",
   "sitelinks": {
-    "count": 45,
+    "count": 7,
     "on": "2026-09-21"
   },
   "wikipedia": {
-    "en": "Montreal Protocol",
-    "pt": "Protocolo de Montreal"
+    "en": "Baring crisis",
+    "pt": "Pânico de 1890"
   },
   "sources": [
     {
       "source": "wikidata",
-      "locator": "Q219438"
+      "locator": "Q3544276"
     }
   ],
-  "title": "Montreal Protocol",
-  "summary": "Wikidata item Q219438, imported by tools/import/wikidata.mjs. The item's own description reads \"environmental protocol designed to protect the ozone layer\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "Baring crisis",
+  "summary": "Wikidata item Q3544276, imported by tools/import/wikidata.mjs. The item's own description reads \"international recession in 1890\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1987,
-    "end": 1987,
-    "date": "1987-09-16"
+    "start": 1890,
+    "end": 1890
   },
   "place": null,
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "category": "treaty",
   "actors": []
 }

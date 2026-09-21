@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "montreal-protocol",
+  "id": "first-liberian-civil-war",
   "kind": "event",
   "status": "active",
   "supersededBy": null,
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": null,
   "origin": {
     "tool": "wikidata"
   },
@@ -23,31 +23,31 @@
       "imported-facts"
     ]
   },
-  "wikidata": "Q219438",
+  "wikidata": "Q1477500",
   "sitelinks": {
-    "count": 45,
+    "count": 29,
     "on": "2026-09-21"
   },
   "wikipedia": {
-    "en": "Montreal Protocol",
-    "pt": "Protocolo de Montreal"
+    "en": "First Liberian Civil War",
+    "pt": "Primeira Guerra Civil da Libéria"
   },
   "sources": [
     {
       "source": "wikidata",
-      "locator": "Q219438"
+      "locator": "Q1477500"
     }
   ],
-  "title": "Montreal Protocol",
-  "summary": "Wikidata item Q219438, imported by tools/import/wikidata.mjs. The item's own description reads \"environmental protocol designed to protect the ozone layer\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "First Liberian Civil War",
+  "summary": "Wikidata item Q1477500, imported by tools/import/wikidata.mjs. The item's own description reads \"1989–1996 civil war in Liberia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1987,
-    "end": 1987,
-    "date": "1987-09-16"
+    "start": 1989,
+    "end": 1997,
+    "date": "1989-12-24",
+    "endDate": "1997-08-02"
   },
   "place": null,
-  "region": "americas",
+  "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "category": "treaty",
   "actors": []
 }

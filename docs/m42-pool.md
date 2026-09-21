@@ -107,6 +107,7 @@ A5: a batch that grows the corpus and not the component has to say why.
 | 14 | sets 3 and 4 a fifth time: 15 created and **one refused at the class table**, 12 kept and 3 retracted, 15 edges, three filings — corpus +12 and component +12 | 435 | 335 | 100 | 528 | **412** | 3 |
 | 15 | sets 3 and 4 a sixth time: 16 created, 9 kept and 7 retracted, **1 tombstone back**, 11 edges, two filings — corpus +10 and component **+8**, the two missing being the Horn of Africa fragment | 445 | 343 | 102 | 539 | **420** | 3 |
 | 16 | sets 3 and 4 a seventh time: 15 created and one refused at the class table, **6 kept and 9 retracted**, 7 edges, one filing — corpus +6 and component **+4**, the Horn fragment 4 → 6 | 451 | 348 | 103 | 546 | **424** | 3 |
+| 17 | **set 0, the rows the tombstones name**: 15 created, **14 kept and 1 retracted**, **9 tombstones back**, 19 edges, one filing — corpus +23 and component **+9**, and the component *count* 12 → 18 | 474 | 370 | 104 | 565 | **433** | 3 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -163,10 +164,27 @@ The sets are taken in order, no row taken twice:
 
 | set | what it keeps |
 | --- | --- |
+| 0 | **The rows the tombstones name**, added for batch 17 and written before that batch ticked a box. The row whose English label appears, verbatim and folded, inside the `retraction.reason` of a record that is retracted *now* — so the corpus has already asked for it by name, and it arrives with a neighbour waiting instead of needing one found. Computed over `data/events/*.json` on the day of ticking, never from a list; a match on a label the reason uses of a *different* thing with the same name is dropped by reading the sentence, and batch 17 dropped one that way. Ordered by sitelinks, ties by item id |
 | 1 | **The named neighbours.** The row whose English label names a record that §5 of `docs/m42-connections.md` says a retracted event is waiting for: the dissolution of the Soviet Union, the revolutions of 1989, the breakup of Yugoslavia, the Bosnian war, the Rwandan genocide, the Angolan civil war, the Egyptian revolution of 2011, the Arab Spring, the second intifada, the Anglo-Irish treaty, the Troubles, the Treaty of Lisbon, the partition of India, the Berlin conference, the second Italo-Ethiopian war, the independence of South Sudan. Whole label first, then as a substring; where a label names more than one item, the higher sitelink count decides |
 | 2 | **The bridges out of the fragments.** After set 1, the best by sitelinks whose label names a war, revolution, treaty or crisis that one of the atlas's own fragments argues to or from — the Ukrainian and Caucasian eight, the South Asian five, the Gaza three, the two Chinese, the two Gulf — read off §2 of `docs/m42-connections.md` |
 | 3 | **Thin decades.** After sets 1–2, the best by sitelinks dated in each decade the corpus is thinnest in, so that no decade of the period is left with nothing |
 | 4 | **Remainder to the cap**, the best remaining by sitelinks over the whole pool |
+
+**Why set 0 exists, and why it is a rule and not a hand.** Sets 1 and 2 were
+spent by batch 9, and from batch 10 the sweep has been sets 3 and 4 alone:
+sitelinks and thin decades. Its yield across batches 13 to 16 runs twelve,
+twelve, nine, **six** of sixteen, and §7 reads that fall as the ranking
+reporting the shape of the corpus — once the rows a corpus of 450 has a
+neighbour for are spent, sitelinks keep offering instruments nobody here signed
+and wars in countries this atlas has never held. Set 0 is the cheap half of
+what §7 told the next fire to do: *"the tick list is worth reading against the
+216 reasons because that is where the next reinstatement actually comes from."*
+It is set 1's question — which row does the corpus already want? — asked of the
+retraction reasons themselves rather than of a list of sixteen labels somebody
+typed once, so it recomputes as the corpus changes and it cannot run out while
+the atlas keeps writing down what it is missing. **It is not a licence to keep
+a record**: a set-0 row that earns no honest edge is retracted on arrival like
+any other, and batch 17 retracted some.
 
 **A tick is not a record.** Every row ticked is a row the import may write, and
 what it writes is `origin: wikidata`, `review.status: draft`,
@@ -263,7 +281,7 @@ item walked again is named in every report.
 
 ## 7. Where the run stands, for the fire that picks it up
 
-Seven batches are on `m42` and each was validated, indexed and pushed before
+Eighteen batches are on `m42` and each was validated, indexed and pushed before
 the next, so a killed run loses a batch and not the milestone.
 
 | | what landed |
@@ -285,17 +303,19 @@ the next, so a killed run loses a batch and not the milestone.
 | batch 14 | sets 3 and 4 a fifth time: 12 kept, 3 retracted, 1 refused at the class table, 15 edges, 400 → 412 |
 | batch 15 | the Horn of Africa opens: 9 kept, 7 retracted, 1 reinstated, 11 edges, 412 → 420 |
 | batch 16 | the lowest yield of the run: 6 kept, 9 retracted, 1 refused, 7 edges, 420 → 424 |
+| batch 17 | **set 0, the rows the tombstones name**: 14 kept, 1 retracted, **9 reinstated**, 19 edges, 424 → 433 |
 
 **Where the milestone stands against its own done-condition.** The brief asks
 for an order of magnitude more active events than the 250 it was written
-against. The corpus holds **451**, up from 310, and its largest connected
-component holds **424 of them**, up from 254 — so the connectedness is nearly
+against. The corpus holds **474**, up from 310, and its largest connected
+component holds **433 of them**, up from 254 — so the connectedness is nearly
 done and the volume is barely begun. **The volume is the sweep**: the rows the
 tool has already found and nobody has walked, recomputed against `data/` at
 every ticking rather than remembered. That recount stood at 1,557 on 21
 September and again at batch 10, and batch 13 measures the same pool over the
 `world` sections alone at **1,191 rows**, batch 14 at **1,175**, batch 15 at
-**1,159** and batch 16 at **1,143**, sixteen fewer each time, which is the
+**1,159**, batch 16 at **1,143** and batch 17 at **1,127**, sixteen fewer each
+time, which is the
 sixteen the batch before it spent; the two numbers are the same rule
 asked of a slightly different set of sections, and the one to trust is whichever
 the batch that is ticking has just computed. §5's tick rule, written before a
@@ -382,9 +402,41 @@ about half a sweep batch from here**, and on the two things that are still
 cheap: the tombstone notes, and reading the tick list against them before
 importing.
 
+**Batch 17 answers batch 16, and the answer is set 0.** The falling yield was
+never the pool running out of records this corpus could join; it was the
+*ordering* asking the wrong question. Sets 3 and 4 rank by sitelinks and thin
+decade — how much of the world has written about a row — and say nothing about
+whether this atlas has anywhere to put it. **Set 0 ranks by whether a record
+here has already written down that it is missing.** Fourteen of fifteen kept
+against six of fifteen, and nine tombstones back in one batch against eleven
+across the previous eight. The rule is in §5 above, written before a box was
+ticked, and it recomputes from `data/events/*.json` rather than from a list, so
+it cannot go stale and it cannot run out while the atlas keeps writing down
+what it is missing. **The next fire should run set 0 again**, not sets 3 and 4.
+
+**What set 0 does not buy is reach, and batch 17 is where that shows.** Corpus
++23 and component +9: the other fourteen went into six new pairs and trios,
+and the count of components rose from twelve to eighteen. The reason is
+structural and worth writing down for the rule that follows: **a tombstone is a
+note of what is missing, and its record lands where the tombstone was.** Where
+the waiting tombstone already had a neighbour in the middle — the Korean war
+behind `japan-korea-treaty-of-1907`, the Jameson raid behind
+`first-matabele-war`, the Afghan war of 1989–1992 behind
+`tajikistani-civil-war` — the import reaches the middle. Where the waiting
+tombstone was itself outside it, two tombstones join each other and make a
+fragment, honestly edged and still a fragment. **So set 0 should be ordered by
+whether the waiting tombstone's other end is in the largest component**, which
+`tools/m42-pool.mjs` already computes, and a batch that wants reach rather than
+keep rate should take those rows first. That is the rule for the next fire to
+write before it ticks (deviation 1007).
+
 **What the next fire does**, in this order:
 
-0. **Read the tombstones first**, which costs no fetch. `node -e` over
+0. **Read the tombstones first**, which costs no fetch, and read them *twice*:
+   once as batch 13 did, for a retracted record whose reason names a record
+   that is active now, and once as **set 0** does, for a pool row whose label a
+   reason names. The first came back empty in batches 13, 14 and 17; the second
+   is what gave batch 17 nine reinstatements. The scan below is the first. `node -e` over
    `data/events/*.json` picking the retracted records whose `retraction.reason`
    names a record that is active now is twenty lines and found eleven
    reinstatements across batches 10 to 12 and **none in batch 13**. The four
@@ -395,7 +447,8 @@ importing.
    against its own subjects rather than only against the id list, which is the
    stronger form of the scan: `may-coup` and `1907-romanian-peasants-revolt`
    both came up and neither was unlocked.
-1. **A sweep batch.** Tick by §5's rule, add the ids to
+1. **A set-0 batch, then a sweep batch.** Tick by §5's rule — set 0 first,
+   ordered as the paragraph above says, and sets 3 and 4 only to fill the cap — add the ids to
    `data/imports/wikidata-seeds.json` → `items` with a lane and a class each,
    walk them here, and connect every one of them the same day. The rate at
    which this milestone can go is **the rate at which a person can read the
@@ -416,11 +469,21 @@ importing.
    §2j say what each waits for, and none of them waits on a fetch.
 4. **The environment-shaped hole**, which batch 10 found and which costs the
    sweep two of its best rows every time it reaches one. `paris-agreement`,
-   `ramsar-convention`, `united-nations-convention-on-the-law-of-the-sea`,
-   `montreal-protocol` and the Stockholm convention are all tombstones for the
-   same reason: the instrument decided nothing this corpus holds. Until a person
-   argues one environmental record, every environmental treaty the sweep offers
-   is retracted on arrival, and §2j says so rather than working around it.
+   `ramsar-convention`, `united-nations-convention-on-the-law-of-the-sea` and
+   the Stockholm convention are tombstones for the same reason: the instrument
+   decided nothing this corpus holds. **Batch 17 made the first dent and it
+   shows the shape of the hole exactly.** `montreal-protocol` came back on
+   `vienna-convention-for-the-protection-of-the-ozone-layer`, which is the
+   convention it is a protocol *to* — so the atlas now holds an environmental
+   pair joined to each other and to nothing else — while `aarhus-convention`,
+   imported in the same batch, was retracted on arrival as the ninth such
+   instrument, because an information-access convention has nothing to do with
+   chlorofluorocarbons. **Two environmental treaties do not make an
+   environmental corner.** What the hole actually wants is an environmental
+   *event*: the Rio Earth Summit of 1992, which `aarhus-convention`'s reason
+   names, or the discovery of the ozone hole, which the Montreal article puts
+   eighteen months before the protocol. Until one of those is a record, §2j's
+   reading stands.
 5. **Sudan is the one fragment a sweep row cannot reach**, and §2g says why:
    records joined to each other and to nothing else. Batch 10 tested that
    reading against two more pages — the first Sudanese civil war's and

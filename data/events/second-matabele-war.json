@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "montreal-protocol",
+  "id": "second-matabele-war",
   "kind": "event",
   "status": "active",
   "supersededBy": null,
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": null,
   "origin": {
     "tool": "wikidata"
   },
@@ -23,31 +23,32 @@
       "imported-facts"
     ]
   },
-  "wikidata": "Q219438",
+  "wikidata": "Q233657",
   "sitelinks": {
-    "count": 45,
+    "count": 19,
     "on": "2026-09-21"
   },
   "wikipedia": {
-    "en": "Montreal Protocol",
-    "pt": "Protocolo de Montreal"
+    "en": "First Chimurenga",
+    "pt": "Segunda Guerra de Matabele"
   },
   "sources": [
     {
       "source": "wikidata",
-      "locator": "Q219438"
+      "locator": "Q233657"
     }
   ],
-  "title": "Montreal Protocol",
-  "summary": "Wikidata item Q219438, imported by tools/import/wikidata.mjs. The item's own description reads \"environmental protocol designed to protect the ozone layer\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "Second Matabele War",
+  "summary": "Wikidata item Q233657, imported by tools/import/wikidata.mjs. The item's own description reads \"war fought between 1896 and 1897 in the area then known as Rhodesia, now Zimbabwe.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1987,
-    "end": 1987,
-    "date": "1987-09-16"
+    "start": 1896,
+    "end": 1897,
+    "date": "1896-03",
+    "endDate": "1897-10"
   },
   "place": null,
-  "region": "americas",
+  "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "category": "treaty",
+  "category": "war",
   "actors": []
 }

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "afghan-civil-war--afghan-civil-war-q1980081--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Afghan Civil War (1992–1996)\", revision 1371836551, § lead and § Background — 1989–1992 civil war"
+    }
+  ],
+  "from": "afghan-civil-war",
+  "to": "afghan-civil-war-q1980081",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the 1992–1996 war opens by placing it directly on the end of the one before it: \"The war immediately followed the 1989–1992 civil war with the Mujahideen victory and dissolution of the Republic of Afghanistan in April 1992.\" It is the collapse of Najibullah’s republic — the outcome of the earlier war — that left the question of who would govern for the factions to fight over.",
+  "dispute": null
+}

@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "sierra-leone-civil-war",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
@@ -22,10 +22,6 @@
   },
   "origin": {
     "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge. The English article, at revision 1375466974, files the war under \"the West African Crisis and **spillover of the First and Second Liberian Civil Wars**\" and gives Charles Taylor's Greater Liberia and then Liberia as combatants; this atlas holds no Liberian record and no West African record between the slave trade and the present but `mali-war`, which the article does not mention. It waits on the First Liberian Civil War."
   },
   "wikidata": "Q795269",
   "wikipedia": {

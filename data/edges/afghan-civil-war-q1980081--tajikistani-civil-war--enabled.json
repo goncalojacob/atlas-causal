@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "afghan-civil-war-q1980081--tajikistani-civil-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tajikistani Civil War\", revision 1370749545, § infobox (part_of)"
+    }
+  ],
+  "from": "afghan-civil-war-q1980081",
+  "to": "tajikistani-civil-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English article on the Tajik war files it, in the infobox that heads the page, as part of \"the post-Soviet conflicts and spillover of the Afghan Civil War (1992–1996)\". That is the article’s own statement of what the war was part of, not a hatnote or a category: the Tajik opposition’s bases and much of its supply lay across the Afghan border during exactly these years. The claim is spillover, so the type is enabled and not caused; the article’s prose does not argue the Afghan war as the Tajik war’s origin, and neither does this edge.",
+  "dispute": null
+}

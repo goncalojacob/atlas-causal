@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "aarhus-convention",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": "2026-09-21",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q301336",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "Aarhus Convention",
+    "pt": "Convenção Aarhus"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q301336"
+    }
+  ],
+  "title": "Aarhus Convention",
+  "summary": "Wikidata item Q301336, imported by tools/import/wikidata.mjs. The item's own description reads \"UNECE Convention on Access to Information\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1998,
+    "end": 1998,
+    "date": "1998-06-25"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 17 under brief §1: the record earns no honest edge. The English article, at revision 1367239958, is eleven kilobytes and argues the convention out of principle 10 of the Rio Declaration — \"It is by far the most impressive elaboration of principle 10 of the Rio Declaration, which stresses the need for citizens’ participation in environmental issues\" — and forward to nothing at all. The Rio Declaration is not a record here. Its subject is access to environmental information and public participation, which the two environmental records this same batch brings — the Vienna ozone convention and the Montreal protocol it reinstates — have nothing to do with: a protocol on chlorofluorocarbons is not what an information-access convention answered. This is the ninth environmental instrument retracted on arrival and §7.4 of docs/m42-pool.md is the general case: the hole is not that the atlas lacks environmental treaties, it is that it holds no environmental *event* for one to have decided anything about. It waits on a record of the Rio Earth Summit of 1992."
+  }
+}

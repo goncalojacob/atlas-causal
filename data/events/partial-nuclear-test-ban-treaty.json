@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "montreal-protocol",
+  "id": "partial-nuclear-test-ban-treaty",
   "kind": "event",
   "status": "active",
   "supersededBy": null,
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": null,
   "origin": {
     "tool": "wikidata"
   },
@@ -23,30 +23,30 @@
       "imported-facts"
     ]
   },
-  "wikidata": "Q219438",
+  "wikidata": "Q278960",
   "sitelinks": {
-    "count": 45,
+    "count": 32,
     "on": "2026-09-21"
   },
   "wikipedia": {
-    "en": "Montreal Protocol",
-    "pt": "Protocolo de Montreal"
+    "en": "Partial Nuclear Test Ban Treaty",
+    "pt": "Tratado de Interdição Parcial de Ensaios Nucleares"
   },
   "sources": [
     {
       "source": "wikidata",
-      "locator": "Q219438"
+      "locator": "Q278960"
     }
   ],
-  "title": "Montreal Protocol",
-  "summary": "Wikidata item Q219438, imported by tools/import/wikidata.mjs. The item's own description reads \"environmental protocol designed to protect the ozone layer\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "Partial Nuclear Test Ban Treaty",
+  "summary": "Wikidata item Q278960, imported by tools/import/wikidata.mjs. The item's own description reads \"1963 limited test ban treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1987,
-    "end": 1987,
-    "date": "1987-09-16"
+    "start": 1963,
+    "end": 1963,
+    "date": "1963-08-05"
   },
   "place": null,
-  "region": "americas",
+  "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "treaty",
   "actors": []

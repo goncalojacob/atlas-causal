@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "black-monday",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
@@ -22,10 +22,6 @@
   },
   "origin": {
     "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 13 under brief §1: the record earns no honest edge. The English article, at revision 1375770077, argues the crash out of the Louvre Accord of February 1987 and the crisis of confidence after it, overvaluation, the US trade and budget deficits, rising interest rates, the decline of the dollar, and portfolio insurance hedging — and this atlas holds none of them. The one record it names is the Great Depression, and only as a fear: the severity \"sparked fears of extended economic instability or a reprise of the Great Depression\", which is a comparison and not a consequence in either direction. It waits on a record of the Louvre Accord, or on any 1980s financial record outside Portugal and Brazil."
   },
   "wikidata": "Q868261",
   "wikipedia": {

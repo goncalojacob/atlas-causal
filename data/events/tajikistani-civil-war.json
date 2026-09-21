@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "tajikistani-civil-war",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
@@ -22,10 +22,6 @@
   },
   "origin": {
     "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 13 under brief §1: the record earns no honest edge. The English article, at revision 1370749545, files the war under \"the post-Soviet conflicts and spillover of the Afghan Civil War (1992–1996)\" and neither is a record here; its § Background argues the war out of Gorbachev's perestroika, the Islamic-democratic movement in the Tajik SSR, and demonstrations against the 1991 presidential election, and names the Soviet Union itself only in a category line. The dissolution of the Soviet Union, which this atlas does hold, was read from its own side too, at revision 1375840189: it mentions Tajikistan for the Dushanbe riots of February 1990 and a border clash with Kyrgyzstan in 2021, and argues no line to this war. Writing the obvious edge would be this run's inference and not anybody's page. It waits on a record of the Afghan Civil War of 1992–1996."
   },
   "wikidata": "Q1122110",
   "wikipedia": {

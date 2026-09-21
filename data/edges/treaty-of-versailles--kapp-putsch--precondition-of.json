@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "treaty-of-versailles--kapp-putsch--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kapp Putsch\", revision 1373832870, § Background"
+    },
+    {
+      "source": "sturm-2011-weimarer-republik",
+      "locator": "Informationen zur politischen Bildung 261, § Weimarer Republik; the work the article hangs this sentence on"
+    }
+  ],
+  "from": "treaty-of-versailles",
+  "to": "kapp-putsch",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article puts the putsch’s trigger in the treaty: \"Under the terms of the Treaty of Versailles, which came into effect on 10 January 1920, Germany was required to reduce its land forces to a maximum of 100,000 men, who were to be only professional soldiers, not conscripts. The initial deadline was set for 31 March 1920... Freikorps units were expected to be disbanded.\" It is the order to disband the Marine Brigade under that ceiling that Lüttwitz refused, and the refusal is the putsch. The treaty did not call for a coup; it made the demand the coup was a refusal of.",
+  "dispute": null
+}

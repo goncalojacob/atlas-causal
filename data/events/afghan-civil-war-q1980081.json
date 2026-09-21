@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "montreal-protocol",
+  "id": "afghan-civil-war-q1980081",
   "kind": "event",
   "status": "active",
   "supersededBy": null,
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": null,
   "origin": {
     "tool": "wikidata"
   },
@@ -23,31 +23,31 @@
       "imported-facts"
     ]
   },
-  "wikidata": "Q219438",
+  "wikidata": "Q1980081",
   "sitelinks": {
-    "count": 45,
+    "count": 27,
     "on": "2026-09-21"
   },
   "wikipedia": {
-    "en": "Montreal Protocol",
-    "pt": "Protocolo de Montreal"
+    "en": "Afghan Civil War (1992–1996)",
+    "pt": "Guerra Civil Afegã (1992–1996)"
   },
   "sources": [
     {
       "source": "wikidata",
-      "locator": "Q219438"
+      "locator": "Q1980081"
     }
   ],
-  "title": "Montreal Protocol",
-  "summary": "Wikidata item Q219438, imported by tools/import/wikidata.mjs. The item's own description reads \"environmental protocol designed to protect the ozone layer\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "title": "Afghan Civil War",
+  "summary": "Wikidata item Q1980081, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war in Afghanistan between 1992–1996\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1987,
-    "end": 1987,
-    "date": "1987-09-16"
+    "start": 1992,
+    "end": 1996,
+    "date": "1992-04-30",
+    "endDate": "1996-09-27"
   },
   "place": null,
-  "region": "americas",
+  "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "category": "treaty",
   "actors": []
 }
