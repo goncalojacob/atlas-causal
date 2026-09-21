@@ -29,7 +29,7 @@ import {
   categoriesChecked, categoriesOn, eventsOn, eventsTokens,
 } from '../src/categories.js';
 import { workingSet } from '../src/emphasis.js';
-import { LAYERS, defaultState, parseState, formatState } from '../src/state.js';
+import { LAYERS, DEFAULT_LAYERS, defaultState, parseState, formatState } from '../src/state.js';
 import { buildAdjacency } from '../src/graph.js';
 import { ROOT } from './helpers.mjs';
 
@@ -135,13 +135,20 @@ test('the control is in the masthead, on every view, and its group is empty in t
 
 // ─── 2. two halves, and neither writes the other ───────────────────────────
 
-test('at rest the list is LAYERS itself, so the link stays empty', () => {
-  const written = layersFrom({ on: new Set(LAYERS), categories: ALL, all: ALL });
-  assert.deepEqual(written, [...LAYERS]);
-  // Which is the whole point of writing it in LAYERS order: `formatState`
-  // recognises the state at rest by comparing the two lists position by
-  // position, and writes no `?layers=` at all.
+test('at rest the list is DEFAULT_LAYERS itself, so the link stays empty', () => {
+  // At rest is every switch on **but the bands**, which are off until a reader
+  // asks for them (M45b, deviation 979). The assembly is still in `LAYERS`
+  // order, which is the whole point of it: `formatState` recognises the state
+  // at rest by comparing the two lists position by position, and writes no
+  // `?layers=` at all.
+  const written = layersFrom({ on: new Set(DEFAULT_LAYERS), categories: ALL, all: ALL });
+  assert.deepEqual(written, [...DEFAULT_LAYERS]);
   assert.equal(formatState(at({ layers: written })).includes('layers='), false);
+  // And with the bands on it is the whole of `LAYERS`, which is not the
+  // default, so the link says so.
+  const bands = layersFrom({ on: new Set(LAYERS), categories: ALL, all: ALL });
+  assert.deepEqual(bands, [...LAYERS]);
+  assert.ok(formatState(at({ layers: bands })).includes('relief'), 'the bands are in the link when they are on');
 });
 
 test('a category switched off replaces the bare token and leaves every other layer where it is', () => {

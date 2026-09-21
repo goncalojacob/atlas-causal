@@ -1130,7 +1130,11 @@ test('the base map is drawn under the territories and over the coastlines', { sk
     // The physical regions have a tint since M45a and they are the only base
     // layer that fills open land, so drawn where the manifest names them, after
     // the lakes, a desert's wash would pass over the Nile.
-    assert.deepEqual(seen.groups, ['physical', 'coast', 'rivers', 'lakes', 'mountains', 'cities']);
+    // M45b put a second layer under that exception and above it: the elevation
+    // bands are the ground the ground is on, and the only layer allowed a fill
+    // across open land, so everything — the coastline included — passes over
+    // them.
+    assert.deepEqual(seen.groups, ['relief', 'physical', 'coast', 'rivers', 'lakes', 'mountains', 'cities']);
     // A river is not a control.
     assert.equal(seen.pointerEvents, 'none');
   });

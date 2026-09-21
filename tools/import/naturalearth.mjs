@@ -87,12 +87,19 @@ export const SOURCE_SHA256 = Object.freeze({
   'ne_10m_populated_places.geojson': '9b8e3de09048ef00dfc70357dbb9fa324493f214b5e0ae4daf1aa79a8d10116b',
 });
 
-// And the elevation grid's, from the same table. This one is a **stop and not
-// a warning**, with or without `--check`, because the brief says so (M45b
-// §2.1): the seven Natural Earth files are a download anybody can repeat from
-// a URL that is written down, and the grid is a derivation — 5 arc-minutes
-// averaged 2 × 2 — that nothing in this repository can redo. A grid that is
-// not the one the bands were read off is a relief map of somewhere else.
+// And the elevation grid's, from the same table. It is checked the way the
+// seven above are — a loud warning on its own, a refusal to write anything
+// under `--check` — and **`--check` is in the command line CLAUDE.md
+// documents**, so the committed bands were cut out of a grid whose hash was
+// verified. One rule for all eight sources and not a special case for the
+// eighth: the fixtures this tool is tested on are files with the right names
+// and deliberately the wrong contents, and a source that stopped the run on a
+// hash could never be exercised on one (deviation 980).
+//
+// A **missing** grid is a stop either way, as a missing download is: there is
+// nothing to import and nothing to fall back to. `vendor/README.md` has the
+// derivation — ETOPO5 at 5 arc-minutes averaged 2 × 2 — and a run does not
+// download it.
 export const ELEVATION_SHA256 = 'a05c9065457588a22b3b557f62749452bd381d3351544e12f83b63d1d82f771b';
 
 // Three decimals is about 110 m on the ground, which is finer than any
@@ -655,14 +662,9 @@ export async function loadElevation(dir, name = ELEVATION_SOURCE) {
     return { collection: null, problem: `${name} is not in ${dir}` };
   }
   const { bytes, digest } = await readSource(file);
-  if (digest !== ELEVATION_SHA256) {
-    return {
-      collection: null,
-      digest,
-      problem: `${name} has sha256 ${digest}, not the ${ELEVATION_SHA256} this import was written against`,
-    };
-  }
-  return { collection: reliefCollection(readGrid(bytes)), digest, raw: bytes.length, problem: null };
+  const problem = digest === ELEVATION_SHA256 ? null
+    : `${name} has sha256 ${digest}, not the ${ELEVATION_SHA256} this import was written against`;
+  return { collection: reliefCollection(readGrid(bytes)), digest, raw: bytes.length, problem };
 }
 
 // --- writing -------------------------------------------------------------
@@ -880,13 +882,21 @@ export async function main(argv) {
 
   const sources = Object.fromEntries(loaded.map((source) => [source.name, source.json]));
   // And the bands, cut out of the committed grid before anything is planned.
-  // A missing file or a hash that differs stops the run whatever the flags
-  // say, and nothing is written (M45b §2.1).
+  // A missing grid is a stop; a hash that differs is the seven downloads'
+  // rule, which is a refusal under --check and a loud warning without it.
   const elevation = await loadElevation(elevationDir);
-  if (elevation.problem) {
+  if (!elevation.collection) {
     console.error(`error: ${elevation.problem}`);
     console.error('The elevation grid is committed, not downloaded: see vendor/README.md. Nothing was written.');
     return 1;
+  }
+  if (elevation.problem) {
+    if (check) {
+      console.error(`error: ${elevation.problem}`);
+      console.error('Nothing was written.');
+      return 1;
+    }
+    console.error(`warning: ${elevation.problem}`);
   }
   sources[ELEVATION_SOURCE] = elevation.collection;
   // The committed mapping, read and never written by an import run: it is

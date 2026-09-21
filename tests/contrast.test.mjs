@@ -14,9 +14,11 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { ROOT } from './helpers.mjs';
-import { fromHex, contrast, over, tokensOf } from '../tools/lib/colour.mjs';
+import { fromHex, contrast, distance, over, tokensOf } from '../tools/lib/colour.mjs';
+import { BAND_EDGES } from '../tools/import/elevation.mjs';
 
-const tokens = tokensOf(await readFile(path.join(ROOT, 'src', 'style.css'), 'utf8'));
+const css = await readFile(path.join(ROOT, 'src', 'style.css'), 'utf8');
+const tokens = tokensOf(css);
 const colour = (name) => {
   const value = tokens.get(name);
   assert.ok(value, `style.css defines ${name}`);
@@ -81,5 +83,66 @@ test('a territory does not hide the mark or the border drawn over it', () => {
     assert.ok(contrast(colour('--cobalt'), wash) >= 3, `--terr-${i}: a mark's outline`);
     assert.ok(contrast(colour('--ink'), wash) >= 4.5, `--terr-${i}: a label over it`);
     assert.ok(contrast(colour('--madder'), wash) >= 3, `--terr-${i}: the walked chain over it`);
+  }
+});
+
+// ─── M45b: the elevation bands ─────────────────────────────────────────────
+//
+// The bands are the only layer with a fill across open land, so everything the
+// atlas draws is drawn over them and the darkest one is the hardest ground on
+// the map. The brief asks for it to be proved by screenshot (§2.4) — it is,
+// under `docs/screens/m45b-*.png` — and a screenshot is not a test, so the
+// same promise is held here in numbers.
+//
+// The opacities are **read off the stylesheet** rather than written out here:
+// the tint a band is drawn in is one value and it lives at the rule, and a
+// second copy in this file would be free to fall out of step with it.
+const bandOpacities = () => [...css.matchAll(/\.band-(\d)\s*\{\s*fill-opacity:\s*([\d.]+)/g)]
+  .map(([, band, alpha]) => [Number(band), Number(alpha)])
+  .sort((a, b) => a[0] - b[0]);
+
+test('the five bands are a ramp: one token, five opacities, lightest low', () => {
+  const opacities = bandOpacities();
+  assert.equal(opacities.length, BAND_EDGES.length, 'one tint per band and no more');
+  assert.deepEqual(opacities.map(([band]) => band), BAND_EDGES.map((_, i) => i));
+  for (let i = 1; i < opacities.length; i += 1) {
+    assert.ok(opacities[i][1] > opacities[i - 1][1],
+      `band ${i} is no darker than band ${i - 1}: lightest low is the whole ramp`);
+  }
+  // And the ramp is one token, so the ground is one colour said five times and
+  // never a second palette (M45b, "no new hex value, no new token").
+  const fills = [...css.matchAll(/\.map \.layer-base-relief path \{[^}]*fill:\s*var\((--[a-z-]+)\)/g)];
+  assert.deepEqual(fills.map((m) => m[1]), ['--ink-soft']);
+});
+
+test('every band can be told from the one below it, and from bare land', () => {
+  // 0.02 in OKLab is where a large flat field stops being tellable from its
+  // neighbour — the number the eight territory hues were spread by — and five
+  // steps that a reader cannot count are not five bands (M45b: "if five bands
+  // cannot be told apart, use fewer and say so").
+  const land = colour('--land');
+  let previous = land;
+  for (const [band, alpha] of bandOpacities()) {
+    const wash = over(colour('--ink-soft'), alpha, land);
+    assert.ok(distance(wash, previous) >= 0.02,
+      `band ${band} is ${distance(wash, previous).toFixed(3)} in OKLab from the one under it`);
+    previous = wash;
+  }
+});
+
+test('the darkest band still leaves a mark, a label, the chain and a territory legible', () => {
+  const land = colour('--land');
+  const [, darkest] = bandOpacities().at(-1);
+  const wash = over(colour('--ink-soft'), darkest, land);
+  assert.ok(contrast(colour('--cobalt'), wash) >= 4.5, "an event mark's outline over the highest ground");
+  assert.ok(contrast(colour('--ink'), wash) >= 4.5, 'its label over the same');
+  assert.ok(contrast(colour('--madder'), wash) >= 3, 'the walked chain over it');
+  assert.ok(contrast(colour('--ink-soft'), wash) >= 3, 'a peak, which is drawn in the same token');
+  // And the territories, which are the thing the ground is under: a hue at
+  // 0.62 over the darkest band is still a hue and not the band.
+  for (let i = 1; i <= 8; i += 1) {
+    const territory = over(colour(`--terr-${i}`), 0.62, wash);
+    assert.ok(distance(territory, wash) >= 0.02,
+      `--terr-${i} over the highest band is ${distance(territory, wash).toFixed(3)} in OKLab from it`);
   }
 });
