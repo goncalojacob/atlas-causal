@@ -15159,6 +15159,72 @@ but the two tests about the stored preference.
       both columns were measured here, with the same instrument, in the same
       session, on the commit before and the commit after.
 
+## M76 — the band follows the selection, the fields go, the graph shows every date
+
+Three instructions from the owner on 21 September, after seeing M75 published.
+Lane A, on the branch `m76`.
+
+### Which of section 1's candidates it was: the first, and a fourth beside it
+
+The brief's first instruction is *"if for example I select portugal, the map
+timeline I use to pick the dates should show only those events"*, and it asks
+this run to find out on the real page why the band does not look narrowed
+rather than to argue from the code. Measured at 1280 × 900, headless, on the
+commit that claimed the milestone:
+
+| | columns | tallest column | x span of the ink | events behind it |
+|---|---|---|---|---|
+| nothing selected | 134 | 6 px | 14 → 1252 of 1280 | 229 |
+| `?actor=portugal` | 25 | 5 px | 466 → 684 of 852 | 33 |
+| `?actor=kingdom-of-portugal` | 19 | 4 px | 10 → 454 of 852 | 20 |
+
+**Candidate 3 is ruled out.** Selecting Portugal *is* a lens: the set behind
+the band goes from 229 events to 33, and the band redraws. The picture is
+narrowed in the data.
+
+**Candidate 1 is the cause.** The strip is 44 units deep and the profile is
+drawn at `density.js`'s absolute scale, whose whole range is 3 to 9 px and
+which saturates at 64 events in one 2-px column — a count no column of this
+corpus comes near. So the world draws a tallest column of 6 px and Portugal
+draws one of 5: **one pixel between the atlas and one country.** Both read as
+the same faint dusting along the bottom edge, and the only thing that changes
+is which x positions carry a 3-px tick. The narrowing was real and was spent
+on a pixel.
+
+**And a fourth the brief did not list, found while ruling out the third.** The
+band was drawn over `bandEvents` — `emphasis.js`'s `shown` — and `shown` is
+the lens *plus its one-hop ring*. Portugal names 9 events; the band drew 33.
+Twenty-four of them are the Boer War, Franz Ferdinand, the Sayfo, the Armenian
+genocide, the Easter Rising: the neighbourhood, correctly in the picture the
+map draws, and not what the owner pointed at. Three quarters of the ink under
+a band that says "Portugal" was not Portugal's.
+
+**Candidate 2 is real and is section 2's.** The masthead's hint keeps 7 columns
+of the corpus on the same row as the years and never narrows — 7 before the
+selection and 7 after it, on every one of the three ways in.
+
+### What section 1 changed
+
+Two things, and the fourth candidate is why there are two.
+
+1. **The profile is over the selection's own events.** A new pure half,
+   `profileEvents` in `window-band.js`: with a lens on, the lens's own events
+   — `lensView`'s `kept`, which is what the foci name and not the ring around
+   it — and with no lens, `bandEvents` exactly as before. Narrowed by the
+   categories still on, because it is intersected with `bandEvents` rather
+   than read straight off the lens. `bandEvents` itself is untouched, so the
+   masthead's count in view and the standing line still count what the views
+   draw; `emphasis.js`'s `shown` contract is untouched, as the brief requires.
+   `lensView` gained one key, `kept`, which `focusParts` already handed it.
+2. **The profile is drawn at its own set's scale.** `densityPath` takes a
+   `saturatesAt`, and `bandProfile` takes `own: true` and computes it from the
+   busiest column of the set it is given. The map's band asks for it, with the
+   strip's own body — 28 units, `STRIP.height - STRIP.marker` — as the cap, so
+   the busiest column reaches the top of the band and the year labels are
+   still clear above it. The timeline's per-lane stubs keep the absolute scale
+   they have always had: they are rows being compared with each other, and the
+   map's band is one row over one set.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
