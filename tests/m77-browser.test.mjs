@@ -14,7 +14,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  withBrowser, open, seenIntro, waitFor, until, watchErrors, errorsOn, skip,
+  withBrowser, open, seenIntro, waitFor, until, named, watchErrors, errorsOn, skip,
 } from './browser.mjs';
 
 const DESK = { width: 1440, height: 900, deviceScaleFactor: 1 };
@@ -107,7 +107,14 @@ test('with a narrative open nothing outside the walk is named until it is hovere
     // resting one, where the heaviest marks *are* named and this test would be
     // asking the wrong question of the right page.
     await waitFor(page, 'return document.querySelectorAll("svg.graph circle.node.of-narrative").length > 0;', 'the walk');
-    await waitFor(page, 'return document.querySelectorAll("svg.graph text.node-label").length > 0;', 'the labels');
+    // And then the mark this test points at, which is the race that dropped it
+    // three runs in five here (docs/m78-flakes.md). The wait was "some label is
+    // drawn": the walk's own names satisfy it, while the neighbourhood's marks
+    // — the ones outside the walk, which is all this test hovers — were still
+    // carrying "still loading", and a mark with no name yet is a mark the
+    // pointer draws nothing over. What it waits for now is every mark on the
+    // page carrying its own name, which is what "the pointer names it" needs.
+    await until(page, named('svg.graph circle.node[data-id]'));
 
     const seen = await page.eval(GRAPH);
     assert.deepEqual(seen.offWalkNamed, [],
