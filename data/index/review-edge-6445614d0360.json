@@ -6313,7 +6313,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "upton-1980-vallankumous-suomessa"
       ],
       "created": "2026-09-15",
       "from": "october-revolution",
@@ -6324,12 +6325,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "finnish-civil-war",
       "type": "precondition-of"
@@ -7500,7 +7502,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "hall-2000-balkan-wars"
       ],
       "created": "2026-09-15",
       "from": "second-balkan-war",
@@ -7511,12 +7514,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "assassination-of-archduke-franz-ferdinand",
       "type": "precondition-of"
@@ -9303,7 +9307,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "burgwyn-1997-italian-foreign-policy"
       ],
       "created": "2026-09-15",
       "from": "treaty-of-london",
@@ -9314,12 +9319,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "paris-peace-conference",
       "type": "precondition-of"
@@ -9749,7 +9755,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "tauber-2014-arab-movements-world-war-i"
       ],
       "created": "2026-09-15",
       "from": "world-war-i",
@@ -9760,12 +9767,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "arab-revolt",
       "type": "enabled"
@@ -9806,7 +9814,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "caulfield-1995-easter-rebellion"
       ],
       "created": "2026-09-15",
       "from": "world-war-i",
@@ -9817,12 +9826,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "easter-rising",
       "type": "enabled"
@@ -9865,7 +9875,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "upton-1980-vallankumous-suomessa"
       ],
       "created": "2026-09-15",
       "from": "world-war-i",
@@ -9876,12 +9887,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "finnish-civil-war",
       "type": "precondition-of"
@@ -9894,7 +9906,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "mommsen-1996-rise-and-fall-of-weimar-democracy"
       ],
       "created": "2026-09-15",
       "from": "world-war-i",
@@ -9905,12 +9918,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
-        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "note": "The explanation ends \"it is marked probable rather than consensus only because this atlas holds no work of German history to cite\". M72 cited Mommsen 1996 and the confidence followed the author's own stated condition, so that sentence is now stale: it is prose about the atlas and not about 1918, and striking it is a person's to do.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "german-revolution-of-1918-1919",
       "type": "caused"
@@ -9952,7 +9966,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "gaunt-2006-massacres-resistance-protectors"
       ],
       "created": "2026-09-15",
       "from": "world-war-i",
@@ -9963,12 +9978,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "sayfo",
       "type": "enabled"

@@ -50,6 +50,24 @@
         }
       ]
     },
+    "burgwyn-1997-italian-foreign-policy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "caulfield-1995-easter-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "cne-legislative-2015": {
       "from": "git",
       "versions": [
@@ -263,6 +281,24 @@
         }
       ]
     },
+    "gaunt-2006-massacres-resistance-protectors": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "hall-2000-balkan-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "historical-basemaps": {
       "from": "git",
       "versions": [
@@ -368,6 +404,15 @@
         }
       ]
     },
+    "mommsen-1996-rise-and-fall-of-weimar-democracy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "pgr-2023-operation-influencer": {
       "from": "git",
       "versions": [
@@ -464,6 +509,15 @@
         }
       ]
     },
+    "tauber-2014-arab-movements-world-war-i": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "telo-2007-historia-contemporanea": {
       "from": "git",
       "versions": [
@@ -493,6 +547,15 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "upton-1980-vallankumous-suomessa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

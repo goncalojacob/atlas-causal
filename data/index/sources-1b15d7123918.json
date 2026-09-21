@@ -121,6 +121,88 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "citationCount": 1,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
+        "H. James Burgwyn"
+      ],
+      "doi": null,
+      "id": "burgwyn-1997-italian-foreign-policy",
+      "isbn": "9780275948771",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Praeger Publishers",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Italian Foreign Policy in the Interwar Period 1918–1940",
+      "type": "book",
+      "url": null,
+      "year": 1997
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 1,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
+        "Max Caulfield"
+      ],
+      "doi": null,
+      "id": "caulfield-1995-easter-rebellion",
+      "isbn": "157098042X",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Roberts Rinehart Publishers",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Easter Rebellion, Dublin 1916",
+      "type": "book",
+      "url": null,
+      "year": 1995
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "citationCount": 5,
       "created": "2026-09-03",
       "creators": [
@@ -604,6 +686,88 @@
       "year": null
     },
     {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 1,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
+        "David Gaunt"
+      ],
+      "doi": null,
+      "id": "gaunt-2006-massacres-resistance-protectors",
+      "isbn": "9781593333010",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Gorgias Press",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Massacres, Resistance, Protectors: Muslim-Christian Relations in Eastern Anatolia During World War I",
+      "type": "book",
+      "url": null,
+      "year": 2006
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 1,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
+        "Richard C. Hall"
+      ],
+      "doi": null,
+      "id": "hall-2000-balkan-wars",
+      "isbn": "0415229464",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Routledge",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Balkan Wars, 1912–1913: Prelude to the First World War",
+      "type": "book",
+      "url": null,
+      "year": 2000
+    },
+    {
       "accessed": "2026-09-16",
       "aliases": [],
       "authors": [
@@ -872,6 +1036,47 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "citationCount": 1,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
+        "Hans Mommsen"
+      ],
+      "doi": null,
+      "id": "mommsen-1996-rise-and-fall-of-weimar-democracy",
+      "isbn": "0807847216",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "University of North Carolina Press",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Rise and Fall of Weimar Democracy",
+      "type": "book",
+      "url": null,
+      "year": 1996
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "citationCount": 3,
       "created": "2026-09-03",
       "creators": [
@@ -1096,6 +1301,47 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "citationCount": 1,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
+        "Eliezer Tauber"
+      ],
+      "doi": null,
+      "id": "tauber-2014-arab-movements-world-war-i",
+      "isbn": "9781135199784",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Routledge",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Arab Movements in World War I",
+      "type": "book",
+      "url": null,
+      "year": 2014
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "citationCount": 189,
       "created": "2026-09-02",
       "creators": [
@@ -1160,6 +1406,47 @@
       "type": "primary",
       "url": null,
       "year": 2016
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 2,
+      "container": null,
+      "created": "2026-09-21",
+      "creators": [
+        "Anthony F. Upton"
+      ],
+      "doi": null,
+      "id": "upton-1980-vallankumous-suomessa",
+      "isbn": "9512620227",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Gummerus",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Vallankumous Suomessa 1917–1918, I",
+      "type": "book",
+      "url": null,
+      "year": 1980
     },
     {
       "accessed": null,

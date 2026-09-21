@@ -2490,6 +2490,13 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -2907,6 +2914,13 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3143,6 +3157,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "confidence",
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3289,6 +3311,13 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3314,6 +3343,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "confidence",
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3332,6 +3369,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "confidence",
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3341,6 +3386,14 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "confidence",
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3366,6 +3419,13 @@
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
