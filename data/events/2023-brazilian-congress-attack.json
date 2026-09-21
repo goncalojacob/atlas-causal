@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "2023-brazilian-congress-attack",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge, and it is the one retraction of this batch that a Portuguese-language atlas should mind. The English article, at revision 1372449713, gives the attack's causes as \"false allegations of electoral fraud in the 2022 Brazilian general election promoted by former President Jair Bolsonaro and his allies\" and \"denial of the 2022 presidential election results\", and its § Background is the 2022 election and the January 6 United States Capitol attack of 2021. **The atlas holds `the-2018-brazilian-general-election` and not the 2022 one**, and neither the 2022 election nor the Capitol attack is a record here. The article does link the rioters' call for a \"military intervention\" to the coup of 1964, but as a gloss on a phrase rather than as a claim about influence, and an edge read off a wikilink target is not an edge read off a sentence. It waits on the 2022 Brazilian general election, which is a one-row gap a later batch can close."
+  },
+  "wikidata": "Q116142348",
+  "wikipedia": {
+    "en": "8 January Brasília attacks",
+    "pt": "Ataques de 8 de janeiro em Brasília"
+  },
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q116142348"
+    }
+  ],
+  "title": "2023 Brazilian Congress attack",
+  "summary": "Wikidata item Q116142348, imported by tools/import/wikidata.mjs. The item's own description reads \"storming of government buildings in Brasília\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2023,
+    "end": 2023,
+    "date": "2023-01-08"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

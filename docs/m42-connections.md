@@ -2774,6 +2774,186 @@ unreachable count rising by two is the same two records said another way. This
 is the honest shape of a sweep that opens a region the atlas has never had:
 the component does not move, a fragment does, and the run says which.
 
+## 2p. Batch 16 — the worst yield of the run, and what it is telling the rule
+
+**Sixteen rows ticked, fifteen created and one refused at the class table, six
+kept and nine retracted, seven edges, one filing.** Corpus +6, component +4,
+Horn fragment 4 → 6. **Six of sixteen is the lowest keep rate of any sweep
+batch**, against twelve, twelve and nine before it, and the reason is not bad
+luck: §5's pool has been walked down from 1,586 to 1,143 over ten batches and
+what is left at the top of it by sitelinks is increasingly **instruments and
+very recent events**, which are the two classes this atlas has nothing to join.
+
+`Q1366688`, the Trans-Pacific Partnership, was refused at the class table —
+its one class `Q252550` is not in `data/imports/wikidata-seeds.json` and none
+was added, which is deviation 1005 — and four of the nine retracted are
+instruments: the ADR road-haulage agreement, the African Charter, the UN
+Convention Against Corruption, and, at one remove, the Treaty of Lhasa. **That
+is eight instruments this milestone has now retracted on arrival**, and §7.4's
+environment-shaped hole is the general case of it: *an instrument that decided
+nothing this corpus holds has nothing here to be joined to.*
+
+### The edges
+
+Seven. Four run into the main component and three into the Horn.
+
+#### `eritrean-war-of-independence --precondition-of--> ethiopian-civil-war`
+
+*"Ethiopian Civil War"*, revision 1375950588: **"groups like the Eritrean
+Peoples Liberation Front (EPLF) and the Western Somali Liberation Front (WSLF)
+had already been fighting against the Ethiopian Empire in the northern Eritrean
+War of Independence and southern Ogaden insurgency"**, and the Derg "used large
+scale counterinsurgency military campaigns and the Qey Shibir (Red Terror) to
+repress the rebels". *"Eritrean War of Independence"*, revision 1374058781,
+files itself under the civil war in turn — its infobox reads "part of
+Opposition to Haile Selassie, **the Ethiopian Civil War**, the Cold War, the
+Sino-Soviet split, the conflicts in the Horn of Africa, and the Revolutions of
+1989" — but it begins in 1961 and the civil war in 1974, so it is a precondition
+of it and **no `parent` was written**, a child dated outside its parent being a
+warning rule 24 would raise.
+
+#### `eritrean-war-of-independence --precondition-of--> eritrean-ethiopian-war` and `ethiopian-civil-war --precondition-of--> eritrean-ethiopian-war`
+
+*"Eritrean–Ethiopian War"*, revision 1372677015, § lead, one sentence carrying
+both: **"from 1961 until 1991, Eritrea fought a 30-year war of independence
+against Ethiopia; during this period, the Ethiopian Civil War also began on 12
+September 1974, when the Derg staged a coup d'état against Emperor Haile
+Selassie. Both conflicts lasted until 1991 when the Ethiopian People's
+Revolutionary Democratic Front (EPRDF) – a coalition of rebel groups led by the
+Tigray People's Liberation Front (TPLF) – overthrew the Derg government, and
+installed a transitional government in the Ethiopian capital Addis Ababa."**
+Eritrea's independence is what made the border of 1998 a border between states,
+and the governments on both sides of it in 1998 are the two that won in 1991.
+Both edges are `precondition-of` and claim no motive: the article gives the
+war's own cause as the border and the town of Badme.
+
+**The Horn fragment is now six** — the Eritrean war of independence, the
+Eritrean–Ethiopian war, the Ethiopian civil war, the Tigray war, the Ogaden war
+and the Somali civil war — and §2o's reading is unchanged and now better tested:
+importing the record its infobox named grew the fragment and did not join it, as
+§2o said it would. **It is the largest fragment in the atlas**, past the Sudanese
+five. What all six wait on is the same thing: a page that argues a line from the
+Horn to anything else this corpus holds, and none of the six articles has one.
+
+#### `heligoland-zanzibar-treaty --precondition-of--> zanzibar-revolution`
+
+*"Zanzibar Revolution"*, revision 1375266442, § Background, which names the
+treaty: Zanzibar was "formally separated from German East Africa in 1890" and
+"had become fully independent in 1963… as a result of Britain giving up its
+protectorate over it", and, again, **"in 1890 during Ali ibn Sa'id's reign,
+Zanzibar became a British protectorate after the Heligoland–Zanzibar Treaty
+separated British and German territory in Central Africa during the Scramble
+for Africa"**. What the revolution of 12 January 1964 overthrew was the Sultan
+the protectorate had left in place a month before, the Arab minority having
+"succeeded in retaining the hold on power it had inherited" through the
+elections that preceded independence. Seventy-four years is a long edge and the
+article is what makes it one. `heligoland-zanzibar-treaty` is a batch 10 import
+and `anglo-zanzibar-war` a batch 10 reinstatement; this is the third record of
+that cluster and the first since.
+
+#### `spanish-civil-war --caused--> spanish-revolution`
+
+*"Spanish Revolution of 1936"*, revision 1369913897, § lead: it **"was a social
+revolution that began at the outbreak of the Spanish Civil War in 1936,
+following the attempted coup to overthrow the Second Spanish Republic and arming
+of the worker movements and formation of militias to fight the Nationalists"**,
+and featured "takeover of power at local levels by the Spanish workers'
+organizations and social movements, seizure and reorganization of economic
+facilities directed by trade union groups and local committees". Its infobox
+reads "part of the Spanish Civil War" and its end is the war's — "end of
+revolutionary management principles with the victory of the Nationalists and the
+dissolution of the Republic" — so it is filed under the war as well as edged
+from it.
+
+#### `white-revolution --precondition-of--> iranian-revolution`
+
+*"White Revolution"*, revision 1364402941. The article ends the White Revolution
+at the revolution that overthrew its author — the reforms were "launched on 26
+January 1963 by the Shah, Mohammad Reza Pahlavi, and **ended with his overthrow
+in 1979**" — and names who they turned against him: **"the revolution also
+aroused the antagonism of the *Ulama* (Islamic clergy) led by Ruhollah Khomeini,
+the future leader of the 1979 Islamic Revolution, who opposed the erosion of
+their traditional bases of power"**, together with "a high failure rate for new
+farms and an exodus of agricultural workers to Iran's major cities". It adds
+that the criticism came "from two main groups: the clergy, and the landlords".
+`precondition-of`: the article says the reforms made the opposition that later
+led the revolution, not that they caused it.
+
+#### `french-conquest-of-morocco --reacted-to--> rif-war`
+
+The conquest's own article — *"French conquest of Morocco"*, revision
+1374837625 — carries the Rif war as a section of itself and describes it as a
+reaction: **"Sultan Yusef's reign, from 1912 to 1927, was turbulent and marked
+with frequent uprisings against Spain and France. The most serious of these was
+a Berber uprising in the Rif Mountains, led by Abd el-Krim**, who managed to
+establish a republic in the Rif. Though this rebellion began in the
+Spanish-controlled area in the north, it reached the French-controlled area. A
+coalition of France and Spain finally defeated the rebels in 1926." The Rif
+war's own article agrees on the ground: the Spanish advance "began in 1911 with
+the Larache landing", and after the Treaty of Fez "the northern Moroccan area
+was adjudicated to Spain as a protectorate. The Riffian populations strongly
+resisted the Spanish." **`rif-war` is not filed under the conquest** although
+1911–1927 falls inside 1907–1937: the rising was principally against Spain and
+the record here is of the *French* conquest, which is exactly the arguable case
+M62 §3 says to list rather than file. `french-conquest-of-morocco` is a batch 14
+import and this is its second edge.
+
+### The nine retracted, and what each waits for
+
+| record | what its article argues, and what is missing |
+| --- | --- |
+| `treaty-of-lhasa` | Revision 1305728166: signed "following the British expedition to Tibet of 1903–1904… and was followed by the Anglo-Chinese Convention of 1906", neither a record here, with Younghusband's purpose framed as the Great Game. `british-russian-convention` of 1907, which this atlas holds and which settled Tibet between the two empires, **is not mentioned at all**. Waits on the British expedition to Tibet |
+| `1893-franco-siamese-crisis` | Revision 1374343940 argues out of French Indochina's expansion up the Mekong and forward to the Franco-Siamese treaty of October 1893. The atlas holds nothing of mainland Southeast Asia before `first-indochina-war` of 1946. Waits on any Siamese or Indochinese neighbour |
+| `agreement-concerning-the-international-carriage-of-dangerous-goods-by-road` | Revision 1363643181 is an account of what the 1957 agreement classifies and how its annexes are revised, and argues it out of nothing at all. §7.4's reason applied to a road-haulage treaty |
+| `african-charter-on-human-and-peoples-rights` | Revision 1308579780 traces the charter to a 1979 Organisation of African Unity decision; the OAU is not a record here. Waits on a record of African decolonisation or of the OAU |
+| `united-nations-convention-against-corruption` | Revision 1348358226, forty kilobytes on chapters, review mechanism and states parties; no event this atlas holds appears in it |
+| `sierra-leone-civil-war` | Revision 1375466974 files it under "the West African Crisis and **spillover of the First and Second Liberian Civil Wars**", with Charles Taylor's Greater Liberia a combatant. No Liberian record here, and the article does not mention `mali-war`, the atlas's one West African record of the period. Waits on the First Liberian Civil War |
+| `libyan-civil-war-q16911838` | **The surprise of the batch.** Revision 1374738410, two hundred and twenty-six kilobytes, has a background section titled "Background of discontent with General National Congress" and argues the war of 2014 out of the GNC elected in 2012, the failure of its parties to compromise, the political isolation law and the extension of its own mandate — and **never argues a line back to the war of 2011**, which this atlas holds. The only mention of it is a hatnote distinguishing two articles, and a hatnote is not a claim. Waits on a page that argues the second Libyan war out of the first |
+| `myanmar-civil-war` | Revision 1375700231: the war "began following the military coup on 1 February 2021", and the older insurgencies go back to the 1962 coup and the 8888 uprising. The atlas holds nothing at all of Burma or Myanmar. Waits on the 2021 coup |
+| `2023-brazilian-congress-attack` | **The one a Portuguese-language atlas should mind.** Revision 1372449713 gives the causes as "false allegations of electoral fraud in the 2022 Brazilian general election promoted by former President Jair Bolsonaro and his allies", and its § Background is that election and the January 6 Capitol attack of 2021. This atlas holds `the-2018-brazilian-general-election` **and not the 2022 one**. The article does link the rioters' call for a "military intervention" to the coup of 1964, but as a gloss on a phrase rather than as a claim about influence, and an edge read off a wikilink target is not an edge read off a sentence. Waits on the 2022 Brazilian general election, which is a one-row gap a later batch can close |
+
+### The five left main and the one filed
+
+`spanish-revolution` is filed under `spanish-civil-war`: 19 July 1936 onwards is
+inside 1936-07-18 to 1939-04-01, the article's own infobox says "part of the
+Spanish Civil War", and the militias and workers' organisations that made it are
+the Republic's side of the war. It names neither an actor nor a place, so the
+filing is made on the record's context, which is amendment A1 of
+`docs/m67-umbrellas.md` and this paragraph is the note it requires. **No actor
+line was invented.**
+
+The other five are top-level and carry `actors: []`:
+`eritrean-war-of-independence`, `eritrean-ethiopian-war`, `zanzibar-revolution`,
+`white-revolution` and `rif-war`. The first would want the Ethiopian civil war
+and is dated thirteen years before it; the second would want the Horn's own
+period and there is none; `zanzibar-revolution` and `white-revolution` are
+nobody's part here; and `rif-war`'s case is argued above.
+
+`docs/m53-polities.md` §4.1 accordingly moves to **306 of 451**.
+
+### What batch 16 did to the graph
+
+| | before | after |
+| --- | --- | --- |
+| active events | 445 | **451** |
+| main | 343 | **348** |
+| filed under a parent | 102 | **103** |
+| active edges | 539 | **546** |
+| largest connected component | 420 | **424** |
+| components | 12 | **12** |
+| active events with no edge | 3 | 3 |
+| unreachable from any Portuguese event | 17 | 19 |
+
+**Six and four**, with the missing two in the Horn again. Read across batches 13
+to 16 the sweep's yield is **twelve, twelve, nine, six**, and the fall is what
+§5's ordering does as the pool is walked down: sets 3 and 4 rank by sitelinks
+and by thin decades, and once the rows a corpus of 450 records has a neighbour
+for are spent, what the ranking keeps offering is treaties nobody here signed
+and wars in countries this atlas has never held. **That is not an argument for
+changing the rule** — it is the rule reporting the shape of the corpus, which is
+what it is for — but it is the number a run should plan its hour against:
+**about half a sweep batch now.**
+
 ## 3. The main count, and why it moved up
 
 Amendment A3: an import that leaves the main count higher than it found it has

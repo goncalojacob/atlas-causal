@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ethiopian-civil-war--eritrean-ethiopian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eritrean–Ethiopian War\", revision 1372677015, § lead"
+    }
+  ],
+  "from": "ethiopian-civil-war",
+  "to": "eritrean-ethiopian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same sentence carries the other half: the civil war \"also began on 12 September 1974… Both conflicts lasted until 1991 when the EPRDF – a coalition of rebel groups led by the TPLF – overthrew the Derg government, and installed a transitional government in the Ethiopian capital Addis Ababa. **During the civil war, the groups fighting the Derg** \" were allies, and the governments of 1998 on both sides of the border are the two that won it. The edge is `precondition-of` and claims no motive: the article gives the war's own cause as the border and Badme, not as anything the civil war decided.",
+  "dispute": null
+}

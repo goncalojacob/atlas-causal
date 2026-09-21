@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "white-revolution--iranian-revolution--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"White Revolution\", revision 1364402941, § lead and § Opposition"
+    }
+  ],
+  "from": "white-revolution",
+  "to": "iranian-revolution",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article ends the White Revolution at the revolution that overthrew its author — the reforms were \"launched on 26 January 1963 by the Shah, Mohammad Reza Pahlavi, and **ended with his overthrow in 1979**\" — and names who they turned against him: **\"the revolution also aroused the antagonism of the *Ulama* (Islamic clergy) led by Ruhollah Khomeini, the future leader of the 1979 Islamic Revolution, who opposed the erosion of their traditional bases of power\"**, together with \"a high failure rate for new farms and an exodus of agricultural workers to Iran's major cities\". It adds that the criticism came \"from two main groups: the clergy, and the landlords\". The edge is `precondition-of`: the article says the reforms made the opposition that later led the revolution, and does not say they caused it.",
+  "dispute": null
+}
