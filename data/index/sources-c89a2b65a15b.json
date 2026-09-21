@@ -863,7 +863,6 @@
       "container": {
         "issue": "2",
         "kind": "journal",
-        "pages": null,
         "title": "Journal of Latin American Studies",
         "volume": "2"
       },
@@ -1753,11 +1752,9 @@
       ],
       "citationCount": 1,
       "container": {
-        "issue": null,
         "kind": "edited-volume",
         "pages": "30-34",
-        "title": "Barbados: Just Beyond Your Imagination",
-        "volume": null
+        "title": "Barbados: Just Beyond Your Imagination"
       },
       "created": "2026-09-21",
       "creators": [

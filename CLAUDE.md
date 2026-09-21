@@ -239,6 +239,7 @@ tools/serve.mjs            the local server: the repository, plus PUT /__records
 tools/lib/store.mjs        the server's atlas between saves: the save queue, the topology patched as each save lands, the index rebuilt behind the answer
 tools/bundle-to-files.mjs  issue body → data/<kind>s/<id>.json; ids slug-checked before any path
 tools/lookup-sources.mjs   what the catalogues say a DOI or ISBN names; a review aid, never a gate
+tools/m72-sources.mjs      how many sources each active edge names, how many distinct authors they have, and how many citations carry a locator; both tables of `docs/m72-sources.md` are its output, so the one after the run is the same question as the one before it and not a retyping. `--json` for a script
 tools/overlap.mjs          how much of two presences' ground is the same, as intersection over the area of the smaller. A sweep by lines of latitude: the crossings of every ring give longitude intervals by parity, weighted by cos(lat). No projection and no library, because measuring that two outlines cover the same land is reading two records and not deciding between them (M51)
 tools/m51-overlaps.mjs     the 26 pairs at the 1885/1886 seam through that measure, as the table `docs/m51-overlaps.md` carries; `--json` for the test that holds the file to the ground. Finds its presences by id, never by their `actor` field, which a join rewrites
 tools/lib/span.mjs         the sentence a Historical Basemaps summary carries about its own interval, and where it points once a join or a cited dissolution moves the end it describes
