@@ -14751,6 +14751,181 @@ which is what they should be at the scale the atlas opens at.
      on the real dataset beside the other four.
 
 
+## M74 — the graph frames the walk it is asked to show
+
+Found by M42 (deviation 986 of lane B, which numbers from 950) and paid for
+here. Lane A's sixth milestone, on the branch `m74` (`docs/run-protocol.md`,
+amendment of 21 September).
+
+Reading a narrative is a lens (M48): the three views draw the walk, dim its
+neighbours and hide the rest (M65). On the map and the timeline that held. **On
+the graph it did not.** The graph opens zoomed in to a rectangle and draws only
+what falls inside it — I6's cull, which is what stopped it building 24,310
+elements for a picture two thirds of which is off the screen — and where the
+layout puts a walk is a fact about the arrangement, not about the reader's
+choice. M42's new edges moved the arrangement and the colonial-war narrative
+lost most of its steps; its fire measured that in a `before` worktree and
+excepted the graph from `tests/lens-browser.test.mjs` rather than loosen the
+rule, and said so. **That exception is gone.**
+
+### The rule: at rest the window, with a lens the lens
+
+One function decides where the camera starts, and it asks one question.
+
+**At rest it is the window and nothing else**, exactly as it has been since
+deviation 54: a reader arriving on a narrow band should not have to hunt for
+it, so the first drawing zooms to the band, capped at `FIT_ZOOM`, and a window
+that is more than `FIT_SHARE` of the data is not zoomed to at all. Nothing
+about that changed — not the cap, not the share, not the centring. The atlas
+opens on 1900–1999, which is a fifth of its extent, so the resting graph opens
+at ×2 on that band, as it did.
+
+**With a lens on it is the lens.** `src/graph-view/frame.js` is the whole of
+the arithmetic and is pure: the bounds of a set of nodes, and the transform
+that puts those bounds inside the rectangle the reader can see. The view hands
+it the lens **widest first** — everything the lens draws, then the focus alone
+— and the rule is one sentence: *the widest set that fits is the one framed,
+and the narrowest is the fallback.* So an event chosen with a small ring is
+framed with its ring; the colonial-war walk, whose thirty-seven events will not
+fit, is framed on its twelve steps; and where even the focus is larger than the
+pane the zoom is clamped to `MIN_ZOOM` — as far out as the graph goes and no
+further, which is the frame saying nothing about what is outside it rather than
+pretending to contain it. The cap is `FIT_ZOOM` again, so opening on a walk and
+opening on a narrow band go as far in as each other: a lens of one event does
+not throw the reader to the bottom of the well.
+
+The room left around the frame is `SELECTED_RADIUS + RING_GAP + RING_WIDTH`,
+which is the widest a mark is drawn with its ring and that ring's stroke. It is
+in the SVG's own units because that is what a mark measures in at any zoom —
+the radius is divided by `k` and the viewport multiplies by it — so a node
+framed at the very edge of the rectangle would be a node half off the screen.
+**No new hex value, token or type size**, and no new number: every constant in
+the frame is one the view already had.
+
+**No change to the layout.** `layout.js` decides where a node goes; this
+decides where the camera starts, and `lanes.js`, `cluster.js` and `emphasis.js`
+were not touched. **The URL carries no camera.** A link to a narrative opens on
+its walk because the walk is the lens, not because a zoom was written into it,
+and a reader's own pan and zoom stay out of the URL as they always have.
+
+When the lens changes, or when an arrangement of the same lens changes — a
+narrative's step moving the band under its own walk — the camera frames again.
+When the lens goes away the camera goes back to the window. A pan, a zoom, a
+click inside the lens: nothing.
+
+### What first paint costs
+
+**Nothing measurable, and by construction nothing at all at rest.** The frame
+runs only when a lens is on; with none, the function reads a cached working set,
+compares one string and calls the same `fitToWindow` the view has always called.
+
+Measured anyway, in a `before` worktree at the claim commit, as three rounds of
+nine loads of `?view=graph` on this machine, reading the page's own clock at the
+moment the first mark is in the document:
+
+| | round 1 | round 2 | round 3 (order reversed) |
+| --- | --- | --- | --- |
+| before | 283 ms | 295 ms | 302 ms |
+| after | 290 ms | 303 ms | 301 ms |
+
+The gap in the first two rounds is the order — `before` ran first in both — and
+it closes when the order is reversed. The spread within a single round is
+268–394 ms. The two are indistinguishable.
+
+### Two things the framing found
+
+**The graph kept what may never be swallowed by a stack under the state
+object.** Two of the things a lens is built from arrive *after* the state does:
+a narrative's steps come with their century, an actor's ground with its own
+file, and `lensView` knows to answer again when they land. This cache did not.
+The answer computed before the walk existed stood for the rest of the session,
+so **eighteen of the walk's thirty-seven events were inside stacks that M25's
+rule says may never hold one** — and a step inside a stack is not drawn at all,
+which no amount of framing would have fixed. It is keyed on the working set
+now, which `workingSet` replaces exactly when the answer changes.
+
+**And a frame can go stale.** The rectangle it is computed against is measured
+once and kept — asking the browser for it inside a wheel notch is a forced
+layout of the whole picture — and the first drawing of a view lands before the
+pane has settled, because the masthead wraps and the panel takes its remembered
+width. A walk framed to a pane thirty pixels taller than the one it ends in
+loses its outermost steps off the bottom: **the lens test passed in an 800 × 600
+window and would have failed in a 1440 × 900 one.** What was measured is part of
+the frame's key now, so the observer that throws the measurement away is acted
+on, and `tests/m74-browser.test.mjs` asserts it at two sizes.
+
+### The pictures
+
+`docs/screens/m74-graph-walk.png` is the owner's twelve-step argument about how
+the colonial war ended the regime, on the view that was losing it: every step
+on the screen, and nothing in the query saying where the camera is — `?narrative=`
+is the whole of the state. `docs/screens/m74-graph-rest.png` is the same view
+with nothing asked of it, on the window `m60-graph` and `m65-graph-rest` were
+taken at, and is the picture this milestone promises not to have touched. The
+walk is a narrow column because the graph's x is a scale over the whole corpus
+and the walk is fifteen years of it; that is the room the layout gives it, and
+the alternative — the zoom it used to open at — is the one that cut it in half.
+
+### What was run
+
+`tests/m74.test.mjs` (6) and `tests/m74-browser.test.mjs` (3), written before
+the behaviour they judge, and the graph's exception removed from
+`tests/lens-browser.test.mjs` first so that the suite was red for the right
+reason. No test pins a count and none pins a pixel. `node --test`: **1,674 pure
+and 218 browser, 1,892 in all, 0 failed and 0 skipped**, the browser suites one
+at a time as the check runs them. `node tools/validate.mjs --index`: **10,653
+records, 5 regions, 0 errors, 238 warnings**, byte-identical to a fresh build —
+nothing under `data/` changed at all, so no record was touched and no historical
+claim written.
+
+### Deviations
+
+990. **A cache this milestone does not name had to be fixed before its first
+     test could pass.** The brief is about where the camera starts, and a step
+     inside a stack is not on the screen wherever the camera is: eighteen of
+     the walk's thirty-seven events were in stacks because the graph's `alone`
+     set was keyed on the state object and a narrative's steps arrive after
+     the state does. It is three lines in `graph-view.js`, it touches neither
+     `cluster.js` nor `emphasis.js`, and without it "reading a narrative draws
+     every step of the walk on the graph" could not hold. Written up above
+     rather than left as a silent fix, because it is a defect of its own and
+     older than M42.
+
+991. **The frame's key carries the rectangle it was measured against, which the
+     brief does not ask for and the milestone does not work without.** Keying
+     on the pane's size read live off the element was tried first and is not
+     enough: the size is live and the measurement is cached, so a redraw
+     between the resize and the observer's own callback framed against a stale
+     rectangle under a fresh key and the next callback found nothing to do.
+
+992. **`tests/m74-browser.test.mjs` has a third test the brief's list does not
+     name.** §4 names three and they are all here; the third file-level test is
+     the pane that changes size, and it is there because the case above passed
+     at one window size and failed at another. One size is not a test of a
+     frame.
+
+993. **Leaving a lens puts the camera back on the window, which is a change the
+     brief does not name.** The camera follows the question: a lens arriving
+     frames it, and a lens leaving gives back the picture the window asks for.
+     The alternative — leaving the camera wherever the lens had put it — would
+     hand the reader the whole atlas seen through a rectangle cut for something
+     they have just closed. `leaving the narrative gives the atlas back` holds
+     either way; this is the reading that makes its name true.
+
+994. **The screenshots were taken with `--only`, twice, and no other picture
+     was rewritten.** The brief asks for every other picture to be restored
+     after the run; taking two by name restores nothing because nothing else is
+     written. `git status` after the run listed the two new files and no
+     modified png.
+
+995. **The tests were committed before the behaviour and the two commits were
+     pushed together, so the branch was never red on the remote.** The run
+     protocol asks for green at every commit and deviations 711 and 717 ask for
+     the tests to come first; the history has the order and the check has never
+     seen the red half. The suite was red locally in between, which is where it
+     was meant to be.
+
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
