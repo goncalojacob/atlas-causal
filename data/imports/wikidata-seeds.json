@@ -705,7 +705,19 @@
     "Q208688",
     "Q239768",
     "Q256608",
-    "Q309204"
+    "Q309204",
+    "Q5167679",
+    "Q382861",
+    "Q4390259",
+    "Q181533",
+    "Q815436",
+    "Q541191",
+    "Q129053",
+    "Q49106",
+    "Q29198",
+    "Q12055176",
+    "Q207950",
+    "Q13582"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -720,7 +732,19 @@
     "Q83085": "asia",
     "Q82664": "asia",
     "Q186284": "europe",
-    "Q464399": "europe"
+    "Q464399": "europe",
+    "Q5167679": "europe",
+    "Q382861": "europe",
+    "Q4390259": "europe",
+    "Q181533": "europe",
+    "Q815436": "europe",
+    "Q541191": "europe",
+    "Q129053": "asia",
+    "Q49106": "asia",
+    "Q29198": "africa",
+    "Q12055176": "africa",
+    "Q94916": "africa",
+    "Q207950": "africa"
   },
   "queries": [
     {
@@ -3616,6 +3640,60 @@
       "kind": "event",
       "label": "project of referendum",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q18603729": {
+      "kind": "event",
+      "category": "other",
+      "label": "dissolution of an administrative territorial entity",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q1886460": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "revolutionary wave",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q766875": {
+      "kind": "event",
+      "category": "war",
+      "label": "ethnic conflict",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q474138": {
+      "kind": "event",
+      "category": "war",
+      "label": "war of aggression",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q518554": {
+      "kind": "event",
+      "category": "other",
+      "label": "partition",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q3774758": {
+      "kind": "event",
+      "category": "war",
+      "label": "sectarian violence",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q1753200": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "intifada",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q18564543": {
+      "kind": "event",
+      "category": "other",
+      "label": "international conference",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q1219394": {
+      "kind": "event",
+      "category": "election",
+      "label": "independence referendum",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
     }
   },
   "reconcile": true

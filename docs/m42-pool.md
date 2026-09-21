@@ -167,3 +167,82 @@ asked for it.
 M46's in two batches; deviation 442 is the six-hour runner that stopped this
 repository for a day. Batches are sized to the same shape and each is merged,
 indexed, validated and pushed before the next.
+
+## 6. Batch 2's seeding — the hinges, pointed at by name
+
+The tick rule of §5 is what picks volume out of the sweep. It is not what
+picks the hinges, and the reason is worth writing down: **the sweep does not
+carry them.** Applying §5's set 1 to the committed sweep finds five of the
+sixteen named neighbours and misses the dissolution of the Soviet Union, the
+revolutions of 1989, the breakup of Yugoslavia, the Bosnian war, the partition
+of India, the Arab Spring, the Egyptian revolution of 2011 and the Troubles.
+M44b said exactly this when it retracted the Romanian revolution: those
+records "are on the brief's list of twelve named neighbours that the committed
+candidate list does not carry because their Wikidata classes are not among the
+queries'."
+
+`data/imports/wikidata-seeds.json` → `items` is the answer the tool already
+has. It is "the items, queries and class table the Wikidata import is pointed
+at" and it is contributor-editable; M44a added 111 ids to it from ticks, and
+naming an item by its id is the same act with the intermediate step removed.
+**Twelve ids were resolved against Wikidata itself and added**, never guessed
+from a label in a markdown table — which matters: matching *"Berlin
+Conference"* by substring in the sweep returns `Q4892411`, a diplomatic
+conference of 1954, and not `Q13582`, the conference of 1884 on the partition
+of Africa.
+
+| item | what it is | sitelinks | lane |
+| --- | --- | --: | --- |
+| `Q5167679` | dissolution of the Soviet Union | 90 | europe |
+| `Q382861` | Revolutions of 1989 | 64 | europe |
+| `Q4390259` | breakup of Yugoslavia | 57 | europe |
+| `Q181533` | War in Bosnia and Herzegovina | 80 | europe |
+| `Q815436` | The Troubles | 62 | europe |
+| `Q541191` | Anglo-Irish Treaty | 48 | europe |
+| `Q129053` | partition of India | 81 | asia |
+| `Q49106` | Second Intifada | 48 | asia |
+| `Q29198` | 2011 Egyptian revolution | 73 | africa |
+| `Q12055176` | Angolan Civil War | 49 | africa |
+| `Q207950` | 2011 South Sudanese independence referendum | 40 | africa |
+| `Q13582` | Berlin Conference | 71 | — |
+
+A lane is **where the event happened and not what it was about**, and it is a
+display fact: which row of the timeline a bar sits in. `Q13582` takes none
+here, because the conference sat in Berlin and was about Africa and this run
+will not settle that with a table entry; the import derives it from the item's
+own point or refuses it, and a refusal is listed.
+
+**The one entry a reader should argue with is `Q5167679`.** The dissolution of
+the Soviet Union is the case deviation 447 left open — ground that spans two
+lanes — and it is given `europe` because every Soviet and Russian event this
+atlas already draws is in `europe`: the February and October revolutions, the
+civil war, the Molotov–Ribbentrop pact, Katyn, the war in Ukraine. Consistency
+with the corpus, not a judgement about where the Soviet Union was. It is one
+line in `lanes` to undo.
+
+**`Q33761`, the Arab Spring, is not seeded and stays refused**, because it is
+the same open question with no such precedent to follow: it ran across Africa
+and Asia and this atlas has nothing like it. That is the brief's *"refuse and
+list"* (§3), and the cost is named — `syrian-civil-war`, `libyan-civil-war`
+and `2013-egyptian-coup-d-etat` each wait on it and are listed in
+`docs/m42-connections.md` §5. `Q69163529`, the fall of the Berlin Wall, is
+also not seeded: its only Wikidata classes are *historical event* and
+*demolition*, and adding either to the class table would type anything at all.
+The revolutions of 1989 carry that hinge instead.
+
+**Ten classes were added to the class table**, each because a seeded item
+carries it and the table did not: *dissolution of an administrative
+territorial entity*, *revolutionary wave*, *ethnic conflict*, *war of
+aggression*, *partition*, *sectarian violence*, *intifada*, *international
+conference* and *independence referendum*. Every label is Wikidata's own, read
+from the service — which the M40a entries beside them could not do, and each
+of those says so: *"the label is what the candidate list called those items…
+this sandbox has no network to read it with."* Four classes were deliberately
+**not** added — *end cause*, *conflict*, *historical event* and *demolition* —
+because a class that types anything types nothing.
+
+**One cursor rewind**: `Q94916`, the Second Italo-Ethiopian war, is in
+`runs.import.done` with no record, refused on an earlier walk for want of a
+lane. It has one now, so it goes back into the walk — which is M44-0's and
+M46's move, and deviation 546's rule that an item in `done` is silent and an
+item walked again is named in every report.
