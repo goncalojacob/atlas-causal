@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "dissolution-of-the-soviet-union--1993-russian-constitutional-crisis--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dissolution of the Soviet Union\", revision 1375840189, § lead"
+    }
+  ],
+  "from": "dissolution-of-the-soviet-union",
+  "to": "1993-russian-constitutional-crisis",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article on the dissolution says it ended the Soviet Union’s federal government as well as the state. The crisis of October 1993 is a contest over what replaced that government in Russia, and the record’s own retraction said it belongs with the dissolution; it is drawn as a precondition because the article argues no line to it.",
+  "dispute": null
+}

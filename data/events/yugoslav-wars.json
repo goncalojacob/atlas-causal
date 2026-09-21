@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "yugoslav-wars",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -17,15 +17,12 @@
   "origin": {
     "tool": "wikidata"
   },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A, and with the three Yugoslav records M44a imported beside it. The Portuguese edges are there in the history and not in the data: Portugal held the presidency of the Community in the first half of 1992, when José Cutileiro chaired the Lisbon talks on Bosnia, and Portuguese contingents served in the forces that followed Dayton and Kosovo. The atlas holds no record of the 1992 presidency, of the Cutileiro plan or of any Portuguese deployment, so the edge has no Portuguese end. Retracted for the want of it, and the missing records are named in docs/m44-connections.md."
-  },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
   },
   "wikidata": "Q242352",
   "sitelinks": {

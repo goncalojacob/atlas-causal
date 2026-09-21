@@ -94,7 +94,8 @@ A5: a batch that grows the corpus and not the component has to say why.
 | 0 | the fifteen M44b retracted that the new bar puts back, and 18 edges | 325 | 237 | 88 | 380 | **268** | 22 |
 | 1 | seven earlier tombstones — M40b's and M22's — that the new bar reaches, and 7 edges | 332 | 244 | 88 | 387 | **274** | 21 |
 | 3 | the connection pass: 19 edges, both ends on records already here, no import | 332 | 244 | 88 | 406 | **301** | 11 |
-| 4 | the twelve hinges walked, thirteen records, 8 edges | 345 | 256 | 89 | 414 | **315** | 17 |
+| 4 | the twelve hinges walked, thirteen records, 8 edges | 345 | 257 | 88 | 414 | **315** | 17 |
+| 5 | the nine tombstones those hinges unblock, 11 edges, one filing | 354 | 265 | 89 | 424 | **323** | 16 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -251,16 +252,17 @@ item walked again is named in every report.
 
 ## 7. Where the run stands, for the fire that picks it up
 
-Five batches are on `m42` and each was validated, indexed and pushed before
-the next, so a killed run loses a batch and not the milestone.
+Six batches are on `m42` and each was validated, indexed and pushed before the
+next, so a killed run loses a batch and not the milestone.
 
 | | what landed |
 | --- | --- |
 | batch 0 | the fifteen M44b retracted that the new bar puts back, 18 edges |
 | batch 1 | seven earlier tombstones — M40b's and M22's — 7 edges |
 | batch 2a | the twelve hinges seeded, ten classes, twelve lanes, one rewind |
-| batch 3 | the connection pass: 19 edges, no import, largest component 274 → 301 |
+| batch 3 | the connection pass: 19 edges, no import, component 274 → 301 |
 | batch 4 | the hinges walked here: 13 records, 8 edges, component 301 → 315 |
+| batch 5 | the nine tombstones they unblock: 11 edges, one filing, 315 → 323 |
 
 **The Action cannot land an import**, and two runs proved it — §2d of
 `docs/m42-connections.md` has the reading and deviation 987 the short form.
@@ -275,22 +277,23 @@ the records, then the rebuilt index. The history shards are built out of the
 commits that touch each record's file, so the commit that writes a record
 makes the shard describing it stale in that same commit.
 
-**What the next fire does.** Batch 5 is the reinstatements the hinges have
-just unblocked, and §5a and §5b already name them against the record each was
-waiting for: `1991-soviet-coup-d-etat-attempt`,
-`1993-russian-constitutional-crisis`, `budapest-memorandum` and
-`romanian-revolution-1989` on the dissolution and the revolutions of 1989;
-`yugoslav-wars`, `croatian-war-of-independence`, `dayton-agreement` and
-`kosovo-war` on the breakup and the Bosnian war; `good-friday-agreement` on
-the Anglo-Irish treaty and the Troubles; `2013-egyptian-coup-d-etat` on the
-Egyptian revolution of 2011; `gaza-war-2008-2009` on the second intifada;
-`first-italo-ethiopian-war` and `majimaji-war` on the Berlin conference and
-the second Italo-Ethiopian war; `war-in-darfur` and `south-sudanese-civil-war`
-on the South Sudanese referendum. Fifteen records the corpus already holds in
-full, each with an edge its own retraction reason names. Five of batch 4's
-thirteen carry no edge yet and every one of them is waiting on that list, so
-batch 5 is what earns them their place as well.
+**What the next fire does**, in this order:
 
-After it: the fragments §4b names that no import reaches — the Madeiran three,
-the fires pair, the presidential-election singletons — and then the sweep,
-whose 1,586 unwalked rows are untouched.
+1. **The five of batch 4 that carry no edge**, each with a tombstone §5a names
+   against it and each of those tombstones now unblocked by a record in
+   `data/`: `first-italo-ethiopian-war` and `majimaji-war` for
+   `second-italo-ethiopian-war` and `berlin-conference`, `gaza-war-2008-2009`
+   for `second-intifada`, `2013-egyptian-coup-d-etat` for
+   `2011-egyptian-revolution`, and `war-in-darfur` with
+   `south-sudanese-civil-war` for
+   `2011-south-sudanese-independence-referendum`. Ten records, and the
+   sentence that argues each edge is a page nobody here has opened yet.
+2. **The fragments §4b names that no import reaches** — the Madeiran three,
+   the fires pair, the presidential-election singletons, `entente-cordiale`,
+   `iberian-blackout-2025`. The presidential elections are the cheapest.
+3. **The sweep**, whose 1,586 unwalked rows are untouched. §5's tick rule was
+   written before a box was ticked and is still the rule. An import of that
+   size has to be walked here for as long as deviation 987 holds, and each
+   batch has to re-measure `docs/m53-polities.md` §4.1 and name its bare
+   records in this file's §2 — which is what the runner cannot do and a run
+   can.

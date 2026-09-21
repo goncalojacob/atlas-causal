@@ -48,6 +48,7 @@
   },
   "place": null,
   "region": "europe",
+  "parent": "yugoslav-wars",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",
   "actors": []

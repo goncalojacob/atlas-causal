@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "yugoslav-wars--kosovo-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Breakup of Yugoslavia\", revision 1373988162, § lead"
+    }
+  ],
+  "from": "yugoslav-wars",
+  "to": "kosovo-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article on the breakup says the series of inter-ethnic wars affected Kosovo some years after Bosnia and Croatia. \"Some years later\" is the article’s own phrase for the distance between them, and is why the campaign of 1999 is drawn as following the series rather than as caused by any one part of it.",
+  "dispute": null
+}

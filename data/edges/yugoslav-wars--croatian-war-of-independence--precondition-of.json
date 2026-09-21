@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "yugoslav-wars--croatian-war-of-independence--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Breakup of Yugoslavia\", revision 1373988162, § lead"
+    }
+  ],
+  "from": "yugoslav-wars",
+  "to": "croatian-war-of-independence",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same sentence names the neighbouring parts of Croatia among the places the series of wars primarily affected. The record’s dates are the 1991–1995 its own summary carries, which M44c restored after the import gave it two days that were neither the war’s beginning nor its end; whoever reviews it supplies precise dates from a source they have opened, or leaves the years.",
+  "dispute": null
+}

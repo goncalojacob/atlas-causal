@@ -16,6 +16,136 @@ rule 27 makes a retraction on a non-retracted record an error. The reason is
 copied here verbatim, in the same commit, so that the account of the withdrawal
 survives the undoing of it.
 
+### `1991-soviet-coup-d-etat-attempt`
+
+Reinstated on `1991-soviet-coup-d-etat-attempt --caused--> dissolution-of-the-soviet-union`. The neighbour its reason named is now a record.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A. The coup of August 1991 argues to the
+> dissolution of the Soviet Union in December, which is one of the twelve
+> named neighbours the committed candidate list does not hold, and to the
+> Russian records of the 1990s, which reach no Portuguese event. Nothing
+> else in this atlas is within reach of it.
+
+### `1993-russian-constitutional-crisis`
+
+Reinstated on `dissolution-of-the-soviet-union --precondition-of--> 1993-russian-constitutional-crisis`. The reason said it "belongs with the dissolution of the Soviet Union", and the dissolution is here.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A. October 1993 belongs with the dissolution of
+> the Soviet Union and the Russian 1990s, and this atlas holds neither. The
+> Russian records it does hold — the revolutions of 1917, the civil war, the
+> war in Ukraine — are three hops or more from any Portuguese event
+> themselves, so an edge into them would connect a stranded record to a
+> stranded cluster.
+
+### `budapest-memorandum`
+
+Reinstated on `dissolution-of-the-soviet-union --precondition-of--> budapest-memorandum` and `budapest-memorandum --precondition-of--> russo-ukrainian-war`. The reason said the memorandum argues forward to the Russo-Ukrainian war and that both ends were stranded. The dissolution joins that cluster to the corpus, so neither end is stranded now.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A. The memorandum of 1994 argues forward to the
+> Russo-Ukrainian war of 2014 and to the full-scale war of 2022, which are
+> both records here and both reach no Portuguese event at all; the atlas
+> holds nothing of Portugal and Ukraine, neither the Ukrainian emigration to
+> Portugal after 2001 nor any Portuguese act after February 2022. Wiring the
+> memorandum to two stranded records would have left three where there were
+> two.
+
+### `romanian-revolution-1989`
+
+Reinstated on `revolutions-of-1989 --caused--> romanian-revolution-1989`. Its reason is the clearest statement in the corpus of what this milestone was for: "until a candidates round with the right classes fetches them, 1989 cannot be wired here at all". Batch 2a seeded the class, batch 4 fetched it.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A, and it is the clearest case in the round for
+> owner question 2. December 1989 in Romania is one of the revolutions of
+> 1989 and cannot be argued from anything else, and this atlas holds not one
+> of the others: no fall of the Berlin wall, no round table in Poland, no
+> Czechoslovak November, no German reunification, no dissolution of the
+> Soviet Union. All of those are on the brief’s list of twelve named
+> neighbours that the committed candidate list does not carry because their
+> Wikidata classes are not among the queries’. Until a candidates round with
+> the right classes fetches them, 1989 cannot be wired here at all.
+
+### `yugoslav-wars`
+
+Reinstated on `yugoslav-wars --precondition-of--> breakup-of-yugoslavia`. The bar it was measured against was a Portuguese end, and the bar of this milestone is any end the atlas already holds. The Portuguese records its reason names as missing — the presidency of 1992, the Cutileiro plan, the deployments after Dayton — are still missing, and are still worth writing.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A, and with the three Yugoslav records M44a
+> imported beside it. The Portuguese edges are there in the history and not
+> in the data: Portugal held the presidency of the Community in the first
+> half of 1992, when José Cutileiro chaired the Lisbon talks on Bosnia, and
+> Portuguese contingents served in the forces that followed Dayton and
+> Kosovo. The atlas holds no record of the 1992 presidency, of the Cutileiro
+> plan or of any Portuguese deployment, so the edge has no Portuguese end.
+> Retracted for the want of it, and the missing records are named in
+> docs/m44-connections.md.
+
+### `croatian-war-of-independence`
+
+Reinstated on `yugoslav-wars --precondition-of--> croatian-war-of-independence`. Its dates are the 1991–1995 M44c restored; the two imported days were neither the beginning nor the end of the war and were removed rather than replaced. Whoever reviews it supplies precise dates from a source they have opened.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A, with the Yugoslav cluster, and a second thing
+> should be said about this record while it is being withdrawn: its dates
+> were wrong as imported. It carried a start of 12 November 1995 and an end
+> of 7 August 1995 — the Erdut agreement and the close of Operation Storm —
+> for a war the record’s own cached lead dates from 1991 to 1995. M44c
+> corrected the span to 1991–1995, the two years the record already carried
+> in its own summary, and removed `date` and `endDate` rather than replace
+> them: neither imported date is the war's beginning or its end, and this
+> run had no source it could read for the real ones. A day the atlas has not
+> verified is worse than an honest year. Whoever un-retracts it supplies the
+> precise dates from a source they have opened, if the record wants them at
+> all.
+
+### `dayton-agreement`
+
+Reinstated on `war-in-bosnia-and-herzegovina --caused--> dayton-agreement`. The war it ended is a record as of batch 4, which is exactly what its reason said was missing.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A, with the Yugoslav cluster. Dayton ended the
+> Bosnian war, which this atlas does not hold either — it is one of the
+> brief’s twelve named neighbours that the committed candidate list cannot
+> reach. A peace agreement whose war is missing and whose region reaches no
+> Portuguese record has no edge to carry.
+
+### `kosovo-war`
+
+Reinstated on `yugoslav-wars --precondition-of--> kosovo-war`. The reason asks for "a record of Portugal in NATO after the cold war", and that is still missing and still worth writing. What has changed is that the campaign of 1999 no longer needs a Portuguese end to be argued at all.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A, with the Yugoslav cluster. NATO’s campaign of
+> 1999 is the point at which a Portuguese edge is nearest — Portugal was a
+> member and took part — and the atlas holds Portugal’s signature of the
+> North Atlantic treaty in 1949 and nothing of the alliance afterwards. An
+> edge from 1999 back to 1949 would run against the arrow of time as well as
+> against sense. What is missing is a record of Portugal in NATO after the
+> cold war.
+
+### `good-friday-agreement`
+
+Reinstated on `the-troubles --caused--> good-friday-agreement`. Both records its reason named as missing — the Anglo-Irish treaty and the Troubles — arrived in batch 4.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class B. Its neighbours in this atlas are the Easter
+> Rising and the Irish civil war, and the civil war is itself two hops out,
+> which puts the agreement at three. The records that would shorten the
+> chain are the ones the Easter Rising edge already names as missing — the
+> War of Independence, the Anglo-Irish treaty — and the Troubles, which the
+> atlas does not hold at all. Ireland reaches Portugal here only through the
+> war of 1914, and 1998 is too far along that line.
+
 ### `university-of-porto`
 
 Reinstated by `universities-of-lisbon-and-porto-1911`, which names it in

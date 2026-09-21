@@ -535,15 +535,106 @@ three wars. It carries the subcontinent fragment of five with it.
 
 ### Why the main count went up, which amendment A3 asks
 
-244 main before the import, **256 after**. Thirteen records arrived and twelve
+244 main before the import, **257 after**. Thirteen records arrived and twelve
 of them are main, because a war, a treaty, a partition, a conference and a
 referendum are not part of anything this atlas holds — M62's rule reads
 `actors` and `place` and these have neither, and inventing a parent is as
 forbidden as inventing a line. The one filing the rule does reach, the Bosnian
-war inside the breakup, is refused by the imported date above. The resting
+war, is refused by the imported date above against `breakup-of-yugoslavia`
+and is made in batch 5 against `yugoslav-wars`, whose span holds it. The resting
 picture is twelve events wider than it was, and every one of the twelve is a
 hinge that a later batch files or that a reader meets at the top level, where
 a world war and a partition belong.
+
+## 2e. Batch 5 — the nine tombstones the hinges unblocked
+
+§5a of this file was written before batch 4 and names, for each of the fifty
+M44b withdrew, the record that would bring it back. Batch 4 wrote nine of
+those records, so **this batch is a list the corpus made and not one this run
+chose**: every reinstatement below is a record whose own retraction reason
+names the neighbour that has just arrived, and the edge each carries is the
+edge that reason said could not be written.
+
+`docs/m44-retractions.md` → "Reinstated" carries all nine with the reason each
+was withdrawn under, copied verbatim, which is amendment A11's procedure. Only
+`status`, `review` and `retraction` were touched; not one summary, date, actor
+or source was edited.
+
+**Eleven edges, and one filing.**
+
+- `1991-soviet-coup-d-etat-attempt --caused--> dissolution-of-the-soviet-union`,
+  and `dissolution-of-the-soviet-union --precondition-of--> 1993-russian-constitutional-crisis`.
+  The English article on the dissolution, at revision 1375840189, says the
+  Soviet Union was formally dissolved on 26 December 1991, ending its federal
+  government and Gorbachev's efforts to reform the Soviet political and
+  economic system. The coup is four months before that date; the crisis of
+  October 1993 is a contest over what replaced the government it ended.
+- `dissolution-of-the-soviet-union --precondition-of--> budapest-memorandum`
+  and `budapest-memorandum --precondition-of--> russo-ukrainian-war`. The
+  article on the Russo-Ukrainian war, at revision 1375351069, § Background,
+  says Ukraine gave up the former Soviet nuclear weapons on its territory in
+  1994 and that Russia, the United Kingdom and the United States agreed in
+  return to uphold its territorial integrity and independence through the
+  Budapest Memorandum. The weapons are the ones the dissolution left there.
+  **The memorandum's retraction reason said wiring it to two stranded records
+  "would have left three where there were two"** — and it is the dissolution
+  arriving that makes the cluster no longer stranded.
+- `revolutions-of-1989 --caused--> romanian-revolution-1989`. The article on
+  the revolutions, at revision 1375849372, describes a wave of liberal
+  democratic movements that collapsed most Marxist–Leninist governments in the
+  Eastern Bloc, some violently overthrown. **Its reason is the clearest
+  statement in the corpus of what this milestone is for**: "until a candidates
+  round with the right classes fetches them, 1989 cannot be wired here at all".
+- `yugoslav-wars --precondition-of--> breakup-of-yugoslavia`, and from the wars
+  to `croatian-war-of-independence` and to `kosovo-war`. The article on the
+  wars, at revision 1373953860, says the conflicts both led up to and resulted
+  from the breakup, which began in mid-1991; the article on the breakup, at
+  revision 1373988162, says unresolved issues from it caused a series of wars
+  that primarily affected Bosnia and Herzegovina, neighbouring parts of Croatia
+  and, some years later, Kosovo. **Only the half of the first sentence running
+  from the wars to the breakup can be drawn**, because of the point date
+  deviation 989 describes; the other half waits on a person reading the
+  record's dates.
+- `war-in-bosnia-and-herzegovina --caused--> dayton-agreement`. The article on
+  the Bosnian war, at revision 1375967053, says it ended on 21 November 1995
+  when the Dayton Accords were initialed. This is the edge that gives batch 4's
+  one record with nothing at all its place.
+- `the-troubles --caused--> good-friday-agreement`. The article on the
+  Troubles, at revision 1375596184, says the conflict lasted about thirty years
+  from the late 1960s to 1998 and is usually deemed to have ended with the
+  agreement of that year.
+- **The filing**: `war-in-bosnia-and-herzegovina` is part of `yugoslav-wars`,
+  whose 1991–2001 holds its 1992–1995. Deviation 989's filing refused itself
+  against `breakup-of-yugoslavia`, whose imported point date of 27 April 1992
+  falls after the war began; the Yugoslav wars are the right parent anyway, and
+  they are a record again as of this batch.
+
+### What batch 5 did to the graph
+
+| | before | after |
+| --- | --: | --: |
+| active events | 345 | 354 |
+| main | 257 | 265 |
+| filed under a parent | 88 | 89 |
+| active edges | 414 | 424 |
+| **largest connected component** | **315** | **323** |
+| active events with no edge at all | 17 | 16 |
+
+Nine records back, eleven edges, and the component takes eight of the nine —
+`dayton-agreement` and the Bosnian war arrive together. The main count rises by
+eight because a war, a coup, a crisis and a memorandum are not part of anything
+the atlas holds; the one that is, is filed.
+
+**The six of the fifty still waiting are named in §5a and none of them moved**:
+`rwandan-civil-war`, `arusha-accords` and `second-congo-war` on the Rwandan
+genocide, and the three of M44b's class C that no bar reaches. Five of batch
+4's thirteen still carry no edge and wait on the rest of §5a —
+`first-italo-ethiopian-war` and `majimaji-war` for the two African records,
+`gaza-war-2008-2009` for the second intifada, `2013-egyptian-coup-d-etat` for
+the Egyptian revolution of 2011, and `war-in-darfur` with
+`south-sudanese-civil-war` for the referendum. Every one of those five
+tombstones is now unblocked by a record in `data/`; what they need is the
+sentence that argues each edge, read at a revision, which is the next batch.
 
 ## 3. The main count, and why it moved up
 

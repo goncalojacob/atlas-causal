@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "revolutions-of-1989--romanian-revolution-1989--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolutions of 1989\", revision 1375849372, § lead"
+    }
+  ],
+  "from": "revolutions-of-1989",
+  "to": "romanian-revolution-1989",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the revolutions of 1989 describes a wave of liberal democratic movements that collapsed most Marxist–Leninist governments in the Eastern Bloc, some of which were violently overthrown. December 1989 in Romania is one of that wave, and its own retraction said it could not be argued from anything else because the atlas held none of the others.",
+  "dispute": null
+}
