@@ -1255,40 +1255,26 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 /* The owner, 18 September: "There should be a toggle on the map so I can
    choose the dates instead of a selector." M60 was right to take the strip
    out of the bottom of the map; what it lost is that a year could be swept.
-   So the band comes back over the map, on demand, and never again as
-   furniture.
+   M64 brought the band back over the map, behind a button. The owner,
+   21 September: "The dates two-handled band should not be hidden." So the
+   button is gone and the band is simply there — and never again as furniture.
 
    An overlay and not a row of the grid, which is the whole of "it does not
-   become the strip again": the map pane is the layout's own height open or
-   closed, and a first visit — where nothing below the toggle exists at all —
-   is exactly the picture M60 left. The container takes no clicks so that the
-   map under it is still a map; the toggle and the strip take their own. */
+   become the strip again": the map pane is the layout's own height with the
+   band on it, which is M60's gain and M64's kept together. The container takes
+   no clicks so that the map under it is still a map; the strip takes its own. */
 .map-band {
   position: absolute; inset-inline: 0; top: 0; z-index: 3;
-  display: flex; flex-direction: column; align-items: flex-start;
   pointer-events: none;
 }
 .map-band > * { pointer-events: auto; }
-
-/* The toggle: quiet, in the corner, and the same kind of thing as the export
-   button opposite it — a way to ask for something, not a thing to read. It
-   sits under the band it opens, so the button and the drawing stay together. */
-.map-band-toggle {
-  order: 2; margin: var(--space-3);
-  padding: var(--space-1) var(--space-2);
-  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
-  font-family: var(--font-ui); font-size: var(--text-xs); color: var(--ink-soft); cursor: pointer;
-}
-.map-band-toggle:hover { color: var(--cobalt); border-color: var(--cobalt); }
-.map-band-toggle[aria-expanded="true"] { color: var(--cobalt); border-color: var(--cobalt); }
-.map-band-toggle:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 1px; }
 
 /* The strip itself: the width of the pane, against its top edge, under the
    masthead's two number fields that say the same window in words. Paper rather
    than nothing, so the coastline under it does not read as part of the
    drawing; one hairline to say where it ends. */
 .window-strip {
-  order: 1; display: block; align-self: stretch;
+  display: block; width: 100%;
   background: var(--paper); border-bottom: 1px solid var(--line);
   box-shadow: 0 1px 4px var(--cobalt-faint);
 }
@@ -1299,7 +1285,8 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 
 /* The one thing on the map that must stay above the band: the note saying a
    shard of borders would not load. It is a warning, and a warning behind a
-   control the reader has just opened is a warning nobody reads. */
+   control is a warning nobody reads — the more so since M75, where the band
+   is on the map's top edge on every visit rather than when it is asked for. */
 .map-note { z-index: 4; }
 
 /* A large event over the ground it covers, in place of a mark it has no

@@ -1,45 +1,53 @@
-// The band on the map, on demand.
+// The band on the map, always.
 //
 // The owner, 18 September, after using what M60 built: *"There should be a
-// toggle on the map so I can choose the dates instead of a selector."*
+// toggle on the map so I can choose the dates instead of a selector."* M64
+// built the control and put it behind a button. The owner, 21 September, after
+// using that: *"still don't like the way years are selected when looking at
+// the map, should be more intuitive"* — and, asked what shape the fix should
+// take: **"The dates two-handled band should not be hidden."**
 //
-// M60 was right to stop the timeline permanently eating the bottom of the map,
-// and nothing about that is undone here: the timeline is still a view of its
-// own, the two number fields are still in the masthead, and **a first visit is
-// still the whole pane**. What M60 lost is that a year could be *swept* — you
-// pulled an end and the map answered as you moved, and you could see where the
-// events were while you were choosing. A number field can do neither, because
-// you must already know the year you want.
+// So M75 keeps the control whole and removes the mode around it. The strip is
+// present on the map from first paint, on every visit, with nothing to press
+// and nothing to remember. A reader arrives, sees the years, and drags.
 //
-// So this is a toggle at the top-left corner of the map and a slim strip it
-// opens above it. Three things it must never become:
+// M60 was right and nothing about it is undone: the timeline is still a view
+// of its own, the two number fields are still in the masthead, and **the map
+// pane is still the whole layout**. What M60 lost is that a year could be
+// *swept* — you pulled an end and the map answered as you moved, and you could
+// see where the events were while you were choosing. A number field can do
+// neither, because you must already know the year you want. That is what is
+// back, and now without a door in front of it.
+//
+// Two things it must never become:
 //
 //   * **the strip again.** It is an overlay and not a row of the grid, so the
-//     map pane is the whole layout open or closed; it is dismissed with the
-//     same button that opened it; and it never comes back by itself.
+//     map pane is the layout's own height with the band on it. M64's gain and
+//     M60's, kept together: `tests/m75-browser.test.mjs` measures the pane
+//     against the layout with the band present and not merely when it is away.
 //   * **a second band.** The shade, the handles, their years and every gesture
 //     that moves them are `window-band.js`'s, which is where the timeline's
 //     band went. Two bands that could disagree about one window would be a
 //     worse fault than the one being fixed.
-//   * **a cost at first paint.** Nothing below the toggle exists until the
-//     first time a reader opens it: no scale, no century counts, no
-//     subscription. A reader who never opens it pays for one `<button>`.
+//
+// The cost M64 deferred is now paid at first paint, which is the honest price
+// of the owner's sentence and is named in `STATUS.md` rather than hidden: the
+// century counts, the scale, the four layers and the first drawing.
 //
 // What it draws under itself is `density.js`'s answer over `bandEvents` —
 // **what the atlas is currently showing** and not the corpus (M65). Choosing an
 // event narrows the profile with the picture, which is the honest thing for a
 // strip whose whole job is to say where the events are.
 //
-// The window is URL state and the toggle is not: a link opens on the picture
-// its sender saw, not on whether they had a control open. The toggle is
-// remembered per reader in localStorage, the way the panel's width is
-// (`panes.js`).
+// Nothing here is remembered. The window is URL state, as it always was; there
+// is no control left to be a preference, so `panes.js` keeps only the panel's
+// width and a value an M64 reader's browser still holds is read into nothing
+// (deviation 848's rule).
 
 import { svg, reuse, html } from './util/dom.js';
 import { createTimelineScale } from './timeline-scale.js';
 import { resolveWindow, centuryCounts } from './util/window.js';
 import { renderKey } from './render-key.js';
-import { readBandOpen, writeBandOpen } from './panes.js';
 import {
   HANDLE_WIDTH, bandEvents, bandProfile, bandShade, bandHandles, bindWindowGestures,
 } from './window-band.js';
@@ -48,13 +56,17 @@ import {
 // this is the geometry of a drawing, like the nine pixels of a handle or the
 // eleven of a lane label, and the brief's "no new hex value, token or type
 // size" is about the palette and the type scale (m60-brief §4, and the same
-// reading M60's own density hint was written under). Every colour it is drawn
-// in is a variable in `style.css` and there is no new one.
+// reading M60's own density hint and M64's strip were written under). Every
+// colour it is drawn in is a variable in `style.css` and there is no new one.
 //
 // Forty-four: a row for the two years the handles stand on, and a body deep
 // enough to take hold of with a pointer and to draw the profile in. The whole
-// of "a slim strip the reader dismisses" is this number being small, and the
-// test asserts it against the pane rather than against itself.
+// of "a slim strip over the map" is this number being small, and the test
+// asserts it against the pane rather than against itself. It is the same
+// forty-four on a phone: the strip is now something a thumb must find and
+// hold, and forty-four is what a touch target is (`--touch` is forty) — a
+// slimmer band would be the harder control, not the lighter one, and the
+// measurement is in `STATUS.md`.
 export const STRIP = Object.freeze({
   height: 44,
   // The row the two years are written on, above the band so that a label and a
@@ -70,177 +82,132 @@ export const STRIP = Object.freeze({
 // had from it.
 const MIN_WIDTH = 2 * STRIP.inset + 1;
 
-export function createMapBand(container, {
-  atlas, state, storage = globalThis.localStorage,
-} = {}) {
-  if (!container) return { isOpen: () => false, toggle: () => {}, render: () => {} };
+export function createMapBand(container, { atlas, state } = {}) {
+  if (!container) return { render: () => {} };
 
   const wrap = html('div', { class: 'map-band' });
-  // The strip comes first in the flow and the toggle under it, so the button
-  // stays against the band it opens rather than the band pushing it about.
-  const toggle = html('button', {
-    type: 'button',
-    class: 'map-band-toggle',
-    id: 'map-band-toggle',
-    'aria-controls': 'map-band-strip',
-    'aria-expanded': 'false',
-    title: 'Choose the window of time on the map: drag either end and the map follows',
-    // The owner's own word for them: "a toggle on the map so I can choose the
-    // dates instead of a selector". Two syllables in the corner of a picture,
-    // and the title says the rest.
-  }, 'dates');
-  wrap.append(toggle);
   container.append(wrap);
 
-  // Everything below is null until the first open. `built` is the whole of
-  // "first paint must not get slower".
-  let built = null;
+  const root = svg('svg', {
+    class: 'window-strip', id: 'map-band-strip', role: 'group', 'aria-label': 'The window of time',
+  });
+  // One layer per kind of element, in z-order: the profile of where the events
+  // are, then the shade over it, then the handles over that, then their years.
+  // The same order and the same reason as the timeline's (util/dom.js,
+  // `reuse`): the shading must not hide what it is shading, and a handle must
+  // always be grabbable.
+  const layers = {};
+  for (const name of ['profile', 'band', 'handles', 'handleLabels']) {
+    layers[name] = svg('g', { class: `layer layer-${name}` });
+    root.appendChild(layers[name]);
+  }
+  wrap.append(root);
 
-  function build() {
-    const root = svg('svg', {
-      class: 'window-strip', id: 'map-band-strip', role: 'group', 'aria-label': 'The window of time',
+  // Counted once, here rather than on every render: it is a fact about the data
+  // and the data does not change under a reader, and it is the same count the
+  // timeline's scale is chosen by and the masthead's hint is drawn at
+  // (util/window.js), so no two of the three can disagree about which century
+  // is the busy one.
+  const counts = centuryCounts(atlas.activeEvents);
+  const domain = atlas.extent ? [atlas.extent.min - 1, atlas.extent.max + 1] : [0, 1];
+
+  let width = 0;
+  let scale = null;
+  let drawnFor = null;
+
+  const measure = () => {
+    width = Math.max(0, wrap.clientWidth || 0);
+    if (width < MIN_WIDTH || !atlas.extent) {
+      scale = null;
+      return;
+    }
+    scale = createTimelineScale({
+      domain, range: [STRIP.inset, width - STRIP.inset], counts, extent: atlas.extent,
     });
-    // One layer per kind of element, in z-order: the profile of where the
-    // events are, then the shade over it, then the handles over that, then
-    // their years. The same order and the same reason as the timeline's
-    // (util/dom.js, `reuse`): the shading must not hide what it is shading, and
-    // a handle must always be grabbable.
-    const layers = {};
-    for (const name of ['profile', 'band', 'handles', 'handleLabels']) {
-      layers[name] = svg('g', { class: `layer layer-${name}` });
-      root.appendChild(layers[name]);
-    }
-    wrap.insertBefore(root, toggle);
+  };
 
-    // Counted once, here rather than at load: it is a fact about the data and
-    // the data does not change under a reader, and it is the same count the
-    // timeline's scale is chosen by and the masthead's hint is drawn at
-    // (util/window.js), so no two of the three can disagree about which century
-    // is the busy one.
-    const counts = centuryCounts(atlas.activeEvents);
-    const domain = atlas.extent ? [atlas.extent.min - 1, atlas.extent.max + 1] : [0, 1];
-
-    let width = 0;
-    let scale = null;
-    let drawnFor = null;
-
-    const measure = () => {
-      width = Math.max(0, wrap.clientWidth || 0);
-      if (width < MIN_WIDTH || !atlas.extent) {
-        scale = null;
-        return;
-      }
-      scale = createTimelineScale({
-        domain, range: [STRIP.inset, width - STRIP.inset], counts, extent: atlas.extent,
-      });
-    };
-
-    const gestures = bindWindowGestures(root, {
-      atlas,
-      state,
-      scale: () => scale,
-      viewWidth: () => width,
-      // No lane labels to keep clear of, and nothing on the strip that a press
-      // could be opening instead: every pixel of it is the scale.
-      gutter: () => 0,
-      isRecord: () => false,
-    });
-
-    function draw(s) {
-      measure();
-      if (!scale) return;
-      root.setAttribute('viewBox', `0 0 ${width} ${STRIP.height}`);
-      root.setAttribute('width', width);
-      root.setAttribute('height', STRIP.height);
-      const into = Object.fromEntries(
-        Object.entries(layers).map(([name, g]) => [name, reuse(g)]),
-      );
-      const window = resolveWindow(s, atlas.extent, atlas.opens);
-      // Where the events are, over what the atlas is showing: `bandEvents` is
-      // M65's `shown`, so a selection that has narrowed the map has narrowed
-      // this too. Drawn at `density.js`'s own absolute scale, which is the
-      // scale the timeline's stubs and the masthead's hint are drawn at.
-      const d = bandProfile(bandEvents(atlas, s), scale, {
-        floor: STRIP.height, openEnd: domain[1],
-      });
-      if (d) into.profile.take('path', { d, class: 'bar stub', 'aria-hidden': 'true' });
-      const box = {
-        scale,
-        extent: atlas.extent,
-        top: STRIP.marker,
-        height: STRIP.height - STRIP.marker,
-        labelY: STRIP.marker - 6,
-      };
-      if (window) {
-        bandShade(into.band, window, box);
-        bandHandles(into.handles, into.handleLabels, window, box);
-      }
-      for (const layer of Object.values(into)) layer.done();
-    }
-
-    // The same discipline the three views follow: the whole state plus what the
-    // drawing holds outside it, which here is only its own width. No attribute
-    // shard is read — the strip carries no name — so the shard count that every
-    // view's key carries is not in this one.
-    const render = (s, { force = false } = {}) => {
-      const key = renderKey(s, wrap.clientWidth || 0);
-      if (!force && key === drawnFor) return;
-      drawnFor = key;
-      draw(s);
-    };
-
-    let observer = null;
-    if (typeof ResizeObserver !== 'undefined') {
-      let last = '';
-      observer = new ResizeObserver(() => {
-        const now = String(wrap.clientWidth);
-        if (now === last) return;
-        last = now;
-        render(state.get(), { force: true });
-      });
-      observer.observe(wrap);
-    }
-
-    const unsubscribe = state.subscribe(render);
-    built = { root, render, unsubscribe, observer, gestures };
-    render(state.get(), { force: true });
-  }
-
-  // Closed is the strip gone from the document and not hidden: a drawing that
-  // is still there is still redrawn on every nudge of the window, and "closed
-  // costs nothing" would stop being true the moment anybody believed it.
-  function teardown() {
-    if (!built) return;
-    built.unsubscribe?.();
-    built.observer?.disconnect?.();
-    built.root.remove();
-    built = null;
-  }
-
-  let open = readBandOpen(storage);
-
-  function apply({ remember = true } = {}) {
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.title = open
-      ? 'Close the window of time'
-      : 'Choose the window of time on the map: drag either end and the map follows';
-    if (open && !built) build();
-    if (!open) teardown();
-    if (remember) writeBandOpen(storage, open);
-  }
-
-  toggle.addEventListener('click', () => {
-    open = !open;
-    apply();
+  bindWindowGestures(root, {
+    atlas,
+    state,
+    scale: () => scale,
+    viewWidth: () => width,
+    // No lane labels to keep clear of, and nothing on the strip that a press
+    // could be opening instead: every pixel of it is the scale.
+    gutter: () => 0,
+    isRecord: () => false,
   });
 
-  // A reader who left it open gets it back; a first visit does not, and pays
-  // nothing for the band it has not asked for.
-  apply({ remember: false });
+  function draw(s) {
+    measure();
+    if (!scale) return;
+    root.setAttribute('viewBox', `0 0 ${width} ${STRIP.height}`);
+    root.setAttribute('width', width);
+    root.setAttribute('height', STRIP.height);
+    const into = Object.fromEntries(
+      Object.entries(layers).map(([name, g]) => [name, reuse(g)]),
+    );
+    const window = resolveWindow(s, atlas.extent, atlas.opens);
+    // Where the events are, over what the atlas is showing: `bandEvents` is
+    // M65's `shown`, so a selection that has narrowed the map has narrowed
+    // this too. Drawn at `density.js`'s own absolute scale, which is the
+    // scale the timeline's stubs and the masthead's hint are drawn at.
+    const d = bandProfile(bandEvents(atlas, s), scale, {
+      floor: STRIP.height, openEnd: domain[1],
+    });
+    if (d) into.profile.take('path', { d, class: 'bar stub', 'aria-hidden': 'true' });
+    const box = {
+      scale,
+      extent: atlas.extent,
+      top: STRIP.marker,
+      height: STRIP.height - STRIP.marker,
+      labelY: STRIP.marker - 6,
+    };
+    if (window) {
+      bandShade(into.band, window, box);
+      bandHandles(into.handles, into.handleLabels, window, box);
+    }
+    for (const layer of Object.values(into)) layer.done();
+  }
+
+  // The same discipline the three views follow: the whole state plus what the
+  // drawing holds outside it, which here is only its own width. No attribute
+  // shard is read — the strip carries no name — so the shard count that every
+  // view's key carries is not in this one.
+  const render = (s, { force = false } = {}) => {
+    const key = renderKey(s, wrap.clientWidth || 0);
+    if (!force && key === drawnFor) return;
+    drawnFor = key;
+    draw(s);
+  };
+
+  // The map view can be put away for the graph or the timeline, and a pane that
+  // is `hidden` measures nothing. The observer is what brings the drawing back
+  // at the width it returns to, which is the same thing it did for a reader who
+  // resized their window.
+  let observer = null;
+  if (typeof ResizeObserver !== 'undefined') {
+    let last = '';
+    observer = new ResizeObserver(() => {
+      const now = String(wrap.clientWidth);
+      if (now === last) return;
+      last = now;
+      render(state.get(), { force: true });
+    });
+    observer.observe(wrap);
+  }
+
+  const unsubscribe = state.subscribe(render);
+  render(state.get(), { force: true });
 
   return {
-    isOpen: () => open,
-    toggle: () => { open = !open; apply(); },
-    render: (s, options) => built?.render(s, options),
+    render: (s, options) => render(s, options),
+    // Nothing in the atlas takes the band away, but a drawing that subscribes
+    // to the state owes a way to stop: a test that builds one into a scratch
+    // container should be able to leave nothing behind.
+    destroy: () => {
+      unsubscribe?.();
+      observer?.disconnect?.();
+      wrap.remove();
+    },
   };
 }

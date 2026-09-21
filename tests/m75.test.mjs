@@ -139,42 +139,14 @@ test('the URL still says nothing about a control, because there is no control', 
   assert.equal(formatState(defaultState()), '', 'and the default still writes nothing at all');
 });
 
-// ─── 3. it is still one band, still M64's ──────────────────────────────────
+// ─── 3. it is still M64's band ─────────────────────────────────────────────
 //
-// The brief: "nothing is rebuilt". The band, its handles and every gesture
-// that moves them stay in `window-band.js`, and this run must not have quietly
-// grown a second one on the way to removing the button.
-
-test('the band is still built in exactly one module, and both drawings import it', async () => {
-  const modules = ['src/timeline.js', 'src/map-band.js', 'src/window-band.js', 'src/window-control.js'];
-  const sources = new Map(await Promise.all(
-    modules.map(async (file) => [file, await read(file)]),
-  ));
-  const builders = modules.filter((file) => sources.get(file).includes('aria-valuetext'));
-  assert.deepEqual(builders, ['src/window-band.js'],
-    `the band is built in ${builders.length} module(s); it must be built in one`);
-  for (const file of ['src/timeline.js', 'src/map-band.js']) {
-    assert.match(sources.get(file), /from '\.\/window-band\.js'/,
-      `${file} draws its band from the shared module`);
-    assert.ok(!sources.get(file).includes('window-handle'),
-      `${file} does not build a handle of its own`);
-  }
-});
-
-test('the gestures are still shared: neither drawing binds a wheel or a drag of its own', async () => {
-  for (const file of ['src/timeline.js', 'src/map-band.js']) {
-    const source = await read(file);
-    assert.match(source, /bindWindowGestures/, `${file} asks for the shared gestures`);
-    assert.ok(!/addEventListener\('wheel'/.test(source),
-      `${file} answers the wheel through the shared gestures and not its own`);
-    assert.ok(!/addEventListener\('pointermove'/.test(source),
-      `${file} answers a drag through the shared gestures and not its own`);
-  }
-  const shared = await read('src/window-band.js');
-  for (const gesture of ['pointerdown', 'pointermove', 'pointerup', 'wheel', 'keydown', 'dblclick']) {
-    assert.match(shared, new RegExp(`addEventListener\\('${gesture}'`), `the band answers ${gesture}`);
-  }
-});
+// The brief: "nothing is rebuilt". That there is **one** band, built in one
+// module, with one set of gestures, is `tests/m64.test.mjs`'s own assertion and
+// it still runs — this milestone did not touch what it is about, so there is no
+// second copy of it here. What is asserted here is the one thing about it M75
+// could have broken on its way to removing the button: what the band is drawn
+// over.
 
 test('and it is still drawn over what the atlas is showing, which is M65’s own set', () => {
   const t = topology();

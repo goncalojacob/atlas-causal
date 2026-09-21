@@ -57,15 +57,22 @@ const WINDOW = `return {
 
 // A pane against the layout that holds it. Rounded, because a grid's rows are
 // fractions of a pixel and this is a question about a layout.
+// A pane against the layout that holds it, measured against the layout's own
+// content box. On a phone the layout keeps the height of the sheet's peeking
+// grip clear at the bottom edge (`--sheet-grip`, style.css), so the box and the
+// content box differ there by that much and by nothing else; on a desktop they
+// are the same. What is being asked either way is whether the band took a row.
 const PANE = (selector) => `
   const pane = document.querySelector('${selector}');
   const layout = document.querySelector('.layout');
   const box = pane.getBoundingClientRect();
   const whole = layout.getBoundingClientRect();
+  const style = getComputedStyle(layout);
+  const pad = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
   return {
     height: Math.round(box.height),
-    layoutHeight: Math.round(whole.height),
-    toBottom: Math.round(whole.bottom - box.bottom),
+    layoutHeight: Math.round(whole.height - pad),
+    toBottom: Math.round(whole.bottom - parseFloat(style.paddingBottom) - box.bottom),
   };`;
 
 const MARKS = 'return [...document.querySelectorAll("#map svg .mark[data-id]")].map((el) => el.dataset.id);';
