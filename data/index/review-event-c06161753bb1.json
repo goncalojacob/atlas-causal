@@ -1505,6 +1505,36 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-05",
+      "degree": 2,
+      "id": "1994-genocide-against-tutsi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m40-retracted",
+          "standing-backfilled",
+          "imported-by-wikidata"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "1994 Genocide against Tutsi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -2637,7 +2667,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "angolan-civil-war",
       "kind": "event",
       "origin": {
@@ -2775,6 +2805,36 @@
       "revised": null,
       "status": "active",
       "title": "Armistice of Mudros"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "arusha-accords",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m44b-retracted",
+          "standing-backfilled",
+          "imported-by-wikidata"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Arusha Accords"
     },
     {
       "authors": [
@@ -4389,7 +4449,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 1,
+      "degree": 2,
       "id": "dayton-agreement",
       "kind": "event",
       "origin": {
@@ -5356,6 +5416,34 @@
       "revised": "2026-09-20",
       "status": "active",
       "title": "First Balkan War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 3,
+      "id": "first-congo-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Congo War"
     },
     {
       "authors": [
@@ -9472,6 +9560,36 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 2,
+      "id": "rwandan-civil-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m44b-retracted",
+          "standing-backfilled",
+          "imported-by-wikidata"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Rwandan Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -9751,6 +9869,37 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "Second Boer War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "second-congo-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m44b-retracted",
+          "standing-backfilled",
+          "imported-by-wikidata"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Second Congo War"
     },
     {
       "authors": [
@@ -10307,6 +10456,37 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "Spínola resigns the presidency"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-05",
+      "degree": 1,
+      "id": "srebrenica-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-in-bosnia-and-herzegovina",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m40-retracted",
+          "standing-backfilled",
+          "imported-by-wikidata"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Srebrenica massacre"
     },
     {
       "authors": [

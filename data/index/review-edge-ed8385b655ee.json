@@ -1286,6 +1286,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
+      "from": "1994-genocide-against-tutsi",
+      "id": "1994-genocide-against-tutsi--first-congo-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-congo-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
       "from": "1995-portuguese-legislative-election",
       "id": "1995-portuguese-legislative-election--1996-portuguese-presidential-election--precondition-of",
       "kind": "edge",
@@ -2283,6 +2311,34 @@
       "status": "active",
       "to": "mozambique-war-begins-1964",
       "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "angolan-civil-war",
+      "id": "angolan-civil-war--first-congo-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-congo-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -5346,6 +5402,34 @@
       "revised": null,
       "status": "active",
       "to": "second-balkan-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "first-congo-war",
+      "id": "first-congo-war--second-congo-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-congo-war",
       "type": "caused"
     },
     {
@@ -9673,6 +9757,62 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "rwandan-civil-war",
+      "id": "rwandan-civil-war--1994-genocide-against-tutsi--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1994-genocide-against-tutsi",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "rwandan-civil-war",
+      "id": "rwandan-civil-war--arusha-accords--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "arusha-accords",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "saint-domingue-and-the-french-sugar-colony",
       "id": "saint-domingue-and-the-french-sugar-colony--haitian-revolution-1791-1804--caused",
@@ -10416,6 +10556,34 @@
       "revised": null,
       "status": "active",
       "to": "coup-attempt-11-march-1975",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "srebrenica-massacre",
+      "id": "srebrenica-massacre--dayton-agreement--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "dayton-agreement",
       "type": "precondition-of"
     },
     {

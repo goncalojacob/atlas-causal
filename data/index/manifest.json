@@ -49,13 +49,13 @@
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-ec30bfdea9f6.json",
+      "file": "index/attributes-1900-1999-e1c984a20b85.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-d10d679da619.json",
+      "file": "index/attributes-2000-2099-a5f8158ed666.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
@@ -813,7 +813,7 @@
       "id": "treaty"
     },
     {
-      "count": 40,
+      "count": 42,
       "id": "war"
     }
   ],
@@ -881,8 +881,8 @@
   ],
   "counts": {
     "actors": 2696,
-    "edges": 493,
-    "events": 642,
+    "edges": 499,
+    "events": 643,
     "narratives": 2,
     "offices": 11,
     "places": 47,
@@ -919,7 +919,7 @@
       "to": 1899
     },
     {
-      "file": "index/explanations-1900-1999-92b6cf824811.json",
+      "file": "index/explanations-1900-1999-2e9696623f1f.json",
       "from": 1900,
       "to": 1999
     },
@@ -930,13 +930,13 @@
     }
   ],
   "files": {
-    "citers": "index/citers-759e668f8d5d",
-    "core": "index/core-8e0c3b0120ac.json",
+    "citers": "index/citers-d53ad3630a35",
+    "core": "index/core-c928b6d86e3c.json",
     "grounds": "index/grounds-e462f203e0c8.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-b78f4fad3055.json",
-    "search": "index/search-5663caba1160.json",
-    "sources": "index/sources-e6c194204731.json",
+    "review": "index/review-6111cb4b2073.json",
+    "search": "index/search-0512c407e95a.json",
+    "sources": "index/sources-3d267eee5820.json",
     "territories": "index/territories-6609ef814805.json"
   },
   "historyShards": [
@@ -976,7 +976,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-b918b46481b9.json",
+      "file": "index/history-event-1900-1999-2dc2d138a88c.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
@@ -1025,7 +1025,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-edge-1900-1999-d25d225f6149.json",
+      "file": "index/history-edge-1900-1999-42aa0c2091e8.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "edge",

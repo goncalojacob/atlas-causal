@@ -284,6 +284,12 @@
     },
     {
       "dissent": false,
+      "id": "1994-genocide-against-tutsi--first-congo-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Congo War\", revision 1374918500, § lead and § Rwanda"
+    },
+    {
+      "dissent": false,
       "id": "1995-portuguese-legislative-election--1996-portuguese-presidential-election--precondition-of",
       "kind": "edge",
       "locator": "\"1996 Portuguese presidential election\", revision 1371811573, § lead"
@@ -377,6 +383,12 @@
       "id": "angola-independence-1975--angolan-civil-war--precondition-of",
       "kind": "edge",
       "locator": "\"Angolan Civil War\", revision 1371337338, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "angolan-civil-war--first-congo-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Congo War\", revision 1374918500, § Angola"
     },
     {
       "dissent": false,
@@ -863,6 +875,12 @@
       "id": "first-balkan-war--second-balkan-war--caused",
       "kind": "edge",
       "locator": "\"Second Balkan War\", revision 1370735824"
+    },
+    {
+      "dissent": false,
+      "id": "first-congo-war--second-congo-war--caused",
+      "kind": "edge",
+      "locator": "\"First Congo War\", revision 1374918500, § lead"
     },
     {
       "dissent": false,
@@ -1892,6 +1910,18 @@
     },
     {
       "dissent": false,
+      "id": "rwandan-civil-war--1994-genocide-against-tutsi--precondition-of",
+      "kind": "edge",
+      "locator": "\"Rwandan genocide\", revision 1375989507, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "rwandan-civil-war--arusha-accords--caused",
+      "kind": "edge",
+      "locator": "\"Rwandan genocide\", revision 1375989507, § lead"
+    },
+    {
+      "dissent": false,
       "id": "saint-domingue-and-the-french-sugar-colony--haitian-revolution-1791-1804--caused",
       "kind": "edge",
       "locator": "\"Haitian Revolution\", revision 1375172946"
@@ -2063,6 +2093,12 @@
       "id": "spanish-civil-war--iberian-pact--caused",
       "kind": "edge",
       "locator": "\"Spanish Civil War\", revision 1373335825"
+    },
+    {
+      "dissent": false,
+      "id": "srebrenica-massacre--dayton-agreement--precondition-of",
+      "kind": "edge",
+      "locator": "\"Bosnian War\", revision 1375967053, § lead"
     },
     {
       "dissent": false,

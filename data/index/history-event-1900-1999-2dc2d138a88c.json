@@ -3358,6 +3358,14 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -4171,6 +4179,14 @@
             "status"
           ],
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -6739,6 +6755,15 @@
             "review"
           ],
           "on": "2026-09-20"
+        }
+      ]
+    },
+    "first-congo-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -10185,6 +10210,14 @@
             "status"
           ],
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -10446,6 +10479,14 @@
             "status"
           ],
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -10828,6 +10869,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "parent",
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },

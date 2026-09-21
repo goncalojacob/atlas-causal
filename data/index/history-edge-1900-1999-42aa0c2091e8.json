@@ -567,6 +567,15 @@
         }
       ]
     },
+    "1994-genocide-against-tutsi--first-congo-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "1995-portuguese-legislative-election--1996-portuguese-presidential-election--precondition-of": {
       "from": "git",
       "versions": [
@@ -842,6 +851,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "angolan-civil-war--first-congo-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -2082,6 +2100,15 @@
         {
           "first": true,
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "first-congo-war--second-congo-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3415,6 +3442,24 @@
         }
       ]
     },
+    "rwandan-civil-war--1994-genocide-against-tutsi--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "rwandan-civil-war--arusha-accords--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "salazar-finance-minister-1928--salazar-president-of-council-1932--caused": {
       "from": "git",
       "versions": [
@@ -3644,6 +3689,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "srebrenica-massacre--dayton-agreement--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

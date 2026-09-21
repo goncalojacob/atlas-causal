@@ -668,6 +668,12 @@
     },
     {
       "dissent": false,
+      "id": "1994-genocide-against-tutsi",
+      "kind": "event",
+      "locator": "Q131297"
+    },
+    {
+      "dissent": false,
       "id": "1995-portuguese-legislative-election",
       "kind": "event",
       "locator": null
@@ -869,6 +875,12 @@
       "id": "armistice-of-mudros",
       "kind": "event",
       "locator": "Q328499"
+    },
+    {
+      "dissent": false,
+      "id": "arusha-accords",
+      "kind": "event",
+      "locator": "Q1429076"
     },
     {
       "dissent": false,
@@ -1157,6 +1169,12 @@
       "id": "first-balkan-war",
       "kind": "event",
       "locator": "Q177918"
+    },
+    {
+      "dissent": false,
+      "id": "first-congo-war",
+      "kind": "event",
+      "locator": "Q838695"
     },
     {
       "dissent": false,
@@ -1664,6 +1682,12 @@
     },
     {
       "dissent": false,
+      "id": "rwandan-civil-war",
+      "kind": "event",
+      "locator": "Q426722"
+    },
+    {
+      "dissent": false,
       "id": "sayfo",
       "kind": "event",
       "locator": "Q852236"
@@ -1685,6 +1709,12 @@
       "id": "second-boer-war",
       "kind": "event",
       "locator": "Q215112"
+    },
+    {
+      "dissent": false,
+      "id": "second-congo-war",
+      "kind": "event",
+      "locator": "Q75756"
     },
     {
       "dissent": false,
@@ -1757,6 +1787,12 @@
       "id": "spanish-civil-war",
       "kind": "event",
       "locator": "Q10859"
+    },
+    {
+      "dissent": false,
+      "id": "srebrenica-massacre",
+      "kind": "event",
+      "locator": "Q170334"
     },
     {
       "dissent": false,
