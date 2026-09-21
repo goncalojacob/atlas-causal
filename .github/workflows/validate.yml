@@ -14,9 +14,15 @@ name: validate
 
 on:
   # Lane branches (m68, m69, ...) carry no pull request while they run, and a
-  # run that waits for its check needs one to exist: every m* push is checked.
+  # run that waits for its check needs one to exist: every lane push is
+  # checked. The pattern is a digit after the m on purpose: `m*` also matched
+  # `main`, so from 21 September every merge ran this job beside deploy.yml,
+  # which runs the same tests and is the check that publishes; the extra job
+  # went red on three different browser suites in three runs while deploy
+  # went green on the same tree, and main showed a red mark for a job it
+  # never needed.
   push:
-    branches: ['m*']
+    branches: ['m[0-9]*']
   pull_request:
   workflow_dispatch:
 
