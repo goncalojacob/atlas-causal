@@ -20,6 +20,7 @@ import { resolveWindow } from './util/window.js';
 import { bindNarrativeKeys } from './panel/narrative.js';
 import { esc } from './util/esc.js';
 import { createLayerControl } from './layer-control.js';
+import { createCategoryControl } from './category-control.js';
 import { createGraphFilters } from './graph-filters.js';
 import { createWindowControl } from './window-control.js';
 import { createMapBand } from './map-band.js';
@@ -213,10 +214,16 @@ try {
   const timelineArea = document.getElementById('timeline');
   const layersGroup = document.querySelector('.bar .layers');
   const graphFiltersGroup = document.querySelector('.bar .graph-filters');
-  // The layer switches and the category toggles, which are the legend; built
-  // rather than written into index.html because a category's label comes from
-  // `data/` and everything from `data/` is untrusted input (layer-control.js).
+  // The layer switches, which are the map's legend and the map's alone; built
+  // rather than written into index.html because a layer's id comes from the
+  // manifest and everything from `data/` is untrusted input (layer-control.js).
   createLayerControl(layersGroup, { atlas, state });
+  // And the category switches, which are nobody's one picture: they narrow the
+  // lanes and the graph exactly as they narrow the map (emphasis.js, M65), so
+  // since M68 they stand in the masthead beside the window and are never
+  // hidden. One module owns them and the legend keeps no copy
+  // (category-control.js).
+  createCategoryControl(document.getElementById('categories'), { atlas, state });
   // And the graph's own two, which are the other half of the same idea: what
   // is drawn at all. They swap with the layer switches below.
   createGraphFilters(graphFiltersGroup, { state });
