@@ -156,7 +156,7 @@
       ]
     },
     "1948-arab-israeli-war--lebanese-civil-war--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -383,6 +383,15 @@
         }
       ]
     },
+    "1976-argentine-coup-d-etat--falklands-war--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "1979-portuguese-legislative-election--constitutional-revision-1982--enabled": {
       "from": "git",
       "versions": [
@@ -432,7 +441,7 @@
       ]
     },
     "1982-lebanon-war--2006-lebanon-war--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -752,6 +761,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "anti-comintern-pact--tripartite-pact--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -1419,7 +1437,7 @@
       ]
     },
     "continuation-war--lapland-war--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1866,7 +1884,7 @@
       ]
     },
     "genocide-convention--rome-statute-of-the-international-criminal-court--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2093,6 +2111,15 @@
         }
       ]
     },
+    "ilinden-preobrazhenie-uprising--young-turk-revolution-of-1908--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "imf-agreement-1978--imf-agreement-1983--precondition-of": {
       "from": "git",
       "versions": [
@@ -2183,7 +2210,7 @@
       ]
     },
     "kashmir-conflict--indo-pakistani-war-of-1965--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2192,7 +2219,7 @@
       ]
     },
     "kashmir-conflict--kargil-war--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2260,7 +2287,7 @@
       ]
     },
     "lebanese-civil-war--1982-lebanon-war--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2372,6 +2399,15 @@
         {
           "first": true,
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "march-on-rome--lateran-treaty--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -2889,7 +2925,7 @@
       ]
     },
     "russian-civil-war--kronstadt-rebellion--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3076,6 +3112,15 @@
       ]
     },
     "sino-indian-war--indo-pakistani-war-of-1965--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "soviet-afghan-war--war-in-afghanistan-2001-2021--precondition-of": {
       "from": "revised",
       "versions": [
         {
@@ -3223,7 +3268,7 @@
       ]
     },
     "the-holocaust--porajmos--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3232,7 +3277,7 @@
       ]
     },
     "the-holocaust--warsaw-ghetto-uprising--reacted-to": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3273,7 +3318,7 @@
       ]
     },
     "treaty-of-lausanne--montreux-convention--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3436,7 +3481,7 @@
       ]
     },
     "winter-war--continuation-war--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

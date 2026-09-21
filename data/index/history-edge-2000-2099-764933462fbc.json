@@ -647,7 +647,7 @@
       ]
     },
     "rose-revolution--orange-revolution--inspired": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -711,6 +711,24 @@
         {
           "first": true,
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "treaty-establishing-a-constitution-for-europe--treaty-of-lisbon--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "treaty-of-nice--treaty-establishing-a-constitution-for-europe--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

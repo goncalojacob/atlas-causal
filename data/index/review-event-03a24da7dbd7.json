@@ -916,7 +916,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 1,
+      "degree": 2,
       "id": "1976-argentine-coup-d-etat",
       "kind": "event",
       "origin": {
@@ -2394,6 +2394,34 @@
       "revised": "2026-09-20",
       "status": "active",
       "title": "Beginning of the war in Angola"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-05",
+      "degree": 1,
+      "id": "anti-comintern-pact",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Anti-Comintern Pact"
     },
     {
       "authors": [
@@ -4373,6 +4401,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-05",
+      "degree": 1,
+      "id": "falklands-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Falklands War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -5324,6 +5380,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-05",
+      "degree": 1,
+      "id": "ilinden-preobrazhenie-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Ilinden–Preobrazhenie Uprising"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5898,6 +5982,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-05",
+      "degree": 1,
+      "id": "lateran-treaty",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Lateran Treaty"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -6441,7 +6553,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "march-on-rome",
       "kind": "event",
       "origin": {
@@ -8325,6 +8437,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
+      "degree": 1,
       "id": "soviet-afghan-war",
       "kind": "event",
       "origin": {
@@ -9227,6 +9340,35 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 2,
+      "id": "treaty-establishing-a-constitution-for-europe",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Treaty establishing a Constitution for Europe"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -9369,6 +9511,35 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-04",
+      "degree": 1,
+      "id": "treaty-of-lisbon",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "Treaty of Lisbon"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -9413,7 +9584,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 1,
+      "degree": 2,
       "id": "treaty-of-nice",
       "kind": "event",
       "origin": {
@@ -9780,7 +9951,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "tripartite-pact",
       "kind": "event",
       "origin": {
@@ -10117,6 +10288,34 @@
       "cites": [
         "wikidata"
       ],
+      "created": "2026-09-05",
+      "degree": 1,
+      "id": "war-in-afghanistan-2001-2021",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-21",
+      "status": "active",
+      "title": "War in Afghanistan (2001–2021)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
       "created": "2026-09-15",
       "degree": 1,
       "id": "warsaw-ghetto-uprising",
@@ -10431,7 +10630,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "young-turk-revolution-of-1908",
       "kind": "event",
       "origin": {
@@ -10519,12 +10718,6 @@
     },
     {
       "id": "russo-japanese-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "soviet-afghan-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

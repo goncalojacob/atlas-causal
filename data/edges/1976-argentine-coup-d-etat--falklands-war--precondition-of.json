@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1976-argentine-coup-d-etat--falklands-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Falklands War\", revision 1375590484, § The Argentine junta"
+    }
+  ],
+  "from": "1976-argentine-coup-d-etat",
+  "to": "falklands-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article puts the decision inside the regime the coup installed: Argentina had been governed since 1976 by the military junta of the National Reorganisation Process, and by opting for military action the Galtieri government \"hoped to mobilise the long-standing patriotic feelings of Argentines towards the islands, diverting public attention from the chronic economic problems and the ongoing human rights violations of its Dirty War, bolstering the junta’s dwindling legitimacy\". The claim is that the junta the coup created is what took the decision, and no more: the article gives Admiral Anaya as the architect of the military solution and the sovereignty claim as long-standing.",
+  "dispute": null
+}

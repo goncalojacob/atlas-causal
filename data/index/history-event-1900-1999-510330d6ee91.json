@@ -3998,6 +3998,14 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -6424,6 +6432,14 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -7079,6 +7095,14 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -7506,6 +7530,14 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },

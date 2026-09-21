@@ -224,6 +224,12 @@
     },
     {
       "dissent": false,
+      "id": "1976-argentine-coup-d-etat--falklands-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Falklands War\", revision 1375590484, § The Argentine junta"
+    },
+    {
+      "dissent": false,
       "id": "1982-lebanon-war--2006-lebanon-war--enabled",
       "kind": "edge",
       "locator": "\"1982 Lebanon War\", revision 1370279817, § lead"
@@ -287,6 +293,18 @@
       "id": "amsterdam-treaty--treaty-of-nice--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of Nice\", revision 1345303290"
+    },
+    {
+      "dissent": false,
+      "id": "anti-comintern-pact--tripartite-pact--precondition-of",
+      "kind": "edge",
+      "locator": "\"Tripartite Pact\", revision 1375181328, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "anti-comintern-pact--tripartite-pact--precondition-of",
+      "kind": "edge",
+      "locator": "\"Tripartite Pact\", revision 1375181328, § lead"
     },
     {
       "dissent": false,
@@ -818,6 +836,12 @@
     },
     {
       "dissent": false,
+      "id": "ilinden-preobrazhenie-uprising--young-turk-revolution-of-1908--precondition-of",
+      "kind": "edge",
+      "locator": "\"Young Turk Revolution\", revision 1372902192, § Situation in Ottoman Macedonia"
+    },
+    {
+      "dissent": false,
       "id": "independence-of-brazil-1822--aberdeen-act-1845--precondition-of",
       "kind": "edge",
       "locator": "\"Aberdeen Act\", revision 1371318387"
@@ -1061,6 +1085,18 @@
       "id": "march-on-rome--constitution-1933--inspired",
       "kind": "edge",
       "locator": "\"March on Rome\", revision 1374461265"
+    },
+    {
+      "dissent": false,
+      "id": "march-on-rome--lateran-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"Lateran Treaty\", revision 1368861161, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "march-on-rome--lateran-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"March on Rome\", revision 1374461265, § lead"
     },
     {
       "dissent": false,
@@ -1487,6 +1523,18 @@
       "id": "slave-trade-act-1807--slavery-abolition-act-1833--precondition-of",
       "kind": "edge",
       "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-afghan-war--war-in-afghanistan-2001-2021--precondition-of",
+      "kind": "edge",
+      "locator": "\"War in Afghanistan (2001–2021)\", revision 1375768099, § Guerrilla warfare"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-afghan-war--war-in-afghanistan-2001-2021--precondition-of",
+      "kind": "edge",
+      "locator": "\"War in Afghanistan (2001–2021)\", revision 1375768099, § lead"
     },
     {
       "dissent": false,
@@ -2120,6 +2168,18 @@
     },
     {
       "dissent": false,
+      "id": "treaty-establishing-a-constitution-for-europe--treaty-of-lisbon--caused",
+      "kind": "edge",
+      "locator": "\"Treaty establishing a Constitution for Europe\", revision 1365470273, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-establishing-a-constitution-for-europe--treaty-of-lisbon--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Lisbon\", revision 1366118806, § lead"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-brest-litovsk--battle-of-the-lys-1918--enabled",
       "kind": "edge",
       "locator": "\"Treaty of Brest-Litovsk\", revision 1368334684"
@@ -2135,6 +2195,12 @@
       "id": "treaty-of-london--paris-peace-conference--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of London (1915)\", revision 1364595903"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-nice--treaty-establishing-a-constitution-for-europe--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Lisbon\", revision 1366118806, § Background"
     },
     {
       "dissent": false,

@@ -92,6 +92,7 @@ A5: a batch that grows the corpus and not the component has to say why.
 | --- | --- | --: | --: | --: | --: | --: | --: |
 | — | before M42 | 310 | 229 | 81 | 362 | 254 | 23 |
 | 0 | the fifteen M44b retracted that the new bar puts back, and 18 edges | 325 | 237 | 88 | 380 | **268** | 22 |
+| 1 | seven earlier tombstones — M40b's and M22's — that the new bar reaches, and 7 edges | 332 | 244 | 88 | 387 | **274** | 21 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -108,6 +109,18 @@ those edges ran into the old corpus rather than between new records —
 `philippine-american-war` had no edge at all and `lebanese-civil-war` and
 `2006-lebanon-war` were a component of two — which is A5's whole instruction
 tested on a batch that fetched nothing.
+
+**And the fifty are not the whole vein.** The bar of brief §1 is not about
+M44b, and the corpus holds 229 tombstones. Two hundred are M21's and M22's
+Portuguese elections, robberies and local disasters, correctly withdrawn.
+**M40b's twenty-eight are world events** — the Falklands, the Cultural
+Revolution, Srebrenica, the Velvet revolution, the Holodomor, the
+non-proliferation treaty — each withdrawn on 7 September with its reason
+naming the record it was waiting for. Seven of those blockers have since
+stopped being true, and batch 1 is them. One of the seven, the Ilinden rising,
+was blocked only because M40b had the article's cached *lead* and not its
+body: the sentence that argues the edge is in the article, and this run can
+open it at a revision and cite it.
 
 ## 5. The rule the ticks follow, written before a box is ticked
 

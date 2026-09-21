@@ -854,6 +854,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "1976-argentine-coup-d-etat",
+      "id": "1976-argentine-coup-d-etat--falklands-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "falklands-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "costa-pinto-2003-contemporary-portugal",
         "telo-2007-historia-contemporanea"
       ],
@@ -1919,6 +1947,34 @@
       "status": "active",
       "to": "mozambique-war-begins-1964",
       "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "anti-comintern-pact",
+      "id": "anti-comintern-pact--tripartite-pact--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "tripartite-pact",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -5210,6 +5266,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "ilinden-preobrazhenie-uprising",
+      "id": "ilinden-preobrazhenie-uprising--young-turk-revolution-of-1908--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "young-turk-revolution-of-1908",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "reis-2013-portuguese-slump"
       ],
       "created": "2026-09-02",
@@ -6152,6 +6236,34 @@
       "status": "active",
       "to": "constitution-1933",
       "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "march-on-rome",
+      "id": "march-on-rome--lateran-treaty--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "lateran-treaty",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -8075,6 +8187,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-21",
+      "from": "soviet-afghan-war",
+      "id": "soviet-afghan-war--war-in-afghanistan-2001-2021--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "war-in-afghanistan-2001-2021",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "spanish-american-war-1898",
       "id": "spanish-american-war-1898--platt-amendment-1901--caused",
@@ -9685,6 +9825,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "treaty-establishing-a-constitution-for-europe",
+      "id": "treaty-establishing-a-constitution-for-europe--treaty-of-lisbon--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-lisbon",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "telo-2007-historia-contemporanea",
         "costa-pinto-2003-contemporary-portugal"
       ],
@@ -9792,6 +9960,34 @@
       "revised": "2026-09-21",
       "status": "active",
       "to": "paris-peace-conference",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "treaty-of-nice",
+      "id": "treaty-of-nice--treaty-establishing-a-constitution-for-europe--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-establishing-a-constitution-for-europe",
       "type": "precondition-of"
     },
     {

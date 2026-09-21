@@ -794,6 +794,12 @@
     },
     {
       "dissent": false,
+      "id": "anti-comintern-pact",
+      "kind": "event",
+      "locator": "Q152195"
+    },
+    {
+      "dissent": false,
       "id": "arab-revolt",
       "kind": "event",
       "locator": "Q239060"
@@ -962,6 +968,12 @@
     },
     {
       "dissent": false,
+      "id": "falklands-war",
+      "kind": "event",
+      "locator": "Q48249"
+    },
+    {
+      "dissent": false,
       "id": "february-revolution",
       "kind": "event",
       "locator": "Q101534"
@@ -1076,6 +1088,12 @@
     },
     {
       "dissent": false,
+      "id": "ilinden-preobrazhenie-uprising",
+      "kind": "event",
+      "locator": "Q1145682"
+    },
+    {
+      "dissent": false,
       "id": "indo-pakistani-war-of-1965",
       "kind": "event",
       "locator": "Q233583"
@@ -1151,6 +1169,12 @@
       "id": "lapland-war",
       "kind": "event",
       "locator": "Q154940"
+    },
+    {
+      "dissent": false,
+      "id": "lateran-treaty",
+      "kind": "event",
+      "locator": "Q193270"
     },
     {
       "dissent": false,
@@ -1370,6 +1394,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-establishing-a-constitution-for-europe",
+      "kind": "event",
+      "locator": "Q189066"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-accession-1985",
       "kind": "event",
       "locator": null
@@ -1391,6 +1421,12 @@
       "id": "treaty-of-lausanne",
       "kind": "event",
       "locator": "Q193258"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-lisbon",
+      "kind": "event",
+      "locator": "Q52843"
     },
     {
       "dissent": false,
@@ -1493,6 +1529,12 @@
       "id": "wall-street-crash-of-1929",
       "kind": "event",
       "locator": "Q201684"
+    },
+    {
+      "dissent": false,
+      "id": "war-in-afghanistan-2001-2021",
+      "kind": "event",
+      "locator": "Q182865"
     },
     {
       "dissent": false,

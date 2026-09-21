@@ -193,6 +193,14 @@ Reinstated on `the-holocaust --reacted-to--> warsaw-ghetto-uprising`. Its M44b r
 
 > Retracted in M44b, class B. April 1943 argues to the Holocaust, which it rose against, and to the Warsaw uprising of 1944, which it is not the same as; both are here and both are out of Portuguese reach. An edge to the Second World War would be true and would say nothing, which is the edge this round refuses to write. Retracted for reach, with the same missing Portuguese record as the Porajmos.
 
+### M42, the sixteenth: the one batch 0 could not place
+
+Batch 0 left `treaty-establishing-a-constitution-for-europe` retracted because the edge it wanted was to the treaty of Lisbon of 2007 and the atlas had no such record. **It had one all along**, retracted by M22 four milestones before M44b, and batch 1 put both back together. The full account is §2b of `docs/m42-connections.md`.
+
+Reinstated on `treaty-of-nice --precondition-of--> treaty-establishing-a-constitution-for-europe` and `treaty-establishing-a-constitution-for-europe --caused--> treaty-of-lisbon`, both read off the English article on the Lisbon treaty at revision 1366118806. Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class B, and it is the retraction the owner will most want to undo. The constitutional treaty argues from Nice, which this round wired at two hops, and forward to the treaty of Lisbon of 2007 — signed in Lisbon, under the Portuguese presidency, and the direct replacement for the text the French and Dutch referendums killed. The Lisbon treaty is the Portuguese end this record needs and it is not in this atlas. One record would bring the constitutional treaty inside the bar and it is a Portuguese one; it is named in docs/m44-connections.md.
+
 ## The fifty retractions, by class
 
 Every reason is in the record's own `retraction` block. This is the index.

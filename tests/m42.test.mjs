@@ -1,6 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -96,4 +97,22 @@ test('every event this milestone put back earns at least one active edge', async
   // record put back without one would be exactly what M44b was right to
   // withdraw, under a different rule.
   assert.deepEqual(bare, [], `reinstated with no edge: ${bare.join(', ')}`);
+});
+
+test('every event this milestone put back is accounted for in writing', async () => {
+  // The bar of §1 is not about M44b, and batch 1 reached tombstones M22 and
+  // M40b left. Those are outside `docs/m44-retractions.md`'s own index, so
+  // the accounting is asserted over **both** documents: whichever milestone
+  // withdrew a record, the run that draws it again says so somewhere a reader
+  // can find, and copies the reason it carried.
+  const connections = path.join(ROOT, 'docs', 'm42-connections.md');
+  const also = existsSync(connections) ? await readFile(connections, 'utf8') : '';
+  const both = `${doc}\n${also}`;
+  const unaccounted = [];
+  for (const [id, record] of events) {
+    if (record.status !== 'active') continue;
+    if (!(record.review?.flags ?? []).includes('m42-reinstated')) continue;
+    if (!both.includes(`\`${id}\``)) unaccounted.push(id);
+  }
+  assert.deepEqual(unaccounted, [], `put back and argued nowhere: ${unaccounted.join(', ')}`);
 });
