@@ -15512,6 +15512,316 @@ of one argument: the ring's heaviest events outrank the walk's lightest steps
 and take the room. The five edge types and three confidences are drawn the
 same whether an edge is a step of the walk or a neighbour of one.
 
+### What section 1 changed, and why that
+
+**The direction the owner gave is "fewer things always visible", and the
+measurement says what to take away.** It is not the number of labels — there
+were fourteen on a page of forty-one marks — it is that they were the wrong
+fourteen and half of them were not names. So three rules, in one place each.
+
+1. **A name is drawn whole or it is not drawn at all** (`src/graph-view/labels.js`,
+   new). The cut of M61 is gone from the drawing; what is left of M61 is its
+   arithmetic (`label-fit.js`: how wide a name is at this zoom, where the text
+   starts, the slice of the picture a label took at the world view). A name
+   that does not fit waits for the pointer, which is where the mark's own
+   `<title>` has always carried the whole of it — and now also a drawn label,
+   in a layer of its own over the picture, written while the pointer is on the
+   mark and rubbed out when it moves off. It is outside `render` and in no
+   render key: it is the reader's finger and not a fact about the picture.
+2. **With a lens on, the lens is what is named.** The candidates are
+   `workingSet`'s `lensFocus` — for a narrative, the walk — in the narrator's
+   own order, so the first step has first pick of the room. The ring is not
+   named at all. At rest nothing has been asked and the rule is the one it was:
+   the heaviest marks on screen, every one of them past `LABEL_ALL_ZOOM`.
+3. **With a lens on, the lens's own links are the ones in ink.** A line both of
+   whose ends are in the focus set is drawn as it was; every other line carries
+   `lens-near`, the class the ring's marks already carry, and is drawn at 0.16.
+   At rest no line is faint, because nothing has been asked.
+
+**What made rule 1 affordable is that a label may be written on a nearby free
+line, with a hairline tying it back to its mark.** This is the "or the layout
+makes room for it" of the brief, and the measurement is why it is that and not
+something else: 22 of the 28 steps of `who-was-buying` sit on **one line** of
+the layout (y = 266 of a field running 26 to 506), with the whole field free
+above and below. The room was already there; nothing reached it. A label is
+offered its own line first, then one above, then one below, out to eighteen
+lines inside a lens and two at rest — at rest a name three lines from its mark
+would be an anchor nobody could tie, and there is no walk for it to belong to.
+
+Two things were tried and rejected on the picture. **Writing a clipped label on
+the other side of its mark**: the graph's labels are packed against their
+neighbours, so the left is never free and the result was full names drawn over
+full names (worse than the cut). **Leaving the leaders out**: at 0.45 opacity
+and 0.75 px they were invisible in the screenshot, and a name a hundred units
+from its mark with nothing joining them is a name belonging to nothing.
+
+### The same measurement after
+
+Same instrument, same two narratives, same 1440 × 900.
+
+| | `who-was-buying` | `how-the-colonial-war-ended-the-regime` |
+|---|---:|---:|
+| nodes drawn | 41 (41) | 37 (37) |
+| labels drawn | 28 (14) | 12 (14) |
+| of them truncated | **0** (8) | **0** (1) |
+| of them naming a node outside the walk | **0** (3) | **0** (8) |
+| walk nodes carrying a label | **28 of 28** (11 of 28) | **12 of 12** (6 of 12) |
+| walk nodes named in full | **28 of 28** (4 of 28) | **12 of 12** (6 of 12) |
+| labels tied back by a leader | 22 | 0 |
+| lines drawn faint | **41 of 61** (0) | **28 of 43** (0) |
+| the note about the map's viewport | gone | gone |
+
+(M76's numbers in brackets.) Nothing was removed from the picture: the same
+marks and the same lines are drawn. What changed is which of them are read.
+
+`docs/screens/m77-graph-before.png` and `docs/screens/m77-graph.png` are the
+two pictures. Before: `The Atlantic…`, `Dutch B…`, `The Ab…`, `The Revolu…`,
+four full names out of twenty-eight, a paragraph of note across the top and
+sixty-one lines in five patterns and three inks. After: the twenty-eight steps
+of the argument, each one named, the twenty-one links between them in ink and
+the forty other lines behind them.
+
+### The graph at rest and with an event chosen
+
+The same rules, and the brief asks that they read well there too. At rest there
+is no lens, so rule 2 is the old one and rules 1 and 3 are the change: the
+heaviest marks on screen are still what is named, and what does not fit is not
+drawn rather than cut. That is **fewer labels at rest** and it is the point.
+With an event chosen (M65) the choice *is* a lens of one, so the event and its
+parts are what is named and their links are what is in ink — which is the
+picture the owner asked M65 for, read through the names.
+
+### Section 2: what the resting timeline looks like now
+
+`docs/screens/m77-timeline-before.png` and `docs/screens/m77-timeline.png`.
+
+**Every bar carries its title.** There is no stacking on the timeline any more
+— no `clusterPoints`, no `rect.bar.stack`, no `+n` — and the packing reserves
+the room a title needs beside its bar (`packRows`'s new `extra`), so two bars
+that do not overlap can never have two titles that do. The rows are as many as
+that takes: at the whole extent the repository's corpus asks for about
+seventy-five of them, the pane holds thirty-four at the 22 px floor, and the
+pane scrolls. A row never shrinks below that floor: a title at 14 px in a 14 px
+row has its ascenders in the row above, and the brief's rule is that a title
+never disappears to make room.
+
+Two things follow from that and are worth writing down. The scale now stops
+short of the right edge — 96 px, or seven per cent of the drawing where that is
+less — because the last century's events were being named into the pane's edge;
+a long title still runs to it, as a long label on the map does. And the rows no
+longer come down when the pane is short — `lanesThatFit` is gone — so
+`laneHeightFor` is the whole of the rule and it only ever *grows* a row into
+room going spare, as far as `LANE_MAX`.
+
+**A click on an umbrella opens it.** It needed no new mechanism: choosing an
+event has been a lens on it and its parts since M65, and the bar has been a
+click target since H4c. `docs/screens/m77-timeline-opened.png` is the Estado
+Novo opened — the regime's bar and the twenty-five events inside it, each with
+its own title, and nothing else. A click on the empty ground puts it down
+again, which is the one click back the brief asks for.
+
+At phone width the titles run to the edge of a 390 px drawing: there is not
+room for a bar, a scale and a name in 390 px, and the honest answer is that a
+reader on a phone reads the beginnings of the titles and narrows the window.
+`docs/screens/m77-timeline-phone.png`. That is a limit and not a regression —
+before this milestone there were no titles at all there.
+
+### Section 3: what grouping's removal took out
+
+`src/grouping.js` is gone. It was two things and only one of them was the
+grouping, so the file was split rather than deleted: the lens chips — one chip
+per focus with its own ×, "all of these" and "show everything" — are
+`src/lens-chips.js` now and are unchanged.
+
+What went with the picker: the `<select>` of four groupings and its panel of
+lanes to tick and reorder; the `group` and `lanes` state, and every line in
+`state.js` that parsed or wrote them; `GROUPS` in `vocab.js`; `lanesFor`,
+`availableLanes`, `laneExplain`, `LANE_CAP` and `OTHER_ID` in `lanes.js`;
+`bracketsIn` in `large.js` and the bracket the timeline drew with it;
+`lanesThatFit` in `timeline.js`; the "Drawn in the … lane" paragraph on the
+event card (`drawnHtml`) and the `lanes(s)` helper in `panel.js` that fed it;
+and twenty-two rules of `style.css`.
+
+What is left in `lanes.js` is the packing and `barBox` — which is what `none`,
+the default and what the atlas always opened on, always used. **The graph has
+no bands at all now**: `arrangementOf` passes an empty lane list, which is the
+one it always passed at rest, so `layoutGraph` draws one unnamed field.
+
+A `?group=actor&lanes=salazar,pide` in a link shared before today opens the
+atlas on the default rows, writes neither parameter back and raises no error —
+deviation 848's rule for every parameter this atlas has retired.
+
+### What first paint costs, against M76's numbers
+
+Median of nine cold loads of `?from=1900&to=1999` at 1440 × 900, cache off, one
+browser, one instrument, in one session: `origin/m0` (M76) in a worktree and
+this branch's head.
+
+| | M76 | M77 |
+| --- | ---: | ---: |
+| first contentful paint | 40 ms (36–88) | 40 ms (32–80) |
+| load event | 197 ms (189–252) | 206 ms (190–259) |
+| requests to that frame | 115 (115–116) | 116 (116–117) |
+| JavaScript files | 85 | **86** |
+| JavaScript bytes | 1,122,903 | **1,114,928** |
+| all bytes | 6,244,014 | **6,234,747** |
+| marks on that frame | 15 | 15 |
+
+**One more file and 7,975 fewer bytes.** The file is `graph-view/labels.js`;
+`grouping.js` became `lens-chips.js` and is a rename, so the net is one. The
+bytes are the grouping picker, its panel, the lane machinery and the dead CSS,
+less what the placer and the new comments add back. First contentful paint is
+the same number and the load event moved 9 ms inside a 60 ms spread; neither is
+a claim, and neither the placer nor the timeline's rows is reached before the
+core has landed, long after the first paint.
+
+### Tests
+
+`tests/m77.test.mjs` (11) and `tests/m77-browser.test.mjs` (6), both written
+before the behaviour they judge. The brief's seven, in order: every walk node
+named in full and no label cut (browser 1); nothing outside the walk named
+until the pointer is on it, and named while it is (browser 2); no note about
+the map's viewport, with the legend and Export still there (browser 3); every
+bar titled and no `+N` anywhere (browser 4); a bar with children narrowing to
+it and its children, each titled, and one click back (browser 5); no grouping
+control in the document and `?group=actor` opening the atlas with the default
+rows and no error (browser 6). The seventh — no test pins a count or a pixel —
+is a property of all seventeen: what is asserted is a name against its own
+record's name, a rectangle against its neighbour's, a class, a count of zero,
+and *more* or *fewer* rather than *n*.
+
+Changed first, as the brief requires:
+
+* `tests/state.test.mjs` — the three tests about `?group=` and `?lanes=`
+  became one about a retired parameter being read into nothing;
+* `tests/lanes.test.mjs` — fourteen tests about the named lanes removed, the
+  packing's own kept whole;
+* `tests/large.test.mjs` — the four bracket tests removed;
+* `tests/arrangement.test.mjs`, `tests/graph-layout.test.mjs`,
+  `tests/layout-worker.test.mjs` — the two that used `lanesFor` to build lanes
+  for `layoutGraph` build them by hand now, in four lines each;
+* `tests/timeline-rows.test.mjs` — rewritten: the row *count* is not a question
+  any more, and what is left is that a row grows into spare room as far as the
+  cap and never shrinks below the height a title needs;
+* `tests/timeline-browser.test.mjs` — the named-grouping test and the bracket
+  test removed; the relayout test moved to the fixtures, where the rows still
+  have room to grow; the glyph threshold read on the fixtures rather than under
+  a grouping; *on a short pane the floor holds and the pane scrolls* became the
+  ordinary case rather than the reader's-own-lane-list case;
+* `tests/m60-browser.test.mjs` — *with the lanes and the stacks it always drew*
+  became *and no stack, and no +n*;
+* `tests/graph-browser.test.mjs` — *grouping into bands crowds the picture*
+  removed; the merged-line test asks for the same window with no grouping;
+* `tests/phone-browser.test.mjs`, `tests/registry.test.mjs`,
+  `tests/render-key.test.mjs`, `tests/site.test.mjs` (through `CLAUDE.md`) —
+  the names and the vocabulary.
+
+171 suites: 1,680 assertions pure, 228 in a browser, 0 failing, 0 skipped.
+`node tools/validate.mjs --index`: 10,653 records, 0 errors, 238 warnings — the
+same counts as on `origin/m0`, since this milestone writes no record.
+
+### Deviations
+
+1109. **A graph label is never cut, at rest as well as inside a lens.** §1's
+      bullet is under the narrative heading and could have been read as a rule
+      for a lens alone. Two rules for one picture would mean a name that was
+      `The Ab…` at rest and whole under a lens, and the reader would have to
+      know which picture they were in to know whether a label was a name. It is
+      one rule, and at rest it means *fewer labels*, which is the sentence the
+      whole section is built on.
+
+1110. **A label may be written on a line other than its mark's, with a leader.**
+      The brief offers "the layout makes room for it (M61's rule) or it waits
+      for hover". Neither alone gets to §5's test 1: M61's rule is about size
+      on screen and makes no room, and hover for 24 of 28 steps is a walk the
+      reader cannot read. The room is in the layout — 22 of 28 marks on one
+      line with the field free above and below — and this is what reaches it.
+      The leader is a hairline in `--cobalt-soft` at 0.6 opacity; no new token
+      and no new value.
+
+1111. **The lens's labels are not capped by M61's `SLICE`.** The slice is the
+      share of the picture a label was allowed at the world view, and it is what
+      keeps a fifty-character title out of a picture of everything. Inside a
+      lens the reader has asked about these events by name; a walk whose steps
+      have long names is a walk with long names, and test 1 asks for all of them
+      in full. At rest the cap stands exactly as M61 left it.
+
+1112. **An edge is "the lens's" when both its ends are in the focus set, not
+      when it is a step of the narrative.** §1 says *its edges are the ones
+      drawn in ink*. Twenty-five of `who-was-buying`'s twenty-eight steps are
+      edges and the walk's events carry twenty-one links between them; inking
+      the twenty-five and greying the other four would be the picture claiming
+      that a link between two steps of the argument is not part of it. One rule
+      for every lens, and the narrative is the case it was written for.
+
+1113. **`src/grouping.js` was split rather than deleted.** §3 says the file
+      goes. Its back half is the lens chips, which are not the grouping and
+      which §4 leaves untouched — the chips are how a reader sees a lens is on
+      at all. They are `src/lens-chips.js` now, unchanged line for line, and
+      the container is `#lens-chips`.
+
+1114. **The event card's "Drawn in the … lane" paragraph went too.** §3 names
+      `main.js` and `lens.js` as the files that lose their imports and does not
+      mention the card. The paragraph stated which lane an event was drawn in
+      and by what rule; with one arrangement of unnamed rows there is no choice
+      to explain, and the sentence it printed for the default was *"Drawn in a
+      packed row: with no grouping the timeline fits the bars where they go"*,
+      which is now a description of the only thing that can happen.
+
+1115. **`bracketsIn` and the bracket went with the named lanes.** They were
+      drawn only where a parent's parts shared a *named* lane, which is now
+      never. What says an event has parts is the ring around its bar, on all
+      three views (`parts.js`), which is what M30c made it for.
+
+1116. **`packRows` keeps its `maxRows` and nothing passes one.** The timeline
+      is explicitly uncapped now. The parameter is kept because a caller with a
+      ceiling is a caller this pure function should still answer, and because
+      the branch is the one place the pending heap's own top is read — the
+      alternative was deleting a tested branch to remove a parameter.
+
+1117. **`?group=` was removed from a shot definition rather than the shot.**
+      `glyphs-map` was taken on `?fixtures=1&group=region&…`; the picture is of
+      the twelve symbols and not of the lanes, so the parameter went and the
+      shot was taken again.
+
+1118. **The screenshots were taken with `--only` and no other picture was
+      rewritten.** §6 asks for every other picture `tools/screens.mjs` rewrites
+      to be restored; taking only the six this milestone adds or changes is the
+      same end with nothing to restore, and it is what `--only` is for.
+
+1119. **The graph's phone shot is a lens on an actor and not the narrative.**
+      Opening a narrative opens its card, and on a phone an open card is a sheet
+      over the whole view (`phone.js`) — the picture would have been of the
+      sheet. A lens on one actor is the same rules at work with nothing open.
+
+1120. **The timeline redraws a frame after a resize rather than inside the
+      observer's callback.** The drawing is regularly taller than its pane now,
+      so the first drawing brings a scrollbar, the scrollbar changes the pane's
+      width, and a render inside the callback is the loop Chromium reports as
+      *ResizeObserver loop completed with undelivered notifications*. It always
+      settled in one turn and the picture was right either way; what it left was
+      a console error on an ordinary visit.
+
+1121. **The timeline's rings are drawn through a pool of their own.** They
+      shared the bars', and a bar leaving the packed rows for the layer of what
+      the reader is holding shifted every element after it by two — so a pooled
+      element that had been a bar came back as a ring and lost the `<title>` a
+      ring does not have: seventy-three titles removed and remade on a click
+      that changes one bar. Found by the churn assertion of
+      `tests/timeline-browser.test.mjs`, which M77's own labels made fail.
+
+1122. **The timeline's scale stops 96 px short of the right edge, or seven per
+      cent of the drawing where that is less.** It stopped 12 px short, which is
+      enough to keep the last year's bar off the edge and not enough for the
+      name beside it. Not the width of a title, which would be a sixth of the
+      drawing spent on air: the room a short one needs, with a long one still
+      running to the edge as every label on the map does. The share under it is
+      the phone: 96 px of a 390 px pane is a third of what is left after the
+      left gutter, and a flat 96 took the window band — the one control on that
+      view — from 44 px to 38, under the forty a thumb needs. Found by
+      `tests/phone-browser.test.mjs`, *the whole extent is legible on a phone*,
+      which is exactly what that assertion is there for.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

@@ -84,6 +84,11 @@ test('with a narrative open nothing outside the walk is named until it is hovere
     await watchErrors(page);
     await seenIntro(page);
     await open(page, url(`?view=graph&narrative=${WALK}`), GRAPH_DRAWN);
+    // The walk first, and not merely a label: a narrative's steps arrive with
+    // their century, and until they do there is no lens — the picture is the
+    // resting one, where the heaviest marks *are* named and this test would be
+    // asking the wrong question of the right page.
+    await waitFor(page, 'return document.querySelectorAll("svg.graph circle.node.of-narrative").length > 0;', 'the walk');
     await waitFor(page, 'return document.querySelectorAll("svg.graph text.node-label").length > 0;', 'the labels');
 
     const seen = await page.eval(GRAPH);
@@ -103,12 +108,14 @@ test('with a narrative open nothing outside the walk is named until it is hovere
       }));
       at(box.left + box.width / 2, box.top + box.height / 2);
       const on = svg.querySelectorAll('.layer-hover text').length;
+      const text = on ? svg.querySelector('.layer-hover text').textContent : null;
       svg.dispatchEvent(new PointerEvent('pointerleave', { bubbles: true, pointerId: 1 }));
       const off = svg.querySelectorAll('.layer-hover text').length;
       const title = mark.querySelector('title');
-      return { on, off, title: title ? title.textContent : null };`);
+      return { on, off, text, title: title ? title.textContent : null };`);
     assert.ok(hovered, 'there is a mark outside the walk to point at');
-    assert.equal(hovered.on, 1, 'the pointer names it');
+    assert.equal(hovered.on, 1, `the pointer names it (${hovered.title})`);
+    assert.ok(hovered.title.startsWith(hovered.text), 'with the name the mark carries');
     assert.equal(hovered.off, 0, 'and moving off takes the name away');
     assert.ok(hovered.title, 'the mark carries the whole of its name either way');
 

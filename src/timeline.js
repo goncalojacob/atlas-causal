@@ -80,7 +80,14 @@ const LABEL_WIDTH = 120;
 // events were named into the pane's edge. Not the width of a title, which
 // would be a sixth of the drawing spent on air: the room a short one needs,
 // with a long one still running to the edge as every label on the map does.
+//
+// A share of the drawing under that, because on a phone it is not room going
+// spare: 96 px of a 390 px pane is a third of what is left after the left
+// gutter, and it took the window band — the one control on this view — under
+// the forty pixels a thumb needs (`tests/phone-browser.test.mjs`).
 const RIGHT_GUTTER = 96;
+const RIGHT_GUTTER_SHARE = 0.07;
+const rightGutter = (paneWidth) => Math.min(RIGHT_GUTTER, Math.round(paneWidth * RIGHT_GUTTER_SHARE));
 // Room above the lanes for three lines that must not sit on top of one
 // another: what the map's borders are dated to, then the two years the
 // window's handles are at, then the axis's own ticks. They used to share one
@@ -219,7 +226,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   // know what overlaps; the height only once the lanes are known.
   const measure = () => {
     width = Math.max(container.clientWidth || 960, 320);
-    scale = createScale({ domain, range: [LABEL_WIDTH, width - RIGHT_GUTTER], counts, extent: atlas.extent });
+    scale = createScale({ domain, range: [LABEL_WIDTH, width - rightGutter(width)], counts, extent: atlas.extent });
     paneHeight = Math.max(0, container.clientHeight || 0);
   };
   const resize = () => {
