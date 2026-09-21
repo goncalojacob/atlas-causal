@@ -13744,7 +13744,17 @@ Wikidata; they are in `data/events/` with `status: retracted`.
      is the argument for a batch being a script and not a sequence of hand
      edits. The untracked files — the seven new edge records — survived.
 
-982. **No historical claim was written.** Every edge explanation is a
+982. **Batch 1's own commit was red, and deviation 798 says why.** Run 1016 on
+     `529b2515` failed the pure pass with rule 16 errors naming history
+     shards: `tools/lib/history.mjs` builds them out of the commits that
+     touched each record's file, so **the commit that writes a record makes
+     the shard describing it stale in that same commit**. 798 states the
+     remedy — commit the records, rebuild, commit the index, two turns of the
+     crank — and this run put records and index in one commit and re-learned
+     it. Batch 2a carried the rebuild and **run 1020 on the branch head is
+     green**. The remaining batches take the two commits.
+
+983. **No historical claim was written.** Every edge explanation is a
      paraphrase of a sentence the cited article carries at the cited revision,
      and every citation names the article, the revision and the section. No
      date was invented, no record was created, and nothing was merged into

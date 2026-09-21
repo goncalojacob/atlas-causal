@@ -268,6 +268,12 @@ at a time (`concurrency: import-wikidata`, never cancelling):
 - `import/run-m42-2026-09-21`, the walk over the twelve hinges of §6, queued
   behind it.
 
+**A batch lands in two commits, not one** (deviation 798, re-learned as 982):
+the records, then the rebuilt index. The history shards are built out of the
+commits that touch each record's file, so the commit that writes a record
+makes the shard describing it stale in that same commit. Batch 1's own commit
+was red for exactly that; the head of `m42` is green.
+
 **What the next fire does.** Fast-forward whichever import branch has
 finished into `m42` — that merge is the run's own commit, by the amendment of
 4 September — then the connection pass for what arrived: read the records,
