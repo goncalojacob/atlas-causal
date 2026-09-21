@@ -3769,3 +3769,56 @@ judgements:
   the 2011 Bahraini uprising under `arab-spring`, and `Q2992403` the
   Franco-Syrian war of 1920 under `interwar-period`. Both are in their
   parent's span and neither is in its lane.
+
+## 2w. Batch 24 — the same rule, deeper into the pool, and the edges it found
+
+*21 September, the fourth batch of the same fire. Batch 23's rule — **take the
+row whose item names a parent this atlas already holds** — run over rows 250
+to 700 of the world pool by sitelinks, which hold 38 more such rows. Eleven
+taken, seven landed, seven filed, and **eight edges**, because two of the
+seven earned one each from a different direction.*
+
+| the record | filed under | the edges it earned |
+| --- | --- | --- |
+| `franco-thai-war` | `world-war-ii` | `armistice-of-22-june-1940 --enabled--> franco-thai-war`, `1893-franco-siamese-crisis --precondition-of--> franco-thai-war` |
+| `2012-malian-coup-d-etat` | `mali-war` | `2012-tuareg-rebellion --caused--> 2012-malian-coup-d-etat` |
+| `2012-tuareg-rebellion` | `mali-war` | `libyan-civil-war --enabled--> 2012-tuareg-rebellion` |
+| `kerensky-krasnov-uprising` | `russian-civil-war` | `october-revolution --reacted-to--> kerensky-krasnov-uprising` |
+| `foibe-massacres` | `world-war-ii` | `world-war-ii --caused--> foibe-massacres` |
+| `treaty-of-peace-with-italy` | `paris-peace-treaties` | `world-war-ii --caused--> treaty-of-peace-with-italy` |
+| `war-in-somalia` | `somali-civil-war` | `somali-civil-war --caused--> war-in-somalia` |
+
+**The Franco-Thai war is what this rule is for.** Its § Background names two
+records this atlas already holds and nothing in it was this run's idea: *"Fall
+of France and the Armistice of 22 June 1940 led to the creation of Vichy
+Regime in Southern France. Vichy government then inherited its control over
+French colonial territories in both Africa and Asia. With weakened status of
+the French state both Phibun and the Japanese Empire saw opportunities in
+Indochina"*, and *"The events of Franco-Siamese Crisis of 1893 … ended with
+Siam losing the territories of Laos and Cambodia to France."* One import, two
+edges, and `1893-franco-siamese-crisis` — the corpus's own loneliest record,
+the leaf deviation 1020's browser test picks — stops being a leaf.
+
+**The Tuareg rebellion carries the other kind of find.** Its lead says the MNLA
+*"was formed by former insurgents and a significant number of heavily armed
+Tuaregs who fought in the Libyan Civil War"*, which is the mechanism behind an
+edge this atlas already had between Libya and Mali, now written where it
+belongs and as `enabled` rather than `caused`, because the same sentence dates
+the Tuareg claim to 1916.
+
+**One record needed its calendar written down.** `kerensky-krasnov-uprising`
+carries Wikidata's dates, which are the Julian ones the article gives in
+brackets — *"between 8 and 13 November 1917 [O.S. 26 and 31 October]"* — so
+the record says `when.calendar: julian`. Without it the rising is dated before
+the revolution it answered and rule 4 refuses the edge; with it, the arrow of
+time is the arrow the sources describe. **Nothing else on the record was
+touched and no date was changed.**
+
+**Four of the eleven did not land, and the tool refused all four**:
+`Q74109` (World War II in Albania), `Q714706` (the 1940–1944 insurgency in
+Chechnya) and `Q1208479` (the Georgian–Ossetian conflict of 1918–1920) for
+want of a lane — no place record, no lane from their point, none named in the
+seeds file — and `Q4499410` ("The Holocaust in Ukraine") for want of a date.
+The first three are a one-line fix in `data/imports/wikidata-seeds.json` for a
+later fire, which is exactly how `franco-thai-war` landed in this batch after
+being refused in batch 23.

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "foibe-massacres",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1294142",
+  "wikipedia": {
+    "en": "Foibe massacres"
+  },
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1294142"
+    }
+  ],
+  "title": "Foibe massacres",
+  "summary": "Wikidata item Q1294142, imported by tools/import/wikidata.mjs. The item's own description reads \"extrajudicial mass killings of Italian and other local populations in Istria and Dalmatia during and after the Second World War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1943,
+    "end": 1943,
+    "date": "1943-09"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "world-war-ii",
+  "actors": []
+}

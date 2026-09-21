@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2012-tuareg-rebellion--2012-malian-coup-d-etat--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2012 Malian coup d'état\", revision 1370102863, § lead"
+    }
+  ],
+  "from": "2012-tuareg-rebellion",
+  "to": "2012-malian-coup-d-etat",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The coup’s article gives the rebellion as the soldiers’ own grievance: it “began on 21 March that year, when mutinying Malian soldiers, displeased with the management of the Tuareg rebellion, attacked several locations in the capital Bamako, including the presidential palace, state television, and military barracks.”",
+  "dispute": null
+}

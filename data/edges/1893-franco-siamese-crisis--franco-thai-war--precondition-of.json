@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1893-franco-siamese-crisis--franco-thai-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Franco-Thai War\", revision 1375769371, § Background"
+    }
+  ],
+  "from": "1893-franco-siamese-crisis",
+  "to": "franco-thai-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The claim Thailand pressed in 1940 is the loss of 1893, and the war’s own § Background opens on it: “The events of Franco-Siamese Crisis of 1893 (Rattanakosin Era R.S.112) and Franco-Siamese Treaty of 1907 ended with Siam losing the territories of Laos and Cambodia to France. The crisis was seen as a national humiliation according to ‘Lost Territories’ narrative.” The territories fought over in 1940 are those territories.",
+  "dispute": null
+}

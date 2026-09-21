@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--treaty-of-peace-with-italy--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Paris between Italy and the Allied Powers\", revision 1373123064, § lead"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "treaty-of-peace-with-italy",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The treaty’s article says what it settled: it “was signed on 10 February 1947, formally ending World War II hostilities between the parties” and “came into general effect on 15 September 1947”. A peace is a thing a war produces, and this atlas already reads the armistice of 22 June 1940 and the Japanese instrument of surrender the same way.",
+  "dispute": null
+}
