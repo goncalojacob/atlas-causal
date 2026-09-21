@@ -75,6 +75,15 @@
         }
       ]
     },
+    "2011-egyptian-revolution--2011-yemeni-revolution--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "2011-egyptian-revolution--2013-egyptian-coup-d-etat--precondition-of": {
       "from": "git",
       "versions": [

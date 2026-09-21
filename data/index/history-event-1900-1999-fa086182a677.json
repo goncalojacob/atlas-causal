@@ -3828,6 +3828,15 @@
         }
       ]
     },
+    "afghan-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "algerian-war": {
       "from": "git",
       "versions": [
@@ -3938,6 +3947,15 @@
             "review"
           ],
           "on": "2026-09-20"
+        }
+      ]
+    },
+    "anglo-iraqi-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -6535,6 +6553,15 @@
         }
       ]
     },
+    "ethiopian-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "euro-adoption-1999": {
       "from": "git",
       "versions": [
@@ -7487,6 +7514,15 @@
         }
       ]
     },
+    "ifni-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "ilinden-preobrazhenie-uprising": {
       "from": "git",
       "versions": [
@@ -7656,6 +7692,15 @@
         }
       ]
     },
+    "international-convention-on-the-elimination-of-all-forms-of-racial-discrimination": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "international-covenant-on-civil-and-political-rights": {
       "from": "git",
       "versions": [
@@ -7741,6 +7786,15 @@
             "review"
           ],
           "on": "2026-09-20"
+        }
+      ]
+    },
+    "japan-korea-treaty-of-1907": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -9014,6 +9068,15 @@
         }
       ]
     },
+    "nepalese-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "nigerian-civil-war": {
       "from": "git",
       "versions": [
@@ -9147,6 +9210,24 @@
         {
           "first": true,
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "operation-reinhard": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "ottawa-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -9318,6 +9399,15 @@
             "parent"
           ],
           "on": "2026-09-20"
+        }
+      ]
+    },
+    "polish-ukrainian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -10846,6 +10936,15 @@
         }
       ]
     },
+    "slovak-hungarian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "slovak-national-uprising": {
       "from": "git",
       "versions": [
@@ -10939,6 +11038,15 @@
       ]
     },
     "soviet-japanese-border-conflicts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "soweto-uprising": {
       "from": "git",
       "versions": [
         {

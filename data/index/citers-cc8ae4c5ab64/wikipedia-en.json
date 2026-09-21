@@ -302,6 +302,12 @@
     },
     {
       "dissent": false,
+      "id": "2011-egyptian-revolution--2011-yemeni-revolution--inspired",
+      "kind": "edge",
+      "locator": "\"Yemeni revolution\", revision 1375746838, § lead and § 2011"
+    },
+    {
+      "dissent": false,
       "id": "2011-egyptian-revolution--2013-egyptian-coup-d-etat--precondition-of",
       "kind": "edge",
       "locator": "\"2013 Egyptian coup d'état\", revision 1369875339, § Background"
@@ -836,6 +842,18 @@
     },
     {
       "dissent": false,
+      "id": "ethiopian-civil-war--ogaden-war--enabled",
+      "kind": "edge",
+      "locator": "\"Ethiopian Civil War\", revision 1375950588, § Somali insurgency and Ogaden War"
+    },
+    {
+      "dissent": false,
+      "id": "ethiopian-civil-war--tigray-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Tigray war\", revision 1374637577, § Historical and political context"
+    },
+    {
+      "dissent": false,
       "id": "euro-adoption-1999--crisis-portugal--precondition-of",
       "kind": "edge",
       "locator": "\"2010–2014 Portuguese financial crisis\", revision 1372626457"
@@ -965,6 +983,12 @@
       "id": "first-sudanese-civil-war--second-sudanese-civil-war--caused",
       "kind": "edge",
       "locator": "\"First Sudanese Civil War\", revision 1375454294, § lead and § Impact"
+    },
+    {
+      "dissent": false,
+      "id": "first-vienna-award--slovak-hungarian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Slovak–Hungarian War\", revision 1370747590, § Prelude"
     },
     {
       "dissent": false,
@@ -1298,6 +1322,12 @@
     },
     {
       "dissent": false,
+      "id": "jameson-raid--second-boer-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Jameson Raid\", revision 1370624782, § lead"
+    },
+    {
+      "dissent": false,
       "id": "kashmir-conflict--indo-pakistani-war-of-1965--caused",
       "kind": "edge",
       "locator": "\"India–Pakistan war of 1965\", revision 1371230624, § Background"
@@ -1373,6 +1403,12 @@
       "id": "korean-war--treaty-of-san-francisco--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of San Francisco\", revision 1374408216"
+    },
+    {
+      "dissent": false,
+      "id": "kosovo-war--2001-insurgency-in-macedonia--precondition-of",
+      "kind": "edge",
+      "locator": "\"2001 insurgency in Macedonia\", revision 1375673043, § lead"
     },
     {
       "dissent": false,
@@ -1553,6 +1589,12 @@
       "id": "munich-agreement--molotov-ribbentrop-pact--enabled",
       "kind": "edge",
       "locator": "\"Munich Agreement\", revision 1372429724"
+    },
+    {
+      "dissent": false,
+      "id": "munich-agreement--slovak-hungarian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Slovak–Hungarian War\", revision 1370747590, § Prelude"
     },
     {
       "dissent": false,
@@ -2135,6 +2177,12 @@
       "id": "slave-trade-act-1807--slavery-abolition-act-1833--precondition-of",
       "kind": "edge",
       "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-afghan-war--afghan-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Afghan Civil War (1989–1992)\", revision 1371765193, § lead and § Background (1978–1989)"
     },
     {
       "dissent": false,
@@ -3194,6 +3242,12 @@
     },
     {
       "dissent": false,
+      "id": "world-war-i--polish-ukrainian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Polish–Ukrainian War\", revision 1372213817, § infobox and lead"
+    },
+    {
+      "dissent": false,
       "id": "world-war-i--sayfo--enabled",
       "kind": "edge",
       "locator": "\"Sayfo\", revision 1370631734"
@@ -3215,6 +3269,12 @@
       "id": "world-war-ii--20-july-plot--caused",
       "kind": "edge",
       "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--anglo-iraqi-war--enabled",
+      "kind": "edge",
+      "locator": "\"Anglo-Iraqi War\", revision 1372842948, § infobox and § Mandatory Iraq"
     },
     {
       "dissent": false,
@@ -3293,6 +3353,12 @@
       "id": "world-war-ii--massacres-of-poles-in-volhynia-and-eastern-galicia--enabled",
       "kind": "edge",
       "locator": "\"Massacres of Poles in Volhynia and Eastern Galicia\", revision 1372344283, § lead and § Background"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--operation-reinhard--enabled",
+      "kind": "edge",
+      "locator": "\"Operation Reinhard\", revision 1367661549, § lead and § Background"
     },
     {
       "dissent": false,

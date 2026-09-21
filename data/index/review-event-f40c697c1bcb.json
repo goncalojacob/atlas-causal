@@ -1710,6 +1710,33 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "2001-insurgency-in-macedonia",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2001 insurgency in Macedonia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -1995,7 +2022,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "2011-egyptian-revolution",
       "kind": "event",
       "origin": {
@@ -2110,6 +2137,33 @@
       "revised": null,
       "status": "active",
       "title": "2011 South Sudanese independence referendum"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "2011-yemeni-revolution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2011 Yemeni revolution"
     },
     {
       "authors": [
@@ -2483,6 +2537,33 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "afghan-civil-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Afghan Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -2570,6 +2651,35 @@
       "revised": "2026-09-20",
       "status": "active",
       "title": "Amsterdam Treaty"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "anglo-iraqi-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Anglo-Iraqi War"
     },
     {
       "authors": [
@@ -5213,6 +5323,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 2,
+      "id": "ethiopian-civil-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Ethiopian Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5778,7 +5915,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "first-vienna-award",
       "kind": "event",
       "origin": {
@@ -7299,6 +7436,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "revolution",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "jameson-raid",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Jameson Raid"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata"
@@ -7495,7 +7660,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "kosovo-war",
       "kind": "event",
       "origin": {
@@ -8596,7 +8761,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "munich-agreement",
       "kind": "event",
       "origin": {
@@ -8801,7 +8966,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "ogaden-war",
       "kind": "event",
       "origin": {
@@ -8878,6 +9043,34 @@
       "revised": null,
       "status": "active",
       "title": "Operation Car Wash, 2014"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "operation-reinhard",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "the-holocaust",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Reinhard"
     },
     {
       "authors": [
@@ -9274,6 +9467,34 @@
       "revised": "2026-09-20",
       "status": "active",
       "title": "Polish–Soviet War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "polish-ukrainian-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Polish–Ukrainian War"
     },
     {
       "authors": [
@@ -10325,7 +10546,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "second-boer-war",
       "kind": "event",
       "origin": {
@@ -10723,6 +10944,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 2,
+      "id": "slovak-hungarian-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Slovak–Hungarian War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata"
       ],
@@ -10847,7 +11096,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "soviet-afghan-war",
       "kind": "event",
       "origin": {
@@ -11824,6 +12073,34 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Thousand Days' War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "tigray-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Tigray war"
     },
     {
       "authors": [
@@ -13350,7 +13627,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 15,
+      "degree": 16,
       "id": "world-war-i",
       "kind": "event",
       "origin": {
@@ -13386,7 +13663,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 21,
+      "degree": 23,
       "id": "world-war-ii",
       "kind": "event",
       "origin": {

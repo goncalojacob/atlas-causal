@@ -704,6 +704,12 @@
     },
     {
       "dissent": false,
+      "id": "2001-insurgency-in-macedonia",
+      "kind": "event",
+      "locator": "Q817137"
+    },
+    {
+      "dissent": false,
       "id": "2001-portuguese-local-elections",
       "kind": "event",
       "locator": null
@@ -776,6 +782,12 @@
     },
     {
       "dissent": false,
+      "id": "2011-yemeni-revolution",
+      "kind": "event",
+      "locator": "Q210005"
+    },
+    {
+      "dissent": false,
       "id": "2013-egyptian-coup-d-etat",
       "kind": "event",
       "locator": "Q13605743"
@@ -830,6 +842,12 @@
     },
     {
       "dissent": false,
+      "id": "afghan-civil-war",
+      "kind": "event",
+      "locator": "Q2405009"
+    },
+    {
+      "dissent": false,
       "id": "algerian-war",
       "kind": "event",
       "locator": "Q200790"
@@ -839,6 +857,12 @@
       "id": "amsterdam-treaty",
       "kind": "event",
       "locator": "Q193739"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-iraqi-war",
+      "kind": "event",
+      "locator": "Q696848"
     },
     {
       "dissent": false,
@@ -1166,6 +1190,12 @@
     },
     {
       "dissent": false,
+      "id": "ethiopian-civil-war",
+      "kind": "event",
+      "locator": "Q257724"
+    },
+    {
+      "dissent": false,
       "id": "euromaidan",
       "kind": "event",
       "locator": "Q15224558"
@@ -1454,6 +1484,12 @@
     },
     {
       "dissent": false,
+      "id": "jameson-raid",
+      "kind": "event",
+      "locator": "Q916340"
+    },
+    {
+      "dissent": false,
       "id": "kargil-war",
       "kind": "event",
       "locator": "Q404517"
@@ -1628,6 +1664,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-reinhard",
+      "kind": "event",
+      "locator": "Q158044"
+    },
+    {
+      "dissent": false,
       "id": "orange-revolution",
       "kind": "event",
       "locator": "Q836386"
@@ -1679,6 +1721,12 @@
       "id": "polish-soviet-war",
       "kind": "event",
       "locator": "Q186284"
+    },
+    {
+      "dissent": false,
+      "id": "polish-ukrainian-war",
+      "kind": "event",
+      "locator": "Q842774"
     },
     {
       "dissent": false,
@@ -1868,6 +1916,12 @@
     },
     {
       "dissent": false,
+      "id": "slovak-hungarian-war",
+      "kind": "event",
+      "locator": "Q177109"
+    },
+    {
+      "dissent": false,
       "id": "slovak-national-uprising",
       "kind": "event",
       "locator": "Q163780"
@@ -1931,6 +1985,12 @@
       "id": "thousand-days-war",
       "kind": "event",
       "locator": "Q43378"
+    },
+    {
+      "dissent": false,
+      "id": "tigray-war",
+      "kind": "event",
+      "locator": "Q101231200"
     },
     {
       "dissent": false,

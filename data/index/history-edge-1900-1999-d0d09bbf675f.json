@@ -2064,6 +2064,24 @@
         }
       ]
     },
+    "ethiopian-civil-war--ogaden-war--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "ethiopian-civil-war--tigray-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "euro-adoption-1999--crisis-portugal--precondition-of": {
       "from": "git",
       "versions": [
@@ -2190,6 +2208,15 @@
       ]
     },
     "first-sudanese-civil-war--second-sudanese-civil-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "first-vienna-award--slovak-hungarian-war--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -2648,6 +2675,15 @@
         }
       ]
     },
+    "kosovo-war--2001-insurgency-in-macedonia--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "kosovo-war--2008-kosovo-declaration-of-independence--precondition-of": {
       "from": "git",
       "versions": [
@@ -2936,6 +2972,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "munich-agreement--slovak-hungarian-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3759,6 +3804,15 @@
         }
       ]
     },
+    "soviet-afghan-war--afghan-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "soviet-afghan-war--dissolution-of-the-soviet-union--precondition-of": {
       "from": "git",
       "versions": [
@@ -4461,6 +4515,15 @@
         }
       ]
     },
+    "world-war-i--polish-ukrainian-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "world-war-i--sayfo--enabled": {
       "from": "git",
       "versions": [
@@ -4492,6 +4555,15 @@
         {
           "first": true,
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "world-war-ii--anglo-iraqi-war--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -4610,6 +4682,15 @@
       ]
     },
     "world-war-ii--massacres-of-poles-in-volhynia-and-eastern-galicia--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "world-war-ii--operation-reinhard--enabled": {
       "from": "git",
       "versions": [
         {

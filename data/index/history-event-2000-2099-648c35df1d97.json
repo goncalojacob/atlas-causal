@@ -64,6 +64,15 @@
         }
       ]
     },
+    "2001-insurgency-in-macedonia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "2001-portuguese-local-elections": {
       "from": "git",
       "versions": [
@@ -909,6 +918,15 @@
       ]
     },
     "2011-south-sudanese-independence-referendum": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "2011-yemeni-revolution": {
       "from": "git",
       "versions": [
         {
@@ -2572,6 +2590,15 @@
       ]
     },
     "anti-counterfeiting-trade-agreement": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "assassination-of-charlie-kirk": {
       "from": "git",
       "versions": [
         {
@@ -4269,6 +4296,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
           "on": "2026-09-21"
         }
       ]

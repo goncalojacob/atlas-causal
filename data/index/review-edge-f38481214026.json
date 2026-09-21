@@ -1601,6 +1601,34 @@
       ],
       "created": "2026-09-21",
       "from": "2011-egyptian-revolution",
+      "id": "2011-egyptian-revolution--2011-yemeni-revolution--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2011-yemeni-revolution",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "2011-egyptian-revolution",
       "id": "2011-egyptian-revolution--2013-egyptian-coup-d-etat--precondition-of",
       "kind": "edge",
       "origin": {
@@ -5299,6 +5327,62 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "ethiopian-civil-war",
+      "id": "ethiopian-civil-war--ogaden-war--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "ogaden-war",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "ethiopian-civil-war",
+      "id": "ethiopian-civil-war--tigray-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "tigray-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "reis-2013-portuguese-slump",
         "wikipedia-en"
       ],
@@ -5741,6 +5825,34 @@
       "status": "active",
       "to": "second-sudanese-civil-war",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "first-vienna-award",
+      "id": "first-vienna-award--slovak-hungarian-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "slovak-hungarian-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -7147,6 +7259,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
+      "from": "jameson-raid",
+      "id": "jameson-raid--second-boer-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-boer-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
       "from": "kashmir-conflict",
       "id": "kashmir-conflict--indo-pakistani-war-of-1965--caused",
       "kind": "edge",
@@ -7333,6 +7473,34 @@
       "revised": null,
       "status": "active",
       "to": "treaty-of-san-francisco",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "kosovo-war",
+      "id": "kosovo-war--2001-insurgency-in-macedonia--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2001-insurgency-in-macedonia",
       "type": "precondition-of"
     },
     {
@@ -8280,6 +8448,34 @@
       "status": "active",
       "to": "molotov-ribbentrop-pact",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "munich-agreement",
+      "id": "munich-agreement--slovak-hungarian-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "slovak-hungarian-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -10784,6 +10980,34 @@
       "revised": null,
       "status": "active",
       "to": "slavery-abolition-act-1833",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "soviet-afghan-war",
+      "id": "soviet-afghan-war--afghan-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "afghan-civil-war",
       "type": "precondition-of"
     },
     {
@@ -14106,6 +14330,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-i",
+      "id": "world-war-i--polish-ukrainian-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "polish-ukrainian-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "gaunt-2006-massacres-resistance-protectors"
       ],
@@ -14185,6 +14437,34 @@
       "status": "active",
       "to": "20-july-plot",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-ii",
+      "id": "world-war-ii--anglo-iraqi-war--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "anglo-iraqi-war",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -14524,6 +14804,34 @@
       "revised": null,
       "status": "active",
       "to": "massacres-of-poles-in-volhynia-and-eastern-galicia",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "world-war-ii",
+      "id": "world-war-ii--operation-reinhard--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "operation-reinhard",
       "type": "enabled"
     },
     {
