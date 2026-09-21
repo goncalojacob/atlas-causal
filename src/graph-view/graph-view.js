@@ -599,9 +599,12 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // And there is no picture at all until the first arrangement lands, which
     // it does on this turn at every size this atlas has held (layout-runner).
     if (!laid) return;
-    // Then where the camera stands, which is not one of the reader's gestures
-    // and has to be settled before the rectangle below is read off it.
-    frameCamera(s);
+    // Then where the camera stands, which is not one of the reader's gestures.
+    // The rectangle on the screen is what a frame is computed against and does
+    // not move with the camera, so it is measured first and the rectangle in
+    // the graph's own coordinates read off it afterwards, under the transform
+    // this may have just changed.
+    frameCamera(s, visibleBox());
     const box = view();
     const key = renderKey(s, transform.x, transform.y, transform.k, shardsArrived(atlas),
       Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
@@ -945,10 +948,20 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // its own walk — frames again, and a pan, a zoom or a click inside the lens
   // does not. At rest it collapses to one string, so moving the band never
   // re-fits a picture the reader is already holding.
+  //
+  // **The rectangle itself is in that key**, and it has to be: a frame is a
+  // set of nodes put inside a rectangle, and one measured against a rectangle
+  // that no longer exists is not a frame of anything. The first drawing of a
+  // view lands before the pane has settled — the masthead wraps, the panel
+  // takes its remembered width — and a walk framed to a pane 30 px taller than
+  // the one it ends in loses its outermost steps off the bottom. The observer
+  // at the end of this file throws the measurement away when the pane changes
+  // size; keying on what was measured, rather than on the size read live off
+  // the element, is what makes the next drawing act on it.
   let framedFor = null;
-  function frameCamera(s) {
+  function frameCamera(s, seen) {
     const working = workingOf(s);
-    const key = working.lens ? arrangedFor : '';
+    const key = working.lens ? `${arrangedFor}|${seen.x0},${seen.y0},${seen.x1},${seen.y1}` : '';
     if (key === framedFor) return;
     framedFor = key;
     if (!working.lens) {
@@ -956,7 +969,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       return;
     }
     const wanted = [working.shown, working.lensFocus].filter(Boolean);
-    const at = frameFor(laid.nodes, wanted, visibleBox(), {
+    const at = frameFor(laid.nodes, wanted, seen, {
       min: MIN_ZOOM, max: FIT_ZOOM, pad: FRAME_PAD,
     });
     // A lens the arrangement holds no node of leaves the camera alone: there
