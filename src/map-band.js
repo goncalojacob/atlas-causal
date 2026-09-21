@@ -49,7 +49,7 @@ import { createTimelineScale } from './timeline-scale.js';
 import { resolveWindow, centuryCounts } from './util/window.js';
 import { renderKey } from './render-key.js';
 import {
-  HANDLE_WIDTH, bandEvents, bandProfile, bandShade, bandHandles, bindWindowGestures,
+  HANDLE_WIDTH, profileEvents, bandProfile, bandShade, bandHandles, bindWindowGestures,
 } from './window-band.js';
 
 // The strip, in the units of its own `viewBox`. Not tokens and not type sizes:
@@ -147,12 +147,21 @@ export function createMapBand(container, { atlas, state } = {}) {
       Object.entries(layers).map(([name, g]) => [name, reuse(g)]),
     );
     const window = resolveWindow(s, atlas.extent, atlas.opens);
-    // Where the events are, over what the atlas is showing: `bandEvents` is
-    // M65's `shown`, so a selection that has narrowed the map has narrowed
-    // this too. Drawn at `density.js`'s own absolute scale, which is the
-    // scale the timeline's stubs and the masthead's hint are drawn at.
-    const d = bandProfile(bandEvents(atlas, s), scale, {
-      floor: STRIP.height, openEnd: domain[1],
+    // Where the events are, over **what the reader has chosen**: since M76
+    // `profileEvents` is the lens's own half and not the ring around it, so a
+    // band saying "Portugal" is Portugal's events and nothing else, and with
+    // nothing chosen it is the resting picture as before.
+    //
+    // At the set's own scale — `own` — because this is one row over one set
+    // and the absolute scale spent the narrowing on a pixel: the world's
+    // tallest column was 6 px and Portugal's was 5, inside a strip 44 deep.
+    // The body of the band is the cap, so the busiest column reaches the top
+    // of it and the row the two years are written on is still clear.
+    const d = bandProfile(profileEvents(atlas, s), scale, {
+      floor: STRIP.height,
+      openEnd: domain[1],
+      own: true,
+      max: STRIP.height - STRIP.marker,
     });
     if (d) into.profile.take('path', { d, class: 'bar stub', 'aria-hidden': 'true' });
     const box = {

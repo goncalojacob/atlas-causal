@@ -154,10 +154,21 @@ test('a selection narrows the band’s events exactly as it narrows the views', 
     'and a part of the chosen event is there');
 });
 
-test('the lanes, the masthead’s count and the band all ask the one function', async () => {
-  for (const file of ['src/timeline.js', 'src/window-control.js', 'src/map-band.js']) {
+// M64's rule, said the way M76 left it: the lanes and the masthead's count
+// still ask `bandEvents` — what the views draw — and the map's band asks
+// `profileEvents`, which is `bandEvents` narrowed to the selection's own half
+// in the very same module. One answer about what a band is a band over, and it
+// is still `window-band.js`'s; what M76 added is a second question asked of it
+// (the owner, 21 September: *"should show only those events"*).
+test('the lanes, the masthead’s count and the band all ask the one module', async () => {
+  for (const file of ['src/timeline.js', 'src/window-control.js']) {
     assert.match(await read(file), /bandEvents\(/, `${file} asks bandEvents`);
   }
+  const band = await read('src/map-band.js');
+  assert.match(band, /profileEvents\(/, 'the map’s band asks for the selection’s own events');
+  assert.match(band, /from '\.\/window-band\.js'/, 'and asks the same module for them');
+  assert.match(await read('src/window-band.js'), /export function profileEvents/,
+    'which is where the one answer lives');
 });
 
 test('over the repository’s own corpus the band is the shown set, whatever the state', async () => {

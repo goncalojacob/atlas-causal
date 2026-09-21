@@ -51,21 +51,30 @@ const edge = (from, to) => [`${from}--${to}--caused`, {
   id: `${from}--${to}--caused`, from, to, type: 'caused', confidence: 'consensus', status: 'active',
 }];
 
+// `alfa` stands on two battles in the same year, so its own column holds more
+// than one event: a profile whose busiest column holds exactly one has no
+// density to draw and is the row of ticks it has always been, which is
+// asserted below as the other half of the same rule.
 function topology() {
+  const belligerent = [{ actor: 'alfa', role: 'belligerent' }];
   const events = [
-    event('war', { when: { start: 1500, end: 1520 }, actors: [{ actor: 'alfa', role: 'belligerent' }] }),
-    event('battle-a', { parent: 'war', when: { start: 1505, end: 1505 } }),
+    event('war', { when: { start: 1500, end: 1520 } }),
+    event('edict', { when: { start: 1500, end: 1500 } }),
+    event('decree', { when: { start: 1500, end: 1500 } }),
+    event('battle-a', { parent: 'war', when: { start: 1505, end: 1505 }, actors: belligerent }),
+    event('battle-c', { parent: 'war', when: { start: 1505, end: 1505 }, actors: belligerent }),
     event('battle-b', { parent: 'war', when: { start: 1510, end: 1510 } }),
     event('treaty', { when: { start: 1521, end: 1521 } }),
     event('elsewhere', { when: { start: 1600, end: 1600 } }),
   ];
   const edges = new Map([edge('battle-a', 'treaty')]);
   const actors = new Map([['alfa', { id: 'alfa', name: 'Alfa', status: 'active', type: 'polity' }]]);
+  const byId = new Map(events.map((e) => [e.id, e]));
   return {
     activeEvents: events,
-    events: new Map(events.map((e) => [e.id, e])),
+    events: byId,
     edges,
-    childrenOf: new Map([['war', ['battle-a', 'battle-b']]]),
+    childrenOf: new Map([['war', ['battle-a', 'battle-c', 'battle-b']]]),
     adjacency: buildAdjacency(events, [...edges.values()]),
     actors,
     places: new Map(),
@@ -73,7 +82,10 @@ function topology() {
     narratives: new Map(),
     relations: new Map(),
     regions: [{ id: 'europe', label: 'Europe' }],
-    eventsByActor: new Map([['alfa', [{ event: events[0], role: 'belligerent' }]]]),
+    eventsByActor: new Map([['alfa', [
+      { event: byId.get('battle-a'), role: 'belligerent' },
+      { event: byId.get('battle-c'), role: 'belligerent' },
+    ]]]),
     extent: { min: 1500, max: 1600 },
     opens: null,
     resolve: (id) => (actors.has(id) ? { kind: 'actor', id } : null),
@@ -109,8 +121,8 @@ test('with a lens on, the profile is over the lens’s own events and not its ri
 test('choosing an event narrows the profile to that event and its parts (M65)', () => {
   const t = topology();
   const chosen = profileEvents(t, at({ selected: 'war' })).map((e) => e.id);
-  assert.deepEqual(sorted(chosen), ['battle-a', 'battle-b', 'war'],
-    'the war and the two battles inside it, and not the treaty one hop away');
+  assert.deepEqual(sorted(chosen), ['battle-a', 'battle-b', 'battle-c', 'war'],
+    'the war and the battles inside it, and not the treaty one hop away');
 });
 
 test('with nothing chosen the profile is the resting picture, exactly as it was', () => {
@@ -159,15 +171,21 @@ test('the tallest column of a profile reaches the band’s own floor', () => {
   });
   const body = STRIP.height - STRIP.marker;
   const heights = (d) => [...d.matchAll(/M[-\d.]+ [-\d.]+h[-\d.]+v([\d.]+)/g)].map((m) => Number(m[1]));
+  const tallestOf = (state) => Math.max(...heights(bandProfile(profileEvents(t, state), scale, {
+    floor: STRIP.height, openEnd: 1601, own: true, min: 3, max: body,
+  })));
   for (const state of [at({}), at({ selected: 'war' }), at({ actor: 'alfa' })]) {
-    const d = bandProfile(profileEvents(t, state), scale, {
-      floor: STRIP.height, openEnd: 1601, own: true, min: 3, max: body,
-    });
-    const tall = Math.max(...heights(d));
+    const tall = tallestOf(state);
     assert.equal(tall, body, 'the busiest column fills the band’s body, whatever set it is over');
     assert.ok(tall <= STRIP.height - STRIP.marker,
       'and never reaches the row the two years are written on');
   }
+  // The other half of the same rule: a set whose busiest column holds one
+  // event has no density to draw, and drawing it at full height would be the
+  // band claiming a heap where there is a single record. It stays the tick it
+  // has always been.
+  assert.equal(tallestOf(at({ selected: 'treaty' })), 3,
+    'one event on its own is still one tick and not a column to the ceiling');
 });
 
 test('its own scale is one option and not a second drawing', () => {
