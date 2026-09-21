@@ -13,12 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-06",
+  "revised": "2026-09-20",
   "origin": {
     "tool": "assistant"
   },
   "review": {
-    "status": "draft"
+    "status": "draft",
+    "flags": [
+      "m69-categorised"
+    ]
   },
   "sources": [
     {
@@ -40,6 +43,7 @@
   },
   "place": "lisbon",
   "region": null,
+  "category": "election",
   "actors": [
     {
       "actor": "mario-soares",

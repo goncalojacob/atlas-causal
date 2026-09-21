@@ -2342,6 +2342,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "macqueen-1997-decolonization",
         "rosas-1994-estado-novo"
@@ -2355,9 +2356,12 @@
       },
       "parent": "portuguese-colonial-war-1961-1974",
       "review": {
+        "flags": [
+          "m69-categorised"
+        ],
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "Beginning of the war in Angola"
     },
@@ -2600,6 +2604,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "meneses-2004-portugal-1914-1926"
       ],
@@ -2612,9 +2617,12 @@
       },
       "parent": "world-war-i",
       "review": {
+        "flags": [
+          "m69-categorised"
+        ],
         "status": "draft"
       },
-      "revised": "2026-09-15",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "Battle of the Lys"
     },
@@ -3088,6 +3096,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "election",
       "cites": [
         "maxwell-1995-making-of-portuguese-democracy",
         "telo-2007-historia-contemporanea"
@@ -3100,9 +3109,12 @@
         "tool": "assistant"
       },
       "review": {
+        "flags": [
+          "m69-categorised"
+        ],
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "Constituent Assembly election"
     },
@@ -4761,6 +4773,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "meneses-2004-portugal-1914-1926"
       ],
@@ -4773,9 +4786,12 @@
       },
       "parent": "world-war-i",
       "review": {
+        "flags": [
+          "m69-categorised"
+        ],
         "status": "draft"
       },
-      "revised": "2026-09-15",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "Germany declares war on Portugal"
     },
@@ -4963,6 +4979,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "macqueen-1997-decolonization"
       ],
@@ -4975,9 +4992,12 @@
       },
       "parent": "portuguese-colonial-war-1961-1974",
       "review": {
+        "flags": [
+          "m69-categorised"
+        ],
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "Beginning of the war in Guinea"
     },
@@ -5765,6 +5785,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "election",
       "cites": [
         "telo-2007-historia-contemporanea",
         "costa-pinto-2003-contemporary-portugal"
@@ -5777,9 +5798,12 @@
         "tool": "assistant"
       },
       "review": {
+        "flags": [
+          "m69-categorised"
+        ],
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "First legislative election under the constitution"
     },
@@ -5790,6 +5814,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "election",
       "cites": [
         "cne-legislative-2015",
         "costa-pinto-teixeira-2019-political-institutions"
@@ -5803,12 +5828,13 @@
       },
       "review": {
         "flags": [
-          "date"
+          "date",
+          "m69-categorised"
         ],
         "note": "Filed in a run that could not reach a source: no date on this record has been checked against one.",
         "status": "draft"
       },
-      "revised": "2026-09-08",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "Legislative election of 2015"
     },
@@ -5819,6 +5845,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "election",
       "cites": [
         "cne-legislative-2019",
         "costa-pinto-teixeira-2019-political-institutions"
@@ -5832,12 +5859,13 @@
       },
       "review": {
         "flags": [
-          "date"
+          "date",
+          "m69-categorised"
         ],
         "note": "Filed in a run that could not reach a source: no date on this record has been checked against one.",
         "status": "draft"
       },
-      "revised": "2026-09-08",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "Legislative election of 2019"
     },
@@ -5848,6 +5876,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "election",
       "cites": [
         "cne-legislative-2022",
         "costa-pinto-teixeira-2019-political-institutions"
@@ -5861,12 +5890,13 @@
       },
       "review": {
         "flags": [
-          "date"
+          "date",
+          "m69-categorised"
         ],
         "note": "Filed in a run that could not reach a source: no date on this record has been checked against one.",
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "Legislative election of 2022"
     },
@@ -5877,6 +5907,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "election",
       "cites": [
         "cne-legislative-2024",
         "costa-pinto-teixeira-2019-political-institutions"
@@ -5891,12 +5922,13 @@
       "review": {
         "flags": [
           "date",
-          "figures"
+          "figures",
+          "m69-categorised"
         ],
         "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. The summary carries a number that was written from memory. Check it, or take it out.",
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "Legislative election of 2024"
     },
@@ -5907,6 +5939,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "election",
       "cites": [
         "cne-legislative-2025",
         "costa-pinto-teixeira-2019-political-institutions"
@@ -5921,12 +5954,13 @@
       "review": {
         "flags": [
           "claim",
-          "date"
+          "date",
+          "m69-categorised"
         ],
         "note": "Filed in a run that could not reach a source: no date on this record has been checked against one. The summary says more than the dates do, and what it adds was written from memory rather than read in a source.",
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "Legislative election of 2025"
     },
@@ -6348,6 +6382,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "macqueen-1997-decolonization"
       ],
@@ -6360,9 +6395,12 @@
       },
       "parent": "portuguese-colonial-war-1961-1974",
       "review": {
+        "flags": [
+          "m69-categorised"
+        ],
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "Beginning of the war in Mozambique"
     },
@@ -6499,6 +6537,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "telo-2007-historia-contemporanea",
         "costa-pinto-2003-contemporary-portugal"
@@ -6512,9 +6551,12 @@
       },
       "parent": "estado-novo-1933-1974",
       "review": {
+        "flags": [
+          "m69-categorised"
+        ],
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-20",
       "status": "active",
       "title": "Portugal signs the North Atlantic Treaty"
     },

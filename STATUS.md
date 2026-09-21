@@ -13,6 +13,28 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-21, after **M69** (`docs/m69-brief.md`, on the branch `m69`, lane B):
+**four things the backlog had carried for weeks, measured before they were
+touched.** (1) The **973 records with no standing** — every one written by the
+CShapes import, 675 presences, 297 actors and its source record — are `draft`
+now, flagged `standing-backfilled` and `imported-by-cshapes`: **973 → 0**,
+warnings **1,213 → 240**, the queue **9,338 → 10,311**. `review` is the only
+key that was written; nothing a record claims changed. (2) The **two
+`allied-with` relations** M31-1 left are **both refused**: the condition was
+that the source support `member-of`, and both cite two printed books with no
+locator and no checked citation, so nothing on either record can settle the
+editorial question M31-1 reserved. (3) **Thirteen of the sixteen** titles the
+category pass declined carry the table's answer — 5 `war`, 7 `election`, 1
+`treaty`; events with a category **226 → 239**, active **78 → 91**. Three are
+refused, `constitutional-revision-1959` among them: its summary is a
+constitution being revised, which is `law`, and the table reached it on the
+word "elections" in a title about ending them. (4) The **deploy is green** and
+the atlas is published at **https://goncalojacob.github.io/atlas-causal/** —
+run 3 on `main`, every step green including `deploy-pages`; nothing was wrong
+and the workflow was not touched. Measured and left: the class table now
+reaches 307 events and 94 carry no category, because the category pass has not
+been re-run since M40 and M42 imported the world.
+
 2026-09-20, after **M67** (`docs/m67-brief.md`, on `m0`): **the rest of the
 corpus finds its parents.** M65 left the resting picture at 242 of 309 main
 events and said it would not feel like much until more of the 242 had somewhere
@@ -2172,8 +2194,10 @@ The owner's list in full is in the history file. Still waiting:
 1. The `CONTRIBUTION_PAT` secret, without which `contribution.yml` stops at
    its first step; then one bundle end to end — which H9's item 5 changed the
    shape of, and nothing has run since.
-2. Two settings the agent cannot make: `delete_branch_on_merge`, and
-   Pages → Source: **GitHub Actions**, before the first merge to `main`.
+2. One setting the agent cannot make: `delete_branch_on_merge`.
+   ~~Pages → Source: **GitHub Actions**~~ was made on 20 September
+   (`build_type: workflow`), and the next merge to `main` published: the atlas
+   is at **https://goncalojacob.github.io/atlas-causal/** (M69, item 4).
 3. Review and merge PR #1; then the test dataset — `node tools/serve.mjs` →
    `review.html`, 485 records unread, the twelve `disputed` edges first.
 4. Write the first records of the 1415→ period (`tools/new-record.mjs`).
@@ -2185,11 +2209,19 @@ The owner's list in full is in the history file. Still waiting:
    on the review's owner questions: an actor or place with no events is not a
    lens (R8), and a contribution's pull request carries neither the index nor
    the pages (R2/R12). Both are one commit to undo.
-7. **The 1,040 records with no standing.** The validator now warns about
-   every active record carrying neither `review.status` nor a signature —
-   the actors and presences the CShapes import wrote before it said `draft`.
-   Backfilling them is a data change, so H9 did not make it; until somebody
-   does, `node tools/validate.mjs` ends with a line counting them.
+7. ~~**The 1,040 records with no standing.**~~ **Closed by M69**: 973 of them
+   were left, all written by the CShapes import, and they are `draft` now,
+   flagged `standing-backfilled` and `imported-by-cshapes`. The `unread`
+   warning fires on nothing under `data/`.
+8. **The category pass has not been re-run since the world arrived.** M69
+   measured it: the class table of `data/imports/wikidata-seeds.json` reaches
+   **307** events and **94** carry no category. About forty are active events
+   an import titled — `korean-war`, `treaty-of-versailles`, `gulf-war` — and
+   `node tools/migrate/categories.mjs` would file every one of them with no
+   judgement required, because M40 and M42 landed after the pass ran. Nine
+   more are hand-written titles that arrived since the sixteen and were never
+   put to the table (named in `docs/m69-categories.md`); those are a person's,
+   the way the sixteen were.
 
 ## Open questions
 
@@ -2203,6 +2235,16 @@ In full in the history file. The ones that decide something:
   **M31-1 re-typed the ten** on the branch `m31`, so Portugal's card says the
   word the claim always meant. What is left is the owner's: the two
   `allied-with` records M31-1 did not touch, named in its paragraph above.
+  **M69 measured both and refused both**, under the condition it was given —
+  re-type only if the source on the record supports `member-of`. Each cites
+  `telo-2007-historia-contemporanea` and `costa-pinto-2003-contemporary-portugal`
+  with **no locator, no DOI, no ISBN and no entry in `review.citations`**, so
+  nothing on either record settles the editorial question M31-1 reserved:
+  whether the atlas means NATO the alliance or NATO the membership, and which
+  actor joined the Community, the regime or the state. It is not a question of
+  shape — `european-economic-community` is a polity and rule 19 allows a
+  polity at the `to` end — and it stays the owner's, or a reviewer's with the
+  books open.
 - **Does the role vocabulary close, and to what? Answered and half done.**
   The owner approved `docs/roles-mapping.md` — the list of 31 — on 5
   September, and **M30a-3 wrote `data/roles.json` and the `role-unknown`
@@ -2222,7 +2264,14 @@ In full in the history file. The ones that decide something:
   files `constitutional-revision-1959` — a `law` — as an `election`.
   Overruling either is one edit to `tools/migrate/categories.mjs` and one
   re-run; the 16 are named above with what the table would have said, so
-  overruling the second costs nothing but the owner's word.
+  overruling the second costs nothing but the owner's word. **Answered by the
+  owner on 20 September and done by M69, without overruling either**: rather
+  than letting the tool read a composed title, the sixteen were read one at a
+  time and the table's answer applied where the record's own body confirms it.
+  **Thirteen did; three did not** — `constitutional-revision-1959`,
+  `covid-state-of-emergency-2020` and `portugal-backs-franco-1936`, each argued
+  in `docs/m69-categories.md`. Amendment A5 stands: the tool still reads only a
+  title an import copied.
 - **Seventeen Wikidata classes have no category** (amendment A17). Fifty of
   the sixty-seven event classes in `data/imports/wikidata-seeds.json` are
   filled — the wars, the treaties, the elections, the coup, the disasters and
@@ -12999,6 +13048,234 @@ this milestone writes no edge.
      and a comment between the two keys was enough to fail it. The assertion now
      says the thing it means. **Their workflow file was not touched**, which is
      the lower-collision half of the same fix.
+## M69 — four things the backlog had carried, measured before they were touched
+
+The owner, 20 September: *"you can do everything that is left including what
+was in the backlog."* Lane B's first milestone, on the branch `m69`
+(`docs/run-protocol.md`, amendment of 21 September). None of the four is a
+feature; each is a line in "Next" or "Open questions" that had waited for a
+word. Two of them wrote records, one refused to, and one only had to be read.
+
+### 1. The 973 import records with no standing — 973 → 0
+
+**Before: 973. After: 0.** H9 added the `unread` warning — a record with
+neither `review.status` nor a signature has no standing at all, so `isDraft`
+says no and `isReviewed` says no, and it is in no queue and on no dashboard
+(health review of 6 September, R10) — and then left the data alone, because
+backfilling it is a data change. It counted **1,040** that day. This run
+measured **973**: every one of them written by the CShapes import, **675
+presences, 297 actors and the CShapes source record**, and not one of them
+carrying a `review` key at all.
+
+They are `draft` now, which is the true answer and not a convenient one: no
+person has read any of them. Two flags say what the record does not otherwise
+say where a reviewer will look — **`standing-backfilled`**, the status was
+written afterwards and not by whoever created the record, and
+**`imported-by-cshapes`**, which import did create it. Both are the reviewer's
+to clear and signing clears them.
+
+**Standing and not content.** `review` is the only key
+`tools/migrate/backfill-standing.mjs` writes, and `tests/backfill-standing.test.mjs`
+holds it to that: every other key comes back the value it was. Nothing read a
+summary, a date, an actor or a source, and nothing wrote one.
+
+**Four refusals, each with a case.** A record that already has a status or a
+signature — nothing a person decided is overwritten. A record that is not
+active — a tombstone is out of the corpus and no reviewer is waiting on it,
+which is the line the `unread` warning itself draws. A record with no
+`origin.tool` — there is no import to name, and whether somebody's unmarked
+record is a draft is a different question. And `reviewed`, which is a person's
+act.
+
+**What moved with it:** the validator's warnings **1,213 → 240**, the review
+queue **9,338 → 10,311**, and the `unread` line is gone from the output
+entirely. The cap in `tools/validate.mjs` stays and its comment now says why:
+the cap is about how many lines a rule may print, not about which rule, and
+`presence-outside-actor-when` holds it open today.
+
+### 2. The two `allied-with` relations that mean `member-of` — both refused
+
+**Before: 3 active `allied-with`, 15 active `member-of`. After: unchanged.**
+The brief's condition was *"only if the source on the record supports
+`member-of`"*, and on both records it cannot be met.
+
+Both cite `telo-2007-historia-contemporanea` and
+`costa-pinto-2003-contemporary-portugal` — two printed books, **no DOI, no
+ISBN, no page locator on either citation, and no entry in `review.citations`**:
+nobody has opened either book against either record, and this sandbox cannot.
+The whole corpus still stands at 11,061 of 11,061 citations unchecked. A
+citation with no locator that nobody has read cannot be said to support one
+type over another, and saying it does would be the unverified claim this
+milestone exists not to make.
+
+- **`estado-novo--nato--allied-with`.** M31-1 left it because NATO is an
+  alliance as well as a membership and which the atlas means is an editorial
+  decision. That is precisely the question a source would have to settle, and
+  the record's own corpus leans the other way: the event is
+  `nato-founding-1949`, "Portugal signs the North Atlantic Treaty", which this
+  run filed as a `treaty`.
+- **`third-portuguese-republic--european-economic-community--allied-with`.**
+  M31-1 left it because it is written from the regime and not the state, so
+  re-typing it would silently answer a second question — which actor joins a
+  community. The shape is not what stops it: `european-economic-community` is
+  an `actorType: polity`, and rule 19 allows a polity at the `to` end of
+  `member-of` since M30a-2. Only the source could stop or start it, and the
+  source has not been read.
+
+The third active `allied-with`, `ecologist-party-the-greens--pcp--allied-with`,
+is not one of the two and is an electoral alliance, which is what the type
+means.
+
+### 3. The sixteen the category pass declined — 13 applied, 3 refused
+
+**Events with a category: 226 → 239; active: 78 → 91.** M32b-2 read only a
+title an import copied (amendment A5) and listed the sixteen hand-written ones
+with what the class table would have said. Thirteen of those bodies say what
+the table says: **5 `war`, 7 `election`, 1 `treaty`**, each flagged
+`m69-categorised`, and nothing else on any of them changed.
+
+**The table's answer is the only answer any of them could be given.** Writing a
+different category would be this run deciding what an event was, which is the
+composition amendment A5 refused. So where a body called for something else,
+the answer was to refuse and say so:
+
+- **`constitutional-revision-1959`** — the owner's own example. Its summary
+  says the constitution was revised so the president would be chosen by an
+  electoral college; that is the state changing what the rules are, which is
+  `law`. The table reached it on the word "elections" in a title about ending
+  them.
+- **`covid-state-of-emergency-2020`** — the event is the declaration and its
+  decrees, not the epidemic. `disaster` is harm from something nobody chose;
+  this record is what the state chose to do.
+- **`portugal-backs-franco-1936`** — the war in the title is somebody else's.
+  The record is Portugal's policy towards it, and ends "the point where the
+  regime's foreign policy is set for the next twenty years."
+
+The argument per record, in the records' own words, is `docs/m69-categories.md`.
+`tests/m69.test.mjs` judges what was written without listing any of it: the
+thirteen are found by their flag, every one must carry the category the table
+gives its own title, none may be `other` or signed or import-titled — and the
+revision of 1959 is named, because the brief names it, so that a later pass
+cannot quietly file it as an election.
+
+**Two things measured and not acted on** (`docs/m69-categories.md`, last
+section). The class table reaches **307** events today and **94** carry no
+category, not sixteen: about forty are active events an import titled, because
+`tools/migrate/categories.mjs` **has never been re-run since M40 and M42
+imported the world** — a re-run of an existing tool that needs no judgement
+from anybody, and not in this brief. And **nine more hand-written titles have
+arrived** that nobody has put to the table: `1964-brazilian-coup-detat`,
+`1985-brazilian-presidential-election`, `cuban-war-of-independence-1895-1898`,
+`spanish-american-war-1898`, `strangford-treaty-1810`,
+`the-2018-brazilian-general-election`, `the-baptist-war-1831`,
+`the-rubber-battle-1942`, `treaty-of-tordesillas-1494`. They are the same
+question as the sixteen and they are not the sixteen.
+
+### 4. The deploy — green, and the atlas is published
+
+**The site is live at https://goncalojacob.github.io/atlas-causal/.** The
+latest deploy run on `main` is run 3,
+[35542811561](https://github.com/goncalojacob/atlas-causal/actions/runs/35542811561),
+on `aa10f2b7` — the merge of pull request #3 — started 22:49:14Z and
+**successful** at 22:57:09Z. Every one of its thirteen steps is green: the
+validator, the two test passes, the palette, the index, `--index` over both,
+the commit step (which found the index and the pages unchanged and said so),
+the allowlist, and `actions/deploy-pages@v4`, which reported success and
+evaluated the environment url as that address. The artifact was 7,525,283
+bytes.
+
+**Nothing was wrong and nothing was changed.** The two earlier runs, 1 and 2 on
+18 September, failed for the reason "Next" item 2 gave: there was no Pages site
+to deploy to. The owner created one on 20 September with `build_type: workflow`
+and the next merge published. The job log carries one warning that is not a
+failure and not this run's to answer: GitHub is forcing five actions that
+target Node 20 onto Node 24, `actions/checkout@v4`, `configure-pages@v5`,
+`deploy-pages@v4`, `setup-node@v4` and `upload-artifact@v4`. Raising them is a
+workflow change nobody has asked for yet.
+
+### The state at the end
+
+`node tools/validate.mjs --index` on `m69`: **10,638 records, 5 regions, 0
+errors, 240 warnings**, down from 1,213; **10,311 records nobody has read yet**;
+**11,061 of 11,061 citations not yet checked**. Tests: **1,599 pure and 192
+browser, 1,791 in all, 0 failed and 0 skipped**, run the way the check runs
+them.
+
+### Deviations — lane B's block, numbered from 950
+
+950. **The records carry no `review` key at all, not `"review": null`.** The
+     brief and H9's item 7 both describe them as `"review": null`; on disk the
+     key is absent. It is the same thing to the rule that counts them — it asks
+     `r.review?.status === undefined` — and the tool asks the validator's own
+     question rather than matching on `null`, so it would have found either.
+951. **`review` is written after `origin`, and not by `tools/lib/order.mjs`.**
+     That helper exists for exactly this — an envelope added to a record that
+     had none, landing where every other record keeps it — but it reads
+     `schema/v1/<kind>.json`, and those files declare `review` *before*
+     `origin`, while `schema/common/provenance.json`, migration 4 and **6,505
+     of the 6,662 records that carry both** put it after. Ordering by the
+     helper would have swapped the two keys on all 973 files and turned a
+     one-key addition into a reshuffle, which is the diff the helper exists to
+     prevent. The disagreement between the two schema files is left where it
+     is: it is not this brief's, and nothing reads key order but a person.
+952. **`revised` was set on every file this run wrote, and the two precedents
+     disagree.** `tools/migrate/categories.mjs` sets it on a file it changes;
+     migration 4 added `review.status` to 1,716 records without touching it.
+     The file changed today, so the date says so — but it means 973 records now
+     read "revised 2026-09-20" for a change that altered nothing they claim.
+953. **The count is 973 and H9's was 1,040.** Not a discrepancy to reconcile:
+     the M59 joins and everything since moved it, and the brief asks how many
+     there were, which is what this run measured rather than what H9 measured.
+954. **`CLAUDE.md` gained a line, and the commit before it was red for one
+     test.** `tests/site.test.mjs` requires the layout tree to name every module
+     under `src/` and `tools/`, and `tools/migrate/backfill-standing.mjs` was
+     pushed before the line was added. Deviations 711 and 717 say the commit
+     that teaches the tests belongs with the change or before it; this was the
+     same mistake one step to the side — the tree, not a test — and the fix
+     went up with the next commit.
+955. **A test outside this milestone was fixed: `tests/workflows.test.mjs`.**
+     Not M69's work. `e6ab4bfa` on `m0` — "the check runs on every m* push, so
+     a lane branch has one" — put a comment and a `push:` key above
+     `pull_request:` under `on:`, and the test asserted the triggers as one
+     block with `/on:\s*\n\s*pull_request:/`. The claim was still true and the
+     regex could not see past the new key. **Both lane branches were cut from
+     that commit**, so lane A carries the same failure and may carry the same
+     one-line fix; the three keys are matched one at a time now, and the new
+     trigger is asserted rather than merely tolerated.
+956. **`git checkout origin/m0 -- .` was run in the working tree by mistake**,
+     while checking whether that failure was pre-existing. It reverted 1,006
+     files to `m0`'s content and staged them. `git reset --hard HEAD` put them
+     back and nothing was lost, because everything was committed and pushed
+     first — which is the only reason it cost nothing. A question about another
+     branch is answered with `git show`, never with a checkout into the tree.
+957. **The deploy was read through the job-logs endpoint, which deviation 729
+     says does not work from this sandbox.** It does, through the GitHub MCP
+     server's `get_job_logs` with `return_content`, and that is where the
+     published URL came from — the line `actions/deploy-pages` writes when it
+     evaluates the environment url. 729 is about the raw log endpoint and
+     stands for that; this is a second way in.
+958. **The site itself was not fetched.** The sandbox's proxy answers
+     `github.io` with a 403 at the tunnel, so the URL reported above is the one
+     the deploy job evaluated and not one this run loaded. That the deployment
+     reported success is the job's own word.
+959. **Item 3 was held to the sixteen.** 94 of the 307 events the table reaches
+     carry no category, and about forty of those need no judgement at all. The
+     brief names the sixteen `STATUS.md` names; widening it to a re-run of the
+     category pass would have been a different milestone, so it is reported
+     under "Next" instead.
+960. **The thirteen carry a flag M32b-2 did not write.** That pass wrote
+     `category` and `revised` and no flag. This one wrote `m69-categorised`,
+     because its judgement was per record rather than a table applied
+     mechanically, and a reviewer should be able to find the thirteen that were
+     decided by reading rather than by matching.
+961. **The commit message of `ff84fc64` has the breakdown backwards.** It says
+     "seven `war`, five `election`"; it is **five `war` and seven `election`**,
+     which is what the records, `docs/m69-categories.md` and
+     `tests/m69.test.mjs` say. The message is pushed and is left as it is
+     rather than rewritten; this line is the correction.
+962. **Item 2 wrote nothing at all**, which is a milestone item closing with no
+     diff. The measurement and the two reasons are the deliverable, and they
+     are above.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
@@ -13254,3 +13531,5 @@ M66 started 2026-09-18T18:30:54Z by scheduled
 M66 done
 M67 started 2026-09-20T22:53:28Z by scheduled
 M67 done
+M69 started 2026-09-20T23:36:16Z by scheduled
+M69 done
