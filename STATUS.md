@@ -13,6 +13,23 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-21, after **M68** (`docs/m68-brief.md`, on the branch `m68`, lane A):
+**the categories can be switched from every view.** Deviation 858 said it and
+M65 widened it: the category toggles lived in the layer control, which is the
+map's legend and is hidden on the graph, so the timeline followed the graph's
+rule and never showed them — while `emphasis.js` had them narrowing the resting
+picture on **all three** views. A reader on the lanes or the graph was looking
+at a filtered picture with no way to see or change the filter. **One control
+moved and no behaviour changed**: `src/category-control.js` owns the switches
+and stands in the masthead beside the window, on every view; the legend keeps
+the map's own layers — the territories, the events row, the base map — and no
+second copy. Neither control can widen or narrow the other's half of `?layers=`,
+because both assemble the whole list through the one function that owns it.
+**First paint: one more module request, 5,781 bytes of source, and no
+measurable time.** No record, no historical claim, no new token, and nothing
+touched in `lanes.js`, `cluster.js` or `emphasis.js` — the filter was already
+right.
+
 2026-09-20, after **M67** (`docs/m67-brief.md`, on `m0`): **the rest of the
 corpus finds its parents.** M65 left the resting picture at 242 of 309 main
 events and said it would not feel like much until more of the 242 had somewhere
@@ -12943,6 +12960,194 @@ this milestone writes no edge.
      for the reasons above; the Russian chain got its umbrella at no cost,
      because `russian-civil-war` already existed as an event and had never held
      a child.
+
+## M68 — the categories can be switched from every view
+
+Lane A's first milestone, on its own branch `m68` (run protocol, amendment of
+21 September). **Small on purpose: one control moves and nothing else does.**
+
+Deviation 858, written down by M60 and not fixed by it: the category toggles
+were a collapsed group inside `src/layer-control.js`, which is the map's legend;
+`main.js` hides the legend on the graph, because the graph has no coastlines;
+the timeline, arriving as a view of its own, followed the graph's rule. So a
+category switched off on the map **stayed** off in the lanes — `emphasis.js` has
+decided that for all three views since M65 — but could not be switched off
+*from* them.
+
+M65 made it worse in a way nobody chose. The categories now narrow the
+**resting picture** on every view, so a reader who opened the timeline or the
+graph was looking at a filtered picture with no control anywhere on the page to
+tell them so.
+
+### What moved
+
+The switches are a masthead control now, where M48 put the layer switches and
+the graph filters, M60 the window and M64 the count. `index.html` carries one
+more empty group, `<div class="categories-control" id="categories">`, filled by
+**`src/category-control.js`**; `main.js` never hides it, because it belongs to
+no one picture.
+
+The legend keeps what is the map's and nobody else's: `territories`, `events`,
+and the collapsed "base map" group with its five switchable layers and their
+swatches. It is three targets in the phone drawer now instead of four.
+
+### One control, one state
+
+The risk in moving a switch is two switches. The rule this run held to is that
+a `?layers=` list has exactly two halves — the map's own layers, which the
+legend owns, and the events layer's tokens, which the category switches own —
+and **either control changing one must hand the other back untouched**.
+
+`layersFrom({ on, categories, all })` in `category-control.js` is the whole of
+it: the one assembly, in `LAYERS` order so `formatState` still recognises the
+state at rest and writes no `?layers=` at all, with `land` always written out
+(deviation 522) and every category off taking the events layer with it
+(deviation 586). Each control passes its own half and reads the other out of
+the state it is about to replace — the legend through the new pure
+`categoriesChecked(layers, all)` in `categories.js`, which is `checkedFor` said
+as a list rather than as a box.
+
+So the two cannot disagree: there is no state either of them can write that the
+other would have written differently.
+
+`src/emphasis.js`, `src/lanes.js` and `src/cluster.js` were not touched. The
+filter itself is still the one line in `workingSet` that M30b put there and M65
+extended to the resting picture. **Only where it is switched from changed.**
+
+### What first paint costs
+
+**One more module request, 5,781 bytes of source, and no measurable time.**
+Median of nine cold loads of `?from=1900&to=1999` at 1440 × 900, cache cleared
+between them, on the same machine and the same instrument:
+
+| | before | after |
+| --- | ---: | ---: |
+| first contentful paint | 32 ms (28–60) | 32 ms (24–64) |
+| load event | 160 ms (134–224) | 141 ms (132–184) |
+| requests to that frame | 112 | 113 |
+| JavaScript files | 82 | 83 |
+| JavaScript bytes | 1,098,966 | 1,104,747 |
+| all bytes | 6,189,041 | 6,195,926 |
+| marks on that frame | 15 | 15 |
+
+The one file is `category-control.js`, 6,394 bytes; `layer-control.js` gave up
+1,852 of them and was fetched at first paint either way, and `categories.js` and
+`main.js` account for the other 1,239. There is no build step here, so a module
+is a request: that is the honest cost of the split and it is named rather than
+hidden in a bundle. **The nineteen milliseconds off the load event are inside a
+spread of ninety and are not a claim** — what is claimed is that first paint did
+not get slower, and the two contentful-paint medians are the same number.
+
+Nothing was added to what the page fetches before it draws: the switches are
+built from the manifest, which the core already carries, in the same pass the
+legend was built in.
+
+### Tests
+
+`tests/m68.test.mjs` (15) and `tests/m68-browser.test.mjs` (4), both written
+before the behaviour they judge (deviations 711 and 717). **No test pins a count
+of events.**
+
+The brief asked for three things and each is one test:
+
+1. **Switched off from the timeline, gone from all three.** In the browser: the
+   war leaves the lanes on the frame the switch is clicked, then the graph and
+   then the map are asked and neither draws it, while an event with no category
+   at all is untouched. And without a browser, from the shared source: the same
+   `?layers=` list narrows `workingSet(...).shown`, which is the one set the
+   three views draw.
+2. **The legend and the masthead cannot disagree** — structural, the way M64
+   asserted there is one band. `data-category` is what makes an input a category
+   switch, and exactly one module writes one; the legend carries no
+   `events-by-category` group and no glyph, and asks `category-control.js` for
+   the list rather than assembling one. Then the same claim behaviourally:
+   switching the territories off in the legend leaves every category switch
+   where the reader left it.
+3. **The state is in the URL as it is today, and a link carries it** — round
+   tripped pure through `formatState`/`parseState`, and opened in the browser on
+   `?view=timeline&layers=…,events:treaty`, where the switches say what the link
+   says and switching the rest back on writes the bare `events` token again.
+
+Five assertions in `tests/map-browser.test.mjs` and two tests in
+`tests/phone-browser.test.mjs` were pointed at the new group; their claims are
+unchanged.
+
+**1,597 pure and 196 browser, 0 failing, 0 skipped**, run the way the check runs
+them since M63. `node tools/validate.mjs --index` is clean and byte-identical:
+10,638 records, 0 errors, the same 1,213 warnings.
+
+### The pictures
+
+`docs/screens/m68-timeline-categories.png` — the switches open over the lanes,
+one symbol a row, on the view that had none. `docs/screens/m68-timeline-narrowed.png`
+— the elections switched off from there, through the very link the control
+writes: 48 of the corpus's 78 categorised events leave the picture and the
+switch says which one did it. **Every other picture under `docs/screens/` is
+untouched.**
+
+### Deviations
+
+912. **The switches kept their collapsed `<details>` rather than becoming a row
+     of six.** The brief says "like the window", and the window is a row. Six
+     switches with their symbols and labels is about forty characters of
+     masthead, on a bar that already carries the search, three view buttons,
+     two year fields, a density hint and the grouping picker — and on a phone
+     it is six more rows of a drawer M37b cut to four targets. The group is the
+     same one the legend had, moved whole: one target, opening into the rows.
+
+913. **`docs/screens/frame.html` gained an `open=<id>` parameter.** A
+     `<details>` opens on a click or on an anchor, and neither is in the URL the
+     atlas keeps — what a reader had open is not what they were looking at. The
+     frame already reaches into its own iframe for `band=` and `zoom=` for
+     exactly that reason; this is the third, and the screenshot of a control
+     could not be taken without one.
+
+914. **A test that was red on `m0` before this run was fixed here.**
+     `tests/workflows.test.mjs` matched validate.yml's `pull_request:` trigger
+     **by position** — `on:` immediately followed by it — and the two-lanes
+     commit of 21 September put `push: branches: ['m*']` at the head of that
+     block. The branch could not be green without it, and the fix is the
+     assertion asking what it meant to ask: that `pull_request:` is one of the
+     triggers under `on:`. It is not this milestone's change and is committed
+     on its own.
+
+915. **Five assertions and two tests of two existing browser suites were
+     changed.** They queried the switches at `.bar .layers input[data-category]`
+     and the group at `.bar .layers #events-by-category`, which is the address
+     that moved; the phone suite counted four targets in the drawer and now
+     counts three. Every claim is the one it was — a selector is an instrument,
+     and this milestone moved the thing it points at.
+
+916. **`CLAUDE.md`'s layout tree gained a line and two were rewritten.**
+     `tests/site.test.mjs` fails on a module under `src/` the tree does not
+     name, which is the right rule; `layer-control.js` and `categories.js` say
+     what they hold now.
+
+917. **`src/layer-control.js`'s comments are now part Portuguese and part
+     English.** The file was written in Portuguese before the decision of
+     1 September; `CLAUDE.md` asks for English, so the passages this run
+     rewrote are in English and the passages it did not touch were left alone.
+     Translating the rest would be a diff this milestone did not ask for.
+
+918. **One dead end was preserved rather than fixed.** With every category
+     switched off, the events row is unticked and ticking it does nothing: the
+     row writes the events half from the categories, which are all off, so no
+     token is written and the box unticks itself on the next render. That is
+     exactly what it did before this run, and "no new behaviour" is the brief's
+     instruction. It is a real wart and it belongs to whichever milestone
+     decides what "everything off, now put it back" should mean.
+
+919. **No record was written and no historical claim was made.** Nothing under
+     `data/` was touched; `node tools/validate.mjs --index` reports 0 errors
+     over 10,638 records, the same 1,213 warnings as before, and the index is
+     byte-identical.
+
+920. **One browser suite failed once in the full serial pass and passed alone
+     and on the next full pass.** `lens-browser`'s *reading a narrative draws
+     the walk* — a suite this milestone does not touch, on a view with no
+     categories in it. Read rather than assumed (M63): the assertion is about a
+     narrative's walk, the re-run is green, and it is the load flake
+     `docs/m63-load.md` describes and not a fault of this change.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
