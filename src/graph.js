@@ -6,12 +6,15 @@
 
 import { extent } from './util/dates.js';
 import { EDGE_TYPE_IDS } from './vocab.js';
+import { CONFIDENCE_ORDER } from './confidence.js';
 import { keyedCache, SEP } from './util/memo.js';
 
 // The order an answer list is sorted in is the order the types are declared
-// in (vocab.js): the strongest claim first, the loosest last.
+// in (vocab.js): the strongest claim first, the loosest last. The confidences
+// are ordered the same way and in confidence.js, which is also where what
+// each of them is drawn as lives.
 export const TYPE_ORDER = EDGE_TYPE_IDS;
-export const CONFIDENCE_ORDER = Object.freeze(['consensus', 'probable', 'disputed']);
+export { CONFIDENCE_ORDER };
 
 function rank(list, value) {
   const i = list.indexOf(value);

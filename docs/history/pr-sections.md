@@ -2659,3 +2659,64 @@ Measured at 1440 × 900 against `origin/m0`, twenty loads each, the time from na
 ### What the owner still has to do
 
 **Set the `CONTRIBUTION_PAT` secret**: a fine-grained personal access token with *Contents: read and write* and *Pull requests: read and write* on this repository, stored as the repository secret `CONTRIBUTION_PAT`, its expiry noted in `CONTRIBUTING.md`. This run cannot create it and did not try. **The composer works without it** — a reader can pick, write, be told the record is valid and open the issue today. Only the last step of the pipeline waits on it, and `contribution.yml`'s first step already fails with the instructions when it is missing.
+
+## M73 — a reader can see how sure the atlas is
+
+The owner, 21 September: *"First I think each link should have sources associated with it, then I think the confidence visibility thing makes sense."* M72 was the first half. This is the second.
+
+Every edge has carried `confidence` since the first slice and the card has always said which of the three it is, in words. **Nothing drawn said it.** On the graph a line's dash and its weight say what *type* of claim it is — `caused` unbroken, `enabled` long-dashed, three more — so a contested link and an established one were the same line. The walk the map draws said less still.
+
+### The dimension confidence took: how solidly the line is inked
+
+Type owns the dash pattern and the weight, which left the one thing the brief names: opacity. It is spent as **`stroke-opacity` and `fill-opacity`**, and not as the `opacity` the dimmed state uses, because `opacity` is already the emphasis states' — `faded` is 0.16, `lens-near` 0.22, the horizon's two bands 0.72 and 0.45 — and two rules writing one property would have the reader's own picture erase the atlas's confidence in it, or the other way about. A different property multiplies with that one instead, which is the reading wanted: **a disputed link outside the window is outside the window *and* doubtful.**
+
+**Three levels, not two**, which is the brief's own first preference:
+
+| | inked at | of the 362 active edges |
+| --- | --- | --- |
+| `consensus` | **1** | 68 |
+| `probable` | **0.7** | 275 |
+| `disputed` | **0.34** | 19 |
+
+A third of the ink against a full line is not a subtlety: the nineteen are the ghost lines in the picture, which is what the brief asks of `disputed` before anything else. The 0.3 between the other two is the same step again and is what tells the 68 the atlas is sure of from the 275 it is not — and folding `probable` into `consensus`, which is what drawing two levels would have meant, would have drawn three quarters of the atlas as settled. **No new hex value, token or type size**: the three rules declare nothing, name no colour, and the numbers are bare opacities of the kind `.faded` and the horizon's bands already are.
+
+### Where it comes from, and why the two pictures cannot disagree
+
+`src/confidence.js` is the one module. It hands back a **class and never a number** — the stylesheet keeps deciding how a line is inked, as it already does for the five types and for the weight of a merged line — and both drawings read it: `src/graph-view/graph-view.js` for the graph's edges and their arrowheads, `src/map/layers/events.js` for the walk and the consequence lines. `CONFIDENCE_ORDER` moved there out of `src/graph.js` and `src/validate/rules.js`, which now re-export it, so the closed vocabulary and what it looks like are one file.
+
+The stylesheet's three rules are written **with no view in front of them** — `.edge.confidence-disputed`, not `.graph .edge.confidence-disputed` — which no other rule in `src/style.css` that touches an edge is. That is the milestone stated as CSS: one rule, both pictures, nothing for them to differ about.
+
+A line carrying several links is inked as the **least sure of them**, which is the rule `cluster.js` already states for `disputed` — a bundle one of whose links historians argue about is a bundle the reader must not read as settled — asked of all three levels instead of one. `cluster.js` was not touched: the fold is `leastSure()` over the members it already returns.
+
+### What was there before was taking the type's dimension
+
+The gap was half-filled, and the half that was there was in the wrong place. `.graph .edge.disputed` set `stroke-dasharray: 5 4` and `.map .edge.disputed` the same, so a disputed edge was dashed **whatever its type** — and a disputed `caused` edge, which is what most of them are, was drawn as the key's `enabled`. The dash is the type's again. Nothing drawn had ever said anything at all about `probable`, which is 275 of the 362.
+
+### The legend
+
+One row, in the graph's own key and in `about.html`'s copy of it: three segments of one type, surest first, under the words **how sure: consensus, probable, disputed**. Drawn with the very classes the edges are drawn with, which is the rule the type key already keeps — a key built out of a second copy of the styling is a key that can come to be wrong. The card keeps saying it in words; this milestone adds the picture.
+
+### What first paint costs
+
+**One more module on the wire and 5,101 bytes of JavaScript**, measured through the browser's own `performance.getEntriesByType('resource')` on `?from=1400&to=1600`, before and after:
+
+| | before | after |
+| --- | --- | --- |
+| JavaScript files | 83 | **84** |
+| JavaScript bytes | 1,110,709 | **1,115,810** (+0.46%) |
+| stylesheet bytes | 132,941 | **134,465** |
+| first contentful paint | 68 ms | **68 ms** |
+
+`src/confidence.js` is 3,696 bytes of which most is its comment. The request count and the total transferred vary by a handful between runs — which geometry shards have landed when the measurement is taken — so the number worth writing down is the deterministic one, and it is the JavaScript. **No new fetch of data, and no new work per line drawn**: `confidenceClass(edge)` is a lookup in a frozen three-element list where `edge.confidence === 'disputed'` used to be, and the merged line's fold is the `some()` it replaced.
+
+### The pictures
+
+`docs/screens/m73-map.png` and `docs/screens/m73-graph.png` are the **same state twice**, because the milestone is that the two cannot disagree about it: the beginning of the war in Angola open, whose five consequences happen to be one of every confidence the atlas has — `caused` to Lisbon twice, which historians agree about; `inspired` to Guinea and Mozambique, which is probable; and `enabled` to Goa, which is disputed and is the faintest line in both. Nothing about the state says "confidence": it is the ordinary picture of an event's consequences, which is the point. In the graph shot the panel beside it is the same five links in words, with the badges the card has always carried.
+
+### Tests
+
+`tests/m73.test.mjs` (6) and `tests/m73-browser.test.mjs` (5), written before the rules they judge (711, 717) and landing with them, and **no test pins a count**. In the browser and from computed style rather than from class names: three confidences come out as three `stroke-opacity` values, ordered and at least 0.2 apart; a disputed `caused` line is still unbroken, which is the regression the old rule was; and **one record — the same edge, by id — is inked identically on the map's walk line and on the graph's edge**, asserted for a disputed link and for a consensus one so that agreement is not two views happening to draw everything alike. Out of the browser: the module's mapping and its fold over a bundle; that `graph.js` and `validate/rules.js` keep no second copy of the order and that neither drawing spells a class name itself; and — the way M66 asserted the halo's colours, by reading `src/style.css` — that the confidence rules introduce **no hex value, no token of their own, and no `var(--x)` the stylesheet does not declare**, and that they write neither `stroke-dasharray` nor `stroke-width`, which belong to the type.
+
+### Checks
+
+`node tools/validate.mjs --index`: **10,653 records, 5 regions, 0 errors, 238 warnings**, clean over the repository and over the fixtures and byte-identical to a fresh build. **Nothing under `data/` changed at all** — no record, no historical claim, no new confidence value. The fixtures already held one edge of each of the three, which is why the tests needed nothing written for them. `node --test`: **1,652 pure and 210 browser, 1,862 in all, 0 failed and 0 skipped**, the browser suites one at a time as the check runs them (M63). `lanes.js`, `cluster.js` and `emphasis.js` are untouched. No new runtime dependency. Both screenshots taken with `--only`, so every other picture is untouched. Nothing pushed to `m0` or `main`; `docs/drafts/` ignored. Deviations **946 to 949** and **973 to 975** — the second block because lane A's numbers ran into lane B's at 950, which is deviation 973 itself.

@@ -33,7 +33,11 @@ function span(when) {
 }
 
 export const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
-export const CONFIDENCE_ORDER = Object.freeze(['consensus', 'probable', 'disputed']);
+// Re-exported rather than declared: how sure the atlas is is one closed
+// vocabulary and `../confidence.js` is where it lives, beside what each of
+// the three is drawn as. The validator's callers have always asked this file
+// for it, and they still can.
+export { CONFIDENCE_ORDER } from '../confidence.js';
 export const ACTOR_TYPES = Object.freeze(['person', 'polity', 'institution', 'people']);
 // What a record's `status` may be, in the order `schema/common/provenance.json`
 // writes it. Named here beside the other two lists the schemas close, because

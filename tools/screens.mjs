@@ -474,6 +474,26 @@ export const SHOTS = Object.freeze([
       + '&compose=fixture-event-b,fixture-event-d,fixture-event-t',
     width: 1440, height: 1500,
     what: 'the same composer over the synthetic corpus, written and cited, the validator’s own rules saying yes' },
+
+  // M73. How sure the atlas is, on the line itself. The same state twice,
+  // because the milestone is that the two pictures cannot disagree about it:
+  // the war in Angola, whose five consequences happen to be one of every
+  // confidence the atlas has — `caused` to Lisbon twice, which historians
+  // agree about; `inspired` to Guinea and Mozambique, which is probable; and
+  // `enabled` to Goa, which is disputed and is the faintest line in both.
+  //
+  // Nothing about the state says "confidence". It is the ordinary picture of
+  // an event's consequences, which is the point: a reader who opens an event
+  // is already being told which of the lines in front of them the atlas is
+  // not sure of.
+  { name: 'm73-map', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1955&to=1980&selected=angola-war-begins-1961&bbox=-25,-25,90,55&layers=land,events',
+    width: 1440, height: 900,
+    what: 'the consequences of one event on the map: a disputed line to Goa beside two consensus lines to Lisbon' },
+  { name: 'm73-graph', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=1400&from=1955&to=1980&view=graph&selected=angola-war-begins-1961',
+    width: 1440, height: 1400,
+    what: 'the same five links on the graph, inked alike, with the key saying what the difference means' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
