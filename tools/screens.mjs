@@ -80,7 +80,10 @@ export const SHOTS = Object.freeze([
   // Lisbon, so a shot of the repository's own data would show one symbol on
   // one mark. The fixtures carry three categories on three points apart, and
   // the page says in its own corner that they are synthetic.
-  { name: 'glyphs-map', query: '?fixtures=1&group=region&from=1195&to=1305', width: 1280, height: 820, scale: 2,
+  //
+  // The link said `group=region` until M77, when the grouping was removed and
+  // the parameter became one an old link carries and nothing reads.
+  { name: 'glyphs-map', query: '?fixtures=1&from=1195&to=1305', width: 1280, height: 820, scale: 2,
     what: 'the symbols over the marks and at the left of a bar, on the fixtures' },
   // M37. The base map at both of its levels, and `?bbox=` does the zooming
   // because the state is the URL and there is nothing here to click. The
@@ -601,6 +604,47 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&from=1900&to=1999&view=graph',
     width: 1440, height: 900,
     what: 'the graph on a window of one century: every date drawn in full, no shaded band, the camera fitting all of it' },
+
+  // M77. The three things the owner asked for on 21 September, each in the
+  // state its own screenshot was taken in.
+  //
+  // The graph under a narrative — `who-was-buying`, twenty-eight steps, the
+  // longest walk the atlas holds and the one the owner's picture was of. What
+  // this is of is the answer to *"it looks clouded and there are too many
+  // labels on top that don't really need to be always visible"*: the walk
+  // named in full and in reading order, the neighbourhood faint and unnamed,
+  // and no note across the top.
+  { name: 'm77-graph', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph&narrative=who-was-buying',
+    width: 1440, height: 900,
+    what: 'the graph reading a narrative: every step named in full, the neighbourhood faint and unnamed' },
+  // The graph at phone width, under a lens the reader asked for rather than a
+  // narrative being read: opening a narrative opens its card, and on a phone
+  // an open card is a sheet over the whole view (phone.js) — the picture would
+  // have been of the sheet. A lens on one actor is the same rule at work with
+  // nothing open, which is what a picture of the graph needs.
+  { name: 'm77-graph-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&view=graph&focus=actor:salazar',
+    width: 500, height: 844,
+    what: 'a lens on one actor in a 390 x 844 viewport: fewer names, still whole ones' },
+  // The timeline at rest, on the whole extent: every bar carrying its title,
+  // no `+n` anywhere, and the rows as many as the titles need.
+  { name: 'm77-timeline', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=timeline',
+    width: 1440, height: 900,
+    what: 'the resting timeline: every bar titled, no +n badge, the rows as many as the titles need' },
+  { name: 'm77-timeline-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&view=timeline',
+    width: 500, height: 844,
+    what: 'the same in a 390 x 844 viewport' },
+  // And a parent opened, which is the second half of the owner's sentence:
+  // *"when you click on it it can show you everything that happened during
+  // that time."* The Estado Novo, whose twenty-five parts are the regime's own
+  // events.
+  { name: 'm77-timeline-opened', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=timeline&selected=estado-novo-1933-1974',
+    width: 1440, height: 900,
+    what: 'an umbrella opened on the timeline: it and what happened during it, each titled' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

@@ -1,40 +1,23 @@
 // What a lane is. The timeline's lanes and the graph view's bands were two
-// implementations of one idea — a grouping of events — and this is that idea,
-// once, pure, so the two pictures cannot disagree about which lane an event
-// belongs in.
+// implementations of one idea — a row of events — and this is that idea, once,
+// pure, so the two pictures cannot disagree about which lane an event belongs
+// in.
 //
-// Four groupings. `none` is the default and has no named lanes at all: the
-// timeline packs the bars into as many unlabelled rows as it needs and the
-// graph drops its bands, which is the arrangement that says least about the
-// data and is therefore the right first thing to show. `actor`, `place` and
-// `region` name their lanes.
+// **One arrangement since M77, where there were four.** A reader could ask for
+// one lane per actor, per place or per region, and reorder the list; the owner,
+// 21 September: *"Right now the grouping function is useless, let's simplify
+// the platform and remove it."* What is left is what `none` always was and
+// what the atlas always opened on — the bars packed into as many rows as it
+// takes for none of them to overlap at this width, and no named lane at all.
+// The picker, the `group` and `lanes` state, `lanesFor`, `availableLanes` and
+// `laneExplain` went with it, and the graph has no bands any more because
+// nothing builds it one.
 //
-// An event is drawn in **exactly one** lane, never duplicated across them. An
-// event with four actors is one event, and drawing it four times would turn
-// a count of events into a count of participations without saying so. The
-// rule that picks the lane is mechanical — the heaviest of its actors among
-// the lanes on screen — and the event card states it, because a rule the
-// reader cannot see is a rule they cannot check.
-//
-// `regions.json` is read here and only in the `region` case: lanes stopped
-// being regions in M14, and everything else in the atlas asks this file.
+// An event is drawn in **exactly one** row, never duplicated across them. An
+// event with four actors is one event, and drawing it four times would turn a
+// count of events into a count of participations without saying so.
 
 import { extent } from './util/dates.js';
-import { overlaps } from './util/window.js';
-// The four groupings are `vocab.js`'s: this file decides what a lane *is*,
-// and `state.js` decides what the URL may ask for, and the two used to
-// declare the list separately (health review B, finding 19).
-import { GROUPS } from './vocab.js';
-
-export { GROUPS };
-// Six lanes is about what a reader holds in their head at once, and about
-// what fits under the map while a lane still has a height worth drawing a
-// bar in. It was twelve until M24, and twelve was a list with gaps: the
-// seventh lane down was never looked at, and everything under it was noise
-// with a name. An explicit `lanes` list is still unlimited — a reader who
-// names ten actors has said they want ten.
-export const LANE_CAP = 6;
-export const OTHER_ID = 'other';
 
 const byId = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
 
@@ -45,146 +28,12 @@ function lane(id, label, { other = false } = {}) {
   return { id, label, other, members: new Set(), count: 0 };
 }
 
-// The keys one event can be filed under, in the grouping asked for. An actor
-// named twice in an event under two roles is one key: this counts events,
-// not participations.
-function keysOf(group, event, topology) {
-  if (group === 'actor') {
-    const seen = [];
-    for (const { actor } of event.actors ?? []) {
-      if (topology.actors?.has(actor) && !seen.includes(actor)) seen.push(actor);
-    }
-    return seen;
-  }
-  if (group === 'place') {
-    return typeof event.place === 'string' && topology.places?.has(event.place) ? [event.place] : [];
-  }
-  return [];
-}
-
-function labelOf(group, id, topology) {
-  if (group === 'actor') return topology.actors?.get(id)?.name ?? id;
-  if (group === 'place') return topology.places?.get(id)?.name ?? id;
-  return id;
-}
-
-// Every lane the current window offers, with how many of the shown events
-// fall in it, heaviest first. This is the list the picker draws and the list
-// the automatic six are taken from — one function, so what the picker
-// offers and what the atlas draws are the same order.
-export function availableLanes(group, topology, window = null, lens = null) {
-  if (group !== 'actor' && group !== 'place') return [];
-  const counts = new Map();
-  for (const event of topology.activeEvents ?? []) {
-    if (lens && !lens.has(event.id)) continue;
-    if (!overlaps(event.when, window)) continue;
-    for (const key of keysOf(group, event, topology)) counts.set(key, (counts.get(key) ?? 0) + 1);
-  }
-  return [...counts.entries()]
-    .map(([id, count]) => ({ id, label: labelOf(group, id, topology), count }))
-    .sort((a, b) => b.count - a.count || byId(a.label, b.label) || byId(a.id, b.id));
-}
-
-// The lanes of a grouping, in order, with their members.
-//
-// `window` decides which lanes there are — the six with the most events
-// inside the band — and never which events are in them: a bar outside the
-// window is drawn faded, and a lane it was counted out of would leave it
-// nowhere to be drawn. `chosen`, when given, is the reader's own ordered
-// list and replaces the automatic six; "Other" joins it only if something
-// falls outside.
-export function lanesFor(group, topology, window = null, lens = null, chosen = null, { cap = LANE_CAP } = {}) {
-  const all = topology.activeEvents ?? [];
-  const shown = lens ? all.filter((e) => lens.has(e.id)) : all;
-  if (group === 'region') {
-    const lanes = (topology.regions ?? []).map((r) => lane(r.id, r.label));
-    const byRegion = new Map(lanes.map((l) => [l.id, l]));
-    for (const event of shown) {
-      const found = byRegion.get(event.region);
-      // An event whose region is not a lane is not drawn, as it was not
-      // before M14: the validator derives a lane for every event, so this is
-      // a guard and not a case.
-      if (!found) continue;
-      found.members.add(event.id);
-      if (overlaps(event.when, window)) found.count += 1;
-    }
-    return lanes;
-  }
-  if (group !== 'actor' && group !== 'place') return [];
-
-  const available = availableLanes(group, topology, window, lens);
-  const weight = new Map(available.map((a) => [a.id, a.count]));
-  const wanted = chosen && chosen.length
-    // The reader's list, in the reader's order. An id that names no record
-    // is dropped rather than drawn as an empty lane with a slug for a name.
-    ? chosen.filter((id, i) => chosen.indexOf(id) === i
-      && (group === 'actor' ? topology.actors?.has(id) : topology.places?.has(id)))
-    // `cap` is how many the caller has room for, never more than the six this
-    // file thinks a picture can carry: the timeline works it out from the
-    // height of its pane, and a caller that says nothing gets the six (I6).
-    // The reader's own list above is not capped at all — naming fifteen
-    // actors is asking for fifteen lanes.
-    : available.slice(0, Math.max(1, Math.min(LANE_CAP, cap))).map((a) => a.id);
-
-  const lanes = wanted.map((id) => lane(id, labelOf(group, id, topology)));
-  const position = new Map(lanes.map((l, i) => [l.id, i]));
-  const other = lane(OTHER_ID, 'Other', { other: true });
-
-  for (const event of shown) {
-    const candidates = keysOf(group, event, topology).filter((id) => position.has(id));
-    let best = null;
-    for (const id of candidates) {
-      if (best === null) { best = id; continue; }
-      // The heaviest of its actors among the lanes shown; ties by the order
-      // the lanes are in, then by id, so the picture is the same twice
-      // running whatever order the records arrived in.
-      const d = (weight.get(id) ?? 0) - (weight.get(best) ?? 0)
-        || position.get(best) - position.get(id)
-        || byId(best, id);
-      if (d > 0) best = id;
-    }
-    const target = best === null ? other : lanes[position.get(best)];
-    target.members.add(event.id);
-    if (overlaps(event.when, window)) target.count += 1;
-  }
-  return other.members.size ? [...lanes, other] : lanes;
-}
-
 // Which lane an event is drawn in. Membership is the Set, so this is a scan
-// of at most thirteen lanes and never a second copy of the rule above.
+// and never a second copy of the packing's rule.
 export function laneOf(event, lanes) {
   const id = typeof event === 'string' ? event : event.id;
   for (const l of lanes) if (l.members.has(id)) return l;
   return null;
-}
-
-// What the event card says: the lane, why that one, and what else the event
-// involves that did not win it. The reason is the rule in words — a reader
-// who cannot see the rule cannot check that the picture obeys it.
-export function laneExplain(event, lanes, group, topology = {}) {
-  const found = laneOf(event, lanes);
-  if (group === 'none' || lanes.length === 0) return { lane: null, reason: null, others: [] };
-  if (group === 'region') {
-    return { lane: found, reason: found ? 'its region' : 'no lane for its region', others: [] };
-  }
-  const keys = keysOf(group, event, topology);
-  const others = keys
-    .filter((id) => id !== found?.id)
-    .map((id) => ({ id, label: labelOf(group, id, topology) }));
-  if (!found) return { lane: null, reason: null, others };
-  if (found.other) {
-    const reason = group === 'actor'
-      ? (keys.length ? 'none of its actors has a lane' : 'it names no actor')
-      : (keys.length ? 'its place has no lane' : 'it has no place');
-    return { lane: found, reason, others };
-  }
-  return {
-    lane: found,
-    reason: group === 'actor'
-      ? (keys.length > 1 ? 'heaviest of its actors' : 'its only actor')
-      : 'its place',
-    others,
-  };
 }
 
 // --- the packing, for `none` ---------------------------------------------
@@ -299,15 +148,29 @@ function makeHeap(ends) {
 //                free, since a preference can only pick a free row;
 //   past the cap the emptiest row, which is the pending heap's own top —
 //                ties to the earliest row, as the walk's strict `<` gave.
+//                **Nothing passes a cap since M77** — the timeline takes as
+//                many rows as the titles need and the pane scrolls — and the
+//                branch is kept because a caller that has a ceiling is a
+//                caller this function should still answer, and because it is
+//                the one place the heap's own top is read.
 //
 // The walk was O(rows) per bar. This is O(log rows), and measurably so past
 // about thirty rows; at the timeline's cap of twenty the two cost the same,
 // which is the point — nothing is paid for the guarantee.
+// `extra` is how much room a bar needs *beyond its own width* — since M77 the
+// timeline writes every bar's title beside it, and two bars that do not
+// overlap whose titles do are two titles nobody can read. It is a function of
+// the event because the room a title needs is the length of the title.
 export function packRows(events, scale, width, {
-  gap = 4, minBar = 6, openEnd = null, affinity = null, maxRows = Infinity,
+  gap = 4, minBar = 6, openEnd = null, affinity = null, maxRows = Infinity, extra = null,
 } = {}) {
   const items = events
-    .map((event) => ({ id: event.id, event, ...barBox(event, scale, { width, openEnd, minBar }) }))
+    .map((event) => ({
+      id: event.id,
+      event,
+      ...barBox(event, scale, { width, openEnd, minBar }),
+      room: extra ? extra(event) : 0,
+    }))
     .sort((a, b) => a.x - b.x || byId(a.id, b.id));
   const assigned = new Map();
   // A row is the x it ends at and nothing else, so the rows are one array of
@@ -363,7 +226,7 @@ export function packRows(events, scale, width, {
       }
     }
     if (index < 0) index = first;
-    const end = item.x + item.width;
+    const end = item.x + item.width + item.room;
     if (index < 0 && ends.length >= maxRows) {
       // Past the cap the bars share a row and stacking draws them as one
       // with a count, which is what the timeline did before packing existed.

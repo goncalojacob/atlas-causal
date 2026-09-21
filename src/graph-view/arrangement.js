@@ -11,7 +11,6 @@
 // of that promise and `node --test` has no DOM to build a view in.
 
 import { formatFoci, lensView } from '../lens.js';
-import { lanesFor } from '../lanes.js';
 
 // What the reader is holding, written from the state rather than counted out
 // of the held set itself. The set is derived from these six fields and from
@@ -49,10 +48,14 @@ export function holdingKey(state) {
 // would otherwise key alike and adopt each other's layout. Null for a caller
 // with only the parameter in hand, which is what this was before.
 //
-// Membership, not the lane ids: which lane an event is drawn in is the
-// heaviest of its actors *among the lanes on screen* (lanes.js). The same six
-// lanes in the same order can therefore hold different events, which a key of
-// ids alone could not see.
+// Membership, not the lane ids. It has nothing left to say since M77 — the
+// graph has no lanes at all and `lanes` is always empty — and it is kept
+// rather than deleted because `layoutGraph` still takes lanes and this is the
+// key that would have to see them again if anything ever passed some.
+//
+// **The grouping is no longer part of the key** (M77): there is one
+// arrangement of the lanes and it is the only one there has ever been a
+// default for.
 //
 // **The band is no longer part of the key** (M76). It was, from H4b until this
 // milestone, because the arrangement was laid out over the window and one
@@ -80,7 +83,7 @@ export function arrangementKey(state, events, lanes, lens, holding = '', foci = 
   // With no grouping there are no lanes and nothing to be a member of; the
   // set of events is then the whole of the arrangement.
   const membership = lanes.length === 0 ? '' : events.map((e) => at.get(e.id) ?? -1).join(',');
-  return `${focus}|${filters}|${layers}|${state.group}|${lanes.map((l) => l.id).join(',')}|${membership}|${holding}`;
+  return `${focus}|${filters}|${layers}|${lanes.map((l) => l.id).join(',')}|${membership}|${holding}`;
 }
 
 // How many active links an event has, both directions counted: the adjacency
@@ -145,11 +148,11 @@ export function arrangementOf(atlas, state, held = null, shown = undefined) {
   // the main events at rest and the lens when there is one, and by I6's cull,
   // which puts in the DOM only what falls inside the rectangle on screen.
   const events = all;
-  // And the lanes are chosen over everything drawn, not over the window: which
-  // lane an event goes in is the heaviest of its actors *among the lanes on
-  // screen*, weighted inside a window (lanes.js) — so a window passed here
-  // would have the band silently reordering a picture that no longer obeys it.
-  const lanes = state.group === 'none' ? [] : lanesFor(state.group, atlas, null, lens, state.lanes);
+  // And there are no lanes at all, ever (M77). The graph's bands were the
+  // grouping's, and the grouping is gone; what the layout is given is one
+  // unnamed field, which is what `none` — the default and what the atlas
+  // always opened on — always gave it.
+  const lanes = [];
   return {
     events,
     lanes,

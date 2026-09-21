@@ -9,7 +9,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { arrangementKey, arrangementOf } from '../src/graph-view/arrangement.js';
-import { lanesFor } from '../src/lanes.js';
 import { buildAdjacency } from '../src/graph.js';
 import { defaultState } from '../src/state.js';
 
@@ -59,27 +58,31 @@ const ATLAS = {
 // tests of its own at the foot of the file, over an atlas that has some.
 const state = (patch) => ({ ...defaultState(), degree: 0, ...patch });
 
-// The reader's own lane list, so the six automatic lanes cannot reorder
-// themselves and hide what is being tested behind a change of the ids.
-const NAMED = { group: 'actor', lanes: ['alfa', 'beta'] };
+// There is no grouping since M77 and therefore no named lanes: every
+// arrangement is one unnamed field, which is what `none` — the default the
+// atlas always opened on — always gave. `NAMED` was the reader's own lane
+// list and is now nothing at all; the tests that used it are about the band
+// and the key, and neither needed a lane to be about it.
+const NAMED = {};
 
-// M76 turned this one round. It used to assert that moving the band moved an
+// Two lanes, by hand. `arrangementKey` still reads a lane's membership and
+// this is the shape it reads, so the rule can be held to directly even though
+// nothing builds it one any more.
+const laneOfIds = (id, ids) => ({ id, label: id, other: false, members: new Set(ids), count: ids.length });
+
+// M76 turned this one round: it used to assert that moving the band moved an
 // event between lanes — the lane weight was counted inside the window — and
 // that the key saw it. The owner, 21 September: *"I think the graph can always
-// show all dates."* So the graph passes no window to `lanesFor` at all: the
-// lanes are chosen over everything the picture draws, and the band cannot
-// reorder a picture that does not obey it. That the key still reads
-// *membership* rather than the lane ids is asserted directly below.
+// show all dates."* M77 took the last of it away, because there are no lanes
+// on the graph at all now. What is left to assert is what the band still must
+// not do: change the picture.
 test('moving the band moves no lane, no event and no key', () => {
   const whole = arrangementOf(ATLAS, state({ ...NAMED }));
   const late = arrangementOf(ATLAS, state({ ...NAMED, from: 1905 }));
 
-  assert.deepEqual(whole.lanes.map((l) => l.id), ['alfa', 'beta']);
-  assert.deepEqual(late.lanes.map((l) => l.id), ['alfa', 'beta']);
-
-  const laneOf = (arrangement, id) => arrangement.lanes.find((l) => l.members.has(id))?.id;
-  assert.equal(laneOf(whole, 'shared'), laneOf(late, 'shared'),
-    'the event both actors are in stays where it was');
+  assert.deepEqual(whole.lanes, [], 'one unnamed field, on every band');
+  assert.deepEqual(late.lanes, []);
+  assert.deepEqual(whole.events.map((e) => e.id), late.events.map((e) => e.id));
   assert.equal(whole.key, late.key, 'so there is nothing to lay out again');
 });
 
@@ -132,8 +135,8 @@ test('choosing a different event is a different picture, and the key says so', (
 // The key is a function of the arrangement it is given, so it can be held to
 // the two rules directly and not only through the atlas above.
 test('the key reads membership rather than the lane ids, and the applied lens', () => {
-  const s = state({ group: 'actor', lanes: ['alfa', 'beta'] });
-  const lanes = lanesFor('actor', ATLAS, { from: 1900, to: 1960 }, null, ['alfa', 'beta']);
+  const s = state({});
+  const lanes = [laneOfIds('alfa', ['early-0', 'shared']), laneOfIds('beta', ['late-0'])];
   const moved = lanes.map((lane) => ({ ...lane, members: new Set(lane.members) }));
   moved[0].members.delete('shared');
   moved[1].members.add('shared');

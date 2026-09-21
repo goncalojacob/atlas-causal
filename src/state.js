@@ -1,4 +1,4 @@
-// One state object, { from, to, view, focus, focusAll, group, lanes, selected,
+// One state object, { from, to, view, focus, focusAll, selected,
 // source, place, actor, chain, horizon, layers, narrative, step, walk, bbox },
 // mirrored to
 // the URL query string so every view is a shareable link. Knows nothing
@@ -47,16 +47,18 @@
 // applies inside a lens, because a reader who has focused has already said
 // what they want to see.
 //
-// In the URL and not in a preference, for the reason `view` and `group` are:
-// a link is meant to open on the picture the person who sent it was looking
-// at. A link shared before M48 names neither and opens on the default, which
-// is a narrower graph than its sender saw and the same map and timeline.
+// In the URL and not in a preference, for the reason `view` is: a link is
+// meant to open on the picture the person who sent it was looking at. A link
+// shared before M48 names neither and opens on the default, which is a
+// narrower graph than its sender saw and the same map and timeline.
 //
-// `group` is what the timeline's lanes and the graph's bands are — `none`,
-// `actor`, `place`, `region` — and `lanes` is the reader's own ordered list
-// of them, empty for the automatic six. Both are how the atlas is drawn
-// rather than what is selected in it, and both are in the URL for the same
-// reason `view` is: a link should open on the picture it was sent from.
+// **`group` and `lanes` are gone** (M77). They were what the timeline's lanes
+// and the graph's bands were — `none`, `actor`, `place`, `region` — and the
+// reader's own ordered list of them. The owner, 21 September: *"Right now the
+// grouping function is useless, let's simplify the platform and remove it."*
+// A `?group=` or a `?lanes=` in a link shared before this is read into
+// nothing and opens the default lanes, which is deviation 848's rule for
+// every parameter this atlas has retired.
 //
 // `horizon` is the year of the question "what did this lead to by then?".
 // Null means the window's far end, which is the default and is deliberately
@@ -104,7 +106,7 @@ import { isValidYear } from './util/dates.js';
 // as free of the data as this file is — it imports nothing at all — so
 // importing it costs this file none of its independence.
 import {
-  EDGE_ID, RELATION_ID, FOCUS_PARAM, GROUPS, VIEWS,
+  EDGE_ID, RELATION_ID, FOCUS_PARAM, VIEWS,
 } from './vocab.js';
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -142,7 +144,7 @@ export const DEFAULT_LAYERS = Object.freeze(LAYERS.filter((id) => id !== 'relief
 // name nobody recognises is dropped by whatever reads it, exactly as a lane
 // id is dropped by `lanes.js`. The bare `events` means every category.
 const EVENTS_LAYER = /^events:[a-z0-9]+(-[a-z0-9]+)*$/;
-export { GROUPS, VIEWS };
+export { VIEWS };
 // Query parameters that are not state but must survive a state write.
 const PASSTHROUGH = Object.freeze(['fixtures']);
 
@@ -157,7 +159,7 @@ export const DEGREE_DEFAULT = 2;
 
 export function defaultState() {
   return {
-    from: null, to: null, view: 'map', focus: null, focusAll: false, group: 'none', lanes: [],
+    from: null, to: null, view: 'map', focus: null, focusAll: false,
     degree: DEGREE_DEFAULT, tops: false,
     selected: null, source: null, place: null,
     actor: null, office: null, chain: [], horizon: null, layers: [...DEFAULT_LAYERS], narrative: null, step: 0,
@@ -223,7 +225,7 @@ export function formatBbox(bbox) {
 export function parseState(search, defaults = defaultState()) {
   const params = new URLSearchParams(search);
   const state = {
-    ...defaults, chain: [...defaults.chain], layers: [...defaults.layers], lanes: [...defaults.lanes],
+    ...defaults, chain: [...defaults.chain], layers: [...defaults.layers],
   };
   const year = (key) => {
     const value = Number(params.get(key));
@@ -296,7 +298,6 @@ export function parseState(search, defaults = defaultState()) {
   // intersection — "all of these" rather than "any of these".
   if (params.has('focus') && FOCUS_PARAM.test(params.get('focus'))) state.focus = params.get('focus');
   state.focusAll = params.get('focusAll') === '1';
-  if (params.has('group') && GROUPS.includes(params.get('group'))) state.group = params.get('group');
   // A floor outside the list the control offers is a link written by hand, and
   // it is honoured where it is a whole number of links: the control is a
   // convenience and the parameter is the state. Anything else falls back to the
@@ -305,16 +306,6 @@ export function parseState(search, defaults = defaultState()) {
   // link with a typo in it and not a reader asking for every event.
   if (/^\d+$/.test(params.get('degree') ?? '')) state.degree = Number(params.get('degree'));
   state.tops = params.get('tops') === '1';
-  // An explicit lane list is the reader's order, so duplicates are dropped
-  // rather than sorted away; whether an id names a record at all is decided
-  // by lanes.js, which has the data this file deliberately does not.
-  if (params.has('lanes')) {
-    const lanes = [];
-    for (const id of params.get('lanes').split(',').filter(Boolean)) {
-      if (SLUG.test(id) && !lanes.includes(id)) lanes.push(id);
-    }
-    state.lanes = lanes;
-  }
   if (params.has('bbox')) state.bbox = parseBbox(params.get('bbox'));
   if (params.has('view') && VIEWS.includes(params.get('view'))) state.view = params.get('view');
   if (params.has('layers')) {
@@ -354,14 +345,10 @@ export function formatState(state, search = '') {
   // Only beside a lens: "all of these" with no foci is an instruction with no
   // addressee, and it would sit in every link the reader ever copied.
   if (state.focusAll && state.focus && state.focus !== 'none') params.set('focusAll', '1');
-  if (state.group && state.group !== 'none') params.set('group', state.group);
   // The default writes nothing, so the link a reader copies says what they
   // changed and not what they left alone.
   if (Number.isInteger(state.degree) && state.degree !== DEGREE_DEFAULT) params.set('degree', String(state.degree));
   if (state.tops) params.set('tops', '1');
-  // A lane list without a grouping to belong to would be an instruction with
-  // no addressee, and `none` has no lanes to order.
-  if (state.lanes?.length && state.group && state.group !== 'none') params.set('lanes', state.lanes.join(','));
   if (state.selected) params.set('selected', state.selected);
   if (state.source) params.set('source', state.source);
   if (state.place) params.set('place', state.place);

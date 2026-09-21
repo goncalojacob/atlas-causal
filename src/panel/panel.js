@@ -15,13 +15,12 @@ import { articleFor } from '../wikipedia.js';
 import { windowAt, resolveWindow } from '../util/window.js';
 import { OPENINGS, hasOpening } from '../state.js';
 import {
-  formatFocus, lensSet, lensLabels, withFocus, withoutFocus, FOCUS_NONE,
+  formatFocus, lensLabels, withFocus, withoutFocus, FOCUS_NONE,
 } from '../lens.js';
-import { lanesFor } from '../lanes.js';
 import { shortestPaths, pathTo } from '../graph.js';
 import { chainEdges } from '../chain.js';
 import { identifiers, containerText } from '../citation.js';
-import { renderEventCard, drawnHtml } from './event.js';
+import { renderEventCard } from './event.js';
 import { renderActorCard, groundEventsSection, GROUND_SECTION } from './actor.js';
 import { renderOfficeCard, tenureClusterAt } from './office.js';
 import { renderPlaceCard, placeEventsSection, EVENTS_SECTION } from './place.js';
@@ -455,13 +454,6 @@ export function createPanel(container, {
     </p>`;
   }
 
-  // The lanes of the current grouping, so the event card can say where the
-  // event is drawn and why. The same call the timeline and the graph make.
-  function lanes(s) {
-    if (s.group === 'none') return [];
-    return lanesFor(s.group, atlas, resolveWindow(s, atlas.extent, atlas.opens), lensSet(atlas, s), s.lanes);
-  }
-
   // Everything a card is given. No card reaches for the container, the state
   // or the token on its own.
   const ctx = {
@@ -469,7 +461,6 @@ export function createPanel(container, {
     laneLabel,
     categoryLabel,
     lensControl,
-    lanes,
     startYear,
     citationsHtml,
     edgeTextHtml,
@@ -583,8 +574,6 @@ export function createPanel(container, {
     const found = s.selected && !s.narrative ? atlas.resolve(s.selected) : null;
     const event = found && found.kind === 'event' ? found.record : null;
     if (event) {
-      const drawn = container.querySelector('[data-slot="drawn"]');
-      if (drawn) drawn.outerHTML = drawnHtml(ctx, event, s);
       const horizon = container.querySelector('.horizon');
       if (horizon) {
         // The details and the year field are the reader's, not the state's:

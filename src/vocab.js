@@ -6,7 +6,7 @@
 // each written out in four to eleven places (health review A, findings 9 and
 // 28; B, finding 19): `state.js` kept its own copies of the two id patterns
 // "so that this file stays free of the data", `lanes.js` and `state.js` each
-// declared `GROUPS`, and the labels and the orders lived in `graph.js` and in
+// declared the groupings, and the labels and the orders lived in `graph.js` and in
 // two panel cards. Two definitions of one closed set drift, and adding a
 // sixth relation type meant finding eleven of them.
 //
@@ -119,10 +119,11 @@ export const OFFICE_CATEGORIES = Object.freeze([
 // was: adding a third value is a change to the drawing and therefore code.
 export const EVENT_SCOPES = Object.freeze(['regional', 'worldwide']);
 
-// The four groupings a reader can ask the lanes for. `none` is the default
-// and names no lanes at all: the arrangement that says least about the data,
-// and therefore the right first thing to show.
-export const GROUPS = Object.freeze(['none', 'actor', 'place', 'region']);
+// `GROUPS` — the four groupings a reader could ask the lanes for — was here
+// until M77. The owner asked for the picker and everything behind it to go:
+// the timeline packs its bars into unlabelled rows and the graph drops its
+// bands, which was `none`, the default, and is now the only arrangement there
+// is (src/lanes.js).
 
 // The kinds a lens can be about. Three until H7, and six since: the owner
 // asked to be able to focus on "parent events, actors, timelines or others, or

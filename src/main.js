@@ -10,7 +10,7 @@ import { createGraphView } from './graph-view/graph-view.js';
 import { createTimeline } from './timeline.js';
 import { createPanel } from './panel/panel.js';
 import { createSearchBox } from './search-box.js';
-import { createGrouping } from './grouping.js';
+import { createLensChips } from './lens-chips.js';
 import { createPanes } from './panes.js';
 import { createPhone } from './phone.js';
 import { createIntro } from './intro.js';
@@ -157,7 +157,7 @@ try {
     Promise.allSettled([atlas.loadGrounds(), atlas.loadTerritories()]).then(() => {
       remeasure({ force: true });
       panel.refresh({ force: true });
-      grouping.render(state.get());
+      lensChips.render(state.get());
     });
   };
 
@@ -201,7 +201,7 @@ try {
   createIntro(document.getElementById('intro'), {
     atlas, state, toggle: document.getElementById('intro-button'),
   });
-  const grouping = createGrouping(document.getElementById('grouping'), { atlas, state });
+  const lensChips = createLensChips(document.getElementById('lens-chips'), { atlas, state });
   bindNarrativeKeys(document, { atlas, state });
 
   // The graph and the timeline take the map's slot behind the toggle. Each is
@@ -277,7 +277,7 @@ try {
       graph = createGraphView(graphArea, { atlas, state, onCluster: showCluster });
     }
     if (timelineOn && !timeline) {
-      timeline = createTimeline(timelineArea, { atlas, state, onCluster: showCluster });
+      timeline = createTimeline(timelineArea, { atlas, state });
     }
     // The layer switches belong to the map: the graph has no coastlines and
     // the timeline no territories. And the degree floor belongs to the graph,
@@ -319,7 +319,7 @@ try {
   // The three pictures, the card, and the header's chips: a lens chip names a
   // record too, and it is drawn in the masthead rather than by the panel.
   const shardLanded = () => {
-    remeasure(); panel.refresh(); grouping.render(state.get());
+    remeasure(); panel.refresh(); lensChips.render(state.get());
     // And the composer's step list, where a step is named by the record's
     // title once its century is in and by its id until then (attributes.js).
     composer?.refresh();

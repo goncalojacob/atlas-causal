@@ -22,7 +22,7 @@ import {
 } from '../src/kinds.js';
 import {
   EDGE_TYPES, EDGE_TYPE_IDS, RELATION_TYPES, RELATION_TYPE_IDS,
-  EDGE_ID, RELATION_ID, FOCUS, FOCUS_PARAM, FOCUS_NONE, GROUPS, FOCUS_KINDS,
+  EDGE_ID, RELATION_ID, FOCUS, FOCUS_PARAM, FOCUS_NONE, FOCUS_KINDS,
   RELATION_ENDPOINTS, RELATION_GROUP_ORDER, ACYCLIC_RELATION_TYPES,
   NARRATIVE_STEP_REF, OFFICE_CATEGORY_IDS, OFFICE_ENDPOINTS, OFFICE_CATEGORY_LABEL,
   EVENT_SCOPES,
@@ -221,9 +221,9 @@ test('the vocabularies equal the enums in schema/**', async () => {
   // The lens's six kinds and its pattern accept exactly each other. Five of
   // them are record kinds; `region` is not — a region is a lane the atlas
   // draws in, declared in `regions.json` and named by every event, which is
-  // exactly why a reader may focus on one. The four groupings are three of
-  // the lens kinds plus "none", which is a coincidence of the vocabulary and
-  // not a rule, so only the shape of each is asserted.
+  // exactly why a reader may focus on one. (The four groupings were three of
+  // the lens kinds plus "none"; they went in M77 and this file no longer has
+  // a closed set of them to check.)
   for (const kind of FOCUS_KINDS) {
     assert.ok(KINDS.includes(kind) || kind === 'region', kind);
     assert.ok(FOCUS.test(`${kind}:some-id`), kind);
@@ -236,8 +236,6 @@ test('the vocabularies equal the enums in schema/**', async () => {
   assert.ok(!FOCUS_PARAM.test(''));
   assert.ok(!FOCUS_PARAM.test('actor:a,'));
   assert.ok(!FOCUS_PARAM.test(`${FOCUS_NONE},actor:a`));
-  assert.equal(GROUPS[0], 'none', 'the default grouping is first');
-  assert.equal(new Set(GROUPS).size, GROUPS.length);
 });
 
 // --- src/origin.js against the schema, and against the additive rule --------

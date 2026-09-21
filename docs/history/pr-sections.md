@@ -3288,3 +3288,108 @@ step, **no new hex value, token or type size**; `lanes.js`, `cluster.js`,
 `docs/drafts/` ignored. Deviations **1100 to 1108** — lane A numbers from 1100
 from this milestone, because M75's 999–1004 and lane B's M42 block from 950
 overlap; the overlap is recorded, not rewritten.
+
+## M77 — the graph reads as the walk, the timeline's bars are titled, grouping goes
+
+Three instructions from the owner on 21 September, with two screenshots. Lane
+A, on the branch `m77`; no record and no historical claim was written and
+nothing under `data/` changed.
+
+### The graph under a narrative, measured before anything was changed
+
+Headless Chromium at 1440 × 900, both narratives, on the commit that claimed
+the milestone. **The diagnosis is not "too many labels".** With
+`how-the-colonial-war-ended-the-regime` open, eight of the fourteen names on
+the page belonged to events the reader did not ask about and half the walk's
+own steps had no name at all; with `who-was-buying`, four of twenty-eight steps
+were named in full and eight labels were `The Ab…`, `Dutch B…`, `The Revolu…`.
+Two thirds of the ink was not the argument — 41 of 61 lines, and 32 of 43 —
+with the argument unreadable underneath it. Nothing in the drawing knew what a
+lens was: labels were ordered by weight and cut to the room beside them (M61),
+which is right for a picture of everything and wrong for a picture of one
+argument.
+
+### What was chosen
+
+Three rules, one place each. **A name is drawn whole or it is not drawn at
+all**: what does not fit waits for the pointer, which now draws it in a layer
+of its own over the picture. **With a lens on, the lens is what is named**, in
+the narrator's own order, and the ring is not named at all. **With a lens on,
+the lens's own links are the ones in ink** and every other line is drawn faint
+with the class the ring's marks already carry.
+
+What made the first rule affordable is the measurement: 22 of the 28 steps of
+`who-was-buying` sit on **one line** of the layout, with the whole field free
+above and below. So a label may be written on a nearby free line, with a
+hairline tying it back to its mark — eighteen lines inside a lens, two at rest.
+Writing a clipped label on the other side of its mark was tried and rejected on
+the picture: the graph's labels are packed against their neighbours, and the
+result was full names drawn over full names.
+
+After, on the same instrument: **0 truncated labels, 0 names of anything
+outside the walk, 28 of 28 and 12 of 12 steps named in full**, and the note
+*"The map is looking at part of the world…"* gone from the graph. The legend
+and `Export this view` stay.
+
+### The timeline
+
+**Every bar carries its title.** No stacking, no `rect.bar.stack`, no `+n`:
+the packing reserves the room a title needs beside its bar, so two bars that do
+not overlap can never have two titles that do. The rows are as many as that
+takes — about seventy-five at the whole extent, where the pane holds
+thirty-four — and the pane scrolls; a row never shrinks below the height a
+title is legible in. Clicking a bar with children opens it, which needed no new
+mechanism: choosing an event has been a lens on it and its parts since M65.
+
+### Grouping
+
+`src/grouping.js` is gone, split rather than deleted because its back half was
+the lens chips, which are not the grouping: they are `src/lens-chips.js` now,
+unchanged. What went with the picker: the `group` and `lanes` state and every
+line that parsed or wrote them, `GROUPS`, `lanesFor`, `availableLanes`,
+`laneExplain`, `LANE_CAP`, `OTHER_ID`, `bracketsIn` and the bracket,
+`lanesThatFit`, the event card's "Drawn in the … lane" paragraph, and
+twenty-two rules of the stylesheet. The graph has no bands at all now. An old
+`?group=actor&lanes=…` opens the atlas on the default rows and writes neither
+parameter back.
+
+### First paint, against M76
+
+Median of nine cold loads of `?from=1900&to=1999` at 1440 × 900, `origin/m0`
+and this head measured in one session on one machine: first contentful paint
+**40 ms either side**, load **197 → 206 ms** inside a 60 ms spread, **one more
+file** (`graph-view/labels.js`; `grouping.js` → `lens-chips.js` is a rename)
+and the page **9,267 bytes smaller**, of which 7,975 are JavaScript.
+
+### Pictures
+
+`docs/screens/m77-graph-before.png` and `m77-graph.png`,
+`m77-graph-phone-before.png` and `m77-graph-phone.png`,
+`m77-timeline-before.png` and `m77-timeline.png`,
+`m77-timeline-phone-before.png` and `m77-timeline-phone.png`, and
+`m77-timeline-opened.png` — the Estado Novo opened, with the twenty-five events
+inside it each titled. The "before" pictures were taken from a worktree of
+`origin/m0` with the same links; the rest through `tools/screens.mjs --only`,
+so no other picture was rewritten and none had to be restored. `glyphs-map`
+lost `&group=region` from its link and was taken again.
+
+### Tests
+
+`tests/m77.test.mjs` (11) and `tests/m77-browser.test.mjs` (6), written before
+the behaviour they judge (711, 717). **No test pins a count or a pixel.**
+Changed first: the three `?group=` tests in `tests/state.test.mjs`, fourteen
+named-lane tests in `tests/lanes.test.mjs`, four bracket tests in
+`tests/large.test.mjs`, the `lanesFor` lane builders in `arrangement`,
+`graph-layout` and `layout-worker`, the whole of `tests/timeline-rows.test.mjs`,
+five tests in `tests/timeline-browser.test.mjs`, and the names in
+`m60-browser`, `graph-browser`, `phone-browser`, `registry` and `render-key`.
+
+### Checks
+
+`node tools/validate.mjs --index`: **10,653 records, 5 regions, 0 errors, 238
+warnings** — unchanged. `node --test`: **1,680 pure and 228 browser, 1,908 in
+all, 0 failed and 0 skipped**, the browser suites one at a time as the check
+runs them (M63). No new runtime dependency, no build step, **no new hex value,
+token or type size**; `emphasis.js`'s `shown` contract, the lens, the band and
+M76's changes are untouched. `docs/drafts/` ignored. Deviations **1109 to
+1122**.
