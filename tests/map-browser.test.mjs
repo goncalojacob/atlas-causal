@@ -7,7 +7,9 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { withBrowser, open, waitFor, seenIntro, skip } from './browser.mjs';
+import {
+  withBrowser, open, waitFor, until, seenIntro, skip,
+} from './browser.mjs';
 import { cellsFor } from '../src/map/grid.js';
 import { parseBbox } from '../src/state.js';
 import { fixtures } from './helpers.mjs';
@@ -1395,7 +1397,15 @@ test('turning rivers off empties its group and asks for nothing, and back on dra
     await waitFor(page, 'return document.querySelector("#map .layer-base-rivers").children.length === 0;',
       'the rivers to go');
     assert.equal(await page.eval(BASE_REQUEST_COUNT), before, 'an off layer asks for nothing');
-    // And what the reader did is in the link, as everything else is.
+    // And what the reader did is in the link, as everything else is — on the
+    // next animation frame and not in the click (state.js), which the two
+    // category tests above already wait for and this one did not. The wait was
+    // the drawing emptying, which happens in the click; one browser pass in
+    // five read `the link says so: null` (M78, docs/m78-flakes.md).
+    await until(page, `return (() => {
+      const written = new URLSearchParams(location.search).get('layers');
+      return written !== null && !written.split(',').includes('rivers');
+    })();`);
     const layers = await page.eval('return new URLSearchParams(location.search).get("layers");');
     assert.ok(layers && !layers.split(',').includes('rivers'), `the link says so: ${layers}`);
     assert.ok(layers.split(',').includes('lakes'), 'and the other four are still on');
@@ -1412,7 +1422,9 @@ test('turning rivers off empties its group and asks for nothing, and back on dra
     assert.equal(await page.eval(BASE_REQUEST_COUNT), before, 'and they are drawn from cache');
     assert.equal(await page.eval('return document.querySelector("#map .layer-base-rivers").children.length;'), drawn,
       'the same picture as before it was switched off');
-    // Everything on again is the default, and the default writes no link.
+    // Everything on again is the default, and the default writes no link — on
+    // a frame, as above, so it is waited for and then asserted.
+    await until(page, "return new URLSearchParams(location.search).get('layers') === null;");
     assert.equal(await page.eval('return new URLSearchParams(location.search).get("layers");'), null,
       'back to the default, and the link says nothing');
   });
