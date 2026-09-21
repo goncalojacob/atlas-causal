@@ -1,0 +1,934 @@
+{
+  "from": 1800,
+  "kind": "event",
+  "records": {
+    "1890-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1892-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1893-franco-siamese-crisis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "1894-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1895-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1897-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1899-portuguese-legislative-election": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "aberdeen-act-1845": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "anglo-zanzibar-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "retraction",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "baring-crisis": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "berlin-conference": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "boer-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy"
+          ],
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "boxer-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "cuban-war-of-independence-1895-1898": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "donghak-peasant-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "empire-of-brazil-1822-1889": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-20"
+        }
+      ]
+    },
+    "eusebio-de-queiros-law-1850": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-20"
+        }
+      ]
+    },
+    "first-italo-ethiopian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
+        }
+      ]
+    },
+    "first-matabele-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "retraction",
+            "status"
+          ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "first-sino-japanese-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review"
+          ],
+          "on": "2026-09-20"
+        }
+      ]
+    },
+    "franco-russian-alliance": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "greco-turkish-war-of-1897": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "heligoland-zanzibar-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "independence-of-brazil-1822": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "jameson-raid": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "lei-aurea-1888": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-20"
+        }
+      ]
+    },
+    "panic-of-1893": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "retraction",
+            "status"
+          ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "philippine-american-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review"
+          ],
+          "on": "2026-09-20"
+        }
+      ]
+    },
+    "philippine-declaration-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "philippine-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "proclamation-of-the-brazilian-republic-1889": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "second-boer-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "actors",
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "second-matabele-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "sixth-cholera-pandemic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "slave-trade-act-1807": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "slavery-abolition-act-1833": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "spanish-american-war-1898": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "strangford-treaty-1810": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "the-amazon-rubber-boom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "the-baptist-war-1831": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "the-brazilian-coffee-cycle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "thousand-days-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "retraction",
+            "status"
+          ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "transfer-of-the-portuguese-court-to-brazil-1807": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "treaty-of-paris-1898": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "parent",
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "treaty-of-windsor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "status"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "status",
+            "summary"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "category"
+          ],
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "actors",
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-20"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1899
+}
