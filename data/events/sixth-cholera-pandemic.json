@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "sixth-cholera-pandemic",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 13 under brief §1: the record earns no honest edge. The English article, at revision 1337178480, relates the pandemic to exactly one event this atlas holds, and does so the wrong way about: \"in 1913, there was a cholera outbreak in forces of the Romanian Army which were taking part in military operations of the Second Balkan War in Bulgarian areas\", which says that an outbreak inside the war was part of the pandemic and not that either caused the other — and rule 4 would in any case refuse an edge from 1913 into a record that starts in 1899. Everything else in the article is the pandemic's own route: the Haridwar Kumbh Mela, Punjab, Afghanistan, Persia, southern Russia and the steamship Moltke into New York. It waits on a record of the 1913 Romanian Army cholera outbreak, or on a person arguing what the pandemic changed."
+  },
+  "wikidata": "Q7533201",
+  "wikipedia": {
+    "en": "1899–1923 cholera pandemic",
+    "pt": "Pandemia de cólera de 1899–1923"
+  },
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7533201"
+    }
+  ],
+  "title": "sixth cholera pandemic",
+  "summary": "Wikidata item Q7533201, imported by tools/import/wikidata.mjs. The item's own description reads \"historically sixth cholera pandemic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1923
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

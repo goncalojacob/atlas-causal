@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "tajikistani-civil-war",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 13 under brief §1: the record earns no honest edge. The English article, at revision 1370749545, files the war under \"the post-Soviet conflicts and spillover of the Afghan Civil War (1992–1996)\" and neither is a record here; its § Background argues the war out of Gorbachev's perestroika, the Islamic-democratic movement in the Tajik SSR, and demonstrations against the 1991 presidential election, and names the Soviet Union itself only in a category line. The dissolution of the Soviet Union, which this atlas does hold, was read from its own side too, at revision 1375840189: it mentions Tajikistan for the Dushanbe riots of February 1990 and a border clash with Kyrgyzstan in 2021, and argues no line to this war. Writing the obvious edge would be this run's inference and not anybody's page. It waits on a record of the Afghan Civil War of 1992–1996."
+  },
+  "wikidata": "Q1122110",
+  "wikipedia": {
+    "en": "Tajikistani Civil War",
+    "pt": "Guerra Civil do Tajiquistão"
+  },
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1122110"
+    }
+  ],
+  "title": "Tajikistani Civil War",
+  "summary": "Wikidata item Q1122110, imported by tools/import/wikidata.mjs. The item's own description reads \"1992–1997 civil war in Tajikistan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1992,
+    "end": 1997,
+    "date": "1992-05-05",
+    "endDate": "1997-06-27"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

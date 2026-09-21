@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "isaacs-hardy-1988-pawns-of-war",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m42-second-source"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "type": "book",
+  "creators": [
+    "Arnold Isaacs",
+    "Gordon Hardy"
+  ],
+  "title": "Pawns of War: Cambodia and Laos",
+  "year": 1988,
+  "publisher": "Boston Publishing Company",
+  "isbn": "0939526247",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "container": null,
+  "repository": null,
+  "reference": null
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "saur-revolution--soviet-afghan-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Saur Revolution\", revision 1370730356, § lead, infobox result and § Reactions"
+    },
+    {
+      "source": "kaplan-1990-soldiers-of-god",
+      "locator": "pp. 115–116"
+    }
+  ],
+  "from": "saur-revolution",
+  "to": "soviet-afghan-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article's own infobox lists \"eventual Soviet military intervention\" among the revolution's results, and its body supplies the chain: the PDPA government that took power on 27–28 April 1978 executed Daoud and purged his supporters, and \"between April 1978 and the Soviet invasion of December 1979, Afghan communists executed 27,000 political prisoners\"; the Soviet Union \"invaded Afghanistan in December 1979, citing the Brezhnev Doctrine as basis of its military invasion\", and \"insurgent groups fought Soviet troops and the PDPA government for more than nine years\". On what the Soviets were intervening in, the article cites Kaplan: \"it was the Saur Revolution and its harsh land reform program, rather than the December 1979 Soviet invasion 'as most people in the West suppose', that 'ignited' the mujahideen revolt against the Kabul authorities\". Gilles Dorronsoro is cited immediately after, arguing it was the state's violence rather than its reforms — a disagreement about which part of the revolution did it, not about whether it did.",
+  "dispute": null
+}

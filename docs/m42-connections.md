@@ -1866,6 +1866,351 @@ for it. **The sweep grows the corpus and opens new corners; the tombstones grow
 the component.** A run with time for one of the two should know which it is
 choosing.
 
+## 2m. Batch 13 — sets 3 and 4 a fourth time, and no tombstone came back
+
+**Sixteen rows ticked, sixteen created, twelve kept and four retracted,
+fourteen edges, two filings, and every one of the twelve lands in the largest
+connected component.** The corpus grew by twelve and the component grew by
+twelve; the component *count* did not move, and neither did the three events
+with no edge at all.
+
+**Step 0 of §7 was run first and it came back empty, which is a finding and
+not a skipped step.** The scan over the 213 retraction reasons for one naming
+a record that is active now returns two rows, and neither is a
+reinstatement: `1910-portuguese-legislative-election` names
+`republic-proclaimed-1910`, but it was retracted in M21 because the revolution
+stopped the count and nothing followed from the ballot — the record it names
+is the reason it is a tombstone, not the blocker it waits for — and
+`operation-rising-lion` names `twelve-day-war`, which is the record batch 8
+retracted it in favour of. A second scan, over the retraction reasons for this
+batch's own subjects, found `may-coup` waiting on "a page that argues a line
+from it to the Balkan wars" and `1907-romanian-peasants-revolt` waiting on "a
+Romanian neighbour": the Treaty of Bucharest is a Romanian record and Romania
+signed it, but the revolt's own article argues forward to the agricultural-
+contracts law of 1907 and the leasing law of 1908 and no further, so nothing
+was written. **Eleven tombstones have come back this way across batches 10 to
+12 and none came back in batch 13**, which is what the vein running thin looks
+like.
+
+### The sixteen, and how they were chosen
+
+§5's rule, recomputed against `data/` on the day: the sweep pool — the `world`
+rows of `docs/wikidata-candidates.md` whose item is on no record here and in no
+`items` entry of `data/imports/wikidata-seeds.json` — came out at **1,191
+rows**, against the 1,541 batch 11 measured, because the pool is recomputed
+and not remembered and because the count is now taken over the `world` sections
+alone. Sets 1 and 2 are spent, so set 3 took the best by sitelinks in each of
+the six thinnest decades of the corpus — the 1900s at 14 active events, the
+1890s at 16, the 1930s and 2000s at 22, the 1950s and 1980s at 23 — and set 4
+filled the remaining ten by sitelinks over the whole pool. Ties break by item
+id read as a number. Nothing was struck or added by hand, and the cap is
+sixteen, which is what the last four sweep batches have set it at.
+
+Every one of the sixteen had a class already in the table of
+`data/imports/wikidata-seeds.json`; six classes the items also carry were
+unknown to it — `Q959265` cholera outbreak, `Q107637520` border conflict,
+`Q321839` agreement, `Q750215` mass murder, `Q3882219` assassination,
+`Q180684` conflict — and **none was added**, because each item was already
+admitted by another of its classes and a class table is a decision about what
+kind of record a class becomes, not a hole to be filled on the way past.
+
+### The edges
+
+Fourteen. Every one of them runs from a record this atlas already held into a
+record this batch created, except `saur-revolution --caused--> soviet-afghan-war`,
+which runs the other way, and `treaty-of-london-q584617 --precondition-of-->
+second-balkan-war`, which runs out of a new record into an old one. **No edge
+was written between two of this batch's own records**, which is the fault A5
+exists to stop repeating.
+
+#### `first-balkan-war --caused--> treaty-of-london-q584617` and `treaty-of-london-q584617 --precondition-of--> second-balkan-war`
+
+The 1913 Treaty of London is the hinge between the two Balkan wars and the
+article says so at both ends. *"Treaty of London (1913)"*, revision 1359713953,
+§ lead: the treaty "dealt with the territorial adjustments arising out of the
+conclusion of the First Balkan War". § Terms: **"the division of the
+territories ceded to the Balkan League was not addressed in the Treaty, and
+Serbia refused to carry out the division agreed with Bulgaria in their treaty
+of March 1912. As a result of Bulgarian dissatisfaction with the *de facto*
+military division of Macedonia, the Second Balkan War broke out between the
+combatants on 16 June 1913."** The second edge is `precondition-of` and not
+`caused` because what the article blames is what the treaty *left out*.
+`hall-2000-balkan-wars` already existed as a source record — M72 wrote it —
+and the article cites Hall for that very sentence, bare, so the locator is the
+section heading, which is M72's own rule for a work cited without pages.
+
+#### `second-balkan-war --caused--> treaty-of-bucharest`
+
+*"Treaty of Bucharest (1913)"*, revision 1359715572, § lead: the treaty "was
+concluded in the aftermath of the Second Balkan War and amended the previous
+Treaty of London, which ended the First Balkan War". § Background says why
+there was a treaty at all: Bulgaria, attacked from four sides at once and
+"isolated and surrounded by a more powerful coalition of opponents", "was
+forced to agree to a truce and to peace negotiations to be held in the Romanian
+capital, Bucharest".
+
+#### `young-turk-revolution-of-1908 --reacted-to--> 31-march-incident`
+
+*"31 March incident"*, revision 1370103767, § lead: the uprising of April 1909
+occurred "soon after the 1908 Young Turk Revolution, in which the Committee of
+Union and Progress (CUP) had successfully restored the Constitution and ended
+the absolute rule of Sultan Abdul Hamid II", and "is sometimes referred to as
+an attempted countercoup or counterrevolution". The article is careful that
+what the incident *was* is contested — from a spontaneous revolt of discontents
+to a coordinated counter-revolution — and not at all that it was a reaction to
+what 1908 had done, which is the only thing this edge claims. `31-march-incident`
+is the fourth record this atlas holds for the late Ottoman crisis, after
+`young-turk-revolution-of-1908`, `bulgarian-declaration-of-independence` and the
+Balkan wars.
+
+#### `october-revolution --precondition-of--> execution-of-the-romanov-family` and `russian-civil-war --caused--> execution-of-the-romanov-family`
+
+*"Murder of the Romanov family"*, revision 1374973698. § lead gives the
+custody: "Following the February Revolution in 1917, the Romanovs and their
+servants had been imprisoned in the Alexander Palace before being moved to
+Tobolsk, Siberia, **in the aftermath of the October Revolution**. They were next
+moved to a house in Yekaterinburg, near the Ural Mountains, before they were
+murdered in July 1918." The infobox files the killings as "part of the Red
+Terror during the Russian Civil War", and the article gives the war as the
+reason for the timing twice over: "some Western historians attribute the
+execution order to the government in Moscow, specifically Vladimir Lenin and
+Yakov Sverdlov, who wanted to prevent the rescue of the imperial family by the
+approaching Czechoslovak Legion during the Russian Civil War", and, from the
+other side, "in mid-July 1918, forces of the Czechoslovak Legion were closing
+on Yekaterinburg… the Bolsheviks, falsely believing that the Czechoslovaks were
+on a mission to rescue the family, panicked and executed their wards. The
+Legions arrived less than a week later and on 25 July captured the city." Who
+gave the order is disputed in that sentence and the edge does not decide it;
+that the advance of the war is what brought the order is not disputed there at
+all. The article hangs the Moscow reading on Gellately, p. 65, which is the new
+source record `gellately-2007-lenin-stalin-hitler` and the second author M72
+asks for.
+
+#### `potsdam-conference --caused--> potsdam-declaration`
+
+*"Potsdam Declaration"*, revision 1371052620, § lead: on 26 July 1945 Truman,
+Churchill and Chiang Kai-shek "issued the document, which outlined the terms of
+surrender for the Empire of Japan, **as agreed upon at the Potsdam
+Conference**". § Drafting shows the conference doing the work — the American
+delegation opened with a proclamation demanding unconditional surrender, "the
+Potsdam Declaration went through many drafts until a version acceptable to all
+was found", and Stalin declined to endorse it at Potsdam because the Soviet
+Union was not yet at war with Japan. This is the third act of that conference
+the atlas draws, and the declaration is **not** filed under it: a conference and
+the ultimatum it issued are two records, not an umbrella and a part.
+
+#### `world-war-ii --caused--> paris-peace-treaties`
+
+*"Paris Peace Treaties, 1947"*, revision 1369078996, § lead: signed on 10
+February 1947 "following the end of World War II in 1945", by which "the
+victorious wartime Allied powers… negotiated the details of peace treaties with
+the former (mostly minor) European Rome-Berlin-Tokyo Axis powers, namely Italy,
+Romania, Hungary, Bulgaria, and Finland". What they settled is the war's own
+ledger: reparations, minority rights, the end of the Italian colonial empire,
+and the Italian–Yugoslav, Hungarian–Czechoslovak, Soviet–Romanian,
+Hungarian–Romanian, French–Italian and Soviet–Finnish borders.
+`paris-peace-treaties` is the second postwar settlement record here, beside
+`potsdam-declaration`, and neither is filed under the war: §3.5 of
+`docs/m67-umbrellas.md` already settled that the postwar order is not part of
+the war, and 1947 is outside its span in any case.
+
+#### `world-war-ii --reacted-to--> hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict`
+
+*"Hague Convention for the Protection of Cultural Property in the Event of
+Armed Conflict"*, revision 1374191348, § After World War II: **"With the
+conclusion of the Second World War and the subsequent defeat of the Axis
+powers, the atrocities which the Nazi leadership condoned, leading to the
+removal of culturally significant items and the destruction of numerous others
+could not be allowed to occur in future generations. This led the victorious
+Allied forces to create provisions to ensure safeguards for culturally
+significant items in times of war."** The same section records the war stopping
+the previous attempt: a Dutch draft of 1939 went nowhere because "the start of
+the Second World War in the same year prevented all further steps", and the
+Netherlands submitted it again to UNESCO in 1948. This is the first instrument
+of its kind to survive arrival here, and it survives because the article argues
+it out of a war this atlas holds rather than out of other instruments it does
+not — which is exactly the test §7.4's environment-shaped hole keeps failing.
+
+#### `russo-japanese-war --precondition-of--> soviet-japanese-border-conflicts`
+
+This is the batch's weakest edge and it is written as such. *"Soviet–Japanese
+border conflicts"*, revision 1375520653: the article begins its own account of
+how the conflicts came about at the Russo-Japanese war — the section is titled
+**"Prelude from 1904 to 1932"** — and says the war ended with Russia suing for
+peace, "thereby recognizing Japan's claims to Korea and agreeing to evacuate
+Manchuria". The lead then makes that ground the quarrel: "the Japanese
+expansion in Northeast China created a common border between Japanese-occupied
+Manchuria and the Soviet Far East. This led to growing tensions with the Soviet
+Union, with both sides often engaging in border violations." **The article
+states the two halves and its own section title joins them**; the edge claims no
+more than that, which is why it is `precondition-of` and `probable` rather than
+`caused`.
+
+**The edge the article argues and rule 4 forbids** is the one out of
+`second-sino-japanese-war`: "in July 1937, the Japanese invaded China, starting
+the Second Sino-Japanese War. **Soviet-Japanese relations were chilled by the
+invasion**… during the first two years of the war, the Soviets heavily aided the
+Chinese, increasing tension with Japan", cited to Coox, pp. 94 and 120. The
+border conflicts are dated from 1932 by the import, so an edge out of a 1937
+record into them is an arrow-of-time error, and **the date was not widened**,
+which is deviation 989's rule. That is the third time in four sweep batches
+that an imported interval has been the thing standing between an argued edge
+and the file, and deviation 1001 already calls it the commonest reason.
+
+#### `vietnam-war --precondition-of--> cambodian-civil-war`
+
+*"Cambodian Civil War"*, revision 1375075951, § lead: "**the conflict was part
+of the Vietnam War**. The North Vietnamese People's Army of Vietnam (PAVN) was
+involved to protect its bases in eastern Cambodia, which were crucial to its
+military effort in South Vietnam. This presence was initially tolerated by
+Prince Norodom Sihanouk, the Cambodian head of state, but domestic resistance
+combined with China and North Vietnam aiding the anti-government Khmer Rouge
+caused him to request help from the Soviet Union to stop this" — hung on
+Isaacs and Hardy, p. 90, which is the new source record
+`isaacs-hardy-1988-pawns-of-war`. The coup of March 1970 followed "wide scale
+protests in the capital against the PAVN presence in the country", and when the
+new government demanded the PAVN leave, "they refused and, at the request of
+the Khmer Rouge, invaded Cambodia". **No edge was written to
+`cambodian-vietnamese-war`**, which the Khmer Rouge victory of April 1975 leads
+to in every account: that record is dated by Wikidata from the withdrawal of
+1989, and batch 11 already refused an edge on the same interval.
+
+#### `saur-revolution --caused--> soviet-afghan-war`
+
+*"Saur Revolution"*, revision 1370730356. The infobox lists "eventual Soviet
+military intervention" among the revolution's own results, and the body
+supplies the chain: the PDPA government that took power on 27–28 April 1978
+executed Daoud and purged his supporters, and "between April 1978 and the
+Soviet invasion of December 1979, Afghan communists executed 27,000 political
+prisoners"; the Soviet Union "invaded Afghanistan in December 1979, citing the
+Brezhnev Doctrine as basis of its military invasion", and "insurgent groups
+fought Soviet troops and the PDPA government for more than nine years". On what
+the Soviets were intervening in, the article cites Kaplan — the new source
+record `kaplan-1990-soldiers-of-god`, pp. 115–116 — for the claim that "it was
+the Saur Revolution and its harsh land reform program, rather than the December
+1979 Soviet invasion 'as most people in the West suppose', that 'ignited' the
+mujahideen revolt against the Kabul authorities". Gilles Dorronsoro is cited
+immediately after, arguing it was the violence of the state rather than its
+reforms: a disagreement about **which part** of the revolution did it and not
+about whether it did, so the edge is `probable` and carries no `dispute` block.
+
+#### `war-in-afghanistan-2001-2021 --caused--> insurgency-in-khyber-pakhtunkhwa`
+
+*"Insurgency in Khyber Pakhtunkhwa"*, revision 1374407113. The infobox calls
+the insurgency "the war on terror and the **spillover of the War in Afghanistan
+(2001–2021)**", and the lead names the trigger: "the armed conflict began in
+2004 when tensions rooted in the Pakistan Army's search for Al-Qaeda fighters
+in its mountainous Waziristan region escalated into large-scale armed
+resistance", with Pakistan's actions "presented as its contribution to the U.S.
+war on terror". The Costs of War paper the article cites for its casualty
+figures states the same beginning: "the war in Pakistan, which began as Al
+Qaeda and the Taliban fled from Afghanistan into the northwest region of
+Pakistan in 2001". **It is not filed under the Afghan war**: *spillover of* is
+not *part of*, and its end is open where the parent's is 2021, which rule 24
+would warn about.
+
+#### `paris-peace-conference --enabled--> svalbard-treaty`
+
+The batch's other thin edge, and the type is the honest one. *"Svalbard
+Treaty"*, revision 1372436106, § Contents: "the Spitsbergen Treaty was signed
+in Paris on 9 February 1920, **during the Versailles negotiations after World
+War I**. In this treaty, international diplomacy recognized Norwegian
+sovereignty" over an archipelago that had been "a territory free of a nation".
+The article's own account of *why* a treaty was wanted is mining and not war —
+"by the 20th century mineral deposits were found on the main island and
+continual conflicts between miners and owners created the need for a
+government" — so what the conference supplied was the table and not the motive,
+and `enabled` is what says that and nothing more.
+
+### The four retracted, and what each waits for
+
+| record | what its article argues, and what is missing |
+| --- | --- |
+| `sixth-cholera-pandemic` | Revision 1337178480 relates the pandemic to exactly one record here and the wrong way about: "in 1913, there was a cholera outbreak in forces of the Romanian Army which were taking part in military operations of the Second Balkan War", which makes an outbreak inside the war part of the pandemic and not either the cause of the other — and rule 4 would refuse an edge from 1913 into a record starting 1899 in any case. Waits on a record of the 1913 Romanian Army cholera outbreak |
+| `black-monday` | Revision 1375770077 argues the crash out of the Louvre Accord of February 1987, overvaluation, the US twin deficits, rising rates, the falling dollar and portfolio insurance hedging, none of which is a record here. The one record it names is `great-depression`, and only as a fear — the severity "sparked fears of… a reprise of the Great Depression", a comparison and not a consequence. Waits on the Louvre Accord |
+| `tigray-war` | Revision 1374637577 begins its § Historical and political context at "the end of the Ethiopian Civil War in 1991" and runs through the EPRDF, the TPLF, the Oromo protests and Hailemariam Desalegn's resignation; its § Spillover reaches Sudan as a border conflict and sixty thousand refugees, touching none of the four Sudanese records. The Ethiopian records here are the two Italo-Ethiopian wars and `ogaden-war`, and the article argues a line to none. Waits on the Ethiopian Civil War |
+| `tajikistani-civil-war` | Revision 1370749545 files the war under "the post-Soviet conflicts and spillover of the Afghan Civil War (1992–1996)", neither a record here, and argues it out of perestroika, the Islamic-democratic movement in the Tajik SSR and the 1991 presidential election. `dissolution-of-the-soviet-union` was read from its own side too, at revision 1375840189: it names Tajikistan for the Dushanbe riots of 1990 and a Kyrgyz border clash in 2021 and argues no line to this war. The obvious edge would be this run's inference. Waits on the Afghan Civil War of 1992–1996 |
+
+**Two of the four are the batch's own answer to the tick rule.** Set 3 picks
+the best by sitelinks in the thinnest decades, and the thinnest decades are
+thin because the atlas has few neighbours there: `black-monday` came out of the
+1980s and `sixth-cholera-pandemic` out of the 1890s, and both are the best
+row their decade had. A rule that reaches into a thin decade will keep
+returning records that have nothing here to be joined to, and that is the cost
+of the floor rather than a fault in it.
+
+### The ten left main, and the two filed
+
+Two of the twelve were filed under a parent, both on M62's rule of inside the
+span *and* inside the subject, and both on a sentence the article states rather
+than on a date:
+
+- **`cambodian-civil-war` under `vietnam-war`.** "The conflict was part of the
+  Vietnam War" is the article's second sentence; 1967–1975 is inside
+  1955-11-01 to 1975-04-30; the PAVN, the United States and South Vietnam are
+  belligerents on both records. It names neither an actor nor a place — the
+  filing is made on the record's context, which is what amendment A1 of
+  `docs/m67-umbrellas.md` allows and this paragraph is the note it requires.
+  **No actor line was invented to justify it.**
+- **`execution-of-the-romanov-family` under `russian-civil-war`.** The
+  article's infobox says "part of the Red Terror during the Russian Civil War";
+  16–17 July 1918 is inside the war's span; the Ural Regional Soviet and the
+  Bolsheviks who carried it out are the war's own side. It too names neither an
+  actor nor a place, and the same note applies. The Red Terror would be the
+  better umbrella and is not a record here; M62 §3 says file it under the one
+  the atlas holds or leave it flat, and the civil war is the umbrella the
+  article itself names.
+
+The other ten are top-level and every one of them carries `actors: []`, which
+is M67 A1 and not a defect: `31-march-incident`, `soviet-japanese-border-conflicts`,
+`insurgency-in-khyber-pakhtunkhwa`,
+`hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict`,
+`potsdam-declaration`, `paris-peace-treaties`, `treaty-of-bucharest`,
+`treaty-of-london-q584617`, `svalbard-treaty` and `saur-revolution`. **None of
+the ten is anybody's part in this atlas.** Four are treaties or conventions and
+a treaty is not part of the war it ends — `treaty-of-paris-1898` under
+`spanish-american-war-1898` and `korean-armistice-agreement` under `korean-war`
+are the two exceptions already here, and both are armistices signed inside
+their war's own span, which none of these four is. `potsdam-declaration` is an
+act of a conference the atlas draws as its own record, not a part of it.
+`31-march-incident` would want an umbrella of the Second Constitutional Era,
+`soviet-japanese-border-conflicts` one of the interwar period in Northeast Asia
+and `insurgency-in-khyber-pakhtunkhwa` the war on terror; none of the three
+exists, and M62 §3 says an arguable filing is listed rather than made.
+`saur-revolution` is the umbrella-shaped one of the ten — it is where the
+Afghan sequence starts — and it is filed under nothing for the same reason.
+
+`docs/m53-polities.md` §4.1 accordingly moves to **306 of 423**, its numerator
+standing still for the fourth batch running: the gap that row shows is the gap
+between an imported corpus and a written one, and it widens by exactly the
+number of records each batch keeps.
+
+### What batch 13 did to the graph
+
+| | before | after |
+| --- | --- | --- |
+| active events | 411 | **423** |
+| main | 316 | **326** |
+| filed under a parent | 95 | **97** |
+| active edges | 499 | **513** |
+| largest connected component | 388 | **400** |
+| components | 12 | **12** |
+| active events with no edge | 3 | 3 |
+| unreachable from any Portuguese event | 15 | 15 |
+
+**The corpus grew by twelve and the component grew by twelve, with the
+component count unmoved** — the second batch of this run where the two numbers
+are equal, and the first sweep batch to manage it. Batch 12 got there by
+reading the tombstones; batch 13 got there by refusing the four rows that had
+no neighbour instead of keeping them as a fragment of their own. That is the
+same result by the opposite hand, and it says something batch 12's finding did
+not: **a sweep batch can grow the component as fast as it grows the corpus,
+provided it is willing to retract a third of what it fetched.** Twelve of
+sixteen kept is below batch 10's twelve of sixteen only in that four went out
+rather than three; the rate over four sweep batches is now **ten to twelve kept
+a batch**, and the component moves by the same number when the retractions are
+made honestly.
+
 ## 3. The main count, and why it moved up
 
 Amendment A3: an import that leaves the main count higher than it found it has

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "treaty-of-london-q584617--second-balkan-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of London (1913)\", revision 1359713953, § Terms"
+    },
+    {
+      "source": "hall-2000-balkan-wars",
+      "locator": "cited bare by the article at § Terms"
+    }
+  ],
+  "from": "treaty-of-london-q584617",
+  "to": "second-balkan-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "What the treaty left out is what the article says started the next war: \"the division of the territories ceded to the Balkan League was not addressed in the Treaty, and Serbia refused to carry out the division agreed with Bulgaria in their treaty of March 1912. **As a result of Bulgarian dissatisfaction with the *de facto* military division of Macedonia, the Second Balkan War broke out between the combatants on 16 June 1913.**\" The article hangs that sentence on Hall's history of the Balkan wars, cited without pages, so the locator is the section.",
+  "dispute": null
+}

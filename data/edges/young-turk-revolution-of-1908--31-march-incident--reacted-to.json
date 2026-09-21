@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "young-turk-revolution-of-1908--31-march-incident--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"31 March incident\", revision 1370103767, § lead"
+    }
+  ],
+  "from": "young-turk-revolution-of-1908",
+  "to": "31-march-incident",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English article puts the uprising against the revolution by name: it occurred \"soon after the 1908 Young Turk Revolution, in which the Committee of Union and Progress (CUP) had successfully restored the Constitution and ended the absolute rule of Sultan Abdul Hamid II\", and \"is sometimes referred to as an attempted countercoup or counterrevolution\". It \"consisted of a general uprising against the CUP within Constantinople, largely led by reactionary groups, particularly Islamists opposed to the secularising influence of the CUP and supporters of absolutism\". The article is careful that the precise nature of events is contested — from a spontaneous revolt to a coordinated counter-revolution — but not that it was a reaction to what 1908 had done.",
+  "dispute": null
+}
