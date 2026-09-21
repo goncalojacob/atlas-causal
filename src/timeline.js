@@ -74,6 +74,13 @@ const ROW_HEIGHT = 22;
 // long bar.
 const ROW_GAP = 4;
 const LABEL_WIDTH = 120;
+// And the gutter the scale stops short of on the right, where the titles are
+// written. It was 12 px — enough to keep the last year's bar off the edge —
+// and since M77 a bar carries its name beside it, so the last century's
+// events were named into the pane's edge. Not the width of a title, which
+// would be a sixth of the drawing spent on air: the room a short one needs,
+// with a long one still running to the edge as every label on the map does.
+const RIGHT_GUTTER = 96;
 // Room above the lanes for three lines that must not sit on top of one
 // another: what the map's borders are dated to, then the two years the
 // window's handles are at, then the axis's own ticks. They used to share one
@@ -212,7 +219,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   // know what overlaps; the height only once the lanes are known.
   const measure = () => {
     width = Math.max(container.clientWidth || 960, 320);
-    scale = createScale({ domain, range: [LABEL_WIDTH, width - 12], counts, extent: atlas.extent });
+    scale = createScale({ domain, range: [LABEL_WIDTH, width - RIGHT_GUTTER], counts, extent: atlas.extent });
     paneHeight = Math.max(0, container.clientHeight || 0);
   };
   const resize = () => {
@@ -390,6 +397,11 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   // count, and the rows are as many as that takes.
   const barLabel = (into, item, { classes, y: top, height: tall, name }) => {
     if (name === null) return;
+    // To the right of the bar, which is where the packing reserved the room.
+    // Never to its left: the packing is left to right and packs tight, so the
+    // ground on that side belongs to the bar before this one and its own
+    // title. What keeps the last century's titles on the drawing is the
+    // gutter the scale ends at (`RIGHT_GUTTER`) and not a second side.
     into.take('text', {
       x: item.x + item.width + BAR_LABEL_GAP, y: top + tall / 2,
       class: `bar-label ${classes.includes('selected') ? 'selected' : ''}${item.inside ? '' : ' faded'}`.trim(),
@@ -774,11 +786,28 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   // scrollbar appearing, which the compare stops in one turn.
   if (typeof ResizeObserver !== 'undefined') {
     let last = '';
+    let queued = false;
+    // On the next frame rather than inside the callback. Since M77 the drawing
+    // is regularly taller than its pane — every bar carries its title and the
+    // rows are as many as that takes — so the first drawing brings a
+    // scrollbar, the scrollbar changes the pane's width, and a render *inside*
+    // the observer's own callback is the loop Chromium reports as *ResizeObserver
+    // loop completed with undelivered notifications*. It always settled in one
+    // turn and the picture was right either way; what it left was a console
+    // error on an ordinary visit. A frame later is the same redraw with the
+    // observation finished.
     new ResizeObserver(() => {
-      const now = `${container.clientWidth}x${container.clientHeight}`;
-      if (now === last) return;
-      last = now;
-      render(state.get());
+      if (queued) return;
+      queued = true;
+      const draw = () => {
+        queued = false;
+        const now = `${container.clientWidth}x${container.clientHeight}`;
+        if (now === last) return;
+        last = now;
+        render(state.get());
+      };
+      if (typeof requestAnimationFrame === 'function') requestAnimationFrame(draw);
+      else draw();
     }).observe(container);
   }
   state.subscribe(render);
