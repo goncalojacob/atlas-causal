@@ -1367,6 +1367,12 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -3836,7 +3842,7 @@
       ]
     },
     "aarhus-convention": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3854,7 +3860,7 @@
       ]
     },
     "afghan-civil-war-q12302518": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3863,7 +3869,7 @@
       ]
     },
     "afghan-civil-war-q1980081": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5010,6 +5016,12 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -5547,6 +5559,12 @@
           "fields": [
             "retraction",
             "status"
+          ],
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "review"
           ],
           "on": "2026-09-21"
         }
@@ -6978,7 +6996,7 @@
       ]
     },
     "first-liberian-civil-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7533,7 +7551,7 @@
       ]
     },
     "hong-kong-flu": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7895,11 +7913,17 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
     "japan-korea-treaty-of-1910": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7908,7 +7932,7 @@
       ]
     },
     "japanese-instrument-of-surrender": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7917,7 +7941,7 @@
       ]
     },
     "kapp-putsch": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8122,7 +8146,7 @@
       ]
     },
     "la-violencia": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8482,7 +8506,7 @@
       ]
     },
     "louvre-accord": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8824,6 +8848,12 @@
           "fields": [
             "retraction",
             "status"
+          ],
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "review"
           ],
           "on": "2026-09-21"
         }
@@ -9437,7 +9467,7 @@
       ]
     },
     "partial-nuclear-test-ban-treaty": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -10922,7 +10952,7 @@
       ]
     },
     "second-liberian-civil-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -11074,6 +11104,12 @@
           "fields": [
             "retraction",
             "status"
+          ],
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "review"
           ],
           "on": "2026-09-21"
         }
@@ -11410,6 +11446,12 @@
           "fields": [
             "retraction",
             "status"
+          ],
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "review"
           ],
           "on": "2026-09-21"
         }
@@ -12213,7 +12255,7 @@
       ]
     },
     "vienna-convention-for-the-protection-of-the-ozone-layer": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

@@ -20,7 +20,8 @@
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "m42-reinstated"
     ]
   },
   "wikidata": "Q219438",

@@ -252,7 +252,7 @@
       ]
     },
     "baring-crisis": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -429,6 +429,12 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -562,6 +568,12 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -665,7 +677,7 @@
       ]
     },
     "second-matabele-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
