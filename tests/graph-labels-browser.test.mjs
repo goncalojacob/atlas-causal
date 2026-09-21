@@ -13,7 +13,9 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { withBrowser, open, seenIntro, waitFor, watchErrors, errorsOn, skip } from './browser.mjs';
+import {
+  withBrowser, open, seenIntro, waitFor, named, watchErrors, errorsOn, skip,
+} from './browser.mjs';
 import { LABEL_CHARS } from '../src/graph-view/label-fit.js';
 
 const VIEW = '?view=graph&from=1900&to=1999';
@@ -97,6 +99,16 @@ test('a node with room round it is named in full, with nothing left off', { skip
     await open(page, url(VIEW), DRAWN);
     await page.eval(WORLD);
     await waitFor(page, DRAWN, 'the world view to be drawn');
+    // `LONGEST` reads the marks' own titles, and a title arrives with its
+    // century (src/attributes.js). The wait above is "some label is drawn",
+    // which is true while most of the page is still unnamed, so *which* mark is
+    // the longest was whatever had landed: measured over six rounds, three of
+    // them picked `constitutional-revision-1982` at 57 characters with 37 of
+    // 83 marks still loading, and three picked the 59-character name that is
+    // actually the longest (docs/m78-flakes.md). The test then zoomed on to a
+    // different event each time and waited 10 s for a name that was not the
+    // one it had asked about. So the page is named before it is asked.
+    await waitFor(page, named('svg.graph circle.node[data-id]'), 'every mark to carry its name');
 
     const longest = await page.eval(LONGEST);
     assert.ok(longest, 'there is a named mark on screen');
@@ -120,6 +132,9 @@ test('a node with room round it is named in full, with nothing left off', { skip
     await open(page, url(`${VIEW}&selected=${longest.id}`), DRAWN);
     await page.eval(WORLD);
     await waitFor(page, DRAWN, 'the world view of the chosen event');
+    // And again on the second page, for the same reason: the label the zoom is
+    // waited for below cannot be drawn before the name is in.
+    await waitFor(page, named('svg.graph circle.node[data-id]'), 'every mark on the chosen page to carry its name');
     const at = await page.eval(`
       const el = document.querySelector('svg.graph circle.node[data-id="${longest.id}"]');
       const r = el.getBoundingClientRect();

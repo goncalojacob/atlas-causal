@@ -14,6 +14,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { createServer, HOST } from '../tools/serve.mjs';
 import { findChrome } from '../tools/screens.mjs';
+import { LOADING_LABEL } from '../src/attributes.js';
 
 export const chrome = findChrome();
 export const skip = chrome ? false : 'no headless browser found; set $CHROME to one';
@@ -292,16 +293,50 @@ export async function seenIntro(page) {
   });
 }
 
-// Poll the page until it says yes. Everything in the atlas arrives after the
-// load event — the topology, the land, a card's text — so nothing is ever
-// asserted on the strength of a timer.
-export async function waitFor(page, expression, what, { tries = 200, every = 50 } = {}) {
+// Poll the page until it says yes, and say whether it ever did. Everything in
+// the atlas arrives after the load event — the topology, the land, a card's
+// text — so nothing is ever asserted on the strength of a timer.
+//
+// `waitFor` is this with an assertion on the end, and it is the right one
+// wherever the wait is a *precondition* of the test: a page that never becomes
+// what the test is about has nothing to say and `timed out waiting for …` is
+// the whole of the news. Where the wait is the test's **own assertion** — no
+// bar unnamed, no step off the screen — `until` is the one to use and the
+// assertion is left to run either way: a real defect is then reported by the
+// assertion, with the ids it names, rather than as a timeout that throws them
+// away (M78, docs/m78-flakes.md).
+export async function until(page, expression, { tries = 200, every = 50 } = {}) {
   for (let i = 0; i < tries; i += 1) {
-    if (await page.eval(expression)) return;
+    if (await page.eval(expression)) return true;
     await new Promise((resolve) => { setTimeout(resolve, every); });
   }
-  assert.fail(`timed out waiting for ${what}`);
+  return false;
 }
+
+export async function waitFor(page, expression, what, options = {}) {
+  if (!await until(page, expression, options)) assert.fail(`timed out waiting for ${what}`);
+}
+
+// The wait every test about a name owes itself. A title arrives with its
+// century and not with the picture (src/attributes.js): a bar, a mark and a
+// node are drawn unlabelled and labelled when their shard lands, and until
+// then the control says it is still loading. So a count of labels — or a count
+// that has not moved in 50 ms — is the same number on either side of a shard
+// landing, which is exactly what dropped `m77-browser` 95 three runs in five
+// (docs/m78-flakes.md).
+//
+// `named(selector)` is true when every element the selector reaches carries
+// its own name. Nothing is pinned: it counts no labels and asks for no
+// particular number, only that none of them is still the interface saying it
+// is loading.
+export const named = (selector) => `
+  const marks = [...document.querySelectorAll(${JSON.stringify(selector)})];
+  if (marks.length === 0) return false;
+  return marks.every((el) => {
+    const title = el.querySelector('title');
+    return Boolean(title) && title.textContent !== ''
+      && !title.textContent.startsWith(${JSON.stringify(LOADING_LABEL)});
+  });`;
 
 // Navigate, then wait for the atlas: the panel's first card is what says the
 // data arrived and the interface was built on it.
