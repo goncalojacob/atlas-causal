@@ -532,6 +532,31 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&from=1911&to=1911&layers=land,territories,relief,rivers,lakes,physical,mountains,cities',
     width: 1440, height: 900,
     what: 'the whole world in five bands under the colonial borders' },
+  // Two more, and each answers something the three above leave open.
+  //
+  // **The Alps**, because Iberia's frontier follows rivers and the Andes are a
+  // single narrow spine: the Alps are the case where the ridge is *wide*, and
+  // four countries meet on the top band with the Po valley flat below it. It
+  // is the picture in which the milestone's question — can a border be seen to
+  // sit on a ridge? — is answered yes without having to be looked for.
+  //
+  // **The Andes with the territories off**, which is M45a's own measure asked
+  // again (`m45a-ground-bare-andes`) and is here because the answer is not
+  // flattering. The bands are right and they read: the cordillera is the top
+  // band the length of the continent, the Amazon basin the lowest, Patagonia
+  // between. Eight territory hues at 0.62 on top of that leave the broad bands
+  // — the Meseta, the Alps — and very little of a narrow one at 48° across.
+  // A set that showed only the two zooms where it works would be the assertion
+  // §2.4 refused; this is the screenshot that proves the limit as well as the
+  // promise, and STATUS.md says what it means.
+  { name: 'm45b-relief-alps', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&bbox=3.5,42.8,17.5,49.2&layers=land,territories,relief,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'a border on a wide ridge: France, Switzerland, Austria and Italy meeting on the top band, the Po valley two bands below it' },
+  { name: 'm45b-relief-bare-andes', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&bbox=-82,-56,-34,13&layers=land,relief,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'the same continent with the territories off: the cordillera in five bands, which is what the eight hues are drawn over' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
