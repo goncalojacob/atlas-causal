@@ -13699,6 +13699,33 @@ middle; where it was itself outside, two tombstones join each other. Ordering
 set 0 by whether the waiting tombstone's other end is in the largest component
 is the rule the next fire writes before it ticks.
 
+**Set 0 is spent in one batch, which only running it could show.** Recomputed
+after batch 17 the rule returns two rows out of 1,112, and neither is real —
+one is the 1912 Lausanne treaty batch 17 already dropped and the other is a
+substring false positive against a reason batch 17 itself wrote. **Set 0
+recomputes but does not refill**: it is bounded by how many tombstone reasons
+name a record the sweep carries under that exact label, and batch 17 took
+eleven of the twelve that existed. It is a filter to run first, free and
+usually empty — not a vein.
+
+**What the tombstones still ask for is not in the sweep, and §7 of
+`docs/m42-pool.md` now carries batch 18 fully resolved so the next fire does
+not repeat the lookups.** Nineteen live tombstones carry an explicit *"It waits
+on …"* clause; eight of the records they name resolve on Wikidata and are
+hinges in §6's sense — the Suez crisis, the Anschluss, the 2022 Brazilian
+general election, the Sharpeville massacre, Moroccan independence, the British
+expedition to Tibet, the Rio Earth Summit and the Siamese revolution of 1932 —
+and **every one of them has a neighbour in the largest component and not merely
+a tombstone**, which is deviation 1007's ordering applied. Six carry a class
+the table does not name, so batch 18 has a real class-table question in front
+of it; §6's precedent is that a batch pointed at named records adds the classes
+and says which, and §7 lists the seven. Three further lookups are written down
+as *not* batch 18's, with the reason: Austrofascism and perestroika are a
+system and a movement rather than events, the Organisation of African Unity is
+an actor and an actor cannot carry an edge, and UN resolution 1514, the
+Moldovan declaration and the Rivonia trial name no date Wikidata can give — and
+no date is invented.
+
 **One row was refused before the fetch and it is worth a line**: `Q638903`, the
 5 October 1910 revolution, is `republic-proclaimed-1910`, which this atlas has
 held since its first week and which carries no `wikidata` — so the pool's

@@ -430,6 +430,71 @@ whether the waiting tombstone's other end is in the largest component**, which
 keep rate should take those rows first. That is the rule for the next fire to
 write before it ticks (deviation 1007).
 
+**Set 0 is spent in one batch, and that is the finding batch 17 could only
+make by running it.** Recomputed after the batch, the rule returns **two rows
+out of a pool of 1,112**, and neither is real: `Q1972326` is the Treaty of
+Lausanne of 1912 that batch 17 already read and dropped, and `Q2229133`
+(*Protocol I*) matches only because the label is a substring of the phrase
+"protocol it reinstates" inside a reason written by that same batch — a false
+positive of the matching rule, not a candidate. **Set 0 recomputes, but it does
+not refill**: its size is bounded by how many *tombstone reasons name a record
+the sweep happens to carry under that exact label*, and batch 17 took eleven of
+the twelve that existed. It refills only as new retractions are written, a
+handful a batch. So the next fire should **not** plan on set 0 as a vein; it
+should plan on it as a filter to run first, free, and usually empty.
+
+**What the tombstones still ask for is not in the sweep at all, and that is
+batch 18.** Nineteen live tombstones carry an explicit *"It waits on …"* clause
+and most name a record by name. Those names resolve on Wikidata in one lookup
+each, and **the sweep does not carry them** — which is exactly what §6 says
+about the hinges, and exactly why batch 2a seeded items directly instead of
+ticking rows. The resolutions are done and written here so the next fire does
+not repeat them:
+
+| item | record | unlocks | class in the table? |
+| --- | --- | --- | --- |
+| `Q49101` | Suez Crisis, 29 Oct – 7 Nov 1956 | `1958-lebanon-crisis`, whose reason calls it *"the record its own background turns on"* | no — `Q1384277` *military expedition* |
+| `Q154681` | Anschluss, 12–13 March 1938 | `austrian-civil-war` | no — `Q194465` *annexation*, `Q183366` *territory* |
+| `Q65053343` | 2022 Brazilian general election, 2 Oct 2022 | `2023-brazilian-congress-attack`, the one-row gap batch 16 named | no — `Q76853179` *group of elections* |
+| `Q518753` | Sharpeville massacre, 21 March 1960 | `soweto-uprising`, which waits on *"any South African record of the apartheid period"* | **yes** |
+| `Q74200048` | Independence of Morocco, 18 Nov 1956 | `ifni-war`, which waits on *"Moroccan independence in 1956"* | no — `Q37055` *independence* |
+| `Q592550` | British expedition to Tibet, Dec 1903 – Sep 1904 | `treaty-of-lhasa`, which waits on it by name | no — `Q1384277`, `Q831663` *military campaign*, `Q467011` *invasion* |
+| `Q751149` | Earth Summit, Rio, 3–14 June 1992 | `aarhus-convention`, and §7.4's hole, which wants an environmental *event* | no — `Q625994` *convention* |
+| `Q2120252` | Siamese revolution of 1932, 24 June 1932 | `1893-franco-siamese-crisis`, which waits on *"any Siamese or Indochinese neighbour before 1946"* | **yes**, and it is a pool row too |
+
+Three more were looked up and are **not** batch 18's, with the reason written
+down rather than left to be rediscovered: `Q783910` *Austrofascism* and
+`Q167634` *perestroika* are a political system and a movement, not events, and
+neither carries a date this atlas could use as an interval; `Q191703`, the
+Organisation of African Unity, is an **actor**, and an actor cannot carry the
+edge `african-charter-on-human-and-peoples-rights` is waiting for, because an
+edge runs between events. `Q2629473` (UN resolution 1514), `Q6895819` (the
+Moldovan declaration of independence) and `Q1639868` (the Rivonia trial) each
+name no date at all on Wikidata, and deviation 989's rule stands: **no date is
+invented and none is widened**, so each would have to be written by a person or
+dated from its article by one.
+
+**So batch 18 has a class-table question in front of it, and it is a real
+question.** Six of the eight carry a class `data/imports/wikidata-seeds.json`
+does not name. Deviation 1005 says a class missing from the table is not a hole
+to be filled on the way past — but 1005 was about a sweep batch where *nothing
+was blocked*, and here six records are blocked and the question is properly
+posed. The precedent for posing it is §6: batch 2a, pointed at named records
+rather than at the sweep, **added ten classes and said which**. Batch 18 should
+do the same and name every one in its own section: *military expedition*,
+*annexation*, *group of elections*, *independence*, *military campaign*,
+*invasion*, *convention*. `CLAUDE.md` is why they go in the file and not in
+code — each is a decision somebody can argue with.
+
+**And batch 18 is the reach batch set 0 was not.** Every one of the eight has a
+neighbour in the largest component and not merely a tombstone: Suez into the
+Arab–Israeli records, the Anschluss into `world-war-ii` and `treaty-of-sevres`'s
+decade, the 2022 election into `the-2018-brazilian-general-election`, Sharpeville
+into `second-boer-war`'s country, Morocco into `french-conquest-of-morocco`, the
+Tibet expedition into `british-russian-convention`, Rio into the ozone pair and
+`covid-19-pandemic`'s decade. That is deviation 1007's ordering applied: **take
+the hinge whose waiting tombstone is not the only thing it can reach.**
+
 **What the next fire does**, in this order:
 
 0. **Read the tombstones first**, which costs no fetch, and read them *twice*:
