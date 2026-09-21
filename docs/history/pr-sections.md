@@ -2598,3 +2598,64 @@ Measured at 1440 × 900 against `origin/m0`, twenty loads each, the time from na
 
 **Every picture under `docs/screens/` taken before today shows a masthead without the read count** (deviation 930). The brief asked that no other picture be rewritten and none was; whichever milestone next re-takes the set will bring them up.
 
+---
+
+## M71 — a reader writes a narrative in the atlas
+
+The owner, on the suggestion that readers should be able to write narratives inside the atlas and submit them: **"Yes that is a feature I want."** And the thesis the whole project rests on, 18 September: *"if everything is connected people can then easily write narratives."*
+
+Everything a narrative needs was already here. The record kind has existed since M30a; M48 made reading one a mode of the atlas, with `narratives.html` prerendered beside it; the validator has had rule 20 for as long; the contribution pipeline — issue, `accepted` label, `contribution.yml`, pull request — has been able to write a narrative to `data/narratives/` since H6a. **What did not exist was the front end.** A reader who had just walked from Luanda in 1961 to the 25th of November 1975 had no way to say so except by writing JSON by hand.
+
+### 1. The composer
+
+**A fourth column of the layout, opened by `write` in the masthead.** A column and not an overlay, and that is the one design decision this milestone had to make for itself: while the composer is open the reader goes on clicking events on the picture, so a panel that covered the picture would be asking them to click what it was hiding. The view gives up the width, the card keeps its own, closing gives it all back — and on a phone, where there is no second column to be a fourth of, it comes down from under the masthead and takes the top half, leaving the map below it for the same reason.
+
+**The steps are picked, not typed.** A click on an event — the click M65 made a lens — appends it to the walk, in the order clicked. There is no field to type a reference into at all: `pickStep` takes the atlas's own `has(ref)` and refuses everything that is not an event this atlas holds, so *the composer offers nothing it cannot cite*. The same event twice running is refused where the reader makes it rather than reported later by rule 20; the same event further on is allowed, because a walk that comes back to where it started is an argument and not a mistake.
+
+Because picking is the selection, **the walk follows the lens**: after the first step the three pictures narrow to that event and what it reaches, and the second step is picked out of the first's consequences. That is not a side effect to be worked around — it is the atlas's thesis happening in one gesture, and the browser test is written along it.
+
+**The window is the span of the steps.** `windowOf` is `extent()` over the events picked, in historians' years, shown beside the heading of the walk and never typed. A reader who has picked 1961 and 1974 has already said which years the narrative is about, and a third field to disagree with them would only be a way of getting it wrong. The composer has no year input of any kind, and a test asserts that.
+
+Steps carry the reader's own paragraph, move with Alt+↑/↓ or the arrows on their row, and come out again. The title, the summary, the reader's name and at least one source are asked once.
+
+### 2. Checked here by the rules that will check it there
+
+The verdict under the form is **`validate()` from `src/validate/core.js`** — the function `node tools/validate.mjs` runs — reached through `validateBundle`, which is what `contribute.html` has run on every keystroke since M4. Imported, never copied: two answers to *is this a valid narrative* would be one answer too many. A failing walk is reported in the sentence the command line would use, rule number and JSON path and all, and the submit control is disabled until there is nothing left.
+
+There is **no new record builder**, either. `buildRecord('narrative', …)` in `src/contribute/bundle.js` already turns plain field values into the record the Action writes to disk, and `src/compose/narrative.js` hands it the draft and adds exactly one key: `review: { status: 'draft' }`, because nobody has read this. `tools/bundle-to-files.mjs` writes that standing again on the way in, so the record in the issue and the record on the branch say the same thing about how far it has been read — and a contributed narrative lands in `review.html`'s queue like every other unread record.
+
+Unlike the two writer pages, the composer **does not wait for the attribute shards**: what the rules ask of the topology on behalf of a narrative is whether the id is taken (2), whether each step names a record (3), whether it is still active (11), whether it cites (6) and the shape of the walk (20), all of which the core answers.
+
+### 3. What the page sends, which is nothing
+
+**Submitting opens a prefilled GitHub new-issue URL**, in the reader's own browser and under their own account: `template=contribution.yml`, the title as the title, the record as the body inside the bundle envelope the pipeline already reads. Above the prefill cap the template opens empty and the record is on the clipboard instead, which is `submit.js`'s existing rule and not a second one.
+
+**No token, no secret, no API call and no request of any kind.** The browser test counts every `fetch`, every `XMLHttpRequest.open` and every `navigator.sendBeacon` from before the page's first script runs, and asserts the number is the same after the submit as before it. The page says so too, under the button, along with the fact that a GitHub account is needed and what the maintainer does next.
+
+**The draft is kept between visits** in `localStorage`, on its own key beside `atlas-causal.panes` and `atlas-causal.band`, read and written inside try/catch the way `panes.js` does it. It is plain data with no atlas in it, it is in no link, and **submitting ends it**: the argument has left the browser and is an issue with a number.
+
+### What first paint costs, and what the composer costs when opened
+
+**At first paint: no new request, and 6,291 more bytes of source** — `index.html` +924 B for the button, `src/main.js` +1,367 B for the listener that imports the composer when it is pressed, `src/style.css` +4,000 B for the column's block and its phone rule. Nothing of `src/compose/` is fetched before the button is pressed, and a test asserts that by reading the page's own resource timings.
+
+Measured at 1440 × 900 against `origin/m0`, twenty loads each, the time from navigation to the first mark recorded **inside the page on the frame it appears**: **235 ms against 253**, means 246 and 258, spreads 220–301 and 226–305 — the same within the noise, and the difference is the wrong way round from what the extra bytes would predict, which is how much noise there is.
+
+**When it is opened: 23 files, 206,789 bytes, and 72 ms from the press to the first verdict.** Seven modules, 149,291 B, and the sixteen schema files, 57,498 B. `validate/rules.js` is not among them: the atlas already carries it. That is the price of the validator in the browser, paid by the reader who asked for it and by nobody else.
+
+### The pictures
+
+`docs/screens/m71-composer.png` is the composer beside the **real** map, three events of the colonial war picked by clicking them and the window 1961 to 1974 computed from them — with **the paragraphs deliberately unwritten**, because a paragraph in this repository arguing that one thing led to another would be a historical claim nobody made. `docs/screens/m71-composer-valid.png` is the same composer over the **fixtures**, where every word is synthetic and the masthead says so: the prose written, a source cited, and the validator's own verdict under it, with the submit control live.
+
+### Tests
+
+`tests/compose.test.mjs` (15) and `tests/compose-browser.test.mjs` (6), written before the behaviour they judge (711, 717), and **no test pins a count**. A composed record passes the **rules themselves, run** — not a golden file; a thin one fails by rule 20 and rule 6; the steps are the events picked in order and nothing else can become one; the window is the span of the steps; the link is a GitHub new-issue URL carrying the record and building it asks nothing of the network; a draft survives being put away, does not survive being submitted, and survives storage that refuses to work at all. In the browser: `src/compose/` is absent from the resource timings until the button is pressed; three clicks are three steps; the last event clicked is still the chosen one; a draft naming a record this atlas has not got is reported by rule 3 rather than quietly dropped or quietly kept; and the submit sends nothing. **1,646 pure and 205 browser, 1,851 in all, 0 failed and 0 skipped.**
+
+### Checks
+
+`node tools/validate.mjs --index`: **10,653 records, 5 regions, 0 errors, 238 warnings**, clean over the repository and over the fixtures. **No narrative was written and nothing under `data/` changed at all.** No new record type, confidence value, hex value, token or type size; no new runtime dependency. Two screenshots, each taken with `--only`, so every other picture is untouched. Nothing pushed to `m0` or `main`. Deviations **932 to 944**.
+
+**`m0` was red when this branch was cut and the fix is in it** (deviation 939): `tests/fixtures/data/index/` carried a stale history shard for the 1200s after M70's merge, and `build-index` and `validate-cli` have failed on `origin/m0` since — run 994 on `f24fa476`. One rebuild, and it is deviation 711's rule again.
+
+### What the owner still has to do
+
+**Set the `CONTRIBUTION_PAT` secret**: a fine-grained personal access token with *Contents: read and write* and *Pull requests: read and write* on this repository, stored as the repository secret `CONTRIBUTION_PAT`, its expiry noted in `CONTRIBUTING.md`. This run cannot create it and did not try. **The composer works without it** — a reader can pick, write, be told the record is valid and open the issue today. Only the last step of the pipeline waits on it, and `contribution.yml`'s first step already fails with the instructions when it is missing.
