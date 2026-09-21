@@ -147,6 +147,21 @@ for (const [query, ready, graph, times] of PAGES) {
       // cell there is, and the near level is not asked for until NEAR_ZOOM
       // (map.js). A page with no map asks for none of it either way.
       assert.deepEqual(base.cells, [], `${query} fetched a base map cell at the world view`);
+      // M45b's bands are the one base layer that is **off by default**, so on
+      // a page nobody has asked for them they cost nothing at all — not a
+      // cell, and not the far file either, which every other layer the world
+      // view reaches does fetch behind the `defer`. 5 MB of ground the reader
+      // did not ask for is the whole reason `LAYERS` and `DEFAULT_LAYERS` are
+      // two lists (deviation 979), and this is where that is worth a byte
+      // count rather than an intention: relief is why first paint did not get
+      // slower in a milestone that put five megabytes into `data/geo/`.
+      //
+      // Named rather than left to the `geo/base/` assertions above, which are
+      // about *when* a request happened: this one is about there being none.
+      const relief = await page.eval(`
+        return performance.getEntriesByType('resource')
+          .map((e) => e.name).filter((n) => n.includes('geo/base/relief'));`);
+      assert.deepEqual(relief, [], `${query} fetched the elevation bands, which nobody switched on`);
     });
   });
 }
