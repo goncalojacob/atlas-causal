@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 306 of 405 |
+| **after M42** | 36 of 36 | 306 of 411 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -275,7 +275,7 @@ counted by is still true of this row as well.
 
 **The "after M42" row is retaken at every batch of that milestone**, which is
 why it moves without a new row being added: M42 is one milestone and the row is
-its own. Batch 10 takes it to 306 of 393 and batch 11 to **306 of 405**. The numerator has not moved since
+its own. Batch 10 takes it to 306 of 393, batch 11 to 306 of 405 and batch 12 to **306 of 411**. The numerator has not moved since
 M67 and will not move by importing: every record the Wikidata sweep creates
 carries `actors: []`, because the import writes identity and never an actor
 line, and M67 A1 settled that an event with no actor and no place is not a

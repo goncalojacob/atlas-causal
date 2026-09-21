@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "rwandan-civil-war--1994-genocide-against-tutsi--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rwandan genocide\", revision 1375989507, § lead"
+    }
+  ],
+  "from": "rwandan-civil-war",
+  "to": "1994-genocide-against-tutsi",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says the genocide \"occurred from 7 April to 19 July 1994 during the Rwandan Civil War\", that hostilities rooted in the Hutu revolution of 1959–62 \"were then exacerbated further due to the Rwandan Civil War, which began in 1990 when the Rwandan Patriotic Front, a predominantly Tutsi rebel group, invaded Rwanda from Uganda\", and that **the assassination of President Habyarimana on 6 April 1994 ignited the genocide, Hutu extremists using the power vacuum to target Tutsi and moderate Hutu leaders**. It is a precondition and not a cause: the article names the assassination as what ignited it.",
+  "dispute": null
+}

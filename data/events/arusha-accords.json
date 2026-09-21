@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "arusha-accords",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,18 +13,17 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
+  "revised": "2026-09-21",
   "origin": {
     "tool": "wikidata"
   },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A, with the Rwandan civil war it ended. The accords’ only neighbour here would have been that war, which is retracted in the same commit for want of any Portuguese reach; two records connected to each other and to nothing else is precisely the second atlas the brief was written to stop building."
-  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
-      "m44b-retracted"
+      "m44b-retracted",
+      "standing-backfilled",
+      "imported-by-wikidata"
     ]
   },
   "wikidata": "Q1429076",

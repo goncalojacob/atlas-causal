@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "first-congo-war--second-congo-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Congo War\", revision 1374918500, § lead"
+    }
+  ],
+  "from": "first-congo-war",
+  "to": "second-congo-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article says the war \"set the stage for the Second Congo War (1998–2003) due to tensions between Kabila and his former allies\", and spells that out: Kabila sought to distance himself from his Rwandan and Ugandan backers, expelled foreign troops and allied instead with Angola, Zimbabwe and Namibia, and **\"these actions prompted a second invasion from Rwanda and Uganda, triggering the Second Congo War in 1998\"**. It adds that some historians view the two wars as one continuous conflict.",
+  "dispute": null
+}

@@ -16,6 +16,62 @@ rule 27 makes a retraction on a non-retracted record an error. The reason is
 copied here verbatim, in the same commit, so that the account of the withdrawal
 survives the undoing of it.
 
+### `second-congo-war`
+
+Reinstated in M42 batch 12 on `first-congo-war --caused--> second-congo-war`
+and, one hop behind it, `angolan-civil-war --precondition-of--> first-congo-war`.
+Its reason named the missing record exactly — "no record of the Angolan civil
+war" — and `angolan-civil-war` came back in batch 0 of the same run. What the
+reason could not know is that the Second Congo War's own article never says
+*why* Angola intervened; the First Congo War's article has a section on it and
+states the motive outright, which is why one sweep row and not the bigger war
+is what the cluster hangs on.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A. Angola fought in this war, on Kabila's side and
+> against the UNITA supply lines through Mobutu's Zaire, which is a genuine
+> edge from the Great Lakes to the Portuguese-speaking world. It cannot be
+> written: the atlas holds Angolan independence in 1975 and no record of the
+> Angolan civil war that the intervention of 1998 was a continuation of. Named
+> in docs/m44-connections.md as work the atlas needs.
+
+### `rwandan-civil-war`
+
+Reinstated in M42 batch 12 on
+`rwandan-civil-war --precondition-of--> 1994-genocide-against-tutsi` and
+`rwandan-civil-war --caused--> arusha-accords`. Its reason said the route from
+the Great Lakes to this atlas runs through Angola's civil war and Angola's
+intervention in Congo, and that the atlas held Angolan independence and nothing
+after it. Both halves of that route are records now, and the cluster reaches
+Angola in three hops rather than being wired to itself.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A. The war of 1990 to 1994 can be argued to the
+> Arusha accords, which M44a also imported, and to the genocide and the Congo
+> wars, and the whole cluster reaches no Portuguese event: the route from the
+> Great Lakes to this atlas runs through Angola's civil war and Angola's
+> intervention in Congo, and the atlas holds the independence of Angola in 1975
+> and nothing after it. Retracting the cluster together is more honest than
+> wiring it to itself and calling it connected.
+
+### `arusha-accords`
+
+Reinstated in M42 batch 12 on `rwandan-civil-war --caused--> arusha-accords`,
+with the war it ended, as it was retracted with it. Its reason was that two
+records connected to each other and to nothing else is the second atlas M44's
+brief existed to stop building; they are five records connected to the whole
+atlas now, and the reason was right to refuse them when they were two.
+
+Its M44b retraction read, verbatim:
+
+> Retracted in M44b, class A, with the Rwandan civil war it ended. The accords'
+> only neighbour here would have been that war, which is retracted in the same
+> commit for want of any Portuguese reach; two records connected to each other
+> and to nothing else is precisely the second atlas the brief was written to
+> stop building.
+
 ### `somali-civil-war`
 
 Reinstated in M42 batch 11 on `ogaden-war --caused--> somali-civil-war`. Its

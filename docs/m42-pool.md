@@ -102,6 +102,7 @@ A5: a batch that grows the corpus and not the component has to say why.
 | 9 | the singletons §4b named: 8 edges, no import | 378 | 288 | 90 | 469 | **366** | 3 |
 | 10 | sets 3 and 4 again: 16 created, 12 kept and 4 retracted, **3 tombstones back on their own named blockers**, 14 edges, three filings | 393 | 300 | 93 | 483 | **376** | 3 |
 | 11 | sets 3 and 4 a third time: 15 created, 9 kept and 6 retracted, **3 more tombstones back**, 10 edges, one filing | 405 | 311 | 94 | 493 | **382** | 3 |
+| 12 | **the tombstone pass**: one sweep row taken out of order, 5 tombstones back, 6 edges, one filing — corpus +6 and component +6 | 411 | 316 | 95 | 499 | **388** | 3 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -275,11 +276,12 @@ the next, so a killed run loses a batch and not the milestone.
 | batch 9 | the singletons §4b named: 8 edges, no import, 359 → 366 |
 | batch 10 | sets 3 and 4 again: 12 kept, 4 retracted, 3 reinstated, 14 edges, 366 → 376 |
 | batch 11 | sets 3 and 4 again: 9 kept, 6 retracted, 3 reinstated, 10 edges, 376 → 382 |
+| batch 12 | the Great Lakes joined: 1 import, 5 reinstated, 6 edges, 382 → 388 |
 
 **Where the milestone stands against its own done-condition.** The brief asks
 for an order of magnitude more active events than the 250 it was written
-against. The corpus holds **405**, up from 310, and its largest connected
-component holds **382 of them**, up from 254 — so the connectedness is nearly
+against. The corpus holds **411**, up from 310, and its largest connected
+component holds **388 of them**, up from 254 — so the connectedness is nearly
 done and the volume is barely begun. **The volume is the sweep**: **1,557 rows**
 the tool has already found and nobody has walked, recomputed against `data/` on
 21 September and again at batch 10, which returned the same 1,557 and is the
@@ -310,8 +312,27 @@ walked.
 **A batch lands in two commits, not one** (deviation 798, re-learned as 982):
 the records, then the rebuilt index.
 
+**Batch 12 found the ratio between the two ways of growing this corpus, and a
+run with time for one of them should know which it is choosing.** A sweep batch
+adds ten or eleven records and opens a corner of the world the atlas has one or
+two records of, so the corpus grows faster than the component and the component
+*count* rises. A tombstone pass adds nothing new at all and every record it
+touches already has a neighbour waiting: batch 12 grew the corpus by six and
+the component by six, with the component count unmoved, because it was chosen
+by reading the 213 retraction reasons rather than the sitelink ranking. **The
+sweep is the volume; the tombstones are the connection.** Both are needed and
+they are not interchangeable.
+
 **What the next fire does**, in this order:
 
+0. **Read the tombstones first**, which costs no fetch. `node -e` over
+   `data/events/*.json` picking the retracted records whose `retraction.reason`
+   names a record that is active now is twenty lines and found eleven
+   reinstatements across batches 10 to 12. The four that came up and were *not*
+   taken are named in §5b with what each still waits for, and
+   `portuguese-european-constitution-referendum` and `transnistria-war` are
+   there for reasons no batch can clear — a ballot that never happened, and a
+   date rule 4 refuses.
 1. **A sweep batch.** Tick by §5's rule, add the ids to
    `data/imports/wikidata-seeds.json` → `items` with a lane and a class each,
    walk them here, and connect every one of them the same day. The rate at

@@ -1720,6 +1720,152 @@ the volume does, and a run that treats that as a failure will start writing
 edges to prevent it. That is what brief §1 forbids, and it is worth writing down
 before a later batch is tempted.
 
+## 2l. Batch 12 — one sweep row, five tombstones, and the Great Lakes joined
+
+Batches 10 and 11 found that a sweep row is often worth more than itself,
+because six tombstones came back on records those rows supplied. Batch 12 is
+that finding pushed as far as it goes: **one import, five reinstatements, six
+edges, and every one of the six new active records lands in the largest
+connected component.**
+
+**The row was taken out of the tick rule's order and this says so.** By §5 the
+next sixteen are set 3's ten and set 4's six best by sitelinks, and
+`Q838695`, the First Congo War, is **seventh** in set 4 at 44 sitelinks —
+inside the rule's ordering and outside a cap of sixteen. It was taken anyway,
+alone, because reading it against the tombstones showed it unlocks four of
+them, and stretching the cap to seventeen to reach it would have been a hand
+dressed as a rule. Deviation 1003 records it. Nothing was skipped: the sixteen
+above it are still there, in order, for the next batch.
+
+### What the article says, and why it is the key to a region
+
+`docs/m44-connections.md` and §5a of this file have both said for a week that
+the route out of the Great Lakes runs through Angola. `second-congo-war`'s
+M44b retraction said it in as many words:
+
+> Angola fought in this war, on Kabila's side and against the UNITA supply
+> lines through Mobutu's Zaire, which is a genuine edge from the Great Lakes to
+> the Portuguese-speaking world. **It cannot be written**: the atlas holds
+> Angolan independence in 1975 and no record of the Angolan civil war that the
+> intervention of 1998 was a continuation of.
+
+`angolan-civil-war` came back in batch 0 of this run, so half of that is no
+longer true. The other half is that the Second Congo War's own article never
+says **why** Angola intervened — every mention of Angola in it is an account of
+troop movements. The First Congo War's article has a section on it and states
+the motive outright, which is why this one row and not the bigger war is what
+the cluster hangs on.
+
+### The edges
+
+Six, and five of the six have at least one end that was a tombstone this
+morning.
+
+#### `angolan-civil-war --precondition-of--> first-congo-war`
+
+*"First Congo War"*, revision 1374918500, § Angola: **"Angola chose to
+participate in the First Congo War because members of Mobutu's government were
+directly involved in supplying the Angolan rebel group, UNITA"**, and "Angola
+entered the war on the side of the rebels and was determined to overthrow the
+Mobutu government, which it saw as the only way to address the threat posed by
+the Zairian-UNITA relationship". Luanda acted through the Katangese Tigres and
+also deployed regular troops. **This is the edge the whole cluster hangs on**:
+without it the five records below are a Great Lakes island, and with it they
+are in the main component.
+
+#### `1994-genocide-against-tutsi --precondition-of--> first-congo-war`
+
+Same article, § lead and § Rwanda: Zaire's collapse by 1996 was "exacerbated by
+long-standing internal strife and **the destabilizing effects of the 1994
+Rwandan genocide, which had led to an influx of refugees and militant groups
+into the country**", and Rwanda's "first and foremost" war aim was "the
+suppression of génocidaires who had been launching attacks against the new
+Rwandan state from Zaire", Kigali intervening to dismantle the camps they took
+refuge in.
+
+#### `first-congo-war --caused--> second-congo-war`
+
+Same article, § lead: the war "set the stage for the Second Congo War
+(1998–2003) due to tensions between Kabila and his former allies" — Kabila
+distanced himself from his Rwandan and Ugandan backers, expelled foreign troops
+and allied with Angola, Zimbabwe and Namibia, and **"these actions prompted a
+second invasion from Rwanda and Uganda, triggering the Second Congo War in
+1998"**.
+
+#### `rwandan-civil-war --precondition-of--> 1994-genocide-against-tutsi` and `rwandan-civil-war --caused--> arusha-accords`
+
+*"Rwandan genocide"*, revision 1375989507, § lead, which carries both in one
+paragraph: the genocide "occurred from 7 April to 19 July 1994 **during the
+Rwandan Civil War**"; hostilities rooted in the Hutu revolution of 1959–62 were
+"exacerbated further due to the Rwandan Civil War, which began in 1990 when the
+Rwandan Patriotic Front … invaded Rwanda from Uganda"; **"the war reached a
+tentative peace with the Arusha Accords in 1993"**; and "the assassination of
+President Juvénal Habyarimana on 6 April 1994 ignited the genocide". The first
+edge is `precondition-of` and not `caused` precisely because the article names
+the assassination as what ignited it. **The genocide is not filed under the
+war** although the article says it happened during it: this atlas dates
+`rwandan-civil-war` 1 October 1990 to 4 August 1993, and a child dated after
+its parent ends is what rule 24 warns about.
+
+#### `srebrenica-massacre --precondition-of--> dayton-agreement`
+
+*"Bosnian War"*, revision 1375967053, § lead: **"after the Srebrenica and
+Markale massacres, NATO intervened in 1995 with Operation Deliberate Force,
+targeting the positions of the Army of the Republika Srpska, which proved key
+in ending the war"**, and after the ceasefires of 14 September and 5 October,
+"peace negotiations were held in Dayton, Ohio, and the war ended when the
+Dayton Accords were initialed on 21 November 1995". Srebrenica is one of the
+two massacres the article names as what brought NATO in, which is why this is a
+precondition and not a cause. **Filed under `war-in-bosnia-and-herzegovina`**,
+whose span of 6 April 1992 to 14 December 1995 contains July 1995 and whose
+subject it plainly is — the massacre's own article calls it the killing "during
+the Bosnian War", perpetrated by units of the VRS.
+
+### The five reinstated, and what each was waiting for
+
+| record | its own reason, and what made it untrue |
+| --- | --- |
+| `second-congo-war` | M44b: Angola's intervention "is a genuine edge … **it cannot be written**: the atlas holds Angolan independence in 1975 and no record of the Angolan civil war". `angolan-civil-war` came back in batch 0; the First Congo War supplies the sentence that states Angola's motive |
+| `1994-genocide-against-tutsi` | M40b: "the atlas holds no record of the Rwandan civil war, the Arusha accords, the United Nations mission that was not reinforced, or **the wars in Congo that followed**". The wars in Congo are records now, and so are the other two, in the same batch |
+| `rwandan-civil-war` | M44b, class A: it "can be argued to the Arusha accords … and to the genocide and the Congo wars, and the whole cluster reaches no Portuguese event". The Portuguese bar died with brief §1; the cluster now reaches Angola in one hop, which is as Portuguese as the Great Lakes get |
+| `arusha-accords` | M44b, class A: "two records connected to each other and to nothing else is precisely the second atlas the brief was written to stop building". They are five records connected to the whole atlas now |
+| `srebrenica-massacre` | M40b: "**It would need the Bosnian war as a record before it had an honest edge.**" `war-in-bosnia-and-herzegovina` is active, and is now its parent as well as the article the edge is read from |
+
+Every one of these five reasons named what was missing, and none of them was
+wrong when it was written. That is eleven tombstones this run has brought back
+by reading the notes rather than by fetching anything.
+
+### The one left main and bare
+
+`first-congo-war` is the batch's only new record and it is top-level and carries
+`actors: []`. It is nobody's part: the article calls the First and Second Congo
+Wars "part of a continuous conflict" in the view of some historians, and that
+conflict is not a record here — M62 §3 says an arguable filing is listed rather
+than made, and a view some historians hold is exactly that. `actors: []` is
+M67 A1 and not a defect. `docs/m53-polities.md` §4.1 accordingly moves to
+**306 of 411**, its numerator standing still for the third batch running.
+
+### What batch 12 did to the graph
+
+| | before | after |
+| --- | --- | --- |
+| active events | 405 | **411** |
+| main | 311 | **316** |
+| filed under a parent | 94 | **95** |
+| active edges | 493 | **499** |
+| largest connected component | 382 | **388** |
+| components | 12 | **12** |
+| unreachable from any Portuguese event | 15 | 15 |
+
+**The corpus grew by six and the component grew by six**, which is the first
+batch of this run where the two numbers are equal and the component count did
+not move. That is what amendment A5 is asking for, and it is worth saying what
+produced it: the batch was chosen by reading the tombstones rather than the
+sitelink ranking, so every record it touched already had a neighbour waiting
+for it. **The sweep grows the corpus and opens new corners; the tombstones grow
+the component.** A run with time for one of the two should know which it is
+choosing.
+
 ## 3. The main count, and why it moved up
 
 Amendment A3: an import that leaves the main count higher than it found it has
@@ -1797,7 +1943,14 @@ be filed was.
 twelve records in — nine kept from the sweep and three back from the tombstones
 — and one filed, `korean-armistice-agreement` under `korean-war`.
 `sino-soviet-border-conflict` is this batch's arguable filing and is listed
-rather than made, for the reason §2k gives. As in batch 10 every one of the new
+rather than made, for the reason §2k gives.
+
+**Batch 12 leaves it at 316 against 311**, five higher against six records in,
+because one of the six took a parent: `srebrenica-massacre` under
+`war-in-bosnia-and-herzegovina`. `first-congo-war` is the batch's only new
+record and §2l says why it is nobody's part; the other four are records that
+were main before they were withdrawn. §4.1 of `docs/m53-polities.md` moves to
+**306 of 411**. As in batch 10 every one of the new
 records carries `actors: []`, so `docs/m53-polities.md` §4.1 moves to **306 of
 405** with its numerator standing still: the gap that row shows is the gap
 between an imported corpus and a written one, and it widens by exactly the
@@ -1844,7 +1997,7 @@ named below.
 | --- | --- |
 | `1991-soviet-coup-d-etat-attempt`, `1993-russian-constitutional-crisis`, `budapest-memorandum`, `romanian-revolution-1989` | the dissolution of the Soviet Union, and the revolutions of 1989 |
 | `yugoslav-wars`, `croatian-war-of-independence`, `dayton-agreement`, `kosovo-war` | the breakup of Yugoslavia and the Bosnian war |
-| `rwandan-civil-war`, `arusha-accords`, `second-congo-war` | the Rwandan genocide, which reaches `genocide-convention`, and the Angolan civil war, which reaches `angola-independence-1975` |
+| ~~`rwandan-civil-war`, `arusha-accords`, `second-congo-war`~~ | **all three came back in batch 12**, on the Angolan civil war this row named: §2l has the edges |
 | `2013-egyptian-coup-d-etat` | the Egyptian revolution of 2011, or the Arab Spring |
 | `gaza-war-2008-2009` | the second intifada, or the disengagement of 2005 |
 | `good-friday-agreement` | the Anglo-Irish treaty and the Troubles, which its reason already named |
@@ -1864,9 +2017,9 @@ imports its neighbour lands, and its reason is rewritten then.
 
 | record | what would bring it back |
 | --- | --- |
-| `velvet-revolution`, `second-chechen-war`, `second-nagorno-karabakh-war`, `hungarian-revolution-of-1956` | the revolutions of 1989 and the dissolution of the Soviet Union |
-| `srebrenica-massacre` | the Bosnian war |
-| `1994-genocide-against-tutsi` | the Rwandan civil war, or the tribunal at Arusha |
+| `velvet-revolution`, `second-chechen-war`, `second-nagorno-karabakh-war`, `hungarian-revolution-of-1956` | the revolutions of 1989 and the dissolution of the Soviet Union, both of which are records now — but each of these four names a *different* missing record in its own reason (the first Chechen war, the first Nagorno-Karabakh war, the fall of the Wall), and no page read so far argues one of them from the two the atlas has. Re-read at every batch |
+| ~~`srebrenica-massacre`~~ | **came back in batch 12**, on the Bosnian war its reason named: filed under it and edged to Dayton |
+| ~~`1994-genocide-against-tutsi`~~ | **came back in batch 12**, with the Rwandan civil war its reason named |
 | `syrian-civil-war` | the Arab Spring, which the import refused for want of a lane. **`libyan-civil-war` was here until batch 10** and came back on `libyan-civil-war --precondition-of--> mali-war`: its reason named its consequences, and one of them is a record now |
 | `sudanese-civil-war` | Darfur, or the Sudanese revolution of 2019 |
 | `cultural-revolution` | the 1-2-3 incident of 1966–67 in Macau, which is the precise link its reason names |
