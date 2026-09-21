@@ -3063,3 +3063,112 @@ frame was measured against a stale rectangle — **the check is blind to the siz
 of the pane**, the fault shows at 1440 × 900 and not at the runner's own window,
 and it was found by taking the screenshot and looking at it. The test that
 catches it now asserts the walk at two sizes.
+
+## M75 — the band is not hidden
+
+The owner, 21 September, after M60 moved the window to the masthead and M64
+put the band back behind a button: *"still don't like the way years are
+selected when looking at the map, should be more intuitive"* — and, asked what
+shape the fix should take: **"The dates two-handled band should not be
+hidden."**
+
+Two things, both the owner's call: **it is the band**, two handles and a range,
+so `src/window-band.js` is the control and nothing is rebuilt; and **it is not
+hidden**, so the `dates` button goes and the strip is on the map from first
+paint, on every visit, with no mode to enter and nothing to remember.
+
+### What a first visit to the map is now
+
+The masthead, then the strip — the two years on their own row, the shade with a
+handle at each end, the profile of where the events are along the bottom — then
+the map, which still has the whole pane. Nothing was pressed and nothing was
+read out of storage. A reader can read the window without looking away from the
+picture, take hold of either end, and sweep, with **the map answering while the
+pointer is still down**.
+
+### What was removed
+
+The `dates` button and its `aria-expanded`; its four rules in `style.css`;
+`BAND_KEY`, `readBandOpen` and `writeBandOpen` from `src/panes.js`; and the
+`band=open` parameter `docs/screens/frame.html` needed to photograph a
+preference. A value an M64 reader's browser still holds under
+`atlas-causal.band` is **read into nothing** — deviation 848's rule, and the
+same paragraph `panes.js` already carried for the `timeline` height M60 left
+behind. `map-band.js` no longer imports `panes.js` at all, which is the
+structural form of the same sentence.
+
+**`src/window-band.js` is untouched.** The shade, the handles, the years and
+every gesture that moves them are the same code the timeline draws from, and
+that is asserted as M64 asserted it: `aria-valuetext` in one module under
+`src/`, no `window-handle` in either drawing, no `wheel` or `pointermove` bound
+by either. The strip is still an **overlay** and not a row of the grid, so M60's
+gain — the map pane is the layout's own height — is kept, and is now asserted
+*with the band present*, which M64 could not do.
+
+### What first paint costs
+
+Median of nine cold loads of `?from=1900&to=1999` at 1440 × 900, cache cleared
+between them, measured here on the commit before and the commit after:
+
+| | M64 (band closed) | M75 (band on it) |
+| --- | ---: | ---: |
+| first contentful paint | 60 ms (40–80) | 56 ms (44–72) |
+| load event | 186 ms (158–361) | 190 ms (182–203) |
+| requests / JS files | 96 / 85 | 96 / 85 |
+| JavaScript bytes | 1,127,687 | **1,125,953** |
+| the band from nothing to drawn | 1.8 ms | 1.8 ms |
+
+**No new file and no new request**: `map-band.js` was already fetched at first
+paint under M64, because the button was built eagerly and only what was below it
+was deferred. Removing the toggle and the two functions makes the page **1,734
+bytes smaller**, which is the one deterministic number in the table. The work
+M64 measured at 3.4 ms on the first open is the work now done at first paint,
+and measured the same way on both versions it is the same 1.8 ms — it is the
+same work, moved. Both paint numbers moved by less than their own spreads and
+neither is a claim; the band is built after the core lands, long after the first
+paint.
+
+### The two questions the brief asked the run to answer
+
+**The masthead's density hint stays.** It is not redundant beside the strip, and
+the measurement is a test rather than an opinion: the hint is over the corpus
+and the profile over `emphasis.js`'s `shown`, so a selection moves one and not
+the other; the hint marks which centuries the window covers and leaves the rest
+drawn, which a scale cannot do; and the hint is on **every** view while the
+strip is on one, so a reader on the graph would lose their only picture of where
+the corpus is.
+
+**The phone keeps the same forty-four units.** At 390 × 844 the view is 575 px,
+so the strip is under a thirteenth of it and the map is not crowded; against
+that, 44 is what a touch target is (`--touch` is 40, `--sheet-grip` is 44) and
+the handles are now dragged with a thumb. A slimmer band on the one device where
+the gesture is hardest would make the control worse to make a picture that is
+not short of room slightly taller.
+
+### Pictures
+
+`docs/screens/m75-map.png` — a first visit at 1440 × 900, the band on the map
+and the map still the whole pane — and `docs/screens/m75-map-phone.png`, the
+same in a 390 × 844 viewport. Both taken with `--only`, so no other picture was
+rewritten. M64's two shot definitions were removed, because neither can be taken
+any more; their PNGs stay as the record of what M64 looked like.
+
+### Tests
+
+`tests/m75.test.mjs` (13) and `tests/m75-browser.test.mjs` (6), written before
+the behaviour they judge (711, 717) and pushed before it. **No test pins a count
+or a pixel.** `tests/m64-browser.test.mjs` is gone — four of its six tests were
+about the button, and the two that were not are here, the drag one unchanged but
+for the press it no longer needs. `tests/m64.test.mjs` keeps everything M75 did
+not remove.
+
+### Checks
+
+`node tools/validate.mjs --index`: **10,653 records, 5 regions, 0 errors, 238
+warnings**. **No record was touched and no historical claim written** — nothing
+under `data/` changed at all. `node --test`: **1,683 pure and 218 browser, 1,901
+in all, 0 failed and 0 skipped**, the browser suites one at a time as the check
+runs them (M63). No new runtime dependency, no build step, **no new hex value,
+token or type size**; no change to `lanes.js`, `cluster.js`, `emphasis.js` or
+`window-band.js`'s gestures. Nothing pushed to `m0` or `main`; `docs/drafts/`
+ignored. Deviations **997 to 1004**.

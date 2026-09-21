@@ -5,9 +5,15 @@
 //
 // This is the half of it `node --test` can hold without a browser: that there
 // is **one** band and not two, that the band and the lanes and the masthead's
-// count read **one** source for where the events are, that the toggle is a
-// preference and never URL state, and that a first visit has it closed. The
-// pictures themselves are `tests/m64-browser.test.mjs`.
+// count read **one** source for where the events are, and that the window is
+// URL state.
+//
+// Two things M64 asserted are gone, because M75 removed what they were about:
+// the toggle was a preference remembered in `panes.js`, and a first visit had
+// the band closed. The owner, 21 September — *"The dates two-handled band
+// should not be hidden"* — so there is no control to remember and no first
+// visit without it. `tests/m75.test.mjs` asserts the absence, and the pictures
+// that were `tests/m64-browser.test.mjs` are `tests/m75-browser.test.mjs`.
 //
 // Written before the behaviour it judges (deviations 711 and 717).
 //
@@ -24,7 +30,6 @@ import {
   HANDLE_WIDTH, bandEvents, bandProfile, windowOf,
 } from '../src/window-band.js';
 import { STRIP } from '../src/map-band.js';
-import { BAND_KEY, readBandOpen, writeBandOpen } from '../src/panes.js';
 import { windowPatch } from '../src/window-control.js';
 import { workingSet } from '../src/emphasis.js';
 import { densityPath } from '../src/density.js';
@@ -39,15 +44,6 @@ const read = (file) => readFile(path.join(ROOT, file), 'utf8');
 const dataDir = path.join(ROOT, 'data');
 const at = (patch) => ({ ...defaultState(), ...patch });
 const sorted = (ids) => [...ids].sort();
-
-function fakeStorage(initial = {}) {
-  const store = new Map(Object.entries(initial));
-  return {
-    getItem: (k) => (store.has(k) ? store.get(k) : null),
-    setItem: (k, v) => store.set(k, String(v)),
-    seen: store,
-  };
-}
 
 // ─── a corpus with a hierarchy and an edge in it ───────────────────────────
 //
@@ -224,9 +220,9 @@ test('the two number fields and the band come through the same clamp', () => {
   assert.equal(windowPatch('not a year', 1600, extent), null, 'and what is not a pair of years is still refused');
 });
 
-// ─── 5. the toggle is a preference, never state ────────────────────────────
+// ─── 5. the window is state and nothing else is ────────────────────────────
 
-test('the toggle is not in the URL: a link carries the window and not the control', () => {
+test('a link carries the window and never anything about a control', () => {
   assert.ok(!('band' in defaultState()), 'the state has no field for it');
   // A link that names it is a link that names nothing: the parameter is not
   // read, and formatting the state back does not invent one.
@@ -236,35 +232,6 @@ test('the toggle is not in the URL: a link carries the window and not the contro
   const url = formatState(opened);
   assert.ok(!url.includes('band'), `the URL says nothing about the control: ${url}`);
   assert.equal(formatState(defaultState()), '', 'and the default still writes nothing at all');
-});
-
-test('closed on a first visit, and remembered after that', () => {
-  assert.equal(readBandOpen(fakeStorage()), false, 'a first visit has no band');
-  assert.equal(readBandOpen(null), false, 'a browser with no storage still opens the atlas');
-  assert.equal(readBandOpen(fakeStorage({ [BAND_KEY]: 'yes please' })), false,
-    'and anything that is not the word this file writes is closed');
-
-  const storage = fakeStorage();
-  assert.equal(writeBandOpen(storage, true), true);
-  assert.equal(readBandOpen(storage), true, 'a reader who opened it gets it back');
-  writeBandOpen(storage, false);
-  assert.equal(readBandOpen(storage), false, 'and a reader who closed it does not');
-
-  // Storage that throws — a browser with it turned off — opens and closes the
-  // band and simply forgets, exactly as it forgets a dragged edge.
-  const refuses = {
-    getItem: () => { throw new Error('denied'); },
-    setItem: () => { throw new Error('denied'); },
-  };
-  assert.equal(readBandOpen(refuses), false);
-  assert.equal(writeBandOpen(refuses, true), false);
-});
-
-test('it is remembered beside the panel’s width and not inside it', async () => {
-  const panes = await read('src/panes.js');
-  assert.match(panes, /export const BAND_KEY/, 'the one file that remembers a reader’s arrangement remembers this too');
-  assert.notEqual(BAND_KEY, 'atlas-causal.panes',
-    'under its own key, so a panel dragged and a band opened cannot write over each other');
 });
 
 // ─── 6. the strip is a strip ───────────────────────────────────────────────

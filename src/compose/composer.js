@@ -24,11 +24,13 @@
 //     labels the issue `accepted` and `contribution.yml` does the rest.
 //   * **free at first paint.** This module is imported dynamically the first
 //     time the button in the masthead is pressed. A reader who never writes a
-//     narrative pays for one `<button>`, which is `map-band.js`'s rule and the
-//     same argument.
+//     narrative pays for one `<button>`. This was `map-band.js`'s rule too
+//     until M75 put the band on the map for good; the argument still holds
+//     here, where the module behind the button is the schema validator, the
+//     rules and the record builder rather than a scale and four layers.
 //
 // The draft is kept in localStorage, per reader and per browser, the way the
-// panel's width and the band's toggle are (`panes.js`): a narrative half
+// panel's width is (`panes.js`): a narrative half
 // written is not lost, and it is never sent anywhere until the reader submits.
 // It is not in the URL — a link is the picture its sender saw, not the essay
 // they were in the middle of.
