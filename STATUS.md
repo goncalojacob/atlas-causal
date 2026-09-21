@@ -14063,7 +14063,9 @@ a draft naming a record this atlas has not got is reported by rule 3 rather
 than quietly dropped or quietly kept; and that the submit sends nothing.
 
 **1,646 pure and 205 browser, 1,851 in all, 0 failed and 0 skipped**, run the
-way the check runs them since M63.
+way the check runs them since M63 — the browser set four times over, three of
+them green and one with a single failure whose name the pipe did not keep
+(deviation 945).
 
 ### Checks
 
@@ -14079,7 +14081,7 @@ is built from `--ink-soft`, `--ink`, `--line`, `--paper`, `--cobalt`,
 the space scale, and no value. No new runtime dependency. Two screenshots
 under `docs/screens/m71-*.png`, each taken with `--only`, so **every other
 picture is untouched**. Nothing pushed to `m0` or `main`; `docs/drafts/`
-ignored. Deviations **932 to 944**.
+ignored. Deviations **932 to 945**.
 
 ### What the owner still has to do
 
@@ -14186,6 +14188,15 @@ missing.
      equal specificity, so the citation `<select>` came out a third of the
      column wide with the author's name truncated. Noticed in the picture,
      which is what the pictures are for.
+
+945. **One of four full serial browser passes had a single failure and its
+     name was not captured.** The run was read through a pipe that kept only
+     the summary — `pass 204, fail 1` — and the three passes either side of it,
+     including one that grepped for `not ok` and found none, were green, as was
+     every run of `tests/compose-browser.test.mjs` alone. Deviation 920 records
+     the same thing happening to M68 in the same place. It is written down
+     rather than explained, because "flake" is not a root cause: if the check
+     on `m71` shows it, it has a name and belongs to whoever reads it.
 
 
 ## Milestones landed
@@ -14451,3 +14462,4 @@ M72 done
 M70 started 2026-09-21T00:14:57Z by scheduled
 M70 done
 M71 started 2026-09-21T00:59:44Z by scheduled
+M71 done
