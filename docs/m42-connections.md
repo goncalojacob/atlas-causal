@@ -1118,6 +1118,93 @@ declines to assert.
 `entente-cordiale`, which was already here. The corpus grew by nine and the
 component by ten, which is the only shape A5 accepts without an explanation.
 
+## 2i. Batch 9 — the singletons §4b called the cheapest thing left
+
+**This batch imports nothing.** §7 item 3 of `docs/m42-pool.md` says the
+fragments no import reaches are taken when a batch has room, and §4b named
+them: four records standing alone, of which `entente-cordiale` fell to batch 8,
+and eight Portuguese presidential elections the corpus holds only the ends of.
+Nine of them are answered here, on sentences their own articles have carried
+all along. **Eight edges, no record created, no record retracted.**
+
+### The five the 1911 constitution reaches
+
+`constitution-1911 --enabled--> may-1915-portuguese-presidential-election`,
+`--> august-1915-portuguese-presidential-election`,
+`--> 1918-portuguese-presidential-election`,
+`--> 1919-portuguese-presidential-election` and
+`--> 1925-portuguese-presidential-election`.
+
+Each of the five English articles carries the same sentence — *"Following
+Portugal's 1911 constitution, the Congress of the Republic must elect the
+president in Lisbon instead of the Portuguese people"*, and in the May 1915
+article *"Portugal's 1911 constitution stated that…"* — read at revisions
+1273396087, 1340296036, 1273401624, 1362155033 and 1305366818. **The edge this
+atlas already held is the same one**: `constitution-1911 --enabled-->
+1911-portuguese-presidential-election`, written long before this milestone. The
+edge carries the mechanism and nothing else: who won and why is the record's
+own.
+
+### The three that are about what happened
+
+- `sidonio-pais-assassinated-1918 --caused--> 1918-portuguese-presidential-election`.
+  The article, revision 1340296036: the election **was held two days after the
+  assassination of President Sidónio Pais on 14 December 1918**; quorum failed
+  at the first ballot and it was repeated, and João do Canto e Castro was
+  elected succeeding the late president. The 1918 election is the one record
+  here with two edges into it, which is right: the constitution says how, the
+  assassination says why then.
+- `1995-portuguese-legislative-election --precondition-of--> 1996-portuguese-presidential-election`.
+  The article, revision 1371811573: the Social Democrats **"were coming from a
+  clear defeat in the 1995 Portuguese legislative election"**, and their former
+  leader Cavaco Silva ran against Jorge Sampaio, who won with nearly 54 per
+  cent. The defeat is the position the right went in from and the article does
+  not make it the cause of the outcome.
+- `constitution-1976 --precondition-of--> 2006-portuguese-presidential-election`.
+  The article, revision 1374338206, § Background: Sampaio was re-elected in the
+  first round in 2001 and **"because he was term-limited, he was forbidden by
+  the Constitution to run for a third consecutive term"**.
+
+### The two this batch refused, and why
+
+- **`1923-portuguese-presidential-election`**. Its article, revision 1361388277,
+  says *"The Congress of the Republic elected the president in Lisbon instead of
+  the Portuguese people"* — the same mechanism as the other five and **without
+  naming the constitution**. Writing the constitution edge from that sentence
+  would be supplying the attribution the page declines to make, so it is not
+  written. It waits on a page that names the constitution, or on a record of
+  Teixeira Gomes's presidency.
+- **`1951-portuguese-presidential-election`**. Its article, revision 1273794926,
+  gives the occasion as the death of President Óscar Carmona on 18 April 1951,
+  which is not a record here, and says Rui Luís Gomes was removed from the
+  ballot after being declared a communist by the Salazar dictatorship. It is
+  **already filed under `estado-novo-1933-1974`**, as the presidential elections
+  of 1949 and 1965 beside it are, so it is in the picture; it has no edge, and
+  it waits on a record of Carmona's death or of the 1958 election law.
+
+`iberian-blackout-2025`, the third record with no edge, is untouched: it is an
+assistant-drafted record citing the grid operator's own report, and nothing
+read here argues a line from it to anything this atlas holds.
+
+### What batch 9 did to the graph
+
+| | before | after |
+| --- | --: | --: |
+| active events | 378 | 378 |
+| main | 288 | 288 |
+| active edges | 461 | 469 |
+| **largest connected component** | **359** | **366** |
+| components | 14 | 7 |
+| active events with no edge at all | 10 | 3 |
+
+**Seven components became one and the corpus did not grow at all**, which is
+the shape batch 3 had and the cheapest kind of batch this milestone writes.
+What is left outside the largest component is now four things and not
+fourteen: the Sudanese four, the Madeiran three, the fires pair, and three
+records with no edge — `1923-portuguese-presidential-election`,
+`1951-portuguese-presidential-election` and `iberian-blackout-2025`. Every one
+of them is named above or in §2g with what it waits for.
+
 ## 3. The main count, and why it moved up
 
 Amendment A3: an import that leaves the main count higher than it found it has
@@ -1174,6 +1261,9 @@ record that could be filed was.**
 **Batch 8 leaves it at 288 against 279**, nine higher, and nine records came
 in: none took a parent and §2h says why for each, `laotian-civil-war` at
 length, because it is the one the article would file and the dates refuse.
+
+**Batch 9 leaves it at 288, exactly where batch 8 did**: it created no record
+and retracted none, so A3 has nothing to ask of it.
 
 ## 4. What these batches refused to write
 

@@ -13659,12 +13659,13 @@ stands and what the next fire does.
 
 **Nine batches.** The pool before: 310 active events, 229 of them main, 362
 active edges, a largest connected component of 254 and 23 events with no edge.
-**After batch 8: 378 active, 288 main, 461 edges, largest component 359, 10
-with no edge.** Thirty-six records came back from the tombstones and
+**After batch 9: 378 active, 288 main, 469 edges, largest component 366, 3
+with no edge, and seven components where there were twenty-three.** Thirty-six records came back from the tombstones and
 thirty-eight were imported and kept; ninety-nine edges were written — eighteen
 in batch 0, seven in batch 1, **nineteen in batch 3, which imported nothing at
 all and moved the component by twenty-seven**, eight in batch 4, eleven in
-batch 5, eight in batch 6, eighteen in batch 7 and eleven in batch 8.
+batch 5, eight in batch 6, eighteen in batch 7, eleven in batch 8 and eight in
+batch 9.
 
 **Batches 7 and 8 are the first taken from the sweep by the tick rule**, sets 1
 and 2 having been spent on the hinges. Batch 7 took the three bridges left out
@@ -13677,14 +13678,23 @@ brought the Afghan pair. Batch 8 was sets 3 and 4 alone and is **what the rule
 costs**: sixteen ticked, fifteen created, **nine kept and six retracted with
 their reasons**, because a rule that picks by sitelinks and by thin decades
 picks records this corpus has no neighbour for. The rate to plan on is nine or
-ten kept records a batch, not sixteen.
+ten kept records a batch, not sixteen. **Batch 9 imported nothing at all** and
+took the singletons `docs/m42-connections.md` §4b called the cheapest thing
+left: seven of the nine Portuguese presidential elections the corpus held only
+the ends of, on the sentence each article has carried all along — the 1911
+constitution putting the choice in Congress, and for 1918 the assassination of
+Sidónio Pais two days before. **Seven components became one and the corpus did
+not grow.**
 
 **The milestone is a long way from its done-condition and that is the honest
 reading**: the brief asks for an order of magnitude more than the 250 it was
-written against, and the corpus stands at 378 — **but 359 of those 378 are in
-one connected component, against 254 of 310 when the run started, and only four
-active events are now unreachable from any Portuguese one, against thirteen
-before batch 7.** The connectedness the owner asked for on 21 September is
+written against, and the corpus stands at 378 — **but 366 of those 378 are in
+one connected component, against 254 of 310 when the run started; three active
+events now carry no edge at all, against twenty-three; and only four are
+unreachable from any Portuguese one, against thirteen before batch 7.** What is
+left outside the largest component is the Sudanese four, the Madeiran three,
+the fires pair and those three, each named in `docs/m42-connections.md` with
+what it waits for. The connectedness the owner asked for on 21 September is
 substantially done; the volume is barely begun. The sweep's **1,557 unwalked
 rows** are what that volume comes from, and §5 of `docs/m42-pool.md` holds the
 tick rule written before a box was ticked. At nine or ten kept records a batch

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "constitution-1911--august-1915-portuguese-presidential-election--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"August 1915 Portuguese presidential election\", revision 1273396087, § lead"
+    }
+  ],
+  "from": "constitution-1911",
+  "to": "august-1915-portuguese-presidential-election",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English article on the election says it in one sentence: \"Following Portugal's 1911 constitution, the Congress of the Republic must elect the president in Lisbon instead of the Portuguese people.\" The constitution is what put the choice in Congress rather than in an electorate, which is the fact this edge carries and the only one — who won, and why, is the record's own.",
+  "dispute": null
+}
