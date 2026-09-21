@@ -27,6 +27,7 @@ import {
 import { horizonBand } from '../../horizon.js';
 import { LOADING_LABEL } from '../../attributes.js';
 import { ringClasses } from '../../parts.js';
+import { confidenceClass } from '../../confidence.js';
 import { glyphClasses, glyphUse } from '../glyphs.js';
 // O tamanho de uma etiqueta, o seu halo e o corte de um nome comprido vivem em
 // labels.js, com o colocador: há um tamanho para as etiquetas todas do mapa e
@@ -263,7 +264,11 @@ export function createEventsLayer(group, projection, {
         const pa = a && place(a);
         const pb = b && place(b);
         if (!pa || !pb) return;
-        const classes = [cls, edge.confidence === 'disputed' ? 'disputed' : ''].join(' ').trim();
+        // How sure the atlas is of this link, from the one module the graph
+        // reads too: the walk drawn here and the same link drawn there are
+        // the same record, and the reader must not have to wonder which
+        // picture to believe (confidence.js).
+        const classes = [cls, confidenceClass(edge)].join(' ').trim();
         group.appendChild(svg('line', { x1: pa[0], y1: pa[1], x2: pb[0], y2: pb[1], class: classes }));
       };
       for (const edge of consequenceEdges) line(edge, 'edge consequence');
