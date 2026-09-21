@@ -158,6 +158,12 @@
     },
     {
       "dissent": false,
+      "id": "1952-egyptian-revolution--2011-egyptian-revolution--precondition-of",
+      "kind": "edge",
+      "locator": "\"2011 Egyptian revolution\", revision 1374677056, § Background"
+    },
+    {
+      "dissent": false,
       "id": "1952-egyptian-revolution--algerian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Algerian War\", revision 1373081356"
@@ -278,6 +284,18 @@
     },
     {
       "dissent": false,
+      "id": "2011-egyptian-revolution--2013-egyptian-coup-d-etat--precondition-of",
+      "kind": "edge",
+      "locator": "\"2013 Egyptian coup d'état\", revision 1369875339, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "2011-south-sudanese-independence-referendum--south-sudanese-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"South Sudanese Civil War\", revision 1374713494, § Previous rebellions"
+    },
+    {
+      "dissent": false,
       "id": "2024-madeiran-regional-election--2025-madeiran-regional-election--caused",
       "kind": "edge",
       "locator": "\"2025 Madeiran regional election\", revision 1363880650"
@@ -383,6 +401,18 @@
       "id": "assassination-of-archduke-franz-ferdinand--world-war-i--caused",
       "kind": "edge",
       "locator": "\"World War I\", revision 1372979664"
+    },
+    {
+      "dissent": false,
+      "id": "berlin-conference--first-italo-ethiopian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Berlin Conference\", revision 1369494326, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "berlin-conference--second-boer-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Berlin Conference\", revision 1369494326, § Aftermath"
     },
     {
       "dissent": false,
@@ -767,6 +797,12 @@
       "id": "first-indochina-war--vietnam-war--precondition-of",
       "kind": "edge",
       "locator": "\"Vietnam War\", revision 1373025356"
+    },
+    {
+      "dissent": false,
+      "id": "first-italo-ethiopian-war--second-italo-ethiopian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Italo-Ethiopian War\", revision 1374151253, § Background"
     },
     {
       "dissent": false,
@@ -1691,6 +1727,18 @@
       "id": "second-boer-war--treaty-of-windsor--caused",
       "kind": "edge",
       "locator": "\"Second Boer War\", revision 1372994797"
+    },
+    {
+      "dissent": false,
+      "id": "second-intifada--gaza-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Gaza war\", revision 1375729607, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "second-intifada--gaza-war-2008-2009--precondition-of",
+      "kind": "edge",
+      "locator": "\"Gaza War (2008–2009)\", revision 1370620825, § Background"
     },
     {
       "dissent": false,

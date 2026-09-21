@@ -591,7 +591,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "1952-egyptian-revolution",
       "kind": "event",
       "origin": {
@@ -1932,6 +1932,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
+      "degree": 2,
       "id": "2011-egyptian-revolution",
       "kind": "event",
       "origin": {
@@ -2031,6 +2032,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
+      "degree": 1,
       "id": "2011-south-sudanese-independence-referendum",
       "kind": "event",
       "origin": {
@@ -2045,6 +2047,35 @@
       "revised": null,
       "status": "active",
       "title": "2011 South Sudanese independence referendum"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "2013-egyptian-coup-d-etat",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active",
+      "title": "2013 Egyptian coup d'état"
     },
     {
       "authors": [
@@ -2894,6 +2925,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
+      "degree": 2,
       "id": "berlin-conference",
       "kind": "event",
       "origin": {
@@ -4934,6 +4966,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 2,
+      "id": "first-italo-ethiopian-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active",
+      "title": "First Italo-Ethiopian War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5079,7 +5140,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "gaza-war",
       "kind": "event",
       "origin": {
@@ -5095,6 +5156,35 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "Gaza War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "gaza-war-2008-2009",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active",
+      "title": "Gaza War (2008–2009)"
     },
     {
       "authors": [
@@ -8682,7 +8772,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "second-boer-war",
       "kind": "event",
       "origin": {
@@ -8711,6 +8801,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
+      "degree": 2,
       "id": "second-intifada",
       "kind": "event",
       "origin": {
@@ -8738,6 +8829,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
+      "degree": 1,
       "id": "second-italo-ethiopian-war",
       "kind": "event",
       "origin": {
@@ -8958,6 +9050,34 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "Mário Soares elected president"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "south-sudanese-civil-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-reinstated"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-15",
+      "status": "active",
+      "title": "South Sudanese Civil War"
     },
     {
       "authors": [
@@ -11274,24 +11394,6 @@
   "schema": 1,
   "warnings": [
     {
-      "id": "2011-egyptian-revolution",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "2011-south-sudanese-independence-referendum",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "berlin-conference",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "entente-cordiale",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -11299,18 +11401,6 @@
     },
     {
       "id": "iberian-blackout-2025",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "second-intifada",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "second-italo-ethiopian-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

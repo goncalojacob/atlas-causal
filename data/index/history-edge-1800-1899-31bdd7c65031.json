@@ -11,6 +11,24 @@
         }
       ]
     },
+    "berlin-conference--first-italo-ethiopian-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "berlin-conference--second-boer-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "boxer-rebellion--xinhai-revolution--precondition-of": {
       "from": "git",
       "versions": [
@@ -51,6 +69,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "first-italo-ethiopian-war--second-italo-ethiopian-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

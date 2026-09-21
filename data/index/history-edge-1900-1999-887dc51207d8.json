@@ -207,6 +207,15 @@
         }
       ]
     },
+    "1952-egyptian-revolution--2011-egyptian-revolution--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "1952-egyptian-revolution--algerian-war--precondition-of": {
       "from": "git",
       "versions": [
