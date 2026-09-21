@@ -103,7 +103,14 @@ test('contribution.yml runs only on the maintainer label, with the scoped PAT', 
 
 test('the index is built on main, and checked on a pull request that carries one', async () => {
   const validate = await read(WORKFLOWS, 'validate.yml');
-  assert.match(validate, /on:\s*\n\s*pull_request:/);
+  // What this is about is that the check runs on a pull request, not that
+  // `pull_request` is the first thing under `on:`. It was written as the
+  // second because it was the only one; since 21 September the lane branches
+  // are checked on their own pushes too, since a branch with no pull request
+  // open has no check to wait for, and a comment between the two keys was
+  // enough to fail the old pattern.
+  assert.match(validate, /^on:$/m);
+  assert.match(validate, /^ {2}pull_request:$/m);
   // Never built and never committed here: that is deploy.yml's, on main, so
   // two open pull requests cannot conflict on the index.
   assert.doesNotMatch(validate, /build-index/);
