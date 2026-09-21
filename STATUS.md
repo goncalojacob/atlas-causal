@@ -13657,15 +13657,33 @@ batch-by-batch table amendment A5 asks for; `docs/m42-connections.md` argues
 every edge. **The milestone is not done**: §7 of the pool file says where it
 stands and what the next fire does.
 
-**Twelve batches.** The pool before: 310 active events, 229 of them main, 362
+**Thirteen batches.** The pool before: 310 active events, 229 of them main, 362
 active edges, a largest connected component of 254 and 23 events with no edge.
-**After batch 12: 411 active, 316 main, 95 filed, 499 edges, largest component
-388, 3 with no edge.** Forty-seven records came back from the tombstones and
-sixty were imported and kept; a hundred and twenty-nine edges were
+**After batch 13: 423 active, 326 main, 97 filed, 513 edges, largest component
+400, 3 with no edge.** Forty-seven records came back from the tombstones and
+seventy-two were imported and kept; a hundred and forty-three edges were
 written — eighteen in batch 0, seven in batch 1, **nineteen in batch 3, which
 imported nothing at all and moved the component by twenty-seven**, eight in
 batch 4, eleven in batch 5, eight in batch 6, eighteen in batch 7, eleven in
-batch 8, eight in batch 9, fourteen in batch 10, ten in batch 11 and six in batch 12.
+batch 8, eight in batch 9, fourteen in batch 10, ten in batch 11, six in batch 12
+and fourteen in batch 13.
+
+**Batch 13 is the fourth sweep batch and the first one to grow the component as
+fast as the corpus.** Sixteen rows ticked by §5's rule over a pool recomputed
+at **1,191** rows, sixteen created, **twelve kept and four retracted**, fourteen
+edges, two filings: corpus +12, component +12, component count unmoved. What
+bought that was not a better pick but a harder hand on the four rows with no
+neighbour — the sixth cholera pandemic, Black Monday 1987, the Tigray war and
+the Tajikistani civil war, each retracted on arrival with the missing record
+named rather than kept as a fragment of its own. **So a sweep batch can do what
+batch 12 said only a tombstone pass could, provided it will retract a quarter of
+what it fetched.** Its new records are the two Balkan-war treaties, the Potsdam
+declaration, the Paris peace treaties of 1947, the 1954 Hague convention, the
+Svalbard treaty, the 31 March incident, the Soviet–Japanese border conflicts,
+the Saur revolution, the Khyber Pakhtunkhwa insurgency, the Cambodian civil war
+and the murder of the Romanov family. **Step 0's tombstone pass ran first and
+came back empty** — eleven came back across batches 10 to 12, none here — which
+is reported rather than skipped, and is what the vein running thin looks like.
 
 **Batches 10 and 11 are sweep batches taken by §5's tick rule**, sets 1 and 2
 having been spent on the hinges and the bridges. The pool was recomputed each
@@ -13740,21 +13758,25 @@ of the rest were main before they were withdrawn.
 `estonian-war-of-independence` and `sino-soviet-border-conflict` are the two
 that were arguable and are listed rather than filed, which is M62 §3's rule.
 Every new record carries `actors: []`, which is M67 A1 and not a defect, and it
-is why `docs/m53-polities.md` §4.1 moves to **306 of 411** with the numerator
+is why `docs/m53-polities.md` §4.1 moves to **306 of 423** with the numerator
 standing still: the gap that row shows is the gap between an imported corpus
 and a written one, and it widens by exactly the number of records each batch
-keeps.
+keeps. Batch 13 files two more on the same rule and on a sentence its article
+states — `cambodian-civil-war` under `vietnam-war`, which its article's second
+sentence calls part of it, and `execution-of-the-romanov-family` under
+`russian-civil-war`, which its infobox names — and leaves its other ten main,
+four of them treaties, because a treaty is not part of the war it ends.
 
 **The milestone is a long way from its done-condition and that is the honest
 reading**: the brief asks for an order of magnitude more than the 250 it was
-written against, and the corpus stands at 411 — **but 388 of those 411 are in
+written against, and the corpus stands at 423 — **but 400 of those 423 are in
 one connected component, against 254 of 310 when the run started, and three
 active events carry no edge at all, against twenty-three.** The connectedness
 the owner asked for on 21 September is substantially done; the volume is barely
-begun. The sweep's **1,524 unwalked rows** are what that volume comes from, and
-at ten or eleven kept records a batch the brief's own number is many hundreds
-of batches away. That is a fact the owner should have rather than a number to
-be optimistic about.
+begun. The sweep's **unwalked rows** are what that volume comes from — 1,191 of
+them on batch 13's recount over the `world` sections — and at ten to twelve kept
+records a batch the brief's own number is many hundreds of batches away. That is
+a fact the owner should have rather than a number to be optimistic about.
 
 **The second finding: the atlas has an environment-shaped hole**, and it has
 now cost three sweep rows. The Montreal Protocol, the Stockholm Convention on
@@ -13790,11 +13812,18 @@ run's inference and not anybody's page. A second edge out of
 `second-italo-ethiopian-war`, because its own aftermath names no event this
 atlas holds. Three of the fifty M44b withdrew, and three of its class C. **Six
 of batch 8's fifteen**, among them `thousand-days-war`, which batch 10 brought
-back. **Four of batch 10's sixteen** and **six of batch 11's fifteen**, each
-with its reason in its own record and the missing neighbour named. Two items
-refused at the class table, `Q475678` and `Q3771738` — the second because a
-*historical document* is not a kind of event, and one of the Kosovo
-declaration's two classes was enough to let it through. **No historical claim
+back. **Four of batch 10's sixteen**, **six of batch 11's fifteen** and **four
+of batch 13's sixteen**, each with its reason in its own record and the missing
+neighbour named. Two items refused at the class table, `Q475678` and
+`Q3771738` — the second because a *historical document* is not a kind of event,
+and one of the Kosovo declaration's two classes was enough to let it through.
+**A fourth edge an article argues and an imported date forbids**, found by
+batch 13: the Second Sino-Japanese war into the Soviet–Japanese border
+conflicts, which the conflicts' own article states twice and cites to Coox,
+pp. 94 and 120 — the conflicts are dated from 1932 and the war from 1937, so
+rule 4 refuses it, and the date was not widened. **Six Wikidata classes were
+left out of the class table** rather than added on the way past (1005). **No
+historical claim
 was written**: every explanation is a paraphrase of a sentence the cited
 article carries at the cited revision, every citation names the article, the
 revision and the section, and no date was invented. Twenty-three of these two
@@ -13803,7 +13832,13 @@ batches' twenty-four edges are `probable`; one is `consensus`
 test because the article hangs that very sentence on Miroiu and Alecu 2024) and
 one is `disputed` (`cultural-revolution --precondition-of--> sino-soviet-border-conflict`,
 whose article attributes Mao's motive to "historians have suggested" and offers
-a second motive beside it, both named in the edge's `dispute` block).
+a second motive beside it, both named in the edge's `dispute` block). **All
+fourteen of batch 13's edges are `probable` and nothing was promoted**: four of
+them carry a second author on M72's standard — Gellately 2007 p. 65, Kaplan
+1990 pp. 115–116, Isaacs and Hardy 1988 p. 90 and Hall 2000, each cited by the
+article for the very sentence the edge paraphrases — and none was promoted on
+that alone, because a second source thickens an edge and a person decides
+`consensus`.
 
 ### Deviations
 
@@ -13851,6 +13886,34 @@ a second motive beside it, both named in the edge's `dispute` block).
      to prevent. Nothing above it was skipped; the sixteen are still there in
      order for the next batch. The rule survives an exception that says it is
      one; it does not survive an exception that pretends to be the rule.
+
+### Deviations
+
+1005. **A class an item carries and the class table does not is not a hole to
+     be filled on the way past.** Batch 13's sixteen items carry six classes
+     the table of `data/imports/wikidata-seeds.json` does not name — `Q959265`
+     cholera outbreak, `Q107637520` border conflict, `Q321839` agreement,
+     `Q750215` mass murder, `Q3882219` assassination, `Q180684` conflict — and
+     **none was added**, because every one of the sixteen was already admitted
+     by another of its classes and nothing was blocked. `CLAUDE.md` says which
+     Wikidata class becomes which kind of record here is data and not code: an
+     entry in that table is a decision somebody can argue with, and adding six
+     of them silently in the course of a sweep batch would be deciding six
+     questions nobody asked. They are listed in §2m of
+     `docs/m42-connections.md` for whoever wants to decide them.
+
+1004. **The pool count fell by 350 and not one row of that was progress.**
+     Batch 11 measured the sweep pool at 1,541 rows and batch 13 measures it
+     at 1,191, and the difference is not the sixteen batch 12 and 13 spent: it
+     is that batch 13's recount is taken over the `world` sections of
+     `docs/wikidata-candidates.md` alone, where the earlier counts took the
+     whole file. **§5's rule is that the pool is recomputed against `data/` on
+     the day of ticking and never read off the file**, and the price of that is
+     exactly this — two honest recounts of the same rule can differ by a third
+     when the scope moves, and a run that quietly carried the smaller number
+     forward as "rows spent" would be reporting work it did not do. The number
+     to trust is whichever the batch that is ticking has just computed, and
+     §7 of `docs/m42-pool.md` now says so instead of carrying one figure.
 
 ### Deviations
 

@@ -103,6 +103,7 @@ A5: a batch that grows the corpus and not the component has to say why.
 | 10 | sets 3 and 4 again: 16 created, 12 kept and 4 retracted, **3 tombstones back on their own named blockers**, 14 edges, three filings | 393 | 300 | 93 | 483 | **376** | 3 |
 | 11 | sets 3 and 4 a third time: 15 created, 9 kept and 6 retracted, **3 more tombstones back**, 10 edges, one filing | 405 | 311 | 94 | 493 | **382** | 3 |
 | 12 | **the tombstone pass**: one sweep row taken out of order, 5 tombstones back, 6 edges, one filing — corpus +6 and component +6 | 411 | 316 | 95 | 499 | **388** | 3 |
+| 13 | sets 3 and 4 a fourth time: 16 created, **12 kept and 4 retracted**, no tombstone back, 14 edges, two filings — corpus +12 and component +12 | 423 | 326 | 97 | 513 | **400** | 3 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -277,22 +278,27 @@ the next, so a killed run loses a batch and not the milestone.
 | batch 10 | sets 3 and 4 again: 12 kept, 4 retracted, 3 reinstated, 14 edges, 366 → 376 |
 | batch 11 | sets 3 and 4 again: 9 kept, 6 retracted, 3 reinstated, 10 edges, 376 → 382 |
 | batch 12 | the Great Lakes joined: 1 import, 5 reinstated, 6 edges, 382 → 388 |
+| batch 13 | sets 3 and 4 a fourth time: 12 kept, 4 retracted, 0 reinstated, 14 edges, 388 → 400 |
 
 **Where the milestone stands against its own done-condition.** The brief asks
 for an order of magnitude more active events than the 250 it was written
-against. The corpus holds **411**, up from 310, and its largest connected
-component holds **388 of them**, up from 254 — so the connectedness is nearly
-done and the volume is barely begun. **The volume is the sweep**: **1,557 rows**
-the tool has already found and nobody has walked, recomputed against `data/` on
-21 September and again at batch 10, which returned the same 1,557 and is the
-check that the rule is recomputed rather than remembered. §5's tick rule,
-written before a box was ticked, is how they are chosen. Batches 7, 8 and 10 are
-the ones taken by that rule: sets 1 and 2 are spent, and from here the sweep is
-sets 3 and 4. **Batch 8 is what that costs**: sixteen rows ticked, fifteen
+against. The corpus holds **423**, up from 310, and its largest connected
+component holds **400 of them**, up from 254 — so the connectedness is nearly
+done and the volume is barely begun. **The volume is the sweep**: the rows the
+tool has already found and nobody has walked, recomputed against `data/` at
+every ticking rather than remembered. That recount stood at 1,557 on 21
+September and again at batch 10, and batch 13 measures the same pool over the
+`world` sections alone at **1,191 rows**; the two numbers are the same rule
+asked of a slightly different set of sections, and the one to trust is whichever
+the batch that is ticking has just computed. §5's tick rule, written before a
+box was ticked, is how they are chosen. Batches 7, 8, 10, 11 and 13 are the ones
+taken by that rule: sets 1 and 2 are spent, and from here the sweep is sets 3
+and 4. **Batch 8 is what that costs**: sixteen rows ticked, fifteen
 created, nine kept and six retracted, because a rule that picks by sitelinks and
 by thin decades picks records this corpus has no neighbour for. **Batch 10 is
-the same sixteen-row cap and it kept twelve**, which puts the rate over the two
-sweep batches at **ten or eleven kept a batch**, not sixteen.
+the same sixteen-row cap and it kept twelve**, and batch 13 kept twelve of
+sixteen too, which puts the rate over four sweep batches at **ten to twelve kept
+a batch**, not sixteen.
 
 **Batch 10 found the other thing a sweep row can do, and it is worth more than
 the row itself.** Three of its sixteen brought back a tombstone whose own
@@ -323,16 +329,35 @@ by reading the 213 retraction reasons rather than the sitelink ranking. **The
 sweep is the volume; the tombstones are the connection.** Both are needed and
 they are not interchangeable.
 
+**Batch 13 qualifies that, and the qualification is the more useful half.** It
+is a sweep batch and it grew the corpus by twelve and the component by twelve,
+with the component count unmoved — the thing batch 12 said only a tombstone
+pass could do. What bought it was not a better pick but a harder hand on the
+four rows that had no neighbour: `sixth-cholera-pandemic`, `black-monday`,
+`tigray-war` and `tajikistani-civil-war` were all retracted on arrival rather
+than kept as a fragment of their own. **A sweep batch grows the component as
+fast as it grows the corpus provided it is willing to retract a quarter of what
+it fetched**, and a batch that keeps everything it fetches is what makes the
+component count rise.
+
+**The tombstone vein is thinning.** Batch 13 ran the scan first and it returned
+nothing to reinstate: eleven came back across batches 10 to 12, none here.
+Step 0 below still costs no fetch and is still worth running first, but a fire
+that plans its hour around it will be disappointed.
+
 **What the next fire does**, in this order:
 
 0. **Read the tombstones first**, which costs no fetch. `node -e` over
    `data/events/*.json` picking the retracted records whose `retraction.reason`
    names a record that is active now is twenty lines and found eleven
-   reinstatements across batches 10 to 12. The four that came up and were *not*
-   taken are named in §5b with what each still waits for, and
-   `portuguese-european-constitution-referendum` and `transnistria-war` are
-   there for reasons no batch can clear — a ballot that never happened, and a
-   date rule 4 refuses.
+   reinstatements across batches 10 to 12 and **none in batch 13**. The four
+   that came up and were *not* taken are named in §5b with what each still
+   waits for, and `portuguese-european-constitution-referendum` and
+   `transnistria-war` are there for reasons no batch can clear — a ballot that
+   never happened, and a date rule 4 refuses. Batch 13 also read the reasons
+   against its own subjects rather than only against the id list, which is the
+   stronger form of the scan: `may-coup` and `1907-romanian-peasants-revolt`
+   both came up and neither was unlocked.
 1. **A sweep batch.** Tick by §5's rule, add the ids to
    `data/imports/wikidata-seeds.json` → `items` with a lane and a class each,
    walk them here, and connect every one of them the same day. The rate at
