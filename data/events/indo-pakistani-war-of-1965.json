@@ -17,10 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-05",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
@@ -28,14 +25,17 @@
       "summary-drafted"
     ]
   },
-  "wikidata": "Q233583",
-  "sitelinks": {
-    "count": 57,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q233583",
   "wikipedia": {
     "en": "India–Pakistan war of 1965",
     "pt": "Guerra Indo-Paquistanesa de 1965"
+  },
+  "sitelinks": {
+    "count": 57,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -61,6 +61,7 @@
   },
   "place": null,
   "region": "asia",
+  "parent": "kashmir-conflict",
   "actors": [
     {
       "actor": "republic-of-india",

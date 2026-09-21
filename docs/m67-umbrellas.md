@@ -487,3 +487,71 @@ pass named are still main. `suez-crisis`, `independence-of-morocco`,
 `aarhus-convention` are all main after this batch and all of them are outside
 every umbrella the atlas holds — five of the eight in the decades and the
 regions the two refusals above describe.
+
+## 7. M42 batch 20 — the `part of` pass over the whole corpus
+
+*21 September, the third batch of the same fire. Batch 19 filed six European
+records on the child's own `part of` statement and the rule turned out to be
+general, so it was run over every main event that carries a Wikidata id — 218
+of 263, in five API calls. Twenty pairs came back whose named parent is a
+record this atlas already holds. **Five were taken and fifteen refused**, and
+every refusal is a date or a depth and not a judgement about history.*
+
+**Taken:**
+
+| filed | under | the item's own claim |
+| --- | --- | --- |
+| `afghan-civil-war` | `revolutions-of-1989` | Q382861 |
+| `indo-pakistani-war-of-1947-1948` | `kashmir-conflict` | Q1413732 |
+| `indo-pakistani-war-of-1965` | `kashmir-conflict` | Q1413732 |
+| `suez-crisis` | `arab-israeli-conflict` | Q8669 |
+| `war-of-attrition` | `arab-israeli-conflict` | Q8669 |
+
+**`suez-crisis` is the one that crosses a lane**: it is in the africa lane and
+`arab-israeli-conflict` is in asia. A6's test is region and span; the item's
+own `part of` is a stronger claim than either, and where the source says a
+record is part of a thing this atlas holds, that is what decides. The same
+reading filed `war-of-attrition`, which is Egypt's war too.
+
+**Refused, one on the lane and eleven on a date.** The lane first, because
+it is A6's own half of the rule and not an accident: `second-italo-ethiopian-war`
+carries `part of` the interwar period and is an **African** war, and
+`interwar-period` is this atlas's **European** umbrella — the owner's example
+was *"you could only show that for Europe"*. A period's subject is its region,
+so the claim is true of the calendar and not of the umbrella, and the war stays
+main. `tests/m42-filing.test.mjs` is what refused it, which is the test doing
+exactly the job it was written for.
+
+**And eleven on a date the parent does not contain:**
+`afghan-civil-war` → `dissolution-of-the-soviet-union` (the war runs 1989 to
+1992 and the dissolution is one day of 1991); `basmachi-movement` →
+`world-war-i` and → `russian-civil-war` (1916 to 1934 is outside both);
+`berlin-conference` → `scramble-for-africa` (the conference opens in November
+1884 and the Scramble's span starts in 1885 — the article the umbrella takes
+its span from dates the period to the conference's own *close*);
+`eritrean-war-of-independence` → `ethiopian-civil-war` (1961, thirteen years
+before the civil war begins); `laotian-civil-war` → `vietnam-war` (ends
+2 December 1975, seven months after the Vietnam war's own end date here);
+`rif-war` → `interwar-period` (begins 1911); `second-sino-japanese-war` →
+`world-war-ii` (begins 1937, and this atlas dates the war from 1939);
+`soviet-japanese-border-conflicts` → `interwar-period` (ends 16 September
+1939, five days after the period's span closes); and
+`good-friday-agreement` → `the-troubles`, which is refused for a reason of
+its own: **`the-troubles` is dated `1998–1998` in this atlas**, which is a
+defect in that record rather than a fact about the conflict, and filing a
+1998 agreement under a 1998 stub of a thirty-year conflict would bury the
+defect instead of leaving it visible.
+
+**Three refused on depth**, because A6 allows one: `yugoslav-wars` →
+`breakup-of-yugoslavia` and `lebanese-civil-war` → `arab-israeli-conflict`
+would each put a war that already has children inside another record, and
+`wagner-group-rebellion` → `full-scale-russo-ukrainian-war` names a parent
+that is itself filed. `dissolution-of-the-soviet-union` → `revolutions-of-1989`
+is the same case, and it is the one batch 19 had already read.
+
+**No record gained an actor, a place, a date or a source here**, and no child
+taken above names neither an actor nor a place except `suez-crisis`, whose
+item gives no participant and whose own summary and article, cited on the
+record at revision 1374851403, say whose crisis it was.
+
+Main falls 263 to **258**.

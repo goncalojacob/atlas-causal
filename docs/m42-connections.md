@@ -3629,3 +3629,33 @@ nothing, with three levels under it. `revolutions-of-1989` itself carries
 `part of` the **Cold War**, which M67 refused and A6 does not overrule.
 
 Corpus 493 → 496 active, **main 266 → 263**, largest component 441 → 442.
+
+## 2t. Batch 20 — the `part of` pass, and what a date refuses
+
+*21 September, the third batch of the fire. No import, no edge, no fetch but
+five `wbgetentities` calls: every main event carrying a Wikidata id was asked
+for `part of`, and the answers naming a record this atlas holds were filed
+where the dates allow and refused where they do not.* `docs/m67-umbrellas.md`
+§7 is the table, both halves of it. Five filed — `afghan-civil-war`,
+`indo-pakistani-war-of-1947-1948`, `indo-pakistani-war-of-1965`,
+`suez-crisis` and `war-of-attrition` — and fifteen refused: one on the lane,
+eleven on a date and three on depth.
+
+**The largest connected component does not move and cannot**: `parent` takes
+no edge. Main 263 → **258**.
+
+**The lane refusal is the one A6 itself wrote.** `second-italo-ethiopian-war`
+carries `part of` the interwar period and is an African war; the period is
+European here, because the owner's example was a period shown *for Europe*. A
+period's subject is its region and the claim is true of the calendar only.
+
+**What the date refusals are worth reading for** is that eight of the eleven are
+the atlas's own dates disagreeing with the source's containment by a margin
+that is not a mistake: the Basmachi movement really does outlive the Russian
+civil war, the Rif war really does begin before the interwar period, and the
+second Sino-Japanese war really does begin two years before this atlas dates
+the Second World War. **A `part of` statement is a claim about subject and not
+about time**, and rule 24 is what keeps the two apart here. The exception is
+`the-troubles`, dated `1998–1998` in this atlas for a conflict of thirty
+years: that one is a defect in a record and is left visible rather than filed
+over.

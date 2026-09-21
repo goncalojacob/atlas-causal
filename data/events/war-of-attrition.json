@@ -13,24 +13,24 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts"
     ]
   },
-  "wikidata": "Q322607",
-  "sitelinks": {
-    "count": 46,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q322607",
   "wikipedia": {
     "en": "War of Attrition",
     "pt": "Guerra de Desgaste"
+  },
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -49,6 +49,7 @@
   "place": null,
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "arab-israeli-conflict",
   "category": "war",
   "actors": []
 }

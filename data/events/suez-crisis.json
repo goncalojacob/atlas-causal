@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
   "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "m42-interval-corrected"
     ]
   },
-  "wikidata": "Q49101",
-  "sitelinks": {
-    "count": 84,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q49101",
   "wikipedia": {
     "en": "Suez Crisis",
     "pt": "Crise de Suez"
+  },
+  "sitelinks": {
+    "count": 84,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -50,6 +50,7 @@
   "place": null,
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "arab-israeli-conflict",
   "category": "war",
   "actors": []
 }
