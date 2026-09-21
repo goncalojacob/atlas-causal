@@ -248,6 +248,12 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -413,6 +419,12 @@
             "status"
           ],
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -433,6 +445,12 @@
         {
           "fields": [
             "review"
+          ],
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
           ],
           "on": "2026-09-21"
         }
@@ -524,6 +542,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-09-21"
         }
       ]
@@ -649,6 +673,15 @@
         }
       ]
     },
+    "scramble-for-africa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "second-boer-war": {
       "from": "git",
       "versions": [
@@ -673,6 +706,12 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },
@@ -681,6 +720,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-09-21"
         }
       ]

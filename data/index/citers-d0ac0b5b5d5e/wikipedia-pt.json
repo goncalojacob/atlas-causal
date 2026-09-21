@@ -758,6 +758,12 @@
     },
     {
       "dissent": false,
+      "id": "third-portuguese-republic-since-1974",
+      "kind": "event",
+      "locator": "\"Terceira República Portuguesa\", revision 72175624"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-brest-litovsk",
       "kind": "event",
       "locator": "\"Tratado de Brest-Litovski\", revision 69632275"

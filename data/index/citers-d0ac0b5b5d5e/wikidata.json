@@ -1532,6 +1532,12 @@
     },
     {
       "dissent": false,
+      "id": "interwar-period",
+      "kind": "event",
+      "locator": "Q154611"
+    },
+    {
+      "dissent": false,
       "id": "iran-iraq-war",
       "kind": "event",
       "locator": "Q82664"
@@ -1982,6 +1988,12 @@
     },
     {
       "dissent": false,
+      "id": "scramble-for-africa",
+      "kind": "event",
+      "locator": "Q179848"
+    },
+    {
+      "dissent": false,
       "id": "second-balkan-war",
       "kind": "event",
       "locator": "Q184183"
@@ -2141,6 +2153,12 @@
       "id": "the-troubles",
       "kind": "event",
       "locator": "Q815436"
+    },
+    {
+      "dissent": false,
+      "id": "third-portuguese-republic-since-1974",
+      "kind": "event",
+      "locator": "Q1259200"
     },
     {
       "dissent": false,
