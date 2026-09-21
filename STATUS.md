@@ -14206,6 +14206,182 @@ missing.
      give whoever reads it.
 
 
+## M73 — a reader can see how sure the atlas is
+
+The owner, 21 September: *"First I think each link should have sources
+associated with it, then I think the confidence visibility thing makes
+sense."* M72 was the first half. This is the second, lane A's fourth
+milestone, on the branch `m73` (`docs/run-protocol.md`, amendment of 21
+September).
+
+Every edge has carried `confidence` since the first slice and the card has
+always said it in words. **Nothing drawn said it.** On the graph a line's
+dash and its weight say what *type* of claim it is — `caused` unbroken,
+`enabled` long-dashed, and three more — so a contested link and an
+established one were the same line. The walk the map draws said less still.
+
+### The dimension confidence took: how solidly the line is inked
+
+Type owns the dash pattern and the weight. That left one thing in the palette
+that exists, and it is the one the brief names: opacity. It is spent as
+**`stroke-opacity` and `fill-opacity`**, and not as the `opacity` the dimmed
+state uses, because `opacity` is already the emphasis states' — `faded` is
+0.16, `lens-near` 0.22, the horizon's two bands 0.72 and 0.45 — and two rules
+writing one property would have the reader's own picture erase the atlas's
+confidence in it, or the other way about. A different property multiplies
+with that one instead, which is the reading wanted: **a disputed link outside
+the window is outside the window *and* doubtful.**
+
+**Three levels, not two**, which is the brief's own first preference:
+
+| | inked at | of the 362 active edges |
+| --- | --- | --- |
+| `consensus` | **1** | 68 |
+| `probable` | **0.7** | 275 |
+| `disputed` | **0.34** | 19 |
+
+A third of the ink against a full line is not a subtlety; the nineteen are
+the ghost lines in the picture, which is what the brief asks of `disputed`
+before anything else. The 0.3 between the other two is the same step again
+and is what tells the 68 the atlas is sure of from the 275 it is not. No new
+hex value, token or type size: the three rules declare nothing, name no
+colour, and the numbers are bare opacities of the kind `.faded`, `.node.faded`
+and the horizon's bands already are.
+
+### Where it comes from, and why the two pictures cannot disagree
+
+`src/confidence.js` is the one module. It hands back a **class and never a
+number** — the stylesheet keeps deciding how a line is inked, as it already
+does for the five types and for the weight of a merged line — and both
+drawings read it: `src/graph-view/graph-view.js` for the graph's edges and
+their arrowheads, `src/map/layers/events.js` for the walk and the
+consequence lines. `CONFIDENCE_ORDER` moved there out of `src/graph.js` and
+`src/validate/rules.js`, which now re-export it, so the vocabulary and what
+it looks like are one file.
+
+The stylesheet's three rules are written **without a view in front of them** —
+`.edge.confidence-disputed`, not `.graph .edge.confidence-disputed` — which
+no other edge rule in `src/style.css` is. That is the milestone stated as
+CSS: one rule, both pictures, nothing for them to differ about.
+
+A line carrying several links is inked as the **least sure of them**, which
+is the rule `cluster.js` already states for `disputed` — a bundle one of
+whose links historians argue about is a bundle the reader must not read as
+settled — asked of all three levels instead of one. `cluster.js` was not
+touched; the fold is `leastSure()` over the members it already returns.
+
+### What was there before was taking the type's dimension
+
+The gap was half-filled, and the half that was there was in the wrong place.
+`.graph .edge.disputed` set `stroke-dasharray: 5 4` and `.map .edge.disputed`
+the same, so a disputed edge was dashed **whatever its type** — and the
+corpus's disputed `caused` edges, which is most of them, were drawn as the
+key's `enabled`. The dash is the type's again. Nothing drawn had ever said
+anything at all about `probable`, which is 275 of the 362.
+
+### The legend
+
+One row, in the graph's own key and in `about.html`'s copy of it: three
+segments of one type, surest first, under the words **how sure: consensus,
+probable, disputed**. Drawn with the very classes the edges are drawn with,
+which is the rule the type key already keeps — a key built out of a second
+copy of the styling is a key that can come to be wrong.
+
+### What first paint costs
+
+**One more module on the wire and 5,101 bytes of JavaScript**, measured
+through the browser's own `performance.getEntriesByType('resource')` on
+`?from=1400&to=1600`, before and after:
+
+| | before | after |
+| --- | --- | --- |
+| JavaScript files | 83 | **84** |
+| JavaScript bytes | 1,110,709 | **1,115,810** (+0.46%) |
+| stylesheet bytes | 132,941 | **134,465** |
+| first contentful paint | 68 ms | **68 ms** |
+
+`src/confidence.js` is 3,696 bytes of which most is its comment. The request
+count and the total transferred vary by a handful between runs — which
+geometry shards have landed when the measurement is taken — so the number
+worth writing down is the deterministic one, and it is the JavaScript. **No
+new fetch of data, and no new work per line drawn**: `confidenceClass(edge)`
+is a lookup in a frozen three-element list where `edge.confidence ===
+'disputed'` used to be, and the merged line's fold is the `some()` it
+replaced.
+
+### Checks
+
+`node tools/validate.mjs --index`: **10,653 records, 5 regions, 0 errors, 238
+warnings**, clean over the repository and over the fixtures, and byte-identical
+to a fresh build. **Nothing under `data/` changed at all** — no record, no
+historical claim, and no new confidence value; the fixtures already held one
+edge of each of the three, which is why the tests needed nothing written for
+them. `node --test`: **1,652 pure and 210 browser, 1,862 in all, 0 failed and
+0 skipped**, the browser suites one at a time as the check runs them (M63).
+`lanes.js`, `cluster.js` and `emphasis.js` are untouched. **No new hex value,
+token or type size, and no new runtime dependency.** Two screenshots under
+`docs/screens/m73-*.png`, both taken with `--only`, so **every other picture
+is untouched**. Nothing pushed to `m0` or `main`; `docs/drafts/` ignored.
+Deviations **946 to 949** and **973 to 975**.
+
+### Deviations
+
+946. **The gap the brief describes was half-filled, and the half that was
+     there was spending the type's own dimension.** A disputed edge already
+     carried a class on both views and the stylesheet already dashed it —
+     `stroke-dasharray: 5 4`, over whatever the type had asked for. So this
+     milestone is not only "say it": it is **move it off the dash**, where it
+     was quietly making a `caused` link read as an `enabled` one, and add the
+     level nothing drawn had ever said anything about. The old rules are gone
+     rather than kept beside the new ones.
+
+947. **`stroke-opacity`, and not the `opacity` the brief names.** "The opacity
+     the dimmed state already uses" is `opacity`, and writing confidence into
+     the same property would have made the two fight: with `.faded` at 0.16
+     after it in the file, a confidence rule either loses the reader's window
+     or takes it. `stroke-opacity` and `fill-opacity` are the same dimension
+     said in a property that **multiplies** with `opacity` rather than
+     replacing it, so a faded disputed line is both at once. It is still the
+     opacity the brief offered; it is not the same declaration.
+
+948. **Three levels, and the brief's escape hatch was not used.** The brief
+     allows two — `disputed` against the rest — if three cannot be told apart
+     with what exists. They can: 1, 0.7 and 0.34 are three steps of about 0.3
+     on one line colour, which both the pure test and the browser test hold
+     to a floor of 0.2, and `probable` is 275 of the 362 active edges, so
+     folding it into `consensus` would have drawn three quarters of the atlas
+     as settled.
+
+949. **The three rules are written with no view in front of them**, which no
+     other rule in `src/style.css` that touches an edge is. Every neighbour is
+     `.graph .edge…` or `.map .edge…`. This is deliberate and is the
+     milestone's own sentence in CSS — one rule, both pictures — but it is a
+     break with how the file is otherwise written and is written down as one.
+
+973. **Lane A's deviation numbers ran into lane B's block at 950.** The
+     protocol has lane A numbering on from the last in `STATUS.md` and lane B
+     from 950 upward; lane A stood at 945 and lane B has reached 972, so four
+     numbers were left. The four above are 946 to 949 and the rest continue
+     **on from the largest in the file**, which is what the protocol says to
+     do when the lanes rejoin and is the only reading that cannot collide.
+
+974. **`about.html` and `CLAUDE.md` were edited, and the brief names neither.**
+     The brief asks for one line in the graph's legend. `about.html` carries
+     that key a second time, for the reason the key is built from the drawing
+     classes at all, and it said in two places that a disputed link is dashed;
+     leaving it would have been a page explaining a rule the atlas no longer
+     follows. `CLAUDE.md`'s layout tree gained the module's line, which
+     `tests/site.test.mjs` requires of every file under `src/`.
+
+975. **The graph screenshot is 1,400 px tall and the map one is boxed.** Both
+     are the same state — the war in Angola open, its five consequences drawn
+     — and at 1440 x 900 with the territories on, neither showed what it is
+     of: the fan of lines ran off the bottom of the graph pane, and on the map
+     five thin lines sat under eight hues of wash. The graph is given the
+     height the fan needs and the map is boxed to Africa and the Indian Ocean
+     with `layers=land,events`, through the very link the control writes.
+
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
