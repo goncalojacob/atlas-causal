@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ferreira-gomes-2014-1964",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "Jorge Ferreira",
+    "Angela de Castro Gomes"
+  ],
+  "title": "1964: O golpe que derrubou um presidente, pôs fim ao regime democrático e instituiu a ditadura no Brasil",
+  "year": 2014,
+  "publisher": "Civilização Brasileira",
+  "isbn": null,
+  "doi": null,
+  "url": "https://search.worldcat.org/search?q=1964+O+golpe+que+derrubou+um+presidente+Ferreira+Gomes",
+  "accessed": null,
+  "container": null,
+  "repository": null,
+  "reference": null
+}

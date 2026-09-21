@@ -80,6 +80,60 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "burgwyn-1997-italian-foreign-policy",
+      "isbn": "9780275948771",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Italian Foreign Policy in the Interwar Period 1918–1940",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "caulfield-1995-easter-rebellion",
+      "isbn": "157098042X",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Easter Rebellion, Dublin 1916",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-03",
       "degree": 5,
       "doi": null,
@@ -293,6 +347,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "craton-1982-testing-the-chains",
+      "isbn": "9780801412523",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Testing the Chains",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
@@ -388,6 +469,168 @@
       "status": "active",
       "title": "Appointment of the XXI and XXIV Constitutional Governments",
       "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "eakin-1998-brazil-once-and-future-country",
+      "isbn": "9780312214456",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Brazil: The Once and Future Country",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "fausto-1999-concise-history-of-brazil",
+      "isbn": "9780521565264",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "A Concise History of Brazil",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "ferreira-gomes-2014-1964",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1964: O golpe que derrubou um presidente, pôs fim ao regime democrático e instituiu a ditadura no Brasil",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": "10.1017/S0022216X00005095",
+      "id": "fifer-1970-empire-builders",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Empire Builders: A History of the Bolivian Rubber Boom and the Rise of the House of Suarez",
+      "type": "article"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "gaunt-2006-massacres-resistance-protectors",
+      "isbn": "9781593333010",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Massacres, Resistance, Protectors: Muslim-Christian Relations in Eastern Anatolia During World War I",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "hall-2000-balkan-wars",
+      "isbn": "0415229464",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Balkan Wars, 1912–1913: Prelude to the First World War",
+      "type": "book"
     },
     {
       "authors": [
@@ -564,6 +807,60 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "mommsen-1996-rise-and-fall-of-weimar-democracy",
+      "isbn": "0807847216",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Rise and Fall of Weimar Democracy",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "parker-1977-papel-dos-estados-unidos",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1964: O Papel dos Estados Unidos no Golpe de 31 de Março",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-03",
       "degree": 3,
       "doi": null,
@@ -708,6 +1005,60 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "seibert-2005-comrades-clients-and-cousins",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Comrades, Clients and Cousins: Colonialism, Socialism and Democratization in São Tomé and Príncipe",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "tauber-2014-arab-movements-world-war-i",
+      "isbn": "9781135199784",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Arab Movements in World War I",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-02",
       "degree": 189,
       "doi": null,
@@ -747,6 +1098,60 @@
       "status": "active",
       "title": "Match report, final of the 2016 European Championship",
       "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 2,
+      "doi": null,
+      "id": "upton-1980-vallankumous-suomessa",
+      "isbn": "9512620227",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Vallankumous Suomessa 1917–1918, I",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "watson-1970-brief-history-of-barbados",
+      "isbn": "9781870518543",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "A Brief History of Barbados",
+      "type": "chapter"
     },
     {
       "authors": [

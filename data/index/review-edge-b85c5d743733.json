@@ -502,7 +502,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "parker-1977-papel-dos-estados-unidos"
       ],
       "created": "2026-09-18",
       "degree": 1,
@@ -515,11 +516,12 @@
       },
       "review": {
         "flags": [
-          "m57-narrative"
+          "m57-narrative",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "operation-brother-sam-1964",
       "type": "reacted-to"
@@ -1952,7 +1954,8 @@
         }
       ],
       "cites": [
-        "macqueen-1997-decolonization"
+        "macqueen-1997-decolonization",
+        "seibert-2005-comrades-clients-and-cousins"
       ],
       "created": "2026-09-04",
       "from": "batepa-massacre",
@@ -1963,11 +1966,12 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "1975-sao-tomean-legislative-election",
       "type": "inspired"
@@ -3946,7 +3950,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "watson-1970-brief-history-of-barbados"
       ],
       "created": "2026-09-16",
       "from": "english-settlement-of-barbados-1627",
@@ -3958,11 +3963,12 @@
       },
       "review": {
         "flags": [
-          "m50-chain"
+          "m50-chain",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "the-caribbean-sugar-revolution",
       "type": "precondition-of"
@@ -6313,7 +6319,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "upton-1980-vallankumous-suomessa"
       ],
       "created": "2026-09-15",
       "from": "october-revolution",
@@ -6324,12 +6331,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "finnish-civil-war",
       "type": "precondition-of"
@@ -6997,7 +7005,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "ferreira-gomes-2014-1964"
       ],
       "created": "2026-09-18",
       "degree": 1,
@@ -7010,11 +7019,12 @@
       },
       "review": {
         "flags": [
-          "m57-narrative"
+          "m57-narrative",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "operation-brother-sam-1964",
       "type": "caused"
@@ -7500,7 +7510,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "hall-2000-balkan-wars"
       ],
       "created": "2026-09-15",
       "from": "second-balkan-war",
@@ -7511,12 +7522,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "assassination-of-archduke-franz-ferdinand",
       "type": "precondition-of"
@@ -8015,7 +8027,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "fifer-1970-empire-builders"
       ],
       "created": "2026-09-18",
       "degree": 1,
@@ -8028,11 +8041,12 @@
       },
       "review": {
         "flags": [
-          "m57-narrative"
+          "m57-narrative",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "the-end-of-the-amazon-rubber-monopoly",
       "type": "precondition-of"
@@ -8161,7 +8175,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "eakin-1998-brazil-once-and-future-country"
       ],
       "created": "2026-09-18",
       "degree": 1,
@@ -8174,11 +8189,12 @@
       },
       "review": {
         "flags": [
-          "m57-narrative"
+          "m57-narrative",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "the-brazilian-coffee-cycle",
       "type": "enabled"
@@ -8395,7 +8411,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "craton-1982-testing-the-chains"
       ],
       "created": "2026-09-16",
       "from": "the-baptist-war-1831",
@@ -8407,11 +8424,12 @@
       },
       "review": {
         "flags": [
-          "m50-chain"
+          "m50-chain",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "slavery-abolition-act-1833",
       "type": "caused"
@@ -8484,7 +8502,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "fausto-1999-concise-history-of-brazil"
       ],
       "created": "2026-09-18",
       "degree": 1,
@@ -8497,11 +8516,12 @@
       },
       "review": {
         "flags": [
-          "m57-narrative"
+          "m57-narrative",
+          "m72-second-source"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "the-1930-revolution-and-the-vargas-era",
       "type": "precondition-of"
@@ -9303,7 +9323,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "burgwyn-1997-italian-foreign-policy"
       ],
       "created": "2026-09-15",
       "from": "treaty-of-london",
@@ -9314,12 +9335,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "paris-peace-conference",
       "type": "precondition-of"
@@ -9749,7 +9771,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "tauber-2014-arab-movements-world-war-i"
       ],
       "created": "2026-09-15",
       "from": "world-war-i",
@@ -9760,12 +9783,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "arab-revolt",
       "type": "enabled"
@@ -9806,7 +9830,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "caulfield-1995-easter-rebellion"
       ],
       "created": "2026-09-15",
       "from": "world-war-i",
@@ -9817,12 +9842,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "easter-rising",
       "type": "enabled"
@@ -9865,7 +9891,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "upton-1980-vallankumous-suomessa"
       ],
       "created": "2026-09-15",
       "from": "world-war-i",
@@ -9876,12 +9903,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "finnish-civil-war",
       "type": "precondition-of"
@@ -9894,7 +9922,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "mommsen-1996-rise-and-fall-of-weimar-democracy"
       ],
       "created": "2026-09-15",
       "from": "world-war-i",
@@ -9905,12 +9934,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
-        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "note": "The explanation ends \"it is marked probable rather than consensus only because this atlas holds no work of German history to cite\". M72 cited Mommsen 1996 and the confidence followed the author's own stated condition, so that sentence is now stale: it is prose about the atlas and not about 1918, and striking it is a person's to do.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "german-revolution-of-1918-1919",
       "type": "caused"
@@ -9952,7 +9982,8 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
+        "wikipedia-en",
+        "gaunt-2006-massacres-resistance-protectors"
       ],
       "created": "2026-09-15",
       "from": "world-war-i",
@@ -9963,12 +9994,13 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "m72-second-source"
         ],
         "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-21",
       "status": "active",
       "to": "sayfo",
       "type": "enabled"

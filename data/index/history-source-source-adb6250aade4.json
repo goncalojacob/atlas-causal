@@ -50,6 +50,24 @@
         }
       ]
     },
+    "burgwyn-1997-italian-foreign-policy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "caulfield-1995-easter-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "cne-legislative-2015": {
       "from": "git",
       "versions": [
@@ -194,6 +212,15 @@
         }
       ]
     },
+    "craton-1982-testing-the-chains": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "cshapes-2-0": {
       "from": "git",
       "versions": [
@@ -260,6 +287,66 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "eakin-1998-brazil-once-and-future-country": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "fausto-1999-concise-history-of-brazil": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "ferreira-gomes-2014-1964": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "fifer-1970-empire-builders": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "container"
+          ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "gaunt-2006-massacres-resistance-protectors": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "hall-2000-balkan-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },
@@ -368,6 +455,24 @@
         }
       ]
     },
+    "mommsen-1996-rise-and-fall-of-weimar-democracy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "parker-1977-papel-dos-estados-unidos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "pgr-2023-operation-influencer": {
       "from": "git",
       "versions": [
@@ -464,6 +569,24 @@
         }
       ]
     },
+    "seibert-2005-comrades-clients-and-cousins": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "tauber-2014-arab-movements-world-war-i": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "telo-2007-historia-contemporanea": {
       "from": "git",
       "versions": [
@@ -493,6 +616,30 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "upton-1980-vallankumous-suomessa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "watson-1970-brief-history-of-barbados": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "container"
+          ],
+          "on": "2026-09-21"
         }
       ]
     },

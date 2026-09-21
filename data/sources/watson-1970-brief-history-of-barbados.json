@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "watson-1970-brief-history-of-barbados",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "chapter",
+  "creators": [
+    "Karl Watson"
+  ],
+  "title": "A Brief History of Barbados",
+  "year": 1970,
+  "publisher": "Hansib",
+  "isbn": "9781870518543",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "container": {
+    "title": "Barbados: Just Beyond Your Imagination",
+    "kind": "edited-volume",
+    "pages": "30-34"
+  },
+  "repository": null,
+  "reference": null
+}

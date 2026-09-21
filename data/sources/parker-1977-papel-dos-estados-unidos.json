@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "parker-1977-papel-dos-estados-unidos",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "Phyllis R. Parker"
+  ],
+  "title": "1964: O Papel dos Estados Unidos no Golpe de 31 de Março",
+  "year": 1977,
+  "publisher": "Civilização Brasileira",
+  "isbn": null,
+  "doi": null,
+  "url": "http://docvirt.com/docreader.net/bibliotbnm/2910",
+  "accessed": null,
+  "container": null,
+  "repository": null,
+  "reference": null
+}

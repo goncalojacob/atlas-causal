@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "tauber-2014-arab-movements-world-war-i",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "Eliezer Tauber"
+  ],
+  "title": "The Arab Movements in World War I",
+  "year": 2014,
+  "publisher": "Routledge",
+  "isbn": "9781135199784",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "container": null,
+  "repository": null,
+  "reference": null
+}

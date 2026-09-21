@@ -1,8 +1,8 @@
 {
-  "from": 1600,
+  "from": 1500,
   "kind": "edge",
   "records": {
-    "dutch-brazil-1630-1654--the-caribbean-sugar-revolution--caused": {
+    "governorate-general-of-brazil-1549--dutch-brazil-1630-1654--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -11,7 +11,7 @@
         }
       ]
     },
-    "english-settlement-of-barbados-1627--the-atlantic-slave-trade-to-the-caribbean--precondition-of": {
+    "hereditary-captaincies-of-brazil-1534--governorate-general-of-brazil-1549--caused": {
       "from": "git",
       "versions": [
         {
@@ -20,7 +20,7 @@
         }
       ]
     },
-    "english-settlement-of-barbados-1627--the-caribbean-sugar-revolution--precondition-of": {
+    "hereditary-captaincies-of-brazil-1534--the-atlantic-slave-trade-to-brazil--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -29,7 +29,7 @@
         }
       ]
     },
-    "saint-domingue-and-the-french-sugar-colony--haitian-revolution-1791-1804--caused": {
+    "indigenous-depopulation-of-coastal-brazil--the-atlantic-slave-trade-to-brazil--caused": {
       "from": "git",
       "versions": [
         {
@@ -38,7 +38,7 @@
         }
       ]
     },
-    "the-atlantic-slave-trade-to-the-caribbean--haitian-revolution-1791-1804--precondition-of": {
+    "portuguese-landfall-in-brazil-1500--indigenous-depopulation-of-coastal-brazil--caused": {
       "from": "git",
       "versions": [
         {
@@ -47,7 +47,7 @@
         }
       ]
     },
-    "the-atlantic-slave-trade-to-the-caribbean--royal-african-company--caused": {
+    "portuguese-landfall-in-brazil-1500--the-atlantic-slave-trade-to-brazil--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -56,7 +56,7 @@
         }
       ]
     },
-    "the-atlantic-slave-trade-to-the-caribbean--saint-domingue-and-the-french-sugar-colony--enabled": {
+    "the-atlantic-slave-trade-to-brazil--aberdeen-act-1845--caused": {
       "from": "git",
       "versions": [
         {
@@ -65,7 +65,7 @@
         }
       ]
     },
-    "the-atlantic-slave-trade-to-the-caribbean--the-baptist-war-1831--precondition-of": {
+    "the-atlantic-slave-trade-to-brazil--lei-aurea-1888--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -74,7 +74,7 @@
         }
       ]
     },
-    "the-atlantic-slave-trade-to-the-caribbean--the-british-industrial-revolution--enabled": {
+    "the-atlantic-slave-trade-to-brazil--proclamation-of-the-brazilian-republic-1889--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -83,7 +83,24 @@
         }
       ]
     },
-    "the-atlantic-slave-trade-to-the-caribbean--the-cuban-sugar-boom--enabled": {
+    "the-atlantic-slave-trade-to-brazil--the-brazilian-coffee-cycle--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        },
+        {
+          "fields": [
+            "confidence",
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "the-atlantic-slave-trade-to-brazil--the-brazilian-gold-cycle--enabled": {
       "from": "git",
       "versions": [
         {
@@ -92,7 +109,7 @@
         }
       ]
     },
-    "the-brazilian-gold-cycle--the-british-industrial-revolution--enabled": {
+    "the-brazilian-sugar-cycle--dutch-brazil-1630-1654--caused": {
       "from": "git",
       "versions": [
         {
@@ -101,34 +118,7 @@
         }
       ]
     },
-    "the-brazilian-gold-cycle--transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--caused": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        }
-      ]
-    },
-    "the-brazilian-gold-cycle--transfer-of-the-portuguese-court-to-brazil-1807--precondition-of": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        }
-      ]
-    },
-    "the-caribbean-sugar-revolution--royal-african-company--caused": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        }
-      ]
-    },
-    "the-caribbean-sugar-revolution--the-atlantic-slave-trade-to-the-caribbean--caused": {
+    "the-brazilian-sugar-cycle--the-atlantic-slave-trade-to-brazil--caused": {
       "from": "git",
       "versions": [
         {
@@ -139,5 +129,5 @@
     }
   },
   "schema": 1,
-  "to": 1699
+  "to": 1599
 }

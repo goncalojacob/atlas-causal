@@ -13480,6 +13480,176 @@ untouched.**
      narrative's walk, the re-run is green, and it is the load flake
      `docs/m63-load.md` describes and not a fault of this change.
 
+## M72 — every link carries the sources a reader can check
+
+The owner, 21 September: *"First I think each link should have sources
+associated with it, then I think the confidence visibility thing makes
+sense."* Lane B's second milestone, on the branch `m72`
+(`docs/run-protocol.md`, amendment of 21 September). M73 is the second half
+and waits on this.
+
+The request was not sources where there are none. **All 362 active edges
+already named one**, and the measurement committed before a record was
+touched — `docs/m72-sources.md`, from `tools/m72-sources.mjs`, so the table
+after is the same question asked twice — said where the thinness actually
+was: 81 edges on a single source, 149 more naming two or three that are all
+by one author because the two Wikipedia editions are one encyclopedia and
+rule 9 counts them so, and 299 of 660 citations with no locator at all.
+
+### The counts
+
+| | before | after |
+| --- | --- | --- |
+| edges resting on one source | **81** | **65** |
+| citations with a locator | **361** | **377** |
+| `consensus` / `probable` / `disputed` | **61 / 282 / 19** | **68 / 275 / 19** |
+| edges satisfying rule 9 | 132 | 148 |
+| source records | 35 | 50 |
+
+**Sixteen edges were given a second source, sixteen locators were written,
+seven edges were promoted and none was demoted.** No edge was added, removed,
+redirected or retyped; no citation was taken off anything; no explanation was
+rewritten.
+
+### Nothing was promoted on this run's opinion of the claim
+
+The brief allows promotion "only where rule 9 is now satisfied" and "never by
+this run's own judgement of the claim", and those are two different tests. The
+one applied: rule 9 is satisfied by the work this run added, **and** the work
+is scholarship rather than an encyclopedia (so rule 22 holds for a reason and
+not by accident), **and the cited article hangs the very sentence stating this
+edge's link on that work**. The third clause is what keeps the run's opinion
+out of it: what promotes an edge is a second author stating the link, reached
+through the article's own footnote, and not this run finding the link
+plausible. Seven passed it; the table in `docs/m72-sources.md` names the
+sentence each one rests on.
+
+Nine edges took a source and **kept the confidence a person had given them**,
+because the work answers the surrounding facts rather than the link — Hall
+2000 on what Serbia was after the second Balkan war, not on whether Vienna
+would have been refused once more, which is the doubt that edge's own
+explanation states. One of the nine is `disputed` and stays `disputed`: a
+second source does not settle a disagreement the record exists to hold open.
+
+### The route, and where it runs out
+
+Every one of the fifteen new source records is **a work the cited Wikipedia
+article itself cites** — the owner's decision of 16 September — read off that
+revision's own citation template: title, creators, publisher, year, ISBN or
+DOI, and the page range the article gives the work for the sentence in
+question. Nothing was supplied from memory. Every ISBN's check digit was
+verified before the record was written, and two works whose templates carry no
+identifier at all got a catalogue search URL, which is what this repository
+already writes in that case, rather than an invented one.
+
+**The route runs out, and most of the corpus is past the end of it.** Of the
+65 edges still on one source, **53 already rest on a work of scholarship** —
+MacQueen on decolonisation (14), Telo on contemporary Portugal (13), Costa
+Pinto and Pequito Teixeira (7), Reis (4) — and Wikipedia cites nothing for
+those claims to add beside them. The English articles on Wiriyamu and Mueda
+are three-kilobyte stubs; "Transfer of sovereignty over Macau" and "Portugal
+and NATO" likewise. Where the Portuguese colonial war *is* covered at length,
+the work cited is MacQueen's own 1999 Portuguese edition — same author, so
+rule 9 refuses it, and different pagination, so it cannot even be borrowed as
+a locator. **The other twelve rest on `wikipedia-en` alone and are listed one
+by one in `docs/m72-sources.md` with the reason each gave nothing**, which for
+six of them is that the article is sourced to news reports. A news report is a
+fact somebody checked, not an argument somebody made.
+
+### The 299 locators that are still 299
+
+Not one moved. The split measured at the start was total — every Wikipedia
+citation carries article and revision, every book and primary document carries
+`null` — and the brief's allowance, a locator "where the cited article makes
+it findable", reaches almost nothing: **only 26 active edges carry both a
+located `wikipedia-en` citation and a bare one**, across 24 articles that are
+about the Spanish Civil War and the Maastricht Treaty and have no reason to
+cite Telo or Rosas. The remaining 273 sit on edges naming no article this run
+could open. **These locators are in the books, not on any network**, and
+`review.html` is where somebody with Maxwell 1995 on a shelf writes
+"pp. 112–118". What the run could do instead was hold itself to the rule that
+every citation it *wrote* carries one, and all sixteen do.
+
+### Tests
+
+`tests/m72.test.mjs`, written before the records it judges (deviations 711 and
+717): ten of them, **no count pinned and no edge named**. What this run
+touched is found by the flag it wrote — `m72-second-source` — so the suite
+still judges the sixty-sixth edge nobody has sourced yet. It asserts the
+property that already held and must still (every active edge names a source,
+every citation resolves), that a citation this run wrote carries a locator and
+that an edge it gave a second source to has one by an author the first does
+not share, that every `consensus` edge satisfies rule 9 and none rests on the
+encyclopedia alone, and that an edge this run marked `disputed` carries the
+dissent it found.
+
+### Deviations
+
+963. **The sandbox reaches Wikipedia and nothing else.** `encyclopedia.1914-1918-online.net`,
+     the work the German revolution article cites for the Kiel mutiny, was
+     refused by the egress proxy with a 403 on CONNECT; so were the catalogue
+     and journal URLs the templates carry. **Every fact in the fifteen new
+     source records is therefore the Wikipedia citation template's own**, and
+     a work whose locator would have needed the work itself opened was not
+     cited. This is also why no existing book citation gained a page.
+
+964. **`Special:Export` and `index.php?oldid=…&action=raw`, because `api.php`
+     answers 429.** The MediaWiki API refused every request from this sandbox
+     with "You are making too many requests", user-agent or not — a shared
+     egress address, not this run's rate. The two page-serving paths answered
+     normally at one request every 1.2 seconds. `tools/import/wikidata.mjs`
+     runs in the Action and was not affected; nothing in the repository was
+     changed for this.
+
+965. **Each edge's article was fetched at the revision the edge cites**, not at
+     the current one, so that the footnote read is the footnote the locator
+     already points at. A run that read today's article and wrote a page number
+     against a two-week-old revision would be citing something nobody can check.
+
+966. **Seven promotions, and the reason is in the record and not in this run.**
+     The third clause of the promotion test above is the whole of it. Three
+     edges that satisfy rule 9 after this run were *not* promoted, because what
+     the article hangs on the work is the surrounding fact and not the link.
+
+967. **`world-war-i --caused--> german-revolution-of-1918-1919` was promoted on
+     its own explanation's stated condition.** That explanation ends "it is
+     marked probable rather than consensus only because this atlas holds no
+     work of German history to cite" — the author naming what would change it.
+     Mommsen 1996 is now cited, so the sentence is stale. **This run did not
+     rewrite it**: a `review.note` says it is stale and why, and striking prose
+     a person wrote is a person's to do. It is the one edge here whose
+     explanation and confidence now disagree, and the disagreement is recorded
+     rather than tidied away.
+
+968. **Two source records carry a catalogue search URL and no identifier.**
+     Ferreira and Gomes 2014 and Seibert 2005 are cited by their articles
+     through templates with no ISBN, and rule 13 wants one resolvable
+     identifier. The search URL is what `maxwell-1995-making-of-portuguese-democracy`
+     already does, and it invents nothing; an ISBN from memory would have.
+
+969. **`tools/m72-sources.mjs` is a measurement tool and stays.** Both tables
+     in `docs/m72-sources.md` are its output, which is why the after table is
+     the same question as the before one rather than a retyping of it. It is
+     not wired into `validate` or the index, takes `--json`, and nothing
+     depends on it.
+
+970. **The two Amazon rubber templates disagree about Fifer's pages** — the
+     bibliography entry says 140 and the inline reference that carries the
+     price-collapse sentence says 142–143. The locator is the inline one,
+     because that is the citation for the claim, and `container.pages` was left
+     `null` rather than asserting a range that two templates cannot agree on.
+
+971. **The Amazon rubber article marks its own monopoly sentence
+     `citation needed`.** "The Amazon's rubber was undercut in the world market
+     and demand for it fell" carries the tag, so what that edge can now cite is
+     the price falling (Fifer, on the railway's unprofitability) and not the
+     loss of position, and it stays `probable`.
+
+972. **No historical claim was written.** Nothing in `data/` gained a sentence.
+     The run added citations, locators and confidence values, and the only
+     prose it wrote is a `review.note` about a record's own staleness and the
+     two documents under `docs/`.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -13738,3 +13908,5 @@ M69 started 2026-09-20T23:36:16Z by scheduled
 M69 done
 M68 started 2026-09-20T23:36:22Z by scheduled
 M68 done
+M72 started 2026-09-21T00:15:10Z by scheduled
+M72 done

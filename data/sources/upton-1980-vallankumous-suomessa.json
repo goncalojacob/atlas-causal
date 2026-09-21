@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "upton-1980-vallankumous-suomessa",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "Anthony F. Upton"
+  ],
+  "title": "Vallankumous Suomessa 1917–1918, I",
+  "year": 1980,
+  "publisher": "Gummerus",
+  "isbn": "9512620227",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "container": null,
+  "repository": null,
+  "reference": null
+}

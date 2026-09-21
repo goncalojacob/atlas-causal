@@ -13,27 +13,32 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-09-21",
   "origin": {
     "tool": "assistant"
   },
   "review": {
     "status": "draft",
     "flags": [
-      "edge-drafted"
+      "edge-drafted",
+      "m72-second-source"
     ],
-    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+    "note": "The explanation ends \"it is marked probable rather than consensus only because this atlas holds no work of German history to cite\". M72 cited Mommsen 1996 and the confidence followed the author's own stated condition, so that sentence is now stale: it is prose about the atlas and not about 1918, and striking it is a person's to do."
   },
   "sources": [
     {
       "source": "wikipedia-en",
       "locator": "\"German revolution of 1918–1919\", revision 1373097617"
+    },
+    {
+      "source": "mommsen-1996-rise-and-fall-of-weimar-democracy",
+      "locator": "p. 11"
     }
   ],
   "from": "world-war-i",
   "to": "german-revolution-of-1918-1919",
   "type": "caused",
-  "confidence": "probable",
+  "confidence": "consensus",
   "explanation": "The revolution began in the navy and it began over the war. The High Seas Fleet was ordered out on 24 October 1918 for a battle that could not change the outcome and that the crews understood as being asked to die for the honour of their officers; the mutiny at Wilhelmshaven and Kiel spread through the garrison towns in a week, and the Empire fell on 9 November. Four years of blockade, of casualty lists and of a war the high command had just admitted was lost are the whole of the cause. It is marked probable rather than consensus only because this atlas holds no work of German history to cite.",
   "dispute": null
 }

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "hall-2000-balkan-wars",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "Richard C. Hall"
+  ],
+  "title": "The Balkan Wars, 1912–1913: Prelude to the First World War",
+  "year": 2000,
+  "publisher": "Routledge",
+  "isbn": "0415229464",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "container": null,
+  "repository": null,
+  "reference": null
+}
