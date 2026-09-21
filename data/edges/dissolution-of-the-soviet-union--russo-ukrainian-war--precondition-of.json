@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "dissolution-of-the-soviet-union--russo-ukrainian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Ukrainian war\", revision 1375351069, § Background"
+    }
+  ],
+  "from": "dissolution-of-the-soviet-union",
+  "to": "russo-ukrainian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the war begins its background with the dissolution: after the dissolution of the Soviet Union in 1991, Ukraine and Russia maintained ties, and in 1994 Ukraine signed the Non-Proliferation Treaty and agreed to give up the former Soviet nuclear weapons on its territory, Russia, the United Kingdom and the United States agreeing in return to uphold Ukraine’s territorial integrity and independence through the Budapest Memorandum. The state whose dissolution left both countries is where the article starts, and it is not where it says the war was decided.",
+  "dispute": null
+}

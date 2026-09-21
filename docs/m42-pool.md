@@ -94,6 +94,7 @@ A5: a batch that grows the corpus and not the component has to say why.
 | 0 | the fifteen M44b retracted that the new bar puts back, and 18 edges | 325 | 237 | 88 | 380 | **268** | 22 |
 | 1 | seven earlier tombstones — M40b's and M22's — that the new bar reaches, and 7 edges | 332 | 244 | 88 | 387 | **274** | 21 |
 | 3 | the connection pass: 19 edges, both ends on records already here, no import | 332 | 244 | 88 | 406 | **301** | 11 |
+| 4 | the twelve hinges walked, thirteen records, 8 edges | 345 | 256 | 89 | 414 | **315** | 17 |
 
 ## 4. The fifty M44b retracted, which are batch 0
 
@@ -250,7 +251,7 @@ item walked again is named in every report.
 
 ## 7. Where the run stands, for the fire that picks it up
 
-Four batches are on `m42` and each was validated, indexed and pushed before
+Five batches are on `m42` and each was validated, indexed and pushed before
 the next, so a killed run loses a batch and not the milestone.
 
 | | what landed |
@@ -259,34 +260,37 @@ the next, so a killed run loses a batch and not the milestone.
 | batch 1 | seven earlier tombstones — M40b's and M22's — 7 edges |
 | batch 2a | the twelve hinges seeded, ten classes, twelve lanes, one rewind |
 | batch 3 | the connection pass: 19 edges, no import, largest component 274 → 301 |
+| batch 4 | the hinges walked here: 13 records, 8 edges, component 301 → 315 |
 
-**The two Action runs queued on `import-wikidata.yml` have still not
-committed anything.** `import/candidates-2026-09-21` was pushed at 00:52Z and
-run 29 was still `in_progress` at 04:30Z; `import/run-m42-2026-09-21`, the
-walk over the twelve hinges of §6, is run 30 and still `pending` behind it,
-because the workflow's `concurrency: import-wikidata` takes them one at a
-time and never cancels. The walk runs up to forty batches and validates,
-indexes and runs both test passes between each, so hours are expected; the
-timeout is 330 minutes and run 29 reaches it at 06:22Z.
-
-Neither is on the critical path for a batch that writes edges: batch 3 is
-proof that the corpus in hand still had a quarter of its component left to
-win. It **is** on the critical path for the fragments §4b of
-`docs/m42-connections.md` names — the post-Soviet eight and the subcontinent
-five between them are thirteen of the sixteen events that cannot reach a
-Portuguese one — and those wait on the dissolution of the Soviet Union and
-the partition of India, both seeded in batch 2a.
+**The Action cannot land an import**, and two runs proved it — §2d of
+`docs/m42-connections.md` has the reading and deviation 987 the short form.
+The job runs the suite before it commits, and an import that adds a record
+makes two prose measurements stale in the same breath, so every batch fails,
+`data/` is restored and nothing is committed. Batch 4 was therefore walked in
+this sandbox through `tools/import/wikidata.mjs`, which answers here now.
+**The seeds are exhausted again**: 715 items, 715 walked, nothing pending.
 
 **A batch lands in two commits, not one** (deviation 798, re-learned as 982):
 the records, then the rebuilt index. The history shards are built out of the
 commits that touch each record's file, so the commit that writes a record
 makes the shard describing it stale in that same commit.
 
-**What the next fire does.** Check run 30 first: if it has committed, fast-
-forward `import/run-m42-2026-09-21` into `m42` — that merge is the run's own
-commit, by the amendment of 4 September — and do the connection pass for what
-arrived, rereading `docs/m42-connections.md` §5a and §5b, which name the
-tombstones each hinge unblocks. If it has not, batch 4 is the rest of §4b: the
-presidential-election singletons, which are a chain the corpus holds only the
-ends of, and then the fragments whose anchor is a record rather than an
-import. Either way: §3's row here, then the next batch.
+**What the next fire does.** Batch 5 is the reinstatements the hinges have
+just unblocked, and §5a and §5b already name them against the record each was
+waiting for: `1991-soviet-coup-d-etat-attempt`,
+`1993-russian-constitutional-crisis`, `budapest-memorandum` and
+`romanian-revolution-1989` on the dissolution and the revolutions of 1989;
+`yugoslav-wars`, `croatian-war-of-independence`, `dayton-agreement` and
+`kosovo-war` on the breakup and the Bosnian war; `good-friday-agreement` on
+the Anglo-Irish treaty and the Troubles; `2013-egyptian-coup-d-etat` on the
+Egyptian revolution of 2011; `gaza-war-2008-2009` on the second intifada;
+`first-italo-ethiopian-war` and `majimaji-war` on the Berlin conference and
+the second Italo-Ethiopian war; `war-in-darfur` and `south-sudanese-civil-war`
+on the South Sudanese referendum. Fifteen records the corpus already holds in
+full, each with an edge its own retraction reason names. Five of batch 4's
+thirteen carry no edge yet and every one of them is waiting on that list, so
+batch 5 is what earns them their place as well.
+
+After it: the fragments §4b names that no import reaches — the Madeiran three,
+the fires pair, the presidential-election singletons — and then the sweep,
+whose 1,586 unwalked rows are untouched.

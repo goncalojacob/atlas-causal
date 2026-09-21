@@ -98,7 +98,7 @@ test('an event card renders head, summary and the collapsed sections with their 
     // here: what this asserts is that the header prints what the topology and
     // the sources index hold, and a literal is not that. M42 wrote one more
     // edge into the Carnation revolution and a passing "7" went red without
-    // anything about the card changing (deviation 976's shape again, 956).
+    // anything about the card changing (deviation 976's shape again, 984).
     const atlas = await atlasOf(path.join(ROOT, 'data'));
     const id = 'carnation-revolution-1974';
     const out = atlas.adjacency.out.get(id).length;

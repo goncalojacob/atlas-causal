@@ -405,6 +405,146 @@ find again.
   chain of presidential elections the corpus holds only the ends of, and are
   the cheapest thing left for the next batch.
 
+## 2d. Batch 4 — the thirteen hinges, walked here and not on the runner
+
+**The Action cannot land an import, and two runs proved it.** Batch 2a seeded
+twelve items and pushed `import/run-m42-2026-09-21`; run 30 of
+`import-wikidata.yml` fetched them, created thirteen records — the twelve plus
+the rewound `Q94916` — and then **threw the whole batch away**, because the
+job runs the suite before it commits and two correspondence tests went red on
+the records it had just written: `docs/m53-polities.md` §4.1 counts the active
+events, and `docs/m67-umbrellas.md` is asked to say why each main event that
+names nothing was left bare. A job cannot write a prose measurement, so every
+import batch fails those two tests, restores `data/` and commits nothing. Run
+29, the fresh `--candidates` sweep, died on a third of the same kind:
+`CLAUDE.md`'s layout tree did not yet name `tools/m42-pool.mjs`, which the
+commit *after* the one it ran on added. Deviation 987.
+
+So the walk was run in this sandbox, **through the tool the brief names**,
+`node tools/import/wikidata.mjs --import`: 13 items, 28 calls, 13 created, 0
+enriched, 0 refused, and the twenty-six Wikipedia leads it cached are what the
+edges below are argued from. Wikidata answers here now; deviation 731's
+refusal at this sandbox's egress no longer holds (deviation 988).
+
+**The thirteen, every one of them `origin.tool: wikidata`, `review.status:
+draft`, `review.flags: ["imported-facts"]`, and every one naming no actor and
+no place** — which M67's amendment A1 settles and `docs/m53-polities.md` §4.1
+counts: `dissolution-of-the-soviet-union`, `revolutions-of-1989`,
+`breakup-of-yugoslavia`, `war-in-bosnia-and-herzegovina`, `the-troubles`,
+`anglo-irish-treaty`, `partition-of-india`, `second-intifada`,
+`2011-egyptian-revolution`, `angolan-civil-war`,
+`2011-south-sudanese-independence-referendum`, `berlin-conference`,
+`second-italo-ethiopian-war`. None was given a line to make it filable, which
+is the thing M67 forbids.
+
+### The edges
+
+#### `revolutions-of-1989 --caused--> dissolution-of-the-soviet-union`
+
+The English article on the revolutions, at revision 1375849372: they were a
+wave of liberal democratic movements that collapsed most Marxist–Leninist
+governments in the Eastern Bloc, and were *a key factor* in the dissolution of
+the Soviet Union. The article's own weighting, and the reason for `probable`.
+
+#### `revolutions-of-1989 --precondition-of--> maastricht-treaty`
+
+The English article on the treaty, at revision 1360900516: it was negotiated
+against the background of the end of the Cold War and the re-unification of
+Germany. The article on the revolutions says it is they that marked the end of
+the Cold War. **This is the edge that joins the whole post-Soviet cluster to
+the corpus** — neither article says the revolutions produced the treaty, which
+is why it is a precondition.
+
+#### `dissolution-of-the-soviet-union --precondition-of--> russo-ukrainian-war`
+
+The English article on the war, at revision 1375351069, § Background, begins
+there: after the dissolution of the Soviet Union in 1991 Ukraine and Russia
+maintained ties, and in 1994 Ukraine gave up the former Soviet nuclear weapons
+on its territory in return for the Budapest Memorandum, by which Russia, the
+United Kingdom and the United States agreed to uphold its territorial
+integrity and independence. It carries in the fragment of eight the atlas had
+drawn apart from everything else — `russo-ukrainian-war`,
+`full-scale-russo-ukrainian-war`, `bucha-massacre`, `euromaidan`,
+`orange-revolution`, `rose-revolution`, `russo-georgian-war` and
+`wagner-group-rebellion` — which `docs/m42-pool.md` named as the largest thing
+waiting on this import.
+
+#### `world-war-ii --precondition-of--> breakup-of-yugoslavia`
+
+The English article on the breakup, at revision 1373988162, § Background, lists
+among the elements that fostered the discord the formation of the Kingdom of
+Yugoslavia, its first breakup, and the inter-ethnic and political wars and
+genocide during the Second World War, beside the ideas of a Greater Albania, a
+Greater Croatia and a Greater Serbia and the unilateral recognition of the
+breakaway republics by a newly reunited Germany. One element among several,
+named by the article.
+
+#### `angola-independence-1975 --precondition-of--> angolan-civil-war`
+
+The English article on the civil war, at revision 1371337338: the war began
+immediately after Angola became independent from Portugal in November 1975, as
+a power struggle between the MPLA and UNITA, two former anti-colonial guerrilla
+movements with different roots in Angolan society and mutually incompatible
+leaderships.
+
+#### `anglo-irish-treaty --caused--> irish-civil-war`
+
+The English article on the civil war, at revision 1374338052: it was waged
+between the Provisional Government of Ireland and the anti-Treaty IRA **over
+the Anglo-Irish Treaty**, the anti-Treaty side seeing it as a betrayal of the
+Irish Republic proclaimed during the Easter Rising of 1916.
+
+#### `anglo-irish-treaty --precondition-of--> the-troubles`
+
+The treaty's article, at revision 1363486671, says it gave Northern Ireland an
+option to opt out of the Irish Free State, which the Parliament of Northern
+Ireland exercised; the article on the Troubles, at revision 1375596184, says
+the conflict was fought over the status of Northern Ireland. The status the
+later conflict was fought over is the one the treaty left open, and neither
+article calls the treaty its cause.
+
+#### `partition-of-india --caused--> kashmir-conflict`
+
+The English article on the Kashmir conflict, at revision 1374133428: it started
+after the partition of India in 1947, as both India and Pakistan claimed the
+entirety of the former princely state of Jammu and Kashmir, and escalated into
+three wars. It carries the subcontinent fragment of five with it.
+
+### What batch 4 refused to write, and why
+
+- **`breakup-of-yugoslavia --caused--> war-in-bosnia-and-herzegovina`**, which
+  the breakup's own lead argues — "unresolved issues from the breakup caused a
+  series of inter-ethnic Yugoslav wars from 1991 to 2001 which primarily
+  affected Bosnia and Herzegovina" — **fails rule 4**: Wikidata gives the
+  breakup the point date 27 April 1992, the proclamation of the Federal
+  Republic, and the Bosnian war began on 6 April. The same date refuses the
+  filing M62's rule reaches for, because M67 holds that no child is dated
+  outside its parent. **Neither is corrected here**: widening an imported
+  record's `when` to the span its article describes is a person's reading and
+  not a tool's, and no date is invented in this atlas. `war-in-bosnia-and-
+  herzegovina` therefore carries no edge and is the one record of the thirteen
+  that earns nothing, listed here rather than quietly kept (deviation 989).
+- **`second-italo-ethiopian-war`, `berlin-conference`, `second-intifada`,
+  `2011-egyptian-revolution` and `2011-south-sudanese-independence-referendum`
+  carry no edge yet.** Each waits on a reinstatement §5a already names against
+  it: `first-italo-ethiopian-war` and `majimaji-war` for the two African
+  records, `gaza-war-2008-2009` for the intifada, `2013-egyptian-coup-d-etat`
+  for the revolution, `war-in-darfur` and `south-sudanese-civil-war` for the
+  referendum. Those tombstones are the next batch, and they are now unblocked:
+  the record each was waiting for is in `data/` as of this one.
+
+### Why the main count went up, which amendment A3 asks
+
+244 main before the import, **256 after**. Thirteen records arrived and twelve
+of them are main, because a war, a treaty, a partition, a conference and a
+referendum are not part of anything this atlas holds — M62's rule reads
+`actors` and `place` and these have neither, and inventing a parent is as
+forbidden as inventing a line. The one filing the rule does reach, the Bosnian
+war inside the breakup, is refused by the imported date above. The resting
+picture is twelve events wider than it was, and every one of the twelve is a
+hinge that a later batch files or that a reader meets at the top level, where
+a world war and a partition belong.
+
 ## 3. The main count, and why it moved up
 
 Amendment A3: an import that leaves the main count higher than it found it has

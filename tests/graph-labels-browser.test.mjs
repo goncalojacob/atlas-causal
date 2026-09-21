@@ -133,7 +133,7 @@ test('a node with room round it is named in full, with nothing left off', { skip
     // it the whole of a 59-character name. A reader who wants to read a node
     // opens it.
     //
-    // **Several candidates, since M42** (deviation 955). This used to take the
+    // **Several candidates, since M42** (deviation 985). This used to take the
     // single longest name and assume the zoom could give *that* node room. The
     // assumption is not a property of the placer, it is a property of where the
     // corpus happens to put one node: M42 wrote nineteen edges, the longest

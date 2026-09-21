@@ -371,7 +371,7 @@ test('reading a narrative draws the walk, its neighbours dimmed, and nothing els
       // What it is held to is the same rule as the other two — nothing outside
       // the lens, and the steps it does draw drawn in full.
       //
-      // **M42 took the rest of them** (deviation 954). This walk's dimmed ring
+      // **M42 took the rest of them** (deviation 986). This walk's dimmed ring
       // holds the events its steps are *part of*, and the Estado Novo, whose
       // span opens in 1933, entered that ring the moment M42 wrote the edge
       // that joins the regime to the colonial war. The arrangement is of the

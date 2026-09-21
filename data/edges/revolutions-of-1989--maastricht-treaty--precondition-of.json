@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "revolutions-of-1989--maastricht-treaty--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Maastricht Treaty\", revision 1360900516, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolutions of 1989\", revision 1375849372, § lead"
+    }
+  ],
+  "from": "revolutions-of-1989",
+  "to": "maastricht-treaty",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the treaty says it was negotiated against the background of the end of the Cold War and the re-unification of Germany, and in anticipation of accelerated globalisation, between member states seeking deeper integration and those wishing to retain greater national control. The article on the revolutions of 1989 says it is they that marked the end of the Cold War and the beginning of the post–Cold War era. Neither article says the revolutions produced the treaty, which is why this is a precondition and not a cause.",
+  "dispute": null
+}
