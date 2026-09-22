@@ -146,7 +146,7 @@ export function createMapBand(container, { atlas, state } = {}) {
     const into = Object.fromEntries(
       Object.entries(layers).map(([name, g]) => [name, reuse(g)]),
     );
-    const window = resolveWindow(s, atlas.extent, atlas.opens);
+    const window = resolveWindow(s, atlas.extent);
     // Where the events are, over **what the reader has chosen**: since M76
     // `profileEvents` is the lens's own half and not the ring around it, so a
     // band saying "Portugal" is Portugal's events and nothing else, and with

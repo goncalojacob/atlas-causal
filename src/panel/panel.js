@@ -614,7 +614,7 @@ export function createPanel(container, {
   let drawnFor = null;
 
   function keyOf(s) {
-    const window = resolveWindow(s, atlas.extent, atlas.opens);
+    const window = resolveWindow(s, atlas.extent);
     return {
       card: OPENINGS.map((field) => s[field] ?? '').join('|'),
       chain: s.chain.join(','),

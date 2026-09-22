@@ -195,7 +195,7 @@ export function createWindowControl(group, { atlas, state }) {
     // window* — which is what the map's corner said before it moved here — and
     // `bandEvents` is the picture and not the window. A state with no window at
     // all is a state this control has nothing to say about.
-    const timeWindow = resolveWindow(s, atlas.extent, atlas.opens);
+    const timeWindow = resolveWindow(s, atlas.extent);
     if (!timeWindow) return;
     // **The sentence is said with no box too** (M83, B3). It was shown only
     // once the reader had moved the map, so at first paint nobody was told that

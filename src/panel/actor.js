@@ -141,7 +141,7 @@ export function groundEventsSection(ctx, actor, state) {
   // No state is a card drawn outside the atlas — a test, a prerender — and
   // then there is no band to fade against: `overlaps` with no window keeps
   // everything, which is the honest drawing of "no window".
-  const window = state ? resolveWindow(state, ctx.atlas.extent, ctx.atlas.opens) : null;
+  const window = state ? resolveWindow(state, ctx.atlas.extent) : null;
   const inside = events.filter((e) => overlaps(e.when, window)).length;
   const rows = events.map((event) => `<li class="actor-row ${overlaps(event.when, window) ? '' : 'faded'}">
     <span class="when">${esc(formatYear(ctx.startYear(event)))}</span>

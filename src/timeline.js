@@ -579,7 +579,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // Each layer hands its children out from the start again; whatever this
     // render does not ask for is dropped by `done()` at the end.
     const into = Object.fromEntries(Object.entries(layers).map(([name, g]) => [name, reuse(g)]));
-    const window = resolveWindow(s, atlas.extent, atlas.opens);
+    const window = resolveWindow(s, atlas.extent);
     // What is drawn as a bar at all: the band and one period either side of
     // it. Past that an event is a stub — it is still there, it is simply not
     // what the reader is looking at, and packing, stacking and labelling a

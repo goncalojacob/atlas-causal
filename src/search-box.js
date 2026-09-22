@@ -163,7 +163,7 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
       const event = atlas.events.get(item.id);
       const year = event ? bounds(event) : null;
       const now = state.get();
-      const moved = year === null || containsYear(now, year, atlas.opens) ? {} : windowAt(now, year);
+      const moved = year === null || containsYear(now, year) ? {} : windowAt(now, year);
       state.set({ ...moved, selected: item.id, chain: [] });
     }
     input.value = '';

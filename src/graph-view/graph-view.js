@@ -33,7 +33,7 @@ import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
 import { horizonBand } from '../horizon.js';
 import { workingSet, heldSet } from '../emphasis.js';
 import { isParent, ringClasses } from '../parts.js';
-import { zoomBucket } from '../cluster.js';
+import { zoomBucket, stackTitle, stackBadge } from '../cluster.js';
 import { onScreen } from '../map/layers/events.js';
 import { arrangementOf, holdingKey } from './arrangement.js';
 import {
@@ -1082,11 +1082,10 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       const radius = radiusOf.get(stack.key);
       if (stack.count > 1) {
         const nearest = Math.min(...stack.members.map((m) => reachable.get(m.id) ?? Infinity));
-        const hidden = stack.count - 1;
         const span = stack.years.min === stack.years.max
           ? formatYear(stack.years.min)
           : `${formatYear(stack.years.min)}–${formatYear(stack.years.max)}`;
-        const stackTitle = `${labelOf(atlas, node.event) ?? LOADING_LABEL} — and ${hidden} more event${hidden === 1 ? '' : 's'} here, ${span}`;
+        const title = stackTitle(labelOf(atlas, node.event) ?? LOADING_LABEL, stack.count, { span });
         nodesGroup.appendChild(svg('circle', {
           cx: stack.x,
           cy: stack.y,
@@ -1097,9 +1096,10 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
           'data-stack': stack.key,
           tabindex: '0',
           role: 'button',
-          'aria-label': stackTitle,
-        }, [svgTitle(stackTitle)]));
-        nodesGroup.appendChild(textNode(`+${hidden}`, {
+          'aria-label': title,
+        }, [svgTitle(title)]));
+        // "46 more" and not "+46", in the title's own words (M85, A4).
+        nodesGroup.appendChild(textNode(stackBadge(stack.count), {
           x: stack.x + (radius + 2) / k,
           y: stack.y - (radius + 1) / k,
           class: 'cluster-count',
