@@ -1379,6 +1379,17 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
    opposite of .map-note above — ink on paper with a plain line round it,
    because nothing here is a warning, and at the other corner so the two are
    never read as one block. */
+/* The bottom-left corner of the map is one column (M85): the key at the foot of
+   it, where it has always been, and the corner's own lines above it. Both were
+   anchored to the same point and the key sat over the first words of the
+   borders line. */
+.map-corner-stack {
+  position: absolute; left: var(--space-3); bottom: var(--space-3);
+  display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2);
+  max-width: 24rem;
+}
+.map-corner-stack .map-corner,
+.map-corner-stack .graph-key { position: static; left: auto; bottom: auto; }
 .map-corner {
   position: absolute; left: var(--space-3); bottom: var(--space-3); max-width: 24rem;
   margin: 0; padding: var(--space-2) var(--space-3);

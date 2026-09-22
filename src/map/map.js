@@ -523,12 +523,22 @@ export function createMap(container, { atlas, state, onCluster = null }) {
 
   container.append(root);
   container.append(territoriesNote);
-  container.append(corner);
-  // The key to the marks (M82, A7). Built here and never drawn again: what a
-  // row stands for is a class and not a state, so it is the same box on every
+  // The bottom-left corner of the map, as one column (M85, §4). The corner and
+  // the key are both anchored there and both were absolutely positioned, which
+  // was invisible while the corner was usually empty and is not now that it
+  // carries the borders line: the key's button sat over the first words of it.
+  // One stack, the key at the bottom where it has always been and the corner
+  // above it.
+  //
+  // The key to the marks is M82's (A7). Built here and never drawn again: what
+  // a row stands for is a class and not a state, so it is the same box on every
   // frame. Outside the SVG, as the graph's is, so panning and zooming leave it
   // where it is.
-  container.append(mapKey());
+  const bottomLeft = document.createElement('div');
+  bottomLeft.className = 'map-corner-stack';
+  bottomLeft.append(corner);
+  bottomLeft.append(mapKey());
+  container.append(bottomLeft);
   container.append(exportButton(root, 'map'));
 
   // --- when the map is drawn again ----------------------------------------
