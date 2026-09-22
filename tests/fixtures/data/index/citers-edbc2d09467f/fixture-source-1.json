@@ -224,6 +224,12 @@
     },
     {
       "dissent": false,
+      "id": "fixture-event-u",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
       "id": "fixture-narrative-one",
       "kind": "narrative",
       "locator": "pp. 1-10"
