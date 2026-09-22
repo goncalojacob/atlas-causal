@@ -21,7 +21,7 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "m42-umbrella"
     ]
   },
   "wikidata": "Q118152947",
@@ -41,9 +41,9 @@
     "start": 2018,
     "end": null
   },
-  "place": "colombia-q739",
-  "region": null,
-  "regionNote": null,
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by M42b batch 3: a period has no point, so the timeline is given the lane of the conflict this phase is part of and the record carries no place.",
   "category": "war",
   "actors": [],
   "parent": "colombian-conflict"

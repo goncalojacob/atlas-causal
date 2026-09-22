@@ -18712,6 +18712,73 @@ which is the one test a records batch always moves. Deviation **1202**.
       two branches to write that down — and nothing was invented to connect
       them.
 
+**M42b batch 3 — the Colombian conflict's vein, 22 September.** The third
+fire on `m42b`. It began by merging `origin/m0` and `origin/m42`, which is how
+the branch reads what the other lane holds and how M42's A12 passes reach it;
+the corpus it then found was **622 active and 242 main**, not the 614 and 247
+batch 2 left. Taken from the **`americas` lane**, from the largest vein batch 2
+left open: the inverse `part of` sweep on `Q169072` returns **43 items**, two of
+them already here. **Twenty-one events arrived**, 1980 to 2025, every one filed
+and every one placed. `docs/m42b-pool.md` → "Batch 3".
+
+**Two of the twenty-one are umbrellas of their own** — `Q76763052`, the
+1974–1990 phase, and `Q118152947`, the 2018–present one — both periods
+Wikipedia names, both carrying `m42-umbrella`, a lane and **no place**, because
+a period has no point. Both are filed under `colombian-conflict`, which is a
+war and not a period, so A6's "do not nest periods more than one deep" is not
+touched. **The first reading of A8 here was wrong and the suite caught it**:
+the eight events inside a phase were written with both the phase and the
+conflict as parents, and `tests/m42-filing.test.mjs` refuses a parent already
+reachable through another. Deviation **1203**.
+
+**Fourteen place records**, each from the first located thing its event's item
+names that carries a `P625` — `P276` for all but three — with `precision` read
+off the item's own class: eight `city`, six `region`, and `colombia-q739`,
+already here at `country`, for the two the item locates no closer. **Sixteen of
+the twenty-one carry the cached English lead at a named revision** in place of
+the import's placeholder (A12 C1); the other five have no English article and
+keep it. **Two edges**, both into records the atlas already held.
+
+**Nineteen items and one edge were refused.** Sixteen are real actions of this
+war that Wikidata gives no `P580` and no `P585` — the taking of Miraflores, Las
+Delicias, Casa Verde, Operation Anorí and eleven more — and this run does not
+supply a date the source does not carry; `Q155801` FARC and `Q8034813` the
+Workers Revolutionary Party are actors and this is an events batch;
+`Q105799250` and `Q79227232` are topics and not things that happened; and an
+edge from the 2019 Bogotá bombing to the 2017 Centro Andino bombing, which the
+2019 lead names only as a comparison.
+
+**Eleven classes were added** to the seeds file, each read off Wikidata: siege
+and war phase as `war`, suicide car bombing and peace process with no category;
+and seven place classes — municipality and department of Colombia, city of
+Colombia, subregion, sea, river and locality.
+
+**Corpus after the fire: 643 active, 242 main — unchanged — 401 filed, 649
+edges, largest connected component 508, 111 components, 91 events with no edge
+at all.** The `americas` lane goes from 104 active to **125**, level with Asia
+and ahead of Africa. `node tools/validate.mjs --index`: **0 errors, 313
+warnings**. **1,737 pure and 246 browser, 1,983 in all, 0 failed and 0
+skipped**, the browser suites one at a time as the check runs them;
+`docs/m53-polities.md` §4.1's "after M42" row was retaken to **351 of 643**,
+which is the one test a records batch always moves, and
+`tests/m42-filing.test.mjs` now reads `docs/m42b-pool.md` beside
+`docs/m42-pool.md` so that the clause about a filing nobody argued in writing
+can see this branch's arguments at all.
+
+1203. **"Every umbrella that fits" is not every container in the chain.** A8
+      reads *"a filing writes every umbrella whose span and subject fit, not
+      the first"*, and the first pass here took it literally: an event of 1985
+      was written as part of both the 1974–1990 phase and the conflict the
+      phase is inside. `tests/m42-filing.test.mjs` fails that — *"no parent of
+      an event is reachable through another of its parents"* — and the suite is
+      right. A8's list is for umbrellas that reach a record by different
+      routes, which is the owner's own example: Angolan independence under the
+      Portuguese Third Republic **and** under the decolonisation of Africa,
+      neither inside the other. For a chain of containers the narrowest one
+      holds and everything above it is already said by the tree. Eight records
+      were narrowed, one of them `assassination-of-miguel-uribe-turbay`, which
+      was here before this batch and moves from the conflict to the phase.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

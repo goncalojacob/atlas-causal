@@ -449,49 +449,290 @@ The brief's ordering still does not bind — the south holds nine times what the
 north does — and North America is still the thinner half of the lane by a long
 way.
 
+## Batch 3 — the Colombian conflict's vein, filed and placed
+
+*22 September, the third fire. Taken from the **`americas` lane** again, and
+from the same partition's largest open vein: batch 2 measured
+`colombian-conflict` at 41 rows against the Falklands' 39, and left it for a
+fire that had the time. The cell is the 20th and 21st centuries of that lane,
+where the lane held 64 and 9 active events against Europe's 238 and 52.*
+
+**Why this vein and why now.** Batch 2's note ranked it first for the fire that
+picked it up, on two grounds, and both held. It is free of the year problem:
+`colombian-conflict` runs 1964 to an open end, and every dated row of the
+sweep falls inside that, so nothing had to be widened under A7 and the main
+count could not move. And its rows are spread over forty-five years rather
+than eleven weeks, so the lane's timeline gains depth and not only bulk — the
+twenty-one records that arrived run from 1980 to 2025.
+
+The inverse `part of` sweep on `Q169072` returned **43 distinct items**, two of
+which the atlas already held (`colombian-peace-process`,
+`assassination-of-miguel-uribe-turbay`). `git fetch origin m42` was answered by
+the merge at the head of this fire: `origin/m42` is an ancestor of `m42b` as of
+`cb0e3e49`, so the whole of M42's corpus was on disk when the sweep was
+compared against it and no item of the other lane's could be taken twice.
+
+### What arrived
+
+Twenty-one events. **Two of them are umbrellas of their own** — the phases the
+Spanish and English Wikipedias name — and the other nineteen are filed under
+whichever of the three fits closest.
+
+| the record | filed under | placed at | precision |
+| --- | --- | --- | --- |
+| `colombian-conflict-between-1974-1990` | `colombian-conflict` | — (a period has no point) | — |
+| `colombian-conflict-2018-present` | `colombian-conflict` | — (a period has no point) | — |
+| `1980-dominican-embassy-siege-in-bogota` | `colombian-conflict-between-1974-1990` | `bogota` | city |
+| `palace-of-justice-siege` | `colombian-conflict-between-1974-1990` | `bogota` | city |
+| `honduras-and-la-negra-farms-massacre` | `colombian-conflict-between-1974-1990` | `uraba-choco` | region |
+| `mondonedo-massacre` | `colombian-conflict` | `cundinamarca-department` | region |
+| `siege-of-mitu` | `colombian-conflict` | `mitu` | city |
+| `1999-2002-farc-government-peace-process` | `colombian-conflict` | `san-vicente-del-caguan` | city |
+| `las-palmas-massacre` | `colombian-conflict` | `san-jacinto` | city |
+| `boyaca-necklace-bomb-incident` | `colombian-conflict` | `chiquinquira` | city |
+| `attack-on-cerro-montezuma` | `colombian-conflict` | `pueblo-rico` | city |
+| `false-positives-in-colombia` | `colombian-conflict` | `colombia-q739` | country |
+| `bombing-in-zona-rosa-of-bogota-of-2003` | `colombian-conflict` | `chapinero` | city |
+| `house-bomb-attack-in-neiva` | `colombian-conflict` | `neiva` | city |
+| `operation-jm` | `colombian-conflict` | `colombia-q739` | country |
+| `operation-jaque` | `colombian-conflict` | `guaviare-department` | region |
+| `andino-shopping-mall-attack` | `colombian-conflict` | `bogota` | city |
+| `atentado-a-la-estacion-de-policia-de-barranquilla` | `colombian-conflict-2018-present` | `bolivar-department` | region |
+| `catatumbo-campaign` | `colombian-conflict-2018-present` | `catatumbo-river` | region |
+| `2019-bogota-car-bombing` | `colombian-conflict-2018-present` | `bogota` | city |
+| `united-states-military-campaign-against-cartels` | `colombian-conflict-2018-present` | `caribbean-sea` | region |
+
+One record the atlas already held was re-filed: `assassination-of-miguel-uribe-turbay`,
+of June 2025, moves from `colombian-conflict` to `colombian-conflict-2018-present`,
+which is inside it.
+
+### The two umbrellas, and what A8 actually asked for
+
+`colombian-conflict-between-1974-1990` (`Q76763052`, a *historical period*) and
+`colombian-conflict-2018-present` (`Q118152947`, a *war phase*) are periods and
+carry `m42-umbrella`, a lane and no place: A6's rule is that a period Wikipedia
+names, with a span and a region, is a legitimate umbrella, and the same
+paragraph is why neither is given a point on the map. Both are filed under
+`colombian-conflict`, which is a war and not a period, so A6's "do not nest
+periods more than one deep" is not touched.
+
+**The first reading of A8 here was wrong and the suite caught it.** A8 says a
+filing writes *every* umbrella whose span and subject fit, so the eight events
+inside a phase were first written with both the phase and the conflict as
+parents. `tests/m42-filing.test.mjs` refuses that — *"no parent of an event is
+reachable through another of its parents"* — and it is right: the phase is
+already inside the conflict, so naming the conflict as well widens the record
+and tells a reader nothing the tree did not. Every event here carries **the
+narrowest umbrella that holds it** and nothing above it. A8's list is for
+umbrellas that reach a record by different routes, which is the owner's own
+example — Angolan independence under the Portuguese Third Republic *and* under
+the decolonisation of Africa, neither inside the other — and not for a chain of
+containers.
+
+### Places (A9)
+
+**Fourteen place records, each from the first located thing its event's item
+names that carries a `P625`**, with `precision` read off that item's own class
+rather than the hard-coded `point` the import still writes:
+
+| precision | places | read off the class |
+| --- | --- | --- |
+| `city` | `bogota`, `neiva`, `mitu`, `chiquinquira`, `pueblo-rico`, `san-jacinto`, `san-vicente-del-caguan`, `chapinero` | big city, city of Colombia, municipality of Colombia, locality — settlements |
+| `region` | `cundinamarca-department`, `bolivar-department`, `guaviare-department`, `uraba-choco`, `catatumbo-river`, `caribbean-sea` | department of Colombia, subregion, river, sea — larger than a settlement and not a state |
+| `country` | `colombia-q739` (already here, from M42's own place pass) | — |
+
+`P276` answered for every one of them but three, where the item names only its
+country: `operation-jm` and `colombian-conflict-2018-present` carry `P17`
+Colombia alone, and `false-positives-in-colombia` names both Colombia and
+Soacha under `P276`. The scandal is kept at the country: the article calls it
+"a series of murders in Colombia" rather than an event at Soacha, and the
+import's own choice was the country.
+
+**Nothing was invented.** Four events of the vein carry their own `P625` and a
+`P276` that is a whole department — `mondonedo-massacre` is the clearest — and
+the department is what they were given, because A9 places an event at a thing
+the atlas can name and not at a bare coordinate. The two periods are placeless
+on purpose.
+
+### Summaries (A12 C1)
+
+**Sixteen of the twenty-one carry the cached English lead at a named revision**
+in place of the import's placeholder, in the shape 277 records already have:
+the first three sentences quoted, the revision in the locator, a `wikipedia-en`
+citation added and the `summary-from-lead` flag. Five keep the placeholder
+because the English Wikipedia has no article to quote: `mondonedo-massacre`,
+`las-palmas-massacre`, `attack-on-cerro-montezuma` and both periods. Each of
+the five has an article in Spanish, which this atlas does not cache and this
+run did not translate.
+
+### The edges (A5, M72)
+
+Two, each from what a lead states in so many words, each `probable` — rule 22
+refuses `consensus` on a Wikipedia citation — and **both running into records
+the atlas already held**, which is what A5 asks of a batch.
+
+| the edge | into what existed | what the source says |
+| --- | --- | --- |
+| `colombian-conflict --reacted-to--> 1999-2002-farc-government-peace-process` | yes | the process *"was a failed peace process … in an effort to bring to an end the ongoing Colombian armed conflict"* |
+| `colombian-peace-process --enabled--> catatumbo-campaign` | yes | the campaign *"is an extension of the war on drugs and developed after the Colombian peace process of 2016"* |
+
+The first is the same reading, and the same direction, as the edge this atlas
+already carries between the conflict and the 2012–2016 negotiations, and the
+two peace processes are seventeen years apart. The second is written at the
+weakest type the vocabulary has because that is as far as the article goes: it
+names the accord as what the campaign developed after and argues no mechanism,
+and `enabled` says the earlier record made room for the later rather than
+brought it about.
+
+### What was refused, and why
+
+- **Sixteen items of the vein with no date at all.** `Q335761` the taking of
+  Miraflores, `Q402072` Las Delicias, `Q798637` Operation Casa Verde,
+  `Q1032474` Girasoles, `Q1032901` the retaking of the demilitarized zone,
+  `Q2268234` Operation Odiseo, `Q2269075` Quebrada El Billar, `Q2269121`
+  Operation Dinastía, `Q2270085` Operation Némesis, `Q2270108` Operation
+  Berlín, `Q3354631` Operation Anorí, `Q10341149` Operation Traira,
+  `Q11202460` San Marino, `Q20537497` Tarazá, `Q115087946` and
+  `Q8034813` the Workers Revolutionary Party. Every one of them is a real
+  action of this war and Wikidata gives none of them a `P580` or a `P585`;
+  the import refuses an item with no year and this run does not supply one,
+  which is batch 2's ruling on nine Falklands items taken again.
+- **`Q14186580` the 2013 Colombian clashes**, refused by the import itself:
+  its item names no location the atlas could reach a lane through.
+- **`Q155801` FARC**, the largest row of the sweep, as batch 2 already refused
+  it: an actor is what it would be here and this is an events batch. Its two
+  Wikidata classes — *terrorist organization* and *guerrilla organization* —
+  are not in the class table, and adding either is a vocabulary decision on a
+  record nobody has read, not a mechanical one.
+- **`Q105799250` "Guerrilla Executions in Colombia"**, whose only class is
+  *violence*. It is a topic article and not a thing that happened on a day.
+- **`Q79227232` women's rights in the Colombian peace agreements**, refused by
+  the class table: *human rights by country or territory* is a subject, not an
+  event.
+- **An edge from `2019-bogota-car-bombing` to `andino-shopping-mall-attack`.**
+  The 2019 lead names the 2017 bombing — *"the first terrorist attack on the
+  capital since the 2017 Centro Andino bombing"* — but that is a comparison and
+  not a claim that one brought on the other. The same refusal batch 2 made over
+  Pebble Island.
+
+### The class table
+
+Eleven classes were added to `data/imports/wikidata-seeds.json` → `classes`,
+each read off Wikidata rather than guessed. Four are event classes: `Q188055`
+siege and `Q105370834` war phase, both `war`; `Q20893947` suicide car bombing
+and `Q1456892` peace process, neither with a category, because `bomb attack`
+and `terrorist attack` carry none either and what a peace process is is not one
+of the twelve. Seven are place classes, carrying no category at all:
+`Q2555896` municipality of Colombia, `Q215655` department of Colombia,
+`Q63209072` city of Colombia, `Q15701038` subregion of Antioquia Department,
+`Q165` sea, `Q4022` river and `Q3257686` locality.
+
+### The suites
+
+`tests/m42-filing.test.mjs` now reads `docs/m42b-pool.md` beside
+`docs/m42-pool.md`: the clause that a filing nobody argued in writing fails is
+what makes this section load-bearing, and until this fire the suite could not
+see the branch's own arguments at all. `docs/m53-polities.md` §4.1's "after
+M42" row is retaken at 351 of 643, as that document says it is at every batch
+of the milestone — the numerator does not move, because everything an import
+writes carries `actors: []` and M67's amendment A1 says that is not a defect.
+
+### The counts
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 622 active | **643 active** |
+| **main** | 242 | **242 — unchanged** |
+| filed | 380 | 401 |
+| active edges | 647 | 649 |
+| **largest connected component** | **506** | **508** |
+| components | 92 | 111 |
+| events with no edge at all | 72 | 91 |
+| placeless active events | 28 | 30 |
+| imported | — | 21 events, 14 places, 0 actors |
+| refused | — | 19 items and 1 edge |
+
+| century | europe | africa | asia | americas | oceania | no lane | all |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 15th c. | 3 / 2 | — | — | 4 / 4 | — | — | 7 / 6 |
+| 16th c. | 6 / 1 | — | — | 3 / 3 | — | — | 9 / 4 |
+| 17th c. | 1 / 1 | — | — | 6 / 6 | — | — | 7 / 7 |
+| 18th c. | 1 / 1 | — | — | 3 / 3 | — | — | 4 / 4 |
+| 19th c. | 12 / 9 | 10 / 1 | 7 / 7 | 15 / 11 | — | — | 44 / 28 |
+| 20th c. | 238 / 63 | 51 / 22 | 96 / 45 | **74 / 31** | — | — | 459 / 161 |
+| 21st c. | 52 / 7 | 17 / 7 | 22 / 15 | **20 / 1** | — | — | 111 / 30 |
+| undated | 1 / 1 | 1 / 1 | — | — | — | — | 2 / 2 |
+| **all** | **314 / 85** | **79 / 31** | **125 / 67** | **125 / 59** | **—** | **—** | **643 / 242** |
+
+*The corpus this batch found was not the one batch 2 left: the fire began by
+merging `origin/m0` and `origin/m42`, which brought M42's own batches, its A12
+passes and its place pass across. That is why the before column reads 622 and
+242 where batch 2's after column read 614 and 247 — five events M42 filed are
+main no longer, and the merge is where the difference came from, not this
+batch.*
+
+**The main count did not rise.** Twenty-one events arrived and the resting
+timeline gained no bar: nineteen are inside `colombian-conflict`, which was
+already main and already drawn, and the two that are not are the periods, which
+are inside it too.
+
+**The component grew by two and nineteen records joined it with no edge.** The
+same finding batch 2 wrote down: the actions of one war are chronological to
+each other and their leads argue no causation between them. Both edges reach
+records that were already here, which is what moved the number; the other
+nineteen events are held in the picture by their parent, and nothing was
+invented to connect them.
+
+**The `americas` lane passed Asia's active count and is now level with it** —
+125 against 125, where batch 2 left it at 104 against 117. Its main count did
+not move at all, which is what an umbrella already in the corpus is worth.
+**South and Central America against North America**, retaken: 104 active events
+with a place south of 25.9°N, 17 north of it, 4 still placeless in the lane.
+The brief's ordering still does not bind.
+
 ## Where the run stands, for the fire that picks it up
 
-*22 September, after batch 2.*
+*22 September, after batch 3.*
 
 | | |
 | --- | --- |
-| corpus | **614 active** |
-| **main** | **247** — the count the next batch must not raise |
-| **largest connected component** | **505** |
-| components | 86 |
-| events with no edge at all | 69 |
-| the inverse `part of` vein, this partition | **161 rows open**, 22 taken |
+| corpus | **643 active** |
+| **main** | **242** — the count the next batch must not raise |
+| **largest connected component** | **508** |
+| components | 111 |
+| events with no edge at all | 91 |
+| the inverse `part of` vein, this partition | **118 rows open**, 43 taken |
 | Europe before 1900 | 23 active, 14 main |
-| the `americas` lane | **104 active, 59 main** — 83 before batch 2 |
+| the `americas` lane | **125 active, 59 main** — 104 before batch 3 |
 
 **What the next fire should weigh, in order:**
 
-- **The Colombian vein is the largest one left and it is free of the year
-  problem.** `colombian-conflict` runs 1964 to an open end, and its 41 rows —
-  the Palace of Justice siege, the false positives scandal, Operation Jaque,
-  the Dominican embassy siege, the 2019 Bogotá car bombing — sit inside it.
-  Like the Falklands vein it costs nothing in main count, and unlike it the
-  records are spread over fifty years rather than eleven weeks, so the lane's
-  timeline gains depth and not only bulk.
-- **The Cuban Revolution's sixteen rows need A7 first.** This atlas dates
-  `cuban-revolution` at 1959 alone; its own article dates it 26 July 1953 to
-  1 January 1959, and its battles — Moncada, Alegría de Pío, Santa Clara,
-  Yaguajay, Verano — are all inside that. A7 lets a run widen an imported
+- **The Cuban Revolution's sixteen rows are now the largest vein left, and A7
+  is what unlocks them.** This atlas dates `cuban-revolution` at 1959 alone;
+  its own article dates it 26 July 1953 to 1 January 1959, and its battles —
+  Moncada, Alegría de Pío, Santa Clara, Yaguajay, Verano — are all inside that
+  wider span and outside the narrow one. A7 lets a run widen an imported
   interval from the record's own cited article at a named revision. Do that
-  first, in its own commit, and the vein files itself.
-- **`great-depression` and `la-violencia` are A12's, not this branch's.**
-  Both are named in M42's C3 span list, so leave their spans alone here; a
-  batch that takes their children before M42 has widened them will file
-  children outside their parent.
-- **The four American centuries before 1800 still have no umbrella**, and
-  batch 1's finding stands: `Q2088324` Colonial Brazil carries no `P580` or
-  `P582`, so the tool refuses it and this run does not supply a date. A fire
-  wanting those cells needs a period item that carries its own span.
+  first, in its own commit, with the note A7 asks for; then the vein files
+  itself and the main count cannot move.
+- **`great-depression` and `la-violencia` are still A12's, not this branch's.**
+  Both are named in M42's C3 span list. A batch that takes their children
+  before M42 has widened them files children outside their parent.
+- **The sixteen undated Colombian actions are the largest thing this fire left
+  on the table**, and they are not refused for want of a source but for want of
+  a date in Wikidata. A fire that wanted them would have to read each one's
+  Spanish article for its day, which is reading a source and not inventing a
+  date — but it is a per-record judgement and not a mechanical import, and no
+  amendment has asked for it yet.
+- **North America is still the thin half of the `americas` lane**: 17 active
+  events against the south's 104. The brief's ordering — the south first until
+  it holds as much as the north — has been satisfied for three batches running,
+  so **a fire may now take a North American vein**, and the 19th and 20th
+  centuries there are where the lane would gain most.
+- **The four American centuries before 1800 still have no umbrella**, and batch
+  1's finding stands: `Q2088324` Colonial Brazil carries no `P580` or `P582`,
+  so the tool refuses it. A fire wanting those cells needs a period item that
+  carries its own span.
 - **Europe's 17th and 18th centuries are still one active event each** — the
   thinnest cells in the atlas — and filling either means writing an umbrella
   first, at batch 1's price.
-- **`M80 done` is now on `origin/m0`**, so the `country` precision exists and
-  A9's last clause is lifted: an event whose only located thing is its country
-  may now be placed. Nothing in batch 2 needed it, but **the 430 placeless
-  active events are where it pays**, and the place pass across the whole atlas
-  is still open on both branches.

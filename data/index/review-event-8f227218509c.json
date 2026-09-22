@@ -1506,10 +1506,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "colombian-conflict",
-        "colombian-conflict-between-1974-1990"
-      ],
+      "parent": "colombian-conflict-between-1974-1990",
       "review": {
         "flags": [
           "imported-facts",
@@ -2937,10 +2934,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "colombian-conflict",
-        "colombian-conflict-2018-present"
-      ],
+      "parent": "colombian-conflict-2018-present",
       "review": {
         "flags": [
           "imported-facts",
@@ -4390,10 +4384,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "colombian-conflict",
-        "colombian-conflict-2018-present"
-      ],
+      "parent": "colombian-conflict-2018-present",
       "review": {
         "flags": [
           "imported-facts",
@@ -4427,10 +4418,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "colombian-conflict",
-        "colombian-conflict-2018-present"
-      ],
+      "parent": "colombian-conflict-2018-present",
       "review": {
         "flags": [
           "imported-facts",
@@ -6668,10 +6656,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "colombian-conflict",
-        "colombian-conflict-2018-present"
-      ],
+      "parent": "colombian-conflict-2018-present",
       "review": {
         "flags": [
           "imported-facts",
@@ -6879,7 +6864,7 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "m42-umbrella"
         ],
         "status": "draft"
       },
@@ -6907,7 +6892,7 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "m42-umbrella"
         ],
         "status": "draft"
       },
@@ -10830,10 +10815,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "colombian-conflict",
-        "colombian-conflict-between-1974-1990"
-      ],
+      "parent": "colombian-conflict-between-1974-1990",
       "review": {
         "flags": [
           "imported-facts",
@@ -14735,10 +14717,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "colombian-conflict",
-        "colombian-conflict-between-1974-1990"
-      ],
+      "parent": "colombian-conflict-between-1974-1990",
       "review": {
         "flags": [
           "imported-facts",
@@ -20628,10 +20607,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "colombian-conflict",
-        "colombian-conflict-2018-present"
-      ],
+      "parent": "colombian-conflict-2018-present",
       "review": {
         "flags": [
           "imported-facts",

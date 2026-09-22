@@ -59,8 +59,5 @@
   "region": null,
   "regionNote": null,
   "actors": [],
-  "parent": [
-    "colombian-conflict",
-    "colombian-conflict-2018-present"
-  ]
+  "parent": "colombian-conflict-2018-present"
 }
