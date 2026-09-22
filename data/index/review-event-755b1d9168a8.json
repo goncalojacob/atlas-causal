@@ -15540,6 +15540,7 @@
       ],
       "category": "war",
       "cites": [
+        "wikipedia-en",
         "wikidata"
       ],
       "created": "2026-09-21",
@@ -15553,9 +15554,10 @@
         "flags": [
           "imported-facts"
         ],
+        "note": "A7: the interval was 1998–1998 for a thirty-year conflict — the imported item's, which dates only the end — and is now the one the cited article states at revision 1376046499: \"about 30 years from the late 1960s to 1998\". \"The late 1960s\" is not a year, so the start is written as the range it names, 1967–1969, rather than as a year nobody wrote down; the end is 1998, which the article gives, with no day, because it gives none for the period itself. Nothing else on this record was touched.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-22",
       "status": "active",
       "title": "The Troubles"
     },

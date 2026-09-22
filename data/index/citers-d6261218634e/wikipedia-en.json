@@ -5150,6 +5150,12 @@
     },
     {
       "dissent": false,
+      "id": "the-troubles",
+      "kind": "event",
+      "locator": "\"The Troubles\", revision 1376046499: \"about 30 years from the late 1960s to 1998 ... usually deemed to have ended with the Good Friday Agreement of 1998\""
+    },
+    {
+      "dissent": false,
       "id": "third-portuguese-republic-since-1974",
       "kind": "event",
       "locator": "\"Third Portuguese Republic\", revision 1374733623"
