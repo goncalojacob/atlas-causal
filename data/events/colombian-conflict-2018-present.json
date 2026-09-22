@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "colombian-conflict-2018-present",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m42-umbrella"
+    ]
+  },
+  "wikidata": "Q118152947",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q118152947"
+    }
+  ],
+  "title": "Colombian conflict (2018–present)",
+  "summary": "Wikidata item Q118152947, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2018,
+    "end": null
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by M42b batch 3: a period has no point, so the timeline is given the lane of the conflict this phase is part of and the record carries no place.",
+  "category": "war",
+  "actors": [],
+  "parent": "colombian-conflict"
+}

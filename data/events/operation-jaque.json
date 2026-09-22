@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "operation-jaque",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2308768",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Operation Jaque"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2308768"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Jaque\", revision 1370633477"
+    }
+  ],
+  "title": "Operation Jaque",
+  "summary": "The English Wikipedia article \"Operation Jaque\", at revision 1370633477, opens: \"Operation Jaque was a Colombian military operation that resulted in the successful rescue of 15 hostages, including former Colombian presidential candidate Íngrid Betancourt. The hostages had been held by the Revolutionary Armed Forces of Colombia (FARC). The operation took place on 2 July 2008, along the Apaporis River in the department of Guaviare.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2308768, imported by tools/import/wikidata.mjs. The item's own description reads \"2008 military operation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2008,
+    "end": 2008,
+    "date": "2008-07-02"
+  },
+  "place": "guaviare-department",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "colombian-conflict"
+}

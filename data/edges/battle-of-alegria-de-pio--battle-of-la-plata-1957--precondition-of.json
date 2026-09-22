@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-alegria-de-pio--battle-of-la-plata-1957--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of La Plata (1957)\", revision 1370446805, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Alegría de Pío\", revision 1370431604, § lead"
+    }
+  ],
+  "from": "battle-of-alegria-de-pio",
+  "to": "battle-of-la-plata-1957",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "La Plata’s lead names the earlier battle as the state it reversed: it is “the first battle of the revolution following the Landing of the Granma which was a success for the rebels, who had previously suffered a heavy defeat at the Battle of Alegría de Pío in which the vast majority of their forces had been killed, wounded or captured”. Alegría de Pío’s own lead says the same from the other side: after it the rebels “would be severely crippled” and it “would take many months for them to fully recover”. What the two leads state is a sequence and a contrast, not a mechanism, so `precondition-of` is as far as this goes: the handful who survived the first defeat and withdrew into the Sierra Maestra are the force that won the second, and neither article argues that the defeat brought the victory about. `probable`, on two Wikipedia leads.",
+  "dispute": null
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sierra-maestra",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q654527",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Sierra Maestra",
+    "pt": "Serra Maestra"
+  },
+  "sources": [],
+  "names": [
+    "Sierra Maestra",
+    "Serra Maestra"
+  ],
+  "where": {
+    "lon": -76.42556,
+    "lat": 20.06972,
+    "precision": "region",
+    "label": "Sierra Maestra"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q654527, imported by tools/import/wikidata.mjs. The item's own description reads \"mountain range\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

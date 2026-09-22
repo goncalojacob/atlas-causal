@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "colombian-conflict-between-1974-1990",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m42-umbrella"
+    ]
+  },
+  "wikidata": "Q76763052",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q76763052"
+    }
+  ],
+  "title": "Colombian Conflict between 1974-1990",
+  "summary": "Wikidata item Q76763052, imported by tools/import/wikidata.mjs. The item's own description reads \"Second period of Colombian conflict between 1974-1990\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1974,
+    "end": 1990
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by M42b batch 3: a period has no point, so the timeline is given the lane of the conflict this phase is part of and the record carries no place.",
+  "actors": [],
+  "parent": "colombian-conflict"
+}

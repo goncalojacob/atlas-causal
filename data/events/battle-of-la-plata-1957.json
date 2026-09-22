@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "battle-of-la-plata-1957",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q118445706",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Battle of La Plata (1957)",
+    "pt": "Batalha de La Plata (1957)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q118445706"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of La Plata (1957)\", revision 1370446805"
+    }
+  ],
+  "title": "Battle of La Plata (1957)",
+  "summary": "The English Wikipedia article \"Battle of La Plata (1957)\", at revision 1370446805, opens: \"The Battle of La Plata was a battle fought on January 17, 1957, in the coastal village of La Plata in the Sierra Maestra mountain range of Cuba during the Cuban Revolution. It is notable as the first battle of the revolution following the Landing of the Granma which was a success for the rebels, who had previously suffered a heavy defeat at the Battle of Alegría de Pío in which the vast majority of their forces had been killed, wounded or captured.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q118445706, imported by tools/import/wikidata.mjs. The item's own description reads \"1957 guerrilla attack against an outpost of the Cuban Army\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1957,
+    "end": 1957,
+    "date": "1957-01-17"
+  },
+  "place": "bartolome-maso-cuba",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "cuban-revolution"
+}

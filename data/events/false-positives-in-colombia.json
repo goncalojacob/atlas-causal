@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "false-positives-in-colombia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q779179",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "\"False positives\" scandal",
+    "pt": "Escândalo dos falsos positivos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q779179"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"\"False positives\" scandal\", revision 1375273347"
+    }
+  ],
+  "title": "false positives in Colombia",
+  "summary": "The English Wikipedia article \"\"False positives\" scandal\", at revision 1375273347, opens: \"The \"false positives\" scandal was a series of murders in Colombia, part of the armed conflict in that country between the government and guerrilla forces of the FARC and the ELN. Members of the military and their civilian collaborators lured poor or mentally impaired civilians to remote parts of the country with offers of work, killed them, and presented them to authorities as guerrilleros killed in battle, in an effort to inflate body counts and receive promotions or other benefits. While Colombian investigative agencies have found cases as early as 1988, the peak of the phenomenon took place between 2006 and 2009, during the presidency of Álvaro Uribe Vélez.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q779179, imported by tools/import/wikidata.mjs. The item's own description reads \"series of murders in Colombia by Colombian military and law enforcement between 2002-2008\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2002,
+    "end": 2002
+  },
+  "place": "colombia-q739",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "colombian-conflict"
+}

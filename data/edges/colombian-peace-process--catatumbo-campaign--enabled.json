@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "colombian-peace-process--catatumbo-campaign--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Catatumbo campaign\", revision 1370610401, § lead"
+    }
+  ],
+  "from": "colombian-peace-process",
+  "to": "catatumbo-campaign",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The campaign’s own lead places it after the accord in one clause: it \"is an extension of the war on drugs and developed after the Colombian peace process of 2016.\" That is as far as the article goes — it names the accord as what the campaign developed after and argues no mechanism for it, so the weakest of the five types is the honest one here and the confidence is `probable`. `enabled` says the earlier record made room for the later, not that it brought it about; what the source states is the sequence and the reader can see where the argument stops. Rule 22 would refuse `consensus` on a Wikipedia citation in any case.",
+  "dispute": null
+}

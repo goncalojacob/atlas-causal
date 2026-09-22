@@ -872,3 +872,20 @@ held `first-indochina-war` and `sino-vietnamese-war`. It is not a bare record
 and it is noted here because it is where this batch's fall in the main count
 came from: the eight arrived filed and cost nothing, and the war they hang from
 stopped being main.
+
+## M42b batch 4 — the Cuban Revolution's vein
+
+*22 September, on the branch `m42b`. The batch itself — what was swept, what
+was imported, placed and connected — is in `docs/m42b-pool.md` → "Batch 4".
+What belongs here is the one record A1 exists for.*
+
+**`haitian-embassy-in-cuba-massacre` names neither an actor nor a place**, and
+it is filed under `cuban-revolution`. A1 is the answer, and the reason is the
+same one A9 gives: the item's `P276` is the embassy of Haiti in Cuba, which
+carries no `P625`, it has no `P131`, and its `P17` is `Q14905932` — the
+historical Republic of Cuba, a *period* and not a place on the ground. So the
+place chain runs out with nothing to point at, and the atlas does not invent a
+point for it. Nor does the item name a participant: `P710` is empty, and the
+import writes identity and never an actor line. It is filed where its date and
+its subject put it — 29 October 1956, inside the revolution's own span — and
+what it is missing is what the sources it was built from do not carry.
