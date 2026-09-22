@@ -1086,6 +1086,21 @@ body:not(.phone) .layout.panel-empty.composing {
 .graph .edge-head.converging { fill: var(--cobalt); }
 .graph .edge.chain { stroke: var(--madder); stroke-width: 2.4; }
 .graph .edge-head.chain { fill: var(--madder); }
+/* The link the reader has opened (M80). Madder and heavier than the walked
+   chain, and last of the three so it wins over every one of them: a line being
+   *read* is the one thing on this picture the panel is about, and the accent
+   has meant "the one you are holding" since the chain first took it. It keeps
+   its type's dash pattern and its confidence's ink, because what kind of claim
+   it is and how sure the atlas is of it are not what choosing it changed. */
+.graph .edge.chosen { stroke: var(--madder); stroke-width: 3; opacity: 1; }
+.graph .edge-head.chosen { fill: var(--madder); }
+/* A line that stands for one link is a control, so it says so to the pointer
+   and takes the focus ring like every other. `pointer-events` stays off it:
+   which line a click means is decided by distance in graph-view.js, the way
+   which mark it means always has been, so nothing here has to be wide enough
+   to hit. */
+.graph .edge[data-edge] { cursor: pointer; }
+.graph .edge[data-edge]:focus-visible { stroke: var(--madder); }
 
 .graph .node { fill: var(--paper); stroke: var(--cobalt); stroke-width: 1.5; vector-effect: non-scaling-stroke; cursor: pointer; }
 .graph .node:hover { fill: var(--cobalt-faint); }
@@ -1390,9 +1405,18 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   margin-top: 0; padding-top: 0; border-top: 0;
 }
 .panel .event-head h2, .panel .actor-head h2, .panel .place-head h2,
-.panel .source-head h2, .panel .narrative-head h2, .panel .cluster-list h2 {
+.panel .source-head h2, .panel .narrative-head h2, .panel .cluster-list h2,
+.panel .edge-card-head h2 {
   font-size: var(--text-xl); margin-top: 0; padding-top: 0; border-top: 0; line-height: var(--leading-tight);
 }
+/* The link's card (M80). Its heading is the type — "enabled" — because that is
+   what kind of claim the record makes, and the two events it runs between are
+   the line under it, in the order the record writes them. No new size and no
+   new colour: the ends are the same event control every list uses and the
+   confidence is the same badge. */
+.panel .link-ends { margin: var(--space-1) 0 var(--space-2); display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2); }
+.panel .link-ends .arrow { color: var(--ink-soft); font-size: var(--text-sm); }
+.panel .confidence-hint { color: var(--ink-soft); }
 .panel .meta { color: var(--ink-soft); margin: 0; font-size: var(--text-sm); }
 .panel .count { color: var(--ink-soft); font-size: var(--text-sm); font-variant-numeric: tabular-nums; }
 .panel .muted { color: var(--ink-soft); }

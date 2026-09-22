@@ -34,7 +34,11 @@ export const ACTOR_TYPE_LABEL = Object.freeze({
   people: 'people',
 });
 
-const CONFIDENCE_HINT = Object.freeze({
+// What each confidence means, in the atlas's own words. On the badge's title
+// everywhere, and written out in full on the link's own card (M80), where the
+// confidence is one of the things the reader opened the card to read and a
+// sentence nobody hovers for is a sentence nobody reads.
+export const CONFIDENCE_HINT = Object.freeze({
   consensus: 'accepted; at least two independent sources',
   probable: 'supported by the cited sources, no known dissent',
   disputed: 'qualified historians disagree about this link',
@@ -127,6 +131,17 @@ function actorChipsHtml(ctx, event, highlighted) {
   return `<p class="chips" aria-label="Who is in it">${chips.join(' ')}</p>`;
 }
 
+// The type word, as the way into the link's own card (M80). Each row already
+// named the other end and offered to walk to it; what it could not do was open
+// the link itself, and the argument was only ever readable folded into the
+// "Why" below. The word that says what kind of claim it is is the right
+// control for it: a reader who wants to know what "enabled" rests on presses
+// the word "enabled".
+export function edgeTypeLink(edge) {
+  return `<button type="button" class="link arrow" data-action="edge" data-edge="${esc(edge.id)}"
+    title="Read this link: its sources, its argument and how sure the atlas is">${esc(TYPE_LABEL[edge.type] ?? edge.type)}</button>`;
+}
+
 function edgeRowsHtml(list, { follow }) {
   const items = list.map(({ edge, event }) => {
     const title = `${esc(event?.title ?? (follow ? edge.to : edge.from))} <span class="when">${esc(event ? formatInterval(event.when) : '')}</span>`;
@@ -135,7 +150,7 @@ function edgeRowsHtml(list, { follow }) {
       : `<button type="button" class="follow" data-action="select" data-id="${esc(edge.from)}">← ${title}</button>`;
     return `<li class="edge-row ${esc(edge.confidence)}">
       <div class="edge-head">
-        <span class="arrow">${esc(TYPE_LABEL[edge.type] ?? edge.type)}</span> ${badge(edge.confidence)}
+        ${edgeTypeLink(edge)} ${badge(edge.confidence)}
         ${open}
       </div>
       <details data-edge="${esc(edge.id)}"><summary>Why</summary><div data-slot="explanation"><p class="muted">Loading…</p></div></details>
@@ -164,7 +179,7 @@ function branchesHtml(ctx, list, selectedId) {
   const row = ({ event, edge, to, depth }) => `<li class="edge-row ${esc(edge.confidence)}">
     <div class="edge-head">
       ${ctx.eventLink(event)}
-      <span class="arrow">${esc(TYPE_LABEL[edge.type] ?? edge.type)}</span> ${badge(edge.confidence)}
+      ${edgeTypeLink(edge)} ${badge(edge.confidence)}
       ${to.id === selectedId ? '' : `<span class="via">→ ${esc(to.title)}</span>`}
       ${depth > 1 ? `<span class="depth">${depth} steps up</span>` : ''}
     </div>
@@ -342,7 +357,7 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
       label: 'The link you followed',
       disputed: lastEdge.confidence === 'disputed' ? 1 : 0,
       count: null,
-      body: `<p class="edge-head"><span class="arrow">${esc(atlas.events.get(lastEdge.from)?.title ?? lastEdge.from)} — ${esc(TYPE_LABEL[lastEdge.type] ?? lastEdge.type)} →</span> ${badge(lastEdge.confidence)}</p>
+      body: `<p class="edge-head"><span class="arrow">${esc(atlas.events.get(lastEdge.from)?.title ?? lastEdge.from)} —</span> ${edgeTypeLink(lastEdge)} <span class="arrow">→</span> ${badge(lastEdge.confidence)}</p>
         <div class="last-step ${lastEdge.confidence === 'disputed' ? 'disputed' : ''}" data-slot="last-step"><p class="muted">Loading…</p></div>`,
     });
   }
