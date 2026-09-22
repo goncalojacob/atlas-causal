@@ -19735,6 +19735,21 @@ after batch 37" is what the next fire picks up.
       parts vein files and the joins vein connects**. A run that wants chains
       should know which question it is asking before it spends the reading.
 
+1209. **Deviation 798's order is "records, *then* rebuild", and the rebuild has
+      to come after the commit and not merely after the edit.**
+      `tools/lib/history.mjs` reads each record's versions out of the
+      repository's own commits, so `data/index/history-<kind>-<key>-<hash>.json`
+      depends on the **commit graph** and not only on the working tree. An index
+      built while the new records are still untracked carries history shards the
+      checked-out tree does not produce, and rule 16 in CI is what says so —
+      locally `--index` passes, because the same stale graph builds the same
+      stale shards. It took M42's check red twice in one fire: once on the `m0`
+      merge, whose index was rebuilt before the merge commit existed, and once
+      on batch 37, whose index was rebuilt before the records were committed.
+      **The order that converges is: commit the records, rebuild, commit the
+      index** — and it converges in one step, because the index commit touches
+      no record file and so changes no history.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

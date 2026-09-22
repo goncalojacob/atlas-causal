@@ -3469,3 +3469,22 @@ chains should know which question it is asking.
 - **Fifty-two of the 140 event classes carry no category.** Three were given one
   here because their first record arrived in this batch; the rest is a pass.
 - **Africa is 103 against Europe's 314** and A10's order does not change.
+
+### The check, and the history shards that made it red twice
+
+**Red on the `m0` merge and red on the records commit, and neither was a
+flake.** Both are `rule 16` — *"`data/index/` is not what `build-index.mjs`
+produces"* — and both name the same five files: the history shards for events,
+edges and places of the twentieth and twenty-first centuries.
+
+`tools/lib/history.mjs` builds those out of **the repository's own commits**,
+so they depend on the commit graph and not only on the working tree. An index
+rebuilt while the new records are still untracked — or, at the merge, before
+the merge commit existed — carries shards the checked-out tree does not
+produce, and `node tools/validate.mjs --index` passes locally because the same
+stale graph builds the same stale shards on both sides of the comparison.
+
+**Deviation 798's order already says this and it is worth saying again with the
+word "commit" in it**: records, *then* rebuild, *then* the index. It converges
+in one further step, because the index commit touches no record file and so
+changes no history. Deviation 1209.
