@@ -1206,7 +1206,8 @@ lead would be this run's argument and not the source's.
 | components | 30, from 27 |
 | imported this fire | 24 records (3 umbrellas, 1 origin, 20 filed children) |
 | edges written | 23 |
-| filings | 30 |
+| filings | 31 — 21 of the new records, and 10 main events that were already here |
+| the sweep pool, world sections | 1,109 rows → **1,087** |
 
 **The rule that worked, and it is the one to run first next time.** Batches 23
 to 25: **take the pool row whose item names a parent this atlas already
