@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "2013-egyptian-coup-d-etat",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -17,15 +17,12 @@
   "origin": {
     "tool": "wikidata"
   },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class B. July 2013 argues from the Egyptian revolution of 2011 and the Arab Spring, neither of which is a record here — the Arab Spring is among the twenty-two that M44a’s import refused again for want of a lane — and from the revolution of 1952, which this round wired at two hops and which leaves 2013 at three. The missing record is 2011."
-  },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
   },
   "wikidata": "Q13605743",
   "sitelinks": {

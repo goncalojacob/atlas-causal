@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--slovak-national-uprising--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slovak National Uprising\", revision 1374904143, § lead"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "slovak-national-uprising",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article opens with the war: the uprising \"was an attempted insurrection organised by the Slovak resistance during the Second World War. It was directed on the one hand against **the German invasion of Slovakia by the Wehrmacht, which began on 29 August 1944**, and on the other against the Slovak collaborationist regime of the Ludaks under Jozef Tiso. It was one of the largest uprisings against Nazism and its allies in Europe.\" It was carried out by parts of the Slovak army under a council linked to the Czechoslovak government-in-exile in London and supported by Soviet and Slovak partisans, and it ended after sixty days with the fall of Banská Bystrica.",
+  "dispute": null
+}

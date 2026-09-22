@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "iran-iraq-war--gulf-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gulf War\", revision 1375784270, § Background"
+    }
+  ],
+  "from": "iran-iraq-war",
+  "to": "gulf-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the Gulf war traces the invasion of Kuwait to what the earlier war left behind: by the time the ceasefire with Iran was signed in August 1988, Iraq was heavily debt-ridden, most of that debt owed to Saudi Arabia and Kuwait, with the debts to Kuwait alone amounting to fourteen billion dollars, and Iraq pressed both to forgive them and was refused. The article adds that Kuwait was overproducing oil at least in part to repair losses caused by Iranian attacks during the war, and that the resulting slump in the price cost Iraq seven billion dollars a year — the grievance the Iraqi government described as economic warfare.",
+  "dispute": null
+}

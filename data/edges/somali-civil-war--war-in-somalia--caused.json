@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "somali-civil-war--war-in-somalia--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War in Somalia (2006–2009)\", revision 1375639759, § Background"
+    }
+  ],
+  "from": "somali-civil-war",
+  "to": "war-in-somalia",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The invasion’s article traces it to the collapse the civil war is: “In 2000, the first successful attempt to form a government since the collapse of Somalia’s central authority in 1991 led to the creation of the Transitional National Government (TNG). Ethiopia opposed the TNG, fearing that Somali reunification would reignite claims on the Ogaden region. In response, Ethiopia supported groups in Somalia that resisted the TNG.” Six years later Ethiopian forces “invaded Somalia to depose the Islamic Courts Union (ICU) and install the Transitional Federal Government”. The same § Background lists the Ogaden war of 1977–1978 among the conflicts behind it, which is a record this atlas holds and an edge a later batch can argue on its own reading.",
+  "dispute": null
+}

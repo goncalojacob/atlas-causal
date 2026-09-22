@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-of-paris-1898--philippine-american-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Philippine–American War\", revision 1372638665, § lead"
+    }
+  ],
+  "from": "treaty-of-paris-1898",
+  "to": "philippine-american-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the war names the treaty as what it followed: the war \"emerged in early 1899 following the United States’ annexation of the former Spanish colony of the Philippine Islands under the terms of the December 1898 Treaty of Paris\". Spain sold to the United States an archipelago whose revolutionaries had declared independence six months earlier, and the war is what the transfer produced.",
+  "dispute": null
+}

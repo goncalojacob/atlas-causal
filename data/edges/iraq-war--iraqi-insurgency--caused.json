@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "iraq-war--iraqi-insurgency--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iraqi insurgency (2003–2011)\", revision 1375582804, § lead"
+    }
+  ],
+  "from": "iraq-war",
+  "to": "iraqi-insurgency",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The insurgency’s article ties both of its ends to the war: it “lasted from 2003 until 2011, beginning shortly after the 2003 American invasion deposed longtime leader Saddam Hussein, and lasting until the end of the Iraq War and U.S. withdrawal in 2011”. The invasion is the event this atlas holds as `iraq-war`.",
+  "dispute": null
+}

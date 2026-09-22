@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "partition-of-india--kashmir-conflict--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kashmir conflict\", revision 1374133428, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Partition of India\", revision 1374133022, § lead"
+    }
+  ],
+  "from": "partition-of-india",
+  "to": "kashmir-conflict",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the Kashmir conflict says it started after the partition of India in 1947, as both India and Pakistan claimed the entirety of the former princely state of Jammu and Kashmir, and that the dispute escalated into three wars between the two states and several other armed skirmishes. The article on the partition says it divided British India into the two dominions at midnight on 14–15 August 1947 and ended Crown rule in India.",
+  "dispute": null
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "second-sudanese-civil-war--2011-south-sudanese-independence-referendum--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Sudanese Civil War\", revision 1375675485, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2011 South Sudanese independence referendum\", revision 1362366338, § lead"
+    }
+  ],
+  "from": "second-sudanese-civil-war",
+  "to": "2011-south-sudanese-independence-referendum",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the war says it ran from 1983 to 2005 between the central Sudanese government and the Sudan People's Liberation Army, and that the war resulted in the independence of South Sudan six years after it ended. The English article on the referendum says the vote was one of the consequences of the 2005 Naivasha Agreement between the Khartoum government and the SPLA/M. Both are the encyclopedia, so this link rests on one author.",
+  "dispute": null
+}

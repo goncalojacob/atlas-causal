@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "portuguese-colonial-war-1961-1974--carnation-revolution-1974--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Carnation Revolution\", revision 1374066068, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese Colonial War\", revision 1372834694, § lead"
+    }
+  ],
+  "from": "portuguese-colonial-war-1961-1974",
+  "to": "carnation-revolution-1974",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the revolution says the coup of 25 April 1974 came in the midst of the Portuguese Colonial War in the overseas colonies, that it was organised by the Armed Forces Movement of officers who opposed the regime, and that it resulted in an end to that war. The article on the war says the same from its own end: the Estado Novo was overthrown by a military coup in 1974 and the change of government brought the conflict to an end. Both articles put the war and the coup in one another’s account without either calling the war the cause, which is why this is drawn as a precondition and as probable.",
+  "dispute": null
+}

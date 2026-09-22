@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hague Convention for the Protection of Cultural Property in the Event of Armed Conflict\", revision 1374191348, § After World War II"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The article's § After World War II is the whole of this edge: \"With the conclusion of the Second World War and the subsequent defeat of the Axis powers, the atrocities which the Nazi leadership condoned, leading to the removal of culturally significant items and the destruction of numerous others could not be allowed to occur in future generations. **This led the victorious Allied forces to create provisions to ensure safeguards for culturally significant items in times of war.**\" It also records the war stopping the previous attempt: a Dutch draft of 1939 went nowhere because \"the start of the Second World War in the same year prevented all further steps\", and the Netherlands submitted it again to UNESCO in 1948.",
+  "dispute": null
+}

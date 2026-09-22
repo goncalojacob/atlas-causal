@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "sturm-2011-weimarer-republik",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "type": "article",
+  "creators": [
+    "Reinhard Sturm"
+  ],
+  "title": "Weimarer Republik",
+  "year": 2011,
+  "publisher": null,
+  "isbn": null,
+  "doi": null,
+  "url": "https://www.bpb.de/shop/zeitschriften/izpb/55943/weimarer-republik/",
+  "accessed": null,
+  "container": {
+    "title": "Informationen zur politischen Bildung",
+    "kind": "journal",
+    "issue": "261"
+  },
+  "repository": null,
+  "reference": null
+}

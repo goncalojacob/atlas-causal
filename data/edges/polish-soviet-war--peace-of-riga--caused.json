@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "polish-soviet-war--peace-of-riga--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Riga\", revision 1368931640, § lead"
+    }
+  ],
+  "from": "polish-soviet-war",
+  "to": "peace-of-riga",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article's first sentence says the treaty was signed in Riga on 18 March 1921 between Poland on one side and Soviet Russia and Soviet Ukraine on the other, ending the Polish–Soviet War of 1919 to 1921. What the treaty then settled — a border some 250 kilometres east of the Curzon Line, and Poland's recognition of Soviet Ukraine and Belarus — the article reports as its terms and not as the war's outcome by itself.",
+  "dispute": null
+}

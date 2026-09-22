@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "russo-japanese-war--british-russian-convention--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Russian Convention\", revision 1358051340, § Background"
+    }
+  ],
+  "from": "russo-japanese-war",
+  "to": "british-russian-convention",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says that the emergence of the German Empire as a world power and **the defeat in 1905 of Russia by a nascent Asian power, the Empire of Japan, in the Russo-Japanese War**, helped to persuade some British and Russian officials of a need to resolve their respective differences in Asia — the differences over Afghanistan, Iran and Tibet that the convention settled. The defeat is one of the two reasons the article gives for a bargain both sides had resisted for twenty years.",
+  "dispute": null
+}

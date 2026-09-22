@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "second-balkan-war--treaty-of-bucharest--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Bucharest (1913)\", revision 1359715572, § lead"
+    }
+  ],
+  "from": "second-balkan-war",
+  "to": "treaty-of-bucharest",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article states it in its first lines: the treaty \"was concluded in the aftermath of the Second Balkan War and amended the previous Treaty of London, which ended the First Balkan War\". Its Background says why there was a treaty at all — Bulgaria, attacked from four sides at once and \"isolated and surrounded by a more powerful coalition of opponents\", \"was forced to agree to a truce and to peace negotiations to be held in the Romanian capital, Bucharest\".",
+  "dispute": null
+}

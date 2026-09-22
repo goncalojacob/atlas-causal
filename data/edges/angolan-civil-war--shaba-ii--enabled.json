@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "angolan-civil-war--shaba-ii--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Shaba II\", revision 1370737989, § lead"
+    }
+  ],
+  "from": "angolan-civil-war",
+  "to": "shaba-ii",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The same shape as batch 27’s edge to the first Shaba war and from the same page of the atlas: “The conflict broke out on 11 May 1978 after 6,500 rebels from the Congolese National Liberation Front (FNLC), a Katangese separatist militia, crossed the border from Angola into Zaire in an attempt to achieve the province’s secession from the Zairian regime of Mobutu Sese Seko.” Angola is the ground they crossed from and the war is what left them on it; the secession they wanted is their own, so the type is `enabled` and not `caused`.",
+  "dispute": null
+}

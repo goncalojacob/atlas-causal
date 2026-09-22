@@ -252,6 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
+| **after M42** | 36 of 36 | 308 of 581 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -271,6 +272,16 @@ figure moves by nineteen in both columns and **the fifty that name nobody are
 still the same fifty**. The two rules — alive at the start, and overlapping —
 still give the same number, 254, so the sentence above about which rule was
 counted by is still true of this row as well.
+
+**The "after M42" row is retaken at every batch of that milestone**, which is
+why it moves without a new row being added: M42 is one milestone and the row is
+its own. Batch 10 takes it to 306 of 393, batch 11 to 306 of 405, batch 12 to 306 of 411, batch 13 to 306 of 423, batch 14 to 306 of 435, batch 15 to 306 of 445, batch 16 to 306 of 451 and batch 17 to **306 of 474**. The numerator has not moved since
+M67 and will not move by importing: every record the Wikidata sweep creates
+carries `actors: []`, because the import writes identity and never an actor
+line, and M67 A1 settled that an event with no actor and no place is not a
+defect. So the gap this row shows is the gap between a corpus that is imported
+and one that is written, and it widens by exactly the number of records each
+batch keeps.
 
 **The "after M62" row is that measurement taken a third time.** M62 wrote five
 umbrella events — the Estado Novo, the First Republic, the Ditadura Nacional,
@@ -293,6 +304,22 @@ at all, and **the fifty that name nobody are down to four**: `20-july-plot` and
 `covid-19-pandemic-in-europe`, which is part of the pandemic and so not a main
 event at all, and `tripartite-pact`, which carries a place and no actor. The
 two rules still give the same number, 306.
+
+**The "after M42" row is the count with the world put back into it, and it is
+rewritten as each of that milestone's batches lands.** M42 adds active events
+and does not add actor lines: everything it reinstates or imports is a
+Wikidata record carrying `actors: []`, which is what `docs/m67-umbrellas.md`
+§2.1 and M67's amendment A1 already settled — **an event with no actor and no
+place is not a defect**, and inventing a line to make one filable is the thing
+that document forbids. So the numerator stands where M67 left it and the
+denominator grows: 306 of 358 after batch 6, against 306 of 310 before. The
+filing pass of amendment A6 moved the numerator by one for the first time —
+**307 of 477** — because `third-portuguese-republic-since-1974`, the one
+umbrella of that pass written here rather than imported, names the republic
+itself, and the two the import wrote name nothing, as the imports do. The
+gap is not a regression in what M67 did; it is the new records arriving in the
+state every imported record arrives in, and `review.html` is where a person
+gives them their lines.
 
 ### 4.2 Where the entries came from
 

@@ -17,10 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-05",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
@@ -28,14 +25,17 @@
       "summary-drafted"
     ]
   },
-  "wikidata": "Q49104",
-  "sitelinks": {
-    "count": 67,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q49104",
   "wikipedia": {
     "en": "2006 Lebanon War",
     "pt": "Guerra do Líbano de 2006"
+  },
+  "sitelinks": {
+    "count": 67,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -60,6 +60,7 @@
   },
   "place": null,
   "region": "asia",
+  "parent": "arab-israeli-conflict",
   "actors": [
     {
       "actor": "israel",

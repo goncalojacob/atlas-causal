@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "yugoslav-wars--breakup-of-yugoslavia--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Yugoslav Wars\", revision 1373953860, § lead"
+    }
+  ],
+  "from": "yugoslav-wars",
+  "to": "breakup-of-yugoslavia",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the wars says the conflicts both led up to and resulted from the breakup of Yugoslavia, which began in mid-1991, into six independent countries, and that the breakup and the wars are commonly attributed to increasing nationalism and unresolved ethnic tensions. Only the half of that sentence running this way can be drawn: the atlas’s record of the breakup carries Wikidata’s point date of 27 April 1992, the proclamation of the Federal Republic, so an edge the other way would fail the arrow of time against wars the same article dates from 1991. The record needs a person’s reading of its dates before the second half can be written.",
+  "dispute": null
+}

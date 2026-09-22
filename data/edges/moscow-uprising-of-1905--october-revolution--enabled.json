@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "moscow-uprising-of-1905--october-revolution--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Moscow uprising of 1905\", revision 1370628753, § lead"
+    }
+  ],
+  "from": "moscow-uprising-of-1905",
+  "to": "october-revolution",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The uprising failed, and its own article says what the failure left behind: “The uprising ended in defeat for the revolutionaries and provoked a swift counter-revolution that lasted until 1907… The Moscow revolutionaries gained experience during the uprising that helped them succeed years later in the October Revolution of 1917.” What the article describes is men who knew how to do it twelve years later, which is an opening and not a cause, so the type is `enabled`. The article says “helped them succeed”, not that October would not have happened, and the confidence is written to that.",
+  "dispute": null
+}

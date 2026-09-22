@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "anglo-irish-treaty--irish-civil-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Irish Civil War\", revision 1374338052, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Irish Treaty\", revision 1363486671, § lead"
+    }
+  ],
+  "from": "anglo-irish-treaty",
+  "to": "irish-civil-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the civil war says it was waged between the Provisional Government of Ireland and the anti-Treaty IRA over the Anglo-Irish Treaty: the Provisional Government supported the terms of the treaty, the anti-Treaty opposition saw it as a betrayal of the Irish Republic proclaimed during the Easter Rising of 1916, and many of the combatants had fought together against the British and divided once the treaty negotiations began. The article on the treaty says it concluded the Irish War of Independence and provided for the establishment of the Irish Free State as a self-governing dominion.",
+  "dispute": null
+}

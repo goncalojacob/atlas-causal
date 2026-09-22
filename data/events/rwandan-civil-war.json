@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "rwandan-civil-war",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,18 +13,17 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
+  "revised": "2026-09-21",
   "origin": {
     "tool": "wikidata"
   },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A. The war of 1990 to 1994 can be argued to the Arusha accords, which M44a also imported, and to the genocide and the Congo wars, and the whole cluster reaches no Portuguese event: the route from the Great Lakes to this atlas runs through Angola’s civil war and Angola’s intervention in Congo, and the atlas holds the independence of Angola in 1975 and nothing after it. Retracting the cluster together is more honest than wiring it to itself and calling it connected."
-  },
   "review": {
+    "status": "draft",
     "flags": [
       "imported-facts",
-      "m44b-retracted"
+      "m44b-retracted",
+      "standing-backfilled",
+      "imported-by-wikidata"
     ]
   },
   "wikidata": "Q426722",

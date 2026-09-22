@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "1958-lebanon-crisis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": "2026-09-21",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m42-reinstated"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1542222",
+  "wikipedia": {
+    "en": "1958 Lebanon crisis",
+    "pt": "Crise do Líbano de 1958"
+  },
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1542222"
+    }
+  ],
+  "title": "1958 Lebanon crisis",
+  "summary": "Wikidata item Q1542222, imported by tools/import/wikidata.mjs. The item's own description reads \"Lebanese political crisis accompanied by military intervention in Lebanon by the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1958,
+    "end": 1958,
+    "date": "1958-07-15",
+    "endDate": "1958-10-25"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

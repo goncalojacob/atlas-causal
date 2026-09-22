@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1991-soviet-coup-d-etat-attempt--dissolution-of-the-soviet-union--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dissolution of the Soviet Union\", revision 1375840189, § lead"
+    }
+  ],
+  "from": "1991-soviet-coup-d-etat-attempt",
+  "to": "dissolution-of-the-soviet-union",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the dissolution says the Soviet Union was formally dissolved and ceased to exist as a sovereign state on 26 December 1991, and that this brought an end to Gorbachev’s efforts to reform the Soviet political and economic system. The coup of August 1991 is what the record’s own retraction named as the neighbour it argued to, and it is four months before the date the article gives.",
+  "dispute": null
+}

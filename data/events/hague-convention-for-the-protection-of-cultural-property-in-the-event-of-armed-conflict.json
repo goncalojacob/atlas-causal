@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1566342",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "Hague Convention for the Protection of Cultural Property in the Event of Armed Conflict",
+    "pt": "Convenção para a Proteção dos Bens Culturais em Caso de Conflito Armado"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1566342"
+    }
+  ],
+  "title": "Hague Convention for the Protection of Cultural Property in the Event of Armed Conflict",
+  "summary": "Wikidata item Q1566342, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1954,
+    "end": 1954
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

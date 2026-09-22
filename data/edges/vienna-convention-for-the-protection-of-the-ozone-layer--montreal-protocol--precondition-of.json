@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "vienna-convention-for-the-protection-of-the-ozone-layer--montreal-protocol--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Montreal Protocol\", revision 1375917408, § History"
+    }
+  ],
+  "from": "vienna-convention-for-the-protection-of-the-ozone-layer",
+  "to": "montreal-protocol",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the protocol says what the convention was for: \"Also in 1985, 20 nations, including most major CFC producers, signed the Vienna Convention, which established a framework for negotiating international regulations on ozone-depleting substances.\" The protocol is the regulation negotiated under that framework, and it is a protocol to this convention rather than a treaty of its own.",
+  "dispute": null
+}

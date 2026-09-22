@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "good-friday-agreement",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -17,15 +17,12 @@
   "origin": {
     "tool": "wikidata"
   },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class B. Its neighbours in this atlas are the Easter Rising and the Irish civil war, and the civil war is itself two hops out, which puts the agreement at three. The records that would shorten the chain are the ones the Easter Rising edge already names as missing — the War of Independence, the Anglo-Irish treaty — and the Troubles, which the atlas does not hold at all. Ireland reaches Portugal here only through the war of 1914, and 1998 is too far along that line."
-  },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
   },
   "wikidata": "Q208958",
   "sitelinks": {

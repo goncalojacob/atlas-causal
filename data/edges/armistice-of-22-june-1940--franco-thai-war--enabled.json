@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "armistice-of-22-june-1940--franco-thai-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Franco-Thai War\", revision 1375769371, § Background"
+    }
+  ],
+  "from": "armistice-of-22-june-1940",
+  "to": "franco-thai-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The war’s article names the armistice as what put Indochina within reach: “Fall of France and the Armistice of 22 June 1940 led to the creation of Vichy Regime in Southern France. Vichy government then inherited its control over French colonial territories in both Africa and Asia. With weakened status of the French state both Phibun and the Japanese Empire saw opportunities in Indochina.” Its lead says the same in one line — Phibun “decided that France’s defeat strengthened the Thais’ negotiating position”. `enabled` and not `caused`: the armistice made the attempt possible and the claim it pressed is older than the armistice.",
+  "dispute": null
+}

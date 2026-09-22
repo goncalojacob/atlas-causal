@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-of-rome--merger-treaty--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Merger Treaty\", revision 1340086782, § lead"
+    }
+  ],
+  "from": "treaty-of-rome",
+  "to": "merger-treaty",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Merger Treaty merged institutions the Treaty of Rome had created, and both records say so from their own side. The article: the treaty of 8 April 1965 \"unified the executive institutions of the European Coal and Steel Community (ECSC), European Atomic Energy Community (Euratom) and the European Economic Community (EEC)… It set out that the **Commission of the European Communities should replace the High Authority of the ECSC, the Commission of the EEC and the Commission of Euratom**, and that the Council of the European Communities should replace the Special Council of Ministers of the ECSC, the Council of the EEC and the Council of Euratom.\" This atlas's own record of the Treaty of Rome says that treaty \"created the European Economic Community… and institutions — a Commission, a Council, an Assembly and a Court — with powers of their own\": those are two of the three sets of institutions the 1965 treaty merged.",
+  "dispute": null
+}

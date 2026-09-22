@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "rose-revolution--tulip-revolution--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tulip Revolution\", revision 1372025111, § Origins"
+    }
+  ],
+  "from": "rose-revolution",
+  "to": "tulip-revolution",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The English article names the transmission and the man who carried it: “Givi Targamadze, a former member of the Liberty Institute of Georgia and the chair of Georgian Parliamentary Committee on Defense and Security, consulted Ukrainian opposition leaders on the technique of nonviolent struggle. He later advised leaders of the Kyrgyz opposition during the Tulip Revolution.” The same section records that the name itself was chosen against the Georgian and Ukrainian precedents, Akayev having warned that no such “Color Revolution” should happen in Kyrgyzstan. Inspired and not caused: what crossed was a technique and a name.",
+  "dispute": null
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "anglo-irish-treaty--the-troubles--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Irish Treaty\", revision 1363486671, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"The Troubles\", revision 1375596184, § lead"
+    }
+  ],
+  "from": "anglo-irish-treaty",
+  "to": "the-troubles",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the treaty says it gave Northern Ireland, which had been created by the Government of Ireland Act 1920, an option to opt out of the Irish Free State, and that the Parliament of Northern Ireland exercised it. The article on the Troubles says the conflict was a political and nationalistic struggle fought over the status of Northern Ireland, unionists and loyalists wanting it to remain within the United Kingdom and nationalists and republicans wanting it to leave. The status the later conflict was fought over is the one the treaty left open; neither article calls the treaty its cause.",
+  "dispute": null
+}

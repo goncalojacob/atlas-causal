@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "october-revolution--execution-of-the-romanov-family--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Murder of the Romanov family\", revision 1374973698, § lead"
+    }
+  ],
+  "from": "october-revolution",
+  "to": "execution-of-the-romanov-family",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article gives the custody that ended in the cellar as a consequence of the two revolutions: \"Following the February Revolution in 1917, the Romanovs and their servants had been imprisoned in the Alexander Palace before being moved to Tobolsk, Siberia, in the aftermath of the October Revolution. They were next moved to a house in Yekaterinburg, near the Ural Mountains, before they were murdered in July 1918.\" The family was in Bolshevik hands, and in that house, because of what October had done.",
+  "dispute": null
+}

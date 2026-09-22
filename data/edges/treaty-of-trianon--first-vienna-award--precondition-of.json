@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-of-trianon--first-vienna-award--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Vienna Award\", revision 1373350087, § lead"
+    }
+  ],
+  "from": "treaty-of-trianon",
+  "to": "first-vienna-award",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same article says Hungary sought to reclaim the territories it had lost and to reunite the Hungarian minority across its borders, that Germany and Italy had supported those claims and the revision of the 1920 Treaty of Trianon imposed on Hungary after the First World War, and that the award regained for Hungary some of what it had lost under Trianon. The treaty is what the claim was a claim against.",
+  "dispute": null
+}

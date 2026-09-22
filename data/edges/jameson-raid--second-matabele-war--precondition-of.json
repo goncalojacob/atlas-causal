@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "jameson-raid--second-matabele-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Chimurenga\", revision 1370619280, § lead"
+    }
+  ],
+  "from": "jameson-raid",
+  "to": "second-matabele-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article gives the raid as what left Matabeleland open: \"Only a few months earlier, the British South Africa Company’s Administrator General for Matabeleland, Leander Starr Jameson, had sent most of his troops and armaments to fight the Transvaal Republic in the ill-fated Jameson Raid. This left the country nearly defenceless.\" The rising began in March 1896, ten weeks after the raid collapsed.",
+  "dispute": null
+}

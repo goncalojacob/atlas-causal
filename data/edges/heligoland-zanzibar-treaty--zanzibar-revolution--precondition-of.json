@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "heligoland-zanzibar-treaty--zanzibar-revolution--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Zanzibar Revolution\", revision 1375266442, § Background"
+    }
+  ],
+  "from": "heligoland-zanzibar-treaty",
+  "to": "zanzibar-revolution",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article traces the state the revolution overthrew back to the treaty by name: Zanzibar was \"**formally separated** from German East Africa in 1890\" and \"it had become fully independent in 1963, with responsibility for its own defense and foreign affairs, as a result of Britain giving up its protectorate over it\", and, again, **\"in 1890 during Ali ibn Sa'id's reign, Zanzibar became a British protectorate after the Heligoland–Zanzibar Treaty separated British and German territory in Central Africa during the Scramble for Africa\"**. What the revolution of 12 January 1964 overthrew was the Sultan the protectorate had left in place a month earlier, the Arab minority having \"succeeded in retaining the hold on power it had inherited\" through the elections that preceded independence. Seventy-four years is a long edge and the article is what makes it one.",
+  "dispute": null
+}

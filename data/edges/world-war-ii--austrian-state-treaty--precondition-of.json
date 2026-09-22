@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--austrian-state-treaty--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Austrian State Treaty\", revision 1374482051, § Development"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "austrian-state-treaty",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says that in the immediate aftermath of the war the Allied occupation of Austria began on 27 April 1945, that Austria was divided into four zones jointly occupied by the United Kingdom, the Soviet Union, the United States and France, and that the treaty of 15 May 1955 was signed among those occupying powers and the Austrian government and established Austria as a sovereign state. The treaty ends the occupation the war produced; what it settled about neutrality is its own.",
+  "dispute": null
+}

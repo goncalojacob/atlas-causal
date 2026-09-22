@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "first-liberian-civil-war--second-liberian-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Liberian Civil War\", revision 1374428613, § Second Liberian Civil War"
+    }
+  ],
+  "from": "first-liberian-civil-war",
+  "to": "second-liberian-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the first war carries the second as its own last section and states the interval: \"The peace lasted for two years until the Second Liberian Civil War broke out when anti-Taylor forces invaded Liberia from Guinea in April 1999\", the invaders being the dissidents the first war had driven out. The settlement of 1997 is what the second war was a failure of.",
+  "dispute": null
+}

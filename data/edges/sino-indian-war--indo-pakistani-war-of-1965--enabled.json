@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "sino-indian-war--indo-pakistani-war-of-1965--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"India–Pakistan war of 1965\", revision 1371230624, § Background"
+    }
+  ],
+  "from": "sino-indian-war",
+  "to": "indo-pakistani-war-of-1965",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English article on the war of 1965 gives the defeat of 1962 as part of what made Pakistan think the moment had come: after its success in the Rann of Kutch, Pakistan under Ayub Khan \"believed the Indian Army would be unable to defend itself against a quick military campaign in the disputed territory of Kashmir as the Indian military had suffered a loss to China in 1962 in the Sino-Indian War\". The claim is about a belief the article attributes to the Pakistani leadership, which is why the type is `enabled` and the confidence `probable`.",
+  "dispute": null
+}

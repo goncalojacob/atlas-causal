@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-i--basmachi-movement--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Basmachi movement\", revision 1374693404, § lead"
+    }
+  ],
+  "from": "world-war-i",
+  "to": "basmachi-movement",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article puts the movement's origin in the war itself: \"The movement's roots lay in the anti-conscription violence of 1916 which erupted when the Russian Empire began to draft Muslims for army service in World War I.\" The conscription of Central Asian Muslims for a European war is the first thing the article names, before the Bolsheviks and before Kokand.",
+  "dispute": null
+}

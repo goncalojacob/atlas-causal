@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "la-violencia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q185407",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "La Violencia",
+    "pt": "La Violencia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q185407"
+    }
+  ],
+  "title": "La Violencia",
+  "summary": "Wikidata item Q185407, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war in Colombia between 1925 and 1960\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1949,
+    "end": 1958,
+    "date": "1949-12-06"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

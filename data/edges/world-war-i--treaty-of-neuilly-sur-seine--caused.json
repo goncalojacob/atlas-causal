@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-i--treaty-of-neuilly-sur-seine--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Neuilly-sur-Seine\", revision 1370636231, § lead"
+    }
+  ],
+  "from": "world-war-i",
+  "to": "treaty-of-neuilly-sur-seine",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article's first sentence is the whole of the link: the treaty was between the victorious Allies of the First World War on one side and Bulgaria, one of the defeated Central Powers, on the other, and it required Bulgaria to cede various territories. The article files it with the Treaties of Versailles, Saint-Germain, Trianon and Sèvres as one of the series of treaties after the war intended to diminish the military and political strength of the defeated Central Powers.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--paris-peace-treaties--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Paris Peace Treaties, 1947\", revision 1369078996, § lead"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "paris-peace-treaties",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "These are that war's peace treaties and the article says nothing else about why they exist: signed on 10 February 1947 \"following the end of World War II in 1945\", by which \"the victorious wartime Allied powers... negotiated the details of peace treaties with the former (mostly minor) European Rome-Berlin-Tokyo Axis powers, namely Italy, Romania, Hungary, Bulgaria, and Finland\". What they settled is the war's own ledger — reparations, minority rights, the end of the Italian colonial empire, the Italian–Yugoslav, Hungarian–Czechoslovak, Soviet–Romanian, Hungarian–Romanian, French–Italian and Soviet–Finnish borders, and the surrender of accused war criminals for trial.",
+  "dispute": null
+}

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-06",
+  "revised": "2026-09-21",
   "origin": {
     "tool": "assistant"
   },
@@ -40,6 +40,7 @@
   },
   "place": "lisbon",
   "region": null,
+  "parent": "third-portuguese-republic-since-1974",
   "actors": [
     {
       "actor": "ramalho-eanes",

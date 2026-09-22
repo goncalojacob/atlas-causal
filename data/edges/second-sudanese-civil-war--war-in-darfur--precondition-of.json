@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "second-sudanese-civil-war--war-in-darfur--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War in Darfur\", revision 1375318567, § Origins of the conflict"
+    }
+  ],
+  "from": "second-sudanese-civil-war",
+  "to": "war-in-darfur",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article gives several different explanations for the origins of the conflict that started in 2003 — land disputes between semi-nomadic herders and sedentary farmers, access to water, and the two rebel groups against the Khartoum government — and among them says the Darfur crisis is also related to the First and Second Sudanese civil wars between the Arab-dominated government and the Christian and animist black southerners. The article relates them and does not rank them: this link is one of several the page offers and is written at the strength the page gives it.",
+  "dispute": null
+}

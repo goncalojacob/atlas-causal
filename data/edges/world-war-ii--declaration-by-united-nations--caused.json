@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--declaration-by-united-nations--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Declaration by United Nations\", revision 1369044189, § lead"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "declaration-by-united-nations",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The declaration is an act of the war's own alliance and the article defines it as one: it \"was the main treaty that formalized the Allies of World War II and was signed by 47 national governments between 1942 and 1945. On 1 January 1942, during the Arcadia Conference in Washington D.C., the Allied 'Big Four' — the United States, the United Kingdom, the Soviet Union, and China — signed a short document which later came to be known as the United Nations Declaration, and the next day the representatives of 22 other nations added their signatures\", among them eight European governments-in-exile.",
+  "dispute": null
+}

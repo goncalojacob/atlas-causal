@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--1940-1944-insurgency-in-chechnya--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1940–1944 insurgency in Chechnya\", revision 1370279204, § lead"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "1940-1944-insurgency-in-chechnya",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The revolt is older than the German advance and the article says so in the same breath as what the advance did to it: it began “in early 1940 under Hasan Israilov”, “peaked in 1942 during the German invasion of North Caucasus and ended in the beginning of 1944 with the wholesale concentration and deportation of the Vainakh peoples”. `enabled` and not `caused`: the war did not start the rising, it gave it its opening and then its end.",
+  "dispute": null
+}

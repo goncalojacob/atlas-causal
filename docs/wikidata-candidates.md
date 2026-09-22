@@ -594,7 +594,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q43378`](https://www.wikidata.org/wiki/Q43378) | Thousand Days' War | Guerra dos Mil Dias | 1899-10-17 | civil war | 29 | — |
 | [ ] | [`Q857982`](https://www.wikidata.org/wiki/Q857982) | First Matabele War | Primeira Guerra de Matabele | 1893-10-01 | war | 24 | — |
 | [ ] | [`Q1359846`](https://www.wikidata.org/wiki/Q1359846) | 1893 Franco-Siamese crisis | Guerra Franco-Siamesa | 1893-07-13 | war | 21 | — |
-| [ ] | [`Q233657`](https://www.wikidata.org/wiki/Q233657) | Second Matabele War | Segunda Guerra de Matabele | 1896-03-01 | war | 20 | — |
+| [x] | [`Q233657`](https://www.wikidata.org/wiki/Q233657) | Second Matabele War | Segunda Guerra de Matabele | 1896-03-01 | war | 20 | — |
 | [ ] | [`Q717373`](https://www.wikidata.org/wiki/Q717373) | Japanese invasion of Taiwan | Invasão japonesa de Taiwan | 1895-01-01 | war | 20 | — |
 | [ ] | [`Q2350166`](https://www.wikidata.org/wiki/Q2350166) | War of Canudos | Guerra de Canudos | 1893-01-01 | civil war | 20 | — |
 | [ ] | [`Q2606574`](https://www.wikidata.org/wiki/Q2606574) | Acre War | Revolução Acriana | 1899-01-01 | war | 18 | — |
@@ -683,7 +683,7 @@ to that file and another run, never an edit here.
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
 | [ ] | [`Q2418422`](https://www.wikidata.org/wiki/Q2418422) | Panic of 1893 | Pânico de 1893 | 1893-01-01 | financial crisis | 24 | — |
-| [ ] | [`Q3544276`](https://www.wikidata.org/wiki/Q3544276) | Baring crisis | Pânico de 1890 | 1890-01-01 | financial crisis | 7 | — |
+| [x] | [`Q3544276`](https://www.wikidata.org/wiki/Q3544276) | Baring crisis | Pânico de 1890 | 1890-01-01 | financial crisis | 7 | — |
 
 ### world-genocides-1890s — 1
 
@@ -871,7 +871,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q500067`](https://www.wikidata.org/wiki/Q500067) | Treaty of Bucharest | Tratado de Bucareste | 1913-08-10 | peace treaty | 45 | — |
 | [ ] | [`Q584617`](https://www.wikidata.org/wiki/Q584617) | Treaty of London | Tratado de Londres | 1913-05-30 | peace treaty | 45 | — |
 | [ ] | [`Q165755`](https://www.wikidata.org/wiki/Q165755) | Treaty of Bucharest | Tratado de Bucareste | 1918-05-07 | peace treaty | 36 | — |
-| [ ] | [`Q495558`](https://www.wikidata.org/wiki/Q495558) | Japan–Korea Treaty of 1910 | Tratado de Anexação Japão-Coreia | 1910-08-22 | unequal treaties | 36 | — |
+| [x] | [`Q495558`](https://www.wikidata.org/wiki/Q495558) | Japan–Korea Treaty of 1910 | Tratado de Anexação Japão-Coreia | 1910-08-22 | unequal treaties | 36 | — |
 | [ ] | [`Q523582`](https://www.wikidata.org/wiki/Q523582) | International Convention for the Safety of Life at Sea | Convenção Internacional para a Salvaguarda da Vida no Mar | 1914-01-20 | United Nations treaty | 35 | — |
 | [ ] | [`Q152533`](https://www.wikidata.org/wiki/Q152533) | Treaty of friendship and alliance between the Government of Mongolia and Tibet | — | 1913-01-11 | treaty | 33 | — |
 | [ ] | [`Q931982`](https://www.wikidata.org/wiki/Q931982) | Treaty of Fes | Tratado de Fez | 1912-03-30 | treaty | 33 | — |
@@ -1080,7 +1080,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q36749`](https://www.wikidata.org/wiki/Q36749) | Beer Hall Putsch | Putsch da Cervejaria | 1923-11-08 | attempted coup d'état | 64 | yes |
 | [x] | [`Q208300`](https://www.wikidata.org/wiki/Q208300) | Kronstadt rebellion | Revolta de Kronstadt | 1921-01-01 | rebellion | 58 | — |
 | [x] | [`Q468823`](https://www.wikidata.org/wiki/Q468823) | March on Rome | Marcha sobre Roma | 1922-10-01 | coup d'état | 48 | — |
-| [ ] | [`Q161141`](https://www.wikidata.org/wiki/Q161141) | Kapp Putsch | Kapp-Putsch | 1920-03-13 | attempted coup d'état | 38 | — |
+| [x] | [`Q161141`](https://www.wikidata.org/wiki/Q161141) | Kapp Putsch | Kapp-Putsch | 1920-03-13 | attempted coup d'état | 38 | — |
 | [ ] | [`Q279662`](https://www.wikidata.org/wiki/Q279662) | Cristero War | Guerra Cristera | 1926-01-01 | rebellion | 34 | — |
 | [ ] | [`Q811250`](https://www.wikidata.org/wiki/Q811250) | Tambov Rebellion | Revolta de Tambov | 1920-08-19 | rebellion | 34 | — |
 | [ ] | [`Q476634`](https://www.wikidata.org/wiki/Q476634) | Nanchang Uprising | Revolta de Nanchang | 1927-08-01 | rebellion | 31 | — |
@@ -1278,7 +1278,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q2379101`](https://www.wikidata.org/wiki/Q2379101) | 1947–1948 Civil War in Mandatory Palestine | Guerra civil no Mandato da Palestina | 1940-01-01 | civil war | 27 | — |
 | [ ] | [`Q1500631`](https://www.wikidata.org/wiki/Q1500631) | Ecuadorian–Peruvian War | Guerra peruano-equatoriana | 1941-07-05 | war | 26 | — |
 | [ ] | [`Q2342102`](https://www.wikidata.org/wiki/Q2342102) | Indochina Wars | Guerras na Indochina | 1946-01-01 | series of wars | 24 | — |
-| [ ] | [`Q185407`](https://www.wikidata.org/wiki/Q185407) | La Violencia | La Violencia | 1949-12-06 | civil war | 22 | — |
+| [x] | [`Q185407`](https://www.wikidata.org/wiki/Q185407) | La Violencia | La Violencia | 1949-12-06 | civil war | 22 | — |
 | [ ] | [`Q3118964`](https://www.wikidata.org/wiki/Q3118964) | Italian Civil War | Guerra Civil Italiana | 1940-01-01 | civil war | 21 | — |
 | [ ] | [`Q3434218`](https://www.wikidata.org/wiki/Q3434218) | Costa Rican Civil War | Guerra Civil na Costa Rica | 1948-03-12 | civil war | 20 | — |
 | [ ] | [`Q3365438`](https://www.wikidata.org/wiki/Q3365438) | War in southern Vietnam | Guerra no Vietnã (1945–1946) | 1945-09-13 | war | 16 | — |
@@ -1306,7 +1306,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q973748`](https://www.wikidata.org/wiki/Q973748) | Fourth Geneva Convention | — | 1949-08-12 | treaty | 42 | — |
 | [ ] | [`Q695285`](https://www.wikidata.org/wiki/Q695285) | Moscow Peace Treaty | Tratado de Paz de Moscou | 1940-03-12 | peace treaty | 42 | — |
 | [ ] | [`Q176930`](https://www.wikidata.org/wiki/Q176930) | Declaration by United Nations | Declaração das Nações Unidas | 1942-01-01 | multilateral treaty | 41 | — |
-| [ ] | [`Q665554`](https://www.wikidata.org/wiki/Q665554) | Japanese Instrument of Surrender | Ata de rendição do Japão | 1945-09-02 | peace treaty | 38 | — |
+| [x] | [`Q665554`](https://www.wikidata.org/wiki/Q665554) | Japanese Instrument of Surrender | Ata de rendição do Japão | 1945-09-02 | peace treaty | 38 | — |
 | [ ] | [`Q845737`](https://www.wikidata.org/wiki/Q845737) | Treaty of Brussels | Tratado de Bruxelas | 1948-03-17 | treaty | 35 | — |
 | [ ] | [`Q196502`](https://www.wikidata.org/wiki/Q196502) | Armistice of Cassibile | Armistício com a Itália | 1943-09-03 | peace treaty | 35 | — |
 | [ ] | [`Q696256`](https://www.wikidata.org/wiki/Q696256) | Soviet–Japanese Neutrality Pact | Pacto nipônico-soviético | 1941-04-13 | peace treaty | 35 | — |
@@ -1580,7 +1580,7 @@ to that file and another run, never an edit here.
 | [x] | [`Q256608`](https://www.wikidata.org/wiki/Q256608) | Outer Space Treaty | Tratado do Espaço Exterior | 1967-01-27 | United Nations treaty | 50 | — |
 | [ ] | [`Q622766`](https://www.wikidata.org/wiki/Q622766) | Merger Treaty | Tratado de Fusão | 1965-04-08 | treaty of the European Union | 43 | — |
 | [ ] | [`Q743306`](https://www.wikidata.org/wiki/Q743306) | International Convention on the Elimination of All Forms of Racial Discrimination | Convenção Internacional sobre a Eliminação de todas as Formas de Discriminação Racial | 1969-01-04 | United Nations treaty | 41 | — |
-| [ ] | [`Q278960`](https://www.wikidata.org/wiki/Q278960) | Partial Nuclear Test Ban Treaty | Tratado de Interdição Parcial de Ensaios Nucleares | 1963-08-05 | treaty | 38 | — |
+| [x] | [`Q278960`](https://www.wikidata.org/wiki/Q278960) | Partial Nuclear Test Ban Treaty | Tratado de Interdição Parcial de Ensaios Nucleares | 1963-08-05 | treaty | 38 | — |
 | [ ] | [`Q274811`](https://www.wikidata.org/wiki/Q274811) | Élysée Treaty | — | 1963-01-22 | treaty | 36 | — |
 | [ ] | [`Q1334480`](https://www.wikidata.org/wiki/Q1334480) | European Social Charter | — | 1961-10-18 | Council of Europe treaty | 33 | — |
 | [ ] | [`Q2321680`](https://www.wikidata.org/wiki/Q2321680) | Tashkent Declaration | Declaração de Tashkent | 1966-01-10 | peace treaty | 32 | — |
@@ -1628,7 +1628,7 @@ to that file and another run, never an edit here.
 
 | keep | item | label (en) | label (pt) | date | type | sitelinks | in the atlas |
 | :--: | --- | --- | --- | --- | --- | --: | :--: |
-| [ ] | [`Q1069785`](https://www.wikidata.org/wiki/Q1069785) | Hong Kong flu | Gripe de Hong Kong | 1968-07-13 | pandemic | 32 | — |
+| [x] | [`Q1069785`](https://www.wikidata.org/wiki/Q1069785) | Hong Kong flu | Gripe de Hong Kong | 1968-07-13 | pandemic | 32 | — |
 | [ ] | [`Q1582992`](https://www.wikidata.org/wiki/Q1582992) | Tanganyika laughter epidemic | Epidemia de Risos em Tanganica | 1962-01-30 | sociogenic illness | 23 | — |
 | [ ] | [`Q15562333`](https://www.wikidata.org/wiki/Q15562333) | Seventh cholera pandemic | — | 1961-01-01 | pandemic | 17 | — |
 | [ ] | [`Q9254276`](https://www.wikidata.org/wiki/Q9254276) | smallpox epidemic in Wrocław | — | 1963-07-15 | smallpox epidemic | 6 | — |
@@ -1890,7 +1890,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q842380`](https://www.wikidata.org/wiki/Q842380) | Second Sudanese Civil War | Segunda Guerra Civil Sudanesa | 1983-06-05 | civil war | 37 | — |
 | [ ] | [`Q2405009`](https://www.wikidata.org/wiki/Q2405009) | Afghan Civil War | Guerra Civil do Afeganistão | 1989-02-15 | civil war | 32 | — |
 | [ ] | [`Q29242`](https://www.wikidata.org/wiki/Q29242) | Georgian–Ossetian conflict | Conflito georgiano-osseta | 1989-11-10 | war | 30 | — |
-| [ ] | [`Q1477500`](https://www.wikidata.org/wiki/Q1477500) | First Liberian Civil War | Primeira Guerra Civil da Libéria | 1989-12-24 | civil war | 30 | — |
+| [x] | [`Q1477500`](https://www.wikidata.org/wiki/Q1477500) | First Liberian Civil War | Primeira Guerra Civil da Libéria | 1989-12-24 | civil war | 30 | — |
 | [ ] | [`Q15059994`](https://www.wikidata.org/wiki/Q15059994) | Iran–Israel proxy conflict | conflito por procuração entre Irã e Israel | 1985-02-16 | proxy war | 27 | — |
 | [ ] | [`Q644589`](https://www.wikidata.org/wiki/Q644589) | Toyota War | Guerra dos Toyota | 1986-12-16 | war | 26 | — |
 | [ ] | [`Q2479435`](https://www.wikidata.org/wiki/Q2479435) | South Lebanon conflict | Conflito no sul do Líbano | 1985-02-16 | war | 23 | — |
@@ -1928,7 +1928,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q385961`](https://www.wikidata.org/wiki/Q385961) | African Charter on Human and Peoples' Rights | Carta Africana dos Direitos Humanos e dos Povos | 1981-06-27 | treaty | 31 | — |
 | [ ] | [`Q671479`](https://www.wikidata.org/wiki/Q671479) | Sino-British Joint Declaration | Declaração conjunta sino-britânica sobre a questão de Hong Kong | 1984-12-19 | bilateral treaty | 29 | — |
 | [ ] | [`Q684265`](https://www.wikidata.org/wiki/Q684265) | Plaza Accord | Acordo de Plaza | 1985-09-22 | multilateral treaty | 27 | — |
-| [ ] | [`Q686455`](https://www.wikidata.org/wiki/Q686455) | Vienna Convention for the Protection of the Ozone Layer | Convenção de Viena para a Proteção da Camada de Ozônio | 1985-03-22 | United Nations treaty | 26 | — |
+| [x] | [`Q686455`](https://www.wikidata.org/wiki/Q686455) | Vienna Convention for the Protection of the Ozone Layer | Convenção de Viena para a Proteção da Camada de Ozônio | 1985-03-22 | United Nations treaty | 26 | — |
 | [ ] | [`Q321936`](https://www.wikidata.org/wiki/Q321936) | Taif Agreement | Acordo de Taif | 1989-01-01 | peace treaty | 24 | — |
 | [ ] | [`Q2478583`](https://www.wikidata.org/wiki/Q2478583) | Compact of Free Association | Tratado de Livre Associação | 1980-01-01 | treaty | 23 | — |
 | [ ] | [`Q331590`](https://www.wikidata.org/wiki/Q331590) | Indigenous and Tribal Peoples Convention, 1989 | Convenção sobre os Povos Indígenas e Tribais, 1989 | 1989-01-01 | International Labour Organization Convention | 23 | — |
@@ -1939,7 +1939,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q1566367`](https://www.wikidata.org/wiki/Q1566367) | Hague Convention on the Civil Aspects of International Child Abduction | Convenção da Haia sobre os Aspectos Civis do Sequestro Internacional de Crianças | 1980-10-25 | Hague Convention on Private International Law | 17 | — |
 | [ ] | [`Q1301424`](https://www.wikidata.org/wiki/Q1301424) | Nkomati Accord | Acordo de Nkomati | 1984-03-16 | peace treaty | 16 | — |
 | [ ] | [`Q957806`](https://www.wikidata.org/wiki/Q957806) | Genuuva Accords | Acordos de Genebra (1988) | 1988-04-14 | peace treaty | 15 | — |
-| [ ] | [`Q471261`](https://www.wikidata.org/wiki/Q471261) | Louvre Accord | — | 1987-02-22 | multilateral treaty | 15 | — |
+| [x] | [`Q471261`](https://www.wikidata.org/wiki/Q471261) | Louvre Accord | — | 1987-02-22 | multilateral treaty | 15 | — |
 | [ ] | [`Q321851`](https://www.wikidata.org/wiki/Q321851) | May 17 Agreement | Acordo de 17 de Maio | 1983-05-17 | peace treaty | 13 | — |
 | [ ] | [`Q689782`](https://www.wikidata.org/wiki/Q689782) | Vienna Convention on the Law of Treaties Between States and International Organizations or Between International Organizations | Convenção de Viena sobre o Direito dos Tratados entre Estados e Organizações Internacionais ou entre Organizações Internacionais | 1986-03-21 | treaty | 12 | — |
 | [ ] | [`Q2708643`](https://www.wikidata.org/wiki/Q2708643) | Anglo-Irish Agreement | — | 1985-11-15 | peace treaty | 12 | — |
@@ -2019,11 +2019,11 @@ to that file and another run, never an edit here.
 | [x] | [`Q426722`](https://www.wikidata.org/wiki/Q426722) | Rwandan Civil War | Guerra Civil de Ruanda | 1990-10-01 | civil war | 36 | — |
 | [ ] | [`Q643925`](https://www.wikidata.org/wiki/Q643925) | War of Dagestan | Invasão do Daguestão de 1999 | 1999-08-02 | civil war | 32 | — |
 | [ ] | [`Q1143379`](https://www.wikidata.org/wiki/Q1143379) | 1991–1992 South Ossetia War | Guerra na Ossétia do Sul em 1991-1992 | 1991-01-05 | war | 29 | — |
-| [ ] | [`Q1960733`](https://www.wikidata.org/wiki/Q1960733) | Second Liberian Civil War | Segunda Guerra Civil da Libéria | 1999-04-21 | civil war | 29 | — |
-| [ ] | [`Q12302518`](https://www.wikidata.org/wiki/Q12302518) | Afghan Civil War | Guerra Civil Afegã | 1996-09-27 | civil war | 29 | — |
+| [x] | [`Q1960733`](https://www.wikidata.org/wiki/Q1960733) | Second Liberian Civil War | Segunda Guerra Civil da Libéria | 1999-04-21 | civil war | 29 | — |
+| [x] | [`Q12302518`](https://www.wikidata.org/wiki/Q12302518) | Afghan Civil War | Guerra Civil Afegã | 1996-09-27 | civil war | 29 | — |
 | [ ] | [`Q1070890`](https://www.wikidata.org/wiki/Q1070890) | Georgian civil war of 1991–1993 | Guerra Civil na Geórgia | 1991-12-22 | civil war | 28 | — |
 | [ ] | [`Q959303`](https://www.wikidata.org/wiki/Q959303) | 1998 War in Abkhazia | Guerra na Abecásia de 1998 | 1998-05-20 | war | 27 | — |
-| [ ] | [`Q1980081`](https://www.wikidata.org/wiki/Q1980081) | Afghan Civil War | Guerra Civil Afegã | 1992-04-30 | civil war | 27 | — |
+| [x] | [`Q1980081`](https://www.wikidata.org/wiki/Q1980081) | Afghan Civil War | Guerra Civil Afegã | 1992-04-30 | civil war | 27 | — |
 | [ ] | [`Q647239`](https://www.wikidata.org/wiki/Q647239) | Burundi Civil War | Guerra Civil do Burundi | 1993-10-21 | civil war | 24 | — |
 | [ ] | [`Q2461485`](https://www.wikidata.org/wiki/Q2461485) | 1994 Summer War | Guerra Civil do Iêmen de 1994 | 1994-05-04 | civil war | 23 | — |
 | [ ] | [`Q1473919`](https://www.wikidata.org/wiki/Q1473919) | Operation Grapes of Wrath | Operação Vinhas da Ira | 1996-04-27 | war | 19 | — |
@@ -2056,7 +2056,7 @@ to that file and another run, never an edit here.
 | [ ] | [`Q76986`](https://www.wikidata.org/wiki/Q76986) | Belovezh Accords | Pacto de Belaveja | 1991-12-08 | treaty | 43 | — |
 | [ ] | [`Q159644`](https://www.wikidata.org/wiki/Q159644) | Treaty on the Final Settlement with Respect to Germany | Tratado Dois Mais Quatro | 1990-09-12 | multilateral treaty | 41 | — |
 | [ ] | [`Q570224`](https://www.wikidata.org/wiki/Q570224) | Ottawa Treaty | Tratado de Ottawa | 1997-12-03 | treaty | 39 | — |
-| [ ] | [`Q301336`](https://www.wikidata.org/wiki/Q301336) | Aarhus Convention | Convenção de Aarhus | 1998-06-25 | United Nations treaty | 38 | — |
+| [x] | [`Q301336`](https://www.wikidata.org/wiki/Q301336) | Aarhus Convention | Convenção de Aarhus | 1998-06-25 | United Nations treaty | 38 | — |
 | [ ] | [`Q331647`](https://www.wikidata.org/wiki/Q331647) | Agreement on Trade-Related Aspects of Intellectual Property Rights | Acordo TRIPs | 1994-04-15 | treaty | 36 | — |
 | [ ] | [`Q521306`](https://www.wikidata.org/wiki/Q521306) | Comprehensive Nuclear-Test-Ban Treaty | Tratado de Interdição Completa de Ensaios Nucleares | 1996-09-10 | United Nations treaty | 36 | — |
 | [ ] | [`Q931492`](https://www.wikidata.org/wiki/Q931492) | START I | START I | 1991-07-31 | treaty | 33 | — |

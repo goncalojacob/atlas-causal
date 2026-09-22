@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "munich-agreement--first-vienna-award--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Vienna Award\", revision 1373350087, § lead"
+    }
+  ],
+  "from": "munich-agreement",
+  "to": "first-vienna-award",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article's second sentence says the arbitration and the award were direct consequences of the previous month's Munich Agreement, which resulted in the partitioning of Czechoslovakia. The award separated from Czechoslovakia the mostly Hungarian-populated territories of southern Slovakia and southern Carpathian Rus' and returned them to Hungary.",
+  "dispute": null
+}

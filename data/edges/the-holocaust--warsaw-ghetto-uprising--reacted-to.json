@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "the-holocaust--warsaw-ghetto-uprising--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Warsaw Ghetto Uprising\", revision 1373044103, § lead"
+    }
+  ],
+  "from": "the-holocaust",
+  "to": "warsaw-ghetto-uprising",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English article says the rising was mounted by the Jewish resistance in the ghetto \"to oppose Nazi Germany’s final effort to transport the remaining ghetto population to the gas chambers of the Majdanek and Treblinka extermination camps in 1943\", and that it followed the Grossaktion Warsaw of the summer of 1942, in which more than a quarter of a million Jews were deported from the ghetto to Treblinka and murdered, after which the remaining Jews began building bunkers and smuggling in weapons. Read in the atlas’s own direction, the arrow runs from the persecution to the rising and the type names what the later event was: the rising reacted to the deportations, and was not caused by them in the sense that a consequence is.",
+  "dispute": null
+}

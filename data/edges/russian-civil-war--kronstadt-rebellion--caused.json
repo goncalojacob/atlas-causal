@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "russian-civil-war--kronstadt-rebellion--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kronstadt rebellion\", revision 1373564650, § Background"
+    }
+  ],
+  "from": "russian-civil-war",
+  "to": "kronstadt-rebellion",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article puts the rising inside the war and gives war communism as what produced it: as the civil war wound down in late 1920 the Bolsheviks faced \"mass disillusionment from unbearable living conditions—famine, disease, cold, and weariness—induced by the years of war and exacerbated by the Bolshevik policy of war communism\", peasants resented the requisitioning of grain, bread rations in the cities were cut by a third in January 1921, and the Cheka reported 155 peasant risings in February. The article calls Kronstadt the last major revolt against Bolshevik rule on Russian territory during the civil war.",
+  "dispute": null
+}

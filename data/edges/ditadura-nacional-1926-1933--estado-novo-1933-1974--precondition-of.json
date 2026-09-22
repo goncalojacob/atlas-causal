@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ditadura-nacional-1926-1933--estado-novo-1933-1974--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Estado Novo (Portugal)\", revision 1375585347, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ditadura Nacional\", revision 1365513062, § lead"
+    }
+  ],
+  "from": "ditadura-nacional-1926-1933",
+  "to": "estado-novo-1933-1974",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the Estado Novo says it evolved from the Ditadura Nacional formed after the coup of 28 May 1926 against the unstable First Republic, and that historians recognise the two together as the Second Portuguese Republic. The article on the Ditadura Nacional says the same from its own end: the dictatorship ran until the constitution of 1933 that ushered in the Estado Novo.",
+  "dispute": null
+}

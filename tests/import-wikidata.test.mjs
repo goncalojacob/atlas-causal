@@ -12,7 +12,8 @@ import { createValidator } from '../src/validate/schema.js';
 import { FIELDS, applyValues, valuesFromRecord } from '../src/contribute/bundle.js';
 import {
   createFetcher, HttpError, BudgetError, isRetryable, backoffMs,
-  entitiesUrl, searchUrl, summaryUrl, sparqlUrl, articleUrl, historyUrl,
+  entitiesUrl, entityDataUrl, fetchEntities, isMissing,
+  searchUrl, summaryUrl, sparqlUrl, articleUrl, historyUrl,
   readEntity, parseTime, claimPoint, countLanguageEditions, articleTitles,
   classify, intervalFor, slug, foldName, idFor, titleFor, NOT_ENGLISH_FLAG, namesFor, identityOf,
   mergeIdentity, ENRICHABLE, matchesFor, nameMatches, datesMatch, laneFor, laneNote,
@@ -135,6 +136,40 @@ test('429, 503 and a maxlag body are retried with backoff; a 404 is not', async 
   const gone = createFetcher({ fetchJson: async (url) => { throw new HttpError(404, url); }, delay: async () => {} });
   await assert.rejects(() => gone.get('x'), /404/);
   assert.equal(gone.calls, 1, 'a 404 is not retried');
+});
+
+test('a batch the rate limiter refuses is asked again one item at a time', async () => {
+  // `wbgetentities` is the one endpoint this sandbox is blocked on, and the
+  // block does not lift for a run (deviation 1013, and again on 22 September).
+  // Special:EntityData answers the same entity JSON one item at a time, so a
+  // refused batch costs one call per item rather than ending the run.
+  assert.equal(entityDataUrl('Q9000001'), 'https://www.wikidata.org/wiki/Special:EntityData/Q9000001.json');
+
+  const asked = [];
+  const all = JSON.parse(await readFile(path.join(FIXTURES, 'entities.json'), 'utf8'));
+  const fetcher = createFetcher({
+    delay: async () => {},
+    retries: 0,
+    fetchJson: async (url) => {
+      asked.push(url);
+      if (url.includes('wbgetentities')) throw new HttpError(429, url);
+      const qid = /Special:EntityData\/(Q\d+)\.json$/.exec(url)?.[1];
+      if (!qid) throw new HttpError(404, url);
+      if (!all[qid]) throw new HttpError(404, url);
+      return { entities: { [qid]: all[qid] } };
+    },
+  });
+
+  const entities = await fetchEntities(fetcher, ['Q9000001', 'Q9000002']);
+  assert.equal(asked.length, 3, 'the refused batch, then one call per item');
+  assert.ok(asked[0].includes('wbgetentities'));
+  assert.equal(entities.Q9000001?.id, 'Q9000001');
+  assert.equal(entities.Q9000002?.id, 'Q9000002');
+
+  // An item Special:EntityData does not have answers 404, which is the same
+  // "no such item" that wbgetentities says with `missing`.
+  const missing = await fetchEntities(fetcher, ['Q9999999']);
+  assert.equal(isMissing(missing.Q9999999), true);
 });
 
 // --- reading an item -------------------------------------------------------

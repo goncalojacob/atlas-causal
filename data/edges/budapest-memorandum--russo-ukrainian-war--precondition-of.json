@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "budapest-memorandum--russo-ukrainian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Ukrainian war\", revision 1375351069, § Background"
+    }
+  ],
+  "from": "budapest-memorandum",
+  "to": "russo-ukrainian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same section of the same article gives the memorandum as the assurance of Ukraine’s territorial integrity and independence that Russia, the United Kingdom and the United States made in 1994, in the background it writes for a war fought over that territory from 2014. The article states the undertaking and does not itself say the war broke it, which is why this is a precondition at probable.",
+  "dispute": null
+}

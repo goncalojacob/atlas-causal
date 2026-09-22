@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "entente-cordiale--french-conquest-of-morocco--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French conquest of Morocco\", revision 1374837625, § Background"
+    },
+    {
+      "source": "trout-1969-moroccos-saharan-frontiers",
+      "locator": "p. 171"
+    }
+  ],
+  "from": "entente-cordiale",
+  "to": "french-conquest-of-morocco",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article makes the Entente Cordiale the diplomatic price of the conquest: an earlier attempt to agree with Spain \"failed in 1902 because of disagreement over the limits of the future Spanish zone\", and then **\"the Franco-British agreement reached on 8 April 1904 involved the recognition of the predominant position of France in Morocco in exchange for France's recognition of the permanency of Britain's position in Egypt\"** — hung on Trout 1969, p. 171 — adding that \"the Franco-British agreement also specified a zone to be entrusted to Spain when it became necessary for France to occupy Morocco\". The article then records Germany refusing the arrangement: \"since 1904 the German Empire directed its efforts towards the internationalization of the Moroccan question\", and Wilhelm II went to Tangier on 31 March 1905.",
+  "dispute": null
+}

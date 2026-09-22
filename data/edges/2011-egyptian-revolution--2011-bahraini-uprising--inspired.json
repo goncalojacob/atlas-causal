@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2011-egyptian-revolution--2011-bahraini-uprising--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2011 Bahraini uprising\", revision 1374892677, § lead"
+    }
+  ],
+  "from": "2011-egyptian-revolution",
+  "to": "2011-bahraini-uprising",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The same sentence names Egypt beside Tunisia — “inspired by the unrest of the 2011 Arab Spring and protests in Tunisia and Egypt” — and the Egyptian revolution is a record this atlas already holds. Two edges rather than one because the article names two protests and not a single source, and the atlas would be putting words in it by choosing between them.",
+  "dispute": null
+}

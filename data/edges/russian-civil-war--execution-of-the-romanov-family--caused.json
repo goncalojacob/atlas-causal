@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "russian-civil-war--execution-of-the-romanov-family--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Murder of the Romanov family\", revision 1374973698, § lead and § Execution"
+    },
+    {
+      "source": "gellately-2007-lenin-stalin-hitler",
+      "locator": "p. 65"
+    }
+  ],
+  "from": "russian-civil-war",
+  "to": "execution-of-the-romanov-family",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article files the killings under the war in its own infobox — \"part of the Red Terror during the Russian Civil War\" — and gives the war as the reason for the timing: \"Some Western historians attribute the execution order to the government in Moscow, specifically Vladimir Lenin and Yakov Sverdlov, who wanted to prevent the rescue of the imperial family by the approaching Czechoslovak Legion during the Russian Civil War.\" It adds the same mechanism from the other side: \"In mid-July 1918, forces of the Czechoslovak Legion were closing on Yekaterinburg... the Bolsheviks, falsely believing that the Czechoslovaks were on a mission to rescue the family, panicked and executed their wards. The Legions arrived less than a week later and on 25 July captured the city.\" Who gave the order is disputed in that sentence; that the advance of the war is what brought it is not.",
+  "dispute": null
+}

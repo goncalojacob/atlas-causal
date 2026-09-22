@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "eritrean-war-of-independence--ethiopian-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ethiopian Civil War\", revision 1375950588, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eritrean War of Independence\", revision 1374058781, § infobox"
+    }
+  ],
+  "from": "eritrean-war-of-independence",
+  "to": "ethiopian-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The civil war's own article says the Eritrean war was already being fought when it began: **\"groups like the Eritrean Peoples Liberation Front (EPLF) and the Western Somali Liberation Front (WSLF) had already been fighting against the Ethiopian Empire in the northern Eritrean War of Independence and southern Ogaden insurgency\"**, and the Derg \"used large scale counterinsurgency military campaigns and the Qey Shibir (Red Terror) to repress the rebels\". The Eritrean war's article files itself under the civil war in turn — its infobox reads \"part of Opposition to Haile Selassie, **the Ethiopian Civil War**, the Cold War, the Sino-Soviet split, the conflicts in the Horn of Africa, and the Revolutions of 1989\" — but it begins in 1961 and the civil war in 1974, so it is a precondition of it and not a part of it, and no `parent` was written.",
+  "dispute": null
+}

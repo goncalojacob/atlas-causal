@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "united-nations-convention-against-corruption",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge. The English article, at revision 1348358226, is forty kilobytes on the convention's chapters, its review mechanism and its states parties, and argues it out of the General Assembly resolution that convened its negotiation; no event this atlas holds appears in it. The eighth instrument retracted on arrival for §7.4's reason."
+  },
+  "wikidata": "Q547979",
+  "wikipedia": {
+    "en": "United Nations Convention Against Corruption",
+    "pt": "Convenção das Nações Unidas contra a Corrupção"
+  },
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q547979"
+    }
+  ],
+  "title": "United Nations Convention Against Corruption",
+  "summary": "Wikidata item Q547979, imported by tools/import/wikidata.mjs. The item's own description reads \"Anti-corruption treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2003,
+    "end": 2003,
+    "date": "2003-12-09"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

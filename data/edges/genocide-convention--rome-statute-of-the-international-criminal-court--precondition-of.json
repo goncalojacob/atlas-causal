@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "genocide-convention--rome-statute-of-the-international-criminal-court--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rome Statute\", revision 1363920501, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Genocide Convention\", revision 1371861623, § lead"
+    }
+  ],
+  "from": "genocide-convention",
+  "to": "rome-statute-of-the-international-criminal-court",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the statute begins its history with the convention: General Assembly resolution 260 of 9 December 1948, the Convention on the Prevention and Punishment of the Crime of Genocide, \"was the first step toward the establishment of an international permanent criminal tribunal with jurisdiction on crimes yet to be defined in international treaties\", and the resolution expressed the hope that the UN legal commission would work in that direction. The article on the convention says from the other side that its definition of genocide has been adopted by international and hybrid tribunals, the International Criminal Court among them.",
+  "dispute": null
+}

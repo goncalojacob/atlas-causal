@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "iranian-revolution--twelve-day-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Twelve-Day War\", revision 1375310571, § Background"
+    }
+  ],
+  "from": "iranian-revolution",
+  "to": "twelve-day-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the war of June 2025 begins its background with the revolution: Israel maintained a close relationship with the Pahlavi monarchy until the Iranian Revolution, when the monarchy was ousted and replaced by an anti-Western theocratic Islamic republic led by Ruhollah Khomeini, and ever since, Iran’s government has repeatedly pledged to destroy Israel.",
+  "dispute": null
+}

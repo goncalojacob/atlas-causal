@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--anglo-iraqi-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Iraqi War\", revision 1372842948, § infobox and § Mandatory Iraq"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "anglo-iraqi-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article calls it \"a 1941 campaign during World War II\" and its infobox files it under \"the Mediterranean and Middle East theatre of World War II\", with Nazi Germany listed as giving military support to the Iraqi side. § Mandatory Iraq gives the quarrel the war was fought over and dates it to 1930: Britain governed Iraq under a League of Nations mandate until 1932, and before granting independence \"concluded the Anglo-Iraqi Treaty of 1930, which included permission to establish military bases for British use, and allowed unrestricted movement of British forces through the country upon request… **the conditions of the treaty were imposed by the British to ensure control of Iraqi petroleum. Many Iraqis resented these conditions.**\" The grievance is older than the war; what the war supplied was a Britain that could be fought and an Axis that would help.",
+  "dispute": null
+}

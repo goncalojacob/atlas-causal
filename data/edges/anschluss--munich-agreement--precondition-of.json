@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "anschluss--munich-agreement--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anschluss\", revision 1374499407, § Changes in Central Europe"
+    }
+  ],
+  "from": "anschluss",
+  "to": "munich-agreement",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article puts the two in one sentence and in this order: \"After the Anschluss, Hitler targeted Czechoslovakia, provoking an international crisis which led to the Munich Agreement in September 1938, giving Nazi Germany control of the industrial Sudetenland, which had a predominantly ethnic German population.\" Austria was annexed in March and the Sudeten crisis ran from the spring; the article also records that Hitler had told his commanders in November 1937 he would take both.",
+  "dispute": null
+}

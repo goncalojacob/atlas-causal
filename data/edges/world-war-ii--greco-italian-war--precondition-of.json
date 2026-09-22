@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--greco-italian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Greco-Italian War\", revision 1370621958, § lead"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "greco-italian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article derives the Italian move on Greece from Italy's belligerency: Italy declared war on France and the United Kingdom on 10 June 1940 and by September had invaded France, British Somaliland and Egypt; this \"was followed by a hostile press campaign in Italy against Greece, accused of being a British ally\", and the provocations culminated in the sinking of the Greek cruiser Elli and Mussolini's ultimatum of 28 October. The article also says the conflict \"began the Balkans campaign of World War II\", which is why the record is filed under the war as well.",
+  "dispute": null
+}

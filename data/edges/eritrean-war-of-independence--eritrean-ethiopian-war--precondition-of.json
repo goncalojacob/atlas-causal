@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "eritrean-war-of-independence--eritrean-ethiopian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eritrean–Ethiopian War\", revision 1372677015, § lead"
+    }
+  ],
+  "from": "eritrean-war-of-independence",
+  "to": "eritrean-ethiopian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The later war's article begins at the earlier one: **\"from 1961 until 1991, Eritrea fought a 30-year war of independence against Ethiopia; during this period, the Ethiopian Civil War also began on 12 September 1974, when the Derg staged a coup d'état against Emperor Haile Selassie. Both conflicts lasted until 1991 when the Ethiopian People's Revolutionary Democratic Front (EPRDF) – a coalition of rebel groups led by the Tigray People's Liberation Front (TPLF) – overthrew the Derg government.\"** Eritrea's independence is what made the border of 1998 a border between states, and what the two armies fought over is where the article says it runs: the disputed territories and the town of Badme.",
+  "dispute": null
+}

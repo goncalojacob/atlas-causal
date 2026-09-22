@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1893-franco-siamese-crisis--entente-cordiale--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1893 Franco-Siamese crisis\", revision 1374343940, § Consequences"
+    }
+  ],
+  "from": "1893-franco-siamese-crisis",
+  "to": "entente-cordiale",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article of the crisis counts the Entente among its own consequences, and says what it settled: \"The French and British both had strong interests in controlling parts of Indochina. Twice in the 1890s, they were on the verge of war over two different routes leading to Yunnan… In 1904, the French and the British put aside their many differences with the Entente Cordiale, ending this dispute in southeastern Asia.\" The crisis of 1893 is one of the quarrels the Entente was made to close.",
+  "dispute": null
+}

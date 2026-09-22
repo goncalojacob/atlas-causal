@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "suez-crisis--1958-lebanon-crisis--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1958 Lebanon crisis\", revision 1370279391, § Situation in Lebanon"
+    }
+  ],
+  "from": "suez-crisis",
+  "to": "1958-lebanon-crisis",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article of the Lebanese crisis makes Suez the split in Lebanese politics that the crisis of 1958 was fought across: \"In 1956, Prime Minister Abdallah El-Yafi and Minister of State Saeb Salam resigned in protest due to Chamoun's refusal to condemn the British-French invasion of Egypt during the Suez Crisis. This caused Muslim opposition groups to form the National Union Front in 1957.\" The Front is the opposition of 1958, so this is not the general Arab Cold War background the same article also gives but a named consequence.",
+  "dispute": null
+}

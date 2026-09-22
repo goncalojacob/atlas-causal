@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "jester-uyeki-jernigan-2020-fifty-years-h3n2",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "type": "article",
+  "creators": [
+    "Barbara J. Jester",
+    "Timothy M. Uyeki",
+    "Daniel B. Jernigan"
+  ],
+  "title": "Fifty Years of Influenza A(H3N2) Following the Pandemic of 1968",
+  "year": 2020,
+  "publisher": null,
+  "isbn": null,
+  "doi": "10.2105/AJPH.2019.305557",
+  "url": null,
+  "accessed": null,
+  "container": {
+    "title": "American Journal of Public Health",
+    "kind": "journal",
+    "issue": "110(5)",
+    "pages": "669-676"
+  },
+  "repository": null,
+  "reference": null
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "south-lebanon-conflict",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2479435",
+  "wikipedia": {
+    "en": "South Lebanon conflict (1985–2000)",
+    "pt": "Conflito no sul do Líbano (1985–2000)"
+  },
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2479435"
+    }
+  ],
+  "title": "South Lebanon conflict",
+  "summary": "Wikidata item Q2479435, imported by tools/import/wikidata.mjs. The item's own description reads \"1985-2000 war between Israel and insurgents in South Lebanon\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1985,
+    "end": 2000,
+    "date": "1985-02-16",
+    "endDate": "2000-05-25"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "arab-israeli-conflict",
+  "category": "war",
+  "actors": []
+}

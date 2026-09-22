@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "south-sudanese-civil-war",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -17,15 +17,12 @@
   "origin": {
     "tool": "wikidata"
   },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A, with the war in Darfur and the independence of South Sudan, which is not a record here. Both of the neighbours it has are the wrong side of the same gap."
-  },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
   },
   "wikidata": "Q15353665",
   "sitelinks": {

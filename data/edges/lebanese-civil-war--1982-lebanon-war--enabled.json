@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "lebanese-civil-war--1982-lebanon-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1982 Lebanon War\", revision 1370279817, § PLO's objectives"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lebanese Civil War\", revision 1375063016, § 1982 Israeli invasion"
+    }
+  ],
+  "from": "lebanese-civil-war",
+  "to": "1982-lebanon-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English article on the 1982 war puts the invasion inside the civil war rather than beside it: by 1975 the Palestinian refugees in Lebanon numbered more than 300,000 and the PLO had in effect created a state within a state in the south, which then played an important role in the civil war; and from 1976 Israel was already arming Lebanese Christian militias against the PLO, with the Maronite Phalange under Bashir Gemayel as its main partner. The war aims of June 1982 — destroy the PLO in Lebanon and install a pro-Israel Maronite government under Gemayel — are aims only the civil war made available. The claim is enabling and not causation: the article gives the attempted assassination of Shlomo Argov as the casus belli, and the civil war as what made an invasion of this shape possible.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "heligoland-zanzibar-treaty--entente-cordiale--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Heligoland–Zanzibar Treaty\", revision 1372103388, § Consequences"
+    }
+  ],
+  "from": "heligoland-zanzibar-treaty",
+  "to": "entente-cordiale",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article runs one line from the treaty to 1904: the treaty acquired Heligoland, an island strategically placed for control over the German Bight; with the Kiel Canal building from 1887, control of the Bight \"had become essential to Emperor Wilhelm's II plans for expansion of the Imperial Navy\"; and \"Wilhelm's naval policies aborted an accommodation with the British and ultimately led to a rapprochement between Britain and France, sealed with the Entente cordiale in 1904\". The naval policy and not the treaty is what the article says drove Britain to France, so this is a precondition and nothing stronger.",
+  "dispute": null
+}

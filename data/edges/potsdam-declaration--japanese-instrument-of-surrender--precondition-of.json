@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "potsdam-declaration--japanese-instrument-of-surrender--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Japanese Instrument of Surrender\", revision 1371613000, § lead; and \"Potsdam Declaration\", revision 1371052620, § lead"
+    }
+  ],
+  "from": "potsdam-declaration",
+  "to": "japanese-instrument-of-surrender",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The declaration is, by its own formal title, the \"Proclamation Defining Terms for Japanese Surrender\", and the instrument is the acceptance of those terms: the English article on the instrument describes the 15 August broadcast as \"the radio broadcast announcement of the acceptance of the terms of the Potsdam Declaration\", which the signing of 2 September formalised. The declaration set what a surrender would have to say; it is not by itself what made Japan surrender, and this edge claims only the first.",
+  "dispute": null
+}

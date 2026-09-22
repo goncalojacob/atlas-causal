@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "marco-polo-bridge-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q219230",
+  "wikipedia": {
+    "en": "Marco Polo Bridge incident",
+    "pt": "Incidente da Ponte Marco Polo"
+  },
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q219230"
+    }
+  ],
+  "title": "Marco Polo Bridge incident",
+  "summary": "Wikidata item Q219230, imported by tools/import/wikidata.mjs. The item's own description reads \"1937 initial battle of the Second Sino-Japanese War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1937,
+    "end": 1937,
+    "date": "1937-07-07",
+    "endDate": "1937-07-09"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "second-sino-japanese-war",
+  "category": "war",
+  "actors": []
+}

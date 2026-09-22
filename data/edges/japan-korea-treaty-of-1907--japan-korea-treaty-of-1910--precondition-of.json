@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "japan-korea-treaty-of-1907--japan-korea-treaty-of-1910--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Japan–Korea Treaty of 1910\", revision 1369552717, § lead"
+    }
+  ],
+  "from": "japan-korea-treaty-of-1907",
+  "to": "japan-korea-treaty-of-1910",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the annexation names the two instruments it completes: \"In this treaty, Japan formally annexed Korea following the Japan–Korea Treaty of 1905 (by which Korea became a protectorate of Japan) and the Japan–Korea Treaty of 1907 (by which Korea was deprived of the administration of internal affairs).\" The 1907 treaty is the step the 1910 one finishes; the 1905 treaty is not a record here and no edge is written for it.",
+  "dispute": null
+}

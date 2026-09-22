@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "angola-independence-1975--angolan-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Angolan Civil War\", revision 1371337338, § lead"
+    }
+  ],
+  "from": "angola-independence-1975",
+  "to": "angolan-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the civil war dates it from the independence: the war began immediately after Angola became independent from Portugal in November 1975, as a power struggle between two former anti-colonial guerrilla movements, the MPLA and UNITA, which had different roots in Angolan society and mutually incompatible leaderships despite their shared aim of ending colonial rule.",
+  "dispute": null
+}

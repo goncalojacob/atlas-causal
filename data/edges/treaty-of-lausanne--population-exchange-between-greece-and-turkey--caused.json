@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-of-lausanne--population-exchange-between-greece-and-turkey--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Population exchange between Greece and Turkey\", revision 1372041572, § lead and § The road to the exchange"
+    }
+  ],
+  "from": "treaty-of-lausanne",
+  "to": "population-exchange-between-greece-and-turkey",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The exchange \"stemmed from the 'Convention Concerning the Exchange of Greek and Turkish Populations' signed at Lausanne, Switzerland, on 30 January 1923, by the governments of Greece and Turkey\", and the article quotes the historian Dinah Shelton that **\"the Lausanne Treaty of 1923 completed the process of the forcible transfer of the Greeks\"**. The Convention and the Treaty are two instruments of one settlement and this atlas holds only the Treaty; its own record already says the treaty \"gave legal form to the compulsory exchange of Orthodox Christians and Muslims between Greece and Turkey\", so both ends say the same thing. Fridtjof Nansen, commissioned by the League of Nations, proposed and supervised the exchange.",
+  "dispute": null
+}

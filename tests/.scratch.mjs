@@ -1,0 +1,12 @@
+import path from 'node:path';
+import { atlasOf, ROOT } from './helpers.mjs';
+import { isMain } from '../src/lens.js';
+import { workingSet } from '../src/emphasis.js';
+import { defaultState } from '../src/state.js';
+const A = await atlasOf(path.join(ROOT, 'data'));
+const placed = (ids) => [...ids].filter((id) => A.events.get(id)?.place);
+const rest = workingSet(A, { ...defaultState(), from: A.extent.min, to: A.extent.max }).shown;
+const sel = workingSet(A, { ...defaultState(), from: A.extent.min, to: A.extent.max, selected: '1985-brazilian-presidential-election' }).shown;
+console.log('rest', rest.size, 'placed', placed(rest).length);
+console.log('sel ', sel.size, 'placed', placed(sel).length);
+console.log('sel ids:', [...sel].join(', '));

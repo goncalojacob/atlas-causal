@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "louvre-accord--black-monday--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Black Monday (1987)\", revision 1375770077, § Causes"
+    },
+    {
+      "source": "cohen-2007-global-monetary-governance",
+      "locator": "p. 65; the work the article hangs this sentence on"
+    }
+  ],
+  "from": "louvre-accord",
+  "to": "black-monday",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the crash gives the accord as one of its two standing explanations: \"A second explanation for the crash lies in a crisis of confidence in the dollar created by uncertainties regarding the viability of the Louvre Accord\", and, earlier, \"leading industrial countries had signed the Louvre Accord, hoping that monetary policy coordination would stabilize international money markets, but doubts about the viability of the accord created a crisis of confidence.\" It is a second explanation and not the only one, which is why this is probable and not consensus.",
+  "dispute": null
+}

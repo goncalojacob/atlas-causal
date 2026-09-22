@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "rome-statute-of-the-international-criminal-court",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,28 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class B. The honest neighbour is the genocide convention, which this round wired at two hops, leaving the statute at three; the other candidates are the tribunals for Yugoslavia and Rwanda, which are not records here, and the Yugoslav wars, retracted in this same commit. An edge from the Charter of the United Nations would be available and would argue nothing, which is what class C below refuses."
-  },
+  "revised": "2026-09-21",
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q838958",
-  "sitelinks": {
-    "count": 53,
-    "on": "2026-09-15"
-  },
   "wikipedia": {
     "en": "Rome Statute",
     "pt": "Estatuto de Roma"
+  },
+  "sitelinks": {
+    "count": 53,
+    "on": "2026-09-15"
   },
   "sources": [
     {

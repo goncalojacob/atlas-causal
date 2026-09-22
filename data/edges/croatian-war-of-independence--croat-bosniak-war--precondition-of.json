@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "croatian-war-of-independence--croat-bosniak-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Croat–Bosniak War\", revision 1373788616, § Background"
+    },
+    {
+      "source": "goldstein-1999-croatia-a-history",
+      "locator": "p. 243"
+    }
+  ],
+  "from": "croatian-war-of-independence",
+  "to": "croat-bosniak-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article's background says that from July 1991 to January 1992, during the Croatian War of Independence, the JNA and Serb paramilitaries used Bosnian territory to wage attacks on Croatia, and that the Croatian government began arming Croats in the Herzegovina region as early as October or November 1991, expecting that the Serbs would spread the war into Bosnia and Herzegovina; the article hangs that expectation on Goldstein 1999, page 243, which is the second author here. By late 1991 about 20,000 Croats in Bosnia and Herzegovina had enlisted in the Croatian National Guard.",
+  "dispute": null
+}

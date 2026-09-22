@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "soviet-afghan-war--war-in-afghanistan-2001-2021--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War in Afghanistan (2001–2021)\", revision 1375768099, § Guerrilla warfare"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War in Afghanistan (2001–2021)\", revision 1375768099, § lead"
+    }
+  ],
+  "from": "soviet-afghan-war",
+  "to": "war-in-afghanistan-2001-2021",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says the war of 2001 was part of the ongoing Afghan conflict rather than a thing on its own, and that the force it was fought against carried the earlier war forward: \"Owing to their roots in the anti-Soviet mujahideen, the Taliban carried on the guerrilla tactics developed in the 1980s.\" The cause the article gives for the invasion is the attacks of 11 September 2001, which this atlas does not hold; what is claimed here is only the precondition the article states, that the adversary of 2001 came out of the war of the 1980s.",
+  "dispute": null
+}

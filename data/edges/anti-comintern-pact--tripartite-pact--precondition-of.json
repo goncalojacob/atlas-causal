@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "anti-comintern-pact--tripartite-pact--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tripartite Pact\", revision 1375181328, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tripartite Pact\", revision 1375181328, § lead"
+    }
+  ],
+  "from": "anti-comintern-pact",
+  "to": "tripartite-pact",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the pact of 1940 puts the two in one series: the Tripartite Pact was, \"together with the Anti-Comintern Pact and the Pact of Steel, one of a number of agreements between Germany, Japan, Italy, and other countries of the Axis powers governing their relationship\", and \"Germany and Japan technically became allies with the signing of Anti-Comintern Pact of 1936\". The claim is that the alliance of 1940 was built on the alignment of 1936, which is what the article says, and not that the earlier pact caused the later one.",
+  "dispute": null
+}

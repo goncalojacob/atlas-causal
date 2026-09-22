@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "the-amazon-rubber-boom--treaty-of-petropolis--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Petrópolis\", revision 1370155152, § lead"
+    }
+  ],
+  "from": "the-amazon-rubber-boom",
+  "to": "treaty-of-petropolis",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says the treaty ended the Acre War between Bolivia and Brazil over the then-Bolivian territory of Acre, \"a desirable territory in Bolivia-Brazil border during the contemporary rubber boom\", and that Brazil took Acre in exchange for territory between the Abuna and the Madeira, two million pounds and a pledge to build a railway bypassing the rapids on the Madeira. What made the ground worth a war is what the article names, and it is the boom this atlas already holds. The article dates the signature 17 November 1903 and the record carries the item's own 11 November; neither was changed to match the other.",
+  "dispute": null
+}

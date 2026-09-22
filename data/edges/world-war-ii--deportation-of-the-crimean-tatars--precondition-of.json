@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--deportation-of-the-crimean-tatars--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Deportation of the Crimean Tatars\", revision 1375533569, § lead"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "deportation-of-the-crimean-tatars",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says the Soviet government presented the deportation as collective punishment, on its claim that some Crimean Tatars collaborated with Nazi Germany in the war — noting that the 20,000 who collaborated with the Axis were half the 40,000 who served in the Red Army — and that several modern scholars instead believe the deportation was part of a plan to gain access to the Dardanelles and acquire territory in Turkey, or to clear minorities from the border regions. The war is the occasion the government gave; the article is explicit that scholars dispute that it is the reason.",
+  "dispute": null
+}

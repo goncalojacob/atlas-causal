@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "potsdam-conference--potsdam-declaration--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Potsdam Declaration\", revision 1371052620, § lead and § Drafting"
+    }
+  ],
+  "from": "potsdam-conference",
+  "to": "potsdam-declaration",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The declaration is the conference's own act, and the article says so: on 26 July 1945 Truman, Churchill and Chiang Kai-shek \"issued the document, which outlined the terms of surrender for the Empire of Japan, **as agreed upon at the Potsdam Conference**\". § Drafting shows the conference doing the work — the American delegation opened with a proclamation demanding unconditional surrender, \"the Potsdam Declaration went through many drafts until a version acceptable to all was found\", and Stalin declined to endorse it there because the Soviet Union was not yet at war with Japan.",
+  "dispute": null
+}

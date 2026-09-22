@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "1963-south-vietnamese-coup",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1078181",
+  "wikipedia": {
+    "en": "1963 South Vietnamese coup d'état",
+    "pt": "Golpe de Estado no Vietnã do Sul em 1963"
+  },
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1078181"
+    }
+  ],
+  "title": "1963 South Vietnamese coup",
+  "summary": "Wikidata item Q1078181, imported by tools/import/wikidata.mjs. The item's own description reads \"1963 military coup in South Vietnam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1963,
+    "end": 1963,
+    "date": "1963-11-01"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "vietnam-war",
+  "category": "revolution",
+  "actors": []
+}

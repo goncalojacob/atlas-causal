@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "srebrenica-massacre--dayton-agreement--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bosnian War\", revision 1375967053, § lead"
+    }
+  ],
+  "from": "srebrenica-massacre",
+  "to": "dayton-agreement",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the war puts the massacre on the road to the settlement: **\"after the Srebrenica and Markale massacres, NATO intervened in 1995 with Operation Deliberate Force, targeting the positions of the Army of the Republika Srpska, which proved key in ending the war\"**, and after the ceasefires of 14 September and 5 October \"peace negotiations were held in Dayton, Ohio, and the war ended when the Dayton Accords were initialed on 21 November 1995\". The massacre is one of two the article names as what brought NATO in, not the whole of it, which is why this is a precondition.",
+  "dispute": null
+}

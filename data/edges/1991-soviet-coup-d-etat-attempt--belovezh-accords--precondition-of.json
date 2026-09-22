@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1991-soviet-coup-d-etat-attempt--belovezh-accords--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Belovezha Accords\", revision 1373420915, § lead"
+    }
+  ],
+  "from": "1991-soviet-coup-d-etat-attempt",
+  "to": "belovezh-accords",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article quotes one of the three signatories, Stanislav Shushkevich, saying in 2006 that by December the union had already been broken up by the putschists who in August 1991 had tried to remove Gorbachev from power to prevent the transformation of the Soviet Union into what he described as a confederation. The article reports that as a participant's account of why the three met, not as a settled finding.",
+  "dispute": null
+}

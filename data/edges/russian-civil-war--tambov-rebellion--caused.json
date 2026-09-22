@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "russian-civil-war--tambov-rebellion--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tambov Rebellion\", revision 1370749600, § Background"
+    }
+  ],
+  "from": "russian-civil-war",
+  "to": "tambov-rebellion",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The rebellion’s article gives the war’s own policy as what produced it: “Following the outbreak of the Russian Civil War, the newly established Russian Soviet Republic adopted the policy of war communism, in which food for the cities was obtained by compulsory requisition from the villages, without financial compensation. This was met with the resistance of the peasant population, especially as the requisitions were often violent in nature.” It is the same argument, from the same place in the same encyclopedia, as the edge this atlas already carries from the civil war to the Kronstadt rebellion.",
+  "dispute": null
+}

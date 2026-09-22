@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "donghak-peasant-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q701045",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "Tonghak Peasant Revolution",
+    "pt": "Rebelião Camponesa Donghak"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q701045"
+    }
+  ],
+  "title": "Donghak Peasant Revolution",
+  "summary": "Wikidata item Q701045, imported by tools/import/wikidata.mjs. The item's own description reads \"a major peasant revolt in Korea, 1894-1895\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1894,
+    "end": 1895,
+    "date": "1894-01-11",
+    "endDate": "1895-03-29"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

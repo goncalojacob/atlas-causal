@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "independence-of-morocco",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q74200048",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q74200048"
+    }
+  ],
+  "title": "Independence of Morocco",
+  "summary": "Wikidata item Q74200048, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1956,
+    "end": 1956,
+    "date": "1956-11-18"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "founding",
+  "actors": []
+}

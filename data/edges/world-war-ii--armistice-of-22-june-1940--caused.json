@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--armistice-of-22-june-1940--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Armistice of 22 June 1940\", revision 1370957537, § lead and § Battle of France"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "armistice-of-22-june-1940",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article gives the armistice as the outcome of a campaign of the war: **\"following the decisive German victory in the Battle of France, the armistice established a German occupation zone in Northern and Western France that encompassed about three-fifths of France's European territory, including all English Channel and Atlantic Ocean ports.\"** § Battle of France is the account of how it came to be signed: the best French armies lost in the northern encirclement, the government relocated to Bordeaux on 10 June, Paris was declared an open city, and Reynaud resigned on 16 June in a cabinet full of pro-armistice ministers, Pétain becoming prime minister.",
+  "dispute": null
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "libyan-civil-war--mali-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mali War\", revision 1375920868, § Background"
+    },
+    {
+      "source": "miroiu-alecu-2024-mali-conflict",
+      "locator": "pp. 58–71"
+    }
+  ],
+  "from": "libyan-civil-war",
+  "to": "mali-war",
+  "type": "precondition-of",
+  "confidence": "consensus",
+  "explanation": "The English article says that from February 2011, with the collapse of Gaddafi's Libya, hundreds of his Tuareg fighters — many veterans of earlier rebellions and now unemployed — returned to Mali with large stockpiles of weapons, and that in October 2011 the returning fighters negotiated at Zakak with local leaders and formed the National Movement for the Liberation of Azawad, which began the rebellion of 16 January 2012. The article hangs that sentence on Miroiu and Alecu, so two authors and not one encyclopedia stand behind it.",
+  "dispute": null
+}

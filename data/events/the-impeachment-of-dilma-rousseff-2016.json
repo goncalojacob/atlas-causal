@@ -13,16 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
-  "origin": {
-    "tool": "assistant",
-    "run": "m57"
-  },
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
       "m57-narrative"
     ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
   },
   "sources": [
     {
@@ -31,6 +31,9 @@
     }
   ],
   "title": "The impeachment of Dilma Rousseff, 2016",
+  "names": [
+    "Impeachment de Dilma Rousseff"
+  ],
   "summary": "The petition was accepted by Eduardo Cunha, president of the Chamber of Deputies, on 2 December 2015, and charged the president with administrative misconduct and disregard for the federal budget under article 85 of the 1988 constitution and the Fiscal Responsibility Law. It also accused her of failing to act on what Operation Car Wash had found at Petrobras, whose board she had chaired during the period investigated — though the Petrobras charges were left out in the end, the prosecutor-general having argued that a sitting president could not be investigated for acts before election, and having said there was no doubt she was not corrupt. She had begun her second term weakened by the recession of 2014–2016 and by disapproval that reached 71 per cent. She was formally impeached on 17 April 2016, suspended on 12 May and removed on 31 August; her vice-president Michel Temer served out the term.",
   "when": {
     "start": 2015,
@@ -39,15 +42,13 @@
     "endDate": "2016-08-31"
   },
   "place": "brasilia",
+  "region": null,
+  "parent": "nova-republica-brazil-since-1985",
   "actors": [
     {
       "actor": "brazil",
       "role": "government",
       "note": "the state whose congress tried its president under the constitution of 1988"
     }
-  ],
-  "names": [
-    "Impeachment de Dilma Rousseff"
-  ],
-  "region": null
+  ]
 }

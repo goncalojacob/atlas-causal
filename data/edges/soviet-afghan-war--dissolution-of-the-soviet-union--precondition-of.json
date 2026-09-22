@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "soviet-afghan-war--dissolution-of-the-soviet-union--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet–Afghan War\", revision 1375699993, § lead"
+    }
+  ],
+  "from": "soviet-afghan-war",
+  "to": "dissolution-of-the-soviet-union",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says the decade-long confrontation between the mujahideen and the Soviet and Afghan militaries inflicted grave destruction throughout Afghanistan and has been cited by scholars as a significant factor contributing to the dissolution of the Soviet Union in 1991, which is why the conflict is sometimes called the Soviet Union's Vietnam. The article reports that as what scholars have said and puts the war among the factors, not as the cause.",
+  "dispute": null
+}

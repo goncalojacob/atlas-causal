@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1982-lebanon-war--south-lebanon-conflict--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"South Lebanon conflict (1985–2000)\", revision 1370747846, § lead"
+    }
+  ],
+  "from": "1982-lebanon-war",
+  "to": "south-lebanon-conflict",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The conflict’s own article dates it from the war that preceded it and names the moment: it “took place in Israeli-occupied southern Lebanon from 1982 or 1985 until Israel’s withdrawal in 2000… Israel officially names the conflict the Security Zone in Lebanon Campaign and deems it to have begun on 30 September 1982, after the end of its ‘Operation Peace for Galilee’.” The occupation the 1982 war left behind is what the fifteen years of fighting were over. **The two dates in that sentence are the reason the record carries 1985**: Wikidata takes the later one, and the edge is written to the article rather than to the field.",
+  "dispute": null
+}

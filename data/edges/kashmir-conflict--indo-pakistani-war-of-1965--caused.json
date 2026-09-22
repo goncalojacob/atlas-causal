@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "kashmir-conflict--indo-pakistani-war-of-1965--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kashmir conflict\", revision 1374133428, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"India–Pakistan war of 1965\", revision 1371230624, § Background"
+    }
+  ],
+  "from": "kashmir-conflict",
+  "to": "indo-pakistani-war-of-1965",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the conflict says that in 1965 Pakistan attempted to infiltrate Indian-administered Kashmir to precipitate an insurgency there, and that this resulted in another war fought by the two countries over the region. The article on the war says the same from the other end: although other border disputes existed, the Kashmir conflict was the predominant issue dividing the two states, and Pakistan believed the population of Kashmir was discontented with Indian rule and that a resistance movement could be ignited by a few infiltrating saboteurs.",
+  "dispute": null
+}

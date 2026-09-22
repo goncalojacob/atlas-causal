@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "rwandan-civil-war--arusha-accords--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rwandan genocide\", revision 1375989507, § lead"
+    }
+  ],
+  "from": "rwandan-civil-war",
+  "to": "arusha-accords",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article says of the war that began in 1990 that **\"the war reached a tentative peace with the Arusha Accords in 1993\"**. That is this atlas's existing shape for a war and the instrument that ends it, as `spanish-american-war-1898 --caused--> treaty-of-paris-1898` and `korean-war --caused--> korean-armistice-agreement` already are.",
+  "dispute": null
+}

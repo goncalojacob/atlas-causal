@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "french-conquest-of-morocco--rif-war--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French conquest of Morocco\", revision 1374837625, § Rif War"
+    }
+  ],
+  "from": "french-conquest-of-morocco",
+  "to": "rif-war",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The conquest's own article carries the Rif war as a section of itself, and describes it as a reaction: \"**Sultan Yusef's reign, from 1912 to 1927, was turbulent and marked with frequent uprisings against Spain and France. The most serious of these was a Berber uprising in the Rif Mountains, led by Abd el-Krim**, who managed to establish a republic in the Rif. Though this rebellion began in the Spanish-controlled area in the north, it reached the French-controlled area. A coalition of France and Spain finally defeated the rebels in 1926.\" The Rif war's own article agrees on the ground: the Spanish advance \"began in 1911 with the Larache landing\", and after the Treaty of Fez \"the northern Moroccan area was adjudicated to Spain as a protectorate. The Riffian populations strongly resisted the Spanish.\" **`rif-war` is not filed under the conquest** although 1911–1927 falls inside 1907–1937: the rising was principally against Spain and the record here is of the *French* conquest, which is exactly the arguable case M62 §3 says to list rather than file.",
+  "dispute": null
+}

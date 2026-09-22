@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "treaty-establishing-a-constitution-for-europe--treaty-of-lisbon--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Lisbon\", revision 1366118806, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty establishing a Constitution for Europe\", revision 1365470273, § lead"
+    }
+  ],
+  "from": "treaty-establishing-a-constitution-for-europe",
+  "to": "treaty-of-lisbon",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Lisbon treaty is what the constitutional treaty’s failure produced. The English article says the negotiations begun in 2001 resulted first in the proposed constitution, which was abandoned after rejection by 55% of French voters on 29 May 2005 and 61% of Dutch voters on 1 June; that after \"a period of reflection\" the member states agreed instead to keep the existing treaties and amend them, \"to bring into law a number of the reforms that had been envisaged in the abandoned constitution\"; and that the amending reform treaty was drawn up and signed at Lisbon in 2007. The constitutional treaty’s own article says the same from its end.",
+  "dispute": null
+}

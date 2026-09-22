@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2014-pro-russian-unrest-in-ukraine--war-in-donbas--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War in Donbas\", revision 1370749630, lead and § Protests in the Donbas"
+    }
+  ],
+  "from": "2014-pro-russian-unrest-in-ukraine",
+  "to": "war-in-donbas",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article runs the one into the other. Its § Protests in the Donbas opens “Following the revolution, counter-revolutionary and pro-Russian protests began in parts of the Donbas” and, of 6 April, “demonstrators in Donetsk demanded a referendum on autonomy or accession to Russia”; six days later “unmarked pro-Russian militants seized the Donetsk headquarters of the Interior Ministry and two police stations without resistance”, which is where this record begins. `enabled`: the protests are the ground the armed seizures were made on and not an order to make them, and the lead gives the war’s own movers as “Russian-backed paramilitaries”.",
+  "dispute": null
+}

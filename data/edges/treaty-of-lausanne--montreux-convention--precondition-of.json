@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-of-lausanne--montreux-convention--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Montreux Convention Regarding the Regime of the Straits\", revision 1358705200, § Background"
+    }
+  ],
+  "from": "treaty-of-lausanne",
+  "to": "montreux-convention",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Montreux is the revision of a regime Lausanne set. The English article says that in 1923 the Treaty of Lausanne had demilitarised the Dardanelles and opened the Straits to unrestricted civilian and military traffic under an International Straits Commission of the League of Nations; that in April 1935 the Turkish government sent a note to the signatories of Lausanne proposing a conference on a new regime, on the ground that the international situation had changed since 1923; and that as its preamble states, the convention replaced the terms of the Lausanne treaty regarding the Straits.",
+  "dispute": null
+}
