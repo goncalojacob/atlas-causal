@@ -980,6 +980,15 @@
         }
       ]
     },
+    "angolan-war-of-independence--angolan-civil-war--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "anschluss--austrian-state-treaty--precondition-of": {
       "from": "git",
       "versions": [
@@ -1069,7 +1078,7 @@
       ]
     },
     "attack-on-the-moncada-barracks--cuban-revolution--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1126,7 +1135,7 @@
       ]
     },
     "battle-of-alegria-de-pio--battle-of-la-plata-1957--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1490,7 +1499,7 @@
       ]
     },
     "colombian-conflict--1999-2002-farc-government-peace-process--reacted-to": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2003,7 +2012,7 @@
       ]
     },
     "cuban-revolution--operation-verano--reacted-to": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2836,7 +2845,7 @@
       ]
     },
     "havana-presidential-palace-attack-1957--humboldt-7-massacre--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3284,6 +3293,15 @@
         }
       ]
     },
+    "marco-polo-bridge-incident--second-sino-japanese-war--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "molotov-ribbentrop-pact--german-soviet-treaty-of-friendship-cooperation-and-demarcation--precondition-of": {
       "from": "git",
       "versions": [
@@ -3628,7 +3646,7 @@
       ]
     },
     "operation-verano--battle-of-santa-clara--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4211,7 +4229,7 @@
       ]
     },
     "santiago-de-cuba-uprising--battle-of-alegria-de-pio--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4321,6 +4339,15 @@
         }
       ]
     },
+    "second-sudanese-civil-war--comprehensive-peace-agreement--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "second-sudanese-civil-war--war-in-darfur--precondition-of": {
       "from": "git",
       "versions": [
@@ -4395,6 +4422,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "six-day-war--war-of-attrition--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4508,6 +4544,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "suez-crisis--six-day-war--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

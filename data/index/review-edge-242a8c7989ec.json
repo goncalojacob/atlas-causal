@@ -2995,6 +2995,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-22",
+      "from": "angolan-war-of-independence",
+      "id": "angolan-war-of-independence--angolan-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "angolan-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "anschluss",
       "id": "anschluss--austrian-state-treaty--precondition-of",
@@ -4569,6 +4597,34 @@
       "status": "active",
       "to": "us-air-bases-in-the-brazilian-northeast-1942",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "comprehensive-peace-agreement",
+      "id": "comprehensive-peace-agreement--2011-south-sudanese-independence-referendum--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2011-south-sudanese-independence-referendum",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -10204,6 +10260,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-22",
+      "from": "marco-polo-bridge-incident",
+      "id": "marco-polo-bridge-incident--second-sino-japanese-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-sino-japanese-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "molotov-ribbentrop-pact",
       "id": "molotov-ribbentrop-pact--german-soviet-treaty-of-friendship-cooperation-and-demarcation--precondition-of",
@@ -11058,6 +11142,34 @@
       "status": "active",
       "to": "falklands-war",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "operation-serval",
+      "id": "operation-serval--operation-barkhane--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "operation-barkhane",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -13325,6 +13437,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-22",
+      "from": "second-sudanese-civil-war",
+      "id": "second-sudanese-civil-war--comprehensive-peace-agreement--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "comprehensive-peace-agreement",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "second-sudanese-civil-war",
       "id": "second-sudanese-civil-war--war-in-darfur--precondition-of",
@@ -13561,6 +13701,34 @@
       "status": "active",
       "to": "indo-pakistani-war-of-1965",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "six-day-war",
+      "id": "six-day-war--war-of-attrition--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "war-of-attrition",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -14039,6 +14207,34 @@
       "revised": null,
       "status": "active",
       "to": "1958-lebanon-crisis",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "suez-crisis",
+      "id": "suez-crisis--six-day-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "six-day-war",
       "type": "precondition-of"
     },
     {
@@ -17112,6 +17308,34 @@
       "status": "active",
       "to": "dayton-agreement",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "war-in-somalia",
+      "id": "war-in-somalia--somali-civil-war-2009-present--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "somali-civil-war-2009-present",
+      "type": "precondition-of"
     },
     {
       "authors": [

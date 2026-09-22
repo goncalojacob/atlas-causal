@@ -2715,7 +2715,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "2011-south-sudanese-independence-referendum",
       "kind": "event",
       "origin": {
@@ -4083,7 +4083,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 4,
+      "degree": 5,
       "id": "angolan-civil-war",
       "kind": "event",
       "origin": {
@@ -4100,6 +4100,38 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Angolan Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "angolan-war-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "portuguese-colonial-war-1961-1974",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Angolan War of Independence"
     },
     {
       "authors": [
@@ -7768,6 +7800,38 @@
       "revised": "2026-09-18",
       "status": "active",
       "title": "Volta Redonda: the Companhia Siderúrgica Nacional, 1941"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 2,
+      "id": "comprehensive-peace-agreement",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-sudanese-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-by-span-and-subject"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Comprehensive Peace Agreement"
     },
     {
       "authors": [
@@ -14354,6 +14418,7 @@
         "wikidata"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "marco-polo-bridge-incident",
       "kind": "event",
       "origin": {
@@ -15372,6 +15437,38 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "operation-barkhane",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Barkhane"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-09-22",
@@ -15697,6 +15794,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "operation-serval",
       "kind": "event",
       "origin": {
@@ -18188,7 +18286,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "second-sino-japanese-war",
       "kind": "event",
       "origin": {
@@ -18222,7 +18320,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "second-sudanese-civil-war",
       "kind": "event",
       "origin": {
@@ -18723,6 +18821,38 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 2,
+      "id": "six-day-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "arab-israeli-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Six-Day War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-09-22",
@@ -18959,6 +19089,39 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Somali Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "somali-civil-war-2009-present",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "somali-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Somali Civil War (2009–present)"
     },
     {
       "authors": [
@@ -19355,7 +19518,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "suez-crisis",
       "kind": "event",
       "origin": {
@@ -22311,7 +22474,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "war-in-somalia",
       "kind": "event",
       "origin": {
@@ -22344,7 +22507,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "war-of-attrition",
       "kind": "event",
       "origin": {
@@ -23827,12 +23990,6 @@
     {
       "id": "marco-polo-bridge-incident",
       "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "marco-polo-bridge-incident",
-      "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
     },
@@ -23949,12 +24106,6 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
-    },
-    {
-      "id": "operation-serval",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
     },
     {
       "id": "operation-sutton",

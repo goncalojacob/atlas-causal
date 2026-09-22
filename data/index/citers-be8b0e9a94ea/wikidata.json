@@ -2138,6 +2138,12 @@
     },
     {
       "dissent": false,
+      "id": "angolan-war-of-independence",
+      "kind": "event",
+      "locator": "Q1780216"
+    },
+    {
+      "dissent": false,
       "id": "anschluss",
       "kind": "event",
       "locator": "Q154681"
@@ -2729,6 +2735,12 @@
       "id": "colombian-peace-process",
       "kind": "event",
       "locator": "Q5858325"
+    },
+    {
+      "dissent": false,
+      "id": "comprehensive-peace-agreement",
+      "kind": "event",
+      "locator": "Q1424647"
     },
     {
       "dissent": false,
@@ -3728,6 +3740,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-barkhane",
+      "kind": "event",
+      "locator": "Q17354007"
+    },
+    {
+      "dissent": false,
       "id": "operation-black-buck",
       "kind": "event",
       "locator": "Q1968528"
@@ -4202,6 +4220,12 @@
     },
     {
       "dissent": false,
+      "id": "six-day-war",
+      "kind": "event",
+      "locator": "Q49077"
+    },
+    {
+      "dissent": false,
       "id": "skirmish-at-many-branch-point",
       "kind": "event",
       "locator": "Q7535905"
@@ -4229,6 +4253,12 @@
       "id": "somali-civil-war",
       "kind": "event",
       "locator": "Q243620"
+    },
+    {
+      "dissent": false,
+      "id": "somali-civil-war-2009-present",
+      "kind": "event",
+      "locator": "Q1052332"
     },
     {
       "dissent": false,

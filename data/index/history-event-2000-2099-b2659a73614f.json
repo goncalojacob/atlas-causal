@@ -1942,10 +1942,16 @@
       ]
     },
     "2019-bogota-car-bombing": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-09-22"
         }
       ]
@@ -3184,7 +3190,7 @@
       ]
     },
     "andino-shopping-mall-attack": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3263,20 +3269,32 @@
             "parent"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
     "atentado-a-la-estacion-de-policia-de-barranquilla": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-09-22"
         }
       ]
     },
     "attack-on-cerro-montezuma": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3349,7 +3367,7 @@
       ]
     },
     "bombing-in-zona-rosa-of-bogota-of-2003": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3392,7 +3410,7 @@
       ]
     },
     "boyaca-necklace-bomb-incident": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3494,19 +3512,34 @@
       ]
     },
     "catatumbo-campaign": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-09-22"
         }
       ]
     },
     "colombian-conflict-2018-present": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-09-22"
         }
       ]
@@ -3532,6 +3565,15 @@
             "sources",
             "summary"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "comprehensive-peace-agreement": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -3970,7 +4012,7 @@
       ]
     },
     "false-positives-in-colombia": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4281,7 +4323,7 @@
       ]
     },
     "house-bomb-attack-in-neiva": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5153,6 +5195,15 @@
         }
       ]
     },
+    "operation-barkhane": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "operation-car-wash-2014": {
       "from": "git",
       "versions": [
@@ -5169,7 +5220,7 @@
       ]
     },
     "operation-jaque": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5178,7 +5229,7 @@
       ]
     },
     "operation-jm": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5602,6 +5653,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "somali-civil-war-2009-present": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -6161,10 +6221,16 @@
       ]
     },
     "united-states-military-campaign-against-cartels": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-09-22"
         }
       ]

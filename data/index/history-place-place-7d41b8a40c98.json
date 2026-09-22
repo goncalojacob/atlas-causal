@@ -66,7 +66,7 @@
       ]
     },
     "alegria-de-pio": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -283,7 +283,7 @@
       ]
     },
     "bartolome-maso-cuba": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -301,7 +301,7 @@
       ]
     },
     "bayamo": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -448,7 +448,7 @@
       ]
     },
     "bogota": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -457,7 +457,7 @@
       ]
     },
     "bolivar-department": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -691,7 +691,7 @@
       ]
     },
     "caribbean-sea": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -700,7 +700,7 @@
       ]
     },
     "catatumbo-river": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -777,7 +777,7 @@
       ]
     },
     "chapinero": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -831,7 +831,7 @@
       ]
     },
     "chiquinquira": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -849,7 +849,7 @@
       ]
     },
     "cienfuegos": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -961,7 +961,7 @@
       ]
     },
     "cundinamarca-department": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1663,7 +1663,7 @@
       ]
     },
     "guaviare-department": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2798,7 +2798,7 @@
       ]
     },
     "matanzas": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2807,7 +2807,7 @@
       ]
     },
     "mayari": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2855,7 +2855,7 @@
       ]
     },
     "mitu": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3058,6 +3058,15 @@
         }
       ]
     },
+    "naivasha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "nazi-germany-q7318": {
       "from": "git",
       "versions": [
@@ -3105,7 +3114,7 @@
       ]
     },
     "neiva": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3364,7 +3373,7 @@
       ]
     },
     "oriente-province": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3836,7 +3845,7 @@
       ]
     },
     "pueblo-rico": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4094,6 +4103,15 @@
         }
       ]
     },
+    "sahel": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "saint-denis": {
       "from": "git",
       "versions": [
@@ -4207,7 +4225,7 @@
       ]
     },
     "san-jacinto": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4225,7 +4243,7 @@
       ]
     },
     "san-vicente-del-caguan": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4249,7 +4267,7 @@
       ]
     },
     "santa-clara-cuba": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4405,7 +4423,7 @@
       ]
     },
     "sierra-maestra": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5021,7 +5039,7 @@
       ]
     },
     "uraba-choco": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5333,7 +5351,7 @@
       ]
     },
     "yaguajay-cuba": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

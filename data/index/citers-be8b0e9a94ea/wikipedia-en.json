@@ -1592,6 +1592,12 @@
     },
     {
       "dissent": false,
+      "id": "angolan-war-of-independence--angolan-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Angolan War of Independence\", revision 1370428662, § Alvor Agreement"
+    },
+    {
+      "dissent": false,
       "id": "anschluss--austrian-state-treaty--precondition-of",
       "kind": "edge",
       "locator": "\"Anschluss\", revision 1374499407, § Changes in Central Europe"
@@ -1931,6 +1937,12 @@
       "id": "companhia-siderurgica-nacional-1941--us-air-bases-in-the-brazilian-northeast-1942--caused",
       "kind": "edge",
       "locator": "\"Getúlio Vargas\", revision 1373660809"
+    },
+    {
+      "dissent": false,
+      "id": "comprehensive-peace-agreement--2011-south-sudanese-independence-referendum--precondition-of",
+      "kind": "edge",
+      "locator": "\"Comprehensive Peace Agreement\", revision 1372495468, § lead"
     },
     {
       "dissent": false,
@@ -3110,6 +3122,12 @@
     },
     {
       "dissent": false,
+      "id": "marco-polo-bridge-incident--second-sino-japanese-war--caused",
+      "kind": "edge",
+      "locator": "\"Marco Polo Bridge incident\", revision 1370745067, § lead"
+    },
+    {
+      "dissent": false,
       "id": "molotov-ribbentrop-pact--german-soviet-treaty-of-friendship-cooperation-and-demarcation--precondition-of",
       "kind": "edge",
       "locator": "\"German–Soviet Boundary and Friendship Treaty\", revision 1375965836, § lead and § Secret articles"
@@ -3275,6 +3293,12 @@
       "id": "operation-rosary--falklands-war--caused",
       "kind": "edge",
       "locator": "\"1982 invasion of the Falkland Islands\", revision 1372863686, lead"
+    },
+    {
+      "dissent": false,
+      "id": "operation-serval--operation-barkhane--precondition-of",
+      "kind": "edge",
+      "locator": "\"Operation Barkhane\", revision 1370630875, § Background"
     },
     {
       "dissent": false,
@@ -3842,6 +3866,12 @@
     },
     {
       "dissent": false,
+      "id": "second-sudanese-civil-war--comprehensive-peace-agreement--caused",
+      "kind": "edge",
+      "locator": "\"Comprehensive Peace Agreement\", revision 1372495468, § lead"
+    },
+    {
+      "dissent": false,
       "id": "second-sudanese-civil-war--war-in-darfur--precondition-of",
       "kind": "edge",
       "locator": "\"War in Darfur\", revision 1375318567, § Origins of the conflict"
@@ -3881,6 +3911,12 @@
       "id": "sino-indian-war--indo-pakistani-war-of-1965--enabled",
       "kind": "edge",
       "locator": "\"India–Pakistan war of 1965\", revision 1371230624, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "six-day-war--war-of-attrition--precondition-of",
+      "kind": "edge",
+      "locator": "\"Six-Day War\", revision 1375500255, § Aftermath — War of Attrition"
     },
     {
       "dissent": false,
@@ -4007,6 +4043,12 @@
       "id": "suez-crisis--1958-lebanon-crisis--precondition-of",
       "kind": "edge",
       "locator": "\"1958 Lebanon crisis\", revision 1370279391, § Situation in Lebanon"
+    },
+    {
+      "dissent": false,
+      "id": "suez-crisis--six-day-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Six-Day War\", revision 1375500255, § Background"
     },
     {
       "dissent": false,
@@ -5003,6 +5045,12 @@
       "id": "war-in-bosnia-and-herzegovina--dayton-agreement--caused",
       "kind": "edge",
       "locator": "\"Bosnian War\", revision 1375967053, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "war-in-somalia--somali-civil-war-2009-present--precondition-of",
+      "kind": "edge",
+      "locator": "\"Somali Civil War (2009–present)\", revision 1374631534, § lead"
     },
     {
       "dissent": false,
@@ -6026,6 +6074,12 @@
     },
     {
       "dissent": false,
+      "id": "angolan-war-of-independence",
+      "kind": "event",
+      "locator": "\"Angolan War of Independence\", revision 1370428662"
+    },
+    {
+      "dissent": false,
       "id": "anti-comintern-pact",
       "kind": "event",
       "locator": "\"Anti-Comintern Pact\", revision 1371954457"
@@ -6503,6 +6557,12 @@
       "id": "companhia-siderurgica-nacional-1941",
       "kind": "event",
       "locator": "\"Getúlio Vargas\", revision 1373660809"
+    },
+    {
+      "dissent": false,
+      "id": "comprehensive-peace-agreement",
+      "kind": "event",
+      "locator": "\"Comprehensive Peace Agreement\", revision 1372495468"
     },
     {
       "dissent": false,
@@ -7412,6 +7472,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-barkhane",
+      "kind": "event",
+      "locator": "\"Operation Barkhane\", revision 1370630875"
+    },
+    {
+      "dissent": false,
       "id": "operation-brother-sam-1964",
       "kind": "event",
       "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
@@ -7868,6 +7934,12 @@
     },
     {
       "dissent": false,
+      "id": "six-day-war",
+      "kind": "event",
+      "locator": "\"Six-Day War\", revision 1375500255"
+    },
+    {
+      "dissent": false,
       "id": "slave-trade-act-1807",
       "kind": "event",
       "locator": "\"Slave Trade Act 1807\", revision 1373209565"
@@ -7889,6 +7961,12 @@
       "id": "somali-civil-war",
       "kind": "event",
       "locator": "\"Somali Civil War\", revision 1368927093"
+    },
+    {
+      "dissent": false,
+      "id": "somali-civil-war-2009-present",
+      "kind": "event",
+      "locator": "\"Somali Civil War (2009–present)\", revision 1374631534"
     },
     {
       "dissent": false,

@@ -322,7 +322,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "angola-q916",
       "kind": "place",
       "names": [
@@ -5542,7 +5542,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "middle-east",
       "kind": "place",
       "names": [
@@ -6039,6 +6039,33 @@
         "Myanmar",
         "Republic of the Union of Myanmar",
         "Union of Burma"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "naivasha",
+      "kind": "place",
+      "names": [
+        "Naivasha"
       ],
       "origin": {
         "tool": "assistant"
@@ -8020,6 +8047,33 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "sahel",
+      "kind": "place",
+      "names": [
+        "Sahel"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-03",
       "id": "saint-denis",
       "kind": "place",
@@ -8794,7 +8848,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "somalia-q1045",
       "kind": "place",
       "names": [

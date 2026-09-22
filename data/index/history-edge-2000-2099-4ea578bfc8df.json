@@ -319,6 +319,15 @@
       ]
     },
     "colombian-peace-process--catatumbo-campaign--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "comprehensive-peace-agreement--2011-south-sudanese-independence-referendum--precondition-of": {
       "from": "revised",
       "versions": [
         {
@@ -785,6 +794,15 @@
         }
       ]
     },
+    "operation-serval--operation-barkhane--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "orange-revolution--euromaidan--precondition-of": {
       "from": "git",
       "versions": [
@@ -1056,6 +1074,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "war-in-somalia--somali-civil-war-2009-present--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     }
