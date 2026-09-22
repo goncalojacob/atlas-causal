@@ -2,6 +2,24 @@
   "from": 1600,
   "kind": "edge",
   "records": {
+    "bohemian-revolt--siege-of-pilsen--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "bohemian-revolt--thirty-years-war--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "dutch-brazil-1630-1654--the-caribbean-sugar-revolution--caused": {
       "from": "git",
       "versions": [

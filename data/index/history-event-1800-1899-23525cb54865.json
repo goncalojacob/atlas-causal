@@ -377,10 +377,16 @@
       ]
     },
     "battle-of-stormberg": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors"
+          ],
           "on": "2026-09-22"
         }
       ]
@@ -1058,10 +1064,16 @@
       ]
     },
     "second-battle-of-colenso": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors"
+          ],
           "on": "2026-09-22"
         }
       ]
@@ -1163,10 +1175,16 @@
       ]
     },
     "siege-of-ladysmith": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors"
+          ],
           "on": "2026-09-22"
         }
       ]

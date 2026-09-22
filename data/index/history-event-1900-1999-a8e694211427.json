@@ -4852,10 +4852,16 @@
       ]
     },
     "alhucemas-landing": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors"
+          ],
           "on": "2026-09-22"
         }
       ]
@@ -6279,10 +6285,16 @@
       ]
     },
     "battle-of-algiers-1956-1957": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors"
+          ],
           "on": "2026-09-22"
         }
       ]
@@ -6784,10 +6796,16 @@
       ]
     },
     "battle-of-paardeberg": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors"
+          ],
           "on": "2026-09-22"
         }
       ]
@@ -6820,10 +6838,16 @@
       ]
     },
     "battle-of-spion-kop": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors"
+          ],
           "on": "2026-09-22"
         }
       ]
@@ -6976,10 +7000,16 @@
       ]
     },
     "battle-of-waterberg": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors"
+          ],
           "on": "2026-09-22"
         }
       ]

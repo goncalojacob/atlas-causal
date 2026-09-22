@@ -5179,6 +5179,68 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-breitenfeld-1631",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Breitenfeld (1631)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-breitenfeld-1642",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Breitenfeld (1642)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -5303,6 +5365,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Dunkirk"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-freiburg",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Freiburg"
     },
     {
       "authors": [
@@ -5520,6 +5613,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-jankau",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Jankau"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -5665,6 +5789,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-lens",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Lens"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -5696,6 +5851,68 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Long Tan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-lutter",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Lutter"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-lutzen-1632",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Lützen (1632)"
     },
     {
       "authors": [
@@ -5934,6 +6151,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-nordlingen-1634",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Nördlingen (1634)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -5964,6 +6212,67 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Paardeberg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-prague-1648",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Prague (1648)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-rain",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Rain"
     },
     {
       "authors": [
@@ -6193,6 +6502,36 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Tannenberg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-the-downs",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Downs"
     },
     {
       "authors": [
@@ -6776,6 +7115,37 @@
       "revised": null,
       "status": "active",
       "title": "Bluff Cove Air Attacks"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 2,
+      "id": "bohemian-revolt",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bohemian Revolt"
     },
     {
       "authors": [
@@ -9073,6 +9443,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Eastern Front"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "law",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "edict-of-restitution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "note": "M42b batch 5: the item gives P580 6 March 1629 and no P582, so the import wrote end: null with the end-unstated flag, which the atlas reads as still going and which put the edict outside the war it is part of. The record names a proclamation, and its cited article dates that act alone: \"proclaimed by Ferdinand II, Holy Roman Emperor in Vienna, on 6 March 1629\" (revision 1285679503). The end is that day. How long the edict stayed in force is another question this record does not answer.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Edict of Restitution"
     },
     {
       "authors": [
@@ -16063,6 +16464,36 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "peace-of-prague-1635",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Peace of Prague (1635)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -18512,6 +18943,69 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "siege-of-pilsen",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "bohemian-revolt",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Pilsen"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "siege-of-stralsund-1628",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Stralsund (1628)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -18892,6 +19386,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Slovak National Uprising"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "smolensk-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Smolensk War"
     },
     {
       "authors": [
@@ -20437,6 +20962,36 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "thirty-years-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Thirty Years' War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -20500,6 +21055,36 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Tigray war"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "torstenson-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Torstenson War"
     },
     {
       "authors": [
@@ -22430,6 +23015,36 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "war-of-the-mantuan-succession",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War of the Mantuan Succession"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-09-22",
@@ -23219,6 +23834,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-breitenfeld-1631",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-breitenfeld-1642",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-britain",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -23255,6 +23882,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-freiburg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-goose-green",
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -23285,6 +23918,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-jankau",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-jutland",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -23297,7 +23936,25 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-lens",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-long-tan",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-lutter",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-lutzen-1632",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -23339,7 +23996,25 @@
       "rule": "summary-imported"
     },
     {
+      "id": "battle-of-nordlingen-1634",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-paardeberg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-prague-1648",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-rain",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -23382,6 +24057,12 @@
     },
     {
       "id": "battle-of-tannenberg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-the-downs",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -23559,6 +24240,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "edict-of-restitution",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "effacer-le-tableau",
@@ -23969,6 +24656,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "peace-of-prague-1635",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "polish-soviet-war",
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -24071,6 +24764,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-stralsund-1628",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "sinking-of-ara-general-belgrano",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -24113,6 +24812,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "smolensk-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "soviet-japanese-border-conflicts",
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -24138,6 +24843,12 @@
     },
     {
       "id": "third-portuguese-republic-since-1974",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "torstenson-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -24189,6 +24900,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "war-of-the-mantuan-succession",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "war-over-water",

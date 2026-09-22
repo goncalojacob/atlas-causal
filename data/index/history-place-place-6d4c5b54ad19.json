@@ -42,7 +42,7 @@
       ]
     },
     "al-hoceima": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -75,7 +75,7 @@
       ]
     },
     "algiers-q3561": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -537,6 +537,15 @@
         }
       ]
     },
+    "breitenfeld-leipzig": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "brest": {
       "from": "git",
       "versions": [
@@ -840,7 +849,7 @@
       ]
     },
     "chris-hani-district-municipality": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -858,7 +867,7 @@
       ]
     },
     "colenso": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1425,6 +1434,15 @@
         }
       ]
     },
+    "freiburg-im-breisgau": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "french-algeria": {
       "from": "git",
       "versions": [
@@ -1914,6 +1932,15 @@
         }
       ]
     },
+    "jankov-benesov-district": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "japan-q17": {
       "from": "git",
       "versions": [
@@ -2320,7 +2347,7 @@
       ]
     },
     "ladysmith": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2415,6 +2442,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "lens-pas-de-calais": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -2606,6 +2642,24 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "lutter-am-barenberge": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "lutzen": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -2846,7 +2900,7 @@
       ]
     },
     "misrata": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3189,6 +3243,15 @@
         }
       ]
     },
+    "nordlingen": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "normandy": {
       "from": "git",
       "versions": [
@@ -3340,7 +3403,7 @@
       ]
     },
     "ogossagou": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3621,6 +3684,15 @@
         }
       ]
     },
+    "plzen": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "poland-q36": {
       "from": "git",
       "versions": [
@@ -3811,6 +3883,15 @@
         }
       ]
     },
+    "prague-castle": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "pristina": {
       "from": "git",
       "versions": [
@@ -3855,6 +3936,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "rain-swabia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -4452,6 +4542,15 @@
         }
       ]
     },
+    "smolensk-voivodeship": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "somalia-q1045": {
       "from": "git",
       "versions": [
@@ -4703,6 +4802,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "stralsund": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -5225,7 +5333,7 @@
       ]
     },
     "waterberg-plateau-park": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

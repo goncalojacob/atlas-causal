@@ -1802,6 +1802,18 @@
     },
     {
       "dissent": false,
+      "id": "bohemian-revolt--siege-of-pilsen--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of Pilsen\", revision 1370744459, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "bohemian-revolt--thirty-years-war--caused",
+      "kind": "edge",
+      "locator": "\"Bohemian Revolt\", revision 1372461973, § lead"
+    },
+    {
+      "dissent": false,
       "id": "boxer-rebellion--xinhai-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"1911 Revolution\", revision 1373070054"
@@ -6182,6 +6194,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-breitenfeld-1631",
+      "kind": "event",
+      "locator": "\"Battle of Breitenfeld (1631)\", revision 1370108143"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-breitenfeld-1642",
+      "kind": "event",
+      "locator": "\"Battle of Breitenfeld (1642)\", revision 1370108147"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-britain",
       "kind": "event",
       "locator": "\"Battle of Britain\", revision 1371887266"
@@ -6191,6 +6215,12 @@
       "id": "battle-of-dunkirk",
       "kind": "event",
       "locator": "\"Battle of Dunkirk\", revision 1374147037"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-freiburg",
+      "kind": "event",
+      "locator": "\"Battle of Freiburg\", revision 1370441091"
     },
     {
       "dissent": false,
@@ -6224,6 +6254,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-jankau",
+      "kind": "event",
+      "locator": "\"Battle of Jankau\", revision 1370444085"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jutland",
       "kind": "event",
       "locator": "\"Battle of Jutland\", revision 1375410943"
@@ -6248,9 +6284,27 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-lens",
+      "kind": "event",
+      "locator": "\"Battle of Lens\", revision 1374682897"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-long-tan",
       "kind": "event",
       "locator": "\"Battle of Long Tan\", revision 1372094029"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lutter",
+      "kind": "event",
+      "locator": "\"Battle of Lutter\", revision 1370448305"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lutzen-1632",
+      "kind": "event",
+      "locator": "\"Battle of Lützen (1632)\", revision 1374575907"
     },
     {
       "dissent": false,
@@ -6278,9 +6332,27 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-nordlingen-1634",
+      "kind": "event",
+      "locator": "\"Battle of Nördlingen (1634)\", revision 1373505403"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-paardeberg",
       "kind": "event",
       "locator": "\"Battle of Paardeberg\", revision 1370271388"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-prague-1648",
+      "kind": "event",
+      "locator": "\"Battle of Prague (1648)\", revision 1370586580"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-rain",
+      "kind": "event",
+      "locator": "\"Battle of Rain\", revision 1370587087"
     },
     {
       "dissent": false,
@@ -6305,6 +6377,12 @@
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "\"Battle of Tannenberg\", revision 1373883764"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-downs",
+      "kind": "event",
+      "locator": "\"Battle of the Downs\", revision 1370599272"
     },
     {
       "dissent": false,
@@ -6365,6 +6443,12 @@
       "id": "black-september",
       "kind": "event",
       "locator": "\"Black September\", revision 1370604477"
+    },
+    {
+      "dissent": false,
+      "id": "bohemian-revolt",
+      "kind": "event",
+      "locator": "\"Bohemian Revolt\", revision 1372461973"
     },
     {
       "dissent": false,
@@ -6635,6 +6719,12 @@
       "id": "eastern-front",
       "kind": "event",
       "locator": "\"Eastern Front (World War II)\", revision 1373107377"
+    },
+    {
+      "dissent": false,
+      "id": "edict-of-restitution",
+      "kind": "event",
+      "locator": "\"Edict of Restitution\", revision 1285679503"
     },
     {
       "dissent": false,
@@ -7514,6 +7604,12 @@
     },
     {
       "dissent": false,
+      "id": "peace-of-prague-1635",
+      "kind": "event",
+      "locator": "\"Peace of Prague (1635)\", revision 1361393894"
+    },
+    {
+      "dissent": false,
       "id": "peace-of-riga",
       "kind": "event",
       "locator": "\"Treaty of Riga\", revision 1368931640"
@@ -7838,6 +7934,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-pilsen",
+      "kind": "event",
+      "locator": "\"Siege of Pilsen\", revision 1370744459"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-stralsund-1628",
+      "kind": "event",
+      "locator": "\"Siege of Stralsund (1628)\", revision 1371910129"
+    },
+    {
+      "dissent": false,
       "id": "sierra-leone-civil-war",
       "kind": "event",
       "locator": "\"Sierra Leone Civil War\", revision 1375466974"
@@ -7883,6 +7991,12 @@
       "id": "slovak-national-uprising",
       "kind": "event",
       "locator": "\"Slovak National Uprising\", revision 1374904143"
+    },
+    {
+      "dissent": false,
+      "id": "smolensk-war",
+      "kind": "event",
+      "locator": "\"Smolensk War\", revision 1371449845"
     },
     {
       "dissent": false,
@@ -8210,6 +8324,12 @@
     },
     {
       "dissent": false,
+      "id": "thirty-years-war",
+      "kind": "event",
+      "locator": "\"Thirty Years' War\", revision 1376022805"
+    },
+    {
+      "dissent": false,
       "id": "thousand-days-war",
       "kind": "event",
       "locator": "\"Thousand Days' War\", revision 1370750751"
@@ -8219,6 +8339,12 @@
       "id": "tigray-war",
       "kind": "event",
       "locator": "\"Tigray war\", revision 1374637577"
+    },
+    {
+      "dissent": false,
+      "id": "torstenson-war",
+      "kind": "event",
+      "locator": "\"Torstenson War\", revision 1373913755"
     },
     {
       "dissent": false,
@@ -8513,6 +8639,12 @@
       "id": "war-in-somalia",
       "kind": "event",
       "locator": "\"War in Somalia (2006–2009)\", revision 1375639759"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-mantuan-succession",
+      "kind": "event",
+      "locator": "\"War of the Mantuan Succession\", revision 1374838991"
     },
     {
       "dissent": false,

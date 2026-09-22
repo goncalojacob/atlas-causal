@@ -3303,10 +3303,16 @@
       ]
     },
     "battle-of-misrata-2011": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors"
+          ],
           "on": "2026-09-22"
         }
       ]
@@ -5166,10 +5172,16 @@
       ]
     },
     "ogossagou-massacre": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors"
+          ],
           "on": "2026-09-22"
         }
       ]

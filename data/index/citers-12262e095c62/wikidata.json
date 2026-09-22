@@ -1490,6 +1490,18 @@
     },
     {
       "dissent": false,
+      "id": "bohemian-revolt--siege-of-pilsen--enabled",
+      "kind": "edge",
+      "locator": "Q944855"
+    },
+    {
+      "dissent": false,
+      "id": "bohemian-revolt--thirty-years-war--caused",
+      "kind": "edge",
+      "locator": "Q1785022"
+    },
+    {
+      "dissent": false,
       "id": "first-matabele-war--second-matabele-war--precondition-of",
       "kind": "edge",
       "locator": "Q233657 and Q857982"
@@ -2318,6 +2330,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-breitenfeld-1631",
+      "kind": "event",
+      "locator": "Q205379"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-breitenfeld-1642",
+      "kind": "event",
+      "locator": "Q1754785"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-britain",
       "kind": "event",
       "locator": "Q154720"
@@ -2339,6 +2363,12 @@
       "id": "battle-of-dunkirk",
       "kind": "event",
       "locator": "Q208529"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-freiburg",
+      "kind": "event",
+      "locator": "Q174574"
     },
     {
       "dissent": false,
@@ -2378,6 +2408,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-jankau",
+      "kind": "event",
+      "locator": "Q1415925"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jutland",
       "kind": "event",
       "locator": "Q156554"
@@ -2402,9 +2438,27 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-lens",
+      "kind": "event",
+      "locator": "Q2164950"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-long-tan",
       "kind": "event",
       "locator": "Q259526"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lutter",
+      "kind": "event",
+      "locator": "Q629302"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lutzen-1632",
+      "kind": "event",
+      "locator": "Q167259"
     },
     {
       "dissent": false,
@@ -2450,9 +2504,27 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-nordlingen-1634",
+      "kind": "event",
+      "locator": "Q312212"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-paardeberg",
       "kind": "event",
       "locator": "Q2237713"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-prague-1648",
+      "kind": "event",
+      "locator": "Q3494380"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-rain",
+      "kind": "event",
+      "locator": "Q703436"
     },
     {
       "dissent": false,
@@ -2495,6 +2567,12 @@
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "Q153858"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-downs",
+      "kind": "event",
+      "locator": "Q675999"
     },
     {
       "dissent": false,
@@ -2591,6 +2669,12 @@
       "id": "bluff-cove-air-attacks",
       "kind": "event",
       "locator": "Q4930640"
+    },
+    {
+      "dissent": false,
+      "id": "bohemian-revolt",
+      "kind": "event",
+      "locator": "Q1785022"
     },
     {
       "dissent": false,
@@ -2867,6 +2951,12 @@
       "id": "eastern-front",
       "kind": "event",
       "locator": "Q189266"
+    },
+    {
+      "dissent": false,
+      "id": "edict-of-restitution",
+      "kind": "event",
+      "locator": "Q703097"
     },
     {
       "dissent": false,
@@ -3842,6 +3932,12 @@
     },
     {
       "dissent": false,
+      "id": "peace-of-prague-1635",
+      "kind": "event",
+      "locator": "Q1455240"
+    },
+    {
+      "dissent": false,
       "id": "peace-of-riga",
       "kind": "event",
       "locator": "Q1076469"
@@ -4166,6 +4262,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-pilsen",
+      "kind": "event",
+      "locator": "Q944855"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-stralsund-1628",
+      "kind": "event",
+      "locator": "Q2612839"
+    },
+    {
+      "dissent": false,
       "id": "sierra-leone-civil-war",
       "kind": "event",
       "locator": "Q795269"
@@ -4223,6 +4331,12 @@
       "id": "slovak-national-uprising",
       "kind": "event",
       "locator": "Q163780"
+    },
+    {
+      "dissent": false,
+      "id": "smolensk-war",
+      "kind": "event",
+      "locator": "Q1140492"
     },
     {
       "dissent": false,
@@ -4352,6 +4466,12 @@
     },
     {
       "dissent": false,
+      "id": "thirty-years-war",
+      "kind": "event",
+      "locator": "Q2487"
+    },
+    {
+      "dissent": false,
       "id": "thousand-days-war",
       "kind": "event",
       "locator": "Q43378"
@@ -4361,6 +4481,12 @@
       "id": "tigray-war",
       "kind": "event",
       "locator": "Q101231200"
+    },
+    {
+      "dissent": false,
+      "id": "torstenson-war",
+      "kind": "event",
+      "locator": "Q1419229"
     },
     {
       "dissent": false,
@@ -4649,6 +4775,12 @@
       "id": "war-of-the-league-of-cambrai",
       "kind": "event",
       "locator": "Q636365"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-mantuan-succession",
+      "kind": "event",
+      "locator": "Q1527665"
     },
     {
       "dissent": false,
