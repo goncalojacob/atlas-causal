@@ -10,6 +10,7 @@
 import { shardsArrived } from '../render-key.js';
 import { shardsOnScreen } from '../attributes.js';
 import { esc, safeUrl } from '../util/esc.js';
+import { labelOf, LOADING_LABEL } from '../attributes.js';
 import { formatInterval, bounds, isValidYear } from '../util/dates.js';
 import { articleFor } from '../wikipedia.js';
 import { windowAt, resolveWindow } from '../util/window.js';
@@ -361,8 +362,15 @@ export function createPanel(container, {
     return parts.join('');
   }
 
+  // **The name, or the interface saying it does not have one yet** (M83, B16).
+  // The core's fallback for a missing title is the record's own id (spine.js),
+  // which is right for a sort and wrong for anything a reader reads — and this
+  // link is read: an actor's card lists events across five centuries and named
+  // the ones whose century had not landed by their slug. `labelOf` is the rule
+  // `attributes.js` states and the three views already keep.
   function eventLink(event, extra = '') {
-    return `<button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button> <span class="when">${esc(formatInterval(event.when))}</span>${extra}`;
+    const name = labelOf(atlas, event) ?? LOADING_LABEL;
+    return `<button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(name)}</button> <span class="when">${esc(formatInterval(event.when))}</span>${extra}`;
   }
 
   // The selected actor, when it resolves to one: the cards show it as a
@@ -486,22 +494,31 @@ export function createPanel(container, {
   // the card it would show, by the precedence render() uses below. The point
   // of naming it is the owner's own case: open an actor from an event, then
   // want the event back without searching for it again.
+  //
+  // **And never a slug** (M83, B16). Every line below used to fall back to the
+  // id, so Back and Forward named a record by its slug until its century
+  // landed. `named` is the same rule the three views keep: the record's own
+  // name, or the interface saying it is still loading (attributes.js).
   function openingLabel(opening) {
+    const named = (record, field = 'title') => {
+      if (!record) return null;
+      return atlas.attributesLoaded(record.id) ? record[field] : LOADING_LABEL;
+    };
     if (!opening) return null;
-    if (opening.narrative) return atlas.narratives?.get(opening.narrative)?.title ?? opening.narrative;
+    if (opening.narrative) return named(atlas.narratives?.get(opening.narrative)) ?? opening.narrative;
     // A link has no title of its own — it is an argument between two events —
     // so it is named the way it is drawn: the type, between the two ends.
     if (opening.edge) {
       const edge = atlas.edges.get(opening.edge);
       if (!edge) return opening.edge;
-      const name = (id) => atlas.events.get(id)?.title ?? id;
+      const name = (id) => named(atlas.events.get(id)) ?? id;
       return `${name(edge.from)} ${EDGE_TYPE_LABEL[edge.type] ?? edge.type} ${name(edge.to)}`;
     }
-    if (opening.selected) return atlas.resolve(opening.selected)?.record?.title ?? opening.selected;
-    if (opening.source) return atlas.sources.get(opening.source)?.title ?? opening.source;
-    if (opening.office) return atlas.offices?.get(opening.office)?.title ?? opening.office;
-    if (opening.place) return atlas.places.get(opening.place)?.name ?? opening.place;
-    if (opening.actor) return atlas.actors.get(opening.actor)?.name ?? opening.actor;
+    if (opening.selected) return named(atlas.resolve(opening.selected)?.record) ?? opening.selected;
+    if (opening.source) return named(atlas.sources.get(opening.source)) ?? opening.source;
+    if (opening.office) return named(atlas.offices?.get(opening.office)) ?? opening.office;
+    if (opening.place) return named(atlas.places.get(opening.place), 'name') ?? opening.place;
+    if (opening.actor) return named(atlas.actors.get(opening.actor), 'name') ?? opening.actor;
     return 'the atlas';
   }
 
@@ -583,7 +600,7 @@ export function createPanel(container, {
   //
   // The key is what the card is actually drawn from: what is *open*, the
   // walked chain, the horizon year, and the window. Anything else — the pan,
-  // the zoom, the box, the lens, the layers, the grouping's own controls — is
+  // the zoom, the box, the lens, the layers — is
   // not a different card and does not rebuild one.
   //
   // The window is in the key and is still not a rebuild. It decides four

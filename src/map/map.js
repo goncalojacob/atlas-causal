@@ -30,7 +30,7 @@ import {
 // Os lugares que este atlas nomeia e o Natural Earth não: uma freguesia, um
 // distrito, um campo de batalha (names.js).
 import { ATLAS_PLACE_WEIGHT, placeCandidates } from './names.js';
-import { labelOf } from '../attributes.js';
+import { labelOf, LOADING_LABEL } from '../attributes.js';
 import { exportButton } from '../share.js';
 
 // k = 1 is the whole world in these 960 units, and that is the unit every
@@ -591,8 +591,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // What is drawn at all: the lens, narrowed by the category toggles still
     // on. Both removals are made in emphasis.js, so the timeline, the graph
     // and the corner count narrow with the marks (F6).
+    // `shown` is a set on every frame since M65 — the lens, or the resting
+    // picture where there is none — so there is no "draw everything" case left
+    // to guard for (M83, B12; emphasis.js says the same in words).
     const shown = working.shown;
-    const kept = (id) => !shown || shown.has(id);
+    const kept = (id) => shown.has(id);
 
     // The two lists of *edges*, which are lines and not marks: the ids of
     // their ends are in the working set, the edge objects are needed here.
@@ -600,6 +603,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       .filter((e) => kept(e.from) && kept(e.to));
     const consequenceEdges = (s.selected ? (atlas.adjacency.out.get(s.selected) ?? []) : [])
       .filter((e) => kept(e.from) && kept(e.to));
+    const chosenEdge = s.edge ? (atlas.edges.get(s.edge) ?? null) : null;
     // A selected event is on the path it is the head of, which is what makes
     // its mark madder rather than merely ringed.
     const pathIds = new Set([...working.path, ...working.selected]);
@@ -618,7 +622,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
         k: transform.k,
       });
     }
-    const drawn = shown ? atlas.activeEvents.filter((e) => shown.has(e.id)) : atlas.activeEvents;
+    const drawn = atlas.activeEvents.filter((e) => shown.has(e.id));
     // The large events of the window: a regional one washes the polygons of
     // its lane, a worldwide one is named in the corner instead (large.js).
     // Off the same list the marks are drawn from, so the lens applies to all
@@ -627,7 +631,9 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     const large = drawingEvents ? largeEventsIn(inWindow, atlas) : [];
     regionsLayer.render(large
       .filter((l) => l.scope === 'regional' && l.region)
-      .map((l) => ({ region: l.region, title: l.event.title })));
+      // The name or nothing, never the slug (M83, B16): the wash's tooltip is
+      // read, and a title arrives with its century (attributes.js).
+      .map((l) => ({ region: l.region, title: labelOf(atlas, l.event) ?? LOADING_LABEL })));
     drawCorner(large.filter((l) => l.scope === 'worldwide'));
     const result = events.render({
       events: drawn,
@@ -647,9 +653,22 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       // Everything the reader is holding keeps a mark of its own; the wider
       // set is what is drawn at all, in the window or out of it.
       alone: heldSet(working),
-      kept: heldSet(working, { reachable: true }),
+      // **The lens's own events too** (M83, B4). `kept` is what the map draws
+      // whatever the window says, and without `lens: true` it held the
+      // selection, the walk, the consequences, the actor's and the narrative's
+      // events — never the lens's own children. So a reader who opened the
+      // Thirty Years' War while the atlas was on its busiest century got one
+      // faded mark for the war and none of its parts, and the promise M65/M79
+      // make — that opening an umbrella narrows all three views to it and its
+      // children — was kept on the graph alone. They are drawn where they fall,
+      // faded outside the band exactly as the selected event already is.
+      kept: heldSet(working, { lens: true, reachable: true }),
       chainEdges: walked,
       consequenceEdges,
+      // The one link the reader has open, drawn as a line of its own (M83, B7).
+      // Both its ends are kept in the picture by `keptRegardless` (lens.js), so
+      // a link arrived at by address has two marks to run between.
+      chosenEdge: chosenEdge && kept(chosenEdge.from) && kept(chosenEdge.to) ? chosenEdge : null,
       eventById: atlas.events,
       k: transform.k,
       view: box,
@@ -839,7 +858,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // through `esc()`: a title is untrusted input here as everywhere else.
   function drawCorner(worldwide) {
     const html = worldwide.length === 0 ? '' : (() => {
-      const named = worldwide.map(({ event }) => `<button type="button" class="link" data-id="${esc(event.id)}">${esc(event.title)}</button>`).join(', ');
+      const named = worldwide.map(({ event }) => `<button type="button" class="link" data-id="${esc(event.id)}">${esc(labelOf(atlas, event) ?? LOADING_LABEL)}</button>`).join(', ');
       return `<p class="map-worldwide">${worldwide.length} ${worldwide.length === 1 ? 'event' : 'events'} in this window
         ${worldwide.length === 1 ? 'spans' : 'span'} the whole map: ${named}</p>`;
     })();
@@ -860,9 +879,24 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       // the nominal box when it does — so a map hidden behind another view
       // would publish the box of a picture that is not on screen and take the
       // reader's own away. Since M60 that happens whenever the graph or the
-      // timeline has the pane, which is often; `last` is deliberately left
-      // alone, so the size it comes back at is a change and is drawn again.
-      if (!rect.width || !rect.height) return;
+      // timeline has the pane, which is often.
+      //
+      // **And `last` is cleared, not left alone** (M83, B1). The comment here
+      // used to say it was left alone *so that* the size it comes back at is a
+      // change; the opposite was true. The map subscribes to the store inside
+      // `createMap`, before `showView` does (main.js), so on a switch back it
+      // renders while its pane is still hidden: `getScreenCTM()` is null,
+      // `visibleBox()` answers the nominal 960 × 540, and the render key is
+      // stamped with that box — marks in the letterbox margins culled and the
+      // label round run for a rectangle the reader is not looking at. `showView`
+      // then unhides the pane, the observer fires, and `last` still held the
+      // size from before it was hidden, so `now === last` and it returned
+      // without drawing. The picture stood wrong until the next pan, wheel or
+      // state change. Forgetting the size is what makes coming back a change.
+      if (!rect.width || !rect.height) {
+        last = '';
+        return;
+      }
       const now = `${Math.round(rect.width)}x${Math.round(rect.height)}`;
       if (now === last) return;
       last = now;

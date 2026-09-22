@@ -32,7 +32,9 @@ import {
 import { atlasOf, ROOT } from './helpers.mjs';
 import { lensView } from '../src/lens.js';
 import { defaultState } from '../src/state.js';
-import { centuryOf } from '../src/util/window.js';
+import { centuryOf, centuryCounts } from '../src/util/window.js';
+import { createTimelineScale } from '../src/timeline-scale.js';
+import { STRIP } from '../src/map-band.js';
 
 const dataDir = path.join(ROOT, 'data');
 
@@ -54,21 +56,30 @@ const PROFILE = `
   }));
   return { drawn: Boolean(path), columns, body: 44 - 16 };`;
 
-// Which years those columns stand on, asked of the drawing itself: the strip's
-// own scale is a function of its width, and reading it back off the handles is
-// how a test avoids inventing one. The two handles are at the window's ends
-// and the window here is the whole extent, so two points give the line.
-const YEARS_AT = (xs) => `
+// The width the strip was actually drawn at, which is the one thing about the
+// scale that only the browser knows.
+const STRIP_WIDTH = `
   const strip = document.getElementById('map-band-strip');
-  const from = strip.querySelector('.window-handle.from');
-  const to = strip.querySelector('.window-handle.to');
-  const at = (el) => Number(el.getAttribute('x')) + Number(el.getAttribute('width')) / 2;
-  const x0 = at(from);
-  const x1 = at(to);
-  const y0 = Number(from.getAttribute('aria-valuenow'));
-  const y1 = Number(to.getAttribute('aria-valuenow'));
-  const slope = (y1 - y0) / ((x1 - x0) || 1);
-  return ${JSON.stringify(xs)}.map((x) => Math.round(y0 + (x - x0) * slope));`;
+  return Number(strip.getAttribute('width'));`;
+
+// Which years those columns stand on. **The band's own scale and not a line
+// through its two handles** (M83): the corpus is long and lopsided, so the
+// scale buckets by century (timeline-scale.js) and is not linear at all — two
+// points through it put a column of the 1500s in the 1700s, which is a test
+// inventing a scale exactly as the comment here used to say it was avoiding.
+// Rebuilt here from the atlas's own numbers and the strip's own width, which is
+// the same call `map-band.js` makes, so nothing is invented and nothing is a
+// second implementation.
+function yearsAt(atlas, width, xs) {
+  const domain = [atlas.extent.min - 1, atlas.extent.max + 1];
+  const scale = createTimelineScale({
+    domain,
+    range: [STRIP.inset, width - STRIP.inset],
+    counts: centuryCounts(atlas.activeEvents),
+    extent: atlas.extent,
+  });
+  return xs.map((x) => Math.round(scale.invert(x)));
+}
 
 const params = 'return Object.fromEntries(new URLSearchParams(location.search));';
 
@@ -92,13 +103,15 @@ async function portugal() {
   const empty = [...all].filter((c) => !own.has(c));
   assert.ok(own.size > 0, 'and it has events of its own');
   assert.ok(empty.length > 0, 'and the atlas has centuries it has none in, which is what the band must not draw');
-  return { own: [...own].sort((a, b) => a - b), empty: empty.sort((a, b) => a - b), ring: view.near };
+  return {
+    atlas, own: [...own].sort((a, b) => a - b), empty: empty.sort((a, b) => a - b), ring: view.near,
+  };
 }
 
 // ─── 1. the band follows the selection, on all three ways in ───────────────
 
 test('with Portugal selected every column of the band is Portugal’s, whichever way in', { skip }, async () => {
-  const { own, empty } = await portugal();
+  const { own, empty, atlas } = await portugal();
 
   await withBrowser(async (page, url) => {
     await watchErrors(page);
@@ -107,11 +120,29 @@ test('with Portugal selected every column of the band is Portugal’s, whichever
     // The band draws over the whole extent whatever the window is, so a
     // century left out of the profile is left out because nothing of the
     // selection falls in it and not because the band was narrowed.
+    // **And it is read once it has stopped moving** (M83). A lens on an actor
+    // has an input that lands after the state does — which events are on that
+    // actor's ground is a file fetched when the lens is first set — so a
+    // profile read the instant a path exists is as likely to be the resting
+    // picture's as the selection's. It is the same discipline `named()` keeps
+    // for a title that arrives with its century (docs/m78-flakes.md): read it
+    // twice and believe it when it has not moved.
+    const settled = async () => {
+      let last = null;
+      for (let tries = 0; tries < 40; tries += 1) {
+        const now = await page.eval(`${PROFILE.slice(0, PROFILE.lastIndexOf('return'))}return d;`);
+        if (now && now === last) return;
+        last = now;
+        await new Promise((resolve) => { setTimeout(resolve, 100); });
+      }
+    };
     const centuriesOfProfile = async () => {
+      await settled();
       const profile = await page.eval(PROFILE);
       assert.equal(profile.drawn, true, 'the band has drawn a profile');
       assert.ok(profile.columns.length > 0, 'and it has columns');
-      const years = await page.eval(YEARS_AT(profile.columns.map((c) => c.x)));
+      const width = await page.eval(STRIP_WIDTH);
+      const years = yearsAt(atlas, width, profile.columns.map((c) => c.x));
       return new Set(years.map((y) => centuryOf(y)));
     };
 

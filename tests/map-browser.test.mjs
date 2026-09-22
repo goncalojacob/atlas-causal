@@ -190,7 +190,12 @@ test('a click on a mark out in the letterbox selects it, and a pan follows the c
 // never have seen them there again (window-control.js).
 const TIMELINE = `return {
   search: location.search,
-  filtered: !document.querySelector('#window-control .window-view').hidden,
+  // **Whether the map is looking at part of the world, which since M83 (B3) is
+  // the pin and not the line.** The count is said from first paint now — the
+  // picture is a fraction of the corpus whether or not the reader has moved the
+  // map — and what a box brings is *show the world*, which has nothing to give
+  // back when the map is looking at all of it.
+  filtered: !document.querySelector('#window-control .window-view .pin').hidden,
   note: document.querySelector('#window-control .window-count').textContent,
   bars: [...document.querySelectorAll('#timeline rect.bar[data-id]')]
     .map((el) => el.getAttribute('data-id')).sort(),

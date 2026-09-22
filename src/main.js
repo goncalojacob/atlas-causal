@@ -42,10 +42,21 @@ try {
     dataRoot,
     landFile: fixtures ? 'data/geo/land-present.json' : null,
   });
-  // Started here and never awaited: the search shard is not needed to draw
-  // anything, and blocking the first frame on it would trade the whole of
-  // what the core just saved.
-  const shard = loadSearchShard({ dataRoot, manifest: atlas.manifest });
+  // **Asked for when the box is focused, and not before** (M83, A13). It is
+  // never awaited and never drawn out of, so starting it here cost the first
+  // frame nothing in *time* — but it is 762 KB on the wire against a core of
+  // 192 KB, the largest single thing the page fetches, and it is fetched on
+  // every visit for a reader who may never type. A reader who does type has
+  // focused the box first, and the shard is a fold of the whole atlas that
+  // arrives in well under the time it takes to type a word; until it lands the
+  // box answers out of the atlas, exactly as it does when the file fails
+  // (search-box.js). The promise is made once and kept, so a second focus is
+  // not a second fetch.
+  let searching = null;
+  const shard = () => {
+    searching ??= loadSearchShard({ dataRoot, manifest: atlas.manifest });
+    return searching;
+  };
 
   // Nothing is filled in here: a window bound left null means "as far as the
   // data goes", and each view resolves it against the atlas it was given. An
@@ -98,11 +109,25 @@ try {
   let map = null;
   let timeline = null;
   let graph = null;
+  // And the two controls in the masthead and over the map that read the same
+  // answer the pictures do (M83, B2). `createWindowControl` and `createMapBand`
+  // have always returned a `render`; this file dropped both on the floor and
+  // left them subscribed to the store alone. But `lensView` answers again after
+  // the state has stopped moving — when an actor's grounds land, when a
+  // source's citers do, when a narrative's steps arrive with their century —
+  // and `main.js` knows this and forces the views for exactly that reason. The
+  // band's profile is `shown ∩ the lens's own half` and the masthead's count is
+  // `workingSet`, so both go stale in the same places, and neither is a picture
+  // a reader can refresh by dragging something they cannot see is wrong.
+  let windowControl = null;
+  let mapBand = null;
   const remeasure = (options = {}) => {
     const s = state.get();
     map?.render(s, options);
     timeline?.render(s, options);
     graph?.render(s, options);
+    windowControl?.render(s, options);
+    mapBand?.render(s, options);
   };
 
   // A lens on a source is the one thing the three views draw that the atlas
@@ -110,13 +135,22 @@ try {
   // source since H3b (lens.js). It is fetched when a focus asks for it, and
   // the views are forced to redraw when it lands — nothing in the state has
   // changed by then, so their own keys would say there is nothing to do.
+  //
+  // **And a request that failed is asked again** (M83, B15). The id went into
+  // `askedFor` before the fetch and came out of it never: one dropped request
+  // on a slow connection left a source's lens empty — *draws nothing and says
+  // so* — for the rest of the session, although `data.js` drops a failed
+  // promise precisely so that the next ask is a new attempt.
   const askedFor = new Set();
   const fetchLensCiters = (s) => {
     const focus = parseFocus(s.focus);
     if (!focus || focus.kind !== 'source' || askedFor.has(focus.id)) return;
     if (atlas.citersOf(focus.id)) return;
     askedFor.add(focus.id);
-    atlas.loadCiters(focus.id).then(() => remeasure({ force: true }), () => {});
+    atlas.loadCiters(focus.id).then(
+      () => remeasure({ force: true }),
+      () => { askedFor.delete(focus.id); },
+    );
   };
 
   // And a lens on an actor is the other one: since M48 it keeps the events on
@@ -138,6 +172,12 @@ try {
   // CShapes polity, which is 350 of the 412 — keeps nothing until the file
   // lands. Waiting for a lens that the file is what creates is waiting for
   // ever. A page with no actor open still asks for nothing.
+  //
+  // **And the flag is put back where either file failed** (M83, B15). It was
+  // set before `allSettled`, which cannot reject, so a dropped request left a
+  // polity's lens at its `actors` list alone for the rest of the session. The
+  // next state change asks again, which is the one thing the reader can do
+  // about it without knowing anything is wrong.
   let askedGrounds = false;
   const opensAnActor = (s) => Boolean(s.actor) && atlas.resolve(s.actor)?.kind === 'actor';
   const fetchLensGrounds = (s) => {
@@ -155,7 +195,8 @@ try {
     // The card in particular carries the lens it was drawn under (panel.js,
     // `keyOf`), and one written while an actor's lens was still empty would be
     // rebuilt by the reader's next nudge of the band.
-    Promise.allSettled([atlas.loadGrounds(), atlas.loadTerritories()]).then(() => {
+    Promise.allSettled([atlas.loadGrounds(), atlas.loadTerritories()]).then((settled) => {
+      if (settled.some((one) => one.status === 'rejected')) askedGrounds = false;
       remeasure({ force: true });
       panel.refresh({ force: true });
       lensChips.render(state.get());
@@ -233,7 +274,7 @@ try {
   // looking at. It stands where the band stood before M60 made the timeline a
   // view — the band is still there, on the timeline, and the two write the
   // same two fields of the state.
-  createWindowControl(document.getElementById('window-control'), { atlas, state });
+  windowControl = createWindowControl(document.getElementById('window-control'), { atlas, state });
   // And the same window as a band over the map — on it, from first paint, on
   // every visit since M75: the owner, 21 September, *"The dates two-handled
   // band should not be hidden."* The two write the same `from` and `to`: typing
@@ -241,7 +282,7 @@ try {
   // want to sweep for it with the map answering as they go. There is nothing to
   // press and nothing remembered, so this line costs its drawing here rather
   // than on a click that may never come (map-band.js).
-  createMapBand(mapArea, { atlas, state });
+  mapBand = createMapBand(mapArea, { atlas, state });
 
   // The composer (M71), which is the one control on this page whose module is
   // not loaded with the page. Everything else in this file is a few kilobytes
@@ -265,6 +306,9 @@ try {
     });
   });
 
+  // Which of the three panes was hidden the last time the view changed, so that
+  // one coming back can be told to draw again (B1, below).
+  const wasHidden = { map: false, graph: true, timeline: true };
   const showView = (view) => {
     const graphOn = view === 'graph';
     const timelineOn = view === 'timeline';
@@ -289,6 +333,24 @@ try {
     for (const button of document.querySelectorAll('[data-view]')) {
       button.setAttribute('aria-pressed', String(button.dataset.view === view));
     }
+    // **And whatever has just come back is drawn for the pane it came back to**
+    // (M83, B1). The three views subscribe to the store inside their own
+    // constructors, which is before this subscription; so on `view: 'map'` the
+    // map renders while `mapArea` is still hidden, `getScreenCTM()` is null,
+    // `visibleBox()` answers the nominal 960 × 540, and the render key is
+    // stamped with a rectangle nobody is looking at — marks in the letterbox
+    // margins culled and the labels placed for the wrong box. The map's own
+    // observer then found the size unchanged (it never forgot the size it had
+    // before it was hidden) and returned. Forcing the picture that has just been
+    // unhidden is the half of the fix that does not depend on an observer
+    // firing at all; the other half is in `map.js`, which now forgets the size
+    // when it measures nothing.
+    if (!mapArea.hidden && wasHidden.map) map?.render(state.get(), { force: true });
+    if (!graphArea.hidden && wasHidden.graph) graph?.render(state.get(), { force: true });
+    if (!timelineArea.hidden && wasHidden.timeline) timeline?.render(state.get(), { force: true });
+    wasHidden.map = mapArea.hidden;
+    wasHidden.graph = graphArea.hidden;
+    wasHidden.timeline = timelineArea.hidden;
   };
   for (const button of document.querySelectorAll('[data-view]')) {
     button.addEventListener('click', () => state.set({ view: button.dataset.view }));

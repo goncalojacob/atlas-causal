@@ -3881,3 +3881,87 @@ and 0 skipped**, the browser suites one at a time as the check runs them.
 No new runtime dependency, no build step, no map library or tiles, no new hex
 value, token or type size. No record, no historical claim. `docs/drafts/`
 ignored. Deviations **1162 to 1169**.
+
+## M83 — the graph under a lens, the display bugs, and the first paint
+
+Lane A, on the branch `m83`. The owner's own amendment A1 on M81, with two
+screenshots of World War II opened on the graph — *"It's better but still a bit
+weird"* — and then part B of `docs/review-2026-09-22.md`, nineteen findings
+about the display code, and part A's finding 13. **Nothing under `data/`
+changed and the committed index is byte-identical to a fresh build.**
+
+Pictures: `docs/screens/m83-graph-war.png`, `-key.png`, `-phone.png`. No other
+picture under `docs/screens/` was rewritten.
+
+### The owner's four
+
+**The row of hollow circles capping every year column** was not the lens's ring
+at y = 0, which is what the brief supposed. `resolveColumn` shared a band out
+*evenly* — so every column of four or more spanned the whole field whatever its
+nodes wanted, its first node exactly on the top line and its last exactly on
+the bottom. It keeps the wanted positions now and presses apart only where two
+are nearer than the room a mark needs, then slides the run back to the middle
+of what its nodes wanted. The brief's rule about the ring is right on its own
+terms and is done too: a neighbour the lens's own time axis cannot hold is not
+drawn, because it had nowhere honest to stand.
+
+**A node stands on its date and no longer in a year column.** `startPoint`
+reads the day inside the start year where the record gives one. The schema
+calls `date` display-only and this is a display and nothing else: no
+comparison, sort, overlap or rule reads it. The seven vertical lines the owner
+read as links were `enabled` edges between events of one year drawn on one
+vertical, and they go with the columns that made them.
+
+**The key is one button on every width.** M82 folded it on a phone alone; a
+legend standing on the thing it is a legend to is the same fault at 1440 px.
+
+### The nineteen, and what became of them
+
+Fixed: **B1** (a view that comes back is drawn for the pane it came back to),
+**B2** (the band and the masthead follow the files that land after the state
+stops moving), **B3** (the count is the count of the picture it is over, and is
+said from first paint), **B4** (an umbrella's children on all three views),
+**B5** (a mark on the graph is a control, as a mark on the map is), **B6** (a
+link chosen inside a narrative opens its card and writes its address), **B7** (a
+chosen link is drawn on the map with both its ends), **B8** (a click on the
+graph's ground puts the selection down), **B9** (the camera frames the layout
+that is on screen), **B10** (*top level only* goes: 0 events, computed),
+**B11** (the timeline's 120 px gutter goes back to the drawing), **B12** (the
+dead branches and the stale comments), **B15** (a failed request is asked
+again), **B16** (a slug where a name goes, in four places), **B17**
+(`?focus=` resolves a former id) and **B19** (the band takes the focus from a
+press, and answers Home and End).
+
+Left, each for a reason the section in `STATUS.md` gives: **B13** and **B14**
+ask for a shape rather than a fix and change nothing drawn; **B18**'s `?walk=`
+is M35's to decide, which `STATUS.md` already records.
+
+### First paint
+
+Median of nine cold loads of `?from=1900&to=1999` at 1440 × 900, a fresh
+browser profile per load: **all bytes to the first frame 3,371,069 → 2,829,139**
+and **four dependent round trips before the core → two**. The bytes are the
+search shard, 899 KB fetched on every visit for a reader who may never type; it
+is asked for when the box is first touched, and until it lands the box answers
+out of the atlas. The round trips are the manifest, then the core, the sources,
+the coastlines and the palette together. Neither clock moves and neither is a
+claim: on localhost there is no latency to save, and the honest measurement of
+a round trip is the count.
+
+The third part of A13 is machinery that does not turn on yet. Past
+**`SHARD_CAP`, 512 KB**, the build files a century's attribute shard as its ten
+decades. Measured, the largest today is 268 KB — 31 % of all attribute data in
+one file — and the review projects it at about 1 MB by three thousand events.
+The cap is twice the largest now, so nothing splits and the index is
+byte-identical, and half what is projected, so it splits well before a megabyte.
+
+### Checks
+
+`node tools/validate.mjs --index`: **11,526 records, 5 regions, 0 errors, 294
+warnings** — the same numbers as at `M82 done`, and nothing under `data/`
+written. `node --test`: **1,759 pure and 268 browser, 2,027 in all, 0 failed and
+0 skipped**, the browser suites one at a time as the check runs them.
+
+No new runtime dependency, no build step, no map library or tiles, no new hex
+value, token or type size. No record, no historical claim. `emphasis.js`'s
+`shown` contract unchanged. `docs/drafts/` ignored. Deviations **1170 to 1182**.
