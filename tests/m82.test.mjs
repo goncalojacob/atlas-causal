@@ -25,7 +25,7 @@ import {
   showsReview, setReview, bylineOf, ATLAS_BYLINE,
 } from '../src/demo.js';
 import { entryHtml } from '../src/entry/entry.js';
-import { MAIN_EVENT_HINT } from '../src/window-control.js';
+import { MAIN_EVENT_HINT, unplacedText } from '../src/window-control.js';
 
 const atlas = await atlasOf(path.join(ROOT, 'data'));
 const indexHtml = await readFile(path.join(ROOT, 'index.html'), 'utf8');
@@ -137,4 +137,24 @@ test('A1: at rest the graph lays out the resting picture and nothing else decide
     assert.deepEqual(axis.extent, timeSpan(arrangement.events), `${where}: the axis is the drawn set's own extent`);
     assert.equal(axis.events.length, arrangement.events.length);
   }
+});
+
+// 4 — A5. The "N events in this window have no place" box is a note in the
+// masthead's count line, not a paragraph on the map.
+//
+// The property: the sentence exists, it says a number, and nothing in the
+// map's own drawing writes it any more. The count itself is the browser half —
+// it is read off the same events the masthead's other count is read off.
+test('A5: the events with no place are a note beside the count, and no box on the map', async () => {
+  assert.equal(unplacedText(0), '', 'a window where every event is on the map says nothing at all');
+  assert.equal(unplacedText(-1), '');
+  assert.match(unplacedText(1), /^1 event in this window has no place/);
+  assert.match(unplacedText(96), /^96 events in this window have no place/);
+  // Short, because it stands in a bar that already carries the search, three
+  // view buttons, the window's count and two groups of switches.
+  assert.ok(unplacedText(96).length < 60, 'it is a note and not a paragraph');
+
+  const map = await readFile(path.join(ROOT, 'src/map/map.js'), 'utf8');
+  assert.doesNotMatch(map, /map-unplaced/, 'the map draws no box about it');
+  assert.match(map, /map-worldwide/, 'and still names in its corner what it cannot draw at all');
 });

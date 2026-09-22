@@ -351,8 +351,15 @@ input, select, textarea { accent-color: var(--cobalt); }
    (M70). The soft ink the interface uses for what it says about itself, and
    no colour of its own — a picture that coloured the unread would be a filter
    in everything but name, and nothing about standing changes what is drawn. */
-.bar .window-standing { display: flex; align-items: baseline; margin: 0; }
+.bar .window-standing { display: flex; align-items: baseline; gap: var(--space-2); margin: 0; }
 .bar .window-read { color: var(--ink-soft); font-size: var(--text-xs); font-family: var(--font-ui); }
+/* And beside it, how many of the events in the window the map has no point for
+   (M82, A5). It was a full sentence in a box on the map, on every visit; it is
+   a fact about the window, so it is said where the window's other fact is, in
+   the same soft ink and with no colour of its own — the events it counts are
+   drawn exactly as the rest are, on the two pictures that can draw them. */
+.bar .window-unplaced { color: var(--ink-soft); font-size: var(--text-xs); font-family: var(--font-ui); }
+.bar .window-unplaced:empty { display: none; }
 
 /* The lens chips in the header. The grouping picker stood here until M77,
    with a panel of lanes to tick and reorder; it and its rules are gone. */

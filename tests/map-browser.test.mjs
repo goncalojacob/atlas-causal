@@ -565,38 +565,39 @@ test('a territory is stroked along its inland borders and nowhere else', { skip 
 // --- what the map cannot draw as a mark ------------------------------------
 //
 // A8 and A10. Two of them: a regional event washes the polygons of its lane
-// rather than standing on a point it does not have, and the corner counts the
-// events of the window with no place at all.
-test('the map counts the events of the window it has no place for', { skip }, async () => {
+// rather than standing on a point it does not have, and the events of the
+// window with no place at all are counted.
+//
+// **The count moved off the map in M82** (A5): it is a fact about the window
+// and it is said in the masthead, beside the count of what is in view, instead
+// of standing as a paragraph in the corner of the picture on every visit.
+// What it counts is unchanged, which is what is asserted here.
+test('the events of the window the map has no place for are counted in the masthead', { skip }, async () => {
   await wide(async (page, url) => {
     await open(page, url('?from=1960&to=1980'), READY);
-    await waitFor(page, 'return Boolean(document.querySelector(".map-corner .map-unplaced"));', 'the corner');
+    await waitFor(page, 'return Boolean((document.querySelector(".window-unplaced") || {}).textContent);', 'the note');
 
     // The count is the atlas's own: active, kept by the lens, overlapping the
     // window, and with no place — the same three filters the marks obey, plus
     // the absence that keeps them off the map.
     const seen = await page.eval(`
-      const text = document.querySelector('.map-corner .map-unplaced').textContent;
-      return { text, corner: document.querySelector('.map-corner').hidden };`);
-    assert.equal(seen.corner, false);
-    assert.match(seen.text, /^\d+ events in this window have no place; they are on the timeline\.$/);
+      return {
+        text: document.querySelector('.window-unplaced').textContent,
+        onTheMap: document.querySelectorAll('.map-corner .map-unplaced').length,
+      };`);
+    assert.equal(seen.onTheMap, 0, 'and there is no box of it on the map');
+    assert.match(seen.text, /^\d+ events in this window have no place on the map$/);
     const counted = Number(seen.text.match(/^(\d+)/)[1]);
     assert.ok(counted > 0, 'the atlas has placeless events in the sixties');
-
-    // It is the corner opposite the failure note, and it is not that note.
-    const where = await page.eval(`
-      const pane = document.querySelector('.map-area').getBoundingClientRect();
-      const box = document.querySelector('.map-corner').getBoundingClientRect();
-      return { left: box.left - pane.left, bottom: pane.bottom - box.bottom };`);
-    assert.ok(where.left < 40 && where.bottom < 40, `bottom-left (${where.left}, ${where.bottom})`);
 
     // A narrower window holds fewer of them, and a window with none prints
     // nothing at all rather than a zero.
     await open(page, url('?from=1974&to=1974'), READY);
     await waitFor(page, 'return true;', 'the map to settle');
     const narrow = await page.eval(`
-      const el = document.querySelector('.map-corner .map-unplaced');
-      return el ? Number(el.textContent.match(/^(\\d+)/)[1]) : 0;`);
+      const text = (document.querySelector('.window-unplaced') || {}).textContent || '';
+      const found = text.match(/^(\\d+)/);
+      return found ? Number(found[1]) : 0;`);
     assert.ok(narrow < counted, `${narrow} in one year against ${counted} in twenty`);
   });
 });
