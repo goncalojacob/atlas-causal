@@ -742,6 +742,8 @@ export function createPanel(container, {
     if (typeof atlas.pinAttributes !== 'function') return;
     const opened = openingOf(s);
     const wanted = opened ? shardsOnScreen(atlas, opened.kind, opened.id) : [];
+    // Which shards this card is drawn from, kept for `refresh` below.
+    heldKeys = wanted.map((shard) => shard.key);
     const release = atlas.pinAttributes(wanted);
     releaseShards?.();
     releaseShards = release;
@@ -765,6 +767,32 @@ export function createPanel(container, {
   // list off the screen. Same integer, same rule — this is where a shard is
   // what the notification is about, and `keyOf` is where a state change is.
   let seenShards = shardsArrived(atlas);
+  // **And which of the card's own shards are in hand** (M85, §9).
+  //
+  // Any shard landing rebuilt the card. That is one shard too many: the three
+  // views ask for the centuries the *window* covers, so a drag of the band asks
+  // for a century the open card does not read, and when it lands the card the
+  // reader is holding is thrown away and written again — the open `<details>`
+  // closed, the explanation re-fetched. It cost pull request #20 a red check on
+  // a commit that had passed, and it is the very thing `keyOf` and `sameCard`
+  // exist to stop; they only ever guarded a *state* change.
+  //
+  // So the question a shard arrival asks is narrower: has one of the shards
+  // **this card is drawn from** landed? Those are `holdShards`'s own list and
+  // they are pinned while the card is on screen, so the answer is yes exactly
+  // once for each of them and never again — which is what "drawn again when the
+  // rest arrives" was always supposed to mean.
+  //
+  // A card with no shards of its own falls back to what it did: a source is not
+  // in the graph file at all, so `shardsOnScreen` finds nothing for it, and its
+  // citers are named out of whatever has landed.
+  let heldKeys = [];
+  let seenHeld = '';
+  const heldSignature = () => {
+    if (heldKeys.length === 0) return null;
+    const loaded = new Set(atlas.loadedAttributeShards?.() ?? []);
+    return heldKeys.filter((key) => loaded.has(key)).join(',');
+  };
   // `force` is for the other kind of arrival: a file the lens is computed from,
   // fetched when a focus asks for it and landing with nothing in the state
   // changed (the citers since H3b, the two ground joins since M48 and M54;
@@ -775,14 +803,23 @@ export function createPanel(container, {
   // the band look like a different card and rebuild it under them.
   function refresh({ force = false } = {}) {
     const now = shardsArrived(atlas);
-    if (now === seenShards && !force) return;
+    const arrived = now !== seenShards;
     seenShards = now;
+    if (!arrived && !force) return;
     if (covered && shown) {
+      // A cluster's list names members from across the corpus and pins
+      // nothing, so every arrival is one it may have something new to say
+      // about. It is also not a card: nothing the reader has opened is thrown
+      // away by drawing it again.
       container.innerHTML = clusterHtml(ctx, shown);
       return;
     }
-    // And the card itself, unconditionally: what changed is not in the state,
-    // so `onState` would compare two keys that say the same thing and skip it.
+    // And the card itself — but only for a shard it is drawn from. What
+    // changed is not in the state, so `onState` would compare two keys that say
+    // the same thing and skip it; what must not happen is the opposite, a card
+    // rewritten under the reader for a century it does not read.
+    const held = heldSignature();
+    if (!force && held !== null && held === seenHeld) return;
     render(state.get());
   }
 
@@ -791,6 +828,8 @@ export function createPanel(container, {
     covered = false;
     shown = null;
     holdShards(s);
+    // After `holdShards`, which is where this card's own shards are decided.
+    seenHeld = heldSignature() ?? '';
     onCard(hasOpening(s));
     token += 1;
     const mine = token;

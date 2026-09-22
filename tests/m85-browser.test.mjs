@@ -197,3 +197,77 @@ test('the about page fits a screen and the essay under it opens', { skip }, asyn
     assert.deepEqual(await errorsOn(page), []);
   }, { device: DESK });
 });
+
+// ─── 9. a shard the card does not read leaves the card alone ───────────────
+//
+// `tests/panel-browser.test.mjs` 306 waited for every attribute shard before
+// dragging, because a shard landing after the drag rebuilt the card and read
+// as this promise being broken — pull request #20 went red on 22 September on
+// a commit the push run had passed. The answer taken is neither of the two the
+// brief offers: the panel does not *rebuild* for a shard it is not drawn from,
+// which is what the promise meant all along. A card's own shards are pinned
+// while it is on screen, so each of them lands once and never again; the
+// centuries the three views fetch for the window are somebody else's.
+//
+// So this is the case the old test had to wait its way around: a window moved
+// onto a century nobody has fetched, and the card the reader is holding still
+// standing when it lands.
+
+const dragBandTo = (kind, fraction) => `
+  const root = document.querySelector('#map .map-band svg.window-strip');
+  const handle = root.querySelector('[data-window="${kind}"]');
+  const box = handle.getBoundingClientRect();
+  const drawing = root.getBoundingClientRect();
+  const y = box.top + box.height / 2;
+  const at = (clientX, type, target) => target.dispatchEvent(new PointerEvent(type, {
+    bubbles: true, clientX, clientY: y, pointerId: 4,
+  }));
+  const target = drawing.left + drawing.width * ${fraction};
+  const start = box.left + box.width / 2;
+  at(start, 'pointerdown', handle);
+  for (let i = 1; i <= 20; i += 1) at(start + ((target - start) * i) / 20, 'pointermove', root);
+  at(target, 'pointerup', root);
+  return true;`;
+
+// An expression, not a statement, so it can be read and compared in one place.
+const SHARDS = `performance.getEntriesByType('resource')
+  .filter((e) => e.name.includes('/index/attributes-')).length`;
+
+test('a century arriving for the window does not rewrite the card being read', { skip }, async () => {
+  // The heaviest event of the corpus, so the card has sections to open and the
+  // choice is the data's rather than this file's.
+  const chosen = [...atlas.activeEvents]
+    .filter((e) => (e.weight ?? 0) > 0)
+    .sort((a, b) => (b.weight ?? 0) - (a.weight ?? 0))[0];
+  assert.ok(chosen, 'the corpus has a heaviest event');
+  const when = extent(chosen.when);
+
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    // A narrow window around the chosen event, so the centuries at the other
+    // end of the corpus have not been fetched yet.
+    await open(page, url(`?selected=${chosen.id}&from=${when.min}&to=${when.min}`),
+      'return Boolean(document.querySelector(".panel .event-head h2"));');
+    const before = await page.eval(`
+      document.querySelector('.panel .event-head h2').dataset.kept = 'yes';
+      return { shards: ${SHARDS} };`);
+
+    // Widen the band onto the far end of the corpus. A property on the node
+    // does not survive innerHTML, so the marker is what says the card was
+    // touched up rather than built again.
+    await page.eval(dragBandTo('from', 0));
+    await waitFor(page, 'return /from=/.test(location.search);', 'the window in the URL');
+    await waitFor(page, `return ${SHARDS} > ${before.shards};`,
+      'a century the card does not read to arrive');
+
+    const after = await page.eval(`return {
+      head: document.querySelector('.panel .event-head h2').dataset.kept ?? null,
+      shards: ${SHARDS},
+    };`);
+    assert.ok(after.shards > before.shards,
+      `${after.shards - before.shards} more centuries were fetched`);
+    assert.equal(after.head, 'yes', 'and the card was not rebuilt for them');
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});
