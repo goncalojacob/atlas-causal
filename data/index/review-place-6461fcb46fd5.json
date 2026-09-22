@@ -94,6 +94,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "alegria-de-pio",
+      "kind": "place",
+      "names": [
+        "Alegría de Pío"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "title-not-english"
+        ],
+        "note": "The item carries a label only in Spanish, so the import fell back to the QID for the id, the label and the names. Both are the item's own field read as it stands — \"Alegría de Pío\" — and not a translation or a correction; the title-not-english flag stays so a reviewer sees where the name came from.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -472,10 +500,63 @@
       ],
       "created": "2026-09-22",
       "degree": 1,
+      "id": "bartolome-maso-cuba",
+      "kind": "place",
+      "names": [
+        "Bartolomé Masó",
+        "Bartolomé Masó, Cuba"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
       "id": "bay-of-gibraltar",
       "kind": "place",
       "names": [
         "Bay of Gibraltar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "bayamo",
+      "kind": "place",
+      "names": [
+        "Bayamo"
       ],
       "origin": {
         "tool": "wikidata"
@@ -1489,6 +1570,33 @@
         "flags": [
           "imported-facts",
           "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "cienfuegos",
+      "kind": "place",
+      "names": [
+        "Cienfuegos",
+        "Cenfogos"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
         ],
         "status": "draft"
       },
@@ -3084,7 +3192,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 4,
+      "degree": 6,
       "id": "havana",
       "kind": "place",
       "names": [
@@ -5039,6 +5147,58 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "matanzas",
+      "kind": "place",
+      "names": [
+        "Matanzas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "mayari",
+      "kind": "place",
+      "names": [
+        "Mayarí"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -6063,6 +6223,34 @@
         "flags": [
           "imported-facts",
           "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "oriente-province",
+      "kind": "place",
+      "names": [
+        "Oriente Province",
+        "Oriente",
+        "Oriente (antiga província)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
         ],
         "status": "draft"
       },
@@ -7758,11 +7946,39 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "santa-clara-cuba",
+      "kind": "place",
+      "names": [
+        "Santa Clara",
+        "Santa Clara, Cuba",
+        "Santa Clara (Villa Clara)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "created": "2026-09-16",
-      "degree": 1,
+      "degree": 3,
       "id": "santiago-de-cuba",
       "kind": "place",
       "names": [
@@ -8050,6 +8266,33 @@
         "flags": [
           "imported-facts",
           "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "sierra-maestra",
+      "kind": "place",
+      "names": [
+        "Sierra Maestra",
+        "Serra Maestra"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
         ],
         "status": "draft"
       },
@@ -9732,6 +9975,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "yaguajay-cuba",
+      "kind": "place",
+      "names": [
+        "Yaguajay",
+        "Yaguajay, Cuba"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -9872,13 +10142,31 @@
   "schema": 1,
   "warnings": [
     {
+      "id": "alegria-de-pio",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "baracoa",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
     },
     {
+      "id": "bartolome-maso-cuba",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "bay-of-gibraltar",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "bayamo",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -9915,6 +10203,12 @@
     },
     {
       "id": "chiquinquira",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "cienfuegos",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -9962,6 +10256,18 @@
       "rule": "summary-imported"
     },
     {
+      "id": "matanzas",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "mayari",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "mitu",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -9987,6 +10293,12 @@
     },
     {
       "id": "neiva",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "oriente-province",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -10046,6 +10358,18 @@
       "rule": "summary-imported"
     },
     {
+      "id": "santa-clara-cuba",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "sierra-maestra",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "south-georgia",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -10077,6 +10401,12 @@
     },
     {
       "id": "west-falkland",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "yaguajay-cuba",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"

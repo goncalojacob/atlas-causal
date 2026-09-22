@@ -1664,6 +1664,12 @@
     },
     {
       "dissent": false,
+      "id": "attack-on-the-moncada-barracks--cuban-revolution--caused",
+      "kind": "edge",
+      "locator": "\"Moncada Barracks\", revision 1370861034, § lead"
+    },
+    {
+      "dissent": false,
       "id": "austrian-civil-war--anschluss--precondition-of",
       "kind": "edge",
       "locator": "\"Austrian Civil War\", revision 1375005540, § Long term"
@@ -1673,6 +1679,18 @@
       "id": "baring-crisis--panic-of-1893--precondition-of",
       "kind": "edge",
       "locator": "\"Panic of 1893\", revision 1374530409, § Causes"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-alegria-de-pio--battle-of-la-plata-1957--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Alegría de Pío\", revision 1370431604, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-alegria-de-pio--battle-of-la-plata-1957--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of La Plata (1957)\", revision 1370446805, § lead"
     },
     {
       "dissent": false,
@@ -1979,6 +1997,12 @@
       "id": "cuban-revolution--angola-independence-1975--precondition-of",
       "kind": "edge",
       "locator": "\"Cuban Revolution\", revision 1373305240"
+    },
+    {
+      "dissent": false,
+      "id": "cuban-revolution--operation-verano--reacted-to",
+      "kind": "edge",
+      "locator": "\"Operation Verano\", revision 1371154085, § lead"
     },
     {
       "dissent": false,
@@ -2567,6 +2591,18 @@
       "id": "haitian-revolution-1791-1804--the-cuban-sugar-boom--caused",
       "kind": "edge",
       "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "dissent": false,
+      "id": "havana-presidential-palace-attack-1957--humboldt-7-massacre--caused",
+      "kind": "edge",
+      "locator": "\"Havana Presidential Palace attack (1957)\", revision 1361104549, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "havana-presidential-palace-attack-1957--humboldt-7-massacre--caused",
+      "kind": "edge",
+      "locator": "\"Humboldt 7 massacre\", revision 1361104810, § lead"
     },
     {
       "dissent": false,
@@ -3188,6 +3224,18 @@
     },
     {
       "dissent": false,
+      "id": "operation-verano--battle-of-santa-clara--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Santa Clara\", revision 1370588555, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "operation-verano--battle-of-santa-clara--enabled",
+      "kind": "edge",
+      "locator": "\"Operation Verano\", revision 1371154085, § lead"
+    },
+    {
+      "dissent": false,
       "id": "orange-revolution--euromaidan--precondition-of",
       "kind": "edge",
       "locator": "\"Euromaidan\", revision 1372581234"
@@ -3617,6 +3665,18 @@
       "id": "saint-domingue-and-the-french-sugar-colony--haitian-revolution-1791-1804--caused",
       "kind": "edge",
       "locator": "\"Saint-Domingue\", revision 1375182685"
+    },
+    {
+      "dissent": false,
+      "id": "santiago-de-cuba-uprising--battle-of-alegria-de-pio--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Alegría de Pío\", revision 1370431604, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "santiago-de-cuba-uprising--battle-of-alegria-de-pio--precondition-of",
+      "kind": "edge",
+      "locator": "\"Santiago de Cuba Uprising\", revision 1370730172, § lead"
     },
     {
       "dissent": false,
@@ -5936,6 +5996,12 @@
     },
     {
       "dissent": false,
+      "id": "attack-on-the-moncada-barracks",
+      "kind": "event",
+      "locator": "\"Attack on the Moncada Barracks\", revision 1370861034"
+    },
+    {
+      "dissent": false,
       "id": "august-1915-portuguese-presidential-election",
       "kind": "event",
       "locator": "\"August 1915 Portuguese presidential election\", revision 1273396087"
@@ -5996,6 +6062,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-alegria-de-pio",
+      "kind": "event",
+      "locator": "\"Battle of Alegría de Pío\", revision 1370431604"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ap-bac",
       "kind": "event",
       "locator": "\"Battle of Ap Bac\", revision 1370432225"
@@ -6017,6 +6089,12 @@
       "id": "battle-of-greece",
       "kind": "event",
       "locator": "\"German invasion of Greece\", revision 1375126197"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-guisa",
+      "kind": "event",
+      "locator": "\"Battle of Guisa\", revision 1370442287"
     },
     {
       "dissent": false,
@@ -6056,6 +6134,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-la-plata-1957",
+      "kind": "event",
+      "locator": "\"Battle of La Plata (1957)\", revision 1370446805"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-long-tan",
       "kind": "event",
       "locator": "\"Battle of Long Tan\", revision 1372094029"
@@ -6065,6 +6149,12 @@
       "id": "battle-of-musa-dagh",
       "kind": "event",
       "locator": "\"Musa Dagh Resistance\", revision 1370628972"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-santa-clara",
+      "kind": "event",
+      "locator": "\"Battle of Santa Clara\", revision 1370588555"
     },
     {
       "dissent": false,
@@ -6083,6 +6173,12 @@
       "id": "battle-of-verdun",
       "kind": "event",
       "locator": "\"Battle of Verdun\", revision 1376156165"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-yaguajay",
+      "kind": "event",
+      "locator": "\"Battle of Yaguajay\", revision 1371154538"
     },
     {
       "dissent": false,
@@ -6218,6 +6314,12 @@
     },
     {
       "dissent": false,
+      "id": "cienfuegos-uprising",
+      "kind": "event",
+      "locator": "\"Cienfuegos uprising\", revision 1369026587"
+    },
+    {
+      "dissent": false,
       "id": "colombian-conflict",
       "kind": "event",
       "locator": "\"Colombian conflict\", revision 1376040409"
@@ -6266,6 +6368,12 @@
     },
     {
       "dissent": false,
+      "id": "corynthia-expedition",
+      "kind": "event",
+      "locator": "\"Corynthia expedition\", revision 1375958195"
+    },
+    {
+      "dissent": false,
       "id": "covid-19-pandemic",
       "kind": "event",
       "locator": "\"COVID-19 pandemic\", revision 1373210817"
@@ -6292,7 +6400,7 @@
       "dissent": false,
       "id": "cuban-revolution",
       "kind": "event",
-      "locator": "\"Cuban Revolution\", revision 1373305240"
+      "locator": "\"Cuban Revolution\", revision 1373305240, infobox: \"26 July 1953 – 1 January 1959\""
     },
     {
       "dissent": false,
@@ -6686,6 +6794,12 @@
     },
     {
       "dissent": false,
+      "id": "havana-presidential-palace-attack-1957",
+      "kind": "event",
+      "locator": "\"Havana Presidential Palace attack (1957)\", revision 1361104549"
+    },
+    {
+      "dissent": false,
       "id": "hay-bunau-varilla-treaty",
       "kind": "event",
       "locator": "\"Hay–Bunau-Varilla Treaty\", revision 1375195423"
@@ -6725,6 +6839,12 @@
       "id": "house-bomb-attack-in-neiva",
       "kind": "event",
       "locator": "\"2003 Neiva bombing\", revision 1338994311"
+    },
+    {
+      "dissent": false,
+      "id": "humboldt-7-massacre",
+      "kind": "event",
+      "locator": "\"Humboldt 7 massacre\", revision 1361104810"
     },
     {
       "dissent": false,
@@ -7160,6 +7280,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-verano",
+      "kind": "event",
+      "locator": "\"Operation Verano\", revision 1371154085"
+    },
+    {
+      "dissent": false,
       "id": "orange-revolution",
       "kind": "event",
       "locator": "\"Orange Revolution\", revision 1372581321"
@@ -7409,6 +7535,12 @@
       "id": "saint-domingue-and-the-french-sugar-colony",
       "kind": "event",
       "locator": "\"Saint-Domingue\", revision 1375182685"
+    },
+    {
+      "dissent": false,
+      "id": "santiago-de-cuba-uprising",
+      "kind": "event",
+      "locator": "\"Santiago de Cuba Uprising\", revision 1370730172"
     },
     {
       "dissent": false,

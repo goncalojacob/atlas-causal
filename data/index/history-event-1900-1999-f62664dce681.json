@@ -1635,6 +1635,15 @@
         }
       ]
     },
+    "1956-cuartel-domingo-goicuria-assault": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "1957-1958-influenza-pandemic": {
       "from": "git",
       "versions": [
@@ -5816,6 +5825,15 @@
         }
       ]
     },
+    "attack-on-the-moncada-barracks": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "august-1906-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -6242,6 +6260,15 @@
         }
       ]
     },
+    "battle-of-alegria-de-pio": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-ap-bac": {
       "from": "git",
       "versions": [
@@ -6384,6 +6411,15 @@
             "sources",
             "summary"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-guisa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -6606,6 +6642,15 @@
         }
       ]
     },
+    "battle-of-la-plata-1957": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-long-tan": {
       "from": "git",
       "versions": [
@@ -6691,6 +6736,15 @@
       ]
     },
     "battle-of-san-carlos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-santa-clara": {
       "from": "git",
       "versions": [
         {
@@ -6856,6 +6910,15 @@
       ]
     },
     "battle-of-wireless-ridge": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-yaguajay": {
       "from": "git",
       "versions": [
         {
@@ -7490,6 +7553,15 @@
         }
       ]
     },
+    "carlos-manuel-de-cespedes-barracks-attack-1953": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "carnation-revolution": {
       "from": "git",
       "versions": [
@@ -7739,6 +7811,15 @@
             "place",
             "review"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "cienfuegos-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -8285,6 +8366,15 @@
         }
       ]
     },
+    "corynthia-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "coup-28-may-1926": {
       "from": "git",
       "versions": [
@@ -8521,6 +8611,14 @@
           "fields": [
             "place",
             "review"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
           ],
           "on": "2026-09-16"
         }
@@ -10685,6 +10783,15 @@
         }
       ]
     },
+    "haitian-embassy-in-cuba-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "hat-nipah-and-same-massacres": {
       "from": "git",
       "versions": [
@@ -10721,6 +10828,15 @@
             "place",
             "review"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "havana-presidential-palace-attack-1957": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -10829,6 +10945,15 @@
             "sources",
             "summary"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "humboldt-7-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -13838,6 +13963,15 @@
         }
       ]
     },
+    "operation-verano": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "ottawa-treaty": {
       "from": "git",
       "versions": [
@@ -15662,6 +15796,15 @@
             "parent"
           ],
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "santiago-de-cuba-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

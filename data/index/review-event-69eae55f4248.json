@@ -782,6 +782,39 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "1956-cuartel-domingo-goicuria-assault",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "1956 Cuartel Domingo Goicuría assault"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "category": "disaster",
       "cites": [
         "wikidata",
@@ -4479,6 +4512,42 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "attack-on-the-moncada-barracks",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Attack on the Moncada Barracks"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "category": "election",
       "cites": [
         "wikidata",
@@ -4867,6 +4936,42 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 2,
+      "id": "battle-of-alegria-de-pio",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Battle of Alegría de Pío"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
       "id": "battle-of-ap-bac",
       "kind": "event",
       "origin": {
@@ -5081,6 +5186,41 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Greece"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-guisa",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Battle of Guisa"
     },
     {
       "authors": [
@@ -5318,6 +5458,42 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
+      "id": "battle-of-la-plata-1957",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Battle of La Plata (1957)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
       "id": "battle-of-long-tan",
       "kind": "event",
       "origin": {
@@ -5486,6 +5662,42 @@
       "revised": null,
       "status": "active",
       "title": "Battle of San Carlos"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "battle-of-santa-clara",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Battle of Santa Clara"
     },
     {
       "authors": [
@@ -5761,6 +5973,41 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Wireless Ridge"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-yaguajay",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Battle of Yaguajay"
     },
     {
       "authors": [
@@ -6621,6 +6868,39 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "carlos-manuel-de-cespedes-barracks-attack-1953",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Carlos Manuel de Céspedes Barracks Attack, 1953"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -6816,6 +7096,40 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Chinese Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "cienfuegos-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Cienfuegos uprising"
     },
     {
       "authors": [
@@ -7260,6 +7574,41 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "corynthia-expedition",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Corynthia expedition"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -7630,7 +7979,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 5,
       "id": "cuban-revolution",
       "kind": "event",
       "origin": {
@@ -7640,8 +7989,10 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "m50-chain"
+          "m50-chain",
+          "a7-widened"
         ],
+        "note": "A7: the span was 1959 alone, the day Havana fell, which put every action of the revolution's own fighting outside it. The cited article states its span in the infobox at the revision this record already cites, 1373305240 — \"26 July 1953 – 1 January 1959\" — and its lead names the same opening, the Moncada Barracks assault \"on 26 July 1953\". So the start is 1953 with that day; the end keeps the day it had. Nothing else is changed.",
         "status": "draft"
       },
       "revised": "2026-09-16",
@@ -10613,6 +10964,37 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "haitian-embassy-in-cuba-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Haitian Embassy in Cuba massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10676,6 +11058,41 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Hat Nipah and Same massacres"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "havana-presidential-palace-attack-1957",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Havana Presidential Palace attack (1957)"
     },
     {
       "authors": [
@@ -10906,6 +11323,41 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "house-bomb attack in Neiva"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "humboldt-7-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Humboldt 7 massacre"
     },
     {
       "authors": [
@@ -14683,6 +15135,42 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 2,
+      "id": "operation-verano",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Operation Verano"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -16491,6 +16979,41 @@
       "revised": "2026-09-18",
       "status": "active",
       "title": "The seizure of the liner Santa Maria"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "santiago-de-cuba-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cuban-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Santiago de Cuba Uprising"
     },
     {
       "authors": [
@@ -21780,6 +22303,18 @@
       "rule": "summary-imported"
     },
     {
+      "id": "1956-cuartel-domingo-goicuria-assault",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1956-cuartel-domingo-goicuria-assault",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "1957-1958-influenza-pandemic",
       "kind": "event",
       "message": "the title states 1957–1958 and the record is dated 1956–1958",
@@ -21984,6 +22519,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-guisa",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-hamburger-hill",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -22128,6 +22669,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "battle-of-yaguajay",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battles-of-khalkhin-gol",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -22176,6 +22723,24 @@
       "rule": "degree-zero"
     },
     {
+      "id": "carlos-manuel-de-cespedes-barracks-attack-1953",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "carlos-manuel-de-cespedes-barracks-attack-1953",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "cienfuegos-uprising",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "colombian-conflict-2018-present",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -22198,6 +22763,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "corynthia-expedition",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "cretan-revolt-of-1897-1898",
@@ -22285,6 +22856,18 @@
     },
     {
       "id": "german-polish-declaration-of-non-aggression",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "haitian-embassy-in-cuba-massacre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "haitian-embassy-in-cuba-massacre",
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"

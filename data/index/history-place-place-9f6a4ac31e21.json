@@ -47,6 +47,15 @@
         }
       ]
     },
+    "alegria-de-pio": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "alvor": {
       "from": "git",
       "versions": [
@@ -237,7 +246,25 @@
         }
       ]
     },
+    "bartolome-maso-cuba": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "bay-of-gibraltar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "bayamo": {
       "from": "git",
       "versions": [
         {
@@ -759,6 +786,15 @@
       ]
     },
     "chiquinquira": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "cienfuegos": {
       "from": "git",
       "versions": [
         {
@@ -2662,6 +2698,24 @@
         }
       ]
     },
+    "matanzas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "mayari": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "me-zochi": {
       "from": "git",
       "versions": [
@@ -3179,6 +3233,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "oriente-province": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -4059,6 +4122,15 @@
         }
       ]
     },
+    "santa-clara-cuba": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "santiago-de-cuba": {
       "from": "git",
       "versions": [
@@ -4202,6 +4274,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "sierra-maestra": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -5094,6 +5175,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "yaguajay-cuba": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]

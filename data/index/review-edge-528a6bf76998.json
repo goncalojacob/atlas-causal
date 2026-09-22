@@ -3248,6 +3248,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-22",
+      "from": "attack-on-the-moncada-barracks",
+      "id": "attack-on-the-moncada-barracks--cuban-revolution--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cuban-revolution",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "austrian-civil-war",
       "id": "austrian-civil-war--anschluss--precondition-of",
@@ -3348,6 +3376,34 @@
       "status": "active",
       "to": "1975-sao-tomean-legislative-election",
       "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "battle-of-alegria-de-pio",
+      "id": "battle-of-alegria-de-pio--battle-of-la-plata-1957--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-la-plata-1957",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -5495,6 +5551,34 @@
       "status": "active",
       "to": "angola-independence-1975",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "cuban-revolution",
+      "id": "cuban-revolution--operation-verano--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "operation-verano",
+      "type": "reacted-to"
     },
     {
       "authors": [
@@ -8113,6 +8197,34 @@
       "revised": null,
       "status": "active",
       "to": "the-cuban-sugar-boom",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "havana-presidential-palace-attack-1957",
+      "id": "havana-presidential-palace-attack-1957--humboldt-7-massacre--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "humboldt-7-massacre",
       "type": "caused"
     },
     {
@@ -10817,6 +10929,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-22",
+      "from": "operation-verano",
+      "id": "operation-verano--battle-of-santa-clara--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-santa-clara",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "orange-revolution",
       "id": "orange-revolution--euromaidan--precondition-of",
@@ -12605,6 +12745,34 @@
       "status": "active",
       "to": "angola-war-begins-1961",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "santiago-de-cuba-uprising",
+      "id": "santiago-de-cuba-uprising--battle-of-alegria-de-pio--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-alegria-de-pio",
+      "type": "precondition-of"
     },
     {
       "authors": [

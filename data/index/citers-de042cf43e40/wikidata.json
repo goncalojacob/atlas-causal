@@ -1628,6 +1628,12 @@
     },
     {
       "dissent": false,
+      "id": "1956-cuartel-domingo-goicuria-assault",
+      "kind": "event",
+      "locator": "Q5793222"
+    },
+    {
+      "dissent": false,
       "id": "1957-1958-influenza-pandemic",
       "kind": "event",
       "locator": "Q1434550"
@@ -2204,6 +2210,12 @@
     },
     {
       "dissent": false,
+      "id": "attack-on-the-moncada-barracks",
+      "kind": "event",
+      "locator": "Q11211553"
+    },
+    {
+      "dissent": false,
       "id": "august-1915-portuguese-presidential-election",
       "kind": "event",
       "locator": "Q97516196"
@@ -2264,6 +2276,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-alegria-de-pio",
+      "kind": "event",
+      "locator": "Q5778565"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ap-bac",
       "kind": "event",
       "locator": "Q280468"
@@ -2306,6 +2324,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-guisa",
+      "kind": "event",
+      "locator": "Q107261337"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-hamburger-hill",
       "kind": "event",
       "locator": "Q247395"
@@ -2342,6 +2366,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-la-plata-1957",
+      "kind": "event",
+      "locator": "Q118445706"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-long-tan",
       "kind": "event",
       "locator": "Q259526"
@@ -2375,6 +2405,12 @@
       "id": "battle-of-san-carlos",
       "kind": "event",
       "locator": "Q4872265"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-santa-clara",
+      "kind": "event",
+      "locator": "Q2153101"
     },
     {
       "dissent": false,
@@ -2423,6 +2459,12 @@
       "id": "battle-of-wireless-ridge",
       "kind": "event",
       "locator": "Q4872743"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-yaguajay",
+      "kind": "event",
+      "locator": "Q3636666"
     },
     {
       "dissent": false,
@@ -2552,6 +2594,12 @@
     },
     {
       "dissent": false,
+      "id": "carlos-manuel-de-cespedes-barracks-attack-1953",
+      "kind": "event",
+      "locator": "Q107525926"
+    },
+    {
+      "dissent": false,
       "id": "catatumbo-campaign",
       "kind": "event",
       "locator": "Q66474138"
@@ -2573,6 +2621,12 @@
       "id": "chinese-civil-war",
       "kind": "event",
       "locator": "Q179975"
+    },
+    {
+      "dissent": false,
+      "id": "cienfuegos-uprising",
+      "kind": "event",
+      "locator": "Q141016338"
     },
     {
       "dissent": false,
@@ -2615,6 +2669,12 @@
       "id": "convention-relating-to-the-status-of-refugees",
       "kind": "event",
       "locator": "Q60433"
+    },
+    {
+      "dissent": false,
+      "id": "corynthia-expedition",
+      "kind": "event",
+      "locator": "Q5853324"
     },
     {
       "dissent": false,
@@ -3056,9 +3116,21 @@
     },
     {
       "dissent": false,
+      "id": "haitian-embassy-in-cuba-massacre",
+      "kind": "event",
+      "locator": "Q133827414"
+    },
+    {
+      "dissent": false,
       "id": "hat-nipah-and-same-massacres",
       "kind": "event",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "havana-presidential-palace-attack-1957",
+      "kind": "event",
+      "locator": "Q57729352"
     },
     {
       "dissent": false,
@@ -3095,6 +3167,12 @@
       "id": "house-bomb-attack-in-neiva",
       "kind": "event",
       "locator": "Q5710617"
+    },
+    {
+      "dissent": false,
+      "id": "humboldt-7-massacre",
+      "kind": "event",
+      "locator": "Q6005145"
     },
     {
       "dissent": false,
@@ -3608,6 +3686,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-verano",
+      "kind": "event",
+      "locator": "Q3354079"
+    },
+    {
+      "dissent": false,
       "id": "orange-revolution",
       "kind": "event",
       "locator": "Q836386"
@@ -3839,6 +3923,12 @@
       "id": "sabra-and-shatila-massacre",
       "kind": "event",
       "locator": "Q208199"
+    },
+    {
+      "dissent": false,
+      "id": "santiago-de-cuba-uprising",
+      "kind": "event",
+      "locator": "Q5974095"
     },
     {
       "dissent": false,
