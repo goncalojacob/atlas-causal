@@ -15,11 +15,13 @@ import { test } from 'node:test';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 
-import { defaultState } from '../src/state.js';
+import { defaultState, DEGREE_CHOICES, DEGREE_DEFAULT } from '../src/state.js';
 import { resolveWindow, centuryOf } from '../src/util/window.js';
 import { extent } from '../src/util/dates.js';
 import { workingSet } from '../src/emphasis.js';
 import { stackTitle, stackBadge } from '../src/cluster.js';
+import { degreeLabel } from '../src/graph-filters.js';
+import { degreeOf } from '../src/graph-view/arrangement.js';
 import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
 
 const atlas = await atlasOf(path.join(ROOT, 'data'));
@@ -69,5 +71,31 @@ test('a stack says how many events it hides, in the words its own title uses', (
     assert.doesNotMatch(badge, /^\+\d+$/, `"${badge}" is a bare count behind a plus`);
     assert.match(badge, new RegExp(`^${count - 1} more$`), 'and it says how many are hidden');
     assert.ok(stackTitle('x', count).includes(badge), 'in the title’s own words');
+  }
+});
+
+// ─── 2. the graph's control speaks the reader's language (A12) ─────────────
+//
+// "draws [two links or more ▾]" — and a reader does not know what "two links"
+// filters (review A, finding 12). The control is kept rather than dropped
+// because the floor is measurably live: the measurement is below, derived from
+// the corpus, and `STATUS.md` carries the numbers of the day.
+
+test('the degree floor still changes the picture, so the control stays', () => {
+  const shown = workingSet(atlas, defaultState()).shown;
+  const kept = (floor) => [...shown].filter((id) => degreeOf(atlas, id) >= floor).length;
+  assert.equal(kept(DEGREE_DEFAULT), shown.size,
+    'at its default it takes nothing away, which is M82’s own rule');
+  const highest = Math.max(...DEGREE_CHOICES);
+  assert.ok(kept(highest) < shown.size,
+    `the floor removes ${shown.size - kept(highest)} of ${shown.size} at ${highest}`);
+});
+
+test('and it says what it does, in words that are not the builder’s', () => {
+  for (const n of DEGREE_CHOICES) {
+    const label = degreeLabel(n);
+    assert.doesNotMatch(label, /links or more/, `"${label}" is the builder’s phrasing`);
+    assert.match(label, /^Show /, 'each option is a whole sentence about the picture');
+    if (n > 0) assert.match(label, new RegExp(`at least ${n} connections?$`));
   }
 });

@@ -91,3 +91,31 @@ test('a reader who types nothing sees the whole span, on all three views', { ski
     assert.deepEqual(await errorsOn(page), []);
   }, { device: DESK });
 });
+
+// ─── 2. the graph's control speaks the reader's language (A12) ─────────────
+
+test('nothing on the graph’s control says “links or more”', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?view=graph'), GRAPH_READY);
+    const seen = await page.eval(`
+      const group = document.querySelector('.graph-filters');
+      if (!group) return null;
+      const select = group.querySelector('[data-filter="degree"]');
+      return {
+        text: group.textContent.replace(/\\s+/g, ' ').trim(),
+        options: [...select.options].map((o) => o.textContent),
+        shown: group.getBoundingClientRect().height > 0,
+      };`);
+    // Or there is no control at all, which is the other answer the brief allows.
+    if (seen === null) return;
+    assert.equal(seen.shown, true, 'the control is on the graph');
+    assert.ok(!seen.text.includes('links or more'), `the control reads "${seen.text}"`);
+    for (const option of seen.options) {
+      assert.ok(!option.includes('links or more'), `an option reads "${option}"`);
+      assert.match(option, /^Show /, `"${option}" is a sentence about the picture`);
+    }
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});
