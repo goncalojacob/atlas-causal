@@ -1262,6 +1262,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 2,
+      "id": "1979-herat-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "afghan-conflict",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1979 Herat uprising"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -1421,7 +1449,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 5,
+      "degree": 6,
       "id": "1982-lebanon-war",
       "kind": "event",
       "origin": {
@@ -3733,6 +3761,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "death",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "assassination-of-miguel-uribe-turbay",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "assassination of Miguel Uribe Turbay"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -3844,6 +3900,33 @@
       "revised": "2026-09-18",
       "status": "active",
       "title": "Anglo-Portuguese agreement on Azores bases"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "bala-hissar-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "afghan-conflict",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bala Hissar uprising"
     },
     {
       "authors": [
@@ -4895,7 +4978,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "colombian-conflict",
       "kind": "event",
       "origin": {
@@ -4911,6 +4994,35 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Colombian conflict"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "colombian-peace-process",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Colombian peace process"
     },
     {
       "authors": [
@@ -6155,6 +6267,33 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Portugal applies to join the EEC"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "effacer-le-tableau",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-congo-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Effacer le tableau"
     },
     {
       "authors": [
@@ -10633,6 +10772,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "mountain-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "lebanese-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mountain War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -12672,7 +12839,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "saur-revolution",
       "kind": "event",
       "origin": {
@@ -13684,7 +13851,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 4,
+      "degree": 5,
       "id": "soviet-afghan-war",
       "kind": "event",
       "origin": {
@@ -17102,6 +17269,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "assassination-of-miguel-uribe-turbay",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "bala-hissar-uprising",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "bambatha-rebellion",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -17109,6 +17288,12 @@
     },
     {
       "id": "benin-expedition-of-1897",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "effacer-le-tableau",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

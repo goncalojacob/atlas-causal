@@ -437,6 +437,15 @@
         }
       ]
     },
+    "1979-herat-uprising--soviet-afghan-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "1979-portuguese-legislative-election--constitutional-revision-1982--enabled": {
       "from": "git",
       "versions": [
@@ -491,6 +500,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "1982-lebanon-war--mountain-war--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -1405,6 +1423,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "colombian-conflict--colombian-peace-process--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4027,6 +4054,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "saur-revolution--1979-herat-uprising--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

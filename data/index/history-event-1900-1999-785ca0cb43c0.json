@@ -2384,6 +2384,15 @@
         }
       ]
     },
+    "1979-herat-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "1979-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -4999,6 +5008,15 @@
             "parent"
           ],
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "bala-hissar-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -9514,6 +9532,15 @@
       ]
     },
     "moscow-uprising-of-1905": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "mountain-war": {
       "from": "git",
       "versions": [
         {

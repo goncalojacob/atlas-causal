@@ -272,6 +272,12 @@
     },
     {
       "dissent": false,
+      "id": "1979-herat-uprising--soviet-afghan-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"1979 Herat uprising\", revision 1370623531, § Aftermath"
+    },
+    {
+      "dissent": false,
       "id": "1982-lebanon-war--2006-lebanon-war--enabled",
       "kind": "edge",
       "locator": "\"1982 Lebanon War\", revision 1370279817, § lead"
@@ -281,6 +287,12 @@
       "id": "1982-lebanon-war--2006-lebanon-war--enabled",
       "kind": "edge",
       "locator": "\"Lebanese Civil War\", revision 1375063016, § Shia Muslims"
+    },
+    {
+      "dissent": false,
+      "id": "1982-lebanon-war--mountain-war--enabled",
+      "kind": "edge",
+      "locator": "\"Mountain War (Lebanon)\", revision 1371504591, § Background"
     },
     {
       "dissent": false,
@@ -707,6 +719,12 @@
       "id": "chinese-civil-war--korean-war--precondition-of",
       "kind": "edge",
       "locator": "\"Korean War\", revision 1371767674"
+    },
+    {
+      "dissent": false,
+      "id": "colombian-conflict--colombian-peace-process--reacted-to",
+      "kind": "edge",
+      "locator": "\"Colombian peace process\", revision 1375561117, § lead"
     },
     {
       "dissent": false,
@@ -2435,6 +2453,12 @@
       "id": "saint-domingue-and-the-french-sugar-colony--haitian-revolution-1791-1804--caused",
       "kind": "edge",
       "locator": "\"Saint-Domingue\", revision 1375182685"
+    },
+    {
+      "dissent": false,
+      "id": "saur-revolution--1979-herat-uprising--reacted-to",
+      "kind": "edge",
+      "locator": "\"1979 Herat uprising\", revision 1370623531, § lead and § Background"
     },
     {
       "dissent": false,
