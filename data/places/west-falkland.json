@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "falkland-islands",
+  "id": "west-falkland",
   "kind": "place",
   "status": "active",
   "supersededBy": null,
@@ -23,18 +23,18 @@
   "origin": {
     "tool": "wikidata"
   },
-  "wikidata": "Q9648",
+  "wikidata": "Q733338",
   "sources": [],
   "names": [
-    "Falkland Islands"
+    "West Falkland"
   ],
   "where": {
-    "lon": -59.22,
-    "lat": -51.73,
+    "lon": -60.131944444444,
+    "lat": -51.7975,
     "precision": "region",
-    "label": "Falkland Islands"
+    "label": "West Falkland"
   },
   "region": null,
   "regionNote": null,
-  "summary": "Wikidata item Q9648, imported by tools/import/wikidata.mjs. The item's own description reads \"archipelago in the South Atlantic Ocean, and a British Overseas Territory, disputed by Argentina\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+  "summary": "Wikidata item Q733338, imported by tools/import/wikidata.mjs. The item's own description reads \"island of the Falkland islands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
 }

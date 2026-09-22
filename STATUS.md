@@ -18576,6 +18576,141 @@ them. Deviations 1070 to 1076.
      of it**, so the test still refuses what it exists to refuse — and a fire
      that sees this red again should put it to the owner rather than nudge
      the share a third time.
+## M42b — the Americas, and Europe before 1900
+
+**The lane opened, 22 September.** A11 partitioned M42 into two records lanes
+that run at once: M42 keeps Africa and Asia, **M42b takes the Americas, every
+century from 1492, and Europe before 1900**, on the branch `m42b` cut from
+`origin/m0`. Same brief, same eleven amendments; its own pool file,
+`docs/m42b-pool.md`, and its deviations numbered from **1200**. There is no
+done condition until the owner writes one.
+
+**The measurement first.** Per lane and per century, over the topology the
+validator builds. Active / main: **Europe 303 / 86, Asia 117 / 68, Africa
+79 / 32, the Americas 83 / 59** — this partition's own half being the thinnest
+of the four lanes and the least filed. **Europe before 1900 was thirteen
+events**, one each in the 15th, 16th, 17th and 18th centuries and nine in the
+19th; those four cells were the thinnest in the whole atlas and three of them
+had no umbrella of any kind. The `americas` lane divides 48 South and Central
+to 8 North among its placed events, so the brief's ordering — South before
+North until they hold as much — was already satisfied at the measurement and
+does not bind this run.
+
+**Batch 1 — the Italian Wars, and the Greco-Turkish War of 1897.** Ten events
+and six places imported from Wikidata, every one `draft` and
+`imported-facts`. `italian-wars` (1494–1559) is the umbrella Europe's 16th
+century lacked and six of its wars file under it; `battle-of-st-quentin` went
+to the nearer parent, `italian-war-of-1551-1559`, because its own lead calls
+it an engagement of that war and A8 says a parent reachable through another
+is not a second one. `battle-of-domokos` and `battle-of-velestino` file under
+the Greco-Turkish war the atlas already held. **Five of the ten were placed**
+from the `P276` their items name, at the precision the location's own class
+gives — `provence` and `crete` as `region`, `saint-quentin`, `domokos` and
+`velestino` as `city`; the others name only a country, or a region as large as
+one, and stay placeless until `M80 done` is on `origin/m0`.
+**One edge**, `cretan-revolt-of-1897-1898 --caused--> greco-turkish-war-of-1897`,
+`probable`, from the two articles at named revisions.
+
+**Five items and two filings refused**: an item whose English label carries
+vandalism, four 1897 battles with no English article and a description that
+reads "1897 battle" entire, the Cretan Revolt under the war (its span runs a
+year past the war's end and its lead never calls it part of it — an edge was
+written instead), and `berlin-conference` under `scramble-for-africa` (the
+conference sat from November 1884 and the umbrella begins in 1885; widening it
+is an Africa record's business and so M42's).
+
+**Corpus after the fire: 592 active, 247 main, 345 filed, 639 edges, largest
+connected component 503, 68 components, 51 events with no edge at all.**
+`node tools/validate.mjs --index`: **0 errors, 273 warnings**. **1,709 pure
+and 234 browser, 1,943 in all, 0 failed and 0 skipped**, the browser suites
+one at a time as the check runs them. Deviations **1200** and **1201**.
+
+1200. **The main count rose by two and A6 says a batch that does that has to
+      say why.** The two are different cases. `italian-wars` is an umbrella a
+      century with one event and nothing to file under could not be filled
+      without — the brief asks for exactly it — and it is the cheap direction
+      of the trade: **ten records arrived and the resting timeline gained two
+      bars, not ten**, with six more measured rows of the same vein now filing
+      under it for nothing. `cretan-revolt-of-1897-1898` is not a trade at
+      all: its sources refuse to make it part of anything here, so it stands
+      on the resting picture with an edge and no parent, which is what
+      `degree-zero` and the main count are for. Nine of the ten earned no edge
+      — the Italian Wars' phases are chronological to each other and their
+      leads argue no causation between them, the same finding M42's batch 34
+      wrote down about the Vietnam War — and nothing was invented to connect
+      them.
+1201. **A place whose point stands for a whole country-sized region is the
+      case A9 holds back, and one was written before that was seen.**
+      `italian-peninsula` came from the Italian Wars' own `P276`, and the map
+      then wrote its name across Rome — `tests/map-browser.test.mjs` caught
+      it on the run's own check and again on the branch's, so a real defect
+      and not a flake. A9 already says an event whose only located thing is
+      its country stays placeless until `M80 done`, and M80 is what adds the
+      `country` precision and the mark that draws a thing that large; a
+      peninsula the size of Italy is that case in everything but the word.
+      The record was deleted, `Q145694` taken back out of the seeds and the
+      import's `done` list, and the two events left placeless in the `europe`
+      lane as the import first wrote them. The fix is in the data because
+      this run may not touch the placer.
+
+**Batch 2 — the Falklands War, filed and placed.** Taken from the `americas`
+lane, which batch 1 did not touch and which is the larger half of this
+partition. The inverse `part of` sweep over this partition returned 164
+distinct items, 161 of them new; the Falklands vein was taken first because
+**every row of it is dated inside 1982 and the umbrella this atlas holds is
+dated 1982**, so nothing had to be widened and the main count could not move.
+**Twenty-two events, all filed under `falklands-war` and all placed**, with
+**fourteen place records** from the first located thing each item names that
+carries a `P625` — `stanley`, `goose-green` and `grytviken` as `city`, six
+bays, hills and mountains as `point`, five islands and the archipelago as
+`region`. Seven events took the archipelago because Wikidata points them at
+nothing narrower: the ridges above Port Stanley have their own items and no
+`P276` reaches them, and A9 forbids inventing the point that would place
+them. `grytviken`, `south-georgia` and `thule-island` carry a hand-written
+lane with rule 10's note, being below every region polygon the atlas draws.
+**Four edges**, each `probable` from what an article states in so many words,
+**two of them into records the atlas already held**:
+`operation-rosary --caused--> falklands-war` (*"The invasion served as a
+catalyst for the subsequent Falklands War"*) and
+`battle-of-mount-tumbledown --caused--> argentine-surrender-in-the-falklands-war`
+(*"leading to the fall of Stanley and the surrender of Argentine forces"*).
+
+**Forty-one items and one edge refused**: the IMF, the World Bank and FARC
+(institutions, not events), the twenty-five chapters and preambles of the UN
+Charter (divisions of a text, and undated), nine Falklands items with no
+usable span or no English label, three "theater of war" items and an "aspect
+of history"; and `operation-sutton --precondition-of--> battle-of-san-carlos`,
+which rule 4 refused because the landing and the air battle over the
+anchorage are the same five days and neither precedes the other.
+
+**Seven classes were added** to the seeds file, each read off Wikidata:
+military operation, covert operation, military raid, combat, skirmish and
+friendly fire as `war`, and aviation accident as `disaster`. The Gazelle
+incident of 6 June carries the last two at once and so **takes no category at
+all**, which is what `classify()` does where the table disagrees and the right
+answer here.
+
+**Corpus after the fire: 614 active, 247 main — unchanged — 367 filed, 643
+edges, largest connected component 505, 86 components, 69 events with no edge
+at all.** The `americas` lane goes from 83 active to **104**. `node
+tools/validate.mjs --index`: **0 errors, 289 warnings**. **1,737 pure and 246
+browser, 1,983 in all, 0 failed and 0 skipped**, the browser suites one at a
+time as the check runs them; `docs/m53-polities.md` §4.1 was retaken to 614,
+which is the one test a records batch always moves. Deviation **1202**.
+
+1202. **A batch can grow a lane by a quarter and cost the resting timeline
+      nothing.** Twenty-two events arrived and the main count did not move by
+      one, because every one of them is inside an umbrella that was already
+      here and already drawn. Batch 1 paid two bars for ten records to open
+      Europe's 16th century; this batch paid none for twenty-two, which is
+      what batch 1 predicted the Americas would offer and is the argument for
+      taking a vein under a standing umbrella before writing a new one. The
+      other half of the same finding is unchanged and unflattering:
+      **eighteen of the twenty-two earned no edge at all** and the component
+      moved by two. The phases of one war are chronological to each other and
+      their leads argue no causation between them — the third batch across
+      two branches to write that down — and nothing was invented to connect
+      them.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
@@ -18876,3 +19011,5 @@ M80 started 2026-09-22T11:11:07Z by scheduled (branch m80)
 M80 done
 M81 started 2026-09-22T12:29:49Z by scheduled (branch m81)
 M81 done
+M42b started 2026-09-22T11:47:35Z by scheduled
+M42b started 2026-09-22T14:19:56Z by scheduled

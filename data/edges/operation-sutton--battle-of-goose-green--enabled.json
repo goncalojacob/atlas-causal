@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "operation-sutton--battle-of-goose-green--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Goose Green\", revision 1370110982, lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Sutton\", revision 1374609063, lead"
+    }
+  ],
+  "from": "operation-sutton",
+  "to": "battle-of-goose-green",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Goose Green's lead explains the objective by where the British had come ashore: the Argentine force held \"a well-defended position within striking distance of San Carlos Water, where the British task force had positioned themselves after their amphibious landing.\" That landing is Operation Sutton. The article states the position and the reach between them and stops short of saying the landing made the battle inevitable, so this is `enabled` and `probable`: the beachhead is what put a British brigade within a day's march of the isthmus.",
+  "dispute": null
+}

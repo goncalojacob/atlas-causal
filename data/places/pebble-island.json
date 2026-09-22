@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "falkland-islands",
+  "id": "pebble-island",
   "kind": "place",
   "status": "active",
   "supersededBy": null,
@@ -23,18 +23,18 @@
   "origin": {
     "tool": "wikidata"
   },
-  "wikidata": "Q9648",
+  "wikidata": "Q1359998",
   "sources": [],
   "names": [
-    "Falkland Islands"
+    "Pebble Island"
   ],
   "where": {
-    "lon": -59.22,
-    "lat": -51.73,
+    "lon": -59.629444444444,
+    "lat": -51.303055555556,
     "precision": "region",
-    "label": "Falkland Islands"
+    "label": "Pebble Island"
   },
   "region": null,
   "regionNote": null,
-  "summary": "Wikidata item Q9648, imported by tools/import/wikidata.mjs. The item's own description reads \"archipelago in the South Atlantic Ocean, and a British Overseas Territory, disputed by Argentina\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+  "summary": "Wikidata item Q1359998, imported by tools/import/wikidata.mjs. The item's own description reads \"island in the Falkland Islands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
 }
