@@ -270,3 +270,39 @@ test('B5: a mark on the graph takes the focus and answers Enter', { skip }, asyn
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   }, { device: DESK });
 });
+
+// --- B6: choosing a connection while reading a narrative -------------------
+test('B6: a link chosen inside a narrative opens its card and writes ?edge=', { skip }, async () => {
+  const A_LINE = `
+    const svg = document.querySelector('svg.graph');
+    const el = svg.querySelector('line.edge[data-edge]');
+    if (!el) return null;
+    const b = el.getBoundingClientRect();
+    return { id: el.getAttribute('data-edge'), x: b.left + b.width / 2, y: b.top + b.height / 2 };`;
+
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?view=graph&narrative=how-the-colonial-war-ended-the-regime&step=1'), ready);
+    await waitFor(page, NODES, 'the graph to draw its nodes');
+    await waitFor(page, 'return Boolean(document.querySelector("svg.graph line.edge[data-edge]"));', 'a line to choose');
+    const line = await page.eval(A_LINE);
+
+    await page.eval(`
+      const el = document.querySelector('svg.graph line.edge[data-edge=${JSON.stringify(line.id)}]');
+      el.focus();
+      el.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true, cancelable: true }));
+      return true;`);
+
+    // The address says which link is open, which is the whole of "the same way
+    // I select an event".
+    await waitFor(
+      page,
+      `return new URLSearchParams(location.search).get('edge') === ${JSON.stringify(line.id)};`,
+      'the chosen link in the address',
+    );
+    // And the card is the link's, not the narrative's.
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .edge-card-head"));', 'the link\'s card');
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});

@@ -17,7 +17,18 @@ import { openingWindow, readingNarrative, stepState } from './narrative.js';
 const OWNED = Object.freeze(['selected', 'chain', 'from', 'to']);
 // A patch touching any of these is the reader doing something else: the
 // narrative closes and what they asked for stands.
-const LEAVES = Object.freeze(['selected', 'chain', 'place', 'actor', 'source']);
+//
+// **`edge` is one of them** (M83, B6). It was not, and the consequence was a
+// gesture that did nothing at all: with `?narrative=…&step=n` open, a click on
+// a line set `edge`, reading mode passed it through, the graph drew the line
+// chosen — and the panel shows the narrative card first and never reached the
+// edge branch, while `formatState` in reading mode writes only narrative, step,
+// walk and focus. A red line, no card, no address, and the next step of the
+// narrative cleared it silently. The owner's sentence for M80 — *"select a
+// connection the same way I select an event, so I can check its sources"* —
+// failed exactly where the argument is densest. Choosing a link is the reader
+// doing something else, as choosing an event already was.
+const LEAVES = Object.freeze(['selected', 'chain', 'place', 'actor', 'source', 'edge']);
 
 const pick = (state, keys) => Object.fromEntries(keys.map((key) => [key, state[key]]));
 
