@@ -26,8 +26,10 @@
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "m50-chain"
-    ]
+      "m50-chain",
+      "a7-widened"
+    ],
+    "note": "A7: the span was 1959 alone, the day Havana fell, which put every action of the revolution's own fighting outside it. The cited article states its span in the infobox at the revision this record already cites, 1373305240 — \"26 July 1953 – 1 January 1959\" — and its lead names the same opening, the Moncada Barracks assault \"on 26 July 1953\". So the start is 1953 with that day; the end keeps the day it had. Nothing else is changed."
   },
   "wikidata": "Q11264",
   "sitelinks": {
@@ -45,7 +47,7 @@
     },
     {
       "source": "wikipedia-en",
-      "locator": "\"Cuban Revolution\", revision 1373305240"
+      "locator": "\"Cuban Revolution\", revision 1373305240, infobox: \"26 July 1953 – 1 January 1959\""
     },
     {
       "source": "wikipedia-pt",
@@ -59,9 +61,10 @@
   "title": "Cuban Revolution",
   "summary": "Fidel Castro's 26 July Movement, reduced to a handful of survivors after landing from the Granma in 1956, built a guerrilla force in the Sierra Maestra and took Havana on 1 January 1959 when Batista's government collapsed. Within three years the revolution had nationalised American property, survived an invasion at the Bay of Pigs and taken the world to the edge of nuclear war over Soviet missiles. Its consequence for this atlas is elsewhere: a small state with an army, a doctrine of internationalism and a willingness to use both, which is what arrived in Angola in the autumn of 1975.",
   "when": {
-    "start": 1959,
+    "start": 1953,
     "end": 1959,
-    "date": "1959-01-01"
+    "date": "1953-07-26",
+    "endDate": "1959-01-01"
   },
   "place": "havana",
   "region": "americas",
