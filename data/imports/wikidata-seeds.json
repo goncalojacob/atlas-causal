@@ -961,7 +961,17 @@
     "Q697053",
     "Q247395",
     "Q280468",
-    "Q259526"
+    "Q259526",
+    "Q302519",
+    "Q52226",
+    "Q431888",
+    "Q1138460",
+    "Q2926766",
+    "Q481590",
+    "Q609013",
+    "Q2090584",
+    "Q1388058",
+    "Q989081"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -4276,6 +4286,24 @@
       "category": "disaster",
       "label": "aviation accident",
       "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed. An aviation accident is a disaster and friendly fire is war, so an item carrying both — the Gazelle incident of 6 June 1982 — takes no category at all rather than one of the two picked for it."
+    },
+    "Q188055": {
+      "kind": "event",
+      "category": "war",
+      "label": "siege",
+      "note": "Added in M42 batch 35, the Africa batch of the inverse `part of` vein. The label and the description — “military blockade of a city or fortress” — are read from the item itself over the network, which this sandbox has; the class is here because Q2090584, the Siege of Mafeking, carries it and the table did not. The category needs no argument: data/categories.json's own description of `war` names a siege in its list."
+    },
+    "Q6107280": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "revolt",
+      "note": "Added in M42 batch 35 from the same lookup; Wikidata glosses it “social movement that seeks to overthrow and destroy an established authority”. Carried by Q481590, the Abushiri Revolt. The category is `revolution`, whose description names an uprising: a revolt against an established authority is that and not organised armed force between polities."
+    },
+    "Q4": {
+      "kind": "event",
+      "category": "death",
+      "label": "death",
+      "note": "Added in M42 batch 35 from the same lookup; Wikidata glosses it “permanent cessation of vital functions”. Carried by Q431888, the killing of Muammar Gaddafi, whose other class Q914841 *frontier justice* was refused in the same batch as no kind of event — it names how a punishment was delivered, not a thing that happened. The category is `death`, which data/categories.json describes as a person's death “whether by illness, accident, execution or assassination”, so the class and the category are the same statement."
     }
   },
   "reconcile": true

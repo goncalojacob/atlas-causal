@@ -15,7 +15,7 @@ import {
   entitiesUrl, entityDataUrl, fetchEntities, isMissing,
   searchUrl, summaryUrl, sparqlUrl, articleUrl, historyUrl,
   readEntity, parseTime, claimPoint, countLanguageEditions, articleTitles,
-  classify, intervalFor, slug, foldName, idFor, titleFor, NOT_ENGLISH_FLAG, namesFor, identityOf,
+  classify, intervalFor, endUnstated, END_UNSTATED_FLAG, slug, foldName, idFor, titleFor, NOT_ENGLISH_FLAG, namesFor, identityOf,
   mergeIdentity, ENRICHABLE, matchesFor, nameMatches, datesMatch, laneFor, laneNote,
   seededLane, SEEDED_LANE,
   placeRecord, actorRecord, eventRecord, leadRecord, importedSummary,
@@ -249,6 +249,52 @@ test('an interval comes from the properties that belong to the kind', async () =
   assert.equal(intervalFor('event', (await read('Q9000007')).times), null);
 });
 
+// Deviation 1015: Q49101, the Suez Crisis, carries P580 29 October 1956, P582
+// 7 November 1956 and a stray P585 of March 1957, and the old preference for
+// the point in time imported `start: 1957, end: 1956` — an interval that runs
+// backwards, which only rule 15 caught. A12 (3) is the fix: where an item
+// states a span, the span is the interval and the point in time is not read at
+// either end. P585 still answers on its own, which is what dates a one-day
+// event.
+test('a stated span beats a point in time at both ends (A12, deviation 1015)', async () => {
+  const both = (await read('Q9000012')).times;
+  assert.deepEqual(intervalFor('event', both),
+    { start: 1956, end: 1956, date: '1956-10-29', endDate: '1956-11-07' });
+  // The old rule is what this asserts against: neither end may come from 1957.
+  assert.notEqual(intervalFor('event', both).start, 1957);
+  assert.notEqual(intervalFor('event', both).end, 1957);
+  // An item with a point in time and no span is unchanged: it is the whole
+  // interval, which is how a one-day event is dated.
+  assert.deepEqual(intervalFor('event', (await read('Q9000001')).times),
+    { start: 1974, end: 1974, date: '1974-04-25' });
+});
+
+// A12 (3), the other half: an item that states a start and no P582 says
+// nothing about an end, and `end: null` in this atlas means "as far as the
+// data goes" rather than "still going on". The record carries the difference
+// as a flag so that a reviewer reads the article instead of trusting a null.
+test('a start with no stated end is flagged rather than read as ongoing (A12)', async () => {
+  const open = (await read('Q9000013')).times;
+  assert.deepEqual(intervalFor('event', open), { start: 1991, end: null, date: '1991-06-25' });
+  assert.equal(endUnstated('event', open), true);
+  // A span with both ends states one, and so does a bare point in time.
+  assert.equal(endUnstated('event', (await read('Q9000012')).times), false);
+  assert.equal(endUnstated('event', (await read('Q9000001')).times), false);
+  // An actor dated from its founding and still alive is not this case: an
+  // open-ended polity is what `end: null` is for, and rule 19 and the
+  // territories depend on it.
+  assert.equal(endUnstated('actor', (await read('Q9000006')).times), false);
+
+  const record = eventRecord(await read('Q9000013'), {
+    id: 'northfield-insurgency', created: '2026-09-22',
+    when: intervalFor('event', open), place: null, endUnstated: true,
+  });
+  assert.ok(record.review.flags.includes(END_UNSTATED_FLAG),
+    'the flag is on the record, which is where a reviewer sees it');
+  assert.ok(record.review.flags.includes(IMPORTED_FLAG), 'and it is beside the import flag, not instead of it');
+  assert.equal(record.when.end, null);
+});
+
 // --- names, ids, identity ---------------------------------------------------
 
 test('names and ids are derived without inventing either', async () => {
@@ -297,6 +343,28 @@ test('an English article title is a name, and is taken before the Portuguese lab
   // A Portuguese article and no Portuguese label is the same case one language
   // over: a title the item carries beats the bare identifier.
   assert.deepEqual(titleFor({ qid: 'Q9000404', labels: {}, titles: { pt: 'Um artigo' } }), { title: 'Um artigo', english: false });
+});
+
+// A12 (5). A Wikidata label is the shortest name the item can be called; a
+// Wikipedia article title is the name that had to tell this thing from the
+// others of the same name, so it carries the disambiguator. Three records here
+// were all titled "Afghan Civil War" and two "Treaty of London", and a reader
+// choosing between them on a card had nothing to choose by. The article title
+// is the name, and the label is only what is left when there is no article.
+test('the article title is the name, disambiguator and all (A12)', async () => {
+  const disambiguated = await read('Q9000014');
+  assert.equal(disambiguated.labels.en, 'Northfield Civil War', 'the label drops the years');
+  assert.deepEqual(titleFor(disambiguated),
+    { title: 'Northfield Civil War (1989–1992)', english: true });
+  // The id comes off the same chain, so two wars of one name no longer collide
+  // into a name and a bare item id.
+  assert.equal(idFor(disambiguated, new Set()), 'northfield-civil-war-1989-1992');
+  // Where the two agree nothing moves, which is every other record here.
+  assert.deepEqual(titleFor(await read('Q9000001')), { title: 'Northfield Rising', english: true });
+  // A Portuguese article and an English label: the English label is still the
+  // English name, and the article title of another language is not one.
+  assert.deepEqual(titleFor({ qid: 'Q9000405', labels: { en: 'A name' }, titles: { pt: 'Um artigo' } }),
+    { title: 'A name', english: true });
 });
 
 test('a record with no English name of any kind is imported flagged, never translated', async () => {

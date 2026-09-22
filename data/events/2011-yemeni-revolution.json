@@ -23,8 +23,10 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a7-widened"
+    ],
+    "note": "A7: the interval was 2012–2012, with 27 February 2012 at both ends — the imported item's, which dates the handover that ended the revolution and not the revolution — while the record's own title says 2011. The cited article states the span at revision 1375746838: \"from January 2011 to February 2012\". The two exact dates are dropped rather than moved: the article gives months and not days, and a day nobody wrote down is not this run's to invent."
   },
   "origin": {
     "tool": "wikidata"
@@ -40,6 +42,10 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"Yemeni revolution\", revision 1375746838: \"a series of major anti-government protests and armed uprisings that raged through Yemen from January 2011 to February 2012\""
+    },
+    {
       "source": "wikidata",
       "locator": "Q210005"
     },
@@ -51,10 +57,8 @@
   "title": "2011 Yemeni revolution",
   "summary": "The English Wikipedia article \"Yemeni revolution\", at revision 1376086193, opens: \"The Yemeni revolution, also known as the Yemeni intifada, was a series of major anti-government protests and armed uprisings that raged through Yemen from January 2011 to February 2012. It occurred concurrently with the Arab Spring that broke out throughout the Middle East and North Africa in 2011. In its early phase, protests in Yemen were initially against unemployment, economic conditions, corruption, and the authoritarian regime led by President Ali Abdullah Saleh as well as against the government's proposals to modify Yemen's constitution.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q210005, imported by tools/import/wikidata.mjs. The item's own description reads \"Yemeni upheaval occurring simultaneously with the Arab Spring (2011)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 2012,
-    "end": 2012,
-    "date": "2012-02-27",
-    "endDate": "2012-02-27"
+    "start": 2011,
+    "end": 2012
   },
   "place": "yemen-q805",
   "region": "asia",

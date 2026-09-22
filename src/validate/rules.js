@@ -390,6 +390,41 @@ const NO_UNIVERSE = Object.freeze({
   creatorKeys: new Map(),
 });
 
+// The one sentence tools/import/wikidata.mjs writes about an item it has just
+// created a record for. It is matched on its two fixed halves and not on the
+// description between them, which is the item's and varies; a record whose
+// summary somebody has written cannot open this way, and one written by a
+// curation fire opens with the article and the revision instead.
+const IMPORT_PLACEHOLDER = /^Wikidata item Q\d+, imported by tools\/import\/wikidata\.mjs\./;
+
+export function isImportPlaceholder(summary) {
+  return typeof summary === 'string' && IMPORT_PLACEHOLDER.test(summary);
+}
+
+// The years a title states about itself: "(1989–1992)", "of 1521–1526",
+// "1940–1944 insurgency", "Treaty of London (1913)". A title carrying two
+// years that are not a range — a date and a regnal number, say — states no
+// span, and one carrying none is every other record here.
+const TITLE_RANGE = /(?<!\d)(1\d{3}|20\d{2})\s*[‐-―-]\s*(1\d{3}|20\d{2})(?!\d)/;
+const TITLE_YEAR = /(?<!\d)(1\d{3}|20\d{2})(?!\d)/g;
+
+export function yearsInTitle(title) {
+  const range = TITLE_RANGE.exec(title);
+  if (range) return { start: Number(range[1]), end: Number(range[2]) };
+  const years = String(title).match(TITLE_YEAR) ?? [];
+  return years.length === 1 ? { start: Number(years[0]), end: null } : null;
+}
+
+// `end: null` on the record is "as far as the data goes", so a title naming an
+// end says nothing the record denies and only the start is compared. A title
+// naming one year is compared against the start for the same reason.
+export function disagreesWithSpan(stated, when) {
+  if (!when || !Number.isInteger(when.start)) return false;
+  if (stated.start !== when.start) return true;
+  if (stated.end === null || when.end === null || when.end === undefined) return false;
+  return stated.end !== when.end;
+}
+
 export function checkRules(records, topology = {}, { universe: prebuilt = null } = {}) {
   const errors = [];
   const warnings = [];
@@ -1605,6 +1640,30 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
   for (const r of own) {
     if (r.kind === 'place' && r.status === 'active' && placeReferrers(r.id).length === 0) {
       warning('place-unused', r, 'place is referenced by no event');
+    }
+    // A12 (1). The Wikidata import writes one sentence about the world and it
+    // is a placeholder that says so; a curation fire replaces it with the
+    // cited lead of the record's own article. Nothing counted what was left,
+    // so the number was only ever known by grepping for the sentence. Here it
+    // is a warning, which is what a count in this project is.
+    if (r.status === 'active' && isImportPlaceholder(r.summary)) {
+      warning('summary-imported', r, 'nobody has written a summary: this is still the sentence the import wrote about its own item');
+    }
+    // A12 (3), asked of the data alone. A title stating its own years — the
+    // disambiguator A12 (5) keeps, or a period named for its dates — is an
+    // assertion about the span made by whoever wrote the article the title
+    // came from. Where the record's `when` contradicts it, one of the two is
+    // wrong and only a person can say which, so it is never an error: "The
+    // impeachment of Dilma Rousseff, 2016" begins in December 2015 and is
+    // titled for the year it finished, which is a defensible record.
+    if (r.status === 'active' && typeof r.title === 'string') {
+      const stated = yearsInTitle(r.title);
+      if (stated && disagreesWithSpan(stated, r.when)) {
+        warning('span-vs-article-title', r,
+          `the title states ${stated.end === null ? stated.start : `${stated.start}–${stated.end}`}`
+          + ` and the record is dated ${r.when?.start ?? 'nothing'}`
+          + `${r.when?.end === null ? '– (open)' : r.when?.end === r.when?.start ? '' : `–${r.when?.end}`}`);
+      }
     }
     if (r.kind === 'actor' && r.status === 'active' && actorReferrers(r.id).length === 0) {
       warning('actor-unused', r, 'actor is referenced by no event and no relation, and holds no territory');

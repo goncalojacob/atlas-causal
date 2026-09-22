@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "operation-serval",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2926766",
+  "wikipedia": {
+    "en": "Operation Serval",
+    "pt": "Operação Serval"
+  },
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2926766"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Serval\", revision 1370699409"
+    }
+  ],
+  "title": "Operation Serval",
+  "summary": "The English Wikipedia article \"Operation Serval\", at revision 1370699409, opens: \"Operation Serval was a French military operation to oust Islamic militants from the north of Mali, who had begun a push into the center of the country.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2926766, imported by tools/import/wikidata.mjs. The item's own description reads \"2013 French-led military intervention against radical Islamists in Mali\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2013,
+    "end": 2014,
+    "date": "2013-01-11",
+    "endDate": "2014-07-15"
+  },
+  "place": "mali-q912",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

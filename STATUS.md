@@ -18997,6 +18997,128 @@ title (A6) and its axis still runs to 2040 with nothing there.
       Nothing else under `docs/screens/` was rewritten, which `git status`
       confirms rather than a promise.
 
+1077. **The two passes A12 named and the curation fire did not run were the
+      two that are code.** The fire of 13:07Z did the four that are data —
+      summaries, places, participants, polity descriptions — and A7's three
+      intervals, and each is written up in `## Curation 2026-09-22` with its
+      counts. What it left are `intervalFor()` and `titleFor()`, which change
+      what the *next* import writes rather than what any record says now, and
+      a pass over data cannot do either. **A12 says "before any further
+      import" and this is what that clause is protecting**: every batch since
+      deviation 1015 has been importing intervals that could run backwards and
+      titles that drop the disambiguator, and a fire that goes straight to
+      batches leaves both in place for another day.
+
+1078. **A count in this project is a warning, and two things nobody was
+      counting are now counted.** The number of import placeholders left was
+      only ever known by grepping for the sentence `importedSummary()` writes,
+      which is how A12 could say "313" on 22 September and nothing could say
+      what it is today (**101**, of which 79 events). `summary-imported` is
+      that number. `span-vs-article-title` is the other: a title stating its
+      own years is an assertion about the span made by whoever wrote the
+      article, and it is free evidence that was sitting unread in 146 titles.
+      **Six disagreed and three were real widenings the article states in so
+      many words** — the Chechen insurgency, dated to the deportation that
+      ended it; the German revolution, dated to the year it broke out; the
+      Yemeni revolution, dated to the handover that closed it. Each is the
+      same shape: **the item dates the moment the thing finished and the
+      article dates the thing**, which is the pattern A7 was written for and
+      the one the next fire should expect to find again.
+
+1079. **The other three the warning found are not widenings and the difference
+      is worth keeping.** `1957-1958-influenza-pandemic` (1956–1958),
+      `indo-pakistani-war-of-1947-1948` (1947–1949) and
+      `the-impeachment-of-dilma-rousseff-2016` (2015–2016) are each **already
+      wider than their own title**, so A7 does not reach them: it authorises
+      reading a span *from* a cited article, and here the record says more
+      than the article's title does. The impeachment is the one that shows why
+      this can never be an error — it begins in December 2015 and is titled
+      for the year it finished, which is a defensible record and not a
+      mistake. They stay as a warning for a person.
+
+1080. **Retitling five records broke nothing, and that is the argument for
+      A12 (5) rather than an id migration.** Three events were titled "Afghan
+      Civil War" and two "Treaty of London", and the fix people reach for is
+      `tools/migrate/ids.mjs`. It was not needed: the **id is not the title**,
+      the five ids were already distinct (two of them by carrying the item
+      id), and nothing in `data/` references a title. So five `title` fields
+      and two added citations were the whole of it. What changes for the
+      future is `titleFor()`, which now reads the article title first, so the
+      next import of an item of this shape writes the disambiguated name and
+      the disambiguated id at once and no sixth record needs this.
+
+1081. **`git fetch --unshallow` changes the index, and a merge commit is where
+      that bill arrives.** Deviation 887 tells a fire to unshallow, and
+      `tools/lib/history.mjs` refuses a shallow clone outright — every record
+      then reads as written once and never touched. So the first rebuild after
+      an unshallow writes **real** history shards where the branch carried
+      fallback ones, and the merge commit went red on **rule 16** with seven
+      shards missing and seven stale. Nothing was wrong with the records. The
+      cause is the order: the index was built before the merge commit existed,
+      so its shards were the history of the commit before it, while the check
+      rebuilds after. **798 is not only about records versus index, it is about
+      the commit**: build the index after the commit whose history it has to
+      describe, and a merge is a commit like any other. A rebuild at the branch
+      head afterwards produced **no diff at all**, which is what says the head
+      is right and the merge commit alone was not.
+
+1082. **A browser that never opened is not the patience flake of 1069 and
+      should not be re-run as one.** The same red run failed
+      `tests/compose-browser.test.mjs:103` at `browser.mjs:236` —
+      *"headless Chromium opened a debugging port, saying: Failed to connect to
+      the bus"* — which is the browser dying before the test body ran, not an
+      assertion missing a deadline. 1069's flake is a `waitFor` budget against
+      a growing corpus and it fails *inside* a test; this one fails at the
+      launch. Both are runner conditions and both allow the one re-run, but
+      only the first is evidence about the corpus, and a fire that reads them
+      as the same thing will keep looking for records that did not cause it.
+      **The check on the branch head is green**, with both suites passing on
+      the tree the merge commit's run was red on.
+
+1083. **A9's letter and the corpus disagree about what a place record is, and
+      batch 35 followed the corpus.** A12 (2) says A9's pass reads *"the item's
+      own `P625` first"*, and every row of the inverse vein has one — the lane
+      test is built on it. Used as the place, it writes a place record called
+      *Battle of Adwa*, which is not a place but an event with a coordinate.
+      The pass of 22 September that placed 433 events never did this: it
+      created **112 `region`, 98 `country` and 58 `city` places and not one
+      `point`**, all from the located item a `P276`, `P131` or `P17` names. So
+      batch 35 read `P276` for the identity and took `precision` off that
+      item's own class, and `point` appears once — `magersfontein`, which
+      Wikidata knows as the battlefield museum and which is a site and not a
+      town. The rule A12 states and the rule the data follows are different
+      rules; a fire that changes `placeRecord()` to the letter will start
+      naming places after battles.
+
+1084. **A coarse precision is the honest answer to a place a record does not
+      have, not a reason to leave it placeless.** `abushiri-revolt` happened
+      along the coast of what is now Tanzania; the only located item its
+      Wikidata claims reach is German East Africa, whose own centroid sits a
+      thousand kilometres inland in Burundi. The temptation is to refuse the
+      place and keep the record on a lane alone. `country` says exactly what is
+      known — *in German East Africa, the point not established* — and
+      `src/vocab.js` already draws a coarse mark wider and fainter for that
+      reason. A mark a reader can see, drawn as an area, beats a record the map
+      cannot draw at all.
+
+1085. **A class that names how a thing was done is not a class of event.**
+      `Q914841` *frontier justice*, which Wikidata glosses *"extrajudicial
+      punishment that is motivated by the nonexistence of law and order"*, is
+      one of the two classes the killing of Gaddafi carries, and it was refused
+      where `Q4` *death* was added. This is batch 33's refusal of `Q19833559`
+      *preparation* in different clothes and the test is the same one: does the
+      class name a thing that happened, or a property of one? An import that
+      answers the second question builds a vocabulary of adverbs.
+
+1086. **Re-opening a refused item is how a class decision is applied, and it
+      costs nothing.** Three of batch 35's ten were refused on classes the
+      table did not have; the import marks a refused item `done` all the same,
+      so adding the classes alone would have left them refused for ever. The
+      three ids were removed from `runs.import.done` in
+      `data/imports/wikidata-state.json` and the import re-run, which created
+      them. A fire that adds a class and does not do this will find the item
+      silently missing from the batch it was added for.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -19298,5 +19420,7 @@ M81 started 2026-09-22T12:29:49Z by scheduled (branch m81)
 M81 done
 M42b started 2026-09-22T11:47:35Z by scheduled
 M42b started 2026-09-22T14:19:56Z by scheduled
+M42 started 2026-09-22T16:06:45Z by scheduled
 M82 started 2026-09-22T13:35:25Z by scheduled (branch m82)
 M82 done
+M42 started 2026-09-22T18:13:05Z by scheduled

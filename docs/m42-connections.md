@@ -4448,3 +4448,61 @@ in this atlas**, and the reason is A6's own: a period is a filing, a way of
 making the resting timeline readable, and it is not a thing that happens to
 other things. Batch 29 wrote the edge without checking the rule the same run
 had written; the suite caught it before the check did.
+
+## 2af. Batch 35 — the three edges Africa's first batch of the vein earned
+
+*22 September, the fire of 18:13Z. Ten records from the inverse `part of` vein
+asked of the `africa` lane; three edges, each from an article that argues it in
+its own voice, and seven records that earned none and were left to say so.*
+
+**`battle-of-adwa --reacted-to--> second-italo-ethiopian-war`.** Read in this
+direction the edge says the second war answered the first war's defeat. Adwa's
+own article, § Significance at revision 1375956865, carries two historians
+saying so — Tripodi, that *"some of the roots of the rise of Fascism in Italy
+went back to this defeat and to the perceived need to 'avenge' the defeat"*,
+and Levine, that Adwa *"became a national trauma which demagogic leaders strove
+to avenge. It also played no little part in motivating Italy's revanchist
+adventure in 1935"* — beside Mussolini's own words on taking Addis Ababa in May
+1936, *"Adua è vendicata"*. The Second Italo-Ethiopian War's article agrees
+from the other end, § Background at revision 1374151253, calling Adwa, taken on
+6 October 1935, *"a symbolic place for the Italian army as it was the site of
+their defeat"*. `reacted-to` and not `caused`: what the two articles argue is a
+motive forty years later, not a chain of events, and this atlas already holds
+the war-to-war link as `first-italo-ethiopian-war --precondition-of-->
+second-italo-ethiopian-war`. The finer edge says something the coarser one does
+not — *why* the second war was fought where it was fought.
+
+**`battle-of-mogadishu-1993 --precondition-of--> war-in-somalia`.** The
+battle's own article, § Legacy at revision 1376073635, states the link and
+states its strength: *"Fears of committing large numbers of US troops to
+Somalia in the years following the battle in part led to the CIA using Somali
+warlords as proxies against the Islamic Courts Union in the 2000s, and backing
+the Ethiopian military during the invasion of Somalia that followed."* That
+invasion, from December 2006, is `war-in-somalia`. `precondition-of` is
+deliberately the weakest of the five types: the article says the aversion the
+battle left behind shaped which instrument the United States reached for
+thirteen years later, not that the battle caused the war, and *"in part"* is
+the article's own hedge and is kept.
+
+**`battle-of-tripoli-2011 --precondition-of--> killing-of-muammar-gaddafi`.**
+The killing's article opens its account of what happened with the fall of the
+capital, § Events at revision 1375974277: *"After the fall of Tripoli to forces
+of the opposition NTC in August 2011, Gaddafi and his family escaped the Libyan
+capital… In fact, Gaddafi had fled in a small convoy to Sirte on the day
+Tripoli fell"* — and it was at Sirte, two months later, that he was caught and
+killed. The Tripoli article's own lead, revision 1374512796, says the same
+thing from its end: the battle was the National Transitional Council
+*"attempting to overthrow Gaddafi and take control of the capital"*. Losing the
+capital is what put him in the town where he died, and the articles argue no
+more than that.
+
+**All three are `probable`.** Every citation is Wikipedia, and rule 22 refuses
+`consensus` to an edge whose support is Wikipedia alone; none of the three
+pretends otherwise.
+
+**The seven that earned none** — `battle-of-annual`, `operation-serval`,
+`abushiri-revolt`, `siege-of-mafeking`, `battle-of-magersfontein`,
+`first-battle-of-brega` and, on its own account, `killing-of-muammar-gaddafi`,
+which is the far end of an edge and the near end of none — were each read for
+one and refused it, with the reasons in `docs/m42-pool.md` under batch 35.
+Nothing was written to keep them.

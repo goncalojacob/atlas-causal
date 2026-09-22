@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-mogadishu-1993--war-in-somalia--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mogadishu (1993)\", revision 1376073635, § Legacy"
+    }
+  ],
+  "from": "battle-of-mogadishu-1993",
+  "to": "war-in-somalia",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The battle's own article states the link and states its strength: \"Fears of committing large numbers of US troops to Somalia in the years following the battle in part led to the CIA using Somali warlords as proxies against the Islamic Courts Union in the 2000s, and backing the Ethiopian military during the invasion of Somalia that followed.\" That invasion, beginning in December 2006, is the war this atlas holds as `war-in-somalia`. `precondition-of` is the whole of the claim and deliberately the weakest of the five: the article says the aversion the battle left behind shaped which instrument the United States reached for thirteen years later, not that the battle caused the war. \"In part\" is the article's own hedge and is kept here. `probable`: one Wikipedia article and no second author (rule 22).",
+  "dispute": null
+}

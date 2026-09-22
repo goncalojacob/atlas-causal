@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-annual",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1138460",
+  "wikipedia": {
+    "en": "Battle of Annual",
+    "pt": "Batalha de Annual"
+  },
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1138460"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Annual\", revision 1370483005"
+    }
+  ],
+  "title": "Battle of Annual",
+  "summary": "The English Wikipedia article \"Battle of Annual\", at revision 1370483005, opens: \"The Battle of Annual was fought on 22 July 1921 at Annual, in northeastern Morocco, between the Spanish Army and Riffian Berbers during the Rif War. The Spanish suffered a major military defeat, which is almost always referred to by the Spanish as the Disaster of Annual which is widely considered to be the worst defeat ever suffered by the modern Spanish Army. It resulted in major political crises, the fall of several governments, a military dictatorship led by Miguel Primo de Rivera, the abdication of King Alfonso XIII and a complete reassessment of the Spanish colonial policy toward the Rif as the entire Spanish colonial enterprise was at one point threatened.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1138460, imported by tools/import/wikidata.mjs. The item's own description reads \"1921 battle during the Rif War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1921,
+    "end": 1921,
+    "date": "1921-07-22",
+    "endDate": "1921-08-09"
+  },
+  "place": "annual",
+  "region": null,
+  "regionNote": null,
+  "parent": "rif-war",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-magersfontein",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1388058",
+  "wikipedia": {
+    "en": "Battle of Magersfontein",
+    "pt": "Batalha de Magersfontein"
+  },
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1388058"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Magersfontein\", revision 1370268748"
+    }
+  ],
+  "title": "Battle of Magersfontein",
+  "summary": "The English Wikipedia article \"Battle of Magersfontein\", at revision 1370268748, opens: \"The Battle of Magersfontein was fought on 11 December 1899, at Magersfontein, near Kimberley, South Africa, on the borders of the Cape Colony and the independent republic of the Orange Free State. British forces under Lieutenant General Lord Methuen were advancing north along the railway line from the Cape to relieve the siege of Kimberley, but their path was blocked at Magersfontein by a Boer force that was entrenched in the surrounding hills. The British had already fought a series of battles with the Boers, most recently at Modder River, where the advance was temporarily halted.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1388058, imported by tools/import/wikidata.mjs. The item's own description reads \"1899 battle of the Second Boer War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-12-11"
+  },
+  "place": "magersfontein",
+  "region": null,
+  "regionNote": null,
+  "parent": "second-boer-war",
+  "category": "war",
+  "actors": []
+}
