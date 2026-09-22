@@ -179,8 +179,26 @@ export function createIntro(container, {
     container.innerHTML = introHtml(atlas);
   }
 
+  // **And drawn again when a century lands** (M82, A3). The card names
+  // narratives and events, and what a record is *called* arrives with its
+  // attribute shard and not with the core (attributes.js); the card was built
+  // once, at load, so a first visit read `world-war-ii` and
+  // `how-the-colonial-war-ended-the-regime` where the titles go — the front
+  // page of the atlas printing slugs. Nothing in the state has changed when a
+  // shard arrives, so the card has to be told, exactly as the three views, the
+  // panel, the chips and the composer are (main.js, `shardLanded`).
+  //
+  // Only while it is on screen: a card nobody is looking at is rebuilt the
+  // next time it is opened, and rewriting the markup under a reader's pointer
+  // costs a click.
+  function refresh() {
+    if (shown && !container.hidden) draw();
+  }
+
   function show() {
-    if (!shown) draw();
+    // Always drawn afresh: the titles it quotes may have landed since it was
+    // last built, and the "?" is often pressed long after the load.
+    draw();
     shown = true;
     container.hidden = false;
     toggle?.setAttribute('aria-expanded', 'true');
@@ -224,5 +242,5 @@ export function createIntro(container, {
   if (!hasSeen(storage) && opensOnNothing(state.get())) show();
   else container.hidden = true;
 
-  return { show, hide, isOpen: () => !container.hidden };
+  return { show, hide, refresh, isOpen: () => !container.hidden };
 }

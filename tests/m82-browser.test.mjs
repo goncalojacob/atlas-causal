@@ -21,6 +21,7 @@ import {
 import { atlasOf, ROOT } from './helpers.mjs';
 import { parentsOf } from '../src/parts.js';
 import { BACK_LABEL } from '../src/lens.js';
+import { WHAT_IT_IS } from '../src/intro.js';
 
 const atlas = await atlasOf(path.join(ROOT, 'data'));
 
@@ -73,6 +74,48 @@ test('A1: at rest every mark on the graph is a main event, and every name on it 
     for (const text of drawn.labels) {
       assert.doesNotMatch(text, /…/, `"${text}" is cut`);
       assert.ok(titles.has(text), `"${text}" is a record's whole title`);
+    }
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});
+
+// 1 — A3. The card a first visit sees, in the reader's words — and naming the
+// records it offers, which is the other half of "in the reader's words": a
+// title arrives with its century and the card was built once, at load, so the
+// front page of the atlas printed `world-war-ii` where a name goes.
+test('A3: the intro card names what it offers, and says what the atlas is', { skip }, async () => {
+  const CARD = `
+    const card = document.querySelector('.intro-card');
+    if (!card) return null;
+    return {
+      lead: card.querySelector('.intro-lead').textContent.trim(),
+      offered: [...card.querySelectorAll('[data-intro="event"], [data-intro="narrative"]')]
+        .map((el) => ({ id: el.getAttribute('data-id'), text: el.textContent.trim() })),
+      prose: card.textContent,
+    };`;
+
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    // A first visit: the card covers the view with nothing open (intro.js).
+    await open(page, url(''), ready);
+    await waitFor(page, "return Boolean(document.querySelector('.intro-card'));", 'the intro card');
+    // The titles arrive with their centuries, and the card is drawn again
+    // when they do; what is waited for is the thing the assertion reads.
+    await waitFor(page, `
+      const rows = [...document.querySelectorAll('.intro-card [data-intro="event"]')];
+      return rows.length > 0 && rows.every((el) => el.textContent.trim() !== el.getAttribute('data-id'));`,
+    'the card to name what it offers');
+
+    const card = await page.eval(CARD);
+    assert.equal(card.lead, WHAT_IT_IS, 'the card opens on the sentence the masthead carries');
+    assert.ok(card.offered.length > 2, 'and offers a way in');
+    for (const row of card.offered) {
+      assert.notEqual(row.text, row.id, `${row.id} is offered by its id and not by its name`);
+      assert.ok(row.text.length > 0);
+    }
+    // And none of the builder's words before the first click.
+    for (const word of ['walk', 'lens', 'chip', 'breadcrumb']) {
+      assert.doesNotMatch(card.prose, new RegExp(`\\b${word}\\b`, 'i'), word);
     }
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   }, { device: DESK });
