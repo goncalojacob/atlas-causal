@@ -23,11 +23,9 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710",
       "summary-from-lead",
       "filed-from-p361"
-    ],
-    "note": "Wikidata Q1127302 names 3 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 2 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
+    ]
   },
   "origin": {
     "tool": "wikidata"
@@ -67,11 +65,5 @@
     "russian-civil-war"
   ],
   "category": "war",
-  "actors": [
-    {
-      "actor": "estonia",
-      "role": "belligerent",
-      "note": "Wikidata Q1127302, P710 (participant), Q191"
-    }
-  ]
+  "actors": []
 }

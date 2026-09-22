@@ -23,8 +23,7 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead",
-      "filed-from-p361"
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -60,6 +59,5 @@
   "place": "yemen-q805",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "arab-spring",
   "actors": []
 }

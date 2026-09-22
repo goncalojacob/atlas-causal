@@ -60,9 +60,6 @@
   "place": "kingdom-of-laos",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": [
-    "indochina-wars",
-    "vietnam-war"
-  ],
+  "parent": "vietnam-war",
   "actors": []
 }

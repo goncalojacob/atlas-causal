@@ -87,6 +87,12 @@ const LATER = [
   ['first-portuguese-republic-1910-1926', 'republican-liberal-party'],
   ['first-portuguese-republic-1910-1926', 'democratic-leftwing-republican-party'],
   ['portuguese-colonial-war-1961-1974', 'frelimo'],
+  // M42's curation fire of 22 September, filling actorless events from their
+  // item's P710. The war runs 1991 to 1995 and the CShapes record `croatia`
+  // begins in 1992 — a recognition date, not the year a state began fighting
+  // for itself — so the two overlap without the polity being alive at the
+  // start. docs/m53-polities.md §4.1 says the same thing where it counts.
+  ['croatian-war-of-independence', 'croatia'],
 ];
 
 test('all four entries the brief measured survive the overlap rule', () => {

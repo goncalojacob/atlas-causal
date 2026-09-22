@@ -62,10 +62,7 @@
   },
   "place": "hall-of-mirrors",
   "region": "europe",
-  "parent": [
-    "interwar-period",
-    "paris-peace-conference"
-  ],
+  "parent": "paris-peace-conference",
   "actors": [
     {
       "actor": "weimar-republic",

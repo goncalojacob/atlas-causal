@@ -703,11 +703,21 @@ test('the colony a state succeeded is named on its card, and opens', { skip }, a
     await open(page, url('?actor=angola&from=1850&to=2030'));
     await waitFor(page, 'return Boolean(document.querySelector(\'[data-section="succession"]\'));',
       'the card to say what came before');
-    assert.equal(
-      await page.eval('return document.querySelector(\'.card-section[data-section="succession"]\')?.classList.contains("open") ?? false;'),
-      true,
-      'nothing else on this card has anything in it',
-    );
+    // This used to assert the section was the *open* one, on the ground that
+    // nothing else on Angola's card had anything in it. M42's curation fire of
+    // 22 September gave the two Congo wars their belligerents and Angola is
+    // one of them, so the card has events now and a fuller section opens
+    // ahead of this one. Which section opens was never what I8 was about, so
+    // the section is opened here if it is closed and the claims below — the
+    // predecessor by name, the interval, the way in — are asserted as they
+    // always were.
+    await page.eval(`
+      const s = document.querySelector('.card-section[data-section="succession"]');
+      if (s && !s.classList.contains('open')) s.querySelector('.section-toggle').click();
+      return true;`);
+    await waitFor(page,
+      'return document.querySelector(\'.card-section[data-section="succession"]\')?.classList.contains("open") ?? false;',
+      'the succession section to be open');
     // The predecessor by name, not by id, and the interval of the succession.
     const heading = await page.eval('return document.querySelector(".succession h3")?.textContent.replace(/\\s+/g, " ").trim() ?? null;');
     assert.match(heading, /^Before 1975/);

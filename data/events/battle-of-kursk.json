@@ -59,10 +59,7 @@
   "place": "kursk",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": [
-    "world-war-ii",
-    "eastern-front"
-  ],
+  "parent": "eastern-front",
   "category": "war",
   "actors": []
 }

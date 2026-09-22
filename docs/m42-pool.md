@@ -2466,3 +2466,154 @@ batch.*
   the edges on the record read first.
 - **The Gaza cluster (48 rows) and Sudan's five** are unchanged and still the
   owner's.
+
+## Curation 2026-09-22
+
+*The first curation fire, 13:07Z. A11(a): the first fire after 02:00Z each day
+reads every active event and fixes, from the record's own cited sources or its
+Wikidata item, what is missing — and imports nothing. This one also wrote the
+polity descriptions the owner asked for, because no polity had one yet.*
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 590 active | **590 active** |
+| **main** | 244 | **240** |
+| filed | 346 | **350** |
+| active edges | 640 | **642** |
+| largest connected component | 503 | **503** |
+| components | 65 | 65 |
+| events with no edge at all | 47 | 47 |
+| events with no place | 433 | **23** |
+| polities with a description | 0 | **177** |
+
+**Per lane (A10).** Active is unchanged, because nothing was imported: Europe
+303, Asia 125, Americas 83, Africa 79. Main falls from 244 to 240 in three
+lanes — Europe 86 to 83, Africa 32 to 31, Asia and the Americas unmoved at 67
+and 59.
+
+**A9 changed no lane, and that is worth writing down.** The places went onto
+433 events that had none, but every one of them already carried a `region`
+written by the Wikidata import from its own point, so the lane distribution
+before and after this fire is the same four numbers. What the places changed is
+the map, which is what the owner asked for: 410 events that were drawn in a
+lane and nowhere else now have a mark.
+
+### What was fixed, and what was left
+
+| | fixed | left, and why |
+| --- | --- | --- |
+| **polity descriptions** | **177** of the 184 ongoing polities | 7: three give no capital to check a match against (`french-guiana`, `madagascar`, `sao-tome-and-principe`), two share a capital five kilometres apart and so cannot be told apart (`congo`, `congo-democratic-republic-of-zaire`, both reaching Q974), and two matched an item carrying a dissolution date while the record is dated as ongoing (`third-portuguese-republic` reached the First Republic, `vietnam-democratic-republic-of` reached North Vietnam) |
+| **places (A9)** | **410** of 433 | 23, every one because neither P276, P131 nor P17 leads to anything carrying P625 |
+| **summaries** | **277** | 52: 44 whose article lead is itself under two sentences, 5 with no Wikidata item, 3 whose item has no English article |
+| **participants (P710)** | **44** events, 113 lines | 238: 155 whose item names no participant, 57 whose participants the atlas holds none of, 21 whose category determines no role, and 5 withdrawn again (below) |
+| **parents (A6, A8)** | **13** events, 4 of them a first parent | 9 of the 22 the item's P361 offered were withdrawn by the atlas's own two rules (below) |
+| **edges** | **2** | 16 of the 18 unedged causal pairs Wikidata names, because no lead states them in so many words |
+| **intervals (A7)** | 0 | A7 is spent on the three it was written for; no other record's cited article states a wider span than the record carries |
+
+### The polity descriptions, and how an item was decided
+
+Two signals and no third, the discipline `tools/import/places.mjs` already
+uses: the article Wikipedia resolves the record's own names to (the search is
+only a way to find candidate titles, never a way to accept one), and the
+capital that item gives agreeing within 1.5 degrees with the capital CShapes
+already wrote on the record. Every capital the item names counts, not only the
+one it prefers, because a record written from CShapes carries the capital of
+its own day — which is how `equatorial-guinea` matched on Malabo rather than
+failing on Ciudad de la Paz.
+
+Two gates catch what a capital cannot, and both earned their place: an item
+with a dissolution date cannot describe a polity dated as ongoing, and an item
+that matched two records tells them apart not at all. Without them this fire
+would have told a reader that the Third Portuguese Republic has the population
+of 1911 and that the Republic of the Congo is governed from Kinshasa.
+
+Each description is the item's own area (P2046) and latest population (P1082)
+and the first sentences of the English lead quoted at a named revision, with
+both cited on the record and `polity-description` in its review flags. The
+import's own account of where the record came from is kept behind it.
+
+### The five withdrawals and the nine, which are the fire's own corrections
+
+Two passes wrote something a third rule refused, and the refusals are worth
+more than the writes.
+
+**Nine filings withdrawn.** `tests/m42-filing.test.mjs` and
+`tests/m62.test.mjs` hold three properties the P361 pass did not read: a
+parent already reachable through another parent says nothing (A8), an event is
+an umbrella's own only when its lane is the umbrella's or it names an actor the
+umbrella names (M62, A6), and `end: null` is "as far as the data goes" rather
+than a year, so an open-ended child is not inside a parent that closes. Six
+more redundant parents went with them, `battle-of-kursk` under the Second World
+War once it was under the Eastern Front, which is inside it already.
+
+**Five participant lists withdrawn.** P710 gives the parties an item names, and
+the atlas holds records for some of them. Where the missing half is exactly the
+party that carried an existing filing — the Franco-Thai War is filed under the
+Second World War and the item names Vichy France, which the atlas has no record
+for — filling in the other half breaks a correct filing with a misleading
+half-list. An event with no actor is not a defect (M67 A1); a half-list read as
+a whole one is. Where a list is partial but harmless the record's review note
+says how many parties were dropped and tells the reviewer to read the item.
+
+### What A9 broke, and the clause that had to move
+
+`tests/m62.test.mjs` admitted a child that names neither actor nor place, under
+M67's amendment A1 — *"It's fine to have no actor or place, you have to read the
+context."* Giving 410 events a place closed that clause under **113 filings at
+once**, among them the 20 July plot inside the Second World War and the 1963
+South Vietnamese coup inside the Vietnam War, none of which became less their
+umbrella's own for being put on the map. The clause now asks only whether the
+child names an **actor**, because an actor is what the subject rule intersects
+on and a point taken from P625 is evidence about neither umbrella. A child that
+names an actor is still held to sharing one.
+
+Two more documents moved because the corpus did, which is what they are for.
+`docs/m53-polities.md` §4.1 carries a second "after M42" row and, for the first
+time, a paragraph saying the two rules have parted: counted by "alive at the
+start" the figure is 351 and counted by overlap it is 352, because
+`croatian-war-of-independence` now names `croatia` and the war begins in 1991
+while the CShapes record begins in 1992. The entry joins `LATER` in
+`tests/m56.test.mjs`, which exists so that a new entry of that shape cannot go
+quiet.
+
+Two browser tests were pinned to `angola` having no events, and Angola is a
+belligerent in both Congo wars. One now asks the atlas for an eventless actor
+rather than naming one — M42 has no ceiling, so any pin breaks eventually — and
+the other opens the succession section instead of assuming it is the section
+that opens.
+
+## Where the run stands after the first curation fire, for the fire that picks it up
+
+*22 September, 13:07Z onward. A curation fire; nothing was imported.*
+
+| | |
+| --- | --- |
+| corpus | **590 active** |
+| **main** | **240** |
+| filed | 350 |
+| largest connected component | **503** |
+| components | **65** |
+| events with no edge at all | **47** |
+| events with no place | **23**, all refused for want of a coordinate |
+| the inverse `part of` vein | **618 rows open**, untouched |
+| the sweep pool, world sections | **1,046** open rows, untouched |
+| the corpus `part of` pass | spent; A8's re-read spent; P361 over the corpus now spent too |
+
+**What is open, in the order a fire should weigh it:**
+
+- **The next fire is an import fire** unless it is the first after 02:00Z
+  tomorrow. A10's order stands and the lanes are where they were: Africa 79
+  active and Asia 125 against Europe's 303, so **Africa first**, and this run's
+  half of the partition is Africa and Asia only (A11(b)).
+- **The 618-row inverse vein is still the pool**, and ranking across the whole
+  vein still beats taking one war's rows (batch 34).
+- **The component did not grow and 47 events still carry no edge.** Two edges
+  were added and both joined events already inside the largest component. A
+  fire that wants reach should take the isolated 47 by name — most of them are
+  battles whose war the atlas holds and whose article's § Background states the
+  link, which is where batches 29 and 33 found their yield.
+- **177 polity descriptions are now in the review queue** under the flag
+  `polity-description`, and the seven refusals above are a person's to settle
+  or a later fire's, if a record gains a capital.
+- **The Gaza cluster (48 rows) and Sudan's five** are unchanged and still the
+  owner's.

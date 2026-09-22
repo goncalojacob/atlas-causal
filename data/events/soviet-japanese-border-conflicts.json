@@ -18,8 +18,7 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place",
-      "filed-from-p361"
+      "a9-place"
     ]
   },
   "origin": {
@@ -51,7 +50,6 @@
   "place": "japan-q17",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "interwar-period",
   "category": "war",
   "actors": []
 }

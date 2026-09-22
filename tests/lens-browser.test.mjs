@@ -250,10 +250,20 @@ test('a card adds to the lens, or replaces it, and never clears the selection', 
 // R8, in the browser: the two pictures the correction of 6 September is about.
 // The atlas has 412 actors and 350 of them are polities imported with their
 // borders and no event, so a blank map is the search's most common answer.
-const NO_EVENTS = 'angola';
+// It used to be `angola`, pinned. M42's curation fire of 22 September gave the
+// two Congo wars the belligerents their items name and Angola is one of them,
+// so the pin broke on a record becoming *more* complete — and M42 has no done
+// condition, so any other pin would break the same way later. The test asks
+// the atlas for an eventless actor instead of naming one: which actor it is
+// was never the point, and there are a hundred of them.
+const eventlessActor = (atlas) => [...atlas.actors.keys()]
+  .filter((id) => (atlas.eventsByActor.get(id) ?? []).length === 0)
+  .sort()[0];
 
 test('an actor with no events draws the whole atlas, and its card says so', { skip }, async () => {
   const atlas = await atlasOf(dataDir);
+  const NO_EVENTS = eventlessActor(atlas);
+  assert.ok(NO_EVENTS, 'the atlas has an actor with no events to open');
   assert.deepEqual(atlas.eventsByActor.get(NO_EVENTS) ?? [], [], `${NO_EVENTS} has no events`);
   assert.equal(lensView(atlas, { ...defaultState(), actor: NO_EVENTS }), null, 'so it is not a lens');
 

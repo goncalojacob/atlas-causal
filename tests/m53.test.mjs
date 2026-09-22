@@ -350,18 +350,35 @@ const counted = countRows[countRows.length - 1];
 // by in its own words — "an event names at least one actor that is alive in
 // the year the event starts". Rewriting the predicate under a sentence that
 // says otherwise would make the correspondence this file exists for a lie.
-// Measured on 17 September, the two rules give the **same four numbers**: no
-// event owes its place in the count to an actor that merely overlaps it. If
-// that ever stops being true this test fails, and the answer then is to say so
-// in the document rather than to change the reading underneath it.
+// Measured on 17 September, the two rules gave the **same four numbers**: no
+// event owed its place in the count to an actor that merely overlapped it. On
+// 22 September M42's curation fire ended that, by giving
+// `croatian-war-of-independence` the participant its item names: the war runs
+// 1991 to 1995 and `croatia` begins in 1992. The answer was the one this
+// comment always named — **say so in the document** rather than change the
+// reading underneath it — so §4.1 now carries a paragraph stating both figures
+// and why they differ, and this reads the gap off that paragraph instead of
+// assuming there is none. A new entry of that shape still fails here unless
+// the document is re-taken with it.
 test(`${DOC} §4.1 reports the figure the corpus actually shows`, () => {
   assert.ok(counted, `${DOC} §4.1 carries no "after M<n>" row`);
   const [, chainNamed, chainTotal, allNamed, allTotal] = counted.map(Number);
   const active = events.filter((e) => e.status === 'active');
   const names = (e) => (e.actors ?? []).some((x) => alive(x.actor, from(e.when)));
   const meeting = (e) => (e.actors ?? []).some((x) => meets(x.actor, e.when));
-  assert.equal(active.filter(names).length, active.filter(meeting).length,
-    'the two rules no longer give the same figure: §4.1 says which one it counted by');
+  // The document states both figures where they differ, as "... the figure is
+  // **N**; counted by overlap it is **M**". Where it states no such pair the
+  // two rules must still agree, which is what it said until 22 September.
+  const stated = /the\s+figure\s+is\s+\*\*(\d+)\*\*;\s+counted\s+by\s+overlap\s+it\s+is\s+\*\*(\d+)\*\*/.exec(doc);
+  const byStart = active.filter(names).length;
+  const byOverlap = active.filter(meeting).length;
+  if (stated) {
+    assert.equal(byStart, Number(stated[1]), `${DOC} §4.1 says ${stated[1]} counted by the start rule`);
+    assert.equal(byOverlap, Number(stated[2]), `${DOC} §4.1 says ${stated[2]} counted by overlap`);
+  } else {
+    assert.equal(byStart, byOverlap,
+      'the two rules no longer give the same figure: §4.1 says which one it counted by');
+  }
   const chainActive = active.filter((e) => chain.has(e.id));
   assert.equal(chainActive.length, chainTotal, `${DOC} says ${chainTotal} active chain events`);
   assert.equal(chainActive.filter(names).length, chainNamed, `${DOC} says ${chainNamed} chain events name an actor alive at their start`);

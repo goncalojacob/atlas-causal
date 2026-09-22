@@ -23,10 +23,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710",
       "summary-from-lead"
-    ],
-    "note": "Wikidata Q156554 names 4 participants (P710) and the atlas holds an actor for 2 of them, so this list is partial: 2 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
+    ]
   },
   "origin": {
     "tool": "wikidata"
@@ -63,16 +61,5 @@
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "world-war-i",
   "category": "war",
-  "actors": [
-    {
-      "actor": "canada",
-      "role": "belligerent",
-      "note": "Wikidata Q156554, P710 (participant), Q16"
-    },
-    {
-      "actor": "australia",
-      "role": "belligerent",
-      "note": "Wikidata Q156554, P710 (participant), Q408"
-    }
-  ]
+  "actors": []
 }

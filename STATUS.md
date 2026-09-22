@@ -16449,6 +16449,108 @@ band and the walk framing are where M74, M75 and M76 left them.
       `origin/m0` is merged in — a merge and never a rebase, which the protocol
       forbids.
 
+### The first curation fire, 22 September 13:07Z (A11(a))
+
+A11(a) fire: nothing was imported. 177 polity descriptions, 410 places, 277
+summaries, 44 participant lists, 13 filings and 2 edges. Corpus 590 active and
+unchanged, main **244 to 240**, filed 346 to 350, edges 640 to **642**, largest
+component **503 and unchanged**, components 65, events with no edge 47. The
+counts, the refusals and the two documents this moved are
+`docs/m42-pool.md` → "Curation 2026-09-22".
+
+1153. **A capital five kilometres away is not a second signal, and Brazzaville
+      proved it.** The polity pass decided which Wikidata item a record is by
+      the article its own names resolve to *and* the item's capital agreeing
+      within 1.5 degrees with the capital CShapes wrote on the record. Both
+      `congo` (Brazzaville) and `congo-democratic-republic-of-zaire`
+      (Kinshasa) passed that check against **Q974**, because the two capitals
+      face each other across the river. Two gates were added rather than the
+      tolerance tightened — an item that matched two records tells them apart
+      not at all, and an item carrying a dissolution date cannot describe a
+      polity the atlas dates as ongoing — and between them they also caught
+      `third-portuguese-republic` reaching the **First** Republic and
+      `vietnam-democratic-republic-of` reaching **North Vietnam**, neither of
+      which a capital could ever have refused. Seven records are refused and
+      listed for a person; 177 are described.
+
+1154. **Rule 2 is one namespace for every kind, and the place pass learned it
+      the expensive way.** A9's first run wrote `data/places/portugal.json`
+      beside the actor `portugal` and the validator returned **229 errors** in
+      one go. The pass now builds its reserved set from every id and every
+      alias under `data/`, not from the places alone, and 70 of the 270 new
+      place records carry their item's QID to tell them apart —
+      `afghanistan-q889`, as `afghan-civil-war-q1980081` already did.
+
+1155. **A place cites nothing, and `tests/bundle.test.mjs` is where that rule
+      lives.** The new place records were written with a `wikidata` citation
+      for the coordinate they took, and the round-trip test failed on every one
+      of them: the contribution form's own model gives a place no `sources` at
+      all, because — CLAUDE.md — *"where a town is is a fact, not an
+      argument"*. The citation was removed from all 270 and the item stays on
+      the record as `wikidata`, which is where the point's provenance belongs.
+
+1156. **A9 closed M67's "names neither" clause under 113 filings at once, and
+      the clause had to move.** `tests/m62.test.mjs` admitted a child that
+      names neither actor nor place, under the owner's *"It's fine to have no
+      actor or place, you have to read the context."* Giving 410 events a
+      place ended that for 113 filings — the 20 July plot inside the Second
+      World War, the 1963 South Vietnamese coup inside the Vietnam War — none
+      of which became less their umbrella's own for being drawn on the map.
+      The clause now asks only whether the child names an **actor**, because an
+      actor is what the subject rule intersects on and a point taken from P625
+      is evidence about neither umbrella. A child that names an actor is still
+      held to sharing one, which is M62's floor and it has not moved.
+
+1157. **Half a participant list can break a correct filing, so five were
+      withdrawn.** P710 names the parties to a thing and the atlas holds
+      records for some of them. The Franco-Thai War is filed under the Second
+      World War; its item names **Vichy France**, which the atlas has no record
+      for, and Thailand, which it has. Writing the half it had left the event
+      naming an actor the umbrella does not name, which is exactly the subject
+      rule's failure. Five such lists were withdrawn and the events left
+      actorless, which M67 A1 says is not a defect; where a list is partial but
+      breaks nothing the record's review note says how many parties were
+      dropped and tells the reviewer to read the item before reading the list
+      as the whole of one.
+
+1158. **Nine filings the item offered were refused by the atlas's own rules.**
+      P361 gave 22 events a parent and three properties the pass had not read
+      took nine of them back: a parent reachable through another parent says
+      nothing (A8), an event is an umbrella's own only by lane or by a shared
+      actor (M62, A6), and `end: null` is "as far as the data goes" rather than
+      a year — the 2011 Bahraini uprising is dated as continuing and the Arab
+      Spring closes in 2012. Six further redundant parents went with them,
+      among them `battle-of-kursk` under the Second World War once it was under
+      the Eastern Front, which is inside it already.
+
+1159. **Two documents were re-taken rather than the reading changed underneath
+      them**, which is what both tests asked for in their own comments.
+      `docs/m53-polities.md` §4.1 takes a second "after M42" row and, for the
+      first time, a paragraph saying the two rules have parted: 351 counted by
+      "alive at the start" against 352 by overlap, because
+      `croatian-war-of-independence` now names `croatia` and the war begins in
+      1991 while the CShapes record begins in 1992 — a recognition date, not
+      the year a state began fighting for itself. The entry joins `LATER` in
+      `tests/m56.test.mjs`, whose comment exists so a new entry of that shape
+      cannot go quiet.
+
+1160. **Two browser tests were pinned to Angola having no events, and Angola is
+      a belligerent in both Congo wars.** `lens-browser` now asks the atlas for
+      an eventless actor rather than naming one — M42 has no ceiling, so any
+      pin breaks eventually and there are a hundred candidates — and
+      `panel-browser` opens the succession section instead of assuming it is
+      the one that opens, which was only ever true while Angola's card had
+      nothing else in it. Neither test's claims were weakened: the predecessor
+      by name, the interval and the way in are asserted as they were.
+
+1161. **No historical claim was written.** Every polity description is the
+      item's own P2046 and P1082 and the first sentences of the English lead
+      quoted at a named revision; every summary is the article's lead at a
+      named revision; every place point is a P625; every participant is a P710
+      and every filing a P361; both edges quote the lead that states them. No
+      date was invented, no record was signed, and nothing was merged into
+      `main`.
+
 ## M42 — the world at scale (in progress, branch `m42`)
 
 Lane B. `docs/m42-pool.md` is the measurement amendment A1 asks for and the

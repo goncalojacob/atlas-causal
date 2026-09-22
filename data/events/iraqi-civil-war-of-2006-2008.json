@@ -60,9 +60,6 @@
   "place": "iraq-q796",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": [
-    "iraq-war",
-    "iraqi-insurgency"
-  ],
+  "parent": "iraqi-insurgency",
   "actors": []
 }
