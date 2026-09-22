@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1982-lebanon-war--war-of-the-camps--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Camps\", revision 1373013393, § Background"
+    }
+  ],
+  "from": "1982-lebanon-war",
+  "to": "war-of-the-camps",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The siege’s own Background section runs from this invasion to the siege without branching: “Israel’s second invasion of Lebanon in June 1982 succeeded in driving thousands of Palestinian fighters under the command of PLO Chairman Yassir Arafat out of Southern Lebanon and West Beirut … Arafat’s Fatah forces quietly returned to Lebanon over the next two years, ensconcing themselves in the many refugee camps in Beirut and the South. As more Palestinians regrouped in the South, Assad’s anxiety grew … This time, Assad recruited the more powerful Shia Amal Movement militia headed by Nabih Berri to dislodge Arafat’s loyalists.” The camps the Amal besieged are the ones the 1982 expulsion emptied and the return refilled. `precondition-of` and `probable`, because every step of that is the source’s and the compression into one link is this atlas’s: what is asserted is that without the invasion there is no siege, not that the invasion brought the siege about.",
+  "dispute": null
+}
