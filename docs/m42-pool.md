@@ -1936,3 +1936,137 @@ African period does to the main count: it took twelve. **One word from the
 owner — "read 'mid-1950s' as 1955", or any year they will stand behind — turns
 this into the largest single filing left in the milestone.** It is a question
 and not a fetch, and it is the shortest question in this document.
+
+## Batch 32 — the `part of` vein asked the other way round
+
+*22 September, the fire that began at 08:06. Batch 31 left the run one
+question — **"where can a filed import come from now?"** — and the answer was
+in the direction the scan had never been run in.*
+
+**First, the cheap pass, re-run as batch 20 asked.** All 207 main events that
+carry a Wikidata id, asked for their own `P361` in **one** SPARQL query
+against `query.wikidata.org` rather than 218 items through the action API.
+126 answers, **16 of them naming a record here**, and **none of the sixteen is
+a new filing**: `vietnam-war`, `lebanese-civil-war` and
+`dissolution-of-the-soviet-union` are batch 26's depth refusals,
+`good-friday-agreement` is the one batch 20 left unfiled so that
+`the-troubles`' 1998–1998 interval would stay visible, and the other twelve
+refuse on lane or span. **The corpus pass is spent and this is the measurement
+that says so.**
+
+**Then the same vein, asked backwards.** Every scan until now has taken a row
+of the sweep pool and asked *what is this part of?* Asked the other way —
+**which items does Wikidata say are parts of the main events this atlas
+already holds?** — it is not spent at all:
+
+| | |
+| --- | --- |
+| main events with a Wikidata id, used as the query's subjects | **207** |
+| `?child wdt:P361 ?parent` pairs returned, at 4 sitelinks or more | **2,078** over 2,063 distinct items |
+| not already held, not in the import state's `done`, with an English article | **1,875** |
+| filing cleanly on **depth** and **span** | **1,534** |
+| and on the **lane** as well | **728** |
+| of those, filing under `gaza-war` or `gaza-genocide` | 48, left for the owner |
+| taken this batch | **12** |
+
+**The rule, written before a row was taken.** The pool is the inverse vein
+above. A row is taken only if it passes all three tests the run has used since
+batch 20 — **depth**, which the query guarantees because its subjects are main
+events; **span**, its own `P580`/`P585` and `P582` inside the parent's interval
+*as this atlas dates it*; and **lane**, where the lane is the one
+`createRegionDeriver` gives the item's own `P625` and it must equal the lane of
+the record it files under. Of what survives, the **twelve with the most
+sitelinks**, ties broken by the item id read as a number, less any row whose
+label a record here already carries as a title or an alias, and less the Gaza
+cluster, which **batch 31 deferred to the owner and this batch keeps deferred**.
+
+| the record | sitelinks | filed under | the edge it earned |
+| --- | --- | --- | --- |
+| `battle-of-britain` | 77 | `world-war-ii` | none |
+| `battle-of-kursk` | 74 | `world-war-ii` | none |
+| `war-in-donbas` | 73 | `russo-ukrainian-war` | `2014-pro-russian-unrest-in-ukraine --enabled-->` it |
+| `battle-of-verdun` | 71 | `world-war-i` | none |
+| `my-lai-massacre` | 65 | `vietnam-war` | none |
+| `battle-of-jutland` | 57 | `world-war-i` | none |
+| `allied-invasion-of-sicily` | 54 | `world-war-ii` | none |
+| `soviet-invasion-of-poland` | 54 | `world-war-ii` | `molotov-ribbentrop-pact --enabled-->` it |
+| `battle-of-tsushima` | 53 | `russo-japanese-war` | it `--caused--> treaty-of-portsmouth` |
+| `battle-of-tannenberg` | 51 | `world-war-i` | none |
+| `battle-of-dunkirk` | 51 | `world-war-ii` | none |
+| `marco-polo-bridge-incident` | 50 | `second-sino-japanese-war` | none |
+
+| | |
+| --- | --- |
+| imported | 12 |
+| created | **12**, **12 filed** |
+| edges written | **3** |
+| classes added | **3** — `Q830494` dogfight, `Q1261499` naval battle, `Q876274` naval warfare |
+| lanes named for a placeless row | **0** — every one derived from its own point |
+| corpus | 561 → **573** active |
+| **main** | **252, unchanged** — the seventh batch running |
+| largest connected component | 497 → **500** |
+| components | 44 → **53** |
+| events with no edge at all | 28 → **37** |
+| the sweep pool, world sections | **1,046** open rows, untouched |
+| API calls | 3 SPARQL queries, 28 for the import, 8 full-article reads |
+
+**The three edges, each from an article that argues it.** The Soviet invasion
+of Poland's own lead names the pact's secret protocol as what stood behind it;
+Tsushima's article has the loss of the Baltic Fleet *"forced Russia to sue for
+peace, and the Treaty of Portsmouth was signed in September 1905"*; the war in
+Donbas's § Protests in the Donbas runs the demonstrations of 6 April into the
+seizures of 12 April, which is where the record begins. **Nine earned none and
+none was invented for them**, which is why the component count rises: a record
+that arrives filed is connected to the picture and not to the graph, because
+`parent` is a display fact and takes no edge.
+
+**What the vein is worth, said plainly.** 728 rows pass all three tests today
+and 48 of them are the Gaza cluster, so **680 are takeable at roughly twelve a
+batch** — more than fifty batches of volume that arrives filed, with the main
+count unable to rise from any of it. It is the largest single thing left in
+this milestone and it did not need a new umbrella, a new date or an owner's
+decision to open.
+
+**What it does not do is connect.** Every one of the twelve is a singleton
+until an edge is written for it, and three of twelve is the honest yield of a
+lead and one full article each. **The next fire should weigh a smaller batch
+with more reading against a larger one with less**: batch 28 took thirteen and
+wrote five edges, batch 32 took twelve and wrote three, and the component count
+has risen in both.
+
+## Where the run stands after batch 32, for the fire that picks it up
+
+*22 September, 09:00.*
+
+| | |
+| --- | --- |
+| corpus | **573 active** |
+| **main** | **252**, unchanged for seven batches |
+| largest connected component | **500** |
+| components | **53** |
+| events with no edge at all | **37** |
+| the inverse `part of` vein | **680 rows open** after this batch and the Gaza deferral |
+| the sweep pool, world sections | **1,046** open rows |
+| the corpus `part of` pass | **spent**, re-measured this fire |
+
+**What is still open, in the order a fire should weigh it:**
+
+- **The inverse vein, 680 rows.** Take the next twelve by the rule above and
+  read each one's article for an edge before the batch is committed. This is
+  the volume the milestone was short of and nothing blocks it.
+- **The edges, which are the real work now.** Volume arrives filed and
+  unconnected; A5 is about the largest component and it grew by three this
+  batch. A fire that took six rows and read six articles properly might do
+  better than one that takes twelve.
+- **The dates, still a person's.** Thirteen of batch 31's forty-six refusals
+  are span refusals, and `chinese-civil-war` (1946–1950 here, 1927 in the
+  source), `turkish-war-of-independence` (1922–1923 here, from 1919 in the
+  source) and `the-troubles` (**1998–1998** for a thirty-year conflict) each
+  carry a `date` flag and a note saying a reviewer should widen them. **This
+  fire did not touch them**, because two earlier fires assigned them to a
+  person and a scheduled run overruling that without one is exactly what the
+  standing exception forbids. The question for the owner is one sentence:
+  *may a run widen an imported interval from the record's own cited article?*
+- **The decolonisation of Africa**, still one word from the owner.
+- **The Gaza cluster**, now 48 rows rather than six, and still theirs.
+- **Sudan's five**, unchanged.

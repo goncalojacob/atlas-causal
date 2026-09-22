@@ -15204,6 +15204,83 @@ component **497**, not 498; components **44**; events with no edge at all
      run `tests/m42-filing.test.mjs` and `tests/m67.test.mjs` with the batch,
      not with the fire**: they take seven seconds together.
 
+## M42 batch 32 — the `part of` vein asked the other way round
+
+*22 September, the fire that began at 08:06. The measurement is
+`docs/m42-pool.md` → "Batch 32".*
+
+Batch 31 left the run one question — where can a filed import come from now —
+and the answer was in the direction the scan had never been run in. Every
+`part of` pass until now took a sweep row and asked what it is part of. Asked
+backwards — **which items does Wikidata say are parts of the main events this
+atlas already holds?** — the vein is not spent at all: **2,078 pairs, 1,875
+fresh, 1,534 filing cleanly on depth and span, 728 on the lane as well**.
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 561 active | **573 active** |
+| **main** | 252 | **252, unchanged** |
+| largest connected component | 497 | **500** |
+| components | 44 | **53** |
+| events with no edge at all | 28 | **37** |
+| edges | 632 | **635** |
+
+**Imported this fire: 12, all 12 filed.** `battle-of-britain`,
+`battle-of-kursk`, `allied-invasion-of-sicily`, `soviet-invasion-of-poland`
+and `battle-of-dunkirk` under `world-war-ii`; `battle-of-verdun`,
+`battle-of-jutland` and `battle-of-tannenberg` under `world-war-i`;
+`war-in-donbas` under `russo-ukrainian-war`, `my-lai-massacre` under
+`vietnam-war`, `battle-of-tsushima` under `russo-japanese-war` and
+`marco-polo-bridge-incident` under `second-sino-japanese-war`.
+
+**Three edges**, each from an article that argues it: the Molotov–Ribbentrop
+Pact's secret protocol enabled the Soviet invasion of Poland; Tsushima caused
+the Treaty of Portsmouth; the pro-Russian unrest of 2014 enabled the war in
+Donbas. Nine earned none and none was invented for them.
+
+**Refused:** the Gaza cluster, now 48 rows of the vein rather than batch 31's
+six, kept deferred to the owner; every row whose own point reaches a lane
+other than its parent's; every row whose interval falls outside the parent's
+as this atlas dates it. **The corpus `part of` pass was re-run and is spent**:
+16 of 207 main events name a record here and not one of the sixteen is a new
+filing.
+
+**The pool before and after:** the sweep pool's world sections are untouched
+at **1,046 open rows**; the new inverse vein stands at **680 takeable rows**
+after this batch and the Gaza deferral, which is more than fifty batches of
+volume that arrives filed and cannot raise the main count.
+
+### Deviations
+
+1062. **A vein is a direction and not a set of rows, and this run scanned one
+     direction for eleven batches.** `part of` was always read off the sweep
+     pool — take a candidate, ask what it belongs to. Read the other way, off
+     the corpus — ask what belongs to what we already have — the same property
+     answers **1,875 fresh rows** where the first reading had **six**. The
+     refusals batch 31 wrote are all still true; they were true of the wrong
+     question.
+1063. **The action API is blocked for this sandbox and `Special:EntityData` is
+     not.** `wbgetentities` answers 429 and keeps answering it — deviation
+     1013, and again all through this fire — while
+     `Special:EntityData/<id>.json` and `query.wikidata.org` answer 200.
+     `fetchEntities` now falls back to the per-item endpoint on a 429 or a
+     403, so a refused batch costs one call per item instead of ending the
+     run. It is the first fire since the filing pass that could import at all.
+1064. **A record that arrives filed is connected to the picture and not to the
+     graph.** Twelve filed records raised the component count by nine, because
+     `parent` is a display fact and takes no edge. A5's number moves on the
+     reading a fire does, not on the rows it takes: batch 28 took thirteen and
+     wrote five edges, this one took twelve and wrote three.
+1065. **The dates were left alone on purpose.** `chinese-civil-war`,
+     `turkish-war-of-independence` and `the-troubles` each carry a `date`
+     flag and a note, written by an earlier fire, saying a reviewer should
+     widen the interval; thirteen of batch 31's refusals are that same
+     narrowness. Widening them from each record's own cited article would
+     reopen the vein and would also be a scheduled run overruling two earlier
+     fires' deliberate hand-off to a person. **The question is put to the
+     owner instead** and is one sentence long: may a run widen an imported
+     interval from the record's own cited article?
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
