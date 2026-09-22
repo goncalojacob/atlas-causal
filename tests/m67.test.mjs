@@ -41,7 +41,11 @@ const UMBRELLA_FLAG = 'm67-umbrella';
 // one file holds all of them would stop any later run adding a record at all.
 // The property is unchanged — **a filing or a bare main event nobody argued in
 // writing fails.**
-const ARGUED_IN = [DOC, 'docs/m42-connections.md'];
+// `docs/m42b-pool.md` joins them for the same reason `docs/m42-connections.md`
+// did: M42b is a records lane of its own (A11's partition) and argues its own
+// filings in its own batch notes, so a filing it made is argued there and
+// nowhere else.
+const ARGUED_IN = [DOC, 'docs/m42-connections.md', 'docs/m42b-pool.md'];
 const doc = (await Promise.all(ARGUED_IN.map(async (f) => {
   const at = path.join(ROOT, f);
   return existsSync(at) ? readFile(at, 'utf8') : '';
