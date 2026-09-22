@@ -90,6 +90,13 @@
     // reader would make. Not passed on to the atlas (M68).
     const openId = params.get('open');
     params.delete('open');
+    // And the key over a picture, which since M83 (A1-4) is folded behind one
+    // button on every width: whether it is open is a press and not a link, so a
+    // shot of the whole key has to be asked for here. `key=1` presses the
+    // button, with the same licence as `open` and `zoom` above — this page is
+    // the frame's own origin and reaches in with the gesture a reader makes.
+    const openKey = params.get('key') === '1';
+    params.delete('key');
     // And the composer (M71), for the same reason again: whether it is open is
     // a preference and the draft inside it lives in localStorage, so neither
     // is in the URL the atlas keeps and neither can be asked for by link.
@@ -142,6 +149,23 @@
         details.open = true;
       };
       setTimeout(reveal, 50);
+    }
+
+    if (openKey) {
+      let waits = 0;
+      const press = () => {
+        // The one on screen: the map, the timeline and the graph each carry a
+        // key of the same shape and two of the three are behind a `hidden`
+        // pane, whose button is no button a reader could press.
+        const buttons = [...(frame.contentDocument?.querySelectorAll('.graph-key .graph-key-toggle') ?? [])]
+          .filter((el) => el.getBoundingClientRect().height > 0);
+        if (buttons.length === 0) {
+          if ((waits += 1) < 400) setTimeout(press, 50);
+          return;
+        }
+        buttons[0].click();
+      };
+      setTimeout(press, 50);
     }
 
     if (compose) {
