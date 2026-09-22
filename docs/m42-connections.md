@@ -3862,3 +3862,123 @@ dates the war there from April 1939, and `1940-1944-insurgency-in-chechnya`
 carries a single day in December 1944 for a revolt its own title dates
 1940–1944. Both are filed inside the war either way and both are left visible,
 for the reason deviation 1022 gives.
+
+## 2y. Batch 26 — the whole pool scanned, and nine edges from ten filings
+
+*22 September, the first batch of the fire that picked the run up at 02:06.
+The rule is batches 23 to 25's — take the pool row whose item names a parent
+this atlas already holds — asked of all 1,088 open world rows rather than the
+best 700. The measurement and the refusals are in `docs/m42-pool.md` →
+"Batch 26"; what belongs here is the nine edges and the two that could not be
+written.*
+
+**Nine edges, each quoting one sentence of one article at one revision.**
+
+#### `tunisian-revolution --inspired--> 2011-bahraini-uprising`
+#### `2011-egyptian-revolution --inspired--> 2011-bahraini-uprising`
+
+Both rest on the same sentence of the uprising's own article, at revision
+1374892677: *"The protests were inspired by the unrest of the 2011 Arab Spring
+and protests in Tunisia and Egypt and escalated to daily clashes after the
+Bahraini government repressed the revolt with the support of the Gulf
+Cooperation Council's Peninsula Shield Force."* **Two edges and not one**,
+because the article names two protests and choosing between them would be this
+atlas putting a word in its mouth. Both are `inspired` and `probable`, for the
+reason batch 22 gave for the same wave: an example spreading is not a Tunisian
+or an Egyptian event bringing about a Bahraini one, and nothing read here says
+it was.
+
+#### `moscow-uprising-of-1905 --enabled--> october-revolution`
+
+The uprising's article, revision 1370628753: *"The uprising ended in defeat for
+the revolutionaries and provoked a swift counter-revolution that lasted until
+1907… The Moscow revolutionaries gained experience during the uprising that
+helped them succeed years later in the October Revolution of 1917."* What the
+article describes is men who knew how to do it twelve years later, which is an
+opening and not a cause — `enabled`. It says *"helped them succeed"* and not
+that October would not have happened without it, and the confidence is written
+to that. **This is the one edge of the 1905 cluster**, and it is the one
+because it is the only sentence in the four articles that says a 1905 event
+did something to a later one rather than that it was part of 1905.
+
+#### `treaty-of-brest-litovsk --precondition-of--> revolt-of-czechoslovak-legion`
+
+The revolt's article, revision 1370706945: the revolt *"was a reaction to a
+threat initiated by the Bolsheviks partly as a consequence of the Treaty of
+Brest-Litovsk."* A legion raised to fight Germany stranded in a Russia that had
+just left that war. The article's own word is *"partly"*, so the type is
+`precondition-of` and the confidence `probable`.
+
+#### `october-revolution --reacted-to--> junker-mutiny`
+
+The mutiny's article is one sentence, at revision 1375165370: *"The Junker
+mutiny was a Russian counterrevolutionary mutiny of military school cadets in
+Petrograd against the Bolsheviks in October 1917."* A rising against the men
+who had taken power days before is the plainest case `reacted-to` exists for.
+**Written from the revolution to the mutiny and not the other way**: rule 4
+holds every edge to the arrow of time and this atlas's convention for the type
+puts the thing reacted to first — the same direction
+`1964-brazilian-coup-detat --reacted-to--> operation-brother-sam-1964` was
+written in.
+
+#### `second-guangzhou-uprising --precondition-of--> xinhai-revolution`
+
+The revolution's article, revision 1375425258: *"The revolution was the
+culmination of a decade of agitation, revolts, and uprisings."* Huang Xing's
+failed rising at Canton in April 1911, six months before Wuchang, is one of
+them, and the item says so too. **Neither article names this uprising as a
+cause**, and the edge is written at the strength that supports:
+`precondition-of`, `probable`, not `caused`.
+
+#### `iraqi-insurgency --caused--> iraqi-civil-war-of-2006-2008`
+
+The civil war's article, revision 1373449147: *"In February 2006, the
+insurgency against the coalition and government escalated into a sectarian
+civil war after the bombing of Al-Askari Shrine, considered a holy site in
+Twelver Shi'ism."* One conflict escalating into another is what `caused` is for
+here. `probable` and not `consensus`, because the only citation is an
+encyclopedia article and that is rule 22.
+
+#### `angolan-civil-war --enabled--> first-shaba-war`
+
+Shaba I's article, revision 1373218991: *"The conflict began when the Front for
+the National Liberation of the Congo (FNLC), a group of about 2,000 Katangan
+Congolese soldiers who were veterans of the Congo Crisis, the Angolan War of
+Independence, and the Angolan Civil War, crossed the border into Shaba from
+Angola."* Angola was the ground they stood on and the war was where they
+learned the trade; it is not what made them invade Zaire. `enabled`.
+
+#### `falklands-war --caused--> argentine-surrender-in-the-falklands-war`
+
+The war's article, revision 1375590484: *"The conflict lasted 74 days and ended
+with an Argentine surrender on 14 June, which formally returned possession to
+Britain."* The record is filed inside the war as well; the filing says the
+surrender happened inside it and the edge says the war is what brought it
+about, which are not the same claim.
+
+### The two that could not be written, and why that is the honest answer
+
+**`revolt-of-czechoslovak-legion --enabled--> russian-civil-war` was written
+and then deleted.** The article states it plainly — *"One major secondary
+consequence of victories by the Legion over the Bolsheviks was to catalyze
+anti-Bolshevik activity in Siberia … likely protracting the Russian Civil
+War"* — and rule 4 refused it, because the import gave the revolt **1920** for
+a revolt the same article dates from May 1918, and the civil war begins in
+1917. **The edge the source asserts cannot run forward in time over the dates
+this atlas holds.** That is the seventh interval to read shorter than its own
+record (deviation 1037) and it is left visible rather than repaired, for the
+reason deviation 1022 gives. The record earns instead the Brest-Litovsk edge,
+which the same paragraph supports and which validates.
+
+**The 1905 cluster earned three filings and no edge.**
+`revolution-in-the-kingdom-of-poland` (revision 1370706988) says *"A major part
+of the Russian Revolution of 1905 took place in the Russian Partition of
+Poland"*; `odz-insurrection` (revision 1370751757) says the rising was *"one of
+the largest disturbances in the Russian-controlled Congress Poland during the
+Russian Revolution of 1905"*; and `potemkin-mutiny` has **no English article at
+all** — seven sitelinks, and the battleship's own article (revision 1370827020)
+says only that *"She became famous during the Revolution of 1905, when her crew
+mutinied against their officers."* Every one of those sentences is
+containment, which `parent` already carries, and **being somebody's child is
+not an edge** — brief §1's bar, and the reason three components were added
+rather than three edges invented.

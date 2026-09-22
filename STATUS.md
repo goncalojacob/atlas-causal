@@ -14806,6 +14806,84 @@ ordinary record with neighbours of its own.
      a filing the source itself asserts. Not repaired here, for the reason
      deviation 1022 gives.
 
+### Batch 26 — the `part of` vein re-scanned over the whole pool
+
+The rule of batches 23 to 25 asked of all **1,088** open world rows rather
+than the best 700: **83** name a parent this atlas holds, against 57 before,
+and **57 of the 83 file cleanly** once depth and the parent's dates are
+checked. Eleven taken, eleven created, **ten filed**, **nine edges**. Two
+classes were added to the seeds table and two lanes named for placeless rows.
+Corpus 520 to **531**, largest component 462 to **470**, components 30 to
+**33**, main 251 to **252**.
+
+**The main count rose by one and the reason is a rule, not an oversight.**
+`2011-bahraini-uprising` could only go under `arab-spring`, which refuses it
+twice: its own article dates the uprising *"from 2011 until 2014"* and this
+atlas's Arab Spring closes in 2012, and Bahrain is in the asia lane while
+`arab-spring` is an africa-lane period. The second refusal is the finding of
+`docs/m67-umbrellas.md` §8 arriving again. The record is not stranded: it
+carries two edges, from `tunisian-revolution` and `2011-egyptian-revolution`,
+both quoting the sentence of its own article that names them. **The next batch
+files before it imports**, which is what amendment A6 says to do here.
+
+### Deviations
+
+1033. **The `part of` vein is half again as large as the 700-row scan made it
+     look, and the shape of the difference says why.** 83 rows over the whole
+     pool of 1,088 against 57 over its best 700: the rows that rank badly by
+     sitelinks are *more* likely, not less, to name a parent this atlas holds,
+     because a rising inside a war is written about less than the war and is
+     filed under it by Wikidata all the same. **A scan that stops at the best
+     rows is measuring sitelinks and not the vein.** 46 of the 57 clean rows
+     are still untaken and the scan costs eight SPARQL calls.
+1034. **A filing under an ordinary event is not the A6 umbrella test, and the
+     lane rule does not reach it.** Nine of this batch's ten filings put a
+     record inside a war or a revolution rather than inside a period, and none
+     of those parents carries `m42-umbrella`, so `tests/m42-filing.test.mjs`
+     says nothing about them — correctly: the lane rule exists because a
+     *period* is named for a region, and `junker-mutiny` belongs to the
+     October Revolution whatever lane either is drawn in. Deviation 1031 asked
+     later batches to prefer an ordinary parent; this is what that costs and
+     what it buys, which is eight of the nine edges.
+1035. **The Arab Spring's asian half still cannot be filed, and it has now cost
+     a main count.** `2011-yemeni-revolution` was offered to the `part of`
+     pass, filed, and refused by `tests/m42-filing.test.mjs` on the lane; the
+     filing was taken back rather than argued with. Deviation 1023's finding —
+     **a period whose subject crosses two lanes can only ever take one half of
+     itself** — is no longer only a curiosity: two records of the wave are main
+     because of it, and A6's ceiling is what pays. What would fix it is the
+     owner saying what a two-lane umbrella looks like; nothing here can decide
+     that.
+1036. **A test that asks a capped list for one row per result fails the day the
+     corpus crosses the cap, and the fault is the test's.**
+     `tests/horizon.test.mjs` asserted one `horizon-walk` link per result; the
+     panel has always cut the list at `SHOWN` (40) and printed the honest total
+     in the summary, which is what `src/panel/horizon.js`'s own comment says
+     the cut is for. This batch is where the carnation revolution's 2011
+     horizon reached 41. The assertion is now `Math.min(results.length,
+     SHOWN)`; **nothing under `src/` was touched**, as deviation 1028 also had
+     to say.
+1037. **Rule 4 decides which way a `reacted-to` edge is written, and a short
+     interval refused an edge its own article states.** Two of this batch's
+     edges failed rule 4 on the first validation. The mutiny is written
+     `october-revolution --reacted-to--> junker-mutiny`, because the atlas's
+     own convention for that type puts the thing reacted to first and the
+     reaction second. The other could not be written at all:
+     `revolt-of-czechoslovak-legion` carries the import's 1920 for a revolt its
+     article dates from May 1918, and the civil war it *"likely protract[ed]"*
+     begins in 1917, so the edge the article states cannot run forward in time.
+     It is the **seventh** interval that reads shorter than its own record, and
+     the record earns instead the edge from `treaty-of-brest-litovsk` that the
+     same sentence supports. Not repaired here, for the reason deviation 1022
+     gives.
+1038. **No historical claim was written.** Every edge explanation is a
+     paraphrase of a sentence the cited article carries at the cited revision,
+     and every citation names the article, the revision and the section. No
+     date was invented, no record was signed, and nothing was merged into
+     `main`. The one value changed by hand on an imported record is
+     `junker-mutiny`'s lane, from asia to europe, which is where the timeline
+     draws it and not what happened.
+
 1019. **Reinstating an M44b-era record can put an unread record on no
      dashboard.** `2021-myanmar-coup-d-etat`'s `review` block carried flags
      and **no `status`**, which is invisible while a record is retracted and

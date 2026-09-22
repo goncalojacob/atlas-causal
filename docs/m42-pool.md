@@ -1240,3 +1240,128 @@ record imported today is a parent tomorrow.
 - **`Q2587808` and `Q4499410`** — the Holocaust in Poland and in Ukraine —
   are refused for want of a date the item will give as a year, which is the
   same hole the decolonisation of Africa sits in.
+
+## Batch 26 — the `part of` vein re-scanned over the whole pool
+
+*22 September, the first batch of the fire that picked the run up at 02:06.
+The previous fire's own note said what to do first: **re-run `part of` over
+the rest of the pool before ticking anything by sitelinks.** This is that, and
+the vein is half again as large as the 700-row scan made it look.*
+
+| | |
+| --- | --- |
+| open world rows scanned | **1,088** — unticked, not already in the atlas, not in the import state's `done` list |
+| rows whose `part of` names an active record here | **83** (57 over the best 700 rows before) |
+| of those, filing cleanly on depth and the parent's dates | **57** |
+| taken this batch | 11 |
+| created | **11** |
+| filed | **10** |
+| edges written | **9** |
+| classes added to the seeds table | 2 — `Q511866` mutiny, `Q217901` capitulation |
+| lanes named for a placeless row | 2 — `Q118514`, `Q4126381` |
+| corpus | 520 → **531** active |
+| **main** | 251 → **252** |
+| largest connected component | 462 → **470** |
+| components | 30 → **33** |
+| the sweep pool, world sections | 1,088 rows → **1,077** |
+| API calls | 8 SPARQL for the scan, 1 for the dates, 2 for the corpus pass, 20 for the import, 6 article leads |
+
+**The scan is the finding and it is worth stating on its own.** Over the best
+700 rows the previous fire found 57 such rows; over all 1,088 there are 83.
+The rows that rank *badly* by sitelinks are more likely to name a parent this
+atlas holds, not less — a rising inside a war is written about in fewer
+languages than the war and is filed under it by Wikidata all the same. **A
+scan that stops at the best rows is measuring sitelinks and not the vein.**
+Forty-six of the 57 clean rows are still untaken.
+
+**What the eleven are, and what each earned.**
+
+| the record | filed under | the edge it earned |
+| --- | --- | --- |
+| `revolution-in-the-kingdom-of-poland` | `russian-revolution-of-1905` | none |
+| `moscow-uprising-of-1905` | `russian-revolution-of-1905` | `moscow-uprising-of-1905 --enabled--> october-revolution` |
+| `odz-insurrection` | `russian-revolution-of-1905` | none |
+| `potemkin-mutiny` | `russian-revolution-of-1905` | none |
+| `revolt-of-czechoslovak-legion` | `russian-civil-war` | `treaty-of-brest-litovsk --precondition-of--> revolt-of-czechoslovak-legion` |
+| `junker-mutiny` | `october-revolution` | `october-revolution --reacted-to--> junker-mutiny` |
+| `second-guangzhou-uprising` | `xinhai-revolution` | `second-guangzhou-uprising --precondition-of--> xinhai-revolution` |
+| `iraqi-civil-war-of-2006-2008` | `iraq-war` | `iraqi-insurgency --caused--> iraqi-civil-war-of-2006-2008` |
+| `first-shaba-war` | `angolan-civil-war` | `angolan-civil-war --enabled--> first-shaba-war` |
+| `argentine-surrender-in-the-falklands-war` | `falklands-war` | `falklands-war --caused--> argentine-surrender-in-the-falklands-war` |
+| `2011-bahraini-uprising` | **not filed** | `tunisian-revolution --inspired-->` and `2011-egyptian-revolution --inspired-->` it |
+
+**Nine of the ten filings are under an ordinary event and not a period**,
+which is what deviation 1031 asked the later batches to prefer, and it is what
+paid: eight of the nine edges run to a record that was already on the main
+chain. The three that earned no edge are the 1905 Russian cluster —
+`revolution-in-the-kingdom-of-poland`, `odz-insurrection`, `potemkin-mutiny` —
+and they are three of the three new components. Their articles say only that
+each was *part of* the revolution of 1905, which is the filing and not an
+argument; the Potemkin item has no English article at all, at seven sitelinks.
+**Nothing was written to keep them**, which is brief §1's bar, and the
+components count says out loud what that costs.
+
+**The main count rose by one and the reason is a rule.**
+`2011-bahraini-uprising` could only go under `arab-spring`, which refuses it
+twice: its own article, at revision 1374892677, dates the uprising *"from 2011
+until 2014"* while this atlas's Arab Spring closes in 2012, and Bahrain is in
+the **asia** lane while `arab-spring` is an **africa**-lane period. The second
+refusal is deviation 1023 arriving a second time. The `part of` pass was
+re-run over the corpus to find a filing that would hold the count — it offered
+`2011-yemeni-revolution` under `arab-spring`, `tests/m42-filing.test.mjs`
+refused it on exactly the same lane rule, and the filing was taken back rather
+than argued with. The other six answers of that pass are refusals already on
+the record: `lebanese-civil-war`, `vietnam-war` and
+`dissolution-of-the-soviet-union` on depth, `good-friday-agreement` on the
+`the-troubles` defect, `second-italo-ethiopian-war` on the lane and
+`soviet-japanese-border-conflicts` on five days. **The next batch files before
+it imports.**
+
+**Two classes and two lanes were added to the seeds file, and one lane was
+corrected by hand.** `Q511866` *mutiny* takes the `revolution` category, which
+is the one case in `data/categories.json` that needs no argument — that
+category's own description names a mutiny in its list. `Q217901`
+*capitulation* follows `Q107706` *armistice* into `treaty`. The two lanes are
+deviation 1029's one-line fix for a placeless row. The correction is
+`junker-mutiny`, whose lane the import derived as **asia** from the item's
+country point although the item's own description says Petrograd; the record
+now says `europe` and its `regionNote` says who changed it and why. Nothing
+else on any imported record was touched and no date was changed.
+
+## Where the run stands after batch 26, for the fire that picks it up
+
+*22 September, 03:00.*
+
+| | |
+| --- | --- |
+| corpus | **531 active** |
+| **main** | **252** |
+| largest connected component | **470** |
+| components | 33 |
+| the sweep pool, world sections | **1,077** open rows |
+| the `part of` vein | **46 of 57 clean rows untaken** |
+
+**Run the scan first and file before importing.** The scan of this batch is in
+`/tmp` and not in the repository, and it is nine lines: read the unticked
+world rows out of `docs/wikidata-candidates.md`, ask the query service for
+`wdt:P361` over them in chunks of 150, keep the rows whose answer is a
+`wikidata` id on an active event here, then drop the ones whose parent is
+itself filed or whose dates fall outside it. It cost eight calls over 1,088
+rows. **A batch must file before it imports from here**, because this one
+ended a main event up.
+
+**What is still open, in the order a fire should weigh it:**
+
+- **Forty-six clean rows of the vein**, which is four or five batches at this
+  size, and every one of them arrives filed.
+- **Seven imported intervals now read shorter than the record's own summary**
+  (deviation 1037 adds `revolt-of-czechoslovak-legion` to deviation 1032's
+  six). Each refuses a filing or an edge the source itself asserts, and
+  repairing them is still the clearest afternoon's work a person could do
+  here.
+- **The Arab Spring's asian half** — `2011-bahraini-uprising`,
+  `2011-yemeni-revolution` — cannot be filed at all while the wave is an
+  africa-lane period. That is the owner's to decide and no batch can.
+- **The Horn of Africa (7) and Sudan (5) are still fragments**, unchanged since
+  batch 22, and what they want is a paragraph deeper into an article than the
+  summary endpoint returns.
