@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q232",
+  "wikipedia": {
+    "en": "Kazakhstan"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 705"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q232, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kazakhstan\", revision 1375880212"
     }
   ],
   "actorType": "polity",
   "names": [
     "Kazakhstan"
   ],
-  "summary": "Entity 705 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1991 to where the dataset stops, in 2019. Its last capital in the dataset is Astana. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 2,724,900 km² and about 20.1 million people (2024), from Wikidata's Q232 (P2046, P1082). The English Wikipedia article \"Kazakhstan\", at revision 1375880212, opens: \"Kazakhstan, officially the Republic of Kazakhstan, is a landlocked country situated primarily in Central Asia, with a portion of its territory extending into Eastern Europe. It borders Russia to the north and west, China to the east, Kyrgyzstan to the southeast, Uzbekistan to the south, and Turkmenistan to the southwest, and it has a coastline along the Caspian Sea. The capital is Astana, and the country's largest city and principal cultural and economic center is Almaty, which served as the capital until 1997.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 705 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1991 to where the dataset stops, in 2019. Its last capital in the dataset is Astana. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1991,
     "end": null

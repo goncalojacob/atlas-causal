@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q843",
+  "wikipedia": {
+    "en": "Pakistan"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 770"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q843, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pakistan\", revision 1375932735"
     }
   ],
   "actorType": "polity",
   "names": [
     "Pakistan"
   ],
-  "summary": "Entity 770 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 5 periods of territorial validity, from 1947 to where the dataset stops, in 2019. Its last capital in the dataset is Islamabad. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 881,913 km² and about 223.8 million people (2021), from Wikidata's Q843 (P2046, P1082). The English Wikipedia article \"Pakistan\", at revision 1375932735, opens: \"Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia. It is the fifth-most populous country, with a population of over 241.5 million, having the second-largest Muslim population in the world as of 2023. Islamabad is the nation's capital, while Karachi is its largest city and financial centre.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 770 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 5 periods of territorial validity, from 1947 to where the dataset stops, in 2019. Its last capital in the dataset is Islamabad. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1947,
     "end": null

@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q17054",
+  "wikipedia": {
+    "en": "Martinique"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 66"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q17054, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Martinique\", revision 1376160853"
     }
   ],
   "actorType": "polity",
   "names": [
     "Martinique"
   ],
-  "summary": "Entity 66 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Fort-de-France. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 1,128 km² and about 360,630 people (2023), from Wikidata's Q17054 (P2046, P1082). The English Wikipedia article \"Martinique\", at revision 1376160853, opens: \"Martinique is an island in the Lesser Antilles of the West Indies, in the eastern Caribbean Sea. A part of the French West Indies (Antilles), Martinique is an overseas department and region and a single territorial collectivity of France.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 66 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Fort-de-France. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

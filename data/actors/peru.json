@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q419",
+  "wikipedia": {
+    "en": "Peru"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 135"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q419, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peru\", revision 1375830185"
     }
   ],
   "actorType": "polity",
   "names": [
     "Peru"
   ],
-  "summary": "Entity 135 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 4 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Lima. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 1,285,216 km² and about 34.2 million people (2025), from Wikidata's Q419 (P2046, P1082). The English Wikipedia article \"Peru\", at revision 1375830185, opens: \"Peru, officially the Republic of Peru, is a country in western South America. It is bordered to the north by Ecuador and Colombia, to the east by Brazil, to the southeast by Bolivia, to the south by Chile, and to the south and west by the Pacific Ocean. Peru is a megadiverse country, with habitats ranging from the arid plains of the Pacific coastal region in the west, to the peaks of the Andes mountains extending from the north to the southeast of the country, to the tropical Amazon basin rainforest in the east with the Amazon River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 135 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 4 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Lima. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q889",
+  "wikipedia": {
+    "en": "Afghanistan"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 700"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q889, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Afghanistan\", revision 1376017357"
     }
   ],
   "actorType": "polity",
   "names": [
     "Afghanistan"
   ],
-  "summary": "Entity 700 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 4 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Kabul. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 652,230 km² and about 41.5 million people (2023), from Wikidata's Q889 (P2046, P1082). The English Wikipedia article \"Afghanistan\", at revision 1376017357, opens: \"Afghanistan, officially the Islamic Emirate of Afghanistan, is a landlocked country located at the crossroads of Central and South Asia. It is bordered by Pakistan to the east and south, Iran to the west, Turkmenistan to the northwest, Uzbekistan to the north, Tajikistan to the northeast, and China to the northeast and east. Occupying 652,864 square kilometers (252,072 sq mi) of land, the country is predominantly mountainous with plains in the north and the southwest, which are separated by the Hindu Kush mountain range.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 700 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 4 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Kabul. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

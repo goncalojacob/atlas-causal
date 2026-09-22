@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q786",
+  "wikipedia": {
+    "en": "Dominican Republic"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 42"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q786, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dominican Republic\", revision 1375887425"
     }
   ],
   "actorType": "polity",
   "names": [
     "Dominican Republic"
   ],
-  "summary": "Entity 42 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Santo Domingo. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 48,671 km² and about 10.8 million people (2022), from Wikidata's Q786 (P2046, P1082). The English Wikipedia article \"Dominican Republic\", at revision 1375887425, opens: \"The Dominican Republic is an island country on the eastern part of the Caribbean island of Hispaniola in the Greater Antilles of the Caribbean Sea in the North Atlantic Ocean. It shares a maritime border with Puerto Rico to the east and a land border with Haiti to the west, occupying the eastern five-eighths of Hispaniola which, along with Saint Martin, is one of only two islands in the Caribbean shared by two sovereign states. In the Antilles, the country is the second-largest by area after Cuba at 48,671 square kilometers (18,792 sq mi) and the second most populous after Haiti with approximately 11.4 million people in 2024, of whom 3.6 million reside in the metropolitan area of Santo Domingo, the capital city.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 42 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Santo Domingo. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

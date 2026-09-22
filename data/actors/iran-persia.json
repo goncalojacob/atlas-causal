@@ -9,20 +9,29 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-16",
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "m51-split"
+      "m51-split",
+      "polity-description"
     ],
     "note": "M51: split from persia, which held this ground until Wikidata's P576 1925 on Q63158027. Entity 630's single period ran 1886 to 2019 and is divided at that year: iran-persia-1886 now belongs to persia and ends there, and iran-persia-1925 carries the same outline on. names[0] drops \"(Persia)\", which this record no longer covers."
   },
   "origin": {
     "tool": "cshapes"
+  },
+  "wikidata": "Q794",
+  "wikipedia": {
+    "en": "Iran"
   },
   "sources": [
     {
@@ -32,6 +41,14 @@
     {
       "source": "wikidata",
       "locator": "Q63158027, P571 1789 and P576 1925"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q794, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iran\", revision 1375707832"
     }
   ],
   "actorType": "polity",
@@ -39,7 +56,7 @@
     "Iran",
     "Iran (Persia)"
   ],
-  "summary": "Entity 630 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives entity 630 one period of territorial validity, from 1886 to where the dataset stops, in 2019; M51 divided that period at 1925 and this record holds the part after it. Its last capital in the dataset is Tehran. This record was written by the import from those fields. It begins in 1925 because that is the dissolution Wikidata states for Q63158027, Qajar Iran, and not because the dataset says so.",
+  "summary": "Approximately 1,648,195 km² and about 92.4 million people (2025), from Wikidata's Q794 (P2046, P1082). The English Wikipedia article \"Iran\", at revision 1375707832, opens: \"Iran, officially the Islamic Republic of Iran, and historically known as Persia, is a country in West Asia. It borders Iraq to the west; Turkey, Azerbaijan, and Armenia to the northwest; the Caspian Sea to the north, Turkmenistan to the northeast; Afghanistan to the east; Pakistan to the southeast; and the Gulf of Oman and the Persian Gulf to the south. With a population of over 92 million, Iran ranks 17th globally in both geographic size and population.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 630 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives entity 630 one period of territorial validity, from 1886 to where the dataset stops, in 2019; M51 divided that period at 1925 and this record holds the part after it. Its last capital in the dataset is Tehran. This record was written by the import from those fields. It begins in 1925 because that is the dissolution Wikidata states for Q63158027, Qajar Iran, and not because the dataset says so.",
   "when": {
     "start": 1925,
     "end": null

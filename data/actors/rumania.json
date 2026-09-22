@@ -9,20 +9,29 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-18",
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "m59-joined"
+      "m59-joined",
+      "polity-description"
     ],
     "note": "M59: joined with romania, the same polity — Rumania is Romania in the older English spelling. The outlines either side of the 1885/1886 seam share 92.77% of the smaller and 58.19% of the union (docs/m59-singletons.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (open); neither was authored here."
   },
   "origin": {
     "tool": "cshapes"
+  },
+  "wikidata": "Q218",
+  "wikipedia": {
+    "en": "Romania"
   },
   "sources": [
     {
@@ -32,13 +41,21 @@
     {
       "source": "historical-basemaps",
       "locator": "NAME \"Romania\""
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q218, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Romania\", revision 1373162584"
     }
   ],
   "actorType": "polity",
   "names": [
     "Rumania"
   ],
-  "summary": "Entity 360 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 11 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Bukarest. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 238,397 km² and about 19.1 million people (2022), from Wikidata's Q218 (P2046, P1082). The English Wikipedia article \"Romania\", at revision 1373162584, opens: \"Romania is a country in Central and Southeastern Europe. It lies on the lower course of the Danube, north of the Balkan Peninsula, and on the northwestern shore of the Black Sea. It borders Ukraine to the north and east, Hungary to the west, Serbia to the southwest, Bulgaria to the south, Moldova to the east, and the Black Sea to the southeast.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 360 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 11 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Bukarest. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1878,
     "end": null

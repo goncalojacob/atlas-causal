@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q854",
+  "wikipedia": {
+    "en": "Sri Lanka"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 780"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q854, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sri Lanka\", revision 1375905726"
     }
   ],
   "actorType": "polity",
   "names": [
     "Sri Lanka (Ceylon)"
   ],
-  "summary": "Entity 780 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1948 to where the dataset stops, in 2019. Its last capital in the dataset is Colombo. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1948-02-04. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 65,610 km² and about 21.4 million people (2017), from Wikidata's Q854 (P2046, P1082). The English Wikipedia article \"Sri Lanka\", at revision 1375905726, opens: \"Sri Lanka, officially the Democratic Socialist Republic of Sri Lanka, formerly known as Ceylon, is an island country in South Asia. It is located in the Indian Ocean, southwest of the Bay of Bengal, and is separated from India by the Gulf of Mannar and the Palk Strait. Sri Lanka shares a maritime border with the Maldives to the southwest and India to the northwest, and lies across the Bay of Bengal from Bangladesh and Myanmar to the northeast and the Andaman and Nicobar Islands of India to the east.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 780 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1948 to where the dataset stops, in 2019. Its last capital in the dataset is Colombo. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1948-02-04. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1948,
     "end": null

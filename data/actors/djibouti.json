@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q977",
+  "wikipedia": {
+    "en": "Djibouti"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 522"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q977, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Djibouti\", revision 1374406497"
     }
   ],
   "actorType": "polity",
   "names": [
     "Djibouti"
   ],
-  "summary": "Entity 522 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1977 to where the dataset stops, in 2019. Its last capital in the dataset is Djibouti. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1977-06-27. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 23,200 km² and about 1.2 million people (2023), from Wikidata's Q977 (P2046, P1082). The English Wikipedia article \"Djibouti\", at revision 1374406497, opens: \"Djibouti, officially the Republic of Djibouti, is a country in the Horn of Africa, bordered by Somalia to the south, Ethiopia to the southwest, Eritrea in the north, and the Red Sea and the Gulf of Aden to the east. The country has an area of 23,200 km2 (8,958 sq mi).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 522 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1977 to where the dataset stops, in 2019. Its last capital in the dataset is Djibouti. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1977-06-27. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1977,
     "end": null

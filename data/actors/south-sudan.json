@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q958",
+  "wikipedia": {
+    "en": "South Sudan"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 626"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q958, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"South Sudan\", revision 1375827896"
     }
   ],
   "actorType": "polity",
   "names": [
     "South Sudan"
   ],
-  "summary": "Entity 626 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 2011 to where the dataset stops, in 2019. Its last capital in the dataset is Juba. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 644,329 km² and about 12.6 million people (2017), from Wikidata's Q958 (P2046, P1082). The English Wikipedia article \"South Sudan\", at revision 1375827896, opens: \"South Sudan, officially the Republic of South Sudan, is a landlocked country in East Africa. It is bordered by Sudan to the north, Ethiopia to the east, Kenya to the southeast, Uganda to the south, the Democratic Republic of the Congo to the southwest, and the Central African Republic to the west. South Sudan's diverse landscape includes vast plains and plateaus, dry and tropical savannahs, inland floodplains, and forested mountains.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 626 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 2011 to where the dataset stops, in 2019. Its last capital in the dataset is Juba. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 2011,
     "end": null

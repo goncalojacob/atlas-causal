@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q77",
+  "wikipedia": {
+    "en": "Uruguay"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 165"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q77, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Uruguay\", revision 1375920901"
     }
   ],
   "actorType": "polity",
   "names": [
     "Uruguay"
   ],
-  "summary": "Entity 165 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Montevideo. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 176,215 km² and about 3.4 million people (2023), from Wikidata's Q77 (P2046, P1082). The English Wikipedia article \"Uruguay\", at revision 1375920901, opens: \"Uruguay, officially the Oriental Republic of Uruguay, is a country in southeastern South America. It shares borders with Argentina to its west and southwest and Brazil to its north and northeast, while bordering the Río de la Plata to the south and the Atlantic Ocean to the southeast. It is part of the Southern Cone region of South America.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 165 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Montevideo. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null
