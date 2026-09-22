@@ -142,3 +142,36 @@ test('B1: coming back to the map draws the map, not the picture it had while hid
   assert.ok(arrived.length > 2, 'there are marks on the map to compare');
   assert.deepEqual(returned, arrived, 'the same marks are drawn on the way back as on arrival');
 });
+
+// --- B2: the band and the masthead follow the files that land late ----------
+//
+// `lensView` answers again after the state has stopped moving — a narrative's
+// steps are an attribute and arrive with their century. main.js forces the
+// three views for exactly that reason and told neither the band nor the count.
+// Nothing is pinned here: the profile drawn on arrival is compared with the
+// profile the very same page draws once something else has made it render.
+test('B2: the band\'s profile is the narrative\'s from the first drawing', { skip }, async () => {
+  const PROFILE = `
+    const path = document.querySelector('#map .map-band path.bar.stub');
+    return path ? path.getAttribute('d') : null;`;
+
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?narrative=how-the-colonial-war-ended-the-regime&step=0'), ready);
+    await waitFor(page, `${PROFILE.replace('return path ? path.getAttribute(\'d\') : null;', 'return Boolean(path);')}`, 'the band to draw a profile');
+    const onArrival = await page.eval(PROFILE);
+
+    // A state change that cannot itself move the profile: which view has the
+    // pane says nothing about which events the band is a band over.
+    await page.eval('document.querySelector(\'[data-view="graph"]\').click(); return true;');
+    await waitFor(page, NODES, 'the graph to draw its nodes');
+    await page.eval('document.querySelector(\'[data-view="map"]\').click(); return true;');
+    await waitFor(page, 'return document.querySelectorAll("svg.map .mark[data-id]").length > 0;', 'the map again');
+    const later = await page.eval(PROFILE);
+
+    assert.ok(onArrival, 'there is a profile under the band');
+    assert.equal(onArrival, later, 'and it is the same profile before and after anything else redrew');
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});

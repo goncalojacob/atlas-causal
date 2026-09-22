@@ -98,11 +98,25 @@ try {
   let map = null;
   let timeline = null;
   let graph = null;
+  // And the two controls in the masthead and over the map that read the same
+  // answer the pictures do (M83, B2). `createWindowControl` and `createMapBand`
+  // have always returned a `render`; this file dropped both on the floor and
+  // left them subscribed to the store alone. But `lensView` answers again after
+  // the state has stopped moving — when an actor's grounds land, when a
+  // source's citers do, when a narrative's steps arrive with their century —
+  // and `main.js` knows this and forces the views for exactly that reason. The
+  // band's profile is `shown ∩ the lens's own half` and the masthead's count is
+  // `workingSet`, so both go stale in the same places, and neither is a picture
+  // a reader can refresh by dragging something they cannot see is wrong.
+  let windowControl = null;
+  let mapBand = null;
   const remeasure = (options = {}) => {
     const s = state.get();
     map?.render(s, options);
     timeline?.render(s, options);
     graph?.render(s, options);
+    windowControl?.render(s, options);
+    mapBand?.render(s, options);
   };
 
   // A lens on a source is the one thing the three views draw that the atlas
@@ -233,7 +247,7 @@ try {
   // looking at. It stands where the band stood before M60 made the timeline a
   // view — the band is still there, on the timeline, and the two write the
   // same two fields of the state.
-  createWindowControl(document.getElementById('window-control'), { atlas, state });
+  windowControl = createWindowControl(document.getElementById('window-control'), { atlas, state });
   // And the same window as a band over the map — on it, from first paint, on
   // every visit since M75: the owner, 21 September, *"The dates two-handled
   // band should not be hidden."* The two write the same `from` and `to`: typing
@@ -241,7 +255,7 @@ try {
   // want to sweep for it with the map answering as they go. There is nothing to
   // press and nothing remembered, so this line costs its drawing here rather
   // than on a click that may never come (map-band.js).
-  createMapBand(mapArea, { atlas, state });
+  mapBand = createMapBand(mapArea, { atlas, state });
 
   // The composer (M71), which is the one control on this page whose module is
   // not loaded with the page. Everything else in this file is a few kilobytes

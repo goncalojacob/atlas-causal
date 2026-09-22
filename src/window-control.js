@@ -167,7 +167,12 @@ export function createWindowControl(group, { atlas, state }) {
     };
   };
 
-  function render(s) {
+  // `options` is taken and not read: this control keeps no key — every render
+  // recomputes the sentence from the state and the atlas — so being forced is
+  // being rendered. It is in the signature because `main.js` forces the four
+  // drawings that read `workingSet` with one call, and a control that threw
+  // away the argument would be a control nobody could force (M83, B2).
+  function render(s, options = {}) { // eslint-disable-line no-unused-vars
     if (!atlas.extent) return;
     // Still resolved, and since M82 read again: the note beside the count is
     // about the events *of the window* — which is what the map's corner said
