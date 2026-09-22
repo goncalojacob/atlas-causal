@@ -173,3 +173,46 @@ test('the export button says what the file is', async () => {
   assert.match(share, /textContent = 'Export as SVG'/, 'the button names the file');
   assert.match(share, /button\.title = 'The picture on screen, as an SVG file'/, 'and its title stays');
 });
+
+// ─── 5. the about page is one screen (A16) ─────────────────────────────────
+//
+// `about.html` was 40,000 characters of design essay that opened on
+// "thirty-seven of the records in the current test dataset happened in
+// Lisbon" and read as a design document rather than as an about page (review
+// A, finding 16). The bound below is the one this run states in `STATUS.md`:
+// eight thousand characters is about a screen of prose at this type size, and
+// what was there was six times that.
+
+export const ABOUT_BOUND = 8000;
+
+test('about.html is one screen, and the essay is kept whole beside it', async () => {
+  const about = await read('about.html');
+  const essay = await read('essay.html');
+  assert.ok(about.length < ABOUT_BOUND,
+    `about.html is ${about.length} characters; the bound is ${ABOUT_BOUND}`);
+  // "Kept whole" is a comparison and not a number: the essay is still the
+  // essay, which is what "linked below it" has to mean.
+  assert.ok(essay.length > about.length * 4,
+    `the essay is ${essay.length} characters against the about page's ${about.length}`);
+  assert.match(about, /href="essay\.html"/, 'the about page links to the essay at its foot');
+  assert.match(essay, /href="about\.html"/, 'and the essay links back');
+  // Nothing about history is written on either: the one-screen page says what
+  // the repository already says of itself, in the words it already uses.
+  assert.ok(about.includes('The history of the world since 1492 as a graph'),
+    'the lead is the sentence the masthead and the intro card already carry');
+});
+
+test('and the essay still holds the page it was, section for section', async () => {
+  const about = await read('about.html');
+  const essay = await read('essay.html');
+  // The headings the about page keeps are a handful; the essay keeps those and
+  // every other one it had. Asked as a comparison between the two files, so
+  // neither a count nor a list of titles is written here.
+  const headings = (html) => [...html.matchAll(/<h[23]>([^<]+)<\/h[23]>/g)].map((m) => m[1]);
+  const inEssay = new Set(headings(essay));
+  assert.ok(inEssay.size > headings(about).length,
+    `the essay carries ${inEssay.size} sections against the about page's ${headings(about).length}`);
+  for (const name of ['The five edge types', 'What the colours mean, and what they do not']) {
+    assert.ok(inEssay.has(name), `the essay still explains "${name}"`);
+  }
+});

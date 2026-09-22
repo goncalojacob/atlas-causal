@@ -161,3 +161,39 @@ test('the export button on both pictures says what the file is', { skip }, async
     assert.deepEqual(await errorsOn(page), []);
   }, { device: DESK });
 });
+
+// ─── 5. the about page is one screen (A16) ─────────────────────────────────
+
+test('the about page fits a screen and the essay under it opens', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await open(page, url('about.html'), 'return Boolean(document.querySelector(".page .prose h2"));');
+    const about = await page.eval(`
+      const link = [...document.querySelectorAll('a')].find((a) => a.getAttribute('href') === 'essay.html');
+      return {
+        headings: [...document.querySelectorAll('.prose h2')].map((h) => h.textContent),
+        link: Boolean(link),
+        // What a reader scrolls past to reach the foot, in screens.
+        screens: document.documentElement.scrollHeight / innerHeight,
+      };`);
+    assert.ok(about.headings.length >= 4, `the page says what it is (${about.headings.join(' · ')})`);
+    assert.equal(about.link, true, 'and links to the essay');
+    // "One screen" is the claim the brief makes; three is the slack a browser's
+    // own type size and a narrow measure are allowed, and the essay it replaces
+    // was thirty.
+    assert.ok(about.screens < 3, `the about page is ${about.screens.toFixed(1)} screens`);
+
+    await open(page, url('essay.html'), 'return Boolean(document.querySelector(".page .prose h2"));');
+    const essay = await page.eval(`
+      const back = [...document.querySelectorAll('a')].find((a) => a.getAttribute('href') === 'about.html');
+      return {
+        headings: document.querySelectorAll('.prose h2, .prose h3').length,
+        back: Boolean(back),
+        screens: document.documentElement.scrollHeight / innerHeight,
+      };`);
+    assert.ok(essay.headings > about.headings.length, 'the essay is the essay');
+    assert.equal(essay.back, true, 'and it links back');
+    assert.ok(essay.screens > about.screens, 'and it is the longer of the two');
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});
