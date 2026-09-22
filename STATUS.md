@@ -19177,6 +19177,18 @@ title (A6) and its axis still runs to 2040 with nothing there.
       that reaches for the nearest type when none fits is how a graph fills up
       with claims nobody made.
 
+1092. **A count carried forward from the last stand is not a measurement.**
+      Three stands in a row said "events with no place: 23, all refused for
+      want of a coordinate", and the number was already wrong when the second
+      one copied it: measured at `eebd5bc6`, the head this fire picked up, 28
+      active events had no place. The five the figure was missing are M42b's
+      Italian Wars, which reached this branch through an earlier `m0` merge
+      and which that lane deliberately left placeless. Nothing was broken by
+      it, and that is the point — **a wrong count in a document is invisible
+      until somebody re-measures**, which is deviation 1078 arriving in a
+      second place. A row that says "N" should be a row a fire re-took, and a
+      fire that copies one forward should say it copied it.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

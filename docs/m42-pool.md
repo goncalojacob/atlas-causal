@@ -2871,7 +2871,7 @@ on the wrong side of the Angolan Civil War's 11 November 1975.
 | largest connected component | 506 | **508** |
 | components | 92 | 99 |
 | events with no edge at all | 72 | **78** |
-| events with no place | 23 | 23 — every one of the ten arrived placed |
+| events with no place | **28** | **28** — every one of the ten arrived placed |
 | classes added to the seeds table | — | **3**, one refused |
 | API calls | — | 1 SPARQL, 23 for the import, 4 full-article reads |
 
@@ -2913,6 +2913,19 @@ Wikidata knows as the battlefield museum and which is a site and not a town,
 and `country` for German East Africa, a historical country whose centroid is a
 long way from the coast the Abushiri revolt was fought on — which is exactly
 what a coarse precision is for, and why the map draws one wider and fainter.
+
+**The placeless count is 28 and not the 23 the last two stands carried**, and
+the difference was on the branch before this fire opened: measured at
+`eebd5bc6`, the head this fire picked up, it was already 28. The five the
+stands were not counting are M42b's Italian Wars, which reached this branch
+through an earlier `m0` merge — `italian-wars`, `italian-wars-of-1499-1504`,
+`italian-war-of-1521-1526`, `italian-war-of-1551-1559` and
+`war-of-the-league-of-cambrai`. Each is a war across a peninsula rather than a
+thing that happened at a point, and M42b withdrew a peninsula-sized place on
+22 September rather than draw one; they are that lane's to settle. **23 is the
+number A9 refused for want of a coordinate and it is unchanged**; 28 is how
+many active events have no place, which is the row's own question. The stands
+of batches 33 to 35 answered the second question with the first number.
 
 This is the practice the 410 places of the 22 September pass already follow:
 that pass created **112 `region`, 98 `country` and 58 `city` places and not one
@@ -2963,7 +2976,7 @@ Africa under A10.*
 | largest connected component | **508** |
 | components | **99** |
 | events with no edge at all | **78** |
-| events with no place | 23, all refused for want of a coordinate |
+| events with no place | **28** — 23 refused for want of a coordinate, 5 brought in by the `m0` merge |
 | the Africa half of the inverse vein | **149 rows open** after this batch's ten |
 | the sweep pool, world sections | **1,046** open rows, untouched |
 
@@ -3155,7 +3168,7 @@ flagged**, which is A7's own sentence.
 | largest connected component | **508** |
 | components | **104** |
 | events with no edge at all | **81** |
-| events with no place | 23, all refused for want of a coordinate |
+| events with no place | **28** — 23 refused for want of a coordinate, 5 brought in by the `m0` merge |
 | the Africa half of the inverse vein | **139 rows open** |
 | the sweep pool, world sections | **1,046** open rows, untouched |
 | per lane, active | Europe 314, Asia 125, **Africa 99**, Americas 104 |
