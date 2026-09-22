@@ -42,7 +42,7 @@ test('changing any one field changes the key', () => {
     // them, and they are in the key all the same, for the reason this whole
     // test exists: a field a view does not obviously read still changes the
     // key, because the alternative is a picture that is quietly out of date.
-    degree: 0, tops: true,
+    degree: 2, tops: true,
   };
   for (const [name, value] of Object.entries(changed)) {
     assert.notEqual(stateKey({ ...base, [name]: value }), stateKey(base), name);

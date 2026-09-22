@@ -250,9 +250,12 @@ function subtreeLensHtml(ctx, event) {
   const kept = eventsOfFocus({ kind: 'event', id: event.id }, ctx.atlas)?.size ?? 0;
   if (kept < 2) return '';
   const parts = kept - 1;
-  return `<p class="subtree-lens muted">Focusing on this keeps it and the ${parts}
-    ${parts === 1 ? 'event' : 'events'} inside it; with no other focus on, every other event
-    leaves all three views.</p>`;
+  // **What it does, and not how the software does it** (M82, A8). The line
+  // read "Focusing on this keeps it and the 27 events inside it; with no other
+  // focus on, every other event leaves all three views", which is a sentence
+  // about a state model. What a reader needs is what they will be looking at.
+  return `<p class="subtree-lens muted">Showing this and the ${parts}
+    ${parts === 1 ? 'event' : 'events'} inside it.</p>`;
 }
 
 // The other direction: the events inside this one, in the order they
@@ -450,6 +453,10 @@ export function renderEventCard(ctx, { container, event, found, state, mine, rem
       // (standing.js). It waits for the file, like the summary, because the
       // core row a card is built from carries no signature.
       fillStanding(container, rec);
+      // And the way out to the record's own page, but only if there is one
+      // (M82, A10): whether a record carries a full entry is on its own file,
+      // which is what has just arrived.
+      ctx.fillEntryLink(container, 'event', rec);
       // No sub-heading: the section's own header already says "Sources".
       container.querySelector('[data-slot="sources"]').innerHTML = rec.sources?.length
         ? ctx.citationsHtml(rec.sources, '', rec)

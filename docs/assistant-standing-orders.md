@@ -94,8 +94,11 @@ on:
 The lane A queue for the week: M80 (a connection selectable, marks by
 precision, the count wording) → M81 (the graph stretches time) → **a
 review run with fresh eyes** over the code and the live site, producing a
-numbered findings file → fix milestones for the confirmed findings → a
-second review mid-week → its fixes.
+numbered findings file (`docs/review-2026-09-22.md`, done 22 September) →
+M82 (the first screen) → M83 (the graph under a lens, the review's display
+bugs, first paint) → **M84 (the owner's feedback document,
+`docs/feedback-2026-09-22.md`: a cross closes a card; the ring in a
+distinct colour)** → a second review mid-week → its fixes.
 
 **Reviews and coordination are always on Fable.** The owner, 22 September:
 *"for the code reviews and coordination always use Fable, even if changes

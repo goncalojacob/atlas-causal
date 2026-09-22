@@ -19,10 +19,23 @@
 // sent opens on the record it names, not on an introduction to the site. The
 // "?" in the masthead brings it back at any time, so dismissing it is never a
 // door closing.
+//
+// **In the reader's words and not the builder's** (M82, A3). The card used to
+// open on "A map, a graph and a timeline of the same records" and then spend
+// *walk*, *lens*, *focus*, *chip*, *other branches* and *breadcrumb* before the
+// reader had clicked once. Those are the names this project uses among itself
+// for parts of its own machinery; a funder reading the front page has no way to
+// attach any of them to anything. So the lead is the one sentence the masthead
+// carries (`WHAT_IT_IS`), the steps say what a click does — open an event, read
+// what it led to, click one of those — and the words a reader would have to be
+// taught are simply not used before the first click. What is behind them is
+// still all there; it is met on the card of a record, where there is something
+// on screen for it to be about.
 
 import { esc } from './util/esc.js';
 import { formatInterval } from './util/dates.js';
 import { hasOpening } from './state.js';
+import { bylineOf } from './demo.js';
 
 // Per reader, per browser, like the open section and the pane sizes: it says
 // nothing about what the atlas is showing, so it stays out of the URL.
@@ -78,10 +91,15 @@ export function heaviest(atlas, limit = HEAVIEST) {
     .slice(0, limit);
 }
 
-const authorsLine = (record) => {
-  const names = (record.authors ?? []).map((a) => a.name).filter(Boolean);
-  return names.length ? names.join(', ') : 'unsigned';
-};
+// What the atlas is, in one sentence, in the reader's own words (M82, A3).
+// The masthead of `index.html` carries the same sentence under the title, and
+// `tests/m82.test.mjs` holds the two together: a page that said one thing and
+// a card that said another would be the fault this fixes, written twice.
+//
+// It claims nothing about history. "since 1492" is the corpus's own earliest
+// year — `atlas.extent.min`, asserted in the same test — and not a period
+// anybody here decided on.
+export const WHAT_IT_IS = 'The history of the world since 1492 as a graph: every event linked to what caused it and what it led to, with sources.';
 
 // The card, as a string, so `node --test` can hold it to quoting and to
 // claiming nothing.
@@ -94,9 +112,7 @@ export function introHtml(atlas) {
   return `<div class="intro-card" role="dialog" aria-modal="false" aria-labelledby="intro-title">
     <button type="button" class="intro-close" data-intro="close" aria-label="Close">×</button>
     <h2 id="intro-title">Atlas causal</h2>
-    <p class="intro-lead">A map, a graph and a timeline of the same records. Pick an event and follow
-      its consequences one link at a time; at any point the panel will show which
-      <em>other</em> branches fed the event you have reached.</p>
+    <p class="intro-lead">${esc(WHAT_IT_IS)}</p>
     <p class="muted">${esc(atlas.activeEvents.length)} events · ${esc(links)} links ·
       ${esc(atlas.actors.size)} actors · ${esc(atlas.sources.size)} sources.
       Every link carries a written explanation and its sources.</p>
@@ -104,16 +120,16 @@ export function introHtml(atlas) {
     ${first ? `<section class="intro-start">
       <h3>Start here</h3>
       <p><button type="button" class="intro-go" data-intro="narrative" data-id="${esc(first.id)}">${esc(first.title)}</button>
-        <span class="muted">${esc(authorsLine(first))} · ${esc((first.steps ?? []).length)} steps</span></p>
-      <p class="hint">A narrative is one person's walk through records that are already here. The map,
-        the graph and the timeline follow each step; nothing in it changes what it walks.</p>
+        <span class="muted">${esc(bylineOf(first))} · ${esc((first.steps ?? []).length)} steps</span></p>
+      <p class="hint">A short account that takes you through the events in order, one at a time. The
+        map, the graph and the timeline follow it as you read; it changes nothing it goes through.</p>
     </section>` : ''}
 
     ${narratives.length > 1 ? `<section class="intro-narratives">
-      <h3>Every walk <span class="count">${esc(narratives.length)}</span></h3>
+      <h3>Accounts to read <span class="count">${esc(narratives.length)}</span></h3>
       <ul>${narratives.map((n) => `<li>
         <button type="button" class="link" data-intro="narrative" data-id="${esc(n.id)}">${esc(n.title)}</button>
-        <span class="muted">${esc(authorsLine(n))}</span>
+        <span class="muted">${esc(bylineOf(n))}</span>
       </li>`).join('')}</ul>
     </section>` : ''}
 
@@ -128,20 +144,20 @@ export function introHtml(atlas) {
     </section>` : ''}
 
     <section class="intro-walkthrough">
-      <h3>Follow the consequences</h3>
+      <h3>How to read it</h3>
       <ol>
-        <li>Click a mark on the map, or a bar on the timeline. The panel opens on that event.</li>
-        <li>Under <strong>Consequences</strong>, click a link to walk it. The path you have walked is
-          drawn in red, and a breadcrumb at the top of the panel takes you back to any step of it.</li>
-        <li>Once you have walked a step, <strong>Other branches</strong> appears: the ancestors of where
-          you are that are <em>not</em> on the path you took. Arriving one way does not mean that way
-          explains it.</li>
-        <li>Every link says <em>Why</em>, and behind it is the argument somebody wrote and the sources
-          it rests on. A link historians disagree about is marked <em>disputed</em> and is never walked
-          through silently.</li>
-        <li>Any card offers <strong>Focus on this</strong>, which keeps that record's events and dims
-          what they connect to directly. Foci add up, and each one is a chip in the header.</li>
+        <li>Click an event — a mark on the map, a bar on the timeline, a dot on the graph. A card
+          opens on it with its dates, who was in it and where it happened.</li>
+        <li>The card lists <strong>what this event led to</strong>. Click one of those to go forward a
+          step. The trail you have followed is drawn in red on all three pictures.</li>
+        <li>The card also lists <strong>what led to this event</strong>, including the causes you did
+          not arrive through: getting here one way does not mean that way explains it.</li>
+        <li>Every link between two events says <em>why</em>, in a paragraph somebody wrote, with the
+          books and articles it rests on. Where historians disagree, the link is marked
+          <em>disputed</em> and says who disagrees.</li>
       </ol>
+      <p class="hint">The atlas opens on the events that are not part of any larger one. Open a war, a
+        regime or a revolution and what happened inside it appears.</p>
     </section>
 
     <p class="intro-actions">
@@ -163,8 +179,26 @@ export function createIntro(container, {
     container.innerHTML = introHtml(atlas);
   }
 
+  // **And drawn again when a century lands** (M82, A3). The card names
+  // narratives and events, and what a record is *called* arrives with its
+  // attribute shard and not with the core (attributes.js); the card was built
+  // once, at load, so a first visit read `world-war-ii` and
+  // `how-the-colonial-war-ended-the-regime` where the titles go — the front
+  // page of the atlas printing slugs. Nothing in the state has changed when a
+  // shard arrives, so the card has to be told, exactly as the three views, the
+  // panel, the chips and the composer are (main.js, `shardLanded`).
+  //
+  // Only while it is on screen: a card nobody is looking at is rebuilt the
+  // next time it is opened, and rewriting the markup under a reader's pointer
+  // costs a click.
+  function refresh() {
+    if (shown && !container.hidden) draw();
+  }
+
   function show() {
-    if (!shown) draw();
+    // Always drawn afresh: the titles it quotes may have landed since it was
+    // last built, and the "?" is often pressed long after the load.
+    draw();
     shown = true;
     container.hidden = false;
     toggle?.setAttribute('aria-expanded', 'true');
@@ -208,5 +242,5 @@ export function createIntro(container, {
   if (!hasSeen(storage) && opensOnNothing(state.get())) show();
   else container.hidden = true;
 
-  return { show, hide, isOpen: () => !container.hidden };
+  return { show, hide, refresh, isOpen: () => !container.hidden };
 }

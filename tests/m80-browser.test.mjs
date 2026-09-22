@@ -75,7 +75,9 @@ const CARD = `
   const explanation = document.querySelector('.panel [data-slot="edge-explanation"]');
   const sources = document.querySelector('.panel [data-slot="edge-sources"]');
   return {
-    type: head.querySelector('h2').textContent.trim(),
+    heading: head.querySelector('h2').textContent.replace(/\\s+/g, ' ').trim(),
+    type: (head.querySelector('h2 .arrow') || {}).textContent
+      ? head.querySelector('h2 .arrow').textContent.replace('→', '').trim() : null,
     ends,
     confidence: badge ? badge.textContent.trim() : null,
     hint: (document.querySelector('.panel .confidence-hint') || {}).textContent || '',
@@ -118,7 +120,10 @@ test('clicking a line on the graph opens the link\'s card, and the picture does 
       'the argument to arrive',
     );
     const card = await page.eval(CARD);
-    assert.ok(TYPES.includes(card.type), `the card's heading is not a type: ${card.type}`);
+    // **The heading is the link, with the type between its two ends** (M82,
+    // A11): a card headed "enabled" said nothing about which two things it
+    // was between, which is the one thing a link's card is about.
+    assert.ok(TYPES.includes(card.type), `the type is not between the ends: ${card.heading}`);
     assert.equal(card.ends.length, 2, 'the card does not name both ends');
     assert.ok(line.id.startsWith(`${card.ends[0]}--`), 'the from end is not the link\'s from end');
     assert.ok(line.id.includes(`--${card.ends[1]}--`), 'the to end is not the link\'s to end');
@@ -366,7 +371,9 @@ test('the masthead counts main events of the corpus at rest, and events of it un
 test('the pin and the standing line are what they were', { skip }, async () => {
   await desk(async (page, url) => {
     await seenIntro(page);
-    await open(page, url(`?${WHOLE}&${SOMEWHERE}`),
+    // `review=1`: the standing line is off the demo since M82 (A2), and what
+    // this test is about is that it is unchanged where it is shown.
+    await open(page, url(`?review=1&${WHOLE}&${SOMEWHERE}`),
       'return Boolean(document.querySelector(".window-count")) && document.querySelector(".window-count").textContent.trim() !== "";');
     // The standing line is said whether or not the map is looking at part of
     // the world, and it counts what a person has read — never a filter.

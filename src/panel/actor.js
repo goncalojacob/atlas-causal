@@ -442,6 +442,7 @@ export function renderActorCard(ctx, { container, actor, mine, state = null, rem
         ? ctx.citationsHtml(rec.sources, '', rec)
         : '<p class="muted">This actor cites nothing yet.</p>';
       fillStanding(container, rec);
+      ctx.fillEntryLink(container, 'actor', rec);
     },
     () => {
       if (!ctx.isCurrent(mine)) return;

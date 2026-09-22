@@ -3805,3 +3805,79 @@ browser suites one at a time as the check runs them.
 No new runtime dependency, no build step, no map library or tiles, no new hex
 value, token or type size. No record, no historical claim. `docs/drafts/`
 ignored. Deviations **1153 to 1161**.
+
+## M82 — the first screen
+
+Lane A, on the branch `m82`. The owner is away and the atlas is *"a demo to
+show the platform"* to win funding. A Fable reviewer read the live site as a
+first-time reader on 22 September (`docs/review-2026-09-22.md`, part A);
+`docs/m82-brief.md` names eight of its seventeen findings, and this is those
+eight. **Nothing under `data/` changed.**
+
+### What the first screen says
+
+Under the title, and at the head of the intro card: *"The history of the world
+since 1492 as a graph: every event linked to what caused it and what it led to,
+with sources."* 1492 is the corpus's own earliest year, asserted against the
+sentence so the two cannot come apart. The card is rewritten in the reader's
+words — it spent *walk*, *lens*, *focus*, *chip* and *breadcrumb* before a
+visitor had clicked once — and what a **main** event is is said once, where the
+count line uses the word.
+
+### What the flag hides
+
+`src/demo.js`, off unless `?review=1` asks for it. With it off the masthead's
+*"0 of 245 read"*, every card's *"Unread: no person has checked this record"*,
+the *unchecked* tag on a citation and the **Discuss**/**Edit** links are not
+drawn, and an account is published under the atlas's own byline rather than
+*"Claude (assistant draft, unreviewed)"*. The records say what they said, the
+validator counts what it counted, and `review.html` is untouched: the review
+apparatus is no longer the first thing a funder reads on a page that is not
+asking them to review anything.
+
+### What the graph draws at rest
+
+The **main events**, and no second rule. The degree floor started at two, from
+M48; M65 made that argument better — the parts of a war are drawn when the
+reader opens the war — so the floor starts at zero and is a control the reader
+raises. M77's naming rule reaches the resting picture: every mark is offered
+its name, whole or not at all, on a nearby free line. At 1280 × 900 that took
+the picture from **123 marks and two labels** to **169 marks and 66 labels**,
+none of them cut. The time axis at rest is the drawn set's own, as a lens's is
+(M81); measured, it moves the 20th century's share of the width by a point,
+and the change that would give it the room the reviewer asks for is the camera,
+which contradicts M74 and M76 in terms and is left for the owner.
+
+### The other five
+
+The *"N events in this window have no place"* paragraph leaves the map for a
+dozen words beside the masthead's count. The timeline's four rows above the
+lanes are named and a line apart, umbrella names are written whole on the first
+free row, and a tick under one of the band's own years is left unlabelled, so
+no year is written twice. *"Read the full entry →"* is offered only where the
+build writes an entry page — `hasEntry`, one question in one place. The map and
+the timeline carry the key the graph has had since M28, inked as the picture
+inks what each row stands for. There is one name for going back,
+*"Back to all events"*, wherever the way back is offered. The link's card is
+headed by its two ends with the type between them. And on a phone the picture
+takes **71 %** of the screen where it took 64 %, and **61 %** at 375 × 667
+where it took about half.
+
+### Pictures
+
+Six states, each taken twice: `docs/screens/m82-first-screen.png`,
+`m82-intro.png`, `m82-graph.png`, `m82-timeline.png`, `m82-map-key.png` and
+`m82-phone.png`, with a `-before` twin apiece taken from a worktree at
+`M81 done`. No other picture was rewritten. `docs/screens/frame.html` gains
+`intro=1`, so the card a first visit sees can be photographed.
+
+### Checks
+
+`node tools/validate.mjs --index`: **11,190 records, 5 regions, 0 errors, 264
+warnings** — the same numbers as at `M81 done`, and nothing under `data/`
+written. `node --test`: **1,743 pure and 254 browser, 1,997 in all, 0 failed
+and 0 skipped**, the browser suites one at a time as the check runs them.
+
+No new runtime dependency, no build step, no map library or tiles, no new hex
+value, token or type size. No record, no historical claim. `docs/drafts/`
+ignored. Deviations **1162 to 1169**.

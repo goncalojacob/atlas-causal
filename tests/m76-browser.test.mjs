@@ -219,8 +219,12 @@ test('no field types a year any more, and a link still opens on its window', { s
     // And what the brief says to keep is kept.
     assert.equal(await page.eval('return document.querySelectorAll("#window-control .pin").length;'), 1);
     assert.equal(await page.eval('return document.querySelectorAll("#window-control .window-count").length;'), 1);
-    assert.ok(await page.eval('return (document.querySelector("#window-control .window-read").textContent || "").length > 0;'),
-      'the standing line is still said');
+    // The standing line's *slot* is still there. What it says is M70's and is
+    // off the demo since M82 (A2, demo.js), which `tests/m70-browser.test.mjs`
+    // asserts with the flag on; what this test is about is that M76 took the
+    // two year fields and the density hint and nothing else.
+    assert.equal(await page.eval('return document.querySelectorAll("#window-control .window-read").length;'), 1,
+      'the standing line still has its place on the row');
 
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   }, { device: DESK });

@@ -43,6 +43,15 @@ import { ROOT, atlasOf, topologyOf, FIXTURE_DATA } from './helpers.mjs';
 // index's own column is checked against. `corpusOf` would not do: it reads the
 // built index, and comparing the index with itself would say nothing.
 import { readRecords, readRegions } from '../tools/lib/read.mjs';
+// M82 put the marker's *markup* behind the review flag: the published site is
+// a demo and does not open by telling a funder that nobody has checked
+// anything (demo.js, A2). What the marker says when it is shown is M70's and
+// is what this file is about, so the suite reads the atlas as a maintainer
+// does. The predicate, the index column and the count below are untouched by
+// the flag and are asserted with it either way.
+import { setReview } from '../src/demo.js';
+
+setReview(true);
 
 const dataDir = path.join(ROOT, 'data');
 

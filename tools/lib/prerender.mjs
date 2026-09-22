@@ -20,7 +20,9 @@
 
 import { bibliographyHtml } from '../../src/sources/bibliography.js';
 import { narrativesHtml } from '../../src/narratives/list.js';
-import { entryHtml, createLinks, displayName, ENTRY_KINDS } from '../../src/entry/entry.js';
+import {
+  entryHtml, createLinks, displayName, hasEntry, ENTRY_KINDS,
+} from '../../src/entry/entry.js';
 import { esc } from '../../src/util/esc.js';
 
 // The generated region of a hand-written page. The markers are in the file
@@ -55,7 +57,7 @@ export function injectInto(html, markup, { where = 'the page' } = {}) {
 // be a file per record saying nothing (review of the health plan, finding 9).
 export function entryRecords(records) {
   return (records ?? [])
-    .filter((r) => ENTRY_KINDS.includes(r.kind) && typeof r.body === 'string' && r.body.trim() !== '')
+    .filter((r) => ENTRY_KINDS.includes(r.kind) && hasEntry(r))
     .sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
 }
 

@@ -12,6 +12,7 @@ import {
   introHtml, heaviest, hasSeen, markSeen, opensOnNothing, HEAVIEST, STORAGE_KEY, SEEN,
 } from '../src/intro.js';
 import { defaultState } from '../src/state.js';
+import { setReview } from '../src/demo.js';
 import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
 
 const atlas = await atlasOf(path.join(ROOT, 'data'));
@@ -48,8 +49,8 @@ test('the card quotes the records and claims nothing of its own', () => {
   assert.match(html, new RegExp(`${atlas.actors.size} actors`));
   assert.match(html, new RegExp(`${atlas.sources.size} sources`));
   // And there is a walkthrough that is about the interface.
-  assert.match(html, /Follow the consequences/);
-  assert.match(html, /Other branches/);
+  assert.match(html, /How to read it/);
+  assert.match(html, /what this event led to/);
 });
 
 test('the card is escaped like every other thing built out of a record', () => {
@@ -67,18 +68,23 @@ test('the card is escaped like every other thing built out of a record', () => {
   assert.doesNotMatch(html, /<script/, 'no tag a record wrote reaches the DOM as a tag');
   assert.doesNotMatch(html, /<img/);
   assert.match(html, /&lt;img src=x onerror=alert\(1\)&gt;/, 'it is there, as text');
-  assert.match(html, /&quot;&gt;&lt;script&gt;/, 'and so is the author line');
+  // The author line is the atlas's own byline on the published site (M82,
+  // A2), so what a record wrote there reaches no page at all; with the review
+  // flag on it is printed, and escaped.
+  setReview(true);
+  assert.match(introHtml(nasty), /&quot;&gt;&lt;script&gt;/, 'and so is the author line');
+  setReview(null);
 });
 
 test('a dataset with no narratives and no weights still opens on something', async () => {
   const fixtures = await atlasOf(FIXTURE_DATA);
   const html = introHtml({ ...fixtures, activeNarratives: [] });
   assert.doesNotMatch(html, /Start here/);
-  assert.match(html, /Follow the consequences/, 'the walkthrough stands on its own');
+  assert.match(html, /How to read it/, 'the walkthrough stands on its own');
   const bare = introHtml({
     activeEvents: [], activeNarratives: [], edges: new Map(), actors: new Map(), sources: new Map(),
   });
-  assert.match(bare, /Follow the consequences/);
+  assert.match(bare, /How to read it/);
   assert.doesNotMatch(bare, /What most of it hangs on/, 'nothing is offered that is not there');
 });
 

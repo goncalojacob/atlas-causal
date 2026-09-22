@@ -15,6 +15,7 @@
 // full period, so no reader has to work out which of the two they are in.
 
 import { esc } from '../util/esc.js';
+import { bylineOf } from '../demo.js';
 import { bounds, toAstronomical, formatYear } from '../util/dates.js';
 
 // A narrative's period is the years of the records it walks, and not the
@@ -74,10 +75,12 @@ export function formatPeriod(period) {
   return period.from === period.to ? formatYear(period.from) : `${formatYear(period.from)}–${formatYear(period.to)}`;
 }
 
-function authorsOf(narrative) {
-  const names = (narrative.authors ?? []).map((a) => a?.name).filter(Boolean);
-  return names.length ? names.join(', ') : 'unsigned';
-}
+// Who an account is published under (M82, A2): the record's own authors where
+// the review apparatus is on, the atlas's own byline where it is not. This
+// page is written into the file by the build, which runs with the flag off, so
+// what a reader is served says "Atlas causal" and the record still says what
+// it says.
+const authorsOf = (narrative) => bylineOf(narrative);
 
 // Every narrative, in every century it crosses, oldest century first and
 // inside each one the earliest account first — then by title, then by id, so

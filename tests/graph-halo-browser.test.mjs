@@ -214,12 +214,16 @@ test('a label over a line and a label over a mark both keep paper between the le
       }
       return out;`);
 
-    const overLine = behind.find((b) => b.edge);
-    const overMark = behind.find((b) => b.mark);
-    assert.ok(overLine, 'a label is drawn over a line');
-    assert.ok(overMark, 'a label is drawn over a mark');
-
-    for (const [what, box] of [['a line', overLine], ['a mark', overMark]]) {
+    // What is drawn under a label's box is read off the geometry, and whether
+    // there is cobalt *ink* inside it is read off the picture: a line that
+    // passes through the box may still be drawn faintly enough, or short
+    // enough inside it, that no pixel of it is there to read. So the
+    // candidates are taken in order and the first with ink in it is the case
+    // — which is what this test was doing when the resting picture named a
+    // dozen marks and the first candidate was always a real one. Since M82 it
+    // names every mark it can (A1), and the first is whichever the weight
+    // order put there.
+    const measure = async (box) => {
       const img = await shoot(page, {
         x: box.x - 4, y: box.y - 4, width: box.w + 8, height: box.h + 8, scale: SHOT,
       });
@@ -240,14 +244,27 @@ test('a label over a line and a label over a mark both keep paper between the le
           }
         }
       }
+      return { letters, lines, touching };
+    };
+
+    for (const [what, candidates] of [
+      ['a line', behind.filter((b) => b.edge)],
+      ['a mark', behind.filter((b) => b.mark)],
+    ]) {
+      assert.ok(candidates.length > 0, `a label is drawn over ${what}`);
+      let found = null;
+      for (const box of candidates) {
+        // eslint-disable-next-line no-await-in-loop
+        const measured = await measure(box);
+        if (measured.lines > 0 && measured.letters > 0) { found = { box, ...measured }; break; }
+      }
       // The case is a real one — there is something cobalt inside the label's
       // own rectangle — and the letters are drawn in it.
-      assert.ok(lines > 0, `${box.text} really is drawn over ${what}`);
-      assert.ok(letters > 0, `${box.text} has letters to read`);
+      assert.ok(found, `some label over ${what} has both ink and letters in its box`);
       // And the halo is doing its job: not one pixel of a letter has the line
       // against it. Take the halo away and this is where the two meet.
-      assert.deepEqual(touching.slice(0, 8), [],
-        `${box.text} over ${what}: ${touching.length} letter pixels with the line against them`);
+      assert.deepEqual(found.touching.slice(0, 8), [],
+        `${found.box.text} over ${what}: ${found.touching.length} letter pixels with the line against them`);
     }
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   }, { device: { width: 1280, height: 800, deviceScaleFactor: 1 }, args: LCD_OFF });

@@ -396,9 +396,9 @@ test('a large event is a band the height of the drawing, under the bars and with
     // From the top of the lanes to the bottom of the drawing: the whole
     // timeline, which is what makes it the ground rather than a bar.
     assert.equal(band.y + band.height, band.svgHeight, 'it reaches the bottom');
-    assert.ok(band.y < 60 && band.y > 0, `it starts under the axis (${band.y})`);
+    assert.ok(band.y > 0 && band.y <= ROW_LIMITS.AXIS_HEIGHT, `it starts under the axis (${band.y})`);
     assert.equal(band.label, 'Fixture event F', 'and says which event it is');
-    assert.ok(band.labelY < 40, 'on the axis, above the lanes');
+    assert.ok(band.labelY < ROW_LIMITS.AXIS_HEIGHT, 'on the axis, above the lanes');
     assert.ok(band.order, 'and under the bars');
     // The bar is still there. The band is not a control — no title, no click,
     // no place in the roving tab order — so taking the bar away would leave
@@ -627,6 +627,9 @@ const EXTENT = `
   const ticks = [...svg.querySelectorAll('.layer-tickLabels text')]
     .map((t) => ({ label: t.textContent, x: Number(t.getAttribute('x')) }))
     .sort((a, b) => a.x - b.x);
+  const bandYears = [...svg.querySelectorAll('.layer-handleLabels text.window-year')]
+    .map((t) => t.textContent);
+  const tickLines = svg.querySelectorAll('.layer-ticks line.tick').length;
   const strips = [...svg.querySelectorAll('.layer-strips path')].map((p) => p.getAttribute('d'));
   const bars = [...svg.querySelectorAll('rect.bar[data-id]')]
     .map((el) => ({ id: el.getAttribute('data-id'), x: Number(el.getAttribute('x')), width: Number(el.getAttribute('width')) }));
@@ -639,6 +642,8 @@ const EXTENT = `
     bandX: Number(band.getAttribute('x')),
     bandWidth: Number(band.getAttribute('width')),
     ticks,
+    bandYears,
+    tickLines,
     strips,
     bars,
     handles: [...svg.querySelectorAll('.window-handle')].map((h) => ({
@@ -659,10 +664,22 @@ test('the whole extent is on the axis at 1440 px, a labelled column per century'
     // so narrow that it cannot be labelled.
     const centuries = [];
     for (let c = Math.ceil(seen.min / 100) * 100; c <= seen.max; c += 100) centuries.push(String(c));
+    // **Except where the band's own year is standing there** (M82, A6). A tick
+    // that lands under one of the two years the reader is holding is left
+    // unlabelled: the same number on two rows is what read as two axes, and
+    // the year the reader is holding is the one to keep. So the centuries the
+    // band's ends are standing on are written by the band instead, and every
+    // other one is on the axis.
     const labels = seen.ticks.map((t) => t.label);
-    for (const century of centuries) {
-      assert.ok(labels.includes(century), `${century} is on the axis: ${labels.join(' ')}`);
+    const written = new Set([...labels, ...seen.bandYears]);
+    const held = (century) => seen.handles.some((h) => Math.abs(h.year - Number(century)) < 50);
+    for (const century of centuries.filter((c) => !held(c))) {
+      assert.ok(written.has(century), `${century} is on the axis: ${[...written].join(' ')}`);
     }
+    // And the tick itself is always there: it is the measure, and the measure
+    // has no gaps. One line per tick the scale asked for, labelled or not.
+    assert.ok(seen.tickLines >= seen.ticks.length, 'every labelled tick has its line');
+    assert.ok(seen.tickLines >= centuries.length, 'and there is a tick for every century of the corpus');
     // In order left to right, and no two labels on top of one another. Eleven
     // pixels of type, so a gap under about 30 px is two labels touching.
     for (let i = 1; i < seen.ticks.length; i += 1) {

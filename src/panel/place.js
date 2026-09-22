@@ -161,6 +161,7 @@ export function renderPlaceCard(ctx, { container, place, state, mine, remembered
         container.querySelector('[data-slot="place-sources"]').innerHTML = ctx.citationsHtml(rec.sources, '', rec);
       }
       fillStanding(container, rec);
+      ctx.fillEntryLink(container, 'place', rec);
     },
     () => {},
   );
