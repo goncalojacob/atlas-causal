@@ -16,6 +16,7 @@ import { formatInterval, formatYear, defaultCalendar } from '../util/dates.js';
 import { horizonHtml } from './horizon.js';
 import { eventsOfFocus } from '../lens.js';
 import { largeEvent } from '../large.js';
+import { parentsOf } from '../parts.js';
 import { sectionHtml, openSection } from './sections.js';
 import { EDGE_TYPE_LABEL } from '../vocab.js';
 // How far this record has been read, in one line (M70). The slot goes in the
@@ -179,17 +180,26 @@ function branchesHtml(ctx, list, selectedId) {
   </details>`).join('');
 }
 
-// The event this one is inside, where it names one. `parent` is a display
-// fact and never an argument (CLAUDE.md): it is not in the adjacency, so
-// nothing on this card below the head is different for it, and the reader is
-// told what the event is part of rather than shown a link that changes what
+// The event or events this one is inside, where it names any. `parent` is a
+// display fact and never an argument (CLAUDE.md): it is not in the adjacency,
+// so nothing on this card below the head is different for it, and the reader
+// is told what the event is part of rather than shown a link that changes what
 // follows from what.
+//
+// **Each of them since M79**, in the record's own order and on a line of its
+// own: Angolan independence is part of the Third Republic and part of the
+// decolonisation of Africa, and a card that named only the first would be
+// choosing between two things the writer put side by side. An umbrella the
+// atlas does not hold is left out and not apologised for, exactly as one
+// missing parent was.
 function partOfEventHtml(ctx, event) {
-  const parent = typeof event.parent === 'string' ? ctx.atlas.events.get(event.parent) ?? null : null;
-  if (!parent) return '';
-  return `<p class="part-of-event">Part of
+  const parents = parentsOf(event)
+    .map((id) => ctx.atlas.events.get(id) ?? null)
+    .filter((record) => record !== null);
+  if (parents.length === 0) return '';
+  return parents.map((parent) => `<p class="part-of-event">Part of
     <button type="button" class="link" data-action="select" data-id="${esc(parent.id)}">${esc(parent.title)}</button>
-    <span class="when">${esc(formatInterval(parent.when))}</span></p>`;
+    <span class="when">${esc(formatInterval(parent.when))}</span></p>`).join('');
 }
 
 // A large event is drawn unlike every other event — a band across the whole

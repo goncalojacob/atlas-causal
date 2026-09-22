@@ -11,6 +11,7 @@
 // of that promise and `node --test` has no DOM to build a view in.
 
 import { formatFoci, lensView } from '../lens.js';
+import { parentsOf } from '../parts.js';
 
 // What the reader is holding, written from the state rather than counted out
 // of the held set itself. The set is derived from these six fields and from
@@ -114,7 +115,10 @@ export function degreeOf(atlas, id) {
 //     an event that happened somewhere on a day.
 export function organises(atlas, event, state, held = null) {
   if (held?.has(event.id)) return true;
-  if (state.tops && event.parent) return false;
+  // "Top level only" is "part of nothing", and since M79 an event may be part
+  // of several things: one umbrella is as much a reason to leave it out as
+  // three (`parentsOf`, src/parts.js).
+  if (state.tops && parentsOf(event).length > 0) return false;
   return degreeOf(atlas, event.id) >= (state.degree ?? 0);
 }
 
