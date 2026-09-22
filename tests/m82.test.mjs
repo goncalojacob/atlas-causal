@@ -17,6 +17,21 @@ import { defaultState } from '../src/state.js';
 import { workingSet } from '../src/emphasis.js';
 import { restingSet } from '../src/lens.js';
 import { parentsOf } from '../src/parts.js';
+import { BACK_LABEL } from '../src/lens.js';
+import { MAP_ROWS, TIMELINE_ROWS } from '../src/view-key.js';
+import { edgeCardHtml } from '../src/panel/edge.js';
+import { EDGE_TYPE_LABEL } from '../src/vocab.js';
+
+// The context panel.js hands every card, reduced to what the link's card uses
+// (the same stub `tests/m80.test.mjs` keeps, for the same reason).
+const edgeContext = (which) => ({
+  atlas: which,
+  historyHtml: () => '',
+  discussLink: () => '',
+  partOfHtml: () => '',
+  citationsHtml: () => '',
+  isCurrent: () => true,
+});
 import { arrangementOf } from '../src/graph-view/arrangement.js';
 import { timeAxis, timeSpan } from '../src/graph-view/layout.js';
 import { introHtml, WHAT_IT_IS } from '../src/intro.js';
@@ -185,4 +200,38 @@ test('A10: the entry link is offered exactly where the build writes an entry pag
       `${record.id}: the card and the build disagree about whether there is an entry`,
     );
   }
+});
+
+// 7 — A7, A8, A11. A key on each picture, one word for going back, and the
+// link's card headed by what the link is.
+//
+// The browser half — that the key is inked as the picture is, and that every
+// control that goes back says the one word — is in `tests/m82-browser.test.mjs`.
+// What is here is the shapes a key is a key to, and the heading itself.
+test('A7/A8/A11: a key per picture, one way back, and a link card headed by its two ends', () => {
+  // A key for each picture that draws marks, and each row is a shape the
+  // picture draws with the class it draws it with.
+  for (const [rows, shape] of [[MAP_ROWS, 'mark'], [TIMELINE_ROWS, 'bar']]) {
+    assert.ok(rows.length > 2, 'a key with something in it');
+    for (const row of rows) {
+      assert.ok(row.label && row.label.length > 0, 'every row says what its shape means');
+      assert.ok(row.classes.split(' ').includes(shape), `a row is drawn as the picture draws a ${shape}`);
+      // In the reader's words: no "coarse", no "cluster", no "parent".
+      assert.doesNotMatch(row.label, /coarse|cluster|parent|umbrella|scope/i, row.label);
+    }
+  }
+
+  // One word for going back, and it is a reader's word: no "focus", no "lens".
+  assert.match(BACK_LABEL, /^Back to all events$/);
+  assert.doesNotMatch(BACK_LABEL, /focus|lens|chip/i);
+
+  // And the link's card is headed by the link: both ends, the type between
+  // them, and not the type alone.
+  const edge = [...atlas.edges.values()].find((e) => e.status === 'active'
+    && atlas.events.has(e.from) && atlas.events.has(e.to));
+  const html = edgeCardHtml(edgeContext(atlas), { edge, state: defaultState() });
+  const heading = /<h2[^>]*>([\s\S]*?)<\/h2>/.exec(html)[1];
+  assert.ok(heading.includes(atlas.events.get(edge.from).title), 'the heading names where the link starts');
+  assert.ok(heading.includes(atlas.events.get(edge.to).title), 'and where it leads');
+  assert.ok(heading.includes(EDGE_TYPE_LABEL[edge.type] ?? edge.type), 'with the type between them');
 });

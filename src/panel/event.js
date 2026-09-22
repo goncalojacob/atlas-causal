@@ -250,9 +250,12 @@ function subtreeLensHtml(ctx, event) {
   const kept = eventsOfFocus({ kind: 'event', id: event.id }, ctx.atlas)?.size ?? 0;
   if (kept < 2) return '';
   const parts = kept - 1;
-  return `<p class="subtree-lens muted">Focusing on this keeps it and the ${parts}
-    ${parts === 1 ? 'event' : 'events'} inside it; with no other focus on, every other event
-    leaves all three views.</p>`;
+  // **What it does, and not how the software does it** (M82, A8). The line
+  // read "Focusing on this keeps it and the 27 events inside it; with no other
+  // focus on, every other event leaves all three views", which is a sentence
+  // about a state model. What a reader needs is what they will be looking at.
+  return `<p class="subtree-lens muted">Showing this and the ${parts}
+    ${parts === 1 ? 'event' : 'events'} inside it.</p>`;
 }
 
 // The other direction: the events inside this one, in the order they

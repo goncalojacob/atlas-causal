@@ -223,7 +223,7 @@ test('a card adds to the lens, or replaces it, and never clears the selection', 
     // lens.
     await waitFor(
       page,
-      'return document.querySelector(".panel .lens-control")?.textContent === "stop focusing on this";',
+      'return document.querySelector(".panel .lens-control")?.textContent === "Back to all events";',
       'the control to say what it does now',
     );
     assert.equal(
@@ -524,7 +524,7 @@ test('“Focus on this” while reading narrows to the step, and lets go back to
     // parameter is what asks for the lens the mode implies.
     await waitFor(
       page,
-      'return document.querySelector(".panel .lens-control")?.textContent === "stop focusing on this step";',
+      'return document.querySelector(".panel .lens-control")?.textContent === "Back to all events";',
       'the control to say what it does now',
     );
     await page.eval('document.querySelector(\'.panel [data-action="unfocus-only"]\').click(); return true;');

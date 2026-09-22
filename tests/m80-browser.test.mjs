@@ -75,7 +75,9 @@ const CARD = `
   const explanation = document.querySelector('.panel [data-slot="edge-explanation"]');
   const sources = document.querySelector('.panel [data-slot="edge-sources"]');
   return {
-    type: head.querySelector('h2').textContent.trim(),
+    heading: head.querySelector('h2').textContent.replace(/\\s+/g, ' ').trim(),
+    type: (head.querySelector('h2 .arrow') || {}).textContent
+      ? head.querySelector('h2 .arrow').textContent.replace('→', '').trim() : null,
     ends,
     confidence: badge ? badge.textContent.trim() : null,
     hint: (document.querySelector('.panel .confidence-hint') || {}).textContent || '',
@@ -118,7 +120,10 @@ test('clicking a line on the graph opens the link\'s card, and the picture does 
       'the argument to arrive',
     );
     const card = await page.eval(CARD);
-    assert.ok(TYPES.includes(card.type), `the card's heading is not a type: ${card.type}`);
+    // **The heading is the link, with the type between its two ends** (M82,
+    // A11): a card headed "enabled" said nothing about which two things it
+    // was between, which is the one thing a link's card is about.
+    assert.ok(TYPES.includes(card.type), `the type is not between the ends: ${card.heading}`);
     assert.equal(card.ends.length, 2, 'the card does not name both ends');
     assert.ok(line.id.startsWith(`${card.ends[0]}--`), 'the from end is not the link\'s from end');
     assert.ok(line.id.includes(`--${card.ends[1]}--`), 'the to end is not the link\'s to end');

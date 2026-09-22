@@ -12,6 +12,8 @@ import { formatInterval } from '../util/dates.js';
 import { narrativeSteps, readingNarrative, clampStep } from '../narrative.js';
 import { TYPE_LABEL, badge } from './event.js';
 import { RELATION_LABEL } from '../vocab.js';
+// One name for going back, wherever it is offered (M82, A8).
+import { BACK_LABEL } from '../lens.js';
 // How far this record has been read, in one line (M70). The slot goes in the
 // card's head and is filled when the record's own file lands, because the core
 // row a card is built from carries no signature.
@@ -131,7 +133,7 @@ export function renderNarrativeCard(ctx, { container, narrative, state, mine }) 
 
   container.innerHTML = `
     <p class="notice narrative">Reading a narrative: the three views hold the walk, with what it touches dimmed around it, and follow the step.
-      <button type="button" class="link small" data-action="leave-narrative">leave</button></p>
+      <button type="button" class="link small" data-action="leave-narrative">${esc(BACK_LABEL)}</button></p>
     <header class="narrative-head">
       <h2>${esc(narrative.title)}</h2>
       <p class="meta"><span class="muted">${authorsLine(narrative)}</span> · <span class="count">step ${index + 1} of ${total}</span>

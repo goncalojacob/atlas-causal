@@ -1222,6 +1222,26 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
    `.graph-key .graph-key-toggle` outweighs it wherever it applies and there is
    no second media query to keep in step with the first. */
 button.graph-key-toggle { display: none; }
+/* The same box on the map and the timeline (M82, A7). Every row is drawn with
+   the classes that picture uses — `.map .mark`, `.timeline .bar` — so the key
+   is the picture's own ink and not a drawing of it; what is written here is
+   only how big the little drawing is. */
+.view-key svg.key-shape { width: 24px; height: 12px; overflow: visible; }
+.view-key .edge-key dt { display: flex; align-items: center; }
+/* The ink of a row, which is the ink of the thing it stands for. The
+   declarations below are the same declarations and the same tokens as the
+   map's and the timeline's above; what they cannot share is the selector,
+   because `.map .mark` is how a test asks whether the map has drawn a mark
+   yet. A browser test holds a row and a real mark to the same computed stroke
+   and fill, so the two cannot drift apart unnoticed. */
+.view-key .mark { fill: var(--paper); stroke: var(--cobalt); stroke-width: 1.5; }
+.view-key .mark.coarse { stroke: var(--cobalt-soft); stroke-dasharray: 3 2; fill-opacity: 0.35; }
+.view-key .mark.cluster { fill: var(--paper); stroke: var(--cobalt); stroke-width: 2.5; }
+.view-key .cluster-count { fill: var(--cobalt); font-family: var(--font-ui); font-weight: 600; }
+.view-key .bar { fill: var(--cobalt-faint); stroke: var(--cobalt); stroke-width: 1; }
+.view-key .bar.instant { fill: var(--cobalt-soft); }
+.view-key .bar.ongoing { stroke-dasharray: 3 3; }
+.view-key .ring { fill: none; stroke: var(--cobalt); }
 
 /* The picture as a file. Bottom right in both views, opposite the graph's
    key, and quiet: it is a way out, not a thing to do. */
@@ -1447,13 +1467,18 @@ button.graph-key-toggle { display: none; }
 .panel .edge-card-head h2 {
   font-size: var(--text-xl); margin-top: 0; padding-top: 0; border-top: 0; line-height: var(--leading-tight);
 }
-/* The link's card (M80). Its heading is the type — "enabled" — because that is
-   what kind of claim the record makes, and the two events it runs between are
-   the line under it, in the order the record writes them. No new size and no
-   new colour: the ends are the same event control every list uses and the
-   confidence is the same badge. */
+/* The link's card (M80, and its heading since M82, A11). The heading *is* the
+   link — this event, the type, that event, in the order the record writes them
+   — because a card headed "enabled" says nothing about which two things it is
+   between, which is the one thing a link's card is about. No new size and no
+   new colour: the ends are the same event control every list uses, the type is
+   the interface's own soft ink, and the confidence is the same badge, on the
+   line below. */
 .panel .link-ends { margin: var(--space-1) 0 var(--space-2); display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2); }
-.panel .link-ends .arrow { color: var(--ink-soft); font-size: var(--text-sm); }
+.panel .link-ends .arrow { color: var(--ink-soft); font-size: var(--text-sm); font-family: var(--font-ui); }
+/* A heading made of the two ends is set at the heading's size; the buttons
+   inside it are the plain event control and take it from their parent. */
+.panel h2.link-ends .link { font-size: inherit; line-height: inherit; }
 .panel .confidence-hint { color: var(--ink-soft); }
 .panel .meta { color: var(--ink-soft); margin: 0; font-size: var(--text-sm); }
 .panel .count { color: var(--ink-soft); font-size: var(--text-sm); font-variant-numeric: tabular-nums; }

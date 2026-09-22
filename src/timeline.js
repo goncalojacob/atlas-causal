@@ -39,6 +39,7 @@
 // the whole picture back.
 
 import { svg, reuse } from './util/dom.js';
+import { timelineKey } from './view-key.js';
 import { createTimelineScale } from './timeline-scale.js';
 import { fromAstronomical, formatYear } from './util/dates.js';
 import {
@@ -210,6 +211,10 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   // more, and a count said in two places is a count that can disagree with
   // itself.
   container.appendChild(root);
+  // And the key to the bars (M82, A7), beside the map's own and built the same
+  // way: a row is drawn with the classes a bar is drawn with, so the key and
+  // the picture cannot come to disagree.
+  container.appendChild(timelineKey());
 
   // How many rows the packing needs, and therefore how tall the drawing is,
   // changes under the reader: both are read at every render and not once at

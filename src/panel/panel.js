@@ -15,7 +15,7 @@ import { articleFor } from '../wikipedia.js';
 import { windowAt, resolveWindow } from '../util/window.js';
 import { OPENINGS, hasOpening } from '../state.js';
 import {
-  formatFocus, lensLabels, withFocus, withoutFocus, FOCUS_NONE,
+  formatFocus, lensLabels, withFocus, withoutFocus, FOCUS_NONE, BACK_LABEL,
 } from '../lens.js';
 import { shortestPaths, pathTo } from '../graph.js';
 import { chainEdges } from '../chain.js';
@@ -395,14 +395,18 @@ export function createPanel(container, {
     const focus = formatFocus(kind, id);
     const s = state.get();
     const attrs = `data-kind="${esc(kind)}" data-id="${esc(id)}"`;
+    // One name for going back, wherever the way back is offered (M82, A8):
+    // the chip in the masthead, the card of a record that is in focus, and the
+    // step of a narrative being read all said it differently, and none of them
+    // in a word a reader arrives with (lens.js, `BACK_LABEL`).
     if (only) {
       return currentFocus(s) === focus
-        ? `<button type="button" class="link small lens-control on" data-action="unfocus-only" ${attrs}>stop focusing on this step</button>`
+        ? `<button type="button" class="link small lens-control on" data-action="unfocus-only" ${attrs}>${esc(BACK_LABEL)}</button>`
         : `<button type="button" class="link small lens-control" data-action="focus-only" ${attrs}>Focus on this</button>`;
     }
     const on = currentFocus(s).split(',').includes(focus);
     if (on) {
-      return `<button type="button" class="link small lens-control on" data-action="unfocus" ${attrs}>stop focusing on this</button>`;
+      return `<button type="button" class="link small lens-control on" data-action="unfocus" ${attrs}>${esc(BACK_LABEL)}</button>`;
     }
     return `<button type="button" class="link small lens-control" data-action="focus" ${attrs}>Focus on this</button>`;
   }

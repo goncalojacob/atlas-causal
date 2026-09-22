@@ -6,6 +6,7 @@
 // end of it would have been a second, quieter answer to the same question.
 
 import { svg, svgTitle } from '../util/dom.js';
+import { mapKey } from '../view-key.js';
 import { worldProjection, WORLD_WIDTH, viewBboxIn, bboxTransform } from './projection.js';
 import { createLandLayer } from './layers/land.js';
 import { createBaseLayer } from './layers/base.js';
@@ -523,6 +524,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   container.append(root);
   container.append(territoriesNote);
   container.append(corner);
+  // The key to the marks (M82, A7). Built here and never drawn again: what a
+  // row stands for is a class and not a state, so it is the same box on every
+  // frame. Outside the SVG, as the graph's is, so panning and zooming leave it
+  // where it is.
+  container.append(mapKey());
   container.append(exportButton(root, 'map'));
 
   // --- when the map is drawn again ----------------------------------------

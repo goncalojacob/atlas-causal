@@ -20,6 +20,7 @@ import {
 } from './browser.mjs';
 import { atlasOf, ROOT } from './helpers.mjs';
 import { parentsOf } from '../src/parts.js';
+import { BACK_LABEL } from '../src/lens.js';
 
 const atlas = await atlasOf(path.join(ROOT, 'data'));
 
@@ -80,7 +81,7 @@ test('A1: at rest every mark on the graph is a main event, and every name on it 
 // And the key, which covered half the picture at 390 px.
 test('A1: the graph\'s key is one button on a phone and the whole key on a desktop', { skip }, async () => {
   const KEY = `
-    const box = document.querySelector('.graph-key');
+    const box = document.querySelector('#graph .graph-key');
     if (!box) return null;
     const button = box.querySelector('.graph-key-toggle');
     const body = box.querySelector('.graph-key-body');
@@ -91,7 +92,7 @@ test('A1: the graph\'s key is one button on a phone and the whole key on a deskt
       share: box.getBoundingClientRect().height
         / document.querySelector('svg.graph').getBoundingClientRect().height,
     };`;
-  const press = "document.querySelector('.graph-key .graph-key-toggle').click(); return true;";
+  const press = "document.querySelector('#graph .graph-key .graph-key-toggle').click(); return true;";
 
   await withBrowser(async (page, url) => {
     await open(page, url('?view=graph'), ready);
@@ -217,6 +218,79 @@ test('A10: a record with no full entry offers no link to one', { skip }, async (
         assert.deepEqual(links, [], `a ${kind} with no entry offers nothing: ${JSON.stringify(links)}`);
       }
     }
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});
+
+// 7 — A7. A key on the map and on the timeline, the graph's own made general.
+//
+// Two properties. **There is one on each picture**, and **a row is inked as
+// the thing it stands for is inked** — the same stroke and the same fill,
+// read off the computed styles of a row and of a real mark on the same page,
+// so the key cannot come to describe a picture that has moved on without it.
+test('A7: the map and the timeline each carry a key, inked as the picture is', { skip }, async () => {
+  const INK = (box, shape, real) => `
+    const row = document.querySelector('${box} .view-key ${shape}');
+    const mark = document.querySelector('${real}');
+    if (!row || !mark) return null;
+    const read = (el) => {
+      const s = getComputedStyle(el);
+      return { stroke: s.stroke, fill: s.fill, width: s.strokeWidth };
+    };
+    return { row: read(row), mark: read(mark), rows: document.querySelectorAll('${box} .view-key dd').length };`;
+
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?fixtures=1'), ready);
+    await waitFor(page, "return Boolean(document.querySelector('#map svg.map circle.mark'));", 'the marks');
+
+    const map = await page.eval(INK('#map', 'circle.mark:not(.coarse):not(.cluster)', '#map svg.map circle.mark:not(.coarse):not(.cluster):not(.selected):not(.on-path):not(.of-actor):not(.of-narrative):not(.faded):not(.lens-near):not(.in-horizon)'));
+    assert.ok(map, 'the map carries a key, and a mark to compare it with');
+    assert.ok(map.rows > 2, 'with a row for each shape a reader meets');
+    assert.equal(map.row.stroke, map.mark.stroke, 'the key\'s mark is stroked as a mark is');
+    assert.equal(map.row.fill, map.mark.fill, 'and filled as a mark is');
+
+    await open(page, url('?fixtures=1&view=timeline'), ready);
+    await waitFor(page, BARS, 'the bars');
+    const time = await page.eval(INK('#timeline', 'rect.bar:not(.instant):not(.ongoing)', '#timeline svg.timeline rect.bar[data-id]:not(.instant):not(.ongoing):not(.stub):not(.selected):not(.on-path):not(.of-actor):not(.of-narrative):not(.faded):not(.lens-near):not(.in-horizon)'));
+    assert.ok(time, 'the timeline carries a key, and a bar to compare it with');
+    assert.ok(time.rows > 2);
+    assert.equal(time.row.stroke, time.mark.stroke, 'the key\'s bar is stroked as a bar is');
+    assert.equal(time.row.fill, time.mark.fill, 'and filled as a bar is');
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});
+
+// 8 — A8. One name for going back, wherever the way back is offered.
+test('A8: there is one word for going back, and every control that goes back says it', { skip }, async () => {
+  const WAYS_BACK = `
+    const words = new Set();
+    for (const el of document.querySelectorAll('.lens-chips button.link, .panel .lens-control.on, .panel [data-action="leave-narrative"]')) {
+      words.add(el.textContent.trim());
+    }
+    return [...words];`;
+
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    const seen = new Set();
+    // The three places the reviewer found a different word in: the chip in the
+    // masthead, the card of a record that is in focus, and a narrative being
+    // read.
+    for (const query of [
+      '?focus=actor:salazar',
+      `?selected=${encodeURIComponent(atlas.activeEvents[0].id)}&focus=event:${encodeURIComponent(atlas.activeEvents[0].id)}`,
+      '?narrative=how-the-colonial-war-ended-the-regime&step=0',
+    ]) {
+      // eslint-disable-next-line no-await-in-loop
+      await open(page, url(query), ready);
+      // eslint-disable-next-line no-await-in-loop
+      await waitFor(page, `${WAYS_BACK.replace('return [...words];', 'return words.size > 0;')}`, `a way back on ${query}`);
+      // eslint-disable-next-line no-await-in-loop
+      for (const word of await page.eval(WAYS_BACK)) seen.add(word);
+    }
+    assert.deepEqual([...seen], [BACK_LABEL], `the ways back say: ${[...seen].join(' / ')}`);
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   }, { device: DESK });
 });

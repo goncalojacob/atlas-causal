@@ -795,8 +795,10 @@ test('no event on the fixtures has parts and a place, so no mark on the map is r
     await open(page, url('?fixtures=1'), READY);
     await settledShards(page);
     const seen = await page.eval(`return {
-      rings: document.querySelectorAll('#map circle.ring').length,
-      marks: document.querySelectorAll('#map circle.mark[data-id]').length,
+      // The picture and not the pane: the key beside it carries a ring of
+      // its own, which is the shape and not a record (M82, A7).
+      rings: document.querySelectorAll('#map > svg.map circle.ring').length,
+      marks: document.querySelectorAll('#map > svg.map circle.mark[data-id]').length,
     };`);
     assert.equal(seen.rings, 0, 'fixture-event-f is the one parent and it is placeless');
     assert.ok(seen.marks > 0, 'the marks are drawn all the same');
