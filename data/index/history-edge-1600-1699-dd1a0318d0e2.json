@@ -3,7 +3,7 @@
   "kind": "edge",
   "records": {
     "bohemian-revolt--siege-of-pilsen--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -12,7 +12,7 @@
       ]
     },
     "bohemian-revolt--thirty-years-war--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
