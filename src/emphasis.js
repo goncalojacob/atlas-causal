@@ -37,6 +37,9 @@ import { categoriesOn } from './categories.js';
 //   selected      the open event, if there is one and the lens keeps it
 //   path          the events at the ends of the walked chain
 //   consequences  the events the selected event leads to directly
+//   chosen        the two ends of the link the reader has open (`?edge=`), or
+//                 empty; a link is not a lens and narrows nothing, and its two
+//                 ends are something the reader is holding all the same
 //   converging    the other branches that fed it, the convergence query's own
 //                 answer, computed exactly as the panel computes it
 //   actor         the events of the actor whose card is open
@@ -139,6 +142,18 @@ function assemble(atlas, state, view) {
     .filter((e) => kept(e.from) && kept(e.to));
   const consequences = new Set(outgoing.flatMap((e) => [e.from, e.to]));
 
+  // **The two ends of the link the reader has open** (M83, B7). `?edge=` is a
+  // record being read, so its ends are something the reader is holding: they
+  // may not be swallowed by a cluster and may not be taken away by a box or a
+  // band, exactly as the selected event's consequences may not. It narrows
+  // nothing — a link is not a lens (M80) — and `keptRegardless` is what keeps
+  // the two in the picture at all; this is what keeps them each a mark of their
+  // own once they are.
+  const chosenEdge = state.edge ? atlas.edges.get(state.edge) : null;
+  const chosen = new Set(chosenEdge && chosenEdge.status === 'active'
+    && kept(chosenEdge.from) && kept(chosenEdge.to)
+    ? [chosenEdge.from, chosenEdge.to] : []);
+
   // The walked path is what the convergence query excludes, and it excludes
   // that only: see the note in CLAUDE.md about why the wider exclusion always
   // returned empty.
@@ -171,6 +186,7 @@ function assemble(atlas, state, view) {
     selected,
     path,
     consequences,
+    chosen,
     converging,
     actor,
     narrative: narrative ? filter(narrative) : null,
@@ -194,7 +210,8 @@ function assemble(atlas, state, view) {
 // another — the map's chain lines, the graph's converging marks.
 export function heldSet(working, { lens = false, reachable = false } = {}) {
   const ids = new Set();
-  for (const set of [working.selected, working.path, working.consequences, working.converging]) {
+  for (const set of [working.selected, working.path, working.consequences,
+    working.chosen ?? new Set(), working.converging]) {
     for (const id of set) ids.add(id);
   }
   if (working.actor) for (const id of working.actor) ids.add(id);

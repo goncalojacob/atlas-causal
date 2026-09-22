@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-tripoli-2011--killing-of-muammar-gaddafi--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Killing of Muammar Gaddafi\", revision 1375974277, § Events"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tripoli (2011)\", revision 1374512796, lead"
+    }
+  ],
+  "from": "battle-of-tripoli-2011",
+  "to": "killing-of-muammar-gaddafi",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The killing's article opens its account of what happened with the fall of the capital: \"After the fall of Tripoli to forces of the opposition NTC in August 2011, Gaddafi and his family escaped the Libyan capital... In fact, Gaddafi had fled in a small convoy to Sirte on the day Tripoli fell\", and it was at Sirte, two months later, that he was caught and killed. The Tripoli article says the same thing from its own end: the battle was the National Transitional Council \"attempting to overthrow Gaddafi and take control of the capital\". `precondition-of` and not `caused`: losing the capital is what put him in the town where he died, and the article argues no more than that. `probable` because both citations are Wikipedia (rule 22).",
+  "dispute": null
+}

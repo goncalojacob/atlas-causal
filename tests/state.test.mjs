@@ -31,10 +31,9 @@ test('parse and format round trip', () => {
     step: 0,
     walk: null,
     bbox: null,
-    // What the graph draws (M48 §3): the default floor and no top-level
-    // switch, neither of which is written to the URL.
+    // What the graph draws (M48 §3): the default floor, which is not written
+    // to the URL. "Top level only" went in M83 (B10).
     degree: DEGREE_DEFAULT,
-    tops: false,
   };
   const search = formatState(state);
   assert.equal(search, '?from=1200&to=1250&view=graph&edge=fixture-event-a--fixture-event-b--caused&selected=fixture-event-t&source=fixture-source-one&place=fixture-place-one&actor=fixture-actor-one&office=fixture-office-one&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&horizon=1240&layers=events');
@@ -166,7 +165,7 @@ test('the store merges patches and notifies', () => {
   assert.deepEqual(seen, [1210, 1210]);
   assert.deepEqual(store.get(), {
     from: null, to: 1220, view: 'map', focus: null, focusAll: false,
-    degree: DEGREE_DEFAULT, tops: false,
+    degree: DEGREE_DEFAULT,
     selected: 'fixture-event-a', source: null, edge: null,
     place: null, actor: null, office: null, chain: [], horizon: null,
     layers: ['land', 'territories', 'events', 'rivers', 'lakes', 'physical', 'mountains', 'cities'],
@@ -819,11 +818,13 @@ test('the graph’s filters travel in the URL, and the default writes nothing', 
   // Zero is the default since M82 (A1) — rest means rest — so a floor the
   // reader has raised is what writes a parameter.
   assert.equal(formatState({ ...defaultState(), degree: 2 }), '?degree=2');
-  assert.equal(formatState({ ...defaultState(), degree: 3, tops: true }), '?degree=3&tops=1');
+  assert.equal(formatState({ ...defaultState(), degree: 3 }), '?degree=3');
   assert.equal(parseState('?degree=0').degree, 0);
   assert.equal(parseState('?degree=3').degree, 3);
-  assert.equal(parseState('?tops=1').tops, true);
-  assert.equal(parseState('?tops=yes').tops, false);
+  // `tops` went in M83 (B10) and a link that still names it is read into
+  // nothing, which is deviation 848's rule.
+  assert.equal('tops' in parseState('?tops=1'), false);
+  assert.equal(formatState(parseState('?tops=1')), '');
   // Garbage falls back to the default field by field, as everything here does.
   for (const bad of ['?degree=-1', '?degree=two', '?degree=1.5', '?degree=']) {
     assert.equal(parseState(bad).degree, DEGREE_DEFAULT, bad);

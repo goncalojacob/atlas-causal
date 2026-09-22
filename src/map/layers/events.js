@@ -273,7 +273,8 @@ export function createEventsLayer(group, projection, {
     render({
       events, window: timeWindow = null, margin = null, selected, pathIds, actorIds = null, narrativeIds = null, reachable = null,
       near = null,
-      alone: drawnAlone, kept, chainEdges, consequenceEdges, eventById, k = 1, view = null, spread = null,
+      alone: drawnAlone, kept, chainEdges, consequenceEdges, chosenEdge = null,
+      eventById, k = 1, view = null, spread = null,
       exactZoom = false,
     }) {
       // Every mark is drawn again on every render, so a mark activated from
@@ -299,6 +300,12 @@ export function createEventsLayer(group, projection, {
       };
       for (const edge of consequenceEdges) line(edge, 'edge consequence');
       for (const edge of chainEdges) line(edge, 'edge chain');
+      // **And the link the reader has chosen** (M83, B7). The map drew the
+      // selected event's consequences and the walked chain and nothing for
+      // `?edge=`, so a reader who picked a link on the graph and switched to
+      // the map had a card about a line the map did not show. Drawn last, so it
+      // is over the other two where they share a pair of ends.
+      if (chosenEdge) line(chosenEdge, 'edge chosen');
 
       // An invisible circle behind every mark, so a click that is merely
       // close still lands. Both carry the same data attribute; the handler

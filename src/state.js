@@ -1,6 +1,6 @@
-// One state object, { from, to, view, focus, focusAll, selected,
-// source, place, actor, chain, horizon, layers, narrative, step, walk, bbox },
-// mirrored to
+// One state object, { from, to, view, focus, focusAll, degree, selected, edge,
+// source, place, actor, office, chain, horizon, layers, narrative, step, walk,
+// bbox }, mirrored to
 // the URL query string so every view is a shareable link. Knows nothing
 // about SVG or data files. The pure parse/format pair is separate from the
 // binding to window so it can be tested in Node.
@@ -53,15 +53,23 @@
 // on itself (lens.js), and `none` is how a reader says no to that while
 // keeping the card open.
 //
-// `degree` and `tops` are what the **graph** draws, and only the graph (M48
-// §3). 103 of the 250 active events have one edge or none and eight carry
-// seven or more, so a picture of all of them is eight nodes a reader can read
-// and two hundred they cannot: `degree` is the least number of active links an
-// event needs to be drawn, and `tops` draws only events with no parent. Both
-// are filters and neither is a deletion — a hidden event is still reachable by
-// walking to it, by searching for it and by focusing on it — and neither
-// applies inside a lens, because a reader who has focused has already said
-// what they want to see.
+// `degree` is what the **graph** draws, and only the graph (M48 §3). 103 of the
+// 250 active events have one edge or none and eight carry seven or more, so a
+// picture of all of them is eight nodes a reader can read and two hundred they
+// cannot: it is the least number of active links an event needs to be drawn. It
+// is a filter and not a deletion — a hidden event is still reachable by walking
+// to it, by searching for it and by focusing on it — and it does not apply
+// inside a lens, because a reader who has focused has already said what they
+// want to see.
+//
+// **`tops` is gone** (M83, B10). It was the other half of that pair — draw only
+// events with no parent — and M65 took the lever by making the resting picture
+// the top level everywhere: `organises` is applied to `shown`, which at rest is
+// the main events, so `tops` differed from it only for an event whose sole
+// parents are retracted or missing, which over the corpus of 22 September is
+// none at all. Inside a lens it was off by rule. A switch, a parameter and a
+// round trip through `formatState` that nothing a reader could see depended on.
+// `?tops=1` in an old link is read into nothing, which is deviation 848's rule.
 //
 // In the URL and not in a preference, for the reason `view` is: a link is
 // meant to open on the picture the person who sent it was looking at. A link
@@ -195,7 +203,7 @@ export const DEGREE_DEFAULT = 0;
 export function defaultState() {
   return {
     from: null, to: null, view: 'map', focus: null, focusAll: false,
-    degree: DEGREE_DEFAULT, tops: false,
+    degree: DEGREE_DEFAULT,
     selected: null, source: null, place: null, edge: null,
     actor: null, office: null, chain: [], horizon: null, layers: [...DEFAULT_LAYERS], narrative: null, step: 0,
     walk: null,
@@ -349,7 +357,6 @@ export function parseState(search, defaults = defaultState()) {
   // Digits and nothing else: `Number('')` is 0, and an empty parameter is a
   // link with a typo in it and not a reader asking for every event.
   if (/^\d+$/.test(params.get('degree') ?? '')) state.degree = Number(params.get('degree'));
-  state.tops = params.get('tops') === '1';
   if (params.has('bbox')) state.bbox = parseBbox(params.get('bbox'));
   if (params.has('view') && VIEWS.includes(params.get('view'))) state.view = params.get('view');
   if (params.has('layers')) {
@@ -392,7 +399,6 @@ export function formatState(state, search = '') {
   // The default writes nothing, so the link a reader copies says what they
   // changed and not what they left alone.
   if (Number.isInteger(state.degree) && state.degree !== DEGREE_DEFAULT) params.set('degree', String(state.degree));
-  if (state.tops) params.set('tops', '1');
   if (state.edge) params.set('edge', state.edge);
   if (state.selected) params.set('selected', state.selected);
   if (state.source) params.set('source', state.source);

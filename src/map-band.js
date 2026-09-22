@@ -47,7 +47,7 @@
 import { svg, reuse, html } from './util/dom.js';
 import { createTimelineScale } from './timeline-scale.js';
 import { resolveWindow, centuryCounts } from './util/window.js';
-import { renderKey } from './render-key.js';
+import { renderKey, shardsArrived } from './render-key.js';
 import {
   HANDLE_WIDTH, profileEvents, bandProfile, bandShade, bandHandles, bindWindowGestures,
 } from './window-band.js';
@@ -179,11 +179,19 @@ export function createMapBand(container, { atlas, state } = {}) {
   }
 
   // The same discipline the three views follow: the whole state plus what the
-  // drawing holds outside it, which here is only its own width. No attribute
-  // shard is read — the strip carries no name — so the shard count that every
-  // view's key carries is not in this one.
+  // drawing holds outside it — its own width, and the shard count every view's
+  // key carries.
+  //
+  // **The shard count is in it since M83 (B2).** It was left out on the ground
+  // that the strip carries no name, which is true and is not the question: the
+  // profile is the lens's own half (`profileEvents`), and what a lens keeps
+  // changes after the state has stopped moving — a narrative's steps are an
+  // attribute and arrive with their century, and until they do the walk is
+  // empty and the profile is the resting picture's. With nothing in the state
+  // moved, the key equalled what was drawn and the band kept the wrong profile
+  // until the reader's next drag.
   const render = (s, { force = false } = {}) => {
-    const key = renderKey(s, wrap.clientWidth || 0);
+    const key = renderKey(s, wrap.clientWidth || 0, shardsArrived(atlas));
     if (!force && key === drawnFor) return;
     drawnFor = key;
     draw(s);

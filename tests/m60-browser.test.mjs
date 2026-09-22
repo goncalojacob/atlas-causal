@@ -199,6 +199,7 @@ test('the count of what the map is looking at is in the masthead, on every view'
         hidden: note.hidden,
         text: (note.querySelector('.window-count')?.textContent ?? '').trim(),
         pin: Boolean(note.querySelector('.pin')),
+        pinShown: Boolean(note.querySelector('.pin') && !note.querySelector('.pin').hidden),
       };`;
     await waitFor(page, `const note = document.querySelector('#window-control .window-view');
       return !note.hidden && /in view/.test(note.textContent);`, 'the count in the masthead');
@@ -218,7 +219,15 @@ test('the count of what the map is looking at is in the masthead, on every view'
 
     await page.eval('document.querySelector(\'#window-control .pin\').click(); return true;');
     await waitFor(page, 'return !/bbox=/.test(location.search);', 'the world back');
-    assert.equal((await page.eval(READ)).hidden, true, 'and it says nothing about a map looking at everything');
+    // **The sentence stays and the pin goes** (M83, B3). It used to go with the
+    // box, so at first paint nobody was told the picture is a fraction of the
+    // corpus — which is the one thing that line was written to say. What needs
+    // a box is *show the world*, which has nothing to give back when the map is
+    // already looking at all of it.
+    const world = await page.eval(READ);
+    assert.equal(world.hidden, false, 'the count still says what the picture is');
+    assert.match(world.text, /in view$/);
+    assert.equal(world.pinShown, false, 'and there is nothing left to press');
   });
 });
 

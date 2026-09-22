@@ -857,58 +857,101 @@ function centuriesOf(topology, events) {
 // The order of the files is the order they are named in the manifest: the
 // centuries in year order, then the two that answer no year — because those
 // two are fetched with the first century whatever the window is.
+// **How large one attribute shard may be before the build cuts it up** (M83,
+// A13). A century is the filing unit and a corpus is not spread evenly over the
+// centuries: the 20th holds most of this one, as it holds most of every corpus
+// the atlas is likely to have, and its shard is the file a reader on the window
+// the atlas opens on waits for. Measured on the corpus of 22 September:
+// 1900–1999 is 268 KB of 863 KB of attribute data — 31 % of it in one file,
+// against 143 KB for the next largest — and the review of that day projects it
+// at about 1 MB by three thousand events, which Lane B is heading for.
+//
+// 512 KB, and it is a measurement and not a preference: twice the largest shard
+// the corpus has today, so nothing splits now and the index is the index it
+// was; half the size the review projects, so 1900–1999 splits at roughly twice
+// the present corpus and well before it is a megabyte. A shard is fetched
+// behind the picture and never waited for (data.js), so what the cap is
+// protecting is the wire and not the first frame, which is why it is generous
+// beside the core's own 211 KB.
+export const SHARD_CAP = 512 * 1024;
+
+// And what a century that passes it becomes: its ten decades. One level and no
+// recursion — a decade over the cap is a decade with a thousand events in it,
+// and what that asks for is a smaller unit chosen deliberately rather than a
+// build that keeps halving until it stops.
+const DECADE = 10;
+const decadesOf = (period) => Array.from(
+  { length: PERIOD / DECADE },
+  (unused, i) => ({ from: period.from + i * DECADE, to: period.from + (i + 1) * DECADE - 1 }),
+);
+
 export function buildAttributeShards(topology) {
   const events = new Map((topology.events ?? []).map((e) => [e.id, e]));
   const cites = citesCountByRecord(topology.sources);
   const citesCount = (kind, id) => cites.get(`${kind}:${id}`) ?? 0;
-  const centuries = centuriesOf(topology, events);
 
-  const groups = new Map();
-  const fileIn = (kind, record, period) => {
-    const key = attributeShardKey(period);
-    let group = groups.get(key);
-    if (!group) {
-      group = {
-        key,
-        from: typeof period === 'object' && period !== null ? period.from : null,
-        to: typeof period === 'object' && period !== null ? period.to : null,
-        records: new Map(SPINE_KINDS.map((k) => [k, []])),
-      };
-      groups.set(key, group);
+  // The shards a given list of periods gives. Called twice at most: once over
+  // the centuries, and again over the centuries with any that came out over the
+  // cap replaced by their decades. Two passes and not an estimate, because the
+  // cap is about the file and the file is what the encoder makes of it.
+  const shardsOver = (periods) => {
+    const groups = new Map();
+    const fileIn = (kind, record, period) => {
+      const key = attributeShardKey(period);
+      let group = groups.get(key);
+      if (!group) {
+        group = {
+          key,
+          from: typeof period === 'object' && period !== null ? period.from : null,
+          to: typeof period === 'object' && period !== null ? period.to : null,
+          records: new Map(SPINE_KINDS.map((k) => [k, []])),
+        };
+        groups.set(key, group);
+      }
+      group.records.get(kind).push(record);
+    };
+    for (const kind of SPINE_KINDS) {
+      for (const record of topology[`${kind}s`] ?? []) {
+        const span = attributeSpan(kind, record, events);
+        const touched = periodsTouched(span, periods);
+        // A place, a source and a record whose year will not parse have no span
+        // and are in the one shard `attributePeriod` names, as they always were.
+        if (touched.length === 0) fileIn(kind, record, attributePeriod(kind, record, events));
+        else for (const period of touched) fileIn(kind, record, period);
+      }
     }
-    group.records.get(kind).push(record);
+
+    const ordered = [...groups.values()].sort((a, b) => {
+      if (a.from === null || b.from === null) {
+        return (a.from === null ? 1 : 0) - (b.from === null ? 1 : 0) || (a.key < b.key ? -1 : 1);
+      }
+      return a.from - b.from;
+    });
+    return ordered.map((group) => ({
+      key: group.key,
+      from: group.from,
+      to: group.to,
+      file: encodeSpineFile({
+        schema: INDEX_GENERATION,
+        kinds: SPINE_KINDS,
+        listOf: (kind) => group.records.get(kind) ?? [],
+        vocabBase: vocabBaseOf(topology),
+        read: slotReader(citesCount),
+        table: ATTRIBUTE_COLUMNS,
+        // The merges are on every record whatever its century and are the
+        // core's: `resolve()` walks them before any shard has landed.
+        merges: false,
+      }),
+    }));
   };
-  for (const kind of SPINE_KINDS) {
-    for (const record of topology[`${kind}s`] ?? []) {
-      const span = attributeSpan(kind, record, events);
-      const touched = periodsTouched(span, centuries);
-      // A place, a source and a record whose year will not parse have no span
-      // and are in the one shard `attributePeriod` names, as they always were.
-      if (touched.length === 0) fileIn(kind, record, attributePeriod(kind, record, events));
-      else for (const period of touched) fileIn(kind, record, period);
-    }
-  }
 
-  const ordered = [...groups.values()].sort((a, b) => {
-    if (a.from === null || b.from === null) {
-      return (a.from === null ? 1 : 0) - (b.from === null ? 1 : 0) || (a.key < b.key ? -1 : 1);
-    }
-    return a.from - b.from;
-  });
-  return ordered.map((group) => ({
-    key: group.key,
-    from: group.from,
-    to: group.to,
-    file: encodeSpineFile({
-      schema: INDEX_GENERATION,
-      kinds: SPINE_KINDS,
-      listOf: (kind) => group.records.get(kind) ?? [],
-      vocabBase: vocabBaseOf(topology),
-      read: slotReader(citesCount),
-      table: ATTRIBUTE_COLUMNS,
-      // The merges are on every record whatever its century and are the
-      // core's: `resolve()` walks them before any shard has landed.
-      merges: false,
-    }),
-  }));
+  const centuries = centuriesOf(topology, events);
+  const shards = shardsOver(centuries);
+  // Which of them the encoder made too large. The bytes of the file as it will
+  // be written, so the cap is about the thing it is a cap on.
+  const dense = new Set(shards
+    .filter((shard) => shard.from !== null && JSON.stringify(shard.file).length > SHARD_CAP)
+    .map((shard) => shard.from));
+  if (dense.size === 0) return shards;
+  return shardsOver(centuries.flatMap((period) => (dense.has(period.from) ? decadesOf(period) : [period])));
 }

@@ -126,7 +126,10 @@ test('the packing reads as lanes, unlabelled', () => {
   const events = [event('a', { start: 1950 }), event('b', { start: 1950 }), event('c', { start: 1990 })];
   const lanes = rowLanes(events, scale, 1000);
   assert.equal(lanes.length, 2);
-  assert.deepEqual(lanes.map((l) => l.label), ['', '']);
+  // A lane is an id and its members since M83 (B11): the `label` and `other`
+  // fields went with the label branch and the 120 px gutter that was reserved
+  // for a name M77 had already taken away.
+  assert.deepEqual(lanes.map((l) => l.label), [undefined, undefined]);
   assert.deepEqual(lanes.map((l) => l.id), ['row-0', 'row-1']);
   const all = lanes.flatMap((l) => [...l.members]).sort();
   assert.deepEqual(all, ['a', 'b', 'c']);

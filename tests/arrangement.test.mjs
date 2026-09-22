@@ -239,18 +239,17 @@ test('the degree floor draws what organises and leaves the rest out', () => {
   assert.deepEqual(drawn({ degree: 3 }), ['hub']);
 });
 
-test('top level only leaves out an event that is part of another', () => {
-  assert.deepEqual(drawn({ degree: 0, tops: true }), ['hub', 'leaf', 'spoke-one', 'spoke-three', 'spoke-two']);
-});
+// "Top level only" was the second filter and went in M83 (B10): the resting
+// picture has been the top level everywhere since M65, so it removed nothing a
+// reader could see — 0 events over the corpus of 22 September, measured.
 
 test('a filter never takes away what the reader is holding', () => {
   // Walking to a hidden event brings it into the picture: that is the whole
   // difference between a filter and a deletion.
   assert.deepEqual(drawn({ degree: 3 }, new Set(['leaf'])), ['hub', 'leaf']);
-  assert.deepEqual(drawn({ degree: 0, tops: true }, new Set(['part'])).includes('part'), true);
 });
 
-test('neither filter applies inside a lens', () => {
+test('the filter does not apply inside a lens', () => {
   // `shown` is what the view draws at all, handed in by the graph from
   // emphasis.js. With one, the reader has already said what they want.
   const lensed = arrangementOf(LINKED_ATLAS, state({ degree: 3, focus: 'actor:beta' }),
@@ -258,13 +257,12 @@ test('neither filter applies inside a lens', () => {
   assert.deepEqual(lensed.events.map((e) => e.id).sort(), ['leaf', 'part']);
 });
 
-test('the key notices the filters, and only where they are applied', () => {
+test('the key notices the filter, and only where it is applied', () => {
   const at = (patch) => arrangementOf(LINKED_ATLAS, state(patch), null).key;
   assert.notEqual(at({ degree: 2 }), at({ degree: 3 }), 'two floors are two pictures');
-  assert.notEqual(at({ degree: 2 }), at({ degree: 2, tops: true }));
-  // Inside a lens they are off, so two states that differ only in them draw
-  // the same picture and must not be laid out twice.
+  // Inside a lens it is off, so two states that differ only in it draw the
+  // same picture and must not be laid out twice.
   const lensKey = (patch) => arrangementOf(LINKED_ATLAS, state({ focus: 'actor:beta', ...patch }),
     null, new Set(['leaf', 'part'])).key;
-  assert.equal(lensKey({ degree: 2 }), lensKey({ degree: 3, tops: true }));
+  assert.equal(lensKey({ degree: 2 }), lensKey({ degree: 3 }));
 });

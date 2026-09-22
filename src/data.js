@@ -1163,9 +1163,19 @@ export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }
       // `shardsOfRecord` is all of them, and it is what says whether a record
       // has its attributes in hand — a bar drawn in the 1800s out of the 1800s
       // shard is named, whatever century its event began in.
-      const home = attributeShardKey(attributePeriod(kind, record, eventsById));
+      // **The first of the shards its span touches**, which is the shard the
+      // record begins in whatever the filing unit is (M83, A13). It was
+      // `attributePeriod` — the record's own century — and that is a key the
+      // index may no longer have: a century the build found too large for one
+      // file is filed as its ten decades, so `1900-1999` names nothing and a
+      // card would wait on a file that does not exist. The periods come from
+      // the manifest at both ends, so the list is the list the build filed
+      // against, and the earliest of them is the home.
       const touched = periodsTouched(attributeSpan(kind, record, eventsById), centuries);
-      const keys = touched.length === 0 ? [home] : touched.map((period) => attributeShardKey(period));
+      const keys = touched.length === 0
+        ? [attributeShardKey(attributePeriod(kind, record, eventsById))]
+        : touched.map((period) => attributeShardKey(period));
+      const home = keys[0];
       shardOfRecord.set(key, home);
       shardsOfRecord.set(key, keys);
       if (!shardOfId.has(record.id)) shardOfId.set(record.id, home);
@@ -1440,16 +1450,25 @@ export async function loadAtlas({
   dataRoot = 'data/', landFile = null, fetchJson = defaultFetchJson,
 } = {}) {
   const manifest = assertGeneration(await fetchJson(`${dataRoot}index/manifest.json`, { cache: 'no-store' }));
-  const [core, sourcesIndex] = await Promise.all([
+  // **One round trip and not four** (M83, A13). The manifest has to come first,
+  // because it is what names the other files; nothing after it depends on
+  // anything but it. It was four dependent trips all the same — the core and
+  // the sources together, then the coastlines, then the palette — which on
+  // GitHub Pages at ~200 ms a hop is three quarters of a second before the
+  // first mark, spent waiting rather than transferring. They are asked for
+  // together now, so the wire carries them at once and the page waits for the
+  // slowest instead of the sum.
+  //
+  // The palette is tiny — one number per actor — and the map wants it on the
+  // first frame it draws territories in, so it comes with the core rather than
+  // with the shard whose outlines it colours.
+  const landPath = landFile === false ? null : landFile ?? (manifest.land?.[0] ? `${dataRoot}${manifest.land[0].file}` : null);
+  const [core, sourcesIndex, land, palette] = await Promise.all([
     fetchJson(`${dataRoot}${manifest.files.core}`),
     fetchJson(`${dataRoot}${manifest.files.sources}`),
+    landPath ? fetchJson(landPath) : null,
+    manifest.palette ? fetchJson(`${dataRoot}${manifest.palette}`) : null,
   ]);
-  const landPath = landFile === false ? null : landFile ?? (manifest.land?.[0] ? `${dataRoot}${manifest.land[0].file}` : null);
-  const land = landPath ? await fetchJson(landPath) : null;
-  // The palette is tiny — one number per actor — and the map wants it on the
-  // first frame it draws territories in, so it comes with the core rather
-  // than with the shard whose outlines it colours.
-  const palette = manifest.palette ? await fetchJson(`${dataRoot}${manifest.palette}`) : null;
   // The box of each region, for the events with no place: a placeless event
   // answers "am I in view" with its region, so the boxes have to be in hand
   // before the first frame. Until I1 that meant fetching 221 KB of polygons

@@ -74,7 +74,16 @@ const ROW_HEIGHT = 22;
 // hairline that would technically not overlap: two bars touching read as one
 // long bar.
 const ROW_GAP = 4;
-const LABEL_WIDTH = 120;
+// The gutter the scale starts at on the left. It was 120 px, the room a lane's
+// name needed — and M77 took the names away: every lane is `row-i` with no
+// label, the label branch below could never be taken, and the `laneLabels`
+// layer was always empty, while the scale still began at 120, the gestures
+// still treated x < 120 as *not the scale*, and the tick count was still
+// computed on `width − 120`. On a 390 px phone that was 31 % of the drawing
+// spent on nothing, at a time when the right gutter had been cut to 7 % for
+// exactly this reason. What is left is the room the first bar's ring needs so
+// it is not drawn half off the edge (M83, B11).
+const LABEL_WIDTH = 8;
 // And the gutter the scale stops short of on the right, where the titles are
 // written. It was 12 px — enough to keep the last year's bar off the edge —
 // and since M77 a bar carries its name beside it, so the last century's
@@ -249,7 +258,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   // <text> would swap one for the other on every render and keep nothing.
   const layers = {};
   for (const name of [
-    'lanes', 'laneLabels', 'bands', 'bandLabels', 'ticks', 'tickLabels', 'band', 'strips',
+    'lanes', 'bands', 'bandLabels', 'ticks', 'tickLabels', 'band', 'strips',
     'bars', 'rings', 'barLabels', 'glyphs', 'held', 'heldRings', 'heldGlyphs', 'heldLabels', 'handles', 'handleLabels',
   ]) {
     layers[name] = svg('g', { class: `layer layer-${name}` });
@@ -281,9 +290,9 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   // same ones — a band on the map that answered a wheel differently from this
   // one would be the second band this milestone exists to prevent.
   //
-  // Two arguments are the timeline's own: the lane labels are not part of the
-  // scale, and a press on a bar or a stack is not a drag but the way a record
-  // is opened.
+  // One argument is the timeline's own: the left gutter, which since M83 (B11)
+  // is the room a ring needs and no longer the room a lane's name needed. A
+  // press on a bar or a stack is not a drag but the way a record is opened.
   const gestures = bindWindowGestures(root, {
     atlas,
     state,
@@ -604,7 +613,13 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // click, while `panel/horizon.js` said it was lit on all three views
     // (health review of 6 September, R11) — invisible on a 135-year corpus,
     // and wrong at 1415→.
-    const held = heldSet(working, { reachable: true });
+    // **And `{ lens: true }`, since M83 (B4).** Without it the lens's own
+    // children were held by nothing: a reader who opened the Thirty Years' War
+    // while the atlas was on its busiest century got one faded bar for the war
+    // and a row of two-pixel ticks for its parts. The promise M65/M79 make is
+    // that opening an umbrella narrows all three views to it and its children,
+    // and the graph was the only one keeping it.
+    const held = heldSet(working, { lens: true, reachable: true });
     const shown = eventsInView(inLens, s.bbox, atlas.places, { keep: held, regions: atlas.regionBoxes });
     // The margin's two halves. What the reader is holding is a bar wherever
     // it falls, as it is exempt from the box: a walk whose next step was a
@@ -664,14 +679,10 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     height = Math.max(Math.round(AXIS_HEIGHT + rows * laneHeight), paneHeight);
     resize();
 
-    lanes.forEach((lane, i) => {
+    lanes.forEach((row, i) => {
       const y = AXIS_HEIGHT + i * laneHeight;
       const tall = i === rows - 1 ? Math.max(0, height - y) : laneHeight;
       into.lanes.take('rect', { x: 0, y, width, height: tall, class: `lane ${i % 2 ? 'odd' : 'even'}` });
-      if (!lane.label) return;
-      into.laneLabels.take('text', {
-        x: 10, y: y + laneHeight / 2, class: `lane-label ${lane.other ? 'other' : ''}`.trim(), 'dominant-baseline': 'middle',
-      }, { text: lane.label.length > 16 ? `${lane.label.slice(0, 15).trimEnd()}…` : lane.label });
     });
 
     // Large events, under everything: a band the whole height of the drawing
