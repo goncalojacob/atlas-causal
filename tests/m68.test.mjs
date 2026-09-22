@@ -25,6 +25,7 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 
 import { layersFrom } from '../src/category-control.js';
+import { legendRows } from '../src/layer-control.js';
 import {
   categoriesChecked, categoriesOn, eventsOn, eventsTokens,
 } from '../src/categories.js';
@@ -87,31 +88,45 @@ const ALL = ['war', 'treaty', 'disaster'];
 // switch — the map reads nothing by it, the state knows nothing of it — so the
 // count of modules that write one is the count of owners.
 
-test('the category switches are built in exactly one module, and the legend keeps no copy', async () => {
-  const modules = ['src/layer-control.js', 'src/category-control.js', 'src/main.js', 'src/window-control.js'];
-  const sources = new Map(await Promise.all(
-    modules.map(async (file) => [file, await read(file)]),
-  ));
-  const builders = modules.filter((file) => sources.get(file).includes('data-category'));
-  assert.deepEqual(builders, ['src/category-control.js'],
-    `the switches are built in ${builders.length} module(s); they must be built in one`);
+// **Held by the shape of the code and not by a grep** (M85, B14). This asked
+// which files contained the string `data-category` and whether the legend's
+// source mentioned `glyphId` or `eventsTokens` — brittle both ways: a comment
+// naming one of them failed the test, and a rename passed it while breaking
+// the rule. What the rule actually says is that the legend draws what it is
+// handed, and `legendRows` is that: the two fixed rows and whichever of the
+// manifest's base layers `LAYERS` knows. There is no argument by which a
+// category could become a row.
+//
+// That no category switch is *in the legend's DOM* is asserted where a DOM
+// exists, in `tests/m68-browser.test.mjs`.
 
-  const legend = sources.get('src/layer-control.js');
-  assert.ok(!legend.includes('events-by-category'),
-    'the legend no longer carries the group of category rows');
-  assert.ok(!legend.includes('glyphId'),
-    'nor a symbol beside a category, which is the row it no longer draws');
+test('the legend draws what it is handed, and a category can never be one of them', () => {
+  // A manifest's base layers, one of them unknown to `LAYERS` and one of them
+  // the coast, which is drawn always and has no switch (deviation 523).
+  const { rows, base } = legendRows([{ id: 'relief' }, { id: 'coast' }, { id: 'invented' }]);
+  for (const id of [...rows.map((r) => r.id), ...base]) {
+    assert.ok(LAYERS.includes(id), `${id} is a layer the state knows`);
+    assert.ok(!id.startsWith('events:'), `${id} is a category and the legend drew it`);
+  }
+  assert.ok(rows.some((r) => r.id === 'events'),
+    'the bare events row stays: switching the layer off is switching a layer off');
+  assert.ok(!base.includes('coast'), 'the coast has no switch');
+  assert.ok(!base.includes('invented'), 'and a layer the state does not know has none either');
+  // And the rows do not depend on the categories at all: it takes no manifest.
+  assert.deepEqual(legendRows([]).rows, rows);
 });
 
-test('and the list a switch writes is assembled in that one module too', async () => {
-  const legend = await read('src/layer-control.js');
+test('and the list a switch writes is assembled in that one module too', () => {
   // The legend still writes `?layers=` — the territories and the base map are
   // its own — so the question is not whether it writes, but whether it decides
-  // what the events half says. It asks.
-  assert.match(legend, /from '\.\/category-control\.js'/,
-    'the legend asks the module that owns the switches for the whole list');
-  assert.ok(!legend.includes('eventsTokens'),
-    'and does not assemble the events half itself');
+  // what the events half says. `layersFrom` is the one assembly, and the two
+  // tests below hold it: a layer switched off leaves the categories exactly as
+  // they were, and a category switched off leaves the layers where they are.
+  // Neither control can express the other's half except through it.
+  assert.equal(typeof layersFrom, 'function');
+  const on = new Set(LAYERS);
+  assert.deepEqual(layersFrom({ on, categories: ALL, all: ALL }), [...LAYERS],
+    'every switch on and every category on is the whole list, in LAYERS order');
 });
 
 test('the control is in the masthead, on every view, and its group is empty in the file', async () => {

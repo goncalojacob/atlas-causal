@@ -16,13 +16,15 @@ import path from 'node:path';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
 
-import { defaultState, DEGREE_CHOICES, DEGREE_DEFAULT } from '../src/state.js';
+import { defaultState, DEGREE_CHOICES, DEGREE_DEFAULT, LAYERS } from '../src/state.js';
 import { resolveWindow, centuryOf, WHEEL_FACTOR, zoomWindow } from '../src/util/window.js';
 import { extent } from '../src/util/dates.js';
 import { workingSet } from '../src/emphasis.js';
 import { convergence } from '../src/graph.js';
 import { stackTitle, stackBadge } from '../src/cluster.js';
 import { degreeLabel } from '../src/graph-filters.js';
+import { legendRows } from '../src/layer-control.js';
+import { WINDOW_CONTROL_HTML } from '../src/window-control.js';
 import { explainedLinks, linksSentence, introHtml } from '../src/intro.js';
 import { esc } from '../src/util/esc.js';
 import { bordersNote } from '../src/map/layers/presences.js';
@@ -316,4 +318,33 @@ test('the wheel factor is one export and three readers', async () => {
   const wider = zoomWindow({ from: 1900, to: 2000 }, 1950, 100);
   assert.ok(narrower.to - narrower.from < 100, 'a wheel up narrows the band');
   assert.ok(wider.to - wider.from > 100, 'and a wheel down widens it');
+});
+
+// ─── 8. rules held by shape, not by grep (B14) ─────────────────────────────
+//
+// Three tests held conventions by regex over file text: the legend's source
+// must not contain `glyphId` or `eventsTokens` (m68), the window control's must
+// not contain `<input` (m76), and the two band drawings' must not contain
+// `addEventListener('wheel'` (m64). Brittle both ways — a comment naming one of
+// them failed the test, a rename passed it while breaking the rule — and the
+// third never reached the copy that mattered, the graph's own wheel.
+//
+// Each is now the module boundary it stood for, and the tests themselves moved
+// with the rules; what is here is that the boundaries exist and are what the
+// other suites can ask.
+
+test('the legend is handed its rows, so a category cannot be one', () => {
+  const { rows, base } = legendRows([{ id: 'relief' }, { id: 'coast' }]);
+  for (const id of [...rows.map((row) => row.id), ...base]) {
+    assert.ok(LAYERS.includes(id), `${id} is a layer the state knows`);
+  }
+  // It takes the base layers and nothing else: no manifest, no categories, no
+  // way to learn of one.
+  assert.deepEqual(legendRows().rows, rows);
+});
+
+test('the window control renders a constant a test can read', () => {
+  assert.equal(typeof WINDOW_CONTROL_HTML, 'string');
+  assert.ok(!/<input/.test(WINDOW_CONTROL_HTML), 'no field to type a year into');
+  assert.match(WINDOW_CONTROL_HTML, /window-count/, 'and the count is still there');
 });

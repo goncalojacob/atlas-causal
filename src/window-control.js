@@ -98,12 +98,16 @@ export function viewCountText({ shown, whole, resting }) {
     : `${shown} of ${whole} ${plural(whole)} in view`;
 }
 
-export function createWindowControl(group, { atlas, state }) {
-  if (!group) return { render: () => {} };
-
-  // Written here because nothing in it comes from `data/`: one sentence of the
-  // interface's own words and one number this file computes.
-  group.innerHTML = `
+// What the control draws, whole, as a constant (M85, B14). M76 took the two
+// year fields out of the masthead, and the rule "nothing here types a year"
+// was held by a test grepping this file for `<input` — which a comment would
+// fail and a rename would pass. It is held by this instead: the markup is a
+// value, so a test reads what the control renders rather than the text of the
+// module that renders it.
+//
+// Written here because nothing in it comes from `data/`: one sentence of the
+// interface's own words and one number this file computes.
+export const WINDOW_CONTROL_HTML = `
     <p class="window-view" hidden>
       <span class="window-count" title="${MAIN_EVENT_HINT}"></span>
       <button type="button" class="pin" title="Draw every event again, wherever the map is looking">show the world</button>
@@ -112,6 +116,11 @@ export function createWindowControl(group, { atlas, state }) {
       <span class="window-unplaced" title="An event with no place record has no point on the map. It is drawn on the timeline and in the graph, and it is in every count here."></span>
       <span class="window-read" title="How many of the events in view a person has read and signed. Nothing here changes what is drawn: a draft is drawn exactly as a signed record is."></span>
     </p>`;
+
+export function createWindowControl(group, { atlas, state }) {
+  if (!group) return { render: () => {} };
+
+  group.innerHTML = WINDOW_CONTROL_HTML;
 
   const view = group.querySelector('.window-view');
   const count = group.querySelector('.window-count');
