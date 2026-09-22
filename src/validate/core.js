@@ -10,6 +10,7 @@ import {
   buildUniverse, checkRules, normalizeRole,
 } from './rules.js';
 import { KINDS } from '../kinds.js';
+import { parentsOf } from '../parts.js';
 import { EDGE_TYPE_IDS, EVENT_SCOPES, OFFICE_CATEGORY_IDS, RELATION_TYPE_IDS, edgeId } from '../vocab.js';
 // The column table, the encoder and the decoder, in one leaf module because
 // `data.js` reads the same table backwards and cannot import this file.
@@ -176,19 +177,29 @@ export function eventWeights(events, edges) {
 // a cycle is rule 24's error and never reaches a committed index; this is
 // what stops the walk from being an infinite loop while the validator is
 // still deciding to reject it (amendment A11).
+//
+// Since M79 the walk up is over **every** parent and not the first, and an
+// ancestor reachable by two paths is still credited once: `seen` is per child,
+// so an event inside both a regime and a movement that are themselves inside
+// one century adds its weight to that century once.
 export function subtreeWeights(events, weights) {
   const parents = new Map();
   for (const event of events) {
-    if (typeof event.parent === 'string' && event.parent !== event.id) parents.set(event.id, event.parent);
+    const ids = parentsOf(event).filter((id) => id !== event.id);
+    if (ids.length > 0) parents.set(event.id, ids);
   }
   const sums = new Map(events.map((e) => [e.id, weights.get(e.id) ?? 0]));
   if (parents.size === 0) return sums;
   for (const [child, first] of parents) {
     const own = weights.get(child) ?? 0;
     const seen = new Set([child]);
-    for (let at = first; at !== undefined && sums.has(at) && !seen.has(at); at = parents.get(at)) {
+    const climbing = [...first];
+    while (climbing.length > 0) {
+      const at = climbing.pop();
+      if (seen.has(at) || !sums.has(at)) continue;
       seen.add(at);
       sums.set(at, sums.get(at) + own);
+      for (const above of parents.get(at) ?? []) climbing.push(above);
     }
   }
   return sums;
@@ -363,7 +374,11 @@ function versionOf(record) {
 // parses whole (health review of 6 September, R5).
 function partsOf(record) {
   const out = {};
-  if (typeof record.parent === 'string') out.parent = record.parent;
+  // The record's own spelling, carried across as it stands: `parentsOf()` is
+  // what reads it and it reads all three shapes, so normalising a string to a
+  // list of one here would rewrite every committed index row to say what the
+  // helper already says (M79).
+  if (typeof record.parent === 'string' || Array.isArray(record.parent)) out.parent = record.parent;
   if (typeof record.scope === 'string') out.scope = record.scope;
   if (typeof record.category === 'string') out.category = record.category;
   return out;
