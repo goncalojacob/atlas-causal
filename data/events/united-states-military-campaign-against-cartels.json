@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "united-states-military-campaign-against-cartels",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q136090852",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "2025 U.S. military campaign against cartels"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q136090852"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"United States military buildup in the Caribbean during Operation Southern Spear\", revision 1375987627"
+    }
+  ],
+  "title": "United States military campaign against cartels",
+  "summary": "The English Wikipedia article \"United States military buildup in the Caribbean during Operation Southern Spear\", at revision 1375987627, opens: \"In late August 2025, the United States began a naval buildup in the southern Caribbean with the stated goal of combating drug trafficking. US president Donald Trump directed the United States Armed Forces to begin using military force against certain Latin American drug cartels, characterizing the smugglers as narcoterrorists. The first major increase came with the deployment of the USS Iwo Jima and its amphibious ready group in August.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q136090852, imported by tools/import/wikidata.mjs. The item's own description reads \"2025 military campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2025,
+    "end": null,
+    "date": "2025-08-08"
+  },
+  "place": "caribbean-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": [
+    "colombian-conflict",
+    "colombian-conflict-2018-present"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "palace-of-justice-siege",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q829836",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Palace of Justice siege",
+    "pt": "Cerco ao Palácio de Justiça"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q829836"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Palace of Justice siege\", revision 1374219418"
+    }
+  ],
+  "title": "Palace of Justice Siege",
+  "summary": "The English Wikipedia article \"Palace of Justice siege\", at revision 1374219418, opens: \"The Palace of Justice siege was an attack carried out in Bogotá, Colombia, on November 6–7, 1985, in which a guerrilla commando of the 19th of April Movement (M-19) took over the Palace of Justice, housing the Supreme Court and the Council of State. The guerrillas held roughly 350 people hostage, among them Supreme Court justices, councilors of state, judicial staff, employees, and visitors. The building stood on the north side of the Plaza de Bolívar, facing the National Capitol, seat of Congress, and one block from the Casa de Nariño, the president's residence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q829836, imported by tools/import/wikidata.mjs. The item's own description reads \"1985 attack on the Supreme Court of Colombia by M-19 guerillas\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1985,
+    "end": 1985,
+    "date": "1985-11-06"
+  },
+  "place": "bogota",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": [
+    "colombian-conflict",
+    "colombian-conflict-between-1974-1990"
+  ]
+}

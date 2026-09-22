@@ -961,7 +961,43 @@
     "Q697053",
     "Q247395",
     "Q280468",
-    "Q259526"
+    "Q259526",
+    "Q4355011",
+    "Q829836",
+    "Q124308988",
+    "Q60385266",
+    "Q3403831",
+    "Q4595671",
+    "Q123149461",
+    "Q139505717",
+    "Q105883497",
+    "Q779179",
+    "Q5710644",
+    "Q5710617",
+    "Q7097182",
+    "Q2308768",
+    "Q14186580",
+    "Q30337973",
+    "Q47505031",
+    "Q66474138",
+    "Q60668574",
+    "Q136090852",
+    "Q76763052",
+    "Q118152947",
+    "Q514908",
+    "Q1441919",
+    "Q2361249",
+    "Q1247",
+    "Q951897",
+    "Q272885",
+    "Q2841",
+    "Q130242",
+    "Q1642041",
+    "Q230597",
+    "Q638260",
+    "Q2647973",
+    "Q232564",
+    "Q1948210"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -4276,6 +4312,63 @@
       "category": "disaster",
       "label": "aviation accident",
       "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed. An aviation accident is a disaster and friendly fire is war, so an item carrying both — the Gazelle incident of 6 June 1982 — takes no category at all rather than one of the two picked for it."
+    },
+    "Q188055": {
+      "kind": "event",
+      "label": "siege",
+      "category": "war",
+      "note": "Added in M42b batch 3 from the class each item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q105370834": {
+      "kind": "event",
+      "label": "war phase",
+      "category": "war",
+      "note": "Added in M42b batch 3 from the class each item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q20893947": {
+      "kind": "event",
+      "label": "suicide car bombing",
+      "note": "Added in M42b batch 3 from the class each item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q1456892": {
+      "kind": "event",
+      "label": "peace process",
+      "note": "Added in M42b batch 3 from the class each item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q2555896": {
+      "kind": "place",
+      "label": "municipality of Colombia",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q215655": {
+      "kind": "place",
+      "label": "department of Colombia",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q63209072": {
+      "kind": "place",
+      "label": "city of Colombia",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q15701038": {
+      "kind": "place",
+      "label": "subregion of Antioquia Department",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q165": {
+      "kind": "place",
+      "label": "sea",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q4022": {
+      "kind": "place",
+      "label": "river",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q3257686": {
+      "kind": "place",
+      "label": "locality",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
     }
   },
   "reconcile": true

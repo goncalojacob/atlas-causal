@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "pueblo-rico",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q514908",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Pueblo Rico, Risaralda"
+  },
+  "sources": [],
+  "names": [
+    "Pueblo Rico",
+    "Pueblo Rico, Risaralda"
+  ],
+  "where": {
+    "lon": -76.029444444444,
+    "lat": 5.2225,
+    "precision": "city",
+    "label": "Pueblo Rico"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q514908, imported by tools/import/wikidata.mjs. The item's own description reads \"Colombian municipality of the department of Risaralda\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

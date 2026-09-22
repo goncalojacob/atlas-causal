@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "2019-bogota-car-bombing",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q60668574",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "2019 Bogotá car bombing",
+    "pt": "Atentado a bomba em Bogotá em 2019"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q60668574"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2019 Bogotá car bombing\", revision 1374649549"
+    }
+  ],
+  "title": "2019 Bogotá car bombing",
+  "summary": "The English Wikipedia article \"2019 Bogotá car bombing\", at revision 1374649549, opens: \"On 17 January 2019, a vehicle was driven into the General Santander National Police Academy in Bogotá, Colombia. The truck forced its way into the facility, hit a wall and detonated, killing 22 people and injuring 68 others. The vehicle contained about 80 kilograms (180 lb) of pentolite.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q60668574, imported by tools/import/wikidata.mjs. The item's own description reads \"General Santander Police Academy car bombing\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2019,
+    "end": 2019,
+    "date": "2019-01-17"
+  },
+  "place": "bogota",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": [
+    "colombian-conflict",
+    "colombian-conflict-2018-present"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "colombian-conflict--1999-2002-farc-government-peace-process--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1999–2002 FARC–Government peace process\", revision 1370280050, § lead"
+    }
+  ],
+  "from": "colombian-conflict",
+  "to": "1999-2002-farc-government-peace-process",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The process’s own first sentence says what it was answering: it \"was a failed peace process between the Government of President Andrés Pastrana Arango and the Revolutionary Armed Forces of Colombia (FARC) guerrilla group in an effort to bring to an end the ongoing Colombian armed conflict.\" A peace process is what a war is answered with, which is what `reacted-to` says in this vocabulary, and the atlas already holds the conflict it answers. This is the same reading, and the same direction, as the edge the atlas already carries between the conflict and the 2012–2016 negotiations; the two processes are seventeen years apart and the article calls this one failed, which is part of why the atlas holds both. `probable` and not `consensus`: rule 22 refuses `consensus` on a Wikipedia citation.",
+  "dispute": null
+}
