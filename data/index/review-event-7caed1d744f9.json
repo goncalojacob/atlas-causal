@@ -526,8 +526,8 @@
         }
       ],
       "cites": [
-        "wikidata",
-        "wikipedia-en"
+        "wikipedia-en",
+        "wikidata"
       ],
       "created": "2026-09-21",
       "degree": 1,
@@ -541,8 +541,10 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the interval was 1944–1944, 15 December 1944 at both ends — the item's, which dates the deportation that closed the revolt and not the revolt — and is now the span the cited article states at revision 1370279204: \"Beginning in early 1940 ... and ended in the beginning of 1944\". The two exact dates are dropped rather than moved: the article contradicts them and gives the revolt no day of its own, and a day nobody wrote down is not this run's to invent.",
         "status": "draft"
       },
       "revised": "2026-09-22",
@@ -2710,8 +2712,8 @@
         }
       ],
       "cites": [
-        "wikidata",
-        "wikipedia-en"
+        "wikipedia-en",
+        "wikidata"
       ],
       "created": "2026-09-21",
       "degree": 2,
@@ -2724,8 +2726,10 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the interval was 2012–2012, with 27 February 2012 at both ends — the imported item's, which dates the handover that ended the revolution and not the revolution — while the record's own title says 2011. The cited article states the span at revision 1375746838: \"from January 2011 to February 2012\". The two exact dates are dropped rather than moved: the article gives months and not days, and a day nobody wrote down is not this run's to invent.",
         "status": "draft"
       },
       "revised": "2026-09-22",
@@ -3492,7 +3496,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 2,
@@ -3509,13 +3514,14 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "filed-from-p361"
+          "filed-from-p361",
+          "title-from-article"
         ],
         "status": "draft"
       },
       "revised": "2026-09-22",
       "status": "active",
-      "title": "Afghan Civil War"
+      "title": "Afghan Civil War (1989–1992)"
     },
     {
       "authors": [
@@ -3544,13 +3550,14 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
       "revised": "2026-09-22",
       "status": "active",
-      "title": "Afghan Civil War"
+      "title": "Afghan Civil War (1996–2001)"
     },
     {
       "authors": [
@@ -3560,7 +3567,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 3,
@@ -3573,13 +3581,14 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "title-from-article"
         ],
         "status": "draft"
       },
       "revised": "2026-09-22",
       "status": "active",
-      "title": "Afghan Civil War"
+      "title": "Afghan Civil War (1992–1996)"
     },
     {
       "authors": [
@@ -10047,8 +10056,8 @@
         }
       ],
       "cites": [
-        "wikidata",
-        "wikipedia-en"
+        "wikipedia-en",
+        "wikidata"
       ],
       "created": "2026-09-15",
       "degree": 3,
@@ -10062,8 +10071,10 @@
           "imported-facts",
           "m67-lined",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the end was 1918, the year the item dates the outbreak to, which made a revolution that ran into the next year a single-year event. The cited article names its own span in its title and again in its first sentence at revision 1373097617 — \"The German revolution of 1918–1919\" — so the end is 1919. The start and its day, 4 November 1918, are the item's and are unchanged; the article gives the end no day, so none is written.",
         "status": "draft"
       },
       "revised": "2026-09-22",
@@ -19614,13 +19625,14 @@
         "flags": [
           "imported-facts",
           "m67-lined",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
       "revised": "2026-09-22",
       "status": "active",
-      "title": "Treaty of London"
+      "title": "Treaty of London (1915)"
     },
     {
       "authors": [
@@ -19648,13 +19660,14 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
       "revised": "2026-09-22",
       "status": "active",
-      "title": "Treaty of London"
+      "title": "Treaty of London (1913)"
     },
     {
       "authors": [
@@ -21761,6 +21774,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1951-portuguese-presidential-election",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "1957-1958-influenza-pandemic",
+      "kind": "event",
+      "message": "the title states 1957–1958 and the record is dated 1956–1958",
+      "rule": "span-vs-article-title"
+    },
+    {
       "id": "1963-south-vietnamese-coup",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -21779,10 +21804,40 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1982-british-army-gazelle-friendly-fire-incident",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "1996-portuguese-presidential-election",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "1999-2002-farc-government-peace-process",
+      "kind": "event",
+      "message": "the title states 1999–2002 and the record is dated 1999",
+      "rule": "span-vs-article-title"
+    },
+    {
       "id": "2019-bogota-car-bombing",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "afghan-civil-war",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "afghan-civil-war-q1980081",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "afghan-conflict",
@@ -21797,10 +21852,22 @@
       "rule": "degree-zero"
     },
     {
+      "id": "amsterdam-treaty",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "andino-shopping-mall-attack",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "anschluss",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "arab-israeli-conflict",
@@ -21809,10 +21876,22 @@
       "rule": "degree-zero"
     },
     {
+      "id": "arab-revolt",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "arab-spring",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "argentine-surrender-in-the-falklands-war",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "assassination-of-miguel-uribe-turbay",
@@ -21831,6 +21910,12 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "attack-on-cerro-montezuma",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "bala-hissar-uprising",
@@ -21863,16 +21948,34 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-caporetto",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "battle-of-domokos",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-domokos",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "battle-of-dunkirk",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-goose-green",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "battle-of-greece",
@@ -21917,10 +22020,28 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-mount-harriet",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "battle-of-mount-longdon",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-mount-longdon",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "battle-of-mount-tumbledown",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "battle-of-san-carlos",
@@ -21929,7 +22050,25 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-san-carlos",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "battle-of-seal-cove",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-seal-cove",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "battle-of-st-quentin",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -21937,8 +22076,8 @@
     {
       "id": "battle-of-st-quentin",
       "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "battle-of-tannenberg",
@@ -21953,10 +22092,22 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-two-sisters",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "battle-of-velestino",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-velestino",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "battle-of-verdun",
@@ -21971,10 +22122,22 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-wireless-ridge",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "battles-of-khalkhin-gol",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "belovezh-accords",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "benin-expedition-of-1897",
@@ -21983,10 +22146,22 @@
       "rule": "degree-zero"
     },
     {
+      "id": "benin-expedition-of-1897",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "bluff-cove-air-attacks",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "bluff-cove-air-attacks",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "bombing-in-zona-rosa-of-bogota-of-2003",
@@ -22007,10 +22182,34 @@
       "rule": "degree-zero"
     },
     {
+      "id": "colombian-conflict-2018-present",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "colombian-conflict-between-1974-1990",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "colombian-conflict-between-1974-1990",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "cretan-revolt-of-1897-1898",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "croatian-war-of-independence",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "decolonisation-of-africa",
@@ -22019,10 +22218,22 @@
       "rule": "degree-zero"
     },
     {
+      "id": "earth-summit",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "effacer-le-tableau",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "entente-cordiale",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "eritrean-civil-wars",
@@ -22031,10 +22242,58 @@
       "rule": "degree-zero"
     },
     {
+      "id": "eritrean-ethiopian-war",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "ethiopian-civil-war",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "false-positives-in-colombia",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "first-franco-dahomean-war",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "foibe-massacres",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "franco-thai-war",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "georgian-ossetian-conflict-1918-1920",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "german-polish-declaration-of-non-aggression",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "heligoland-zanzibar-treaty",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "herero-wars",
@@ -22061,6 +22320,24 @@
       "rule": "degree-zero"
     },
     {
+      "id": "ifni-war",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "independence-of-morocco",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "indo-pakistani-war-of-1947-1948",
+      "kind": "event",
+      "message": "the title states 1947–1948 and the record is dated 1947–1949",
+      "rule": "span-vs-article-title"
+    },
+    {
       "id": "indochina-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -22073,10 +22350,28 @@
       "rule": "degree-zero"
     },
     {
+      "id": "invasion-of-south-georgia",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "irish-civil-war",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "italian-war-of-1521-1526",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "italian-war-of-1521-1526",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "italian-war-of-1536-1538",
@@ -22085,10 +22380,22 @@
       "rule": "degree-zero"
     },
     {
+      "id": "italian-war-of-1536-1538",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "italian-war-of-1551-1559",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "italian-war-of-1551-1559",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "italian-wars",
@@ -22097,10 +22404,28 @@
       "rule": "degree-zero"
     },
     {
+      "id": "italian-wars",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "italian-wars-of-1499-1504",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "italian-wars-of-1499-1504",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "junker-mutiny",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "kaocen-revolt",
@@ -22109,7 +22434,43 @@
       "rule": "degree-zero"
     },
     {
+      "id": "kaocen-revolt",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "la-violencia",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "las-palmas-massacre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "las-palmas-massacre",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "lateran-treaty",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "march-on-rome",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "marco-polo-bridge-incident",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -22117,8 +22478,8 @@
     {
       "id": "marco-polo-bridge-incident",
       "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "massacre-of-arabs-during-the-zanzibar-revolution",
@@ -22133,10 +22494,22 @@
       "rule": "degree-zero"
     },
     {
+      "id": "mondonedo-massacre",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "mount-kent-skirmish",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "mount-kent-skirmish",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "my-lai-massacre",
@@ -22163,10 +22536,22 @@
       "rule": "degree-zero"
     },
     {
+      "id": "operation-algeciras",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "operation-black-buck",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "operation-black-buck",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "operation-jaque",
@@ -22187,7 +22572,49 @@
       "rule": "degree-zero"
     },
     {
+      "id": "operation-keyhole",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "operation-paraquet",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "operation-rosary",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "operation-sutton",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "palace-of-justice-siege",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "polish-soviet-war",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "polish-ukrainian-war",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "potemkin-mutiny",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -22195,8 +22622,8 @@
     {
       "id": "potemkin-mutiny",
       "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "prelude-to-the-russian-invasion-of-ukraine",
@@ -22211,10 +22638,34 @@
       "rule": "degree-zero"
     },
     {
+      "id": "raid-on-pebble-island",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "revolution-in-the-kingdom-of-poland",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "rif-war",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "sabra-and-shatila-massacre",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "sayfo",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "scramble-for-africa",
@@ -22223,10 +22674,22 @@
       "rule": "degree-zero"
     },
     {
+      "id": "second-balkan-war",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "sevastopol-uprising",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "sevastopol-uprising",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "siege-of-mitu",
@@ -22241,10 +22704,22 @@
       "rule": "degree-zero"
     },
     {
+      "id": "sinking-of-ara-general-belgrano",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "skirmish-at-many-branch-point",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "skirmish-at-many-branch-point",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "skirmish-at-top-malo-house",
@@ -22253,10 +22728,34 @@
       "rule": "degree-zero"
     },
     {
+      "id": "skirmish-at-top-malo-house",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "slovak-hungarian-war",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "soviet-japanese-border-conflicts",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "the-holocaust-in-romania",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "the-impeachment-of-dilma-rousseff-2016",
+      "kind": "event",
+      "message": "the title states 2016 and the record is dated 2015–2016",
+      "rule": "span-vs-article-title"
     },
     {
       "id": "third-battle-of-ypres",
@@ -22271,10 +22770,22 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-petropolis",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "united-states-military-campaign-against-cartels",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "vienna-convention-for-the-protection-of-the-ozone-layer",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "wadai-war",
@@ -22283,10 +22794,40 @@
       "rule": "degree-zero"
     },
     {
+      "id": "war-of-attrition",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "war-of-the-camps",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "war-of-the-league-of-cambrai",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "war-of-the-league-of-cambrai",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "war-over-water",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "zanzibar-revolution",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     }
   ]
 }

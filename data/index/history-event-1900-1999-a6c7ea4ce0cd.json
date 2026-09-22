@@ -1184,6 +1184,14 @@
             "summary"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4672,6 +4680,14 @@
             "review"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "title"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4703,6 +4719,13 @@
             "summary"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "title"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4723,6 +4746,14 @@
           "fields": [
             "place",
             "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "title"
           ],
           "on": "2026-09-22"
         }
@@ -10147,6 +10178,14 @@
             "review",
             "sources",
             "summary"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
           ],
           "on": "2026-09-22"
         }
@@ -17600,6 +17639,13 @@
             "summary"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "title"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -17623,6 +17669,13 @@
             "review",
             "sources",
             "summary"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "title"
           ],
           "on": "2026-09-22"
         }

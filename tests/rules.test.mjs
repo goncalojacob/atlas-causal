@@ -423,3 +423,86 @@ test('rule 23: a full entry cites what the record cites, and links where records
   assert.equal(rulesHit(onEdge, 23).length, 0);
   assert.ok(onEdge.errors.some((e) => e.rule === 1 && e.id === 'fixture-event-b--fixture-event-d--enabled'));
 });
+
+// A12 (1). A record the Wikidata import created carries, until somebody writes
+// one, the one sentence the import is allowed to say: which item it is and
+// what that item's own description reads. It is a placeholder and it says so,
+// but nothing counted them, so the number left was only ever known by grepping.
+// The warning is the count, and it clears itself when a summary is written.
+test('summary-imported: the import placeholder is counted while it stands', async () => {
+  const placeholder = 'Wikidata item Q9000001, imported by tools/import/wikidata.mjs.'
+    + ' The item\'s own description reads "an invented uprising". Everything here is copied from'
+    + ' the item\'s own fields and nothing in it is this atlas\'s account of the thing:'
+    + ' that is still to be written, and review.html is where somebody writes it.';
+  const flagged = await run((fx) => { fx.byId['fixture-event-a'].summary = placeholder; });
+  const hits = flagged.warnings.filter((w) => w.rule === 'summary-imported');
+  assert.equal(hits.length, 1);
+  assert.equal(hits[0].id, 'fixture-event-a');
+  assert.match(hits[0].message, /nobody has written a summary/);
+
+  // A summary a person or a curation fire wrote is not the placeholder, even
+  // where the record is still the import's own.
+  const written = await run((fx) => {
+    fx.byId['fixture-event-a'].summary = 'The English Wikipedia article "Northfield Rising", at revision 1, opens: "It happened."';
+  });
+  assert.equal(written.warnings.filter((w) => w.rule === 'summary-imported').length, 0);
+
+  // A withdrawn record is not in anybody's queue, so it is not counted.
+  const gone = await run((fx) => {
+    fx.byId['fixture-event-a'].summary = placeholder;
+    fx.byId['fixture-event-a'].status = 'retracted';
+  });
+  assert.equal(gone.warnings.filter((w) => w.rule === 'summary-imported').length, 0);
+});
+
+// A12 (3), read off the data alone. A title that states its own years is an
+// assertion about the span, made by whoever wrote the article the title came
+// from; where the record's `when` contradicts it one of the two is wrong and
+// a person has to say which. It cannot be an error: "The impeachment of Dilma
+// Rousseff, 2016" begins in December 2015 and is titled for the year it
+// finished, which is a defensible record and not a mistake.
+test('span-vs-article-title: a title stating years the span contradicts', async () => {
+  const range = await run((fx) => {
+    fx.byId['fixture-event-a'].title = 'The invented rising of 1720–1725';
+  });
+  const hits = range.warnings.filter((w) => w.rule === 'span-vs-article-title');
+  assert.equal(hits.length, 1, JSON.stringify(range.warnings.map((w) => w.rule)));
+  assert.equal(hits[0].id, 'fixture-event-a');
+  assert.match(hits[0].message, /1720–1725/);
+
+  // Agreement is silence, which is what it is for: the fixture event's own
+  // years, written into its title, say nothing.
+  const when = (await fixturesWhen())('fixture-event-a');
+  const agreeing = await run((fx) => {
+    fx.byId['fixture-event-a'].title = `The invented rising of ${when.start}–${when.end}`;
+  });
+  assert.equal(agreeing.warnings.filter((w) => w.rule === 'span-vs-article-title').length, 0);
+
+  // One year is compared against the start alone: an end the title does not
+  // state is not a disagreement about it.
+  const oneYear = await run((fx) => {
+    fx.byId['fixture-event-a'].title = 'The invented rising of 1720';
+  });
+  assert.equal(oneYear.warnings.filter((w) => w.rule === 'span-vs-article-title').length, 1);
+  const rightYear = await run((fx) => {
+    fx.byId['fixture-event-a'].title = `The invented rising of ${when.start}`;
+  });
+  assert.equal(rightYear.warnings.filter((w) => w.rule === 'span-vs-article-title').length, 0);
+
+  // A title with no year at all is every other record here and is never asked
+  // the question.
+  assert.equal((await run()).warnings.filter((w) => w.rule === 'span-vs-article-title').length, 0);
+
+  // An open end is not contradicted by a title that names one: `end: null` is
+  // "as far as the data goes", so only the start is compared.
+  const open = await run((fx) => {
+    fx.byId['fixture-event-a'].title = `The invented rising of ${when.start}–1999`;
+    fx.byId['fixture-event-a'].when = { ...when, end: null };
+  });
+  assert.equal(open.warnings.filter((w) => w.rule === 'span-vs-article-title').length, 0);
+});
+
+async function fixturesWhen() {
+  const fx = await fixtures();
+  return (id) => fx.byId[id].when;
+}

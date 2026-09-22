@@ -79045,5 +79045,24 @@
     }
   ],
   "schema": 1,
-  "warnings": []
+  "warnings": [
+    {
+      "id": "energias-de-portugal",
+      "kind": "actor",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "national-syndicalists",
+      "kind": "actor",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "university-of-porto",
+      "kind": "actor",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    }
+  ]
 }

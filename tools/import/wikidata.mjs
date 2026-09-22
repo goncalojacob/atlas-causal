@@ -445,13 +445,33 @@ export function classify(read, classes = {}) {
 
 // The interval an item's own date properties give, by kind. An event with a
 // point in time is a year with a date on it; an actor is born and dies or is
-// founded and dissolved. `end: null` means ongoing, and an item with no
-// usable date at all has no interval, which is a refusal rather than a guess.
-export function intervalFor(kind, times) {
+// founded and dissolved. `end: null` is "as far as the data goes", and an item
+// with no usable date at all has no interval, which is a refusal rather than a
+// guess.
+//
+// **A stated span beats a point in time, at both ends** (A12, deviation 1015).
+// The old order read P585 first, and an item carrying all three — Q49101, the
+// Suez Crisis, with P580 29 October 1956, P582 7 November 1956 and a stray
+// P585 of March 1957 — imported `start: 1957, end: 1956`, an interval that
+// runs backwards and that only rule 15 saw. Where P580 is there, the span is
+// the answer and the point in time is read at neither end; P585 still dates an
+// item that gives nothing else, which is a one-day event.
+function pickTimes(kind, times) {
   const first = (list) => (list.length ? list[0] : null);
-  const pick = kind === 'actor'
-    ? { from: first(times.born) ?? first(times.inception) ?? first(times.start), to: first(times.died) ?? first(times.dissolved) ?? first(times.end) }
-    : { from: first(times.pointInTime) ?? first(times.start) ?? first(times.inception), to: first(times.end) ?? first(times.pointInTime) ?? first(times.dissolved) };
+  if (kind === 'actor') {
+    return {
+      from: first(times.born) ?? first(times.inception) ?? first(times.start),
+      to: first(times.died) ?? first(times.dissolved) ?? first(times.end),
+    };
+  }
+  const span = first(times.start) ?? first(times.inception);
+  if (span) return { from: span, to: first(times.end) ?? first(times.dissolved), stated: true };
+  const point = first(times.pointInTime);
+  return { from: point, to: point };
+}
+
+export function intervalFor(kind, times) {
+  const pick = pickTimes(kind, times);
   if (!pick.from) return null;
   const when = { start: pick.from.year, end: pick.to ? pick.to.year : null };
   // An actor's span is years and nothing finer. The exact date is not left
@@ -478,6 +498,23 @@ export function intervalFor(kind, times) {
   // default the rest of the atlas uses, so it is left off rather than
   // asserted here.
   return when;
+}
+
+// A12 (3), the other half of the same rule. An item that states a start and no
+// P582 has said nothing about an end, and the record it becomes carries
+// `end: null` — which in this atlas reads "as far as the data goes" and not
+// "still going on". The two are worth telling apart on the record itself,
+// because a war that ended in 1996 and a war nobody has dated the end of look
+// identical on the timeline: the flag is what sends a reviewer to the article
+// rather than letting the null stand as a claim. A point in time is its own
+// end and an actor dated from its founding is the open-ended case `end: null`
+// exists for, so neither is flagged.
+export const END_UNSTATED_FLAG = 'end-unstated';
+
+export function endUnstated(kind, times) {
+  if (kind === 'actor') return false;
+  const pick = pickTimes(kind, times);
+  return Boolean(pick.from && pick.stated && !pick.to);
 }
 
 // --- ids and names ---------------------------------------------------------
@@ -526,10 +563,20 @@ export function foldName(name) {
 // asks for a person instead.
 export const NOT_ENGLISH_FLAG = 'title-not-english';
 
+// A12 (5) turned the English pair the other way round. A Wikidata label is the
+// shortest name the item can be called; an article title is the name that had
+// to tell this thing from everything else of that name, so it is the one
+// carrying the disambiguator. Reading the label first gave this atlas three
+// events titled "Afghan Civil War" and two titled "Treaty of London", and a
+// reader choosing between them on a card had nothing to choose by — while each
+// record's own `wikipedia.en` said "Afghan Civil War (1989–1992)" all along.
+// So the article title is the name and the label is what is left when there is
+// no article. The pair is read within one language: an English label still
+// beats a Portuguese article, which is the clause above.
 export function titleFor(read) {
-  const english = read?.labels?.en ?? read?.titles?.en ?? null;
+  const english = read?.titles?.en ?? read?.labels?.en ?? null;
   if (english) return { title: english, english: true };
-  return { title: read?.labels?.pt ?? read?.titles?.pt ?? read?.qid, english: false };
+  return { title: read?.titles?.pt ?? read?.labels?.pt ?? read?.qid, english: false };
 }
 
 // An id nothing else has yet. A collision is not an error — two items may
@@ -676,7 +723,7 @@ export function actorRecord(read, { id, created, actorType, when }) {
   }, { flags: english ? [] : [NOT_ENGLISH_FLAG] });
 }
 
-export function eventRecord(read, { id, created, when, place, region = null, regionNote = null, category = null }) {
+export function eventRecord(read, { id, created, when, place, region = null, regionNote = null, category = null, endUnstated: unstated = false }) {
   const { title, english } = titleFor(read);
   return envelope(id, 'event', created, {
     ...identityOf(read, created),
@@ -694,7 +741,7 @@ export function eventRecord(read, { id, created, when, place, region = null, reg
     // P710 names participants, and who took part is not the same question as
     // what they did in it: `role` is the argument and a person writes it.
     actors: [],
-  }, { flags: english ? [] : [NOT_ENGLISH_FLAG] });
+  }, { flags: [...(english ? [] : [NOT_ENGLISH_FLAG]), ...(unstated ? [END_UNSTATED_FLAG] : [])] });
 }
 
 export function leadRecord({ qid, lang, title, revid, fetched, text }) {
@@ -1153,6 +1200,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
         id, created: today, when, place, region,
         regionNote: laneNote(lane, { placeless: true }),
         category: classified.category ?? null,
+        endUnstated: endUnstated('event', read.times),
       });
       written.push(await writeRecord(dataDir, 'events', record));
       taken.add(id);

@@ -24,8 +24,10 @@
       "imported-facts",
       "m67-lined",
       "a9-place",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a7-widened"
+    ],
+    "note": "A7: the end was 1918, the year the item dates the outbreak to, which made a revolution that ran into the next year a single-year event. The cited article names its own span in its title and again in its first sentence at revision 1373097617 — \"The German revolution of 1918–1919\" — so the end is 1919. The start and its day, 4 November 1918, are the item's and are unchanged; the article gives the end no day, so none is written."
   },
   "origin": {
     "tool": "wikidata"
@@ -41,6 +43,10 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"German revolution of 1918–1919\", revision 1373097617: \"The German revolution of 1918–1919, also known as the November Revolution\""
+    },
+    {
       "source": "wikidata",
       "locator": "Q170306"
     },
@@ -53,7 +59,7 @@
   "summary": "The English Wikipedia article \"German revolution of 1918–1919\", at revision 1375692092, opens: \"The German revolution of 1918–1919, also known as the November Revolution, brought down the German Empire at the end of World War I and set the stage for the establishment of the Weimar Republic. The revolution was sparked by the hardships suffered by the German people during the war, the economic and psychological impacts of the Empire's defeat, and the social tensions between the general populace and the aristocratic, military and bourgeois elite. It quickly and almost bloodlessly brought down the Empire by 9 November 1918, then in its second and more violent stage, the supporters of a parliamentary republic defeated those who wanted to create a soviet-style council republic.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q170306, imported by tools/import/wikidata.mjs. The item's own description reads \"revolution between 1918-19 in Germany\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1918,
-    "end": 1918,
+    "end": 1919,
     "date": "1918-11-04"
   },
   "place": "germany-q183",
