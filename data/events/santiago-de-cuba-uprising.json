@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "santiago-de-cuba-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5974095",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Santiago de Cuba Uprising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5974095"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Santiago de Cuba Uprising\", revision 1370730172"
+    }
+  ],
+  "title": "Santiago de Cuba Uprising",
+  "summary": "The English Wikipedia article \"Santiago de Cuba Uprising\", at revision 1370730172, opens: \"The Santiago de Cuba uprising was an armed uprising organized by the 26th of July Movement on 30 November 1956 in Santiago de Cuba. It was planned by Haydée Santamaría, Celia Sánchez, and Frank País. The rebellion occurred on 30 November and was meant to take place in conjunction with the Landing of the Granma, which was expected to land in Cuba five days after departing from Mexico.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5974095, imported by tools/import/wikidata.mjs. The item's own description reads \"uprising in the city of Santiago de Cuba\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1956,
+    "end": 1956,
+    "date": "1956-11-30"
+  },
+  "place": "santiago-de-cuba",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "cuban-revolution"
+}

@@ -23,8 +23,10 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a7-widened"
+    ],
+    "note": "A7: the interval was 1944–1944, 15 December 1944 at both ends — the item's, which dates the deportation that closed the revolt and not the revolt — and is now the span the cited article states at revision 1370279204: \"Beginning in early 1940 ... and ended in the beginning of 1944\". The two exact dates are dropped rather than moved: the article contradicts them and gives the revolt no day of its own, and a day nobody wrote down is not this run's to invent."
   },
   "origin": {
     "tool": "wikidata"
@@ -40,6 +42,10 @@
   },
   "sources": [
     {
+      "source": "wikipedia-en",
+      "locator": "\"1940–1944 insurgency in Chechnya\", revision 1370279204: \"Beginning in early 1940 ... and ended in the beginning of 1944\""
+    },
+    {
       "source": "wikidata",
       "locator": "Q714706"
     },
@@ -51,10 +57,8 @@
   "title": "1940–1944 insurgency in Chechnya",
   "summary": "The English Wikipedia article \"1940–1944 insurgency in Chechnya\", at revision 1370279204, opens: \"The 1940–1944 insurgency in Chechnya was an autonomous revolt against the Soviet authorities in the Chechen-Ingush Autonomous Soviet Socialist Republic. Beginning in early 1940 under Hasan Israilov, it peaked in 1942 during the German invasion of North Caucasus and ended in the beginning of 1944 with the wholesale concentration and deportation of the Vainakh peoples from their native lands as well as from the locations across the USSR, resulting in the death of at least 144,000 civilians. However, scattered resistance in the mountains continued for years.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q714706, imported by tools/import/wikidata.mjs. The item's own description reads \"Vainakh revolt against the Soviet authorities\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1944,
-    "end": 1944,
-    "date": "1944-12-15",
-    "endDate": "1944-12-15"
+    "start": 1940,
+    "end": 1944
   },
   "place": "checheno-ingush-autonomous-soviet-socialist-republic",
   "region": "europe",

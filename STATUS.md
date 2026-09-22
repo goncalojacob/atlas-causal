@@ -18997,6 +18997,277 @@ title (A6) and its axis still runs to 2040 with nothing there.
       Nothing else under `docs/screens/` was rewritten, which `git status`
       confirms rather than a promise.
 
+**M42b batch 3 — the Colombian conflict's vein, 22 September.** The third
+fire on `m42b`. It began by merging `origin/m0` and `origin/m42`, which is how
+the branch reads what the other lane holds and how M42's A12 passes reach it;
+the corpus it then found was **622 active and 242 main**, not the 614 and 247
+batch 2 left. Taken from the **`americas` lane**, from the largest vein batch 2
+left open: the inverse `part of` sweep on `Q169072` returns **43 items**, two of
+them already here. **Twenty-one events arrived**, 1980 to 2025, every one filed
+and every one placed. `docs/m42b-pool.md` → "Batch 3".
+
+**Two of the twenty-one are umbrellas of their own** — `Q76763052`, the
+1974–1990 phase, and `Q118152947`, the 2018–present one — both periods
+Wikipedia names, both carrying `m42-umbrella`, a lane and **no place**, because
+a period has no point. Both are filed under `colombian-conflict`, which is a
+war and not a period, so A6's "do not nest periods more than one deep" is not
+touched. **The first reading of A8 here was wrong and the suite caught it**:
+the eight events inside a phase were written with both the phase and the
+conflict as parents, and `tests/m42-filing.test.mjs` refuses a parent already
+reachable through another. Deviation **1203**.
+
+**Fourteen place records**, each from the first located thing its event's item
+names that carries a `P625` — `P276` for all but three — with `precision` read
+off the item's own class: eight `city`, six `region`, and `colombia-q739`,
+already here at `country`, for the two the item locates no closer. **Sixteen of
+the twenty-one carry the cached English lead at a named revision** in place of
+the import's placeholder (A12 C1); the other five have no English article and
+keep it. **Two edges**, both into records the atlas already held.
+
+**Nineteen items and one edge were refused.** Sixteen are real actions of this
+war that Wikidata gives no `P580` and no `P585` — the taking of Miraflores, Las
+Delicias, Casa Verde, Operation Anorí and eleven more — and this run does not
+supply a date the source does not carry; `Q155801` FARC and `Q8034813` the
+Workers Revolutionary Party are actors and this is an events batch;
+`Q105799250` and `Q79227232` are topics and not things that happened; and an
+edge from the 2019 Bogotá bombing to the 2017 Centro Andino bombing, which the
+2019 lead names only as a comparison.
+
+**Eleven classes were added** to the seeds file, each read off Wikidata: siege
+and war phase as `war`, suicide car bombing and peace process with no category;
+and seven place classes — municipality and department of Colombia, city of
+Colombia, subregion, sea, river and locality.
+
+**Corpus after the fire: 643 active, 242 main — unchanged — 401 filed, 649
+edges, largest connected component 508, 111 components, 91 events with no edge
+at all.** The `americas` lane goes from 104 active to **125**, level with Asia
+and ahead of Africa. `node tools/validate.mjs --index`: **0 errors, 313
+warnings**. **1,737 pure and 246 browser, 1,983 in all, 0 failed and 0
+skipped**, the browser suites one at a time as the check runs them;
+`docs/m53-polities.md` §4.1's "after M42" row was retaken to **351 of 643**,
+which is the one test a records batch always moves, and
+`tests/m42-filing.test.mjs` now reads `docs/m42b-pool.md` beside
+`docs/m42-pool.md` so that the clause about a filing nobody argued in writing
+can see this branch's arguments at all.
+
+**M42b batch 4 — the Cuban Revolution's vein, 22 September.** The fourth fire
+on `m42b`. It began by merging `origin/m0` and `origin/m42` again, which is why
+the corpus it found reads **643 active and 242 main** and why Europe's 15th,
+16th and 19th centuries stand higher than batch 3's table shows — that came
+across, none of it is this batch. Taken from the **`americas` lane**, from the
+vein batch 3's note ranked first. `docs/m42b-pool.md` → "Batch 4".
+
+**A7 first, in its own commit.** `cuban-revolution` was dated at 1959 alone,
+the day Havana fell, so every action of its own fighting fell outside it and
+rule 24 would have refused the filing. The English article, **at revision
+1373305240, the revision the record already cited**, states `26 July 1953 –
+1 January 1959` in its infobox and names the Moncada assault in its lead. The
+record now runs 1953 to 1959 with both days, carries `a7-widened` and a note
+saying what moved from what. Then the vein: the inverse `part of` sweep on
+`Q11264` returns **16 items and the atlas held none of them**; **fifteen
+arrived**, every one inside the widened span and every one filed under
+`cuban-revolution` and nothing above it.
+
+**Ten place records**, each from the first located thing its event's item names
+that carries a `P625`, with `precision` read off that item's own class: eight
+`city`, two `region`. Four events reuse `santiago-de-cuba` and `havana`, which
+were already here. **One place was named from the item's own Spanish label** —
+`Q16145269` carries no English or Portuguese one, so the import wrote a place
+called `Q16145269`; its own field reads `Alegría de Pío` and that is the
+record, with `title-not-english` kept and a note saying where the name came
+from. **One event is placeless**: `haitian-embassy-in-cuba-massacre` names an
+embassy with no `P625`, no `P131`, and a `P17` that is a historical period
+rather than ground, so the chain runs out and nothing was invented;
+`docs/m67-umbrellas.md` carries the A1 clause for it, since it names no actor
+either.
+
+**Twelve of the fifteen carry the cached English lead at a named revision** in
+place of the import's placeholder (A12 C1); three have no English article.
+**No actors**: the two items with `P710` name `Q218452` and `Q14905932`, and
+the atlas holds neither — its `cuba` is `Q241`. **Six edges**, each `probable`
+on the leads that support it and two of them into records already here. Four
+of the six moved the component by **one**, because the vein hangs off its
+parent and a parent is not adjacency; the two added after that measurement —
+the revolution to Operation Verano, Alegría de Pío to La Plata — carried Verano
+and Santa Clara in with them.
+
+**One item and one vein were refused.** `Q4693758`, land reform in Cuba, has no
+`P580`, `P582` or `P585` and a class the table does not hold. The **Landing of
+the Granma**, which three of this batch's leads name and which would join the
+island of three this fire leaves, was not reached at all: deviation **1205**.
+**Four classes were added** to the seeds file, each read off Wikidata:
+extra-judicial killing with no category, and three place classes — municipality
+of Cuba, province of Cuba, mountain range.
+
+**Corpus after the fire: 658 active, 242 main — unchanged — 416 filed, 655
+edges, largest connected component 511, 120 components, 98 events with no edge
+at all.** The `americas` lane goes from 125 active to **140**, ahead of Asia;
+south against north within it is 118 to 17, with 5 placeless. Europe before
+1900 is 23 active and 14 main. `node tools/validate.mjs --index`: **0 errors,
+457 warnings**. **1,748 pure and 254 browser, 2,002 in all, 0 failed and 0
+skipped**, the browser suites one at a time as the check runs them.
+`docs/m53-polities.md` §4.1's "after M42" row was retaken to **351 of 658**.
+
+1204. **The claim window's ninety minutes was read twice, and it is the second
+      reading that claimed.** At the gate this branch's last push was **89.4
+      minutes** old — inside the protocol's ninety — so the rule said stop.
+      The fire did not claim on that reading and did not claim against it
+      either: it did STEP 2's reading first, which every fire owes whatever it
+      goes on to do, and read the clock again before writing the claim line, by
+      which time the push was 90.1 minutes old and the claim itself two hours.
+      Written down because the rule is mechanical and a run that had rounded
+      89.4 down to "near enough" would have been wrong in exactly the case the
+      rule exists for. **The order is the answer**: read first, claim second,
+      and never round the number.
+
+1205. **The Wikidata Query Service rate-limited this fire mid-batch, and a
+      record the vein wants is missing because of it.** After the inverse
+      `part of` sweep and the entity reads, the query service began answering
+      429 — *"aggressively rate-limiting to 1 req / min - this rule was created
+      during active wdqs outage"* — and the English Wikipedia API answered 429
+      as well. The **Landing of the Granma** is what went unlooked-up: the
+      hinge that the leads of Alegría de Pío, La Plata and the Santiago
+      uprising all point at, and the one item that would join this batch's
+      island of three to the component. It is not refused on its merits and it
+      is first on the next fire's list. **A 429 is not a reason to guess a
+      QID**: nothing was imported from a title this run could not resolve.
+
+1203. **"Every umbrella that fits" is not every container in the chain.** A8
+      reads *"a filing writes every umbrella whose span and subject fit, not
+      the first"*, and the first pass here took it literally: an event of 1985
+      was written as part of both the 1974–1990 phase and the conflict the
+      phase is inside. `tests/m42-filing.test.mjs` fails that — *"no parent of
+      an event is reachable through another of its parents"* — and the suite is
+      right. A8's list is for umbrellas that reach a record by different
+      routes, which is the owner's own example: Angolan independence under the
+      Portuguese Third Republic **and** under the decolonisation of Africa,
+      neither inside the other. For a chain of containers the narrowest one
+      holds and everything above it is already said by the tree. Eight records
+      were narrowed, one of them `assassination-of-miguel-uribe-turbay`, which
+      was here before this batch and moves from the conflict to the phase.
+
+1077. **The two passes A12 named and the curation fire did not run were the
+      two that are code.** The fire of 13:07Z did the four that are data —
+      summaries, places, participants, polity descriptions — and A7's three
+      intervals, and each is written up in `## Curation 2026-09-22` with its
+      counts. What it left are `intervalFor()` and `titleFor()`, which change
+      what the *next* import writes rather than what any record says now, and
+      a pass over data cannot do either. **A12 says "before any further
+      import" and this is what that clause is protecting**: every batch since
+      deviation 1015 has been importing intervals that could run backwards and
+      titles that drop the disambiguator, and a fire that goes straight to
+      batches leaves both in place for another day.
+
+1078. **A count in this project is a warning, and two things nobody was
+      counting are now counted.** The number of import placeholders left was
+      only ever known by grepping for the sentence `importedSummary()` writes,
+      which is how A12 could say "313" on 22 September and nothing could say
+      what it is today (**101**, of which 79 events). `summary-imported` is
+      that number. `span-vs-article-title` is the other: a title stating its
+      own years is an assertion about the span made by whoever wrote the
+      article, and it is free evidence that was sitting unread in 146 titles.
+      **Six disagreed and three were real widenings the article states in so
+      many words** — the Chechen insurgency, dated to the deportation that
+      ended it; the German revolution, dated to the year it broke out; the
+      Yemeni revolution, dated to the handover that closed it. Each is the
+      same shape: **the item dates the moment the thing finished and the
+      article dates the thing**, which is the pattern A7 was written for and
+      the one the next fire should expect to find again.
+
+1079. **The other three the warning found are not widenings and the difference
+      is worth keeping.** `1957-1958-influenza-pandemic` (1956–1958),
+      `indo-pakistani-war-of-1947-1948` (1947–1949) and
+      `the-impeachment-of-dilma-rousseff-2016` (2015–2016) are each **already
+      wider than their own title**, so A7 does not reach them: it authorises
+      reading a span *from* a cited article, and here the record says more
+      than the article's title does. The impeachment is the one that shows why
+      this can never be an error — it begins in December 2015 and is titled
+      for the year it finished, which is a defensible record and not a
+      mistake. They stay as a warning for a person.
+
+1080. **Retitling five records broke nothing, and that is the argument for
+      A12 (5) rather than an id migration.** Three events were titled "Afghan
+      Civil War" and two "Treaty of London", and the fix people reach for is
+      `tools/migrate/ids.mjs`. It was not needed: the **id is not the title**,
+      the five ids were already distinct (two of them by carrying the item
+      id), and nothing in `data/` references a title. So five `title` fields
+      and two added citations were the whole of it. What changes for the
+      future is `titleFor()`, which now reads the article title first, so the
+      next import of an item of this shape writes the disambiguated name and
+      the disambiguated id at once and no sixth record needs this.
+
+1081. **`git fetch --unshallow` changes the index, and a merge commit is where
+      that bill arrives.** Deviation 887 tells a fire to unshallow, and
+      `tools/lib/history.mjs` refuses a shallow clone outright — every record
+      then reads as written once and never touched. So the first rebuild after
+      an unshallow writes **real** history shards where the branch carried
+      fallback ones, and the merge commit went red on **rule 16** with seven
+      shards missing and seven stale. Nothing was wrong with the records. The
+      cause is the order: the index was built before the merge commit existed,
+      so its shards were the history of the commit before it, while the check
+      rebuilds after. **798 is not only about records versus index, it is about
+      the commit**: build the index after the commit whose history it has to
+      describe, and a merge is a commit like any other. A rebuild at the branch
+      head afterwards produced **no diff at all**, which is what says the head
+      is right and the merge commit alone was not.
+
+1082. **A browser that never opened is not the patience flake of 1069 and
+      should not be re-run as one.** The same red run failed
+      `tests/compose-browser.test.mjs:103` at `browser.mjs:236` —
+      *"headless Chromium opened a debugging port, saying: Failed to connect to
+      the bus"* — which is the browser dying before the test body ran, not an
+      assertion missing a deadline. 1069's flake is a `waitFor` budget against
+      a growing corpus and it fails *inside* a test; this one fails at the
+      launch. Both are runner conditions and both allow the one re-run, but
+      only the first is evidence about the corpus, and a fire that reads them
+      as the same thing will keep looking for records that did not cause it.
+      **The check on the branch head is green**, with both suites passing on
+      the tree the merge commit's run was red on.
+
+1083. **A9's letter and the corpus disagree about what a place record is, and
+      batch 35 followed the corpus.** A12 (2) says A9's pass reads *"the item's
+      own `P625` first"*, and every row of the inverse vein has one — the lane
+      test is built on it. Used as the place, it writes a place record called
+      *Battle of Adwa*, which is not a place but an event with a coordinate.
+      The pass of 22 September that placed 433 events never did this: it
+      created **112 `region`, 98 `country` and 58 `city` places and not one
+      `point`**, all from the located item a `P276`, `P131` or `P17` names. So
+      batch 35 read `P276` for the identity and took `precision` off that
+      item's own class, and `point` appears once — `magersfontein`, which
+      Wikidata knows as the battlefield museum and which is a site and not a
+      town. The rule A12 states and the rule the data follows are different
+      rules; a fire that changes `placeRecord()` to the letter will start
+      naming places after battles.
+
+1084. **A coarse precision is the honest answer to a place a record does not
+      have, not a reason to leave it placeless.** `abushiri-revolt` happened
+      along the coast of what is now Tanzania; the only located item its
+      Wikidata claims reach is German East Africa, whose own centroid sits a
+      thousand kilometres inland in Burundi. The temptation is to refuse the
+      place and keep the record on a lane alone. `country` says exactly what is
+      known — *in German East Africa, the point not established* — and
+      `src/vocab.js` already draws a coarse mark wider and fainter for that
+      reason. A mark a reader can see, drawn as an area, beats a record the map
+      cannot draw at all.
+
+1085. **A class that names how a thing was done is not a class of event.**
+      `Q914841` *frontier justice*, which Wikidata glosses *"extrajudicial
+      punishment that is motivated by the nonexistence of law and order"*, is
+      one of the two classes the killing of Gaddafi carries, and it was refused
+      where `Q4` *death* was added. This is batch 33's refusal of `Q19833559`
+      *preparation* in different clothes and the test is the same one: does the
+      class name a thing that happened, or a property of one? An import that
+      answers the second question builds a vocabulary of adverbs.
+
+1086. **Re-opening a refused item is how a class decision is applied, and it
+      costs nothing.** Three of batch 35's ten were refused on classes the
+      table did not have; the import marks a refused item `done` all the same,
+      so adding the classes alone would have left them refused for ever. The
+      three ids were removed from `runs.import.done` in
+      `data/imports/wikidata-state.json` and the import re-run, which created
+      them. A fire that adds a class and does not do this will find the item
+      silently missing from the batch it was added for.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -19298,5 +19569,13 @@ M81 started 2026-09-22T12:29:49Z by scheduled (branch m81)
 M81 done
 M42b started 2026-09-22T11:47:35Z by scheduled
 M42b started 2026-09-22T14:19:56Z by scheduled
+M42 started 2026-09-22T16:06:45Z by scheduled
 M82 started 2026-09-22T13:35:25Z by scheduled (branch m82)
 M82 done
+M42 started 2026-09-22T18:13:05Z by scheduled
+M82 started 2026-09-22T13:35:25Z by scheduled (branch m82)
+M82 done
+M42 started 2026-09-22T16:06:45Z by scheduled
+M42b started 2026-09-22T16:12:56Z by scheduled
+M42 started 2026-09-22T18:13:05Z by scheduled
+M42b started 2026-09-22T18:14:03Z by scheduled

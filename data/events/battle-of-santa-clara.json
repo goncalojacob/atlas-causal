@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "battle-of-santa-clara",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2153101",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Battle of Santa Clara",
+    "pt": "Batalha de Santa Clara"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2153101"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Santa Clara\", revision 1370588555"
+    }
+  ],
+  "title": "Battle of Santa Clara",
+  "summary": "The English Wikipedia article \"Battle of Santa Clara\", at revision 1370588555, opens: \"The Battle of Santa Clara was a series of events in late December 1958 that led to the capture of the Cuban city of Santa Clara by rebel forces under the command of Che Guevara at the end of the Cuban Revolution. A decisive victory for the rebels who fought against the regime of General Fulgencio Batista, the battle culminated in the Triumph of the Revolution. Within 12 hours of the city's capture, Batista fled Cuba, and Fidel Castro's forces claimed overall victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2153101, imported by tools/import/wikidata.mjs. The item's own description reads \"1958 battle in Cuba\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1958,
+    "end": 1959,
+    "date": "1958-12-28",
+    "endDate": "1959-01-01"
+  },
+  "place": "santa-clara-cuba",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "cuban-revolution"
+}

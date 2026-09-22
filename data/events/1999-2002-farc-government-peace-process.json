@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "1999-2002-farc-government-peace-process",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4595671",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "1999–2002 FARC–Government peace process"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4595671"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1999–2002 FARC–Government peace process\", revision 1370280050"
+    }
+  ],
+  "title": "1999–2002 FARC–Government peace process",
+  "summary": "The English Wikipedia article \"1999–2002 FARC–Government peace process\", at revision 1370280050, opens: \"The FARC-Government peace process (1999–2002), from January 7, 1999, to February 20, 2002, was a failed peace process between the Government of President Andrés Pastrana Arango and the Revolutionary Armed Forces of Colombia (FARC) guerrilla group in an effort to bring to an end the ongoing Colombian armed conflict.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4595671, imported by tools/import/wikidata.mjs. The item's own description reads \"failed attempt to resolve the Colombian conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1999,
+    "end": 1999
+  },
+  "place": "san-vicente-del-caguan",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "colombian-conflict"
+}

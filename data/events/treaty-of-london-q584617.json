@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "title-from-article"
     ]
   },
   "origin": {
@@ -48,7 +49,7 @@
       "locator": "\"Treaty of London (1913)\", revision 1359713953"
     }
   ],
-  "title": "Treaty of London",
+  "title": "Treaty of London (1913)",
   "summary": "The English Wikipedia article \"Treaty of London (1913)\", at revision 1359713953, opens: \"The Treaty of London (1913) was signed on 30 May following the London Conference of 1912–1913. It dealt with the territorial adjustments arising out of the conclusion of the First Balkan War. The London Conference had ended on 23 January 1913, when the 1913 Ottoman coup d'état took place and Ottoman Grand Vizier Kâmil Pasha was forced to resign.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q584617, imported by tools/import/wikidata.mjs. The item's own description reads \"signed on 30 May during the London Conference of 1913\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1913,

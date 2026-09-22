@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "bombing-in-zona-rosa-of-bogota-of-2003",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5710644",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "2003 Zona Rosa attacks"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5710644"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2003 Zona Rosa attacks\", revision 1350326644"
+    }
+  ],
+  "title": "Bombing in Zona Rosa of Bogota of 2003",
+  "summary": "The English Wikipedia article \"2003 Zona Rosa attacks\", at revision 1350326644, opens: \"On November 15, 2003, in a terrorist attack, grenades were thrown in two bars in the wealthy Zona Rosa neighborhood of Bogotá, Colombia, killing one person, injuring 73 and badly damaging the premises.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5710644, imported by tools/import/wikidata.mjs. The item's own description reads \"Terrorist attack in Bogotá, Colombia on November 15, 2003\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2003,
+    "end": 2003
+  },
+  "place": "chapinero",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "colombian-conflict"
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "attack-on-the-moncada-barracks",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q11211553",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Attack on the Moncada Barracks",
+    "pt": "Assalto ao quartel Moncada"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11211553"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Attack on the Moncada Barracks\", revision 1370861034"
+    }
+  ],
+  "title": "Attack on the Moncada Barracks",
+  "summary": "The English Wikipedia article \"Attack on the Moncada Barracks\", at revision 1370861034, opens: \"The Moncada Barracks were military barracks in Santiago de Cuba, Cuba named after General Guillermo Moncada, a hero of the Cuban War of Independence. On 26 July 1953, the barracks was the site of an armed attack by a small group of revolutionaries led by Fidel Castro. That day a simultaneous attack was carried out on the Carlos M.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11211553, imported by tools/import/wikidata.mjs. The item's own description reads \"Attack of the Cuban revolutionary movement against the government of Fulgencio Batista at the Moncada Barracks in Santiago de Cuba on July 26, 1953\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1953,
+    "end": 1953,
+    "date": "1953-07-26"
+  },
+  "place": "santiago-de-cuba",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "cuban-revolution"
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mayari",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1020314",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Mayarí",
+    "pt": "Mayarí"
+  },
+  "sources": [],
+  "names": [
+    "Mayarí"
+  ],
+  "where": {
+    "lon": -75.67637268003071,
+    "lat": 20.655209184164924,
+    "precision": "city",
+    "label": "Mayarí"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q1020314, imported by tools/import/wikidata.mjs. The item's own description reads \"municipality and city in the province of Holguín, Cuba\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}
