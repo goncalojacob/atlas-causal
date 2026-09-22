@@ -41,11 +41,16 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
     sources: [...atlas.sources.values()],
     offices: [...atlas.offices.values()],
   });
-  // Null until the shard lands: an empty list would answer "nothing by that
-  // name" about records that are right there, which is the one thing this box
-  // must never say (search.js). A query typed before then is held and run the
-  // moment the index exists.
-  let entries = shard ? null : fromAtlas();
+  // The atlas answers until the shard lands, and the shard replaces it when it
+  // does. An empty list would answer "nothing by that name" about records that
+  // are right there, which is the one thing this box must never say
+  // (search.js). It was `null` until the shard landed, with the query held and
+  // run the moment the index existed; since M83 (A13) the shard is not asked
+  // for until the box is touched, and a held query would then be a box that
+  // answers nothing until its own file arrives. What the atlas has in hand is a
+  // narrower index — titles, and no folded names — and it is the same fallback
+  // a failed fetch has always had.
+  let entries = fromAtlas();
   const input = container.querySelector('input[type="search"]');
   const list = container.querySelector('[data-slot="results"]');
   const status = container.querySelector('[data-slot="count"]');
@@ -205,11 +210,39 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
   // The shard, when it arrives — or the atlas, if it never does. Either way
   // whatever is in the box is answered at once, so a reader who typed while
   // it was in the air is not left looking at nothing.
-  if (shard) {
-    shard.then(
+  //
+  // **Asked for on the first focus** (M83, A13). `shard` is a function now, not
+  // a promise: 762 KB fetched on every visit for a reader who may never type is
+  // the largest single thing on the wire, and the reader who does type has
+  // focused the box before the first keystroke. Until it lands the box answers
+  // out of the atlas — the same fallback a failed fetch has always had — so
+  // nothing about what a reader sees depends on when it is asked for.
+  let asked = false;
+  const askForShard = () => {
+    if (asked || !shard) return;
+    asked = true;
+    const wanted = shard();
+    if (!wanted?.then) return;
+    wanted.then(
       (list) => { entries = list.length ? list : fromAtlas(); },
       () => { entries = fromAtlas(); },
     ).then(() => { if (input.value) run(); });
+  };
+  input.addEventListener('focus', askForShard);
+  // And on the first keystroke too, for a reader who reached the box without a
+  // focus event of its own — a script setting `value` and dispatching `input`,
+  // which is how the tests type.
+  input.addEventListener('input', askForShard);
+  // And a box that already has text when it is wired answers it. The markup is
+  // in `index.html` and the wiring arrives with the core, so a reader — or a
+  // test — can type into the box before this function has run, and the events
+  // of those keystrokes are gone by the time there is anything to hear them.
+  // It was covered by accident until M83: the shard was fetched at load and its
+  // arrival ran whatever was in the box. The shard is asked for on demand now,
+  // so what was accidental is said.
+  if (input.value) {
+    askForShard();
+    run();
   }
 
   input.addEventListener('keydown', (e) => {

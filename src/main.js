@@ -42,10 +42,21 @@ try {
     dataRoot,
     landFile: fixtures ? 'data/geo/land-present.json' : null,
   });
-  // Started here and never awaited: the search shard is not needed to draw
-  // anything, and blocking the first frame on it would trade the whole of
-  // what the core just saved.
-  const shard = loadSearchShard({ dataRoot, manifest: atlas.manifest });
+  // **Asked for when the box is focused, and not before** (M83, A13). It is
+  // never awaited and never drawn out of, so starting it here cost the first
+  // frame nothing in *time* — but it is 762 KB on the wire against a core of
+  // 192 KB, the largest single thing the page fetches, and it is fetched on
+  // every visit for a reader who may never type. A reader who does type has
+  // focused the box first, and the shard is a fold of the whole atlas that
+  // arrives in well under the time it takes to type a word; until it lands the
+  // box answers out of the atlas, exactly as it does when the file fails
+  // (search-box.js). The promise is made once and kept, so a second focus is
+  // not a second fetch.
+  let searching = null;
+  const shard = () => {
+    searching ??= loadSearchShard({ dataRoot, manifest: atlas.manifest });
+    return searching;
+  };
 
   // Nothing is filled in here: a window bound left null means "as far as the
   // data goes", and each view resolves it against the atlas it was given. An
