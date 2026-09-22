@@ -567,7 +567,7 @@ test('Back comes back to the picture, and the URL says so', { skip }, async () =
 // for. Driven, because the whole point is what `location` says at the time.
 test('the discuss link carries the record\'s address and nothing the reader did', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url('?selected=carnation-revolution-1974&bbox=-10,36,-6,43&from=1900&to=1980&horizon=2000'));
+    await open(page, url('?review=1&selected=carnation-revolution-1974&bbox=-10,36,-6,43&from=1900&to=1980&horizon=2000'));
     // Walk a step, so there is a chain to leak.
     await page.eval('document.querySelector(\'[data-action="follow"]\').click(); return true;');
     await waitFor(page, 'return new URLSearchParams(location.search).has("chain");', 'a walked chain');

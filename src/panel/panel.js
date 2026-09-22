@@ -35,6 +35,7 @@ import { discussUrl, recordUrl, editUrl } from '../share.js';
 import { toggleSection, readOpenSection, sectionBodyHtml } from './sections.js';
 import { categoryLabels } from '../categories.js';
 import { EDGE_TYPE_LABEL } from '../vocab.js';
+import { showingReview } from '../demo.js';
 
 // What the reader asked their browser for, in order. Read once: the cards
 // use it to choose which Wikipedia edition to offer, and a list that changed
@@ -324,10 +325,17 @@ export function createPanel(container, {
       const ids = identifiers(src).map(({ label, href }) => (href
         ? `<a href="${esc(href)}" rel="noopener" target="_blank">${esc(label)}</a>`
         : `<span class="unsafe-url">${esc(label)}</span>`));
+      // Whether somebody has opened the book is review apparatus, and off the
+      // demo it is not what a citation is for (M82, A2; demo.js). The flag on,
+      // it is exactly what it was: `verified` where a reviewer signed the
+      // citation and `unchecked` where nobody has. The record is untouched
+      // either way — `review.citations` is a flag and not a gate, and the
+      // validator counts it from the command line as it always has.
       const verified = flags[c.source]?.verified;
-      const mark = verified
-        ? `<span class="badge verified" title="${esc(`checked against the source by ${verified.by ?? 'a reviewer'}, ${verified.on ?? ''}`.trim())}">verified</span>`
-        : '<span class="unchecked" title="nobody has yet opened the source to check this citation">unchecked</span>';
+      const mark = !showingReview() ? ''
+        : verified
+          ? `<span class="badge verified" title="${esc(`checked against the source by ${verified.by ?? 'a reviewer'}, ${verified.on ?? ''}`.trim())}">verified</span>`
+          : '<span class="unchecked" title="nobody has yet opened the source to check this citation">unchecked</span>';
       return `<li class="citation">
         <span class="creators">${esc((src.creators ?? []).join(', '))}</span>${src.year ? ` (${esc(src.year)})` : ''}.
         <button type="button" class="link cite" data-action="source" data-id="${esc(src.id)}"><em>${esc(src.title)}</em></button>.
@@ -431,6 +439,13 @@ export function createPanel(container, {
   // which is the correction a reader can actually write (health review B,
   // finding 26). The first leaves this site, the second does not.
   function discussLink(kind, id) {
+    // **Both doors are shut on the demo** (M82, A2). "Discuss this record"
+    // opens a GitHub issue and "Edit this record" opens the contribution form;
+    // the owner's standing orders defer contribution until there is funding,
+    // so on the published site they are two invitations into a process that is
+    // not open. `?review=1` has them back, unchanged, and `contribute.html`
+    // and the issue templates are untouched (demo.js).
+    if (!showingReview()) return '';
     const page = typeof location === 'object'
       ? `${location.origin && location.origin !== 'null' ? location.origin : ''}${location.pathname}`
       : '';

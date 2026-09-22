@@ -366,7 +366,9 @@ test('the masthead counts main events of the corpus at rest, and events of it un
 test('the pin and the standing line are what they were', { skip }, async () => {
   await desk(async (page, url) => {
     await seenIntro(page);
-    await open(page, url(`?${WHOLE}&${SOMEWHERE}`),
+    // `review=1`: the standing line is off the demo since M82 (A2), and what
+    // this test is about is that it is unchanged where it is shown.
+    await open(page, url(`?review=1&${WHOLE}&${SOMEWHERE}`),
       'return Boolean(document.querySelector(".window-count")) && document.querySelector(".window-count").textContent.trim() !== "";');
     // The standing line is said whether or not the map is looking at part of
     // the world, and it counts what a person has read — never a filter.

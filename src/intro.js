@@ -35,6 +35,7 @@
 import { esc } from './util/esc.js';
 import { formatInterval } from './util/dates.js';
 import { hasOpening } from './state.js';
+import { bylineOf } from './demo.js';
 
 // Per reader, per browser, like the open section and the pane sizes: it says
 // nothing about what the atlas is showing, so it stays out of the URL.
@@ -100,11 +101,6 @@ export function heaviest(atlas, limit = HEAVIEST) {
 // anybody here decided on.
 export const WHAT_IT_IS = 'The history of the world since 1492 as a graph: every event linked to what caused it and what it led to, with sources.';
 
-const authorsLine = (record) => {
-  const names = (record.authors ?? []).map((a) => a.name).filter(Boolean);
-  return names.length ? names.join(', ') : 'unsigned';
-};
-
 // The card, as a string, so `node --test` can hold it to quoting and to
 // claiming nothing.
 export function introHtml(atlas) {
@@ -124,7 +120,7 @@ export function introHtml(atlas) {
     ${first ? `<section class="intro-start">
       <h3>Start here</h3>
       <p><button type="button" class="intro-go" data-intro="narrative" data-id="${esc(first.id)}">${esc(first.title)}</button>
-        <span class="muted">${esc(authorsLine(first))} · ${esc((first.steps ?? []).length)} steps</span></p>
+        <span class="muted">${esc(bylineOf(first))} · ${esc((first.steps ?? []).length)} steps</span></p>
       <p class="hint">A short account that takes you through the events in order, one at a time. The
         map, the graph and the timeline follow it as you read; it changes nothing it goes through.</p>
     </section>` : ''}
@@ -133,7 +129,7 @@ export function introHtml(atlas) {
       <h3>Accounts to read <span class="count">${esc(narratives.length)}</span></h3>
       <ul>${narratives.map((n) => `<li>
         <button type="button" class="link" data-intro="narrative" data-id="${esc(n.id)}">${esc(n.title)}</button>
-        <span class="muted">${esc(authorsLine(n))}</span>
+        <span class="muted">${esc(bylineOf(n))}</span>
       </li>`).join('')}</ul>
     </section>` : ''}
 

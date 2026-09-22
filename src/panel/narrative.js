@@ -16,11 +16,12 @@ import { RELATION_LABEL } from '../vocab.js';
 // card's head and is filled when the record's own file lands, because the core
 // row a card is built from carries no signature.
 import { standingSlot, fillStanding } from '../standing.js';
+// Who an account is published under (M82, A2). The names are the record's own
+// where the review apparatus is on and the atlas's own byline where it is not;
+// nothing under `data/` changes either way (demo.js).
+import { bylineOf } from '../demo.js';
 
-function authorsLine(narrative) {
-  const names = (narrative.authors ?? []).map((a) => a.name).filter(Boolean);
-  return names.length ? esc(names.join(', ')) : 'unsigned';
-}
+const authorsLine = (narrative) => esc(bylineOf(narrative));
 
 // The narratives a record is part of, wherever a record is shown. Empty when
 // none passes through it, so nothing is said about a record that no one has

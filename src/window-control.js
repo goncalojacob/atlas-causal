@@ -41,6 +41,7 @@ import { workingSet, heldSet } from './emphasis.js';
 import { bandEvents } from './window-band.js';
 import { eventsInView } from './util/viewport.js';
 import { readCount, readCountText } from './standing.js';
+import { showingReview } from './demo.js';
 
 // The one sentence the count is (M80), pure so that what it says can be held
 // to without a browser.
@@ -167,7 +168,13 @@ export function createWindowControl(group, { atlas, state }) {
     // reader made and is nothing until they make it, and "0 of 242 read" is
     // about the corpus and is true from the first frame. It is honesty and
     // never a filter — nothing here decides what is drawn.
-    read.textContent = readCountText(readCount(n.events));
+    // **Off the demo, behind one flag** (M82, A2). "0 of 245 read" is true,
+    // and it is the second thing a funder reads on the first screen of a demo
+    // whose review process the owner has deferred until there is funding. The
+    // count is the same count and `?review=1` still prints it; what is gone is
+    // the atlas announcing the state of its own queue to somebody who has not
+    // asked (demo.js).
+    read.textContent = showingReview() ? readCountText(readCount(n.events)) : '';
   }
 
   state.subscribe(render);

@@ -162,7 +162,11 @@ export const DEFAULT_LAYERS = Object.freeze(LAYERS.filter((id) => id !== 'relief
 const EVENTS_LAYER = /^events:[a-z0-9]+(-[a-z0-9]+)*$/;
 export { VIEWS };
 // Query parameters that are not state but must survive a state write.
-const PASSTHROUGH = Object.freeze(['fixtures']);
+// `review` joined it in M82: it says whether the page shows the review
+// apparatus (demo.js), which is a fact about the page and not about what the
+// atlas is drawing, and a maintainer who clicks an event should not find they
+// have turned it off.
+const PASSTHROUGH = Object.freeze(['fixtures', 'review']);
 
 // What the degree control offers, and where it starts. **Two**, and not zero:
 // the whole of M48 is that the interface has the right machinery and does not

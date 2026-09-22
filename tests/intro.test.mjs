@@ -12,6 +12,7 @@ import {
   introHtml, heaviest, hasSeen, markSeen, opensOnNothing, HEAVIEST, STORAGE_KEY, SEEN,
 } from '../src/intro.js';
 import { defaultState } from '../src/state.js';
+import { setReview } from '../src/demo.js';
 import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
 
 const atlas = await atlasOf(path.join(ROOT, 'data'));
@@ -67,7 +68,12 @@ test('the card is escaped like every other thing built out of a record', () => {
   assert.doesNotMatch(html, /<script/, 'no tag a record wrote reaches the DOM as a tag');
   assert.doesNotMatch(html, /<img/);
   assert.match(html, /&lt;img src=x onerror=alert\(1\)&gt;/, 'it is there, as text');
-  assert.match(html, /&quot;&gt;&lt;script&gt;/, 'and so is the author line');
+  // The author line is the atlas's own byline on the published site (M82,
+  // A2), so what a record wrote there reaches no page at all; with the review
+  // flag on it is printed, and escaped.
+  setReview(true);
+  assert.match(introHtml(nasty), /&quot;&gt;&lt;script&gt;/, 'and so is the author line');
+  setReview(null);
 });
 
 test('a dataset with no narratives and no weights still opens on something', async () => {

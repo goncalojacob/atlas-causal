@@ -12,6 +12,7 @@
 // can be copied, and they work before any script has run.
 
 import { esc, safeUrl } from '../util/esc.js';
+import { showingReview } from '../demo.js';
 import { formatInterval } from '../util/dates.js';
 import { renderBody, tocHtml } from '../markdown.js';
 import { identifiers, containerText } from '../citation.js';
@@ -271,7 +272,7 @@ export function entryHtml(atlas, {
       ${metaHtml(atlas, links, kind, record, topologyEntry)}
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
       <p class="entry-back"><a href="${esc(links.atlas(kind, record.id))}">Open this on the map and the timeline →</a></p>
-      <p class="discuss"><a class="edit-record" href="${esc(links.edit(kind, record.id))}">Edit this record</a></p>
+      ${showingReview() ? `<p class="discuss"><a class="edit-record" href="${esc(links.edit(kind, record.id))}">Edit this record</a></p>` : ''}
       ${wikipediaHtml(record, languages)}
     </header>
     ${record.summary ? `<section class="entry-summary"><p>${esc(record.summary)}</p></section>` : ''}
