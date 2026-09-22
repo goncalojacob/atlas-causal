@@ -4184,6 +4184,34 @@
       ],
       "created": "2026-09-22",
       "from": "colombian-conflict",
+      "id": "colombian-conflict--1999-2002-farc-government-peace-process--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1999-2002-farc-government-peace-process",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "colombian-conflict",
       "id": "colombian-conflict--colombian-peace-process--reacted-to",
       "kind": "edge",
       "origin": {
@@ -4199,6 +4227,34 @@
       "status": "active",
       "to": "colombian-peace-process",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "colombian-peace-process",
+      "id": "colombian-peace-process--catatumbo-campaign--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "catatumbo-campaign",
+      "type": "enabled"
     },
     {
       "authors": [

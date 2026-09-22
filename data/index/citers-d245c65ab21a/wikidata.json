@@ -1736,6 +1736,12 @@
     },
     {
       "dissent": false,
+      "id": "1980-dominican-embassy-siege-in-bogota",
+      "kind": "event",
+      "locator": "Q4355011"
+    },
+    {
+      "dissent": false,
       "id": "1980-portuguese-legislative-election",
       "kind": "event",
       "locator": null
@@ -1817,6 +1823,12 @@
       "id": "1998-portuguese-abortion-referendum",
       "kind": "event",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1999-2002-farc-government-peace-process",
+      "kind": "event",
+      "locator": "Q4595671"
     },
     {
       "dissent": false,
@@ -1952,6 +1964,12 @@
     },
     {
       "dissent": false,
+      "id": "2019-bogota-car-bombing",
+      "kind": "event",
+      "locator": "Q60668574"
+    },
+    {
+      "dissent": false,
       "id": "2020-malian-coup-d-etat",
       "kind": "event",
       "locator": "Q98457371"
@@ -2072,6 +2090,12 @@
     },
     {
       "dissent": false,
+      "id": "andino-shopping-mall-attack",
+      "kind": "event",
+      "locator": "Q30337973"
+    },
+    {
+      "dissent": false,
       "id": "anglo-iraqi-war",
       "kind": "event",
       "locator": "Q696848"
@@ -2165,6 +2189,18 @@
       "id": "assassination-of-miguel-uribe-turbay",
       "kind": "event",
       "locator": "Q134734156"
+    },
+    {
+      "dissent": false,
+      "id": "atentado-a-la-estacion-de-policia-de-barranquilla",
+      "kind": "event",
+      "locator": "Q47505031"
+    },
+    {
+      "dissent": false,
+      "id": "attack-on-cerro-montezuma",
+      "kind": "event",
+      "locator": "Q105883497"
     },
     {
       "dissent": false,
@@ -2438,9 +2474,21 @@
     },
     {
       "dissent": false,
+      "id": "bombing-in-zona-rosa-of-bogota-of-2003",
+      "kind": "event",
+      "locator": "Q5710644"
+    },
+    {
+      "dissent": false,
       "id": "boxer-rebellion",
       "kind": "event",
       "locator": "Q150229"
+    },
+    {
+      "dissent": false,
+      "id": "boyaca-necklace-bomb-incident",
+      "kind": "event",
+      "locator": "Q139505717"
     },
     {
       "dissent": false,
@@ -2504,6 +2552,12 @@
     },
     {
       "dissent": false,
+      "id": "catatumbo-campaign",
+      "kind": "event",
+      "locator": "Q66474138"
+    },
+    {
+      "dissent": false,
       "id": "charter-of-the-united-nations",
       "kind": "event",
       "locator": "Q171328"
@@ -2525,6 +2579,18 @@
       "id": "colombian-conflict",
       "kind": "event",
       "locator": "Q169072"
+    },
+    {
+      "dissent": false,
+      "id": "colombian-conflict-2018-present",
+      "kind": "event",
+      "locator": "Q118152947"
+    },
+    {
+      "dissent": false,
+      "id": "colombian-conflict-between-1974-1990",
+      "kind": "event",
+      "locator": "Q76763052"
     },
     {
       "dissent": false,
@@ -2747,6 +2813,12 @@
       "id": "fall-of-saigon",
       "kind": "event",
       "locator": "Q482456"
+    },
+    {
+      "dissent": false,
+      "id": "false-positives-in-colombia",
+      "kind": "event",
+      "locator": "Q779179"
     },
     {
       "dissent": false,
@@ -3008,9 +3080,21 @@
     },
     {
       "dissent": false,
+      "id": "honduras-and-la-negra-farms-massacre",
+      "kind": "event",
+      "locator": "Q124308988"
+    },
+    {
+      "dissent": false,
       "id": "hong-kong-flu",
       "kind": "event",
       "locator": "Q1069785"
+    },
+    {
+      "dissent": false,
+      "id": "house-bomb-attack-in-neiva",
+      "kind": "event",
+      "locator": "Q5710617"
     },
     {
       "dissent": false,
@@ -3272,6 +3356,12 @@
     },
     {
       "dissent": false,
+      "id": "las-palmas-massacre",
+      "kind": "event",
+      "locator": "Q123149461"
+    },
+    {
+      "dissent": false,
       "id": "lateran-treaty",
       "kind": "event",
       "locator": "Q193270"
@@ -3365,6 +3455,12 @@
       "id": "molotov-ribbentrop-pact",
       "kind": "event",
       "locator": "Q130796"
+    },
+    {
+      "dissent": false,
+      "id": "mondonedo-massacre",
+      "kind": "event",
+      "locator": "Q60385266"
     },
     {
       "dissent": false,
@@ -3470,6 +3566,18 @@
     },
     {
       "dissent": false,
+      "id": "operation-jaque",
+      "kind": "event",
+      "locator": "Q2308768"
+    },
+    {
+      "dissent": false,
+      "id": "operation-jm",
+      "kind": "event",
+      "locator": "Q7097182"
+    },
+    {
+      "dissent": false,
       "id": "operation-keyhole",
       "kind": "event",
       "locator": "Q7097204"
@@ -3503,6 +3611,12 @@
       "id": "orange-revolution",
       "kind": "event",
       "locator": "Q836386"
+    },
+    {
+      "dissent": false,
+      "id": "palace-of-justice-siege",
+      "kind": "event",
+      "locator": "Q829836"
     },
     {
       "dissent": false,
@@ -3833,6 +3947,12 @@
       "id": "siamese-revolution-of-1932",
       "kind": "event",
       "locator": "Q2120252"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mitu",
+      "kind": "event",
+      "locator": "Q3403831"
     },
     {
       "dissent": false,
@@ -4229,6 +4349,12 @@
       "id": "twelve-day-war",
       "kind": "event",
       "locator": "Q134900605"
+    },
+    {
+      "dissent": false,
+      "id": "united-states-military-campaign-against-cartels",
+      "kind": "event",
+      "locator": "Q136090852"
     },
     {
       "dissent": false,

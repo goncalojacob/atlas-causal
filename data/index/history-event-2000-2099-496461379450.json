@@ -1933,6 +1933,15 @@
         }
       ]
     },
+    "2019-bogota-car-bombing": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "2019-european-parliament-election-in-portugal": {
       "from": "git",
       "versions": [
@@ -3166,6 +3175,15 @@
         }
       ]
     },
+    "andino-shopping-mall-attack": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "anti-counterfeiting-trade-agreement": {
       "from": "git",
       "versions": [
@@ -3231,6 +3249,30 @@
             "summary"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "atentado-a-la-estacion-de-policia-de-barranquilla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "attack-on-cerro-montezuma": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3268,6 +3310,15 @@
         }
       ]
     },
+    "bombing-in-zona-rosa-of-bogota-of-2003": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "borba-tragedy": {
       "from": "git",
       "versions": [
@@ -3299,6 +3350,15 @@
             "title"
           ],
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "boyaca-necklace-bomb-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3391,6 +3451,24 @@
             "place",
             "review"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "catatumbo-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "colombian-conflict-2018-present": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -3853,6 +3931,15 @@
         }
       ]
     },
+    "false-positives-in-colombia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "fiftieth-anniversary-25-april-2024": {
       "from": "git",
       "versions": [
@@ -4137,6 +4224,15 @@
             "parent"
           ],
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "house-bomb-attack-in-neiva": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4986,6 +5082,24 @@
             "parent"
           ],
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "operation-jaque": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "operation-jm": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -5945,6 +6059,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "united-states-military-campaign-against-cartels": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

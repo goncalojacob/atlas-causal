@@ -1495,6 +1495,44 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "1980-dominican-embassy-siege-in-bogota",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "colombian-conflict",
+        "colombian-conflict-between-1974-1990"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "1980 Dominican Embassy Siege in Bogotá"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "category": "election",
       "cites": [
         "costa-pinto-2003-contemporary-portugal",
@@ -2040,6 +2078,41 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "1998 Portuguese abortion referendum"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "1999-2002-farc-government-peace-process",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "1999–2002 FARC–Government peace process"
     },
     {
       "authors": [
@@ -2854,6 +2927,43 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "2019-bogota-car-bombing",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "colombian-conflict",
+        "colombian-conflict-2018-present"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "2019 Bogotá car bombing"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "category": "revolution",
       "cites": [
         "wikidata",
@@ -3655,6 +3765,40 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "andino-shopping-mall-attack",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Andino shopping mall attack"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -4246,7 +4390,10 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "colombian-conflict",
+      "parent": [
+        "colombian-conflict",
+        "colombian-conflict-2018-present"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -4258,6 +4405,71 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "assassination of Miguel Uribe Turbay"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "atentado-a-la-estacion-de-policia-de-barranquilla",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "colombian-conflict",
+        "colombian-conflict-2018-present"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Atentado a la estación de policía de Barranquilla"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "attack-on-cerro-montezuma",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Attack on Cerro Montezuma"
     },
     {
       "authors": [
@@ -5848,6 +6060,40 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "bombing-in-zona-rosa-of-bogota-of-2003",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Bombing in Zona Rosa of Bogota of 2003"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5908,6 +6154,40 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Boxer Rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "boyaca-necklace-bomb-incident",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Boyacá necklace bomb incident"
     },
     {
       "authors": [
@@ -6369,6 +6649,45 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "catatumbo-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "colombian-conflict",
+        "colombian-conflict-2018-present"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Catatumbo campaign"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -6520,7 +6839,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "colombian-conflict",
       "kind": "event",
       "origin": {
@@ -6544,6 +6863,63 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "colombian-conflict-2018-present",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Colombian conflict (2018–present)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "colombian-conflict-between-1974-1990",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Colombian Conflict between 1974-1990"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -6556,7 +6932,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "colombian-peace-process",
       "kind": "event",
       "origin": {
@@ -8624,6 +9000,39 @@
         }
       ],
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "false-positives-in-colombia",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "false positives in Colombia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "wikipedia-pt",
         "wikidata"
@@ -10411,6 +10820,43 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "honduras-and-la-negra-farms-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "colombian-conflict",
+        "colombian-conflict-between-1974-1990"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Honduras and La Negra farms massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "category": "disaster",
       "cites": [
         "wikidata",
@@ -10433,6 +10879,40 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Hong Kong flu"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "house-bomb-attack-in-neiva",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "house-bomb attack in Neiva"
     },
     {
       "authors": [
@@ -12092,6 +12572,34 @@
       "cites": [
         "wikidata"
       ],
+      "created": "2026-09-22",
+      "id": "las-palmas-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Las Palmas Massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
       "created": "2026-09-05",
       "degree": 1,
       "id": "lateran-treaty",
@@ -13081,6 +13589,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "mondonedo-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mondoñedo Massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -13929,6 +14465,75 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "operation-jaque",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Operation Jaque"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "operation-jm",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Operation JM"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -14108,6 +14713,43 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Orange Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "palace-of-justice-siege",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "colombian-conflict",
+        "colombian-conflict-between-1974-1990"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Palace of Justice Siege"
     },
     {
       "authors": [
@@ -16586,6 +17228,41 @@
       "revised": "2026-09-18",
       "status": "active",
       "title": "Sidónio Pais's coup"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "siege-of-mitu",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Siege of Mitú"
     },
     {
       "authors": [
@@ -19933,6 +20610,44 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "united-states-military-campaign-against-cartels",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "colombian-conflict",
+        "colombian-conflict-2018-present"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "United States military campaign against cartels"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -21076,7 +21791,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1980-dominican-embassy-siege-in-bogota",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1982-british-army-gazelle-friendly-fire-incident",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2019-bogota-car-bombing",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -21089,6 +21816,12 @@
     },
     {
       "id": "allied-invasion-of-sicily",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "andino-shopping-mall-attack",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -21107,6 +21840,18 @@
     },
     {
       "id": "assassination-of-miguel-uribe-turbay",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "atentado-a-la-estacion-de-policia-de-barranquilla",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "attack-on-cerro-montezuma",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -21268,6 +22013,30 @@
       "rule": "degree-zero"
     },
     {
+      "id": "bombing-in-zona-rosa-of-bogota-of-2003",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "boyaca-necklace-bomb-incident",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "colombian-conflict-2018-present",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "colombian-conflict-between-1974-1990",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "decolonisation-of-africa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -21286,7 +22055,25 @@
       "rule": "degree-zero"
     },
     {
+      "id": "false-positives-in-colombia",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "herero-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "honduras-and-la-negra-farms-massacre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "house-bomb-attack-in-neiva",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -21346,6 +22133,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "las-palmas-massacre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "marco-polo-bridge-incident",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -21353,6 +22146,12 @@
     },
     {
       "id": "massacre-of-arabs-during-the-zanzibar-revolution",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "mondonedo-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -21394,7 +22193,25 @@
       "rule": "degree-zero"
     },
     {
+      "id": "operation-jaque",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "operation-jm",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "operation-keyhole",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "palace-of-justice-siege",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -21436,6 +22253,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-mitu",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "sinking-of-ara-general-belgrano",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -21467,6 +22290,12 @@
     },
     {
       "id": "third-portuguese-republic-since-1974",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "united-states-military-campaign-against-cartels",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

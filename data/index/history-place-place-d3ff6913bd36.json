@@ -384,6 +384,24 @@
         }
       ]
     },
+    "bogota": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "bolivar-department": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "bosnia-and-herzegovina": {
       "from": "git",
       "versions": [
@@ -600,6 +618,24 @@
         }
       ]
     },
+    "caribbean-sea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "catatumbo-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "cecilienhof": {
       "from": "git",
       "versions": [
@@ -668,6 +704,15 @@
         }
       ]
     },
+    "chapinero": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "checheno-ingush-autonomous-soviet-socialist-republic": {
       "from": "git",
       "versions": [
@@ -709,6 +754,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "chiquinquira": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -803,6 +857,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "cundinamarca-department": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -1487,6 +1550,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "guaviare-department": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -2620,6 +2692,15 @@
         }
       ]
     },
+    "mitu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "monastir-vilayet": {
       "from": "git",
       "versions": [
@@ -2849,6 +2930,15 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "neiva": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3556,6 +3646,15 @@
         }
       ]
     },
+    "pueblo-rico": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "qing-dynasty": {
       "from": "git",
       "versions": [
@@ -3918,12 +4017,30 @@
         }
       ]
     },
+    "san-jacinto": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "san-salvador-island": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "san-vicente-del-caguan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4674,6 +4791,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "uraba-choco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]

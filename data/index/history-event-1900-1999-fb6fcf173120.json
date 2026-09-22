@@ -2995,6 +2995,15 @@
         }
       ]
     },
+    "1980-dominican-embassy-siege-in-bogota": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "1980-madeira-regional-legislative-election": {
       "from": "git",
       "versions": [
@@ -4349,6 +4358,15 @@
             "place",
             "review"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1999-2002-farc-government-peace-process": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -7726,6 +7744,15 @@
         }
       ]
     },
+    "colombian-conflict-between-1974-1990": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "companhia-siderurgica-nacional-1941": {
       "from": "git",
       "versions": [
@@ -10719,6 +10746,15 @@
         }
       ]
     },
+    "honduras-and-la-negra-farms-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "hong-kong-flu": {
       "from": "git",
       "versions": [
@@ -11968,6 +12004,15 @@
         }
       ]
     },
+    "las-palmas-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "lateran-treaty": {
       "from": "git",
       "versions": [
@@ -12808,6 +12853,15 @@
           "fields": [
             "parent"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "mondonedo-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -13747,6 +13801,15 @@
             "status"
           ],
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "palace-of-justice-siege": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -16086,6 +16149,15 @@
             "parent"
           ],
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "siege-of-mitu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

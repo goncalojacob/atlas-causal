@@ -1802,9 +1802,21 @@
     },
     {
       "dissent": false,
+      "id": "colombian-conflict--1999-2002-farc-government-peace-process--reacted-to",
+      "kind": "edge",
+      "locator": "\"1999–2002 FARC–Government peace process\", revision 1370280050, § lead"
+    },
+    {
+      "dissent": false,
       "id": "colombian-conflict--colombian-peace-process--reacted-to",
       "kind": "edge",
       "locator": "\"Colombian peace process\", revision 1375561117, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "colombian-peace-process--catatumbo-campaign--enabled",
+      "kind": "edge",
+      "locator": "\"Catatumbo campaign\", revision 1370610401, § lead"
     },
     {
       "dissent": false,
@@ -5462,6 +5474,12 @@
     },
     {
       "dissent": false,
+      "id": "1980-dominican-embassy-siege-in-bogota",
+      "kind": "event",
+      "locator": "\"1980 Dominican Republic Embassy siege in Bogotá\", revision 1370279778"
+    },
+    {
+      "dissent": false,
       "id": "1980-portuguese-legislative-election",
       "kind": "event",
       "locator": "\"1980 Portuguese legislative election\", revision 1372482157"
@@ -5543,6 +5561,12 @@
       "id": "1998-portuguese-abortion-referendum",
       "kind": "event",
       "locator": "\"1998 Portuguese abortion referendum\", revision 1356123279"
+    },
+    {
+      "dissent": false,
+      "id": "1999-2002-farc-government-peace-process",
+      "kind": "event",
+      "locator": "\"1999–2002 FARC–Government peace process\", revision 1370280050"
     },
     {
       "dissent": false,
@@ -5678,6 +5702,12 @@
     },
     {
       "dissent": false,
+      "id": "2019-bogota-car-bombing",
+      "kind": "event",
+      "locator": "\"2019 Bogotá car bombing\", revision 1374649549"
+    },
+    {
+      "dissent": false,
       "id": "2020-malian-coup-d-etat",
       "kind": "event",
       "locator": "\"2020 Malian coup d'état\", revision 1370424404"
@@ -5792,6 +5822,12 @@
     },
     {
       "dissent": false,
+      "id": "andino-shopping-mall-attack",
+      "kind": "event",
+      "locator": "\"Centro Andino bombing\", revision 1360963226"
+    },
+    {
+      "dissent": false,
       "id": "anglo-iraqi-war",
       "kind": "event",
       "locator": "\"Anglo-Iraqi War\", revision 1372842948"
@@ -5867,6 +5903,12 @@
       "id": "assassination-of-miguel-uribe-turbay",
       "kind": "event",
       "locator": "\"Assassination of Miguel Uribe Turbay\", revision 1345275508"
+    },
+    {
+      "dissent": false,
+      "id": "atentado-a-la-estacion-de-policia-de-barranquilla",
+      "kind": "event",
+      "locator": "\"2018 Colombia police stations attacks\", revision 1340424568"
     },
     {
       "dissent": false,
@@ -6050,9 +6092,21 @@
     },
     {
       "dissent": false,
+      "id": "bombing-in-zona-rosa-of-bogota-of-2003",
+      "kind": "event",
+      "locator": "\"2003 Zona Rosa attacks\", revision 1350326644"
+    },
+    {
+      "dissent": false,
       "id": "boxer-rebellion",
       "kind": "event",
       "locator": "\"Boxer Rebellion\", revision 1372943833"
+    },
+    {
+      "dissent": false,
+      "id": "boyaca-necklace-bomb-incident",
+      "kind": "event",
+      "locator": "\"Boyacá necklace bomb incident\", revision 1353297969"
     },
     {
       "dissent": false,
@@ -6113,6 +6167,12 @@
       "id": "cambodian-vietnamese-war",
       "kind": "event",
       "locator": "\"Cambodian–Vietnamese War\", revision 1376151864"
+    },
+    {
+      "dissent": false,
+      "id": "catatumbo-campaign",
+      "kind": "event",
+      "locator": "\"Catatumbo campaign\", revision 1370610401"
     },
     {
       "dissent": false,
@@ -6368,6 +6428,12 @@
     },
     {
       "dissent": false,
+      "id": "false-positives-in-colombia",
+      "kind": "event",
+      "locator": "\"\"False positives\" scandal\", revision 1375273347"
+    },
+    {
+      "dissent": false,
       "id": "february-revolution",
       "kind": "event",
       "locator": "\"February Revolution\", revision 1370618162"
@@ -6614,9 +6680,21 @@
     },
     {
       "dissent": false,
+      "id": "honduras-and-la-negra-farms-massacre",
+      "kind": "event",
+      "locator": "\"Honduras and La Negra farms massacre\", revision 1363367769"
+    },
+    {
+      "dissent": false,
       "id": "hong-kong-flu",
       "kind": "event",
       "locator": "\"Hong Kong flu\", revision 1362933012"
+    },
+    {
+      "dissent": false,
+      "id": "house-bomb-attack-in-neiva",
+      "kind": "event",
+      "locator": "\"2003 Neiva bombing\", revision 1338994311"
     },
     {
       "dissent": false,
@@ -7034,6 +7112,18 @@
     },
     {
       "dissent": false,
+      "id": "operation-jaque",
+      "kind": "event",
+      "locator": "\"Operation Jaque\", revision 1370633477"
+    },
+    {
+      "dissent": false,
+      "id": "operation-jm",
+      "kind": "event",
+      "locator": "\"Operation JM\", revision 1370633416"
+    },
+    {
+      "dissent": false,
       "id": "operation-reinhard",
       "kind": "event",
       "locator": "\"Operation Reinhard\", revision 1367661549"
@@ -7043,6 +7133,12 @@
       "id": "orange-revolution",
       "kind": "event",
       "locator": "\"Orange Revolution\", revision 1372581321"
+    },
+    {
+      "dissent": false,
+      "id": "palace-of-justice-siege",
+      "kind": "event",
+      "locator": "\"Palace of Justice siege\", revision 1374219418"
     },
     {
       "dissent": false,
@@ -7373,6 +7469,12 @@
       "id": "siamese-revolution-of-1932",
       "kind": "event",
       "locator": "\"Siamese revolution of 1932\", revision 1370738350"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mitu",
+      "kind": "event",
+      "locator": "\"Siege of Mitú\", revision 1370743579"
     },
     {
       "dissent": false,
@@ -7973,6 +8075,12 @@
       "id": "twelve-day-war",
       "kind": "event",
       "locator": "\"Twelve-Day War\", revision 1370751931"
+    },
+    {
+      "dissent": false,
+      "id": "united-states-military-campaign-against-cartels",
+      "kind": "event",
+      "locator": "\"United States military buildup in the Caribbean during Operation Southern Spear\", revision 1375987627"
     },
     {
       "dissent": false,

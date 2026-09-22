@@ -309,6 +309,15 @@
         }
       ]
     },
+    "colombian-peace-process--catatumbo-campaign--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "costa-resigns-2023--legislative-election-2024--caused": {
       "from": "git",
       "versions": [
