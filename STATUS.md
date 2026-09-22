@@ -18357,6 +18357,292 @@ against the tighter test and all twelve hold.
      activity is not a kind of event, and the table is for classes that say
      what a record is.
 
+## M82 — the first screen
+
+Lane A, on the branch `m82`. The owner is away for a week and the atlas is
+*"a demo to show the platform"* to win funding. A Fable reviewer read the live
+site as a first-time reader on 22 September and wrote seventeen findings
+(`docs/review-2026-09-22.md`, part A); `docs/m82-brief.md` names eight of them
+and this is those eight, in its order. Nothing under `data/` changed.
+
+Before and after, side by side: `docs/screens/m82-first-screen.png`,
+`m82-intro.png`, `m82-graph.png`, `m82-timeline.png`, `m82-map-key.png`,
+`m82-phone.png`, each with a `-before` twin taken on the tree as it stood at
+`M81 done`. No other picture under `docs/screens/` was rewritten.
+
+### 1 — A3. The site says in plain words what it is
+
+The tagline was *"Pick an event, follow its consequences, see which other
+branches fed the same endpoint"*, which describes a gesture and not a subject.
+Under the title now, and at the head of the intro card, in one sentence:
+
+> The history of the world since 1492 as a graph: every event linked to what
+> caused it and what it led to, with sources.
+
+1492 is the corpus's own earliest year — `atlas.extent.min`, asserted in
+`tests/m82.test.mjs` against the sentence, so the two cannot come apart. One
+constant, `WHAT_IT_IS` in `src/intro.js`, and a test holds `index.html` to it.
+
+The card itself is rewritten. It opened on *"A map, a graph and a timeline of
+the same records"* and then spent **walk, lens, focus, chip, other branches**
+and **breadcrumb** before a visitor had clicked once — the project's own names
+for its own machinery, which a funder has nothing to attach to. The steps say
+what a click does: open an event, read what it led to, click one of those; and
+what led to it, including the causes you did not arrive through. A test reads
+the card's prose and fails on any of those six words.
+
+The count line says *"N main events of M in view"*, and what a **main** event
+is is now said once, as the control's own title: *"A main event is one that is
+not part of any larger event. Open a war or a regime and what happened inside
+it appears."*
+
+**And the card names what it offers.** Taking its picture showed it printing
+`world-war-ii` and `how-the-colonial-war-ended-the-regime` where the titles go,
+and *"0 steps"*: a title arrives with its century (`attributes.js`) and the
+card was built once, at load. It is drawn again when a shard lands, as the
+three views, the panel, the chips and the composer already were. This is part
+B's finding 16 met in the one place the brief's own fix put it.
+
+### 2 — A2. The review vocabulary goes off the demo
+
+The masthead read *"0 of 245 read"* on every screenshot, every card said
+*"Unread: no person has checked this record"*, every citation was tagged
+*unchecked*, every card offered **Discuss this record** and **Edit this
+record**, and the two narratives — including the one the card offers under
+"Start here" — were signed *"Claude (assistant draft, unreviewed)"*. All of it
+true; all of it the first thing a funder reads on a page that is not asking
+them to review anything, and two doors into a contribution process the owner
+has deferred until there is funding.
+
+`src/demo.js` is one flag, off unless `?review=1` asks for it, and
+`showingReview()` is read in five places: `standing.js`'s three markup
+functions, the masthead's read count, the `unchecked` tag on a citation, the
+Discuss/Edit pair on a card, and the Edit link on an entry page. `bylineOf`
+is the sixth: an account is published under the atlas's own byline with the
+flag off and under the record's own authors with it on, in the intro card, the
+narrative card and `narratives.html` alike.
+
+**Nothing under `data/` changed and nothing here is a filter.** The records say
+what they said, `review.status` is what it was, `node tools/validate.mjs`
+prints the same 10,889 drafts and 11,649 unchecked citations, and `review.html`
+is untouched. `?review` is in `state.js`'s `PASSTHROUGH` beside `?fixtures`, so
+a maintainer who clicks an event does not silently turn it off. The suites that
+are *about* the marker — `tests/m70.test.mjs` and `tests/m70-browser.test.mjs`
+— read the atlas as a maintainer does and assert the same words they always
+did.
+
+### 3 — A1. The graph at rest is readable
+
+Three things, and the measurement is the argument. At 1280 × 900 on the real
+corpus the resting graph drew **123 marks and two labels**; it draws **169
+marks and 66 labels** now, none of them cut.
+
+**Rest means rest.** `DEGREE_DEFAULT` was two, from M48, on the argument that
+103 of 250 events had one link or none and a picture of all of them was two
+hundred circles nobody could read. M65 made that argument a second time and
+better: at rest a view draws the **main events**, and the parts of a war are
+drawn when the reader opens the war. The degree floor on top of that was a
+second filter nobody had asked for, applied before the first click, and what it
+removed was not haze but ninety-one events that are nothing's parts and happen
+to have one link or none — the 154 against 245 the reviewer measured. It starts
+at **zero**; the control is untouched and the reader still raises it.
+
+**Every mark is offered its name.** M77's rule — a name is drawn whole or not
+at all, on a nearby free line if its own is taken, and the pointer carries what
+is left — applied to a lens and not to the resting picture, where fourteen
+marks were offered a name, each capped to M61's slice of the width and allowed
+two lines either side of its own. There is no reason for the difference: the
+field above a mark is as free at rest as under a lens. `ROWS_AWAY` is gone,
+`LABEL_ALL_ZOOM` with it, and M61's `SLICE` no longer binds — what was left of
+it was a rule that a long name is not drawn at all however much room there is,
+which silenced fourteen more marks of the hundred and sixty-nine.
+
+**The axis is the drawn set's own.** `timeAxis` answered `null` at rest and the
+caller fell back to the corpus's extent and the corpus's century counts — an
+axis built from 582 events to lay out the 245 the picture holds. M81's rule has
+nothing about a lens in it, and it now applies at rest too. **Measured, the
+difference is small**: the 20th century's share of the width moves from 23.1 %
+to 22.1 %, because the main events are spread over the centuries much as the
+corpus is. It is the honest axis either way; what it can no longer do is
+describe a century by events the reader is not being shown.
+
+**Not done, and why.** The reviewer also asks that the 20th century get *"the
+width its density needs"*, and neither of the two changes above delivers that:
+166 of the 245 marks still stand in 22 % of the drawing. The change that would
+is the camera — fitting the **height** and letting time run past the pane, so
+the reader pans for the rest, which at `STRETCH_CAP` is four times the room.
+That contradicts M74 and M76 in terms (*"at rest the graph opens on everything
+it draws"*, and the owner's own *"the graph can always show all dates, then one
+can zoom in and out and pan"*), so it was not made without the owner. It is the
+one thing in this milestone that wants a decision rather than a patch.
+
+**And the LINKS key folds to one button on a phone**, where it covered half the
+picture.
+
+### 4 — A5. The "no place" box becomes a note in the count line
+
+*"96 events in this window have no place; they are on the timeline."* stood in
+the bottom-left corner of the map, as a full sentence, on every visit. It is a
+fact about the window and not about the picture, so it is said where the
+window's other fact is said — beside the count in the masthead, in a dozen
+words: *"147 events in this window have no place on the map"*. Counted over the
+very same three filters the map's corner counted it over (active, kept by the
+lens, overlapping the window), so the number is the number it was; the corner
+keeps what it alone can say, which is the name of an event that spans the whole
+map.
+
+### 5 — A6. The timeline's headings no longer collide
+
+Four rows above the lanes, and three were declared. The borders note at 12, the
+band's two years at 26, the axis's ticks at 48 — and the umbrella names
+squeezed in at 36, ten pixels under the band's years, which at eleven-pixel
+type is two lines of text in the room for one. That is both halves of the
+reviewer's complaint: *"the umbrella names overprint each other"* and *"a
+second row of years runs under the first"*.
+
+The rows are named now (`MARKER_Y`, `BAND_YEAR_Y`, `UMBRELLA_Y`,
+`TICK_LABEL_Y`), they are a line apart, and `AXIS_HEIGHT` is as tall as the
+rows it holds. An umbrella name is written **whole on the first free row of two
+or not at all**, which is M77's rule for a bar's title said about a band's
+name; it was cut at twenty-eight characters and laid on one line whatever else
+was there. And a tick that lands within a label's width of one of the band's
+own years is left **unlabelled** — the tick stays, because the tick is the
+measure — so no year is written twice on two rows.
+
+### 6 — A10. "Read the full entry →" only where an entry exists
+
+No record in `data/` carries a body: 0 of 819 events, so nothing is prerendered
+under `entry/` and every one of those links led to a page saying nobody has
+written the entry yet. `hasEntry` is one question asked in one place: the build
+prerenders a page on that answer (`tools/lib/prerender.mjs`) and the card offers
+the link on that answer (`panel.js`), filled into a slot when the record's own
+file lands, as the summary and the standing line are. A test holds the two to
+each other record by record, so the day a body is written the link appears
+without anything being told.
+
+### 7 — A7, A8, A11
+
+**A key on the map and the timeline.** The graph has had one since M28; the
+other two draw eight shapes between them and explained none of them —
+`docs/screens/glyphs-legend.html` is not linked from the site. `src/view-key.js`
+is the same box in the same corner: one row per shape, `MAP_ROWS` and
+`TIMELINE_ROWS` as data so a key can be held to its rows without a DOM, and the
+same fold to one button on a phone. The rows are drawn as the picture draws
+the thing they stand for, with rules of their own in `style.css` that repeat
+the picture's declarations and tokens but **not its selectors** — `.map .mark`
+is how twenty tests ask whether the map has drawn a mark yet, and a key that
+answered them would be a key lying about the picture. A browser test holds a
+row and a real mark to the same computed stroke and fill, which binds them
+harder than one selector would.
+
+**One name for going back.** The reviewer counted four on one screen: the
+chip's ×, *"show everything"*, *"stop focusing on this"*, *"stop focusing on
+this step"*, and *"leave"* in a narrative. `BACK_LABEL` in `lens.js` is
+*"Back to all events"*, and every control that performs the act says it; what
+each writes into `?focus=` is still its own. The chip's × is *"Remove <name>"*,
+because dropping one focus of three is not going back. And a parent's card
+said *"Focusing on this keeps it and the 27 events inside it; with no other
+focus on, every other event leaves all three views"* — a sentence about a state
+model. It says *"Showing this and the 27 events inside it."*
+
+**The link's card is headed by the link.** It was a `<h2>` reading *"enabled"*,
+with the two ends on the line below: the card of the one record in this atlas
+that is *between* two things, titled with the one word that says nothing about
+which two. The heading is the two ends with the type between them, which is how
+`openingLabel` has named an edge in the breadcrumb since M80; the confidence
+stands on the line where the type used to repeat itself.
+
+### 8 — A9. On a phone the picture gets more than half the screen
+
+The four ways off the page go behind the Options button that already holds the
+rest of the masthead on a phone. The **"?"** stays out, because it is the way
+to everything the card says, and the **sentence under the title stays** — it is
+fix 1, and a phone is the first screen a funder is likeliest to see it on;
+hiding it here would be fixing one finding by undoing another.
+
+Measured at 390 × 844: the masthead falls from 260 px to 196 px, and the
+picture takes **71 %** of the screen on the map and the timeline and **68 %**
+on the graph. At 375 × 667 — the narrowest phone the suite drives — 61 % and
+57 %, where the map was about half. Asserted on all three views at both sizes
+as the view's own height against the window's, never as a pixel.
+
+### What was left alone
+
+The lens, the band, and M79, M80 and M81 are unchanged in behaviour but for the
+one thing the brief's own item 3 asks for (M81's resting axis, deviation 1163).
+No record was written, no historical claim made, and `data/` is byte for byte
+what it was — `narratives.html` is the only file the build rewrote, and only
+because an account's byline changed. No new hex value, token or type size.
+`node tools/validate.mjs --index` is clean: 11,190 records, 0 errors, 264
+warnings, the same numbers as at `M81 done`.
+
+Part A's findings 4, 12, 13, 14, 15, 16 and 17 are untouched and are the
+brief's own scope decision, not an oversight. Two things the reviewer names
+inside findings this milestone *did* take are also untouched, because the
+brief's item did not name them: the timeline's right edge still cuts a bar's
+title (A6) and its axis still runs to 2040 with nothing there.
+
+### Deviations
+
+1162. **The degree floor's default changed, which no numbered fix asked for in
+      those words.** The brief says *"find which rule adds the rest of the 154
+      to 245 and make rest mean rest"*, on the reading that something was
+      adding to the resting picture. Measured, the arithmetic runs the other
+      way: the resting arrangement is 245 main events and the degree floor
+      takes it **down** to 154. So the rule to change was the floor, and "rest
+      means rest" is the resting picture drawn whole. `?degree=` semantics
+      move with it: a link that carried no floor used to mean two and now
+      means none, and one that means two now says so.
+1163. **M81's resting axis changed, against the brief's own "M79–M81 unchanged
+      in behaviour".** Item 3 asks for *"M81's axis at rest as under a lens"*,
+      which is that change and nothing else; the specific instruction is taken
+      over the general constraint, and `tests/m81.test.mjs` now asserts the new
+      rule with the old one quoted beside it. **It buys almost nothing**: one
+      point of the 20th century's share of the width, measured both ways. It is
+      recorded here because a future run reading M81's section will otherwise
+      find a sentence that is no longer true.
+1164. **M61's slice no longer binds at the world view.** It was the width the
+      old character cut took at `k = 1`, and it was M61's answer to a label
+      *cut* to the room — which M77 replaced with "whole or not at all". What
+      survived was a rule that a long name is not drawn at all however much
+      room there is beside its mark, which is an omission and not a cut; the
+      brief's *"never truncated, never omitted"* points the other way, and
+      fourteen more of the hundred and sixty-nine marks are named without it.
+      `tests/graph-labels-browser.test.mjs` asserts what M77 asserts instead:
+      no drawn name is cut.
+1165. **The key's rows do not carry the picture's classes, though drawing them
+      that way was the first thing tried and is what the graph's key does.**
+      `.map .mark` and `.timeline .bar` are how the browser suite asks whether
+      a picture has drawn anything yet — twenty-odd readiness checks — and a
+      key that matched them answered *yes* before a mark existed, which is
+      worse than a failure. The rows carry the same declarations and the same
+      tokens under `.view-key`, and a browser test holds a row and a real mark
+      to the same computed ink, which is the bond the shared selector was for.
+1166. **The intro card's slugs were fixed, and they are part B's finding 16.**
+      The card the brief told this run to rewrite was printing `world-war-ii`
+      where a title goes on the first screen of the demo. Rewriting its words
+      and leaving that would have been answering A3 on paper; one line in
+      `main.js`'s `shardLanded` and a `refresh` on the card is the whole of it.
+      The other three places finding 16 names are untouched.
+1167. **The brief's A9 asks for the tagline behind Options on a phone and it
+      is not.** A3 puts one sentence under the title on the first screen and A9
+      would take it off the screen a funder is likeliest to arrive on. The
+      links row is 55 px of the 64 the masthead gave back and the sentence is
+      33; taking the links alone clears the half-screen bar on every view at
+      both phone sizes, which is what the brief's own test asks for.
+1168. **`docs/screens/frame.html` gained `intro=1`.** The page sets the
+      introduction to *seen* before the frame loads, because a browser started
+      for one screenshot has never been anywhere; a picture of the card it
+      rewrote therefore could not be asked for by link. It is the same licence
+      `zoom`, `at`, `notches`, `open` and `compose` already take, and it is not
+      passed on to the atlas.
+1169. **Six screenshots were taken twice, from a worktree at `2c895c41`.** The
+      brief asks for before and after, and the `-before` half cannot be taken
+      from this tree. `git worktree add` at `M81 done`, the M82 shot list
+      copied in with the names suffixed, six shots, and the worktree removed.
+      Nothing else under `docs/screens/` was rewritten, which `git status`
+      confirms rather than a promise.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
