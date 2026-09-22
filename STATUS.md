@@ -19050,6 +19050,88 @@ which is the one test a records batch always moves, and
 `docs/m42-pool.md` so that the clause about a filing nobody argued in writing
 can see this branch's arguments at all.
 
+**M42b batch 4 — the Cuban Revolution's vein, 22 September.** The fourth fire
+on `m42b`. It began by merging `origin/m0` and `origin/m42` again, which is why
+the corpus it found reads **643 active and 242 main** and why Europe's 15th,
+16th and 19th centuries stand higher than batch 3's table shows — that came
+across, none of it is this batch. Taken from the **`americas` lane**, from the
+vein batch 3's note ranked first. `docs/m42b-pool.md` → "Batch 4".
+
+**A7 first, in its own commit.** `cuban-revolution` was dated at 1959 alone,
+the day Havana fell, so every action of its own fighting fell outside it and
+rule 24 would have refused the filing. The English article, **at revision
+1373305240, the revision the record already cited**, states `26 July 1953 –
+1 January 1959` in its infobox and names the Moncada assault in its lead. The
+record now runs 1953 to 1959 with both days, carries `a7-widened` and a note
+saying what moved from what. Then the vein: the inverse `part of` sweep on
+`Q11264` returns **16 items and the atlas held none of them**; **fifteen
+arrived**, every one inside the widened span and every one filed under
+`cuban-revolution` and nothing above it.
+
+**Ten place records**, each from the first located thing its event's item names
+that carries a `P625`, with `precision` read off that item's own class: eight
+`city`, two `region`. Four events reuse `santiago-de-cuba` and `havana`, which
+were already here. **One place was named from the item's own Spanish label** —
+`Q16145269` carries no English or Portuguese one, so the import wrote a place
+called `Q16145269`; its own field reads `Alegría de Pío` and that is the
+record, with `title-not-english` kept and a note saying where the name came
+from. **One event is placeless**: `haitian-embassy-in-cuba-massacre` names an
+embassy with no `P625`, no `P131`, and a `P17` that is a historical period
+rather than ground, so the chain runs out and nothing was invented;
+`docs/m67-umbrellas.md` carries the A1 clause for it, since it names no actor
+either.
+
+**Twelve of the fifteen carry the cached English lead at a named revision** in
+place of the import's placeholder (A12 C1); three have no English article.
+**No actors**: the two items with `P710` name `Q218452` and `Q14905932`, and
+the atlas holds neither — its `cuba` is `Q241`. **Six edges**, each `probable`
+on the leads that support it and two of them into records already here. Four
+of the six moved the component by **one**, because the vein hangs off its
+parent and a parent is not adjacency; the two added after that measurement —
+the revolution to Operation Verano, Alegría de Pío to La Plata — carried Verano
+and Santa Clara in with them.
+
+**One item and one vein were refused.** `Q4693758`, land reform in Cuba, has no
+`P580`, `P582` or `P585` and a class the table does not hold. The **Landing of
+the Granma**, which three of this batch's leads name and which would join the
+island of three this fire leaves, was not reached at all: deviation **1205**.
+**Four classes were added** to the seeds file, each read off Wikidata:
+extra-judicial killing with no category, and three place classes — municipality
+of Cuba, province of Cuba, mountain range.
+
+**Corpus after the fire: 658 active, 242 main — unchanged — 416 filed, 655
+edges, largest connected component 511, 120 components, 98 events with no edge
+at all.** The `americas` lane goes from 125 active to **140**, ahead of Asia;
+south against north within it is 118 to 17, with 5 placeless. Europe before
+1900 is 23 active and 14 main. `node tools/validate.mjs --index`: **0 errors,
+457 warnings**. **1,748 pure and 254 browser, 2,002 in all, 0 failed and 0
+skipped**, the browser suites one at a time as the check runs them.
+`docs/m53-polities.md` §4.1's "after M42" row was retaken to **351 of 658**.
+
+1204. **The claim window's ninety minutes was read twice, and it is the second
+      reading that claimed.** At the gate this branch's last push was **89.4
+      minutes** old — inside the protocol's ninety — so the rule said stop.
+      The fire did not claim on that reading and did not claim against it
+      either: it did STEP 2's reading first, which every fire owes whatever it
+      goes on to do, and read the clock again before writing the claim line, by
+      which time the push was 90.1 minutes old and the claim itself two hours.
+      Written down because the rule is mechanical and a run that had rounded
+      89.4 down to "near enough" would have been wrong in exactly the case the
+      rule exists for. **The order is the answer**: read first, claim second,
+      and never round the number.
+
+1205. **The Wikidata Query Service rate-limited this fire mid-batch, and a
+      record the vein wants is missing because of it.** After the inverse
+      `part of` sweep and the entity reads, the query service began answering
+      429 — *"aggressively rate-limiting to 1 req / min - this rule was created
+      during active wdqs outage"* — and the English Wikipedia API answered 429
+      as well. The **Landing of the Granma** is what went unlooked-up: the
+      hinge that the leads of Alegría de Pío, La Plata and the Santiago
+      uprising all point at, and the one item that would join this batch's
+      island of three to the component. It is not refused on its merits and it
+      is first on the next fire's list. **A 429 is not a reason to guess a
+      QID**: nothing was imported from a title this run could not resolve.
+
 1203. **"Every umbrella that fits" is not every container in the chain.** A8
       reads *"a filing writes every umbrella whose span and subject fit, not
       the first"*, and the first pass here took it literally: an event of 1985

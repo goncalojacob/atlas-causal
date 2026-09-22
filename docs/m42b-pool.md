@@ -690,45 +690,227 @@ not move at all, which is what an umbrella already in the corpus is worth.
 with a place south of 25.9°N, 17 north of it, 4 still placeless in the lane.
 The brief's ordering still does not bind.
 
+## Batch 4 — the Cuban Revolution's vein, widened first and then filled
+
+*22 September, the fourth fire. Taken from the **`americas` lane** again, and
+from the vein batch 3's note ranked first for whoever picked it up: sixteen
+rows the atlas could not take while its umbrella was dated at a single day.
+The cell is the 20th century of that lane.*
+
+**A7 first, in its own commit.** This atlas dated `cuban-revolution` at 1959
+alone, with the day Havana fell, so every action of the revolution's own
+fighting fell outside its parent and rule 24 would have refused the filing.
+The English article, at **revision 1373305240 — the revision the record already
+cites** — states the span in its infobox, `26 July 1953 – 1 January 1959`, and
+names the Moncada assault of 26 July 1953 in its lead. So the record now reads
+1953 to 1959 with both days, carries the `a7-widened` flag and a note saying
+what moved from what, and the vein files itself. Nothing else on the record
+changed.
+
+**The sweep.** The inverse `part of` sweep on `Q11264` returned **16 distinct
+items and the atlas held none of them** — `origin/m42` had been merged into
+this branch at the head of the fire, so M42's whole corpus was on disk when the
+comparison was made and no item of the other lane's could be taken twice.
+Fifteen were imported. Every one of the fifteen falls inside the widened span,
+so the main count could not move.
+
+### What arrived
+
+| the record | filed under | placed at | precision |
+| --- | --- | --- | --- |
+| `attack-on-the-moncada-barracks` | `cuban-revolution` | `santiago-de-cuba` | city (already here) |
+| `carlos-manuel-de-cespedes-barracks-attack-1953` | `cuban-revolution` | `bayamo` | city |
+| `haitian-embassy-in-cuba-massacre` | `cuban-revolution` | — (see below) | — |
+| `1956-cuartel-domingo-goicuria-assault` | `cuban-revolution` | `matanzas` | city |
+| `santiago-de-cuba-uprising` | `cuban-revolution` | `santiago-de-cuba` | city (already here) |
+| `battle-of-alegria-de-pio` | `cuban-revolution` | `alegria-de-pio` | city |
+| `battle-of-la-plata-1957` | `cuban-revolution` | `bartolome-maso-cuba` | city |
+| `havana-presidential-palace-attack-1957` | `cuban-revolution` | `havana` | city (already here) |
+| `humboldt-7-massacre` | `cuban-revolution` | `havana` | city (already here) |
+| `corynthia-expedition` | `cuban-revolution` | `mayari` | city |
+| `cienfuegos-uprising` | `cuban-revolution` | `cienfuegos` | city |
+| `operation-verano` | `cuban-revolution` | `sierra-maestra` | region |
+| `battle-of-guisa` | `cuban-revolution` | `oriente-province` | region |
+| `battle-of-yaguajay` | `cuban-revolution` | `yaguajay-cuba` | city |
+| `battle-of-santa-clara` | `cuban-revolution` | `santa-clara-cuba` | city |
+
+**Every one of the fifteen carries `cuban-revolution` and nothing above it**,
+which is deviation 1203's rule applied from the start rather than caught by the
+suite: the revolution is the narrowest umbrella the atlas holds for any of them
+and there is no phase record between.
+
+### Places (A9)
+
+**Ten place records, each from the first located thing its event's item names
+that carries a `P625`**, with `precision` read off that item's own class and
+not the hard-coded `point` `placeRecord()` still writes:
+
+| precision | places | read off the class |
+| --- | --- | --- |
+| `city` | `bayamo`, `matanzas`, `alegria-de-pio`, `bartolome-maso-cuba`, `mayari`, `cienfuegos`, `yaguajay-cuba`, `santa-clara-cuba` | city, locality, municipality of Cuba — settlements |
+| `region` | `oriente-province`, `sierra-maestra` | province of Cuba, mountain range — larger than a settlement and not a state |
+
+Four events were placed at records the atlas already held: `santiago-de-cuba`
+twice and `havana` twice. Neither of those two carries a Wikidata item, so a
+later sweep of `Q117040` or `Q1563` would create a second record for the same
+town; **filling that identity gap is a job for a fire with `--reconcile`**, and
+this one did not do it by hand.
+
+**One place was named from the item's own Spanish label.** `Q16145269` carries
+a label in Spanish alone, so the import fell back to the QID for the id, the
+label and the names, and a place called `Q16145269` is a place a reader cannot
+read. Its own field says `Alegría de Pío`, and reading it is reading the item:
+the record is `alegria-de-pio`, the `title-not-english` flag stays, and a note
+on the record says where the name came from. That is not the case of deviation
+1201's refusal at `Q15542964`, which was somebody else's label needing
+*correction*; nothing here was corrected or translated.
+
+**One event is placeless and this is why.** `haitian-embassy-in-cuba-massacre`
+names the embassy of Haiti in Cuba under `P276`, which carries no `P625`; it
+has no `P131`; and its `P17` is `Q14905932`, the historical Republic of Cuba,
+which is a *period* and not ground. The chain runs out with nothing to point
+at, and A9 places an event at a thing the atlas can name or not at all. It has
+no participant either, so `docs/m67-umbrellas.md` carries the A1 clause for it.
+
+### Summaries (A12 C1)
+
+**Twelve of the fifteen carry the cached English lead at a named revision** in
+place of the import's placeholder, in the shape the corpus already uses: the
+first three sentences quoted, the revision in the locator, a `wikipedia-en`
+citation added and the `summary-from-lead` flag. Three keep the placeholder
+because the English Wikipedia has no article to quote:
+`carlos-manuel-de-cespedes-barracks-attack-1953`,
+`1956-cuartel-domingo-goicuria-assault` and `haitian-embassy-in-cuba-massacre`.
+
+### Actors (A12 C5)
+
+**None.** Two of the fifteen carry `P710`: both name `Q218452` and
+`Q14905932`, and the atlas holds neither as an actor — its `cuba` record is
+`Q241`, a different item. C5 maps a participant *the atlas holds*, so nothing
+was written, and M67 A1 settles that an event with no actor is not a defect.
+
+### The edges (A5, M72)
+
+**Six, each `probable` on the leads that support it** — rule 22 refuses
+`consensus` on a Wikipedia citation — and **two of them run into records that
+were already here**:
+
+| edge | type | what the source states |
+| --- | --- | --- |
+| `attack-on-the-moncada-barracks` → `cuban-revolution` | `caused` | the attack of 26 July 1953 "is widely accepted as the beginning of the Cuban Revolution" |
+| `cuban-revolution` → `operation-verano` | `reacted-to` | the 1958 offensive "was designed to crush Fidel Castro's revolutionary army, which had been growing in strength ... since their arrival ... in December 1956" |
+| `operation-verano` → `battle-of-santa-clara` | `enabled` | Verano "failed in its objective", "left the Cuban army dispirited and demoralized", and "Castro ... soon launched his own offensive" |
+| `santiago-de-cuba-uprising` → `battle-of-alegria-de-pio` | `precondition-of` | the failed uprising meant "the rebels had lost the element of surprise, and the military was put on high alert in the region" |
+| `battle-of-alegria-de-pio` → `battle-of-la-plata-1957` | `precondition-of` | La Plata was "the first battle of the revolution ... which was a success for the rebels, who had previously suffered a heavy defeat at the Battle of Alegría de Pío" |
+| `havana-presidential-palace-attack-1957` → `humboldt-7-massacre` | `caused` | the four men killed by Havana police on 20 April 1957 "had taken part in the Havana Presidential Palace attack" |
+
+Two of the six were written after the first measurement, because the first four
+moved the component by **one** and A5 says a batch that grows the corpus and
+not the component has to say why. The answer was that the vein hung off
+`cuban-revolution` by its *parent*, which by design is not adjacency, so only
+Moncada reached the graph. The two added — the revolution to Verano, and
+Alegría de Pío to La Plata — are the two the leads state plainly, and they
+carried Verano and Santa Clara in with them.
+
+### What was refused, and why
+
+- **`Q4693758`, "land reform in Cuba"** — the sixteenth row of the sweep. It
+  carries no `P580`, no `P582` and no `P585`, and its class `Q208128` is not in
+  the table. A record with no date is not one this run writes.
+- **The Landing of the Granma** — not refused on its merits but not reached:
+  see deviation 1205. It is the hinge three of this vein's leads point at, and
+  the fire that takes it joins the island of three that is left.
+- **Filing any of the fifteen under a phase** — there is no phase record
+  between them and the revolution, and this run did not write one: A6 asks for
+  a period Wikipedia names with a span and a region, and the revolution's own
+  article names its phases only as narrative sections.
+
+### The counts (A10)
+
+Active / main, over the topology the validator builds.
+
+| century | europe | africa | asia | americas | oceania | no lane | all |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 15th c. | 3 / 2 | — | — | 4 / 4 | — | — | 7 / 6 |
+| 16th c. | 6 / 1 | — | — | 3 / 3 | — | — | 9 / 4 |
+| 17th c. | 1 / 1 | — | — | 6 / 6 | — | — | 7 / 7 |
+| 18th c. | 1 / 1 | — | — | 3 / 3 | — | — | 4 / 4 |
+| 19th c. | 12 / 9 | 10 / 1 | 7 / 7 | 15 / 11 | — | — | 44 / 28 |
+| 20th c. | 238 / 63 | 51 / 22 | 96 / 45 | 89 / 31 | — | — | 474 / 161 |
+| 21st c. | 52 / 7 | 17 / 7 | 22 / 15 | 20 / 1 | — | — | 111 / 30 |
+| undated | 1 / 1 | 1 / 1 | — | — | — | — | 2 / 2 |
+| **all** | **314 / 85** | **79 / 31** | **125 / 67** | **140 / 59** | **—** | **—** | **658 / 242** |
+
+| | before | after |
+| --- | --- | --- |
+| active | 643 | **658** |
+| **main** | 242 | **242** |
+| active edges | 649 | 655 |
+| **largest connected component** | 508 | **511** |
+| components | 111 | 120 |
+| events with no edge at all | 91 | 98 |
+| the `americas` lane | 125 / 59 | **140 / 59** |
+
+*The before column is this branch's own head after batch 3 and after the two
+merges at the head of this fire. Europe's 15th, 16th and 19th centuries read
+higher than batch 3's table — 3, 6 and 12 against 1, 1 and 9 — and none of that
+is this batch: it came across with `origin/m42` and `origin/m0`.*
+
+**The main count did not rise.** Fifteen events arrived and the resting
+timeline gained no bar: every one is inside `cuban-revolution`, which was
+already main and already drawn.
+
+**The component grew by three and twelve records joined with no edge.** The
+same finding batches 2 and 3 wrote down, and it is a fact about the sources
+rather than about the run: the actions of one revolution are chronological to
+each other and their leads argue no causation between them. What is different
+here is that three of the twelve are *not* isolated — they are an island of
+three (`santiago-de-cuba-uprising`, `battle-of-alegria-de-pio`,
+`battle-of-la-plata-1957`) that every lead ties to the Granma landing, which
+this atlas does not hold and this fire could not fetch.
+
+**South and Central America against North America**, retaken: **118 active
+events with a place south of 25.9°N, 17 north of it, 5 placeless in the lane.**
+Cuba is on the southern side of that line, so the brief's ordering still does
+not bind and the north is still the thin half.
+
 ## Where the run stands, for the fire that picks it up
 
-*22 September, after batch 3.*
+*22 September, after batch 4.*
 
 | | |
 | --- | --- |
-| corpus | **643 active** |
+| corpus | **658 active** |
 | **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **508** |
-| components | 111 |
-| events with no edge at all | 91 |
-| the inverse `part of` vein, this partition | **118 rows open**, 43 taken |
+| **largest connected component** | **511** |
+| components | 120 |
+| events with no edge at all | 98 |
 | Europe before 1900 | 23 active, 14 main |
-| the `americas` lane | **125 active, 59 main** — 104 before batch 3 |
+| the `americas` lane | **140 active, 59 main** — 125 before batch 4 |
+| that lane, south against north | 118 / 17, and 5 placeless |
 
 **What the next fire should weigh, in order:**
 
-- **The Cuban Revolution's sixteen rows are now the largest vein left, and A7
-  is what unlocks them.** This atlas dates `cuban-revolution` at 1959 alone;
-  its own article dates it 26 July 1953 to 1 January 1959, and its battles —
-  Moncada, Alegría de Pío, Santa Clara, Yaguajay, Verano — are all inside that
-  wider span and outside the narrow one. A7 lets a run widen an imported
-  interval from the record's own cited article at a named revision. Do that
-  first, in its own commit, with the note A7 asks for; then the vein files
-  itself and the main count cannot move.
-- **`great-depression` and `la-violencia` are still A12's, not this branch's.**
-  Both are named in M42's C3 span list. A batch that takes their children
-  before M42 has widened them files children outside their parent.
-- **The sixteen undated Colombian actions are the largest thing this fire left
-  on the table**, and they are not refused for want of a source but for want of
-  a date in Wikidata. A fire that wanted them would have to read each one's
-  Spanish article for its day, which is reading a source and not inventing a
-  date — but it is a per-record judgement and not a mechanical import, and no
-  amendment has asked for it yet.
+- **The Landing of the Granma is the cheapest thing on this list and the one
+  with the most behind it.** Three of batch 4's records name it in their own
+  leads — Alegría de Pío was fought three days after it, La Plata was the first
+  success after it, the Santiago uprising was timed to it — and the atlas does
+  not hold it. It is one item, it is inside `cuban-revolution`'s widened span,
+  and importing it turns an island of three into part of the component. This
+  fire could not fetch it: deviation 1205.
 - **North America is still the thin half of the `americas` lane**: 17 active
-  events against the south's 104. The brief's ordering — the south first until
-  it holds as much as the north — has been satisfied for three batches running,
-  so **a fire may now take a North American vein**, and the 19th and 20th
-  centuries there are where the lane would gain most.
+  events against the south's 118, and four batches running have gone south.
+  The brief's ordering has been satisfied since batch 2, so a fire may take a
+  North American vein, and the 19th and 20th centuries there are where the lane
+  would gain most. Batch 4 did not, because A7 had put the Cuban vein in reach
+  and leaving it would have wasted the widening.
+- **`great-depression` and `la-violencia` are still A12's, not this branch's.**
+  Unchanged from batch 3's note: both are named in M42's C3 span list, and a
+  batch that takes their children before M42 has widened them files children
+  outside their parent.
+- **`santiago-de-cuba` and `havana` carry no Wikidata item**, and a later sweep
+  of `Q117040` or `Q1563` will write a second record for the same town. A fire
+  with `--reconcile` should close that gap; batch 4 would not do it by hand.
 - **The four American centuries before 1800 still have no umbrella**, and batch
   1's finding stands: `Q2088324` Colonial Brazil carries no `P580` or `P582`,
   so the tool refuses it. A fire wanting those cells needs a period item that
@@ -736,3 +918,5 @@ The brief's ordering still does not bind.
 - **Europe's 17th and 18th centuries are still one active event each** — the
   thinnest cells in the atlas — and filling either means writing an umbrella
   first, at batch 1's price.
+- **The sixteen undated Colombian actions** batch 3 left are still on the
+  table, and still for want of a date in Wikidata rather than a source.
