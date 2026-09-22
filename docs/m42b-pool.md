@@ -1138,6 +1138,8 @@ this and is superseded rather than re-run.
 
 *22 September, after batch 5.*
 
+*The check is **green** on this branch's head, `0a0942db`, run 1423.*
+
 | | |
 | --- | --- |
 | corpus | **698 active** |
