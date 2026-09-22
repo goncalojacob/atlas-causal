@@ -17,6 +17,9 @@ test('parse and format round trip', () => {
     focus: null,
     focusAll: false,
     selected: 'fixture-event-t',
+    // The link's own card since M80, beside the event's and ahead of it in
+    // the query: `?edge=` opens the atlas on the argument for one link.
+    edge: 'fixture-event-a--fixture-event-b--caused',
     source: 'fixture-source-one',
     place: 'fixture-place-one',
     actor: 'fixture-actor-one',
@@ -34,7 +37,7 @@ test('parse and format round trip', () => {
     tops: false,
   };
   const search = formatState(state);
-  assert.equal(search, '?from=1200&to=1250&view=graph&selected=fixture-event-t&source=fixture-source-one&place=fixture-place-one&actor=fixture-actor-one&office=fixture-office-one&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&horizon=1240&layers=events');
+  assert.equal(search, '?from=1200&to=1250&view=graph&edge=fixture-event-a--fixture-event-b--caused&selected=fixture-event-t&source=fixture-source-one&place=fixture-place-one&actor=fixture-actor-one&office=fixture-office-one&chain=fixture-event-a--fixture-event-b--caused,fixture-event-b--fixture-event-d--enabled&horizon=1240&layers=events');
   assert.deepEqual(parseState(search), state);
 });
 
@@ -164,7 +167,7 @@ test('the store merges patches and notifies', () => {
   assert.deepEqual(store.get(), {
     from: null, to: 1220, view: 'map', focus: null, focusAll: false,
     degree: DEGREE_DEFAULT, tops: false,
-    selected: 'fixture-event-a', source: null,
+    selected: 'fixture-event-a', source: null, edge: null,
     place: null, actor: null, office: null, chain: [], horizon: null,
     layers: ['land', 'territories', 'events', 'rivers', 'lakes', 'physical', 'mountains', 'cities'],
     narrative: null, step: 0, walk: null, bbox: null,

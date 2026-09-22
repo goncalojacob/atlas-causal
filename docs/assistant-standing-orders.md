@@ -82,7 +82,10 @@ on:
 2. Land any lane A branch whose done line is on it; open its PR; merge on
    green; deploy; disable its routine; fire the next lane A milestone.
 3. **Land a snapshot of `m42` and of `m42b` into `m0` at least once a day**
-   and publish it, so the site keeps growing whatever its size.
+   and publish it, so the site keeps growing whatever its size. The day's
+   snapshot carries the **daily curation fire** (A11, A13): the first M42
+   fire after 02:00Z reviews every active event and the relations between
+   them from their cited sources, and imports nothing.
 4. Re-fire a records routine whose run is silent past the claim rule.
 5. Re-run a check that fell to a browser launch failure or a flake; read a
    red check before assuming load.
@@ -92,7 +95,15 @@ The lane A queue for the week: M80 (a connection selectable, marks by
 precision, the count wording) → M81 (the graph stretches time) → **a
 review run with fresh eyes** over the code and the live site, producing a
 numbered findings file → fix milestones for the confirmed findings → a
-second review mid-week → its fixes. **Display fixes and structural
+second review mid-week → its fixes.
+
+**Reviews and coordination are always on Fable.** The owner, 22 September:
+*"for the code reviews and coordination always use Fable, even if changes
+and coding are made with another model."* The assistant (Fable 5.1)
+coordinates; every review — of code, of the live site, of a milestone
+before it lands — is run by Fable, as independent subagents of this
+session or as a cloud routine whose model is `claude-fable-5-1`, never by
+the model that wrote the change. The build routines stay on Opus 5. **Display fixes and structural
 improvements from the reviews are briefed and landed without asking.**
 Anything that changes what the atlas says about history beyond reading a
 cited source, or a new rule about what counts as an event or a parent,
@@ -128,6 +139,7 @@ trailing lanes and centuries; M42b in parallel.
 | "Credits might end every now and then, so you should have a process that will later resume work" | §3, the landing routine |
 | "This machine will stay on" | §4 |
 | "No ceiling" | A11 |
+| "For the code reviews and coordination always use Fable, even if changes and coding are made with another model" | §4 |
 
 ## 6. What the assistant asks the owner for feedback on, when they return
 

@@ -11,7 +11,7 @@
 import { validate } from '../validate/core.js';
 import { createValidator } from '../validate/schema.js';
 import { ACTOR_TYPES, EDGE_TYPES, WRITABLE_RELATION_TYPES as RELATION_TYPES, buildUniverse } from '../validate/rules.js';
-import { OFFICE_CATEGORY_IDS as OFFICE_CATEGORIES, EVENT_SCOPES } from '../vocab.js';
+import { OFFICE_CATEGORY_IDS as OFFICE_CATEGORIES, EVENT_SCOPES, PRECISION_IDS } from '../vocab.js';
 import { CONTAINER_KINDS } from '../citation.js';
 import { KIND, CONTRIBUTED_KINDS, listsOf } from '../kinds.js';
 import { articleTitles } from '../wikipedia.js';
@@ -19,7 +19,11 @@ import { parentsOf } from '../parts.js';
 
 export const CONFIDENCE = Object.freeze(['consensus', 'probable', 'disputed']);
 export const SOURCE_TYPES = Object.freeze(['book', 'chapter', 'article', 'thesis', 'primary', 'dataset', 'web']);
-export const PRECISION = Object.freeze(['point', 'city', 'region']);
+// The precisions the form offers, from the one list of them (vocab.js). It was
+// written out here too until M80, and a fourth value — `country`, the state's
+// own point — would have meant a select that could not write what the schema
+// accepts: two definitions of one closed set drift.
+export const PRECISION = PRECISION_IDS;
 
 // The Wikidata item id out of whatever was pasted: the id on its own, or a
 // Wikidata URL in the shapes the site hands out. A *Wikipedia* article URL

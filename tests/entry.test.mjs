@@ -30,7 +30,10 @@ test('a record that has no entry page of its own is a way through, not a dead en
   const links = createLinks();
   const edge = elsewhereHtml('edge', 'a--b--caused', links);
   assert.match(edge, /a link between events/);
-  assert.match(edge, /href="index.html\?selected=a--b--caused"/);
+  // Its own parameter since M80: a link is opened and read now, not only
+  // walked, so the way through is the link's own card and not the event the
+  // reader would have landed on.
+  assert.match(edge, /href="index.html\?edge=a--b--caused"/);
   assert.match(elsewhereHtml('source', 'russell-2000-henry', links), /href="index.html\?source=russell-2000-henry"/);
   assert.match(notFoundHtml('nothing-by-that-name'), /No record with id <code>nothing-by-that-name<\/code>/);
 });
@@ -39,7 +42,7 @@ test('the three kinds with a page are the three kinds that may carry a body', ()
   assert.deepEqual([...ENTRY_KINDS], ['event', 'actor', 'place']);
   const links = createLinks();
   for (const kind of ENTRY_KINDS) assert.match(links.entry(kind, 'x'), /^entry\.html\?id=x$/);
-  assert.equal(links.entry('edge', 'a--b--caused'), 'index.html?selected=a--b--caused');
+  assert.equal(links.entry('edge', 'a--b--caused'), 'index.html?edge=a--b--caused');
   assert.equal(links.entry('source', 's'), 'index.html?source=s');
   assert.equal(displayName({ title: 'A title' }), 'A title');
   assert.equal(displayName({ names: ['A name', 'another'] }), 'A name');

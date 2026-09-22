@@ -36,7 +36,7 @@ test('changing any one field changes the key', () => {
   const base = store().get();
   const changed = {
     from: 1900, to: 1950, view: 'graph', focus: 'actor:x', focusAll: true,
-    selected: 'e', source: 's', place: 'p', actor: 'a', office: 'o', chain: ['c'], horizon: 1970,
+    selected: 'e', edge: 'a--b--caused', source: 's', place: 'p', actor: 'a', office: 'o', chain: ['c'], horizon: 1970,
     layers: ['events'], narrative: 'n', step: 3, walk: 'w', bbox: [0, 1, 2, 3],
     // What the graph draws (M48 §3). The map and the timeline do not read
     // them, and they are in the key all the same, for the reason this whole

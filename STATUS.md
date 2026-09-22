@@ -16237,6 +16237,413 @@ historical claim, no filing. `docs/drafts/` ignored. Deviations **1136 to
       absolute bound raised by one per milestone is a bound that means nothing,
       which is deviation 716's own argument arriving where it was going.
 
+## M80 — a connection can be chosen, marks by precision, and the count says what it counts
+
+Lane A, on the branch `m80`. Three sentences from the owner on 22 September,
+each the authority for its own third.
+
+### 1. A connection is a record that can be chosen and read
+
+> *"In the graph I should be able to select a connection the same way I select
+> an event, so I can check its sources, description, etc."*
+
+An edge was the one record with an argument in it that had no card. It was
+**walked**: clicking a consequence put the panel on the event at the far end
+and folded the argument into a `<details>` labelled "Why", and a reader who
+wanted to read the link itself rather than where it led had nowhere to go.
+
+**`?edge=<id>` is its address now.** It takes an id of the edge vocabulary and
+never a slug, so a relation — which has the same three-part shape and links two
+actors rather than two events — cannot stand in it. `src/panel/edge.js` is the
+card: the type in the card's own words (M28's vocabulary) as its heading, both
+ends as the plain event control every other list uses, the confidence with
+**what it means written out** rather than only on the badge's title, the
+argument, the sources with their locators, the dispute as a section of its own
+where there is one, and the standing line every card carries.
+
+Where it sits among the cards, and what takes it away:
+
+* it is **ahead of every other card** in the panel's precedence, because it is
+  the one the reader asked for last;
+* opening **any** other card leaves it behind — one rule in `state.js`'s `set`,
+  beside the one that leaves the horizon behind, rather than a `edge: null` in
+  each of the seven places that open something;
+* a patch that names `edge` itself is the reader asking for a link and wins.
+
+**On the graph a line is a control.** It carries the link's id, takes the
+focus, says what it is — the two ends with the type between them, which is the
+only name a link has — and answers Enter and Space, as every mark on the map
+has since M63. Which line a click means is decided by **distance to the
+segment**, the way which mark it means has always been decided by distance to a
+centre: a line is a stroke a pixel or two wide, and hit-testing the element
+would make choosing one a test of the reader's aim. Nodes are asked first and
+always; the lines are asked only when no node is near enough to have been
+meant.
+
+**A line that carries several links is not a control.** `mergeEdges` draws one
+line per pair of *stacks*, and its members are collinear by construction —
+there is nothing in the picture that could say which of them the reader aimed
+at. It keeps the title it had, and parting the stacks is what makes it one
+link, which is the same answer the map gives for a cluster of marks.
+
+The chosen line is drawn in **madder**, heavier than the walked chain and last
+of the three emphases, so it wins over all of them: a line being *read* is the
+one thing on the picture the panel is about. It keeps its type's dash pattern
+and its confidence's ink, because what kind of claim it is and how sure the
+atlas is of it are not what choosing it changed.
+
+**Arriving on `?edge=` frames the two ends; clicking a line does not move the
+camera.** The card names both ends and a camera that left one of them off the
+screen would be the picture disagreeing with the card — but a reader who clicks
+a line is looking straight at it, and a frame on the click would move the
+picture out from under the gesture that chose it. So the ends frame the
+drawing they *open* and never one already on screen, which is why the chosen
+link is deliberately **not** in `frameCamera`'s key.
+
+**Choosing a link is not a lens.** Nothing in `lens.js` reads `edge`, so no
+picture narrows: the same events are drawn before and after, at rest and inside
+a lens of one alike. A lens on a link would be a lens on its two events, which
+is what `vocab.js` has said since H7 about why an edge is not a focus kind.
+
+From an event's card, **the type word opens the link**. Each row already named
+the other end and offered to walk to it; what it could not do was open the link
+itself. A reader who wants to know what "enabled" rests on presses the word
+"enabled".
+
+### 2. Marks by precision, and `country` among them
+
+The other half of M42's amendment A9, which gives the imported events the place
+their Wikidata item names. Most of those places are a **state** and not a town:
+the coordinate is the polity's own point, and a mark on it at a city's size is
+a pin at a capital pretending to be an address. An election held "in Portugal"
+was not held in Lisbon.
+
+`country` joins `point`, `city` and `region`, and the vocabulary moves into
+`src/vocab.js` beside the other closed sets — `contribute/bundle.js` kept a
+second copy of it, and two definitions of one closed set drift. The schema's
+enum is the one remaining copy, because a JSON Schema cannot import JavaScript,
+and a test holds the two together.
+
+**A region and a country are the coarse two**: they name an area rather than a
+point on the ground. The map draws them half again as wide as a city's mark,
+with a dashed lighter ring over a fill that lets the ground through. The width
+says the record means an area; the faintness says the atlas does not know where
+inside it. Nothing new is spent on either — the same cobalt, the same stroke,
+at a lower opacity, which is how this atlas has said *less sure* since M73.
+`cluster.js` is untouched: a coarse mark groups like any other.
+
+**`precision` moves out of the attribute shard and into the core.** How a mark
+is *drawn* is decided on the frame the map first paints, and an attribute
+column arrives with its century: a mark that was a city's and became a region's
+a moment later would be the map correcting itself in front of the reader. It is
+the same decision the glyph run made about `category`, for the same reason, and
+it costs one short word on 47 places.
+
+The event card, the place card and the entry page say the precision **in
+words**. "(country)" beside a coordinate reads as the name of a country and not
+as a statement about the coordinate; "the state's own point" is what the record
+means. A word the vocabulary does not know is left out rather than printed raw.
+
+### 3. The masthead count says what it counts
+
+> *"I still only see 252 events."*
+
+The masthead read **"252 of 252 events in view"**, and 252 was the resting
+picture — the main events — of 581. The number was right twice over, right
+about the picture and right about the picture again, which is the one way a
+true sentence can still mislead: the owner read it as the atlas having 252
+events.
+
+It says which now: **"252 main events of 581 in view"** at rest, where the
+whole is the active corpus, and **"17 of 581 events in view"** under a lens,
+because what a lens kept is not a set of main events and must not be called
+one. The noun agrees with the number it belongs to — "1 main event of 581" is a
+sentence about the one, "1 of 581 events" is a sentence about the 581.
+
+`viewCountText` is that one sentence, pure and held without a browser. Whether
+a lens is on is `emphasis.js`'s own `lensFocus`, so the line and the picture
+cannot come to disagree. **The pin and the standing line are unchanged.**
+
+### What this run did not do
+
+No record was written and no historical claim made — `data/` gained nothing and
+lost nothing, and the only records touched anywhere are two fixture places
+whose `precision` changed. No new hex value, token or type size. The lens, the
+band and the walk framing are where M74, M75 and M76 left them.
+
+### Deviations
+
+1143. **The link's card is taken away by one rule in the store and not by
+      seven patches.** Opening an event, a place, an actor, a source, an office
+      or a narrative all have to close it, and adding `edge: null` to each of
+      the seven call sites is seven places to forget the eighth. `set` already
+      carried exactly this idiom for the horizon — *a question asked of one
+      record is not an answer about the next* — so the rule is written beside
+      it: a patch that changes any other opening and does not name `edge`
+      closes the link's card. A patch that names it wins, which is what the
+      graph's own click sends.
+1144. **`?edge=` is checked against the edge vocabulary and not against the
+      slug the other openings take.** An edge id and a relation id have the
+      same three-part shape and come from two closed sets that never meet
+      (`vocab.js`), and `chain` has refused a relation by name since it was
+      written. A parameter that accepted one would put a record with no card
+      into a field whose whole job is to name a card.
+1145. **A line that carries several links is left as it was, and that is the
+      answer rather than a gap.** Its members run between the same two stacks
+      and are therefore collinear: no click on it could say which link was
+      meant, and picking the first would be the interface inventing an answer.
+      Zooming parts the stacks and the line becomes one link, which is the map's
+      own rule for a cluster of marks read in the other dimension.
+1146. **The chosen link is not in `frameCamera`'s key, deliberately.** It is
+      the one thing in this milestone that reads like an oversight and is the
+      opposite: the key is what decides whether the camera moves, and a link in
+      it would move the camera on every click. A reader who arrives on `?edge=`
+      has not seen the picture and the two ends are what they came for; a reader
+      who clicks a line is looking at it. So the frame is taken on the first
+      drawing of an arrangement and never again.
+1147. **`precision` is core and not attribute, which is a change to the index
+      for a change to a mark.** I3's partition put `where.precision` in the
+      shard with `where.label`, and it belongs with `where.lon` and
+      `where.lat`: everything the *shape* of a mark is read from has to be in
+      hand on the first frame. The alternative was a mark that grows under the
+      reader when its century lands, which is the fault deviation 581 named for
+      `category` and the glyph run fixed the same way. `CORE ∪ ATTRIBUTE =
+      SPINE` is untouched — the key moved between the two halves of one split
+      column.
+1148. **Two fixture places change precision rather than two being added.** A
+      new fixture event moves every count the fixture suites are written
+      against; a changed `where.precision` moves none, and the fixture corpus
+      gains nothing it has to explain. `fixture-place-c` is the region and
+      `fixture-place-a2` is the country.
+1149. **A `?bbox=` that crosses the seam at 30 west does not open the map on
+      it, and the screenshot works around it rather than fixing it.** The
+      picture wanted was a country mark beside a city mark, and the first pair
+      chosen — `fixture-place-g` at 35 west and the cities east of 30 west —
+      needs a box across the meridian the geometry is cut at. Such a box is
+      dropped and the map opens on the whole world. That is the map's own
+      behaviour, older than this milestone and outside what the brief asks for;
+      the pair compared in the shot is east of the seam, and the reason is
+      written beside the shot so the next person to move it is not puzzled.
+1150. **The introduction was covering the link's card, and the fix is to stop
+      keeping a second list of the openings.** `opensOnNothing` named five of
+      them by hand, so `?edge=` — a link to an argument *inside* the atlas —
+      opened behind a card about the atlas. It asks `hasOpening` now, which is
+      the list kept beside the openings in `state.js`; an office was the other
+      one it had been missing. A list of a closed set kept away from the set is
+      the failure `vocab.js` exists to stop, one directory over.
+1151. **One CSS declaration that is not this milestone's and is here anyway.**
+      A catalogue's search URL is a single unbroken word a hundred and forty
+      characters long, and an unbreakable word wider than its column does not
+      wrap — it runs off the right of the panel and takes the citation's text
+      with it. It had never been seen, because no card opened on its sources by
+      itself until the link's card did. `overflow-wrap: anywhere`, on the one
+      rule, no token and no hex.
+1152. **The branch was cut from a red `m0` and the base was brought in rather
+      than the failure carried.** `timeline-browser` 230, *a state change
+      updates the bars in place and does not rebuild them*, failed at `950 to
+      930` on `1c30cb0b` — the commit this branch was created from, before a
+      line of it was written, and a worktree at that commit reproduces it
+      exactly. It is deviation 1142 arriving one snapshot later: M42's second
+      filing pass moves twenty of 950 elements with a click and two per cent is
+      nineteen. `m0` fixed it in `9b5798eb` while this branch was working, so
+      `origin/m0` is merged in — a merge and never a rebase, which the protocol
+      forbids.
+
+## M81 — the graph stretches time when it zooms
+
+Lane A, on the branch `m81`. The owner, 22 September, with a screenshot of
+World War II opened on the graph — twenty-seven children in one vertical
+column, labels three deep on either side:
+
+> *"On the graph it should expand more horizontally when I zoom in, otherwise
+> it looks weird and hard to see."*
+
+### Why it looked like that
+
+The graph's horizontal axis is time, laid out once over the whole extent of the
+corpus. A lens on a six-year war therefore put every one of its parts inside
+six years of six hundred — a hundredth of the width — and the barycentre did
+the only thing left to it and spread them down the field. The camera then
+zoomed **uniformly**, so a column zoomed in was a bigger column, and M77's
+labels, which are whole or nothing and go on a nearby free line when they do
+not fit, stacked three deep beside it.
+
+Two different things were wrong, and both are fixed.
+
+### 1. A lens has its own time axis
+
+With a lens on, the arrangement is no longer laid out over the corpus's extent
+but over **the extent of the events the lens itself names**. World War II
+opened is then 1939 to 1945 across the whole width, its parts in seven columns
+in the order they happened, every one of them named in full.
+
+`arrangementOf` says what the lens names — `view.kept`, the lens's own half and
+not its ring — and `timeAxis` in `layout.js` turns that into the domain. The
+counts travel with the extent, because they are what decide whether the scale
+buckets by century and a table of one set laid over the domain of another is a
+bucketing of centuries that are not there. At rest nothing has been asked and
+the domain is the corpus's, exactly as before: the graph and the timeline still
+share a scale and not merely an extent.
+
+**The ring is drawn where its own dates put it.** A lens's ring reaches further
+than the lens does — World War II's reaches 1893 and 1992 — and stretching the
+axis to hold it would give the question back the sliver it was asked to get out
+of. So the ring beyond the lens's own years is off the width, the arrows into
+the picture from off its edges are drawn as they always were, and the camera
+already knew what to do about it: M74 offers the whole picture first and the
+lens's own half as the fallback, and a ring this wide leaves it the fallback.
+
+**A lens of one date is the exception, and it is the same rule read honestly.**
+Most lenses are one event chosen, whose own half is that event alone: an axis a
+year wide has no room to be an axis, and the ring — the reason a reader can see
+what the event answers to at all — would be flung tens of widths off the
+picture and culled. What stands then is the extent of everything drawn, which
+is the narrowest axis that holds the whole of the answer.
+
+### 2. Zooming stretches time
+
+The camera has a fourth number. `k` is the zoom, and it is still what every
+mark and every label divides its size by; `s` is the **stretch**, how much
+wider than the arrangement time is drawn. What the reader sees magnified is
+`k · s` across and `k` down, and one wheel notch multiplies the first by the
+square of what it multiplies the second by. Zooming into 1943 shows 1943 wide
+rather than 1943 large.
+
+**The stretch is not in the SVG's transform.** That stays the uniform
+`scale(k)`, because a transform scaled unevenly draws a mark as an ellipse and
+sets a label in a condensed face. It is in the picture's own coordinates,
+applied by `stackLayout`, which is the right place for it on its own merits: it
+decides not only where a mark goes but which marks there are, since two nodes a
+year apart drawn four times further apart come off one mark at a quarter of the
+zoom. The arrangement itself never moves — that is what lets a reader zoom, pan
+and find the picture they had.
+
+**It says nothing about time that the axis did not say already.** Every x is
+multiplied by one number, so the order is the order and the ratios are the
+ratios: two events a year apart are still half as far apart as two events two
+years apart. What changes is how much of the drawing's width a year is worth,
+which is the same thing zooming has always changed.
+
+### The cap, and why four is the honest one
+
+`STRETCH_CAP = 4`. The run was asked to say what cap is honest, and this is the
+argument.
+
+What the stretch buys is room between two nodes that **time itself** separates,
+and it buys nearly all of that in the first two doublings: the twenty-seven
+children of a six-year war need one, a dozen events inside a single decade need
+two. A third doubling buys almost nothing, because what is still merged at four
+times is what falls in the same year — and no stretch whatever parts two nodes
+standing on one x.
+
+The cost, meanwhile, is real and grows with every doubling. At four times,
+crossing the drawing takes four screens sideways for every one down, so a
+reader comparing two events pans instead of looking; and an edge's slope, which
+is read loosely as how far apart in time its two ends are, is flattened by the
+same factor. Four is where the two curves cross, and it is `FIT_ZOOM` twice
+over — the camera's own fit will go to two in each direction and the reader's
+wheel may take time that far again and no further.
+
+### 3. The frame fits the two directions separately
+
+`frameFor` measures the wanted set against the rectangle on screen twice: the
+height decides `k`, capped at `FIT_ZOOM` as it has been since deviation 54, and
+the width left over after that is spent on the stretch, capped at
+`STRETCH_CAP`. A lens that is tall and narrow — which is exactly what a war
+with its parts inside it was — is framed by its height and then widened to the
+pane, instead of being framed by its height with four fifths of the pane left
+blank. A set already as wide as the pane asks for no stretch and is given none.
+
+Worth saying plainly, because it is the measurement rather than the design:
+**World War II is fixed by the axis and not by the stretch.** With its own
+years across the width the lens already fills the pane, so the opening frame
+comes out at `s = 1` and `k ≈ 1.55`, and what the stretch then does is answer
+the second half of the sentence — the reader turns the wheel and the seven
+columns move apart faster than the marks grow.
+
+### What was left alone
+
+Marks and labels keep their size on screen at every stretch (M61) and a name is
+still whole or waits for the pointer (M77) — both asserted on a real page,
+either side of a notch. Panning moves through time across and through stacks
+down, as it did. The lens, the walk framing, the category switches, confidence
+and the chosen link (M80) are untouched, and `emphasis.js`, the map and the
+timeline were not opened. No record was written and no historical claim made;
+`data/` is byte for byte what it was. No new hex value, token or type size.
+
+### Deviations
+
+1153. **The stretch is in the picture's coordinates and not in the SVG's
+      transform, which the brief's wording allows and its own test forbids.**
+      "The wheel and the pinch scale the horizontal axis" reads as a
+      `scale(kx, ky)` on the viewport, and that is the one implementation test
+      3 rules out: a circle under an uneven scale is an ellipse and a typeface
+      under one is condensed. So the viewport keeps `scale(k)` and `stackLayout`
+      multiplies every x by `s`. The consolation is that this is where it
+      belonged anyway — the stretch decides which marks there are as well as
+      where they are.
+1154. **A lens whose own events fall on one date is laid out over everything it
+      draws, which the brief does not provide for.** "The lens's own extent"
+      is the rule, and on the overwhelming majority of lenses — one event
+      chosen — that extent is a single year. Laid out over it, the whole ring
+      landed thousands of units off the picture and I6's cull took it: five
+      browser tests said so, among them *the selected event and its chain are
+      never inside a stack* and *choosing an event narrows all three views*,
+      which count what the lens draws and found two marks of eighteen. The rule
+      as written is kept wherever the lens has an extent; where it has none,
+      the extent of everything drawn stands, which is the narrowest axis that
+      holds the answer.
+1155. **The domain is the lens's own events and not everything the lens draws.**
+      The two readings of "the lens's own extent" differ by the ring, and the
+      ring is why: World War II's reaches 1893 and 1992, so a domain that held
+      it would have given the parts six years of ninety-nine — better than six
+      of six hundred and still not a picture the owner asked for. The ring goes
+      off the width and the frame's own fallback, which is older than this
+      milestone, is what catches it.
+1156. **`FIT_ZOOM` did not become the cap on the stretch; it became the cap on
+      the height and the stretch was given a cap of its own.** The brief says
+      it becomes the cap on the horizontal stretch, and one number cannot be
+      both: `FIT_ZOOM` is a magnification against the arrangement and the
+      stretch is a multiplier *of* that magnification, so `FIT_ZOOM` on the
+      stretch would have meant the width fitted at two and the height also at
+      two, which is the same uniform camera in a longer sentence. Two numbers,
+      and `STRETCH_CAP` is `FIT_ZOOM` squared, which is the brief's intent
+      arrived at the other way round.
+1157. **`s` is a free part of the transform and not a pure function of `k`.**
+      It has to be: "fits the time extent to the width and the stacks to the
+      height, separately" is two independent numbers, and a stretch derived
+      from the zoom could not be one of them. The wheel therefore accumulates,
+      and two routes to one zoom can leave two different stretches between the
+      ends — though never at the ends, because both clamp and both come home.
+      A pan has been path-dependent since the graph had one; a camera is
+      allowed to be.
+1158. **The stacking is keyed on the stretch unbucketed, where the zoom is
+      bucketed.** What the zoom decides is a threshold, `D / k`, so what
+      matters is the ratio between two zooms and sixteen buckets to the octave
+      lose nothing. What the stretch decides is where a mark *is*: a bucket of
+      it would jump the picture sideways by four per cent at every boundary the
+      wheel crossed. It costs nothing — a notch leaves the zoom's bucket too,
+      and a pan moves neither number.
+1159. **A stack of one is drawn on the stack's own point and not on the node's,
+      which is a one-line change that would have been invisible.** They were
+      the same number until this milestone: a cluster's mark is drawn on its
+      representative, and a cluster of one *is* its representative. Now
+      `stackLayout` returns the picture's coordinates, with time stretched, and
+      `representative` is the arrangement's node, which never moves. The ring on
+      a parent's mark read the same wrong number.
+1160. **The axis is redrawn on a stretch, from `render` and not from `adopt`.**
+      The bands and the ticks were drawn once per arrangement, and a tick is a
+      year that has to stand under the marks of that year. `adopt` runs before
+      the camera has said what the stretch is, so the redraw is a comparison in
+      `render` against the stretch the axis was last drawn at.
+1161. **`docs/screens/frame.html` gained a second way of driving the wheel.**
+      `zoom` double-clicks back to the world view and then wheels until it
+      reaches a scale, which is right for photographing the graph *at* a
+      magnification and wrong for this milestone: what M81 is a picture of is
+      what one notch does to the camera the lens was already given, and the
+      double click throws that frame away before the gesture. `notches=<n>` is
+      the same wheel event counted, with nothing before it.
+
 ## M42 — the world at scale (in progress, branch `m42`)
 
 Lane B. `docs/m42-pool.md` is the measurement amendment A1 asks for and the
@@ -18321,5 +18728,9 @@ M42 started 2026-09-22T08:06:56Z by scheduled
 M42 started 2026-09-22T10:33:11Z by scheduled
 M79 started 2026-09-22T09:04:50Z by scheduled (branch m79)
 M79 done
+M80 started 2026-09-22T11:11:07Z by scheduled (branch m80)
+M80 done
+M81 started 2026-09-22T12:29:49Z by scheduled (branch m81)
+M81 done
 M42b started 2026-09-22T11:47:35Z by scheduled
 M42b started 2026-09-22T14:19:56Z by scheduled

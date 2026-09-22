@@ -667,6 +667,75 @@ export const SHOTS = Object.freeze([
   { name: 'm79-umbrella-second', query: '?fixtures=1&view=timeline&from=1250&to=1310&selected=fixture-event-u',
     width: 1440, height: 900,
     what: 'the second umbrella opened: the same event, which names this one second' },
+  // M80. The owner, 22 September: *"In the graph I should be able to select a
+  // connection the same way I select an event, so I can check its sources,
+  // description, etc."* So the shot is the link chosen — madder over the
+  // picture, framed on its two ends — with its own card open beside it: the
+  // type, both ends, the confidence and what it means, the argument and the
+  // two sources it rests on.
+  //
+  // On the repository's own corpus, because the point of the card is that it
+  // shows a *real* argument; and on a link whose two ends are both **main**
+  // events, so that the frame has two nodes to put on the screen — at rest the
+  // graph draws what is part of nothing else (M65), and a link into an event
+  // that lives inside an umbrella has one end the arrangement does not hold.
+  // A `consensus` one, so the confidence line reads as the strongest of the
+  // three rather than as a caveat nobody would have to think about.
+  { name: 'm80-edge-chosen', query: '?view=graph&edge=carnation-revolution-1974--east-timor-invasion-1975--enabled',
+    width: 1440, height: 900,
+    what: 'a connection chosen on the graph, framed on its two ends, with the link\'s own card: its type, its two ends, its confidence and what it rests on' },
+  // And the other half: how precisely an event is placed, drawn. A region and
+  // a country are areas — the coordinate a place record carries for a state is
+  // the state's own point — and their marks are half again as wide as a city's
+  // and drawn with a dashed lighter ring over a fill that lets the ground
+  // through, so that nobody reads one as a pin dropped at an address.
+  //
+  // On the fixtures, and it has to be: `country` is the precision M42's
+  // amendment A9 will give the imported events, and no record under `data/`
+  // carries one yet — this milestone writes none and rewrites none. The
+  // synthetic corpus has one of each beside three cities, which is exactly the
+  // comparison, and the page says in its own corner that the records are
+  // synthetic.
+  //
+  // The box is east of the 30 west the geometry is cut at (`map/projection.js`,
+  // SEAM): a `?bbox=` that crosses the seam does not open the map on it, which
+  // is why the two places compared here are the two east of it rather than any
+  // other pair. That is the map's own behaviour and older than this milestone;
+  // it is written down here because the next person to move this shot would
+  // otherwise find the picture silently back at the whole world.
+  { name: 'm80-marks-by-precision', query: '?fixtures=1&from=1200&to=2025&bbox=-29.5,31,-16.5,45',
+    width: 1440, height: 900, scale: 2,
+    what: 'a country mark beside a city mark: wider and fainter, never a pin at a capital' },
+
+  // M81. The picture the owner sent on 22 September and what it looks like
+  // now: World War II opened on the graph, whose twenty-seven parts stood in
+  // one vertical column because the axis was the corpus's and six years are a
+  // hundredth of it. The lens has an axis of its own here, so they stand in
+  // date order across the pane.
+  //
+  // Through `frame.html` and not the atlas directly, because the second of
+  // each pair is the picture after **one turn of the wheel** and the zoom is
+  // not in the URL — the atlas keeps what the reader is looking at there and
+  // not how far they have wheeled into it (graph-view.js). `notches=1` is that
+  // one gesture, over the middle of the pane and with no double click before
+  // it: what is photographed is what the notch did to the camera the lens was
+  // already given, which is the whole of the milestone.
+  { name: 'm81-graph-war', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph&selected=world-war-ii',
+    width: 1440, height: 900,
+    what: 'World War II opened on the graph: its parts in date order across the width, on the lens\'s own time axis' },
+  { name: 'm81-graph-war-notch', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph&selected=world-war-ii&notches=1',
+    width: 1440, height: 900,
+    what: 'the same after one notch of the wheel: time wider by more than the picture is larger' },
+  { name: 'm81-graph-war-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&view=graph&focus=event:world-war-ii',
+    width: 500, height: 844,
+    what: 'the same lens in a 390 x 844 viewport, where the width is the scarce thing' },
+  { name: 'm81-graph-war-phone-notch', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&view=graph&focus=event:world-war-ii&notches=1',
+    width: 500, height: 844,
+    what: 'and one notch of the wheel on a phone' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
