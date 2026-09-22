@@ -1906,3 +1906,33 @@ times.
 §4.1 is retaken at **308 of 561**, and `docs/m67-umbrellas.md` gains section 12
 — A1's clause for batch 31's six bare records, which name neither an actor nor
 a place because their items give neither. **All 1,638 pure tests pass.**
+
+## The decolonisation of Africa, read for its dates and still refused
+
+*22 September, at the end of the same fire. The filing pass left this as the
+one umbrella "Africa most wants" and said what it waits on: **"a year from the
+article or from a person, not a fetch."** The fetch was spent anyway, because
+the article is the cheaper of the two to ask.*
+
+**The article does not give the year.** "Decolonisation of Africa", revision
+1372152864, first sentence: *"The decolonisation of Africa was a series of
+political developments in Africa **between the mid-1950s to 1976**, during the
+Cold War."* Nowhere else does it date the period as a whole; what it dates are
+the events inside it — Ghana's independence on 6 March 1957, the Algerian War
+from 1954, the Cameroonian insurrection from 1955 — and no two of those agree
+on where the period starts. Wikidata's `Q1146918` gives `P580` at decade
+precision, which is where deviation 989 already refused it.
+
+**So the end is datable and the start is not.** 1976 is the article's own
+figure; "mid-1950s" is not a year and reading it as 1955 would be this
+assistant supplying a date the source declines to give, which the standing
+exception forbids outright. The umbrella stays unwritten.
+
+**What it is worth, so that the decision is priced.** Thirty African main
+events fall between 1950 and 1976 — the Algerian war, the two Sudanese wars,
+the Portuguese colonial war, the Guinean ballots, the Zanzibar revolution, the
+Congo crisis — and `scramble-for-africa` (1885–1914) already shows what an
+African period does to the main count: it took twelve. **One word from the
+owner — "read 'mid-1950s' as 1955", or any year they will stand behind — turns
+this into the largest single filing left in the milestone.** It is a question
+and not a fetch, and it is the shortest question in this document.
