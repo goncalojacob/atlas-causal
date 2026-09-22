@@ -93,8 +93,14 @@ export function viewKey(title, rows) {
 // and the words for it. Data and not drawing, so `node --test` can hold a key
 // to its rows without a DOM, and so that adding a shape to a picture is a row
 // here rather than a branch in the builder.
+// `lens-near` is the ring around whatever the reader has open (M84): drawn in
+// an ink of its own since the owner asked for it, and therefore a shape the
+// key has to name — a colour nobody explains is a colour a reader invents a
+// meaning for. The row carries the picture's own class, so the swatch and the
+// mark cannot come to disagree about which green it is.
 export const MAP_ROWS = Object.freeze([
   { shape: 'circle', classes: 'mark', label: 'one event' },
+  { shape: 'circle', classes: 'mark lens-near', label: 'connected to the one you opened' },
   { shape: 'circle', classes: 'mark', ring: true, label: 'opens into more' },
   { shape: 'circle', classes: 'mark coarse', label: 'a region, not a point' },
   { shape: 'circle', classes: 'mark cluster', count: '9', label: 'more than one here' },
@@ -102,6 +108,7 @@ export const MAP_ROWS = Object.freeze([
 
 export const TIMELINE_ROWS = Object.freeze([
   { shape: 'rect', classes: 'bar', label: 'one event' },
+  { shape: 'rect', classes: 'bar lens-near', label: 'connected to the one you opened' },
   { shape: 'rect', classes: 'bar', ring: true, label: 'opens into more' },
   { shape: 'rect', classes: 'bar instant', narrow: true, label: 'one day' },
   { shape: 'rect', classes: 'bar ongoing', label: 'no end in the record' },

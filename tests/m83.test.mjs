@@ -211,12 +211,52 @@ test('the resting arrangement still merges lines at the zoom the graph floors at
   // this against a rendered page, which is a page at whatever zoom the camera
   // chose; the claim is about the arrangement, so it is made of the
   // arrangement, at `MIN_ZOOM`, which is as far out as the graph ever draws.
+  //
+  // What is claimed of the corpus is the rule and not a coincidence: every
+  // link between two stacks is drawn, and the links between the same two are
+  // one line. Whether the resting picture of the day happens to hold two
+  // stacks joined more than once is the corpus's business — it did on 22
+  // September at 581 events and did not at 668 — so that is not asserted of
+  // it; the merge itself is shown below on a picture built to need it.
   const { layout } = laidOut(at({}));
   const stacked = stackLayout(layout, { k: MIN_ZOOM });
   assert.ok(stacked.nodes.length < layout.nodes.length,
     'the resting picture stacks marks that cannot be told apart');
-  assert.ok(stacked.edges.some((line) => line.count > 1),
-    'and merges the links between two stacks into one line');
+  const pairs = new Map();
+  for (const line of layout.edges) {
+    const from = stacked.stackOf.get(line.from);
+    const to = stacked.stackOf.get(line.to);
+    if (from === undefined || to === undefined || from === to) continue;
+    const key = `${from}|${to}`;
+    pairs.set(key, (pairs.get(key) ?? 0) + 1);
+  }
+  assert.ok(pairs.size > 0, 'there are links between stacks to draw');
+  assert.equal(stacked.edges.length, pairs.size, 'one line for each pair of stacks the links join');
+  for (const line of stacked.edges) {
+    assert.equal(line.count, pairs.get(`${line.from}|${line.to}`),
+      `the line between ${line.from} and ${line.to} carries every link between them`);
+  }
+});
+
+test('and two stacks joined by several links are joined by one line', () => {
+  // Two marks on one spot, two more on another, a link from each of the first
+  // pair to one of the second: at the floor zoom the pairs are two stacks and
+  // the two links are one line that says it is two.
+  const edge = { type: 'enabled', confidence: 'probable', status: 'active' };
+  const node = (id, x, year) => ({
+    id, x, y: 40, weight: 1, lane: 'europe', year,
+  });
+  const built = {
+    nodes: [node('a', 100, 1900), node('b', 100, 1900), node('c', 400, 1950), node('d', 400, 1950)],
+    edges: [
+      { id: 'a-c', from: 'a', to: 'c', edge },
+      { id: 'b-d', from: 'b', to: 'd', edge },
+    ],
+  };
+  const stacked = stackLayout(built, { k: MIN_ZOOM });
+  assert.equal(stacked.nodes.length, 2, 'the four marks are two stacks');
+  assert.equal(stacked.edges.length, 1, 'joined by one line');
+  assert.equal(stacked.edges[0].count, 2, 'that carries both links');
 });
 
 // --- A13: the densest century's shard is cut into decades past a cap --------

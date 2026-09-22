@@ -22,6 +22,8 @@ import { standingSlot, fillStanding } from '../standing.js';
 // where the review apparatus is on and the atlas's own byline where it is not;
 // nothing under `data/` changes either way (demo.js).
 import { bylineOf } from '../demo.js';
+// The cross in the card's top right, the same on every card (M84).
+import { closeControlHtml } from './close.js';
 
 const authorsLine = (narrative) => esc(bylineOf(narrative));
 
@@ -135,6 +137,7 @@ export function renderNarrativeCard(ctx, { container, narrative, state, mine }) 
     <p class="notice narrative">Reading a narrative: the three views hold the walk, with what it touches dimmed around it, and follow the step.
       <button type="button" class="link small" data-action="leave-narrative">${esc(BACK_LABEL)}</button></p>
     <header class="narrative-head">
+      ${closeControlHtml()}
       <h2>${esc(narrative.title)}</h2>
       <p class="meta"><span class="muted">${authorsLine(narrative)}</span> · <span class="count">step ${index + 1} of ${total}</span>
         ${resolved?.event ? ctx.lensControl('event', resolved.event.id, { only: true }) : ''}</p>

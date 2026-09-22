@@ -3965,3 +3965,108 @@ written. `node --test`: **1,759 pure and 268 browser, 2,027 in all, 0 failed and
 No new runtime dependency, no build step, no map library or tiles, no new hex
 value, token or type size. No record, no historical claim. `emphasis.js`'s
 `shown` contract unchanged. `docs/drafts/` ignored. Deviations **1170 to 1182**.
+
+## M84 — the owner's feedback document
+
+Lane A, on the branch `m84`. `docs/feedback-2026-09-22.md`, left before a week
+away with the note *"Não tive tempo de rever, o que revi fica aqui"* and one
+picture: a source's card whose heading line reads *"Norrie MacQueen · 1997 ·
+BOOK · close · Focus on this"*. Three items. **Nothing under `data/` changed
+and the committed index is byte-identical to a fresh build.**
+
+Pictures: `docs/screens/m84-card-close.png` and `-phone.png`,
+`m84-map-ring.png`, `m84-graph-ring.png`, `m84-timeline-ring.png`,
+`m84-map-ring-key.png`. No other picture under `docs/screens/` was rewritten.
+
+### A cross closes a card
+
+> *"Here you can see the 'close' button. Instead it should be a simple cross on
+> the top right corner."*
+
+Counted before the change: three cards said "close" — a source, a place and an
+office — the actor's said **"stop highlighting"**, and an event, a link and a
+narrative had **no way out at all**. Every one that existed stood in the middle
+of a line of metadata, between the type of a book and "Focus on this", which is
+not where a hand goes: the fault M82 found in the four names for leaving a lens
+(A7), one act said four ways and none of them where it is looked for.
+
+`src/panel/close.js` is the whole of it, and it holds two things. **The
+markup**, because seven copies of one button are seven buttons that drift
+apart. And **the act**: `closes(state)` is pure and reads the panel's own
+precedence — narrative, edge, selected, source, office, place, actor, the order
+`render()` draws in — so the cross takes away whichever card is *on top* and no
+card knows which parameter it writes. Closing an event takes the walk with it;
+closing the card on top leaves the one under it open, so an event opened out of
+a place's list closes back to the place.
+
+No new hex value, token or type size: the multiplication sign in the
+interface's own face at `--text-lg`, cobalt as every control here is and madder
+under the pointer as the lens chip's × already is, in a 2.75 rem square because
+a touch target is 44 CSS pixels (WCAG 2.5.5). Floated rather than positioned,
+which is what makes it the *card's* corner rather than the panel's.
+
+### The dimmed neighbours are told apart
+
+> *"Regarding direct connections to events that are shown dimmed out, they are
+> easily confused, I suggest showing them in a different colour."*
+
+Right, and for a reason the stylesheet can be read for: **opacity was already
+spoken for twice** — `faded` is "outside the band" and `in-horizon` is "further
+from the horizon year". A third thing said in the same word said nothing, and a
+direct consequence of the event on screen looked like an event the window had
+taken away.
+
+The ring is **`--terr-5-line`, `#016b44`, and no new token**. The brief asks the
+run to say plainly if nothing in the palette reads as "connected, not chosen":
+**nothing does.** The confidence "inks" are not inks — confidence is spent in
+`stroke-opacity` (M73) — and a category has no colour either, a glyph being
+`currentColor` and nothing else. So this is the closest and not a match, chosen
+on two measured grounds: it is an **ink**, one of the `-line` tokens the palette
+already trusts a one-pixel border to, at 6.6:1 on paper and 5.5:1 on land; and
+it is the **furthest of the eight from both** colours these pictures already
+spend — 105° from cobalt and 141° from madder in OKLCH, the largest
+smallest-separation any token here offers. Three rows joined
+`tests/contrast.test.mjs` so it cannot slip.
+
+A colour nobody explains is a colour a reader invents a meaning for, so **the
+key on each view names it** — "connected to the one you opened" — drawn with the
+picture's own class so the swatch and the mark cannot come apart. The graph's
+key is headed `Marks and links` now, since it has a mark in it.
+
+The ink is written in each picture's own block and not in the shared
+`lens-near` rule, because an ink has to stand in the order the other inks stand
+in: after everything that says what a record *is* and before the selection and
+the walked chain, which are the reader's own. A coarse mark keeps its dash, a
+one-day bar its harder fill and a converged branch its fill — each in the ring's
+hue — so a mark says both things at once. `emphasis.js`'s `shown` contract is
+untouched and nothing about what is *drawn* changed: this is ink.
+
+### M80 verified
+
+`?edge=` and the link's card are landed and published. **The live page cannot be
+opened from the sandbox** — the network policy answers 403 to the site's host —
+so it was verified against the tree GitHub Pages serves, `origin/main` at
+`d4bfbb94`, in the same headless browser the suite uses: `?view=graph`, a line
+clicked where a reader's pointer would be. The card came back with the **type**
+("precondition of"), both **ends** as controls, the **confidence** (`probable`)
+with what it means, the **summary**, and **one source with its locator**
+(*"revision 1374343940, § Consequences"*), at
+`?edge=1893-franco-siamese-crisis--entente-cordiale--precondition-of`. Nothing
+is missing, so nothing was fixed here; M80's own browser suite passes against
+that tree, 8 of 8.
+
+### Checks
+
+`node tools/validate.mjs --index`: **11,616 records, 5 regions, 0 errors, 463
+warnings**, and nothing under `data/` written. `node --test`: **1,772 pure and
+273 browser, 2,045 in all, 0 failed and 0 skipped**, the browser suites one at a
+time as the check runs them.
+
+One commit on this branch is not this milestone's: `tests/m83.test.mjs` failed
+on `origin/m0` as it stood at claim time, the fix landed on `m0` an hour later,
+and the lane protocol forbids rebasing — so it is cherry-picked, and no-ops when
+`m84` lands.
+
+No new runtime dependency, no build step, no map library or tiles, no new hex
+value, token or type size. No record, no historical claim. `docs/drafts/`
+ignored. Deviations **1183 to 1191**.

@@ -402,19 +402,46 @@ input, select, textarea { accent-color: var(--cobalt); }
 .lens-chips .lens-drop:hover { color: var(--madder); }
 .lens-chips .lens-all[aria-pressed="true"] { font-weight: 600; color: var(--cobalt); }
 /* The events one hop out from the focus set: in the picture, so that a
-   neighbourhood does not read as an atlas in which nothing else happened,
-   and faint enough that nobody takes them for what was asked for. Fainter
-   than `faded`, which means "outside the band" and is a different sentence. */
-.map .mark.lens-near, .graph .node.lens-near, .timeline .bar.lens-near { opacity: 0.22; }
+   neighbourhood does not read as an atlas in which nothing else happened.
+
+   **A colour and no longer a fade** (M84). They were drawn at 0.22 and the
+   owner, 22 September: *"Regarding direct connections to events that are shown
+   dimmed out, they are easily confused, I suggest showing them in a different
+   colour."* Which is right: opacity is the atlas's word for "outside the band"
+   (`faded`) and for "further from the horizon year" (`in-horizon`), and a
+   third thing said in the same word said nothing — a direct consequence of the
+   event on screen looked like an event the window had taken away.
+
+   So the ring is **`--terr-5-line`, and no new token**. It is an ink: a colour
+   the palette already trusts a one-pixel line to, at 6.6:1 on paper and 5.5:1
+   on land. It is the furthest of the eight from both of the colours this
+   picture already spends — 105° from cobalt and 141° from madder in OKLCH, the
+   largest smallest-separation of any token here — so it is neither the atlas's
+   ordinary drawing nor the walked chain at a glance. Nothing in the atlas reads
+   as "connected, not chosen" on its own and `STATUS.md` says so; this is the
+   closest, and the key on each view names it rather than leaving it to be
+   guessed. The eight hues mean only "not the one beside it" (about.html), so
+   borrowing one for a mark takes no meaning away from a territory. */
+   **The ink itself is in each picture's own block below and not here**, where
+   the fade was. A fade is one declaration that beats nothing; an ink has to
+   stand in the order the other inks stand in — after "this is placed no better
+   than a region", after "this is one of the open actor's", after "this is a
+   branch that converged", and *before* the selection and the walked chain,
+   which are the reader's own and say so last. So each view states it where it
+   spends its emphasis, and what is said once here is the thing the three have
+   in common: the ring is not faded any more. */
+.map .mark.lens-near, .graph .node.lens-near, .timeline .bar.lens-near { opacity: 1; }
 /* And the lines between them (M77): with a lens on, the lens's own links are
    the ones in ink and everything else is there to be found. The arrowhead
    goes with its line, as it does for every other class they share. */
 .graph .edge.lens-near, .graph .edge-head.lens-near { opacity: 0.16; }
 .graph .edge.lens-near.chain, .graph .edge-head.lens-near.chain,
 .graph .edge.lens-near.converging, .graph .edge-head.lens-near.converging { opacity: 0.6; }
-.map .mark.lens-near.selected, .map .mark.lens-near.on-path,
-.graph .node.lens-near.selected, .graph .node.lens-near.on-path,
-.timeline .bar.lens-near.selected, .timeline .bar.lens-near.on-path { opacity: 0.6; }
+/* And where the reader's own selection or walk falls inside the ring — which
+   an explicit `?focus=` allows — the selection wins the ink, as it wins it over
+   every other class: madder is what the reader is holding and says so last.
+   There is nothing left to undim, so the pair of opacities that used to stand
+   here went with the fade. */
 /* A search result the lens does not keep: still listed, plainly marked, and
    still choosable — the lens narrows what is drawn, never what is found. */
 .search-option.outside-lens .search-label { color: var(--ink-soft); }
@@ -991,6 +1018,11 @@ body:not(.phone) .layout.panel-empty.composing {
    be read underneath the actor's emphasis and the path's accent alike. */
 .map .mark.of-narrative { stroke: var(--cobalt); stroke-width: 3; stroke-dasharray: 2 2; }
 .map .mark.of-actor { fill: var(--cobalt-soft); stroke: var(--cobalt); stroke-width: 2.5; }
+/* The ring around whatever the reader has open (M84): the ink, in its place in
+   the order — after everything that says what a record *is*, before the two
+   that say what the reader is holding. */
+.map .mark.lens-near { stroke: var(--terr-5-line); }
+.map .mark.lens-near:hover { fill: var(--terr-5-tint); }
 .map .mark.on-path { fill: var(--madder); stroke: var(--madder); }
 .map .mark.selected { fill: var(--madder); stroke: var(--paper); stroke-width: 2; }
 /* The symbol of an event's category, over its mark and never instead of it.
@@ -1070,11 +1102,14 @@ body:not(.phone) .layout.panel-empty.composing {
    Its width is set per zoom by the events layer, so nothing is declared here.
    Not a control: it takes no click, and the mark under it takes them all. */
 .map .ring { fill: none; stroke: var(--cobalt); pointer-events: none; }
+/* A parent inside the ring wears the ring's ink too, so that a mark and the
+   outline that says there is more inside it are never two different colours
+   (M84). Before the two lines below and not after them: the selection and the
+   walk outrank every other class, here as on the mark itself. */
+.map .ring.lens-near { opacity: 1; stroke: var(--terr-5-line); }
 .map .ring.on-path, .map .ring.selected { stroke: var(--madder); }
 .map .ring.faded { opacity: 0.3; }
 .map .ring.faded.selected, .map .ring.faded.on-path { opacity: 0.55; }
-.map .ring.lens-near { opacity: 0.22; }
-.map .ring.lens-near.selected, .map .ring.lens-near.on-path { opacity: 0.6; }
 .map .ring.in-horizon.mid { opacity: 0.72; }
 .map .ring.in-horizon.far { opacity: 0.45; }
 .map .ring.in-horizon.on-path, .map .ring.in-horizon.selected { opacity: 1; }
@@ -1184,6 +1219,12 @@ body:not(.phone) .layout.panel-empty.composing {
 .graph .node.of-narrative { stroke: var(--cobalt); stroke-width: 3; stroke-dasharray: 2 2; }
 .graph .node.of-actor { fill: var(--cobalt-soft); stroke: var(--cobalt); stroke-width: 2.5; }
 .graph .node.converging { fill: var(--cobalt); stroke: var(--cobalt); }
+/* The ring (M84), after `converging` and before the selection: a branch that
+   converged is still drawn filled, and in the ring it is filled in the ring's
+   own hue rather than in the cobalt every other mark is drawn in. */
+.graph .node.lens-near { stroke: var(--terr-5-line); }
+.graph .node.converging.lens-near { fill: var(--terr-5); stroke: var(--terr-5-line); }
+.graph .node.lens-near:hover { fill: var(--terr-5-tint); }
 .graph .node.on-path { fill: var(--madder); stroke: var(--madder); }
 .graph .node.selected { fill: var(--madder); stroke: var(--paper); stroke-width: 2; }
 /* A stack of nodes drawn as one, and the count beside it: read exactly as
@@ -1215,9 +1256,8 @@ body:not(.phone) .layout.panel-empty.composing {
    the node's own emphasis classes and not the word `node`; its width is set
    per zoom by the view, so nothing is declared here. */
 .graph .ring { fill: none; stroke: var(--cobalt); pointer-events: none; }
+.graph .ring.lens-near { opacity: 1; stroke: var(--terr-5-line); }
 .graph .ring.on-path, .graph .ring.selected { stroke: var(--madder); }
-.graph .ring.lens-near { opacity: 0.22; }
-.graph .ring.lens-near.selected, .graph .ring.lens-near.on-path { opacity: 0.6; }
 .graph .ring.in-horizon.mid { opacity: 0.72; }
 .graph .ring.in-horizon.far { opacity: 0.45; }
 .graph .ring.in-horizon.on-path, .graph .ring.in-horizon.selected { opacity: 1; }
@@ -1297,6 +1337,10 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .view-key .bar.instant { fill: var(--cobalt-soft); }
 .view-key .bar.ongoing { stroke-dasharray: 3 3; }
 .view-key .ring { fill: none; stroke: var(--cobalt); }
+/* And the ring around what the reader has open (M84), in the same ink and the
+   same fill the two pictures give it. */
+.view-key .mark.lens-near { stroke: var(--terr-5-line); }
+.view-key .bar.lens-near { fill: var(--terr-5-tint); stroke: var(--terr-5-line); }
 
 /* The picture as a file. Bottom right in both views, opposite the graph's
    key, and quiet: it is a way out, not a thing to do. */
@@ -1412,6 +1456,14 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .timeline .bar.ongoing { stroke-dasharray: 3 3; }
 .timeline .bar.of-narrative { stroke: var(--cobalt); stroke-width: 2; stroke-dasharray: 3 2; }
 .timeline .bar.of-actor { fill: var(--cobalt-soft); stroke: var(--cobalt); stroke-width: 2; }
+/* The ring (M84). A bar carries a fill as well as an outline, so it takes the
+   same ink's own tint under it — and a one-day mark, which is drawn in the
+   stronger of the two cobalts, takes the stronger of the two greens, so that
+   "one day" goes on meaning what it means inside the ring as well as outside
+   it. */
+.timeline .bar.lens-near { fill: var(--terr-5-tint); stroke: var(--terr-5-line); }
+.timeline .bar.instant.lens-near { fill: var(--terr-5); }
+.timeline .bar.lens-near:hover { fill: var(--terr-5); }
 .timeline .bar.on-path { fill: var(--madder-faint); stroke: var(--madder); }
 .timeline .bar.selected { fill: var(--madder); stroke: var(--madder); }
 /* And at the left end of a bar, in the same rule against the bar's own fill:
@@ -1447,10 +1499,9 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
    own emphasis classes and not the word `bar`, so it reddens and fades with
    the bar and no selector that counts bars counts outlines. */
 .timeline .ring { fill: none; stroke: var(--cobalt); pointer-events: none; }
+.timeline .ring.lens-near { opacity: 1; stroke: var(--terr-5-line); }
 .timeline .ring.on-path, .timeline .ring.selected { stroke: var(--madder); }
 .timeline .ring.faded { opacity: 0.28; }
-.timeline .ring.lens-near { opacity: 0.22; }
-.timeline .ring.lens-near.selected, .timeline .ring.lens-near.on-path { opacity: 0.6; }
 .timeline .ring.in-horizon.mid { opacity: 0.72; }
 .timeline .ring.in-horizon.far { opacity: 0.45; }
 .timeline .ring.in-horizon.on-path, .timeline .ring.in-horizon.selected { opacity: 1; }
@@ -1654,6 +1705,44 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .panel button:not(.link):disabled, .panel button:not(.link)[disabled] {
   border-color: var(--line); color: var(--ink-soft); background: var(--ground); cursor: not-allowed;
 }
+/* The one way out of a card, and there is no other (M84, close.js). The owner,
+   22 September: *"Here you can see the 'close' button. Instead it should be a
+   simple cross on the top right corner."*
+
+   Floated rather than positioned, which is what makes it the *card's* corner
+   and not the panel's: the title beside it is a flex container and shortens to
+   clear the float by itself, the notices above it wrap around it line by line,
+   and everything below it goes back to the full measure once it has passed —
+   none of which a box taken out of the flow would do, and all of which a card
+   whose head is three lines on a phone and one on a desk needs.
+
+   No new hex value, no new type size: the cross is the multiplication sign in
+   the interface's own face at the size a section head already is, inked cobalt
+   as every control in the panel is and madder under the pointer as the lens
+   chip's × already is. The square is 2.75rem because a touch target is 44 CSS
+   pixels (WCAG 2.5.5) — a target size and not a type size, and the glyph
+   inside it is `--text-lg` like everything else.
+
+   Written `.panel button.card-close` and placed here, because `.panel
+   button:not(.link)` above draws every other button in this panel as a bordered
+   pill and a cross in a box is not a simple cross — and `:not(.link)` costs a
+   class, so a rule naming only the two classes would lose to it wherever it
+   stood. What this keeps from that rule is the corner radius and the faint
+   ground under the pointer. */
+.panel button.card-close {
+  float: right;
+  display: flex; align-items: center; justify-content: center;
+  width: 2.75rem; height: 2.75rem;
+  /* Pulled back into the padding the panel already keeps, so the cross sits in
+     the corner of the card rather than a finger's width inside it. */
+  margin: calc(-1 * var(--space-2)) calc(-1 * var(--space-2)) 0 var(--space-2);
+  border: 0; background: none; padding: 0; cursor: pointer;
+  font-family: var(--font-ui); font-size: var(--text-lg); line-height: 1;
+  color: var(--cobalt);
+}
+/* And the ground the generic rule puts under a hovered button, kept: it is
+   what makes a 44-pixel target look like one when a finger is on it. */
+.panel button.card-close:hover { color: var(--madder); }
 .panel .follow { text-align: left; }
 
 /* Confidence, designed. Three states that have to be tellable apart in a

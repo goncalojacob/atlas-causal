@@ -19,6 +19,8 @@ import { attributionHtml, attributionSource } from '../licensing.js';
 // card's head and is filled when the record's own file lands, because the core
 // row a card is built from carries no signature.
 import { standingSlot, fillStanding } from '../standing.js';
+// The cross in the card's top right, the same on every card (M84).
+import { closeControlHtml } from './close.js';
 
 // What a relation is called from each end, and the order the groups are drawn
 // in: both from the one list of relation types (vocab.js), which is also
@@ -342,12 +344,12 @@ export function actorCardHtml(ctx, actor, { state = null, remembered = null } = 
     ${actor.status !== 'active' ? `<p class="notice status">This actor is <strong>${esc(actor.status)}</strong>.</p>` : ''}
     ${appearances.length === 0 ? `<p class="notice no-events">${noEvents(ground, successionSection)}</p>` : ''}
     <header class="actor-head">
+      ${closeControlHtml()}
       ${ctx.historyHtml()}
       <h2>${esc(actor.name)}</h2>
       <p class="meta">
         <span class="actor-type">${esc(ACTOR_TYPE_LABEL[actor.actorType] ?? actor.actorType)}</span>
         · <span class="when">${esc(formatInterval(actor.when))}</span>
-        <button type="button" class="link small" data-action="clear-actor">stop highlighting</button>
         ${ctx.lensControl('actor', actor.id)}
       </p>
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
