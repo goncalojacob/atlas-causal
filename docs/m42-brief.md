@@ -286,3 +286,15 @@ locator, keep the `date` flag's note saying what was changed from what and
 why, and clear the flag. Reading a cited source is not inventing a date; the
 standing exception is untouched. An interval the cited article does not
 state stays as it is and stays flagged.
+
+**A8 (22 September). An event may be part of several umbrellas — once `M79
+done` is on `origin/m0`.** The owner: *"Can't we have many umbrellas for the
+same event? For example, the angola independence is both under the
+Portuguese third republic and african decolonization."* M79 (lane A) makes
+`parent` a list. **From the first fire after `M79 done` is on `origin/m0`**:
+a filing writes every umbrella whose span and subject fit, not the first;
+the existing filed events are re-read once for a second parent they were
+denied (the pass says how many gained one); and **the decolonisation of
+Africa is an umbrella**, with the span its Wikipedia article states and the
+revision cited — the owner asked for it by name. Until `M79 done` is on
+`origin/m0`, a record still has one parent and this amendment waits.
