@@ -155,10 +155,19 @@ test('the arrangement says what the lens itself names, because the axis is built
   // The ring is drawn where its own dates put it and is not what the axis is
   // built from: that is what keeps a cause forty years upstream from giving the
   // question back the sliver it was asked to get out of.
-  assert.ok(
-    timeSpan(events).max - timeSpan(events).min
-      > timeSpan(events.filter((e) => lens.has(e.id))).max - timeSpan(events.filter((e) => lens.has(e.id))).min,
-    'the ring reaches further in time than the lens does',
+  //
+  // **What it no longer does is reach outside that axis** (M83, A1-1). It did
+  // until this milestone, and what the owner saw of the part that reached was a
+  // row of hollow circles pinned to the edge of the picture at no year a reader
+  // could read them at. A neighbour the axis cannot hold is not drawn now, so
+  // the span of everything drawn is the lens's own span — which is the same
+  // claim this test was always making about where the axis comes from, and the
+  // assertion that follows is the one that still says it.
+  const own = events.filter((e) => lens.has(e.id));
+  assert.equal(
+    timeSpan(events).max - timeSpan(events).min,
+    timeSpan(own).max - timeSpan(own).min,
+    'the axis is the lens’s own, and nothing drawn reaches past it',
   );
 });
 

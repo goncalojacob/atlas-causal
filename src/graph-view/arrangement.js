@@ -12,6 +12,8 @@
 
 import { formatFoci, lensView } from '../lens.js';
 import { parentsOf } from '../parts.js';
+import { timeAxis } from './layout.js';
+import { extent } from '../util/dates.js';
 
 // What the reader is holding, written from the state rather than counted out
 // of the held set itself. The set is derived from these six fields and from
@@ -130,6 +132,37 @@ export function organises(atlas, event, state, held = null) {
 // toggles still on, from `workingSet` (emphasis.js). Given rather than asked
 // for, like `held` and for the same reason. `null` is a caller with nothing to
 // narrow by, and then the lens alone decides, as it did before the glyph run.
+// **A ring node stands on its own date or it is not drawn** (M83, A1-1).
+//
+// A lens is laid out on its own time axis since M81 — the extent of the events
+// the lens itself names — and the ring around it is drawn where its own dates
+// put it, which for a six-year war is mostly nowhere: the causes forty years
+// upstream and the consequences two years down are off the width, and what the
+// owner saw of them was a row of hollow circles pinned along the edge of the
+// picture with no year a reader could read them at.
+//
+// So a node the lens merely reaches is kept when the axis holds its date and
+// dropped when it does not. The two halves of the lens itself are never
+// dropped — they are what the axis was built from — and neither is anything
+// the reader is holding, which is the rule every other filter on this picture
+// obeys: walking to an event brings it into the picture rather than out of it.
+//
+// Where the lens has no extent of its own — one event chosen, one date — the
+// axis falls back to the extent of everything drawn (`timeAxis`), so nothing
+// is outside it and nothing is dropped. That is the same rule read honestly
+// and not a case.
+function onTheAxis(events, view, held) {
+  if (!view) return events;
+  const axis = timeAxis(events, view.kept);
+  if (!axis) return events;
+  const { min, max } = axis.extent;
+  return events.filter((event) => {
+    if (view.kept.has(event.id) || held?.has(event.id)) return true;
+    const year = extent(event.when).min;
+    return Number.isFinite(year) && year >= min && year <= max;
+  });
+}
+
 export function arrangementOf(atlas, state, held = null, shown = undefined) {
   const view = lensView(atlas, state);
   const lens = view?.shown ?? null;
@@ -137,7 +170,7 @@ export function arrangementOf(atlas, state, held = null, shown = undefined) {
   const kept = drawable ? atlas.activeEvents.filter((e) => drawable.has(e.id)) : atlas.activeEvents;
   // Inside a lens the reader has already said what they want; outside it the
   // graph draws what organises other events (`organises` above).
-  const all = view ? kept : kept.filter((e) => organises(atlas, e, state, held));
+  const all = onTheAxis(view ? kept : kept.filter((e) => organises(atlas, e, state, held)), view, held);
   // **Every one of them, whatever the window says** (M76). From H4b until this
   // milestone the arrangement was the window and one period either side, and
   // what fell outside it was not faded but absent — the reader moved the band
