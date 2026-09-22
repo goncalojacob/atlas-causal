@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q123685068",
-  "sitelinks": {
-    "count": 3,
-    "on": "2026-09-04"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q123685068",
   "wikipedia": {
     "en": "2024 Madeiran regional election",
     "pt": "Eleições legislativas regionais na Madeira em 2024"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
   },
   "sources": [
     {
@@ -62,7 +63,7 @@
     "end": 2024,
     "date": "2024-05-26"
   },
-  "place": null,
+  "place": "portugal-q45",
   "region": "europe",
   "parent": "third-portuguese-republic-since-1974",
   "category": "election",

@@ -9,16 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q868261"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Black Monday (1987)\", revision 1375770077"
     }
   ],
   "title": "Black Monday",
-  "summary": "Wikidata item Q868261, imported by tools/import/wikidata.mjs. The item's own description reads \"world stock market crash of Monday, October 19, 1987\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Black Monday (1987)\", at revision 1375770077, opens: \"Black Monday was a global, severe and largely unexpected stock market crash on Monday, October 19, 1987. Worldwide losses were estimated at US$1.71 trillion. The severity sparked fears of extended economic instability or a reprise of the Great Depression.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q868261, imported by tools/import/wikidata.mjs. The item's own description reads \"world stock market crash of Monday, October 19, 1987\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1987,
     "end": 1987,

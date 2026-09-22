@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "bahrain-q398",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q398",
+  "wikipedia": {
+    "en": "Bahrain"
+  },
+  "sources": [],
+  "names": [
+    "Bahrain",
+    "bh",
+    "Kingdom of Bahrain",
+    "Bahrein Islands",
+    "ISO 3166-1:BH"
+  ],
+  "where": {
+    "lon": 50.55111,
+    "lat": 26.0675,
+    "precision": "country",
+    "label": "Bahrain"
+  },
+  "region": null,
+  "summary": null
+}

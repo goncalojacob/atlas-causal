@@ -953,7 +953,15 @@
     "Q82542",
     "Q208199",
     "Q157873",
-    "Q2888837"
+    "Q2888837",
+    "Q482456",
+    "Q482402",
+    "Q247253",
+    "Q714749",
+    "Q697053",
+    "Q247395",
+    "Q280468",
+    "Q259526"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1114,7 +1122,32 @@
     "Q7784981": "asia",
     "Q4578716": "asia",
     "Q5783195": "asia",
-    "Q5858325": "americas"
+    "Q5858325": "americas",
+    "Q273348": "europe",
+    "Q636365": "europe",
+    "Q2524228": "europe",
+    "Q1968528": "americas",
+    "Q2992361": "americas",
+    "Q4345906": "americas",
+    "Q2294274": "americas",
+    "Q3269922": "americas",
+    "Q3284956": "americas",
+    "Q1979826": "americas",
+    "Q4872265": "americas",
+    "Q537052": "americas",
+    "Q4872339": "americas",
+    "Q2641750": "americas",
+    "Q6921638": "americas",
+    "Q2984901": "americas",
+    "Q3610236": "americas",
+    "Q4930640": "americas",
+    "Q7535905": "americas",
+    "Q4871802": "americas",
+    "Q4872617": "americas",
+    "Q4871801": "americas",
+    "Q4582489": "americas",
+    "Q4872743": "americas",
+    "Q7097204": "americas"
   },
   "queries": [
     {
@@ -4191,6 +4224,58 @@
       "kind": "event",
       "label": "international crisis",
       "note": "Added in M42 batch 33, read from the item itself over the network. The class is here because Q110254389, the prelude to the Russian invasion of Ukraine, carries it and the table did not. It takes no category on purpose: a crisis in relations between states is not one of the twelve kinds of data/categories.json, and a class with no category writes no key at all rather than a guess. The item’s other class, Q19833559 preparation, was refused: it is an activity and not a kind of event, and the table is for classes that say what a record is."
+    },
+    "Q484170": {
+      "kind": "place",
+      "label": "commune of France",
+      "note": "Added in M42b batch 1 from the class each P276 location of the batch names, read off Wikidata rather than guessed; A9 asks for a place record and the class table is what decides the kind."
+    },
+    "Q82794": {
+      "kind": "place",
+      "label": "region",
+      "note": "Added in M42b batch 1 from the class each P276 location of the batch names, read off Wikidata rather than guessed; A9 asks for a place record and the class table is what decides the kind."
+    },
+    "Q645883": {
+      "kind": "event",
+      "category": "war",
+      "label": "military operation",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q1546073": {
+      "kind": "event",
+      "category": "war",
+      "label": "covert operation",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q476807": {
+      "kind": "event",
+      "category": "war",
+      "label": "military raid",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q650711": {
+      "kind": "event",
+      "category": "war",
+      "label": "combat",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q997267": {
+      "kind": "event",
+      "category": "war",
+      "label": "skirmish",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q1303061": {
+      "kind": "event",
+      "category": "war",
+      "label": "friendly fire",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q744913": {
+      "kind": "event",
+      "category": "disaster",
+      "label": "aviation accident",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed. An aviation accident is a disaster and friendly fire is war, so an item carrying both — the Gazelle incident of 6 June 1982 — takes no category at all rather than one of the two picked for it."
     }
   },
   "reconcile": true

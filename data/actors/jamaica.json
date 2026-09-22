@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q766",
+  "wikipedia": {
+    "en": "Jamaica"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 51"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q766, P2046 (area) and P1082 (population, 2011)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Jamaica\", revision 1376038965"
     }
   ],
   "actorType": "polity",
   "names": [
     "Jamaica"
   ],
-  "summary": "Entity 51 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1962 to where the dataset stops, in 2019. Its last capital in the dataset is Kingston. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1962-08-06. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 10,992 km² and about 2.7 million people (2011), from Wikidata's Q766 (P2046, P1082). The English Wikipedia article \"Jamaica\", at revision 1376038965, opens: \"Jamaica is an island country in the Caribbean, covering 10,991 square kilometres (4,244 sq mi). It is the third-largest island in the Greater Antilles and the Caribbean, after Cuba and the island of Hispaniola. Jamaica lies about 145 km (78 nmi) south of Cuba, 191 km (103 nmi) west of Hispaniola, and 215 km (116 nmi) southeast of the Cayman Islands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 51 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1962 to where the dataset stops, in 2019. Its last capital in the dataset is Kingston. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1962-08-06. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1962,
     "end": null

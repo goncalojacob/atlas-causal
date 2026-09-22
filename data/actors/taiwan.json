@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q865",
+  "wikipedia": {
+    "en": "Taiwan"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 713"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q865, P2046 (area) and P1082 (population, 2026)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Taiwan\", revision 1375246670"
     }
   ],
   "actorType": "polity",
   "names": [
     "Taiwan"
   ],
-  "summary": "Entity 713 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1949 to where the dataset stops, in 2019. Its last capital in the dataset is Taipei. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1945-08-15. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 36,193 km² and about 23.3 million people (2026), from Wikidata's Q865 (P2046, P1082). The English Wikipedia article \"Taiwan\", at revision 1375246670, opens: \"Taiwan, officially the Republic of China (ROC), is a country in East Asia. The main island of Taiwan, formerly known as Formosa, lies between the East and South China Seas in the northwestern Pacific Ocean, with the People's Republic of China (PRC) to the northwest, Japan to the northeast, and the Philippines to the south. It has an area of 35,808 square kilometers, with mountain ranges dominating the eastern two-thirds and plains in the western third, where its highly urbanized population is concentrated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 713 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1949 to where the dataset stops, in 2019. Its last capital in the dataset is Taipei. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1945-08-15. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1949,
     "end": null

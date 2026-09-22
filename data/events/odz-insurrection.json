@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,16 +41,20 @@
     {
       "source": "wikidata",
       "locator": "Q766868"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Łódź insurrection\", revision 1370751757"
     }
   ],
   "title": "Łódź insurrection",
-  "summary": "Wikidata item Q766868, imported by tools/import/wikidata.mjs. The item's own description reads \"1905 uprising in Russian Poland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Łódź insurrection\", at revision 1370751757, opens: \"The Łódź insurrection, also known as the June Days, was an uprising by Polish workers in Łódź against the Russian Empire between 21 and 25 June 1905. This event was one of the largest disturbances in the Russian-controlled Congress Poland during the Russian Revolution of 1905. Poland was a major center of revolutionary fighting in the Russian Empire in 1905–1907, and the Łódź insurrection was a key incident in those events.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q766868, imported by tools/import/wikidata.mjs. The item's own description reads \"1905 uprising in Russian Poland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1905,
     "end": 1905,
     "date": "1905-06-25"
   },
-  "place": null,
+  "place": "odz",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "russian-revolution-of-1905",

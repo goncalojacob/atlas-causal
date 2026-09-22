@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q1041",
+  "wikipedia": {
+    "en": "Senegal"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 433"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1041, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Senegal\", revision 1375617983"
     }
   ],
   "actorType": "polity",
   "names": [
     "Senegal"
   ],
-  "summary": "Entity 433 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1960 to where the dataset stops, in 2019. Its last capital in the dataset is Dakar. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1959-04-04. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 196,722 km² and about 16.9 million people (2021), from Wikidata's Q1041 (P2046, P1082). The English Wikipedia article \"Senegal\", at revision 1375617983, opens: \"Senegal, officially the Republic of Senegal, is the westernmost country of mainland West Africa, situated along the Atlantic Ocean coast. It borders Mauritania to the north, Mali to the east, Guinea to the southeast and Guinea-Bissau to the southwest. Senegal nearly surrounds the Gambia, a country occupying a narrow strip of land along the banks of the Gambia River, which separates Senegal's southern region of Casamance from the rest of the country.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 433 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1960 to where the dataset stops, in 2019. Its last capital in the dataset is Dakar. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1959-04-04. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1960,
     "end": null

@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,17 +41,21 @@
     {
       "source": "wikidata",
       "locator": "Q2446816"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sveaborg rebellion\", revision 1370749115"
     }
   ],
   "title": "Sveaborg Rebellion",
-  "summary": "Wikidata item Q2446816, imported by tools/import/wikidata.mjs. The item's own description reads \"1906 Russian military mutiny\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Sveaborg rebellion\", at revision 1370749115, opens: \"The Sveaborg rebellion was an Imperial Russian military mutiny which broke out on the evening of 30 July 1906 amongst the garrison of the coastal fortress of Sveaborg on the coast of Helsinki in the Grand Duchy of Finland. The mutiny was part of the aftermath of the Russian Revolution of 1905, which by summer 1906 had effectively been suppressed in most other regions of the Russian Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2446816, imported by tools/import/wikidata.mjs. The item's own description reads \"1906 Russian military mutiny\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1906,
     "end": 1906,
     "date": "1906-07-18",
     "endDate": "1906-07-20"
   },
-  "place": null,
+  "place": "suomenlinna",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "russian-revolution-of-1905",

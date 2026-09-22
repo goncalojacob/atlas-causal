@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q783",
+  "wikipedia": {
+    "en": "Honduras"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 91"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q783, P2046 (area) and P1082 (population, 2013)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Honduras\", revision 1375985998"
     }
   ],
   "actorType": "polity",
   "names": [
     "Honduras"
   ],
-  "summary": "Entity 91 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Tegucigalpa. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 112,492 km² and about 8.3 million people (2013), from Wikidata's Q783 (P2046, P1082). The English Wikipedia article \"Honduras\", at revision 1375985998, opens: \"Honduras, officially the Republic of Honduras, is a country in Central America. It is bordered to the west by Guatemala, to the southwest by El Salvador, to the southeast by Nicaragua, to the south by the Pacific Ocean at the Gulf of Fonseca, and to the north by the Gulf of Honduras, a large inlet of the Caribbean Sea. Its capital and largest city is Tegucigalpa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 91 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Tegucigalpa. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

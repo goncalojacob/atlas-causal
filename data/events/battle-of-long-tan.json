@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "battle-of-long-tan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "participants-from-p710",
+      "summary-from-lead"
+    ],
+    "note": "Wikidata Q259526 names 5 participants (P710) and the atlas holds an actor for 3 of them, so this list is partial: 2 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q259526",
+  "wikipedia": {
+    "en": "Battle of Long Tan",
+    "pt": "Batalha de Long Tan"
+  },
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q259526"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Long Tan\", revision 1372094029"
+    }
+  ],
+  "title": "Battle of Long Tan",
+  "summary": "The English Wikipedia article \"Battle of Long Tan\", at revision 1372094029, opens: \"The Battle of Long Tan took place in a rubber plantation near Long Tân, in Phước Tuy Province, South Vietnam, during the Vietnam War. The action was fought between Viet Cong (VC) and People's Army of Vietnam (PAVN) units on one side and elements of the 1st Australian Task Force on the other.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q259526, imported by tools/import/wikidata.mjs. The item's own description reads \"1966 battle of the Vietnam War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1966,
+    "end": 1966,
+    "date": "1966-08-18"
+  },
+  "place": "long-tan",
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "vietnam-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent",
+      "note": "Wikidata Q259526, P710 (participant), Q30"
+    },
+    {
+      "actor": "australia",
+      "role": "belligerent",
+      "note": "Wikidata Q259526, P710 (participant), Q408"
+    },
+    {
+      "actor": "new-zealand",
+      "role": "belligerent",
+      "note": "Wikidata Q259526, P710 (participant), Q664"
+    }
+  ]
+}

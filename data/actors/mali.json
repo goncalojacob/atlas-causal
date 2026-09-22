@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q912",
+  "wikipedia": {
+    "en": "Mali"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 432"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q912, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mali\", revision 1375581550"
     }
   ],
   "actorType": "polity",
   "names": [
     "Mali"
   ],
-  "summary": "Entity 432 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1960 to where the dataset stops, in 2019. Its last capital in the dataset is Bamako. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1960-09-22. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 1,240,192 km² and about 22.4 million people (2022), from Wikidata's Q912 (P2046, P1082). The English Wikipedia article \"Mali\", at revision 1375581550, opens: \"Mali, officially the Republic of Mali, is a landlocked country in West Africa. It is the eighth-largest country in Africa and the 23rd largest country in the world, with an area of 1,240,192 square kilometres (478,841 sq mi). It is bordered to the north by Algeria, to the east by Niger, to the northwest by Mauritania, to the south by Burkina Faso and Ivory Coast, and to the west by Guinea and Senegal.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 432 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1960 to where the dataset stops, in 2019. Its last capital in the dataset is Bamako. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1960-09-22. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1960,
     "end": null

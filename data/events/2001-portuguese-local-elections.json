@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q18471358",
-  "sitelinks": {
-    "count": 2,
-    "on": "2026-09-04"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q18471358",
   "wikipedia": {
     "en": "2001 Portuguese local elections",
     "pt": "Eleições autárquicas portuguesas de 2001"
+  },
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
   },
   "sources": [
     {
@@ -66,7 +67,7 @@
     "end": 2001,
     "date": "2001-12-16"
   },
-  "place": null,
+  "place": "portugal-q45",
   "region": "europe",
   "parent": "third-portuguese-republic-since-1974",
   "category": "election",

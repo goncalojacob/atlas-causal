@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,16 +42,20 @@
     {
       "source": "wikidata",
       "locator": "Q1078181"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1963 South Vietnamese coup d'état\", revision 1370279464"
     }
   ],
   "title": "1963 South Vietnamese coup",
-  "summary": "Wikidata item Q1078181, imported by tools/import/wikidata.mjs. The item's own description reads \"1963 military coup in South Vietnam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"1963 South Vietnamese coup d'état\", at revision 1370279464, opens: \"On November 1, 1963, President Ngô Đình Diệm and the Personalist Labor Revolutionary Party of the Republic of Vietnam were deposed by a group of CIA-backed Army of the Republic of Vietnam officers who disagreed with Diệm's handling of the Buddhist crisis and the North Vietnamese-Viet Cong (VC) threat to South Vietnam. During South Vietnam's later years, some referred to the coup as Cách mạng 1-11-1963.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1078181, imported by tools/import/wikidata.mjs. The item's own description reads \"1963 military coup in South Vietnam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1963,
     "end": 1963,
     "date": "1963-11-01"
   },
-  "place": null,
+  "place": "ho-chi-minh-city",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "vietnam-war",

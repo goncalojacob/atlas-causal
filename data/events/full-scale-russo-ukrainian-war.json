@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-17",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q110999040",
-  "sitelinks": {
-    "count": 151,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q110999040",
   "wikipedia": {
     "en": "Russo-Ukrainian war (2022–present)",
     "pt": "Invasão da Ucrânia pela Rússia (2022–presente)"
+  },
+  "sitelinks": {
+    "count": 151,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -58,7 +59,7 @@
     "end": null,
     "date": "2022-02-24"
   },
-  "place": null,
+  "place": "eastern-europe",
   "region": "europe",
   "parent": "russo-ukrainian-war",
   "actors": [

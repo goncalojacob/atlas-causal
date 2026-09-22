@@ -14,24 +14,25 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
   "revised": "2026-09-22",
-  "origin": {
-    "tool": "assistant"
-  },
   "review": {
     "status": "draft",
     "flags": [
       "m62-umbrella",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q609836",
-  "sitelinks": {
-    "count": 38,
-    "on": "2026-09-18"
+  "origin": {
+    "tool": "assistant"
   },
+  "wikidata": "Q609836",
   "wikipedia": {
     "en": "Portuguese Colonial War",
     "pt": "Guerra Colonial Portuguesa"
+  },
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-09-18"
   },
   "sources": [
     {
@@ -56,7 +57,7 @@
     "endDate": "1974-04-25",
     "calendar": "gregorian"
   },
-  "place": null,
+  "place": "portuguese-angola",
   "region": "africa",
   "regionNote": "The lane is the theatre and not the capital: the war was fought in Angola, Guinea and Mozambique and directed from Lisbon.",
   "parent": "decolonisation-of-africa",

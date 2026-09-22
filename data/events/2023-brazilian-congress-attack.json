@@ -9,16 +9,22 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,16 +43,20 @@
     {
       "source": "wikidata",
       "locator": "Q116142348"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"8 January Brasília attacks\", revision 1372449713"
     }
   ],
   "title": "2023 Brazilian Congress attack",
-  "summary": "Wikidata item Q116142348, imported by tools/import/wikidata.mjs. The item's own description reads \"storming of government buildings in Brasília\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"8 January Brasília attacks\", at revision 1372449713, opens: \"On 8 January 2023, following the defeat of then-president Jair Bolsonaro in the 2022 Brazilian general election and the inauguration of his successor Luiz Inácio Lula da Silva, a mob of Bolsonaro's supporters attacked Brazil's federal government buildings in the capital, Brasília. The mob invaded and caused deliberate damage to the Supreme Federal Court, the National Congress Palace and the Planalto Presidential Palace in the Praça dos Três Poderes, seeking to violently overthrow the democratically elected president Lula, who had been inaugurated on 1 January. Many rioters said their purpose was to spur military leaders to launch a \"military intervention\" and disrupt the democratic transition of power.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q116142348, imported by tools/import/wikidata.mjs. The item's own description reads \"storming of government buildings in Brasília\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2023,
     "end": 2023,
     "date": "2023-01-08"
   },
-  "place": null,
+  "place": "praca-dos-tres-poderes",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "nova-republica-brazil-since-1985",

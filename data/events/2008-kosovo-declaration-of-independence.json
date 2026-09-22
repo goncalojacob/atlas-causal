@@ -9,43 +9,53 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q861510",
-  "sitelinks": {
-    "count": 40,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q861510",
   "wikipedia": {
     "en": "2008 Kosovo declaration of independence",
     "pt": "Independência do Kosovo"
+  },
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q861510"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2008 Kosovo declaration of independence\", revision 1368774231"
     }
   ],
   "title": "2008 Kosovo declaration of independence",
-  "summary": "Wikidata item Q861510, imported by tools/import/wikidata.mjs. The item's own description reads \"declaration of independence for Kosovo\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"2008 Kosovo declaration of independence\", at revision 1368774231, opens: \"The 2008 Kosovo declaration of independence, which proclaimed the Republic of Kosovo to be an independent and sovereign state, was adopted at a meeting held on 17 February 2008 by 109 out of the 120 members of the Assembly of Kosovo, including the Prime Minister of Kosovo, Hashim Thaçi, and by the President of Kosovo, Fatmir Sejdiu. It was the second declaration of independence by Kosovo's Albanian-majority political institutions; the first was proclaimed on 7 September 1990.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q861510, imported by tools/import/wikidata.mjs. The item's own description reads \"declaration of independence for Kosovo\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2008,
     "end": 2008,
     "date": "2008-02-17"
   },
-  "place": null,
+  "place": "pristina",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "founding",

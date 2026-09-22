@@ -9,43 +9,53 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q2418422",
-  "sitelinks": {
-    "count": 23,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q2418422",
   "wikipedia": {
     "en": "Panic of 1893",
     "pt": "Pânico de 1893"
+  },
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q2418422"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Panic of 1893\", revision 1374530409"
     }
   ],
   "title": "Panic of 1893",
-  "summary": "Wikidata item Q2418422, imported by tools/import/wikidata.mjs. The item's own description reads \"financial crisis\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Panic of 1893\", at revision 1374530409, opens: \"The Panic of 1893 was an economic depression in the United States. It began in February 1893 and officially ended eight months later. The Panic of 1896 followed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2418422, imported by tools/import/wikidata.mjs. The item's own description reads \"financial crisis\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1893,
     "end": 1893
   },
-  "place": null,
+  "place": "united-states-q30",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

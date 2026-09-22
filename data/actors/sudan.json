@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q1049",
+  "wikipedia": {
+    "en": "Sudan"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 625"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1049, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sudan\", revision 1376048716"
     }
   ],
   "actorType": "polity",
   "names": [
     "Sudan"
   ],
-  "summary": "Entity 625 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1956 to where the dataset stops, in 2019. Its last capital in the dataset is Khartoum. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1956-01-01. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 1,886,068 km² and about 40.5 million people (2017), from Wikidata's Q1049 (P2046, P1082). The English Wikipedia article \"Sudan\", at revision 1376048716, opens: \"Sudan, officially the Republic of the Sudan, is a country in Northeast Africa. It borders the Central African Republic to the southwest, Chad to the west, Libya to the northwest, Egypt to the north, the Red Sea to the east, Eritrea and Ethiopia to the southeast, and South Sudan to the south. Sudan has a population of 51.8 million people as of 2025 and occupies 1,886,068 square kilometres, making it Africa's third-largest country by area.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 625 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1956 to where the dataset stops, in 2019. Its last capital in the dataset is Khartoum. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1956-01-01. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1956,
     "end": null

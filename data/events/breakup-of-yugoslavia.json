@@ -9,37 +9,46 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q4390259",
-  "sitelinks": {
-    "count": 55,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q4390259",
   "wikipedia": {
     "en": "Breakup of Yugoslavia",
     "pt": "Dissolução da Iugoslávia"
+  },
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q4390259"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Breakup of Yugoslavia\", revision 1373988162"
     }
   ],
   "title": "breakup of Yugoslavia",
-  "summary": "Wikidata item Q4390259, imported by tools/import/wikidata.mjs. The item's own description reads \"process starting in the late 1980s leading to the dissolution of the Socialist Federal Republic of Yugoslavia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Breakup of Yugoslavia\", at revision 1373988162, opens: \"After a period of political and economic crisis in the 1980s, the constituent republics of the Socialist Federal Republic of Yugoslavia split apart in the early 1990s. Unresolved issues from the breakup caused a series of inter-ethnic Yugoslav Wars from 1991 to 2001 which primarily affected Bosnia and Herzegovina, neighbouring parts of Croatia and, some years later, Kosovo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4390259, imported by tools/import/wikidata.mjs. The item's own description reads \"process starting in the late 1980s leading to the dissolution of the Socialist Federal Republic of Yugoslavia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1992,
     "end": 1992,

@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q1009",
+  "wikipedia": {
+    "en": "Cameroon"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 471"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1009, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cameroon\", revision 1376139060"
     }
   ],
   "actorType": "polity",
   "names": [
     "Cameroon"
   ],
-  "summary": "Entity 471 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1960 to where the dataset stops, in 2019. Its last capital in the dataset is Yaounde. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1960-01-01. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 475,442 km² and about 28.4 million people (2023), from Wikidata's Q1009 (P2046, P1082). The English Wikipedia article \"Cameroon\", at revision 1376139060, opens: \"Cameroon, officially the Republic of Cameroon, is a country in Central Africa. It shares boundaries with Nigeria to the west and north, Chad to the northeast, the Central African Republic to the east, and Equatorial Guinea, Gabon, and the Republic of the Congo to the south. Its coastline lies on the Bight of Biafra, part of the Gulf of Guinea, and the Atlantic Ocean.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 471 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1960 to where the dataset stops, in 2019. Its last capital in the dataset is Yaounde. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1960-01-01. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1960,
     "end": null

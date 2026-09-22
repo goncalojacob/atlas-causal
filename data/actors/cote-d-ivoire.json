@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q1008",
+  "wikipedia": {
+    "en": "Ivory Coast"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 437"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1008, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ivory Coast\", revision 1375985051"
     }
   ],
   "actorType": "polity",
   "names": [
     "Cote D'Ivoire"
   ],
-  "summary": "Entity 437 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1960 to where the dataset stops, in 2019. Its last capital in the dataset is Yamoussoukro. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1960-08-07. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 322,463 km² and about 31.2 million people (2023), from Wikidata's Q1008 (P2046, P1082). The English Wikipedia article \"Ivory Coast\", at revision 1375985051, opens: \"Ivory Coast, also known as Côte d'Ivoire and officially as the Republic of Côte d'Ivoire, is a country on the southern coast of West Africa. Its capital city of Yamoussoukro is located in the centre of the country, while its largest city and economic centre is the port city of Abidjan. It borders Guinea to the northwest, Liberia to the west, Mali to the north, Burkina Faso to the northeast, Ghana to the east, and the Atlantic Ocean's Gulf of Guinea to the south.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 437 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1960 to where the dataset stops, in 2019. Its last capital in the dataset is Yamoussoukro. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1960-08-07. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1960,
     "end": null

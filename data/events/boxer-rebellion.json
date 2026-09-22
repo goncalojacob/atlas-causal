@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-17",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q150229",
-  "sitelinks": {
-    "count": 77,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q150229",
   "wikipedia": {
     "en": "Boxer Rebellion",
     "pt": "Rebelião dos Boxers"
+  },
+  "sitelinks": {
+    "count": 77,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -59,7 +60,7 @@
     "date": "1899-08",
     "endDate": "1901-09"
   },
-  "place": null,
+  "place": "north-china",
   "region": "asia",
   "actors": [
     {

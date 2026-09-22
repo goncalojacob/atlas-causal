@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "kosovo-q1231",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q1231",
+  "wikipedia": {
+    "en": "Kosovo (region)"
+  },
+  "sources": [],
+  "names": [
+    "Kosovo",
+    "region of Kosovo",
+    "Kosovo region"
+  ],
+  "where": {
+    "lon": 21,
+    "lat": 42.5,
+    "precision": "region",
+    "label": "Kosovo"
+  },
+  "region": null,
+  "summary": null
+}

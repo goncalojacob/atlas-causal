@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q1579644",
-  "sitelinks": {
-    "count": 8,
-    "on": "2026-09-04"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1579644",
   "wikipedia": {
     "en": "1979 Portuguese legislative election",
     "pt": "Eleições legislativas portuguesas de 1979"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-04"
   },
   "sources": [
     {
@@ -66,7 +67,7 @@
     "end": 1979,
     "date": "1979-12-02"
   },
-  "place": null,
+  "place": "portugal-q45",
   "region": "europe",
   "parent": "third-portuguese-republic-since-1974",
   "category": "election",

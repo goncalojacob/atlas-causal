@@ -9,43 +9,53 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q541191",
-  "sitelinks": {
-    "count": 46,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q541191",
   "wikipedia": {
     "en": "Anglo-Irish Treaty",
     "pt": "Tratado Anglo-Irlandês"
+  },
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q541191"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Irish Treaty\", revision 1363486671"
     }
   ],
   "title": "Anglo-Irish Treaty",
-  "summary": "Wikidata item Q541191, imported by tools/import/wikidata.mjs. The item's own description reads \"1921 agreement which ended the Irish War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Anglo-Irish Treaty\", at revision 1363486671, opens: \"The 1921 Anglo-Irish Treaty, commonly known in Ireland as The Treaty and officially the Articles of Agreement for a Treaty Between Great Britain and Ireland, was an agreement between the government of the United Kingdom of Great Britain and Ireland and the government of the Irish Republic that concluded the Irish War of Independence. It provided for the establishment of the Irish Free State within a year as a self-governing dominion within the \"community of nations known as the British Empire\", a status \"the same as that of the Dominion of Canada\". It also provided Northern Ireland, which had been created by the Government of Ireland Act 1920, an option to opt out of the Irish Free State, which was exercised by the Parliament of Northern Ireland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q541191, imported by tools/import/wikidata.mjs. The item's own description reads \"1921 agreement which ended the Irish War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1921,
     "end": 1921,
     "date": "1921-12-06"
   },
-  "place": null,
+  "place": "london-q84",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "interwar-period",

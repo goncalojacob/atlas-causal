@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q664",
+  "wikipedia": {
+    "en": "New Zealand"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 920"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q664, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"New Zealand\", revision 1375611704"
     }
   ],
   "actorType": "polity",
   "names": [
     "New Zealand"
   ],
-  "summary": "Entity 920 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1907 to where the dataset stops, in 2019. Its last capital in the dataset is Wellington. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1907-09-01. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 268,021 km² and about 5.3 million people (2024), from Wikidata's Q664 (P2046, P1082). The English Wikipedia article \"New Zealand\", at revision 1375611704, opens: \"New Zealand is an island country in the southwestern Pacific Ocean. It comprises two main landmasses—the North Island and the South Island —and over 700 smaller islands. It is the sixth-largest island country by area and lies east of Australia across the Tasman Sea and south of the islands of New Caledonia, Fiji, and Tonga.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 920 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1907 to where the dataset stops, in 2019. Its last capital in the dataset is Wellington. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1907-09-01. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1907,
     "end": null

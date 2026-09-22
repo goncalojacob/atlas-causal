@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q37",
+  "wikipedia": {
+    "en": "Lithuania"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 368"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q37, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lithuania\", revision 1376117374"
     }
   ],
   "actorType": "polity",
   "names": [
     "Lithuania"
   ],
-  "summary": "Entity 368 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 5 periods of territorial validity, from 1918 to where the dataset stops, in 2019. Its last capital in the dataset is Vilnius. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 65,300 km² and about 2.9 million people (2023), from Wikidata's Q37 (P2046, P1082). The English Wikipedia article \"Lithuania\", at revision 1376117374, opens: \"Lithuania, officially the Republic of Lithuania, is a country in the Baltic region of Europe. It is one of three Baltic states and lies on the eastern shore of the Baltic Sea, bordered by Latvia to the north, Belarus to the east and south, Poland to the south, and the Russian semi-exclave of Kaliningrad Oblast to the southwest, with a maritime border with Sweden to the west. Lithuania covers an area of 65,300 km2 (25,200 sq mi), and has a population of 2.9 million.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 368 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 5 periods of territorial validity, from 1918 to where the dataset stops, in 2019. Its last capital in the dataset is Vilnius. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1918,
     "end": null

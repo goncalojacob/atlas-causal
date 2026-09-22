@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q215112",
-  "sitelinks": {
-    "count": 65,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q215112",
   "wikipedia": {
     "en": "Second Boer War",
     "pt": "Segunda Guerra dos Bôeres"
+  },
+  "sitelinks": {
+    "count": 65,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -67,7 +68,7 @@
     "date": "1899-10-11",
     "endDate": "1902-05-31"
   },
-  "place": null,
+  "place": "south-africa-q258",
   "region": "africa",
   "parent": "scramble-for-africa",
   "actors": [

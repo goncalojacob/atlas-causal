@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q31",
+  "wikipedia": {
+    "en": "Belgium"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 211"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q31, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Belgium\", revision 1376160193"
     }
   ],
   "actorType": "polity",
   "names": [
     "Belgium"
   ],
-  "summary": "Entity 211 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Brussels. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 30,688 km² and about 11.8 million people (2025), from Wikidata's Q31 (P2046, P1082). The English Wikipedia article \"Belgium\", at revision 1376160193, opens: \"Belgium, officially the Kingdom of Belgium, is a country in Northwestern Europe. Situated in a coastal lowland region known as the Low Countries, it is bordered by the Netherlands to the north, Germany to the east, Luxembourg to the southeast, France to the south, and the North Sea to the west. Belgium covers an area of 30,689 km2 (11,849 sq mi) and has a population of more than 11.8 million; its population density of 383/km2 (990/sq mi) ranks 22nd in the world and sixth in Europe.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 211 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Brussels. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

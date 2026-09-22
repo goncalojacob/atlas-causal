@@ -9,44 +9,54 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
-  "wikidata": "Q13605743",
-  "sitelinks": {
-    "count": 36,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q13605743",
   "wikipedia": {
     "en": "2013 Egyptian coup d'état",
     "pt": "Golpe de Estado no Egito em 2013"
+  },
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-09-15"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q13605743"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2013 Egyptian coup d'état\", revision 1369875339"
     }
   ],
   "title": "2013 Egyptian coup d'état",
-  "summary": "Wikidata item Q13605743, imported by tools/import/wikidata.mjs. The item's own description reads \"Military coup overthrowing Mohamed Morsi\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"2013 Egyptian coup d'état\", at revision 1369875339, opens: \"On July 3, 2013, then-President of Egypt Mohamed Morsi was overthrown by a coup d'etat led by Egyptian army chief General Abdel Fattah el-Sisi, who led a coalition to remove Morsi from power and suspend the Egyptian constitution of 2012. The move came after an ultimatum that the government \"resolve its differences\" with protesters during widespread national protests. Morsi and Muslim Brotherhood leaders, were placed under house arrest and Chief Justice of the Supreme Constitutional Court Adly Mansour was declared interim president of Egypt.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q13605743, imported by tools/import/wikidata.mjs. The item's own description reads \"Military coup overthrowing Mohamed Morsi\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2013,
     "end": 2013,
     "date": "2013-07-03"
   },
-  "place": null,
+  "place": "port-said",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "revolution",

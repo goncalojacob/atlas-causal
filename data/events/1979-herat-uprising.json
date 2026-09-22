@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,17 +42,21 @@
     {
       "source": "wikidata",
       "locator": "Q4578716"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1979 Herat uprising\", revision 1370623531"
     }
   ],
   "title": "1979 Herat uprising",
-  "summary": "Wikidata item Q4578716, imported by tools/import/wikidata.mjs. The item's own description reads \"rebellion in Afghanistan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"1979 Herat uprising\", at revision 1370623531, opens: \"The Herat uprising, locally known as the Uprising of 24th Hūt, was an insurrection that took place in and around the city of Herat in western Afghanistan, across several days in March 1979. It included both a popular uprising and a mutiny of ethnic Tajik Afghan Army troops against the Democratic Republic of Afghanistan (DRA). The communist regime at first appealed to its Soviet allies for help, but the Soviet leadership declined to intervene.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4578716, imported by tools/import/wikidata.mjs. The item's own description reads \"rebellion in Afghanistan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1979,
     "end": 1979,
     "date": "1979-03-20",
     "endDate": "1979-03-20"
   },
-  "place": null,
+  "place": "herat-province",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "afghan-conflict",

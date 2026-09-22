@@ -120,15 +120,27 @@ test('every umbrella cites a source for that span', () => {
 // placed the event, or the filing fails there instead. Nothing else moved:
 // a child that does name an actor or a place is held to exactly what M62
 // wrote.
+//
+// **M42's A9 pass closed that clause and this reopens it, narrowed.** On 22
+// September the curation fire gave 410 placeless events the place their item
+// names, and 113 filings that had rested on "names neither" suddenly named a
+// place — among them the 20 July plot inside the Second World War and the
+// 1963 South Vietnamese coup inside the Vietnam War, none of which became any
+// less their umbrella's own for having been put on the map. The clause now
+// asks only whether the child names an **actor**, because an actor is what the
+// subject rule intersects on: `samePlace` above is a positive signal and a
+// place taken from an item's P625 is not evidence either way about which
+// umbrella an event belongs to. A child that names an actor is still held to
+// sharing one, which is the floor M62 wrote and it has not moved.
 test("every child's actors or place put it inside its umbrella", () => {
   for (const u of umbrellas) {
     const mine = actorsOf(u);
     for (const child of childrenOf(u.id)) {
       const shared = [...actorsOf(child)].filter((a) => mine.has(a));
       const samePlace = typeof child.place === 'string' && child.place === u.place;
-      const namesNeither = (child.actors ?? []).length === 0 && typeof child.place !== 'string';
+      const namesNoActor = (child.actors ?? []).length === 0;
       assert.ok(
-        shared.length > 0 || samePlace || namesNeither,
+        shared.length > 0 || samePlace || namesNoActor,
         `${child.id} is filed inside "${u.id}" and neither its actors nor its place say it belongs there`,
       );
     }

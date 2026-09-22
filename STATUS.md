@@ -16643,6 +16643,107 @@ timeline were not opened. No record was written and no historical claim made;
       what one notch does to the camera the lens was already given, and the
       double click throws that frame away before the gesture. `notches=<n>` is
       the same wheel event counted, with nothing before it.
+### The first curation fire, 22 September 13:07Z (A11(a))
+
+A11(a) fire: nothing was imported. 177 polity descriptions, 410 places, 277
+summaries, 44 participant lists, 13 filings and 2 edges. Corpus 590 active and
+unchanged, main **244 to 240**, filed 346 to 350, edges 640 to **642**, largest
+component **503 and unchanged**, components 65, events with no edge 47. The
+counts, the refusals and the two documents this moved are
+`docs/m42-pool.md` → "Curation 2026-09-22".
+
+1153. **A capital five kilometres away is not a second signal, and Brazzaville
+      proved it.** The polity pass decided which Wikidata item a record is by
+      the article its own names resolve to *and* the item's capital agreeing
+      within 1.5 degrees with the capital CShapes wrote on the record. Both
+      `congo` (Brazzaville) and `congo-democratic-republic-of-zaire`
+      (Kinshasa) passed that check against **Q974**, because the two capitals
+      face each other across the river. Two gates were added rather than the
+      tolerance tightened — an item that matched two records tells them apart
+      not at all, and an item carrying a dissolution date cannot describe a
+      polity the atlas dates as ongoing — and between them they also caught
+      `third-portuguese-republic` reaching the **First** Republic and
+      `vietnam-democratic-republic-of` reaching **North Vietnam**, neither of
+      which a capital could ever have refused. Seven records are refused and
+      listed for a person; 177 are described.
+
+1154. **Rule 2 is one namespace for every kind, and the place pass learned it
+      the expensive way.** A9's first run wrote `data/places/portugal.json`
+      beside the actor `portugal` and the validator returned **229 errors** in
+      one go. The pass now builds its reserved set from every id and every
+      alias under `data/`, not from the places alone, and 70 of the 270 new
+      place records carry their item's QID to tell them apart —
+      `afghanistan-q889`, as `afghan-civil-war-q1980081` already did.
+
+1155. **A place cites nothing, and `tests/bundle.test.mjs` is where that rule
+      lives.** The new place records were written with a `wikidata` citation
+      for the coordinate they took, and the round-trip test failed on every one
+      of them: the contribution form's own model gives a place no `sources` at
+      all, because — CLAUDE.md — *"where a town is is a fact, not an
+      argument"*. The citation was removed from all 270 and the item stays on
+      the record as `wikidata`, which is where the point's provenance belongs.
+
+1156. **A9 closed M67's "names neither" clause under 113 filings at once, and
+      the clause had to move.** `tests/m62.test.mjs` admitted a child that
+      names neither actor nor place, under the owner's *"It's fine to have no
+      actor or place, you have to read the context."* Giving 410 events a
+      place ended that for 113 filings — the 20 July plot inside the Second
+      World War, the 1963 South Vietnamese coup inside the Vietnam War — none
+      of which became less their umbrella's own for being drawn on the map.
+      The clause now asks only whether the child names an **actor**, because an
+      actor is what the subject rule intersects on and a point taken from P625
+      is evidence about neither umbrella. A child that names an actor is still
+      held to sharing one, which is M62's floor and it has not moved.
+
+1157. **Half a participant list can break a correct filing, so five were
+      withdrawn.** P710 names the parties to a thing and the atlas holds
+      records for some of them. The Franco-Thai War is filed under the Second
+      World War; its item names **Vichy France**, which the atlas has no record
+      for, and Thailand, which it has. Writing the half it had left the event
+      naming an actor the umbrella does not name, which is exactly the subject
+      rule's failure. Five such lists were withdrawn and the events left
+      actorless, which M67 A1 says is not a defect; where a list is partial but
+      breaks nothing the record's review note says how many parties were
+      dropped and tells the reviewer to read the item before reading the list
+      as the whole of one.
+
+1158. **Nine filings the item offered were refused by the atlas's own rules.**
+      P361 gave 22 events a parent and three properties the pass had not read
+      took nine of them back: a parent reachable through another parent says
+      nothing (A8), an event is an umbrella's own only by lane or by a shared
+      actor (M62, A6), and `end: null` is "as far as the data goes" rather than
+      a year — the 2011 Bahraini uprising is dated as continuing and the Arab
+      Spring closes in 2012. Six further redundant parents went with them,
+      among them `battle-of-kursk` under the Second World War once it was under
+      the Eastern Front, which is inside it already.
+
+1159. **Two documents were re-taken rather than the reading changed underneath
+      them**, which is what both tests asked for in their own comments.
+      `docs/m53-polities.md` §4.1 takes a second "after M42" row and, for the
+      first time, a paragraph saying the two rules have parted: 351 counted by
+      "alive at the start" against 352 by overlap, because
+      `croatian-war-of-independence` now names `croatia` and the war begins in
+      1991 while the CShapes record begins in 1992 — a recognition date, not
+      the year a state began fighting for itself. The entry joins `LATER` in
+      `tests/m56.test.mjs`, whose comment exists so a new entry of that shape
+      cannot go quiet.
+
+1160. **Two browser tests were pinned to Angola having no events, and Angola is
+      a belligerent in both Congo wars.** `lens-browser` now asks the atlas for
+      an eventless actor rather than naming one — M42 has no ceiling, so any
+      pin breaks eventually and there are a hundred candidates — and
+      `panel-browser` opens the succession section instead of assuming it is
+      the one that opens, which was only ever true while Angola's card had
+      nothing else in it. Neither test's claims were weakened: the predecessor
+      by name, the interval and the way in are asserted as they were.
+
+1161. **No historical claim was written.** Every polity description is the
+      item's own P2046 and P1082 and the first sentences of the English lead
+      quoted at a named revision; every summary is the article's lead at a
+      named revision; every place point is a P625; every participant is a P710
+      and every filing a P361; both edges quote the lead that states them. No
+      date was invented, no record was signed, and nothing was merged into
+      `main`.
 
 ## M42 — the world at scale (in progress, branch `m42`)
 
@@ -18357,6 +18458,260 @@ against the tighter test and all twelve hold.
      activity is not a kind of event, and the table is for classes that say
      what a record is.
 
+**The fire of 22 September, 10:33 — A8's pass, A7's intervals, batch 34.**
+`origin/m0` carried `M79 done`, so `parent` is a list and amendment A8 was in
+force for the first time. `origin/m0` was merged into `m42` once for the
+helper and the rule that judge a list; `STATUS.md` kept both sides and
+`data/index/` was dropped and rebuilt.
+
+**A8's pass.** `decolonisation-of-africa` exists — the umbrella the owner asked
+for by name and two earlier fires refused. **Span 1954–1956 to 1976**, from
+*"Decolonisation of Africa"*, revision **1372152864**: *"between the mid-1950s
+to 1976"*. **Eight events filed under it**, all eight main before the pass, and
+`angola-independence-1975` — the owner's own example — is now part of the
+Portuguese Third Republic **and** of the decolonisation, having been part of
+neither. **The re-read of the 329 filed events gave twenty more a second
+parent.** **22 events now carry more than one.** Corpus 581 → 582 active, main
+**252 → 245**, largest component 502 and unchanged, because an umbrella takes
+no edge.
+
+**A7.** `the-troubles` widened from 1998–1998 to **1967–1969 to 1998**, from
+its article at revision 1376046499. `chinese-civil-war` and
+`turkish-war-of-independence` were written and **refused by rule 4**: both
+articles state a wider span, and writing either breaks an edge already in the
+graph. Both stay flagged.
+
+**Batch 34.** Eight rows of `vietnam-war` — the one-war batch batch 33 asked
+for — all eight filed, **two edges**, corpus 582 → **590**, main 245 → **244**,
+largest component 502 → **503**.
+
+**Corpus after the fire: 590 active, 244 main, 346 filed, 640 edges, largest
+connected component 503, 65 components.** `node tools/validate.mjs --index`:
+**0 errors, 269 warnings**. **1,709 pure and 234 browser, 1,943 in all, 0
+failed and 0 skipped**, the browser suites one at a time as the check runs
+them. Deviations 1070 to 1076.
+
+1070. **A bound the source gives as a phrase is a range and not a guess.**
+     Two earlier fires refused `decolonisation-of-africa` because its article
+     dates the period's start as *"the mid-1950s"* and reading that as 1955
+     would be supplying a year the source declines to give. They were right
+     about the reading and wrong about the shape:
+     `schema/common/interval.json` says a bound is *"either an exact year or a
+     `{ min, max }` range"*, and a phrase that names a range can be written as
+     one. **`span()` reads a parent's start at `min`**, so containment is
+     tested against the early end, which is the generous reading a period
+     deserves. `the-troubles` is written the same way from *"the late 1960s"*.
+     **This is the first event in the corpus with a range start**, and it
+     found a test that computed an extent with `Math.min` over the raw field:
+     an object makes the whole extent `NaN`, which does not fail an assertion,
+     it empties one.
+1071. **A second parent earns its place by reaching somewhere the first does
+     not.** A8 says a filing writes every umbrella that fits, and the
+     mechanical reading of that offered 248 of the 329 filed events at least
+     one candidate. Two rules cut it to twenty. **A parent already reachable
+     through another parent says nothing**: the Portuguese Colonial War is
+     part of the decolonisation of Africa, so a massacre inside that war is
+     inside the continent already and writing it on again only widens the
+     record. And **the same parent twice is rule 24's error**, which the suite
+     now says out loud.
+1072. **Sharing an actor is being a party and not being part, and it survived
+     A8 intact.** All 38 candidates the actor test produced on its own were
+     refused — `arab-revolt` and `armenian-genocide` both name the Ottoman
+     Empire, `spanish-civil-war` and `the-holocaust` both name Nazi Germany —
+     which is M67's judgement 2 unchanged. Four more fell to M67's rule 1: a
+     period does not contain the act that created or destroyed it, so
+     `coup-28-may-1926` is under neither the republic it ended nor the
+     dictatorship it began. **What A8 did change is narrower**: the subject
+     test is now the umbrella's lane **or** an actor the umbrella itself
+     names, because the owner's example is drawn in the Africa lane and sits
+     under a polity umbrella whose lane is Europe. The lane-only reading held
+     only by coincidence.
+1073. **A year is not a date, and five filings turned on it.**
+     `armistice-of-mudros`, `battle-of-the-lys-1918`, `finnish-civil-war`,
+     `german-soviet-treaty-of-friendship-cooperation-and-demarcation` and
+     `soviet-invasion-of-poland` all sit inside `interwar-period` by year and
+     outside it by day, against the period's own `1918-11-11` and
+     `1939-09-11`. `span()` compares years and would have let every one of
+     them through **with no warning at all**.
+1074. **Rule 4 is a check on identity and not only on chronology.** A7
+     authorises widening an imported interval from the record's own cited
+     article, and two of the three could not be widened: the Japanese war
+     cannot be a precondition of a civil war beginning in 1927, and Sèvres
+     cannot cause a war that began the year before it. **An edge somebody
+     wrote is the atlas committing to a reading of what a record is about.**
+     Each record's note already asked whether it is the whole war or the phase
+     the item dated; the graph has answered that once, and a run that widened
+     the span would not be correcting a date but falsifying an argument.
+     **Read the edges on a record before touching its interval.**
+1075. **Taking one war did not raise the edge yield, and the hypothesis is
+     spent.** Batch 33 supposed that rows of one war could be argued against
+     each other. Batch 34 took eight rows of `vietnam-war` and wrote **two**
+     edges, against three from eight and three from twelve; **neither edge
+     runs between two rows of the batch** — both reach a record the atlas
+     already held. **The phases of one war are chronological to each other and
+     not causal**, and what limits the yield is what a lead argues, not the
+     corpus's thinness around a new record. The next batch should go back to
+     ranking across the whole vein. **The batch's one general finding is
+     worth more than its rows**: where the vein's queried subject is not the
+     nearest parent the atlas holds, the nearest one wins — `battle-of-hue`
+     went under `tet-offensive` and not under the war — and the subject of
+     such a query may itself be unfiled, which is how `vietnam-war` came to be
+     part of `indochina-wars` and the main count came down.
+1076. **The check went red on the A7 commit and it was not load.** One browser
+     test of 234: `tests/timeline-browser.test.mjs:230`, *"a state change
+     updates the bars in place and does not rebuild them"* — *"and it is the
+     same drawing (950 to 930)"* against a bound of 19. It **reproduced here
+     every time**, and a worktree at the merge commit passed, so it was
+     bisected to A8's filings rather than assumed. The census says what moved:
+     **seven bars of 1974–1975 left and three of 1492–1500 arrived** — two of
+     the seven being `angola-independence-1975` and
+     `1975-sao-tomean-legislative-election`, filed by that pass. **Nothing
+     was rebuilt**: the churn assertions, which are what the test is named
+     for, passed at 20 removed against a bound of 47. Since M65 both pictures
+     are **lens sets**, and the sizes of two lens sets are a fact about the
+     records; M42 files main events away by the dozen every batch, so a share
+     tuned to today's corpus is a bound with a date on it. Raised to five per
+     cent, the order the churn bound already uses, with the measurement in
+     the comment. **A rebuild replaces the whole drawing and not a twentieth
+     of it**, so the test still refuses what it exists to refuse — and a fire
+     that sees this red again should put it to the owner rather than nudge
+     the share a third time.
+## M42b — the Americas, and Europe before 1900
+
+**The lane opened, 22 September.** A11 partitioned M42 into two records lanes
+that run at once: M42 keeps Africa and Asia, **M42b takes the Americas, every
+century from 1492, and Europe before 1900**, on the branch `m42b` cut from
+`origin/m0`. Same brief, same eleven amendments; its own pool file,
+`docs/m42b-pool.md`, and its deviations numbered from **1200**. There is no
+done condition until the owner writes one.
+
+**The measurement first.** Per lane and per century, over the topology the
+validator builds. Active / main: **Europe 303 / 86, Asia 117 / 68, Africa
+79 / 32, the Americas 83 / 59** — this partition's own half being the thinnest
+of the four lanes and the least filed. **Europe before 1900 was thirteen
+events**, one each in the 15th, 16th, 17th and 18th centuries and nine in the
+19th; those four cells were the thinnest in the whole atlas and three of them
+had no umbrella of any kind. The `americas` lane divides 48 South and Central
+to 8 North among its placed events, so the brief's ordering — South before
+North until they hold as much — was already satisfied at the measurement and
+does not bind this run.
+
+**Batch 1 — the Italian Wars, and the Greco-Turkish War of 1897.** Ten events
+and six places imported from Wikidata, every one `draft` and
+`imported-facts`. `italian-wars` (1494–1559) is the umbrella Europe's 16th
+century lacked and six of its wars file under it; `battle-of-st-quentin` went
+to the nearer parent, `italian-war-of-1551-1559`, because its own lead calls
+it an engagement of that war and A8 says a parent reachable through another
+is not a second one. `battle-of-domokos` and `battle-of-velestino` file under
+the Greco-Turkish war the atlas already held. **Five of the ten were placed**
+from the `P276` their items name, at the precision the location's own class
+gives — `provence` and `crete` as `region`, `saint-quentin`, `domokos` and
+`velestino` as `city`; the others name only a country, or a region as large as
+one, and stay placeless until `M80 done` is on `origin/m0`.
+**One edge**, `cretan-revolt-of-1897-1898 --caused--> greco-turkish-war-of-1897`,
+`probable`, from the two articles at named revisions.
+
+**Five items and two filings refused**: an item whose English label carries
+vandalism, four 1897 battles with no English article and a description that
+reads "1897 battle" entire, the Cretan Revolt under the war (its span runs a
+year past the war's end and its lead never calls it part of it — an edge was
+written instead), and `berlin-conference` under `scramble-for-africa` (the
+conference sat from November 1884 and the umbrella begins in 1885; widening it
+is an Africa record's business and so M42's).
+
+**Corpus after the fire: 592 active, 247 main, 345 filed, 639 edges, largest
+connected component 503, 68 components, 51 events with no edge at all.**
+`node tools/validate.mjs --index`: **0 errors, 273 warnings**. **1,709 pure
+and 234 browser, 1,943 in all, 0 failed and 0 skipped**, the browser suites
+one at a time as the check runs them. Deviations **1200** and **1201**.
+
+1200. **The main count rose by two and A6 says a batch that does that has to
+      say why.** The two are different cases. `italian-wars` is an umbrella a
+      century with one event and nothing to file under could not be filled
+      without — the brief asks for exactly it — and it is the cheap direction
+      of the trade: **ten records arrived and the resting timeline gained two
+      bars, not ten**, with six more measured rows of the same vein now filing
+      under it for nothing. `cretan-revolt-of-1897-1898` is not a trade at
+      all: its sources refuse to make it part of anything here, so it stands
+      on the resting picture with an edge and no parent, which is what
+      `degree-zero` and the main count are for. Nine of the ten earned no edge
+      — the Italian Wars' phases are chronological to each other and their
+      leads argue no causation between them, the same finding M42's batch 34
+      wrote down about the Vietnam War — and nothing was invented to connect
+      them.
+1201. **A place whose point stands for a whole country-sized region is the
+      case A9 holds back, and one was written before that was seen.**
+      `italian-peninsula` came from the Italian Wars' own `P276`, and the map
+      then wrote its name across Rome — `tests/map-browser.test.mjs` caught
+      it on the run's own check and again on the branch's, so a real defect
+      and not a flake. A9 already says an event whose only located thing is
+      its country stays placeless until `M80 done`, and M80 is what adds the
+      `country` precision and the mark that draws a thing that large; a
+      peninsula the size of Italy is that case in everything but the word.
+      The record was deleted, `Q145694` taken back out of the seeds and the
+      import's `done` list, and the two events left placeless in the `europe`
+      lane as the import first wrote them. The fix is in the data because
+      this run may not touch the placer.
+
+**Batch 2 — the Falklands War, filed and placed.** Taken from the `americas`
+lane, which batch 1 did not touch and which is the larger half of this
+partition. The inverse `part of` sweep over this partition returned 164
+distinct items, 161 of them new; the Falklands vein was taken first because
+**every row of it is dated inside 1982 and the umbrella this atlas holds is
+dated 1982**, so nothing had to be widened and the main count could not move.
+**Twenty-two events, all filed under `falklands-war` and all placed**, with
+**fourteen place records** from the first located thing each item names that
+carries a `P625` — `stanley`, `goose-green` and `grytviken` as `city`, six
+bays, hills and mountains as `point`, five islands and the archipelago as
+`region`. Seven events took the archipelago because Wikidata points them at
+nothing narrower: the ridges above Port Stanley have their own items and no
+`P276` reaches them, and A9 forbids inventing the point that would place
+them. `grytviken`, `south-georgia` and `thule-island` carry a hand-written
+lane with rule 10's note, being below every region polygon the atlas draws.
+**Four edges**, each `probable` from what an article states in so many words,
+**two of them into records the atlas already held**:
+`operation-rosary --caused--> falklands-war` (*"The invasion served as a
+catalyst for the subsequent Falklands War"*) and
+`battle-of-mount-tumbledown --caused--> argentine-surrender-in-the-falklands-war`
+(*"leading to the fall of Stanley and the surrender of Argentine forces"*).
+
+**Forty-one items and one edge refused**: the IMF, the World Bank and FARC
+(institutions, not events), the twenty-five chapters and preambles of the UN
+Charter (divisions of a text, and undated), nine Falklands items with no
+usable span or no English label, three "theater of war" items and an "aspect
+of history"; and `operation-sutton --precondition-of--> battle-of-san-carlos`,
+which rule 4 refused because the landing and the air battle over the
+anchorage are the same five days and neither precedes the other.
+
+**Seven classes were added** to the seeds file, each read off Wikidata:
+military operation, covert operation, military raid, combat, skirmish and
+friendly fire as `war`, and aviation accident as `disaster`. The Gazelle
+incident of 6 June carries the last two at once and so **takes no category at
+all**, which is what `classify()` does where the table disagrees and the right
+answer here.
+
+**Corpus after the fire: 614 active, 247 main — unchanged — 367 filed, 643
+edges, largest connected component 505, 86 components, 69 events with no edge
+at all.** The `americas` lane goes from 83 active to **104**. `node
+tools/validate.mjs --index`: **0 errors, 289 warnings**. **1,737 pure and 246
+browser, 1,983 in all, 0 failed and 0 skipped**, the browser suites one at a
+time as the check runs them; `docs/m53-polities.md` §4.1 was retaken to 614,
+which is the one test a records batch always moves. Deviation **1202**.
+
+1202. **A batch can grow a lane by a quarter and cost the resting timeline
+      nothing.** Twenty-two events arrived and the main count did not move by
+      one, because every one of them is inside an umbrella that was already
+      here and already drawn. Batch 1 paid two bars for ten records to open
+      Europe's 16th century; this batch paid none for twenty-two, which is
+      what batch 1 predicted the Americas would offer and is the argument for
+      taking a vein under a standing umbrella before writing a new one. The
+      other half of the same finding is unchanged and unflattering:
+      **eighteen of the twenty-two earned no edge at all** and the component
+      moved by two. The phases of one war are chronological to each other and
+      their leads argue no causation between them — the third batch across
+      two branches to write that down — and nothing was invented to connect
+      them.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -18649,9 +19004,12 @@ M42 started 2026-09-22T02:06:27Z by scheduled
 M42 started 2026-09-22T05:07:06Z by scheduled
 M42 started 2026-09-22T08:06:56Z by scheduled
 M42 started 2026-09-22T10:33:11Z by scheduled
+M42 started 2026-09-22T13:07:07Z by scheduled
 M79 started 2026-09-22T09:04:50Z by scheduled (branch m79)
 M79 done
 M80 started 2026-09-22T11:11:07Z by scheduled (branch m80)
 M80 done
 M81 started 2026-09-22T12:29:49Z by scheduled (branch m81)
 M81 done
+M42b started 2026-09-22T11:47:35Z by scheduled
+M42b started 2026-09-22T14:19:56Z by scheduled

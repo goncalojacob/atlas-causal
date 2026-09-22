@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q730",
+  "wikipedia": {
+    "en": "Suriname"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 115"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q730, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Suriname\", revision 1375841260"
     }
   ],
   "actorType": "polity",
   "names": [
     "Surinam"
   ],
-  "summary": "Entity 115 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1975 to where the dataset stops, in 2019. Its last capital in the dataset is Paramaribo. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1975-11-25. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 163,270 km² and about 563,402 people (2017), from Wikidata's Q730 (P2046, P1082). The English Wikipedia article \"Suriname\", at revision 1375841260, opens: \"Suriname, officially the Republic of Suriname, is a country on the northern coast of South America, also considered as part of the Caribbean and the West Indies. Situated slightly north of the equator, over 90% of its territory is covered by rainforest, the second-highest proportion of forest cover in the world. Suriname is bordered by the Atlantic Ocean to the north, French Guiana to the east, Brazil to the south, and Guyana to the west.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 115 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1975 to where the dataset stops, in 2019. Its last capital in the dataset is Paramaribo. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1975-11-25. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1975,
     "end": null

@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,16 +42,20 @@
     {
       "source": "wikidata",
       "locator": "Q1356047"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Murder of the Romanov family\", revision 1374973698"
     }
   ],
   "title": "execution of the Romanov family",
-  "summary": "Wikidata item Q1356047, imported by tools/import/wikidata.mjs. The item's own description reads \"1918 murder of Nicholas II of Russia and his family\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Murder of the Romanov family\", at revision 1374973698, opens: \"Members of the Romanov family–the former Emperor Nicholas II of Russia, Empress Alexandra, and their children, Olga, Tatiana, Maria, Anastasia, and Alexei–were shot and stabbed to death by Bolshevik revolutionaries under Yakov Yurovsky on the orders of the Ural Regional Soviet in Yekaterinburg on the night of 16–17 July 1918. Also killed that night were members of the imperial entourage who had accompanied them: court physician Eugene Botkin; lady-in-waiting Anna Demidova; footman Alexei Trupp; and head cook Ivan Kharitonov. The bodies were taken to the Koptyaki forest, where they were stripped, mutilated with grenades and acid to prevent identification, and buried.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1356047, imported by tools/import/wikidata.mjs. The item's own description reads \"1918 murder of Nicholas II of Russia and his family\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1918,
     "end": 1918,
     "date": "1918-07-16"
   },
-  "place": null,
+  "place": "ipatiev-house",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "russian-civil-war",

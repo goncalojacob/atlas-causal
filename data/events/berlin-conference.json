@@ -9,44 +9,54 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q13582",
-  "sitelinks": {
-    "count": 69,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q13582",
   "wikipedia": {
     "en": "Berlin Conference",
     "pt": "Conferência de Berlim"
+  },
+  "sitelinks": {
+    "count": 69,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q13582"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Berlin Conference\", revision 1369494326"
     }
   ],
   "title": "Berlin Conference",
-  "summary": "Wikidata item Q13582, imported by tools/import/wikidata.mjs. The item's own description reads \"international conference that regulated the distribution of European colonization and trade in Africa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Berlin Conference\", at revision 1369494326, opens: \"The Berlin Conference of 1884–1885 was a meeting of colonial powers that concluded with the signing of the General Act of Berlin, an agreement regulating European colonisation and trade in Africa during the New Imperialism period. The conference of fourteen countries was organised by Otto von Bismarck, the first chancellor of Germany, at the request of Leopold II of Belgium at a building on Berlin's central Wilhelmstrasse. It met on 15 November 1884 and, after an adjournment, concluded on 26 February 1885 with the signing of the General Act.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q13582, imported by tools/import/wikidata.mjs. The item's own description reads \"international conference that regulated the distribution of European colonization and trade in Africa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1884,
     "end": 1885,
     "date": "1884-11-15",
     "endDate": "1885-02-26"
   },
-  "place": null,
+  "place": "reich-chancellery",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "other",

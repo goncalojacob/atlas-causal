@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
   "origin": {
@@ -45,7 +46,7 @@
     "date": "1985-05-19",
     "endDate": "1988-07"
   },
-  "place": null,
+  "place": "beirut",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "lebanese-civil-war",

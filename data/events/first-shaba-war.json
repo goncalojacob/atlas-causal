@@ -9,15 +9,20 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,10 +41,14 @@
     {
       "source": "wikidata",
       "locator": "Q3290619"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Shaba I\", revision 1373218991"
     }
   ],
   "title": "First Shaba War",
-  "summary": "Wikidata item Q3290619, imported by tools/import/wikidata.mjs. The item's own description reads \"historical military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Shaba I\", at revision 1373218991, opens: \"Shaba I was a conflict in Zaire's Shaba (Katanga) Province lasting from 8 March to 26 May 1977. The conflict began when the Front for the National Liberation of the Congo (FNLC), a group of about 2,000 Katangan Congolese soldiers who were veterans of the Congo Crisis, the Angolan War of Independence, and the Angolan Civil War, crossed the border into Shaba from Angola. The FNLC made quick progress through the region because of the sympathizing locals and the disorganization of the Zairian military.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3290619, imported by tools/import/wikidata.mjs. The item's own description reads \"historical military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1977,
     "end": 1977,

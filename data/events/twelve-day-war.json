@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-05",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q134900605",
-  "sitelinks": {
-    "count": 70,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q134900605",
   "wikipedia": {
     "en": "Twelve-Day War",
     "pt": "Guerra dos Doze Dias"
+  },
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -59,7 +60,7 @@
     "date": "2025-06",
     "endDate": "2025-06-24"
   },
-  "place": null,
+  "place": "middle-east",
   "region": "asia",
   "actors": [
     {

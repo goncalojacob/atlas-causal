@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q219",
+  "wikipedia": {
+    "en": "Bulgaria"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 355"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q219, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bulgaria\", revision 1375587363"
     }
   ],
   "actorType": "polity",
   "names": [
     "Bulgaria"
   ],
-  "summary": "Entity 355 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 5 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Sofia. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 110,994 km² and about 6.4 million people (2025), from Wikidata's Q219 (P2046, P1082). The English Wikipedia article \"Bulgaria\", at revision 1375587363, opens: \"Bulgaria, officially the Republic of Bulgaria, is a country in Southeastern Europe. It is situated on the eastern portion of the Balkans directly south of the Danube river and west of the Black Sea. Bulgaria is bordered by Greece and Turkey to the south, Serbia and North Macedonia to the west, and Romania across the Danube river to the north.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 355 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 5 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Sofia. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

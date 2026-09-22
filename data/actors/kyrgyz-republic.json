@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q813",
+  "wikipedia": {
+    "en": "Kyrgyzstan"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 703"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q813, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kyrgyzstan\", revision 1375815078"
     }
   ],
   "actorType": "polity",
   "names": [
     "Kyrgyz Republic"
   ],
-  "summary": "Entity 703 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1991 to where the dataset stops, in 2019. Its last capital in the dataset is Bishkek. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 199,951 km² and about 7.3 million people (2025), from Wikidata's Q813 (P2046, P1082). The English Wikipedia article \"Kyrgyzstan\", at revision 1375815078, opens: \"Kyrgyzstan, officially the Kyrgyz Republic, formerly known as Kirghizia, is a landlocked country located in Central Asia, lying in the Tian Shan and Pamir mountain ranges. It is bordered by Kazakhstan to the north, Uzbekistan to the west, Tajikistan to the south, and China to the east and southeast. The capital and largest city is Bishkek which lies on the northern border with Kazakhstan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 703 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1991 to where the dataset stops, in 2019. Its last capital in the dataset is Bishkek. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1991,
     "end": null

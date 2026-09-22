@@ -9,45 +9,55 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q857982",
-  "sitelinks": {
-    "count": 23,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q857982",
   "wikipedia": {
     "en": "First Matabele War",
     "pt": "Primeira Guerra de Matabele"
+  },
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q857982"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Matabele War\", revision 1370619474"
     }
   ],
   "title": "First Matabele War",
-  "summary": "Wikidata item Q857982, imported by tools/import/wikidata.mjs. The item's own description reads \"war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"First Matabele War\", at revision 1370619474, opens: \"The First Matabele War was fought between 1893 and 1894 in modern-day Zimbabwe. It pitted the British South Africa Company against the Ndebele kingdom of Mthwakazi. Lobengula, king of Mthwakazi, had tried to avoid outright war with the company's pioneers because he and his advisors were mindful of the destructive power of European-produced weapons on traditional Matabele impis attacking in massed ranks.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q857982, imported by tools/import/wikidata.mjs. The item's own description reads \"war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1893,
     "end": 1894,
     "date": "1893-10",
     "endDate": "1894-01"
   },
-  "place": null,
+  "place": "matabeleland",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "scramble-for-africa",

@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-18",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q97516175",
-  "sitelinks": {
-    "count": 2,
-    "on": "2026-09-04"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q97516175",
   "wikipedia": {
     "en": "1911 Portuguese presidential election",
     "pt": "Eleições presidenciais portuguesas de 1911"
+  },
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-04"
   },
   "sources": [
     {
@@ -67,7 +68,7 @@
     "date": "1911-08-24",
     "calendar": "gregorian"
   },
-  "place": null,
+  "place": "portugal-q45",
   "region": "europe",
   "parent": "first-portuguese-republic-1910-1926",
   "category": "election",

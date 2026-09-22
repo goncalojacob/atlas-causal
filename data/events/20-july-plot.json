@@ -17,39 +17,45 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q105570",
-  "sitelinks": {
-    "count": 56,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q105570",
   "wikipedia": {
     "en": "20 July plot",
     "pt": "Atentado de 20 de Julho"
+  },
+  "sitelinks": {
+    "count": 56,
+    "on": "2026-09-15"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q105570"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"20 July plot\", revision 1375949798"
     }
   ],
   "title": "20 July plot",
-  "summary": "Wikidata item Q105570, imported by tools/import/wikidata.mjs. The item's own description reads \"attempt to assassinate Adolf Hitler, 1944\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"20 July plot\", at revision 1375949798, opens: \"The 20 July plot, sometimes referred to as Operation Valkyrie, was a failed attempt to assassinate Adolf Hitler, the dictator of Nazi Germany, and overthrow the Nazi government on 20 July 1944. The plotters were part of the German resistance, mainly composed of Wehrmacht officers. The principal mastermind of the conspiracy, Claus von Stauffenberg, tried to kill Hitler by detonating an explosive hidden in a briefcase.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q105570, imported by tools/import/wikidata.mjs. The item's own description reads \"attempt to assassinate Adolf Hitler, 1944\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1944,
     "end": 1944,
     "date": "1944-07-20"
   },
-  "place": null,
+  "place": "wolf-s-lair",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "world-war-ii",

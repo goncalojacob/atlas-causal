@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q1014",
+  "wikipedia": {
+    "en": "Liberia"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 450"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1014, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Liberia\", revision 1374382459"
     }
   ],
   "actorType": "polity",
   "names": [
     "Liberia"
   ],
-  "summary": "Entity 450 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Monrovia. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 111,369 km² and about 5.2 million people (2021), from Wikidata's Q1014 (P2046, P1082). The English Wikipedia article \"Liberia\", at revision 1374382459, opens: \"Liberia, officially the Republic of Liberia, is a country on the West African coast. It is bordered by Sierra Leone to its northwest, Guinea to its north, Ivory Coast to its east, and the Atlantic Ocean to its south and southwest. It has a population of around 5.5 million and covers an area of 43,000 square miles (111,369 km2).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 450 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Monrovia. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

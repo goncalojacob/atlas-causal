@@ -2343,3 +2343,277 @@ only on chronology. Where an imported record's interval is narrower than its
 article, the edges already attached to it are evidence about which reading the
 atlas has committed to, and they should be read before the interval is
 touched.
+
+## Batch 34 — one war instead of a ranking, and what that answered
+
+*22 September, the same fire, after A8's pass and A7's intervals. Batch 33's
+own finding asked for this: **"take several rows of one war in one batch so
+that they can be argued against each other, rather than the top of the ranking
+spread over six wars."** This is that batch, and it answers the question it was
+set.*
+
+**The rule, unchanged but for its pool.** The same three tests since batch 20 —
+depth, span at the day, lane — over the same inverse `part of` vein, with the
+pool narrowed to **one parent**: `vietnam-war`, `Q8740`. The query returned
+**104 rows**, of which **47 pass all three tests**. Taken: the **eight with the
+most sitelinks**, ties by item id. Nothing was struck or added by hand, which
+matters here because the temptation of a one-war batch is to pick the rows that
+make a chain.
+
+| the record | sitelinks | filed under | the edge it earned |
+| --- | --- | --- | --- |
+| `fall-of-saigon` | 40 | `vietnam-war` | `paris-peace-accords --enabled-->` it |
+| `gulf-of-tonkin-incident` | 38 | `vietnam-war` | it `--precondition-of--> battle-of-ia-drang` |
+| `battle-of-khe-sanh` | 35 | `vietnam-war` | none |
+| `battle-of-ia-drang` | 29 | `vietnam-war` | the one above |
+| `battle-of-hue` | 25 | **`tet-offensive`** | none |
+| `battle-of-hamburger-hill` | 24 | `vietnam-war` | none |
+| `battle-of-ap-bac` | 22 | `vietnam-war` | none |
+| `battle-of-long-tan` | 16 | `vietnam-war` | none |
+
+**`battle-of-hue` went to the nearer parent.** Wikidata files it under the war;
+its own lead calls it *"a major battle in the Tết Offensive"*, and this atlas
+holds `tet-offensive`, dated 30 January to 23 September 1968, which contains
+the battle at the day. A vein that files by the queried subject would have put
+it two levels too high.
+
+**And the war the eight hang from was itself main.** `vietnam-war` is now part
+of `indochina-wars`, which already held `first-indochina-war` and
+`sino-vietnamese-war` and had no claim on the Second Indochina War only because
+nobody had looked. That is where the batch's fall in the main count comes from:
+eight records arrived filed and cost nothing, and one existing main event
+became a child.
+
+| | |
+| --- | --- |
+| imported | 8 |
+| created | **8**, **8 filed** |
+| edges written | **2** |
+| classes added | **0** — all eight are `Q178561` battle or `Q1261499` naval battle, both already in the table |
+| corpus | 582 → **590** active |
+| **main** | 245 → **244** |
+| largest connected component | 502 → **503** |
+| components | 59 → **65** |
+| events with no edge at all | 41 → **47** |
+| API calls | 1 SPARQL, 18 for the import, 3 article reads |
+
+### What taking one war answered
+
+**It did not raise the edge yield, and the reason is worth writing down.** Two
+edges from eight rows, against three from eight in batch 33 and three from
+twelve in batch 32. The hypothesis was that rows of one war could be argued
+against each other; what the reading found is that **the phases of one war are
+chronological to each other and not causal**. Khe Sanh, Ia Drang, Hamburger
+Hill, Ap Bac and Long Tan each describe a battle and none of their leads argues
+that another of them followed from it. The two edges that were written both
+run to or from a record the atlas already held — the Accords and, through the
+incident, the escalation — and **not between two rows of the batch**.
+
+So the corpus's thinness is not what limited batch 33 either. **What a lead
+argues is what limits it**: `fall-of-saigon` earned an edge because the Paris
+Peace Accords' lead says, in its own voice, what the agreement removed and what
+it did not stop; `battle-of-long-tan`'s lead says who fought whom in a rubber
+plantation, and no amount of neighbouring rows would change that.
+
+**Six of the eight earned no edge and none was invented for them**, which is
+the rule since batch 20 and the reason the "events with no edge at all" line
+keeps rising. That line is the honest cost of the vein and not a defect: an
+umbrella holds these records in the picture, and `degree-zero` says out loud
+which of them nothing yet hangs on.
+
+**For the fire that picks this up:** the vein is the same, and the suggestion
+batch 33 made is now spent as a hypothesis. The next batch should go back to
+**ranking across the whole vein**, which cost nothing to yield and spreads the
+new records over more of the world; 618 rows remain open. The Gaza cluster and
+Sudan's five are unchanged and still the owner's.
+
+## Where the run stands after batch 34, for the fire that picks it up
+
+*22 September, 12:10, after a fire that ran A8's pass, A7's intervals and one
+batch.*
+
+| | |
+| --- | --- |
+| corpus | **590 active** |
+| **main** | **244** |
+| filed | 346 |
+| events with more than one parent | **22** |
+| largest connected component | **503** |
+| components | **65** |
+| events with no edge at all | **47** |
+| the inverse `part of` vein | **618 rows open** |
+| the sweep pool, world sections | **1,046** open rows, untouched |
+| the corpus `part of` pass | spent; A8's re-read is spent too |
+
+**What is still open, in the order a fire should weigh it:**
+
+- **The inverse vein, 618 rows, back to ranking across the whole vein.**
+  Batch 34 tested batch 33's suggestion and it failed: one war's rows are
+  chronological to each other, not causal, and the batch wrote two edges where
+  the ranked batches wrote three. Ranking costs nothing to yield and spreads
+  the records over more of the world.
+- **The main count has room again.** It fell seven this fire and one more in
+  the batch, to 244, and the two ways it moved are both repeatable: an
+  umbrella a period historians name (A6), and **a queried subject that is
+  itself unfiled** — `vietnam-war` was main until batch 34 looked. A fire
+  taking a batch should check whether the parents its rows hang from are
+  filed, because that is free.
+- **A8 is available to every filing from here.** A filing writes every
+  umbrella whose span and subject fit; a parent already reachable through
+  another parent is not one of them.
+- **A7 is spent on the three it was written for**, one widened and two
+  refused by rule 4. Any future interval widened from an article should have
+  the edges on the record read first.
+- **The Gaza cluster (48 rows) and Sudan's five** are unchanged and still the
+  owner's.
+
+## Curation 2026-09-22
+
+*The first curation fire, 13:07Z. A11(a): the first fire after 02:00Z each day
+reads every active event and fixes, from the record's own cited sources or its
+Wikidata item, what is missing — and imports nothing. This one also wrote the
+polity descriptions the owner asked for, because no polity had one yet.*
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 590 active | **590 active** |
+| **main** | 244 | **240** |
+| filed | 346 | **350** |
+| active edges | 640 | **642** |
+| largest connected component | 503 | **503** |
+| components | 65 | 65 |
+| events with no edge at all | 47 | 47 |
+| events with no place | 433 | **23** |
+| polities with a description | 0 | **177** |
+
+**Per lane (A10).** Active is unchanged, because nothing was imported: Europe
+303, Asia 125, Americas 83, Africa 79. Main falls from 244 to 240 in three
+lanes — Europe 86 to 83, Africa 32 to 31, Asia and the Americas unmoved at 67
+and 59.
+
+**A9 changed no lane, and that is worth writing down.** The places went onto
+433 events that had none, but every one of them already carried a `region`
+written by the Wikidata import from its own point, so the lane distribution
+before and after this fire is the same four numbers. What the places changed is
+the map, which is what the owner asked for: 410 events that were drawn in a
+lane and nowhere else now have a mark.
+
+### What was fixed, and what was left
+
+| | fixed | left, and why |
+| --- | --- | --- |
+| **polity descriptions** | **177** of the 184 ongoing polities | 7: three give no capital to check a match against (`french-guiana`, `madagascar`, `sao-tome-and-principe`), two share a capital five kilometres apart and so cannot be told apart (`congo`, `congo-democratic-republic-of-zaire`, both reaching Q974), and two matched an item carrying a dissolution date while the record is dated as ongoing (`third-portuguese-republic` reached the First Republic, `vietnam-democratic-republic-of` reached North Vietnam) |
+| **places (A9)** | **410** of 433 | 23, every one because neither P276, P131 nor P17 leads to anything carrying P625 |
+| **summaries** | **277** | 52: 44 whose article lead is itself under two sentences, 5 with no Wikidata item, 3 whose item has no English article |
+| **participants (P710)** | **44** events, 113 lines | 238: 155 whose item names no participant, 57 whose participants the atlas holds none of, 21 whose category determines no role, and 5 withdrawn again (below) |
+| **parents (A6, A8)** | **13** events, 4 of them a first parent | 9 of the 22 the item's P361 offered were withdrawn by the atlas's own two rules (below) |
+| **edges** | **2** | 16 of the 18 unedged causal pairs Wikidata names, because no lead states them in so many words |
+| **intervals (A7)** | 0 | A7 is spent on the three it was written for; no other record's cited article states a wider span than the record carries |
+
+### The polity descriptions, and how an item was decided
+
+Two signals and no third, the discipline `tools/import/places.mjs` already
+uses: the article Wikipedia resolves the record's own names to (the search is
+only a way to find candidate titles, never a way to accept one), and the
+capital that item gives agreeing within 1.5 degrees with the capital CShapes
+already wrote on the record. Every capital the item names counts, not only the
+one it prefers, because a record written from CShapes carries the capital of
+its own day — which is how `equatorial-guinea` matched on Malabo rather than
+failing on Ciudad de la Paz.
+
+Two gates catch what a capital cannot, and both earned their place: an item
+with a dissolution date cannot describe a polity dated as ongoing, and an item
+that matched two records tells them apart not at all. Without them this fire
+would have told a reader that the Third Portuguese Republic has the population
+of 1911 and that the Republic of the Congo is governed from Kinshasa.
+
+Each description is the item's own area (P2046) and latest population (P1082)
+and the first sentences of the English lead quoted at a named revision, with
+both cited on the record and `polity-description` in its review flags. The
+import's own account of where the record came from is kept behind it.
+
+### The five withdrawals and the nine, which are the fire's own corrections
+
+Two passes wrote something a third rule refused, and the refusals are worth
+more than the writes.
+
+**Nine filings withdrawn.** `tests/m42-filing.test.mjs` and
+`tests/m62.test.mjs` hold three properties the P361 pass did not read: a
+parent already reachable through another parent says nothing (A8), an event is
+an umbrella's own only when its lane is the umbrella's or it names an actor the
+umbrella names (M62, A6), and `end: null` is "as far as the data goes" rather
+than a year, so an open-ended child is not inside a parent that closes. Six
+more redundant parents went with them, `battle-of-kursk` under the Second World
+War once it was under the Eastern Front, which is inside it already.
+
+**Five participant lists withdrawn.** P710 gives the parties an item names, and
+the atlas holds records for some of them. Where the missing half is exactly the
+party that carried an existing filing — the Franco-Thai War is filed under the
+Second World War and the item names Vichy France, which the atlas has no record
+for — filling in the other half breaks a correct filing with a misleading
+half-list. An event with no actor is not a defect (M67 A1); a half-list read as
+a whole one is. Where a list is partial but harmless the record's review note
+says how many parties were dropped and tells the reviewer to read the item.
+
+### What A9 broke, and the clause that had to move
+
+`tests/m62.test.mjs` admitted a child that names neither actor nor place, under
+M67's amendment A1 — *"It's fine to have no actor or place, you have to read the
+context."* Giving 410 events a place closed that clause under **113 filings at
+once**, among them the 20 July plot inside the Second World War and the 1963
+South Vietnamese coup inside the Vietnam War, none of which became less their
+umbrella's own for being put on the map. The clause now asks only whether the
+child names an **actor**, because an actor is what the subject rule intersects
+on and a point taken from P625 is evidence about neither umbrella. A child that
+names an actor is still held to sharing one.
+
+Two more documents moved because the corpus did, which is what they are for.
+`docs/m53-polities.md` §4.1 carries a second "after M42" row and, for the first
+time, a paragraph saying the two rules have parted: counted by "alive at the
+start" the figure is 351 and counted by overlap it is 352, because
+`croatian-war-of-independence` now names `croatia` and the war begins in 1991
+while the CShapes record begins in 1992. The entry joins `LATER` in
+`tests/m56.test.mjs`, which exists so that a new entry of that shape cannot go
+quiet.
+
+Two browser tests were pinned to `angola` having no events, and Angola is a
+belligerent in both Congo wars. One now asks the atlas for an eventless actor
+rather than naming one — M42 has no ceiling, so any pin breaks eventually — and
+the other opens the succession section instead of assuming it is the section
+that opens.
+
+## Where the run stands after the first curation fire, for the fire that picks it up
+
+*22 September, 13:07Z onward. A curation fire; nothing was imported.*
+
+| | |
+| --- | --- |
+| corpus | **590 active** |
+| **main** | **240** |
+| filed | 350 |
+| largest connected component | **503** |
+| components | **65** |
+| events with no edge at all | **47** |
+| events with no place | **23**, all refused for want of a coordinate |
+| the inverse `part of` vein | **618 rows open**, untouched |
+| the sweep pool, world sections | **1,046** open rows, untouched |
+| the corpus `part of` pass | spent; A8's re-read spent; P361 over the corpus now spent too |
+
+**What is open, in the order a fire should weigh it:**
+
+- **The next fire is an import fire** unless it is the first after 02:00Z
+  tomorrow. A10's order stands and the lanes are where they were: Africa 79
+  active and Asia 125 against Europe's 303, so **Africa first**, and this run's
+  half of the partition is Africa and Asia only (A11(b)).
+- **The 618-row inverse vein is still the pool**, and ranking across the whole
+  vein still beats taking one war's rows (batch 34).
+- **The component did not grow and 47 events still carry no edge.** Two edges
+  were added and both joined events already inside the largest component. A
+  fire that wants reach should take the isolated 47 by name — most of them are
+  battles whose war the atlas holds and whose article's § Background states the
+  link, which is where batches 29 and 33 found their yield.
+- **177 polity descriptions are now in the review queue** under the flag
+  `polity-description`, and the seven refusals above are a person's to settle
+  or a later fire's, if a record gains a capital.
+- **The Gaza cluster (48 rows) and Sudan's five** are unchanged and still the
+  owner's.

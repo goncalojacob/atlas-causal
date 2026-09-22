@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,16 +42,20 @@
     {
       "source": "wikidata",
       "locator": "Q4560833"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1920 Georgian coup attempt\", revision 1375993255"
     }
   ],
   "title": "1920 Georgian coup attempt",
-  "summary": "Wikidata item Q4560833, imported by tools/import/wikidata.mjs. The item's own description reads \"failed Bolshevik coup in the Democratic Republic of Georgia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"1920 Georgian coup attempt\", at revision 1375993255, opens: \"The Georgian coup in May 1920 was an unsuccessful attempt to take power by the Bolsheviks in the Democratic Republic of Georgia. Relying on the 11th Red Army of Soviet Russia operating in neighboring Azerbaijan, the Bolsheviks attempted to take control of a military school and government offices in the Georgian capital of Tiflis on May 3. The Georgian government suppressed the disorders in Tiflis and concentrated its forces to successfully block the advance of the Russian troops on the Azerbaijani-Georgian border.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4560833, imported by tools/import/wikidata.mjs. The item's own description reads \"failed Bolshevik coup in the Democratic Republic of Georgia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1920,
     "end": 1920,
     "date": "1920-05"
   },
-  "place": null,
+  "place": "democratic-republic-of-georgia",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "russian-civil-war",

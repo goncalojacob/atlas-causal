@@ -9,37 +9,46 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q28130514",
-  "sitelinks": {
-    "count": 38,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q28130514",
   "wikipedia": {
     "en": "Treaty on the Prohibition of Nuclear Weapons",
     "pt": "Tratado sobre a Proibição das Armas Nucleares"
+  },
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q28130514"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty on the Prohibition of Nuclear Weapons\", revision 1363091604"
     }
   ],
   "title": "Treaty on the Prohibition of Nuclear Weapons",
-  "summary": "Wikidata item Q28130514, imported by tools/import/wikidata.mjs. The item's own description reads \"legally binding international agreement to prohibit nuclear weapons\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Treaty on the Prohibition of Nuclear Weapons\", at revision 1363091604, opens: \"The Treaty on the Prohibition of Nuclear Weapons (TPNW), or the Nuclear Weapon Ban Treaty, is the first legally binding international agreement to comprehensively prohibit nuclear weapons, with the ultimate goal being their total elimination. It was adopted on 7 July 2017, opened for signature on 20 September 2017, and entered into force on 22 January 2021.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28130514, imported by tools/import/wikidata.mjs. The item's own description reads \"legally binding international agreement to prohibit nuclear weapons\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2017,
     "end": 2017,

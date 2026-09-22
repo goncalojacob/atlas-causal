@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,17 +41,21 @@
     {
       "source": "wikidata",
       "locator": "Q7784981"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mountain War (Lebanon)\", revision 1371504591"
     }
   ],
   "title": "Mountain War",
-  "summary": "Wikidata item Q7784981, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Lebanese Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Mountain War (Lebanon)\", at revision 1371504591, opens: \"The Mountain War, also known as the War of the Mountain, was a subconflict between the 1982–83 and the 1984–89 phase of the Lebanese Civil War, which occurred mainly at the mountainous Chouf District located south-east of the Lebanese Capital Beirut. It pitted the Lebanese Forces (LF) militia and the official Lebanese Armed Forces (LAF) against a coalition of the Lebanese National Resistance Front (LNRF) led by the Progressive Socialist Party (PSP), allied with the Amal Movement and the Palestinian National Salvation Front (PNSF), and backed by Syria. Hostilities began when the LF and the LAF entered the predominantly Druze Chouf District to bring the region back under government control, only to be met with fierce resistance from local Druze militias and their allies.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7784981, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Lebanese Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1983,
     "end": 1984,
     "date": "1983-09-03",
     "endDate": "1984-02"
   },
-  "place": null,
+  "place": "mount-lebanon",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "lebanese-civil-war",

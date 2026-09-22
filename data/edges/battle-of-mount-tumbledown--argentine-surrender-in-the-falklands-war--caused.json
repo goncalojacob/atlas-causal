@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-mount-tumbledown--argentine-surrender-in-the-falklands-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mount Tumbledown\", revision 1372389478, lead"
+    }
+  ],
+  "from": "battle-of-mount-tumbledown",
+  "to": "argentine-surrender-in-the-falklands-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The battle's lead carries the consequence to its end: taking Tumbledown and the high ground around it \"allowed British troops to secure a dominant position over the town, leading to the fall of Stanley and the surrender of Argentine forces on the islands.\" The surrender is a record this atlas already held; this is the engagement its own article names as what led there. `probable`: one article states the chain, and it is the article of the battle rather than of the surrender, so the claim is the battle's own.",
+  "dispute": null
+}

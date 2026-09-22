@@ -62,7 +62,17 @@ this picture:
 2. **Every part snaps to a year column.** Inside a six-year lens the events
    carry day precision (`when.date`), and the axis should use it: x from the
    date, not the year, so the parts spread along the axis instead of
-   stacking in seven columns.
+   stacking in seven columns. The owner again, with
+   `docs/screens/owner-2026-09-22-graph-column.png` (the 1940 column:
+   Katyn, Britain, Franco-Thai, Continuation, Dunkirk on one vertical line):
+   *"if you have several events on the same line it gets confusing. Even
+   if these events happened in the same year, perhaps it was not on the same
+   day so it should appear differently."* Two more things that picture
+   shows: the **dashed vertical line down a column reads as a link** between
+   the events on it — with the dates spread it goes, or becomes a faint
+   year tick that cannot be mistaken for an edge; and **two labels can land
+   on one row** ("Franco-Thai War" over "Continuation War") — M77's rule,
+   whole or on a nearby free line, applies within a lens too.
 3. **The vertical order is arbitrary and the edges fan across the picture**
    — Greco-Italian War and the Armistice at the bottom left sending long
    lines to the 20 July plot and Potsdam at the top right. Order the nodes

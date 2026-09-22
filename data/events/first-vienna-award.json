@@ -9,43 +9,53 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q126604",
-  "sitelinks": {
-    "count": 35,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q126604",
   "wikipedia": {
     "en": "First Vienna Award",
     "pt": "Primeira Arbitragem de Viena"
+  },
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q126604"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Vienna Award\", revision 1373350087"
     }
   ],
   "title": "First Vienna Award",
-  "summary": "Wikidata item Q126604, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty signed in 1938\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"First Vienna Award\", at revision 1373350087, opens: \"The First Vienna Award was a treaty signed on 2 November 1938 pursuant to the Vienna Arbitration, which took place at Vienna's Belvedere Palace. The arbitration and award were direct consequences of the previous month's Munich Agreement, which resulted in the partitioning of Czechoslovakia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q126604, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty signed in 1938\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1938,
     "end": 1938,
     "date": "1938-11-02"
   },
-  "place": null,
+  "place": "vienna",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "interwar-period",

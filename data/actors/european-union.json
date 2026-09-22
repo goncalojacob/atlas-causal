@@ -13,17 +13,22 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
-  "origin": {
-    "tool": "assistant"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "date",
-      "claim"
+      "claim",
+      "polity-description"
     ],
     "note": "The Maastricht dates were written from memory. Recording the Union as a polity rather than an institution is the drafter's decision: it is argued in the summary, and it is also what lets the succession from the Community validate, since rule 19 requires both ends of a succession to be the same kind of actor."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q458",
+  "wikipedia": {
+    "en": "European Union"
   },
   "sources": [
     {
@@ -33,6 +38,14 @@
     {
       "source": "costa-pinto-teixeira-2019-political-institutions",
       "locator": null
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q458, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"European Union\", revision 1375983098"
     }
   ],
   "actorType": "polity",
@@ -42,7 +55,7 @@
     "União Europeia",
     "UE"
   ],
-  "summary": "The Union created by the Maastricht Treaty, signed in February 1992 and in force from 1 November 1993, which took over the European Economic Community that Portugal had joined in 1986 and added to it a monetary union, a common foreign policy and a citizenship. Portugal's membership runs continuously across the change of name; what changed was what membership demanded, and the convergence criteria agreed at Maastricht governed Portuguese budgets for the rest of the decade. From 2011 the Union was also, through the Commission and the Central Bank, one of the parties that wrote the terms of the adjustment programme, and whether that is best described as solidarity or as supervision is still argued about. It is recorded here as a polity rather than as an institution — the kind this atlas gives to secretariats — because it has a territory, an external border and a citizenship, and because the Community it succeeded is recorded the same way.",
+  "summary": "Approximately 4,236,351 km² and about 450.4 million people (2025), from Wikidata's Q458 (P2046, P1082). The English Wikipedia article \"European Union\", at revision 1375983098, opens: \"The European Union (EU) is a political and economic union of 27 member states that are located primarily in Europe. A supranational union with a total area of 4,233,255 km2 (1,634,469 sq mi) and an estimated population of just under 452 million as of 2026, its member states generated a nominal gross domestic product (GDP) of around €18.802 trillion in 2025, accounting for approximately one sixth of global economic output. The EU is often described as a sui generis political entity combining characteristics of both a federation and a confederation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. The Union created by the Maastricht Treaty, signed in February 1992 and in force from 1 November 1993, which took over the European Economic Community that Portugal had joined in 1986 and added to it a monetary union, a common foreign policy and a citizenship. Portugal's membership runs continuously across the change of name; what changed was what membership demanded, and the convergence criteria agreed at Maastricht governed Portuguese budgets for the rest of the decade. From 2011 the Union was also, through the Commission and the Central Bank, one of the parties that wrote the terms of the adjustment programme, and whether that is best described as solidarity or as supervision is still argued about. It is recorded here as a polity rather than as an institution — the kind this atlas gives to secretariats — because it has a territory, an external border and a citizenship, and because the Community it succeeded is recorded the same way.",
   "when": {
     "start": 1993,
     "end": null

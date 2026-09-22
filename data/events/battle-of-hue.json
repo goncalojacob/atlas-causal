@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "battle-of-hue",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "participants-from-p710",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q697053",
+  "wikipedia": {
+    "en": "Battle of Huế",
+    "pt": "Batalha de Huế"
+  },
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q697053"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Huế\", revision 1374240274"
+    }
+  ],
+  "title": "Battle of Hue",
+  "summary": "The English Wikipedia article \"Battle of Huế\", at revision 1374240274, opens: \"The Battle of Huế was a major battle in the Tết Offensive launched by North Vietnam and the Việt Cộng during the Vietnam War. Initially losing control of most of Huế and its surroundings, the combined forces of South Vietnam and the United States gradually recaptured the city after a little over one month of intense fighting. The battle was one of the longest and bloodiest of the war, causing it to negatively affect the American public perception of the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q697053, imported by tools/import/wikidata.mjs. The item's own description reads \"1968 battle of the Vietnam War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1968,
+    "end": 1968,
+    "date": "1968-03-02",
+    "endDate": "1968-03-03"
+  },
+  "place": "hue",
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "tet-offensive",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent",
+      "note": "Wikidata Q697053, P710 (participant), Q30"
+    }
+  ]
+}

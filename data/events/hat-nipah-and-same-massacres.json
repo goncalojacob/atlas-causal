@@ -17,18 +17,19 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-06",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "facts-thin"
+      "facts-thin",
+      "a9-place"
     ],
     "note": "Wired in M22 on the strength of the date and the place alone. The import brought no Wikipedia lead for this item and the bibliography holds no work on the occupation of East Timor: a reviewer should establish who carried out the killings and on whose orders, or retract the record, before signing it."
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q131364064",
   "sitelinks": {
@@ -53,7 +54,7 @@
     "date": "1976-01-27",
     "endDate": "1976-01-29"
   },
-  "place": null,
+  "place": "same",
   "region": "asia",
   "actors": [
     {

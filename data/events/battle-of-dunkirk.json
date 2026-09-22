@@ -9,15 +9,22 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "participants-from-p710",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,20 +43,30 @@
     {
       "source": "wikidata",
       "locator": "Q208529"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dunkirk\", revision 1374147037"
     }
   ],
   "title": "Battle of Dunkirk",
-  "summary": "Wikidata item Q208529, imported by tools/import/wikidata.mjs. The item's own description reads \"1940 battle in the Second World War between the Allies and Germany\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Battle of Dunkirk\", at revision 1374147037, opens: \"The Battle of Dunkirk was fought around the French port of Dunkirk (Dunkerque) during the Second World War, between the Allies and Nazi Germany. As the Allies were losing the Battle of France on the Western Front, the Battle of Dunkirk was the defence and evacuation of British and other Allied forces to Britain from 26 May to 4 June 1940.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q208529, imported by tools/import/wikidata.mjs. The item's own description reads \"1940 battle in the Second World War between the Allies and Germany\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1940,
     "end": 1940,
     "date": "1940-05-26",
     "endDate": "1940-06-04"
   },
-  "place": null,
+  "place": "dunkirk",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "world-war-ii",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent",
+      "note": "Wikidata Q208529, P710 (participant), Q145"
+    }
+  ]
 }

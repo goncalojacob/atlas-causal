@@ -9,18 +9,24 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "m40-retracted",
       "standing-backfilled",
-      "imported-by-wikidata"
+      "imported-by-wikidata",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -39,17 +45,21 @@
     {
       "source": "wikidata",
       "locator": "Q81545"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Libyan civil war (2011)\", revision 1374512354"
     }
   ],
   "title": "Libyan Civil War",
-  "summary": "Wikidata item Q81545, imported by tools/import/wikidata.mjs. The item's own description reads \"2011 armed conflict in the North African country of Libya\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Libyan civil war (2011)\", at revision 1374512354, opens: \"The Libyan Civil War, also known as the First Libyan Civil War and Libyan Revolution, was an armed conflict fought in 2011 in the North African country of Libya between forces loyal to Colonel Muammar Gaddafi and rebel groups attempting to oust his government. The war was ignited by protests in Benghazi beginning on 15 February 2011 inspired by the Arab Spring, which led to clashes with security forces and armed protesters. The protests escalated into a rebellion spreading across the country, with the forces opposing Gaddafi establishing an interim governing body, the National Transitional Council.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q81545, imported by tools/import/wikidata.mjs. The item's own description reads \"2011 armed conflict in the North African country of Libya\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2011,
     "end": 2011,
     "date": "2011-02-15",
     "endDate": "2011-10-23"
   },
-  "place": null,
+  "place": "libya-q1016",
   "region": "africa",
   "parent": "arab-spring",
   "actors": []
