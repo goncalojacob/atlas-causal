@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "cretan-revolt-of-1897-1898--greco-turkish-war-of-1897--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Greco-Turkish War (1897)\", revision 1374612994, lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cretan Revolt (1897–1898)\", revision 1370613860, § Political developments — April 1897 to July 28, 1897, \"Ottoman intervention\""
+    }
+  ],
+  "from": "cretan-revolt-of-1897-1898",
+  "to": "greco-turkish-war-of-1897",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The war's own lead names the cause: \"Its immediate cause involved the status of the Ottoman province of Crete, whose Greek-majority population had long desired union with Greece.\" The revolt is where that status was contested: its article has Greek volunteers and a Greek expeditionary force on the island from February 1897, and then, under \"Ottoman intervention\", \"On April 17, 1897, the Ottoman Empire officially declared war on Greece.\" So the insurrection on Crete is what the declaration of war answered, and the two articles state the halves of that between them. It is `probable` and not `consensus` because neither article writes the sentence in one piece — the join is made here — and because rule 22 will not let two Wikipedia citations carry `consensus` anyway. The edge does not say the revolt decided the war: the fighting was in Thessaly and the revolt outlived it by a year, which is also why the revolt is not filed as part of it.",
+  "dispute": null
+}
