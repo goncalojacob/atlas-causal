@@ -10,8 +10,9 @@
     "lon": { "type": "number" },
     "lat": { "type": "number" },
     "precision": {
+      "description": "How precisely this is placed, and therefore how the map draws it. `country` is the state's own point, for where nothing finer than the polity is known; a region and a country are areas and are drawn wider and fainter than a city, never as a pin at a capital. The vocabulary is src/vocab.js's PRECISIONS and this enum is the one remaining copy of it, because a JSON Schema cannot import JavaScript.",
       "type": "string",
-      "enum": ["point", "city", "region"]
+      "enum": ["point", "city", "region", "country"]
     },
     "label": { "type": "string", "minLength": 1, "maxLength": 200 }
   }

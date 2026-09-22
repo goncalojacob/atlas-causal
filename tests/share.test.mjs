@@ -34,12 +34,16 @@ test('a record\'s address is the page and the one parameter that opens it', () =
   assert.equal(recordUrl('actor', 'salazar', { base }), `${base}?actor=salazar`);
   assert.equal(recordUrl('office', 'prime-minister-of-portugal', { base }), `${base}?office=prime-minister-of-portugal`);
   assert.equal(recordUrl('narrative', 'the-empire-unravels', { base }), `${base}?narrative=the-empire-unravels`);
-  // An edge is walked, not opened, so it has no address of its own; nor has a
-  // record with no id. Either way the page itself is still where it lives.
-  assert.equal(recordUrl('edge', 'a--b--caused', { base }), base);
+  // An edge is opened and read since M80, so it has an address like the rest:
+  // a link is a small historiographical argument, and a correction issue about
+  // one has to be able to say where it was read.
+  assert.equal(recordUrl('edge', 'a--b--caused', { base }), `${base}?edge=a--b--caused`);
+  // A record with no id still has none. Either way the page itself is where it
+  // lives.
   assert.equal(recordUrl('event', null, { base }), base);
   assert.equal(recordUrl('event', 'x'), '?selected=x');
-  assert.equal(recordUrl('edge', 'x'), null);
+  assert.equal(recordUrl('relation', 'a--b--allied-with', { base }), base);
+  assert.equal(recordUrl('edge', null), null);
 });
 
 // A3: an office is a card with an address, so the two links in its head have

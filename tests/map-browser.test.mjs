@@ -224,11 +224,15 @@ const ACTIVE = all.records
   .filter((r) => MAIN(r) && (r.when.start?.min ?? r.when.start) < 1300)
   .map((r) => r.id)
   .sort();
-// And how big the resting picture is altogether, which is the second number in
-// the count in the masthead: "N of N events in view" counts against what the
-// atlas is drawing and not against the whole corpus (M65).
+// The two numbers the count in the masthead is between, and **which is
+// which** (M80). The picture at rest is the main events (M65); the whole it is
+// counted against is the active corpus. The line used to say "N of N events in
+// view" with the resting picture at both ends, which was right twice over and
+// told the reader nothing — the owner read 252 of 252 as the atlas having 252
+// events and it had 581. Both are derived here and neither is typed in.
 const ACTIVE_TOTAL = all.records.filter(MAIN).length;
-const inView = (n) => new RegExp(`^${n} of ${ACTIVE_TOTAL} events in view$`);
+const CORPUS = all.records.filter((r) => r.kind === 'event' && r.status === 'active').length;
+const inView = (n) => new RegExp(`^${n} main events? of ${CORPUS} in view$`);
 
 test('the whole world is no box at all, and the lanes carry every active event', { skip }, async () => {
   await wide(async (page, url) => {

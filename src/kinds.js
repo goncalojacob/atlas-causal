@@ -79,7 +79,10 @@ const KIND_ENTRIES = {
     body: false,
     entryPage: false,
     linkable: false,
-    urlParam: 'selected',
+    // Its own parameter since M80: a link is opened and read now, where it
+    // used to be walked and nothing else, so `?edge=<id>` is its address and
+    // `selected` is no longer the nearest thing to one.
+    urlParam: 'edge',
     titleKey: null,
     citerLabel: 'Links',
     citations: [

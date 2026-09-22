@@ -185,7 +185,8 @@ test('the map has the whole layout’s height now, and so does the graph', { ski
   });
 });
 
-// 5. The "N of N events in view" count lives where a reader still sees it, on
+// 5. The count of what the map is looking at lives where a reader still sees
+//    it, on
 //    every view rather than on the strip that is gone. No count is pinned:
 //    what is asserted is that the sentence is there, that it counts the
 //    smaller number of the two, and that the pin gives the world back.
@@ -202,8 +203,11 @@ test('the count of what the map is looking at is in the masthead, on every view'
     await waitFor(page, `const note = document.querySelector('#window-control .window-view');
       return !note.hidden && /in view/.test(note.textContent);`, 'the count in the masthead');
     const seen = await page.eval(READ);
-    assert.match(seen.text, /^\d+ of \d+ events? in view$/);
-    const [shown, whole] = seen.text.match(/^(\d+) of (\d+)/).slice(1).map(Number);
+    // Since M80 the sentence says what it counts: the main events at rest, of
+    // the active corpus. Still no count pinned — what is asserted is the shape
+    // of the sentence and that the smaller of the two numbers is the picture.
+    assert.match(seen.text, /^\d+ main events? of \d+ in view$/);
+    const [shown, whole] = seen.text.match(/^(\d+) main events? of (\d+)/).slice(1).map(Number);
     assert.ok(shown <= whole, `${shown} of ${whole}`);
     assert.ok(seen.pin, 'and the pin that gives the world back');
 

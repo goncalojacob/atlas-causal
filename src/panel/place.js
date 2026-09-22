@@ -11,6 +11,7 @@ import { esc } from '../util/esc.js';
 import { formatYear, isValidYear } from '../util/dates.js';
 import { overlaps, resolveWindow } from '../util/window.js';
 import { sectionHtml, openSection } from './sections.js';
+import { PRECISION_LABEL } from '../vocab.js';
 // How far this record has been read, in one line (M70). The slot goes in the
 // card's head and is filled when the record's own file lands, because the core
 // row a card is built from carries no signature.
@@ -85,6 +86,15 @@ export function historicalNamesHtml(list) {
   return `<p class="also-known muted">called:</p><ul class="historical-names">${rows.join('')}</ul>`;
 }
 
+// How precisely the point is the place, in words (M80). "(country)" beside a
+// coordinate reads as the name of a country rather than as a statement about
+// the coordinate, and "the state's own point" is what the record actually
+// means. A word the vocabulary does not know is left out, never printed raw.
+function precisionHtml(precision) {
+  const said = PRECISION_LABEL[precision] ?? null;
+  return said ? `<span class="muted">(${esc(said)})</span>` : '';
+}
+
 export function placeCardHtml(ctx, place, state, { remembered = null } = {}) {
   const events = ctx.atlas.eventsByPlace.get(place.id) ?? [];
   const variants = (place.names ?? []).slice(1);
@@ -120,7 +130,7 @@ export function placeCardHtml(ctx, place, state, { remembered = null } = {}) {
       <h2>${esc(place.name)}</h2>
       <p class="meta">
         <span class="where">${esc(place.where.lat.toFixed(2))}, ${esc(place.where.lon.toFixed(2))}
-          <span class="muted">(${esc(place.where.precision)})</span></span>
+          ${precisionHtml(place.where.precision)}</span>
         · <span class="lane">${esc(ctx.laneLabel(place.region))}</span>
         <button type="button" class="link small" data-action="clear-place">close</button>
         ${ctx.lensControl('place', place.id)}

@@ -3580,3 +3580,116 @@ browser suites one at a time as the check runs them. No new runtime dependency,
 no build step, no new hex value, token or type size. No record, no historical
 claim, no filing — M42's amendment A8 is lane B's and waits on this milestone's
 done line. `docs/drafts/` ignored. Deviations **1136 to 1142**.
+
+---
+
+## M80 — a connection can be chosen, marks by precision, and the count says what it counts
+
+Lane A, on the branch `m80`. Three sentences from the owner on 22 September,
+each the authority for its own third.
+
+### A connection is a record that can be chosen and read
+
+> *"In the graph I should be able to select a connection the same way I select
+> an event, so I can check its sources, description, etc."*
+
+An edge was the one record with an argument in it that had no card: it was
+walked, and the argument was readable only folded into a `<details>` labelled
+"Why" on the card of some other record. **`?edge=<id>` is its address now** —
+an id of the edge vocabulary and never a slug, so a relation cannot stand in
+it — and `src/panel/edge.js` is the card: the type in the card's own words as
+its heading, both ends as the event control every other list uses, the
+confidence with *what it means* written out rather than only on the badge's
+title, the argument, the sources with their locators, the dispute where there
+is one, and the standing line.
+
+It is ahead of every other card in the panel's precedence, and **one rule in
+`state.js` takes it away**: a patch that changes any other opening and does not
+name `edge` closes it. That is the idiom `set` already carried for the horizon,
+rather than an `edge: null` in each of the seven places that open something.
+
+On the graph a **line is a control**: it carries the link's id, takes the
+focus, is named by its two ends with the type between them, and answers Enter
+and Space as every mark on the map has since M63. Which line a click means is
+decided by distance to the segment, the way which mark it means has always been
+decided by distance to a centre; nodes are asked first and always. A line that
+carries several links is **not** a control — its members are collinear by
+construction and nothing in the picture could say which was meant — and parting
+the stacks is what makes it one link. The chosen line is drawn in madder, last
+of the three emphases, keeping its type's dash and its confidence's ink.
+
+**Arriving on `?edge=` frames the two ends; clicking a line does not move the
+camera.** The card names both ends and a camera that left one off the screen
+would be the picture disagreeing with the card — but a reader who clicks a line
+is looking straight at it. And **choosing a link is not a lens**: nothing in
+`lens.js` reads `edge`, so the same events are drawn before and after, at rest
+and inside a lens of one alike. From an event's card the type word opens the
+link: a reader who wants to know what "enabled" rests on presses "enabled".
+
+### Marks by precision
+
+The other half of M42's amendment A9. Most of the places it gives the imported
+events are a **state** and not a town, and a mark on the polity's own point at
+a city's size is a pin at a capital pretending to be an address. `country`
+joins `point`, `city` and `region`; the vocabulary moves into `src/vocab.js`
+beside the other closed sets, where `contribute/bundle.js` had kept a second
+copy, and a test holds the schema's enum to it.
+
+A region and a country are the **coarse** two: the map draws them half again as
+wide as a city's mark, with a dashed lighter ring over a fill that lets the
+ground through. The width says the record means an area, the faintness says the
+atlas does not know where inside it; the same cobalt at a lower opacity, no new
+token and no new hex. `cluster.js` is untouched. **`precision` moves out of the
+attribute shard and into the core**, for the reason `category` did in the glyph
+run: how a mark is *drawn* is decided on the first frame, and an attribute
+column arrives with its century. The two cards and the entry page say the
+precision in words — "the state's own point", not "(country)".
+
+### The count
+
+> *"I still only see 252 events."*
+
+The masthead read "252 of 252 events in view", where 252 was the resting
+picture of 581 and the line said the same number twice. It reads **"252 main
+events of 581 in view"** at rest and **"17 of 581 events in view"** under a
+lens, the whole being the active corpus; the noun agrees with the number it
+belongs to. `viewCountText` is that one sentence, pure; whether a lens is on is
+`emphasis.js`'s own `lensFocus`, so the line and the picture cannot disagree.
+The pin and the standing line are unchanged.
+
+### The fixtures and the pictures
+
+Two fixture places change `precision` — `fixture-place-c` to `region`,
+`fixture-place-a2` to `country` — rather than two being added, so no count the
+fixture suites are written against moves. `tests/m80.test.mjs` holds the rules
+and `tests/m80-browser.test.mjs` the three things only a page can answer: a
+click on a line lands on the line, a coarse mark really is wider and fainter
+than every city mark drawn beside it, and the masthead really does say which
+set it counts. Nothing pins a count or a pixel.
+`docs/screens/m80-edge-chosen.png` is a link chosen, framed on its two ends,
+with its card; `docs/screens/m80-marks-by-precision.png` is a country mark
+beside a city mark. No other picture was rewritten.
+
+Two things the screenshots found and this branch fixed: `opensOnNothing` was a
+hand-written list of five of the openings, so the introduction covered a link
+opened by its own address (it asks `hasOpening` now, and an office is no longer
+covered either); and a catalogue's search URL is one unbroken word wider than
+the panel, which had never been seen because no card opened on its sources by
+itself until this one did.
+
+### Checks
+
+`node tools/validate.mjs --index`: **11,190 records, 5 regions, 0 errors, 264
+warnings** — nothing under `data/` was written or rewritten. `node --test`:
+**1,720 pure and 242 browser, 1,962 in all, 0 failed and 0 skipped**, the
+browser suites one at a time as the check runs them.
+
+**The branch was cut from a red `m0`.** `timeline-browser` 230 failed at `950
+to 930` on `1c30cb0b`, the commit this branch was created from, before a line
+of it was written; a worktree at that commit reproduces it exactly. It is
+deviation 1142 one M42 snapshot later, `m0` fixed it in `9b5798eb` while this
+branch was working, and `origin/m0` is merged in — a merge and never a rebase.
+
+No new runtime dependency, no build step, no map library or tiles, no new hex
+value, token or type size. No record, no historical claim. `docs/drafts/`
+ignored. Deviations **1143 to 1152**.

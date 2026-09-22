@@ -20,9 +20,25 @@
 // same view, not alternatives: an actor stays highlighted on the map and the
 // timeline while its events are read one after another, and `?actor=salazar`
 // alone opens the actor's card. Which card the panel shows is a precedence —
-// `selected` over `source` over `office` over `place` over `actor` — so
-// opening an event from a place's list does not throw the place away, and an
-// office opened from the card of the actor it belongs to is what is shown.
+// `edge` over `selected` over `source` over `office` over `place` over
+// `actor` — so opening an event from a place's list does not throw the place
+// away, and an office opened from the card of the actor it belongs to is what
+// is shown.
+//
+// `edge` is the sixth and the newest (M80). The owner, 22 September: *"In the
+// graph I should be able to select a connection the same way I select an
+// event, so I can check its sources, description, etc."* An edge is a record
+// like any other — a type, two ends, a confidence, its sources and the
+// argument itself — and until now nothing on the page opened one: it was
+// walked and never read. `?edge=<id>` is its address, and it is an id of the
+// edge vocabulary and never a slug, so a relation's id cannot stand in it.
+//
+// It is at the head of the precedence because it is the card the reader
+// asked for last, and it is left behind by any other opening (`set` below):
+// two cards are two cards, and a reader who clicks one of the link's two ends
+// is asking for the event. **It is not a lens.** Nothing in `lens.js` reads
+// it, so choosing a link narrows no picture — it highlights one line and
+// names its ends, which is what the owner's sentence asks for.
 //
 // `focus` is the lens — a comma-separated list of `kind:id`, of any length and
 // of any of the six kinds (`actor`, `place`, `source`, `event`, `region`,
@@ -161,7 +177,7 @@ export function defaultState() {
   return {
     from: null, to: null, view: 'map', focus: null, focusAll: false,
     degree: DEGREE_DEFAULT, tops: false,
-    selected: null, source: null, place: null,
+    selected: null, source: null, place: null, edge: null,
     actor: null, office: null, chain: [], horizon: null, layers: [...DEFAULT_LAYERS], narrative: null, step: 0,
     walk: null,
     bbox: null,
@@ -247,6 +263,15 @@ export function parseState(search, defaults = defaultState()) {
   if (params.has('source')) {
     const id = params.get('source');
     if (SLUG.test(id)) state.source = id;
+  }
+  // The link's own address (M80). Checked against the edge vocabulary and not
+  // against the slug every other opening uses: an edge id is `from--to--type`
+  // and its third part comes from a closed list, so `?edge=` cannot be handed
+  // a relation — which has the same three-part shape and is not a step of a
+  // causal path (`chain` below refuses one for the same reason).
+  if (params.has('edge')) {
+    const id = params.get('edge');
+    if (!RELATION_ID.test(id) && EDGE_ID.test(id)) state.edge = id;
   }
   if (params.has('horizon')) state.horizon = year('horizon');
   if (params.has('place')) {
@@ -349,6 +374,7 @@ export function formatState(state, search = '') {
   // changed and not what they left alone.
   if (Number.isInteger(state.degree) && state.degree !== DEGREE_DEFAULT) params.set('degree', String(state.degree));
   if (state.tops) params.set('tops', '1');
+  if (state.edge) params.set('edge', state.edge);
   if (state.selected) params.set('selected', state.selected);
   if (state.source) params.set('source', state.source);
   if (state.place) params.set('place', state.place);
@@ -374,7 +400,7 @@ export function formatState(state, search = '') {
 // the window, the lanes, the layers, the lens — replaces the entry there is,
 // so that dragging the band does not fill the Back button with a hundred
 // frames of the same picture.
-export const OPENINGS = Object.freeze(['selected', 'source', 'office', 'place', 'actor', 'narrative', 'step']);
+export const OPENINGS = Object.freeze(['edge', 'selected', 'source', 'office', 'place', 'actor', 'narrative', 'step']);
 
 // All of those but one are a *card*. `step` is not one on its own: it is a
 // position inside a narrative, and the narrative beside it is the opening.
@@ -562,8 +588,20 @@ export function createState(initial, { window: win = null, restore = (s) => s } 
       // selection but leaves `?horizon=2000` in the link. A patch that names
       // `horizon` itself is the reader asking again and wins.
       const leftBehind = 'selected' in patch && patch.selected !== state.selected && !('horizon' in patch);
+      // And the link's card is left behind by any other card (M80), for the
+      // same kind of reason: `?edge=` is a card about one link, and a reader
+      // who clicks one of its two ends, or a place, or an actor, is asking for
+      // that record instead. It is at the head of the panel's precedence, so a
+      // patch that opened an event while a link was open would show the link's
+      // card still and leave `?edge=` in every link the reader copied. A patch
+      // that names `edge` itself is them asking for a link and wins — which is
+      // what the graph's own click sends.
+      const closedEdge = state.edge && !('edge' in patch)
+        && OPENINGS.some((key) => key !== 'edge' && key in patch && patch[key] !== state[key]);
       const before = state;
-      state = { ...state, ...patch, ...(leftBehind ? { horizon: null } : {}) };
+      state = {
+        ...state, ...patch, ...(leftBehind ? { horizon: null } : {}), ...(closedEdge ? { edge: null } : {}),
+      };
       write(push, before);
       if (push) {
         // Anything ahead of here was a future the reader has just replaced,

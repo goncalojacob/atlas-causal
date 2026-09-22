@@ -16237,6 +16237,218 @@ historical claim, no filing. `docs/drafts/` ignored. Deviations **1136 to
       absolute bound raised by one per milestone is a bound that means nothing,
       which is deviation 716's own argument arriving where it was going.
 
+## M80 — a connection can be chosen, marks by precision, and the count says what it counts
+
+Lane A, on the branch `m80`. Three sentences from the owner on 22 September,
+each the authority for its own third.
+
+### 1. A connection is a record that can be chosen and read
+
+> *"In the graph I should be able to select a connection the same way I select
+> an event, so I can check its sources, description, etc."*
+
+An edge was the one record with an argument in it that had no card. It was
+**walked**: clicking a consequence put the panel on the event at the far end
+and folded the argument into a `<details>` labelled "Why", and a reader who
+wanted to read the link itself rather than where it led had nowhere to go.
+
+**`?edge=<id>` is its address now.** It takes an id of the edge vocabulary and
+never a slug, so a relation — which has the same three-part shape and links two
+actors rather than two events — cannot stand in it. `src/panel/edge.js` is the
+card: the type in the card's own words (M28's vocabulary) as its heading, both
+ends as the plain event control every other list uses, the confidence with
+**what it means written out** rather than only on the badge's title, the
+argument, the sources with their locators, the dispute as a section of its own
+where there is one, and the standing line every card carries.
+
+Where it sits among the cards, and what takes it away:
+
+* it is **ahead of every other card** in the panel's precedence, because it is
+  the one the reader asked for last;
+* opening **any** other card leaves it behind — one rule in `state.js`'s `set`,
+  beside the one that leaves the horizon behind, rather than a `edge: null` in
+  each of the seven places that open something;
+* a patch that names `edge` itself is the reader asking for a link and wins.
+
+**On the graph a line is a control.** It carries the link's id, takes the
+focus, says what it is — the two ends with the type between them, which is the
+only name a link has — and answers Enter and Space, as every mark on the map
+has since M63. Which line a click means is decided by **distance to the
+segment**, the way which mark it means has always been decided by distance to a
+centre: a line is a stroke a pixel or two wide, and hit-testing the element
+would make choosing one a test of the reader's aim. Nodes are asked first and
+always; the lines are asked only when no node is near enough to have been
+meant.
+
+**A line that carries several links is not a control.** `mergeEdges` draws one
+line per pair of *stacks*, and its members are collinear by construction —
+there is nothing in the picture that could say which of them the reader aimed
+at. It keeps the title it had, and parting the stacks is what makes it one
+link, which is the same answer the map gives for a cluster of marks.
+
+The chosen line is drawn in **madder**, heavier than the walked chain and last
+of the three emphases, so it wins over all of them: a line being *read* is the
+one thing on the picture the panel is about. It keeps its type's dash pattern
+and its confidence's ink, because what kind of claim it is and how sure the
+atlas is of it are not what choosing it changed.
+
+**Arriving on `?edge=` frames the two ends; clicking a line does not move the
+camera.** The card names both ends and a camera that left one of them off the
+screen would be the picture disagreeing with the card — but a reader who clicks
+a line is looking straight at it, and a frame on the click would move the
+picture out from under the gesture that chose it. So the ends frame the
+drawing they *open* and never one already on screen, which is why the chosen
+link is deliberately **not** in `frameCamera`'s key.
+
+**Choosing a link is not a lens.** Nothing in `lens.js` reads `edge`, so no
+picture narrows: the same events are drawn before and after, at rest and inside
+a lens of one alike. A lens on a link would be a lens on its two events, which
+is what `vocab.js` has said since H7 about why an edge is not a focus kind.
+
+From an event's card, **the type word opens the link**. Each row already named
+the other end and offered to walk to it; what it could not do was open the link
+itself. A reader who wants to know what "enabled" rests on presses the word
+"enabled".
+
+### 2. Marks by precision, and `country` among them
+
+The other half of M42's amendment A9, which gives the imported events the place
+their Wikidata item names. Most of those places are a **state** and not a town:
+the coordinate is the polity's own point, and a mark on it at a city's size is
+a pin at a capital pretending to be an address. An election held "in Portugal"
+was not held in Lisbon.
+
+`country` joins `point`, `city` and `region`, and the vocabulary moves into
+`src/vocab.js` beside the other closed sets — `contribute/bundle.js` kept a
+second copy of it, and two definitions of one closed set drift. The schema's
+enum is the one remaining copy, because a JSON Schema cannot import JavaScript,
+and a test holds the two together.
+
+**A region and a country are the coarse two**: they name an area rather than a
+point on the ground. The map draws them half again as wide as a city's mark,
+with a dashed lighter ring over a fill that lets the ground through. The width
+says the record means an area; the faintness says the atlas does not know where
+inside it. Nothing new is spent on either — the same cobalt, the same stroke,
+at a lower opacity, which is how this atlas has said *less sure* since M73.
+`cluster.js` is untouched: a coarse mark groups like any other.
+
+**`precision` moves out of the attribute shard and into the core.** How a mark
+is *drawn* is decided on the frame the map first paints, and an attribute
+column arrives with its century: a mark that was a city's and became a region's
+a moment later would be the map correcting itself in front of the reader. It is
+the same decision the glyph run made about `category`, for the same reason, and
+it costs one short word on 47 places.
+
+The event card, the place card and the entry page say the precision **in
+words**. "(country)" beside a coordinate reads as the name of a country and not
+as a statement about the coordinate; "the state's own point" is what the record
+means. A word the vocabulary does not know is left out rather than printed raw.
+
+### 3. The masthead count says what it counts
+
+> *"I still only see 252 events."*
+
+The masthead read **"252 of 252 events in view"**, and 252 was the resting
+picture — the main events — of 581. The number was right twice over, right
+about the picture and right about the picture again, which is the one way a
+true sentence can still mislead: the owner read it as the atlas having 252
+events.
+
+It says which now: **"252 main events of 581 in view"** at rest, where the
+whole is the active corpus, and **"17 of 581 events in view"** under a lens,
+because what a lens kept is not a set of main events and must not be called
+one. The noun agrees with the number it belongs to — "1 main event of 581" is a
+sentence about the one, "1 of 581 events" is a sentence about the 581.
+
+`viewCountText` is that one sentence, pure and held without a browser. Whether
+a lens is on is `emphasis.js`'s own `lensFocus`, so the line and the picture
+cannot come to disagree. **The pin and the standing line are unchanged.**
+
+### What this run did not do
+
+No record was written and no historical claim made — `data/` gained nothing and
+lost nothing, and the only records touched anywhere are two fixture places
+whose `precision` changed. No new hex value, token or type size. The lens, the
+band and the walk framing are where M74, M75 and M76 left them.
+
+### Deviations
+
+1143. **The link's card is taken away by one rule in the store and not by
+      seven patches.** Opening an event, a place, an actor, a source, an office
+      or a narrative all have to close it, and adding `edge: null` to each of
+      the seven call sites is seven places to forget the eighth. `set` already
+      carried exactly this idiom for the horizon — *a question asked of one
+      record is not an answer about the next* — so the rule is written beside
+      it: a patch that changes any other opening and does not name `edge`
+      closes the link's card. A patch that names it wins, which is what the
+      graph's own click sends.
+1144. **`?edge=` is checked against the edge vocabulary and not against the
+      slug the other openings take.** An edge id and a relation id have the
+      same three-part shape and come from two closed sets that never meet
+      (`vocab.js`), and `chain` has refused a relation by name since it was
+      written. A parameter that accepted one would put a record with no card
+      into a field whose whole job is to name a card.
+1145. **A line that carries several links is left as it was, and that is the
+      answer rather than a gap.** Its members run between the same two stacks
+      and are therefore collinear: no click on it could say which link was
+      meant, and picking the first would be the interface inventing an answer.
+      Zooming parts the stacks and the line becomes one link, which is the map's
+      own rule for a cluster of marks read in the other dimension.
+1146. **The chosen link is not in `frameCamera`'s key, deliberately.** It is
+      the one thing in this milestone that reads like an oversight and is the
+      opposite: the key is what decides whether the camera moves, and a link in
+      it would move the camera on every click. A reader who arrives on `?edge=`
+      has not seen the picture and the two ends are what they came for; a reader
+      who clicks a line is looking at it. So the frame is taken on the first
+      drawing of an arrangement and never again.
+1147. **`precision` is core and not attribute, which is a change to the index
+      for a change to a mark.** I3's partition put `where.precision` in the
+      shard with `where.label`, and it belongs with `where.lon` and
+      `where.lat`: everything the *shape* of a mark is read from has to be in
+      hand on the first frame. The alternative was a mark that grows under the
+      reader when its century lands, which is the fault deviation 581 named for
+      `category` and the glyph run fixed the same way. `CORE ∪ ATTRIBUTE =
+      SPINE` is untouched — the key moved between the two halves of one split
+      column.
+1148. **Two fixture places change precision rather than two being added.** A
+      new fixture event moves every count the fixture suites are written
+      against; a changed `where.precision` moves none, and the fixture corpus
+      gains nothing it has to explain. `fixture-place-c` is the region and
+      `fixture-place-a2` is the country.
+1149. **A `?bbox=` that crosses the seam at 30 west does not open the map on
+      it, and the screenshot works around it rather than fixing it.** The
+      picture wanted was a country mark beside a city mark, and the first pair
+      chosen — `fixture-place-g` at 35 west and the cities east of 30 west —
+      needs a box across the meridian the geometry is cut at. Such a box is
+      dropped and the map opens on the whole world. That is the map's own
+      behaviour, older than this milestone and outside what the brief asks for;
+      the pair compared in the shot is east of the seam, and the reason is
+      written beside the shot so the next person to move it is not puzzled.
+1150. **The introduction was covering the link's card, and the fix is to stop
+      keeping a second list of the openings.** `opensOnNothing` named five of
+      them by hand, so `?edge=` — a link to an argument *inside* the atlas —
+      opened behind a card about the atlas. It asks `hasOpening` now, which is
+      the list kept beside the openings in `state.js`; an office was the other
+      one it had been missing. A list of a closed set kept away from the set is
+      the failure `vocab.js` exists to stop, one directory over.
+1151. **One CSS declaration that is not this milestone's and is here anyway.**
+      A catalogue's search URL is a single unbroken word a hundred and forty
+      characters long, and an unbreakable word wider than its column does not
+      wrap — it runs off the right of the panel and takes the citation's text
+      with it. It had never been seen, because no card opened on its sources by
+      itself until the link's card did. `overflow-wrap: anywhere`, on the one
+      rule, no token and no hex.
+1152. **The branch was cut from a red `m0` and the base was brought in rather
+      than the failure carried.** `timeline-browser` 230, *a state change
+      updates the bars in place and does not rebuild them*, failed at `950 to
+      930` on `1c30cb0b` — the commit this branch was created from, before a
+      line of it was written, and a worktree at that commit reproduces it
+      exactly. It is deviation 1142 arriving one snapshot later: M42's second
+      filing pass moves twenty of 950 elements with a click and two per cent is
+      nineteen. `m0` fixed it in `9b5798eb` while this branch was working, so
+      `origin/m0` is merged in — a merge and never a rebase, which the protocol
+      forbids.
+
 ## M42 — the world at scale (in progress, branch `m42`)
 
 Lane B. `docs/m42-pool.md` is the measurement amendment A1 asks for and the
@@ -18244,3 +18456,5 @@ M42 started 2026-09-22T08:06:56Z by scheduled
 M42 started 2026-09-22T10:33:11Z by scheduled
 M79 started 2026-09-22T09:04:50Z by scheduled (branch m79)
 M79 done
+M80 started 2026-09-22T11:11:07Z by scheduled (branch m80)
+M80 done

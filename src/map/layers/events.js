@@ -28,6 +28,7 @@ import { horizonBand } from '../../horizon.js';
 import { LOADING_LABEL } from '../../attributes.js';
 import { ringClasses } from '../../parts.js';
 import { confidenceClass } from '../../confidence.js';
+import { isCoarse } from '../../vocab.js';
 import { glyphClasses, glyphUse } from '../glyphs.js';
 // O tamanho de uma etiqueta, o seu halo e o corte de um nome comprido vivem em
 // labels.js, com o colocador: há um tamanho para as etiquetas todas do mapa e
@@ -43,6 +44,16 @@ import { LABEL_HALO, LABEL_SIZE, PRIORITY, shorten } from '../labels.js';
 // so a mark, a badge and a label keep their size on screen at any zoom.
 const MARK_RADIUS = 5;
 const SELECTED_RADIUS = 7;
+// And the mark of an event placed no more precisely than a region or a state
+// (M80). **Wider and fainter**, never a pin at a capital pretending to be an
+// address: an election held "in Portugal" is not held in Lisbon, and the
+// coordinate a place record carries for a country is the state's own point and
+// not the place the event happened. The width says the record means an area;
+// the faintness, which is the stylesheet's (`.map .mark.coarse`), says the
+// atlas does not know where inside it. Half again as wide as a city's and no
+// more: it has to be tellable from one at a glance and must not swallow its
+// neighbours.
+const COARSE_RADIUS = MARK_RADIUS * 1.5;
 // The symbol over a categorised mark, in the same units: the mark's own
 // diameter, which is what makes it readable at all (review of the map block,
 // F14, and the brief's amendment A1 — six units was tried and struck). It is
@@ -80,13 +91,21 @@ function textNode(text, attrs) {
   return el;
 }
 
-function markClasses(event, { selected, pathIds, actorIds, narrativeIds = null, reachable = null, faded = false, near = null }) {
+function markClasses(event, {
+  selected, pathIds, actorIds, narrativeIds = null, reachable = null, faded = false, near = null,
+  coarse = false,
+}) {
   // The madder accent belongs to the walked path; an actor's events are
   // emphasised in cobalt so the two never say the same thing. The horizon's
   // reachable set is a ring rather than a fill, fading with distance, so it
   // can be read underneath either of them.
   const band = reachable && reachable.has(event.id) ? `in-horizon ${horizonBand(reachable.get(event.id))}` : '';
   return ['mark',
+    // How precisely this is placed, where that is no better than an area
+    // (M80). First of the list and never conditional on anything else: it is
+    // a fact about the record and not about what the reader is doing, so a
+    // coarse mark stays coarse when it is selected, walked or faded.
+    coarse ? 'coarse' : '',
     faded ? 'faded' : '',
     // A direct neighbour of the lens's focus set: in the picture, so that a
     // neighbourhood does not look like an atlas in which nothing else
@@ -188,6 +207,13 @@ export function createEventsLayer(group, projection, {
     const where = pointOf(event);
     return where ? projection.project([where.lon, where.lat]) : null;
   };
+
+  // How precisely the place this event names is placed, and therefore how its
+  // mark is drawn (M80). Read off the place record through the same `pointOf`
+  // the coordinates come through — the precision is the place's and never the
+  // event's, exactly as the point is (M9) — and it is in the core, so it is in
+  // hand on the frame the map first paints (spine.js).
+  const coarseAt = (event) => isCoarse(pointOf(event)?.precision);
 
   // What a mark is called in the DOM: the record it opens, or the cluster it
   // stands for. Enough to find it again after the layer has been redrawn.
@@ -376,9 +402,13 @@ export function createEventsLayer(group, projection, {
       for (const cluster of shown) {
         const event = cluster.representative.event;
         if (cluster.count === 1) {
+          // A cluster of one is the record again, so it is drawn by its own
+          // precision: `cluster.js` treats a coarse mark as a mark like any
+          // other, which is the whole of what grouping has to say about it.
+          const coarse = coarseAt(event);
           appendMark(group, {
-            x: cluster.x, y: cluster.y, radius: MARK_RADIUS, title: named(event), id: event.id,
-            classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable, near }),
+            x: cluster.x, y: cluster.y, radius: coarse ? COARSE_RADIUS : MARK_RADIUS, title: named(event), id: event.id,
+            classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable, near, coarse }),
             ring: isParent(event),
             category: event.category ?? null,
           });
@@ -416,10 +446,16 @@ export function createEventsLayer(group, projection, {
         // The selected event keeps its mark wherever it is: it is what the
         // panel is showing, and the map is where a reader looks for it.
         if (!isSelected && !drawable(x, y)) continue;
+        // A coarse mark is already wider than the selected event's, so the
+        // selection does not shrink it: how precisely a record is placed is a
+        // fact about the record, and being open does not make it an address.
+        const coarse = coarseAt(event);
+        const radius = coarse ? Math.max(COARSE_RADIUS, isSelected ? SELECTED_RADIUS : 0)
+          : (isSelected ? SELECTED_RADIUS : MARK_RADIUS);
         const mark = appendMark(group, {
-          x, y, radius: isSelected ? SELECTED_RADIUS : MARK_RADIUS,
+          x, y, radius,
           title: named(event, { faded }), id: event.id,
-          classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable, faded, near }),
+          classes: markClasses(event, { selected, pathIds, actorIds, narrativeIds, reachable, faded, near, coarse }),
           ring: isParent(event),
           category: event.category ?? null,
         });
@@ -451,9 +487,12 @@ export function createEventsLayer(group, projection, {
           ring.appendChild(svg('line', { x1: cluster.x, y1: cluster.y, x2: x, y2: y, class: 'spread-leg' }));
           // A spread's members are records again, so each takes its own symbol
           // where the stack they came out of had none.
+          const coarse = coarseAt(member.event);
           appendMark(ring, {
-            x, y, radius: MARK_RADIUS, title: named(member.event), id: member.id,
-            classes: markClasses(member.event, { selected, pathIds, actorIds, narrativeIds, reachable }),
+            x, y, radius: coarse ? COARSE_RADIUS : MARK_RADIUS, title: named(member.event), id: member.id,
+            classes: markClasses(member.event, {
+              selected, pathIds, actorIds, narrativeIds, reachable, coarse,
+            }),
             ring: isParent(member.event),
             category: member.event.category ?? null,
           });

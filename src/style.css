@@ -912,6 +912,17 @@ body:not(.phone) .layout.panel-empty.composing {
    carry emphasis. */
 .map .mark { fill: var(--paper); stroke: var(--cobalt); stroke-width: 1.5; vector-effect: non-scaling-stroke; cursor: pointer; }
 .map .mark:hover { fill: var(--cobalt-faint); }
+/* An event placed no more precisely than a region or a state (M80). The width
+   is the layer's — half again a city's — and this is the other half of it: a
+   dashed, lighter ring over a fill that lets the ground through, so that the
+   mark reads as *somewhere in here* rather than as a pin dropped on a capital.
+   Nothing new is spent on it: the same cobalt, the same stroke, at a lower
+   opacity, which is how the atlas has said "less sure" since M73. Before the
+   emphasis rules below, so a coarse mark that is selected or walked is drawn
+   in madder like any other and keeps only its width. */
+.map .mark.coarse {
+  stroke: var(--cobalt-soft); stroke-dasharray: 3 2; fill-opacity: 0.35;
+}
 /* The events of the selected actor. Cobalt and heavier, never madder:
    the accent belongs to the path being followed, and the two emphases
    must not be confused with one another. */
@@ -1086,6 +1097,21 @@ body:not(.phone) .layout.panel-empty.composing {
 .graph .edge-head.converging { fill: var(--cobalt); }
 .graph .edge.chain { stroke: var(--madder); stroke-width: 2.4; }
 .graph .edge-head.chain { fill: var(--madder); }
+/* The link the reader has opened (M80). Madder and heavier than the walked
+   chain, and last of the three so it wins over every one of them: a line being
+   *read* is the one thing on this picture the panel is about, and the accent
+   has meant "the one you are holding" since the chain first took it. It keeps
+   its type's dash pattern and its confidence's ink, because what kind of claim
+   it is and how sure the atlas is of it are not what choosing it changed. */
+.graph .edge.chosen { stroke: var(--madder); stroke-width: 3; opacity: 1; }
+.graph .edge-head.chosen { fill: var(--madder); }
+/* A line that stands for one link is a control, so it says so to the pointer
+   and takes the focus ring like every other. `pointer-events` stays off it:
+   which line a click means is decided by distance in graph-view.js, the way
+   which mark it means always has been, so nothing here has to be wide enough
+   to hit. */
+.graph .edge[data-edge] { cursor: pointer; }
+.graph .edge[data-edge]:focus-visible { stroke: var(--madder); }
 
 .graph .node { fill: var(--paper); stroke: var(--cobalt); stroke-width: 1.5; vector-effect: non-scaling-stroke; cursor: pointer; }
 .graph .node:hover { fill: var(--cobalt-faint); }
@@ -1390,9 +1416,18 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   margin-top: 0; padding-top: 0; border-top: 0;
 }
 .panel .event-head h2, .panel .actor-head h2, .panel .place-head h2,
-.panel .source-head h2, .panel .narrative-head h2, .panel .cluster-list h2 {
+.panel .source-head h2, .panel .narrative-head h2, .panel .cluster-list h2,
+.panel .edge-card-head h2 {
   font-size: var(--text-xl); margin-top: 0; padding-top: 0; border-top: 0; line-height: var(--leading-tight);
 }
+/* The link's card (M80). Its heading is the type — "enabled" — because that is
+   what kind of claim the record makes, and the two events it runs between are
+   the line under it, in the order the record writes them. No new size and no
+   new colour: the ends are the same event control every list uses and the
+   confidence is the same badge. */
+.panel .link-ends { margin: var(--space-1) 0 var(--space-2); display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2); }
+.panel .link-ends .arrow { color: var(--ink-soft); font-size: var(--text-sm); }
+.panel .confidence-hint { color: var(--ink-soft); }
 .panel .meta { color: var(--ink-soft); margin: 0; font-size: var(--text-sm); }
 .panel .count { color: var(--ink-soft); font-size: var(--text-sm); font-variant-numeric: tabular-nums; }
 .panel .muted { color: var(--ink-soft); }
@@ -1581,7 +1616,17 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   padding-left: 1.25rem; text-indent: -1.25rem;
 }
 .panel .citation:first-child { border-top: 0; }
-.panel .citation .identifiers { color: var(--ink-soft); font-size: var(--text-sm); display: block; text-indent: 0; font-family: var(--font-ui); }
+/* `overflow-wrap` because a catalogue's search URL is one unbroken word a
+   hundred and forty characters long, and an unbreakable word wider than the
+   column does not wrap — it runs off the right of the panel and takes the
+   citation's own text with it. Only ever seen on a card whose sources section
+   is open, which was nothing that opened by itself until the link's card did
+   (M80). Anywhere, not break-word: these are URLs and there is no word in one
+   to keep whole. */
+.panel .citation .identifiers {
+  color: var(--ink-soft); font-size: var(--text-sm); display: block; text-indent: 0;
+  font-family: var(--font-ui); overflow-wrap: anywhere;
+}
 .panel .citation.missing, .panel .unsafe-url { color: var(--madder); }
 .panel code { font-size: 0.85em; background: var(--ground); padding: 0 0.25rem; border-radius: 2px; }
 
