@@ -9,17 +9,25 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "participants-from-p710",
+      "summary-from-lead"
     ],
-    "status": "draft"
+    "status": "draft",
+    "note": "Wikidata Q1413732 names 3 participants (P710) and the atlas holds an actor for 2 of them, so this list is partial: 1 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
   "origin": {
     "tool": "wikidata"
@@ -41,17 +49,32 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Kashmir conflict\", revision 1374133428, lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kashmir conflict\", revision 1374133428"
     }
   ],
   "title": "Kashmir conflict",
-  "summary": "Wikidata item Q1413732, imported by tools/import/wikidata.mjs. The item's own description reads \"Territoral dispute in South Asia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Kashmir conflict\", at revision 1374133428, opens: \"The Kashmir conflict is a territorial conflict over the Kashmir region, primarily between India and Pakistan, and also between China and India in the northeastern portion of the region. The conflict started after the partition of India in 1947 as both India and Pakistan claimed the entirety of the former princely state of Jammu and Kashmir. It is a dispute over the region that escalated into three wars between India and Pakistan and several other armed skirmishes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1413732, imported by tools/import/wikidata.mjs. The item's own description reads \"Territoral dispute in South Asia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1947,
     "end": null
   },
-  "place": null,
+  "place": "kashmir",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "pakistan",
+      "role": "belligerent",
+      "note": "Wikidata Q1413732, P710 (participant), Q843"
+    },
+    {
+      "actor": "republic-of-india",
+      "role": "belligerent",
+      "note": "Wikidata Q1413732, P710 (participant), Q668"
+    }
+  ]
 }

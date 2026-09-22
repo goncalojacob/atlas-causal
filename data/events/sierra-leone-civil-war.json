@@ -9,16 +9,22 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,17 +43,21 @@
     {
       "source": "wikidata",
       "locator": "Q795269"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sierra Leone Civil War\", revision 1375466974"
     }
   ],
   "title": "Sierra Leone Civil War",
-  "summary": "Wikidata item Q795269, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war between Commonwealth-backed government and rebel factions\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Sierra Leone Civil War\", at revision 1375466974, opens: \"The Sierra Leone Civil War (1991–2002) was a civil war in Sierra Leone that began on 23 March 1991 when the Revolutionary United Front (RUF), with support from the special forces of Liberian dictator Charles Taylor, the National Patriotic Front of Liberia (NPFL), intervened in Sierra Leone in an attempt to overthrow the Joseph Momoh government. The resulting civil war lasted almost 11 years, and had over 50,000, up to 70,000, casualties in total; an estimated 2.5 million people were displaced during the conflict, and widespread atrocities occurred.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q795269, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war between Commonwealth-backed government and rebel factions\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1991,
     "end": 2002,
     "date": "1991-03-23",
     "endDate": "2002-01-18"
   },
-  "place": null,
+  "place": "sierra-leone-q1044",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

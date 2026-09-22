@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
@@ -37,16 +43,20 @@
     {
       "source": "wikidata",
       "locator": "Q847137"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Paris (1898)\", revision 1375676698"
     }
   ],
   "title": "Treaty of Paris (1898)",
-  "summary": "Wikidata item Q847137, imported by tools/import/wikidata.mjs. The item's own description reads \"December 1898 peace treaty of the Spanish-American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Treaty of Paris (1898)\", at revision 1375676698, opens: \"The Treaty of Peace between the United States of America and the Kingdom of Spain, commonly known as the Treaty of Paris of 1898, was signed by Spain and the United States on December 10, 1898, and marked the official end of the Spanish–American War. Under it, Spain relinquished all claim of sovereignty over the West Indies archipelagos and islands of Cuba and Puerto Rico in the Caribbean, the Western Pacific island of Guam in the Mariana Islands in Micronesia, and the Western Pacific archipelago of the Philippines in Southeast Asia to the United States. The cession of the Philippines involved a compensation of $20 million from the United States to Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q847137, imported by tools/import/wikidata.mjs. The item's own description reads \"December 1898 peace treaty of the Spanish-American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1898,
     "end": 1898,
     "date": "1898-12-10"
   },
-  "place": null,
+  "place": "paris",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "spanish-american-war-1898",

@@ -9,13 +9,29 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-17",
+  "revised": "2026-09-22",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m55-germany",
+      "polity-description"
+    ],
+    "note": "M55: this record began in 1945, where CShapes begins drawing entity 260 — the German surrender, not a founding. It now begins 1949-05-23, which is Wikidata’s P571 on Q713750 (West Germany) and also the preferred P571 on Q183 (Germany); the citation is to Q713750, whose item covers exactly the state this record’s first CShapes periods draw. Its 1945–1949 period is flagged m55-gap: what held that ground was the Allied occupation, and the atlas has no record for it."
+  },
   "origin": {
     "tool": "cshapes"
+  },
+  "wikidata": "Q183",
+  "wikipedia": {
+    "en": "Germany"
   },
   "sources": [
     {
@@ -25,13 +41,21 @@
     {
       "source": "wikidata",
       "locator": "Q713750, P571 1949-05-23"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q183, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Germany\", revision 1375450754"
     }
   ],
   "actorType": "polity",
   "names": [
     "German Federal Republic"
   ],
-  "summary": "Entity 260 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1945 to where the dataset stops, in 2019. Its last capital in the dataset is Berlin. This record was written by the import from those fields and asserts nothing the dataset does not. M55 moved its inception from 1945, which is where CShapes starts drawing entity 260, to 1949-05-23, which Wikidata states as P571 on Q713750 and as the preferred P571 on Q183. The period the dataset draws from 1945 to 1949 is kept and flagged: the ground was under Allied occupation and this atlas holds no record for that.",
+  "summary": "Approximately 357,588 km² and about 83.6 million people (2024), from Wikidata's Q183 (P2046, P1082). The English Wikipedia article \"Germany\", at revision 1375450754, opens: \"Germany, officially the Federal Republic of Germany, is a country in Western and Central Europe. It lies between the Baltic Sea and the North Sea to the north with the Alps to the south. Its 16 constituent states have a total population of over 83 million, making it the most populous member state of the European Union (EU).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 260 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1945 to where the dataset stops, in 2019. Its last capital in the dataset is Berlin. This record was written by the import from those fields and asserts nothing the dataset does not. M55 moved its inception from 1945, which is where CShapes starts drawing entity 260, to 1949-05-23, which Wikidata states as P571 on Q713750 and as the preferred P571 on Q183. The period the dataset draws from 1945 to 1949 is kept and flagged: the ground was under Allied occupation and this atlas holds no record for that.",
   "when": {
     "start": 1949,
     "end": null
@@ -41,12 +65,5 @@
     "lat": 52.51667,
     "precision": "city",
     "label": "Berlin"
-  },
-  "review": {
-    "status": "draft",
-    "flags": [
-      "m55-germany"
-    ],
-    "note": "M55: this record began in 1945, where CShapes begins drawing entity 260 — the German surrender, not a founding. It now begins 1949-05-23, which is Wikidata’s P571 on Q713750 (West Germany) and also the preferred P571 on Q183 (Germany); the citation is to Q713750, whose item covers exactly the state this record’s first CShapes periods draw. Its 1945–1949 period is flagged m55-gap: what held that ground was the Allied occupation, and the atlas has no record for it."
   }
 }

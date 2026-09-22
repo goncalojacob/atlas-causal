@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-05",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q545449",
-  "sitelinks": {
-    "count": 95,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q545449",
   "wikipedia": {
     "en": "Iraq War",
     "pt": "Guerra do Iraque"
+  },
+  "sitelinks": {
+    "count": 95,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -59,7 +60,7 @@
     "date": "2003-03-20",
     "endDate": "2011-12-15"
   },
-  "place": null,
+  "place": "iraq-q796",
   "region": "asia",
   "actors": [
     {

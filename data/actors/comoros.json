@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q970",
+  "wikipedia": {
+    "en": "Comoros"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 581"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q970, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Comoros\", revision 1374640464"
     }
   ],
   "actorType": "polity",
   "names": [
     "Comoros"
   ],
-  "summary": "Entity 581 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1975 to where the dataset stops, in 2019. Its last capital in the dataset is Moroni. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1975-07-06. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 2,034 km² and about 902,348 people (2022), from Wikidata's Q970 (P2046, P1082). The English Wikipedia article \"Comoros\", at revision 1374640464, opens: \"The Comoros, officially the Union of the Comoros, is an archipelagic country made up of three islands in Southeast Africa, located at the northern end of the Mozambique Channel in the Indian Ocean. Its capital and largest city is Moroni. The predominant religion of the population—and the official state religion—is Islam.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 581 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1975 to where the dataset stops, in 2019. Its last capital in the dataset is Moroni. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1975-07-06. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1975,
     "end": null

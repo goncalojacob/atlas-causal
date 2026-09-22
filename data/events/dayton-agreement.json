@@ -9,44 +9,54 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
-  "wikidata": "Q190315",
-  "sitelinks": {
-    "count": 52,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q190315",
   "wikipedia": {
     "en": "Dayton Agreement",
     "pt": "Acordo de Dayton"
+  },
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-09-15"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q190315"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dayton Agreement\", revision 1374959286"
     }
   ],
   "title": "Dayton Agreement",
-  "summary": "Wikidata item Q190315, imported by tools/import/wikidata.mjs. The item's own description reads \"late-1995 treaty ending the Bosnian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Dayton Agreement\", at revision 1374959286, opens: \"The General Framework Agreement for Peace in Bosnia and Herzegovina, also known as the Dayton Agreement or the Dayton Accords, and colloquially known as the Dayton, is the peace agreement ending the three-and-a-half-year-long Bosnian War, an armed conflict part of the larger Yugoslav Wars. It was signed on 21 November 1995 in Dayton, Ohio, United States, at Wright-Patterson Air Force Base. It was re-signed ceremonially in Paris, France, on 14 December 1995.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q190315, imported by tools/import/wikidata.mjs. The item's own description reads \"late-1995 treaty ending the Bosnian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1995,
     "end": 1995,
     "date": "1995-12-14"
   },
-  "place": null,
+  "place": "wright-patterson-air-force-base",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

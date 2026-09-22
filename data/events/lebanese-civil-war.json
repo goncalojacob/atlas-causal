@@ -17,25 +17,27 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-05",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place",
+      "filed-from-p361"
     ]
   },
-  "wikidata": "Q208484",
-  "sitelinks": {
-    "count": 61,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q208484",
   "wikipedia": {
     "en": "Lebanese Civil War",
     "pt": "Guerra Civil Libanesa"
+  },
+  "sitelinks": {
+    "count": 61,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -59,7 +61,7 @@
     "date": "1975-04-13",
     "endDate": "1990-10-13"
   },
-  "place": null,
+  "place": "lebanon-q822",
   "region": "asia",
   "actors": [
     {

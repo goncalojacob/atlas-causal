@@ -9,46 +9,56 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "m40-retracted",
       "standing-backfilled",
-      "imported-by-wikidata"
+      "imported-by-wikidata",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q131297",
-  "sitelinks": {
-    "count": 81,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q131297",
   "wikipedia": {
     "en": "Rwandan genocide",
     "pt": "Genocídio em Ruanda"
+  },
+  "sitelinks": {
+    "count": 81,
+    "on": "2026-09-05"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q131297"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rwandan genocide\", revision 1376069741"
     }
   ],
   "title": "1994 Genocide against Tutsi",
-  "summary": "Wikidata item Q131297, imported by tools/import/wikidata.mjs. The item's own description reads \"1994 genocide against the Tutsi in Rwanda in which 800,000 were killed\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Rwandan genocide\", at revision 1376069741, opens: \"The Rwandan genocide, also known as the genocide against Tutsi, occurred from 7 April to 19 July 1994 during the Rwandan Civil War. Over a span of around 100 days, members of the Tutsi ethnic group, as well as some moderate Hutu and Twa, were systematically killed by Hutu militias. While the Rwandan Constitution states that over 1 million people were killed, most scholarly estimates suggest between 500,000 and 662,000 Tutsi died.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q131297, imported by tools/import/wikidata.mjs. The item's own description reads \"1994 genocide against the Tutsi in Rwanda in which 800,000 were killed\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1994,
     "end": 1994,
     "endDate": "1994-07-04"
   },
-  "place": null,
+  "place": "rwanda-q1037",
   "region": "africa",
   "actors": []
 }

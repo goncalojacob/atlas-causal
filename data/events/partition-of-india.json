@@ -9,43 +9,53 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q129053",
-  "sitelinks": {
-    "count": 74,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q129053",
   "wikipedia": {
     "en": "Partition of India",
     "pt": "Partição da Índia"
+  },
+  "sitelinks": {
+    "count": 74,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q129053"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Partition of India\", revision 1374133022"
     }
   ],
   "title": "partition of India",
-  "summary": "Wikidata item Q129053, imported by tools/import/wikidata.mjs. The item's own description reads \"1947 Partition of British India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Partition of India\", at revision 1374133022, opens: \"The partition of India in 1947 was the division of British India into two independent dominion states, the Union of India and Dominion of Pakistan. The Union of India is today the Republic of India, and the Dominion of Pakistan is the Islamic Republic of Pakistan and the People's Republic of Bangladesh. The partition involved the division of two provinces, Bengal and the Punjab, based on district-wide non-Muslim or Muslim majorities.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q129053, imported by tools/import/wikidata.mjs. The item's own description reads \"1947 Partition of British India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1947,
     "end": 1947,
     "date": "1947-08-15"
   },
-  "place": null,
+  "place": "british-raj-q129286",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

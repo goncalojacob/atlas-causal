@@ -9,20 +9,29 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-16",
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "m51-split"
+      "m51-split",
+      "polity-description"
     ],
     "note": "M51: split from ottoman-empire, which held this ground until Wikidata's P576 1922-11-17 on Q12560. This record begins there and keeps entity 640's last period; the eight before it moved to ottoman-empire, each to whoever held it when it began, because CShapes draws no boundary on that day. names[0] drops \"(Ottoman Empire)\", which this record no longer covers."
   },
   "origin": {
     "tool": "cshapes"
+  },
+  "wikidata": "Q43",
+  "wikipedia": {
+    "en": "Turkey"
   },
   "sources": [
     {
@@ -32,6 +41,14 @@
     {
       "source": "wikidata",
       "locator": "Q12560, P576 1922-11-17"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q43, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Turkey\", revision 1375978925"
     }
   ],
   "actorType": "polity",
@@ -39,7 +56,7 @@
     "Turkey",
     "Turkey (Ottoman Empire)"
   ],
-  "summary": "Entity 640 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives entity 640 nine periods of territorial validity, from 1886 to where the dataset stops, in 2019; M51 left the first eight of them with `ottoman-empire` and this record holds the last. Its last capital in the dataset is Ankara. This record was written by the import from those fields. It begins in 1922 because that is the dissolution Wikidata states for Q12560, the Ottoman Empire, and not because the dataset says so.",
+  "summary": "Approximately 783,562 km² and about 85.4 million people (2023), from Wikidata's Q43 (P2046, P1082). The English Wikipedia article \"Turkey\", at revision 1375978925, opens: \"Turkey, officially the Republic of Türkiye, is a country mainly located in Anatolia in West Asia, with a smaller part called East Thrace in Southeast Europe. It borders the Black Sea to the north; Georgia, Armenia, Azerbaijan, and Iran to the east; Iraq, Syria, and the Mediterranean Sea to the south; and the Aegean Sea, Greece, and Bulgaria to the west. Turkey is home to over 86 million people; most are ethnic Turks, while Kurds are the largest ethnic minority.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 640 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives entity 640 nine periods of territorial validity, from 1886 to where the dataset stops, in 2019; M51 left the first eight of them with `ottoman-empire` and this record holds the last. Its last capital in the dataset is Ankara. This record was written by the import from those fields. It begins in 1922 because that is the dissolution Wikidata states for Q12560, the Ottoman Empire, and not because the dataset says so.",
   "when": {
     "start": 1922,
     "end": null

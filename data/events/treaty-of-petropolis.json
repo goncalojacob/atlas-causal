@@ -13,24 +13,27 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "a9-place",
+      "participants-from-p710"
+    ],
+    "note": "Wikidata Q1122547 names 2 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 1 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q1122547",
-  "sitelinks": {
-    "count": 18,
-    "on": "2026-09-21"
-  },
   "wikipedia": {
     "en": "Treaty of Petrópolis",
     "pt": "Tratado de Petrópolis"
+  },
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -45,9 +48,15 @@
     "end": 1903,
     "date": "1903-11-11"
   },
-  "place": null,
+  "place": "petropolis",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "treaty",
-  "actors": []
+  "actors": [
+    {
+      "actor": "bolivia",
+      "role": "signatory",
+      "note": "Wikidata Q1122547, P710 (participant), Q750"
+    }
+  ]
 }

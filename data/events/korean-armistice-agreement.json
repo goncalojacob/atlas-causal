@@ -9,46 +9,56 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q2862267",
-  "sitelinks": {
-    "count": 25,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q2862267",
   "wikipedia": {
     "en": "Korean Armistice Agreement",
     "pt": "Acordo de Armistício Coreano"
+  },
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q2862267"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Korean Armistice Agreement\", revision 1370487806"
     }
   ],
   "title": "Korean Armistice Agreement",
-  "summary": "Wikidata item Q2862267, imported by tools/import/wikidata.mjs. The item's own description reads \"armistice signed July 27, 1953 ending hostilities in Korean War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Korean Armistice Agreement\", at revision 1370487806, opens: \"The Korean Armistice Agreement is an armistice that brought about a cessation of hostilities of the Korean War. It was signed by United States Army Lieutenant General William Harrison Jr. and General Mark W. Clark representing the United Nations Command (UNC), North Korea leader Kim Il Sung and General Nam Il representing the Korean People's Army (KPA), and Peng Dehuai representing the Chinese People's Volunteer Army (PVA).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2862267, imported by tools/import/wikidata.mjs. The item's own description reads \"armistice signed July 27, 1953 ending hostilities in Korean War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1953,
     "end": 1953,
     "date": "1953-07-27"
   },
-  "place": null,
+  "place": "panmunjom",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "korean-war",
   "category": "treaty",
-  "actors": [],
-  "parent": "korean-war"
+  "actors": []
 }

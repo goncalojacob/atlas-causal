@@ -17,39 +17,45 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m67-lined"
+      "m67-lined",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q1368440",
-  "sitelinks": {
-    "count": 34,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1368440",
   "wikipedia": {
     "en": "Constitutionalization attempts in Iran",
     "pt": "Revolução Constitucional Persa"
+  },
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-09-15"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q1368440"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Constitutionalization attempts in Iran\", revision 1354003965"
     }
   ],
   "title": "Constitutionalization attempts in Iran",
-  "summary": "Wikidata item Q1368440, imported by tools/import/wikidata.mjs. The item's own description reads \"a movement for the Constitution of Iran monarchy in 1905 to 1909\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Constitutionalization attempts in Iran\", at revision 1354003965, opens: \"The Iranian Constitutional Revolution was a short-lived push for democratic rule in the form of a constitutional monarchy within a highly elitist yet decentralized society under the Qajars. The mounting disgust amidst the clergy, bazaaris, farmers, intellectuals, and other segments of the populace with respect to the Shah, policies during the end of the 19th and beginning of the 20th century illustrates a classic example of an environment ripe for protest, as a wide array of people in society felt an increasing need to express their grievances with an oppressive and largely autocratic government.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1368440, imported by tools/import/wikidata.mjs. The item's own description reads \"a movement for the Constitution of Iran monarchy in 1905 to 1909\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1905,
     "end": 1911
   },
-  "place": null,
+  "place": "iran",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": [

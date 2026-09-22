@@ -18,26 +18,27 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-22",
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "m22-reinstated"
+      "m22-reinstated",
+      "a9-place"
     ],
     "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
   },
-  "wikidata": "Q7232751",
-  "sitelinks": {
-    "count": 3,
-    "on": "2026-09-04"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q7232751",
   "wikipedia": {
     "en": "1921 Portuguese legislative election",
     "pt": "Eleições legislativas portuguesas de 1921"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-04"
   },
   "sources": [
     {
@@ -68,7 +69,7 @@
     "end": 1921,
     "date": "1921-07-10"
   },
-  "place": null,
+  "place": "portugal-q45",
   "region": "europe",
   "parent": [
     "first-portuguese-republic-1910-1926",

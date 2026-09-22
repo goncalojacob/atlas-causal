@@ -9,43 +9,53 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q207950",
-  "sitelinks": {
-    "count": 39,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q207950",
   "wikipedia": {
     "en": "2011 South Sudanese independence referendum",
     "pt": "Referendo sobre a independência do Sudão do Sul em 2011"
+  },
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q207950"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2011 South Sudanese independence referendum\", revision 1362366338"
     }
   ],
   "title": "2011 South Sudanese independence referendum",
-  "summary": "Wikidata item Q207950, imported by tools/import/wikidata.mjs. The item's own description reads \"independence referendum\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"2011 South Sudanese independence referendum\", at revision 1362366338, opens: \"A referendum took place in Southern Sudan from 9 to 15 January 2011, on whether the region should remain a part of Sudan or become independent. The referendum was one of the consequences of the 2005 Naivasha Agreement between the Khartoum central government and the Sudan People's Liberation Army/Movement (SPLA/M).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q207950, imported by tools/import/wikidata.mjs. The item's own description reads \"independence referendum\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2011,
     "end": 2011,
     "date": "2011-01-15"
   },
-  "place": null,
+  "place": "south-sudan-q958",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "election",

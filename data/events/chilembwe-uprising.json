@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,16 +41,20 @@
     {
       "source": "wikidata",
       "locator": "Q16056284"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chilembwe uprising\", revision 1375916516"
     }
   ],
   "title": "Chilembwe Uprising",
-  "summary": "Wikidata item Q16056284, imported by tools/import/wikidata.mjs. The item's own description reads \"challenge to European power in Nyasaland Protectorate in early 1915, led by the Reverend John Chilembwe.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Chilembwe uprising\", at revision 1375916516, opens: \"The Chilembwe uprising was a rebellion against British colonial rule in Nyasaland which took place in January 1915. It was led by John Chilembwe, an American-educated Baptist minister. Based around his church in the village of Mbombwe in the south-east of the colony, the leaders of the revolt were mainly from an emerging black middle class.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16056284, imported by tools/import/wikidata.mjs. The item's own description reads \"challenge to European power in Nyasaland Protectorate in early 1915, led by the Reverend John Chilembwe.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1915,
     "end": 1915,
     "date": "1915-01"
   },
-  "place": null,
+  "place": "nyasaland",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "world-war-i",

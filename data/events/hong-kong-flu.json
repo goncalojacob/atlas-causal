@@ -9,37 +9,46 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q1069785",
-  "sitelinks": {
-    "count": 32,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1069785",
   "wikipedia": {
     "en": "Hong Kong flu",
     "pt": "Gripe de Hong Kong"
+  },
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q1069785"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hong Kong flu\", revision 1362933012"
     }
   ],
   "title": "Hong Kong flu",
-  "summary": "Wikidata item Q1069785, imported by tools/import/wikidata.mjs. The item's own description reads \"1968—1970 flu pandemic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Hong Kong flu\", at revision 1362933012, opens: \"The Hong Kong flu, also known as the 1968 flu pandemic, was an influenza pandemic that occurred between 1968 and 1970 and which killed between one and four million people globally. It is among the deadliest pandemics in history, and was caused by an H3N2 strain of the influenza A virus. The virus was descended from H2N2 through antigenic shift, a genetic process in which genes from multiple subtypes are reassorted to form a new virus.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1069785, imported by tools/import/wikidata.mjs. The item's own description reads \"1968—1970 flu pandemic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1968,
     "end": 1970,

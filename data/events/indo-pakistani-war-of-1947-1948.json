@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,16 +42,20 @@
     {
       "source": "wikidata",
       "locator": "Q652285"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"India–Pakistan war of 1947–1948\", revision 1373782125"
     }
   ],
   "title": "Indo-Pakistani War of 1947–1948",
-  "summary": "Wikidata item Q652285, imported by tools/import/wikidata.mjs. The item's own description reads \"1947–1948 war between India and Pakistam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"India–Pakistan war of 1947–1948\", at revision 1373782125, opens: \"The India–Pakistan war of 1947–1948, also known as the first Kashmir war, was a war fought between India and Pakistan over the princely state of Jammu and Kashmir from 1947 to 1948. It was the first of the India–Pakistan wars between the two newly independent nations; both were dominions within the British Commonwealth of Nations. Pakistan precipitated the war a few weeks after its independence by launching tribal lashkar (militias) from Waziristan, in an effort to capture Kashmir and to preempt the possibility of its ruler joining India.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q652285, imported by tools/import/wikidata.mjs. The item's own description reads \"1947–1948 war between India and Pakistam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1947,
     "end": 1949,
     "endDate": "1949-01-01"
   },
-  "place": null,
+  "place": "jammu-and-kashmir-q2571484",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "kashmir-conflict",

@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q1029",
+  "wikipedia": {
+    "en": "Mozambique"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 541"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1029, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mozambique\", revision 1373239987"
     }
   ],
   "actorType": "polity",
   "names": [
     "Mozambique"
   ],
-  "summary": "Entity 541 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1975 to where the dataset stops, in 2019. Its last capital in the dataset is Maputo. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1975-06-25. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 801,590 km² and about 29.7 million people (2017), from Wikidata's Q1029 (P2046, P1082). The English Wikipedia article \"Mozambique\", at revision 1373239987, opens: \"Mozambique, officially the Republic of Mozambique, is a country in Southeast Africa bordered by the Indian Ocean to the east, Tanzania to the north, Malawi and Zambia to the northwest, Zimbabwe to the west, and Eswatini and South Africa to the south and southwest. The sovereign state is separated from the Comoros, Mayotte, and Madagascar through the Mozambique Channel to the east. The capital and largest city is Maputo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 541 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1975 to where the dataset stops, in 2019. Its last capital in the dataset is Maputo. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1975-06-25. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1975,
     "end": null

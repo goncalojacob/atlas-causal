@@ -17,40 +17,46 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m67-lined"
+      "m67-lined",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q856670",
-  "sitelinks": {
-    "count": 49,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q856670",
   "wikipedia": {
     "en": "1973 Chilean coup d'état",
     "pt": "Golpe de Estado no Chile em 1973"
+  },
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-09-15"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q856670"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1973 Chilean coup d'état\", revision 1372926646"
     }
   ],
   "title": "1973 Chilean coup d'état",
-  "summary": "Wikidata item Q856670, imported by tools/import/wikidata.mjs. The item's own description reads \"military overthrow of the Popular Unity coalition government in 1973 in Chile\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"1973 Chilean coup d'état\", at revision 1372926646, opens: \"The 1973 Chilean coup d'état was a military overthrow of the socialist president of Chile Salvador Allende and his Popular Unity coalition government. Allende, who was the first Marxist to be democratically elected president in a Latin American liberal democracy, faced significant social unrest and political tension with the opposition-controlled National Congress of Chile. On 11 September 1973, a group of military officers, led by General Augusto Pinochet, seized power in a coup, ending civilian rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q856670, imported by tools/import/wikidata.mjs. The item's own description reads \"military overthrow of the Popular Unity coalition government in 1973 in Chile\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1973,
     "end": 1973,
     "date": "1973-09-11"
   },
-  "place": null,
+  "place": "chile-q298",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "revolution",

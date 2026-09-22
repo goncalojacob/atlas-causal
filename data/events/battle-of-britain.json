@@ -9,16 +9,24 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "a9-place",
+      "participants-from-p710",
+      "summary-from-lead"
+    ],
+    "note": "Wikidata Q154720 names 5 participants (P710) and the atlas holds an actor for 3 of them, so this list is partial: 2 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
   "origin": {
     "tool": "wikidata"
@@ -36,19 +44,39 @@
     {
       "source": "wikidata",
       "locator": "Q154720"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Britain\", revision 1371887266"
     }
   ],
   "title": "Battle of Britain",
-  "summary": "Wikidata item Q154720, imported by tools/import/wikidata.mjs. The item's own description reads \"air battle waged between German and British air forces in 1940\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Battle of Britain\", at revision 1371887266, opens: \"The Battle of Britain was a military campaign of the Second World War, in which the Royal Air Force (RAF) and the Fleet Air Arm (FAA) of the Royal Navy defended the United Kingdom against large-scale attacks by Nazi Germany's air force, the Luftwaffe. It was the first major military campaign fought entirely by air forces. It takes its name from the speech given by Prime Minister Winston Churchill to the House of Commons on 18 June 1940: \"What General Weygand called the 'Battle of France' is over.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q154720, imported by tools/import/wikidata.mjs. The item's own description reads \"air battle waged between German and British air forces in 1940\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1940,
     "end": 1940,
     "endDate": "1940-10-31"
   },
-  "place": null,
+  "place": "united-kingdom-q145",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "world-war-ii",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent",
+      "note": "Wikidata Q154720, P710 (participant), Q145"
+    },
+    {
+      "actor": "canada",
+      "role": "belligerent",
+      "note": "Wikidata Q154720, P710 (participant), Q16"
+    },
+    {
+      "actor": "australia",
+      "role": "belligerent",
+      "note": "Wikidata Q154720, P710 (participant), Q408"
+    }
+  ]
 }

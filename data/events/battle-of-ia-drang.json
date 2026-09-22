@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "battle-of-ia-drang",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "participants-from-p710",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q714749",
+  "wikipedia": {
+    "en": "Battle of Ia Drang",
+    "pt": "Batalha de Ia Drang"
+  },
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q714749"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ia Drang\", revision 1370265925"
+    }
+  ],
+  "title": "Battle of Ia Drang",
+  "summary": "The English Wikipedia article \"Battle of Ia Drang\", at revision 1370265925, opens: \"The Battle of Ia Drang was the first major battle between the United States Army and the People's Army of Vietnam (PAVN), as part of the Pleiku campaign conducted early in the Vietnam War, at the eastern foot of the Chu Pong Massif in the central highlands of Vietnam, in 1965. It is notable for being the first large scale helicopter air assault and also the first use of Boeing B-52 Stratofortress strategic bombers in a tactical support role. Ia Drang set the blueprint for the Vietnam War with the Americans relying on air mobility, artillery fire and close air support, while the PAVN neutralized that firepower by quickly engaging American forces at very close range.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q714749, imported by tools/import/wikidata.mjs. The item's own description reads \"1965 battle of the Vietnam War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1965,
+    "end": 1965,
+    "date": "1965-11-14",
+    "endDate": "1965-11-18"
+  },
+  "place": "ia-drang-river",
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "vietnam-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent",
+      "note": "Wikidata Q714749, P710 (participant), Q30"
+    }
+  ]
+}

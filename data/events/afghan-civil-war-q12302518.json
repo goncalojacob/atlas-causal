@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,17 +42,21 @@
     {
       "source": "wikidata",
       "locator": "Q12302518"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Afghan Civil War (1996–2001)\", revision 1374360605"
     }
   ],
   "title": "Afghan Civil War",
-  "summary": "Wikidata item Q12302518, imported by tools/import/wikidata.mjs. The item's own description reads \"1996-2001 military conflict in Afghanistan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Afghan Civil War (1996–2001)\", at revision 1374360605, opens: \"The 1996–2001 Afghan Civil War, also known as the Third Afghan Civil War, took place between the Taliban's conquest of Kabul and their establishing of the Islamic Emirate of Afghanistan on 27 September 1996, and the U.S. invasion of Afghanistan on 7 October 2001: a period that was part of the Afghan Civil Wars that had started in 1989, and also part of the conflict in Afghanistan that had started in 1978.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12302518, imported by tools/import/wikidata.mjs. The item's own description reads \"1996-2001 military conflict in Afghanistan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1996,
     "end": 2001,
     "date": "1996-09-27",
     "endDate": "2001-10-07"
   },
-  "place": null,
+  "place": "afghanistan-q889",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "afghan-conflict",

@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-17",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q15860072",
-  "sitelinks": {
-    "count": 110,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q15860072",
   "wikipedia": {
     "en": "Russo-Ukrainian war",
     "pt": "Guerra Russo-Ucraniana"
+  },
+  "sitelinks": {
+    "count": 110,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -58,7 +59,7 @@
     "end": null,
     "date": "2014-02-20"
   },
-  "place": null,
+  "place": "sea-of-azov",
   "region": "europe",
   "actors": [
     {

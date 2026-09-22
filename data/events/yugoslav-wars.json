@@ -9,45 +9,55 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
-  "wikidata": "Q242352",
-  "sitelinks": {
-    "count": 59,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q242352",
   "wikipedia": {
     "en": "Yugoslav Wars",
     "pt": "Guerra Civil Iugoslava"
+  },
+  "sitelinks": {
+    "count": 59,
+    "on": "2026-09-15"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q242352"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Yugoslav Wars\", revision 1373953860"
     }
   ],
   "title": "Yugoslav Wars",
-  "summary": "Wikidata item Q242352, imported by tools/import/wikidata.mjs. The item's own description reads \"1991–2001 series of wars and ethnic conflicts that took place on the lands of the former Yugoslavia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Yugoslav Wars\", at revision 1373953860, opens: \"The Yugoslav Wars were a series of separate but related ethnic conflicts, wars of independence, and insurgencies that took place from 1991 to 2001 in what had been the Socialist Federal Republic of Yugoslavia. The conflicts both led up to and resulted from the breakup of Yugoslavia, which began in mid-1991, into six independent countries matching the six republics that had previously constituted Yugoslavia: Slovenia, Croatia, Bosnia and Herzegovina, Montenegro, Serbia, and Macedonia, which was later renamed to North Macedonia. The breakup of Yugoslavia and the accompanying Yugoslav Wars are commonly attributed to increasing nationalism and unresolved ethnic tensions in Yugoslavia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q242352, imported by tools/import/wikidata.mjs. The item's own description reads \"1991–2001 series of wars and ethnic conflicts that took place on the lands of the former Yugoslavia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1991,
     "end": 2001,
     "date": "1991-03-31",
     "endDate": "2001-08-13"
   },
-  "place": null,
+  "place": "yugoslavia-q36704",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

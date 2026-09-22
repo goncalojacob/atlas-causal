@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "korea-strait",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q52052",
+  "wikipedia": {
+    "en": "Korea Strait"
+  },
+  "sources": [],
+  "names": [
+    "Korea Strait",
+    "Strait of Korea",
+    "Corea Strait",
+    "Strait of Corea",
+    "Korea Str."
+  ],
+  "where": {
+    "lon": 129.79667,
+    "lat": 34.59944,
+    "precision": "region",
+    "label": "Korea Strait"
+  },
+  "region": null,
+  "summary": null
+}

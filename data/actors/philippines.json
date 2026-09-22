@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q928",
+  "wikipedia": {
+    "en": "Philippines"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 840"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q928, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Philippines\", revision 1376138212"
     }
   ],
   "actorType": "polity",
   "names": [
     "Philippines"
   ],
-  "summary": "Entity 840 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1946 to where the dataset stops, in 2019. Its last capital in the dataset is Manila. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1946-07-04. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 343,448 km² and about 112.7 million people (2024), from Wikidata's Q928 (P2046, P1082). The English Wikipedia article \"Philippines\", at revision 1376138212, opens: \"The Philippines, officially the Republic of the Philippines, is an archipelagic country in Southeast Asia. Located in the western Pacific Ocean, it consists of about 7,641 islands, with a total area of about 300,000 square kilometers. The islands are broadly categorized in three main geographical divisions.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 840 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1946 to where the dataset stops, in 2019. Its last capital in the dataset is Manila. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1946-07-04. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1946,
     "end": null

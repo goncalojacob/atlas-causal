@@ -9,46 +9,74 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "a9-place",
+      "participants-from-p710",
+      "summary-from-lead"
+    ],
+    "note": "Wikidata Q152925 names 7 participants (P710) and the atlas holds an actor for 3 of them, so this list is partial: 4 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q152925",
-  "sitelinks": {
-    "count": 45,
-    "on": "2026-09-21"
-  },
   "wikipedia": {
     "en": "Locarno Treaties",
     "pt": "Tratados de Locarno"
+  },
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q152925"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Locarno Treaties\", revision 1376158350"
     }
   ],
   "title": "Locarno Treaties",
-  "summary": "Wikidata item Q152925, imported by tools/import/wikidata.mjs. The item's own description reads \"multilateral treaties negotiated in Locarno, Switzerland during October 1925\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Locarno Treaties\", at revision 1376158350, opens: \"The Locarno Treaties, known collectively as the Locarno Pact, were seven post–World War I agreements negotiated amongst Germany, France, Great Britain, Belgium, Italy, Poland and Czechoslovakia in late 1925. In the main treaty, the five western European nations pledged to guarantee the inviolability of the borders between Germany and France and Germany and Belgium as defined in the Treaty of Versailles. They also promised to observe the demilitarized zone of the German Rhineland and to resolve differences peacefully under the auspices of the League of Nations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q152925, imported by tools/import/wikidata.mjs. The item's own description reads \"multilateral treaties negotiated in Locarno, Switzerland during October 1925\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1925,
     "end": 1925,
     "date": "1925-10-16"
   },
-  "place": null,
+  "place": "locarno",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "interwar-period",
   "category": "treaty",
-  "actors": []
+  "actors": [
+    {
+      "actor": "belgium",
+      "role": "signatory",
+      "note": "Wikidata Q152925, P710 (participant), Q31"
+    },
+    {
+      "actor": "france",
+      "role": "signatory",
+      "note": "Wikidata Q152925, P710 (participant), Q142"
+    },
+    {
+      "actor": "poland",
+      "role": "signatory",
+      "note": "Wikidata Q152925, P710 (participant), Q36"
+    }
+  ]
 }

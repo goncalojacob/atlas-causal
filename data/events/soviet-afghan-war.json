@@ -17,12 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-20",
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m67-lined"
+      "m67-lined",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -41,17 +43,21 @@
     {
       "source": "wikidata",
       "locator": "Q83085"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet–Afghan War\", revision 1375699993"
     }
   ],
   "title": "Soviet-Afghan War",
-  "summary": "Wikidata item Q83085, imported by tools/import/wikidata.mjs. The item's own description reads \"1979–1989 war between the Soviet Union and Afghan insurgents\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Soviet–Afghan War\", at revision 1375699993, opens: \"The Soviet–Afghan War took place in Afghanistan from December 1979 to February 1989. Marking the beginning of the 47-year-long Afghan conflict, it saw the Soviet Union and the Communist-led Afghan military fight against the rebelling Afghan mujahideen. While backed by various countries and organizations, the majority of the mujahideen's external support came from Pakistan, the United States, the United Kingdom, China, Iran, and the Arab states of the Persian Gulf, in addition to a large influx of foreign fighters known as the Afghan Arabs.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q83085, imported by tools/import/wikidata.mjs. The item's own description reads \"1979–1989 war between the Soviet Union and Afghan insurgents\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1979,
     "end": 1989,
     "date": "1979-12-25",
     "endDate": "1989-02-15"
   },
-  "place": null,
+  "place": "democratic-republic-of-afghanistan",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "afghan-conflict",

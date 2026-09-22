@@ -9,38 +9,47 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m42-umbrella"
+      "m42-umbrella",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q179848",
-  "sitelinks": {
-    "count": 87,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q179848",
   "wikipedia": {
     "en": "Scramble for Africa",
     "pt": "Partilha de África"
+  },
+  "sitelinks": {
+    "count": 87,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q179848"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Scramble for Africa\", revision 1373841219"
     }
   ],
   "title": "Scramble for Africa",
-  "summary": "Wikidata item Q179848, imported by tools/import/wikidata.mjs. The item's own description reads \"1880s–1900s Western European colonisation of Africa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Scramble for Africa\", at revision 1373841219, opens: \"The Scramble for Africa was the invasion, conquest, and colonisation of most of Africa by seven Western European powers, which were driven by the Second Industrial Revolution during the late 19th and early 20th centuries through the era of \"New Imperialism\". Belgium, France, Germany, Italy, Portugal, Spain and the United Kingdom were the contending powers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q179848, imported by tools/import/wikidata.mjs. The item's own description reads \"1880s–1900s Western European colonisation of Africa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1885,
     "end": 1914

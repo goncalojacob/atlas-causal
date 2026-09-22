@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q917",
+  "wikipedia": {
+    "en": "Bhutan"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 760"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q917, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bhutan\", revision 1375223880"
     }
   ],
   "actorType": "polity",
   "names": [
     "Bhutan"
   ],
-  "summary": "Entity 760 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1949 to where the dataset stops, in 2019. Its last capital in the dataset is Thimphu. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1949-01-01. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 38,394 km² and about 787,424 people (2023), from Wikidata's Q917 (P2046, P1082). The English Wikipedia article \"Bhutan\", at revision 1375223880, opens: \"Bhutan, officially the Kingdom of Bhutan, is a landlocked country in South Asia, located in the Eastern Himalayas, bordering China's Tibet Autonomous Region to the north and northwest and India to the south and southeast. With a population of over 800,000 (800,871) and a territory of 38,394 square kilometres (14,824 sq mi), Bhutan ranks 133rd in land area and 160th in population. It is a democratic constitutional monarchy with a king as the head of state and a prime minister as the head of government.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 760 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1949 to where the dataset stops, in 2019. Its last capital in the dataset is Thimphu. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1949-01-01. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1949,
     "end": null

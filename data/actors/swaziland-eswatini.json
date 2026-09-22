@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q1050",
+  "wikipedia": {
+    "en": "Eswatini"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 572"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1050, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eswatini\", revision 1375345772"
     }
   ],
   "actorType": "polity",
   "names": [
     "Swaziland (Eswatini)"
   ],
-  "summary": "Entity 572 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1968 to where the dataset stops, in 2019. Its last capital in the dataset is Mbabane. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1968-09-06. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 17,364 km² and about 1.2 million people (2023), from Wikidata's Q1050 (P2046, P1082). The English Wikipedia article \"Eswatini\", at revision 1375345772, opens: \"Eswatini, formally the Kingdom of Eswatini, also known by its former official names Swaziland and the Kingdom of Swaziland, is a landlocked country in Southern Africa. It is bordered by South Africa on all sides except the east, where it shares a border with Mozambique. At no more than 200 km (120 mi) north to south and 130 km (81 mi) east to west, Eswatini is the second smallest country in continental Africa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 572 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1968 to where the dataset stops, in 2019. Its last capital in the dataset is Mbabane. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1968-09-06. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1968,
     "end": null

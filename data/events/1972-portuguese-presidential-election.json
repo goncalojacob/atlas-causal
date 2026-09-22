@@ -17,27 +17,28 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-18",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "m22-reinstated"
+      "m22-reinstated",
+      "a9-place"
     ],
     "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
   },
-  "wikidata": "Q16153777",
-  "sitelinks": {
-    "count": 5,
-    "on": "2026-09-04"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q16153777",
   "wikipedia": {
     "en": "1972 Portuguese presidential election",
     "pt": "Eleições presidenciais portuguesas de 1972"
+  },
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-04"
   },
   "sources": [
     {
@@ -68,7 +69,7 @@
     "end": 1972,
     "date": "1972-07-25"
   },
-  "place": null,
+  "place": "portugal-q45",
   "region": "europe",
   "parent": "estado-novo-1933-1974",
   "category": "election",

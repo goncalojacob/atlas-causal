@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q884",
+  "wikipedia": {
+    "en": "South Korea"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 732"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q884, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"South Korea\", revision 1375886915"
     }
   ],
   "actorType": "polity",
   "names": [
     "Korea, Republic of"
   ],
-  "summary": "Entity 732 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1945 to where the dataset stops, in 2019. Its last capital in the dataset is Seoul. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 100,295 km² and about 51.5 million people (2017), from Wikidata's Q884 (P2046, P1082). The English Wikipedia article \"South Korea\", at revision 1375886915, opens: \"South Korea, officially the Republic of Korea (ROK), is a country in East Asia. It constitutes the southern half of the Korean Peninsula and borders North Korea along the Korean Demilitarized Zone, with the Yellow Sea to the west and the Sea of Japan to the east. South Korea claims to be the sole legitimate government of the entire peninsula and adjacent islands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 732 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1945 to where the dataset stops, in 2019. Its last capital in the dataset is Seoul. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1945,
     "end": null

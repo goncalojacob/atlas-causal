@@ -9,44 +9,54 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q1775286",
-  "sitelinks": {
-    "count": 46,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1775286",
   "wikipedia": {
     "en": "Deportation of the Crimean Tatars",
     "pt": "Deportação dos tártaros da Crimeia"
+  },
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q1775286"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Deportation of the Crimean Tatars\", revision 1375533569"
     }
   ],
   "title": "deportation of the Crimean Tatars",
-  "summary": "Wikidata item Q1775286, imported by tools/import/wikidata.mjs. The item's own description reads \"ethnic cleansing carried out by the Soviet Union during World War II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Deportation of the Crimean Tatars\", at revision 1375533569, opens: \"During the Sürgünlik (\"exile\"), at least 191,044 Crimean Tatars were subjected to ethnic cleansing and cultural genocide through deportation carried out by Soviet Union authorities from 18 to 20 May 1944. The deportation was supervised by Lavrentiy Beria, chief of Soviet state security and the secret police, and ordered by the Soviet leader Joseph Stalin. Within those three days, the NKVD used cattle trains to deport the Crimean Tatars, even Soviet Communist Party members and Red Army soldiers, from Crimea to the Uzbek SSR, several thousand kilometres away.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1775286, imported by tools/import/wikidata.mjs. The item's own description reads \"ethnic cleansing carried out by the Soviet Union during World War II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1944,
     "end": 1944,
     "date": "1944-05-18",
     "endDate": "1944-05-20"
   },
-  "place": null,
+  "place": "crimea",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

@@ -9,15 +9,22 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "participants-from-p710",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,20 +43,30 @@
     {
       "source": "wikidata",
       "locator": "Q217981"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Allied invasion of Sicily\", revision 1376074492"
     }
   ],
   "title": "Allied invasion of Sicily",
-  "summary": "Wikidata item Q217981, imported by tools/import/wikidata.mjs. The item's own description reads \"1943 military campaign of World War II on the island of Sicily, Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Allied invasion of Sicily\", at revision 1376074492, opens: \"The Allied invasion of Sicily, also known as the Battle of Sicily and Operation Husky, was a major campaign of World War II in which Allied forces invaded the Italian island of Sicily in July 1943 and took it from the Axis forces. The island was defended by the Italian 6th Army and the German XIV Panzer Corps. The invasion paved the way for the Allied invasion of mainland Italy and initiated the Italian campaign that removed Italy from the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q217981, imported by tools/import/wikidata.mjs. The item's own description reads \"1943 military campaign of World War II on the island of Sicily, Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1943,
     "end": 1944,
     "date": "1943-07-09",
     "endDate": "1944-08-17"
   },
-  "place": null,
+  "place": "sicily-q1460",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "world-war-ii",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent",
+      "note": "Wikidata Q217981, P710 (participant), Q30"
+    }
+  ]
 }
