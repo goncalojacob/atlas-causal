@@ -17979,8 +17979,9 @@ largest component 502 → **503**.
 
 **Corpus after the fire: 590 active, 244 main, 346 filed, 640 edges, largest
 connected component 503, 65 components.** `node tools/validate.mjs --index`:
-**0 errors, 269 warnings**. **1,709 pure tests, 0 skipped.** Deviations 1070
-to 1076.
+**0 errors, 269 warnings**. **1,709 pure and 234 browser, 1,943 in all, 0
+failed and 0 skipped**, the browser suites one at a time as the check runs
+them. Deviations 1070 to 1076.
 
 1070. **A bound the source gives as a phrase is a range and not a guess.**
      Two earlier fires refused `decolonisation-of-africa` because its article
