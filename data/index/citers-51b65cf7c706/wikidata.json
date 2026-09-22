@@ -1148,6 +1148,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ap-bac",
+      "kind": "event",
+      "locator": "Q280468"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-britain",
       "kind": "event",
       "locator": "Q154720"
@@ -1172,15 +1178,45 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-hamburger-hill",
+      "kind": "event",
+      "locator": "Q247395"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-hue",
+      "kind": "event",
+      "locator": "Q697053"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ia-drang",
+      "kind": "event",
+      "locator": "Q714749"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jutland",
       "kind": "event",
       "locator": "Q156554"
     },
     {
       "dissent": false,
+      "id": "battle-of-khe-sanh",
+      "kind": "event",
+      "locator": "Q247253"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kursk",
       "kind": "event",
       "locator": "Q130861"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-long-tan",
+      "kind": "event",
+      "locator": "Q259526"
     },
     {
       "dissent": false,
@@ -1550,6 +1586,12 @@
     },
     {
       "dissent": false,
+      "id": "fall-of-saigon",
+      "kind": "event",
+      "locator": "Q482456"
+    },
+    {
+      "dissent": false,
       "id": "february-revolution",
       "kind": "event",
       "locator": "Q101534"
@@ -1763,6 +1805,12 @@
       "id": "guinean-constitutional-referendum-1958",
       "kind": "event",
       "locator": "Q5616514"
+    },
+    {
+      "dissent": false,
+      "id": "gulf-of-tonkin-incident",
+      "kind": "event",
+      "locator": "Q482402"
     },
     {
       "dissent": false,

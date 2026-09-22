@@ -5228,6 +5228,15 @@
         }
       ]
     },
+    "battle-of-ap-bac": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-britain": {
       "from": "git",
       "versions": [
@@ -5264,6 +5273,33 @@
         }
       ]
     },
+    "battle-of-hamburger-hill": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-hue": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-ia-drang": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-jutland": {
       "from": "git",
       "versions": [
@@ -5273,8 +5309,26 @@
         }
       ]
     },
+    "battle-of-khe-sanh": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-kursk": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-long-tan": {
+      "from": "revised",
       "versions": [
         {
           "first": true,
@@ -7467,6 +7521,15 @@
         }
       ]
     },
+    "fall-of-saigon": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "february-revolution": {
       "from": "git",
       "versions": [
@@ -8100,6 +8163,15 @@
           "fields": [
             "parent"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "gulf-of-tonkin-incident": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -13668,6 +13740,12 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },

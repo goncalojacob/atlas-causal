@@ -2747,6 +2747,15 @@
         }
       ]
     },
+    "gulf-of-tonkin-incident--battle-of-ia-drang--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "gulf-war--iraq-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -3516,6 +3525,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "paris-peace-accords--fall-of-saigon--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

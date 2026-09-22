@@ -1442,6 +1442,18 @@
     },
     {
       "dissent": false,
+      "id": "gulf-of-tonkin-incident--battle-of-ia-drang--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Ia Drang\", revision 1370265925, lead"
+    },
+    {
+      "dissent": false,
+      "id": "gulf-of-tonkin-incident--battle-of-ia-drang--precondition-of",
+      "kind": "edge",
+      "locator": "\"Gulf of Tonkin incident\", revision 1375232287, lead"
+    },
+    {
+      "dissent": false,
       "id": "gulf-war--iraq-war--precondition-of",
       "kind": "edge",
       "locator": "\"Gulf War\", revision 1373369657"
@@ -2063,6 +2075,18 @@
       "id": "orange-revolution--euromaidan--precondition-of",
       "kind": "edge",
       "locator": "\"Orange Revolution\", revision 1372581321"
+    },
+    {
+      "dissent": false,
+      "id": "paris-peace-accords--fall-of-saigon--enabled",
+      "kind": "edge",
+      "locator": "\"Fall of Saigon\", revision 1375890528, lead"
+    },
+    {
+      "dissent": false,
+      "id": "paris-peace-accords--fall-of-saigon--enabled",
+      "kind": "edge",
+      "locator": "\"Paris Peace Accords\", revision 1376128374, lead"
     },
     {
       "dissent": false,
