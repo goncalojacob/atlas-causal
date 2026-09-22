@@ -14767,6 +14767,45 @@ import that read a later pair of dates than the item's own description.
      `when.calendar: julian` is the whole repair, `src/util/dates.js` does the
      rest, and no date was changed.
 
+### Batch 25 — the three the lane refused, and the fragment the rule makes
+
+The same rule as batches 23 and 24, five rows, and three of them are the ones
+batch 24's tool refused for want of a lane — landed here by one line in
+`data/imports/wikidata-seeds.json` and an id out of the state file's `done`
+list. Five imported, five filed, four edges. Corpus 515 to **520**, main
+**251 and unchanged for the fourth batch running**, largest component 459 to
+**462**, components 29 to 30.
+
+**The new component is the finding.** The two Franco-Dahomean wars are filed
+under `scramble-for-africa`, which is an A6 umbrella and takes no edge, so the
+only edge either earned runs between the two of them: **a row whose parent is
+an umbrella arrives filed and still lands outside the chain.** The rule of
+batches 23 to 25 pays A6 every time and pays A5 only when the parent is an
+ordinary record with neighbours of its own.
+
+### Deviations
+
+1031. **A filing rule that ranks by `part of` is not a connection rule, and the
+     Dahomean pair is where the two come apart.** Fifteen of the twenty
+     records these three batches imported earned an edge to something the
+     atlas already held; the two whose parent was an umbrella earned one only
+     from each other. **The bar of brief §1 is met either way** — nothing was
+     written to keep a record — but a batch that wants reach should prefer a
+     row whose parent is an ordinary event, and say which of the two it did.
+     What would join Dahomey to the atlas is a record of the French conquest
+     of West Africa, which nothing here holds.
+1032. **Six imported intervals now read shorter than the record's own
+     summary**, after two more in this batch: `world-war-ii-in-albania`
+     (1942–1944 for a war its article dates from April 1939) and
+     `1940-1944-insurgency-in-chechnya` (a single day in December 1944 for a
+     revolt its own title dates 1940–1944), beside `the-troubles`,
+     `cambodian-vietnamese-war`, `turkish-war-of-independence`,
+     `chinese-civil-war` and `dissolution-of-the-soviet-union`. **The pattern
+     is the import taking the last pair of date claims an item carries rather
+     than the first**, and it is worth a person's afternoon: each one refuses
+     a filing the source itself asserts. Not repaired here, for the reason
+     deviation 1022 gives.
+
 1019. **Reinstating an M44b-era record can put an unread record on no
      dashboard.** `2021-myanmar-coup-d-etat`'s `review` block carried flags
      and **no `status`**, which is invisible while a record is retracted and
