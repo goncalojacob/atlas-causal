@@ -17950,6 +17950,105 @@ against the tighter test and all twelve hold.
      activity is not a kind of event, and the table is for classes that say
      what a record is.
 
+**The fire of 22 September, 10:33 — A8's pass, A7's intervals, batch 34.**
+`origin/m0` carried `M79 done`, so `parent` is a list and amendment A8 was in
+force for the first time. `origin/m0` was merged into `m42` once for the
+helper and the rule that judge a list; `STATUS.md` kept both sides and
+`data/index/` was dropped and rebuilt.
+
+**A8's pass.** `decolonisation-of-africa` exists — the umbrella the owner asked
+for by name and two earlier fires refused. **Span 1954–1956 to 1976**, from
+*"Decolonisation of Africa"*, revision **1372152864**: *"between the mid-1950s
+to 1976"*. **Eight events filed under it**, all eight main before the pass, and
+`angola-independence-1975` — the owner's own example — is now part of the
+Portuguese Third Republic **and** of the decolonisation, having been part of
+neither. **The re-read of the 329 filed events gave twenty more a second
+parent.** **22 events now carry more than one.** Corpus 581 → 582 active, main
+**252 → 245**, largest component 502 and unchanged, because an umbrella takes
+no edge.
+
+**A7.** `the-troubles` widened from 1998–1998 to **1967–1969 to 1998**, from
+its article at revision 1376046499. `chinese-civil-war` and
+`turkish-war-of-independence` were written and **refused by rule 4**: both
+articles state a wider span, and writing either breaks an edge already in the
+graph. Both stay flagged.
+
+**Batch 34.** Eight rows of `vietnam-war` — the one-war batch batch 33 asked
+for — all eight filed, **two edges**, corpus 582 → **590**, main 245 → **244**,
+largest component 502 → **503**.
+
+**Corpus after the fire: 590 active, 244 main, 346 filed, 640 edges, largest
+connected component 503, 65 components.** `node tools/validate.mjs --index`:
+**0 errors, 269 warnings**. **1,709 pure tests, 0 skipped.** Deviations 1070
+to 1075.
+
+1070. **A bound the source gives as a phrase is a range and not a guess.**
+     Two earlier fires refused `decolonisation-of-africa` because its article
+     dates the period's start as *"the mid-1950s"* and reading that as 1955
+     would be supplying a year the source declines to give. They were right
+     about the reading and wrong about the shape:
+     `schema/common/interval.json` says a bound is *"either an exact year or a
+     `{ min, max }` range"*, and a phrase that names a range can be written as
+     one. **`span()` reads a parent's start at `min`**, so containment is
+     tested against the early end, which is the generous reading a period
+     deserves. `the-troubles` is written the same way from *"the late 1960s"*.
+     **This is the first event in the corpus with a range start**, and it
+     found a test that computed an extent with `Math.min` over the raw field:
+     an object makes the whole extent `NaN`, which does not fail an assertion,
+     it empties one.
+1071. **A second parent earns its place by reaching somewhere the first does
+     not.** A8 says a filing writes every umbrella that fits, and the
+     mechanical reading of that offered 248 of the 329 filed events at least
+     one candidate. Two rules cut it to twenty. **A parent already reachable
+     through another parent says nothing**: the Portuguese Colonial War is
+     part of the decolonisation of Africa, so a massacre inside that war is
+     inside the continent already and writing it on again only widens the
+     record. And **the same parent twice is rule 24's error**, which the suite
+     now says out loud.
+1072. **Sharing an actor is being a party and not being part, and it survived
+     A8 intact.** All 38 candidates the actor test produced on its own were
+     refused — `arab-revolt` and `armenian-genocide` both name the Ottoman
+     Empire, `spanish-civil-war` and `the-holocaust` both name Nazi Germany —
+     which is M67's judgement 2 unchanged. Four more fell to M67's rule 1: a
+     period does not contain the act that created or destroyed it, so
+     `coup-28-may-1926` is under neither the republic it ended nor the
+     dictatorship it began. **What A8 did change is narrower**: the subject
+     test is now the umbrella's lane **or** an actor the umbrella itself
+     names, because the owner's example is drawn in the Africa lane and sits
+     under a polity umbrella whose lane is Europe. The lane-only reading held
+     only by coincidence.
+1073. **A year is not a date, and five filings turned on it.**
+     `armistice-of-mudros`, `battle-of-the-lys-1918`, `finnish-civil-war`,
+     `german-soviet-treaty-of-friendship-cooperation-and-demarcation` and
+     `soviet-invasion-of-poland` all sit inside `interwar-period` by year and
+     outside it by day, against the period's own `1918-11-11` and
+     `1939-09-11`. `span()` compares years and would have let every one of
+     them through **with no warning at all**.
+1074. **Rule 4 is a check on identity and not only on chronology.** A7
+     authorises widening an imported interval from the record's own cited
+     article, and two of the three could not be widened: the Japanese war
+     cannot be a precondition of a civil war beginning in 1927, and Sèvres
+     cannot cause a war that began the year before it. **An edge somebody
+     wrote is the atlas committing to a reading of what a record is about.**
+     Each record's note already asked whether it is the whole war or the phase
+     the item dated; the graph has answered that once, and a run that widened
+     the span would not be correcting a date but falsifying an argument.
+     **Read the edges on a record before touching its interval.**
+1075. **Taking one war did not raise the edge yield, and the hypothesis is
+     spent.** Batch 33 supposed that rows of one war could be argued against
+     each other. Batch 34 took eight rows of `vietnam-war` and wrote **two**
+     edges, against three from eight and three from twelve; **neither edge
+     runs between two rows of the batch** — both reach a record the atlas
+     already held. **The phases of one war are chronological to each other and
+     not causal**, and what limits the yield is what a lead argues, not the
+     corpus's thinness around a new record. The next batch should go back to
+     ranking across the whole vein. **The batch's one general finding is
+     worth more than its rows**: where the vein's queried subject is not the
+     nearest parent the atlas holds, the nearest one wins — `battle-of-hue`
+     went under `tet-offensive` and not under the war — and the subject of
+     such a query may itself be unfiled, which is how `vietnam-war` came to be
+     part of `indochina-wars` and the main count came down.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

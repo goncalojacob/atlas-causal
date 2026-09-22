@@ -2426,3 +2426,43 @@ batch 33 made is now spent as a hypothesis. The next batch should go back to
 **ranking across the whole vein**, which cost nothing to yield and spreads the
 new records over more of the world; 618 rows remain open. The Gaza cluster and
 Sudan's five are unchanged and still the owner's.
+
+## Where the run stands after batch 34, for the fire that picks it up
+
+*22 September, 12:10, after a fire that ran A8's pass, A7's intervals and one
+batch.*
+
+| | |
+| --- | --- |
+| corpus | **590 active** |
+| **main** | **244** |
+| filed | 346 |
+| events with more than one parent | **22** |
+| largest connected component | **503** |
+| components | **65** |
+| events with no edge at all | **47** |
+| the inverse `part of` vein | **618 rows open** |
+| the sweep pool, world sections | **1,046** open rows, untouched |
+| the corpus `part of` pass | spent; A8's re-read is spent too |
+
+**What is still open, in the order a fire should weigh it:**
+
+- **The inverse vein, 618 rows, back to ranking across the whole vein.**
+  Batch 34 tested batch 33's suggestion and it failed: one war's rows are
+  chronological to each other, not causal, and the batch wrote two edges where
+  the ranked batches wrote three. Ranking costs nothing to yield and spreads
+  the records over more of the world.
+- **The main count has room again.** It fell seven this fire and one more in
+  the batch, to 244, and the two ways it moved are both repeatable: an
+  umbrella a period historians name (A6), and **a queried subject that is
+  itself unfiled** — `vietnam-war` was main until batch 34 looked. A fire
+  taking a batch should check whether the parents its rows hang from are
+  filed, because that is free.
+- **A8 is available to every filing from here.** A filing writes every
+  umbrella whose span and subject fit; a parent already reachable through
+  another parent is not one of them.
+- **A7 is spent on the three it was written for**, one widened and two
+  refused by rule 4. Any future interval widened from an article should have
+  the edges on the record read first.
+- **The Gaza cluster (48 rows) and Sudan's five** are unchanged and still the
+  owner's.
