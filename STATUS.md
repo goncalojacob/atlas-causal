@@ -19176,7 +19176,13 @@ Europe before 1900 from 23 to **43 active, 15 main**; the `americas` lane is
 untouched at 140 active and 59 main. `node tools/validate.mjs --index`: **0
 errors, 496 warnings**. **1,764 pure and 268 browser, 2,032 in all, 0 failed
 and 0 skipped**, the browser suites one at a time as the check runs them.
-`docs/m53-polities.md` §4.1's "after M42" row was retaken to **352 of 698**.
+`docs/m53-polities.md` §4.1's "after M42" row was retaken to **352 of 698**. **Deviation
+1209**: this fire rebuilt the index before committing the records, which names
+history shards a fresh build at the pushed commit does not reproduce, and the
+check went red on rule 16 for it at the `origin/m42` merge commit `86e1144b`
+and again at the batch. Deviation 798's order — records first, rebuild, then
+commit the index — is not a style rule. Fixed by one more rebuild and one more
+commit, `91f19723`; the merge commit stays red and is superseded.
 
 1204. **The claim window's ninety minutes was read twice, and it is the second
       reading that claimed.** At the gate this branch's last push was **89.4

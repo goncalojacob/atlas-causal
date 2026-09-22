@@ -1119,6 +1119,21 @@ would start on it. Reading a cited source is not inventing a date, which is
 A7's own reasoning applied in the narrowing direction rather than the widening
 one.
 
+**1209. The index was rebuilt before the records were committed, and the check
+went red on rule 16 for it — twice, once at the `origin/m42` merge and once at
+this batch.** Deviation 798's order is *records first, rebuild, then commit the
+index*, and the reason is `tools/lib/history.mjs`: a record's versions are read
+out of **the commits that touched its file**, so an index built while the
+records are still in the working tree is filed under history shard names that a
+fresh build at the pushed commit does not reproduce. Rule 16 is what catches
+it, and it catches it in CI rather than locally, because `validate --index`
+against an uncommitted tree compares a build to itself. Three shards moved this
+time — `history-edge-1600-1699`, `history-event-1600-1699` and
+`history-place-place` — and the fix is one more rebuild and one more commit.
+**The order in 798 is not a style rule and a fire that rebuilds first will go
+red every time.** The merge commit `86e1144b` is red on the branch for exactly
+this and is superseded rather than re-run.
+
 ## Where the run stands, for the fire that picks it up
 
 *22 September, after batch 5.*
