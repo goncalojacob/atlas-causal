@@ -704,6 +704,31 @@ body:not(.phone) .layout.panel-empty.composing {
     position: static; border: 0; padding: 0; background: none;
   }
 
+  /* **The picture gets the screen** (M82, A9). The reviewer, on a 390 px
+     phone: *"title, tagline, search, three view buttons, Options, four links
+     and '?' take the top 40 %; the map is a 180 px strip."*
+
+     The four ways off this page go behind the button that already holds the
+     rest of the masthead on a phone. They are not controls of the picture and
+     nobody reaches for `about` before they have looked at anything; that row
+     was 55 px of the 260 the masthead took.
+
+     **The sentence under the title stays.** It is the other half of this
+     milestone (A3): the one line that says what the atlas is, on the first
+     screen, before anything is clicked — and a phone is the first screen a
+     funder is likeliest to see it on. Hiding it here would be fixing one
+     finding by undoing another.
+
+     The "?" stays out of the drawer too, because it is the way to everything
+     the card says, and a reader who cannot find the explanation has nothing
+     to press Options *for*.
+
+     Nothing moves in the DOM, so every module still finds the control it
+     wired — the same bargain the drawer has made since M31. */
+  .masthead-links { flex-wrap: wrap; gap: var(--space-2) var(--space-3); }
+  .masthead-links > :not(.intro-button) { display: none; }
+  .masthead-tools.options-open ~ .masthead-links > :not([hidden]) { display: inline-block; }
+
   /* Forty pixels, everywhere a thumb has to land on a control of its own.
      Not on a link inside a sentence — a citation's title, a crumb of the
      breadcrumb — which is set in the line it belongs to and would break the

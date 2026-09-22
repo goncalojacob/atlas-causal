@@ -294,3 +294,53 @@ test('A8: there is one word for going back, and every control that goes back say
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   }, { device: DESK });
 });
+
+// 8 — A9. On a phone the picture gets more than half the screen.
+//
+// Read off the layout and never off a pixel written here: the view's own
+// height against the height of the window, on every one of the three views and
+// on the narrowest phone the suite drives. And the row that was taken away is
+// taken away and not lost — Options brings it back.
+test('A9: on a phone the picture is more than half the screen, on all three views', { skip }, async () => {
+  const AREA = `
+    const el = [...document.querySelectorAll('.map-area, .graph-area, .timeline-area')].find((s) => !s.hidden);
+    const b = el.getBoundingClientRect();
+    return { which: el.id, share: b.height / innerHeight };`;
+  const LINKS = `
+    return [...document.querySelectorAll('.masthead-links > *')]
+      .filter((el) => el.getBoundingClientRect().height > 0)
+      .map((el) => el.id || el.className);`;
+
+  for (const device of [PHONE, { width: 375, height: 667, deviceScaleFactor: 1 }]) {
+    for (const view of ['map', 'graph', 'timeline']) {
+      // eslint-disable-next-line no-await-in-loop
+      await withBrowser(async (page, url) => {
+        await watchErrors(page);
+        await seenIntro(page);
+        await open(page, url(`?fixtures=1&view=${view}`), ready);
+        const area = await page.eval(AREA);
+        assert.equal(area.which, view, 'the view the link asked for is the one on screen');
+        assert.ok(
+          area.share > 0.5,
+          `${view} at ${device.width}x${device.height}: the picture is ${Math.round(area.share * 100)}% of the screen`,
+        );
+        assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+      }, { device });
+    }
+  }
+
+  // The sentence that says what the atlas is stays on the first screen (A3);
+  // the four ways off it are behind Options, and Options brings them back.
+  await withBrowser(async (page, url) => {
+    await open(page, url('?fixtures=1'), ready);
+    const tagline = await page.eval("return document.querySelector('.tagline').getBoundingClientRect().height > 0;");
+    assert.equal(tagline, true, 'the sentence under the title is on the phone\'s first screen too');
+
+    const folded = await page.eval(LINKS);
+    assert.deepEqual(folded, ['intro-button'], `only the "?" stays out of the drawer: ${folded.join(' ')}`);
+
+    await page.eval("document.getElementById('options-button').click(); return true;");
+    const opened = await page.eval(LINKS);
+    assert.ok(opened.length > folded.length, 'and Options brings the rest back');
+  }, { device: PHONE });
+});
