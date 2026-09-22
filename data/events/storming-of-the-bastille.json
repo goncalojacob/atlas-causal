@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "storming-of-the-bastille",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6539",
+  "sitelinks": {
+    "count": 60,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Storming of the Bastille",
+    "pt": "Tomada da Bastilha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6539"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Storming of the Bastille\", revision 1374060912"
+    }
+  ],
+  "title": "Storming of the Bastille",
+  "summary": "The English Wikipedia article \"Storming of the Bastille\", at revision 1374060912, opens: \"The Storming of the Bastille, also known as Fall of the Bastille, which occurred in Paris, France, on 14 July 1789, was an act of political violence by revolutionary insurgents who attempted to storm and seize control of the medieval armoury, fortress, and political prison known as the Bastille. After four hours of fighting and 94 deaths, the insurgents were able to enter the Bastille. The governor of the Bastille, Bernard-René Jourdan de Launay, and several members of the garrison were killed after surrendering. At the time, the Bastille represented royal authority in the centre of Paris. The prison contained only seven inmates at the time of its storming and was already scheduled for demolition but was seen by the revolutionaries as a symbol of the monarchy's abuse of power. Its fall was the flashpoint of the French Revolution.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6539, imported by tools/import/wikidata.mjs. The item's own description reads \"1789 part of the French Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1789,
+    "end": 1789,
+    "date": "1789-07-14"
+  },
+  "place": "bastille",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "french-revolution"
+}

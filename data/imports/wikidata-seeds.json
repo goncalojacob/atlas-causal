@@ -1017,7 +1017,34 @@
     "Q1780216",
     "Q1052332",
     "Q1424647",
-    "Q17354007"
+    "Q17354007",
+    "Q6534",
+    "Q193547",
+    "Q6539",
+    "Q620965",
+    "Q60022",
+    "Q12989672",
+    "Q862586",
+    "Q1151917",
+    "Q1154330",
+    "Q1463941",
+    "Q1192894",
+    "Q248033",
+    "Q206979",
+    "Q1089686",
+    "Q720498",
+    "Q3062714",
+    "Q15784403",
+    "Q143866",
+    "Q621",
+    "Q1865480",
+    "Q662491",
+    "Q805255",
+    "Q3292048",
+    "Q234364",
+    "Q217925",
+    "Q189503",
+    "Q3108868"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1207,7 +1234,12 @@
     "Q1455240": "europe",
     "Q1140492": "europe",
     "Q1785022": "europe",
-    "Q1527665": "europe"
+    "Q1527665": "europe",
+    "Q12989672": "europe",
+    "Q1192894": "europe",
+    "Q206979": "europe",
+    "Q15784403": "europe",
+    "Q3108868": "europe"
   },
   "queries": [
     {
@@ -4435,12 +4467,6 @@
       "label": "mountain range",
       "note": "Added in M42b batch 4 from the class each located item of the Cuban Revolution's vein names, read off Wikidata rather than guessed."
     },
-    "Q646740": {
-      "kind": "event",
-      "category": "war",
-      "label": "landing operation",
-      "note": "Added in M42 batch 36, the second Africa batch of the inverse `part of` vein. The label and the description — “type of military action” — are read from the item itself over the network, which this sandbox has; the class is here because Q3026815, the Alhucemas landing of 1925, carries it and the table did not. It follows Q1261499 naval battle and Q830494 dogfight into `war`: an amphibious assault is organised armed force between polities, which is that category as data/categories.json describes it."
-    },
     "Q1827102": {
       "kind": "event",
       "category": "war",
@@ -4482,6 +4508,103 @@
       "kind": "place",
       "label": "municipality without town privileges in Germany",
       "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. Carried by Q575676 Lutter am Barenberge, beside which the Battle of Lutter was fought."
+    },
+    "Q104708121": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "storming",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “invasion of a building by a mob”, which is data/categories.json’s “uprising” rather than its “organised armed force between polities”. Carried by Q6539, the storming of the Bastille."
+    },
+    "Q381045": {
+      "kind": "event",
+      "category": "other",
+      "label": "oath",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “personal affirmation of a statement”. It is none of the eleven named categories — an oath is not a treaty, which is between polities, nor a law, which the state enacts — so it takes “other”. Carried by Q60022, the Tennis Court Oath."
+    },
+    "Q750215": {
+      "kind": "event",
+      "category": "death",
+      "label": "mass murder",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “act of killing a large number of people by non-state actors”, which is not armed force between polities; the category that names a killing is “death”, as it is for Q3199915 massacre, already in this table. Carried by Q862586, the September Massacres."
+    },
+    "Q5465517": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "food riot",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “riot caused by shortage and/or unequal distribution of food”; the riot is the event and “revolution” is the category that holds an uprising. Carried by Q1151917, the Women’s March on Versailles."
+    },
+    "Q124757": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "riot",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “violent public disturbance against authority, property or people”, which is data/categories.json’s uprising. Carried by Q1154330, the insurrection of 10 August 1792."
+    },
+    "Q15238777": {
+      "kind": "event",
+      "category": "other",
+      "label": "legislative term",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “period from one election of a legislature until the next”. It is not the vote that “election” names, and it is none of the other ten, so it takes “other”. Carried by Q1463941, the Estates General of 1789."
+    },
+    "Q1430466": {
+      "kind": "event",
+      "category": "other",
+      "label": "flight",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “response to distress by fleeing”, which is none of the eleven named categories. Carried by Q1192894, the flight to Varennes."
+    },
+    "Q2571972": {
+      "kind": "event",
+      "category": "law",
+      "label": "decree",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “rule of law usually issued by a head of state”, which is data/categories.json’s “the state changing what the rules are” word for word. Carried by Q206979, the Civil Constitution of the Clergy."
+    },
+    "Q10855380": {
+      "kind": "event",
+      "category": "death",
+      "label": "public execution",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “form of capital punishment carried out publicly”, and data/categories.json’s “death” names a death “by illness, accident, execution or assassination”. Carried by Q3062714, the execution of Louis XVI."
+    },
+    "Q204933": {
+      "kind": "event",
+      "category": "death",
+      "label": "decapitation",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “complete separation of the head from the body”; it is the second class of Q3062714 and it agrees with the first, Q10855380 public execution."
+    },
+    "Q180684": {
+      "kind": "event",
+      "category": "other",
+      "label": "conflict",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “a situation in which unacceptable differences in interests, expectations, values, or opinions occur between individuals or groups” — which is not organised armed force between polities, so it is not “war”, and is too general to be any of the other ten. Carried by Q15784403, the insurrection of 31 May – 2 June 1793."
+    },
+    "Q2627975": {
+      "kind": "event",
+      "category": "culture",
+      "label": "ceremony",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “a unified ritualistic event with a purpose, usually consisting of a number of artistic components, performed on a special occasion”, which is data/categories.json’s “culture”. Carried by Q143866, the Fête de la Fédération."
+    },
+    "Q40357": {
+      "kind": "place",
+      "label": "prison",
+      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “place in which people are, for legal reasons, physically confined” — a building on the ground, which is what a place of this atlas is. Carried by Q3292048, the Prison de l’Abbaye, and by Q1865480, the Bastille."
+    },
+    "Q16560": {
+      "kind": "place",
+      "label": "palace",
+      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “grand residence, especially a royal or episcopal residence”. Carried by Q662491, the Château de Saint-Cloud, and Q234364, the Tuileries."
+    },
+    "Q19860854": {
+      "kind": "place",
+      "label": "destroyed building or structure",
+      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “building or structure that has been demolished or destroyed”. A building that no longer stands is still somewhere events happened, which is all a place record claims; it is the second class of the Bastille and of both palaces and it agrees with the first."
+    },
+    "Q805248": {
+      "kind": "place",
+      "label": "jeu de paume building",
+      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “building for the ‘jeu de paume’ game in Baroque times”. Carried by Q805255, the Salle du Jeu de Paume at Versailles."
+    },
+    "Q174782": {
+      "kind": "place",
+      "label": "square",
+      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “open public spaces in cities or towns … often located at the junction of two or more thoroughfares”. Carried by Q189503, the place de la Concorde, and Q217925, the Champ de Mars."
     }
   },
   "reconcile": true

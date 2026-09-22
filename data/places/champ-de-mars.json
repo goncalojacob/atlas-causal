@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "champ-de-mars",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q217925",
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Champ de Mars",
+    "pt": "Campo de Marte (Paris)"
+  },
+  "sources": [],
+  "names": [
+    "Champ de Mars",
+    "Campo de Marte",
+    "Campo de Marte (Paris)"
+  ],
+  "where": {
+    "lon": 2.29803,
+    "lat": 48.85613,
+    "precision": "point",
+    "label": "Champ de Mars"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q217925, imported by tools/import/wikidata.mjs. The item's own description reads \"large public green space in Paris, France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

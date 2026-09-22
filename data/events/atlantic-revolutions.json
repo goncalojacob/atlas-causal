@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "atlantic-revolutions",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3108868",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Atlantic Revolutions",
+    "pt": "Revoluções atlânticas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3108868"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Age of Revolution\", revision 1374214786"
+    }
+  ],
+  "title": "Atlantic Revolutions",
+  "summary": "The English Wikipedia article \"Age of Revolution\", at revision 1374214786, opens: \"The Age of Revolution is a period from the late-18th to the mid-19th centuries during which a number of significant revolutionary movements occurred in most of Europe and the Americas. The period is noted for the change from absolutist monarchies to representative governments with a written constitution, and the creation of nation states.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3108868, imported by tools/import/wikidata.mjs. The item's own description reads \"revolutionary wave in the late eighteenth and early nineteenth centuries\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1765,
+    "end": 1838,
+    "date": "1765-03-22",
+    "endDate": "1838-12-04"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}
