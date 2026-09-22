@@ -42,6 +42,11 @@ import { categoriesOn } from './categories.js';
 //                 ends are something the reader is holding all the same
 //   converging    the other branches that fed it, the convergence query's own
 //                 answer, computed exactly as the panel computes it
+//   pathIds       the walked path and the selected event as one set, which is
+//                 what a mark is drawn madder by
+//   walkedEdges   the walked chain as edge objects, filtered to `shown`
+//   consequenceEdges  the selected event's outgoing links, likewise
+//   convergingEdges   the edges those other branches fed the target through
 //   actor         the events of the actor whose card is open
 //   narrative     the whole of an open narrative's walk, not only the step
 //                 the reader has got to
@@ -157,12 +162,20 @@ function assemble(atlas, state, view) {
   // The walked path is what the convergence query excludes, and it excludes
   // that only: see the note in CLAUDE.md about why the wider exclusion always
   // returned empty.
+  //
+  // **Run once for both halves** (M85, B13). A branch carries its event *and*
+  // the edge that fed the target (graph.js), and the graph view used to run the
+  // whole query a second time to take the edges out of it — the same walk, the
+  // same exclusion, on every render. One call, two sets, and the picture and
+  // the panel's list cannot come to disagree about which branches those are.
   const converging = new Set();
+  const convergingEdges = new Set();
   if (state.selected && atlas.events.has(state.selected)) {
     const walkedIds = new Set(path);
     if (state.selected) walkedIds.add(state.selected);
     for (const branch of convergence(atlas.adjacency, state.selected, [...walkedIds])) {
       if (kept(branch.event.id)) converging.add(branch.event.id);
+      if (branch.edge) convergingEdges.add(branch.edge.id);
     }
   }
 
@@ -188,6 +201,23 @@ function assemble(atlas, state, view) {
     consequences,
     chosen,
     converging,
+    // ─── and the four the three views used to rebuild (M85, B13) ───────────
+    //
+    // Each of these was composed identically in `map.js`, `timeline.js` and
+    // `graph-view.js`, out of what this function had already computed and
+    // thrown away. They are answers and not new work: `walked` and `outgoing`
+    // are the edge objects whose ids `path` and `consequences` already carry,
+    // `pathIds` is the union every view took, and `convergingEdges` is the
+    // other half of the query above.
+    //
+    // A selected event is on the path it is the head of, which is what makes
+    // its mark madder rather than merely ringed.
+    pathIds: new Set([...path, ...selected]),
+    // The two lists of *edges*, which are lines and not marks: already
+    // filtered to what the view draws, as everything else here is.
+    walkedEdges: walked,
+    consequenceEdges: outgoing,
+    convergingEdges,
     actor,
     narrative: narrative ? filter(narrative) : null,
     reachable: new Map([...reachable].filter(([id]) => shown.has(id))),

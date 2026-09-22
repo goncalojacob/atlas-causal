@@ -616,6 +616,10 @@
       ]
     }
   },
+  "links": {
+    "active": 17,
+    "explained": 17
+  },
   "officesByEvent": {
     "fixture-event-a": [
       "fixture-tenure-one"

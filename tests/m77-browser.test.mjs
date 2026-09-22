@@ -163,7 +163,7 @@ test('the graph carries no note about the map\'s viewport, and keeps its legend'
     assert.equal(
       await page.eval('return [...document.querySelectorAll(".graph-area button")].some((b) => /export/i.test(b.textContent));'),
       true,
-      'and so does Export this view',
+      'and so does the export button',
     );
   });
 });

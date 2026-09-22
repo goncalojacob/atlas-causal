@@ -23,6 +23,8 @@ import { EDGE_TYPE_LABEL, PRECISION_LABEL } from '../vocab.js';
 // card's head and is filled when the record's own file lands, because the core
 // row a card is built from carries no signature.
 import { standingSlot, fillStanding } from '../standing.js';
+// The cross in the card's top right, the same on every card (M84).
+import { closeControlHtml } from './close.js';
 
 // What a card calls each edge type, from the one list of them (vocab.js).
 export const TYPE_LABEL = EDGE_TYPE_LABEL;
@@ -416,6 +418,7 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
     ${breadcrumbHtml(ctx, chainEdges, event)}
     ${notices.join('')}
     <header class="event-head">
+      ${closeControlHtml()}
       ${ctx.historyHtml()}
       <h2>${esc(event.title)}</h2>
       <p class="meta">

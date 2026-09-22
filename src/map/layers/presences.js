@@ -46,7 +46,7 @@
 import { svg, svgTitle } from '../../util/dom.js';
 import { geometryPath, linePath } from './land.js';
 import { simplifyGeometry, simplifyLine } from '../../util/simplify.js';
-import { formatInterval } from '../../util/dates.js';
+import { formatInterval, formatYear, fromAstronomical } from '../../util/dates.js';
 
 // How much border detail is worth drawing, by how far the reader has zoomed,
 // in degrees. The shards are written at the import's own tolerance and this
@@ -84,6 +84,32 @@ export function presenceTitle(presence, { nameOf }) {
     : null;
   const when = formatInterval(presence.when);
   return `${who}${held ? ` — ${held}` : ''} · ${when}${presence.confidence === 'disputed' ? ' · disputed' : ''}`;
+}
+
+// Which year's borders the map is drawing, said in one line, or null where
+// there is nothing to say.
+//
+// **The map's line and the map's only** (M85, A15). It was drawn on the
+// timeline's band — a note about "the map beside it", written when the lanes
+// ran under the map and true until M60 made the timeline a view of its own.
+// A reader who chose the timeline in the masthead was told the year of borders
+// nothing on their screen was drawing.
+//
+// Three cases, and the interesting two are the clamps: the window's far end is
+// past where the outlines stop, or before they start. `territoryYear` is the
+// same clamp the layer itself draws at, so the line and the picture cannot
+// disagree.
+export function bordersNote(atlas, to) {
+  const coverage = atlas?.presenceCoverage;
+  if (!coverage || to === null || to === undefined) return null;
+  const shown = atlas.territoryYear(to);
+  if (to < coverage.from) {
+    return `no borders before ${formatYear(fromAstronomical(coverage.from))} in this source`;
+  }
+  if (to > coverage.to) {
+    return `borders as of ${formatYear(fromAstronomical(shown))}, the latest the source covers`;
+  }
+  return `borders as of ${formatYear(fromAstronomical(shown))}`;
 }
 
 // Whose hue a presence is drawn in: its owner's when it is somebody's, its

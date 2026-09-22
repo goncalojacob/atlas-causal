@@ -125,7 +125,8 @@ schema/common/             interval, place, provenance (the envelope), confidenc
 schema/v1/                 event, edge, source, actor, place, relation, narrative, presence, region, bundle; import-map, import-places, import-seeds, import-state and wikipedia-lead are tool-side
 index.html                 the atlas; no build step, plain ES modules
 contribute.html            the contribution form; not linked from the atlas while contributions are closed
-about.html                 what it is, how to read confidence and a dispute, the licences
+about.html                 one screen: what it is, who makes it, how to read confidence, the licences
+essay.html                 how the atlas is drawn, at length — the page about.html was until M85; linked from its foot
 sources.html               the bibliography, written into the file by the build from the sources index
 narratives.html            every narrative as a card, grouped by the centuries it crosses; written into the file by the build
 review.html                the review queue; a maintainer's page, unlinked, and the only one that can write
@@ -194,6 +195,7 @@ src/graph-view/label-fit.js  pure: the arithmetic of a graph label — how wide 
 src/graph-view/labels.js   pure: which marks are named and where each name goes. A name is drawn whole or not at all (M77): what does not fit waits for the pointer, and what does may be written on a nearby free line with a leader back to its mark. With a lens on, the lens is what is named, in reading order
 src/timeline.js            the third view since M60: bars packed into unlabelled rows, every one of them carrying its title (M77); the window as a band with two handles. No stacks and no `+N`: the rows are as many as the titles need and the pane scrolls. It is chosen from the masthead and given the whole pane, where it used to be a strip along the bottom of the map
 src/panel/panel.js         the shell: container, clicks, load token, what the cards share
+src/panel/close.js         the one way out of a card and there is no other (M84): the cross every card carries in its top right, as markup, and `closes(state)` — the panel's own precedence, so a cross takes away whichever card is on top and no card knows which parameter it writes. The owner, 22 September, *"it should be a simple cross on the top right corner"*; the four ways out that stood in the heading lines went with it
 src/panel/event.js         one card each: event.js, edge.js, source.js, place.js, actor.js, office.js, cluster.js, narrative.js;  horizon.js  the "led to by year X" section; the actor card also lists its relations, both ways round
 src/panel/edge.js          the link's card (M80): the type in the card's own words, both ends as links to their events, the confidence and what it means, the argument, the sources with their locators and the dispute. `?edge=<id>` is its address, it is ahead of every other card in the panel's precedence, and choosing one is not a lens — nothing narrows
 src/panel/office.js        the office card — the actor it belongs to, its category, every turn at it in order — and the tenure strip the actor card draws from the same list

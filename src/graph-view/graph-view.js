@@ -23,17 +23,16 @@
 
 import { svg, svgTitle } from '../util/dom.js';
 import { formatInterval, formatYear } from '../util/dates.js';
-import { centuryCounts } from '../util/window.js';
+import { centuryCounts, WHEEL_FACTOR } from '../util/window.js';
 import { renderKey, shardsArrived } from '../render-key.js';
 import { labelOf, LOADING_LABEL } from '../attributes.js';
-import { convergence } from '../graph.js';
 import { EDGE_TYPE_IDS, EDGE_TYPE_LABEL } from '../vocab.js';
 import { CONFIDENCE_ORDER, CONFIDENCE_CLASS, bundleClass } from '../confidence.js';
-import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
+import { walkOrSelect } from '../chain.js';
 import { horizonBand } from '../horizon.js';
 import { workingSet, heldSet } from '../emphasis.js';
 import { isParent, ringClasses } from '../parts.js';
-import { zoomBucket } from '../cluster.js';
+import { zoomBucket, stackTitle, stackBadge } from '../cluster.js';
 import { onScreen } from '../map/layers/events.js';
 import { arrangementOf, holdingKey } from './arrangement.js';
 import {
@@ -213,8 +212,19 @@ export function edgeKey() {
   // same fault at either width, so there is one behaviour now and the button is
   // it. The class it toggles is what the stylesheet opens. The key is not in
   // the SVG, so nothing here moves a mark.
+  // The one mark this key has to name (M84). The ring around whatever the
+  // reader has open is drawn in an ink of its own now, and a colour nobody
+  // explains is a colour a reader invents a meaning for; the map's and the
+  // timeline's keys carry the same row (view-key.js). Drawn with the node's
+  // own class, inside the same `svg.graph` the lines above are drawn in, so
+  // the swatch is the picture's ink and not a second copy of it — and with no
+  // `data-id`, which is what every selector that counts the graph's real nodes
+  // asks for.
+  const near = `<svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true">
+      <circle class="node lens-near" cx="12" cy="6" r="4"/></svg>`;
   box.innerHTML = `<button type="button" class="graph-key-toggle" aria-expanded="false" aria-controls="graph-key-body">Key</button>
-    <div id="graph-key-body" class="graph-key-body"><h2>Links</h2><dl class="edge-key">
+    <div id="graph-key-body" class="graph-key-body"><h2>Marks and links</h2><dl class="edge-key">
+    <dt>${near}</dt><dd>connected to the one you opened</dd>
     ${EDGE_TYPE_IDS
       .map((type) => `<dt>${line(type)}</dt><dd>${type}</dd>`).join('')}
     <dt>${sureness}</dt><dd>how sure: ${CONFIDENCE_ORDER.join(', ')}</dd>
@@ -593,7 +603,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   root.addEventListener('wheel', (e) => {
     e.preventDefault();
     const [x, y] = toSvg(e);
-    const factor = Math.exp(-e.deltaY * 0.0015);
+    const factor = Math.exp(-e.deltaY * WHEEL_FACTOR);
     const k = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, transform.k * factor));
     const s = stretchStep(transform.s, factor);
     const across = (k * s) / (transform.k * transform.s);
@@ -861,22 +871,16 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // picture is a fourth reader of that function and not a fourth copy.
     // Once per state, because the arrangement had to ask for it too.
     const working = workingOf(s);
-    const chainEdges = walkedEdges(atlas, s.chain);
-    const pathIds = new Set([...working.path, ...working.selected]);
-    const chainEdgeIds = new Set(chainEdges.map((e) => e.id));
-    const consequences = s.selected ? (atlas.adjacency.out.get(s.selected) ?? []) : [];
-    const consequenceIds = new Set(consequences.map((e) => e.id));
-
-    // The other branches that fed the selected event; their *edges* are what
-    // this view draws, and emphasis.js has already answered which events they
-    // are, so the picture and the panel's list cannot disagree.
+    // Four things this view used to rebuild, from the one place that computes
+    // them (M85, B13). The convergence query in particular ran twice per state
+    // — once in `emphasis.js` for the events and once here for their edges,
+    // the same walk with the same exclusion — and a branch has carried both
+    // halves all along (graph.js).
+    const pathIds = working.pathIds;
+    const chainEdgeIds = new Set(working.walkedEdges.map((e) => e.id));
+    const consequenceIds = new Set(working.consequenceEdges.map((e) => e.id));
     const converging = working.converging;
-    const convergingEdges = new Set();
-    if (s.selected && atlas.events.has(s.selected)) {
-      for (const branch of convergence(atlas.adjacency, s.selected, [...pathIds])) {
-        convergingEdges.add(branch.edge.id);
-      }
-    }
+    const convergingEdges = working.convergingEdges;
 
     // The same lens the arrangement was built from; what it kept is drawn
     // one event to a node — the focus set in full, and the direct causes and
@@ -1071,11 +1075,10 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       const radius = radiusOf.get(stack.key);
       if (stack.count > 1) {
         const nearest = Math.min(...stack.members.map((m) => reachable.get(m.id) ?? Infinity));
-        const hidden = stack.count - 1;
         const span = stack.years.min === stack.years.max
           ? formatYear(stack.years.min)
           : `${formatYear(stack.years.min)}–${formatYear(stack.years.max)}`;
-        const stackTitle = `${labelOf(atlas, node.event) ?? LOADING_LABEL} — and ${hidden} more event${hidden === 1 ? '' : 's'} here, ${span}`;
+        const title = stackTitle(labelOf(atlas, node.event) ?? LOADING_LABEL, stack.count, { span });
         nodesGroup.appendChild(svg('circle', {
           cx: stack.x,
           cy: stack.y,
@@ -1086,9 +1089,10 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
           'data-stack': stack.key,
           tabindex: '0',
           role: 'button',
-          'aria-label': stackTitle,
-        }, [svgTitle(stackTitle)]));
-        nodesGroup.appendChild(textNode(`+${hidden}`, {
+          'aria-label': title,
+        }, [svgTitle(title)]));
+        // "46 more" and not "+46", in the title's own words (M85, A4).
+        nodesGroup.appendChild(textNode(stackBadge(stack.count), {
           x: stack.x + (radius + 2) / k,
           y: stack.y - (radius + 1) / k,
           class: 'cluster-count',

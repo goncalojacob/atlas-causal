@@ -19750,6 +19750,443 @@ after batch 37" is what the next fire picks up.
       index** — and it converges in one step, because the index commit touches
       no record file and so changes no history.
 
+## M84 — the owner's feedback document
+
+Lane A, on the branch `m84`. `docs/m84-brief.md` over
+`docs/feedback-2026-09-22.md`, left before a week away with the note *"Não
+tive tempo de rever, o que revi fica aqui"* and one picture,
+`docs/screens/owner-2026-09-22-feedback-close.png`. Three items: a cross
+instead of a word, the dimmed neighbours told apart, and M80 verified rather
+than rebuilt. Nothing under `data/` changed and the committed index is
+byte-identical to a fresh build.
+
+The pictures: `docs/screens/m84-card-close.png` and `-phone.png` (the very
+card the owner photographed), `m84-map-ring.png`, `m84-graph-ring.png`,
+`m84-timeline-ring.png` and `m84-map-ring-key.png`. No other picture under
+`docs/screens/` was rewritten, which `git status` says rather than this
+paragraph.
+
+### 1 — a cross closes a card
+
+> *"Here you can see the 'close' button. Instead it should be a simple cross
+> on the top right corner."*
+
+It was worse than one badly placed word. Counted before the change: three
+cards said "close" — a source, a place and an office — the actor's said
+**"stop highlighting"**, and an event, a link and a narrative had **no way
+out at all**. All four of the ones that existed stood in the middle of a line
+of metadata, between the type of a book and "Focus on this", which is not
+where a hand goes. It is the fault M82 found in the four names for leaving a
+lens (A7), one act said four ways and none of them where it is looked for.
+
+`src/panel/close.js` is the whole of it now, and it holds two things rather
+than one:
+
+- **the markup**, because seven copies of one button are seven buttons that
+  drift apart, and because a card handed its own cross could be handed a
+  different one. Every card's `<header>` opens with `${closeControlHtml()}`;
+- **the act**. `closes(state)` is pure and reads the panel's own precedence —
+  narrative, edge, selected, source, office, place, actor, which is the order
+  `render()` draws in — so the control takes away whichever card is *on top*
+  and no card has to know which parameter it writes. Closing an event takes
+  the walk with it (a chain is the path into the record being read); closing
+  the card on top leaves the one under it open, so an event opened out of a
+  place's list closes back to the place.
+
+The three `clear-` verbs nothing wrote any more went with the links that
+wrote them. `clear-actor` stays: the event card offers it for a different
+act, stopping an actor's highlight while the event stays open.
+
+No new hex value, token or type size: the multiplication sign in the
+interface's own face at `--text-lg`, cobalt as every control in this panel is
+and madder under the pointer as the lens chip's × already is, in a 2.75 rem
+square because a touch target is 44 CSS pixels (WCAG 2.5.5) — a target size
+and not a type size. Floated rather than positioned, which is what makes it
+the *card's* corner: the title beside it is a flex container and shortens to
+clear the float by itself, the notices above it wrap around it line by line,
+and everything below goes back to the full measure once it has passed.
+
+### 2 — the dimmed neighbours are told apart
+
+> *"Regarding direct connections to events that are shown dimmed out, they
+> are easily confused, I suggest showing them in a different colour."*
+
+Right, and for a reason the stylesheet can be read for: **opacity was already
+spoken for twice.** `faded` means "outside the band" and `in-horizon` means
+"further from the horizon year", both of them fades; a third thing said in
+the same word said nothing at all, and a direct consequence of the event on
+screen looked like an event the window had taken away.
+
+**Which token, and why.** `--terr-5-line`, `#016b44`. The brief asks the run
+to say plainly if nothing in the palette reads as "connected, not chosen":
+**nothing does.** The atlas has thirty-three colour tokens and they are three
+families — the grounds and the two inks it draws with (cobalt for the atlas's
+own drawing, madder for the path being followed), and the eight territory
+hues. The confidence inks the brief offers are not inks at all: confidence is
+spent in `stroke-opacity` on a line (M73), and a category has no colour
+either — a glyph is `currentColor` and nothing else (`src/map/glyphs.js`). So
+this is the closest and not a match, chosen on two measured grounds:
+
+- it is an **ink**. The `-line` tokens are the ones the palette already trusts
+  a one-pixel border to, and this one is 6.6:1 on paper and 5.5:1 on land,
+  well over the 3:1 a line somebody has to see is held to. Three rows were
+  added to `tests/contrast.test.mjs` so it cannot slip;
+- it is the **furthest of the eight from both** of the colours these pictures
+  already spend: 105° from cobalt and 141° from madder in OKLCH. That 105 is
+  the largest smallest-separation any token here offers — the next best is
+  `--terr-7-line` at 103, and it is a full point worse on paper.
+
+Borrowing a territory hue takes no meaning from a territory: a hue means only
+"not the one beside it" and there is no legend by colour (about.html). And a
+colour nobody explains is a colour a reader invents a meaning for, so **the
+key on each view names it** — "connected to the one you opened" — drawn with
+the picture's own class, so the swatch and the mark cannot come apart. The
+graph's key was headed `Links` and is headed `Marks and links` now, since it
+has a mark in it.
+
+**Where it is written.** In each picture's own block and not in the shared
+`lens-near` rule, because an ink has to stand in the order the other inks
+stand in: after everything that says what a record *is* (coarse, one-day, of
+the open actor, a branch that converged) and before the selection and the
+walked chain, which are the reader's own and say so last. What the shared
+rule keeps is the one thing the three views have in common — the ring is not
+faded any more. Two shapes keep their own fill in the ring's hue rather than
+losing it: a converged branch on the graph stays filled, and a one-day bar on
+the timeline stays filled harder than a span.
+
+`emphasis.js`'s `shown` contract is untouched, and so is every rule about
+what is *drawn*: this run changed ink and nothing else.
+
+### 3 — M80 verified
+
+`?edge=` and the link's card are landed and published. **The live page could
+not be opened from this sandbox** — the network policy answers 403 to
+`goncalojacob.github.io` — so it was verified against the tree GitHub Pages
+serves, `origin/main` at `d4bfbb94`, in the same headless browser the suite
+uses: `?view=graph`, a line clicked where a reader's pointer would be. What
+came back, unedited:
+
+- **type** — "precondition of"; **ends** — "1893 Franco-Siamese crisis" and
+  "Entente Cordiale", each a control that opens it;
+- **confidence** — `probable`, with what it means beside it ("supported by
+  the cited sources, no known dissent");
+- **summary** — the argument itself, the paragraph the record carries;
+- **sources with locators** — one citation, and the locator is there:
+  *"Wikipedia contributors … revision 1374343940, § Consequences"*;
+- and `?edge=1893-franco-siamese-crisis--entente-cordiale--precondition-of`
+  in the address bar, which is the link a reader can send.
+
+**Nothing is missing, so nothing was fixed here.** M80's own browser suite
+passes against that same tree (8 of 8).
+
+### Deviations
+
+1183. **The narrative card keeps "Back to all events" and the actor card
+      loses "stop highlighting".** Both write what the cross writes, so both
+      look like the duplication M82's A7 condemned — but the line the owner
+      pointed at is the *heading line*, and that is the line a way out has
+      left. "Back to all events" stands in the notice that explains the mode,
+      it is M82's one name for leaving a lens, and it is shared with the lens
+      chips; taking it out of the narrative card alone would leave that one
+      act with two names again. "Stop highlighting" stood in the metadata
+      line, next to "Focus on this", which is exactly the picture.
+1184. **The cross is written into each card's `<header>` and not inserted by
+      the panel shell.** The shell would have been one line instead of seven,
+      and would have put a cross on the cluster list too — which is not a
+      record's card, is not in the URL, and is replaced by the next state
+      change rather than closed. It would also have put the markup where no
+      `node --test` can read it, and the brief asks for a test per card kind.
+1185. **`.panel button.card-close` and not `.panel .card-close`.** `.panel
+      button:not(.link)` draws every other button in this panel as a bordered
+      pill, and `:not(.link)` costs a class — so the two-class rule lost to it
+      wherever it stood and the cross came out in a box, which the first take
+      of `m84-card-close.png` showed. Named with the element it is, placed
+      after that rule, and it keeps the corner radius and the faint ground
+      under the pointer from it.
+1186. **The colour is given to the whole of `lensNear` and not to the one-hop
+      ring alone.** `lensView` puts two things in `near`: the ring, and what
+      the lens's events are *part of* (`parentsOf`, M65). The brief names the
+      first. They are the same sentence to a reader — related, not chosen —
+      they were faded identically before, and two greys where the owner asked
+      for one colour would be the fault again in a new place.
+1187. **The ring's *lines* on the graph are unchanged.** The brief asks for
+      the mark and its label; M77's rule for a walk's links, read of every
+      lens, is M83's A1-3 and its test still holds (every one of the ring's
+      lines fainter than every one of the lens's). A ring line in the ring's
+      ink is a change to how sure the atlas looks, which is `confidence.js`'s
+      dimension and not this run's.
+1188. **The labels needed nothing.** The brief asks for full opacity "for the
+      mark and its label"; no label on any of the three views carries
+      `lens-near` — the map's are placed centrally and inked `--ink`, the
+      timeline's carry `selected` and `faded` only — so they were already
+      drawn whole. What the graph does under a lens is name the focus set and
+      nothing else (M82), which is a rule about *which* labels and is left
+      where it is.
+1189. **M80 was verified against `origin/main` and not against the live
+      URL.** The sandbox's egress policy answers 403 to the site's host, so
+      the published page cannot be opened from here at all. The tree Pages
+      serves is a thing this run can hold, and the browser it was driven in is
+      the one the suite uses; the deploy of that tree is
+      `Merge pull request #21 from goncalojacob/m0`. What this does not prove
+      is that the deploy reached the CDN — a person with a browser can say
+      that in a second and nothing here can.
+1190. **The `m83` test failing on this branch's base was ported, not merged.**
+      `tests/m83.test.mjs` asserted that the resting graph holds two stacks
+      joined by more than one link, which was true at 581 events and false at
+      668; it failed on `origin/m0` as it stood at claim time. The fix landed
+      on `m0` an hour later, and the lane protocol forbids rebasing a branch
+      onto `m0` — so it is cherry-picked (`git cherry-pick -x`), which is what
+      the standing orders say to do with a fix that exists for a failure that
+      is not this branch's. It no-ops when `m84` lands.
+1191. **A coarse mark, a one-day bar and a converged branch keep their own
+      shape inside the ring.** Each of the three carries a declaration that
+      would have overridden or been overridden by the ring's — how precisely a
+      record is placed, whether it lasted a day, whether it is a branch that
+      converged, are facts about the record and not about what the reader is
+      holding. Each is given the ring's ink while keeping its own dash or its
+      own fill weight, so a mark says both things at once instead of one of
+      them.
+
+## M85 — the first review's remainder
+
+Lane A, on the branch `m85`. `docs/m85-brief.md` over the Fable review of
+22 September (`docs/review-2026-09-22.md`): part A's findings 4, 12, 14, 15,
+16 and 17 and part B's 13 and 14, the ones M82, M83 and M84 did not take, plus
+one test the day's landings showed to be brittle. **All nine sections are
+done and none was refused.** No record was written, no historical claim was
+made and nothing under `data/` changed but `data/index/`, which is generated:
+§3 puts a count in the manifest and §6 changes a prerendered page, so the
+index and the fixtures' index were rebuilt and `validate --index` is clean.
+
+The pictures: `docs/screens/m85-first-screen.png` — the atlas as a reader who
+types nothing arrives at it, which is the milestone — and `m85-about.png`. No
+other picture under `docs/screens/` was rewritten, which `git status` says
+rather than this paragraph.
+
+### 1 — the first picture is the whole span (A4)
+
+`opensOn()` opened a crowded corpus on the century holding most of it, so the
+resting map was 1900–1999: nothing of 1492–1899, three marks in Africa, three
+in Asia, none in Russia, the Middle East or Central Asia, and one mark at
+Lisbon carrying "+46". The owner's goal is the whole world; the first screen
+said "Portugal in the 20th century".
+
+What made that a good answer in M43b is what M65 removed. The argument was
+that six centuries at once shows every event and none of them legibly — true
+of six thousand marks and false of the **main events**, which is what a view
+has drawn at rest since M65. At rest the picture is now 242 main events of
+668 active over 1492–2026, and it is one map.
+
+So `opensOn` is gone, with the `opens` argument that carried its answer
+through `resolveWindow`, `containsYear`, `data.js` and eleven call sites.
+`crowded` and `centuryCounts` **stay and are not dead**: the timeline's scale
+asks them to know whether to bucket its axis (`timeline-scale.js`), which is
+the other question M43b asked of the same count and is still the right one —
+an even scale over six centuries gives the years nobody wrote about the same
+width as the years everybody did.
+
+A stack's badge is `46 more` and not `+46`, and both the badge and the title
+are composed in one place (`cluster.js`, `stackTitle` and `stackBadge`), where
+the map and the graph wrote the same sentence a year's span apart. `+46` beside
+a mark on the first screen reads as a typo and not as a count.
+
+### 2 — the graph's control speaks the reader's language (A12)
+
+It read "draws [two links or more ▾]". Each option is a whole sentence now —
+"Show events with at least 2 connections" — because a closed `<select>` shows
+one option and not the label beside it, and "connections" rather than "links"
+because a *link* is this atlas's word for an edge as a record, a small
+historiographical argument with its sources.
+
+**Kept rather than dropped, on the measurement the brief asks for.** Over the
+corpus of 22 September the resting picture is 242 main events; the floor keeps
+232 of them at one, 154 at two and 82 at three. It takes nothing away at its
+default, which is zero since M82 and is that milestone's whole point: rest
+means rest, and the floor is a thing a reader reaches for rather than a thing
+applied to them.
+
+### 3 — the intro's claim is computed (A14)
+
+"Every link carries a written explanation and its sources" was prose on the
+front page asserting a fact about the data, and nothing checked it. The
+browser cannot: an edge's argument is in an explanation shard and its sources
+are in no index file at all. So `linkCounts` counts it at build time over the
+active edges — a non-empty explanation and at least one source, the two things
+the schema asks of an edge — and the manifest carries `{ active, explained }`.
+
+On the corpus of 22 September it is **658 of 658**, so the sentence is
+unchanged; the card says "N of the M links carry…" the moment it is not, and
+says **nothing at all** where it has not been told. "0 of the 658" would be the
+front page reporting its own ignorance as a fact about the data, and an atlas
+built from the core alone — which carries an edge's five slots and nothing of
+its argument — knows nothing about this.
+
+### 4 — two labels (A15)
+
+"borders as of 1999" was drawn on the timeline's band, on a view that draws no
+borders at all. It was written when the lanes ran under the map and was a note
+about "the map beside it"; M60 made the timeline a view of its own and the
+line outlived the arrangement it was about by six milestones. `bordersNote` in
+`layers/presences.js` composes the sentence and the map's corner prints it,
+beside the picture it is about and only while the territories are drawn.
+
+And "Export this view" named no object: a reader could not tell whether it
+copied a link or downloaded a file. It says "Export as SVG"; the title, which
+says the rest, is unchanged.
+
+### 5 — the about page is one screen (A16)
+
+`about.html` was 51 KB — 40,000 characters of design essay opening on
+"thirty-seven of the records in the current test dataset happened in Lisbon".
+It is **6,090 characters** now, against a stated bound of **8,000**, which is
+about a screen of prose at this type size and is what `tests/m85.test.mjs`
+holds it to. Five sections: what this is, who makes it and what has been read,
+how sure the atlas is, the licences, what is coming.
+
+Every sentence is one the repository already says of itself — the lead is the
+masthead's and the intro card's own `WHAT_IT_IS`, the confidence levels are
+the essay's own three definitions, the licences are `README.md`'s four — and
+**no sentence about history was written**.
+
+The essay is `essay.html`, whole and unedited: its `<main>` is byte for byte
+the page's, and only the `<title>` and the header bar differ, the latter by one
+link back. It is linked from the about page's foot.
+
+### 6 — the bibliography groups the base maps (A17)
+
+The page read "65 sources … 11,901 citations", of which Historical Basemaps
+alone was 8,175 and CShapes most of the rest, while the books that carry the
+causal arguments have a few dozen citations each: a reader skimming it saw a
+map-dataset atlas. Two groups now — "Works cited", 63 sources and 3,393
+citations on the corpus of 22 September, and "Base maps and borders" under
+them, 2 sources and 9,301.
+
+**Which sources those are is asked of `origin.tool` and not of a list of ids.**
+`IMPORT_LICENCE_ORIGINS` in `origin.js` is already the atlas's answer to "which
+imports may put a licence on a record that `data/LICENSE` does not cover", and
+it is the two territory imports and nothing else, so a third base map lands in
+the group without being named again here. Wikidata is a dataset too and stays
+with the works: it is where identifiers are read from, not where a border is
+drawn, and "Base maps and borders" would be a false heading over it.
+
+### 7 — `emphasis.js` assembles once (B13)
+
+`pathIds = new Set([...working.path, ...working.selected])` was written in
+`map.js`, `timeline.js` and `graph-view.js`; the walked edges and the
+consequence edges likewise; and the convergence query ran **twice per state** —
+once in `emphasis.js` for the events and once in the graph for their edges, the
+same walk with the same exclusion, though a branch has carried both halves all
+along.
+
+`assemble` returns `pathIds`, `walkedEdges`, `consequenceEdges` and
+`convergingEdges` beside the sets it already computed, and the three views read
+them. `WHEEL_FACTOR` in `util/window.js` is the one copy of `0.0015` and the
+map and the graph import it; a stack's title and badge are `cluster.js`'s
+(§1). **The `shown` contract is unchanged** and a test says so on both corpora
+and under three states.
+
+### 8 — rules held by shape, not by grep (B14)
+
+Three tests held conventions by regex over file text. Each is now the boundary
+it stood for:
+
+- `legendRows(baseLayers)` is **what the legend draws**, a value it is handed:
+  the two fixed rows and whichever of the manifest's base layers `LAYERS`
+  knows. There is no argument by which a category could become a row, which is
+  what grepping `layer-control.js` for `glyphId` was trying to say. That no
+  category switch is in the legend's DOM is asserted where a DOM exists, in
+  `tests/m68-browser.test.mjs`;
+- `WINDOW_CONTROL_HTML` is **what the window control renders** — the whole of
+  it, since nothing in it comes from `data/` — so "the masthead types no year"
+  is asked of the markup and not of the module that writes it;
+- the wheel's rate is `WHEEL_FACTOR`, **one export imported by every picture
+  that answers a wheel**. The scan it replaces was blind to the copy that
+  mattered: `graph-view.js` had a wheel of its own with the factor written out
+  again, and `tests/m64.test.mjs` never looked at that file.
+
+### 9 — the band-drag test, and what it was really about
+
+**Neither of the two answers the brief offers.** The test cannot wait for
+"every shard the panel can redraw for": the views ask for the centuries the
+*window* covers, and those are evicted and re-fetched as the window moves, so
+that set has no last member — waiting for all twelve and then dragging is
+waiting for a queue that the drag itself refills. That is why pull request #20
+went red on 22 September on a commit the push run had passed.
+
+And the panel does not need to *patch* for a shard either. What the promise
+meant is narrower: a card's own shards are pinned while it is on screen
+(`holdShards`), so each of them lands **once** and never again, and the
+centuries the three views fetch are somebody else's business. So `refresh`
+asks whether one of *those* arrived, and a card with no shards of its own — a
+source, which is not in the graph file at all — falls back to what it did.
+
+`tests/m85-browser.test.mjs` is the test of it, with the window moved onto a
+century nobody has fetched and the card the reader is holding still standing
+when it lands; it fails on the old `refresh`. `tests/panel-browser.test.mjs`
+keeps its wait, which is no longer load-bearing: it is there so the card is
+drawn whole before the markers go on it.
+
+### Deviations
+
+1192. **`data/index/` was rebuilt, and the brief says "nothing under
+      `data/`".** §3 puts `links: { active, explained }` in the manifest and §6
+      changes what `bibliographyHtml` writes into the prerendered
+      `sources.html`, so the committed index would otherwise stop being
+      byte-identical to a fresh build and `validate --index` would fail. It is
+      generated and not written: no record changed, and M80 rebuilt it on lane
+      A for the same reason. `tests/fixtures/data/index/` was rebuilt with it.
+1193. **§9's answer is neither of the two the brief offers**, and the section
+      above says why: one of them cannot be done and the other is more than the
+      promise needs.
+1194. **The map's bottom-left corner was restacked, which the brief did not
+      ask for.** §4 puts the borders line in the corner, and the corner and the
+      key were both absolutely positioned at the same point — invisible while
+      the corner was usually empty, and the key's button over the first words
+      of the line the moment it was not. They are one column now, the key at
+      the foot where it has always been. The first screenshot is what showed
+      it.
+1195. **`about.html`'s one screen is a rewrite and not a cut.** The brief says
+      "in words that `README.md` and the intro already use"; a page assembled
+      out of the essay's own paragraphs would have been the essay again at a
+      quarter the length. Every sentence is drawn from what the repository says
+      of itself — `WHAT_IT_IS`, the essay's three confidence definitions,
+      `README.md`'s four licences, the essay's own paragraph on contributions —
+      and none of it is about history.
+1196. **`README.md` and `CLAUDE.md` gained a line each**, naming `essay.html`.
+      A page nothing in the repository mentions is a page the next run deletes.
+1197. **The browser test for §1 runs on `data/` and not on the fixtures.** The
+      brief asks for "the first paint on the fixtures". It cannot be asked of
+      them: every fixture event outside the thirteenth century has no place, so
+      the map could never draw a second century of them however the window
+      opened — a fact about the fixtures and not about the atlas. What the
+      review saw was `data/`, and that is what the test asks. The pure test
+      asks both.
+1198. **`tests/keyboard-browser.test.mjs` was repaired.** It read a lane's
+      membership on one frame and its order on another; since M77 a shard
+      landing repacks the rows, so the race it won while the atlas opened on
+      one century it loses now that it opens on all of them. One evaluation,
+      after the titles. The assertions are unchanged.
+1199. **Three suites lost assertions and did not gain equivalents one for
+      one.** `tests/m68.test.mjs` no longer counts the modules containing
+      `data-category` (the browser suite asserts the DOM rule);
+      `tests/m64.test.mjs` no longer asserts that the two band drawings contain
+      no `addEventListener('wheel'` or `('pointermove'`. Both are the brief's
+      "drop it where the behavioural test already holds the rule", and the
+      positive assertions — the two drawings ask for `bindWindowGestures`, the
+      shared module answers every gesture — stay.
+1200. **`WHEEL_FACTOR` was exported in §1's commit and taken up in §7's.** It
+      belongs to §7; it landed with the rewrite of `util/window.js` that §1
+      needed, and `zoomWindow` in the same file uses it, so splitting it would
+      have left that file inconsistent for one commit.
+1201. **`m85-first-screen.png` is taken with no window in the query at all.**
+      `m82-first-screen.png` carries `from=1900&to=1999`, because that is what
+      the atlas opened on when it was taken. The two are therefore not the same
+      state, and that is the point of the milestone rather than an oversight.
+1202. **The timeline keeps the 32 px row the borders line stood on.** The line
+      went to the map (§4) and the height did not: the band's two years and the
+      umbrella names below them are laid out against it, and reclaiming twelve
+      pixels is a change to the drawing that nothing asked for.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -20061,3 +20498,7 @@ M83 started 2026-09-22T16:38:15Z by scheduled (branch m83)
 M83 done
 M42 started 2026-09-22T21:07:15Z by scheduled
 M42 started 2026-09-22T23:42:00Z by scheduled
+M84 started 2026-09-22T20:15:57Z by scheduled (branch m84)
+M84 done
+M85 started 2026-09-22T21:28:16Z by scheduled (branch m85)
+M85 done
