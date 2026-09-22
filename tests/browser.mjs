@@ -215,13 +215,16 @@ export async function withBrowser(fn, { device = null, touch = false, args = [] 
   // A deadline and not a count of tries: the old loop slept only when the
   // fetch threw, so a Chromium that answered before it had made its first
   // page spent its hundred tries in a few milliseconds and failed a browser
-  // that was seconds from ready. Thirty seconds because a cold shared runner
+  // that was seconds from ready. Sixty seconds because a cold shared runner
   // unpacking a browser for the first test in a file is slow and this failing
-  // spuriously has cost three checks (deviations 551, 553); it is still well
-  // under the job's `--test-timeout`, and a browser that is genuinely absent
-  // still fails, just later and with a reason.
+  // spuriously has cost three checks at thirty (deviations 551, 553) and, on
+  // 22 September 2026, three more in one evening — two runs of pull request
+  // #20 and one of `m42`, each on the first test of `compose-browser`, each
+  // with Chromium alive and no page listed at the deadline, each green on the
+  // next try; it is still under the job's `--test-timeout`, and a browser
+  // that is genuinely absent still fails, just later and with a reason.
   let targets = null;
-  const deadline = Date.now() + 30_000;
+  const deadline = Date.now() + 60_000;
   while (!targets && Date.now() < deadline && exited === null) {
     try {
       const response = await fetch(`http://127.0.0.1:${debugPort}/json/list`);
