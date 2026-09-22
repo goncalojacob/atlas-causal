@@ -3414,34 +3414,6 @@
       "cites": [
         "wikipedia-en"
       ],
-      "created": "2026-09-22",
-      "from": "berlin-conference",
-      "id": "berlin-conference--scramble-for-africa--enabled",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "scramble-for-africa",
-      "type": "enabled"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
       "created": "2026-09-21",
       "from": "berlin-conference",
       "id": "berlin-conference--second-boer-war--precondition-of",

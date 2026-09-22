@@ -4430,3 +4430,21 @@ with.
   1345275508, names no other event this atlas holds. It is filed under
   `colombian-conflict` because Wikidata says it is part of it, and the filing
   is the whole of what is claimed.
+
+## 2ae. The edge that was deleted, and why it was right to delete it
+
+*22 September, at the end of the fire.* `berlin-conference --enabled-->
+scramble-for-africa`, written in batch 29 and argued in § 2ab above, **is
+deleted**. `tests/m42-filing.test.mjs` refuses any edge at either end of a
+record carrying the `m42-umbrella` flag — *"an umbrella is not a claim"* — and
+`scramble-for-africa` is one of the three umbrellas the filing pass created.
+
+The argument the edge rested on is not withdrawn: the period's own article
+does say the conference "laid down the rules of competition by which the great
+powers were to be guided in seeking colonies" and "transformed Africa's
+colonization from informal economic penetration to systematic political
+control". What is withdrawn is the claim that **that sentence can be an edge
+in this atlas**, and the reason is A6's own: a period is a filing, a way of
+making the resting timeline readable, and it is not a thing that happens to
+other things. Batch 29 wrote the edge without checking the rule the same run
+had written; the suite caught it before the check did.

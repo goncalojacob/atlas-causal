@@ -4271,7 +4271,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 4,
+      "degree": 3,
       "id": "berlin-conference",
       "kind": "event",
       "origin": {
@@ -12967,7 +12967,6 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
       "id": "scramble-for-africa",
       "kind": "event",
       "origin": {
@@ -17360,6 +17359,12 @@
     },
     {
       "id": "revolution-in-the-kingdom-of-poland",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "scramble-for-africa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

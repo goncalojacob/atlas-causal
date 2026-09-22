@@ -15168,6 +15168,42 @@ largest component 495 to **498**, components 40 to **43**. Argued in
      invented, no record was signed, no value on an imported record was
      changed, and nothing was merged into `main`.
 
+### Batch 31a — the suites run, and one edge of this fire deleted
+
+Three pure tests were red at the end of the fire and all three were this
+fire's doing. **`berlin-conference --enabled--> scramble-for-africa` is
+deleted**: `tests/m42-filing.test.mjs` refuses an edge at either end of an
+`m42-umbrella` record, and batch 29 wrote one without checking the rule the
+same run had written. `docs/m53-polities.md` §4.1 is retaken at **308 of
+561** and `docs/m67-umbrellas.md` gains section 12 for batch 31's six bare
+records. **All 1,638 pure tests pass.**
+
+Corrected figures for the fire: **10 edges written**, not 11; largest
+component **497**, not 498; components **44**; events with no edge at all
+**28**.
+
+### Deviations
+
+1060. **A run can break a rule its own milestone wrote three fires earlier,
+     and the suite is the only thing that will say so.** A6's umbrellas are a
+     filing and not history, and `tests/m42-filing.test.mjs` says it as a
+     property — no edge at either end of an `m42-umbrella` record. Batch 29
+     read `scramble-for-africa`'s own article, found a real argument in it,
+     and wrote the edge without asking whether the record was allowed to have
+     one. **The argument stands and the edge does not**: what would have to
+     change for the Berlin Conference to be linked to the scramble is the
+     record, not the edge — somebody would have to decide the scramble is an
+     event rather than a period.
+1061. **The tests were run at the end of the fire and not between the
+     batches, and that cost a batch's measurement its accuracy for three
+     commits.** Batches 29, 30 and 31 each validated (`validate --index`
+     clean) and each pushed before the next, which is what STEP 3 asks; the
+     suites were run once, at the end. `validate` does not know about
+     `m42-umbrella` — that rule lives only in the suite — so a clean
+     validator said nothing about the edge. **A fire that writes edges should
+     run `tests/m42-filing.test.mjs` and `tests/m67.test.mjs` with the batch,
+     not with the fire**: they take seven seconds together.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

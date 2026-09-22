@@ -1870,3 +1870,39 @@ easy rows are gone:
 - **The Gaza cluster**, six rows, for the owner.
 - **Sudan's five**, which want an import chosen for them (deviation 1049).
 - **The Arab Spring's asian half**, unchanged.
+
+## Batch 31a — the edge to an umbrella, deleted, and the test that caught it
+
+*22 September, at the end of the same fire, running the suites before going
+idle. Three pure tests were red and all three were this fire's doing.*
+
+**`berlin-conference --enabled--> scramble-for-africa` is deleted.** The
+filing pass wrote `tests/m42-filing.test.mjs` → *"an umbrella is not a claim:
+this pass wrote no edge on to one"*, which refuses an edge at **either** end
+of any record carrying the `m42-umbrella` flag, and `scramble-for-africa`
+carries it. The edge was argued from the period's own article and the
+argument is sound; **the rule it breaks is the run's own and older**, and A6's
+umbrellas are filing and not history. So the edge goes and the reasoning stays
+here: a period is a display fact, and what would have to change for the
+Berlin Conference to be linked to the scramble is the *record*, not the edge —
+somebody would have to decide the scramble is an event and not a period.
+
+The correction moves the numbers of batch 29 and of this fire:
+
+| | as batch 29 reported | corrected |
+| --- | --- | --- |
+| edges written, batch 29 | 4 | **3** |
+| largest component after batch 29 | 493 | **492** |
+| largest component now | 498 | **497** |
+| components now | 43 | **44** |
+| events with no edge at all | 27 | **28** |
+| edges written this fire | 11 | **10** |
+
+`scramble-for-africa` is a singleton again, and by deviation 1056 the way to
+un-strand it is to import a record under it, which batch 28 already did four
+times.
+
+**The other two reds were measurements, not records.** `docs/m53-polities.md`
+§4.1 is retaken at **308 of 561**, and `docs/m67-umbrellas.md` gains section 12
+— A1's clause for batch 31's six bare records, which name neither an actor nor
+a place because their items give neither. **All 1,638 pure tests pass.**

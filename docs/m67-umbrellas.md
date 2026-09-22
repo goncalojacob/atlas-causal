@@ -710,3 +710,30 @@ Romania being the only ally of the Third Reich that carried out a genocidal
 campaign without the intervention of Heinrich Himmler's SS." **The filing says
 the first and the absence of an edge says the second**, which is the clearest
 case this run has found of `parent` and an edge being two different claims.
+
+## 12. M42 batch 31 — six more bare records, all six filed
+
+*22 September, the third batch of the fire that began at 05:06. The
+measurement is in `docs/m42-pool.md` → "Batch 31". A1's clause again and for
+the same reason: **all six name neither an actor nor a place**, because their
+Wikidata items give neither and nothing was invented to cover it.*
+
+| the record | filed under | the umbrella's lane, where it is one |
+| --- | --- | --- |
+| `1979-herat-uprising` | `afghan-conflict` | not an A6 umbrella |
+| `bala-hissar-uprising` | `afghan-conflict` | not an A6 umbrella |
+| `mountain-war` | `lebanese-civil-war` | not an A6 umbrella |
+| `effacer-le-tableau` | `second-congo-war` | not an A6 umbrella |
+| `colombian-peace-process` | `colombian-conflict` | not an A6 umbrella |
+| `assassination-of-miguel-uribe-turbay` | `colombian-conflict` | not an A6 umbrella |
+
+**None of the six goes under a period**, which is why the lane column has no
+work to do in this batch: every parent here is an ordinary conflict record
+that Wikidata's own `P361` named, and the filing was taken because the child's
+whole interval falls inside the parent's. Four of the six carry a lane written
+by the import from `data/imports/wikidata-seeds.json` → `lanes`, because the
+items carry no point; that is deviation 1029's one-line fix and not a claim
+about where anything happened.
+
+**Nothing here was given an actor or a place to make it filable**, and the
+records that earned no edge kept none.
