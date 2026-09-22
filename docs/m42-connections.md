@@ -4359,3 +4359,74 @@ Sudan's five, which is still a fragment.
 29.** The method's yield is falling as the easy fragments go, and what is left
 is mostly umbrellas — which is the finding of the batch and is in
 `docs/m42-pool.md`.
+
+## 2ad. Batch 31 — four edges for six imports, and the three that earned none
+
+*22 September, the third batch of the same fire and the first that imported
+anything. Six rows of the `part of` vein, all filed. The measurement, and the
+forty-six refusals, are in `docs/m42-pool.md` → "Batch 31".*
+
+#### `saur-revolution --reacted-to--> 1979-herat-uprising`
+
+The uprising's article, revision 1370623531. Lead: it "included both a popular
+uprising and a mutiny of ethnic Tajik Afghan Army troops against the Democratic
+Republic of Afghanistan (DRA) … the deadliest incident in the 1978-1979 period
+following the Saur Revolution and before the start of the Soviet occupation in
+December 1979." Background: "The events in Herat took place in the wider
+context of unrest against the communist reforms implemented by the DRA, of
+which the principal was agrarian reform … Starting in May 1978 in Nuristan,
+spontaneous uprisings took place throughout Afghanistan against the DRA and its
+policies." And the article reports the Soviet Politburo's own assessment "that
+it was caused by the DRA regime". The revolution installed the regime the
+rising rose against, which is what `reacted-to` says here.
+
+#### `1979-herat-uprising --precondition-of--> soviet-afghan-war`
+
+The same article, § Aftermath: "the Soviets did increase their military
+assistance in the following months … Despite this, the situation of the Afghan
+armed forces continued to deteriorate, with mutinies occurring in Jalalabad,
+Asmar, Ghazni, Nahrin, and in August 1979, the Bala Hissar uprising on a
+fortress in Kabul. Though these were all put down, the weakness of the military
+contributed significantly to the spread of the insurgency. On December 24,
+1979, under Leonid Brezhnev, the Soviet Union deployed the 40th Army,
+commencing the start of the Soviet–Afghan War." Herat is the first and largest
+of those mutinies and the one the Soviets were asked for help with and refused.
+`precondition-of`: the article makes the army's weakness what spread the
+insurgency, not this rising by itself.
+
+#### `1982-lebanon-war --enabled--> mountain-war`
+
+Revision 1371504591, § Background: "In the wake of the June 1982 Israeli
+invasion of Lebanon, the main Maronite Christian ally of Israel, the Lebanese
+Forces (LF) militia … sought to expand its area of influence in Lebanon. The LF
+tried to take advantage of Israel Defense Forces (IDF) advances to begin
+deploying troops in areas where they had not been present before … With the
+tacit backing of the IDF, Lebanese Forces' units … moved into the
+Christian-populated areas of the western Chouf … However, this brought them
+into confrontation with the local Druze community, who viewed the LF as
+intruders on their territory." The invasion put the Lebanese Forces on ground
+they had not held; the confrontation there is this war.
+
+#### `colombian-conflict --reacted-to--> colombian-peace-process`
+
+Revision 1375561117, first sentence: the process "refers to the negotiations
+between the Government of Colombia under President Juan Manuel Santos and the
+Revolutionary Armed Forces of Colombia (FARC–EP) aimed at ending the
+decades-long Colombian conflict." A peace process is what a war is answered
+with.
+
+### The three that earned none
+
+- **`bala-hissar-uprising`.** Its own English article is 1,534 characters and
+  says what happened and nothing about why; the Herat article names it only in
+  a list of mutinies. An edge from `saur-revolution` would have been the
+  Herat argument applied to a record whose own source does not make it.
+- **`effacer-le-tableau`.** "a military operation carried out **during** the
+  Second Congo War by the Movement for the Liberation of the Congo and Rally
+  for Congolese Democracy-National against the government-aligned Rally for
+  Congolese Democracy-Movement for Liberation." That is containment, which is
+  what the filing carries.
+- **`assassination-of-miguel-uribe-turbay`.** The article, at revision
+  1345275508, names no other event this atlas holds. It is filed under
+  `colombian-conflict` because Wikidata says it is part of it, and the filing
+  is the whole of what is claimed.

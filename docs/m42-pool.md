@@ -1731,3 +1731,142 @@ and `eritrean-civil-wars`.
 - **The dates**, unchanged since batch 28 and still the clearest afternoon's
   work a person could do here.
 - **The Arab Spring's asian half**, unchanged, and the owner's to decide.
+
+## Batch 31 — the `part of` vein re-scanned whole, and the six of fifty-two that file cleanly
+
+*22 September, the third batch of the same fire and the first that imported
+anything. Two connection-only batches had left the corpus where they found it,
+so this one went back to volume — and the scan says the vein is not where the
+last three fires thought it was.*
+
+| | |
+| --- | --- |
+| open world rows scanned | **1,052** — unticked, not already held, not in the import state's `done` |
+| rows whose `P361` names an active event here | **52** |
+| of those, filing cleanly on depth, span and lane | **6** |
+| taken | 6 |
+| created | **6** |
+| filed | **6** |
+| edges written | **4** |
+| classes added | 0 |
+| lanes named for a placeless row | 4 — `Q7784981`, `Q4578716`, `Q5783195`, `Q5858325` |
+| corpus | 555 → **561** active |
+| **main** | **252, unchanged** — the sixth batch running |
+| largest connected component | 495 → **498** |
+| components | 40 → **43** |
+| the sweep pool, world sections | 1,052 → **1,046** open rows |
+| API calls | 22 for the scan, 12 for the import, 5 article reads |
+
+**The six, and what each earned.**
+
+| the record | filed under | the edge it earned |
+| --- | --- | --- |
+| `1979-herat-uprising` | `afghan-conflict` | `saur-revolution --reacted-to-->` it, and it `--precondition-of--> soviet-afghan-war` |
+| `mountain-war` | `lebanese-civil-war` | `1982-lebanon-war --enabled-->` it |
+| `colombian-peace-process` | `colombian-conflict` | `colombian-conflict --reacted-to-->` it |
+| `bala-hissar-uprising` | `afghan-conflict` | none |
+| `effacer-le-tableau` | `second-congo-war` | none |
+| `assassination-of-miguel-uribe-turbay` | `colombian-conflict` | none |
+
+`afghan-conflict` and `colombian-conflict` were both singleton umbrellas at the
+start of this batch, and both now carry an edge — which is the answer to the
+table in batch 30: **an umbrella joins the chain through a record imported
+under it, not through an edge written to it.**
+
+### Why forty-six of the fifty-two were refused, which is the batch's finding
+
+The previous fires reported "roughly forty clean rows untaken" of a vein of
+57. **Re-scanned over the whole pool the vein is 52 rows and only six of them
+file cleanly**, because the filing rule bites in four different ways and the
+easy rows are gone:
+
+- **Depth (10 rows).** `Q965477` Grossaktion Warsaw under `operation-reinhard`,
+  `Q999143` the 1949 Armistice Agreements under `1948-arab-israeli-war`,
+  `Q1752743` the Taliban insurgency and `Q3152953` the 2001 Herat uprising
+  under `war-in-afghanistan-2001-2021`, `Q113115005` Balkhab under
+  `republican-insurgency-in-afghanistan`, `Q4919446` the 1970 Cambodian coup
+  under `cambodian-civil-war`, `Q123775571` under `war-in-bosnia-and-herzegovina`,
+  `Q266909` the Ruhr Uprising under `kapp-putsch`, `Q3686584` the Conference of
+  London under `paris-peace-conference`, and three of the Gaza rows under
+  `gaza-genocide`. **Their parent already has a parent**, and A6 nests one
+  deep.
+- **Span (13 rows), and it is the interesting one.** Wikidata says a thing is
+  part of a war; this atlas dates that war more narrowly and the child falls
+  outside it. `chinese-civil-war` here is **1946–1950**, so the four risings of
+  1927 that Wikidata files under the Chinese Civil War — `Q32993` the Chinese
+  Communist Revolution, `Q476634` Nanchang, `Q992318` Autumn Harvest,
+  `Q1038900` Guangzhou — cannot go under it, and neither can `Q124809504`,
+  which starts 1946-01-01 against a parent that starts 1946-03-31.
+  `turkish-war-of-independence` here is **1922–1923**, so the Franco-Turkish
+  and Turkish–Armenian wars of 1918–1920 fall out.
+  `Q696482` *Great Depression in the United States* begins **five days before**
+  `great-depression`, which this atlas dates from 29 October 1929 and that item
+  from the 24th. `Q1070890` the Georgian civil war of 1991–1993 is refused by
+  `dissolution-of-the-soviet-union`'s single day. `Q107177113` the Somaliland
+  War of Independence (1981) is a decade before `somali-civil-war` (1991).
+  `Q5935403` the Hukbalahap Rebellion runs 1942–1954 against a `world-war-ii`
+  that ends in 1945. **The span rule is doing real work and it is the reason
+  the vein's yield collapsed**: the atlas's own dating is narrower than
+  Wikidata's `part of` almost everywhere.
+- **Lane (1 row).** `Q2992403` the Franco-Syrian War under `interwar-period`,
+  which is a europe-lane period; Syria is asia. Deviation 1023 for the fourth
+  time.
+- **A record that would sit between a record here and its own children (5
+  rows).** `Q1780216`, `Q2002270` and `Q2609193` — the Angolan, Mozambican and
+  Guinea-Bissau wars of independence — would go under
+  `portuguese-colonial-war-1961-1974`, **whose children are already
+  `angola-war-begins-1961`, `guinea-war-begins-1963` and
+  `mozambique-war-begins-1964`**: the theatre war would contain its own
+  siblings. `Q796498` the Third Indochina War is batch 21's refusal exactly
+  (it would sit between `indochina-wars` and `sino-vietnamese-war`), and
+  `Q18920712` *War in Afghanistan (2015–2021)* is a slice of
+  `war-in-afghanistan-2001-2021`.
+- **A duplicate the vein pointed at itself (1 row).** `Q4818171` *Persian
+  Constitutional Revolution* files under `constitutionalization-attempts-in-iran`
+  — and that record is `Q1368440`, whose **Portuguese label is "Revolução
+  Constitucional Persa"**, the same event under a second item. The `part of`
+  vein can name a record's own parent as the record itself, and the check that
+  catches it is reading the labels in both languages.
+- **The Gaza cluster (6 rows), left for a person.** `Q133309815`,
+  `Q122982851`, `Q123049614`, `Q135918673`, `Q126180008` and `Q126113055` file
+  under `gaza-war` or `gaza-genocide`. Five of the six carry `genocide` as
+  their Wikidata type for events still under way, and `CLAUDE.md` is explicit
+  that presenting a disputed characterisation as settled is the worst mistake
+  this project can make. The import would mark them draft and quote the item,
+  which is exactly what the machinery is for — but the batch would be six
+  contested contemporary records arriving at once, and **that is an owner's
+  call and not a run's.** They are listed here rather than ticked.
+
+## Where the run stands after batch 31, for the fire that picks it up
+
+*22 September, 08:00, after a fire that landed three batches on `m42`.*
+
+| | |
+| --- | --- |
+| corpus | **561 active**, from 555 at the start of the fire |
+| **main** | **252**, unchanged across all three batches |
+| largest connected component | **498**, from 480 |
+| components | **43**, from 47 |
+| imported this fire | 6 records, **6 filed** |
+| edges written | **11** |
+| events with no edge at all | **27**, from 28 |
+| the sweep pool, world sections | **1,046** open rows |
+| the `part of` vein | **spent**: 52 rows, 6 taken, 46 refused with reasons above |
+
+**What is still open, in the order a fire should weigh it:**
+
+- **The vein is spent and the next volume has to come from somewhere else.**
+  The 1,046 open rows are still there and they are ranked by sitelinks; a row
+  taken that way arrives **main**, which A6 forbids without a filing. **The
+  next fire's first question is where a filed import can come from now** — the
+  honest candidates are a row whose `P361` names a record whose dates this
+  atlas could widen from its own source, and a new umbrella for a region that
+  has none.
+- **The dates, and now with a price attached.** Thirteen of the forty-six
+  refusals are span refusals, and several are a matter of days: the Great
+  Depression by five, the second Chinese civil war by three months. **A
+  person's afternoon on `when` would reopen the vein**, which is the first
+  time this run can say what the date work is worth.
+- **The Gaza cluster**, six rows, for the owner.
+- **Sudan's five**, which want an import chosen for them (deviation 1049).
+- **The Arab Spring's asian half**, unchanged.

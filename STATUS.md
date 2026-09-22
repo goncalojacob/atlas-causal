@@ -15116,6 +15116,58 @@ fifth batch running**. Largest component 493 to **495**, components 43 to
      record was created, no date was invented, no record was signed, no value
      on an imported record was changed, and nothing was merged into `main`.
 
+### Batch 31 — the `part of` vein re-scanned whole, six imports, four edges
+
+The vein re-scanned over all 1,052 open world rows: **52 name an active event
+here and only six file cleanly**. Six taken, **six filed**, **four edges**.
+Corpus 555 to **561**, main **252 and unchanged for the sixth batch running**,
+largest component 495 to **498**, components 40 to **43**. Argued in
+`docs/m42-connections.md` → "2ad", measured in `docs/m42-pool.md` → "Batch 31".
+
+### Deviations
+
+1055. **The `part of` vein is spent, and the span rule is what spent it.**
+     Thirteen of the forty-six refusals are a row whose Wikidata parent this
+     atlas dates more narrowly than Wikidata does: `chinese-civil-war` here is
+     1946–1950, so the four risings of 1927 cannot file under it;
+     `turkish-war-of-independence` is 1922–1923, so the Franco-Turkish and
+     Turkish–Armenian wars fall out; **`Q696482` *Great Depression in the
+     United States* begins five days before `great-depression`** because this
+     atlas dates the slump from 29 October 1929 and that item from the 24th.
+     Ten more are refused on depth, one on the lane, five for sitting between
+     a record here and its own children. **The date work now has a price
+     attached: a person's afternoon on `when` would reopen the vein**, which
+     is the first time this run can say what it is worth.
+1056. **An umbrella joins the chain through a record imported under it, not
+     through an edge written to it.** Batch 30's table said seven singleton
+     components are umbrellas; two of them — `afghan-conflict` and
+     `colombian-conflict` — carry an edge tonight, and in both cases the edge
+     runs to or from a record this batch filed under them. **The way to
+     un-strand an umbrella is to import its children**, which is also what A3
+     and A6 ask for, and not to find an argument for the umbrella itself.
+1057. **The vein can point a record at itself under a second item.**
+     `Q4818171` *Persian Constitutional Revolution* files under
+     `constitutionalization-attempts-in-iran`, and that record is `Q1368440`,
+     whose Portuguese label is "Revolução Constitucional Persa" — the same
+     event under two Wikidata items, one of them the other's declared parent.
+     **The check that catches it is reading the labels in both languages**,
+     and a `part of` that names the record's own subject is a duplicate and
+     not a filing.
+1058. **Six Gaza rows were left for the owner and not ticked.** `Q133309815`,
+     `Q122982851`, `Q123049614`, `Q135918673`, `Q126180008` and `Q126113055`
+     file cleanly under `gaza-war` or `gaza-genocide`, and five carry
+     `genocide` as their Wikidata type for events still under way. The import
+     would mark them draft and quote the item, which is what the machinery is
+     for; but `CLAUDE.md` says presenting a disputed characterisation as
+     settled is the worst mistake this project can make, and **six contested
+     contemporary records arriving in one batch is an owner's call and not a
+     run's.** They are listed in `docs/m42-pool.md` rather than imported.
+1059. **No historical claim was written.** Every record is the import's own
+     work from the item's fields; every edge explanation is a paraphrase of a
+     sentence the cited article carries at the cited revision. No date was
+     invented, no record was signed, no value on an imported record was
+     changed, and nothing was merged into `main`.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
