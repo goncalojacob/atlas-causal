@@ -298,3 +298,25 @@ denied (the pass says how many gained one); and **the decolonisation of
 Africa is an umbrella**, with the span its Wikipedia article states and the
 revision cited — the owner asked for it by name. Until `M79 done` is on
 `origin/m0`, a record still has one parent and this amendment waits.
+
+**A9 (22 September). An imported event gets the place its item names.** The
+owner, focused on the Russo-Ukrainian war and looking at an empty map: *"it
+should show children events on the map in case they have a place."* 435 of
+the 444 placeless active events are the import's, and they are placeless by
+the import's own rule — *"an event whose location is not already a place of
+this atlas is placeless and takes a lane instead"* — written when creating a
+place record was creating a record nobody asked for. **The owner has now
+asked for it.** From the next fire, a **place pass** and then the rule for
+every batch after it: for each active event with no `place` and a Wikidata
+item, read `P276` (location), then `P131` (administrative territory), then
+`P17` (country), in that order, and **the first item that carries `P625`
+becomes the event's place**: an existing place record with that item is
+reused; otherwise the import writes one, with the point, the label, and
+`precision` `city` for a settlement or `region` for anything larger that is
+not a state. **Until `M80 done` is on `origin/m0`, an event whose only
+located thing is its country stays placeless** — M80 adds the `country`
+precision and the mark that draws it; from then on the country's point is a
+place too, at that precision. The pass reports how many events gained a
+place at each precision and how many are still placeless and why, in
+`docs/m42-pool.md` under `## Places (A9)`. Nothing invented: a point comes
+from `P625` or the event stays placeless.
