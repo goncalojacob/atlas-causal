@@ -16225,9 +16225,12 @@ historical claim, no filing. `docs/drafts/` ignored. Deviations **1136 to
       silence the warning would have moved the graph fixtures every
       consequence test is written against. Deviation 711's order was followed:
       the records committed, then the index rebuilt, then the index committed.
-1142. **`timeline-browser` 217 was red on `m0` before this branch existed.**
-      `Math.abs(after - before) < 10` on a drawing of 969 elements read 12, on
-      `m0`'s own head and on this branch alike — M42's filing pass had landed
+1142. **`timeline-browser` 217 was red on `m0` before this branch existed, and
+      the claim commit is the proof.** Run 1237, on `70313d9a` — an `m0` tree
+      with one line appended to `STATUS.md` and nothing else — failed on that
+      one assertion, `969 to 958`, and a checkout of `origin/m0` in the sandbox
+      failed on it twice at `969 to 957`. `Math.abs(after - before) < 10` on a
+      drawing of 969 elements: M42's filing pass had landed
       more rings in the bars layer, which is the paragraph written directly
       above the assertion. It is a share of the drawing now (two per cent, or
       ten, whichever is larger), as the two bounds above it already are. An
