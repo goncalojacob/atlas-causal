@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-20",
+  "revised": "2026-09-22",
   "origin": {
     "tool": "wikidata"
   },
@@ -52,7 +52,10 @@
   },
   "place": null,
   "region": "europe",
-  "parent": "first-portuguese-republic-1910-1926",
+  "parent": [
+    "first-portuguese-republic-1910-1926",
+    "interwar-period"
+  ],
   "category": "election",
   "actors": [
     {

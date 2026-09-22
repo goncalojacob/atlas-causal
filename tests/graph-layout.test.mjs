@@ -16,6 +16,7 @@ import {
   layoutGraph, stackLayout, crosses, BAND_HEIGHT, AXIS_HEIGHT, STACK_DISTANCE, MAX_ZOOM,
 } from '../src/graph-view/layout.js';
 import { zoomBucket, ZOOM_BUCKETS_PER_OCTAVE, SPLIT_MARGIN } from '../src/cluster.js';
+import { astronomicalBounds } from '../src/util/dates.js';
 import { ROOT, corpusOf } from './helpers.mjs';
 
 const REGIONS = [
@@ -393,7 +394,13 @@ test('the whole atlas lays out: every event placed, every edge drawn', async () 
   const events = t.events.filter((e) => e.status === 'active');
   const ids = new Set(events.map((e) => e.id));
   const edges = t.edges.filter((e) => e.status === 'active' && ids.has(e.from) && ids.has(e.to));
-  const starts = events.map((e) => e.when.start);
+  // Through the bound reader and not off the field: a bound is "either an
+  // exact year or a { min, max } range" (schema/common/interval.json), and
+  // `Math.min` over an object is NaN, which makes the whole extent NaN and
+  // every assertion below it meaningless rather than false. The corpus grew
+  // its first event with a range start — a period whose article dates its
+  // beginning as "the mid-1950s" — and that is what found this.
+  const starts = events.map((e) => astronomicalBounds(e.when.start).min);
   const lanes = regionLanes(events, [...regions].sort((a, b) => a.order - b.order));
   const l = layoutGraph({
     events, edges, lanes, extent: { min: Math.min(...starts), max: Math.max(...starts) },
@@ -424,7 +431,13 @@ test('the whole atlas at the default zoom: fewer nodes than events, and they add
   const events = t.events.filter((e) => e.status === 'active');
   const ids = new Set(events.map((e) => e.id));
   const edges = t.edges.filter((e) => e.status === 'active' && ids.has(e.from) && ids.has(e.to));
-  const starts = events.map((e) => e.when.start);
+  // Through the bound reader and not off the field: a bound is "either an
+  // exact year or a { min, max } range" (schema/common/interval.json), and
+  // `Math.min` over an object is NaN, which makes the whole extent NaN and
+  // every assertion below it meaningless rather than false. The corpus grew
+  // its first event with a range start — a period whose article dates its
+  // beginning as "the mid-1950s" — and that is what found this.
+  const starts = events.map((e) => astronomicalBounds(e.when.start).min);
   const dataExtent = { min: Math.min(...starts), max: Math.max(...starts) };
   const lanes = regionLanes(events, [...regions].sort((a, b) => a.order - b.order));
   // No grouping is the default the atlas opens on; the regions are the
@@ -512,7 +525,13 @@ test('the whole atlas is counted pair for pair too', async () => {
   const events = t.events.filter((e) => e.status === 'active');
   const ids = new Set(events.map((e) => e.id));
   const edges = t.edges.filter((e) => e.status === 'active' && ids.has(e.from) && ids.has(e.to));
-  const starts = events.map((e) => e.when.start);
+  // Through the bound reader and not off the field: a bound is "either an
+  // exact year or a { min, max } range" (schema/common/interval.json), and
+  // `Math.min` over an object is NaN, which makes the whole extent NaN and
+  // every assertion below it meaningless rather than false. The corpus grew
+  // its first event with a range start — a period whose article dates its
+  // beginning as "the mid-1950s" — and that is what found this.
+  const starts = events.map((e) => astronomicalBounds(e.when.start).min);
   const dataExtent = { min: Math.min(...starts), max: Math.max(...starts) };
   const lanes = regionLanes(events, [...regions].sort((a, b) => a.order - b.order));
   for (const [what, groups] of [['bandless', []], ['regions', lanes]]) {

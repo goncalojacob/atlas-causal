@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "decolonisation-of-africa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m42-umbrella"
+    ]
+  },
+  "wikidata": "Q1146918",
+  "wikipedia": {
+    "en": "Decolonisation of Africa",
+    "pt": "Descolonização de África"
+  },
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Decolonisation of Africa\", revision 1372152864: \"a series of political developments in Africa between the mid-1950s to 1976, during the Cold War\""
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1146918"
+    }
+  ],
+  "title": "Decolonisation of Africa",
+  "summary": "The period in which the colonial governments formed during the Scramble for Africa gave way to sovereign states. The span is the one the cited article states and no other: \"between the mid-1950s to 1976\". The end is a year the article gives; the start is not, so it is written as the range 1954-1956 that \"mid-1950s\" names rather than as a year nobody wrote down, and the containment test reads the early end of that range. Nothing here is this atlas's account of the period: it is an umbrella, which is a display fact and not an argument, and review.html is where somebody writes the account.",
+  "when": {
+    "start": {
+      "min": 1954,
+      "max": 1956
+    },
+    "end": 1976
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Africa is the period's own subject, so the lane is the article's and not a derivation: this event points at no place record and a continent has no point.",
+  "category": "other",
+  "actors": []
+}
