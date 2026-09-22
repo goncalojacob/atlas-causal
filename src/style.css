@@ -710,6 +710,19 @@ body:not(.phone) .layout.panel-empty.composing {
   /* The summary is the collapsed group's one target, so it is a target: a
      20 px line with thirteen rows behind it is a thumb's worth of guesswork. */
   .bar .layers summary, .bar .categories-control summary { display: flex; align-items: center; }
+  /* The graph's key, folded to one button (M82, A1). It covered half the
+     picture at 390 px — `m77-graph-phone.png` — which is a legend hiding the
+     thing it is a legend to. Pressing it is a gesture, so the box takes the
+     pointer back; on a desktop it has none and neither does the button. */
+  .graph-key { pointer-events: auto; max-width: calc(100% - var(--space-3) * 2); }
+  .graph-key .graph-key-toggle {
+    display: flex; align-items: center; min-height: var(--touch);
+    border: 0; padding: 0; background: none; cursor: pointer;
+    font-family: var(--font-ui); font-size: var(--label); font-weight: 600;
+    text-transform: uppercase; letter-spacing: var(--tracking-label); color: var(--ink-soft);
+  }
+  .graph-key:not(.open) .graph-key-body { display: none; }
+
   .bar .views button { padding-inline: var(--space-4); }
   .panel .chips .chip { display: inline-flex; align-items: center; }
   .panel .section-toggle { padding-block: var(--space-3); }
@@ -1195,6 +1208,13 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 }
 .graph-key .edge-key { margin: 0; gap: 0.15rem var(--space-2); }
 .graph-key svg.key-line { width: 46px; }
+/* The key folds to one button on a phone and nowhere else (M82, A1): on a
+   desktop there is room for all of it and nothing to press. The phone's own
+   rule is in the one media query above, which is earlier in the file, so this
+   is written on the element and not on the box — a class less, so the phone's
+   `.graph-key .graph-key-toggle` outweighs it wherever it applies and there is
+   no second media query to keep in step with the first. */
+button.graph-key-toggle { display: none; }
 
 /* The picture as a file. Bottom right in both views, opposite the graph's
    key, and quiet: it is a way out, not a thing to do. */

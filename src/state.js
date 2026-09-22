@@ -168,14 +168,29 @@ export { VIEWS };
 // have turned it off.
 const PASSTHROUGH = Object.freeze(['fixtures', 'review']);
 
-// What the degree control offers, and where it starts. **Two**, and not zero:
-// the whole of M48 is that the interface has the right machinery and does not
-// apply it by default, and a floor of zero is the haze the owner was looking
-// at. Not three either — 3 takes the graph to 64 nodes of 250, and an event
-// with two links is an event that joins two others, which is what the picture
-// is of. 2 keeps 147 and drops the 103 that organise nothing.
+// What the degree control offers, and where it starts.
+//
+// It was **two** from M48 until M82, and the argument was good at the time:
+// 103 of the 250 active events had one edge or none, a picture of all of them
+// was eight nodes a reader could read and two hundred they could not, and a
+// floor of two kept the 147 that organise something.
+//
+// **Zero since M82, because M65 made the argument twice.** What a view draws at
+// rest is the *main events* — those that are part of nothing else — and that is
+// already the answer to "do not draw the haze": the parts of a war are drawn
+// when the reader opens the war. The degree floor on top of it was a second
+// filter nobody had asked for, applied before the first click, and what it
+// removed was not haze but ninety-one events that are nothing's parts and
+// happen to have one link or none. The reviewer measured the difference on the
+// live site — 154 nodes against 245 main — and could not tell from the picture
+// which rule had taken the rest away.
+//
+// So **rest means rest**: with nothing asked, the graph draws the resting
+// picture and no more and no less (`arrangementOf`, `organises`). The control
+// is untouched and the reader still raises the floor from the masthead; it is
+// a thing they reach for, not a thing applied to them.
 export const DEGREE_CHOICES = Object.freeze([0, 1, 2, 3]);
-export const DEGREE_DEFAULT = 2;
+export const DEGREE_DEFAULT = 0;
 
 export function defaultState() {
   return {

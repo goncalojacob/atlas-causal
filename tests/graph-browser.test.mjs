@@ -568,7 +568,11 @@ test('the degree floor hides a leaf and keeps the hubs, and the reader moves it'
     const leaf = withoutFloor.find((id) => degree.get(id) === 1);
     assert.ok(leaf, 'the picture with no floor draws at least one event with one link');
 
-    await open(page, url('?view=graph'), drawnGraph);
+    // **Named, since M82.** The floor is zero by default now — rest means rest
+    // (A1) — so the picture a reader arrives at is the resting one and the
+    // floor is what they raise. What the floor promises is unchanged and is
+    // what this test is about, so the state it is asserted in says so.
+    await open(page, url('?view=graph&degree=2'), drawnGraph);
     await waitFor(page, `return !document.querySelector('svg.graph circle.node[data-id="${leaf}"]');`, 'the leaf to go');
     const drawn = await page.eval(DRAWN_IDS);
     assert.ok(drawn.length > 0, 'the graph still draws a picture');
@@ -579,7 +583,10 @@ test('the degree floor hides a leaf and keeps the hubs, and the reader moves it'
     // And the control moves it, writing what the reader did into the link.
     await page.eval(`const s = document.querySelector('.graph-filters [data-filter="degree"]');
       s.value = '0'; s.dispatchEvent(new Event('change', { bubbles: true })); return true;`);
-    await waitFor(page, "return new URLSearchParams(location.search).get('degree') === '0';", 'the URL to carry the floor');
+    // Zero is the default, and a default writes no parameter: what the link
+    // carries is what the reader asked for that the atlas would not have done
+    // anyway (state.js).
+    await waitFor(page, "return new URLSearchParams(location.search).get('degree') === null;", 'the floor to leave the URL');
     await waitFor(page, NODE(leaf), 'the leaf to come back');
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   });

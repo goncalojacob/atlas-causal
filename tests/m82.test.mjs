@@ -12,7 +12,13 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
-import { atlasOf, ROOT } from './helpers.mjs';
+import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
+import { defaultState } from '../src/state.js';
+import { workingSet } from '../src/emphasis.js';
+import { restingSet } from '../src/lens.js';
+import { parentsOf } from '../src/parts.js';
+import { arrangementOf } from '../src/graph-view/arrangement.js';
+import { timeAxis, timeSpan } from '../src/graph-view/layout.js';
 import { introHtml, WHAT_IT_IS } from '../src/intro.js';
 import { standingHtml, standingSlot } from '../src/standing.js';
 import {
@@ -97,5 +103,38 @@ test('A2: with the flag off nothing on a card is about reviewing, and with it on
   // Nothing under data/ moved: the two narratives are signed as they were.
   for (const n of atlas.activeNarratives ?? []) {
     assert.ok((n.authors ?? []).length > 0, `${n.id} still names its authors in the record`);
+  }
+});
+
+// 3 — A1. The graph at rest.
+//
+// Three properties and no count. **Rest means rest**: with nothing asked, what
+// the graph lays out is exactly the resting picture — M65's main events — and
+// no second rule takes any of them away before the reader has clicked.
+// **The axis is the drawn set's**, at rest as under a lens (M81). **And a name
+// is offered to every mark**, whole or not at all, which is the browser half.
+test('A1: at rest the graph lays out the resting picture and nothing else decides it', async () => {
+  const state = defaultState();
+  for (const [where, source] of [['data/', atlas], ['the fixtures', await atlasOf(FIXTURE_DATA)]]) {
+    const working = workingSet(source, state);
+    const arrangement = arrangementOf(source, state, new Set(), working.shown);
+    const drawn = new Set(arrangement.events.map((e) => e.id));
+    assert.deepEqual(
+      [...drawn].sort(), [...restingSet(source, state)].sort(),
+      `${where}: the resting arrangement is the resting set, event for event`,
+    );
+    // Which is to say: every main event, and nothing that is part of something.
+    for (const event of arrangement.events) {
+      assert.equal(parentsOf(event).length, 0, `${event.id} is part of nothing`);
+    }
+    // The floor is a control the reader reaches for, not one applied to them:
+    // raising it narrows the picture, and the default narrows nothing.
+    const raised = arrangementOf(source, { ...state, degree: 3 }, new Set(), working.shown);
+    assert.ok(raised.events.length <= arrangement.events.length, `${where}: the floor still filters`);
+
+    // And the axis is built from what is drawn, as it is under a lens.
+    const axis = timeAxis(arrangement.events, null);
+    assert.deepEqual(axis.extent, timeSpan(arrangement.events), `${where}: the axis is the drawn set's own extent`);
+    assert.equal(axis.events.length, arrangement.events.length);
   }
 });
