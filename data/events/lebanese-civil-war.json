@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a9-place"
+      "a9-place",
+      "filed-from-p361"
     ]
   },
   "origin": {
@@ -62,6 +63,7 @@
   },
   "place": "lebanon-q822",
   "region": "asia",
+  "parent": "arab-israeli-conflict",
   "actors": [
     {
       "actor": "lebanon",

@@ -18,24 +18,25 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
   "revised": "2026-09-22",
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "filed-from-p361"
     ]
   },
-  "wikidata": "Q884821",
-  "sitelinks": {
-    "count": 10,
-    "on": "2026-09-04"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q884821",
   "wikipedia": {
     "en": "Iberian Pact",
     "pt": "Tratado de Amizade e Não Agressão Luso-Espanhol"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-04"
   },
   "sources": [
     {
@@ -71,7 +72,8 @@
   "region": null,
   "parent": [
     "estado-novo-1933-1974",
-    "interwar-period"
+    "interwar-period",
+    "world-war-ii"
   ],
   "actors": [
     {

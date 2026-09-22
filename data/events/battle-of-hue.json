@@ -24,7 +24,8 @@
       "imported-facts",
       "a9-place",
       "participants-from-p710",
-      "summary-from-lead"
+      "summary-from-lead",
+      "filed-from-p361"
     ]
   },
   "origin": {
@@ -60,7 +61,10 @@
   "place": "hue",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "tet-offensive",
+  "parent": [
+    "tet-offensive",
+    "vietnam-war"
+  ],
   "category": "war",
   "actors": [
     {

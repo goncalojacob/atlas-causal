@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a9-place"
+      "a9-place",
+      "filed-from-p361"
     ]
   },
   "origin": {
@@ -61,7 +62,10 @@
   },
   "place": "hall-of-mirrors",
   "region": "europe",
-  "parent": "interwar-period",
+  "parent": [
+    "interwar-period",
+    "paris-peace-conference"
+  ],
   "actors": [
     {
       "actor": "weimar-republic",

@@ -19,7 +19,8 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "filed-from-p361"
     ]
   },
   "origin": {
@@ -51,6 +52,7 @@
   "place": "spanish-sahara-q689837",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "decolonisation-of-africa",
   "category": "war",
   "actors": []
 }

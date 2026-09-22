@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a9-place"
+      "a9-place",
+      "filed-from-p361"
     ]
   },
   "origin": {
@@ -62,6 +63,7 @@
   },
   "place": "european-russia",
   "region": "europe",
+  "parent": "full-scale-russo-ukrainian-war",
   "actors": [
     {
       "actor": "wagner-group",

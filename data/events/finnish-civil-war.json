@@ -24,7 +24,8 @@
       "imported-facts",
       "m67-lined",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "filed-from-p361"
     ]
   },
   "origin": {
@@ -60,7 +61,10 @@
   "place": "finland-q33",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "russian-civil-war",
+  "parent": [
+    "russian-civil-war",
+    "world-war-i"
+  ],
   "actors": [
     {
       "actor": "finland",
