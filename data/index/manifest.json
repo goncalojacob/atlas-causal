@@ -49,7 +49,7 @@
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-39e21015a997.json",
+      "file": "index/attributes-1900-1999-f9f837f03115.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -936,7 +936,7 @@
       "id": "founding"
     },
     {
-      "count": 4,
+      "count": 5,
       "id": "other"
     },
     {
@@ -1017,7 +1017,7 @@
   "counts": {
     "actors": 2696,
     "edges": 638,
-    "events": 818,
+    "events": 819,
     "narratives": 2,
     "offices": 11,
     "places": 47,
@@ -1065,13 +1065,13 @@
     }
   ],
   "files": {
-    "citers": "index/citers-0e64c69cb23d",
-    "core": "index/core-72c5ae7e1c86.json",
+    "citers": "index/citers-3392419ab048",
+    "core": "index/core-8b76ed86ae29.json",
     "grounds": "index/grounds-702990134c57.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-6e3ff9a45ad4.json",
-    "search": "index/search-ea049b05a70c.json",
-    "sources": "index/sources-4d46cc203c86.json",
+    "review": "index/review-ddc6d055f206.json",
+    "search": "index/search-75a60ee67be5.json",
+    "sources": "index/sources-1f8e0f84a008.json",
     "territories": "index/territories-674e67b40263.json"
   },
   "historyShards": [
@@ -1111,7 +1111,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-052670faf2a5.json",
+      "file": "index/history-event-1900-1999-a9478b532dc7.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
