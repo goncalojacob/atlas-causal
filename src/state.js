@@ -1,6 +1,6 @@
-// One state object, { from, to, view, focus, focusAll, selected,
-// source, place, actor, chain, horizon, layers, narrative, step, walk, bbox },
-// mirrored to
+// One state object, { from, to, view, focus, focusAll, degree, selected, edge,
+// source, place, actor, office, chain, horizon, layers, narrative, step, walk,
+// bbox }, mirrored to
 // the URL query string so every view is a shareable link. Knows nothing
 // about SVG or data files. The pure parse/format pair is separate from the
 // binding to window so it can be tested in Node.

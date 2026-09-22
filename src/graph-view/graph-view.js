@@ -42,7 +42,7 @@ import {
 import { createLayoutRunner } from './layout-runner.js';
 import { frameFor } from './frame.js';
 import { STRETCH_CAP, stretchStep } from './stretch.js';
-import { LABEL_SIZE, shorten } from './label-fit.js';
+import { LABEL_SIZE } from './label-fit.js';
 import {
   naming, placeLabels, placeOne, labelBoxAt, movedAway, LENS_ROWS_AWAY,
 } from './labels.js';
@@ -71,8 +71,6 @@ const HEAD_WIDTH = 4.5;
 // widest node and its outline. In units of the screen, like every other size
 // here, and divided by the zoom where it is used.
 const LABEL_GAP = MAX_RADIUS + 3;
-// What fits in the left gutter a band label is written in.
-const BAND_LABEL_CHARS = 12;
 // Every node on screen is offered its name at every zoom since M82 (A1), so
 // there is no zoom at which naming begins and no cap on how many are offered.
 // `LABEL_LIMIT` is what `naming` falls back to for a caller that asks for a
@@ -356,22 +354,16 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // is, because the axis is the one thing on the picture that says what the
   // stretch has done to it: the ticks are years and they have to stand under
   // the marks of those years.
+  //
+  // **There are no bands** (M83, B12). There was a rect and a cut-down label
+  // per band here, from the grouping: `arrangementOf` has returned `lanes: []`
+  // since M77, so `layoutGraph` makes one unnamed field, `band.hidden` is
+  // always true and the loop drew nothing. What is left is the axis, which is
+  // the whole of the frame the reader keeps their bearings by.
   let axisAt = null;
   function drawFrame() {
     axisAt = transform.s;
     bandsGroup.replaceChildren();
-    for (const band of laid.bands) {
-      if (band.hidden) continue;
-      bandsGroup.appendChild(svg('rect', {
-        x: 0, y: band.y0, width: laid.width * transform.s, height: band.y1 - band.y0,
-        class: classes('band', band.even ? 'even' : 'odd'),
-      }));
-      // A band is a lane now, and an actor's name is longer than a region's:
-      // the label is cut to the gutter and the whole of it is in the title.
-      const label = textNode(shorten(band.label, BAND_LABEL_CHARS), { x: 8, y: band.y0 + 15, class: 'band-label' });
-      label.appendChild(svgTitle(band.label));
-      bandsGroup.appendChild(label);
-    }
     for (const tick of laid.scale.ticks(10)) {
       const x = laid.scale.x(tick.value) * transform.s;
       bandsGroup.appendChild(svg('line', { x1: x, y1: laid.bands[0]?.y0 ?? 0, x2: x, y2: laid.height, class: 'tick' }));
@@ -754,7 +746,6 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         coincident: stack.coincident,
         representative: { id: stack.representative.id, event: stack.representative.event },
         members: stack.members.map((m) => ({ id: m.id, event: m.event })),
-        lane: laid.bands.find((b) => b.id === stack.lane) ?? null,
         years: stack.years,
       });
     }

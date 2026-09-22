@@ -555,7 +555,7 @@ export function keptRegardless(atlas, state) {
 // better than switching off did, because every step of it is in the focus set
 // by construction and nothing can hide one.
 //
-// Answered once per state and not once per caller. `panel.js`, `grouping.js`,
+// Answered once per state and not once per caller. `panel.js`,
 // `arrangement.js`, `search-box.js` and `emphasis.js` all ask, several times
 // each per render, and the ring is a walk of the graph. The store hands every
 // subscriber the same state object and replaces it only in `set`, so that

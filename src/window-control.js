@@ -191,11 +191,10 @@ export function createWindowControl(group, { atlas, state }) {
   // away the argument would be a control nobody could force (M83, B2).
   function render(s, options = {}) { // eslint-disable-line no-unused-vars
     if (!atlas.extent) return;
-    // Still resolved, and since M82 read again: the note beside the count is
-    // about the events *of the window* — which is what the map's corner said
-    // before it moved here — and `bandEvents` is the picture and not the
-    // window. A state with no window at all is a state this control has
-    // nothing to say about, exactly as before.
+    // Resolved and read: the note beside the count is about the events *of the
+    // window* — which is what the map's corner said before it moved here — and
+    // `bandEvents` is the picture and not the window. A state with no window at
+    // all is a state this control has nothing to say about.
     const timeWindow = resolveWindow(s, atlas.extent, atlas.opens);
     if (!timeWindow) return;
     // **The sentence is said with no box too** (M83, B3). It was shown only

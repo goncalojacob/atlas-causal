@@ -591,8 +591,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // What is drawn at all: the lens, narrowed by the category toggles still
     // on. Both removals are made in emphasis.js, so the timeline, the graph
     // and the corner count narrow with the marks (F6).
+    // `shown` is a set on every frame since M65 — the lens, or the resting
+    // picture where there is none — so there is no "draw everything" case left
+    // to guard for (M83, B12; emphasis.js says the same in words).
     const shown = working.shown;
-    const kept = (id) => !shown || shown.has(id);
+    const kept = (id) => shown.has(id);
 
     // The two lists of *edges*, which are lines and not marks: the ids of
     // their ends are in the working set, the edge objects are needed here.
@@ -619,7 +622,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
         k: transform.k,
       });
     }
-    const drawn = shown ? atlas.activeEvents.filter((e) => shown.has(e.id)) : atlas.activeEvents;
+    const drawn = atlas.activeEvents.filter((e) => shown.has(e.id));
     // The large events of the window: a regional one washes the polygons of
     // its lane, a worldwide one is named in the corner instead (large.js).
     // Off the same list the marks are drawn from, so the lens applies to all

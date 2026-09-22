@@ -189,6 +189,9 @@ function onTheAxis(events, view, held) {
 export function arrangementOf(atlas, state, held = null, shown = undefined) {
   const view = lensView(atlas, state);
   const lens = view?.shown ?? null;
+  // `shown` is a set on every frame since M65 (emphasis.js), and the one caller
+  // that leaves it out is a test asking what the lens alone keeps; only that
+  // case can be null, and it means the whole corpus (M83, B12).
   const drawable = shown === undefined ? lens : shown;
   const kept = drawable ? atlas.activeEvents.filter((e) => drawable.has(e.id)) : atlas.activeEvents;
   // Inside a lens the reader has already said what they want; outside it the

@@ -583,7 +583,7 @@ export function createPanel(container, {
   //
   // The key is what the card is actually drawn from: what is *open*, the
   // walked chain, the horizon year, and the window. Anything else — the pan,
-  // the zoom, the box, the lens, the layers, the grouping's own controls — is
+  // the zoom, the box, the lens, the layers — is
   // not a different card and does not rebuild one.
   //
   // The window is in the key and is still not a rebuild. It decides four
