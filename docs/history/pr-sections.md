@@ -3571,6 +3571,39 @@ umbrellas, and reads the card's two lines in order.
 `docs/screens/m79-umbrella-first.png` and `m79-umbrella-second.png` are the
 same event opened from either parent; no other picture was rewritten.
 
+### Amendment A1: what the click removes, named
+
+`tests/timeline-browser.test.mjs` 217 was red on `m0` before this branch
+existed, and the amendment asked which of two things its last bound was
+reading. Measured on the real page at
+`?view=timeline&selected=carnation-revolution-1974&focus=none`, over the merged
+data, with a MutationObserver and a census of the drawing on either side of the
+click: the click gives back **thirteen** elements (1,032 to 1,019; twelve of
+969 when the amendment was written). They are **five bars out and three in,
+their two net titles, four net labels, and five packing rows that are then
+empty**. The five that leave — Spínola's resignation, the Alvor Agreement, the
+Constituent Assembly election, the nationalisations, the fiftieth anniversary —
+are every one of them filed under `third-portuguese-republic-since-1974`, so
+they are not main events and were on screen only because the reader was holding
+the revolution they hang from; a different selection holds a different five.
+
+**So it is the amendment's first case.** The second was measured for and is not
+there: no bar that stayed lost its label and no ring was dropped — every label
+that went belongs to a bar that went. The bound becomes the same share of the
+drawing as the two above it, with that reason written where the assertion is,
+and the test is otherwise untouched. What the count really shows is M42's
+filing pass at work: most of what a selection reaches now sits under an
+umbrella, where the resting picture does not draw it, so the size of a held set
+is not a constant and an absolute bound over it was never going to hold.
+
+One thing was seen while measuring and is **not M79's and not fixed here**:
+`the-first-columbian-voyage-1492` and `treaty-of-tordesillas-1494` arrive
+labelled *still loading* and stay so, although `attributes-1400-1499-*.json` is
+fetched at first paint and carries both titles. It reproduces on `origin/m0` on
+a cold load with no click at all — the attribute fill not reaching a record held
+from outside the band — and widening this milestone into it would have been a
+second change under one brief.
+
 ### Checks
 
 `node tools/validate.mjs --index`: **11,189 records, 5 regions, 0 errors, 263
