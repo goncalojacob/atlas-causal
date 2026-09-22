@@ -1254,6 +1254,34 @@
       ],
       "created": "2026-09-22",
       "from": "1982-lebanon-war",
+      "id": "1982-lebanon-war--sabra-and-shatila-massacre--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "sabra-and-shatila-massacre",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "1982-lebanon-war",
       "id": "1982-lebanon-war--south-lebanon-conflict--caused",
       "kind": "edge",
       "origin": {
@@ -13379,6 +13407,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-22",
+      "from": "tet-offensive",
+      "id": "tet-offensive--paris-peace-accords--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "paris-peace-accords",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "the-1930-revolution-and-the-vargas-era",
       "id": "the-1930-revolution-and-the-vargas-era--1964-brazilian-coup-detat--precondition-of",
@@ -14834,6 +14890,34 @@
       "revised": null,
       "status": "active",
       "to": "good-friday-agreement",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "third-battle-of-kharkov",
+      "id": "third-battle-of-kharkov--battle-of-kursk--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-kursk",
       "type": "caused"
     },
     {

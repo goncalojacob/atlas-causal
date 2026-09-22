@@ -1154,9 +1154,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-caporetto",
+      "kind": "event",
+      "locator": "Q242644"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dunkirk",
       "kind": "event",
       "locator": "Q208529"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-greece",
+      "kind": "event",
+      "locator": "Q2888837"
     },
     {
       "dissent": false,
@@ -1193,6 +1205,12 @@
       "id": "battle-of-verdun",
       "kind": "event",
       "locator": "Q130847"
+    },
+    {
+      "dissent": false,
+      "id": "battles-of-khalkhin-gol",
+      "kind": "event",
+      "locator": "Q188925"
     },
     {
       "dissent": false,
@@ -2312,6 +2330,12 @@
     },
     {
       "dissent": false,
+      "id": "prelude-to-the-russian-invasion-of-ukraine",
+      "kind": "event",
+      "locator": "Q110254389"
+    },
+    {
+      "dissent": false,
       "id": "republican-insurgency-in-afghanistan",
       "kind": "event",
       "locator": "Q108137226"
@@ -2399,6 +2423,12 @@
       "id": "rwandan-civil-war",
       "kind": "event",
       "locator": "Q426722"
+    },
+    {
+      "dissent": false,
+      "id": "sabra-and-shatila-massacre",
+      "kind": "event",
+      "locator": "Q208199"
     },
     {
       "dissent": false,
@@ -2636,6 +2666,12 @@
     },
     {
       "dissent": false,
+      "id": "tet-offensive",
+      "kind": "event",
+      "locator": "Q82542"
+    },
+    {
+      "dissent": false,
       "id": "the-holocaust",
       "kind": "event",
       "locator": "Q2763"
@@ -2651,6 +2687,18 @@
       "id": "the-troubles",
       "kind": "event",
       "locator": "Q815436"
+    },
+    {
+      "dissent": false,
+      "id": "third-battle-of-kharkov",
+      "kind": "event",
+      "locator": "Q157873"
+    },
+    {
+      "dissent": false,
+      "id": "third-battle-of-ypres",
+      "kind": "event",
+      "locator": "Q426227"
     },
     {
       "dissent": false,

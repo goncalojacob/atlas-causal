@@ -2034,30 +2034,94 @@ with more reading against a larger one with less**: batch 28 took thirteen and
 wrote five edges, batch 32 took twelve and wrote three, and the component count
 has risen in both.
 
-## Where the run stands after batch 32, for the fire that picks it up
+## Batch 33 — the same vein, eight rows, and the day the span is read to
 
-*22 September, 09:00.*
+*22 September, the second batch of the same fire. Batch 32 ended on a question
+it put to the next fire — twelve rows with three edges, or fewer rows read
+properly? — and this batch is the answer tried: **eight rows, and every one of
+the eight had its full article read before the batch was committed.**
+
+**The rule gains a day.** Batch 32 read the span at the year, which is how
+every filing since batch 20 had read it. Asked at the day — where the child and
+the parent both give a full date, the child's own day inside the parent's — the
+same 668 open rows lose **34 more**, and the refusals are the interesting kind:
+
+| the row | its own day | the parent | the parent's day |
+| --- | --- | --- | --- |
+| July Crisis | 1914-07-23 | `world-war-i` | 1914-07-28 |
+| Battle of Nanking | 1937-01-01 | `second-sino-japanese-war` | 1937-07-07 |
+| Cabinda Conflict | 1975-11-08 | `angolan-civil-war` | 1975-11-11 |
+| Battle of Baghdad | 2003-01-01 | `iraq-war` | 2003-03-20 |
+| The Barricades | 1991-01-01 | `dissolution-of-the-soviet-union` | 1991-12-26 |
+| Mayaguez incident | 1975-05-15 | `vietnam-war` | 1975-04-30 |
+
+**The July Crisis is the one that earns the change.** Wikidata files it under
+the First World War; it begins five days before the war this atlas dates from
+28 July 1914, and it is *what the war came out of* rather than a part of it —
+which is batch 31's Great Depression refusal exactly, five days the other way
+round. **Batch 32's twelve were re-checked against the tighter test after it
+was written and all twelve hold.**
+
+| the record | sitelinks | filed under | the edge it earned |
+| --- | --- | --- | --- |
+| `battles-of-khalkhin-gol` | 49 | `soviet-japanese-border-conflicts` | none |
+| `prelude-to-the-russian-invasion-of-ukraine` | 49 | `russo-ukrainian-war` | none |
+| `battle-of-caporetto` | 47 | `world-war-i` | none |
+| `third-battle-of-ypres` | 47 | `world-war-i` | none |
+| `tet-offensive` | 45 | `vietnam-war` | it `--precondition-of--> paris-peace-accords` |
+| `sabra-and-shatila-massacre` | 44 | `lebanese-civil-war` | `1982-lebanon-war --enabled-->` it |
+| `third-battle-of-kharkov` | 42 | `world-war-ii` | it `--caused--> battle-of-kursk` |
+| `battle-of-greece` | 42 | `world-war-ii` | none |
 
 | | |
 | --- | --- |
-| corpus | **573 active** |
-| **main** | **252**, unchanged for seven batches |
-| largest connected component | **500** |
-| components | **53** |
-| events with no edge at all | **37** |
-| the inverse `part of` vein | **680 rows open** after this batch and the Gaza deferral |
+| imported | 8 |
+| created | **8**, **8 filed** |
+| edges written | **3** |
+| classes added | **1** — `Q5791104` international crisis, with **no category**; its sibling `Q19833559` *preparation* was refused, an activity being no kind of event |
+| corpus | 573 → **581** active |
+| **main** | **252, unchanged** — the eighth batch running |
+| largest connected component | 500 → **502** |
+| components | 53 → **58** |
+| events with no edge at all | 37 → **41** |
+| API calls | 9 for the import, 8 full-article reads |
+
+**The answer to batch 32's question is: it is the same rate.** Twelve rows read
+lightly gave three edges; eight rows read fully gave three. **What decides the
+yield is not the reading but whether the atlas holds the other end** — Khalkhin
+Gol's article argues, in its own voice, that the defeat turned Japan south
+towards Pearl Harbor, and this atlas has no Pearl Harbor to point at; Caporetto
+and Third Ypres name no held record but their own war. The edges this vein can
+earn are limited by the corpus's own thinness around each new record, and the
+way to thicken it is to take **several rows of one war in one batch** so that
+they can be argued against each other, rather than the top of the ranking
+spread over six wars.
+
+## Where the run stands after batch 33, for the fire that picks it up
+
+*22 September, 09:40, after a fire that landed two batches on `m42`.*
+
+| | |
+| --- | --- |
+| corpus | **581 active** |
+| **main** | **252**, unchanged for eight batches |
+| largest connected component | **502** |
+| components | **58** |
+| events with no edge at all | **41** |
+| the inverse `part of` vein | **626 rows open** after both batches, the Gaza deferral and the day-precision span |
 | the sweep pool, world sections | **1,046** open rows |
 | the corpus `part of` pass | **spent**, re-measured this fire |
 
 **What is still open, in the order a fire should weigh it:**
 
-- **The inverse vein, 680 rows.** Take the next twelve by the rule above and
-  read each one's article for an edge before the batch is committed. This is
-  the volume the milestone was short of and nothing blocks it.
+- **The inverse vein, 626 rows.** Take the next batch **by war rather than by
+  ranking**: batch 33's finding is that the reading is not what limits the
+  edges, the corpus's thinness around each new record is, and several rows of
+  one war can be argued against each other where the top of the ranking spread
+  over six wars cannot.
 - **The edges, which are the real work now.** Volume arrives filed and
-  unconnected; A5 is about the largest component and it grew by three this
-  batch. A fire that took six rows and read six articles properly might do
-  better than one that takes twelve.
+  unconnected; A5 is about the largest component and it grew by three in each
+  of the two batches, at twelve rows and at eight.
 - **The dates, still a person's.** Thirteen of batch 31's forty-six refusals
   are span refusals, and `chinese-civil-war` (1946–1950 here, 1927 in the
   source), `turkish-war-of-independence` (1922–1923 here, from 1919 in the

@@ -15281,6 +15281,70 @@ volume that arrives filed and cannot raise the main count.
      owner instead** and is one sentence long: may a run widen an imported
      interval from the record's own cited article?
 
+## M42 batch 33 — the same vein, eight rows, and the day the span is read to
+
+*22 September, the second batch of the fire that began at 08:06. The
+measurement is `docs/m42-pool.md` → "Batch 33".*
+
+Batch 32 ended on a question — twelve rows read lightly, or fewer read
+properly? — and this batch is the answer tried: **eight rows, every one's full
+article read before the batch was committed, three edges.** Batch 32 took
+twelve and wrote three. **The reading is not what limits the edges**; whether
+this atlas holds the other end is.
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 573 active | **581 active** |
+| **main** | 252 | **252, unchanged** |
+| largest connected component | 500 | **502** |
+| components | 53 | **58** |
+| events with no edge at all | 37 | **41** |
+| edges | 635 | **638** |
+
+**Imported this fire: 8, all 8 filed.** `battles-of-khalkhin-gol` under
+`soviet-japanese-border-conflicts`, `prelude-to-the-russian-invasion-of-ukraine`
+under `russo-ukrainian-war`, `battle-of-caporetto` and `third-battle-of-ypres`
+under `world-war-i`, `tet-offensive` under `vietnam-war`,
+`sabra-and-shatila-massacre` under `lebanese-civil-war`,
+`third-battle-of-kharkov` and `battle-of-greece` under `world-war-ii`.
+
+**Three edges:** Kharkov caused Kursk, in the article's own voice; the 1982
+Lebanon war enabled the Sabra and Shatila massacre; Tet is a precondition of
+the Paris Peace Accords. Five earned none and none was invented for them.
+
+**The rule gained a day.** Where a child and its parent both give a full date,
+the child's day must fall inside the parent's. That refuses **34 rows** the
+year-level test had let through — the **July Crisis** among them, which
+Wikidata files under the First World War and which begins five days before the
+war this atlas dates from 28 July 1914. Batch 32's twelve were re-checked
+against the tighter test and all twelve hold.
+
+### Deviations
+
+1066. **A span read at the year is not the same rule as a span read at the
+     day, and the run had been reading it at the year since batch 20.** The
+     July Crisis files cleanly under the First World War at year precision and
+     is refused by five days at day precision — which is batch 31's Great
+     Depression refusal, the same five days the other way round. The tighter
+     reading is the one the run had already been applying by hand to the sweep
+     pool; batch 33 is where it became the rule the inverse vein is filtered
+     by, and where batch 32's own twelve were re-checked against it.
+1067. **The edges a batch can earn are limited by the corpus and not by the
+     reading.** Batch 32 took twelve rows, read a lead and one article each,
+     and wrote three edges. Batch 33 took eight and read all eight articles in
+     full, and wrote three. Khalkhin Gol's article argues in its own voice
+     that the defeat turned Japan south towards Pearl Harbor and **this atlas
+     has no Pearl Harbor to point at**; Caporetto and Third Ypres name no held
+     record but their own war. The next batch should be taken **by war rather
+     than by ranking**, so that its rows can be argued against each other.
+1068. **A class may be added with no category, and one was.** `Q5791104`
+     *international crisis* is not one of the twelve kinds of
+     `data/categories.json`, and the table's own rule is that a class with no
+     category writes no key at all rather than a guess. Its sibling class on
+     the same item, `Q19833559` *preparation*, was refused outright: an
+     activity is not a kind of event, and the table is for classes that say
+     what a record is.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

@@ -296,6 +296,12 @@
     },
     {
       "dissent": false,
+      "id": "1982-lebanon-war--sabra-and-shatila-massacre--enabled",
+      "kind": "edge",
+      "locator": "\"Sabra and Shatila massacre\", revision 1375981084, lead and § Massacre"
+    },
+    {
+      "dissent": false,
       "id": "1982-lebanon-war--south-lebanon-conflict--caused",
       "kind": "edge",
       "locator": "\"South Lebanon conflict (1985–2000)\", revision 1370747846, § lead"
@@ -2720,6 +2726,12 @@
     },
     {
       "dissent": false,
+      "id": "tet-offensive--paris-peace-accords--precondition-of",
+      "kind": "edge",
+      "locator": "\"Tet Offensive\", revision 1376040932, lead"
+    },
+    {
+      "dissent": false,
       "id": "the-1930-revolution-and-the-vargas-era--1964-brazilian-coup-detat--precondition-of",
       "kind": "edge",
       "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
@@ -3293,6 +3305,12 @@
       "id": "the-troubles--good-friday-agreement--caused",
       "kind": "edge",
       "locator": "\"The Troubles\", revision 1375596184, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "third-battle-of-kharkov--battle-of-kursk--caused",
+      "kind": "edge",
+      "locator": "\"Third Battle of Kharkov\", revision 1370750346, § Aftermath"
     },
     {
       "dissent": false,

@@ -5171,7 +5171,25 @@
         }
       ]
     },
+    "battle-of-caporetto": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-dunkirk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-greece": {
       "from": "git",
       "versions": [
         {
@@ -5289,6 +5307,15 @@
       ]
     },
     "battle-of-verdun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battles-of-khalkhin-gol": {
       "from": "git",
       "versions": [
         {
@@ -11515,6 +11542,15 @@
         }
       ]
     },
+    "sabra-and-shatila-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "salazar-finance-minister-1928": {
       "from": "git",
       "versions": [
@@ -12458,6 +12494,15 @@
         }
       ]
     },
+    "tet-offensive": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "the-1930-revolution-and-the-vargas-era": {
       "from": "git",
       "versions": [
@@ -12605,6 +12650,24 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "third-battle-of-kharkov": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "third-battle-of-ypres": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
