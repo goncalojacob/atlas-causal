@@ -542,7 +542,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "1948-arab-israeli-war",
       "kind": "event",
       "origin": {
@@ -1421,7 +1421,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 4,
+      "degree": 5,
       "id": "1982-lebanon-war",
       "kind": "event",
       "origin": {
@@ -5632,6 +5632,7 @@
         "wikidata"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "darfur-genocide",
       "kind": "event",
       "origin": {
@@ -7109,7 +7110,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "first-sudanese-civil-war",
       "kind": "event",
       "origin": {
@@ -16511,6 +16512,7 @@
         "wikidata"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "war-of-the-camps",
       "kind": "event",
       "origin": {
@@ -16539,6 +16541,7 @@
         "wikidata"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "war-over-water",
       "kind": "event",
       "origin": {
@@ -17111,12 +17114,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "darfur-genocide",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "eritrean-civil-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -17202,18 +17199,6 @@
     },
     {
       "id": "wadai-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "war-of-the-camps",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "war-over-water",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

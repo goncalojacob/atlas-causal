@@ -385,6 +385,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-22",
+      "from": "1948-arab-israeli-war",
+      "id": "1948-arab-israeli-war--war-over-water--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "war-over-water",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-15",
       "from": "1948-arab-israeli-war",
       "id": "1948-arab-israeli-war--yom-kippur-war--precondition-of",
@@ -1212,6 +1240,34 @@
       "revised": null,
       "status": "active",
       "to": "twelve-day-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "1982-lebanon-war",
+      "id": "1982-lebanon-war--war-of-the-camps--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "war-of-the-camps",
       "type": "precondition-of"
     },
     {
@@ -6807,6 +6863,34 @@
       "revised": null,
       "status": "active",
       "to": "russo-japanese-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "first-sudanese-civil-war",
+      "id": "first-sudanese-civil-war--darfur-genocide--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "darfur-genocide",
       "type": "precondition-of"
     },
     {

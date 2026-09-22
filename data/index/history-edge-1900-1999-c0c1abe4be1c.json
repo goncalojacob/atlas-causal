@@ -164,6 +164,15 @@
         }
       ]
     },
+    "1948-arab-israeli-war--war-over-water--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "1948-arab-israeli-war--yom-kippur-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -500,6 +509,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "1982-lebanon-war--war-of-the-camps--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -2420,6 +2438,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "first-sudanese-civil-war--darfur-genocide--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

@@ -49,7 +49,7 @@
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-384359409d2a.json",
+      "file": "index/attributes-1900-1999-e55a7d3fd90a.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -881,7 +881,7 @@
   ],
   "counts": {
     "actors": 2696,
-    "edges": 626,
+    "edges": 629,
     "events": 792,
     "narratives": 2,
     "offices": 11,
@@ -919,7 +919,7 @@
       "to": 1899
     },
     {
-      "file": "index/explanations-1900-1999-9d8bac744d23.json",
+      "file": "index/explanations-1900-1999-e10be8e9964a.json",
       "from": 1900,
       "to": 1999
     },
@@ -930,13 +930,13 @@
     }
   ],
   "files": {
-    "citers": "index/citers-451683b4d881",
-    "core": "index/core-f1faa713175b.json",
+    "citers": "index/citers-15e546dfdd96",
+    "core": "index/core-9af7ec89858b.json",
     "grounds": "index/grounds-702990134c57.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-28ea888523ab.json",
-    "search": "index/search-858823b86d4f.json",
-    "sources": "index/sources-50d076b35855.json",
+    "review": "index/review-fa492f326787.json",
+    "search": "index/search-6fb504174ebc.json",
+    "sources": "index/sources-d158ff207c5c.json",
     "territories": "index/territories-674e67b40263.json"
   },
   "historyShards": [
@@ -1025,7 +1025,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-edge-1900-1999-f8851d638fc8.json",
+      "file": "index/history-edge-1900-1999-c0c1abe4be1c.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "edge",
