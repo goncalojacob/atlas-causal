@@ -614,6 +614,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mount-tumbledown--argentine-surrender-in-the-falklands-war--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Mount Tumbledown\", revision 1372389478, lead"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tsushima--treaty-of-portsmouth--caused",
       "kind": "edge",
       "locator": "\"Battle of Tsushima\", revision 1375712462, § Aftermath"
@@ -1598,6 +1604,18 @@
     },
     {
       "dissent": false,
+      "id": "invasion-of-south-georgia--operation-paraquet--caused",
+      "kind": "edge",
+      "locator": "\"Invasion of South Georgia\", revision 1375909832, lead"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-south-georgia--operation-paraquet--caused",
+      "kind": "edge",
+      "locator": "\"Operation Paraquet\", revision 1370694202, lead"
+    },
+    {
+      "dissent": false,
       "id": "iran-iraq-war--gulf-war--precondition-of",
       "kind": "edge",
       "locator": "\"Gulf War\", revision 1375784270, § Background"
@@ -2063,6 +2081,24 @@
       "id": "operation-car-wash-2014--the-impeachment-of-dilma-rousseff-2016--precondition-of",
       "kind": "edge",
       "locator": "\"Operation Car Wash\", revision 1371266803"
+    },
+    {
+      "dissent": false,
+      "id": "operation-rosary--falklands-war--caused",
+      "kind": "edge",
+      "locator": "\"1982 invasion of the Falkland Islands\", revision 1372863686, lead"
+    },
+    {
+      "dissent": false,
+      "id": "operation-sutton--battle-of-goose-green--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Goose Green\", revision 1370110982, lead"
+    },
+    {
+      "dissent": false,
+      "id": "operation-sutton--battle-of-goose-green--enabled",
+      "kind": "edge",
+      "locator": "\"Operation Sutton\", revision 1374609063, lead"
     },
     {
       "dissent": false,

@@ -1116,6 +1116,15 @@
         }
       ]
     },
+    "battle-of-mount-tumbledown--argentine-surrender-in-the-falklands-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-the-lys-1918--coup-28-may-1926--precondition-of": {
       "from": "git",
       "versions": [
@@ -2861,6 +2870,15 @@
         }
       ]
     },
+    "invasion-of-south-georgia--operation-paraquet--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "iran-iraq-war--gulf-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -3516,6 +3534,24 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "operation-rosary--falklands-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "operation-sutton--battle-of-goose-green--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

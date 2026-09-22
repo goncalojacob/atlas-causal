@@ -674,6 +674,12 @@
     },
     {
       "dissent": false,
+      "id": "1982-british-army-gazelle-friendly-fire-incident",
+      "kind": "event",
+      "locator": "Q3610236"
+    },
+    {
+      "dissent": false,
       "id": "1982-lebanon-war",
       "kind": "event",
       "locator": "Q49103"
@@ -1172,6 +1178,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-goose-green",
+      "kind": "event",
+      "locator": "Q2641750"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-greece",
       "kind": "event",
       "locator": "Q2888837"
@@ -1190,9 +1202,39 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mount-harriet",
+      "kind": "event",
+      "locator": "Q4871801"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mount-longdon",
+      "kind": "event",
+      "locator": "Q4871802"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mount-tumbledown",
+      "kind": "event",
+      "locator": "Q4582489"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-musa-dagh",
       "kind": "event",
       "locator": "Q19831524"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-san-carlos",
+      "kind": "event",
+      "locator": "Q4872265"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-seal-cove",
+      "kind": "event",
+      "locator": "Q4872339"
     },
     {
       "dissent": false,
@@ -1214,6 +1256,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-two-sisters",
+      "kind": "event",
+      "locator": "Q4872617"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-velestino",
       "kind": "event",
       "locator": "Q61675345"
@@ -1223,6 +1271,12 @@
       "id": "battle-of-verdun",
       "kind": "event",
       "locator": "Q130847"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wireless-ridge",
+      "kind": "event",
+      "locator": "Q4872743"
     },
     {
       "dissent": false,
@@ -1265,6 +1319,12 @@
       "id": "black-september",
       "kind": "event",
       "locator": "Q154288"
+    },
+    {
+      "dissent": false,
+      "id": "bluff-cove-air-attacks",
+      "kind": "event",
+      "locator": "Q4930640"
     },
     {
       "dissent": false,
@@ -1904,6 +1964,12 @@
     },
     {
       "dissent": false,
+      "id": "invasion-of-south-georgia",
+      "kind": "event",
+      "locator": "Q4345906"
+    },
+    {
+      "dissent": false,
       "id": "iran-iraq-war",
       "kind": "event",
       "locator": "Q82664"
@@ -2204,6 +2270,12 @@
     },
     {
       "dissent": false,
+      "id": "mount-kent-skirmish",
+      "kind": "event",
+      "locator": "Q6921638"
+    },
+    {
+      "dissent": false,
       "id": "mountain-war",
       "kind": "event",
       "locator": "Q7784981"
@@ -2258,15 +2330,51 @@
     },
     {
       "dissent": false,
+      "id": "operation-algeciras",
+      "kind": "event",
+      "locator": "Q2294274"
+    },
+    {
+      "dissent": false,
+      "id": "operation-black-buck",
+      "kind": "event",
+      "locator": "Q1968528"
+    },
+    {
+      "dissent": false,
       "id": "operation-grapes-of-wrath",
       "kind": "event",
       "locator": "Q1473919"
     },
     {
       "dissent": false,
+      "id": "operation-keyhole",
+      "kind": "event",
+      "locator": "Q7097204"
+    },
+    {
+      "dissent": false,
+      "id": "operation-paraquet",
+      "kind": "event",
+      "locator": "Q3269922"
+    },
+    {
+      "dissent": false,
       "id": "operation-reinhard",
       "kind": "event",
       "locator": "Q158044"
+    },
+    {
+      "dissent": false,
+      "id": "operation-rosary",
+      "kind": "event",
+      "locator": "Q2992361"
+    },
+    {
+      "dissent": false,
+      "id": "operation-sutton",
+      "kind": "event",
+      "locator": "Q537052"
     },
     {
       "dissent": false,
@@ -2393,6 +2501,12 @@
       "id": "prelude-to-the-russian-invasion-of-ukraine",
       "kind": "event",
       "locator": "Q110254389"
+    },
+    {
+      "dissent": false,
+      "id": "raid-on-pebble-island",
+      "kind": "event",
+      "locator": "Q1979826"
     },
     {
       "dissent": false,
@@ -2612,6 +2726,12 @@
     },
     {
       "dissent": false,
+      "id": "sinking-of-ara-general-belgrano",
+      "kind": "event",
+      "locator": "Q3284956"
+    },
+    {
+      "dissent": false,
       "id": "sino-indian-war",
       "kind": "event",
       "locator": "Q208694"
@@ -2627,6 +2747,18 @@
       "id": "sino-vietnamese-war",
       "kind": "event",
       "locator": "Q623171"
+    },
+    {
+      "dissent": false,
+      "id": "skirmish-at-many-branch-point",
+      "kind": "event",
+      "locator": "Q7535905"
+    },
+    {
+      "dissent": false,
+      "id": "skirmish-at-top-malo-house",
+      "kind": "event",
+      "locator": "Q2984901"
     },
     {
       "dissent": false,

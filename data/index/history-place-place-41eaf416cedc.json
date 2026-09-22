@@ -27,6 +27,15 @@
         }
       ]
     },
+    "bay-of-gibraltar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "belem": {
       "from": "git",
       "versions": [
@@ -247,6 +256,15 @@
         }
       ]
     },
+    "falkland-islands": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "flanders": {
       "from": "git",
       "versions": [
@@ -260,6 +278,24 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "goose-green": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "grytviken": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -426,6 +462,33 @@
         }
       ]
     },
+    "mount-kent": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "mount-longdon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "mount-simon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "near-villanueva-del-fresno": {
       "from": "git",
       "versions": [
@@ -523,6 +586,15 @@
         }
       ]
     },
+    "pebble-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "pedrogao-grande": {
       "from": "git",
       "versions": [
@@ -551,6 +623,15 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "pleasant-peak": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -671,6 +752,15 @@
         }
       ]
     },
+    "san-carlos-water": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "san-salvador-island": {
       "from": "git",
       "versions": [
@@ -707,6 +797,24 @@
         }
       ]
     },
+    "south-georgia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "stanley": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "stockholm": {
       "from": "git",
       "versions": [
@@ -736,6 +844,15 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "thule-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -821,6 +938,15 @@
             "wikipedia"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "west-falkland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     }
