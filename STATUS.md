@@ -19961,6 +19961,78 @@ passes against that same tree (8 of 8).
       own fill weight, so a mark says both things at once instead of one of
       them.
 
+**M42b batch 6 — the French Revolution, and Europe's eighteenth century, 22
+September.** The sixth fire on `m42b`. It began by merging `origin/m0`
+(through **M84** and the M85 brief) and `origin/m42` (through its batch 37),
+so the corpus it found reads **703 active and 243 main** and none of that
+growth is this batch's. Taken from the cell that trails most in this
+partition: Europe's 18th century, which held **one** active event,
+`the-british-industrial-revolution`, and no umbrella — which is what batch 5's
+own note said the sixth fire should take. `docs/m42b-pool.md` → "Batch 6".
+
+**Nineteen events, two umbrellas, and the main count did not move.** The
+inverse `part of` sweep on `Q6534` returned **44 items and the atlas held none
+of them**; the top seventeen that sit inside 1789–1799 were taken and filed
+under the French Revolution. Above it went **`atlantic-revolutions`**, the
+period umbrella A6 asks for: a revolutionary wave with a stated span
+(1765–1838) and an article of its own, *"a period … during which a number of
+significant revolutionary movements occurred in most of Europe and the
+Americas"*. The French Revolution files under it by M62's span-and-subject
+property, and **`haitian-revolution-1791-1804` files under it because Wikidata
+says so outright** (`Q689128` `P361` `Q3108868`) — so the umbrella crosses the
+partition into the `americas` lane. Two umbrellas arrived and cost two main
+events; taking those two records out of the resting picture gives both back.
+**243 before and 243 after.** Batches 1 and 5 each paid one and said why; this
+one paid none.
+
+**Eight new places and two reused**, at the precision each item's own class
+gives: `versailles-yvelines` `city`, and a fortress, two palaces, a tennis
+court, a prison and two squares at `point`. Where the candidates disagreed the
+one nearest the event's own `P625` won, which at the Coup of 18 Brumaire had
+to be read over the located items **that are places** — the nearer of the two
+is the French First Republic, a state. **Nine records name neither an actor
+nor a place**, and `docs/m42b-pool.md` argues each by name, which is the
+register `tests/m67.test.mjs` reads; four of them carry no `P625`, no `P276`,
+no `P131` and no `P17` at all, and take a lane from the seeds file instead.
+
+**Three edges, and a stated reason for there not being a fourth.**
+`storming-of-the-bastille --caused--> french-revolution` on *"its fall was the
+flashpoint of the French Revolution"*, `flight-to-varennes --precondition-of-->
+champ-de-mars-massacre`, and `execution-of-louis-xvi --reacted-to-->
+insurrection-of-31-may-2-june-1793`. **The largest connected component did not
+move**, 517 to 517: the three edges make an island of five and fourteen
+records arrived with no edge at all. The edge that would have joined the whole
+cluster to the 517 is `french-revolution --> haitian-revolution-1791-1804`,
+and **it was not written, because the only warrant this fire could reach was
+this atlas's own paraphrase**: the Haitian article's lead does not state the
+link, and `api.php` and the REST `page/html` endpoint answered 429 all fire.
+It is the next fire's first job.
+
+**Refused**: `Q207318` the French Revolutionary Wars and `Q249960` the
+Chouannerie, both running past 1799 and so outside the umbrella's span;
+`Q219817` and `Q219825`, the Directory and the Convention, which are
+governments and not events; **`Q370029` the Great Fear (deviation 1210)**,
+whose only class, `Q3377832` *collective fear*, **carries no description at
+all** — a class nobody can read is not a class somebody decided about; and
+**`Q2622002` the abolition of feudalism (deviation 1211)**, whose only class
+is glossed by Wikidata in the criminal-procedure sense of *abolition*, which
+does not describe the item carrying it. Seventeen class entries were added,
+each quoting the gloss read off the class item itself.
+
+**Deviations 1207 and 1208 again, and no new number for either**: four items
+refused for want of a lane were re-asked through the seeds file's `lanes`
+table and the tool's `done` list, and `civil-constitution-of-the-clergy`'s
+`end: null` was closed at 1790 from its own cited article because it dated a
+child outside its parent. Batch 5 did both, five hours earlier.
+
+**Corpus after the fire: 722 active, 243 main, 479 filed, 676 edges, largest
+connected component 517, 165 components, 135 events with no edge at all.**
+Europe's 18th century goes from **1 / 1 to 20 / 2** and is no longer the
+thinnest cell in the atlas; the `americas` lane loses a main event to the new
+umbrella and gains no active one. Europe before 1900 now holds 63 active and
+17 main. The cells that trail now are the Americas' 16th and 18th and Europe's
+15th, at three each.
+
 **M42 batch 37 — the joins, and the count amendment A3 asks for.** Five records
 imported, **five filed and none main**, so the main count comes out of the batch
 where it went in: **242**, with the corpus 678 → 683 and the filed count

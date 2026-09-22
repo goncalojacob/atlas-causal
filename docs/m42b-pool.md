@@ -1367,10 +1367,12 @@ to name yet, never a category nobody looked for"*.
 could be derived from a point and the import refused them — the case
 `data/imports/wikidata-seeds.json` → `lanes` exists for, and deviation 447 has
 been sitting in. Each was given `europe` there, taken back out of the state's
-`done` list, and imported. **Deviation 1212**: taking an id out of
-`wikidata-state.json`'s `done` after supplying what the refusal asked for is a
-re-run of a refusal and not a re-import of a batch, and the brief's *"a batch
-already pushed is never re-imported"* is untouched by it.
+`done` list, and imported. **That is deviation 1207 again, not a new one** —
+batch 5 did exactly this for four items and wrote it down as the path that
+should not have to be taken. It is worth saying once more what it is not:
+taking an id out of `wikidata-state.json`'s `done` after supplying what the
+refusal asked for is a re-run of a refusal, not a re-import of a batch, and
+the brief's *"a batch already pushed is never re-imported"* is untouched.
 
 ### One interval closed, from the record's own article (A7)
 
@@ -1385,7 +1387,12 @@ cites, at revision 1370659862, whose first words are *"a law passed on 12 July
 the day it happened, as `slave-trade-act-1807` does. The flag is cleared and
 `review.note` says what was changed from what and why, which is A7's shape.
 The article also says the schism that followed *"was not fully resolved until
-1801"* — that is the schism and not this record. **Deviation 1213.**
+1801"* — that is the schism and not this record. **This is deviation 1208
+again**: batch 5 closed the Edict of Restitution's end the same way, for the
+same reason, five hours earlier. Twice in two fires is the corrected
+`intervalFor()` doing what A12 C3 asked and the filing rule catching what is
+left, and a run that files an imported record under a dated parent should
+expect to do it.
 
 ### The counts (A10)
 
@@ -1436,13 +1443,9 @@ class's Wikidata description describes something else — the criminal-procedure
 sense of *abolition* — and mapping it on the strength of the class's name
 would be the guess the table prevents.
 
-**1212.** Four ids taken back out of `wikidata-state.json`'s `done` list after
-being given a lane in the seeds file, and imported on a second run of the same
-batch. A refusal re-run is not a re-import.
-
-**1213.** `civil-constitution-of-the-clergy`'s unstated end closed at 1790
-from its own cited article, under A7, because `end: null` put a child outside
-its parent and failed `tests/m62.test.mjs`.
+**No others.** The lane re-ask and the closed end are **1207** and **1208**
+again, not new numbers; the sections above say so where they happen. Batch 6
+claims two deviations and no more.
 
 ## Where the run stands, for the fire that picks it up
 
