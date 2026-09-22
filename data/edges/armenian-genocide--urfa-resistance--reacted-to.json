@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "armenian-genocide--urfa-resistance--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Urfa resistance\", revision 1370748893, § lead"
+    }
+  ],
+  "from": "armenian-genocide",
+  "to": "urfa-resistance",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The article is two sentences and the first is the whole claim: the resistance “was an effort by some Ottoman Armenians in Urfa to defend themselves against the Armenian genocide launched by the Ottoman Empire. The resistance was quelled following German intervention.” The second is why it is `reacted-to` and not `enabled`: it changed nothing about the thing it answered.",
+  "dispute": null
+}

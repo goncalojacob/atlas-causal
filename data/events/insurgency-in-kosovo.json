@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "insurgency-in-kosovo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q18126038",
+  "wikipedia": {
+    "en": "Insurgency in Kosovo (1995–1998)",
+    "pt": "Insurgência no Kosovo (1995–1998)"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18126038"
+    }
+  ],
+  "title": "Insurgency in Kosovo",
+  "summary": "Wikidata item Q18126038, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Yugoslav Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1998,
+    "end": 1998,
+    "date": "1998-02-28",
+    "endDate": "1998-02-28"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "yugoslav-wars",
+  "actors": []
+}
