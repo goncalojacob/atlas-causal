@@ -59,3 +59,26 @@ The fixture atlas has one event with two parents and every view opens it
 from either; the validator judges the three shapes; screenshots
 `docs/screens/m79-*.png`; `STATUS.md` says what was decided about rewriting
 existing records and why; `M79 done`.
+
+## Amendments after review
+
+**A1 (22 September). The merged tree fails one timeline test, and it is
+yours before `M79 done`.** `m0` at `874c6395` carries M42's snapshot (581
+active events) under M77's titled rows for the first time, and
+`tests/timeline-browser.test.mjs` 217 — *a state change updates the bars in
+place and does not rebuild them* — fails **deterministically**, twice with
+the same numbers: `and it is the same drawing (969 to 957)`. The churn
+assertions pass (fewer than 5 % of elements added or removed); what fails is
+the last one, a **fixed** `Math.abs(after - before) < 10` beside bounds the
+test itself turned into a share of the drawing because "raising it by one
+per milestone is a bound that means nothing". Do this on the real page at
+`?selected=carnation-revolution-1974&focus=none` with the merged data:
+**name the twelve elements** the click removes net. If they are the opened
+bar's own ring, glyph, title and label moving between the packed rows and
+the held layer — the test's "handful" — then the last bound becomes the same
+share as the others, with this reason in the commit. If they are anything a
+reader would miss — twelve labels gone from neighbouring rows, a ring
+dropped — that is a display defect of M77 under volume and is fixed here,
+with the test unchanged. Say which in `STATUS.md`. Your own check on `m79`
+will show the same red until this is done, and the snapshot pull request the
+owner is waiting for is held on it.
