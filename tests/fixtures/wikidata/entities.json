@@ -132,6 +132,48 @@
       },
       "sitelinks": { "ptwiki": { "site": "ptwiki", "title": "Eleição regional inventada de 1976" } }
     },
+    "Q9000012": {
+      "type": "item",
+      "id": "Q9000012",
+      "labels": { "en": { "language": "en", "value": "Northfield Crisis" }, "pt": { "language": "pt", "value": "Crise de Northfield" } },
+      "descriptions": { "en": { "language": "en", "value": "an invented crisis carrying a span and a stray point in time, used only to test an interval" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
+        "P580": [{ "mainsnak": { "snaktype": "value", "property": "P580", "datavalue": { "type": "time", "value": { "time": "+1956-10-29T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
+        "P582": [{ "mainsnak": { "snaktype": "value", "property": "P582", "datavalue": { "type": "time", "value": { "time": "+1956-11-07T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
+        "P585": [{ "mainsnak": { "snaktype": "value", "property": "P585", "datavalue": { "type": "time", "value": { "time": "+1957-03-01T00:00:00Z", "precision": 10, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
+        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "longitude": 8, "latitude": 8, "precision": 0.0001, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }]
+      },
+      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Northfield Crisis" } }
+    },
+    "Q9000013": {
+      "type": "item",
+      "id": "Q9000013",
+      "labels": { "en": { "language": "en", "value": "Northfield Insurgency" } },
+      "descriptions": { "en": { "language": "en", "value": "an invented insurgency whose item states a start and no end, used only to test an interval" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
+        "P580": [{ "mainsnak": { "snaktype": "value", "property": "P580", "datavalue": { "type": "time", "value": { "time": "+1991-06-25T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
+        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "longitude": 9, "latitude": 9, "precision": 0.0001, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }]
+      },
+      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Northfield Insurgency" } }
+    },
+    "Q9000014": {
+      "type": "item",
+      "id": "Q9000014",
+      "labels": { "en": { "language": "en", "value": "Northfield Civil War" }, "pt": { "language": "pt", "value": "Guerra Civil de Northfield" } },
+      "descriptions": { "en": { "language": "en", "value": "an invented civil war, one of three of that name, whose label drops the years its article keeps" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
+        "P580": [{ "mainsnak": { "snaktype": "value", "property": "P580", "datavalue": { "type": "time", "value": { "time": "+1989-02-15T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
+        "P582": [{ "mainsnak": { "snaktype": "value", "property": "P582", "datavalue": { "type": "time", "value": { "time": "+1992-04-27T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
+        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "longitude": 10, "latitude": 10, "precision": 0.0001, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }]
+      },
+      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Northfield Civil War (1989–1992)" }, "ptwiki": { "site": "ptwiki", "title": "Guerra Civil de Northfield (1989–1992)" } }
+    },
     "Q9000008": { "id": "Q9000008", "missing": "" }
   },
   "success": 1
