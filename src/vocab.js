@@ -119,6 +119,30 @@ export const OFFICE_CATEGORIES = Object.freeze([
 // was: adding a third value is a change to the drawing and therefore code.
 export const EVENT_SCOPES = Object.freeze(['regional', 'worldwide']);
 
+// How precisely a place is placed. Four values since M80, and the fourth is
+// the one the imports needed: `country` is *the state's own point* — the
+// coordinate Wikidata gives for a polity, used where nothing finer is known
+// about where an event happened. An election held "in Portugal" is not held
+// in Lisbon, and a mark on Lisbon would be an address the record does not have
+// (M42, amendment A9, which gives the imported events their places).
+//
+// `coarse` is the half of the vocabulary that is not a point on the ground:
+// a region and a country are areas, and the map draws them wider and fainter
+// than a city's mark so that nobody reads one as a pin (`isCoarse` below, and
+// map/layers/events.js). `label` is what a card says, because a slug printed
+// where a phrase goes is the atlas presenting a derived string as what it
+// knows.
+//
+// A closed vocabulary and not data, unlike `category`: it says how the atlas
+// *draws* a place rather than what the place was, which is the same reason
+// `EVENT_SCOPES` above is here.
+export const PRECISIONS = Object.freeze([
+  Object.freeze({ id: 'point', label: 'an exact point' }),
+  Object.freeze({ id: 'city', label: 'a city' }),
+  Object.freeze({ id: 'region', label: 'a region', coarse: true }),
+  Object.freeze({ id: 'country', label: "the state's own point", coarse: true }),
+]);
+
 // `GROUPS` — the four groupings a reader could ask the lanes for — was here
 // until M77. The owner asked for the picker and everything behind it to go:
 // the timeline packs its bars into unlabelled rows and the graph drops its
@@ -153,6 +177,7 @@ const alternation = (types) => types.map((t) => t.id).join('|');
 export const EDGE_TYPE_IDS = ids(EDGE_TYPES);
 export const RELATION_TYPE_IDS = ids(RELATION_TYPES);
 export const OFFICE_CATEGORY_IDS = ids(OFFICE_CATEGORIES);
+export const PRECISION_IDS = ids(PRECISIONS);
 
 // A relation's id has the same three-part shape as an edge's and is not one:
 // its third part comes from the other vocabulary, and the two never meet.
@@ -209,6 +234,18 @@ export const WRITABLE_RELATION_TYPE_IDS = Object.freeze(RELATION_TYPES.filter((t
 // for the cards and the form.
 export const OFFICE_ENDPOINTS = labelMap(OFFICE_CATEGORIES, 'of');
 export const OFFICE_CATEGORY_LABEL = labelMap(OFFICE_CATEGORIES, 'label');
+
+// { point: 'an exact point', … } — what a card says a place's precision is.
+export const PRECISION_LABEL = labelMap(PRECISIONS, 'label');
+
+// Whether a precision names an area rather than a point on the ground, which
+// is what decides how a mark is drawn. A word this file has not heard of is
+// **not** coarse: a mark wider than its neighbours is a claim, and a record
+// from somewhere the validator has not been makes none.
+const COARSE = Object.freeze(new Set(PRECISIONS.filter((p) => p.coarse).map((p) => p.id)));
+export function isCoarse(precision) {
+  return COARSE.has(precision);
+}
 
 // The order an actor's card draws its relation groups in: what this actor is,
 // then what it was made of, then who ran it, then who it stood beside. A

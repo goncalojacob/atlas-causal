@@ -21,7 +21,7 @@
   "where": {
     "lon": -30,
     "lat": 0,
-    "precision": "city",
+    "precision": "region",
     "label": "Fixture place C"
   },
   "region": null,

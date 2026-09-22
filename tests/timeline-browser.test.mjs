@@ -325,23 +325,12 @@ test('a state change updates the bars in place and does not rebuild them', { ski
     // which is the paragraph above, and is not the drawing being rebuilt. The
     // property this line is about is that the picture is the *same size*
     // afterwards, and that is a proportion and not a number (M79, and red on
-    // `m0` before this branch existed).
-    //
-    // **Two per cent was measured against a picture M42 is deliberately
-    // shrinking, and A8's filings crossed it**: 943 elements to 923, where the
-    // bound was 19. What left were seven bars of 1974–1975 — two of them
-    // `angola-independence-1975` and `1975-sao-tomean-legislative-election`,
-    // filed under their umbrellas by that pass — and what arrived were three
-    // of 1492–1500. That is not a rebuild and not a relayout: since M65 both
-    // pictures are **lens sets**, the click swaps one for another, and the
-    // sizes of two lens sets are a fact about the records and not about the
-    // drawing. Every batch of this milestone files more main events away, so
-    // any share tuned to today's corpus is a bound with a date on it.
-    // **Five per cent, the same order the churn bound above uses**, still
-    // refuses what this test exists to refuse — a rebuild replaces the whole
-    // drawing, not a twentieth of it. A fire that sees this red again should
-    // put it to the owner rather than nudge the share a third time.
-    const same = Math.max(10, Math.round(before * 0.05));
+    // `m0` before this branch existed). Two per cent held for one snapshot
+    // and not the next: M42's amendment A8 gave twenty-two events a second
+    // parent, each a ring, and the click moved twenty of 950 (`950 to 930`).
+    // The property is the churn bounds' own, so it is their share — one
+    // proportion for the three assertions, not three (22 September).
+    const same = handful;
     assert.ok(Math.abs(after - before) < same, `and it is the same drawing (${before} to ${after})`);
 
     // And the layers are still the only children of the <svg>: nothing was

@@ -298,3 +298,81 @@ denied (the pass says how many gained one); and **the decolonisation of
 Africa is an umbrella**, with the span its Wikipedia article states and the
 revision cited — the owner asked for it by name. Until `M79 done` is on
 `origin/m0`, a record still has one parent and this amendment waits.
+
+**A9 (22 September). An imported event gets the place its item names.** The
+owner, focused on the Russo-Ukrainian war and looking at an empty map: *"it
+should show children events on the map in case they have a place."* 435 of
+the 444 placeless active events are the import's, and they are placeless by
+the import's own rule — *"an event whose location is not already a place of
+this atlas is placeless and takes a lane instead"* — written when creating a
+place record was creating a record nobody asked for. **The owner has now
+asked for it.** From the next fire, a **place pass** and then the rule for
+every batch after it: for each active event with no `place` and a Wikidata
+item, read `P276` (location), then `P131` (administrative territory), then
+`P17` (country), in that order, and **the first item that carries `P625`
+becomes the event's place**: an existing place record with that item is
+reused; otherwise the import writes one, with the point, the label, and
+`precision` `city` for a settlement or `region` for anything larger that is
+not a state. **Until `M80 done` is on `origin/m0`, an event whose only
+located thing is its country stays placeless** — M80 adds the `country`
+precision and the mark that draws it; from then on the country's point is a
+place too, at that precision. The pass reports how many events gained a
+place at each precision and how many are still placeless and why, in
+`docs/m42-pool.md` under `## Places (A9)`. Nothing invented: a point comes
+from `P625` or the event stays placeless.
+
+**A10 (22 September). The world, not Europe.** The owner: *"the platform has
+mostly events related to Europe. We want the whole world, Africa, Asia,
+South America."* The filing pass measured it: before A6, main events by lane
+were **Europe 190, Asia 73, Africa 44, the Americas 63**, and the active
+corpus leans the same way. From the next fire **every batch is taken from
+the lanes that trail**, in this order of need — Africa, South America (the
+`americas` lane south of the Rio Grande, said as such in the batch note),
+Asia — until each of the three holds at least as many active events as
+Europe held on 22 September (whatever `docs/m42-pool.md` measures Europe at
+that morning). Europe takes a batch only when it is the lane a chain
+crosses into. The candidates sweep (A2) is re-ranked by lane before by
+sitelinks; the seeds file gains the regional periods A6 asks for where a
+lane has none (Latin America's, Asia's), each from its Wikipedia article.
+**Every batch note reports the active and main count per lane**, and
+`docs/m42-pool.md` keeps a running table. Umbrellas (A6), places (A9) and
+second parents (A8) apply to each batch as before.
+
+**A11 (22 September). The curation fire, and the partition with M42b.** The
+owner, leaving for a week: *"The curation should be, every now and then,
+fired to analyze all events globally"*; *"the site must keep growing until I
+get back, no matter how many events it has already"*; *"run as many things
+in parallel as feasible"*; *"we are not looking for accuracy but instead to
+have a demo"* — so what a run can settle from a cited source, it settles,
+and nothing waits for a person. Three things.
+
+*The curation fire.* **The first fire after 02:00Z each day is a curation
+fire and imports nothing.** It reads every active event and fixes, from the
+record's own cited sources or its Wikidata item, what is missing or wrong:
+a summary absent or shorter than two sentences (from the Wikipedia lead at
+a named revision); a place Wikidata knows (A9's rule); an actor named as a
+participant (`P710`) that the atlas holds; a parent whose span and subject
+fit (A6, A8); an edge the article's lead states in so many words, with its
+locator (A5, M72); an interval the article widens (A7). It reports the
+counts of each kind fixed and left, under `## Curation <date>` in
+`docs/m42-pool.md`, and it must leave the main count no higher. **The first
+curation fire also writes every polity's description**: for each actor that
+is a state or a polity, a summary with the approximate area (`P2046`) and
+population (`P1082`, the latest year) from Wikidata, and two or three
+sentences of geopolitical context from its Wikipedia lead, each cited at a
+revision — the owner: *"each country should have a short description
+mentioning approximate area, population and a bit of context on its
+geopolitical situation."*
+
+*The partition.* A second records lane, **M42b on the branch `m42b`**, runs
+beside this one so the world grows twice as fast. **M42 takes Africa and
+Asia**, every century; **M42b takes the Americas, every century, and Europe
+before 1900**. Neither imports an item the other's lane owns; a chain that
+crosses lanes is followed by whichever run found it, and the other run
+reads `origin/m42b` (or `origin/m42`) before a batch to skip what is
+already there. The curation fire belongs to M42 alone and covers every
+event, whichever lane wrote it.
+
+*No ceiling.* The owner: *"no ceiling."* This milestone has no done
+condition until the owner writes one; the assistant lands a snapshot of
+`m42` and `m42b` into `m0` every day.

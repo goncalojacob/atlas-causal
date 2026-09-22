@@ -41,9 +41,12 @@ export function identifiersHtml(source) {
   return ids.length ? `<p class="identifiers">${ids.join(' · ')}</p>` : '';
 }
 
-// One citer, as a row that opens what cited it. An edge is not a card of its
-// own: opening one walks its own single step, which is the only honest way
-// to show a link — the panel then names both ends and loads the argument.
+// One citer, as a row that opens what cited it. A link is walked here rather
+// than read: the question a source's card answers is *what rests on this
+// book*, and walking the step puts the reader at the far end of the claim with
+// the argument loaded beside it. Since M80 a link also has a card of its own
+// (`?edge=`, panel/edge.js); this row keeps the older verb because the two are
+// different acts and this list is the one place the walking one is the answer.
 function citerRow(ctx, citation) {
   const { atlas } = ctx;
   const locator = citation.locator ? ` <span class="locator">${esc(citation.locator)}</span>` : '';

@@ -204,3 +204,29 @@ block. When the lanes rejoin, numbering continues from the larger.
 
 The claim rule, the idempotent gate, and everything else in this protocol
 apply on the branch exactly as they did on `m0`.
+
+## Amendment, 22 September 2026 — the landing routine, and a third lane
+
+The owner is away for a week and the site must keep growing whatever its
+size. Two changes, both the owner's ("no need to wait for me, we are not
+looking for accuracy but instead to have a demo"; "you should have a
+process that will later resume work in case credits end").
+
+1. **A landing routine may push to `m0` and publish to `main`.** The rule
+   that a run never pushes to `m0` is for lane runs. One routine, named
+   "landing", exists to do what the assistant does at the end of a lane
+   milestone and nothing else: bring a branch whose done line is on it, or
+   a daily snapshot of `m42` and `m42b`, into `m0` exactly as `land.sh`
+   does (keep both sides of `STATUS.md` and `pr-sections.md`, drop and
+   rebuild `data/index/`, keep `m0`'s side of any test file, validate
+   `--index`, push `m0`), then open the pull request to `main` and complete
+   it once its check is green. It acts only when `origin/m0` has not moved
+   for six hours while a landing is due, so that it and the assistant never
+   race; the assistant disables it when back at the keyboard.
+2. **Lane B is two lanes.** M42 (Africa and Asia) and M42b (the Americas and
+   Europe before 1900) run on `m42` and `m42b` under the same brief and
+   amendments, partitioned by A11. Records branches land in arrival order,
+   as lane A's do.
+
+The standing orders the assistant works under for the week are in
+`docs/assistant-standing-orders.md`.

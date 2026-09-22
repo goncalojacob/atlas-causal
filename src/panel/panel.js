@@ -3,9 +3,9 @@
 // This file owns the container, the clicks, the load token that cancels the
 // text of a card the reader has already left, and the helpers every card
 // needs — citations, the link to an event, the lane's name. The cards
-// themselves are one file each: event.js, source.js, place.js, actor.js,
-// office.js, cluster.js. Which one is shown is decided in render() and
-// nowhere else.
+// themselves are one file each: event.js, edge.js, source.js, place.js,
+// actor.js, office.js, cluster.js. Which one is shown is decided in render()
+// and nowhere else.
 
 import { shardsArrived } from '../render-key.js';
 import { shardsOnScreen } from '../attributes.js';
@@ -21,6 +21,7 @@ import { shortestPaths, pathTo } from '../graph.js';
 import { chainEdges } from '../chain.js';
 import { identifiers, containerText } from '../citation.js';
 import { renderEventCard } from './event.js';
+import { renderEdgeCard } from './edge.js';
 import { renderActorCard, groundEventsSection, GROUND_SECTION } from './actor.js';
 import { renderOfficeCard, tenureClusterAt } from './office.js';
 import { renderPlaceCard, placeEventsSection, EVENTS_SECTION } from './place.js';
@@ -33,6 +34,7 @@ import { createLinks, ENTRY_KINDS } from '../entry/entry.js';
 import { discussUrl, recordUrl, editUrl } from '../share.js';
 import { toggleSection, readOpenSection, sectionBodyHtml } from './sections.js';
 import { categoryLabels } from '../categories.js';
+import { EDGE_TYPE_LABEL } from '../vocab.js';
 
 // What the reader asked their browser for, in order. Read once: the cards
 // use it to choose which Wikipedia edition to offer, and a list that changed
@@ -149,8 +151,18 @@ export function createPanel(container, {
       case 'clear-focus':
         state.set({ focus: FOCUS_NONE, focusAll: false });
         break;
-      // An edge has no card of its own: opening one from a source's list
-      // walks that single step, which names both ends and loads the argument.
+      // The link's own card (M80): the type, both ends, the confidence and
+      // what it means, the sources and the argument. It clears nothing —
+      // choosing a link is not a lens and never narrows a picture — and the
+      // store takes it away again as soon as another card is opened
+      // (state.js, `closedEdge`).
+      case 'edge':
+        state.set({ edge: el.dataset.edge ?? el.dataset.id });
+        break;
+      // The other verb on a link, and older: *walk* this single step rather
+      // than read it. Kept because it is a different act — the panel ends up
+      // on the event at the far end with the step in the chain — and it is
+      // what a source's list of citing links offers.
       case 'follow-edge': {
         const edge = atlas.edges.get(el.dataset.edge);
         if (edge) state.set({ selected: edge.to, chain: [edge.id], source: null });
@@ -435,6 +447,14 @@ export function createPanel(container, {
   function openingLabel(opening) {
     if (!opening) return null;
     if (opening.narrative) return atlas.narratives?.get(opening.narrative)?.title ?? opening.narrative;
+    // A link has no title of its own — it is an argument between two events —
+    // so it is named the way it is drawn: the type, between the two ends.
+    if (opening.edge) {
+      const edge = atlas.edges.get(opening.edge);
+      if (!edge) return opening.edge;
+      const name = (id) => atlas.events.get(id)?.title ?? id;
+      return `${name(edge.from)} ${EDGE_TYPE_LABEL[edge.type] ?? edge.type} ${name(edge.to)}`;
+    }
     if (opening.selected) return atlas.resolve(opening.selected)?.record?.title ?? opening.selected;
     if (opening.source) return atlas.sources.get(opening.source)?.title ?? opening.source;
     if (opening.office) return atlas.offices?.get(opening.office)?.title ?? opening.office;
@@ -635,7 +655,7 @@ export function createPanel(container, {
   // for nothing: it is not in the graph file, and `attributeShardsOf` says so
   // by finding no shard for it.
   const OPENING_KINDS = [
-    ['narrative', 'narrative'], ['selected', 'event'], ['source', 'source'],
+    ['narrative', 'narrative'], ['edge', 'edge'], ['selected', 'event'], ['source', 'source'],
     ['office', 'office'], ['place', 'place'], ['actor', 'actor'],
   ];
   function openingOf(s) {
@@ -735,10 +755,25 @@ export function createPanel(container, {
       else notFound('narrative', s.narrative);
       return;
     }
-    // The precedence: an event, then a source, then an office, then a place,
-    // then an actor. Opening an event from a place's list therefore does not
-    // throw the place away, and an office opened from the card of the actor
-    // it belongs to is what is shown.
+    // The link's card is ahead of all of them (M80): it is the one the reader
+    // asked for last, and the store takes `edge` away the moment they open
+    // anything else (state.js), so nothing under it is ever hidden by a link
+    // they have left behind. What it does not do is clear a selection — a
+    // picture must not change because a reader read the argument for one of
+    // its lines.
+    if (s.edge) {
+      const found = atlas.resolve(s.edge);
+      if (found && found.kind === 'edge') {
+        renderEdgeCard(ctx, {
+          container, edge: found.record, state: s, mine, remembered: readOpenSection(storage),
+        });
+      } else notFound('edge', s.edge);
+      return;
+    }
+    // The precedence under it: an event, then a source, then an office, then a
+    // place, then an actor. Opening an event from a place's list therefore
+    // does not throw the place away, and an office opened from the card of the
+    // actor it belongs to is what is shown.
     if (!s.selected) {
       if (s.source) {
         const found = atlas.resolve(s.source);
