@@ -1163,9 +1163,19 @@ export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }
       // `shardsOfRecord` is all of them, and it is what says whether a record
       // has its attributes in hand — a bar drawn in the 1800s out of the 1800s
       // shard is named, whatever century its event began in.
-      const home = attributeShardKey(attributePeriod(kind, record, eventsById));
+      // **The first of the shards its span touches**, which is the shard the
+      // record begins in whatever the filing unit is (M83, A13). It was
+      // `attributePeriod` — the record's own century — and that is a key the
+      // index may no longer have: a century the build found too large for one
+      // file is filed as its ten decades, so `1900-1999` names nothing and a
+      // card would wait on a file that does not exist. The periods come from
+      // the manifest at both ends, so the list is the list the build filed
+      // against, and the earliest of them is the home.
       const touched = periodsTouched(attributeSpan(kind, record, eventsById), centuries);
-      const keys = touched.length === 0 ? [home] : touched.map((period) => attributeShardKey(period));
+      const keys = touched.length === 0
+        ? [attributeShardKey(attributePeriod(kind, record, eventsById))]
+        : touched.map((period) => attributeShardKey(period));
+      const home = keys[0];
       shardOfRecord.set(key, home);
       shardsOfRecord.set(key, keys);
       if (!shardOfId.has(record.id)) shardOfId.set(record.id, home);

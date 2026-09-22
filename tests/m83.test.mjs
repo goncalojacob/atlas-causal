@@ -38,7 +38,9 @@ import { defaultState } from '../src/state.js';
 import { centuryCounts } from '../src/util/window.js';
 import { extent, startPoint } from '../src/util/dates.js';
 import { parentsOf } from '../src/parts.js';
-import { atlasOf, ROOT } from './helpers.mjs';
+import { buildAttributeShards, SHARD_CAP } from '../src/validate/core.js';
+import { decodeSpineFile, SPINE_KINDS, ATTRIBUTE_COLUMNS } from '../src/spine.js';
+import { atlasOf, topologyOf, ROOT } from './helpers.mjs';
 
 const atlas = await atlasOf(path.join(ROOT, 'data'));
 const at = (patch = {}) => ({ ...defaultState(), ...patch });
@@ -215,4 +217,69 @@ test('the resting arrangement still merges lines at the zoom the graph floors at
     'the resting picture stacks marks that cannot be told apart');
   assert.ok(stacked.edges.some((line) => line.count > 1),
     'and merges the links between two stacks into one line');
+});
+
+// --- A13: the densest century's shard is cut into decades past a cap --------
+//
+// One century holds most of a corpus — the 20th holds 31 % of this one's
+// attribute data in one file — and the file a reader on the window the atlas
+// opens on waits for is that one. Past `SHARD_CAP` the build files that century
+// as its ten decades instead. Nothing splits on the corpus of 22 September, so
+// what is asserted here is the rule, over a topology built to reach it.
+
+test('A13: a century under the cap is one shard, as it always was', async () => {
+  const topology = await topologyOf(path.join(ROOT, 'data'));
+  const shards = buildAttributeShards(topology);
+  const years = shards.filter((shard) => shard.from !== null);
+  assert.ok(years.length > 3, 'the corpus spans several periods');
+  for (const shard of years) {
+    assert.equal(shard.to - shard.from + 1, 100, `${shard.key} is a century`);
+    assert.ok(JSON.stringify(shard.file).length <= SHARD_CAP,
+      `${shard.key} is inside the cap (${JSON.stringify(shard.file).length} of ${SHARD_CAP})`);
+  }
+});
+
+test('A13: a century over the cap becomes its ten decades, and loses no record', async () => {
+  // Enough text in one century to pass the cap, and one event in another so the
+  // test can say the split reached the dense century and nothing else. The
+  // titles are what make the bytes: `title` is an attribute column, so this is
+  // the shard growing the way a corpus grows it.
+  const filler = 'x'.repeat(900);
+  const events = [];
+  for (let i = 0; i < 700; i += 1) {
+    const year = 1900 + (i % 100);
+    events.push({
+      id: `dense-${String(i).padStart(4, '0')}`,
+      kind: 'event',
+      status: 'active',
+      title: `${filler} ${i}`,
+      when: { start: year, end: year },
+    });
+  }
+  events.push({
+    id: 'sparse-one', kind: 'event', status: 'active', title: 'one', when: { start: 1500, end: 1500 },
+  });
+  const topology = {
+    events, edges: [], actors: [], places: [], relations: [], offices: [], tenures: [], narratives: [], sources: [],
+  };
+
+  const shards = buildAttributeShards(topology);
+  const dense = shards.filter((shard) => shard.from !== null && shard.from >= 1900 && shard.to <= 1999);
+  assert.ok(dense.length > 1, 'the century over the cap is more than one file');
+  assert.equal(dense.length, 10, 'and it is its ten decades');
+  for (const shard of dense) {
+    assert.equal(shard.to - shard.from + 1, 10, `${shard.key} is a decade`);
+  }
+  // The sparse century is untouched: only what passed the cap is cut.
+  const sparse = shards.find((shard) => shard.from === 1500);
+  assert.ok(sparse, 'the century with one event in it still has a shard');
+  assert.equal(sparse.to - sparse.from + 1, 100, 'and it is still a century');
+
+  // And every record is still in a shard, exactly once for a record of one year.
+  const seen = new Set();
+  for (const shard of shards) {
+    const rows = decodeSpineFile(shard.file, SPINE_KINDS, ATTRIBUTE_COLUMNS);
+    for (const row of rows.events ?? []) seen.add(row.id);
+  }
+  assert.equal(seen.size, events.length, 'every event is in a shard');
 });
