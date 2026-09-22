@@ -47,6 +47,24 @@
         }
       ]
     },
+    "battle-of-magersfontein--second-battle-of-colenso--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-stormberg--second-battle-of-colenso--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "berlin-conference--first-italo-ethiopian-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -328,6 +346,24 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "siege-of-ladysmith--battle-of-spion-kop--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "siege-of-ladysmith--second-battle-of-colenso--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

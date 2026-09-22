@@ -3242,6 +3242,15 @@
         }
       ]
     },
+    "battle-of-misrata-2011": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-tripoli-2011": {
       "from": "git",
       "versions": [
@@ -5006,6 +5015,15 @@
             "parent"
           ],
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "ogossagou-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

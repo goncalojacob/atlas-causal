@@ -41,6 +41,15 @@
         }
       ]
     },
+    "al-hoceima": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "albania-q222": {
       "from": "git",
       "versions": [
@@ -52,6 +61,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "algiers-q3561": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -736,6 +754,24 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "chris-hani-district-municipality": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "colenso": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -2175,6 +2211,15 @@
         }
       ]
     },
+    "ladysmith": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "lajes": {
       "from": "git",
       "versions": [
@@ -2674,6 +2719,15 @@
         }
       ]
     },
+    "misrata": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "mogadishu": {
       "from": "git",
       "versions": [
@@ -3137,6 +3191,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "ogossagou": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -4951,6 +5014,15 @@
             "wikipedia"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "waterberg-plateau-park": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

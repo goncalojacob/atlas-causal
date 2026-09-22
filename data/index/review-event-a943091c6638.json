@@ -3594,6 +3594,39 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "alhucemas-landing",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "rif-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Alhucemas landing"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -4728,6 +4761,39 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "id": "battle-of-algiers-1956-1957",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "algerian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Battle of Algiers (1956–1957)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
       "id": "battle-of-annual",
       "kind": "event",
       "origin": {
@@ -5248,6 +5314,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "battle-of-magersfontein",
       "kind": "event",
       "origin": {
@@ -5266,6 +5333,38 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Magersfontein"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-misrata-2011",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Battle of Misrata (2011)"
     },
     {
       "authors": [
@@ -5431,6 +5530,38 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-paardeberg",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Battle of Paardeberg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-09-22",
@@ -5487,6 +5618,39 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "battle-of-spion-kop",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Battle of Spion Kop"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-09-22",
@@ -5505,6 +5669,39 @@
       "revised": null,
       "status": "active",
       "title": "Battle of St. Quentin"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "battle-of-stormberg",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Battle of Stormberg"
     },
     {
       "authors": [
@@ -5729,6 +5926,38 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Verdun"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-waterberg",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "herero-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Battle of Waterberg"
     },
     {
       "authors": [
@@ -14048,6 +14277,37 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "id": "ogossagou-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Ogossagou massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata"
@@ -16377,6 +16637,39 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 3,
+      "id": "second-battle-of-colenso",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Second Battle of Colenso"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -16889,6 +17182,39 @@
       "revised": "2026-09-18",
       "status": "active",
       "title": "Sidónio Pais's coup"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 2,
+      "id": "siege-of-ladysmith",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-22",
+      "status": "active",
+      "title": "Siege of Ladysmith"
     },
     {
       "authors": [
@@ -21527,10 +21853,16 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-annual",
+      "id": "battle-of-algiers-1956-1957",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-algiers-1956-1957",
+      "kind": "event",
+      "message": "the title states 1956–1957 and the record is dated 1957",
+      "rule": "span-vs-article-title"
     },
     {
       "id": "battle-of-ap-bac",
@@ -21617,7 +21949,7 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-magersfontein",
+      "id": "battle-of-misrata-2011",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -21651,6 +21983,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "battle-of-paardeberg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "battle-of-san-carlos",
@@ -21720,6 +22058,12 @@
     },
     {
       "id": "battle-of-verdun",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-waterberg",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -22062,6 +22406,12 @@
     },
     {
       "id": "odz-insurrection",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "ogossagou-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

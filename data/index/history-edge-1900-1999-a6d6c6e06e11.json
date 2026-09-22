@@ -1116,6 +1116,15 @@
         }
       ]
     },
+    "battle-of-annual--alhucemas-landing--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-mogadishu-1993--war-in-somalia--precondition-of": {
       "from": "git",
       "versions": [

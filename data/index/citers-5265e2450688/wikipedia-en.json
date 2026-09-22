@@ -1688,6 +1688,30 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-annual--alhucemas-landing--precondition-of",
+      "kind": "edge",
+      "locator": "\"Alhucemas landing\", revision 1370427911, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-annual--alhucemas-landing--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Annual\", revision 1370483005, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-magersfontein--second-battle-of-colenso--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Magersfontein\", revision 1370268748, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-magersfontein--second-battle-of-colenso--reacted-to",
+      "kind": "edge",
+      "locator": "\"Second Battle of Colenso\", revision 1370736054, § Background"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mogadishu-1993--war-in-somalia--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Mogadishu (1993)\", revision 1376073635, § Legacy"
@@ -1697,6 +1721,18 @@
       "id": "battle-of-mount-tumbledown--argentine-surrender-in-the-falklands-war--caused",
       "kind": "edge",
       "locator": "\"Battle of Mount Tumbledown\", revision 1372389478, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-stormberg--second-battle-of-colenso--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Stormberg\", revision 1370589985, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-stormberg--second-battle-of-colenso--reacted-to",
+      "kind": "edge",
+      "locator": "\"Second Battle of Colenso\", revision 1370736054, § Background"
     },
     {
       "dissent": false,
@@ -3743,6 +3779,18 @@
       "id": "sidonio-pais-assassinated-1918--1918-portuguese-presidential-election--caused",
       "kind": "edge",
       "locator": "\"1918 Portuguese presidential election\", revision 1340296036, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-ladysmith--battle-of-spion-kop--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Spion Kop\", revision 1374078287, lead"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-ladysmith--second-battle-of-colenso--reacted-to",
+      "kind": "edge",
+      "locator": "\"Second Battle of Colenso\", revision 1370736054, § Background"
     },
     {
       "dissent": false,
@@ -5846,6 +5894,12 @@
     },
     {
       "dissent": false,
+      "id": "alhucemas-landing",
+      "kind": "event",
+      "locator": "\"Alhucemas landing\", revision 1370427911"
+    },
+    {
+      "dissent": false,
       "id": "allied-invasion-of-sicily",
       "kind": "event",
       "locator": "\"Allied invasion of Sicily\", revision 1376074492"
@@ -5996,6 +6050,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-algiers-1956-1957",
+      "kind": "event",
+      "locator": "\"Battle of Algiers (1956–1957)\", revision 1374865618"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-annual",
       "kind": "event",
       "locator": "\"Battle of Annual\", revision 1370483005"
@@ -6074,6 +6134,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-misrata-2011",
+      "kind": "event",
+      "locator": "\"Battle of Misrata (2011)\", revision 1374514174"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mogadishu-1993",
       "kind": "event",
       "locator": "\"Battle of Mogadishu (1993)\", revision 1376073635"
@@ -6083,6 +6149,24 @@
       "id": "battle-of-musa-dagh",
       "kind": "event",
       "locator": "\"Musa Dagh Resistance\", revision 1370628972"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-paardeberg",
+      "kind": "event",
+      "locator": "\"Battle of Paardeberg\", revision 1370271388"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-spion-kop",
+      "kind": "event",
+      "locator": "\"Battle of Spion Kop\", revision 1374078287"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-stormberg",
+      "kind": "event",
+      "locator": "\"Battle of Stormberg\", revision 1370589985"
     },
     {
       "dissent": false,
@@ -6107,6 +6191,12 @@
       "id": "battle-of-verdun",
       "kind": "event",
       "locator": "\"Battle of Verdun\", revision 1376156165"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-waterberg",
+      "kind": "event",
+      "locator": "\"Battle of Waterberg\", revision 1374107433"
     },
     {
       "dissent": false,
@@ -7118,6 +7208,12 @@
     },
     {
       "dissent": false,
+      "id": "ogossagou-massacre",
+      "kind": "event",
+      "locator": "\"Ogossagou massacre\", revision 1354535837"
+    },
+    {
+      "dissent": false,
       "id": "operation-brother-sam-1964",
       "kind": "event",
       "locator": "\"1964 Brazilian coup d'état\", revision 1374834512"
@@ -7418,6 +7514,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-colenso",
+      "kind": "event",
+      "locator": "\"Second Battle of Colenso\", revision 1370736054"
+    },
+    {
+      "dissent": false,
       "id": "second-boer-war",
       "kind": "event",
       "locator": "\"Second Boer War\", revision 1372994797"
@@ -7487,6 +7589,12 @@
       "id": "siamese-revolution-of-1932",
       "kind": "event",
       "locator": "\"Siamese revolution of 1932\", revision 1370738350"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-ladysmith",
+      "kind": "event",
+      "locator": "\"Siege of Ladysmith\", revision 1370742736"
     },
     {
       "dissent": false,

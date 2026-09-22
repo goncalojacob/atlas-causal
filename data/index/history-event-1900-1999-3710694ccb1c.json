@@ -4818,6 +4818,15 @@
         }
       ]
     },
+    "alhucemas-landing": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "allied-invasion-of-sicily": {
       "from": "git",
       "versions": [
@@ -6218,6 +6227,15 @@
         }
       ]
     },
+    "battle-of-algiers-1956-1957": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-annual": {
       "from": "git",
       "versions": [
@@ -6684,6 +6702,15 @@
         }
       ]
     },
+    "battle-of-paardeberg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-san-carlos": {
       "from": "git",
       "versions": [
@@ -6694,6 +6721,15 @@
       ]
     },
     "battle-of-seal-cove": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-spion-kop": {
       "from": "git",
       "versions": [
         {
@@ -6845,6 +6881,15 @@
             "sources",
             "summary"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-waterberg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]

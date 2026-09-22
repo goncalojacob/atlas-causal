@@ -97,6 +97,33 @@
       ],
       "created": "2026-09-22",
       "degree": 1,
+      "id": "al-hoceima",
+      "kind": "place",
+      "names": [
+        "Al Hoceima"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
       "id": "albania-q222",
       "kind": "place",
       "names": [
@@ -105,6 +132,33 @@
         "Shqipërisë",
         "People's Socialist Republic of Albania",
         "People's Republic of Albania"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "algiers-q3561",
+      "kind": "place",
+      "names": [
+        "Algiers"
       ],
       "origin": {
         "tool": "assistant"
@@ -1398,6 +1452,62 @@
         "Chunghwa",
         "Zhongguo",
         "Chung-kuo"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "chris-hani-district-municipality",
+      "kind": "place",
+      "names": [
+        "Chris Hani District Municipality",
+        "Chris Hani District",
+        "Chris Hani Municipality"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "colenso",
+      "kind": "place",
+      "names": [
+        "Colenso"
       ],
       "origin": {
         "tool": "assistant"
@@ -4146,6 +4256,34 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "ladysmith",
+      "kind": "place",
+      "names": [
+        "Ladysmith",
+        "Ladysmith, KwaZulu-Natal"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-03",
       "degree": 1,
       "id": "lajes",
@@ -5028,6 +5166,38 @@
         "Middle East",
         "Mid East",
         "Mideast"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "misrata",
+      "kind": "place",
+      "names": [
+        "Misrata",
+        "البيضاء",
+        "Misurata",
+        "Misratah",
+        "Misuratah",
+        "Mısrate"
       ],
       "origin": {
         "tool": "assistant"
@@ -5949,6 +6119,34 @@
         "Ogaden",
         "Ogadēn",
         "Western Somalia"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "ogossagou",
+      "kind": "place",
+      "names": [
+        "Ogossagou",
+        "Village located in Mali"
       ],
       "origin": {
         "tool": "assistant"
@@ -8048,7 +8246,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 3,
       "id": "south-africa-q258",
       "kind": "place",
       "names": [
@@ -9390,6 +9588,34 @@
         "status": "draft"
       },
       "revised": "2026-09-17",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "waterberg-plateau-park",
+      "kind": "place",
+      "names": [
+        "Waterberg Plateau Park",
+        "Waterberg National Park"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

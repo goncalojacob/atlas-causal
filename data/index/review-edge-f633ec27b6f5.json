@@ -3388,6 +3388,62 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "from": "battle-of-annual",
+      "id": "battle-of-annual--alhucemas-landing--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "alhucemas-landing",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "battle-of-magersfontein",
+      "id": "battle-of-magersfontein--second-battle-of-colenso--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-battle-of-colenso",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
       "from": "battle-of-mogadishu-1993",
       "id": "battle-of-mogadishu-1993--war-in-somalia--precondition-of",
       "kind": "edge",
@@ -3432,6 +3488,34 @@
       "status": "active",
       "to": "argentine-surrender-in-the-falklands-war",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "battle-of-stormberg",
+      "id": "battle-of-stormberg--second-battle-of-colenso--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-battle-of-colenso",
+      "type": "reacted-to"
     },
     {
       "authors": [
@@ -13113,6 +13197,62 @@
       "status": "active",
       "to": "noite-sangrenta-1921",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "siege-of-ladysmith",
+      "id": "siege-of-ladysmith--battle-of-spion-kop--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-spion-kop",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "siege-of-ladysmith",
+      "id": "siege-of-ladysmith--second-battle-of-colenso--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-battle-of-colenso",
+      "type": "reacted-to"
     },
     {
       "authors": [

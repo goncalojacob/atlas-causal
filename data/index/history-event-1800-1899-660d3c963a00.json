@@ -358,6 +358,15 @@
         }
       ]
     },
+    "battle-of-stormberg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-velestino": {
       "from": "git",
       "versions": [
@@ -1030,6 +1039,15 @@
         }
       ]
     },
+    "second-battle-of-colenso": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "second-boer-war": {
       "from": "git",
       "versions": [
@@ -1122,6 +1140,15 @@
             "sources",
             "summary"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "siege-of-ladysmith": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
