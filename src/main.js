@@ -265,6 +265,9 @@ try {
     });
   });
 
+  // Which of the three panes was hidden the last time the view changed, so that
+  // one coming back can be told to draw again (B1, below).
+  const wasHidden = { map: false, graph: true, timeline: true };
   const showView = (view) => {
     const graphOn = view === 'graph';
     const timelineOn = view === 'timeline';
@@ -289,6 +292,24 @@ try {
     for (const button of document.querySelectorAll('[data-view]')) {
       button.setAttribute('aria-pressed', String(button.dataset.view === view));
     }
+    // **And whatever has just come back is drawn for the pane it came back to**
+    // (M83, B1). The three views subscribe to the store inside their own
+    // constructors, which is before this subscription; so on `view: 'map'` the
+    // map renders while `mapArea` is still hidden, `getScreenCTM()` is null,
+    // `visibleBox()` answers the nominal 960 × 540, and the render key is
+    // stamped with a rectangle nobody is looking at — marks in the letterbox
+    // margins culled and the labels placed for the wrong box. The map's own
+    // observer then found the size unchanged (it never forgot the size it had
+    // before it was hidden) and returned. Forcing the picture that has just been
+    // unhidden is the half of the fix that does not depend on an observer
+    // firing at all; the other half is in `map.js`, which now forgets the size
+    // when it measures nothing.
+    if (!mapArea.hidden && wasHidden.map) map?.render(state.get(), { force: true });
+    if (!graphArea.hidden && wasHidden.graph) graph?.render(state.get(), { force: true });
+    if (!timelineArea.hidden && wasHidden.timeline) timeline?.render(state.get(), { force: true });
+    wasHidden.map = mapArea.hidden;
+    wasHidden.graph = graphArea.hidden;
+    wasHidden.timeline = timelineArea.hidden;
   };
   for (const button of document.querySelectorAll('[data-view]')) {
     button.addEventListener('click', () => state.set({ view: button.dataset.view }));

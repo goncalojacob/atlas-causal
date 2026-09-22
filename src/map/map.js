@@ -860,9 +860,24 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       // the nominal box when it does — so a map hidden behind another view
       // would publish the box of a picture that is not on screen and take the
       // reader's own away. Since M60 that happens whenever the graph or the
-      // timeline has the pane, which is often; `last` is deliberately left
-      // alone, so the size it comes back at is a change and is drawn again.
-      if (!rect.width || !rect.height) return;
+      // timeline has the pane, which is often.
+      //
+      // **And `last` is cleared, not left alone** (M83, B1). The comment here
+      // used to say it was left alone *so that* the size it comes back at is a
+      // change; the opposite was true. The map subscribes to the store inside
+      // `createMap`, before `showView` does (main.js), so on a switch back it
+      // renders while its pane is still hidden: `getScreenCTM()` is null,
+      // `visibleBox()` answers the nominal 960 × 540, and the render key is
+      // stamped with that box — marks in the letterbox margins culled and the
+      // label round run for a rectangle the reader is not looking at. `showView`
+      // then unhides the pane, the observer fires, and `last` still held the
+      // size from before it was hidden, so `now === last` and it returned
+      // without drawing. The picture stood wrong until the next pan, wheel or
+      // state change. Forgetting the size is what makes coming back a change.
+      if (!rect.width || !rect.height) {
+        last = '';
+        return;
+      }
       const now = `${Math.round(rect.width)}x${Math.round(rect.height)}`;
       if (now === last) return;
       last = now;

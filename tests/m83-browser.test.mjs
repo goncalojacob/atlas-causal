@@ -104,3 +104,41 @@ test('A1-4: and the same one button on a phone', { skip }, async () => {
     assert.equal(folded.body, false, 'and the key is behind it');
   }, { device: PHONE });
 });
+
+// --- B1: the map drawn while hidden is drawn again when it comes back -------
+//
+// The map subscribes to the store inside `createMap`, before `showView` does,
+// so a switch back to it renders while the pane is still hidden: the box is the
+// nominal 960 x 540 and the marks in the letterbox margins are culled. The
+// observer then found the size unchanged and returned. What is asserted is the
+// comparison and not a count: the map a reader comes back to draws what the map
+// they arrived on drew.
+test('B1: coming back to the map draws the map, not the picture it had while hidden', { skip }, async () => {
+  const MARKS = `
+    const svg = document.querySelector('svg.map');
+    return [...svg.querySelectorAll('.mark[data-id]')].map((el) => el.getAttribute('data-id')).sort();`;
+  const HERE = '?from=1900&to=1999&bbox=-25,-25,60,55';
+
+  const arrived = await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url(HERE), ready);
+    await waitFor(page, 'return document.querySelectorAll("svg.map .mark[data-id]").length > 0;', 'marks');
+    return page.eval(MARKS);
+  }, { device: DESK });
+
+  const returned = await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url(HERE), ready);
+    await waitFor(page, 'return document.querySelectorAll("svg.map .mark[data-id]").length > 0;', 'marks');
+    await page.eval('document.querySelector(\'[data-view="graph"]\').click(); return true;');
+    await waitFor(page, NODES, 'the graph to draw its nodes');
+    await page.eval('document.querySelector(\'[data-view="map"]\').click(); return true;');
+    await waitFor(page, 'return document.querySelectorAll("svg.map .mark[data-id]").length > 0;', 'marks again');
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+    return page.eval(MARKS);
+  }, { device: DESK });
+
+  assert.ok(arrived.length > 2, 'there are marks on the map to compare');
+  assert.deepEqual(returned, arrived, 'the same marks are drawn on the way back as on arrival');
+});
