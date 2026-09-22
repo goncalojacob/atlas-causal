@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-ladysmith--second-battle-of-colenso--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Colenso\", revision 1370736054, § Background"
+    }
+  ],
+  "from": "siege-of-ladysmith",
+  "to": "second-battle-of-colenso",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The Colenso article's § Background says the battle was Buller's first attempt at the same relief: he \"assumed command of his largest detachment and proposed to lead it to the relief of a besieged British force in Ladysmith, in Natal\", and the Boers \"had retired north of the Tugela River at Colenso and dug in there, blocking the road and railway line to Ladysmith\". The same shape as Spion Kop six weeks later and the same claim: the battle answered the siege. `probable`, one Wikipedia article (rule 22).",
+  "dispute": null
+}

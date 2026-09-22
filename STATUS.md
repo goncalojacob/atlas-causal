@@ -19619,6 +19619,76 @@ cause rather than the symptom — see deviations 1174 and 1175.
       it, and the index is byte-identical — which is the honest form of "past a
       threshold".
 
+1087. **An item's English label is not always English, and the `enwiki`
+      sitelink is the check.** `Q131323`, which the Battle of Misrata names as
+      its location, carries `البيضاء` as its `en` label while its sitelink says
+      *Misrata* and its English aliases say *Misurata*, *Misratah*, *Misuratah*.
+      A place written from `labels.en` alone would have put an Arabic name on
+      an English map, which CLAUDE.md's first rule about this atlas forbids. The
+      test batch 36 used is cheap and mechanical — **does the label contain a
+      Latin letter?** — and where it does not, the `enwiki` sitelink title is
+      the label and the original is kept in `names`. Nothing is guessed and no
+      name is dropped.
+
+1088. **A place id can collide with an actor id, and rule 2 is across kinds.**
+      `algiers` is already an actor record here, so the place written for the
+      Battle of Algiers is `algiers-q3561` — the qid suffix the corpus already
+      uses for `mali-q912`, `london-q84`, `darfur-q46733` and
+      `south-africa-q258`. The validator caught it as *"duplicate id among the
+      records under validation"* and as *"is not a place record"* in the same
+      run, which is the pair of errors this collision always produces. A pass
+      that writes place records from item labels should check every id against
+      **every kind**, not against `data/places/`.
+
+1089. **A modern administrative name on a nineteenth-century battle is the
+      price of A9's order, not a defect of it.** `battle-of-stormberg` sits in
+      `chris-hani-district-municipality`, an area created in 2000 and named
+      after a man killed in 1993; it is the only located item Wikidata offers
+      between the battlefield and the country. The alternative, the country,
+      is what `battle-of-spion-kop` and `battle-of-paardeberg` took for want of
+      any `P276` at all — and `south-africa-q258` is just as anachronistic for
+      1899 and coarser besides. The atlas's own answer already exists and is
+      unwritten: `historicalNames` on the place record, which the validator has
+      reported as an unwritten field since it was declared. Containment is
+      geometry and not a claim (`src/grounds.js`), so neither choice asserts
+      anything about 1899; what a reader sees on the map is a naming problem
+      and `historicalNames` is where it is solved.
+
+1090. **Batch 34's finding and batch 36's are both true, and the variable is
+      not the war.** Batch 34 took eight rows of the Vietnam War and wrote two
+      edges, concluding that "the phases of one war are chronological to each
+      other and not causal". Batch 36 took five rows of the Second Boer War and
+      four of its five edges run between them. The difference is in the
+      articles: Colenso's § Background states a decision *with its reason* —
+      *"On hearing that Gatacre and Methuen had been defeated at the battles of
+      Stormberg and Magersfontein, Buller felt he needed to relieve Ladysmith
+      as soon as possible"* — where Khe Sanh's and Hamburger Hill's describe
+      positions. **Read § Background for why the next thing was done**, not for
+      what happened next, and rows of one war connect.
+
+1091. **The absence of a type is not a licence to misuse one.** The Battle of
+      Mogadishu's § Legacy argues that the battle is why the United States did
+      *not* intervene in the Rwandan genocide, and this atlas holds
+      `1994-genocide-against-tutsi`. The five edge types have nothing for "is
+      why this other thing was not answered", and `precondition-of` would have
+      the atlas asserting that an American battle stands behind a Rwandan
+      genocide, which no source says. **The edge was refused and the reason
+      written down** rather than typed as the nearest thing available: a vein
+      that reaches for the nearest type when none fits is how a graph fills up
+      with claims nobody made.
+
+1092. **A count carried forward from the last stand is not a measurement.**
+      Three stands in a row said "events with no place: 23, all refused for
+      want of a coordinate", and the number was already wrong when the second
+      one copied it: measured at `eebd5bc6`, the head this fire picked up, 28
+      active events had no place. The five the figure was missing are M42b's
+      Italian Wars, which reached this branch through an earlier `m0` merge
+      and which that lane deliberately left placeless. Nothing was broken by
+      it, and that is the point — **a wrong count in a document is invisible
+      until somebody re-measures**, which is deviation 1078 arriving in a
+      second place. A row that says "N" should be a row a fire re-took, and a
+      fire that copies one forward should say it copied it.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

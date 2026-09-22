@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-stormberg--second-battle-of-colenso--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Colenso\", revision 1370736054, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Stormberg\", revision 1370589985, lead"
+    }
+  ],
+  "from": "battle-of-stormberg",
+  "to": "second-battle-of-colenso",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The Colenso article states the link in one sentence and names the battle: \"On hearing that Gatacre and Methuen had been defeated at the battles of Stormberg and Magersfontein, Buller felt he needed to relieve Ladysmith as soon as possible and resume overall command of the forces in South Africa\" — and, the paragraph goes on, \"He decided to make a frontal assault at Colenso\" rather than the flank march at Potgieter's Drift he had intended. What the edge claims is that the defeat five days earlier is why Colenso was fought the way it was fought; it does not claim Stormberg caused the battle, which is why the type is `reacted-to` and not `caused`. `probable`, Wikipedia on both ends (rule 22).",
+  "dispute": null
+}

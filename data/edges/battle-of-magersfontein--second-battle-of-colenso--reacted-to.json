@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-magersfontein--second-battle-of-colenso--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Colenso\", revision 1370736054, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Magersfontein\", revision 1370268748, lead"
+    }
+  ],
+  "from": "battle-of-magersfontein",
+  "to": "second-battle-of-colenso",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The other half of the same sentence: Buller changed his plan \"on hearing that Gatacre and Methuen had been defeated at the battles of Stormberg and Magersfontein\". Magersfontein was fought on 11 December 1899 and Colenso on the 15th, and the Magersfontein article's own lead says what Methuen was doing when he was stopped — \"advancing north along the railway line from the Cape to relieve the siege of Kimberley\". Two defeats, one decision, and this atlas holds both defeats, so both are written rather than one standing for the pair. `probable` (rule 22).",
+  "dispute": null
+}

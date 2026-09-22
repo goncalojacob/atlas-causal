@@ -971,7 +971,17 @@
     "Q609013",
     "Q2090584",
     "Q1388058",
-    "Q989081"
+    "Q989081",
+    "Q2543997",
+    "Q1072592",
+    "Q178842",
+    "Q431849",
+    "Q868249",
+    "Q2270347",
+    "Q3026815",
+    "Q62389968",
+    "Q1761043",
+    "Q2237713"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -4375,6 +4385,12 @@
       "kind": "place",
       "label": "mountain range",
       "note": "Added in M42b batch 4 from the class each located item of the Cuban Revolution's vein names, read off Wikidata rather than guessed."
+    },
+    "Q646740": {
+      "kind": "event",
+      "category": "war",
+      "label": "landing operation",
+      "note": "Added in M42 batch 36, the second Africa batch of the inverse `part of` vein. The label and the description — “type of military action” — are read from the item itself over the network, which this sandbox has; the class is here because Q3026815, the Alhucemas landing of 1925, carries it and the table did not. It follows Q1261499 naval battle and Q830494 dogfight into `war`: an amphibious assault is organised armed force between polities, which is that category as data/categories.json describes it."
     }
   },
   "reconcile": true

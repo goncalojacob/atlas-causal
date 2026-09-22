@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "battle-of-misrata-2011",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2270347",
+  "wikipedia": {
+    "en": "Battle of Misrata (2011)",
+    "pt": "Batalha de Missurata"
+  },
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2270347"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Misrata (2011)\", revision 1374514174"
+    }
+  ],
+  "title": "Battle of Misrata (2011)",
+  "summary": "The English Wikipedia article \"Battle of Misrata (2011)\", at revision 1374514174, opens: \"The Battle of Misrata, also known as the Siege of Misrata, was a battle of the First Libyan Civil War for the control of Misrata. It was fought between troops loyal to the government of Muammar Gaddafi, and anti-Gaddafi rebels who held Misrata, the third largest city in Libya. Following the initial stages of the uprising, the Libyan government retook most towns in the west of the country, leaving Misrata the only major city under rebel control in Tripolitania.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2270347, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the 2011 Libyan Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-02-23",
+    "endDate": "2011-05-15"
+  },
+  "place": "misrata",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

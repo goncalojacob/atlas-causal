@@ -2871,7 +2871,7 @@ on the wrong side of the Angolan Civil War's 11 November 1975.
 | largest connected component | 506 | **508** |
 | components | 92 | 99 |
 | events with no edge at all | 72 | **78** |
-| events with no place | 23 | 23 — every one of the ten arrived placed |
+| events with no place | **28** | **28** — every one of the ten arrived placed |
 | classes added to the seeds table | — | **3**, one refused |
 | API calls | — | 1 SPARQL, 23 for the import, 4 full-article reads |
 
@@ -2913,6 +2913,19 @@ Wikidata knows as the battlefield museum and which is a site and not a town,
 and `country` for German East Africa, a historical country whose centroid is a
 long way from the coast the Abushiri revolt was fought on — which is exactly
 what a coarse precision is for, and why the map draws one wider and fainter.
+
+**The placeless count is 28 and not the 23 the last two stands carried**, and
+the difference was on the branch before this fire opened: measured at
+`eebd5bc6`, the head this fire picked up, it was already 28. The five the
+stands were not counting are M42b's Italian Wars, which reached this branch
+through an earlier `m0` merge — `italian-wars`, `italian-wars-of-1499-1504`,
+`italian-war-of-1521-1526`, `italian-war-of-1551-1559` and
+`war-of-the-league-of-cambrai`. Each is a war across a peninsula rather than a
+thing that happened at a point, and M42b withdrew a peninsula-sized place on
+22 September rather than draw one; they are that lane's to settle. **23 is the
+number A9 refused for want of a coordinate and it is unchanged**; 28 is how
+many active events have no place, which is the row's own question. The stands
+of batches 33 to 35 answered the second question with the first number.
 
 This is the practice the 410 places of the 22 September pass already follow:
 that pass created **112 `region`, 98 `country` and 58 `city` places and not one
@@ -2963,7 +2976,7 @@ Africa under A10.*
 | largest connected component | **508** |
 | components | **99** |
 | events with no edge at all | **78** |
-| events with no place | 23, all refused for want of a coordinate |
+| events with no place | **28** — 23 refused for want of a coordinate, 5 brought in by the `m0` merge |
 | the Africa half of the inverse vein | **149 rows open** after this batch's ten |
 | the sweep pool, world sections | **1,046** open rows, untouched |
 
@@ -2987,3 +3000,218 @@ Africa under A10.*
   whose article's § Background states the link.
 - **Three titles still argue with their spans** and are a person's, as the
   seven polity descriptions and the Gaza cluster's 48 rows are.
+
+## Batch 36 — the same lane, and the week where a war's rows *are* causal
+
+*22 September, the second batch of the fire of 18:13Z. The same pool, the same
+three tests, the next ten by sitelinks with ties by item id. It was taken
+expecting batch 34's answer — that the rows of one war are chronological to
+each other and not causal — and **it got the opposite**, which is the batch's
+finding.*
+
+**The pool did not move.** Re-run after batch 35 with the ten new records as
+subjects too, the vein returns the same 373 pairs over 365 items: an imported
+battle's own item is almost never the `P361` parent of anything. 82 subjects
+now, **149 rows open**, and the ten with the most sitelinks taken.
+
+| the record | sitelinks | filed under | placed at | the edge it earned |
+| --- | --- | --- | --- | --- |
+| `siege-of-ladysmith` | 16 | `second-boer-war` | `ladysmith` | it `--reacted-to-->` Spion Kop **and** Colenso |
+| `battle-of-spion-kop` | 15 | `second-boer-war` | `south-africa-q258` | the one above, into it |
+| `battle-of-waterberg` | 14 | `herero-wars` | `waterberg-plateau-park` | none |
+| `battle-of-stormberg` | 14 | `second-boer-war` | `chris-hani-district-municipality` | it `--reacted-to--> second-battle-of-colenso` |
+| `second-battle-of-colenso` | 14 | `second-boer-war` | `colenso` | three, into it |
+| `battle-of-misrata-2011` | 14 | `libyan-civil-war` | `misrata` | none |
+| `alhucemas-landing` | 14 | `rif-war` | `al-hoceima` | `battle-of-annual --precondition-of-->` it |
+| `ogossagou-massacre` | 14 | `mali-war` | `ogossagou` | none |
+| `battle-of-algiers-1956-1957` | 13 | `algerian-war` | `algiers-q3561` | none |
+| `battle-of-paardeberg` | 13 | `second-boer-war` | `south-africa-q258` | none |
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 632 active | **642 active** |
+| **main** | 242 | **242, unchanged** |
+| filed | 390 | **400** |
+| active edges | 650 | **655** |
+| largest connected component | 508 | **508, unchanged** |
+| components | 99 | 104 |
+| events with no edge at all | 78 | **81** |
+| classes added to the seeds table | — | **1** |
+| API calls | — | 1 SPARQL, 19 for the import, 4 full-article reads |
+
+**Per lane (A10).** Active: Europe 314, Asia 125, **Africa 89 → 99**, the
+Americas 104. Main unchanged in every lane — Europe 85, Asia 67, Africa 31, the
+Americas 59.
+
+### Five edges from ten rows, and why that contradicts batch 34
+
+Batch 34 took eight rows of the Vietnam War and concluded that **"the phases of
+one war are chronological to each other and not causal"**. This batch took five
+rows of the Second Boer War and **four of its five edges run between them**.
+Both findings are true and the difference between them is what a fire should
+carry forward: **it is not the war, it is whether the articles argue the
+commanders' decisions.**
+
+Colenso's § Background is the whole of it in one sentence: *"On hearing that
+Gatacre and Methuen had been defeated at the battles of Stormberg and
+Magersfontein, Buller felt he needed to relieve Ladysmith as soon as
+possible…"* and, three sentences later, *"He decided to make a frontal assault
+at Colenso"* instead of the flank march he had intended. That is a decision,
+with its reason, naming two battles this atlas holds — one of them
+`battle-of-magersfontein`, which arrived in batch 35 an hour earlier. Khe Sanh
+and Hamburger Hill have no such sentence; Spion Kop and Colenso each say in
+their own lead that they were attempts to relieve Ladysmith. **Read the
+articles for decisions and the rows of one war connect; read them for
+chronology and they do not.**
+
+`battle-of-annual --precondition-of--> alhucemas-landing` is the fifth and the
+same shape across four years: the landing's § Background opens *"After the
+Battle of Annual in July 1921, the Spanish army was unable to regain control of
+the central Rif region"* and runs from there to the inquiry, the agreements and
+the plan for the landing.
+
+### The component did not move, and A5 says a batch that grows the corpus and not the component must say why
+
+**508 before and 508 after.** The five edges built a **new component of five**
+— the relief of Ladysmith and Black Week — rather than joining the largest one,
+and the reason is structural rather than a failure of reading: every one of
+them runs between records this batch and batch 35 created, and **none of the
+ten reaches a record that was already on the main chain**. `second-boer-war`,
+which all five hang from, is their *parent*, and `parent` is a display fact
+that takes no edge (brief §, M62), so filing them under it puts them in the
+picture and not in the graph.
+
+That is the honest cost of a vein that imports the parts of things. The way to
+join the cluster to the chain is an edge from the Second Boer War itself to or
+from something the atlas already holds — the Scramble for Africa is its parent
+and an umbrella, which `tests/m42-filing.test.mjs` refuses an edge to, so it
+would have to be a record like the Treaty of Vereeniging, which this atlas does
+not hold. **A fire that wants the component to move should import the joins,
+not more parts.**
+
+### What was refused, and the one refusal worth the most
+
+**`battle-of-mogadishu-1993 --?--> 1994-genocide-against-tutsi` was refused,
+and it is the fire's best refusal.** The battle's § Legacy says, in so many
+words, that *"many commentators identif[y] the Battle of Mogadishu's graphic
+consequences as the key reason behind the US's decision to not intervene in
+later conflicts such as the Rwandan genocide of 1994"*, and quotes Walter
+Clarke: *"Our lack of response in Rwanda was a fear of getting involved in
+something like a Somalia all over again."* The atlas holds
+`1994-genocide-against-tutsi`. The edge was not written because **what the
+article argues is about the response and not about the event**: Mogadishu is
+offered as a reason the United States stayed out, not as anything standing
+behind the genocide, whose preconditions are Rwandan. An edge here would have
+the atlas saying that an American battle is a precondition of a Rwandan
+genocide, which is not what any source says. **The absence of an `abstained`
+type is not a licence to use `precondition-of` for one.**
+
+`battle-of-stormberg --?--> battle-of-magersfontein` was refused for the
+opposite reason: Stormberg's lead says Gatacre attacked "to secure the railway
+lines which supplied the larger March on Kimberley by Lord Methuen", which
+makes the two battles *parts of one week* and not a chain — Methuen's march was
+already under way. Batch 34's finding holds wherever the articles describe
+positions rather than decisions. `battle-of-waterberg`, `battle-of-misrata-2011`,
+`ogossagou-massacre`, `battle-of-algiers-1956-1957` and `battle-of-paardeberg`
+each argue nothing beyond the war they are already filed under. Nothing was
+written to keep any of them.
+
+**One class added**: `Q646740` *landing operation*, which Wikidata glosses
+"type of military action", takes `war` — it follows `Q1261499` naval battle and
+`Q830494` dogfight, an amphibious assault being organised armed force between
+polities.
+
+### Three things the batch found about the data, each now a deviation
+
+**An item's English label is not always English** (1087). `Q131323`, which the
+Battle of Misrata names as its location, carries `البيضاء` as its `en` label
+while its `enwiki` sitelink says *Misrata* and its English aliases say
+*Misurata*. A place written from the label alone would have put an Arabic name
+on an English map. The sitelink is the check, and both names are kept in
+`names`.
+
+**A place id can collide with an actor** (1088). `algiers` is an actor record
+here, and ids are unique across kinds (rule 2), so the place is
+`algiers-q3561` — the qid suffix the corpus already uses for `mali-q912`,
+`london-q84` and `darfur-q46733`.
+
+**A modern administrative name on a nineteenth-century battle is the price of
+A9's order, not a defect of it** (1089). `battle-of-stormberg` is placed in
+`chris-hani-district-municipality`, an area created in 2000 and named after a
+man who died in 1993. Its `P276` is the only located item between the
+battlefield and the country, and `south-africa-q258`, where Spion Kop and
+Paardeberg went for want of any `P276` at all, is just as anachronistic for
+1899 and coarser. Containment is geometry and not a claim; `historicalNames`
+is the field that answers this and no record sets it yet.
+
+### One record arrives arguing with its own title
+
+`battle-of-algiers-1956-1957` is dated 7 January to 9 October 1957 from the
+item's `P580`/`P582`, and the article it is named from is
+*"Battle of Algiers (1956–1957)"*. A12 (3) says such a record keeps the
+`span-vs-article-title` warning, and A7 says an interval the cited article does
+not state stays as it is. The article's § First phase dates the campaign's
+opening to the executions of 19 June 1956 and the bombings of 30 September
+1956, but it states no start for the campaign itself, and choosing one of those
+two days would be this run writing a date. **It stays as it is and stays
+flagged**, which is A7's own sentence.
+
+## Where the run stands after batch 36, for the fire that picks it up
+
+*22 September, 18:13Z onward. An import fire, two batches, both Africa.*
+
+| | |
+| --- | --- |
+| corpus | **642 active** |
+| **main** | **242**, unmoved across both batches |
+| filed | 400 |
+| largest connected component | **508** |
+| components | **104** |
+| events with no edge at all | **81** |
+| events with no place | **28** — 23 refused for want of a coordinate, 5 brought in by the `m0` merge |
+| the Africa half of the inverse vein | **139 rows open** |
+| the sweep pool, world sections | **1,046** open rows, untouched |
+| per lane, active | Europe 314, Asia 125, **Africa 99**, Americas 104 |
+| per lane, main | Europe 85, Asia 67, Africa 31, Americas 59 |
+
+**What is open, in the order a fire should weigh it:**
+
+- **The next fire after 02:00Z is the curation fire and it owes A13's
+  relations pass**, which has never run: the 22 September curation section
+  predates the amendment. A13 is a pass over *every* active event, and the
+  corpus is 642 now.
+- **The component is the number to watch, not the corpus.** Two batches added
+  twenty records and eight edges and moved the largest component by two. The
+  vein imports parts, and parts hang from a parent that takes no edge. **Import
+  the joins**: a fire wanting the chain to grow should take the records the
+  existing corpus's articles name — treaties, agreements, the ends of wars —
+  rather than more battles inside wars already here.
+- **Africa is 99 against Europe's 314** and the vein there has 139 rows left,
+  so A10's order does not change: Africa, then Asia on this branch.
+- **Read the articles for decisions.** Batch 36's finding is that rows of one
+  war connect where their articles argue a commander's decision and do not
+  where they describe positions. A batch that reads § Background for *why the
+  next thing was done* will earn more edges than one that reads leads.
+- **Three titles still argue with their spans, and now a fourth**:
+  `battle-of-algiers-1956-1957`. All four are a person's, as the seven polity
+  descriptions and the Gaza cluster's 48 rows are.
+
+### The check, and deviation 1082 arriving a second time
+
+**Red on the first attempt, green on the re-run, and the failure was not a
+record.** `tests/compose-browser.test.mjs:103` failed at `browser.mjs:236` with
+*"headless Chromium opened a debugging port, saying: … Failed to connect to the
+bus"* — the browser dying **before the test body ran** — and the suite then hit
+its 120-second timeout, which is the second of the two counts. That is
+deviation 1082's signature exactly, named this morning on the previous fire's
+merge commit, and it is the one case the run protocol allows a re-run for: a
+job that died at the launch rather than inside a test. The same suite had
+passed twice in this sandbox on the same tree, 254 of 254.
+
+**One re-run, spent.** Attempt 2 was green. The same failure took two tests off
+the `m0` pull request's run at 18:58 on a commit whose push run had already
+passed, which is the clearest evidence available that it is the runner and not
+the corpus: one tree, two runs, two answers.
+
+**Green on the head**: 1,748 pure tests and 254 browser tests, 0 failed, 0
+skipped, and `node tools/validate.mjs --index` at 0 errors and 408 warnings.
