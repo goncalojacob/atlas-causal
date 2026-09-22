@@ -21,9 +21,9 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "end-unstated",
       "summary-from-lead"
-    ]
+    ],
+    "note": "A7 (deviation 1213). Wikidata gives P580 12 July 1790 and no P582; the import wrote end: null with the end-unstated flag, which reads as “as far as the data goes” and put this record outside the French Revolution it is part of. The end is taken from the article this record cites, “Civil Constitution of the Clergy” revision 1370659862: “a law passed on 12 July 1790”. The schism that followed ran to 1801; that is the schism and not this record."
   },
   "wikidata": "Q206979",
   "sitelinks": {
@@ -48,7 +48,7 @@
   "summary": "The English Wikipedia article \"Civil Constitution of the Clergy\", at revision 1370659862, opens: \"The Civil Constitution of the Clergy was a law passed on 12 July 1790 during the French Revolution, that sought the complete control over the Catholic Church in France by the French government. As a result, a schism was created, resulting in an illegal and underground French Catholic Church loyal to the Papacy, and a \"constitutional church\" that was subservient to the State. The schism was not fully resolved until 1801. King Louis XVI ultimately granted Royal Assent to the measure after originally opposing it, but later expressed regret for having done so.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q206979, imported by tools/import/wikidata.mjs. The item's own description reads \"French revolutionary law, making the Catholic Church in France subordinate to the government, Not in Union with the Holy See\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1790,
-    "end": null,
+    "end": 1790,
     "date": "1790-07-12"
   },
   "place": null,
