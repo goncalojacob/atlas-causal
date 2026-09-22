@@ -1567,35 +1567,6 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .panel .edge-card-head h2 {
   font-size: var(--text-xl); margin-top: 0; padding-top: 0; border-top: 0; line-height: var(--leading-tight);
 }
-/* The one way out of a card, and there is no other (M84, close.js). The owner,
-   22 September: *"Here you can see the 'close' button. Instead it should be a
-   simple cross on the top right corner."*
-
-   Floated rather than positioned, which is what makes it the *card's* corner
-   and not the panel's: the title beside it is a flex container and shortens to
-   clear the float by itself, the notices above it wrap around it line by line,
-   and everything below it goes back to the full measure once it has passed —
-   none of which a box taken out of the flow would do, and all of which a card
-   whose head is three lines on a phone and one on a desk needs.
-
-   No new hex value, no new type size: the cross is the multiplication sign in
-   the interface's own face at the size a section head already is, inked cobalt
-   as every control in the panel is and madder under the pointer as the lens
-   chip's × already is. The square is 2.75rem because a touch target is 44 CSS
-   pixels (WCAG 2.5.5) — a target size and not a type size, and the glyph
-   inside it is `--text-lg` like everything else. */
-.panel .card-close {
-  float: right;
-  display: flex; align-items: center; justify-content: center;
-  width: 2.75rem; height: 2.75rem;
-  /* Pulled back into the padding the panel already keeps, so the cross sits in
-     the corner of the card rather than a finger's width inside it. */
-  margin: calc(-1 * var(--space-2)) calc(-1 * var(--space-2)) 0 var(--space-2);
-  border: 0; background: none; padding: 0; cursor: pointer;
-  font-family: var(--font-ui); font-size: var(--text-lg); line-height: 1;
-  color: var(--cobalt);
-}
-.panel .card-close:hover { color: var(--madder); }
 /* The link's card (M80, and its heading since M82, A11). The heading *is* the
    link — this event, the type, that event, in the order the record writes them
    — because a card headed "enabled" says nothing about which two things it is
@@ -1734,6 +1705,44 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .panel button:not(.link):disabled, .panel button:not(.link)[disabled] {
   border-color: var(--line); color: var(--ink-soft); background: var(--ground); cursor: not-allowed;
 }
+/* The one way out of a card, and there is no other (M84, close.js). The owner,
+   22 September: *"Here you can see the 'close' button. Instead it should be a
+   simple cross on the top right corner."*
+
+   Floated rather than positioned, which is what makes it the *card's* corner
+   and not the panel's: the title beside it is a flex container and shortens to
+   clear the float by itself, the notices above it wrap around it line by line,
+   and everything below it goes back to the full measure once it has passed —
+   none of which a box taken out of the flow would do, and all of which a card
+   whose head is three lines on a phone and one on a desk needs.
+
+   No new hex value, no new type size: the cross is the multiplication sign in
+   the interface's own face at the size a section head already is, inked cobalt
+   as every control in the panel is and madder under the pointer as the lens
+   chip's × already is. The square is 2.75rem because a touch target is 44 CSS
+   pixels (WCAG 2.5.5) — a target size and not a type size, and the glyph
+   inside it is `--text-lg` like everything else.
+
+   Written `.panel button.card-close` and placed here, because `.panel
+   button:not(.link)` above draws every other button in this panel as a bordered
+   pill and a cross in a box is not a simple cross — and `:not(.link)` costs a
+   class, so a rule naming only the two classes would lose to it wherever it
+   stood. What this keeps from that rule is the corner radius and the faint
+   ground under the pointer. */
+.panel button.card-close {
+  float: right;
+  display: flex; align-items: center; justify-content: center;
+  width: 2.75rem; height: 2.75rem;
+  /* Pulled back into the padding the panel already keeps, so the cross sits in
+     the corner of the card rather than a finger's width inside it. */
+  margin: calc(-1 * var(--space-2)) calc(-1 * var(--space-2)) 0 var(--space-2);
+  border: 0; background: none; padding: 0; cursor: pointer;
+  font-family: var(--font-ui); font-size: var(--text-lg); line-height: 1;
+  color: var(--cobalt);
+}
+/* And the ground the generic rule puts under a hovered button, kept: it is
+   what makes a 44-pixel target look like one when a finger is on it. */
+.panel button.card-close:hover { color: var(--madder); }
 .panel .follow { text-align: left; }
 
 /* Confidence, designed. Three states that have to be tellable apart in a
