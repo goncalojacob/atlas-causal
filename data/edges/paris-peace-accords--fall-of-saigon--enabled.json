@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "paris-peace-accords--fall-of-saigon--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Paris Peace Accords\", revision 1376128374, lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fall of Saigon\", revision 1375890528, lead"
+    }
+  ],
+  "from": "paris-peace-accords",
+  "to": "fall-of-saigon",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Accords' own lead says what they removed and what they did not stop: \"The Paris Agreement removed the remaining US forces, and direct US military intervention ended\", and \"Fighting between the three remaining powers did not stop on 28 January, even for an hour.\" Twenty-seven months later Saigon \"was captured by North Vietnam on 30 April 1975\". `enabled` is the whole of the claim: the agreement took the American forces out of a war that went on without them, which is what made a conventional offensive on the capital survivable. It does not say the Accords caused the capture — the 1975 offensive was the North's decision and this atlas holds no record of it — and it is `probable` rather than `consensus` because the join between the two leads is made here and not in either article.",
+  "dispute": null
+}

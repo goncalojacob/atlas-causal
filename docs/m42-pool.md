@@ -2343,3 +2343,86 @@ only on chronology. Where an imported record's interval is narrower than its
 article, the edges already attached to it are evidence about which reading the
 atlas has committed to, and they should be read before the interval is
 touched.
+
+## Batch 34 — one war instead of a ranking, and what that answered
+
+*22 September, the same fire, after A8's pass and A7's intervals. Batch 33's
+own finding asked for this: **"take several rows of one war in one batch so
+that they can be argued against each other, rather than the top of the ranking
+spread over six wars."** This is that batch, and it answers the question it was
+set.*
+
+**The rule, unchanged but for its pool.** The same three tests since batch 20 —
+depth, span at the day, lane — over the same inverse `part of` vein, with the
+pool narrowed to **one parent**: `vietnam-war`, `Q8740`. The query returned
+**104 rows**, of which **47 pass all three tests**. Taken: the **eight with the
+most sitelinks**, ties by item id. Nothing was struck or added by hand, which
+matters here because the temptation of a one-war batch is to pick the rows that
+make a chain.
+
+| the record | sitelinks | filed under | the edge it earned |
+| --- | --- | --- | --- |
+| `fall-of-saigon` | 40 | `vietnam-war` | `paris-peace-accords --enabled-->` it |
+| `gulf-of-tonkin-incident` | 38 | `vietnam-war` | it `--precondition-of--> battle-of-ia-drang` |
+| `battle-of-khe-sanh` | 35 | `vietnam-war` | none |
+| `battle-of-ia-drang` | 29 | `vietnam-war` | the one above |
+| `battle-of-hue` | 25 | **`tet-offensive`** | none |
+| `battle-of-hamburger-hill` | 24 | `vietnam-war` | none |
+| `battle-of-ap-bac` | 22 | `vietnam-war` | none |
+| `battle-of-long-tan` | 16 | `vietnam-war` | none |
+
+**`battle-of-hue` went to the nearer parent.** Wikidata files it under the war;
+its own lead calls it *"a major battle in the Tết Offensive"*, and this atlas
+holds `tet-offensive`, dated 30 January to 23 September 1968, which contains
+the battle at the day. A vein that files by the queried subject would have put
+it two levels too high.
+
+**And the war the eight hang from was itself main.** `vietnam-war` is now part
+of `indochina-wars`, which already held `first-indochina-war` and
+`sino-vietnamese-war` and had no claim on the Second Indochina War only because
+nobody had looked. That is where the batch's fall in the main count comes from:
+eight records arrived filed and cost nothing, and one existing main event
+became a child.
+
+| | |
+| --- | --- |
+| imported | 8 |
+| created | **8**, **8 filed** |
+| edges written | **2** |
+| classes added | **0** — all eight are `Q178561` battle or `Q1261499` naval battle, both already in the table |
+| corpus | 582 → **590** active |
+| **main** | 245 → **244** |
+| largest connected component | 502 → **503** |
+| components | 59 → **65** |
+| events with no edge at all | 41 → **47** |
+| API calls | 1 SPARQL, 18 for the import, 3 article reads |
+
+### What taking one war answered
+
+**It did not raise the edge yield, and the reason is worth writing down.** Two
+edges from eight rows, against three from eight in batch 33 and three from
+twelve in batch 32. The hypothesis was that rows of one war could be argued
+against each other; what the reading found is that **the phases of one war are
+chronological to each other and not causal**. Khe Sanh, Ia Drang, Hamburger
+Hill, Ap Bac and Long Tan each describe a battle and none of their leads argues
+that another of them followed from it. The two edges that were written both
+run to or from a record the atlas already held — the Accords and, through the
+incident, the escalation — and **not between two rows of the batch**.
+
+So the corpus's thinness is not what limited batch 33 either. **What a lead
+argues is what limits it**: `fall-of-saigon` earned an edge because the Paris
+Peace Accords' lead says, in its own voice, what the agreement removed and what
+it did not stop; `battle-of-long-tan`'s lead says who fought whom in a rubber
+plantation, and no amount of neighbouring rows would change that.
+
+**Six of the eight earned no edge and none was invented for them**, which is
+the rule since batch 20 and the reason the "events with no edge at all" line
+keeps rising. That line is the honest cost of the vein and not a defect: an
+umbrella holds these records in the picture, and `degree-zero` says out loud
+which of them nothing yet hangs on.
+
+**For the fire that picks this up:** the vein is the same, and the suggestion
+batch 33 made is now spent as a hypothesis. The next batch should go back to
+**ranking across the whole vein**, which cost nothing to yield and spreads the
+new records over more of the world; 618 rows remain open. The Gaza cluster and
+Sudan's five are unchanged and still the owner's.
