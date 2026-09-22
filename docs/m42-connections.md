@@ -4131,3 +4131,139 @@ South Africa of 1910, which this atlas does not hold; `benin-expedition-of-1897`
 `herero-wars`, `wadai-war`, `1920-georgian-coup-attempt`, `sevastopol-uprising`
 (no English article at all) and `eritrean-civil-wars` say only what they were
 and where. Nothing was written to keep them.
+
+## 2ab. Batch 29 — four edges, nothing imported, and the paragraph the summary endpoint never returns
+
+*22 September, a connection-first batch on batch 22's rule, read one paragraph
+deeper. No record was imported, so the main count could not move; the whole
+batch is four edges. The measurement is in `docs/m42-pool.md` → "Batch 29".*
+
+**What made it possible is a method and not a judgement.** Every fire since
+batch 22 has left the Horn of Africa and Sudan alone with the same sentence:
+the leads of their articles name no event this atlas holds. That is true, and
+it is true only of the leads. The REST summary endpoint the import uses returns
+the first section; `action=query&prop=extracts&explaintext` returns the whole
+article, and the whole article of a war is mostly a Background section whose
+job is to name what came before it. Fetching the full text of thirty-two
+fragment articles and matching them against every active title in `data/`
+turned up four articles that argue for a record already here — and a fifth
+class of hit worth as much, which is the refusals below.
+
+#### `world-war-ii --precondition-of--> eritrean-war-of-independence`
+
+The war's own article, revision 1374058781, lead: "Eritrea was an Italian
+colony from the 1880s until the Italians were defeated by the Allies in World
+War II in 1941. Afterward, Eritrea briefly became a British Military
+Administration until 1951. The United Nations convened after the war to decide
+Eritrea's future, voting in favor of a federation between Eritrea and
+Ethiopia." And the Background section: "In 1952, the United Nations decided to
+federate Eritrea with Ethiopia … Haile Selassie dissolved the federation and
+annexed Eritrea, triggering a thirty-year armed struggle in Eritrea."
+
+`precondition-of` and not `caused` or `enabled`, because what the source
+asserts is a standing condition and not an act: the defeat of Italy put
+Eritrea's disposition in the United Nations' hands, and the federation it
+decided on is the thing whose dissolution the article says triggered the war.
+Nine years and an annexation lie between, and the edge asserts none of them.
+
+**This is the batch's whole value on A5.** It joins the seven-record Horn of
+Africa fragment — `ethiopian-civil-war`, `eritrean-war-of-independence`,
+`eritrean-ethiopian-war`, `ogaden-war`, `somali-civil-war`, `war-in-somalia`,
+`tigray-war` — to the main chain, and it is the fragment batch 22 read three
+leads for and put down.
+
+#### `berlin-conference --enabled--> scramble-for-africa`
+
+The period's own article, revision 1373841219, opens on the conference: "The
+1884–1885 Berlin Conference regulated European colonisation and trade in
+Africa, and is seen as emblematic of the 'scramble'." And in the section it
+gives it: "the diplomats in Berlin laid down the rules of competition by which
+the great powers were to be guided in seeking colonies … The Berlin Conference
+transformed Africa's colonization from informal economic penetration to
+systematic political control through its 'effective occupation' principle."
+
+`enabled` and not `caused`, because the same article says the scramble was
+already under way when the conference met — "The occupation of Egypt and the
+acquisition of the Congo were the first major moves in what came to be a
+precipitous scramble for African territory". Berlin supplied the rule it ran
+under, not its beginning. `scramble-for-africa` was a component of one
+carrying twelve children.
+
+#### `treaty-on-the-non-proliferation-of-nuclear-weapons --precondition-of--> budapest-memorandum`
+
+The treaty's article, revision 1375952857, in the section it gives Ukraine:
+"Ukraine acceded to the NPT in 1994 as a non-nuclear-weapon state, and
+committed to remove all former Soviet nuclear weapons from its territory. In
+recognition of Ukraine's decision, the UK, the United States and Russia
+provided security assurances to Ukraine under the Budapest Memorandum of 1994."
+
+`precondition-of`, and `probable` rather than anything firmer **because the
+same article states the sequence the other way round a hundred lines earlier**
+— the republics "joined the NPT by 1994 following the signature of the
+Budapest Memorandum on Security Assurances". Both sentences are in the source
+and they do not agree about which came first; the edge takes the one in the
+section devoted to the question and says here that the other exists. It joins
+the three nuclear treaties, which were a component of their own.
+
+#### `spanish-civil-war --inspired--> la-violencia`
+
+The Colombian article, revision 1373312674, under its own heading on the
+causes of the violence: "The atrocities that were committed at the outset of
+the Spanish Civil War in 1936 were seen by both sides as a possible precedent
+for Colombia, causing both sides to fear that it could also happen in their
+country; this belief also spurred the credibility of the conspiracies and it
+also served as a rationale for violence."
+
+What crossed the Atlantic is an example and the fear of it, which is what
+`inspired` is for in this vocabulary. The word carries no approval: what the
+precedent was used to justify is mass killing. It joins the Colombian pair.
+
+### The refusals, which are half of what the method found
+
+- **`ogaden-war` and `second-italo-ethiopian-war`.** The Ogaden article's
+  background does run through the 1935 war and the British military
+  administration that followed it, but it gives the dispute's origin as
+  Menelik II's invasions of the 1880s and the Anglo-Ethiopian treaty of 1897,
+  neither of which this atlas holds. An edge from 1935 would be this run
+  choosing a link in a chain the source starts elsewhere.
+- **`ogaden-war` and `yom-kippur-war`.** The only mention is a measurement:
+  the Soviet airlift to Ethiopia was "second in magnitude only to the colossal
+  October 1973 resupplying of Syrian forces during the Yom Kippur War". A
+  comparison of size is not a link.
+- **`war-in-darfur` and `rome-statute-of-the-international-criminal-court`,
+  `genocide-convention`, `1994-genocide-against-tutsi`, `the-holocaust`.** Four
+  hits in one article and not one of them a cause. The Rome Statute is the
+  instrument al-Bashir was charged under, the Genocide Convention supplies the
+  definition the Pre-Trial Chamber applied, and Rwanda and the Holocaust
+  appear in comparisons and in a survivors' open letter. **An instrument used
+  to judge an event is not an event that caused it.**
+- **`second-sudanese-civil-war` and `gulf-war`.** "During 1990 and 1991, the
+  Sudanese government supported Saddam Hussein in the Gulf War. This changed
+  American attitudes toward the country." A diplomatic alignment during a war
+  elsewhere, with consequences for aid; the source nowhere says one war acted
+  on the other.
+- **`first-sudanese-civil-war` and `october-revolution`.** The hit is Sudan's
+  own October Revolution of 1964 — "In October 1964 Abboud resigned over the
+  massive scale of civil disobedience" — and this atlas's `october-revolution`
+  is Russia's of 1917. **A title match is not an identity**, and this is the
+  first time the method produced a false one.
+- **`2021-myanmar-coup-d-etat` and `covid-19-pandemic`.** Three mentions: a
+  charge for campaigning against pandemic rules, a conviction for violating
+  pandemic protocols, and an IMF emergency package released days before the
+  coup. Incidental every time.
+- **`arab-spring` and `iraq-war`.** The mention is about the term: "In the
+  aftermath of the Iraq War, it was used by various commentators and bloggers
+  who anticipated a major Arab movement towards democratization." The name's
+  history is not the wave's.
+- **`british-expedition-to-tibet` and `russo-japanese-war`.** "The defeats the
+  Russians experienced in the Russo-Japanese War that began in February 1904
+  further altered perceptions of the balance of power in Asia" — a war that
+  began after the expedition did, changing how the expedition was read. Not a
+  cause of it.
+- **`sierra-leone-civil-war` and `second-congo-war`.** The only occurrence is
+  in the See also list.
+
+**Nine refusals against four edges**, and the shape of them is worth keeping:
+the full-text method finds four or five times as many candidate pairs as the
+lead did, and most of what it adds is an instrument, a comparison, a See also
+list or a namesake. The reading is the work; the fetch only makes it possible.

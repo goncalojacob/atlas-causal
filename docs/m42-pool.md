@@ -1560,3 +1560,86 @@ three for one import.
   `2011-yemeni-revolution` — cannot be filed while the wave is an africa-lane
   period. The owner's to decide.
 - **The Horn of Africa and Sudan fragments**, unchanged since batch 22.
+
+## Batch 29 — the full article instead of the lead, and the fragments it unlocked
+
+*22 September, a connection-first batch, the first of this fire. Batch 22's
+rule — read an umbrella's own article for the record it names and the atlas
+does not hold — with one change to how the article is read.*
+
+| | |
+| --- | --- |
+| imported | **0** |
+| edges written | **4** |
+| filed | — |
+| corpus | 555 → **555** active |
+| **main** | **252, unchanged** — nothing was imported, so nothing could arrive main |
+| largest connected component | 480 → **493** |
+| components | 47 → **43** |
+| events with no edge at all | 28 → **27** |
+| unreachable from a Portuguese event | 66 → **53** |
+| the sweep pool, world sections | 1,053 open rows, untouched |
+
+**Thirteen events joined the main chain for four edges**, which is the best
+ratio of the run, and the reason is a method rather than a judgement.
+
+**What changed: the endpoint.** Every fire since batch 22 has recorded that
+the Horn of Africa's and Sudan's articles "name no event this atlas holds",
+and every one of those readings was of a *lead*. `tools/import/wikidata.mjs`
+fetches the REST summary endpoint, which returns the first section only, and
+the cache under `tools/import/cache/wikipedia/` holds nothing else. The
+MediaWiki action API returns the whole article —
+`action=query&prop=extracts&explaintext&redirects=1` — and the whole article
+of a war is mostly a Background section whose job is to name what came before
+it. Thirty-two fragment articles were fetched whole and matched against every
+active title in `data/`; five argued for a record already here and four of
+those survived the reading.
+
+**The four are argued edge by edge in `docs/m42-connections.md` → "2ab".** In
+short: `world-war-ii --precondition-of--> eritrean-war-of-independence` joins
+the Horn's seven; `berlin-conference --enabled--> scramble-for-africa` joins a
+singleton that was carrying twelve children; the NPT joins the three nuclear
+treaties to `budapest-memorandum`; `spanish-civil-war --inspired-->
+la-violencia` joins the Colombian pair.
+
+**Nine refusals, and one of them is a new kind.** An instrument a crime was
+judged under (the Rome Statute, the Genocide Convention), a comparison of
+magnitude (the Yom Kippur airlift), a diplomatic alignment (Sudan in the Gulf
+War), a See also list, and — the new one — **a namesake**: the hit that put
+`october-revolution` in the First Sudanese Civil War's article is Sudan's own
+October Revolution of 1964. A title match is not an identity, and a method
+that matches titles has to be read by somebody.
+
+**What this says about the next fire.** The Sudan fragment of five is still a
+fragment: its two largest articles were read whole and neither names an
+outside record causally. It is not waiting on a deeper fetch any more — that
+has now been spent — it is waiting on a record this atlas does not hold, and
+the honest next move there is an import chosen for it rather than another
+read.
+
+## Where the run stands after batch 29, for the fire that picks it up
+
+*22 September, 06:00.*
+
+| | |
+| --- | --- |
+| corpus | **555 active** |
+| **main** | **252** |
+| largest connected component | **493** |
+| components | **43** |
+| the sweep pool, world sections | **1,053** open rows |
+| the `part of` vein | **22 of the clean rows untaken** |
+
+**What is still open, in the order a fire should weigh it:**
+
+- **More of the full-article method.** Thirty-two fragment articles were read
+  this batch and there are more; each fetch is one call and the reading is
+  cheap. It is the only rule so far that has bought A5 without touching A6 at
+  all.
+- **Sudan's five**, which now want an import and not a read.
+- **The dates.** Unchanged from batch 28: three edges could not be written at
+  all on two intervals that read short and one that reads coarse, and
+  `eritrean-ethiopian-war` carries `date` 2000-06-18 with `endDate`
+  2000-05-25, which is its end before its beginning. A person's afternoon.
+- **Twenty-two clean rows of the `part of` vein**, still arriving filed.
+- **The Arab Spring's asian half** and **the Horn's dates**, unchanged.

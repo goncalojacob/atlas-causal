@@ -15022,6 +15022,52 @@ component 476 to **480**, components 38 to **47**.
      date was invented, no record was created, and nothing was merged into
      `main`.
 
+### Batch 29 — four edges, nothing imported, and thirteen events onto the main chain
+
+A connection-first batch on batch 22's rule, with one change to how an article
+is read. **Nothing was imported**, so main is **252 and unchanged for the
+fourth batch running**; the whole batch is **four edges**. Corpus 555 and
+unchanged, largest component 480 to **493**, components 47 to **43**, events
+with no edge at all 28 to **27**, events unreachable from a Portuguese one 66
+to **53**. The four are argued in `docs/m42-connections.md` → "2ab" and
+measured in `docs/m42-pool.md` → "Batch 29".
+
+### Deviations
+
+1047. **The lead is not the article, and every "its article names nothing we
+     hold" since batch 22 was a statement about the lead.** The import fetches
+     the REST summary endpoint, which returns the first section, and the
+     cache under `tools/import/cache/wikipedia/` holds nothing else — so the
+     Horn of Africa's seven and Sudan's five have been set down three times
+     with that sentence. `action=query&prop=extracts&explaintext&redirects=1`
+     returns the whole text, and **the whole article of a war is mostly a
+     Background section whose job is to name what came before it.**
+     Thirty-two fragment articles read whole gave five candidate links where
+     three leads had given none, and one of the four that survived
+     (`world-war-ii --precondition-of--> eritrean-war-of-independence`) put
+     seven stranded events on the main chain by itself. **Four edges moved the
+     largest component by thirteen; the best any batch of this run has done,
+     and no record was written to get it.**
+1048. **A title match is not an identity, and the method found its own first
+     false one.** Matching every active title against an article's full text
+     put `october-revolution` in the First Sudanese Civil War's article: the
+     hit is Sudan's own October Revolution of 1964, and this atlas's record is
+     Russia's of 1917. The scan is a reading aid and never a writer — nine of
+     the fourteen candidate pairs it produced were refused, most of them for
+     being an instrument a crime was judged under, a comparison of magnitude,
+     or a See also list.
+1049. **A deeper fetch is spent once.** Sudan's five are still a fragment
+     after both of its largest articles were read whole, and neither names an
+     outside record causally. The note that has stood since batch 22 — "what
+     they want is a paragraph deeper than the summary endpoint returns" — is
+     now answered and wrong: **they want a record this atlas does not hold**,
+     and the next move there is an import chosen for them, not another read.
+1050. **No historical claim was written.** Every edge explanation is a
+     paraphrase of a sentence the cited article carries at the cited revision,
+     and every citation names the article, the revision and the section. No
+     record was created, no date was invented, no record was signed, no value
+     on an imported record was changed, and nothing was merged into `main`.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
