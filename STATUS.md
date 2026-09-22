@@ -19619,6 +19619,203 @@ cause rather than the symptom — see deviations 1174 and 1175.
       it, and the index is byte-identical — which is the honest form of "past a
       threshold".
 
+## M84 — the owner's feedback document
+
+Lane A, on the branch `m84`. `docs/m84-brief.md` over
+`docs/feedback-2026-09-22.md`, left before a week away with the note *"Não
+tive tempo de rever, o que revi fica aqui"* and one picture,
+`docs/screens/owner-2026-09-22-feedback-close.png`. Three items: a cross
+instead of a word, the dimmed neighbours told apart, and M80 verified rather
+than rebuilt. Nothing under `data/` changed and the committed index is
+byte-identical to a fresh build.
+
+The pictures: `docs/screens/m84-card-close.png` and `-phone.png` (the very
+card the owner photographed), `m84-map-ring.png`, `m84-graph-ring.png`,
+`m84-timeline-ring.png` and `m84-map-ring-key.png`. No other picture under
+`docs/screens/` was rewritten, which `git status` says rather than this
+paragraph.
+
+### 1 — a cross closes a card
+
+> *"Here you can see the 'close' button. Instead it should be a simple cross
+> on the top right corner."*
+
+It was worse than one badly placed word. Counted before the change: three
+cards said "close" — a source, a place and an office — the actor's said
+**"stop highlighting"**, and an event, a link and a narrative had **no way
+out at all**. All four of the ones that existed stood in the middle of a line
+of metadata, between the type of a book and "Focus on this", which is not
+where a hand goes. It is the fault M82 found in the four names for leaving a
+lens (A7), one act said four ways and none of them where it is looked for.
+
+`src/panel/close.js` is the whole of it now, and it holds two things rather
+than one:
+
+- **the markup**, because seven copies of one button are seven buttons that
+  drift apart, and because a card handed its own cross could be handed a
+  different one. Every card's `<header>` opens with `${closeControlHtml()}`;
+- **the act**. `closes(state)` is pure and reads the panel's own precedence —
+  narrative, edge, selected, source, office, place, actor, which is the order
+  `render()` draws in — so the control takes away whichever card is *on top*
+  and no card has to know which parameter it writes. Closing an event takes
+  the walk with it (a chain is the path into the record being read); closing
+  the card on top leaves the one under it open, so an event opened out of a
+  place's list closes back to the place.
+
+The three `clear-` verbs nothing wrote any more went with the links that
+wrote them. `clear-actor` stays: the event card offers it for a different
+act, stopping an actor's highlight while the event stays open.
+
+No new hex value, token or type size: the multiplication sign in the
+interface's own face at `--text-lg`, cobalt as every control in this panel is
+and madder under the pointer as the lens chip's × already is, in a 2.75 rem
+square because a touch target is 44 CSS pixels (WCAG 2.5.5) — a target size
+and not a type size. Floated rather than positioned, which is what makes it
+the *card's* corner: the title beside it is a flex container and shortens to
+clear the float by itself, the notices above it wrap around it line by line,
+and everything below goes back to the full measure once it has passed.
+
+### 2 — the dimmed neighbours are told apart
+
+> *"Regarding direct connections to events that are shown dimmed out, they
+> are easily confused, I suggest showing them in a different colour."*
+
+Right, and for a reason the stylesheet can be read for: **opacity was already
+spoken for twice.** `faded` means "outside the band" and `in-horizon` means
+"further from the horizon year", both of them fades; a third thing said in
+the same word said nothing at all, and a direct consequence of the event on
+screen looked like an event the window had taken away.
+
+**Which token, and why.** `--terr-5-line`, `#016b44`. The brief asks the run
+to say plainly if nothing in the palette reads as "connected, not chosen":
+**nothing does.** The atlas has thirty-three colour tokens and they are three
+families — the grounds and the two inks it draws with (cobalt for the atlas's
+own drawing, madder for the path being followed), and the eight territory
+hues. The confidence inks the brief offers are not inks at all: confidence is
+spent in `stroke-opacity` on a line (M73), and a category has no colour
+either — a glyph is `currentColor` and nothing else (`src/map/glyphs.js`). So
+this is the closest and not a match, chosen on two measured grounds:
+
+- it is an **ink**. The `-line` tokens are the ones the palette already trusts
+  a one-pixel border to, and this one is 6.6:1 on paper and 5.5:1 on land,
+  well over the 3:1 a line somebody has to see is held to. Three rows were
+  added to `tests/contrast.test.mjs` so it cannot slip;
+- it is the **furthest of the eight from both** of the colours these pictures
+  already spend: 105° from cobalt and 141° from madder in OKLCH. That 105 is
+  the largest smallest-separation any token here offers — the next best is
+  `--terr-7-line` at 103, and it is a full point worse on paper.
+
+Borrowing a territory hue takes no meaning from a territory: a hue means only
+"not the one beside it" and there is no legend by colour (about.html). And a
+colour nobody explains is a colour a reader invents a meaning for, so **the
+key on each view names it** — "connected to the one you opened" — drawn with
+the picture's own class, so the swatch and the mark cannot come apart. The
+graph's key was headed `Links` and is headed `Marks and links` now, since it
+has a mark in it.
+
+**Where it is written.** In each picture's own block and not in the shared
+`lens-near` rule, because an ink has to stand in the order the other inks
+stand in: after everything that says what a record *is* (coarse, one-day, of
+the open actor, a branch that converged) and before the selection and the
+walked chain, which are the reader's own and say so last. What the shared
+rule keeps is the one thing the three views have in common — the ring is not
+faded any more. Two shapes keep their own fill in the ring's hue rather than
+losing it: a converged branch on the graph stays filled, and a one-day bar on
+the timeline stays filled harder than a span.
+
+`emphasis.js`'s `shown` contract is untouched, and so is every rule about
+what is *drawn*: this run changed ink and nothing else.
+
+### 3 — M80 verified
+
+`?edge=` and the link's card are landed and published. **The live page could
+not be opened from this sandbox** — the network policy answers 403 to
+`goncalojacob.github.io` — so it was verified against the tree GitHub Pages
+serves, `origin/main` at `d4bfbb94`, in the same headless browser the suite
+uses: `?view=graph`, a line clicked where a reader's pointer would be. What
+came back, unedited:
+
+- **type** — "precondition of"; **ends** — "1893 Franco-Siamese crisis" and
+  "Entente Cordiale", each a control that opens it;
+- **confidence** — `probable`, with what it means beside it ("supported by
+  the cited sources, no known dissent");
+- **summary** — the argument itself, the paragraph the record carries;
+- **sources with locators** — one citation, and the locator is there:
+  *"Wikipedia contributors … revision 1374343940, § Consequences"*;
+- and `?edge=1893-franco-siamese-crisis--entente-cordiale--precondition-of`
+  in the address bar, which is the link a reader can send.
+
+**Nothing is missing, so nothing was fixed here.** M80's own browser suite
+passes against that same tree (8 of 8).
+
+### Deviations
+
+1183. **The narrative card keeps "Back to all events" and the actor card
+      loses "stop highlighting".** Both write what the cross writes, so both
+      look like the duplication M82's A7 condemned — but the line the owner
+      pointed at is the *heading line*, and that is the line a way out has
+      left. "Back to all events" stands in the notice that explains the mode,
+      it is M82's one name for leaving a lens, and it is shared with the lens
+      chips; taking it out of the narrative card alone would leave that one
+      act with two names again. "Stop highlighting" stood in the metadata
+      line, next to "Focus on this", which is exactly the picture.
+1184. **The cross is written into each card's `<header>` and not inserted by
+      the panel shell.** The shell would have been one line instead of seven,
+      and would have put a cross on the cluster list too — which is not a
+      record's card, is not in the URL, and is replaced by the next state
+      change rather than closed. It would also have put the markup where no
+      `node --test` can read it, and the brief asks for a test per card kind.
+1185. **`.panel button.card-close` and not `.panel .card-close`.** `.panel
+      button:not(.link)` draws every other button in this panel as a bordered
+      pill, and `:not(.link)` costs a class — so the two-class rule lost to it
+      wherever it stood and the cross came out in a box, which the first take
+      of `m84-card-close.png` showed. Named with the element it is, placed
+      after that rule, and it keeps the corner radius and the faint ground
+      under the pointer from it.
+1186. **The colour is given to the whole of `lensNear` and not to the one-hop
+      ring alone.** `lensView` puts two things in `near`: the ring, and what
+      the lens's events are *part of* (`parentsOf`, M65). The brief names the
+      first. They are the same sentence to a reader — related, not chosen —
+      they were faded identically before, and two greys where the owner asked
+      for one colour would be the fault again in a new place.
+1187. **The ring's *lines* on the graph are unchanged.** The brief asks for
+      the mark and its label; M77's rule for a walk's links, read of every
+      lens, is M83's A1-3 and its test still holds (every one of the ring's
+      lines fainter than every one of the lens's). A ring line in the ring's
+      ink is a change to how sure the atlas looks, which is `confidence.js`'s
+      dimension and not this run's.
+1188. **The labels needed nothing.** The brief asks for full opacity "for the
+      mark and its label"; no label on any of the three views carries
+      `lens-near` — the map's are placed centrally and inked `--ink`, the
+      timeline's carry `selected` and `faded` only — so they were already
+      drawn whole. What the graph does under a lens is name the focus set and
+      nothing else (M82), which is a rule about *which* labels and is left
+      where it is.
+1189. **M80 was verified against `origin/main` and not against the live
+      URL.** The sandbox's egress policy answers 403 to the site's host, so
+      the published page cannot be opened from here at all. The tree Pages
+      serves is a thing this run can hold, and the browser it was driven in is
+      the one the suite uses; the deploy of that tree is
+      `Merge pull request #21 from goncalojacob/m0`. What this does not prove
+      is that the deploy reached the CDN — a person with a browser can say
+      that in a second and nothing here can.
+1190. **The `m83` test failing on this branch's base was ported, not merged.**
+      `tests/m83.test.mjs` asserted that the resting graph holds two stacks
+      joined by more than one link, which was true at 581 events and false at
+      668; it failed on `origin/m0` as it stood at claim time. The fix landed
+      on `m0` an hour later, and the lane protocol forbids rebasing a branch
+      onto `m0` — so it is cherry-picked (`git cherry-pick -x`), which is what
+      the standing orders say to do with a fix that exists for a failure that
+      is not this branch's. It no-ops when `m84` lands.
+1191. **A coarse mark, a one-day bar and a converged branch keep their own
+      shape inside the ring.** Each of the three carries a declaration that
+      would have overridden or been overridden by the ring's — how precisely a
+      record is placed, whether it lasted a day, whether it is a branch that
+      converged, are facts about the record and not about what the reader is
+      holding. Each is given the ring's ink while keeping its own dash or its
+      own fill weight, so a mark says both things at once instead of one of
+      them.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -19932,3 +20129,5 @@ M42 started 2026-09-22T18:13:05Z by scheduled
 M42b started 2026-09-22T18:14:03Z by scheduled
 M83 started 2026-09-22T16:38:15Z by scheduled (branch m83)
 M83 done
+M84 started 2026-09-22T20:15:57Z by scheduled (branch m84)
+M84 done

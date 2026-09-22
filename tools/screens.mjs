@@ -805,6 +805,48 @@ export const SHOTS = Object.freeze([
     query: '?w=390&h=844&view=graph&focus=event:world-war-ii',
     width: 500, height: 844,
     what: 'the same lens in a 390 x 844 viewport' },
+
+  // M84 — the owner's feedback document of 22 September, both halves of it.
+  //
+  // **The cross** (item 1), on the very card the owner photographed: the
+  // source whose heading line read "Norrie MacQueen · 1997 · BOOK · close ·
+  // Focus on this". The word has left the line and the way out is in the
+  // corner, the same control every card carries now.
+  { name: 'm84-card-close', page: 'docs/screens/frame.html',
+    query: '?w=1000&h=700&source=macqueen-1997-decolonization',
+    width: 1000, height: 700,
+    what: "a source's card: the cross in its top right corner, and no \"close\" in the heading line" },
+  // And the same card on a phone, where the cross has to be a target a thumb
+  // can hit and not a word between two other words.
+  { name: 'm84-card-close-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&source=macqueen-1997-decolonization',
+    width: 500, height: 844,
+    what: 'the same card in a 390 x 844 viewport: the cross as a touch target' },
+  // **The ring** (item 2), on all three views and on the picture the owner
+  // sent back twice: World War II opened, its twenty-five parts drawn in the
+  // atlas's own cobalt, and the twenty-five events they touch in the ring's
+  // green instead of at a fifth of the ink.
+  // Framed on Europe, because at the world view twenty-five marks on this
+  // continent are one stack and the ring cannot be read off a picture that
+  // does not draw it apart.
+  { name: 'm84-map-ring', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&selected=world-war-ii&bbox=-14,34,46,64',
+    width: 1440, height: 900,
+    what: 'World War II opened on the map over Europe: what is inside it in cobalt, what it is connected to in the ring\'s own colour' },
+  { name: 'm84-graph-ring', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph&selected=world-war-ii',
+    width: 1440, height: 900,
+    what: 'the same on the graph' },
+  { name: 'm84-timeline-ring', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=timeline&selected=world-war-ii',
+    width: 1440, height: 900,
+    what: 'and on the timeline' },
+  // The key with the row that names it, which is what stops a colour being a
+  // colour a reader has to invent a meaning for.
+  { name: 'm84-map-ring-key', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&selected=world-war-ii&key=1',
+    width: 1440, height: 900,
+    what: "the map's key opened over the same picture: the row that names the ring" },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

@@ -855,7 +855,7 @@ test('an office opens on a card that names the actor, the category and its holde
     // And the card's own close control takes the office out of the URL
     // without opening anything in its place.
     await open(page, url('?office=prime-minister-of-portugal'));
-    await page.eval('document.querySelector(\'.panel [data-action="clear-office"]\').click();');
+    await page.eval('document.querySelector(\'.panel [data-action="close-card"]\').click();');
     await waitFor(page, 'return !/office=/.test(location.search);', 'the office out of the URL');
 
     // An id that names nothing says so, rather than showing the intro as if

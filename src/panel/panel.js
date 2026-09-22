@@ -34,6 +34,7 @@ import { readingNarrative } from '../narrative.js';
 import { createLinks, hasEntry, ENTRY_KINDS } from '../entry/entry.js';
 import { discussUrl, recordUrl, editUrl } from '../share.js';
 import { toggleSection, readOpenSection, sectionBodyHtml } from './sections.js';
+import { closes } from './close.js';
 import { categoryLabels } from '../categories.js';
 import { EDGE_TYPE_LABEL } from '../vocab.js';
 import { showingReview } from '../demo.js';
@@ -115,9 +116,16 @@ export function createPanel(container, {
       case 'source':
         state.set({ source: el.dataset.id, selected: null, chain: [] });
         break;
-      case 'clear-source':
-        state.set({ source: null });
+      // The cross in every card's top right (M84). One control and one act:
+      // what it takes away is whichever card the precedence in `render()` is
+      // showing, so nothing here has to know which card it was clicked on and
+      // the four separate `clear-` verbs the heading lines used to carry are
+      // gone with them (close.js).
+      case 'close-card': {
+        const patch = closes(s);
+        if (patch) state.set(patch);
         break;
+      }
       // The lens. Not a selection and never clears one: a focus says which
       // events there are, and what the reader had open stays open — the card
       // is how they got here.
@@ -170,12 +178,6 @@ export function createPanel(container, {
         if (edge) state.set({ selected: edge.to, chain: [edge.id], source: null });
         break;
       }
-      case 'clear-place':
-        state.set({ place: null });
-        break;
-      case 'clear-office':
-        state.set({ office: null });
-        break;
       // A post named on the card of the actor it belongs to. It keeps the
       // actor, as choosing a place does: an office outranks an actor in the
       // precedence, so the card changes and the highlight stays, and the

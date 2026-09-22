@@ -57,7 +57,9 @@ test('a row opens the holder, and the event that began the turn where one is nam
 
 test('the card closes on its own control and says why it cites nothing', () => {
   const html = officeCardHtml(context(atlas), atlas.offices.get('fixture-office-one'));
-  assert.match(html, /data-action="clear-office"/);
+  // One cross and no text link, the same control every card carries since
+  // M84 (close.js).
+  assert.match(html, /data-action="close-card"/);
   assert.doesNotMatch(html, /data-section="sources"/, 'an office has no Sources section');
   assert.match(html, /An office says that the post exists and nothing more/);
 });

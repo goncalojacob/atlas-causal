@@ -213,8 +213,19 @@ export function edgeKey() {
   // same fault at either width, so there is one behaviour now and the button is
   // it. The class it toggles is what the stylesheet opens. The key is not in
   // the SVG, so nothing here moves a mark.
+  // The one mark this key has to name (M84). The ring around whatever the
+  // reader has open is drawn in an ink of its own now, and a colour nobody
+  // explains is a colour a reader invents a meaning for; the map's and the
+  // timeline's keys carry the same row (view-key.js). Drawn with the node's
+  // own class, inside the same `svg.graph` the lines above are drawn in, so
+  // the swatch is the picture's ink and not a second copy of it — and with no
+  // `data-id`, which is what every selector that counts the graph's real nodes
+  // asks for.
+  const near = `<svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true">
+      <circle class="node lens-near" cx="12" cy="6" r="4"/></svg>`;
   box.innerHTML = `<button type="button" class="graph-key-toggle" aria-expanded="false" aria-controls="graph-key-body">Key</button>
-    <div id="graph-key-body" class="graph-key-body"><h2>Links</h2><dl class="edge-key">
+    <div id="graph-key-body" class="graph-key-body"><h2>Marks and links</h2><dl class="edge-key">
+    <dt>${near}</dt><dd>connected to the one you opened</dd>
     ${EDGE_TYPE_IDS
       .map((type) => `<dt>${line(type)}</dt><dd>${type}</dd>`).join('')}
     <dt>${sureness}</dt><dd>how sure: ${CONFIDENCE_ORDER.join(', ')}</dd>
