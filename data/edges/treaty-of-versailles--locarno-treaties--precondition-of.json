@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-of-versailles--locarno-treaties--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Locarno Treaties\", revision 1373366462, § lead"
+    }
+  ],
+  "from": "treaty-of-versailles",
+  "to": "locarno-treaties",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article describes the main treaty as the five western European states pledging to guarantee the inviolability of the borders between Germany and France and between Germany and Belgium as defined in the Treaty of Versailles, and to observe the demilitarised zone of the Rhineland. The article is equally clear about what was left out: there was no guarantee of Germany's eastern border, leaving the path open for Germany to attempt to revise the Versailles treaty and regain territory it had lost in the east.",
+  "dispute": null
+}

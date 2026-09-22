@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "vietnam-war--laotian-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Laotian Civil War\", revision 1370626595, § lead"
+    }
+  ],
+  "from": "vietnam-war",
+  "to": "laotian-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says the Kingdom of Laos was a covert theatre during the Vietnam War, with both sides receiving heavy external support in a proxy war between the Cold War superpowers, that the North Vietnamese Army invaded Laos in 1958 and 1959 to use the east of the country for the Ho Chi Minh trail and as a staging area for offensives into South Vietnam, and that the Pathet Lao emerged victorious in December 1975 following North Vietnam's final victory in April 1975. The war has its own combatants and its own dates and the article does not make it a part of the other.",
+  "dispute": null
+}

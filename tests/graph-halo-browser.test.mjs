@@ -137,10 +137,19 @@ test('the halo behind a label is the same width on screen at every zoom', { skip
     for (const target of [1, 3, 6]) {
       await page.eval(WORLD);
       await waitFor(page, DRAWN, `the picture at k = ${target}`);
-      const middle = await page.eval(`
-        const r = document.querySelector('svg.graph').getBoundingClientRect();
+      // Zoomed onto a label rather than onto the middle of the pane. The
+      // middle is a point in a rectangle and says nothing about where the
+      // picture names anything: M42 wrote twenty-seven edges and thirteen
+      // records into the corpus, the layout moved, and at k = 6 the centre of
+      // this window held no label at all, so a test about the *width of a
+      // halo* timed out waiting for a name. What the halo is measured over is
+      // every label the picture draws (`haloAt` pools them), so the zoom only
+      // has to land somewhere the picture still names something.
+      const onto = await page.eval(`
+        const el = document.querySelector('svg.graph text.node-label');
+        const r = el.getBoundingClientRect();
         return { x: r.left + r.width / 2, y: r.top + r.height / 2 };`);
-      const k = await zoomOnto(page, middle, target);
+      const k = await zoomOnto(page, onto, target);
       await waitFor(page, DRAWN, `something named at k = ${target}`);
       measured.push({ k, band: await haloAt(page) });
     }

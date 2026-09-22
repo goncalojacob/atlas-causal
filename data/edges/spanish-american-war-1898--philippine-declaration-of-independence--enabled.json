@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "spanish-american-war-1898--philippine-declaration-of-independence--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Philippine Declaration of Independence\", revision 1358972217, § History"
+    }
+  ],
+  "from": "spanish-american-war-1898",
+  "to": "philippine-declaration-of-independence",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "What brought Aguinaldo back from Hong Kong was the American war, and the article says how: **\"in April 1898, shortly after the beginning of the Spanish–American War, Commodore George Dewey, aboard the USS *Olympia*, sailed into Manila Bay, leading the Asiatic Squadron of the US Navy. On May 1, 1898, the US defeated the Spaniards in the Battle of Manila Bay. Emilio Aguinaldo decided to return to the Philippines to help American forces defeat the Spaniards. The US Navy agreed to transport him back aboard the USS *McCulloch*.\"** Six weeks later he declared independence. The article is equally plain that the war did not ratify it — \"the declaration was never recognized by either the US or Spain. Instead, Spain ceded the Philippines to the United States in the 1898 Treaty of Paris\" — which is why the edge is `enabled` and not `caused`.",
+  "dispute": null
+}

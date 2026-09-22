@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "russo-japanese-war--soviet-japanese-border-conflicts--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet–Japanese border conflicts\", revision 1375520653, § Prelude from 1904 to 1932"
+    }
+  ],
+  "from": "russo-japanese-war",
+  "to": "soviet-japanese-border-conflicts",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article begins its own account of how these conflicts came about at the Russo-Japanese war — the section is titled \"Prelude from 1904 to 1932\" — and what it says the war settled is the ground they were fought over: Russia \"sued for peace, thereby recognizing Japan's claims to Korea and agreeing to evacuate Manchuria\". The lead then makes that the source of the quarrel: \"The Japanese expansion in Northeast China created a common border between Japanese-occupied Manchuria and the Soviet Far East. This led to growing tensions with the Soviet Union, with both sides often engaging in border violations.\" The article states the two halves and its own section title joins them; this edge claims no more than that, which is why it is `precondition-of` and not `caused`.",
+  "dispute": null
+}

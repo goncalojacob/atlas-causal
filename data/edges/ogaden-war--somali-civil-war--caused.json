@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ogaden-war--somali-civil-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ogaden War\", revision 1373903527, § lead"
+    }
+  ],
+  "from": "ogaden-war",
+  "to": "somali-civil-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article ends its lead with the consequence: \"The war left Somalia with a disorganized and demoralized army as well as a heavy disapproval from its population. These conditions led to a revolt in the army which eventually spiraled into the ongoing Somali Civil War.\" The defeat of March 1978, in which almost a third of the regular army and half the air force were lost, is what the article says produced the revolt.",
+  "dispute": null
+}

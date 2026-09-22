@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1952-egyptian-revolution--2011-egyptian-revolution--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2011 Egyptian revolution\", revision 1374677056, § Background"
+    }
+  ],
+  "from": "1952-egyptian-revolution",
+  "to": "2011-egyptian-revolution",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the revolution of 2011 traces the system it rose against to 1952: Mubarak became president after the assassination of Sadat in 1981 and inherited an authoritarian system imposed in 1952 following the coup against King Farouk, which abolished the monarchy and made Egypt a military-dominated one-party state; he was in the thirtieth year of his regime when the uprising began.",
+  "dispute": null
+}

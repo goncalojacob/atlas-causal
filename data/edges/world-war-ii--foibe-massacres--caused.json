@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--foibe-massacres--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Foibe massacres\", revision 1372732009, § lead"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "foibe-massacres",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The killings’ article puts them inside the war and names who carried them out against whom: “mass killings and deportations during and immediately after World War II, mainly committed by Yugoslav Partisans and OZNA in the then-Italian territories of Julian March, Kvarner and Dalmatia, against local Italians and Slavs, primarily members of fascist and collaborationist forces, and civilians opposed to the new Yugoslav authorities”. The war is the occasion, the occupier and the front line, which is what `caused` says of a war and the things done inside it here.",
+  "dispute": null
+}

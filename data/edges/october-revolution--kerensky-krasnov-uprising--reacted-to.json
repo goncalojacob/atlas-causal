@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "october-revolution--kerensky-krasnov-uprising--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kerensky–Krasnov uprising\", revision 1370625643, § lead"
+    }
+  ],
+  "from": "october-revolution",
+  "to": "kerensky-krasnov-uprising",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The uprising’s article is one sentence and it is the whole argument: it “was an attempt by Alexander Kerensky to crush the October Revolution and regain power after the Bolsheviks overthrew his government in Petrograd”, between 8 and 13 November 1917 [O.S. 26 and 31 October]. The record carries the Julian dates the item gives and says so in `when.calendar`, which is what keeps this edge on the right side of the arrow of time.",
+  "dispute": null
+}

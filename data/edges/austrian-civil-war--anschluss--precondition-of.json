@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "austrian-civil-war--anschluss--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Austrian Civil War\", revision 1375005540, § Long term"
+    }
+  ],
+  "from": "austrian-civil-war",
+  "to": "anschluss",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article states it as the civil war's long-term consequence and hedges it as a later judgement rather than a contemporary one: \"With a greater passage of time it became clear that Austria's ability to resist National Socialism was decidedly weakened by the Austrian Civil War and its consequences. By later estimates, only about a third of the Austrian population supported the dictatorial state.\" The four days of February 1934 banned the Social Democrats and left the state without the half of the country that might have defended it in March 1938.",
+  "dispute": null
+}

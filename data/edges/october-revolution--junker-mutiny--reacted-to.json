@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "october-revolution--junker-mutiny--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Junker mutiny\", revision 1375165370, § lead"
+    }
+  ],
+  "from": "october-revolution",
+  "to": "junker-mutiny",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The mutiny’s article is one sentence and it is the whole argument: “The Junker mutiny was a Russian counterrevolutionary mutiny of military school cadets in Petrograd against the Bolsheviks in October 1917.” A rising against the men who had taken power days before is the plainest case `reacted-to` exists for, and the edge is written in this atlas’s direction for that type — the thing reacted to first, the reaction second, as rule 4 requires. The atlas dates the revolution 25–26 October in the Old Style the record carries and the mutiny 11 November in the New, which is eleven days apart on one calendar and two on the other; neither date was changed here.",
+  "dispute": null
+}

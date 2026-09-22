@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "la-violencia--colombian-conflict--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colombian conflict\", revision 1375841708, § lead and § Background"
+    },
+    {
+      "source": "leech-2009-beyond-bogota",
+      "locator": "pp. 242–247; the work the article hangs this sentence on"
+    }
+  ],
+  "from": "la-violencia",
+  "to": "colombian-conflict",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the Colombian conflict says it twice and in its own words: \"The conflict is historically rooted in the conflict known as La Violencia\", and \"Much of the background of the Colombian conflict is rooted in La Violencia\". The demobilised Liberal and Communist self-defence units of the earlier war are what the article says re-organised into the FARC.",
+  "dispute": null
+}

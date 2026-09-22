@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1979-herat-uprising--soviet-afghan-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1979 Herat uprising\", revision 1370623531, § Aftermath"
+    }
+  ],
+  "from": "1979-herat-uprising",
+  "to": "soviet-afghan-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same article carries the road from the one to the other without a gap: “the Soviets did increase their military assistance in the following months … Despite this, the situation of the Afghan armed forces continued to deteriorate, with mutinies occurring in Jalalabad, Asmar, Ghazni, Nahrin, and in August 1979, the Bala Hissar uprising on a fortress in Kabul. Though these were all put down, the weakness of the military contributed significantly to the spread of the insurgency. On December 24, 1979, under Leonid Brezhnev, the Soviet Union deployed the 40th Army, commencing the start of the Soviet–Afghan War.” Herat is the first and the largest of those mutinies and the one the Soviets were asked for help with and refused. `precondition-of` and not `caused`: the article makes the army’s weakness the thing that spread the insurgency, not this rising by itself.",
+  "dispute": null
+}

@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "greco-turkish-war-of-1897",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,28 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class B. The honest edge is to the First Balkan war — the defeat of 1897 is what produced the Greek army reform and, through the Goudi coup, the Venizelos who made the Balkan League — and the First Balkan war stands at two hops from the nearest Portuguese event, which leaves this one at three. The bar of this round is two. The record is good and the chain to it is one link too long; what would shorten it is a record of the Greek 1909, which the atlas does not hold."
-  },
+  "revised": "2026-09-21",
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q657055",
-  "sitelinks": {
-    "count": 39,
-    "on": "2026-09-15"
-  },
   "wikipedia": {
     "en": "Greco-Turkish War (1897)",
     "pt": "Guerra Greco-Turca (1897)"
+  },
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-09-15"
   },
   "sources": [
     {

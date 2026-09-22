@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1994-genocide-against-tutsi--first-congo-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Congo War\", revision 1374918500, § lead and § Rwanda"
+    }
+  ],
+  "from": "1994-genocide-against-tutsi",
+  "to": "first-congo-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says Zaire's collapse by 1996 was \"exacerbated by long-standing internal strife and **the destabilizing effects of the 1994 Rwandan genocide, which had led to an influx of refugees and militant groups into the country**\", and that Rwanda's first and foremost war aim was \"the suppression of génocidaires who had been launching attacks against the new Rwandan state from Zaire\" — Kigali intervening to dismantle the refugee camps those génocidaires took refuge in.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "first-vienna-award--slovak-hungarian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slovak–Hungarian War\", revision 1370747590, § Prelude"
+    }
+  ],
+  "from": "first-vienna-award",
+  "to": "slovak-hungarian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The award is where the article puts the unfinished business: Germany and Italy \"pressured the Czechoslovak government to accept their joint Arbitration of Vienna. On 2 November 1938, it found largely in favour of Hungary and obliged Czechoslovakia to cede to Hungary 11,833 km² of the south part of Slovakia… The partition also cost Košice, Slovakia's second largest city.\" And then: **\"the First Vienna Award did not fully satisfy Hungary, which carried out 22 border clashes between 2 November 1938 and 12 January 1939.\"** Two months after the last of those the war began.",
+  "dispute": null
+}

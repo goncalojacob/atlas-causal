@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "earth-summit--aarhus-convention--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Aarhus Convention\", revision 1367239958, § Reception, influence and implementation"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Earth Summit\", revision 1368901985, § Development"
+    }
+  ],
+  "from": "earth-summit",
+  "to": "aarhus-convention",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The convention is written as an elaboration of a principle Rio declared. The English article of the Earth Summit lists what it produced — \"The Earth Summit resulted in the following documents: Rio Declaration on Environment and Development\" — and the English article of the convention quotes the UN Secretary-General on what it is: \"It is by far the most impressive elaboration of principle 10 of the Rio Declaration, which stresses the need for citizens' participation in environmental issues and for access to information on the environment held by public authorities.\" Inspired and not caused: Rio declared the principle, it did not negotiate the convention.",
+  "dispute": null
+}

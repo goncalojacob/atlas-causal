@@ -393,3 +393,416 @@ property is not asked of a child with nothing on it, and every such child must
 be named in this document, so a filing made on context and not argued for here
 fails. `tests/m62.test.mjs` gained the same clause, and nothing else in it
 moved.
+
+## 6. M42 batch 18 — two umbrellas for the two lanes that had none
+
+*21 September, after the filing pass of amendment A6. The pass filed Europe
+and the Scramble and left `docs/m42-pool.md` saying in as many words what the
+Americas and Asia each waited on. Batch 18 imported sixteen records that would
+all have arrived main, so the filing had to happen in the same batch — A6's
+"the main count must not rise from here" is what forced both umbrellas, and
+each is one the pool file had already nominated by name.*
+
+### 6.1 `nova-republica-brazil-since-1985`
+
+The fourth of the Brazilian periods this atlas holds, after
+`empire-of-brazil-1822-1889`, `the-1930-revolution-and-the-vargas-era` and
+`brazilian-military-dictatorship-1964-1985`. Q2920526 carries **no start
+date**, so like `third-portuguese-republic-since-1974` it is written here on
+M62's pattern rather than walked by the import, and its span is the article's
+own: "Brazilian history from 1985 to the present … beginning when civilian
+government was restored after a 21-year-long military dictatorship". The
+English article is cited at revision 1371710443 and the Portuguese, which
+carries the name the period is known by, at revision 72521647. **No day is
+given**, because neither the item nor the article gives one — both say 1985,
+and the article dates the phase to "the inauguration of José Sarney in 1985"
+without naming its date. It names one actor, `brazil`, which is the line a
+period named for a polity can honestly carry.
+
+**Eight filed under it**: `the-1988-brazilian-constitution`,
+`the-commodity-boom-and-the-chinese-buyer`, `operation-car-wash-2014`,
+`the-impeachment-of-dilma-rousseff-2016`,
+`the-2018-brazilian-general-election`, `2022-brazilian-general-election`,
+`lula-returns-to-the-presidency-2023`, `2023-brazilian-congress-attack`.
+
+**Two of those name neither an actor nor a place**, and A1 is why they are
+filed anyway, with the context recorded here as the amendment requires:
+
+- **`2022-brazilian-general-election`** (Q65053343), written by the Wikidata
+  import, whose item gives no participant and no coordinate — a general
+  election across a federation is not a thing one actor did in one place. Its
+  own title and summary say whose election it was, its article at revision
+  1375252300 is Brazil's, and 2 October 2022 is inside the period's span.
+- **`2023-brazilian-congress-attack`** (reinstated by this batch), the same:
+  the item names no single participant for a mob. Its article, at revision
+  1372449713, is about the Praça dos Três Poderes in Brasília, and 8 January
+  2023 is inside the span.
+
+**`1985-brazilian-presidential-election` is refused**, on judgement 1, which
+A6 leaves standing: a period named for a form of government does not contain
+the act that created it. It is already filed under the dictatorship it ended,
+which is the same judgement read from the other side.
+
+### 6.2 `arab-israeli-conflict`
+
+Q8669, the Wikidata import's own work: its span is the item's (P580,
+15 May 1948, no end), its title and summary are the item's, and the class
+Q11422542 *international conflict* was added to
+`data/imports/wikidata-seeds.json` for it. `docs/m42-pool.md` nominated it
+before this fire started as **the one umbrella the asia lane has with an
+article, a start date and a subject a record can be tested against**, and it
+is a conflict rather than a period, which A6 allows in the way it allows a
+war.
+
+**Five filed under it**: `1948-arab-israeli-war`, `black-september`,
+`2006-lebanon-war`, `second-intifada`, `gaza-war-2008-2009`. Two are the
+source's own claim — Q154288 and Q49104 each carry `part of` Q8669 — and the
+other three carry `part of` a sub-conflict of it (Q49097, Q151622, Q553184),
+which this atlas does not hold as a record.
+
+**`arab-israeli-conflict` names neither an actor nor a place**, and it is the
+third such umbrella here after `interwar-period` and `scramble-for-africa`.
+A1 is the answer and it is sharper in this case than in either of those: the
+item's own description is "geopolitical conflict in the Middle East and North
+Africa between Israel and its Arab neighbours", which is one state and a dozen
+others across seventy-eight years and three continents' worth of coastline.
+Naming one of them would be picking a side of the thing the record exists to
+hold. The import wrote no actor line because the item gives none, and none was
+invented here.
+
+**`gaza-war` was left main**, although `gaza-genocide` is now filed under it
+on Q124086054's own `part of`. Filing the war under the conflict as well would
+nest three deep and A6 allows one; the war is its own umbrella, which is M67's
+own rule.
+
+### 6.3 What this leaves
+
+Africa still has one umbrella and it covers 1885 to 1914. The decolonisation
+of Africa is still refused for want of a date Wikidata will give as a year,
+which is where the filing pass left it; nothing in batch 18 changes that.
+Europe after 1989 still has no umbrella and the seventeen records the filing
+pass named are still main. `suez-crisis`, `independence-of-morocco`,
+`british-expedition-to-tibet`, `siamese-revolution-of-1932`,
+`1893-franco-siamese-crisis`, `treaty-of-lhasa`, `earth-summit` and
+`aarhus-convention` are all main after this batch and all of them are outside
+every umbrella the atlas holds — five of the eight in the decades and the
+regions the two refusals above describe.
+
+## 7. M42 batch 20 — the `part of` pass over the whole corpus
+
+*21 September, the third batch of the same fire. Batch 19 filed six European
+records on the child's own `part of` statement and the rule turned out to be
+general, so it was run over every main event that carries a Wikidata id — 218
+of 263, in five API calls. Twenty pairs came back whose named parent is a
+record this atlas already holds. **Five were taken and fifteen refused**, and
+every refusal is a date or a depth and not a judgement about history.*
+
+**Taken:**
+
+| filed | under | the item's own claim |
+| --- | --- | --- |
+| `afghan-civil-war` | `revolutions-of-1989` | Q382861 |
+| `indo-pakistani-war-of-1947-1948` | `kashmir-conflict` | Q1413732 |
+| `indo-pakistani-war-of-1965` | `kashmir-conflict` | Q1413732 |
+| `suez-crisis` | `arab-israeli-conflict` | Q8669 |
+| `war-of-attrition` | `arab-israeli-conflict` | Q8669 |
+
+**`suez-crisis` is the one that crosses a lane**: it is in the africa lane and
+`arab-israeli-conflict` is in asia. A6's test is region and span; the item's
+own `part of` is a stronger claim than either, and where the source says a
+record is part of a thing this atlas holds, that is what decides. The same
+reading filed `war-of-attrition`, which is Egypt's war too.
+
+**Refused, one on the lane and eleven on a date.** The lane first, because
+it is A6's own half of the rule and not an accident: `second-italo-ethiopian-war`
+carries `part of` the interwar period and is an **African** war, and
+`interwar-period` is this atlas's **European** umbrella — the owner's example
+was *"you could only show that for Europe"*. A period's subject is its region,
+so the claim is true of the calendar and not of the umbrella, and the war stays
+main. `tests/m42-filing.test.mjs` is what refused it, which is the test doing
+exactly the job it was written for.
+
+**And eleven on a date the parent does not contain:**
+`afghan-civil-war` → `dissolution-of-the-soviet-union` (the war runs 1989 to
+1992 and the dissolution is one day of 1991); `basmachi-movement` →
+`world-war-i` and → `russian-civil-war` (1916 to 1934 is outside both);
+`berlin-conference` → `scramble-for-africa` (the conference opens in November
+1884 and the Scramble's span starts in 1885 — the article the umbrella takes
+its span from dates the period to the conference's own *close*);
+`eritrean-war-of-independence` → `ethiopian-civil-war` (1961, thirteen years
+before the civil war begins); `laotian-civil-war` → `vietnam-war` (ends
+2 December 1975, seven months after the Vietnam war's own end date here);
+`rif-war` → `interwar-period` (begins 1911); `second-sino-japanese-war` →
+`world-war-ii` (begins 1937, and this atlas dates the war from 1939);
+`soviet-japanese-border-conflicts` → `interwar-period` (ends 16 September
+1939, five days after the period's span closes); and
+`good-friday-agreement` → `the-troubles`, which is refused for a reason of
+its own: **`the-troubles` is dated `1998–1998` in this atlas**, which is a
+defect in that record rather than a fact about the conflict, and filing a
+1998 agreement under a 1998 stub of a thirty-year conflict would bury the
+defect instead of leaving it visible.
+
+**Three refused on depth**, because A6 allows one: `yugoslav-wars` →
+`breakup-of-yugoslavia` and `lebanese-civil-war` → `arab-israeli-conflict`
+would each put a war that already has children inside another record, and
+`wagner-group-rebellion` → `full-scale-russo-ukrainian-war` names a parent
+that is itself filed. `dissolution-of-the-soviet-union` → `revolutions-of-1989`
+is the same case, and it is the one batch 19 had already read.
+
+**No record gained an actor, a place, a date or a source here**, and no child
+taken above names neither an actor nor a place except `suez-crisis`, whose
+item gives no participant and whose own summary and article, cited on the
+record at revision 1374851403, say whose crisis it was.
+
+Main falls 263 to **258**.
+
+## 8. M42 batch 21 — three parents the corpus names, and three more bare records
+
+*21 September, the fire after batch 20. The `part of` pass of §7 kept only the
+answers this atlas already held; batch 21 asked what the thrown-away answers
+were, and three of them are periods A6 allows. `docs/m42-pool.md` → "Batch 21"
+carries the whole measurement, the ten filings and the twenty-five refusals;
+what belongs here is the same clause A1 exists for.*
+
+**`afghan-conflict` (Q1519107), `indochina-wars` (Q2342102) and `arab-spring`
+(Q33761) each name neither an actor nor a place**, and they are the fourth,
+fifth and sixth umbrellas here to do so, after `interwar-period`,
+`scramble-for-africa` and `arab-israeli-conflict`. A1's answer holds and it is
+the items' own doing: the Wikidata import writes an actor line only where the
+item gives a participant and a place only where it gives a coordinate, and
+none of the three gives either. Nor could one be chosen honestly. The Afghan
+conflict has run for forty-eight years through a monarchy, two republics, a
+communist state, two civil wars, a Soviet army, a NATO coalition and two
+Taliban governments; the Indochina wars were fought across three states by
+France, the United States, China, Vietnam and Cambodia in turn; the Arab
+Spring began in Tunisia and deposed rulers in three countries while its
+protests reached a dozen more. **Naming one participant for any of them would
+be picking a side of the thing the record exists to hold**, which is exactly
+what A1 says of a period, and inventing a place for a series of wars across
+half a continent would be worse.
+
+**Each carries a lane, which is what a period owes the timeline**: asia, asia
+and africa. The lane is the subject test A6 gives the filing rule, and
+`tests/m42-filing.test.mjs` holds every child to it — which is why
+`2011-yemeni-revolution` is *not* filed under `arab-spring` although its own
+item says it is part of it. That refusal is written up in the pool file; the
+finding it produced is that **a period whose subject crosses two lanes can
+only ever take one half of itself**, and no rule here can fix that without the
+owner saying what a two-lane umbrella should look like.
+
+## 9. M42 batch 26 — eleven bare records, ten of them filed under ordinary events
+
+*22 September. The batch is the `part of` rule of batches 23 to 25 re-scanned
+over the whole world pool rather than its best seven hundred rows; the
+measurement, the filings and the refusals are in `docs/m42-pool.md` → "Batch
+26". What belongs here is the clause A1 exists for, because **every one of the
+eleven records the batch imported names neither an actor nor a place**.*
+
+**Why all eleven are bare is the import's own rule and not a judgement.** The
+Wikidata import writes an actor line only where the item gives a participant
+and a place only where the item gives a coordinate; none of these eleven items
+gives either. A1 settled that this is not a defect, and nothing was invented to
+cover it.
+
+**Ten are filed, and nine of the ten are filed under an ordinary event rather
+than under a period**, which is the shape deviation 1031 asked the later
+batches to prefer:
+
+| the record | filed under |
+| --- | --- |
+| `revolution-in-the-kingdom-of-poland` | `russian-revolution-of-1905` |
+| `moscow-uprising-of-1905` | `russian-revolution-of-1905` |
+| `odz-insurrection` | `russian-revolution-of-1905` |
+| `potemkin-mutiny` | `russian-revolution-of-1905` |
+| `revolt-of-czechoslovak-legion` | `russian-civil-war` |
+| `junker-mutiny` | `october-revolution` |
+| `second-guangzhou-uprising` | `xinhai-revolution` |
+| `iraqi-civil-war-of-2006-2008` | `iraq-war` |
+| `first-shaba-war` | `angolan-civil-war` |
+| `argentine-surrender-in-the-falklands-war` | `falklands-war` |
+
+Each filing is the item's own `part of` and each parent is an unfiled active
+record whose span contains the child; nothing here was filed by lane and span
+alone. **A filing under an ordinary event is not the A6 umbrella test**, which
+is why none of these ten parents carries the `m42-umbrella` flag and why
+`tests/m42-filing.test.mjs` says nothing about them: the lane rule is a rule
+about periods, and a mutiny in Petrograd belongs to the October Revolution
+whatever lane either is drawn in.
+
+**`2011-bahraini-uprising` is the eleventh and it is main, because the only
+umbrella it could go under refuses it twice.** Its own article, at revision
+1374892677, dates the uprising "from 2011 until 2014" and this atlas's
+`arab-spring` closes in 2012; and Bahrain is in the asia lane while
+`arab-spring` is an africa-lane period. The second refusal is §8's finding
+arriving a second time — **a period whose subject crosses two lanes can only
+ever take one half of itself** — and it is now the rule that has kept both the
+Yemeni revolution and the Bahraini uprising out of the wave they belong to.
+The record is not left stranded: it carries two edges, from
+`tunisian-revolution` and from `2011-egyptian-revolution`, both quoting the
+sentence of its own article that names them.
+
+## 10. M42 batch 27 — eleven more bare records, all eleven filed
+
+*22 September, the second batch of the same fire. The measurement and the
+refusals are in `docs/m42-pool.md` → "Batch 27"; what belongs here is A1's
+clause again, because **every one of the eleven is bare for the same reason as
+batch 26's eleven**: the Wikidata import writes an actor line only where the
+item gives a participant and a place only where it gives a coordinate, and none
+of these items gives either.*
+
+| the record | filed under | the umbrella's lane, where it is one |
+| --- | --- | --- |
+| `south-lebanon-conflict` | `arab-israeli-conflict` | asia, and the record is asia |
+| `operation-grapes-of-wrath` | `arab-israeli-conflict` | asia, and the record is asia |
+| `war-over-water` | `arab-israeli-conflict` | asia, and the record is asia |
+| `battle-of-musa-dagh` | `armenian-genocide` | not an umbrella |
+| `urfa-resistance` | `armenian-genocide` | not an umbrella |
+| `1963-south-vietnamese-coup` | `vietnam-war` | not an umbrella |
+| `kaocen-revolt` | `world-war-i` | not an umbrella |
+| `chilembwe-uprising` | `world-war-i` | not an umbrella |
+| `darfur-genocide` | `war-in-darfur` | not an umbrella |
+| `war-of-the-camps` | `lebanese-civil-war` | not an umbrella |
+| `insurgency-in-kosovo` | `yugoslav-wars` | not an umbrella |
+
+**Three are filed under an A6 umbrella and eight under an ordinary event**, and
+the distinction is deviation 1034's: `arab-israeli-conflict` carries the
+`m42-umbrella` flag, so `tests/m42-filing.test.mjs` holds its three children to
+its lane and all three are in it; the other eight parents are wars and a
+genocide, which are not periods, and the lane rule has nothing to say about
+them. Every filing is the item's own `part of`, every parent is unfiled and
+active, and every child's dates fall inside its parent's.
+
+**Nothing here was given an actor or a place to make it filable.** That is the
+whole of A1 and it is why the table above has eleven rows rather than none.
+
+## 11. M42 batch 28 — thirteen more bare records, all thirteen filed
+
+*22 September, the third batch of the same fire. The measurement is in
+`docs/m42-pool.md` → "Batch 28". A1's clause again, and for the same reason:
+**all thirteen name neither an actor nor a place**, because their items give
+neither and nothing was invented to cover it.*
+
+| the record | filed under | the umbrella's lane, where it is one |
+| --- | --- | --- |
+| `2021-malian-coup-d-etat` | `mali-war` | not an umbrella |
+| `bambatha-rebellion` | `scramble-for-africa` | africa, and the record is africa |
+| `benin-expedition-of-1897` | `scramble-for-africa` | africa, and the record is africa |
+| `herero-wars` | `scramble-for-africa` | africa, and the record is africa |
+| `wadai-war` | `scramble-for-africa` | africa, and the record is africa |
+| `the-holocaust-in-romania` | `the-holocaust` | not an umbrella |
+| `1920-georgian-coup-attempt` | `russian-civil-war` | not an umbrella |
+| `sveaborg-rebellion` | `russian-revolution-of-1905` | not an umbrella |
+| `sevastopol-uprising` | `russian-revolution-of-1905` | not an umbrella |
+| `zaian-war` | `french-conquest-of-morocco` | not an umbrella |
+| `shaba-ii` | `angolan-civil-war` | not an umbrella |
+| `massacre-of-arabs-during-the-zanzibar-revolution` | `zanzibar-revolution` | not an umbrella |
+| `eritrean-civil-wars` | `eritrean-war-of-independence` | not an umbrella |
+
+**Four go under `scramble-for-africa`**, which is an A6 umbrella and takes the
+lane test; all four are africa-lane records and the period runs 1885 to 1914,
+which contains each of them. The other nine go under ordinary wars, a genocide
+and two revolutions, where deviation 1034's reading applies.
+
+**`the-holocaust-in-romania` is the one worth reading twice.** Its own article
+says the Romanian killings were "historically part of The Holocaust" and at the
+same time "mostly independent from the similar acts committed by Nazi Germany,
+Romania being the only ally of the Third Reich that carried out a genocidal
+campaign without the intervention of Heinrich Himmler's SS." **The filing says
+the first and the absence of an edge says the second**, which is the clearest
+case this run has found of `parent` and an edge being two different claims.
+
+## 12. M42 batch 31 — six more bare records, all six filed
+
+*22 September, the third batch of the fire that began at 05:06. The
+measurement is in `docs/m42-pool.md` → "Batch 31". A1's clause again and for
+the same reason: **all six name neither an actor nor a place**, because their
+Wikidata items give neither and nothing was invented to cover it.*
+
+| the record | filed under | the umbrella's lane, where it is one |
+| --- | --- | --- |
+| `1979-herat-uprising` | `afghan-conflict` | not an A6 umbrella |
+| `bala-hissar-uprising` | `afghan-conflict` | not an A6 umbrella |
+| `mountain-war` | `lebanese-civil-war` | not an A6 umbrella |
+| `effacer-le-tableau` | `second-congo-war` | not an A6 umbrella |
+| `colombian-peace-process` | `colombian-conflict` | not an A6 umbrella |
+| `assassination-of-miguel-uribe-turbay` | `colombian-conflict` | not an A6 umbrella |
+
+**None of the six goes under a period**, which is why the lane column has no
+work to do in this batch: every parent here is an ordinary conflict record
+that Wikidata's own `P361` named, and the filing was taken because the child's
+whole interval falls inside the parent's. Four of the six carry a lane written
+by the import from `data/imports/wikidata-seeds.json` → `lanes`, because the
+items carry no point; that is deviation 1029's one-line fix and not a claim
+about where anything happened.
+
+**Nothing here was given an actor or a place to make it filable**, and the
+records that earned no edge kept none.
+
+## 13. M42 batch 32 — twelve more bare records, all twelve filed
+
+*22 September, the fire that began at 08:06. The measurement is in
+`docs/m42-pool.md` → "Batch 32". A1's clause a third time and for the same
+reason: **all twelve name neither an actor nor a place**, because the items
+give neither and nothing was invented to cover it. A battle's belligerents
+are two armies and its ground is a front rather than a town, and an actor
+line or a place written to make one filable would be this assistant's claim
+and not the item's.*
+
+| the record | filed under | the umbrella's lane, where it is one |
+| --- | --- | --- |
+| `battle-of-britain` | `world-war-ii` | not an A6 umbrella |
+| `battle-of-kursk` | `world-war-ii` | not an A6 umbrella |
+| `allied-invasion-of-sicily` | `world-war-ii` | not an A6 umbrella |
+| `soviet-invasion-of-poland` | `world-war-ii` | not an A6 umbrella |
+| `battle-of-dunkirk` | `world-war-ii` | not an A6 umbrella |
+| `battle-of-verdun` | `world-war-i` | not an A6 umbrella |
+| `battle-of-jutland` | `world-war-i` | not an A6 umbrella |
+| `battle-of-tannenberg` | `world-war-i` | not an A6 umbrella |
+| `war-in-donbas` | `russo-ukrainian-war` | not an A6 umbrella |
+| `my-lai-massacre` | `vietnam-war` | not an A6 umbrella |
+| `battle-of-tsushima` | `russo-japanese-war` | not an A6 umbrella |
+| `marco-polo-bridge-incident` | `second-sino-japanese-war` | not an A6 umbrella |
+
+**None of the twelve goes under a period**, so the lane column has no work to
+do in this batch either: every parent is a war this atlas already held and
+that Wikidata's own `P361` named as the whole. **Every one of the twelve
+carries a lane derived from its own point** and not one written into
+`data/imports/wikidata-seeds.json` → `lanes`, which is the difference from
+batch 31: the vein was filtered on the lane before it was ticked, so a row
+whose coordinate does not reach the lane of the record it files under was
+never taken. `world-war-ii` is a europe-lane record and the Pacific War is
+not, which is exactly the kind of row the filter refused.
+
+**Nothing here was given an actor or a place to make it filable**, and the
+nine that earned no edge kept none.
+
+## 14. M42 batch 33 — eight more bare records, all eight filed
+
+*22 September, the second batch of the fire that began at 08:06. The
+measurement is in `docs/m42-pool.md` → "Batch 33". A1's clause a fourth time
+and for the same reason as the third: **all eight name neither an actor nor a
+place**, because the items give neither.*
+
+| the record | filed under | the umbrella's lane, where it is one |
+| --- | --- | --- |
+| `battles-of-khalkhin-gol` | `soviet-japanese-border-conflicts` | not an A6 umbrella |
+| `prelude-to-the-russian-invasion-of-ukraine` | `russo-ukrainian-war` | not an A6 umbrella |
+| `battle-of-caporetto` | `world-war-i` | not an A6 umbrella |
+| `third-battle-of-ypres` | `world-war-i` | not an A6 umbrella |
+| `tet-offensive` | `vietnam-war` | not an A6 umbrella |
+| `sabra-and-shatila-massacre` | `lebanese-civil-war` | not an A6 umbrella |
+| `third-battle-of-kharkov` | `world-war-ii` | not an A6 umbrella |
+| `battle-of-greece` | `world-war-ii` | not an A6 umbrella |
+
+**None of the eight goes under a period** and every one carries a lane derived
+from its own point, as batch 32's twelve did. What this batch adds to the rule
+is a **day-precision span**: where the child and the parent both give a full
+date, the child's own day must fall inside the parent's, and that refuses 34
+rows the year-level test had let through — among them the **July Crisis**,
+which Wikidata files under the First World War and which begins on 23 July
+1914, five days before the war this atlas dates from 28 July. Batch 32's
+twelve were re-checked against the tighter test after it was written and all
+twelve hold.
+
+**Nothing here was given an actor or a place to make it filable**, and the
+five that earned no edge kept none.

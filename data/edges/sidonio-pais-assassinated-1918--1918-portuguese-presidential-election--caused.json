@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "sidonio-pais-assassinated-1918--1918-portuguese-presidential-election--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1918 Portuguese presidential election\", revision 1340296036, § lead"
+    }
+  ],
+  "from": "sidonio-pais-assassinated-1918",
+  "to": "1918-portuguese-presidential-election",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article says the election was held two days after the assassination of President Sidónio Pais on 14 December 1918, that quorum was not reached at the first ballot so it was repeated with the necessary members present, and that João do Canto e Castro was elected as the new President succeeding the late Sidónio Pais. The vacancy is what the article gives as the occasion; what followed from it politically is not this edge.",
+  "dispute": null
+}

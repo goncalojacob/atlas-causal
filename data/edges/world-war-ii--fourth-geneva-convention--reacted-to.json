@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--fourth-geneva-convention--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fourth Geneva Convention\", revision 1375615781, § Article 27 and Article 33"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "fourth-geneva-convention",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The article is a commentary on the convention's articles rather than a history of its drafting, and this edge claims only what that commentary states: **\"the prohibition on scientific experiments was added, in part, in response to experiments by German and Japanese doctors during World War II of whom Josef Mengele was the most infamous\"**, and, on the article forbidding collective punishment, \"by collective punishment, the drafters of the Geneva Conventions had in mind the reprisal killings of World War I and World War II… in World War II, both German and Japanese forces carried out a form of collective punishment to suppress resistance.\" The convention of 12 August 1949 \"was the first to deal with humanitarian protections for civilians during war\", the first three having dealt with combatants.",
+  "dispute": null
+}

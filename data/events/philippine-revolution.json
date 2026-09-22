@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "philippine-revolution",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,28 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A: the neighbour is missing. The revolution belongs with the Spanish-American war and the treaty of Paris of 1898, and the war is not a record here. Its one possible bearing on Portugal — 1898 as the year in which a weak colonial empire was dismembered, while Britain and Germany secretly agreed how Portugal’s might be — runs through the Anglo-German convention of August 1898, which the atlas does not hold either. The treaty of Windsor of 1899 is here and is the Portuguese answer to that convention, but with the convention missing there is no honest edge between them."
-  },
+  "revised": "2026-09-21",
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q422082",
-  "sitelinks": {
-    "count": 49,
-    "on": "2026-09-15"
-  },
   "wikipedia": {
     "en": "Philippine Revolution",
     "pt": "Revolução Filipina"
+  },
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-09-15"
   },
   "sources": [
     {

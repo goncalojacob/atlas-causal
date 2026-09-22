@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-of-rome--single-european-act--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Single European Act\", revision 1324525488, § lead"
+    }
+  ],
+  "from": "treaty-of-rome",
+  "to": "single-european-act",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article's first sentence is that the Single European Act was the first major revision of the 1957 Treaty of Rome. It amended rather than replaced: the Act set the European Community the objective of a single market by 31 December 1992 and reformed the Community legislative process by introducing the cooperation procedure and extending qualified majority voting.",
+  "dispute": null
+}

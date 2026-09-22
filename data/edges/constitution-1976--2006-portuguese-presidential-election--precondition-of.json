@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "constitution-1976--2006-portuguese-presidential-election--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2006 Portuguese presidential election\", revision 1374338206, § Background"
+    }
+  ],
+  "from": "constitution-1976",
+  "to": "2006-portuguese-presidential-election",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says the election was held to elect a successor to the incumbent President Jorge Sampaio, \"who was barred from running for a third consecutive term by the Constitution of Portugal\", and its background repeats it: re-elected in the first round in 2001, \"because he was term-limited, he was forbidden by the Constitution to run for a third consecutive term\". The two-term limit is why the sitting president was not a candidate; who replaced him is the record's own.",
+  "dispute": null
+}

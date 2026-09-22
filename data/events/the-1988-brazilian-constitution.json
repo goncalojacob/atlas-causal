@@ -13,16 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
-  "origin": {
-    "tool": "assistant",
-    "run": "m57"
-  },
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
       "m57-narrative"
     ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m57"
   },
   "sources": [
     {
@@ -31,6 +31,10 @@
     }
   ],
   "title": "The constitution of 1988",
+  "names": [
+    "Constituição da República Federativa do Brasil de 1988",
+    "Constituição cidadã"
+  ],
   "summary": "Promulgated on 5 October 1988 after a two-year constituent process and written from scratch, it replaced the autocratic constitution of 1967, capped twenty-one years of military dictatorship and founded the republic Brazil still has. It was made in the light of the transition to democracy and redefined what the state was for, with a large apparatus of individual and human rights, social welfare and democratic instruments. It is long, and it has been amended often. Its critics say it reproduced a model of state capitalism — the Brazilian state held stakes in more than 650 companies in 2017 — and that its privileged jurisdiction is among the broadest in the world. It is also the text under which a president was impeached in 2016.",
   "when": {
     "start": 1988,
@@ -38,16 +42,13 @@
     "date": "1988-10-05"
   },
   "place": "brasilia",
+  "region": null,
+  "parent": "nova-republica-brazil-since-1985",
   "actors": [
     {
       "actor": "brazil",
       "role": "government",
       "note": "the state the constituent assembly refounded, and whose supreme law this is"
     }
-  ],
-  "names": [
-    "Constituição da República Federativa do Brasil de 1988",
-    "Constituição cidadã"
-  ],
-  "region": null
+  ]
 }

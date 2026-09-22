@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "libyan-civil-war--2012-tuareg-rebellion--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tuareg rebellion (2012)\", revision 1370751541, § lead"
+    }
+  ],
+  "from": "libyan-civil-war",
+  "to": "2012-tuareg-rebellion",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The rebellion’s article says where its fighters and their weapons came from: “The MNLA was formed by former insurgents and a significant number of heavily armed Tuaregs who fought in the Libyan Civil War.” `enabled`, because the Tuareg claim on Azawad is older — the same sentence calls the rising “part of a series of insurgencies by traditionally nomadic Tuaregs which date back at least to 1916” — and what Libya supplied was the men and the arms.",
+  "dispute": null
+}

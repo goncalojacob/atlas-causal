@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ethiopian-civil-war--tigray-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tigray war\", revision 1374637577, § Historical and political context"
+    }
+  ],
+  "from": "ethiopian-civil-war",
+  "to": "tigray-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Tigray war's article opens its own background at this war's end: **\"following the end of the Ethiopian Civil War in 1991, Ethiopia became a dominant-party state under the rule of the Ethiopian People's Revolutionary Democratic Front (EPRDF), a coalition of four ethnically based parties. The founding and most influential member was the Tigray People's Liberation Front (TPLF), led by Meles Zenawi, who was the prime minister of Ethiopia until his death in 2012.\"** The civil war's own article says the same from its side: among its results, \"installation of the TPLF-led transitional government which would later become the EPRDF government in Ethiopia\". The party that lost power in 2018 and fought in 2020 is the one that won in 1991.",
+  "dispute": null
+}

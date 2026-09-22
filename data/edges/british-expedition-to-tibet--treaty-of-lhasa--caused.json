@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "british-expedition-to-tibet--treaty-of-lhasa--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Convention of Lhasa\", revision 1305728166, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"British expedition to Tibet\", revision 1370606386, § lead"
+    }
+  ],
+  "from": "british-expedition-to-tibet",
+  "to": "treaty-of-lhasa",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Both English articles make the convention the expedition's own doing. The treaty's: \"It was signed following the British expedition to Tibet of 1903–1904, a military expedition led by Colonel Francis Younghusband.\" The expedition's says by what means: \"At Lhasa, the Commission forced remaining Tibetan officials to sign the Convention of Lhasa, before withdrawing to Sikkim in September.\" The Dalai Lama had fled and the officials who signed were the ones left in the city.",
+  "dispute": null
+}

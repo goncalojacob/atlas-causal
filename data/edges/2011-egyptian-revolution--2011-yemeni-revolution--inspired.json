@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2011-egyptian-revolution--2011-yemeni-revolution--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Yemeni revolution\", revision 1375746838, § lead and § 2011"
+    }
+  ],
+  "from": "2011-egyptian-revolution",
+  "to": "2011-yemeni-revolution",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The article gives the Egyptian revolution as a model the Yemeni opposition named: **\"by February, opposition leader Tawakel Karman called for a 'Day of Rage' in the mold of mass nationwide demonstrations that helped to topple the government of Tunisia and put pressure on the government of President Hosni Mubarak in Egypt\"**, and **\"after Mubarak quit power in Egypt, demonstrators celebrating the revolution and calling for a similar uprising in Yemen were attacked by police and pro-Saleh tribesmen.\"** The infobox lists among the causes \"inspiration from concurrent regional protests\" and files the revolution under the Arab Spring, which this atlas does not hold as a record (deviation 975). `inspired` is the type for exactly this and the article supports no stronger one: the Yemeni protests began in January 2011 before Mubarak fell.",
+  "dispute": null
+}

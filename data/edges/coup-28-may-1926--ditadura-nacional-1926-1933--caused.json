@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "coup-28-may-1926--ditadura-nacional-1926-1933--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ditadura Nacional\", revision 1365513062, § lead"
+    }
+  ],
+  "from": "coup-28-may-1926",
+  "to": "ditadura-nacional-1926-1933",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the Ditadura Nacional defines it by the coup: it was the regime that governed Portugal from the end of the First Portuguese Republic with the 28 May 1926 coup d’état until the adoption of a new constitution in 1933.",
+  "dispute": null
+}

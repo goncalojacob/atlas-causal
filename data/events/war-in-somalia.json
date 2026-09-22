@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "war-in-somalia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1072042",
+  "wikipedia": {
+    "en": "War in Somalia (2006–2009)",
+    "pt": "Guerra na Somália (2006–2009)"
+  },
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1072042"
+    }
+  ],
+  "title": "War in Somalia",
+  "summary": "Wikidata item Q1072042, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict between millitants and TFG during War on Terror (2006–2009)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2006,
+    "end": 2009,
+    "date": "2006-12-20",
+    "endDate": "2009-01-30"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "somali-civil-war",
+  "category": "war",
+  "actors": []
+}

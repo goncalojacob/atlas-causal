@@ -107,9 +107,20 @@ test('an event card renders head, summary and the collapsed sections with their 
     await open(page, url('?selected=carnation-revolution-1974'));
     const sections = await page.eval(SECTIONS);
     assert.deepEqual(sections.map((s) => s.key), ['consequences', 'causes', 'sources', 'part-of']);
+    // The counts are read off the atlas the page was built from, not typed
+    // here: what this asserts is that the header prints what the topology and
+    // the sources index hold, and a literal is not that. M42 wrote one more
+    // edge into the Carnation revolution and a passing "7" went red without
+    // anything about the card changing (deviation 976's shape again, 984).
+    const atlas = await atlasOf(path.join(ROOT, 'data'));
+    const id = 'carnation-revolution-1974';
+    const out = atlas.adjacency.out.get(id).length;
+    const into = atlas.adjacency.in.get(id).length;
+    const cited = atlas.citationCount('event', id);
+    assert.ok(out > 0 && into > 0 && cited > 0, 'the record this card is drawn from still has all three');
     assert.deepEqual(
       sections.map((s) => [s.label, s.count]),
-      [['Consequences', '9'], ['Causes', '7'], ['Sources', '2'], ['Part of', '1']],
+      [['Consequences', String(out)], ['Causes', String(into)], ['Sources', String(cited)], ['Part of', '1']],
     );
     // Fresh, with nothing walked and nothing remembered: consequences, and
     // every other section's body actually hidden.

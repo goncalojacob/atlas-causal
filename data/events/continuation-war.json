@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "continuation-war",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,28 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class B. Finland’s second war argues from the Winter war, which this round wired at two hops from a Portuguese event, and that leaves this one at three. The link that would shorten it is Barbarossa, and the atlas holds the Eastern front at two hops itself. Finland reaches this atlas through 1918 and 1939 and no further; the record is sound and one link too far out."
-  },
+  "revised": "2026-09-21",
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q122100",
-  "sitelinks": {
-    "count": 50,
-    "on": "2026-09-15"
-  },
   "wikipedia": {
     "en": "Continuation War",
     "pt": "Guerra da Continuação"
+  },
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -53,6 +50,7 @@
   "place": null,
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "world-war-ii",
   "category": "war",
   "actors": []
 }

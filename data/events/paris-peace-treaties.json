@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "paris-peace-treaties",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q322943",
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "Paris Peace Treaties, 1947",
+    "pt": "Tratado de Paris (1947)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q322943"
+    }
+  ],
+  "title": "Paris Peace Treaties",
+  "summary": "Wikidata item Q322943, imported by tools/import/wikidata.mjs. The item's own description reads \"treaties signed in Paris on 10 February 1947\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1947,
+    "end": 1947,
+    "date": "1947-02-10"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

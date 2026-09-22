@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "first-balkan-war--treaty-of-london-q584617--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of London (1913)\", revision 1359713953, § lead"
+    }
+  ],
+  "from": "first-balkan-war",
+  "to": "treaty-of-london-q584617",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article opens with it: the treaty \"was signed on 30 May following the London Conference of 1912–1913\" and \"dealt with the territorial adjustments arising out of the conclusion of the First Balkan War\". Its terms are that settlement — all Ottoman territory in Europe west of the Enos–Midia line ceded to the Balkan League, Crete renounced, the Albanian question left to the Great Powers.",
+  "dispute": null
+}

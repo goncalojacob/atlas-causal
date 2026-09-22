@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "first-liberian-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1477500",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "First Liberian Civil War",
+    "pt": "Primeira Guerra Civil da Libéria"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1477500"
+    }
+  ],
+  "title": "First Liberian Civil War",
+  "summary": "Wikidata item Q1477500, imported by tools/import/wikidata.mjs. The item's own description reads \"1989–1996 civil war in Liberia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1989,
+    "end": 1997,
+    "date": "1989-12-24",
+    "endDate": "1997-08-02"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

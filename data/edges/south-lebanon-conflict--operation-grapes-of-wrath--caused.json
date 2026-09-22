@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "south-lebanon-conflict--operation-grapes-of-wrath--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Grapes of Wrath\", revision 1372784188, § lead"
+    }
+  ],
+  "from": "south-lebanon-conflict",
+  "to": "operation-grapes-of-wrath",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The operation’s article gives both the aim and the tally it answered: it was “a seventeen-day campaign of the Israel Defense Forces (IDF) against Hezbollah in 1996 which attempted to end the Iran-backed group’s rocket attacks on northern Israeli civilian centres… Prior to the operation, Hezbollah had launched 151 rockets from Lebanon into Israel, killing two Israeli civilians and seriously wounding 24 other Israeli civilians.” The rocket war in the occupied south is the conflict this record stands for, and a seventeen-day campaign to stop it is what it brought about.",
+  "dispute": null
+}

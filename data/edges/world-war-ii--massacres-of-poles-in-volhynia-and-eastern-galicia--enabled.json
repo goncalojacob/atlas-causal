@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--massacres-of-poles-in-volhynia-and-eastern-galicia--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Massacres of Poles in Volhynia and Eastern Galicia\", revision 1372344283, § lead and § Background"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "massacres-of-poles-in-volhynia-and-eastern-galicia",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article places the killings inside the war twice: its infobox subheader reads \"Part of the Eastern Front of World War II\", and its first sentence says they \"were carried out in **German-occupied Poland** by the Ukrainian Insurgent Army (UPA), with the support of parts of the local Ukrainian population, against the Polish minority in Volhynia, Eastern Galicia, parts of Polesia, and the Lublin region from 1943 to 1945\". The occupation is the war's: \"in September 1939, Poland was invaded by Nazi Germany and the Soviet Union. The eastern part of Poland was annexed by the Soviet Union; Volhynia and Eastern Galicia were attached to the Ukrainian SSR.\" The edge is `enabled` and not `caused`: what the war supplied was the collapse of the state that had governed those provinces, and the article credits the killing itself to the UPA.",
+  "dispute": null
+}

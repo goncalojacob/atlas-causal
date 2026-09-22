@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "sharpeville-massacre",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": "2026-09-21",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q518753",
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "Sharpeville massacre",
+    "pt": "Massacre de Sharpeville"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q518753"
+    }
+  ],
+  "title": "Sharpeville massacre",
+  "summary": "Wikidata item Q518753, imported by tools/import/wikidata.mjs. The item's own description reads \"shooting by police on 21 March 1960 in Sharpeville, South Africa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1960,
+    "end": 1960,
+    "date": "1960-03-21"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 18 under brief §1: the record earns no honest edge, and it is the batch's one refusal. It was imported to unlock soweto-uprising, whose own retraction reason asks for \"any South African record of the apartheid period\" — and it is one, but the article does not argue the link. The English article of the uprising, at revision 1369412868, gives its cause as the Afrikaans Medium Decree of 1974 and names Sharpeville once only, in a paragraph describing a 1999 BBC broadcast, which is a gloss and not a claim. The English article of the massacre, at revision 1375931445, argues forward to UN Security Council Resolution 134, to South Africa's departure from the Commonwealth in 1961, to the banning of the PAC and the ANC and to the founding of Poqo and Umkhonto we Sizwe — none of them a record here — and not to 1976. \"Internal resistance to apartheid\", at revision 1373723428, puts the two in one sequence without relating them, which is the class of claim §4 of docs/m42-connections.md refuses. It waits on a South African record between 1960 and 1976 that some article argues from the massacre to, or on the banning of the ANC and the PAC."
+  }
+}

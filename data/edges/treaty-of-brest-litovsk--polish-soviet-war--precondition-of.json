@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-of-brest-litovsk--polish-soviet-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Polish–Soviet War\", revision 1370704570, § lead"
+    }
+  ],
+  "from": "treaty-of-brest-litovsk",
+  "to": "polish-soviet-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the Polish–Soviet war says that after the collapse of the Central Powers and the Armistice of 11 November 1918, Lenin’s Soviet Russia annulled the Treaty of Brest-Litovsk and moved forces westward to reclaim the Ober Ost regions abandoned by the Germans, and that Lenin viewed the newly independent Poland as a critical route for spreading communist revolution into Europe. The treaty is what had put those lands outside Soviet control, and its annulment is where the article begins the war.",
+  "dispute": null
+}

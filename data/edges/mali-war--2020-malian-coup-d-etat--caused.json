@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "mali-war--2020-malian-coup-d-etat--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2020 Malian coup d'état\", revision 1370424404, § Background"
+    }
+  ],
+  "from": "mali-war",
+  "to": "2020-malian-coup-d-etat",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The coup’s article gives the protests behind it and what the protesters were angry about: “Protests in Mali had been ongoing since 5 June, with protesters calling for the resignation of President Ibrahim Boubacar Keïta. Protesters were displeased with the government’s management of the ongoing insurgency, alleged government corruption, the ongoing COVID-19 pandemic, and a floundering economy.” The insurgency is the war this edge runs from; it is **one of four** grievances the article names, which is exactly why this is `probable` and why no edge is written from the other three.",
+  "dispute": null
+}

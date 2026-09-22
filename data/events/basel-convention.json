@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "basel-convention",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q775865",
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "Basel Convention",
+    "pt": "Convenção de Basileia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q775865"
+    }
+  ],
+  "title": "Basel Convention",
+  "summary": "Wikidata item Q775865, imported by tools/import/wikidata.mjs. The item's own description reads \"international treaty to prevent transfer of hazardous waste from developed to less developed countries\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1989,
+    "end": 1989,
+    "date": "1989-03-21"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 11 under brief §1: the record earns no honest edge, and it is the third instrument to fall into the hole batch 10 named. The English article, at revision 1347356521, relates it to the International Atomic Energy Agency's regime for radioactive waste and to the Rotterdam and Stockholm conventions; this atlas holds none of them, and the Stockholm convention is itself a batch 10 tombstone for the same reason. Until one environmental record is argued by a person, an environmental treaty has nothing here to be joined to."
+  }
+}

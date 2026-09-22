@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "dissolution-of-the-soviet-union--budapest-memorandum--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Ukrainian war\", revision 1375351069, § Background"
+    }
+  ],
+  "from": "dissolution-of-the-soviet-union",
+  "to": "budapest-memorandum",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the Russo-Ukrainian war says that after the dissolution of the Soviet Union in 1991 Ukraine signed the Non-Proliferation Treaty in 1994 and agreed to give up the former Soviet nuclear weapons on its territory, and that in return Russia, the United Kingdom and the United States agreed to uphold Ukraine’s territorial integrity and independence through the Budapest Memorandum on Security Assurances. The weapons the memorandum is about are the ones the dissolution left in Ukraine.",
+  "dispute": null
+}

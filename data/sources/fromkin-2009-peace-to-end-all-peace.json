@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "fromkin-2009-peace-to-end-all-peace",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m42-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "David Fromkin"
+  ],
+  "title": "A Peace to End All Peace: The Fall of the Ottoman Empire and the Creation of the Modern Middle East",
+  "year": 2009,
+  "publisher": "Macmillan",
+  "isbn": "9780805088090",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "container": null,
+  "repository": null,
+  "reference": null
+}

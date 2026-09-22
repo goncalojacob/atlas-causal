@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "war-in-bosnia-and-herzegovina--dayton-agreement--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bosnian War\", revision 1375967053, § lead"
+    }
+  ],
+  "from": "war-in-bosnia-and-herzegovina",
+  "to": "dayton-agreement",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the Bosnian war says it ended on 21 November 1995 when the Dayton Accords were initialed, and that its main belligerents were the forces of the government of the Republic of Bosnia and Herzegovina and those of the breakaway proto-states of Herzeg-Bosnia and Republika Srpska, led and supplied by Croatia and Serbia respectively.",
+  "dispute": null
+}

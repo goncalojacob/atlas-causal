@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "franco-russian-alliance--world-war-i--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Franco-Russian Alliance\", revision 1375457134, § History"
+    }
+  ],
+  "from": "franco-russian-alliance",
+  "to": "world-war-i",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says Russia and France entered the war united by the treaty of alliance, and that this had a significant effect on the course and outcome of the war since it forced Germany from the first days to fight on two fronts, leading to the defeat at the First Battle of the Marne and the collapse of the Schlieffen Plan. The article puts the alliance among the causes of the shape the war took, not among the causes of its outbreak.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "russian-revolution-of-1905--sveaborg-rebellion--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sveaborg rebellion\", revision 1370749115, § lead"
+    }
+  ],
+  "from": "russian-revolution-of-1905",
+  "to": "sveaborg-rebellion",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The rebellion’s own article names the revolution as what it came out of, and dates itself against the revolution’s defeat: “The mutiny was part of the aftermath of the Russian Revolution of 1905, which by summer 1906 had effectively been suppressed in most other regions of the Russian Empire.” A rising in the aftermath of a revolution, a year after it began and in the one garrison where it had not yet been put down, is the revolution working itself out. **This is the only one of the 1905 records this run has imported that earned an edge rather than a filing alone**, and it earned it on that one word, “aftermath”.",
+  "dispute": null
+}

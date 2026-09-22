@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "hong-kong-flu",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1069785",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "Hong Kong flu",
+    "pt": "Gripe de Hong Kong"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1069785"
+    }
+  ],
+  "title": "Hong Kong flu",
+  "summary": "Wikidata item Q1069785, imported by tools/import/wikidata.mjs. The item's own description reads \"1968—1970 flu pandemic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1968,
+    "end": 1970,
+    "date": "1968-07-13"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

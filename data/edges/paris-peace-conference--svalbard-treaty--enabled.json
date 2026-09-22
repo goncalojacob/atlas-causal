@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "paris-peace-conference--svalbard-treaty--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Svalbard Treaty\", revision 1372436106, § Contents"
+    }
+  ],
+  "from": "paris-peace-conference",
+  "to": "svalbard-treaty",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "What the article claims is the occasion and not a cause, and the edge says no more than the article does: \"The Spitsbergen Treaty was signed in Paris on 9 February 1920, during the Versailles negotiations after World War I. In this treaty, international diplomacy recognized Norwegian sovereignty\" over an archipelago that had been \"a territory free of a nation\". The article's own account of why a treaty was wanted is mining, not war — \"by the 20th century mineral deposits were found on the main island and continual conflicts between miners and owners created the need for a government\" — so what the conference supplied was the table, which is what `enabled` says.",
+  "dispute": null
+}

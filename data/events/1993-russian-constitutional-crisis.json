@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "1993-russian-constitutional-crisis",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -17,15 +17,12 @@
   "origin": {
     "tool": "wikidata"
   },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A. October 1993 belongs with the dissolution of the Soviet Union and the Russian 1990s, and this atlas holds neither. The Russian records it does hold — the revolutions of 1917, the civil war, the war in Ukraine — are three hops or more from any Portuguese event themselves, so an edge into them would connect a stranded record to a stranded cluster."
-  },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
   },
   "wikidata": "Q862099",
   "sitelinks": {

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "revolutions-of-1989--dissolution-of-the-soviet-union--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolutions of 1989\", revision 1375849372, § lead"
+    }
+  ],
+  "from": "revolutions-of-1989",
+  "to": "dissolution-of-the-soviet-union",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the revolutions says they were a wave of liberal democratic movements that resulted in the collapse of most Marxist–Leninist governments in the Eastern Bloc, and that they were a key factor in the dissolution of the Soviet Union and in the abandonment of communist regimes in many parts of the world. \"A key factor\" is the article’s own weighting, and is why this is drawn as probable.",
+  "dispute": null
+}

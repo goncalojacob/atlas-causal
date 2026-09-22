@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "potsdam-conference--treaty-on-the-final-settlement-with-respect-to-germany--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty on the Final Settlement with Respect to Germany\", revision 1369082326, § lead and § Background"
+    }
+  ],
+  "from": "potsdam-conference",
+  "to": "treaty-on-the-final-settlement-with-respect-to-germany",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The 1990 treaty is the answer to a question Potsdam left open, and the article says so at both ends. § Background: \"on 1 August 1945, the Potsdam Agreement, promulgated in the Potsdam Conference, among other things agreed on the initial terms under which the Allies of World War II would govern Germany\", including a provisional German–Polish border to be finalised by **\"a peace settlement for Germany to be accepted by the Government of Germany when a government adequate for the purpose is established\"**. The lead: the Two Plus Four Agreement **\"supplanted the 1945 Potsdam Agreement: in it, the Four Powers renounced all rights they had held with regard to Germany, allowing for its reunification as a fully sovereign state the following year.\"**",
+  "dispute": null
+}

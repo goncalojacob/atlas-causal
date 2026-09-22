@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "jameson-raid--second-boer-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Jameson Raid\", revision 1370624782, § lead"
+    }
+  ],
+  "from": "jameson-raid",
+  "to": "second-boer-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article says it in the lead, in those words: **\"the raid was a contributory cause of the Second Boer War.\"** What it contributed is listed just before — the raid of 29 December 1895 \"was intended to trigger an uprising by the primarily British expatriate and settler workers (known as Uitlanders) in the Transvaal, but it failed\", and its results \"included embarrassment of the British government; the replacement of Cecil Rhodes as prime minister of the Cape Colony; and **the strengthening of Boer dominance of the Transvaal and its gold mines**\". The edge is `precondition-of` because \"contributory cause\" is what the article claims and no more.",
+  "dispute": null
+}

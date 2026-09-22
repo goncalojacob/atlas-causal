@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "german-revolution-of-1918-1919--kapp-putsch--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kapp Putsch\", revision 1373832870, § lead"
+    }
+  ],
+  "from": "german-revolution-of-1918-1919",
+  "to": "kapp-putsch",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English article states the aim in its first paragraph: the putsch’s \"goal was to undo the German Revolution of 1918–1919, overthrow the Weimar Republic, and establish an autocratic government.\" The revolution is the thing the putsch was against, named by the article as such.",
+  "dispute": null
+}

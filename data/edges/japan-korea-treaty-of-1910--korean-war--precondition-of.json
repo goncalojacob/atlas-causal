@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "japan-korea-treaty-of-1910--korean-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Korean War\", revision 1375738636, § Background — Japanese colonization (1910–1945)"
+    },
+    {
+      "source": "schnabel-1972-policy-and-direction",
+      "locator": "pp. 3, 18, 22; the work the article hangs this sentence on"
+    }
+  ],
+  "from": "japan-korea-treaty-of-1910",
+  "to": "korean-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Korean War’s own English article opens its background at the annexation and gives the colonial period its own section, \"Japanese colonization (1910–1945)\": \"A decade later, after defeating Imperial Russia in the Russo-Japanese War, Japan made the Korean Empire its protectorate with the Eulsa Treaty in 1905, and then annexed it with the Japan–Korea Treaty of 1910.\" The war of 1950 is argued out of the division of a country the annexation had made a single Japanese possession; the edge claims the annexation as a precondition of that war and not as its cause.",
+  "dispute": null
+}

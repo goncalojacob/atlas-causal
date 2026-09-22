@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2021-myanmar-coup-d-etat--myanmar-civil-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Myanmar civil war (2021–present)\", revision 1375700231, § lead"
+    }
+  ],
+  "from": "2021-myanmar-coup-d-etat",
+  "to": "myanmar-civil-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article of the war opens on the coup and gives it as what began the war: “The Myanmar civil war began following the military coup on 1 February 2021. The seizure of power triggered mass anti-coup demonstrations and a violent crackdown by the Tatmadaw (Myanmar armed forces), which significantly escalated the country’s longstanding insurgencies.” The insurgencies are older than the coup and the article says so; what it dates to February 2021 is the war.",
+  "dispute": null
+}

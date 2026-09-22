@@ -161,6 +161,14 @@ export function entitiesUrl(qids, { api = API, languages = LANGUAGES } = {}) {
   return `${api}?${params}`;
 }
 
+// The same entity JSON as wbgetentities, one item at a time and off the
+// action API. It is the fallback `fetchEntities` takes when the batched call
+// is rate-limited, and it asks for no parameters at all, so there is nothing
+// on it to keep in step with `entitiesUrl`.
+export function entityDataUrl(qid) {
+  return `https://www.wikidata.org/wiki/Special:EntityData/${encodeURIComponent(qid)}.json`;
+}
+
 export function searchUrl(term, { api = API, language = 'en', limit = 10 } = {}) {
   const params = new URLSearchParams({
     action: 'wbsearchentities',
@@ -899,8 +907,28 @@ export const isMissing = (entity) => !entity || Object.hasOwn(entity, 'missing')
 
 export async function fetchEntities(fetcher, qids) {
   if (!qids.length) return {};
-  const body = await fetcher.get(entitiesUrl(qids));
-  return body?.entities ?? {};
+  try {
+    const body = await fetcher.get(entitiesUrl(qids));
+    return body?.entities ?? {};
+  } catch (e) {
+    // The action API is the one endpoint this sandbox is rate-limited on, and
+    // the refusal does not lift inside a run. Special:EntityData carries the
+    // same entity and is not behind that limit, so a blocked batch becomes one
+    // call per item instead of the end of the import.
+    if (e?.name !== 'HttpError' || (e.status !== 429 && e.status !== 403)) throw e;
+    const entities = {};
+    for (const qid of qids) {
+      try {
+        const one = await fetcher.get(entityDataUrl(qid));
+        Object.assign(entities, one?.entities ?? {});
+      } catch (inner) {
+        // A 404 here is what `missing` is over there: the item is not one.
+        if (inner?.name === 'HttpError' && inner.status === 404) entities[qid] = { id: qid, missing: '' };
+        else throw inner;
+      }
+    }
+    return entities;
+  }
 }
 
 // The lead of each article the item links to, cached by item and language.

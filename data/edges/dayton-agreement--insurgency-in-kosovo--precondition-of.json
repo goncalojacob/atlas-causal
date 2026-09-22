@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "dayton-agreement--insurgency-in-kosovo--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Insurgency in Kosovo (1995–1998)\", revision 1370623741, § lead"
+    }
+  ],
+  "from": "dayton-agreement",
+  "to": "insurgency-in-kosovo",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The insurgency’s article opens on the agreement: “The Insurgency in Kosovo began in 1995, following the Dayton Agreement that ended the Bosnian War. In 1996, the Kosovo Liberation Army (KLA) began attacking Serbian governmental buildings and police stations.” A settlement that closed one war and left Kosovo out of it is what the article puts before the first attacks. **The article’s own last sentence — “This insurgency would lead to the more intense Kosovo War in February 1998” — could not be written as an edge**: Wikidata gives this record a single day, 28 February 1998, for an insurgency its own title dates from 1995, and the Kosovo war here begins that same February, so the edge the article states cannot run forward over the dates the atlas holds.",
+  "dispute": null
+}

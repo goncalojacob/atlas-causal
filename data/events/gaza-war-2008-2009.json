@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "gaza-war-2008-2009",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,28 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A. Its neighbours are the Gaza records of 2023, which the atlas holds and which reach no Portuguese event, and the second intifada and the disengagement of 2005, which it does not hold. Retracted rather than wired into a cluster that is stranded itself."
-  },
+  "revised": "2026-09-21",
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q170682",
-  "sitelinks": {
-    "count": 57,
-    "on": "2026-09-15"
-  },
   "wikipedia": {
     "en": "Gaza War (2008–2009)",
     "pt": "Operação Chumbo Fundido"
+  },
+  "sitelinks": {
+    "count": 57,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -53,6 +50,7 @@
   "place": null,
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "arab-israeli-conflict",
   "category": "war",
   "actors": []
 }

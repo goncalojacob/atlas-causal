@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "armenian-genocide--battle-of-musa-dagh--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Musa Dagh\", revision 1370628972, § lead"
+    }
+  ],
+  "from": "armenian-genocide",
+  "to": "battle-of-musa-dagh",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The mountain’s article says what happened on it: “In 1915, it was the location of a successful Armenian resistance to the Armenian genocide, an event that inspired Franz Werfel to write the novel The Forty Days of Musa Dagh.” A defence against a killing already under way is a reaction to it, and the edge runs in this atlas’s direction for that type — the thing reacted to first.",
+  "dispute": null
+}

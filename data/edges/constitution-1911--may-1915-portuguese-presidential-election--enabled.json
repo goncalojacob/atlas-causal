@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "constitution-1911--may-1915-portuguese-presidential-election--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"May 1915 Portuguese presidential election\", revision 1305366818, § lead"
+    }
+  ],
+  "from": "constitution-1911",
+  "to": "may-1915-portuguese-presidential-election",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English article on the election says it in one sentence: \"Portugal's 1911 constitution stated that the Congress of the Republic must elect the president in Lisbon instead of the Portuguese people\", and the election followed the resignation of President Manuel de Arriaga, to complete the remainder of his term. The constitution is what put the choice in Congress rather than in an electorate, which is the fact this edge carries and the only one — who won, and why, is the record's own.",
+  "dispute": null
+}

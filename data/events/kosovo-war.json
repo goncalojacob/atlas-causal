@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "kosovo-war",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,28 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A, with the Yugoslav cluster. NATO’s campaign of 1999 is the point at which a Portuguese edge is nearest — Portugal was a member and took part — and the atlas holds Portugal’s signature of the North Atlantic treaty in 1949 and nothing of the alliance afterwards. An edge from 1999 back to 1949 would run against the arrow of time as well as against sense. What is missing is a record of Portugal in NATO after the cold war."
-  },
+  "revised": "2026-09-21",
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q190029",
-  "sitelinks": {
-    "count": 67,
-    "on": "2026-09-15"
-  },
   "wikipedia": {
     "en": "Kosovo War",
     "pt": "Guerra do Kosovo"
+  },
+  "sitelinks": {
+    "count": 67,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -53,6 +50,7 @@
   "place": null,
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "yugoslav-wars",
   "category": "war",
   "actors": []
 }

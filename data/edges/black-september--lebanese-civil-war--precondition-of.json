@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "black-september--lebanese-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Black September\", revision 1370604477, § lead"
+    }
+  ],
+  "from": "black-september",
+  "to": "lebanese-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says that after the fighting \"Jordan allowed the fedayeen to relocate to Lebanon via Syria, where they later became involved in the Lebanese Civil War\". The expulsion of the Palestinian armed organisations from Jordan is what put them in the country whose war this atlas already holds.",
+  "dispute": null
+}

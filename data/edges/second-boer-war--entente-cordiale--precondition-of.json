@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "second-boer-war--entente-cordiale--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Entente Cordiale\", revision 1370844455, § Background"
+    }
+  ],
+  "from": "second-boer-war",
+  "to": "entente-cordiale",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article's background says the situation for Britain and France changed in the last decade of the nineteenth century, and that \"the change had its roots in a British loss of confidence after the Second Boer War and a growing fear of the strength of Germany\". The article also names what had kept the two apart — the scramble for Africa and the Fashoda incident of 1898, over which France backed down — and records that Britain decided not to join the Triple Alliance and revived the idea of a French alliance instead.",
+  "dispute": null
+}

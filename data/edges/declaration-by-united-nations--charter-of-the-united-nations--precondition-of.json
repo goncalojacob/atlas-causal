@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "declaration-by-united-nations--charter-of-the-united-nations--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Declaration by United Nations\", revision 1369044189, § lead"
+    }
+  ],
+  "from": "declaration-by-united-nations",
+  "to": "charter-of-the-united-nations",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article states the line from the wartime alliance to the organisation: **\"the Declaration by United Nations became the basis of the United Nations (UN), which was formalized in the UN Charter, signed by 50 countries on 26 June 1945.\"** It is the same name and the same signatories: the article notes that Denmark, which had not signed, was nonetheless invited among the allies to the San Francisco conference of 1945, which is where the Charter was drawn.",
+  "dispute": null
+}

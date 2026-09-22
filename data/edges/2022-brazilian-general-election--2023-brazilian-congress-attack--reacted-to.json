@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2022-brazilian-general-election--2023-brazilian-congress-attack--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"8 January Brasília attacks\", revision 1372449713, § Background"
+    }
+  ],
+  "from": "2022-brazilian-general-election",
+  "to": "2023-brazilian-congress-attack",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English article of the attack gives the election as what the mob was answering: \"Bolsonaro supporters alleged that the 2022 Brazilian general election suffered from widespread electoral fraud that caused Bolsonaro's loss. They claimed electronic voting machine malfunctions and deemed some voting patterns suspicious, and mistrusted election officials. The military helped oversee the election and found no signs of fraud.\" Its lead dates the attack to the week after the inauguration of the winner.",
+  "dispute": null
+}

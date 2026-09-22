@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "war-of-attrition--yom-kippur-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of Attrition\", revision 1371500938, § Egyptian front"
+    }
+  ],
+  "from": "war-of-attrition",
+  "to": "yom-kippur-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says that after Nasser's death in September 1970 his successor Anwar Sadat continued the ceasefire, focusing on rebuilding the Egyptian army and planning a full-scale attack on the Israeli forces holding the eastern bank of the Suez Canal, and that \"these plans would materialize three years later in the Yom Kippur War\". The paragraph carries a citation-needed tag dated December 2025, which is why this is probable and no more.",
+  "dispute": null
+}

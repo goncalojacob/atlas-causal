@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "treaty-of-london-q584617",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q584617",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "Treaty of London (1913)",
+    "pt": "Tratado de Londres (1913)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q584617"
+    }
+  ],
+  "title": "Treaty of London",
+  "summary": "Wikidata item Q584617, imported by tools/import/wikidata.mjs. The item's own description reads \"signed on 30 May during the London Conference of 1913\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1913,
+    "end": 1913,
+    "date": "1913-05-30"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

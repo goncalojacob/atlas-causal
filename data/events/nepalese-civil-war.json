@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "nepalese-civil-war",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 15 under brief §1: the record earns no honest edge. The English article, at revision 1375833499, has no background section at all: its § Overview begins with the United Left Front of January 1990 and runs through the Nepali Congress, the United National People's Movement, the Communist Party of Nepal (Unity Centre) and the United People's Front of Nepal, and its timeline is year by year from 1996. Every actor and every event in it is Nepali and none is a record here; the atlas's South Asian records are the partition of India, the Indo-Pakistani wars, Kargil and the Sino-Indian war, and the article mentions none of them. It waits on any Nepali or Himalayan neighbour."
+  },
+  "wikidata": "Q2002975",
+  "wikipedia": {
+    "en": "Nepalese Civil War",
+    "pt": "Guerra Civil do Nepal"
+  },
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2002975"
+    }
+  ],
+  "title": "Nepalese Civil War",
+  "summary": "Wikidata item Q2002975, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war in Nepal between 1996 and 2006\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1996,
+    "end": 2006,
+    "date": "1996-02-13",
+    "endDate": "2006-11-21"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

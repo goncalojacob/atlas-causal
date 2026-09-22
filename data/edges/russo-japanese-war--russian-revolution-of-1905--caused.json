@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "russo-japanese-war--russian-revolution-of-1905--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Japanese War\", revision 1375146144, § lead"
+    }
+  ],
+  "from": "russo-japanese-war",
+  "to": "russian-revolution-of-1905",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article says that Russia’s incurrence of substantial casualties and losses for a cause which resulted in a humiliating defeat contributed to internal unrest culminating in the 1905 Russian Revolution, during which the Russian autocracy was forced to make concessions. The word the article uses is \"contributed to\", which is why this is drawn as probable and not as consensus.",
+  "dispute": null
+}

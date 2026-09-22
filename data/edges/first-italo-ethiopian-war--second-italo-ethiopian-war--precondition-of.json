@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "first-italo-ethiopian-war--second-italo-ethiopian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Italo-Ethiopian War\", revision 1374151253, § Background"
+    }
+  ],
+  "from": "first-italo-ethiopian-war",
+  "to": "second-italo-ethiopian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the war of 1935 begins its background with the war of 1896: Italy began its attempts to establish colonies in the Horn of Africa in the 1880s, and the first phase of that expansion concluded with the disastrous First Italo-Ethiopian War and the defeat at Adwa on 1 March 1896, after which Italy abandoned its expansionist plans in the area and limited itself to Eritrea and Somaliland for the next few decades.",
+  "dispute": null
+}

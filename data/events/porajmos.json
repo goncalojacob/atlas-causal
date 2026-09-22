@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "porajmos",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,28 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class B. The Romani genocide argues to the Holocaust, which this atlas holds and which reaches no Portuguese event within two hops even after the edge this round wrote from it to the genocide convention. There is nothing dishonest about the record and nothing to hang it on: what is missing is any Portuguese record of the war’s persecutions — Sousa Mendes and the visas of 1940 are not in this atlas — and until one is here the whole of the Nazi genocide sits outside the Portuguese reach the round requires."
-  },
+  "revised": "2026-09-21",
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q117571",
-  "sitelinks": {
-    "count": 52,
-    "on": "2026-09-15"
-  },
   "wikipedia": {
     "en": "Romani Holocaust",
     "pt": "Porajmos"
+  },
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-09-15"
   },
   "sources": [
     {

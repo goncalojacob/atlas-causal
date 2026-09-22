@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2022-brazilian-general-election--lula-returns-to-the-presidency-2023--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2022 Brazilian general election\", revision 1375252300, § lead"
+    }
+  ],
+  "from": "2022-brazilian-general-election",
+  "to": "lula-returns-to-the-presidency-2023",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article states the result plainly: \"Luiz Inácio Lula da Silva received the majority of the votes in the second round and was elected president of Brazil for a third, non-consecutive term.\" The runoff of 30 October 2022 is what put him back in the Planalto on 1 January 2023.",
+  "dispute": null
+}

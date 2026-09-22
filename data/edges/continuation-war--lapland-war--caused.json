@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "continuation-war--lapland-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lapland War\", revision 1370626600, § Prelude"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lapland War\", revision 1370626600, § lead"
+    }
+  ],
+  "from": "continuation-war",
+  "to": "lapland-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Lapland War is what the terms of leaving the Continuation War required. The English article says the ceasefire Finland negotiated with the Soviet Union in September 1944 obliged the Finns to break diplomatic relations with Germany and publicly demand the withdrawal of all German troops from Finland by 15 September, and that any troops remaining after the deadline were to be expelled or disarmed and handed over to the Soviet Union. The Finns fought their former co-belligerent because the peace they had just made said they must.",
+  "dispute": null
+}

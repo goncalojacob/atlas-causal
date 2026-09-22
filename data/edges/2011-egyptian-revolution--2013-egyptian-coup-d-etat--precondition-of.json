@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2011-egyptian-revolution--2013-egyptian-coup-d-etat--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2013 Egyptian coup d'état\", revision 1369875339, § Background"
+    }
+  ],
+  "from": "2011-egyptian-revolution",
+  "to": "2013-egyptian-coup-d-etat",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the coup writes its background as the two years between: Mubarak resigned in February 2011 after eighteen days of mass demonstrations, the caretaker government approved an election law in July, a parliament was elected between December 2011 and January 2012, and Morsi won the presidential election of June 2012 to become the first democratically elected president of Egypt — the president the coup of 3 July 2013 removed.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "heligoland-zanzibar-treaty--anglo-zanzibar-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Heligoland–Zanzibar Treaty\", revision 1372103388, § Consequences"
+    }
+  ],
+  "from": "heligoland-zanzibar-treaty",
+  "to": "anglo-zanzibar-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English article says that in return for what it gave up Germany recognised British authority in Zanzibar, that Britain \"immediately declared a protectorate over Zanzibar\", and that \"in the subsequent 1896 Anglo-Zanzibar War, gained full control of the sultanate\". The treaty is what put Britain in the position the war was fought from; the article does not argue that it caused the war.",
+  "dispute": null
+}

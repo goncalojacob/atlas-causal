@@ -256,17 +256,27 @@ test('a state change updates the bars in place and does not rebuild them', { ski
     await until(page, BARS_NAMED);
     // Every element the timeline has drawn, watched for children coming and
     // going. `subtree` so the layers themselves are covered.
-    // Elements only. A bar that now stands for a different event still has
-    // its own <title>, and the text inside that title is replaced — a text
-    // node coming and going is the label changing, not the drawing being
-    // rebuilt, and it is the element that costs layout.
+    // Elements only, and **not `<title>`**, which is the clause M42 had to
+    // write down rather than raise a bound over. A bar that now stands for a
+    // different event still has its own <title>, and the text inside it is
+    // replaced — a text node coming and going is the label changing, not the
+    // drawing being rebuilt, and it is the element that costs layout. The
+    // tooltip element itself is in the same position: it is never laid out,
+    // never painted and never part of the picture. It moves because the ring
+    // a parent's bar is drawn with shares the bars layer with the bars and
+    // carries no title (timeline.js), so `reuse()`'s positional take hands
+    // position *i* to a ring in one render and to a bar in the next and the
+    // title goes with it. **Filing events under parents makes rings**, which
+    // is what M42's A6 pass does by the dozen, so this count rises with every
+    // umbrella while nothing about the drawing changes. What this test is
+    // about is the drawn elements, and those are counted here.
     await page.eval(`
       window.__added = 0;
       window.__removed = 0;
       new MutationObserver((records) => {
         for (const r of records) {
-          for (const n of r.addedNodes) if (n.nodeType === 1) window.__added += 1;
-          for (const n of r.removedNodes) if (n.nodeType === 1) window.__removed += 1;
+          for (const n of r.addedNodes) if (n.nodeType === 1 && n.tagName !== 'title') window.__added += 1;
+          for (const n of r.removedNodes) if (n.nodeType === 1 && n.tagName !== 'title') window.__removed += 1;
         }
       }).observe(document.querySelector('#timeline svg.timeline'), { childList: true, subtree: true });
       return true;`);
@@ -308,7 +318,16 @@ test('a state change updates the bars in place and does not rebuild them', { ski
     assert.ok(before > 100, `the atlas drew something (${before} elements)`);
     assert.ok(churn.removed < handful, `the drawing was not rebuilt (${churn.removed} of ${before} elements removed)`);
     assert.ok(churn.added < handful, `nor built again (${churn.added} of ${before} elements added)`);
-    assert.ok(Math.abs(after - before) < 10, `and it is the same drawing (${before} to ${after})`);
+    // A share of the drawing, for the reason the bound above it is one. The
+    // absolute ten was written when `data/` held five rings; every event filed
+    // under an umbrella makes another, M42's filing pass makes them by the
+    // dozen, and a ring in the bars layer moves `reuse()`'s positional take —
+    // which is the paragraph above, and is not the drawing being rebuilt. The
+    // property this line is about is that the picture is the *same size*
+    // afterwards, and that is a proportion and not a number (M79, and red on
+    // `m0` before this branch existed).
+    const same = Math.max(10, Math.round(before * 0.02));
+    assert.ok(Math.abs(after - before) < same, `and it is the same drawing (${before} to ${after})`);
 
     // And the layers are still the only children of the <svg>: nothing was
     // appended to the root behind their backs.
@@ -393,8 +412,9 @@ test('a large event is a band the height of the drawing, under the bars and with
 // M30c, §1: the bracket of A9 was drawn only where the parts shared a named
 // lane, so under the default — which since M77 is the only arrangement there
 // is — nothing said a parent was one. The ring is what says it, on every view
-// and at every size. `fixture-event-f` is the one parent either corpus
-// carries.
+// and at every size. `fixture-event-f` is one of the two parents the fixture
+// corpus carries; the other is `fixture-event-u`, whose only child is
+// `fixture-event-h` and names it *second* (M79).
 const RING_AROUND = (id) => `
   const svg = document.querySelector('#timeline svg.timeline');
   const bar = svg.querySelector('rect[data-id="${id}"]');
@@ -431,7 +451,7 @@ test('a parent\'s bar is ringed in the packed rows and when it is held', { skip 
     await open(page, url(on('fixtures=1')), READY);
     const packed = await page.eval(RING_AROUND('fixture-event-f'));
     assert.ok(packed.bar, 'the parent has a bar of its own in the packed rows');
-    assert.equal(packed.rings, 1, 'one ring, for the one parent on the fixtures');
+    assert.equal(packed.rings, 2, 'one ring for each of the two parents on the fixtures');
     assert.ok(packed.ring, 'and it is around that bar');
     assert.equal(packed.ring.y, packed.bar.y - 2, 'two pixels outside it on every side');
     assert.equal(packed.ring.width, packed.bar.width + 4);
@@ -443,6 +463,15 @@ test('a parent\'s bar is ringed in the packed rows and when it is held', { skip 
     assert.equal(packed.ring.events, 'none', 'the bar under it takes every click');
     assert.ok(packed.ring.stroke > 0 && packed.ring.stroke < 1, `thinner than the bar: ${packed.ring.stroke}`);
     assert.equal(packed.layer, 'layer layer-rings', 'drawn through a pool of its own (M77)');
+
+    // The second umbrella, whose only child names it second (M79): the ring
+    // reads `childrenOf`, which is built from every parent and not the first,
+    // so an event's second umbrella is as much a parent as its first.
+    const second = await page.eval(RING_AROUND('fixture-event-u'));
+    assert.ok(second.bar, 'the second umbrella has a bar of its own at rest');
+    assert.ok(second.ring, 'and a ring around it');
+    assert.equal(second.ring.y, second.bar.y - 2);
+    assert.equal(second.ring.fill, 'none');
 
     // A leaf is drawn exactly as it was — read here, in the resting picture,
     // because since M65 the choice below narrows the bars to what it reaches

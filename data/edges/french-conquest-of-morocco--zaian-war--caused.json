@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "french-conquest-of-morocco--zaian-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Zaian War\", revision 1370751428, § lead"
+    }
+  ],
+  "from": "french-conquest-of-morocco",
+  "to": "zaian-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The war’s article puts the French push first and the war second: it “was fought between France and the Zaian Confederation of Berber tribes in Morocco between 1914 and 1921 during the French conquest of Morocco. Morocco had become a French protectorate in 1912, and Resident-General Louis-Hubert Lyautey sought to extend French influence eastwards through the Middle Atlas mountains towards French Algeria. This was opposed by the Zaians, led by Mouha ou Hammou Zayani.” The conquest is what the Zaians were opposing, which is more than the war merely happening inside it.",
+  "dispute": null
+}

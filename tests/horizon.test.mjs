@@ -8,7 +8,7 @@ import path from 'node:path';
 import { readFile } from 'node:fs/promises';
 import { defaultState } from '../src/state.js';
 import {
-  horizonSet, horizonResults, horizonYear, horizonBand, rankByCost, RANKED,
+  horizonSet, horizonResults, horizonYear, horizonBand, rankByCost, RANKED, SHOWN,
 } from '../src/horizon.js';
 import { resolveHorizon, horizonIsOpen, resolveWindow } from '../src/util/window.js';
 import {
@@ -94,9 +94,16 @@ test('the panel lists what graph.js found, and each line walks to it', async () 
   // The count is the corpus's, not this test's: it was 30, then 32, then 35,
   // and M44b's creation of EDP made it one more. What the panel is held to is
   // that it lists what graph.js found and says how many that was.
+  //
+  // M42 batch 26 is where the corpus crossed `SHOWN`. The panel has always
+  // cut the list there and printed the honest total in the summary — that is
+  // what the module's own comment says it is for — so a test that asked for
+  // one row per result was asking the panel to stop doing its job the moment
+  // an answer went past forty. What it is held to now is the list it draws:
+  // every result up to the cut, and the whole count in the header.
   assert.equal(results.length, horizonSet(atlas, state).size);
   assert.ok(results.length > 0);
-  assert.equal((html.match(/data-action="horizon-walk"/g) ?? []).length, results.length);
+  assert.equal((html.match(/data-action="horizon-walk"/g) ?? []).length, Math.min(results.length, SHOWN));
   assert.match(html, new RegExp(`<summary>What did this lead to by <strong>2011</strong>\\?\\s*<span class="count">${results.length}</span>`));
   assert.match(html, /<details open>/, 'a chosen year opens the section');
   assert.match(html, /data-action="clear-horizon"/);

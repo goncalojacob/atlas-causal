@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "vietnam-war--paris-peace-accords--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Paris Peace Accords\", revision 1374303685, § lead"
+    }
+  ],
+  "from": "vietnam-war",
+  "to": "paris-peace-accords",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The agreement’s own article says what it was for: it was “signed on 27 January 1973 to establish peace in Vietnam and end the Vietnam War”, and it “included a cease-fire, which was scheduled to take effect at 24:00 GMT on 27 January”. A peace is a thing a war produces and this atlas writes that as `caused`, as it does for the armistice of 22 June 1940 and the Korean armistice. It is `probable` and not `consensus` because the only work cited is one encyclopedia.",
+  "dispute": null
+}

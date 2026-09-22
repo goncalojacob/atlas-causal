@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "saur-revolution--1979-herat-uprising--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1979 Herat uprising\", revision 1370623531, § lead and § Background"
+    }
+  ],
+  "from": "saur-revolution",
+  "to": "1979-herat-uprising",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The uprising was against what this revolution installed. Lead: it “included both a popular uprising and a mutiny of ethnic Tajik Afghan Army troops against the Democratic Republic of Afghanistan (DRA) … the deadliest incident in the 1978-1979 period following the Saur Revolution and before the start of the Soviet occupation in December 1979.” Background: “The events in Herat took place in the wider context of unrest against the communist reforms implemented by the DRA, of which the principal was agrarian reform … Starting in May 1978 in Nuristan, spontaneous uprisings took place throughout Afghanistan against the DRA and its policies.” The Soviet Politburo’s own assessment, which the article reports, was “that it was caused by the DRA regime”.",
+  "dispute": null
+}

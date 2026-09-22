@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "vietnam-war--sino-vietnamese-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sino-Vietnamese War\", revision 1375848359, § Background"
+    }
+  ],
+  "from": "vietnam-war",
+  "to": "sino-vietnamese-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article's background opens by putting the three wars in one line: just as the First Indochina War, which emerged from the complex situation following the Second World War, and the Vietnam War arose from the indecisive aftermath of political relations, the Third Indochina War again followed the unresolved problems of the earlier wars. The lead gives the immediate occasion as China's stated response to Vietnam's invasion and occupation of Cambodia in 1978, which is a record this atlas does not hold.",
+  "dispute": null
+}

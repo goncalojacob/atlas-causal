@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "second-intifada--gaza-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gaza war\", revision 1375729607, § Background"
+    }
+  ],
+  "from": "second-intifada",
+  "to": "gaza-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the Gaza war writes its background as the Israeli–Palestinian conflict and names the two uprisings within it: the First and Second Intifadas of 1987 and 2000, with the latter’s end seeing Israel’s unilateral withdrawal from Gaza in 2005. The withdrawal that left the territory the later war was fought over is what the article says the intifada’s end brought.",
+  "dispute": null
+}

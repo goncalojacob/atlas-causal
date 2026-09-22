@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--breakup-of-yugoslavia--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Breakup of Yugoslavia\", revision 1373988162, § Background"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "breakup-of-yugoslavia",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the breakup lists, among the elements that fostered the discord, the formation of the Kingdom of Yugoslavia, its first breakup, and the subsequent inter-ethnic and political wars and genocide during the Second World War, beside the ideas of a Greater Albania, a Greater Croatia and a Greater Serbia and the unilateral recognition of the breakaway republics by a newly reunited Germany. One element among several, named by the article, and so a precondition at probable.",
+  "dispute": null
+}

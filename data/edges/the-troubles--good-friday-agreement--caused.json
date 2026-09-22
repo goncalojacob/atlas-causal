@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "the-troubles--good-friday-agreement--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"The Troubles\", revision 1375596184, § lead"
+    }
+  ],
+  "from": "the-troubles",
+  "to": "good-friday-agreement",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the Troubles says the conflict lasted about thirty years from the late 1960s to 1998 and is usually deemed to have ended with the Good Friday Agreement of that year.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "greco-turkish-war-of-1897--first-balkan-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Greco-Turkish War (1897)\", revision 1374612994, § Aftermath"
+    }
+  ],
+  "from": "greco-turkish-war-of-1897",
+  "to": "first-balkan-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article draws the line itself: the public awareness in Greece of the country’s unpreparedness for a war in pursuit of its national aspirations \"laid the seeds for the Goudi coup of 1909, which called for immediate reforms in the Greek Army, economy, and society\", and when Eleftherios Venizelos came to power he instigated the reforms that transformed the Greek state, \"leading it to victory in the Balkan Wars of 1912-1913 three years later\". The claim is narrow and it is the article’s: the defeat of 1897 is a precondition of the army Greece fought with in 1912, not a cause of the war.",
+  "dispute": null
+}

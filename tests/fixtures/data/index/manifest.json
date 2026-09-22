@@ -7,7 +7,7 @@
       "to": 1199
     },
     {
-      "file": "index/attributes-1200-1299-56025c7b0861.json",
+      "file": "index/attributes-1200-1299-5a7452427310.json",
       "from": 1200,
       "key": "1200-1299",
       "to": 1299
@@ -202,7 +202,7 @@
   "counts": {
     "actors": 4,
     "edges": 18,
-    "events": 21,
+    "events": 22,
     "narratives": 1,
     "offices": 2,
     "places": 11,
@@ -250,18 +250,18 @@
     }
   ],
   "files": {
-    "citers": "index/citers-16504f906cff",
-    "core": "index/core-e74d8e472b5b.json",
+    "citers": "index/citers-edbc2d09467f",
+    "core": "index/core-b71a4f9967d7.json",
     "grounds": "index/grounds-7905b603a65a.json",
     "presences": "index/presences-acbe704f1f89.json",
-    "review": "index/review-d8045cdf1b45.json",
-    "search": "index/search-ee7024f7e4a8.json",
-    "sources": "index/sources-ad863beec421.json",
+    "review": "index/review-91c7a6ac40ca.json",
+    "search": "index/search-f5a73e49247b.json",
+    "sources": "index/sources-c2f2ea5f9eec.json",
     "territories": "index/territories-7905b603a65a.json"
   },
   "historyShards": [
     {
-      "file": "index/history-event-1200-1299-283dad056bbe.json",
+      "file": "index/history-event-1200-1299-928c45b586af.json",
       "from": 1200,
       "key": "1200-1299",
       "kind": "event",

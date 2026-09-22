@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "sierra-leone-civil-war--second-liberian-civil-war--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Liberian Civil War\", revision 1373880319, § Background"
+    }
+  ],
+  "from": "sierra-leone-civil-war",
+  "to": "second-liberian-civil-war",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English article on the second Liberian war makes Taylor’s Sierra Leonean adventure its trigger: \"Taylor’s ambition of establishing Liberia as a regional power led to him supporting rebel groups such as... the Revolutionary United Front in the Sierra Leone Civil War. This brought him into conflict with the governments of Guinea and Sierra Leone who, in retaliation, began supporting the anti-Taylor dissidents that had fled to their countries.\" The war of 1999 is the retaliation that support became.",
+  "dispute": null
+}

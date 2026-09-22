@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "first-matabele-war--second-matabele-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Chimurenga\", revision 1370619280, § The War in Matabeleland"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q233657 and Q857982"
+    }
+  ],
+  "from": "first-matabele-war",
+  "to": "second-matabele-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article reads the second war against the first throughout, and says what the Matabele had taken from it: \"In the First Matabele War, the Matabele had experienced the effectiveness of the settlers’ Maxim guns, so they never mounted a significant attack against Bulawayo even though more than 10,000 Matabele warriors could be seen near the town.\" The company rule the second rising was against is what the first war established.",
+  "dispute": null
+}

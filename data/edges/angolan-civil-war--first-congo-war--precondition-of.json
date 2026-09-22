@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "angolan-civil-war--first-congo-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Congo War\", revision 1374918500, § Angola"
+    }
+  ],
+  "from": "angolan-civil-war",
+  "to": "first-congo-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article gives Angola's reason for joining in its own words: **\"Angola chose to participate in the First Congo War because members of Mobutu's government were directly involved in supplying the Angolan rebel group, UNITA\"**, and \"Angola entered the war on the side of the rebels and was determined to overthrow the Mobutu government, which it saw as the only way to address the threat posed by the Zairian-UNITA relationship\". Luanda deployed regular troops and acted through the Katangese Tigres. Without a war against UNITA at home there is no Angolan reason to be in Zaire, which is what the article says.",
+  "dispute": null
+}

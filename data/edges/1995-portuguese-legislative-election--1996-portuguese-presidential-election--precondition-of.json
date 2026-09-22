@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1995-portuguese-legislative-election--1996-portuguese-presidential-election--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1996 Portuguese presidential election\", revision 1371811573, § lead"
+    }
+  ],
+  "from": "1995-portuguese-legislative-election",
+  "to": "1996-portuguese-presidential-election",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article sets the contest against the legislative result of the year before: the Social Democrats \"were coming from a clear defeat in the 1995 Portuguese legislative election\", and their former leader Aníbal Cavaco Silva, ten years prime minister, ran against the mayor of Lisbon Jorge Sampaio — a rematch of the legislative election of 1991. Sampaio won with nearly 54 per cent. The article gives the defeat as the position the right went in from and does not make it the cause of the outcome.",
+  "dispute": null
+}

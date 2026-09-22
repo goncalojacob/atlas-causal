@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "franco-thai-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q780845",
+  "wikipedia": {
+    "en": "Franco-Thai War",
+    "pt": "Guerra Franco-Tailandesa"
+  },
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-09-21"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q780845"
+    }
+  ],
+  "title": "Franco-Thai War",
+  "summary": "Wikidata item Q780845, imported by tools/import/wikidata.mjs. The item's own description reads \"war between Thailand and Vichy France (1940-1941)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1940,
+    "end": 1941,
+    "date": "1940-10",
+    "endDate": "1941-05-09"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "world-war-ii",
+  "category": "war",
+  "actors": []
+}

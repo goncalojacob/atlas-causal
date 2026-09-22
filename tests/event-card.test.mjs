@@ -88,14 +88,20 @@ test('the head carries the actors as chips, with the role in the title attribute
 test('the sections count what the spine and the sources index actually hold', () => {
   const html = eventCardHtml(context(atlas), { event: carnation, found, state: state() });
   assert.deepEqual(keys(html), ['consequences', 'causes', 'sources', 'part-of']);
-  assert.equal(section(html, 'consequences').count, '9');
-  assert.equal(section(html, 'causes').count, '7');
-  assert.equal(section(html, 'sources').count, '2');
-  // The same numbers, straight from the data this card was given.
+  // The numbers are read off the data this card was given, not typed here.
+  // What the test is for is the correspondence — the header prints what the
+  // topology and the sources index hold at the moment of drawing — and a
+  // typed literal is not that: M42 wrote one more edge into the Carnation
+  // revolution and turned a passing assertion of "7" into a red one without
+  // anything about the card changing (deviation 976's shape, a second time).
   const active = (list) => list.length;
-  assert.equal(active(atlas.adjacency.out.get(carnation.id)), 9);
-  assert.equal(active(atlas.adjacency.in.get(carnation.id)), 7);
-  assert.equal(atlas.citationCount('event', carnation.id), 2);
+  const out = active(atlas.adjacency.out.get(carnation.id));
+  const into = active(atlas.adjacency.in.get(carnation.id));
+  const cited = atlas.citationCount('event', carnation.id);
+  assert.ok(out > 0 && into > 0 && cited > 0, 'the record this card is drawn from still has all three');
+  assert.equal(section(html, 'consequences').count, String(out));
+  assert.equal(section(html, 'causes').count, String(into));
+  assert.equal(section(html, 'sources').count, String(cited));
 });
 
 test('other branches is there only while a path is being walked', () => {

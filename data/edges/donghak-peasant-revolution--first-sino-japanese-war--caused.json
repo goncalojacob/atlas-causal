@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "donghak-peasant-revolution--first-sino-japanese-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tonghak Peasant Revolution\", revision 1375257262, § lead and § Siege of Jeonju Fortress"
+    }
+  ],
+  "from": "donghak-peasant-revolution",
+  "to": "first-sino-japanese-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article says the alarmed Joseon government asked the Qing dynasty for military intervention against the rebellion, that the Qing deployed 2,700 soldiers, and that Japan — angered that the Qing had not notified it beforehand as the Convention of Tientsin promised — started the First Sino-Japanese War. The account of the siege of Jeonju repeats it: on 3 May 1,500 Qing troops and 6,000 Japanese troops landed at Incheon the same day, and the Japanese question about the Convention of Tientsin \"soon caused the First Sino-Japanese War\".",
+  "dispute": null
+}

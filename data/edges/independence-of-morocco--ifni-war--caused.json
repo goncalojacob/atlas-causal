@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "independence-of-morocco--ifni-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ifni War\", revision 1370623332, § lead"
+    }
+  ],
+  "from": "independence-of-morocco",
+  "to": "ifni-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article of the war argues it straight out of the independence: \"The city of Sidi Ifni had been ceded to the Spanish Empire in 1860 at the end of the Hispano-Moroccan War. After Morocco achieved independence in 1956, it sought to claim Spain's remaining possessions in West Africa. Violent demonstrations against Spanish rule broke out in Ifni in April 1957, and in October Moroccan militias began converging near the territory.\" Eleven months separate the independence of November 1956 from the incursions of October 1957.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "first-franco-dahomean-war--second-franco-dahomean-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Franco-Dahomean War\", revision 1370736974, § Background"
+    }
+  ],
+  "from": "first-franco-dahomean-war",
+  "to": "second-franco-dahomean-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The second war’s § Background is the first war and what it left standing: “In 1890, the Kingdom of Dahomey and France had gone to war in what is referred to as the First Franco-Dahomean War over the former’s rights to certain territories, specifically those in the Ouémé Valley. The Fon ceased hostilities with the French after two military defeats, withdrawing their forces and signing a treaty conceding to all French demands. However, Dahomey remained a potent force in the area and quickly re-armed with modern weapons in anticipation of a second, decisive conflict.” The first war’s own article ends on the same sentence from the other side.",
+  "dispute": null
+}

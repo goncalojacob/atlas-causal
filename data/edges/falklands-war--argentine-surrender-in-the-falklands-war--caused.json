@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "falklands-war--argentine-surrender-in-the-falklands-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Falklands War\", revision 1375590484, § lead"
+    }
+  ],
+  "from": "falklands-war",
+  "to": "argentine-surrender-in-the-falklands-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The war’s own article dates its end by this surrender: “The conflict lasted 74 days and ended with an Argentine surrender on 14 June, which formally returned possession to Britain.” A war lost is what a capitulation is the end of, and the record is filed inside the war as well. The confidence is `probable` on one encyclopedia citation, as rule 22 requires.",
+  "dispute": null
+}

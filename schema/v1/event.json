@@ -58,10 +58,14 @@
       ]
     },
     "parent": {
-      "description": "The larger event this one is part of: a battle inside a war, a decree inside a revolution. One parent, so the events form a tree; that it resolves to an active event and that the tree has no cycle is rule 24, and a child dated outside its parent is a warning. It is a display fact and never an argument: `parent` does not enter the adjacency, so consequences, ancestors, convergence and the horizon stay edge-only (plan decision 4).",
+      "description": "The larger event or events this one is part of: a battle inside a war, a decree inside a revolution, an independence inside both a regime at home and a movement across a continent. One id, a list of ids, or null; one parent is a list of one, and `parentsOf()` in src/parts.js is the one place any of the three shapes is read (M79). Rule 24 applies per parent — each resolves to an active event, no path of `part of` closes on itself, and the same parent twice or itself is an error — and a child dated outside any one of its parents is a warning naming which. It is a display fact and never an argument: `parent` does not enter the adjacency, so consequences, ancestors, convergence and the horizon stay edge-only (plan decision 4).",
       "oneOf": [
         { "type": "null" },
-        { "$ref": "../common/provenance.json#/properties/id" }
+        { "$ref": "../common/provenance.json#/properties/id" },
+        {
+          "type": "array",
+          "items": { "$ref": "../common/provenance.json#/properties/id" }
+        }
       ]
     },
     "scope": {

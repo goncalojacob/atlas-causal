@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "war-in-afghanistan-2001-2021--insurgency-in-khyber-pakhtunkhwa--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Insurgency in Khyber Pakhtunkhwa\", revision 1374407113, § infobox and lead"
+    }
+  ],
+  "from": "war-in-afghanistan-2001-2021",
+  "to": "insurgency-in-khyber-pakhtunkhwa",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article's infobox calls the insurgency \"the war on terror and the **spillover of the War in Afghanistan (2001–2021)**\", and its lead names the trigger: \"the armed conflict began in 2004 when tensions rooted in the Pakistan Army's search for Al-Qaeda fighters in its mountainous Waziristan region escalated into large-scale armed resistance\", with Pakistan's actions \"presented as its contribution to the U.S. war on terror\". The Costs of War paper the article cites for its casualty figures states the same beginning: \"the war in Pakistan, which began as Al Qaeda and the Taliban fled from Afghanistan into the northwest region of Pakistan in 2001\".",
+  "dispute": null
+}

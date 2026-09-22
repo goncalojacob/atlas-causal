@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-of-nice--treaty-establishing-a-constitution-for-europe--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Lisbon\", revision 1366118806, § Background"
+    }
+  ],
+  "from": "treaty-of-nice",
+  "to": "treaty-establishing-a-constitution-for-europe",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the treaty that replaced it draws the line from Nice: \"The need to review the EU’s constitutional framework, particularly in light of the accession of ten new Member States in 2004, was highlighted in a declaration annexed to the Treaty of Nice in 2001\", and the agreements at Nice \"had paved the way for further enlargement of the Union by reforming voting procedures\". The Laeken declaration of December 2001 followed and set out the process by which a constitution was to be drafted. What is claimed is that Nice left the question open and named it, not that Nice caused the constitutional treaty.",
+  "dispute": null
+}

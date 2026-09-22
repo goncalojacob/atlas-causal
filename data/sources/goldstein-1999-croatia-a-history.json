@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "goldstein-1999-croatia-a-history",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m42-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "Ivo Goldstein"
+  ],
+  "title": "Croatia: A History",
+  "year": 1999,
+  "publisher": "C. Hurst & Co.",
+  "isbn": "9781850655251",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "container": null,
+  "repository": null,
+  "reference": null
+}

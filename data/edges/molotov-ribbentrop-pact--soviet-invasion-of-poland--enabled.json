@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "molotov-ribbentrop-pact--soviet-invasion-of-poland--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet invasion of Poland\", revision 1375354648, lead"
+    }
+  ],
+  "from": "molotov-ribbentrop-pact",
+  "to": "soviet-invasion-of-poland",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The invasion’s own lead names the pact as what stood behind it: “The Soviet invasion of Poland was indirectly indicated in the ‘secret protocol’ of the Molotov–Ribbentrop Pact signed on 23 August 1939, which divided Poland into ‘spheres of influence’ of the two powers.” `enabled` and not `caused`: the protocol assigned the eastern half of Poland to the Soviet Union and so made the march in of 17 September possible without a German war, which is what an agreement between the two powers could do and what it could not do is order it.",
+  "dispute": null
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "tunisian-revolution--2011-yemeni-revolution--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Arab Spring\", revision 1373656404, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Yemeni revolution\", revision 1375746838, § lead"
+    }
+  ],
+  "from": "tunisian-revolution",
+  "to": "2011-yemeni-revolution",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The Arab Spring's article names Yemen among the five countries the protests reached from Tunisia: “It began in Tunisia in response to the death of Mohamed Bouazizi by self-immolation. From Tunisia, the protests initially spread to five other countries: Libya, Egypt, Yemen, Syria and Bahrain.” Yemen's own article is more cautious and the caution is worth keeping: it says the uprising “occurred concurrently with the Arab Spring that broke out throughout the Middle East and North Africa in 2011”, and gives its early grievances as unemployment, economic conditions, corruption and a constitutional amendment. Concurrence is not inheritance, which is why this is `inspired` and `probable` rather than anything firmer.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "trout-1969-moroccos-saharan-frontiers",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m42-second-source"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "type": "book",
+  "creators": [
+    "Frank E. Trout"
+  ],
+  "title": "Morocco's Saharan Frontiers",
+  "year": 1969,
+  "publisher": "Librairie Droz",
+  "isbn": "9782600044950",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "container": null,
+  "repository": null,
+  "reference": null
+}

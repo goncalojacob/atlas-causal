@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "philippine-revolution--philippine-american-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Philippine–American War\", revision 1372638665, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Philippine Revolution\", revision 1375892184, § lead"
+    }
+  ],
+  "from": "philippine-revolution",
+  "to": "philippine-american-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the war says it emerged in early 1899 following the American annexation of the islands, and that Philippine nationalists \"had proclaimed independence in June 1898 and constituted the First Philippine Republic in January 1899\" — neither of which the United States recognised as legitimate, tensions escalating until fighting began at Manila on 4 February. The republic the Americans refused to recognise is what the revolution of 1896 had made; that is the precondition claimed here, and nothing more.",
+  "dispute": null
+}

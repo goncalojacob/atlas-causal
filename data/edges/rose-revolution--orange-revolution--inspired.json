@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "rose-revolution--orange-revolution--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rose Revolution\", revision 1375844898, § International effects"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Orange Revolution\", revision 1374383386, § U.S. involvement in the revolution"
+    }
+  ],
+  "from": "rose-revolution",
+  "to": "orange-revolution",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The English article on the Georgian revolution says plainly that the Orange Revolution, which followed the disputed Ukrainian presidential election of November 2004, \"is said to have been partly inspired by the Georgian Rose Revolution\". The article on the Ukrainian one carries the contemporary version of the same observation, an editorial of February 2004 arguing that Ukraine offered the best chance to build on the Georgian success and that the democratic opposition’s actions were inspired by Georgia and Serbia. The type is `inspired` because that is the whole of the claim: example and not cause.",
+  "dispute": null
+}

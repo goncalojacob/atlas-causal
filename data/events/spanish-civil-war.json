@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-17",
+  "revised": "2026-09-21",
   "origin": {
     "tool": "wikidata"
   },
@@ -69,6 +69,7 @@
   },
   "place": null,
   "region": "europe",
+  "parent": "interwar-period",
   "actors": [
     {
       "actor": "spain",

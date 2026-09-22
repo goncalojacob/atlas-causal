@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2011-south-sudanese-independence-referendum--south-sudanese-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"South Sudanese Civil War\", revision 1374713494, § Previous rebellions"
+    }
+  ],
+  "from": "2011-south-sudanese-independence-referendum",
+  "to": "south-sudanese-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the civil war says the Comprehensive Peace Agreement of 2005 created a Southern Sudan Autonomous Region run by the SPLM with a promise of a referendum on independence in 2011, and that **during the six years of autonomy the desire for independence kept the in-fighting within the SPLM in check**; in the referendum 98 per cent voted for independence and South Sudan became a state on 9 July 2011. The war broke out in December 2013 between the SPLM and the SPLM-IO. The article names what the referendum removed and does not call it the cause, which is why this is a precondition.",
+  "dispute": null
+}

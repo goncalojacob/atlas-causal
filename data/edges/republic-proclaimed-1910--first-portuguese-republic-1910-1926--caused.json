@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "republic-proclaimed-1910--first-portuguese-republic-1910-1926--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Portuguese Republic\", revision 1370244290, § lead"
+    }
+  ],
+  "from": "republic-proclaimed-1910",
+  "to": "first-portuguese-republic-1910-1926",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the First Republic bounds it by the two events: it spans the sixteen years between the end of the constitutional monarchy marked by the 5 October 1910 revolution and the 28 May 1926 coup d’état.",
+  "dispute": null
+}

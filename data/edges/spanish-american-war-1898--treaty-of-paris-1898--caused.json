@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "spanish-american-war-1898--treaty-of-paris-1898--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Paris (1898)\", revision 1375676698, § lead"
+    }
+  ],
+  "from": "spanish-american-war-1898",
+  "to": "treaty-of-paris-1898",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article opens by saying the treaty was signed by Spain and the United States on 10 December 1898 and marked the official end of the Spanish–American War, and that under it Spain relinquished sovereignty over Cuba, Puerto Rico, Guam and the Philippines, the cession of the Philippines involving a payment of twenty million dollars. A peace treaty caused by the war it ends is the plainest case the atlas holds of this edge type.",
+  "dispute": null
+}

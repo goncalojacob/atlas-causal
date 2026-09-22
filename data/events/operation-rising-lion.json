@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "operation-rising-lion",
+  "kind": "event",
+  "status": "retracted",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": "2026-09-21",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q134884640",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "June 2025 Israeli strikes on Iran",
+    "pt": "Ataques de Israel contra o Irã em junho de 2025"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q134884640"
+    }
+  ],
+  "title": "Operation Rising Lion",
+  "summary": "Wikidata item Q134884640, imported by tools/import/wikidata.mjs. The item's own description reads \"Israeli surprise attack on Iran beginning on 13 June 2025\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2025,
+    "end": 2025,
+    "date": "2025-06"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "retraction": {
+    "on": "2026-09-21",
+    "reason": "Retracted in M42 batch 8 under brief §1: the atlas already holds the thing this record is part of. Its English sitelink redirects to \"List of attacks during the Twelve-Day War\", a section of a list rather than an article of its own, and the Twelve-Day War is `twelve-day-war`, Q134900605, active here with the same month. A section of a list about a war this atlas already draws is not a second record."
+  }
+}

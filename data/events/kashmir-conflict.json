@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "kashmir-conflict",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,40 +13,41 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A. The conflict argues to the Indo-Pakistani wars, one of which is a record here and reaches no Portuguese event, and to the partition of India, which is not. The one place where India and Portugal meet in this atlas is Goa in 1961, and the claim that would join them — that Nehru’s success in Goa emboldened the forward policy on the Chinese border — is contested, and no source this atlas holds carries it. Rather than write a disputed edge from a source nobody here has read, the record is withdrawn."
-  },
+  "revised": "2026-09-21",
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q1413732",
-  "sitelinks": {
-    "count": 56,
-    "on": "2026-09-15"
-  },
   "wikipedia": {
     "en": "Kashmir conflict",
     "pt": "Conflito na Caxemira"
+  },
+  "sitelinks": {
+    "count": 56,
+    "on": "2026-09-15"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q1413732"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kashmir conflict\", revision 1374133428, lead"
     }
   ],
   "title": "Kashmir conflict",
   "summary": "Wikidata item Q1413732, imported by tools/import/wikidata.mjs. The item's own description reads \"Territoral dispute in South Asia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1947,
-    "end": 1947
+    "end": null
   },
   "place": null,
   "region": "asia",

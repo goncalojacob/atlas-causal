@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "2008-kosovo-declaration-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q861510",
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "2008 Kosovo declaration of independence",
+    "pt": "Independência do Kosovo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q861510"
+    }
+  ],
+  "title": "2008 Kosovo declaration of independence",
+  "summary": "Wikidata item Q861510, imported by tools/import/wikidata.mjs. The item's own description reads \"declaration of independence for Kosovo\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2008,
+    "end": 2008,
+    "date": "2008-02-17"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "founding",
+  "actors": []
+}

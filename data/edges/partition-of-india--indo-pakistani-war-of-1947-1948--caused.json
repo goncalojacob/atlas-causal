@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "partition-of-india--indo-pakistani-war-of-1947-1948--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"India–Pakistan war of 1947–1948\", revision 1373782125, § lead"
+    }
+  ],
+  "from": "partition-of-india",
+  "to": "indo-pakistani-war-of-1947-1948",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article says the war was the first of the India–Pakistan wars between the two newly independent nations, both dominions within the British Commonwealth, and that Pakistan precipitated it a few weeks after its independence by launching tribal militias from Waziristan to capture Kashmir and pre-empt the possibility of its ruler joining India. The princely state's choice was open because the partition had released the states from their obligations to the British.",
+  "dispute": null
+}

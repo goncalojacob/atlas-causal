@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "first-sudanese-civil-war--second-sudanese-civil-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Sudanese Civil War\", revision 1375454294, § lead and § Impact"
+    }
+  ],
+  "from": "first-sudanese-civil-war",
+  "to": "second-sudanese-civil-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article says the Addis Ababa Agreement ended the war in 1972 but \"failed to completely dispel the tensions and addressed only some of the issues stated by southern Sudan\", and that \"the breakdown of the initial appeasement later led to a reigniting of the north–south conflict during the Second Sudanese Civil War\". Its account of the aftermath repeats it: infringements by the north increased social unrest in the south in the mid-1970s, leading to the 1983 army mutiny that sparked the second war.",
+  "dispute": null
+}

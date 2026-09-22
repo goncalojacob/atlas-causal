@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "german-polish-declaration-of-non-aggression--baltic-entente--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Baltic Entente\", revision 1363789006, § Formation"
+    }
+  ],
+  "from": "german-polish-declaration-of-non-aggression",
+  "to": "baltic-entente",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article names the obstacle and what removed it: the union was wanted from 1918 but \"it was not until 1934 that establishing the union was possible. Lithuania remained reluctant to the idea because its international political strategy contradicted those of Latvia and Estonia. While Latvia and Estonia saw Germany and the Soviet Union as the primary dangers, Lithuania sought to ally with those states. **However, in 1934, the Soviet–Polish Non-Aggression Pact and the German–Polish Non-Aggression Pact both resulted in the collapse of the Lithuanian foreign policy and forced a change of position.**\" The German–Polish declaration of 26 January 1934 is one of the two the sentence names; the atlas does not hold the other. The entente followed on 12 September of the same year.",
+  "dispute": null
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "bulgarian-declaration-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1628090",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "Bulgarian Declaration of Independence",
+    "pt": "Independência da Bulgária"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1628090"
+    }
+  ],
+  "title": "Bulgarian Declaration of Independence",
+  "summary": "Wikidata item Q1628090, imported by tools/import/wikidata.mjs. The item's own description reads \"Declaration of Independence of a Country\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1908,
+    "end": 1908,
+    "date": "1908-09-22"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "founding",
+  "actors": []
+}

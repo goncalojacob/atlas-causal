@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1982-lebanon-war--mountain-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mountain War (Lebanon)\", revision 1371504591, § Background"
+    }
+  ],
+  "from": "1982-lebanon-war",
+  "to": "mountain-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Chouf fighting’s own Background begins with the invasion: “In the wake of the June 1982 Israeli invasion of Lebanon, the main Maronite Christian ally of Israel, the Lebanese Forces (LF) militia … sought to expand its area of influence in Lebanon. The LF tried to take advantage of Israel Defense Forces (IDF) advances to begin deploying troops in areas where they had not been present before … With the tacit backing of the IDF, Lebanese Forces’ units … moved into the Christian-populated areas of the western Chouf … However, this brought them into confrontation with the local Druze community, who viewed the LF as intruders on their territory.” `enabled`: the invasion is what put the Lebanese Forces on ground they had not held, and the confrontation there is this war.",
+  "dispute": null
+}

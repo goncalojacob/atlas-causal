@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "miroiu-alecu-2024-mali-conflict",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "type": "article",
+  "creators": [
+    "Andrei Miroiu",
+    "Ana Raluca Alecu"
+  ],
+  "title": "Mali: Conflict, Social Order and the Crime-Terror Nexus",
+  "year": 2024,
+  "publisher": null,
+  "isbn": null,
+  "doi": "10.24193/csq.48.4",
+  "url": null,
+  "accessed": null,
+  "container": {
+    "title": "Conflict Studies Quarterly",
+    "kind": "journal",
+    "issue": "48",
+    "pages": "58-71"
+  },
+  "repository": null,
+  "reference": null
+}

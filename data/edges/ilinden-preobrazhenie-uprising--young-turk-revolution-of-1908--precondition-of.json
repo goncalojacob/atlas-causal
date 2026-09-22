@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ilinden-preobrazhenie-uprising--young-turk-revolution-of-1908--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Young Turk Revolution\", revision 1372902192, § Situation in Ottoman Macedonia"
+    }
+  ],
+  "from": "ilinden-preobrazhenie-uprising",
+  "to": "young-turk-revolution-of-1908",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the revolution draws the line the atlas could not read before: \"In response to the Ilinden Uprising of 1903, the Ottoman Empire capitulated to international pressure to implement reforms in Macedonia, known as the Mürzsteg program, under Great Power supervision, offending Muslims living in Macedonia and especially army officers.\" Those officers are the ones the article then describes making the revolution out of the Salonica-based Third Army. The claim is the article’s and it is narrow: the rising produced the foreign supervision the officers resented, not the revolution itself.",
+  "dispute": null
+}

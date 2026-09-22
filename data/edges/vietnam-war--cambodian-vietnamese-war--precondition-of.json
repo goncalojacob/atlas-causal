@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "vietnam-war--cambodian-vietnamese-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cambodian–Vietnamese War\", revision 1375855358, § Vietnam War and § Rise of communism"
+    }
+  ],
+  "from": "vietnam-war",
+  "to": "cambodian-vietnamese-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article argues the war out of the alliance that preceded it: during the Vietnam War the Vietnamese and Cambodian communists \"again had formed an alliance to fight anti-communist regimes in their respective countries\", the Vietnamese used Cambodian territory as a transport route and staging area for attacks on South Vietnam, both took power in April 1975 as the war ended, and the Khmer Rouge — fearing a Vietnamese-dominated Indochinese federation — began purging Vietnamese-trained personnel and attacking southern Vietnam in May 1975.",
+  "dispute": null
+}

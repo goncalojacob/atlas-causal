@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "third-portuguese-republic-since-1974",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m42-umbrella",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q1259200",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "Third Portuguese Republic",
+    "pt": "Terceira República Portuguesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1259200"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third Portuguese Republic\", revision 1374733623"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Terceira República Portuguesa\", revision 72175624"
+    }
+  ],
+  "title": "The Third Portuguese Republic",
+  "summary": "The democratic republic installed after the Carnation Revolution of 25 April 1974, which the article this record takes its span from calls the current period in the history of Portugal. Its Wikidata item describes it the same way: the period since the Carnation Revolution on 25 April 1974. The article's own account of it is a beginning of instability and the threat of civil war, a new constitution, the end of censorship, the release of political prisoners, the closing of the Estado Novo's institutions, independence for the African colonies and a democratisation that ends in accession to the EEC in 1986. The record exists so that fifty years of Portuguese elections, governments, referendums, bailouts and crises can be read as one period rather than as sixty peers of everything else on the timeline. It is a period and not an argument: nothing is claimed here about what caused what, and the revolution that began it is not part of it.",
+  "when": {
+    "start": 1974,
+    "end": null,
+    "date": "1974-04-25",
+    "calendar": "gregorian"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "A republic has no single point on the map, so the lane is given rather than derived: Portugal's.",
+  "actors": [
+    {
+      "actor": "third-portuguese-republic",
+      "role": "government"
+    }
+  ]
+}

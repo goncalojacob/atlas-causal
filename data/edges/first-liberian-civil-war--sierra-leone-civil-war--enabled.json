@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "first-liberian-civil-war--sierra-leone-civil-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sierra Leone Civil War\", revision 1375466974, § lead and § Background"
+    },
+    {
+      "source": "gberie-2005-dirty-war-west-africa",
+      "locator": "p. 56; the work the article hangs this sentence on"
+    }
+  ],
+  "from": "first-liberian-civil-war",
+  "to": "sierra-leone-civil-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English article on the Sierra Leonean war gives the Liberian war as the source of both its sponsor and its manpower: the RUF began \"with support from the special forces of Liberian dictator Charles Taylor, the National Patriotic Front of Liberia (NPFL)\", and \"As a result of the First Liberian Civil War, 80,000 refugees fled neighboring Liberia for the Sierra Leone – Liberian border... [they] helped provide the manpower for the RUF’s insurgency.\"",
+  "dispute": null
+}

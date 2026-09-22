@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "montreux-convention",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,28 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class B. The honest edge is to the treaty of Lausanne, whose straits regime Montreux revised, and Lausanne reaches no Portuguese event at all; the Turkish cluster in this atlas — Sèvres, the war of independence, Lausanne — is joined to the rest of it only through the Sèvres edge this round wrote, which leaves Montreux at four hops. The straits question at Potsdam would be the other route and the atlas records nothing of it."
-  },
+  "revised": "2026-09-21",
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
-    ]
+      "m42-reinstated"
+    ],
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q869500",
-  "sitelinks": {
-    "count": 35,
-    "on": "2026-09-15"
-  },
   "wikipedia": {
     "en": "Montreux Convention Regarding the Regime of the Straits",
     "pt": "Convenção de Montreux"
+  },
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-09-15"
   },
   "sources": [
     {

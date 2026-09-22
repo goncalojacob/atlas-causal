@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "kosovo-war--2008-kosovo-declaration-of-independence--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2008 Kosovo declaration of independence\", revision 1368774231, § Build-up and § Political background"
+    }
+  ],
+  "from": "kosovo-war",
+  "to": "2008-kosovo-declaration-of-independence",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article says that after the end of the Kosovo War in 1999 the Security Council adopted Resolution 1244, which placed Kosovo under transitional United Nations administration, demanded the withdrawal of Serbian security forces and \"envisioned an eventual UN-facilitated political process to resolve the status of Kosovo\"; and that international negotiations on the final status began in 2006 \"as envisaged under UN Security Council Resolution 1244 which ended the Kosovo conflict of 1999\". The declaration of 17 February 2008 is the end of that process.",
+  "dispute": null
+}

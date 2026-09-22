@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nova-republica-brazil-since-1985",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m42-umbrella",
+      "summary-drafted"
+    ]
+  },
+  "wikidata": "Q2920526",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-21"
+  },
+  "wikipedia": {
+    "en": "History of Brazil (1985–present)",
+    "pt": "Nova República"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2920526"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"History of Brazil (1985–present)\", revision 1371710443"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Nova República\", revision 72521647"
+    }
+  ],
+  "title": "The Nova República",
+  "summary": "The civilian republic Brazil has been under since 1985, which the article this record takes its span from opens by calling “Brazilian history from 1985 to the present, also known as the Sixth Brazilian Republic or New Republic … the contemporary epoch in the history of Brazil, beginning when civilian government was restored after a 21-year-long military dictatorship established after the 1964 coup d’état”. The Portuguese article carries the name the period is known by, Nova República. Its own account is the indirect election of Tancredo Neves, his death before taking office, the transitional presidency of José Sarney, the constitution of 1988, the first direct election in 1989 and the eight presidential terms since, “without rupture to the constitutional order”. The record exists so that forty years of Brazilian constitutions, elections, impeachments and crises can be read as one period rather than as peers of everything else on the timeline; it is the fourth of the Brazilian periods this atlas holds, after the empire, the Vargas era and the military dictatorship. It is a period and not an argument: nothing is claimed here about what caused what. No day is given because neither the item nor the article gives one — both say 1985, and the article dates the phase to “the inauguration of José Sarney in 1985” without naming its date.",
+  "when": {
+    "start": 1985,
+    "end": null,
+    "calendar": "gregorian"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "A republic has no single point on the map, so the lane is given rather than derived: Brazil’s.",
+  "actors": [
+    {
+      "actor": "brazil",
+      "role": "government"
+    }
+  ]
+}

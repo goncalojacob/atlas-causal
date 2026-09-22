@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1964-brazilian-coup-detat--brazilian-military-dictatorship-1964-1985--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Military dictatorship in Brazil\", revision 1373177216, § lead"
+    }
+  ],
+  "from": "1964-brazilian-coup-detat",
+  "to": "brazilian-military-dictatorship-1964-1985",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the dictatorship dates it from the coup: it was established on 1 April 1964, after a coup d’état by the Brazilian Armed Forces with support from the United States government against President João Goulart, and lasted twenty-one years, until 15 March 1985.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1948-arab-israeli-war--war-over-water--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War over Water (Jordan River)\", revision 1370750282, § History"
+    }
+  ],
+  "from": "1948-arab-israeli-war",
+  "to": "war-over-water",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The confrontations’ own article opens its history with this war: “Following the 1948 Arab–Israeli War, the 1949 Armistice Agreements created three demilitarized zones on the Israel-Syria border. The southernmost, and also the largest, stretched from the south-eastern part of the Sea of Galilee eastwards to the Yarmuk River … The issue of water sharing from the Jordan–Yarmuk system turned out to be a major problem between Israel, Syria and Jordan.” The armistice that ended the war is what drew the ground the water was fought over, and the article says the small-scale skirmishes began with those agreements. `precondition-of` and not `caused`: the source makes the war the origin of the line, not of the fight.",
+  "dispute": null
+}

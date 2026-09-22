@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "vietnam-war--cambodian-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cambodian Civil War\", revision 1375075951, § lead"
+    },
+    {
+      "source": "isaacs-hardy-1988-pawns-of-war",
+      "locator": "p. 90"
+    }
+  ],
+  "from": "vietnam-war",
+  "to": "cambodian-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article says outright that \"the conflict was part of the Vietnam War\", and then says how the war reached Cambodia: \"The North Vietnamese People's Army of Vietnam (PAVN) was involved to protect its bases in eastern Cambodia, which were crucial to its military effort in South Vietnam. This presence was initially tolerated by Prince Norodom Sihanouk, the Cambodian head of state, but domestic resistance combined with China and North Vietnam aiding the anti-government Khmer Rouge caused him to request help from the Soviet Union to stop this.\" It hangs that sentence on Isaacs and Hardy, p. 90. The coup of March 1970 followed \"wide scale protests in the capital against the PAVN presence in the country\", and when the new government demanded the PAVN leave, \"they refused and, at the request of the Khmer Rouge, invaded Cambodia\".",
+  "dispute": null
+}

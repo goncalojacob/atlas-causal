@@ -17,10 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-05",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-21",
   "review": {
     "status": "draft",
     "flags": [
@@ -28,14 +25,17 @@
       "summary-drafted"
     ]
   },
-  "wikidata": "Q124086054",
-  "sitelinks": {
-    "count": 87,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q124086054",
   "wikipedia": {
     "en": "Gaza genocide",
     "pt": "Genocídio na Faixa de Gaza"
+  },
+  "sitelinks": {
+    "count": 87,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -60,6 +60,7 @@
   },
   "place": null,
   "region": "asia",
+  "parent": "gaza-war",
   "actors": [
     {
       "actor": "israel",

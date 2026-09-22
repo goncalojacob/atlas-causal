@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "first-sino-japanese-war--russo-japanese-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Japanese War\", revision 1375146144, § lead"
+    }
+  ],
+  "from": "first-sino-japanese-war",
+  "to": "russo-japanese-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the Russo-Japanese war puts the First Sino-Japanese war at the head of its own account: at the end of that war the Treaty of Shimonoseki of 1895 had ceded the Liaodong Peninsula and Port Arthur to Japan before the Triple Intervention, in which Russia, Germany and France forced Japan to relinquish the claim. Japan then feared that Russia would impede its plans to establish a sphere of influence in mainland Asia, especially as Russia built the Trans-Siberian Railroad, made inroads in Korea, and acquired a lease of the Liaodong Peninsula and Port Arthur from China in 1898 — the rivalry over Manchuria and Korea the article says the war of 1904 was fought over.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-i--chilembwe-uprising--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chilembwe uprising\", revision 1375916516, § lead"
+    }
+  ],
+  "from": "world-war-i",
+  "to": "chilembwe-uprising",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The uprising’s article lists what the rebels were answering and puts the war among it: they “were motivated by grievances against the British colonial system, which included forced labour, racial discrimination and new demands imposed on the African population following the outbreak of World War I.” The war is one grievance of three the article names and not the whole of the case, so the type is `precondition-of` and the confidence `probable`. **The record is also filed inside the war**, which says when it happened; this says what the war contributed to it.",
+  "dispute": null
+}

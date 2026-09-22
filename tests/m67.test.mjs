@@ -34,8 +34,17 @@ const UMBRELLA_FLAG = 'm67-umbrella';
 
 // The measurement is a later commit than this file, and a missing document is
 // a failing assertion rather than a suite that cannot be loaded.
-const docPath = path.join(ROOT, DOC);
-const doc = existsSync(docPath) ? await readFile(docPath, 'utf8') : '';
+// Read with the later measurements beside it, for the reason `tests/m62.test.mjs`
+// gives at the same place: the arguments for a filing and for a main event
+// left bare are written by whichever milestone made them, and asserting that
+// one file holds all of them would stop any later run adding a record at all.
+// The property is unchanged — **a filing or a bare main event nobody argued in
+// writing fails.**
+const ARGUED_IN = [DOC, 'docs/m42-connections.md'];
+const doc = (await Promise.all(ARGUED_IN.map(async (f) => {
+  const at = path.join(ROOT, f);
+  return existsSync(at) ? readFile(at, 'utf8') : '';
+}))).join('\n');
 
 const readDir = async (kind) => {
   const dir = path.join(ROOT, 'data', kind);

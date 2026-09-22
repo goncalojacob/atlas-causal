@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "moscow-peace-treaty--continuation-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Continuation War\", revision 1375847616, § lead"
+    }
+  ],
+  "from": "moscow-peace-treaty",
+  "to": "continuation-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the Continuation War says the Soviet Union and Finland had previously fought the Winter War, which ended with the Moscow Peace Treaty, and that numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. The article names other proposed motives beside it — Ryti's Greater Finland and Mannerheim's wish to annex East Karelia — so the treaty is where the article starts and not the whole of what it says decided the war.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "wall-street-crash-of-1929--siamese-revolution-of-1932--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-21",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siamese revolution of 1932\", revision 1370738350, § Discontent from the economic crisis"
+    }
+  ],
+  "from": "wall-street-crash-of-1929",
+  "to": "siamese-revolution-of-1932",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article names the crash and traces it to the men who made the coup: \"In 1930, as the Wall Street Crash and the economic meltdown reached Siam. Prajadhipok proposed the levying of general income taxes and property taxes to help alleviate the sufferings of the poor. These were rejected by the Supreme Council, who feared their fortunes would be reduced. Instead, they cut civil service payrolls and reduced the military budget, angering most of the country's educated elite. The officer corps was especially disgruntled.\" Its lead counts the same cause: \"Dissatisfaction caused by economic crisis and incompetent government, as well as the rise of Western-educated non-royals to positions of influence, fueled the revolution.\"",
+  "dispute": null
+}
