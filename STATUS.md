@@ -19689,6 +19689,52 @@ cause rather than the symptom — see deviations 1174 and 1175.
       second place. A row that says "N" should be a row a fire re-took, and a
       fire that copies one forward should say it copied it.
 
+**M42 batch 37 — the joins, and the count amendment A3 asks for.** Five records
+imported, **five filed and none main**, so the main count comes out of the batch
+where it went in: **242**, with the corpus 678 → 683 and the filed count
+436 → 441. Eight edges, of which two run between records the atlas already held
+and needed no import at all. The **largest connected component 513 → 517**, the
+first four-node move of the milestone, and 131 components against 132.
+Per lane, active: Europe 314, Asia 125 → 126, **Africa 99 → 103**, the
+Americas 140; main unmoved in every one. The vein is new and it is why: the
+eight Wikidata properties that are already a causal claim, in place of `P361`.
+`docs/m42-pool.md` § "Batch 37" is the account and § "Where the run stands
+after batch 37" is what the next fire picks up.
+
+1206. **A refusal recorded as `done` is a refusal the state cannot retry.**
+      `Q49077`, the Six-Day War, had been walked by an earlier Wikidata import
+      and refused — at the time this atlas had no `middle-east` place record
+      for the item's `P276` and no lane reachable from it. `advance()` in
+      `tools/import/wikidata.mjs` writes **every** item of a batch into the
+      run's `done` list, whether it was created or refused, so the item could
+      not be offered again without editing `data/imports/wikidata-state.json`
+      by hand, which is what M42 batch 37 did. Deviation 1086 named this shape
+      for a class decision; this is the place half of it, and the general form
+      is that **the state records that an item was walked and not what
+      happened to it**. A refusal is a verdict about the atlas on the day it
+      was taken, and the atlas changes.
+
+1207. **A country is not a location, and the import's lane falls back to the
+      country.** Operation Barkhane is a French operation fought across Mali,
+      Burkina Faso, Chad, Mauritania and Niger: its `P276` is the Sahel and
+      its `P17` is France. With no place record for the Sahel yet, the import
+      walked `P276, P131, P17` looking for a point and the first one it could
+      reach was France's, so it wrote **`region: europe`** on an operation in
+      the Sahel. The order is right for a *place* and wrong for a *lane*: an
+      operation's country is **who sent it**, not where it happened. The fix
+      here was to write the place record A9's own rule asks for; the general
+      fix is that a lane derived from `P17` alone should say so or refuse.
+
+1208. **The vein decides the yield, not the reading.** Batches 32 to 36 of M42
+      read articles carefully and moved the largest connected component by two
+      across five batches. Batch 37 read no harder and moved it by four from
+      five records, because it asked Wikidata for the eight properties that
+      are *already* a causal claim — `P828`, `P1542`, `P1478`, `P1536`,
+      `P155`, `P156`, `P1479`, `P1534` — instead of for `P361`, the parts of
+      things. A part hangs from a parent and a parent takes no edge, so **the
+      parts vein files and the joins vein connects**. A run that wants chains
+      should know which question it is asking before it spends the reading.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
