@@ -23,13 +23,12 @@
 
 import { svg, svgTitle } from '../util/dom.js';
 import { formatInterval, formatYear } from '../util/dates.js';
-import { centuryCounts } from '../util/window.js';
+import { centuryCounts, WHEEL_FACTOR } from '../util/window.js';
 import { renderKey, shardsArrived } from '../render-key.js';
 import { labelOf, LOADING_LABEL } from '../attributes.js';
-import { convergence } from '../graph.js';
 import { EDGE_TYPE_IDS, EDGE_TYPE_LABEL } from '../vocab.js';
 import { CONFIDENCE_ORDER, CONFIDENCE_CLASS, bundleClass } from '../confidence.js';
-import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
+import { walkOrSelect } from '../chain.js';
 import { horizonBand } from '../horizon.js';
 import { workingSet, heldSet } from '../emphasis.js';
 import { isParent, ringClasses } from '../parts.js';
@@ -604,7 +603,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   root.addEventListener('wheel', (e) => {
     e.preventDefault();
     const [x, y] = toSvg(e);
-    const factor = Math.exp(-e.deltaY * 0.0015);
+    const factor = Math.exp(-e.deltaY * WHEEL_FACTOR);
     const k = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, transform.k * factor));
     const s = stretchStep(transform.s, factor);
     const across = (k * s) / (transform.k * transform.s);
@@ -872,22 +871,16 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // picture is a fourth reader of that function and not a fourth copy.
     // Once per state, because the arrangement had to ask for it too.
     const working = workingOf(s);
-    const chainEdges = walkedEdges(atlas, s.chain);
-    const pathIds = new Set([...working.path, ...working.selected]);
-    const chainEdgeIds = new Set(chainEdges.map((e) => e.id));
-    const consequences = s.selected ? (atlas.adjacency.out.get(s.selected) ?? []) : [];
-    const consequenceIds = new Set(consequences.map((e) => e.id));
-
-    // The other branches that fed the selected event; their *edges* are what
-    // this view draws, and emphasis.js has already answered which events they
-    // are, so the picture and the panel's list cannot disagree.
+    // Four things this view used to rebuild, from the one place that computes
+    // them (M85, B13). The convergence query in particular ran twice per state
+    // — once in `emphasis.js` for the events and once here for their edges,
+    // the same walk with the same exclusion — and a branch has carried both
+    // halves all along (graph.js).
+    const pathIds = working.pathIds;
+    const chainEdgeIds = new Set(working.walkedEdges.map((e) => e.id));
+    const consequenceIds = new Set(working.consequenceEdges.map((e) => e.id));
     const converging = working.converging;
-    const convergingEdges = new Set();
-    if (s.selected && atlas.events.has(s.selected)) {
-      for (const branch of convergence(atlas.adjacency, s.selected, [...pathIds])) {
-        convergingEdges.add(branch.edge.id);
-      }
-    }
+    const convergingEdges = working.convergingEdges;
 
     // The same lens the arrangement was built from; what it kept is drawn
     // one event to a node — the focus set in full, and the direct causes and

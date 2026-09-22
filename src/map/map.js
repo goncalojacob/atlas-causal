@@ -12,10 +12,10 @@ import { createLandLayer } from './layers/land.js';
 import { createBaseLayer } from './layers/base.js';
 import { createRegionsLayer } from './layers/regions.js';
 import { bordersNote, createPresencesLayer } from './layers/presences.js';
-import { chainEdges, walkOrSelect } from '../chain.js';
+import { walkOrSelect } from '../chain.js';
 import { createEventsLayer } from './layers/events.js';
 import { DEEPEST_ZOOM } from '../cluster.js';
-import { resolveWindow, withMargin, overlaps } from '../util/window.js';
+import { resolveWindow, withMargin, overlaps, WHEEL_FACTOR } from '../util/window.js';
 import { workingSet, heldSet } from '../emphasis.js';
 import { largeEventsIn } from '../large.js';
 import { isParent } from '../parts.js';
@@ -483,7 +483,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   root.addEventListener('wheel', (e) => {
     e.preventDefault();
     const [x, y] = toSvg(e);
-    const factor = Math.exp(-e.deltaY * 0.0015);
+    const factor = Math.exp(-e.deltaY * WHEEL_FACTOR);
     const k = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, transform.k * factor));
     const ratio = k / transform.k;
     transform = { k, x: x - (x - transform.x) * ratio, y: y - (y - transform.y) * ratio };
@@ -597,16 +597,14 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     const shown = working.shown;
     const kept = (id) => shown.has(id);
 
-    // The two lists of *edges*, which are lines and not marks: the ids of
-    // their ends are in the working set, the edge objects are needed here.
-    const walked = chainEdges(atlas, s.chain)
-      .filter((e) => kept(e.from) && kept(e.to));
-    const consequenceEdges = (s.selected ? (atlas.adjacency.out.get(s.selected) ?? []) : [])
-      .filter((e) => kept(e.from) && kept(e.to));
+    // The two lists of *edges*, which are lines and not marks, and the path as
+    // one set — all three from `emphasis.js` since M85 (B13). They were
+    // composed here, and identically in `timeline.js` and `graph-view.js`, out
+    // of what that function had already computed and thrown away.
+    const walked = working.walkedEdges;
+    const consequenceEdges = working.consequenceEdges;
     const chosenEdge = s.edge ? (atlas.edges.get(s.edge) ?? null) : null;
-    // A selected event is on the path it is the head of, which is what makes
-    // its mark madder rather than merely ringed.
-    const pathIds = new Set([...working.path, ...working.selected]);
+    const pathIds = working.pathIds;
     // Through resolve(), so a former id in the URL highlights the same
     // actor the panel is showing.
     const actor = s.actor ? atlas.resolve(s.actor) : null;

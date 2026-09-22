@@ -597,7 +597,9 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // used to stand here; it is shared so that the band on the map cannot draw
     // a different corpus from the lanes.
     const inLens = bandEvents(atlas, s);
-    const pathIds = new Set([...working.path, ...working.selected]);
+    // The walked path and the selection as one set, from `emphasis.js` since
+    // M85 (B13): the three views composed the same union three times.
+    const pathIds = working.pathIds;
     // And then the map's viewport, which composes with the lens rather than
     // replacing it: the lens says which events exist, the box says which of
     // them are on screen. What the reader is holding is exempt from the box

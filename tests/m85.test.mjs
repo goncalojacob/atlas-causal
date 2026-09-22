@@ -17,9 +17,10 @@ import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
 
 import { defaultState, DEGREE_CHOICES, DEGREE_DEFAULT } from '../src/state.js';
-import { resolveWindow, centuryOf } from '../src/util/window.js';
+import { resolveWindow, centuryOf, WHEEL_FACTOR, zoomWindow } from '../src/util/window.js';
 import { extent } from '../src/util/dates.js';
 import { workingSet } from '../src/emphasis.js';
+import { convergence } from '../src/graph.js';
 import { stackTitle, stackBadge } from '../src/cluster.js';
 import { degreeLabel } from '../src/graph-filters.js';
 import { explainedLinks, linksSentence, introHtml } from '../src/intro.js';
@@ -247,4 +248,72 @@ test('the bibliography counts the works apart from the base maps', () => {
   // with the works.
   assert.ok(!maps.some((source) => source.id === 'wikidata'),
     'Wikidata is where identifiers come from, not where a border is drawn');
+});
+
+// ─── 7. emphasis.js assembles once (B13) ───────────────────────────────────
+//
+// `pathIds = new Set([...working.path, ...working.selected])` was written in
+// map.js, timeline.js and graph-view.js; the walked edges and the consequence
+// edges likewise; and the convergence query ran twice per state, once here for
+// the events and once in the graph for their edges.
+
+test('the working set carries the four things the three views used to rebuild', () => {
+  // An event with consequences, a convergence and a walk into it, chosen from
+  // the corpus rather than named: what this asserts is the shape of the answer.
+  const chosen = [...atlas.events.values()]
+    .find((e) => (atlas.adjacency.in.get(e.id) ?? []).length > 1
+      && (atlas.adjacency.out.get(e.id) ?? []).length > 0);
+  assert.ok(chosen, 'some event both leads somewhere and was fed by more than one branch');
+  const working = workingSet(atlas, { ...defaultState(), selected: chosen.id });
+
+  assert.deepEqual([...working.pathIds].sort(),
+    [...new Set([...working.path, ...working.selected])].sort(),
+    'the path is the walked chain and the selection, as every view composed it');
+  for (const edges of [working.walkedEdges, working.consequenceEdges]) {
+    assert.ok(Array.isArray(edges));
+    assert.ok(edges.every((e) => working.shown.has(e.from) && working.shown.has(e.to)),
+      'the lines are inside what the view draws');
+  }
+  assert.equal(working.consequenceEdges.length,
+    (atlas.adjacency.out.get(chosen.id) ?? [])
+      .filter((e) => working.shown.has(e.from) && working.shown.has(e.to)).length);
+
+  // One convergence query, two halves. The events are filtered to what the view
+  // draws and the edges are not — which is exactly what the graph drew before,
+  // and the rule is that the two come out of one walk: every edge here is the
+  // one a branch fed the target through, so its `from` is a branch's event.
+  assert.ok(working.convergingEdges instanceof Set);
+  assert.ok(working.convergingEdges.size > 0, 'the branches fed it through some link');
+  const branches = new Set(convergence(atlas.adjacency, chosen.id, [...working.pathIds])
+    .map((branch) => branch.edge.id));
+  assert.deepEqual([...working.convergingEdges].sort(), [...branches].sort(),
+    'and the set is the query’s own answer, run once');
+});
+
+test('and the `shown` contract is exactly what it was', () => {
+  // M65's rule, unchanged by this milestone: `shown` is a set on every frame —
+  // the lens, or the resting picture of the main events where there is none —
+  // and never null.
+  for (const [name, each] of CORPORA) {
+    for (const patch of [{}, { selected: [...each.events.keys()][0] }, { degree: 3 }]) {
+      const shown = workingSet(each, { ...defaultState(), ...patch }).shown;
+      assert.ok(shown instanceof Set, `${name}: shown is a set`);
+      assert.ok(shown.size > 0, `${name}: and there is always a picture`);
+    }
+  }
+});
+
+test('the wheel factor is one export and three readers', async () => {
+  assert.equal(typeof WHEEL_FACTOR, 'number');
+  // The rule held by the shape of the code and not by the absence of a string
+  // (B14): the two pictures that answer a wheel of their own import the factor
+  // the band zooms by, so they cannot come to answer at different rates.
+  for (const file of ['src/map/map.js', 'src/graph-view/graph-view.js']) {
+    const source = await read(file);
+    assert.match(source, /WHEEL_FACTOR/, `${file} answers the wheel at the shared rate`);
+  }
+  const narrower = zoomWindow({ from: 1900, to: 2000 }, 1950, -100);
+  const wider = zoomWindow({ from: 1900, to: 2000 }, 1950, 100);
+  assert.ok(narrower.to - narrower.from < 100, 'a wheel up narrows the band');
+  assert.ok(wider.to - wider.from > 100, 'and a wheel down widens it');
 });
