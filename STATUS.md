@@ -18434,6 +18434,65 @@ one at a time as the check runs them. Deviations **1200** and **1201**.
       lane as the import first wrote them. The fix is in the data because
       this run may not touch the placer.
 
+**Batch 2 — the Falklands War, filed and placed.** Taken from the `americas`
+lane, which batch 1 did not touch and which is the larger half of this
+partition. The inverse `part of` sweep over this partition returned 164
+distinct items, 161 of them new; the Falklands vein was taken first because
+**every row of it is dated inside 1982 and the umbrella this atlas holds is
+dated 1982**, so nothing had to be widened and the main count could not move.
+**Twenty-two events, all filed under `falklands-war` and all placed**, with
+**fourteen place records** from the first located thing each item names that
+carries a `P625` — `stanley`, `goose-green` and `grytviken` as `city`, six
+bays, hills and mountains as `point`, five islands and the archipelago as
+`region`. Seven events took the archipelago because Wikidata points them at
+nothing narrower: the ridges above Port Stanley have their own items and no
+`P276` reaches them, and A9 forbids inventing the point that would place
+them. `grytviken`, `south-georgia` and `thule-island` carry a hand-written
+lane with rule 10's note, being below every region polygon the atlas draws.
+**Four edges**, each `probable` from what an article states in so many words,
+**two of them into records the atlas already held**:
+`operation-rosary --caused--> falklands-war` (*"The invasion served as a
+catalyst for the subsequent Falklands War"*) and
+`battle-of-mount-tumbledown --caused--> argentine-surrender-in-the-falklands-war`
+(*"leading to the fall of Stanley and the surrender of Argentine forces"*).
+
+**Forty-one items and one edge refused**: the IMF, the World Bank and FARC
+(institutions, not events), the twenty-five chapters and preambles of the UN
+Charter (divisions of a text, and undated), nine Falklands items with no
+usable span or no English label, three "theater of war" items and an "aspect
+of history"; and `operation-sutton --precondition-of--> battle-of-san-carlos`,
+which rule 4 refused because the landing and the air battle over the
+anchorage are the same five days and neither precedes the other.
+
+**Seven classes were added** to the seeds file, each read off Wikidata:
+military operation, covert operation, military raid, combat, skirmish and
+friendly fire as `war`, and aviation accident as `disaster`. The Gazelle
+incident of 6 June carries the last two at once and so **takes no category at
+all**, which is what `classify()` does where the table disagrees and the right
+answer here.
+
+**Corpus after the fire: 614 active, 247 main — unchanged — 367 filed, 643
+edges, largest connected component 505, 86 components, 69 events with no edge
+at all.** The `americas` lane goes from 83 active to **104**. `node
+tools/validate.mjs --index`: **0 errors, 289 warnings**. **1,737 pure and 246
+browser, 1,983 in all, 0 failed and 0 skipped**, the browser suites one at a
+time as the check runs them; `docs/m53-polities.md` §4.1 was retaken to 614,
+which is the one test a records batch always moves. Deviation **1202**.
+
+1202. **A batch can grow a lane by a quarter and cost the resting timeline
+      nothing.** Twenty-two events arrived and the main count did not move by
+      one, because every one of them is inside an umbrella that was already
+      here and already drawn. Batch 1 paid two bars for ten records to open
+      Europe's 16th century; this batch paid none for twenty-two, which is
+      what batch 1 predicted the Americas would offer and is the argument for
+      taking a vein under a standing umbrella before writing a new one. The
+      other half of the same finding is unchanged and unflattering:
+      **eighteen of the twenty-two earned no edge at all** and the component
+      moved by two. The phases of one war are chronological to each other and
+      their leads argue no causation between them — the third batch across
+      two branches to write that down — and nothing was invented to connect
+      them.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
