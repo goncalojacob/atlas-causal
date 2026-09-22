@@ -341,6 +341,12 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // same flag for the same reason since H4a (map.js, `exactZoom`; cluster.js,
   // `zoomBucket`). Cleared by every other way the zoom can move.
   let exactZoom = false;
+  // Whether the reader has moved the camera since the frame last set it. A
+  // frame is only ever offered when the question changes or the coordinates do
+  // (`frameCamera`), and a reader who has panned or wheeled into the picture
+  // has answered the question of where to look: their own camera stands until
+  // they ask another one. Cleared by the frame itself.
+  let cameraMoved = false;
   const applyTransform = () => {
     viewport.setAttribute('transform', `translate(${transform.x} ${transform.y}) scale(${transform.k})`);
   };
@@ -538,6 +544,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     transform = {
       ...transform, k, x: laid.width / 2 - point.x * k, y: laid.height / 2 - point.y * k,
     };
+    cameraMoved = true;
     applyTransform();
     render(state.get());
   };
@@ -576,6 +583,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       capture('setPointerCapture', drag.pointerId);
     }
     transform = { ...transform, x: drag.origin.x + dx, y: drag.origin.y + dy };
+    cameraMoved = true;
     applyTransform();
   });
   root.addEventListener('pointerup', () => {
@@ -602,6 +610,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       k, s, x: x - (x - transform.x) * across, y: y - (y - transform.y) * down,
     };
     exactZoom = false;
+    cameraMoved = true;
     applyTransform();
     render(state.get());
   }, { passive: false });
@@ -1316,6 +1325,12 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // itself, rather than a key that cannot see it, is what makes the frame
   // belong to the picture; it is also what re-fits a lens whose nodes moved
   // when its century landed (A1-2).
+  //
+  // **Unless the reader has moved the camera.** Where they are looking is a
+  // question they answered with their own hand, and a layout that changed under
+  // it — a century landing, a thread answering — is not a reason to take it
+  // back. So the re-fit is offered to a camera the frame itself put there and
+  // never to one the reader wheeled or dragged into place.
   let framedFor = null;
   let framedLayout = null;
   function frameCamera(s, seen) {
@@ -1326,7 +1341,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // frames again is a new question — a lens set or cleared, a filter, a
     // category — which is `question` (arrangement.js).
     const key = `${askedFor}|${seen.x0},${seen.y0},${seen.x1},${seen.y1}`;
-    if (key === framedFor && framedLayout === laid) return;
+    if (key === framedFor && (framedLayout === laid || cameraMoved)) return;
     // Whether this is the first camera this arrangement has been given, which
     // is the whole of what the chosen link may decide (M80). A reader who
     // *arrives* on `?edge=` has not seen the picture yet and the two ends are
@@ -1338,6 +1353,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     const arriving = framedFor === null || !framedFor.startsWith(`${askedFor}|`);
     framedFor = key;
     framedLayout = laid;
+    cameraMoved = false;
     // And what that frame is: the link's own two ends and nothing else. The
     // card names them, and a camera that left one of them off the screen would
     // be the picture disagreeing with the card. It is the only set offered,

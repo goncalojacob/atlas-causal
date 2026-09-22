@@ -498,9 +498,17 @@ button.bar-link { background: none; border: 0; padding: 0; font: inherit; font-s
    The same slot as the map and the graph since M60, and the whole of it: the
    lanes have the height the strip never had, which is what the drawing was
    squeezing them into. */
+/* And `scrollbar-gutter: stable`, since M83 (B11). The rows are as many as the
+   titles need, and the titles need more rows the narrower the drawing is — so a
+   drawing one row too tall for its pane raised a scrollbar, the scrollbar took
+   a dozen pixels of width, the narrower drawing needed another row, and the
+   count depended on whether the pane happened to be scrolling. It only showed
+   once the 120 px left gutter went back to the drawing and the packing came
+   near that boundary, but the loop was always there. Room kept for the bar
+   whether or not it is shown is room the packing can count on. */
 .timeline-area {
   grid-area: map; background: var(--paper);
-  overflow: auto; min-height: 0;
+  overflow: auto; min-height: 0; scrollbar-gutter: stable;
 }
 /* An `<svg>` is inline by default, so the line box under it added a
    descender's worth of height the drawing knew nothing about — enough to make
@@ -1392,12 +1400,6 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
    divide the drawing into stripes. */
 .timeline .lane.even { fill: var(--paper); }
 .timeline .lane.odd { fill: var(--ground); }
-.timeline .lane-label {
-  fill: var(--ink-soft); font-size: 11px; letter-spacing: 0.03em;
-}
-/* The catch-all lane is a lane like the others and says so quietly: it is
-   where the rule put what none of the chosen lanes claimed. */
-.timeline .lane-label.other { font-style: italic; }
 .timeline .tick { stroke: var(--line); stroke-width: 1; }
 .timeline .tick-label { fill: var(--ink-soft); font-size: 11px; }
 .timeline .bar { fill: var(--cobalt-faint); stroke: var(--cobalt); stroke-width: 1; cursor: pointer; }
