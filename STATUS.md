@@ -17950,6 +17950,70 @@ against the tighter test and all twelve hold.
      activity is not a kind of event, and the table is for classes that say
      what a record is.
 
+## M42b — the Americas, and Europe before 1900
+
+**The lane opened, 22 September.** A11 partitioned M42 into two records lanes
+that run at once: M42 keeps Africa and Asia, **M42b takes the Americas, every
+century from 1492, and Europe before 1900**, on the branch `m42b` cut from
+`origin/m0`. Same brief, same eleven amendments; its own pool file,
+`docs/m42b-pool.md`, and its deviations numbered from **1200**. There is no
+done condition until the owner writes one.
+
+**The measurement first.** Per lane and per century, over the topology the
+validator builds. Active / main: **Europe 303 / 86, Asia 117 / 68, Africa
+79 / 32, the Americas 83 / 59** — this partition's own half being the thinnest
+of the four lanes and the least filed. **Europe before 1900 was thirteen
+events**, one each in the 15th, 16th, 17th and 18th centuries and nine in the
+19th; those four cells were the thinnest in the whole atlas and three of them
+had no umbrella of any kind. The `americas` lane divides 48 South and Central
+to 8 North among its placed events, so the brief's ordering — South before
+North until they hold as much — was already satisfied at the measurement and
+does not bind this run.
+
+**Batch 1 — the Italian Wars, and the Greco-Turkish War of 1897.** Ten events
+and six places imported from Wikidata, every one `draft` and
+`imported-facts`. `italian-wars` (1494–1559) is the umbrella Europe's 16th
+century lacked and six of its wars file under it; `battle-of-st-quentin` went
+to the nearer parent, `italian-war-of-1551-1559`, because its own lead calls
+it an engagement of that war and A8 says a parent reachable through another
+is not a second one. `battle-of-domokos` and `battle-of-velestino` file under
+the Greco-Turkish war the atlas already held. **Seven of the ten were placed**
+from the `P276` their items name, at the precision the location's own class
+gives — `italian-peninsula`, `provence` and `crete` as `region`,
+`saint-quentin`, `domokos` and `velestino` as `city`; the other three name
+only a country and stay placeless until `M80 done` is on `origin/m0`.
+**One edge**, `cretan-revolt-of-1897-1898 --caused--> greco-turkish-war-of-1897`,
+`probable`, from the two articles at named revisions.
+
+**Five items and two filings refused**: an item whose English label carries
+vandalism, four 1897 battles with no English article and a description that
+reads "1897 battle" entire, the Cretan Revolt under the war (its span runs a
+year past the war's end and its lead never calls it part of it — an edge was
+written instead), and `berlin-conference` under `scramble-for-africa` (the
+conference sat from November 1884 and the umbrella begins in 1885; widening it
+is an Africa record's business and so M42's).
+
+**Corpus after the fire: 592 active, 247 main, 345 filed, 639 edges, largest
+connected component 503, 68 components, 51 events with no edge at all.**
+`node tools/validate.mjs --index`: **0 errors, 273 warnings**. **1,709 pure
+and 234 browser, 1,943 in all, 0 failed and 0 skipped**, the browser suites
+one at a time as the check runs them. Deviation **1200**.
+
+1200. **The main count rose by two and A6 says a batch that does that has to
+      say why.** The two are different cases. `italian-wars` is an umbrella a
+      century with one event and nothing to file under could not be filled
+      without — the brief asks for exactly it — and it is the cheap direction
+      of the trade: **ten records arrived and the resting timeline gained two
+      bars, not ten**, with six more measured rows of the same vein now filing
+      under it for nothing. `cretan-revolt-of-1897-1898` is not a trade at
+      all: its sources refuse to make it part of anything here, so it stands
+      on the resting picture with an edge and no parent, which is what
+      `degree-zero` and the main count are for. Nine of the ten earned no edge
+      — the Italian Wars' phases are chronological to each other and their
+      leads argue no causation between them, the same finding M42's batch 34
+      wrote down about the Vietnam War — and nothing was invented to connect
+      them.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
