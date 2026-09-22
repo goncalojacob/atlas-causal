@@ -742,18 +742,10 @@ body:not(.phone) .layout.panel-empty.composing {
   /* The summary is the collapsed group's one target, so it is a target: a
      20 px line with thirteen rows behind it is a thumb's worth of guesswork. */
   .bar .layers summary, .bar .categories-control summary { display: flex; align-items: center; }
-  /* The graph's key, folded to one button (M82, A1). It covered half the
-     picture at 390 px — `m77-graph-phone.png` — which is a legend hiding the
-     thing it is a legend to. Pressing it is a gesture, so the box takes the
-     pointer back; on a desktop it has none and neither does the button. */
-  .graph-key { pointer-events: auto; max-width: calc(100% - var(--space-3) * 2); }
-  .graph-key .graph-key-toggle {
-    display: flex; align-items: center; min-height: var(--touch);
-    border: 0; padding: 0; background: none; cursor: pointer;
-    font-family: var(--font-ui); font-size: var(--label); font-weight: 600;
-    text-transform: uppercase; letter-spacing: var(--tracking-label); color: var(--ink-soft);
-  }
-  .graph-key:not(.open) .graph-key-body { display: none; }
+  /* The key on a phone: the same one button as everywhere (M83, A1-4), with
+     the room a thumb needs and a box that cannot run off the side. */
+  .graph-key { max-width: calc(100% - var(--space-3) * 2); }
+  .graph-key .graph-key-toggle { min-height: var(--touch); }
 
   .bar .views button { padding-inline: var(--space-4); }
   .panel .chips .chip { display: inline-flex; align-items: center; }
@@ -1240,13 +1232,22 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 }
 .graph-key .edge-key { margin: 0; gap: 0.15rem var(--space-2); }
 .graph-key svg.key-line { width: 46px; }
-/* The key folds to one button on a phone and nowhere else (M82, A1): on a
-   desktop there is room for all of it and nothing to press. The phone's own
-   rule is in the one media query above, which is earlier in the file, so this
-   is written on the element and not on the box — a class less, so the phone's
-   `.graph-key .graph-key-toggle` outweighs it wherever it applies and there is
-   no second media query to keep in step with the first. */
-button.graph-key-toggle { display: none; }
+/* **One button, everywhere** (M83, A1-4). M82 folded the key on a phone alone,
+   on the argument that a desktop has room for all of it; the owner, looking at
+   World War II opened on a 1440 px screen, found it over the bottom-left corner
+   of the picture there too — a legend standing on the thing it is a legend to.
+   So the key is folded wherever it is drawn and the button is what opens it,
+   which is one behaviour to read and one to test instead of two. The box itself
+   still lets the pointer through to the picture under it; the button does not,
+   because pressing it is a gesture. */
+.graph-key .graph-key-toggle {
+  display: flex; align-items: center; pointer-events: auto;
+  border: 0; padding: 0; background: none; cursor: pointer;
+  font-family: var(--font-ui); font-size: var(--label); font-weight: 600;
+  text-transform: uppercase; letter-spacing: var(--tracking-label); color: var(--ink-soft);
+}
+.graph-key:not(.open) .graph-key-body { display: none; }
+.graph-key.open { pointer-events: auto; }
 /* The same box on the map and the timeline (M82, A7). Every row is drawn with
    the classes that picture uses — `.map .mark`, `.timeline .bar` — so the key
    is the picture's own ink and not a drawing of it; what is written here is

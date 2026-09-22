@@ -207,13 +207,14 @@ export function edgeKey() {
       ${CONFIDENCE_ORDER.map((confidence, i) => `<line class="edge type-caused ${CONFIDENCE_CLASS[confidence]}"
         x1="${i * 21 + 1}" y1="6" x2="${i * 21 + 19}" y2="6"/>`).join('')}
     </svg>`;
-  // **One line on a phone** (M82, A1). At 390 px the key covered half the
-  // picture — `m77-graph-phone.png`, `m81-graph-war-phone.png` — which is a
-  // legend hiding the thing it is a legend to. The button is shown by the
-  // phone's own media query and hidden everywhere else, so a desktop has no
-  // control to press and the key it always had; the class the button toggles is
-  // what the stylesheet folds. The key is not in the SVG, so nothing here moves
-  // a mark.
+  // **One line, on every width** (M82 A1, and M83 A1-4). At 390 px the key
+  // covered half the picture — `m77-graph-phone.png`, `m81-graph-war-phone.png`
+  // — and M82 folded it there. The owner, 22 September, looking at World War II
+  // opened on a 1440 px screen: the key is over the bottom-left corner of the
+  // drawing there too. A legend standing on the thing it is a legend to is the
+  // same fault at either width, so there is one behaviour now and the button is
+  // it. The class it toggles is what the stylesheet opens. The key is not in
+  // the SVG, so nothing here moves a mark.
   box.innerHTML = `<button type="button" class="graph-key-toggle" aria-expanded="false" aria-controls="graph-key-body">Key</button>
     <div id="graph-key-body" class="graph-key-body"><h2>Links</h2><dl class="edge-key">
     ${EDGE_TYPE_IDS

@@ -60,10 +60,11 @@ function rowHtml(into, row) {
 // The box itself: a heading, a fold for a phone, and the rows. `title` is what
 // the heading says and `rows` what it is a key to.
 //
-// The fold is the same one the graph's key grew in M82 (A1): on a phone a
-// legend that covers half the picture is a legend hiding the thing it explains,
-// so it is one button there and the whole key everywhere else. The stylesheet
-// decides which, off the width; the class is all this writes.
+// The fold is the same one the graph's key grew in M82 (A1) and the same one it
+// kept on every width in M83 (A1-4): a legend standing over the picture is a
+// legend hiding the thing it explains, on a phone and on a 1440 px screen
+// alike, so it is one button and the key opens behind it. The stylesheet draws
+// it; the class is all this writes.
 export function viewKey(title, rows) {
   const box = document.createElement('div');
   box.className = 'graph-key view-key';
