@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "invasion-of-south-georgia--operation-paraquet--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Paraquet\", revision 1370694202, lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of South Georgia\", revision 1375909832, lead"
+    }
+  ],
+  "from": "invasion-of-south-georgia",
+  "to": "operation-paraquet",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Paraquet is defined by what it undid: its lead calls it \"the British military operation to recapture the island of South Georgia from Argentine military control in April 1982\". The control it recaptured is the other article's subject — on 3 April 1982 \"Argentine Navy forces seized control of the east coast of South Georgia after overpowering a small group of Royal Marines at Grytviken\". One seizure, one recapture, three weeks apart on the same island. Neither article writes the causal sentence whole, so the join is made here and the confidence is `probable`.",
+  "dispute": null
+}

@@ -16449,6 +16449,200 @@ band and the walk framing are where M74, M75 and M76 left them.
       `origin/m0` is merged in — a merge and never a rebase, which the protocol
       forbids.
 
+## M81 — the graph stretches time when it zooms
+
+Lane A, on the branch `m81`. The owner, 22 September, with a screenshot of
+World War II opened on the graph — twenty-seven children in one vertical
+column, labels three deep on either side:
+
+> *"On the graph it should expand more horizontally when I zoom in, otherwise
+> it looks weird and hard to see."*
+
+### Why it looked like that
+
+The graph's horizontal axis is time, laid out once over the whole extent of the
+corpus. A lens on a six-year war therefore put every one of its parts inside
+six years of six hundred — a hundredth of the width — and the barycentre did
+the only thing left to it and spread them down the field. The camera then
+zoomed **uniformly**, so a column zoomed in was a bigger column, and M77's
+labels, which are whole or nothing and go on a nearby free line when they do
+not fit, stacked three deep beside it.
+
+Two different things were wrong, and both are fixed.
+
+### 1. A lens has its own time axis
+
+With a lens on, the arrangement is no longer laid out over the corpus's extent
+but over **the extent of the events the lens itself names**. World War II
+opened is then 1939 to 1945 across the whole width, its parts in seven columns
+in the order they happened, every one of them named in full.
+
+`arrangementOf` says what the lens names — `view.kept`, the lens's own half and
+not its ring — and `timeAxis` in `layout.js` turns that into the domain. The
+counts travel with the extent, because they are what decide whether the scale
+buckets by century and a table of one set laid over the domain of another is a
+bucketing of centuries that are not there. At rest nothing has been asked and
+the domain is the corpus's, exactly as before: the graph and the timeline still
+share a scale and not merely an extent.
+
+**The ring is drawn where its own dates put it.** A lens's ring reaches further
+than the lens does — World War II's reaches 1893 and 1992 — and stretching the
+axis to hold it would give the question back the sliver it was asked to get out
+of. So the ring beyond the lens's own years is off the width, the arrows into
+the picture from off its edges are drawn as they always were, and the camera
+already knew what to do about it: M74 offers the whole picture first and the
+lens's own half as the fallback, and a ring this wide leaves it the fallback.
+
+**A lens of one date is the exception, and it is the same rule read honestly.**
+Most lenses are one event chosen, whose own half is that event alone: an axis a
+year wide has no room to be an axis, and the ring — the reason a reader can see
+what the event answers to at all — would be flung tens of widths off the
+picture and culled. What stands then is the extent of everything drawn, which
+is the narrowest axis that holds the whole of the answer.
+
+### 2. Zooming stretches time
+
+The camera has a fourth number. `k` is the zoom, and it is still what every
+mark and every label divides its size by; `s` is the **stretch**, how much
+wider than the arrangement time is drawn. What the reader sees magnified is
+`k · s` across and `k` down, and one wheel notch multiplies the first by the
+square of what it multiplies the second by. Zooming into 1943 shows 1943 wide
+rather than 1943 large.
+
+**The stretch is not in the SVG's transform.** That stays the uniform
+`scale(k)`, because a transform scaled unevenly draws a mark as an ellipse and
+sets a label in a condensed face. It is in the picture's own coordinates,
+applied by `stackLayout`, which is the right place for it on its own merits: it
+decides not only where a mark goes but which marks there are, since two nodes a
+year apart drawn four times further apart come off one mark at a quarter of the
+zoom. The arrangement itself never moves — that is what lets a reader zoom, pan
+and find the picture they had.
+
+**It says nothing about time that the axis did not say already.** Every x is
+multiplied by one number, so the order is the order and the ratios are the
+ratios: two events a year apart are still half as far apart as two events two
+years apart. What changes is how much of the drawing's width a year is worth,
+which is the same thing zooming has always changed.
+
+### The cap, and why four is the honest one
+
+`STRETCH_CAP = 4`. The run was asked to say what cap is honest, and this is the
+argument.
+
+What the stretch buys is room between two nodes that **time itself** separates,
+and it buys nearly all of that in the first two doublings: the twenty-seven
+children of a six-year war need one, a dozen events inside a single decade need
+two. A third doubling buys almost nothing, because what is still merged at four
+times is what falls in the same year — and no stretch whatever parts two nodes
+standing on one x.
+
+The cost, meanwhile, is real and grows with every doubling. At four times,
+crossing the drawing takes four screens sideways for every one down, so a
+reader comparing two events pans instead of looking; and an edge's slope, which
+is read loosely as how far apart in time its two ends are, is flattened by the
+same factor. Four is where the two curves cross, and it is `FIT_ZOOM` twice
+over — the camera's own fit will go to two in each direction and the reader's
+wheel may take time that far again and no further.
+
+### 3. The frame fits the two directions separately
+
+`frameFor` measures the wanted set against the rectangle on screen twice: the
+height decides `k`, capped at `FIT_ZOOM` as it has been since deviation 54, and
+the width left over after that is spent on the stretch, capped at
+`STRETCH_CAP`. A lens that is tall and narrow — which is exactly what a war
+with its parts inside it was — is framed by its height and then widened to the
+pane, instead of being framed by its height with four fifths of the pane left
+blank. A set already as wide as the pane asks for no stretch and is given none.
+
+Worth saying plainly, because it is the measurement rather than the design:
+**World War II is fixed by the axis and not by the stretch.** With its own
+years across the width the lens already fills the pane, so the opening frame
+comes out at `s = 1` and `k ≈ 1.55`, and what the stretch then does is answer
+the second half of the sentence — the reader turns the wheel and the seven
+columns move apart faster than the marks grow.
+
+### What was left alone
+
+Marks and labels keep their size on screen at every stretch (M61) and a name is
+still whole or waits for the pointer (M77) — both asserted on a real page,
+either side of a notch. Panning moves through time across and through stacks
+down, as it did. The lens, the walk framing, the category switches, confidence
+and the chosen link (M80) are untouched, and `emphasis.js`, the map and the
+timeline were not opened. No record was written and no historical claim made;
+`data/` is byte for byte what it was. No new hex value, token or type size.
+
+### Deviations
+
+1153. **The stretch is in the picture's coordinates and not in the SVG's
+      transform, which the brief's wording allows and its own test forbids.**
+      "The wheel and the pinch scale the horizontal axis" reads as a
+      `scale(kx, ky)` on the viewport, and that is the one implementation test
+      3 rules out: a circle under an uneven scale is an ellipse and a typeface
+      under one is condensed. So the viewport keeps `scale(k)` and `stackLayout`
+      multiplies every x by `s`. The consolation is that this is where it
+      belonged anyway — the stretch decides which marks there are as well as
+      where they are.
+1154. **A lens whose own events fall on one date is laid out over everything it
+      draws, which the brief does not provide for.** "The lens's own extent"
+      is the rule, and on the overwhelming majority of lenses — one event
+      chosen — that extent is a single year. Laid out over it, the whole ring
+      landed thousands of units off the picture and I6's cull took it: five
+      browser tests said so, among them *the selected event and its chain are
+      never inside a stack* and *choosing an event narrows all three views*,
+      which count what the lens draws and found two marks of eighteen. The rule
+      as written is kept wherever the lens has an extent; where it has none,
+      the extent of everything drawn stands, which is the narrowest axis that
+      holds the answer.
+1155. **The domain is the lens's own events and not everything the lens draws.**
+      The two readings of "the lens's own extent" differ by the ring, and the
+      ring is why: World War II's reaches 1893 and 1992, so a domain that held
+      it would have given the parts six years of ninety-nine — better than six
+      of six hundred and still not a picture the owner asked for. The ring goes
+      off the width and the frame's own fallback, which is older than this
+      milestone, is what catches it.
+1156. **`FIT_ZOOM` did not become the cap on the stretch; it became the cap on
+      the height and the stretch was given a cap of its own.** The brief says
+      it becomes the cap on the horizontal stretch, and one number cannot be
+      both: `FIT_ZOOM` is a magnification against the arrangement and the
+      stretch is a multiplier *of* that magnification, so `FIT_ZOOM` on the
+      stretch would have meant the width fitted at two and the height also at
+      two, which is the same uniform camera in a longer sentence. Two numbers,
+      and `STRETCH_CAP` is `FIT_ZOOM` squared, which is the brief's intent
+      arrived at the other way round.
+1157. **`s` is a free part of the transform and not a pure function of `k`.**
+      It has to be: "fits the time extent to the width and the stacks to the
+      height, separately" is two independent numbers, and a stretch derived
+      from the zoom could not be one of them. The wheel therefore accumulates,
+      and two routes to one zoom can leave two different stretches between the
+      ends — though never at the ends, because both clamp and both come home.
+      A pan has been path-dependent since the graph had one; a camera is
+      allowed to be.
+1158. **The stacking is keyed on the stretch unbucketed, where the zoom is
+      bucketed.** What the zoom decides is a threshold, `D / k`, so what
+      matters is the ratio between two zooms and sixteen buckets to the octave
+      lose nothing. What the stretch decides is where a mark *is*: a bucket of
+      it would jump the picture sideways by four per cent at every boundary the
+      wheel crossed. It costs nothing — a notch leaves the zoom's bucket too,
+      and a pan moves neither number.
+1159. **A stack of one is drawn on the stack's own point and not on the node's,
+      which is a one-line change that would have been invisible.** They were
+      the same number until this milestone: a cluster's mark is drawn on its
+      representative, and a cluster of one *is* its representative. Now
+      `stackLayout` returns the picture's coordinates, with time stretched, and
+      `representative` is the arrangement's node, which never moves. The ring on
+      a parent's mark read the same wrong number.
+1160. **The axis is redrawn on a stretch, from `render` and not from `adopt`.**
+      The bands and the ticks were drawn once per arrangement, and a tick is a
+      year that has to stand under the marks of that year. `adopt` runs before
+      the camera has said what the stretch is, so the redraw is a comparison in
+      `render` against the stretch the axis was last drawn at.
+1161. **`docs/screens/frame.html` gained a second way of driving the wheel.**
+      `zoom` double-clicks back to the world view and then wheels until it
+      reaches a scale, which is right for photographing the graph *at* a
+      magnification and wrong for this milestone: what M81 is a picture of is
+      what one notch does to the camera the lens was already given, and the
+      double click throws that frame away before the gesture. `notches=<n>` is
+      the same wheel event counted, with nothing before it.
 ### The first curation fire, 22 September 13:07Z (A11(a))
 
 A11(a) fire: nothing was imported. 177 polity descriptions, 410 places, 277
@@ -18382,6 +18576,141 @@ them. Deviations 1070 to 1076.
      of it**, so the test still refuses what it exists to refuse — and a fire
      that sees this red again should put it to the owner rather than nudge
      the share a third time.
+## M42b — the Americas, and Europe before 1900
+
+**The lane opened, 22 September.** A11 partitioned M42 into two records lanes
+that run at once: M42 keeps Africa and Asia, **M42b takes the Americas, every
+century from 1492, and Europe before 1900**, on the branch `m42b` cut from
+`origin/m0`. Same brief, same eleven amendments; its own pool file,
+`docs/m42b-pool.md`, and its deviations numbered from **1200**. There is no
+done condition until the owner writes one.
+
+**The measurement first.** Per lane and per century, over the topology the
+validator builds. Active / main: **Europe 303 / 86, Asia 117 / 68, Africa
+79 / 32, the Americas 83 / 59** — this partition's own half being the thinnest
+of the four lanes and the least filed. **Europe before 1900 was thirteen
+events**, one each in the 15th, 16th, 17th and 18th centuries and nine in the
+19th; those four cells were the thinnest in the whole atlas and three of them
+had no umbrella of any kind. The `americas` lane divides 48 South and Central
+to 8 North among its placed events, so the brief's ordering — South before
+North until they hold as much — was already satisfied at the measurement and
+does not bind this run.
+
+**Batch 1 — the Italian Wars, and the Greco-Turkish War of 1897.** Ten events
+and six places imported from Wikidata, every one `draft` and
+`imported-facts`. `italian-wars` (1494–1559) is the umbrella Europe's 16th
+century lacked and six of its wars file under it; `battle-of-st-quentin` went
+to the nearer parent, `italian-war-of-1551-1559`, because its own lead calls
+it an engagement of that war and A8 says a parent reachable through another
+is not a second one. `battle-of-domokos` and `battle-of-velestino` file under
+the Greco-Turkish war the atlas already held. **Five of the ten were placed**
+from the `P276` their items name, at the precision the location's own class
+gives — `provence` and `crete` as `region`, `saint-quentin`, `domokos` and
+`velestino` as `city`; the others name only a country, or a region as large as
+one, and stay placeless until `M80 done` is on `origin/m0`.
+**One edge**, `cretan-revolt-of-1897-1898 --caused--> greco-turkish-war-of-1897`,
+`probable`, from the two articles at named revisions.
+
+**Five items and two filings refused**: an item whose English label carries
+vandalism, four 1897 battles with no English article and a description that
+reads "1897 battle" entire, the Cretan Revolt under the war (its span runs a
+year past the war's end and its lead never calls it part of it — an edge was
+written instead), and `berlin-conference` under `scramble-for-africa` (the
+conference sat from November 1884 and the umbrella begins in 1885; widening it
+is an Africa record's business and so M42's).
+
+**Corpus after the fire: 592 active, 247 main, 345 filed, 639 edges, largest
+connected component 503, 68 components, 51 events with no edge at all.**
+`node tools/validate.mjs --index`: **0 errors, 273 warnings**. **1,709 pure
+and 234 browser, 1,943 in all, 0 failed and 0 skipped**, the browser suites
+one at a time as the check runs them. Deviations **1200** and **1201**.
+
+1200. **The main count rose by two and A6 says a batch that does that has to
+      say why.** The two are different cases. `italian-wars` is an umbrella a
+      century with one event and nothing to file under could not be filled
+      without — the brief asks for exactly it — and it is the cheap direction
+      of the trade: **ten records arrived and the resting timeline gained two
+      bars, not ten**, with six more measured rows of the same vein now filing
+      under it for nothing. `cretan-revolt-of-1897-1898` is not a trade at
+      all: its sources refuse to make it part of anything here, so it stands
+      on the resting picture with an edge and no parent, which is what
+      `degree-zero` and the main count are for. Nine of the ten earned no edge
+      — the Italian Wars' phases are chronological to each other and their
+      leads argue no causation between them, the same finding M42's batch 34
+      wrote down about the Vietnam War — and nothing was invented to connect
+      them.
+1201. **A place whose point stands for a whole country-sized region is the
+      case A9 holds back, and one was written before that was seen.**
+      `italian-peninsula` came from the Italian Wars' own `P276`, and the map
+      then wrote its name across Rome — `tests/map-browser.test.mjs` caught
+      it on the run's own check and again on the branch's, so a real defect
+      and not a flake. A9 already says an event whose only located thing is
+      its country stays placeless until `M80 done`, and M80 is what adds the
+      `country` precision and the mark that draws a thing that large; a
+      peninsula the size of Italy is that case in everything but the word.
+      The record was deleted, `Q145694` taken back out of the seeds and the
+      import's `done` list, and the two events left placeless in the `europe`
+      lane as the import first wrote them. The fix is in the data because
+      this run may not touch the placer.
+
+**Batch 2 — the Falklands War, filed and placed.** Taken from the `americas`
+lane, which batch 1 did not touch and which is the larger half of this
+partition. The inverse `part of` sweep over this partition returned 164
+distinct items, 161 of them new; the Falklands vein was taken first because
+**every row of it is dated inside 1982 and the umbrella this atlas holds is
+dated 1982**, so nothing had to be widened and the main count could not move.
+**Twenty-two events, all filed under `falklands-war` and all placed**, with
+**fourteen place records** from the first located thing each item names that
+carries a `P625` — `stanley`, `goose-green` and `grytviken` as `city`, six
+bays, hills and mountains as `point`, five islands and the archipelago as
+`region`. Seven events took the archipelago because Wikidata points them at
+nothing narrower: the ridges above Port Stanley have their own items and no
+`P276` reaches them, and A9 forbids inventing the point that would place
+them. `grytviken`, `south-georgia` and `thule-island` carry a hand-written
+lane with rule 10's note, being below every region polygon the atlas draws.
+**Four edges**, each `probable` from what an article states in so many words,
+**two of them into records the atlas already held**:
+`operation-rosary --caused--> falklands-war` (*"The invasion served as a
+catalyst for the subsequent Falklands War"*) and
+`battle-of-mount-tumbledown --caused--> argentine-surrender-in-the-falklands-war`
+(*"leading to the fall of Stanley and the surrender of Argentine forces"*).
+
+**Forty-one items and one edge refused**: the IMF, the World Bank and FARC
+(institutions, not events), the twenty-five chapters and preambles of the UN
+Charter (divisions of a text, and undated), nine Falklands items with no
+usable span or no English label, three "theater of war" items and an "aspect
+of history"; and `operation-sutton --precondition-of--> battle-of-san-carlos`,
+which rule 4 refused because the landing and the air battle over the
+anchorage are the same five days and neither precedes the other.
+
+**Seven classes were added** to the seeds file, each read off Wikidata:
+military operation, covert operation, military raid, combat, skirmish and
+friendly fire as `war`, and aviation accident as `disaster`. The Gazelle
+incident of 6 June carries the last two at once and so **takes no category at
+all**, which is what `classify()` does where the table disagrees and the right
+answer here.
+
+**Corpus after the fire: 614 active, 247 main — unchanged — 367 filed, 643
+edges, largest connected component 505, 86 components, 69 events with no edge
+at all.** The `americas` lane goes from 83 active to **104**. `node
+tools/validate.mjs --index`: **0 errors, 289 warnings**. **1,737 pure and 246
+browser, 1,983 in all, 0 failed and 0 skipped**, the browser suites one at a
+time as the check runs them; `docs/m53-polities.md` §4.1 was retaken to 614,
+which is the one test a records batch always moves. Deviation **1202**.
+
+1202. **A batch can grow a lane by a quarter and cost the resting timeline
+      nothing.** Twenty-two events arrived and the main count did not move by
+      one, because every one of them is inside an umbrella that was already
+      here and already drawn. Batch 1 paid two bars for ten records to open
+      Europe's 16th century; this batch paid none for twenty-two, which is
+      what batch 1 predicted the Americas would offer and is the argument for
+      taking a vein under a standing umbrella before writing a new one. The
+      other half of the same finding is unchanged and unflattering:
+      **eighteen of the twenty-two earned no edge at all** and the component
+      moved by two. The phases of one war are chronological to each other and
+      their leads argue no causation between them — the third batch across
+      two branches to write that down — and nothing was invented to connect
+      them.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
@@ -18680,4 +19009,8 @@ M79 started 2026-09-22T09:04:50Z by scheduled (branch m79)
 M79 done
 M80 started 2026-09-22T11:11:07Z by scheduled (branch m80)
 M80 done
+M81 started 2026-09-22T12:29:49Z by scheduled (branch m81)
+M81 done
+M42b started 2026-09-22T11:47:35Z by scheduled
+M42b started 2026-09-22T14:19:56Z by scheduled
 M42 started 2026-09-22T16:06:45Z by scheduled

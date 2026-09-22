@@ -62,6 +62,15 @@
     const at = params.get('at');
     params.delete('zoom');
     params.delete('at');
+    // And `notches`, which is the same gesture counted rather than aimed at a
+    // scale, and **without the double click back to the world view** (M81). The
+    // two are not interchangeable: `zoom` photographs the graph at a given
+    // magnification and has to start from a known camera to reach one, while
+    // what M81 is a picture of is what one turn of the wheel does to the camera
+    // the reader was *already* given — a lens framed on its own time axis. A
+    // double click would have thrown that frame away before the notch.
+    const notches = Number(params.get('notches'));
+    params.delete('notches');
     // And which collapsed group is open, by the id of the block inside it: a
     // `<details>` opens on a click or on an anchor, and neither is in the URL
     // the atlas keeps — what a reader had open is not what they were looking
@@ -145,7 +154,7 @@
       setTimeout(press, 50);
     }
 
-    if (Number.isFinite(zoom) && zoom > 0) {
+    if ((Number.isFinite(zoom) && zoom > 0) || (Number.isFinite(notches) && notches > 0)) {
       const inside = () => frame.contentDocument;
       const scaleOf = () => {
         const viewport = inside()?.querySelector('svg.graph .viewport');
@@ -166,14 +175,20 @@
           if ((tries += 1) < 400) setTimeout(drive, 50);
           return;
         }
-        svg.dispatchEvent(new frame.contentWindow.MouseEvent('dblclick', { bubbles: true, cancelable: true }));
+        if (Number.isFinite(zoom) && zoom > 0) {
+          svg.dispatchEvent(new frame.contentWindow.MouseEvent('dblclick', { bubbles: true, cancelable: true }));
+        }
         const mark = at ? svg.querySelector(`circle.node[data-id="${at}"]`) : null;
         const pane = svg.getBoundingClientRect();
         const box = mark ? mark.getBoundingClientRect() : null;
         const point = box && box.width
           ? { x: box.left + box.width / 2, y: box.top + box.height / 2 }
           : { x: pane.left + pane.width / 2, y: pane.top + pane.height / 2 };
-        for (let i = 0; i < 80 && scaleOf() < zoom; i += 1) notch(svg, point);
+        if (Number.isFinite(zoom) && zoom > 0) {
+          for (let i = 0; i < 80 && scaleOf() < zoom; i += 1) notch(svg, point);
+          return;
+        }
+        for (let i = 0; i < notches; i += 1) notch(svg, point);
       };
       setTimeout(drive, 50);
     }

@@ -36,9 +36,12 @@ import { isParent, ringClasses } from '../parts.js';
 import { zoomBucket } from '../cluster.js';
 import { onScreen } from '../map/layers/events.js';
 import { arrangementOf, holdingKey } from './arrangement.js';
-import { layoutGraph, stackLayout, MIN_ZOOM, MAX_ZOOM } from './layout.js';
+import {
+  layoutGraph, stackLayout, timeAxis, MIN_ZOOM, MAX_ZOOM,
+} from './layout.js';
 import { createLayoutRunner } from './layout-runner.js';
 import { frameFor } from './frame.js';
+import { STRETCH_CAP, stretchStep } from './stretch.js';
 import { LABEL_SIZE, shorten } from './label-fit.js';
 import {
   naming, placeLabels, placeOne, labelBoxAt, movedAway, ROWS_AWAY, LENS_ROWS_AWAY,
@@ -98,7 +101,8 @@ const CLUSTER_ZOOM_STEP = 1.2;
 // zoom to a narrow window (deviation 54); M74 gave the same cap to a frame of
 // a lens, and M76 left it the only one there is — the graph no longer opens on
 // the window at all, so a frame of the picture and a frame of a walk go as far
-// in as each other and no further.
+// in as each other and no further. Since M81 it is the cap on **the height's**
+// fit: the width has a cap of its own, `STRETCH_CAP` (stretch.js).
 const FIT_ZOOM = 2;
 // The room a frame leaves around what it frames: the widest a mark is drawn,
 // its ring and the ring's own stroke. In the SVG's units, which is what a mark
@@ -304,7 +308,14 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // pane blank. Where the camera is put moved into `render` in M74, the window
   // fit itself went in M76, and the declaration stays where it is because
   // every gesture below still reads it.
-  let transform = { x: 0, y: 0, k: 1 };
+  // `s` is the fourth number and M81's: how much wider than the arrangement
+  // time is drawn (stretch.js). It is not in the SVG's transform — that stays
+  // the uniform `scale(k)`, so a mark is a circle and a label is set at one
+  // size — it is in the picture's own coordinates, applied by `stackLayout`,
+  // and everything drawn and hit-tested below is in those.
+  let transform = {
+    x: 0, y: 0, k: 1, s: 1,
+  };
   // Whether the zoom in force was chosen to part a stack, in which case the
   // stacking is done at exactly it rather than at the bucket below it: the
   // bucket below `coreZoom` is a zoom that does not part them, and the click
@@ -317,13 +328,18 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   };
 
   // The frame the reader keeps their bearings by: the bands and the year
-  // axis. Redrawn only when the arrangement is.
+  // axis. Redrawn when the arrangement is, and — since M81 — when the stretch
+  // is, because the axis is the one thing on the picture that says what the
+  // stretch has done to it: the ticks are years and they have to stand under
+  // the marks of those years.
+  let axisAt = null;
   function drawFrame() {
+    axisAt = transform.s;
     bandsGroup.replaceChildren();
     for (const band of laid.bands) {
       if (band.hidden) continue;
       bandsGroup.appendChild(svg('rect', {
-        x: 0, y: band.y0, width: laid.width, height: band.y1 - band.y0,
+        x: 0, y: band.y0, width: laid.width * transform.s, height: band.y1 - band.y0,
         class: classes('band', band.even ? 'even' : 'odd'),
       }));
       // A band is a lane now, and an actor's name is longer than a region's:
@@ -333,7 +349,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       bandsGroup.appendChild(label);
     }
     for (const tick of laid.scale.ticks(10)) {
-      const x = laid.scale.x(tick.value);
+      const x = laid.scale.x(tick.value) * transform.s;
       bandsGroup.appendChild(svg('line', { x1: x, y1: laid.bands[0]?.y0 ?? 0, x2: x, y2: laid.height, class: 'tick' }));
       bandsGroup.appendChild(textNode(tick.label, { x, y: 16, class: 'tick-label', 'text-anchor': 'middle' }));
     }
@@ -342,16 +358,30 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // What `layoutGraph` is given: the arrangement's events, and the edges with
   // both ends in it. An edge with one end removed by the lens, or with one
   // end outside the band the arrangement covers, has nothing to join.
-  function inputFor(events, lanes) {
+  //
+  // And what time axis it is laid out on. **A lens has its own** (M81): the
+  // extent of the events the lens itself names, so World War II opened is its
+  // twenty-seven children spread across the width in the order they happened
+  // rather than every one of them inside the hundredth of it the corpus's own
+  // axis gives to 1939–1945. At rest the domain is the whole extent, as it was,
+  // and the graph and the timeline still share a scale and not merely an
+  // extent.
+  //
+  // The counts travel with the extent, because they are what decides whether
+  // the scale buckets by century (timeline-scale.js) and a lens's own counts
+  // are the lens's own events. A century table of the corpus laid over a
+  // six-year domain would be a bucketing of centuries that are not there.
+  function inputFor(events, lanes, lens = null) {
     const ids = new Set(events.map((e) => e.id));
+    const axis = timeAxis(events, lens);
     return {
       events,
       edges: [...atlas.edges.values()].filter((e) => e.status === 'active' && ids.has(e.from) && ids.has(e.to)),
       lanes,
-      extent: atlas.extent,
+      extent: axis?.extent ?? atlas.extent,
       // The same count the timeline's scale is built from (util/window.js), so
       // the two pictures share a scale and not only an extent.
-      counts,
+      counts: axis ? centuryCounts(axis.events) : counts,
     };
   }
 
@@ -380,7 +410,9 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   }
 
   function arrange(s) {
-    const { events, lanes, key } = arrangementOf(atlas, s, alonesOf(s), workingOf(s).shown);
+    const {
+      events, lanes, key, lens,
+    } = arrangementOf(atlas, s, alonesOf(s), workingOf(s).shown);
     if (key === arrangedFor) return false;
     arrangedFor = key;
     const cached = arrangements.get(key);
@@ -391,14 +423,14 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // Small enough to arrange here, which is every corpus this atlas has
     // held so far and the only path `node --test` can reach (layout-runner).
     if (!runner.offloads(events.length)) {
-      adopt(arrangements.set(key, entryFor(layoutGraph(inputFor(events, lanes)))), key);
+      adopt(arrangements.set(key, entryFor(layoutGraph(inputFor(events, lanes, lens)))), key);
       return true;
     }
     // Otherwise the picture the reader already has stays on screen until the
     // new one lands, and on the very first arrangement — when there is none —
     // the frame says what it is doing rather than showing an empty field.
     if (!laid) waiting.hidden = false;
-    runner.run(inputFor(events, lanes), (layout) => {
+    runner.run(inputFor(events, lanes, lens), (layout) => {
       const entry = arrangements.set(key, entryFor(layout));
       // The reader may have moved the band again while this was away. The
       // arrangement is kept either way; it is simply not what is on screen.
@@ -479,9 +511,14 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   };
   // Put a point in the middle of the view at a given zoom, clamped to the
   // limits. What opening a stack does, and the same move the map makes.
+  // The stretch is left where it is: opening a stack is a move in `k`, and a
+  // picture that also widened under the click would have parted the stack by
+  // moving it out from under the pointer that asked.
   const zoomTo = (point, wanted) => {
     const k = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, wanted));
-    transform = { k, x: laid.width / 2 - point.x * k, y: laid.height / 2 - point.y * k };
+    transform = {
+      ...transform, k, x: laid.width / 2 - point.x * k, y: laid.height / 2 - point.y * k,
+    };
     applyTransform();
     render(state.get());
   };
@@ -527,19 +564,32 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     dragged = drag?.moved ?? false;
     drag = null;
   });
+  // **A notch widens time by more than it grows the picture** (M81). One
+  // gesture, two numbers: `k` is the zoom, and `s` is how much wider than the
+  // arrangement time is drawn, each clamped to its own limits (stretch.js). The
+  // point under the pointer stays under it in both directions, which is why the
+  // two translations are computed from two ratios — the horizontal from the
+  // magnification `k * s`, which is what the drawing is actually scaled by
+  // across, and the vertical from `k` alone.
   root.addEventListener('wheel', (e) => {
     e.preventDefault();
     const [x, y] = toSvg(e);
     const factor = Math.exp(-e.deltaY * 0.0015);
     const k = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, transform.k * factor));
-    const ratio = k / transform.k;
-    transform = { k, x: x - (x - transform.x) * ratio, y: y - (y - transform.y) * ratio };
+    const s = stretchStep(transform.s, factor);
+    const across = (k * s) / (transform.k * transform.s);
+    const down = k / transform.k;
+    transform = {
+      k, s, x: x - (x - transform.x) * across, y: y - (y - transform.y) * down,
+    };
     exactZoom = false;
     applyTransform();
     render(state.get());
   }, { passive: false });
   root.addEventListener('dblclick', () => {
-    transform = { x: 0, y: 0, k: 1 };
+    transform = {
+      x: 0, y: 0, k: 1, s: 1,
+    };
     exactZoom = false;
     applyTransform();
     render(state.get());
@@ -729,8 +779,12 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // the graph's own coordinates read off it afterwards, under the transform
     // this may have just changed.
     frameCamera(s, visibleBox());
+    // The axis is drawn in the picture's own coordinates, so a stretch moves
+    // every tick: it is redrawn here rather than in `adopt`, which runs before
+    // the camera has said what the stretch is.
+    if (axisAt !== transform.s) drawFrame();
     const box = view();
-    const key = renderKey(s, transform.x, transform.y, transform.k, shardsArrived(atlas),
+    const key = renderKey(s, transform.x, transform.y, transform.k, transform.s, shardsArrived(atlas),
       Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
     if (!force && !arranged && key === drawnFor) return;
     drawnFor = key;
@@ -824,10 +878,17 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // every animation between two zooms. `exactZoom` is this view saying the
     // zoom in force was chosen to part a stack, and a bucket below it would
     // not part it.
+    //
+    // The stretch is the fourth thing it depends on and it is not bucketed
+    // (M81): it decides where a mark is drawn and not only which marks there
+    // are, so a bucket of it would be the picture jumping sideways by four per
+    // cent every time the wheel crossed one. It costs nothing that the zoom did
+    // not already cost — a notch leaves the zoom's bucket too — and a pan,
+    // which moves neither, still redraws without restacking.
     const groupAt = exactZoom ? k : zoomBucket(k);
-    const stackKey = `${laidFor}|${groupAt}|${holdingKey(s)}`;
+    const stackKey = `${laidFor}|${groupAt}|${transform.s}|${holdingKey(s)}`;
     stacked = stackings.get(stackKey)
-      ?? stackings.set(stackKey, stackLayout(laid, { k: groupAt, alone }));
+      ?? stackings.set(stackKey, stackLayout(laid, { k: groupAt, alone, stretch: transform.s }));
     // What is worth putting in the DOM. The map has drawn only the marks
     // inside its viewport since H4a; the graph drew every stack of the whole
     // arrangement at every notch, and at 20,000 events that is 24,310
@@ -987,8 +1048,13 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       const name = labelOf(atlas, node.event);
       const title = name === null ? LOADING_LABEL
         : `${name} — ${formatInterval(node.event.when)}`;
+      // The stack's own point and not the node's. They were the same number
+      // until M81 — a stack of one is drawn on its only member — and they are
+      // not any more: `stackLayout` returns the picture's coordinates, with
+      // time stretched, and `representative` is the arrangement's node, which
+      // never moves.
       const mark = svg('circle', {
-        cx: node.x, cy: node.y, r: radius / k, class: cls, 'data-id': node.id,
+        cx: stack.x, cy: stack.y, r: radius / k, class: cls, 'data-id': node.id,
       }, [svgTitle(title)]);
       nodesGroup.appendChild(mark);
       // An event with parts carries the ring at every zoom (m30c-brief, §1),
@@ -999,7 +1065,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       // so a click still lands on the node and opens the one record.
       if (isParent(atlas, node.event)) {
         nodesGroup.appendChild(svg('circle', {
-          cx: node.x, cy: node.y, r: (radius + RING_GAP) / k, class: ringClasses(cls, 'node'),
+          cx: stack.x, cy: stack.y, r: (radius + RING_GAP) / k, class: ringClasses(cls, 'node'),
           'stroke-width': RING_WIDTH / k,
         }));
       }
@@ -1177,8 +1243,12 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       : working.lens
         ? [working.shown, working.lensFocus].filter(Boolean)
         : [working.shown];
+    // Two fits and not one since M81: `FIT_ZOOM` is still as far in as the
+    // camera will go on its own, and it is the height's — what the stacks are
+    // fitted to. `STRETCH_CAP` is the cap on the other one, the width the time
+    // extent is fitted to (frame.js, stretch.js).
     const at = frameFor(laid.nodes, wanted, seen, {
-      min: MIN_ZOOM, max: FIT_ZOOM, pad: FRAME_PAD,
+      min: MIN_ZOOM, max: FIT_ZOOM, pad: FRAME_PAD, maxStretch: STRETCH_CAP,
     });
     // A set the arrangement holds no node of leaves the camera alone: there is
     // nothing to frame, and a frame of nothing would be a number invented.

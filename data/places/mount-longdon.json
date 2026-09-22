@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "mount-longdon",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q6921882",
+  "sources": [],
+  "names": [
+    "Mount Longdon"
+  ],
+  "where": {
+    "lon": -57.966666666667,
+    "lat": -51.666666666667,
+    "precision": "point",
+    "label": "Mount Longdon"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q6921882, imported by tools/import/wikidata.mjs. The item's own description reads \"mountain in the east of East Falkland in the Falkland Islands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}
