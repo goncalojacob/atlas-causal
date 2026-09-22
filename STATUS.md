@@ -18712,6 +18712,56 @@ which is the one test a records batch always moves. Deviation **1202**.
       two branches to write that down — and nothing was invented to connect
       them.
 
+1077. **The two passes A12 named and the curation fire did not run were the
+      two that are code.** The fire of 13:07Z did the four that are data —
+      summaries, places, participants, polity descriptions — and A7's three
+      intervals, and each is written up in `## Curation 2026-09-22` with its
+      counts. What it left are `intervalFor()` and `titleFor()`, which change
+      what the *next* import writes rather than what any record says now, and
+      a pass over data cannot do either. **A12 says "before any further
+      import" and this is what that clause is protecting**: every batch since
+      deviation 1015 has been importing intervals that could run backwards and
+      titles that drop the disambiguator, and a fire that goes straight to
+      batches leaves both in place for another day.
+
+1078. **A count in this project is a warning, and two things nobody was
+      counting are now counted.** The number of import placeholders left was
+      only ever known by grepping for the sentence `importedSummary()` writes,
+      which is how A12 could say "313" on 22 September and nothing could say
+      what it is today (**101**, of which 79 events). `summary-imported` is
+      that number. `span-vs-article-title` is the other: a title stating its
+      own years is an assertion about the span made by whoever wrote the
+      article, and it is free evidence that was sitting unread in 146 titles.
+      **Six disagreed and three were real widenings the article states in so
+      many words** — the Chechen insurgency, dated to the deportation that
+      ended it; the German revolution, dated to the year it broke out; the
+      Yemeni revolution, dated to the handover that closed it. Each is the
+      same shape: **the item dates the moment the thing finished and the
+      article dates the thing**, which is the pattern A7 was written for and
+      the one the next fire should expect to find again.
+
+1079. **The other three the warning found are not widenings and the difference
+      is worth keeping.** `1957-1958-influenza-pandemic` (1956–1958),
+      `indo-pakistani-war-of-1947-1948` (1947–1949) and
+      `the-impeachment-of-dilma-rousseff-2016` (2015–2016) are each **already
+      wider than their own title**, so A7 does not reach them: it authorises
+      reading a span *from* a cited article, and here the record says more
+      than the article's title does. The impeachment is the one that shows why
+      this can never be an error — it begins in December 2015 and is titled
+      for the year it finished, which is a defensible record and not a
+      mistake. They stay as a warning for a person.
+
+1080. **Retitling five records broke nothing, and that is the argument for
+      A12 (5) rather than an id migration.** Three events were titled "Afghan
+      Civil War" and two "Treaty of London", and the fix people reach for is
+      `tools/migrate/ids.mjs`. It was not needed: the **id is not the title**,
+      the five ids were already distinct (two of them by carrying the item
+      id), and nothing in `data/` references a title. So five `title` fields
+      and two added citations were the whole of it. What changes for the
+      future is `titleFor()`, which now reads the article title first, so the
+      next import of an item of this shape writes the disambiguated name and
+      the disambiguated id at once and no sixth record needs this.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
