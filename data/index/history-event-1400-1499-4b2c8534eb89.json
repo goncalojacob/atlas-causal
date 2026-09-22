@@ -24,16 +24,24 @@
       ]
     },
     "italian-wars": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote"
+          ],
           "on": "2026-09-22"
         }
       ]
     },
     "italian-wars-of-1499-1504": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

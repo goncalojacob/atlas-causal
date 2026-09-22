@@ -9486,10 +9486,124 @@
       "rule": "place-unused"
     },
     {
+      "id": "bay-of-gibraltar",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "crete",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "domokos",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "falkland-islands",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "goose-green",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "grytviken",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "mount-kent",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "mount-longdon",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "mount-simon",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "pebble-island",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "pleasant-peak",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "provence",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "saint-denis",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
+    },
+    {
+      "id": "saint-quentin",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "san-carlos-water",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "south-georgia",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "stanley",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "thule-island",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "velestino",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "west-falkland",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     }
   ]
 }

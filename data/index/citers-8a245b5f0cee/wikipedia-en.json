@@ -5324,6 +5324,12 @@
     },
     {
       "dissent": false,
+      "id": "1940-1944-insurgency-in-chechnya",
+      "kind": "event",
+      "locator": "\"1940–1944 insurgency in Chechnya\", revision 1370279204: \"Beginning in early 1940 ... and ended in the beginning of 1944\""
+    },
+    {
+      "dissent": false,
       "id": "1945-portuguese-legislative-election",
       "kind": "event",
       "locator": "\"1945 Portuguese legislative election\", revision 1302540015"
@@ -5644,6 +5650,12 @@
       "dissent": false,
       "id": "2011-yemeni-revolution",
       "kind": "event",
+      "locator": "\"Yemeni revolution\", revision 1375746838: \"a series of major anti-government protests and armed uprisings that raged through Yemen from January 2011 to February 2012\""
+    },
+    {
+      "dissent": false,
+      "id": "2011-yemeni-revolution",
+      "kind": "event",
       "locator": "\"Yemeni revolution\", revision 1376086193"
     },
     {
@@ -5768,9 +5780,21 @@
     },
     {
       "dissent": false,
+      "id": "afghan-civil-war",
+      "kind": "event",
+      "locator": "\"Afghan Civil War (1989–1992)\", revision 1371765193"
+    },
+    {
+      "dissent": false,
       "id": "afghan-civil-war-q12302518",
       "kind": "event",
       "locator": "\"Afghan Civil War (1996–2001)\", revision 1374360605"
+    },
+    {
+      "dissent": false,
+      "id": "afghan-civil-war-q1980081",
+      "kind": "event",
+      "locator": "\"Afghan Civil War (1992–1996)\", revision 1371836551"
     },
     {
       "dissent": false,
@@ -6503,6 +6527,12 @@
       "id": "georgian-uprising-on-texel",
       "kind": "event",
       "locator": "\"Georgian uprising on Texel\", revision 1375503259"
+    },
+    {
+      "dissent": false,
+      "id": "german-revolution-of-1918-1919",
+      "kind": "event",
+      "locator": "\"German revolution of 1918–1919\", revision 1373097617: \"The German revolution of 1918–1919, also known as the November Revolution\""
     },
     {
       "dissent": false,

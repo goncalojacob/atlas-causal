@@ -1184,6 +1184,14 @@
             "summary"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3134,7 +3142,7 @@
       ]
     },
     "1982-british-army-gazelle-friendly-fire-incident": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4648,6 +4656,14 @@
             "review"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "title"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4679,6 +4695,13 @@
             "summary"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "title"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4699,6 +4722,14 @@
           "fields": [
             "place",
             "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "title"
           ],
           "on": "2026-09-22"
         }
@@ -6293,7 +6324,7 @@
       ]
     },
     "battle-of-goose-green": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6584,7 +6615,7 @@
       ]
     },
     "battle-of-mount-harriet": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6593,7 +6624,7 @@
       ]
     },
     "battle-of-mount-longdon": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6602,7 +6633,7 @@
       ]
     },
     "battle-of-mount-tumbledown": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6636,7 +6667,7 @@
       ]
     },
     "battle-of-san-carlos": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6645,7 +6676,7 @@
       ]
     },
     "battle-of-seal-cove": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6767,7 +6798,7 @@
       ]
     },
     "battle-of-two-sisters": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6801,7 +6832,7 @@
       ]
     },
     "battle-of-wireless-ridge": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6965,7 +6996,7 @@
       ]
     },
     "bluff-cove-air-attacks": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -10107,6 +10138,14 @@
             "summary"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -11235,7 +11274,7 @@
       ]
     },
     "invasion-of-south-georgia": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -12958,7 +12997,7 @@
       ]
     },
     "mount-kent-skirmish": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -13612,7 +13651,7 @@
       ]
     },
     "operation-algeciras": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -13621,7 +13660,7 @@
       ]
     },
     "operation-black-buck": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -13664,7 +13703,7 @@
       ]
     },
     "operation-keyhole": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -13673,7 +13712,7 @@
       ]
     },
     "operation-paraquet": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -13707,7 +13746,7 @@
       ]
     },
     "operation-rosary": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -13716,7 +13755,7 @@
       ]
     },
     "operation-sutton": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -14634,7 +14673,7 @@
       ]
     },
     "raid-on-pebble-island": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -16153,7 +16192,7 @@
       ]
     },
     "sinking-of-ara-general-belgrano": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -16273,7 +16312,7 @@
       ]
     },
     "skirmish-at-many-branch-point": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -16282,7 +16321,7 @@
       ]
     },
     "skirmish-at-top-malo-house": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -17501,6 +17540,13 @@
             "summary"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "title"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -17524,6 +17570,13 @@
             "review",
             "sources",
             "summary"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "title"
           ],
           "on": "2026-09-22"
         }

@@ -238,7 +238,7 @@
       ]
     },
     "bay-of-gibraltar": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -769,7 +769,7 @@
       ]
     },
     "crete": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -893,7 +893,7 @@
       ]
     },
     "domokos": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1135,7 +1135,26 @@
         },
         {
           "fields": [
-            "sources"
+            "authors",
+            "names",
+            "origin",
+            "regionNote",
+            "review",
+            "sources",
+            "summary",
+            "wikipedia"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "names",
+            "origin",
+            "regionNote",
+            "review",
+            "summary",
+            "wikipedia"
           ],
           "on": "2026-09-22"
         },
@@ -1410,7 +1429,7 @@
       ]
     },
     "goose-green": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1449,7 +1468,7 @@
       ]
     },
     "grytviken": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2686,7 +2705,7 @@
       ]
     },
     "mount-kent": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2710,7 +2729,7 @@
       ]
     },
     "mount-longdon": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2719,7 +2738,7 @@
       ]
     },
     "mount-simon": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3215,7 +3234,7 @@
       ]
     },
     "pebble-island": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3315,7 +3334,7 @@
       ]
     },
     "pleasant-peak": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3529,7 +3548,7 @@
       ]
     },
     "provence": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3843,7 +3862,7 @@
       ]
     },
     "saint-quentin": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3876,7 +3895,7 @@
       ]
     },
     "san-carlos-water": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4161,7 +4180,7 @@
       ]
     },
     "south-georgia": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4298,7 +4317,28 @@
         },
         {
           "fields": [
-            "sources"
+            "authors",
+            "names",
+            "origin",
+            "regionNote",
+            "review",
+            "sources",
+            "summary",
+            "where",
+            "wikipedia"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "names",
+            "origin",
+            "regionNote",
+            "review",
+            "summary",
+            "where",
+            "wikipedia"
           ],
           "on": "2026-09-22"
         },
@@ -4470,7 +4510,7 @@
       ]
     },
     "thule-island": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4684,7 +4724,7 @@
       ]
     },
     "velestino": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4849,7 +4889,7 @@
       ]
     },
     "west-falkland": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
