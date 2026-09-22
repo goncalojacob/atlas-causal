@@ -171,3 +171,52 @@ test('A6: nothing above the timeline\'s lanes is drawn over anything else', { sk
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   }, { device: DESK });
 });
+
+// 6 — A10. No card offers a way out to a page that does not exist.
+test('A10: a record with no full entry offers no link to one', { skip }, async () => {
+  const LINKS = `
+    return [...document.querySelectorAll('.panel .entry-link')].map((el) => ({
+      html: el.innerHTML.trim(),
+      href: el.querySelector('a') ? el.querySelector('a').getAttribute('href') : null,
+    }));`;
+
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    // One of each kind that can carry an entry, and none of them does today.
+    for (const [kind, param] of [['event', 'selected'], ['place', 'place'], ['actor', 'actor']]) {
+      const record = kind === 'event'
+        ? atlas.activeEvents.find((e) => e.place)
+        : [...(kind === 'place' ? atlas.places : atlas.actors).values()][0];
+      assert.ok(record, `the corpus has a ${kind} to open`);
+      const id = kind === 'event' ? record.id : (record.id ?? record);
+      // eslint-disable-next-line no-await-in-loop
+      await open(page, url(`?${param}=${encodeURIComponent(id)}`), ready);
+      // eslint-disable-next-line no-await-in-loop
+      await waitFor(page, "return Boolean(document.querySelector('.panel .standing, .panel .head-links'));",
+        `the ${kind} card`);
+      // The record's own file is what says whether there is an entry, so the
+      // wait is for the thing that arrives with it.
+      // eslint-disable-next-line no-await-in-loop
+      await waitFor(page, "return !document.querySelector('.panel [data-slot=\"entry-link\"]');",
+        `the ${kind} card to settle its entry link`);
+      // eslint-disable-next-line no-await-in-loop
+      const links = await page.eval(LINKS);
+      // No record in `data/` carries a body today, so what the card must show
+      // is nothing at all — not an empty paragraph and not a link to a page
+      // that says there is no entry. The day a record does carry one, the
+      // branch below is what holds.
+      // eslint-disable-next-line no-await-in-loop
+      const body = await page.eval(`
+        return fetch('data/${kind}s/${encodeURIComponent(id)}.json')
+          .then((r) => r.json()).then((r) => typeof r.body === 'string' && r.body.trim() !== '');`);
+      if (body) {
+        assert.equal(links.length, 1, `a ${kind} with an entry offers one link to it`);
+        assert.ok(links[0].href, 'and it is a link');
+      } else {
+        assert.deepEqual(links, [], `a ${kind} with no entry offers nothing: ${JSON.stringify(links)}`);
+      }
+    }
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});

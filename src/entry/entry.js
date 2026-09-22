@@ -205,11 +205,20 @@ function metaHtml(atlas, links, kind, record, topologyEntry) {
   return `<p class="meta">${parts.join(' · ')}</p>`;
 }
 
+// **Does this record have a full entry at all?** One question, asked in one
+// place (M82, A10): the build prerenders a page under `entry/` on this answer
+// (tools/lib/prerender.mjs) and a card offers the link on this answer
+// (panel/panel.js), so the link and the page cannot come to disagree. A body
+// that is absent, null, not a string or blank is no entry.
+export function hasEntry(record) {
+  return typeof record?.body === 'string' && record.body.trim() !== '';
+}
+
 // The entry itself, or the notice that stands in for one. A record with no
 // entry written is the common case for a long time yet, and the page says so
 // plainly and asks for the entry rather than looking broken.
 function bodyHtml(atlas, links, record) {
-  if (typeof record.body !== 'string' || record.body.trim() === '') {
+  if (!hasEntry(record)) {
     return {
       html: `<section class="entry-body empty">
         <h2>The full entry</h2>

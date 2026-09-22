@@ -24,7 +24,9 @@ import { standingHtml, standingSlot } from '../src/standing.js';
 import {
   showsReview, setReview, bylineOf, ATLAS_BYLINE,
 } from '../src/demo.js';
-import { entryHtml } from '../src/entry/entry.js';
+import { entryHtml, hasEntry, ENTRY_KINDS } from '../src/entry/entry.js';
+import { entryRecords } from '../tools/lib/prerender.mjs';
+import { readRecords } from '../tools/lib/read.mjs';
 import { MAIN_EVENT_HINT, unplacedText } from '../src/window-control.js';
 
 const atlas = await atlasOf(path.join(ROOT, 'data'));
@@ -157,4 +159,30 @@ test('A5: the events with no place are a note beside the count, and no box on th
   const map = await readFile(path.join(ROOT, 'src/map/map.js'), 'utf8');
   assert.doesNotMatch(map, /map-unplaced/, 'the map draws no box about it');
   assert.match(map, /map-worldwide/, 'and still names in its corner what it cannot draw at all');
+});
+
+// 6 — A10. "Read the full entry →" is offered only where an entry exists.
+//
+// One question asked in one place, which is the whole of the fix: the build
+// prerenders a page under `entry/` on `hasEntry` and the card offers the link
+// on `hasEntry`, so a link the card draws is a page the site has. Asserted on
+// the repository's own records rather than on a pair of literals: today none
+// of them carries a body, and the day one does the link appears without this
+// test being told.
+test('A10: the entry link is offered exactly where the build writes an entry page', async () => {
+  assert.equal(hasEntry({ body: 'A paragraph.' }), true);
+  for (const body of [undefined, null, '', '   \n', 42, {}]) {
+    assert.equal(hasEntry({ body }), false, JSON.stringify(body) ?? 'undefined');
+  }
+
+  // And the two sides agree, record for record, over everything on disk.
+  const records = (await readRecords(path.join(ROOT, 'data'))).entries.map((e) => e.record);
+  const written = new Set(entryRecords(records).map((r) => r.id));
+  for (const record of records) {
+    if (!ENTRY_KINDS.includes(record.kind)) continue;
+    assert.equal(
+      hasEntry(record), written.has(record.id),
+      `${record.id}: the card and the build disagree about whether there is an entry`,
+    );
+  }
 });

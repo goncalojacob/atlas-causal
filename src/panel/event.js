@@ -450,6 +450,10 @@ export function renderEventCard(ctx, { container, event, found, state, mine, rem
       // (standing.js). It waits for the file, like the summary, because the
       // core row a card is built from carries no signature.
       fillStanding(container, rec);
+      // And the way out to the record's own page, but only if there is one
+      // (M82, A10): whether a record carries a full entry is on its own file,
+      // which is what has just arrived.
+      ctx.fillEntryLink(container, 'event', rec);
       // No sub-heading: the section's own header already says "Sources".
       container.querySelector('[data-slot="sources"]').innerHTML = rec.sources?.length
         ? ctx.citationsHtml(rec.sources, '', rec)
