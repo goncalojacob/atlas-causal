@@ -242,6 +242,15 @@
         }
       ]
     },
+    "abushiri-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "anglo-zanzibar-war": {
       "from": "git",
       "versions": [
@@ -322,7 +331,25 @@
         }
       ]
     },
+    "battle-of-adwa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-domokos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-magersfontein": {
       "from": "git",
       "versions": [
         {
@@ -1095,6 +1122,15 @@
             "sources",
             "summary"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "siege-of-mafeking": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]

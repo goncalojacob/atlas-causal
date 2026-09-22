@@ -2,6 +2,15 @@
   "from": null,
   "kind": "place",
   "records": {
+    "adwa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "afghanistan-q889": {
       "from": "git",
       "versions": [
@@ -119,6 +128,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "annual": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -443,6 +461,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "brega": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -1394,6 +1421,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "german-east-africa-q153963": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -2482,6 +2518,24 @@
         }
       ]
     },
+    "magersfontein": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "mahikeng": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "maidan-nezalezhnosti": {
       "from": "git",
       "versions": [
@@ -2616,6 +2670,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "mogadishu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
@@ -4104,6 +4167,15 @@
         }
       ]
     },
+    "sirte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "slovak-republic": {
       "from": "git",
       "versions": [
@@ -4570,6 +4642,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "tripoli": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

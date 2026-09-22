@@ -3242,6 +3242,15 @@
         }
       ]
     },
+    "battle-of-tripoli-2011": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "bes-resolution-2014": {
       "from": "git",
       "versions": [
@@ -3895,6 +3904,15 @@
         }
       ]
     },
+    "first-battle-of-brega": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "full-scale-russo-ukrainian-war": {
       "from": "git",
       "versions": [
@@ -4368,6 +4386,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "killing-of-muammar-gaddafi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -5003,6 +5030,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "operation-serval": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

@@ -6218,6 +6218,15 @@
         }
       ]
     },
+    "battle-of-annual": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-ap-bac": {
       "from": "git",
       "versions": [
@@ -6610,6 +6619,15 @@
             "sources",
             "summary"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-mogadishu-1993": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]

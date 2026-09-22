@@ -2030,6 +2030,12 @@
     },
     {
       "dissent": false,
+      "id": "abushiri-revolt",
+      "kind": "event",
+      "locator": "Q481590"
+    },
+    {
+      "dissent": false,
       "id": "afghan-civil-war",
       "kind": "event",
       "locator": "Q2405009"
@@ -2228,6 +2234,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-adwa",
+      "kind": "event",
+      "locator": "Q302519"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-annual",
+      "kind": "event",
+      "locator": "Q1138460"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ap-bac",
       "kind": "event",
       "locator": "Q280468"
@@ -2312,6 +2330,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-magersfontein",
+      "kind": "event",
+      "locator": "Q1388058"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mogadishu-1993",
+      "kind": "event",
+      "locator": "Q52226"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mount-harriet",
       "kind": "event",
       "locator": "Q4871801"
@@ -2357,6 +2387,12 @@
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "Q153858"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tripoli-2011",
+      "kind": "event",
+      "locator": "Q609013"
     },
     {
       "dissent": false,
@@ -2765,6 +2801,12 @@
       "id": "first-balkan-war",
       "kind": "event",
       "locator": "Q177918"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-brega",
+      "kind": "event",
+      "locator": "Q989081"
     },
     {
       "dissent": false,
@@ -3230,6 +3272,12 @@
     },
     {
       "dissent": false,
+      "id": "killing-of-muammar-gaddafi",
+      "kind": "event",
+      "locator": "Q431888"
+    },
+    {
+      "dissent": false,
       "id": "korean-armistice-agreement",
       "kind": "event",
       "locator": "Q2862267"
@@ -3491,6 +3539,12 @@
       "id": "operation-rosary",
       "kind": "event",
       "locator": "Q2992361"
+    },
+    {
+      "dissent": false,
+      "id": "operation-serval",
+      "kind": "event",
+      "locator": "Q2926766"
     },
     {
       "dissent": false,
@@ -3833,6 +3887,12 @@
       "id": "siamese-revolution-of-1932",
       "kind": "event",
       "locator": "Q2120252"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mafeking",
+      "kind": "event",
+      "locator": "Q2090584"
     },
     {
       "dissent": false,

@@ -1676,9 +1676,39 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-adwa--second-italo-ethiopian-war--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Adwa\", revision 1375956865, § Significance"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-adwa--second-italo-ethiopian-war--reacted-to",
+      "kind": "edge",
+      "locator": "\"Second Italo-Ethiopian War\", revision 1374151253, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mogadishu-1993--war-in-somalia--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Mogadishu (1993)\", revision 1376073635, § Legacy"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mount-tumbledown--argentine-surrender-in-the-falklands-war--caused",
       "kind": "edge",
       "locator": "\"Battle of Mount Tumbledown\", revision 1372389478, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tripoli-2011--killing-of-muammar-gaddafi--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Tripoli (2011)\", revision 1374512796, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tripoli-2011--killing-of-muammar-gaddafi--precondition-of",
+      "kind": "edge",
+      "locator": "\"Killing of Muammar Gaddafi\", revision 1375974277, § Events"
     },
     {
       "dissent": false,
@@ -5780,6 +5810,12 @@
     },
     {
       "dissent": false,
+      "id": "abushiri-revolt",
+      "kind": "event",
+      "locator": "\"Abushiri revolt\", revision 1370425648"
+    },
+    {
+      "dissent": false,
       "id": "afghan-civil-war",
       "kind": "event",
       "locator": "\"Afghan Civil War (1989–1992)\", revision 1371765193"
@@ -5954,6 +5990,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-adwa",
+      "kind": "event",
+      "locator": "\"Battle of Adwa\", revision 1375956865"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-annual",
+      "kind": "event",
+      "locator": "\"Battle of Annual\", revision 1370483005"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ap-bac",
       "kind": "event",
       "locator": "\"Battle of Ap Bac\", revision 1370432225"
@@ -6020,6 +6068,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-magersfontein",
+      "kind": "event",
+      "locator": "\"Battle of Magersfontein\", revision 1370268748"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mogadishu-1993",
+      "kind": "event",
+      "locator": "\"Battle of Mogadishu (1993)\", revision 1376073635"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-musa-dagh",
       "kind": "event",
       "locator": "\"Musa Dagh Resistance\", revision 1370628972"
@@ -6029,6 +6089,12 @@
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "\"Battle of Tannenberg\", revision 1373883764"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tripoli-2011",
+      "kind": "event",
+      "locator": "\"Battle of Tripoli (2011)\", revision 1374512796"
     },
     {
       "dissent": false,
@@ -6407,6 +6473,12 @@
       "id": "first-balkan-war",
       "kind": "event",
       "locator": "\"First Balkan War\", revision 1373171791"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-brega",
+      "kind": "event",
+      "locator": "\"First Battle of Brega\", revision 1372213042"
     },
     {
       "dissent": false,
@@ -6830,6 +6902,12 @@
     },
     {
       "dissent": false,
+      "id": "killing-of-muammar-gaddafi",
+      "kind": "event",
+      "locator": "\"Killing of Muammar Gaddafi\", revision 1375974277"
+    },
+    {
+      "dissent": false,
       "id": "korean-armistice-agreement",
       "kind": "event",
       "locator": "\"Korean Armistice Agreement\", revision 1370487806"
@@ -7067,6 +7145,12 @@
       "id": "operation-reinhard",
       "kind": "event",
       "locator": "\"Operation Reinhard\", revision 1367661549"
+    },
+    {
+      "dissent": false,
+      "id": "operation-serval",
+      "kind": "event",
+      "locator": "\"Operation Serval\", revision 1370699409"
     },
     {
       "dissent": false,
@@ -7403,6 +7487,12 @@
       "id": "siamese-revolution-of-1932",
       "kind": "event",
       "locator": "\"Siamese revolution of 1932\", revision 1370738350"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mafeking",
+      "kind": "event",
+      "locator": "\"Siege of Mafeking\", revision 1370743154"
     },
     {
       "dissent": false,

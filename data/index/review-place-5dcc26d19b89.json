@@ -9,6 +9,35 @@
         }
       ],
       "created": "2026-09-22",
+      "degree": 1,
+      "id": "adwa",
+      "kind": "place",
+      "names": [
+        "Adwa",
+        "Adowa",
+        "Adwa town"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
       "degree": 6,
       "id": "afghanistan-q889",
       "kind": "place",
@@ -219,6 +248,34 @@
         "Republic of Angola",
         "ao",
         "Ngola"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "annual",
+      "kind": "place",
+      "names": [
+        "Annual",
+        "Anwāl"
       ],
       "origin": {
         "tool": "assistant"
@@ -801,6 +858,33 @@
       "names": [
         "Brazil",
         "Federative Republic of Brazil"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "brega",
+      "kind": "place",
+      "names": [
+        "Brega"
       ],
       "origin": {
         "tool": "assistant"
@@ -2550,6 +2634,36 @@
         "Georgia (country)",
         "Georgia (Sakartvelo)",
         "Sakartvelo"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "german-east-africa-q153963",
+      "kind": "place",
+      "names": [
+        "German East Africa",
+        "Deutsch-Ostafrika",
+        "GEA",
+        "DOA"
       ],
       "origin": {
         "tool": "assistant"
@@ -4600,6 +4714,62 @@
       ],
       "created": "2026-09-22",
       "degree": 1,
+      "id": "magersfontein",
+      "kind": "place",
+      "names": [
+        "Magersfontein"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "mahikeng",
+      "kind": "place",
+      "names": [
+        "Mahikeng",
+        "Mafikeng",
+        "Mafeking"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
       "id": "maidan-nezalezhnosti",
       "kind": "place",
       "names": [
@@ -4658,7 +4828,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "mali-q912",
       "kind": "place",
       "names": [
@@ -4858,6 +5028,38 @@
         "Middle East",
         "Mid East",
         "Mideast"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "mogadishu",
+      "kind": "place",
+      "names": [
+        "Mogadishu",
+        "Xamar",
+        "The Seat of the Shah",
+        "Hamar",
+        "Maqadīshū",
+        "Mogadishu, Somalia"
       ],
       "origin": {
         "tool": "assistant"
@@ -7729,6 +7931,34 @@
       ],
       "created": "2026-09-22",
       "degree": 1,
+      "id": "sirte",
+      "kind": "place",
+      "names": [
+        "Sirte",
+        "Sirt"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
       "id": "slovak-republic",
       "kind": "place",
       "names": [
@@ -8570,6 +8800,34 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "tripoli",
+      "kind": "place",
+      "names": [
+        "Tripoli",
+        "Tarabulus"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
