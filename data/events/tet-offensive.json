@@ -18,8 +18,10 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
-    ]
+      "a9-place",
+      "participants-from-p710"
+    ],
+    "note": "Wikidata Q82542 names 13 participants (P710) and the atlas holds an actor for 5 of them, so this list is partial: 8 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
   "origin": {
     "tool": "wikidata"
@@ -52,5 +54,31 @@
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "vietnam-war",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "australia",
+      "role": "belligerent",
+      "note": "Wikidata Q82542, P710 (participant), Q408"
+    },
+    {
+      "actor": "new-zealand",
+      "role": "belligerent",
+      "note": "Wikidata Q82542, P710 (participant), Q664"
+    },
+    {
+      "actor": "korea-republic-of",
+      "role": "belligerent",
+      "note": "Wikidata Q82542, P710 (participant), Q884"
+    },
+    {
+      "actor": "thailand",
+      "role": "belligerent",
+      "note": "Wikidata Q82542, P710 (participant), Q869"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent",
+      "note": "Wikidata Q82542, P710 (participant), Q30"
+    }
+  ]
 }

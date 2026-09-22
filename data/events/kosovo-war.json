@@ -18,9 +18,11 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "participants-from-p710"
     ],
-    "status": "draft"
+    "status": "draft",
+    "note": "Wikidata Q190029 names 18 participants (P710) and the atlas holds an actor for 16 of them, so this list is partial: 2 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
   "origin": {
     "tool": "wikidata"
@@ -53,5 +55,86 @@
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "yugoslav-wars",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "belgium",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q31"
+    },
+    {
+      "actor": "canada",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q16"
+    },
+    {
+      "actor": "denmark",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q35"
+    },
+    {
+      "actor": "france",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q142"
+    },
+    {
+      "actor": "german-federal-republic",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q183"
+    },
+    {
+      "actor": "iceland",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q189"
+    },
+    {
+      "actor": "italy-sardinia",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q38"
+    },
+    {
+      "actor": "luxembourg",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q32"
+    },
+    {
+      "actor": "netherlands",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q55"
+    },
+    {
+      "actor": "norway",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q20"
+    },
+    {
+      "actor": "portugal",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q45"
+    },
+    {
+      "actor": "spain",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q29"
+    },
+    {
+      "actor": "turkey-ottoman-empire",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q43"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q145"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q30"
+    },
+    {
+      "actor": "albania",
+      "role": "belligerent",
+      "note": "Wikidata Q190029, P710 (participant), Q222"
+    }
+  ]
 }

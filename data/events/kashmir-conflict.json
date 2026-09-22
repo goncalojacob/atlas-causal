@@ -18,9 +18,11 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "participants-from-p710"
     ],
-    "status": "draft"
+    "status": "draft",
+    "note": "Wikidata Q1413732 names 3 participants (P710) and the atlas holds an actor for 2 of them, so this list is partial: 1 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
   "origin": {
     "tool": "wikidata"
@@ -54,5 +56,16 @@
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "pakistan",
+      "role": "belligerent",
+      "note": "Wikidata Q1413732, P710 (participant), Q843"
+    },
+    {
+      "actor": "republic-of-india",
+      "role": "belligerent",
+      "note": "Wikidata Q1413732, P710 (participant), Q668"
+    }
+  ]
 }

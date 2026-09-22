@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "participants-from-p710"
     ]
   },
-  "wikidata": "Q676676",
-  "sitelinks": {
-    "count": 18,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q676676",
   "wikipedia": {
     "en": "Hay–Bunau-Varilla Treaty",
     "pt": "Tratado Hay-Bunau-Varilla"
+  },
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -49,5 +50,16 @@
   "region": null,
   "regionNote": null,
   "category": "treaty",
-  "actors": []
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "signatory",
+      "note": "Wikidata Q676676, P710 (participant), Q30"
+    },
+    {
+      "actor": "panama",
+      "role": "signatory",
+      "note": "Wikidata Q676676, P710 (participant), Q804"
+    }
+  ]
 }

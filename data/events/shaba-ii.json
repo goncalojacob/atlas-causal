@@ -18,8 +18,10 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
-    ]
+      "a9-place",
+      "participants-from-p710"
+    ],
+    "note": "Wikidata Q2745406 names 8 participants (P710) and the atlas holds an actor for 5 of them, so this list is partial: 3 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
   "origin": {
     "tool": "wikidata"
@@ -51,5 +53,31 @@
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "angolan-civil-war",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "france",
+      "role": "belligerent",
+      "note": "Wikidata Q2745406, P710 (participant), Q142"
+    },
+    {
+      "actor": "belgium",
+      "role": "belligerent",
+      "note": "Wikidata Q2745406, P710 (participant), Q31"
+    },
+    {
+      "actor": "morocco",
+      "role": "belligerent",
+      "note": "Wikidata Q2745406, P710 (participant), Q1028"
+    },
+    {
+      "actor": "cuba",
+      "role": "belligerent",
+      "note": "Wikidata Q2745406, P710 (participant), Q241"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent",
+      "note": "Wikidata Q2745406, P710 (participant), Q30"
+    }
+  ]
 }

@@ -18,8 +18,10 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
-    ]
+      "a9-place",
+      "participants-from-p710"
+    ],
+    "note": "Wikidata Q322607 names 7 participants (P710) and the atlas holds an actor for 5 of them, so this list is partial: 2 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
   "origin": {
     "tool": "wikidata"
@@ -52,5 +54,31 @@
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "arab-israeli-conflict",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "israel",
+      "role": "belligerent",
+      "note": "Wikidata Q322607, P710 (participant), Q801"
+    },
+    {
+      "actor": "egypt",
+      "role": "belligerent",
+      "note": "Wikidata Q322607, P710 (participant), Q79"
+    },
+    {
+      "actor": "jordan",
+      "role": "belligerent",
+      "note": "Wikidata Q322607, P710 (participant), Q810"
+    },
+    {
+      "actor": "syria",
+      "role": "belligerent",
+      "note": "Wikidata Q322607, P710 (participant), Q858"
+    },
+    {
+      "actor": "cuba",
+      "role": "belligerent",
+      "note": "Wikidata Q322607, P710 (participant), Q241"
+    }
+  ]
 }

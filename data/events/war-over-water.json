@@ -18,7 +18,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "participants-from-p710"
     ]
   },
   "origin": {
@@ -51,5 +52,26 @@
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "arab-israeli-conflict",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "israel",
+      "role": "belligerent",
+      "note": "Wikidata Q2904516, P710 (participant), Q801"
+    },
+    {
+      "actor": "syria",
+      "role": "belligerent",
+      "note": "Wikidata Q2904516, P710 (participant), Q858"
+    },
+    {
+      "actor": "jordan",
+      "role": "belligerent",
+      "note": "Wikidata Q2904516, P710 (participant), Q810"
+    },
+    {
+      "actor": "lebanon",
+      "role": "belligerent",
+      "note": "Wikidata Q2904516, P710 (participant), Q822"
+    }
+  ]
 }

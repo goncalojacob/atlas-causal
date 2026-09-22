@@ -19,7 +19,8 @@
     "flags": [
       "imported-facts",
       "m42-interval-corrected",
-      "a9-place"
+      "a9-place",
+      "participants-from-p710"
     ]
   },
   "origin": {
@@ -53,5 +54,26 @@
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "arab-israeli-conflict",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "israel",
+      "role": "belligerent",
+      "note": "Wikidata Q49101, P710 (participant), Q801"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent",
+      "note": "Wikidata Q49101, P710 (participant), Q145"
+    },
+    {
+      "actor": "france",
+      "role": "belligerent",
+      "note": "Wikidata Q49101, P710 (participant), Q142"
+    },
+    {
+      "actor": "egypt",
+      "role": "belligerent",
+      "note": "Wikidata Q49101, P710 (participant), Q79"
+    }
+  ]
 }

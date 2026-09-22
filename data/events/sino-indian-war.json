@@ -18,7 +18,8 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "participants-from-p710"
     ],
     "status": "draft"
   },
@@ -52,5 +53,16 @@
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "china",
+      "role": "belligerent",
+      "note": "Wikidata Q208694, P710 (participant), Q148"
+    },
+    {
+      "actor": "republic-of-india",
+      "role": "belligerent",
+      "note": "Wikidata Q208694, P710 (participant), Q668"
+    }
+  ]
 }

@@ -18,8 +18,10 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
-    ]
+      "a9-place",
+      "participants-from-p710"
+    ],
+    "note": "Wikidata Q838695 names 9 participants (P710) and the atlas holds an actor for 5 of them, so this list is partial: 4 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
   "origin": {
     "tool": "wikidata"
@@ -51,5 +53,31 @@
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "unita",
+      "role": "belligerent",
+      "note": "Wikidata Q838695, P710 (participant), Q28699"
+    },
+    {
+      "actor": "rwanda",
+      "role": "belligerent",
+      "note": "Wikidata Q838695, P710 (participant), Q1037"
+    },
+    {
+      "actor": "uganda",
+      "role": "belligerent",
+      "note": "Wikidata Q838695, P710 (participant), Q1036"
+    },
+    {
+      "actor": "burundi",
+      "role": "belligerent",
+      "note": "Wikidata Q838695, P710 (participant), Q967"
+    },
+    {
+      "actor": "angola",
+      "role": "belligerent",
+      "note": "Wikidata Q838695, P710 (participant), Q916"
+    }
+  ]
 }

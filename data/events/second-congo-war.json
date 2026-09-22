@@ -21,8 +21,10 @@
       "m44b-retracted",
       "standing-backfilled",
       "imported-by-wikidata",
-      "a9-place"
-    ]
+      "a9-place",
+      "participants-from-p710"
+    ],
+    "note": "Wikidata Q75756 names 20 participants (P710) and the atlas holds an actor for 9 of them, so this list is partial: 11 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
   "origin": {
     "tool": "wikidata"
@@ -54,5 +56,51 @@
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "angola",
+      "role": "belligerent",
+      "note": "Wikidata Q75756, P710 (participant), Q916"
+    },
+    {
+      "actor": "chad",
+      "role": "belligerent",
+      "note": "Wikidata Q75756, P710 (participant), Q657"
+    },
+    {
+      "actor": "namibia",
+      "role": "belligerent",
+      "note": "Wikidata Q75756, P710 (participant), Q1030"
+    },
+    {
+      "actor": "zimbabwe-rhodesia",
+      "role": "belligerent",
+      "note": "Wikidata Q75756, P710 (participant), Q954"
+    },
+    {
+      "actor": "sudan",
+      "role": "belligerent",
+      "note": "Wikidata Q75756, P710 (participant), Q1049"
+    },
+    {
+      "actor": "unita",
+      "role": "belligerent",
+      "note": "Wikidata Q75756, P710 (participant), Q28699"
+    },
+    {
+      "actor": "uganda",
+      "role": "belligerent",
+      "note": "Wikidata Q75756, P710 (participant), Q1036"
+    },
+    {
+      "actor": "rwanda",
+      "role": "belligerent",
+      "note": "Wikidata Q75756, P710 (participant), Q1037"
+    },
+    {
+      "actor": "burundi",
+      "role": "belligerent",
+      "note": "Wikidata Q75756, P710 (participant), Q967"
+    }
+  ]
 }

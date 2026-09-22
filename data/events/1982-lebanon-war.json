@@ -18,9 +18,11 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "participants-from-p710"
     ],
-    "status": "draft"
+    "status": "draft",
+    "note": "Wikidata Q49103 names 13 participants (P710) and the atlas holds an actor for 2 of them, so this list is partial: 11 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
   "origin": {
     "tool": "wikidata"
@@ -53,5 +55,16 @@
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "lebanese-civil-war",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "israel",
+      "role": "belligerent",
+      "note": "Wikidata Q49103, P710 (participant), Q801"
+    },
+    {
+      "actor": "syria",
+      "role": "belligerent",
+      "note": "Wikidata Q49103, P710 (participant), Q858"
+    }
+  ]
 }
