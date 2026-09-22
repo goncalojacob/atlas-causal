@@ -1160,6 +1160,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-domokos",
+      "kind": "event",
+      "locator": "Q2888423"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dunkirk",
       "kind": "event",
       "locator": "Q208529"
@@ -1190,6 +1196,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-st-quentin",
+      "kind": "event",
+      "locator": "Q2066129"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "Q153858"
@@ -1199,6 +1211,12 @@
       "id": "battle-of-tsushima",
       "kind": "event",
       "locator": "Q208127"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-velestino",
+      "kind": "event",
+      "locator": "Q61675345"
     },
     {
       "dissent": false,
@@ -1373,6 +1391,12 @@
       "id": "covid-19-pandemic-in-europe",
       "kind": "event",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "cretan-revolt-of-1897-1898",
+      "kind": "event",
+      "locator": "Q930925"
     },
     {
       "dissent": false,
@@ -1913,6 +1937,36 @@
       "id": "irish-civil-war",
       "kind": "event",
       "locator": "Q748042"
+    },
+    {
+      "dissent": false,
+      "id": "italian-war-of-1521-1526",
+      "kind": "event",
+      "locator": "Q698281"
+    },
+    {
+      "dissent": false,
+      "id": "italian-war-of-1536-1538",
+      "kind": "event",
+      "locator": "Q2452024"
+    },
+    {
+      "dissent": false,
+      "id": "italian-war-of-1551-1559",
+      "kind": "event",
+      "locator": "Q2524228"
+    },
+    {
+      "dissent": false,
+      "id": "italian-wars",
+      "kind": "event",
+      "locator": "Q273348"
+    },
+    {
+      "dissent": false,
+      "id": "italian-wars-of-1499-1504",
+      "kind": "event",
+      "locator": "Q2087151"
     },
     {
       "dissent": false,
@@ -2999,6 +3053,12 @@
       "id": "war-of-the-camps",
       "kind": "event",
       "locator": "Q2777811"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-league-of-cambrai",
+      "kind": "event",
+      "locator": "Q636365"
     },
     {
       "dissent": false,

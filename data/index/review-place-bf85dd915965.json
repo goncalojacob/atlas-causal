@@ -292,6 +292,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "crete",
+      "kind": "place",
+      "names": [
+        "Crete",
+        "Creta"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -306,6 +333,32 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "domokos",
+      "kind": "place",
+      "names": [
+        "Domokos"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -377,6 +430,34 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 2,
+      "id": "italian-peninsula",
+      "kind": "place",
+      "names": [
+        "Italian Peninsula",
+        "Península apenina",
+        "Península Itálica"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -778,6 +859,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "provence",
+      "kind": "place",
+      "names": [
+        "Provence",
+        "Provença"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -838,6 +946,33 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "saint-quentin",
+      "kind": "place",
+      "names": [
+        "Saint-Quentin",
+        "Saint-Quentin, Aisne"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -1056,6 +1191,32 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "velestino",
+      "kind": "place",
+      "names": [
+        "Velestino"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
         "status": "draft"
       },
       "revised": null,

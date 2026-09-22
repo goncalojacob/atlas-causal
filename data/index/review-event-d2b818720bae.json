@@ -4237,6 +4237,34 @@
         "wikidata"
       ],
       "created": "2026-09-22",
+      "id": "battle-of-domokos",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greco-turkish-war-of-1897",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Domokos"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
       "id": "battle-of-dunkirk",
       "kind": "event",
       "origin": {
@@ -4379,6 +4407,34 @@
         "wikidata"
       ],
       "created": "2026-09-22",
+      "id": "battle-of-st-quentin",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-war-of-1551-1559",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of St. Quentin"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
       "id": "battle-of-tannenberg",
       "kind": "event",
       "origin": {
@@ -4452,6 +4508,34 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Tsushima"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-velestino",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greco-turkish-war-of-1897",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Velestino"
     },
     {
       "authors": [
@@ -5879,6 +5963,33 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "The Community of Portuguese Language Countries is founded"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "cretan-revolt-of-1897-1898",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Cretan Revolt of 1897–1898"
     },
     {
       "authors": [
@@ -8399,7 +8510,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 1,
+      "degree": 2,
       "id": "greco-turkish-war-of-1897",
       "kind": "event",
       "origin": {
@@ -9541,6 +9652,143 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Irish Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "italian-war-of-1521-1526",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-wars",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Italian War of 1521–1526"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "italian-war-of-1536-1538",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-wars",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Italian War of 1536–1538"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "italian-war-of-1551-1559",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-wars",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Italian War of 1551–1559"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "italian-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Italian Wars"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "italian-wars-of-1499-1504",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-wars",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Italian Wars of 1499–1504"
     },
     {
       "authors": [
@@ -17374,6 +17622,34 @@
         "wikidata"
       ],
       "created": "2026-09-22",
+      "id": "war-of-the-league-of-cambrai",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-wars",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War of the League of Cambrai"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
       "degree": 1,
       "id": "war-over-water",
       "kind": "event",
@@ -17972,6 +18248,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-domokos",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-dunkirk",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -17990,7 +18272,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-st-quentin",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-tannenberg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-velestino",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -18051,6 +18345,36 @@
     },
     {
       "id": "interwar-period",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "italian-war-of-1521-1526",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "italian-war-of-1536-1538",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "italian-war-of-1551-1559",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "italian-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "italian-wars-of-1499-1504",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -18141,6 +18465,12 @@
     },
     {
       "id": "wadai-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "war-of-the-league-of-cambrai",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

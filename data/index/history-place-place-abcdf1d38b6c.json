@@ -204,6 +204,15 @@
         }
       ]
     },
+    "crete": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "dili": {
       "from": "git",
       "versions": [
@@ -226,6 +235,15 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "domokos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -260,6 +278,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "italian-peninsula": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -576,6 +603,15 @@
         }
       ]
     },
+    "provence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "recife": {
       "from": "git",
       "versions": [
@@ -623,6 +659,15 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "saint-quentin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -725,6 +770,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "velestino": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

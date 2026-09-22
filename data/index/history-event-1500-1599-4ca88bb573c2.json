@@ -2,6 +2,15 @@
   "from": 1500,
   "kind": "event",
   "records": {
+    "battle-of-st-quentin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "governorate-general-of-brazil-1549": {
       "from": "git",
       "versions": [
@@ -65,6 +74,33 @@
         }
       ]
     },
+    "italian-war-of-1521-1526": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "italian-war-of-1536-1538": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "italian-war-of-1551-1559": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "portuguese-landfall-in-brazil-1500": {
       "from": "git",
       "versions": [
@@ -125,6 +161,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "war-of-the-league-of-cambrai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     }

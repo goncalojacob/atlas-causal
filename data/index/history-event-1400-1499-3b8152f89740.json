@@ -23,6 +23,24 @@
         }
       ]
     },
+    "italian-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "italian-wars-of-1499-1504": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "the-first-columbian-voyage-1492": {
       "from": "git",
       "versions": [

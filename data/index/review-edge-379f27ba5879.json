@@ -5279,6 +5279,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-22",
+      "from": "cretan-revolt-of-1897-1898",
+      "id": "cretan-revolt-of-1897-1898--greco-turkish-war-of-1897--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "greco-turkish-war-of-1897",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-08",
       "from": "crisis-portugal",
       "id": "crisis-portugal--2011-portuguese-legislative-election--caused",

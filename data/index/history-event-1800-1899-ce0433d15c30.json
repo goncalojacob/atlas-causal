@@ -274,6 +274,24 @@
         }
       ]
     },
+    "battle-of-domokos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-velestino": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "benin-expedition-of-1897": {
       "from": "git",
       "versions": [
@@ -345,6 +363,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "cretan-revolt-of-1897-1898": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
