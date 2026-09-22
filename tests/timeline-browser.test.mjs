@@ -325,8 +325,12 @@ test('a state change updates the bars in place and does not rebuild them', { ski
     // which is the paragraph above, and is not the drawing being rebuilt. The
     // property this line is about is that the picture is the *same size*
     // afterwards, and that is a proportion and not a number (M79, and red on
-    // `m0` before this branch existed).
-    const same = Math.max(10, Math.round(before * 0.02));
+    // `m0` before this branch existed). Two per cent held for one snapshot
+    // and not the next: M42's amendment A8 gave twenty-two events a second
+    // parent, each a ring, and the click moved twenty of 950 (`950 to 930`).
+    // The property is the churn bounds' own, so it is their share — one
+    // proportion for the three assertions, not three (22 September).
+    const same = handful;
     assert.ok(Math.abs(after - before) < same, `and it is the same drawing (${before} to ${after})`);
 
     // And the layers are still the only children of the <svg>: nothing was
