@@ -694,12 +694,28 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // A line is a control, so it answers Enter and Space, exactly as a mark on
   // the map has since M63. It is a `<line>` and not a `<button>`, so neither
   // key is free.
+  //
+  // **And so is a mark** (M83, B5). M63 made every mark on the map reachable by
+  // Tab and openable by Enter; M80 gave the graph's single-link lines the same;
+  // the graph's own nodes and stacks were never given it, so a keyboard reader
+  // could open a connection on this picture and neither of its two ends, nor
+  // any event at all. A node opens the record, a stack opens its list — which
+  // is what a click on each already does.
   root.addEventListener('keydown', (e) => {
     if (e.key !== 'Enter' && e.key !== ' ') return;
-    const el = e.target.closest?.('[data-edge]');
+    const el = e.target.closest?.('[data-edge], [data-id], [data-stack]');
     if (!el) return;
     e.preventDefault();
-    chooseEdge(el.getAttribute('data-edge'));
+    if (el.hasAttribute('data-edge')) {
+      chooseEdge(el.getAttribute('data-edge'));
+      return;
+    }
+    if (el.hasAttribute('data-id')) {
+      select(el.getAttribute('data-id'));
+      return;
+    }
+    const stack = stacked?.nodes.find((n) => n.key === el.getAttribute('data-stack'));
+    if (stack) openStack(stack);
   });
 
   // A stack of nodes drawn as one, clicked. The members go to the panel
@@ -735,22 +751,27 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // way (health review B, finding 10).
   const select = (id) => walkOrSelect(state, atlas, id);
 
-  // Which link the keyboard is on, and putting it back after a redraw. By the
-  // link's own id and not by the element: the elements are all replaced.
-  const focusedEdgeId = () => {
+  // Which control the keyboard is on, and putting it back after a redraw. By
+  // the record's own id and not by the element: the elements are all replaced.
+  // One pair for the lines and the marks alike (M83, B5), because the question
+  // and the answer are the same for both — which attribute names it, and which
+  // group is about to be rebuilt.
+  const focusedIn = (attribute) => {
     const active = root.ownerDocument?.activeElement;
-    return active && root.contains(active) && active.hasAttribute?.('data-edge')
-      ? active.getAttribute('data-edge') : null;
+    return active && root.contains(active) && active.hasAttribute?.(attribute)
+      ? active.getAttribute(attribute) : null;
   };
-  const restoreEdgeFocus = (id) => {
+  const restoreFocus = (group, attribute, id) => {
     if (id === null) return;
-    for (const el of edgesGroup.querySelectorAll('[data-edge]')) {
-      if (el.getAttribute('data-edge') === id) {
+    for (const el of group.querySelectorAll(`[${attribute}]`)) {
+      if (el.getAttribute(attribute) === id) {
         el.focus?.({ preventScroll: true });
         return;
       }
     }
   };
+  const focusedEdgeId = () => focusedIn('data-edge');
+  const restoreEdgeFocus = (id) => restoreFocus(edgesGroup, 'data-edge', id);
 
   // And choosing a line, which is the other thing this view can be asked. It
   // sets one field and clears none: a link is read, not walked, so the window,
@@ -1024,6 +1045,11 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     }
     restoreEdgeFocus(focusedEdge);
 
+    // The same as the lines above: every mark is drawn again on every render,
+    // so a mark opened from the keyboard would take the focus back to the
+    // document with it.
+    const focusedNode = focusedIn('data-id');
+    const focusedStack = focusedIn('data-stack');
     nodesGroup.replaceChildren();
     let selectedMark = null;
     for (const stack of stacked.nodes) {
@@ -1036,13 +1062,19 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         const span = stack.years.min === stack.years.max
           ? formatYear(stack.years.min)
           : `${formatYear(stack.years.min)}–${formatYear(stack.years.max)}`;
+        const stackTitle = `${labelOf(atlas, node.event) ?? LOADING_LABEL} — and ${hidden} more event${hidden === 1 ? '' : 's'} here, ${span}`;
         nodesGroup.appendChild(svg('circle', {
-          cx: stack.x, cy: stack.y, r: radius / k,
+          cx: stack.x,
+          cy: stack.y,
+          r: radius / k,
           class: classes('node', 'stack', stack.coincident ? 'coincident' : 'splittable',
             stack.members.every((m) => lensNear.has(m.id)) ? 'lens-near' : '',
             Number.isFinite(nearest) ? `in-horizon ${horizonBand(nearest)}` : ''),
           'data-stack': stack.key,
-        }, [svgTitle(`${labelOf(atlas, node.event) ?? LOADING_LABEL} — and ${hidden} more event${hidden === 1 ? '' : 's'} here, ${span}`)]));
+          tabindex: '0',
+          role: 'button',
+          'aria-label': stackTitle,
+        }, [svgTitle(stackTitle)]));
         nodesGroup.appendChild(textNode(`+${hidden}`, {
           x: stack.x + (radius + 2) / k,
           y: stack.y - (radius + 1) / k,
@@ -1072,8 +1104,19 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       // not any more: `stackLayout` returns the picture's coordinates, with
       // time stretched, and `representative` is the arrangement's node, which
       // never moves.
+      // A control, as a mark on the map has been since M63 (M83, B5): it takes
+      // the focus, says what it is, and answers Enter and Space. The label is
+      // the title already computed above, so there is one sentence about this
+      // mark and not two.
       const mark = svg('circle', {
-        cx: stack.x, cy: stack.y, r: radius / k, class: cls, 'data-id': node.id,
+        cx: stack.x,
+        cy: stack.y,
+        r: radius / k,
+        class: cls,
+        'data-id': node.id,
+        tabindex: '0',
+        role: 'button',
+        'aria-label': title,
       }, [svgTitle(title)]);
       nodesGroup.appendChild(mark);
       // An event with parts carries the ring at every zoom (m30c-brief, §1),
@@ -1091,6 +1134,8 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       if (isSelected) selectedMark = mark;
     }
     if (selectedMark) nodesGroup.appendChild(selectedMark);
+    restoreFocus(nodesGroup, 'data-id', focusedNode);
+    restoreFocus(nodesGroup, 'data-stack', focusedStack);
 
     drawLabels(s, k, box, working);
   }

@@ -228,3 +228,45 @@ test('B3: and at rest, with no box at all, the sentence is still said', { skip }
       'and nothing to press, because the map is looking at all of it');
   }, { device: DESK });
 });
+
+// --- B5: a graph node is reachable from the keyboard, as a line is ----------
+test('B5: a mark on the graph takes the focus and answers Enter', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?view=graph'), ready);
+    await waitFor(page, NODES, 'the graph to draw its nodes');
+
+    const marks = await page.eval(`
+      const svg = document.querySelector('svg.graph');
+      return [...svg.querySelectorAll('.layer-nodes circle[data-id], .layer-nodes circle[data-stack]')]
+        .map((el) => ({
+          id: el.getAttribute('data-id'),
+          stack: el.getAttribute('data-stack'),
+          tabindex: el.getAttribute('tabindex'),
+          role: el.getAttribute('role'),
+          label: el.getAttribute('aria-label'),
+        }));`);
+    assert.ok(marks.length > 2, 'the graph drew marks');
+    for (const mark of marks) {
+      assert.equal(mark.tabindex, '0', 'every mark can be reached by Tab');
+      assert.equal(mark.role, 'button', 'and says it is a control');
+      assert.ok(mark.label && mark.label.length > 0, 'and says what it is');
+    }
+
+    // Enter on a mark of one opens the record, which is what a click does.
+    const one = marks.find((m) => m.id);
+    assert.ok(one, 'there is a mark standing for one event');
+    await page.eval(`
+      const el = document.querySelector('svg.graph .layer-nodes circle[data-id=${JSON.stringify(one.id)}]');
+      el.focus();
+      el.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true, cancelable: true }));
+      return true;`);
+    await waitFor(
+      page,
+      `return new URLSearchParams(location.search).get('selected') === ${JSON.stringify(one.id)};`,
+      'Enter on the mark to open its record',
+    );
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});
