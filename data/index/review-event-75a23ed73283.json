@@ -4188,7 +4188,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "berlin-conference",
       "kind": "event",
       "origin": {
@@ -4576,7 +4576,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "budapest-memorandum",
       "kind": "event",
       "origin": {
@@ -6346,7 +6346,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "eritrean-war-of-independence",
       "kind": "event",
       "origin": {
@@ -9515,7 +9515,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "la-violencia",
       "kind": "event",
       "origin": {
@@ -12799,6 +12799,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
+      "degree": 1,
       "id": "scramble-for-africa",
       "kind": "event",
       "origin": {
@@ -13779,7 +13780,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "spanish-civil-war",
       "kind": "event",
       "origin": {
@@ -15829,7 +15830,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
       "kind": "event",
       "origin": {
@@ -16775,7 +16776,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 28,
+      "degree": 29,
       "id": "world-war-ii",
       "kind": "event",
       "origin": {
@@ -17177,12 +17178,6 @@
     },
     {
       "id": "revolution-in-the-kingdom-of-poland",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "scramble-for-africa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

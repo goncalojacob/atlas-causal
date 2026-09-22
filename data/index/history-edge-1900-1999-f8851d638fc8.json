@@ -4234,6 +4234,15 @@
         }
       ]
     },
+    "spanish-civil-war--la-violencia--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "spanish-civil-war--spanish-revolution--caused": {
       "from": "git",
       "versions": [
@@ -4653,6 +4662,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "treaty-on-the-non-proliferation-of-nuclear-weapons--budapest-memorandum--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -5119,6 +5137,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "world-war-ii--eritrean-war-of-independence--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

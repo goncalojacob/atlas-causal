@@ -596,6 +596,12 @@
     },
     {
       "dissent": false,
+      "id": "berlin-conference--scramble-for-africa--enabled",
+      "kind": "edge",
+      "locator": "\"Scramble for Africa\", revision 1373841219, § lead and § Berlin Conference (1884–1885)"
+    },
+    {
+      "dissent": false,
       "id": "berlin-conference--second-boer-war--precondition-of",
       "kind": "edge",
       "locator": "\"Berlin Conference\", revision 1369494326, § Aftermath"
@@ -2624,6 +2630,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-civil-war--la-violencia--inspired",
+      "kind": "edge",
+      "locator": "\"La Violencia\", revision 1373312674, § Credence in conspiracy theories as causes of violence"
+    },
+    {
+      "dissent": false,
       "id": "spanish-civil-war--spanish-revolution--caused",
       "kind": "edge",
       "locator": "\"Spanish Revolution of 1936\", revision 1369913897, § lead"
@@ -3482,6 +3494,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-on-the-non-proliferation-of-nuclear-weapons--budapest-memorandum--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty on the Non-Proliferation of Nuclear Weapons\", revision 1375952857, § Ukraine"
+    },
+    {
+      "dissent": false,
       "id": "treaty-on-the-non-proliferation-of-nuclear-weapons--treaty-on-the-prohibition-of-nuclear-weapons--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty on the Prohibition of Nuclear Weapons\", revision 1363091604, § Concept and § Overview of provisions"
@@ -3827,6 +3845,12 @@
       "id": "world-war-ii--deportation-of-the-crimean-tatars--precondition-of",
       "kind": "edge",
       "locator": "\"Deportation of the Crimean Tatars\", revision 1375533569, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--eritrean-war-of-independence--precondition-of",
+      "kind": "edge",
+      "locator": "\"Eritrean War of Independence\", revision 1374058781, § lead and § Background"
     },
     {
       "dissent": false,
