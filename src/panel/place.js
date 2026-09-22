@@ -50,7 +50,7 @@ function actorsHere(ctx, events) {
 // of the rule (B12, A3).
 export function placeEventsSection(ctx, place, state) {
   const events = ctx.atlas.eventsByPlace.get(place.id) ?? [];
-  const window = resolveWindow(state, ctx.atlas.extent, ctx.atlas.opens);
+  const window = resolveWindow(state, ctx.atlas.extent);
   const inside = events.filter((e) => overlaps(e.when, window)).length;
   const rows = events.map((event) => `<li class="actor-row ${overlaps(event.when, window) ? '' : 'faded'}">
     <span class="when">${esc(formatYear(ctx.startYear(event)))}</span>

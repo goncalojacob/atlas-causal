@@ -132,6 +132,27 @@ export function categoriesInUse(events) {
   return [...counts.keys()].sort().map((id) => ({ id, count: counts.get(id) }));
 }
 
+// How many of the atlas's links carry the two things an edge is required to
+// have — a written argument and at least one source — and how many there are
+// (M85, A14). The intro card asserted that every one of them does; it is a
+// fact about the data, so it is counted rather than written, here where every
+// record is in hand and put in the manifest for the browser (build-index.mjs).
+//
+// Active edges alone: a retracted edge is not a link the atlas is offering
+// anybody, and counting one would make the front page's fraction a statement
+// about the archive rather than about the atlas.
+export function linkCounts(edges) {
+  let active = 0;
+  let explained = 0;
+  for (const edge of edges ?? []) {
+    if (edge?.status !== 'active') continue;
+    active += 1;
+    const argued = typeof edge.explanation === 'string' && edge.explanation.trim() !== '';
+    if (argued && (edge.sources ?? []).length > 0) explained += 1;
+  }
+  return { active, explained };
+}
+
 export function rolesInUse(events) {
   const roles = new Set();
   for (const e of events ?? []) {

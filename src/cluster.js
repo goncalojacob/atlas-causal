@@ -296,3 +296,29 @@ export function spreadPositions(count, { radius = SPREAD_RADIUS, gap = SPREAD_GA
   });
   return positions;
 }
+
+// ─── What a stack says about itself ────────────────────────────────────────
+//
+// Composed here and in no view (M85, B13 and A4). The map wrote the title in
+// `map/layers/events.js` and the graph wrote the same sentence again in
+// `graph-view.js`, a year's span apart; and the badge beside the mark was a
+// bare `+46`, which a reader of the first screen reads as a typo rather than
+// as a count (review A, finding 4).
+//
+// `count` is the whole stack, members and representative alike, because that
+// is what a cluster knows about itself. What both sentences say is how many
+// the mark is standing in front of, which is one fewer.
+
+// "Carnation Revolution — and 46 more events here", and the graph's own
+// "…, 1910–1911" after it where the stack covers more than one year.
+export function stackTitle(name, count, { span = null } = {}) {
+  const hidden = Math.max(0, count - 1);
+  const head = `${name} — and ${hidden} more event${hidden === 1 ? '' : 's'} here`;
+  return span ? `${head}, ${span}` : head;
+}
+
+// And the badge drawn beside the mark, in the title's own words and short
+// enough to sit on a mark: "46 more". Never `+46`.
+export function stackBadge(count) {
+  return `${Math.max(0, count - 1)} more`;
+}

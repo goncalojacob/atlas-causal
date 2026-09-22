@@ -307,16 +307,21 @@ test('a drag of the band leaves the open explanation open and moves the horizon'
   await withBrowser(async (page, url) => {
     await open(page, url('?selected=carnation-revolution-1974&view=timeline'));
     await waitFor(page, 'return document.querySelectorAll("#timeline [data-window]").length === 3;', 'the band');
-    // **Every attribute shard first** (M65, deviation 890). A shard landing is
-    // not a state change and the panel is allowed to draw the card again for
-    // one — `refresh` in panel.js says so in as many words. What this test is
-    // about is the other thing: that a *state change* patches the card rather
-    // than rebuilding it. Since M65 a chosen event narrows all three views to
-    // its own neighbourhood, so the timeline no longer fetches the centuries
-    // the rest of the corpus lives in, and the drag below is what asks for
-    // one — which rebuilt the card under the marker and read as this test's
-    // own promise being broken. Waiting for the corpus is how the fact is read
-    // where it holds; the assertions are unchanged.
+    // **Every attribute shard first**, so the card is drawn whole before the
+    // markers go on it (M65, deviation 890).
+    //
+    // It used to be load-bearing as well: a shard landing rebuilt the card,
+    // whatever century it was, so the drag below — which asks for a century the
+    // rest of the corpus lives in — threw the card away under the marker and
+    // read as this test's own promise being broken. Pull request #20 went red
+    // on 22 September on a commit the push run had passed.
+    //
+    // M85 (§9) fixed that where it was: the panel draws the card again only for
+    // a shard **the card is drawn from**, and those are pinned while it is on
+    // screen. `tests/m85-browser.test.mjs` is the test of that, with the window
+    // moved onto a century nobody has fetched. What is left here is what this
+    // test was always about: that a *state change* patches the card rather than
+    // rebuilding it. The assertions are unchanged.
     const shards = (manifest.attributeShards ?? []).length;
     assert.ok(shards > 1, `${shards} attribute shards to arrive`);
     await waitFor(

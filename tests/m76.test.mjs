@@ -20,6 +20,7 @@ import path from 'node:path';
 
 import { bandEvents, bandProfile, profileEvents } from '../src/window-band.js';
 import { STRIP } from '../src/map-band.js';
+import { WINDOW_CONTROL_HTML } from '../src/window-control.js';
 import { busiestColumn, densityPath, columnHeight } from '../src/density.js';
 import { workingSet } from '../src/emphasis.js';
 import { lensView } from '../src/lens.js';
@@ -224,15 +225,20 @@ test('over the repository’s own corpus the lens is narrower than the picture',
 // removed."* The band's double-click-to-decade and its arrow keys are how a
 // precise year is still reached, and they are `window-band.js`'s, untouched.
 
-test('the masthead has no field and no second profile left in it', async () => {
-  const source = await read('src/window-control.js');
-  assert.ok(!/data-window=/.test(source), 'no field to type a year into');
-  assert.ok(!/<input/.test(source), 'and no input of any kind');
-  assert.ok(!/window-density/.test(source), 'and no density hint beside the band’s own profile');
+// **The markup and not the module's source text** (M85, B14). This read
+// `src/window-control.js` off disk and grepped it, which a comment naming an
+// input would have failed and a rename would have passed. `WINDOW_CONTROL_HTML`
+// is what the control renders — the whole of it, since nothing in it comes from
+// `data/` — so the rule is asked of the thing the rule is about.
+
+test('the masthead has no field and no second profile left in it', () => {
+  assert.ok(!/data-window=/.test(WINDOW_CONTROL_HTML), 'no field to type a year into');
+  assert.ok(!/<input/.test(WINDOW_CONTROL_HTML), 'and no input of any kind');
+  assert.ok(!/window-density/.test(WINDOW_CONTROL_HTML), 'and no density hint beside the band’s own profile');
   // What the brief says to keep.
-  assert.match(source, /window-count/, 'the count in view stays');
-  assert.match(source, /class="pin"/, 'the pin that gives the world back stays');
-  assert.match(source, /window-standing/, 'and the standing line stays');
+  assert.match(WINDOW_CONTROL_HTML, /window-count/, 'the count in view stays');
+  assert.match(WINDOW_CONTROL_HTML, /class="pin"/, 'the pin that gives the world back stays');
+  assert.match(WINDOW_CONTROL_HTML, /window-standing/, 'and the standing line stays');
 });
 
 test('the stylesheet has no rule for a field that no longer exists', async () => {

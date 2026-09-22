@@ -208,7 +208,7 @@ export function bindWindowGestures(root, {
     const next = windowOf(patch.from, patch.to, atlas.extent);
     if (next) state.set(next);
   };
-  const currentWindow = () => resolveWindow(state.get(), atlas.extent, atlas.opens);
+  const currentWindow = () => resolveWindow(state.get(), atlas.extent);
   const yearAt = (clientX) => {
     const rect = root.getBoundingClientRect();
     const x = ((clientX - rect.left) / (rect.width || 1)) * viewWidth();
