@@ -274,6 +274,15 @@
         }
       ]
     },
+    "benin-expedition-of-1897": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "berlin-conference": {
       "from": "git",
       "versions": [

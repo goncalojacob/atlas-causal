@@ -543,6 +543,15 @@
         }
       ]
     },
+    "1920-georgian-coup-attempt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "1921-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -5025,6 +5034,15 @@
         }
       ]
     },
+    "bambatha-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "bangladesh-liberation-war": {
       "from": "git",
       "versions": [
@@ -6970,6 +6988,15 @@
         }
       ]
     },
+    "eritrean-civil-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "eritrean-war-of-independence": {
       "from": "git",
       "versions": [
@@ -7954,6 +7981,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "herero-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -9209,6 +9245,15 @@
             "parent"
           ],
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "massacre-of-arabs-during-the-zanzibar-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -11706,6 +11751,24 @@
         }
       ]
     },
+    "sevastopol-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "shaba-ii": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "sharpeville-massacre": {
       "from": "git",
       "versions": [
@@ -12229,6 +12292,15 @@
         }
       ]
     },
+    "sveaborg-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "tajikistani-civil-war": {
       "from": "git",
       "versions": [
@@ -12374,6 +12446,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "the-holocaust-in-romania": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -13222,6 +13303,15 @@
         }
       ]
     },
+    "wadai-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "wall-street-crash-of-1929": {
       "from": "git",
       "versions": [
@@ -13693,6 +13783,15 @@
             "status"
           ],
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "zaian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

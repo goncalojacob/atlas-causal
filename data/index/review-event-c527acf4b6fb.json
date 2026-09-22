@@ -253,6 +253,33 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "1920-georgian-coup-attempt",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russian-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1920 Georgian coup attempt"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -2525,7 +2552,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "2020-malian-coup-d-etat",
       "kind": "event",
       "origin": {
@@ -2541,6 +2568,35 @@
       "revised": null,
       "status": "active",
       "title": "2020 Malian coup d'état"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "2021-malian-coup-d-etat",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2021 Malian coup d'état"
     },
     {
       "authors": [
@@ -3326,7 +3382,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "angolan-civil-war",
       "kind": "event",
       "origin": {
@@ -3823,6 +3879,33 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "bambatha-rebellion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bambatha Rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -4065,6 +4148,33 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Belovezh Accords"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "benin-expedition-of-1897",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Benin Expedition of 1897"
     },
     {
       "authors": [
@@ -6177,6 +6287,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "eritrean-civil-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "eritrean-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Eritrean Civil Wars"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata"
@@ -7142,7 +7279,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "french-conquest-of-morocco",
       "kind": "event",
       "origin": {
@@ -8103,6 +8240,33 @@
       "revised": "2026-09-17",
       "status": "active",
       "title": "The hereditary captaincies of Brazil"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "herero-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Herero Wars"
     },
     {
       "authors": [
@@ -10140,6 +10304,33 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "March on Rome"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "massacre-of-arabs-during-the-zanzibar-revolution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "zanzibar-revolution",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Massacre of Arabs during the Zanzibar Revolution"
     },
     {
       "authors": [
@@ -12209,7 +12400,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 5,
       "id": "russian-revolution-of-1905",
       "kind": "event",
       "origin": {
@@ -12960,6 +13151,63 @@
       "revised": null,
       "status": "active",
       "title": "Second Sudanese Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "sevastopol-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russian-revolution-of-1905",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Sevastopol Uprising"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "shaba-ii",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "angolan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Shaba II"
     },
     {
       "authors": [
@@ -13736,6 +13984,34 @@
       "cites": [
         "wikidata"
       ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "sveaborg-rebellion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russian-revolution-of-1905",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Sveaborg Rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
       "created": "2026-09-21",
       "degree": 1,
       "id": "tajikistani-civil-war",
@@ -14415,6 +14691,33 @@
       "revised": "2026-09-17",
       "status": "active",
       "title": "The Holocaust"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "the-holocaust-in-romania",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "the-holocaust",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Holocaust in Romania"
     },
     {
       "authors": [
@@ -15961,6 +16264,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "wadai-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Wadai War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -16684,6 +17015,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "zaian-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-conquest-of-morocco",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Zaian War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata"
       ],
@@ -16707,6 +17067,12 @@
   ],
   "schema": 1,
   "warnings": [
+    {
+      "id": "1920-georgian-coup-attempt",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
     {
       "id": "1963-south-vietnamese-coup",
       "kind": "event",
@@ -16732,7 +17098,31 @@
       "rule": "degree-zero"
     },
     {
+      "id": "bambatha-rebellion",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "benin-expedition-of-1897",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "darfur-genocide",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "eritrean-civil-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "herero-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -16757,6 +17147,12 @@
     },
     {
       "id": "kaocen-revolt",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "massacre-of-arabs-during-the-zanzibar-revolution",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -16792,7 +17188,25 @@
       "rule": "degree-zero"
     },
     {
+      "id": "sevastopol-uprising",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "the-holocaust-in-romania",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "third-portuguese-republic-since-1974",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "wadai-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

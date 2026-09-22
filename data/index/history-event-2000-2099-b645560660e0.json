@@ -1875,6 +1875,15 @@
         }
       ]
     },
+    "2021-malian-coup-d-etat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "2021-myanmar-coup-d-etat": {
       "from": "git",
       "versions": [

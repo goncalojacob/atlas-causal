@@ -1993,6 +1993,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-22",
+      "from": "2020-malian-coup-d-etat",
+      "id": "2020-malian-coup-d-etat--2021-malian-coup-d-etat--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2021-malian-coup-d-etat",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "2021-myanmar-coup-d-etat",
       "id": "2021-myanmar-coup-d-etat--myanmar-civil-war--caused",
@@ -2759,6 +2787,34 @@
       "revised": null,
       "status": "active",
       "to": "first-shaba-war",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "angolan-civil-war",
+      "id": "angolan-civil-war--shaba-ii--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "shaba-ii",
       "type": "enabled"
     },
     {
@@ -6836,6 +6892,34 @@
       "status": "active",
       "to": "rif-war",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "french-conquest-of-morocco",
+      "id": "french-conquest-of-morocco--zaian-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "zaian-war",
+      "type": "caused"
     },
     {
       "authors": [
@@ -11630,6 +11714,34 @@
       "status": "active",
       "to": "february-revolution",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "russian-revolution-of-1905",
+      "id": "russian-revolution-of-1905--sveaborg-rebellion--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "sveaborg-rebellion",
+      "type": "caused"
     },
     {
       "authors": [

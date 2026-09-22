@@ -362,6 +362,12 @@
     },
     {
       "dissent": false,
+      "id": "2020-malian-coup-d-etat--2021-malian-coup-d-etat--precondition-of",
+      "kind": "edge",
+      "locator": "\"2021 Malian coup d'état\", revision 1370424554, § lead"
+    },
+    {
+      "dissent": false,
       "id": "2021-myanmar-coup-d-etat--myanmar-civil-war--caused",
       "kind": "edge",
       "locator": "\"Myanmar civil war (2021–present)\", revision 1375700231, § lead"
@@ -479,6 +485,12 @@
       "id": "angolan-civil-war--first-shaba-war--enabled",
       "kind": "edge",
       "locator": "\"Shaba I\", revision 1373218991, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "angolan-civil-war--shaba-ii--enabled",
+      "kind": "edge",
+      "locator": "\"Shaba II\", revision 1370737989, § lead"
     },
     {
       "dissent": false,
@@ -1217,6 +1229,12 @@
       "id": "french-conquest-of-morocco--rif-war--reacted-to",
       "kind": "edge",
       "locator": "\"French conquest of Morocco\", revision 1374837625, § Rif War"
+    },
+    {
+      "dissent": false,
+      "id": "french-conquest-of-morocco--zaian-war--caused",
+      "kind": "edge",
+      "locator": "\"Zaian War\", revision 1370751428, § lead"
     },
     {
       "dissent": false,
@@ -2309,6 +2327,12 @@
       "id": "russian-revolution-of-1905--february-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"Russian Revolution of 1905\", revision 1371938345"
+    },
+    {
+      "dissent": false,
+      "id": "russian-revolution-of-1905--sveaborg-rebellion--caused",
+      "kind": "edge",
+      "locator": "\"Sveaborg rebellion\", revision 1370749115, § lead"
     },
     {
       "dissent": false,

@@ -926,6 +926,15 @@
         }
       ]
     },
+    "angolan-civil-war--shaba-ii--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "anschluss--austrian-state-treaty--precondition-of": {
       "from": "git",
       "versions": [
@@ -2441,6 +2450,15 @@
         }
       ]
     },
+    "french-conquest-of-morocco--zaian-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "geneva-conference--algerian-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -3864,6 +3882,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "russian-revolution-of-1905--sveaborg-rebellion--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

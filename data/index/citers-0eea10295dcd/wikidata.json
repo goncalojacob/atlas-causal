@@ -476,6 +476,12 @@
     },
     {
       "dissent": false,
+      "id": "1920-georgian-coup-attempt",
+      "kind": "event",
+      "locator": "Q4560833"
+    },
+    {
+      "dissent": false,
       "id": "1921-portuguese-legislative-election",
       "kind": "event",
       "locator": null
@@ -866,6 +872,12 @@
     },
     {
       "dissent": false,
+      "id": "2021-malian-coup-d-etat",
+      "kind": "event",
+      "locator": "Q106975429"
+    },
+    {
+      "dissent": false,
       "id": "2021-myanmar-coup-d-etat",
       "kind": "event",
       "locator": "Q105180889"
@@ -1082,6 +1094,12 @@
     },
     {
       "dissent": false,
+      "id": "bambatha-rebellion",
+      "kind": "event",
+      "locator": "Q3274751"
+    },
+    {
+      "dissent": false,
       "id": "bangladesh-liberation-war",
       "kind": "event",
       "locator": "Q371394"
@@ -1121,6 +1139,12 @@
       "id": "belovezh-accords",
       "kind": "event",
       "locator": "Q76986"
+    },
+    {
+      "dissent": false,
+      "id": "benin-expedition-of-1897",
+      "kind": "event",
+      "locator": "Q3966451"
     },
     {
       "dissent": false,
@@ -1361,6 +1385,12 @@
       "id": "entente-cordiale",
       "kind": "event",
       "locator": "Q464399"
+    },
+    {
+      "dissent": false,
+      "id": "eritrean-civil-wars",
+      "kind": "event",
+      "locator": "Q2139988"
     },
     {
       "dissent": false,
@@ -1664,6 +1694,12 @@
     },
     {
       "dissent": false,
+      "id": "herero-wars",
+      "kind": "event",
+      "locator": "Q16512674"
+    },
+    {
+      "dissent": false,
       "id": "hong-kong-flu",
       "kind": "event",
       "locator": "Q1069785"
@@ -1949,6 +1985,12 @@
       "id": "march-on-rome",
       "kind": "event",
       "locator": "Q468823"
+    },
+    {
+      "dissent": false,
+      "id": "massacre-of-arabs-during-the-zanzibar-revolution",
+      "kind": "event",
+      "locator": "Q123998092"
     },
     {
       "dissent": false,
@@ -2354,6 +2396,18 @@
     },
     {
       "dissent": false,
+      "id": "sevastopol-uprising",
+      "kind": "event",
+      "locator": "Q4411939"
+    },
+    {
+      "dissent": false,
+      "id": "shaba-ii",
+      "kind": "event",
+      "locator": "Q2745406"
+    },
+    {
+      "dissent": false,
       "id": "siamese-revolution-of-1932",
       "kind": "event",
       "locator": "Q2120252"
@@ -2462,6 +2516,12 @@
     },
     {
       "dissent": false,
+      "id": "sveaborg-rebellion",
+      "kind": "event",
+      "locator": "Q2446816"
+    },
+    {
+      "dissent": false,
       "id": "tajikistani-civil-war",
       "kind": "event",
       "locator": "Q1122110"
@@ -2477,6 +2537,12 @@
       "id": "the-holocaust",
       "kind": "event",
       "locator": "Q2763"
+    },
+    {
+      "dissent": false,
+      "id": "the-holocaust-in-romania",
+      "kind": "event",
+      "locator": "Q3376121"
     },
     {
       "dissent": false,
@@ -2720,6 +2786,12 @@
     },
     {
       "dissent": false,
+      "id": "wadai-war",
+      "kind": "event",
+      "locator": "Q937265"
+    },
+    {
+      "dissent": false,
       "id": "wagner-group-rebellion",
       "kind": "event",
       "locator": "Q119860532"
@@ -2843,6 +2915,12 @@
       "id": "yugoslav-wars",
       "kind": "event",
       "locator": "Q242352"
+    },
+    {
+      "dissent": false,
+      "id": "zaian-war",
+      "kind": "event",
+      "locator": "Q8064768"
     },
     {
       "dissent": false,
