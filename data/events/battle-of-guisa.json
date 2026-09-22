@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "battle-of-guisa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q107261337",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Battle of Guisa",
+    "pt": "Batalha de Guisa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q107261337"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Guisa\", revision 1370442287"
+    }
+  ],
+  "title": "Battle of Guisa",
+  "summary": "The English Wikipedia article \"Battle of Guisa\", at revision 1370442287, opens: \"The Battle of Guisa was a relevant event in the history of Cuba. One of the major victories of the Rebel Army in the Liberation War (1956–1959) sustained against the dictatorship of Fulgencio Batista in Cuba.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q107261337, imported by tools/import/wikidata.mjs. The item's own description reads \"1958 battle in the Cuban Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1958,
+    "end": 1958
+  },
+  "place": "oriente-province",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "cuban-revolution"
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "operation-verano--battle-of-santa-clara--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Verano\", revision 1371154085, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Santa Clara\", revision 1370588555, § lead"
+    }
+  ],
+  "from": "operation-verano",
+  "to": "battle-of-santa-clara",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Verano’s lead states the failure and what followed it: the 1958 summer offensive “failed in its objective”, “the failure left the Cuban army dispirited and demoralized”, and “Castro viewed it as a victory and soon launched his own offensive”. Santa Clara, in late December, is where that offensive ended: its own lead calls the battle a decisive rebel victory that “culminated in the Triumph of the Revolution”, with Batista fleeing within twelve hours of the city’s capture. `enabled` and not `caused`: the government’s failed offensive made room for the rebel one, and neither lead argues that Verano produced the battle. `probable`, on two Wikipedia leads.",
+  "dispute": null
+}

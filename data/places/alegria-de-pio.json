@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "alegria-de-pio",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "title-not-english"
+    ],
+    "note": "The item carries a label only in Spanish, so the import fell back to the QID for the id, the label and the names. Both are the item's own field read as it stands — \"Alegría de Pío\" — and not a translation or a correction; the title-not-english flag stays so a reviewer sees where the name came from."
+  },
+  "wikidata": "Q16145269",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-22"
+  },
+  "sources": [],
+  "names": [
+    "Alegría de Pío"
+  ],
+  "where": {
+    "lon": -77.5146,
+    "lat": 19.8991,
+    "precision": "city",
+    "label": "Alegría de Pío"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q16145269, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

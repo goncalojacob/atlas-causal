@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "santiago-de-cuba-uprising--battle-of-alegria-de-pio--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Santiago de Cuba Uprising\", revision 1370730172, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Alegría de Pío\", revision 1370431604, § lead"
+    }
+  ],
+  "from": "santiago-de-cuba-uprising",
+  "to": "battle-of-alegria-de-pio",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The uprising’s own lead names the consequence: the Granma landed two days late, so “the supporting uprising was left isolated and was quickly destroyed”, and “as a result of this, the rebels had lost the element of surprise, and the military was put on high alert in the region”. Three days after that landing the rebels met the army at Alegría de Pío, which its own lead calls the first battle between them, after which the rebels “would be severely crippled”. `precondition-of` is what the two leads together support and no more: the failed uprising is what put the army on alert in the region where the battle was fought, and neither article says the uprising brought the battle about. `probable`, on two Wikipedia leads.",
+  "dispute": null
+}
