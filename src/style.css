@@ -333,9 +333,18 @@ input, select, textarea { accent-color: var(--cobalt); }
    layer switches and the graph filters and is drawn exactly like them: the
    same text size, the same soft ink. Nothing here is a new token, a new hex
    value or a new size. */
+/* A row of its own in the masthead (M83, B3). The count is said from first
+   paint now, not only once the reader has moved the map, and the note beside it
+   grows and shrinks with the window — so as one more item in a wrapping row it
+   decided where everything after it wrapped, and the masthead changed height
+   whenever the window changed. The masthead's height is the pane's height, and
+   the pane is what the graph's camera is fitted to: the window was moving the
+   graph's picture by the back door, which is the one thing M76 promised it
+   would never do. A row of its own cannot re-wrap what is not on it. */
 .bar .window-control {
   display: flex; align-items: center; gap: var(--space-2);
   color: var(--ink-soft); font-size: var(--text-sm);
+  flex: 1 0 100%;
 }
 .bar .window-control[hidden] { display: none; }
 /* "N of N events in view", and the pin that gives the world back: the line
@@ -351,7 +360,14 @@ input, select, textarea { accent-color: var(--cobalt); }
    (M70). The soft ink the interface uses for what it says about itself, and
    no colour of its own — a picture that coloured the unread would be a filter
    in everything but name, and nothing about standing changes what is drawn. */
-.bar .window-standing { display: flex; align-items: baseline; gap: var(--space-2); margin: 0; }
+/* One line, whether or not there is anything on it (M83, B3): the unplaced
+   count is nothing when every event of the window has a place, and a row that
+   collapsed when its text did would change the height of the row above, for the
+   same reason the row itself is full-width. `1lh` is one line of this row's own
+   text and not a size of its own. */
+.bar .window-standing {
+  display: flex; align-items: baseline; gap: var(--space-2); margin: 0; min-height: 1lh;
+}
 .bar .window-read { color: var(--ink-soft); font-size: var(--text-xs); font-family: var(--font-ui); }
 /* And beside it, how many of the events in the window the map has no point for
    (M82, A5). It was a full sentence in a box on the map, on every visit; it is

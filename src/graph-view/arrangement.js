@@ -70,14 +70,26 @@ export function holdingKey(state) {
 // window says, and moving the band moves no node at all — which is what
 // panning, zooming, selecting and walking already promised.
 //
-// **And the attribute shards** (M83, A1-2). Since this milestone a node stands
-// at the day inside its year where the record gives one, and a `when` with its
-// day in it is an attribute: it arrives with its century, after the picture. So
-// an arrangement laid out before the shard landed is an arrangement of years,
-// and the key has to say which it is or the layout of years stands for ever.
-// It is the same integer every view's render key already carries
-// (`shardsArrived`, render-key.js), read by the caller and passed in — this
-// file has no atlas.
+// **And the attribute shards, inside a lens** (M83, A1-2). Since this milestone
+// a node stands at the day inside its year where the record gives one, and a
+// `when` with its day in it is an attribute: it arrives with its century, after
+// the picture. An arrangement laid out before the shard landed is an
+// arrangement of years, and the key has to say which it is or the layout of
+// years stands for as long as the question does — which, for a reader who
+// arrives on a link with a war already open, is for ever.
+//
+// **Only inside a lens**, because at rest the promise is the stronger one. M76:
+// moving the band moves no node at all, and moving the band is what fetches a
+// century. A resting arrangement that re-laid itself out every time a shard
+// landed would be the window deciding the picture again, by the back door and
+// a second late. At rest a day is sub-pixel anyway — the axis is centuries
+// wide — so there is nothing to buy there; inside a six-year lens it is the
+// whole of A1-2. And inside a lens a late file already re-answers the picture:
+// an actor's grounds, a source's citers and a narrative's steps all change what
+// `lensView` keeps after the state has stopped moving.
+//
+// It is the same integer every view's render key carries (`shardsArrived`,
+// render-key.js), read by the caller and passed in — this file has no atlas.
 export function arrangementKey(state, events, lanes, lens, holding = '', foci = null, shards = 0) {
   const focus = lens === null ? '' : (foci ?? state.focus ?? '');
   // What the graph draws, when it is the graph deciding: inside a lens the two
@@ -218,6 +230,14 @@ export function arrangementOf(atlas, state, held = null, shown = undefined) {
     // the answer has to be the one this arrangement was built from: the domain
     // and the set of events are one picture.
     lens: view ? view.kept : null,
-    key: arrangementKey(state, events, lanes, lens, '', view ? formatFoci(view.foci) : null, shardsArrived(atlas)),
+    key: arrangementKey(state, events, lanes, lens, '', view ? formatFoci(view.foci) : null, view ? shardsArrived(atlas) : 0),
+    // **The same key without the shards**: what the reader *asked*, as against
+    // what has arrived since they asked it. A century landing changes where a
+    // node stands (the day inside its year, A1-2) and changes no question, so
+    // the layout is rebuilt and the camera is not — a picture that reframed
+    // itself under a reader who had panned into it would be the atlas moving
+    // the drawing for a reason nobody could see. `graph-view.js`'s camera is
+    // the one caller (M83).
+    question: arrangementKey(state, events, lanes, lens, '', view ? formatFoci(view.foci) : null),
   };
 }

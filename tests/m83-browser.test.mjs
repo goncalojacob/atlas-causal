@@ -175,3 +175,56 @@ test('B2: the band\'s profile is the narrative\'s from the first drawing', { ski
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   }, { device: DESK });
 });
+
+// --- B3: the masthead count says what the picture it is over holds ----------
+test('B3: on the graph the count is the graph\'s, and it is said with no box', { skip }, async () => {
+  const COUNT = `
+    const el = document.querySelector('.window-count');
+    const view = document.querySelector('.window-view');
+    const pin = document.querySelector('.window-view .pin');
+    return {
+      text: (el && el.textContent || '').trim(),
+      hidden: Boolean(view && view.hidden),
+      pin: Boolean(pin && !pin.hidden),
+      shown: Number(((el && el.textContent || '').match(/\\d+/g) || [])[0]),
+    };`;
+  const DRAWN = "return document.querySelectorAll('#graph svg.graph circle.node[data-id]').length;";
+
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    // A box left over from the map, and the graph, which reads no box at all.
+    await open(page, url('?view=graph&bbox=-25,-25,60,55'), ready);
+    await waitFor(page, NODES, 'the graph to draw its nodes');
+    await waitFor(page, 'return (document.querySelector(".window-count").textContent || "").trim() !== "";', 'the count');
+    const onGraph = await page.eval(COUNT);
+    assert.equal(onGraph.hidden, false, 'the count is said on the graph');
+    assert.equal(onGraph.pin, false, 'and there is no box on the graph to pin');
+    // The graph draws every node of its arrangement; what is in the DOM is what
+    // falls inside the rectangle on screen (I6's cull), so the count is at
+    // least what is drawn and never the map's rectangle, which holds far fewer.
+    assert.ok(onGraph.shown >= await page.eval(DRAWN),
+      `the count (${onGraph.shown}) is of the graph's own picture`);
+
+    // And on the map, where the box is the picture, the same box counts fewer.
+    await page.eval('document.querySelector(\'[data-view="map"]\').click(); return true;');
+    await waitFor(page, 'return document.querySelectorAll("svg.map .mark[data-id]").length > 0;', 'the map');
+    const onMap = await page.eval(COUNT);
+    assert.equal(onMap.pin, true, 'the map has a box, so it has the pin back');
+    assert.ok(onMap.shown < onGraph.shown, 'and a rectangle of the map holds fewer than the whole graph');
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});
+
+test('B3: and at rest, with no box at all, the sentence is still said', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url('?from=1900&to=1999'), ready);
+    await waitFor(page, 'return (document.querySelector(".window-count").textContent || "").trim() !== "";',
+      'the count at first paint, with nobody having moved the map');
+    const text = await page.eval('return document.querySelector(".window-count").textContent.trim();');
+    assert.match(text, /in view$/, `the sentence is the count's own: ${text}`);
+    assert.equal(await page.eval('return document.querySelector(".window-view .pin").hidden;'), true,
+      'and nothing to press, because the map is looking at all of it');
+  }, { device: DESK });
+});

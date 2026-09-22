@@ -244,6 +244,9 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   let stacked = null;
   let weights = { min: 0, max: 0 };
   let arrangedFor = null;
+  // And the same arrangement's *question* — its key without the attribute-shard
+  // count — which is what the camera is filed under (M83, and `frameCamera`).
+  let askedFor = null;
   // Both of the expensive answers are kept by their key rather than only for
   // as long as the key holds still: a reader who widens the band and narrows
   // it again, or zooms out and back in, gets the picture they had.
@@ -426,8 +429,9 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
 
   function arrange(s) {
     const {
-      events, lanes, key, lens,
+      events, lanes, key, lens, question,
     } = arrangementOf(atlas, s, alonesOf(s), workingOf(s).shown);
+    askedFor = question;
     if (key === arrangedFor) return false;
     arrangedFor = key;
     const cached = arrangements.get(key);
@@ -1243,7 +1247,12 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   let framedFor = null;
   function frameCamera(s, seen) {
     const working = workingOf(s);
-    const key = `${arrangedFor}|${seen.x0},${seen.y0},${seen.x1},${seen.y1}`;
+    // **The question and not the whole arrangement key** (M83). The key carries
+    // the attribute-shard count since A1-2, because a century landing carries
+    // the days the nodes stand on; the camera must not move for that. What
+    // frames again is a new question — a lens set or cleared, a filter, a
+    // category — which is `question` (arrangement.js).
+    const key = `${askedFor}|${seen.x0},${seen.y0},${seen.x1},${seen.y1}`;
     if (key === framedFor) return;
     // Whether this is the first camera this arrangement has been given, which
     // is the whole of what the chosen link may decide (M80). A reader who
@@ -1253,7 +1262,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // from under the gesture that chose it. So the ends frame the drawing they
     // open and never one already on screen — which is also why the link is not
     // in the key above: a click changes nothing this function decides.
-    const arriving = framedFor === null || !framedFor.startsWith(`${arrangedFor}|`);
+    const arriving = framedFor === null || !framedFor.startsWith(`${askedFor}|`);
     framedFor = key;
     // And what that frame is: the link's own two ends and nothing else. The
     // card names them, and a camera that left one of them off the screen would

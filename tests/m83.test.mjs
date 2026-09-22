@@ -29,7 +29,9 @@ import assert from 'node:assert/strict';
 import path from 'node:path';
 
 import { arrangementOf } from '../src/graph-view/arrangement.js';
-import { layoutGraph, timeAxis } from '../src/graph-view/layout.js';
+import {
+  layoutGraph, timeAxis, stackLayout, MIN_ZOOM,
+} from '../src/graph-view/layout.js';
 import { workingSet } from '../src/emphasis.js';
 import { lensView } from '../src/lens.js';
 import { defaultState } from '../src/state.js';
@@ -196,4 +198,21 @@ test('A1-3: and it is still never worse than doing nothing', () => {
   const { layout } = laidOut(war());
   assert.ok(layout.crossings <= layout.naiveCrossings,
     `${layout.crossings} crossings against the naive ${layout.naiveCrossings}`);
+});
+
+// --- what the packed column did not take away ------------------------------
+
+test('the resting arrangement still merges lines at the zoom the graph floors at', () => {
+  // A1-3 packs a column around its nodes' barycentres instead of dealing them
+  // out over the field, which makes the picture compact — and a compact picture
+  // is one the clusterer has work to do in. `tests/graph-browser` used to hold
+  // this against a rendered page, which is a page at whatever zoom the camera
+  // chose; the claim is about the arrangement, so it is made of the
+  // arrangement, at `MIN_ZOOM`, which is as far out as the graph ever draws.
+  const { layout } = laidOut(at({}));
+  const stacked = stackLayout(layout, { k: MIN_ZOOM });
+  assert.ok(stacked.nodes.length < layout.nodes.length,
+    'the resting picture stacks marks that cannot be told apart');
+  assert.ok(stacked.edges.some((line) => line.count > 1),
+    'and merges the links between two stacks into one line');
 });
