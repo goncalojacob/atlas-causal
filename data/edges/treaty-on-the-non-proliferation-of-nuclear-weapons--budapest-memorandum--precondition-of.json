@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-on-the-non-proliferation-of-nuclear-weapons--budapest-memorandum--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty on the Non-Proliferation of Nuclear Weapons\", revision 1375952857, § Ukraine"
+    }
+  ],
+  "from": "treaty-on-the-non-proliferation-of-nuclear-weapons",
+  "to": "budapest-memorandum",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The treaty’s article, in the section it gives Ukraine: “Ukraine acceded to the NPT in 1994 as a non-nuclear-weapon state, and committed to remove all former Soviet nuclear weapons from its territory. In recognition of Ukraine’s decision, the UK, the United States and Russia provided security assurances to Ukraine under the Budapest Memorandum of 1994.” The memorandum is what the accession was answered with, so the treaty is a precondition of it and the type is `precondition-of`. It is not `caused`, and the confidence is `probable` rather than anything firmer, because the same article states the sequence the other way round a hundred lines earlier — the republics “joined the NPT by 1994 following the signature of the Budapest Memorandum on Security Assurances” — and an atlas that read only one of those two sentences would be pretending to a certainty the source does not have.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--eritrean-war-of-independence--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eritrean War of Independence\", revision 1374058781, § lead and § Background"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "eritrean-war-of-independence",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The war’s own article begins its account of itself with this war. Lead: “Eritrea was an Italian colony from the 1880s until the Italians were defeated by the Allies in World War II in 1941. Afterward, Eritrea briefly became a British Military Administration until 1951. The United Nations convened after the war to decide Eritrea’s future, voting in favor of a federation between Eritrea and Ethiopia.” Background: “In 1952, the United Nations decided to federate Eritrea with Ethiopia … Ethiopian Emperor Haile Selassie dissolved the federation and annexed Eritrea, triggering a thirty-year armed struggle in Eritrea.” The type is `precondition-of` and not `caused` or `enabled` because what the source asserts is a standing condition and not an act: the defeat of Italy is what put Eritrea’s disposition in the United Nations’ hands, and the federation it decided on is the thing whose dissolution the article says triggered the war. The war is nine years and one annexation away, and this edge asserts none of that distance away — only that without the outcome of this war there is no federation to dissolve.",
+  "dispute": null
+}

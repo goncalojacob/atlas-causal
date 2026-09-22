@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "berlin-conference--scramble-for-africa--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Scramble for Africa\", revision 1373841219, § lead and § Berlin Conference (1884–1885)"
+    }
+  ],
+  "from": "berlin-conference",
+  "to": "scramble-for-africa",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The period’s own article opens on the conference: “The 1884–1885 Berlin Conference regulated European colonisation and trade in Africa, and is seen as emblematic of the ‘scramble’.” And in its own section: “the diplomats in Berlin laid down the rules of competition by which the great powers were to be guided in seeking colonies … The Berlin Conference transformed Africa’s colonization from informal economic penetration to systematic political control through its ‘effective occupation’ principle.” The type is `enabled` and not `caused`, because the same article says the scramble was already under way when the conference met — “The occupation of Egypt and the acquisition of the Congo were the first major moves in what came to be a precipitous scramble for African territory” — so what Berlin supplied was the rule under which it ran, not its beginning.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "spanish-civil-war--la-violencia--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"La Violencia\", revision 1373312674, § Credence in conspiracy theories as causes of violence"
+    }
+  ],
+  "from": "spanish-civil-war",
+  "to": "la-violencia",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The Colombian article, under its own heading on the causes of the violence: “The atrocities that were committed at the outset of the Spanish Civil War in 1936 were seen by both sides as a possible precedent for Colombia, causing both sides to fear that it could also happen in their country; this belief also spurred the credibility of the conspiracies and it also served as a rationale for violence.” What crossed the Atlantic is an example and a fear of it, which is what `inspired` is for in this vocabulary; nobody in the source says a Spanish act brought about a Colombian one, so it is not `caused`. The word carries no approval: the thing the precedent was used to justify is mass killing.",
+  "dispute": null
+}
