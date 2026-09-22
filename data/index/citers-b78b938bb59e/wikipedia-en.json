@@ -1028,6 +1028,12 @@
     },
     {
       "dissent": false,
+      "id": "february-revolution--georgian-ossetian-conflict-1918-1920--enabled",
+      "kind": "edge",
+      "locator": "\"Georgian–Ossetian conflicts of 1918-1920\", revision 1374257671, § 1917–1918"
+    },
+    {
+      "dissent": false,
       "id": "february-revolution--october-revolution--enabled",
       "kind": "edge",
       "locator": "\"February Revolution\", revision 1370618162"
@@ -1067,6 +1073,12 @@
       "id": "first-congo-war--second-congo-war--caused",
       "kind": "edge",
       "locator": "\"First Congo War\", revision 1374918500, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "first-franco-dahomean-war--second-franco-dahomean-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Franco-Dahomean War\", revision 1370736974, § Background"
     },
     {
       "dissent": false,
@@ -3632,6 +3644,12 @@
     },
     {
       "dissent": false,
+      "id": "world-war-ii--1940-1944-insurgency-in-chechnya--enabled",
+      "kind": "edge",
+      "locator": "\"1940–1944 insurgency in Chechnya\", revision 1370279204, § lead"
+    },
+    {
+      "dissent": false,
       "id": "world-war-ii--20-july-plot--caused",
       "kind": "edge",
       "locator": "\"20 July plot\", revision 1374938720"
@@ -3803,6 +3821,12 @@
       "id": "world-war-ii--winter-war--enabled",
       "kind": "edge",
       "locator": "\"World War II\", revision 1372726772"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--world-war-ii-in-albania--caused",
+      "kind": "edge",
+      "locator": "\"World War II in Albania\", revision 1371940966, § lead"
     },
     {
       "dissent": false,

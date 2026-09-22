@@ -6086,6 +6086,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-22",
+      "from": "february-revolution",
+      "id": "february-revolution--georgian-ossetian-conflict-1918-1920--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "georgian-ossetian-conflict-1918-1920",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "february-revolution",
       "id": "february-revolution--october-revolution--enabled",
@@ -6217,6 +6245,34 @@
       "status": "active",
       "to": "second-congo-war",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "first-franco-dahomean-war",
+      "id": "first-franco-dahomean-war--second-franco-dahomean-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-franco-dahomean-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -15994,6 +16050,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-22",
+      "from": "world-war-ii",
+      "id": "world-war-ii--1940-1944-insurgency-in-chechnya--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1940-1944-insurgency-in-chechnya",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-15",
       "from": "world-war-ii",
       "id": "world-war-ii--20-july-plot--caused",
@@ -16664,6 +16748,34 @@
       "status": "active",
       "to": "winter-war",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "world-war-ii",
+      "id": "world-war-ii--world-war-ii-in-albania--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "world-war-ii-in-albania",
+      "type": "caused"
     },
     {
       "authors": [

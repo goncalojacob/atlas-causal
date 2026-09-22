@@ -986,6 +986,15 @@
         }
       ]
     },
+    "1940-1944-insurgency-in-chechnya": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "1942-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -7462,6 +7471,15 @@
         }
       ]
     },
+    "georgian-ossetian-conflict-1918-1920": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "georgian-uprising-on-texel": {
       "from": "git",
       "versions": [
@@ -13371,6 +13389,15 @@
             "review"
           ],
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "world-war-ii-in-albania": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
         }
       ]
     },

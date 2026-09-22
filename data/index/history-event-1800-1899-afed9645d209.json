@@ -405,6 +405,15 @@
         }
       ]
     },
+    "first-franco-dahomean-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
     "first-italo-ethiopian-war": {
       "from": "git",
       "versions": [
@@ -719,6 +728,15 @@
           "fields": [
             "parent"
           ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "second-franco-dahomean-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-21"
         }
       ]

@@ -438,6 +438,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "1940-1944-insurgency-in-chechnya",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1940–1944 insurgency in Chechnya"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -6376,7 +6404,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "february-revolution",
       "kind": "event",
       "origin": {
@@ -6521,6 +6549,35 @@
       "revised": null,
       "status": "active",
       "title": "First Congo War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "first-franco-dahomean-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Franco-Dahomean War"
     },
     {
       "authors": [
@@ -7102,6 +7159,35 @@
       "revised": "2026-09-20",
       "status": "active",
       "title": "Genocide Convention"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "georgian-ossetian-conflict-1918-1920",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russian-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Georgian–Ossetian conflict (1918–1920)"
     },
     {
       "authors": [
@@ -12175,6 +12261,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "second-franco-dahomean-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Franco-Dahomean War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "revolution",
       "cites": [
         "wikidata"
@@ -15712,7 +15827,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 26,
+      "degree": 28,
       "id": "world-war-ii",
       "kind": "event",
       "origin": {
@@ -15729,6 +15844,35 @@
       "revised": "2026-09-18",
       "status": "active",
       "title": "World War II"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "id": "world-war-ii-in-albania",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "World War II in Albania"
     },
     {
       "authors": [

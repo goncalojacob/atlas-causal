@@ -2240,6 +2240,15 @@
         }
       ]
     },
+    "february-revolution--georgian-ossetian-conflict-1918-1920--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "february-revolution--october-revolution--enabled": {
       "from": "git",
       "versions": [
@@ -4873,6 +4882,15 @@
         }
       ]
     },
+    "world-war-ii--1940-1944-insurgency-in-chechnya--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "world-war-ii--20-july-plot--caused": {
       "from": "git",
       "versions": [
@@ -5101,6 +5119,15 @@
         {
           "first": true,
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "world-war-ii--world-war-ii-in-albania--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
