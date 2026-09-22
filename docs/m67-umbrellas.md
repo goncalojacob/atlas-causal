@@ -589,3 +589,54 @@ item says it is part of it. That refusal is written up in the pool file; the
 finding it produced is that **a period whose subject crosses two lanes can
 only ever take one half of itself**, and no rule here can fix that without the
 owner saying what a two-lane umbrella should look like.
+
+## 9. M42 batch 26 — eleven bare records, ten of them filed under ordinary events
+
+*22 September. The batch is the `part of` rule of batches 23 to 25 re-scanned
+over the whole world pool rather than its best seven hundred rows; the
+measurement, the filings and the refusals are in `docs/m42-pool.md` → "Batch
+26". What belongs here is the clause A1 exists for, because **every one of the
+eleven records the batch imported names neither an actor nor a place**.*
+
+**Why all eleven are bare is the import's own rule and not a judgement.** The
+Wikidata import writes an actor line only where the item gives a participant
+and a place only where the item gives a coordinate; none of these eleven items
+gives either. A1 settled that this is not a defect, and nothing was invented to
+cover it.
+
+**Ten are filed, and nine of the ten are filed under an ordinary event rather
+than under a period**, which is the shape deviation 1031 asked the later
+batches to prefer:
+
+| the record | filed under |
+| --- | --- |
+| `revolution-in-the-kingdom-of-poland` | `russian-revolution-of-1905` |
+| `moscow-uprising-of-1905` | `russian-revolution-of-1905` |
+| `odz-insurrection` | `russian-revolution-of-1905` |
+| `potemkin-mutiny` | `russian-revolution-of-1905` |
+| `revolt-of-czechoslovak-legion` | `russian-civil-war` |
+| `junker-mutiny` | `october-revolution` |
+| `second-guangzhou-uprising` | `xinhai-revolution` |
+| `iraqi-civil-war-of-2006-2008` | `iraq-war` |
+| `first-shaba-war` | `angolan-civil-war` |
+| `argentine-surrender-in-the-falklands-war` | `falklands-war` |
+
+Each filing is the item's own `part of` and each parent is an unfiled active
+record whose span contains the child; nothing here was filed by lane and span
+alone. **A filing under an ordinary event is not the A6 umbrella test**, which
+is why none of these ten parents carries the `m42-umbrella` flag and why
+`tests/m42-filing.test.mjs` says nothing about them: the lane rule is a rule
+about periods, and a mutiny in Petrograd belongs to the October Revolution
+whatever lane either is drawn in.
+
+**`2011-bahraini-uprising` is the eleventh and it is main, because the only
+umbrella it could go under refuses it twice.** Its own article, at revision
+1374892677, dates the uprising "from 2011 until 2014" and this atlas's
+`arab-spring` closes in 2012; and Bahrain is in the asia lane while
+`arab-spring` is an africa-lane period. The second refusal is §8's finding
+arriving a second time — **a period whose subject crosses two lanes can only
+ever take one half of itself** — and it is now the rule that has kept both the
+Yemeni revolution and the Bahraini uprising out of the wave they belong to.
+The record is not left stranded: it carries two edges, from
+`tunisian-revolution` and from `2011-egyptian-revolution`, both quoting the
+sentence of its own article that names them.
