@@ -19971,7 +19971,7 @@ partition: Europe's 18th century, which held **one** active event,
 own note said the sixth fire should take. `docs/m42b-pool.md` → "Batch 6".
 
 **Nineteen events, two umbrellas, and the main count did not move.** The
-inverse `part of` sweep on `Q6534` returned **44 items and the atlas held none
+inverse `part of` sweep on `Q6534` returned **56 items and the atlas held none
 of them**; the top seventeen that sit inside 1789–1799 were taken and filed
 under the French Revolution. Above it went **`atlantic-revolutions`**, the
 period umbrella A6 asks for: a revolutionary wave with a stated span

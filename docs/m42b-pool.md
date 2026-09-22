@@ -1154,7 +1154,7 @@ fifteen of that came with `origin/m42`.
 fifth fire's note named three candidates for the century — the Spanish
 Succession, the Seven Years' War and the French Revolution — and the last of
 them is the one that is worth two things at once. Its inverse `part of` sweep
-returned **44 items and this atlas held none of them**, which is the largest
+returned **56 items and this atlas held none of them**, which is the largest
 vein of the three; and it is the one whose period umbrella, the Atlantic
 Revolutions, reaches across the partition to a record the atlas already has.
 
