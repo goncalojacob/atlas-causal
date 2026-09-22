@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "colombian-conflict--colombian-peace-process--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colombian peace process\", revision 1375561117, § lead"
+    }
+  ],
+  "from": "colombian-conflict",
+  "to": "colombian-peace-process",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The negotiations’ own first sentence: they “refer to the negotiations between the Government of Colombia under President Juan Manuel Santos and the Revolutionary Armed Forces of Colombia (FARC–EP) aimed at ending the decades-long Colombian conflict.” A peace process is what a war is answered with, which is what `reacted-to` says in this vocabulary, and the atlas already holds the conflict it answers.",
+  "dispute": null
+}
