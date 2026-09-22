@@ -278,6 +278,12 @@
     },
     {
       "dissent": false,
+      "id": "1982-lebanon-war--south-lebanon-conflict--caused",
+      "kind": "edge",
+      "locator": "\"South Lebanon conflict (1985–2000)\", revision 1370747846, § lead"
+    },
+    {
+      "dissent": false,
       "id": "1982-lebanon-war--twelve-day-war--precondition-of",
       "kind": "edge",
       "locator": "\"Twelve-Day War\", revision 1375310571, § Background"
@@ -509,6 +515,18 @@
       "id": "arab-revolt--treaty-of-sevres--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of Sèvres\", revision 1369307123"
+    },
+    {
+      "dissent": false,
+      "id": "armenian-genocide--battle-of-musa-dagh--reacted-to",
+      "kind": "edge",
+      "locator": "\"Musa Dagh\", revision 1370628972, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "armenian-genocide--urfa-resistance--reacted-to",
+      "kind": "edge",
+      "locator": "\"Urfa resistance\", revision 1370748893, § lead"
     },
     {
       "dissent": false,
@@ -833,6 +851,12 @@
       "id": "cultural-revolution--sino-soviet-border-conflict--precondition-of",
       "kind": "edge",
       "locator": "\"Sino-Soviet border conflict\", revision 1372863432, § lead and § History"
+    },
+    {
+      "dissent": false,
+      "id": "dayton-agreement--insurgency-in-kosovo--precondition-of",
+      "kind": "edge",
+      "locator": "\"Insurgency in Kosovo (1995–1998)\", revision 1370623741, § lead"
     },
     {
       "dissent": false,
@@ -2516,6 +2540,12 @@
     },
     {
       "dissent": false,
+      "id": "south-lebanon-conflict--operation-grapes-of-wrath--caused",
+      "kind": "edge",
+      "locator": "\"Operation Grapes of Wrath\", revision 1372784188, § lead"
+    },
+    {
+      "dissent": false,
       "id": "soviet-afghan-war--afghan-civil-war--precondition-of",
       "kind": "edge",
       "locator": "\"Afghan Civil War (1989–1992)\", revision 1371765193, § lead and § Background (1978–1989)"
@@ -3635,6 +3665,12 @@
       "id": "world-war-i--basmachi-movement--precondition-of",
       "kind": "edge",
       "locator": "\"Basmachi movement\", revision 1374693404, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--chilembwe-uprising--precondition-of",
+      "kind": "edge",
+      "locator": "\"Chilembwe uprising\", revision 1375916516, § lead"
     },
     {
       "dissent": false,

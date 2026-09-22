@@ -1609,6 +1609,15 @@
         }
       ]
     },
+    "1963-south-vietnamese-coup": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "1964-brazilian-coup-detat": {
       "from": "git",
       "versions": [
@@ -5108,6 +5117,15 @@
         }
       ]
     },
+    "battle-of-musa-dagh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-the-lys-1918": {
       "from": "git",
       "versions": [
@@ -5754,6 +5772,15 @@
             "sitelinks"
           ],
           "on": "2026-09-04"
+        }
+      ]
+    },
+    "chilembwe-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -8249,6 +8276,15 @@
         }
       ]
     },
+    "insurgency-in-kosovo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "intermediate-range-nuclear-forces-treaty": {
       "from": "git",
       "versions": [
@@ -8411,6 +8447,15 @@
       ]
     },
     "junker-mutiny": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "kaocen-revolt": {
       "from": "git",
       "versions": [
         {
@@ -9961,6 +10006,15 @@
         {
           "first": true,
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "operation-grapes-of-wrath": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -11943,6 +11997,15 @@
         }
       ]
     },
+    "south-lebanon-conflict": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "soviet-afghan-war": {
       "from": "git",
       "versions": [
@@ -13040,6 +13103,15 @@
         }
       ]
     },
+    "urfa-resistance": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "us-air-bases-in-the-brazilian-northeast-1942": {
       "from": "git",
       "versions": [
@@ -13204,6 +13276,24 @@
             "parent"
           ],
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "war-of-the-camps": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "war-over-water": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

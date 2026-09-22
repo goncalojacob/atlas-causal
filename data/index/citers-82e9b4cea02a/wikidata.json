@@ -566,6 +566,12 @@
     },
     {
       "dissent": false,
+      "id": "1963-south-vietnamese-coup",
+      "kind": "event",
+      "locator": "Q1078181"
+    },
+    {
+      "dissent": false,
       "id": "1965-portuguese-presidential-election",
       "kind": "event",
       "locator": "Q16153770"
@@ -1100,6 +1106,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-musa-dagh",
+      "kind": "event",
+      "locator": "Q19831524"
+    },
+    {
+      "dissent": false,
       "id": "beer-hall-putsch",
       "kind": "event",
       "locator": "Q36749"
@@ -1202,6 +1214,12 @@
     },
     {
       "dissent": false,
+      "id": "chilembwe-uprising",
+      "kind": "event",
+      "locator": "Q16056284"
+    },
+    {
+      "dissent": false,
       "id": "chinese-civil-war",
       "kind": "event",
       "locator": "Q179975"
@@ -1271,6 +1289,12 @@
       "id": "cultural-revolution",
       "kind": "event",
       "locator": "Q8690"
+    },
+    {
+      "dissent": false,
+      "id": "darfur-genocide",
+      "kind": "event",
+      "locator": "Q42915906"
     },
     {
       "dissent": false,
@@ -1700,6 +1724,12 @@
     },
     {
       "dissent": false,
+      "id": "insurgency-in-kosovo",
+      "kind": "event",
+      "locator": "Q18126038"
+    },
+    {
+      "dissent": false,
       "id": "international-covenant-on-civil-and-political-rights",
       "kind": "event",
       "locator": "Q392119"
@@ -1775,6 +1805,12 @@
       "id": "junker-mutiny",
       "kind": "event",
       "locator": "Q28492393"
+    },
+    {
+      "dissent": false,
+      "id": "kaocen-revolt",
+      "kind": "event",
+      "locator": "Q2335525"
     },
     {
       "dissent": false,
@@ -2003,6 +2039,12 @@
       "id": "ogaden-war",
       "kind": "event",
       "locator": "Q318250"
+    },
+    {
+      "dissent": false,
+      "id": "operation-grapes-of-wrath",
+      "kind": "event",
+      "locator": "Q1473919"
     },
     {
       "dissent": false,
@@ -2366,6 +2408,12 @@
     },
     {
       "dissent": false,
+      "id": "south-lebanon-conflict",
+      "kind": "event",
+      "locator": "Q2479435"
+    },
+    {
+      "dissent": false,
       "id": "south-sudanese-civil-war",
       "kind": "event",
       "locator": "Q15353665"
@@ -2654,6 +2702,12 @@
     },
     {
       "dissent": false,
+      "id": "urfa-resistance",
+      "kind": "event",
+      "locator": "Q4477441"
+    },
+    {
+      "dissent": false,
       "id": "vienna-convention-for-the-protection-of-the-ozone-layer",
       "kind": "event",
       "locator": "Q686455"
@@ -2705,6 +2759,18 @@
       "id": "war-of-attrition",
       "kind": "event",
       "locator": "Q322607"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-camps",
+      "kind": "event",
+      "locator": "Q2777811"
+    },
+    {
+      "dissent": false,
+      "id": "war-over-water",
+      "kind": "event",
+      "locator": "Q2904516"
     },
     {
       "dissent": false,

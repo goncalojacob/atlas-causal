@@ -3155,6 +3155,15 @@
         }
       ]
     },
+    "darfur-genocide": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "december-2022-floods-in-portugal": {
       "from": "git",
       "versions": [

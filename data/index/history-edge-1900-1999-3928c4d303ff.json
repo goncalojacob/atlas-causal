@@ -485,6 +485,15 @@
         }
       ]
     },
+    "1982-lebanon-war--south-lebanon-conflict--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "1982-lebanon-war--twelve-day-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -950,6 +959,24 @@
         {
           "first": true,
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "armenian-genocide--battle-of-musa-dagh--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "armenian-genocide--urfa-resistance--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -1855,6 +1882,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "dayton-agreement--insurgency-in-kosovo--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4119,6 +4155,15 @@
         }
       ]
     },
+    "south-lebanon-conflict--operation-grapes-of-wrath--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "soviet-afghan-war--afghan-civil-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -4814,6 +4859,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "world-war-i--chilembwe-uprising--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

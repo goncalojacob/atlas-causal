@@ -767,6 +767,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "1963-south-vietnamese-coup",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "vietnam-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1963 South Vietnamese coup"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -1366,7 +1394,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "1982-lebanon-war",
       "kind": "event",
       "origin": {
@@ -3505,7 +3533,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 4,
       "id": "armenian-genocide",
       "kind": "event",
       "origin": {
@@ -3915,6 +3943,35 @@
       "revised": "2026-09-18",
       "status": "active",
       "title": "Batepá massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "battle-of-musa-dagh",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "armenian-genocide",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Musa Dagh"
     },
     {
       "authors": [
@@ -4651,6 +4708,34 @@
       "revised": "2026-09-16",
       "status": "active",
       "title": "Charter of the United Nations"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "chilembwe-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-i",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Chilembwe Uprising"
     },
     {
       "authors": [
@@ -5436,8 +5521,35 @@
       "cites": [
         "wikidata"
       ],
+      "created": "2026-09-22",
+      "id": "darfur-genocide",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-in-darfur",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Darfur genocide"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "dayton-agreement",
       "kind": "event",
       "origin": {
@@ -8476,6 +8588,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "insurgency-in-kosovo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "yugoslav-wars",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Insurgency in Kosovo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -8865,6 +9005,33 @@
       "revised": null,
       "status": "active",
       "title": "Junker mutiny"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "kaocen-revolt",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-i",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Kaocen Revolt"
     },
     {
       "authors": [
@@ -10723,6 +10890,35 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Operation Car Wash, 2014"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "operation-grapes-of-wrath",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "arab-israeli-conflict",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Grapes of Wrath"
     },
     {
       "authors": [
@@ -13172,6 +13368,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 2,
+      "id": "south-lebanon-conflict",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "arab-israeli-conflict",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "South Lebanon conflict"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata"
       ],
@@ -15613,6 +15838,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "urfa-resistance",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "armenian-genocide",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Urfa Resistance"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -15924,6 +16178,61 @@
       "cites": [
         "wikidata"
       ],
+      "created": "2026-09-22",
+      "id": "war-of-the-camps",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "lebanese-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War of the Camps"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "war-over-water",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "arab-israeli-conflict",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War over Water"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
       "created": "2026-09-15",
       "degree": 1,
       "id": "warsaw-ghetto-uprising",
@@ -16099,7 +16408,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 16,
+      "degree": 17,
       "id": "world-war-i",
       "kind": "event",
       "origin": {
@@ -16399,6 +16708,12 @@
   "schema": 1,
   "warnings": [
     {
+      "id": "1963-south-vietnamese-coup",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "afghan-conflict",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -16417,6 +16732,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "darfur-genocide",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "iberian-blackout-2025",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -16430,6 +16751,12 @@
     },
     {
       "id": "interwar-period",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "kaocen-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -16466,6 +16793,18 @@
     },
     {
       "id": "third-portuguese-republic-since-1974",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "war-of-the-camps",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "war-over-water",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
