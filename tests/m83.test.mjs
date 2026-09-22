@@ -33,7 +33,7 @@ import {
   layoutGraph, timeAxis, stackLayout, MIN_ZOOM,
 } from '../src/graph-view/layout.js';
 import { workingSet } from '../src/emphasis.js';
-import { lensView } from '../src/lens.js';
+import { activeFoci, lensView } from '../src/lens.js';
 import { defaultState } from '../src/state.js';
 import { centuryCounts } from '../src/util/window.js';
 import { extent, startPoint } from '../src/util/dates.js';
@@ -282,4 +282,32 @@ test('A13: a century over the cap becomes its ten decades, and loses no record',
     for (const row of rows.events ?? []) seen.add(row.id);
   }
   assert.equal(seen.size, events.length, 'every event is in a shard');
+});
+
+// --- B15, B17 --------------------------------------------------------------
+
+test('B17: a ?focus= naming a former id is the record it was renamed to', () => {
+  // A record the atlas holds under a new id, with the old one in `aliases`:
+  // `?actor=old` and `?selected=old` have always opened it, and `?focus=` kept
+  // an empty lens and a chip naming the slug.
+  const renamed = [...atlas.actors.values()].find((a) => (a.aliases ?? []).length > 0
+    && (atlas.eventsByActor.get(a.id) ?? []).length > 0);
+  if (!renamed) return; // nothing in the corpus to say it about
+  const old = renamed.aliases[0];
+  const byOld = activeFoci(atlas, at({ focus: `actor:${old}` }));
+  assert.deepEqual(byOld, [{ kind: 'actor', id: renamed.id }],
+    'the former id names the record the atlas holds now');
+  assert.deepEqual(
+    activeFoci(atlas, at({ focus: `actor:${renamed.id}` })),
+    byOld,
+    'and it is the same lens either way in',
+  );
+});
+
+test('B17: a focus naming nothing the atlas has ever held is unchanged', () => {
+  assert.deepEqual(
+    activeFoci(atlas, at({ focus: 'actor:no-such-actor-at-all' })),
+    [{ kind: 'actor', id: 'no-such-actor-at-all' }],
+    'a focus the atlas cannot resolve still draws nothing and says so',
+  );
 });

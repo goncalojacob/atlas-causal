@@ -135,13 +135,22 @@ try {
   // source since H3b (lens.js). It is fetched when a focus asks for it, and
   // the views are forced to redraw when it lands — nothing in the state has
   // changed by then, so their own keys would say there is nothing to do.
+  //
+  // **And a request that failed is asked again** (M83, B15). The id went into
+  // `askedFor` before the fetch and came out of it never: one dropped request
+  // on a slow connection left a source's lens empty — *draws nothing and says
+  // so* — for the rest of the session, although `data.js` drops a failed
+  // promise precisely so that the next ask is a new attempt.
   const askedFor = new Set();
   const fetchLensCiters = (s) => {
     const focus = parseFocus(s.focus);
     if (!focus || focus.kind !== 'source' || askedFor.has(focus.id)) return;
     if (atlas.citersOf(focus.id)) return;
     askedFor.add(focus.id);
-    atlas.loadCiters(focus.id).then(() => remeasure({ force: true }), () => {});
+    atlas.loadCiters(focus.id).then(
+      () => remeasure({ force: true }),
+      () => { askedFor.delete(focus.id); },
+    );
   };
 
   // And a lens on an actor is the other one: since M48 it keeps the events on
@@ -163,6 +172,12 @@ try {
   // CShapes polity, which is 350 of the 412 — keeps nothing until the file
   // lands. Waiting for a lens that the file is what creates is waiting for
   // ever. A page with no actor open still asks for nothing.
+  //
+  // **And the flag is put back where either file failed** (M83, B15). It was
+  // set before `allSettled`, which cannot reject, so a dropped request left a
+  // polity's lens at its `actors` list alone for the rest of the session. The
+  // next state change asks again, which is the one thing the reader can do
+  // about it without knowing anything is wrong.
   let askedGrounds = false;
   const opensAnActor = (s) => Boolean(s.actor) && atlas.resolve(s.actor)?.kind === 'actor';
   const fetchLensGrounds = (s) => {
@@ -180,7 +195,8 @@ try {
     // The card in particular carries the lens it was drawn under (panel.js,
     // `keyOf`), and one written while an actor's lens was still empty would be
     // rebuilt by the reader's next nudge of the band.
-    Promise.allSettled([atlas.loadGrounds(), atlas.loadTerritories()]).then(() => {
+    Promise.allSettled([atlas.loadGrounds(), atlas.loadTerritories()]).then((settled) => {
+      if (settled.some((one) => one.status === 'rejected')) askedGrounds = false;
       remeasure({ force: true });
       panel.refresh({ force: true });
       lensChips.render(state.get());

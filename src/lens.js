@@ -432,10 +432,26 @@ export function ringOf(atlas, set) {
 // common answer opened an empty atlas (health review of 6 September, R8). A
 // focus the reader typed themselves still draws nothing and says so, which is
 // what `?focus=` is for; this is only about the lens nobody asked for.
+// **A focus the reader typed is resolved like every other address** (M83, B17).
+// After `tools/migrate/ids.mjs` renames a record, `?actor=old` and
+// `?selected=old` still open — the aliases are walked by `atlas.resolve` — and
+// `?focus=actor:old` kept an empty lens, which is a blank atlas that says so,
+// with the chip naming the old slug. A link shared before a rename lost its
+// lens silently. Resolved once here, where the explicit list is read, so
+// `eventsOfFocus` is asked about the record the atlas holds now; a focus naming
+// something the atlas has never had is unchanged and still draws nothing.
+function resolveFoci(atlas, foci) {
+  return foci.map((focus) => {
+    const found = atlas?.resolve?.(focus.id) ?? null;
+    return found && found.kind === focus.kind && found.id !== focus.id
+      ? { ...focus, id: found.id } : focus;
+  });
+}
+
 export function activeFoci(atlas, state) {
   if (state?.focus === FOCUS_NONE) return [];
   const explicit = parseFoci(state?.focus);
-  if (explicit.length) return explicit;
+  if (explicit.length) return resolveFoci(atlas, explicit);
   const narrative = readingNarrative(atlas, state);
   if (narrative) {
     const focus = { kind: 'narrative', id: narrative.id };

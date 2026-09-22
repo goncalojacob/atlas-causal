@@ -446,3 +446,42 @@ test('B8: a click on the graph\'s empty ground puts the selection down', { skip 
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   }, { device: DESK });
 });
+
+// --- B19: the band answers a press and the two ends of the data -------------
+test('B19: pressing a handle focuses it, and Home and End reach the data\'s ends', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?from=1950&to=1960'), ready);
+    await waitFor(page, 'return Boolean(document.querySelector("#map-band-strip .window-handle.from"));', 'the band');
+
+    // A press on a handle used to leave the focus where it was, because the
+    // pointerdown that keeps a press from selecting text also suppresses it.
+    const pressed = await page.eval(`
+      const el = document.querySelector('#map-band-strip .window-handle.from');
+      const b = el.getBoundingClientRect();
+      el.dispatchEvent(new PointerEvent('pointerdown', {
+        bubbles: true, cancelable: true, pointerId: 1,
+        clientX: b.left + b.width / 2, clientY: b.top + b.height / 2,
+      }));
+      el.dispatchEvent(new PointerEvent('pointerup', { bubbles: true, cancelable: true, pointerId: 1 }));
+      return document.activeElement === el;`);
+    assert.equal(pressed, true, 'the handle the reader pressed has the focus');
+
+    // And Home takes that end to the first year of the data, which is what the
+    // panel's pane handle and the timeline's bars have always answered.
+    await page.eval(`
+      const el = document.querySelector('#map-band-strip .window-handle.from');
+      el.focus();
+      el.dispatchEvent(new KeyboardEvent('keydown', { key: 'Home', bubbles: true, cancelable: true }));
+      return true;`);
+    await waitFor(page, "return new URLSearchParams(location.search).get('from') !== '1950';",
+      'Home to move the near end');
+    const after = Number(await page.eval("return new URLSearchParams(location.search).get('from');"));
+    const first = await page.eval(`
+      const el = document.querySelector('#map-band-strip .window-band');
+      return Number(el.getAttribute('aria-valuemin'));`);
+    assert.equal(after, first, 'the near end is the first year of the data');
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});

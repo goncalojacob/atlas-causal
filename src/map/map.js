@@ -30,7 +30,7 @@ import {
 // Os lugares que este atlas nomeia e o Natural Earth não: uma freguesia, um
 // distrito, um campo de batalha (names.js).
 import { ATLAS_PLACE_WEIGHT, placeCandidates } from './names.js';
-import { labelOf } from '../attributes.js';
+import { labelOf, LOADING_LABEL } from '../attributes.js';
 import { exportButton } from '../share.js';
 
 // k = 1 is the whole world in these 960 units, and that is the unit every
@@ -631,7 +631,9 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     const large = drawingEvents ? largeEventsIn(inWindow, atlas) : [];
     regionsLayer.render(large
       .filter((l) => l.scope === 'regional' && l.region)
-      .map((l) => ({ region: l.region, title: l.event.title })));
+      // The name or nothing, never the slug (M83, B16): the wash's tooltip is
+      // read, and a title arrives with its century (attributes.js).
+      .map((l) => ({ region: l.region, title: labelOf(atlas, l.event) ?? LOADING_LABEL })));
     drawCorner(large.filter((l) => l.scope === 'worldwide'));
     const result = events.render({
       events: drawn,
@@ -856,7 +858,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // through `esc()`: a title is untrusted input here as everywhere else.
   function drawCorner(worldwide) {
     const html = worldwide.length === 0 ? '' : (() => {
-      const named = worldwide.map(({ event }) => `<button type="button" class="link" data-id="${esc(event.id)}">${esc(event.title)}</button>`).join(', ');
+      const named = worldwide.map(({ event }) => `<button type="button" class="link" data-id="${esc(event.id)}">${esc(labelOf(atlas, event) ?? LOADING_LABEL)}</button>`).join(', ');
       return `<p class="map-worldwide">${worldwide.length} ${worldwide.length === 1 ? 'event' : 'events'} in this window
         ${worldwide.length === 1 ? 'spans' : 'span'} the whole map: ${named}</p>`;
     })();
