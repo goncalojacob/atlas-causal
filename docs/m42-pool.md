@@ -1193,3 +1193,49 @@ is a fetch a later fire can spend, and it is not a judgement about history.
 obvious third — but the convention's lead, at revision 1358051340, is about
 the Great Game and Persia and never mentions Tibet. An edge written on that
 lead would be this run's argument and not the source's.
+
+## Where the run stands after batch 25, for the fire that picks it up
+
+*22 September, 00:05, after a fire that landed five batches on `m42`.*
+
+| | |
+| --- | --- |
+| corpus | **520 active**, from 496 at the start of the fire |
+| **main** | **251**, from 258 — and unchanged across batches 22, 23, 24 and 25 |
+| largest connected component | **462**, from 442 |
+| components | 30, from 27 |
+| imported this fire | 24 records (3 umbrellas, 1 origin, 20 filed children) |
+| edges written | 23 |
+| filings | 30 |
+
+**The rule that worked, and it is the one to run first next time.** Batches 23
+to 25: **take the pool row whose item names a parent this atlas already
+holds.** It costs nine API calls over the 700 best rows of the world pool, it
+returns 57 such rows, and a record imported that way **arrives filed**, so the
+main count cannot rise — it did not move once in four batches. Fifteen of the
+twenty landed with an edge to something that was already here; the two whose
+parent was an umbrella landed as a fragment of their own, which is deviation
+1031 and the rule's own limit.
+
+**What is left of that vein**: roughly forty of the 57 rows are untaken, and
+the scan has only been run over the first 700 rows of a pool of about 1,100.
+The next fire should re-run `part of` over the rest before it ticks anything
+by sitelinks, and it should re-run the whole scan after each batch, because a
+record imported today is a parent tomorrow.
+
+**What the fire did not do**, and what the next one should weigh:
+
+- **Asia's twentieth century is 42 main events and Europe's is 61**, against
+  A6's "low tens per century". Europe's are mostly multilateral instruments
+  the filing pass refused under M67's judgement 2, and no period will take
+  them.
+- **The Horn of Africa (7) and Sudan (5) are still fragments**, and the leads
+  of their articles name no record this atlas holds. What they want is a
+  paragraph deeper into an article than the summary endpoint returns, which is
+  a fetch and not a judgement.
+- **Six records carry an interval shorter than their own summary**
+  (deviation 1032). Each refuses a filing the source asserts, and repairing
+  them is the clearest afternoon's work a person could do here.
+- **`Q2587808` and `Q4499410`** — the Holocaust in Poland and in Ukraine —
+  are refused for want of a date the item will give as a year, which is the
+  same hole the decolonisation of Africa sits in.
