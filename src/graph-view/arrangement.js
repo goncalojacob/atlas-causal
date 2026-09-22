@@ -160,6 +160,21 @@ export function arrangementOf(atlas, state, held = null, shown = undefined) {
   return {
     events,
     lanes,
+    // **What the lens itself names**, or null at rest, which since M81 is what
+    // the time axis is built from: the domain is those events' own extent, so
+    // a six-year war opened is its parts across the width rather than inside a
+    // hundredth of it. `kept` and not `shown` — the ring is context and is
+    // drawn where its own dates put it, which may be off the width entirely;
+    // stretching the axis to reach a cause forty years upstream would give the
+    // question back the sliver it was asked to get out of. The camera knows
+    // this already: it offers the whole picture first and the lens's own half
+    // as the fallback (frame.js, M74), and the fallback is what a ring this
+    // wide leaves it.
+    //
+    // Said here rather than asked again of `lensView` by the caller, because
+    // the answer has to be the one this arrangement was built from: the domain
+    // and the set of events are one picture.
+    lens: view ? view.kept : null,
     key: arrangementKey(state, events, lanes, lens, '', view ? formatFoci(view.foci) : null),
   };
 }

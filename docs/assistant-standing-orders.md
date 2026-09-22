@@ -82,7 +82,10 @@ on:
 2. Land any lane A branch whose done line is on it; open its PR; merge on
    green; deploy; disable its routine; fire the next lane A milestone.
 3. **Land a snapshot of `m42` and of `m42b` into `m0` at least once a day**
-   and publish it, so the site keeps growing whatever its size.
+   and publish it, so the site keeps growing whatever its size. The day's
+   snapshot carries the **daily curation fire** (A11, A13): the first M42
+   fire after 02:00Z reviews every active event and the relations between
+   them from their cited sources, and imports nothing.
 4. Re-fire a records routine whose run is silent past the claim rule.
 5. Re-run a check that fell to a browser launch failure or a flake; read a
    red check before assuming load.
