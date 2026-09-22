@@ -21,6 +21,8 @@ import { extent } from '../src/util/dates.js';
 import { workingSet } from '../src/emphasis.js';
 import { stackTitle, stackBadge } from '../src/cluster.js';
 import { degreeLabel } from '../src/graph-filters.js';
+import { explainedLinks, linksSentence, introHtml } from '../src/intro.js';
+import { esc } from '../src/util/esc.js';
 import { degreeOf } from '../src/graph-view/arrangement.js';
 import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
 
@@ -98,4 +100,43 @@ test('and it says what it does, in words that are not the builder’s', () => {
     assert.match(label, /^Show /, 'each option is a whole sentence about the picture');
     if (n > 0) assert.match(label, new RegExp(`at least ${n} connections?$`));
   }
+});
+
+// ─── 3. the intro's claim is computed (A14) ────────────────────────────────
+//
+// "Every link carries a written explanation and its sources" was prose on the
+// front page asserting a fact about the data. It is counted at build time now
+// (`validate/core.js`, `linkCounts`) and carried in the manifest, because the
+// browser cannot see an edge's argument — it is in an explanation shard — or
+// its sources, which are in no index file at all.
+
+test('the intro counts the links it makes a claim about, and never guesses', () => {
+  for (const [name, each] of CORPORA) {
+    const counted = explainedLinks(each);
+    assert.ok(counted, `${name}: the manifest carries the count`);
+    assert.equal(counted.total,
+      [...each.edges.values()].filter((e) => e.status === 'active').length,
+      `${name}: the denominator is every active link`);
+    assert.ok(counted.explained <= counted.total);
+
+    const html = introHtml(each);
+    assert.ok(html.includes(esc(linksSentence(counted))), `${name}: the card says what was counted`);
+    if (counted.explained === counted.total) {
+      assert.match(html, /Every link carries a written explanation and its sources\./);
+    } else {
+      assert.ok(html.includes(esc(`${counted.explained} of the ${counted.total} links carry`)),
+        `${name}: where it is not every one, the card says which`);
+      assert.doesNotMatch(html, /Every link carries/);
+    }
+  }
+});
+
+test('and an atlas that has not been told says nothing rather than zero', () => {
+  // The core carries an edge's five slots and nothing of its argument, so an
+  // atlas with neither a manifest count nor the records in hand cannot answer.
+  // "0 of the 658" would be the front page reporting its own ignorance as a
+  // fact about the data.
+  const blind = { edges: new Map([['e', { id: 'e', status: 'active' }]]), manifest: {} };
+  assert.equal(explainedLinks(blind), null);
+  assert.equal(linksSentence(null), '');
 });
